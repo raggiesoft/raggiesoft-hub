@@ -1,22 +1,23 @@
 <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+  <!-- A link to HOME is already handled in header.php -->  
+  <!-- These will be typical links that do not adjust -->
   <li class="nav-item">
-    <a class="nav-link text-primary" href="/concepts/pact/">The Pact</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link text-warning" href="/concepts/port/">The Port</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link text-secondary" href="#">The Lore Bible</a>
+    <a class="nav-link text-primary" href="/library/">Library</a>
   </li>
   <li class="nav-item dropdown">
     <a class="nav-link dropdown-toggle text-secondary" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-      About
+      Aethel
     </a>
     <ul class="dropdown-menu dropdown-menu-end">
-      <li><a class="dropdown-item" href="/about">About This Project</a></li>
-      <li><a class="dropdown-item" href="/license">License Information</a></li>
+      <li><a class="dropdown-item" href="/library/aethel">Silver Gauntlet of Aethel</a></li>
+      <li><a class="dropdown-item" href="/library/aethel/aethel-book">Read the Book</a></li>
+      <li><a class="dropdown-item" href="/library/aethel/lore">Learn the Lore</a></li>
+      <li><hr class="dropdown-divider"></li>
+      <li><a class="dropdown-item" href="/library/aethel/license">License (CC BY-SA 4.0)</a></li>
     </ul>
   </li>
+  <!-- This is where we should add a dynamic section for a dropdown for Aethel book navigation -->
+  
   <li class="nav-item-dropdown">
     <a class="nav-link dropdown-toggle text-secondary" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
       RaggieSoft
