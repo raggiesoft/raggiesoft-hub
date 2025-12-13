@@ -67,53 +67,54 @@ $routes = [
 
 // ... [Existing Stardust routes] ...
 
-   // *** THE SAGA: DYNAMIC BOOK READER (v3.0) ***
-    if (strpos($request_uri, '/library/aethel/aethel-book') === 0) {
-        
-        // 1. CONFIGURATION: Define the Book Source
-        // This is the only line you change to load a different book for a different route
-        $pageConfig['bookJsonUrl'] = 'https://assets.raggiesoft.com/aethel/json/aethel-book.json';
-        
-        // 2. Define Paths
-        $base_book_path = 'pages/library/aethel/aethel-book';
-        $relative_path = str_replace('/library/aethel/aethel-book', '', $request_uri);
-        
-        // 3. View Resolution
-        if ($relative_path === '' || $relative_path === '/') {
-            $pageConfig['view'] = $base_book_path . '/overview';
-            $pageConfig['title'] = 'The Silver Gauntlet of Aethel';
-        } 
-        else {
-            $pageConfig['view'] = $base_book_path . $relative_path;
-        }
+// ... [Previous config lines] ...
+    
+    // 5. THEME & CONTEXT LOGIC (Refactored)
+    require_once ROOT_PATH . '/includes/utils/nav-logic.php';
+    $navData = getBookNavigation($pageConfig['bookJsonUrl']);
 
-        // 4. Component Settings
-        $pageConfig['site'] = 'aethel';
-        $pageConfig['showSidebar'] = true;
-        $pageConfig['sidebar'] = 'sidebar-book'; // Generic Book Sidebar
-        $pageConfig['header'] = 'header-book';   // Generic Book Header
+    // MASTER REGISTRY: Define valid themes and their base mode (light/dark)
+    // This acts as both the Whitelist AND the Mode Map.
+    $themeRegistry = [
+        // Dark Themes
+        'gloom'                   => 'dark',
+        'shadowspire'             => 'dark',
+        'sunstead-night'          => 'dark',
+        'sunstead-festival-night' => 'dark',
         
-        // 5. Theme Logic (Context-Aware)
-        $path_parts = explode('/', trim($relative_path, '/'));
+        // Light Themes
+        'sunstead'                => 'light',
+        'sunstead-festival-day'   => 'light',
+        'sunstead-winter'         => 'light', // Can change to 'dark' if you want a stark look
+        'forest-morning'          => 'light'
+    ];
+    
+    // Match current context from navigation logic
+    if (!empty($navData['flatList']) && $navData['currentIndex'] > -1) {
+        $currentItem = $navData['flatList'][$navData['currentIndex']];
         
-        if (count($path_parts) >= 3) {
-            $book_id = $path_parts[0];
-            $chap_id = $path_parts[1];
-            $part_id = $path_parts[2];
-            $context_key = "{$book_id}/{$chap_id}/{$part_id}";
+        // 1. Identify Requested Theme
+        $requestedTheme = $currentItem['theme'] ?? null;
+        
+        // 2. Validate & Apply
+        // We check if the requested theme exists as a KEY in our registry.
+        if ($requestedTheme && array_key_exists($requestedTheme, $themeRegistry)) {
+            $pageConfig['theme'] = $requestedTheme;
+            $pageConfig['mode']  = $themeRegistry[$requestedTheme];
         } else {
-            $context_key = 'overview';
+            // Fallback: Default Parchment
+            $pageConfig['theme'] = null; 
+            $pageConfig['mode']  = 'light';
         }
-
-        switch ($context_key) {
-            case 'book-1/chapter-1/part-1':
-            case 'book-1/chapter-1/part-2':
-                $pageConfig['theme'] = 'gloom'; 
-                break;
-            default:
-                $pageConfig['theme'] = null;
-                break;
-        }
+        
+        // 3. Set Page Metadata
+        $pageConfig['title'] = $currentItem['title'] . ' - Aethel Saga';
+        $pageConfig['currentContext'] = [
+            $currentItem['book_id'], 
+            $currentItem['chapter_id'], 
+            $currentItem['part_id'],
+            $currentItem['scene_id']
+        ];
     }
 
 // --- 3. SMART ROUTER LOGIC ---

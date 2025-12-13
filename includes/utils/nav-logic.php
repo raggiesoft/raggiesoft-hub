@@ -1,15 +1,9 @@
 <?php
 // includes/utils/nav-logic.php
-// v3.0 - Universal Narrative Engine (Function-Based)
+// v4.0 - Universal Narrative Engine (Scene-Aware)
 
-/**
- * Loads book data and calculates navigation links.
- * * @param string $jsonUrl The URL to the book's JSON manifest.
- * @return array The navigation data (prev, next, up, structure).
- */
 function getBookNavigation($jsonUrl) {
     // 1. Fetch Data
-    // Use @ to suppress errors if file fetch fails
     $jsonData = @file_get_contents($jsonUrl);
 
     if ($jsonData === false) {
@@ -21,44 +15,51 @@ function getBookNavigation($jsonUrl) {
             'upLink' => '#',
             'currentBookId' => '',
             'currentChapId' => '',
-            'currentPartId' => ''
+            'currentPartId' => '',
+            'currentSceneId' => '',
+            'flatList' => []
         ];
     }
 
     $bookData = json_decode($jsonData, true);
 
-    // 2. Analyze Current URL to determine context
+    // 2. Analyze Current URL (4 Levels Deep)
     $currentPath = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
-
-    // We define the base path to strip away based on the JSON config
     $basePath = $bookData['base_path'] ?? '/'; 
-    
-    // Safety check: ensure we don't replace if base path isn't found
     $relativePath = str_replace($basePath, '', $currentPath);
     $pathSegments = explode('/', trim($relativePath, '/'));
 
-    // IDs based on the v2 Hierarchy (Book -> Chapter -> Part)
+    // IDs based on v4 Hierarchy
     $currentBookId = $pathSegments[0] ?? '';
     $currentChapId = $pathSegments[1] ?? '';
     $currentPartId = $pathSegments[2] ?? '';
+    $currentSceneId = $pathSegments[3] ?? '';
 
     // 3. Flatten Structure for Linear Navigation
     $flatList = [];
 
     if (!empty($bookData['structure'])) {
         foreach ($bookData['structure'] as $book) {
-            // Handle cases where chapters might be empty
             if (!empty($book['chapters'])) {
                 foreach ($book['chapters'] as $chapter) {
                     if (!empty($chapter['parts'])) {
                         foreach ($chapter['parts'] as $part) {
-                            $flatList[] = [
-                                'url' => "{$basePath}/{$book['id']}/{$chapter['id']}/{$part['id']}",
-                                'title' => $part['title'],
-                                'book_id' => $book['id'],
-                                'chapter_id' => $chapter['id'],
-                                'part_id' => $part['id']
-                            ];
+                            if (!empty($part['scenes'])) {
+                                foreach ($part['scenes'] as $scene) {
+                                    $flatList[] = [
+                                        // URL: .../book/chap/part/scene
+                                        'url' => "{$basePath}/{$book['id']}/{$chapter['id']}/{$part['id']}/{$scene['id']}",
+                                        'title' => $scene['title'],
+                                        // Context helps in search/debug: "The Weaver's Lesson - Scene 1"
+                                        'context_title' => "{$part['title']} - {$scene['title']}", 
+                                        'book_id' => $book['id'],
+                                        'chapter_id' => $chapter['id'],
+                                        'part_id' => $part['id'],
+                                        'scene_id' => $scene['id'],
+                                        'theme' => $scene['theme'] ?? null 
+                                    ];
+                                }
+                            }
                         }
                     }
                 }
@@ -71,7 +72,8 @@ function getBookNavigation($jsonUrl) {
     foreach ($flatList as $index => $item) {
         if ($item['book_id'] === $currentBookId && 
             $item['chapter_id'] === $currentChapId && 
-            $item['part_id'] === $currentPartId) {
+            $item['part_id'] === $currentPartId &&
+            $item['scene_id'] === $currentSceneId) {
             $currentIndex = $index;
             break;
         }
@@ -92,8 +94,8 @@ function getBookNavigation($jsonUrl) {
         $nextLink = '#'; // End of Book
     }
 
-    // Up
-    $upLink = $basePath; // Default to root
+    // Up - Return to the Book Index
+    $upLink = $basePath; 
 
     return [
         'error' => false,
@@ -105,7 +107,8 @@ function getBookNavigation($jsonUrl) {
         'upLink' => $upLink,
         'currentBookId' => $currentBookId,
         'currentChapId' => $currentChapId,
-        'currentPartId' => $currentPartId
+        'currentPartId' => $currentPartId,
+        'currentSceneId' => $currentSceneId
     ];
 }
 ?>

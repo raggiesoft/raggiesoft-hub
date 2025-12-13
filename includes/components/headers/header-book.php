@@ -35,7 +35,7 @@ extract($navData);
     </a>
     <ul class="dropdown-menu dropdown-menu-end">
       <li>
-        <a class="dropdown-item <?php echo ($currentIndex <= 0 && !empty($currentPartId)) ? 'disabled' : ''; ?>" 
+        <a class="dropdown-item <?php echo ($currentIndex <= 0 && !empty($currentSceneId)) ? 'disabled' : ''; ?>" 
            href="<?php echo $prevLink; ?>">
            <i class="fa-duotone fa-arrow-left me-2"></i>Back
         </a>
