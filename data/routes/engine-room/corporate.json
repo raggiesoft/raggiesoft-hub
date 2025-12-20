@@ -1,0 +1,32 @@
+{
+  "/engine-room/corporate/structure": {
+    "title": "Corporate Structure & Governance",
+    "site": "portfolio",
+    "showSidebar": false,
+    "navbarBrandLogo": "https://assets.raggiesoft.com/engine-room-records/images/logos/engine-room-records-logo.jpg",
+    "navbarBrandText": "Engine Room<span class=\"d-none d-md-inline\"> Records</span>",
+    "navbarBrandLink": "/engine-room",
+    "navbarBrandAlt": "Engine Room Records Official Seal",
+    "navbarBrandClass": "rounded-0 navbar-brand-corporate-img"
+  },
+  "/engine-room/corporate/facilities": {
+    "title": "Facilities: The Jessica Miller Center",
+    "site": "portfolio",
+    "showSidebar": false
+  },
+  "/engine-room/corporate/fleet": {
+    "title": "Logistics Fleet Capabilities",
+    "site": "portfolio",
+    "showSidebar": false
+  },
+  "/engine-room/corporate/systems": {
+    "title": "Systems Status Dashboard",
+    "site": "portfolio",
+    "showSidebar": false
+  },
+  "/engine-room/corporate/leadership": {
+    "title": "Leadership & Directors",
+    "site": "portfolio",
+    "showSidebar": false
+  }
+}

@@ -22,9 +22,9 @@
       RaggieSoft
     </a>
     <ul class="dropdown-menu dropdown-menu-end">
-      <li><a class="dropdown-item" href="#">RaggieSoft.com<i class="fa-duotone fa-solid fa-arrow-up-right-from-square ms-2" aria-hidden="true"></i></a></li>
-      <li><a class="dropdown-item" href="#">RaggieSoft Knox<i class="fa-duotone fa-solid fa-arrow-up-right-from-square ms-2" aria-hidden="true"></i></a></li>
-      <li><a class="dropdown-item" href="#">MichaelPRagsdale.com<i class="fa-duotone fa-solid fa-arrow-up-right-from-square ms-2" aria-hidden="true"></i></a></li>
+      <li><a class="dropdown-item" href="#">RaggieSoft.com<i class="fa-duotone fa-duotone fa-arrow-up-right-from-square ms-2" aria-hidden="true"></i></a></li>
+      <li><a class="dropdown-item" href="#">RaggieSoft Knox<i class="fa-duotone fa-duotone fa-arrow-up-right-from-square ms-2" aria-hidden="true"></i></a></li>
+      <li><a class="dropdown-item" href="#">MichaelPRagsdale.com<i class="fa-duotone fa-duotone fa-arrow-up-right-from-square ms-2" aria-hidden="true"></i></a></li>
       <li><hr class="dropdown-divider"></li>
       <li><a class="dropdown-item active" href="/contact">Contact Me</a></li>
     </ul>

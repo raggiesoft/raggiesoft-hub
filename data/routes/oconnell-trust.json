@@ -1,0 +1,16 @@
+{
+  "/oconnell-trust": {
+    "view": "pages/oconnell-trust/overview",
+    "title": "The O'Connell Family Revocable Trust",
+    "brandFont": ["Playfair Display", "serif"],
+    "theme": "light",
+    "navbarBrandText": "The Trust",
+    "navbarBrandLink": "/oconnell-trust"
+  },
+  "/oconnell-trust/structure": {
+    "view": "pages/oconnell-trust/structure",
+    "title": "Organizational Structure | The Trust",
+    "brandFont": ["Playfair Display", "serif"],
+    "theme": "light"
+  }
+}

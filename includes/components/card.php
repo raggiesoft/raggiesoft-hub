@@ -6,7 +6,7 @@ $imgSrc = $props['imgSrc'] ?? null; // Make null default
 $imgAlt = $props['imgAlt'] ?? 'Card image';
 $fallbackText = $props['fallbackText'] ?? 'Image';
 $title = isset($props['title']) ? htmlspecialchars($props['title']) : 'Card Title';
-$description = isset($props['description']) ? htmlspecialchars($props['description']) : 'Card description goes here.';
+$description = $props['description'] ?? 'Card description goes here.';
 $buttonProps = $props['buttonProps'] ?? null;
 $variant = $buttonProps['variant'] ?? 'secondary'; // Get variant for placeholder theme
 
