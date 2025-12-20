@@ -8,11 +8,11 @@ import sys
 
 # --- CONFIGURATION (UPDATED v2) ---
 # Input: Where your .docx files live (locally)
-BUILD_SOURCE_PATH = "build/books" 
+BUILD_SOURCE_PATH = "../raggiesoft-assets/_workspace/books" 
 
 # Output: Where the assets repo lives (The "Suitcase")
 # Updated to match the flattened ~/Dev/RaggieSoft/ structure
-WEBSITE_ASSET_PATH = "raggiesoft-assets/raggiesoft-books"
+WEBSITE_ASSET_PATH = "../raggiesoft-assets/raggiesoft-books"
 
 # CDN: The public URL for images
 CDN_BASE_URL = "https://assets.raggiesoft.com/raggiesoft-books"
