@@ -3,7 +3,11 @@
   "projectSlug": "raggiesoft",
   "cdnBaseUrl": "https://assets.raggiesoft.com",
   "defaultTheme": "light",
-  "brandFont": ["Roboto", "Helvetica Neue", "sans-serif"],
+  "brandFont": [
+    "Roboto",
+    "Helvetica Neue",
+    "sans-serif"
+  ],
   "analytics": {
     "provider": "google",
     "trackingId": "G-P9RG9JVYB6",
@@ -23,19 +27,18 @@
     "navbarBrandClass": "rounded-circle"
   },
   "sidebarMap": {
-    "/engine-room": "sidebars/sidebar-engine-room",
-    "/library": "sidebars/sidebar-library",
-    "/docs": "sidebars/sidebar-docs"
+    "/engine-room": "sidebar-engine-room",
+    "/library": "sidebar-library",
+    "/docs": "sidebar-docs"
   },
   "headerMap": {
-    "/engine-room": "headers/header-engine-room",
-    "/oconnell-trust": "headers/header-oconnell",
-    "/admin": "headers/header-admin"
+    "/engine-room": "header-engine-room",
+    "/oconnell-trust": "header-oconnell",
+    "/admin": "header-admin"
   },
-  /* Add this section to your settings.json */
-"footerMap": {
-    "/": "footers/footer-default",
-    "/oconnell-trust": "footers/footer-trust",
-    "/engine-room": "footers/footer-engine-room"
-}
+  "footerMap": {
+    "/": "footer-default",
+    "/oconnell-trust": "footer-trust",
+    "/engine-room": "engine-room/footer-engine-room"
+  }
 }

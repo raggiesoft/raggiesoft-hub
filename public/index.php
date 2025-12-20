@@ -1,6 +1,6 @@
 <?php
 ob_start(); 
-// RaggieSoft Elara Router v5.3
+// RaggieSoft Elara Router v5.4
 // Features: Path-Based Inheritance, Auto-Discovery, Route Collision Detection
 
 define('ROOT_PATH', dirname(__DIR__));
@@ -150,27 +150,11 @@ if (isset($pageConfig['headerMenu'])) {
     $headerMap = $settings['headerMap'] ?? [];
     $headerFile = resolveAsset($headerMap, $request_uri) ?? 'header-default';
 }
+// Note: We force 'headers/' here, so JSON should NOT include it.
 $currentHeaderMenu = ROOT_PATH . '/includes/components/headers/' . $headerFile . '.php';
 
-// --- FOOTER RESOLUTION ---
-if (isset($pageConfig['footer'])) {
-    // 1. Explicit Override in Route JSON
-    $footerFile = $pageConfig['footer'];
-} else {
-    // 2. Inheritance via Settings Map
-    $footerMap = $settings['footerMap'] ?? [];
-    $footerFile = resolveAsset($footerMap, $request_uri) ?? 'footers/footer-default';
-}
-
-// 3. Resolve Full Path
-$currentFooter = ROOT_PATH . '/includes/components/' . $footerFile . '.php';
-
-// Safety Fallback: If the mapped file doesn't exist, load default
-if (!file_exists($currentFooter)) {
-    $currentFooter = ROOT_PATH . '/includes/components/footers/footer-default.php';
-}
-
 // Sidebar Resolution
+// Note: We force 'sidebars/' here, so JSON should NOT include it.
 $currentSidebar = ROOT_PATH . '/includes/components/sidebars/' . $config['sidebar'] . '.php';
 
 require_once ROOT_PATH . '/includes/header.php';
@@ -202,6 +186,7 @@ echo '    </main>';
 echo '  </div>'; 
 echo '</div>'; 
 
+// Footer logic is now fully handled inside this file
 require_once ROOT_PATH . '/includes/footer.php';
 ob_end_flush();
 ?>
