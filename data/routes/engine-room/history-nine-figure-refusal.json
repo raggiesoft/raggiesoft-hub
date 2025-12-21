@@ -3,6 +3,7 @@
     "site": "engine-room-records",
     "showSidebar": true,
     "sidebar": "sidebar-history-nine-figure-refusal",
+    "siteName": "Engine Room Records",
     "headerMenu": "engine-room/header-nine-figure-refusal",
     "footer": "engine-room/artists/stardust-engine/footer-nine-figure-refusal",
     
