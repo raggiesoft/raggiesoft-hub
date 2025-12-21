@@ -90,7 +90,7 @@ $pageConfig = [
 
 <div class="container py-3 mb-4 border-bottom btn-print-controls">
     <div class="d-flex justify-content-between align-items-center">
-        <a href="/engine-room/artists/stardust-engine/about/michael-ragsdale" class="btn btn-outline-secondary btn-sm rounded-pill">
+        <a href="/about/michael-ragsdale" class="btn btn-outline-secondary btn-sm rounded-pill">
             <i class="fa-solid fa-arrow-left me-2"></i>Back to Hub
         </a>
         <div class="d-flex gap-2">
