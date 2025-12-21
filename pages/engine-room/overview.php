@@ -1,203 +1,214 @@
 <?php
 // pages/engine-room/overview.php
-// The Corporate Fortress. Stark. Industrial. Protective.
-// v2.2 - Link Fix (Mirage)
+// The HQ of the Musical Universe.
+// Context: Real World (Suno Portfolio) + Narrative (Holly's Empire).
 
-$pageTitle = "Engine Room Records, LLC - Est. 1992";
+$pageTitle = "Engine Room Records - The Fortress";
 ?>
 
 <style>
-    /* INDUSTRIAL HEADER: ADAPTIVE */
-    .industrial-header {
-        background-color: #fff;
-        background-image: radial-gradient(circle at 50% 50%, #f8f8f8 0%, #e9ecef 100%);
-        border-bottom: 4px solid #000;
-        color: #000;
-        transition: all 0.3s ease;
+    /* ENGINE ROOM BRANDING: Industrial, Heavy, Stark */
+    .engine-hero {
+        background: linear-gradient(rgba(13, 17, 23, 0.9), rgba(13, 17, 23, 0.8)), 
+                    url('https://assets.raggiesoft.com/stardust-engine/images/studio-rack.jpg');
+        background-size: cover;
+        background-position: center;
+        border-bottom: 4px solid #dc3545; /* Brand Red */
     }
-    [data-bs-theme="dark"] .industrial-header {
-        background-color: #111;
-        background-image: radial-gradient(circle at 50% 50%, #222 0%, #000 100%);
-        border-bottom: 4px solid #333;
-        color: #fff;
-    }
-
+    
     .text-stenciled {
         font-family: 'Impact', 'Arial Black', sans-serif;
         text-transform: uppercase;
         letter-spacing: 2px;
     }
-    
-    /* CARD INDUSTRIAL */
-    .card-industrial {
-        border: 2px solid #333;
-        background-color: #f4f4f4;
-        color: #000;
-        transition: all 0.3s ease;
-    }
-    [data-bs-theme="dark"] .card-industrial {
-        background-color: #1a1a1a;
-        border-color: #555;
-        color: #e0e0e0;
-    }
-    .card-industrial:hover {
-        border-color: #000;
-        box-shadow: 10px 10px 0px rgba(0,0,0,0.2);
-        transform: translateY(-5px);
-    }
-    [data-bs-theme="dark"] .card-industrial:hover {
-        border-color: #fff;
-        box-shadow: 10px 10px 0px rgba(255,255,255,0.1);
-    }
 
-    .badge-industrial {
-        background-color: #000;
-        color: #fff;
-        font-family: monospace;
-        border-radius: 0;
+    .roster-card {
+        transition: transform 0.3s ease, border-color 0.3s ease;
+        border-left: 4px solid #6c757d;
     }
-    [data-bs-theme="dark"] .badge-industrial {
-        background-color: #fff;
-        color: #000;
+    .roster-card:hover {
+        transform: translateY(-5px);
+        border-left-color: #dc3545;
     }
 </style>
 
-<div class="container-fluid p-0">
-    
-    <div class="industrial-header py-5">
-        <div class="container py-5 text-center">
-            
+<div class="engine-hero py-5 text-center text-white">
+    <div class="container py-5">
+        <div class="mb-4">
             <img src="https://assets.raggiesoft.com/engine-room-records/images/logos/engine-room-records-logo.jpg" 
                  alt="Engine Room Records Official Seal" 
-                 class="img-fluid rounded-circle mb-4 shadow-lg navbar-brand-corporate-img" 
-                 style="max-width: 250px; border: 4px solid transparent;">
-            
-            <h1 class="display-3 fw-bold text-stenciled mb-2">Engine Room Records</h1>
-            <p class="lead font-monospace opacity-75 mb-4">EST. 1992 // BLACKSBURG, VA</p>
-            
-            <div class="d-inline-block border border-2 border-dark p-3">
-                <p class="mb-0 text-uppercase letter-spacing-1 small">
-                    <i class="fa-solid fa-shield-halved me-2"></i>Mission Statement:
-                </p>
-                <p class="h5 fw-bold mb-0 mt-2">
-                    "We do not own artists. We protect them."
-                </p>
-            </div>
+                 class="rounded-circle shadow-lg border border-4 border-dark"
+                 style="width: 120px; height: 120px; filter: grayscale(20%);">
         </div>
+        <h1 class="display-3 fw-bold text-stenciled mb-2">Engine Room Records</h1>
+        <p class="lead font-monospace text-uppercase text-danger fw-bold letter-spacing-2">
+            Est. 1992 // Blacksburg, VA
+        </p>
+        <p class="text-white-50 mx-auto" style="max-width: 700px;">
+            "We do not own artists. We protect them."
+        </p>
     </div>
+</div>
 
-    <div class="bg-body py-5">
-        <div class="container">
-            <div class="d-flex align-items-center mb-5 border-bottom border-secondary pb-3">
-                <i class="fa-solid fa-users-viewfinder fa-2x me-3"></i>
-                <h2 class="h3 fw-bold text-uppercase mb-0 text-stenciled">Active Roster</h2>
-            </div>
+<div class="container py-5">
 
-            <div class="row g-5">
-                
-                <div class="col-lg-6">
-                    <div class="card card-industrial h-100">
-                        <div class="row g-0 h-100">
-                            <div class="col-md-5 bg-black d-flex align-items-center justify-content-center p-4">
-                                <img src="https://assets.raggiesoft.com/stardust-engine/images/logos/stardust-engine-logo.png" 
-                                     class="img-fluid" alt="The Stardust Engine">
-                            </div>
-                            <div class="col-md-7">
-                                <div class="card-body d-flex flex-column h-100">
-                                    <h3 class="h4 fw-bold text-uppercase">The Stardust Engine</h3>
-                                    <span class="badge badge-industrial align-self-start mb-3">FOUNDING ARTIST (1985)</span>
-                                    <p class="card-text small">
-                                        The architects of the "Independence Era." Known for their fusion of 80s synth-pop and industrial rock.
-                                    </p>
-                                    <ul class="list-unstyled small opacity-75 mb-4">
-                                        <li><i class="fa-solid fa-compact-disc me-2"></i>Current Release: <em>Knox (O.S.T.)</em></li>
-                                        <li><i class="fa-solid fa-location-dot me-2"></i>Origin: Blacksburg, VA</li>
-                                    </ul>
-                                    <div class="mt-auto">
-                                        <a href="/" class="btn btn-dark w-100 rounded-0 text-uppercase fw-bold">View Archive</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-6">
-                    <div class="card card-industrial h-100 border-danger">
-                        <div class="row g-0 h-100">
-                            <div class="col-md-5 bg-dark d-flex align-items-center justify-content-center p-0 overflow-hidden">
-                                <img src="https://assets.raggiesoft.com/engine-room-records/artists/mirage/2001-static-and-silence/album-art.jpg" 
-                                     class="img-fluid w-100 h-100 object-fit-cover opacity-75" alt="Mirage Album Art">
-                            </div>
-                            <div class="col-md-7">
-                                <div class="card-body d-flex flex-column h-100">
-                                    <div class="d-flex justify-content-between align-items-start">
-                                        <h3 class="h4 fw-bold text-uppercase text-danger">Mirage</h3>
-                                        <i class="fa-solid fa-star text-warning"></i>
-                                    </div>
-                                    <span class="badge bg-danger rounded-0 align-self-start mb-3">SIGNED: 2001</span>
-                                    <p class="card-text small">
-                                        A cinematic rock opera collective led by <strong>Julian Croft</strong>. Their sound blends orchestral percussion, 80s pop, and industrial grit.
-                                    </p>
-                                    <div class="p-2 mb-3 small bg-body-tertiary border border-secondary">
-                                        <i class="fa-solid fa-quote-left me-2 text-muted"></i>
-                                        <em>"We're going to build an engine, too."</em><br>
-                                        <span class="text-muted text-end d-block">- Julian Croft (2000)</span>
-                                    </div>
-                                    <div class="mt-auto">
-                                        <a href="/engine-room/artists/mirage" class="btn btn-outline-danger w-100 rounded-0 text-uppercase fw-bold">
-                                            View Artist Profile
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </div>
-
-    <div class="bg-body-tertiary py-5 border-top border-secondary">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-5">
-                    <div class="position-relative shadow-lg border border-4 border-white">
-                        <img src="https://assets.raggiesoft.com/engine-room-records/artists/mirage/2001-static-and-silence/album-art.jpg" 
-                             class="img-fluid" alt="Static & Silence Cover Art">
-                        <div class="position-absolute bottom-0 start-0 bg-danger text-white px-3 py-1 fw-bold text-uppercase small">
-                            New Release (2001)
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-7 ps-md-5 mt-4 mt-md-0">
-                    <h4 class="text-uppercase opacity-75 letter-spacing-2 mb-1">Catalog No. ERR-004</h4>
-                    <h2 class="display-4 fw-bold text-stenciled mb-3 text-body-emphasis">Static & Silence</h2>
-                    <h3 class="h4 text-danger mb-4">Mirage</h3>
-                    
-                    <p class="lead">
-                        The defining masterpiece of the post-grunge era. A harrowing, autobiographical concept album detailing frontman Julian Croft's survival of abuse and his cross-country escape.
-                    </p>
-                    
-                    <div class="row mt-4">
-                        <div class="col-6">
-                            <ul class="list-unstyled font-monospace small">
-                                <li class="mb-2"><strong class="text-uppercase">Genre:</strong> Rock Opera / Industrial</li>
-                                <li class="mb-2"><strong class="text-uppercase">Format:</strong> 2xCD / Vinyl</li>
-                                <li class="mb-2"><strong class="text-uppercase">Centerpiece:</strong> "Curbstone, 4 AM"</li>
-                            </ul>
-                        </div>
-                        <div class="col-6 border-start border-secondary ps-4">
-                            <p class="small text-muted fst-italic">
-                                "This album is a rootkit key. It opens the doors we were told to keep shut."
-                                <br>— Holly O'Connell, CEO
+    <div class="row justify-content-center mb-5">
+        <div class="col-lg-10">
+            <div class="card bg-dark border-secondary shadow-lg">
+                <div class="card-body p-4 p-md-5">
+                    <div class="row align-items-center">
+                        <div class="col-md-8">
+                            <h3 class="h4 text-white text-uppercase fw-bold mb-3">
+                                <i class="fa-duotone fa-fire me-2 text-danger"></i>Forged in Fire
+                            </h3>
+                            <p class="text-white-50">
+                                Engine Room Records was founded in 1992 by <strong>Holly O'Connell</strong> (Age 23) in the aftermath of the "Friction Catastrophe."
                             </p>
+                            <p class="text-white-50">
+                                After escaping a predatory contract with Apex Records that attempted to exploit her brother Ryan's paralysis and fabricate an incestuous marketing narrative, Holly vowed to build a "Fortress." She created a label designed with a single directive: <strong>The Artist holds the keys. Always.</strong>
+                            </p>
+                            <div class="mt-4">
+                                <a href="/engine-room/history/friction" class="btn btn-outline-danger rounded-pill btn-sm">
+                                    <i class="fa-duotone fa-file-contract me-2"></i>Read the Case File
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-4 text-center mt-4 mt-md-0 border-start border-secondary ps-md-4">
+                            <div class="p-3 bg-black rounded border border-secondary">
+                                <small class="text-muted text-uppercase d-block mb-2">Founder & CEO</small>
+                                <img src="https://assets.raggiesoft.com/stardust-engine/images/band-members/holly.jpg" 
+                                     class="img-fluid rounded-circle border border-secondary mb-3" 
+                                     style="width: 80px; height: 80px; object-fit: cover;" 
+                                     alt="Holly O'Connell">
+                                <h5 class="text-white h6 fw-bold mb-0">Holly O'Connell</h5>
+                                <div class="small text-secondary font-monospace mt-1" style="font-size: 0.7rem;">
+                                    J.D. | CFA | Cr.FA | CIRA
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
+
+    <div class="row justify-content-center mb-5">
+        <div class="col-lg-10">
+            <div class="alert alert-dark border-success d-flex align-items-start shadow-sm" role="alert">
+                <i class="fa-duotone fa-vault text-success fs-1 me-4 mt-1"></i>
+                <div>
+                    <h4 class="alert-heading h5 fw-bold text-success text-uppercase">The $2.04 Billion Secret</h4>
+                    <p class="small text-white-50 mb-2">
+                        To the public, Engine Room is a scrappy indie label. To the IRS, it is a loss-leader subsidiary of <strong>The O'Connell Family Revocable Trust</strong>.
+                    </p>
+                    <p class="small text-white-50 mb-0">
+                        Following Cassidy O'Connell's historic lottery win in 2012, the family integrated the label into a massive asset protection structure. This allows them to sign artists based on <strong>artistic merit</strong>, not market trends. They don't need the albums to sell. They just need them to exist.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mb-5">
+        <div class="d-flex align-items-center justify-content-between border-bottom border-secondary pb-3 mb-4">
+            <h2 class="h3 text-uppercase fw-bold text-dark mb-0"><i class="fa-duotone fa-users-viewfinder me-2"></i>Active Roster</h2>
+            <span class="badge bg-secondary">Suno AI Collection</span>
+        </div>
+
+        <div class="row g-4">
+            
+            <div class="col-md-6">
+                <div class="card h-100 bg-dark text-white border-secondary roster-card">
+                    <div class="row g-0 h-100">
+                        <div class="col-4 bg-black d-flex align-items-center justify-content-center p-3">
+                            <img src="https://assets.raggiesoft.com/stardust-engine/images/logos/stardust-engine-logo.png" 
+                                 class="img-fluid" alt="Stardust Engine Logo">
+                        </div>
+                        <div class="col-8">
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold text-uppercase">The Stardust Engine</h5>
+                                <span class="badge bg-danger mb-2">Legacy Artist</span>
+                                <p class="card-text small text-white-50">
+                                    The founding family. Architects of the "Ironhead" sound. Blending 80s synth-pop with industrial rock.
+                                </p>
+                                <a href="/engine-room/artists/stardust-engine" class="btn btn-sm btn-light fw-bold rounded-pill stretched-link">
+                                    View Archive
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card h-100 bg-white text-dark border-secondary roster-card">
+                    <div class="row g-0 h-100">
+                        <div class="col-4 bg-light d-flex align-items-center justify-content-center p-3 border-end">
+                            <i class="fa-duotone fa-masks-theater fa-3x text-secondary"></i>
+                        </div>
+                        <div class="col-8">
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold text-uppercase">Mirage</h5>
+                                <span class="badge bg-dark mb-2">Rock Opera</span>
+                                <p class="card-text small text-muted">
+                                    Cinematic storytelling and symphonic metal. Led by Julian Croft. Known for the album <em>Static & Silence</em>.
+                                </p>
+                                <a href="#" class="btn btn-sm btn-outline-dark fw-bold rounded-pill disabled">Coming Soon</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card h-100 bg-white text-dark border-secondary roster-card">
+                    <div class="row g-0 h-100">
+                        <div class="col-4 bg-light d-flex align-items-center justify-content-center p-3 border-end">
+                            <i class="fa-duotone fa-flute fa-3x text-secondary"></i>
+                        </div>
+                        <div class="col-8">
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold text-uppercase">Origin</h5>
+                                <span class="badge bg-info text-dark mb-2">Art Rock</span>
+                                <p class="card-text small text-muted">
+                                    Progressive pop featuring complex flute arrangements and "Safe Harbor" themes. Signed in London, 1998.
+                                </p>
+                                <a href="#" class="btn btn-sm btn-outline-dark fw-bold rounded-pill disabled">Coming Soon</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card h-100 bg-white text-dark border-secondary roster-card">
+                    <div class="row g-0 h-100">
+                        <div class="col-4 bg-light d-flex align-items-center justify-content-center p-3 border-end">
+                            <i class="fa-duotone fa-snowflake fa-3x text-secondary"></i>
+                        </div>
+                        <div class="col-8">
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold text-uppercase">The Winter Palace</h5>
+                                <span class="badge bg-secondary mb-2">Neoclassical</span>
+                                <p class="card-text small text-muted">
+                                    Atmospheric instrumental works and holiday arrangements. The quiet corner of the Engine Room.
+                                </p>
+                                <a href="#" class="btn btn-sm btn-outline-dark fw-bold rounded-pill disabled">Coming Soon</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="text-center pt-5 border-top border-secondary">
+        <p class="text-muted small mb-0">
+            <i class="fa-duotone fa-microchip me-2"></i>
+            <strong>Meta Context:</strong> This label serves as the organizational hub for Michael Ragsdale's AI-generated music portfolio.
+            All tracks are produced using <strong>Suno AI</strong> with lyrics and lore co-written by <strong>Gemini</strong>.
+        </p>
     </div>
 
 </div>
