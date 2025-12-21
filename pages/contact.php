@@ -4,16 +4,57 @@
 // Filters traffic: "Fans/Devs" -> Direct Email | "Recruiters" -> The Gate
 
 $pageTitle = "Contact Channels | Michael Ragsdale";
+
+// 1. Fetch Hero Images
+require_once ROOT_PATH . '/includes/utils/json-reader.php';
+$heroImages = fetch_asset_json('common/json/hero-images.json');
+
+// 2. Pick Random Start Image (Server-Side Fallback)
+// If JSON fails, fall back to a safe default
+$startImage = !empty($heroImages) 
+    ? "https://assets.raggiesoft.com" . $heroImages[array_rand($heroImages)] 
+    : "https://assets.raggiesoft.com/common/patterns/stars-transparent.png";
 ?>
 
 <style>
-    /* SHARED ARCHITECT THEME */
-    .contact-hero {
-        background: linear-gradient(135deg, #0d1117 0%, #161b22 100%);
-        color: #fff;
-        border-bottom: 1px solid rgba(255,255,255,0.1);
+    /* DYNAMIC HERO STYLES */
+    .hero-container {
+        position: relative;
+        overflow: hidden;
+        /* Force Dark Text for Contrast against Washed Out BG */
+        color: #212529 !important; 
+        border-bottom: 1px solid rgba(0,0,0,0.1);
     }
-    
+
+    /* The Background Image Layer */
+    .hero-bg-layer {
+        position: absolute;
+        top: 0; left: 0; width: 100%; height: 100%;
+        background-size: cover;
+        background-position: center;
+        z-index: 0;
+        transition: opacity 1.5s ease-in-out;
+        /* Start visible */
+        opacity: 1; 
+    }
+
+    /* The "Wash Out" Scrim Layer */
+    /* This sits on top of the image but behind the text */
+    .hero-scrim {
+        position: absolute;
+        top: 0; left: 0; width: 100%; height: 100%;
+        background-color: rgba(255, 255, 255, 0.85); /* 85% White Overlay */
+        backdrop-filter: blur(2px); /* Optional: Softens the image details */
+        z-index: 1;
+    }
+
+    /* The Content Layer */
+    .hero-content {
+        position: relative;
+        z-index: 2; /* Sits above the scrim */
+    }
+
+    /* Card Styles (Unchanged) */
     .channel-card {
         background: #fff;
         border: 1px solid #dee2e6;
@@ -23,12 +64,10 @@ $pageTitle = "Contact Channels | Michael Ragsdale";
         background: #212529;
         border-color: #495057;
     }
-    
     .channel-card:hover {
         transform: translateY(-5px);
         box-shadow: 0 10px 20px rgba(0,0,0,0.1);
     }
-    
     .channel-icon {
         width: 80px; height: 80px;
         display: flex; align-items: center; justify-content: center;
@@ -37,19 +76,25 @@ $pageTitle = "Contact Channels | Michael Ragsdale";
     }
 </style>
 
-<div class="contact-hero py-5 text-center">
-    <div class="container py-4">
-        <h1 class="display-4 fw-bold text-uppercase mb-3" style="font-family: 'Audiowide', cursive;">
+<div class="hero-container py-5 text-center">
+    
+    <div id="hero-bg-1" class="hero-bg-layer" style="background-image: url('<?php echo $startImage; ?>');"></div>
+    <div id="hero-bg-2" class="hero-bg-layer" style="background-image: url(''); opacity: 0;"></div>
+    
+    <div class="hero-scrim"></div>
+
+    <div class="container py-4 hero-content">
+        <h1 class="display-4 fw-bold text-uppercase mb-3" style="font-family: 'Audiowide', cursive; color: #000;">
             Signal The Architect
         </h1>
-        <p class="lead text-white-50 mx-auto" style="max-width: 700px;">
+        <p class="lead mx-auto fw-medium" style="max-width: 700px; color: #495057;">
             This website is a dual-layer reality: part creative portfolio, part technical showcase.
             Please select your communication channel below.
         </p>
     </div>
 </div>
 
-<div class="container py-5" style="margin-top: -3rem;">
+<div class="container py-5" style="margin-top: -3rem; position: relative; z-index: 3;">
     <div class="row g-4 justify-content-center">
         
         <div class="col-lg-5">
@@ -105,9 +150,55 @@ $pageTitle = "Contact Channels | Michael Ragsdale";
                 <i class="fa-solid fa-server me-2"></i>
                 <strong>System Note:</strong> 
                 The "Hiring Hub" provides access to my Resume, Salary Requirements, and Microsoft Bookings calendar.
-                Unsolicited sales or marketing emails sent to the Project channel will be discarded.
+                Unsolicited sales emails sent to the Project channel will be discarded.
             </p>
         </div>
     </div>
 
 </div>
+
+<script>
+(function() {
+    // 1. Configuration
+    const images = <?php echo json_encode($heroImages); ?>;
+    const cdnBase = "https://assets.raggiesoft.com";
+    const intervalTime = 8000; // 8 Seconds per slide
+    
+    // Safety Check: Need at least 2 images to rotate
+    if (!images || images.length < 2) return;
+
+    // Motion Preference Check (WCAG)
+    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (prefersReducedMotion) return; // Stop script if user hates motion
+
+    let currentIndex = Math.floor(Math.random() * images.length); // Start random
+    let activeLayer = 1; // Toggles between 1 and 2
+
+    const bg1 = document.getElementById('hero-bg-1');
+    const bg2 = document.getElementById('hero-bg-2');
+
+    function rotateImage() {
+        // Pick next image
+        currentIndex = (currentIndex + 1) % images.length;
+        const nextImageUrl = `url('${cdnBase}${images[currentIndex]}')`;
+
+        // Crossfade Logic
+        if (activeLayer === 1) {
+            // Layer 1 is active, fade in Layer 2 on top
+            bg2.style.backgroundImage = nextImageUrl;
+            bg2.style.opacity = '1';
+            bg1.style.opacity = '0';
+            activeLayer = 2;
+        } else {
+            // Layer 2 is active, fade in Layer 1 on top
+            bg1.style.backgroundImage = nextImageUrl;
+            bg1.style.opacity = '1';
+            bg2.style.opacity = '0';
+            activeLayer = 1;
+        }
+    }
+
+    // Start Rotation
+    setInterval(rotateImage, intervalTime);
+})();
+</script>
