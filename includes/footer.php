@@ -29,17 +29,14 @@ $activePlaylist = $pageConfig['playlist'] ?? [];
 </div>
 
 
-<div id="global-player-zone" class="fixed-bottom" style="z-index: 1050; pointer-events: none;" data-turbo-permanent>
-    
-    <rs-audio-player id="stardust-player-instance" class="d-none"></rs-audio-player>
+<div id="global-player-zone" class="fixed-bottom" style="z-index: 1050;" data-turbo-permanent>
+    <?php include ROOT_PATH . '/includes/components/audio-player/sticky-player.php'; ?>
 
+    <script src="https://assets.raggiesoft.com/engine-room-records/js/stardust-player.js?v=<?php echo time(); ?>"></script>
+    
     <script>
-        // If a playlist is already playing, we don't want to overwrite it 
-        // with an empty one just because the user clicked "Home".
-        // This logic can be refined in JS, but for now we define the global.
-        if (!window.GLOBAL_PLAYLIST) {
-            window.GLOBAL_PLAYLIST = <?php echo json_encode($activePlaylist); ?>;
-        }
+        // Initialize global registry if not exists
+        window.STARDUST_PLAYLIST = window.STARDUST_PLAYLIST || [];
     </script>
 </div>
 

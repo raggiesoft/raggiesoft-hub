@@ -176,68 +176,82 @@ if (isset($customPageAssets) && is_array($customPageAssets)) {
     </div>
     
     <script>
-    (function() {
-        const loader = document.getElementById('page-loader');
-        const bar = document.getElementById('loader-bar');
-        const text = document.getElementById('loader-text');
-        let progress = 0; let progressInterval;
+        (function() {
+            const loader = document.getElementById('page-loader');
+            const bar = document.getElementById('loader-bar');
+            const text = document.getElementById('loader-text');
+            let progress = 0; let progressInterval;
 
-        function startHeartbeat() {
-            if (progressInterval) clearInterval(progressInterval);
-            progress = 10; if(bar) bar.style.width = '10%';
-            progressInterval = setInterval(() => {
-                let step = (95 - progress) / 80; if (step < 0.1) step = 0.1; 
-                progress += step; if (progress > 95) progress = 95; 
-                if(bar) bar.style.width = progress + '%';
-                if(text) {
-                    if (progress < 30) text.innerText = "> ESTABLISHING UPLINK...";
-                    else if (progress < 50) text.innerText = "> RECEIVING DATA...";
-                    else if (progress < 70) text.innerText = "> ALLOCATING MEMORY...";
-                    else text.innerText = "> PROCESSING...";
+            // 1. The Animation Loop (Same as before)
+            function startHeartbeat() {
+                if (progressInterval) clearInterval(progressInterval);
+                progress = 10; 
+                if(bar) { bar.style.width = '10%'; bar.style.opacity = '1'; }
+                
+                progressInterval = setInterval(() => {
+                    // Decays as it gets closer to 95%
+                    let step = (95 - progress) / 80; 
+                    if (step < 0.1) step = 0.1; 
+                    progress += step; 
+                    if (progress > 95) progress = 95; 
+                    
+                    if(bar) bar.style.width = progress + '%';
+                    
+                    // 2. Dynamic Sci-Fi Text Updates
+                    if(text) {
+                        if (progress < 30) text.innerText = "> ESTABLISHING UPLINK...";
+                        else if (progress < 50) text.innerText = "> HANDSHAKING...";
+                        else if (progress < 70) text.innerText = "> DECRYPTING STREAM...";
+                        else text.innerText = "> AWAITING RESPONSE...";
+                    }
+                }, 50);
+            }
+
+            function finishLoad() {
+                if (progressInterval) clearInterval(progressInterval);
+                if(bar) bar.style.width = '100%';
+                if(text) text.innerText = "> CONNECTION ESTABLISHED.";
+                
+                // Slight delay so the user sees the 100% completion
+                setTimeout(() => { 
+                    if(loader) loader.classList.add('loader-hidden'); 
+                    
+                    // Reset for next time (optional but cleaner)
+                    setTimeout(() => { 
+                        if(bar) { bar.style.width = '0%'; bar.style.opacity = '0'; }
+                    }, 500);
+                }, 500);
+            }
+
+            // --- 3. TURBO INTEGRATION ---
+            // This connects your custom loader to Hotwired Turbo's events.
+            
+            // When a link is clicked or visit starts
+            document.addEventListener('turbo:visit', () => {
+                if(loader) {
+                    loader.classList.remove('loader-hidden');
+                    if(text) text.innerText = "> INITIALIZING JUMP...";
+                    startHeartbeat();
                 }
-            }, 50);
-        }
+            });
 
-        document.addEventListener('readystatechange', () => {
-            if (document.readyState === 'interactive') {
-                progress = 75; if(bar) bar.style.width = '75%';
-                if(text) text.innerText = "> ASSEMBLING LAYOUT...";
-            }
-        });
+            // When the new content is successfully swapped in
+            document.addEventListener('turbo:load', () => {
+                finishLoad();
+            });
 
-        function finishLoad() {
-            if (progressInterval) clearInterval(progressInterval);
-            if(bar) bar.style.width = '100%';
-            if(text) text.innerText = "> SYSTEM READY.";
-            setTimeout(() => { if(loader) loader.classList.add('loader-hidden'); }, 500);
-        }
+            // Fallback for the very first page load (hard refresh)
+            document.addEventListener('DOMContentLoaded', () => {
+                // If the page is already loading, ensure animation runs
+                if (!loader.classList.contains('loader-hidden')) {
+                    startHeartbeat();
+                }
+            });
+            
+            window.addEventListener('load', finishLoad);
 
-        startHeartbeat(); 
-        window.addEventListener('load', finishLoad);
-        
-        document.addEventListener('click', (e) => {
-            const link = e.target.closest('a');
-            if (!link) return;
-            const href = link.getAttribute('href');
-            const target = link.getAttribute('target');
-            if (link.classList.contains('dropdown-toggle') || link.getAttribute('role') === 'button') return;
-            if (!href || href === '#' || href.startsWith('#')) return;
-            if (target === '_blank') return;
-            if (link.href && link.href.indexOf(window.location.hostname) === -1) return;
-            if (link.hasAttribute('download')) return;
-
-            if(loader) {
-                text.innerText = "> NAVIGATING...";
-                bar.style.width = '0%'; loader.classList.remove('loader-hidden');
-                startHeartbeat(); 
-            }
-        });
-
-        window.addEventListener('pageshow', (event) => {
-            if (event.persisted && loader) loader.classList.add('loader-hidden');
-        });
-    })();
-    </script>
+        })();
+        </script>
     
     <header>
       <nav class="navbar navbar-expand-md sticky-top border-bottom border-primary border-opacity-50 bg-body">

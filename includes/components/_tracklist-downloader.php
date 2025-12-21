@@ -163,15 +163,24 @@ $js_playlist = []; // The Master Array for JS
 </div>
 <?php
 // ==============================================================================
-//  SECTION 4: UI & PLAYER INITIALIZATION
+//  SECTION 4: PLAYER HANDOFF (TURBO EDITION)
 // ==============================================================================
 ?>
 
-<?php include ROOT_PATH . '/includes/components/audio-player/sticky-player.php'; ?>
-
 <script>
-    // Pass the PHP playlist to the Global Window scope
-    window.STARDUST_PLAYLIST = <?php echo json_encode($js_playlist); ?>;
-</script>
+    (function() {
+        const newPlaylist = <?php echo json_encode($js_playlist); ?>;
+        
+        // 1. Update the Global Variable immediately
+        window.STARDUST_PLAYLIST = newPlaylist;
 
-<script src="https://assets.raggiesoft.com/engine-room-records/js/stardust-player.js?v=<?php echo time(); ?>"></script>
+        // 2. Dispatch Event for the Stardust Engine
+        // This tells the persistent player: "Hey, I have new songs for you."
+        const event = new CustomEvent('stardust:playlist-update', { 
+            detail: { playlist: newPlaylist } 
+        });
+        document.dispatchEvent(event);
+        
+        console.log("Stardust: Playlist beam initiated.", newPlaylist.length + " tracks.");
+    })();
+</script>
