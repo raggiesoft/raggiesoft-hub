@@ -9,11 +9,13 @@ $pageTitle = "Engine Room Records - The Fortress";
 <style>
     /* ENGINE ROOM BRANDING: Industrial, Heavy, Stark */
     .engine-hero {
-        background: linear-gradient(rgba(13, 17, 23, 0.9), rgba(13, 17, 23, 0.8)), 
+        /* Permanently Dark Background (Studio Aesthetic) */
+        background: linear-gradient(rgba(13, 17, 23, 0.95), rgba(13, 17, 23, 0.85)), 
                     url('https://assets.raggiesoft.com/stardust-engine/images/studio-rack.jpg');
         background-size: cover;
         background-position: center;
         border-bottom: 4px solid #dc3545; /* Brand Red */
+        color: white; /* Force text to be white */
     }
     
     .text-stenciled {
@@ -22,6 +24,7 @@ $pageTitle = "Engine Room Records - The Fortress";
         letter-spacing: 2px;
     }
 
+    /* Card Hover Effects */
     .roster-card {
         transition: transform 0.3s ease, border-color 0.3s ease;
         border-left: 4px solid #6c757d;
@@ -30,109 +33,76 @@ $pageTitle = "Engine Room Records - The Fortress";
         transform: translateY(-5px);
         border-left-color: #dc3545;
     }
+
+    /* LOGO FIX: Force the black logo to become white */
+    .logo-invert {
+        filter: invert(1) grayscale(100%) brightness(200%);
+    }
 </style>
 
-<div class="engine-hero py-5 text-center text-white">
-    <div class="container py-5">
-        <div class="mb-4">
-            <img src="https://assets.raggiesoft.com/engine-room-records/images/logos/engine-room-records-logo.png" 
-                 alt="Engine Room Records Official Seal" 
-                 class="rounded-circle shadow-lg border border-4 border-dark"
-                 style="width: 120px; height: 120px; filter: grayscale(20%);">
+<div class="engine-hero py-5 text-center d-flex align-items-center" style="min-height: 70vh;">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                
+                <img src="https://assets.raggiesoft.com/engine-room-records/images/logos/engine-room-records-logo.png" 
+                     alt="Engine Room Records" 
+                     class="img-fluid mb-4 logo-invert" 
+                     style="max-width: 250px;">
+
+                <h1 class="display-4 fw-bold text-stenciled text-white mb-3">
+                    The Signal Starts Here
+                </h1>
+                
+                <p class="lead text-secondary mb-5" style="font-family: 'Roboto Mono', monospace;">
+                    // AUDIT_ID: 1995-ERR-001 // STATUS: OPERATIONAL
+                </p>
+
+                <div class="d-flex justify-content-center gap-3">
+                    <a href="#roster" class="btn btn-danger btn-lg rounded-0 fw-bold px-4 text-uppercase">
+                        <i class="fa-duotone fa-users-viewfinder me-2"></i>Artist Roster
+                    </a>
+                    <a href="/engine-room/history/nine-figure-refusal" class="btn btn-outline-light btn-lg rounded-0 fw-bold px-4 text-uppercase">
+                        <i class="fa-duotone fa-file-contract me-2"></i>The History
+                    </a>
+                </div>
+
+            </div>
         </div>
-        <h1 class="display-3 fw-bold text-stenciled mb-2">Engine Room Records</h1>
-        <p class="lead font-monospace text-uppercase text-danger fw-bold letter-spacing-2">
-            Est. 1992 // Blacksburg, VA
-        </p>
-        <p class="text-white-50 mx-auto" style="max-width: 700px;">
-            "We do not own artists. We protect them."
-        </p>
     </div>
 </div>
 
-<div class="container py-5">
-
-    <div class="row justify-content-center mb-5">
-        <div class="col-lg-10">
-            <div class="card bg-dark border-secondary shadow-lg">
-                <div class="card-body p-4 p-md-5">
-                    <div class="row align-items-center">
-                        <div class="col-md-8">
-                            <h3 class="h4 text-white text-uppercase fw-bold mb-3">
-                                <i class="fa-duotone fa-fire me-2 text-danger"></i>Forged in Fire
-                            </h3>
-                            <p class="text-white-50">
-                                Engine Room Records was founded in 1992 by <strong>Holly O'Connell</strong> (Age 23) in the aftermath of the "Friction Catastrophe."
-                            </p>
-                            <p class="text-white-50">
-                                After escaping a predatory contract with Apex Records that attempted to exploit her brother Ryan's paralysis and fabricate an incestuous marketing narrative, Holly vowed to build a "Fortress." She created a label designed with a single directive: <strong>The Artist holds the keys. Always.</strong>
-                            </p>
-                            <div class="mt-4">
-                                <a href="/engine-room/history/friction" class="btn btn-outline-danger rounded-pill btn-sm">
-                                    <i class="fa-duotone fa-file-contract me-2"></i>Read the Case File
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-md-4 text-center mt-4 mt-md-0 border-start border-secondary ps-md-4">
-                            <div class="p-3 bg-black rounded border border-secondary">
-                                <small class="text-muted text-uppercase d-block mb-2">Founder & CEO</small>
-                                <img src="https://assets.raggiesoft.com/stardust-engine/images/band-members/holly.jpg" 
-                                     class="img-fluid rounded-circle border border-secondary mb-3" 
-                                     style="width: 80px; height: 80px; object-fit: cover;" 
-                                     alt="Holly O'Connell">
-                                <h5 class="text-white h6 fw-bold mb-0">Holly O'Connell</h5>
-                                <div class="small text-secondary font-monospace mt-1" style="font-size: 0.7rem;">
-                                    J.D. | CFA | Cr.FA | CIRA
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+<div id="roster" class="py-5 bg-body">
+    <div class="container">
+        
+        <div class="row mb-5 align-items-end border-bottom border-secondary pb-3">
+            <div class="col-md-8">
+                <h2 class="display-5 fw-bold text-uppercase mb-0 industrial-font">Active Roster</h2>
             </div>
-        </div>
-    </div>
-
-    <div class="row justify-content-center mb-5">
-        <div class="col-lg-10">
-            <div class="alert alert-dark border-success d-flex align-items-start shadow-sm" role="alert">
-                <i class="fa-duotone fa-vault text-success fs-1 me-4 mt-1"></i>
-                <div>
-                    <h4 class="alert-heading h5 fw-bold text-success text-uppercase">The $2.04 Billion Secret</h4>
-                    <p class="small text-white-50 mb-2">
-                        To the public, Engine Room is a scrappy indie label. To the IRS, it is a loss-leader subsidiary of <strong>The O'Connell Family Revocable Trust</strong>.
-                    </p>
-                    <p class="small text-white-50 mb-0">
-                        Following Cassidy O'Connell's historic lottery win in 2012, the family integrated the label into a massive asset protection structure. This allows them to sign artists based on <strong>artistic merit</strong>, not market trends. They don't need the albums to sell. They just need them to exist.
-                    </p>
-                </div>
+            <div class="col-md-4 text-md-end text-muted font-monospace small">
+                // SYNC_STATUS: UPDATED
             </div>
-        </div>
-    </div>
-
-    <div class="mb-5">
-        <div class="d-flex align-items-center justify-content-between border-bottom border-secondary pb-3 mb-4">
-            <h2 class="h3 text-uppercase fw-bold text-dark mb-0"><i class="fa-duotone fa-users-viewfinder me-2"></i>Active Roster</h2>
-            <span class="badge bg-secondary">Suno AI Collection</span>
         </div>
 
         <div class="row g-4">
             
-            <div class="col-md-6">
-                <div class="card h-100 bg-dark text-white border-secondary roster-card">
+            <div class="col-lg-6">
+                <div class="card h-100 roster-card bg-body-tertiary">
                     <div class="row g-0 h-100">
-                        <div class="col-4 bg-black d-flex align-items-center justify-content-center p-3">
-                            <img src="https://assets.raggiesoft.com/stardust-engine/images/logos/stardust-engine-logo.png" 
-                                 class="img-fluid" alt="Stardust Engine Logo">
+                        <div class="col-4 position-relative">
+                            <img src="https://assets.raggiesoft.com/engine-room/artists/firelight/2025-silver-gauntlet-of-aethel/album-art.jpg" 
+                                 class="img-fluid h-100 object-fit-cover" 
+                                 alt="Firelight">
                         </div>
                         <div class="col-8">
                             <div class="card-body">
-                                <h5 class="card-title fw-bold text-uppercase">The Stardust Engine</h5>
-                                <span class="badge bg-danger mb-2">Legacy Artist</span>
-                                <p class="card-text small text-white-50">
-                                    The founding family. Architects of the "Ironhead" sound. Blending 80s synth-pop with industrial rock.
+                                <h5 class="card-title fw-bold text-uppercase">Firelight</h5>
+                                <span class="badge bg-warning text-dark mb-2">Cinematic Rock</span>
+                                <p class="card-text small text-muted">
+                                    The symphonic rock project behind the "Aethel" saga. Soaring vocals, heavy synths, and narrative depth.
                                 </p>
-                                <a href="/engine-room/artists/stardust-engine" class="btn btn-sm btn-light fw-bold rounded-pill stretched-link">
-                                    View Archive
+                                <a href="/raggiesoft-books/aethel-saga" class="btn btn-sm btn-outline-primary fw-bold rounded-pill stretched-link">
+                                    View Project
                                 </a>
                             </div>
                         </div>
@@ -140,48 +110,57 @@ $pageTitle = "Engine Room Records - The Fortress";
                 </div>
             </div>
 
-            <div class="col-md-6">
-                <div class="card h-100 bg-white text-dark border-secondary roster-card">
+            <div class="col-lg-6">
+                <div class="card h-100 roster-card bg-body-tertiary">
                     <div class="row g-0 h-100">
-                        <div class="col-4 bg-light d-flex align-items-center justify-content-center p-3 border-end">
-                            <i class="fa-duotone fa-masks-theater fa-3x text-secondary"></i>
+                        <div class="col-4 bg-dark d-flex align-items-center justify-content-center">
+                            <img src="https://assets.raggiesoft.com/stardust-engine/images/logo/stardust-engine-logo.png" 
+                                 class="img-fluid p-3" 
+                                 style="filter: invert(1);"
+                                 alt="The Stardust Engine">
+                        </div>
+                        <div class="col-8">
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold text-uppercase">The Stardust Engine</h5>
+                                <span class="badge bg-danger mb-2">Legendary</span>
+                                <p class="card-text small text-muted">
+                                    The band that built the building. From the 1989 "Crash" to the 2016 "Crucible" reunion.
+                                </p>
+                                <a href="/engine-room/artists/stardust-engine" class="btn btn-sm btn-outline-danger fw-bold rounded-pill stretched-link">
+                                    Enter Archive
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <div class="card h-100 roster-card bg-body-tertiary">
+                    <div class="row g-0 h-100">
+                        <div class="col-4 position-relative">
+                            <img src="https://assets.raggiesoft.com/engine-room-records/artists/mirage/2001-static-and-silence/album-art.jpg" 
+                                 class="img-fluid h-100 object-fit-cover" 
+                                 alt="Mirage">
                         </div>
                         <div class="col-8">
                             <div class="card-body">
                                 <h5 class="card-title fw-bold text-uppercase">Mirage</h5>
-                                <span class="badge bg-dark mb-2">Rock Opera</span>
+                                <span class="badge bg-info text-dark mb-2">Alt-Rock / Grunge</span>
                                 <p class="card-text small text-muted">
-                                    Cinematic storytelling and symphonic metal. Led by Julian Croft. Known for the album <em>Static & Silence</em>.
+                                    The raw, unpolished sound of the early 2000s. Featuring "Static & Silence."
                                 </p>
-                                <a href="#" class="btn btn-sm btn-outline-dark fw-bold rounded-pill disabled">Coming Soon</a>
+                                <a href="/engine-room/artists/mirage" class="btn btn-sm btn-outline-info fw-bold rounded-pill stretched-link">
+                                    View Discography
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="col-md-6">
-                <div class="card h-100 bg-white text-dark border-secondary roster-card">
-                    <div class="row g-0 h-100">
-                        <div class="col-4 bg-light d-flex align-items-center justify-content-center p-3 border-end">
-                            <i class="fa-duotone fa-flute fa-3x text-secondary"></i>
-                        </div>
-                        <div class="col-8">
-                            <div class="card-body">
-                                <h5 class="card-title fw-bold text-uppercase">Origin</h5>
-                                <span class="badge bg-info text-dark mb-2">Art Rock</span>
-                                <p class="card-text small text-muted">
-                                    Progressive pop featuring complex flute arrangements and "Safe Harbor" themes. Signed in London, 1998.
-                                </p>
-                                <a href="#" class="btn btn-sm btn-outline-dark fw-bold rounded-pill disabled">Coming Soon</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-6">
-                <div class="card h-100 bg-white text-dark border-secondary roster-card">
+            <div class="col-lg-6">
+                <div class="card h-100 roster-card bg-body-tertiary opacity-75">
                     <div class="row g-0 h-100">
                         <div class="col-4 bg-light d-flex align-items-center justify-content-center p-3 border-end">
                             <i class="fa-duotone fa-snowflake fa-3x text-secondary"></i>
@@ -203,11 +182,11 @@ $pageTitle = "Engine Room Records - The Fortress";
         </div>
     </div>
 
-    <div class="text-center pt-5 border-top border-secondary">
-        <p class="text-muted small mb-0">
+    <div class="text-center pt-5 border-top border-secondary mt-5">
+        <p class="text-muted small mb-0 font-monospace">
             <i class="fa-duotone fa-microchip me-2"></i>
-            <strong>Meta Context:</strong> This label serves as the organizational hub for Michael Ragsdale's AI-generated music portfolio.
-            All tracks are produced using <strong>Suno AI</strong> with lyrics and lore co-written by <strong>Gemini</strong>.
+            <strong>[SYSTEM MESSAGE]:</strong> This label serves as the organizational hub for Michael Ragsdale's AI-generated music portfolio.
+            All tracks produced using <strong>Suno AI</strong>. Lore co-written by <strong>Gemini</strong>.
         </p>
     </div>
 
