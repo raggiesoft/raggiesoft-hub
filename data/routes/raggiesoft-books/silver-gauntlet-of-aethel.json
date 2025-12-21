@@ -3,27 +3,22 @@
     "site": "aethel",
     "project-slug": "aethel",
     "siteName": "The Silver Gauntlet of Aethel",
-    
     "ogTitle": "The Silver Gauntlet of Aethel - Official Saga",
     "ogDescription": "An epic 80s fantasy adventure spanning four eras. Read the saga and listen to the official soundtrack by Firelight.",
     "ogImage": "https://assets.raggiesoft.com/engine-room/artists/firelight/2025-silver-gauntlet-of-aethel/album-art.jpg",
-    
     "headerMenu": "raggiesoft-books/header-aethel",
     "footer": "raggiesoft-books/footer-aethel",
     "showSidebar": false,
-    
     "navbarBrandText": "<span class=\"d-none d-md-inline\">The Silver Gauntlet of </span> Aethel",
     "navbarBrandLink": "/raggiesoft-books/aethel-saga",
     "navbarBrandLogo": "https://assets.raggiesoft.com/aethel/images/logos/silver-gauntlet-of-aethel-logo.png",
     "navbarBrandAlt": "The Silver Gauntlet of Aethel Logo - Twins Kaelan and Kaela",
     "brandFont": ["Cinzel", "serif"]
   },
-
   "/raggiesoft-books/aethel-saga": {
     "view": "pages/raggiesoft-books/aethel-saga/overview",
     "title": "The Silver Gauntlet of Aethel | Saga Overview"
   },
-
   "/raggiesoft-books/aethel-saga/lore/characters": {
     "view": "pages/raggiesoft-books/aethel-saga/lore/characters",
     "title": "Dramatis Personae | The Silver Gauntlet of Aethel",
@@ -31,7 +26,6 @@
     "ogDescription": "Meet Kaelan, Kaela, and the forces of the Gloom in this 80s fantasy saga.",
     "ogImage": "https://assets.raggiesoft.com/aethel/images/aethel-poster-background.jpg"
   },
-
   "/raggiesoft-books/aethel-saga/soundtrack": {
     "view": "pages/raggiesoft-books/aethel-saga/soundtrack",
     "title": "Original Soundtrack | The Silver Gauntlet of Aethel",
