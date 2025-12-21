@@ -18,7 +18,7 @@ $root = '/engine-room/artists/the-stardust-engine';
     <div class="container-fluid text-center pt-5 pb-5">
         <div class="container pt-5 pb-4">
             
-            <h1 class="display-2 text-uppercase text-glow-primary" 
+            <h1 class="display-2 text-uppercase text-glow-primary text-white" 
                 style="font-family: 'Audiowide', sans-serif; letter-spacing: 2px;">
                 <i class="fa-solid fa-rocket me-3"></i>The Stardust Engine
             </h1>
