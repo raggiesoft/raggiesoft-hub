@@ -45,7 +45,7 @@ $root = '/about/michael-ragsdale';
     <a href="/engine-room" class="nav-link link-body-emphasis">
         <i class="fa-solid fa-industry me-2 text-danger"></i> Engine Room HQ
     </a>
-    <a href="/engine-room/artists/the-stardust-engine" class="nav-link link-body-emphasis">
+    <a href="/engine-room/artists/stardust-engine" class="nav-link link-body-emphasis">
         <i class="fa-solid fa-rocket-launch me-2 text-warning"></i> The Stardust Engine
     </a>
 </nav>
