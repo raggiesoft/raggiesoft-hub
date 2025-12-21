@@ -1,3 +1,6 @@
+<?php
+// includes/components/footers/footer-default.php
+?>
 <footer class="mt-auto bg-body-tertiary border-top py-5">
     <div class="container">
         <div class="row gy-4">
@@ -28,9 +31,9 @@
             <div class="col-lg-2 col-md-6">
                 <h6 class="fw-bold mb-3">Built With</h6>
                 <ul class="nav flex-column small">
-                    <li class="nav-item mb-2"><span class="nav-link p-0 text-body-secondary">PHP 8.2</span></li>
+                    <li class="nav-item mb-2"><span class="nav-link p-0 text-body-secondary">PHP 8.4</span></li>
                     <li class="nav-item mb-2"><span class="nav-link p-0 text-body-secondary">Bootstrap 5.3</span></li>
-                    <li class="nav-item mb-2"><span class="nav-link p-0 text-body-secondary">FontAwesome 6 Pro</span></li>
+                    <li class="nav-item mb-2"><span class="nav-link p-0 text-body-secondary">FontAwesome Pro</span></li>
                 </ul>
             </div>
 
@@ -77,5 +80,6 @@ $konami_config = [
     'btn_style'  => 'btn-outline-light'
 ];
 
-include ROOT_PATH . '/includes/components/easter-eggs/konami-modal.php';
+// Corrected path to match file structure (konami.php instead of konami-modal.php)
+include ROOT_PATH . '/includes/components/easter-eggs/konami.php';
 ?>
