@@ -99,7 +99,7 @@
        <div class="col">
         <?php
           $props = [
-            'imgSrc' => 'https://assets.raggiesoft.com/knox/images/aerie-hold-atmospheric.jpg',
+            'imgSrc' => 'https://assets.raggiesoft.com/engine-room-records/artists/knox/album-art.jpg',
             'imgAlt' => 'Knox Universe',
             'fallbackText' => 'Knox',
             'title' => 'Project: KNOX',
