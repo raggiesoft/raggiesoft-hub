@@ -21,30 +21,34 @@ $startImage = !empty($heroImages)
         position: relative;
         overflow: hidden;
         border-bottom: 1px solid rgba(0,0,0,0.1);
-        background-color: #f8f9fa; /* Fallback color */
+        background-color: #f8f9fa; 
     }
 
     /* The Background Image Layer */
     .hero-bg-layer {
         position: absolute;
         top: 0; left: 0; width: 100%; height: 100%;
-        background-size: cover;
+        
+        /* CHANGED: 'contain' prevents cropping, 'center' keeps it in middle */
+        background-size: contain; 
+        background-repeat: no-repeat;
         background-position: center;
+        
+        /* Dark background behind the image so 'empty' space isn't jarring */
+        background-color: #000; 
+        
         z-index: 0;
         transition: opacity 1.5s ease-in-out;
         opacity: 1; 
-        /* Optional: Desaturate the image slightly so it doesn't clash with text */
-        filter: saturate(0.8); 
     }
 
-    /* The "Wash Out" Scrim Layer - TUNED DOWN */
+    /* The "Wash Out" Scrim Layer - CLEARER */
     .hero-scrim {
         position: absolute;
         top: 0; left: 0; width: 100%; height: 100%;
-        /* CHANGED: From 0.85 (Walls) to 0.60 (Glass) */
+        /* 60% White Overlay - enough to fade the image but keep it visible */
         background-color: rgba(255, 255, 255, 0.60); 
-        /* ADDED: Heavy blur to make text readable on top of a "busy" image */
-        backdrop-filter: blur(8px); 
+        /* REMOVED: Blur (as requested) */
         z-index: 1;
     }
 
@@ -55,11 +59,11 @@ $startImage = !empty($heroImages)
     }
     
     /* Text Protection: Halo Effect */
-    /* Ensures dark text is readable even if the background image is dark */
     .hero-text-protected {
         color: #000 !important;
-        text-shadow: 0 0 20px rgba(255, 255, 255, 0.8), 
-                     0 0 10px rgba(255, 255, 255, 0.8);
+        /* Stronger halo since we removed the blur */
+        text-shadow: 0 0 15px rgba(255, 255, 255, 0.9), 
+                     0 0 5px rgba(255, 255, 255, 1);
     }
 
     /* Card Styles */
