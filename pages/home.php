@@ -64,7 +64,7 @@
             'title' => 'Michael P. Ragsdale',
             'description' => 'Digital Portfolio & Resume. Full Stack Development, Project Management, and Creative Writing. The professional face of RaggieSoft.',
             'buttonProps' => [
-              'href' => '/portfolio',
+              'href' => '/about/michael-ragsdale',
               'text' => 'View Portfolio',
               'variant' => 'secondary', 
               'icon' => 'fa-duotone fa-briefcase',
