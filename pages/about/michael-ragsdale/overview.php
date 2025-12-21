@@ -38,7 +38,7 @@ global $cdn_root;
                         <p class="text-secondary small">
                             A detailed timeline of my engineering experience, education, and technical certifications.
                         </p>
-                        <span class="btn btn-outline-primary rounded-pill mt-2">View CV</span>
+                        <span class="btn btn-outline-primary rounded-pill mt-2">View Resume</span>
                     </div>
                 </a>
             </div>
