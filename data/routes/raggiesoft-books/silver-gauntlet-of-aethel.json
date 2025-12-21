@@ -6,11 +6,10 @@
     "ogDescription": "An epic 80s fantasy adventure spanning four eras. Read the saga and listen to the official soundtrack by Firelight.",
     "ogImage": "https://assets.raggiesoft.com/engine-room/artists/firelight/2025-silver-gauntlet-of-aethel/album-art.jpg",
     "site": "portfolio",
-    "theme": "ad-astra",
     "headerMenu": "portfolio/header-portfolio",
     "sidebar": "portfolio/sidebar-portfolio",
     "showSidebar": true,
-    "navbarBrandText": "<span class=\"d-none d-md-inline\">Silver Gauntlet of </span>Aethel</span>",
+    "navbarBrandText": "RaggieSoft<span class=\"d-none d-md-inline\"> Books</span>",
     "navbarBrandLink": "/raggiesoft-books",
     "navbarBrandLogo": "https://assets.raggiesoft.com/raggiesoft-corporate/images/logo/raggiesoft-logo.png"
   }
