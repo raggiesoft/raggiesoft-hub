@@ -37,6 +37,7 @@ $isProjects = (str_starts_with($request_uri, '/portfolio'));
     <ul class="dropdown-menu dropdown-menu-end shadow-sm border-0">
       <li><a class="dropdown-item" href="/about/michael-ragsdale/location"><i class="fa-duotone fa-map-location-dot me-2"></i>Location & Availability</a></li>
       <li><a class="dropdown-item" href="/about/michael-ragsdale/salary"><i class="fa-duotone fa-sack-dollar me-2"></i>Salary Requirements</a></li>
+      <li><a class="dropdown-item" href="/about/michael-ragsdale/contact"><i class="fa-duotone fa-envelope me-2"></i>Contact Information</a></li>
     </ul>
   </li>
 
