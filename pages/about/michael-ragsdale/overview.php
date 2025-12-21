@@ -4,7 +4,6 @@
 // Accessed via: raggiesoft.com/about/michael-ragsdale
 
 global $cdn_root;
-
 ?>
 
 <section class="py-5 text-center">
@@ -31,7 +30,7 @@ global $cdn_root;
 
         <div class="row g-4 justify-content-center">
             
-            <div class="col-md-6 col-lg-4">
+            <div class="col-md-6">
                 <a href="/about/michael-ragsdale/resume" class="card h-100 text-decoration-none shadow-sm hover-lift border-0 bg-body-tertiary">
                     <div class="card-body text-center p-5">
                         <div class="text-primary mb-3"><i class="fa-duotone fa-file-user fa-3x"></i></div>
@@ -44,7 +43,7 @@ global $cdn_root;
                 </a>
             </div>
 
-            <div class="col-md-6 col-lg-4">
+            <div class="col-md-6">
                 <a href="/about/michael-ragsdale/location" class="card h-100 text-decoration-none shadow-sm hover-lift border-0 bg-body-tertiary">
                     <div class="card-body text-center p-5">
                         <div class="text-success mb-3"><i class="fa-duotone fa-map-location-dot fa-3x"></i></div>
@@ -57,7 +56,7 @@ global $cdn_root;
                 </a>
             </div>
 
-             <div class="col-md-6 col-lg-4">
+             <div class="col-md-6">
                 <a href="/portfolio" class="card h-100 text-decoration-none shadow-sm hover-lift border-0 bg-body-tertiary">
                     <div class="card-body text-center p-5">
                         <div class="text-warning mb-3"><i class="fa-duotone fa-code-branch fa-3x"></i></div>
@@ -66,6 +65,19 @@ global $cdn_root;
                             Deep dive into the RaggieSoft Stack: Elara, Jessica, and the Stardust Engine.
                         </p>
                         <span class="btn btn-outline-warning rounded-pill mt-2">View Projects</span>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-md-6">
+                <a href="/about/michael-ragsdale/contact" class="card h-100 text-decoration-none shadow-sm hover-lift border-0 bg-body-tertiary">
+                    <div class="card-body text-center p-5">
+                        <div class="text-danger mb-3"><i class="fa-duotone fa-clipboard-check fa-3x"></i></div>
+                        <h3 class="h4 fw-bold text-body-emphasis">Hiring Inquiries</h3>
+                        <p class="text-secondary small">
+                            Ready to discuss a role? Complete a quick pre-screening check to access my contact info.
+                        </p>
+                        <span class="btn btn-outline-danger rounded-pill mt-2">Start Pre-Screening</span>
                     </div>
                 </a>
             </div>
