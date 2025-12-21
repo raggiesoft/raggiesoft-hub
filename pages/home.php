@@ -38,7 +38,7 @@
       <div class="col">
         <?php
           $props = [
-            'imgSrc' => 'https://assets.raggiesoft.com/stardust-engine/images/stardust-engine-hero.jpg',
+            'imgSrc' => 'https://assets.raggiesoft.com/stardust-engine/images/logo/stardust-engine-logo.jpg',
             'imgAlt' => 'The Stardust Engine Band',
             'fallbackText' => 'Stardust Engine',
             'title' => 'The Stardust Engine',
