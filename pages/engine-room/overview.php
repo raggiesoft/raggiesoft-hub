@@ -114,7 +114,7 @@ $pageTitle = "Engine Room Records - The Fortress";
                 <div class="card h-100 roster-card bg-body-tertiary">
                     <div class="row g-0 h-100">
                         <div class="col-4 bg-dark d-flex align-items-center justify-content-center">
-                            <img src="https://assets.raggiesoft.com/engine-room-records/artists/stardust-engine/band-logo.png" 
+                            <img src="https://assets.raggiesoft.com/engine-room-records/artists/the-stardust-engine/band-logo.png" 
                                  class="img-fluid p-3" 
                                  alt="The Stardust Engine">
                         </div>
