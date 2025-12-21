@@ -1,7 +1,8 @@
 <?php
 ob_start(); 
-// RaggieSoft Elara Router v5.4
+// RaggieSoft Elara Router v5.5
 // Features: Path-Based Inheritance, Auto-Discovery, Route Collision Detection
+// Fix v5.5: Connected JSON loader ($masterRoutes) to Router Logic
 
 define('ROOT_PATH', dirname(__DIR__));
 $request_uri = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
@@ -90,7 +91,8 @@ function resolveAsset($map, $currentUri) {
 // --- 3. SMART ROUTER LOGIC ---
 
 // A. Check for Explicit Configuration
-$pageConfig = $routes[$request_uri] ?? [];
+// FIX: Changed $routes to $masterRoutes to match the variable built in Step 2
+$pageConfig = $masterRoutes[$request_uri] ?? [];
 
 // B. Auto-Discovery Logic
 if (!isset($pageConfig['view'])) {
