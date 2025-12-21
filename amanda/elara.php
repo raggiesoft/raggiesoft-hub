@@ -1,8 +1,7 @@
 <?php
 ob_start(); 
-// RaggieSoft Elara Router v5.6
-// Features: Path-Based Inheritance, Auto-Discovery, Route Collision Detection
-// Fixes: "Common" Block Inheritance & Variable Consistency ($masterRoutes)
+// RaggieSoft Elara Router v5.7
+// Fix v5.7: Added Recursive Route Discovery (Subfolders) & JSON Error Logging
 
 define('ROOT_PATH', dirname(__DIR__));
 $request_uri = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
@@ -36,42 +35,43 @@ $defaults = array_merge($settings['defaults'], [
     'title' => $siteName, 
     'theme' => $defaultTheme,
     'site' => $projectSlug,
-    // Construct Full URLs
     'ogImage' => $cdnBaseUrl . ($settings['defaults']['ogImage'] ?? ''),
     'ogUrl' => "https://" . $_SERVER['HTTP_HOST'] . $request_uri,
     'navbarBrandLogo' => $cdnBaseUrl . ($settings['defaults']['navbarBrandLogo'] ?? '')
 ]);
 
-// --- 2. LOAD & MERGE ROUTE FILES ---
-// Scans the /data/routes directory for JSON files and builds the master routing table.
-$routeFiles = glob(ROOT_PATH . '/data/routes/*.json');
+// --- 2. LOAD & MERGE ROUTE FILES (RECURSIVE) ---
 $masterRoutes = [];
 
+// FIX: Scan root 'data/routes/*.json' AND subfolders 'data/routes/*/*.json'
+$routesRoot = glob(ROOT_PATH . '/data/routes/*.json') ?: [];
+$routesSub  = glob(ROOT_PATH . '/data/routes/*/*.json') ?: [];
+$routeFiles = array_merge($routesRoot, $routesSub);
+
 foreach ($routeFiles as $file) {
-    // 1. Read the raw JSON
     $jsonContent = file_get_contents($file);
     $fileData = json_decode($jsonContent, true);
+
+    // FIX: Log JSON errors so they aren't silent
+    if (json_last_error() !== JSON_ERROR_NONE) {
+        error_log("Elara Error: Invalid JSON in " . basename($file) . " - " . json_last_error_msg());
+        continue; // Skip bad file
+    }
 
     if (is_array($fileData)) {
         
         // --- 2A. INHERITANCE LOGIC (The "DRY" Fix) ---
-        // Check if this specific file has a "common" definition block
         if (isset($fileData['common'])) {
             $commonConfig = $fileData['common'];
-            
-            // Remove 'common' so it doesn't become a valid URL route itself
-            unset($fileData['common']);
+            unset($fileData['common']); // Remove 'common' key
 
-            // Iterate through the remaining routes in THIS file
             foreach ($fileData as $routeKey => $routeConfig) {
-                // MERGE: Specific settings ($routeConfig) overwrite Common settings ($commonConfig)
-                // This allows individual pages to have unique titles/images while sharing the rest.
+                // Merge: Specific settings overwrite Common settings
                 $fileData[$routeKey] = array_merge($commonConfig, $routeConfig);
             }
         }
         // ---------------------------------------------
 
-        // 3. Add the processed routes to the Master Table
         $masterRoutes = array_merge($masterRoutes, $fileData);
     }
 }
@@ -91,7 +91,6 @@ function resolveAsset($map, $currentUri) {
 // --- 3. SMART ROUTER LOGIC ---
 
 // A. Check for Explicit Configuration
-// FIX: Using $masterRoutes instead of undefined $routes
 $pageConfig = $masterRoutes[$request_uri] ?? [];
 
 // B. Auto-Discovery Logic
@@ -165,11 +164,9 @@ if (isset($pageConfig['headerMenu'])) {
     $headerMap = $settings['headerMap'] ?? [];
     $headerFile = resolveAsset($headerMap, $request_uri) ?? 'header-default';
 }
-// Note: We force 'headers/' here, so JSON should NOT include it.
 $currentHeaderMenu = ROOT_PATH . '/includes/components/headers/' . $headerFile . '.php';
 
 // Sidebar Resolution
-// Note: We force 'sidebars/' here, so JSON should NOT include it.
 $currentSidebar = ROOT_PATH . '/includes/components/sidebars/' . $config['sidebar'] . '.php';
 
 require_once ROOT_PATH . '/includes/header.php';
@@ -201,7 +198,6 @@ echo '    </main>';
 echo '  </div>'; 
 echo '</div>'; 
 
-// Footer logic is now fully handled inside this file
 require_once ROOT_PATH . '/includes/footer.php';
 ob_end_flush();
 ?>
