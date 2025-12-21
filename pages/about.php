@@ -1,76 +1,107 @@
-<div class="container py-5">
-  <h1 class="display-5 fw-bold border-bottom pb-2 mb-4"> About This Project</h1>
+<?php
+// pages/about.php
+// "Mission Profile" - Explaining the Meta & The Lore
+// Updated to use the shared Immersive Hero template
 
-    <div class="fs-5"> <p class="lead mb-4"> The <strong>Knox</strong> narrative universe is a multi-layered story presented across several interconnected websites, all built on a custom, polyglot technology stack. This "welcome mat" site (<code>raggiesoftknox.com</code>) serves as the central hub, introducing the world and directing visitors to the different facets of the story.
-      </p>
+$pageTitle = "Mission Profile - The Stardust Engine";
 
-      <h2 class="h3 fw-bold pt-4 mb-3"> Narrative Architecture
-      </h2>
-      <p class="mb-4 text-body-secondary">The story is split into distinct parts, each with its own dedicated subdomain:</p> <ul class="list-unstyled mb-4"> <li class="mb-3"> <strong class="h5 d-block mb-1">https://raggiesoftknox.com</strong> <p class="text-body-secondary ps-3"> The main "front door" and central hub you are on now. Built with a custom, lightweight PHP router (<code>elara.php</code>) and styled with Bootstrap for layout and a custom theme for colors.
-          </p>
-        </li>
-        <li class="mb-3">
-          <strong class="h5 d-block mb-1">https://lore.raggiesoftknox.com</strong>
-          <p class="text-body-secondary ps-3">
-            The "Lore Bible," which hosts all the detailed world-building, character profiles, and faction backstories. This site is powered by WordPress with a custom-built theme to match the brand.
-          </p>
-        </li>
-        <li class="mb-3">
-          <strong class="h5 d-block mb-1">https://pact.raggiesoftknox.com</strong>
-          <p class="text-body-secondary ps-3">
-            The narrative told from the perspective of the twins, Anya and Kael Rostova, and their companion Pippa.
-          </p>
-        </li>
-        <li class="mb-3">
-          <strong class="h5 d-block mb-1">https://port.raggiesoftknox.com</strong>
-          <p class="text-body-secondary ps-3">
-            The narrative told from the point of view of the Axiom, the oppressive corporate entity ruling Telsus Minor.
-          </p>
-        </li>
-      </ul>
+// 1. Fetch Hero Images for the rotator
+require_once ROOT_PATH . '/includes/utils/json-reader.php';
+$heroImages = fetch_asset_json('common/json/hero-images.json');
 
-      <h2 class="h3 fw-bold pt-4 mb-3">
-        Technology Stack
-      </h2>
-      <p class="mb-4 text-body-secondary">This project is built on a custom microservices architecture. The core components are:</p>
+// 2. Pick Random Start Image
+$startImage = !empty($heroImages) 
+    ? "https://assets.raggiesoft.com" . $heroImages[array_rand($heroImages)] 
+    : "https://assets.raggiesoft.com/common/patterns/stars-transparent.png";
 
-      <ul class="list-unstyled mb-4">
-        <li class="mb-3">
-          <strong class="h5 d-block mb-1">Frontend:</strong>
-          <p class="text-body-secondary ps-3">
-            The static and narrative sites are custom PHP applications. Styling is managed by <a href="https://getbootstrap.com/" target="_blank" rel="noopener noreferrer" class="link-primary text-decoration-none">Bootstrap</a>, with icons potentially from <a href="https://webawesome.com/" target="_blank" rel="noopener noreferrer" class="link-primary text-decoration-none">Web Awesome</a> or Font Awesome.
-          </p>
-        </li>
-        <li class="mb-3">
-          <strong class="h5 d-block mb-1">Backend Services:</strong>
-          <p class="text-body-secondary ps-3">
-            The stack includes a <a href="https://spring.io/projects/spring-boot" target="_blank" rel="noopener noreferrer" class="link-primary text-decoration-none">Java (Spring Boot)</a> API for serving music and a planned <a href="https://fastapi.tiangolo.com/" target="_blank" rel="noopener noreferrer" class="link-primary text-decoration-none">Python (FastAPI)</a> API for dynamic content.
-          </p>
-        </li>
-        <li class="mb-3">
-          <strong class="h5 d-block mb-1">Database:</strong>
-          <p class="text-body-secondary ps-3">
-            A dedicated <a href="https://mariadb.org/" target="_blank" rel="noopener noreferrer" class="link-primary text-decoration-none">MariaDB</a> droplet hosts the data.
-          </p>
-        </li>
-        <li class="mb-3">
-          <strong class="h5 d-block mb-1">Hosting & Deployment:</strong>
-          <p class="text-body-secondary ps-3">
-            All sites are self-managed on a <a href="https://www.digitalocean.com/" target="_blank" rel="noopener noreferrer" class="link-primary text-decoration-none">DigitalOcean</a> Ubuntu droplet (<code>glowing-galaxy</code>) running an <a href="https://www.nginx.com/" target="_blank" rel="noopener noreferrer" class="link-primary text-decoration-none">Nginx</a> web server.
-          </p>
-        </li>
-        <li class="mb-3">
-          <strong class="h5 d-block mb-1">CDN & DNS:</strong>
-          <p class="text-body-secondary ps-3">
-            Static assets (CSS, images) are served from <a href="https://www.digitalocean.com/products/spaces" target="_blank" rel="noopener noreferrer" class="link-primary text-decoration-none">DigitalOcean Spaces</a> (<code>assets.raggiesoft.com</code>), with DNS and security managed by <a href="https://www.cloudflare.com/" target="_blank" rel="noopener noreferrer" class="link-primary text-decoration-none">Cloudflare</a>.
-          </p>
-        </li>
-        <li class="mb-3">
-          <strong class="h5 d-block mb-1">Version Control:</strong>
-          <p class="text-body-secondary ps-3">
-            All code is version-controlled with <a href="https://git-scm.com/" target="_blank" rel="noopener noreferrer" class="link-primary text-decoration-none">Git</a> and hosted on GitHub, deployed via custom Bash scripts.
-          </p>
-        </li>
-      </ul>
+// 3. Prepare JSON for JS
+$imagesJson = htmlspecialchars(json_encode($heroImages), ENT_QUOTES, 'UTF-8');
+?>
+
+<div class="immersive-container hero-rotator-container" data-images="<?php echo $imagesJson; ?>">
+    
+    <div class="hero-bg-layer hero-bg-layer-1" style="background-image: url('<?php echo $startImage; ?>');"></div>
+    <div class="hero-bg-layer hero-bg-layer-2" style="background-image: url(''); opacity: 0;"></div>
+    
+    <div class="hero-overlay"></div>
+
+    <div class="content-wrapper container">
+        
+        <div class="text-center mb-5">
+            <h1 class="display-3 fw-bold text-uppercase text-white text-shadow mb-3" style="font-family: 'Audiowide', cursive;">
+                Mission Profile
+            </h1>
+            <p class="lead text-white-50 mx-auto text-shadow" style="max-width: 800px;">
+                <strong class="text-info">The Stardust Engine</strong> is a "Dual-Layer" reality: 
+                part technical experiment, part narrative art project.
+            </p>
+        </div>
+
+        <div class="row g-5 justify-content-center">
+            
+            <div class="col-lg-5">
+                <div class="card glass-card h-100 border-secondary">
+                    <div class="card-header bg-transparent border-secondary text-warning fw-bold text-uppercase py-3">
+                        <i class="fa-duotone fa-planet-ringed me-2"></i> Layer 1: The Universe
+                    </div>
+                    <div class="card-body">
+                        <h3 class="h5 fw-bold text-white mb-3">The Narrative</h3>
+                        <p class="small text-white-50">
+                            A fully realized fictional timeline spanning 1987-2017. 
+                            It documents the rise, fall, and rebirth of a rock band that never existed,
+                            fighting a corporate music industry that was all too real.
+                        </p>
+                        <hr class="border-secondary opacity-50">
+                        <ul class="list-unstyled small text-white-50 mb-0">
+                            <li class="mb-1"><i class="fa-duotone fa-check text-warning me-2"></i>Lore-driven Discography</li>
+                            <li class="mb-1"><i class="fa-duotone fa-check text-warning me-2"></i>Legal Thriller Subplot</li>
+                            <li><i class="fa-duotone fa-check text-warning me-2"></i>Character Wikis</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-5">
+                <div class="card glass-card h-100 border-primary">
+                    <div class="card-header bg-transparent border-primary text-primary fw-bold text-uppercase py-3">
+                        <i class="fa-duotone fa-code-branch me-2"></i> Layer 2: The Engine
+                    </div>
+                    <div class="card-body">
+                        <h3 class="h5 fw-bold text-white mb-3">The Technology</h3>
+                        <p class="small text-white-50">
+                            A portfolio of Full-Stack Architecture and Generative AI integration.
+                            This website serves as the production environment for testing new concepts in UX and Content Delivery.
+                        </p>
+                        <hr class="border-primary opacity-50">
+                        <ul class="list-unstyled small text-white-50 mb-0">
+                            <li class="mb-1"><i class="fa-duotone fa-check text-primary me-2"></i>PHP 8.4 MVC Router (Elara)</li>
+                            <li class="mb-1"><i class="fa-duotone fa-check text-primary me-2"></i>Suno AI (Audio Generation)</li>
+                            <li><i class="fa-duotone fa-check text-primary me-2"></i>Gemini (Lore & Code Assist)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row g-4 mt-4 justify-content-center">
+            <div class="col-auto">
+                <div class="badge rounded-pill bg-black bg-opacity-50 border border-secondary p-3 d-flex align-items-center">
+                    <i class="fa-duotone fa-user-visor text-white me-2"></i>
+                    <span class="text-white-50 small me-1">Architect:</span>
+                    <span class="fw-bold text-white">Michael Ragsdale</span>
+                </div>
+            </div>
+            <div class="col-auto">
+                <div class="badge rounded-pill bg-black bg-opacity-50 border border-secondary p-3 d-flex align-items-center">
+                    <i class="fa-duotone fa-sparkles text-info me-2"></i>
+                    <span class="text-white-50 small me-1">Co-Pilot:</span>
+                    <span class="fw-bold text-info">Gemini</span>
+                </div>
+            </div>
+        </div>
+
     </div>
 </div>
+
+<script src="https://assets.raggiesoft.com/common/js/hero-image.js"></script>
