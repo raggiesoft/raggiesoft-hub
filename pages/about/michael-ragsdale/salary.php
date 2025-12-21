@@ -1,13 +1,14 @@
 <?php
 // pages/about/michael-ragsdale/salary.php
 // Interactive Salary Negotiator
+// UPDATED: Now uses the unified 'recruiter-gate.js' engine for consistent logic.
 
 $pageConfig = [
     'title' => 'Salary Requirements | Michael P. Ragsdale',
     'sidebar' => 'portfolio/sidebar-portfolio', 
     'scripts' => [
-        // Updated Path: Now serving correctly from the Portfolio Assets folder
-        'https://assets.raggiesoft.com/portfolio/js/salary-negotiator.js' 
+        // POINT THIS TO THE SUPERIOR SCRIPT
+        'https://assets.raggiesoft.com/portfolio/js/recruiter-gate.js' 
     ]
 ];
 ?>
@@ -32,8 +33,8 @@ $pageConfig = [
             As a developer committed to efficiency, I provide this tool to help recruiters quickly determine if our expectations align. This saves us both the time of scheduling a screening call only to discover a mismatch in budget.
         </p>
     </div>
-
-    <div id="salary-negotiator-container" class="mb-5">
+    
+    <div id="gate-container" class="mb-5">
         <div class="text-center p-5 text-secondary">
             <div class="spinner-border text-primary mb-3" role="status"></div>
             <p>Loading Negotiator Logic...</p>
