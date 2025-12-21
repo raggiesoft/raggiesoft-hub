@@ -1,73 +1,42 @@
 {
+  "common": {
+    "brandFont": ["Roboto", "sans-serif"],
+    "headerMenu": "portfolio/header-portfolio",
+    "sidebar": "portfolio/sidebar-portfolio",
+    "showSidebar": true,
+    "navbarBrandText": "Michael P. Ragsdale",
+    "navbarBrandLink": "/about/michael-ragsdale",
+    "navbarBrandLogo": "https://assets.raggiesoft.com/raggiesoft-corporate/images/logo/raggiesoft-logo.png",
+    "navbarBrandAlt": "RaggieSoft Official Logo",
+    "navbarBrandClass": "navbar-brand-raggiesoft",
+    "siteName": "Michael P. Ragsdale",
+    "ogDescription": "The digital hub for Michael P. Ragsdale. Systems Architect, Full-Stack Developer, and Accessibility Specialist.",
+    "ogImage": "https://assets.raggiesoft.com/common/images/mragsdale-social.jpg"
+  },
   "/about/michael-ragsdale": {
     "view": "pages/about/michael-ragsdale/overview",
     "title": "Michael P. Ragsdale | Digital Architect",
     "ogTitle": "Michael P. Ragsdale - Digital Architect",
-    "ogDescription": "The digital hub for Michael P. Ragsdale. Systems Architect, Full-Stack Developer, and Accessibility Specialist.",
-    "ogImage": "https://assets.raggiesoft.com/common/images/mragsdale-social.jpg",
-    "brandFont": ["Roboto", "sans-serif"],
-    "headerMenu": "portfolio/header-portfolio",
-    "navbarBrandText": "Michael P. Ragsdale",
-    "navbarBrandLink": "/about/michael-ragsdale",
-    "navbarBrandLogo": "https://assets.raggiesoft.com/raggiesoft-corporate/images/logo/raggiesoft-logo.png",
-    "navbarBrandAlt": "RaggieSoft Official Logo",
-    "navbarBrandClass": "navbar-brand-raggiesoft"
+    "showSidebar": false
   },
   "/about/michael-ragsdale/resume": {
     "view": "pages/about/michael-ragsdale/resume",
     "title": "Resume | Michael P. Ragsdale",
-    "ogTitle": "Resume - Michael P. Ragsdale",
-    "ogImage": "https://assets.raggiesoft.com/common/images/mragsdale-social.jpg",
-    "brandFont": ["Roboto", "sans-serif"],
-    "headerMenu": "portfolio/header-portfolio",
-    "sidebar": "portfolio/sidebar-portfolio",
-    "showSidebar": true,
-    "navbarBrandText": "Michael P. Ragsdale",
-    "navbarBrandLink": "/about/michael-ragsdale",
-    "navbarBrandLogo": "https://assets.raggiesoft.com/raggiesoft-corporate/images/logo/raggiesoft-logo.png",
-    "navbarBrandAlt": "RaggieSoft Official Logo",
-    "navbarBrandClass": "navbar-brand-raggiesoft"
+    "ogTitle": "Resume - Michael P. Ragsdale"
   },
   "/about/michael-ragsdale/location": {
     "view": "pages/about/michael-ragsdale/location",
     "title": "Location & Logistics | Michael P. Ragsdale",
-    "ogImage": "https://assets.raggiesoft.com/common/images/mragsdale-social.jpg",
-    "brandFont": ["Roboto", "sans-serif"],
-    "headerMenu": "portfolio/header-portfolio",
-    "sidebar": "portfolio/sidebar-portfolio",
-    "showSidebar": true,
-    "navbarBrandText": "Michael P. Ragsdale",
-    "navbarBrandLink": "/about/michael-ragsdale",
-    "navbarBrandLogo": "https://assets.raggiesoft.com/raggiesoft-corporate/images/logo/raggiesoft-logo.png",
-    "navbarBrandAlt": "RaggieSoft Official Logo",
-    "navbarBrandClass": "navbar-brand-raggiesoft"
+    "ogTitle": "Location & Logistics - Michael P. Ragsdale",
   },
   "/about/michael-ragsdale/salary": {
     "view": "pages/about/michael-ragsdale/salary",
     "title": "Salary Requirements | Michael P. Ragsdale",
-    "ogImage": "https://assets.raggiesoft.com/common/images/mragsdale-social.jpg",
-    "brandFont": ["Roboto", "sans-serif"],
-    "headerMenu": "portfolio/header-portfolio",
-    "sidebar": "portfolio/sidebar-portfolio",
-    "showSidebar": true,
-    "navbarBrandText": "Michael P. Ragsdale",
-    "navbarBrandLink": "/about/michael-ragsdale",
-    "navbarBrandLogo": "https://assets.raggiesoft.com/raggiesoft-corporate/images/logo/raggiesoft-logo.png",
-    "navbarBrandAlt": "RaggieSoft Official Logo",
-    "navbarBrandClass": "navbar-brand-raggiesoft"
+    "ogTitle": "Salary Requirements - Michael P. Ragsdale"
   },
   "/about/michael-ragsdale/contact": {
     "view": "pages/about/michael-ragsdale/contact",
     "title": "Contact Information | Michael P. Ragsdale",
-    "ogImage": "https://assets.raggiesoft.com/common/images/mragsdale-social.jpg",
-    "brandFont": ["Roboto", "sans-serif"],
-    "headerMenu": "portfolio/header-portfolio",
-    "sidebar": "portfolio/sidebar-portfolio",
-    "showSidebar": true,
-    "navbarBrandText": "Michael P. Ragsdale",
-    "navbarBrandLink": "/about/michael-ragsdale",
-    "navbarBrandLogo": "https://assets.raggiesoft.com/raggiesoft-corporate/images/logo/raggiesoft-logo.png",
-    "navbarBrandAlt": "RaggieSoft Official Logo",
-    "navbarBrandClass": "navbar-brand-raggiesoft"
+    "ogTitle": "Contact Information - Michael P. Ragsdale"
   }
 }
