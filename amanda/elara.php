@@ -43,11 +43,15 @@ $defaults = array_merge($settings['defaults'], [
 // --- 2. LOAD & MERGE ROUTE FILES (RECURSIVE) ---
 $masterRoutes = [];
 
-// FIX: Scan root 'data/routes/*.json' AND subfolders 'data/routes/*/*.json'
-$routesRoot = glob(ROOT_PATH . '/data/routes/*.json') ?: [];
-$routesSub  = glob(ROOT_PATH . '/data/routes/*/*.json') ?: [];
-$routeFiles = array_merge($routesRoot, $routesSub);
+// SCAN: Recursively find ALL .json files inside /data/routes/
+$routeFiles = [];
+$directory = new RecursiveDirectoryIterator(ROOT_PATH . '/data/routes');
+$iterator = new RecursiveIteratorIterator($directory);
+$regex = new RegexIterator($iterator, '/^.+\.json$/i', RecursiveRegexIterator::GET_MATCH);
 
+foreach ($regex as $file) {
+    $routeFiles[] = $file[0];
+}
 foreach ($routeFiles as $file) {
     $jsonContent = file_get_contents($file);
     $fileData = json_decode($jsonContent, true);
