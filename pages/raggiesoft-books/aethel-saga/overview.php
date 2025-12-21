@@ -10,51 +10,6 @@ $album_path_web = '/engine-room-records/artists/firelight/2025-silver-gauntlet-o
 $cover_art = 'https://assets.raggiesoft.com/engine-room-records/artists/firelight/2025-silver-gauntlet-of-aethel/album-art.jpg';
 ?>
 
-<style>
-    /* AETHEL SAGA SPECIFIC STYLES */
-    .aethel-hero {
-        position: relative;
-        background-color: #050505;
-        color: #e0e0e0;
-        overflow: hidden;
-        border-bottom: 4px solid #d4af37; /* Gold Border */
-    }
-    
-    .aethel-hero::before {
-        content: '';
-        position: absolute;
-        top: 0; left: 0; right: 0; bottom: 0;
-        background-image: url('<?php echo $cover_art; ?>');
-        background-size: cover;
-        background-position: center;
-        opacity: 0.3;
-        filter: blur(10px) grayscale(50%);
-        z-index: 0;
-    }
-    
-    .hero-content {
-        position: relative;
-        z-index: 2;
-    }
-
-    .cinzel-font {
-        font-family: 'Cinzel', serif;
-        text-transform: uppercase;
-        letter-spacing: 2px;
-    }
-
-    .era-card {
-        border: 1px solid rgba(255, 255, 255, 0.1);
-        background: linear-gradient(180deg, #1a1a1a 0%, #0d0d0d 100%);
-        transition: transform 0.3s ease, border-color 0.3s ease;
-    }
-    .era-card:hover {
-        transform: translateY(-5px);
-        border-color: #d4af37;
-    }
-    
-    .text-gold { color: #d4af37 !important; }
-</style>
 
 <div class="aethel-hero py-5">
     <div class="container py-5">
