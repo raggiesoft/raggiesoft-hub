@@ -19,7 +19,7 @@
     "brandFont": ["Roboto", "sans-serif"],
     "headerMenu": "portfolio/header-portfolio",
     "sidebar": "portfolio/sidebar-portfolio",
-    "showSidebar": true,
+    "showSidebar": false,
     "navbarBrandText": "Michael P. Ragsdale",
     "navbarBrandLink": "/about/michael-ragsdale",
     "navbarBrandLogo": "https://assets.raggiesoft.com/raggiesoft-corporate/images/logo/raggiesoft-logo.png",
