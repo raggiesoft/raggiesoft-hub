@@ -9,11 +9,10 @@
                     <span class="fs-5 fw-bold text-uppercase brand-font">RaggieSoft</span>
                 </a>
                 <p class="text-body-secondary small">
-                    Digital craftsmanship for the modern web.<br>
-                    Specializing in narrative-driven experiences and systems architecture.
+                    Digital craftsmanship since 1997.<br> Specializing in narrative-driven experiences and systems architecture.
                 </p>
                 <div class="small text-muted mt-3">
-                    <i class="fa-solid fa-location-dot me-1"></i> Norfolk, VA &bull; Est. 2025
+                    <i class="fa-solid fa-location-dot me-1"></i> Norfolk, VA &bull; Est. 2008
                 </div>
             </div>
 
@@ -29,9 +28,9 @@
             <div class="col-lg-2 col-md-6">
                 <h6 class="fw-bold mb-3">Built With</h6>
                 <ul class="nav flex-column small">
-                    <li class="nav-item mb-2"><span class="nav-link p-0 text-body-secondary">PHP 8.4</span></li>
+                    <li class="nav-item mb-2"><span class="nav-link p-0 text-body-secondary">PHP 8.2</span></li>
                     <li class="nav-item mb-2"><span class="nav-link p-0 text-body-secondary">Bootstrap 5.3</span></li>
-                    <li class="nav-item mb-2"><span class="nav-link p-0 text-body-secondary">FontAwesome 7 Pro</span></li>
+                    <li class="nav-item mb-2"><span class="nav-link p-0 text-body-secondary">FontAwesome 6 Pro</span></li>
                 </ul>
             </div>
 
@@ -40,7 +39,7 @@
                 <div class="d-flex justify-content-md-end gap-3">
                     <a href="https://github.com/raggiesoft" class="link-secondary fs-5" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
                     <a href="https://linkedin.com/in/michael-ragsdale-raggiesoft" class="link-secondary fs-5" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="mailto:contact@raggiesoft.com" class="link-secondary fs-5" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+                    <a href="mailto:hireme@michaelpragsdale.com" class="link-secondary fs-5" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
                 </div>
             </div>
         </div>
@@ -49,7 +48,7 @@
 
         <div class="row align-items-center">
             <div class="col-md-6 text-center text-md-start small text-body-secondary">
-                &copy; <?php echo date("Y"); ?> Michael Ragsdale. All Rights Reserved.
+                &copy; 2008 &ndash; <?php echo date("Y"); ?> Michael Ragsdale. All Rights Reserved.
             </div>
             <div class="col-md-6 text-center text-md-end small text-body-secondary">
                 <a href="/privacy" class="text-decoration-none text-reset me-2">Privacy</a>
