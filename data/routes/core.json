@@ -26,5 +26,10 @@
     "navbarBrandLink": "/engine-room",
     "navbarBrandAlt": "Engine Room Records Official Seal",
     "navbarBrandClass": "rounded-0 navbar-brand-corporate-img"
+  }, 
+  "/contact": {
+    "view": "pages/contact",
+    "title": "Contact Channels | RaggieSoft",
+    "ogTitle": "Contact Michael Ragsdale - Systems Architect"
   }
 }
