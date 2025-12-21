@@ -6,7 +6,7 @@
   },
   "/about": {
     "view": "pages/about",
-    "showSidebar": true,
+    "showSidebar": false,
     "brandFont": ["Audiowide", "sans-serif"],
     "headerMenu": "header-contact",
     "site": "portfolio",
