@@ -8,7 +8,9 @@
     "headerMenu": "portfolio/header-portfolio",
     "navbarBrandText": "Michael P. Ragsdale",
     "navbarBrandLink": "/about/michael-ragsdale",
-    "navbarBrandLogo": "https://assets.raggiesoft.com/raggiesoft-corporate/images/logo/raggiesoft-logo.png"
+    "navbarBrandLogo": "https://assets.raggiesoft.com/raggiesoft-corporate/images/logo/raggiesoft-logo.png",
+    "navbarBrandAlt": "RaggieSoft Official Logo",
+    "navbarBrandClass": "navbar-brand-raggiesoft"
   },
   "/about/michael-ragsdale/resume": {
     "view": "pages/about/michael-ragsdale/resume",
@@ -20,7 +22,9 @@
     "showSidebar": true,
     "navbarBrandText": "Michael P. Ragsdale",
     "navbarBrandLink": "/about/michael-ragsdale",
-    "navbarBrandLogo": "https://assets.raggiesoft.com/raggiesoft-corporate/images/logo/raggiesoft-logo.png"
+    "navbarBrandLogo": "https://assets.raggiesoft.com/raggiesoft-corporate/images/logo/raggiesoft-logo.png",
+    "navbarBrandAlt": "RaggieSoft Official Logo",
+    "navbarBrandClass": "navbar-brand-raggiesoft"
   },
   "/about/michael-ragsdale/location": {
     "view": "pages/about/michael-ragsdale/location",
@@ -31,7 +35,9 @@
     "showSidebar": true,
     "navbarBrandText": "Michael P. Ragsdale",
     "navbarBrandLink": "/about/michael-ragsdale",
-    "navbarBrandLogo": "https://assets.raggiesoft.com/raggiesoft-corporate/images/logo/raggiesoft-logo.png"
+    "navbarBrandLogo": "https://assets.raggiesoft.com/raggiesoft-corporate/images/logo/raggiesoft-logo.png",
+    "navbarBrandAlt": "RaggieSoft Official Logo",
+    "navbarBrandClass": "navbar-brand-raggiesoft"
   },
   "/about/michael-ragsdale/salary": {
     "view": "pages/about/michael-ragsdale/salary",
@@ -42,7 +48,9 @@
     "showSidebar": true,
     "navbarBrandText": "Michael P. Ragsdale",
     "navbarBrandLink": "/about/michael-ragsdale",
-    "navbarBrandLogo": "https://assets.raggiesoft.com/raggiesoft-corporate/images/logo/raggiesoft-logo.png"
+    "navbarBrandLogo": "https://assets.raggiesoft.com/raggiesoft-corporate/images/logo/raggiesoft-logo.png",
+    "navbarBrandAlt": "RaggieSoft Official Logo",
+    "navbarBrandClass": "navbar-brand-raggiesoft"
   },
   "/portfolio": {
     "view": "pages/portfolio/overview",
@@ -53,6 +61,8 @@
     "headerMenu": "portfolio/header-portfolio",
     "navbarBrandText": "Michael P. Ragsdale",
     "navbarBrandLink": "/about/michael-ragsdale",
-    "navbarBrandLogo": "https://assets.raggiesoft.com/raggiesoft-corporate/images/logo/raggiesoft-logo.png"
+    "navbarBrandLogo": "https://assets.raggiesoft.com/raggiesoft-corporate/images/logo/raggiesoft-logo.png",
+    "navbarBrandAlt": "RaggieSoft Official Logo",
+    "navbarBrandClass": "navbar-brand-raggiesoft"
   }
 }
