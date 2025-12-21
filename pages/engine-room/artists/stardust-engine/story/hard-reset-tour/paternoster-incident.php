@@ -106,10 +106,10 @@ $pageTitle = "The Paternoster Incident - The Stardust Engine Lore";
 
     <div class="row mt-5">
         <div class="col-12 text-center">
-            <a href="/discography/1997-hard-reset" class="btn btn-outline-primary rounded-pill px-4">
+            <a href="/engine-room/artists/stardust-engine/discography/1997-hard-reset" class="btn btn-outline-primary rounded-pill px-4">
                 <i class="fa-duotone fa-compact-disc me-2"></i>Back to Hard Reset
             </a>
-            <a href="/band/ryan-oconnell" class="btn btn-outline-secondary rounded-pill px-4 ms-2">
+            <a href="/engine-room/artists/stardust-engine/band/ryan-oconnell" class="btn btn-outline-secondary rounded-pill px-4 ms-2">
                 <i class="fa-duotone fa-user me-2"></i>Ryan's Bio
             </a>
         </div>

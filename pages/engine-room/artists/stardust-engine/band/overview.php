@@ -65,7 +65,7 @@ $pageTitle = "The Band - The Stardust Engine";
                     </div>
                     <div class="col-md-8">
                         <div class="card-body p-4 p-lg-5">
-                            <a href="/band/ryan-oconnell" class="text-decoration-none">
+                            <a href="/engine-room/artists/stardust-engine/band/ryan-oconnell" class="text-decoration-none">
                                 <h2 class="display-5 fw-bold text-primary text-uppercase" style="font-family: 'Impact', sans-serif;">Ryan O'Connell</h2>
                             </a>
                             <p class="h5 text-warning fw-bold mb-3">Lead Vocals, Lead Guitar</p>
@@ -99,7 +99,7 @@ $pageTitle = "The Band - The Stardust Engine";
                     </div>
                     <div class="col-md-8">
                         <div class="card-body p-4 p-lg-5">
-                            <a href="/band/cassidy-oconnell" class="text-decoration-none">
+                            <a href="/engine-room/artists/stardust-engine/band/cassidy-oconnell" class="text-decoration-none">
                                 <h2 class="display-5 fw-bold text-primary text-uppercase" style="font-family: 'Impact', sans-serif;">Cassidy O'Connell</h2>
                             </a>
                             <p class="h5 text-warning fw-bold mb-3">Lead Vocals, Piano, Synthesizers</p>
@@ -133,7 +133,7 @@ $pageTitle = "The Band - The Stardust Engine";
                     </div>
                     <div class="col-md-8">
                         <div class="card-body p-4 p-lg-5">
-                             <a href="/band/holly-oconnell" class="text-decoration-none">
+                             <a href="/engine-room/artists/stardust-engine/band/holly-oconnell" class="text-decoration-none">
                                 <h2 class="display-5 fw-bold text-primary text-uppercase" style="font-family: 'Impact', sans-serif;">Holly O'Connell</h2>
                             </a>
                             <p class="h5 text-warning fw-bold mb-3">Manager (CEO, Engine Room Records)</p>
@@ -167,7 +167,7 @@ $pageTitle = "The Band - The Stardust Engine";
                     </div>
                     <div class="col-md-8">
                         <div class="card-body p-4 p-lg-5">
-                            <a href="/band/evan-wright" class="text-decoration-none">
+                            <a href="/engine-room/artists/stardust-engine/band/evan-wright" class="text-decoration-none">
                                 <h2 class="display-5 fw-bold text-primary text-uppercase" style="font-family: 'Impact', sans-serif;">Evan Wright</h2>
                             </a>
                             <p class="h5 text-warning fw-bold mb-3">Bass Guitar, Rhythm Guitar</p>
@@ -201,7 +201,7 @@ $pageTitle = "The Band - The Stardust Engine";
                     </div>
                     <div class="col-md-8">
                         <div class="card-body p-4 p-lg-5">
-                            <a href="/band/tyler-wright" class="text-decoration-none">
+                            <a href="/engine-room/artists/stardust-engine/band/tyler-wright" class="text-decoration-none">
                                 <h2 class="display-5 fw-bold text-primary text-uppercase" style="font-family: 'Impact', sans-serif;">Tyler Wright</h2>
                             </a>
                             <p class="h5 text-warning fw-bold mb-3">Drums, Percussion</p>

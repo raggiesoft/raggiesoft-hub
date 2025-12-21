@@ -65,7 +65,7 @@ $seized_art = 'https://assets.raggiesoft.com/stardust-engine/music/1992-friction
                 <p class="text-secondary mb-4">
                     To understand why this album was destroyed, review the unsealed court transcripts.
                 </p>
-                <a href="/story/friction" class="btn btn-outline-danger rounded-pill px-5 py-3 shadow-glow">
+                <a href="/engine-room/artists/stardust-engine/lore/friction" class="btn btn-outline-danger rounded-pill px-5 py-3 shadow-glow">
                     <i class="fa-duotone fa-file-contract me-2"></i>Open Case File
                 </a>
             </div>

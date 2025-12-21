@@ -63,7 +63,7 @@
                         </a>
                     </li>
                     <li class="mb-2">
-                        <a href="/discography/1995-the-warehouse-tapes" class="text-decoration-none text-dark hover-underline">
+                        <a href="/engine-room/artists/stardust-engine/discography/1995-the-warehouse-tapes" class="text-decoration-none text-dark hover-underline">
                             <i class="fa-solid fa-compact-disc me-2"></i>Exhibit B: The Warehouse Tapes
                         </a>
                     </li>

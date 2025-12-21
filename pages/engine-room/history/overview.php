@@ -126,7 +126,7 @@ $pageTitle = "Corporate History - Engine Room Records";
                                 <a href="/engine-room/history/nine-figure-refusal" class="btn btn-outline-light rounded-pill px-4">
                                     <i class="fa-duotone fa-file-contract me-2"></i>Access Archive
                                 </a>
-                                <a href="/story/book-1/chapter-01" class="btn btn-link text-secondary text-decoration-none small">
+                                <a href="/engine-room/artists/stardust-engine/lore/book-1/chapter-01" class="btn btn-link text-secondary text-decoration-none small">
                                     <i class="fa-duotone fa-book-open me-1"></i>Read Chapter 1
                                 </a>
                             </div>

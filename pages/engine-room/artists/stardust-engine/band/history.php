@@ -43,7 +43,7 @@ $pageTitle = "Our History - The Stardust Engine";
         </h2>
         <div class="alert alert-light border-secondary">
             <i class="fa-duotone fa-circle-info me-2"></i>
-            <strong>Key Albums:</strong> <a href="/discography/1987-electric-color">Electric Color</a>, <a href="/discography/1989-neon-hearts">Neon Hearts</a>
+            <strong>Key Albums:</strong> <a href="/engine-room/artists/stardust-engine/discography/1987-electric-color">Electric Color</a>, <a href="/engine-room/artists/stardust-engine/discography/1989-neon-hearts">Neon Hearts</a>
         </div>
         <p class="fs-5 text-muted">
             Their success at CPI attracted <strong>Apex Records</strong>, a major label looking for the next big synth-pop act. This began a five-year "Cold War" over the band's identity.
@@ -232,7 +232,7 @@ $pageTitle = "Our History - The Stardust Engine";
                 <p class="mb-4">
                     Occasional surprise shows at <em>The Ironworks</em> (and select venues on Earth) keep the legend alive. They are currently rumored to be working on a remaster of the "Lost 2007 Sessions," finally giving the post-breakup era the release it deserves.
                 </p>
-                <a href="/discography/2017-knox-ost" class="btn btn-outline-success rounded-pill">
+                <a href="/engine-room/artists/stardust-engine/discography/2017-knox-ost" class="btn btn-outline-success rounded-pill">
                     <i class="fa-duotone fa-play-circle me-2"></i>Listen to the Latest Transmission
                 </a>
             </div>

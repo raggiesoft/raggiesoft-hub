@@ -44,7 +44,7 @@ $pageTitle = "The Trigger: Slide 14 - Evidence Item #1";
                             </p>
                             
                             <div class="d-flex flex-wrap align-items-center gap-3">
-                                <a href="/discography/1995-the-warehouse-tapes/ad-astra" class="btn btn-outline-primary btn-sm rounded-pill fw-bold px-3">
+                                <a href="/engine-room/artists/stardust-engine/discography/1995-the-warehouse-tapes/ad-astra" class="btn btn-outline-primary btn-sm rounded-pill fw-bold px-3">
                                     <i class="fa-solid fa-play me-2"></i>Listen to the Track
                                 </a>
                                 <div class="small font-monospace text-muted">

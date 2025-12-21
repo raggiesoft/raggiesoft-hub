@@ -71,7 +71,7 @@ $isRadio = ($request_uri === '/radio');
            }
        } else {
            // Fallback if CDN fails
-           echo '<li><a class="dropdown-item" href="/discography">View All Albums</a></li>';
+           echo '<li><a class="dropdown-item" href="/engine-room/artists/stardust-engine/discography">View All Albums</a></li>';
            echo '<li><small class="dropdown-item text-muted">Unable to load catalog.</small></li>';
        }
        ?>
@@ -83,14 +83,14 @@ $isRadio = ($request_uri === '/radio');
       <i class="fa-duotone fa-music-magnifying-glass me-2" aria-hidden="true"></i>The Band
     </a>
     <ul class="dropdown-menu dropdown-menu-end">
-      <li><a class="dropdown-item" href="/band"><i class="fa-duotone fa-users me-2" aria-hidden="true"></i>Overview</a></li>
-      <li><a class="dropdown-item" href="/band/history"><i class="fa-duotone fa-clock-rotate-left me-2" aria-hidden="true"></i>Band History</a></li>
+      <li><a class="dropdown-item" href="/engine-room/artists/stardust-engine/band"><i class="fa-duotone fa-users me-2" aria-hidden="true"></i>Overview</a></li>
+      <li><a class="dropdown-item" href="/engine-room/artists/stardust-engine/band/history"><i class="fa-duotone fa-clock-rotate-left me-2" aria-hidden="true"></i>Band History</a></li>
       <li><hr class="dropdown-divider"></li>
-      <li><a class="dropdown-item" href="/band/ryan-oconnell"><i class="fa-duotone fa-person me-2" aria-hidden="true"></i>Ryan O'Connell</a></li>
-      <li><a class="dropdown-item" href="/band/cassidy-oconnell"><i class="fa-duotone fa-person-dress me-2" aria-hidden="true"></i>Cassidy O'Connell</a></li>
-      <li><a class="dropdown-item" href="/band/holly-oconnell"><i class="fa-duotone fa-person-dress me-2" aria-hidden="true"></i>Holly O'Connell</a></li>
-      <li><a class="dropdown-item" href="/band/evan-wright"><i class="fa-duotone fa-person me-2" aria-hidden="true"></i>Evan Wright</a></li>
-      <li><a class="dropdown-item" href="/band/tyler-wright"><i class="fa-duotone fa-person me-2" aria-hidden="true"></i>Tyler Wright</a></li>
+      <li><a class="dropdown-item" href="/engine-room/artists/stardust-engine/band/ryan-oconnell"><i class="fa-duotone fa-person me-2" aria-hidden="true"></i>Ryan O'Connell</a></li>
+      <li><a class="dropdown-item" href="/engine-room/artists/stardust-engine/band/cassidy-oconnell"><i class="fa-duotone fa-person-dress me-2" aria-hidden="true"></i>Cassidy O'Connell</a></li>
+      <li><a class="dropdown-item" href="/engine-room/artists/stardust-engine/band/holly-oconnell"><i class="fa-duotone fa-person-dress me-2" aria-hidden="true"></i>Holly O'Connell</a></li>
+      <li><a class="dropdown-item" href="/engine-room/artists/stardust-engine/band/evan-wright"><i class="fa-duotone fa-person me-2" aria-hidden="true"></i>Evan Wright</a></li>
+      <li><a class="dropdown-item" href="/engine-room/artists/stardust-engine/band/tyler-wright"><i class="fa-duotone fa-person me-2" aria-hidden="true"></i>Tyler Wright</a></li>
     </ul>
   </li>
 
@@ -99,15 +99,15 @@ $isRadio = ($request_uri === '/radio');
       <i class="fa-duotone fa-book-atlas me-2" aria-hidden="true"></i>The Lore
     </a>
     <ul class="dropdown-menu dropdown-menu-end">
-      <li><a class="dropdown-item" href="/story"><i class="fa-duotone fa-book-open me-2" aria-hidden="true"></i>Full Narrative</a></li>
+      <li><a class="dropdown-item" href="/engine-room/artists/stardust-engine/lore"><i class="fa-duotone fa-book-open me-2" aria-hidden="true"></i>Full Narrative</a></li>
       <li><hr class="dropdown-divider"></li>
       <li><h6 class="dropdown-header text-uppercase">Key Events</h6></li>
       
-      <li><a class="dropdown-item" href="/story/ad-astra"><i class="fa-duotone fa-rocket-launch me-2" aria-hidden="true"></i>Ad Astra: The Mission</a></li>
-      <li><a class="dropdown-item" href="/story/crash-of-90"><i class="fa-duotone fa-car-crash me-2" aria-hidden="true"></i>The Crash of '90</a></li>
+      <li><a class="dropdown-item" href="/engine-room/artists/stardust-engine/lore/ad-astra"><i class="fa-duotone fa-rocket-launch me-2" aria-hidden="true"></i>Ad Astra: The Mission</a></li>
+      <li><a class="dropdown-item" href="/engine-room/artists/stardust-engine/lore/crash-of-90"><i class="fa-duotone fa-car-crash me-2" aria-hidden="true"></i>The Crash of '90</a></li>
       
       <li><a class="dropdown-item" href="/engine-room/history/friction"><i class="fa-duotone fa-fire me-2" aria-hidden="true"></i>The Friction Catastrophe</a></li>
-      <li><a class="dropdown-item" href="/story/cpi"><i class="fa-duotone fa-users-gear me-2" aria-hidden="true"></i>CPI & The Forgers</a></li>
+      <li><a class="dropdown-item" href="/engine-room/artists/stardust-engine/lore/cpi"><i class="fa-duotone fa-users-gear me-2" aria-hidden="true"></i>CPI & The Forgers</a></li>
       
       <li><a class="dropdown-item" href="/engine-room/history/nine-figure-refusal"><i class="fa-duotone fa-handshake-simple-slash me-2" aria-hidden="true"></i>Nine-Figure Refusal</a></li>
     </ul>
@@ -118,9 +118,9 @@ $isRadio = ($request_uri === '/radio');
         <i class="fa-duotone fa-network-wired me-2" aria-hidden="true"></i>Network
       </a>
       <ul class="dropdown-menu dropdown-menu-end">
-        <li><a class="dropdown-item" href="/about"><i class="fa-duotone fa-info-circle me-2 text-muted"></i>About This Project</a></li>
-        <li><a class="dropdown-item" href="/contact"><i class="fa-duotone fa-envelope me-2" aria-hidden="true"></i>Contact</a>
-        <li><a class="dropdown-item" href="/license"><i class="fa-duotone fa-file-contract me-2" aria-hidden="true"></i>License</a></li>
+        <li><a class="dropdown-item" href="/engine-room/artists/stardust-engine/about"><i class="fa-duotone fa-info-circle me-2 text-muted"></i>About This Project</a></li>
+        <li><a class="dropdown-item" href="/engine-room/artists/stardust-engine/contact"><i class="fa-duotone fa-envelope me-2" aria-hidden="true"></i>Contact</a>
+        <li><a class="dropdown-item" href="/engine-room/artists/stardust-engine/license"><i class="fa-duotone fa-file-contract me-2" aria-hidden="true"></i>License</a></li>
         <li><hr class="dropdown-divider"></li>  
         <li>
             <a class="dropdown-item fw-bold text-uppercase" href="/engine-room">

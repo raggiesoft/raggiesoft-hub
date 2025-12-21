@@ -19,7 +19,7 @@ $pageConfig = [
             <h1 class="display-5 fw-bold mb-0">Salary Requirements</h1>
             <p class="text-secondary mb-0">Transparent compensation alignment.</p>
         </div>
-        <a href="/about/michael-ragsdale" class="btn btn-outline-secondary btn-sm">
+        <a href="/engine-room/artists/stardust-engine/about/michael-ragsdale" class="btn btn-outline-secondary btn-sm">
             <i class="fa-solid fa-arrow-left me-1"></i> Back to Hub
         </a>
     </div>

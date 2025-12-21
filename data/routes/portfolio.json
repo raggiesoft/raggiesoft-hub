@@ -7,7 +7,7 @@
     "brandFont": ["Roboto", "sans-serif"],
     "headerMenu": "portfolio/header-portfolio",
     "navbarBrandText": "Michael P. Ragsdale",
-    "navbarBrandLink": "/about/michael-ragsdale",
+    "navbarBrandLink": "/engine-room/artists/stardust-engine/about/michael-ragsdale",
     "navbarBrandLogo": "https://assets.raggiesoft.com/raggiesoft-corporate/images/logo/raggiesoft-logo.png",
     "navbarBrandAlt": "RaggieSoft Official Logo",
     "navbarBrandClass": "navbar-brand-raggiesoft"
@@ -21,7 +21,7 @@
     "sidebar": "portfolio/sidebar-portfolio",
     "showSidebar": true,
     "navbarBrandText": "Michael P. Ragsdale",
-    "navbarBrandLink": "/about/michael-ragsdale",
+    "navbarBrandLink": "/engine-room/artists/stardust-engine/about/michael-ragsdale",
     "navbarBrandLogo": "https://assets.raggiesoft.com/raggiesoft-corporate/images/logo/raggiesoft-logo.png",
     "navbarBrandAlt": "RaggieSoft Official Logo",
     "navbarBrandClass": "navbar-brand-raggiesoft"
@@ -34,7 +34,7 @@
     "sidebar": "portfolio/sidebar-portfolio",
     "showSidebar": true,
     "navbarBrandText": "Michael P. Ragsdale",
-    "navbarBrandLink": "/about/michael-ragsdale",
+    "navbarBrandLink": "/engine-room/artists/stardust-engine/about/michael-ragsdale",
     "navbarBrandLogo": "https://assets.raggiesoft.com/raggiesoft-corporate/images/logo/raggiesoft-logo.png",
     "navbarBrandAlt": "RaggieSoft Official Logo",
     "navbarBrandClass": "navbar-brand-raggiesoft"
@@ -47,7 +47,7 @@
     "sidebar": "portfolio/sidebar-portfolio",
     "showSidebar": true,
     "navbarBrandText": "Michael P. Ragsdale",
-    "navbarBrandLink": "/about/michael-ragsdale",
+    "navbarBrandLink": "/engine-room/artists/stardust-engine/about/michael-ragsdale",
     "navbarBrandLogo": "https://assets.raggiesoft.com/raggiesoft-corporate/images/logo/raggiesoft-logo.png",
     "navbarBrandAlt": "RaggieSoft Official Logo",
     "navbarBrandClass": "navbar-brand-raggiesoft"
@@ -60,7 +60,7 @@
     "sidebar": "portfolio/sidebar-portfolio",
     "showSidebar": true,
     "navbarBrandText": "Michael P. Ragsdale",
-    "navbarBrandLink": "/about/michael-ragsdale",
+    "navbarBrandLink": "/engine-room/artists/stardust-engine/about/michael-ragsdale",
     "navbarBrandLogo": "https://assets.raggiesoft.com/raggiesoft-corporate/images/logo/raggiesoft-logo.png",
     "navbarBrandAlt": "RaggieSoft Official Logo",
     "navbarBrandClass": "navbar-brand-raggiesoft"

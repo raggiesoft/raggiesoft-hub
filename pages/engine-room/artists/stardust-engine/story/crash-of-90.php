@@ -162,10 +162,10 @@ $pageTitle = "The Crash of '90 - The Stardust Engine Lore";
 
     <div class="row mt-5">
         <div class="col-12 text-center">
-            <a href="/band/ryan-oconnell" class="btn btn-outline-secondary rounded-pill px-4">
+            <a href="/engine-room/artists/stardust-engine/band/ryan-oconnell" class="btn btn-outline-secondary rounded-pill px-4">
                 <i class="fa-duotone fa-user me-2"></i>Return to Ryan's Bio
             </a>
-            <a href="/story/friction" class="btn btn-outline-danger rounded-pill px-4 ms-3">
+            <a href="/engine-room/artists/stardust-engine/lore/friction" class="btn btn-outline-danger rounded-pill px-4 ms-3">
                 <i class="fa-duotone fa-fire me-2"></i>See The 1992 Consequence
             </a>
         </div>

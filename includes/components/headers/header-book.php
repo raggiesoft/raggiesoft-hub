@@ -64,7 +64,7 @@ extract($navData);
       <li><a class="dropdown-item" href="#">RaggieSoft.com</a></li>
       <li><a class="dropdown-item active" href="/">RaggieSoft Knox</a></li>
       <li><hr class="dropdown-divider"></li>
-      <li><a class="dropdown-item" href="/contact">Contact Me</a></li>
+      <li><a class="dropdown-item" href="/engine-room/artists/stardust-engine/contact">Contact Me</a></li>
     </ul>
   </li>
 </ul>

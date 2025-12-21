@@ -1,5 +1,5 @@
 <div class="text-center mb-4 pt-3">
-    <a href="/about/michael-ragsdale">
+    <a href="/engine-room/artists/stardust-engine/about/michael-ragsdale">
         <img src="https://assets.raggiesoft.com/raggiesoft-corporate/images/logo/raggiesoft-logo.png" 
              alt="Michael P. Ragsdale" 
              class="rounded-circle shadow-sm border border-2 border-white mb-3"
@@ -12,15 +12,15 @@
 <hr class="my-3">
 
 <nav class="nav flex-column nav-pills small gap-1">
-     <a href="/about/michael-ragsdale/resume" class="nav-link <?php echo ($request_uri === '/about/michael-ragsdale/resume') ? 'active' : 'link-body-emphasis'; ?>">
+     <a href="/engine-room/artists/stardust-engine/about/michael-ragsdale/resume" class="nav-link <?php echo ($request_uri === '/about/michael-ragsdale/resume') ? 'active' : 'link-body-emphasis'; ?>">
         <i class="fa-duotone fa-file-user me-2" style="width: 20px;"></i> The Resume
     </a>
     
-    <a href="/about/michael-ragsdale/location" class="nav-link <?php echo ($request_uri === '/about/michael-ragsdale/location') ? 'active' : 'link-body-emphasis'; ?>">
+    <a href="/engine-room/artists/stardust-engine/about/michael-ragsdale/location" class="nav-link <?php echo ($request_uri === '/about/michael-ragsdale/location') ? 'active' : 'link-body-emphasis'; ?>">
         <i class="fa-duotone fa-map-location-dot me-2" style="width: 20px;"></i> Location
     </a>
 
-    <a href="/about/michael-ragsdale/salary" class="nav-link <?php echo ($request_uri === '/about/michael-ragsdale/salary') ? 'active' : 'link-body-emphasis'; ?>">
+    <a href="/engine-room/artists/stardust-engine/about/michael-ragsdale/salary" class="nav-link <?php echo ($request_uri === '/about/michael-ragsdale/salary') ? 'active' : 'link-body-emphasis'; ?>">
         <i class="fa-duotone fa-sack-dollar me-2" style="width: 20px;"></i> Salary
     </a>
     
@@ -28,7 +28,7 @@
         <i class="fa-duotone fa-code-branch me-2" style="width: 20px;"></i> Projects
     </a>
 
-    <a href="/about/michael-ragsdale/contact" class="nav-link <?php echo ($request_uri === '/about/michael-ragsdale/contact') ? 'active' : 'link-body-emphasis'; ?>">
+    <a href="/engine-room/artists/stardust-engine/about/michael-ragsdale/contact" class="nav-link <?php echo ($request_uri === '/about/michael-ragsdale/contact') ? 'active' : 'link-body-emphasis'; ?>">
         <i class="fa-duotone fa-envelope me-2" style="width: 20px;"></i> Contact
     </a>
 </nav>

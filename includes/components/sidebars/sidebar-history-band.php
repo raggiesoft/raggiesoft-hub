@@ -3,7 +3,7 @@
 </h5>
 <ul class="nav flex-column">
   <li class="nav-item">
-    <a class="nav-link link-secondary" href="/band">
+    <a class="nav-link link-secondary" href="/engine-room/artists/stardust-engine/band">
       <i class="fa-duotone fa-chevron-up me-2"></i>Go Up
     </a>
   </li>
@@ -42,17 +42,17 @@
 <h6 class="pt-3 pb-2 mb-3 border-bottom mt-4">Related Lore</h6>
 <ul class="nav flex-column mb-2">
   <li class="nav-item">
-  <a class="nav-link link-secondary" href="/story/ad-astra">
+  <a class="nav-link link-secondary" href="/engine-room/artists/stardust-engine/lore/ad-astra">
     <i class="fa-duotone fa-rocket-launch me-2"></i>Ad Astra
   </a>
   </li>
    <li class="nav-item">
-    <a class="nav-link link-secondary" href="/story/cpi">
+    <a class="nav-link link-secondary" href="/engine-room/artists/stardust-engine/lore/cpi">
         <i class="fa-duotone fa-school me-2"></i>About CPI & The Forgers
     </a>
    </li>
    <li class="nav-item">
-    <a class="nav-link link-secondary" href="/band">
+    <a class="nav-link link-secondary" href="/engine-room/artists/stardust-engine/band">
       <i class="fa-duotone fa-users me-2"></i>Band Bios
     </a>
    </li>

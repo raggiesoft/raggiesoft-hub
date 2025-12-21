@@ -41,7 +41,7 @@ $customPageAssets = [
                     <p>
                         The narrative follows their struggle against the corporate monolith <strong>Apex Records</strong>, their retreat to the "Fortress," and their eventual broadcast from <strong>Port Telsus</strong>, a space station orbiting Telsus Minor.
                     </p>
-                    <a href="/band/overview" class="btn btn-sm btn-outline-warning mt-2">
+                    <a href="/engine-room/artists/stardust-engine/band/overview" class="btn btn-sm btn-outline-warning mt-2">
                         <i class="fa-duotone fa-book-open me-2"></i>Read the History
                     </a>
                 </div>
@@ -61,7 +61,7 @@ $customPageAssets = [
                     <p>
                         It serves as a portfolio piece demonstrating how AI can be used not just to generate assets, but to build cohesive, emotionally resonant worlds.
                     </p>
-                    <a href="/contact" class="btn btn-sm btn-outline-info mt-2">
+                    <a href="/engine-room/artists/stardust-engine/contact" class="btn btn-sm btn-outline-info mt-2">
                         <i class="fa-duotone fa-id-card me-2"></i>Contact the Director
                     </a>
                 </div>

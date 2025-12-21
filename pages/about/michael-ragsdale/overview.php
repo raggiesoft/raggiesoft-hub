@@ -31,7 +31,7 @@ global $cdn_root;
         <div class="row g-4 justify-content-center">
             
             <div class="col-md-6">
-                <a href="/about/michael-ragsdale/resume" class="card h-100 text-decoration-none shadow-sm hover-lift border-0 bg-body-tertiary">
+                <a href="/engine-room/artists/stardust-engine/about/michael-ragsdale/resume" class="card h-100 text-decoration-none shadow-sm hover-lift border-0 bg-body-tertiary">
                     <div class="card-body text-center p-5">
                         <div class="text-primary mb-3"><i class="fa-duotone fa-file-user fa-3x"></i></div>
                         <h3 class="h4 fw-bold text-body-emphasis">The Resume</h3>
@@ -44,7 +44,7 @@ global $cdn_root;
             </div>
 
             <div class="col-md-6">
-                <a href="/about/michael-ragsdale/location" class="card h-100 text-decoration-none shadow-sm hover-lift border-0 bg-body-tertiary">
+                <a href="/engine-room/artists/stardust-engine/about/michael-ragsdale/location" class="card h-100 text-decoration-none shadow-sm hover-lift border-0 bg-body-tertiary">
                     <div class="card-body text-center p-5">
                         <div class="text-success mb-3"><i class="fa-duotone fa-map-location-dot fa-3x"></i></div>
                         <h3 class="h4 fw-bold text-body-emphasis">Location</h3>
@@ -70,7 +70,7 @@ global $cdn_root;
             </div>
 
             <div class="col-md-6">
-                <a href="/about/michael-ragsdale/contact" class="card h-100 text-decoration-none shadow-sm hover-lift border-0 bg-body-tertiary">
+                <a href="/engine-room/artists/stardust-engine/about/michael-ragsdale/contact" class="card h-100 text-decoration-none shadow-sm hover-lift border-0 bg-body-tertiary">
                     <div class="card-body text-center p-5">
                         <div class="text-danger mb-3"><i class="fa-duotone fa-calendar-check fa-3x"></i></div>
                         <h3 class="h4 fw-bold text-body-emphasis">Schedule Interview</h3>

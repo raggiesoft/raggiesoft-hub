@@ -124,7 +124,7 @@ $cardBackground = 'https://assets.raggiesoft.com/stardust-engine/images/story/ad
                         Read the official narrative of the "Concert at the Edge of the World." 
                         Experience the launch, the nebula, and the crash landing.
                     </p>
-                    <a href="/story/ad-astra/voyage" class="btn btn-outline-info rounded-pill px-4 stretched-link">
+                    <a href="/engine-room/artists/stardust-engine/lore/ad-astra/voyage" class="btn btn-outline-info rounded-pill px-4 stretched-link">
                         <i class="fa-duotone fa-book-open me-2"></i>Open Flight Log
                     </a>
                 </div>
@@ -148,7 +148,7 @@ $cardBackground = 'https://assets.raggiesoft.com/stardust-engine/images/story/ad
                         Four movements. One journey.
                         <br><span class="small text-muted fst-italic">"The Cage" • "Ignition" • "The Cosmos" • "Re-entry"</span>
                     </p>
-                    <a href="/discography/1995-the-warehouse-tapes/ad-astra" class="btn btn-outline-warning rounded-pill px-4 stretched-link">
+                    <a href="/engine-room/artists/stardust-engine/discography/1995-the-warehouse-tapes/ad-astra" class="btn btn-outline-warning rounded-pill px-4 stretched-link">
                         <i class="fa-duotone fa-play me-2"></i>Listen Now
                     </a>
                 </div>

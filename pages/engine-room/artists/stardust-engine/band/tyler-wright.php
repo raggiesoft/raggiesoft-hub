@@ -12,7 +12,7 @@ $pageTitle = "Tyler Wright - The Stardust Engine";
 
             <nav aria-label="breadcrumb" class="mb-4">
                 <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="/band">The Band</a></li>
+                    <li class="breadcrumb-item"><a href="/engine-room/artists/stardust-engine/band">The Band</a></li>
                     <li class="breadcrumb-item active" aria-current="page">Tyler Wright</li>
                 </ol>
             </nav>

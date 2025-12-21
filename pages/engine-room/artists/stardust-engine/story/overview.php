@@ -42,7 +42,7 @@ $pageTitle = "The Lore - The Stardust Engine";
                                 The definitive account of the star-cruiser <em>Aethelgard</em>. 
                                 Read the in-universe narrative of the "Concert at the Edge of the World," presented as an excerpt from the band's official history book.
                             </p>
-                            <a href="/story/ad-astra" class="btn btn-outline-info btn-lg rounded-pill px-4 shadow-glow stretched-link">
+                            <a href="/engine-room/artists/stardust-engine/lore/ad-astra" class="btn btn-outline-info btn-lg rounded-pill px-4 shadow-glow stretched-link">
                                 <i class="fa-duotone fa-rocket-launch me-2"></i>Open Mission Log
                             </a>
                         </div>
@@ -68,7 +68,7 @@ $pageTitle = "The Lore - The Stardust Engine";
                         December 14, 1990. The night on I-81 that changed everything. Read the accident report and learn how the "Family Unit" adapted to Ryan's injury to keep the engine running.
                     </p>
                     <div class="mt-auto pt-3">
-                        <a href="/story/crash-of-90" class="btn btn-outline-danger w-100">
+                        <a href="/engine-room/artists/stardust-engine/lore/crash-of-90" class="btn btn-outline-danger w-100">
                             <i class="fa-duotone fa-file-medical-alt me-2"></i>View Archive
                         </a>
                     </div>
@@ -151,7 +151,7 @@ $pageTitle = "The Lore - The Stardust Engine";
                         The day they said no. Discover how Cassidy O'Connell's meltdown in a corporate boardroom saved <em>Ad Astra</em> from being butchered by an algorithm.
                     </p>
                     <div class="mt-auto pt-3">
-                        <a href="/story/nine-figure-refusal" class="btn btn-outline-warning w-100">
+                        <a href="/engine-room/artists/stardust-engine/lore/nine-figure-refusal" class="btn btn-outline-warning w-100">
                             <i class="fa-duotone fa-shield-halved me-2"></i>Read The Minutes
                         </a>
                     </div>

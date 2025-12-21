@@ -203,7 +203,7 @@ $pageTitle = "Lore: Sensory Distress Protocols - Ironhead Security";
 
     <div class="row justify-content-center border-top border-secondary border-opacity-25 pt-5">
         <div class="col-lg-8 text-center">
-            <a href="/story" class="btn btn-outline-light rounded-pill px-4">
+            <a href="/engine-room/artists/stardust-engine/lore" class="btn btn-outline-light rounded-pill px-4">
                 <i class="fa-solid fa-book-open me-2"></i>Return to Lore Index
             </a>
         </div>

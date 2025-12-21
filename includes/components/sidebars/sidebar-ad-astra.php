@@ -3,17 +3,17 @@
 </h5>
 <ul class="nav flex-column">
   <li class="nav-item">
-    <a class="nav-link link-secondary" href="/story/ad-astra">
+    <a class="nav-link link-secondary" href="/engine-room/artists/stardust-engine/lore/ad-astra">
       <i class="fa-duotone fa-radar me-2"></i>Mission Overview
     </a>
   </li>
   <li class="nav-item">
-    <a class="nav-link link-secondary" href="/story/ad-astra/voyage">
+    <a class="nav-link link-secondary" href="/engine-room/artists/stardust-engine/lore/ad-astra/voyage">
       <i class="fa-duotone fa-book-sparkles me-2"></i>The Maiden Voyage
     </a>
   </li>
   <li class="nav-item">
-    <a class="nav-link link-secondary" href="/discography/1995-the-warehouse-tapes/ad-astra">
+    <a class="nav-link link-secondary" href="/engine-room/artists/stardust-engine/discography/1995-the-warehouse-tapes/ad-astra">
       <i class="fa-duotone fa-play-circle me-2"></i>The Transmission (Audio)
     </a>
   </li>
@@ -24,17 +24,17 @@
 </h6>
 <ul class="nav flex-column mb-2">
   <li class="nav-item">
-    <a class="nav-link link-secondary" href="/discography/1995-the-warehouse-tapes">
+    <a class="nav-link link-secondary" href="/engine-room/artists/stardust-engine/discography/1995-the-warehouse-tapes">
       <i class="fa-duotone fa-compact-disc me-2"></i>The Warehouse Tapes
     </a>
   </li>
   <li class="nav-item">
-    <a class="nav-link link-secondary" href="/story/nine-figure-refusal">
+    <a class="nav-link link-secondary" href="/engine-room/artists/stardust-engine/lore/nine-figure-refusal">
       <i class="fa-duotone fa-file-invoice-dollar me-2"></i>The Refusal
     </a>
   </li>
   <li class="nav-item">
-    <a class="nav-link link-secondary" href="/story">
+    <a class="nav-link link-secondary" href="/engine-room/artists/stardust-engine/lore">
       <i class="fa-duotone fa-chevron-left me-2"></i>Return to Lore
     </a>
   </li>

@@ -7,33 +7,33 @@
   </li>
   
   <li class="nav-item">
-    <a class="nav-link link-secondary" href="/discography">
+    <a class="nav-link link-secondary" href="/engine-room/artists/stardust-engine/discography">
       <i class="fa-duotone fa-record-vinyl me-2"></i>Discography
     </a>
   </li>
   <li class="nav-item">
-    <a class="nav-link link-secondary" href="/band">
+    <a class="nav-link link-secondary" href="/engine-room/artists/stardust-engine/band">
       <i class="fa-duotone fa-users me-2"></i>The Band
     </a>
   </li>
   <li class="nav-item">
-    <a class="nav-link link-secondary" href="/story/">
+    <a class="nav-link link-secondary" href="/engine-room/artists/stardust-engine/lore/">
       <i class="fa-duotone fa-book-atlas me-2"></i>The Lore
     </a>
   </li>
 
   <li class="nav-item">
-    <a class="nav-link link-secondary" href="/about">
+    <a class="nav-link link-secondary" href="/engine-room/artists/stardust-engine/about">
       <i class="fa-duotone fa-circle-info me-2"></i>About
     </a>
   </li>
   <li class="nav-item">
-    <a class="nav-link link-secondary" href="/contact">
+    <a class="nav-link link-secondary" href="/engine-room/artists/stardust-engine/contact">
       <i class="fa-duotone fa-paper-plane me-2"></i>Contact
     </a>
   </li>
   <li class="nav-item">
-    <a class="nav-link link-secondary" href="/license">
+    <a class="nav-link link-secondary" href="/engine-room/artists/stardust-engine/license">
        <i class="fa-duotone fa-file-contract me-2"></i>License
     </a>
   </li>

@@ -170,10 +170,10 @@ $customPageAssets = [
                 <hr class="border-secondary opacity-25 mb-5">
                 <p class="text-muted mb-4">Experience the soundtrack to the voyage.</p>
                 <div class="d-flex justify-content-center gap-3 flex-wrap">
-                    <a href="/discography/1995-the-warehouse-tapes/ad-astra" class="btn btn-outline-info rounded-pill px-4 shadow-glow">
+                    <a href="/engine-room/artists/stardust-engine/discography/1995-the-warehouse-tapes/ad-astra" class="btn btn-outline-info rounded-pill px-4 shadow-glow">
                         <i class="fa-duotone fa-play me-2"></i>Play "Ad Astra"
                     </a>
-                    <a href="/discography/1997-hard-reset" class="btn btn-outline-danger rounded-pill px-4 shadow-glow">
+                    <a href="/engine-room/artists/stardust-engine/discography/1997-hard-reset" class="btn btn-outline-danger rounded-pill px-4 shadow-glow">
                         <i class="fa-duotone fa-play me-2"></i>Play "Hard Reset"
                     </a>
                 </div>

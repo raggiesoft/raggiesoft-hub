@@ -13,13 +13,13 @@ $isProjects = (str_starts_with($request_uri, '/portfolio'));
 <ul class="navbar-nav ms-auto mb-2 mb-md-0">
   
   <li class="nav-item">
-    <a class="nav-link <?php echo $isHub ? 'active' : ''; ?>" href="/about/michael-ragsdale">
+    <a class="nav-link <?php echo $isHub ? 'active' : ''; ?>" href="/engine-room/artists/stardust-engine/about/michael-ragsdale">
         <i class="fa-duotone fa-house-user me-2"></i>Hub
     </a>
   </li>
 
   <li class="nav-item">
-    <a class="nav-link <?php echo $isResume ? 'active' : ''; ?>" href="/about/michael-ragsdale/resume">
+    <a class="nav-link <?php echo $isResume ? 'active' : ''; ?>" href="/engine-room/artists/stardust-engine/about/michael-ragsdale/resume">
         <i class="fa-duotone fa-file-user me-2"></i>Resume
     </a>
   </li>
@@ -35,9 +35,9 @@ $isProjects = (str_starts_with($request_uri, '/portfolio'));
       <i class="fa-duotone fa-briefcase me-2"></i>Hiring Logistics
     </a>
     <ul class="dropdown-menu dropdown-menu-end shadow-sm border-0">
-      <li><a class="dropdown-item" href="/about/michael-ragsdale/location"><i class="fa-duotone fa-map-location-dot me-2"></i>Location & Availability</a></li>
-      <li><a class="dropdown-item" href="/about/michael-ragsdale/salary"><i class="fa-duotone fa-sack-dollar me-2"></i>Salary Requirements</a></li>
-      <li><a class="dropdown-item" href="/about/michael-ragsdale/contact"><i class="fa-duotone fa-envelope me-2"></i>Contact Information</a></li>
+      <li><a class="dropdown-item" href="/engine-room/artists/stardust-engine/about/michael-ragsdale/location"><i class="fa-duotone fa-map-location-dot me-2"></i>Location & Availability</a></li>
+      <li><a class="dropdown-item" href="/engine-room/artists/stardust-engine/about/michael-ragsdale/salary"><i class="fa-duotone fa-sack-dollar me-2"></i>Salary Requirements</a></li>
+      <li><a class="dropdown-item" href="/engine-room/artists/stardust-engine/about/michael-ragsdale/contact"><i class="fa-duotone fa-envelope me-2"></i>Contact Information</a></li>
     </ul>
   </li>
 
