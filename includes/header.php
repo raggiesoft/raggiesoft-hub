@@ -162,7 +162,12 @@ if (isset($customPageAssets) && is_array($customPageAssets)) {
             <span class="visually-hidden">Loading...</span>
         </div>
         <h4 class="text-uppercase fw-bold brand-font" style="letter-spacing: 2px;">
-            <?php echo htmlspecialchars($settings['siteName'] ?? 'Loading'); ?>
+            <?php 
+                // 1. Check if the current page has a specific name (from JSON)
+                // 2. Fallback to the global site name (from settings.json)
+                // 3. Last resort fallback
+                echo htmlspecialchars($pageConfig['siteName'] ?? $settings['siteName'] ?? 'Loading'); 
+            ?>
         </h4>
         <div class="loader-progress-container">
             <div class="loader-progress-bar" id="loader-bar"></div>
