@@ -35,7 +35,7 @@
 
 <div class="mt-4 px-2">
     <div class="p-3 bg-body rounded border">
-        <p class="mb-2 small fw-bold"><i class="fa-solid fa-download me-1"></i> Download CV</p>
+        <p class="mb-2 small fw-bold"><i class="fa-solid fa-download me-1"></i> Download Resume</p>
         <a href="https://assets.raggiesoft.com/portfolio/documents/resume/mragsdale-resume.pdf" target="_blank" class="btn btn-sm btn-outline-primary w-100">
             PDF Version
         </a>
