@@ -5,17 +5,11 @@
 
 $pageTitle = "The Silver Gauntlet of Aethel";
 
-// ASSETS
+// 1. ASSETS CONFIGURATION
+// This path tells the Stardust Player where to find tracks.json and the audio files
+$album_path_web = '/engine-room-records/artists/firelight/2025-silver-gauntlet-of-aethel';
 $poster_bg = 'https://assets.raggiesoft.com/aethel/images/aethel-poster-background.jpg';
-$album_art = 'https://assets.raggiesoft.com/engine-room-records/artists/firelight/2025-silver-gauntlet-of-aethel/album-art.jpg';
-
-// FEATURED TRACKS (The ones you've already created)
-$featured_tracks = [
-    ["title" => "A Sister's Love (Main Theme)", "track" => "1-01", "desc" => "The bond that breaks the silence."],
-    ["title" => "One Step at a Time", "track" => "1-09", "desc" => "The Gauntlet's path is never easy."],
-    ["title" => "The Tyrant's Throne", "track" => "2-05", "desc" => "The Heart of Shadow beats."],
-    ["title" => "I Can't Live Without You", "track" => "2-10", "desc" => "Kaela's Theme."]
-];
+$cover_art = 'https://assets.raggiesoft.com/engine-room-records/artists/firelight/2025-silver-gauntlet-of-aethel/album-art.jpg';
 ?>
 
 <div class="aethel-hero py-5 text-center text-md-start d-flex align-items-center" 
@@ -108,47 +102,65 @@ $featured_tracks = [
                     </div>
                 </div>
             </div>
+            <div class="col-lg-3 col-md-6 opacity-75">
+                <div class="card h-100 era-card grayscale">
+                    <div class="card-body p-4 text-center">
+                        <div class="mb-3 text-secondary"><i class="fa-duotone fa-water fa-3x"></i></div>
+                        <h5 class="card-title cinzel-font text-muted">Era 3: Tides</h5>
+                        <p class="small text-secondary mt-3">The journey across the endless ocean to find the Star-Eater.</p>
+                    </div>
+                </div>
             </div>
+            <div class="col-lg-3 col-md-6 opacity-75">
+                <div class="card h-100 era-card grayscale">
+                    <div class="card-body p-4 text-center">
+                        <div class="mb-3 text-secondary"><i class="fa-duotone fa-fire-burner fa-3x"></i></div>
+                        <h5 class="card-title cinzel-font text-muted">Era 4: Iron</h5>
+                        <p class="small text-secondary mt-3">The final confrontation. The Wall, the Garden, and the debt.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 
 <div id="soundtrack" class="bg-black text-white py-5 border-top border-warning border-3">
     <div class="container">
+        
+        <div class="row mb-5 align-items-end">
+            <div class="col-md-8">
+                <h2 class="display-4 cinzel-font text-warning mb-0">Original Soundtrack</h2>
+                <p class="lead text-secondary">
+                    Composed by <strong class="text-white">Firelight</strong> | Produced by Engine Room Records
+                </p>
+            </div>
+            <div class="col-md-4 text-md-end">
+                <span class="badge bg-dark border border-secondary text-secondary p-2">
+                    <i class="fa-brands fa-spotify me-2"></i>Spotify Coming 2025
+                </span>
+            </div>
+        </div>
+
         <div class="row">
-            <div class="col-md-4 mb-4 mb-md-0">
-                <div class="position-relative">
-                    <img src="<?php echo $album_art; ?>" alt="Soundtrack Cover" class="img-fluid rounded shadow-lg border border-secondary">
-                    <div class="position-absolute bottom-0 start-0 w-100 p-3 bg-dark bg-opacity-75 backdrop-blur rounded-bottom">
-                        <small class="text-uppercase text-warning letter-spacing-1 d-block">Now Streaming</small>
-                        <strong class="fs-5">Original Score</strong>
+            <div class="col-lg-4 mb-4 mb-lg-0">
+                <div class="sticky-top" style="top: 100px; z-index: 1;">
+                    <div class="position-relative mb-4">
+                        <img src="<?php echo $cover_art; ?>" 
+                             alt="Soundtrack Cover" 
+                             class="img-fluid rounded shadow-lg border border-secondary w-100">
                     </div>
-                </div>
-                <div class="mt-3 text-center">
-                    <button class="btn btn-outline-light btn-sm w-100"><i class="fa-brands fa-spotify me-2"></i>Spotify</button>
-                </div>
-            </div>
-
-            <div class="col-md-8 ps-md-5">
-                <h2 class="cinzel-font text-warning mb-4">Selected Tracks</h2>
-                <div class="list-group list-group-flush bg-transparent">
-                    
-                    <?php foreach($featured_tracks as $song): ?>
-                    <div class="list-group-item bg-transparent text-white border-secondary d-flex align-items-center justify-content-between py-3 px-0">
-                        <div>
-                            <span class="badge bg-secondary me-3 text-dark"><?php echo $song['track']; ?></span>
-                            <span class="fs-5 fw-bold font-monospace"><?php echo $song['title']; ?></span>
-                            <p class="small text-secondary mb-0 mt-1 fst-italic"><?php echo $song['desc']; ?></p>
+                    <div class="card bg-dark border-secondary">
+                        <div class="card-body">
+                            <h5 class="text-white mb-3">About the Score</h5>
+                            <p class="small text-secondary mb-0">
+                                A synth-heavy 1980s orchestral rock opera. Designed to accompany the reading experience, "The Silver Gauntlet" features leitmotifs for Kaelan (Electric Guitar) and Kaela (Piano) that clash and harmonize as the story evolves.
+                            </p>
                         </div>
-                        <button class="btn btn-icon btn-outline-warning rounded-circle">
-                            <i class="fa-solid fa-play"></i>
-                        </button>
                     </div>
-                    <?php endforeach; ?>
-
                 </div>
-                
-                
             </div>
+
+            
         </div>
     </div>
 </div>
