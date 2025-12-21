@@ -10,7 +10,6 @@ require_once ROOT_PATH . '/includes/utils/json-reader.php';
 $heroImages = fetch_asset_json('common/json/hero-images.json');
 
 // 2. Pick Random Start Image (Server-Side Fallback)
-// If JSON fails, fall back to a safe default
 $startImage = !empty($heroImages) 
     ? "https://assets.raggiesoft.com" . $heroImages[array_rand($heroImages)] 
     : "https://assets.raggiesoft.com/common/patterns/stars-transparent.png";
@@ -21,9 +20,8 @@ $startImage = !empty($heroImages)
     .hero-container {
         position: relative;
         overflow: hidden;
-        /* Force Dark Text for Contrast against Washed Out BG */
-        color: #212529 !important; 
         border-bottom: 1px solid rgba(0,0,0,0.1);
+        background-color: #f8f9fa; /* Fallback color */
     }
 
     /* The Background Image Layer */
@@ -34,27 +32,37 @@ $startImage = !empty($heroImages)
         background-position: center;
         z-index: 0;
         transition: opacity 1.5s ease-in-out;
-        /* Start visible */
         opacity: 1; 
+        /* Optional: Desaturate the image slightly so it doesn't clash with text */
+        filter: saturate(0.8); 
     }
 
-    /* The "Wash Out" Scrim Layer */
-    /* This sits on top of the image but behind the text */
+    /* The "Wash Out" Scrim Layer - TUNED DOWN */
     .hero-scrim {
         position: absolute;
         top: 0; left: 0; width: 100%; height: 100%;
-        background-color: rgba(255, 255, 255, 0.85); /* 85% White Overlay */
-        backdrop-filter: blur(2px); /* Optional: Softens the image details */
+        /* CHANGED: From 0.85 (Walls) to 0.60 (Glass) */
+        background-color: rgba(255, 255, 255, 0.60); 
+        /* ADDED: Heavy blur to make text readable on top of a "busy" image */
+        backdrop-filter: blur(8px); 
         z-index: 1;
     }
 
     /* The Content Layer */
     .hero-content {
         position: relative;
-        z-index: 2; /* Sits above the scrim */
+        z-index: 2;
+    }
+    
+    /* Text Protection: Halo Effect */
+    /* Ensures dark text is readable even if the background image is dark */
+    .hero-text-protected {
+        color: #000 !important;
+        text-shadow: 0 0 20px rgba(255, 255, 255, 0.8), 
+                     0 0 10px rgba(255, 255, 255, 0.8);
     }
 
-    /* Card Styles (Unchanged) */
+    /* Card Styles */
     .channel-card {
         background: #fff;
         border: 1px solid #dee2e6;
@@ -84,10 +92,10 @@ $startImage = !empty($heroImages)
     <div class="hero-scrim"></div>
 
     <div class="container py-4 hero-content">
-        <h1 class="display-4 fw-bold text-uppercase mb-3" style="font-family: 'Audiowide', cursive; color: #000;">
+        <h1 class="display-4 fw-bold text-uppercase mb-3 hero-text-protected" style="font-family: 'Audiowide', cursive;">
             Signal The Architect
         </h1>
-        <p class="lead mx-auto fw-medium" style="max-width: 700px; color: #495057;">
+        <p class="lead mx-auto fw-bold hero-text-protected" style="max-width: 700px;">
             This website is a dual-layer reality: part creative portfolio, part technical showcase.
             Please select your communication channel below.
         </p>
@@ -159,38 +167,32 @@ $startImage = !empty($heroImages)
 
 <script>
 (function() {
-    // 1. Configuration
     const images = <?php echo json_encode($heroImages); ?>;
     const cdnBase = "https://assets.raggiesoft.com";
-    const intervalTime = 8000; // 8 Seconds per slide
+    const intervalTime = 8000;
     
-    // Safety Check: Need at least 2 images to rotate
     if (!images || images.length < 2) return;
 
-    // Motion Preference Check (WCAG)
+    // Respect user motion preferences
     const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-    if (prefersReducedMotion) return; // Stop script if user hates motion
+    if (prefersReducedMotion) return; 
 
-    let currentIndex = Math.floor(Math.random() * images.length); // Start random
-    let activeLayer = 1; // Toggles between 1 and 2
+    let currentIndex = Math.floor(Math.random() * images.length);
+    let activeLayer = 1;
 
     const bg1 = document.getElementById('hero-bg-1');
     const bg2 = document.getElementById('hero-bg-2');
 
     function rotateImage() {
-        // Pick next image
         currentIndex = (currentIndex + 1) % images.length;
         const nextImageUrl = `url('${cdnBase}${images[currentIndex]}')`;
 
-        // Crossfade Logic
         if (activeLayer === 1) {
-            // Layer 1 is active, fade in Layer 2 on top
             bg2.style.backgroundImage = nextImageUrl;
             bg2.style.opacity = '1';
             bg1.style.opacity = '0';
             activeLayer = 2;
         } else {
-            // Layer 2 is active, fade in Layer 1 on top
             bg1.style.backgroundImage = nextImageUrl;
             bg1.style.opacity = '1';
             bg2.style.opacity = '0';
@@ -198,7 +200,6 @@ $startImage = !empty($heroImages)
         }
     }
 
-    // Start Rotation
     setInterval(rotateImage, intervalTime);
 })();
 </script>
