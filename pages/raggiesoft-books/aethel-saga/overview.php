@@ -6,14 +6,19 @@
 $pageTitle = "The Silver Gauntlet of Aethel";
 
 // 1. ASSETS CONFIGURATION
-// This path tells the Stardust Player where to find tracks.json and the audio files
 $album_path_web = '/engine-room-records/artists/firelight/2025-silver-gauntlet-of-aethel';
-$poster_bg = 'https://assets.raggiesoft.com/aethel/images/aethel-poster-background.jpg';
+
+// NEW: Updated Hero Poster
+$poster_bg = 'https://assets.raggiesoft.com/aethel/images/aethel-hero.jpg';
+
 $cover_art = 'https://assets.raggiesoft.com/engine-room-records/artists/firelight/2025-silver-gauntlet-of-aethel/album-art.jpg';
 ?>
 
 <div class="aethel-hero py-5 text-center text-md-start d-flex align-items-center" 
-     style="min-height: 80vh; background: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.8)), url('<?php echo $poster_bg; ?>'); background-size: cover; background-position: center;">
+     style="min-height: 85vh; 
+            background: linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.6) 80%, #000000 100%), url('<?php echo $poster_bg; ?>'); 
+            background-size: cover; 
+            background-position: center top;">
     
     <div class="container relative z-2">
         <div class="row justify-content-center justify-content-md-start">
@@ -160,7 +165,9 @@ $cover_art = 'https://assets.raggiesoft.com/engine-room-records/artists/fireligh
                 </div>
             </div>
 
-            
+            <div class="col-lg-8 ps-lg-5">
+                <?php include ROOT_PATH . '/includes/components/_tracklist-downloader.php'; ?>
+            </div>
         </div>
     </div>
 </div>
