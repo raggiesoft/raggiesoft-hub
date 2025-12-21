@@ -14,6 +14,7 @@
     "brandFont": ["Audiowide", "sans-serif"],
     "headerMenu": "header-contact",
     "showSidebar": false,
+    "site": "portfolio",
     "ogTitle": "Contact The Architect",
     "ogDescription": "Open a direct channel to Michael Ragsdale (Systems Architect) or Engine Room Records."
   },
