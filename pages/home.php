@@ -99,7 +99,7 @@
        <div class="col">
         <?php
           $props = [
-            'imgSrc' => 'https://assets.raggiesoft.com/engine-room-records/artists/stardust-engine/2017-knox/album-art.jpg',
+            'imgSrc' => 'https://assets.raggiesoft.com/engine-room-records/artists/stardust-engine/2017-knox-ost/album-art.jpg',
             'imgAlt' => 'Knox Universe',
             'fallbackText' => 'Knox',
             'title' => 'Project: KNOX',
