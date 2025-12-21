@@ -90,7 +90,7 @@ $pageTitle = "Engine Room Records - The Fortress";
                 <div class="card h-100 roster-card bg-body-tertiary">
                     <div class="row g-0 h-100">
                         <div class="col-4 position-relative">
-                            <img src="https://assets.raggiesoft.com/engine-room/artists/firelight/2025-silver-gauntlet-of-aethel/album-art.jpg" 
+                            <img src="https://assets.raggiesoft.com/engine-room-records/artists/firelight/band-logo.png" 
                                  class="img-fluid h-100 object-fit-cover" 
                                  alt="Firelight">
                         </div>
@@ -114,7 +114,7 @@ $pageTitle = "Engine Room Records - The Fortress";
                 <div class="card h-100 roster-card bg-body-tertiary">
                     <div class="row g-0 h-100">
                         <div class="col-4 bg-dark d-flex align-items-center justify-content-center">
-                            <img src="https://assets.raggiesoft.com/stardust-engine/images/logo/stardust-engine-logo.png" 
+                            <img src="https://assets.raggiesoft.com/engine-room-records/artists/stardust-engine/band-logo.png" 
                                  class="img-fluid p-3" 
                                  alt="The Stardust Engine">
                         </div>
@@ -149,7 +149,7 @@ $pageTitle = "Engine Room Records - The Fortress";
                                 <p class="card-text small text-muted">
                                     The raw, unpolished sound of the early 2000s. Featuring "Static & Silence."
                                 </p>
-                                <a href="/engine-room/artists/mirage" class="btn btn-sm btn-outline-info fw-bold rounded-pill stretched-link">
+                                <a href="/engine-room/artists/mirage" class="btn btn-sm btn-outline-info fw-bold rounded-pill stretched-link"> 
                                     View Discography
                                 </a>
                             </div>
