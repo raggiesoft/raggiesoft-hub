@@ -5,7 +5,7 @@
         "siteName": "The Stardust Engine",
         "headerMenu": "engine-room/artists/stardust-engine/header-stardust",
         "footer": "engine-room/artists/stardust-engine/footer-stardust",
-        "showSidebar": true,
+        "showSidebar": false,
         "navbarBrandLogo": "https://assets.raggiesoft.com/engine-room-records/artists/the-stardust-engine/band-logo.png",
         "navbarBrandText": "The Stardust Engine",
         "navbarBrandLink": "/engine-room/artists/stardust-engine",
