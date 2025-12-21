@@ -1,15 +1,14 @@
 <?php
 // includes/header.php
-// v8.0 - Added "Immersive Mode" (Transparent Overlay Header)
+// v9.1 - Fixed: JS Syntax Error & Loader Integration
+// Features: Immersive Scroll Logic, Dynamic Theme Context, Route Overrides, Page Loader
 
-// 1. Resolve Context
+// --- 1. CONTEXT & CONFIGURATION ---
 $site  = $currentSite ?? 'raggiesoft';
 $theme = $currentPageTheme ?? $site;
-
-// Ensure CDN Root exists
 $cdn_root = $cdnBaseUrl ?? 'https://assets.raggiesoft.com'; 
 
-// --- ROUTE OVERRIDES ---
+// Route Overrides (From JSON)
 if (isset($pageConfig['siteName'])) {
     $settings['siteName'] = $pageConfig['siteName'];
 }
@@ -20,25 +19,25 @@ if ($site !== 'raggiesoft' && $theme === 'raggiesoft') {
     $theme = $site;
 }
 
+// Dark Mode Detection
 $force_dark_mode = ($theme === 'dark' || $theme === 'ad-astra' || str_contains($theme, 'gloom') || str_contains($theme, 'night'));
 
-// --- IMMERSIVE MODE LOGIC ---
-// If 'transparentHeader' is set in JSON, we float the header over the hero.
-$isImmersive = $pageConfig['transparentHeader'] ?? false;
-
-if ($isImmersive) {
-    // Cinematic Mode: Fixed to top, transparent background, no border
-    $navClass = "navbar navbar-expand-lg fixed-top"; 
-    $navStyle = "background-color: transparent !important; border-bottom: none !important; backdrop-filter: none;";
-} else {
-    // Standard Mode: Sticky, solid background, bottom border
-    $navClass = "navbar navbar-expand-lg sticky-top bg-body";
-    $navStyle = "border-bottom: 1px solid var(--bs-border-color);";
-}
-
-// --- BRAND FONT LOGIC ---
+// Brand Font Logic
 $font_stack = $pageConfig['brandFont'] ?? $settings['brandFont'] ?? ['sans-serif'];
 $brand_font_family = implode(', ', $font_stack);
+
+// --- 2. IMMERSIVE MODE LOGIC ---
+// Check if the route JSON requested a transparent header
+$isImmersive = $pageConfig['transparentHeader'] ?? false;
+
+// Base Classes
+$navWrapperClass = $isImmersive ? 'fixed-top transition-all' : 'sticky-top';
+$navBaseClass    = "navbar navbar-expand-lg"; 
+
+if (!$isImmersive) {
+    // Non-immersive pages get a solid background immediately
+    $navBaseClass .= " bg-body border-bottom border-secondary border-opacity-25";
+}
 ?>
 
 <!doctype html>
@@ -74,140 +73,198 @@ $brand_font_family = implode(', ', $font_stack);
         :root { --bs-body-font-family: <?php echo $brand_font_family; ?>; }
         .brand-font { font-family: <?php echo $brand_font_family; ?> !important; }
         
-        /* If Immersive, we might need to ensure the text is readable */
+        /* HEADER TRANSITION LOGIC */
+        header.transition-all {
+            transition: background-color 0.4s ease, box-shadow 0.4s ease, padding 0.4s ease;
+        }
+
+        /* PAGE LOADER CSS */
+        #page-loader {
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background-color: var(--bs-body-bg);
+            z-index: 9999;
+            display: flex; flex-direction: column; justify-content: center; align-items: center;
+            transition: opacity 0.5s ease, visibility 0.5s ease;
+        }
+        .loader-hidden {
+            opacity: 0;
+            visibility: hidden;
+            pointer-events: none;
+        }
+        .progress-bar-tech {
+            height: 4px;
+            background-color: var(--bs-primary);
+            transition: width 0.1s ease;
+            box-shadow: 0 0 10px var(--bs-primary);
+        }
+
         <?php if ($isImmersive): ?>
-            /* Force navbar links to be white/bright in immersive mode if needed */
-            .navbar-brand, .nav-link { text-shadow: 0 2px 4px rgba(0,0,0,0.8); }
+            /* IMMERSIVE MODE OVERRIDES */
+            header.fixed-top {
+                background-color: transparent;
+                padding-top: 1rem;
+                padding-bottom: 1rem;
+            }
+            
+            header.fixed-top.scrolled {
+                /* Force background color when scrolled */
+                background-color: var(--bs-body-bg, #000) !important;
+                padding-top: 0.5rem;
+                padding-bottom: 0.5rem;
+                box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+                border-bottom: 1px solid var(--bs-border-color);
+            }
+
+            /* Text Legibility */
+            header.fixed-top:not(.scrolled) .navbar-brand,
+            header.fixed-top:not(.scrolled) .nav-link {
+                text-shadow: 0 2px 4px rgba(0,0,0,0.8);
+                color: #fff !important; 
+            }
+            
+            header.fixed-top:not(.scrolled) .navbar-toggler {
+                border-color: rgba(255,255,255,0.5);
+            }
+            header.fixed-top:not(.scrolled) .navbar-toggler-icon {
+                filter: invert(1) grayscale(100%) brightness(200%);
+            }
         <?php endif; ?>
     </style>
   </head>
   
   <body class="d-flex flex-column min-vh-100">
       
-      <nav class="<?php echo $navClass; ?>" style="<?php echo $navStyle; ?>">
-        <div class="container-fluid">
-          
-          <a class="navbar-brand d-flex align-items-center" href="<?php echo htmlspecialchars($navbarBrandLink ?? '/'); ?>">
-            <?php if (!empty($navbarBrandLogo)): ?>
-            <img src="<?php echo htmlspecialchars($navbarBrandLogo); ?>" 
-                 alt="<?php echo htmlspecialchars($navbarBrandAlt ?? 'Logo'); ?>" 
-                 height="30" 
-                 class="me-2 d-inline-block align-text-top <?php echo htmlspecialchars($navbarBrandClass ?? ''); ?>">
-            <?php endif; ?>
-            <span class="fw-bold text-uppercase brand-font">
-              <?php echo strip_tags($navbarBrandText ?? $settings['siteName'] ?? 'Elara Site', '<span>'); ?>
-            </span>
-          </a>
-          
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          
-          <div class="collapse navbar-collapse" id="navbarCollapse">
-            <?php 
-                if (isset($currentHeaderMenu) && file_exists($currentHeaderMenu)) {
-                    include $currentHeaderMenu;
-                } else {
-                    include ROOT_PATH . '/includes/components/headers/header-default.php';
-                }
-            ?>
+      <div id="page-loader">
+          <div class="text-center" style="width: 300px;">
+              <div id="loader-text" class="font-monospace small mb-2 text-uppercase text-secondary">> INITIALIZING...</div>
+              <div class="progress" style="height: 4px; background-color: rgba(127,127,127,0.2);">
+                  <div id="loader-bar" class="progress-bar-tech" style="width: 0%"></div>
+              </div>
           </div>
-        </div>
-      </nav>
-    
-    <script>
-    (function() {
-        const loader = document.getElementById('page-loader');
-        const bar = document.getElementById('loader-bar');
-        const text = document.getElementById('loader-text');
-        let progress = 0; let progressInterval;
+      </div>
 
-        function startHeartbeat() {
-            if (progressInterval) clearInterval(progressInterval);
-            progress = 10; if(bar) bar.style.width = '10%';
-            progressInterval = setInterval(() => {
-                let step = (95 - progress) / 80; if (step < 0.1) step = 0.1; 
-                progress += step; if (progress > 95) progress = 95; 
-                if(bar) bar.style.width = progress + '%';
-                if(text) {
-                    if (progress < 30) text.innerText = "> ESTABLISHING UPLINK...";
-                    else if (progress < 50) text.innerText = "> RECEIVING DATA...";
-                    else if (progress < 70) text.innerText = "> ALLOCATING MEMORY...";
-                    else text.innerText = "> PROCESSING...";
-                }
-            }, 50);
-        }
+      <header id="main-header" class="<?php echo $navWrapperClass; ?>">
+          <nav class="<?php echo $navBaseClass; ?>">
+            <div class="container-fluid">
+              
+              <a class="navbar-brand d-flex align-items-center" href="<?php echo htmlspecialchars($navbarBrandLink ?? '/'); ?>">
+                <?php if (!empty($navbarBrandLogo)): ?>
+                <img src="<?php echo htmlspecialchars($navbarBrandLogo); ?>" 
+                     alt="<?php echo htmlspecialchars($navbarBrandAlt ?? 'Logo'); ?>" 
+                     height="30" 
+                     class="me-2 d-inline-block align-text-top <?php echo htmlspecialchars($navbarBrandClass ?? ''); ?>">
+                <?php endif; ?>
+                <span class="fw-bold text-uppercase brand-font">
+                  <?php echo strip_tags($navbarBrandText ?? $settings['siteName'] ?? 'Elara Site', '<span>'); ?>
+                </span>
+              </a>
+              
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              
+              <div class="collapse navbar-collapse" id="navbarCollapse">
+                <?php 
+                    if (isset($currentHeaderMenu) && file_exists($currentHeaderMenu)) {
+                        include $currentHeaderMenu;
+                    } else {
+                        include ROOT_PATH . '/includes/components/headers/header-default.php';
+                    }
+                ?>
+              </div>
+            </div>
+          </nav>
+      </header>
 
-        document.addEventListener('readystatechange', () => {
-            if (document.readyState === 'interactive') {
-                progress = 75; if(bar) bar.style.width = '75%';
-                if(text) text.innerText = "> ASSEMBLING LAYOUT...";
-            }
-        });
+      <?php if ($isImmersive): ?>
+      <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const header = document.getElementById("main-header");
+            const threshold = 50; 
 
-        function finishLoad() {
-            if (progressInterval) clearInterval(progressInterval);
-            if(bar) bar.style.width = '100%';
-            if(text) text.innerText = "> SYSTEM READY.";
-            setTimeout(() => { if(loader) loader.classList.add('loader-hidden'); }, 500);
-        }
-
-        startHeartbeat(); 
-        window.addEventListener('load', finishLoad);
-        
-        document.addEventListener('click', (e) => {
-            const link = e.target.closest('a');
-            if (!link) return;
-            const href = link.getAttribute('href');
-            const target = link.getAttribute('target');
-            if (link.classList.contains('dropdown-toggle') || link.getAttribute('role') === 'button') return;
-            if (!href || href === '#' || href.startsWith('#')) return;
-            if (target === '_blank') return;
-            if (link.href && link.href.indexOf(window.location.hostname) === -1) return;
-            if (link.hasAttribute('download')) return;
-
-            if(loader) {
-                text.innerText = "> NAVIGATING...";
-                bar.style.width = '0%'; loader.classList.remove('loader-hidden');
-                startHeartbeat(); 
-            }
-        });
-
-        window.addEventListener('pageshow', (event) => {
-            if (event.persisted && loader) loader.classList.add('loader-hidden');
-        });
-    })();
-    </script>
-    
-    <header>
-      <nav class="navbar navbar-expand-md sticky-top border-bottom border-primary border-opacity-50 bg-body">
-        <div class="container-fluid">
-          
-          <a class="navbar-brand d-flex align-items-center" href="<?php echo htmlspecialchars($navbarBrandLink ?? '/'); ?>">
-            <?php if (!empty($navbarBrandLogo)): ?>
-            <img src="<?php echo htmlspecialchars($navbarBrandLogo); ?>" 
-                 alt="<?php echo htmlspecialchars($navbarBrandAlt ?? 'Logo'); ?>" 
-                 height="30" 
-                 class="me-2 d-inline-block align-text-top <?php echo htmlspecialchars($navbarBrandClass ?? ''); ?>">
-            <?php endif; ?>
-            <span class="fw-bold text-uppercase brand-font">
-              <?php echo strip_tags($navbarBrandText ?? $settings['siteName'] ?? 'Elara Site', '<span>'); ?>
-            </span>
-          </a>
-          
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          
-          <div class="collapse navbar-collapse" id="navbarCollapse">
-            <?php 
-                if (isset($currentHeaderMenu) && file_exists($currentHeaderMenu)) {
-                    include $currentHeaderMenu;
+            function checkScroll() {
+                if (window.scrollY > threshold) {
+                    header.classList.add("scrolled");
                 } else {
-                    include ROOT_PATH . '/includes/components/headers/header-default.php';
+                    header.classList.remove("scrolled");
                 }
-            ?>
-          </div>
-        </div>
-      </nav>
-    </header>
+            }
+            checkScroll();
+            window.addEventListener("scroll", checkScroll);
+        });
+      </script>
+      <?php endif; ?>
+
+      <script>
+        (function() {
+            const loader = document.getElementById('page-loader');
+            const bar = document.getElementById('loader-bar');
+            const text = document.getElementById('loader-text');
+            let progress = 0; 
+            let progressInterval;
+
+            function startHeartbeat() {
+                if (progressInterval) clearInterval(progressInterval);
+                progress = 10; 
+                if(bar) bar.style.width = '10%';
+                
+                progressInterval = setInterval(() => {
+                    let step = (95 - progress) / 80; 
+                    if (step < 0.1) step = 0.1; 
+                    progress += step; 
+                    if (progress > 95) progress = 95; 
+                    
+                    if(bar) bar.style.width = progress + '%';
+                    if(text) {
+                        if (progress < 30) text.innerText = "> ESTABLISHING UPLINK...";
+                        else if (progress < 50) text.innerText = "> RECEIVING DATA...";
+                        else if (progress < 70) text.innerText = "> ALLOCATING MEMORY...";
+                        else text.innerText = "> PROCESSING...";
+                    }
+                }, 50);
+            }
+
+            document.addEventListener('readystatechange', () => {
+                if (document.readyState === 'interactive') {
+                    progress = 75; 
+                    if(bar) bar.style.width = '75%';
+                    if(text) text.innerText = "> ASSEMBLING LAYOUT...";
+                }
+            });
+
+            function finishLoad() {
+                if (progressInterval) clearInterval(progressInterval);
+                if(bar) bar.style.width = '100%';
+                if(text) text.innerText = "> SYSTEM READY.";
+                setTimeout(() => { if(loader) loader.classList.add('loader-hidden'); }, 500);
+            }
+
+            startHeartbeat(); 
+            window.addEventListener('load', finishLoad);
+            
+            // Simulates loading when clicking internal links
+            document.addEventListener('click', (e) => {
+                const link = e.target.closest('a');
+                if (!link) return;
+                const href = link.getAttribute('href');
+                const target = link.getAttribute('target');
+                if (link.classList.contains('dropdown-toggle') || link.getAttribute('role') === 'button') return;
+                if (!href || href === '#' || href.startsWith('#')) return;
+                if (target === '_blank') return;
+                if (link.href && link.href.indexOf(window.location.hostname) === -1) return;
+                if (link.hasAttribute('download')) return;
+
+                if(loader) {
+                    text.innerText = "> NAVIGATING...";
+                    bar.style.width = '0%'; 
+                    loader.classList.remove('loader-hidden');
+                    startHeartbeat(); 
+                }
+            });
+
+            window.addEventListener('pageshow', (event) => {
+                if (event.persisted && loader) loader.classList.add('loader-hidden');
+            });
+        })();
+      </script>
