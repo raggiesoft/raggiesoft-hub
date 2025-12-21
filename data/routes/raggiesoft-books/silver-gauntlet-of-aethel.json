@@ -17,7 +17,8 @@
   },
   "/raggiesoft-books/aethel-saga": {
     "view": "pages/raggiesoft-books/aethel-saga/overview",
-    "title": "The Silver Gauntlet of Aethel | Saga Overview"
+    "title": "The Silver Gauntlet of Aethel | Saga Overview",
+    "transparentHeader": true
   },
   "/raggiesoft-books/aethel-saga/lore/characters": {
     "view": "pages/raggiesoft-books/aethel-saga/lore/characters",

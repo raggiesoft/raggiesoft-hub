@@ -1,7 +1,6 @@
 <?php
 // includes/header.php
-// v7.2 - RaggieSoft Production
-// Updated: Added Route Overrides for Site Name & Project Slugs
+// v8.0 - Added "Immersive Mode" (Transparent Overlay Header)
 
 // 1. Resolve Context
 $site  = $currentSite ?? 'raggiesoft';
@@ -10,15 +9,10 @@ $theme = $currentPageTheme ?? $site;
 // Ensure CDN Root exists
 $cdn_root = $cdnBaseUrl ?? 'https://assets.raggiesoft.com'; 
 
-// --- NEW: ROUTE OVERRIDES ---
-// If the Route JSON ($pageConfig) has specific overrides, apply them now.
-
-// Override Site Name (e.g., "The Silver Gauntlet of Aethel" instead of "RaggieSoft")
+// --- ROUTE OVERRIDES ---
 if (isset($pageConfig['siteName'])) {
     $settings['siteName'] = $pageConfig['siteName'];
 }
-
-// Override Project Slug (e.g., use "aethel" folder instead of "portfolio")
 $project_slug = $pageConfig['project-slug'] ?? $site;
 
 // Theme Reset Logic
@@ -28,161 +22,98 @@ if ($site !== 'raggiesoft' && $theme === 'raggiesoft') {
 
 $force_dark_mode = ($theme === 'dark' || $theme === 'ad-astra' || str_contains($theme, 'gloom') || str_contains($theme, 'night'));
 
-// --- 2. BRAND FONT LOGIC ---
-$font_stack = $pageConfig['brandFont'] ?? $settings['brandFont'] ?? ['sans-serif'];
-if (!is_array($font_stack) || empty($font_stack)) { $font_stack = ['sans-serif']; }
+// --- IMMERSIVE MODE LOGIC ---
+// If 'transparentHeader' is set in JSON, we float the header over the hero.
+$isImmersive = $pageConfig['transparentHeader'] ?? false;
 
-$css_font_parts = array_map(function($font) {
-    $generics = ['serif', 'sans-serif', 'monospace', 'cursive', 'fantasy', 'system-ui'];
-    return in_array(strtolower($font), $generics) ? $font : "'$font'";
-}, $font_stack);
-
-$brand_font_css = implode(', ', $css_font_parts);
-
-// 3. Path Definitions (Using $project_slug)
-$path_bootstrap = $cdn_root . "/common/css/bootstrap.css";
-
-// Logic: If the theme matches the site root or is generic, look in the root of the project folder.
-// Otherwise, look in a subfolder matching the theme name.
-if ($theme === 'corporate' || $theme === $site || $theme === 'light') {
-    $path_theme_base = $cdn_root . "/{$project_slug}/css/bootstrap";
+if ($isImmersive) {
+    // Cinematic Mode: Fixed to top, transparent background, no border
+    $navClass = "navbar navbar-expand-lg fixed-top"; 
+    $navStyle = "background-color: transparent !important; border-bottom: none !important; backdrop-filter: none;";
 } else {
-    $path_theme_base = $cdn_root . "/{$project_slug}/css/bootstrap/{$theme}";
+    // Standard Mode: Sticky, solid background, bottom border
+    $navClass = "navbar navbar-expand-lg sticky-top bg-body";
+    $navStyle = "border-bottom: 1px solid var(--bs-border-color);";
 }
 
-// 4. Build CSS Queue
-$css_load_queue = [
-    $path_bootstrap,                    
-    $path_theme_base . '/root.css',     
-    $path_theme_base . '/extras.css',   
-    $path_theme_base . '/header.css',   
-    $path_theme_base . '/footer.css',   
-    $path_theme_base . '/safety-net.css'
-];
-
-// 5. Critical Images
-$critical_images = [ $navbarBrandLogo ?? '' ];
-if (isset($customPageAssets) && is_array($customPageAssets)) {
-    $critical_images = array_merge($critical_images, $customPageAssets);
-}
+// --- BRAND FONT LOGIC ---
+$font_stack = $pageConfig['brandFont'] ?? $settings['brandFont'] ?? ['sans-serif'];
+$brand_font_family = implode(', ', $font_stack);
 ?>
-<!doctype html>
-<html lang="en" class="h-100" <?php echo $force_dark_mode ? 'data-bs-theme="dark"' : ''; ?>>
-  <head>
-    
-    <?php 
-    if (
-        isset($settings['analytics']['enabled']) && 
-        $settings['analytics']['enabled'] === true &&
-        !empty($settings['analytics']['trackingId'])
-    ): 
-    ?>
-        <script async src="https://www.googletagmanager.com/gtag/js?id=<?php echo htmlspecialchars($settings['analytics']['trackingId']); ?>"></script>
-        <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', '<?php echo htmlspecialchars($settings['analytics']['trackingId']); ?>');
-        </script>
-    <?php endif; ?>
 
+<!doctype html>
+<html lang="en" data-bs-theme="<?php echo $force_dark_mode ? 'dark' : 'light'; ?>">
+  <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
     <title><?php echo htmlspecialchars($pageTitle ?? 'RaggieSoft'); ?></title>
-    <meta name="description" content="<?php echo htmlspecialchars($ogDescription ?? ''); ?>">
-    
+
     <meta property="og:title" content="<?php echo htmlspecialchars($ogTitle ?? $pageTitle); ?>">
     <meta property="og:description" content="<?php echo htmlspecialchars($ogDescription ?? ''); ?>">
     <meta property="og:image" content="<?php echo htmlspecialchars($ogImage ?? ''); ?>">
-    <meta property="og:url" content="<?php echo htmlspecialchars($ogUrl ?? "https://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]"); ?>">
+    <meta property="og:url" content="<?php echo htmlspecialchars($ogUrl ?? ''); ?>">
+    <meta property="og:type" content="website">
 
-    <?php foreach ($css_load_queue as $cssUrl): ?>
-        <link href="<?php echo $cssUrl . '?v=' . time(); ?>" rel="stylesheet">
-    <?php endforeach; ?>
+    <link href="<?php echo $cdn_root; ?>/common/css/bootstrap.css" rel="stylesheet">
+    
+    <?php
+    // Load Site-Specific CSS
+    $cssPath = "/{$project_slug}/css/bootstrap/";
+    if ($force_dark_mode && $theme !== 'dark') {
+        $cssPath .= "{$theme}/"; 
+    }
+    
+    $css_files = ['root.css', 'header.css', 'footer.css', 'extras.css', 'safety-net.css'];
+    foreach ($css_files as $css) {
+        echo '<link href="' . $cdn_root . $cssPath . $css . '?v=' . time() . '" rel="stylesheet">' . "\n";
+    }
+    ?>
 
-    <script src="https://kit.fontawesome.com/ec060982d4.js" crossorigin="anonymous"></script>
-
-    <?php foreach ($critical_images as $imgUrl): ?>
-        <?php if($imgUrl): ?><link rel="preload" as="image" href="<?php echo $imgUrl; ?>"><?php endif; ?>
-    <?php endforeach; ?>
-    
-    <link rel="icon" type="image/png" href="<?php echo $cdn_root; ?>/common/images/favicons/favicon-32x32.png">
-    
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> 
-    
-    <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
-    
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Mrs+Saint+Delafield&display=swap" rel="stylesheet">
-    
-    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=EB+Garamond:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-
-    <script type="module">
-        import hotwiredTurbo from 'https://cdn.skypack.dev/@hotwired/turbo';
-    </script>
-    
     <style>
-        .brand-font { font-family: <?php echo $brand_font_css; ?> !important; }
+        :root { --bs-body-font-family: <?php echo $brand_font_family; ?>; }
+        .brand-font { font-family: <?php echo $brand_font_family; ?> !important; }
         
-        #page-loader {
-            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
-            background-color: var(--bs-body-bg); color: var(--bs-body-color);
-            z-index: 99999; display: flex; flex-direction: column; justify-content: center; align-items: center;
-            opacity: 1; visibility: visible; transition: opacity 0.5s ease-in-out, visibility 0s 0s;
-        }
-        #page-loader.loader-hidden {
-            opacity: 0; visibility: hidden; transition: opacity 0.5s ease-in-out, visibility 0s 0.5s;
-        }
-        .loader-progress-container {
-            width: 300px; height: 4px; margin-top: 20px; position: relative; overflow: hidden;
-            background-color: rgba(var(--bs-secondary-rgb), 0.2); 
-        }
-        .loader-progress-bar {
-            height: 100%; width: 0%; transition: width 0.2s ease;
-            background-color: var(--bs-primary); box-shadow: 0 0 10px var(--bs-primary);
-        }
-        
-        /* Logo Filters */
-        .navbar-brand-corporate-img { mix-blend-mode: multiply; }
-        [data-bs-theme="dark"] .navbar-brand-corporate-img {
-            filter: invert(1) grayscale(100%); mix-blend-mode: screen;
-        }
+        /* If Immersive, we might need to ensure the text is readable */
+        <?php if ($isImmersive): ?>
+            /* Force navbar links to be white/bright in immersive mode if needed */
+            .navbar-brand, .nav-link { text-shadow: 0 2px 4px rgba(0,0,0,0.8); }
+        <?php endif; ?>
     </style>
-
-    <script>
-    (function() {
-        const getPreferredTheme = () => {
-            const storedTheme = localStorage.getItem('theme');
-            if (storedTheme) return storedTheme;
-            return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-        };
-        const setTheme = theme => document.documentElement.setAttribute('data-bs-theme', theme);
-        setTheme(getPreferredTheme());
-        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => {
-            const storedTheme = localStorage.getItem('theme');
-            if (storedTheme !== 'light' && storedTheme !== 'dark') setTheme(getPreferredTheme());
-        });
-    })();
-    </script>
   </head>
   
-  <body class="d-flex flex-column h-100">
-    
-    <div id="page-loader">
-        <div class="spinner-border text-primary mb-3" role="status" style="width: 3rem; height: 3rem;">
-            <span class="visually-hidden">Loading...</span>
+  <body class="d-flex flex-column min-vh-100">
+      
+      <nav class="<?php echo $navClass; ?>" style="<?php echo $navStyle; ?>">
+        <div class="container-fluid">
+          
+          <a class="navbar-brand d-flex align-items-center" href="<?php echo htmlspecialchars($navbarBrandLink ?? '/'); ?>">
+            <?php if (!empty($navbarBrandLogo)): ?>
+            <img src="<?php echo htmlspecialchars($navbarBrandLogo); ?>" 
+                 alt="<?php echo htmlspecialchars($navbarBrandAlt ?? 'Logo'); ?>" 
+                 height="30" 
+                 class="me-2 d-inline-block align-text-top <?php echo htmlspecialchars($navbarBrandClass ?? ''); ?>">
+            <?php endif; ?>
+            <span class="fw-bold text-uppercase brand-font">
+              <?php echo strip_tags($navbarBrandText ?? $settings['siteName'] ?? 'Elara Site', '<span>'); ?>
+            </span>
+          </a>
+          
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <?php 
+                if (isset($currentHeaderMenu) && file_exists($currentHeaderMenu)) {
+                    include $currentHeaderMenu;
+                } else {
+                    include ROOT_PATH . '/includes/components/headers/header-default.php';
+                }
+            ?>
+          </div>
         </div>
-        <h4 class="text-uppercase fw-bold brand-font" style="letter-spacing: 2px;">
-            <?php echo htmlspecialchars($settings['siteName'] ?? 'Loading'); ?>
-        </h4>
-        <div class="loader-progress-container">
-            <div class="loader-progress-bar" id="loader-bar"></div>
-        </div>
-        <div class="text-secondary font-monospace small mt-2" id="loader-text">> INITIALIZING...</div>
-    </div>
+      </nav>
     
     <script>
     (function() {
