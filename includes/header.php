@@ -1,7 +1,7 @@
 <?php
 // includes/header.php
-// v7.1 - RaggieSoft Production
-// Updated: Added Playfair Display (Trust) & Black Ops One (Stamps)
+// v7.2 - RaggieSoft Production
+// Updated: Added Route Overrides for Site Name & Project Slugs
 
 // 1. Resolve Context
 $site  = $currentSite ?? 'raggiesoft';
@@ -10,12 +10,23 @@ $theme = $currentPageTheme ?? $site;
 // Ensure CDN Root exists
 $cdn_root = $cdnBaseUrl ?? 'https://assets.raggiesoft.com'; 
 
+// --- NEW: ROUTE OVERRIDES ---
+// If the Route JSON ($pageConfig) has specific overrides, apply them now.
+
+// Override Site Name (e.g., "The Silver Gauntlet of Aethel" instead of "RaggieSoft")
+if (isset($pageConfig['siteName'])) {
+    $settings['siteName'] = $pageConfig['siteName'];
+}
+
+// Override Project Slug (e.g., use "aethel" folder instead of "portfolio")
+$project_slug = $pageConfig['project-slug'] ?? $site;
+
 // Theme Reset Logic
 if ($site !== 'raggiesoft' && $theme === 'raggiesoft') {
     $theme = $site;
 }
 
-$force_dark_mode = ($theme === 'dark' || $theme === 'ad-astra');
+$force_dark_mode = ($theme === 'dark' || $theme === 'ad-astra' || str_contains($theme, 'gloom') || str_contains($theme, 'night'));
 
 // --- 2. BRAND FONT LOGIC ---
 $font_stack = $pageConfig['brandFont'] ?? $settings['brandFont'] ?? ['sans-serif'];
@@ -28,13 +39,15 @@ $css_font_parts = array_map(function($font) {
 
 $brand_font_css = implode(', ', $css_font_parts);
 
-// 3. Path Definitions
+// 3. Path Definitions (Using $project_slug)
 $path_bootstrap = $cdn_root . "/common/css/bootstrap.css";
 
+// Logic: If the theme matches the site root or is generic, look in the root of the project folder.
+// Otherwise, look in a subfolder matching the theme name.
 if ($theme === 'corporate' || $theme === $site || $theme === 'light') {
-    $path_theme_base = $cdn_root . "/{$site}/css/bootstrap";
+    $path_theme_base = $cdn_root . "/{$project_slug}/css/bootstrap";
 } else {
-    $path_theme_base = $cdn_root . "/{$site}/css/bootstrap/{$theme}";
+    $path_theme_base = $cdn_root . "/{$project_slug}/css/bootstrap/{$theme}";
 }
 
 // 4. Build CSS Queue
