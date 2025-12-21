@@ -8,7 +8,7 @@
     "site": "portfolio",
     "headerMenu": "portfolio/header-portfolio",
     "showSidebar": false,
-    "navbarBrandText": "RaggieSoft<span class=\"d-none d-md-inline\"> Books</span>",
+    "navbarBrandText": "<span class=\"d-none d-md-inline\">The Silver Gauntlet of </span> Aethel",
     "navbarBrandLink": "/raggiesoft-books",
     "navbarBrandLogo": "https://assets.raggiesoft.com/raggiesoft-corporate/images/logo/raggiesoft-logo.png"
   }
