@@ -6,7 +6,7 @@
 $pageTitle = "The Silver Gauntlet of Aethel";
 
 // Link to the Firelight Soundtrack on the CDN
-$album_path_web = '/engine-room/artists/firelight/2025-silver-gauntlet-of-aethel';
+$album_path_web = '/engine-room-records/artists/firelight/2025-silver-gauntlet-of-aethel';
 ?>
 
 <div class="container py-5">
