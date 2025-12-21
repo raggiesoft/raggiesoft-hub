@@ -1,0 +1,79 @@
+{
+    "common": {
+        "site": "stardust-engine",
+        "brandFont": ["Audiowide", "sans-serif"],
+        "siteName": "The Stardust Engine",
+        "headerMenu": "engine-room/artists/stardust-engine/header-stardust",
+        "footer": "engine-room/artists/stardust-engine/footer-stardust",
+        "showSidebar": true,
+        "navbarBrandLogo": "https://assets.raggiesoft.com/engine-room-records/artists/the-stardust-engine/band-logo.png",
+        "navbarBrandText": "The Stardust Engine",
+        "navbarBrandLink": "/engine-room/artists/stardust-engine",
+        "ogImage": "https://assets.raggiesoft.com/engine-room-records/artists/the-stardust-engine/social-preview.jpg"
+    },
+    "/engine-room/artists/stardust-engine": {
+        "view": "pages/engine-room/artists/stardust-engine/index",
+        "title": "The Stardust Engine",
+        "ogTitle": "The Stardust Engine",
+        "showSidebar": false,
+        "ogImage": "https://assets.raggiesoft.com/engine-room-records/artists/the-stardust-engine/social-preview.jpg"
+    },
+
+    "/engine-room/artists/stardust-engine/discography/1987-electric-color": {
+        "view": "pages/engine-room/artists/stardust-engine/discography/1987-electric-color",
+        "title": "Electric Color (1987) | The Stardust Engine",
+        "ogTitle": "Electric Color - The 1987 Debut Album",
+        "ogImage": "https://assets.raggiesoft.com/engine-room-records/artists/the-stardust-engine/1987-electric-color/social-preview.jpg"
+    },
+    "/engine-room/artists/stardust-engine/discography/1989-neon-hearts": {
+        "view": "pages/engine-room/artists/stardust-engine/discography/1989-neon-hearts",
+        "title": "Neon Hearts (1989) | The Stardust Engine",
+        "ogTitle": "Neon Hearts - The 1989 Album",
+        "ogImage": "https://assets.raggiesoft.com/engine-room-records/artists/the-stardust-engine/1989-neon-hearts/social-preview.jpg"
+    },
+    "/engine-room/artists/stardust-engine/discography/1990-live-in-chicago": {
+        "view": "pages/engine-room/artists/stardust-engine/discography/1990-live-in-chicago",
+        "title": "Live in Chicago (1990) | The Stardust Engine",
+        "ogTitle": "Live in Chicago - 1990 Tour EP",
+        "ogImage": "https://assets.raggiesoft.com/engine-room-records/artists/the-stardust-engine/1990-live-in-chicago/social-preview.jpg"
+    },
+    "/engine-room/artists/stardust-engine/discography/1992-friction": {
+        "view": "pages/engine-room/artists/stardust-engine/discography/1992-friction",
+        "title": "Friction (1992) - Canceled | The Stardust Engine",
+        "ogTitle": "CASE 94-CIV-404: Seized Assets - Friction"
+    },
+    "/engine-room/artists/stardust-engine/discography/1995-the-warehouse-tapes": {
+        "view": "pages/engine-room/artists/stardust-engine/discography/1995-the-warehouse-tapes",
+        "title": "The Warehouse Tapes (1995) | The Stardust Engine",
+        "ogTitle": "The Warehouse Tapes - 1995 EP",
+        "ogImage": "https://assets.raggiesoft.com/engine-room-records/artists/the-stardust-engine/1995-the-warehouse-tapes/social-preview.jpg"
+    },
+    "/engine-room/artists/stardust-engine/discography/1995-the-warehouse-tapes/ad-astra": {
+        "view": "pages/engine-room/artists/stardust-engine/discography/1995-the-warehouse-tapes/ad-astra",
+        "title": "Escape Velocity (Ad Astra) | Deep Dive",
+        "ogTitle": "Ad Astra - The Progressive Rock Epic",
+        "ogImage": "https://assets.raggiesoft.com/engine-room-records/artists/the-stardust-engine/1995-the-warehouse-tapes/ad-astra/social-preview.jpg"
+    },
+    "/engine-room/artists/stardust-engine/discography/1997-hard-reset": {
+        "view": "pages/engine-room/artists/stardust-engine/discography/1997-hard-reset",
+        "title": "Hard Reset (1997) | The Stardust Engine",
+        "ogTitle": "Hard Reset - The 1997 Album",
+        "ogImage": "https://assets.raggiesoft.com/engine-room-records/artists/the-stardust-engine/1997-hard-reset/social-preview.jpg"
+    },
+    "/engine-room/artists/stardust-engine/discography/2007-lost-sounds": {
+        "view": "pages/engine-room/artists/stardust-engine/discography/2007-lost-sounds",
+        "title": "Lost Sounds (2007) | The Stardust Engine"
+    },
+    "/engine-room/artists/stardust-engine/discography/2015-re-ignition": {
+        "view": "pages/engine-room/artists/stardust-engine/discography/2015-re-ignition",
+        "title": "Re-Ignition (2015) | The Stardust Engine"
+    },
+    "/engine-room/artists/stardust-engine/discography/2016-live-at-the-crucible": {
+        "view": "pages/engine-room/artists/stardust-engine/discography/2016-live-at-the-crucible",
+        "title": "Live at The Crucible (2016) | The Stardust Engine"
+    },
+    "/engine-room/artists/stardust-engine/discography/2017-knox-ost": {
+        "view": "pages/engine-room/artists/stardust-engine/discography/2017-knox-ost",
+        "title": "Knox: Original Soundtrack (2017) | The Stardust Engine"
+    }
+}
