@@ -8,6 +8,15 @@
     "view": "pages/about",
     "showSidebar": true
   },
+  "/contact": {
+    "view": "pages/contact",
+    "title": "Contact Channels | Michael Ragsdale",
+    "brandFont": ["Audiowide", "sans-serif"],
+    "headerMenu": "header-contact",
+    "showSidebar": false,
+    "ogTitle": "Contact The Architect",
+    "ogDescription": "Open a direct channel to Michael Ragsdale (Systems Architect) or Engine Room Records."
+  },
   "/engine-room/history/nine-figure-refusal": {
     "view": "pages/engine-room/history/nine-figure-refusal/overview",
     "title": "The $150M Refusal - Overview",
@@ -26,10 +35,5 @@
     "navbarBrandLink": "/engine-room",
     "navbarBrandAlt": "Engine Room Records Official Seal",
     "navbarBrandClass": "rounded-0 navbar-brand-corporate-img"
-  }, 
-  "/contact": {
-    "view": "pages/contact",
-    "title": "Contact Channels | RaggieSoft",
-    "ogTitle": "Contact Michael Ragsdale - Systems Architect"
   }
 }

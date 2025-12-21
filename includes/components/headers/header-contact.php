@@ -1,32 +1,35 @@
+<?php
+// includes/components/headers/header-contact.php
+// Navigation for the Global Contact Hub.
+// Directs users back to the main pillars of the site.
+
+$request_uri = $_SERVER['REQUEST_URI'] ?? '/';
+?>
+
 <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+  
   <li class="nav-item">
-    <a class="nav-link text-primary" href="/engine-room/artists/stardust-engine/concepts/pact/">The Pact</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link text-warning" href="/engine-room/artists/stardust-engine/concepts/port/">The Port</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link text-secondary" href="#">The Lore Bible</a>
-  </li>
-  <li class="nav-item dropdown">
-    <a class="nav-link dropdown-toggle text-secondary" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-      About
+    <a class="nav-link" href="/">
+        <i class="fa-duotone fa-house me-2"></i>Home
     </a>
-    <ul class="dropdown-menu dropdown-menu-end">
-      <li><a class="dropdown-item" href="/engine-room/artists/stardust-engine/about">About This Project</a></li>
-      <li><a class="dropdown-item" href="/engine-room/artists/stardust-engine/license">License Information</a></li>
-    </ul>
   </li>
-  <li class="nav-item-dropdown">
-    <a class="nav-link dropdown-toggle text-secondary" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-      RaggieSoft
+
+  <li class="nav-item">
+    <a class="nav-link" href="/about/michael-ragsdale">
+        <i class="fa-duotone fa-user-visor me-2"></i>The Architect
     </a>
-    <ul class="dropdown-menu dropdown-menu-end">
-      <li><a class="dropdown-item" href="#">RaggieSoft.com<i class="fa-duotone fa-duotone fa-arrow-up-right-from-square ms-2" aria-hidden="true"></i></a></li>
-      <li><a class="dropdown-item" href="#">RaggieSoft Knox<i class="fa-duotone fa-duotone fa-arrow-up-right-from-square ms-2" aria-hidden="true"></i></a></li>
-      <li><a class="dropdown-item" href="#">MichaelPRagsdale.com<i class="fa-duotone fa-duotone fa-arrow-up-right-from-square ms-2" aria-hidden="true"></i></a></li>
-      <li><hr class="dropdown-divider"></li>
-      <li><a class="dropdown-item active" href="/engine-room/artists/stardust-engine/contact">Contact Me</a></li>
-    </ul>
   </li>
+
+  <li class="nav-item">
+    <a class="nav-link" href="/engine-room">
+        <i class="fa-solid fa-industry me-2"></i>Engine Room
+    </a>
+  </li>
+
+  <li class="nav-item">
+    <a class="nav-link active" href="/contact">
+        <i class="fa-duotone fa-envelope-open me-2"></i>Contact
+    </a>
+  </li>
+
 </ul>
