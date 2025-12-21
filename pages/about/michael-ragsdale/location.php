@@ -5,6 +5,16 @@
 require_once ROOT_PATH . '/includes/utils/json-reader.php';
 $locations = fetch_asset_json('portfolio/json/locations.json');
 
+// LOGIC: Find the "Home" base dynamically from the JSON
+// This ensures we follow DRY. If you move, update the JSON, and this text updates.
+$homeBase = "Unknown Location"; 
+foreach ($locations as $loc) {
+    if (isset($loc['is_home']) && $loc['is_home'] === true) {
+        // Strip "In-Office: " prefix for cleaner display if present
+        $homeBase = str_replace('In-Office: ', '', $loc['label']);
+        break;
+    }
+}
 ?>
 
 <div class="container py-5" style="max-width: 45rem;">
@@ -19,15 +29,19 @@ $locations = fetch_asset_json('portfolio/json/locations.json');
         </a>
     </div>
 
-    <div class="card bg-dark text-white mb-5 shadow overflow-hidden border-0">
-        <div class="card-body p-5 text-center" 
-             style="background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://placehold.co/800x400/2c3e50/ecf0f1?text=Virginia+Map+Visualization'); background-size: cover;">
-            <i class="fa-duotone fa-location-dot fa-3x text-info mb-3"></i>
-            <h2 class="h3 fw-bold">Based in Norfolk, VA</h2>
-            <p class="mb-0">Ready for hybrid, on-site, or remote workflows.</p>
+    <div class="card bg-body-tertiary mb-5 shadow-sm border-0">
+        <div class="card-body p-5 text-center">
+            <div class="text-primary mb-3">
+                <i class="fa-duotone fa-house-chimney fa-4x"></i>
+            </div>
+            <h2 class="h3 fw-bold">Based in <?php echo htmlspecialchars($homeBase); ?></h2>
+            <p class="mb-0 text-secondary">
+                Ready for hybrid, on-site, or remote workflows.
+            </p>
         </div>
     </div>
 
+    <h3 class="h5 fw-bold mb-3">Work Preference Zones</h3>
     <div class="list-group shadow-sm mb-5">
         <?php foreach ($locations as $loc): ?>
             <?php 
@@ -35,9 +49,15 @@ $locations = fetch_asset_json('portfolio/json/locations.json');
                 $icon = 'fa-building';
                 $class = 'list-group-item-action';
                 
-                if (strpos($loc['value'], 'remote') !== false) {
+                // Highlight Home Base
+                if (isset($loc['is_home']) && $loc['is_home']) {
+                    $icon = 'fa-house-user';
+                    $class .= ' list-group-item-primary fw-bold';
+                } 
+                elseif (strpos($loc['value'], 'remote') !== false) {
                     $icon = 'fa-laptop-house';
-                } elseif (strpos($loc['value'], 'relocate') !== false) {
+                } 
+                elseif (strpos($loc['value'], 'relocate') !== false) {
                     $icon = 'fa-truck-fast';
                     $class .= ' list-group-item-info'; // Highlight relocation
                 }
@@ -49,6 +69,9 @@ $locations = fetch_asset_json('portfolio/json/locations.json');
                 <div class="fw-medium">
                     <?php echo htmlspecialchars($loc['label']); ?>
                 </div>
+                <?php if (isset($loc['is_home']) && $loc['is_home']): ?>
+                    <span class="badge bg-primary ms-auto">Current Residence</span>
+                <?php endif; ?>
             </div>
         <?php endforeach; ?>
     </div>
