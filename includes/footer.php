@@ -44,7 +44,7 @@ $activePlaylist = $pageConfig['playlist'] ?? [];
 </div>
 
 
-<script src="<?php echo $cdn_root; ?>/common/js/bootstrap.bundle.min.js"></script>
+<script src="<?php echo $cdn_root; ?>/common/js/bootstrap.js"></script>
 
 <script src="<?php echo $cdn_root; ?>/common/js/components/stardust-player.js" type="module"></script>
 
