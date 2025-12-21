@@ -46,9 +46,6 @@
     <a href="https://linkedin.com/in/michael-ragsdale-raggiesoft" class="nav-link link-body-emphasis" target="_blank">
         <i class="fa-brands fa-linkedin me-2" style="width: 20px;"></i> LinkedIn
     </a>
-    <a href="mailto:hireme@michaelpragsdale.com" class="nav-link link-body-emphasis">
-        <i class="fa-solid fa-envelope me-2" style="width: 20px;"></i> Email
-    </a>
 </nav>
 
 <div class="mt-4 px-2">

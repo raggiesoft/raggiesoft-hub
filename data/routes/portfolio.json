@@ -52,13 +52,13 @@
     "navbarBrandAlt": "RaggieSoft Official Logo",
     "navbarBrandClass": "navbar-brand-raggiesoft"
   },
-  "/portfolio": {
-    "view": "pages/portfolio/overview",
-    "title": "Engineering Projects | RaggieSoft Stack",
-    "ogTitle": "The RaggieSoft Stack - Engineering Portfolio",
-    "ogDescription": "Deep dive into Elara, Jessica, and the Stardust Engine. The technical portfolio of Michael P. Ragsdale.",
+  "/about/michael-ragsdale/contact": {
+    "view": "pages/about/michael-ragsdale/contact",
+    "title": "Contact Information | Michael P. Ragsdale",
     "brandFont": ["Roboto", "sans-serif"],
     "headerMenu": "portfolio/header-portfolio",
+    "sidebar": "portfolio/sidebar-portfolio",
+    "showSidebar": true,
     "navbarBrandText": "Michael P. Ragsdale",
     "navbarBrandLink": "/about/michael-ragsdale",
     "navbarBrandLogo": "https://assets.raggiesoft.com/raggiesoft-corporate/images/logo/raggiesoft-logo.png",
