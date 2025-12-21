@@ -116,7 +116,6 @@ $pageTitle = "Engine Room Records - The Fortress";
                         <div class="col-4 bg-dark d-flex align-items-center justify-content-center">
                             <img src="https://assets.raggiesoft.com/stardust-engine/images/logo/stardust-engine-logo.png" 
                                  class="img-fluid p-3" 
-                                 style="filter: invert(1);"
                                  alt="The Stardust Engine">
                         </div>
                         <div class="col-8">
