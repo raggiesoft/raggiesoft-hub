@@ -1,6 +1,6 @@
 <?php
-// Header for The Stardust Engine Sub-Site
-// Uses the Audiowide font and Band Logo
+// includes/components/headers/engine-room/artists/stardust-engine/header-stardust.php
+// Dedicated navigation for The Stardust Engine artist sub-site.
 ?>
 <ul class="navbar-nav ms-auto mb-2 mb-md-0">
   
@@ -17,8 +17,8 @@
   </li>
 
   <li class="nav-item">
-    <a class="nav-link" href="/engine-room/artists/stardust-engine/biography">
-        <i class="fa-duotone fa-book-open-reader me-2"></i>Biography
+    <a class="nav-link" href="/engine-room/artists/stardust-engine/band">
+        <i class="fa-duotone fa-users me-2"></i>The Band
     </a>
   </li>
 

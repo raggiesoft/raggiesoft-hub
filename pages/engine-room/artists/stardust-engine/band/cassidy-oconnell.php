@@ -86,7 +86,7 @@ $pageTitle = "Cassidy O'Connell - The Stardust Engine";
                                       <strong>Net Worth:</strong> Classified (Winner)",
                     'buttonProps' => [
                         'text' => 'Back to The Band', 
-                        'href' => '/band', 
+                        'href' => '/engine-room/artists/stardust-engine/band', 
                         'variant' => 'neutral', 
                         'icon' => 'fa-duotone fa-users'
                     ]

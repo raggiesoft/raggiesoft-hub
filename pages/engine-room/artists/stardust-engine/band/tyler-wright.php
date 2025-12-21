@@ -57,7 +57,7 @@ $pageTitle = "Tyler Wright - The Stardust Engine";
                                       <strong>Status:</strong> The Human Ramp (Unbroken)",
                     'buttonProps' => [
                         'text' => 'Back to The Band', 
-                        'href' => '/band', 
+                        'href' => '/engine-room/artists/stardust-engine/band', 
                         'variant' => 'neutral', 
                         'icon' => 'fa-duotone fa-users'
                     ]

@@ -1,0 +1,50 @@
+{
+  "common": {
+    "site": "stardust-engine",
+    "brandFont": ["Audiowide", "sans-serif"],
+    "siteName": "The Stardust Engine",
+    "headerMenu": "engine-room/artists/stardust-engine/header-stardust",
+    "footer": "engine-room/artists/stardust-engine/footer-stardust",
+    "showSidebar": false,
+    "navbarBrandLogo": "https://assets.raggiesoft.com/engine-room-records/artists/the-stardust-engine/band-logo.png",
+    "navbarBrandText": "The Stardust Engine",
+    "navbarBrandLink": "/engine-room/artists/stardust-engine",
+    "ogImage": "https://assets.raggiesoft.com/engine-room-records/artists/the-stardust-engine/social-preview.jpg"
+  },
+
+  "/engine-room/artists/stardust-engine/band": {
+    "view": "pages/engine-room/artists/stardust-engine/band/overview",
+    "title": "The Band | The Stardust Engine",
+    "ogTitle": "The Band - A Family Unit"
+  },
+  "/engine-room/artists/stardust-engine/band/history": {
+    "view": "pages/engine-room/artists/stardust-engine/band/history",
+    "title": "History | The Stardust Engine",
+    "ogTitle": "The History - From CPI to The Fortress"
+  },
+  "/engine-room/artists/stardust-engine/band/ryan-oconnell": {
+    "view": "pages/engine-room/artists/stardust-engine/band/ryan-oconnell",
+    "title": "Ryan O'Connell | The Stardust Engine",
+    "ogTitle": "Ryan O'Connell - The Heart of the Band"
+  },
+  "/engine-room/artists/stardust-engine/band/cassidy-oconnell": {
+    "view": "pages/engine-room/artists/stardust-engine/band/cassidy-oconnell",
+    "title": "Cassidy O'Connell | The Stardust Engine",
+    "ogTitle": "Cassidy O'Connell - The Voice of the Band"
+  },
+  "/engine-room/artists/stardust-engine/band/holly-oconnell": {
+    "view": "pages/engine-room/artists/stardust-engine/band/holly-oconnell",
+    "title": "Holly O'Connell | The Stardust Engine",
+    "ogTitle": "Holly O'Connell - The Band's Manager"
+  },
+  "/engine-room/artists/stardust-engine/band/evan-wright": {
+    "view": "pages/engine-room/artists/stardust-engine/band/evan-wright",
+    "title": "Evan Wright | The Stardust Engine",
+    "ogTitle": "Evan Wright - The Band's Guitarist"
+  },
+  "/engine-room/artists/stardust-engine/band/tyler-wright": {
+    "view": "pages/engine-room/artists/stardust-engine/band/tyler-wright",
+    "title": "Tyler Wright | The Stardust Engine",
+    "ogTitle": "Tyler Wright - The Band's Bassist"
+  }
+}

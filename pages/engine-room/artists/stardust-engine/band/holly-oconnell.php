@@ -96,7 +96,7 @@ $pageTitle = "Holly O'Connell - The Stardust Engine";
                                       <strong>Status:</strong> The Architect (Unbroken)",
                     'buttonProps' => [
                         'text' => 'Back to The Band', 
-                        'href' => '/band', 
+                        'href' => '/engine-room/artists/stardust-engine/band', 
                         'variant' => 'neutral', 
                         'icon' => 'fa-duotone fa-users'
                     ]
