@@ -7,8 +7,7 @@
     "ogImage": "https://assets.raggiesoft.com/engine-room/artists/firelight/2025-silver-gauntlet-of-aethel/album-art.jpg",
     "site": "portfolio",
     "headerMenu": "portfolio/header-portfolio",
-    "sidebar": "portfolio/sidebar-portfolio",
-    "showSidebar": true,
+    "showSidebar": false,
     "navbarBrandText": "RaggieSoft<span class=\"d-none d-md-inline\"> Books</span>",
     "navbarBrandLink": "/raggiesoft-books",
     "navbarBrandLogo": "https://assets.raggiesoft.com/raggiesoft-corporate/images/logo/raggiesoft-logo.png"
