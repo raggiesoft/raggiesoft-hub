@@ -1,157 +1,204 @@
 <?php
 // pages/raggiesoft-books/aethel-saga/overview.php
-// The Main Library Hub for "The Silver Gauntlet of Aethel"
-// Context: Landing page for the transmedia project (Book + Soundtrack).
+// LANDING PAGE: aethelsaga.com
+// Design: Cinematic / Immersive / microsite-style
 
 $pageTitle = "The Silver Gauntlet of Aethel";
 
-// Link to the Firelight Soundtrack on the CDN
+// ASSETS
 $album_path_web = '/engine-room-records/artists/firelight/2025-silver-gauntlet-of-aethel';
+$cover_art = 'https://assets.raggiesoft.com/engine-room-records/artists/firelight/2025-silver-gauntlet-of-aethel/album-art.jpg';
 ?>
 
-<div class="container py-5">
+<style>
+    /* AETHEL SAGA SPECIFIC STYLES */
+    .aethel-hero {
+        position: relative;
+        background-color: #050505;
+        color: #e0e0e0;
+        overflow: hidden;
+        border-bottom: 4px solid #d4af37; /* Gold Border */
+    }
     
-    <div class="row align-items-center mb-5">
-        
-        <?php $props = [
-            'path' => $album_path_web, 
-            'alt' => 'The Silver Gauntlet of Aethel Cover Art',
-            'variant' => 'axiom' // Gold border for High Fantasy
-        ]; include ROOT_PATH . '/includes/components/_album-art-header.php'; ?>
+    .aethel-hero::before {
+        content: '';
+        position: absolute;
+        top: 0; left: 0; right: 0; bottom: 0;
+        background-image: url('<?php echo $cover_art; ?>');
+        background-size: cover;
+        background-position: center;
+        opacity: 0.3;
+        filter: blur(10px) grayscale(50%);
+        z-index: 0;
+    }
+    
+    .hero-content {
+        position: relative;
+        z-index: 2;
+    }
 
-        <div class="col-md-7">
-            <div class="mb-2">
-                <span class="badge bg-warning text-dark border border-warning shadow-sm">
-                    <i class="fa-duotone fa-book-sparkles me-2"></i>RaggieSoft Original Saga
-                </span>
-                <span class="badge bg-dark border border-secondary text-secondary ms-2">
-                    <i class="fa-duotone fa-music me-2"></i>Soundtrack Available
-                </span>
+    .cinzel-font {
+        font-family: 'Cinzel', serif;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+
+    .era-card {
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        background: linear-gradient(180deg, #1a1a1a 0%, #0d0d0d 100%);
+        transition: transform 0.3s ease, border-color 0.3s ease;
+    }
+    .era-card:hover {
+        transform: translateY(-5px);
+        border-color: #d4af37;
+    }
+    
+    .text-gold { color: #d4af37 !important; }
+</style>
+
+<div class="aethel-hero py-5">
+    <div class="container py-5">
+        <div class="row align-items-center">
+            
+            <div class="col-md-5 text-center mb-4 mb-md-0 hero-content">
+                <img src="<?php echo $cover_art; ?>" 
+                     alt="The Silver Gauntlet of Aethel" 
+                     class="img-fluid shadow-lg rounded"
+                     style="max-width: 350px; border: 2px solid #d4af37; box-shadow: 0 0 30px rgba(212, 175, 55, 0.2);">
             </div>
-            
-            <h1 class="display-3 fw-bold text-uppercase mb-1" style="font-family: 'Cinzel', serif; letter-spacing: 2px;">
-                The Silver Gauntlet
-            </h1>
-            <h2 class="h4 text-secondary text-uppercase letter-spacing-4 mb-4">
-                of Aethel
-            </h2>
-            
-            <p class="lead">
-                Two twins. One broken world. And a debt that must be paid in fire.
-            </p>
-            <p class="text-muted">
-                <strong>The Silver Gauntlet of Aethel</strong> is a sprawling 80s-style fantasy adventure spanning four eras of myth, silence, tides, and iron. It follows the journey of <strong>Kaelan (The Sun)</strong> and <strong>Kaela (The Moon)</strong> as they battle to restart the heart of a dying planet.
-            </p>
-            
-            <div class="mt-4 d-flex gap-3 flex-wrap">
-                <a href="#read" class="btn btn-primary rounded-pill px-4 shadow-glow">
-                    <i class="fa-duotone fa-book-open me-2"></i>Start Reading
-                </a>
-                <a href="#listen" class="btn btn-outline-warning rounded-pill px-4">
-                    <i class="fa-duotone fa-music me-2"></i>Listen to Soundtrack
-                </a>
+
+            <div class="col-md-7 hero-content text-center text-md-start">
+                <div class="mb-3">
+                    <span class="badge bg-black border border-warning text-warning rounded-pill px-3 py-2 text-uppercase letter-spacing-1">
+                        <i class="fa-duotone fa-book-sparkles me-2"></i>RaggieSoft Original Saga
+                    </span>
+                </div>
+                
+                <h1 class="display-3 fw-bold text-white mb-0 cinzel-font">
+                    The Silver Gauntlet
+                </h1>
+                <h2 class="display-6 text-gold mb-4 cinzel-font opacity-75">
+                    of Aethel
+                </h2>
+                
+                <p class="lead text-light mb-4" style="font-family: 'Georgia', serif; line-height: 1.8;">
+                    <em>Two twins. One broken world. And a debt that must be paid in fire.</em>
+                </p>
+                
+                <p class="text-white-50 mb-5">
+                    A sprawling 1980s-style fantasy adventure spanning four eras of myth, silence, tides, and iron. Follow the journey of <strong>Kaelan (The Sun)</strong> and <strong>Kaela (The Moon)</strong> as they battle to restart the heart of a dying planet.
+                </p>
+
+                <div class="d-flex gap-3 justify-content-center justify-content-md-start">
+                    <a href="#toc" class="btn btn-warning btn-lg rounded-pill px-5 fw-bold shadow-glow text-dark">
+                        <i class="fa-duotone fa-book-open me-2"></i>Start Reading
+                    </a>
+                    <a href="#soundtrack" class="btn btn-outline-light btn-lg rounded-pill px-4">
+                        <i class="fa-duotone fa-music me-2"></i>Soundtrack
+                    </a>
+                </div>
             </div>
+
         </div>
     </div>
+</div>
 
-    <hr class="border-secondary opacity-25 mb-5">
-
-    <div id="read" class="mb-5">
-        <div class="d-flex align-items-center justify-content-between border-bottom border-secondary pb-3 mb-4">
-            <h3 class="h4 fw-bold text-uppercase mb-0 text-info">
-                <i class="fa-duotone fa-timeline me-2"></i>The Saga Timeline
+<div id="toc" class="bg-dark py-5">
+    <div class="container">
+        
+        <div class="text-center mb-5">
+            <h3 class="h2 text-white cinzel-font border-bottom border-secondary d-inline-block pb-2">
+                The Saga Timeline
             </h3>
-            <span class="small text-muted font-monospace">STATUS: IN PROGRESS</span>
         </div>
 
         <div class="row g-4">
             
-            <div class="col-md-6 col-lg-3">
-                <div class="card h-100 bg-dark border-warning shadow-sm">
-                    <div class="card-header bg-black border-bottom border-warning text-warning fw-bold text-uppercase small text-center">
-                        Era 1: Myth
-                    </div>
-                    <div class="card-body d-flex flex-column">
-                        <h5 class="card-title text-white text-center font-serif">The Silver Sun</h5>
-                        <p class="small text-white-50 text-center flex-grow-1">
+            <div class="col-lg-3 col-md-6">
+                <div class="card h-100 era-card">
+                    <div class="card-body p-4 text-center">
+                        <div class="mb-3 text-warning"><i class="fa-duotone fa-sun-cloud fa-3x"></i></div>
+                        <h5 class="text-white cinzel-font">Era 1: Myth</h5>
+                        <hr class="border-secondary opacity-25">
+                        <p class="small text-white-50">
                             The Architect's Lesson. The tuning of the flare and the betrayal that broke the sky.
                         </p>
-                        <a href="/raggiesoft-books/aethel-saga/era-1/book-1/chapter-01" class="btn btn-sm btn-warning w-100 mt-3 fw-bold">
-                            Read Prologue
+                        <a href="/raggiesoft-books/aethel-saga/era-1/book-1/chapter-01" class="btn btn-sm btn-outline-warning w-100 mt-2">
+                            Read Book I
                         </a>
                     </div>
                 </div>
             </div>
 
-            <div class="col-md-6 col-lg-3">
-                <div class="card h-100 bg-dark border-info shadow-sm">
-                    <div class="card-header bg-black border-bottom border-info text-info fw-bold text-uppercase small text-center">
-                        Era 2: Silence
-                    </div>
-                    <div class="card-body d-flex flex-column">
-                        <h5 class="card-title text-white text-center font-serif">The Silver Gauntlet</h5>
-                        <p class="small text-white-50 text-center flex-grow-1">
+            <div class="col-lg-3 col-md-6">
+                <div class="card h-100 era-card">
+                    <div class="card-body p-4 text-center">
+                        <div class="mb-3 text-info"><i class="fa-duotone fa-snowflake fa-3x"></i></div>
+                        <h5 class="text-white cinzel-font">Era 2: Silence</h5>
+                        <hr class="border-secondary opacity-25">
+                        <p class="small text-white-50">
                             The Sundering of Sunstead. The twins wake in a world without suns to fight the Iron Heart.
                         </p>
-                        <a href="#" class="btn btn-sm btn-outline-secondary w-100 mt-3 disabled">Coming Soon</a>
+                        <button class="btn btn-sm btn-outline-secondary w-100 mt-2" disabled>Coming Soon</button>
                     </div>
                 </div>
             </div>
 
-            <div class="col-md-6 col-lg-3">
-                <div class="card h-100 bg-dark border-primary shadow-sm">
-                    <div class="card-header bg-black border-bottom border-primary text-primary fw-bold text-uppercase small text-center">
-                        Era 3: Tides
-                    </div>
-                    <div class="card-body d-flex flex-column">
-                        <h5 class="card-title text-white text-center font-serif">The Glass Sea</h5>
-                        <p class="small text-white-50 text-center flex-grow-1">
+            <div class="col-lg-3 col-md-6">
+                <div class="card h-100 era-card">
+                    <div class="card-body p-4 text-center">
+                        <div class="mb-3 text-primary"><i class="fa-duotone fa-water fa-3x"></i></div>
+                        <h5 class="text-white cinzel-font">Era 3: Tides</h5>
+                        <hr class="border-secondary opacity-25">
+                        <p class="small text-white-50">
                             The journey across the endless ocean to find the Star-Eater and the Clockwork Ocean.
                         </p>
-                        <a href="#" class="btn btn-sm btn-outline-secondary w-100 mt-3 disabled">Coming Soon</a>
+                        <button class="btn btn-sm btn-outline-secondary w-100 mt-2" disabled>Coming Soon</button>
                     </div>
                 </div>
             </div>
 
-            <div class="col-md-6 col-lg-3">
-                <div class="card h-100 bg-dark border-danger shadow-sm">
-                    <div class="card-header bg-black border-bottom border-danger text-danger fw-bold text-uppercase small text-center">
-                        Era 4: Iron
-                    </div>
-                    <div class="card-body d-flex flex-column">
-                        <h5 class="card-title text-white text-center font-serif">The Magnetic North</h5>
-                        <p class="small text-white-50 text-center flex-grow-1">
+            <div class="col-lg-3 col-md-6">
+                <div class="card h-100 era-card">
+                    <div class="card-body p-4 text-center">
+                        <div class="mb-3 text-danger"><i class="fa-duotone fa-fire-burner fa-3x"></i></div>
+                        <h5 class="text-white cinzel-font">Era 4: Iron</h5>
+                        <hr class="border-secondary opacity-25">
+                        <p class="small text-white-50">
                             The final confrontation. The Wall, the Garden, and the payment of the debt.
                         </p>
-                        <a href="#" class="btn btn-sm btn-outline-secondary w-100 mt-3 disabled">Coming Soon</a>
+                        <button class="btn btn-sm btn-outline-secondary w-100 mt-2" disabled>Coming Soon</button>
                     </div>
                 </div>
             </div>
 
         </div>
     </div>
+</div>
 
-    <div id="listen" class="mt-5 pt-5 border-top border-secondary border-opacity-50">
-        <div class="row mb-4">
-            <div class="col-lg-8">
-                <div class="d-flex align-items-center">
-                     <div class="bg-warning text-dark rounded-circle p-3 me-3">
-                        <i class="fa-duotone fa-compact-disc fa-2x"></i>
-                     </div>
-                     <div>
-                         <h3 class="h3 fw-bold text-uppercase mb-0">Official Soundtrack</h3>
-                         <p class="text-muted mb-0">Original Score by <strong>Firelight</strong></p>
-                     </div>
-                </div>
+<div id="soundtrack" class="bg-black py-5 border-top border-secondary">
+    <div class="container">
+        
+        <div class="row align-items-center mb-5">
+            <div class="col-md-8">
+                 <h2 class="display-5 fw-bold text-white mb-2 cinzel-font">The Soundtrack</h2>
+                 <p class="text-white-50 lead">
+                     Original Score by <strong class="text-white">Firelight</strong>
+                 </p>
+                 <p class="text-secondary small mb-0">
+                     [cite_start]Produced by Engine Room Records[cite: 51]. Listen while you read.
+                 </p>
             </div>
-            <div class="col-lg-4 text-lg-end mt-3 mt-lg-0">
-                <small class="text-muted fst-italic">
-                    "Read with the music. The themes are woven into the text."
-                </small>
+            <div class="col-md-4 text-end d-none d-md-block">
+                <i class="fa-duotone fa-compact-disc fa-4x text-secondary opacity-25"></i>
             </div>
         </div>
 
-        <?php include ROOT_PATH . '/includes/components/_tracklist-downloader.php'; ?>
-    </div>
+        <div class="card bg-dark border-secondary">
+            <div class="card-body">
+                <?php include ROOT_PATH . '/includes/components/_tracklist-downloader.php'; ?>
+            </div>
+        </div>
 
+    </div>
 </div>
