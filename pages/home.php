@@ -58,8 +58,8 @@
       <div class="col">
         <?php
           $props = [
-            'imgSrc' => 'https://assets.raggiesoft.com/raggiesoft-corporate/images/logo/raggiesoft-logo.png', // Using logo as corporate rep
-            'imgAlt' => 'RaggieSoft Logo',
+            'imgSrc' => 'https://assets.raggiesoft.com/common/images/mragsdale-square.jpg', // Using logo as corporate rep
+            'imgAlt' => 'Michael P. Ragsdale',
             'fallbackText' => 'Portfolio',
             'title' => 'Michael P. Ragsdale',
             'description' => 'Digital Portfolio & Resume. Full Stack Development, Project Management, and Creative Writing. The professional face of RaggieSoft.',
