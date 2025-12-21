@@ -1,7 +1,7 @@
 <?php
 // pages/contact.php
 // The Global Contact Hub
-// Filters traffic: "Fans/Devs" -> Direct Email | "Recruiters" -> The Gate
+// Design: Full-Screen Immersive "Glass" UI
 
 $pageTitle = "Contact Channels | Michael Ragsdale";
 
@@ -9,164 +9,152 @@ $pageTitle = "Contact Channels | Michael Ragsdale";
 require_once ROOT_PATH . '/includes/utils/json-reader.php';
 $heroImages = fetch_asset_json('common/json/hero-images.json');
 
-// 2. Pick Random Start Image (Server-Side Fallback)
+// 2. Pick Random Start Image
 $startImage = !empty($heroImages) 
     ? "https://assets.raggiesoft.com" . $heroImages[array_rand($heroImages)] 
     : "https://assets.raggiesoft.com/common/patterns/stars-transparent.png";
 ?>
 
 <style>
-    /* DYNAMIC HERO STYLES */
-    .hero-container {
+    /* 1. FULL PAGE CONTAINER */
+    .immersive-container {
         position: relative;
+        min-height: 100vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         overflow: hidden;
-        border-bottom: 1px solid rgba(0,0,0,0.1);
-        background-color: #f8f9fa; 
+        background-color: #000;
     }
 
-    /* The Background Image Layer */
+    /* 2. BACKGROUND LAYERS */
     .hero-bg-layer {
         position: absolute;
-        top: 0; left: 0; width: 100%; height: 100%;
-        
-        /* CHANGED: 'contain' prevents cropping, 'center' keeps it in middle */
-        background-size: contain; 
-        background-repeat: no-repeat;
+        inset: 0;
+        background-size: cover;
         background-position: center;
-        
-        /* Dark background behind the image so 'empty' space isn't jarring */
-        background-color: #000; 
-        
-        z-index: 0;
+        background-repeat: no-repeat;
         transition: opacity 1.5s ease-in-out;
-        opacity: 1; 
+        z-index: 0;
     }
 
-    /* The "Wash Out" Scrim Layer - CLEARER */
-    .hero-scrim {
+    /* 3. GLOBAL SCRIM (Subtle Tint) */
+    /* Darkens/Lightens the image slightly to ensure the Glass Cards pop */
+    .hero-overlay {
         position: absolute;
-        top: 0; left: 0; width: 100%; height: 100%;
-        /* 60% White Overlay - enough to fade the image but keep it visible */
-        background-color: rgba(255, 255, 255, 0.60); 
-        /* REMOVED: Blur (as requested) */
+        inset: 0;
+        background: rgba(0, 0, 0, 0.4); /* 40% Black tint for drama */
         z-index: 1;
     }
-
-    /* The Content Layer */
-    .hero-content {
-        position: relative;
-        z-index: 2;
+    /* In Light Mode, we might want a lighter tint, but dark usually looks better for 'immersive' */
+    
+    /* 4. GLASS CARDS */
+    .glass-card {
+        background: rgba(255, 255, 255, 0.1); /* Very transparent white */
+        backdrop-filter: blur(12px);           /* The "Frosted Glass" effect */
+        -webkit-backdrop-filter: blur(12px);   /* Safari support */
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+        color: #fff;
+        transition: transform 0.3s ease, border-color 0.3s ease;
     }
     
-    /* Text Protection: Halo Effect */
-    .hero-text-protected {
-        color: #000 !important;
-        /* Stronger halo since we removed the blur */
-        text-shadow: 0 0 15px rgba(255, 255, 255, 0.9), 
-                     0 0 5px rgba(255, 255, 255, 1);
+    .glass-card:hover {
+        transform: translateY(-5px);
+        border-color: rgba(255, 255, 255, 0.5);
+        background: rgba(255, 255, 255, 0.15);
     }
 
-    /* Card Styles */
-    .channel-card {
-        background: #fff;
-        border: 1px solid #dee2e6;
-        transition: all 0.3s ease;
+    /* Text shadows for readability against any background */
+    .text-shadow {
+        text-shadow: 0 2px 4px rgba(0,0,0,0.8);
     }
-    [data-bs-theme="dark"] .channel-card {
-        background: #212529;
-        border-color: #495057;
-    }
-    .channel-card:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-    }
-    .channel-icon {
-        width: 80px; height: 80px;
-        display: flex; align-items: center; justify-content: center;
-        border-radius: 50%;
-        margin-bottom: 1.5rem;
+    
+    /* Content Wrapper */
+    .content-wrapper {
+        position: relative;
+        z-index: 10;
+        width: 100%;
+        padding: 4rem 0;
     }
 </style>
 
-<div class="hero-container py-5 text-center">
+<div class="immersive-container">
     
     <div id="hero-bg-1" class="hero-bg-layer" style="background-image: url('<?php echo $startImage; ?>');"></div>
     <div id="hero-bg-2" class="hero-bg-layer" style="background-image: url(''); opacity: 0;"></div>
     
-    <div class="hero-scrim"></div>
+    <div class="hero-overlay"></div>
 
-    <div class="container py-4 hero-content">
-        <h1 class="display-4 fw-bold text-uppercase mb-3 hero-text-protected" style="font-family: 'Audiowide', cursive;">
-            Signal The Architect
-        </h1>
-        <p class="lead mx-auto fw-bold hero-text-protected" style="max-width: 700px;">
-            This website is a dual-layer reality: part creative portfolio, part technical showcase.
-            Please select your communication channel below.
-        </p>
-    </div>
-</div>
-
-<div class="container py-5" style="margin-top: -3rem; position: relative; z-index: 3;">
-    <div class="row g-4 justify-content-center">
+    <div class="content-wrapper container">
         
-        <div class="col-lg-5">
-            <div class="card channel-card h-100 p-4 text-center">
-                <div class="card-body">
-                    <div class="channel-icon bg-primary bg-opacity-10 text-primary mx-auto">
-                        <i class="fa-duotone fa-microchip-ai fa-3x"></i>
-                    </div>
-                    <h2 class="h3 fw-bold mb-3">Project Inquiry</h2>
-                    <p class="text-secondary mb-4">
-                        Curious about the <strong>Stardust Engine</strong> architecture? 
-                        Want to discuss the <strong>Elara</strong> router, the <strong>Suno/Gemini</strong> workflow, or just send feedback on the fiction?
-                    </p>
-                    <div class="alert alert-light border small text-muted mb-4">
-                        <i class="fa-solid fa-comment-dots me-2"></i>
-                        <strong>Best for:</strong> Developers, Musicians, and Readers.
-                    </div>
-                    
-                    <a href="mailto:hireme@michaelpragsdale.com?subject=RaggieSoft: Project Inquiry" class="btn btn-outline-primary rounded-pill w-100 fw-bold">
-                        <i class="fa-solid fa-paper-plane me-2"></i>Send Message
-                    </a>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-lg-5">
-            <div class="card channel-card h-100 p-4 text-center border-danger">
-                <div class="card-body">
-                    <div class="channel-icon bg-danger bg-opacity-10 text-danger mx-auto">
-                        <i class="fa-duotone fa-briefcase fa-3x"></i>
-                    </div>
-                    <h2 class="h3 fw-bold mb-3">Hiring & Careers</h2>
-                    <p class="text-secondary mb-4">
-                        Are you a recruiter looking to hire the <strong>Systems Architect</strong> who built this platform?
-                    </p>
-                    <div class="alert alert-danger bg-opacity-10 border-danger small text-danger mb-4">
-                        <i class="fa-solid fa-shield-check me-2"></i>
-                        <strong>Protocol:</strong> Requires pre-screening for Salary & Location alignment.
-                    </div>
-                    
-                    <a href="/about/michael-ragsdale/contact" class="btn btn-danger rounded-pill w-100 fw-bold shadow-sm">
-                        <i class="fa-duotone fa-id-card-clip me-2"></i>Access Hiring Hub
-                    </a>
-                </div>
-            </div>
-        </div>
-
-    </div>
-
-    <div class="row justify-content-center mt-5">
-        <div class="col-lg-8 text-center">
-            <p class="small text-muted">
-                <i class="fa-solid fa-server me-2"></i>
-                <strong>System Note:</strong> 
-                The "Hiring Hub" provides access to my Resume, Salary Requirements, and Microsoft Bookings calendar.
-                Unsolicited sales emails sent to the Project channel will be discarded.
+        <div class="text-center mb-5">
+            <h1 class="display-3 fw-bold text-uppercase text-white text-shadow mb-3" style="font-family: 'Audiowide', cursive;">
+                Signal The Architect
+            </h1>
+            <p class="lead text-white-50 mx-auto text-shadow" style="max-width: 700px;">
+                Choose your communication channel.
             </p>
         </div>
-    </div>
 
+        <div class="row g-5 justify-content-center">
+            
+            <div class="col-lg-5">
+                <div class="card glass-card h-100 p-4 text-center rounded-4">
+                    <div class="card-body">
+                        <div class="mb-4 text-info">
+                            <i class="fa-duotone fa-microchip-ai fa-4x drop-shadow"></i>
+                        </div>
+                        <h2 class="h3 fw-bold mb-3 text-white">Project Inquiry</h2>
+                        <p class="text-white-50 mb-4">
+                            Questions about the <strong>Stardust Engine</strong> architecture, 
+                            the <strong>Elara</strong> router, or the <strong>Suno/Gemini</strong> workflow?
+                        </p>
+                        <div class="d-grid">
+                            <a href="mailto:hireme@michaelpragsdale.com?subject=RaggieSoft: Project Inquiry" class="btn btn-info btn-lg rounded-pill fw-bold text-dark">
+                                <i class="fa-solid fa-paper-plane me-2"></i>Send Message
+                            </a>
+                        </div>
+                        <div class="mt-3 small text-white-50">
+                            Direct line. No filters.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-5">
+                <div class="card glass-card h-100 p-4 text-center rounded-4 border-danger">
+                    <div class="card-body">
+                        <div class="mb-4 text-danger">
+                            <i class="fa-duotone fa-briefcase fa-4x drop-shadow"></i>
+                        </div>
+                        <h2 class="h3 fw-bold mb-3 text-white">Hiring & Careers</h2>
+                        <p class="text-white-50 mb-4">
+                            Recruiters looking for a <strong>Systems Architect</strong> or <strong>Full-Stack Developer</strong>.
+                        </p>
+                        <div class="d-grid">
+                            <a href="/about/michael-ragsdale/contact" class="btn btn-danger btn-lg rounded-pill fw-bold shadow-glow">
+                                <i class="fa-duotone fa-id-card-clip me-2"></i>Access Hiring Hub
+                            </a>
+                        </div>
+                        <div class="mt-3 small text-white-50">
+                            Requires pre-screening.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="text-center mt-5">
+            <p class="small text-white-50 text-shadow">
+                <i class="fa-solid fa-server me-2"></i>
+                <strong>System Note:</strong> The Hiring Hub provides access to Resume, Salary, and Calendar.
+            </p>
+        </div>
+
+    </div>
 </div>
 
 <script>
@@ -177,7 +165,6 @@ $startImage = !empty($heroImages)
     
     if (!images || images.length < 2) return;
 
-    // Respect user motion preferences
     const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     if (prefersReducedMotion) return; 
 
@@ -189,7 +176,11 @@ $startImage = !empty($heroImages)
 
     function rotateImage() {
         currentIndex = (currentIndex + 1) % images.length;
-        const nextImageUrl = `url('${cdnBase}${images[currentIndex]}')`;
+        // Check if image starts with http (absolute) or / (relative)
+        const imgPath = images[currentIndex];
+        const fullUrl = imgPath.startsWith('http') ? imgPath : cdnBase + imgPath;
+        
+        const nextImageUrl = `url('${fullUrl}')`;
 
         if (activeLayer === 1) {
             bg2.style.backgroundImage = nextImageUrl;
