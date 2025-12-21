@@ -5,14 +5,16 @@
     "ogTitle": "The Silver Gauntlet of Aethel - Official Saga",
     "ogDescription": "An epic 80s fantasy adventure spanning four eras. Read the saga and listen to the official soundtrack by Firelight.",
     "ogImage": "https://assets.raggiesoft.com/engine-room/artists/firelight/2025-silver-gauntlet-of-aethel/album-art.jpg",
-    "site": "portfolio",
-    "headerMenu": "portfolio/header-portfolio",
+    "site": "aethel",
+    "headerMenu": "raggiesoft-books/header-aethel",
     "showSidebar": false,
     "navbarBrandText": "<span class=\"d-none d-md-inline\">The Silver Gauntlet of </span> Aethel",
     "navbarBrandLink": "/raggiesoft-books",
-    "navbarBrandLogo": "https://assets.raggiesoft.com/raggiesoft-corporate/images/logo/raggiesoft-logo.png",
+    "navbarBrandLogo": "https://assets.raggiesoft.com/aethel/images/logos/silver-gauntlet-of-aethel-logo.png",
+    "navbarBrandAlt": "The Silver Gauntlet of Aethel Logo - Twins Kaelan and Kaela",
     "brandFont": ["Cinzel", "serif"],
     "siteName": "The Silver Gauntlet of Aethel",
-    "project-slug": "aethel"
+    "project-slug": "aethel",
+    "footer": "raggiesoft-books/footer-aethel"
   }
 }
