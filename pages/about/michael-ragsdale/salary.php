@@ -4,14 +4,12 @@
 
 $pageConfig = [
     'title' => 'Salary Requirements | Michael P. Ragsdale',
-    'sidebar' => 'portfolio/sidebar-portfolio', // Using the sidebar we made earlier
+    'sidebar' => 'portfolio/sidebar-portfolio', 
     'scripts' => [
-        // Adjust path if you save the JS elsewhere
+        // Updated Path: Now serving correctly from the Portfolio Assets folder
         'https://assets.raggiesoft.com/portfolio/js/salary-negotiator.js' 
     ]
 ];
-
-// Fallback style for the loading state
 ?>
 
 <div class="container py-5" style="max-width: 50rem;">
@@ -44,8 +42,8 @@ $pageConfig = [
 
     <div class="alert alert-light border small text-muted">
         <i class="fa-solid fa-circle-info me-2"></i>
-        <strong>Note on calculations:</strong> This tool assumes a standard full-time role (W2) with typical benefits. 
-        Contract (1099) roles generally require a 30% premium to account for self-employment taxes and lack of benefits.
+        <strong>Employment Type:</strong> This tool assumes a standard full-time role (W2) with typical benefits. 
+        Please note that <strong>I do not accept Contract (1099) roles</strong>.
     </div>
 
 </div>
