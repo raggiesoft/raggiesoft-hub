@@ -12,14 +12,14 @@
         "ogImage": "https://assets.raggiesoft.com/engine-room-records/artists/the-stardust-engine/social-preview.jpg"
     },
     "/engine-room/artists/stardust-engine": {
-        "view": "pages/engine-room/artists/stardust-engine/index",
+        "view": "pages/engine-room/artists/stardust-engine/overview",
         "title": "The Stardust Engine",
         "ogTitle": "The Stardust Engine",
         "showSidebar": false,
         "ogImage": "https://assets.raggiesoft.com/engine-room-records/artists/the-stardust-engine/social-preview.jpg"
     },
     "/engine-room/artists/stardust-engine/discography": {
-        "view": "pages/engine-room/artists/stardust-engine/index",
+        "view": "pages/engine-room/artists/stardust-engine/discography/overview",
         "title": "Discography | The Stardust Engine",
         "ogTitle": "Discography - The Stardust Engine",
         "showSidebar": false,
