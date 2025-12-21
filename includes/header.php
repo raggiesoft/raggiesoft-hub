@@ -1,42 +1,48 @@
 <?php
 // includes/header.php
-// v9.1 - Fixed: JS Syntax Error & Loader Integration
-// Features: Immersive Scroll Logic, Dynamic Theme Context, Route Overrides, Page Loader
+// v10.0 - "Safe Mode" Separation
+// Standard: Static Block (Pushes content down).
+// Immersive: Fixed Overlay (Floats on top).
 
 // --- 1. CONTEXT & CONFIGURATION ---
 $site  = $currentSite ?? 'raggiesoft';
 $theme = $currentPageTheme ?? $site;
 $cdn_root = $cdnBaseUrl ?? 'https://assets.raggiesoft.com'; 
 
-// Route Overrides (From JSON)
+// Route Overrides
 if (isset($pageConfig['siteName'])) {
     $settings['siteName'] = $pageConfig['siteName'];
 }
 $project_slug = $pageConfig['project-slug'] ?? $site;
 
-// Theme Reset Logic
+// Theme Reset
 if ($site !== 'raggiesoft' && $theme === 'raggiesoft') {
     $theme = $site;
 }
 
-// Dark Mode Detection
+// Dark Mode
 $force_dark_mode = ($theme === 'dark' || $theme === 'ad-astra' || str_contains($theme, 'gloom') || str_contains($theme, 'night'));
 
-// Brand Font Logic
+// Fonts
 $font_stack = $pageConfig['brandFont'] ?? $settings['brandFont'] ?? ['sans-serif'];
 $brand_font_family = implode(', ', $font_stack);
 
 // --- 2. IMMERSIVE MODE LOGIC ---
-// Check if the route JSON requested a transparent header
+// Default is FALSE. Only becomes true if JSON explicitly says "transparentHeader": true
 $isImmersive = $pageConfig['transparentHeader'] ?? false;
 
-// Base Classes
-$navWrapperClass = $isImmersive ? 'fixed-top transition-all' : 'sticky-top';
-$navBaseClass    = "navbar navbar-expand-lg"; 
-
-if (!$isImmersive) {
-    // Non-immersive pages get a solid background immediately
-    $navBaseClass .= " bg-body border-bottom border-secondary border-opacity-25";
+if ($isImmersive) {
+    // MODE A: IMMERSIVE (Movie Poster)
+    // Fixed: Floats ON TOP of content.
+    // Transparent: No background initially.
+    $navWrapperClass = 'fixed-top transition-all'; 
+    $navBaseClass    = "navbar navbar-expand-lg navbar-dark"; 
+} else {
+    // MODE B: STANDARD (Corporate/Regular)
+    // Relative: Sits IN FLOW of document (Pushes content down).
+    // Bg-Body: Has a solid background color.
+    $navWrapperClass = 'position-relative'; 
+    $navBaseClass    = "navbar navbar-expand-lg bg-body border-bottom border-secondary border-opacity-25";
 }
 ?>
 
@@ -57,7 +63,6 @@ if (!$isImmersive) {
     <link href="<?php echo $cdn_root; ?>/common/css/bootstrap.css" rel="stylesheet">
     
     <?php
-    // Load Site-Specific CSS
     $cssPath = "/{$project_slug}/css/bootstrap/";
     if ($force_dark_mode && $theme !== 'dark') {
         $cssPath .= "{$theme}/"; 
@@ -72,63 +77,40 @@ if (!$isImmersive) {
     <style>
         :root { --bs-body-font-family: <?php echo $brand_font_family; ?>; }
         .brand-font { font-family: <?php echo $brand_font_family; ?> !important; }
-        
-        /* HEADER TRANSITION LOGIC */
-        header.transition-all {
-            transition: background-color 0.4s ease, box-shadow 0.4s ease, padding 0.4s ease;
-        }
 
-        /* PAGE LOADER CSS */
+        /* LOADER CSS */
         #page-loader {
-            position: fixed;
-            top: 0; left: 0; width: 100%; height: 100%;
-            background-color: var(--bs-body-bg);
-            z-index: 9999;
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            background-color: var(--bs-body-bg); z-index: 9999;
             display: flex; flex-direction: column; justify-content: center; align-items: center;
             transition: opacity 0.5s ease, visibility 0.5s ease;
         }
-        .loader-hidden {
-            opacity: 0;
-            visibility: hidden;
-            pointer-events: none;
-        }
-        .progress-bar-tech {
-            height: 4px;
-            background-color: var(--bs-primary);
-            transition: width 0.1s ease;
-            box-shadow: 0 0 10px var(--bs-primary);
-        }
+        .loader-hidden { opacity: 0; visibility: hidden; pointer-events: none; }
+        .progress-bar-tech { height: 4px; background-color: var(--bs-primary); transition: width 0.1s ease; }
 
+        /* IMMERSIVE HEADER STYLES (Only injected if active) */
         <?php if ($isImmersive): ?>
-            /* IMMERSIVE MODE OVERRIDES */
+            header.transition-all {
+                transition: background-color 0.4s ease, box-shadow 0.4s ease, padding 0.4s ease;
+            }
             header.fixed-top {
                 background-color: transparent;
-                padding-top: 1rem;
-                padding-bottom: 1rem;
+                padding-top: 1rem; padding-bottom: 1rem;
             }
-            
             header.fixed-top.scrolled {
-                /* Force background color when scrolled */
                 background-color: var(--bs-body-bg, #000) !important;
-                padding-top: 0.5rem;
-                padding-bottom: 0.5rem;
+                padding-top: 0.5rem; padding-bottom: 0.5rem;
                 box-shadow: 0 4px 12px rgba(0,0,0,0.3);
                 border-bottom: 1px solid var(--bs-border-color);
             }
-
-            /* Text Legibility */
+            /* Text Color Overrides for Dark Heroes */
             header.fixed-top:not(.scrolled) .navbar-brand,
             header.fixed-top:not(.scrolled) .nav-link {
                 text-shadow: 0 2px 4px rgba(0,0,0,0.8);
                 color: #fff !important; 
             }
-            
-            header.fixed-top:not(.scrolled) .navbar-toggler {
-                border-color: rgba(255,255,255,0.5);
-            }
-            header.fixed-top:not(.scrolled) .navbar-toggler-icon {
-                filter: invert(1) grayscale(100%) brightness(200%);
-            }
+            header.fixed-top:not(.scrolled) .navbar-toggler { border-color: rgba(255,255,255,0.5); }
+            header.fixed-top:not(.scrolled) .navbar-toggler-icon { filter: invert(1) grayscale(100%) brightness(200%); }
         <?php endif; ?>
     </style>
   </head>
@@ -182,13 +164,9 @@ if (!$isImmersive) {
         document.addEventListener("DOMContentLoaded", function() {
             const header = document.getElementById("main-header");
             const threshold = 50; 
-
             function checkScroll() {
-                if (window.scrollY > threshold) {
-                    header.classList.add("scrolled");
-                } else {
-                    header.classList.remove("scrolled");
-                }
+                if (window.scrollY > threshold) { header.classList.add("scrolled"); } 
+                else { header.classList.remove("scrolled"); }
             }
             checkScroll();
             window.addEventListener("scroll", checkScroll);
@@ -201,20 +179,14 @@ if (!$isImmersive) {
             const loader = document.getElementById('page-loader');
             const bar = document.getElementById('loader-bar');
             const text = document.getElementById('loader-text');
-            let progress = 0; 
-            let progressInterval;
+            let progress = 0; let progressInterval;
 
             function startHeartbeat() {
                 if (progressInterval) clearInterval(progressInterval);
-                progress = 10; 
-                if(bar) bar.style.width = '10%';
-                
+                progress = 10; if(bar) bar.style.width = '10%';
                 progressInterval = setInterval(() => {
-                    let step = (95 - progress) / 80; 
-                    if (step < 0.1) step = 0.1; 
-                    progress += step; 
-                    if (progress > 95) progress = 95; 
-                    
+                    let step = (95 - progress) / 80; if (step < 0.1) step = 0.1; 
+                    progress += step; if (progress > 95) progress = 95; 
                     if(bar) bar.style.width = progress + '%';
                     if(text) {
                         if (progress < 30) text.innerText = "> ESTABLISHING UPLINK...";
@@ -227,8 +199,7 @@ if (!$isImmersive) {
 
             document.addEventListener('readystatechange', () => {
                 if (document.readyState === 'interactive') {
-                    progress = 75; 
-                    if(bar) bar.style.width = '75%';
+                    progress = 75; if(bar) bar.style.width = '75%';
                     if(text) text.innerText = "> ASSEMBLING LAYOUT...";
                 }
             });
@@ -243,7 +214,6 @@ if (!$isImmersive) {
             startHeartbeat(); 
             window.addEventListener('load', finishLoad);
             
-            // Simulates loading when clicking internal links
             document.addEventListener('click', (e) => {
                 const link = e.target.closest('a');
                 if (!link) return;
@@ -257,8 +227,7 @@ if (!$isImmersive) {
 
                 if(loader) {
                     text.innerText = "> NAVIGATING...";
-                    bar.style.width = '0%'; 
-                    loader.classList.remove('loader-hidden');
+                    bar.style.width = '0%'; loader.classList.remove('loader-hidden');
                     startHeartbeat(); 
                 }
             });
