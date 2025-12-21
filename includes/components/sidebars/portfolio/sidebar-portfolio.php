@@ -12,11 +12,7 @@
 <hr class="my-3">
 
 <nav class="nav flex-column nav-pills small gap-1">
-    <a href="/about/michael-ragsdale" class="nav-link link-body-emphasis">
-        <i class="fa-duotone fa-house me-2" style="width: 20px;"></i> Overview
-    </a>
-    
-    <a href="/about/michael-ragsdale/resume" class="nav-link <?php echo ($request_uri === '/about/michael-ragsdale/resume') ? 'active' : 'link-body-emphasis'; ?>">
+     <a href="/about/michael-ragsdale/resume" class="nav-link <?php echo ($request_uri === '/about/michael-ragsdale/resume') ? 'active' : 'link-body-emphasis'; ?>">
         <i class="fa-duotone fa-file-user me-2" style="width: 20px;"></i> The Resume
     </a>
     
@@ -31,20 +27,9 @@
     <a href="/portfolio" class="nav-link <?php echo (str_starts_with($request_uri, '/portfolio')) ? 'active' : 'link-body-emphasis'; ?>">
         <i class="fa-duotone fa-code-branch me-2" style="width: 20px;"></i> Projects
     </a>
-</nav>
 
-<hr class="my-4">
-
-<h6 class="sidebar-heading d-flex justify-content-between align-items-center px-2 mb-2 text-body-secondary text-uppercase" style="font-size: 0.75rem; letter-spacing: 1px;">
-  <span>Connect</span>
-</h6>
-
-<nav class="nav flex-column nav-pills small gap-1">
-    <a href="https://github.com/raggiesoft" class="nav-link link-body-emphasis" target="_blank">
-        <i class="fa-brands fa-github me-2" style="width: 20px;"></i> GitHub
-    </a>
-    <a href="https://linkedin.com/in/michael-ragsdale-raggiesoft" class="nav-link link-body-emphasis" target="_blank">
-        <i class="fa-brands fa-linkedin me-2" style="width: 20px;"></i> LinkedIn
+    <a href="/about/michael-ragsdale/contact" class="nav-link <?php echo ($request_uri === '/about/michael-ragsdale/contact') ? 'active' : 'link-body-emphasis'; ?>">
+        <i class="fa-duotone fa-envelope me-2" style="width: 20px;"></i> Contact
     </a>
 </nav>
 
