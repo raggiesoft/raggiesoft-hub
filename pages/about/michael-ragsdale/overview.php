@@ -72,12 +72,12 @@ global $cdn_root;
             <div class="col-md-6">
                 <a href="/about/michael-ragsdale/contact" class="card h-100 text-decoration-none shadow-sm hover-lift border-0 bg-body-tertiary">
                     <div class="card-body text-center p-5">
-                        <div class="text-danger mb-3"><i class="fa-duotone fa-clipboard-check fa-3x"></i></div>
-                        <h3 class="h4 fw-bold text-body-emphasis">Hiring Inquiries</h3>
+                        <div class="text-danger mb-3"><i class="fa-duotone fa-calendar-check fa-3x"></i></div>
+                        <h3 class="h4 fw-bold text-body-emphasis">Schedule Interview</h3>
                         <p class="text-secondary small">
-                            Ready to discuss a role? Complete a quick pre-screening check to access my contact info.
+                            Ready to discuss a role? Complete a quick pre-screening check to access my <strong>Microsoft Bookings</strong> calendar.
                         </p>
-                        <span class="btn btn-outline-danger rounded-pill mt-2">Start Pre-Screening</span>
+                        <span class="btn btn-outline-danger rounded-pill mt-2">Open Scheduler</span>
                     </div>
                 </a>
             </div>
