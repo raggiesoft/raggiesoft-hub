@@ -38,5 +38,10 @@
     "view": "pages/about/michael-ragsdale/contact",
     "title": "Contact Information | Michael P. Ragsdale",
     "ogTitle": "Contact Information - Michael P. Ragsdale"
+  },
+  "/about/michael-ragsdale/education": {
+    "view": "pages/about/michael-ragsdale/education",
+    "title": "Education & Academics | Michael P. Ragsdale",
+    "ogTitle": "Education - Michael P. Ragsdale"
   }
 }

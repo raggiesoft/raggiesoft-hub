@@ -24,6 +24,9 @@ $root = '/about/michael-ragsdale';
     <a href="<?php echo $root; ?>/resume" class="nav-link link-body-emphasis">
         <i class="fa-duotone fa-file-user me-2"></i> Resume & Skills
     </a>
+    <a href="<?php echo $root; ?>/education" class="nav-link link-body-emphasis">
+        <i class="fa-duotone fa-graduation-cap me-2"></i> Education
+    </a>
     <a href="/portfolio" class="nav-link link-body-emphasis">
         <i class="fa-duotone fa-code-branch me-2"></i> Engineering Projects
     </a>

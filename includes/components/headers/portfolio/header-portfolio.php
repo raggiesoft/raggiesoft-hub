@@ -5,9 +5,9 @@
 $request_uri = $_SERVER['REQUEST_URI'] ?? '/';
 $isHub      = ($request_uri === '/about/michael-ragsdale');
 $isResume   = (str_starts_with($request_uri, '/about/michael-ragsdale/resume'));
+$isEducation = (str_starts_with($request_uri, '/about/michael-ragsdale/education'));
 $isLocation = (str_starts_with($request_uri, '/about/michael-ragsdale/location'));
 $isSalary   = (str_starts_with($request_uri, '/about/michael-ragsdale/salary'));
-$isProjects = (str_starts_with($request_uri, '/portfolio'));
 ?>
 
 <ul class="navbar-nav ms-auto mb-2 mb-md-0">
@@ -25,8 +25,8 @@ $isProjects = (str_starts_with($request_uri, '/portfolio'));
   </li>
 
   <li class="nav-item">
-    <a class="nav-link <?php echo $isProjects ? 'active' : ''; ?>" href="/portfolio">
-        <i class="fa-duotone fa-code-branch me-2"></i>Projects
+    <a class="nav-link <?php echo $isEducation ? 'active' : ''; ?>" href="/about/michael-ragsdale/education">
+        <i class="fa-duotone fa-graduation-cap me-2"></i>Education
     </a>
   </li>
 
