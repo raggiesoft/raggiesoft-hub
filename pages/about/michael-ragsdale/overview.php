@@ -9,7 +9,7 @@ global $cdn_root;
 <section class="py-5 text-center">
     <div class="container py-4">
         <div class="mb-4 position-relative d-inline-block">
-             <img src="<?php echo $cdn_root; ?>/raggiesoft-corporate/images/logo/raggiesoft-logo.png" 
+             <img src="<?php echo $cdn_root; ?>/common/images/mragsdale.jpg" 
                   alt="Michael P. Ragsdale" 
                   class="rounded-circle shadow-lg border border-4 border-white"
                   style="width: 180px; height: 180px; object-fit: cover;">
