@@ -4,7 +4,7 @@
             
             <div class="col-lg-4 col-md-6">
                 <a href="/" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
-                    <img src="https://assets.raggiesoft.com/common/images/logos/raggiesoft-logo.svg" 
+                    <img src="https://assets.raggiesoft.com/raggiesoft-corp/logos/raggiesoft-logo.png" 
                          alt="RaggieSoft Logo" width="40" height="40" class="me-2 navbar-brand-raggiesoft">
                     <span class="fs-5 fw-bold text-uppercase brand-font">RaggieSoft</span>
                 </a>
@@ -29,9 +29,9 @@
             <div class="col-lg-2 col-md-6">
                 <h6 class="fw-bold mb-3">Built With</h6>
                 <ul class="nav flex-column small">
-                    <li class="nav-item mb-2"><span class="nav-link p-0 text-body-secondary">PHP 8.2</span></li>
+                    <li class="nav-item mb-2"><span class="nav-link p-0 text-body-secondary">PHP 8.4</span></li>
                     <li class="nav-item mb-2"><span class="nav-link p-0 text-body-secondary">Bootstrap 5.3</span></li>
-                    <li class="nav-item mb-2"><span class="nav-link p-0 text-body-secondary">FontAwesome 6 Pro</span></li>
+                    <li class="nav-item mb-2"><span class="nav-link p-0 text-body-secondary">FontAwesome 7 Pro</span></li>
                 </ul>
             </div>
 
@@ -39,7 +39,7 @@
                 <h6 class="fw-bold mb-3">Connect</h6>
                 <div class="d-flex justify-content-md-end gap-3">
                     <a href="https://github.com/raggiesoft" class="link-secondary fs-5" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
-                    <a href="https://linkedin.com/in/michaelpragsdale" class="link-secondary fs-5" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://linkedin.com/in/michael-ragsdale-raggiesoft" class="link-secondary fs-5" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
                     <a href="mailto:contact@raggiesoft.com" class="link-secondary fs-5" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
                 </div>
             </div>
