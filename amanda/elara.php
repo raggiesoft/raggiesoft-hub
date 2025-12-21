@@ -41,24 +41,37 @@ $defaults = array_merge($settings['defaults'], [
     'navbarBrandLogo' => $cdnBaseUrl . ($settings['defaults']['navbarBrandLogo'] ?? '')
 ]);
 
-// --- 2. ROUTE DISCOVERY ---
-$routes = [];
-$routeDirectory = ROOT_PATH . '/data/routes';
+// --- 2. LOAD & MERGE ROUTE FILES ---
+// Scans the /data/routes directory for JSON files and builds the master routing table.
+$routeFiles = glob(ROOT_PATH . '/data/routes/*.json');
+$masterRoutes = [];
 
-if (is_dir($routeDirectory)) {
-    $directoryIterator = new RecursiveDirectoryIterator($routeDirectory, RecursiveDirectoryIterator::SKIP_DOTS);
-    $iterator = new RecursiveIteratorIterator($directoryIterator);
-    
-    foreach ($iterator as $file) {
-        if ($file->isFile() && strtolower($file->getExtension()) === 'json') {
-            $jsonContent = file_get_contents($file->getPathname());
-            $routeData = json_decode($jsonContent, true);
-            if (json_last_error() === JSON_ERROR_NONE && is_array($routeData)) {
-                foreach ($routeData as $path => $config) {
-                    $routes[$path] = $config;
-                }
+foreach ($routeFiles as $file) {
+    // 1. Read the raw JSON
+    $jsonContent = file_get_contents($file);
+    $fileData = json_decode($jsonContent, true);
+
+    if (is_array($fileData)) {
+        
+        // --- 2A. INHERITANCE LOGIC (The "DRY" Fix) ---
+        // Check if this specific file has a "common" definition block
+        if (isset($fileData['common'])) {
+            $commonConfig = $fileData['common'];
+            
+            // Remove 'common' so it doesn't become a valid URL route itself
+            unset($fileData['common']);
+
+            // Iterate through the remaining routes in THIS file
+            foreach ($fileData as $routeKey => $routeConfig) {
+                // MERGE: Specific settings ($routeConfig) overwrite Common settings ($commonConfig)
+                // This allows individual pages to have unique titles/images while sharing the rest.
+                $fileData[$routeKey] = array_merge($commonConfig, $routeConfig);
             }
         }
+        // ---------------------------------------------
+
+        // 3. Add the processed routes to the Master Table
+        $masterRoutes = array_merge($masterRoutes, $fileData);
     }
 }
 
