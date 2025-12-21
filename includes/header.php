@@ -1,239 +1,268 @@
 <?php
 // includes/header.php
-// v10.0 - "Safe Mode" Separation
-// Standard: Static Block (Pushes content down).
-// Immersive: Fixed Overlay (Floats on top).
+// v7.1 - RaggieSoft Production
+// Updated: Added Playfair Display (Trust) & Black Ops One (Stamps)
 
-// --- 1. CONTEXT & CONFIGURATION ---
+// 1. Resolve Context
 $site  = $currentSite ?? 'raggiesoft';
 $theme = $currentPageTheme ?? $site;
+
+// Ensure CDN Root exists
 $cdn_root = $cdnBaseUrl ?? 'https://assets.raggiesoft.com'; 
 
-// Route Overrides
-if (isset($pageConfig['siteName'])) {
-    $settings['siteName'] = $pageConfig['siteName'];
-}
-$project_slug = $pageConfig['project-slug'] ?? $site;
-
-// Theme Reset
+// Theme Reset Logic
 if ($site !== 'raggiesoft' && $theme === 'raggiesoft') {
     $theme = $site;
 }
 
-// Dark Mode
-$force_dark_mode = ($theme === 'dark' || $theme === 'ad-astra' || str_contains($theme, 'gloom') || str_contains($theme, 'night'));
+$force_dark_mode = ($theme === 'dark' || $theme === 'ad-astra');
 
-// Fonts
+// --- 2. BRAND FONT LOGIC ---
 $font_stack = $pageConfig['brandFont'] ?? $settings['brandFont'] ?? ['sans-serif'];
-$brand_font_family = implode(', ', $font_stack);
+if (!is_array($font_stack) || empty($font_stack)) { $font_stack = ['sans-serif']; }
 
-// --- 2. IMMERSIVE MODE LOGIC ---
-// Default is FALSE. Only becomes true if JSON explicitly says "transparentHeader": true
-$isImmersive = $pageConfig['transparentHeader'] ?? false;
+$css_font_parts = array_map(function($font) {
+    $generics = ['serif', 'sans-serif', 'monospace', 'cursive', 'fantasy', 'system-ui'];
+    return in_array(strtolower($font), $generics) ? $font : "'$font'";
+}, $font_stack);
 
-if ($isImmersive) {
-    // MODE A: IMMERSIVE (Movie Poster)
-    // Fixed: Floats ON TOP of content.
-    // Transparent: No background initially.
-    $navWrapperClass = 'fixed-top transition-all'; 
-    $navBaseClass    = "navbar navbar-expand-lg navbar-dark"; 
+$brand_font_css = implode(', ', $css_font_parts);
+
+// 3. Path Definitions
+$path_bootstrap = $cdn_root . "/common/css/bootstrap.css";
+
+if ($theme === 'corporate' || $theme === $site || $theme === 'light') {
+    $path_theme_base = $cdn_root . "/{$site}/css/bootstrap";
 } else {
-    // MODE B: STANDARD (Corporate/Regular)
-    // Relative: Sits IN FLOW of document (Pushes content down).
-    // Bg-Body: Has a solid background color.
-    $navWrapperClass = 'position-relative'; 
-    $navBaseClass    = "navbar navbar-expand-lg bg-body border-bottom border-secondary border-opacity-25";
+    $path_theme_base = $cdn_root . "/{$site}/css/bootstrap/{$theme}";
+}
+
+// 4. Build CSS Queue
+$css_load_queue = [
+    $path_bootstrap,                    
+    $path_theme_base . '/root.css',     
+    $path_theme_base . '/extras.css',   
+    $path_theme_base . '/header.css',   
+    $path_theme_base . '/footer.css',   
+    $path_theme_base . '/safety-net.css'
+];
+
+// 5. Critical Images
+$critical_images = [ $navbarBrandLogo ?? '' ];
+if (isset($customPageAssets) && is_array($customPageAssets)) {
+    $critical_images = array_merge($critical_images, $customPageAssets);
 }
 ?>
-
 <!doctype html>
-<html lang="en" data-bs-theme="<?php echo $force_dark_mode ? 'dark' : 'light'; ?>">
+<html lang="en" class="h-100" <?php echo $force_dark_mode ? 'data-bs-theme="dark"' : ''; ?>>
   <head>
+    
+    <?php 
+    if (
+        isset($settings['analytics']['enabled']) && 
+        $settings['analytics']['enabled'] === true &&
+        !empty($settings['analytics']['trackingId'])
+    ): 
+    ?>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=<?php echo htmlspecialchars($settings['analytics']['trackingId']); ?>"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', '<?php echo htmlspecialchars($settings['analytics']['trackingId']); ?>');
+        </script>
+    <?php endif; ?>
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
     <title><?php echo htmlspecialchars($pageTitle ?? 'RaggieSoft'); ?></title>
-
+    <meta name="description" content="<?php echo htmlspecialchars($ogDescription ?? ''); ?>">
+    
     <meta property="og:title" content="<?php echo htmlspecialchars($ogTitle ?? $pageTitle); ?>">
     <meta property="og:description" content="<?php echo htmlspecialchars($ogDescription ?? ''); ?>">
     <meta property="og:image" content="<?php echo htmlspecialchars($ogImage ?? ''); ?>">
-    <meta property="og:url" content="<?php echo htmlspecialchars($ogUrl ?? ''); ?>">
-    <meta property="og:type" content="website">
+    <meta property="og:url" content="<?php echo htmlspecialchars($ogUrl ?? "https://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]"); ?>">
 
-    <link href="<?php echo $cdn_root; ?>/common/css/bootstrap.css" rel="stylesheet">
-    
-    <?php
-    $cssPath = "/{$project_slug}/css/bootstrap/";
-    if ($force_dark_mode && $theme !== 'dark') {
-        $cssPath .= "{$theme}/"; 
-    }
-    
-    $css_files = ['root.css', 'header.css', 'footer.css', 'extras.css', 'safety-net.css'];
-    foreach ($css_files as $css) {
-        echo '<link href="' . $cdn_root . $cssPath . $css . '?v=' . time() . '" rel="stylesheet">' . "\n";
-    }
-    ?>
+    <?php foreach ($css_load_queue as $cssUrl): ?>
+        <link href="<?php echo $cssUrl . '?v=' . time(); ?>" rel="stylesheet">
+    <?php endforeach; ?>
 
+    <script src="https://kit.fontawesome.com/ec060982d4.js" crossorigin="anonymous"></script>
+
+    <?php foreach ($critical_images as $imgUrl): ?>
+        <?php if($imgUrl): ?><link rel="preload" as="image" href="<?php echo $imgUrl; ?>"><?php endif; ?>
+    <?php endforeach; ?>
+    
+    <link rel="icon" type="image/png" href="<?php echo $cdn_root; ?>/common/images/favicons/favicon-32x32.png">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> 
+    
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mrs+Saint+Delafield&display=swap" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+
+    <script type="module">
+        import hotwiredTurbo from 'https://cdn.skypack.dev/@hotwired/turbo';
+    </script>
+    
     <style>
-        :root { --bs-body-font-family: <?php echo $brand_font_family; ?>; }
-        .brand-font { font-family: <?php echo $brand_font_family; ?> !important; }
-
-        /* LOADER CSS */
+        .brand-font { font-family: <?php echo $brand_font_css; ?> !important; }
+        
         #page-loader {
             position: fixed; top: 0; left: 0; width: 100%; height: 100%;
-            background-color: var(--bs-body-bg); z-index: 9999;
-            display: flex; flex-direction: column; justify-content: center; align-items: center;
-            transition: opacity 0.5s ease, visibility 0.5s ease;
+            background-color: var(--bs-body-bg); color: var(--bs-body-color);
+            z-index: 99999; display: flex; flex-direction: column; justify-content: center; align-items: center;
+            opacity: 1; visibility: visible; transition: opacity 0.5s ease-in-out, visibility 0s 0s;
         }
-        .loader-hidden { opacity: 0; visibility: hidden; pointer-events: none; }
-        .progress-bar-tech { height: 4px; background-color: var(--bs-primary); transition: width 0.1s ease; }
-
-        /* IMMERSIVE HEADER STYLES (Only injected if active) */
-        <?php if ($isImmersive): ?>
-            header.transition-all {
-                transition: background-color 0.4s ease, box-shadow 0.4s ease, padding 0.4s ease;
-            }
-            header.fixed-top {
-                background-color: transparent;
-                padding-top: 1rem; padding-bottom: 1rem;
-            }
-            header.fixed-top.scrolled {
-                background-color: var(--bs-body-bg, #000) !important;
-                padding-top: 0.5rem; padding-bottom: 0.5rem;
-                box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-                border-bottom: 1px solid var(--bs-border-color);
-            }
-            /* Text Color Overrides for Dark Heroes */
-            header.fixed-top:not(.scrolled) .navbar-brand,
-            header.fixed-top:not(.scrolled) .nav-link {
-                text-shadow: 0 2px 4px rgba(0,0,0,0.8);
-                color: #fff !important; 
-            }
-            header.fixed-top:not(.scrolled) .navbar-toggler { border-color: rgba(255,255,255,0.5); }
-            header.fixed-top:not(.scrolled) .navbar-toggler-icon { filter: invert(1) grayscale(100%) brightness(200%); }
-        <?php endif; ?>
+        #page-loader.loader-hidden {
+            opacity: 0; visibility: hidden; transition: opacity 0.5s ease-in-out, visibility 0s 0.5s;
+        }
+        .loader-progress-container {
+            width: 300px; height: 4px; margin-top: 20px; position: relative; overflow: hidden;
+            background-color: rgba(var(--bs-secondary-rgb), 0.2); 
+        }
+        .loader-progress-bar {
+            height: 100%; width: 0%; transition: width 0.2s ease;
+            background-color: var(--bs-primary); box-shadow: 0 0 10px var(--bs-primary);
+        }
+        
+        /* Logo Filters */
+        .navbar-brand-corporate-img { mix-blend-mode: multiply; }
+        [data-bs-theme="dark"] .navbar-brand-corporate-img {
+            filter: invert(1) grayscale(100%); mix-blend-mode: screen;
+        }
     </style>
+
+    <script>
+    (function() {
+        const getPreferredTheme = () => {
+            const storedTheme = localStorage.getItem('theme');
+            if (storedTheme) return storedTheme;
+            return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        };
+        const setTheme = theme => document.documentElement.setAttribute('data-bs-theme', theme);
+        setTheme(getPreferredTheme());
+        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => {
+            const storedTheme = localStorage.getItem('theme');
+            if (storedTheme !== 'light' && storedTheme !== 'dark') setTheme(getPreferredTheme());
+        });
+    })();
+    </script>
   </head>
   
-  <body class="d-flex flex-column min-vh-100">
-      
-      <div id="page-loader">
-          <div class="text-center" style="width: 300px;">
-              <div id="loader-text" class="font-monospace small mb-2 text-uppercase text-secondary">> INITIALIZING...</div>
-              <div class="progress" style="height: 4px; background-color: rgba(127,127,127,0.2);">
-                  <div id="loader-bar" class="progress-bar-tech" style="width: 0%"></div>
-              </div>
-          </div>
-      </div>
+  <body class="d-flex flex-column h-100">
+    
+    <div id="page-loader">
+        <div class="spinner-border text-primary mb-3" role="status" style="width: 3rem; height: 3rem;">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+        <h4 class="text-uppercase fw-bold brand-font" style="letter-spacing: 2px;">
+            <?php echo htmlspecialchars($settings['siteName'] ?? 'Loading'); ?>
+        </h4>
+        <div class="loader-progress-container">
+            <div class="loader-progress-bar" id="loader-bar"></div>
+        </div>
+        <div class="text-secondary font-monospace small mt-2" id="loader-text">> INITIALIZING...</div>
+    </div>
+    
+    <script>
+    (function() {
+        const loader = document.getElementById('page-loader');
+        const bar = document.getElementById('loader-bar');
+        const text = document.getElementById('loader-text');
+        let progress = 0; let progressInterval;
 
-      <header id="main-header" class="<?php echo $navWrapperClass; ?>">
-          <nav class="<?php echo $navBaseClass; ?>">
-            <div class="container-fluid">
-              
-              <a class="navbar-brand d-flex align-items-center" href="<?php echo htmlspecialchars($navbarBrandLink ?? '/'); ?>">
-                <?php if (!empty($navbarBrandLogo)): ?>
-                <img src="<?php echo htmlspecialchars($navbarBrandLogo); ?>" 
-                     alt="<?php echo htmlspecialchars($navbarBrandAlt ?? 'Logo'); ?>" 
-                     height="30" 
-                     class="me-2 d-inline-block align-text-top <?php echo htmlspecialchars($navbarBrandClass ?? ''); ?>">
-                <?php endif; ?>
-                <span class="fw-bold text-uppercase brand-font">
-                  <?php echo strip_tags($navbarBrandText ?? $settings['siteName'] ?? 'Elara Site', '<span>'); ?>
-                </span>
-              </a>
-              
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              
-              <div class="collapse navbar-collapse" id="navbarCollapse">
-                <?php 
-                    if (isset($currentHeaderMenu) && file_exists($currentHeaderMenu)) {
-                        include $currentHeaderMenu;
-                    } else {
-                        include ROOT_PATH . '/includes/components/headers/header-default.php';
-                    }
-                ?>
-              </div>
-            </div>
-          </nav>
-      </header>
+        function startHeartbeat() {
+            if (progressInterval) clearInterval(progressInterval);
+            progress = 10; if(bar) bar.style.width = '10%';
+            progressInterval = setInterval(() => {
+                let step = (95 - progress) / 80; if (step < 0.1) step = 0.1; 
+                progress += step; if (progress > 95) progress = 95; 
+                if(bar) bar.style.width = progress + '%';
+                if(text) {
+                    if (progress < 30) text.innerText = "> ESTABLISHING UPLINK...";
+                    else if (progress < 50) text.innerText = "> RECEIVING DATA...";
+                    else if (progress < 70) text.innerText = "> ALLOCATING MEMORY...";
+                    else text.innerText = "> PROCESSING...";
+                }
+            }, 50);
+        }
 
-      <?php if ($isImmersive): ?>
-      <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            const header = document.getElementById("main-header");
-            const threshold = 50; 
-            function checkScroll() {
-                if (window.scrollY > threshold) { header.classList.add("scrolled"); } 
-                else { header.classList.remove("scrolled"); }
+        document.addEventListener('readystatechange', () => {
+            if (document.readyState === 'interactive') {
+                progress = 75; if(bar) bar.style.width = '75%';
+                if(text) text.innerText = "> ASSEMBLING LAYOUT...";
             }
-            checkScroll();
-            window.addEventListener("scroll", checkScroll);
         });
-      </script>
-      <?php endif; ?>
 
-      <script>
-        (function() {
-            const loader = document.getElementById('page-loader');
-            const bar = document.getElementById('loader-bar');
-            const text = document.getElementById('loader-text');
-            let progress = 0; let progressInterval;
+        function finishLoad() {
+            if (progressInterval) clearInterval(progressInterval);
+            if(bar) bar.style.width = '100%';
+            if(text) text.innerText = "> SYSTEM READY.";
+            setTimeout(() => { if(loader) loader.classList.add('loader-hidden'); }, 500);
+        }
 
-            function startHeartbeat() {
-                if (progressInterval) clearInterval(progressInterval);
-                progress = 10; if(bar) bar.style.width = '10%';
-                progressInterval = setInterval(() => {
-                    let step = (95 - progress) / 80; if (step < 0.1) step = 0.1; 
-                    progress += step; if (progress > 95) progress = 95; 
-                    if(bar) bar.style.width = progress + '%';
-                    if(text) {
-                        if (progress < 30) text.innerText = "> ESTABLISHING UPLINK...";
-                        else if (progress < 50) text.innerText = "> RECEIVING DATA...";
-                        else if (progress < 70) text.innerText = "> ALLOCATING MEMORY...";
-                        else text.innerText = "> PROCESSING...";
-                    }
-                }, 50);
+        startHeartbeat(); 
+        window.addEventListener('load', finishLoad);
+        
+        document.addEventListener('click', (e) => {
+            const link = e.target.closest('a');
+            if (!link) return;
+            const href = link.getAttribute('href');
+            const target = link.getAttribute('target');
+            if (link.classList.contains('dropdown-toggle') || link.getAttribute('role') === 'button') return;
+            if (!href || href === '#' || href.startsWith('#')) return;
+            if (target === '_blank') return;
+            if (link.href && link.href.indexOf(window.location.hostname) === -1) return;
+            if (link.hasAttribute('download')) return;
+
+            if(loader) {
+                text.innerText = "> NAVIGATING...";
+                bar.style.width = '0%'; loader.classList.remove('loader-hidden');
+                startHeartbeat(); 
             }
+        });
 
-            document.addEventListener('readystatechange', () => {
-                if (document.readyState === 'interactive') {
-                    progress = 75; if(bar) bar.style.width = '75%';
-                    if(text) text.innerText = "> ASSEMBLING LAYOUT...";
+        window.addEventListener('pageshow', (event) => {
+            if (event.persisted && loader) loader.classList.add('loader-hidden');
+        });
+    })();
+    </script>
+    
+    <header>
+      <nav class="navbar navbar-expand-md sticky-top border-bottom border-primary border-opacity-50 bg-body">
+        <div class="container-fluid">
+          
+          <a class="navbar-brand d-flex align-items-center" href="<?php echo htmlspecialchars($navbarBrandLink ?? '/'); ?>">
+            <?php if (!empty($navbarBrandLogo)): ?>
+            <img src="<?php echo htmlspecialchars($navbarBrandLogo); ?>" 
+                 alt="<?php echo htmlspecialchars($navbarBrandAlt ?? 'Logo'); ?>" 
+                 height="30" 
+                 class="me-2 d-inline-block align-text-top <?php echo htmlspecialchars($navbarBrandClass ?? ''); ?>">
+            <?php endif; ?>
+            <span class="fw-bold text-uppercase brand-font">
+              <?php echo strip_tags($navbarBrandText ?? $settings['siteName'] ?? 'Elara Site', '<span>'); ?>
+            </span>
+          </a>
+          
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <?php 
+                if (isset($currentHeaderMenu) && file_exists($currentHeaderMenu)) {
+                    include $currentHeaderMenu;
+                } else {
+                    include ROOT_PATH . '/includes/components/headers/header-default.php';
                 }
-            });
-
-            function finishLoad() {
-                if (progressInterval) clearInterval(progressInterval);
-                if(bar) bar.style.width = '100%';
-                if(text) text.innerText = "> SYSTEM READY.";
-                setTimeout(() => { if(loader) loader.classList.add('loader-hidden'); }, 500);
-            }
-
-            startHeartbeat(); 
-            window.addEventListener('load', finishLoad);
-            
-            document.addEventListener('click', (e) => {
-                const link = e.target.closest('a');
-                if (!link) return;
-                const href = link.getAttribute('href');
-                const target = link.getAttribute('target');
-                if (link.classList.contains('dropdown-toggle') || link.getAttribute('role') === 'button') return;
-                if (!href || href === '#' || href.startsWith('#')) return;
-                if (target === '_blank') return;
-                if (link.href && link.href.indexOf(window.location.hostname) === -1) return;
-                if (link.hasAttribute('download')) return;
-
-                if(loader) {
-                    text.innerText = "> NAVIGATING...";
-                    bar.style.width = '0%'; loader.classList.remove('loader-hidden');
-                    startHeartbeat(); 
-                }
-            });
-
-            window.addEventListener('pageshow', (event) => {
-                if (event.persisted && loader) loader.classList.add('loader-hidden');
-            });
-        })();
-      </script>
+            ?>
+          </div>
+        </div>
+      </nav>
+    </header>
