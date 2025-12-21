@@ -1,0 +1,41 @@
+{
+  "/about/michael-ragsdale": {
+    "view": "pages/about/michael-ragsdale/overview",
+    "title": "Michael P. Ragsdale | Digital Architect",
+    "ogTitle": "Michael P. Ragsdale - Digital Architect",
+    "ogDescription": "The digital hub for Michael P. Ragsdale. Systems Architect, Full-Stack Developer, and Accessibility Specialist.",
+    "brandFont": ["Roboto", "sans-serif"],
+    "sidebar": "sidebar-default",
+    "showSidebar": false,
+    "navbarBrandText": "Michael P. Ragsdale",
+    "navbarBrandLink": "/about/michael-ragsdale",
+    "navbarBrandLogo": "https://assets.raggiesoft.com/raggiesoft-corporate/images/logo/raggiesoft-logo.png",
+    "headerMenu": "header-portfolio",
+    "footer": "footer-portfolio"
+  },
+  "/about/michael-ragsdale/resume": {
+    "view": "pages/about/michael-ragsdale/resume",
+    "title": "Resume | Michael P. Ragsdale",
+    "ogTitle": "Resume - Michael P. Ragsdale",
+    "brandFont": ["Roboto", "sans-serif"],
+    "sidebar": "portfolio/sidebar-portfolio",
+    "showSidebar": true,
+    "navbarBrandText": "Michael P. Ragsdale",
+    "navbarBrandLink": "/about/michael-ragsdale",
+    "navbarBrandLogo": "https://assets.raggiesoft.com/raggiesoft-corporate/images/logo/raggiesoft-logo.png",
+    "headerMenu": "header-portfolio",
+    "footer": "footer-portfolio"
+  },
+  "/about/michael-ragsdale/location": {
+    "view": "pages/about/michael-ragsdale/location",
+    "title": "Location & Logistics | Michael P. Ragsdale",
+    "brandFont": ["Roboto", "sans-serif"],
+    "sidebar": "portfolio/sidebar-portfolio",
+    "showSidebar": true,
+    "navbarBrandText": "Michael P. Ragsdale",
+    "navbarBrandLink": "/about/michael-ragsdale",
+    "navbarBrandLogo": "https://assets.raggiesoft.com/raggiesoft-corporate/images/logo/raggiesoft-logo.png",
+    "headerMenu": "header-portfolio",
+    "footer": "footer-portfolio"
+  }
+}
