@@ -10,6 +10,7 @@
     "showSidebar": false,
     "navbarBrandText": "<span class=\"d-none d-md-inline\">The Silver Gauntlet of </span> Aethel",
     "navbarBrandLink": "/raggiesoft-books",
-    "navbarBrandLogo": "https://assets.raggiesoft.com/raggiesoft-corporate/images/logo/raggiesoft-logo.png"
+    "navbarBrandLogo": "https://assets.raggiesoft.com/raggiesoft-corporate/images/logo/raggiesoft-logo.png",
+    "brandFont": ["Cinzel", "serif"]
   }
 }
