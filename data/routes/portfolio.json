@@ -5,37 +5,54 @@
     "ogTitle": "Michael P. Ragsdale - Digital Architect",
     "ogDescription": "The digital hub for Michael P. Ragsdale. Systems Architect, Full-Stack Developer, and Accessibility Specialist.",
     "brandFont": ["Roboto", "sans-serif"],
-    "sidebar": "sidebar-default",
-    "showSidebar": false,
+    "headerMenu": "portfolio/header-portfolio",
     "navbarBrandText": "Michael P. Ragsdale",
     "navbarBrandLink": "/about/michael-ragsdale",
-    "navbarBrandLogo": "https://assets.raggiesoft.com/raggiesoft-corporate/images/logo/raggiesoft-logo.png",
-    "headerMenu": "header-portfolio",
-    "footer": "footer-portfolio"
+    "navbarBrandLogo": "https://assets.raggiesoft.com/raggiesoft-corporate/images/logo/raggiesoft-logo.png"
   },
   "/about/michael-ragsdale/resume": {
     "view": "pages/about/michael-ragsdale/resume",
     "title": "Resume | Michael P. Ragsdale",
     "ogTitle": "Resume - Michael P. Ragsdale",
     "brandFont": ["Roboto", "sans-serif"],
+    "headerMenu": "portfolio/header-portfolio",
     "sidebar": "portfolio/sidebar-portfolio",
     "showSidebar": true,
     "navbarBrandText": "Michael P. Ragsdale",
     "navbarBrandLink": "/about/michael-ragsdale",
-    "navbarBrandLogo": "https://assets.raggiesoft.com/raggiesoft-corporate/images/logo/raggiesoft-logo.png",
-    "headerMenu": "header-portfolio",
-    "footer": "footer-portfolio"
+    "navbarBrandLogo": "https://assets.raggiesoft.com/raggiesoft-corporate/images/logo/raggiesoft-logo.png"
   },
   "/about/michael-ragsdale/location": {
     "view": "pages/about/michael-ragsdale/location",
     "title": "Location & Logistics | Michael P. Ragsdale",
     "brandFont": ["Roboto", "sans-serif"],
+    "headerMenu": "portfolio/header-portfolio",
     "sidebar": "portfolio/sidebar-portfolio",
     "showSidebar": true,
     "navbarBrandText": "Michael P. Ragsdale",
     "navbarBrandLink": "/about/michael-ragsdale",
-    "navbarBrandLogo": "https://assets.raggiesoft.com/raggiesoft-corporate/images/logo/raggiesoft-logo.png",
-    "headerMenu": "header-portfolio",
-    "footer": "footer-portfolio"
+    "navbarBrandLogo": "https://assets.raggiesoft.com/raggiesoft-corporate/images/logo/raggiesoft-logo.png"
+  },
+  "/about/michael-ragsdale/salary": {
+    "view": "pages/about/michael-ragsdale/salary",
+    "title": "Salary Requirements | Michael P. Ragsdale",
+    "brandFont": ["Roboto", "sans-serif"],
+    "headerMenu": "portfolio/header-portfolio",
+    "sidebar": "portfolio/sidebar-portfolio",
+    "showSidebar": true,
+    "navbarBrandText": "Michael P. Ragsdale",
+    "navbarBrandLink": "/about/michael-ragsdale",
+    "navbarBrandLogo": "https://assets.raggiesoft.com/raggiesoft-corporate/images/logo/raggiesoft-logo.png"
+  },
+  "/portfolio": {
+    "view": "pages/portfolio/overview",
+    "title": "Engineering Projects | RaggieSoft Stack",
+    "ogTitle": "The RaggieSoft Stack - Engineering Portfolio",
+    "ogDescription": "Deep dive into Elara, Jessica, and the Stardust Engine. The technical portfolio of Michael P. Ragsdale.",
+    "brandFont": ["Roboto", "sans-serif"],
+    "headerMenu": "portfolio/header-portfolio",
+    "navbarBrandText": "Michael P. Ragsdale",
+    "navbarBrandLink": "/about/michael-ragsdale",
+    "navbarBrandLogo": "https://assets.raggiesoft.com/raggiesoft-corporate/images/logo/raggiesoft-logo.png"
   }
 }
