@@ -1,0 +1,15 @@
+{
+"/about/stardust-engine": {
+    "view": "pages/about/stardust-engine",
+    "title": "About The Stardust Engine | Project Overview",
+    "site": "stardust-engine",
+    "theme": "ad-astra",
+    "headerMenu": "portfolio/header-portfolio",
+    "sidebar": "portfolio/sidebar-portfolio",
+    "showSidebar": true,
+    "navbarBrandText": "<span class=\"d-none d-md-inline\">The </span>Stardust Engine",
+    "navbarBrandLink": "/about/michael-ragsdale",
+    "navbarBrandLogo": "https://assets.raggiesoft.com/stardust-engine/images/logo/stardust-logo.png",
+    "brandFont": ["Audiowide", "sans-serif"]
+  }
+}
