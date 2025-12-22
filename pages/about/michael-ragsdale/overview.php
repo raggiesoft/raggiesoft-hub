@@ -121,9 +121,9 @@ global $cdn_root;
                         <p class="card-text text-white opacity-75 mb-4">
                             My technical logic is balanced by creative exploration. From <em>The Stardust Engine</em> to <em>Veridia Prime</em>, I construct fictional universes that explore resilience and family.
                         </p>
-                        <a href="/fiction" class="btn btn-outline-light rounded-pill btn-sm stretched-link">
+                        <!--<a href="/fiction" class="btn btn-outline-light rounded-pill btn-sm stretched-link">
                             Explore the Library <i class="fa-solid fa-arrow-right ms-1"></i>
-                        </a>
+                        </a>-->
                     </div>
                 </div>
             </div>
