@@ -1,6 +1,8 @@
 ﻿using System;
 using System.IO;
-using System.Runtime.InteropServices;
+using System.Text.Json;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace RaggieSoft.Silas;
 
@@ -8,62 +10,128 @@ class Program
 {
     static void Main(string[] args)
     {
-        // 1. Establish Identity & Environment
-        // This proves to us that the .NET Runtime is talking to the underlying OS
         Console.ForegroundColor = ConsoleColor.Cyan;
-        Console.WriteLine("/// SILAS v1.0 // DATA GUARDIAN ///");
-        Console.WriteLine($"[SYSTEM] OS: {RuntimeInformation.OSDescription}");
-        Console.WriteLine($"[SYSTEM] Architecture: {RuntimeInformation.OSArchitecture}");
-        Console.WriteLine($"[SYSTEM] Framework: {RuntimeInformation.FrameworkDescription}");
+        Console.WriteLine("/// SILAS v2.0 // JSON INTEGRITY SENTINEL ///");
         Console.ResetColor();
-        Console.WriteLine(new string('-', 40));
+        Console.WriteLine(new string('-', 50));
 
-        // 2. Identify Location
-        // Where exactly are we executing from?
+        // 1. Locate the "Database" (The data/routes folder)
         string currentDir = Directory.GetCurrentDirectory();
-        Console.WriteLine($"[STATUS] Active in sector: {currentDir}");
 
-        // 3. Environmental Scan (Looking for the PHP .env file)
-        // We assume Silas is running from /var/www/raggiesoft-hub/_sysops/Silas/bin/Release/net10.0/
-        // So we need to traverse UP to find the root .env file.
+        // Logic to find the root depending on where we run from (Debug vs Release vs Linux Prod)
+        string rootDir = FindRootDirectory(currentDir);
 
-        string[] potentialPaths = {
-            Path.Combine(currentDir, "../../../../../.env"), // Production (Deep in bin/release)
-            Path.Combine(currentDir, "../../../.env"),       // Dev/Debug (Shallow)
-            Path.Combine(currentDir, ".env")                 // Fallback (Same folder)
-        };
-
-        bool envFound = false;
-        foreach (var path in potentialPaths)
+        if (rootDir == null)
         {
-            // Path.GetFullPath resolves the "../.." into a readable string
-            string resolvedPath = Path.GetFullPath(path);
-
-            if (File.Exists(resolvedPath))
-            {
-                Console.ForegroundColor = ConsoleColor.Green;
-                Console.WriteLine($"[ACCESS] Configuration detected at: {resolvedPath}");
-                Console.ResetColor();
-                envFound = true;
-                break;
-            }
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.WriteLine("[CRITICAL] Could not locate repository root. Aborting.");
+            return;
         }
 
-        if (!envFound)
+        string routesPath = Path.Combine(rootDir, "data", "routes");
+        string pagesPath = Path.Combine(rootDir, "pages"); // Where the PHP files live
+
+        Console.WriteLine($"[TARGET] Database Sector: {routesPath}");
+
+        if (!Directory.Exists(routesPath))
         {
-            Console.ForegroundColor = ConsoleColor.Yellow;
-            Console.WriteLine($"[ALERT] .env configuration not found. Operating in sterile mode.");
-            Console.ResetColor();
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.WriteLine($"[ERROR] Routes directory not found at: {routesPath}");
+            return;
         }
 
-        // 4. Command Handling
-        if (args.Length > 0)
+        // 2. Scan and Validate
+        string[] jsonFiles = Directory.GetFiles(routesPath, "*.json");
+        Console.WriteLine($"[SCAN] Found {jsonFiles.Length} data shards.");
+        Console.WriteLine("");
+
+        int totalErrors = 0;
+
+        foreach (var file in jsonFiles)
         {
-            Console.WriteLine($"[DIRECTIVE] Processing command: {args[0].ToUpper()}");
+            totalErrors += ValidateShard(file, pagesPath);
+        }
+
+        Console.WriteLine(new string('-', 50));
+        if (totalErrors == 0)
+        {
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.WriteLine("[STATUS] SYSTEM INTEGRITY: 100%");
+            Console.WriteLine(">> All routes valid. All views exist.");
         }
         else
         {
-            Console.WriteLine("[STANDBY] Awaiting directives. (Use --help for protocols)");
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.WriteLine($"[STATUS] SYSTEM INTEGRITY COMPROMISED: {totalErrors} anomalies detected.");
         }
+        Console.ResetColor();
+    }
+
+    static int ValidateShard(string filePath, string pagesRoot)
+    {
+        string fileName = Path.GetFileName(filePath);
+        int errors = 0;
+
+        try
+        {
+            string content = File.ReadAllText(filePath);
+
+            // Parse JSON to ensure syntax is valid
+            // We use Dictionary<string, JsonElement> because the structure is "Route" : { object }
+            var routes = JsonSerializer.Deserialize<Dictionary<string, JsonElement>>(content);
+
+            Console.Write($"[{fileName}] Syntax: ");
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.Write("OK");
+            Console.ResetColor();
+            Console.WriteLine($" | Records: {routes.Count}");
+
+            // Deep Scan: Check if the 'view' files actually exist
+            foreach (var route in routes)
+            {
+                if (route.Value.TryGetProperty("view", out JsonElement viewProp))
+                {
+                    string viewName = viewProp.GetString();
+                    string expectedPhp = Path.Combine(pagesRoot, viewName + ".php");
+
+                    // Handle "index" implication if needed, but let's stick to direct mapping first
+                    if (!File.Exists(expectedPhp))
+                    {
+                        Console.ForegroundColor = ConsoleColor.Yellow;
+                        Console.WriteLine($"    [MISSING LINK] Route '{route.Key}' points to missing file:");
+                        Console.WriteLine($"                   {expectedPhp}");
+                        Console.ResetColor();
+                        errors++;
+                    }
+                }
+            }
+        }
+        catch (JsonException ex)
+        {
+            Console.Write($"[{fileName}] Syntax: ");
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.WriteLine("CORRUPT");
+            Console.WriteLine($"    >> {ex.Message}");
+            Console.ResetColor();
+            errors++;
+        }
+
+        return errors;
+    }
+
+    static string FindRootDirectory(string startPath)
+    {
+        DirectoryInfo dir = new DirectoryInfo(startPath);
+        while (dir != null)
+        {
+            // We identify the root by the presence of the 'data' folder and 'pages' folder
+            if (Directory.Exists(Path.Combine(dir.FullName, "data")) &&
+                Directory.Exists(Path.Combine(dir.FullName, "pages")))
+            {
+                return dir.FullName;
+            }
+            dir = dir.Parent;
+        }
+        return null;
     }
 }
