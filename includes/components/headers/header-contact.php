@@ -35,6 +35,7 @@ $request_uri = $_SERVER['REQUEST_URI'] ?? '/';
   <li class="nav-item">
     <a class="nav-link" href="/about">
         <i class="fa-duotone fa-circle-info me-2" aria-hidden="true"></i>About 
+    </a>
   </li>
 
 </ul>
