@@ -9,35 +9,44 @@
     .resume-container {
         max-width: 8.5in;
         margin: 0 auto;
-        background: #fff;
-        color: #000;
+        /* UPDATED: Use Bootstrap variables for theme compatibility */
+        background: var(--bs-body-bg);
+        color: var(--bs-body-color);
         padding: 40px;
         box-shadow: 0 0 15px rgba(0,0,0,0.1);
+        border: 1px solid var(--bs-border-color); /* Adds definition in Dark Mode */
     }
 
-    .resume-header { border-bottom: 2px solid #000; padding-bottom: 15px; margin-bottom: 20px; }
+    /* Use body-color (black/white) for the main header underline to keep it bold */
+    .resume-header { border-bottom: 2px solid var(--bs-body-color); padding-bottom: 15px; margin-bottom: 20px; }
+    
     .resume-name { font-size: 2.5rem; font-weight: 700; line-height: 1; text-transform: uppercase; }
-    .resume-role { font-size: 1.1rem; color: #444; font-weight: 300; margin-top: 5px; }
+    
+    /* Use secondary-color for subtitle */
+    .resume-role { font-size: 1.1rem; color: var(--bs-secondary-color); font-weight: 300; margin-top: 5px; }
     
     .resume-section-title {
         font-size: 1.1rem;
         font-weight: 700;
         text-transform: uppercase;
-        border-bottom: 1px solid #ccc;
+        /* Use generic border color and primary theme color */
+        border-bottom: 1px solid var(--bs-border-color);
         margin-top: 25px;
         margin-bottom: 15px;
-        color: #0d6efd; /* Blue for screen */
+        color: var(--bs-primary); 
     }
 
     .job-header { display: flex; justify-content: space-between; align-items: baseline; }
     .company { font-weight: 700; font-size: 1.1rem; }
-    .job-title { font-style: italic; color: #333; }
-    .dates { font-family: 'JetBrains Mono', monospace; font-size: 0.9rem; color: #666; text-align: right; }
+    
+    .job-title { font-style: italic; color: var(--bs-body-color); opacity: 0.9; }
+    .dates { font-family: 'JetBrains Mono', monospace; font-size: 0.9rem; color: var(--bs-secondary-color); text-align: right; }
     
     .tech-tag {
         display: inline-block;
-        border: 1px solid #dee2e6;
-        background-color: #f8f9fa;
+        border: 1px solid var(--bs-border-color);
+        background-color: var(--bs-secondary-bg); /* Slight contrast background */
+        color: var(--bs-body-color);
         padding: 2px 6px;
         font-size: 0.85rem;
         border-radius: 4px;
@@ -56,9 +65,10 @@
             display: none !important; 
         }
         
-        /* RESET CONTAINER */
+        /* RESET CONTAINER - Force White/Black regardless of Dark Mode */
         body, main, .container, .container-fluid { 
-            background: #fff !important; 
+            background: #fff !important;
+            color: #000 !important; 
             margin: 0 !important; 
             padding: 0 !important; 
             width: 100% !important; 
@@ -72,10 +82,16 @@
             padding: 0 !important;
             margin: 0 !important;
             box-shadow: none !important;
+            border: none !important;
+            background: #fff !important;
+            color: #000 !important;
         }
 
-        /* FORCE BLACK TEXT */
+        /* FORCE BLACK TEXT & BORDERS */
         .resume-section-title { color: #000 !important; border-bottom: 1px solid #000 !important; }
+        .resume-header { border-bottom: 2px solid #000 !important; }
+        .resume-role, .job-title, .dates, .company { color: #000 !important; }
+        
         .tech-tag { border: 1px solid #aaa !important; background-color: transparent !important; color: #000 !important; }
         a { text-decoration: none !important; color: #000 !important; }
         
@@ -83,7 +99,7 @@
     }
 </style>
 
-<div class="container py-3 mb-4 border-bottom btn-print-controls">
+<div class="container py-3 mb-4 border-bottom border-secondary-subtle btn-print-controls">
     <div class="d-flex justify-content-between align-items-center">
         <a href="/about/michael-ragsdale" class="btn btn-outline-secondary btn-sm rounded-pill">
             <i class="fa-solid fa-arrow-left me-2"></i>Back to Hub
