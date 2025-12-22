@@ -76,7 +76,9 @@ $imagesJson = htmlspecialchars(json_encode($heroImages), ENT_QUOTES, 'UTF-8');
                         <ul class="list-unstyled small text-white-50 mb-0">
                             <li class="mb-1"><i class="fa-duotone fa-check text-primary me-2"></i>PHP 8.4 MVC Router (Elara)</li>
                             <li class="mb-1"><i class="fa-duotone fa-check text-primary me-2"></i>Suno AI (Audio Generation)</li>
-                            <li><i class="fa-duotone fa-check text-primary me-2"></i>Gemini (Lore & Code Assist)</li>
+                            <li class="mb-1"><i class="fa-duotone fa-check text-primary me-2"></i>Gemini (Lore & Code Assist)</li>
+                            <li class="mb-1"><i class="fa-duotone fa-check text-primary me-2"></i>DigitalOcean (Cloud Hosting)</li>
+                            <li><i class="fa-duotone fa-check text-primary me-2"></i>Cloudflare</li>
                         </ul>
                     </div>
                 </div>
