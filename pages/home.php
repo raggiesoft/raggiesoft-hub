@@ -83,7 +83,7 @@
             'imgAlt' => 'The Silver Gauntlet of Aethel',
             'fallbackText' => 'Aethel',
             'title' => 'The Silver Gauntlet of Aethel',
-            'description' => 'A love letter to 1980s fantasy adventure. Follow the journey of the Silver Gauntlet in a world of magic, danger, and retro nostalgia.',
+            'description' => 'A love letter to 1980s fantasy adventure. Follow the journey of twins Kaelan and Kaela in a world of magic, danger, and retro nostalgia.',
             'buttonProps' => [
               'href' => '/raggiesoft-books/aethel-saga',
               'text' => 'Read the Saga',
