@@ -83,8 +83,7 @@ global $cdn_root;
             </div>
 
         </div>
-    </div>
-    <div class="row mt-5">
+        <div class="row mt-5">
             <div class="col-12">
                 <h3 class="h6 text-uppercase text-secondary fw-bold mb-4 border-bottom pb-2">
                     <i class="fa-duotone fa-infinity me-2"></i>Beyond the Terminal
@@ -129,7 +128,9 @@ global $cdn_root;
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+    
+</section>
 
 <style>
 .hover-lift { transition: transform 0.2s ease, box-shadow 0.2s ease; }
