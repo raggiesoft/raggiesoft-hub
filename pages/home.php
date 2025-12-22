@@ -82,7 +82,7 @@
             'imgSrc' => 'https://assets.raggiesoft.com/aethel/images/logos/silver-gauntlet-of-aethel-logo.png', 
             'imgAlt' => 'The Silver Gauntlet of Aethel',
             'fallbackText' => 'Aethel',
-            'title' => 'The Aethel Saga',
+            'title' => 'The Silver Gauntlet of Aethel',
             'description' => 'A love letter to 1980s fantasy adventure. Follow the journey of the Silver Gauntlet in a world of magic, danger, and retro nostalgia.',
             'buttonProps' => [
               'href' => '/raggiesoft-books/aethel-saga',
