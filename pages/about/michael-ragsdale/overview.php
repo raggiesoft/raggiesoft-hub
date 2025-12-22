@@ -36,7 +36,7 @@ global $cdn_root;
                         <div class="text-primary mb-3"><i class="fa-duotone fa-file-user fa-3x"></i></div>
                         <h3 class="h4 fw-bold text-body-emphasis">The Resume</h3>
                         <p class="text-secondary small">
-                            A detailed timeline of my engineering experience, education, and technical certifications.
+                            A detailed record of my employment history, education, and technical certifications.
                         </p>
                         <span class="btn btn-outline-primary rounded-pill mt-2">View Resume</span>
                     </div>
@@ -57,14 +57,14 @@ global $cdn_root;
             </div>
 
              <div class="col-md-6">
-                <a href="/portfolio" class="card h-100 text-decoration-none shadow-sm hover-lift border-0 bg-body-tertiary">
+                <a href="/about/michael-ragsdale/profile" class="card h-100 text-decoration-none shadow-sm hover-lift border-0 bg-body-tertiary">
                     <div class="card-body text-center p-5">
-                        <div class="text-warning mb-3"><i class="fa-duotone fa-code-branch fa-3x"></i></div>
-                        <h3 class="h4 fw-bold text-body-emphasis">Engineering</h3>
+                        <div class="text-warning mb-3"><i class="fa-duotone fa-layer-group fa-3x"></i></div>
+                        <h3 class="h4 fw-bold text-body-emphasis">Professional Profile</h3>
                         <p class="text-secondary small">
-                            Deep dive into the RaggieSoft Stack: Elara, Jessica, and the Stardust Engine.
+                            A technical timeline of my evolution from legacy coding to modern cloud architecture.
                         </p>
-                        <span class="btn btn-outline-warning rounded-pill mt-2">View Projects</span>
+                        <span class="btn btn-outline-warning rounded-pill mt-2">View Skills & History</span>
                     </div>
                 </a>
             </div>
@@ -87,7 +87,6 @@ global $cdn_root;
 </section>
 
 <style>
-/* Simple hover effect for the cards */
 .hover-lift { transition: transform 0.2s ease, box-shadow 0.2s ease; }
 .hover-lift:hover { transform: translateY(-5px); box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important; }
 </style>

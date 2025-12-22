@@ -11,7 +11,8 @@
     "navbarBrandClass": "navbar-brand-raggiesoft",
     "siteName": "Michael P. Ragsdale",
     "ogDescription": "The digital hub for Michael P. Ragsdale. Systems Architect, Full-Stack Developer, and Accessibility Specialist.",
-    "ogImage": "https://assets.raggiesoft.com/common/images/mragsdale-social.jpg"
+    "ogImage": "https://assets.raggiesoft.com/common/images/mragsdale-social.jpg",
+    "site": "portfolio"
   },
   "/about/michael-ragsdale": {
     "view": "pages/about/michael-ragsdale/overview",
@@ -43,5 +44,10 @@
     "view": "pages/about/michael-ragsdale/education",
     "title": "Education & Academics | Michael P. Ragsdale",
     "ogTitle": "Education - Michael P. Ragsdale"
+  },
+  "/about/michael-ragsdale/profile": {
+    "view": "pages/about/michael-ragsdale/profile",
+    "title": "Professional Profile | Michael Ragsdale",
+    "ogTitle": "Professional Profile - Skills & History"
   }
 }

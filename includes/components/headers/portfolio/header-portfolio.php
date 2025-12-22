@@ -5,6 +5,7 @@
 $request_uri = $_SERVER['REQUEST_URI'] ?? '/';
 $isHub      = ($request_uri === '/about/michael-ragsdale');
 $isResume   = (str_starts_with($request_uri, '/about/michael-ragsdale/resume'));
+$isProfile  = (str_starts_with($request_uri, '/about/michael-ragsdale/profile')); // NEW
 $isEducation = (str_starts_with($request_uri, '/about/michael-ragsdale/education'));
 $isLocation = (str_starts_with($request_uri, '/about/michael-ragsdale/location'));
 $isSalary   = (str_starts_with($request_uri, '/about/michael-ragsdale/salary'));
@@ -15,6 +16,12 @@ $isSalary   = (str_starts_with($request_uri, '/about/michael-ragsdale/salary'));
   <li class="nav-item">
     <a class="nav-link <?php echo $isHub ? 'active' : ''; ?>" href="/about/michael-ragsdale">
         <i class="fa-duotone fa-house-user me-2"></i>Hub
+    </a>
+  </li>
+
+  <li class="nav-item">
+    <a class="nav-link <?php echo $isProfile ? 'active' : ''; ?>" href="/about/michael-ragsdale/profile">
+        <i class="fa-duotone fa-layer-group me-2"></i>Profile
     </a>
   </li>
 
