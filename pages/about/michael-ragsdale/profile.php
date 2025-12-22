@@ -20,7 +20,7 @@ $pageTitle = "Professional Profile | Michael Ragsdale";
 
     <div class="row mb-5">
         <div class="col-lg-10">
-            <p class="lead text-dark">
+            <p class="lead text-light">
                 I am a <strong>Systems Architect</strong> bridging the gap between legacy infrastructure and modern cloud reliability.
             </p>
             <p class="text-secondary">
