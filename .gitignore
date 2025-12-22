@@ -1,55 +1,56 @@
 # =================================================
-# 
-# RaggieSoft Assets - Git Ignore Rules
-# 
+# RAGGIESOFT HUB - GIT IGNORE PROTOCOLS
+# Context: PHP (Elara) + C# (Silas) + Web
 # =================================================
-# 
-# --- Audio Source Files ---
-# These are the master files used for transcoding.
 
-*.wav
-*.aiff
-*.flac
-*.alac
-*.dsd
-*.dff
-*.dsf
+# --- 1. SECURITY (CRITICAL) ---
+# Never commit environment variables, keys, or secrets.
+.env
+.env.local
+*.pem
+*.key
 
-# --- Generated Audio Files ---
-# These are the output files created by the transcoder script.
+# --- 2. C# / .NET (Silas) ---
+# Ignore build output (binaries) and intermediate files.
+# The pattern [Bb]in/ catches both "bin/" and "Bin/" case variations.
+_sysops/Silas/[Bb]in/
+_sysops/Silas/[Oo]bj/
 
-*.mp3
-*.ogg
-*.aac
-*.m4a
-*.wma
+# --- 3. PHP / COMPOSER ---
+# Ignore 3rd party libraries. We only commit composer.json/.lock
+vendor/
+composer.phar
 
-# --- Archives & Compressed Files ---
-# These are the large downloadable packages for users.
+# --- 4. WEB / JAVASCRIPT ---
+# If you use Node/NPM for frontend assets later
+node_modules/
+npm-debug.log
 
-*.7z
-*.zip
-*.tar.gz
-*.rar
-*.gz
+# --- 5. IDE & EDITOR SETTINGS ---
+# Personal preference files that shouldn't be shared.
+.idea/
+.vscode/
+*.swp
+*.suo
+*.user
+.vs/
 
-# --- Disc Image & Binary Data ---
-# These formats are often large and not needed in version control.
-
-*.iso
-*.bin
-*.cue
-*.img
-*.dmg
-
-# --- OS Generated Files ---
-
+# --- 6. OS GENERATED FILES ---
+# Garbage left by operating systems.
 .DS_Store
 Thumbs.db
 Desktop.ini
+ehthumbs.db
 
-# --- IDE / Editor Configs ---
-
-.vscode/
-.idea/
-*.swp
+# --- 7. LARGE MEDIA SAFEGUARDS ---
+# The Hub is for code. Media goes in raggiesoft-assets.
+# These rules prevent accidental commits of heavy files to the Code repo.
+*.zip
+*.tar.gz
+*.rar
+*.iso
+*.mp3
+*.wav
+*.flac
+*.mp4
+*.mov
