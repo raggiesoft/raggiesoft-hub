@@ -84,6 +84,51 @@ global $cdn_root;
 
         </div>
     </div>
+    <div class="row mt-5">
+            <div class="col-12">
+                <h3 class="h6 text-uppercase text-secondary fw-bold mb-4 border-bottom pb-2">
+                    <i class="fa-duotone fa-infinity me-2"></i>Beyond the Terminal
+                </h3>
+            </div>
+
+            <div class="col-lg-6 mb-4">
+                <div class="card h-100 border-0 shadow-sm bg-dark text-white overflow-hidden position-relative">
+                    <div class="card-body p-4 position-relative z-1">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="icon-box bg-white text-dark rounded-circle me-3 d-flex align-items-center justify-content-center" style="width:50px; height:50px;">
+                                <i class="fa-solid fa-terminal"></i>
+                            </div>
+                            <h4 class="h5 fw-bold mb-0">The Architecture</h4>
+                        </div>
+                        <p class="card-text text-light opacity-75 mb-4">
+                            This platform is not just a website; it is an ecosystem managed by <strong>Silas</strong>, my custom .NET 10 System Guardian. I build the tools that build the web.
+                        </p>
+                        <span class="badge border border-light rounded-pill px-3 py-2">
+                            <i class="fa-brands fa-microsoft me-2"></i>Powered by .NET & MAUI
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6 mb-4">
+                <div class="card h-100 border-0 shadow-sm bg-primary text-white overflow-hidden">
+                    <div class="card-body p-4">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="icon-box bg-white text-primary rounded-circle me-3 d-flex align-items-center justify-content-center" style="width:50px; height:50px;">
+                                <i class="fa-solid fa-book-sparkles"></i>
+                            </div>
+                            <h4 class="h5 fw-bold mb-0">The Narrative</h4>
+                        </div>
+                        <p class="card-text text-white opacity-75 mb-4">
+                            My technical logic is balanced by creative exploration. From <em>The Stardust Engine</em> to <em>Veridia Prime</em>, I construct fictional universes that explore resilience and family.
+                        </p>
+                        <a href="/fiction" class="btn btn-outline-light rounded-pill btn-sm stretched-link">
+                            Explore the Library <i class="fa-solid fa-arrow-right ms-1"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
 </section>
 
 <style>

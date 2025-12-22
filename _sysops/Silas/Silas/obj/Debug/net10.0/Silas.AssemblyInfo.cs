@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Silas")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+55b57c4614606ad6233855274759edd0b60e063f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0e4bc131b1c795fd3487d0652ea9702768851471")]
 [assembly: System.Reflection.AssemblyProductAttribute("Silas")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Silas")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
