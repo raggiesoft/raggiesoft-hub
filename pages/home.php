@@ -79,7 +79,7 @@
         <?php
           $props = [
             // Using album art as a stand-in for the book cover for now
-            'imgSrc' => 'https://assets.raggiesoft.com/engine-room-records/artists/silver-gauntlet-of-aethel/2017-the-aethel-saga/album-art.jpg', 
+            'imgSrc' => 'https://assets.raggiesoft.com/aethel/images/logos/silver-gauntlet-of-aethel-logo.png', 
             'imgAlt' => 'The Silver Gauntlet of Aethel',
             'fallbackText' => 'Aethel',
             'title' => 'The Aethel Saga',
