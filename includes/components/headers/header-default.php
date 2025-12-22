@@ -43,7 +43,7 @@ $isContact = ($request_uri === '/contact');
       
       <li><hr class="dropdown-divider"></li>
       <li><h6 class="dropdown-header text-uppercase">Literature</h6></li>
-      <li><a class="dropdown-item" href="/raggiesoft-books/aethel-saga"><i class="fa-duotone fa-sword me-2 text-warning"></i>The Aethel Saga</a></li>
+      <li><a class="dropdown-item" href="/raggiesoft-books/aethel-saga"><i class="fa-duotone fa-sword me-2 text-warning"></i>The Silver Gauntlet of Aethel</a></li>
       <li><a class="dropdown-item" href="/raggiesoft-books/knox"><i class="fa-duotone fa-leaf me-2 text-success"></i>Project: KNOX</a></li>
       
       <li><hr class="dropdown-divider"></li>
