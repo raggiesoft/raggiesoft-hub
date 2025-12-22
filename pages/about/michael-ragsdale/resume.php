@@ -2,11 +2,6 @@
 // pages/about/michael-ragsdale/resume-printable.php
 // Print-Optimized Resume View
 // Context: Integrated into Elara but overrides styles for printing.
-
-$pageConfig = [
-    'title' => 'Resume - Michael P. Ragsdale',
-    'showSidebar' => false // Disable sidebar to maximize width
-];
 ?>
 
 <style>
@@ -132,12 +127,12 @@ $pageConfig = [
         <div class="row g-2">
             <div class="col-md-3 fw-bold small">Languages & Scripting:</div>
             <div class="col-md-9">
+                <span class="tech-tag">C# / .NET 10</span>
                 <span class="tech-tag">PHP 8+</span>
                 <span class="tech-tag">JavaScript (ES6+)</span>
                 <span class="tech-tag">Bash / Shell</span>
                 <span class="tech-tag">HTML5</span>
                 <span class="tech-tag">CSS3 / SCSS</span>
-                <span class="tech-tag">Python</span>
             </div>
             
             <div class="col-md-3 fw-bold small">Infrastructure & Cloud:</div>
@@ -145,7 +140,7 @@ $pageConfig = [
                 <span class="tech-tag">DigitalOcean</span>
                 <span class="tech-tag">Nginx</span>
                 <span class="tech-tag">Cloudflare</span>
-                <span class="tech-tag">Certbot</span>
+                <span class="tech-tag">MAUI / WinUI 3</span>
                 <span class="tech-tag">Linux (Ubuntu/Debian)</span>
             </div>
 
@@ -172,6 +167,7 @@ $pageConfig = [
             <div class="job-title small mb-1">Founder & Systems Architect | Norfolk, VA</div>
             <ul class="resume-list">
                 <li><strong>Cloud Architecture (2025):</strong> Executed a complete infrastructure migration to a cloud-native DigitalOcean environment. Hardened security via custom Nginx server blocks, utilizing non-standard entry points and directory obfuscation to mitigate automated bot targeting. Implemented Cloudflare for edge-cached DNS and strict SSL encryption.</li>
+                <li><strong>Systems Engineering (2025):</strong> Engineered "Silas," a proprietary .NET 10 ecosystem comprising a server-side integrity guardian and a MAUI (WinUI 3) desktop architect. This tooling automates deployment verification and provides a strictly typed GUI for managing complex JSON data shards, eliminating manual syntax errors.</li>
                 <li><strong>Full-Stack Engineering (2022–Present):</strong> Architected "The Stardust Engine," a PHP-based CMS with a custom router ("Elara") and accessibility-focused frontend. Engineered <code>transcode-all.sh</code> to automate media processing pipelines using Bash and FFmpeg.</li>
                 <li><strong>Systems Administration (2008–2022):</strong> Managed domain lifecycles, DNS records, and web hosting environments for personal and client portfolios, maintaining 99.9% uptime across varying traffic loads.</li>
             </ul>
