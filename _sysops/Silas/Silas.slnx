@@ -1,6 +1,0 @@
-<Solution>
-  <Project Path="Silas.Studio/Silas.Studio.csproj">
-    <Deploy Solution="Debug|*" />
-  </Project>
-  <Project Path="Silas/Silas.csproj" />
-</Solution>

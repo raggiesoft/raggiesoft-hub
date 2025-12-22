@@ -129,7 +129,7 @@ global $cdn_root;
                 </div>
             </div>
         </div>
-</section>
+    </section>
 
 <style>
 .hover-lift { transition: transform 0.2s ease, box-shadow 0.2s ease; }
