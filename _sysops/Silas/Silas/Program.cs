@@ -2,7 +2,6 @@
 using System.IO;
 using System.Text.Json;
 using System.Collections.Generic;
-using System.Linq;
 
 namespace RaggieSoft.Silas;
 
@@ -11,15 +10,15 @@ class Program
     static void Main(string[] args)
     {
         Console.ForegroundColor = ConsoleColor.Cyan;
-        Console.WriteLine("/// SILAS v2.1 // JSON INTEGRITY SENTINEL ///");
+        Console.WriteLine("/// SILAS v2.2 // JSON INTEGRITY SENTINEL ///");
         Console.ResetColor();
         Console.WriteLine(new string('-', 50));
 
         // 1. Locate the "Database"
         string currentDir = Directory.GetCurrentDirectory();
-        string rootDir = FindRootDirectory(currentDir);
+        string? rootDir = FindRootDirectory(currentDir); // Note the '?' (Nullable string)
 
-        if (rootDir == null)
+        if (string.IsNullOrEmpty(rootDir))
         {
             Console.ForegroundColor = ConsoleColor.Red;
             Console.WriteLine("[CRITICAL] Could not locate repository root. Aborting.");
@@ -27,9 +26,6 @@ class Program
         }
 
         string routesPath = Path.Combine(rootDir, "data", "routes");
-
-        // FIXED: valid paths start at the Project Root, not the /pages folder
-        // The JSON "view" string already includes "pages/..."
         string projectRoot = rootDir;
 
         Console.WriteLine($"[TARGET] Database Sector: {routesPath}");
@@ -50,7 +46,6 @@ class Program
 
         foreach (var file in jsonFiles)
         {
-            // Pass the projectRoot instead of the pages specific folder
             totalErrors += ValidateShard(file, projectRoot);
         }
 
@@ -79,6 +74,12 @@ class Program
             string content = File.ReadAllText(filePath);
             var routes = JsonSerializer.Deserialize<Dictionary<string, JsonElement>>(content);
 
+            if (routes == null)
+            {
+                Console.WriteLine($"[{fileName}] Empty file skipped.");
+                return 0;
+            }
+
             Console.Write($"[{fileName}] Syntax: ");
             Console.ForegroundColor = ConsoleColor.Green;
             Console.Write("OK");
@@ -89,10 +90,10 @@ class Program
             {
                 if (route.Value.TryGetProperty("view", out JsonElement viewProp))
                 {
-                    string viewName = viewProp.GetString();
+                    string? viewName = viewProp.GetString();
 
-                    // FIXED: Simple concatenation. 
-                    // rootPath + / + pages/home + .php
+                    if (string.IsNullOrEmpty(viewName)) continue;
+
                     string expectedPhp = Path.Combine(rootPath, viewName + ".php");
 
                     if (!File.Exists(expectedPhp))
@@ -120,9 +121,9 @@ class Program
         return errors;
     }
 
-    static string FindRootDirectory(string startPath)
+    static string? FindRootDirectory(string startPath)
     {
-        DirectoryInfo dir = new DirectoryInfo(startPath);
+        DirectoryInfo? dir = new DirectoryInfo(startPath);
         while (dir != null)
         {
             if (Directory.Exists(Path.Combine(dir.FullName, "data")) &&
