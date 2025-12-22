@@ -32,8 +32,8 @@ $imagesJson = htmlspecialchars(json_encode($heroImages), ENT_QUOTES, 'UTF-8');
                 Mission Profile
             </h1>
             <p class="lead text-white-50 mx-auto text-shadow" style="max-width: 800px;">
-                <strong class="text-info">The Stardust Engine</strong> is a "Dual-Layer" reality: 
-                part technical experiment, part narrative art project.
+                <strong class="text-info">RaggieSoft</strong> is a "Dual-Layer" reality: 
+                a digital playground for Michael Ragsdale's technical architecture and narrative design.
             </p>
         </div>
 
