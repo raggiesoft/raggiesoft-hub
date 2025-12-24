@@ -59,5 +59,9 @@
   "/engine-room/history/nine-figure-refusal/the-approach": {
     "title": "The Approach",
     "ogDescription": "Holly and her team's strategy for the acquisition attempt."
+  },
+  "/engine-room/history/nine-figure-refusal/frost-interview": {
+    "title": "The Interview with Frost",
+    "ogDescription": "The interview with the former VP of Acquisitions of Omni Global."
   }
 }
