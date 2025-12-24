@@ -49,7 +49,7 @@
         <i class="fa-duotone fa-network-wired me-2" aria-hidden="true"></i>The Infrastructure (Core Layer)
     </h2>
     <div class="row g-4 mb-5">
-        <div class="col-md-4">
+        <div class="col-md-6">
             <div class="card h-100 border-success bg-success bg-opacity-10">
                 <div class="card-header bg-success text-white fw-bold">
                     <i class="fa-duotone fa-server me-2" aria-hidden="true"></i>Jessica
@@ -63,30 +63,29 @@
             </div>
         </div>
 
-        <div class="col-md-4">
+        <div class="col-md-6">
             <div class="card h-100 border-success bg-opacity-10">
-                <div class="card-header bg-success text-white fw-bold">
-                    <i class="fa-duotone fa-shield-keyhole me-2" aria-hidden="true"></i>Amanda
+                <div class="card-header bg-success text-white fw-bold d-flex justify-content-between align-items-center">
+                    <span><i class="fa-duotone fa-shield-keyhole me-2"></i>Amanda</span>
+                    <span class="opacity-50 mx-2">|</span>
+                    <span><i class="fa-duotone fa-traffic-light-go me-2"></i>Elara</span>
                 </div>
                 <div class="card-body">
-                    <img src="https://assets.raggiesoft.com/portfolio/images/family/atmospheric/amanda-elara.jpg" alt="Amanda" class="img-fluid rounded mb-3 shadow-sm">
-                    <h5 class="card-title">The Public Web Root</h5>
-                    <p class="small text-muted mb-2"><code>/var/www/raggiesoft.com/amanda</code></p>
-                    <p class="card-text">Amanda is "non-verbal"—she holds the files but lets Elara do the talking. She serves from a non-standard directory to protect core assets from generic bot scrapers.</p>
-                </div>
-            </div>
-        </div>
+                    <img src="https://assets.raggiesoft.com/portfolio/images/family/atmospheric/amanda-elara.jpg" alt="Amanda and Elara" class="img-fluid rounded mb-4 shadow-sm">
+                    
+                    <div class="mb-3">
+                        <h5 class="card-title text-success"><i class="fa-duotone fa-folder me-2"></i>Amanda (Web Root)</h5>
+                        <p class="small text-muted mb-2"><code>/var/www/raggiesoft.com/amanda</code></p>
+                        <p class="card-text">Amanda is "non-verbal"—she holds the files but lets Elara do the talking. She serves from a non-standard directory to protect core assets from generic bot scrapers.</p>
+                    </div>
 
-        <div class="col-md-4">
-            <div class="card h-100 border-success bg-opacity-10">
-                <div class="card-header bg-success text-white fw-bold">
-                    <i class="fa-duotone fa-traffic-light-go me-2" aria-hidden="true"></i>Elara
-                </div>
-                <div class="card-body">
-                    <img src="https://assets.raggiesoft.com/portfolio/images/family/atmospheric/amanda-elara.jpg" alt="Elara" class="img-fluid rounded mb-3 shadow-sm">
-                    <h5 class="card-title">The Gatekeeper</h5>
-                    <p class="small text-muted mb-2"><code>amanda/elara.php</code></p>
-                    <p class="card-text">The Single-Entry Router. Elara intercepts 100% of incoming traffic. She sanitizes URIs, handles error logging, and dispatches requests. She is the only file the public internet speaks to.</p>
+                    <hr class="border-success opacity-25 my-3">
+
+                    <div>
+                        <h5 class="card-title text-success"><i class="fa-duotone fa-route me-2"></i>Elara (The Router)</h5>
+                        <p class="small text-muted mb-2"><code>amanda/elara.php</code></p>
+                        <p class="card-text">The Gatekeeper. Elara intercepts 100% of incoming traffic. She sanitizes URIs, handles error logging, and dispatches requests. She is the only file the public internet speaks to.</p>
+                    </div>
                 </div>
             </div>
         </div>
