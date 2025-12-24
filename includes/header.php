@@ -107,7 +107,7 @@ if (isset($customPageAssets) && is_array($customPageAssets)) {
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
 
     <script type="module">
-        import hotwiredTurbo from 'https://cdn.skypack.dev/@hotwired/turbo';
+        import "https://cdn.skypack.dev/@hotwired/turbo";
     </script>
     
     <style>
