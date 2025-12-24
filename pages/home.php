@@ -88,7 +88,7 @@
               'href' => '/raggiesoft-books/aethel-saga',
               'text' => 'Read the Saga',
               'variant' => 'primary',
-              'icon' => 'fa-duotone fa-sword', 
+              'icon' => 'fa-duotone fa-sword',
               'fullWidth' => true
             ]
           ];
