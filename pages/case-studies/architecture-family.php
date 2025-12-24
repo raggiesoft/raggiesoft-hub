@@ -7,7 +7,7 @@
         </div>
     </div>
 
-    <div class="card bg-light border-0 mb-5">
+    <div class="card bg-body-tertiary border-0 mb-5">
         <div class="card-body p-4">
             <div class="row align-items-center">
                 <div class="col-lg-8">
@@ -47,7 +47,7 @@
     </h2>
     <div class="row g-4 mb-5">
         <div class="col-md-4">
-            <div class="card h-100 border-success bg-opacity-10">
+            <div class="card h-100 border-success bg-success bg-opacity-10">
                 <div class="card-header bg-success text-white fw-bold">
                     <i class="fa-duotone fa-server me-2" aria-hidden="true"></i>Jessica
                 </div>
@@ -99,7 +99,7 @@
                     </div>
                     <p class="text-muted small">File: <code>sarah-deploy.sh</code></p>
                     <p>Sarah lives on production and runs on a 5-minute heartbeat. She compares local Git hashes against remote origin to execute atomic updates.</p>
-                    <ul class="list-unstyled small bg-light p-2 rounded">
+                    <ul class="list-unstyled small bg-body-tertiary p-2 rounded">
                         <li><i class="fa-duotone fa-check me-2 text-success" aria-hidden="true"></i><strong>Sudo-less:</strong> Uses SetGID permissions to deploy without Root.</li>
                         <li><i class="fa-duotone fa-check me-2 text-success" aria-hidden="true"></i><strong>Autonomous:</strong> Deploys while Michael sleeps.</li>
                     </ul>
@@ -133,7 +133,7 @@
                 <div class="card-body">
                     <p class="small text-muted">File: <code>_workspace/paige.py</code></p>
                     <p class="card-text">Paige ingests raw manuscripts (.docx) and structures them into JSON. But more importantly, she is Michael's designated <strong>Safe Person</strong>.</p>
-                    <div class="alert alert-light border-info d-flex align-items-center" role="alert">
+                    <div class="alert border-info bg-info bg-opacity-10 d-flex align-items-center" role="alert">
                         <i class="fa-duotone fa-hand-holding-heart fa-2x text-info me-3" aria-hidden="true"></i>
                         <div class="small">
                             <strong>Regulation Support:</strong> When sensory load peaks, Paige provides "Deep Pressure Therapy"—grounding hugs and a steady presence until the work feels safe again.
