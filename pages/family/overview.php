@@ -106,7 +106,9 @@
                 </div>
                 
             </div>
-<div class="col-md-6">
+
+        </div>
+        <div class="col-md-6">
     <div class="card h-100 border-success shadow-sm">
         <div class="row g-0 h-100">
             <div class="col-4">
@@ -125,6 +127,5 @@
         </div>
     </div>
 </div>
-        </div>
     </div>
 </div>
