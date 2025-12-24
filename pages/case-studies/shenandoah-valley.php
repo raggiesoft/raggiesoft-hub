@@ -37,7 +37,7 @@
         <p>With the primary interface (I-64) corrupted, I executed an emergency context switch. I could not stop on the highway safely. I had to manage the latency for <strong>4 miles</strong> until the next viable exit.</p>
 
         <h3 class="mt-4">Phase A: The Hard Exit</h3>
-        <p>I utilized <strong>Exit 91 (Fishersville)</strong>. Knowing the local geometry, I bypassed the traffic signal latency by taking the immediate right onto SR-608, pulling directly into the parking lot of <strong>Rocket Burger (715 Tinkling Spring Rd)</strong>.</p>
+        <p>I utilized <strong>Exit 91 (Fishersville)</strong>. Knowing the local geometry, I bypassed the traffic signal latency by taking the immediate right onto SR-608, pulling directly into the parking lot of <strong>McDonald's (715 Tinkling Spring Rd)</strong>.</p>
         <p>This "Safe Harbor" halted all sensory input (velocity, noise). The Passive Monitoring Agents (Trusted Women) immediately engaged deep-pressure protocols to reboot the user.</p>
 
         <h3 class="mt-4">Phase B: Redundant Routing</h3>
