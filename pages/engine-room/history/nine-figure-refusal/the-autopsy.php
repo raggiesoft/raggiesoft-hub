@@ -144,23 +144,42 @@ $pageTitle = "The Autopsy: Holly Takes Control - Evidence Item #02";
                     </div>
 
                     <p>
-                        "What the hell?" Frost stood up, looking at the screen, then at the IT director in the corner. "Who authorized that? She's not on the network!"
+                        The giant screen flickered black. Jameson's "Synergy" slide vanished, replaced instantly by Holly's desktop.
+                    </p>
+                    <p>
+                        "What the hell?" Frost stood up, slapping the table. "Hopkins, we lost video. Wiggle the HDMI cable. It’s loose again."
                     </p>
                     
                     <p>
-                        The IT Director was frantically tapping his tablet, his face pale. "Sir... she's not on <em>our</em> network. The monitor is responding to an override from the Infrastructure Layer. I can't stop it. It's pre-empting our traffic."
+                        The IT Director, Hopkins, was in the corner, frantically tapping at his tablet. He didn't move toward the cable. His face had gone pale.
                     </p>
 
                     <p>
-                        "How did you do that?" Frost demanded, staring at Holly. "We have enterprise-grade encryption. You can't just Quantum Cast into my boardroom!"
+                        "It's... it's not the cable, sir," Hopkins stammered. "The display just forced a source switch. It went to Wireless Direct."
                     </p>
 
                     <p>
-                        Holly didn't answer. She didn't even look up from her keyboard. She simply let the question hang in the air, a terrifying variable that Frost couldn't solve.
+                        "So switch it back!" Jameson barked. "I have slides!"
                     </p>
 
                     <p>
-                        "It's not your offer," she said, watching the wireless handshake complete. "I deleted your offer."
+                        "I can't!" Hopkins voice pitched up an octave. "I'm locked out. The panel says <code class="text-uppercase">Admin Override Active</code>. Sir, I don't understand... this command is coming from the Infrastructure Layer. It's pre-empting our entire subnet."
+                    </p>
+
+                    <p>
+                        Jameson spun around to stare at Holly. "You're hacking us! Hopkins, cut the Guest Wifi!"
+                    </p>
+
+                    <p>
+                        "She's not <em>on</em> the Wifi!" Hopkins yelled back, forgetting his rank. "I'm looking at the live logs—she doesn't exist! She's bypassing the firewall entirely. It's like the monitor is listening to a ghost!"
+                    </p>
+
+                    <p>
+                        Holly didn't answer. She didn't even look up from her keyboard. She simply let the panic ripple through the room, a terrifying variable that neither the executive nor his tech support could solve.
+                    </p>
+
+                    <p>
+                        "It's not your offer," she said calmly, watching the wireless handshake complete. "I deleted your offer."
                     </p>
                     <p>
                         A new window appeared on the giant screen. It wasn't a spreadsheet. It was an email client.

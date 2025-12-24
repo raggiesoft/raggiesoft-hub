@@ -47,5 +47,9 @@
   "/engine-room/history/nine-figure-refusal/liquidation-auction": {
     "title": "Asset Liquidation: Case 18-11492",
     "ogDescription": "The yard sale. Selling the corporate ego to pay the creditors."
+  },
+  "/engine-room/history/nine-figure-refusal/the-autopsy": {
+    "title": "The Autopsy",
+    "ogDescription": "The aftermath of the failed acquisition attempt."
   }
 }
