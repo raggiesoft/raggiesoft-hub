@@ -12,15 +12,15 @@
             <div class="card-body">
                 <div class="row">
                     <div class="col-md-4 mb-2 mb-md-0">
-                        <i class="fa-duotone fa-bullseye-pointer text-secondary me-2" aria-hidden="true"></i>
+                        <i class="fa-duotone fa-bullseye-pointer me-2" aria-hidden="true"></i>
                         <strong>Subject:</strong> Adaptive Routing
                     </div>
                     <div class="col-md-4 mb-2 mb-md-0">
-                        <i class="fa-duotone fa-map-location-dot text-secondary me-2" aria-hidden="true"></i>
+                        <i class="fa-duotone fa-map-location-dot me-2" aria-hidden="true"></i>
                         <strong>Location:</strong> I-81 Northbound and I-64 Eastbound (Duplex from Lexington, Virginia to Staunton, Virginia)
                     </div>
                     <div class="col-md-4">
-                        <i class="fa-duotone fa-user-helmet-safety text-secondary me-2" aria-hidden="true"></i>
+                        <i class="fa-duotone fa-user-helmet-safety me-2" aria-hidden="true"></i>
                         <strong>Role:</strong> System Architect
                     </div>
                 </div>
