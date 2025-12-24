@@ -103,8 +103,11 @@ $album_path_web = '/engine-room-records/artists/the-stardust-engine/1990-live-in
                             <p class="card-text text-muted small">
                                 Cassidy fought to cut this song from the setlist. Singing about abandonment while the label was actively trying to separate her from her brother was psychologically devastating.
                             </p>
-                            <p class="card-text text-muted small mb-0">
+                            <p class="card-text text-muted small">
                                 <strong>Aftermath:</strong> Immediately following the show, Cassidy suffered a severe breakdown backstage. Ryan had to hold her in a deep-pressure hug for twenty minutes to bring her back to baseline.
+                            </p>
+                            <p class="card-text text-danger small mb-0 fw-bold">
+                                STATUS: RETIRED. Because of the distress caused by this performance, the band vowed never to play this song live again.
                             </p>
                          </div>
                     </div>
