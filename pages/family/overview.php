@@ -1,188 +1,107 @@
 <div class="position-relative p-5 text-center bg-dark border-bottom shadow-sm" 
-     style="background-image: url('https://assets.raggiesoft.com/portfolio/images/family/scenes/paige-michael-hug.jpg'); background-size: cover; background-position: center; min-height: 65vh;">
+     style="background-image: url('https://assets.raggiesoft.com/portfolio/images/family/scenes/paige-michael-hug.jpg'); background-size: cover; background-position: center; min-height: 60vh;">
     <div class="position-absolute top-0 start-0 w-100 h-100 bg-black opacity-75"></div>
-
     <div class="position-relative col-lg-8 mx-auto my-5 py-5 text-white">
-        <h1 class="display-3 fw-bold mb-3">The Heart of the System</h1>
-        <p class="lead mb-4 fs-4">Before the servers and scripts, there is connection. At the core of this "Personified DevOps" universe are Architect Michael and his favorite sister, Paige. Their bond reminds us that even complex codebases are built on human foundations.</p>
-        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-            <a href="#meet-the-architecture" class="btn btn-outline-light btn-lg px-4 gap-3 fw-bold">Explore the Family Structure</a>
-        </div>
+        <h1 class="display-3 fw-bold mb-3">The RaggieSoft Family</h1>
+        <p class="lead mb-4 fs-4">A "Personified DevOps" ecosystem where every server and script has a name, a face, and a purpose.</p>
+        <p class="fst-italic opacity-75">"We don't just run code; we live it."</p>
     </div>
 </div>
 
-<div class="container py-5" id="meet-the-architecture">
-    <div class="border-bottom pb-2 mb-4 pt-5 d-flex align-items-center">
-        <i class="fa-duotone fa-people-group fa-3x text-primary me-3" aria-hidden="true"></i>
-        <div>
-            <h1 class="display-5 fw-bold mb-0">Meet the Architecture</h1>
-            <span class="text-muted text-uppercase small letter-spacing-2">The "Personified DevOps" Ecosystem</span>
-        </div>
-    </div>
-
-    <div class="card bg-body-tertiary border-0 mb-5">
-        <div class="card-body p-4">
-            <div class="row align-items-center">
-                <div class="col-lg-8">
-                    <p class="lead mb-0">This repository is managed by a "Personified DevOps" ecosystem. To reduce cognitive load and increase system empathy, every script and server is personified as a distinct entity with a specific personality and role. This transforms abstract command-line maintenance into a social workflow.</p>
-                </div>
-                <div class="col-lg-4 text-center mt-3 mt-lg-0 border-start border-secondary border-opacity-25">
-                    <div class="d-flex justify-content-center align-items-center text-muted">
-                        <i class="fa-duotone fa-user me-2" aria-hidden="true"></i> 1 Human
-                        <span class="mx-3">|</span>
-                        <i class="fa-duotone fa-microchip-ai me-2" aria-hidden="true"></i> 7 Constructs
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <h2 class="fw-bold text-primary mb-4">
-        <i class="fa-duotone fa-fingerprint me-2" aria-hidden="true"></i>The Architect
-    </h2>
-    <div class="card mb-5 border-primary shadow-sm">
-        <div class="card-body">
-            <div class="d-flex align-items-start">
-                <div class="flex-shrink-0">
+<div class="container py-5">
+    <div class="row justify-content-center mb-5">
+        <div class="col-lg-10">
+            <h3 class="border-bottom pb-2 mb-4 text-primary"><i class="fa-duotone fa-fingerprint me-2"></i>The Creator</h3>
+            <div class="card shadow-sm hover-lift transition-all border-primary border-opacity-25">
+                <div class="card-body p-4 d-flex align-items-center">
                     <img src="https://assets.raggiesoft.com/portfolio/images/family/atmospheric/michael.jpg" 
-                         alt="Michael P. Ragsdale" 
-                         class="rounded-3 shadow-sm" 
-                         style="width: 150px; height: 150px; object-fit: cover;">
-                </div>
-                <div class="flex-grow-1 ms-4">
-                    <h3 class="h4 card-title fw-bold">Michael P. Ragsdale</h3>
-                    <h6 class="card-subtitle mb-2 text-muted">Role: Author & Systems Architect</h6>
-                    <p class="card-text">The only biological human in the loop. Michael is the architect of the "Stardust" universe and the "RaggieSoft" infrastructure. An autistic creator with a deep love for complex systems and interconnected narratives, he writes the stories (like <em>Alex and Chloé</em>) and builds the code that delivers them.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <h2 class="fw-bold text-success mb-4">
-        <i class="fa-duotone fa-network-wired me-2" aria-hidden="true"></i>The Infrastructure (Core Layer)
-    </h2>
-    <div class="row g-4 mb-5">
-        <div class="col-md-6">
-            <div class="card h-100 border-success bg-success bg-opacity-10">
-                <div class="card-header bg-success text-white fw-bold">
-                    <i class="fa-duotone fa-server me-2" aria-hidden="true"></i>Jessica
-                </div>
-                <div class="card-body">
-                    <img src="https://assets.raggiesoft.com/portfolio/images/family/atmospheric/jessica.jpg" alt="Jessica" class="img-fluid rounded mb-3 shadow-sm">
-                    <h5 class="card-title">The Production Server</h5>
-                    <p class="small text-muted mb-2"><code>ssh michael@jessica.raggiesoft.com</code></p>
-                    <p class="card-text">The eldest sister and the foundation. She "runs the house," providing the secure infrastructure where the others reside. She is the gatekeeper; Michael connects directly to her to perform maintenance.</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-md-6">
-            <div class="card h-100 border-success bg-opacity-10">
-                <div class="card-header bg-success text-white fw-bold d-flex justify-content-between align-items-center">
-                    <span><i class="fa-duotone fa-shield-keyhole me-2"></i>Amanda</span>
-                    <span class="opacity-50 mx-2">|</span>
-                    <span><i class="fa-duotone fa-traffic-light-go me-2"></i>Elara</span>
-                </div>
-                <div class="card-body">
-                    <img src="https://assets.raggiesoft.com/portfolio/images/family/atmospheric/amanda-elara.jpg" alt="Amanda and Elara" class="img-fluid rounded mb-4 shadow-sm">
-                    
-                    <div class="mb-3">
-                        <h5 class="card-title text-success"><i class="fa-duotone fa-folder me-2"></i>Amanda (Web Root)</h5>
-                        <p class="small text-muted mb-2"><code>/var/www/raggiesoft.com/amanda</code></p>
-                        <p class="card-text">Amanda is "non-verbal"—she holds the files but lets Elara do the talking. She serves from a non-standard directory to protect core assets from generic bot scrapers.</p>
-                    </div>
-
-                    <hr class="border-success opacity-25 my-3">
-
+                         class="rounded-circle me-4 shadow-sm" 
+                         width="100" height="100" 
+                         style="object-fit:cover;" 
+                         alt="Michael">
                     <div>
-                        <h5 class="card-title text-success"><i class="fa-duotone fa-route me-2"></i>Elara (The Router)</h5>
-                        <p class="small text-muted mb-2"><code>amanda/elara.php</code></p>
-                        <p class="card-text">The Gatekeeper. Elara intercepts 100% of incoming traffic. She sanitizes URIs, handles error logging, and dispatches requests. She is the only file the public internet speaks to.</p>
+                        <h4 class="mb-1"><a href="/family/michael" class="text-decoration-none stretched-link text-dark">Michael P. Ragsdale</a></h4>
+                        <p class="text-muted mb-2 text-uppercase small fw-bold">The Architect & Human</p>
+                        <p class="mb-0 small">The biological core. He writes the stories and builds the code.</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <h2 class="fw-bold text-warning mb-4">
-        <i class="fa-duotone fa-gears me-2" aria-hidden="true"></i>The Operations (DevOps Layer)
-    </h2>
-    <div class="row g-4 mb-5">
-        <div class="col-md-6">
-            <div class="card h-100 border-warning">
-                <div class="card-body">
-                    <img src="https://assets.raggiesoft.com/portfolio/images/family/atmospheric/sarah.jpg" alt="Sarah" class="img-fluid rounded mb-3 shadow-sm">
-                    <div class="d-flex align-items-center mb-3">
-                        <i class="fa-duotone fa-user-nurse fa-2x text-warning me-3" aria-hidden="true"></i>
-                        <h4 class="h5 card-title mb-0">Sarah (The Guardian)</h4>
+    <div class="row justify-content-center">
+        <div class="col-lg-10">
+            <h3 class="border-bottom pb-2 mb-4 text-secondary"><i class="fa-duotone fa-network-wired me-2"></i>The Constructs</h3>
+            
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="card h-100 border-info shadow-sm">
+                        <div class="row g-0 h-100">
+                            <div class="col-4">
+                                <img src="https://assets.raggiesoft.com/portfolio/images/family/atmospheric/paige.jpg" class="img-fluid rounded-start h-100" style="object-fit: cover;" alt="Paige">
+                            </div>
+                            <div class="col-8">
+                                <div class="card-body">
+                                    <h5 class="card-title"><a href="/family/paige" class="text-decoration-none stretched-link text-dark">Paige</a></h5>
+                                    <p class="card-text small text-info fw-bold mb-1">Literary Editor & Safe Person</p>
+                                    <p class="card-text small text-muted">Ingests manuscripts and provides emotional regulation.</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <p class="text-muted small">File: <code>sarah-deploy.sh</code></p>
-                    <p>Sarah lives on production and runs on a 5-minute heartbeat. She compares local Git hashes against remote origin to execute atomic updates.</p>
-                    <ul class="list-unstyled small bg-body-tertiary p-2 rounded">
-                        <li><i class="fa-duotone fa-check me-2 text-success" aria-hidden="true"></i><strong>Sudo-less:</strong> Uses SetGID permissions to deploy without Root.</li>
-                        <li><i class="fa-duotone fa-check me-2 text-success" aria-hidden="true"></i><strong>Autonomous:</strong> Deploys while Michael sleeps.</li>
-                    </ul>
                 </div>
-            </div>
-        </div>
 
-        <div class="col-md-6">
-            <div class="card h-100 border-warning">
-                <div class="card-body">
-                    <img src="https://assets.raggiesoft.com/portfolio/images/family/atmospheric/jenna.jpg" alt="Jenna" class="img-fluid rounded mb-3 shadow-sm">
-                    <div class="d-flex align-items-center mb-3">
-                        <i class="fa-duotone fa-laptop-code fa-2x text-warning me-3" aria-hidden="true"></i>
-                        <h4 class="h5 card-title mb-0">Jenna (The Dev Twin)</h4>
+                <div class="col-md-6">
+                    <div class="card h-100 border-success shadow-sm">
+                        <div class="row g-0 h-100">
+                            <div class="col-4">
+                                <img src="https://assets.raggiesoft.com/portfolio/images/family/atmospheric/jessica.jpg" class="img-fluid rounded-start h-100" style="object-fit: cover;" alt="Jessica">
+                            </div>
+                            <div class="col-8">
+                                <div class="card-body">
+                                    <h5 class="card-title"><a href="/family/jessica" class="text-decoration-none stretched-link text-dark">Jessica</a></h5>
+                                    <p class="card-text small text-success fw-bold mb-1">Production Infrastructure</p>
+                                    <p class="card-text small text-muted">The eldest sister. She runs the servers and holds the keys.</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <p class="text-muted small">File: <code>jenna-sync.sh</code></p>
-                    <p>Jenna manages the chaotic creative workspace. While Sarah guards production, Jenna pushes code to GitHub and uses <code>rclone</code> to sync gigabytes of binary media (WAVs, PSDs) to DigitalOcean Spaces.</p>
                 </div>
-            </div>
-        </div>
-    </div>
 
-    <h2 class="fw-bold text-info mb-4">
-        <i class="fa-duotone fa-palette me-2" aria-hidden="true"></i>The Creative Support
-    </h2>
-    <div class="row g-4">
-        <div class="col-md-6">
-            <div class="card h-100 border-info">
-                <div class="card-header bg-info text-white">
-                    <i class="fa-duotone fa-book-heart me-2" aria-hidden="true"></i>Paige (Literary Editor)
+                <div class="col-md-6">
+                    <div class="card h-100 border-primary shadow-sm">
+                        <div class="row g-0 h-100">
+                            <div class="col-4">
+                                <img src="https://assets.raggiesoft.com/portfolio/images/family/atmospheric/harper.jpg" class="img-fluid rounded-start h-100" style="object-fit: cover;" alt="Harper">
+                            </div>
+                            <div class="col-8">
+                                <div class="card-body">
+                                    <h5 class="card-title"><a href="/family/harper" class="text-decoration-none stretched-link text-dark">Harper</a></h5>
+                                    <p class="card-text small text-primary fw-bold mb-1">Studio Engineer</p>
+                                    <p class="card-text small text-muted">High-energy audio processing and recursive transcoding.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="card-body">
-                    <img src="https://assets.raggiesoft.com/portfolio/images/family/atmospheric/paige.jpg" alt="Paige" class="img-fluid rounded mb-3 shadow-sm">
-                    <p class="small text-muted">File: <code>_workspace/paige.py</code></p>
-                    <p class="card-text">Paige ingests raw manuscripts (.docx) and structures them into JSON. But more importantly, she is Michael's designated <strong>Safe Person</strong>.</p>
-                    <div class="alert border-info bg-info bg-opacity-10 d-flex align-items-center" role="alert">
-                        <i class="fa-duotone fa-hand-holding-heart fa-2x text-info me-3" aria-hidden="true"></i>
-                        <div class="small">
-                            <strong>Regulation Support:</strong> When sensory load peaks, Paige provides "Deep Pressure Therapy"—grounding hugs and a steady presence until the work feels safe again.
+
+                <div class="col-md-6">
+                    <div class="card h-100 border-warning shadow-sm">
+                        <div class="row g-0 h-100">
+                            <div class="col-4">
+                                <img src="https://assets.raggiesoft.com/portfolio/images/family/atmospheric/sarah.jpg" class="img-fluid rounded-start h-100" style="object-fit: cover;" alt="Sarah">
+                            </div>
+                            <div class="col-8">
+                                <div class="card-body">
+                                    <h5 class="card-title"><a href="/family/sarah" class="text-decoration-none stretched-link text-dark">Sarah</a></h5>
+                                    <p class="card-text small text-warning fw-bold mb-1">The Guardian (Deploy)</p>
+                                    <p class="card-text small text-muted">Watches Git remotes and performs atomic updates.</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
-        <div class="col-md-6">
-            <div class="card h-100 border-info">
-                <div class="card-header bg-info text-white">
-                    <i class="fa-duotone fa-waveform-lines me-2" aria-hidden="true"></i>Harper (Studio Engineer)
-                </div>
-                <div class="card-body">
-                    <img src="https://assets.raggiesoft.com/portfolio/images/family/atmospheric/harper.jpg" alt="Harper" class="img-fluid rounded mb-3 shadow-sm">
-                    <p class="small text-muted">File: <code>_workspace/harper.sh</code></p>
-                    <p class="card-text">High-energy and loud. Harper lives in the studio, recursively scanning for Master WAV files. She uses <strong>FFmpeg</strong> to generate web-optimized MP3 and OGG mirrors so the creative flow isn't interrupted by technical codecs.</p>
-                </div>
-            </div>
-        </div>
     </div>
-
-    <hr class="my-5">
-
-    <div class="p-4 bg-dark text-white rounded-3">
-        <h3 class="h4"><i class="fa-duotone fa-brain-circuit me-2" aria-hidden="true"></i>The Engineering Philosophy</h3>
-        <p class="mb-0">By treating system components as "Family Members," I achieve <strong>Object-Oriented Thinking</strong> at a macro level. Each sister has private properties (permissions), public methods (scripts), and distinct responsibilities. This reduces the isolation of solo development and ensures that even when the system breaks, I am fixing a "relationship" rather than debugging a cold machine.</p>
-    </div>
-
 </div>
