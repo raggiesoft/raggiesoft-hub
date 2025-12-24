@@ -143,20 +143,21 @@
         <div class="row g-2">
             <div class="col-md-3 fw-bold small">Languages & Scripting:</div>
             <div class="col-md-9">
-                <span class="tech-tag">C# / .NET 10</span>
+                <span class="tech-tag">C# / .net 10</span>
                 <span class="tech-tag">PHP 8+</span>
                 <span class="tech-tag">JavaScript (ES6+)</span>
                 <span class="tech-tag">Bash / Shell</span>
                 <span class="tech-tag">HTML5</span>
                 <span class="tech-tag">CSS3 / SCSS</span>
+                <span class="tech-tag">Python</span>
             </div>
             
             <div class="col-md-3 fw-bold small">Infrastructure & Cloud:</div>
             <div class="col-md-9">
-                <span class="tech-tag">DigitalOcean</span>
+                <span class="tech-tag">DigitalOcean (Droplets/Spaces)</span>
                 <span class="tech-tag">Nginx</span>
                 <span class="tech-tag">Cloudflare</span>
-                <span class="tech-tag">MAUI / WinUI 3</span>
+                <span class="tech-tag">Certbot</span>
                 <span class="tech-tag">Linux (Ubuntu/Debian)</span>
             </div>
 
@@ -182,10 +183,18 @@
             </div>
             <div class="job-title small mb-1">Founder & Systems Architect | Norfolk, VA</div>
             <ul class="resume-list">
-                <li><strong>Cloud Architecture (2025):</strong> Executed a complete infrastructure migration to a cloud-native DigitalOcean environment. Hardened security via custom Nginx server blocks, utilizing non-standard entry points and directory obfuscation to mitigate automated bot targeting. Implemented Cloudflare for edge-cached DNS and strict SSL encryption.</li>
-                <li><strong>Systems Engineering (2025):</strong> Engineered "Silas," a proprietary .NET 10 ecosystem comprising a server-side integrity guardian and a MAUI (WinUI 3) desktop architect. This tooling automates deployment verification and provides a strictly typed GUI for managing complex JSON data shards, eliminating manual syntax errors.</li>
-                <li><strong>Full-Stack Engineering (2022–Present):</strong> Architected "The Stardust Engine," a PHP-based CMS with a custom router ("Elara") and accessibility-focused frontend. Engineered <code>transcode-all.sh</code> to automate media processing pipelines using Bash and FFmpeg.</li>
-                <li><strong>Systems Administration (2008–2022):</strong> Managed domain lifecycles, DNS records, and web hosting environments for personal and client portfolios, maintaining 99.9% uptime across varying traffic loads.</li>
+                <li><strong>Personified DevOps Ecosystem (Bash/Shell):</strong> Architected "The Family," a decoupled CI/CD pipeline designed for security through isolation on the production server ("Jessica").</li>
+                <li><strong>"Jenna" (Dev-Side):</strong> A local synchronization agent (<code>jenna-sync.sh</code>) that manages version control and pushes encrypted assets to <strong>DigitalOcean Spaces</strong> via <strong>rclone</strong>.</li>
+                <li><strong>"Sarah" (Server-Side):</strong> An autonomous deployment guardian (<code>sarah-deploy.sh</code>) that performs hash-based integrity checks against GitHub and executes "sudo-less" atomic updates, strictly enforcing <strong>SetGID</strong> permissions to mitigate privilege escalation.</li>
+                <li><strong>Security & Routing Topology:</strong> Engineered a non-standard web architecture to mitigate automated bot attacks.</li>
+                <li><strong>"Amanda" (The Fortress):</strong> Configured <strong>Nginx</strong> to serve from an obfuscated directory (<code>/amanda</code>) rather than standard public paths, protecting core assets from scraping.</li>
+                <li><strong>"Elara" (The Gatekeeper):</strong> Developed a custom <strong>PHP 8</strong> single-entry router (<code>elara.php</code>) that intercepts and sanitizes 100% of incoming traffic before dispatching to view controllers.</li>
+                <li><strong>Systems Engineering:</strong> Engineered <strong>"Silas,"</strong> a proprietary <strong>.NET 10</strong> ecosystem comprising a server-side integrity guardian and a <strong>MAUI</strong> desktop architect, providing a strictly typed GUI for managing complex JSON data shards.</li>
+                <li><strong>Creative Automation (Python/FFmpeg):</strong> Developed specialized processing agents to manage the "Stardust" narrative universe.</li>
+                <li><strong>"Paige" (Literary Editor):</strong> A <strong>Python</strong> utility (<code>process_book.py</code>) that ingests raw Docx manuscripts and compiles them into structured JSON for the WCAG-compliant web reader.</li>
+                <li><strong>"Harper" (Studio Engineer):</strong> A <strong>Bash</strong>-based audio pipeline (<code>transcode-all.sh</code>) that recursively scans master recordings and automates <strong>FFmpeg</strong> transcoding for web-optimized streaming.</li>
+                <li><strong>Empathetic Engineering:</strong> Developed <strong>"Lyra"</strong> (<code>lyra.sh</code>), a "Silent Safety" data sanitization engine that preemptively prunes user-defined trigger terms from imported datasets, ensuring a psychologically safe workflow for neurodivergent users.</li>
+                <li><strong>Full-Stack Development:</strong> Architected "The Stardust Engine," a JSON-driven media platform featuring a <strong>Hotwire Turbo</strong> "No-Build" frontend and a persistent, event-driven audio player.</li>
             </ul>
         </div>
 
@@ -194,11 +203,11 @@
                 <div class="company">Virginia Beach Parks & Recreation</div>
                 <div class="dates">May 2023 – Present</div>
             </div>
-            <div class="job-title small mb-1">Lead Front Desk Support & Technical Trainer | Virginia Beach, VA</div>
+            <div class="job-title small mb-1">Operations Support & Technical Lead | Virginia Beach, VA</div>
             <ul class="resume-list">
-                <li><strong>Workflow Optimization:</strong> Developed a custom workflow to generate accessible, Section 508 compliant, and printer-friendly documents from a legacy system not originally designed for such outputs.</li>
-                <li><strong>Systems Training:</strong> Serve as the primary technical trainer for new employees on the ActiveNet Customer Relationship Management (CRM) system, ensuring data integrity and operational consistency.</li>
-                <li><strong>Technical Operations:</strong> Supervise front desk operations, making independent technical decisions to resolve patron account issues and secure payment processing.</li>
+                <li><strong>Legacy Data Normalization & Compliance:</strong> Developed a manual ETL (Extract-Transform-Load) process to bridge gaps in a legacy municipal reservation system. Converts raw scheduling data into <strong>Section 508 compliant</strong>, accessible operational documents, enriching the output with cross-facility resource availability to optimize staff decision-making.</li>
+                <li><strong>Technical Training & Onboarding:</strong> Serves as the primary trainer for the <strong>ActiveNet CRM</strong>, instructing new staff on data integrity protocols, payment processing security, and complex account management to ensure operational consistency.</li>
+                <li><strong>Operational Leadership:</strong> Functions as a rotating Shift Supervisor, overseeing financial reconciliation for high-volume transactions (memberships, private rentals, and POS). Acts as the primary escalation point for resolving complex patron account issues and facility logistical conflicts.</li>
             </ul>
         </div>
 
@@ -210,7 +219,7 @@
             <div class="job-title small mb-1">Section 508 Compliance Specialist | Norfolk, VA</div>
             <ul class="resume-list">
                 <li><strong>Accessibility Compliance:</strong> Ensured WCAG 2.1 AA & Section 508 compliance for online courses, serving as a critical checkpoint before content publication.</li>
-                <li><strong>Remediation & Testing:</strong> Remediated web pages and documents, verifying student code and utilizing tools like Deque axe for detailed reporting.</li>
+                <li><strong>Remediation & Testing:</strong> Remediated web pages and documents, verifying student code and utilizing tools like <strong>Deque axe</strong> for detailed reporting.</li>
                 <li><strong>Migration Support:</strong> Provided technical support to instructional designers during a large-scale migration to the Canvas LMS.</li>
                 <li><strong>Standardization:</strong> Designed and developed a universal, accessible template for the University Policies section of the syllabus, streamlining the workflow for faculty.</li>
             </ul>
@@ -223,7 +232,7 @@
             </div>
             <div class="job-title small mb-1">Director of Administration | Norfolk, VA</div>
             <ul class="resume-list">
-                <li><strong>Digital Administration:</strong> Administered the organization’s Google Workspace for Education environment, re-architecting a disorganized legacy file structure into a streamlined hierarchy that optimized workflow for the executive board.</li>
+                <li><strong>Digital Administration:</strong> Administered the organization’s <strong>Google Workspace for Education</strong> environment, re-architecting a disorganized legacy file structure into a streamlined hierarchy that optimized workflow for the executive board.</li>
                 <li><strong>Leadership:</strong> Elected by the student body to manage all administrative functions, ensuring the accurate retention of official minutes, legislation, and organizational history.</li>
             </ul>
         </div>
