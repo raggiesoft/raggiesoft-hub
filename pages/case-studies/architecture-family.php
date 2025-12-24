@@ -31,7 +31,10 @@
         <div class="card-body">
             <div class="d-flex align-items-start">
                 <div class="flex-shrink-0">
-                    <i class="fa-duotone fa-user-astronaut fa-4x text-primary" aria-hidden="true"></i>
+                    <img src="https://assets.raggiesoft.com/portfolio/images/family/atmospheric/michael.jpg" 
+                         alt="Michael P. Ragsdale" 
+                         class="rounded-3 shadow-sm" 
+                         style="width: 150px; height: 150px; object-fit: cover;">
                 </div>
                 <div class="flex-grow-1 ms-4">
                     <h3 class="h4 card-title fw-bold">Michael P. Ragsdale</h3>
@@ -52,6 +55,7 @@
                     <i class="fa-duotone fa-server me-2" aria-hidden="true"></i>Jessica
                 </div>
                 <div class="card-body">
+                    <img src="https://assets.raggiesoft.com/portfolio/images/family/atmospheric/jessica.jpg" alt="Jessica" class="img-fluid rounded mb-3 shadow-sm">
                     <h5 class="card-title">The Production Server</h5>
                     <p class="small text-muted mb-2"><code>ssh michael@jessica.raggiesoft.com</code></p>
                     <p class="card-text">The eldest sister and the foundation. She "runs the house," providing the secure infrastructure where the others reside. She is the gatekeeper; Michael connects directly to her to perform maintenance.</p>
@@ -65,6 +69,7 @@
                     <i class="fa-duotone fa-shield-keyhole me-2" aria-hidden="true"></i>Amanda
                 </div>
                 <div class="card-body">
+                    <img src="https://assets.raggiesoft.com/portfolio/images/family/atmospheric/amanda-elara.jpg" alt="Amanda" class="img-fluid rounded mb-3 shadow-sm">
                     <h5 class="card-title">The Public Web Root</h5>
                     <p class="small text-muted mb-2"><code>/var/www/raggiesoft.com/amanda</code></p>
                     <p class="card-text">Amanda is "non-verbal"—she holds the files but lets Elara do the talking. She serves from a non-standard directory to protect core assets from generic bot scrapers.</p>
@@ -78,6 +83,7 @@
                     <i class="fa-duotone fa-traffic-light-go me-2" aria-hidden="true"></i>Elara
                 </div>
                 <div class="card-body">
+                    <img src="https://assets.raggiesoft.com/portfolio/images/family/atmospheric/amanda-elara.jpg" alt="Elara" class="img-fluid rounded mb-3 shadow-sm">
                     <h5 class="card-title">The Gatekeeper</h5>
                     <p class="small text-muted mb-2"><code>amanda/elara.php</code></p>
                     <p class="card-text">The Single-Entry Router. Elara intercepts 100% of incoming traffic. She sanitizes URIs, handles error logging, and dispatches requests. She is the only file the public internet speaks to.</p>
@@ -93,6 +99,7 @@
         <div class="col-md-6">
             <div class="card h-100 border-warning">
                 <div class="card-body">
+                    <img src="https://assets.raggiesoft.com/portfolio/images/family/atmospheric/sarah.jpg" alt="Sarah" class="img-fluid rounded mb-3 shadow-sm">
                     <div class="d-flex align-items-center mb-3">
                         <i class="fa-duotone fa-user-nurse fa-2x text-warning me-3" aria-hidden="true"></i>
                         <h4 class="h5 card-title mb-0">Sarah (The Guardian)</h4>
@@ -110,6 +117,7 @@
         <div class="col-md-6">
             <div class="card h-100 border-warning">
                 <div class="card-body">
+                    <img src="https://assets.raggiesoft.com/portfolio/images/family/atmospheric/jenna.jpg" alt="Jenna" class="img-fluid rounded mb-3 shadow-sm">
                     <div class="d-flex align-items-center mb-3">
                         <i class="fa-duotone fa-laptop-code fa-2x text-warning me-3" aria-hidden="true"></i>
                         <h4 class="h5 card-title mb-0">Jenna (The Dev Twin)</h4>
@@ -131,6 +139,7 @@
                     <i class="fa-duotone fa-book-heart me-2" aria-hidden="true"></i>Paige (Literary Editor)
                 </div>
                 <div class="card-body">
+                    <img src="https://assets.raggiesoft.com/portfolio/images/family/atmospheric/paige.jpg" alt="Paige" class="img-fluid rounded mb-3 shadow-sm">
                     <p class="small text-muted">File: <code>_workspace/paige.py</code></p>
                     <p class="card-text">Paige ingests raw manuscripts (.docx) and structures them into JSON. But more importantly, she is Michael's designated <strong>Safe Person</strong>.</p>
                     <div class="alert border-info bg-info bg-opacity-10 d-flex align-items-center" role="alert">
@@ -149,6 +158,7 @@
                     <i class="fa-duotone fa-waveform-lines me-2" aria-hidden="true"></i>Harper (Studio Engineer)
                 </div>
                 <div class="card-body">
+                    <img src="https://assets.raggiesoft.com/portfolio/images/family/atmospheric/harper.jpg" alt="Harper" class="img-fluid rounded mb-3 shadow-sm">
                     <p class="small text-muted">File: <code>_workspace/harper.sh</code></p>
                     <p class="card-text">High-energy and loud. Harper lives in the studio, recursively scanning for Master WAV files. She uses <strong>FFmpeg</strong> to generate web-optimized MP3 and OGG mirrors so the creative flow isn't interrupted by technical codecs.</p>
                 </div>
