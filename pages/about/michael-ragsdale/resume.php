@@ -57,6 +57,13 @@
 
     .resume-list { padding-left: 18px; margin-bottom: 10px; }
     .resume-list li { margin-bottom: 4px; line-height: 1.4; }
+    
+    /* NESTED LIST STYLES */
+    .resume-list .resume-list {
+        list-style-type: circle;
+        margin-top: 4px;
+        margin-bottom: 8px;
+    }
 
     /* 2. PRINT STYLES (What happens when you hit CTRL+P) */
     @media print {
@@ -182,17 +189,30 @@
                 <div class="dates">Est. 2008 – Present</div>
             </div>
             <div class="job-title small mb-1">Founder & Systems Architect | Norfolk, VA</div>
+            
             <ul class="resume-list">
-                <li><strong>Personified DevOps Ecosystem (Bash/Shell):</strong> Architected "The Family," a decoupled CI/CD pipeline designed for security through isolation on the production server ("Jessica").</li>
-                <li><strong>"Jenna" (Dev-Side):</strong> A local synchronization agent (<code>jenna-sync.sh</code>) that manages version control and pushes encrypted assets to <strong>DigitalOcean Spaces</strong> via <strong>rclone</strong>.</li>
-                <li><strong>"Sarah" (Server-Side):</strong> An autonomous deployment guardian (<code>sarah-deploy.sh</code>) that performs hash-based integrity checks against GitHub and executes "sudo-less" atomic updates, strictly enforcing <strong>SetGID</strong> permissions to mitigate privilege escalation.</li>
-                <li><strong>Security & Routing Topology:</strong> Engineered a non-standard web architecture to mitigate automated bot attacks.</li>
-                <li><strong>"Amanda" (The Fortress):</strong> Configured <strong>Nginx</strong> to serve from an obfuscated directory (<code>/amanda</code>) rather than standard public paths, protecting core assets from scraping.</li>
-                <li><strong>"Elara" (The Gatekeeper):</strong> Developed a custom <strong>PHP 8</strong> single-entry router (<code>elara.php</code>) that intercepts and sanitizes 100% of incoming traffic before dispatching to view controllers.</li>
-                <li><strong>Systems Engineering:</strong> Engineered <strong>"Silas,"</strong> a proprietary <strong>.NET 10</strong> ecosystem comprising a server-side integrity guardian and a <strong>MAUI</strong> desktop architect, providing a strictly typed GUI for managing complex JSON data shards.</li>
-                <li><strong>Creative Automation (Python/FFmpeg):</strong> Developed specialized processing agents to manage the "Stardust" narrative universe.</li>
-                <li><strong>"Paige" (Literary Editor):</strong> A <strong>Python</strong> utility (<code>process_book.py</code>) that ingests raw Docx manuscripts and compiles them into structured JSON for the WCAG-compliant web reader.</li>
-                <li><strong>"Harper" (Studio Engineer):</strong> A <strong>Bash</strong>-based audio pipeline (<code>transcode-all.sh</code>) that recursively scans master recordings and automates <strong>FFmpeg</strong> transcoding for web-optimized streaming.</li>
+                <li>
+                    <strong>Personified DevOps Ecosystem (Bash/Shell):</strong> Architected "The Family," a decoupled CI/CD pipeline designed for security through isolation on the production server ("Jessica").
+                    <ul class="resume-list">
+                        <li><strong>"Jenna" (Dev-Side):</strong> A local synchronization agent (<code>jenna-sync.sh</code>) that manages version control and pushes encrypted assets to <strong>DigitalOcean Spaces</strong> via <strong>rclone</strong>.</li>
+                        <li><strong>"Sarah" (Server-Side):</strong> An autonomous deployment guardian (<code>sarah-deploy.sh</code>) that performs hash-based integrity checks against GitHub and executes "sudo-less" atomic updates, strictly enforcing <strong>SetGID</strong> permissions to mitigate privilege escalation.</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Security & Routing Topology:</strong> Engineered a non-standard web architecture to mitigate automated bot attacks.
+                    <ul class="resume-list">
+                        <li><strong>"Amanda" (The Fortress):</strong> Configured <strong>Nginx</strong> to serve from an obfuscated directory (<code>/amanda</code>) rather than standard public paths, protecting core assets from scraping.</li>
+                        <li><strong>"Elara" (The Gatekeeper):</strong> Developed a custom <strong>PHP 8</strong> single-entry router (<code>elara.php</code>) that intercepts and sanitizes 100% of incoming traffic before dispatching to view controllers.</li>
+                    </ul>
+                </li>
+                <li><strong>Systems Engineering:</strong> Engineered <strong>"Silas,"</strong> a proprietary <strong>.NET 10</strong> ecosystem comprising a server-side integrity guardian and a <strong>MAUI</strong> desktop architect, providing a strictly typed GUI for managing complex JSON data shards, eliminating manual syntax errors.</li>
+                <li>
+                    <strong>Creative Automation (Python/FFmpeg):</strong> Developed specialized processing agents to manage the "Stardust" narrative universe.
+                    <ul class="resume-list">
+                        <li><strong>"Paige" (Literary Editor):</strong> A <strong>Python</strong> utility (<code>process_book.py</code>) that ingests raw Docx manuscripts and compiles them into structured JSON for the WCAG-compliant web reader.</li>
+                        <li><strong>"Harper" (Studio Engineer):</strong> A <strong>Bash</strong>-based audio pipeline (<code>transcode-all.sh</code>) that recursively scans master recordings and automates <strong>FFmpeg</strong> transcoding for web-optimized streaming.</li>
+                    </ul>
+                </li>
                 <li><strong>Empathetic Engineering:</strong> Developed <strong>"Lyra"</strong> (<code>lyra.sh</code>), a "Silent Safety" data sanitization engine that preemptively prunes user-defined trigger terms from imported datasets, ensuring a psychologically safe workflow for neurodivergent users.</li>
                 <li><strong>Full-Stack Development:</strong> Architected "The Stardust Engine," a JSON-driven media platform featuring a <strong>Hotwire Turbo</strong> "No-Build" frontend and a persistent, event-driven audio player.</li>
             </ul>
