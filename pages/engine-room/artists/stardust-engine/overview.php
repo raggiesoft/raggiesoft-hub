@@ -1,8 +1,8 @@
 <?php
-// pages/engine-room/artists/the-stardust-engine/overview.php
+// pages/engine-room/artists/stardust-engine/overview.php
 // The Band's "Home" Page
 
-$root = '/engine-room/artists/the-stardust-engine';
+$root = '/engine-room/artists/stardust-engine';
 ?>
 
 <div class="border-bottom border-primary border-opacity-50" style="
