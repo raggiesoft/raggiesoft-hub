@@ -46,15 +46,15 @@ $pageTitle = "Holly O'Connell - The Stardust Engine";
                 <div class="card-body p-4">
                     <div class="row align-items-center">
                         <div class="col-md-8">
-                            <h4 class="text-success fw-bold">The $2.04 Billion Secret</h4>
+                            <h4 class="text-success fw-bold">The $2.04 Billion Catalyst</h4>
                             <p class="text-light small">
-                                In 2012, <strong>Cassidy O'Connell</strong> purchased a single lottery ticket at a gas station in Daleville, VA. She matched all numbers, including the "Dream Ball."
+                                In late 1996, shortly after the release of <em>The Warehouse Tapes</em>, <strong>Cassidy O'Connell</strong> purchased a single lottery ticket at a gas station in Daleville, VA. She matched all numbers.
                             </p>
                             <p class="text-light small">
-                                The family chose the "Lump Sum" option ($997 Million post-tax). Instead of buying mansions, Cassidy handed the check to Holly and said, <em>"Make us safe."</em>
+                                The family chose the "Lump Sum" option. Instead of spending it, Cassidy handed the check to Holly with a single instruction: <em>"Make us safe."</em>
                             </p>
                             <p class="text-light small mb-0">
-                                Holly didn't just bank it. She went back to school. Over the next decade, she acquired a staggering arsenal of financial credentials to ensure that no label, no bank, and no medical crisis could ever threaten her family again.
+                                This moment defined Holly's career. Realizing that this level of wealth made them targets, she went back to school. Over the next decade, she acquired a staggering arsenal of financial credentials to build an impenetrable fortress around her family's future.
                             </p>
                         </div>
                         <div class="col-md-4 text-end d-none d-md-block">
@@ -65,15 +65,15 @@ $pageTitle = "Holly O'Connell - The Stardust Engine";
                     <hr class="border-secondary opacity-50 my-4">
 
                     <div>
-                        <h5 class="text-white fw-bold mb-2"><i class="fa-solid fa-chart-line-up me-2 text-success"></i>Financial & Fiduciary Armor</h5>
+                        <h5 class="text-white fw-bold mb-2"><i class="fa-solid fa-chart-line-up me-2 text-success"></i>Fiduciary Armor (The Timeline)</h5>
                         <div class="d-flex flex-wrap gap-2">
-                            <span class="skill-pill" title="1994: The Seal"><i class="fa-solid fa-stamp me-1"></i>Notary Public ('94)</span>
-                            <span class="skill-pill" title="1996: Defense against IRS"><i class="fa-solid fa-file-invoice-dollar me-1"></i>Enrolled Agent ('96)</span>
-                            <span class="skill-pill" title="1998: Advanced Tax Law"><i class="fa-solid fa-scale-balanced me-1"></i>LL.M. Taxation ('98)</span>
+                            <span class="skill-pill" title="1994: The Foundation"><i class="fa-solid fa-stamp me-1"></i>Notary Public ('94)</span>
+                            <span class="skill-pill" title="1997: Defense against IRS"><i class="fa-solid fa-file-invoice-dollar me-1"></i>Enrolled Agent ('97)</span>
+                            <span class="skill-pill" title="1999: Structuring the Fortune"><i class="fa-solid fa-scale-balanced me-1"></i>LL.M. Taxation ('99)</span>
                             <span class="skill-pill" title="2003: Architect of the Trust"><i class="fa-solid fa-landmark me-1"></i>CTFA ('03)</span>
-                            <span class="skill-pill" title="2005: Managing the surplus"><i class="fa-solid fa-briefcase me-1"></i>CFA Charterholder ('05)</span>
+                            <span class="skill-pill" title="2006: Managing the Surplus"><i class="fa-solid fa-briefcase me-1"></i>CFA Charterholder ('06)</span>
                             <span class="skill-pill" title="2009: Hedging against Recession"><i class="fa-solid fa-graduation-cap me-1"></i>M.S. Quant Finance ('09)</span>
-                            <span class="skill-pill" title="2014: Auditing royalties"><i class="fa-solid fa-magnifying-glass-dollar me-1"></i>Cr.FA (Forensic) ('14)</span>
+                            <span class="skill-pill" title="2014: Auditing Royalties"><i class="fa-solid fa-magnifying-glass-dollar me-1"></i>Cr.FA (Forensic) ('14)</span>
                             <span class="skill-pill" title="2016: The Bankruptcy Expert"><i class="fa-solid fa-tombstone me-1"></i>CIRA (Insolvency) ('16)</span>
                         </div>
                     </div>

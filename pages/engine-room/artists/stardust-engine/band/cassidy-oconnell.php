@@ -40,7 +40,7 @@ $pageTitle = "Cassidy O'Connell - The Stardust Engine";
 
             <div class="card bg-dark border-info shadow-lg mt-5 mb-5 overflow-hidden">
                 <div class="card-header bg-info bg-opacity-25 text-white fw-bold border-bottom border-info">
-                    <i class="fa-duotone fa-ticket me-2"></i>CONFIDENTIAL: The "Dream Number" Event (2012)
+                    <i class="fa-duotone fa-ticket me-2"></i>CONFIDENTIAL: The "Dream Number" Event (1996)
                 </div>
                 <div class="card-body p-4">
                     <div class="row align-items-center">
@@ -50,7 +50,7 @@ $pageTitle = "Cassidy O'Connell - The Stardust Engine";
                                 For years, fans wondered how the band could afford to reject millions in licensing deals. The answer wasn't record sales. It was Cassidy.
                             </p>
                             <p class="text-light small">
-                                In 2012, while stopping for gas in Daleville, VA, Cassidy bought a single lottery ticket. She didn't buy it to get rich; she bought it because she liked the visual pattern the numbers made on the scantron sheet.
+                                In 1996, while stopping for gas in Daleville, VA, Cassidy bought a single lottery ticket. She didn't buy it to get rich; she bought it because she liked the visual pattern the numbers made on the scantron sheet.
                             </p>
                             <p class="text-light small fst-italic border-start border-2 border-info ps-3 my-3">
                                 "The numbers looked like a constellation. I just wanted to hold the paper."
