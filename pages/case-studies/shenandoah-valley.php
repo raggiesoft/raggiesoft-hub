@@ -17,7 +17,7 @@
                     </div>
                     <div class="col-md-4 mb-2 mb-md-0">
                         <i class="fa-duotone fa-map-location-dot text-secondary me-2" aria-hidden="true"></i>
-                        <strong>Loc:</strong> I-81 N / I-64 W
+                        <strong>Location:</strong> I-81 Northbound and I-64 Eastbound (Duplex from Lexington, Virginia to Staunton, Virginia)
                     </div>
                     <div class="col-md-4">
                         <i class="fa-duotone fa-user-helmet-safety text-secondary me-2" aria-hidden="true"></i>
