@@ -76,7 +76,7 @@ This repository is managed by a "Personified DevOps" ecosystem. Each component i
 - **Role:** Audio Transcoder
 - **File:** `_workspace/harper.sh`
 - **Function:** Harper lives in the studio. She recursively scans the workspace for Master WAV files and uses **FFmpeg** to generate web-optimized MP3 (320kbps) and OGG (Vorbis) mirrors.
-- **Personality:** High-energy, loud, and precise. She handles the heavy media processing pipelines so the creative flow isn't interrupted by technical codecs.****
+- **Personality:** High-energy, loud, and precise. She handles the heavy media processing pipelines so the creative flow isn't interrupted by technical codecs.
 
 ---
 
