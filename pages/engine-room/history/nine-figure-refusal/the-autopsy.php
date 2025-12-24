@@ -364,7 +364,7 @@ $pageTitle = "The Autopsy: Holly Takes Control - Evidence Item #02";
                             "But that's not why I flew across the country. I flew here because last Thursday, my mail carrier asked me for two quarters. You sent a fraudulent prospectus to my home using a bulk permit number—Permit 4021—on a single piece of mail. It arrived with 'Postage Due'."
                         </p>
                         <p class="mb-0 mt-3 text-white-50">
-                            "I had to pay fifty cents to receive your death threat, Jameson. The USPIS calls that mail fraud. I call it petty."
+                            "I had to pay fifty cents to receive your death threat, Jameson. I call it petty. The USPIS calls that mail fraud."
                         </p>
                         <p class="mb-0 mt-3 text-white fw-bold fs-5">
                             "I want my fifty cents back."
