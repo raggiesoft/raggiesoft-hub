@@ -16,6 +16,32 @@ $pageTitle = "The Interview - Epilogue";
     [data-bs-theme="dark"] .border-dark {
         border-color: #444 !important;
     }
+
+    /* Stamp Rotation for the Forms */
+    .stamp-rotate {
+        transform: rotate(-15deg);
+        opacity: 0.8;
+        mix-blend-mode: multiply;
+    }
+    [data-bs-theme="dark"] .stamp-rotate {
+        mix-blend-mode: normal;
+        color: #ff4444 !important;
+        border-color: #ff4444 !important;
+    }
+    
+    /* Form Styling */
+    .federal-form {
+        background-color: #f8f9fa;
+        color: #000;
+        transition: transform 0.3s ease;
+    }
+    [data-bs-theme="dark"] .federal-form {
+        background-color: #e0e0e0;
+        color: #000;
+    }
+    .federal-form:hover {
+        transform: translateY(-5px);
+    }
 </style>
 
 <div class="container py-5">
@@ -31,6 +57,132 @@ $pageTitle = "The Interview - Epilogue";
             <p class="lead text-muted font-monospace">
                 "We don't hire people with your... future availability issues."
             </p>
+        </div>
+    </div>
+
+    <div class="position-relative mt-2 mb-5">
+        <div class="text-center mb-5">
+            <h2 class="h4 text-dark text-uppercase fw-bold border-bottom border-secondary d-inline-block pb-2">
+                <i class="fa-solid fa-gavel me-2 text-warning"></i>The Triple Tap
+            </h2>
+            <p class="text-muted small mt-2 mx-auto" style="max-width: 600px;">
+                Holly knew a lawsuit would take years. So she called the agencies that don't need a warrant to freeze your assets. She submitted three forms at 5:01 PM.
+            </p>
+        </div>
+
+        <div class="row g-4 justify-content-center">
+            
+            <div class="col-xl-4 col-md-6">
+                <div class="federal-form shadow-lg mx-auto h-100 position-relative" style="font-family: 'Times New Roman', serif;">
+                    <div class="card-header bg-white border-bottom border-2 border-dark py-3">
+                        <div class="row align-items-center">
+                            <div class="col-2">
+                                <i class="fa-solid fa-building-columns fa-2x text-secondary opacity-50"></i>
+                            </div>
+                            <div class="col-10 text-end">
+                                <h5 class="fw-bold text-uppercase mb-0 text-dark" style="font-size: 0.8rem;">Securities & Exchange Commission</h5>
+                                <h4 class="fw-bold mt-0 mb-0 text-dark">FORM TCR</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body p-3">
+                        <div class="mb-3">
+                            <h6 class="bg-dark text-white px-2 py-1 small fw-bold text-uppercase">B. Subject of Complaint</h6>
+                            <div class="border-bottom border-secondary pb-1 small">
+                                <span class="fw-bold">Entity:</span> Omni-Global Media Corp.
+                            </div>
+                            <div class="border-bottom border-secondary pb-1 mt-2 small">
+                                <span class="fw-bold">Allegation:</span> <span class="text-danger">Material Misstatement of Financials (Ponzi Scheme)</span>
+                            </div>
+                        </div>
+                        <div class="p-2 border border-secondary bg-white small" style="min-height: 80px;">
+                            <p class="mb-0"><strong>Details:</strong> Registrant is using "OGM Capital Partners IV" (SPV) to conceal $400M in toxic debt from shareholders. Insolvency imminent.</p>
+                        </div>
+                        
+                        <div class="position-absolute bottom-0 end-0 p-3" style="pointer-events: none;">
+                             <div class="border border-4 border-danger text-danger p-1 fw-bold text-uppercase fs-6 text-center stamp-rotate" 
+                                  style="font-family: 'Courier New', monospace;">
+                                 RECEIVED<br>SEC ENFORCEMENT
+                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xl-4 col-md-6">
+                <div class="federal-form shadow-lg mx-auto h-100 position-relative" style="font-family: 'Helvetica', sans-serif;">
+                    <div class="card-header bg-white border-bottom border-2 border-dark py-3">
+                        <div class="row align-items-center">
+                            <div class="col-2">
+                                <i class="fa-solid fa-scale-balanced fa-2x text-secondary opacity-50"></i>
+                            </div>
+                            <div class="col-10 text-end">
+                                <h5 class="fw-bold text-uppercase mb-0 text-dark" style="font-size: 0.8rem;">Dept of the Treasury - IRS</h5>
+                                <h4 class="fw-bold mt-0 mb-0 text-dark">FORM 3949-A</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body p-3">
+                        <div class="mb-3">
+                            <h6 class="bg-dark text-white px-2 py-1 small fw-bold text-uppercase">1. Taxpayer Information</h6>
+                            <div class="border-bottom border-secondary pb-1 small">
+                                <span class="fw-bold">Name:</span> Omni-Global Media Corp.
+                            </div>
+                            <div class="border-bottom border-secondary pb-1 mt-2 small">
+                                <span class="fw-bold">Violation:</span> <span class="text-danger">False Documents / Failure to Pay Tax</span>
+                            </div>
+                        </div>
+                        <div class="p-2 border border-secondary bg-white small" style="min-height: 80px;">
+                            <p class="mb-0"><strong>Comments:</strong> Taxpayer has claimed depreciation on assets (Real Estate) they do not legally own. See Lease Agreement "Exhibit B."</p>
+                        </div>
+
+                        <div class="position-absolute bottom-0 end-0 p-3" style="pointer-events: none;">
+                             <div class="border border-4 border-primary text-primary p-1 fw-bold text-uppercase fs-6 text-center stamp-rotate" 
+                                  style="font-family: 'Courier New', monospace;">
+                                 IRS-CI<br>REFERRAL ACTIVE
+                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xl-4 col-md-6">
+                <div class="federal-form shadow-lg mx-auto h-100 position-relative" style="font-family: 'Courier New', monospace;">
+                    <div class="card-header bg-white border-bottom border-2 border-dark py-3">
+                        <div class="row align-items-center">
+                            <div class="col-2">
+                                <i class="fa-solid fa-envelopes-bulk fa-2x text-secondary opacity-50"></i>
+                            </div>
+                            <div class="col-10 text-end">
+                                <h5 class="fw-bold text-uppercase mb-0 text-dark" style="font-size: 0.8rem;">U.S. Postal Inspection Service</h5>
+                                <h4 class="fw-bold mt-0 mb-0 text-dark">FORM 8165</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body p-3">
+                        <div class="mb-3">
+                            <h6 class="bg-dark text-white px-2 py-1 small fw-bold text-uppercase">Nature of Complaint</h6>
+                            <div class="border-bottom border-secondary pb-1 small">
+                                <span class="fw-bold">Type:</span> 18 U.S.C. § 1341 (Mail Fraud)
+                            </div>
+                            <div class="border-bottom border-secondary pb-1 mt-2 small">
+                                <span class="fw-bold">Method:</span> <span class="text-danger">USPS First Class Mail</span>
+                            </div>
+                        </div>
+                        <div class="p-2 border border-secondary bg-white small" style="min-height: 80px;">
+                            <p class="mb-0"><strong>Narrative:</strong> Subject mailed a Prospectus for "OGM Capital" to my Virginia residence. The document contains proven material lies. Using the US Mail to execute a swindle is a federal felony.</p>
+                        </div>
+
+                        <div class="position-absolute bottom-0 end-0 p-3" style="pointer-events: none;">
+                             <div class="border border-4 border-dark text-dark p-1 fw-bold text-uppercase fs-6 text-center stamp-rotate" 
+                                  style="font-family: 'Courier New', monospace; border-style: double !important;">
+                                 USPIS<br>CASE OPENED
+                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
 
@@ -260,7 +412,7 @@ $pageTitle = "The Interview - Epilogue";
                     <p>
                         Frost waved a hand dismissively. "Accounting errors. Technicalities. The SEC will slap us with a fine and we'll move on. That's how the game is played. And that's why you need me. I can make those problems... disappear."
                     </p>
-
+                    
                     <p>
                         He leaned forward, dropping his voice to a conspiratorial whisper.
                     </p>
