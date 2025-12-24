@@ -1,0 +1,63 @@
+{
+    "common": {
+        "site": "raggiesoft",
+        "theme": "family",
+        "siteName": "The RaggieSoft Family",
+        "brandFont": ["Roboto", "sans-serif"],
+        "headerMenu": "family/header-family",
+        "footer": "family/footer-family",
+        "navbarBrandText": "RaggieSoft <span class=\"fw-light opacity-75\">// Family</span>",
+        "navbarBrandLink": "/family",
+        "ogImage": "https://assets.raggiesoft.com/family/images/scenes/paige-michael-og-image.jpg",
+        "showSidebar": true,
+        "sidebar": "family/sidebar-family"
+    },
+    "/family": {
+        "view": "pages/family/overview",
+        "title": "The RaggieSoft Family",
+        "description": "A Personified DevOps ecosystem where every server and script has a name, a face, and a purpose.",
+        "showSidebar":false
+    },
+    "/family/michael": {
+        "view": "pages/family/michael",
+        "title": "Michael P. Ragsdale | The Architect",
+        "ogTitle": "The Architect & Author",
+        "ogDescription": "The only biological human in the loop. Creator of the Stardust Universe."
+    },
+    "/family/paige": {
+        "view": "pages/family/paige",
+        "title": "Paige | Literary Editor",
+        "ogTitle": "Paige (The Safe Person)",
+        "ogDescription": "Michael's favorite sister and designated Safe Person. She handles ingestion and emotional regulation."
+    },
+    "/family/jessica": {
+        "view": "pages/family/jessica",
+        "title": "Jessica | Production Infrastructure",
+        "ogTitle": "Jessica (The Server)",
+        "ogDescription": "The eldest sister. She runs the house and holds the keys to the infrastructure."
+    },
+    "/family/sarah": {
+        "view": "pages/family/sarah",
+        "title": "Sarah | Deployment Guardian",
+        "ogTitle": "Sarah (The Guardian)",
+        "ogDescription": "She watches the perimeter and performs atomic deployments while Michael sleeps."
+    },
+    "/family/jenna": {
+        "view": "pages/family/jenna",
+        "title": "Jenna | Development & Sync",
+        "ogTitle": "Jenna (The Dev Twin)",
+        "ogDescription": "Sarah's chaotic twin. She manages the workspace and syncs assets to the cloud."
+    },
+    "/family/harper": {
+        "view": "pages/family/harper",
+        "title": "Harper | Studio Engineer",
+        "ogTitle": "Harper (The Transcoder)",
+        "ogDescription": "High-energy and loud. Recursively finding WAV files and transcoding them for the web."
+    },
+    "/family/amanda-elara": {
+        "view": "pages/family/amanda-elara",
+        "title": "Amanda & Elara | Gateway",
+        "ogTitle": "Amanda & Elara",
+        "ogDescription": "The Web Root and The Router. One holds the files, the other speaks the words."
+    }
+}
