@@ -98,10 +98,33 @@
                                     <p class="card-text small text-muted">Watches Git remotes and performs atomic updates.</p>
                                 </div>
                             </div>
+
                         </div>
+                        
                     </div>
+                    
+                </div>
+                
+            </div>
+<div class="col-md-6">
+    <div class="card h-100 border-success shadow-sm">
+        <div class="row g-0 h-100">
+            <div class="col-4">
+                <img src="https://assets.raggiesoft.com/family/images/atmospheric/amanda-elara.jpg" 
+                     class="img-fluid rounded-start h-100" 
+                     style="object-fit: cover; object-position: center;" 
+                     alt="Amanda & Elara">
+            </div>
+            <div class="col-8">
+                <div class="card-body">
+                    <h5 class="card-title"><a href="/family/amanda-elara" class="text-decoration-none stretched-link text-dark">Amanda & Elara</a></h5>
+                    <p class="card-text small text-success fw-bold mb-1">Web Root & Router</p>
+                    <p class="card-text small text-muted">The Gateway. One holds the files, the other speaks the words.</p>
                 </div>
             </div>
+        </div>
+    </div>
+</div>
         </div>
     </div>
 </div>
