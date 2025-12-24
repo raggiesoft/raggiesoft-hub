@@ -8,7 +8,7 @@
     </div>
 
     <div class="fs-5">
-        <div class="card bg-info text-info border-0 mb-4">
+        <div class="card bg-primary border-0 mb-4">
             <div class="card-body">
                 <div class="row">
                     <div class="col-md-4 mb-2 mb-md-0">
