@@ -1,6 +1,7 @@
 <div id="sticky-audio-player" 
      class="fixed-bottom border-top border-primary p-3 shadow-lg d-none" 
      style="z-index: 1050; background-color: #050508 !important; color: #E0E0FF !important;" 
+     data-turbo-permanent="true"
      data-bs-theme="dark">
      
     <div class="container">
