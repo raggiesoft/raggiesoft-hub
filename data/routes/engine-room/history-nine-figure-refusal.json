@@ -51,5 +51,9 @@
   "/engine-room/history/nine-figure-refusal/the-autopsy": {
     "title": "The Autopsy",
     "ogDescription": "The aftermath of the failed acquisition attempt."
+  },
+  "/engine-room/history/nine-figure-refusal/the-trigger": {
+    "title": "The Trigger",
+    "ogDescription": "The catalyst for the legal battle."
   }
 }
