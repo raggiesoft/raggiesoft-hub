@@ -51,7 +51,7 @@
         <hr class="my-5">
 
         <div class="p-5 mb-4 bg-light rounded-3 border">
-            <h2 class="display-6 fw-bold">The Engineering Takeaway</h2>
+            <h2 class="display-6 fw-bold"><i class="fa-duotone fa-clipboard-check me-2" aria-hidden="true"></i>The Engineering Takeaway</h2>
             <p class="lead"><strong>Logic vs. Legacy Code</strong></p>
             <p>This incident demonstrates that <strong>User Intent</strong> ("I want to try") does not always match <strong>User Behavior</strong> under load. A robust system architecture does not just hope for the best; it plans for the "Root Access" override.</p>
             <p>By understanding the geography (the code) and the user's limitations (the constraints), I was able to reroute traffic around a damaged node, ensuring the safety of the payload (Jordan) despite a catastrophic failure of the primary route. This is <strong>Empathetic Engineering</strong>.</p>
