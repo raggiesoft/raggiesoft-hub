@@ -27,7 +27,7 @@
         <h2 class="fw-bold mt-5">3. Critical Failure: The "Root Access" Override</h2>
         <p>At Exit 221, the road splits. We committed to the lane marked <strong>I-64 EAST - Richmond</strong>.</p>
         <div class="alert alert-danger border-danger" role="alert">
-            <h4 class="alert-heading">System Error: Permissions Bypassed</h4>
+            <h3 class="h4 alert-heading"><i class="fa-duotone fa-octagon-xmark me-2" aria-hidden="true"></i>System Error: Permissions Bypassed</h3>
             <p>Despite previous informed consent, the visual input of the "I-64 East" signifier triggered a fatal conflict. To Jordan's memory, I-64 equals Abuse (Virginia Beach). The logic centers of the brain (User Space) were instantly locked out. The <strong>Survival Instinct seized Root Access</strong>, overriding all logic with a single command: <em>FIGHT OR FLIGHT.</em></p>
         </div>
         <p>I was now driving a vehicle at 70mph with a passenger in total system failure. The "Informed Consent" patch had failed in the production environment.</p>
