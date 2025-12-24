@@ -4,7 +4,7 @@
     <div class="fs-5">
         <p class="lead mb-4">
             <strong>Subject:</strong> Adaptive Routing & Panic Mitigation in High-Latency Users<br>
-            <strong>Location:</strong> I-81 Northbound & I-64 Westbound (The "Gauntlet")<br>
+            <strong>Location:</strong> I-81 Northbound & I-64 Eastbound (The "Gauntlet")<br>
             <strong>Role:</strong> System Architect (Mark)
         </p>
 
