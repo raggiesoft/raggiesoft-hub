@@ -1,7 +1,6 @@
 {
     "common": {
-        "site": "raggiesoft",
-        "theme": "family",
+        "site": "family",
         "siteName": "The RaggieSoft Family",
         "brandFont": ["Roboto", "sans-serif"],
         "headerMenu": "family/header-family",
