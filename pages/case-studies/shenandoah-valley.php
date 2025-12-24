@@ -2,12 +2,11 @@
     <h1 class="display-5 fw-bold border-bottom pb-2 mb-4">Case Study: The Shenandoah Valley Gauntlet</h1>
 
     <div class="fs-5">
-        <p class="lead mb-4">
-            <strong>Subject:</strong> Adaptive Routing & Panic Mitigation in High-Latency Users<br>
-            <strong>Location:</strong> I-81 Northbound & I-64 Eastbound (The "Gauntlet")<br>
-            <strong>Role:</strong> System Architect (Mark)
-        </p>
-
+        <ul class="lead mb-4">
+            <li><strong>Subject:</strong> Adaptive Routing & Panic Mitigation in High-Latency Users</li>
+            <li><strong>Location:</strong> I-81 Northbound & I-64 Eastbound (The "Gauntlet")</li>
+            <li><strong>Role:</strong> System Architect (Mark)</li>
+        </ul>
         <p>In software architecture, we often discuss <strong>Graceful Degradation</strong>—how a system behaves when a critical component fails. Does it crash the entire server, or does it switch to a "Safe Mode" to preserve core functionality? This case study examines a real-world application of this principle during a 30-mile stress test of a user with high trauma latency.</p>
         
         <hr class="my-5">
