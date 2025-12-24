@@ -1,5 +1,18 @@
-<div class="container py-5">
-    <div class="border-bottom pb-2 mb-4 d-flex align-items-center">
+<div class="position-relative p-5 text-center bg-dark border-bottom shadow-sm" 
+     style="background-image: url('https://assets.raggiesoft.com/portfolio/images/family/scenes/paige-michael-hug.jpg'); background-size: cover; background-position: center; min-height: 65vh;">
+    <div class="position-absolute top-0 start-0 w-100 h-100 bg-black opacity-75"></div>
+
+    <div class="position-relative col-lg-8 mx-auto my-5 py-5 text-white">
+        <h1 class="display-3 fw-bold mb-3">The Heart of the System</h1>
+        <p class="lead mb-4 fs-4">Before the servers and scripts, there is connection. At the core of this "Personified DevOps" universe are Architect Michael and his favorite sister, Paige. Their bond reminds us that even complex codebases are built on human foundations.</p>
+        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+            <a href="#meet-the-architecture" class="btn btn-outline-light btn-lg px-4 gap-3 fw-bold">Explore the Family Structure</a>
+        </div>
+    </div>
+</div>
+
+<div class="container py-5" id="meet-the-architecture">
+    <div class="border-bottom pb-2 mb-4 pt-5 d-flex align-items-center">
         <i class="fa-duotone fa-people-group fa-3x text-primary me-3" aria-hidden="true"></i>
         <div>
             <h1 class="display-5 fw-bold mb-0">Meet the Architecture</h1>
