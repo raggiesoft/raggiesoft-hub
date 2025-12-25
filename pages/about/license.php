@@ -81,7 +81,7 @@
                     <p class="mb-4">
                         Separate commercial licenses (waiving the CC BY-SA requirements) are available for negotiation through <strong>RaggieSoft</strong>.
                     </p>
-                    <a href="/about/michael-ragsdale/contact" class="btn btn-dark rounded-pill px-4">
+                    <a href="/about/contact" class="btn btn-dark rounded-pill px-4">
                         <i class="fa-duotone fa-briefcase me-2"></i>Contact for Licensing
                     </a>
                 </div>
