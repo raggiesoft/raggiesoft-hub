@@ -194,7 +194,47 @@ $imagesJson = htmlspecialchars(json_encode($heroImages), ENT_QUOTES, 'UTF-8');
 <script src="https://assets.raggiesoft.com/common/js/hero-image.js"></script>
 
 <style>
-    /* Scoped Styles for Glass Cards in Immersive Container */
+    /* CRITICAL: Immersive Container Logic 
+       This positions the background images absolutely behind the content.
+    */
+    .immersive-container {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        background-color: #000; /* Fallback */
+    }
+
+    .hero-bg-layer {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        /* Smooth fade transition handled here */
+        transition: opacity 2s ease-in-out; 
+        z-index: 0;
+    }
+
+    .hero-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        /* Gradient fade for readability */
+        background: linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.8));
+    }
+
+    .content-wrapper {
+        position: relative;
+        z-index: 2; /* Ensures content sits above the image */
+    }
+
+    /* Glass Cards */
     .glass-card {
         background: rgba(0, 0, 0, 0.6);
         backdrop-filter: blur(10px);
