@@ -4,15 +4,6 @@
     "title": "Welcome Home",
     "showSidebar": false
   },
-  "/about": {
-    "view": "pages/about",
-    "showSidebar": false,
-    "brandFont": ["Audiowide", "sans-serif"],
-    "headerMenu": "header-contact",
-    "site": "portfolio",
-    "ogTitle": "The Architect's Story",
-    "ogDescription": "Learn more about the architect behind Engine Room Records and his journey in the web development space."
-  },
   "/contact": {
     "view": "pages/contact",
     "title": "Contact Channels | Michael Ragsdale",

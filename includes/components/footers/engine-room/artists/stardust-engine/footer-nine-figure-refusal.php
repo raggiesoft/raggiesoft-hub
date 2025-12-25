@@ -25,11 +25,11 @@
         background-color: #000;
         color: #000;
         padding: 0 4px;
-        user-select: none; /* Prevent users from highlighting to see text */
+        user-select: none; 
     }
     
     .redacted-text:hover {
-        cursor: help; /* Subtle hint */
+        cursor: help; 
     }
 </style>
 
@@ -89,9 +89,15 @@
             </div>
         </div>
         
-        <div class="row mt-4">
+        <div class="row mt-4 pt-3 border-top border-secondary border-opacity-25">
             <div class="col-12 text-center x-small font-monospace text-muted">
-                Document retrieved: <?php echo date("Y-m-d H:i:s"); ?> // IP: <?php echo $_SERVER['REMOTE_ADDR']; ?> // DO NOT DISTRIBUTE
+                Document retrieved: <?php echo date("Y-m-d H:i:s"); ?> // IP: <?php echo $_SERVER['REMOTE_ADDR']; ?>
+                <br>
+                <span class="opacity-75">
+                    <a href="/about/privacy" class="text-reset text-decoration-none">Privacy</a> | 
+                    <a href="/about/terms" class="text-reset text-decoration-none">Terms</a> | 
+                    <a href="/about/license" class="text-reset text-decoration-none">Content: CC BY-SA 4.0 / Code: MIT</a>
+                </span>
             </div>
         </div>
     </div>

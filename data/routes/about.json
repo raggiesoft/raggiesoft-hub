@@ -1,15 +1,90 @@
 {
-"/about/stardust-engine": {
+  "/about/stardust-engine": {
     "view": "pages/about/stardust-engine",
     "title": "About The Stardust Engine | Project Overview",
     "site": "stardust-engine",
     "theme": "ad-astra",
-    "headerMenu": "portfolio/header-portfolio",
-    "sidebar": "portfolio/sidebar-portfolio",
+    "headerMenu": "about/header-about",
+    "sidebar": "about/sidebar-about",
     "showSidebar": true,
     "navbarBrandText": "<span class=\"d-none d-md-inline\">The </span>Stardust Engine",
-    "navbarBrandLink": "/about/michael-ragsdale",
+    "navbarBrandLink": "/engine-room/artists/stardust-engine",
     "navbarBrandLogo": "https://assets.raggiesoft.com/stardust-engine/images/logo/stardust-engine-logo.png",
     "brandFont": ["Audiowide", "sans-serif"]
+  },
+  "/about/engine-room": {
+    "view": "pages/about/engine-room",
+    "title": "About Engine Room Records | Company History",
+    "site": "engine-room-records",
+    "theme": "industrial",
+    "headerMenu": "about/header-about",
+    "sidebar": "about/sidebar-about",
+    "showSidebar": true,
+    "navbarBrandText": "Engine Room<span class=\"d-none d-md-inline\"> Records</span>",
+    "navbarBrandLink": "/engine-room",
+    "navbarBrandLogo": "https://assets.raggiesoft.com/engine-room-records/images/logos/engine-room-records-logo.jpg",
+    "brandFont": ["Courier New", "monospace"]
+  },
+  "/about/family": {
+    "view": "pages/about/family/",
+    "title": "About The Family | Personified DevOps",
+    "site": "portfolio",
+    "theme": "raggiesoft",
+    "headerMenu": "about/header-about",
+    "sidebar": "about/sidebar-about",
+    "showSidebar": true,
+    "navbarBrandText": "The Family",
+    "navbarBrandLink": "/family",
+    "navbarBrandLogo": "https://assets.raggiesoft.com/family/images/logos/logo-family.jpg",
+    "brandFont": ["Roboto", "sans-serif"]
+  },
+  "/about/aethel": {
+    "view": "pages/about/aethel",
+    "title": "About The Silver Gauntlet | The Aethel Saga",
+    "site": "aethel",
+    "theme": "onyx",
+    "headerMenu": "about/header-about",
+    "sidebar": "about/sidebar-about",
+    "showSidebar": true,
+    "navbarBrandText": "The Silver Gauntlet",
+    "navbarBrandLink": "/raggiesoft-books/aethel-saga",
+    "navbarBrandLogo": "https://assets.raggiesoft.com/aethel/images/logos/silver-gauntlet-of-aethel-logo.png",
+    "brandFont": ["Cinzel", "serif"]
+  },
+  "/about/license": {
+    "view": "pages/about/license",
+    "title": "Licenses & Copyright | RaggieSoft Governance",
+    "site": "portfolio",
+    "headerMenu": "about/header-about",
+    "sidebar": "about/sidebar-about",
+    "showSidebar": true,
+    "navbarBrandText": "RaggieSoft",
+    "navbarBrandLink": "/",
+    "navbarBrandLogo": "https://assets.raggiesoft.com/portfolio/images/logos/logo-michael.png",
+    "brandFont": ["Roboto", "sans-serif"]
+  },
+  "/about/privacy": {
+    "view": "pages/privacy",
+    "title": "Privacy Policy | RaggieSoft Governance",
+    "site": "portfolio",
+    "headerMenu": "about/header-about",
+    "sidebar": "about/sidebar-about",
+    "showSidebar": true,
+    "navbarBrandText": "RaggieSoft",
+    "navbarBrandLink": "/",
+    "navbarBrandLogo": "https://assets.raggiesoft.com/portfolio/images/logos/logo-michael.png",
+    "brandFont": ["Roboto", "sans-serif"]
+  },
+  "/about/terms": {
+    "view": "pages/terms",
+    "title": "Terms of Service | RaggieSoft Governance",
+    "site": "portfolio",
+    "headerMenu": "about/header-about",
+    "sidebar": "about/sidebar-about",
+    "showSidebar": true,
+    "navbarBrandText": "RaggieSoft",
+    "navbarBrandLink": "/",
+    "navbarBrandLogo": "https://assets.raggiesoft.com/portfolio/images/logos/logo-michael.png",
+    "brandFont": ["Roboto", "sans-serif"]
   }
 }

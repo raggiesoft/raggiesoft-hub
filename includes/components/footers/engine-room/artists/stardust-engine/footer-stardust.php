@@ -12,16 +12,16 @@
 
         <p class="small mb-4">
             &copy; 1987-<?php echo date("Y"); ?> <strong>Engine Room Records, LLC</strong>.<br>
-            Content released under <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" class="text-secondary">CC BY-SA 4.0</a>.<br>
-            Protected by the <em>Forger Nation Trust</em>.
+            Narrative Content: <a href="/about/license" class="text-secondary">CC BY-SA 4.0</a> &bull; Site Code: <a href="/about/license" class="text-secondary">MIT</a><br>
+            <span class="opacity-50">Protected by the Forger Nation Trust.</span>
         </p>
 
         <ul class="list-inline small">
             <li class="list-inline-item"><a href="/engine-room" class="text-secondary text-decoration-none">Engine Room HQ</a></li>
             <li class="list-inline-item">&bull;</li>
-            <li class="list-inline-item"><a href="/" class="text-secondary text-decoration-none">RaggieSoft.com</a></li>
+            <li class="list-inline-item"><a href="/about/privacy" class="text-secondary text-decoration-none">Privacy</a></li>
             <li class="list-inline-item">&bull;</li>
-            <li class="list-inline-item"><a href="/engine-room/history/friction" class="text-secondary text-decoration-none">Legal History</a></li>
+            <li class="list-inline-item"><a href="/about/terms" class="text-secondary text-decoration-none">Terms</a></li>
         </ul>
 
     </div>

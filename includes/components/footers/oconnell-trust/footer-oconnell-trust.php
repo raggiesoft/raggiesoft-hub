@@ -26,11 +26,11 @@
         </div>
 
         <div class="d-flex justify-content-center gap-3 mt-5 small text-muted opacity-75">
-            <a href="/oconnell-trust/legal/privacy" class="text-reset text-decoration-none">Privacy Policy</a>
+            <a href="/about/privacy" class="text-reset text-decoration-none">Privacy Policy</a>
             <span>&bull;</span>
-            <a href="/oconnell-trust/legal/terms" class="text-reset text-decoration-none">Terms of Access</a>
+            <a href="/about/terms" class="text-reset text-decoration-none">Terms of Access</a>
             <span>&bull;</span>
-            <span class="text-reset">Proprietary & Confidential</span>
+            <a href="/about/license" class="text-reset text-decoration-none">Licenses (MIT/CC)</a>
         </div>
     </div>
 </footer>

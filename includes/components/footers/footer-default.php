@@ -51,11 +51,16 @@
 
         <div class="row align-items-center">
             <div class="col-md-6 text-center text-md-start small text-body-secondary">
-                &copy; 2008 &ndash; <?php echo date("Y"); ?> Michael Ragsdale. All Rights Reserved.
+                <p class="mb-1">&copy; 2008 &ndash; <?php echo date("Y"); ?> Michael Ragsdale.</p>
+                <p class="mb-0 text-muted opacity-75" style="font-size: 0.85em;">
+                    Content: <a href="/about/license" class="text-reset text-decoration-none border-bottom">CC BY-SA 4.0</a> &bull; 
+                    Code: <a href="/about/license" class="text-reset text-decoration-none border-bottom">MIT License</a>
+                </p>
             </div>
-            <div class="col-md-6 text-center text-md-end small text-body-secondary">
-                <a href="/privacy" class="text-decoration-none text-reset me-2">Privacy</a>
-                <a href="/terms" class="text-decoration-none text-reset">Terms</a>
+            <div class="col-md-6 text-center text-md-end small text-body-secondary mt-3 mt-md-0">
+                <a href="/about/privacy" class="text-decoration-none text-reset me-3">Privacy</a>
+                <a href="/about/terms" class="text-decoration-none text-reset me-3">Terms</a>
+                <a href="/about/license" class="text-decoration-none text-reset">Licenses</a>
             </div>
         </div>
     </div>
@@ -80,6 +85,5 @@ $konami_config = [
     'btn_style'  => 'btn-outline-light'
 ];
 
-// Corrected path to match file structure (konami.php instead of konami-modal.php)
 include ROOT_PATH . '/includes/components/easter-eggs/konami.php';
 ?>

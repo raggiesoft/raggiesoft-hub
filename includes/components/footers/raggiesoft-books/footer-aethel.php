@@ -41,13 +41,13 @@
                         </a>
                     </li>
                     <li class="nav-item mb-2">
-                        <a href="/raggiesoft-books/aethel-saga/soundtrack" class="nav-link p-0 text-secondary hover-text-white">
-                            <i class="fa-duotone fa-compact-disc me-2"></i>Original Soundtrack
+                        <a href="/about/privacy" class="nav-link p-0 text-secondary hover-text-white">
+                            <i class="fa-duotone fa-user-shield me-2"></i>Privacy Policy
                         </a>
                     </li>
                     <li class="nav-item mb-2">
-                        <a href="/raggiesoft-books/aethel-saga/map" class="nav-link p-0 text-secondary hover-text-white text-decoration-line-through opacity-50" title="Coming Soon">
-                            <i class="fa-duotone fa-map-location-dot me-2"></i>Map of Aethel
+                        <a href="/about/terms" class="nav-link p-0 text-secondary hover-text-white">
+                            <i class="fa-duotone fa-scroll me-2"></i>Terms & Licenses
                         </a>
                     </li>
                 </ul>
@@ -79,11 +79,12 @@
 
         <div class="row align-items-center small text-secondary">
             <div class="col-md-6 text-center text-md-start font-monospace">
-                &copy; <?php echo date("Y"); ?> RaggieSoft Publishing. All Rights Reserved.
+                &copy; <?php echo date("Y"); ?> RaggieSoft Publishing.<br>
+                <span class="opacity-50">Content: CC BY-SA 4.0 | Code: MIT</span>
             </div>
             <div class="col-md-6 text-center text-md-end mt-3 mt-md-0">
                 <span class="opacity-50 me-3">V.<?php echo date("y.m"); ?> (Iron Era Build)</span>
-                <a href="#" class="text-secondary text-decoration-none hover-text-warning"><i class="fa-brands fa-github"></i></a>
+                <a href="https://github.com/raggiesoft" class="text-secondary text-decoration-none hover-text-warning"><i class="fa-brands fa-github"></i></a>
             </div>
         </div>
     </div>
@@ -91,7 +92,6 @@
 
 <?php
 // EASTER EGG: The Architect's Cheat Code
-// This overrides the default Konami code with a theme-specific reward.
 $konami_config = [
     'title'      => 'The Architect\'s Vault',
     'icon'       => 'fa-duotone fa-dungeon',
@@ -106,15 +106,12 @@ $konami_config = [
         <hr class="border-dark opacity-25">
         <p class="small fst-italic mb-0">Debug Mode: <strong>ACTIVE</strong></p>',
     'btn_text'   => 'Enter The Vault',
-    'btn_link'   => '/raggiesoft-books/aethel-saga/vault' // Future hidden page?
+    'btn_link'   => '/raggiesoft-books/aethel-saga/vault'
 ];
 
-// Include the logic to make the code work
 include ROOT_PATH . '/includes/components/easter-eggs/konami.php';
 ?>
-
 <style>
-    /* Footer Specific Micro-Interactions */
     .hover-text-white:hover { color: #fff !important; transition: color 0.3s ease; }
     .hover-text-warning:hover { color: #d4af37 !important; transition: color 0.3s ease; }
     .hover-border-warning:hover { border-color: #d4af37 !important; color: #fff !important; }
