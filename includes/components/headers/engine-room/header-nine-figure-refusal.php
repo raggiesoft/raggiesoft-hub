@@ -128,10 +128,10 @@ $isEpilogue = str_contains($uri, '/frost-interview');
         </ul>
     </li>
 
-    <li class="nav-item border-start border-secondary ms-2 ps-3 d-none d-lg-block">
-        <a class="nav-link text-muted" href="/engine-room/history">
-            <i class="fa-duotone fa-arrow-turn-up me-2"></i>Exit
-        </a>
-    </li>
+    <li class="nav-item border-start ms-2 ps-2">
+      <a class="nav-link" href="/engine-room">
+        <i class="fa-duotone fa-arrow-right-from-bracket me-2 text-secondary"></i><span class="text-secondary small">Engine Room HQ</span>
+      </a>
+  </li>
 
 </ul>

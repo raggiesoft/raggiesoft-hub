@@ -149,5 +149,10 @@ $isHistory = (
       </li>
     </ul>
   </li>
+  <li class="nav-item border-start ms-2 ps-2">
+      <a class="nav-link" href="/">
+        <i class="fa-duotone fa-arrow-right-from-bracket me-2 text-secondary"></i><span class="text-secondary small">Exit to RaggieSoft</span>
+      </a>
+  </li>
 
 </ul>
