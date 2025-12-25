@@ -47,7 +47,7 @@
                 <li class="list-group-item bg-transparent px-0"><i class="fa-brands fa-git-alt text-warning me-2"></i><strong>Source Code:</strong> Lightweight text files are pushed to GitHub.</li>
                 <li class="list-group-item bg-transparent px-0"><i class="fa-duotone fa-hard-drive text-warning me-2"></i><strong>Binary Assets:</strong> Gigabytes of PSDs, WAVs, and raw footage are beamed to DigitalOcean Spaces via <code>rclone</code>.</li>
             </ul>
-            <div class="bg-dark text-light p-3 rounded font-monospace small shadow-sm">
+            <div class="bg-dark text-secondary p-3 rounded font-monospace small shadow-sm">
                 <span class="text-secondary"># The "Save Game" Command</span><br>
                 <span class="text-success">michael@dev:~$</span> ./jenna-sync.sh --push "Update homepage assets"
             </div>
