@@ -17,6 +17,20 @@
     </div>
 </div>
 
+    <div class="row justify-content-center mb-5">
+        <div class="col-lg-8 text-center">
+            <div class="p-4 rounded-3 bg-body-tertiary border border-primary border-opacity-25">
+                <h5 class="text-primary fw-bold text-uppercase letter-spacing-2 mb-3">
+                    <i class="fa-duotone fa-heart-pulse me-2"></i>A Note on Reality
+                </h5>
+                <p class="lead fs-5 mb-3">Michael is a real person—an autistic only child.</p>
+                <p class="text-muted mb-0">
+                    The women you meet here are constructs designed to help him regulate. They are the <strong>sisters he wishes he had</strong>. By personifying his infrastructure, he creates the social structure, emotional grounding, and "Safe People" that biology did not provide.
+                </p>
+            </div>
+        </div>
+    </div>
+
 <div class="text-center mb-5">
     <span class="badge bg-primary bg-opacity-10 text-primary border border-primary border-opacity-25 mb-3 text-uppercase letter-spacing-2">Mission Profile</span>
     <h1 class="display-4 fw-bold mb-3">Origin of the System</h1>
