@@ -110,22 +110,22 @@ global $cdn_root;
             </div>
 
             <div class="col-lg-6 mb-4">
-                <div class="card h-100 border-0 shadow-sm bg-primary text-white overflow-hidden">
+                <a href="/family" class="card h-100 border-0 shadow-sm bg-primary text-white overflow-hidden text-decoration-none hover-lift">
                     <div class="card-body p-4">
                         <div class="d-flex align-items-center mb-3">
                             <div class="icon-box bg-white text-primary rounded-circle me-3 d-flex align-items-center justify-content-center" style="width:50px; height:50px;">
-                                <i class="fa-solid fa-book-sparkles"></i>
+                                <i class="fa-duotone fa-people-group"></i>
                             </div>
-                            <h4 class="h5 fw-bold mb-0">The Narrative</h4>
+                            <h4 class="h5 fw-bold mb-0">The Family</h4>
                         </div>
                         <p class="card-text text-white opacity-75 mb-4">
-                            My technical logic is balanced by creative exploration. From <em>The Stardust Engine</em> to <em>Veridia Prime</em>, I construct fictional universes that explore resilience and family.
+                            My infrastructure is alive. This isn't just code; it's a <strong>"Personified DevOps"</strong> ecosystem. Meet <em>Jessica</em> (Production), <em>Paige</em> (Editor), and the other constructs who run the servers.
                         </p>
-                        <!--<a href="/fiction" class="btn btn-outline-light rounded-pill btn-sm stretched-link">
-                            Explore the Library <i class="fa-solid fa-arrow-right ms-1"></i>
-                        </a>-->
+                        <span class="btn btn-outline-light rounded-pill btn-sm stretched-link">
+                            Meet the Sisters <i class="fa-solid fa-arrow-right ms-1"></i>
+                        </span>
                     </div>
-                </div>
+                </a>
             </div>
         </div>
     </div>
