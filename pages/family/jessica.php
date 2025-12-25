@@ -47,7 +47,7 @@
                 <li class="list-group-item bg-transparent px-0"><i class="fa-duotone fa-network-wired text-success me-2"></i><strong>Hosting:</strong> Runs Nginx, PHP-FPM, and MySQL.</li>
                 <li class="list-group-item bg-transparent px-0"><i class="fa-duotone fa-key text-success me-2"></i><strong>Access Control:</strong> She is the only entity Michael connects to directly.</li>
             </ul>
-            <div class="bg-dark text-light p-3 rounded font-monospace small shadow-sm">
+            <div class="bg-dark text-secondary p-3 rounded font-monospace small shadow-sm">
                 <span class="text-secondary"># Accessing Production</span><br>
                 <span class="text-success">michael@local:~$</span> ssh michael@jessica.raggiesoft.com
             </div>
@@ -67,20 +67,18 @@
 
 <div class="row">
     <div class="col-12">
-        <div class="card border-success shadow-lg font-monospace" style="background-color: #0d1117; color: #c9d1d9;">
-            <div class="card-header border-success bg-success bg-opacity-25 text-success fw-bold d-flex justify-content-between align-items-center">
+        <div class="card theme-terminal shadow-lg font-monospace">
+            <div class="card-header fw-bold d-flex justify-content-between align-items-center">
                 <span><i class="fa-duotone fa-laptop-code me-2"></i>michael@jessica: ~</span>
-                <span class="badge bg-success text-dark">ONLINE</span>
+                <span class="badge text-bg-success">ONLINE</span>
             </div>
             <div class="card-body p-4">
-                <div style="opacity: 1;">
+                <div>
                     <p class="mb-1"><span class="text-success">michael@jessica:~$</span> uptime</p>
-                    
-                    <p class="mb-3" style="color: #8b949e;"> 14:02:35 up 412 days, 3:14,  1 user,  load average: 0.08, 0.03, 0.01</p>
+                    <p class="mb-3 text-muted"> 14:02:35 up 412 days, 3:14,  1 user,  load average: 0.08, 0.03, 0.01</p>
                     
                     <p class="mb-1"><span class="text-success">michael@jessica:~$</span> systemctl status family.service</p>
-                    
-                    <div class="mb-0" style="color: #8b949e;">
+                    <div class="mb-0 text-muted">
                         ● family.service - RaggieSoft Family Ecosystem<br>
                         &nbsp;&nbsp;&nbsp;Loaded: loaded (/etc/systemd/system/family.service; enabled; vendor preset: enabled)<br>
                         &nbsp;&nbsp;&nbsp;Active: <span class="text-success fw-bold">active (running)</span> since Sat 2023-09-23 09:15:10 UTC; 1y 2 months ago<br>
