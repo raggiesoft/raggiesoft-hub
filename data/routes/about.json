@@ -24,6 +24,7 @@
     "navbarBrandText": "<span class=\"d-none d-md-inline\">The </span>Stardust Engine",
     "navbarBrandLink": "/engine-room/artists/stardust-engine",
     "navbarBrandLogo": "https://assets.raggiesoft.com/stardust-engine/images/logo/stardust-engine-logo.png",
+    "navbarBrandAlt": "The Stardust Engine Retro Logo",
     "brandFont": ["Audiowide", "sans-serif"]
   },
   "/about/engine-room": {
@@ -37,10 +38,11 @@
     "navbarBrandText": "Engine Room<span class=\"d-none d-md-inline\"> Records</span>",
     "navbarBrandLink": "/engine-room",
     "navbarBrandLogo": "https://assets.raggiesoft.com/engine-room-records/images/logos/engine-room-records-logo.jpg",
+    "navbarBrandAlt": "Engine Room Records Industrial Logo",
     "brandFont": ["Courier New", "monospace"]
   },
   "/about/family": {
-    "view": "pages/about/family/",
+    "view": "pages/about/family",
     "title": "About The Family | Personified DevOps",
     "site": "portfolio",
     "theme": "raggiesoft",
@@ -50,6 +52,7 @@
     "navbarBrandText": "The Family",
     "navbarBrandLink": "/family",
     "navbarBrandLogo": "https://assets.raggiesoft.com/family/images/logos/logo-family.jpg",
+    "navbarBrandAlt": "The RaggieSoft Family Crest",
     "brandFont": ["Roboto", "sans-serif"]
   },
   "/about/aethel": {
@@ -63,6 +66,7 @@
     "navbarBrandText": "The Silver Gauntlet",
     "navbarBrandLink": "/raggiesoft-books/aethel-saga",
     "navbarBrandLogo": "https://assets.raggiesoft.com/aethel/images/logos/silver-gauntlet-of-aethel-logo.png",
+    "navbarBrandAlt": "Silver Gauntlet of Aethel Logo",
     "brandFont": ["Cinzel", "serif"]
   },
   "/about/license": {
@@ -75,6 +79,7 @@
     "navbarBrandText": "RaggieSoft",
     "navbarBrandLink": "/",
     "navbarBrandLogo": "https://assets.raggiesoft.com/portfolio/images/logos/logo-michael.png",
+    "navbarBrandAlt": "RaggieSoft Official Logo",
     "brandFont": ["Roboto", "sans-serif"]
   },
   "/about/privacy": {
@@ -87,6 +92,7 @@
     "navbarBrandText": "RaggieSoft",
     "navbarBrandLink": "/",
     "navbarBrandLogo": "https://assets.raggiesoft.com/portfolio/images/logos/logo-michael.png",
+    "navbarBrandAlt": "RaggieSoft Official Logo",
     "brandFont": ["Roboto", "sans-serif"]
   },
   "/about/terms": {
@@ -99,6 +105,7 @@
     "navbarBrandText": "RaggieSoft",
     "navbarBrandLink": "/",
     "navbarBrandLogo": "https://assets.raggiesoft.com/portfolio/images/logos/logo-michael.png",
+    "navbarBrandAlt": "RaggieSoft Official Logo",
     "brandFont": ["Roboto", "sans-serif"]
   }
 }
