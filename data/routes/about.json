@@ -1,4 +1,18 @@
 {
+  "/about": {
+    "view": "pages/about/overview",
+    "title": "About RaggieSoft | The Architect's Story",
+    "site": "raggiesoft-corporate",
+    "theme": "raggiesoft",
+    "headerMenu": "about/header-about",
+    "sidebar": "about/sidebar-about",
+    "showSidebar": false,
+    "navbarBrandText": "RaggieSoft",
+    "navbarBrandLink": "/",
+    "navbarBrandLogo": "https://assets.raggiesoft.com/portfolio/images/logos/logo-michael.png",
+    "navbarBrandAlt": "RaggieSoft Logo",
+    "brandFont": ["Roboto", "sans-serif"]
+  },
   "/about/stardust-engine": {
     "view": "pages/about/stardust-engine",
     "title": "About The Stardust Engine | Project Overview",

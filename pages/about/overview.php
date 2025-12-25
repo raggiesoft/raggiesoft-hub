@@ -29,9 +29,9 @@ $imagesJson = htmlspecialchars(json_encode($heroImages), ENT_QUOTES, 'UTF-8');
         
         <div class="text-center mb-5">
             <img src="https://assets.raggiesoft.com/raggiesoft-corporate/images/logo/raggiesoft-logo.png" 
-                 alt="RaggieSoft" 
-                 class="mb-3 opacity-75"
-                 style="width: 80px; height: 80px; object-fit: contain; filter: drop-shadow(0 0 10px rgba(255,255,255,0.3));">
+                alt="RaggieSoft" 
+                class="mb-3 opacity-75 logo-white-glow"
+                style="width: 80px; height: 80px; object-fit: contain;">
             <h1 class="display-3 fw-bold text-uppercase text-white text-shadow mb-3" style="font-family: 'Audiowide', cursive;">
                 Mission Profile
             </h1>
