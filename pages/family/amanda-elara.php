@@ -45,7 +45,7 @@
             <ul class="list-group list-group-flush bg-transparent mb-4">
                 <li class="list-group-item bg-transparent px-0">
                     <i class="fa-duotone fa-folder-closed me-2" style="color: var(--family-amanda);"></i>
-                    <strong>Amanda (The Directory):</strong> She is the physical location <code>/var/www/amanda/</code>. She holds the files, the assets, and the secrets. She is "read-only" to the outside world.
+                    <strong>Amanda (The Directory):</strong> She is the physical location <code>/amanda</code>. She holds the files, the assets, and the secrets. She is "read-only" to the outside world.
                 </li>
                 <li class="list-group-item bg-transparent px-0">
                     <i class="fa-duotone fa-diamond-turn-right me-2" style="color: var(--family-amanda);"></i>
