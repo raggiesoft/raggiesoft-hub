@@ -21,9 +21,9 @@ $request_uri = $_SERVER['REQUEST_URI'] ?? '/';
     </ul>
   </li>
 
-  <li class="nav-item ms-lg-3">
-    <a class="btn btn-outline-secondary btn-sm d-flex align-items-center mt-2 mt-lg-0" href="/">
-        <i class="fa-duotone fa-arrow-left me-2"></i>Back to RaggieSoft
-    </a>
+  <li class="nav-item border-start ms-2 ps-2">
+      <a class="nav-link" href="/">
+        <i class="fa-duotone fa-arrow-right-from-bracket me-2 text-secondary"></i><span class="text-secondary small">Exit to RaggieSoft</span>
+      </a>
   </li>
 </ul>
