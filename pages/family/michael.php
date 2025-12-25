@@ -1,11 +1,11 @@
-<div class="glass-header text-white p-0 overflow-hidden">
+<div class="glass-header p-0 overflow-hidden">
     <div class="row g-0">
         <div class="col-lg-6 order-lg-2 min-vh-50 position-relative" 
              style="background-image: url('https://assets.raggiesoft.com/family/images/atmospheric/michael.jpg'); background-size: cover; background-position: center;">
              <div class="position-absolute w-100 h-100 bg-primary opacity-10 mix-blend-overlay"></div>
         </div>
         
-        <div class="col-lg-6 order-lg-1 d-flex align-items-center p-5 bg-dark">
+        <div class="col-lg-6 order-lg-1 d-flex align-items-center p-5">
             <div class="px-lg-5">
                 <div class="d-flex align-items-center mb-3">
                     <span class="badge bg-primary text-white me-2"><i class="fa-duotone fa-fingerprint me-2"></i>Human</span>
@@ -14,7 +14,7 @@
                 <h1 class="display-3 fw-bold">Michael P. Ragsdale</h1>
                 <p class="lead text-primary">The Architect & Author</p>
                 <figure class="border-start border-primary ps-4 mt-4">
-                    <blockquote class="blockquote text-white-50 fs-5">
+                    <blockquote class="blockquote text-muted fs-5">
                         <p>"I don't just write code to solve problems. I write code to build a world where I make sense."</p>
                     </blockquote>
                 </figure>
