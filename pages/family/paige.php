@@ -6,7 +6,7 @@
         <div class="col-lg-4 position-relative" style="min-height: 300px;">
             <img src="https://assets.raggiesoft.com/family/images/atmospheric/paige.jpg" 
                  class="position-absolute w-100 h-100" 
-                 style="object-fit: cover; object-position: center;" 
+                 style="object-fit: cover; object-position: center top;" 
                  alt="Paige">
             <div class="position-absolute w-100 h-100 bg-info opacity-25 mix-blend-overlay"></div>
         </div>
