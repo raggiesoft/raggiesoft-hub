@@ -1,7 +1,15 @@
 <div class="position-relative p-5 text-center bg-dark border-bottom shadow-sm" 
      style="background-image: url('https://assets.raggiesoft.com/family/images/scenes/paige-michael-hug.jpg'); background-size: cover; background-position: center; min-height: 60vh;">
+    
     <div class="position-absolute top-0 start-0 w-100 h-100 bg-black opacity-75"></div>
+    
     <div class="position-relative col-lg-8 mx-auto my-5 py-5 text-white">
+        
+        <img src="https://assets.raggiesoft.com/family/images/logos/logo-family.png" 
+             alt="The RaggieSoft Family" 
+             class="rounded-circle shadow-lg mb-4 border border-2 border-white border-opacity-50"
+             width="140" height="140">
+
         <h1 class="display-3 fw-bold mb-3">The RaggieSoft Family</h1>
         <p class="lead mb-4 fs-4">A "Personified DevOps" ecosystem where every server and script has a name, a face, and a purpose.</p>
         <p class="fst-italic opacity-75">"We don't just run code; we live it."</p>
