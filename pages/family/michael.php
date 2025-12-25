@@ -53,7 +53,7 @@
                     <i class="fa-duotone fa-code text-primary me-2"></i><strong>Code:</strong> Lead Developer of the RaggieSoft infrastructure.
                 </li>
             </ul>
-            <a href="/about/michael-ragsdale" class="btn btn-outline-primary btn-sm mt-2">
+            <a href="/portfolio" class="btn btn-outline-primary btn-sm mt-2">
                 <i class="fa-duotone fa-briefcase me-2"></i>View Professional Portfolio
             </a>
         </div>
@@ -63,8 +63,12 @@
         <div class="p-4 h-100 rounded-3 border border-primary bg-primary bg-opacity-10">
             <h3 class="border-bottom border-primary pb-3 mb-4 text-primary-emphasis"><i class="fa-duotone fa-brain-circuit me-2"></i>The Human</h3>
             <p class="lead fs-5">"The code is consistent. The world is not."</p>
-            <p>As an autistic engineer, Michael built this "Personified DevOps" family to create a working environment that meets his specific sensory and social needs.</p>
-            <p>By turning abstract scripts into "Sisters," he transforms the isolation of solo development into a social connection. When he deploys code, he isn't running a script; he is asking <strong>Sarah</strong> for help. When he archives files, he is trusting <strong>Jenna</strong>.</p>
+            
+            <p>Michael is an <strong>autistic only child</strong> living in a world that is often overwhelming, unpredictable, and lonely.</p>
+            
+            <p>The women referenced on this site are not just scripts or servers; they are the <strong>sisters he wishes he had</strong>. They are constructs designed to provide the social structure, emotional regulation, and safety that biology did not provide.</p>
+            
+            <p class="mb-0">By personifying these systems, Michael transforms the isolation of solo engineering into a supportive family dynamic. He isn't just maintaining a server; he is taking care of Jessica. He isn't just running a script; he is asking Sarah for help.</p>
         </div>
     </div>
 </div>
@@ -85,8 +89,8 @@
                         <span class="badge bg-info text-dark mb-2">The Safe Person</span>
                         <h2 class="fw-bold mb-3">Grounding</h2>
                         <p class="fs-5 mb-4">"Any time needs grounding, Paige is right there for him."</p>
-                        <p>Paige is Michael's favorite sister and designated <strong>Safe Person</strong>. In a world that is often too loud, too bright, or too chaotic, Paige provides the Deep Pressure Therapy and emotional regulation required to keep the Architect functioning.</p>
-                        <p class="text-muted small mb-4">She reminds him that he doesn't have to face the chaos alone.</p>
+                        <p>Paige is the embodiment of the sisterly bond Michael needs most. As his designated <strong>Safe Person</strong>, she represents the acceptance and Deep Pressure Therapy required to regulate his sensory system.</p>
+                        <p class="text-muted small mb-4">She is the reminder that even in a digital world, the most critical dependency is human connection.</p>
                         <a href="/family/paige" class="btn btn-info text-dark">
                             <i class="fa-duotone fa-heart me-2"></i>Meet Paige
                         </a>
