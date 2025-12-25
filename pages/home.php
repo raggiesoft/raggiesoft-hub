@@ -33,7 +33,7 @@
 <section id="network-spokes" class="py-5 bg-body-tertiary" aria-labelledby="spokes-title">
   <div class="container-lg">
     
-    <div class="row g-4 row-cols-1 row-cols-md-2 row-cols-lg-3 justify-content-center">
+    <div class="row g-4 row-cols-1 row-cols-md-2 justify-content-center mb-5">
 
       <div class="col">
         <?php
@@ -74,6 +74,10 @@
           include __DIR__ . '/../includes/components/card.php';
         ?>
       </div>
+      
+    </div>
+
+    <div class="row g-4 row-cols-1 row-cols-md-2 row-cols-lg-3 justify-content-center">
 
       <div class="col">
         <?php
