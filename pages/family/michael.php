@@ -1,23 +1,36 @@
-<div class="glass-header p-0 overflow-hidden">
+<div class="card mb-5 border-0 shadow-sm overflow-hidden text-white" style="background-color: var(--bs-dark);">
     <div class="row g-0">
-        <div class="col-lg-6 order-lg-2 min-vh-50 position-relative" 
-             style="background-image: url('https://assets.raggiesoft.com/family/images/atmospheric/michael.jpg'); background-size: cover; background-position: center;">
-             <div class="position-absolute w-100 h-100 bg-primary opacity-10 mix-blend-overlay"></div>
+        <div class="col-lg-4 position-relative" style="min-height: 300px;">
+            <img src="https://assets.raggiesoft.com/family/images/atmospheric/michael.jpg" 
+                 class="position-absolute w-100 h-100" 
+                 style="object-fit: cover; object-position: center;" 
+                 alt="Michael P. Ragsdale">
+            <div class="position-absolute w-100 h-100 bg-primary opacity-25 mix-blend-overlay"></div>
         </div>
         
-        <div class="col-lg-12 order-lg-1 d-flex align-items-center p-5">
-            <div class="px-lg-5">
-                <div class="d-flex align-items-center mb-3">
-                    <span class="badge bg-primary text-white me-2"><i class="fa-duotone fa-fingerprint me-2"></i>Human</span>
-                    <span class="badge border border-primary text-primary bg-transparent">The Creator</span>
+        <div class="col-lg-8 d-flex align-items-center">
+            <div class="card-body p-4 p-lg-5 position-relative">
+                <div class="position-absolute top-0 start-0 w-100 h-100 bg-gradient-dark opacity-50 z-0"></div>
+                
+                <div class="position-relative z-1">
+                    <div class="d-flex align-items-center mb-3">
+                        <span class="badge bg-primary text-white me-2">
+                            <i class="fa-duotone fa-fingerprint me-2"></i>Human
+                        </span>
+                        <span class="badge border border-primary text-primary bg-transparent">
+                            The Creator
+                        </span>
+                    </div>
+                    
+                    <h1 class="display-4 fw-bold mb-2">Michael P. Ragsdale</h1>
+                    <p class="lead text-primary mb-4">The Architect & Author</p>
+                    
+                    <figure class="border-start border-primary ps-3 mb-0">
+                        <blockquote class="blockquote fs-6 mb-0 text-white-50">
+                            <p class="fst-italic mb-0">"I don't just write code to solve problems. I write code to build a world where I make sense."</p>
+                        </blockquote>
+                    </figure>
                 </div>
-                <h1 class="display-3 fw-bold">Michael P. Ragsdale</h1>
-                <p class="lead text-primary">The Architect & Author</p>
-                <figure class="border-start border-primary ps-4 mt-4">
-                    <blockquote class="blockquote text-muted fs-5">
-                        <p>"I don't just write code to solve problems. I write code to build a world where I make sense."</p>
-                    </blockquote>
-                </figure>
             </div>
         </div>
     </div>
