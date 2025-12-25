@@ -1,5 +1,5 @@
 <div class="position-relative p-5 text-center bg-dark border-bottom shadow-sm" 
-     style="background-image: url('https://assets.raggiesoft.com/portfolio/images/family/scenes/paige-michael-stardust-hug.jpg'); background-size: cover; background-position: center; min-height: 60vh;">
+     style="background-image: url('https://assets.raggiesoft.com/family/images/family/scenes/paige-michael-stardust-hug.jpg'); background-size: cover; background-position: center; min-height: 60vh;">
     <div class="position-absolute top-0 start-0 w-100 h-100 bg-black opacity-75"></div>
     <div class="position-relative col-lg-8 mx-auto my-5 py-5 text-white">
         <h1 class="display-3 fw-bold mb-3">The RaggieSoft Family</h1>
@@ -14,7 +14,7 @@
             <h3 class="border-bottom pb-2 mb-4 text-primary"><i class="fa-duotone fa-fingerprint me-2"></i>The Creator</h3>
             <div class="card shadow-sm hover-lift transition-all border-primary border-opacity-25">
                 <div class="card-body p-4 d-flex align-items-center">
-                    <img src="https://assets.raggiesoft.com/portfolio/images/family/atmospheric/michael.jpg" 
+                    <img src="https://assets.raggiesoft.com/family/images/family/atmospheric/michael.jpg" 
                          class="rounded-circle me-4 shadow-sm" 
                          width="100" height="100" 
                          style="object-fit:cover;" 
@@ -38,7 +38,7 @@
                     <div class="card h-100 border-info shadow-sm">
                         <div class="row g-0 h-100">
                             <div class="col-4">
-                                <img src="https://assets.raggiesoft.com/portfolio/images/family/atmospheric/paige.jpg" class="img-fluid rounded-start h-100" style="object-fit: cover;" alt="Paige">
+                                <img src="https://assets.raggiesoft.com/family/images/family/atmospheric/paige.jpg" class="img-fluid rounded-start h-100" style="object-fit: cover;" alt="Paige">
                             </div>
                             <div class="col-8">
                                 <div class="card-body">
@@ -55,7 +55,7 @@
                     <div class="card h-100 border-success shadow-sm">
                         <div class="row g-0 h-100">
                             <div class="col-4">
-                                <img src="https://assets.raggiesoft.com/portfolio/images/family/atmospheric/jessica.jpg" class="img-fluid rounded-start h-100" style="object-fit: cover;" alt="Jessica">
+                                <img src="https://assets.raggiesoft.com/family/images/family/atmospheric/jessica.jpg" class="img-fluid rounded-start h-100" style="object-fit: cover;" alt="Jessica">
                             </div>
                             <div class="col-8">
                                 <div class="card-body">
@@ -72,7 +72,7 @@
                     <div class="card h-100 border-primary shadow-sm">
                         <div class="row g-0 h-100">
                             <div class="col-4">
-                                <img src="https://assets.raggiesoft.com/portfolio/images/family/atmospheric/harper.jpg" class="img-fluid rounded-start h-100" style="object-fit: cover;" alt="Harper">
+                                <img src="https://assets.raggiesoft.com/family/images/family/atmospheric/harper.jpg" class="img-fluid rounded-start h-100" style="object-fit: cover;" alt="Harper">
                             </div>
                             <div class="col-8">
                                 <div class="card-body">
@@ -89,7 +89,7 @@
                     <div class="card h-100 border-warning shadow-sm">
                         <div class="row g-0 h-100">
                             <div class="col-4">
-                                <img src="https://assets.raggiesoft.com/portfolio/images/family/atmospheric/sarah.jpg" class="img-fluid rounded-start h-100" style="object-fit: cover;" alt="Sarah">
+                                <img src="https://assets.raggiesoft.com/family/images/family/atmospheric/sarah.jpg" class="img-fluid rounded-start h-100" style="object-fit: cover;" alt="Sarah">
                             </div>
                             <div class="col-8">
                                 <div class="card-body">
