@@ -28,15 +28,12 @@
                                 All source code, scripts (Bash/Python), and web architecture patterns found on <strong>RaggieSoft.com</strong> or the <strong>raggiesoft-hub</strong> GitHub repository are open source.
                             </p>
                             <p class="card-text small text-muted flex-grow-1">
-                                You are free to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, provided that the following copyright notice is included in all copies or substantial portions of the Software:
+                                You are free to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, provided that the copyright notice is included.
                             </p>
-                            <div class="bg-body-tertiary p-3 rounded border font-monospace small text-muted mb-3">
-                                Copyright &copy; <?php echo date("Y"); ?> Michael P. Ragsdale<br><br>
-                                Permission is hereby granted, free of charge... to deal in the Software without restriction...
-                            </div>
-                            <a href="https://opensource.org/licenses/MIT" target="_blank" class="btn btn-outline-primary btn-sm mt-auto">
-                                <i class="fa-solid fa-external-link me-2"></i>Read Full MIT License
-                            </a>
+                            
+                            <button type="button" class="btn btn-outline-primary btn-sm mt-auto" data-bs-toggle="modal" data-bs-target="#mitLicenseModal">
+                                <i class="fa-solid fa-file-contract me-2"></i>Read Full MIT License
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -89,4 +86,33 @@
 
         </div>
     </div>
+</div>
+
+<div class="modal fade" id="mitLicenseModal" tabindex="-1" aria-labelledby="mitLicenseLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-header bg-primary text-white">
+        <h5 class="modal-title fw-bold" id="mitLicenseLabel">
+            <i class="fa-brands fa-github me-2"></i>The MIT License (MIT)
+        </h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body p-4">
+        <div class="font-monospace small text-muted" style="background-color: #f8f9fa; padding: 20px; border-radius: 5px; border: 1px solid #dee2e6;">
+            <p class="fw-bold text-dark">Copyright &copy; <?php echo date("Y"); ?> Michael P. Ragsdale</p>
+            
+            <p>Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:</p>
+            
+            <p>The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.</p>
+            
+            <p class="mb-0 text-uppercase fw-bold text-danger">
+                The Software is provided "as is", without warranty of any kind, express or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose and noninfringement. In no event shall the authors or copyright holders be liable for any claim, damages or other liability, whether in an action of contract, tort or otherwise, arising from, out of or in connection with the Software or the use or other dealings in the Software.
+            </p>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
 </div>
