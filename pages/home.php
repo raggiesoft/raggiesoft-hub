@@ -58,7 +58,7 @@
       <div class="col">
         <?php
           $props = [
-            'imgSrc' => 'https://assets.raggiesoft.com/common/images/mragsdale-square.jpg', // Using logo as corporate rep
+            'imgSrc' => 'https://assets.raggiesoft.com/portfolio/images/logos/logo-michael.png', // Using logo as corporate rep
             'imgAlt' => 'Michael P. Ragsdale',
             'fallbackText' => 'Portfolio',
             'title' => 'Michael P. Ragsdale',
