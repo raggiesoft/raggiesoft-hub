@@ -5,8 +5,9 @@
 $request_uri = $_SERVER['REQUEST_URI'] ?? '/';
 $isHub      = ($request_uri === '/about/michael-ragsdale');
 $isResume   = (str_starts_with($request_uri, '/about/michael-ragsdale/resume'));
-$isProfile  = (str_starts_with($request_uri, '/about/michael-ragsdale/profile')); // NEW
+$isProfile  = (str_starts_with($request_uri, '/about/michael-ragsdale/profile'));
 $isEducation = (str_starts_with($request_uri, '/about/michael-ragsdale/education'));
+$isFamily   = (str_starts_with($request_uri, '/family')); // NEW
 $isLocation = (str_starts_with($request_uri, '/about/michael-ragsdale/location'));
 $isSalary   = (str_starts_with($request_uri, '/about/michael-ragsdale/salary'));
 ?>
@@ -34,6 +35,12 @@ $isSalary   = (str_starts_with($request_uri, '/about/michael-ragsdale/salary'));
   <li class="nav-item">
     <a class="nav-link <?php echo $isEducation ? 'active' : ''; ?>" href="/about/michael-ragsdale/education">
         <i class="fa-duotone fa-graduation-cap me-2"></i>Education
+    </a>
+  </li>
+
+  <li class="nav-item">
+    <a class="nav-link <?php echo $isFamily ? 'active' : ''; ?>" href="/family">
+        <i class="fa-duotone fa-people-group me-2"></i>Family
     </a>
   </li>
 
