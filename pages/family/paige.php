@@ -70,7 +70,7 @@
         <div class="card overflow-hidden shadow-lg border-info mb-4">
             <div class="row g-0">
                 <div class="col-lg-7 position-relative" style="min-height: 400px;">
-                    <img src="https://assets.raggiesoft.com/family/images/scenes/paige-deep-pressure-therapy.jpg" 
+                    <img src="https://assets.raggiesoft.com/family/images/scenes/paige-deep-pressure-therapy.jpg?v=20231017" 
                          class="position-absolute w-100 h-100" 
                          style="object-fit: cover; object-position: center;" 
                          alt="Paige providing Deep Pressure Therapy">
