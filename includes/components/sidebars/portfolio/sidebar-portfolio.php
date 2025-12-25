@@ -6,7 +6,7 @@ $root = '/about/michael-ragsdale';
 
 <div class="text-center mb-4 pt-3">
     <a href="<?php echo $root; ?>">
-        <img src="https://assets.raggiesoft.com/common/images/mragsdale.jpg" 
+        <img src="https://assets.raggiesoft.com/portfolio/images/logos/logo-michael.png" 
              alt="Michael P. Ragsdale Headshot" 
              class="rounded-circle shadow-glow border border-2 border-white mb-3"
              style="width: 80px; height: 80px; object-fit: cover;">
