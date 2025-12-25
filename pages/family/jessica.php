@@ -14,7 +14,7 @@
         <div class="col-lg-8 d-flex align-items-center">
             <div class="card-body p-4 p-lg-5">
                 <div class="d-flex align-items-center mb-3">
-                    <span class="badge bg-success text-light me-2">
+                    <span class="badge text-bg-success me-2">
                         <i class="fa-duotone fa-server me-2"></i>jessica.raggiesoft.com
                     </span>
                     <span class="badge border border-success text-success bg-transparent">
@@ -67,18 +67,20 @@
 
 <div class="row">
     <div class="col-12">
-        <div class="card bg-dark text-light border-success shadow-lg font-monospace">
+        <div class="card text-bg-dark border-success shadow-lg font-monospace">
             <div class="card-header border-success bg-success bg-opacity-25 text-success fw-bold d-flex justify-content-between align-items-center">
                 <span><i class="fa-duotone fa-laptop-code me-2"></i>michael@jessica: ~</span>
-                <span class="badge bg-success text-dark">ONLINE</span>
+                <span class="badge text-bg-success">ONLINE</span>
             </div>
             <div class="card-body p-4">
-                <div class="opacity-75">
+                <div class="opacity-100">
                     <p class="mb-1"><span class="text-success">michael@jessica:~$</span> uptime</p>
-                    <p class="mb-3 text-light opacity-75"> 14:02:35 up 412 days, 3:14,  1 user,  load average: 0.08, 0.03, 0.01</p>
+                    
+                    <p class="mb-3 opacity-75"> 14:02:35 up 412 days, 3:14,  1 user,  load average: 0.08, 0.03, 0.01</p>
                     
                     <p class="mb-1"><span class="text-success">michael@jessica:~$</span> systemctl status family.service</p>
-                    <p class="mb-0 text-light opacity-75">
+                    
+                    <div class="mb-0 opacity-75">
                         ● family.service - RaggieSoft Family Ecosystem<br>
                         &nbsp;&nbsp;&nbsp;Loaded: loaded (/etc/systemd/system/family.service; enabled; vendor preset: enabled)<br>
                         &nbsp;&nbsp;&nbsp;Active: <span class="text-success fw-bold">active (running)</span> since Sat 2023-09-23 09:15:10 UTC; 1y 2 months ago<br>
@@ -88,7 +90,7 @@
                         &nbsp;&nbsp;&nbsp;CGroup: /system.slice/family.service<br>
                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├─1024 /usr/bin/jessica --guard<br>
                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─1025 /usr/bin/nginx: worker process
-                    </p>
+                    </div>
                     <p class="mb-0 mt-3"><span class="text-success">michael@jessica:~$</span> <span class="blink-cursor">_</span></p>
                 </div>
             </div>
