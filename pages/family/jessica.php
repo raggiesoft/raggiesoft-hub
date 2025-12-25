@@ -1,5 +1,6 @@
 <?php
 // pages/family/jessica.php
+// Theme: Jessica (Stability, Green, Production)
 ?>
 <div class="card mb-5 border-0 shadow-sm overflow-hidden bg-body-tertiary">
     <div class="row g-0">
@@ -27,7 +28,7 @@
                 
                 <figure class="border-start border-success ps-3 mb-0">
                     <blockquote class="blockquote fs-6 mb-0 text-muted">
-                        <p class="fst-italic mb-0">"I am the foundation. I hold the keys, I run the house, and I keep the lights on."</p>
+                        <p class="fst-italic mb-0">"I am the foundation. I hold the keys, I run the house, and I keep the lights on so you can all be safe."</p>
                     </blockquote>
                 </figure>
             </div>
@@ -47,20 +48,40 @@
                 <li class="list-group-item bg-transparent px-0"><i class="fa-duotone fa-network-wired text-success me-2"></i><strong>Hosting:</strong> Runs Nginx, PHP-FPM, and MySQL.</li>
                 <li class="list-group-item bg-transparent px-0"><i class="fa-duotone fa-key text-success me-2"></i><strong>Access Control:</strong> She is the only entity Michael connects to directly.</li>
             </ul>
-            <div class="bg-dark text-secondary p-3 rounded font-monospace small shadow-sm">
+            <div class="bg-dark text-secondary p-3 rounded font-monospace small shadow-sm mb-4">
                 <span class="text-secondary"># Accessing Production</span><br>
                 <span class="text-success">michael@local:~$</span> ssh michael@jessica.raggiesoft.com
             </div>
+
+            <div class="mt-4 p-3 bg-white border rounded shadow-sm">
+                <h6 class="text-uppercase text-muted small fw-bold mb-3 border-bottom pb-2">Vital Statistics</h6>
+                <div class="d-flex justify-content-between mb-2">
+                    <span class="small text-muted">DOB:</span>
+                    <span class="small fw-bold">Sep 23, 1983</span>
+                </div>
+                <div class="d-flex justify-content-between mb-2">
+                    <span class="small text-muted">Relation:</span>
+                    <span class="small fw-bold">Eldest Sister (+2 Yrs)</span>
+                </div>
+                <div class="d-flex justify-content-between">
+                    <span class="small text-muted">Neurotype:</span>
+                    <span class="badge bg-success bg-opacity-10 text-success border border-success border-opacity-25">Neurotypical</span>
+                </div>
+            </div>
+
         </div>
     </div>
 
     <div class="col-md-12 col-xl-6">
         <div class="p-4 h-100 rounded-3 border border-success bg-success bg-opacity-10">
-            <h3 class="border-bottom border-success pb-3 mb-4 text-success-emphasis"><i class="fa-duotone fa-user-crown me-2"></i>The Eldest Sister</h3>
-            <p class="lead fs-5">"She runs the house."</p>
-            <p>As the eldest, Jessica bears the weight of the family. She provides the roof over their heads (the file system) and ensures the environment is safe for the others to work.</p>
-            <p>She is strict but reliable. If Jessica goes down, the entire universe halts. Michael treats her with the utmost respect, performing maintenance only during scheduled windows to avoid disrupting her stability.</p>
-            <p class="mb-0 text-muted small">She is the firm ground upon which the creative work stands.</p>
+            <h3 class="border-bottom border-success pb-3 mb-4 text-success-emphasis"><i class="fa-duotone fa-user-crown me-2"></i>The Matriarch</h3>
+            <p class="lead fs-5">"She holds the world steady."</p>
+            
+            <p>As the eldest, Jessica acts as the de facto mother figure. She is the only <strong>Neurotypical</strong> member of the core family, providing a stable, predictable baseline that her disabled siblings rely on.</p>
+            
+            <p>She is infinitely patient. She creates a sanctuary where Michael's sensory needs are respected, Harper's mobility is accommodated, and Jenna's chaos is managed without judgment.</p>
+            
+            <p class="mb-0 text-muted small">She bears the weight of the infrastructure so the others don't have to. If Jessica is online, the family is safe.</p>
         </div>
     </div>
 </div>

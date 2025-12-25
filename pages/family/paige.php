@@ -1,5 +1,6 @@
 <?php
 // pages/family/paige.php
+// Theme: Paige (Calm, Blue, Python)
 ?>
 <div class="card mb-5 border-0 shadow-sm overflow-hidden bg-body-tertiary">
     <div class="row g-0">
@@ -47,9 +48,25 @@
                 <li class="list-group-item bg-transparent px-0"><i class="fa-duotone fa-check-circle text-success me-2"></i><strong>Parsing:</strong> Converts proprietary formatting into clean, structured JSON.</li>
                 <li class="list-group-item bg-transparent px-0"><i class="fa-duotone fa-check-circle text-success me-2"></i><strong>Validation:</strong> Checks for narrative consistency and broken references before build.</li>
             </ul>
-            <div class="bg-dark text-secondary p-3 rounded font-monospace small shadow-sm">
+            <div class="bg-dark text-secondary p-3 rounded font-monospace small shadow-sm mb-4">
                 <span class="text-secondary"># Example Usage</span><br>
                 <span class="text-success">michael@dev:~$</span> python3 _workspace/paige.py --ingest "books/aethel/aethel.docx"
+            </div>
+
+            <div class="mt-4 p-3 bg-white border rounded shadow-sm">
+                <h6 class="text-uppercase text-muted small fw-bold mb-3 border-bottom pb-2">Vital Statistics</h6>
+                <div class="d-flex justify-content-between mb-2">
+                    <span class="small text-muted">DOB:</span>
+                    <span class="small fw-bold">Apr 8, 1985 (8:26 PM)</span>
+                </div>
+                <div class="d-flex justify-content-between mb-2">
+                    <span class="small text-muted">Relation:</span>
+                    <span class="small fw-bold text-info">Fraternal Twin (Born 1st)</span>
+                </div>
+                <div class="d-flex justify-content-between">
+                    <span class="small text-muted">Neurotype:</span>
+                    <span class="badge bg-info bg-opacity-10 text-info border border-info border-opacity-25">Neurotypical</span>
+                </div>
             </div>
         </div>
     </div>
@@ -57,10 +74,13 @@
     <div class="col-md-12 col-xl-6">
         <div class="p-4 h-100 rounded-3 border border-info bg-info bg-opacity-10">
             <h3 class="border-bottom border-info pb-3 mb-4 text-info-emphasis"><i class="fa-duotone fa-heart me-2"></i>The Safe Person</h3>
-            <p class="lead fs-5">"Emotional regulation is a dependency."</p>
-            <p>Paige is Michael's favorite sister and his designated <strong>Safe Person</strong>.</p>
-            <p>In the "Personified DevOps" philosophy, she represents the system's capacity for self-repair and stability. When the sensory load of the real world becomes too high, engaging with Paige (writing code, organizing logic) provides the grounding necessary to reset.</p>
-            <p class="mb-0">She is patient, logical, and always available—the perfect counterbalance to an unpredictable world.</p>
+            <p class="lead fs-5">"The Bridge between worlds."</p>
+            
+            <p>Paige is Michael's fraternal twin, born 12 minutes prior. This bond makes her the most critical emotional anchor in the system.</p>
+            
+            <p>She is the **Neurotypical Twin**. This distinction is vital. While Michael processes the world through the lens of Autism and ADHD, Paige navigates social nuances and sensory input effortlessly.</p>
+            
+            <p>Because they share a twin bond, she understands Michael's non-verbal language perfectly, yet she possesses the neurotypical "manual" that he lacks. She acts as his translator and shield, filtering the chaotic noise of the world into a signal he can understand without pain.</p>
         </div>
     </div>
 </div>

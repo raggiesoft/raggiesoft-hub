@@ -1,5 +1,6 @@
 <?php
 // pages/family/jenna.php
+// Theme: Jenna (Creative Chaos, Orange, Sync)
 ?>
 <div class="card mb-5 border-0 shadow-sm overflow-hidden bg-body-tertiary">
     <div class="row g-0">
@@ -47,10 +48,27 @@
                 <li class="list-group-item bg-transparent px-0"><i class="fa-brands fa-git-alt text-warning me-2"></i><strong>Source Code:</strong> Lightweight text files are pushed to GitHub.</li>
                 <li class="list-group-item bg-transparent px-0"><i class="fa-duotone fa-hard-drive text-warning me-2"></i><strong>Binary Assets:</strong> Gigabytes of PSDs, WAVs, and raw footage are beamed to DigitalOcean Spaces via <code>rclone</code>.</li>
             </ul>
-            <div class="bg-dark text-secondary p-3 rounded font-monospace small shadow-sm">
+            <div class="bg-dark text-secondary p-3 rounded font-monospace small shadow-sm mb-4">
                 <span class="text-secondary"># The "Save Game" Command</span><br>
                 <span class="text-success">michael@dev:~$</span> ./jenna-sync.sh --push "Update homepage assets"
             </div>
+
+            <div class="mt-4 p-3 bg-white border rounded shadow-sm">
+                <h6 class="text-uppercase text-muted small fw-bold mb-3 border-bottom pb-2">Vital Statistics</h6>
+                <div class="d-flex justify-content-between mb-2">
+                    <span class="small text-muted">DOB:</span>
+                    <span class="small fw-bold">Jun 21, 1989</span>
+                </div>
+                <div class="d-flex justify-content-between mb-2">
+                    <span class="small text-muted">Relation:</span>
+                    <span class="small fw-bold">Twin B (Younger)</span>
+                </div>
+                <div class="d-flex justify-content-between align-items-center">
+                    <span class="small text-muted">Neurotype:</span>
+                    <span class="badge text-dark border" style="background-color: #ffe5d0; border-color: #fd7e14 !important;">ADHD (Hyperactive)</span>
+                </div>
+            </div>
+
         </div>
     </div>
 
@@ -58,7 +76,7 @@
         <div class="p-4 h-100 rounded-3 border border-warning bg-warning bg-opacity-10">
             <h3 class="border-bottom border-warning pb-3 mb-4 text-warning-emphasis"><i class="fa-duotone fa-user-hair-long me-2"></i>The Dev Twin</h3>
             <p class="lead fs-5">"Sarah's chaotic mirror."</p>
-            <p>Jenna is the "Development" counterpart to Sarah's "Production." Where Sarah is strict and cautious, Jenna is comfortable with the messiness of creation.</p>
+            <p>Jenna is the "Development" counterpart to Sarah's "Production." Where Sarah is strict and cautious (OCD), Jenna is comfortable with the messiness of creation (ADHD).</p>
             <p>She allows Michael to work fearlessly. She doesn't care if the code compiles or if the image is the wrong aspect ratio; her only job is to <strong>secure the data</strong> off-site immediately. She is the safety net that catches ideas before they vanish.</p>
         </div>
     </div>

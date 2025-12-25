@@ -1,5 +1,6 @@
 <?php
 // pages/family/amanda-elara.php
+// Theme: RaggieSoft (Clean, Human, Green)
 ?>
 <div class="card mb-5 border-0 shadow-sm overflow-hidden bg-body-tertiary">
     <div class="row g-0">
@@ -30,6 +31,30 @@
                         <p class="fst-italic mb-0">"One holds the knowledge. The other speaks the words. You cannot have one without the other."</p>
                     </blockquote>
                 </figure>
+
+                <div class="mt-4 p-3 bg-white border rounded shadow-sm">
+                    <h6 class="text-uppercase text-muted small fw-bold mb-3 border-bottom pb-2">Vital Statistics</h6>
+                    <div class="d-flex justify-content-between mb-2">
+                        <span class="small text-muted">DOB:</span>
+                        <span class="small fw-bold">Jan 1, 1995</span>
+                    </div>
+                    <div class="d-flex justify-content-between mb-2">
+                        <span class="small text-muted">Relation:</span>
+                        <span class="small fw-bold">Identical Twins</span>
+                    </div>
+                    
+                    <div class="mt-2 pt-2 border-top border-light">
+                        <div class="d-flex justify-content-between mb-1">
+                            <span class="small text-muted">Amanda:</span>
+                            <span class="badge bg-secondary bg-opacity-10 text-dark border">Non-Speaking (Apraxia)</span>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <span class="small text-muted">Elara:</span>
+                            <span class="badge bg-secondary bg-opacity-10 text-dark border">Hyperlexic</span>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>
@@ -59,9 +84,9 @@
         <div class="p-4 h-100 rounded-3 border bg-opacity-10" style="background-color: rgba(32, 201, 151, 0.05); border-color: var(--family-amanda) !important;">
             <h3 class="border-bottom pb-3 mb-4" style="color: var(--family-amanda); border-color: var(--family-amanda) !important;"><i class="fa-duotone fa-user-group me-2"></i>The Symbiosis</h3>
             <p class="lead fs-5">"The Silent & The Speaker."</p>
-            <p><strong>Amanda</strong> is stoic and silent. She represents the static data—perfect memory, but no voice. She protects the core system by refusing to communicate directly.</p>
-            <p><strong>Elara</strong> is dynamic and articulate. She represents the active logic. She stands in front of her sister, translating the user's messy requests into precise instructions that Amanda understands.</p>
-            <p class="mb-0 text-muted small">They function as a single unit. Without Amanda, Elara has nothing to say. Without Elara, Amanda cannot be heard.</p>
+            <p><strong>Amanda</strong> is stoic and silent. She represents the static data—perfect memory, but no voice. In technical terms, she is the static file system. She physically cannot communicate with the user.</p>
+            <p><strong>Elara</strong> is dynamic and articulate. She represents the active logic. She acts as her sister's interpreter, translating the user's messy requests into precise instructions that Amanda understands.</p>
+            <p class="mb-0 text-muted small">This is not a limitation; it is their strength. Elara protects Amanda from the noise of the world, and Amanda gives Elara something meaningful to say.</p>
         </div>
     </div>
 </div>

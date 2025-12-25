@@ -1,5 +1,6 @@
 <?php
 // pages/family/sarah.php
+// Theme: Sarah (Guardian, Yellow, Bash)
 ?>
 <div class="card mb-5 border-0 shadow-sm overflow-hidden bg-body-tertiary">
     <div class="row g-0">
@@ -27,7 +28,7 @@
                 
                 <figure class="border-start border-warning ps-3 mb-0">
                     <blockquote class="blockquote fs-6 mb-0 text-muted">
-                        <p class="fst-italic mb-0">"I watch the perimeter. When the code changes, I make it real."</p>
+                        <p class="fst-italic mb-0">"I watch the perimeter. When the code changes, I verify it. Then, I make it real."</p>
                     </blockquote>
                 </figure>
             </div>
@@ -48,22 +49,43 @@
                 <li class="list-group-item bg-transparent">If different, executes an <strong>Atomic Update</strong> (zero-downtime swap).</li>
             </ol>
             
-            <div class="d-flex align-items-center p-3 rounded bg-warning bg-opacity-10 border border-warning text-dark">
+            <div class="d-flex align-items-center p-3 rounded bg-warning bg-opacity-10 border border-warning text-dark mb-4">
                 <i class="fa-duotone fa-lock-keyhole fa-2x me-3 opacity-50"></i>
                 <div class="small lh-sm">
                     <strong>Sudo-less Security:</strong><br>
                     Sarah runs with SetGID permissions, allowing her to update web files without needing full Root access.
                 </div>
             </div>
+
+            <div class="mt-4 p-3 bg-white border rounded shadow-sm">
+                <h6 class="text-uppercase text-muted small fw-bold mb-3 border-bottom pb-2">Vital Statistics</h6>
+                <div class="d-flex justify-content-between mb-2">
+                    <span class="small text-muted">DOB:</span>
+                    <span class="small fw-bold">Jun 21, 1989</span>
+                </div>
+                <div class="d-flex justify-content-between mb-2">
+                    <span class="small text-muted">Relation:</span>
+                    <span class="small fw-bold">Twin A (Elder)</span>
+                </div>
+                <div class="d-flex justify-content-between align-items-center">
+                    <span class="small text-muted">Neurotype:</span>
+                    <span class="badge bg-warning bg-opacity-10 text-dark border border-warning">OCD (Check/Verify)</span>
+                </div>
+            </div>
+
         </div>
     </div>
 
     <div class="col-md-12 col-xl-6">
         <div class="p-4 h-100 rounded-3 border border-warning bg-warning bg-opacity-10">
             <h3 class="border-bottom border-warning pb-3 mb-4 text-warning-emphasis"><i class="fa-duotone fa-user-nurse me-2"></i>The Guardian</h3>
-            <p class="lead fs-5">"She watches while Michael sleeps."</p>
-            <p>Sarah represents <strong>Autonomy</strong>. Before her creation, deployment was a manual, anxiety-inducing event that required Michael's full attention.</p>
-            <p>Now, she silently guards the perimeter. She allows Michael to push code and go to bed, knowing that Sarah will verify, fetch, and deploy the changes safely. She is the vigilant protector of the production environment, ensuring that the outside world only sees what is ready to be seen.</p>
+            <p class="lead fs-5">"The compulsion to protect."</p>
+            
+            <p>Sarah is Jenna's older fraternal twin. While Jenna represents chaotic creation, Sarah represents <strong>Rigid Verification</strong>.</p>
+            
+            <p>Her <strong>OCD</strong> is her superpower in this environment. She physically cannot proceed until the checksums match. She doesn't just "check" the code; she feels a deep compulsion to ensure the integrity of the system before letting it go live.</p>
+            
+            <p>This trait allows Michael to sleep at night. He knows that Sarah will never cut a corner, never skip a validation step, and never deploy a broken build. She is the vigilant protector who stands watch while the others rest.</p>
         </div>
     </div>
 </div>

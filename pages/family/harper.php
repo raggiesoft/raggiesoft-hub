@@ -1,5 +1,6 @@
 <?php
 // pages/family/harper.php
+// Theme: Harper (High Energy, Purple, Studio)
 ?>
 <div class="card mb-5 border-0 shadow-sm overflow-hidden bg-body-tertiary">
     <div class="row g-0">
@@ -30,6 +31,30 @@
                         <p class="fst-italic mb-0">"LOUD IS GOOD. But optimized bitrate is better. Let's make some noise!"</p>
                     </blockquote>
                 </figure>
+
+                <div class="mt-4 p-3 bg-white border rounded shadow-sm">
+                    <h6 class="text-uppercase text-muted small fw-bold mb-3 border-bottom pb-2">Vital Statistics</h6>
+                    <div class="d-flex justify-content-between mb-2">
+                        <span class="small text-muted">DOB:</span>
+                        <span class="small fw-bold">Oct 30, 1992</span>
+                    </div>
+                    <div class="d-flex justify-content-between mb-2">
+                        <span class="small text-muted">Role:</span>
+                        <span class="small fw-bold">The Middle Child</span>
+                    </div>
+                    
+                    <div class="mt-2 pt-2 border-top border-light">
+                        <div class="d-flex justify-content-between mb-1">
+                            <span class="small text-muted">Neurotype:</span>
+                            <span class="badge text-white border" style="background-color: #6610f2; border-color: #6610f2 !important;">Sensory Seeker (SPD)</span>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <span class="small text-muted">Mobility:</span>
+                            <span class="badge bg-light text-dark border">Ambulatory Wheelchair User</span>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>
@@ -57,9 +82,10 @@
     <div class="col-md-12 col-xl-6">
         <div class="p-4 h-100 rounded-3 border bg-opacity-10" style="background-color: rgba(102, 16, 242, 0.05); border-color: var(--family-harper) !important;">
             <h3 class="border-bottom pb-3 mb-4" style="color: var(--family-harper); border-color: var(--family-harper) !important;"><i class="fa-duotone fa-headphones-simple me-2"></i>The Audiophile</h3>
-            <p class="lead fs-5">"High-energy and loud."</p>
-            <p>Harper ensures the creative flow isn't interrupted by technical codecs. While Michael focuses on composing music, Harper handles the tedious work of exporting formats for the web.</p>
-            <p>She is the reason the "Stardust Player" works seamlessly across all browsers. She is enthusiastic, efficient, and perhaps a little too fond of the volume knob. She treats every file as a performance.</p>
+            <p class="lead fs-5">"High-energy and optimized."</p>
+            <p>Harper ensures the creative flow isn't interrupted by technical limitations. She is the reason the "Stardust Player" works seamlessly across all browsers.</p>
+            <p>Her studio environment is built for accessibility. As an ambulatory wheelchair user, she has designed her workflow to minimize physical strain—everything is scripted, automated, and within reach. This efficiency translates directly to her code: fast, precise, and highly optimized.</p>
+            <p class="mb-0 text-muted small">She proves that accessibility isn't just about accommodation; it's about superior engineering.</p>
         </div>
     </div>
 </div>

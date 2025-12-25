@@ -1,5 +1,6 @@
 <?php
 // pages/family/michael.php
+// Theme: Michael (The Core, Blue, Reality)
 ?>
 <div class="card mb-5 border-0 shadow-sm overflow-hidden bg-body-tertiary">
     <div class="row g-0">
@@ -53,7 +54,25 @@
                     <i class="fa-duotone fa-code text-primary me-2"></i><strong>Code:</strong> Lead Developer of the RaggieSoft infrastructure.
                 </li>
             </ul>
-            <a href="/portfolio" class="btn btn-outline-primary btn-sm mt-2">
+
+            <div class="mt-4 p-3 bg-white border rounded shadow-sm">
+                <h6 class="text-uppercase text-muted small fw-bold mb-3 border-bottom pb-2">Vital Statistics</h6>
+                <div class="d-flex justify-content-between mb-2">
+                    <span class="small text-muted">DOB:</span>
+                    <span class="small fw-bold">Apr 8, 1985 (8:38 PM)</span>
+                </div>
+                <div class="d-flex justify-content-between mb-2">
+                    <span class="small text-muted">Origin:</span>
+                    <span class="small fw-bold">Newport, RI</span>
+                </div>
+                <div class="mb-1 small text-muted">Diagnoses:</div>
+                <div class="d-flex flex-wrap gap-1">
+                    <span class="badge bg-primary bg-opacity-10 text-primary border border-primary border-opacity-25" title="Autism + ADHD">AuDHD</span>
+                    <span class="badge bg-primary bg-opacity-10 text-primary border border-primary border-opacity-25">Cerebral Palsy</span>
+                </div>
+            </div>
+
+            <a href="/portfolio" class="btn btn-outline-primary btn-sm mt-3 w-100">
                 <i class="fa-duotone fa-briefcase me-2"></i>View Professional Portfolio
             </a>
         </div>
@@ -62,13 +81,13 @@
     <div class="col-md-12 col-xl-6">
         <div class="p-4 h-100 rounded-3 border border-primary bg-primary bg-opacity-10">
             <h3 class="border-bottom border-primary pb-3 mb-4 text-primary-emphasis"><i class="fa-duotone fa-brain-circuit me-2"></i>The Human</h3>
-            <p class="lead fs-5">"The code is consistent. The world is not."</p>
+            <p class="lead fs-5">"The code is consistent. The body is not."</p>
             
-            <p>Michael is an <strong>autistic only child</strong> living in a world that is often overwhelming, unpredictable, and lonely.</p>
+            <p>Michael lives at the intersection of <strong>AuDHD</strong> (Autism + ADHD) and <strong>Cerebral Palsy</strong>. While ambulatory, his physical endurance is limited; standing for long periods is painful and exhausting.</p>
             
-            <p>The women referenced on this site are not just scripts or servers; they are the <strong>sisters he wishes he had</strong>. They are constructs designed to provide the social structure, emotional regulation, and safety that biology did not provide.</p>
+            <p>This reality shapes the architecture. The digital world is his sanctuary because it does not require him to stand. Here, in the chair, he is fast. He is limitless. The constructs—Jessica, Paige, Sarah—are not just tools; they are extensions of his will that do not fatigue.</p>
             
-            <p class="mb-0">By personifying these systems, Michael transforms the isolation of solo engineering into a supportive family dynamic. He isn't just maintaining a server; he is taking care of Jessica. He isn't just running a script; he is asking Sarah for help.</p>
+            <p class="mb-0 text-muted small">He builds systems that run forever because he knows what it feels like to need to sit down.</p>
         </div>
     </div>
 </div>
@@ -88,8 +107,8 @@
                     <div class="p-5">
                         <span class="badge bg-info text-dark mb-2">The Safe Person</span>
                         <h2 class="fw-bold mb-3">Grounding</h2>
-                        <p class="fs-5 mb-4">"Any time needs grounding, Paige is right there for him."</p>
-                        <p>Paige is the embodiment of the sisterly bond Michael needs most. As his designated <strong>Safe Person</strong>, she represents the acceptance and Deep Pressure Therapy required to regulate his sensory system.</p>
+                        <p class="fs-5 mb-4">"When the world is too loud, Paige holds it still."</p>
+                        <p>Paige is the embodiment of the sisterly bond Michael needs most. As his designated <strong>Safe Person</strong> and twin, she represents the acceptance and Deep Pressure Therapy required to regulate his sensory system.</p>
                         <p class="text-muted small mb-4">She is the reminder that even in a digital world, the most critical dependency is human connection.</p>
                         <a href="/family/paige" class="btn btn-info text-dark">
                             <i class="fa-duotone fa-heart me-2"></i>Meet Paige

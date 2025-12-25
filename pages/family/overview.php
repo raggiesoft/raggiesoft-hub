@@ -1,5 +1,10 @@
+<?php
+// pages/family/overview.php
+// The Roster: A directory of all system constructs.
+?>
+
 <div class="position-relative p-5 text-center bg-dark border-bottom shadow-sm" 
-     style="background-image: url('https://assets.raggiesoft.com/family/images/scenes/paige-michael-hug.jpg'); background-size: cover; background-position: center; min-height: 60vh;">
+     style="background-image: url('https://assets.raggiesoft.com/family/images/scenes/paige-michael-hug.jpg'); background-size: cover; background-position: center 30%; min-height: 60vh;">
     
     <div class="position-absolute top-0 start-0 w-100 h-100 bg-black opacity-75"></div>
     
@@ -20,7 +25,7 @@
     
     <div class="row justify-content-center mb-5">
         <div class="col-lg-8 text-center">
-            <div class="p-4 rounded-3 bg-body-tertiary border border-primary border-opacity-25">
+            <div class="p-4 rounded-3 bg-body-tertiary border border-primary border-opacity-25 shadow-sm">
                 <h5 class="text-primary fw-bold text-uppercase letter-spacing-2 mb-3">
                     <i class="fa-duotone fa-heart-pulse me-2"></i>A Note on Reality
                 </h5>
@@ -59,7 +64,7 @@
             <div class="row g-4">
                 
                 <div class="col-md-6">
-                    <div class="card h-100 border-info shadow-sm">
+                    <div class="card h-100 border-info shadow-sm hover-lift transition-all">
                         <div class="row g-0 h-100">
                             <div class="col-4">
                                 <img src="https://assets.raggiesoft.com/family/images/atmospheric/paige.jpg" class="img-fluid rounded-start h-100" style="object-fit: cover;" alt="Paige">
@@ -67,8 +72,8 @@
                             <div class="col-8">
                                 <div class="card-body">
                                     <h5 class="card-title"><a href="/family/paige" class="text-decoration-none stretched-link text-dark">Paige</a></h5>
-                                    <p class="card-text small text-info fw-bold mb-1">Literary Editor & Safe Person</p>
-                                    <p class="card-text small text-muted">Ingests manuscripts and provides emotional regulation.</p>
+                                    <span class="badge bg-info text-dark mb-2">Literary Editor</span>
+                                    <p class="card-text small text-muted">Ingests manuscripts and provides emotional regulation as the "Safe Person."</p>
                                 </div>
                             </div>
                         </div>
@@ -76,7 +81,7 @@
                 </div>
 
                 <div class="col-md-6">
-                    <div class="card h-100 border-success shadow-sm">
+                    <div class="card h-100 border-success shadow-sm hover-lift transition-all">
                         <div class="row g-0 h-100">
                             <div class="col-4">
                                 <img src="https://assets.raggiesoft.com/family/images/atmospheric/jessica.jpg" class="img-fluid rounded-start h-100" style="object-fit: cover;" alt="Jessica">
@@ -84,8 +89,8 @@
                             <div class="col-8">
                                 <div class="card-body">
                                     <h5 class="card-title"><a href="/family/jessica" class="text-decoration-none stretched-link text-dark">Jessica</a></h5>
-                                    <p class="card-text small text-success fw-bold mb-1">Production Infrastructure</p>
-                                    <p class="card-text small text-muted">The eldest sister. She runs the servers and holds the keys.</p>
+                                    <span class="badge bg-success text-white mb-2">Production Infra</span>
+                                    <p class="card-text small text-muted">The eldest sister. She runs the servers, holds the keys, and maintains stability.</p>
                                 </div>
                             </div>
                         </div>
@@ -93,7 +98,7 @@
                 </div>
 
                 <div class="col-md-6">
-                    <div class="card h-100 border-warning shadow-sm">
+                    <div class="card h-100 border-warning shadow-sm hover-lift transition-all">
                         <div class="row g-0 h-100">
                             <div class="col-4">
                                 <img src="https://assets.raggiesoft.com/family/images/atmospheric/sarah.jpg" class="img-fluid rounded-start h-100" style="object-fit: cover;" alt="Sarah">
@@ -101,8 +106,8 @@
                             <div class="col-8">
                                 <div class="card-body">
                                     <h5 class="card-title"><a href="/family/sarah" class="text-decoration-none stretched-link text-dark">Sarah</a></h5>
-                                    <p class="card-text small text-warning fw-bold mb-1">The Guardian (Deploy)</p>
-                                    <p class="card-text small text-muted">Watches Git remotes and performs atomic updates.</p>
+                                    <span class="badge text-bg-warning mb-2">Deployment</span>
+                                    <p class="card-text small text-muted">Watches Git remotes and performs atomic updates. The vigilant guardian.</p>
                                 </div>
                             </div>
                         </div>
@@ -110,7 +115,7 @@
                 </div>
 
                 <div class="col-md-6">
-                    <div class="card h-100 shadow-sm" style="border-color: #fd7e14 !important;">
+                    <div class="card h-100 shadow-sm hover-lift transition-all" style="border-color: #fd7e14 !important;">
                         <div class="row g-0 h-100">
                             <div class="col-4">
                                 <img src="https://assets.raggiesoft.com/family/images/atmospheric/jenna.jpg" class="img-fluid rounded-start h-100" style="object-fit: cover;" alt="Jenna">
@@ -118,8 +123,8 @@
                             <div class="col-8">
                                 <div class="card-body">
                                     <h5 class="card-title"><a href="/family/jenna" class="text-decoration-none stretched-link text-dark">Jenna</a></h5>
-                                    <p class="card-text small fw-bold mb-1" style="color: #fd7e14;">The Dev Twin (Sync)</p>
-                                    <p class="card-text small text-muted">Manages the chaotic workspace and hoards assets.</p>
+                                    <span class="badge text-white mb-2" style="background-color: #fd7e14;">Sync & Assets</span>
+                                    <p class="card-text small text-muted">Manages the chaotic workspace and hoards large assets. The creative twin.</p>
                                 </div>
                             </div>
                         </div>
@@ -127,7 +132,7 @@
                 </div>
 
                 <div class="col-md-6">
-                    <div class="card h-100 border-primary shadow-sm">
+                    <div class="card h-100 border-primary shadow-sm hover-lift transition-all">
                         <div class="row g-0 h-100">
                             <div class="col-4">
                                 <img src="https://assets.raggiesoft.com/family/images/atmospheric/harper.jpg" class="img-fluid rounded-start h-100" style="object-fit: cover;" alt="Harper">
@@ -135,8 +140,8 @@
                             <div class="col-8">
                                 <div class="card-body">
                                     <h5 class="card-title"><a href="/family/harper" class="text-decoration-none stretched-link text-dark">Harper</a></h5>
-                                    <p class="card-text small text-primary fw-bold mb-1">Studio Engineer</p>
-                                    <p class="card-text small text-muted">High-energy audio processing and recursive transcoding.</p>
+                                    <span class="badge bg-primary text-white mb-2">Studio Engineer</span>
+                                    <p class="card-text small text-muted">High-energy audio processing and recursive transcoding. The sensory seeker.</p>
                                 </div>
                             </div>
                         </div>
@@ -144,7 +149,7 @@
                 </div>
 
                 <div class="col-md-6">
-                     <div class="card h-100 border-success shadow-sm">
+                     <div class="card h-100 border-success shadow-sm hover-lift transition-all">
                         <div class="row g-0 h-100">
                             <div class="col-4">
                                 <img src="https://assets.raggiesoft.com/family/images/atmospheric/amanda-elara.jpg" class="img-fluid rounded-start h-100" style="object-fit: cover; object-position: top center;" alt="Amanda & Elara">
@@ -152,8 +157,8 @@
                             <div class="col-8">
                                 <div class="card-body">
                                     <h5 class="card-title"><a href="/family/amanda-elara" class="text-decoration-none stretched-link text-dark">Amanda & Elara</a></h5>
-                                    <p class="card-text small text-success fw-bold mb-1">Web Root & Router</p>
-                                    <p class="card-text small text-muted">The Gateway. One holds the files, the other speaks.</p>
+                                    <span class="badge bg-success text-white mb-2">Root & Router</span>
+                                    <p class="card-text small text-muted">The Gateway. One holds the files, the other speaks. They function as one.</p>
                                 </div>
                             </div>
                         </div>
@@ -164,3 +169,8 @@
         </div>
     </div>
 </div>
+
+<style>
+    .hover-lift:hover { transform: translateY(-3px); box-shadow: 0 1rem 3rem rgba(0,0,0,.175)!important; }
+    .transition-all { transition: all 0.3s ease; }
+</style>
