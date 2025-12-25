@@ -78,7 +78,7 @@
     "brandFont": ["Roboto", "sans-serif"]
   },
   "/about/privacy": {
-    "view": "pages/privacy",
+    "view": "pages/about/privacy",
     "title": "Privacy Policy | RaggieSoft Governance",
     "site": "portfolio",
     "headerMenu": "about/header-about",
@@ -90,7 +90,7 @@
     "brandFont": ["Roboto", "sans-serif"]
   },
   "/about/terms": {
-    "view": "pages/terms",
+    "view": "pages/about/terms",
     "title": "Terms of Service | RaggieSoft Governance",
     "site": "portfolio",
     "headerMenu": "about/header-about",
