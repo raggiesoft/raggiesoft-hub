@@ -118,7 +118,7 @@ $imagesJson = htmlspecialchars(json_encode($heroImages), ENT_QUOTES, 'UTF-8');
             <div class="col-lg-3 col-md-6">
                 <a href="/about/family" class="card glass-card h-100 text-decoration-none hover-lift border-info transition-all">
                     <div class="card-body text-center">
-                        <img src="https://assets.raggiesoft.com/family/images/logos/logo-family.jpg" 
+                        <img src="https://assets.raggiesoft.com/family/images/logos/logo-family.png" 
                              class="rounded-circle mb-3 border border-info shadow-sm" width="60" height="60" alt="Family">
                         <h5 class="fw-bold text-white mb-2">The Family</h5>
                         <p class="small text-white-50 mb-0">Personified DevOps & Emotional Support Constructs.</p>
