@@ -19,12 +19,12 @@
         <h1 class="display-5 fw-bold mb-2 text-uppercase" style="font-family: 'Courier New', monospace; letter-spacing: -1px;">
             Engine Room Records
         </h1>
-        <p class="fs-5 text-danger font-monospace mb-3">
-            LOUD. RAW. REAL.
+        <p class="fs-5 text-danger font-monospace mb-3 text-uppercase">
+            Loud. Raw. Real.
         </p>
         <div class="d-inline-block border-top border-secondary pt-2">
             <p class="text-secondary small text-uppercase letter-spacing-2 mb-0">
-                Est. 1992 &bull; Norfolk, VA &bull; Independent
+                Est. 1992 &bull; Blacksburg, VA &bull; Independent
             </p>
         </div>
     </div>
@@ -38,7 +38,7 @@
                 <i class="fa-solid fa-industry me-2"></i>Corporate History
             </h3>
             <p class="lead text-dark">
-                Founded in a converted warehouse in the industrial district of Norfolk, <strong>Engine Room Records</strong> began as a rejection of the polished, over-produced pop of the early 90s.
+                Founded in a converted warehouse in the industrial district of Blacksburg, <strong>Engine Room Records</strong> began as a rejection of the polished, over-produced pop of the early 90s.
             </p>
             <p class="text-muted">
                 We specialize in <strong>Industrial Rock, Synthwave, and Dark Ambient</strong>. Our artists don't just play instruments; they build machines. They weld soundscapes.
