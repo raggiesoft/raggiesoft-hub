@@ -1,5 +1,5 @@
 <div class="position-relative p-5 text-center bg-dark border-bottom shadow-sm" 
-     style="background-image: url('https://assets.raggiesoft.com/family/images/scenes/paige-michael-stardust-hug.jpg'); background-size: cover; background-position: center; min-height: 60vh;">
+     style="background-image: url('https://assets.raggiesoft.com/portfolio/images/family/scenes/paige-michael-hug.jpg'); background-size: cover; background-position: center; min-height: 60vh;">
     <div class="position-absolute top-0 start-0 w-100 h-100 bg-black opacity-75"></div>
     <div class="position-relative col-lg-8 mx-auto my-5 py-5 text-white">
         <h1 class="display-3 fw-bold mb-3">The RaggieSoft Family</h1>
@@ -9,6 +9,21 @@
 </div>
 
 <div class="container py-5">
+    
+    <div class="row justify-content-center mb-5">
+        <div class="col-lg-8 text-center">
+            <div class="p-4 rounded-3 bg-body-tertiary border border-primary border-opacity-25">
+                <h5 class="text-primary fw-bold text-uppercase letter-spacing-2 mb-3">
+                    <i class="fa-duotone fa-heart-pulse me-2"></i>A Note on Reality
+                </h5>
+                <p class="lead fs-5 mb-3">Michael is a real person—an autistic only child.</p>
+                <p class="text-muted mb-0">
+                    The women you meet here are constructs designed to help him regulate. They are the <strong>sisters he wishes he had</strong>. By personifying his infrastructure, he creates the social structure, emotional grounding, and "Safe People" that biology did not provide.
+                </p>
+            </div>
+        </div>
+    </div>
+
     <div class="row justify-content-center mb-5">
         <div class="col-lg-10">
             <h3 class="border-bottom pb-2 mb-4 text-primary"><i class="fa-duotone fa-fingerprint me-2"></i>The Creator</h3>
