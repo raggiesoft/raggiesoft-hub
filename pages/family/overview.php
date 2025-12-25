@@ -49,6 +49,7 @@
             <h3 class="border-bottom pb-2 mb-4 text-secondary"><i class="fa-duotone fa-network-wired me-2"></i>The Constructs</h3>
             
             <div class="row g-4">
+                
                 <div class="col-md-6">
                     <div class="card h-100 border-info shadow-sm">
                         <div class="row g-0 h-100">
@@ -84,6 +85,40 @@
                 </div>
 
                 <div class="col-md-6">
+                    <div class="card h-100 border-warning shadow-sm">
+                        <div class="row g-0 h-100">
+                            <div class="col-4">
+                                <img src="https://assets.raggiesoft.com/family/images/atmospheric/sarah.jpg" class="img-fluid rounded-start h-100" style="object-fit: cover;" alt="Sarah">
+                            </div>
+                            <div class="col-8">
+                                <div class="card-body">
+                                    <h5 class="card-title"><a href="/family/sarah" class="text-decoration-none stretched-link text-dark">Sarah</a></h5>
+                                    <p class="card-text small text-warning fw-bold mb-1">The Guardian (Deploy)</p>
+                                    <p class="card-text small text-muted">Watches Git remotes and performs atomic updates.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="card h-100 shadow-sm" style="border-color: #fd7e14 !important;">
+                        <div class="row g-0 h-100">
+                            <div class="col-4">
+                                <img src="https://assets.raggiesoft.com/family/images/atmospheric/jenna.jpg" class="img-fluid rounded-start h-100" style="object-fit: cover;" alt="Jenna">
+                            </div>
+                            <div class="col-8">
+                                <div class="card-body">
+                                    <h5 class="card-title"><a href="/family/jenna" class="text-decoration-none stretched-link text-dark">Jenna</a></h5>
+                                    <p class="card-text small fw-bold mb-1" style="color: #fd7e14;">The Dev Twin (Sync)</p>
+                                    <p class="card-text small text-muted">Manages the chaotic workspace and hoards assets.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
                     <div class="card h-100 border-primary shadow-sm">
                         <div class="row g-0 h-100">
                             <div class="col-4">
@@ -101,38 +136,16 @@
                 </div>
 
                 <div class="col-md-6">
-                    <div class="card h-100 border-warning shadow-sm">
+                     <div class="card h-100 border-success shadow-sm">
                         <div class="row g-0 h-100">
                             <div class="col-4">
-                                <img src="https://assets.raggiesoft.com/family/images/atmospheric/sarah.jpg" class="img-fluid rounded-start h-100" style="object-fit: cover;" alt="Sarah">
+                                <img src="https://assets.raggiesoft.com/family/images/atmospheric/amanda-elara.jpg" class="img-fluid rounded-start h-100" style="object-fit: cover; object-position: top center;" alt="Amanda & Elara">
                             </div>
                             <div class="col-8">
                                 <div class="card-body">
-                                    <h5 class="card-title"><a href="/family/sarah" class="text-decoration-none stretched-link text-dark">Sarah</a></h5>
-                                    <p class="card-text small text-warning fw-bold mb-1">The Guardian (Deploy)</p>
-                                    <p class="card-text small text-muted">Watches Git remotes and performs atomic updates.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-12">
-                    <div class="card h-100 border-success shadow-sm">
-                        <div class="row g-0 h-100">
-                            <div class="col-md-5 col-lg-4">
-                                <img src="https://assets.raggiesoft.com/family/images/atmospheric/amanda-elara.jpg" 
-                                     class="img-fluid rounded-start h-100" 
-                                     style="object-fit: cover; object-position: center top; min-height: 250px;" 
-                                     alt="Amanda & Elara">
-                            </div>
-                            <div class="col-md-7 col-lg-8 d-flex align-items-center">
-                                <div class="card-body">
-                                    <h5 class="card-title display-6 fs-4"><a href="/family/amanda-elara" class="text-decoration-none stretched-link text-dark">Amanda & Elara</a></h5>
-                                    <p class="card-text text-success fw-bold mb-2">Web Root & Router</p>
-                                    <p class="card-text text-muted">The Gateway. One holds the files, the other speaks the words.</p>
-                                    <hr class="opacity-25 my-3">
-                                    <p class="small text-muted mb-0"><i class="fa-duotone fa-shield-check me-2"></i>Security through Obscurity: The directory (Amanda) is silent; only the router (Elara) speaks.</p>
+                                    <h5 class="card-title"><a href="/family/amanda-elara" class="text-decoration-none stretched-link text-dark">Amanda & Elara</a></h5>
+                                    <p class="card-text small text-success fw-bold mb-1">Web Root & Router</p>
+                                    <p class="card-text small text-muted">The Gateway. One holds the files, the other speaks.</p>
                                 </div>
                             </div>
                         </div>
