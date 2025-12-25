@@ -5,7 +5,7 @@
 
 <div class="mb-4 text-center">
     <a href="/family" class="text-decoration-none text-body">
-        <img src="https://assets.raggiesoft.com/family/images/logos/logo-family.jpg" 
+        <img src="https://assets.raggiesoft.com/family/images/logos/logo-family.png" 
              alt="The RaggieSoft Family" 
              class="rounded-circle shadow-sm border border-2 border-white mb-2"
              style="width: 100px; height: 100px; object-fit: cover;">
