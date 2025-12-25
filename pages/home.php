@@ -31,11 +31,11 @@
 </section>
 
 <section id="network-spokes" class="py-5 bg-body-tertiary" aria-labelledby="spokes-title">
-  <div class="container-lg">
+  <div class="container-fluid px-4 px-xxl-5">
     
-    <div class="row g-4 row-cols-1 row-cols-md-2 justify-content-center mb-5">
+    <div class="row g-4 row-cols-1 row-cols-md-2 justify-content-center mb-4">
 
-      <div class="col">
+      <div class="col" style="max-width: 600px;">
         <?php
           $props = [
             'imgSrc' => 'https://assets.raggiesoft.com/portfolio/images/logos/logo-michael.png',
@@ -55,7 +55,7 @@
         ?>
       </div>
 
-      <div class="col">
+      <div class="col" style="max-width: 600px;">
         <?php
           $props = [
             'imgSrc' => 'https://assets.raggiesoft.com/family/images/logos/logo-family.png',
@@ -77,9 +77,9 @@
       
     </div>
 
-    <div class="row g-4 row-cols-1 row-cols-md-2 row-cols-lg-3 justify-content-center">
+    <div class="row g-4 row-cols-1 row-cols-md-2 row-cols-xl-3 justify-content-center">
 
-      <div class="col">
+      <div class="col" style="max-width: 500px;">
         <?php
           $props = [
             'imgSrc' => 'https://assets.raggiesoft.com/stardust-engine/images/logo/stardust-engine-logo.png',
@@ -99,7 +99,7 @@
         ?>
       </div>
 
-      <div class="col">
+      <div class="col" style="max-width: 500px;">
         <?php
           $props = [
             'imgSrc' => 'https://assets.raggiesoft.com/aethel/images/logos/silver-gauntlet-of-aethel-logo.png', 
@@ -119,7 +119,7 @@
         ?>
       </div>
 
-       <div class="col">
+       <div class="col" style="max-width: 500px;">
         <?php
           $props = [
             'imgSrc' => 'https://assets.raggiesoft.com/engine-room-records/artists/the-stardust-engine/2017-knox-ost/album-art.jpg',
