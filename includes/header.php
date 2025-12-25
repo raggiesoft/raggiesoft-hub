@@ -86,7 +86,7 @@ if (isset($customPageAssets) && is_array($customPageAssets)) {
 
     <?php foreach ($css_load_queue as $cssUrl): ?>
         <link href="<?php echo $cssUrl . '?v=' . time(); ?>" rel="stylesheet">
-    <?php endforeach; ?>
+    <?php endforeach; ?>    
 
     <script src="https://kit.fontawesome.com/ec060982d4.js" crossorigin="anonymous"></script>
 
