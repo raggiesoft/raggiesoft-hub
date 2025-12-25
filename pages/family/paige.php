@@ -47,7 +47,7 @@
                 <li class="list-group-item bg-transparent px-0"><i class="fa-duotone fa-check-circle text-success me-2"></i><strong>Parsing:</strong> Converts proprietary formatting into clean, structured JSON.</li>
                 <li class="list-group-item bg-transparent px-0"><i class="fa-duotone fa-check-circle text-success me-2"></i><strong>Validation:</strong> Checks for narrative consistency and broken references before build.</li>
             </ul>
-            <div class="bg-dark text-light p-3 rounded font-monospace small shadow-sm">
+            <div class="bg-dark text-dark p-3 rounded font-monospace small shadow-sm">
                 <span class="text-secondary"># Example Usage</span><br>
                 <span class="text-success">michael@dev:~$</span> python3 _workspace/paige.py --ingest "books/aethel/aethel.docx"
             </div>
