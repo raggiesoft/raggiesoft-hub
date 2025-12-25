@@ -5,7 +5,7 @@
              <div class="position-absolute w-100 h-100 bg-primary opacity-10 mix-blend-overlay"></div>
         </div>
         
-        <div class="col-lg-6 order-lg-1 d-flex align-items-center p-5">
+        <div class="col-lg-12 order-lg-1 d-flex align-items-center p-5">
             <div class="px-lg-5">
                 <div class="d-flex align-items-center mb-3">
                     <span class="badge bg-primary text-white me-2"><i class="fa-duotone fa-fingerprint me-2"></i>Human</span>
