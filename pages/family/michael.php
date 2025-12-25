@@ -1,11 +1,11 @@
-<div class="container-fluid bg-dark text-white p-0 overflow-hidden">
+<div class="glass-header text-white p-0 overflow-hidden">
     <div class="row g-0">
         <div class="col-lg-6 order-lg-2 min-vh-50 position-relative" 
              style="background-image: url('https://assets.raggiesoft.com/family/images/atmospheric/michael.jpg'); background-size: cover; background-position: center;">
              <div class="position-absolute w-100 h-100 bg-primary opacity-10 mix-blend-overlay"></div>
         </div>
         
-        <div class="col-lg-6 order-lg-1 d-flex align-items-center p-5 bg-gradient-dark">
+        <div class="col-lg-6 order-lg-1 d-flex align-items-center p-5 bg-dark">
             <div class="px-lg-5">
                 <div class="d-flex align-items-center mb-3">
                     <span class="badge bg-primary text-white me-2"><i class="fa-duotone fa-fingerprint me-2"></i>Human</span>
@@ -67,7 +67,7 @@
                              class="position-absolute w-100 h-100" 
                              style="object-fit: cover; object-position: center;" 
                              alt="Michael and Paige">
-                        <div class="position-absolute bottom-0 start-0 w-100 p-4 bg-gradient-to-t from-black"></div>
+                        <div class="position-absolute bottom-0 start-0 w-100 p-5 bg-gradient-to-t" style="background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);"></div>
                     </div>
                     <div class="col-lg-5 d-flex align-items-center bg-info bg-opacity-10 text-body">
                         <div class="p-5">
