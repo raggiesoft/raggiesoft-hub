@@ -23,8 +23,8 @@
                 <h6 class="fw-bold mb-3">Projects</h6>
                 <ul class="nav flex-column small">
                     <li class="nav-item mb-2"><a href="/engine-room" class="nav-link p-0 text-body-secondary">Engine Room Records</a></li>
-                    <li class="nav-item mb-2"><a href="/oconnell-trust" class="nav-link p-0 text-body-secondary">O'Connell Trust</a></li>
-                    <li class="nav-item mb-2"><a href="/library" class="nav-link p-0 text-body-secondary">The Library</a></li>
+                    <li class="nav-item mb-2"><a href="/family" class="nav-link p-0 text-body-secondary">Family</a></li>
+                    <li class="nav-item mb-2"><a href="/raggiesoft-books/aethel" class="nav-link p-0 text-body-secondary">Silver Gauntlet of Aethel</a></li>
                 </ul>
             </div>
 
