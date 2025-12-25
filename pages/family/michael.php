@@ -53,7 +53,7 @@
                     <i class="fa-duotone fa-code text-primary me-2"></i><strong>Code:</strong> Lead Developer of the RaggieSoft infrastructure.
                 </li>
             </ul>
-            <a href="/portfolio" class="btn btn-outline-primary btn-sm mt-2">
+            <a href="/about/michael-ragsdale" class="btn btn-outline-primary btn-sm mt-2">
                 <i class="fa-duotone fa-briefcase me-2"></i>View Professional Portfolio
             </a>
         </div>
