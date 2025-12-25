@@ -11,7 +11,7 @@
     "navbarBrandLink": "/",
     "navbarBrandLogo": "https://assets.raggiesoft.com/portfolio/images/logos/logo-michael.png",
     "navbarBrandAlt": "RaggieSoft Logo",
-    "brandFont": ["Roboto", "sans-serif"]
+    "brandFont": ["Audiowide", "sans-serif"]
   },
   "/about/stardust-engine": {
     "view": "pages/about/stardust-engine",
