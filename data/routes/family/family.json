@@ -10,7 +10,7 @@
         "ogImage": "https://assets.raggiesoft.com/family/images/scenes/paige-michael-og-image.jpg",
         "showSidebar": true,
         "sidebar": "family/sidebar-family",
-        "navbarBrandLogo": "family/images/logos/logo-family.png",
+        "navbarBrandLogo": "https://assets.raggiesoft.com/family/images/logos/logo-family.png",
         "navbarBrandLogoAlt": "The RaggieSoft Family Logo"
     },
     "/family": {
