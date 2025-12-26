@@ -190,82 +190,112 @@ if (isset($customPageAssets) && is_array($customPageAssets)) {
     </div>
     
     <script>
-        (function() {
-            const loader = document.getElementById('page-loader');
-            const bar = document.getElementById('loader-bar');
-            const text = document.getElementById('loader-text');
-            let progress = 0; let progressInterval;
+    (function() {
+        const loader = document.getElementById('page-loader');
+        const bar = document.getElementById('loader-bar');
+        const text = document.getElementById('loader-text');
+        let progress = 0; let progressInterval;
 
-            // 1. The Animation Loop (Same as before)
-            function startHeartbeat() {
-                if (progressInterval) clearInterval(progressInterval);
-                progress = 10; 
-                if(bar) { bar.style.width = '10%'; bar.style.opacity = '1'; }
+        // 1. The Animation Loop
+        function startHeartbeat() {
+            if (progressInterval) clearInterval(progressInterval);
+            progress = 10; 
+            if(bar) { bar.style.width = '10%'; bar.style.opacity = '1'; }
+            
+            progressInterval = setInterval(() => {
+                // Decays as it gets closer to 95%
+                let step = (95 - progress) / 80; 
+                if (step < 0.1) step = 0.1; 
+                progress += step; 
+                if (progress > 95) progress = 95; 
                 
-                progressInterval = setInterval(() => {
-                    // Decays as it gets closer to 95%
-                    let step = (95 - progress) / 80; 
-                    if (step < 0.1) step = 0.1; 
-                    progress += step; 
-                    if (progress > 95) progress = 95; 
-                    
-                    if(bar) bar.style.width = progress + '%';
-                    
-                    // 2. Dynamic Sci-Fi Text Updates
-                    if(text) {
-                        if (progress < 30) text.innerText = "> ESTABLISHING UPLINK...";
-                        else if (progress < 50) text.innerText = "> HANDSHAKING...";
-                        else if (progress < 70) text.innerText = "> DECRYPTING STREAM...";
-                        else text.innerText = "> AWAITING RESPONSE...";
-                    }
-                }, 50);
-            }
+                if(bar) bar.style.width = progress + '%';
+                
+                // 2. Dynamic Sci-Fi Text Updates
+                if(text) {
+                    if (progress < 30) text.innerText = "> ESTABLISHING UPLINK...";
+                    else if (progress < 50) text.innerText = "> HANDSHAKING...";
+                    else if (progress < 70) text.innerText = "> DECRYPTING STREAM...";
+                    else text.innerText = "> AWAITING RESPONSE...";
+                }
+            }, 50);
+        }
 
-            function finishLoad() {
-                if (progressInterval) clearInterval(progressInterval);
-                if(bar) bar.style.width = '100%';
-                if(text) text.innerText = "> CONNECTION ESTABLISHED.";
+        function finishLoad() {
+            if (progressInterval) clearInterval(progressInterval);
+            if(bar) bar.style.width = '100%';
+            if(text) text.innerText = "> CONNECTION ESTABLISHED.";
+            
+            // Slight delay so the user sees the 100% completion
+            setTimeout(() => { 
+                if(loader) loader.classList.add('loader-hidden'); 
                 
-                // Slight delay so the user sees the 100% completion
+                // Reset for next time
                 setTimeout(() => { 
-                    if(loader) loader.classList.add('loader-hidden'); 
-                    
-                    // Reset for next time (optional but cleaner)
-                    setTimeout(() => { 
-                        if(bar) { bar.style.width = '0%'; bar.style.opacity = '0'; }
-                    }, 500);
+                    if(bar) { bar.style.width = '0%'; bar.style.opacity = '0'; }
                 }, 500);
+            }, 500);
+        }
+
+        // --- 3. TURBO INTEGRATION (The "SPA" Engine) ---
+        document.addEventListener('turbo:visit', () => {
+            if(loader) {
+                loader.classList.remove('loader-hidden');
+                if(text) text.innerText = "> INITIALIZING JUMP...";
+                startHeartbeat();
             }
+        });
 
-            // --- 3. TURBO INTEGRATION ---
-            // This connects your custom loader to Hotwired Turbo's events.
+        document.addEventListener('turbo:load', () => {
+            finishLoad();
+        });
+
+        // --- 4. CLICK INTERCEPTOR (The "Instant" Feel) ---
+        // This catches regular links immediately, even before Turbo or the browser reacts
+        document.addEventListener('click', function(e) {
+            // Find the closest anchor tag (in case they clicked an icon inside the link)
+            const link = e.target.closest('a');
+
+            // Safety Checks: Stop if...
+            if (!link) return; // ...it's not a link
+            if (link.target === '_blank') return; // ...it opens in a new tab
+            if (e.ctrlKey || e.metaKey || e.shiftKey) return; // ...modifier keys are held
             
-            // When a link is clicked or visit starts
-            document.addEventListener('turbo:visit', () => {
-                if(loader) {
-                    loader.classList.remove('loader-hidden');
-                    if(text) text.innerText = "> INITIALIZING JUMP...";
-                    startHeartbeat();
-                }
-            });
+            const href = link.getAttribute('href');
+            if (!href || href.startsWith('javascript:') || href.startsWith('mailto:') || href.startsWith('tel:')) return; 
 
-            // When the new content is successfully swapped in
-            document.addEventListener('turbo:load', () => {
-                finishLoad();
-            });
-
-            // Fallback for the very first page load (hard refresh)
-            document.addEventListener('DOMContentLoaded', () => {
-                // If the page is already loading, ensure animation runs
-                if (!loader.classList.contains('loader-hidden')) {
-                    startHeartbeat();
-                }
-            });
+            // Anchor Logic: Stop if...
+            if (href.startsWith('#')) return; // ...it's a hash on the current page
             
-            window.addEventListener('load', finishLoad);
+            // Compare Origins (Strict Internal Only)
+            const currentUrl = new URL(window.location.href);
+            const targetUrl = new URL(link.href, window.location.href); 
 
-        })();
-        </script>
+            if (targetUrl.origin !== currentUrl.origin) return; // ...it's an external domain
+            
+            // Same-page anchor check (e.g. page.php#section)
+            if (targetUrl.pathname === currentUrl.pathname && targetUrl.hash !== '') return;
+
+            // If we survived the checks, it's a valid internal page load.
+            // TRIGGER VISUALS NOW
+            if(loader) {
+                loader.classList.remove('loader-hidden');
+                if(text) text.innerText = "> NAVIGATING..."; // Instant feedback
+                startHeartbeat();
+            }
+        });
+
+        // Fallback for hard refreshes
+        document.addEventListener('DOMContentLoaded', () => {
+            if (!loader.classList.contains('loader-hidden')) {
+                startHeartbeat();
+            }
+        });
+        
+        window.addEventListener('load', finishLoad);
+
+    })();
+    </script>
     
     <header>
       <nav class="navbar navbar-expand-md sticky-top border-bottom border-primary border-opacity-50 bg-body">
