@@ -1,7 +1,7 @@
 <?php
 // pages/engine-room/history/nine-figure-refusal/the-jessica-miller-center.php
 // The Re-Branding of the Omni-Global Leasehold
-// UPDATED: WCAG Compliance & Narrative Stepper
+// UPDATED: WCAG Color Corrections (Organizational Structure Card)
 
 $pageTitle = "The Jessica Miller Center - Engine Room History";
 ?>
@@ -28,7 +28,7 @@ $pageTitle = "The Jessica Miller Center - Engine Room History";
     
     <div class="row justify-content-center mb-5">
         <div class="col-lg-8 text-center">
-            <span class="badge bg-success text-white rounded-pill px-3 py-2 mb-3 text-uppercase letter-spacing-1 shadow-glow">
+            <span class="badge bg-success-subtle text-success-emphasis rounded-pill px-3 py-2 mb-3 text-uppercase letter-spacing-1 shadow-sm border border-success-subtle">
                 <i class="fa-duotone fa-building me-2"></i>HQ Status: Active Leasehold (2019-2029)
             </span>
             <h1 class="display-4 fw-bold text-body-emphasis mb-2 text-uppercase" style="font-family: 'Impact', sans-serif;">
@@ -42,36 +42,36 @@ $pageTitle = "The Jessica Miller Center - Engine Room History";
 
     <div class="row justify-content-center mb-5">
         <div class="col-lg-10">
-            <div class="card bg-dark border-secondary shadow-lg">
+            <div class="card bg-body-tertiary border-secondary shadow-lg">
                 <div class="card-body p-4">
                     <div class="row align-items-center">
-                        <div class="col-md-4 text-center border-end border-secondary">
+                        <div class="col-md-4 text-center border-end border-secondary-subtle">
                             <img src="https://assets.raggiesoft.com/stardust-engine/images/corporate/jessica-miller.jpg" 
                                  class="img-fluid rounded-3 border border-success border-2 shadow mb-3"
                                  style="width: 100%; max-width: 280px; object-fit: cover;" 
                                  alt="Jessica Miller, Executive Director">
                             
-                            <h5 class="fw-bold text-white mb-0 mt-2">Jessica Miller</h5>
+                            <h5 class="fw-bold text-body-emphasis mb-0 mt-2">Jessica Miller</h5>
                             <small class="text-success text-uppercase fw-bold letter-spacing-1" style="font-size: 0.65rem;">Executive Director</small>
-                            <p class="text-white-50 small mt-2 fst-italic">
+                            <p class="text-body-secondary small mt-2 fst-italic">
                                 "Competence doesn't need a blazer."
                             </p>
                         </div>
                         <div class="col-md-8 ps-md-4">
-                            <h5 class="text-uppercase text-white-50 border-bottom border-secondary pb-2 mb-3">
+                            <h5 class="text-uppercase text-body-secondary border-bottom border-secondary-subtle pb-2 mb-3">
                                 <i class="fa-solid fa-sitemap me-2"></i>Organizational Structure
                             </h5>
-                            <div class="font-monospace small text-white-50">
+                            <div class="font-monospace small text-body-secondary">
                                 <p class="mb-2">
                                     <strong>Parent Entity:</strong> Engine Room Records, LLC (Virginia)<br>
-                                    <span class="text-secondary ms-3">↳ CEO: Holly O'Connell (Blacksburg, VA)</span>
+                                    <span class="text-body-secondary ms-3">↳ CEO: Holly O'Connell (Blacksburg, VA)</span>
                                 </p>
                                 <p class="mb-2">
                                     <strong>Subsidiary Entity:</strong> The Jessica Miller Center, LLC (California)<br>
                                     <span class="text-success ms-3">↳ Executive Director: Jessica Miller (Los Angeles, CA)</span>
                                 </p>
-                                <div class="alert alert-success bg-opacity-10 border-success mt-3 mb-0 p-2 d-flex align-items-center text-white">
-                                    <i class="fa-solid fa-check-circle text-success me-3 fs-4"></i>
+                                <div class="alert alert-success bg-success-subtle border-success mt-3 mb-0 p-2 d-flex align-items-center text-success-emphasis">
+                                    <i class="fa-solid fa-check-circle me-3 fs-4"></i>
                                     <div>
                                         <strong>The Promotion:</strong> Formerly an unpaid intern (2018), Jessica was appointed Executive Director in Feb 2019. She manages day-to-day logistics for the West Coast hub, reporting directly to Holly O'Connell.
                                     </div>
@@ -287,14 +287,14 @@ $pageTitle = "The Jessica Miller Center - Engine Room History";
 
     <div class="row justify-content-center mb-5">
         <div class="col-lg-10">
-            <div class="alert alert-dark border-primary d-flex align-items-center" role="alert">
+            <div class="alert alert-dark bg-body-tertiary border-primary d-flex align-items-center" role="alert">
                 <i class="fa-duotone fa-circle-info text-primary fs-2 me-3"></i>
                 <div>
                     <h5 class="alert-heading text-primary fw-bold">The Floor Plan Redistribution</h5>
-                    <p class="mb-2 small text-white-50">
+                    <p class="mb-2 small text-body-secondary">
                         To deconstruct the "Tower of Power" hierarchy, Jessica Miller mandated a complete inversion of the executive structure:
                     </p>
-                    <ul class="mb-0 small text-white-50 font-monospace">
+                    <ul class="mb-0 small text-body-secondary font-monospace">
                         <li><strong>Floor 38 (Lobby & Intake):</strong> The new public face. Suite 3800. Accessible immediately from the elevator bank.</li>
                         <li><strong>Floor 39 (Operations):</strong> The working pit. Contains the shared Executive Office of <strong>Jessica Miller & Justin</strong>.</li>
                         <li><strong>Floor 40 (The Quiet Floor):</strong> Formerly the CEO Penthouse. Now a sensory-deprivation zone <strong>open to all building tenants</strong>.</li>
