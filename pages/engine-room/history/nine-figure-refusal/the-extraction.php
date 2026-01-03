@@ -2,7 +2,7 @@
 // pages/engine-room/history/nine-figure-refusal/the-extraction.php
 // EVIDENCE ITEM #03: The Departure
 // Context: The family executes "Code Carry" and leaves the building.
-// UPDATED: Added "Tactical Choice" (Rejecting the Ghost Route) to emphasize public witnessing.
+// UPDATED: Corrected Geography (Service Right / Bullpen Straight Ahead).
 
 $pageTitle = "The Extraction - Evidence Item #03";
 ?>
@@ -118,15 +118,15 @@ $pageTitle = "The Extraction - Evidence Item #03";
                     <div class="alert alert-secondary border-start border-4 border-dark bg-body-secondary text-body-emphasis my-4">
                         <h6 class="fw-bold text-uppercase mb-2"><i class="fa-solid fa-route me-2"></i>Tactical Decision: The Route</h6>
                         <p class="mb-2 small">
-                            Holly paused in the vestibule. To her left was a nondescript beige door marked <strong>"SERVICE ONLY."</strong> Her Tier 1 Landlord Badge would have unlocked it instantly, granting them access to the private Service Elevator. They could have exited the building unseen via the loading dock.
+                            Holly paused in the vestibule. To her <strong>right</strong> was a nondescript beige door marked <strong>"SERVICE ONLY."</strong> Her Tier 1 Landlord Badge would have unlocked it instantly, granting them access to the private Service Elevator. They could have exited the building unseen via the loading dock.
                         </p>
                         <p class="mb-0 small fw-bold fst-italic">
-                            Holly didn't look left. She looked right—toward the crowded open-plan office. She chose the audience.
+                            Holly didn't look right. She looked <strong>straight ahead</strong>—directly into the crowded, open-plan "Bullpen" where fifty junior analysts were working in silent terror. She chose the audience.
                         </p>
                     </div>
 
                     <p>
-                        They turned right, walking straight down the plush carpet of the main executive corridor. The open-plan "Bullpen" was silent. Dozens of analysts, assistants, and junior VPs stood at their cubicles, staring in horror at the sobbing woman being carried by her family.
+                        They walked straight down the center aisle of the plush carpet. The Bullpen went silent. Dozens of analysts, assistants, and junior VPs stood up in their low-walled cubicles, staring in horror at the sobbing woman being carried by her family.
                     </p>
                     <p>
                         Holly didn't shield Cassidy. She didn't ask them to look away. She walked with her head high, forcing every employee at Omni-Global to witness the human cost of their business model.
@@ -135,7 +135,7 @@ $pageTitle = "The Extraction - Evidence Item #03";
                         David, the Junior Associate, walked beside Holly, looking shaken by the raw sound of Cassidy's distress.
                     </p>
                     <p>
-                        "Sorry you had to see that," David said, gesturing toward the shouting coming from the Chairman's office.
+                        "Sorry you had to see that," David said, gesturing toward the shouting coming from the Chairman's office behind them.
                     </p>
                     <p>
                         "Don't be," Holly replied. "It's the sweetest sound I've heard all morning. It means she's still fighting."
