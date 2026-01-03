@@ -233,7 +233,7 @@ $pageTitle = "Evidence #00-C: The Smoking Gun - Engine Room History";
         </div>
         <div class="col-4 text-end">
             <a href="/engine-room/history/nine-figure-refusal/the-offer-letter" class="btn btn-primary rounded-pill shadow-sm">
-                Next: The Interview <i class="fa-solid fa-arrow-right ms-2"></i>
+                Next: The Offer Letter <i class="fa-solid fa-arrow-right ms-2"></i>
             </a>
         </div>
     </div>
