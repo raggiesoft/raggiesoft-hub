@@ -29,7 +29,7 @@ $pageTitle = "The $150M Offer Letter - Evidence Item #01-A";
                     <div class="col-lg-6 position-relative min-vh-25">
                          <img src="https://assets.raggiesoft.com/engine-room-records/images/omni-global/150-million-refusal.jpg" 
                              class="img-fluid h-100 w-100 object-fit-cover" 
-                             alt="The O'Connell family facing Jameson Frost in the Omni-Global boardroom.">
+                             alt="Boardroom Standoff. Left: Ryan (in wheelchair), Cassidy, and Holly seated; Evan and Tyler standing. Right: Executives Marcus Thorne, Jameson Frost, and Brad Haskins standing aggressively.">
                     </div>
                     <div class="col-lg-6">
                         <div class="card-body p-4 p-md-5 d-flex flex-column justify-content-center h-100">
@@ -46,10 +46,10 @@ $pageTitle = "The $150M Offer Letter - Evidence Item #01-A";
                                 Jameson Frost is pacing. He's checked his Rolex three times in the last minute. He has the "Closing Champagne" on ice in the corner. He expects gratitude.
                             </p>
                             <p class="text-body-secondary mb-3">
-                                On the other side of the mahogany table, the O'Connell family is motionless. They aren't looking at the view of Los Angeles. They aren't looking at the champagne.
+                                On the other side of the mahogany table, the O'Connell family is motionless. Cassidy offers a polite, frozen smile. Ryan stares at the wall. They aren't looking at the view. They aren't looking at the champagne.
                             </p>
                             <p class="text-body-secondary fst-italic mb-4">
-                                They are reading. Every single line.
+                                Holly is reading. Every single line.
                             </p>
 
                             <blockquote class="blockquote border-start border-4 border-warning ps-3 mb-0">
