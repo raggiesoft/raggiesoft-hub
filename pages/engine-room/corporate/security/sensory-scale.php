@@ -2,6 +2,7 @@
 // pages/story/lore/sensory-scale.php
 // LORE REFERENCE: The O'Connell Sensory Distress Scale (Levels 1-5)
 // Context: Standard Operating Procedures for Engine Room Staff & Security.
+// APPLICABLE TO: Ryan O'Connell, Cassidy O'Connell, Michael Ragsdale, and associated "Ironhead" personnel.
 
 $pageTitle = "Lore: Sensory Distress Protocols - Ironhead Security";
 ?>
@@ -17,31 +18,37 @@ $pageTitle = "Lore: Sensory Distress Protocols - Ironhead Security";
                 Sensory Distress Scale
             </h1>
             <p class="lead text-body-secondary font-monospace mx-auto" style="max-width: 800px;">
-                Standard operating procedures for identifying and managing neurodivergent sensory overload events in the field.
+                Standard operating procedures for identifying and managing neurodivergent sensory overload events in the field. 
+                <span class="d-block fs-6 mt-2 fst-italic opacity-75">"Recognize the static before it becomes the storm."</span>
             </p>
         </div>
     </div>
 
     <div class="row justify-content-center mb-4">
         <div class="col-lg-10">
-            <div class="card h-100 border-success shadow-sm">
-                <div class="card-header bg-success bg-opacity-10 text-success fw-bold text-uppercase d-flex justify-content-between align-items-center">
-                    <span><i class="fa-duotone fa-radiation me-2"></i>Level 1: The Rumble</span>
-                    <span class="badge bg-success text-white">Minor</span>
+            <div class="card h-100 border-success-subtle shadow-sm">
+                <div class="card-header bg-success-subtle text-success-emphasis border-bottom border-success-subtle py-3 d-flex justify-content-between align-items-center">
+                    <h5 class="fw-bold text-uppercase mb-0">
+                        <i class="fa-duotone fa-signal-stream me-2"></i>Level 1: The Rumble
+                    </h5>
+                    <span class="badge bg-success text-white">Stable / Monitor</span>
                 </div>
-                <div class="card-body">
+                <div class="card-body p-4">
                     <div class="row align-items-center">
                         <div class="col-md-8">
-                            <h5 class="fw-bold mb-3">Background Static</h5>
-                            <p class="card-text mb-2">
-                                <strong>Symptoms:</strong> Slight irritability, repetitive tapping (stimming), noise sensitivity. The subject is still verbal and logical but "distracted."
+                            <p class="card-text mb-3">
+                                <strong>Internal State:</strong> System friction detected. Lights appear 10% brighter. Background noise (HVAC, traffic) stops filtering out and becomes distinct.
                             </p>
-                            <p class="card-text text-body-secondary small fst-italic">
-                                <strong>Protocol:</strong> Reduce environmental noise. Offer headphones. Do not engage in complex queries.
-                            </p>
+                            <ul class="list-unstyled small font-monospace mb-0 text-body-secondary">
+                                <li class="mb-2"><i class="fa-solid fa-check text-success me-2"></i><strong>Signs:</strong> Increased stimming (tapping, chewing), slight irritability, adjusting clothing.</li>
+                                <li class="mb-0"><i class="fa-solid fa-check text-success me-2"></i><strong>Protocol:</strong> "Monitor." Reduce unnecessary inputs. No intervention required.</li>
+                            </ul>
                         </div>
-                        <div class="col-md-4 d-none d-md-block text-end opacity-25">
-                            <i class="fa-duotone fa-face-unamused fa-4x text-success"></i>
+                        <div class="col-md-4 border-start border-secondary-subtle ps-4 d-none d-md-block">
+                            <small class="text-uppercase fw-bold text-success-emphasis">Example:</small>
+                            <p class="small text-body-secondary fst-italic mb-0">
+                                Cassidy aggressively chewing gum while mixing a track because the snare drum sound isn't sitting right.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -51,24 +58,29 @@ $pageTitle = "Lore: Sensory Distress Protocols - Ironhead Security";
 
     <div class="row justify-content-center mb-4">
         <div class="col-lg-10">
-            <div class="card h-100 border-info shadow-sm">
-                <div class="card-header bg-info bg-opacity-10 text-info-emphasis fw-bold text-uppercase d-flex justify-content-between align-items-center">
-                    <span><i class="fa-duotone fa-bolt me-2"></i>Level 2: The Spark</span>
-                    <span class="badge bg-info text-dark">Caution</span>
+            <div class="card h-100 border-info-subtle shadow-sm">
+                <div class="card-header bg-info-subtle text-info-emphasis border-bottom border-info-subtle py-3 d-flex justify-content-between align-items-center">
+                    <h5 class="fw-bold text-uppercase mb-0">
+                        <i class="fa-duotone fa-triangle-exclamation me-2"></i>Level 2: The Glitch
+                    </h5>
+                    <span class="badge bg-info text-dark">Input Lag</span>
                 </div>
-                <div class="card-body">
+                <div class="card-body p-4">
                     <div class="row align-items-center">
                         <div class="col-md-8">
-                            <h5 class="fw-bold mb-3">Logic Fragmentation</h5>
-                            <p class="card-text mb-2">
-                                <strong>Symptoms:</strong> Verbal stuttering or "looping" on a phrase. Pacing. Visible distress. The subject is attempting to rationalize the input but failing.
+                            <p class="card-text mb-3">
+                                <strong>Internal State:</strong> Processing speed drops. Thoughts become "sticky." The brain starts prioritizing sensory defense over social niceties.
                             </p>
-                            <p class="card-text text-body-secondary small fst-italic">
-                                <strong>Protocol:</strong> Clear the room. "One Voice" rule applies (only one person speaks). Direct, simple commands ("Sit down," "Drink water").
-                            </p>
+                            <ul class="list-unstyled small font-monospace mb-0 text-body-secondary">
+                                <li class="mb-2"><i class="fa-solid fa-check text-info me-2"></i><strong>Signs:</strong> Echolalia (repeating words), sensory seeking (hoodie up), "flat" face, delayed responses.</li>
+                                <li class="mb-0"><i class="fa-solid fa-check text-info me-2"></i><strong>Protocol:</strong> "Create Space." Yes/No questions only. Do not demand eye contact.</li>
+                            </ul>
                         </div>
-                        <div class="col-md-4 d-none d-md-block text-end opacity-25">
-                            <i class="fa-duotone fa-face-anxious-sweat fa-4x text-info"></i>
+                        <div class="col-md-4 border-start border-secondary-subtle ps-4 d-none d-md-block">
+                            <small class="text-uppercase fw-bold text-info-emphasis">Example:</small>
+                            <p class="small text-body-secondary fst-italic mb-0">
+                                Jessica Miller typing on her phone instead of speaking because her voice feels "too heavy" to use.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -78,24 +90,29 @@ $pageTitle = "Lore: Sensory Distress Protocols - Ironhead Security";
 
     <div class="row justify-content-center mb-4">
         <div class="col-lg-10">
-            <div class="card h-100 border-warning shadow-sm">
-                <div class="card-header bg-warning bg-opacity-10 text-warning-emphasis fw-bold text-uppercase d-flex justify-content-between align-items-center">
-                    <span><i class="fa-duotone fa-triangle-exclamation me-2"></i>Level 3: The Surge</span>
-                    <span class="badge bg-warning text-dark">Warning</span>
+            <div class="card h-100 border-warning-subtle shadow-sm">
+                <div class="card-header bg-warning-subtle text-warning-emphasis border-bottom border-warning-subtle py-3 d-flex justify-content-between align-items-center">
+                    <h5 class="fw-bold text-uppercase mb-0">
+                        <i class="fa-duotone fa-power-off me-2"></i>Level 3: The Shutdown
+                    </h5>
+                    <span class="badge bg-warning text-dark">Safe Mode</span>
                 </div>
-                <div class="card-body">
+                <div class="card-body p-4">
                     <div class="row align-items-center">
                         <div class="col-md-8">
-                            <h5 class="fw-bold mb-3">Fight or Flight</h5>
-                            <p class="card-text mb-2">
-                                <strong>Symptoms:</strong> Verbal aggression or complete silence. Covering ears/eyes. Rocking. The "Logic Core" has shut down; operating on instinct.
+                            <p class="card-text mb-3">
+                                <strong>Internal State:</strong> Input cut off. The world feels underwater. Total dissociation to protect the brain from overload.
                             </p>
-                            <p class="card-text text-body-secondary small fst-italic">
-                                <strong>Protocol:</strong> "Safe Harbor" protocol engaged. Move subject to a dark, quiet area immediately. No touching unless requested.
-                            </p>
+                            <ul class="list-unstyled small font-monospace mb-0 text-body-secondary">
+                                <li class="mb-2"><i class="fa-solid fa-check text-warning me-2"></i><strong>Signs:</strong> Non-verbal / Whispering. The "Thousand-Yard Stare." Hiding in small spaces (under desks).</li>
+                                <li class="mb-0"><i class="fa-solid fa-check text-warning me-2"></i><strong>Protocol:</strong> "Perimeter Check." Guard the door. Do not speak unless necessary.</li>
+                            </ul>
                         </div>
-                        <div class="col-md-4 d-none d-md-block text-end opacity-25">
-                            <i class="fa-duotone fa-face-fearful fa-4x text-warning"></i>
+                        <div class="col-md-4 border-start border-secondary-subtle ps-4 d-none d-md-block">
+                            <small class="text-uppercase fw-bold text-warning-emphasis">Example:</small>
+                            <p class="small text-body-secondary fst-italic mb-0">
+                                Cassidy sitting under the mixing desk for an hour, refusing to come out until a buzzing light bulb is changed.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -105,24 +122,29 @@ $pageTitle = "Lore: Sensory Distress Protocols - Ironhead Security";
 
     <div class="row justify-content-center mb-4">
         <div class="col-lg-10">
-            <div class="card h-100 border-danger shadow-sm">
-                <div class="card-header bg-danger bg-opacity-10 text-danger fw-bold text-uppercase d-flex justify-content-between align-items-center">
-                    <span><i class="fa-duotone fa-fire me-2"></i>Level 4: The Overload</span>
-                    <span class="badge bg-danger text-white">Danger</span>
+            <div class="card h-100 border-danger-subtle shadow-sm">
+                <div class="card-header bg-danger-subtle text-danger-emphasis border-bottom border-danger-subtle py-3 d-flex justify-content-between align-items-center">
+                    <h5 class="fw-bold text-uppercase mb-0">
+                        <i class="fa-duotone fa-burst me-2"></i>Level 4: The Meltdown
+                    </h5>
+                    <span class="badge bg-danger text-white">System Purge</span>
                 </div>
-                <div class="card-body">
+                <div class="card-body p-4">
                     <div class="row align-items-center">
                         <div class="col-md-8">
-                            <h5 class="fw-bold mb-3">System Instability</h5>
-                            <p class="card-text mb-2">
-                                <strong>Symptoms:</strong> Loss of spatial awareness. Incoherent vocalizations. "Shutdown" (curling into a ball) or "Explosion" (throwing objects).
+                            <p class="card-text mb-3">
+                                <strong>Internal State:</strong> Critical Failure. Fight or Flight. The brain believes it is under physical attack. Logic is gone; only sensory pain remains.
                             </p>
-                            <p class="card-text text-body-secondary small fst-italic">
-                                <strong>Protocol:</strong> Evacuate non-essential personnel. Block exits to prevent bolting. Prepare for physical containment.
-                            </p>
+                            <ul class="list-unstyled small font-monospace mb-0 text-body-secondary">
+                                <li class="mb-2"><i class="fa-solid fa-check text-danger me-2"></i><strong>Signs:</strong> Explosive emotion (crying/shouting), motor agitation (pacing), flight risk.</li>
+                                <li class="mb-0"><i class="fa-solid fa-check text-danger me-2"></i><strong>Protocol:</strong> "Clear the Room." Remove audience. Dim lights. Do not restrain unless unsafe.</li>
+                            </ul>
                         </div>
-                        <div class="col-md-4 d-none d-md-block text-end opacity-25">
-                            <i class="fa-duotone fa-face-explode fa-4x text-danger"></i>
+                        <div class="col-md-4 border-start border-secondary-subtle ps-4 d-none d-md-block">
+                            <small class="text-uppercase fw-bold text-danger-emphasis">Example:</small>
+                            <p class="small text-body-secondary fst-italic mb-0">
+                                Smashing a guitar not out of anger, but because the sound of the feedback loop physically hurt.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -130,28 +152,46 @@ $pageTitle = "Lore: Sensory Distress Protocols - Ironhead Security";
         </div>
     </div>
 
-    <div class="row justify-content-center mb-4">
+    <div class="row justify-content-center mb-5">
         <div class="col-lg-10">
-            <div class="card h-100 border-danger border-3 shadow">
-                <div class="card-header bg-danger text-white fw-bold text-uppercase d-flex justify-content-between align-items-center">
-                    <span><i class="fa-duotone fa-skull-crossbones me-2"></i>Level 5: The Crash</span>
-                    <span class="badge bg-white text-danger">CRITICAL</span>
+            <div class="card border-danger border-3 shadow-lg overflow-hidden" data-bs-theme="dark">
+                <div class="card-header bg-danger text-white py-3 d-flex justify-content-between align-items-center">
+                    <h5 class="fw-bold text-uppercase mb-0 text-shadow-black">
+                        <i class="fa-duotone fa-radiation me-2"></i>Level 5: The Collapse
+                    </h5>
+                    <span class="badge bg-black text-danger border border-danger">CODE CARRY</span>
                 </div>
-                <div class="card-body bg-danger bg-opacity-10">
-                    <div class="row align-items-center">
+                <div class="card-body bg-black p-5 position-relative">
+                    
+                    <div class="position-absolute top-50 start-50 translate-middle opacity-10" style="pointer-events: none;">
+                        <i class="fa-duotone fa-biohazard fa-10x text-danger"></i>
+                    </div>
+
+                    <div class="row align-items-center position-relative" style="z-index: 2;">
                         <div class="col-md-8">
-                            <h5 class="fw-bold mb-3 text-danger-emphasis">System Failure</h5>
-                            <p class="card-text mb-2 text-danger-emphasis">
-                                <strong>Symptoms:</strong> Total loss of verbal communication. Involuntary self-injurious behavior (hitting self). "The Scream". Complete dissociation from reality.
+                            <p class="text-white fs-5 mb-4">
+                                <strong>Internal State:</strong> Total System Crash. Time ceases to exist. The body feels like it is vibrating apart. Subject is trapped in a loop of sensory agony.
                             </p>
-                            <p class="card-text small fst-italic text-danger-emphasis">
-                                <strong>Protocol:</strong> Immediate extraction. Do not attempt to de-escalate verbally. Physical containment (Deep Pressure) required to prevent injury. "Safe Mode" reboot required (sleep).
-                            </p>
+                            <ul class="list-unstyled font-monospace mb-0">
+                                <li class="mb-3 d-flex">
+                                    <i class="fa-solid fa-triangle-exclamation text-danger mt-1 me-3 fs-5"></i>
+                                    <div class="text-white-50">
+                                        <strong class="text-white">Signs:</strong> Drop to floor (loss of motor control), self-injury (hitting head), fetal position, hands clamped over ears.
+                                    </div>
+                                </li>
+                                <li class="mb-0 d-flex">
+                                    <i class="fa-solid fa-hand-holding-medical text-success mt-1 me-3 fs-5"></i>
+                                    <div class="text-white-50">
+                                        <strong class="text-white">Protocol: "Deep Pressure / Extraction."</strong><br>
+                                        Immediate grounding via weighted pressure. If environment is hostile (e.g., Omni-Global Meeting), physical extraction is mandatory.
+                                    </div>
+                                </li>
+                            </ul>
                         </div>
-                        <div class="col-md-4 d-none d-md-block">
-                            <div class="p-3 bg-body-tertiary border border-secondary rounded">
+                        <div class="col-md-4 border-start border-secondary ps-4 d-none d-md-block">
+                            <div class="p-3 bg-dark border border-secondary rounded">
                                 <small class="text-danger text-uppercase fw-bold d-block mb-2">Historical Record:</small>
-                                <p class="small text-body-secondary fst-italic mb-2">
+                                <p class="small text-white fst-italic mb-2">
                                     <strong>Incident:</strong> Omni-Global Pitch (2018)<br>
                                     <strong>Trigger:</strong> Threat to "Ad Astra" Master<br>
                                     <strong>Severity:</strong> <span class="text-danger fw-bold">MAXIMUM</span> (Worst Recorded)<br>
@@ -166,7 +206,7 @@ $pageTitle = "Lore: Sensory Distress Protocols - Ironhead Security";
         </div>
     </div>
 
-    <div class="row justify-content-center border-top border-secondary border-opacity-25 pt-5">
+    <div class="row justify-content-center border-top border-secondary-subtle pt-5">
         <div class="col-lg-8 text-center">
             <a href="/engine-room/artists/stardust-engine/lore" class="btn btn-outline-secondary rounded-pill px-4">
                 <i class="fa-solid fa-book-open me-2"></i>Return to Lore Index
