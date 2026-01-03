@@ -2,7 +2,7 @@
 // pages/engine-room/history/nine-figure-refusal/forensic-audit.php
 // EVIDENCE ITEM #00-B: Holly's "Homework" & The Federal "Triple Tap"
 // Context: The moment Holly realized she could drop a nuclear bomb on Omni-Global.
-// UPDATED: WCAG Compliance & Narrative Refinement (The "Music vs Film" Lie)
+// UPDATED: Fixed WCAG contrast issue on the "TV Division" note (text-black -> text-body-emphasis).
 
 $pageTitle = "Forensic Audit: Omni-Global Media - Engine Room History";
 ?>
@@ -121,7 +121,8 @@ $pageTitle = "Forensic Audit: Omni-Global Media - Engine Room History";
                                     <td class="p-3 text-end fw-bold text-body-secondary">$350,000,000</td>
                                     <td class="p-3 text-end fw-bold text-danger border-start border-danger border-2">$0</td>
                                     <td class="p-3 small text-danger fw-bold border-start border-danger border-2">
-                                        FAKE MONEY. They are counting profits from TV shows they haven't even filmed yet. <span class="d-block mt-2 fst-italic text-black">(Note: They are a MUSIC company. They don't even have a TV division.)</span>
+                                        FAKE MONEY. They are counting profits from TV shows they haven't even filmed yet. 
+                                        <span class="d-block mt-2 fst-italic text-body-emphasis">(Note: They are a MUSIC company. They don't even have a TV division.)</span>
                                     </td>
                                 </tr>
 
