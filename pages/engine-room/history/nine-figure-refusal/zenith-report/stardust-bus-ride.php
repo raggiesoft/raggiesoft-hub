@@ -3,66 +3,65 @@
 // The Zenith Report Archives.
 // Contains: "The $350 Million Bus Ride", "The Image That Broke Wall Street", AND "The Landlord's Statement"
 // Context: Investigative reporting on the Omni-Global scandal.
-// UPDATED: Added "Newsprint/Security Cam" CSS filters to the image & Narrative Stepper.
+// UPDATED: WCAG Compliance (Text Contrast Overrides) & Grainy Image Filter.
 
 $pageTitle = "The Zenith Report: The Bus Ride & The Leak";
 ?>
 
 <style>
-    /* NEWSPAPER THEME - ADAPTIVE */
+    /* NEWSPAPER THEME - BASE STYLES */
     .zenith-paper {
         background-color: #f9f9f9;
         color: #1a1a1a;
-        transition: all 0.3s ease;
+        transition: background-color 0.3s ease, color 0.3s ease;
         border: 1px solid #d3d3d3;
     }
     
-    /* Article 1 Tilt */
+    /* Article Rotations */
     .zenith-paper-1 { transform: rotate(1deg); }
-    
-    /* Article 2 Tilt */
     .zenith-paper-2 { transform: rotate(-1deg); }
     
-    /* SECURITY FOOTAGE / NEWSPRINT FILTER */
+    /* SECURITY FOOTAGE FILTER (The "Newspaper Print" Look) */
     .security-footage-print {
-        filter: grayscale(100%) contrast(150%) brightness(90%) sepia(20%);
-        /* Optional: Add a subtle SVG noise overlay if supported, but high contrast grayscale does the job well */
-        border: 4px solid #000;
-        max-width: 100%;
+        filter: grayscale(100%) contrast(140%) brightness(110%) sepia(30%);
+        border: 1px solid #000;
+        mix-blend-mode: multiply; /* Helps it sit "in" the paper */
         display: block;
+        max-width: 100%;
+    }
+    
+    /* Fix for dark mode blend issue */
+    [data-bs-theme="dark"] .security-footage-print {
+        mix-blend-mode: normal;
+        opacity: 0.9;
+        filter: grayscale(100%) contrast(120%) brightness(80%);
     }
 
-    /* Press Release (Formal - No Tilt) */
-    /* FORCE LIGHT MODE STYLING EVEN IN DARK MODE (Skeuomorphic Paper) */
+    /* PRESS RELEASE: FORCED LIGHT MODE (Skeuomorphic Physical Paper) */
+    /* This ensures AAA Contrast by keeping it Black Text on White Paper always */
     .zenith-paper-3 { 
         transform: rotate(0deg); 
         box-shadow: 0 1rem 3rem rgba(0,0,0,0.175) !important;
         background-color: #ffffff !important; 
-        color: #212529 !important;
+        color: #000000 !important;
     }
-    
-    /* Force all child elements in the press release to use dark text */
-    .zenith-paper-3 p,
-    .zenith-paper-3 h4,
-    .zenith-paper-3 h5,
-    .zenith-paper-3 div,
-    .zenith-paper-3 blockquote,
+    /* Force child elements to black/dark gray */
+    .zenith-paper-3 p, 
+    .zenith-paper-3 h4, 
+    .zenith-paper-3 h5, 
+    .zenith-paper-3 li,
     .zenith-paper-3 .text-muted {
         color: #212529 !important;
     }
-    
-    /* Override specific bootstrap utilities inside the press release */
-    .zenith-paper-3 .border-dark {
-        border-color: #212529 !important;
-    }
-    .zenith-paper-3 .bg-light {
-        background-color: #f8f9fa !important;
-    }
+    .zenith-paper-3 .border-dark { border-color: #000000 !important; }
+    .zenith-paper-3 .bg-light { background-color: #f8f9fa !important; }
 
+    /* NEWSPAPER HEADERS */
     .zenith-header {
         background-color: #ffffff;
         border-bottom: 3px solid #000;
         font-family: 'Times New Roman', serif;
+        color: #000;
     }
 
     .zenith-body {
@@ -71,10 +70,10 @@ $pageTitle = "The Zenith Report: The Bus Ride & The Leak";
         line-height: 1.8;
     }
 
-    /* DARK MODE OVERRIDES (For the Newspaper Articles only) */
+    /* DARK MODE OVERRIDES FOR NEWSPAPERS (Inverted colors for readability) */
     [data-bs-theme="dark"] .zenith-paper {
-        background-color: #15171e; /* Dark slate */
-        color: #e0e0e0;
+        background-color: #15171e; /* Dark Slate */
+        color: #e0e0e0; /* Light Grey Text */
         border-color: #444 !important;
     }
 
@@ -82,24 +81,29 @@ $pageTitle = "The Zenith Report: The Bus Ride & The Leak";
         background-color: #1c2029;
         border-bottom: 3px solid #e0e0e0;
     }
-
-    [data-bs-theme="dark"] .zenith-header h2 {
+    
+    /* Force text colors to flip in dark mode */
+    [data-bs-theme="dark"] .zenith-header h2,
+    [data-bs-theme="dark"] .zenith-header span {
         color: #e0e0e0 !important;
     }
 
-    /* Keep the newspaper text readable in dark mode */
     [data-bs-theme="dark"] .zenith-paper .text-dark {
-        color: #e0e0e0 !important;
+        color: #ffffff !important; /* Force black text to white */
     }
     
+    [data-bs-theme="dark"] .zenith-paper .text-muted {
+        color: #adb5bd !important; /* Force muted text to light grey */
+    }
+
     [data-bs-theme="dark"] .zenith-paper .border-dark {
-        border-color: #444 !important;
+        border-color: #6c757d !important;
     }
     
-    /* Highlight the "Pull Quotes" in Dark Mode */
     [data-bs-theme="dark"] .blockquote-custom {
         background-color: rgba(255, 255, 255, 0.05);
         border-left-color: #dc3545;
+        color: #e0e0e0;
     }
 </style>
 
@@ -125,15 +129,15 @@ $pageTitle = "The Zenith Report: The Bus Ride & The Leak";
                 
                 <div class="card-header zenith-header py-3">
                     <div class="d-flex justify-content-between align-items-end flex-wrap gap-2">
-                        <h2 class="display-6 fw-bold mb-0 text-dark" style="letter-spacing: -1px;">The Zenith Report</h2>
-                        <div class="text-end">
-                            <span class="small font-monospace text-muted d-block">September 13, 2018 &bull; Vol. 88</span>
+                        <h2 class="display-6 fw-bold mb-0" style="letter-spacing: -1px;">The Zenith Report</h2>
+                        <div class="text-end text-dark">
+                            <span class="small font-monospace d-block">September 13, 2018 &bull; Vol. 88</span>
                             <span class="small font-monospace text-danger fw-bold text-uppercase">Investigative Exclusive</span>
                         </div>
                     </div>
                 </div>
 
-                <div class="card-body p-4 p-md-5 text-dark">
+                <div class="card-body p-4 p-md-5">
                     <div class="row">
                         
                         <div class="col-md-9 border-end border-secondary-subtle pe-md-5">
@@ -165,9 +169,9 @@ $pageTitle = "The Zenith Report: The Bus Ride & The Leak";
                                     To the casual observer, they looked like a family on a day trip. But to Omni-Global VP <strong>Jameson Frost</strong>, watching from his corner office window, they looked like prey.
                                 </p>
 
-                                <blockquote class="p-3 my-4 border-start border-4 border-danger bg-dark blockquote-custom">
-                                    <p class="mb-2 fst-italic text-white">"He saw the bus pass. He saw the wheelchair. He turned to the room and said, 'Slash the offer. They're broke.'"</p>
-                                    <footer class="blockquote-footer mt-1 text-white-50">Anonymous Source, <cite title="Source Title">Omni-Global M&A Team</cite></footer>
+                                <blockquote class="p-3 my-4 border-start border-4 border-danger bg-dark bg-opacity-25 blockquote-custom">
+                                    <p class="mb-2 fst-italic">"He saw the bus pass. He saw the wheelchair. He turned to the room and said, 'Slash the offer. They're broke.'"</p>
+                                    <footer class="blockquote-footer mt-1 text-body-secondary">Anonymous Source, <cite title="Source Title">Omni-Global M&A Team</cite></footer>
                                 </blockquote>
 
                                 <p>
@@ -221,15 +225,15 @@ $pageTitle = "The Zenith Report: The Bus Ride & The Leak";
                 
                 <div class="card-header zenith-header py-3">
                     <div class="d-flex justify-content-between align-items-end flex-wrap gap-2">
-                        <h2 class="display-6 fw-bold mb-0 text-dark" style="letter-spacing: -1px;">The Zenith Report</h2>
-                        <div class="text-end">
-                            <span class="small font-monospace text-muted d-block">September 16, 2018 &bull; Vol. 88</span>
+                        <h2 class="display-6 fw-bold mb-0" style="letter-spacing: -1px;">The Zenith Report</h2>
+                        <div class="text-end text-dark">
+                            <span class="small font-monospace d-block">September 16, 2018 &bull; Vol. 88</span>
                             <span class="small font-monospace text-danger fw-bold text-uppercase">Exclusive</span>
                         </div>
                     </div>
                 </div>
 
-                <div class="card-body p-4 p-md-5 text-dark">
+                <div class="card-body p-4 p-md-5">
                     <div class="row">
                         <div class="col-md-9 border-end border-secondary-subtle pe-md-5">
                             
@@ -258,7 +262,7 @@ $pageTitle = "The Zenith Report: The Bus Ride & The Leak";
                                 <div class="my-4 p-1 border border-dark bg-white shadow-sm">
                                     <img src="https://assets.raggiesoft.com/engine-room-records/images/omni-global/cassidy-extraction.jpg" 
                                          class="img-fluid security-footage-print" 
-                                         alt="Grainy black and white security footage showing Evan and Tyler carrying Cassidy down the hallway, flanked by Ryan and Holly. Staff members look on in horror.">
+                                         alt="Grainy black and white security footage on newsprint showing Evan and Tyler carrying Cassidy down the hallway, flanked by Ryan and Holly.">
                                     <div class="p-2 small font-monospace text-muted border-top border-secondary-subtle mt-1 text-center bg-light">
                                         <strong>Fig 1.</strong> "Code Carry." The hallway outside Suite 4000. (Source: Pacific Rim Properties)
                                     </div>
@@ -309,10 +313,11 @@ $pageTitle = "The Zenith Report: The Bus Ride & The Leak";
                 <div class="card-body p-5">
                     <?php
                     // CONFIGURATION FOR LETTERHEAD
-                    $brand = 'pacific-rim'; // Triggers the Landlord styling
+                    // Forces Light Mode styling via the class .zenith-paper-3
+                    $brand = 'pacific-rim'; 
                     $letter_date = "September 16, 2018";
                     $letter_to = "<strong>FOR IMMEDIATE RELEASE</strong><br>Distributed via Business Wire / PR Newswire";
-                    $letter_stamp = ""; // No stamp for press releases
+                    $letter_stamp = ""; 
                     
                     // LETTER BODY CONTENT
                     $letter_body = '
@@ -348,7 +353,6 @@ $pageTitle = "The Zenith Report: The Bus Ride & The Leak";
     </div>
 
     <?php
-        // Narrative Stepper Component
         $nav = [
             'prev' => ['url' => '/engine-room/history/nine-figure-refusal/liquidation-auction', 'label' => 'Liquidation Auction'],
             'overview' => ['url' => '/engine-room/history/nine-figure-refusal', 'label' => 'Overview'],
