@@ -18,7 +18,6 @@
     "title": "The $150M Refusal - Overview",
     "ogDescription": "How Engine Room Records accidentally acquired a Fortune 500 company."
   },
-
   "/engine-room/history/nine-figure-refusal/target-profile": {
     "title": "Target Profile: Engine Room Records",
     "ogDescription": "The Omni Global dossier on the small label that wouldn't sell."
@@ -31,30 +30,25 @@
     "title": "The Bus Memo",
     "ogDescription": "The bus ride that sealed Omni Global's fate."
   },
-
-  "/engine-room/history/nine-figure-refusal/the-offer-letter": {
-    "title": "Evidence: The Offer Letter (Redacted)",
-    "ogDescription": "The official $150,000,000 buyout offer from Omni Global."
-  },
-
-  "/engine-room/history/nine-figure-refusal/the-counter-offer": {
-    "title": "Evidence: The Counter-Offer (The 'No')",
-    "ogDescription": "Holly O'Connell's legendary one-page legal response."
-  },
-
-  "/engine-room/history/nine-figure-refusal/the-smoking-gun": {
-    "title": "Evidence: The Smoking Gun (Mail Fraud)",
-    "ogDescription": "The piece of evidence that turned a buyout into a federal case."
-  },
-
   "/engine-room/history/nine-figure-refusal/forensic-audit": {
     "title": "The Forensic Audit",
     "ogDescription": "Tracing the shell companies behind the acquisition attempt."
   },
-
-  "/engine-room/history/nine-figure-refusal/liquidation-auction": {
-    "title": "Asset Liquidation: Case 18-11492",
-    "ogDescription": "The yard sale. Selling the corporate ego to pay the creditors."
+  "/engine-room/history/nine-figure-refusal/the-smoking-gun": {
+    "title": "Evidence: The Smoking Gun (Mail Fraud)",
+    "ogDescription": "The piece of evidence that turned a buyout into a federal case."
+  },
+  "/engine-room/history/nine-figure-refusal/the-offer-letter": {
+    "title": "Evidence: The Offer Letter (Redacted)",
+    "ogDescription": "The official $150,000,000 buyout offer from Omni Global."
+  },
+  "/engine-room/history/nine-figure-refusal/the-counter-offer": {
+    "title": "Evidence: The Counter-Offer (The 'No')",
+    "ogDescription": "Holly O'Connell's legendary one-page legal response."
+  },
+  "/engine-room/history/nine-figure-refusal/the-trigger": {
+    "title": "The Trigger",
+    "ogDescription": "The catalyst for the legal battle."
   },
   "/engine-room/history/nine-figure-refusal/the-autopsy": {
     "title": "The Autopsy",
@@ -64,10 +58,19 @@
     "title": "The Extraction",
     "ogDescription": "Evacuating Cassidy and Ryan from Omni Global Headquarters."
   },
-  "/engine-room/history/nine-figure-refusal/the-trigger": {
-    "title": "The Trigger",
-    "ogDescription": "The catalyst for the legal battle."
+  "/engine-room/history/nine-figure-refusal/zenith-report/omni-global-chapter-11": {
+    "title": "Omni-Global Files Chapter 11 Bankruptcy",
+    "ogDescription": "The Zenith Report on the fallout from the failed acquisition."
   },
+  "/engine-room/history/nine-figure-refusal/liquidation-auction": {
+    "title": "Asset Liquidation: Case 18-11492",
+    "ogDescription": "The yard sale. Selling the corporate ego to pay the creditors."
+  },
+  "/engine-room/history/nine-figure-refusal/zenith-report/stardust-bus-ride": {
+    "title": "The $350 Million Bus Ride That Changed Everything",
+    "ogDescription": "The Zenith Report on how a bus ride altered the course of corporate history."
+  },
+  
   "/engine-room/history/nine-figure-refusal/the-approach": {
     "title": "The Approach",
     "ogDescription": "Holly and her team's strategy for the acquisition attempt."
