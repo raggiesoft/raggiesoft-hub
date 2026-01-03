@@ -191,8 +191,8 @@ $pageTitle = "System Reference: The Sensory Scale";
                                 <li class="mb-0 d-flex">
                                     <i class="fa-solid fa-hand-holding-medical text-success mt-1 me-3 fs-5"></i>
                                     <div class="text-white-50">
-                                        <strong class="text-white">Protocol: "Deep Pressure / Extraction."</strong><br>
-                                        Immediate grounding via weighted pressure. Do not attempt to de-escalate verbally.
+                                        <strong class="text-white">Protocol: "Manual Intervention."</strong><br>
+                                        Immediate physical stabilization required (Deep Pressure or Extraction). The system cannot self-regulate.
                                     </div>
                                 </li>
                             </ul>
@@ -205,7 +205,7 @@ $pageTitle = "System Reference: The Sensory Scale";
                                 <div class="mb-3">
                                     <a href="/engine-room/history/nine-figure-refusal/the-extraction" class="d-flex align-items-center mb-1 text-decoration-none group-hover">
                                         <i class="fa-duotone fa-person-carry-box text-warning me-2"></i>
-                                        <strong class="text-white small text-uppercase border-bottom border-secondary border-opacity-50 hover-border-warning transition-all">Case A: The Extraction</strong>
+                                        <strong class="text-white small text-uppercase border-bottom border-secondary border-opacity-50 hover-border-warning transition-all">Case A: Extraction</strong>
                                     </a>
                                     <p class="small text-white-50 fst-italic mb-0 ps-4">
                                         <strong>Subject:</strong> Cassidy O'Connell.<br>
