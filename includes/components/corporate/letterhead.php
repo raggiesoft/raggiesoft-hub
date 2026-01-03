@@ -2,7 +2,7 @@
 /**
  * COMPONENT: Corporate Letterhead Generator
  * PATH: /includes/components/corporate/letterhead.php
- * Updated: URL Migration to raggiesoft.com/oconnell-trust/
+ * Updated: WCAG Compliance (Forced Light Mode) & URL Updates
  */
 
 // Default Settings
@@ -19,8 +19,8 @@ if ($current_brand === 'pacific-rim') {
     $brand_sub = "Asset Management & Real Estate Holdings";
     $brand_est = "Est. 2012 (DE)";
     
-    // UPDATED URL
-    $brand_url = "raggiesoft.com/oconnell-trust/pacific-rim";
+    // UPDATED URL: Hidden for privacy (Stealth Wealth)
+    $brand_url = null; 
     
     $brand_logo = '<i class="fa-duotone fa-building-columns fa-3x text-secondary"></i>'; 
     
@@ -37,7 +37,7 @@ if ($current_brand === 'pacific-rim') {
     $brand_est = "Est. 1992 (VA)";
     
     // UPDATED URL
-    $brand_url = "raggiesoft.com/oconnell-trust/engine-room";
+    $brand_url = "raggiesoft.com/engine-room";
     
     $brand_logo = '<img src="https://assets.raggiesoft.com/engine-room-records/images/logos/engine-room-records-logo.jpg" alt="Official Seal" style="width: 100px; mix-blend-mode: multiply; filter: contrast(120%);">';
     
@@ -50,18 +50,37 @@ if ($current_brand === 'pacific-rim') {
 $rotation_style = $rotation ? "transform: rotate({$rotation}deg);" : "";
 ?>
 
-<div class="card border-0 bg-white text-dark shadow-lg mx-auto" 
+<style>
+    /* FORCED LIGHT MODE FOR PHYSICAL DOCUMENTS */
+    /* Ensures AAA Contrast (Black on White) regardless of system theme */
+    .physical-document {
+        background-color: #ffffff !important;
+        color: #000000 !important;
+    }
+    
+    /* Override Bootstrap utilities inside the document context */
+    .physical-document .text-muted { color: #6c757d !important; }
+    .physical-document .text-secondary { color: #6c757d !important; }
+    .physical-document .text-dark { color: #000000 !important; }
+    .physical-document .border-dark { border-color: #000000 !important; }
+    .physical-document .border-secondary { border-color: #6c757d !important; }
+    
+    /* Ensure links inside don't turn blue/invisible in dark mode */
+    .physical-document a { color: #000000 !important; text-decoration: underline; }
+</style>
+
+<div class="card border-0 shadow-lg mx-auto physical-document" 
      style="max-width: 850px; <?php echo $rotation_style; ?> transition: transform 0.3s ease;">
     
     <div class="card-body p-5 position-relative overflow-hidden">
         
         <div class="d-flex justify-content-between align-items-center border-bottom border-dark pb-4 mb-4">
             <div>
-                <h4 class="fw-bold text-uppercase mb-0" style="font-family: <?php echo $brand_font; ?>; letter-spacing: 1px;">
+                <h4 class="fw-bold text-uppercase mb-0 text-dark" style="font-family: <?php echo $brand_font; ?>; letter-spacing: 1px;">
                     <?php echo $brand_name; ?>
                 </h4>
                 
-                <div class="text-muted text-uppercase letter-spacing-1 fw-bold d-flex align-items-center gap-2" style="font-size: 0.75rem;">
+                <div class="text-secondary text-uppercase letter-spacing-1 fw-bold d-flex align-items-center gap-2" style="font-size: 0.75rem;">
                     <span><?php echo $brand_sub; ?></span>
                     <i class="fa-solid fa-circle" style="font-size: 4px;"></i>
                     <span><?php echo $brand_est; ?></span>
@@ -69,10 +88,12 @@ $rotation_style = $rotation ? "transform: rotate({$rotation}deg);" : "";
                     <span>Privately Held</span>
                 </div>
 
+                <?php if ($brand_url): ?>
                 <div class="text-secondary letter-spacing-1 fw-bold mt-1" style="font-size: 0.75rem;">
                     <i class="fa-solid fa-globe me-1 opacity-50"></i>
                     <span style="font-family: 'Courier New', monospace; text-transform: lowercase;"><?php echo $brand_url; ?></span>
                 </div>
+                <?php endif; ?>
             </div>
 
             <div class="text-end">
@@ -80,7 +101,7 @@ $rotation_style = $rotation ? "transform: rotate({$rotation}deg);" : "";
             </div>
         </div>
 
-        <div style="font-family: 'Times New Roman', serif; font-size: 1.1rem; line-height: 1.6;">
+        <div class="text-dark" style="font-family: 'Times New Roman', serif; font-size: 1.1rem; line-height: 1.6;">
             
             <div class="mb-4">
                 <p class="mb-1"><strong>Date:</strong> <?php echo $letter_date; ?></p>
