@@ -1,7 +1,7 @@
 <?php
 // pages/engine-room/history/nine-figure-refusal/the-bus-memo.php
 // EVIDENCE ITEM #44-B: The Document That Killed a Corporation
-// UPDATED: WCAG Compliance & Added Narrative Context (Why the Bus?)
+// UPDATED: WCAG Compliance, Narrative Context & Stepper Component
 
 $pageTitle = "The 'Bus Memo' - Evidence Item #44-B";
 ?>
@@ -225,22 +225,13 @@ $pageTitle = "The 'Bus Memo' - Evidence Item #44-B";
         </div>
     </div>
 
-    <div class="row mt-5 pt-4 border-top border-secondary border-opacity-25 align-items-center">
-        <div class="col-4">
-            <a href="/engine-room/history/nine-figure-refusal/ucc-search-report" class="btn btn-outline-secondary rounded-pill">
-                <i class="fa-solid fa-arrow-left me-2"></i>Previous
-            </a>
-        </div>
-        <div class="col-4 text-center">
-            <a href="/engine-room/history/nine-figure-refusal" class="btn btn-outline-primary rounded-pill">
-                <i class="fa-duotone fa-list-tree me-2"></i>Overview
-            </a>
-        </div>
-        <div class="col-4 text-end">
-            <a href="/engine-room/history/nine-figure-refusal/forensic-audit" class="btn btn-primary rounded-pill shadow-sm">
-                Next: Holly's Homework <i class="fa-solid fa-arrow-right ms-2"></i>
-            </a>
-        </div>
-    </div>
+    <?php
+        $nav = [
+            'prev' => ['url' => '/engine-room/history/nine-figure-refusal/ucc-search-report', 'label' => 'UCC Search Report'],
+            'overview' => ['url' => '/engine-room/history/nine-figure-refusal', 'label' => 'Overview'],
+            'next' => ['url' => '/engine-room/history/nine-figure-refusal/forensic-audit', 'label' => 'Forensic Audit']
+        ];
+        include ROOT_PATH . '/includes/components/navigation/narrative-stepper.php';
+    ?>
 
 </div>
