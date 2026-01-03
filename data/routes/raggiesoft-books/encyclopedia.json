@@ -1,0 +1,20 @@
+{
+  "common": {
+    "site": "raggiesoft-books",
+    "showSidebar": true,
+    "sidebar": "raggiesoft-books/sidebar-encyclopedia",
+    "siteName": "RaggieSoft Books",
+    "headerMenu": "header-default",
+    "footer": "footer-default"
+  },
+
+  "/raggiesoft-books/encyclopedia": {
+    "title": "The Narrative Encyclopedia",
+    "ogDescription": "Behind-the-scenes reference documents, system mechanics, and lore for the RaggieSoft Narrative Universe."
+  },
+
+  "/raggiesoft-books/encyclopedia/sensory-scale": {
+    "title": "System Reference: The Sensory Scale",
+    "ogDescription": "The 5-stage scale used to classify neurodivergent sensory distress across all narrative works."
+  }
+}

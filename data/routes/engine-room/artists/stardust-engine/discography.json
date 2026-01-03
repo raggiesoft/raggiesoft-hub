@@ -7,7 +7,7 @@
         "footer": "engine-room/artists/stardust-engine/footer-stardust",
         "showSidebar": false,
         "navbarBrandLogo": "https://assets.raggiesoft.com/engine-room-records/artists/the-stardust-engine/band-logo.png",
-        "navbarBrandText": "The Stardust Engine",
+        "navbarBrandText": "<span class=\"d-none d-md-inline\">The </span>Stardust Engine",
         "navbarBrandLink": "/engine-room/artists/stardust-engine",
         "ogImage": "https://assets.raggiesoft.com/engine-room-records/artists/the-stardust-engine/social-preview.jpg"
     },
@@ -59,7 +59,9 @@
         "view": "pages/engine-room/artists/stardust-engine/discography/1995-the-warehouse-tapes/ad-astra",
         "title": "Escape Velocity (Ad Astra) | Deep Dive",
         "ogTitle": "Ad Astra - The Progressive Rock Epic",
-        "ogImage": "https://assets.raggiesoft.com/engine-room-records/artists/the-stardust-engine/1995-the-warehouse-tapes/ad-astra/social-preview.jpg"
+        "ogImage": "https://assets.raggiesoft.com/engine-room-records/artists/the-stardust-engine/1995-the-warehouse-tapes/ad-astra/social-preview.jpg",
+        "site": "stardust-engine",
+        "theme": "ad-astra"
     },
     "/engine-room/artists/stardust-engine/discography/1997-hard-reset": {
         "view": "pages/engine-room/artists/stardust-engine/discography/1997-hard-reset",
