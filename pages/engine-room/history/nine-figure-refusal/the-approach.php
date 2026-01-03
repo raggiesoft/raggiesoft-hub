@@ -3,7 +3,7 @@
 // EVIDENCE ITEM #00: The Arrival
 // Context: The family arrives in LA. The "Vacation" becomes a "Deployment".
 // Timeline: September 13-14, 2018 (Pre-Meeting)
-// UPDATED: Guard Interaction - From "Stunned" to "Professional Deference"
+// UPDATED: "Five Badge" Protocol - Emphasizing total ownership.
 
 $pageTitle = "The Approach Vector - Evidence Item #00";
 ?>
@@ -278,19 +278,52 @@ $pageTitle = "The Approach Vector - Evidence Item #00";
                         "We aren't going there yet," Holly said. "We have a stop to make."
                     </p>
                     <p>
-                        They bypassed the main security desk for the restricted elevators. The guard stepped forward instantly, hand raised. "Excuse me, folks. Restricted access. Badges only."
+                        They bypassed the main security desk for the restricted elevators. The guard, a serious man named Alvarez with twenty years on the job, stepped forward instantly. He raised a hand, blocking the path.
                     </p>
                     <p>
-                        Holly didn't argue. She simply pulled out a heavy, black RFID keycard with a silver holographic column and held it to the reader. 
+                        "Excuse me, folks," Alvarez said firmly. "Restricted elevators. I need you to step back to the Visitor Desk."
+                    </p>
+                    <p>
+                        Holly didn't argue. She didn't explain. She simply reached into her pocket.
+                    </p>
+                    <p>
+                        She pulled out a heavy, black RFID keycard with a silver holographic column and held it to the reader. 
                     </p>
                     <p>
                         <em>BEEP.</em>
                     </p>
                     <p>
-                        The guard glanced at his console monitor. His posture straightened instantly. He saw the <strong class="text-success">"AUTHORIZED AGENT: PACIFIC RIM PROPERTIES"</strong> flag. He didn't know her face, but he knew the hierarchy.
+                        Alvarez glanced at his console monitor. His eyebrows shot up. <strong class="text-success text-uppercase">TIER 1: AUTHORIZED AGENT.</strong>
                     </p>
                     <p>
-                        "My apologies, ma'am," the guard said, immediately stepping aside and holding his arm out to clear the path. "Elevator C is priority-locked for you. Have a good morning."
+                        "Apologies, ma'am," he said, his tone shifting from enforcer to professional deference. "But I need all parties to badge in. No tailgating. Building policy."
+                    </p>
+                    <p>
+                        Holly smiled. It was a genuine smile. "I appreciate that, Officer. Good protocol."
+                    </p>
+                    <p>
+                        She stepped through the turnstile. Behind her, Ryan rolled forward. He tapped a card attached to a retractable reel on his hip.
+                    </p>
+                    <p>
+                        <em>BEEP.</em> <strong class="text-success text-uppercase small">TIER 1: AUTHORIZED AGENT.</strong>
+                    </p>
+                    <p>
+                        Then Cassidy.
+                    </p>
+                    <p>
+                        <em>BEEP.</em>
+                    </p>
+                    <p>
+                        Then Evan. Then Tyler.
+                    </p>
+                    <p>
+                        <em>BEEP. BEEP.</em>
+                    </p>
+                    <p>
+                        Officer Alvarez stared at the screen. Five Tier 1 badges. Five "Owners." He looked back at the group in the matching polo shirts. They weren't tourists. They were an invasion force.
+                    </p>
+                    <p>
+                        "Elevator C is priority-locked for you," Alvarez said, stepping aside and holding his arm out to clear the path. "Have a good morning, folks."
                     </p>
                     
                     <div class="alert alert-secondary border-0 small fst-italic my-3">
