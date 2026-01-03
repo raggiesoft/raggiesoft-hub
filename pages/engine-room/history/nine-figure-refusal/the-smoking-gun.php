@@ -2,7 +2,7 @@
 // pages/engine-room/history/nine-figure-refusal/the-smoking-gun.php
 // EVIDENCE ITEM #00-C: The Letter (The "Smoking Gun")
 // Context: The moment Jameson Frost tried to save $0.50 and lost $600 Million.
-// UPDATED: Moved sticky note to bottom-right to clear text visibility.
+// UPDATED: Fixed Sticky Note positioning on large screens (moved further down/right to clear text).
 
 $pageTitle = "Evidence #00-C: The Smoking Gun - Engine Room History";
 ?>
@@ -46,17 +46,17 @@ $pageTitle = "Evidence #00-C: The Smoking Gun - Engine Room History";
         margin-bottom: 30px;
     }
 
-    /* Holly's Note - Bottom Right Positioning */
+    /* Holly's Note - Adjusted for Large Screens */
     .holly-note {
         position: absolute;
-        bottom: 40px;      /* Align near the bottom signature */
-        right: -60px;      /* Hang off the right edge */
+        bottom: -30px;     /* Hangs off the bottom edge */
+        right: -85px;      /* Hangs off the right edge */
         width: 280px; 
-        background-color: #ffeb3b; /* Classic Yellow */
+        background-color: #ffeb3b; 
         color: #000;
         padding: 1.25rem;
         box-shadow: 5px 5px 15px rgba(0,0,0,0.2);
-        transform: rotate(-2deg);
+        transform: rotate(-3deg);
         z-index: 10;
         transition: transform 0.3s ease;
         font-family: 'Kalam', cursive;
