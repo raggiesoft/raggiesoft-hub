@@ -168,7 +168,7 @@ $pageTitle = "System Reference: The Sensory Scale";
                     <h5 class="fw-bold text-uppercase mb-0 text-shadow-black">
                         <i class="fa-duotone fa-radiation me-2"></i>Level 5: The Collapse
                     </h5>
-                    <span class="badge bg-black text-danger border border-danger badge-ref-code">CODE CARRY</span>
+                    <span class="badge bg-black text-danger border border-danger badge-ref-code text-uppercase">Code Override</span>
                 </div>
                 <div class="card-body p-5 position-relative">
                     
