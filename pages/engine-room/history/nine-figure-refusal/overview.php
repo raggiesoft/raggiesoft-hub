@@ -1,7 +1,7 @@
 <?php
 // pages/engine-room/history/nine-figure-refusal/overview.php
 // The "Accidental Empire" Archive
-// V7.2: Added "The Smoking Gun" and "The Counter-Offer" to Chapter 2.
+// V7.3: Fixed text contrast issues (Removed hardcoded text-white from light zones).
 
 $pageTitle = "The $150M Refusal & Acquisition - Engine Room History";
 $activePage = 'overview';
@@ -67,7 +67,7 @@ $activePage = 'overview';
 
     <div class="row justify-content-center mb-4">
         <div class="col-lg-10">
-            <h3 class="h4 fw-bold text-white border-bottom border-secondary pb-2 mb-4">
+            <h3 class="h4 fw-bold text-body border-bottom border-secondary pb-2 mb-4">
                 Chapter 1: The Setup
             </h3>
             <div class="row g-4">
