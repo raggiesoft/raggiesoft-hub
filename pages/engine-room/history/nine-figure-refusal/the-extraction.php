@@ -2,7 +2,7 @@
 // pages/engine-room/history/nine-figure-refusal/the-extraction.php
 // EVIDENCE ITEM #03: The Departure
 // Context: The family executes "Code Carry" and leaves the building.
-// UPDATED: WCAG Compliance, Narrative Stepper, and Image Integration.
+// UPDATED: Added "Tactical Choice" (Rejecting the Ghost Route) to emphasize public witnessing.
 
 $pageTitle = "The Extraction - Evidence Item #03";
 ?>
@@ -114,6 +114,17 @@ $pageTitle = "The Extraction - Evidence Item #03";
                     <p>
                         The heavy door clicked shut behind them.
                     </p>
+                    
+                    <div class="alert alert-secondary border-start border-4 border-dark bg-body-secondary text-body-emphasis my-4">
+                        <h6 class="fw-bold text-uppercase mb-2"><i class="fa-solid fa-route me-2"></i>Tactical Decision: The Route</h6>
+                        <p class="mb-2 small">
+                            Holly paused in the vestibule. To her left was a nondescript beige door marked <strong>"SERVICE ONLY."</strong> Her Tier 1 Landlord Badge would have unlocked it instantly, granting them access to the private Service Elevator. They could have exited the building unseen via the loading dock.
+                        </p>
+                        <p class="mb-0 small fw-bold fst-italic">
+                            Holly didn't look left. She looked right—toward the crowded open-plan office. She chose the audience.
+                        </p>
+                    </div>
+
                     <p>
                         They turned right, walking straight down the plush carpet of the main executive corridor. The open-plan "Bullpen" was silent. Dozens of analysts, assistants, and junior VPs stood at their cubicles, staring in horror at the sobbing woman being carried by her family.
                     </p>
