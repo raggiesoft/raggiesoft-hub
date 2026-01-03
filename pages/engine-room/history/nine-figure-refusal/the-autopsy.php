@@ -3,6 +3,7 @@
 // EVIDENCE ITEM #02: The Counter-Attack
 // Context: Holly commandeers the presentation hardware.
 // Motivation: The "Tyler Email" Incident, The Merch Burn, & The Credentials.
+// UPDATED: WCAG Compliance & Narrative Stepper
 
 $pageTitle = "The Autopsy: Holly Takes Control - Evidence Item #02";
 ?>
@@ -20,37 +21,28 @@ $pageTitle = "The Autopsy: Holly Takes Control - Evidence Item #02";
         color: #e0e0e0 !important;
     }
 
-    /* CUSTOM EMAIL STYLE */
+    /* CUSTOM EMAIL STYLE - Adaptive */
     .email-evidence {
         font-family: 'Courier New', monospace;
-        background-color: #f8f9fa; /* Default Light */
-        color: #333;
-        border: 1px solid #ccc;
+        background-color: var(--bs-body-tertiary);
+        color: var(--bs-body-color);
+        border: 1px solid var(--bs-border-color);
         padding: 20px;
         font-size: 0.9rem;
     }
-    [data-bs-theme="dark"] .email-evidence {
-        background-color: #222;
-        color: #e0e0e0;
-        border-color: #444;
-    }
 
-    /* CUSTOM CREDENTIAL BOX (Fixes the White-on-White issue) */
+    /* CUSTOM CREDENTIAL BOX - Adaptive */
     .credential-box {
-        background-color: #f8f9fa; /* Light Grey */
-        color: #212529; /* Dark Text */
+        background-color: var(--bs-body-tertiary);
+        color: var(--bs-body-color);
         border-left: 4px solid #0d6efd; /* Primary Blue */
     }
-    [data-bs-theme="dark"] .credential-box {
-        background-color: #2c3035; /* Dark Grey */
-        color: #e0e0e0; /* Light Text */
-        border-left: 4px solid #0d6efd;
-    }
 
-    /* THE TWIN WALL STYLE */
+    /* THE TWIN WALL STYLE - Forced Dark for Atmosphere */
     .wall-card {
         border-left: 4px solid #d63384; /* Narrative Pink */
-        background: linear-gradient(to right, rgba(0,0,0,0.8), rgba(0,0,0,0.6));
+        background: linear-gradient(to right, #1a1a1a, #000000); /* Darker, high contrast gradient */
+        color: #ffffff;
     }
 </style>
 
@@ -61,10 +53,10 @@ $pageTitle = "The Autopsy: Holly Takes Control - Evidence Item #02";
             <span class="badge bg-warning text-dark rounded-pill px-3 py-2 mb-3 text-uppercase letter-spacing-1 border border-warning">
                 <i class="fa-duotone fa-laptop-code me-2"></i>The Turn
             </span>
-            <h1 class="display-4 fw-bold text-white mb-2" style="font-family: 'Impact', sans-serif;">
+            <h1 class="display-4 fw-bold text-body-emphasis mb-2" style="font-family: 'Impact', sans-serif;">
                 THE LIVE AUTOPSY
             </h1>
-            <p class="lead text-muted font-monospace">
+            <p class="lead text-body-secondary font-monospace">
                 She didn't come to sell. She came to teach him a lesson about competence.
             </p>
         </div>
@@ -74,135 +66,135 @@ $pageTitle = "The Autopsy: Holly Takes Control - Evidence Item #02";
         <div class="col-lg-10">
             
             <div class="card bg-dark border-secondary shadow-lg mb-4">
-                <div class="card-body p-4 text-white-50 font-monospace small">
+                <div class="card-body p-4 text-light font-monospace small">
                     <div class="row">
-                        <div class="col-md-3 fw-bold text-uppercase text-light">Timestamp:</div>
+                        <div class="col-md-3 fw-bold text-uppercase text-secondary-emphasis">Timestamp:</div>
                         <div class="col-md-9">10:21 AM (2 Minutes Post-Meltdown)</div>
                     </div>
                     <div class="row mt-2">
-                        <div class="col-md-3 fw-bold text-uppercase text-light">Context:</div>
+                        <div class="col-md-3 fw-bold text-uppercase text-secondary-emphasis">Context:</div>
                         <div class="col-md-9">Scheduled during family vacation (Santa Monica). Meeting intended as final rejection.</div>
                     </div>
                     <div class="row mt-2">
-                        <div class="col-md-3 fw-bold text-uppercase text-light">Weapon:</div>
+                        <div class="col-md-3 fw-bold text-uppercase text-secondary-emphasis">Weapon:</div>
                         <div class="col-md-9">SEC Public Filings (Form 10-Q) & "The Tyler Email"</div>
                     </div>
                 </div>
             </div>
 
-            <div class="card border-0 shadow-lg narrative-card mb-5">
+            <div class="card border-0 shadow-lg bg-body-tertiary narrative-card mb-5">
                 <div class="card-body p-5">
                     
                     <h5 class="text-danger fw-bold text-uppercase mb-4 letter-spacing-2">The Narrative Log</h5>
 
-                    <p>
+                    <p class="text-body-secondary">
                         The room was vibrating with tension. Cassidy was on the floor, shielded by Ryan's wheelchair. Evan and Tyler stood like bouncers, blocking the executives from the family.
                     </p>
-                    <p>
+                    <p class="text-body-secondary">
                         Jameson Frost, however, was pacing. He looked at the huddled family with undisguised disgust.
                     </p>
-                    <p>
+                    <p class="text-body-secondary">
                         "This... this is unbelievable," Jameson sputtered, looking at Holly. "We are talking about a nine-figure deal, and she’s having a tantrum over a remix? This is exactly why you need professional management. You are emotionally unstable."
                     </p>
-                    <p>
+                    <p class="text-body-secondary">
                         Holly O'Connell hadn't moved.
                     </p>
-                    <p>
+                    <p class="text-body-secondary">
                         She sat at the head of the mahogany table, her pen resting on her notebook. She thought about why she was here. She wasn't here for the money. She was on vacation. She was supposed to be at the Santa Monica Pier.
                     </p>
-                    <p>
-                        She had taken this meeting for one reason: <strong>Disrespect.</strong>
+                    <p class="text-body-emphasis fw-bold">
+                        She had taken this meeting for one reason: Disrespect.
                     </p>
-                    <p>
+                    <p class="text-body-secondary">
                         "Jameson," Holly said. The voice cut through the chaos like a razor blade.
                     </p>
-                    <p>
+                    <p class="text-body-secondary">
                         Jameson turned to her. "What?"
                     </p>
-                    <p>
+                    <p class="text-body-secondary">
                         "Sit down," Holly commanded.
                     </p>
-                    <p>
+                    <p class="text-body-secondary">
                         "Excuse me? I am the Vice President of—"
                     </p>
-                    <p>
-                        <strong>"I said sit down."</strong>
+                    <p class="text-body-emphasis fw-bold">
+                        "I said sit down."
                     </p>
-                    <p>
+                    <p class="text-body-secondary">
                         It wasn't a request. It was the tone of a CEO addressing a subordinate. Frost, bewildered by the sudden shift in gravity, sank into his chair.
                     </p>
-                    <p>
+                    <p class="text-body-secondary">
                         "Do you know why we're here, Jameson?" Holly asked, opening her laptop.
                     </p>
                     
                     <div class="credential-box p-3 my-4 shadow-sm">
-                        <p class="mb-0 text-muted fst-italic">
+                        <p class="mb-0 text-body-secondary fst-italic">
                             Holly didn't ask for a cable. She typed a quick sequence, authenticating to the building's Tier 1 secure network: <strong>Pacific Rim Properties</strong>. 
                             <br><br>
                             She hit <code>CTRL+K</code> to open the <strong>Quantum Cast</strong> menu. The massive 85-inch monitor on the wall—hardware leased from Pacific Rim—recognized the command immediately. Following its hard-coded protocols, the device prioritized the Landlord signal over the Tenant signal, dumping Frost's connection and instantly mirroring her screen.
                         </p>
                     </div>
 
-                    <p>
+                    <p class="text-body-secondary">
                         The giant screen flickered black. Jameson's "Synergy" slide vanished, replaced instantly by Holly's desktop.
                     </p>
-                    <p>
+                    <p class="text-body-secondary">
                         "What the hell?" Frost stood up, slapping the table. "Hopkins, we lost video. Wiggle the HDMI cable. It’s loose again."
                     </p>
                     
-                    <p>
+                    <p class="text-body-secondary">
                         The IT Director, Hopkins, was in the corner, frantically tapping at his tablet. He didn't move toward the cable. His face had gone pale.
                     </p>
 
-                    <p>
+                    <p class="text-body-secondary">
                         "It's... it's not the cable, sir," Hopkins stammered. "The display just forced a source switch. It went to Wireless Direct."
                     </p>
 
-                    <p>
+                    <p class="text-body-secondary">
                         "So switch it back!" Jameson barked. "I have slides!"
                     </p>
 
-                    <p>
+                    <p class="text-body-secondary">
                         "I can't!" Hopkins voice pitched up an octave. "I'm locked out. The panel says <code class="text-uppercase">Admin Override Active</code>. Sir, I don't understand... this command is coming from the Infrastructure Layer. It's pre-empting our entire subnet."
                     </p>
 
-                    <p>
+                    <p class="text-body-secondary">
                         Jameson spun around to stare at Holly. "You're hacking us! Hopkins, cut the Guest Wifi!"
                     </p>
 
-                    <p>
+                    <p class="text-body-secondary">
                         "She's not <em>on</em> the Wifi!" Hopkins yelled back, forgetting his rank. "I'm looking at the live logs—she doesn't exist! She's bypassing the firewall entirely. It's like the monitor is listening to a ghost!"
                     </p>
 
-                    <p>
+                    <p class="text-body-secondary">
                         Holly didn't answer. She didn't even look up from her keyboard. She simply let the panic ripple through the room, a terrifying variable that neither the executive nor his tech support could solve.
                     </p>
 
-                    <p>
+                    <p class="text-body-secondary">
                         "It's not your offer," she said calmly, watching the wireless handshake complete. "I deleted your offer."
                     </p>
-                    <p>
+                    <p class="text-body-secondary">
                         A new window appeared on the giant screen. It wasn't a spreadsheet. It was an email client.
                     </p>
-                    <p>
+                    <p class="text-body-secondary">
                         "We're here because last Tuesday, you bypassed my office. You sent an email directly to <code>tyler.wright@</code>."
                     </p>
-                    <p>
+                    <p class="text-body-secondary">
                         Frost paled. "I... I was simply reaching out to key stakeholders."
                     </p>
-                    <p>
+                    <p class="text-body-secondary">
                         "Tyler's email isn't public," Holly continued, her voice dangerously calm. "There is no 'admin@' catch-all. Evan has our <strong>Quantum Enterprise</strong> tenancy completely locked down. You can't search for us on <strong>Quantum Nexus</strong>. The server doesn't even confirm if a user exists."
                     </p>
-                    <p>
+                    <p class="text-body-secondary">
                         She pointed at the screen, highlighting the email header.
                     </p>
-                    <p>
+                    <p class="text-body-secondary">
                         "That means you looked at my email—<code>holly.oconnell@</code>—and you guessed the pattern. You sat there typing names from our Band Bio page—<code>tyler.wright@</code>—until one didn't bounce back."
                     </p>
-                    <p>
+                    <p class="text-body-secondary">
                         She looked him dead in the eye.
                     </p>
-                    <p>
+                    <p class="text-body-secondary">
                         "You assumed that because I'm a woman, I couldn't possibly be the decision maker. You assumed you had to hack your way through to 'the men' to get the real deal done."
                     </p>
 
@@ -224,51 +216,51 @@ $pageTitle = "The Autopsy: Holly Takes Control - Evidence Item #02";
                         </div>
                     </div>
 
-                    <p>
+                    <p class="text-body-secondary">
                         The silence in the room was absolute. Even the junior analysts looked horrified.
                     </p>
-                    <p>
+                    <p class="text-body-secondary">
                         "That account on The Sprawl?" Holly asked, her voice dry. "It belongs to an astronomy student in New Zealand. He posts photos of nebulas. I didn't sue him for trademark infringement because I happen to like the pictures. The fact that you couldn't tell the difference between a global media brand and a hobbyist telescope feed is... concerning."
                     </p>
-                    <p>
+                    <p class="text-body-secondary">
                         She stood up and walked to the head of the table, pointing to the line in the email about "the girls."
                     </p>
-                    <p>
+                    <p class="text-body-secondary">
                         "And this," Holly said, tapping the screen. "Let the girls handle the merch."
                     </p>
-                    <p>
+                    <p class="text-body-secondary">
                         She smiled. It wasn't a nice smile.
                     </p>
-                    <p>
+                    <p class="text-body-secondary">
                         "You're right, Jameson. 'The girls' <em>do</em> handle the merch. Cassidy designs it. I fulfill it."
                     </p>
                     
-                    <div class="alert alert-light border-start border-4 border-warning bg-opacity-25 shadow-sm">
-                        <i class="fa-solid fa-chart-line-up me-2 text-warning"></i>
+                    <div class="alert alert-warning border-start border-4 border-warning bg-warning-subtle shadow-sm text-body-emphasis">
+                        <i class="fa-solid fa-chart-line-up me-2 text-warning-emphasis"></i>
                         <strong>"And in Q3 of this year, our Merchandise Division generated more net profit than your entire Global Syndication Department did in all of 2017."</strong>
                     </div>
 
-                    <p>
+                    <p class="text-body-secondary">
                         "I handle the merch because it makes money," she said, leaning in. "Unlike your company."
                     </p>
 
-                    <p>
+                    <p class="text-body-secondary">
                         "You see, Jameson, you assumed I was 'overwhelmed' with admin work. You didn't bother to check who you were actually negotiating with, did you?"
                     </p>
 
-                    <p>
+                    <p class="text-body-secondary">
                         She tapped a key. The email vanished. Her professional CV appeared on the screen. She looked around the table at the room full of <strong>Gilded League</strong> MBAs and realized something that made her blood run cold: <strong>She was the only qualified person in the room.</strong>
                     </p>
 
                     <div class="credential-box p-3 shadow-sm my-4">
-                        <p class="mb-2 small text-uppercase fw-bold text-muted">Holly O'Connell - Professional Credentials</p>
-                        <ul class="list-unstyled font-monospace small fw-bold mb-2 ps-3">
+                        <p class="mb-2 small text-uppercase fw-bold text-body-secondary">Holly O'Connell - Professional Credentials</p>
+                        <ul class="list-unstyled font-monospace small fw-bold mb-2 ps-3 text-body-emphasis">
                             <li><i class="fa-solid fa-check text-success me-2"></i>J.D. & LL.M. (Taxation). Bar: VA, NY, CA, DE.</li>
                             <li><i class="fa-solid fa-check text-success me-2"></i>CFA Charterholder (Chartered Financial Analyst).</li>
                             <li><i class="fa-solid fa-check text-success me-2"></i>Certified Forensic Accountant (Cr.FA).</li>
                             <li><i class="fa-solid fa-check text-success me-2"></i>Masters in Quantitative Finance.</li>
                         </ul>
-                        <p class="mb-0">
+                        <p class="mb-0 text-body-secondary">
                             She leaned forward, her voice dropping to a whisper. "But the one you should be most worried about right now is my **CIRA** certification."
                         </p>
                         <p class="mb-0 mt-1 text-danger small fst-italic">
@@ -276,84 +268,84 @@ $pageTitle = "The Autopsy: Holly Takes Control - Evidence Item #02";
                         </p>
                     </div>
                     
-                    <div class="alert alert-secondary border-0 small fst-italic mb-4">
+                    <div class="alert alert-secondary border-0 small fst-italic mb-4 text-body-secondary">
                         <strong>Context:</strong> Jameson Frost holds an MBA from <strong>Sterling-Hale University</strong>. His juniors hold Bachelor's degrees. The corporate Controller (a CPA) was not invited to the meeting. Holly O'Connell was technically the only person in the room qualified to audit a public company.
                     </div>
 
-                    <p>
+                    <p class="text-body-secondary">
                         She hit <code>ALT + TAB</code>. The screen shifted from her CV to the SEC database. <strong>OMNI-GLOBAL MEDIA CORP.</strong>
                     </p>
-                    <p>
+                    <p class="text-body-secondary">
                         "So I decided to use those credentials to see who exactly was disrespecting me. I thought I'd find a shark. Instead... I found a corpse."
                     </p>
 
                     <hr class="my-4 border-secondary opacity-25">
 
                     <h5 class="fw-bold text-uppercase mb-3 text-danger"><i class="fa-solid fa-skull me-2"></i>The Autopsy</h5>
-                    <p>
+                    <p class="text-body-secondary">
                         Holly scrolled to the Balance Sheet. She pointed the mouse cursor at the lines, narrating in plain English for the entire room to hear.
                     </p>
                     
                     <div class="row g-3 mb-4">
                         <div class="col-md-12">
-                            <div class="p-3 bg-light border border-secondary kill-shot-box text-dark font-monospace">
+                            <div class="p-3 bg-body-secondary border border-secondary kill-shot-box text-body-emphasis font-monospace">
                                 <strong class="text-danger">1. THE CASH:</strong><br>
                                 "You claim you have $150 million. The SEC says you have $22 million. Your payroll is $18 million. You are living paycheck to paycheck."
                             </div>
                         </div>
                         <div class="col-md-12">
-                            <div class="p-3 bg-light border border-secondary kill-shot-box text-dark font-monospace">
+                            <div class="p-3 bg-body-secondary border border-secondary kill-shot-box text-body-emphasis font-monospace">
                                 <strong class="text-danger">2. THE ASSETS:</strong><br>
                                 "You list $900 million in 'Goodwill.' That's accounting code for 'Mistakes We Haven't Admitted Yet.' It's fake value."
                             </div>
                         </div>
                         <div class="col-md-12">
-                            <div class="p-3 bg-light border border-secondary kill-shot-box text-dark font-monospace">
+                            <div class="p-3 bg-body-secondary border border-secondary kill-shot-box text-body-emphasis font-monospace">
                                 <strong class="text-danger">3. THE CREDIT CARD:</strong><br>
                                 "Page 42, Note 8. Your Revolving Credit Facility has a limit of $350 million. You have drawn $348.5 million. You have $1.5 million left. You can't even afford to buy us lunch."
                             </div>
                         </div>
                     </div>
 
-                    <p>
+                    <p class="text-body-secondary">
                         Holly started to close her laptop, then stopped. She turned to look at the glass wall of the conference room, overlooking Century City.
                     </p>
 
-                    <p>
+                    <p class="text-body-secondary">
                         "One last thing, Jameson. Nice office. <strong>Pacific Rim Properties</strong> manages this building, correct?"
                     </p>
-                    <p>
+                    <p class="text-body-secondary">
                         Frost blinked, confused by the sudden change in topic. "Yes. They are the landlord. We have a standard lease."
                     </p>
-                    <p>
+                    <p class="text-body-secondary">
                         "Do you know who owns Pacific Rim Properties?"
                     </p>
-                    <p>
+                    <p class="text-body-secondary">
                         "Some holding company. What does that matter?"
                     </p>
-                    <p>
+                    <p class="text-body-secondary">
                         Holly pulled a piece of paper from her folder and slid it across the mahogany table. It wasn't a legal brief. It was a Tenant Ledger.
                     </p>
-                    <p>
+                    <p class="text-body-secondary">
                         "Pacific Rim is a wholly owned subsidiary of the <strong>O'Connell Family Trust</strong>. I am Pacific Rim."
                     </p>
-                    <p>
+                    <p class="text-body-secondary">
                         "You asked earlier how I connected to your screen? I didn't hack it. I authenticated as the Owner."
                     </p>
-                    <p>
+                    <p class="text-body-secondary">
                         She watched the realization dawn on him. It was slow, painful, and absolutely total.
                     </p>
-                    <p>
+                    <p class="text-body-secondary">
                         "You never made the connection, did you?" she said, her voice dropping to a conversational tone. "You saw 'Holly O'Connell' on the band roster and thought 'manager.' You saw 'H. O'Connell' on your rent invoices and thought 'landlord.' It never occurred to you that we might be the same person because your worldview doesn't allow for a band manager to own a skyscraper."
                     </p>
-                    <p>
+                    <p class="text-body-secondary">
                         She gestured around the room.
                     </p>
-                    <p>
+                    <p class="text-body-secondary">
                         "I've never been to this building before today, Jameson. I manage Pacific Rim remotely from Virginia. I let Elena run the day-to-day. But make no mistake: I own the chair you're sitting in. And according to my records, your July and August rent checks bounced."
                     </p>
 
-                    <p>
+                    <p class="text-body-secondary">
                         She leaned forward, her eyes narrowing.
                     </p>
 
@@ -378,40 +370,40 @@ $pageTitle = "The Autopsy: Holly Takes Control - Evidence Item #02";
                         </div>
                     </div>
 
-                    <p>
+                    <p class="text-body-secondary">
                         Silence hung in the air for exactly three seconds. Then, Jameson Frost started to laugh.
                     </p>
-                    <p>
+                    <p class="text-body-secondary">
                         It was a dry, condescending chuckle. He looked at his Junior Counsel, a young man in a tailored suit named Bradford.
                     </p>
-                    <p>
+                    <p class="text-body-secondary">
                         "She's bluffing," Frost said, shaking his head. "Bradford, tell her."
                     </p>
-                    <p>
+                    <p class="text-body-secondary">
                         Bradford cleared his throat, looking nervous but eager to please. "Actually, Ms. O'Connell... under California Code of Civil Procedure Section 1161, a verbal Notice to Quit is not legally binding. It must be served in writing, stating the precise amount due, and providing a three-day cure period."
                     </p>
-                    <p>
+                    <p class="text-body-secondary">
                         Frost smirked, leaning back in his chair. "See? You can't just declare eviction by saying the word. You're not a magician. You need paperwork, honey."
                     </p>
-                    <p>
+                    <p class="text-body-secondary">
                         Holly looked at Bradford. "You're right. Section 1161(2). In writing. Three days to pay or quit."
                     </p>
-                    <p>
+                    <p class="text-body-secondary">
                         She reached down to her <strong>pristine leather briefcase</strong>. 
                     </p>
-                    <p>
+                    <p class="text-body-secondary">
                         "Funny you should mention that."
                     </p>
-                    <p>
+                    <p class="text-body-secondary">
                         <em>Click. Click.</em>
                     </p>
-                    <p>
+                    <p class="text-body-secondary">
                         She opened the case. From the front pocket, she pulled a single, crisp sheet of heavy cream-colored linen stock paper. The logo at the top—a stylized column—was embossed in silver foil.
                     </p>
-                    <p>
+                    <p class="text-body-secondary">
                         She didn't hand it to Bradford. She slid it across the mahogany table directly to Jameson Frost.
                     </p>
-                    <p>
+                    <p class="text-body-secondary">
                         It was pure reflex. Jameson reached out and snatched the document before it slid off the edge. He held it up, blinking at the embossed silver logo, his brain struggling to process the heavy, expensive texture of the linen stock. <em>What is this?</em>
                     </p>
                     
@@ -475,31 +467,31 @@ $pageTitle = "The Autopsy: Holly Takes Control - Evidence Item #02";
                         </div>
                     </div>
 
-                    <p>
+                    <p class="text-body-secondary mt-4">
                         "I stopped by the Pacific Rim office on Monday when we landed," Holly said softly. "Printed on 32lb linen stock. Served to a corporate officer. Witnesses present."
                     </p>
-                    <p>
+                    <p class="text-body-secondary">
                         Frost looked down at the paper. The laughter died in his throat.
                     </p>
-                    <p>
+                    <p class="text-body-secondary">
                         "You have seventy-two hours, Jameson," she said, finally snapping her briefcase shut. "Clock started when you touched that paper."
                     </p>
-                    <p>
+                    <p class="text-body-secondary">
                         Holly reached over and snapped her laptop shut, severing the connection to the giant screen. The room plunged back into silence.
                     </p>
-                    <p>
+                    <p class="text-body-secondary">
                         "You aren't a savior, Jameson. You're a squatter. You're trying to use our credit score to refinance your bad decisions. And you were arrogant enough to insult the most qualified person in this room."
                     </p>
-                    <p>
+                    <p class="text-body-secondary">
                         She picked up her notebook, standing up to her full height. She didn't look back at the pale, sweating Vice President who was still staring at his own eviction notice.
                     </p>
-                    <p>
+                    <p class="text-body-secondary">
                         "Ryan, get Cassidy. We're done here."
                     </p>
-                    <p>
+                    <p class="text-body-secondary">
                         She walked to the door, pausing only once to look back.
                     </p>
-                    <p>
+                    <p class="text-body-secondary">
                         "Update your resume, Jameson. And next time... check the org chart."
                     </p>
 
@@ -513,15 +505,15 @@ $pageTitle = "The Autopsy: Holly Takes Control - Evidence Item #02";
                         <h5 class="text-white text-uppercase letter-spacing-2 mb-0">Simultaneous Event: The World Behind the Wall</h5>
                     </div>
                     
-                    <p class="text-white-50 fs-5 mb-4">
+                    <p class="text-light fs-5 mb-4">
                         While Holly waged war with words and documents, the other half of the room existed in a different dimension.
                     </p>
                     
-                    <p class="text-white-50">
+                    <p class="text-light">
                         <strong>Evan and Tyler Wright</strong> stood shoulder-to-shoulder, their broad backs forming a physical wall between the conference table and the floor. They didn't look at Frost. They didn't look at the screen. They watched the door, ensuring no one entered or left without permission.
                     </p>
                     
-                    <p class="text-white-50">
+                    <p class="text-light">
                         Behind that wall, <strong>Ryan O'Connell</strong> had locked the brakes of his wheelchair. He leaned precariously over the side, wrapping his arms around his sister on the floor in a desperate "deep pressure" hold.
                     </p>
                     
@@ -530,7 +522,7 @@ $pageTitle = "The Autopsy: Holly Takes Control - Evidence Item #02";
                             <i class="fa-duotone fa-ear-muffs text-secondary fs-1 opacity-50"></i>
                         </div>
                         <div class="col-md-10">
-                            <p class="small text-muted font-monospace mb-0">
+                            <p class="small text-light font-monospace mb-0">
                                 <strong>Sensory Protocol:</strong> Ryan hummed a low, steady B-flat against her ear—the "Safe Harbor" note. He squeezed her as tightly as he could, trying to manually regulate her nervous system.
                                 <br><br>
                                 <span class="text-danger">STATUS: FAILED.</span> She was too far gone. The pressure wasn't grounding her; she was vibrating apart.
@@ -538,7 +530,7 @@ $pageTitle = "The Autopsy: Holly Takes Control - Evidence Item #02";
                         </div>
                     </div>
 
-                    <p class="text-white-50 mt-4 mb-0 fst-italic">
+                    <p class="text-light mt-4 mb-0 fst-italic">
                         Holly fought the corporation so Ryan could fight the panic. Two wars. One family.
                     </p>
                 </div>
@@ -557,22 +549,13 @@ $pageTitle = "The Autopsy: Holly Takes Control - Evidence Item #02";
         </div>
     </div>
 
-    <div class="row mt-5 pt-4 border-top border-secondary border-opacity-25 align-items-center">
-        <div class="col-4">
-            <a href="/engine-room/history/nine-figure-refusal/the-trigger" class="btn btn-outline-secondary rounded-pill">
-                <i class="fa-solid fa-arrow-left me-2"></i>Previous
-            </a>
-        </div>
-        <div class="col-4 text-center">
-            <a href="/engine-room/history/nine-figure-refusal" class="btn btn-outline-primary rounded-pill">
-                <i class="fa-duotone fa-list-tree me-2"></i>Overview
-            </a>
-        </div>
-        <div class="col-4 text-end">
-            <a href="/engine-room/history/nine-figure-refusal/the-extraction" class="btn btn-primary rounded-pill shadow-sm">
-                Next: The Extraction <i class="fa-solid fa-arrow-right ms-2"></i>
-            </a>
-        </div>
-    </div>
+    <?php
+        $nav = [
+            'prev' => ['url' => '/engine-room/history/nine-figure-refusal/the-trigger', 'label' => 'The Trigger'],
+            'overview' => ['url' => '/engine-room/history/nine-figure-refusal', 'label' => 'Overview'],
+            'next' => ['url' => '/engine-room/history/nine-figure-refusal/the-extraction', 'label' => 'The Extraction']
+        ];
+        include ROOT_PATH . '/includes/components/navigation/narrative-stepper.php';
+    ?>
 
 </div>
