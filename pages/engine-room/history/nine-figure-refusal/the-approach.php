@@ -3,7 +3,7 @@
 // EVIDENCE ITEM #00: The Arrival
 // Context: The family arrives in LA. The "Vacation" becomes a "Deployment".
 // Timeline: September 13-14, 2018 (Pre-Meeting)
-// UPDATED: WCAG Fixes (Contrast) & Narrative Stepper
+// UPDATED: Architectural details (Mezzanine Watchtower & 2nd Floor Utility Access).
 
 $pageTitle = "The Approach Vector - Evidence Item #00";
 ?>
@@ -266,7 +266,10 @@ $pageTitle = "The Approach Vector - Evidence Item #00";
                     <h5 class="text-danger fw-bold text-uppercase mb-4">The Armory</h5>
 
                     <p>
-                        The lobby was designed to intimidate. A cathedral of glass and steel. The Stardust Engine did not look small. They moved in formation, wearing their "Uniforms": Midnight Blue polos with the silver <em>Engine Room</em> gear logo.
+                        The lobby was designed to intimidate. A cathedral of glass and steel that stretched two full stories up, creating a vast, echoing vacuum of air designed to make human beings feel small.
+                    </p>
+                    <p>
+                        The Stardust Engine did not look small. They moved in formation, wearing their "Uniforms": Midnight Blue polos with the silver <em>Engine Room</em> gear logo.
                     </p>
                     <p>
                         "Target acquired," Ryan said. "Omni-Global Media. Penthouse."
@@ -280,18 +283,30 @@ $pageTitle = "The Approach Vector - Evidence Item #00";
                     <p>
                         Holly pulled out a heavy, black RFID keycard with a silver holographic column. <em>BEEP.</em>
                     </p>
-                    <p class="font-monospace text-success small mb-3">ACCESS GRANTED: INFRASTRUCTURE LEVEL - OWNER / AGENT</p>
                     <p>
                         "We're going to the Third Floor," Holly told the stunned guard.
                     </p>
                     
+                    <div class="alert alert-secondary border-0 small fst-italic my-3">
+                        <i class="fa-solid fa-elevator me-2"></i><strong>Security Note:</strong> The elevator button panel skipped "2" entirely. The "Phantom Second Floor" was a mechanical mezzanine, accessible only via freight elevators in the rear corridor. 
+                        <br><br>
+                        Holly's RFID badge flashed green: <strong class="text-success text-uppercase">Tier 1 Access (All Levels)</strong>. If she wanted to, she could take her family into the guts of the building. Instead, she pressed <strong>3</strong>.
+                    </div>
+
                     <hr class="border-secondary opacity-25 my-4">
 
                     <p>
-                        Inside <strong>Pacific Rim Properties (Suite 300)</strong>, Elena was waiting.
+                        The elevator doors opened onto the <strong>Third Floor Mezzanine</strong>.
                     </p>
                     <p>
-                        "Welcome to the West Coast office," Elena said. She handed Holly a single, heavy document folder. "Printed on the 32lb linen stock, silver embossed. Just like you asked."
+                        It was the only suite on the level. The reception desk for <strong>Pacific Rim Properties (Suite 300)</strong> didn't face a blank wall; it faced a sweeping glass balcony rail that looked directly down into the main atrium.
+                    </p>
+                    <p>
+                        From her desk, Elena could see everyone who entered the building. The Landlord wasn't just in the tower; the Landlord was watching the door.
+                    </p>
+                    
+                    <p>
+                        "Welcome to the West Coast office," Elena said, standing up. She handed Holly a single, heavy document folder. "Printed on the 32lb linen stock, silver embossed. Just like you asked."
                     </p>
                     <p>
                         Holly opened the folder. She ran her finger over the textured paper. It made a sharp <em>snap</em>. It was the Eviction Notice.
