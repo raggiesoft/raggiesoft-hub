@@ -3,7 +3,7 @@
 // EPILOGUE: The "Cultural Fit" Assessment
 // Context: February 14, 2019. The "Eye of the Storm."
 // Location: Floor 38 (The New Lobby Level).
-// UPDATED: WCAG Compliance & Narrative Stepper (End of Line).
+// UPDATED: Narrative Tweak - Frost has no badge (The "Phantom Limb" moment).
 
 $pageTitle = "The Interview - Epilogue";
 ?>
@@ -31,8 +31,6 @@ $pageTitle = "The Interview - Epilogue";
     }
     
     /* FORM STYLING - SKEUOMORPHIC (Paper-like) */
-    /* We keep these light-colored even in Dark Mode to look like documents, 
-       but dim them slightly to reduce eye strain. */
     .federal-form {
         background-color: #f8f9fa;
         color: #000;
@@ -56,7 +54,6 @@ $pageTitle = "The Interview - Epilogue";
         color: #000000;
         border-bottom-color: #000000;
     }
-    /* Force internal text to black in dark mode for the forms */
     [data-bs-theme="dark"] .federal-form .text-dark,
     [data-bs-theme="dark"] .federal-form h4,
     [data-bs-theme="dark"] .federal-form h5,
@@ -124,7 +121,6 @@ $pageTitle = "The Interview - Epilogue";
                         <div class="p-2 border border-secondary bg-white small text-dark" style="min-height: 80px;">
                             <p class="mb-0"><strong>Details:</strong> Registrant is using "OGM Capital Partners IV" (SPV) to conceal $400M in toxic debt from shareholders. Insolvency imminent.</p>
                         </div>
-                        
                         <div class="position-absolute bottom-0 end-0 p-3" style="pointer-events: none;">
                              <div class="border border-4 border-danger text-danger p-1 fw-bold text-uppercase fs-6 text-center stamp-rotate" 
                                   style="font-family: 'Courier New', monospace;">
@@ -161,7 +157,6 @@ $pageTitle = "The Interview - Epilogue";
                         <div class="p-2 border border-secondary bg-white small text-dark" style="min-height: 80px;">
                             <p class="mb-0"><strong>Comments:</strong> Taxpayer has claimed depreciation on assets (Real Estate) they do not legally own. See Lease Agreement "Exhibit B."</p>
                         </div>
-
                         <div class="position-absolute bottom-0 end-0 p-3" style="pointer-events: none;">
                              <div class="border border-4 border-primary text-primary p-1 fw-bold text-uppercase fs-6 text-center stamp-rotate" 
                                   style="font-family: 'Courier New', monospace;">
@@ -198,7 +193,6 @@ $pageTitle = "The Interview - Epilogue";
                         <div class="p-2 border border-secondary bg-white small text-dark" style="min-height: 80px;">
                             <p class="mb-0"><strong>Narrative:</strong> Subject mailed a Prospectus for "OGM Capital" to my Virginia residence. The document contains proven material lies. Using the US Mail to execute a swindle is a federal felony.</p>
                         </div>
-
                         <div class="position-absolute bottom-0 end-0 p-3" style="pointer-events: none;">
                              <div class="border border-4 border-dark text-dark p-1 fw-bold text-uppercase fs-6 text-center stamp-rotate" 
                                   style="font-family: 'Courier New', monospace; border-style: double !important;">
@@ -228,89 +222,85 @@ $pageTitle = "The Interview - Epilogue";
                     </div>
 
                     <p>
-                        Jameson Frost walked into the main lobby of 2000 Avenue of the Stars. He adjusted his silk tie, ready to ascend to his former kingdom. He marched toward the elevator bank, looking for the "Up" button.
+                        Jameson Frost walked into the main lobby of 2000 Avenue of the Stars. He adjusted his silk tie, confident. He still had the muscle memory of an owner. He marched toward the secure turnstiles, ready to breeze through to the executive elevators.
                     </p>
                     
                     <p>
-                        He stopped. There were no buttons.
+                        He reached for his hip... and his hand brushed against empty air.
+                    </p>
+                    
+                    <p>
+                        He froze. The memory hit him like a physical blow. <em>Holly O'Connell standing in his office doorway yesterday. Her hand outstretched. The quiet, terrifying authority in her voice when she said, "The badge, Jameson. And the key to the executive washroom. Now."</em>
                     </p>
 
                     <p>
-                        Instead, a cluster of sleek glass kiosks stood in the center of the hallway. People were tapping screens and being directed to different cars. Frost stared at them, confused. <em>Destination Dispatch.</em> He had heard of it—a "efficiency upgrade" the building management had installed last month—but he had never used it.
+                        He shook off the memory. He was Jameson Frost. He didn't need a piece of plastic to enter a building he practically built.
                     </p>
 
                     <p>
-                        He stepped up to a kiosk and jabbed his finger at the screen where it said <strong>FLOOR SELECTION</strong>. He typed <strong>40</strong>.
+                        He stepped toward the turnstile, looking for the guard. "Alvarez," he barked, giving a curt nod. "Open it up."
                     </p>
 
                     <p>
-                        <em>BEEP.</em> The screen flashed red. <strong class="text-danger">ACCESS RESTRICTED.</strong>
+                        Alvarez didn't move. He stood behind the console, his arms crossed. He wasn't smiling.
                     </p>
 
                     <p>
-                        "Ridiculous," Frost muttered. He tried again. <strong>40.</strong>
+                        "I can't do that, Mr. Frost," Alvarez said, his voice flat.
                     </p>
 
                     <p>
-                        <em>BEEP.</em> <strong class="text-danger">SEE SECURITY.</strong>
+                        "Don't be ridiculous," Frost snapped. "I have a meeting with the Director. I'm running late."
                     </p>
 
                     <p>
-                        "Is there a problem, sir?"
+                        "Non-tenants need to sign in at the Visitor Kiosk," Alvarez said, pointing to the iPad stand used by delivery drivers and catering staff. "Name, photo ID, and signature. Policy."
                     </p>
 
                     <p>
-                        Frost spun around. A uniformed security guard was standing behind him, holding a tablet. Not a rent-a-cop, but one of the new building security team members. Professional. armed.
+                        Frost felt the heat rising in his neck. "I am not a visitor, Alvarez. I am the—"
                     </p>
 
                     <p>
-                        "Yes, there is a problem," Frost snapped. "This machine is broken. I have a meeting with the Executive Director. I need to get to the Penthouse."
+                        "You are a visitor, sir," Alvarez interrupted, his tone final. "And you'll need an escort."
                     </p>
 
                     <p>
-                        The guard looked at his tablet. "Name?"
+                        Frost gritted his teeth. He walked to the iPad kiosk. He typed his name. He held up his driver's license for the camera. He waited for the printer to spit out a flimsy paper sticker that said <strong class="text-uppercase">VISITOR</strong>.
                     </p>
 
                     <p>
-                        "Jameson Frost. Vice President of—" He caught himself. "Former Vice President."
+                        "Excellent," Alvarez said, peeling the sticker off and slapping it onto the lapel of Frost's $3,000 suit. "Now, follow me."
                     </p>
 
                     <p>
-                        The guard tapped the screen. "Ah. Yes. Mr. Frost. You are cleared."
+                        Frost seethed as he was marched to the elevator bank like a delinquent schoolboy.
                     </p>
 
                     <p>
-                        The guard reached over Frost's shoulder and typed a code into the kiosk. The screen didn't say 40.
+                        "Press 40," Frost snapped as the doors opened.
                     </p>
 
                     <p>
-                        <strong class="text-primary display-6">FLOOR 38 &bull; CAR D</strong>
+                        "Can't do that, sir," Alvarez said. He pointed to the destination dispatch panel <em>outside</em> the car. "We're on Destination Dispatch now. The car knows where you're going. You don't get to choose."
                     </p>
 
                     <p>
-                        "38?" Frost scoffed. "That's the lower level. I'm meeting the Director."
+                        Alvarez tapped his own master badge against the panel. The screen lit up: <strong class="text-primary">FLOOR 38.</strong>
                     </p>
 
                     <p>
-                        "That is the Director's floor, sir," the guard said, pointing to the far bank of elevators. "Car D. It is arriving now. Please step inside."
+                        "38?" Frost balked. "That's the lower level. The Executive Office is on 40."
                     </p>
 
                     <p>
-                        Frost grumbled and walked over to Car D. The doors slid open. He stepped in... and realized his mistake.
-                    </p>
-
-                    <p>
-                        There were no buttons inside the car. No panel. No way to override the destination.
-                    </p>
-
-                    <p>
-                        He was trapped in a sleek metal box that had already decided his fate. He stood there, helpless, as the car shot upward, bypassing the Penthouse entirely and depositing him on the 38th floor.
+                        "Not anymore," Alvarez said, stepping back as the doors slid shut, leaving Frost alone in the buttonless metal box. "Enjoy your ride."
                     </p>
 
                     <hr class="my-5 border-secondary opacity-25">
 
                     <p>
-                        The doors opened. Frost stepped out, expecting the high-gloss marble he had installed two years ago. Instead, his Italian loafers sank slightly into a matte, sound-dampening cork floor. The aggressive blue lighting was gone, replaced by a warm, golden glow.
+                        The doors opened on 38. Frost stepped out, expecting the high-gloss marble he had installed two years ago. Instead, his Italian loafers sank slightly into a matte, sound-dampening cork floor. The aggressive blue lighting was gone, replaced by a warm, golden glow.
                     </p>
 
                     <p>
@@ -322,7 +312,7 @@ $pageTitle = "The Interview - Epilogue";
                     </p>
 
                     <p>
-                        Frost forced a smile. "I'm here to see the Executive Director, son. Is she upstairs?" He pointed a thumb toward the ceiling.
+                        "I'm here to see the Executive Director, son," Frost said, straightening his tie. "Is she upstairs?" He pointed a thumb toward the ceiling.
                     </p>
 
                     <p>
