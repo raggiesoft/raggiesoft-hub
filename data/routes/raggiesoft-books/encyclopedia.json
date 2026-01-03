@@ -1,15 +1,24 @@
 {
   "common": {
     "site": "raggiesoft-books",
+    "project-slug": "raggiesoft-books",
+    "theme": "encyclopedia",
+    
+    "headerMenu": "header-default",
     "showSidebar": true,
     "sidebar": "raggiesoft-books/sidebar-encyclopedia",
-    "siteName": "RaggieSoft Books",
-    "headerMenu": "header-default",
-    "footer": "footer-default"
+    "footer": "footer-default",
+    
+    "siteName": "The Narrative Encyclopedia",
+    "navbarBrandText": "RaggieSoft <span class=\"d-none d-md-inline\">Books</span>",
+    "navbarBrandLink": "/raggiesoft-books",
+    "navbarBrandLogo": "https://assets.raggiesoft.com/raggiesoft-corporate/images/logo/raggiesoft-logo.png",
+    "navbarBrandAlt": "RaggieSoft Books Logo",
+    "brandFont": ["Crimson Text", "serif"]
   },
 
   "/raggiesoft-books/encyclopedia": {
-    "title": "The Narrative Encyclopedia",
+    "title": "The Narrative Encyclopedia | System Reference",
     "ogDescription": "Behind-the-scenes reference documents, system mechanics, and lore for the RaggieSoft Narrative Universe."
   },
 
