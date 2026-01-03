@@ -202,7 +202,7 @@ $pageTitle = "System Reference: The Sensory Scale";
                                 <small class="text-danger text-uppercase fw-bold d-block mb-2">Historical Record:</small>
                                 <p class="small text-white fst-italic mb-2">
                                     <strong>Incident:</strong> Omni-Global Pitch (2018)<br>
-                                    <strong>Subject:</strong> Holly O'Connell<br>
+                                    <strong>Subject:</strong> Cassidy O'Connell<br>
                                     <strong>Trigger:</strong> Threat to Master Tapes<br>
                                     <strong>Severity:</strong> <span class="text-uppercase">Maximum</span>
                                 </p>
