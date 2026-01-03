@@ -2,7 +2,7 @@
 // pages/engine-room/history/nine-figure-refusal/the-smoking-gun.php
 // EVIDENCE ITEM #00-C: The Letter (The "Smoking Gun")
 // Context: The moment Jameson Frost tried to save $0.50 and lost $600 Million.
-// UPDATED: Replaced summary with the actual arrogant letter from Frost.
+// UPDATED: Moved sticky note to side margin for readability.
 
 $pageTitle = "Evidence #00-C: The Smoking Gun - Engine Room History";
 ?>
@@ -44,6 +44,35 @@ $pageTitle = "Evidence #00-C: The Smoking Gun - Engine Room History";
         border-bottom: 4px solid #000;
         padding-bottom: 10px;
         margin-bottom: 30px;
+    }
+
+    /* Holly's Note - Responsive Positioning */
+    .holly-note {
+        position: absolute;
+        top: 180px; 
+        right: -60px; 
+        width: 280px; 
+        transform: rotate(-2deg);
+        z-index: 10;
+        transition: transform 0.3s ease;
+    }
+
+    .holly-note:hover {
+        transform: scale(1.05) rotate(0deg);
+        z-index: 20;
+    }
+
+    /* Mobile Adjustment for Note */
+    @media (max-width: 992px) {
+        .holly-note {
+            position: relative;
+            top: 0;
+            right: 0;
+            left: 0;
+            width: 100%;
+            margin-top: 30px;
+            transform: rotate(0deg);
+        }
     }
 </style>
 
@@ -129,8 +158,7 @@ $pageTitle = "Evidence #00-C: The Smoking Gun - Engine Room History";
                     </div>
                 </div>
 
-                <div class="position-absolute bg-warning p-3 shadow-lg rotate-2" 
-                     style="bottom: 100px; left: -60px; width: 280px; font-family: 'Kalam', cursive; transform: rotate(-4deg); color: #000;">
+                <div class="holly-note bg-warning p-3 shadow-lg" style="font-family: 'Kalam', cursive; color: #000;">
                     <i class="fa-solid fa-paperclip position-absolute top-0 start-50 translate-middle-y text-muted"></i>
                     <p class="mb-2 fw-bold small border-bottom border-dark pb-1">Holly's Notes:</p>
                     <ul class="list-unstyled small mb-0 fw-bold" style="line-height: 1.4;">
