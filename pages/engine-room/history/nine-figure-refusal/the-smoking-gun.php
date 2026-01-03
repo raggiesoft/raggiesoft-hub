@@ -1,8 +1,8 @@
 <?php
 // pages/engine-room/history/nine-figure-refusal/the-smoking-gun.php
-// EVIDENCE ITEM #00-C: The Fraudulent Prospectus (The "Smoking Gun")
+// EVIDENCE ITEM #00-C: The Letter (The "Smoking Gun")
 // Context: The moment Jameson Frost tried to save $0.50 and lost $600 Million.
-// UPDATED: Added "Postage Due" narrative arc & WCAG Compliance.
+// UPDATED: Replaced summary with the actual arrogant letter from Frost.
 
 $pageTitle = "Evidence #00-C: The Smoking Gun - Engine Room History";
 ?>
@@ -35,13 +35,15 @@ $pageTitle = "Evidence #00-C: The Smoking Gun - Engine Room History";
         line-height: 1.2;
     }
 
-    /* Hand-Drawn Annotations */
-    .circle-sketch {
-        border: 2px solid #d63384; /* Hot Pink Marker */
-        border-radius: 50% 40% 60% 30% / 40% 50% 60% 50%; /* Organic Shape */
-        position: absolute;
-        top: -5px; left: -5px; right: -5px; bottom: -5px;
-        pointer-events: none;
+    /* Corporate Letterhead Styling */
+    .letterhead-logo {
+        font-family: 'Helvetica', sans-serif;
+        font-weight: 900;
+        text-transform: uppercase;
+        letter-spacing: -1px;
+        border-bottom: 4px solid #000;
+        padding-bottom: 10px;
+        margin-bottom: 30px;
     }
 </style>
 
@@ -83,45 +85,61 @@ $pageTitle = "Evidence #00-C: The Smoking Gun - Engine Room History";
                     </div>
                 </div>
 
-                <div class="text-center border-bottom border-dark pb-4 mb-4">
-                    <h2 class="fw-bold mb-1" style="letter-spacing: 2px;">OGM CAPITAL PARTNERS IV, L.P.</h2>
-                    <p class="small text-muted text-uppercase mb-0">Confidential Private Placement Memorandum</p>
+                <div class="letterhead-logo">
+                    <i class="fa-solid fa-globe me-2"></i>Omni-Global Media
+                    <span class="float-end fw-normal small text-muted mt-2" style="font-family: 'Times New Roman', serif; letter-spacing: 0;">Office of Acquisitions</span>
                 </div>
 
                 <div class="row">
                     <div class="col-12 mb-4">
-                        <p class="mb-2"><strong>To:</strong> Tyler Wright (c/o Engine Room Records)</p>
-                        <p class="mb-4"><strong>Date:</strong> September 12, 2018</p>
+                        <p class="mb-0">September 12, 2018</p>
+                    </div>
+
+                    <div class="col-12 mb-4">
+                        <p class="mb-0"><strong>Mr. Tyler Wright</strong></p>
+                        <p class="mb-0">c/o Engine Room Records, LLC</p>
+                        <p class="mb-0">Blacksburg, VA 24060</p>
+                    </div>
+
+                    <div class="col-12">
+                        <p>Dear Mr. Wright,</p>
                         
-                        <p>
-                            This Prospectus relates to the offer to acquire 100% of the outstanding equity of 
-                            <strong>Engine Room Records, LLC</strong> ("The Target") for a total consideration of 
-                            $150,000,000 USD.
-                        </p>
-                    </div>
+                        <p>We have been monitoring the... <em>spirited</em> independence of your outfit for some time. It is rare to see a "mom and pop" operation survive this long in a market dominated by giants like us. We admire your grit.</p>
 
-                    <div class="col-12 p-3 bg-light border mb-4 position-relative">
-                        <h5 class="fw-bold border-bottom pb-2">Investment Thesis: Distressed Asset</h5>
-                        <p class="mb-0">
-                            "The Target is characterized by <span class="position-relative d-inline-block text-danger fw-bold">liquidity constraints<div class="circle-sketch"></div></span> and an inability to scale operations without significant capital infusion. This acquisition acts as a 'rescue financing' event..."
-                        </p>
-                    </div>
+                        <p>However, we also recognize the reality of your balance sheet. Maintaining aging equipment and financing tour logistics on a credit card is unsustainable.</p>
 
-                    <div class="col-12 text-center mt-4">
-                        <p class="small text-muted fst-italic">
-                            * This document contains forward-looking statements that involve risks and uncertainties.
+                        <p><strong>We are prepared to offer you a way out.</strong></p>
+
+                        <div class="bg-light border p-4 my-4 text-center">
+                            <h3 class="fw-bold mb-1">CASH OFFER: $150,000,000 USD</h3>
+                            <p class="small text-muted mb-0 fst-italic">Subject to standard audit and liquidation of redundant personnel.</p>
+                        </div>
+
+                        <p>This is a life-changing amount of capital. It will allow you to finally retire the high-interest debt on your buses, upgrade your production gear to industry standards, and perhaps secure a comfortable retirement for your disabled family members.</p>
+
+                        <p>Let's be realistic: You are an analog band in a digital world. Take the win.</p>
+
+                        <p class="mt-5">Sincerely,</p>
+                        
+                        <div style="font-family: 'Nothing You Could Do', cursive; font-size: 1.5rem; color: #000080;">Jameson Frost</div>
+                        <p class="fw-bold border-top border-dark d-inline-block pt-1 mt-1">
+                            Jameson Frost<br>
+                            <span class="fw-normal small">Vice President, Acquisitions</span>
                         </p>
                     </div>
                 </div>
 
                 <div class="position-absolute bg-warning p-3 shadow-lg rotate-2" 
-                     style="bottom: 40px; left: -40px; width: 250px; font-family: 'Kalam', cursive; transform: rotate(-3deg); color: #000;">
+                     style="bottom: 100px; left: -60px; width: 280px; font-family: 'Kalam', cursive; transform: rotate(-4deg); color: #000;">
                     <i class="fa-solid fa-paperclip position-absolute top-0 start-50 translate-middle-y text-muted"></i>
-                    <p class="mb-0 fw-bold small">
-                        "He used a Bulk Mail permit for a single letter. <br><br>
-                        That's illegal (Postal Fraud). <br>
-                        And I had to pay the mailman 50 cents to get this trash. <br><br>
-                        <strong>Call the USPIS.</strong>"
+                    <p class="mb-2 fw-bold small border-bottom border-dark pb-1">Holly's Notes:</p>
+                    <ul class="list-unstyled small mb-0 fw-bold" style="line-height: 1.4;">
+                        <li class="mb-2">1. Addressed to <u>Tyler</u>? (Sexist. He assumes the man runs it.)</li>
+                        <li class="mb-2">2. "Retire debt"? We have ZERO debt. (Lazy Research).</li>
+                        <li class="mb-2 text-danger">3. HE DIDN'T PAY FOR THE STAMP.</li>
+                    </ul>
+                    <p class="mt-2 mb-0 small text-danger fw-bold border-top border-danger pt-2">
+                        He used a Bulk Permit for one letter. That is Mail Fraud (18 USC § 1341). I paid 50 cents for this insult. <br>CALL THE USPIS.
                     </p>
                 </div>
 
