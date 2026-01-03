@@ -263,7 +263,7 @@ $pageTitle = "The Zenith Report: The Bus Ride & The Leak";
                                     <img src="https://assets.raggiesoft.com/engine-room-records/images/omni-global/cassidy-extraction.jpg" 
                                          class="img-fluid security-footage-print" 
                                          alt="Grainy black and white security footage on newsprint showing Evan and Tyler carrying Cassidy down the hallway, flanked by Ryan and Holly.">
-                                    <div class="p-2 small font-monospace text-muted border-top border-secondary-subtle mt-1 text-center bg-light">
+                                    <div class="p-2 small font-monospace text-dark border-top border-secondary-subtle mt-1 text-center bg-light">
                                         <strong>Fig 1.</strong> "Code Carry." The hallway outside Suite 4000. (Source: Pacific Rim Properties)
                                     </div>
                                 </div>
