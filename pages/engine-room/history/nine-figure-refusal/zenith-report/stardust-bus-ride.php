@@ -198,7 +198,7 @@ $pageTitle = "The Zenith Report: The Bus Ride & The Leak";
                             </div>
 
                             <div class="card bg-light border-0 p-3 mb-4">
-                                <h6 class="fw-bold small text-uppercase mb-2 text-dark">Transit Log</h6>
+                                <h6 class="fw-bold small text-uppercase mb-2 text-black">Transit Log</h6>
                                 <ul class="list-unstyled small font-monospace text-muted mb-0">
                                     <li class="mb-1"><strong>Route:</strong> Civic-Rapid 720</li>
                                     <li class="mb-1"><strong>Stop:</strong> Ave of Stars</li>
