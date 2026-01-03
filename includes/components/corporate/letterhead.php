@@ -38,8 +38,7 @@ if ($current_brand === 'pacific-rim') {
     
     // UPDATED URL
     $brand_url = "raggiesoft.com/engine-room";
-    
-    $brand_logo = '<img src="https://assets.raggiesoft.com/engine-room-records/images/logos/engine-room-records-logo.jpg" alt="Official Seal" style="width: 100px; mix-blend-mode: multiply; filter: contrast(120%);">';
+    $brand_logo = '<img src="https://assets.raggiesoft.com/engine-room-records/images/logos/engine-room-records-logo.png" alt="Official Seal" style="width: 100px; mix-blend-mode: multiply; filter: contrast(120%);">';
     
     // Signature: The CEO
     $sig_title = "Chief Executive Officer & General Counsel";
