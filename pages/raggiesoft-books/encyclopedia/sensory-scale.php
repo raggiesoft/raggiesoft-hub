@@ -203,11 +203,11 @@ $pageTitle = "System Reference: The Sensory Scale";
                                 <small class="text-danger text-uppercase fw-bold d-block mb-3 border-bottom border-secondary pb-2">Known Recovery Logs:</small>
                                 
                                 <div class="mb-3">
-                                    <div class="d-flex align-items-center mb-1">
+                                    <a href="/engine-room/history/nine-figure-refusal/the-extraction" class="d-flex align-items-center mb-1 text-decoration-none group-hover">
                                         <i class="fa-duotone fa-person-carry-box text-warning me-2"></i>
-                                        <strong class="text-white small text-uppercase">Case A: The Extraction</strong>
-                                    </div>
-                                    <p class="small text-white-50 fst-italic mb-0">
+                                        <strong class="text-white small text-uppercase border-bottom border-secondary border-opacity-50 hover-border-warning transition-all">Case A: The Extraction</strong>
+                                    </a>
+                                    <p class="small text-white-50 fst-italic mb-0 ps-4">
                                         <strong>Subject:</strong> Cassidy O'Connell.<br>
                                         <strong>Context:</strong> Hostile Environment (Conference Room).<br>
                                         <strong>Action:</strong> Physically carried out by Tyler & Evan Wright to a secure location.
@@ -215,11 +215,11 @@ $pageTitle = "System Reference: The Sensory Scale";
                                 </div>
 
                                 <div>
-                                    <div class="d-flex align-items-center mb-1">
+                                    <a href="/case-studies/cascade-protocol" class="d-flex align-items-center mb-1 text-decoration-none group-hover">
                                         <i class="fa-duotone fa-anchor text-info me-2"></i>
-                                        <strong class="text-white small text-uppercase">Case B: Deep Pressure</strong>
-                                    </div>
-                                    <p class="small text-white-50 fst-italic mb-0">
+                                        <strong class="text-white small text-uppercase border-bottom border-secondary border-opacity-50 hover-border-info transition-all">Case B: Deep Pressure</strong>
+                                    </a>
+                                    <p class="small text-white-50 fst-italic mb-0 ps-4">
                                         <strong>Subject:</strong> Michael Ragsdale.<br>
                                         <strong>Context:</strong> Safe Harbor (Hotel Room).<br>
                                         <strong>Action:</strong> Paige Ragsdale lying stomach-to-stomach on subject to counteract active resistance until regulation is achieved.
