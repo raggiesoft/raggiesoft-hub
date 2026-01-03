@@ -1,7 +1,7 @@
 <?php
 // includes/sidebars/sidebar-nine-figure-refusal.php
 // Dedicated navigation for the "Accidental Empire" Saga
-// UPDATED: Fixed "Invisible Text" bug in Light Mode for Overview link
+// UPDATED: WCAG Compliance Fixes (Theme-Aware Contrast)
 
 $currentUri = $_SERVER['REQUEST_URI'] ?? '';
 
@@ -64,8 +64,8 @@ $chapters = [
 ];
 ?>
 
-<h5 class="pt-3 pb-2 mb-3 border-bottom text-uppercase letter-spacing-1">
-    <i class="fa-duotone fa-folder-open me-2 text-warning"></i>Case File: OGM-2018
+<h5 class="pt-3 pb-2 mb-3 border-bottom text-uppercase letter-spacing-1 text-body-secondary">
+    <i class="fa-duotone fa-folder-open me-2 text-warning-emphasis"></i>Case File: OGM-2018
 </h5>
 
 <ul class="nav flex-column mb-3">
@@ -75,7 +75,7 @@ $chapters = [
         </a>
     </li>
     <li class="nav-item mt-2">
-        <a class="nav-link <?php echo ($currentUri === '/engine-room/history/nine-figure-refusal') ? 'active fw-bold' : 'text-secondary'; ?>" 
+        <a class="nav-link <?php echo ($currentUri === '/engine-room/history/nine-figure-refusal') ? 'active fw-bold text-body-emphasis' : 'text-body-secondary'; ?>" 
            href="/engine-room/history/nine-figure-refusal">
             <i class="fa-duotone fa-chart-network me-2"></i>Overview
         </a>
@@ -90,7 +90,7 @@ $chapters = [
     ?>
     <div class="accordion-item bg-transparent border-0">
         <h2 class="accordion-header" id="heading<?php echo $id; ?>">
-            <button class="accordion-button <?php echo $isActive ? 'fw-bold text-white bg-dark' : 'collapsed text-muted bg-transparent'; ?> shadow-none py-2 px-0" 
+            <button class="accordion-button <?php echo $isActive ? 'fw-bold text-body-emphasis bg-body-tertiary' : 'collapsed text-body-secondary bg-transparent'; ?> shadow-none py-2 px-3 rounded" 
                     type="button" 
                     data-bs-toggle="collapse" 
                     data-bs-target="#<?php echo $collapseId; ?>" 
@@ -103,13 +103,13 @@ $chapters = [
              class="accordion-collapse collapse <?php echo $isActive ? 'show' : ''; ?>" 
              aria-labelledby="heading<?php echo $id; ?>" 
              data-bs-parent="#historyAccordion">
-            <div class="accordion-body p-0 ps-2 mb-3">
-                <ul class="nav flex-column">
+            <div class="accordion-body p-0 ps-3 mb-3">
+                <ul class="nav flex-column border-start border-2 border-secondary border-opacity-10 ms-2">
                     <?php foreach ($data['pages'] as $url => $linkData): 
                         $isLinkActive = ($currentUri === $url);
                     ?>
                     <li class="nav-item">
-                        <a class="nav-link <?php echo $isLinkActive ? 'active fw-bold text-warning' : 'text-secondary'; ?> py-1" href="<?php echo $url; ?>">
+                        <a class="nav-link <?php echo $isLinkActive ? 'active fw-bold text-warning-emphasis bg-warning-subtle rounded-end' : 'text-body-secondary'; ?> py-1 ms-1 ps-2" href="<?php echo $url; ?>">
                             <i class="<?php echo $linkData['icon']; ?> me-2" style="width: 20px;"></i><?php echo $linkData['label']; ?>
                         </a>
                     </li>
@@ -122,13 +122,13 @@ $chapters = [
 
 </div>
 
-<div class="mt-4 p-3 bg-dark border border-secondary rounded">
-    <h6 class="text-white text-uppercase small fw-bold mb-2">Status Update</h6>
+<div class="mt-4 p-3 bg-body-tertiary border border-secondary-subtle rounded">
+    <h6 class="text-body-emphasis text-uppercase small fw-bold mb-2">Status Update</h6>
     <div class="d-flex align-items-center mb-2">
         <span class="badge bg-success me-2 text-uppercase">Closed</span>
-        <small class="text-white-50">Jan 15, 2019</small>
+        <small class="text-body-secondary font-monospace">Jan 15, 2019</small>
     </div>
-    <p class="text-muted small mb-0">
+    <p class="text-body-secondary small mb-0">
         Omni-Global Media is now a wholly-owned subsidiary of Engine Room Records, LLC.
     </p>
 </div>
