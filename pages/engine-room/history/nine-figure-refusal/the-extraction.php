@@ -2,7 +2,7 @@
 // pages/engine-room/history/nine-figure-refusal/the-extraction.php
 // EVIDENCE ITEM #03: The Departure
 // Context: The family executes "Code Carry" and leaves the building.
-// UPDATED: Narrative refined to emphasize the "Worst Ever" severity and public witnessing.
+// UPDATED: WCAG Compliance, Narrative Stepper, and Image Integration.
 
 $pageTitle = "The Extraction - Evidence Item #03";
 ?>
@@ -11,13 +11,13 @@ $pageTitle = "The Extraction - Evidence Item #03";
     
     <div class="row justify-content-center mb-5">
         <div class="col-lg-8 text-center">
-            <span class="badge bg-secondary text-white rounded-pill px-3 py-2 mb-3 text-uppercase letter-spacing-1 shadow-glow">
+            <span class="badge bg-secondary-subtle text-secondary-emphasis rounded-pill px-3 py-2 mb-3 text-uppercase letter-spacing-1 shadow-sm border border-secondary-subtle">
                 <i class="fa-duotone fa-person-to-door me-2"></i>The Departure
             </span>
-            <h1 class="display-4 fw-bold text-white mb-2" style="font-family: 'Impact', sans-serif;">
+            <h1 class="display-4 fw-bold text-body-emphasis mb-2" style="font-family: 'Impact', sans-serif;">
                 PROTOCOL: "SAFE HARBOR"
             </h1>
-            <p class="lead text-muted font-monospace">
+            <p class="lead text-body-secondary font-monospace">
                 They didn't run. They didn't scream. They simply collected their own—and one extra—and walked out.
             </p>
         </div>
@@ -28,7 +28,7 @@ $pageTitle = "The Extraction - Evidence Item #03";
             
             <div class="card border-0 shadow-lg bg-dark text-white mb-4">
                 <div class="card-header bg-black bg-opacity-50 border-bottom border-secondary py-3">
-                    <h5 class="text-secondary fw-bold text-uppercase mb-0 letter-spacing-2">
+                    <h5 class="text-white fw-bold text-uppercase mb-0 letter-spacing-2">
                         <i class="fa-duotone fa-users-medical me-2"></i>Phase 1: Conference Room A (10:24 AM)
                     </h5>
                 </div>
@@ -59,6 +59,12 @@ $pageTitle = "The Extraction - Evidence Item #03";
                             </div>
                         </div>
                     </div>
+                    
+                    <div class="alert alert-dark border-start border-4 border-info bg-black text-white-50 small fst-italic my-3">
+                        <i class="fa-solid fa-circle-info me-2 text-info"></i>
+                        <strong>Asset Note:</strong> The seat cushion used to support Cassidy's legs was taken from the conference chair. It is legally the property of <strong>Pacific Rim Properties</strong> (The Landlord). Omni-Global cannot claim theft.
+                    </div>
+
                     <p>
                         "Cass," Evan whispered. "We've got you. Going up on three."
                     </p>
@@ -66,7 +72,7 @@ $pageTitle = "The Extraction - Evidence Item #03";
                         <em>One. Two. Three.</em>
                     </p>
                     <p>
-                        They lifted her effortlessly. Cassidy didn't fight them, but the sensory pain was still ripping through her. She was sobbing uncontrollably, unable to find a safe place to hide her face even as they moved her into the hallway.
+                        They lifted her effortlessly. Cassidy didn't fight them, but the sensory pain was still ripping through her. She was sobbing uncontrollably.
                     </p>
                     <p>
                         "Let's go," Holly said.
@@ -78,7 +84,7 @@ $pageTitle = "The Extraction - Evidence Item #03";
                 <div class="position-relative">
                     <img src="https://assets.raggiesoft.com/engine-room-records/images/omni-global/cassidy-extraction.jpg" 
                          class="img-fluid w-100 opacity-75" 
-                         alt="Security footage: Evan and Tyler carrying a sobbing Cassidy down the hallway toward the camera. Holly and Ryan flank them. The entire office staff can be seen in the background, staring."
+                         alt="Security footage (10:25 AM). Evan and Tyler Wright carrying a sobbing Cassidy O'Connell down the executive hallway toward the camera. Holly walks confidently in the lead with a briefcase. Ryan O'Connell follows in his wheelchair. Omni-Global staff watch from the background."
                          style="filter: contrast(1.1) sepia(0.2);">
                     
                     <div class="position-absolute top-0 end-0 p-3 font-monospace text-success fw-bold text-shadow-black">
@@ -98,13 +104,13 @@ $pageTitle = "The Extraction - Evidence Item #03";
                 </div>
             </div>
 
-            <div class="card border-0 shadow-lg bg-secondary bg-opacity-10 mb-4">
-                <div class="card-header bg-secondary bg-opacity-25 border-bottom border-secondary py-3">
-                    <h5 class="text-dark fw-bold text-uppercase mb-0 letter-spacing-2">
+            <div class="card border-0 shadow-lg bg-body-tertiary mb-4">
+                <div class="card-header bg-body-secondary border-bottom border-secondary py-3">
+                    <h5 class="text-body-emphasis fw-bold text-uppercase mb-0 letter-spacing-2">
                         <i class="fa-duotone fa-elevator me-2"></i>Phase 2: The Descent (10:26 AM)
                     </h5>
                 </div>
-                <div class="card-body p-5">
+                <div class="card-body p-5 text-body-secondary">
                     <p>
                         The heavy door clicked shut behind them.
                     </p>
@@ -160,13 +166,13 @@ $pageTitle = "The Extraction - Evidence Item #03";
                 </div>
             </div>
 
-            <div class="card border-0 shadow-lg bg-light text-dark">
-                <div class="card-header bg-white border-bottom border-dark py-3">
-                    <h5 class="text-dark fw-bold text-uppercase mb-0 letter-spacing-2">
+            <div class="card border-0 shadow-lg bg-body-tertiary">
+                <div class="card-header bg-body-secondary border-bottom border-secondary py-3">
+                    <h5 class="text-body-emphasis fw-bold text-uppercase mb-0 letter-spacing-2">
                         <i class="fa-duotone fa-bus me-2"></i>Phase 3: The Real World (10:30 AM)
                     </h5>
                 </div>
-                <div class="card-body p-5">
+                <div class="card-body p-5 text-body-secondary">
                     <p>
                         The heat of the Los Angeles morning hit them as they exited the glass atrium.
                     </p>
@@ -182,7 +188,7 @@ $pageTitle = "The Extraction - Evidence Item #03";
                     <p>
                         The massive red <strong>Civic-Rapid 720</strong> pulled up. The bus knelt.
                     </p>
-                    <ul class="list-unstyled ms-4 font-monospace small text-muted">
+                    <ul class="list-unstyled ms-4 font-monospace small text-body-secondary">
                         <li class="mb-2">>> Evan and Tyler boarded first, carrying Cassidy up the steps.</li>
                         <li class="mb-2">>> Ryan rolled up the ramp.</li>
                         <li class="mb-2">>> Jessica stepped up, dragging her folded chair.</li>
@@ -196,7 +202,7 @@ $pageTitle = "The Extraction - Evidence Item #03";
                     <p>
                         David watched the bus merge into traffic. He took a deep breath of the smoggy air and smiled.
                     </p>
-                    <p class="fst-italic">
+                    <p class="fst-italic text-body-emphasis">
                         "Ad astra, Toby," he whispered. "Ad astra."
                     </p>
                 </div>
@@ -205,22 +211,13 @@ $pageTitle = "The Extraction - Evidence Item #03";
         </div>
     </div>
 
-    <div class="row mt-5 pt-4 border-top border-secondary border-opacity-25 align-items-center">
-        <div class="col-4">
-            <a href="/engine-room/history/nine-figure-refusal/the-autopsy" class="btn btn-outline-secondary rounded-pill">
-                <i class="fa-solid fa-arrow-left me-2"></i>Previous
-            </a>
-        </div>
-        <div class="col-4 text-center">
-            <a href="/engine-room/history/nine-figure-refusal" class="btn btn-outline-primary rounded-pill">
-                <i class="fa-duotone fa-list-tree me-2"></i>Overview
-            </a>
-        </div>
-        <div class="col-4 text-end">
-            <a href="/engine-room/history/nine-figure-refusal/zenith-report/omni-global-chapter-11" class="btn btn-primary rounded-pill shadow-sm">
-                Next: The Fallout <i class="fa-solid fa-arrow-right ms-2"></i>
-            </a>
-        </div>
-    </div>
+    <?php
+        $nav = [
+            'prev' => ['url' => '/engine-room/history/nine-figure-refusal/the-autopsy', 'label' => 'The Autopsy'],
+            'overview' => ['url' => '/engine-room/history/nine-figure-refusal', 'label' => 'Overview'],
+            'next' => ['url' => '/engine-room/history/nine-figure-refusal/zenith-report/omni-global-chapter-11', 'label' => 'The Fallout']
+        ];
+        include ROOT_PATH . '/includes/components/navigation/narrative-stepper.php';
+    ?>
 
 </div>
