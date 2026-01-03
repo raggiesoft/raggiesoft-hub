@@ -3,7 +3,7 @@
 // EVIDENCE ITEM #00: The Arrival
 // Context: The family arrives in LA. The "Vacation" becomes a "Deployment".
 // Timeline: September 13-14, 2018 (Pre-Meeting)
-// UPDATED: Architectural details (Mezzanine Watchtower & 2nd Floor Utility Access).
+// UPDATED: Guard Interaction - From "Stunned" to "Professional Deference"
 
 $pageTitle = "The Approach Vector - Evidence Item #00";
 ?>
@@ -278,19 +278,25 @@ $pageTitle = "The Approach Vector - Evidence Item #00";
                         "We aren't going there yet," Holly said. "We have a stop to make."
                     </p>
                     <p>
-                        They bypassed the main security desk for the restricted elevators. The guard stepped forward. "Excuse me, folks. Restricted."
+                        They bypassed the main security desk for the restricted elevators. The guard stepped forward instantly, hand raised. "Excuse me, folks. Restricted access. Badges only."
                     </p>
                     <p>
-                        Holly pulled out a heavy, black RFID keycard with a silver holographic column. <em>BEEP.</em>
+                        Holly didn't argue. She simply pulled out a heavy, black RFID keycard with a silver holographic column and held it to the reader. 
                     </p>
                     <p>
-                        "We're going to the Third Floor," Holly told the stunned guard.
+                        <em>BEEP.</em>
+                    </p>
+                    <p>
+                        The guard glanced at his console monitor. His posture straightened instantly. He saw the <strong class="text-success">"AUTHORIZED AGENT: PACIFIC RIM PROPERTIES"</strong> flag. He didn't know her face, but he knew the hierarchy.
+                    </p>
+                    <p>
+                        "My apologies, ma'am," the guard said, immediately stepping aside and holding his arm out to clear the path. "Elevator C is priority-locked for you. Have a good morning."
                     </p>
                     
                     <div class="alert alert-secondary border-0 small fst-italic my-3">
                         <i class="fa-solid fa-elevator me-2"></i><strong>Security Note:</strong> The elevator button panel skipped "2" entirely. The "Phantom Second Floor" was a mechanical mezzanine, accessible only via freight elevators in the rear corridor. 
                         <br><br>
-                        Holly's RFID badge flashed green: <strong class="text-success text-uppercase">Tier 1 Access (All Levels)</strong>. If she wanted to, she could take her family into the guts of the building. Instead, she pressed <strong>3</strong>.
+                        Holly's RFID badge unlocked the hidden service menu. If she wanted to, she could take her family into the guts of the building. Instead, she pressed <strong>3</strong>.
                     </div>
 
                     <hr class="border-secondary opacity-25 my-4">
@@ -302,7 +308,7 @@ $pageTitle = "The Approach Vector - Evidence Item #00";
                         It was the only suite on the level. The reception desk for <strong>Pacific Rim Properties (Suite 300)</strong> didn't face a blank wall; it faced a sweeping glass balcony rail that looked directly down into the main atrium.
                     </p>
                     <p>
-                        From her desk, Elena could see everyone who entered the building. The Landlord wasn't just in the tower; the Landlord was watching the door.
+                        From her desk, Elena—the on-site manager—could see everyone who entered the building. The Landlord wasn't just in the tower; the Landlord was watching the door.
                     </p>
                     
                     <p>
