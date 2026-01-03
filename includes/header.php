@@ -1,7 +1,7 @@
 <?php
 // includes/header.php
-// v7.1 - RaggieSoft Production
-// Updated: Added Playfair Display (Trust) & Black Ops One (Stamps)
+// v7.1.1 - RaggieSoft Production
+// Updated: Fixed Back Button/Loader Persistence Bug
 
 // 1. Resolve Context
 $site  = $currentSite ?? 'raggiesoft';
@@ -94,7 +94,6 @@ if (isset($customPageAssets) && is_array($customPageAssets)) {
         <?php if($imgUrl): ?><link rel="preload" as="image" href="<?php echo $imgUrl; ?>"><?php endif; ?>
     <?php endforeach; ?>
     
-    <!-- Favicon & Touch Icons -->
     <link rel="apple-touch-icon" sizes="180x180" href="<?php echo $cdn_root; ?>/common/images/favicons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="<?php echo $cdn_root; ?>/common/images/favicons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="<?php echo $cdn_root; ?>/common/images/favicons/favicon-16x16.png">
@@ -177,9 +176,6 @@ if (isset($customPageAssets) && is_array($customPageAssets)) {
         </div>
         <h4 class="text-uppercase fw-bold brand-font" style="letter-spacing: 2px;">
             <?php 
-                // 1. Check if the current page has a specific name (from JSON)
-                // 2. Fallback to the global site name (from settings.json)
-                // 3. Last resort fallback
                 echo htmlspecialchars($pageConfig['siteName'] ?? $settings['siteName'] ?? 'Loading'); 
             ?>
         </h4>
@@ -203,7 +199,6 @@ if (isset($customPageAssets) && is_array($customPageAssets)) {
             if(bar) { bar.style.width = '10%'; bar.style.opacity = '1'; }
             
             progressInterval = setInterval(() => {
-                // Decays as it gets closer to 95%
                 let step = (95 - progress) / 80; 
                 if (step < 0.1) step = 0.1; 
                 progress += step; 
@@ -211,7 +206,6 @@ if (isset($customPageAssets) && is_array($customPageAssets)) {
                 
                 if(bar) bar.style.width = progress + '%';
                 
-                // 2. Dynamic Sci-Fi Text Updates
                 if(text) {
                     if (progress < 30) text.innerText = "> ESTABLISHING UPLINK...";
                     else if (progress < 50) text.innerText = "> HANDSHAKING...";
@@ -226,11 +220,9 @@ if (isset($customPageAssets) && is_array($customPageAssets)) {
             if(bar) bar.style.width = '100%';
             if(text) text.innerText = "> CONNECTION ESTABLISHED.";
             
-            // Slight delay so the user sees the 100% completion
             setTimeout(() => { 
                 if(loader) loader.classList.add('loader-hidden'); 
                 
-                // Reset for next time
                 setTimeout(() => { 
                     if(bar) { bar.style.width = '0%'; bar.style.opacity = '0'; }
                 }, 500);
@@ -246,42 +238,46 @@ if (isset($customPageAssets) && is_array($customPageAssets)) {
             }
         });
 
+        // FIX: Ensure loader is hidden before caching, so the "Snapshot" 
+        // doesn't have the loader visible when the user clicks Back.
+        document.addEventListener('turbo:before-cache', () => {
+            if(loader) loader.classList.add('loader-hidden');
+        });
+
         document.addEventListener('turbo:load', () => {
             finishLoad();
         });
 
         // --- 4. CLICK INTERCEPTOR (The "Instant" Feel) ---
-        // This catches regular links immediately, even before Turbo or the browser reacts
         document.addEventListener('click', function(e) {
-            // Find the closest anchor tag (in case they clicked an icon inside the link)
             const link = e.target.closest('a');
-
-            // Safety Checks: Stop if...
-            if (!link) return; // ...it's not a link
-            if (link.target === '_blank') return; // ...it opens in a new tab
-            if (e.ctrlKey || e.metaKey || e.shiftKey) return; // ...modifier keys are held
+            if (!link) return; 
+            if (link.target === '_blank') return; 
+            if (e.ctrlKey || e.metaKey || e.shiftKey) return; 
             
             const href = link.getAttribute('href');
             if (!href || href.startsWith('javascript:') || href.startsWith('mailto:') || href.startsWith('tel:')) return; 
 
-            // Anchor Logic: Stop if...
-            if (href.startsWith('#')) return; // ...it's a hash on the current page
+            if (href.startsWith('#')) return; 
             
-            // Compare Origins (Strict Internal Only)
             const currentUrl = new URL(window.location.href);
             const targetUrl = new URL(link.href, window.location.href); 
 
-            if (targetUrl.origin !== currentUrl.origin) return; // ...it's an external domain
-            
-            // Same-page anchor check (e.g. page.php#section)
+            if (targetUrl.origin !== currentUrl.origin) return; 
             if (targetUrl.pathname === currentUrl.pathname && targetUrl.hash !== '') return;
 
-            // If we survived the checks, it's a valid internal page load.
-            // TRIGGER VISUALS NOW
             if(loader) {
                 loader.classList.remove('loader-hidden');
-                if(text) text.innerText = "> NAVIGATING..."; // Instant feedback
+                if(text) text.innerText = "> NAVIGATING..."; 
                 startHeartbeat();
+            }
+        });
+
+        // --- 5. BFCache Fix (Browser Back Button) ---
+        // Handles cases where the browser restores the page state from memory
+        window.addEventListener('pageshow', (event) => {
+            if (event.persisted) {
+                if(loader) loader.classList.add('loader-hidden');
             }
         });
 
