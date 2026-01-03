@@ -2,16 +2,16 @@
 // pages/engine-room/history/nine-figure-refusal/liquidation-auction.php
 // The Yard Sale.
 // Context: Selling off the "Ego" to pay the "Unsecured Creditors."
-// Narrative Payoff: Showing the physical dismantling of the corporate culture.
+// UPDATED: WCAG Compliance & Narrative Stepper
 
 $pageTitle = "Asset Disposal: Omni-Global Liquidation - Case 18-11492";
 ?>
 
 <style>
-    /* AUCTION THEME */
+    /* AUCTION THEME - Adaptive */
     .auction-tag {
         font-family: 'Courier New', monospace;
-        background-color: #f8f9fa;
+        background-color: var(--bs-body-bg);
         border: 2px dashed #dc3545;
         color: #dc3545;
         transform: rotate(-2deg);
@@ -40,15 +40,8 @@ $pageTitle = "Asset Disposal: Omni-Global Liquidation - Case 18-11492";
         transition: all 0.2s ease;
     }
     .lot-card:hover {
-        background-color: rgba(255, 255, 255, 0.05);
+        transform: translateX(5px);
         border-left-color: #dc3545;
-    }
-    
-    /* Dark Mode Adjustments */
-    [data-bs-theme="dark"] .auction-tag {
-        background-color: #2c2c2c;
-        border-color: #ff6b6b;
-        color: #ff6b6b;
     }
 </style>
 
@@ -56,13 +49,13 @@ $pageTitle = "Asset Disposal: Omni-Global Liquidation - Case 18-11492";
     
     <div class="row justify-content-center mb-5">
         <div class="col-lg-8 text-center">
-            <span class="badge bg-secondary text-white rounded-pill px-3 py-2 mb-3 text-uppercase letter-spacing-1">
+            <span class="badge bg-secondary-subtle text-secondary-emphasis rounded-pill px-3 py-2 mb-3 text-uppercase letter-spacing-1 border border-secondary-subtle">
                 <i class="fa-duotone fa-gavel me-2"></i>U.S. Bankruptcy Court (Delaware)
             </span>
-            <h1 class="display-4 fw-bold text-uppercase mb-2" style="font-family: 'Impact', sans-serif;">
+            <h1 class="display-4 fw-bold text-body-emphasis text-uppercase mb-2" style="font-family: 'Impact', sans-serif;">
                 Asset Liquidation
             </h1>
-            <p class="lead text-muted font-monospace">
+            <p class="lead text-body-secondary font-monospace">
                 Case No. 18-11492 (OGMCQ) // Disposition of Non-Essential Assets
             </p>
         </div>
@@ -71,14 +64,14 @@ $pageTitle = "Asset Disposal: Omni-Global Liquidation - Case 18-11492";
     <div class="row justify-content-center">
         <div class="col-lg-10">
             
-            <div class="alert alert-dark border-secondary d-flex align-items-center mb-5 shadow-sm">
+            <div class="alert alert-dark bg-body-tertiary border-secondary d-flex align-items-center mb-5 shadow-sm text-body-secondary">
                 <i class="fa-duotone fa-dumpster-fire fs-2 me-4 text-danger"></i>
-                <div class="small text-muted">
+                <div class="small">
                     <strong>Financial Note:</strong> While Aethelgard Holdings acquired the <em>Secured Debt</em> (controlling the copyrights), the <em>Physical Assets</em> (furniture, art, vehicles) were auctioned to satisfy unsecured creditors (e.g., the catering company Frost never paid).
                 </div>
             </div>
 
-            <div class="card bg-dark border-secondary shadow-lg mb-4 lot-card">
+            <div class="card bg-body-tertiary border-secondary shadow-lg mb-4 lot-card">
                 <div class="card-body p-4">
                     <div class="row align-items-center">
                         <div class="col-md-2 text-center">
@@ -86,8 +79,8 @@ $pageTitle = "Asset Disposal: Omni-Global Liquidation - Case 18-11492";
                             <i class="fa-duotone fa-table-picnic fa-3x text-secondary opacity-50"></i>
                         </div>
                         <div class="col-md-7">
-                            <h5 class="fw-bold text-white text-uppercase mb-1">Executive Boardroom Table</h5>
-                            <p class="text-white-50 small mb-2">
+                            <h5 class="fw-bold text-body-emphasis text-uppercase mb-1">Executive Boardroom Table</h5>
+                            <p class="text-body-secondary small mb-2">
                                 <strong>Spec:</strong> 24-Foot Honduran Mahogany. Custom inlay.
                                 <br><strong>Providence:</strong> The surface where the $150M offer was rejected.
                             </p>
@@ -98,13 +91,13 @@ $pageTitle = "Asset Disposal: Omni-Global Liquidation - Case 18-11492";
                         <div class="col-md-3 text-center position-relative">
                             <div class="sold-stamp">SOLD</div>
                             <div class="small font-monospace text-success mt-2">$4,200.00</div>
-                            <div class="tiny text-muted">Buyer: CPI Student Union</div>
+                            <div class="tiny text-body-secondary">Buyer: CPI Student Union</div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="card bg-dark border-secondary shadow-lg mb-4 lot-card">
+            <div class="card bg-body-tertiary border-secondary shadow-lg mb-4 lot-card">
                 <div class="card-body p-4">
                     <div class="row align-items-center">
                         <div class="col-md-2 text-center">
@@ -112,24 +105,24 @@ $pageTitle = "Asset Disposal: Omni-Global Liquidation - Case 18-11492";
                             <i class="fa-duotone fa-chair-office fa-3x text-secondary opacity-50"></i>
                         </div>
                         <div class="col-md-7">
-                            <h5 class="fw-bold text-white text-uppercase mb-1">Herman Miller Aeron (Size C)</h5>
-                            <p class="text-white-50 small mb-2">
+                            <h5 class="fw-bold text-body-emphasis text-uppercase mb-1">Herman Miller Aeron (Size C)</h5>
+                            <p class="text-body-secondary small mb-2">
                                 <strong>Providence:</strong> Office of VP Jameson Frost (Penthouse).
                             </p>
-                            <p class="text-white-50 small mb-0">
+                            <p class="text-body-secondary small mb-0">
                                 Fully adjustable lumbar support. Leather headrest upgrade.
                             </p>
                         </div>
                         <div class="col-md-3 text-center position-relative">
                             <div class="sold-stamp" style="border-color: #dc3545; color: #dc3545; transform: rotate(5deg);">RECYCLED</div>
-                            <div class="small font-monospace text-muted mt-2">Value: $0.00</div>
-                            <div class="tiny text-muted">Reason: Biohazard (Coffee Stain)</div>
+                            <div class="small font-monospace text-body-secondary mt-2">Value: $0.00</div>
+                            <div class="tiny text-body-secondary">Reason: Biohazard (Coffee Stain)</div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="card bg-dark border-secondary shadow-lg mb-4 lot-card">
+            <div class="card bg-body-tertiary border-secondary shadow-lg mb-4 lot-card">
                 <div class="card-body p-4">
                     <div class="row align-items-center">
                         <div class="col-md-2 text-center">
@@ -137,18 +130,18 @@ $pageTitle = "Asset Disposal: Omni-Global Liquidation - Case 18-11492";
                             <i class="fa-duotone fa-image-portrait fa-3x text-secondary opacity-50"></i>
                         </div>
                         <div class="col-md-7">
-                            <h5 class="fw-bold text-white text-uppercase mb-1">Corporate Art Collection (Bulk)</h5>
-                            <p class="text-white-50 small mb-2">
+                            <h5 class="fw-bold text-body-emphasis text-uppercase mb-1">Corporate Art Collection (Bulk)</h5>
+                            <p class="text-body-secondary small mb-2">
                                 <strong>Items:</strong> 12x "Motivational Synergy" Posters (Framed). 1x Oil Painting of Chairman Vane (4ft x 6ft).
                             </p>
-                            <p class="text-white-50 small mb-0">
+                            <p class="text-body-secondary small mb-0">
                                 "Generic abstract shapes meant to inspire productivity."
                             </p>
                         </div>
                         <div class="col-md-3 text-center position-relative">
                             <div class="sold-stamp">DONATED</div>
                             <div class="small font-monospace text-success mt-2">Tax Write-Off</div>
-                            <div class="tiny text-muted">Recipient: Second Chance Community Thrift</div>
+                            <div class="tiny text-body-secondary">Recipient: Second Chance Community Thrift</div>
                         </div>
                     </div>
                 </div>
@@ -161,7 +154,7 @@ $pageTitle = "Asset Disposal: Omni-Global Liquidation - Case 18-11492";
                 <div class="card-body p-4">
                     <div class="row align-items-center">
                         <div class="col-md-2 text-center">
-                            <div class="auction-tag mb-2 text-success border-success">LOT 200</div>
+                            <div class="auction-tag mb-2 text-success border-success bg-black">LOT 200</div>
                             <i class="fa-duotone fa-compact-disc fa-3x text-success opacity-75"></i>
                         </div>
                         <div class="col-md-7">
@@ -183,30 +176,21 @@ $pageTitle = "Asset Disposal: Omni-Global Liquidation - Case 18-11492";
                             </p>
                         </div>
                     </div>
-                    <div class="alert alert-success bg-opacity-10 border-0 mt-3 mb-0 p-2 small font-monospace">
+                    <div class="alert alert-success bg-opacity-10 border-0 mt-3 mb-0 p-2 small font-monospace text-light">
                         <i class="fa-solid fa-check me-2"></i><strong>Outcome:</strong> Assets transferred to the "Engine Room Archives" for immediate repatriation to original artists.
                     </div>
                 </div>
             </div>
 
-        </div>
-    </div>
+            <?php
+                $nav = [
+                    'prev' => ['url' => '/engine-room/history/nine-figure-refusal/zenith-report/omni-global-chapter-11', 'label' => 'Market Alert: Ch. 11'],
+                    'overview' => ['url' => '/engine-room/history/nine-figure-refusal', 'label' => 'Overview'],
+                    'next' => ['url' => '/engine-room/history/nine-figure-refusal/zenith-report/stardust-bus-ride', 'label' => 'The Bus Ride Article']
+                ];
+                include ROOT_PATH . '/includes/components/navigation/narrative-stepper.php';
+            ?>
 
-    <div class="row mt-5 pt-4 border-top border-secondary border-opacity-25 align-items-center">
-        <div class="col-4">
-            <a href="/engine-room/history/nine-figure-refusal/zenith-report/omni-global-chapter-11" class="btn btn-outline-secondary rounded-pill">
-                <i class="fa-solid fa-arrow-left me-2"></i>Previous
-            </a>
-        </div>
-        <div class="col-4 text-center">
-            <a href="/engine-room/history/nine-figure-refusal" class="btn btn-outline-primary rounded-pill">
-                <i class="fa-duotone fa-list-tree me-2"></i>Overview
-            </a>
-        </div>
-        <div class="col-4 text-end">
-            <a href="/engine-room/history/nine-figure-refusal/zenith-report/stardust-bus-ride" class="btn btn-primary rounded-pill shadow-sm">
-                Next: The Bus Ride <i class="fa-solid fa-arrow-right ms-2"></i>
-            </a>
         </div>
     </div>
 

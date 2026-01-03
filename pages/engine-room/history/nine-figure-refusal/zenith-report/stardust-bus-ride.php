@@ -3,7 +3,7 @@
 // The Zenith Report Archives.
 // Contains: "The $350 Million Bus Ride", "The Image That Broke Wall Street", AND "The Landlord's Statement"
 // Context: Investigative reporting on the Omni-Global scandal.
-// UPDATED: Fixed Press Release contrast issues in Dark Mode.
+// UPDATED: Added "Newsprint/Security Cam" CSS filters to the image & Narrative Stepper.
 
 $pageTitle = "The Zenith Report: The Bus Ride & The Leak";
 ?>
@@ -23,8 +23,17 @@ $pageTitle = "The Zenith Report: The Bus Ride & The Leak";
     /* Article 2 Tilt */
     .zenith-paper-2 { transform: rotate(-1deg); }
     
+    /* SECURITY FOOTAGE / NEWSPRINT FILTER */
+    .security-footage-print {
+        filter: grayscale(100%) contrast(150%) brightness(90%) sepia(20%);
+        /* Optional: Add a subtle SVG noise overlay if supported, but high contrast grayscale does the job well */
+        border: 4px solid #000;
+        max-width: 100%;
+        display: block;
+    }
+
     /* Press Release (Formal - No Tilt) */
-    /* FORCE LIGHT MODE STYLING EVEN IN DARK MODE */
+    /* FORCE LIGHT MODE STYLING EVEN IN DARK MODE (Skeuomorphic Paper) */
     .zenith-paper-3 { 
         transform: rotate(0deg); 
         box-shadow: 0 1rem 3rem rgba(0,0,0,0.175) !important;
@@ -101,10 +110,10 @@ $pageTitle = "The Zenith Report: The Bus Ride & The Leak";
             <span class="badge bg-secondary text-white rounded-pill px-3 py-2 mb-3 text-uppercase letter-spacing-1 shadow-glow">
                 <i class="fa-duotone fa-newspaper me-2"></i>Press Archive
             </span>
-            <h1 class="display-4 fw-bold text-white mb-2" style="font-family: 'Impact', sans-serif;">
+            <h1 class="display-4 fw-bold text-body-emphasis mb-2" style="font-family: 'Impact', sans-serif;">
                 The Public Record
             </h1>
-            <p class="lead text-muted font-monospace">
+            <p class="lead text-body-secondary font-monospace">
                 Investigative coverage of the Omni-Global collapse.
             </p>
         </div>
@@ -157,8 +166,8 @@ $pageTitle = "The Zenith Report: The Bus Ride & The Leak";
                                 </p>
 
                                 <blockquote class="p-3 my-4 border-start border-4 border-danger bg-dark blockquote-custom">
-                                    <p class="mb-2 fst-italic">"He saw the bus pass. He saw the wheelchair. He turned to the room and said, 'Slash the offer. They're broke.'"</p>
-                                    <footer class="blockquote-footer mt-1">Anonymous Source, <cite title="Source Title">Omni-Global M&A Team</cite></footer>
+                                    <p class="mb-2 fst-italic text-white">"He saw the bus pass. He saw the wheelchair. He turned to the room and said, 'Slash the offer. They're broke.'"</p>
+                                    <footer class="blockquote-footer mt-1 text-white-50">Anonymous Source, <cite title="Source Title">Omni-Global M&A Team</cite></footer>
                                 </blockquote>
 
                                 <p>
@@ -185,7 +194,7 @@ $pageTitle = "The Zenith Report: The Bus Ride & The Leak";
                             </div>
 
                             <div class="card bg-light border-0 p-3 mb-4">
-                                <h6 class="fw-bold small text-uppercase mb-2">Transit Log</h6>
+                                <h6 class="fw-bold small text-uppercase mb-2 text-dark">Transit Log</h6>
                                 <ul class="list-unstyled small font-monospace text-muted mb-0">
                                     <li class="mb-1"><strong>Route:</strong> Civic-Rapid 720</li>
                                     <li class="mb-1"><strong>Stop:</strong> Ave of Stars</li>
@@ -248,9 +257,9 @@ $pageTitle = "The Zenith Report: The Bus Ride & The Leak";
                                 
                                 <div class="my-4 p-1 border border-dark bg-white shadow-sm">
                                     <img src="https://assets.raggiesoft.com/engine-room-records/images/omni-global/cassidy-extraction.jpg" 
-                                         class="img-fluid" 
-                                         alt="Security footage showing Evan and Tyler carrying Cassidy down the hallway, flanked by Ryan and Holly. Staff members look on in horror.">
-                                    <div class="p-2 small font-monospace text-muted border-top border-secondary-subtle mt-1">
+                                         class="img-fluid security-footage-print" 
+                                         alt="Grainy black and white security footage showing Evan and Tyler carrying Cassidy down the hallway, flanked by Ryan and Holly. Staff members look on in horror.">
+                                    <div class="p-2 small font-monospace text-muted border-top border-secondary-subtle mt-1 text-center bg-light">
                                         <strong>Fig 1.</strong> "Code Carry." The hallway outside Suite 4000. (Source: Pacific Rim Properties)
                                     </div>
                                 </div>
@@ -259,7 +268,7 @@ $pageTitle = "The Zenith Report: The Bus Ride & The Leak";
                                     "This wasn't a negotiation tactic," said a representative for the label. "This was a medical evacuation. The executives at Omni-Global knowingly triggered a severe sensory meltdown in a neurodivergent artist for leverage."
                                 </p>
 
-                                <h5 class="fw-bold mt-4 mb-3">The Source of the Leak</h5>
+                                <h5 class="fw-bold mt-4 mb-3 text-dark">The Source of the Leak</h5>
                                 <p>
                                     Questions immediately arose regarding how an indie record label obtained high-security surveillance footage from a building leased by a media conglomerate. Omni-Global's legal team initially threatened to sue for "corporate espionage."
                                 </p>
@@ -297,7 +306,7 @@ $pageTitle = "The Zenith Report: The Bus Ride & The Leak";
     <div class="row justify-content-center mb-5" id="press-release">
         <div class="col-lg-10">
             <div class="card border-0 shadow-lg zenith-paper-3">
-                <div class="card-body p-0">
+                <div class="card-body p-5">
                     <?php
                     // CONFIGURATION FOR LETTERHEAD
                     $brand = 'pacific-rim'; // Triggers the Landlord styling
@@ -338,22 +347,14 @@ $pageTitle = "The Zenith Report: The Bus Ride & The Leak";
         </div>
     </div>
 
-    <div class="row justify-content-center mt-5 pt-4 border-top border-secondary border-opacity-25 align-items-center">
-        <div class="col-4">
-            <a href="/engine-room/history/nine-figure-refusal/liquidation-auction" class="btn btn-outline-secondary rounded-pill">
-                <i class="fa-solid fa-arrow-left me-2"></i>Previous
-            </a>
-        </div>
-        <div class="col-4 text-center">
-            <a href="/engine-room/history/nine-figure-refusal" class="btn btn-outline-primary rounded-pill">
-                <i class="fa-duotone fa-list-tree me-2"></i>Overview
-            </a>
-        </div>
-        <div class="col-4 text-end">
-            <a href="/engine-room/history/nine-figure-refusal/the-jessica-miller-center" class="btn btn-primary rounded-pill shadow-sm">
-                Next: The Legacy <i class="fa-solid fa-arrow-right ms-2"></i>
-            </a>
-        </div>
-    </div>
+    <?php
+        // Narrative Stepper Component
+        $nav = [
+            'prev' => ['url' => '/engine-room/history/nine-figure-refusal/liquidation-auction', 'label' => 'Liquidation Auction'],
+            'overview' => ['url' => '/engine-room/history/nine-figure-refusal', 'label' => 'Overview'],
+            'next' => ['url' => '/engine-room/history/nine-figure-refusal/the-jessica-miller-center', 'label' => 'The Legacy']
+        ];
+        include ROOT_PATH . '/includes/components/navigation/narrative-stepper.php';
+    ?>
 
 </div>
