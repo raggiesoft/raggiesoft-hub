@@ -1,15 +1,15 @@
 <?php
 // includes/components/headers/header-nine-figure-refusal.php
 // Dedicated Navigation for the "Accidental Empire" Case File
-// UPDATED: Converted "The Case File" to a 2-Column Mega Menu to handle bloat.
+// UPDATED: Added "The Approach" to the dropdown menu logic.
 
 // 1. Determine Active States
 $uri = $_SERVER['REQUEST_URI'] ?? '';
 $isOverview = str_contains($uri, '/nine-figure-refusal');
 
-// Updated Evidence List
+// Updated Evidence List (Added 'the-approach')
 $evidenceFiles = [
-    'target-profile', 'ucc-search-report', 'the-bus-memo', 
+    'the-approach', 'target-profile', 'ucc-search-report', 'the-bus-memo', 
     'forensic-audit', 'the-smoking-gun', 'the-offer-letter', 'the-counter-offer',
     'the-trigger', 'the-autopsy', 'the-extraction',
     'omni-global-chapter-11', 'liquidation-auction', 'stardust-bus-ride'
@@ -59,6 +59,7 @@ $isEpilogue = str_contains($uri, '/frost-interview');
                 <div class="col-lg-6 border-end border-secondary border-opacity-25 p-3">
                     <h6 class="dropdown-header text-uppercase text-muted fw-bold small ps-0"><i class="fa-solid fa-chess-pawn me-2"></i>Ch 1: The Setup</h6>
                     <ul class="list-unstyled mb-4">
+                        <li><a class="dropdown-item rounded" href="/engine-room/history/nine-figure-refusal/the-approach"><i class="fa-duotone fa-plane-arrival me-2 text-info"></i>The Approach</a></li>
                         <li><a class="dropdown-item rounded" href="/engine-room/history/nine-figure-refusal/target-profile"><i class="fa-duotone fa-crosshairs me-2 text-danger"></i>Target Profile</a></li>
                         <li><a class="dropdown-item rounded" href="/engine-room/history/nine-figure-refusal/ucc-search-report"><i class="fa-duotone fa-file-certificate me-2 text-secondary"></i>UCC Search Report</a></li>
                         <li><a class="dropdown-item rounded" href="/engine-room/history/nine-figure-refusal/the-bus-memo"><i class="fa-duotone fa-envelope-open-text me-2 text-warning"></i>The Bus Memo</a></li>

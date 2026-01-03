@@ -1,7 +1,7 @@
 <?php
 // includes/sidebars/sidebar-nine-figure-refusal.php
 // Dedicated navigation for the "Accidental Empire" Saga
-// UPDATED: WCAG Compliance Fixes (Theme-Aware Contrast)
+// UPDATED: Added "The Approach" to Chapter 1
 
 $currentUri = $_SERVER['REQUEST_URI'] ?? '';
 
@@ -18,6 +18,7 @@ $chapters = [
     'ch1' => [
         'title' => 'Ch 1: The Setup',
         'pages' => [
+            '/engine-room/history/nine-figure-refusal/the-approach' => ['icon' => 'fa-solid fa-plane-arrival', 'label' => 'The Approach'],
             '/engine-room/history/nine-figure-refusal/target-profile' => ['icon' => 'fa-solid fa-crosshairs', 'label' => 'Target Profile'],
             '/engine-room/history/nine-figure-refusal/ucc-search-report' => ['icon' => 'fa-solid fa-file-certificate', 'label' => 'UCC Search Report'],
             '/engine-room/history/nine-figure-refusal/the-bus-memo' => ['icon' => 'fa-solid fa-envelope-open-text', 'label' => 'The Bus Memo'],
