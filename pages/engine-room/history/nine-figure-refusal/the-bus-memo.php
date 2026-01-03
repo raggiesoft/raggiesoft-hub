@@ -1,12 +1,12 @@
 <?php
 // pages/engine-room/history/nine-figure-refusal/the-bus-memo.php
 // EVIDENCE ITEM #44-B: The Document That Killed a Corporation
-// UPDATED: Navigation corrected to point back to UCC Search Report.
+// UPDATED: WCAG Compliance & Added Narrative Context (Why the Bus?)
 
 $pageTitle = "The 'Bus Memo' - Evidence Item #44-B";
 ?>
 <style>
-    /* Hand-drawn circle effect using border-radius distortion */
+    /* Hand-drawn circle effect */
     .circled-text {
         position: relative;
         display: inline-block;
@@ -20,41 +20,42 @@ $pageTitle = "The 'Bus Memo' - Evidence Item #44-B";
         width: 110%;
         height: 120%;
         border: 3px solid #dc3545; 
-        border-radius: 50% 60% 40% 70% / 50% 50% 60% 50%; /* Irregular shape */
+        border-radius: 50% 60% 40% 70% / 50% 50% 60% 50%;
         transform: rotate(-2deg);
         pointer-events: none;
         opacity: 0.9;
     }
 
-    /* THE FIX: Hand-Drawn Underline Effect */
+    /* Hand-Drawn Underline Effect */
     .hand-underline {
         position: relative;
         display: inline-block;
-        text-decoration: none !important; /* Remove standard computer underline */
+        text-decoration: none !important;
     }
     .hand-underline::after {
         content: "";
         position: absolute;
         left: 0;
-        bottom: 2px; /* Position it slightly overlapping the text baseline */
+        bottom: 2px;
         width: 100%;
-        height: 3px; /* Marker thickness */
+        height: 3px;
         background-color: #dc3545; 
-        transform: rotate(-1.5deg); /* Slight tilt to look organic */
-        border-radius: 255px 15px 225px 15px / 15px 225px 15px 255px; /* Tapered ends */
+        transform: rotate(-1.5deg);
+        border-radius: 255px 15px 225px 15px / 15px 225px 15px 255px;
         opacity: 0.85;
     }
 
-    /* The Accessible Sticky Note */
+    /* The Sticky Note - Skeuomorphic Elements retain specific colors for realism */
     .sticky-note-container {
         position: absolute;
         top: 20%; 
         right: -30px; 
         width: 240px; 
-        background-color: #ffeb3b; /* Classic Post-It Yellow */
+        background-color: #ffeb3b; /* Keep Yellow */
+        color: #000; /* Force Black Text for AAA Contrast on Yellow */
         padding: 20px; 
         transform: rotate(3deg); 
-        box-shadow: 3px 3px 10px rgba(0,0,0,0.2);
+        box-shadow: var(--bs-box-shadow);
         z-index: 10;
         transition: transform 0.3s ease;
     }
@@ -68,7 +69,6 @@ $pageTitle = "The 'Bus Memo' - Evidence Item #44-B";
         font-family: 'Kalam', cursive; 
         font-size: 1.15rem;
         line-height: 1.3;
-        color: #212529;
     }
     
     @media (max-width: 992px) {
@@ -85,6 +85,7 @@ $pageTitle = "The 'Bus Memo' - Evidence Item #44-B";
         }
     }
 </style>
+
 <div class="container py-5">
     
     <div class="row justify-content-center mb-5">
@@ -92,10 +93,10 @@ $pageTitle = "The 'Bus Memo' - Evidence Item #44-B";
             <span class="badge bg-warning text-dark rounded-pill px-3 py-2 mb-3 text-uppercase letter-spacing-1 border border-warning">
                 <i class="fa-duotone fa-gavel me-2"></i>Plaintiff's Exhibit A
             </span>
-            <h1 class="display-4 fw-bold text-white mb-2" style="font-family: 'Impact', sans-serif;">
+            <h1 class="display-4 fw-bold text-body mb-2" style="font-family: 'Impact', sans-serif;">
                 THE "BUS MEMO"
             </h1>
-            <p class="lead text-muted font-monospace">
+            <p class="lead text-body-secondary font-monospace">
                 The internal email that transformed a business dispute into a Civil Rights violation.
             </p>
         </div>
@@ -103,31 +104,31 @@ $pageTitle = "The 'Bus Memo' - Evidence Item #44-B";
 
     <div class="row justify-content-center mb-5">
         <div class="col-lg-10">
-            <div class="card border-0 shadow-lg position-relative" style="background-color: #f4f4f4; transform: rotate(1deg);">
+            <div class="card border-0 shadow-lg position-relative bg-body-tertiary" style="transform: rotate(1deg);">
                 
-                <div class="position-absolute top-0 end-0 p-4 opacity-75" style="mix-blend-mode: multiply;">
+                <div class="position-absolute top-0 end-0 p-4 opacity-25">
                     <div class="border border-4 border-danger text-danger p-2 fw-bold text-uppercase fs-2" 
                          style="font-family: 'Black Ops One', cursive; transform: rotate(15deg);">
                         Discovery<br>Item 44-B
                     </div>
                 </div>
 
-                <div class="card-body p-5 font-monospace text-dark">
-                    <div class="border-bottom border-dark pb-3 mb-4">
+                <div class="card-body p-5 font-monospace text-body">
+                    <div class="border-bottom border-secondary pb-3 mb-4">
                         <div class="row">
-                            <div class="col-2 fw-bold text-uppercase">From:</div>
+                            <div class="col-2 fw-bold text-uppercase text-body-secondary">From:</div>
                             <div class="col-10">Frost, Jameson (VP Acquisitions)</div>
                         </div>
                         <div class="row">
-                            <div class="col-2 fw-bold text-uppercase">To:</div>
+                            <div class="col-2 fw-bold text-uppercase text-body-secondary">To:</div>
                             <div class="col-10">Thorne, Marcus (General Counsel)</div>
                         </div>
                         <div class="row">
-                            <div class="col-2 fw-bold text-uppercase">Date:</div>
+                            <div class="col-2 fw-bold text-uppercase text-body-secondary">Date:</div>
                             <div class="col-10">September 12, 2018 (09:36 AM PST)</div>
                         </div>
                         <div class="row">
-                            <div class="col-2 fw-bold text-uppercase">Subject:</div>
+                            <div class="col-2 fw-bold text-uppercase text-body-secondary">Subject:</div>
                             <div class="col-10">RE: Revised Valuation - Engine Room Records</div>
                         </div>
                     </div>
@@ -136,7 +137,7 @@ $pageTitle = "The 'Bus Memo' - Evidence Item #44-B";
                         <p>Marcus,</p>
                         <p>Hold the $500M offer sheet. Slash it to $150M. I want the new papers on the table before they get upstairs.</p>
                         
-                        <p class="bg-warning bg-opacity-10 p-3 border-start border-warning border-4 position-relative my-4">
+                        <div class="bg-warning-subtle p-3 border-start border-warning border-4 position-relative my-4 text-body-emphasis">
                             I just watched them get off a city bus. The <span class="circled-text fw-bold text-danger">cripple</span> is in a manual chair and the girl is using it like a walker. 
                             <br><br>
                             And the "security"? Two kids in faded university gym t-shirts. No suits. No handlers. It's pathetic. They are liquidating dignity for bus fare.
@@ -149,7 +150,7 @@ $pageTitle = "The 'Bus Memo' - Evidence Item #44-B";
                                     </marker>
                                 </defs>
                             </svg>
-                        </p>
+                        </div>
 
                         <p>They are desperate. We don't need to pay a premium for a charity case. Cut the number. They'll take whatever crumbs we give them because they need to pay for the ramps and buy some decent clothes.</p>
 
@@ -175,25 +176,39 @@ $pageTitle = "The 'Bus Memo' - Evidence Item #44-B";
     <div class="row justify-content-center">
         <div class="col-lg-10">
             <h3 class="h4 fw-bold text-danger border-bottom border-danger pb-2 mb-4">
-                The Legal Autopsy: Why This Email Cost $600 Million
+                The Legal Autopsy
             </h3>
             
             <div class="row g-4">
-                <div class="col-md-6">
-                    <div class="card bg-dark border-secondary h-100">
+                <div class="col-12">
+                    <div class="card h-100 border-info-subtle bg-info-subtle">
                         <div class="card-body">
-                            <h5 class="text-danger"><i class="fa-solid fa-1 me-2"></i>Predatory Intent</h5>
-                            <p class="text-secondary small">
+                            <h5 class="fw-bold text-info-emphasis"><i class="fa-solid fa-bus me-2"></i>Context: Why the City Bus?</h5>
+                            <p class="card-text text-body-secondary">
+                                Frost saw "poverty." He missed the logistics.
+                            </p>
+                            <p class="card-text small text-body-secondary mb-0">
+                                Ryan O'Connell uses a rigid-frame manual wheelchair. Transferring into a hired sedan requires disassembling the chair (wheels off), transferring the body, and reassembling it upon arrival. <strong class="text-info-emphasis">The LACMTA Metro Rapid</strong> has a deployable ramp. Ryan could roll on and roll off without assistance. It wasn't about money; it was about <strong>autonomy</strong>.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="card h-100 border-secondary shadow-sm">
+                        <div class="card-body">
+                            <h5 class="fw-bold text-danger"><i class="fa-solid fa-1 me-2"></i>Predatory Intent</h5>
+                            <p class="text-body-secondary small mb-0">
                                 In contract law, "hardball" is legal. However, proving that an offer was lowered specifically because a target belonged to a <strong>Protected Class</strong> (disability) moves the case from Contract Law to <strong>Civil Rights Law</strong>.
                             </p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <div class="card bg-dark border-secondary h-100">
+                    <div class="card h-100 border-secondary shadow-sm">
                         <div class="card-body">
-                            <h5 class="text-danger"><i class="fa-solid fa-2 me-2"></i>The "Malice" Multiplier</h5>
-                            <p class="text-secondary small">
+                            <h5 class="fw-bold text-danger"><i class="fa-solid fa-2 me-2"></i>The "Malice" Multiplier</h5>
+                            <p class="text-body-secondary small mb-0">
                                 The phrase "charity case" and the mockery of their attire proved <strong>Malice</strong>. This allowed Holly to seek <strong>Punitive Damages</strong> (designed to punish), which can be 3x to 9x the actual damages.
                             </p>
                         </div>
@@ -201,7 +216,7 @@ $pageTitle = "The 'Bus Memo' - Evidence Item #44-B";
                 </div>
             </div>
 
-            <div class="alert alert-dark border-start border-success border-4 mt-4">
+            <div class="alert alert-dark border-start border-success border-4 mt-4 bg-body-tertiary text-body">
                 <h5 class="alert-heading text-success fw-bold">The Checkmate</h5>
                 <p class="mb-0">
                     When Holly presented this email to the Creditor Committee, the Senior Lenders realized they were defending a hate crime, not a business deal. They voted to remove the Board immediately to stop Holly from showing this document to a jury.
