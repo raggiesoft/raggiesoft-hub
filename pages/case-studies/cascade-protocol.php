@@ -11,13 +11,14 @@ $pageTitle = "Case Study: The Cascade Protocol";
         <i class="fa-duotone fa-triangle-exclamation fa-3x text-danger me-3" aria-hidden="true"></i>
         <div>
             <h1 class="display-5 fw-bold mb-0">The Cascade Protocol</h1>
-            <span class="text-muted text-uppercase small letter-spacing-2">Case Study: 2004-CS-02</span>
+            <span class="text-body-secondary text-uppercase small letter-spacing-2">Case Study: 2004-CS-02</span>
         </div>
     </div>
 
     <div class="fs-5">
-        <div class="card bg-dark text-light border-danger mb-4 shadow-sm">
-            <div class="card-header border-danger bg-danger bg-opacity-10 fw-bold text-uppercase">
+        
+        <div class="card border-danger mb-4 shadow-sm">
+            <div class="card-header border-danger bg-danger bg-opacity-10 fw-bold text-uppercase text-danger">
                 <i class="fa-duotone fa-file-waveform me-2"></i>Incident Report
             </div>
             <div class="card-body">
@@ -69,7 +70,7 @@ $pageTitle = "Case Study: The Cascade Protocol";
             At <strong>16:30 PST</strong>, the subject (Michael) was moved into the primary recovery zone (Room 412). The environment was presumed secure. However, a localized vulnerability—an open window curtain—allowed for the ingestion of <strong>Malicious Data</strong>.
         </p>
         <div class="alert alert-light border-secondary border-start border-4">
-            <p class="mb-0 small fst-italic text-muted">
+            <p class="mb-0 small fst-italic text-body-secondary">
                 "Directly across Stewart Street... a massive silver bus was idling. The logo on the side was unmistakable: Pathfinder... The 'Overwrite Protocol' failed. The 'Good Data' from the aquarium vanished instantly."
             </p>
         </div>
@@ -118,7 +119,7 @@ $pageTitle = "Case Study: The Cascade Protocol";
 
         <hr class="my-5">
 
-        <div class="p-5 mb-4 bg-black text-white rounded-3 position-relative overflow-hidden border border-secondary">
+        <div class="p-5 mb-4 bg-body-tertiary rounded-3 position-relative overflow-hidden border">
             <i class="fa-duotone fa-heart-pulse position-absolute top-0 end-0 text-secondary opacity-10" style="font-size: 15rem; transform: rotate(10deg); margin-top: -3rem; margin-right: -4rem;" aria-hidden="true"></i>
             
             <div class="position-relative z-1">
@@ -138,7 +139,7 @@ $pageTitle = "Case Study: The Cascade Protocol";
                     <li class="mb-2"><i class="fa-solid fa-check text-success me-2"></i> <strong>Hardened Protocols:</strong> Pre-agreed signals (Tap-Tap) that work when the UI (Speech) fails.</li>
                     <li><i class="fa-solid fa-check text-success me-2"></i> <strong>Safe Harbor:</strong> A dedicated environment ("The Local") where the system can idle and recharge.</li>
                 </ul>
-                <p class="mt-4 fst-italic text-white-50">
+                <p class="mt-4 fst-italic text-body-secondary">
                     "I build infrastructure the same way I built this recovery: by anticipating the crash and designing the safety net before it happens."
                 </p>
             </div>
