@@ -1,7 +1,7 @@
 <?php
 // pages/engine-room/history/nine-figure-refusal/target-profile.php
 // The Enemy's Playbook.
-// UPDATED: Added Narrative Stepper & WCAG Contrast Fixes
+// UPDATED: Connected 'Previous' link to 'The Approach'.
 
 $pageTitle = "Confidential Brief: Project GOLDEN GOOSE - Omni-Global";
 ?>
@@ -198,8 +198,9 @@ $pageTitle = "Confidential Brief: Project GOLDEN GOOSE - Omni-Global";
         </div>
 
         <?php
+            // UPDATED NAVIGATION LOGIC
             $nav = [
-                'prev' => null, // Disabled
+                'prev' => ['url' => '/engine-room/history/nine-figure-refusal/the-approach', 'label' => 'The Approach'],
                 'overview' => ['url' => '/engine-room/history/nine-figure-refusal', 'label' => 'Overview'],
                 'next' => ['url' => '/engine-room/history/nine-figure-refusal/ucc-search-report', 'label' => 'UCC Search Report']
             ];

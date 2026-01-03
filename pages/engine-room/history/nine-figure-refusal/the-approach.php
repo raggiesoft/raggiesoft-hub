@@ -3,6 +3,7 @@
 // EVIDENCE ITEM #00: The Arrival
 // Context: The family arrives in LA. The "Vacation" becomes a "Deployment".
 // Timeline: September 13-14, 2018 (Pre-Meeting)
+// UPDATED: WCAG Fixes (Contrast) & Narrative Stepper
 
 $pageTitle = "The Approach Vector - Evidence Item #00";
 ?>
@@ -23,7 +24,8 @@ $pageTitle = "The Approach Vector - Evidence Item #00";
     /* THE TWIN WALL STYLE (For Ryan/Cassidy Moments) */
     .wall-card {
         border-left: 4px solid #d63384; /* Narrative Pink */
-        background: linear-gradient(to right, rgba(0,0,0,0.8), rgba(0,0,0,0.6));
+        background: linear-gradient(to right, #1a1a1a, #000000); /* High Contrast Dark */
+        color: #ffffff;
     }
 
     .timestamp {
@@ -41,13 +43,13 @@ $pageTitle = "The Approach Vector - Evidence Item #00";
     
     <div class="row justify-content-center mb-5">
         <div class="col-lg-8 text-center">
-            <span class="badge bg-secondary text-light rounded-pill px-3 py-2 mb-3 text-uppercase letter-spacing-1 border border-secondary">
+            <span class="badge bg-secondary-subtle text-secondary-emphasis rounded-pill px-3 py-2 mb-3 text-uppercase letter-spacing-1 border border-secondary-subtle">
                 <i class="fa-duotone fa-plane-arrival me-2"></i>Mission Log
             </span>
-            <h1 class="display-4 fw-bold text-white mb-2" style="font-family: 'Impact', sans-serif;">
+            <h1 class="display-4 fw-bold text-body-emphasis mb-2" style="font-family: 'Impact', sans-serif;">
                 THE APPROACH VECTOR
             </h1>
-            <p class="lead text-muted font-monospace">
+            <p class="lead text-body-secondary font-monospace">
                 "We aren't here to negotiate. We're here to survive."
             </p>
         </div>
@@ -57,12 +59,12 @@ $pageTitle = "The Approach Vector - Evidence Item #00";
         <div class="col-lg-10">
 
             <div class="d-flex align-items-center mb-4 mt-2">
-                <span class="display-6 fw-bold text-muted me-3">01</span>
-                <h3 class="text-uppercase mb-0 text-white letter-spacing-2">Arrival in the Valley</h3>
+                <span class="display-6 fw-bold text-body-secondary me-3">01</span>
+                <h3 class="text-uppercase mb-0 text-body-emphasis letter-spacing-2">Arrival in the Valley</h3>
             </div>
 
-            <div class="card border-0 shadow-lg narrative-card mb-5">
-                <div class="card-body p-5">
+            <div class="card border-0 shadow-lg bg-body-tertiary narrative-card mb-5">
+                <div class="card-body p-5 text-body-secondary">
                     
                     <span class="timestamp">Sep 13, 2018 // 08:30 AM PST // Valley Regional Airport</span>
                     <h5 class="text-primary fw-bold text-uppercase mb-4">The Landing</h5>
@@ -115,10 +117,10 @@ $pageTitle = "The Approach Vector - Evidence Item #00";
                         Ryan grabbed the water bottle from the side pouch of his chair without breaking his pushing rhythm. "Way ahead of you."
                     </p>
                     
-                    <div class="alert alert-dark border-start border-4 border-info bg-opacity-10 py-3 my-4">
+                    <div class="alert alert-dark border-start border-4 border-info bg-body-secondary py-3 my-4">
                         <div class="d-flex align-items-center">
                             <i class="fa-duotone fa-wheelchair-move text-info fs-3 me-3"></i>
-                            <div class="small text-muted fst-italic">
+                            <div class="small text-body-emphasis fst-italic">
                                 <strong>Formation Protocol:</strong> Cassidy moved to his right. She didn't walk beside him; she walked with him. Her left hand rested firmly on the push-handle of his wheelchair. She didn't push him—Ryan didn't need pushing—but she used the sturdy, carbon-fiber frame as a rolling walker. It was a symbiotic machine.
                             </div>
                         </div>
@@ -147,37 +149,37 @@ $pageTitle = "The Approach Vector - Evidence Item #00";
                         <h5 class="text-white text-uppercase letter-spacing-2 mb-0">The Interception</h5>
                     </div>
 
-                    <p class="text-white-50">
+                    <p class="text-light">
                         "Mr. Wright? The O'Connell party?"
                     </p>
-                    <p class="text-white-50">
+                    <p class="text-light">
                         A man in a black suit stepped out from behind a concrete pillar. He was holding an mPad. "I'm Marcus," the driver said, flashing a service-industry smile. "Mr. Frost arranged for your ground transport."
                     </p>
-                    <p class="text-white-50">
+                    <p class="text-light">
                         He turned the mPad around to show them the welcome screen. The text on the screen did not say "The Stardust Engine."
                     </p>
                     <p class="text-white fw-bold fs-4 text-center my-4 font-monospace border border-secondary p-3 rounded bg-black">
                         WELCOME MR. & MRS. O'CONNELL
                     </p>
-                    <p class="text-white-50">
+                    <p class="text-light">
                         The air on the curb didn't just drop; it froze. Cassidy flinched. She physically recoiled, her hand jerking off Ryan’s wheelchair handle as if it had burned her.
                     </p>
-                    <p class="text-white-50">
+                    <p class="text-light">
                         "No," Cassidy whispered, her breathing hitching. "No. Not again. I'm not... he's my..."
                     </p>
                     <p class="text-white-50 fst-italic">
                         She looked at Ryan, terror in her eyes. It was 1992 all over again. The photo shoot. The mirror. The clipboard.
                     </p>
-                    <p class="text-white-50">
+                    <p class="text-light">
                         Evan and Tyler Wright stepped forward instantly. They didn't cross their arms this time; they dropped their bags. The thud of the heavy Titan Cases hitting the concrete sounded like a warning shot.
                     </p>
-                    <p class="text-white-50">
+                    <p class="text-light">
                         "Turn that screen off," Tyler growled.
                     </p>
-                    <p class="text-white-50">
+                    <p class="text-light">
                         "I am his sister," Cassidy choked out, her voice trembling with a mix of shame and fury.
                     </p>
-                    <p class="text-white-50">
+                    <p class="text-light">
                         Ryan O'Connell stopped rolling. His expression went from "vacation mode" to "cold dead stare" in a fraction of a second.
                     </p>
                     <p class="text-white fw-bold">
@@ -186,17 +188,22 @@ $pageTitle = "The Approach Vector - Evidence Item #00";
                     
                     <hr class="border-secondary opacity-50 my-4">
 
-                    <p class="text-white-50">
+                    <p class="text-light">
                         Holly O'Connell walked past the twins. She simply plucked the mPad out of the driver's hands. She tapped the screen, deleting the image, and handed the device back.
                     </p>
-                    <p class="text-white-50">
+                    <p class="text-light">
                         "You can tell Mr. Frost that his 'Research Department' just cost him his first strike. And we play three-strike rules."
                     </p>
                 </div>
             </div>
 
+            <div class="d-flex align-items-center mb-4 mt-5">
+                <span class="display-6 fw-bold text-body-secondary me-3">02</span>
+                <h3 class="text-uppercase mb-0 text-body-emphasis letter-spacing-2">The High Ground</h3>
+            </div>
+
             <div class="card border-0 shadow-lg narrative-card mb-5">
-                <div class="card-body p-5">
+                <div class="card-body p-5 text-body-secondary">
                     
                     <span class="timestamp">Sep 13, 2018 // 10:45 AM PST // The Metropolitan Suites</span>
                     <h5 class="text-primary fw-bold text-uppercase mb-4">Base of Operations</h5>
@@ -231,12 +238,12 @@ $pageTitle = "The Approach Vector - Evidence Item #00";
                         "Middle is clear," Ryan said, transferring from his wheelchair to the bed with a practiced lift-and-swing motion. He scooted to the center, dragging his paralyzed legs into position.
                     </p>
                     
-                    <div class="row align-items-center bg-dark rounded p-3 border border-secondary mt-4 mb-4">
+                    <div class="row align-items-center bg-body-secondary rounded p-3 border border-secondary mt-4 mb-4">
                         <div class="col-md-2 text-center">
                             <i class="fa-duotone fa-bed-front text-secondary fs-1 opacity-50"></i>
                         </div>
                         <div class="col-md-10">
-                            <p class="small text-muted font-monospace mb-0">
+                            <p class="small text-body-emphasis font-monospace mb-0">
                                 <strong>Safety Protocol:</strong> Because Ryan had no sensation below T10, he couldn't feel where his legs were. In a hotel bed without rails, a violent spasm could throw him onto the floor. By sleeping in the middle, he had Holly on his right and Cassidy on his left. They were his guardrails.
                             </p>
                         </div>
@@ -252,13 +259,8 @@ $pageTitle = "The Approach Vector - Evidence Item #00";
                 </div>
             </div>
 
-            <div class="d-flex align-items-center mb-4 mt-5">
-                <span class="display-6 fw-bold text-muted me-3">02</span>
-                <h3 class="text-uppercase mb-0 text-white letter-spacing-2">The High Ground</h3>
-            </div>
-
             <div class="card border-0 shadow-lg narrative-card mb-5">
-                <div class="card-body p-5">
+                <div class="card-body p-5 text-body-secondary">
                     
                     <span class="timestamp">Sep 14, 2018 // 09:00 AM PST // 2000 Avenue of the Stars</span>
                     <h5 class="text-danger fw-bold text-uppercase mb-4">The Armory</h5>
@@ -346,22 +348,16 @@ $pageTitle = "The Approach Vector - Evidence Item #00";
                 </div>
             </div>
 
-        </div>
-    </div>
+            <?php
+                // NARRATIVE STEPPER
+                $nav = [
+                    'prev' => ['url' => '/engine-room/history/nine-figure-refusal', 'label' => 'Overview'],
+                    'overview' => ['url' => '/engine-room/history/nine-figure-refusal', 'label' => 'History Hub'],
+                    'next' => ['url' => '/engine-room/history/nine-figure-refusal/target-profile', 'label' => 'Target Profile']
+                ];
+                include ROOT_PATH . '/includes/components/navigation/narrative-stepper.php';
+            ?>
 
-    <div class="row mt-5 pt-4 border-top border-secondary border-opacity-25 align-items-center">
-        <div class="col-4">
-            <a href="/engine-room/history/nine-figure-refusal" class="btn btn-outline-secondary rounded-pill">
-                <i class="fa-solid fa-arrow-left me-2"></i>History Overview
-            </a>
-        </div>
-        <div class="col-4 text-center">
-            <small class="text-muted text-uppercase letter-spacing-2">Evidence Item #00</small>
-        </div>
-        <div class="col-4 text-end">
-            <a href="/engine-room/history/nine-figure-refusal/the-trigger" class="btn btn-primary rounded-pill shadow-sm">
-                Next: The Trigger <i class="fa-solid fa-arrow-right ms-2"></i>
-            </a>
         </div>
     </div>
 

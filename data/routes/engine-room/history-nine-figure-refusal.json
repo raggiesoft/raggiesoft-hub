@@ -18,6 +18,10 @@
     "title": "The $150M Refusal - Overview",
     "ogDescription": "How Engine Room Records accidentally acquired a Fortune 500 company."
   },
+  "/engine-room/history/nine-figure-refusal/the-approach": {
+    "title": "The Approach",
+    "ogDescription": "Holly and her team's strategy for the acquisition attempt."
+  },
   "/engine-room/history/nine-figure-refusal/target-profile": {
     "title": "Target Profile: Engine Room Records",
     "ogDescription": "The Omni Global dossier on the small label that wouldn't sell."
@@ -73,11 +77,11 @@
   "/engine-room/history/nine-figure-refusal/the-jessica-miller-center": {
     "title": "The Jessica Miller Center",
     "ogDescription": "How the acquisition fallout led to the founding of the Jessica Miller Center."
-  },  
-  "/engine-room/history/nine-figure-refusal/the-approach": {
-    "title": "The Approach",
-    "ogDescription": "Holly and her team's strategy for the acquisition attempt."
   },
+  "/engine-room/history/nine-figure-refusal/the-non-profit-model": {
+    "title": "The Non-Profit Model",
+    "ogDescription": "How Engine Room Records transitioned to a non-profit organization."
+  }, 
   "/engine-room/history/nine-figure-refusal/frost-interview": {
     "title": "The Interview with Frost",
     "ogDescription": "The interview with the former VP of Acquisitions of Omni Global."

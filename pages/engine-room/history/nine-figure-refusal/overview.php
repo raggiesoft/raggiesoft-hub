@@ -2,7 +2,7 @@
 // pages/engine-room/history/overview.php
 // Corporate History Index
 // Description: The chronological index of major legal and corporate events.
-// UPDATED: WCAG Compliance & Added Narrative Stepper
+// UPDATED: Added "The Approach" Chapter & Adjusted Navigation
 
 $pageTitle = "Corporate History - Engine Room Records";
 ?>
@@ -95,6 +95,44 @@ $pageTitle = "Corporate History - Engine Room Records";
             </div>
 
             <div class="card bg-body-tertiary border-secondary mb-4 shadow-lg position-relative overflow-hidden">
+                <div class="position-absolute top-0 bottom-0 start-0 bg-info" style="width: 4px;"></div>
+
+                <div class="row g-0">
+                    <div class="col-md-5 position-relative">
+                        <div class="h-100 bg-black d-flex align-items-center justify-content-center text-info bg-opacity-10">
+                            <i class="fa-duotone fa-plane-arrival fa-4x opacity-50"></i>
+                        </div>
+                         <div class="position-absolute bottom-0 start-0 w-100 p-3 bg-gradient-to-t-black">
+                            <span class="badge bg-info text-dark text-uppercase shadow-sm">
+                                <i class="fa-solid fa-map-location-dot me-2"></i>The Arrival
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col-md-7">
+                        <div class="card-body p-4 p-md-5">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <h3 class="h4 fw-bold text-body-emphasis mb-0">The Approach Vector</h3>
+                                <span class="font-monospace text-info fw-bold">Sep 13, 2018</span>
+                            </div>
+                            <h6 class="text-uppercase text-body-secondary small letter-spacing-1 mb-3">
+                                Deployment to Los Angeles
+                            </h6>
+                            
+                            <p class="card-text text-body-secondary mb-4">
+                                The family lands in LAX. The discovery of the rental car "insult" and the secret visit to the Landlord's office before the meeting.
+                            </p>
+
+                            <div class="d-grid gap-2 d-md-block">
+                                <a href="/engine-room/history/nine-figure-refusal/the-approach" class="btn btn-outline-info rounded-pill px-4">
+                                    <i class="fa-duotone fa-book-open me-2"></i>Read Chapter 1
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card bg-body-tertiary border-secondary mb-4 shadow-lg position-relative overflow-hidden">
                 <div class="position-absolute top-0 bottom-0 start-0 bg-success" style="width: 4px;"></div>
 
                 <div class="row g-0">
@@ -113,7 +151,7 @@ $pageTitle = "Corporate History - Engine Room Records";
                         <div class="card-body p-4 p-md-5">
                             <div class="d-flex justify-content-between align-items-center mb-2">
                                 <h3 class="h4 fw-bold text-body-emphasis mb-0">The $150M Refusal</h3>
-                                <span class="font-monospace text-success fw-bold">2018</span>
+                                <span class="font-monospace text-success fw-bold">Sep 14, 2018</span>
                             </div>
                             <h6 class="text-uppercase text-body-secondary small letter-spacing-1 mb-3">
                                 Omni-Global Hostile Takeover Attempt
@@ -127,9 +165,6 @@ $pageTitle = "Corporate History - Engine Room Records";
                                 <a href="/engine-room/history/nine-figure-refusal" class="btn btn-outline-primary rounded-pill px-4">
                                     <i class="fa-duotone fa-file-contract me-2"></i>Access Archive
                                 </a>
-                                <a href="/engine-room/artists/stardust-engine/lore/book-1/chapter-01" class="btn btn-link text-secondary text-decoration-none small">
-                                    <i class="fa-duotone fa-book-open me-1"></i>Read Chapter 1
-                                </a>
                             </div>
                         </div>
                     </div>
@@ -137,10 +172,11 @@ $pageTitle = "Corporate History - Engine Room Records";
             </div>
 
             <?php
+                // UPDATED NAVIGATION
                 $nav = [
                     'prev' => null, // Disabled (Top of the List)
                     'overview' => ['url' => '/engine-room', 'label' => 'Engine Room Hub'],
-                    'next' => ['url' => '/engine-room/history/nine-figure-refusal/target-profile', 'label' => 'Target Profile']
+                    'next' => ['url' => '/engine-room/history/nine-figure-refusal/the-approach', 'label' => 'Start: The Approach']
                 ];
                 include ROOT_PATH . '/includes/components/navigation/narrative-stepper.php';
             ?>
