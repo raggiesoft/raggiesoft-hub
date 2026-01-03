@@ -14,7 +14,7 @@ $activePage = 'overview';
             <span class="badge bg-danger text-white rounded-pill px-3 py-2 mb-3 text-uppercase letter-spacing-1 shadow-glow">
                 <i class="fa-duotone fa-building-columns me-2"></i>Case File: OGM-2018 (Closed)
             </span>
-            <h1 class="display-3 fw-bold text-white mb-2 text-uppercase" style="font-family: 'Impact', sans-serif;">
+            <h1 class="display-3 fw-bold text-body mb-2 text-uppercase" style="font-family: 'Impact', sans-serif;">
                 The "Accidental" Empire
             </h1>
             <p class="lead text-muted font-monospace mx-auto" style="max-width: 800px;">
