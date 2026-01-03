@@ -2,25 +2,25 @@
 // pages/engine-room/history/nine-figure-refusal/ucc-search-report.php
 // EVIDENCE ITEM #12-C: The "Impossible" UCC Search
 // Context: Proof of zero debt.
-// UPDATED: Removed State Seal image. Updated Navigation flow.
+// UPDATED: WCAG Compliance & Dark Mode Support
 
 $pageTitle = "UCC Search Report: Engine Room Records - Evidence #12-C";
 ?>
 
 <style>
-    /* STATE DOCUMENT THEME - TEXT BASED ONLY */
+    /* STATE DOCUMENT THEME - ADAPTIVE */
     .state-doc {
         font-family: 'Courier New', monospace;
-        background-color: #fff;
-        color: #000;
-        border: 4px double #444; /* Heavy double border usually looks "official" */
-        box-shadow: 0 0 15px rgba(0,0,0,0.1);
+        background-color: var(--bs-body-tertiary); /* Adaptive Paper */
+        color: var(--bs-body-color);
+        border: 4px double var(--bs-border-color); /* Official "Double Border" look, adapted */
+        box-shadow: var(--bs-box-shadow);
         position: relative;
         overflow: hidden;
     }
     .state-header {
         text-align: center;
-        border-bottom: 2px solid #000;
+        border-bottom: 2px solid var(--bs-border-color);
         margin-bottom: 2rem;
         padding-bottom: 1rem;
     }
@@ -30,104 +30,94 @@ $pageTitle = "UCC Search Report: Engine Room Records - Evidence #12-C";
         left: 50%;
         transform: translate(-50%, -50%) rotate(-45deg);
         font-size: 8rem;
-        color: rgba(0,0,0,0.04);
+        color: var(--bs-secondary);
+        opacity: 0.05; /* Subtle in both modes */
         font-weight: bold;
         text-transform: uppercase;
         pointer-events: none;
         white-space: nowrap;
-        font-family: sans-serif;
+        z-index: 0;
     }
-    .search-row {
-        border-bottom: 1px dotted #999;
-        padding: 5px 0;
+    
+    /* Ensure text sits above watermark */
+    .doc-content {
+        position: relative;
+        z-index: 1;
     }
 </style>
 
 <div class="container py-5">
     
-    <div class="row justify-content-center mb-5">
-        <div class="col-lg-8 text-center">
-            <span class="badge bg-secondary text-white rounded-pill px-3 py-2 mb-3 text-uppercase letter-spacing-1 shadow-glow">
-                <i class="fa-duotone fa-file-certificate me-2"></i>Due Diligence Item #12-C
-            </span>
-            <h1 class="display-4 fw-bold text-white mb-2" style="font-family: 'Impact', sans-serif;">
-                THE "CLEAN" SHEET
-            </h1>
-            <p class="lead text-muted font-monospace">
-                The document that broke the algorithm. A 30-year-old media company with absolutely zero debt.
-            </p>
-        </div>
-    </div>
-
-    <div class="row justify-content-center mb-5">
+    <div class="row justify-content-center">
         <div class="col-lg-10">
             
             <div class="state-doc p-5">
+                <div class="watermark-text">NO RECORDS FOUND</div>
                 
-                <div class="watermark-text">OFFICIAL RECORD</div>
-
-                <div class="state-header">
-                    <h5 class="fw-bold text-uppercase mb-1">Commonwealth of Virginia</h5>
-                    <h4 class="fw-bold text-uppercase">State Corporation Commission</h4>
-                    <p class="small mb-0">Office of the Clerk | Uniform Commercial Code Division</p>
-                </div>
-
-                <div class="row mb-4 small">
-                    <div class="col-6">
-                        <strong>Search ID:</strong> 2018-09-01-ERR-REQ<br>
-                        <strong>Date:</strong> September 1, 2018<br>
-                        <strong>Time:</strong> 08:42:15 EST
+                <div class="doc-content">
+                    <div class="state-header">
+                        <h2 class="h4 fw-bold text-uppercase mb-1">State Corporation Commission</h2>
+                        <p class="small text-uppercase letter-spacing-2 mb-0">Uniform Commercial Code (UCC) Search Division</p>
                     </div>
-                    <div class="col-6 text-end">
-                        <strong>Requestor:</strong> Omni-Global Media Corp.<br>
-                        <strong>Ref:</strong> M&A_DUE_DILIGENCE
-                    </div>
-                </div>
 
-                <div class="bg-light border p-3 mb-4">
-                    <p class="mb-1"><strong>Debtor Name Search:</strong></p>
-                    <h5 class="fw-bold mb-0">ENGINE ROOM RECORDS, LLC</h5>
-                </div>
-
-                <table class="table table-bordered border-dark small text-center mb-4">
-                    <thead class="bg-light">
-                        <tr>
-                            <th>Filing No.</th>
-                            <th>Date</th>
-                            <th>Lapse Date</th>
-                            <th>Secured Party</th>
-                            <th>Collateral</th>
-                            <th>Status</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr class="align-middle" style="height: 100px;">
-                            <td colspan="6" class="text-muted fst-italic py-4">
-                                *** NO ACTIVE LIENS FOUND ***<br>
-                                *** NO FINANCING STATEMENTS ON FILE ***
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-
-                <div class="mt-5 pt-4 border-top border-dark">
-                    <div class="d-flex align-items-center">
-                        <div class="display-1 text-success me-4 opacity-50">
-                            <i class="fa-solid fa-stamp"></i>
+                    <div class="row mb-4">
+                        <div class="col-6">
+                            <p class="mb-1 small text-uppercase fw-bold text-body-secondary">Search Reference:</p>
+                            <p class="font-monospace">REQ-2018-09-12-0044</p>
                         </div>
-                        <div>
-                            <p class="small mb-1">I certify that the foregoing is a true and complete search of the records of the State Corporation Commission as of the date and time shown.</p>
-                            <p class="fw-bold mb-0 font-serif">Joel H. Peck, Clerk</p>
-                            <p class="small text-muted">State Corporation Commission</p>
+                        <div class="col-6 text-end">
+                            <p class="mb-1 small text-uppercase fw-bold text-body-secondary">Date Processed:</p>
+                            <p class="font-monospace">September 12, 2018</p>
                         </div>
                     </div>
+
+                    <div class="border p-3 mb-4 bg-body border-secondary-subtle">
+                        <p class="mb-1 small text-uppercase fw-bold text-body-secondary">Entity Name:</p>
+                        <p class="fw-bold fs-5 mb-0">ENGINE ROOM RECORDS, LLC</p>
+                        <p class="small font-monospace mb-0">ID: S554920-9</p>
+                    </div>
+
+                    <h5 class="fw-bold border-bottom border-secondary pb-2 mb-3">Search Results: Debtor Index</h5>
+                    
+                    <div class="table-responsive">
+                        <table class="table table-sm table-borderless font-monospace small mb-0" style="color: inherit;">
+                            <thead class="border-bottom border-secondary">
+                                <tr>
+                                    <th scope="col" class="text-uppercase">Filing Type</th>
+                                    <th scope="col" class="text-uppercase">Filing Number</th>
+                                    <th scope="col" class="text-uppercase">Date</th>
+                                    <th scope="col" class="text-uppercase">Secured Party</th>
+                                    <th scope="col" class="text-uppercase">Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td colspan="5" class="text-center py-4 fst-italic text-body-secondary">
+                                        *** NO RECORDS FOUND ***<br>
+                                        The search of the records of the Commission reflects no active UCC financing statements.<br>
+                                        This entity has zero registered secured debt.
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="mt-5 pt-4 border-top border-secondary text-center small text-body-secondary">
+                        <p class="mb-0">CERTIFIED COPY - COMMONWEALTH OF VIRGINIA</p>
+                        <p class="font-monospace">End of Report</p>
+                    </div>
                 </div>
 
-                <div class="position-absolute d-none d-md-block shadow-lg p-3 bg-warning text-dark font-monospace" 
-                     style="top: 150px; right: -20px; width: 220px; transform: rotate(2deg); font-family: 'Kalam', cursive;">
-                    <strong class="text-danger text-uppercase border-bottom border-dark pb-1 mb-2 d-block">Analyst Note:</strong>
-                    "This is weird. No bank loans? No equipment leases? No tour bus financing?<br><br>
-                    <strong>Conclusion:</strong> They are either a shell company with no assets, OR they pay cash for everything. <br>(Frost says assume shell company)."
+                <div class="position-absolute bg-body shadow p-3 border border-danger border-2" 
+                     style="top: 150px; right: -20px; width: 220px; transform: rotate(2deg); font-family: 'Kalam', cursive; z-index: 2;">
+                    <strong class="text-danger text-uppercase border-bottom border-danger-subtle pb-1 mb-2 d-block">Analyst Note:</strong>
+                    <p class="small mb-2 text-body-emphasis">
+                        "This is weird. No bank loans? No equipment leases? No tour bus financing?
+                    </p>
+                    <p class="small mb-0 text-body-emphasis">
+                        <strong>Conclusion:</strong> They are either a shell company with no assets, OR they pay cash for everything. <br>
+                        <span class="text-body-secondary fst-italic">(Frost says assume shell company)."</span>
+                    </p>
                 </div>
 
             </div>
@@ -147,8 +137,8 @@ $pageTitle = "UCC Search Report: Engine Room Records - Evidence #12-C";
             </a>
         </div>
         <div class="col-4 text-end">
-            <a href="/engine-room/history/nine-figure-refusal/the-bus-memo" class="btn btn-primary rounded-pill shadow-sm">
-                Next: The Bus Memo <i class="fa-solid fa-arrow-right ms-2"></i>
+            <a href="/engine-room/history/nine-figure-refusal/the-bus-memo" class="btn btn-outline-secondary rounded-pill">
+                Next Evidence<i class="fa-solid fa-arrow-right ms-2"></i>
             </a>
         </div>
     </div>
