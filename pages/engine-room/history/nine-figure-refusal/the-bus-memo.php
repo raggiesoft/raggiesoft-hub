@@ -188,7 +188,7 @@ $pageTitle = "The 'Bus Memo' - Evidence Item #44-B";
                                 Frost saw "poverty." He missed the logistics.
                             </p>
                             <p class="card-text small text-body-secondary mb-0">
-                                Ryan O'Connell uses a rigid-frame manual wheelchair. Transferring into a hired sedan requires disassembling the chair (wheels off), transferring the body, and reassembling it upon arrival. <strong class="text-info-emphasis">City buses</strong> have a deployable ramp. Ryan could roll on and roll off without assistance. It wasn't about money; it was about <strong>autonomy</strong>.
+                                Ryan O'Connell uses a rigid-frame manual wheelchair. Transferring into a hired sedan requires disassembling the chair (wheels off), transferring the body, and reassembling it upon arrival. <strong class="text-info-emphasis">City buses have a deployable ramp.</strong> Ryan could roll on and roll off without assistance. It wasn't about money; it was about <strong>autonomy</strong>.
                             </p>
                         </div>
                     </div>
