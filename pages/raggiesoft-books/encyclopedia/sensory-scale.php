@@ -176,8 +176,8 @@ $pageTitle = "System Reference: The Sensory Scale";
                         <i class="fa-duotone fa-biohazard fa-10x text-danger"></i>
                     </div>
 
-                    <div class="row align-items-center position-relative" style="z-index: 2;">
-                        <div class="col-md-8">
+                    <div class="row position-relative" style="z-index: 2;">
+                        <div class="col-md-7 mb-4 mb-md-0 border-end border-secondary border-opacity-25">
                             <p class="fs-5 mb-4 text-white">
                                 <strong>Internal State:</strong> Total System Crash. Time ceases to exist. The body feels like it is vibrating apart. Subject is trapped in a loop of sensory agony.
                             </p>
@@ -192,20 +192,40 @@ $pageTitle = "System Reference: The Sensory Scale";
                                     <i class="fa-solid fa-hand-holding-medical text-success mt-1 me-3 fs-5"></i>
                                     <div class="text-white-50">
                                         <strong class="text-white">Protocol: "Deep Pressure / Extraction."</strong><br>
-                                        Immediate grounding via weighted pressure.
+                                        Immediate grounding via weighted pressure. Do not attempt to de-escalate verbally.
                                     </div>
                                 </li>
                             </ul>
                         </div>
-                        <div class="col-md-4 border-start border-secondary ps-4 d-none d-md-block">
-                            <div class="p-3 bg-dark border border-secondary rounded">
-                                <small class="text-danger text-uppercase fw-bold d-block mb-2">Historical Record:</small>
-                                <p class="small text-white fst-italic mb-2">
-                                    <strong>Incident:</strong> Omni-Global Pitch (2018)<br>
-                                    <strong>Subject:</strong> Cassidy O'Connell<br>
-                                    <strong>Trigger:</strong> Threat to Master Tapes<br>
-                                    <strong>Severity:</strong> <span class="text-uppercase">Maximum</span>
-                                </p>
+
+                        <div class="col-md-5 ps-md-4">
+                            <div class="p-3 bg-dark border border-secondary rounded h-100">
+                                <small class="text-danger text-uppercase fw-bold d-block mb-3 border-bottom border-secondary pb-2">Known Recovery Logs:</small>
+                                
+                                <div class="mb-3">
+                                    <div class="d-flex align-items-center mb-1">
+                                        <i class="fa-duotone fa-person-carry-box text-warning me-2"></i>
+                                        <strong class="text-white small text-uppercase">Case A: The Extraction</strong>
+                                    </div>
+                                    <p class="small text-white-50 fst-italic mb-0">
+                                        <strong>Subject:</strong> Cassidy O'Connell.<br>
+                                        <strong>Context:</strong> Hostile Environment (Conference Room).<br>
+                                        <strong>Action:</strong> Physically carried out by Tyler & Evan Wright to a secure location.
+                                    </p>
+                                </div>
+
+                                <div>
+                                    <div class="d-flex align-items-center mb-1">
+                                        <i class="fa-duotone fa-anchor text-info me-2"></i>
+                                        <strong class="text-white small text-uppercase">Case B: Deep Pressure</strong>
+                                    </div>
+                                    <p class="small text-white-50 fst-italic mb-0">
+                                        <strong>Subject:</strong> Michael Ragsdale.<br>
+                                        <strong>Context:</strong> Safe Harbor (Hotel Room).<br>
+                                        <strong>Action:</strong> Paige Ragsdale lying stomach-to-stomach on subject to counteract active resistance until regulation is achieved.
+                                    </p>
+                                </div>
+
                             </div>
                         </div>
                     </div>
