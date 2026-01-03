@@ -2,7 +2,7 @@
 // pages/engine-room/history/nine-figure-refusal/the-smoking-gun.php
 // EVIDENCE ITEM #00-C: The Letter (The "Smoking Gun")
 // Context: The moment Jameson Frost tried to save $0.50 and lost $600 Million.
-// UPDATED: Moved sticky note to side margin for readability.
+// UPDATED: Moved sticky note to bottom-right to clear text visibility.
 
 $pageTitle = "Evidence #00-C: The Smoking Gun - Engine Room History";
 ?>
@@ -46,15 +46,20 @@ $pageTitle = "Evidence #00-C: The Smoking Gun - Engine Room History";
         margin-bottom: 30px;
     }
 
-    /* Holly's Note - Responsive Positioning */
+    /* Holly's Note - Bottom Right Positioning */
     .holly-note {
         position: absolute;
-        top: 180px; 
-        right: -60px; 
+        bottom: 40px;      /* Align near the bottom signature */
+        right: -60px;      /* Hang off the right edge */
         width: 280px; 
+        background-color: #ffeb3b; /* Classic Yellow */
+        color: #000;
+        padding: 1.25rem;
+        box-shadow: 5px 5px 15px rgba(0,0,0,0.2);
         transform: rotate(-2deg);
         z-index: 10;
         transition: transform 0.3s ease;
+        font-family: 'Kalam', cursive;
     }
 
     .holly-note:hover {
@@ -66,11 +71,11 @@ $pageTitle = "Evidence #00-C: The Smoking Gun - Engine Room History";
     @media (max-width: 992px) {
         .holly-note {
             position: relative;
-            top: 0;
-            right: 0;
+            bottom: auto;
+            right: auto;
             left: 0;
             width: 100%;
-            margin-top: 30px;
+            margin-top: 40px;
             transform: rotate(0deg);
         }
     }
@@ -158,8 +163,8 @@ $pageTitle = "Evidence #00-C: The Smoking Gun - Engine Room History";
                     </div>
                 </div>
 
-                <div class="holly-note bg-warning p-3 shadow-lg" style="font-family: 'Kalam', cursive; color: #000;">
-                    <i class="fa-solid fa-paperclip position-absolute top-0 start-50 translate-middle-y text-muted"></i>
+                <div class="holly-note">
+                    <i class="fa-solid fa-paperclip position-absolute top-0 start-50 translate-middle-y text-muted opacity-50"></i>
                     <p class="mb-2 fw-bold small border-bottom border-dark pb-1">Holly's Notes:</p>
                     <ul class="list-unstyled small mb-0 fw-bold" style="line-height: 1.4;">
                         <li class="mb-2">1. Addressed to <u>Tyler</u>? (Sexist. He assumes the man runs it.)</li>
