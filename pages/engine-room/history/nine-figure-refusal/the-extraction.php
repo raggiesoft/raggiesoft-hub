@@ -2,7 +2,7 @@
 // pages/engine-room/history/nine-figure-refusal/the-extraction.php
 // EVIDENCE ITEM #03: The Departure
 // Context: The family executes "Code Carry" and leaves the building.
-// UPDATED: Corrected Geography (Service Right / Bullpen Straight Ahead).
+// UPDATED: Added narrative context regarding the employees' unawareness of the impending payroll failure.
 
 $pageTitle = "The Extraction - Evidence Item #03";
 ?>
@@ -121,13 +121,20 @@ $pageTitle = "The Extraction - Evidence Item #03";
                             Holly paused in the vestibule. To her <strong>right</strong> was a nondescript beige door marked <strong>"SERVICE ONLY."</strong> Her Tier 1 Landlord Badge would have unlocked it instantly, granting them access to the private Service Elevator. They could have exited the building unseen via the loading dock.
                         </p>
                         <p class="mb-0 small fw-bold fst-italic">
-                            Holly didn't look right. She looked <strong>straight ahead</strong>—directly into the crowded, open-plan "Bullpen" where fifty junior analysts were working in silent terror. She chose the audience.
+                            Holly didn't look right. She looked <strong>straight ahead</strong>—directly into the crowded, open-plan "Bullpen." She chose the audience.
                         </p>
                     </div>
 
                     <p>
                         They walked straight down the center aisle of the plush carpet. The Bullpen went silent. Dozens of analysts, assistants, and junior VPs stood up in their low-walled cubicles, staring in horror at the sobbing woman being carried by her family.
                     </p>
+                    
+                    <div class="p-3 bg-dark bg-opacity-10 border border-secondary border-opacity-25 rounded mb-4">
+                        <p class="small mb-0 fst-italic text-body-emphasis">
+                            <strong>Note:</strong> Most of these employees were living paycheck to paycheck. They stared at Cassidy, thinking they were witnessing <em>her</em> breakdown. They didn't realize they were looking at the Landlord who had just served an eviction notice. They didn't know that Omni-Global had missed its last three rent payments, or that payroll wasn't going to clear on Friday.
+                        </p>
+                    </div>
+
                     <p>
                         Holly didn't shield Cassidy. She didn't ask them to look away. She walked with her head high, forcing every employee at Omni-Global to witness the human cost of their business model.
                     </p>
