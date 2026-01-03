@@ -3,7 +3,7 @@
 // EPILOGUE: The "Cultural Fit" Assessment
 // Context: February 14, 2019. The "Eye of the Storm."
 // Location: Floor 38 (The New Lobby Level).
-// UPDATED: Narrative tweak to badge memory timeline & New wide-angle image.
+// UPDATED: Final Polish (WCAG, Visitor Protocol, Wide-Angle Image).
 
 $pageTitle = "The Interview - Epilogue";
 ?>
@@ -230,7 +230,7 @@ $pageTitle = "The Interview - Epilogue";
                     </p>
                     
                     <p>
-                        He froze. The memory hit him like a physical blow. <em>Holly O'Connell standing in his office doorway **as if it were yesterday**. Her hand outstretched. The quiet, terrifying authority in her voice when she said, "The badge, Jameson. And the key to the executive washroom. Now."</em>
+                        He froze. The memory hit him like a physical blow. <em>Holly O'Connell standing in his office doorway. Her hand outstretched. The quiet, terrifying authority in her voice when she said, "The badge, Jameson. And the key to the executive washroom. Now."</em>
                     </p>
 
                     <p>
