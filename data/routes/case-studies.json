@@ -1,0 +1,31 @@
+{
+  "common": {
+    "site": "case-studies",
+    "showSidebar": true,
+    "sidebar": "case-studies/sidebar-case-studies",
+    "siteName": "RaggieSoft Operational Archives",
+    "headerMenu": "case-studies/header-case-studies",
+    "footer": "case-studies/footer-case-studies",
+    
+    "navbarBrandLogo": "https://assets.raggiesoft.com/raggiesoft-corporate/images/logo/raggiesoft-logo.png",
+    "navbarBrandText": "RaggieSoft <span class=\"d-none d-md-inline\">Archives</span>",
+    "navbarBrandLink": "/case-studies",
+    "navbarBrandAlt": "RaggieSoft Case Studies",
+    "navbarBrandClass": "rounded-0 navbar-brand-corporate-img"
+  },
+
+  "/case-studies": {
+    "title": "Case Studies: Operational Overview",
+    "ogDescription": "A repository of incident reports, logistical audits, and systems architecture analyses detailing Personified DevOps."
+  },
+
+  "/case-studies/cascade-protocol": {
+    "title": "Case Study: The Cascade Protocol",
+    "ogDescription": "A forensic breakdown of a Level 5 Sensory Meltdown and the manual override protocols used to stabilize the system."
+  },
+
+  "/case-studies/shenandoah-valley": {
+    "title": "Case Study: The Shenandoah Valley Gauntlet",
+    "ogDescription": "An analysis of adaptive routing, legacy code constraints, and 'Graceful Degradation' in real-world logistics."
+  }
+}
