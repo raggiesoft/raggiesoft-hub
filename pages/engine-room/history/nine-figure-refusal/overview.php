@@ -2,6 +2,7 @@
 // pages/engine-room/history/nine-figure-refusal/overview.php
 // The Index Page for the "Nine Figure Refusal" Arc.
 // Acts as the landing page/table of contents for this specific story.
+// UPDATED: Added Chapters 4, 5, and Epilogue based on route list.
 
 $pageTitle = "Case File: OGM-2018 (The $150M Refusal)";
 ?>
@@ -83,8 +84,8 @@ $pageTitle = "Case File: OGM-2018 (The $150M Refusal)";
                             <i class="fa-duotone fa-magnifying-glass-dollar fa-2x text-primary"></i>
                         </div>
                         <div>
-                            <h6 class="mb-1 fw-bold text-body-emphasis">Holly's Homework</h6>
-                            <p class="mb-0 small text-body-secondary">The forensic audit that exposed Omni-Global's insolvency.</p>
+                            <h6 class="mb-1 fw-bold text-body-emphasis">The Forensic Audit</h6>
+                            <p class="mb-0 small text-body-secondary">Tracing the shell companies behind the acquisition attempt.</p>
                         </div>
                         <i class="fa-solid fa-chevron-right ms-auto text-body-tertiary"></i>
                     </a>
@@ -114,7 +115,7 @@ $pageTitle = "Case File: OGM-2018 (The $150M Refusal)";
                         </div>
                         <div>
                             <h6 class="mb-1 fw-bold text-body-emphasis">The Counter-Offer</h6>
-                            <p class="mb-0 small text-body-secondary">The "Kill Switch." Holly's rejection letter.</p>
+                            <p class="mb-0 small text-body-secondary">The "Kill Switch." Holly's legendary one-page rejection.</p>
                         </div>
                         <i class="fa-solid fa-chevron-right ms-auto text-body-tertiary"></i>
                     </a>
@@ -131,8 +132,8 @@ $pageTitle = "Case File: OGM-2018 (The $150M Refusal)";
                             <i class="fa-duotone fa-bolt fa-2x text-danger"></i>
                         </div>
                         <div>
-                            <h6 class="mb-1 fw-bold text-body-emphasis">The Trigger (Slide 14)</h6>
-                            <p class="mb-0 small text-body-secondary">The moment the negotiation ended and the war began.</p>
+                            <h6 class="mb-1 fw-bold text-body-emphasis">The Trigger</h6>
+                            <p class="mb-0 small text-body-secondary">The catalyst for the legal battle. Slide 14.</p>
                         </div>
                         <i class="fa-solid fa-chevron-right ms-auto text-body-tertiary"></i>
                     </a>
@@ -159,7 +160,7 @@ $pageTitle = "Case File: OGM-2018 (The $150M Refusal)";
                 </div>
             </div>
 
-            <div class="card mb-4 border-0 shadow-sm opacity-75">
+            <div class="card mb-4 border-0 shadow-sm">
                 <div class="card-header bg-body-tertiary border-bottom border-secondary py-3">
                     <h5 class="mb-0 text-body-emphasis fw-bold text-uppercase"><i class="fa-solid fa-chess-king me-2 text-secondary"></i>Chapter 4: The Fallout</h5>
                 </div>
@@ -172,7 +173,73 @@ $pageTitle = "Case File: OGM-2018 (The $150M Refusal)";
                             <h6 class="mb-1 fw-bold text-body-emphasis">Market Alert: Ch. 11</h6>
                             <p class="mb-0 small text-body-secondary">Omni-Global files for bankruptcy protection.</p>
                         </div>
-                        <i class="fa-solid fa-lock ms-auto text-body-tertiary"></i>
+                        <i class="fa-solid fa-chevron-right ms-auto text-body-tertiary"></i>
+                    </a>
+                    <a href="/engine-room/history/nine-figure-refusal/liquidation-auction" class="list-group-item list-group-item-action p-4 d-flex align-items-center">
+                        <div class="me-4 text-center" style="width: 50px;">
+                            <i class="fa-duotone fa-gavel fa-2x text-danger"></i>
+                        </div>
+                        <div>
+                            <h6 class="mb-1 fw-bold text-body-emphasis">Asset Liquidation: Case 18-11492</h6>
+                            <p class="mb-0 small text-body-secondary">The yard sale. Selling the corporate ego to pay the creditors.</p>
+                        </div>
+                        <i class="fa-solid fa-chevron-right ms-auto text-body-tertiary"></i>
+                    </a>
+                    <a href="/engine-room/history/nine-figure-refusal/zenith-report/stardust-bus-ride" class="list-group-item list-group-item-action p-4 d-flex align-items-center">
+                        <div class="me-4 text-center" style="width: 50px;">
+                            <i class="fa-duotone fa-bus fa-2x text-warning"></i>
+                        </div>
+                        <div>
+                            <h6 class="mb-1 fw-bold text-body-emphasis">The Bus Ride Article</h6>
+                            <p class="mb-0 small text-body-secondary">The Zenith Report on how a bus ride altered corporate history.</p>
+                        </div>
+                        <i class="fa-solid fa-chevron-right ms-auto text-body-tertiary"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="card mb-4 border-0 shadow-sm">
+                <div class="card-header bg-body-tertiary border-bottom border-secondary py-3">
+                    <h5 class="mb-0 text-body-emphasis fw-bold text-uppercase"><i class="fa-solid fa-chess-rook me-2 text-secondary"></i>Chapter 5: The Legacy</h5>
+                </div>
+                <div class="list-group list-group-flush">
+                    <a href="/engine-room/history/nine-figure-refusal/the-jessica-miller-center" class="list-group-item list-group-item-action p-4 d-flex align-items-center">
+                        <div class="me-4 text-center" style="width: 50px;">
+                            <i class="fa-duotone fa-building-columns fa-2x text-success"></i>
+                        </div>
+                        <div>
+                            <h6 class="mb-1 fw-bold text-body-emphasis">The Jessica Miller Center</h6>
+                            <p class="mb-0 small text-body-secondary">How the acquisition fallout led to the founding of the Center.</p>
+                        </div>
+                        <i class="fa-solid fa-chevron-right ms-auto text-body-tertiary"></i>
+                    </a>
+                    <a href="/engine-room/history/nine-figure-refusal/the-non-profit-model" class="list-group-item list-group-item-action p-4 d-flex align-items-center">
+                        <div class="me-4 text-center" style="width: 50px;">
+                            <i class="fa-duotone fa-hand-holding-heart fa-2x text-primary"></i>
+                        </div>
+                        <div>
+                            <h6 class="mb-1 fw-bold text-body-emphasis">The Non-Profit Model</h6>
+                            <p class="mb-0 small text-body-secondary">How Engine Room Records transitioned to a non-profit organization.</p>
+                        </div>
+                        <i class="fa-solid fa-chevron-right ms-auto text-body-tertiary"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="card mb-4 border-0 shadow-sm">
+                <div class="card-header bg-body-tertiary border-bottom border-secondary py-3">
+                    <h5 class="mb-0 text-body-emphasis fw-bold text-uppercase"><i class="fa-solid fa-book-bookmark me-2 text-secondary"></i>Epilogue</h5>
+                </div>
+                <div class="list-group list-group-flush">
+                    <a href="/engine-room/history/nine-figure-refusal/frost-interview" class="list-group-item list-group-item-action p-4 d-flex align-items-center">
+                        <div class="me-4 text-center" style="width: 50px;">
+                            <i class="fa-duotone fa-clipboard-question fa-2x text-info"></i>
+                        </div>
+                        <div>
+                            <h6 class="mb-1 fw-bold text-body-emphasis">The Interview with Frost</h6>
+                            <p class="mb-0 small text-body-secondary">The interview with the former VP of Acquisitions of Omni-Global.</p>
+                        </div>
+                        <i class="fa-solid fa-chevron-right ms-auto text-body-tertiary"></i>
                     </a>
                 </div>
             </div>
