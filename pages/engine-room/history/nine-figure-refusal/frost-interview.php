@@ -3,7 +3,7 @@
 // EPILOGUE: The "Cultural Fit" Assessment
 // Context: February 14, 2019. The "Eye of the Storm."
 // Location: Floor 38 (The New Lobby Level).
-// UPDATED: Narrative Tweak - Frost has no badge (The "Phantom Limb" moment).
+// UPDATED: Narrative tweak to badge memory timeline & New wide-angle image.
 
 $pageTitle = "The Interview - Epilogue";
 ?>
@@ -230,7 +230,7 @@ $pageTitle = "The Interview - Epilogue";
                     </p>
                     
                     <p>
-                        He froze. The memory hit him like a physical blow. <em>Holly O'Connell standing in his office doorway yesterday. Her hand outstretched. The quiet, terrifying authority in her voice when she said, "The badge, Jameson. And the key to the executive washroom. Now."</em>
+                        He froze. The memory hit him like a physical blow. <em>Holly O'Connell standing in his office doorway **as if it were yesterday**. Her hand outstretched. The quiet, terrifying authority in her voice when she said, "The badge, Jameson. And the key to the executive washroom. Now."</em>
                     </p>
 
                     <p>
@@ -335,13 +335,13 @@ $pageTitle = "The Interview - Epilogue";
                         Frost followed him into the office. It was modest. Functional. But the view of the Hollywood Hills was just as majestic as he remembered.
                     </p>
 
-                    <div class="card border-0 shadow-lg mb-5 bg-black">
-                        <img src="https://assets.raggiesoft.com/engine-room-records/images/omni-global/frost-interview.jpg" 
+                    <div class="card border-0 shadow-lg mb-5 bg-black overflow-hidden">
+                        <img src="https://assets.raggiesoft.com/engine-room-records/images/omni-global/frost-interview-wide.jpg" 
                              class="card-img-top" 
-                             alt="Jessica Miller sitting confidently behind a modest desk, wearing a Stardust Engine t-shirt and eating a taco. Jameson Frost sits uncomfortably in a low visitor chair. Justin stands guard."
-                             style="max-height: 500px; object-fit: cover; object-position: top;">
+                             alt="Wide angle photograph of Jessica Miller in her wheelchair behind a desk eating a taco, alongside her twin brother Justin holding a tablet. Jameson Frost sits in a chair far across the room, looking terrified. The Hollywood Hills are visible through floor-to-ceiling windows."
+                             style="object-fit: cover;">
                         <div class="card-footer bg-dark text-white-50 fst-italic small text-center">
-                            The Cultural Fit Assessment.
+                            The Cultural Fit Assessment. Floor 38 overlooking the Hollywood Hills. Note the distance between the applicant and the Executive Director.
                         </div>
                     </div>
 
