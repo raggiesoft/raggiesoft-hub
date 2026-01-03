@@ -336,7 +336,7 @@ $pageTitle = "The Interview - Epilogue";
                     </p>
 
                     <div class="card border-0 shadow-lg mb-5 bg-black overflow-hidden">
-                        <img src="https://assets.raggiesoft.com/engine-room-records/images/omni-global/frost-interview-wide.jpg" 
+                        <img src="https://assets.raggiesoft.com/engine-room-records/images/omni-global/frost-interview.jpg" 
                              class="card-img-top" 
                              alt="Wide angle photograph of Jessica Miller in her wheelchair behind a desk eating a taco, alongside her twin brother Justin holding a tablet. Jameson Frost sits in a chair far across the room, looking terrified. The Hollywood Hills are visible through floor-to-ceiling windows."
                              style="object-fit: cover;">
