@@ -90,7 +90,7 @@ $pageTitle = "The Autopsy: Holly Takes Control - Evidence Item #02";
         <div class="col-lg-10">
             
             <div class="card forced-dark-card border-secondary shadow-lg mb-4">
-                <div class="card-body p-4 text-light font-monospace small">
+                <div class="card-body p-4 text-white font-monospace small">
                     <div class="row">
                         <div class="col-md-3 fw-bold text-uppercase text-white-50">Timestamp:</div>
                         <div class="col-md-9">10:21 AM (2 Minutes Post-Meltdown)</div>
