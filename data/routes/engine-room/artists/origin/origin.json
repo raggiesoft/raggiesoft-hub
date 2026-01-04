@@ -10,7 +10,7 @@
     "navbarBrandText": "Origin <span class=\"text-muted small\">// Archive</span>"
   },
   "/engine-room/artists/origin": {
-    "view": "pages/engine-room/artists/origin",
+    "view": "pages/engine-room/artists/origin/overview",
     "title": "Origin - Artist Profile",
     "ogDescription": "The profile of 80s Art Rock band Origin."
   },
