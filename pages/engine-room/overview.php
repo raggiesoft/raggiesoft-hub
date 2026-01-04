@@ -59,10 +59,10 @@ $pageTitle = "Engine Room Records - The Fortress";
                 </p>
 
                 <div class="d-flex justify-content-center gap-3">
-                    <a href="#roster" class="btn btn-danger btn-lg rounded-0 fw-bold px-4 text-uppercase">
+                    <a href="/artists" class="btn btn-danger btn-lg rounded-0 fw-bold px-4 text-uppercase">
                         <i class="fa-duotone fa-users-viewfinder me-2"></i>Artist Roster
                     </a>
-                    <a href="/engine-room/history/nine-figure-refusal" class="btn btn-outline-light btn-lg rounded-0 fw-bold px-4 text-uppercase">
+                    <a href="/engine-room/history" class="btn btn-outline-light btn-lg rounded-0 fw-bold px-4 text-uppercase">
                         <i class="fa-duotone fa-file-contract me-2"></i>The History
                     </a>
                 </div>
