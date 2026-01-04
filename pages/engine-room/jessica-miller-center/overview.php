@@ -34,7 +34,7 @@ $pageTitle = "The Jessica Miller Center - Universal Design & Workplace Equity";
     }
 </style>
 
-<div class="bg-secondar text-light py-5 mb-5 border-bottom border-secondary">
+<div class="bg-secondary text-light py-5 mb-5 border-bottom border-secondary">
     <div class="container">
         <div class="row align-items-center py-4">
             <div class="col-lg-7">
