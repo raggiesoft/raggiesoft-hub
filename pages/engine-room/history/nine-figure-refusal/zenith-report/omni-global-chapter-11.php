@@ -139,8 +139,8 @@ include ROOT_PATH . '/includes/components/styles/zenith-theme.php';
                     </div>
                 </div>
                 
-                <div class="card-footer bg-white border-top border-dark text-center py-2">
-                    <small class="text-black font-monospace">Copyright &copy; 2018 The Zenith Report. All Rights Reserved.</small>
+                <div class="card-footer bg-light border-top border-dark text-center py-2">
+                    <small class="text-dark font-monospace">Copyright &copy; 2018 The Zenith Report. All Rights Reserved.</small>
                 </div>
 
             </div>
