@@ -33,12 +33,6 @@ $isHistory = (
 ?>
 
 <ul class="navbar-nav ms-auto mb-2 mb-md-0">
-  
-  <li class="nav-item">
-    <a class="nav-link" href="/">
-        <i class="fa-duotone fa-arrow-left me-2"></i>Return to The Stardust Engine
-    </a>
-  </li>
 
   <li class="nav-item">
     <a class="nav-link <?php echo $isRoster ? 'active' : ''; ?>" href="/engine-room/artists">
