@@ -85,9 +85,9 @@ $pageTitle = "Stardust Blacksburg - The Ironwood Collective";
             <div class="card h-100 stat-card shadow-sm">
                 <div class="card-body text-center p-4">
                     <i class="fa-duotone fa-bus fa-3x text-primary mb-3"></i>
-                    <h5 class="fw-bold text-uppercase">Private Shuttle</h5>
+                    <h5 class="fw-bold text-uppercase">PolyPass Integrated</h5>
                     <p class="small text-muted mb-0">
-                        Direct connection to the Engineering Quad. Runs every 20 minutes. No parking pass required.
+                        Every property is located on a <strong>Blue Ridge Transit</strong> route or within walking distance of the Quad. Your CPI ID is your fare. No car required.
                     </p>
                 </div>
             </div>
