@@ -13,9 +13,16 @@
     "navbarBrandLink": "/engine-room/artists/stardust-engine",
     "ogImage": "https://assets.raggiesoft.com/engine-room-records/artists/the-stardust-engine/social-preview.jpg"
   },
-    "/engine-room/artists/stardust-engine/story/ad-astra": {
-        "title": "Ad Astra | Overview",
-        "ogDescription": "The untold story of The Stardust Engine's secret mission to the stars.",
-        "showSidebar": false
-    }
+  "/engine-room/artists/stardust-engine/story/ad-astra": {
+    "view": "pages/engine-room/artists/stardust-engine/story/ad-astra/overview",
+    "title": "Ad Astra | Mission Hub",
+    "ogDescription": "The untold story of The Stardust Engine's secret mission to the stars.",
+    "showSidebar": false
+  },
+  "/engine-room/artists/stardust-engine/story/ad-astra/voyage": {
+    "view": "pages/engine-room/artists/stardust-engine/story/ad-astra/voyage",
+    "title": "Flight Log: U.S.S. Aethelgard",
+    "ogDescription": "The narrative log of the 21-day journey to the Veil Nebula.",
+    "showSidebar": false
+  }
 }
