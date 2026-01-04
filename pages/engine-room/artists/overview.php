@@ -73,7 +73,7 @@ $pageTitle = "Artist Roster - Engine Room Records, LLC";
                 <div class="col-lg-4 d-flex align-items-stretch">
                     <div class="card card-industrial w-100">
                         <div class="bg-black p-4 text-center border-bottom border-secondary" style="height: 250px; display: flex; align-items: center; justify-content: center;">
-                            <img src="https://assets.raggiesoft.com/stardust-engine/images/stardust-engine-logo.png" 
+                            <img src="https://assets.raggiesoft.com/engine-room-records/the-stardust-engine/band-logo.png" 
                                  class="img-fluid" style="max-height: 150px;" alt="The Stardust Engine">
                         </div>
                         <div class="card-body d-flex flex-column p-4">
