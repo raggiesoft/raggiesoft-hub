@@ -17,10 +17,12 @@
     "title": "Engine Room Records, LLC",
     "showSidebar": false
   },
-  "/engine-room/history/friction": {
-    "title": "The Friction Catastrophe"
+  "/engine-room/artists": {
+    "title": "Artists Archive | Engine Room Records",
+    "ogDescription": "A comprehensive archive of artists, albums, and historical records from Engine Room Records."
   },
-  "/engine-room/history/friction/the-lost-title-track": {
-    "title": "Friction (The Lost Title Track)"
+  "/engine-room/history": {
+    "title": "Engine Room Records History | Company Timeline",
+    "ogDescription": "An in-depth look at the founding, growth, and milestones of Engine Room Records from inception to present day."
   }
 }
