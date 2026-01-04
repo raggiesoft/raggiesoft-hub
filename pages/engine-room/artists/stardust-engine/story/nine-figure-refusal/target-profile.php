@@ -80,7 +80,7 @@ $pageTitle = "Confidential Brief: Project GOLDEN GOOSE - Omni-Global";
                     <div class="alert alert-secondary border border-secondary small">
                         <h6 class="fw-bold text-uppercase mb-2"><i class="fa-solid fa-robot me-2 text-primary"></i>Methodology (The "Black Box"):</h6>
                         <p class="mb-2">
-                            The <strong>Omni-Scout™ Algorithm</strong> scraped public metadata from streaming platforms (Spotify, Apple Music) and global tour manifests.
+                            The <strong>Omni-Scout™ Algorithm</strong> scraped public metadata from streaming platforms and global tour manifests.
                         </p>
                         <p class="mb-0">
                             <strong>The Anomaly:</strong> The target shows 30 years of catalog activity with <span class="text-danger fw-bold">zero visible "Label Share" deductions</span>. The algorithm mistakenly assumes the Artist retains 100% of Net Revenue.
