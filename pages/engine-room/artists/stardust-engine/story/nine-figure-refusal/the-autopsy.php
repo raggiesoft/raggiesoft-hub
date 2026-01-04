@@ -612,7 +612,7 @@ $pageTitle = "The Autopsy: Holly Takes Control - Evidence Item #02";
                         </div>
                     </div>
 
-                    <p class="text-light mt-4 mb-0 fst-italic">
+                    <p class="text-white mt-4 mb-0 fst-italic">
                         Holly fought the corporation so Ryan could fight the panic. Two wars. One family.
                     </p>
                 </div>
@@ -622,7 +622,7 @@ $pageTitle = "The Autopsy: Holly Takes Control - Evidence Item #02";
                 <i class="fa-duotone fa-check-circle text-success fs-1 me-4"></i>
                 <div>
                     <h5 class="alert-heading text-white fw-bold">The Aftermath</h5>
-                    <p class="mb-0 text-light opacity-75">
+                    <p class="mb-0 text-white opacity-75">
                         Holly left the SEC filing up on the giant screen. As the family exited, the junior analysts in the room—who had been cc'd on the sexist email thread—quietly took out their phones and started looking for new jobs.
                     </p>
                 </div>
