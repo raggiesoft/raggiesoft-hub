@@ -81,9 +81,6 @@ $pageTitle = "The Approach Vector - Evidence Item #00";
                         "Remind me why we're doing this?" Evan asked, stretching his massive frame into the aisle as the seatbelt sign pinged off. "We could have just shredded the letter."
                     </p>
                     <p>
-                        Holly O'Connell didn't look up from her phone. She was calculating the Uber surge pricing in Los Angeles.
-                    </p>
-                    <p>
                         "Because he owes me fifty cents," Holly said. "He sent a hostile takeover threat using a bulk mail permit on a single envelope. The mail carrier made me pay the postage due."
                     </p>
                     <p>
