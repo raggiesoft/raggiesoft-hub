@@ -2,7 +2,7 @@
 // pages/engine-room/artists/stardust-engine/story/crash-of-90.php
 // The Crash of '90: The Night The Engine Broke
 // Context: December 10, 1990. The origin of Ryan's paralysis.
-// UPDATED: WCAG Contrast Fixes (Red on Black removed).
+// UPDATED: WCAG Contrast Fixes (Freight Dog & Police Report).
 
 $pageTitle = "The Crash of '90 - The Stardust Engine Lore";
 ?>
@@ -27,7 +27,7 @@ $pageTitle = "The Crash of '90 - The Stardust Engine Lore";
         <div class="col-lg-10">
             <div class="card bg-dark border-danger shadow-lg">
                 <div class="card-header bg-danger bg-opacity-25 text-white border-bottom border-danger fw-bold d-flex justify-content-between align-items-center">
-                    <span><i class="fa-duotone fa-file-medical-alt me-2 text-danger"></i>Virginia State Police // Report #90-81-114</span>
+                    <span><i class="fa-duotone fa-file-medical-alt me-2 text-white"></i>Virginia State Police // Report #90-81-114</span>
                     <span class="badge bg-black text-danger border border-danger">CRITICAL</span>
                 </div>
                 <div class="card-body font-monospace small text-white p-4">
@@ -150,10 +150,10 @@ $pageTitle = "The Crash of '90 - The Stardust Engine Lore";
                     <i class="fa-duotone fa-stairs me-2 text-danger"></i>The "Freight Dog" Reality
                 </div>
                 <div class="card-body">
-                    <p class="card-text text-white-50 small">
+                    <p class="card-text text-white-75 small">
                         The ADA passed in 1990, but venues in 1991 didn't care. Stages were inaccessible. Ryan often entered venues through loading docks and freight elevators, hauled up alongside the gear.
                     </p>
-                    <p class="card-text text-white-50 small mb-0">
+                    <p class="card-text text-white-75 small mb-0">
                         <strong>The Twins' Role:</strong> Evan and Tyler developed a synchronized two-man lift to carry Ryan and his chair up fire escapes and narrow stairwells. They became his legs.
                     </p>
                 </div>
