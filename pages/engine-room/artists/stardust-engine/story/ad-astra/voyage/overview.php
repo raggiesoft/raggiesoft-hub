@@ -54,6 +54,18 @@ $pageTitle = "Flight Log: Overview - Ad Astra";
                             </div>
                         </a>
 
+                        <a href="/engine-room/artists/stardust-engine/story/ad-astra/voyage/day-02" class="list-group-item list-group-item-action bg-transparent p-4 border-bottom border-secondary border-opacity-25 hover-bg-dark">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div>
+                                    <h4 class="h5 text-success fw-bold text-uppercase mb-1">
+                                        <i class="fa-duotone fa-earth-americas me-2"></i>Day 02: Stabilization
+                                    </h4>
+                                    <p class="mb-0 text-white-50 small font-monospace">High Orbit // Medical Check // The View</p>
+                                </div>
+                                <i class="fa-solid fa-chevron-right text-secondary"></i>
+                            </div>
+                        </a>
+
                         <a href="/engine-room/artists/stardust-engine/story/ad-astra/voyage/day-03" class="list-group-item list-group-item-action bg-transparent p-4 border-bottom border-secondary border-opacity-25 hover-bg-dark">
                             <div class="d-flex align-items-center justify-content-between">
                                 <div>

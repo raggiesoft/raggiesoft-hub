@@ -112,7 +112,7 @@ $pageTitle = "Day 03: Ship's Time - Ad Astra Log";
 
     <?php
         $nav = [
-            'prev' => ['url' => '/engine-room/artists/stardust-engine/story/ad-astra/voyage/day-01', 'label' => 'Day 01: Ignition'],
+            'prev' => ['url' => '/engine-room/artists/stardust-engine/story/ad-astra/voyage/day-02', 'label' => 'Day 02: Stabilization'],
             'overview' => ['url' => '/engine-room/artists/stardust-engine/story/ad-astra/voyage', 'label' => 'Flight Log'],
             'next' => ['url' => '/engine-room/artists/stardust-engine/story/ad-astra/voyage/day-10', 'label' => 'Day 10: The Drift']
         ];

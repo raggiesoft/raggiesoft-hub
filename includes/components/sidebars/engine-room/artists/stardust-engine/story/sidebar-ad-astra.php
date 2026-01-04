@@ -4,6 +4,9 @@
         <a href="/engine-room/artists/stardust-engine/story/ad-astra/voyage/day-01" class="list-group-item list-group-item-action bg-transparent py-1 border-0 text-uppercase small" style="color: var(--astra-warning);">
             Day 01: Ignition
         </a>
+        <a href="/engine-room/artists/stardust-engine/story/ad-astra/voyage/day-02" class="list-group-item list-group-item-action bg-transparent py-1 border-0 text-uppercase small" style="color: var(--astra-success);">
+            Day 02: Stabilization
+        </a>
         <a href="/engine-room/artists/stardust-engine/story/ad-astra/voyage/day-03" class="list-group-item list-group-item-action bg-transparent py-1 border-0 text-uppercase small" style="color: var(--astra-text);">
             Day 03: Ship's Time
         </a>

@@ -1,7 +1,7 @@
 <?php
 // Header: Ad Astra Mission Control
 // Theme: HUD / Sci-Fi / High Contrast
-// UPDATED: Added Day 03, Fixed Link Routes (Pages instead of Anchors), Fixed Exit Link Color
+// UPDATED: Added Day 02 to Flight Logs
 ?>
 <ul class="navbar-nav ms-auto mb-2 mb-md-0 font-monospace">
   
@@ -21,6 +21,11 @@
       <li>
           <a class="dropdown-item" href="/engine-room/artists/stardust-engine/story/ad-astra/voyage/day-01">
             <i class="fa-solid fa-shuttle-space me-2"></i>Day 01: Ignition
+          </a>
+      </li>
+      <li>
+          <a class="dropdown-item" href="/engine-room/artists/stardust-engine/story/ad-astra/voyage/day-02">
+            <i class="fa-solid fa-earth-americas me-2"></i>Day 02: Stabilization
           </a>
       </li>
       <li>

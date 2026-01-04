@@ -32,6 +32,11 @@
     "title": "Day 01: Ignition | Flight Log",
     "ogDescription": "Atmospheric Exit. 1.5G Ascent."
   },
+  "/engine-room/artists/stardust-engine/story/ad-astra/voyage/day-02": {
+    "view": "pages/engine-room/artists/stardust-engine/story/ad-astra/voyage/day-02",
+    "title": "Day 02: Acceleration | Flight Log",
+    "ogDescription": "1.5G Ascent. 1.0G Cruise."
+  },
   "/engine-room/artists/stardust-engine/story/ad-astra/voyage/day-03": {
     "view": "pages/engine-room/artists/stardust-engine/story/ad-astra/voyage/day-03",
     "title": "Day 03: Ship's Time | Flight Log",
