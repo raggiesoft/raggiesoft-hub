@@ -82,7 +82,7 @@ $pageTitle = "Artist Roster - Engine Room Records, LLC";
                             <p class="card-text small flex-grow-1">
                                 The founding artist. A family-owned progressive rock unit blending 80s synth-pop with industrial rock.
                             </p>
-                            <a href="/" class="btn btn-dark rounded-0 w-100 text-uppercase fw-bold mt-3">View Archive</a>
+                            <a href="/engine-room/artists/stardust-engine" class="btn btn-dark rounded-0 w-100 text-uppercase fw-bold mt-3">View Archive</a>
                         </div>
                     </div>
                 </div>

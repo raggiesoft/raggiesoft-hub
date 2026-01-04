@@ -2,6 +2,7 @@
 // includes/components/headers/engine-room/header-engine-room.php
 // The Corporate Navigation. Stark. Functional.
 // Used for: /engine-room/* pages
+// UPDATED: Forced "Industrial Dark Mode" via CSS injection.
 
 // 1. Determine Active States
 $uri = $_SERVER['REQUEST_URI'] ?? '';
@@ -54,17 +55,17 @@ $isHistory = (
       <li><h6 class="dropdown-header text-uppercase text-primary fw-bold">Infrastructure</h6></li>
       <li>
           <a class="dropdown-item" href="/engine-room/jessica-miller-center">
-            <i class="fa-solid fa-building me-2 text-secondary"></i>The Jessica Miller Center
+            <i class="fa-solid fa-building me-2"></i>The Jessica Miller Center
           </a>
       </li>
       <li>
           <a class="dropdown-item" href="/engine-room/corporate/fleet">
-            <i class="fa-solid fa-truck-ramp-box me-2 text-secondary"></i>Logistics Fleet
+            <i class="fa-solid fa-truck-ramp-box me-2"></i>Logistics Fleet
           </a>
       </li>
       <li>
           <a class="dropdown-item" href="/engine-room/corporate/systems">
-            <i class="fa-solid fa-server me-2 text-secondary"></i>Systems Status
+            <i class="fa-solid fa-server me-2"></i>Systems Status
           </a>
       </li>
 
@@ -88,20 +89,20 @@ $isHistory = (
       <i class="fa-duotone fa-scale-balanced me-2"></i>Governance
     </a>
     <ul class="dropdown-menu dropdown-menu-end rounded-0 border-secondary shadow-sm">
-      <li><h6 class="dropdown-header text-uppercase text-dark fw-bold">Organization</h6></li>
+      <li><h6 class="dropdown-header text-uppercase text-light fw-bold">Organization</h6></li>
       <li>
           <a class="dropdown-item" href="/engine-room/corporate/structure">
-            <i class="fa-solid fa-sitemap me-2 text-secondary"></i>Entity Structure
+            <i class="fa-solid fa-sitemap me-2"></i>Entity Structure
           </a>
       </li>
       <li>
           <a class="dropdown-item" href="/engine-room/corporate/leadership">
-            <i class="fa-solid fa-user-tie me-2 text-secondary"></i>Board of Directors
+            <i class="fa-solid fa-user-tie me-2"></i>Board of Directors
           </a>
       </li>
       <li>
           <a class="dropdown-item" href="/engine-room/corporate/careers">
-            <i class="fa-solid fa-briefcase me-2 text-secondary"></i>Human Capital (Careers)
+            <i class="fa-solid fa-briefcase me-2"></i>Human Capital (Careers)
           </a>
       </li>
 
@@ -149,10 +150,74 @@ $isHistory = (
       </li>
     </ul>
   </li>
-  <li class="nav-item border-start ms-2 ps-2">
+  <li class="nav-item border-start border-secondary ms-2 ps-2">
       <a class="nav-link" href="/">
         <i class="fa-duotone fa-arrow-right-from-bracket me-2 text-secondary"></i><span class="text-secondary small">Exit to RaggieSoft</span>
       </a>
   </li>
 
 </ul>
+
+<style>
+    /* * FORCE INDUSTRIAL THEME (Override Global Styles) 
+     * This ensures the header is always Black/White/Red, regardless of the light/dark mode preference.
+     */
+    
+    /* 1. Force the Navbar Background to Black */
+    .navbar {
+        background-color: #000000 !important;
+        border-bottom-color: #333333 !important;
+    }
+
+    /* 2. Force Text Colors to White */
+    .navbar-brand, 
+    .nav-link {
+        color: #e0e0e0 !important;
+    }
+    
+    .nav-link.active {
+        color: #ffffff !important;
+        font-weight: bold;
+    }
+    
+    .nav-link:hover {
+        color: #dc3545 !important; /* Engine Room Red on Hover */
+    }
+
+    /* 3. Invert the Logo (Make it White) */
+    .navbar-brand-corporate-img {
+        filter: invert(1) grayscale(100%);
+    }
+
+    /* 4. Force Mobile Toggler to White */
+    .navbar-toggler {
+        border-color: #444 !important;
+    }
+    .navbar-toggler-icon {
+        filter: invert(1) !important;
+    }
+
+    /* 5. Darken the Dropdown Menus */
+    .dropdown-menu {
+        background-color: #111111 !important;
+        border-color: #333333 !important;
+    }
+    
+    .dropdown-item {
+        color: #cccccc !important;
+    }
+    
+    .dropdown-item:hover, 
+    .dropdown-item:focus {
+        background-color: #dc3545 !important; /* Red Hover */
+        color: #ffffff !important;
+    }
+    
+    .dropdown-header {
+        color: #6c757d !important;
+    }
+    
+    .dropdown-divider {
+        border-top-color: #333333 !important;
+    }
+</style>
