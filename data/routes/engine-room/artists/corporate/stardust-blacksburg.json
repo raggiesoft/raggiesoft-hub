@@ -1,0 +1,18 @@
+{
+  "common": {
+    "site": "stardust-engine",
+    "theme": "crucible", 
+    "showSidebar": false,
+    "brandFont": ["Georgia", "serif"],
+    "headerMenu": "engine-room/corporate/stardust-blacksburg/header",
+    "footer": "engine-room/corporate/stardust-blacksburg/footer",
+    "siteName": "Stardust Blacksburg",
+    "navbarBrandText": "Stardust Blacksburg",
+    "navbarBrandLink": "/stardust-blacksburg"
+  },
+  "/stardust-blacksburg": {
+    "view": "pages/engine-room/corporate/stardust-blacksburg/overview",
+    "title": "Student Living | The Ironwood Collective",
+    "ogDescription": "Premium Student Housing for CPI. Managed by Alumni, for Future Alumni."
+  }
+}
