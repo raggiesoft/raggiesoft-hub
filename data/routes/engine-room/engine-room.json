@@ -5,7 +5,7 @@
     "sidebar": "sidebar-history-engine-room",
     "siteName": "Engine Room Records",
     "headerMenu": "engine-room/header-engine-room",
-    "footer": "engine-room/artists/stardust-engine/footer-nine-figure-refusal",
+    "footer": "engine-room/footer-engine-room",
     
     "navbarBrandLogo": "https://assets.raggiesoft.com/engine-room-records/images/logos/engine-room-records-logo.png",
     "navbarBrandText": "Engine Room<span class=\"d-none d-md-inline\"> Records</span>",
