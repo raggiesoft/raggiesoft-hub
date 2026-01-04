@@ -1,6 +1,7 @@
 {
   "common": {
     "site": "stardust-engine",
+    "theme": "ad-astra",
     "brandFont": ["Audiowide", "sans-serif"],
     "siteName": "The Stardust Engine",
     "headerMenu": "engine-room/artists/stardust-engine/header-stardust",
