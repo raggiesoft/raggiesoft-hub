@@ -51,7 +51,7 @@ $pageTitle = "Day 03: Ship's Time - Ad Astra Log";
                                     <div class="col-md-4"><i class="fa-solid fa-user-wheelchair me-2 text-warning"></i>Ryan (Center)</div>
                                     <div class="col-md-4"><i class="fa-solid fa-user me-2 text-info"></i>Cassidy</div>
                                 </div>
-                                <small class="d-block mt-2 text-muted fst-italic">
+                                <small class="d-block mt-2 text-white-50 fst-italic">
                                     *Note: Center positioning mandatory for R. O'Connell (T-10 Paraplegic). Flanking crew members serve as stabilization rails during gravity fluctuations.
                                 </small>
                             </li>
@@ -61,7 +61,7 @@ $pageTitle = "Day 03: Ship's Time - Ad Astra Log";
                                     <div class="col-md-4"><i class="fa-solid fa-drum me-2 text-secondary"></i>Tyler</div>
                                     <div class="col-md-4"><i class="fa-solid fa-guitar-electric me-2 text-secondary"></i>Evan</div>
                                 </div>
-                                <small class="d-block mt-2 text-muted fst-italic">
+                                <small class="d-block mt-2 text-white-50 fst-italic">
                                     *Note: Rhythm section. Snoring protocols active.
                                 </small>
                             </li>
