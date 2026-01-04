@@ -102,9 +102,9 @@ include ROOT_PATH . '/includes/components/styles/zenith-theme.php';
                                 <small class="text-muted d-block mt-1 text-uppercase fw-bold">Trading Halted</small>
                             </div>
 
-                            <div class="card bg-light border-0 p-3 mb-4">
+                            <div class="card bg-white border-0 p-3 mb-4">
                                 <h6 class="fw-bold small text-uppercase mb-2 text-black">Transit Log</h6>
-                                <ul class="list-unstyled small font-monospace text-body mb-0">
+                                <ul class="list-unstyled small font-monospace text-black mb-0">
                                     <li class="mb-1"><strong>Route:</strong> Civic-Rapid 720</li>
                                     <li class="mb-1"><strong>Stop:</strong> Ave of Stars</li>
                                     <li class="mb-1"><strong>Fare:</strong> $1.75</li>
@@ -116,8 +116,8 @@ include ROOT_PATH . '/includes/components/styles/zenith-theme.php';
                     </div>
                 </div>
                 
-                <div class="card-footer bg-light border-top border-dark text-center py-2">
-                    <small class="text-body font-monospace">Copyright &copy; 2018 The Zenith Report. All Rights Reserved.</small>
+                <div class="card-footer bg-white border-top border-dark text-center py-2">
+                    <small class="text-black font-monospace">Copyright &copy; 2018 The Zenith Report. All Rights Reserved.</small>
                 </div>
 
             </div>
@@ -207,6 +207,9 @@ include ROOT_PATH . '/includes/components/styles/zenith-theme.php';
                             </ul>
                         </div>
                     </div>
+                </div>
+                <div class="card-footer bg-white border-top border-dark text-center py-2">
+                    <small class="text-black font-monospace">Copyright &copy; 2018 The Zenith Report. All Rights Reserved.</small>
                 </div>
             </div>
         </div>
