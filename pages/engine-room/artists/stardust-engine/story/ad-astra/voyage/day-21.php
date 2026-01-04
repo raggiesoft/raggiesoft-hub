@@ -121,14 +121,3 @@ $pageTitle = "Day 21: The Drop - Ad Astra Log";
     ?>
 
 </div>
-
-<style>
-    /* Default: No animation */
-    .blink-animation { opacity: 1; }
-
-    /* Only pulse if the user is okay with motion */
-    @media (prefers-reduced-motion: no-preference) {
-        @keyframes blink { 0% { opacity: 1; } 50% { opacity: 0.3; } 100% { opacity: 1; } }
-        .blink-animation { animation: blink 1s infinite; }
-    }
-</style>
