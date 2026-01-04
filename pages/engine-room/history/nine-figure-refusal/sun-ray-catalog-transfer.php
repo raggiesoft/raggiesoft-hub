@@ -2,9 +2,33 @@
 // pages/engine-room/history/nine-figure-refusal/sun-ray-catalog-transfer.php
 // EVIDENCE ITEM #200-FINAL: The Repatriation
 // Context: The journey from "Toxic Asset" to "Artist Owned."
+// UPDATED: WCAG Color Compliance & Removed Opacity Fades.
 
 $pageTitle = "Lot 200: The Sun-Ray Repatriation";
 ?>
+
+<style>
+    /* Force high contrast for the physical invoice simulation */
+    .physical-invoice {
+        background-color: #ffffff !important;
+        color: #000000 !important;
+        border: 1px solid #dee2e6;
+    }
+    
+    .physical-invoice .table {
+        color: #000000 !important;
+        border-color: #000000 !important;
+    }
+    
+    .physical-invoice .border-dark {
+        border-color: #000000 !important;
+    }
+
+    /* Dark Mode specific overrides for the Chain of Title Diagram */
+    [data-bs-theme="dark"] .bg-body-tertiary {
+        background-color: #212529 !important;
+    }
+</style>
 
 <div class="container py-5">
     
@@ -26,16 +50,16 @@ $pageTitle = "Lot 200: The Sun-Ray Repatriation";
         <div class="col-lg-10">
             <div class="card bg-body-tertiary border-secondary shadow-lg">
                 <div class="card-body p-5">
-                    <h5 class="text-uppercase text-body-secondary border-bottom border-secondary pb-3 mb-4">
+                    <h5 class="text-uppercase text-body-emphasis border-bottom border-secondary pb-3 mb-4">
                         <i class="fa-solid fa-route me-2"></i>Chain of Title (2018-2019)
                     </h5>
 
-                    <div class="d-flex align-items-center mb-4 opacity-50">
+                    <div class="d-flex align-items-center mb-4">
                         <div class="flex-shrink-0 text-center" style="width: 80px;">
-                            <i class="fa-duotone fa-building-columns fa-2x text-secondary"></i>
+                            <i class="fa-duotone fa-building-columns fa-2x text-body-secondary"></i>
                         </div>
                         <div class="flex-grow-1 border-start border-4 border-secondary ps-4 py-2">
-                            <h6 class="fw-bold text-body-secondary mb-0">1. Omni-Global Media (Debtor)</h6>
+                            <h6 class="fw-bold text-body-secondary mb-0 text-decoration-line-through">1. Omni-Global Media (Debtor)</h6>
                             <p class="small text-body-secondary mb-0">Held Masters as collateral for toxic loans.</p>
                         </div>
                         <div class="flex-shrink-0 text-end fw-bold text-danger font-monospace">
@@ -43,7 +67,7 @@ $pageTitle = "Lot 200: The Sun-Ray Repatriation";
                         </div>
                     </div>
 
-                    <div class="text-center text-secondary mb-4">
+                    <div class="text-center text-body-secondary mb-4">
                         <i class="fa-solid fa-arrow-down fa-xl"></i>
                     </div>
 
@@ -54,7 +78,7 @@ $pageTitle = "Lot 200: The Sun-Ray Repatriation";
                         <div class="flex-grow-1 border-start border-4 border-primary ps-4 py-2 bg-primary-subtle rounded-end">
                             <h6 class="fw-bold text-primary-emphasis mb-0">2. Aethelgard Holdings (Secured Creditor)</h6>
                             <p class="small text-primary-emphasis mb-0">
-                                <span class="badge bg-primary me-2">CREDIT BID</span>
+                                <span class="badge bg-primary text-white me-2">CREDIT BID</span>
                                 Acquired Lot 200 via §363(k) using acquired debt.
                             </p>
                         </div>
@@ -63,7 +87,7 @@ $pageTitle = "Lot 200: The Sun-Ray Repatriation";
                         </div>
                     </div>
 
-                    <div class="text-center text-secondary mb-4">
+                    <div class="text-center text-body-secondary mb-4">
                         <i class="fa-solid fa-arrow-down fa-xl"></i>
                     </div>
 
@@ -89,7 +113,7 @@ $pageTitle = "Lot 200: The Sun-Ray Repatriation";
 
     <div class="row justify-content-center">
         <div class="col-lg-8">
-            <div class="card border-0 shadow-lg" style="background-color: #f8f9fa; font-family: 'Courier New', monospace;">
+            <div class="card border-0 shadow-lg physical-invoice" style="font-family: 'Courier New', monospace;">
                 <div class="card-body p-5 position-relative">
                     
                     <div class="row mb-4 border-bottom border-dark pb-3">
@@ -107,7 +131,7 @@ $pageTitle = "Lot 200: The Sun-Ray Repatriation";
                     <p class="mb-4"><strong>SOLD TO:</strong> Cassidy O'Connell</p>
 
                     <table class="table table-bordered border-dark mb-4">
-                        <thead class="table-light border-dark">
+                        <thead class="bg-light text-dark border-dark">
                             <tr>
                                 <th>ITEM DESCRIPTION</th>
                                 <th class="text-end">AMOUNT</th>
@@ -132,12 +156,12 @@ $pageTitle = "Lot 200: The Sun-Ray Repatriation";
 
                     <div class="text-center mt-5">
                         <div class="d-inline-block border-bottom border-dark px-5 pb-1 mb-2">
-                            <img src="https://assets.raggiesoft.com/signatures/holly-oconnell.png" style="height: 40px; opacity: 0.8;" alt="Holly O'Connell Signature">
+                            <img src="https://assets.raggiesoft.com/signatures/holly-oconnell.png" style="height: 40px; opacity: 1.0;" alt="Holly O'Connell Signature">
                         </div>
                         <div class="small">HOLLY O'CONNELL, TRUSTEE</div>
                     </div>
 
-                    <div class="position-absolute top-50 start-50 translate-middle" style="opacity: 0.2; transform: rotate(-30deg); pointer-events: none;">
+                    <div class="position-absolute top-50 start-50 translate-middle" style="opacity: 0.15; transform: rotate(-30deg); pointer-events: none;">
                         <i class="fa-solid fa-file-invoice-dollar fa-10x text-success"></i>
                     </div>
 
@@ -145,5 +169,14 @@ $pageTitle = "Lot 200: The Sun-Ray Repatriation";
             </div>
         </div>
     </div>
+    
+    <?php
+        $nav = [
+            'prev' => ['url' => '/engine-room/history/nine-figure-refusal/liquidation-auction', 'label' => 'The Liquidation Auction'],
+            'overview' => ['url' => '/engine-room/history/nine-figure-refusal', 'label' => 'Overview'],
+            'next' => ['url' => '/engine-room', 'label' => 'Return to HQ']
+        ];
+        include ROOT_PATH . '/includes/components/navigation/narrative-stepper.php';
+    ?>
 
 </div>
