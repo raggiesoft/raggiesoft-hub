@@ -85,7 +85,25 @@
     </div>
 
     <div class="row g-4 row-cols-1 row-cols-md-2 row-cols-xl-3 justify-content-center">
-
+      <div class="col" style="max-width: 500px;">
+        <?php
+          $props = [
+            'imgSrc' => 'https://assets.raggiesoft.com/engine-room-records/images/logos/engine-room-records-logo.png',
+            'imgAlt' => 'Engine Room Records',
+            'fallbackText' => 'Engine Room Records',
+            'title' => 'Engine Room Records',
+            'description' => 'A fictional record label that hosts multiple bands.',
+            'buttonProps' => [
+              'href' => '/engine-room',
+              'text' => 'Enter The Engine Room',
+              'variant' => 'dark', 
+              'icon' => 'fa-duotone fa-rocket-launch',
+              'fullWidth' => true
+            ]
+          ];
+          include __DIR__ . '/../includes/components/card.php';
+        ?>
+      </div>    
       <div class="col" style="max-width: 500px;">
         <?php
           $props = [
@@ -96,7 +114,7 @@
             'description' => 'A multimedia narrative project centering on a fictional 80s synth-rock band. Explore their history, albums, and the corporate mystery behind them.',
             'buttonProps' => [
               'href' => '/engine-room/artists/stardust-engine',
-              'text' => 'Enter The Engine Room',
+              'text' => 'Go on a Space Flight Journey',
               'variant' => 'dark', 
               'icon' => 'fa-duotone fa-rocket-launch',
               'fullWidth' => true
