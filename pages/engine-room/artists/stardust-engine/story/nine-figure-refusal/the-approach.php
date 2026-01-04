@@ -156,37 +156,37 @@ $pageTitle = "The Approach Vector - Evidence Item #00";
                         <h5 class="text-white text-uppercase letter-spacing-2 mb-0">Strike 1: The Interception</h5>
                     </div>
 
-                    <p class="text-light">
+                    <p>
                         They exited the terminal to the curbside pick-up area. A line of exhausted travelers was queuing up at the rental kiosks, but a man in a black suit stepped out from behind a concrete pillar.
                     </p>
-                    <p class="text-light">
+                    <p>
                         "Mr. Wright? The O'Connell party?"
                     </p>
-                    <p class="text-light">
+                    <p>
                         He was holding an mPad. "I'm Marcus," the driver said, flashing a service-industry smile. "Mr. Frost arranged for your ground transport. The SUV is just over there."
                     </p>
-                    <p class="text-light">
+                    <p>
                         He turned the mPad around to show them the welcome screen. The text on the screen did not say "The Stardust Engine."
                     </p>
                     <p class="text-white fw-bold fs-4 text-center my-4 font-monospace border border-secondary p-3 rounded bg-black">
                         WELCOME MR. & MRS. O'CONNELL
                     </p>
-                    <p class="text-light">
+                    <p>
                         The air on the curb didn't just drop; it froze. Cassidy flinched, her hand jerking off Ryan’s wheelchair handle as if it had burned her.
                     </p>
-                    <p class="text-light">
+                    <p>
                         "No," Cassidy whispered, terror in her eyes. "No. Not again."
                     </p>
                     <p class="text-white-50 fst-italic">
                         She looked at Ryan. It was 1992 all over again. The photo shoot. The mirror. The implication.
                     </p>
-                    <p class="text-light">
+                    <p>
                         Evan and Tyler Wright stepped forward instantly. They dropped their bags. The thud of the heavy Titan Cases hitting the concrete sounded like a warning shot.
                     </p>
-                    <p class="text-light">
+                    <p>
                         "Turn that screen off," Tyler growled.
                     </p>
-                    <p class="text-light">
+                    <p>
                         Ryan O'Connell stopped rolling. His expression went from "vacation mode" to "cold dead stare."
                     </p>
                     <p class="text-white fw-bold">
@@ -195,22 +195,22 @@ $pageTitle = "The Approach Vector - Evidence Item #00";
                     
                     <hr class="border-secondary opacity-50 my-4">
 
-                    <p class="text-light">
+                    <p>
                         Holly O'Connell walked past the twins. She simply plucked the mPad out of the driver's hands. She tapped the screen, deleting the image, and handed the device back.
                     </p>
-                    <p class="text-light">
+                    <p>
                         "You can tell Mr. Frost that his 'Research Department' just cost him his first strike. And we play three-strike rules."
                     </p>
-                    <p class="text-light">
+                    <p>
                         "Ma'am, the car is waiting," Marcus stammered, pointing to a black Escalade. "It's a two-hour drive in traffic."
                     </p>
-                    <p class="text-light">
+                    <p>
                         Ryan spun his chair around, turning his back on the driver. He looked across the street at the <strong>Civic-Rail</strong> platform.
                     </p>
-                    <p class="text-light">
+                    <p>
                         "We're not taking the car," Ryan said. "Tell Frost to check the transit logs."
                     </p>
-                    <p class="text-light">
+                    <p>
                         The family walked away, leaving the confused driver on the curb. They headed straight for the train station.
                     </p>
                 </div>
