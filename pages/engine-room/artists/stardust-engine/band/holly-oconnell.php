@@ -1,7 +1,7 @@
 <?php
 // pages/engine-room/artists/stardust-engine/band/holly-oconnell.php
 // The "Anchor" and the "Architect" of the Fortune.
-// UPDATED: Added the "Fiduciary Armor" Timeline from Archival Data.
+// UPDATED: Added the "Fiduciary Armor" Timeline and 1996 Lottery Logic.
 
 $pageTitle = "Holly O'Connell - The Stardust Engine";
 ?>
@@ -38,22 +38,22 @@ $pageTitle = "Holly O'Connell - The Stardust Engine";
                 She holds <strong>Durable Power of Attorney</strong> for Ryan, giving her the legal authority to make medical decisions in an emergency. She carries signed, notarized HIPAA release forms in her briefcase at all times, allowing her to speak directly to his doctors and surgeons.
             </p>
             
-            <h3 class="fw-bold mt-5 mb-3 text-white">The "Friction" Nuke</h3>
+            <h3 class="fw-bold mt-5 mb-3 text-white">The "Friction" Nuke (1992)</h3>
             <p class="text-white-75">
                 Holly's true power was revealed during the 1992 "Friction" scandal. By this time, she was a 2L law student. When Julian Vance made his criminal demand, Holly transformed into "Holly the Shark". She secured the evidence that forced Apex Records to surrender the masters, using the freedom to found <strong>Engine Room Records, LLC</strong>.
             </p>
 
             <div class="card bg-dark bg-opacity-75 border-success shadow-lg mt-5 overflow-hidden">
                 <div class="card-header bg-success bg-opacity-25 text-white fw-bold border-bottom border-success">
-                    <i class="fa-duotone fa-money-bill-wave me-2"></i>CONFIDENTIAL: The "American Dream" Event
+                    <i class="fa-duotone fa-money-bill-wave me-2"></i>CONFIDENTIAL: The "American Dream" Event (1996)
                 </div>
                 <div class="card-body p-4">
                     <h4 class="text-success fw-bold">The Financial Architect</h4>
                     <p class="text-white-75">
-                        When Cassidy won the <strong>$2.04 Billion</strong> lottery jackpot in 1996, Holly understood the danger immediately. "Money destroys families," she famously said. To prevent that, she spent the next two decades armoring herself with every financial certification available.
+                        In 1996, when Cassidy handed her the winning lottery ticket worth <strong>$2.04 Billion</strong>, Holly didn't celebrate. She went to work.
                     </p>
                     <p class="text-white-75">
-                        Using this knowledge, she established the <strong>Forger Nation Trust</strong> (a Family Office). This legal structure renders the individual band members "penniless" on paper—protecting them from lawsuits and predators—while the Trust manages their lifestyle, medical care, and the Engine Room empire.
+                        "Money destroys families," she famously said. To prevent that, she spent the next two decades armoring herself with every financial certification available. She created the <strong>Forger Nation Trust</strong>, a structure that renders the band members "penniless" on paper—protecting them from lawsuits and predators—while the Trust manages their empire.
                     </p>
                     
                     <hr class="border-success opacity-50 my-4">
@@ -105,10 +105,13 @@ $pageTitle = "Holly O'Connell - The Stardust Engine";
                     'imgSrc' => 'https://assets.raggiesoft.com/stardust-engine/images/band-members/holly.jpg',
                     'imgAlt' => 'Headshot of Holly O\'Connell',
                     'variant' => 'neutral',
-                    'description' => "<strong>Role:</strong> Manager, CEO, CFO<br>
-                                      <strong>Age (in 1987):</strong> 18<br>
-                                      <strong>Top Credential:</strong> CIRA (Insolvency)<br>
-                                      <strong>Status:</strong> The Architect (Unbroken)",
+                    // FIX: Wrapped content in a div with text-white-75 to force readability
+                    'description' => "<div class='text-white-75'>
+                                        <strong>Role:</strong> Manager, CEO, CFO<br>
+                                        <strong>Age (in 1987):</strong> 18<br>
+                                        <strong>Top Credential:</strong> CIRA (Insolvency)<br>
+                                        <strong>Status:</strong> The Architect (Unbroken)
+                                      </div>",
                     'buttonProps' => [
                         'text' => 'Back to The Band', 
                         'href' => '/engine-room/artists/stardust-engine/band', 

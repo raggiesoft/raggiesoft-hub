@@ -1,5 +1,8 @@
 <?php
-// Page data
+// pages/engine-room/artists/stardust-engine/band/evan-wright.php
+// The "Texture" and "The Human Ramp".
+// Context: The steady hand of the rhythm section.
+
 $pageTitle = "Evan Wright - The Stardust Engine";
 ?>
 
@@ -20,15 +23,15 @@ $pageTitle = "Evan Wright - The Stardust Engine";
             </nav>
 
             <p class="fs-5 text-white-75">
-                The "Texture" of the band, Evan (Age 20 in 1987) is the secret weapon that makes their sound so full. As the cousin of the O'Connells and the identical twin brother of Tyler, his role is to provide the rich, melodic basslines and atmospheric rhythm guitar that form the foundation for Ryan's solos.
+                The "Texture" of the band, Evan (Age 20 in 1987) is the secret weapon that makes their sound so full. He and his identical twin brother, <strong>Tyler Wright</strong>, are cousins to the O'Connell siblings. Together, the five of them form the tight-knit family unit that defines the group.
             </p>
             <p class="text-white-75">
-                He is the quiet, steady presence in the "engine room," and his bond with his twin brother is legendary. On tour during the Apex era, Evan and Tyler were inseparable, famously taking one of the two cramped motel beds while the three O'Connell siblings piled into the other.
+                Evan is the quiet, steady presence in the "engine room," providing the rich, melodic basslines and atmospheric rhythm guitar that form the foundation for Ryan's solos. His bond with his twin brother is legendary; on tour during the Apex era, the twins were inseparable, famously taking one of the two cramped motel beds while the three O'Connell siblings piled into the other.
             </p>
 
             <h3 class="fw-bold mt-5 mb-3 text-white">The Crash of '90: "The Human Ramp"</h3>
             <p class="text-white-75">
-                After Ryan's injury in 1990, the reality of touring changed instantly. While Holly and Cassidy handled the private medical logistics (transfers, catheterization), it was Evan and Tyler who handled the brute force required to navigate a world built without ramps.
+                After his cousin Ryan's injury in 1990, the reality of touring changed instantly. While Holly and Cassidy handled the private medical logistics, it was Evan and Tyler who handled the brute force required to navigate a world built without ramps.
             </p>
             <p class="text-white-75">
                 In 1991, venues rarely had elevators. If the band had to play a second-floor club, or if the "accessible ramp" was a dangerous piece of plywood, Evan and Tyler became the <strong>"Human Ramp."</strong> The twins developed a silent, synchronized lifting technique—Tyler on the back handles, Evan gripping the frame by the knees—to carry Ryan and his chair up fire escapes, loading docks, and stairwells.
@@ -39,7 +42,7 @@ $pageTitle = "Evan Wright - The Stardust Engine";
 
             <h3 class="fw-bold mt-5 mb-3 text-white">Post-Apex Freedom</h3>
             <p class="text-white-75">
-                During the "Freedom Era," Evan's contributions became even more pronounced. His driving basslines on tracks like "Garbage" (from *The Warehouse Tapes*) and his ability to lock in with his brother's "Human Metronome" timing allowed the band to finally explore the raw, unpolished 80s rock sound that Apex Records had suppressed.
+                During the "Freedom Era" (post-1992), Evan's contributions became even more pronounced. His driving basslines on tracks like "Garbage" (from *The Warehouse Tapes*) and his ability to lock in with his brother's "Human Metronome" timing allowed the band to finally explore the raw, unpolished 80s rock sound that Apex Records had suppressed.
             </p>
             <p class="text-white-75 fs-5">
                 <strong>Wardrobe:</strong> This rejection of their old label defines his modern stage presence. After the 'Friction' scandal, Evan shed the polished 'Apex look' for good. On stage, he now proudly wears what he always has: jeans, sneakers, and a CPI Alumni t-shirt or hoodie, looking less like a rock star and more like the proud 'Forger' he is.
@@ -54,10 +57,13 @@ $pageTitle = "Evan Wright - The Stardust Engine";
                     'imgSrc' => 'https://assets.raggiesoft.com/stardust-engine/images/band-members/evan.jpg',
                     'imgAlt' => 'Headshot of Evan Wright with his bass',
                     'variant' => 'neutral',
-                    'description' => "<strong>Role:</strong> Bass, Rhythm Guitar, Vocals<br>
-                                      <strong>Age (in 1987):</strong> 20<br>
-                                      <strong>CPI Status:</strong> Alumnus, Class of '89<br>
-                                      <strong>Status:</strong> The Human Ramp (Unbroken)",
+                    // FIX: Wrapped content in a div with text-white-75 to force readability
+                    'description' => "<div class='text-white-75'>
+                                        <strong>Role:</strong> Bass, Rhythm Guitar, Vocals<br>
+                                        <strong>Age (in 1987):</strong> 20<br>
+                                        <strong>CPI Status:</strong> Alumnus, Class of '89<br>
+                                        <strong>Status:</strong> The Human Ramp (Unbroken)
+                                      </div>",
                     'buttonProps' => [
                         'text' => 'Back to The Band', 
                         'href' => '/engine-room/artists/stardust-engine/band', 

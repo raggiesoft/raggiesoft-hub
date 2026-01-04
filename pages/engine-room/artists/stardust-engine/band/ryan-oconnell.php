@@ -1,5 +1,8 @@
 <?php
-// Page data
+// pages/engine-room/artists/stardust-engine/band/ryan-oconnell.php
+// The "Engine" and the "Protector".
+// Context: The creative force and the survivor.
+
 $pageTitle = "Ryan O'Connell - The Stardust Engine";
 ?>
 
@@ -47,12 +50,15 @@ $pageTitle = "Ryan O'Connell - The Stardust Engine";
                 He relied on his cousins, Evan and Tyler, as his "Human Ramp." The twins developed a synchronized lift technique to carry him and his chair up fire escapes and narrow stairwells, ensuring he never missed a show. This gritty, unglamorous reality hardened the band's resolve and deepened their reliance on the "Family Unit."
             </p>
 
-            <h3 class="fw-bold mt-5 mb-3 text-white">The "Friction" Catastrophe</h3>
+            <h3 class="fw-bold mt-5 mb-3 text-white">The "Friction" Catastrophe (1992)</h3>
             <p class="text-white-75">
                 This context makes the 1992 "Friction" scandal even more harrowing. When executive Julian Vance demanded that Ryan and Cassidy perform a sexual act on camera, he was targeting a man who was <strong>less than two years</strong> into his life as a wheelchair user.
             </p>
             <p class="text-white-75">
-                During the infamous "Dirty Mirror" incident, Ryan wiped the cocaine away not just because he was naive, but because he was sitting at eye-level with the table. To him, the white powder looked like falling drywall dust from the crumbling warehouse ceiling—just more filth he had to deal with. Vance's subsequent retaliation wasn't just professional malpractice; it was the exploitation of a disabled artist. Ryan's roar of <strong>"SHE'S! MY! SISTER!"</strong> was the sound of a man reclaiming the power the industry had tried to strip from him.
+                During the infamous "Dirty Mirror" incident, Ryan wiped the cocaine away not just because he was naive, but because he was sitting at eye-level with the table. To him, the white powder looked like falling drywall dust from the crumbling warehouse ceiling—just more filth he had to deal with. Vance's subsequent retaliation wasn't just professional malpractice; it was the exploitation of a disabled artist. 
+            </p>
+            <p class="text-white-75">
+                Ryan's roar of <strong>"SHE'S! MY! SISTER!"</strong> was the sound of a man reclaiming the power the industry had tried to strip from him. The resulting breach of contract left the band independent, but destitute, kicking off the four-year "Wilderness" period (1992-1996) where they survived solely on the loyalty of their fans.
             </p>
 
         </div>
@@ -64,10 +70,13 @@ $pageTitle = "Ryan O'Connell - The Stardust Engine";
                     'imgSrc' => 'https://assets.raggiesoft.com/stardust-engine/images/band-members/ryan.jpg',
                     'imgAlt' => 'Headshot of Ryan O\'Connell in his wheelchair',
                     'variant' => 'axiom', // Cyan
-                    'description' => "<strong>Role:</strong> Lead Vocals, Lead Guitar<br>
-                                      <strong>Age (in 1987):</strong> 23<br>
-                                      <strong>CPI Status:</strong> Alumnus, Class of '89<br>
-                                      <strong>Status:</strong> The Engine (Unbroken)",
+                    // FIX: Wrapped content in a div with text-white-75 to force readability
+                    'description' => "<div class='text-white-75'>
+                                        <strong>Role:</strong> Lead Vocals, Lead Guitar<br>
+                                        <strong>Age (in 1987):</strong> 23<br>
+                                        <strong>CPI Status:</strong> Alumnus, Class of '89<br>
+                                        <strong>Status:</strong> The Engine (Unbroken)
+                                      </div>",
                     'buttonProps' => [
                         'text' => 'Back to The Band', 
                         'href' => '/engine-room/artists/stardust-engine/band', 
