@@ -1,74 +1,57 @@
 <?php
-// pages/band/cassidy-oconnell.php
-// The Voice. The Dreamer. The Secret Billionaire.
-
-$pageTitle = "Cassidy O'Connell - The Stardust Engine";
+// Page data
+$pageTitle = "Ryan O'Connell - The Stardust Engine";
 ?>
 
-<div class="container py-5">
+<div class="starfield-container"><div class="starfield-twinkling"></div></div>
+
+<div class="container py-5 position-relative z-1">
     <div class="row g-5">
         
         <div class="col-lg-8">
-            <h1 class="display-4 fw-bold text-uppercase text-glow-primary" style="font-family: 'Impact', sans-serif;">Cassidy O'Connell</h1>
-            <p class="h4 text-warning fw-bold mb-4">Lead Vocals, Piano, Synthesizers</p>
+            <h1 class="display-4 fw-bold text-uppercase text-glow-primary" style="font-family: 'Impact', sans-serif;">Ryan O'Connell</h1>
+            <p class="h4 text-warning fw-bold mb-4">Lead Vocals, Lead Guitar</p>
 
             <nav aria-label="breadcrumb" class="mb-4">
                 <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="/engine-room/artists/stardust-engine/band">The Band</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Cassidy O'Connell</li>
+                    <li class="breadcrumb-item"><a href="/engine-room/artists/stardust-engine/band" class="text-info">The Band</a></li>
+                    <li class="breadcrumb-item active text-white-50" aria-current="page">Ryan O'Connell</li>
                 </ol>
             </nav>
 
-            <p class="fs-5 text-muted">
-                The classical heart of the band, Cassidy (Age 20 in 1987) is the voice of its most emotional synth-pop anthems. Her musical sophistication provides the complex melodies and atmospheric pads that balance Ryan's raw guitar.
+            <p class="fs-5 text-white-75">
+                As the oldest sibling (Age 23 in 1987), Ryan is the band's protective "Engine" and the voice of its raw rock energy. He famously delayed his own college entry so the entire "family" (his siblings and cousins) could enter CPI's Class of '89 together.
             </p>
             
-            <div class="alert alert-dark border-primary bg-opacity-10 d-flex align-items-center" role="alert">
-                <i class="fa-duotone fa-stars text-primary fs-2 me-3"></i>
-                <div class="small text-muted">
-                    <strong>Archivist Note:</strong> While the industry tried to drag them into the dirt, Cassidy refused to look down. Her eyes were always cast <strong class="text-info text-uppercase">Up</strong>. Always <strong class="text-info text-uppercase">Up</strong>.
+            <div class="alert alert-dark border-warning bg-opacity-25 d-flex align-items-center" role="alert">
+                <i class="fa-duotone fa-engine-warning text-warning fs-2 me-3"></i>
+                <div class="small text-white-75">
+                    <strong>Archivist Note:</strong> Ryan hated the polish of the studio. He famously told producers that to find the real sound—the engine's hum—you couldn't float on the surface. You had to go <strong class="text-warning text-uppercase">Down</strong>. Deep <strong class="text-warning text-uppercase">Down</strong>.
                 </div>
             </div>
 
-            <h3 class="fw-bold mt-5 mb-3">The Crash of '90: "The Anchor"</h3>
-            <p class="text-muted">
-                Following Ryan's catastrophic injury in December 1990, Cassidy's role in the band—and the family—transformed. Already close as siblings, they became inseparable.
+            <h3 class="fw-bold mt-5 mb-3 text-white">The Crash of '90</h3>
+            <p class="text-white-75">
+                The <em>Live in Chicago</em> (1990) album art captures the last time Ryan O'Connell stood on a stage. In December 1990, while driving back to Blacksburg on I-81 through a winter storm, Ryan was involved in a catastrophic black ice accident.
             </p>
-            <p class="text-muted">
-                Both Ryan and Cassidy are <strong>autistic</strong>. They share a hidden language of sensory processing and non-verbal cues that no one else fully understands. After the crash, Cassidy became Ryan's "Safe Person" and primary aide. She is his "Spotter" on stage, watching for signs of overstimulation or physical distress (like dysreflexia) that others might miss.
+            <p class="text-white-75">
+                The crash resulted in a T10 spinal cord injury, leaving him paralyzed from the waist down. The "Stalemate Year" of 1991 wasn't just about fighting the label; it was about Ryan fighting to reclaim his identity. Apex Records pressured the band to hide his wheelchair or force him to sit on a high stool to "look normal." Ryan refused. He spent the year welding a custom, heavy-duty pedalboard and modifying his guitar rig to work from a seated position, proving the "Engine" was still running.
             </p>
 
-            <div class="card bg-dark border-info shadow-lg mt-5 mb-5 overflow-hidden">
-                <div class="card-header bg-info bg-opacity-25 text-white fw-bold border-bottom border-info">
-                    <i class="fa-duotone fa-ticket me-2"></i>CONFIDENTIAL: The "Dream Number" Event (1996)
-                </div>
-                <div class="card-body p-4">
-                    <div class="row align-items-center">
-                        <div class="col-md-9">
-                            <h4 class="text-info fw-bold">The Accidental Billionaire</h4>
-                            <p class="text-light small">
-                                For years, fans wondered how the band could afford to reject millions in licensing deals. The answer wasn't record sales. It was Cassidy.
-                            </p>
-                            <p class="text-light small">
-                                In 1996, while stopping for gas in Daleville, VA, Cassidy bought a single lottery ticket. She didn't buy it to get rich; she bought it because she liked the visual pattern the numbers made on the scantron sheet.
-                            </p>
-                            <p class="text-light small fst-italic border-start border-2 border-info ps-3 my-3">
-                                "The numbers looked like a constellation. I just wanted to hold the paper."
-                            </p>
-                            <p class="text-light small mb-0">
-                                That ticket won the <strong>$2.04 Billion</strong> "American Dream" jackpot. Overwhelmed by the scale of the wealth, she famously handed the winning ticket to her sister Holly and asked for only one thing in return: <em>"Buy us a castle where no one can ever hurt us again."</em> (Holly bought "The Fortress" instead).
-                            </p>
-                        </div>
-                        <div class="col-md-3 text-center d-none d-md-block">
-                            <i class="fa-duotone fa-sparkles fa-5x text-info opacity-50"></i>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <h3 class="fw-bold mt-5 mb-3 text-white">The "Freight Dog" Reality</h3>
+            <p class="text-white-75">
+                Touring in the early 90s meant navigating a world built without him in mind. Venues rarely had ramps. Ryan often entered clubs through the loading dock, hauled up freight elevators alongside road cases and trash. 
+            </p>
+            <p class="text-white-75">
+                He relied on his cousins, Evan and Tyler, as his "Human Ramp." The twins developed a synchronized lift technique to carry him and his chair up fire escapes and narrow stairwells, ensuring he never missed a show. This gritty, unglamorous reality hardened the band's resolve and deepened their reliance on the "Family Unit."
+            </p>
 
-            <h3 class="fw-bold mt-5 mb-3">The "Friction" Aftermath</h3>
-            <p class="text-muted">
-                During the 1992 "Friction" scandal, Cassidy was the target of Julian Vance's depraved "Worship" book knockoff scheme. The subsequent "Tabloid Hell" of the 1994 trial painted her as a "Victim-Saint." She responded on 1995's <strong>The Warehouse Tapes</strong> with the "rage" track "Not Your Saint" and the transcendent 4-part prog-rock epic "Escape Velocity (Ad Astra)," which detailed her escape from the trauma and her rebirth as an artist.
+            <h3 class="fw-bold mt-5 mb-3 text-white">The "Friction" Catastrophe</h3>
+            <p class="text-white-75">
+                This context makes the 1992 "Friction" scandal even more harrowing. When executive Julian Vance demanded that Ryan and Cassidy perform a sexual act on camera, he was targeting a man who was <strong>less than two years</strong> into his life as a wheelchair user.
+            </p>
+            <p class="text-white-75">
+                During the infamous "Dirty Mirror" incident, Ryan wiped the cocaine away not just because he was naive, but because he was sitting at eye-level with the table. To him, the white powder looked like falling drywall dust from the crumbling warehouse ceiling—just more filth he had to deal with. Vance's subsequent retaliation wasn't just professional malpractice; it was the exploitation of a disabled artist. Ryan's roar of <strong>"SHE'S! MY! SISTER!"</strong> was the sound of a man reclaiming the power the industry had tried to strip from him.
             </p>
 
         </div>
@@ -76,14 +59,14 @@ $pageTitle = "Cassidy O'Connell - The Stardust Engine";
         <div class="col-lg-4">
             <div class="sticky-top" style="top: 8rem;">
                 <?php $props = [
-                    'title' => 'Cassidy O\'Connell',
-                    'imgSrc' => 'https://assets.raggiesoft.com/stardust-engine/images/band-members/cassidy.jpg',
-                    'imgAlt' => 'Headshot of Cassidy O\'Connell',
-                    'variant' => 'pact', // Maps to Pink
-                    'description' => "<strong>Role:</strong> Lead Vocals, Piano, Synths<br>
-                                      <strong>Age (in 1987):</strong> 20<br>
-                                      <strong>Status:</strong> The Stardust (Unbroken)<br>
-                                      <strong>Net Worth:</strong> Classified (Winner)",
+                    'title' => 'Ryan O\'Connell',
+                    'imgSrc' => 'https://assets.raggiesoft.com/stardust-engine/images/band-members/ryan.jpg',
+                    'imgAlt' => 'Headshot of Ryan O\'Connell in his wheelchair',
+                    'variant' => 'axiom', // Cyan
+                    'description' => "<strong>Role:</strong> Lead Vocals, Lead Guitar<br>
+                                      <strong>Age (in 1987):</strong> 23<br>
+                                      <strong>CPI Status:</strong> Alumnus, Class of '89<br>
+                                      <strong>Status:</strong> The Engine (Unbroken)",
                     'buttonProps' => [
                         'text' => 'Back to The Band', 
                         'href' => '/engine-room/artists/stardust-engine/band', 

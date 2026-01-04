@@ -3,7 +3,9 @@
 $pageTitle = "Evan Wright - The Stardust Engine";
 ?>
 
-<div class="container py-5">
+<div class="starfield-container"><div class="starfield-twinkling"></div></div>
+
+<div class="container py-5 position-relative z-1">
     <div class="row g-5">
         
         <div class="col-lg-8">
@@ -12,41 +14,41 @@ $pageTitle = "Evan Wright - The Stardust Engine";
 
             <nav aria-label="breadcrumb" class="mb-4">
                 <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="/engine-room/artists/stardust-engine/band">The Band</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Evan Wright</li>
+                    <li class="breadcrumb-item"><a href="/engine-room/artists/stardust-engine/band" class="text-info">The Band</a></li>
+                    <li class="breadcrumb-item active text-white-50" aria-current="page">Evan Wright</li>
                 </ol>
             </nav>
 
-            <p class="fs-5 text-muted">
+            <p class="fs-5 text-white-75">
                 The "Texture" of the band, Evan (Age 20 in 1987) is the secret weapon that makes their sound so full. As the cousin of the O'Connells and the identical twin brother of Tyler, his role is to provide the rich, melodic basslines and atmospheric rhythm guitar that form the foundation for Ryan's solos.
             </p>
-            <p class="text-muted">
+            <p class="text-white-75">
                 He is the quiet, steady presence in the "engine room," and his bond with his twin brother is legendary. On tour during the Apex era, Evan and Tyler were inseparable, famously taking one of the two cramped motel beds while the three O'Connell siblings piled into the other.
             </p>
 
-            <h3 class="fw-bold mt-5 mb-3">The Crash of '90: "The Human Ramp"</h3>
-            <p class="text-muted">
+            <h3 class="fw-bold mt-5 mb-3 text-white">The Crash of '90: "The Human Ramp"</h3>
+            <p class="text-white-75">
                 After Ryan's injury in 1990, the reality of touring changed instantly. While Holly and Cassidy handled the private medical logistics (transfers, catheterization), it was Evan and Tyler who handled the brute force required to navigate a world built without ramps.
             </p>
-            <p class="text-muted">
+            <p class="text-white-75">
                 In 1991, venues rarely had elevators. If the band had to play a second-floor club, or if the "accessible ramp" was a dangerous piece of plywood, Evan and Tyler became the <strong>"Human Ramp."</strong> The twins developed a silent, synchronized lifting technique—Tyler on the back handles, Evan gripping the frame by the knees—to carry Ryan and his chair up fire escapes, loading docks, and stairwells.
             </p>
-            <p class="text-muted">
+            <p class="text-white-75">
                 To Evan, this wasn't a burden; it was the job. Just as the bass carries the melody, the bassist carries the singer.
             </p>
 
-            <h3 class="fw-bold mt-5 mb-3">Post-Apex Freedom</h3>
-            <p class="text-muted">
+            <h3 class="fw-bold mt-5 mb-3 text-white">Post-Apex Freedom</h3>
+            <p class="text-white-75">
                 During the "Freedom Era," Evan's contributions became even more pronounced. His driving basslines on tracks like "Garbage" (from *The Warehouse Tapes*) and his ability to lock in with his brother's "Human Metronome" timing allowed the band to finally explore the raw, unpolished 80s rock sound that Apex Records had suppressed.
             </p>
-            <p class="text-muted fs-5">
+            <p class="text-white-75 fs-5">
                 <strong>Wardrobe:</strong> This rejection of their old label defines his modern stage presence. After the 'Friction' scandal, Evan shed the polished 'Apex look' for good. On stage, he now proudly wears what he always has: jeans, sneakers, and a CPI Alumni t-shirt or hoodie, looking less like a rock star and more like the proud 'Forger' he is.
             </p>
 
         </div>
 
         <div class="col-lg-4">
-            <div style="top: 8rem;">
+            <div class="sticky-top" style="top: 8rem;">
                 <?php $props = [
                     'title' => 'Evan Wright',
                     'imgSrc' => 'https://assets.raggiesoft.com/stardust-engine/images/band-members/evan.jpg',

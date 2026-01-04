@@ -3,7 +3,9 @@
 $pageTitle = "Tyler Wright - The Stardust Engine";
 ?>
 
-<div class="container py-5">
+<div class="starfield-container"><div class="starfield-twinkling"></div></div>
+
+<div class="container py-5 position-relative z-1">
     <div class="row g-5">
         
         <div class="col-lg-8">
@@ -12,40 +14,40 @@ $pageTitle = "Tyler Wright - The Stardust Engine";
 
             <nav aria-label="breadcrumb" class="mb-4">
                 <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="/engine-room/artists/stardust-engine/band">The Band</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Tyler Wright</li>
+                    <li class="breadcrumb-item"><a href="/engine-room/artists/stardust-engine/band" class="text-info">The Band</a></li>
+                    <li class="breadcrumb-item active text-white-50" aria-current="page">Tyler Wright</li>
                 </ol>
             </nav>
 
-            <p class="fs-5 text-muted">
+            <p class="fs-5 text-white-75">
                 The "Power." Tyler (Age 20 in 1987) is a percussion legend, renowned in the industry as "The Human Metronome" for his superhuman, clock-like timing.
             </p>
-            <p class="text-muted">
+            <p class="text-white-75">
                 His custom-built drum kit is a famous piece of rock lore, a massive 360-degree setup that dwarfs even the most extravagant kits of the prog-rock era. He is the source of the band's iconic, explosive, massive 80s gated reverb snare sound that defined their anthems.
             </p>
-            <p class="text-muted">
+            <p class="text-white-75">
                 As Evan's identical twin, he shares a near-psychic connection with his brother, forming the tightest rhythm section in 80s rock. He is the thundering heartbeat of the band, the "Forger" providing the industrial power that gives the "Engine" its name.
             </p>
             
-            <h3 class="fw-bold mt-5 mb-3">The Crash of '90: "The Human Ramp"</h3>
-            <p class="text-muted">
+            <h3 class="fw-bold mt-5 mb-3 text-white">The Crash of '90: "The Human Ramp"</h3>
+            <p class="text-white-75">
                 Following Ryan's paralysis in 1990, the twins' role in the band went beyond music. In the early 90s, "accessibility" was a legal theory, not a reality. Venues often lacked ramps, elevators, or basic accommodations.
             </p>
-            <p class="text-muted">
+            <p class="text-white-75">
                 Tyler and Evan became Ryan's "Human Ramp." They developed a synchronized lifting technique to carry Ryan and his manual chair up fire escapes, loading docks, and narrow stairwells. While Holly and Cassidy handled the medical logistics, Tyler provided the brute strength required to physically move the tour. To this day, he is one of the few people Ryan trusts to lift him.
             </p>
 
-            <h3 class="fw-bold mt-5 mb-3">The "Ironhead" Connection</h3>
-            <p class="text-muted">
+            <h3 class="fw-bold mt-5 mb-3 text-white">The "Ironhead" Connection</h3>
+            <p class="text-white-75">
                 Tyler is arguably the most passionate "Ironhead" in the group. His ability to replicate the sound of a full marching band drumline was the key to the success of the "Forgers' Fight Song" on the *Live at The Crucible* album.
             </p>
-            <p class="text-muted fs-5">
+            <p class="text-white-75 fs-5">
                 <strong>Wardrobe:</strong> This rejection of their old label defines his modern stage presence. After the 'Friction' scandal, Tyler shed the polished 'Apex look' for good. On stage, he now proudly wears what he always has: jeans, sneakers, and a CPI Alumni t-shirt or hoodie, looking less like a rock star and more like the proud 'Ironhead' he is.
             </p>
         </div>
 
         <div class="col-lg-4">
-            <div style="top: 8rem;">
+            <div class="sticky-top" style="top: 8rem;">
                 <?php $props = [
                     'title' => 'Tyler Wright',
                     'imgSrc' => 'https://assets.raggiesoft.com/stardust-engine/images/band-members/tyler.jpg',

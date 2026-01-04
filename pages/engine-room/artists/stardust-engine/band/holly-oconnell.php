@@ -5,7 +5,9 @@
 $pageTitle = "Holly O'Connell - The Stardust Engine";
 ?>
 
-<div class="container py-5">
+<div class="starfield-container"><div class="starfield-twinkling"></div></div>
+
+<div class="container py-5 position-relative z-1">
     <div class="row g-5">
         
         <div class="col-lg-8">
@@ -14,77 +16,43 @@ $pageTitle = "Holly O'Connell - The Stardust Engine";
 
             <nav aria-label="breadcrumb" class="mb-4">
                 <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="/engine-room/artists/stardust-engine/band">The Band</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Holly O'Connell</li>
+                    <li class="breadcrumb-item"><a href="/engine-room/artists/stardust-engine/band" class="text-info">The Band</a></li>
+                    <li class="breadcrumb-item active text-white-50" aria-current="page">Holly O'Connell</li>
                 </ol>
             </nav>
 
-            <p class="fs-5 text-muted">
+            <p class="fs-5 text-white-75">
                 The "Anchor". Holly (Age 18 in 1987) is the most formidable member of The Stardust Engine, and she has never played a note on stage. A child prodigy, she accelerated her education to start college at 16, allowing her to join her older siblings and cousins at CPI.
             </p>
-            <p class="text-muted">
+            <p class="text-white-75">
                 While still a student, she took on the role of the band's manager. Her official role was to act as the emotional peacemaker—famously pulling Ryan and Cassidy into a "three-way hug" when they argued over music, reminding them "You're both right. And you're both idiots."
             </p>
 
-            <h3 class="fw-bold mt-5 mb-3">The Crash of '90: "The Gatekeeper"</h3>
-            <p class="text-muted">
+            <h3 class="fw-bold mt-5 mb-3 text-white">The Crash of '90: "The Gatekeeper"</h3>
+            <p class="text-white-75">
                 When Ryan was paralyzed in December 1990, Holly's role expanded from Business Manager to Medical Director. While Cassidy became Ryan's day-to-day "Safe Person," Holly built the infrastructure that kept him alive and working.
             </p>
-            <p class="text-muted">
-                She holds **Durable Power of Attorney** for Ryan, giving her the legal authority to make medical decisions in an emergency. She carries signed, notarized HIPAA release forms in her briefcase at all times, allowing her to speak directly to his doctors and surgeons.
+            <p class="text-white-75">
+                She holds <strong>Durable Power of Attorney</strong> for Ryan, giving her the legal authority to make medical decisions in an emergency. She carries signed, notarized HIPAA release forms in her briefcase at all times, allowing her to speak directly to his doctors and surgeons.
             </p>
             
-            <h3 class="fw-bold mt-5 mb-3">The "Friction" Nuke</h3>
-            <p class="text-muted">
+            <h3 class="fw-bold mt-5 mb-3 text-white">The "Friction" Nuke</h3>
+            <p class="text-white-75">
                 Holly's true power was revealed during the 1992 "Friction" scandal. By this time, she was a 2L law student. When Julian Vance made his criminal demand, Holly transformed into "Holly the Shark". She secured the evidence that forced Apex Records to surrender the masters, using the freedom to found <strong>Engine Room Records, LLC</strong>.
             </p>
 
-            <div class="card bg-dark border-success shadow-lg mt-5 overflow-hidden">
+            <div class="card bg-dark bg-opacity-75 border-success shadow-lg mt-5 overflow-hidden">
                 <div class="card-header bg-success bg-opacity-25 text-white fw-bold border-bottom border-success">
                     <i class="fa-duotone fa-money-bill-wave me-2"></i>CONFIDENTIAL: The "American Dream" Event
                 </div>
                 <div class="card-body p-4">
-                    <div class="row align-items-center">
-                        <div class="col-md-8">
-                            <h4 class="text-success fw-bold">The $2.04 Billion Catalyst</h4>
-                            <p class="text-light small">
-                                In late 1996, shortly after the release of <em>The Warehouse Tapes</em>, <strong>Cassidy O'Connell</strong> purchased a single lottery ticket at a gas station in Daleville, VA. She matched all numbers.
-                            </p>
-                            <p class="text-light small">
-                                The family chose the "Lump Sum" option. Instead of spending it, Cassidy handed the check to Holly with a single instruction: <em>"Make us safe."</em>
-                            </p>
-                            <p class="text-light small mb-0">
-                                This moment defined Holly's career. Realizing that this level of wealth made them targets, she went back to school. Over the next decade, she acquired a staggering arsenal of financial credentials to build an impenetrable fortress around her family's future.
-                            </p>
-                        </div>
-                        <div class="col-md-4 text-end d-none d-md-block">
-                            <i class="fa-duotone fa-vault fa-5x text-success opacity-50"></i>
-                        </div>
                     </div>
-
-                    <hr class="border-secondary opacity-50 my-4">
-
-                    <div>
-                        <h5 class="text-white fw-bold mb-2"><i class="fa-solid fa-chart-line-up me-2 text-success"></i>Fiduciary Armor (The Timeline)</h5>
-                        <div class="d-flex flex-wrap gap-2">
-                            <span class="skill-pill" title="1994: The Foundation"><i class="fa-solid fa-stamp me-1"></i>Notary Public ('94)</span>
-                            <span class="skill-pill" title="1997: Defense against IRS"><i class="fa-solid fa-file-invoice-dollar me-1"></i>Enrolled Agent ('97)</span>
-                            <span class="skill-pill" title="1999: Structuring the Fortune"><i class="fa-solid fa-scale-balanced me-1"></i>LL.M. Taxation ('99)</span>
-                            <span class="skill-pill" title="2003: Architect of the Trust"><i class="fa-solid fa-landmark me-1"></i>CTFA ('03)</span>
-                            <span class="skill-pill" title="2006: Managing the Surplus"><i class="fa-solid fa-briefcase me-1"></i>CFA Charterholder ('06)</span>
-                            <span class="skill-pill" title="2009: Hedging against Recession"><i class="fa-solid fa-graduation-cap me-1"></i>M.S. Quant Finance ('09)</span>
-                            <span class="skill-pill" title="2014: Auditing Royalties"><i class="fa-solid fa-magnifying-glass-dollar me-1"></i>Cr.FA (Forensic) ('14)</span>
-                            <span class="skill-pill" title="2016: The Bankruptcy Expert"><i class="fa-solid fa-tombstone me-1"></i>CIRA (Insolvency) ('16)</span>
-                        </div>
-                    </div>
-
-                </div>
             </div>
 
         </div>
 
         <div class="col-lg-4">
-            <div style="top: 8rem;">
+            <div class="sticky-top" style="top: 8rem;">
                 <?php $props = [
                     'title' => 'Holly O\'Connell',
                     'imgSrc' => 'https://assets.raggiesoft.com/stardust-engine/images/band-members/holly.jpg',
@@ -104,7 +72,7 @@ $pageTitle = "Holly O'Connell - The Stardust Engine";
                 
                 <div class="card bg-black border-secondary mt-4 shadow-sm">
                     <div class="card-body p-3">
-                        <small class="text-muted text-uppercase d-block mb-1">Assets Under Management</small>
+                        <small class="text-white-50 text-uppercase d-block mb-1">Assets Under Management</small>
                         <div class="d-flex justify-content-between align-items-center">
                             <span class="h4 text-success font-monospace mb-0">$2.4 Billion</span>
                             <i class="fa-solid fa-lock text-secondary"></i>
@@ -112,7 +80,7 @@ $pageTitle = "Holly O'Connell - The Stardust Engine";
                         <div class="progress mt-2" style="height: 4px;">
                             <div class="progress-bar bg-success" role="progressbar" style="width: 100%"></div>
                         </div>
-                        <small class="text-muted d-block mt-2 fst-italic" style="font-size: 0.75rem;">
+                        <small class="text-white-50 d-block mt-2 fst-italic" style="font-size: 0.75rem;">
                             *Includes The Fortress, Fleet, and The Trust.
                         </small>
                     </div>
