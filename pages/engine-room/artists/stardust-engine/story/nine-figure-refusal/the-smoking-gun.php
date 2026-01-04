@@ -2,7 +2,7 @@
 // pages/engine-room/artists/stardust-engine/story/nine-figure-refusal/the-smoking-gun.php
 // EVIDENCE ITEM #00-C: The Letter (The "Smoking Gun")
 // Context: The moment Jameson Frost tried to save $0.50 and lost $600 Million.
-// UPDATED: Added Narrative Stepper Component.
+// UPDATED: Added USPIS "Federal Prison" Context.
 
 $pageTitle = "Evidence #00-C: The Smoking Gun - Engine Room History";
 ?>
@@ -215,6 +215,22 @@ $pageTitle = "Evidence #00-C: The Smoking Gun - Engine Room History";
                         <i class="fa-solid fa-gavel me-2"></i>
                         <strong>The Result:</strong> Because the document contained financial lies *and* was sent via USPS, it triggered <strong>18 U.S.C. § 1341 (Mail Fraud)</strong>. This single envelope gave Holly federal jurisdiction.
                     </div>
+
+                    <div class="alert alert-dark border-start border-4 border-light bg-black text-white p-4 mt-4 shadow-sm">
+                        <div class="d-flex align-items-start">
+                            <i class="fa-duotone fa-handcuffs text-danger fs-2 me-3 mt-1"></i>
+                            <div>
+                                <h5 class="fw-bold text-uppercase text-danger">The "Mail Cop" Factor</h5>
+                                <p class="small text-white-50 mb-2">
+                                    Most executives fear the SEC. Holly O'Connell knows better. She called the <strong>United States Postal Inspection Service (USPIS)</strong>.
+                                </p>
+                                <p class="small text-white-50 mb-0 fst-italic">
+                                    "The SEC files lawsuits. The USPIS executes search warrants. They are the oldest federal law enforcement agency in the country, and they have a <strong>98% conviction rate</strong>. When you use the mail to defraud someone, you aren't getting fined. You are going to federal prison."
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
