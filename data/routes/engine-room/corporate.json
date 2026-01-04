@@ -1,32 +1,43 @@
 {
+  "common": {
+    "site": "engine-room-records",
+    "showSidebar": true,
+    "brandFont": ["Playfair Display", "serif"],
+    "sidebar": "engine-room/corporate/sidebar-corporate",
+    "headerMenu": "engine-room/corporate/header-corporate",
+    "footer": "engine-room/corporate/footer-corporate",
+    "siteName": "The O'Connell Family Trust",
+    "navbarBrandLogo": "https://assets.raggiesoft.com/engine-room-records/logos/trust-seal-white.png",
+    "navbarBrandText": "The Trust",
+    "navbarBrandLink": "/engine-room/corporate"
+  },
+  "/engine-room/corporate": {
+    "view": "pages/engine-room/corporate/overview",
+    "title": "Corporate Gateway | The Trust",
+    "ogDescription": "Governance, Oversight, and Operations."
+  },
   "/engine-room/corporate/structure": {
-    "title": "Corporate Structure & Governance",
-    "site": "portfolio",
-    "showSidebar": false,
-    "navbarBrandLogo": "https://assets.raggiesoft.com/engine-room-records/images/logos/engine-room-records-logo.png",
-    "navbarBrandText": "Engine Room<span class=\"d-none d-md-inline\"> Records</span>",
-    "navbarBrandLink": "/engine-room",
-    "navbarBrandAlt": "Engine Room Records Official Seal",
-    "navbarBrandClass": "rounded-0 navbar-brand-corporate-img"
+    "view": "pages/engine-room/corporate/structure",
+    "title": "Organizational Structure | The Architecture"
   },
-  "/engine-room/corporate/facilities": {
-    "title": "Facilities: The Jessica Miller Center",
-    "site": "portfolio",
-    "showSidebar": false
-  },
-  "/engine-room/corporate/fleet": {
-    "title": "Logistics Fleet Capabilities",
-    "site": "portfolio",
-    "showSidebar": false
-  },
-  "/engine-room/corporate/systems": {
-    "title": "Systems Status Dashboard",
-    "site": "portfolio",
-    "showSidebar": false
+  "/engine-room/corporate/aethelgard": {
+    "view": "pages/engine-room/corporate/aethelgard",
+    "title": "Aethelgard Holdings | Strategic Liquidation"
   },
   "/engine-room/corporate/leadership": {
-    "title": "Leadership & Directors",
-    "site": "portfolio",
-    "showSidebar": false
+    "view": "pages/engine-room/corporate/leadership",
+    "title": "Executive Leadership | The Miller Unit"
+  },
+  "/engine-room/corporate/systems": {
+    "view": "pages/engine-room/corporate/systems",
+    "title": "Systems Architecture | Intranet"
+  },
+  "/engine-room/corporate/fleet": {
+    "view": "pages/engine-room/corporate/fleet",
+    "title": "Fleet Command | Logistics"
+  },
+  "/engine-room/corporate/acquisition-plan": {
+    "view": "pages/engine-room/corporate/acquisition-plan",
+    "title": "Case 18-11492 | The Omni-Global Acquisition"
   }
 }
