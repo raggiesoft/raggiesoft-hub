@@ -116,8 +116,6 @@ $pageTitle = "Stardust Blacksburg - The Ironwood Collective";
                 <h6 class="fw-bold text-uppercase text-primary small mb-1">Corporate Transparency</h6>
                 <p class="small text-muted mb-0 font-monospace">
                     <strong>Stardust Blacksburg, LLC</strong> is a limited liability company organized under the laws of the <strong>State of Delaware</strong> (File No. 4992-B). It is a wholly-owned subsidiary of Stardust Properties, LLC (Delaware).
-                    <br>
-                    <em>Operating Authority:</em> Commonwealth of Virginia State Corporation Commission ID: S-88392.
                 </p>
             </div>
         </div>
