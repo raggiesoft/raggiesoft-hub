@@ -2,7 +2,7 @@
 /**
  * COMPONENT: Corporate Letterhead Generator
  * PATH: /includes/components/corporate/letterhead.php
- * Updated: WCAG Compliance (Forced Light Mode) & URL Updates
+ * Updated: WCAG Compliance (Forced Light Mode) & URL Updates & Reduced Motion Support
  */
 
 // Default Settings
@@ -38,6 +38,8 @@ if ($current_brand === 'pacific-rim') {
     
     // UPDATED URL
     $brand_url = "raggiesoft.com/engine-room";
+    
+    // Ensure the logo path is correct based on your previous file uploads
     $brand_logo = '<img src="https://assets.raggiesoft.com/engine-room-records/images/logos/engine-room-records-logo.png" alt="Official Seal" style="width: 100px; mix-blend-mode: multiply; filter: contrast(120%);">';
     
     // Signature: The CEO
@@ -46,6 +48,7 @@ if ($current_brand === 'pacific-rim') {
     $sig_creds = "Bar Admissions: VA, NY, CA, DE &bull; CFA &bull; Cr.FA &bull; CIRA";
 }
 
+// Generate the rotation style string, but we will let CSS override it if needed
 $rotation_style = $rotation ? "transform: rotate({$rotation}deg);" : "";
 ?>
 
@@ -66,6 +69,14 @@ $rotation_style = $rotation ? "transform: rotate({$rotation}deg);" : "";
     
     /* Ensure links inside don't turn blue/invisible in dark mode */
     .physical-document a { color: #000000 !important; text-decoration: underline; }
+
+    /* ACCESSIBILITY: PREFERS REDUCED MOTION */
+    @media (prefers-reduced-motion: reduce) {
+        .physical-document {
+            transform: none !important; /* Forces the document to be straight */
+            transition: none !important; /* Removes the hover movement */
+        }
+    }
 </style>
 
 <div class="card border-0 shadow-lg mx-auto physical-document" 

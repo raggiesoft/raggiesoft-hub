@@ -6,106 +6,11 @@
 // UPDATED: WCAG Compliance (Text Contrast Overrides) & Grainy Image Filter.
 
 $pageTitle = "The Zenith Report: The Bus Ride & The Leak";
+
+// INJECT THE SHARED STYLES HERE
+include ROOT_PATH . '/includes/components/styles/zenith-theme.php';
 ?>
 
-<style>
-    /* NEWSPAPER THEME - BASE STYLES */
-    .zenith-paper {
-        background-color: #f9f9f9;
-        color: #1a1a1a;
-        transition: background-color 0.3s ease, color 0.3s ease;
-        border: 1px solid #d3d3d3;
-    }
-    
-    /* Article Rotations */
-    .zenith-paper-1 { transform: rotate(1deg); }
-    .zenith-paper-2 { transform: rotate(-1deg); }
-    
-    /* SECURITY FOOTAGE FILTER (The "Newspaper Print" Look) */
-    .security-footage-print {
-        filter: grayscale(100%) contrast(140%) brightness(110%) sepia(30%);
-        border: 1px solid #000;
-        mix-blend-mode: multiply; /* Helps it sit "in" the paper */
-        display: block;
-        max-width: 100%;
-    }
-    
-    /* Fix for dark mode blend issue */
-    [data-bs-theme="dark"] .security-footage-print {
-        mix-blend-mode: normal;
-        opacity: 0.9;
-        filter: grayscale(100%) contrast(120%) brightness(80%);
-    }
-
-    /* PRESS RELEASE: FORCED LIGHT MODE (Skeuomorphic Physical Paper) */
-    /* This ensures AAA Contrast by keeping it Black Text on White Paper always */
-    .zenith-paper-3 { 
-        transform: rotate(0deg); 
-        box-shadow: 0 1rem 3rem rgba(0,0,0,0.175) !important;
-        background-color: #ffffff !important; 
-        color: #000000 !important;
-    }
-    /* Force child elements to black/dark gray */
-    .zenith-paper-3 p, 
-    .zenith-paper-3 h4, 
-    .zenith-paper-3 h5, 
-    .zenith-paper-3 li,
-    .zenith-paper-3 .text-muted {
-        color: #212529 !important;
-    }
-    .zenith-paper-3 .border-dark { border-color: #000000 !important; }
-    .zenith-paper-3 .bg-light { background-color: #f8f9fa !important; }
-
-    /* NEWSPAPER HEADERS */
-    .zenith-header {
-        background-color: #ffffff;
-        border-bottom: 3px solid #000;
-        font-family: 'Times New Roman', serif;
-        color: #000;
-    }
-
-    .zenith-body {
-        font-family: 'Georgia', serif;
-        font-size: 1.1rem;
-        line-height: 1.8;
-    }
-
-    /* DARK MODE OVERRIDES FOR NEWSPAPERS (Inverted colors for readability) */
-    [data-bs-theme="dark"] .zenith-paper {
-        background-color: #15171e; /* Dark Slate */
-        color: #e0e0e0; /* Light Grey Text */
-        border-color: #444 !important;
-    }
-
-    [data-bs-theme="dark"] .zenith-header {
-        background-color: #1c2029;
-        border-bottom: 3px solid #e0e0e0;
-    }
-    
-    /* Force text colors to flip in dark mode */
-    [data-bs-theme="dark"] .zenith-header h2,
-    [data-bs-theme="dark"] .zenith-header span {
-        color: #e0e0e0 !important;
-    }
-
-    [data-bs-theme="dark"] .zenith-paper .text-dark {
-        color: #ffffff !important; /* Force black text to white */
-    }
-    
-    [data-bs-theme="dark"] .zenith-paper .text-muted {
-        color: #adb5bd !important; /* Force muted text to light grey */
-    }
-
-    [data-bs-theme="dark"] .zenith-paper .border-dark {
-        border-color: #6c757d !important;
-    }
-    
-    [data-bs-theme="dark"] .blockquote-custom {
-        background-color: rgba(255, 255, 255, 0.05);
-        border-left-color: #dc3545;
-        color: #e0e0e0;
-    }
-</style>
 
 <div class="container py-5">
     
