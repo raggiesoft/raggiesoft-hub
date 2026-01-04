@@ -177,7 +177,7 @@ $pageTitle = "The Approach Vector - Evidence Item #00";
                     <p>
                         "No," Cassidy whispered, terror in her eyes. "No. Not again."
                     </p>
-                    <p class="text-white-50 fst-italic">
+                    <p class="fst-italic">
                         She looked at Ryan. It was 1992 all over again. The photo shoot. The mirror. The implication.
                     </p>
                     <p>
@@ -189,7 +189,7 @@ $pageTitle = "The Approach Vector - Evidence Item #00";
                     <p>
                         Ryan O'Connell stopped rolling. His expression went from "vacation mode" to "cold dead stare."
                     </p>
-                    <p class="text-white fw-bold">
+                    <p class="fw-bold">
                         "You have exactly five seconds," Ryan said, his voice dangerously quiet, "to delete that file."
                     </p>
                     
