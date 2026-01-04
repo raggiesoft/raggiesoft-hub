@@ -25,23 +25,23 @@ $pageTitle = "The Crash of '90 - The Stardust Engine Lore";
 
     <div class="row justify-content-center mb-5">
         <div class="col-lg-10">
-            <div class="card bg-dark border-danger shadow-lg">
-                <div class="card-header bg-danger bg-opacity-25 text-white border-bottom border-danger fw-bold d-flex justify-content-between align-items-center">
-                    <span><i class="fa-duotone fa-file-medical-alt me-2 text-white"></i>Virginia State Police // Report #90-81-114</span>
+            <div class="card bg-body-tertiary border-danger shadow-lg">
+                <div class="card-header bg-danger bg-opacity-25 text-body-emphasis border-bottom border-danger fw-bold d-flex justify-content-between align-items-center">
+                    <span><i class="fa-duotone fa-file-medical-alt me-2 text-danger"></i>Virginia State Police // Report #90-81-114</span>
                     <span class="badge bg-black text-white border border-danger">CRITICAL</span>
                 </div>
-                <div class="card-body font-monospace small text-white p-4">
-                    <div class="row mb-3 text-white-75">
+                <div class="card-body font-monospace small text-body-secondary p-4">
+                    <div class="row mb-3">
                         <div class="col-md-4">DATE: Dec 10, 1990</div>
                         <div class="col-md-4">TIME: 23:42 EST</div>
                         <div class="col-md-4">LOC: I-81 NB, Exit 98 (Newbern)</div>
                     </div>
                     <hr class="border-danger opacity-50">
-                    <div class="text-white-75">
-                        <p class="mb-2"><strong class="text-white">CONDITIONS:</strong> Heavy Snow, Visibility < 50ft. Road surface iced. Winter Weather Ban pending.</p>
-                        <p class="mb-2"><strong class="text-white">VEHICLE 1 (Victim):</strong> 1988 Holt Freighter Van (Touring Vehicle). Traveling North at approx 40 MPH in right lane. Hazard lights active.</p>
-                        <p class="mb-2"><strong class="text-white">VEHICLE 2 (At Fault):</strong> Commercial Sedan. Traveling North at est. 65-70 MPH. Driver lost control attempting to pass, clipping Vehicle 1's rear quarter panel.</p>
-                        <p class="mb-0"><strong class="text-white">OUTCOME:</strong> Vehicle 1 spun off roadway, rolling twice into the embankment. Driver (R. O'Connell) pinned requiring extraction. Four passengers sustained minor injuries. Driver airlifted to Star City General Hospital.</p>
+                    <div>
+                        <p class="mb-2"><strong class="text-body-emphasis">CONDITIONS:</strong> Heavy Snow, Visibility < 50ft. Road surface iced. Winter Weather Ban pending.</p>
+                        <p class="mb-2"><strong class="text-body-emphasis">VEHICLE 1 (Victim):</strong> 1988 Holt Freighter Van (Touring Vehicle). Traveling North at approx 40 MPH in right lane. Hazard lights active.</p>
+                        <p class="mb-2"><strong class="text-body-emphasis">VEHICLE 2 (At Fault):</strong> Commercial Sedan. Traveling North at est. 65-70 MPH. Driver lost control attempting to pass, clipping Vehicle 1's rear quarter panel.</p>
+                        <p class="mb-0"><strong class="text-body-emphasis">OUTCOME:</strong> Vehicle 1 spun off roadway, rolling twice into the embankment. Driver (R. O'Connell) pinned requiring extraction. Four passengers sustained minor injuries. Driver airlifted to Star City General Hospital.</p>
                     </div>
                 </div>
             </div>
