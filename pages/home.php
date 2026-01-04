@@ -6,7 +6,7 @@
   <div class="position-absolute top-0 start-0 end-0 bottom-0" style="background-color: rgba(0, 0, 0, 0.5);"></div>
 
   <div class="position-relative z-1 d-flex flex-column align-items-center">
-    <h1 id="hub-hero-title" class="display-3 fw-bold text-uppercase brand-font text-white" style="text-shadow: 2px 2px 4px rgba(0,0,0,0.6);">
+    <h1 id="hub-hero-title" class="display-3 fw-bold text-uppercase brand-font text-white" style="color: #ffffff !important; text-shadow: 2px 2px 4px rgba(0,0,0,0.6);">
       RaggieSoft
     </h1>
     <h2 class="mt-3 fs-4 fw-light text-white" style="max-width: 40rem; text-shadow: 1px 1px 2px rgba(0,0,0,0.8);">
