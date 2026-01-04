@@ -2,7 +2,7 @@
 // pages/engine-room/artists/origin.php
 // Artist Profile: Origin
 // Context: The "First Signing" and the source of the "Safe Harbor" melody.
-// UPDATED: Corrected Backstory (80s Origins, The Catalog Buyback).
+// UPDATED: Full Lyrics for "Kaleidoscope Sun" + 1983 Production Data.
 
 $pageTitle = "Origin - Engine Room Records";
 ?>
@@ -45,7 +45,6 @@ $pageTitle = "Origin - Engine Room Records";
                         <li class="mb-2"><strong class="text-body-emphasis">Formed:</strong> London, UK (1982)</li>
                         <li class="mb-2"><strong class="text-body-emphasis">Status:</strong> Active (Duo)</li>
                         <li class="mb-2"><strong class="text-body-emphasis">Location:</strong> Williamsport, MD</li>
-                        <li><strong class="text-body-emphasis">Key Sound:</strong> Flute Solos, Gated Reverb, Orchestral Synths</li>
                     </ul>
                 </div>
             </div>
@@ -72,19 +71,61 @@ $pageTitle = "Origin - Engine Room Records";
 
             <h2 class="h4 fw-bold text-body-emphasis border-bottom pb-2 mt-5 mb-4">Key Track: "Kaleidoscope Sun"</h2>
             
-            <div class="p-4 bg-black text-white rounded mb-4 border border-secondary">
-                <div class="d-flex align-items-center mb-3">
-                    <i class="fa-duotone fa-compact-disc fs-2 text-warning me-3"></i>
-                    <div>
-                        <h5 class="mb-0 fw-bold">Kaleidoscope Sun</h5>
-                        <small class="text-white-50">Album: The First Era (1985)</small>
+            <div class="card bg-black text-white border-secondary mb-4">
+                <div class="card-header border-bottom border-secondary d-flex justify-content-between align-items-center">
+                    <span class="text-uppercase small fw-bold font-monospace text-warning"><i class="fa-duotone fa-waveform-lines me-2"></i>Audio Archive: ERR-83-009</span>
+                    <span class="badge bg-secondary text-white border border-secondary">1983</span>
+                </div>
+                <div class="card-body">
+                    <div class="row mb-3 border-bottom border-secondary pb-3">
+                        <div class="col-md-6">
+                            <h5 class="fw-bold mb-0">Kaleidoscope Sun</h5>
+                            <small class="text-white-50">Album: Origin (Self-Titled)</small>
+                        </div>
+                        <div class="col-md-6 text-md-end font-monospace small text-white-50">
+                            BPM: 120 // Key: D Maj // Gated Snare
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-7 border-end border-secondary">
+                            <h6 class="text-uppercase text-white-50 small fw-bold mb-3">Lyrics</h6>
+                            <div class="font-monospace small text-white-75" style="max-height: 300px; overflow-y: auto;">
+                                <p>The city sleeps in shades of grey, another dawn begins<br>
+                                Another street, another day, where no one ever wins<br>
+                                A hollow echo in the square, a promise whispered low<br>
+                                Of somewhere else, beyond compare, a place where true things grow</p>
+
+                                <p class="text-warning"><em>[Chorus]</em><br>
+                                Do you hear it? A whisper on the wind, a melody so clear?<br>
+                                (Oh, the true light gleams...)<br>
+                                Will you come back? To where the true light gleams, and home is always near?</p>
+
+                                <p class="text-info"><em>[Flute Interlude - The "Safe Harbor" Code]</em></p>
+
+                                <p>We chase the shadows on the wall, illusions that we build<br>
+                                Afraid to leap, afraid to fall, a prophecy fulfilled<br>
+                                The painted smiles, a masquerade, to hide the fading spark<br>
+                                A fragile fortress we have made, against the growing dark</p>
+
+                                <p>Through fractured prisms, light divides, in patterns sharp and bright<br>
+                                A thousand paths, where fate presides, between the day and night<br>
+                                Is it a vision, just a trace? A trick of weary eyes?<br>
+                                Or is there truly such a place, beneath those shifting skies?</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-5 ps-md-4">
+                            <h6 class="text-uppercase text-white-50 small fw-bold mb-3">Production Notes</h6>
+                            <ul class="list-unstyled small text-white-75">
+                                <li class="mb-2">> <strong>Vocal Style:</strong> Clear, emotive male vocals. Cockney accent.</li>
+                                <li class="mb-2">> <strong>Instrumentation:</strong> Melancholic keyboard arpeggio, driving bass.</li>
+                                <li class="mb-2">> <strong>Key Feature:</strong> Prominent <strong>Flute Solo</strong> (Bridge).</li>
+                                <li class="mb-0">> <strong>Atmosphere:</strong> "The music should swell... rich vocal harmonies."</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-                <p class="font-monospace small text-white-75 mb-0">
-                    "Do you hear it? A whisper on the wind, a melody so clear?<br>
-                    (Oh, the true light gleams...)<br>
-                    Will you come back? To where the true light gleams, and home is always near?"
-                </p>
             </div>
 
             <div class="card border-warning shadow-sm">
@@ -105,9 +146,6 @@ $pageTitle = "Origin - Engine Room Records";
                             <strong>For Cassidy & Ryan:</strong> During the "Dark Years" (1990-1992), the flute melody became a coded signal ("Safe Harbor"). Cassidy would hum it to Ryan over the phone during his paralysis rehab—a promise that he still had a home.
                         </li>
                     </ul>
-                    <p class="card-text small text-body-secondary fst-italic border-top border-secondary-subtle pt-3 mt-3">
-                        "We didn't just sign a band. We found the people who wrote our survival anthem." — Holly O'Connell
-                    </p>
                 </div>
             </div>
 
