@@ -145,15 +145,15 @@ $pageTitle = "The Crash of '90 - The Stardust Engine Lore";
         </div>
 
         <div class="col-md-6 mb-4">
-            <div class="card h-100 bg-dark border-secondary shadow-sm">
-                <div class="card-header border-bottom border-secondary text-white fw-bold">
+            <div class="card h-100 bg-body-tertiary border-secondary shadow-sm">
+                <div class="card-header bg-secondary bg-opacity-25 text-body-emphasis fw-bold">
                     <i class="fa-duotone fa-stairs me-2 text-danger"></i>The "Freight Dog" Reality
                 </div>
                 <div class="card-body">
-                    <p class="card-text text-white small">
+                    <p class="card-text text-body-secondary small">
                         The ADA passed in 1990, but venues in 1991 didn't care. Stages were inaccessible. Ryan often entered venues through loading docks and freight elevators, hauled up alongside the gear.
                     </p>
-                    <p class="card-text text-white small mb-0">
+                    <p class="card-text text-body-secondary small mb-0">
                         <strong>The Twins' Role:</strong> Evan and Tyler developed a synchronized two-man lift to carry Ryan and his chair up fire escapes and narrow stairwells. They became his legs.
                     </p>
                 </div>
