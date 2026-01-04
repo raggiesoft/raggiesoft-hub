@@ -21,6 +21,18 @@ $pageTitle = "The Autopsy: Holly Takes Control - Evidence Item #02";
         color: #e0e0e0 !important;
     }
 
+    /* Dark Mode Override for Logos */
+    [data-bs-theme="dark"] .theme-invert {
+        /* 1. Invert colors: Turns black pixels to white */
+        filter: invert(1) grayscale(100%) !important; 
+        
+        /* 2. Reset Blend Mode: 'Multiply' hides white, so we must switch to 'Normal' or 'Screen' */
+        mix-blend-mode: normal !important; 
+        
+        /* 3. Optional: Bump opacity slightly for better contrast on dark backgrounds */
+        opacity: 0.9 !important; 
+    }
+
     /* CUSTOM EMAIL STYLE - Adaptive */
     .email-evidence {
         font-family: 'Courier New', monospace;
@@ -132,7 +144,7 @@ $pageTitle = "The Autopsy: Holly Takes Control - Evidence Item #02";
                             <div class="row align-items-center">
                                 <div class="col-md-3 text-center mb-3 mb-md-0 border-end border-secondary border-opacity-25">
                                     <img src="https://assets.raggiesoft.com/engine-room-records/images/logos/engine-room-records-logo.png" 
-                                            class="img-fluid opacity-75" 
+                                        class="img-fluid opacity-75 theme-invert" 
                                             alt="Engine Room Records Text inside a Stylized Gear"
                                             style="max-height: 100px; filter: grayscale(100%); mix-blend-mode: multiply;">
                                     <div class="small font-monospace text-danger mt-2">EXHIBIT A: Slide 14 Detail</div>
