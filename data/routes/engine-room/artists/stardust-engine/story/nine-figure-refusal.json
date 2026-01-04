@@ -2,6 +2,7 @@
   "common": {
     "site": "stardust-engine",
     "showSidebar": true,
+    "brandFont": ["Audiowide", "sans-serif"],
     "sidebar": "engine-room/artists/stardust-engine/story/sidebar-nine-figure-refusal",
     "siteName": "The Stardust Engine",
     "headerMenu": "engine-room/artists/stardust-engine/story/header-nine-figure-refusal",
