@@ -18,8 +18,7 @@
   "/engine-room/artists/stardust-engine/story/ad-astra": {
     "view": "pages/engine-room/artists/stardust-engine/story/ad-astra/overview",
     "title": "Ad Astra | Mission Hub",
-    "ogDescription": "Mission Control for the U.S.S. Aethelgard.",
-    "showSidebar": false
+    "ogDescription": "Mission Control for the U.S.S. Aethelgard."
   },
   "/engine-room/artists/stardust-engine/story/ad-astra/voyage": {
     "view": "pages/engine-room/artists/stardust-engine/story/ad-astra/voyage/overview",
@@ -29,6 +28,16 @@
   "/engine-room/artists/stardust-engine/story/ad-astra/voyage/day-01": {
     "view": "pages/engine-room/artists/stardust-engine/story/ad-astra/voyage/day-01",
     "title": "Day 01: Ignition | Flight Log",
-    "ogDescription": "Atmospheric Exit. 1.5G Ascent. The beginning of the journey."
+    "ogDescription": "Atmospheric Exit. 1.5G Ascent."
+  },
+  "/engine-room/artists/stardust-engine/story/ad-astra/voyage/day-03": {
+    "view": "pages/engine-room/artists/stardust-engine/story/ad-astra/voyage/day-03",
+    "title": "Day 03: Ship's Time | Flight Log",
+    "ogDescription": "Living arrangements and the 24-hour cycle aboard the Aethelgard."
+  },
+  "/engine-room/artists/stardust-engine/story/ad-astra/voyage/day-10": {
+    "view": "pages/engine-room/artists/stardust-engine/story/ad-astra/voyage/day-10",
+    "title": "Day 10: The Drift | Flight Log",
+    "ogDescription": "Zero-G Concert at the Veil Nebula."
   }
 }

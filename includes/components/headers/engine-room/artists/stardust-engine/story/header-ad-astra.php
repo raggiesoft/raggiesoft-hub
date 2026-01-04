@@ -1,7 +1,7 @@
 <?php
 // Header: Ad Astra Mission Control
 // Theme: HUD / Sci-Fi / High Contrast
-// UPDATED: Fixed "Exit Sim" link visibility (Black-on-Black bug)
+// UPDATED: Added Day 03, Fixed Link Routes (Pages instead of Anchors), Fixed Exit Link Color
 ?>
 <ul class="navbar-nav ms-auto mb-2 mb-md-0 font-monospace">
   
@@ -16,20 +16,30 @@
       <i class="fa-duotone fa-book-sparkles me-2"></i>Flight Logs
     </a>
     <ul class="dropdown-menu dropdown-menu-end rounded-0 shadow-lg">
+      
       <li><h6 class="dropdown-header text-uppercase text-secondary">Phase I: Departure</h6></li>
       <li>
           <a class="dropdown-item" href="/engine-room/artists/stardust-engine/story/ad-astra/voyage/day-01">
-            <i class="fa-solid fa-shuttle-space me-2"></i>Day 1: Ignition
+            <i class="fa-solid fa-shuttle-space me-2"></i>Day 01: Ignition
           </a>
       </li>
+      <li>
+          <a class="dropdown-item" href="/engine-room/artists/stardust-engine/story/ad-astra/voyage/day-03">
+            <i class="fa-solid fa-clock me-2"></i>Day 03: Ship's Time
+          </a>
+      </li>
+      
       <li><hr class="dropdown-divider border-secondary"></li>
+      
       <li><h6 class="dropdown-header text-uppercase text-secondary">Phase II: The Void</h6></li>
       <li>
           <a class="dropdown-item" href="/engine-room/artists/stardust-engine/story/ad-astra/voyage/day-10">
             <i class="fa-solid fa-stars me-2"></i>Day 10: Harmonic Velocity
           </a>
       </li>
+      
       <li><hr class="dropdown-divider border-secondary"></li>
+      
       <li><h6 class="dropdown-header text-uppercase text-secondary">Phase III: Return</h6></li>
       <li>
           <a class="dropdown-item" href="/engine-room/artists/stardust-engine/story/ad-astra/voyage/day-21">

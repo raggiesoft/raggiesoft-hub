@@ -104,7 +104,7 @@ $pageTitle = "Day 01: Ignition - Ad Astra Log";
         $nav = [
             'prev' => null, // First Chapter
             'overview' => ['url' => '/engine-room/artists/stardust-engine/story/ad-astra/voyage', 'label' => 'Flight Log'],
-            'next' => ['url' => '/engine-room/artists/stardust-engine/story/ad-astra/voyage/day-10', 'label' => 'Day 10: The Drift']
+            'next' => ['url' => '/engine-room/artists/stardust-engine/story/ad-astra/voyage/day-02', 'label' => 'Day 02: The Drift']
         ];
         include ROOT_PATH . '/includes/components/navigation/narrative-stepper.php';
     ?>
