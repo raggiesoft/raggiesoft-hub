@@ -68,6 +68,25 @@ $pageTitle = "The Autopsy: Holly Takes Control - Evidence Item #02";
     .forced-dark-card .text-white-50 {
         color: rgba(255, 255, 255, 0.5) !important; 
     }
+
+    /* FORCED DARK ZONE
+   Locks a component to Dark Mode styling regardless of the system theme.
+   Essential for narrative beats that take place in dark environments.
+    */
+    .forced-dark-zone {
+        background-color: #121212 !important; /* Material Design Dark */
+        color: #e0e0e0 !important;
+        border: 1px solid #333 !important;
+    }
+
+    .forced-dark-zone .text-muted {
+        color: #a0a0a0 !important; /* Lighter gray for visibility on dark */
+    }
+
+    /* Ensure the border stands out */
+    .forced-dark-zone.border-success {
+        border-color: #198754 !important; /* Bootstrap Success Green */
+    }
 </style>
 
 <div class="container py-5">
@@ -561,7 +580,7 @@ $pageTitle = "The Autopsy: Holly Takes Control - Evidence Item #02";
                 </div>
             </div>
 
-            <div class="card wall-card shadow-lg mb-5">
+            <div class="card wall-card forced-dark-zone shadow-lg mb-5">
                 <div class="card-body p-5">
                     <div class="d-flex align-items-center mb-4">
                         <i class="fa-duotone fa-shield-halved text-danger fs-2 me-3"></i>
@@ -582,13 +601,13 @@ $pageTitle = "The Autopsy: Holly Takes Control - Evidence Item #02";
                     
                     <div class="row align-items-center bg-black rounded p-3 border border-secondary mt-4">
                         <div class="col-md-2 text-center">
-                            <i class="fa-duotone fa-ear-muffs text-secondary fs-1 opacity-50"></i>
+                            <i class="fa-duotone fa-ear-muffs text-secondary fs-1"></i>
                         </div>
                         <div class="col-md-10">
                             <p class="small text-light font-monospace mb-0">
                                 <strong>Sensory Protocol:</strong> Ryan hummed a low, steady B-flat against her ear—the "Safe Harbor" note. He squeezed her as tightly as he could, trying to manually regulate her nervous system.
                                 <br><br>
-                                <span class="text-danger">STATUS: FAILED.</span> She was too far gone. The pressure wasn't grounding her; she was vibrating apart.
+                                <span class="text-danger fw-bold">STATUS: FAILED.</span> She was too far gone. The pressure wasn't grounding her; she was vibrating apart.
                             </p>
                         </div>
                     </div>
@@ -599,11 +618,11 @@ $pageTitle = "The Autopsy: Holly Takes Control - Evidence Item #02";
                 </div>
             </div>
 
-            <div class="alert alert-dark bg-dark border-success d-flex align-items-center mt-4 shadow-lg">
+            <div class="alert alert-dark bg-dark border-success forced-dark-zone d-flex align-items-center mt-4 shadow-lg">
                 <i class="fa-duotone fa-check-circle text-success fs-1 me-4"></i>
                 <div>
                     <h5 class="alert-heading text-white fw-bold">The Aftermath</h5>
-                    <p class="mb-0 text-white-50">
+                    <p class="mb-0 text-light opacity-75">
                         Holly left the SEC filing up on the giant screen. As the family exited, the junior analysts in the room—who had been cc'd on the sexist email thread—quietly took out their phones and started looking for new jobs.
                     </p>
                 </div>
