@@ -24,7 +24,8 @@
   "/engine-room/artists/stardust-engine/story/ad-astra/voyage": {
     "view": "pages/engine-room/artists/stardust-engine/story/ad-astra/voyage/overview",
     "title": "Flight Log: Overview",
-    "ogDescription": "The narrative log of the 21-day journey to the Veil Nebula."
+    "ogDescription": "The narrative log of the 21-day journey to the Veil Nebula.",
+    "showSidebar": false
   },
   "/engine-room/artists/stardust-engine/story/ad-astra/voyage/day-01": {
     "view": "pages/engine-room/artists/stardust-engine/story/ad-astra/voyage/day-01",
