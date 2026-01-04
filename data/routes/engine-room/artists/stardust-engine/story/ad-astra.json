@@ -15,6 +15,7 @@
   },
     "/engine-room/artists/stardust-engine/story/ad-astra": {
         "title": "Ad Astra | Overview",
-        "ogDescription": "The untold story of The Stardust Engine's secret mission to the stars."
+        "ogDescription": "The untold story of The Stardust Engine's secret mission to the stars."`,
+        "showSidebar": false
     }
 }
