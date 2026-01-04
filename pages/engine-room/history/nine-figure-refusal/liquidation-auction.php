@@ -2,7 +2,7 @@
 // pages/engine-room/history/nine-figure-refusal/liquidation-auction.php
 // The Yard Sale.
 // Context: Selling off the "Ego" to pay the "Unsecured Creditors."
-// UPDATED: WCAG Compliance & Narrative Stepper
+// UPDATED: WCAG Contrast Fixes for Dark Mode Stamps.
 
 $pageTitle = "Asset Disposal: Omni-Global Liquidation - Case 18-11492";
 ?>
@@ -31,8 +31,22 @@ $pageTitle = "Asset Disposal: Omni-Global Liquidation - Case 18-11492";
         display: inline-block;
         opacity: 0.8;
         font-size: 1.5rem;
+        /* Grunge Texture Mask */
         mask-image: url('https://assets.raggiesoft.com/common/images/grunge-texture.png');
         -webkit-mask-image: url('https://assets.raggiesoft.com/common/images/grunge-texture.png');
+        mask-size: cover;
+        -webkit-mask-size: cover;
+    }
+
+    /* Dark Mode Overrides for Stamp Visibility */
+    [data-bs-theme="dark"] .auction-tag {
+        color: #ff6b6b; /* Lighter Red */
+        border-color: #ff6b6b;
+        background-color: #2b3035;
+    }
+    [data-bs-theme="dark"] .sold-stamp {
+        color: #75b798; /* Lighter Green */
+        border-color: #75b798;
     }
 
     .lot-card {
@@ -90,7 +104,7 @@ $pageTitle = "Asset Disposal: Omni-Global Liquidation - Case 18-11492";
                         </div>
                         <div class="col-md-3 text-center position-relative">
                             <div class="sold-stamp">SOLD</div>
-                            <div class="small font-monospace text-success mt-2">$4,200.00</div>
+                            <div class="small font-monospace text-success-emphasis mt-2">$4,200.00</div>
                             <div class="tiny text-body-secondary">Buyer: CPI Student Union</div>
                         </div>
                     </div>
@@ -140,7 +154,7 @@ $pageTitle = "Asset Disposal: Omni-Global Liquidation - Case 18-11492";
                         </div>
                         <div class="col-md-3 text-center position-relative">
                             <div class="sold-stamp">DONATED</div>
-                            <div class="small font-monospace text-success mt-2">Tax Write-Off</div>
+                            <div class="small font-monospace text-success-emphasis mt-2">Tax Write-Off</div>
                             <div class="tiny text-body-secondary">Recipient: Second Chance Community Thrift</div>
                         </div>
                     </div>
@@ -176,8 +190,13 @@ $pageTitle = "Asset Disposal: Omni-Global Liquidation - Case 18-11492";
                             </p>
                         </div>
                     </div>
+                    
                     <div class="alert alert-success bg-opacity-10 border-0 mt-3 mb-0 p-2 small font-monospace text-light">
-                        <i class="fa-solid fa-check me-2"></i><strong>Outcome:</strong> Assets transferred to the "Engine Room Archives" for immediate repatriation to original artists.
+                        <i class="fa-solid fa-check me-2"></i><strong>Outcome:</strong> Assets transferred to the "Engine Room Archives" for immediate repatriation.
+                        <br>
+                        <span class="opacity-75 ms-4">>> Masters sold back to original artists for <strong>$1.00 USD</strong> (legal consideration).</span>
+                        <br>
+                        <span class="opacity-75 ms-4 text-warning">>> Exception: Disputed estates held in escrow pending mediation.</span>
                     </div>
                 </div>
             </div>
