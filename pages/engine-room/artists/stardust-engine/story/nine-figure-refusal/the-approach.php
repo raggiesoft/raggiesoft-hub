@@ -3,7 +3,7 @@
 // EVIDENCE ITEM #00: The Arrival
 // Context: The family arrives in LA. The "Vacation" becomes a "Deployment".
 // Timeline: September 13-14, 2018 (Pre-Meeting)
-// UPDATED: "Five Badge" Protocol - Emphasizing total ownership.
+// UPDATED: "Five Badge" Protocol & Civic-Rail Preference.
 
 $pageTitle = "The Approach Vector - Evidence Item #00";
 ?>
@@ -146,16 +146,6 @@ $pageTitle = "The Approach Vector - Evidence Item #00";
                     <p>
                         They moved as a phalanx through the outdoor baggage claim. Tyler and Evan flanked the group, grabbing the five Titan Cases containing their "tourist gear" (and the suits for tomorrow) from the carousel.
                     </p>
-                    <p>
-                        They approached the exit. A line of exhausted travelers was queuing up at the rental kiosks.
-                    </p>
-                    <p>
-                        "We should have just told them 'No' on the phone," Ryan said, scanning the curb. "We're here to see the Space Shuttle Horizon, not a boardroom."
-                    </p>
-                    <p>
-                        "We're here to do both," Holly corrected. "We take the meeting because they're paying for the hotel. We reject the offer because they're idiots. Then we spend three days eating tacos. That is efficiency."
-                    </p>
-
                 </div>
             </div>
 
@@ -163,14 +153,17 @@ $pageTitle = "The Approach Vector - Evidence Item #00";
                 <div class="card-body p-5">
                     <div class="d-flex align-items-center mb-4">
                         <i class="fa-duotone fa-hand-palm text-danger fs-2 me-3"></i>
-                        <h5 class="text-white text-uppercase letter-spacing-2 mb-0">The Interception</h5>
+                        <h5 class="text-white text-uppercase letter-spacing-2 mb-0">Strike 1: The Interception</h5>
                     </div>
 
+                    <p class="text-light">
+                        They exited the terminal to the curbside pick-up area. A line of exhausted travelers was queuing up at the rental kiosks, but a man in a black suit stepped out from behind a concrete pillar.
+                    </p>
                     <p class="text-light">
                         "Mr. Wright? The O'Connell party?"
                     </p>
                     <p class="text-light">
-                        A man in a black suit stepped out from behind a concrete pillar. He was holding an mPad. "I'm Marcus," the driver said, flashing a service-industry smile. "Mr. Frost arranged for your ground transport."
+                        He was holding an mPad. "I'm Marcus," the driver said, flashing a service-industry smile. "Mr. Frost arranged for your ground transport. The SUV is just over there."
                     </p>
                     <p class="text-light">
                         He turned the mPad around to show them the welcome screen. The text on the screen did not say "The Stardust Engine."
@@ -179,25 +172,22 @@ $pageTitle = "The Approach Vector - Evidence Item #00";
                         WELCOME MR. & MRS. O'CONNELL
                     </p>
                     <p class="text-light">
-                        The air on the curb didn't just drop; it froze. Cassidy flinched. She physically recoiled, her hand jerking off Ryan’s wheelchair handle as if it had burned her.
+                        The air on the curb didn't just drop; it froze. Cassidy flinched, her hand jerking off Ryan’s wheelchair handle as if it had burned her.
                     </p>
                     <p class="text-light">
-                        "No," Cassidy whispered, her breathing hitching. "No. Not again. I'm not... he's my..."
+                        "No," Cassidy whispered, terror in her eyes. "No. Not again."
                     </p>
                     <p class="text-white-50 fst-italic">
-                        She looked at Ryan, terror in her eyes. It was 1992 all over again. The photo shoot. The mirror. The clipboard.
+                        She looked at Ryan. It was 1992 all over again. The photo shoot. The mirror. The implication.
                     </p>
                     <p class="text-light">
-                        Evan and Tyler Wright stepped forward instantly. They didn't cross their arms this time; they dropped their bags. The thud of the heavy Titan Cases hitting the concrete sounded like a warning shot.
+                        Evan and Tyler Wright stepped forward instantly. They dropped their bags. The thud of the heavy Titan Cases hitting the concrete sounded like a warning shot.
                     </p>
                     <p class="text-light">
                         "Turn that screen off," Tyler growled.
                     </p>
                     <p class="text-light">
-                        "I am his sister," Cassidy choked out, her voice trembling with a mix of shame and fury.
-                    </p>
-                    <p class="text-light">
-                        Ryan O'Connell stopped rolling. His expression went from "vacation mode" to "cold dead stare" in a fraction of a second.
+                        Ryan O'Connell stopped rolling. His expression went from "vacation mode" to "cold dead stare."
                     </p>
                     <p class="text-white fw-bold">
                         "You have exactly five seconds," Ryan said, his voice dangerously quiet, "to delete that file."
@@ -210,6 +200,18 @@ $pageTitle = "The Approach Vector - Evidence Item #00";
                     </p>
                     <p class="text-light">
                         "You can tell Mr. Frost that his 'Research Department' just cost him his first strike. And we play three-strike rules."
+                    </p>
+                    <p class="text-light">
+                        "Ma'am, the car is waiting," Marcus stammered, pointing to a black Escalade. "It's a two-hour drive in traffic."
+                    </p>
+                    <p class="text-light">
+                        Ryan spun his chair around, turning his back on the driver. He looked across the street at the <strong>Civic-Rail</strong> platform.
+                    </p>
+                    <p class="text-light">
+                        "We're not taking the car," Ryan said. "Tell Frost to check the transit logs."
+                    </p>
+                    <p class="text-light">
+                        The family walked away, leaving the confused driver on the curb. They headed straight for the train station.
                     </p>
                 </div>
             </div>
@@ -226,7 +228,10 @@ $pageTitle = "The Approach Vector - Evidence Item #00";
                     <h5 class="text-primary fw-bold text-uppercase mb-4">Base of Operations</h5>
 
                     <p>
-                        The subway ride from Union Station had been uneventful. They surfaced into the blinding Los Angeles sun and walked two blocks to the hotel. It wasn't the Grand Monarch where Omni-Global had tried to stick them. It was The Metropolitan Suites.
+                        The Civic-Rail trip to Union Station had been seamless—Ryan rolled onto the train, secured his brakes, and watched the LA traffic gridlock slide by the window. A quick transfer to the subway brought them surfacing into the blinding Los Angeles sun, just two blocks from the hotel.
+                    </p>
+                    <p>
+                        It wasn't the Grand Monarch where Omni-Global had tried to stick them. It was The Metropolitan Suites.
                     </p>
                     <p>
                         Holly walked to the front desk. She didn't slap down a corporate card. She pulled out her own Engine Room Records debit card.
