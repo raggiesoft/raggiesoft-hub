@@ -363,7 +363,7 @@ $pageTitle = "The Approach Vector - Evidence Item #00";
                 </div>
             </div>
 
-            <div class="card border-danger shadow-lg mb-5" style="background-color: #050505;">
+            <div class="card border-danger shadow-lg mb-5">
                 <div class="card-body p-5">
                     
                     <h3 class="h4 fw-bold text-uppercase mb-4 text-secondary">The Lobby</h3>
