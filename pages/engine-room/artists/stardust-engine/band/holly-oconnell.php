@@ -1,7 +1,7 @@
 <?php
 // pages/engine-room/artists/stardust-engine/band/holly-oconnell.php
 // The "Anchor" and the "Architect" of the Fortune.
-// UPDATED: Added the "Fiduciary Armor" Timeline and 1996 Lottery Logic.
+// UPDATED: Fixed Badge Contrast (Brighter text for Dark Mode).
 
 $pageTitle = "Holly O'Connell - The Stardust Engine";
 ?>
@@ -60,23 +60,23 @@ $pageTitle = "Holly O'Connell - The Stardust Engine";
                     
                     <h5 class="text-white fw-bold mb-3"><i class="fa-solid fa-shield-check me-2 text-success"></i>Fiduciary Armor (The Timeline)</h5>
                     <div class="d-flex flex-wrap gap-2">
-                        <span class="badge rounded-pill bg-black border border-secondary text-white-75 p-2" title="The Foundation">
+                        <span class="badge rounded-pill bg-black border border-secondary text-white p-2" title="The Foundation">
                             <i class="fa-solid fa-stamp me-1 text-secondary"></i>Notary Public ('94)
                         </span>
                         
-                        <span class="badge rounded-pill bg-black border border-secondary text-white-75 p-2" title="Tax Defense">
+                        <span class="badge rounded-pill bg-black border border-secondary text-white p-2" title="Tax Defense">
                             <i class="fa-solid fa-file-invoice-dollar me-1 text-secondary"></i>Enrolled Agent ('96)
                         </span>
                         
-                        <span class="badge rounded-pill bg-black border border-secondary text-white-75 p-2" title="Structuring the Fortune">
+                        <span class="badge rounded-pill bg-black border border-secondary text-white p-2" title="Structuring the Fortune">
                             <i class="fa-solid fa-scale-balanced me-1 text-secondary"></i>LL.M. Taxation ('99)
                         </span>
 
-                        <span class="badge rounded-pill bg-black border border-success text-success-emphasis p-2" title="Architect of the Trust">
+                        <span class="badge rounded-pill bg-black border border-success text-success p-2" title="Architect of the Trust">
                             <i class="fa-solid fa-landmark me-1"></i>CTFA (Trusts) ('03)
                         </span>
 
-                        <span class="badge rounded-pill bg-black border border-success text-success-emphasis p-2" title="Managing the Surplus">
+                        <span class="badge rounded-pill bg-black border border-success text-success p-2" title="Managing the Surplus">
                             <i class="fa-solid fa-briefcase me-1"></i>CFA Charterholder ('06)
                         </span>
 
@@ -84,11 +84,11 @@ $pageTitle = "Holly O'Connell - The Stardust Engine";
                             <i class="fa-solid fa-chart-line me-1"></i>M.S. Quant Finance ('09)
                         </span>
 
-                        <span class="badge rounded-pill bg-black border border-danger text-danger-emphasis p-2" title="Auditing Royalties">
+                        <span class="badge rounded-pill bg-black border border-danger text-danger p-2" title="Auditing Royalties">
                             <i class="fa-solid fa-magnifying-glass-dollar me-1"></i>Cr.FA (Forensic) ('14)
                         </span>
 
-                        <span class="badge rounded-pill bg-black border border-danger text-danger-emphasis p-2" title="The Bankruptcy Expert">
+                        <span class="badge rounded-pill bg-black border border-danger text-danger p-2" title="The Bankruptcy Expert">
                             <i class="fa-solid fa-tombstone me-1"></i>CIRA (Insolvency) ('16)
                         </span>
                     </div>
@@ -105,7 +105,6 @@ $pageTitle = "Holly O'Connell - The Stardust Engine";
                     'imgSrc' => 'https://assets.raggiesoft.com/stardust-engine/images/band-members/holly.jpg',
                     'imgAlt' => 'Headshot of Holly O\'Connell',
                     'variant' => 'neutral',
-                    // FIX: Wrapped content in a div with text-white-75 to force readability
                     'description' => "<div class='text-white-75'>
                                         <strong>Role:</strong> Manager, CEO, CFO<br>
                                         <strong>Age (in 1987):</strong> 18<br>
