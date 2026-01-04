@@ -2,6 +2,7 @@
 // pages/engine-room/artists/stardust-engine/story/crash-of-90.php
 // The Crash of '90: The Night The Engine Broke
 // Context: December 10, 1990. The origin of Ryan's paralysis.
+// UPDATED: WCAG Contrast Fixes (Red on Black removed).
 
 $pageTitle = "The Crash of '90 - The Stardust Engine Lore";
 ?>
@@ -26,11 +27,11 @@ $pageTitle = "The Crash of '90 - The Stardust Engine Lore";
         <div class="col-lg-10">
             <div class="card bg-dark border-danger shadow-lg">
                 <div class="card-header bg-danger bg-opacity-25 text-white border-bottom border-danger fw-bold d-flex justify-content-between align-items-center">
-                    <span><i class="fa-duotone fa-file-medical-alt me-2"></i>Virginia State Police // Collision Report #90-81-114</span>
+                    <span><i class="fa-duotone fa-file-medical-alt me-2 text-danger"></i>Virginia State Police // Report #90-81-114</span>
                     <span class="badge bg-black text-danger border border-danger">CRITICAL</span>
                 </div>
-                <div class="card-body font-monospace small text-light p-4">
-                    <div class="row mb-3 opacity-75">
+                <div class="card-body font-monospace small text-white p-4">
+                    <div class="row mb-3 text-white-50">
                         <div class="col-md-4">DATE: Dec 10, 1990</div>
                         <div class="col-md-4">TIME: 23:42 EST</div>
                         <div class="col-md-4">LOC: I-81 NB, Exit 98 (Newbern)</div>
