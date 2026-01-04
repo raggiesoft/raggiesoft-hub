@@ -518,7 +518,9 @@ $pageTitle = "The Autopsy: Holly Takes Control - Evidence Item #02";
                                     <strong>Make Payment To:</strong><br>
                                     Pacific Rim Properties, LLC<br>
                                     c/o Engine Room Records (Managing Agent)<br>
-                                    Attn: H. O\'Connell, Esq.
+                                    2000 Avenue of the Stars, Suite 300 (Building Management)<br>
+                                    <strong>Availability:</strong> Monday – Friday, 9:00 AM to 5:00 PM<br>
+                                    <em>Or via previously established Electronic Funds Transfer (EFT).</em>
                                 </div>
                             ';
 
