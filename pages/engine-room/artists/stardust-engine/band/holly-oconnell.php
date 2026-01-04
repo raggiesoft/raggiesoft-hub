@@ -1,6 +1,7 @@
 <?php
-// pages/band/holly-oconnell.php
+// pages/engine-room/artists/stardust-engine/band/holly-oconnell.php
 // The "Anchor" and the "Architect" of the Fortune.
+// UPDATED: Added Financial Credentials & Lottery Narrative
 
 $pageTitle = "Holly O'Connell - The Stardust Engine";
 ?>
@@ -47,7 +48,44 @@ $pageTitle = "Holly O'Connell - The Stardust Engine";
                     <i class="fa-duotone fa-money-bill-wave me-2"></i>CONFIDENTIAL: The "American Dream" Event
                 </div>
                 <div class="card-body p-4">
+                    <h4 class="text-success fw-bold">The Financial Architect</h4>
+                    <p class="text-white-75">
+                        When Cassidy won the <strong>$2.04 Billion</strong> lottery jackpot in 1996, Holly understood the danger immediately. "Money destroys families," she famously said. To prevent that, she didn't just hire an accountant—she became one.
+                    </p>
+                    <p class="text-white-75">
+                        Holly returned to academia, earning a <strong>Master of Science in Finance</strong>, followed by her <strong>CFA (Chartered Financial Analyst)</strong> charter and <strong>CTFA (Certified Trust and Fiduciary Advisor)</strong> certification.
+                    </p>
+                    
+                    <hr class="border-success opacity-50 my-3">
+                    
+                    <h5 class="text-white small text-uppercase fw-bold mb-3">The Credentials</h5>
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <div class="d-flex align-items-center mb-2">
+                                <i class="fa-solid fa-check-circle text-success me-2"></i>
+                                <span class="text-white-75 small">Juris Doctor (J.D.)</span>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <i class="fa-solid fa-check-circle text-success me-2"></i>
+                                <span class="text-white-75 small">Master of Science, Finance</span>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="d-flex align-items-center mb-2">
+                                <i class="fa-solid fa-check-circle text-success me-2"></i>
+                                <span class="text-white-75 small">Chartered Financial Analyst (CFA)</span>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <i class="fa-solid fa-check-circle text-success me-2"></i>
+                                <span class="text-white-75 small">Cert. Trust & Fiduciary Advisor (CTFA)</span>
+                            </div>
+                        </div>
                     </div>
+
+                    <p class="text-white-75 mt-4 mb-0">
+                        Using this knowledge, she established the <strong>Forger Nation Trust</strong> (a Family Office). This legal structure renders the individual band members "penniless" on paper—protecting them from lawsuits and predators—while the Trust manages their lifestyle, medical care, and the Engine Room empire.
+                    </p>
+                </div>
             </div>
 
         </div>
