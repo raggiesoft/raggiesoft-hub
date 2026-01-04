@@ -91,7 +91,7 @@ $pageTitle = "Holly O'Connell - The Stardust Engine";
                                 data-bs-toggle="modal" data-bs-target="#credentialModal"
                                 data-title="California Bar Admission (2002)"
                                 data-desc="Licensed to practice law in the State of California."
-                                data-lore="The Omni-Global Countermeasure. Knowing Omni-Global was based in San Francisco, Holly passed this bar specifically to threaten them on their home turf. 'I don't need local counsel. I am local counsel.'"
+                                data-lore="The Omni-Global Countermeasure. Knowing Omni-Global was based in Los Angeles, Holly passed this bar specifically to threaten them on their home turf. 'I don't need local counsel. I am local counsel.'"
                                 data-color="danger"
                                 data-icon="fa-sun">
                             <i class="fa-solid fa-sun me-1"></i>CA Bar ('02)
