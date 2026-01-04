@@ -3,10 +3,11 @@
         <div class="row align-items-center gy-4">
             
             <div class="col-md-4 text-center text-md-start">
-                <img src="https://assets.raggiesoft.com/engine-room-records/images/logos/engine-room-records-logo.png" 
+                <img src="https://assets.raggiesoft.com/common/images/logos/engine-room-records.png" 
                      alt="Engine Room Records" 
                      width="120" 
-                     class="navbar-brand-img-invertible mb-3"> 
+                     class="navbar-brand-corporate-img mb-3"> 
+                
                 <div class="text-uppercase fw-bold" style="font-family: 'Courier New', monospace; letter-spacing: -1px;">
                     Loud. Raw. Real.
                 </div>
@@ -36,8 +37,8 @@
                 <p class="mb-1">EST. 1992</p>
                 <p class="mb-0">Norfolk, VA</p>
                 <div class="mt-3">
-                    <a href="#" class="text-light me-3 hover-link-primary" aria-label="Visit our Instagram"><i class="fa-brands fa-instagram fa-lg"></i></a>
-                    <a href="#" class="text-light hover-link-primary" aria-label="Visit our Bandcamp"><i class="fa-brands fa-bandcamp fa-lg"></i></a>
+                    <a href="#" class="text-body me-3 hover-link-primary" aria-label="Visit our Instagram"><i class="fa-brands fa-instagram fa-lg"></i></a>
+                    <a href="#" class="text-body hover-link-primary" aria-label="Visit our Bandcamp"><i class="fa-brands fa-bandcamp fa-lg"></i></a>
                 </div>
             </div>
         </div>
