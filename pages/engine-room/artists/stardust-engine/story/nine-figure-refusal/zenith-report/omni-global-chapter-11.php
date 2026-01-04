@@ -29,49 +29,49 @@ include ROOT_PATH . '/includes/components/styles/zenith-theme.php';
             </div>
         </div>
 
-        
-
         <div class="row">
             <div class="col-lg-8">
                 <p>
-                    <span class="drop-cap">I</span>t took less than 48 hours for the titan of Century City to fall.
+                    <span class="drop-cap">I</span>t took less than 48 hours for the "Titan of Century City" to be revealed as a paper tiger.
                 </p>
                 <p>
-                    <strong>Omni-Global Media Corp. (OTC: OMGCQ)</strong>, once valued at $4 billion, filed for Chapter 11 bankruptcy protection this morning in Delaware Chancery Court. The filing comes amid a catastrophic 94% drop in stock value following a whistleblower report alleging massive accounting fraud.
+                    <strong>Omni-Global Media Corp. (OTC: OMGCQ)</strong>, a company that marketed itself as a multi-national conglomerate, filed for Chapter 11 bankruptcy protection this morning in the <strong>U.S. Bankruptcy Court for the Central District of California</strong>.
+                </p>
+                <p>
+                    The filing location itself has raised eyebrows on Wall Street. Unlike most modern corporations, which incorporate in Delaware for legal protection, Omni-Global was revealed to be a standard <strong>California Corporation</strong>—subjecting it to the state's rigorous transparency laws and higher corporate tax rates.
                 </p>
                 <p>
                     Trading of OGM was halted at 9:30 AM. When it resumed on the Pink Sheets under the symbol <strong>OMGCQ</strong>, it opened at <strong>$0.12</strong>, down from Friday's close of <strong>$42.50</strong>.
                 </p>
 
-                <h4 class="h5 fw-bold mt-4 mb-3">The "Virginia" Catalyst</h4>
+                <h4 class="h5 fw-bold mt-4 mb-3">The "Global" Mirage</h4>
                 <p>
-                    Sources close to the situation confirm that the collapse was triggered by a failed hostile takeover attempt of a private entity. On Friday, Omni-Global attempted to acquire <strong>Engine Room Records, LLC</strong>, a boutique label based in Blacksburg, Virginia, for $150 million.
+                    The bankruptcy filing has exposed the company's "global footprint" as largely fictional. While their website lists satellite offices in London, Tokyo, and New York, the asset schedule reveals these are merely <strong>virtual mailboxes</strong>.
                 </p>
                 <p>
-                    The deal allegedly collapsed when the target company's due diligence revealed that Omni-Global intended to fund the purchase using a high-risk Leveraged Buyout (LBO), borrowing against the assets of the company they were trying to buy.
+                    The company possesses zero international real estate. Their only physical asset is a lease for the 38th, 39th, and 40th floors of 2000 Avenue of the Stars in Los Angeles—a lease they have reportedly defaulted on.
                 </p>
                 <p>
-                    "They picked the wrong target," said one analyst who wished to remain anonymous. "Engine Room Records isn't just a label; it's a fortress. The CEO, Holly O'Connell, reportedly counter-filed with the SEC before the meeting even ended."
+                    "They spent more money on the naming rights for the building's exterior signage than they did on rent," said one forensic accountant reviewing the filing. "If you take a picture from the street, they look like they own the tower. In reality, they are tenants three months behind on payment."
                 </p>
 
-                <div class="p-3 bg-body-tertiary border-start border-4 border-danger my-4 fst-italic">
-                    "We have uncovered systemic irregularities in the 'Goodwill' valuation of OGM Capital Partners IV. The company is insolvent."
-                    <br>
-                    <span class="small fw-bold text-danger mt-2 d-block">&mdash; Excerpt from SEC Whistleblower Complaint #2018-994</span>
-                </div>
+                <h4 class="h5 fw-bold mt-4 mb-3">The "Virginia" Catalyst</h4>
+                <p>
+                    The collapse was triggered by a failed hostile takeover attempt of <strong>Engine Room Records, LLC</strong>, a boutique label based in Blacksburg, Virginia.
+                </p>
+                <p>
+                    Omni-Global executives reportedly underestimated the target's sophistication. They were unaware that the label's CEO, <strong>Holly O'Connell</strong>, is not only a music executive but a credentialed attorney admitted to the Bar in <strong>Virginia, New York, Delaware, and California</strong>.
+                </p>
+                <p>
+                    "They thought they were bullying a small-town manager," said legal expert Marcus Thorne. "They didn't realize she was licensed to practice law in their own backyard. She didn't need to hire local counsel to evict them; she <em>is</em> local counsel."
+                </p>
 
                 <h4 class="h5 fw-bold mt-4 mb-3">The Landlord Lockout</h4>
                 <p>
-                    Adding to the chaos, employees arriving at Omni-Global's headquarters at <strong>2000 Avenue of the Stars</strong> this morning were barred from entering.
+                    This morning, employees arriving at the headquarters were barred from entering by security. <strong>Pacific Rim Properties, LLC</strong>—the actual owner of the building—initiated a lockout at midnight.
                 </p>
                 <p>
-                    <strong>Pacific Rim Properties, LLC</strong>, the building's management firm, posted a "Notice of Default" on the glass doors of the 38th, 39th, and 40th floors.
-                </p>
-                <p>
-                    In a twist of irony that has captivated Wall Street, records show that Pacific Rim Properties is a wholly owned subsidiary of the <strong>O'Connell Family Trust</strong>—the same entity Omni-Global tried to hostile-takeover on Friday.
-                </p>
-                <p>
-                    The notice cites <strong>$450,000 in unpaid rent</strong> (July, August, September). Despite the threat, Omni-Global executives appear unconcerned.
+                    In a twist of irony that has captivated the market, records show that Pacific Rim Properties is a wholly owned subsidiary of the <strong>O'Connell Family Trust</strong>. Omni-Global unknowingly tried to acquire their own landlord using bounced checks.
                 </p>
 
                 <blockquote class="blockquote border-start border-4 border-dark ps-3 my-3 fst-italic bg-light p-3">
@@ -80,21 +80,12 @@ include ROOT_PATH . '/includes/components/styles/zenith-theme.php';
                 </blockquote>
 
                 <p>
-                    However, sources close to the O'Connell family dispute this characterization.
-                </p>
-                <p>
-                    "They think this is about the rent," the source said. "It's not. The eviction notice was served exactly five minutes after VP Jameson Frost insulted the lead singer, triggering a medical emergency. Holly O'Connell isn't looking for a settlement. She's looking for a vacate date. The three months of back rent just gave her the legal ammunition to pull the trigger."
+                    Sources close to the O'Connell family dispute this. "The eviction notice was served minutes after VP Jameson Frost insulted the lead singer, triggering a medical emergency. This isn't about rent. It's an execution."
                 </p>
 
-                <h4 class="h5 fw-bold mt-4 mb-3">The Civil Rights Investigation</h4>
+                <h4 class="h5 fw-bold mt-4 mb-3">Civil Rights Investigation</h4>
                 <p>
-                    In a shocking development, the <strong>Department of Justice</strong> has opened a preliminary inquiry into Omni-Global's acquisition practices under the <strong>Americans with Disabilities Act (ADA)</strong>.
-                </p>
-                <p>
-                    Leaked internal emails, referred to as "The Bus Memo," allegedly show VP Jameson Frost instructing staff to "lowball" the O'Connell family specifically because he observed one of the owners using a wheelchair and taking public transit.
-                </p>
-                <p>
-                    "Targeting a company for a hostile takeover based on the perceived vulnerability of a disabled owner isn't just ruthless," said Civil Rights attorney Marcus Thorne. "It is predatory discrimination. If proven, Omni-Global executives could face personal liability beyond the corporate bankruptcy."
+                    The <strong>Department of Justice</strong> has opened a preliminary inquiry into Omni-Global under the <strong>Americans with Disabilities Act (ADA)</strong>. Leaked internal emails suggest executives targeted the company specifically because they viewed a disabled owner as "weak."
                 </p>
             </div>
 
@@ -123,7 +114,7 @@ include ROOT_PATH . '/includes/components/styles/zenith-theme.php';
                         <ul class="list-unstyled small">
                             <li class="mb-2"><a href="/engine-room/artists/stardust-engine/story/nine-figure-refusal/zenith-report/stardust-bus-ride" class="text-decoration-none text-dark fw-bold">>> The $350 Million Bus Ride</a></li>
                             <li class="mb-2"><a href="#" class="text-decoration-none text-dark fw-bold">>> Leveraged Buyouts (Explained)</a></li>
-                            <li class="mb-2"><a href="#" class="text-decoration-none text-dark fw-bold">>> Section 1161 Evictions</a></li>
+                            <li class="mb-2"><a href="#" class="text-decoration-none text-dark fw-bold">>> California Eviction Law</a></li>
                         </ul>
                     </div>
                 </div>
