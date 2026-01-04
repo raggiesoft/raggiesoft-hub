@@ -2,7 +2,7 @@
 // pages/engine-room/history/nine-figure-refusal/liquidation-auction.php
 // The Yard Sale.
 // Context: Selling off the "Ego" to pay the "Unsecured Creditors."
-// UPDATED: WCAG Contrast Fixes for Dark Mode Stamps.
+// UPDATED: Removed missing assets & Added 'prefers-reduced-motion' support.
 
 $pageTitle = "Asset Disposal: Omni-Global Liquidation - Case 18-11492";
 ?>
@@ -31,11 +31,7 @@ $pageTitle = "Asset Disposal: Omni-Global Liquidation - Case 18-11492";
         display: inline-block;
         opacity: 0.8;
         font-size: 1.5rem;
-        /* Grunge Texture Mask */
-        mask-image: url('https://assets.raggiesoft.com/common/images/grunge-texture.png');
-        -webkit-mask-image: url('https://assets.raggiesoft.com/common/images/grunge-texture.png');
-        mask-size: cover;
-        -webkit-mask-size: cover;
+        /* Missing grunge texture removed for stability and clarity */
     }
 
     /* Dark Mode Overrides for Stamp Visibility */
@@ -49,13 +45,24 @@ $pageTitle = "Asset Disposal: Omni-Global Liquidation - Case 18-11492";
         border-color: #75b798;
     }
 
+    /* CARD INTERACTION STYLES */
     .lot-card {
         border-left: 4px solid #6c757d;
-        transition: all 0.2s ease;
     }
+
     .lot-card:hover {
-        transform: translateX(5px);
+        /* Safe change: Color only */
         border-left-color: #dc3545;
+    }
+
+    /* ACCESSIBILITY: Only apply motion if the user hasn't requested reduced motion */
+    @media (prefers-reduced-motion: no-preference) {
+        .lot-card {
+            transition: all 0.2s ease;
+        }
+        .lot-card:hover {
+            transform: translateX(5px);
+        }
     }
 </style>
 
