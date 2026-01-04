@@ -1,10 +1,57 @@
 <?php
 // pages/engine-room/artists/stardust-engine/story/nine-figure-refusal/the-trigger.php
 // The Event That Started The War: Slide 14 & The Fallout
-// UPDATED: WCAG Compliance, Narrative Stepper, and Expanded Lore Context.
+// Context: The specific moment the deal died.
+// UPDATED: Visualized "Slide 14" and the specific violation of 'Ad Astra'.
 
 $pageTitle = "The Trigger: Slide 14 - Evidence Item #1";
 ?>
+
+<style>
+    /* SLIDE 14 STYLING */
+    .slide-container {
+        background-color: #ffffff;
+        color: #333;
+        border: 1px solid #ccc;
+        aspect-ratio: 16/9;
+        position: relative;
+        overflow: hidden;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    }
+    
+    .slide-header {
+        background-color: #003366; /* Omni Corporate Blue */
+        color: white;
+        padding: 20px 40px;
+        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    }
+    
+    .slide-body {
+        padding: 40px;
+        font-family: 'Arial', sans-serif;
+    }
+    
+    .slide-watermark {
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+        opacity: 0.1;
+        width: 100px;
+    }
+
+    .red-pen {
+        color: #cc0000;
+        font-family: 'Comic Sans MS', 'Marker Felt', sans-serif; /* Deliberately informal annotation */
+        transform: rotate(-2deg);
+        display: inline-block;
+    }
+
+    /* DARK MODE ADAPTATION */
+    /* The slide stays bright white to be jarring against the dark interface */
+    [data-bs-theme="dark"] .slide-container {
+        border: 1px solid #555;
+    }
+</style>
 
 <div class="container py-5">
     
@@ -17,88 +64,139 @@ $pageTitle = "The Trigger: Slide 14 - Evidence Item #1";
                 The Trigger: Slide 14
             </h1>
             <p class="lead text-body-secondary font-monospace">
-                The moment the negotiation ended and the war began.
+                "It wasn't a proposal. It was a dissection."
             </p>
         </div>
     </div>
 
     <div class="row justify-content-center mb-5">
         <div class="col-lg-10">
-            <div class="card bg-body-tertiary border-secondary shadow-lg overflow-hidden">
-                <div class="row g-0 align-items-center">
-                    <div class="col-md-5">
-                        <img src="https://assets.raggiesoft.com/engine-room-records/artists/the-stardust-engine/1995-ad-astra-single/album-art.jpg" 
-                             class="img-fluid w-100 h-100 object-fit-cover" 
-                             style="min-height: 300px;"
-                             alt="Album Art for Ad Astra: A cockpit view looking out at a monolithic structure in deep space. A single bright light pierces the darkness.">
+            
+            <div class="card bg-body-tertiary border-secondary shadow-lg overflow-hidden mb-5">
+                <div class="card-body p-4 p-md-5">
+                    <p class="lead text-body-emphasis">
+                        At 10:14 AM, Jameson Frost clicked the remote. The screen flickered.
+                    </p>
+                    <p class="text-body-secondary">
+                        Up until this moment, the meeting had been tense but professional. Frost had insulted their business model, their "lack of debt," and their touring logistics. The family had endured it all with stoic amusement.
+                    </p>
+                    <p class="text-body-secondary">
+                        Then <strong>Slide 14</strong> appeared.
+                    </p>
+                    <p class="text-body-secondary">
+                        Frost smiled. "We call this the 'Diamond in the Rough.' You have a track called <em>Escape Velocity</em>. Great vocals. Catchy hook. But it's fifteen minutes long. It's unlistenable. It's un-monetizable."
+                    </p>
+                    <p class="text-body-secondary">
+                        He pressed a button. A speaker on the conference table crackled to life.
+                    </p>
+                    <p class="fw-bold text-danger fst-italic">
+                        It played a 30-second loop. Omni-Global producers had taken Cassidy's voice, stripped away the music, and layered it over a generic car-commercial beat. They had cut Ryan's guitar solo entirely.
+                    </p>
+                    <p class="text-body-secondary">
+                        "We fixed it," Frost said. "We cut the fat."
+                    </p>
+                </div>
+            </div>
+
+            <div class="slide-container mb-5">
+                <div class="slide-header">
+                    <h3 class="m-0 fw-bold text-uppercase">Asset Optimization: IP Efficiency</h3>
+                    <small class="opacity-75">Project: Golden Goose // Target: Catalog ID #95-AA</small>
+                </div>
+                <div class="slide-body">
+                    <h4 class="mb-4 text-dark fw-bold">Case Study: "Escape Velocity (Ad Astra)"</h4>
+                    
+                    <div class="row">
+                        <div class="col-6">
+                            <h5 class="text-uppercase text-muted small fw-bold mb-3 border-bottom pb-1">Current State (Legacy)</h5>
+                            <ul class="list-unstyled text-danger">
+                                <li class="mb-3">
+                                    <i class="fa-solid fa-xmark me-2"></i><strong>Runtime:</strong> 15:33 <span class="badge bg-danger ms-2">NON-VIABLE</span>
+                                </li>
+                                <li class="mb-3">
+                                    <i class="fa-solid fa-xmark me-2"></i><strong>Structure:</strong> Complex "Prog" Arrangement
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-xmark me-2"></i><strong>Problem:</strong> 9-minute Guitar Solo blocks vocal hook
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-6 border-start">
+                            <h5 class="text-uppercase text-success small fw-bold mb-3 border-bottom pb-1">Proposed Strategy</h5>
+                            <ul class="list-unstyled text-dark">
+                                <li class="mb-3">
+                                    <i class="fa-solid fa-scissors me-2 text-success"></i><strong>Action:</strong> Isolate Female Vocal Stems
+                                </li>
+                                <li class="mb-3">
+                                    <i class="fa-solid fa-trash-can me-2 text-success"></i><strong>Action:</strong> Delete Instrumental Bridge <span class="red-pen ms-2">"Dead Weight"</span>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-money-bill-wave me-2 text-success"></i><strong>Result:</strong> 3:30 Radio Edit + SUV Sync License
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="col-md-7">
-                        <div class="card-body p-4 p-md-5">
-                            <h5 class="text-body-emphasis fw-bold text-uppercase border-bottom border-secondary pb-2 mb-3">
-                                <i class="fa-solid fa-compact-disc me-2 text-primary"></i>The Subject: "Ad Astra"
-                            </h5>
-                            <p class="text-body-secondary small mb-2">
-                                <strong>Format:</strong> 15-Minute Progressive Rock Suite<br>
-                                <strong>Significance:</strong> Cassidy's Autobiography
+
+                    <div class="mt-5 p-3 bg-light border border-warning text-center">
+                        <h3 class="text-success fw-bold m-0">Projected Uplift: +400% ROI</h3>
+                    </div>
+
+                </div>
+                <img src="https://assets.raggiesoft.com/engine-room-records/images/logos/engine-room-records-logo.png" class="slide-watermark" style="filter: grayscale(100%); mix-blend-mode: multiply;">
+            </div>
+
+            <div class="card bg-black text-white border-danger border-2 shadow-lg">
+                <div class="card-body p-5">
+                    <div class="row align-items-center">
+                        <div class="col-md-2 text-center">
+                            <i class="fa-solid fa-heart-crack fa-4x text-danger mb-3 mb-md-0"></i>
+                        </div>
+                        <div class="col-md-10">
+                            <h3 class="text-uppercase text-danger fw-bold mb-3">The Meltdown</h3>
+                            <p class="fs-5 fst-italic text-white-75 border-start border-4 border-danger ps-3">
+                                "They are going to rip my baby apart!"
                             </p>
-                            
-                            <div class="alert alert-light border-start border-4 border-primary small fst-italic text-body-secondary my-3">
-                                "She wrote every word. She wrote every note. She is the composer, the conductor, and the vocalist. This isn't just a song; it is the sonic representation of the safe harbor where she hides when the world gets too loud."
-                            </div>
-                            
-                            <div class="d-flex flex-wrap align-items-center gap-3">
-                                <a href="/engine-room/artists/stardust-engine/discography/1995-the-warehouse-tapes/ad-astra" class="btn btn-outline-primary btn-sm rounded-pill fw-bold px-3">
-                                    <i class="fa-solid fa-play me-2"></i>Listen to the Track
-                                </a>
-                                <div class="small font-monospace text-body-secondary">
-                                    <span class="badge bg-primary me-2">LORE</span>
-                                    <em>Tracks her escape from the "Cage" to the "Cosmos."</em>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="row justify-content-center mb-5">
-        <div class="col-lg-10">
-            <div class="card bg-dark border-danger shadow-lg overflow-hidden position-relative">
-                <div class="position-absolute top-0 start-0 w-100 h-100 bg-gradient-to-b-black opacity-50" style="pointer-events: none;"></div>
-
-                <div class="card-header bg-danger bg-opacity-25 border-bottom border-danger py-3 position-relative">
-                    <h5 class="mb-0 text-white text-uppercase fw-bold"><i class="fa-solid fa-waveform-lines me-2"></i>The Proposal: "The Velocity Edit"</h5>
-                </div>
-                <div class="card-body p-5 position-relative">
-                    <p class="fs-5 text-white">
-                        At 10:15 AM, the Omni-Global pitch team presented <strong>Slide 14</strong>. They proposed using an algorithm to slice the 15-minute masterpiece <em>Ad Astra</em> into four 3-minute fragments for "playlist optimization."
-                    </p>
-                    <p class="text-white-50">
-                        They unknowingly targeted <strong>Part III: The Cosmos</strong>—the quiet, ethereal section Cassidy wrote to ground herself during panic attacks. They proposed adding a generic "Trap Beat" overlay to make it perform better on the Streaming Giants' algorithms.
-                    </p>
-
-                    <div class="alert bg-black border-start border-danger border-4 p-4 my-4">
-                        <div class="d-flex">
-                            <i class="fa-duotone fa-triangle-exclamation text-danger fs-1 me-4"></i>
-                            <div>
-                                <h5 class="text-white fw-bold">The Reaction</h5>
-                                <p class="mb-2 text-white-50 fst-italic display-6">
-                                    "They are going to rip my baby apart!"
-                                </p>
-                                <p class="text-white-50 small mb-0">
-                                    Cassidy spiraled into a Level 5 Autistic Meltdown. <strong>Ryan O'Connell</strong> immediately turned his back on the executives to physically ground his sister. <strong>Evan & Tyler Wright</strong> formed the "Ironhead Wall," blocking the executives from viewing the distress. 
-                                </p>
-                            </div>
+                            <p class="text-white-50 mt-3">
+                                Cassidy O'Connell didn't see a slide. She saw a knife. <em>Escape Velocity</em> wasn't a product; it was the autobiography of her trauma. It was the safe space Ryan had built for her with his guitar.
+                            </p>
+                            <p class="text-white-50 mb-0">
+                                She began to hyperventilate. It was a Level 5 Autistic Meltdown, triggered by the profound violation of her core identity.
+                            </p>
                         </div>
                     </div>
 
-                    <p class="text-white small font-monospace text-end mb-0 text-uppercase">
-                        Status: Meeting Terminated &ndash; 10:19 AM 
-                    </p>
+                    <hr class="border-danger opacity-50 my-4">
+
+                    <div class="d-flex align-items-start">
+                        <div class="me-3 mt-1">
+                            <i class="fa-solid fa-shield-halved text-white fs-4"></i>
+                        </div>
+                        <div>
+                            <h5 class="fw-bold text-white text-uppercase mb-1">Protocol: Ironhead Wall</h5>
+                            <p class="small text-white-50 mb-0">
+                                <strong>10:19 AM:</strong> Ryan O'Connell spun his chair 180 degrees, turning his back on Jameson Frost to attend to his sister. Simultaneously, Evan and Tyler Wright stood up and stepped forward, blocking the executives' line of sight. They became a physical wall, shielding Cassidy's vulnerability from corporate eyes.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="d-flex align-items-start mt-4">
+                        <div class="me-3 mt-1">
+                            <i class="fa-solid fa-gavel text-white fs-4"></i>
+                        </div>
+                        <div>
+                            <h5 class="fw-bold text-white text-uppercase mb-1">The Pivot</h5>
+                            <p class="small text-white-50 mb-0">
+                                Holly O'Connell did not stand up. She did not look at Cassidy. She looked at Jameson Frost. And for the first time in the meeting, she smiled. It was the smile of a predator who had just decided to stop playing with its food.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="card-footer bg-danger text-white text-center fw-bold text-uppercase py-2">
+                    Negotiation Status: TERMINATED WITH EXTREME PREJUDICE
                 </div>
             </div>
+
         </div>
     </div>
 
