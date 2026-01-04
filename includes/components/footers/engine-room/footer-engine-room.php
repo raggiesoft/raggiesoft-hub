@@ -3,7 +3,7 @@
         <div class="row align-items-center gy-4">
             
             <div class="col-md-4 text-center text-md-start">
-                <img src="https://assets.raggiesoft.com/common/images/logos/engine-room-records.png" 
+                <img src="https://assets.raggiesoft.com/engine-room-records/images/logos/engine-room-records-logo.png" 
                      alt="Engine Room Records" 
                      width="120" 
                      class="navbar-brand-corporate-img mb-3"> 
