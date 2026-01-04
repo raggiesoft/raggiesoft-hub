@@ -1,8 +1,8 @@
 {
   "common": {
-    "site": "stardust-engine",
+    "site": "engine-room-records",
     "showSidebar": true,
-    "brandFont": ["Audiowide", "sans-serif"],
+    "brandFont": ["Playfair Display", "serif"],
     "sidebar": "engine-room/artists/stardust-engine/story/sidebar-nine-figure-refusal",
     "siteName": "The Stardust Engine",
     "headerMenu": "engine-room/artists/stardust-engine/story/header-nine-figure-refusal",
