@@ -1,5 +1,5 @@
 <?php
-// pages/engine-room/history/nine-figure-refusal/the-jessica-miller-center.php
+// pages/engine-room/artists/stardust-engine/story/nine-figure-refusal/the-jessica-miller-center.php
 // The Re-Branding of the Omni-Global Leasehold
 // UPDATED: WCAG Color Corrections (Organizational Structure Card)
 
@@ -307,9 +307,9 @@ $pageTitle = "The Jessica Miller Center - Engine Room History";
     <?php
         // Narrative Stepper Configuration
         $nav = [
-            'prev' => ['url' => '/engine-room/history/nine-figure-refusal/zenith-report/stardust-bus-ride', 'label' => 'The Bus Ride Article'],
-            'overview' => ['url' => '/engine-room/history/nine-figure-refusal', 'label' => 'Overview'],
-            'next' => ['url' => '/engine-room/history/nine-figure-refusal/the-non-profit-model', 'label' => 'The Non-Profit Model']
+            'prev' => ['url' => '/engine-room/artists/stardust-engine/story/nine-figure-refusal/zenith-report/stardust-bus-ride', 'label' => 'The Bus Ride Article'],
+            'overview' => ['url' => '/engine-room/artists/stardust-engine/story/nine-figure-refusal', 'label' => 'Overview'],
+            'next' => ['url' => '/engine-room/artists/stardust-engine/story/nine-figure-refusal/the-non-profit-model', 'label' => 'The Non-Profit Model']
         ];
         include ROOT_PATH . '/includes/components/navigation/narrative-stepper.php';
     ?>

@@ -1,5 +1,5 @@
 <?php
-// pages/engine-room/history/nine-figure-refusal/the-approach.php
+// pages/engine-room/artists/stardust-engine/story/nine-figure-refusal/the-approach.php
 // EVIDENCE ITEM #00: The Arrival
 // Context: The family arrives in LA. The "Vacation" becomes a "Deployment".
 // Timeline: September 13-14, 2018 (Pre-Meeting)
@@ -405,9 +405,9 @@ $pageTitle = "The Approach Vector - Evidence Item #00";
             <?php
                 // NARRATIVE STEPPER
                 $nav = [
-                    'prev' => ['url' => '/engine-room/history/nine-figure-refusal', 'label' => 'Overview'],
-                    'overview' => ['url' => '/engine-room/history/nine-figure-refusal', 'label' => 'History Hub'],
-                    'next' => ['url' => '/engine-room/history/nine-figure-refusal/target-profile', 'label' => 'Target Profile']
+                    'prev' => ['url' => '/engine-room/artists/stardust-engine/story/nine-figure-refusal', 'label' => 'Overview'],
+                    'overview' => ['url' => '/engine-room/artists/stardust-engine/story/nine-figure-refusal', 'label' => 'History Hub'],
+                    'next' => ['url' => '/engine-room/artists/stardust-engine/story/nine-figure-refusal/target-profile', 'label' => 'Target Profile']
                 ];
                 include ROOT_PATH . '/includes/components/navigation/narrative-stepper.php';
             ?>

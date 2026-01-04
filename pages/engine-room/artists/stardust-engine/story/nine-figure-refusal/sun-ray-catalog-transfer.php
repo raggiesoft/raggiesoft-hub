@@ -1,5 +1,5 @@
 <?php
-// pages/engine-room/history/nine-figure-refusal/sun-ray-catalog-transfer.php
+// pages/engine-room/artists/stardust-engine/story/nine-figure-refusal/sun-ray-catalog-transfer.php
 // EVIDENCE ITEM #200-FINAL: The Repatriation
 // Context: The journey from "Toxic Asset" to "Artist Owned."
 // UPDATED: WCAG Color Compliance & Removed Opacity Fades.
@@ -172,8 +172,8 @@ $pageTitle = "Lot 200: The Sun-Ray Repatriation";
     
     <?php
         $nav = [
-            'prev' => ['url' => '/engine-room/history/nine-figure-refusal/liquidation-auction', 'label' => 'The Liquidation Auction'],
-            'overview' => ['url' => '/engine-room/history/nine-figure-refusal', 'label' => 'Overview'],
+            'prev' => ['url' => '/engine-room/artists/stardust-engine/story/nine-figure-refusal/liquidation-auction', 'label' => 'The Liquidation Auction'],
+            'overview' => ['url' => '/engine-room/artists/stardust-engine/story/nine-figure-refusal', 'label' => 'Overview'],
             'next' => ['url' => '/engine-room', 'label' => 'Return to HQ']
         ];
         include ROOT_PATH . '/includes/components/navigation/narrative-stepper.php';

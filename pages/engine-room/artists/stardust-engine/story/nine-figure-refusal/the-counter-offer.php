@@ -1,5 +1,5 @@
 <?php
-// pages/engine-room/history/nine-figure-refusal/the-counter-offer.php
+// pages/engine-room/artists/stardust-engine/story/nine-figure-refusal/the-counter-offer.php
 // CHAPTER 2: THE TRAP (Part 3)
 // The "Poison Pill" Letter. Holly rejects the $150M and triggers the collapse.
 // UPDATED: WCAG Compliance & Component Implementation
@@ -117,9 +117,9 @@ $pageTitle = "The Counter-Offer (Sept 14, 2018) - Engine Room History";
                 // NARRATIVE STEPPER CONFIGURATION
                 // Replaces hardcoded navigation buttons
                 $nav = [
-                    'prev' => ['url' => '/engine-room/history/nine-figure-refusal/the-offer-letter', 'label' => 'The Offer'],
-                    'overview' => ['url' => '/engine-room/history/nine-figure-refusal', 'label' => 'Overview'],
-                    'next' => ['url' => '/engine-room/history/nine-figure-refusal/the-trigger', 'label' => 'The Trigger']
+                    'prev' => ['url' => '/engine-room/artists/stardust-engine/story/nine-figure-refusal/the-offer-letter', 'label' => 'The Offer'],
+                    'overview' => ['url' => '/engine-room/artists/stardust-engine/story/nine-figure-refusal', 'label' => 'Overview'],
+                    'next' => ['url' => '/engine-room/artists/stardust-engine/story/nine-figure-refusal/the-trigger', 'label' => 'The Trigger']
                 ];
                 include ROOT_PATH . '/includes/components/navigation/narrative-stepper.php';
             ?>

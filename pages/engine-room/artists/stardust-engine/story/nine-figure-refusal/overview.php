@@ -1,5 +1,5 @@
 <?php
-// pages/engine-room/history/nine-figure-refusal/overview.php
+// pages/engine-room/artists/stardust-engine/story/nine-figure-refusal/overview.php
 // The Index Page for the "Nine Figure Refusal" Arc.
 // Acts as the landing page/table of contents for this specific story.
 // UPDATED: Added Chapters 4, 5, and Epilogue based on route list.
@@ -31,7 +31,7 @@ $pageTitle = "Case File: OGM-2018 (The $150M Refusal)";
                     <h5 class="mb-0 text-body-emphasis fw-bold text-uppercase"><i class="fa-solid fa-chess-pawn me-2 text-secondary"></i>Chapter 1: The Setup</h5>
                 </div>
                 <div class="list-group list-group-flush">
-                    <a href="/engine-room/history/nine-figure-refusal/the-approach" class="list-group-item list-group-item-action p-4 d-flex align-items-center">
+                    <a href="/engine-room/artists/stardust-engine/story/nine-figure-refusal/the-approach" class="list-group-item list-group-item-action p-4 d-flex align-items-center">
                         <div class="me-4 text-center" style="width: 50px;">
                             <i class="fa-duotone fa-plane-arrival fa-2x text-info"></i>
                         </div>
@@ -41,7 +41,7 @@ $pageTitle = "Case File: OGM-2018 (The $150M Refusal)";
                         </div>
                         <i class="fa-solid fa-chevron-right ms-auto text-body-tertiary"></i>
                     </a>
-                    <a href="/engine-room/history/nine-figure-refusal/target-profile" class="list-group-item list-group-item-action p-4 d-flex align-items-center">
+                    <a href="/engine-room/artists/stardust-engine/story/nine-figure-refusal/target-profile" class="list-group-item list-group-item-action p-4 d-flex align-items-center">
                         <div class="me-4 text-center" style="width: 50px;">
                             <i class="fa-duotone fa-crosshairs fa-2x text-danger"></i>
                         </div>
@@ -51,7 +51,7 @@ $pageTitle = "Case File: OGM-2018 (The $150M Refusal)";
                         </div>
                         <i class="fa-solid fa-chevron-right ms-auto text-body-tertiary"></i>
                     </a>
-                    <a href="/engine-room/history/nine-figure-refusal/ucc-search-report" class="list-group-item list-group-item-action p-4 d-flex align-items-center">
+                    <a href="/engine-room/artists/stardust-engine/story/nine-figure-refusal/ucc-search-report" class="list-group-item list-group-item-action p-4 d-flex align-items-center">
                         <div class="me-4 text-center" style="width: 50px;">
                             <i class="fa-duotone fa-file-certificate fa-2x text-secondary"></i>
                         </div>
@@ -61,7 +61,7 @@ $pageTitle = "Case File: OGM-2018 (The $150M Refusal)";
                         </div>
                         <i class="fa-solid fa-chevron-right ms-auto text-body-tertiary"></i>
                     </a>
-                    <a href="/engine-room/history/nine-figure-refusal/the-bus-memo" class="list-group-item list-group-item-action p-4 d-flex align-items-center">
+                    <a href="/engine-room/artists/stardust-engine/story/nine-figure-refusal/the-bus-memo" class="list-group-item list-group-item-action p-4 d-flex align-items-center">
                         <div class="me-4 text-center" style="width: 50px;">
                             <i class="fa-duotone fa-envelope-open-text fa-2x text-warning"></i>
                         </div>
@@ -79,7 +79,7 @@ $pageTitle = "Case File: OGM-2018 (The $150M Refusal)";
                     <h5 class="mb-0 text-body-emphasis fw-bold text-uppercase"><i class="fa-solid fa-chess-knight me-2 text-secondary"></i>Chapter 2: The Trap</h5>
                 </div>
                 <div class="list-group list-group-flush">
-                    <a href="/engine-room/history/nine-figure-refusal/forensic-audit" class="list-group-item list-group-item-action p-4 d-flex align-items-center">
+                    <a href="/engine-room/artists/stardust-engine/story/nine-figure-refusal/forensic-audit" class="list-group-item list-group-item-action p-4 d-flex align-items-center">
                         <div class="me-4 text-center" style="width: 50px;">
                             <i class="fa-duotone fa-magnifying-glass-dollar fa-2x text-primary"></i>
                         </div>
@@ -89,7 +89,7 @@ $pageTitle = "Case File: OGM-2018 (The $150M Refusal)";
                         </div>
                         <i class="fa-solid fa-chevron-right ms-auto text-body-tertiary"></i>
                     </a>
-                    <a href="/engine-room/history/nine-figure-refusal/the-smoking-gun" class="list-group-item list-group-item-action p-4 d-flex align-items-center">
+                    <a href="/engine-room/artists/stardust-engine/story/nine-figure-refusal/the-smoking-gun" class="list-group-item list-group-item-action p-4 d-flex align-items-center">
                         <div class="me-4 text-center" style="width: 50px;">
                             <i class="fa-duotone fa-envelope fa-2x text-danger"></i>
                         </div>
@@ -99,7 +99,7 @@ $pageTitle = "Case File: OGM-2018 (The $150M Refusal)";
                         </div>
                         <i class="fa-solid fa-chevron-right ms-auto text-body-tertiary"></i>
                     </a>
-                    <a href="/engine-room/history/nine-figure-refusal/the-offer-letter" class="list-group-item list-group-item-action p-4 d-flex align-items-center">
+                    <a href="/engine-room/artists/stardust-engine/story/nine-figure-refusal/the-offer-letter" class="list-group-item list-group-item-action p-4 d-flex align-items-center">
                         <div class="me-4 text-center" style="width: 50px;">
                             <i class="fa-duotone fa-file-contract fa-2x text-dark"></i>
                         </div>
@@ -109,7 +109,7 @@ $pageTitle = "Case File: OGM-2018 (The $150M Refusal)";
                         </div>
                         <i class="fa-solid fa-chevron-right ms-auto text-body-tertiary"></i>
                     </a>
-                    <a href="/engine-room/history/nine-figure-refusal/the-counter-offer" class="list-group-item list-group-item-action p-4 d-flex align-items-center">
+                    <a href="/engine-room/artists/stardust-engine/story/nine-figure-refusal/the-counter-offer" class="list-group-item list-group-item-action p-4 d-flex align-items-center">
                         <div class="me-4 text-center" style="width: 50px;">
                             <i class="fa-duotone fa-envelope-circle-check fa-2x text-success"></i>
                         </div>
@@ -127,7 +127,7 @@ $pageTitle = "Case File: OGM-2018 (The $150M Refusal)";
                     <h5 class="mb-0 text-body-emphasis fw-bold text-uppercase"><i class="fa-solid fa-chess-queen me-2 text-secondary"></i>Chapter 3: The Event</h5>
                 </div>
                 <div class="list-group list-group-flush">
-                    <a href="/engine-room/history/nine-figure-refusal/the-trigger" class="list-group-item list-group-item-action p-4 d-flex align-items-center">
+                    <a href="/engine-room/artists/stardust-engine/story/nine-figure-refusal/the-trigger" class="list-group-item list-group-item-action p-4 d-flex align-items-center">
                         <div class="me-4 text-center" style="width: 50px;">
                             <i class="fa-duotone fa-bolt fa-2x text-danger"></i>
                         </div>
@@ -137,7 +137,7 @@ $pageTitle = "Case File: OGM-2018 (The $150M Refusal)";
                         </div>
                         <i class="fa-solid fa-chevron-right ms-auto text-body-tertiary"></i>
                     </a>
-                    <a href="/engine-room/history/nine-figure-refusal/the-autopsy" class="list-group-item list-group-item-action p-4 d-flex align-items-center">
+                    <a href="/engine-room/artists/stardust-engine/story/nine-figure-refusal/the-autopsy" class="list-group-item list-group-item-action p-4 d-flex align-items-center">
                         <div class="me-4 text-center" style="width: 50px;">
                             <i class="fa-duotone fa-laptop-code fa-2x text-success"></i>
                         </div>
@@ -147,7 +147,7 @@ $pageTitle = "Case File: OGM-2018 (The $150M Refusal)";
                         </div>
                         <i class="fa-solid fa-chevron-right ms-auto text-body-tertiary"></i>
                     </a>
-                    <a href="/engine-room/history/nine-figure-refusal/the-extraction" class="list-group-item list-group-item-action p-4 d-flex align-items-center">
+                    <a href="/engine-room/artists/stardust-engine/story/nine-figure-refusal/the-extraction" class="list-group-item list-group-item-action p-4 d-flex align-items-center">
                         <div class="me-4 text-center" style="width: 50px;">
                             <i class="fa-duotone fa-person-to-door fa-2x text-info"></i>
                         </div>
@@ -165,7 +165,7 @@ $pageTitle = "Case File: OGM-2018 (The $150M Refusal)";
                     <h5 class="mb-0 text-body-emphasis fw-bold text-uppercase"><i class="fa-solid fa-chess-king me-2 text-secondary"></i>Chapter 4: The Fallout</h5>
                 </div>
                 <div class="list-group list-group-flush">
-                    <a href="/engine-room/history/nine-figure-refusal/zenith-report/omni-global-chapter-11" class="list-group-item list-group-item-action p-4 d-flex align-items-center">
+                    <a href="/engine-room/artists/stardust-engine/story/nine-figure-refusal/zenith-report/omni-global-chapter-11" class="list-group-item list-group-item-action p-4 d-flex align-items-center">
                         <div class="me-4 text-center" style="width: 50px;">
                             <i class="fa-duotone fa-newspaper fa-2x text-dark"></i>
                         </div>
@@ -175,7 +175,7 @@ $pageTitle = "Case File: OGM-2018 (The $150M Refusal)";
                         </div>
                         <i class="fa-solid fa-chevron-right ms-auto text-body-tertiary"></i>
                     </a>
-                    <a href="/engine-room/history/nine-figure-refusal/liquidation-auction" class="list-group-item list-group-item-action p-4 d-flex align-items-center">
+                    <a href="/engine-room/artists/stardust-engine/story/nine-figure-refusal/liquidation-auction" class="list-group-item list-group-item-action p-4 d-flex align-items-center">
                         <div class="me-4 text-center" style="width: 50px;">
                             <i class="fa-duotone fa-gavel fa-2x text-danger"></i>
                         </div>
@@ -185,7 +185,7 @@ $pageTitle = "Case File: OGM-2018 (The $150M Refusal)";
                         </div>
                         <i class="fa-solid fa-chevron-right ms-auto text-body-tertiary"></i>
                     </a>
-                    <a href="/engine-room/history/nine-figure-refusal/zenith-report/stardust-bus-ride" class="list-group-item list-group-item-action p-4 d-flex align-items-center">
+                    <a href="/engine-room/artists/stardust-engine/story/nine-figure-refusal/zenith-report/stardust-bus-ride" class="list-group-item list-group-item-action p-4 d-flex align-items-center">
                         <div class="me-4 text-center" style="width: 50px;">
                             <i class="fa-duotone fa-bus fa-2x text-warning"></i>
                         </div>
@@ -203,7 +203,7 @@ $pageTitle = "Case File: OGM-2018 (The $150M Refusal)";
                     <h5 class="mb-0 text-body-emphasis fw-bold text-uppercase"><i class="fa-solid fa-chess-rook me-2 text-secondary"></i>Chapter 5: The Legacy</h5>
                 </div>
                 <div class="list-group list-group-flush">
-                    <a href="/engine-room/history/nine-figure-refusal/the-jessica-miller-center" class="list-group-item list-group-item-action p-4 d-flex align-items-center">
+                    <a href="/engine-room/artists/stardust-engine/story/nine-figure-refusal/the-jessica-miller-center" class="list-group-item list-group-item-action p-4 d-flex align-items-center">
                         <div class="me-4 text-center" style="width: 50px;">
                             <i class="fa-duotone fa-building-columns fa-2x text-success"></i>
                         </div>
@@ -213,7 +213,7 @@ $pageTitle = "Case File: OGM-2018 (The $150M Refusal)";
                         </div>
                         <i class="fa-solid fa-chevron-right ms-auto text-body-tertiary"></i>
                     </a>
-                    <a href="/engine-room/history/nine-figure-refusal/the-non-profit-model" class="list-group-item list-group-item-action p-4 d-flex align-items-center">
+                    <a href="/engine-room/artists/stardust-engine/story/nine-figure-refusal/the-non-profit-model" class="list-group-item list-group-item-action p-4 d-flex align-items-center">
                         <div class="me-4 text-center" style="width: 50px;">
                             <i class="fa-duotone fa-hand-holding-heart fa-2x text-primary"></i>
                         </div>
@@ -231,7 +231,7 @@ $pageTitle = "Case File: OGM-2018 (The $150M Refusal)";
                     <h5 class="mb-0 text-body-emphasis fw-bold text-uppercase"><i class="fa-solid fa-book-bookmark me-2 text-secondary"></i>Epilogue</h5>
                 </div>
                 <div class="list-group list-group-flush">
-                    <a href="/engine-room/history/nine-figure-refusal/frost-interview" class="list-group-item list-group-item-action p-4 d-flex align-items-center">
+                    <a href="/engine-room/artists/stardust-engine/story/nine-figure-refusal/frost-interview" class="list-group-item list-group-item-action p-4 d-flex align-items-center">
                         <div class="me-4 text-center" style="width: 50px;">
                             <i class="fa-duotone fa-clipboard-question fa-2x text-info"></i>
                         </div>
@@ -256,7 +256,7 @@ $pageTitle = "Case File: OGM-2018 (The $150M Refusal)";
         <div class="col-4 text-center">
             </div>
         <div class="col-4 text-end">
-            <a href="/engine-room/history/nine-figure-refusal/the-approach" class="btn btn-primary rounded-pill shadow-sm px-4">
+            <a href="/engine-room/artists/stardust-engine/story/nine-figure-refusal/the-approach" class="btn btn-primary rounded-pill shadow-sm px-4">
                 Begin Case File <i class="fa-solid fa-arrow-right ms-2"></i>
             </a>
         </div>

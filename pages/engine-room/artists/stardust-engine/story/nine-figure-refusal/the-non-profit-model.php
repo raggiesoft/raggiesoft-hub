@@ -1,5 +1,5 @@
 <?php
-// pages/engine-room/history/nine-figure-refusal/the-non-profit-model.php
+// pages/engine-room/artists/stardust-engine/story/nine-figure-refusal/the-non-profit-model.php
 // The "Service Over Sovereignty" Pivot
 // UPDATED: Added Staff Retention Letter & WCAG Compliance
 
@@ -220,9 +220,9 @@ $pageTitle = "The Non-Profit Model - Engine Room History";
     <?php
         // Narrative Stepper Configuration
         $nav = [
-            'prev' => ['url' => '/engine-room/history/nine-figure-refusal/the-jessica-miller-center', 'label' => 'The Jessica Miller Center'],
-            'overview' => ['url' => '/engine-room/history/nine-figure-refusal', 'label' => 'Overview'],
-            'next' => ['url' => '/engine-room/history/nine-figure-refusal/frost-interview', 'label' => 'Epilogue: The Frost Interview']
+            'prev' => ['url' => '/engine-room/artists/stardust-engine/story/nine-figure-refusal/the-jessica-miller-center', 'label' => 'The Jessica Miller Center'],
+            'overview' => ['url' => '/engine-room/artists/stardust-engine/story/nine-figure-refusal', 'label' => 'Overview'],
+            'next' => ['url' => '/engine-room/artists/stardust-engine/story/nine-figure-refusal/frost-interview', 'label' => 'Epilogue: The Frost Interview']
         ];
         include ROOT_PATH . '/includes/components/navigation/narrative-stepper.php';
     ?>

@@ -1,5 +1,5 @@
 <?php
-// pages/engine-room/history/nine-figure-refusal/zenith-report/omni-global-chapter-11.php
+// pages/engine-room/artists/stardust-engine/story/nine-figure-refusal/zenith-report/omni-global-chapter-11.php
 // The Fallout: Omni-Global collapses after realizing they tried to buyout a Lottery Winner.
 // Context: "Market Alert: Chapter 11"
 // UPDATED: Corrected Stock Symbol to OMGCQ (OTC/Pink Sheets).
@@ -149,17 +149,17 @@ include ROOT_PATH . '/includes/components/styles/zenith-theme.php';
 
     <div class="row justify-content-center mt-5 pt-4 border-top border-secondary border-opacity-25 align-items-center">
         <div class="col-4">
-            <a href="/engine-room/history/nine-figure-refusal/the-extraction" class="btn btn-outline-secondary rounded-pill">
+            <a href="/engine-room/artists/stardust-engine/story/nine-figure-refusal/the-extraction" class="btn btn-outline-secondary rounded-pill">
                 <i class="fa-solid fa-arrow-left me-2"></i>Previous
             </a>
         </div>
         <div class="col-4 text-center">
-            <a href="/engine-room/history/nine-figure-refusal" class="btn btn-outline-primary rounded-pill">
+            <a href="/engine-room/artists/stardust-engine/story/nine-figure-refusal" class="btn btn-outline-primary rounded-pill">
                 <i class="fa-duotone fa-list-tree me-2"></i>Overview
             </a>
         </div>
         <div class="col-4 text-end">
-            <a href="/engine-room/history/nine-figure-refusal/liquidation-auction" class="btn btn-primary rounded-pill shadow-sm">
+            <a href="/engine-room/artists/stardust-engine/story/nine-figure-refusal/liquidation-auction" class="btn btn-primary rounded-pill shadow-sm">
                 Next: The Liquidation <i class="fa-solid fa-arrow-right ms-2"></i>
             </a>
         </div>

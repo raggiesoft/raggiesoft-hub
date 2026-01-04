@@ -1,5 +1,5 @@
 <?php
-// pages/engine-room/history/nine-figure-refusal/ucc-search-report.php
+// pages/engine-room/artists/stardust-engine/story/nine-figure-refusal/ucc-search-report.php
 // EVIDENCE ITEM #12-C: The "Impossible" UCC Search
 // Context: Proof of zero debt AND Proof of Frost's incompetence (Wrong Jurisdiction).
 // UPDATED: Replaced manual navigation with Narrative Stepper component.
@@ -137,9 +137,9 @@ $pageTitle = "UCC Search Report: Engine Room Records - Evidence #12-C";
 
     <?php
         $nav = [
-            'prev' => ['url' => '/engine-room/history/nine-figure-refusal/target-profile', 'label' => 'Target Profile'],
-            'overview' => ['url' => '/engine-room/history/nine-figure-refusal', 'label' => 'Overview'],
-            'next' => ['url' => '/engine-room/history/nine-figure-refusal/the-bus-memo', 'label' => 'The "Bus Memo"']
+            'prev' => ['url' => '/engine-room/artists/stardust-engine/story/nine-figure-refusal/target-profile', 'label' => 'Target Profile'],
+            'overview' => ['url' => '/engine-room/artists/stardust-engine/story/nine-figure-refusal', 'label' => 'Overview'],
+            'next' => ['url' => '/engine-room/artists/stardust-engine/story/nine-figure-refusal/the-bus-memo', 'label' => 'The "Bus Memo"']
         ];
         include ROOT_PATH . '/includes/components/navigation/narrative-stepper.php';
     ?>

@@ -1,5 +1,5 @@
 <?php
-// pages/engine-room/history/nine-figure-refusal/the-offer-letter.php
+// pages/engine-room/artists/stardust-engine/story/nine-figure-refusal/the-offer-letter.php
 // EVIDENCE ITEM #01-A: The "Lowball" Term Sheet
 // UPDATED: Added Narrative Stepper & Character Manifest.
 
@@ -149,9 +149,9 @@ $pageTitle = "The $150M Offer Letter - Evidence Item #01-A";
     
     <?php
         $nav = [
-            'prev' => ['url' => '/engine-room/history/nine-figure-refusal/the-smoking-gun', 'label' => 'The Smoking Gun'],
-            'overview' => ['url' => '/engine-room/history/nine-figure-refusal', 'label' => 'Overview'],
-            'next' => ['url' => '/engine-room/history/nine-figure-refusal/the-counter-offer', 'label' => 'The Counter-Offer']
+            'prev' => ['url' => '/engine-room/artists/stardust-engine/story/nine-figure-refusal/the-smoking-gun', 'label' => 'The Smoking Gun'],
+            'overview' => ['url' => '/engine-room/artists/stardust-engine/story/nine-figure-refusal', 'label' => 'Overview'],
+            'next' => ['url' => '/engine-room/artists/stardust-engine/story/nine-figure-refusal/the-counter-offer', 'label' => 'The Counter-Offer']
         ];
         include ROOT_PATH . '/includes/components/navigation/narrative-stepper.php';
     ?>

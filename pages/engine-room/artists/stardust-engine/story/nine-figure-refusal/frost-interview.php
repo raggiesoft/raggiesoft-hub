@@ -1,5 +1,5 @@
 <?php
-// pages/engine-room/history/nine-figure-refusal/frost-interview.php
+// pages/engine-room/artists/stardust-engine/story/nine-figure-refusal/frost-interview.php
 // EPILOGUE: The "Cultural Fit" Assessment
 // Context: February 14, 2019. The "Eye of the Storm."
 // Location: Floor 38 (The New Lobby Level).
@@ -512,8 +512,8 @@ $pageTitle = "The Interview - Epilogue";
 
     <?php
         $nav = [
-            'prev' => ['url' => '/engine-room/history/nine-figure-refusal/the-non-profit-model', 'label' => 'The Non-Profit Model'],
-            'overview' => ['url' => '/engine-room/history/nine-figure-refusal', 'label' => 'Overview'],
+            'prev' => ['url' => '/engine-room/artists/stardust-engine/story/nine-figure-refusal/the-non-profit-model', 'label' => 'The Non-Profit Model'],
+            'overview' => ['url' => '/engine-room/artists/stardust-engine/story/nine-figure-refusal', 'label' => 'Overview'],
             'next' => ['url' => '/engine-room', 'label' => 'Return to HQ']
         ];
         include ROOT_PATH . '/includes/components/navigation/narrative-stepper.php';

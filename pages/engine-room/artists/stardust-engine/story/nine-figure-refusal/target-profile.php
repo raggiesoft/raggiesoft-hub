@@ -1,5 +1,5 @@
 <?php
-// pages/engine-room/history/nine-figure-refusal/target-profile.php
+// pages/engine-room/artists/stardust-engine/story/nine-figure-refusal/target-profile.php
 // The Enemy's Playbook.
 // UPDATED: Connected 'Previous' link to 'The Approach'.
 
@@ -200,9 +200,9 @@ $pageTitle = "Confidential Brief: Project GOLDEN GOOSE - Omni-Global";
         <?php
             // UPDATED NAVIGATION LOGIC
             $nav = [
-                'prev' => ['url' => '/engine-room/history/nine-figure-refusal/the-approach', 'label' => 'The Approach'],
-                'overview' => ['url' => '/engine-room/history/nine-figure-refusal', 'label' => 'Overview'],
-                'next' => ['url' => '/engine-room/history/nine-figure-refusal/ucc-search-report', 'label' => 'UCC Search Report']
+                'prev' => ['url' => '/engine-room/artists/stardust-engine/story/nine-figure-refusal/the-approach', 'label' => 'The Approach'],
+                'overview' => ['url' => '/engine-room/artists/stardust-engine/story/nine-figure-refusal', 'label' => 'Overview'],
+                'next' => ['url' => '/engine-room/artists/stardust-engine/story/nine-figure-refusal/ucc-search-report', 'label' => 'UCC Search Report']
             ];
             include ROOT_PATH . '/includes/components/navigation/narrative-stepper.php';
         ?>

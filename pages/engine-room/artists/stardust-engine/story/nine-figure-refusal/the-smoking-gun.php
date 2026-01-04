@@ -1,5 +1,5 @@
 <?php
-// pages/engine-room/history/nine-figure-refusal/the-smoking-gun.php
+// pages/engine-room/artists/stardust-engine/story/nine-figure-refusal/the-smoking-gun.php
 // EVIDENCE ITEM #00-C: The Letter (The "Smoking Gun")
 // Context: The moment Jameson Frost tried to save $0.50 and lost $600 Million.
 // UPDATED: Added Narrative Stepper Component.
@@ -222,9 +222,9 @@ $pageTitle = "Evidence #00-C: The Smoking Gun - Engine Room History";
     
     <?php
         $nav = [
-            'prev' => ['url' => '/engine-room/history/nine-figure-refusal/forensic-audit', 'label' => 'Forensic Audit'],
-            'overview' => ['url' => '/engine-room/history/nine-figure-refusal', 'label' => 'Overview'],
-            'next' => ['url' => '/engine-room/history/nine-figure-refusal/the-offer-letter', 'label' => 'The Offer Letter']
+            'prev' => ['url' => '/engine-room/artists/stardust-engine/story/nine-figure-refusal/forensic-audit', 'label' => 'Forensic Audit'],
+            'overview' => ['url' => '/engine-room/artists/stardust-engine/story/nine-figure-refusal', 'label' => 'Overview'],
+            'next' => ['url' => '/engine-room/artists/stardust-engine/story/nine-figure-refusal/the-offer-letter', 'label' => 'The Offer Letter']
         ];
         include ROOT_PATH . '/includes/components/navigation/narrative-stepper.php';
     ?>

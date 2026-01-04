@@ -1,5 +1,5 @@
 <?php
-// pages/engine-room/history/nine-figure-refusal/forensic-audit.php
+// pages/engine-room/artists/stardust-engine/story/nine-figure-refusal/forensic-audit.php
 // EVIDENCE ITEM #00-B: Holly's "Homework" & The Federal "Triple Tap"
 // Context: The moment Holly realized she could drop a nuclear bomb on Omni-Global.
 // UPDATED: Added Narrative Stepper Component.
@@ -277,9 +277,9 @@ $pageTitle = "Forensic Audit: Omni-Global Media - Engine Room History";
 
     <?php
         $nav = [
-            'prev' => ['url' => '/engine-room/history/nine-figure-refusal/ucc-search-report', 'label' => 'UCC Search Report'],
-            'overview' => ['url' => '/engine-room/history/nine-figure-refusal', 'label' => 'Overview'],
-            'next' => ['url' => '/engine-room/history/nine-figure-refusal/the-smoking-gun', 'label' => 'The Smoking Gun']
+            'prev' => ['url' => '/engine-room/artists/stardust-engine/story/nine-figure-refusal/ucc-search-report', 'label' => 'UCC Search Report'],
+            'overview' => ['url' => '/engine-room/artists/stardust-engine/story/nine-figure-refusal', 'label' => 'Overview'],
+            'next' => ['url' => '/engine-room/artists/stardust-engine/story/nine-figure-refusal/the-smoking-gun', 'label' => 'The Smoking Gun']
         ];
         include ROOT_PATH . '/includes/components/navigation/narrative-stepper.php';
     ?>

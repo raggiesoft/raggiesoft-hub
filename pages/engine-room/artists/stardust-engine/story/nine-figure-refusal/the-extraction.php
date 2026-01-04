@@ -1,5 +1,5 @@
 <?php
-// pages/engine-room/history/nine-figure-refusal/the-extraction.php
+// pages/engine-room/artists/stardust-engine/story/nine-figure-refusal/the-extraction.php
 // EVIDENCE ITEM #03: The Departure
 // Context: The family executes "Code Carry" and leaves the building.
 // UPDATED: Added narrative context regarding the employees' unawareness of the impending payroll failure.
@@ -231,9 +231,9 @@ $pageTitle = "The Extraction - Evidence Item #03";
 
     <?php
         $nav = [
-            'prev' => ['url' => '/engine-room/history/nine-figure-refusal/the-autopsy', 'label' => 'The Autopsy'],
-            'overview' => ['url' => '/engine-room/history/nine-figure-refusal', 'label' => 'Overview'],
-            'next' => ['url' => '/engine-room/history/nine-figure-refusal/zenith-report/omni-global-chapter-11', 'label' => 'The Fallout']
+            'prev' => ['url' => '/engine-room/artists/stardust-engine/story/nine-figure-refusal/the-autopsy', 'label' => 'The Autopsy'],
+            'overview' => ['url' => '/engine-room/artists/stardust-engine/story/nine-figure-refusal', 'label' => 'Overview'],
+            'next' => ['url' => '/engine-room/artists/stardust-engine/story/nine-figure-refusal/zenith-report/omni-global-chapter-11', 'label' => 'The Fallout']
         ];
         include ROOT_PATH . '/includes/components/navigation/narrative-stepper.php';
     ?>

@@ -1,5 +1,5 @@
 <?php
-// pages/engine-room/history/nine-figure-refusal/chapter-7-conversion-order.php
+// pages/engine-room/artists/stardust-engine/story/nine-figure-refusal/chapter-7-conversion-order.php
 // The Death Certificate.
 // Context: The Bankruptcy Court orders Omni-Global to cease operations immediately.
 // UPDATED: WCAG Compliance & Narrative Stepper.
@@ -150,9 +150,9 @@ $pageTitle = "Order Converting Case to Chapter 7 - Case 18-11492";
 
     <?php
         $nav = [
-            'prev' => ['url' => '/engine-room/history/nine-figure-refusal/the-bus-memo', 'label' => 'The Bus Memo'],
-            'overview' => ['url' => '/engine-room/history/nine-figure-refusal', 'label' => 'Overview'],
-            'next' => ['url' => '/engine-room/history/nine-figure-refusal/liquidation-auction', 'label' => 'The Liquidation']
+            'prev' => ['url' => '/engine-room/artists/stardust-engine/story/nine-figure-refusal/the-bus-memo', 'label' => 'The Bus Memo'],
+            'overview' => ['url' => '/engine-room/artists/stardust-engine/story/nine-figure-refusal', 'label' => 'Overview'],
+            'next' => ['url' => '/engine-room/artists/stardust-engine/story/nine-figure-refusal/liquidation-auction', 'label' => 'The Liquidation']
         ];
         include ROOT_PATH . '/includes/components/navigation/narrative-stepper.php';
     ?>

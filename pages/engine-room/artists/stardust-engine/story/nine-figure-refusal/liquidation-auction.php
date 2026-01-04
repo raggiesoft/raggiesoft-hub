@@ -1,5 +1,5 @@
 <?php
-// pages/engine-room/history/nine-figure-refusal/liquidation-auction.php
+// pages/engine-room/artists/stardust-engine/story/nine-figure-refusal/liquidation-auction.php
 // The Yard Sale.
 // Context: Selling off the "Ego" to pay the "Unsecured Creditors."
 // UPDATED: Removed missing assets & Added 'prefers-reduced-motion' support.
@@ -210,9 +210,9 @@ $pageTitle = "Asset Disposal: Omni-Global Liquidation - Case 18-11492";
 
             <?php
                 $nav = [
-                    'prev' => ['url' => '/engine-room/history/nine-figure-refusal/zenith-report/omni-global-chapter-11', 'label' => 'Market Alert: Ch. 11'],
-                    'overview' => ['url' => '/engine-room/history/nine-figure-refusal', 'label' => 'Overview'],
-                    'next' => ['url' => '/engine-room/history/nine-figure-refusal/zenith-report/stardust-bus-ride', 'label' => 'The Bus Ride Article']
+                    'prev' => ['url' => '/engine-room/artists/stardust-engine/story/nine-figure-refusal/zenith-report/omni-global-chapter-11', 'label' => 'Market Alert: Ch. 11'],
+                    'overview' => ['url' => '/engine-room/artists/stardust-engine/story/nine-figure-refusal', 'label' => 'Overview'],
+                    'next' => ['url' => '/engine-room/artists/stardust-engine/story/nine-figure-refusal/zenith-report/stardust-bus-ride', 'label' => 'The Bus Ride Article']
                 ];
                 include ROOT_PATH . '/includes/components/navigation/narrative-stepper.php';
             ?>

@@ -1,5 +1,5 @@
 <?php
-// pages/engine-room/history/nine-figure-refusal/staff-retention.php
+// pages/engine-room/artists/stardust-engine/story/nine-figure-refusal/staff-retention.php
 // EVIDENCE ITEM #101: The "Bridge" Letter
 // Context: Holly hires the staff that Frost abandoned.
 // UPDATED: WCAG Compliance & Narrative Stepper.
@@ -117,9 +117,9 @@ $pageTitle = "The Retention Offer - Engine Room History";
 
     <?php
         $nav = [
-            'prev' => ['url' => '/engine-room/history/nine-figure-refusal/chapter-7-conversion-order', 'label' => 'The Death Warrant'],
-            'overview' => ['url' => '/engine-room/history/nine-figure-refusal', 'label' => 'Overview'],
-            'next' => ['url' => '/engine-room/history/nine-figure-refusal/liquidation-auction', 'label' => 'The Liquidation']
+            'prev' => ['url' => '/engine-room/artists/stardust-engine/story/nine-figure-refusal/chapter-7-conversion-order', 'label' => 'The Death Warrant'],
+            'overview' => ['url' => '/engine-room/artists/stardust-engine/story/nine-figure-refusal', 'label' => 'Overview'],
+            'next' => ['url' => '/engine-room/artists/stardust-engine/story/nine-figure-refusal/liquidation-auction', 'label' => 'The Liquidation']
         ];
         include ROOT_PATH . '/includes/components/navigation/narrative-stepper.php';
     ?>

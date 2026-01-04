@@ -1,5 +1,5 @@
 <?php
-// pages/engine-room/history/nine-figure-refusal/zenith-report/stardust-bus-ride.php
+// pages/engine-room/artists/stardust-engine/story/nine-figure-refusal/zenith-report/stardust-bus-ride.php
 // The Zenith Report Archives.
 // Contains: "The $350 Million Bus Ride", "The Image That Broke Wall Street", AND "The Landlord's Statement"
 // Context: Investigative reporting on the Omni-Global scandal.
@@ -262,9 +262,9 @@ include ROOT_PATH . '/includes/components/styles/zenith-theme.php';
 
     <?php
         $nav = [
-            'prev' => ['url' => '/engine-room/history/nine-figure-refusal/liquidation-auction', 'label' => 'Liquidation Auction'],
-            'overview' => ['url' => '/engine-room/history/nine-figure-refusal', 'label' => 'Overview'],
-            'next' => ['url' => '/engine-room/history/nine-figure-refusal/the-jessica-miller-center', 'label' => 'The Legacy']
+            'prev' => ['url' => '/engine-room/artists/stardust-engine/story/nine-figure-refusal/liquidation-auction', 'label' => 'Liquidation Auction'],
+            'overview' => ['url' => '/engine-room/artists/stardust-engine/story/nine-figure-refusal', 'label' => 'Overview'],
+            'next' => ['url' => '/engine-room/artists/stardust-engine/story/nine-figure-refusal/the-jessica-miller-center', 'label' => 'The Legacy']
         ];
         include ROOT_PATH . '/includes/components/navigation/narrative-stepper.php';
     ?>

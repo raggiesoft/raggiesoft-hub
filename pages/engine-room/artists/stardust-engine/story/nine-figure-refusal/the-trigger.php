@@ -1,5 +1,5 @@
 <?php
-// pages/engine-room/history/nine-figure-refusal/the-trigger.php
+// pages/engine-room/artists/stardust-engine/story/nine-figure-refusal/the-trigger.php
 // The Event That Started The War: Slide 14 & The Fallout
 // UPDATED: WCAG Compliance, Narrative Stepper, and Expanded Lore Context.
 
@@ -104,9 +104,9 @@ $pageTitle = "The Trigger: Slide 14 - Evidence Item #1";
 
     <?php
         $nav = [
-            'prev' => ['url' => '/engine-room/history/nine-figure-refusal/the-counter-offer', 'label' => 'The Counter-Offer'],
-            'overview' => ['url' => '/engine-room/history/nine-figure-refusal', 'label' => 'Overview'],
-            'next' => ['url' => '/engine-room/history/nine-figure-refusal/the-autopsy', 'label' => 'The Autopsy']
+            'prev' => ['url' => '/engine-room/artists/stardust-engine/story/nine-figure-refusal/the-counter-offer', 'label' => 'The Counter-Offer'],
+            'overview' => ['url' => '/engine-room/artists/stardust-engine/story/nine-figure-refusal', 'label' => 'Overview'],
+            'next' => ['url' => '/engine-room/artists/stardust-engine/story/nine-figure-refusal/the-autopsy', 'label' => 'The Autopsy']
         ];
         include ROOT_PATH . '/includes/components/navigation/narrative-stepper.php';
     ?>

@@ -1,5 +1,5 @@
 <?php
-// pages/engine-room/history/nine-figure-refusal/the-bus-memo.php
+// pages/engine-room/artists/stardust-engine/story/nine-figure-refusal/the-bus-memo.php
 // EVIDENCE ITEM #44-B: The Document That Killed a Corporation
 // UPDATED: Dark Mode "Red Pen" visibility improvements.
 
@@ -243,9 +243,9 @@ $pageTitle = "The 'Bus Memo' - Evidence Item #44-B";
 
     <?php
         $nav = [
-            'prev' => ['url' => '/engine-room/history/nine-figure-refusal/ucc-search-report', 'label' => 'UCC Search Report'],
-            'overview' => ['url' => '/engine-room/history/nine-figure-refusal', 'label' => 'Overview'],
-            'next' => ['url' => '/engine-room/history/nine-figure-refusal/forensic-audit', 'label' => 'Forensic Audit']
+            'prev' => ['url' => '/engine-room/artists/stardust-engine/story/nine-figure-refusal/ucc-search-report', 'label' => 'UCC Search Report'],
+            'overview' => ['url' => '/engine-room/artists/stardust-engine/story/nine-figure-refusal', 'label' => 'Overview'],
+            'next' => ['url' => '/engine-room/artists/stardust-engine/story/nine-figure-refusal/forensic-audit', 'label' => 'Forensic Audit']
         ];
         include ROOT_PATH . '/includes/components/navigation/narrative-stepper.php';
     ?>

@@ -1,5 +1,5 @@
 <?php
-// pages/engine-room/history/nine-figure-refusal/the-autopsy.php
+// pages/engine-room/artists/stardust-engine/story/nine-figure-refusal/the-autopsy.php
 // EVIDENCE ITEM #02: The Counter-Attack
 // Context: Holly commandeers the presentation hardware.
 // Motivation: The "Tyler Email" Incident, The Merch Burn, & The Credentials.
@@ -551,9 +551,9 @@ $pageTitle = "The Autopsy: Holly Takes Control - Evidence Item #02";
 
     <?php
         $nav = [
-            'prev' => ['url' => '/engine-room/history/nine-figure-refusal/the-trigger', 'label' => 'The Trigger'],
-            'overview' => ['url' => '/engine-room/history/nine-figure-refusal', 'label' => 'Overview'],
-            'next' => ['url' => '/engine-room/history/nine-figure-refusal/the-extraction', 'label' => 'The Extraction']
+            'prev' => ['url' => '/engine-room/artists/stardust-engine/story/nine-figure-refusal/the-trigger', 'label' => 'The Trigger'],
+            'overview' => ['url' => '/engine-room/artists/stardust-engine/story/nine-figure-refusal', 'label' => 'Overview'],
+            'next' => ['url' => '/engine-room/artists/stardust-engine/story/nine-figure-refusal/the-extraction', 'label' => 'The Extraction']
         ];
         include ROOT_PATH . '/includes/components/navigation/narrative-stepper.php';
     ?>
