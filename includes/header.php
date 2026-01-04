@@ -1,7 +1,7 @@
 <?php
 // includes/header.php
-// v7.1.1 - RaggieSoft Production
-// Updated: Fixed Back Button/Loader Persistence Bug
+// v7.1.2 - RaggieSoft Production
+// Updated: Added Animated Hamburger Menu (The "X" Transform)
 
 // 1. Resolve Context
 $site  = $currentSite ?? 'raggiesoft';
@@ -15,7 +15,8 @@ if ($site !== 'raggiesoft' && $theme === 'raggiesoft') {
     $theme = $site;
 }
 
-$force_dark_mode = ($theme === 'dark' || $theme === 'ad-astra');
+// --- FORCE DARK MODE LOGIC ---
+$force_dark_mode = ($theme === 'dark' || $theme === 'ad-astra' || $theme === 'industrial');
 
 // --- 2. BRAND FONT LOGIC ---
 $font_stack = $pageConfig['brandFont'] ?? $settings['brandFont'] ?? ['sans-serif'];
@@ -148,6 +149,51 @@ if (isset($customPageAssets) && is_array($customPageAssets)) {
         .navbar-brand-corporate-img { mix-blend-mode: multiply; }
         [data-bs-theme="dark"] .navbar-brand-corporate-img {
             filter: invert(1) grayscale(100%); mix-blend-mode: screen;
+        }
+
+        /* --- HAMBURGER MENU ANIMATION --- */
+        .navbar-toggler { border: none; padding: 0.5rem; }
+        .navbar-toggler:focus { box-shadow: none; }
+        
+        .hamburger-icon {
+            width: 28px;
+            height: 20px;
+            position: relative;
+            transform: rotate(0deg);
+            transition: .5s ease-in-out;
+            cursor: pointer;
+        }
+
+        .hamburger-icon span {
+            display: block;
+            position: absolute;
+            height: 2px;
+            width: 100%;
+            background: var(--bs-navbar-color); /* Matches theme text color */
+            border-radius: 9px;
+            opacity: 1;
+            left: 0;
+            transform: rotate(0deg);
+            transition: .25s ease-in-out;
+        }
+
+        /* Bar Positions */
+        .hamburger-icon span:nth-child(1) { top: 0px; }
+        .hamburger-icon span:nth-child(2) { top: 9px; }
+        .hamburger-icon span:nth-child(3) { top: 18px; }
+
+        /* Transform to X when Open (aria-expanded="true") */
+        .navbar-toggler[aria-expanded="true"] .hamburger-icon span:nth-child(1) {
+            top: 9px;
+            transform: rotate(135deg);
+        }
+        .navbar-toggler[aria-expanded="true"] .hamburger-icon span:nth-child(2) {
+            opacity: 0;
+            left: -60px;
+        }
+        .navbar-toggler[aria-expanded="true"] .hamburger-icon span:nth-child(3) {
+            top: 9px;
+            transform: rotate(-135deg);
         }
     </style>
 
@@ -310,7 +356,11 @@ if (isset($customPageAssets) && is_array($customPageAssets)) {
           </a>
           
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-            <span class="navbar-toggler-icon"></span>
+             <div class="hamburger-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
           </button>
           
           <div class="collapse navbar-collapse" id="navbarCollapse">
