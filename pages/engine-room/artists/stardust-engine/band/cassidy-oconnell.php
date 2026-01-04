@@ -40,18 +40,18 @@ $pageTitle = "Cassidy O'Connell - The Stardust Engine";
 
             <div class="card bg-dark bg-opacity-75 border-success shadow-lg mt-5 overflow-hidden">
                 <div class="card-header bg-success bg-opacity-25 text-white fw-bold border-bottom border-success">
-                    <i class="fa-duotone fa-ticket me-2"></i>CONFIDENTIAL: The "Event" (1996)
+                    <i class="fa-duotone fa-ticket me-2"></i>CONFIDENTIAL: The "American Dream" (1996)
                 </div>
                 <div class="card-body p-4">
-                    <h4 class="text-success fw-bold">The Angel Investor</h4>
+                    <h4 class="text-success fw-bold">The Daleville Event</h4>
                     <p class="text-white-75">
-                        In 1996, one year after the band went independent, Cassidy O'Connell purchased a lottery ticket at a gas station in Blacksburg. She won the <strong>$2.04 Billion</strong> Powerball jackpot.
+                        In 1996, four years after the band declared independence, they were driving home from a gig in Lexington, VA. They stopped at a gas station in <strong>Daleville</strong> for late-night snacks and fuel. On a whim, Cassidy bought a "Quick Pick" ticket for the <em>American Dream</em> lottery. She let the machine pick the numbers, simply liking the visual pattern they made on the screen.
                     </p>
                     <p class="text-white-75">
-                        She never gave an interview. She never bought a yacht. Instead, she handed the ticket to her sister Holly and said, "Fix it so we never have to ask permission to make music again."
+                        The next morning, while reading the newspaper, it slowly dawned on her: she had matched <strong>all numbers in correct order</strong>, including the Dream Ball.
                     </p>
                     <p class="text-white-75">
-                        This singular event transformed The Stardust Engine from a struggling indie band into a "Loss Leader" for a multi-billion dollar empire. They don't tour to pay the rent; they tour because it's who they are.
+                        She didn't scream. She walked into the kitchen, handed the ticket to her sister Holly, and said, "Build us a fortress so we never have to be hurt again." The jackpot was <strong>$2.04 Billion</strong>.
                     </p>
                 </div>
             </div>
@@ -65,10 +65,13 @@ $pageTitle = "Cassidy O'Connell - The Stardust Engine";
                     'imgSrc' => 'https://assets.raggiesoft.com/stardust-engine/images/band-members/cassidy.jpg',
                     'imgAlt' => 'Headshot of Cassidy O\'Connell',
                     'variant' => 'pact', // Pink/Violet
-                    'description' => "<strong>Role:</strong> Vocals, Keys, Synths<br>
-                                      <strong>Age (in 1987):</strong> 21<br>
-                                      <strong>CPI Status:</strong> Alumna, Class of '89<br>
-                                      <strong>Status:</strong> The Angel (Unbroken)",
+                    // FIX: Wrapped content in a div with text-white-75 to force readability
+                    'description' => "<div class='text-white-75'>
+                                        <strong>Role:</strong> Vocals, Keys, Synths<br>
+                                        <strong>Age (in 1987):</strong> 21<br>
+                                        <strong>CPI Status:</strong> Alumna, Class of '89<br>
+                                        <strong>Status:</strong> The Angel (Unbroken)
+                                      </div>",
                     'buttonProps' => [
                         'text' => 'Back to The Band', 
                         'href' => '/engine-room/artists/stardust-engine/band', 
