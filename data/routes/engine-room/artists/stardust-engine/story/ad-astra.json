@@ -11,7 +11,7 @@
     
     "siteName": "Ad Astra // Mission Control",
     "navbarBrandLogo": "https://assets.raggiesoft.com/engine-room-records/artists/the-stardust-engine/band-logo.png",
-    "navbarBrandText": "AD ASTRA",
+    "navbarBrandText": "<span class=\"text-uppercase\">Ad Astra</span><span class=\"d-none d-md-inline\">: To The Stars</span>",
     "navbarBrandLink": "/engine-room/artists/stardust-engine/story/ad-astra",
     "ogImage": "https://assets.raggiesoft.com/stardust-engine/images/story/ad-astra/ad-astra-hero.jpg"
   },
