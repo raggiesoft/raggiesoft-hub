@@ -69,7 +69,7 @@ $pageTitle = "The Approach Vector - Evidence Item #00";
                     <h5 class="text-primary fw-bold text-uppercase mb-4">The Landing</h5>
 
                     <p>
-                        The tires of the Gateway Airlines Boeing 737 touched down with a chirp of burning rubber.
+                        The tires of the Gateway Airlines flight touched down with a chirp of burning rubber.
                     </p>
                     <p>
                         Tyler Wright checked his watch. "Wheels down. 08:30 local. We made up time over the Rockies."
