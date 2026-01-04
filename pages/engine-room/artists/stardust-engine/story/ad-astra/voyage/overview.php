@@ -1,6 +1,7 @@
 <?php
 // pages/engine-room/artists/stardust-engine/story/ad-astra/voyage/overview.php
 // Context: The Chapter Select screen for the Ad Astra narrative.
+// UPDATED: Added Day 03 (Ship's Time)
 
 $pageTitle = "Flight Log: Overview - Ad Astra";
 ?>
@@ -48,6 +49,18 @@ $pageTitle = "Flight Log: Overview - Ad Astra";
                                         <i class="fa-duotone fa-rocket-launch me-2"></i>Day 01: Ignition
                                     </h4>
                                     <p class="mb-0 text-white-50 small font-monospace">Atmospheric Exit // 1.5G Ascent // Music: "Ignition"</p>
+                                </div>
+                                <i class="fa-solid fa-chevron-right text-secondary"></i>
+                            </div>
+                        </a>
+
+                        <a href="/engine-room/artists/stardust-engine/story/ad-astra/voyage/day-03" class="list-group-item list-group-item-action bg-transparent p-4 border-bottom border-secondary border-opacity-25 hover-bg-dark">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div>
+                                    <h4 class="h5 text-light fw-bold text-uppercase mb-1">
+                                        <i class="fa-duotone fa-clock me-2"></i>Day 03: Ship's Time
+                                    </h4>
+                                    <p class="mb-0 text-white-50 small font-monospace">Living Quarters // Circadian Cycle // 1.0G (Artificial)</p>
                                 </div>
                                 <i class="fa-solid fa-chevron-right text-secondary"></i>
                             </div>
