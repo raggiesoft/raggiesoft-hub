@@ -1,12 +1,13 @@
 <?php
 // pages/engine-room/artists/stardust-engine/story/friction/overview.php
 // The Friction Catastrophe Archive
-// Context: The "Science vs. Sex" Misunderstanding.
+// Context: 1992. The "Cold War" turns hot.
+// UPDATED: Added Cassidy's original Concept Art (The Shuttle Re-Entry).
 
 $pageTitle = "The Friction Catastrophe - Engine Room History";
 
-// Asset Path for the "Intended" Art (Cassidy's Drawing)
-$intended_art = 'https://assets.raggiesoft.com/stardust-engine/images/story/friction-intended-art.jpg'; 
+// ASSET: Cassidy's Original Concept Art (The Shuttle)
+$intended_art = 'https://assets.raggiesoft.com/engine-room-records/artists/the-stardust-engine/1992-friction/album-art.jpg';
 ?>
 
 <div class="container py-5">
@@ -30,7 +31,7 @@ $intended_art = 'https://assets.raggiesoft.com/stardust-engine/images/story/fric
                          <img src="https://assets.raggiesoft.com/stardust-engine/images/story/friction-photoshoot.jpg" 
                              class="img-fluid h-100 object-fit-cover" 
                              style="filter: sepia(10%) contrast(1.1);"
-                             alt="The Stardust Engine waiting in a cold warehouse. Ryan is in his wheelchair. Cassidy is shivering in a black dress.">
+                             alt="The Stardust Engine waiting in a cold warehouse. Ryan is in his wheelchair looking annoyed. Cassidy is shivering in a black dress. A TV cart plays cartoons in the background.">
                         <div class="position-absolute top-0 start-0 m-3">
                             <span class="badge bg-black bg-opacity-75 border border-secondary text-white shadow-sm">
                                 <i class="fa-duotone fa-camera-retro me-2 text-danger"></i>Los Angeles, 1992
@@ -52,10 +53,21 @@ $intended_art = 'https://assets.raggiesoft.com/stardust-engine/images/story/fric
                     </div>
                 </div>
             </div>
-
+            
             <h2 class="h3 fw-bold border-bottom border-secondary pb-2 mb-4">
                 1. The "Two Frictions" Theory
             </h2>
+
+             <div class="mb-4">
+                <span class="badge bg-danger bg-opacity-10 text-danger border border-danger mb-2">Market Context: 1992</span>
+                <p class="text-body-secondary small">
+                    In 1992, the music industry was obsessed with <strong>"Shock Value."</strong>
+                    Superstar <strong>Cydele</strong> was dominating the charts with her album <em>Sanctuary</em> and its controversial companion book. Apex Records wanted to compete.
+                </p>
+                <p class="text-body-secondary small">
+                    They hired "rogue agent" <strong>Julian Vance</strong> to find their own "Sex Sells" act. Julian looked at The Stardust Engine's 1989 promo photo, saw two attractive leads with intense chemistry, and made a catastrophic error: <strong>He assumed they were a couple.</strong>
+                </p>
+            </div>
             
             <div class="row g-4 mb-5">
                 <div class="col-md-6">
@@ -63,9 +75,15 @@ $intended_art = 'https://assets.raggiesoft.com/stardust-engine/images/story/fric
                         <div class="card-header bg-info bg-opacity-10 text-info-emphasis fw-bold">
                             <i class="fa-duotone fa-shuttle-space me-2"></i>The Band's Vision (Science)
                         </div>
-                        <img src="<?php echo $intended_art; ?>" 
-                             class="card-img-top p-3 bg-white" 
-                             alt="Cassidy's drawing of a space shuttle re-entering atmosphere with a trail of fire.">
+                        <div class="position-relative">
+                            <img src="<?php echo $intended_art; ?>" 
+                                class="card-img-top p-0 bg-white" 
+                                style="aspect-ratio: 1/1; object-fit: cover;"
+                                alt="Cassidy's drawing of a space shuttle re-entering atmosphere with a trail of fire.">
+                            <div class="position-absolute bottom-0 start-0 w-100 bg-black bg-opacity-75 text-white text-center small py-1">
+                                Cassidy's Concept Art (1992)
+                            </div>
+                        </div>
                         <div class="card-body">
                             <h6 class="fw-bold">Definition: "Re-Entry Heat"</h6>
                             <p class="card-text small text-body-secondary">
@@ -89,10 +107,10 @@ $intended_art = 'https://assets.raggiesoft.com/stardust-engine/images/story/fric
                             </div>
                             <h6 class="fw-bold">Definition: "Sexual Tension"</h6>
                             <p class="card-text small text-body-secondary">
-                                Julian Vance wanted to compete with <strong>Cydele's</strong> <em>Sanctuary</em> (Erotica). He looked at the siblings and assumed they were a "White Stripes" style married couple with intense chemistry.
+                                Julian Vance didn't care about space. He wanted a "White Stripes" style married couple.
                             </p>
                             <p class="card-text small text-body-secondary">
-                                He heard the lyrics to "Atmosphere" ("Burning up," "Shaking hull") and assumed they were double-entendres for sex. He never clarified. He just booked the photographer.
+                                He heard the lyrics to "Atmosphere" ("Burning up," "Shaking hull") and assumed they were double-entendres. He rejected Cassidy's drawing as "childish" and booked a photographer to shoot <strong>"Shot 12: The Lovers"</strong>—a demand for the siblings to simulate intercourse on camera.
                             </p>
                         </div>
                     </div>
@@ -121,7 +139,7 @@ $intended_art = 'https://assets.raggiesoft.com/stardust-engine/images/story/fric
                         <div class="col-md-4 text-end">
                             <?php $props = [
                                 'text' => 'Read Lyrics', 
-                                'href' => '#', // Link to modal or lyrics page
+                                'href' => '/engine-room/artists/stardust-engine/story/friction/the-lost-title-track', // Assuming lyrics are here or modal
                                 'variant' => 'outline-primary', 
                                 'size' => 'small',
                                 'icon' => 'fa-duotone fa-eye',
@@ -133,25 +151,7 @@ $intended_art = 'https://assets.raggiesoft.com/stardust-engine/images/story/fric
             </div>
 
             <h2 class="h3 fw-bold border-bottom border-secondary pb-2 mb-3 mt-5">
-                3. The Photo Shoot (The Collision)
-            </h2>
-            <p class="fs-5 text-body-secondary mb-4">
-                The two realities collided at 10:00 AM on September 14, 1992. Julian rejected Cassidy's shuttle drawing, calling it "childish." He then presented his own storyboard: <strong>SHOT 12: THE LOVERS.</strong>
-            </p>
-            <div class="alert alert-dark border-start border-4 border-danger bg-body-secondary">
-                <div class="d-flex">
-                    <i class="fa-duotone fa-triangle-exclamation text-danger fs-3 me-3 mt-1"></i>
-                    <div>
-                        <strong class="text-danger-emphasis">The Realization:</strong>
-                        <p class="mb-0 text-body-secondary small">
-                            It wasn't just that he wanted them to be sexy. It was that he wanted <strong>Ryan and Cassidy</strong>—brother and sister—to simulate intercourse on camera. The "Friction" he wanted wasn't atmospheric; it was incestuous.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <h2 class="h3 fw-bold border-bottom border-secondary pb-2 mb-3 mt-5">
-                4. The Aftermath
+                3. The Aftermath
             </h2>
             <div class="alert alert-dark border-primary mt-4 text-body-emphasis shadow-sm" role="alert">
                 <h4 class="alert-heading text-primary"><i class="fa-duotone fa-flag me-2"></i>The Rebirth</h4>
