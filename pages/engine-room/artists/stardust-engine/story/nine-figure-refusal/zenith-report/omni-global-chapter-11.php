@@ -29,15 +29,7 @@ include ROOT_PATH . '/includes/components/styles/zenith-theme.php';
             </div>
         </div>
 
-        <div class="mb-4 position-relative">
-            <img src="https://assets.raggiesoft.com/engine-room-records/images/omni-global/chapter-11-news.jpg" 
-                 class="img-fluid w-100 grayscale-50" 
-                 alt="News photo of Jameson Frost hiding his face as he exits 2000 Avenue of the Stars, flanked by security. A 'For Lease' sign is visible in the background."
-                 style="filter: grayscale(100%);">
-            <div class="p-2 bg-body-secondary small fst-italic border-bottom border-dark">
-                ABOVE: VP Jameson Frost escorted from Omni-Global headquarters this morning. The building's landlord, Pacific Rim Properties, reportedly initiated a lockout at midnight.
-            </div>
-        </div>
+        
 
         <div class="row">
             <div class="col-lg-8">
