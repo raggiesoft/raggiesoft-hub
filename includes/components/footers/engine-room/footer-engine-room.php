@@ -6,7 +6,8 @@
                 <img src="https://assets.raggiesoft.com/common/images/logos/engine-room-records.png" 
                      alt="Engine Room Records" 
                      width="120" 
-                     class="navbar-brand-img-invertible opacity-75 mb-3"> <div class="text-uppercase fw-bold" style="font-family: 'Courier New', monospace; letter-spacing: -1px;">
+                     class="navbar-brand-img-invertible opacity-90 mb-3"> 
+                <div class="text-uppercase fw-bold" style="font-family: 'Courier New', monospace; letter-spacing: -1px;">
                     LOUD. RAW. REAL.
                 </div>
             </div>
@@ -19,24 +20,24 @@
                 </ul>
             </div>
 
-            <div class="col-md-4 text-center text-md-end text-secondary small">
+            <div class="col-md-4 text-center text-md-end text-white-50 small">
                 <p class="mb-1">EST. 1992</p>
                 <p class="mb-0">Norfolk, VA</p>
                 <div class="mt-3">
-                    <a href="#" class="text-secondary me-3"><i class="fa-brands fa-instagram fa-lg"></i></a>
-                    <a href="#" class="text-secondary"><i class="fa-brands fa-bandcamp fa-lg"></i></a>
+                    <a href="#" class="text-white-50 me-3 hover-text-white"><i class="fa-brands fa-instagram fa-lg"></i><span class="visually-hidden">Instagram</span></a>
+                    <a href="#" class="text-white-50 hover-text-white"><i class="fa-brands fa-bandcamp fa-lg"></i><span class="visually-hidden">Bandcamp</span></a>
                 </div>
             </div>
         </div>
         
         <div class="row mt-5 pt-3 border-top border-secondary border-opacity-25">
-            <div class="col-md-6 text-center text-md-start text-muted x-small">
+            <div class="col-md-6 text-center text-md-start text-white-50 x-small">
                 &copy; 1992-<?php echo date("Y"); ?> Engine Room Records. A RaggieSoft Company.
             </div>
-            <div class="col-md-6 text-center text-md-end text-muted x-small">
-                 <a href="/about/privacy" class="text-reset text-decoration-none">Privacy</a> &bull; 
-                 <a href="/about/terms" class="text-reset text-decoration-none">Terms</a> &bull; 
-                 <a href="/about/license" class="text-reset text-decoration-none">MIT / CC BY-SA 4.0</a>
+            <div class="col-md-6 text-center text-md-end text-white-50 x-small">
+                 <a href="/about/privacy" class="text-reset text-decoration-none hover-text-white">Privacy</a> &bull; 
+                 <a href="/about/terms" class="text-reset text-decoration-none hover-text-white">Terms</a> &bull; 
+                 <a href="/about/license" class="text-reset text-decoration-none hover-text-white">MIT / CC BY-SA 4.0</a>
             </div>
         </div>
     </div>

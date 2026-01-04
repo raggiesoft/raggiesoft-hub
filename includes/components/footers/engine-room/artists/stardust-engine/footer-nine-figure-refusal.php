@@ -4,7 +4,7 @@
         background-color: #f8f9fa; /* File Folder Off-White */
         border-top: 5px solid #dc3545; /* Red "Sealed" Border */
         font-family: 'Courier New', Courier, monospace;
-        color: #333;
+        color: #212529; /* Darker Grey for AA Compliance */
         position: relative;
         overflow: hidden;
     }
@@ -18,12 +18,12 @@
         display: inline-block;
         transform: rotate(-5deg);
         font-size: 1.2rem;
-        opacity: 0.8;
+        opacity: 0.9;
     }
 
     .redacted-text {
         background-color: #000;
-        color: #000;
+        color: #000; /* Text hidden visually */
         padding: 0 4px;
         user-select: none; 
     }
@@ -47,7 +47,7 @@
                 <div class="small">
                     <strong>CASE ID:</strong> TSE-1995-CIV-001<br>
                     <strong>PLAINTIFF:</strong> Global Media Corp<br>
-                    <strong>DEFENDANT:</strong> <span class="redacted-text">Stardust Eng</span><br>
+                    <strong>DEFENDANT:</strong> <span class="redacted-text" aria-label="Redacted: Stardust Engine">Stardust Eng</span><br>
                     <strong>STATUS:</strong> <span class="text-danger fw-bold">SEALED BY COURT ORDER</span>
                 </div>
             </div>
@@ -68,7 +68,7 @@
                         </a>
                     </li>
                     <li class="mb-2">
-                        <span class="text-muted text-decoration-line-through">
+                        <span class="text-secondary text-decoration-line-through">
                             <i class="fa-solid fa-user-secret me-2"></i>Witness Testimony: A. Wright
                         </span> 
                         <span class="badge bg-secondary ms-1">REDACTED</span>
@@ -79,21 +79,21 @@
             <div class="col-md-4 text-center text-md-end small">
                 <p class="mb-2">
                     <strong>WARNING:</strong> Possession of this document without clearance level 
-                    <span class="redacted-text">ZZ-9</span> is a federal offense.
+                    <span class="redacted-text" aria-label="Redacted Level">ZZ-9</span> is a federal offense.
                 </p>
-                <div class="opacity-75">
+                <div class="text-dark opacity-75">
                     <i class="fa-solid fa-fingerprint fa-2x mb-2"></i><br>
                     Digitized by RaggieSoft Archival Division<br>
-                    <a href="/" class="text-dark">Return to Surface Web</a>
+                    <a href="/" class="text-dark text-decoration-underline">Return to Surface Web</a>
                 </div>
             </div>
         </div>
         
         <div class="row mt-4 pt-3 border-top border-secondary border-opacity-25">
-            <div class="col-12 text-center x-small font-monospace text-muted">
+            <div class="col-12 text-center x-small font-monospace text-secondary">
                 Document retrieved: <?php echo date("Y-m-d H:i:s"); ?> // IP: <?php echo $_SERVER['REMOTE_ADDR']; ?>
                 <br>
-                <span class="opacity-75">
+                <span class="opacity-100">
                     <a href="/about/privacy" class="text-reset text-decoration-none">Privacy</a> | 
                     <a href="/about/terms" class="text-reset text-decoration-none">Terms</a> | 
                     <a href="/about/license" class="text-reset text-decoration-none">Content: CC BY-SA 4.0 / Code: MIT</a>
