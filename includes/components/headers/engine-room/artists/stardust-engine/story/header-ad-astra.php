@@ -1,7 +1,8 @@
 <?php
+// includes/components/headers/engine-room/artists/stardust-engine/story/header-ad-astra.php
 // Header: Ad Astra Mission Control
 // Theme: HUD / Sci-Fi / High Contrast
-// UPDATED: Added Day 02 to Flight Logs
+// CONTEXT: The navigation HUD for the spaceship simulation.
 ?>
 <ul class="navbar-nav ms-auto mb-2 mb-md-0 font-monospace">
   

@@ -46,5 +46,10 @@
     "view": "pages/engine-room/artists/stardust-engine/story/ad-astra/voyage/day-10",
     "title": "Day 10: The Drift | Flight Log",
     "ogDescription": "Zero-G Concert at the Veil Nebula."
+  },
+  "/engine-room/artists/stardust-engine/story/ad-astra/voyage/day-21": {
+    "view": "pages/engine-room/artists/stardust-engine/story/ad-astra/voyage/day-21",
+    "title": "Day 21: The Drop | Flight Log",
+    "ogDescription": "Atmospheric Re-entry. The Hard Reset."
   }
 }

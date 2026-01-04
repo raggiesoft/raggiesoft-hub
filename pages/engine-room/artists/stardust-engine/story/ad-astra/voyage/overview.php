@@ -1,7 +1,7 @@
 <?php
 // pages/engine-room/artists/stardust-engine/story/ad-astra/voyage/overview.php
 // Context: The Chapter Select screen for the Ad Astra narrative.
-// UPDATED: Added Day 03 (Ship's Time)
+// UPDATED: Full Mission List (Days 1, 2, 3, 10, 21)
 
 $pageTitle = "Flight Log: Overview - Ad Astra";
 ?>

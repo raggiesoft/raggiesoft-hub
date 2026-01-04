@@ -13,8 +13,8 @@
         <a href="/engine-room/artists/stardust-engine/story/ad-astra/voyage/day-10" class="list-group-item list-group-item-action bg-transparent py-1 border-0 text-uppercase small" style="color: var(--astra-info);">
             Day 10: The Drift
         </a>
-        <a href="#" class="list-group-item list-group-item-action bg-transparent py-1 border-0 text-uppercase small opacity-50" style="color: var(--astra-text);">
-            Day 21: The Drop (Locked)
+        <a href="/engine-room/artists/stardust-engine/story/ad-astra/voyage/day-21" class="list-group-item list-group-item-action bg-transparent py-1 border-0 text-uppercase small" style="color: var(--astra-danger);">
+            Day 21: The Drop
         </a>
     </div>
 </div>
