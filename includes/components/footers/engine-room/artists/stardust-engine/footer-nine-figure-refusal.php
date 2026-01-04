@@ -58,7 +58,7 @@
                 </h6>
                 <ul class="list-unstyled">
                     <li class="mb-2">
-                        <a href="/engine-room/history/the-friction-catastrophe" class="text-decoration-none text-danger hover-underline">
+                        <a href="/engine-room/history/friction" class="text-decoration-none text-danger hover-underline">
                             <i class="fa-solid fa-file-contract me-2"></i>Exhibit A: The Friction Catastrophe
                         </a>
                     </li>
