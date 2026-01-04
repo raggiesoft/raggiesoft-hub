@@ -1,0 +1,20 @@
+{
+  "common": {
+    "site": "stardust-engine",
+    "showSidebar": true,
+    "brandFont": ["Audiowide", "sans-serif"],
+    "sidebar": "engine-room/artists/stardust-engine/story/sidebar-nine-figure-refusal",
+    "siteName": "The Stardust Engine",
+    "headerMenu": "engine-room/artists/stardust-engine/story/header-nine-figure-refusal",
+    "footer": "engine-room/artists/stardust-engine/story/footer-nine-figure-refusal",
+    "navbarBrandLogo": "https://assets.raggiesoft.com/engine-room-records/artists/the-stardust-engine/band-logo.png",
+    "navbarBrandText": "<span class=\"d-none d-md-inline\">The </span>Stardust Engine",
+    "navbarBrandLink": "/engine-room/artists/stardust-engine",
+    "ogImage": "https://assets.raggiesoft.com/engine-room-records/artists/the-stardust-engine/social-preview.jpg"
+  },
+
+  "/engine-room/artists/stardust-engine/story": {
+    "title": "The Story of The Stardust Engine",
+    "ogDescription": "Explore the epic narrative behind The Stardust Engine, from their rise in the 80s synth-rock scene to the corporate intrigue that shaped their journey."
+  }
+}
