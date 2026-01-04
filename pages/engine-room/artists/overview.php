@@ -2,6 +2,7 @@
 // pages/engine-room/artists/overview.php
 // The Complete Roster.
 // Access: /engine-room/artists
+// UPDATED: Added Firelight & Winter Palace to the grid.
 
 $pageTitle = "Artist Roster - Engine Room Records, LLC";
 ?>
@@ -70,10 +71,10 @@ $pageTitle = "Artist Roster - Engine Room Records, LLC";
         <div class="container">
             <div class="row g-5">
                 
-                <div class="col-lg-4 d-flex align-items-stretch">
+                <div class="col-lg-6 d-flex align-items-stretch">
                     <div class="card card-industrial w-100">
                         <div class="bg-black p-4 text-center border-bottom border-secondary" style="height: 250px; display: flex; align-items: center; justify-content: center;">
-                            <img src="https://assets.raggiesoft.com/engine-room-records/artists/the-stardust-engine/band-logo.png" 
+                            <img src="https://assets.raggiesoft.com/stardust-engine/images/stardust-engine-logo.png" 
                                  class="img-fluid" style="max-height: 150px;" alt="The Stardust Engine">
                         </div>
                         <div class="card-body d-flex flex-column p-4">
@@ -87,7 +88,7 @@ $pageTitle = "Artist Roster - Engine Room Records, LLC";
                     </div>
                 </div>
 
-                <div class="col-lg-4 d-flex align-items-stretch">
+                <div class="col-lg-6 d-flex align-items-stretch">
                     <div class="card card-industrial w-100 border-danger">
                         <div class="bg-dark p-0 border-bottom border-secondary overflow-hidden position-relative" style="height: 250px;">
                             <img src="https://assets.raggiesoft.com/engine-room-records/artists/mirage/2001-static-and-silence/album-art.jpg" 
@@ -98,25 +99,42 @@ $pageTitle = "Artist Roster - Engine Room Records, LLC";
                             <span class="badge badge-industrial align-self-start mb-2">ERR-002</span>
                             <h3 class="h4 fw-bold text-uppercase text-danger">Mirage</h3>
                             <p class="card-text small flex-grow-1">
-                                Cinematic rock opera led by Julian Croft. [cite_start]Known for the "Paper Wall" legal trust and the album <em>Static & Silence</em> [cite: 14-16, 99].
+                                Cinematic rock opera led by Julian Croft. Known for the "Paper Wall" legal trust and the album <em>Static & Silence</em>.
                             </p>
                             <a href="/engine-room/artists/mirage" class="btn btn-outline-danger rounded-0 w-100 text-uppercase fw-bold mt-3">View Profile</a>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-lg-4 d-flex align-items-stretch">
-                    <div class="card card-industrial w-100 opacity-75" style="border-style: dashed;">
-                        <div class="bg-body-tertiary p-4 text-center border-bottom border-secondary" style="height: 250px; display: flex; align-items: center; justify-content: center;">
-                            <i class="fa-duotone fa-user-music fa-4x text-muted opacity-50"></i>
+                <div class="col-lg-6 d-flex align-items-stretch">
+                    <div class="card card-industrial w-100 border-warning">
+                        <div class="bg-black p-0 border-bottom border-secondary overflow-hidden position-relative" style="height: 250px;">
+                             <img src="https://assets.raggiesoft.com/engine-room-records/artists/firelight/band-logo.png" 
+                                 class="img-fluid w-100 h-100 object-fit-cover opacity-90" alt="Firelight">
                         </div>
                         <div class="card-body d-flex flex-column p-4">
-                            <span class="badge bg-secondary rounded-0 align-self-start mb-2">ERR-003</span>
-                            <h3 class="h4 fw-bold text-uppercase text-muted">Future Signing</h3>
-                            <p class="card-text small flex-grow-1 text-muted">
-                                Reserved for future roster expansion. This slot is open for the next artist protected by the Engine Room.
+                            <span class="badge badge-industrial align-self-start mb-2">ERR-003</span>
+                            <h3 class="h4 fw-bold text-uppercase text-warning">Firelight</h3>
+                            <p class="card-text small flex-grow-1">
+                                Symphonic Rock / Fantasy. The musical voice of the <em>Aethel Saga</em>. Soaring vocals, heavy synths, and narrative depth.
                             </p>
-                            <button class="btn btn-outline-secondary rounded-0 w-100 text-uppercase fw-bold mt-3 disabled">Coming Soon</button>
+                            <a href="/raggiesoft-books/aethel-saga" class="btn btn-outline-warning rounded-0 w-100 text-uppercase fw-bold mt-3 text-dark">View Saga</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 d-flex align-items-stretch">
+                    <div class="card card-industrial w-100 opacity-75" style="border-style: solid;">
+                        <div class="bg-body-tertiary p-4 text-center border-bottom border-secondary" style="height: 250px; display: flex; align-items: center; justify-content: center;">
+                            <i class="fa-duotone fa-snowflake fa-5x text-secondary opacity-50"></i>
+                        </div>
+                        <div class="card-body d-flex flex-column p-4">
+                            <span class="badge bg-secondary rounded-0 align-self-start mb-2">ERR-004</span>
+                            <h3 class="h4 fw-bold text-uppercase text-secondary">The Winter Palace</h3>
+                            <p class="card-text small flex-grow-1 text-muted">
+                                Neoclassical / Atmospheric. Instrumental works and holiday arrangements. The quiet corner of the Engine Room.
+                            </p>
+                            <a href="/engine-room/artists/the-winter-palace" class="btn btn-outline-secondary rounded-0 w-100 text-uppercase fw-bold mt-3">View Archive</a>
                         </div>
                     </div>
                 </div>
