@@ -1,6 +1,7 @@
 <?php
 // Header: Ad Astra Mission Control
 // Theme: HUD / Sci-Fi / High Contrast
+// UPDATED: Fixed "Exit Sim" link visibility (Black-on-Black bug)
 ?>
 <ul class="navbar-nav ms-auto mb-2 mb-md-0 font-monospace">
   
@@ -17,21 +18,21 @@
     <ul class="dropdown-menu dropdown-menu-end rounded-0 shadow-lg">
       <li><h6 class="dropdown-header text-uppercase text-secondary">Phase I: Departure</h6></li>
       <li>
-          <a class="dropdown-item" href="/engine-room/artists/stardust-engine/story/ad-astra/voyage#day-1">
+          <a class="dropdown-item" href="/engine-room/artists/stardust-engine/story/ad-astra/voyage/day-01">
             <i class="fa-solid fa-shuttle-space me-2"></i>Day 1: Ignition
           </a>
       </li>
       <li><hr class="dropdown-divider border-secondary"></li>
       <li><h6 class="dropdown-header text-uppercase text-secondary">Phase II: The Void</h6></li>
       <li>
-          <a class="dropdown-item" href="/engine-room/artists/stardust-engine/story/ad-astra/voyage#day-10">
+          <a class="dropdown-item" href="/engine-room/artists/stardust-engine/story/ad-astra/voyage/day-10">
             <i class="fa-solid fa-stars me-2"></i>Day 10: Harmonic Velocity
           </a>
       </li>
       <li><hr class="dropdown-divider border-secondary"></li>
       <li><h6 class="dropdown-header text-uppercase text-secondary">Phase III: Return</h6></li>
       <li>
-          <a class="dropdown-item" href="/engine-room/artists/stardust-engine/story/ad-astra/voyage#day-21">
+          <a class="dropdown-item" href="/engine-room/artists/stardust-engine/story/ad-astra/voyage/day-21">
             <i class="fa-solid fa-meteor me-2"></i>Day 21: Hard Reset
           </a>
       </li>
@@ -45,7 +46,7 @@
   </li>
 
   <li class="nav-item border-start border-secondary ms-2 ps-2">
-      <a class="nav-link text-uppercase small" href="/engine-room/artists/stardust-engine" style="opacity: 0.7;">
+      <a class="nav-link text-uppercase small" href="/engine-room/artists/stardust-engine" style="color: var(--astra-secondary) !important; opacity: 0.7;">
         <i class="fa-duotone fa-arrow-right-from-bracket me-2"></i>Exit Sim
       </a>
   </li>
