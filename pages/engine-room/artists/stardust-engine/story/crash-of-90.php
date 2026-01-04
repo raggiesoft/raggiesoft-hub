@@ -28,10 +28,10 @@ $pageTitle = "The Crash of '90 - The Stardust Engine Lore";
             <div class="card bg-dark border-danger shadow-lg">
                 <div class="card-header bg-danger bg-opacity-25 text-white border-bottom border-danger fw-bold d-flex justify-content-between align-items-center">
                     <span><i class="fa-duotone fa-file-medical-alt me-2 text-white"></i>Virginia State Police // Report #90-81-114</span>
-                    <span class="badge bg-black text-danger border border-danger">CRITICAL</span>
+                    <span class="badge bg-black text-white border border-danger">CRITICAL</span>
                 </div>
                 <div class="card-body font-monospace small text-white p-4">
-                    <div class="row mb-3 text-white-50">
+                    <div class="row mb-3 text-white-75">
                         <div class="col-md-4">DATE: Dec 10, 1990</div>
                         <div class="col-md-4">TIME: 23:42 EST</div>
                         <div class="col-md-4">LOC: I-81 NB, Exit 98 (Newbern)</div>
