@@ -38,7 +38,6 @@ $pageTitle = "The Approach Vector - Evidence Item #00";
         text-transform: uppercase;
     }
 </style>
-
 <div class="container py-5">
     
     <div class="row justify-content-center mb-5">
@@ -50,7 +49,7 @@ $pageTitle = "The Approach Vector - Evidence Item #00";
                 THE APPROACH VECTOR
             </h1>
             <p class="lead text-body-secondary font-monospace">
-                "We aren't here to negotiate. We're here to survive."
+                "We spent $22,000 on airfare to collect a fifty-cent debt."
             </p>
         </div>
     </div>
@@ -66,42 +65,86 @@ $pageTitle = "The Approach Vector - Evidence Item #00";
             <div class="card border-0 shadow-lg bg-body-tertiary narrative-card mb-5">
                 <div class="card-body p-5 text-body-secondary">
                     
-                    <span class="timestamp">Sep 13, 2018 // 08:30 AM PST // Valley Regional Airport</span>
+                    <span class="timestamp">Sep 13, 2018 // 08:30 AM PST // Valley Regional Airport (BUR)</span>
                     <h5 class="text-primary fw-bold text-uppercase mb-4">The Landing</h5>
 
                     <p>
-                        The tires of the Gateway Airlines jet touched down with a chirp of burning rubber.
+                        The tires of the Gateway Airlines Boeing 737 touched down with a chirp of burning rubber.
                     </p>
                     <p>
-                        Tyler Wright checked his watch. "Wheels down. 08:30. We’re green on the timeline."
+                        Tyler Wright checked his watch. "Wheels down. 08:30 local. We made up time over the Rockies."
                     </p>
                     <p>
-                        They didn't move to get their overhead bags. They didn't stand up to crowd the aisle. They waited. This was the protocol. The civilians left first; the Engine moved last.
+                        It had been a brutal logistical sprint. The "Smoking Gun" letter had arrived in Blacksburg yesterday afternoon. By 6:00 PM, Holly had booked five last-minute First Class seats from <strong>Roanoke (ROA)</strong> to <strong>Burbank (BUR)</strong>, connecting through the Atlanta hub.
                     </p>
                     <p>
-                        In the window seat, Ryan O'Connell looked out at the sun-bleached tarmac of the San Fernando Valley. He wasn't thinking about the meeting tomorrow. He was thinking about The Hilltop Observatory. He was thinking about the Santa Monica Pier.
+                        "Remind me why we're doing this?" Evan asked, stretching his massive frame into the aisle as the seatbelt sign pinged off. "We could have just shredded the letter."
                     </p>
                     <p>
-                        "Vacation mode active," he whispered.
+                        Holly O'Connell didn't look up from her phone. She was calculating the Uber surge pricing in Los Angeles.
                     </p>
                     <p>
-                        "Not yet," Holly O'Connell said from the aisle seat. She was already in "Manager Mode," checking her phone. There was no one to call back home—she was the management—but she was confirming their hotel reservation in Downtown LA. "We have to survive the gauntlet first. Then we can be tourists."
+                        "Because he owes me fifty cents," Holly said. "He sent a hostile takeover threat using a bulk mail permit on a single envelope. The mail carrier made me pay the postage due."
                     </p>
                     <p>
-                        Cassidy O'Connell sat between them. She adjusted her glasses, her leg bouncing slightly—a nervous tic common with her cerebral palsy. She reached out, brushing her thumb against the fabric of Ryan’s blazer.
+                        She stood up, smoothing her blazer.
                     </p>
                     <p>
-                        "I'm good, Cass," Ryan said softly. "Systems normal."
+                        "I don't care about the $150 million offer. I care about the disrespect. We are going to walk into his office, look him in the eye, and make him give me two quarters."
+                    </p>
+
+                    <div class="alert alert-dark border-start border-4 border-warning bg-body-secondary py-3 my-4 small">
+                        <div class="d-flex align-items-center">
+                            <i class="fa-solid fa-file-invoice-dollar text-warning fs-3 me-3"></i>
+                            <div>
+                                <strong>Expense Report:</strong><br>
+                                Airfare (Last Minute / First Class): <strong>$18,450.00</strong><br>
+                                Hotel (The Metropolitan / 2 Weeks): <strong>$8,200.00</strong><br>
+                                <strong>Target Recovery:</strong> <span class="text-danger fw-bold">$0.50</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <p>
+                        In the window seat (1A), Ryan O'Connell looked out at the sun-bleached tarmac. For him, the First Class ticket wasn't a luxury; it was a medical necessity. The extra legroom allowed him to manage the spasms in his paralyzed legs during the five-hour flight from Atlanta.
                     </p>
                     <p>
-                        The aisle cleared. A flight attendant nodded to them. "We have the aisle chair ready, folks."
+                        "Systems check," Ryan murmured. He shifted his weight, testing his balance. "Spasticity is manageable. Hydration is nominal."
                     </p>
                     <p>
-                        "No need," Evan Wright said, standing up and blocking the aisle like a boulder in a stream. "We gate-checked the Carbon. Bring it to the door."
+                        Cassidy sat in 1B. She adjusted her glasses, her leg bouncing slightly—a nervous tic common with her cerebral palsy. "Are we tourists yet?" she whispered.
+                    </p>
+                    <p>
+                        "Not until we get the quarters," Ryan replied.
                     </p>
 
                     <hr class="border-secondary opacity-25 my-5">
 
+                    <h5 class="text-primary fw-bold text-uppercase mb-4">Protocol: The Tarmac Transfer</h5>
+                    
+                    <p>
+                        Valley Regional (BUR) was their airport of choice for one specific reason: <strong>Stairs, not Jetways.</strong>
+                    </p>
+                    <p>
+                        Gateway Airlines ground crew brought the aisle chair to the aircraft door, but Ryan waved them off. He saw his custom <strong>Carbon-Fiber Veloce</strong> wheelchair waiting at the bottom of the air-stairs.
+                    </p>
+                    <p>
+                        "Evan," Ryan said.
+                    </p>
+                    <p>
+                        Evan didn't need instructions. He stepped up, scooped his brother into a fireman's carry with effortless practice, and carried him down the stairs to the tarmac. Tyler followed with the cushion.
+                    </p>
+                    <p>
+                        Ryan transferred into his chair on the hot pavement. He clicked the seat lock. He pushed off the asphalt, spinning the chair around.
+                    </p>
+                    <p>
+                        "Solid ground," Ryan said. "Let's go find our ride."
+                    </p>
+                </div>
+            </div>
+
+            <div class="card wall-card shadow-lg mb-5">
+                <div class="card-body p-5">
                     <h5 class="text-primary fw-bold text-uppercase mb-4">The Tarmac</h5>
                     
                     <p>
