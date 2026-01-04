@@ -128,33 +128,32 @@ $pageTitle = "The Autopsy: Holly Takes Control - Evidence Item #02";
                     </p>
 
                     <div class="card bg-body-tertiary border-danger mb-4">
-                            <div class="card-body">
-                                <div class="row align-items-center">
-                                    <div class="col-md-3 text-center mb-3 mb-md-0 border-end border-secondary border-opacity-25">
-                                        <img src="https://assets.raggiesoft.com/engine-room-records/images/logos/engine-room-records-logo.png" 
-                                             class="img-fluid opacity-75" 
-                                             alt="Engine Room Records Text inside a Stylized Gear"
-                                             style="max-height: 100px; filter: grayscale(100%); mix-blend-mode: multiply;">
-                                        <div class="small font-monospace text-danger mt-2">EXHIBIT A: Slide 14 Detail</div>
-                                    </div>
-                                    <div class="col-md-9">
-                                        <p class="mb-2 fw-bold text-body-emphasis">
-                                            "That logo," Holly said, tapping the projection screen. "The Gear. The Spark. Do you know who drew that?"
+                        <div class="card-body">
+                            <div class="row align-items-center">
+                                <div class="col-md-3 text-center mb-3 mb-md-0 border-end border-secondary border-opacity-25">
+                                    <img src="https://assets.raggiesoft.com/engine-room-records/images/logos/engine-room-records-logo.png" 
+                                            class="img-fluid opacity-75" 
+                                            alt="Engine Room Records Text inside a Stylized Gear"
+                                            style="max-height: 100px; filter: grayscale(100%); mix-blend-mode: multiply;">
+                                    <div class="small font-monospace text-danger mt-2">EXHIBIT A: Slide 14 Detail</div>
+                                </div>
+                                <div class="col-md-9">
+                                    <p class="mb-2 fw-bold text-body-emphasis">
+                                        "That logo," Holly said, tapping the projection screen. "The Gear. The Spark. Do you know who drew that?"
+                                    </p>
+                                    <p class="mb-2 text-body-secondary fst-italic border-start border-2 ps-3">
+                                        Frost blinked, looking confused. "Marketing pulled it from your website. It's standard practice."
+                                    </p>
+                                    <div class="alert alert-danger bg-danger bg-opacity-10 border-danger border-opacity-25 text-danger mb-0">
+                                        <p class="mb-0 fw-bold small">
+                                            <i class="fa-solid fa-gavel me-2"></i>VIOLATION DETECTED
                                         </p>
-                                        <p class="mb-2 text-body-secondary fst-italic border-start border-2 ps-3">
-                                            Frost blinked, looking confused. "Marketing pulled it from your website. It's standard practice."
+                                        <p class="mb-2">
+                                            "Cassidy drew it. Hand-inked in 1992, then she vectorized it herself on her machine using <strong>OpenVector</strong>. It is a registered trademark of The O'Connell Family Trust."
                                         </p>
-                                        <div class="alert alert-danger bg-danger bg-opacity-10 border-danger border-opacity-25 text-danger mb-0">
-                                            <p class="mb-0 fw-bold small">
-                                                <i class="fa-solid fa-gavel me-2"></i>VIOLATION DETECTED
-                                            </p>
-                                            <p class="mb-2">
-                                                "Cassidy drew it. Hand-inked in 1992, then she vectorized it herself on her machine using <strong>OpenVector</strong>. It is a registered trademark of The O'Connell Family Trust."
-                                            </p>
-                                            <p class="mb-0 border-top border-danger border-opacity-25 pt-2">
-                                                "You do not have a license to display it. Using her own art on a document proposing the mutilation of her autobiography? That is <strong>Willful Infringement</strong>. Statutory damages start at $150,000 per instance."
-                                            </p>
-                                        </div>
+                                        <p class="mb-0 border-top border-danger border-opacity-25 pt-2">
+                                            "You do not have a license to display it. Using her own art on a document proposing the mutilation of her autobiography? That is <strong>Willful Infringement</strong>. Statutory damages start at $150,000 per instance."
+                                        </p>
                                     </div>
                                 </div>
                             </div>
