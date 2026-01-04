@@ -137,7 +137,7 @@ $isHistory = (
           </a>
       </li>
       <li>
-          <a class="dropdown-item" href="/engine-room/history/nine-figure-refusal">
+          <a class="dropdown-item" href="/engine-room/artists/stardust-engine/story/nine-figure-refusal">
             <i class="fa-duotone fa-handshake-slash me-2 text-success"></i>2018: The Refusal
           </a>
       </li>

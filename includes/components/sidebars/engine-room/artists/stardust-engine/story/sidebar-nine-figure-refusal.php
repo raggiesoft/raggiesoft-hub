@@ -1,5 +1,5 @@
 <?php
-// includes/sidebars/sidebar-nine-figure-refusal.php
+// includes/sidebars/artists/stardust-engine/story/sidebar-nine-figure-refusal.php
 // Dedicated navigation for the "Accidental Empire" Saga
 // UPDATED: Added "The Approach" to Chapter 1
 
@@ -18,48 +18,48 @@ $chapters = [
     'ch1' => [
         'title' => 'Ch 1: The Setup',
         'pages' => [
-            '/engine-room/history/nine-figure-refusal/the-approach' => ['icon' => 'fa-solid fa-plane-arrival', 'label' => 'The Approach'],
-            '/engine-room/history/nine-figure-refusal/target-profile' => ['icon' => 'fa-solid fa-crosshairs', 'label' => 'Target Profile'],
-            '/engine-room/history/nine-figure-refusal/ucc-search-report' => ['icon' => 'fa-solid fa-file-certificate', 'label' => 'UCC Search Report'],
-            '/engine-room/history/nine-figure-refusal/the-bus-memo' => ['icon' => 'fa-solid fa-envelope-open-text', 'label' => 'The Bus Memo'],
+            '/engine-room/artists/stardust-engine/story/nine-figure-refusal/the-approach' => ['icon' => 'fa-solid fa-plane-arrival', 'label' => 'The Approach'],
+            '/engine-room/artists/stardust-engine/story/nine-figure-refusal/target-profile' => ['icon' => 'fa-solid fa-crosshairs', 'label' => 'Target Profile'],
+            '/engine-room/artists/stardust-engine/story/nine-figure-refusal/ucc-search-report' => ['icon' => 'fa-solid fa-file-certificate', 'label' => 'UCC Search Report'],
+            '/engine-room/artists/stardust-engine/story/nine-figure-refusal/the-bus-memo' => ['icon' => 'fa-solid fa-envelope-open-text', 'label' => 'The Bus Memo'],
         ]
     ],
     'ch2' => [
         'title' => 'Ch 2: The Trap',
         'pages' => [
-            '/engine-room/history/nine-figure-refusal/forensic-audit' => ['icon' => 'fa-solid fa-magnifying-glass-dollar text-primary', 'label' => 'Holly\'s Homework'],
-            '/engine-room/history/nine-figure-refusal/the-smoking-gun' => ['icon' => 'fa-solid fa-envelope-open-text text-danger', 'label' => 'The Smoking Gun'],
-            '/engine-room/history/nine-figure-refusal/the-offer-letter' => ['icon' => 'fa-solid fa-file-contract', 'label' => 'The Offer Letter'],
-            '/engine-room/history/nine-figure-refusal/the-counter-offer' => ['icon' => 'fa-solid fa-envelope-circle-check text-warning', 'label' => 'The Counter-Offer'],
+            '/engine-room/artists/stardust-engine/story/nine-figure-refusal/forensic-audit' => ['icon' => 'fa-solid fa-magnifying-glass-dollar text-primary', 'label' => 'Holly\'s Homework'],
+            '/engine-room/artists/stardust-engine/story/nine-figure-refusal/the-smoking-gun' => ['icon' => 'fa-solid fa-envelope-open-text text-danger', 'label' => 'The Smoking Gun'],
+            '/engine-room/artists/stardust-engine/story/nine-figure-refusal/the-offer-letter' => ['icon' => 'fa-solid fa-file-contract', 'label' => 'The Offer Letter'],
+            '/engine-room/artists/stardust-engine/story/nine-figure-refusal/the-counter-offer' => ['icon' => 'fa-solid fa-envelope-circle-check text-warning', 'label' => 'The Counter-Offer'],
         ]
     ],
     'ch3' => [
         'title' => 'Ch 3: The Event',
         'pages' => [
-            '/engine-room/history/nine-figure-refusal/the-trigger' => ['icon' => 'fa-solid fa-bolt text-danger', 'label' => 'The Trigger (Slide 14)'],
-            '/engine-room/history/nine-figure-refusal/the-autopsy' => ['icon' => 'fa-solid fa-laptop-code text-success', 'label' => 'The Autopsy'],
-            '/engine-room/history/nine-figure-refusal/the-extraction' => ['icon' => 'fa-solid fa-person-to-door text-info', 'label' => 'The Extraction'],
+            '/engine-room/artists/stardust-engine/story/nine-figure-refusal/the-trigger' => ['icon' => 'fa-solid fa-bolt text-danger', 'label' => 'The Trigger (Slide 14)'],
+            '/engine-room/artists/stardust-engine/story/nine-figure-refusal/the-autopsy' => ['icon' => 'fa-solid fa-laptop-code text-success', 'label' => 'The Autopsy'],
+            '/engine-room/artists/stardust-engine/story/nine-figure-refusal/the-extraction' => ['icon' => 'fa-solid fa-person-to-door text-info', 'label' => 'The Extraction'],
         ]
     ],
     'ch4' => [
         'title' => 'Ch 4: The Fallout',
         'pages' => [
-            '/engine-room/history/nine-figure-refusal/zenith-report/omni-global-chapter-11' => ['icon' => 'fa-solid fa-newspaper', 'label' => 'Market Alert: Ch. 11'],
-            '/engine-room/history/nine-figure-refusal/liquidation-auction' => ['icon' => 'fa-duotone fa-gavel', 'label' => 'The Liquidation Auction'],
-            '/engine-room/history/nine-figure-refusal/zenith-report/stardust-bus-ride' => ['icon' => 'fa-solid fa-bus', 'label' => 'Bus Ride Article'],
+            '/engine-room/artists/stardust-engine/story/nine-figure-refusal/zenith-report/omni-global-chapter-11' => ['icon' => 'fa-solid fa-newspaper', 'label' => 'Market Alert: Ch. 11'],
+            '/engine-room/artists/stardust-engine/story/nine-figure-refusal/liquidation-auction' => ['icon' => 'fa-duotone fa-gavel', 'label' => 'The Liquidation Auction'],
+            '/engine-room/artists/stardust-engine/story/nine-figure-refusal/zenith-report/stardust-bus-ride' => ['icon' => 'fa-solid fa-bus', 'label' => 'Bus Ride Article'],
         ]
     ],
     'ch5' => [
         'title' => 'Ch 5: The Legacy',
         'pages' => [
-            '/engine-room/history/nine-figure-refusal/the-jessica-miller-center' => ['icon' => 'fa-solid fa-building', 'label' => 'The Jessica Miller Center'],
-            '/engine-room/history/nine-figure-refusal/the-non-profit-model' => ['icon' => 'fa-solid fa-hand-holding-heart', 'label' => 'The Non-Profit Model'],
+            '/engine-room/artists/stardust-engine/story/nine-figure-refusal/the-jessica-miller-center' => ['icon' => 'fa-solid fa-building', 'label' => 'The Jessica Miller Center'],
+            '/engine-room/artists/stardust-engine/story/nine-figure-refusal/the-non-profit-model' => ['icon' => 'fa-solid fa-hand-holding-heart', 'label' => 'The Non-Profit Model'],
         ]
     ],
     'epilogue' => [
         'title' => 'Epilogue',
         'pages' => [
-            '/engine-room/history/nine-figure-refusal/frost-interview' => ['icon' => 'fa-solid fa-clipboard-question', 'label' => 'The Frost Interview'],
+            '/engine-room/artists/stardust-engine/story/nine-figure-refusal/frost-interview' => ['icon' => 'fa-solid fa-clipboard-question', 'label' => 'The Frost Interview'],
         ]
     ],
 ];
@@ -71,13 +71,13 @@ $chapters = [
 
 <ul class="nav flex-column mb-3">
     <li class="nav-item">
-        <a class="nav-link link-secondary" href="/engine-room/history">
-            <i class="fa-duotone fa-arrow-turn-up me-2"></i>Back to History
+        <a class="nav-link link-secondary" href="/engine-room/artists/stardust-engine/story">
+            <i class="fa-duotone fa-arrow-turn-up me-2"></i>Back to Story
         </a>
     </li>
     <li class="nav-item mt-2">
-        <a class="nav-link <?php echo ($currentUri === '/engine-room/history/nine-figure-refusal') ? 'active fw-bold text-body-emphasis' : 'text-body-secondary'; ?>" 
-           href="/engine-room/history/nine-figure-refusal">
+        <a class="nav-link <?php echo ($currentUri === '/engine-room/artists/stardust-engine/story/nine-figure-refusal') ? 'active fw-bold text-body-emphasis' : 'text-body-secondary'; ?>" 
+           href="/engine-room/artists/stardust-engine/story/nine-figure-refusal">
             <i class="fa-duotone fa-chart-network me-2"></i>Overview
         </a>
     </li>
