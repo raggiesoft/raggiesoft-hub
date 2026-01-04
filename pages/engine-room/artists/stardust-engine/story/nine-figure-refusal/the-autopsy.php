@@ -200,7 +200,7 @@ $pageTitle = "The Autopsy: Holly Takes Control - Evidence Item #02";
                                                 <i class="fa-solid fa-gavel me-2"></i>VIOLATION DETECTED
                                             </p>
                                             <p class="mb-0">
-                                                "Cassidy drew it. Hand-inked in 1992. It is a registered trademark of The O'Connell Family Trust (USPTO Reg. #44-921). You do not have a license to display it. Using her own art on a document proposing the mutilation of her autobiography? That is <strong>Willful Infringement</strong>. Statutory damages start at $150,000 per instance."
+                                                "Cassidy drew it. Hand-inked in 1992. It is a registered trademark of The O'Connell Family Trust. You do not have a license to display it. Using her own art on a document proposing the mutilation of her autobiography? That is <strong>Willful Infringement</strong>. Statutory damages start at $150,000 per instance."
                                             </p>
                                         </div>
                                     </div>
