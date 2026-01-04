@@ -580,22 +580,22 @@ $pageTitle = "The Autopsy: Holly Takes Control - Evidence Item #02";
                 </div>
             </div>
 
-            <div class="card wall-card forced-dark-zone shadow-lg mb-5">
+            <div class="card wall-card forced-dark-zone text-white shadow-lg mb-5">
                 <div class="card-body p-5">
                     <div class="d-flex align-items-center mb-4">
                         <i class="fa-duotone fa-shield-halved text-danger fs-2 me-3"></i>
                         <h5 class="text-white text-uppercase letter-spacing-2 mb-0">Simultaneous Event: The World Behind the Wall</h5>
                     </div>
                     
-                    <p class="text-light fs-5 mb-4">
+                    <p class="fs-5 mb-4">
                         While Holly waged war with words and documents, the other half of the room existed in a different dimension.
                     </p>
                     
-                    <p class="text-light">
+                    <p>
                         <strong>Evan and Tyler Wright</strong> stood shoulder-to-shoulder, their broad backs forming a physical wall between the conference table and the floor. They didn't look at Frost. They didn't look at the screen. They watched the door, ensuring no one entered or left without permission.
                     </p>
                     
-                    <p class="text-light">
+                    <p>
                         Behind that wall, <strong>Ryan O'Connell</strong> had locked the brakes of his wheelchair. He leaned precariously over the side, wrapping his arms around his sister on the floor in a desperate "deep pressure" hold.
                     </p>
                     
@@ -604,7 +604,7 @@ $pageTitle = "The Autopsy: Holly Takes Control - Evidence Item #02";
                             <i class="fa-duotone fa-ear-muffs text-secondary fs-1"></i>
                         </div>
                         <div class="col-md-10">
-                            <p class="small text-light font-monospace mb-0">
+                            <p class="small text-white font-monospace mb-0">
                                 <strong>Sensory Protocol:</strong> Ryan hummed a low, steady B-flat against her ear—the "Safe Harbor" note. He squeezed her as tightly as he could, trying to manually regulate her nervous system.
                                 <br><br>
                                 <span class="text-danger fw-bold">STATUS: FAILED.</span> She was too far gone. The pressure wasn't grounding her; she was vibrating apart.
