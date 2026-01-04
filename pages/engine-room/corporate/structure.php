@@ -1,7 +1,8 @@
 <?php
-// pages/oconnell-trust/structure.php
+// pages/engine-room/corporate/structure.php
 // The Corporate Hierarchy (The "Iceberg" Model)
-// Context: Visualizing how a $2B Trust hides behind a rock band.
+// Context: Visualizing how a $2.4B Trust hides behind a rock band.
+// Theme: Corporate / Clean (No Starfield)
 
 $pageTitle = "Organizational Structure - The O'Connell Family Revocable Trust";
 ?>
@@ -28,7 +29,7 @@ $pageTitle = "Organizational Structure - The O'Connell Family Revocable Trust";
     
     .catalyst-card {
         background: linear-gradient(135deg, #1a1a1a 0%, #0d0d0d 100%);
-        border-left: 5px solid #ffc107; /* Gold for the Lottery */
+        border-left: 5px solid #198754; /* Success Green for the Win */
     }
 </style>
 
@@ -36,7 +37,7 @@ $pageTitle = "Organizational Structure - The O'Connell Family Revocable Trust";
 
     <div class="row justify-content-center mb-5">
         <div class="col-lg-10 text-center">
-            <h6 class="text-uppercase text-muted fw-bold letter-spacing-2 mb-2">Governance & Oversight</h6>
+            <h6 class="text-uppercase text-body-secondary fw-bold letter-spacing-2 mb-2">Governance & Oversight</h6>
             <h1 class="display-4 fw-bold text-primary mb-3" style="font-family: 'Playfair Display', serif;">
                 The Architecture of Silence
             </h1>
@@ -46,23 +47,35 @@ $pageTitle = "Organizational Structure - The O'Connell Family Revocable Trust";
         </div>
     </div>
 
-    <?php
-    // 1. DEFINE PATH TO JSON DATA
-    $jsonFile = ROOT_PATH . '/data/corporate-structure.json';
+    <div class="card border shadow-sm mb-5">
+        <div class="card-body overflow-auto bg-body-tertiary">
+            <?php
+            // 1. DEFINE PATH TO JSON DATA (CDN Link)
+            $jsonUrl = 'https://assets.raggiesoft.com/engine-room-records/json/corporate-structure.json';
 
-    // 2. FETCH AND DECODE
-    if (file_exists($jsonFile)) {
-        $jsonData = file_get_contents($jsonFile);
-        $rootNode = json_decode($jsonData, true);
-        if (json_last_error() !== JSON_ERROR_NONE) { $rootNode = []; }
-    } else {
-        $rootNode = [];
-    }
+            // 2. FETCH AND DECODE
+            // Suppress errors (@) to handle network issues gracefully
+            $jsonData = @file_get_contents($jsonUrl);
 
-    // 3. RENDER THE CHART
-    // This visualizes the Trust > LLC > Subsidiaries flow
-    include ROOT_PATH . '/includes/components/corporate/org-chart.php';
-    ?>
+            if ($jsonData === false) {
+                 echo '<div class="alert alert-danger"><i class="fa-solid fa-triangle-exclamation me-2"></i><strong>System Error:</strong> Unable to retrieve Corporate Structure data from Archives.</div>';
+            } else {
+                $rootNode = json_decode($jsonData, true);
+                if (json_last_error() !== JSON_ERROR_NONE || $rootNode === null) { 
+                    echo '<div class="alert alert-warning"><strong>Data Error:</strong> JSON Corruption Detected.</div>';
+                } else {
+                    // 3. RENDER THE CHART
+                    include ROOT_PATH . '/includes/components/corporate/org-chart.php';
+                }
+            }
+            ?>
+        </div>
+        <div class="card-footer bg-body-secondary text-center">
+            <small class="text-body-secondary fst-italic">
+                <i class="fa-solid fa-lock me-2"></i>CONFIDENTIAL: This structure is designed to compartmentalize liability.
+            </small>
+        </div>
+    </div>
 
     <div class="row justify-content-center mt-5">
         <div class="col-lg-10">
@@ -71,15 +84,15 @@ $pageTitle = "Organizational Structure - The O'Connell Family Revocable Trust";
                 <div class="card-body p-4 p-md-5">
                     <div class="row align-items-center">
                         <div class="col-md-2 text-center mb-3 mb-md-0">
-                            <i class="fa-duotone fa-ticket fa-4x text-warning"></i>
+                            <i class="fa-duotone fa-ticket fa-4x text-success"></i>
                         </div>
                         <div class="col-md-10">
-                            <h4 class="text-white text-uppercase fw-bold mb-2">The 2012 Catalyst</h4>
+                            <h4 class="text-white text-uppercase fw-bold mb-2">The 1996 Catalyst</h4>
                             <p class="text-white-50 mb-0">
-                                The sophisticated structure above did not exist in a vacuum. It was necessitated by a single event: <strong>The "American Dream" Jackpot of 2012.</strong> 
+                                The sophisticated structure above did not exist in a vacuum. It was necessitated by a single event in Daleville, VA: <strong>The "American Dream" Jackpot of 1996.</strong> 
                             </p>
                             <p class="text-white-50 mt-3 mb-0">
-                                When the family accepted the lump sum (est. post-tax liquidity: <strong>$980M</strong>), the mission of Engine Room Records shifted. It was no longer about survival; it was about stewardship. The Trust was formed not just to manage wealth, but to protect the family's artistic identity from their own financial reality. Without this event, <em>The Stardust Engine</em> would have dissolved in 2013.
+                                When Cassidy O'Connell handed the winning ticket (Jackpot: <strong>$2.04 Billion</strong>) to her sister, the mission of Engine Room Records shifted. It was no longer about survival; it was about stewardship. The Trust was formed not just to manage wealth, but to protect the family's artistic identity from their own financial reality. Without this event, <em>The Stardust Engine</em> might have dissolved in the late 90s.
                             </p>
                         </div>
                     </div>
@@ -113,7 +126,7 @@ $pageTitle = "Organizational Structure - The O'Connell Family Revocable Trust";
                         </h5>
                         <p class="text-muted small text-uppercase fw-bold mb-2">What the IRS Sees</p>
                         <p>
-                            Every entity flows up to <strong>The O'Connell Family Revocable Trust</strong>. The "Band" is legally a loss-leader asset, subsidized by the returns from the real estate and liquidation arms (Aethelgard).
+                            Every entity flows up to <strong>The O'Connell Family Revocable Trust</strong>. The "Band" is legally a loss-leader asset, subsidized by the returns from the real estate portfolio and the liquidation arms (Aethelgard).
                         </p>
                         <p>
                             The separation is deliberate. A tenant renting Class-A office space in Los Angeles does not need to know their landlord is a drummer.
