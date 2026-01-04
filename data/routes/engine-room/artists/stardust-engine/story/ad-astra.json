@@ -1,28 +1,33 @@
 {
   "common": {
     "site": "stardust-engine",
-    "showSidebar": true,
     "theme": "ad-astra",
+    "showSidebar": true,
     "brandFont": ["Audiowide", "sans-serif"],
+    
     "sidebar": "engine-room/artists/stardust-engine/story/sidebar-ad-astra",
-    "siteName": "The Stardust Engine",
     "headerMenu": "engine-room/artists/stardust-engine/story/header-ad-astra",
     "footer": "engine-room/artists/stardust-engine/story/footer-ad-astra",
+    
+    "siteName": "Ad Astra // Mission Control",
     "navbarBrandLogo": "https://assets.raggiesoft.com/engine-room-records/artists/the-stardust-engine/band-logo.png",
-    "navbarBrandText": "<span class=\"d-none d-md-inline\">The </span>Stardust Engine",
-    "navbarBrandLink": "/engine-room/artists/stardust-engine",
-    "ogImage": "https://assets.raggiesoft.com/engine-room-records/artists/the-stardust-engine/social-preview.jpg"
+    "navbarBrandText": "AD ASTRA",
+    "navbarBrandLink": "/engine-room/artists/stardust-engine/story/ad-astra",
+    "ogImage": "https://assets.raggiesoft.com/stardust-engine/images/story/ad-astra/ad-astra-hero.jpg"
   },
   "/engine-room/artists/stardust-engine/story/ad-astra": {
     "view": "pages/engine-room/artists/stardust-engine/story/ad-astra/overview",
     "title": "Ad Astra | Mission Hub",
-    "ogDescription": "The untold story of The Stardust Engine's secret mission to the stars.",
-    "showSidebar": false
+    "ogDescription": "Mission Control for the U.S.S. Aethelgard."
   },
   "/engine-room/artists/stardust-engine/story/ad-astra/voyage": {
-    "view": "pages/engine-room/artists/stardust-engine/story/ad-astra/voyage",
-    "title": "Flight Log: U.S.S. Aethelgard",
-    "ogDescription": "The narrative log of the 21-day journey to the Veil Nebula.",
-    "showSidebar": true
+    "view": "pages/engine-room/artists/stardust-engine/story/ad-astra/voyage/overview",
+    "title": "Flight Log: Overview",
+    "ogDescription": "The narrative log of the 21-day journey to the Veil Nebula."
+  },
+  "/engine-room/artists/stardust-engine/story/ad-astra/voyage/day-01": {
+    "view": "pages/engine-room/artists/stardust-engine/story/ad-astra/voyage/day-01",
+    "title": "Day 01: Ignition | Flight Log",
+    "ogDescription": "Atmospheric Exit. 1.5G Ascent. The beginning of the journey."
   }
 }

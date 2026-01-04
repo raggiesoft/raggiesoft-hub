@@ -15,11 +15,23 @@
             <i class="fa-solid fa-terminal me-3"></i>Mission Overview
         </a>
         <a href="/engine-room/artists/stardust-engine/story/ad-astra/voyage" class="list-group-item list-group-item-action bg-transparent ps-0 border-0 text-uppercase small" style="color: var(--astra-text);">
-            <i class="fa-solid fa-file-lines me-3"></i>Captain's Log
+            <i class="fa-solid fa-list-check me-3"></i>Flight Log Index
         </a>
-        <a href="#" class="list-group-item list-group-item-action bg-transparent ps-0 border-0 text-uppercase small" style="color: var(--astra-text); opacity: 0.5; cursor: not-allowed;">
-            <i class="fa-solid fa-lock me-3"></i>Crew Manifest (Encrypted)
-        </a>
+    </div>
+
+    <div class="mb-3">
+        <h6 class="text-uppercase fw-bold text-secondary small mb-2">Detailed Logs</h6>
+        <div class="list-group list-group-flush border-start border-secondary ps-2">
+            <a href="/engine-room/artists/stardust-engine/story/ad-astra/voyage/day-01" class="list-group-item list-group-item-action bg-transparent py-1 border-0 text-uppercase small" style="color: var(--astra-warning);">
+                Day 01: Ignition
+            </a>
+            <a href="#" class="list-group-item list-group-item-action bg-transparent py-1 border-0 text-uppercase small opacity-50" style="color: var(--astra-text);">
+                Day 10: The Drift (Locked)
+            </a>
+            <a href="#" class="list-group-item list-group-item-action bg-transparent py-1 border-0 text-uppercase small opacity-50" style="color: var(--astra-text);">
+                Day 21: The Drop (Locked)
+            </a>
+        </div>
     </div>
 
     <div class="p-3 rounded mb-3" style="background: rgba(0, 255, 255, 0.05); border: 1px solid var(--astra-info);">
@@ -29,11 +41,5 @@
             <li class="mb-1"><i class="fa-solid fa-check text-success me-2"></i>Engines: <span class="text-light">Nominal</span></li>
             <li class="mb-0"><i class="fa-solid fa-triangle-exclamation text-warning me-2"></i>Hull Integrity: <span class="text-light">84%</span></li>
         </ul>
-    </div>
-
-    <div class="mt-4 pt-3 border-top border-secondary">
-        <a href="/engine-room/artists/stardust-engine/story/nine-figure-refusal" class="btn btn-outline-light btn-sm w-100 rounded-0 text-uppercase" style="border-color: var(--astra-danger); color: var(--astra-danger);">
-            <i class="fa-duotone fa-ban me-2"></i>Why We Left (1995)
-        </a>
     </div>
 </div>
