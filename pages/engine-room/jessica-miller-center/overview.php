@@ -2,7 +2,7 @@
 // pages/engine-room/jessica-miller-center/overview.php
 // The Homepage for The Jessica Miller Center
 // Context: Universal Design Showcase.
-// WCAG STATUS: AAA Compliant (Contrast, Semantics, Reduced Motion)
+// WCAG STATUS: AAA Compliant (Contrast 7:1, Semantics, Reduced Motion)
 
 $pageTitle = "The Jessica Miller Center - Universal Design & Workplace Equity";
 ?>
@@ -29,12 +29,25 @@ $pageTitle = "The Jessica Miller Center - Universal Design & Workplace Equity";
         color: #e0e0e0;
     }
 
-    /* High Contrast Text Utility */
+    /* High Contrast Text Utility - AAA Compliant */
     .text-high-contrast {
-        color: #495057; /* Gray-700: Passes on Light Backgrounds */
+        color: #495057; /* Gray-700: ~9:1 on White */
     }
     [data-bs-theme="dark"] .text-high-contrast {
-        color: #adb5bd; /* Gray-500: Passes 4.5:1 on Dark Backgrounds */
+        color: #e9ecef; /* Gray-200: ~13:1 on Dark Backgrounds */
+    }
+
+    /* AAA Text Utilities */
+    .text-aaa-muted {
+        color: #adb5bd; /* Gray-500: ~6.5:1 on Black (Acceptable for Large, Borderline Small) -> Bumped below */
+    }
+    [data-bs-theme="dark"] .text-aaa-muted {
+        color: #ced4da; /* Gray-400: ~10:1 on Black (Safe for Small Text) */
+    }
+    
+    /* Specific overrides for colored backgrounds */
+    .text-aaa-on-dark {
+        color: #dee2e6 !important; /* ~12:1 on Dark/Black */
     }
 
     .icon-box {
@@ -47,14 +60,17 @@ $pageTitle = "The Jessica Miller Center - Universal Design & Workplace Equity";
         margin-bottom: 1.5rem;
     }
     
-    /* Signature Font */
+    /* Signature Font - Darkened for AAA */
     .signature-text {
         font-family: 'Mrs Saint Delafield', cursive;
         font-size: 2.5rem;
-        color: #868e96;
+        color: #495057; /* Darkened from #868e96 to pass AAA on White */
         line-height: 1;
         transform: rotate(-3deg);
         display: inline-block;
+    }
+    [data-bs-theme="dark"] .signature-text {
+        color: #adb5bd; /* Lighter for Dark Mode */
     }
 
     /* ACCESSIBILITY: REDUCED MOTION SUPPORT */
@@ -81,7 +97,7 @@ $pageTitle = "The Jessica Miller Center - Universal Design & Workplace Equity";
                     Work without friction.
                 </h1>
                 
-                <p class="lead text-light opacity-75 mb-4" style="max-width: 600px;">
+                <p class="lead text-light mb-4" style="max-width: 600px;">
                     The Jessica Miller Center is a research hub and corporate headquarters dedicated to <strong>Universal Design</strong>. We prove that accessibility isn't an "accommodation"—it's the foundation of high performance.
                 </p>
                 
@@ -95,8 +111,7 @@ $pageTitle = "The Jessica Miller Center - Universal Design & Workplace Equity";
                 </div>
             </div>
             <div class="col-lg-5 d-none d-lg-block text-center" aria-hidden="true">
-                <i class="fa-duotone fa-building-columns fa-10x text-secondary opacity-10"></i>
-            </div>
+                <i class="fa-duotone fa-building-columns fa-10x text-secondary opacity-25"></i> </div>
         </div>
     </div>
 </div>
@@ -112,14 +127,14 @@ $pageTitle = "The Jessica Miller Center - Universal Design & Workplace Equity";
                              class="img-fluid h-100 object-fit-cover" 
                              alt="Jessica Miller, Executive Director, sitting in a wheelchair at an adjustable desk overlooking the Hollywood Hills.">
                         
-                        <div class="position-absolute bottom-0 start-0 w-100 p-3" style="background: linear-gradient(to top, rgba(0,0,0,0.95), transparent);">
+                        <div class="position-absolute bottom-0 start-0 w-100 p-3" style="background: linear-gradient(to top, #000000, rgba(0,0,0,0.6) 80%, transparent);">
                             <div class="text-white mb-0 fw-bold h6">Jessica Miller</div>
-                            <small class="text-white-50 text-uppercase letter-spacing-1" style="font-size: 0.7rem;">Executive Director</small>
+                            <small style="color: #e0e0e0; font-size: 0.75rem;" class="text-uppercase letter-spacing-1">Executive Director</small>
                         </div>
                     </div>
                     <div class="col-md-8 p-4 p-lg-5 d-flex align-items-center">
                         <div>
-                            <i class="fa-solid fa-quote-left fa-2x text-success opacity-25 mb-3" aria-hidden="true"></i>
+                            <i class="fa-solid fa-quote-left fa-2x text-success opacity-50 mb-3" aria-hidden="true"></i>
                             
                             <h2 class="h4 font-serif fst-italic mb-4">
                                 "We don't fix people. We fix environments."
@@ -184,13 +199,13 @@ $pageTitle = "The Jessica Miller Center - Universal Design & Workplace Equity";
 
     <div class="row justify-content-center mb-5">
         <div class="col-lg-12">
-            <div class="card bg-dark border-info shadow-lg overflow-hidden">
+            <div class="card bg-dark border border-info shadow-lg overflow-hidden">
                 <div class="row g-0 align-items-center">
                     <div class="col-md-8 p-5">
                         <h2 class="h4 text-info fw-bold text-uppercase mb-3">
                             <i class="fa-duotone fa-elevator me-2" aria-hidden="true"></i>System Spotlight: Destination Dispatch
                         </h2>
-                        <p class="text-light opacity-75 mb-4">
+                        <p class="text-aaa-on-dark mb-4">
                             We have replaced standard elevator banks with intelligent, group-based dispatching. 
                             Features include <strong>Badge-Based Home Floor</strong> assignment and a discreet <strong>ADA Mode</strong> for extended dwell times and audio guidance.
                         </p>
@@ -217,26 +232,26 @@ $pageTitle = "The Jessica Miller Center - Universal Design & Workplace Equity";
                             <div class="me-3 mt-1 text-success"><i class="fa-solid fa-location-dot fa-xl" aria-hidden="true"></i></div>
                             <div>
                                 <strong class="d-block text-white">2000 Avenue of the Stars</strong>
-                                <span class="text-white-50 small">Century City, Los Angeles, CA</span>
+                                <span class="text-aaa-on-dark small">Century City, Los Angeles, CA</span>
                             </div>
                         </div>
 
                         <div class="row g-3">
                             <div class="col-sm-4">
                                 <div class="p-3 border border-secondary rounded bg-dark">
-                                    <span class="d-block text-secondary small text-uppercase fw-bold">Floor 38</span>
+                                    <span class="d-block text-aaa-muted small text-uppercase fw-bold">Floor 38</span>
                                     <span class="text-white">Main Lobby & Intake</span>
                                 </div>
                             </div>
                             <div class="col-sm-4">
                                 <div class="p-3 border border-secondary rounded bg-dark">
-                                    <span class="d-block text-secondary small text-uppercase fw-bold">Floor 39</span>
+                                    <span class="d-block text-aaa-muted small text-uppercase fw-bold">Floor 39</span>
                                     <span class="text-white">Operations & Exec</span>
                                 </div>
                             </div>
                             <div class="col-sm-4">
                                 <div class="p-3 border border-success rounded bg-success bg-opacity-10">
-                                    <span class="d-block text-success small text-uppercase fw-bold"><i class="fa-solid fa-star me-1" aria-hidden="true"></i>Floor 40</span>
+                                    <span class="d-block text-success-emphasis small text-uppercase fw-bold"><i class="fa-solid fa-star me-1" aria-hidden="true"></i>Floor 40</span>
                                     <span class="text-white">The Quiet Floor</span>
                                 </div>
                             </div>
@@ -244,7 +259,7 @@ $pageTitle = "The Jessica Miller Center - Universal Design & Workplace Equity";
                     </div>
                     
                     <div class="col-md-5 bg-dark border-start border-secondary p-5 d-flex flex-column justify-content-center">
-                        <h3 class="h6 text-secondary text-uppercase fw-bold mb-3">Live Building Status</h3>
+                        <h3 class="h6 text-aaa-muted text-uppercase fw-bold mb-3">Live Building Status</h3>
                         
                         <div class="d-flex justify-content-between align-items-center mb-2">
                             <span><i class="fa-solid fa-sun me-2 text-warning" aria-hidden="true"></i>Circadian Lighting</span>
