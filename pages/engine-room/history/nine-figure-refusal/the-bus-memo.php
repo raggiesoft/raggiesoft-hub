@@ -1,7 +1,7 @@
 <?php
 // pages/engine-room/history/nine-figure-refusal/the-bus-memo.php
 // EVIDENCE ITEM #44-B: The Document That Killed a Corporation
-// UPDATED: WCAG Compliance, Narrative Context & Stepper Component
+// UPDATED: Dark Mode "Red Pen" visibility improvements.
 
 $pageTitle = "The 'Bus Memo' - Evidence Item #44-B";
 ?>
@@ -44,6 +44,21 @@ $pageTitle = "The 'Bus Memo' - Evidence Item #44-B";
         border-radius: 255px 15px 225px 15px / 15px 225px 15px 255px;
         opacity: 0.85;
     }
+    
+    /* DARK MODE OVERRIDES FOR ANNOTATIONS */
+    /* Ensures the red pen marks pop against dark backgrounds */
+    [data-bs-theme="dark"] .circled-text::after {
+        border-color: #ff6b6b; /* Salmon Pink */
+    }
+    [data-bs-theme="dark"] .hand-underline::after {
+        background-color: #ff6b6b;
+    }
+    [data-bs-theme="dark"] .annotation-arrow path {
+        stroke: #ff6b6b !important;
+    }
+    [data-bs-theme="dark"] .annotation-arrow polygon {
+        fill: #ff6b6b !important;
+    }
 
     /* The Sticky Note - Skeuomorphic Elements retain specific colors for realism */
     .sticky-note-container {
@@ -58,6 +73,7 @@ $pageTitle = "The 'Bus Memo' - Evidence Item #44-B";
         box-shadow: var(--bs-box-shadow);
         z-index: 10;
         transition: transform 0.3s ease;
+        border: 1px solid #e6db55;
     }
     
     .sticky-note-container:hover {
@@ -93,7 +109,7 @@ $pageTitle = "The 'Bus Memo' - Evidence Item #44-B";
             <span class="badge bg-warning text-dark rounded-pill px-3 py-2 mb-3 text-uppercase letter-spacing-1 border border-warning">
                 <i class="fa-duotone fa-gavel me-2"></i>Plaintiff's Exhibit A
             </span>
-            <h1 class="display-4 fw-bold text-body mb-2" style="font-family: 'Impact', sans-serif;">
+            <h1 class="display-4 fw-bold text-body-emphasis mb-2" style="font-family: 'Impact', sans-serif;">
                 THE "BUS MEMO"
             </h1>
             <p class="lead text-body-secondary font-monospace">
@@ -113,7 +129,7 @@ $pageTitle = "The 'Bus Memo' - Evidence Item #44-B";
                     </div>
                 </div>
 
-                <div class="card-body p-5 font-monospace text-body">
+                <div class="card-body p-5 font-monospace text-body-emphasis">
                     <div class="border-bottom border-secondary pb-3 mb-4">
                         <div class="row">
                             <div class="col-2 fw-bold text-uppercase text-body-secondary">From:</div>
@@ -195,7 +211,7 @@ $pageTitle = "The 'Bus Memo' - Evidence Item #44-B";
                 </div>
 
                 <div class="col-md-6">
-                    <div class="card h-100 border-secondary shadow-sm">
+                    <div class="card h-100 bg-body-tertiary border-secondary shadow-sm">
                         <div class="card-body">
                             <h5 class="fw-bold text-danger"><i class="fa-solid fa-1 me-2"></i>Predatory Intent</h5>
                             <p class="text-body-secondary small mb-0">
@@ -205,7 +221,7 @@ $pageTitle = "The 'Bus Memo' - Evidence Item #44-B";
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <div class="card h-100 border-secondary shadow-sm">
+                    <div class="card h-100 bg-body-tertiary border-secondary shadow-sm">
                         <div class="card-body">
                             <h5 class="fw-bold text-danger"><i class="fa-solid fa-2 me-2"></i>The "Malice" Multiplier</h5>
                             <p class="text-body-secondary small mb-0">
@@ -216,7 +232,7 @@ $pageTitle = "The 'Bus Memo' - Evidence Item #44-B";
                 </div>
             </div>
 
-            <div class="alert alert-dark border-start border-success border-4 mt-4 bg-body-tertiary text-body">
+            <div class="alert alert-dark border-start border-success border-4 mt-4 bg-body-tertiary text-body-emphasis">
                 <h5 class="alert-heading text-success fw-bold">The Checkmate</h5>
                 <p class="mb-0">
                     When Holly presented this email to the Creditor Committee, the Senior Lenders realized they were defending a hate crime, not a business deal. They voted to remove the Board immediately to stop Holly from showing this document to a jury.
