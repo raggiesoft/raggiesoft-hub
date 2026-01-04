@@ -2,6 +2,7 @@
 // pages/engine-room/history/overview.php
 // Corporate History Index
 // Description: The chronological index of major legal and corporate events.
+// UPDATED: WCAG Color Corrected (High Contrast for Dark Mode)
 
 $pageTitle = "Corporate History - Engine Room Records";
 ?>
@@ -16,7 +17,7 @@ $pageTitle = "Corporate History - Engine Room Records";
             <h1 class="display-4 fw-bold text-white mb-2 text-uppercase" style="font-family: 'Impact', sans-serif; letter-spacing: 1px;">
                 Engine Room History
             </h1>
-            <p class="lead text-muted font-monospace">
+            <p class="lead text-white-50 font-monospace">
                 The timeline of independence. Documenting the legal battles, founding charters, and defining moments of the label.
             </p>
         </div>
@@ -33,7 +34,7 @@ $pageTitle = "Corporate History - Engine Room Records";
                         <img src="https://assets.raggiesoft.com/stardust-engine/images/story/friction-photoshoot.jpg" 
                              class="img-fluid h-100 object-fit-cover" 
                              style="filter: sepia(10%) contrast(1.1);"
-                             alt="The Stardust Engine waiting in a cold warehouse. Ryan is in his wheelchair looking annoyed. Cassidy is shivering in a black dress. A TV cart plays cartoons in the background.">
+                             alt="The Stardust Engine waiting in a cold warehouse. Ryan is in his wheelchair looking annoyed. Cassidy is shivering in a black dress.">
                         
                         <div class="position-absolute bottom-0 start-0 w-100 p-3 bg-gradient-to-t-black">
                             <span class="badge bg-danger text-uppercase shadow-sm">
@@ -47,15 +48,15 @@ $pageTitle = "Corporate History - Engine Room Records";
                                 <h3 class="h4 fw-bold text-white mb-0">The Friction Catastrophe</h3>
                                 <span class="font-monospace text-danger fw-bold">1992</span>
                             </div>
-                            <h6 class="text-uppercase text-muted small letter-spacing-1 mb-3">
+                            <h6 class="text-uppercase text-white-50 small letter-spacing-1 mb-3">
                                 The Death of "Stardust" & The Birth of the LLC
                             </h6>
                             
-                            <p class="card-text text-secondary mb-4">
+                            <p class="card-text text-white-75 mb-4">
                                 The documented history of the catastrophic photo shoot that turned a "Cold War" with Apex Records into a nuclear legal option.
                             </p>
                             
-                            <ul class="list-unstyled text-secondary small font-monospace mb-4">
+                            <ul class="list-unstyled text-white-75 small font-monospace mb-4">
                                 <li class="mb-2"><i class="fa-solid fa-check text-danger me-2"></i>Evidence Item #94-A (The Clipboard)</li>
                                 <li class="mb-2"><i class="fa-solid fa-check text-danger me-2"></i>The "Lost" Title Track</li>
                                 <li><i class="fa-solid fa-check text-danger me-2"></i>Formation of Engine Room Records, LLC</li>
@@ -78,15 +79,15 @@ $pageTitle = "Corporate History - Engine Room Records";
                 <div class="col-md-10">
                     <div class="card bg-black border-secondary border-opacity-50">
                         <div class="card-body p-3 d-flex align-items-center">
-                            <div class="me-3 text-secondary opacity-50">
+                            <div class="me-3 text-white-50">
                                 <i class="fa-duotone fa-box-archive fa-2x"></i>
                             </div>
                             <div>
-                                <h5 class="h6 fw-bold text-secondary mb-0">1995: The "Ironhead" War Chest</h5>
-                                <small class="text-muted font-monospace">The crowdfunding campaign that built the Blacksburg Studio.</small>
+                                <h5 class="h6 fw-bold text-white-75 mb-0">1995: The "Ironhead" War Chest</h5>
+                                <small class="text-white-50 font-monospace">The crowdfunding campaign that built the Blacksburg Studio.</small>
                             </div>
                             <div class="ms-auto">
-                                <span class="badge bg-secondary bg-opacity-25 text-secondary">DIGITIZING...</span>
+                                <span class="badge bg-secondary bg-opacity-25 text-white-50">DIGITIZING...</span>
                             </div>
                         </div>
                     </div>
@@ -101,7 +102,7 @@ $pageTitle = "Corporate History - Engine Room Records";
                         <img src="https://assets.raggiesoft.com/engine-room-records/images/omni-global/150-million-refusal.jpg" 
                              class="img-fluid h-100 object-fit-cover" 
                              style="filter: grayscale(100%) contrast(1.2);"
-                             alt="The Refusal">
+                             alt="A close up of a legal contract stamped 'REJECTED'">
                          <div class="position-absolute bottom-0 start-0 w-100 p-3 bg-gradient-to-t-black text-end">
                             <span class="badge bg-success text-uppercase shadow-sm">
                                 <i class="fa-solid fa-gavel me-2"></i>Full Legal Victory
@@ -114,11 +115,11 @@ $pageTitle = "Corporate History - Engine Room Records";
                                 <h3 class="h4 fw-bold text-white mb-0">The $150M Refusal</h3>
                                 <span class="font-monospace text-success fw-bold">2018</span>
                             </div>
-                            <h6 class="text-uppercase text-muted small letter-spacing-1 mb-3">
+                            <h6 class="text-uppercase text-white-50 small letter-spacing-1 mb-3">
                                 Omni-Global Hostile Takeover Attempt
                             </h6>
                             
-                            <p class="card-text text-secondary mb-4">
+                            <p class="card-text text-white-75 mb-4">
                                 The complete record of the day the band turned down a nine-figure buyout to protect their independence and Ryan's medical trust.
                             </p>
 
@@ -126,7 +127,7 @@ $pageTitle = "Corporate History - Engine Room Records";
                                 <a href="/engine-room/history/nine-figure-refusal" class="btn btn-outline-light rounded-pill px-4">
                                     <i class="fa-duotone fa-file-contract me-2"></i>Access Archive
                                 </a>
-                                <a href="/engine-room/artists/stardust-engine/lore/book-1/chapter-01" class="btn btn-link text-secondary text-decoration-none small">
+                                <a href="/engine-room/artists/stardust-engine/lore/book-1/chapter-01" class="btn btn-link text-white-50 text-decoration-none small hover-text-white">
                                     <i class="fa-duotone fa-book-open me-1"></i>Read Chapter 1
                                 </a>
                             </div>

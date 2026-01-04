@@ -23,13 +23,13 @@
 <ul class="nav flex-column">
     
     <li class="nav-item">
-        <a class="nav-link link-secondary" href="/engine-room/history/friction">
+        <a class="nav-link link-secondary" href="/engine-room/artists/stardust-engine/story/friction">
             <i class="fa-duotone fa-fire me-2 text-danger opacity-75"></i>1992: Friction
         </a>
     </li>
 
     <li class="nav-item">
-        <a class="nav-link link-secondary" href="/engine-room/history/nine-figure-refusal">
+        <a class="nav-link link-secondary" href="/engine-room/artists/stardust-engine/story/nine-figure-refusal">
             <i class="fa-duotone fa-gavel me-2 text-success opacity-75"></i>2018: The Refusal
         </a>
     </li>
