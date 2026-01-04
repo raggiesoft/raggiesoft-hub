@@ -1,6 +1,6 @@
 <section
   class="position-relative d-flex align-items-center justify-content-center text-center text-white p-4"
-  style="background-image: url('https://assets.raggiesoft.com/stardust-engine/images/stardust-nebula.jpg'); background-size: cover; background-position: center center; min-height: 50vh;"
+  style="background-image: url('https://assets.raggiesoft.com/stardust-engine/images/stardust-nebula-hero.jpg'); background-size: cover; background-position: center center; min-height: 50vh;"
   aria-labelledby="hub-hero-title">
 
   <div class="position-absolute top-0 start-0 end-0 bottom-0" style="background-color: rgba(0, 0, 0, 0.5);"></div>
