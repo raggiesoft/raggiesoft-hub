@@ -514,7 +514,7 @@ $pageTitle = "The Autopsy: Holly Takes Control - Evidence Item #02";
 
                                 <p class="fw-bold text-danger">IF YOU FAIL TO PAY OR QUIT within the three (3) day period, legal proceedings will be instituted against you to recover possession, treble damages, and legal fees.</p>
 
-                                <div class="border border-secondary p-3 bg-light small mb-3">
+                                <div class="border border-secondary p-3 bg-white small mb-3">
                                     <strong>Make Payment To:</strong><br>
                                     Pacific Rim Properties, LLC<br>
                                     c/o Engine Room Records (Managing Agent)<br>
