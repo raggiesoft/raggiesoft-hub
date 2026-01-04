@@ -2,7 +2,7 @@
 // pages/engine-room/artists/stardust-engine/story/friction/the-lost-title-track.php
 // Friction (The Lost Title Track)
 // Note: Contains content warning for mature themes.
-// UPDATED: Added "The Dirty Mirror" narrative & Toon Brigade context.
+// UPDATED: Expanded "Toon Brigade" Context (Efficiency vs. Message)
 
 $pageTitle = "Friction (The Lost Title Track) - The Stardust Engine Lore";
 ?>
@@ -45,7 +45,7 @@ $pageTitle = "Friction (The Lost Title Track) - The Stardust Engine Lore";
                 </h1>
                 <h2 class="h4 text-body-secondary text-uppercase letter-spacing-2">The Unrecorded Title Track (1992)</h2>
                 <p class="lead text-body-secondary mt-3">
-                    The song that killed a contract. The moment the "Cold War" turned into a nuclear option.
+                    The lyrics that killed a contract. The moment the "Cold War" turned into a nuclear option.
                 </p>
             </div>
         </div>
@@ -79,7 +79,9 @@ $pageTitle = "Friction (The Lost Title Track) - The Stardust Engine Lore";
                     <div class="alert alert-dark bg-body-tertiary border-info d-flex align-items-start mb-4">
                         <i class="fa-duotone fa-tv-retro fs-3 text-info me-3 mt-1"></i>
                         <div class="text-body-secondary small">
-                            <strong>Context:</strong> The band arrived early. To pass the time, they sat on the floor watching <em>Toon Brigade Against Trouble</em> (an anti-drug cartoon crossover) on a rolling TV cart. They were in "kid mode"—excited to finally "nerd out" about space. They do not drink. They do not smoke. They had no frame of reference for what was about to happen.
+                            <strong>Context:</strong> The band arrived early. To pass the time, they sat on the floor watching <em>Toon Brigade Against Trouble</em> on a rolling TV cart. 
+                            <br><br>
+                            They didn't pick it for the "Just Say No" message—they were a straight-edge family who lived on hot chocolate; the moral lesson was irrelevant to them. They picked it for <strong>efficiency</strong>. It was the only tape in the pile that packed <em>every single one</em> of their favorite Saturday Morning characters into a crisp 30-minute runtime. They were in full "kid mode," happily nerding out over the crossover event, completely oblivious to the adult nightmare walking through the door.
                         </div>
                     </div>
 
@@ -95,7 +97,7 @@ $pageTitle = "Friction (The Lost Title Track) - The Stardust Engine Lore";
                                 <strong>ATTORNEY:</strong> How did they react?
                             </p>
                             <p class="mb-3">
-                                <strong>MITCHELL:</strong> Total confusion. They're a "hot chocolate" family. Ryan looked at the mirror like it was a health code violation. He said, "It's filthy."
+                                <strong>MITCHELL:</strong> Total confusion. They had just spent twenty minutes debating which cartoon chipmunk had better comedic timing. Ryan looked at the mirror like it was a health code violation. He said, "It's filthy."
                             </p>
                             <p class="mb-3">
                                 <strong>ATTORNEY:</strong> He didn't know what it was?
@@ -125,9 +127,12 @@ $pageTitle = "Friction (The Lost Title Track) - The Stardust Engine Lore";
                             <p class="text-body-secondary">
                                 It wasn't about rockets. The lyrics demanded that Ryan and Cassidy sing about—and sound like they were engaging in—actual sexual intercourse.
                             </p>
-                            <p class="mb-0 fw-bold text-body-emphasis">
+                            <p class="mb-3 fw-bold text-body-emphasis">
                                 He then pointed to the set—a mattress on the floor—and told the photographer to capture "Shot 12: The Act."
                             </p>
+                            <div class="alert alert-light border-danger text-danger">
+                                <strong>The Photographer's Horror:</strong> The photographer, Kevin Mitchell, froze. He was a local commercial photographer best known for shooting <strong>Mall Santa portraits</strong> and family Christmas cards. He had been hired by Apex under the pretense of a "Wholesome Family Band" shoot. He had no idea what Julian had planned.
+                            </div>
                         </div>
                     </div>
                 </section>
@@ -147,9 +152,9 @@ $pageTitle = "Friction (The Lost Title Track) - The Stardust Engine Lore";
                     <p class="text-body-secondary">
                         That was the moment <strong>Holly O'Connell</strong> stepped out of the shadows. She wasn't just a sister anymore. She was a 23-year-old law student who had just passed her Torts final. She didn't scream. She simply cited the California Penal Code regarding "Solicitation of a Felony" and ordered the photographer to hand over the film.
                     </p>
-                    <div class="alert alert-light border border-secondary text-body-secondary small">
-                        <strong>The Photographer:</strong> Kevin Mitchell, a local commercial photographer best known for shooting <strong>Mall Santa portraits</strong>, gladly handed the film to Holly. He was horrified. He wanted no evidence that he was ever in that room.
-                    </div>
+                    <p class="text-body-secondary">
+                        Kevin Mitchell, the "Mall Santa" photographer, gladly handed the film to Holly. He wanted no evidence that he was ever in that room.
+                    </p>
                 </section>
 
                 <div class="text-center mt-5">
