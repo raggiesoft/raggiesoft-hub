@@ -18,7 +18,8 @@
   "/engine-room/artists/stardust-engine/story/ad-astra": {
     "view": "pages/engine-room/artists/stardust-engine/story/ad-astra/overview",
     "title": "Ad Astra | Mission Hub",
-    "ogDescription": "Mission Control for the U.S.S. Aethelgard."
+    "ogDescription": "Mission Control for the U.S.S. Aethelgard.",
+    "showSidebar": false
   },
   "/engine-room/artists/stardust-engine/story/ad-astra/voyage": {
     "view": "pages/engine-room/artists/stardust-engine/story/ad-astra/voyage/overview",
