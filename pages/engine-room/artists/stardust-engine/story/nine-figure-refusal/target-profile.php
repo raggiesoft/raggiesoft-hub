@@ -1,7 +1,7 @@
 <?php
 // pages/engine-room/artists/stardust-engine/story/nine-figure-refusal/target-profile.php
 // The Enemy's Playbook.
-// UPDATED: Added "Strategic IP Focus" (The butchering of 'Escape Velocity').
+// UPDATED: Clarified the "Algorithmic Estimate" logic (How Frost "knows" the financials).
 
 $pageTitle = "Confidential Brief: Project GOLDEN GOOSE - Omni-Global";
 ?>
@@ -80,7 +80,7 @@ $pageTitle = "Confidential Brief: Project GOLDEN GOOSE - Omni-Global";
                     <div class="alert alert-secondary border border-secondary small">
                         <h6 class="fw-bold text-uppercase mb-2"><i class="fa-solid fa-robot me-2 text-primary"></i>Methodology (The "Black Box"):</h6>
                         <p class="mb-2">
-                            The <strong>Omni-Scout™ Algorithm</strong> scraped public metadata from streaming platforms and global tour manifests.
+                            The <strong>Omni-Scout™ Algorithm</strong> scraped public metadata from streaming platforms (Spotify, Apple Music) and global tour manifests.
                         </p>
                         <p class="mb-0">
                             <strong>The Anomaly:</strong> The target shows 30 years of catalog activity with <span class="text-danger fw-bold">zero visible "Label Share" deductions</span>. The algorithm mistakenly assumes the Artist retains 100% of Net Revenue.
@@ -101,7 +101,7 @@ $pageTitle = "Confidential Brief: Project GOLDEN GOOSE - Omni-Global";
                         <strong>Jameson Frost</strong> has flagged the $500M figure as "Absurd."
                     </p>
                     <div class="alert alert-light border border-warning small shadow-sm text-dark">
-                        <strong>Hypothesis:</strong> "If they show up in a rented limo, we offer $300M. If they show up in a taxi, we offer $150M."
+                        <strong>Hypothesis:</strong> "If they show up in a rented limo, we offer $300M. If they show up in a taxi, we offer $150M. The algorithm doesn't know how to read shoes."
                     </div>
                 </div>
             </div>
@@ -122,10 +122,33 @@ $pageTitle = "Confidential Brief: Project GOLDEN GOOSE - Omni-Global";
                         </div>
                         <div class="col-md-9 ps-md-4">
                             <h6 class="fw-bold text-uppercase text-danger mb-2">The "Efficiency" Opportunity</h6>
-                            <p class="small text-body-secondary mb-3">
-                                <strong>Current State:</strong> A 15-minute, 33-second "Progressive Rock" suite.
-                                <br><strong>Commercial Viability:</strong> <span class="text-danger">Zero.</span> Too long for radio. Too complex for sync licensing. Historical ROI is negative (Production costs exceeded revenue).
-                            </p>
+                            
+                            <div class="row small text-body-secondary mb-3 g-2">
+                                <div class="col-md-4">
+                                    <div class="p-2 border border-secondary border-opacity-25 rounded bg-body-tertiary">
+                                        <strong>Revenue (Actual):</strong><br>
+                                        <span class="text-muted">Sources: SoundScan / Streaming API</span><br>
+                                        <span class="text-danger fw-bold">LOW Volume</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="p-2 border border-secondary border-opacity-25 rounded bg-body-tertiary">
+                                        <strong>Cost (Inferred):</strong><br>
+                                        <span class="text-muted">Source: Sonic Heuristic Analysis</span><br>
+                                        <span class="text-danger fw-bold">HIGH Production Value*</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="p-2 border border-secondary border-opacity-25 rounded bg-body-tertiary">
+                                        <strong>Result (ROI):</strong><br>
+                                        <span class="text-muted">Commercial Viability</span><br>
+                                        <span class="text-danger fw-bold">NEGATIVE (Critical)</span>
+                                    </div>
+                                </div>
+                                <div class="col-12 mt-1">
+                                    <small class="fst-italic opacity-75">*Note: Algorithm assumes standard studio rental rates ($200/hr) for a 15-minute complex arrangement. It assumes this asset is a "Sunk Cost" drain on the LLC.</small>
+                                </div>
+                            </div>
                             
                             <div class="p-3 bg-body-secondary border-start border-4 border-success">
                                 <h6 class="fw-bold text-success small text-uppercase mb-1">Proposed Action Plan (Slide 14):</h6>
@@ -165,7 +188,7 @@ $pageTitle = "Confidential Brief: Project GOLDEN GOOSE - Omni-Global";
                                 <td>CEO / Legal</td>
                                 <td>
                                     <span class="badge bg-danger mb-1">THE OBSTACLE</span><br>
-                                    Public records show zero debt. Frost believes she is a "Paper Tiger" hiding insolvency.
+                                    Public records show zero debt. Frost believes she is a "Paper Tiger" hiding insolvency behind creative accounting.
                                 </td>
                             </tr>
                             <tr>
