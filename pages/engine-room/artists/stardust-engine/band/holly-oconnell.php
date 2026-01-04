@@ -7,7 +7,8 @@ $pageTitle = "Holly O'Connell - The Stardust Engine";
 
 <div class="starfield-container"><div class="starfield-twinkling"></div></div>
 
-<div class="container py-5 position-relative z-1">
+<div class="container py-5 glass-container position-relative z-1">
+
     <div class="row g-5">
         
         <div class="col-lg-8">

@@ -5,7 +5,7 @@ $pageTitle = "Our History - The Stardust Engine";
 
 <div class="starfield-container"><div class="starfield-twinkling"></div></div>
 
-<div class="container py-5 position-relative z-1">
+<div class="container py-5 glass-container position-relative z-1">
     
     <div class="text-center mb-5">
         <h1 class="display-3 fw-bold text-uppercase text-glow-primary" style="font-family: 'Impact', sans-serif;">
