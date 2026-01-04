@@ -63,7 +63,7 @@ $pageTitle = "Corporate History - Engine Room Records";
                             </ul>
 
                             <div class="d-grid gap-2 d-md-block">
-                                <a href="/engine-room/history/friction" class="btn btn-outline-danger rounded-pill px-4">
+                                <a href="/engine-room/artists/stardust-engine/story/friction" class="btn btn-outline-danger rounded-pill px-4">
                                     <i class="fa-duotone fa-file-contract me-2"></i>Access Archive
                                 </a>
                             </div>
@@ -127,7 +127,7 @@ $pageTitle = "Corporate History - Engine Room Records";
                                 <a href="/engine-room/history/nine-figure-refusal" class="btn btn-outline-success rounded-pill px-4">
                                     <i class="fa-duotone fa-file-contract me-2"></i>Access Archive
                                 </a>
-                                <a href="/engine-room/artists/stardust-engine/lore/book-1/chapter-01" class="btn btn-link text-body-secondary text-decoration-none small">
+                                <a href="/engine-room/artists/stardust-engine/story/nine-figure-refusal" class="btn btn-link text-body-secondary text-decoration-none small">
                                     <i class="fa-duotone fa-book-open me-1"></i>Read Chapter 1
                                 </a>
                             </div>
