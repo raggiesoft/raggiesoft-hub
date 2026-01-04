@@ -56,6 +56,18 @@ $pageTitle = "The Autopsy: Holly Takes Control - Evidence Item #02";
         background: linear-gradient(to right, #1a1a1a, #000000); /* Darker, high contrast gradient */
         color: #ffffff;
     }
+
+    /* Force a component to stay dark regardless of the global theme */
+    .forced-dark-card {
+        background-color: #212529 !important; /* Hardcoded Hex for Dark Gray */
+        color: #ffffff !important;
+        border-color: #495057 !important;
+    }
+
+    /* Ensure muted text stays visible (light gray) instead of turning dark gray */
+    .forced-dark-card .text-white-50 {
+        color: rgba(255, 255, 255, 0.5) !important; 
+    }
 </style>
 
 <div class="container py-5">
@@ -77,7 +89,7 @@ $pageTitle = "The Autopsy: Holly Takes Control - Evidence Item #02";
     <div class="row justify-content-center mb-5">
         <div class="col-lg-10">
             
-            <div class="card bg-dark border-secondary shadow-lg mb-4">
+            <div class="card forced-dark-card border-secondary shadow-lg mb-4">
                 <div class="card-body p-4 text-light font-monospace small">
                     <div class="row">
                         <div class="col-md-3 fw-bold text-uppercase text-white-50">Timestamp:</div>
