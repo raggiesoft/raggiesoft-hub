@@ -2,6 +2,7 @@
 // pages/engine-room/artists/stardust-engine/story/ad-astra/voyage/day-21.php
 // Log Entry: Day 21
 // Context: Atmospheric Re-entry. The "Hard Reset."
+// UPDATED: Added prefers-reduced-motion check for alert animation.
 
 $pageTitle = "Day 21: The Drop - Ad Astra Log";
 ?>
@@ -30,7 +31,7 @@ $pageTitle = "Day 21: The Drop - Ad Astra Log";
             
             <div class="position-absolute bottom-0 start-0 w-100 p-3 bg-black bg-opacity-75 d-flex justify-content-between align-items-center">
                 <span class="text-danger font-monospace small"><i class="fa-duotone fa-triangle-exclamation me-2"></i>CAM_4C: HULL VIBRATION CRITICAL</span>
-                <span class="badge bg-danger border border-white text-white rounded-0 blink-animation">ALERT</span>
+                <span class="badge bg-danger border border-white text-white rounded-0 blink-animation text-uppercase">Alert</span>
             </div>
         </div>
     </div>
@@ -122,6 +123,12 @@ $pageTitle = "Day 21: The Drop - Ad Astra Log";
 </div>
 
 <style>
-    @keyframes blink { 0% { opacity: 1; } 50% { opacity: 0.3; } 100% { opacity: 1; } }
-    .blink-animation { animation: blink 1s infinite; }
+    /* Default: No animation */
+    .blink-animation { opacity: 1; }
+
+    /* Only pulse if the user is okay with motion */
+    @media (prefers-reduced-motion: no-preference) {
+        @keyframes blink { 0% { opacity: 1; } 50% { opacity: 0.3; } 100% { opacity: 1; } }
+        .blink-animation { animation: blink 1s infinite; }
+    }
 </style>
