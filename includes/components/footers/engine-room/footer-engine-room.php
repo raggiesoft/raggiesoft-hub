@@ -15,17 +15,17 @@
             <div class="col-md-4 text-center">
                 <ul class="list-unstyled mb-0" style="font-family: 'Courier New', monospace;">
                     <li class="mb-2">
-                        <a href="/engine-room/artists" class="link-primary text-decoration-none hover-underline">
+                        <a href="/engine-room/artists" class="text-decoration-none hover-underline">
                             > ROSTER
                         </a>
                     </li>
                     <li class="mb-2">
-                        <a href="/engine-room/history" class="link-primary text-decoration-none hover-underline">
+                        <a href="/engine-room/history" class="text-decoration-none hover-underline">
                             > HISTORY
                         </a>
                     </li>
                     <li class="mb-0">
-                        <a href="/engine-room/about" class="link-primary text-decoration-none hover-underline">
+                        <a href="/engine-room/about" class="text-decoration-none hover-underline">
                             > THE FORTRESS
                         </a>
                     </li>
