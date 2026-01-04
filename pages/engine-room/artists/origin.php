@@ -2,7 +2,7 @@
 // pages/engine-room/artists/origin.php
 // Artist Profile: Origin
 // Context: The "First Signing" and the source of the "Safe Harbor" melody.
-// UPDATED: WCAG Contrast Fixes (Adaptive Text Colors)
+// UPDATED: Corrected Backstory (80s Origins, The Catalog Buyback).
 
 $pageTitle = "Origin - Engine Room Records";
 ?>
@@ -41,32 +41,43 @@ $pageTitle = "Origin - Engine Room Records";
                 <div class="card-body">
                     <h5 class="fw-bold text-body-emphasis mb-3">Artist Profile</h5>
                     <ul class="list-unstyled small text-body-secondary mb-0">
-                        <li class="mb-2"><strong class="text-body-emphasis">Genre:</strong> 80s Art Rock / Progressive Pop</li>
-                        <li class="mb-2"><strong class="text-body-emphasis">Formed:</strong> London, UK (1994)</li>
-                        <li class="mb-2"><strong class="text-body-emphasis">Signed:</strong> 1998</li>
-                        <li><strong class="text-body-emphasis">Key Sound:</strong> Gated Reverb Snare, Flute Solos, Cockney Vocals</li>
+                        <li class="mb-2"><strong class="text-body-emphasis">Genre:</strong> 80s Art Rock / Baroque Pop</li>
+                        <li class="mb-2"><strong class="text-body-emphasis">Formed:</strong> London, UK (1982)</li>
+                        <li class="mb-2"><strong class="text-body-emphasis">Status:</strong> Active (Duo)</li>
+                        <li class="mb-2"><strong class="text-body-emphasis">Location:</strong> Williamsport, MD</li>
+                        <li><strong class="text-body-emphasis">Key Sound:</strong> Flute Solos, Gated Reverb, Orchestral Synths</li>
                     </ul>
                 </div>
             </div>
 
             <div class="alert alert-light border-start border-primary border-4 shadow-sm bg-body-tertiary">
-                <strong class="text-primary">The Signing Story:</strong><br>
+                <strong class="text-primary">The "Catalog" Maneuver:</strong><br>
                 <span class="small text-body-secondary">
-                    Ryan O'Connell discovered them in an East London club during the 1998 tour. While major labels mocked their "unfashionable" flute solos, Engine Room signed them immediately. They recorded their debut at The Fortress in Blacksburg the following spring.
+                    Before the formal creation of Athelgard Holdings, Holly O'Connell executed her first "Hostile Benevolence" maneuver with Origin. 
+                    <br><br>
+                    Discovering that the band's back catalog was languishing in a corporate vault, she didn't just sign them—she funneled the funds directly to the siblings so <em>they</em> could buy back their own masters. Engine Room Records doesn't own Origin's history; Origin does.
                 </span>
             </div>
         </div>
 
         <div class="col-lg-8">
             
-            <h2 class="h4 fw-bold text-body-emphasis border-bottom pb-2 mb-4">Key Track: "Kaleidoscope Sun"</h2>
+            <h2 class="h4 fw-bold text-body-emphasis border-bottom pb-2 mb-4">The Survivors</h2>
+            <p class="text-body-secondary">
+                Originally a massive six-piece art-rock orchestra that toured throughout the 1980s, <strong>Origin</strong> was reduced to a duo by a series of tragedies that claimed four of their members.
+            </p>
+            <p class="text-body-secondary">
+                Only the siblings remained. Relocating from London to <strong>Williamsport, Maryland</strong> (just up I-81 from The Fortress), they lived in quiet obscurity until the 1998 meeting in Camden Town changed everything.
+            </p>
+
+            <h2 class="h4 fw-bold text-body-emphasis border-bottom pb-2 mt-5 mb-4">Key Track: "Kaleidoscope Sun"</h2>
             
             <div class="p-4 bg-black text-white rounded mb-4 border border-secondary">
                 <div class="d-flex align-items-center mb-3">
                     <i class="fa-duotone fa-compact-disc fs-2 text-warning me-3"></i>
                     <div>
                         <h5 class="mb-0 fw-bold">Kaleidoscope Sun</h5>
-                        <small class="text-white-50">Album: Origin (1999)</small>
+                        <small class="text-white-50">Album: The First Era (1985)</small>
                     </div>
                 </div>
                 <p class="font-monospace small text-white-75 mb-0">
@@ -78,17 +89,24 @@ $pageTitle = "Origin - Engine Room Records";
 
             <div class="card border-warning shadow-sm">
                 <div class="card-header bg-warning text-dark fw-bold">
-                    <i class="fa-duotone fa-key me-2"></i>The "Safe Harbor" Code
+                    <i class="fa-duotone fa-shield-heart me-2"></i>The Shared Sanctuary
                 </div>
                 <div class="card-body bg-body-tertiary">
                     <p class="card-text text-body-secondary">
-                        This song holds a sacred place in The Stardust Engine's history. During the "Dark Years" (1990-1992), the flute melody from the bridge became a coded signal between <strong>Cassidy</strong> and <strong>Ryan</strong>.
+                        This song was a lifeline for two different families on two different continents.
                     </p>
-                    <p class="card-text text-body-secondary">
-                        Known as <em>"Playing the Flute,"</em> Cassidy would hum this specific melody to Ryan over the phone during his isolation/rehab. It was a shorthand for "Safe Harbor"—a reminder that no matter how trapped he felt, he had a home to return to.
-                    </p>
+                    <ul class="list-unstyled text-body-secondary small">
+                        <li class="mb-2">
+                            <i class="fa-solid fa-caret-right text-warning me-2"></i>
+                            <strong>For Origin:</strong> It was the song they played to remember the members they had lost.
+                        </li>
+                        <li class="mb-0">
+                            <i class="fa-solid fa-caret-right text-warning me-2"></i>
+                            <strong>For Cassidy & Ryan:</strong> During the "Dark Years" (1990-1992), the flute melody became a coded signal ("Safe Harbor"). Cassidy would hum it to Ryan over the phone during his paralysis rehab—a promise that he still had a home.
+                        </li>
+                    </ul>
                     <p class="card-text small text-body-secondary fst-italic border-top border-secondary-subtle pt-3 mt-3">
-                        "Hearing Origin play this live was the first time I felt like the war was over." — Ryan O'Connell, 1996
+                        "We didn't just sign a band. We found the people who wrote our survival anthem." — Holly O'Connell
                     </p>
                 </div>
             </div>
