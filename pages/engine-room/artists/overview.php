@@ -2,7 +2,7 @@
 // pages/engine-room/artists/overview.php
 // The Complete Roster.
 // Access: /engine-room/artists
-// UPDATED: Added Firelight & Winter Palace to the grid.
+// UPDATED: Added Origin, Firelight, Winter Palace. Fixed Image Cropping.
 
 $pageTitle = "Artist Roster - Engine Room Records, LLC";
 ?>
@@ -56,6 +56,23 @@ $pageTitle = "Artist Roster - Engine Room Records, LLC";
         background-color: #fff;
         color: #000;
     }
+    
+    /* IMAGE FIX: NO CROP */
+    .artist-img-box {
+        height: 250px; 
+        display: flex; 
+        align-items: center; 
+        justify-content: center;
+        background-color: #000;
+        border-bottom: 1px solid #333;
+        padding: 20px;
+    }
+    .artist-img-box img {
+        max-height: 100%;
+        max-width: 100%;
+        object-fit: contain; /* Ensures full logo/art is visible */
+        filter: drop-shadow(0 0 10px rgba(255,255,255,0.1));
+    }
 </style>
 
 <div class="container-fluid p-0">
@@ -73,9 +90,9 @@ $pageTitle = "Artist Roster - Engine Room Records, LLC";
                 
                 <div class="col-lg-6 d-flex align-items-stretch">
                     <div class="card card-industrial w-100">
-                        <div class="bg-black p-4 text-center border-bottom border-secondary" style="height: 250px; display: flex; align-items: center; justify-content: center;">
-                            <img src="https://assets.raggiesoft.com/stardust-engine/images/stardust-engine-logo.png" 
-                                 class="img-fluid" style="max-height: 150px;" alt="The Stardust Engine">
+                        <div class="artist-img-box">
+                            <img src="https://assets.raggiesoft.com/engine-room-records/artists/the-stardust-engine/band-logo.png" 
+                                 alt="The Stardust Engine">
                         </div>
                         <div class="card-body d-flex flex-column p-4">
                             <span class="badge badge-industrial align-self-start mb-2">ERR-001</span>
@@ -89,14 +106,29 @@ $pageTitle = "Artist Roster - Engine Room Records, LLC";
                 </div>
 
                 <div class="col-lg-6 d-flex align-items-stretch">
-                    <div class="card card-industrial w-100 border-danger">
-                        <div class="bg-dark p-0 border-bottom border-secondary overflow-hidden position-relative" style="height: 250px;">
-                            <img src="https://assets.raggiesoft.com/engine-room-records/artists/mirage/2001-static-and-silence/album-art.jpg" 
-                                 class="img-fluid w-100 h-100 object-fit-cover opacity-75" alt="Mirage">
-                            <div class="position-absolute bottom-0 start-0 bg-danger text-white px-2 py-1 small fw-bold text-uppercase">Active</div>
-                        </div>
+                    <div class="card card-industrial w-100 border-primary">
+                        <div class="artist-img-box bg-dark">
+                             <i class="fa-duotone fa-user-group fa-5x text-primary opacity-50"></i>
+                             </div>
                         <div class="card-body d-flex flex-column p-4">
                             <span class="badge badge-industrial align-self-start mb-2">ERR-002</span>
+                            <h3 class="h4 fw-bold text-uppercase text-primary">Origin</h3>
+                            <p class="card-text small flex-grow-1">
+                                The First Signing (1998). Discovered in a London basement. Known for "Kaleidoscope Sun" and the "Safe Harbor" flute melody.
+                            </p>
+                            <a href="/engine-room/artists/origin" class="btn btn-outline-primary rounded-0 w-100 text-uppercase fw-bold mt-3">View Profile</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 d-flex align-items-stretch">
+                    <div class="card card-industrial w-100 border-danger">
+                        <div class="artist-img-box bg-dark">
+                            <img src="https://assets.raggiesoft.com/engine-room-records/artists/mirage/2001-static-and-silence/album-art.jpg" 
+                                 alt="Mirage - Static & Silence">
+                        </div>
+                        <div class="card-body d-flex flex-column p-4">
+                            <span class="badge badge-industrial align-self-start mb-2">ERR-003</span>
                             <h3 class="h4 fw-bold text-uppercase text-danger">Mirage</h3>
                             <p class="card-text small flex-grow-1">
                                 Cinematic rock opera led by Julian Croft. Known for the "Paper Wall" legal trust and the album <em>Static & Silence</em>.
@@ -108,12 +140,12 @@ $pageTitle = "Artist Roster - Engine Room Records, LLC";
 
                 <div class="col-lg-6 d-flex align-items-stretch">
                     <div class="card card-industrial w-100 border-warning">
-                        <div class="bg-black p-0 border-bottom border-secondary overflow-hidden position-relative" style="height: 250px;">
+                        <div class="artist-img-box bg-black">
                              <img src="https://assets.raggiesoft.com/engine-room-records/artists/firelight/band-logo.png" 
-                                 class="img-fluid w-100 h-100 object-fit-cover opacity-90" alt="Firelight">
+                                 alt="Firelight Logo">
                         </div>
                         <div class="card-body d-flex flex-column p-4">
-                            <span class="badge badge-industrial align-self-start mb-2">ERR-003</span>
+                            <span class="badge badge-industrial align-self-start mb-2">ERR-004</span>
                             <h3 class="h4 fw-bold text-uppercase text-warning">Firelight</h3>
                             <p class="card-text small flex-grow-1">
                                 Symphonic Rock / Fantasy. The musical voice of the <em>Aethel Saga</em>. Soaring vocals, heavy synths, and narrative depth.
@@ -125,11 +157,11 @@ $pageTitle = "Artist Roster - Engine Room Records, LLC";
 
                 <div class="col-lg-6 d-flex align-items-stretch">
                     <div class="card card-industrial w-100 opacity-75" style="border-style: solid;">
-                        <div class="bg-body-tertiary p-4 text-center border-bottom border-secondary" style="height: 250px; display: flex; align-items: center; justify-content: center;">
+                        <div class="artist-img-box bg-body-tertiary">
                             <i class="fa-duotone fa-snowflake fa-5x text-secondary opacity-50"></i>
                         </div>
                         <div class="card-body d-flex flex-column p-4">
-                            <span class="badge bg-secondary rounded-0 align-self-start mb-2">ERR-004</span>
+                            <span class="badge bg-secondary rounded-0 align-self-start mb-2">ERR-005</span>
                             <h3 class="h4 fw-bold text-uppercase text-secondary">The Winter Palace</h3>
                             <p class="card-text small flex-grow-1 text-muted">
                                 Neoclassical / Atmospheric. Instrumental works and holiday arrangements. The quiet corner of the Engine Room.
