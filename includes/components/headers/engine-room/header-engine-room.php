@@ -65,7 +65,7 @@ $isHistory = (
       <li><hr class="dropdown-divider"></li>
       <li><h6 class="dropdown-header text-uppercase text-danger fw-bold">Safety & Protocols</h6></li>
       <li>
-          <a class="dropdown-item" href="/engine-room/corporate/security/sensory-scale">
+          <a class="dropdown-item" href="/raggiesoft-books/encyclopedia/sensory-scale">
             <i class="fa-solid fa-ear-listen me-2 text-danger"></i>Sensory Threat Scale
           </a>
       </li>
@@ -126,7 +126,7 @@ $isHistory = (
           </a>
       </li>
       <li>
-          <a class="dropdown-item" href="/engine-room/history/friction">
+          <a class="dropdown-item" href="/engine-room/artists/stardust-engine/story/friction">
             <i class="fa-duotone fa-fire me-2 text-danger"></i>1992: Friction
           </a>
       </li>
