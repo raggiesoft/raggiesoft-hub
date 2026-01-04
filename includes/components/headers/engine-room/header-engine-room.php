@@ -2,14 +2,14 @@
 // includes/components/headers/engine-room/header-engine-room.php
 // The Corporate Navigation. Stark. Functional.
 // Used for: /engine-room/* pages
-// UPDATED: Forced "Industrial Dark Mode" via CSS injection.
+// UPDATED: Forced "Industrial Dark Mode" via CSS injection. Corrected Logo Path.
 
 // 1. Determine Active States
 $uri = $_SERVER['REQUEST_URI'] ?? '';
 
 $isRoster = str_starts_with($uri, '/engine-room/artists');
 
-// Operations: Physical Assets, Systems, Security
+// Operations
 $isOperations = (
     str_contains($uri, '/corporate/facilities') || 
     str_contains($uri, '/corporate/fleet') || 
@@ -17,7 +17,7 @@ $isOperations = (
     str_contains($uri, '/corporate/security')
 );
 
-// Governance: Structure, Leadership, HR, Compliance
+// Governance
 $isGovernance = (
     str_contains($uri, '/corporate/structure') || 
     str_contains($uri, '/corporate/leadership') || 
@@ -26,7 +26,7 @@ $isGovernance = (
     str_contains($uri, '/corporate/financials')
 );
 
-// Archives: History, Legal Docs
+// Archives
 $isHistory = (
     str_starts_with($uri, '/engine-room/history') || 
     str_contains($uri, '/acquisition-plan')
