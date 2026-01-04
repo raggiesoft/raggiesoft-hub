@@ -417,7 +417,7 @@ $pageTitle = "The Approach Vector - Evidence Item #00";
                     </p>
 
                     <div class="ryan-observation">
-                        <p class="mb-2"><strong>Ryan's Log:</strong></p>
+                        <h5 class="mb-2">Ryan's Log</h5>
                         <p class="mb-0">
                             I saw the chair. It was a standard-issue hospital clunker, probably tucked under the desk where no one could see it.
                         </p>
