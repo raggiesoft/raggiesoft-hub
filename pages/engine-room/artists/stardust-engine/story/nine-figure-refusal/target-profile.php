@@ -1,7 +1,7 @@
 <?php
 // pages/engine-room/artists/stardust-engine/story/nine-figure-refusal/target-profile.php
 // The Enemy's Playbook.
-// UPDATED: Connected 'Previous' link to 'The Approach'.
+// UPDATED: Added Cassidy O'Connell (The "Invisible" Board Member).
 
 $pageTitle = "Confidential Brief: Project GOLDEN GOOSE - Omni-Global";
 ?>
@@ -155,7 +155,7 @@ $pageTitle = "Confidential Brief: Project GOLDEN GOOSE - Omni-Global";
         <div class="row">
             <div class="col-lg-12">
                 <h2 class="h5 text-uppercase border-bottom border-danger pb-2 mb-4 fw-bold text-danger">
-                    <i class="fa-solid fa-triangle-exclamation me-2"></i>Target Profile: The Board
+                    <i class="fa-solid fa-triangle-exclamation me-2"></i>Target Profile: The Board (5 Seats)
                 </h2>
                 <div class="table-responsive">
                     <table class="table table-bordered align-middle border-secondary">
@@ -172,7 +172,7 @@ $pageTitle = "Confidential Brief: Project GOLDEN GOOSE - Omni-Global";
                                 <td>CEO / Legal</td>
                                 <td>
                                     <span class="badge bg-danger mb-1">THE OBSTACLE</span><br>
-                                    Public records show zero debt. This implies she is either a genius or hiding insolvency.
+                                    Public records show zero debt. This implies she is either a genius or hiding insolvency. Frost believes she is a "Paper Tiger."
                                 </td>
                             </tr>
                             <tr>
@@ -180,7 +180,7 @@ $pageTitle = "Confidential Brief: Project GOLDEN GOOSE - Omni-Global";
                                 <td>Founder / Creative</td>
                                 <td>
                                     <span class="badge bg-secondary mb-1">THE WILDCARD</span><br>
-                                    Wheelchair user. Likely risk-averse due to medical costs.
+                                    Wheelchair user. Likely risk-averse due to projected medical costs. <strong>Primary Target for Lowball Offer.</strong>
                                 </td>
                             </tr>
                             <tr>
@@ -191,8 +191,19 @@ $pageTitle = "Confidential Brief: Project GOLDEN GOOSE - Omni-Global";
                                     University records (CPI) suggest engineering backgrounds, but they function as roadies. Likely susceptible to a "lump sum" buyout to escape the grind.
                                 </td>
                             </tr>
+                            <tr class="bg-body-tertiary">
+                                <td class="fw-bold text-body-emphasis text-opacity-50">Cassidy O'Connell</td>
+                                <td>Operations / Member</td>
+                                <td>
+                                    <span class="badge bg-secondary bg-opacity-50 text-body-tertiary mb-1">IRRELEVANT</span><br>
+                                    <span class="fst-italic opacity-75">"Just the sister."</span> No significant business footprint. Likely trails the brothers' lead. <strong>Strategy: Ignore.</strong>
+                                </td>
+                            </tr>
                         </tbody>
                     </table>
+                </div>
+                <div class="mt-2 text-end">
+                    <small class="text-danger fst-italic fw-bold">*Note: VP Frost advises focusing negotiations exclusively on male board members.</small>
                 </div>
             </div>
         </div>
