@@ -126,6 +126,50 @@ $pageTitle = "The Autopsy: Holly Takes Control - Evidence Item #02";
                     <p>
                         "Do you know why we're here, Jameson?" Holly asked, opening her laptop.
                     </p>
+
+                    <div class="mb-5">
+                        <h4 class="h5 fw-bold text-danger text-uppercase mb-3">
+                            <i class="fa-solid fa-paintbrush me-2"></i>Point 1: The Art Theft
+                        </h4>
+                        
+                        <p class="text-body-secondary">
+                            Holly didn't start with the numbers. She pointed a manicured finger at the frozen ghost image of <strong>Slide 14</strong>, which was still burning into the retina of everyone in the room. Specifically, she pointed to the bottom right corner of their slide.
+                        </p>
+
+                        <div class="card bg-body-tertiary border-danger mb-3">
+                            <div class="card-body">
+                                <div class="row align-items-center">
+                                    <div class="col-md-2 text-center d-none d-md-block">
+                                        <img src="https://assets.raggiesoft.com/engine-room-records/images/logos/engine-room-records-logo.png" 
+                                             class="img-fluid opacity-75" 
+                                             alt="The Gear and Spark Logo"
+                                             style="filter: grayscale(100%); mix-blend-mode: multiply;">
+                                    </div>
+                                    <div class="col-md-10">
+                                        <p class="mb-2 fw-bold text-body-emphasis">
+                                            "That logo," Holly said, her voice terrifyingly calm. "The Gear and the Spark. Do you know who drew that?"
+                                        </p>
+                                        <p class="mb-2 text-body-secondary fst-italic border-start border-2 ps-3">
+                                            Frost blinked, looking confused. "Marketing pulled it from your website. It's standard practice for a pitch deck."
+                                        </p>
+                                        <div class="alert alert-danger bg-danger bg-opacity-10 border-danger border-opacity-25 text-danger mb-0">
+                                            <p class="mb-0 fw-bold small">
+                                                <i class="fa-solid fa-gavel me-2"></i>VIOLATION DETECTED
+                                            </p>
+                                            <p class="mb-0">
+                                                "Cassidy drew it. Hand-inked in 1992. It is a registered trademark of The O'Connell Family Trust. You do not have a license to display it. Using her own art on a document proposing the mutilation of her autobiography? That is <strong>Willful Infringement</strong>. Statutory damages start at $150,000 per instance."
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <p class="small text-body-secondary fst-italic text-end">
+                            She tapped the laptop hard. "Let's add that to the bill."
+                        </p>
+                    </div>
+
                     
                     <div class="credential-box p-3 my-4 shadow-sm text-body-secondary">
                         <p class="mb-0 fst-italic">
@@ -169,50 +213,6 @@ $pageTitle = "The Autopsy: Holly Takes Control - Evidence Item #02";
                     <p>
                         Holly didn't answer. She didn't even look up from her keyboard. She simply let the panic ripple through the room, a terrifying variable that neither the executive nor his tech support could solve.
                     </p>
-
-                    <div class="mb-5">
-                        <h4 class="h5 fw-bold text-danger text-uppercase mb-3">
-                            <i class="fa-solid fa-paintbrush me-2"></i>Point 1: The Art Theft
-                        </h4>
-                        
-                        <p class="text-body-secondary">
-                            Holly didn't start with the numbers. She pointed a manicured finger at the frozen ghost image of <strong>Slide 14</strong>, which was still burning into the retina of everyone in the room. Specifically, she pointed to the bottom right corner of their slide.
-                        </p>
-
-                        <div class="card bg-body-tertiary border-danger mb-3">
-                            <div class="card-body">
-                                <div class="row align-items-center">
-                                    <div class="col-md-2 text-center d-none d-md-block">
-                                        <img src="https://assets.raggiesoft.com/engine-room-records/images/logos/engine-room-records-logo.png" 
-                                             class="img-fluid opacity-75" 
-                                             alt="The Gear and Spark Logo"
-                                             style="filter: grayscale(100%); mix-blend-mode: multiply;">
-                                    </div>
-                                    <div class="col-md-10">
-                                        <p class="mb-2 fw-bold text-body-emphasis">
-                                            "That logo," Holly said, her voice terrifyingly calm. "The Gear and the Spark. Do you know who drew that?"
-                                        </p>
-                                        <p class="mb-2 text-body-secondary fst-italic border-start border-2 ps-3">
-                                            Frost blinked, looking confused. "Marketing pulled it from your website. It's standard practice for a pitch deck."
-                                        </p>
-                                        <div class="alert alert-danger bg-danger bg-opacity-10 border-danger border-opacity-25 text-danger mb-0">
-                                            <p class="mb-0 fw-bold small">
-                                                <i class="fa-solid fa-gavel me-2"></i>VIOLATION DETECTED
-                                            </p>
-                                            <p class="mb-0">
-                                                "Cassidy drew it. Hand-inked in 1992. It is a registered trademark of The O'Connell Family Trust. You do not have a license to display it. Using her own art on a document proposing the mutilation of her autobiography? That is <strong>Willful Infringement</strong>. Statutory damages start at $150,000 per instance."
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <p class="small text-body-secondary fst-italic text-end">
-                            She tapped the tablet hard. "Let's add that to the bill."
-                        </p>
-                    </div>
-
 
                     <p>
                         "It's not your offer," she said calmly, watching the wireless handshake complete. "I deleted your offer."
