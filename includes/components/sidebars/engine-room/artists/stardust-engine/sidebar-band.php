@@ -44,23 +44,28 @@
     </a>
   </li>
   <li class="nav-item">
-  <a class="nav-link link-secondary" href="/engine-room/artists/stardust-engine/lore/ad-astra">
+  <a class="nav-link link-secondary" href="/engine-room/artists/stardust-engine/story/ad-astra">
     <i class="fa-duotone fa-rocket-launch me-2"></i>Ad Astra
   </a>
   </li>
   <li class="nav-item">
-  <a class="nav-link link-secondary" href="/engine-room/artists/stardust-engine/lore/cpi">
+  <a class="nav-link link-secondary" href="/engine-room/artists/stardust-engine/story/cpi">
     <i class="fa-duotone fa-school me-2"></i>CPI & The Forgers
   </a>
   </li>
   <li class="nav-item">
-    <a class="nav-link link-secondary" href="/engine-room/artists/stardust-engine/lore/crash-of-90">
+    <a class="nav-link link-secondary" href="/engine-room/artists/stardust-engine/story/crash-of-90">
       <i class="fa-duotone fa-car-crash me-2"></i>The Crash of '90
     </a> 
   </li>
   <li class="nav-item">
     <a class="nav-link link-secondary" href="/engine-room/history/friction">
       <i class="fa-duotone fa-burst me-2"></i>The Friction Scandal
+    </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link link-secondary" href="/engine-room/artists/stardust-engine/story/nine-figure-refusal">
+      <i class="fa-duotone fa-handshake-slash me-2"></i>The Nine-Figure Refusal
     </a>
   </li>
 </ul>
