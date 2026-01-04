@@ -14,9 +14,21 @@
 
             <div class="col-md-4 text-center">
                 <ul class="list-unstyled mb-0" style="font-family: 'Courier New', monospace;">
-                    <li class="mb-2"><a href="/engine-room/artists" class="text-white text-decoration-none hover-underline">> ROSTER</a></li>
-                    <li class="mb-2"><a href="/engine-room/releases" class="text-white text-decoration-none hover-underline">> RELEASES</a></li>
-                    <li class="mb-2"><a href="/engine-room/demos" class="text-white text-decoration-none hover-underline">> SUBMIT DEMO</a></li>
+                    <li class="mb-2">
+                        <a href="/engine-room/artists" class="text-white text-decoration-none hover-underline">
+                            > ROSTER
+                        </a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="/engine-room/history" class="text-white text-decoration-none hover-underline">
+                            > HISTORY
+                        </a>
+                    </li>
+                    <li class="mb-0">
+                        <a href="/engine-room/about" class="text-white text-decoration-none hover-underline">
+                            > THE FORTRESS
+                        </a>
+                    </li>
                 </ul>
             </div>
 
