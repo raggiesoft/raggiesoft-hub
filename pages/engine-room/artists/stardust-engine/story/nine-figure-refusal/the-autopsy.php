@@ -160,11 +160,15 @@ $pageTitle = "The Autopsy: Holly Takes Control - Evidence Item #02";
                         </div>
                     </div>
                     
-                    <div class="credential-box p-3 my-4 shadow-sm text-body-secondary">
+                    <div class="credential-box p-3 my-4 shadow-sm text-body-secondary bg-body-tertiary border-start border-4 border-primary">
                         <p class="mb-0 fst-italic">
-                            Holly didn't ask for a cable. She typed a quick sequence, authenticating to the building's Tier 1 secure network: <strong>Pacific Rim Properties</strong>. 
+                            Holly didn't ask for a cable. She opened her network settings and selected <strong>"Join Other Network..."</strong>
                             <br><br>
-                            She hit <code>CTRL+K</code> to open the <strong>Quantum Cast</strong> menu. The massive 85-inch monitor on the wall—hardware leased from Pacific Rim—recognized the command immediately. Following its hard-coded protocols, the device prioritized the Landlord signal over the Tenant signal, dumping Frost's connection and instantly mirroring her screen.
+                            The IT Director, watching from the corner, frowned. There were no other networks. But Holly's fingers flew across the keys, manually typing a hidden SSID that didn't broadcast its existence: <code>PRP_MGT_VLAN_01</code>.
+                            <br><br>
+                            She hit <code>ENTER</code>. Connected.
+                            <br><br>
+                            She hit <code>CTRL+K</code> to open the <strong>Quantum Cast</strong> menu. The massive 85-inch monitor on the wall—hardware leased from Pacific Rim and sitting on that same hidden management VLAN—recognized the command immediately. Following its hard-coded protocols, the device prioritized the Landlord signal over the Tenant signal, dumping Frost's HDMI connection and instantly mirroring her screen.
                         </p>
                     </div>
 
