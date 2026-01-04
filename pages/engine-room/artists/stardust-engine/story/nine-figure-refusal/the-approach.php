@@ -365,38 +365,99 @@ $pageTitle = "The Approach Vector - Evidence Item #00";
 
             <div class="card border-danger shadow-lg mb-5" style="background-color: #050505;">
                 <div class="card-body p-5">
-                    <span class="timestamp text-danger">Sep 14, 2018 // 09:35 AM PST // The Lion's Den</span>
-                    <h5 class="text-danger fw-bold text-uppercase mb-4">Reception</h5>
+                    
+                    <h3 class="h4 fw-bold text-uppercase mb-4 text-secondary">The Lobby</h3>
+                    
+                    <p class="lead">
+                        The elevator doors opened onto the 40th floor, revealing a lobby that smelled of ozone and intimidation. The carpet was too thick. The lighting was too low. The silence was engineered.
+                    </p>
+                    <p>
+                        Holly O'Connell stepped out first, her heels sinking slightly into the plush wool. She adjusted her blazer, checking the alignment of her enamel pin. Behind her, the twins—Evan and Tyler—flanked the door like Secret Service agents, minus the earpieces and plus twenty years of roadie muscle.
+                    </p>
+                    <p>
+                        Cassidy stayed close to the wall, her eyes scanning the exits.
+                    </p>
+                    <p>
+                        Ryan rolled out last. His custom titanium rig hummed softly on the marble threshold before hitting the carpet. He hated thick carpet. It was like pushing through mud. He gave his rims a hard shove, propelling himself forward with a grunt of irritation.
+                    </p>
 
-                    <p class="text-white-50">
-                        The Penthouse lobby smelled like money. The receptionist looked at their polo shirts and Ryan’s wheelchair with undisguised confusion.
+                    <hr class="my-5 opacity-25">
+
+                    <h4 class="h5 fw-bold text-uppercase mb-3">The Reception Desk</h4>
+                    
+                    <p>
+                        The reception desk was a massive slab of polished obsidian, designed to look like it was floating. It was comically high—clearly built to make the person behind it look down on you.
                     </p>
-                    <p class="text-white-50">
-                        "Can I... help you?" she asked, hand hovering over the silent alarm.
+                    <p>
+                        "Check in," Holly whispered. "I'll handle the coats."
                     </p>
-                    <p class="text-white-50">
-                        "We have a 9:30 with Jameson Frost," Holly said. "The O'Connell Family."
+                    <p>
+                        Ryan rolled up to the desk. Because of the height, he was staring directly at the wood grain of the paneling. He couldn't see the person behind it.
                     </p>
-                    <p class="text-white-50">
-                        The receptionist checked her screen and frowned. "I have a 'Stardust Engine' listed? And a 'Mr. & Mrs. O'Connell'?"
+                    <p>
+                        "Excuse me," Ryan said, pitching his voice to cut through the ambient drone of the AC.
                     </p>
-                    <p class="text-white-50">
-                        Cassidy flinched behind Ryan. Ryan tapped her hand. <em>Stable platform.</em>
+                    <p>
+                        A head popped up.
                     </p>
-                    <p class="text-white-50">
-                        Holly looked at the receptionist. For a split second, the "Shark" almost surfaced. She wanted to correct the record. She wanted to snap that they were the landlords.
+                    <p>
+                        She was young. Painfully young. Maybe nineteen. She had dark hair pulled back into a severe bun that looked like it was giving her a headache. She was wearing a crisp white blouse that looked stiff and uncomfortable.
                     </p>
-                    <p class="text-white-50">
-                        But she stopped.
+                    <p>
+                        "Oh!" she squeaked, her eyes widening as she looked down at him. "I'm sorry, I didn't... I didn't see you down there."
                     </p>
-                    <p class="text-white-50">
-                        If Jameson Frost thought they were a desperate, scrappy garage band looking for a savior, she would let him think that. It would make the eviction notice in her briefcase hurt so much more.
+                    <p>
+                        She scrambled to stand up. Or, she tried to.
                     </p>
-                    <p class="text-white fw-bold mt-4">
-                        "That's us," Holly said, forcing a polite, diffident smile—the smile of a girl hoping for a big break. She adjusted her grip on the briefcase, feeling the weight of the linen paper inside.
+                    <p>
+                        Ryan watched the mechanics of her movement. He saw her hands grip the edge of the desk, knuckles white. He saw the way her shoulders hunched, taking the weight off her lower body. He heard the distinct <em>clack-scrape</em> of a footplate shifting under the desk.
                     </p>
-                    <p class="text-white fw-bold">
-                        "Please tell Mr. Frost we're ready."
+                    <p>
+                        She wasn't standing up. She was repositioning.
+                    </p>
+
+                    <div class="ryan-observation">
+                        <p class="mb-2"><strong>Ryan's Log:</strong></p>
+                        <p class="mb-0">
+                            I saw the chair. It was a standard-issue hospital clunker, probably tucked under the desk where no one could see it.
+                        </p>
+                        <p class="mb-0 mt-2">
+                            But it wasn't the chair that pissed me off. It was the shoes.
+                        </p>
+                        <p class="mb-0 mt-2">
+                            She was wearing black patent leather pumps. Three-inch heels. Pointy toes. I saw them when she shifted—her feet were strapped onto the footplates, the heels hooked precariously over the back edge to keep them from slipping. Her ankles were swollen.
+                        </p>
+                        <p class="mb-0 mt-2">
+                            She's paralyzed. Maybe incomplete, maybe ambulatory, but she's a wheelie. And she's wearing <em>heels</em>.
+                        </p>
+                        <p class="mt-2 text-danger fw-bold">
+                            She's hiding it. She thinks she has to.
+                        </p>
+                    </div>
+
+                    <p>
+                        "I'm Jessica," she said, her voice trembling. She smoothed the front of her blouse, trying to look professional, trying to look like she wasn't currently in agony. "Welcome to Omni-Global. Do you... do you have an appointment?"
+                    </p>
+                    <p>
+                        Ryan didn't answer immediately. He just looked at her. He looked at the high desk that cut her off at the neck. He looked at the thick carpet that would make it impossible for her to push that heavy hospital chair to the bathroom without help.
+                    </p>
+                    <p>
+                        He looked at the fear in her eyes. It was the fear of an intern who hadn't been paid in three months and was terrified that her disability would be the reason she was let go.
+                    </p>
+                    <p>
+                        "Yeah," Ryan said, his voice softer than usual. "We're here to see Jameson Frost."
+                    </p>
+                    <p>
+                        "Mr. Frost is in the boardroom," Jessica said, typing frantically. "I'll... I'll let him know you're here."
+                    </p>
+                    <p>
+                        Ryan turned his chair around to face his family. Holly was watching him. She had seen him clock the receptionist. She raised an eyebrow.
+                    </p>
+                    <p>
+                        <em>We're taking her,</em> Ryan signaled with a subtle nod.
+                    </p>
+                    <p>
+                        Holly nodded back. <em>We're taking her.</em>
                     </p>
 
                 </div>
