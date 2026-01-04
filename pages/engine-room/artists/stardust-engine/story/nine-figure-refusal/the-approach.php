@@ -117,29 +117,6 @@ $pageTitle = "The Approach Vector - Evidence Item #00";
                     <p>
                         "Not until we get the quarters," Ryan replied.
                     </p>
-
-                    <hr class="border-secondary opacity-25 my-5">
-
-                    <h5 class="text-primary fw-bold text-uppercase mb-4">Protocol: The Tarmac Transfer</h5>
-                    
-                    <p>
-                        Valley Regional (BUR) was their airport of choice for one specific reason: <strong>Stairs, not Jetways.</strong>
-                    </p>
-                    <p>
-                        Gateway Airlines ground crew brought the aisle chair to the aircraft door, but Ryan waved them off. He saw his custom <strong>Carbon-Fiber Veloce</strong> wheelchair waiting at the bottom of the air-stairs.
-                    </p>
-                    <p>
-                        "Evan," Ryan said.
-                    </p>
-                    <p>
-                        Evan didn't need instructions. He stepped up, scooped his brother into a fireman's carry with effortless practice, and carried him down the stairs to the tarmac. Tyler followed with the cushion.
-                    </p>
-                    <p>
-                        Ryan transferred into his chair on the hot pavement. He clicked the seat lock. He pushed off the asphalt, spinning the chair around.
-                    </p>
-                    <p>
-                        "Solid ground," Ryan said. "Let's go find our ride."
-                    </p>
                 </div>
             </div>
 
