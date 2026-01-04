@@ -1,7 +1,7 @@
 <?php
 // pages/engine-room/artists/stardust-engine/band/holly-oconnell.php
 // The "Anchor" and the "Architect" of the Fortune.
-// UPDATED: Added Financial Credentials & Lottery Narrative
+// UPDATED: Added the "Fiduciary Armor" Timeline from Archival Data.
 
 $pageTitle = "Holly O'Connell - The Stardust Engine";
 ?>
@@ -50,41 +50,49 @@ $pageTitle = "Holly O'Connell - The Stardust Engine";
                 <div class="card-body p-4">
                     <h4 class="text-success fw-bold">The Financial Architect</h4>
                     <p class="text-white-75">
-                        When Cassidy won the <strong>$2.04 Billion</strong> lottery jackpot in 1996, Holly understood the danger immediately. "Money destroys families," she famously said. To prevent that, she didn't just hire an accountant—she became one.
+                        When Cassidy won the <strong>$2.04 Billion</strong> lottery jackpot in 1996, Holly understood the danger immediately. "Money destroys families," she famously said. To prevent that, she spent the next two decades armoring herself with every financial certification available.
                     </p>
                     <p class="text-white-75">
-                        Holly returned to academia, earning a <strong>Master of Science in Finance</strong>, followed by her <strong>CFA (Chartered Financial Analyst)</strong> charter and <strong>CTFA (Certified Trust and Fiduciary Advisor)</strong> certification.
-                    </p>
-                    
-                    <hr class="border-success opacity-50 my-3">
-                    
-                    <h5 class="text-white small text-uppercase fw-bold mb-3">The Credentials</h5>
-                    <div class="row g-3">
-                        <div class="col-md-6">
-                            <div class="d-flex align-items-center mb-2">
-                                <i class="fa-solid fa-check-circle text-success me-2"></i>
-                                <span class="text-white-75 small">Juris Doctor (J.D.)</span>
-                            </div>
-                            <div class="d-flex align-items-center">
-                                <i class="fa-solid fa-check-circle text-success me-2"></i>
-                                <span class="text-white-75 small">Master of Science, Finance</span>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="d-flex align-items-center mb-2">
-                                <i class="fa-solid fa-check-circle text-success me-2"></i>
-                                <span class="text-white-75 small">Chartered Financial Analyst (CFA)</span>
-                            </div>
-                            <div class="d-flex align-items-center">
-                                <i class="fa-solid fa-check-circle text-success me-2"></i>
-                                <span class="text-white-75 small">Cert. Trust & Fiduciary Advisor (CTFA)</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <p class="text-white-75 mt-4 mb-0">
                         Using this knowledge, she established the <strong>Forger Nation Trust</strong> (a Family Office). This legal structure renders the individual band members "penniless" on paper—protecting them from lawsuits and predators—while the Trust manages their lifestyle, medical care, and the Engine Room empire.
                     </p>
+                    
+                    <hr class="border-success opacity-50 my-4">
+                    
+                    <h5 class="text-white fw-bold mb-3"><i class="fa-solid fa-shield-check me-2 text-success"></i>Fiduciary Armor (The Timeline)</h5>
+                    <div class="d-flex flex-wrap gap-2">
+                        <span class="badge rounded-pill bg-black border border-secondary text-white-75 p-2" title="The Foundation">
+                            <i class="fa-solid fa-stamp me-1 text-secondary"></i>Notary Public ('94)
+                        </span>
+                        
+                        <span class="badge rounded-pill bg-black border border-secondary text-white-75 p-2" title="Tax Defense">
+                            <i class="fa-solid fa-file-invoice-dollar me-1 text-secondary"></i>Enrolled Agent ('96)
+                        </span>
+                        
+                        <span class="badge rounded-pill bg-black border border-secondary text-white-75 p-2" title="Structuring the Fortune">
+                            <i class="fa-solid fa-scale-balanced me-1 text-secondary"></i>LL.M. Taxation ('99)
+                        </span>
+
+                        <span class="badge rounded-pill bg-black border border-success text-success-emphasis p-2" title="Architect of the Trust">
+                            <i class="fa-solid fa-landmark me-1"></i>CTFA (Trusts) ('03)
+                        </span>
+
+                        <span class="badge rounded-pill bg-black border border-success text-success-emphasis p-2" title="Managing the Surplus">
+                            <i class="fa-solid fa-briefcase me-1"></i>CFA Charterholder ('06)
+                        </span>
+
+                        <span class="badge rounded-pill bg-black border border-primary text-info p-2" title="Hedging against Recession">
+                            <i class="fa-solid fa-chart-line me-1"></i>M.S. Quant Finance ('09)
+                        </span>
+
+                        <span class="badge rounded-pill bg-black border border-danger text-danger-emphasis p-2" title="Auditing Royalties">
+                            <i class="fa-solid fa-magnifying-glass-dollar me-1"></i>Cr.FA (Forensic) ('14)
+                        </span>
+
+                        <span class="badge rounded-pill bg-black border border-danger text-danger-emphasis p-2" title="The Bankruptcy Expert">
+                            <i class="fa-solid fa-tombstone me-1"></i>CIRA (Insolvency) ('16)
+                        </span>
+                    </div>
+
                 </div>
             </div>
 
@@ -99,7 +107,7 @@ $pageTitle = "Holly O'Connell - The Stardust Engine";
                     'variant' => 'neutral',
                     'description' => "<strong>Role:</strong> Manager, CEO, CFO<br>
                                       <strong>Age (in 1987):</strong> 18<br>
-                                      <strong>Education:</strong> J.D., CFA, CTFA, M.S.<br>
+                                      <strong>Top Credential:</strong> CIRA (Insolvency)<br>
                                       <strong>Status:</strong> The Architect (Unbroken)",
                     'buttonProps' => [
                         'text' => 'Back to The Band', 
