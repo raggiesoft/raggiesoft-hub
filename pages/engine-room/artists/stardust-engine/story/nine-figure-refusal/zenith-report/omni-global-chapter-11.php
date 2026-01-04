@@ -1,168 +1,157 @@
 <?php
 // pages/engine-room/artists/stardust-engine/story/nine-figure-refusal/zenith-report/omni-global-chapter-11.php
-// The Fallout: Omni-Global collapses after realizing they tried to buyout a Lottery Winner.
-// Context: "Market Alert: Chapter 11"
-// UPDATED: Corrected Stock Symbol to OMGCQ (OTC/Pink Sheets).
+// THE FALLOUT: The Public News Report
+// Context: September 17, 2018. 48 Hours after "The Autopsy".
+// Theme: "The Zenith Report" (Trade Magazine Style)
 
-$pageTitle = "The Zenith Report: Omni-Global Files Chapter 11";
+$pageTitle = "IMPLOSION: Omni-Global Files Chapter 11 - The Zenith Report";
 
 // INJECT THE SHARED STYLES HERE
 include ROOT_PATH . '/includes/components/styles/zenith-theme.php';
 ?>
 
+<div class="zenith-body min-vh-100 py-5">
+    <div class="container bg-body border shadow-sm p-4 p-md-5" style="max-width: 900px;">
+        
+        <div class="zenith-header text-center">
+            <div class="zenith-logo">The Zenith Report</div>
+            <div class="small fw-bold text-uppercase letter-spacing-2 mt-1">Global Business & Entertainment News</div>
+        </div>
 
-
-<div class="container py-5">
-    
-    <div class="row justify-content-center mb-5">
-        <div class="col-lg-11">
-            <div class="card shadow-lg zenith-paper">
-                
-                <div class="card-header zenith-header py-3">
-                    <div class="d-flex justify-content-between align-items-end flex-wrap gap-2">
-                        <h2 class="display-6 fw-bold mb-0 text-dark" style="font-family: 'Times New Roman', serif; letter-spacing: -1px;">The Zenith Report</h2>
-                        <div class="text-end">
-                            <span class="small font-monospace text-muted d-block">September 15, 2018 &bull; Vol. 88</span>
-                            <span class="small font-monospace text-danger fw-bold text-uppercase">Market Alert</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card-body p-4 p-md-5 text-dark">
-                    <div class="row">
-                        
-                        <div class="col-md-8 border-end border-secondary-subtle pe-md-5">
-                            
-                            <h5 class="text-uppercase fw-bold text-danger letter-spacing-2 small mb-2">Breaking News</h5>
-                            
-                            <h3 class="display-5 fw-bold mb-3 text-dark" style="font-family: 'Georgia', serif;">
-                                Omni-Global Files Chapter 11 Bankruptcy
-                            </h3>
-                            
-                            <h4 class="h5 fst-italic text-muted mb-4" style="font-family: 'Georgia', serif; line-height: 1.6;">
-                                Following a disastrous morning meeting with indie giant Engine Room Records, Chairman Arthur Vane filed for "Immediate Restructuring" at 1:00 PM yesterday. VP Jameson Frost ousted.
-                            </h4>
-
-                            <div class="d-flex align-items-center mb-4 text-muted small font-monospace">
-                                <span class="fw-bold text-dark me-2">By Sarah West</span> | <span class="ms-2">Financial Desk</span>
-                            </div>
-                            
-                            <div class="zenith-body">
-                                <p>
-                                    <span class="fw-bold text-uppercase">Century City —</span> The house of cards has collapsed. Just three hours after attempting a $150M leveraged buyout of <strong>Engine Room Records</strong>, <strong>Omni-Global Media Corp. (OTC: OMGCQ)</strong> has filed for Chapter 11 bankruptcy protection.
-                                </p>
-                                <p>
-                                    Internal leaks confirm the catalyst was a catastrophic pitch meeting (10:00 AM yesterday) where VP <strong>Jameson Frost</strong> attempted to bully the O'Connell family into a sale.
-                                </p>
-                                <p>
-                                    "Frost didn't do his homework," said one analyst. "He tried to buy a debt-free company with a maxed-out credit card. Holly O'Connell called his bluff, exposed their liquidity crisis in the room, and walked out. The stock tanked 14% before the trading halt."
-                                </p>
-                                <p>
-                                    Sources say the Chapter 11 filing was rushed through during the lunch hour in a desperate attempt to freeze the company's liabilities—specifically, the debts exposed by O'Connell's forensic audit.
-                                </p>
-                            </div>
-
-                            <hr class="my-5 border-secondary border-opacity-50">
-
-                            <div class="badge bg-dark text-white text-uppercase mb-2">Exclusive Update</div>
-                            <h3 class="h2 fw-bold mb-3 text-dark" style="font-family: 'Georgia', serif;">
-                                Landlord Serves "Nuclear" Notice
-                            </h3>
-                            <div class="zenith-body">
-                                <p>
-                                    As if bankruptcy wasn't enough, court records confirm that <strong>Pacific Rim Properties, LLC</strong>—the landlord for Omni-Global's Century City headquarters—served a <strong>"3-Day Notice to Pay Rent or Quit"</strong> mere minutes after the failed meeting.
-                                </p>
-                                <p>
-                                    The twist? State records confirm Pacific Rim Properties is a wholly owned subsidiary of the <strong>O'Connell Family Trust</strong>. Jameson Frost wasn't just negotiating with a target; he was negotiating with his own landlord.
-                                </p>
-                                <p>
-                                    The notice cites $450,000 in unpaid rent. While the Chapter 11 filing typically triggers an "Automatic Stay" on collections, legal experts believe the O'Connells will aggressively challenge it.
-                                </p>
-                                <p>
-                                    Despite the threat, Omni-Global executives appear unconcerned.
-                                </p>
-                                <blockquote class="blockquote border-start border-4 border-danger ps-3 my-3 fst-italic bg-body-secondary p-2">
-                                    "It's a negotiation tactic. She's bluffing. Nobody evicts an anchor tenant over a few missed payments. We'll settle this in post-bankruptcy restructuring."
-                                    <footer class="blockquote-footer mt-1">Senior Omni-Global Executive (Anonymous)</footer>
-                                </blockquote>
-                                <p>
-                                    Holly O'Connell declined to comment, but sources close to the Engine Room suggest she has already prepared the <strong>Unlawful Detainer</strong> lawsuit to be filed the moment the 72-hour notice expires.
-                                </p>
-                            </div>
-
-                        </div>
-                        
-                        <div class="col-md-4 ps-md-4 d-none d-md-block">
-                            
-                            <h6 class="zenith-sidebar-header text-dark">Market Watch</h6>
-                            <div class="mb-5">
-                                <div class="d-flex justify-content-between align-items-center mb-1">
-                                    <span class="fw-bold text-dark">OMGCQ (Omni)</span>
-                                    <span class="text-danger fw-bold"><i class="fa-solid fa-caret-down"></i> -14.2%</span>
-                                </div>
-                                <div class="progress" style="height: 4px;">
-                                    <div class="progress-bar bg-danger" role="progressbar" style="width: 100%"></div>
-                                </div>
-                                <small class="text-muted d-block mt-1 text-uppercase fw-bold">Trading Halted</small>
-                            </div>
-
-                            <div class="card border-2 border-success bg-transparent mb-4">
-                                <div class="card-header bg-success text-white fw-bold text-uppercase small text-center">
-                                    <i class="fa-duotone fa-money-bill-wave me-2"></i>Fact Check
-                                </div>
-                                <div class="card-body p-3 text-center">
-                                    <h6 class="fw-bold text-dark mb-2">The "Poor" Family</h6>
-                                    <p class="small text-muted mb-3 lh-sm text-start">
-                                        Omni-Global profiled Cassidy O'Connell as "economically vulnerable." They missed one public record.
-                                    </p>
-                                    
-                                    <div class="bg-body-secondary p-2 rounded border border-secondary-subtle mb-2">
-                                        <div class="small fw-bold text-uppercase text-secondary">Lottery Commission Archive</div>
-                                        <div class="display-6 fw-bold text-success my-1">$2.04B</div>
-                                        <div class="small text-muted">"American Dream" Jackpot</div>
-                                    </div>
-
-                                    <p class="small text-muted text-start fst-italic mb-0">
-                                        <strong>Winner:</strong> Cassidy O'Connell (Sole Ticket)<br>
-                                        <strong>Status:</strong> Claimed. Tax Paid. Invested.
-                                    </p>
-                                </div>
-                            </div>
-
-                            <div class="alert alert-light border-dark small fst-italic">
-                                "They didn't realize they were trying to buy a hobby business from a billionaire." 
-                                <br><span class="fw-bold text-dark">— Anonymous Shareholder</span>
-                            </div>
-
-                        </div>
-
-                    </div>
-                </div>
-                
-                <div class="card-footer bg-light border-top border-dark text-center py-2">
-                    <small class="text-dark font-monospace">Copyright &copy; 2018 The Zenith Report. All Rights Reserved.</small>
-                </div>
-
+        <h1 class="zenith-headline">IMPLOSION: Omni-Global Files Chapter 11; CEO Ousted Amid Fraud & Civil Rights Probe</h1>
+        
+        <div class="zenith-meta d-flex justify-content-between align-items-center">
+            <div>
+                <strong>By Sarah Jenkins</strong> | Senior Financial Correspondent
+            </div>
+            <div>
+                Sept 17, 2018 | 08:45 AM EST
             </div>
         </div>
+
+        <div class="mb-4 position-relative">
+            <img src="https://assets.raggiesoft.com/engine-room-records/images/omni-global/chapter-11-news.jpg" 
+                 class="img-fluid w-100 grayscale-50" 
+                 alt="News photo of Jameson Frost hiding his face as he exits 2000 Avenue of the Stars, flanked by security. A 'For Lease' sign is visible in the background."
+                 style="filter: grayscale(100%);">
+            <div class="p-2 bg-body-secondary small fst-italic border-bottom border-dark">
+                ABOVE: VP Jameson Frost escorted from Omni-Global headquarters this morning. The building's landlord, Pacific Rim Properties, reportedly initiated a lockout at midnight.
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-8">
+                <p>
+                    <span class="drop-cap">I</span>t took less than 48 hours for the titan of Century City to fall.
+                </p>
+                <p>
+                    <strong>Omni-Global Media Corp. (OTC: OMGCQ)</strong>, once valued at $4 billion, filed for Chapter 11 bankruptcy protection this morning in Delaware Chancery Court. The filing comes amid a catastrophic 94% drop in stock value following a whistleblower report alleging massive accounting fraud.
+                </p>
+                <p>
+                    Trading of OGM was halted at 9:30 AM. When it resumed on the Pink Sheets under the symbol <strong>OMGCQ</strong>, it opened at <strong>$0.12</strong>, down from Friday's close of <strong>$42.50</strong>.
+                </p>
+
+                <h4 class="h5 fw-bold mt-4 mb-3">The "Virginia" Catalyst</h4>
+                <p>
+                    Sources close to the situation confirm that the collapse was triggered by a failed hostile takeover attempt of a private entity. On Friday, Omni-Global attempted to acquire <strong>Engine Room Records, LLC</strong>, a boutique label based in Blacksburg, Virginia, for $150 million.
+                </p>
+                <p>
+                    The deal allegedly collapsed when the target company's due diligence revealed that Omni-Global intended to fund the purchase using a high-risk Leveraged Buyout (LBO), borrowing against the assets of the company they were trying to buy.
+                </p>
+                <p>
+                    "They picked the wrong target," said one analyst who wished to remain anonymous. "Engine Room Records isn't just a label; it's a fortress. The CEO, Holly O'Connell, reportedly counter-filed with the SEC before the meeting even ended."
+                </p>
+
+                <div class="p-3 bg-body-tertiary border-start border-4 border-danger my-4 fst-italic">
+                    "We have uncovered systemic irregularities in the 'Goodwill' valuation of OGM Capital Partners IV. The company is insolvent."
+                    <br>
+                    <span class="small fw-bold text-danger mt-2 d-block">&mdash; Excerpt from SEC Whistleblower Complaint #2018-994</span>
+                </div>
+
+                <h4 class="h5 fw-bold mt-4 mb-3">The Landlord Lockout</h4>
+                <p>
+                    Adding to the chaos, employees arriving at Omni-Global's headquarters at <strong>2000 Avenue of the Stars</strong> this morning were barred from entering.
+                </p>
+                <p>
+                    <strong>Pacific Rim Properties, LLC</strong>, the building's management firm, posted a "Notice of Default" on the glass doors of the 38th, 39th, and 40th floors.
+                </p>
+                <p>
+                    In a twist of irony that has captivated Wall Street, records show that Pacific Rim Properties is a wholly owned subsidiary of the <strong>O'Connell Family Trust</strong>—the same entity Omni-Global tried to hostile-takeover on Friday.
+                </p>
+                <p>
+                    The notice cites <strong>$450,000 in unpaid rent</strong> (July, August, September). Despite the threat, Omni-Global executives appear unconcerned.
+                </p>
+
+                <blockquote class="blockquote border-start border-4 border-dark ps-3 my-3 fst-italic bg-light p-3">
+                    "It's a negotiation tactic. She's bluffing. Nobody evicts an anchor tenant over a few missed payments. We'll settle this in post-bankruptcy restructuring."
+                    <footer class="blockquote-footer mt-1">Senior Omni-Global Executive (Anonymous)</footer>
+                </blockquote>
+
+                <p>
+                    However, sources close to the O'Connell family dispute this characterization.
+                </p>
+                <p>
+                    "They think this is about the rent," the source said. "It's not. The eviction notice was served exactly five minutes after VP Jameson Frost insulted the lead singer, triggering a medical emergency. Holly O'Connell isn't looking for a settlement. She's looking for a vacate date. The three months of back rent just gave her the legal ammunition to pull the trigger."
+                </p>
+
+                <h4 class="h5 fw-bold mt-4 mb-3">The Civil Rights Investigation</h4>
+                <p>
+                    In a shocking development, the <strong>Department of Justice</strong> has opened a preliminary inquiry into Omni-Global's acquisition practices under the <strong>Americans with Disabilities Act (ADA)</strong>.
+                </p>
+                <p>
+                    Leaked internal emails, referred to as "The Bus Memo," allegedly show VP Jameson Frost instructing staff to "lowball" the O'Connell family specifically because he observed one of the owners using a wheelchair and taking public transit.
+                </p>
+                <p>
+                    "Targeting a company for a hostile takeover based on the perceived vulnerability of a disabled owner isn't just ruthless," said Civil Rights attorney Marcus Thorne. "It is predatory discrimination. If proven, Omni-Global executives could face personal liability beyond the corporate bankruptcy."
+                </p>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="card border-danger shadow-sm mb-4">
+                    <div class="card-header bg-danger text-white fw-bold text-uppercase">
+                        <i class="fa-solid fa-chart-line-down me-2"></i>Market Watch
+                    </div>
+                    <div class="card-body font-monospace text-center">
+                        <h6 class="text-muted">OMGCQ (Pink Sheets)</h6>
+                        <div class="display-4 fw-bold stock-ticker-down text-danger">
+                            $0.12
+                        </div>
+                        <div class="text-danger fw-bold mb-3">
+                            <i class="fa-solid fa-arrow-down"></i> -99.2% (Today)
+                        </div>
+                        <p class="small text-muted border-top pt-2">
+                            <span class="badge bg-warning text-dark">BANKRUPTCY PROCEEDING</span>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card bg-light border-0 mb-4">
+                    <div class="card-body">
+                        <h6 class="fw-bold text-uppercase border-bottom border-dark pb-2 mb-3">Related Topics</h6>
+                        <ul class="list-unstyled small">
+                            <li class="mb-2"><a href="/engine-room/artists/stardust-engine/story/nine-figure-refusal/zenith-report/stardust-bus-ride" class="text-decoration-none text-dark fw-bold">>> The $350 Million Bus Ride</a></li>
+                            <li class="mb-2"><a href="#" class="text-decoration-none text-dark fw-bold">>> Leveraged Buyouts (Explained)</a></li>
+                            <li class="mb-2"><a href="#" class="text-decoration-none text-dark fw-bold">>> Section 1161 Evictions</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="alert alert-light border-start border-4 border-info small text-muted">
+                    <i class="fa-duotone fa-scale-balanced text-info me-2"></i>
+                    <strong>Legal Definition:</strong> The "Q" added to a stock ticker symbol (e.g., OMGCQ) indicates the company has filed for bankruptcy proceedings.
+                </div>
+            </div>
+        </div>
+
     </div>
 
-    <div class="row justify-content-center mt-5 pt-4 border-top border-secondary border-opacity-25 align-items-center">
-        <div class="col-4">
-            <a href="/engine-room/artists/stardust-engine/story/nine-figure-refusal/the-extraction" class="btn btn-outline-secondary rounded-pill">
-                <i class="fa-solid fa-arrow-left me-2"></i>Previous
-            </a>
-        </div>
-        <div class="col-4 text-center">
-            <a href="/engine-room/artists/stardust-engine/story/nine-figure-refusal" class="btn btn-outline-primary rounded-pill">
-                <i class="fa-duotone fa-list-tree me-2"></i>Overview
-            </a>
-        </div>
-        <div class="col-4 text-end">
-            <a href="/engine-room/artists/stardust-engine/story/nine-figure-refusal/liquidation-auction" class="btn btn-primary rounded-pill shadow-sm">
-                Next: The Liquidation <i class="fa-solid fa-arrow-right ms-2"></i>
-            </a>
-        </div>
-    </div>
+    <?php
+        $nav = [
+            'prev' => ['url' => '/engine-room/artists/stardust-engine/story/nine-figure-refusal/the-extraction', 'label' => 'The Extraction'],
+            'overview' => ['url' => '/engine-room/artists/stardust-engine/story/nine-figure-refusal', 'label' => 'Overview'],
+            'next' => ['url' => '/engine-room/artists/stardust-engine/story/nine-figure-refusal/liquidation-auction', 'label' => 'The Liquidation']
+        ];
+        include ROOT_PATH . '/includes/components/navigation/narrative-stepper.php';
+    ?>
 
 </div>
