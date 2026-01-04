@@ -1,7 +1,7 @@
 <?php
 // pages/engine-room/history/nine-figure-refusal/the-non-profit-model.php
 // The "Service Over Sovereignty" Pivot
-// UPDATED: WCAG Compliance & Narrative Stepper
+// UPDATED: Added Staff Retention Letter & WCAG Compliance
 
 $pageTitle = "The Non-Profit Model - Engine Room History";
 ?>
@@ -89,8 +89,63 @@ $pageTitle = "The Non-Profit Model - Engine Room History";
     </div>
 
     <div class="row justify-content-center mb-5">
-        <div class="col-lg-12">
+        <div class="col-lg-10">
             <h3 class="h4 fw-bold text-success border-bottom border-success pb-2 mb-4">
+                The Human Capital: The "Bridge" Offer
+            </h3>
+            <p class="text-body-secondary mb-4">
+                When Omni-Global collapsed, the payroll bounced. Holly O'Connell couldn't legally pay the debts of the bankrupt company, so she found a workaround: A "Signing Bonus" for the new company that exactly matched the lost wages.
+            </p>
+
+            <?php 
+            // Resetting variables for the second letter
+            $letter_date = "December 15, 2018";
+            $letter_to = "The Staff of the Former Omni-Global Media Corp.<br>(Excluding Executive Management)";
+            
+            $letter_body = '
+                <p>To the Crew,</p>
+                
+                <p>By now, you have been notified by the Bankruptcy Trustee that your employment with Omni-Global Media has been terminated. You have also likely discovered that your last two paychecks have bounced. I am sorry. You deserved better leaders.</p>
+
+                <p>However, while the corporation is dead, the work you did was real. <strong>You are not the problem. You are the infrastructure.</strong></p>
+
+                <p>Engine Room Records has signed a long-term lease for Floors 38, 39, and 40. We are establishing a new West Coast headquarters: <strong>The Jessica Miller Center</strong>.</p>
+
+                <p>We are not bringing in a new team. We want you.</p>
+
+                <h5 class="fw-bold text-uppercase mt-4 mb-3 text-decoration-underline" style="font-family: \'Arial\', sans-serif; font-size: 1rem;">The Offer</h5>
+
+                <ol class="mb-4">
+                    <li class="mb-3"><strong>Immediate Employment:</strong> Effective today, you are employees of <em>The Jessica Miller Center, LLC</em>. Your seniority and benefits bridge over intact.</li>
+                    <li class="mb-3"><strong>The "Frost Tax" Bonus:</strong> We cannot legally pay Omni-Global\'s debts. However, we are offering a <strong>Signing Bonus</strong> equivalent to 110% of your unpaid back wages. This check clears today.</li>
+                    <li class="mb-3"><strong>Paid Renovation Leave:</strong> We are gutting the executive floor to remove the... toxicity. Construction will take 6 weeks. During this time, you are on <strong>Full Paid Furlough</strong>. Go home. Rest. Spend the holidays with your families.</li>
+                </ol>
+
+                <p><strong>One Condition:</strong> The culture changes today. We do not yell. We do not demand overtime without consent. And we do not look down on anyone. If you liked the old way, do not sign this letter.</p>
+
+                <p>For everyone else: Welcome to the Engine Room.</p>
+            ';
+
+            $letter_stamp = "HIRED"; 
+            $stamp_color = "success"; 
+            $letter_rotation = 1.0; 
+
+            include ROOT_PATH . '/includes/components/corporate/letterhead.php'; 
+            ?>
+            
+            <div class="alert alert-success bg-success-subtle border-success mt-4 d-flex align-items-center">
+                <i class="fa-solid fa-users-medical fs-2 me-4 text-success-emphasis"></i>
+                <div class="text-success-emphasis">
+                    <strong>The Result:</strong> Of the 142 eligible employees (support staff, logistics, IT, janitorial), <strong>138 accepted the offer</strong>. The only four who declined were mid-level managers who refused to report to a 20-year-old Executive Director (Jessica Miller).
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="row justify-content-center mb-5">
+        <div class="col-lg-12">
+            <h3 class="h4 fw-bold text-warning-emphasis border-bottom border-warning pb-2 mb-4">
                 The New Menu: "A La Carte" Infrastructure
             </h3>
             <p class="text-body-secondary mb-4">
