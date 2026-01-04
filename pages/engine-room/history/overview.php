@@ -124,7 +124,7 @@ $pageTitle = "Corporate History - Engine Room Records";
                             </p>
 
                             <div class="d-grid gap-2 d-md-block">
-                                <a href="/engine-room/history/nine-figure-refusal" class="btn btn-outline-success rounded-pill px-4">
+                                <a href="/engine-room/artists/stardust-engine/story/nine-figure-refusal" class="btn btn-outline-success rounded-pill px-4">
                                     <i class="fa-duotone fa-file-contract me-2"></i>Access Archive
                                 </a>
                                 <a href="/engine-room/artists/stardust-engine/story/nine-figure-refusal" class="btn btn-link text-body-secondary text-decoration-none small">
