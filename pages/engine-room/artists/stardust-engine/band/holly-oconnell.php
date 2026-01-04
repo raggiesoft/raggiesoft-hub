@@ -1,7 +1,7 @@
 <?php
 // pages/engine-room/artists/stardust-engine/band/holly-oconnell.php
-// The "Anchor" and the "Architect" of the Fortune.
-// UPDATED: Added Dynamic Modals for Financial Credentials.
+// The "Anchor" and the "Architect".
+// UPDATED: Added Legal Credentials (J.D. + 4 Bar Admissions) to the timeline.
 
 $pageTitle = "Holly O'Connell - The Stardust Engine";
 ?>
@@ -32,10 +32,7 @@ $pageTitle = "Holly O'Connell - The Stardust Engine";
 
             <h3 class="fw-bold mt-5 mb-3 text-white">The Crash of '90: "The Gatekeeper"</h3>
             <p class="text-white-75">
-                When Ryan was paralyzed in December 1990, Holly's role expanded from Business Manager to Medical Director. While Cassidy became Ryan's day-to-day "Safe Person," Holly built the infrastructure that kept him alive and working.
-            </p>
-            <p class="text-white-75">
-                She holds <strong>Durable Power of Attorney</strong> for Ryan, giving her the legal authority to make medical decisions in an emergency. She carries signed, notarized HIPAA release forms in her briefcase at all times, allowing her to speak directly to his doctors and surgeons.
+                When Ryan was paralyzed in December 1990, Holly's role expanded from Business Manager to Medical Director. She holds <strong>Durable Power of Attorney</strong> for Ryan, giving her the legal authority to make medical decisions in an emergency. She carries signed, notarized HIPAA release forms in her briefcase at all times.
             </p>
             
             <h3 class="fw-bold mt-5 mb-3 text-white">The "Friction" Nuke (1992)</h3>
@@ -53,12 +50,67 @@ $pageTitle = "Holly O'Connell - The Stardust Engine";
                         In 1996, when Cassidy handed her the winning lottery ticket worth <strong>$2.04 Billion</strong>, Holly didn't celebrate. She went to work.
                     </p>
                     <p class="text-white-75">
-                        "Money destroys families," she famously said. To prevent that, she spent the next two decades armoring herself with every financial certification available. She created the <strong>Forger Nation Trust</strong>, a structure that renders the band members "penniless" on paper—protecting them from lawsuits and predators—while the Trust manages their empire.
+                        "Money destroys families," she famously said. To prevent that, she spent the next two decades armoring herself with every credential available. She created the <strong>Forger Nation Trust</strong>, a structure that renders the band members "penniless" on paper—protecting them from lawsuits—while the Trust manages their empire.
                     </p>
                     
-                    <hr class="border-success opacity-50 my-4">
-                    
-                    <h5 class="text-white fw-bold mb-3"><i class="fa-solid fa-shield-check me-2 text-success"></i>Fiduciary Armor (Click to Inspect)</h5>
+                    <hr class="border-light opacity-25 my-4">
+                    <h5 class="text-white fw-bold mb-3"><i class="fa-solid fa-gavel me-2 text-primary"></i>Legal Armor (The Sword)</h5>
+                    <div class="d-flex flex-wrap gap-2 mb-4">
+                        
+                        <button type="button" class="btn badge rounded-pill bg-black border border-primary text-white p-2 credential-btn" 
+                                data-bs-toggle="modal" data-bs-target="#credentialModal"
+                                data-title="Juris Doctor (1994)"
+                                data-desc="CPI School of Law. Graduated Summa Cum Laude."
+                                data-lore="While the band was touring the 'Wilderness Years,' Holly was in the library. She passed the bar exam two weeks before the 'Warehouse Tapes' tour began."
+                                data-color="primary"
+                                data-icon="fa-graduation-cap">
+                            <i class="fa-solid fa-graduation-cap me-1 text-primary"></i>J.D. (CPI Law '94)
+                        </button>
+
+                        <button type="button" class="btn badge rounded-pill bg-black border border-primary text-primary p-2 credential-btn" 
+                                data-bs-toggle="modal" data-bs-target="#credentialModal"
+                                data-title="Virginia Bar Admission (1994)"
+                                data-desc="Licensed to practice law in the Commonwealth of Virginia."
+                                data-lore="The Home Turf. Holly ensures that no one can sue the O'Connell family in their own backyard without facing her personally."
+                                data-color="primary"
+                                data-icon="fa-scale-balanced">
+                            <i class="fa-solid fa-gavel me-1"></i>VA Bar ('94)
+                        </button>
+
+                        <button type="button" class="btn badge rounded-pill bg-black border border-danger text-danger p-2 credential-btn" 
+                                data-bs-toggle="modal" data-bs-target="#credentialModal"
+                                data-title="New York Bar Admission (1998)"
+                                data-desc="Licensed to practice law in the State of New York."
+                                data-lore="The Attack Vector. Almost all major music labels are headquartered in NYC. Holly got this license so she could sue them on their own doorstep."
+                                data-color="danger"
+                                data-icon="fa-city">
+                            <i class="fa-solid fa-city me-1"></i>NY Bar ('98)
+                        </button>
+
+                        <button type="button" class="btn badge rounded-pill bg-black border border-danger text-danger p-2 credential-btn" 
+                                data-bs-toggle="modal" data-bs-target="#credentialModal"
+                                data-title="California Bar Admission (2002)"
+                                data-desc="Licensed to practice law in the State of California."
+                                data-lore="The Omni-Global Countermeasure. Knowing Omni-Global was based in San Francisco, Holly passed this bar specifically to threaten them on their home turf. 'I don't need local counsel. I am local counsel.'"
+                                data-color="danger"
+                                data-icon="fa-sun">
+                            <i class="fa-solid fa-sun me-1"></i>CA Bar ('02)
+                        </button>
+
+                        <button type="button" class="btn badge rounded-pill bg-black border border-success text-success p-2 credential-btn" 
+                                data-bs-toggle="modal" data-bs-target="#credentialModal"
+                                data-title="Delaware Bar Admission (2015)"
+                                data-desc="Licensed to practice law in Delaware (Corporate Law Hub)."
+                                data-lore="The Corporate Shield. When Engine Room Records, LLC re-incorporated in Delaware in 2015, Holly ensured she was the only lawyer the company would ever need."
+                                data-color="success"
+                                data-icon="fa-building-columns">
+                            <i class="fa-solid fa-building-columns me-1"></i>DE Bar ('15)
+                        </button>
+
+                    </div>
+
+                    <hr class="border-light opacity-25 my-4">
+                    <h5 class="text-white fw-bold mb-3"><i class="fa-solid fa-shield-check me-2 text-success"></i>Fiduciary Armor (The Shield)</h5>
                     <div class="d-flex flex-wrap gap-2">
                         
                         <button type="button" class="btn badge rounded-pill bg-black border border-secondary text-white p-2 credential-btn" 
@@ -75,7 +127,7 @@ $pageTitle = "Holly O'Connell - The Stardust Engine";
                                 data-bs-toggle="modal" data-bs-target="#credentialModal"
                                 data-title="Enrolled Agent (1996)"
                                 data-desc="A federally-authorized tax practitioner empowered to represent taxpayers before the IRS."
-                                data-lore="Obtained immediately after the Lottery win. Holly represented the Trust directly before the IRS to ensure the $2.04B windfall was taxed perfectly, preventing any audits."
+                                data-lore="Obtained immediately after the Lottery win. Holly represented the Trust directly before the IRS to ensure the $2.04B windfall was taxed perfectly."
                                 data-color="secondary"
                                 data-icon="fa-file-invoice-dollar">
                             <i class="fa-solid fa-file-invoice-dollar me-1 text-secondary"></i>Enrolled Agent ('96)
@@ -85,7 +137,7 @@ $pageTitle = "Holly O'Connell - The Stardust Engine";
                                 data-bs-toggle="modal" data-bs-target="#credentialModal"
                                 data-title="LL.M. in Taxation (1999)"
                                 data-desc="An advanced law degree specializing in the complexities of tax law."
-                                data-lore="The architect's blueprint. This degree allowed Holly to build the 'Forger Nation Trust' structure, turning a rock band into a sovereign economic state."
+                                data-lore="The blueprint. This degree allowed Holly to build the 'Forger Nation Trust' structure, turning a rock band into a sovereign economic state."
                                 data-color="secondary"
                                 data-icon="fa-scale-balanced">
                             <i class="fa-solid fa-scale-balanced me-1 text-secondary"></i>LL.M. Taxation ('99)
@@ -105,10 +157,10 @@ $pageTitle = "Holly O'Connell - The Stardust Engine";
                                 data-bs-toggle="modal" data-bs-target="#credentialModal"
                                 data-title="CFA Charterholder (2006)"
                                 data-desc="Chartered Financial Analyst. The gold standard for investment analysis and portfolio management."
-                                data-lore="Managing a $2.4B surplus requires Wall Street-level skill. Holly trades the family's portfolio herself, ensuring the 'Loss Leader' band never runs out of ammo."
+                                data-lore="Holly trades the family's $2.4B portfolio herself, ensuring the 'Loss Leader' band never runs out of ammo."
                                 data-color="success"
                                 data-icon="fa-briefcase">
-                            <i class="fa-solid fa-briefcase me-1"></i>CFA Charterholder ('06)
+                            <i class="fa-solid fa-briefcase me-1"></i>CFA ('06)
                         </button>
 
                         <button type="button" class="btn badge rounded-pill bg-black border border-primary text-info p-2 credential-btn" 
@@ -118,27 +170,27 @@ $pageTitle = "Holly O'Connell - The Stardust Engine";
                                 data-lore="Obtained after the 2008 crash. Holly built custom algorithmic hedges to ensure the family fortune would be 'Recession-Proof' forever."
                                 data-color="info"
                                 data-icon="fa-chart-line">
-                            <i class="fa-solid fa-chart-line me-1"></i>M.S. Quant Finance ('09)
+                            <i class="fa-solid fa-chart-line me-1"></i>M.S. Quant ('09)
                         </button>
 
                         <button type="button" class="btn badge rounded-pill bg-black border border-danger text-danger p-2 credential-btn" 
                                 data-bs-toggle="modal" data-bs-target="#credentialModal"
                                 data-title="Certified Forensic Accountant (2014)"
                                 data-desc="Specialists in detecting financial fraud and auditing complex records."
-                                data-lore="The Weapon. Holly uses this to audit streaming services and legacy labels. If you steal a penny of royalties from The Stardust Engine, she *will* find it."
+                                data-lore="The Weapon. Holly uses this to audit streaming services. If you steal a penny of royalties, she *will* find it."
                                 data-color="danger"
                                 data-icon="fa-magnifying-glass-dollar">
-                            <i class="fa-solid fa-magnifying-glass-dollar me-1"></i>Cr.FA (Forensic) ('14)
+                            <i class="fa-solid fa-magnifying-glass-dollar me-1"></i>Cr.FA ('14)
                         </button>
 
                         <button type="button" class="btn badge rounded-pill bg-black border border-danger text-danger p-2 credential-btn" 
                                 data-bs-toggle="modal" data-bs-target="#credentialModal"
                                 data-title="Certified Insolvency & Restructuring Advisor (2016)"
-                                data-desc=" experts in corporate bankruptcy and turnaround management."
-                                data-lore="The Cleanup Crew. When a rival company or venue fails (often because they crossed Holly), she uses this expertise to buy their distressed assets for pennies on the dollar."
+                                data-desc="Experts in corporate bankruptcy and turnaround management."
+                                data-lore="The Cleanup Crew. When a rival company fails (often because they crossed Holly), she uses this expertise to buy their distressed assets for pennies."
                                 data-color="danger"
                                 data-icon="fa-tombstone">
-                            <i class="fa-solid fa-tombstone me-1"></i>CIRA (Insolvency) ('16)
+                            <i class="fa-solid fa-tombstone me-1"></i>CIRA ('16)
                         </button>
                     </div>
 
@@ -157,7 +209,7 @@ $pageTitle = "Holly O'Connell - The Stardust Engine";
                     'description' => "<div class='text-white-75'>
                                         <strong>Role:</strong> Manager, CEO, CFO<br>
                                         <strong>Age (in 1987):</strong> 18<br>
-                                        <strong>Top Credential:</strong> CIRA (Insolvency)<br>
+                                        <strong>Education:</strong> J.D., LL.M.<br>
                                         <strong>Status:</strong> The Architect (Unbroken)
                                       </div>",
                     'buttonProps' => [
@@ -216,17 +268,14 @@ $pageTitle = "Holly O'Connell - The Stardust Engine";
 document.addEventListener('DOMContentLoaded', function () {
     var credentialModal = document.getElementById('credentialModal');
     credentialModal.addEventListener('show.bs.modal', function (event) {
-        // Button that triggered the modal
         var button = event.relatedTarget;
         
-        // Extract info from data-* attributes
         var title = button.getAttribute('data-title');
         var desc = button.getAttribute('data-desc');
         var lore = button.getAttribute('data-lore');
         var color = button.getAttribute('data-color');
         var icon = button.getAttribute('data-icon');
 
-        // Update the modal's content
         var modalTitle = credentialModal.querySelector('#credentialTitle');
         var modalDesc = credentialModal.querySelector('#credentialDesc');
         var modalLore = credentialModal.querySelector('#credentialLore');
@@ -238,13 +287,10 @@ document.addEventListener('DOMContentLoaded', function () {
         modalDesc.textContent = desc;
         modalLore.textContent = lore;
 
-        // Reset classes
         modalHeader.className = 'modal-header border-bottom-0 text-white';
         modalContent.className = 'modal-content bg-dark text-white border-2';
         loreAlert.className = 'alert bg-black bg-opacity-50 border-start border-4 text-white';
 
-        // Apply new color theme
-        // Bootstrap colors: success, danger, info, secondary
         modalHeader.classList.add('bg-' + color);
         modalContent.classList.add('border-' + color);
         loreAlert.classList.add('border-' + color);
