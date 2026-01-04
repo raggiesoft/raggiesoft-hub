@@ -60,7 +60,7 @@ $root = '/engine-room/artists/stardust-engine';
                     <p class="text-secondary small">
                         Learn about the "Friction" scandal, the "Cold War" with Apex Records, and the birth of independence.
                     </p>
-                    <a href="<?php echo $root; ?>/lore" class="btn btn-outline-warning mt-auto rounded-pill">Read History</a>
+                    <a href="<?php echo $root; ?>/story" class="btn btn-outline-warning mt-auto rounded-pill">Read History</a>
                 </div>
             </div>
         </div>

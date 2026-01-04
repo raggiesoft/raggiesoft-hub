@@ -12,6 +12,12 @@
   </li>
 
   <li class="nav-item">
+    <a class="nav-link" href="/engine-room/artists/stardust-engine/story">
+        <i class="fa-duotone fa-book-atlas me-2"></i>Story
+    </a>
+  </li>
+
+  <li class="nav-item">
     <a class="nav-link" href="/engine-room/artists/stardust-engine/discography">
         <i class="fa-duotone fa-compact-disc me-2"></i>Discography
     </a>
