@@ -2,7 +2,7 @@
   "common": {
     "site": "engine-room-records",
     "showSidebar": true,
-    "sidebar": "engine-room/artists/sidebar-origin",
+    "sidebar": "engine-room/artists/origin/sidebar-origin",
     "siteName": "Engine Room: Origin",
     "headerMenu": "engine-room/header-engine-room",
     "footer": "engine-room/footer-engine-room",
