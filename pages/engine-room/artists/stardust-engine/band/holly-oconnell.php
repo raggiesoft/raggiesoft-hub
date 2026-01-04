@@ -1,7 +1,7 @@
 <?php
 // pages/engine-room/artists/stardust-engine/band/holly-oconnell.php
 // The "Anchor" and the "Architect" of the Fortune.
-// UPDATED: Fixed Badge Contrast (Brighter text for Dark Mode).
+// UPDATED: Added Dynamic Modals for Financial Credentials.
 
 $pageTitle = "Holly O'Connell - The Stardust Engine";
 ?>
@@ -58,39 +58,88 @@ $pageTitle = "Holly O'Connell - The Stardust Engine";
                     
                     <hr class="border-success opacity-50 my-4">
                     
-                    <h5 class="text-white fw-bold mb-3"><i class="fa-solid fa-shield-check me-2 text-success"></i>Fiduciary Armor (The Timeline)</h5>
+                    <h5 class="text-white fw-bold mb-3"><i class="fa-solid fa-shield-check me-2 text-success"></i>Fiduciary Armor (Click to Inspect)</h5>
                     <div class="d-flex flex-wrap gap-2">
-                        <span class="badge rounded-pill bg-black border border-secondary text-white p-2" title="The Foundation">
+                        
+                        <button type="button" class="btn badge rounded-pill bg-black border border-secondary text-white p-2 credential-btn" 
+                                data-bs-toggle="modal" data-bs-target="#credentialModal"
+                                data-title="Notary Public (1994)"
+                                data-desc="A public officer constituted by law to serve the public in non-contentious matters."
+                                data-lore="Holly became a Notary so no outsider would ever witness the family's signatures. Every contract, medical release, and NDA is sealed in-house."
+                                data-color="secondary"
+                                data-icon="fa-stamp">
                             <i class="fa-solid fa-stamp me-1 text-secondary"></i>Notary Public ('94)
-                        </span>
+                        </button>
                         
-                        <span class="badge rounded-pill bg-black border border-secondary text-white p-2" title="Tax Defense">
+                        <button type="button" class="btn badge rounded-pill bg-black border border-secondary text-white p-2 credential-btn" 
+                                data-bs-toggle="modal" data-bs-target="#credentialModal"
+                                data-title="Enrolled Agent (1996)"
+                                data-desc="A federally-authorized tax practitioner empowered to represent taxpayers before the IRS."
+                                data-lore="Obtained immediately after the Lottery win. Holly represented the Trust directly before the IRS to ensure the $2.04B windfall was taxed perfectly, preventing any audits."
+                                data-color="secondary"
+                                data-icon="fa-file-invoice-dollar">
                             <i class="fa-solid fa-file-invoice-dollar me-1 text-secondary"></i>Enrolled Agent ('96)
-                        </span>
+                        </button>
                         
-                        <span class="badge rounded-pill bg-black border border-secondary text-white p-2" title="Structuring the Fortune">
+                        <button type="button" class="btn badge rounded-pill bg-black border border-secondary text-white p-2 credential-btn" 
+                                data-bs-toggle="modal" data-bs-target="#credentialModal"
+                                data-title="LL.M. in Taxation (1999)"
+                                data-desc="An advanced law degree specializing in the complexities of tax law."
+                                data-lore="The architect's blueprint. This degree allowed Holly to build the 'Forger Nation Trust' structure, turning a rock band into a sovereign economic state."
+                                data-color="secondary"
+                                data-icon="fa-scale-balanced">
                             <i class="fa-solid fa-scale-balanced me-1 text-secondary"></i>LL.M. Taxation ('99)
-                        </span>
+                        </button>
 
-                        <span class="badge rounded-pill bg-black border border-success text-success p-2" title="Architect of the Trust">
+                        <button type="button" class="btn badge rounded-pill bg-black border border-success text-success p-2 credential-btn" 
+                                data-bs-toggle="modal" data-bs-target="#credentialModal"
+                                data-title="Certified Trust & Fiduciary Advisor (2003)"
+                                data-desc="The standard of excellence for trust and wealth management professionals."
+                                data-lore="Holly doesn't hire trustees; she *is* the trustee. This certification allows her to legally manage the family's generational wealth without third-party oversight."
+                                data-color="success"
+                                data-icon="fa-landmark">
                             <i class="fa-solid fa-landmark me-1"></i>CTFA (Trusts) ('03)
-                        </span>
+                        </button>
 
-                        <span class="badge rounded-pill bg-black border border-success text-success p-2" title="Managing the Surplus">
+                        <button type="button" class="btn badge rounded-pill bg-black border border-success text-success p-2 credential-btn" 
+                                data-bs-toggle="modal" data-bs-target="#credentialModal"
+                                data-title="CFA Charterholder (2006)"
+                                data-desc="Chartered Financial Analyst. The gold standard for investment analysis and portfolio management."
+                                data-lore="Managing a $2.4B surplus requires Wall Street-level skill. Holly trades the family's portfolio herself, ensuring the 'Loss Leader' band never runs out of ammo."
+                                data-color="success"
+                                data-icon="fa-briefcase">
                             <i class="fa-solid fa-briefcase me-1"></i>CFA Charterholder ('06)
-                        </span>
+                        </button>
 
-                        <span class="badge rounded-pill bg-black border border-primary text-info p-2" title="Hedging against Recession">
+                        <button type="button" class="btn badge rounded-pill bg-black border border-primary text-info p-2 credential-btn" 
+                                data-bs-toggle="modal" data-bs-target="#credentialModal"
+                                data-title="M.S. Quantitative Finance (2009)"
+                                data-desc="The application of mathematical models to financial markets and risk management."
+                                data-lore="Obtained after the 2008 crash. Holly built custom algorithmic hedges to ensure the family fortune would be 'Recession-Proof' forever."
+                                data-color="info"
+                                data-icon="fa-chart-line">
                             <i class="fa-solid fa-chart-line me-1"></i>M.S. Quant Finance ('09)
-                        </span>
+                        </button>
 
-                        <span class="badge rounded-pill bg-black border border-danger text-danger p-2" title="Auditing Royalties">
+                        <button type="button" class="btn badge rounded-pill bg-black border border-danger text-danger p-2 credential-btn" 
+                                data-bs-toggle="modal" data-bs-target="#credentialModal"
+                                data-title="Certified Forensic Accountant (2014)"
+                                data-desc="Specialists in detecting financial fraud and auditing complex records."
+                                data-lore="The Weapon. Holly uses this to audit streaming services and legacy labels. If you steal a penny of royalties from The Stardust Engine, she *will* find it."
+                                data-color="danger"
+                                data-icon="fa-magnifying-glass-dollar">
                             <i class="fa-solid fa-magnifying-glass-dollar me-1"></i>Cr.FA (Forensic) ('14)
-                        </span>
+                        </button>
 
-                        <span class="badge rounded-pill bg-black border border-danger text-danger p-2" title="The Bankruptcy Expert">
+                        <button type="button" class="btn badge rounded-pill bg-black border border-danger text-danger p-2 credential-btn" 
+                                data-bs-toggle="modal" data-bs-target="#credentialModal"
+                                data-title="Certified Insolvency & Restructuring Advisor (2016)"
+                                data-desc=" experts in corporate bankruptcy and turnaround management."
+                                data-lore="The Cleanup Crew. When a rival company or venue fails (often because they crossed Holly), she uses this expertise to buy their distressed assets for pennies on the dollar."
+                                data-color="danger"
+                                data-icon="fa-tombstone">
                             <i class="fa-solid fa-tombstone me-1"></i>CIRA (Insolvency) ('16)
-                        </span>
+                        </button>
                     </div>
 
                 </div>
@@ -140,3 +189,65 @@ $pageTitle = "Holly O'Connell - The Stardust Engine";
 
     </div>
 </div>
+
+<div class="modal fade" id="credentialModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content bg-dark text-white border-2" id="modalContent">
+            <div class="modal-header border-bottom-0" id="modalHeader">
+                <h5 class="modal-title fw-bold" id="credentialTitle">
+                    <i class="fa-solid fa-circle-info me-2"></i>Credential
+                </h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body p-4">
+                <h6 class="text-uppercase small opacity-75 mb-2">Technical Definition</h6>
+                <p id="credentialDesc" class="text-white-50 mb-4">Description goes here.</p>
+                
+                <div class="alert bg-black bg-opacity-50 border-start border-4" id="loreAlert" style="border-color: currentColor;">
+                    <h6 class="text-uppercase small fw-bold mb-1"><i class="fa-duotone fa-shield-check me-2"></i>Application to The Family</h6>
+                    <p id="credentialLore" class="mb-0 small fst-italic text-white">Lore goes here.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    var credentialModal = document.getElementById('credentialModal');
+    credentialModal.addEventListener('show.bs.modal', function (event) {
+        // Button that triggered the modal
+        var button = event.relatedTarget;
+        
+        // Extract info from data-* attributes
+        var title = button.getAttribute('data-title');
+        var desc = button.getAttribute('data-desc');
+        var lore = button.getAttribute('data-lore');
+        var color = button.getAttribute('data-color');
+        var icon = button.getAttribute('data-icon');
+
+        // Update the modal's content
+        var modalTitle = credentialModal.querySelector('#credentialTitle');
+        var modalDesc = credentialModal.querySelector('#credentialDesc');
+        var modalLore = credentialModal.querySelector('#credentialLore');
+        var modalHeader = credentialModal.querySelector('#modalHeader');
+        var modalContent = credentialModal.querySelector('#modalContent');
+        var loreAlert = credentialModal.querySelector('#loreAlert');
+
+        modalTitle.innerHTML = '<i class="fa-solid ' + icon + ' me-2"></i>' + title;
+        modalDesc.textContent = desc;
+        modalLore.textContent = lore;
+
+        // Reset classes
+        modalHeader.className = 'modal-header border-bottom-0 text-white';
+        modalContent.className = 'modal-content bg-dark text-white border-2';
+        loreAlert.className = 'alert bg-black bg-opacity-50 border-start border-4 text-white';
+
+        // Apply new color theme
+        // Bootstrap colors: success, danger, info, secondary
+        modalHeader.classList.add('bg-' + color);
+        modalContent.classList.add('border-' + color);
+        loreAlert.classList.add('border-' + color);
+    });
+});
+</script>
