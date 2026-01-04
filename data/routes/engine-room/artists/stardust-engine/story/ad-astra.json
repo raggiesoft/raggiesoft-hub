@@ -4,10 +4,10 @@
     "showSidebar": true,
     "theme": "ad-astra",
     "brandFont": ["Audiowide", "sans-serif"],
-    "sidebar": "engine-room/artists/stardust-engine/story/sidebar-nine-figure-refusal",
+    "sidebar": "engine-room/artists/stardust-engine/story/sidebar-ad-astra",
     "siteName": "The Stardust Engine",
-    "headerMenu": "engine-room/artists/stardust-engine/story/header-nine-figure-refusal",
-    "footer": "engine-room/artists/stardust-engine/story/footer-nine-figure-refusal",
+    "headerMenu": "engine-room/artists/stardust-engine/story/header-ad-astra",
+    "footer": "engine-room/artists/stardust-engine/story/footer-ad-astra",
     "navbarBrandLogo": "https://assets.raggiesoft.com/engine-room-records/artists/the-stardust-engine/band-logo.png",
     "navbarBrandText": "<span class=\"d-none d-md-inline\">The </span>Stardust Engine",
     "navbarBrandLink": "/engine-room/artists/stardust-engine",
@@ -23,6 +23,6 @@
     "view": "pages/engine-room/artists/stardust-engine/story/ad-astra/voyage",
     "title": "Flight Log: U.S.S. Aethelgard",
     "ogDescription": "The narrative log of the 21-day journey to the Veil Nebula.",
-    "showSidebar": false
+    "showSidebar": true
   }
 }
