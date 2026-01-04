@@ -43,7 +43,7 @@
   </li>
 
   <li class="nav-item ms-3 border-start border-secondary ps-3">
-    <a class="nav-link text-white-50" href="/engine-room">
+    <a class="nav-link text-dark" href="/engine-room">
         Exit to Public Site <i class="fa-solid fa-arrow-right-from-bracket ms-2"></i>
     </a>
   </li>
