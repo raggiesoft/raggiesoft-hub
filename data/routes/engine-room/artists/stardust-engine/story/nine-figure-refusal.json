@@ -2,13 +2,13 @@
   "common": {
     "site": "stardust-engine",
     "showSidebar": true,
-    "brandFont": ["Audiowide", "sans-serif"],
+    "brandFont": ["Playfair Display", "serif"],
     "sidebar": "engine-room/artists/stardust-engine/story/sidebar-nine-figure-refusal",
     "siteName": "The Stardust Engine",
     "headerMenu": "engine-room/artists/stardust-engine/story/header-nine-figure-refusal",
     "footer": "engine-room/artists/stardust-engine/story/footer-nine-figure-refusal",
     "navbarBrandLogo": "https://assets.raggiesoft.com/engine-room-records/artists/the-stardust-engine/band-logo.png",
-    "navbarBrandText": "<span class=\"d-none d-md-inline\">The </span>Stardust Engine",
+    "navbarBrandText": "<span class=\"d-none d-md-inline\">The </span>Nine Figure Refusal",
     "navbarBrandLink": "/engine-room/artists/stardust-engine",
     "ogImage": "https://assets.raggiesoft.com/engine-room-records/artists/the-stardust-engine/social-preview.jpg"
   },
