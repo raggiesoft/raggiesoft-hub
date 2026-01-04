@@ -7,10 +7,12 @@
     "siteName": "The Nine Figure Refusal",
     "headerMenu": "engine-room/artists/stardust-engine/story/header-nine-figure-refusal",
     "footer": "engine-room/artists/stardust-engine/story/footer-nine-figure-refusal",
-    "navbarBrandLogo": "https://assets.raggiesoft.com/engine-room-records/artists/the-stardust-engine/band-logo.png",
+    "navbarBrandLogo": "https://assets.raggiesoft.com/engine-room-records/images/logos/engine-room-records-logo.png",
     "navbarBrandText": "<span class=\"d-none d-md-inline\">The </span>Nine Figure Refusal",
     "navbarBrandLink": "/engine-room/artists/stardust-engine",
-    "ogImage": "https://assets.raggiesoft.com/engine-room-records/artists/the-stardust-engine/social-preview.jpg"
+    "ogImage": "https://assets.raggiesoft.com/engine-room-records/artists/the-stardust-engine/social-preview.jpg",
+    "navbarBrandAlt": "Engine Room Records Official Seal",
+    "navbarBrandClass": "rounded-0 navbar-brand-corporate-img"
   },
 
   "/engine-room/artists/stardust-engine/story/nine-figure-refusal": {
