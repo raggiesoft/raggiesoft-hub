@@ -82,7 +82,7 @@
       <div class="col" style="max-width: 500px;">
         <?php
           $props = [
-            'imgSrc' => 'https://assets.raggiesoft.com/stardust-engine/images/logo/stardust-engine-logo.png',
+            'imgSrc' => 'https://assets.raggiesoft.com/engine-room-records/artists/the-stardust-engine/band-logo.png',
             'imgAlt' => 'The Stardust Engine Band',
             'fallbackText' => 'Stardust Engine',
             'title' => 'The Stardust Engine',
