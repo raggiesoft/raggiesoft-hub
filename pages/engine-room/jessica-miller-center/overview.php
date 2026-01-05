@@ -212,27 +212,27 @@ $pageTitle = "The Jessica Miller Center - Universal Design & Workplace Equity";
                     </div>
                     
                     <div class="col-md-5 bg-body-tertiary border-start p-5 d-flex flex-column justify-content-center">
-                        <h3 class="h6 text-body-secondary text-uppercase fw-bold mb-3">Live Building Status</h3>
+                        <h3 class="h6 text-body-secondary text-uppercase fw-bold mb-3">Live Building Status (PST)</h3>
                         
                         <div class="d-flex justify-content-between align-items-center mb-2">
                             <span class="text-body-emphasis"><i class="fa-solid fa-sun me-2 text-warning" aria-hidden="true"></i>Circadian Lighting</span>
-                            <span class="badge bg-warning text-dark">4500K (Daylight)</span>
+                            <span class="badge bg-warning text-dark" id="lighting-badge">4500K (Daylight)</span>
                         </div>
-                        <div class="progress mb-3 bg-secondary-subtle" style="height: 4px;" role="progressbar" aria-label="Current Lighting Color Temperature" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
-                            <div class="progress-bar bg-warning" style="width: 70%"></div>
+                        <div class="progress mb-3 bg-secondary-subtle" style="height: 4px;" role="progressbar" aria-label="Current Lighting Color Temperature">
+                            <div class="progress-bar bg-warning" id="lighting-progress" style="width: 70%"></div>
                         </div>
 
                         <div class="d-flex justify-content-between align-items-center mb-2">
                             <span class="text-body-emphasis"><i class="fa-solid fa-volume-xmark me-2 text-success" aria-hidden="true"></i>Ambient Noise</span>
-                            <span class="badge bg-success">32dB (Library)</span>
+                            <span class="badge bg-success" id="noise-badge">32dB (Library)</span>
                         </div>
-                        <div class="progress mb-3 bg-secondary-subtle" style="height: 4px;" role="progressbar" aria-label="Current Ambient Noise Level" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
-                            <div class="progress-bar bg-success" style="width: 20%"></div>
+                        <div class="progress mb-3 bg-secondary-subtle" style="height: 4px;" role="progressbar" aria-label="Current Ambient Noise Level">
+                            <div class="progress-bar bg-success" id="noise-progress" style="width: 20%"></div>
                         </div>
 
-                        <div class="alert alert-secondary mt-3 mb-0 py-2 px-3 small">
+                        <div class="alert alert-secondary mt-3 mb-0 py-2 px-3 small" id="status-alert">
                             <i class="fa-solid fa-circle-info text-info-emphasis me-2" aria-hidden="true"></i>
-                            Next "Quiet Hour" begins at <strong>2:00 PM PST</strong>.
+                            <span id="quiet-hour-text">Next "Quiet Hour" begins at <strong>2:00 PM PST</strong>.</span>
                         </div>
                     </div>
                 </div>
@@ -240,3 +240,104 @@ $pageTitle = "The Jessica Miller Center - Universal Design & Workplace Equity";
         </div>
     </div>
 </div>
+
+<script>
+    /**
+     * Building Telemetry Simulation
+     * Adjusts the UI based on Pacific Standard Time to simulate 
+     * the Jessica Miller Center's automated environmental controls.
+     */
+    document.addEventListener("DOMContentLoaded", function() {
+        
+        // 1. Get Current Time in Los Angeles (PST/PDT)
+        // We use IANA timezone 'America/Los_Angeles' to handle DST automatically
+        const laString = new Date().toLocaleString("en-US", {timeZone: "America/Los_Angeles"});
+        const laTime = new Date(laString);
+        const hour = laTime.getHours();
+
+        // Elements
+        const lightingBadge = document.getElementById('lighting-badge');
+        const lightingBar = document.getElementById('lighting-progress');
+        const noiseBadge = document.getElementById('noise-badge');
+        const noiseBar = document.getElementById('noise-progress');
+        const quietText = document.getElementById('quiet-hour-text');
+
+        // State Defaults
+        let lightK = "4500K";
+        let lightLabel = "(Daylight)";
+        let lightPct = 70;
+        let noiseDB = "32dB";
+        let noiseLabel = "(Library)";
+        let noisePct = 20;
+        let alertMsg = 'Next "Quiet Hour" begins at <strong>2:00 PM PST</strong>.';
+
+        // 2. Determine State based on LA Hour (0-23)
+        if (hour >= 20 || hour < 6) {
+            // NIGHT MODE (8PM - 6AM)
+            lightK = "2200K";
+            lightLabel = "(Amber/Night)";
+            lightPct = 20;
+            noiseDB = "25dB";
+            noiseLabel = "(Silent)";
+            noisePct = 5;
+            alertMsg = 'Building in <strong>Night Mode</strong>. Badge access required.';
+        } 
+        else if (hour >= 6 && hour < 9) {
+            // MORNING RAMP-UP (6AM - 9AM)
+            lightK = "3500K";
+            lightLabel = "(Warm White)";
+            lightPct = 50;
+            noiseDB = "45dB";
+            noiseLabel = "(Arrivals)";
+            noisePct = 40;
+            alertMsg = 'Next "Quiet Hour" begins at <strong>2:00 PM PST</strong>.';
+        }
+        else if (hour >= 12 && hour < 14) {
+            // LUNCH / SOCIAL (12PM - 2PM)
+            lightK = "5000K";
+            lightLabel = "(Bright)";
+            lightPct = 80;
+            noiseDB = "50dB";
+            noiseLabel = "(Social)";
+            noisePct = 55;
+            alertMsg = 'Quiet Hours are suspended until <strong>2:00 PM PST</strong>.';
+        }
+        else if (hour >= 17 && hour < 20) {
+            // EVENING WIND-DOWN (5PM - 8PM)
+            lightK = "3000K";
+            lightLabel = "(Warm)";
+            lightPct = 40;
+            noiseDB = "35dB";
+            noiseLabel = "(Library)";
+            noisePct = 25;
+            alertMsg = 'Building entering <strong>Evening Mode</strong>.';
+        }
+        else {
+            // STANDARD WORK DAY (9AM-12PM, 2PM-5PM)
+            lightK = "4500K";
+            lightLabel = "(Daylight)";
+            lightPct = 70;
+            noiseDB = "38dB";
+            noiseLabel = "(Focus)";
+            noisePct = 30;
+            
+            if (hour >= 14) {
+                 alertMsg = 'Current Status: <strong>Quiet Hour (Active)</strong>';
+            } else {
+                 alertMsg = 'Next "Quiet Hour" begins at <strong>2:00 PM PST</strong>.';
+            }
+        }
+
+        // 3. Apply Updates
+        lightingBadge.innerText = `${lightK} ${lightLabel}`;
+        lightingBar.style.width = `${lightPct}%`;
+        
+        noiseBadge.innerText = `${noiseDB} ${noiseLabel}`;
+        noiseBar.style.width = `${noisePct}%`;
+        
+        quietText.innerHTML = alertMsg;
+
+        // Log for debugging
+        console.log(`JMC Telemetry: Local LA Time is ${hour}:00. Mode Updated.`);
+    });
+</script>
