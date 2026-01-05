@@ -1,0 +1,24 @@
+{
+  "common": {
+    "site": "portfolio",
+    "headerMenu": "engine-room/jessica-miller-center/header-miller-center",
+    "sidebar": "engine-room/jessica-miller-center/sidebar-miller-center",
+    "showSidebar": true,
+    "navbarBrandLogo": "https://assets.raggiesoft.com/engine-room-records/images/logos/miller-center-logo.png",
+    "navbarBrandText": "<span class=\"d-none d-md-inline\">The Jessica </span>Miller Center",
+    "navbarBrandLink": "/engine-room/jessica-miller-center",
+    "navbarBrandAlt": "The Jessica Miller Center Official Seal",
+    "navbarBrandClass": "rounded-0 navbar-brand-corporate-img"
+  },
+  "/engine-room/jessica-miller-center": {
+    "title": "The Jessica Miller Center - Home",
+    "navbarBrandLink": "/engine-room",
+    "showSidebar": false
+  },
+  "/engine-room/jessica-miller-center/the-quiet-floor": {
+    "title": "The Quiet Floor - Level 40 Sanctuary"
+  },
+  "/engine-room/jessica-miller-center/destination-dispatch-elevators": {
+    "title": "Destination Dispatch Elevators"
+  }
+}
