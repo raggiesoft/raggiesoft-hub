@@ -1,3 +1,16 @@
+<style>
+/* Dark Mode Override for Logos */
+    [data-bs-theme="dark"] .theme-invert img {
+        /* 1. Invert colors: Turns black pixels to white */
+        filter: invert(1) grayscale(100%) !important; 
+        
+        /* 2. Reset Blend Mode: 'Multiply' hides white, so we must switch to 'Normal' or 'Screen' */
+        mix-blend-mode: normal !important; 
+        
+        /* 3. Optional: Bump opacity slightly for better contrast on dark backgrounds */
+        opacity: 0.9 !important; 
+    }
+</style>
 <section
   class="position-relative d-flex align-items-center justify-content-center text-center text-white p-4"
   style="background-image: url('https://assets.raggiesoft.com/stardust-engine/images/stardust-nebula.jpg'); background-size: cover; background-position: center center; min-height: 50vh;"
@@ -85,7 +98,7 @@
     </div>
 
     <div class="row g-4 row-cols-1 row-cols-md-2 row-cols-xl-3 justify-content-center">
-      <div class="col" style="max-width: 500px;">
+      <div class="col theme-invert" style="max-width: 500px;">
         <?php
           $props = [
             'imgSrc' => 'https://assets.raggiesoft.com/engine-room-records/images/logos/engine-room-records-logo.png',
