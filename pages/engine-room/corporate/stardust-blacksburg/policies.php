@@ -98,8 +98,8 @@ $pageTitle = "Household Protocols - Stardust Blacksburg";
                                 <p class="fw-bold text-center mb-1 font-monospace">10:00 AM &ndash; 11:59 PM</p>
                                 <p class="small text-muted mb-2 text-center">(Daily)</p>
                                 <ul class="mb-0 small text-muted ps-3">
-                                    <li class="mb-1"><strong>Why 10 AM?</strong> We respect the sleep schedules of students working late.</li>
-                                    <li><strong>Early Access:</strong> Visits before 10:00 AM require written approval from Management to ensure neighborhood quiet.</li>
+                                    <li class="mb-1"><strong>Why 11:59 PM?</strong> We use a precise minute to remove ambiguity. If the clock strikes 12:00 AM, the guest is considered Overnight.</li>
+                                    <li><strong>Early Access:</strong> Visits before 10:00 AM require written approval from Management to protect sleep schedules.</li>
                                 </ul>
                             </div>
                         </div>
@@ -114,7 +114,7 @@ $pageTitle = "Household Protocols - Stardust Blacksburg";
                                 <ul class="mb-0 small text-muted ps-3">
                                     <li class="mb-1"><strong>Limit:</strong> Max 2 consecutive nights.</li>
                                     <li class="mb-1"><strong>Cooling Off:</strong> After 2 nights, the guest is prohibited from staying <em>overnight</em> for 7 full days.</li>
-                                    <li class="fst-italic text-secondary"><strong>Note:</strong> This guest MAY return as a daytime visitor during the cooling-off period, provided they depart by 11:59 PM.</li>
+                                    <li class="fst-italic text-secondary"><strong>Note:</strong> This guest MAY return as a daytime visitor during the cooling-off period, provided they depart strictly by 11:59 PM.</li>
                                 </ul>
                             </div>
                         </div>
