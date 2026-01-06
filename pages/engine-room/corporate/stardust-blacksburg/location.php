@@ -67,7 +67,7 @@ $pageTitle = "Location & Transit - Stardust Blacksburg";
                         <span class="badge bg-secondary">Every 15 Min</span>
                     </div>
                     <p class="small text-muted mb-1">
-                        <strong>Corridor:</strong> Pepper Plaza <i class="fa-solid fa-arrow-right mx-1" style="font-size: 0.7em;"></i> Downtown <i class="fa-solid fa-arrow-right mx-1" style="font-size: 0.7em;"></i> Alumni Mall.
+                        <strong>Corridor:</strong> Falling Branch <i class="fa-solid fa-arrow-right mx-1" style="font-size: 0.7em;"></i> Pepper Plaza <i class="fa-solid fa-arrow-right mx-1" style="font-size: 0.7em;"></i> Downtown <i class="fa-solid fa-arrow-right mx-1" style="font-size: 0.7em;"></i> Alumni Mall.
                     </p>
                     <p class="small text-muted mb-0 fst-italic">
                         The heavy lifter. Direct access to Christiansburg shopping and the Uptown Mall. 60-foot articulated buses deployed during peak hours.
