@@ -1,7 +1,7 @@
 <?php
 // pages/engine-room/corporate/strategic-assets/stardust-studios.php
 // Designation: Stardust Studios (The Warehouse)
-// Context: Falling Branch Industrial Park, Blacksburg, VA.
+// Location: Blacksburg Industrial Park (South Main Corridor).
 // Access Level: RESTRICTED (Artists First Management Roster Only).
 
 $pageTitle = "Stardust Studios - Global HQ & Production";
@@ -46,11 +46,11 @@ $pageTitle = "Stardust Studios - Global HQ & Production";
             </div>
             <h1 class="display-4 fw-bold text-uppercase text-body-emphasis mb-2">Stardust Studios</h1>
             <p class="lead text-body-secondary font-monospace">
-                Falling Branch Industrial Park, Blacksburg, VA.
+                1200 Industrial Park Road, Blacksburg, VA 24060.<br>
             </p>
             <hr class="my-4 border-warning opacity-100" style="width: 60px; height: 3px;">
             <p class="fs-5 text-body-secondary">
-                This 12,000 sq. ft. facility serves as the nerve center for the <strong>O'Connell Family Trust</strong> and the primary rehearsal hangar for the <strong>Artists First Management</strong> roster.
+                Located in the quiet rear sector of the <strong>Blacksburg Industrial Park</strong>, this 12,000 sq. ft. facility serves as the nerve center for the <strong>O'Connell Family Trust</strong> and the primary rehearsal hangar for the <strong>Artists First Management</strong> roster.
             </p>
             
             <div class="alert alert-warning border-warning d-inline-block text-start shadow-sm mt-3" role="alert">
@@ -88,7 +88,7 @@ $pageTitle = "Stardust Studios - Global HQ & Production";
                     </p>
                     <ul class="list-unstyled small text-body-secondary mb-0 border-top border-secondary-subtle pt-3">
                         <li class="mb-2"><i class="fa-solid fa-check text-primary me-2"></i><strong>The War Board:</strong> Floor-to-ceiling tracking of global assets.</li>
-                        <li class="mb-2"><i class="fa-solid fa-check text-primary me-2"></i><strong>Secure Comms:</strong> Hardlined data link to The Fortress.</li>
+                        <li class="mb-2"><i class="fa-solid fa-check text-primary me-2"></i><strong>Secure Comms:</strong> Direct Dark Fiber link to The Fortress (Progress St).</li>
                         <li><i class="fa-solid fa-check text-primary me-2"></i><strong>The Vault:</strong> Fireproof storage for master tapes and deeds.</li>
                     </ul>
                 </div>
