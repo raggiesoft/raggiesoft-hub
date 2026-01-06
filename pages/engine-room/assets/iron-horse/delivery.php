@@ -11,7 +11,7 @@ $pageTitle = "Lore: The First Ride";
     
     <div class="row justify-content-center mb-5">
         <div class="col-lg-8 text-center">
-            <span class="badge bg-success text-white mb-2">DELIVERY DATE: JUNE 2002</span>
+            <span class="badge bg-success text-white border border-white mb-2">DELIVERY DATE: JUNE 2002</span>
             <h1 class="display-4 fw-bold text-body-emphasis">The First Lift</h1>
             <p class="lead text-body-secondary fst-italic">
                 The day the world opened up.
@@ -48,20 +48,23 @@ $pageTitle = "Lore: The First Ride";
                 </div>
             </div>
 
-            <div class="card bg-dark text-white border-danger shadow">
+            <div class="card bg-black text-white border-danger shadow">
                 <div class="card-header bg-danger text-white fw-bold text-uppercase d-flex justify-content-between align-items-center">
                     <span><i class="fa-solid fa-file-contract me-2"></i>Competitor Intelligence Report</span>
                     <span class="badge bg-black text-danger border border-danger">CONFIDENTIAL</span>
                 </div>
                 <div class="card-body p-4 font-monospace small">
-                    <p class="mb-2"><strong>SUBJECT:</strong> The "Label Exec" Order (Ref: 2002-CANCELLED)</p>
-                    <p class="mb-2"><strong>STATUS:</strong> Denied due to Safety Standard Violation.</p>
-                    <p class="mb-3"><strong>OUTCOME:</strong></p>
+                    <p class="mb-2"><strong>SUBJECT:</strong> The "Pop Star" Order (Ref: 2002-CANCELLED)</p>
+                    <p class="mb-2"><strong>STATUS:</strong> Total Loss.</p>
+                    <hr class="border-secondary opacity-25">
+                    <p class="mb-3"><strong>INCIDENT TIMELINE (Aug 2002):</strong></p>
                     <ul class="list-unstyled text-white-50">
-                        <li class="mb-2">>> Subject purchased a "Luxury Coach" from a competitor in Indiana.</li>
-                        <li class="mb-2">>> Cost: $1.2 Million (Over market).</li>
-                        <li class="mb-2">>> Incident Report (Aug 2002): Vehicle suffered catastrophic frame torque failure while entering a fast-food drive-thru in Albuquerque.</li>
-                        <li class="mb-0">>> <strong>Note:</strong> The Jacuzzi leaked.</li>
+                        <li class="mb-2">>> Subject purchased a "Luxury Coach" from a competitor in Indiana ($1.2M).</li>
+                        <li class="mb-2">>> <strong>Aug 14:</strong> Driver attempted to navigate a fast-food drive-thru in Albuquerque.</li>
+                        <li class="mb-2">>> <strong>Physics Failure:</strong> The uneven grade of the drive-thru lane caused "Frame Torque." Because the roof was compromised by the Jacuzzi installation, the chassis twisted.</li>
+                        <li class="mb-2">>> <strong>The Leak:</strong> The fiberglass shell cracked. 200 gallons of hot water flooded the avionics bay and the master stateroom.</li>
+                        <li class="mb-2">>> <strong>Warranty Claim:</strong> DENIED. Manufacturer produced a waiver signed by the artist acknowledging "Hydrodynamic Instability Risk."</li>
+                        <li class="mb-0 text-danger fw-bold">>> RESULT: Bus scrapped. Tour cancelled.</li>
                     </ul>
                 </div>
             </div>
