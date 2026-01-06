@@ -1,7 +1,7 @@
 <?php
 // pages/engine-room/assets/iron-horse/negotiation.php
 // The Origin Story: Commissioning "The Iron Horse"
-// Location: Sainte-Claire Coachworks // Quebec, Canada
+// Location: Sainte-Claire Coachworks // Québec, Canada
 // Date: March 14, 2002
 
 $pageTitle = "Lore: The Sainte-Claire Protocol (2002)";
@@ -14,7 +14,7 @@ $pageTitle = "Lore: The Sainte-Claire Protocol (2002)";
             <span class="badge bg-warning text-dark mb-2 border border-dark">ARCHIVE: 2002</span>
             <h1 class="display-4 fw-bold text-body-emphasis">The Sainte-Claire Protocol</h1>
             <p class="lead text-body-secondary fst-italic">
-                The day the "Ironhead" reputation was forged in steel and French.
+                The day the "Ironhead" reputation was forged in steel and perfect Québécois.
             </p>
         </div>
     </div>
@@ -26,31 +26,38 @@ $pageTitle = "Lore: The Sainte-Claire Protocol (2002)";
                 <div class="card-body p-4">
                     <p class="mb-3 font-monospace text-body-secondary small">
                         <strong>LOCATION:</strong> Executive Sales Office, Sainte-Claire Coachworks.<br>
-                        <strong>CONTEXT:</strong> The Music Industry is at its peak (CD era). Every label is ordering fleets. The waitlist for a custom "H-Series" chassis is 24 months.
+                        <strong>CONTEXT:</strong> The band is in the middle of their 2002 "Trans-Canada" Tour. They have just played three sold-out nights in Montréal, performing strictly in French to honor the local culture.
                     </p>
                     <hr>
                     <p>
-                        Holly O'Connell (Age 33) walked into the office of Michel, the VP of Sales. She didn't have an appointment. She had a briefcase and a translator (though she understood the French perfectly).
+                        Michel, the VP of Sales, rubbed his temples. He had just gotten off the phone with the manager of a major American Pop Star who was screaming in English about "Jacuzzi weight limits."
                     </p>
                     <p>
-                        <strong>Michel:</strong> "Madame, the waitlist is two years. We are building busses for [Major Pop Star] and [Famous Rock Band]. We cannot bump you."
+                        The door opened. Holly O'Connell (Age 33) walked in. She didn't have an entourage. She didn't have a translator. She was holding a bag of bagels from St-Viateur.
                     </p>
                     <p>
-                        <strong>Holly:</strong> "I don't want a bus. I want a tank that looks like a bus. And I want the frame modified <em>before</em> the shell goes on."
+                        <strong>Holly (in flawless Québécois):</strong> "Bonjour, Michel. Désolée du retard, le trafic sur la 20 était l'enfer." <br>
+                        <span class="small text-muted">(Hi Michel. Sorry I'm late, traffic on the 20 was hell.)</span>
                     </p>
                     <p>
-                        She slid a cashier's check across the desk. It was for the full purchase price of the chassis, plus a 40% "Expedited Engineering" fee.
+                        Michel blinked. He sat up straighter. "Madame O'Connell? You... speak our language?"
+                    </p>
+                    <p>
+                        <strong>Holly:</strong> "We just re-recorded our entire setlist in French so CHOM 97.7 could play us during the drive-time block. We don't do things halfway, Michel."
+                    </p>
+                    <p>
+                        She sat down and slid a folder across the desk. It wasn't a rider full of demands. It was a structural engineering schematic.
                     </p>
                     <p class="fst-italic text-body-secondary">
-                        "There is a pop star in Line 1," Holly said calmly. "He wants a jacuzzi in the back. That implies water weight. That implies frame stress. I predict his order will be... problematic. My order is simple: Steel. Hydraulics. Safety."
+                        "I know you have a waitlist," Holly said (still in French). "I know the Pop Star wants a swimming pool. I just want a chassis that won't twist when I put a 400-pound lift in the side door. I want steel, Michel. Just steel."
                     </p>
                 </div>
             </div>
 
             <div class="alert alert-success border-success-subtle d-flex align-items-center shadow-sm">
-                <i class="fa-solid fa-check-circle me-3 fs-3 text-success"></i>
+                <i class="fa-solid fa-handshake-simple me-3 fs-3 text-success"></i>
                 <div>
-                    <strong>The Handshake:</strong> Michel canceled the Pop Star's order that afternoon citing "engineering incompatibility." He put the O'Connell "Iron Horse" into production immediately.
+                    <strong>The Outcome:</strong> Michel canceled the Pop Star's order that afternoon citing "irreconcilable engineering differences." He moved the O'Connell "Iron Horse" to Bay 1 immediately.
                 </div>
             </div>
 
@@ -60,14 +67,10 @@ $pageTitle = "Lore: The Sainte-Claire Protocol (2002)";
                 </div>
                 <div class="card-body p-4">
                     <p>
-                        When Holly returned 16 years later to commission <strong>Unit 01 (The Sovereign)</strong>, she didn't have to introduce herself.
+                        When Holly returned 16 years later to commission <strong>Unit 01 (The Sovereign)</strong>, the factory didn't ask for a deposit.
                     </p>
                     <p>
-                        Michel (now the VP of Operations) walked out onto the factory floor.
-                        <br><span class="text-info fst-italic">"L'équipe O'Connell est arrivée!"</span> (The O'Connell Team has arrived!) he shouted to the floor crew.
-                    </p>
-                    <p class="mb-0 fst-italic text-white-50">
-                        They didn't even check the credit score. They just started cutting the steel.
+                        The floor crew remembered the American band that ate smoked meat with them in the breakroom and spoke their language. They started cutting the steel before the contract was even signed.
                     </p>
                 </div>
             </div>
