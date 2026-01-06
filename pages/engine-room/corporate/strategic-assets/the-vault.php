@@ -10,6 +10,7 @@ $pageTitle = "The Vault - Master Archives";
 <style>
     /* THEME: "Cold Storage" */
     .vault-hero {
+        /* High contrast text overlay background */
         background: linear-gradient(rgba(13, 20, 30, 0.9), rgba(13, 20, 30, 0.95)), 
                     url('https://assets.raggiesoft.com/stardust-engine/images/corporate/server-room.jpg');
         background-size: cover;
@@ -21,12 +22,19 @@ $pageTitle = "The Vault - Master Archives";
 
     .spec-card {
         border-left: 4px solid var(--bs-secondary);
-        transition: transform 0.2s ease, border-color 0.2s ease;
+        background-color: var(--bs-body-tertiary);
     }
     
-    .spec-card:hover {
-        transform: translateX(5px);
-        border-left-color: var(--bs-info);
+    /* MOTION CONTROL: Only animate if user has not requested reduced motion */
+    @media (prefers-reduced-motion: no-preference) {
+        .spec-card {
+            transition: transform 0.2s ease, border-color 0.2s ease;
+        }
+        
+        .spec-card:hover {
+            transform: translateX(5px);
+            border-left-color: var(--bs-info);
+        }
     }
 
     .sun-ray-badge {
@@ -43,7 +51,7 @@ $pageTitle = "The Vault - Master Archives";
             <i class="fa-duotone fa-vault fa-4x text-info"></i>
         </div>
         <h1 class="display-4 fw-bold text-uppercase letter-spacing-1 mb-2">The Engine Room Archives</h1>
-        <p class="lead text-white-50 mx-auto" style="max-width: 700px; font-family: 'Georgia', serif;">
+        <p class="lead text-light mx-auto" style="max-width: 700px; font-family: 'Georgia', serif;">
             "The memory of the music is fragile. We built a fortress to protect it."
         </p>
         <div class="mt-4">
@@ -79,7 +87,7 @@ $pageTitle = "The Vault - Master Archives";
 
             <div class="card mb-4 border-0 shadow-sm bg-body-tertiary border-start border-4 border-success">
                 <div class="card-body p-4">
-                    <div class="d-flex justify-content-between align-items-center mb-3">
+                    <div class="d-flex justify-content-between align-items-center mb-3 flex-wrap gap-2">
                         <div class="d-flex align-items-center">
                             <i class="fa-solid fa-hands-holding-circle text-success me-3 fs-3"></i>
                             <h5 class="fw-bold text-body-emphasis mb-0">Collection B: The Sun-Ray Repatriation</h5>
@@ -92,7 +100,7 @@ $pageTitle = "The Vault - Master Archives";
                         Following the 2019 acquisition of Omni-Global Media's distressed assets, The Vault serves as the secure holding facility for the <strong>Sun-Ray Catalog</strong>.
                     </p>
                     <div class="ms-5 p-3 bg-white border rounded">
-                        <p class="small text-muted mb-0">
+                        <p class="small text-dark mb-0">
                             <strong>Inventory:</strong> Master recordings for 14 "Legacy" bands previously held as collateral by predatory lenders.
                             <br><strong>Protocol:</strong> These assets are stored at zero cost to the artists until they can be legally repatriated to their creators for the symbolic fee of $1.00. We are keeping them safe until they come home.
                         </p>
@@ -111,12 +119,12 @@ $pageTitle = "The Vault - Master Archives";
         </div>
 
         <div class="col-md-6 col-lg-4">
-            <div class="card h-100 bg-body-tertiary spec-card shadow-sm">
+            <div class="card h-100 spec-card shadow-sm">
                 <div class="card-body">
                     <h6 class="fw-bold text-uppercase text-info mb-2">
                         <i class="fa-solid fa-snowflake me-2"></i>Cold Storage
                     </h6>
-                    <p class="small text-muted mb-0">
+                    <p class="small text-body-secondary mb-0">
                         <strong>Temp:</strong> 55°F (13°C) Constant.<br>
                         <strong>Humidity:</strong> 35% RH (+/- 2%).<br>
                         This specific micro-climate prevents "Sticky Shed Syndrome" (binder hydrolysis), ensuring analog tapes from the 90s remain playable for decades.
@@ -126,12 +134,12 @@ $pageTitle = "The Vault - Master Archives";
         </div>
 
         <div class="col-md-6 col-lg-4">
-            <div class="card h-100 bg-body-tertiary spec-card shadow-sm">
+            <div class="card h-100 spec-card shadow-sm">
                 <div class="card-body">
                     <h6 class="fw-bold text-uppercase text-danger mb-2">
                         <i class="fa-solid fa-fire-extinguisher me-2"></i>Fire Suppression
                     </h6>
-                    <p class="small text-muted mb-0">
+                    <p class="small text-body-secondary mb-0">
                         <strong>System:</strong> Novec 1230 (Clean Agent).<br>
                         Traditional water sprinklers destroy tape. In the event of a thermal anomaly, the room is flooded with inert gas that extinguishes fire instantly without damaging the magnetic media.
                     </p>
@@ -140,12 +148,12 @@ $pageTitle = "The Vault - Master Archives";
         </div>
 
         <div class="col-md-6 col-lg-4">
-            <div class="card h-100 bg-body-tertiary spec-card shadow-sm">
+            <div class="card h-100 spec-card shadow-sm">
                 <div class="card-body">
                     <h6 class="fw-bold text-uppercase text-secondary mb-2">
                         <i class="fa-solid fa-magnet me-2"></i>Faraday Shielding
                     </h6>
-                    <p class="small text-muted mb-0">
+                    <p class="small text-body-secondary mb-0">
                         <strong>Protection:</strong> Class-A EMF Shielding.<br>
                         The vault walls are lined with copper mesh to create a Faraday Cage, protecting the magnetic integrity of the tapes from solar flares or electromagnetic pulses (EMP).
                     </p>
@@ -156,20 +164,30 @@ $pageTitle = "The Vault - Master Archives";
 
     <div class="row justify-content-center">
         <div class="col-lg-10">
-            <div class="alert alert-dark d-flex align-items-center shadow p-4">
-                <i class="fa-duotone fa-key fa-3x text-warning me-4"></i>
-                <div>
-                    <h5 class="fw-bold text-uppercase text-warning mb-1">The "Two-Key" Security Protocol</h5>
-                    <p class="text-white-50 mb-0">
-                        Access to the physical Master Vault is physically impossible for a single individual. The blast door utilizes a dual-lock mechanism. Opening the vault requires the simultaneous presence and physical keys of:
-                    </p>
-                    <div class="mt-3 font-monospace small text-white">
-                        1. <strong>The Trustee</strong> (Holly O'Connell)<br>
-                        2. <strong>The Principal</strong> (Ryan O'Connell)
+            <div class="card bg-dark text-white border-warning shadow">
+                <div class="card-body p-4 d-flex align-items-center">
+                    <div class="flex-shrink-0 me-4">
+                        <i class="fa-duotone fa-key fa-3x text-warning"></i>
                     </div>
-                    <p class="mt-2 small text-muted fst-italic">
-                        *This ensures that no "Remastered" albums or "Greatest Hits" compilations can ever be released without the direct consent of the artist.
-                    </p>
+                    <div>
+                        <h5 class="fw-bold text-uppercase text-warning mb-1">The "Two-Key" Security Protocol</h5>
+                        <p class="text-white-50 mb-3">
+                            Access to the physical Master Vault is impossible for a single individual. The blast door utilizes a dual-lock mechanism. Opening the vault requires the simultaneous presence and physical keys of:
+                        </p>
+                        <div class="d-flex gap-4 font-monospace small">
+                            <div>
+                                <i class="fa-solid fa-user-shield me-2 text-warning"></i>
+                                <strong>The Trustee</strong> (Holly O'Connell)
+                            </div>
+                            <div>
+                                <i class="fa-solid fa-user-music me-2 text-warning"></i>
+                                <strong>The Principal</strong> (Ryan O'Connell)
+                            </div>
+                        </div>
+                        <p class="mt-3 small text-white-50 fst-italic mb-0">
+                            *This ensures that no "Remastered" albums or "Greatest Hits" compilations can ever be released without the direct consent of the artist.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
