@@ -8,28 +8,16 @@ $pageTitle = "Stardust Studios - Corporate HQ & Production";
 ?>
 
 <style>
-    /* PAGE-SPECIFIC STYLES */
-    /* Using CSS Variables for Adaptive Theming */
-    
-    .warehouse-hero {
-        /* Force a dark industrial look for the header only, but maintain high contrast */
-        background: linear-gradient(rgba(33, 37, 41, 0.9), rgba(33, 37, 41, 0.95)), 
-                    url('https://assets.raggiesoft.com/stardust-engine/images/corporate/warehouse-exterior.jpg');
-        background-size: cover;
-        background-position: center;
-        padding: 6rem 2rem;
-        border-bottom: 6px solid var(--bs-warning);
-        color: #f8f9fa; /* Explicit light text on dark background is WCAG compliant */
-    }
-
-    /* Card Hover Effects that work in both modes */
-    .sector-card {
-        transition: transform 0.2s ease, box-shadow 0.2s ease;
-    }
-    .sector-card:hover {
-        transform: translateY(-5px);
-        box-shadow: var(--bs-box-shadow-lg) !important;
-        border-color: var(--bs-primary) !important;
+    /* Motion Control: Only animate if user hasn't requested reduced motion */
+    @media (prefers-reduced-motion: no-preference) {
+        .sector-card {
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        .sector-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--bs-box-shadow-lg) !important;
+            border-color: var(--bs-primary) !important;
+        }
     }
 
     /* Blueprint Markers */
@@ -45,29 +33,22 @@ $pageTitle = "Stardust Studios - Corporate HQ & Production";
     }
 </style>
 
-<div class="warehouse-hero text-center mb-5">
-    <div class="container">
-        <div class="mb-3">
-            <i class="fa-duotone fa-warehouse fa-4x text-secondary"></i>
-        </div>
-        <h1 class="display-4 fw-bold text-uppercase letter-spacing-2 mb-2">Stardust Studios</h1>
-        <p class="lead font-monospace text-warning mb-4">
-            <i class="fa-solid fa-location-dot me-2"></i>Falling Branch Industrial Park
-        </p>
-        <div class="d-inline-flex gap-2 align-items-center bg-black bg-opacity-50 px-4 py-2 rounded-pill border border-secondary">
-            <span class="text-uppercase small fw-bold text-light">Zoning Status:</span>
-            <span class="badge bg-success text-white">Live / Work Compliant</span>
-        </div>
-    </div>
-</div>
-
-<div class="container pb-5">
+<div class="container py-5">
     
     <div class="row justify-content-center mb-5">
-        <div class="col-lg-9 text-center">
-            <h2 class="h4 text-body-emphasis fw-bold text-uppercase mb-3">The Nerve Center</h2>
-            <p class="fs-5 text-body-secondary">
-                Following the 2013 restructuring, all commercial operations were relocated from the family residence to this secure facility. It serves as the Global Headquarters for the <strong>O'Connell Family Trust</strong> and the rehearsal home for <strong>The Stardust Engine</strong>.
+        <div class="col-lg-9">
+            <div class="d-flex align-items-center mb-3">
+                <span class="badge bg-warning text-dark border border-dark rounded-pill px-3 py-2 me-3">
+                    <i class="fa-duotone fa-warehouse me-2"></i>Commercial Zone
+                </span>
+                <span class="d-inline-flex gap-2 align-items-center border border-success text-success px-3 py-1 rounded-pill small fw-bold">
+                    <i class="fa-solid fa-check-circle"></i> Live/Work Compliant
+                </span>
+            </div>
+            <h1 class="display-4 fw-bold text-uppercase mb-2">Stardust Studios</h1>
+            <p class="lead text-body-secondary font-monospace">
+                Falling Branch Industrial Park, Blacksburg, VA.<br>
+                The nerve center. Following the 2013 restructuring, all commercial operations and the family's emergency retreat were relocated here.
             </p>
         </div>
     </div>

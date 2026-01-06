@@ -12,11 +12,17 @@ $pageTitle = "Property Profile: 512 Progress St NE (The Fortress)";
     .blueprint-card {
         border-left: 4px solid var(--bs-secondary);
         background-color: var(--bs-body-tertiary);
-        transition: transform 0.2s ease;
     }
-    .blueprint-card:hover {
-        transform: translateX(5px);
-        border-left-color: var(--bs-primary);
+    
+    /* Motion Control: Only animate if user hasn't requested reduced motion */
+    @media (prefers-reduced-motion: no-preference) {
+        .blueprint-card {
+            transition: transform 0.2s ease;
+        }
+        .blueprint-card:hover {
+            transform: translateX(5px);
+            border-left-color: var(--bs-primary);
+        }
     }
     
     .blueprint-card .icon-box {
