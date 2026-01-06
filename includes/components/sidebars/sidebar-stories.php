@@ -9,27 +9,27 @@ $current_req = $_SERVER['REQUEST_URI'];
 $storyLinks = [
     'history' => [
         'title' => 'Full History',
-        'url' => '/story/overview', // Acts as the section home
+        'url' => '/engine-room/artists/stardust-engine/story/overview', // Acts as the section home
         'icon' => 'fa-duotone fa-book-open'
     ],
     'cpi' => [
         'title' => 'CPI & The Forgers',
-        'url' => '/story/cpi',
+        'url' => '/engine-room/artists/stardust-engine/story/cpi',
         'icon' => 'fa-duotone fa-school'
     ],
     'crash-of-90' => [
         'title' => 'The Crash of \'90',
-        'url' => '/story/crash-of-90',
+        'url' => '/engine-room/artists/stardust-engine/story/crash-of-90',
         'icon' => 'fa-duotone fa-car-crash'
     ],
     'friction' => [
         'title' => 'The Friction Catastrophe',
-        'url' => '/story/friction',
+        'url' => '/engine-room/artists/stardust-engine/story/friction',
         'icon' => 'fa-duotone fa-fire'
     ],
     'refusal' => [
         'title' => 'The $150M Refusal',
-        'url' => '/story/nine-figure-refusal',
+        'url' => '/engine-room/artists/stardust-engine/story/nine-figure-refusal',
         'icon' => 'fa-duotone fa-file-invoice-dollar'
     ],
     'ad-astra' => [
