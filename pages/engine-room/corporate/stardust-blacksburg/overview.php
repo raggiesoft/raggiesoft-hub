@@ -82,63 +82,6 @@ $pageTitle = "Stardust Blacksburg - The Ironwood Collective";
         </div>
     </div>
 
-    <div class="row justify-content-center mb-5">
-        <div class="col-lg-10">
-            <h3 class="h5 text-uppercase text-body-secondary border-bottom pb-2 mb-4">Strategic Holdings</h3>
-            <div class="row g-4">
-                
-                <div class="col-md-6">
-                    <a href="/engine-room/corporate/stardust-blacksburg/the-fortress" class="text-decoration-none">
-                        <div class="card h-100 property-card shadow-sm">
-                            <div class="card-body p-4">
-                                <div class="d-flex align-items-center mb-3">
-                                    <div class="p-3 bg-body-secondary rounded me-3">
-                                        <i class="fa-duotone fa-house-chimney fa-2x text-primary"></i>
-                                    </div>
-                                    <div>
-                                        <h5 class="fw-bold text-body-emphasis mb-0">The Fortress</h5>
-                                        <small class="font-monospace text-muted">ID: PCC-01</small>
-                                    </div>
-                                </div>
-                                <p class="card-text text-body-secondary small">
-                                    512 Progress St NE. The original O'Connell residence. Maintained as a private sanctuary and historical asset.
-                                </p>
-                                <div class="mt-3">
-                                    <span class="badge bg-secondary text-white border border-white">Residential Zone</span>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="col-md-6">
-                    <a href="/engine-room/corporate/stardust-studios" class="text-decoration-none">
-                        <div class="card h-100 property-card shadow-sm" style="border-left-color: var(--bs-warning);">
-                            <div class="card-body p-4">
-                                <div class="d-flex align-items-center mb-3">
-                                    <div class="p-3 bg-body-secondary rounded me-3">
-                                        <i class="fa-duotone fa-warehouse fa-2x text-warning"></i>
-                                    </div>
-                                    <div>
-                                        <h5 class="fw-bold text-body-emphasis mb-0">Stardust Studios</h5>
-                                        <small class="font-monospace text-muted">Falling Branch Ind. Park</small>
-                                    </div>
-                                </div>
-                                <p class="card-text text-body-secondary small">
-                                    12,000 sq. ft. commercial facility. Houses the corporate headquarters, production floor, and fleet maintenance.
-                                </p>
-                                <div class="mt-3">
-                                    <span class="badge bg-warning text-dark border border-dark">Commercial Zone</span>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-            </div>
-        </div>
-    </div>
-
     <div class="row g-4 mb-5">
         
         <div class="col-md-4">
