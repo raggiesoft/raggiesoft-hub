@@ -2,185 +2,167 @@
 // pages/engine-room/corporate/fleet.php
 // The Logistics Monitor.
 // Managed by: Justin Miller.
-// Note: Unit 02 is now a Museum Piece (Commonwealth Coach & Trolley).
-// Updates: "Ground-Up" Commission status and Québec Origin data added.
+// Context: The movement of the "Ironhead" assets.
+// Protocol: Ryan O'Connell travels ONLY via heavy fleet.
 
 $pageTitle = "Fleet Command // T-Logistics";
 ?>
 
 <style>
     /* THEME: "BIOS / TUI" (Text User Interface) */
+    /* We force a dark theme for the terminal window to maintain the aesthetic */
     .fleet-terminal {
-        background-color: #000000;
-        color: #cccccc;
+        background-color: #0f0f0f; /* Deep Black */
+        color: #e0e0e0; /* High Contrast Grey */
         font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
         min-height: 100vh;
         overflow-x: hidden;
-        border: 2px solid #555;
+        border: 2px solid #333;
+        padding-bottom: 4rem;
     }
 
     .tui-window {
-        border: 1px solid #aaaaaa;
-        background: #111;
-        box-shadow: 10px 10px 0px rgba(50, 50, 50, 0.5);
+        border: 1px solid #555;
+        background: #1a1a1a;
         margin-bottom: 2rem;
     }
 
     .tui-header {
-        background-color: #aaaaaa;
-        color: #000000;
-        padding: 2px 10px;
-        text-align: center;
+        background-color: #333;
+        color: #fff;
+        padding: 5px 15px;
         font-weight: bold;
         text-transform: uppercase;
         letter-spacing: 2px;
+        border-bottom: 1px solid #555;
+        display: flex;
+        justify-content: space-between;
     }
 
-    .tui-body {
-        padding: 15px;
-    }
+    /* Status Indicators */
+    .stat-ok { color: #198754; font-weight: bold; } /* Green */
+    .stat-warn { color: #ffc107; font-weight: bold; } /* Yellow */
+    .stat-crit { color: #dc3545; font-weight: bold; } /* Red */
+    .stat-idle { color: #6c757d; } /* Grey */
 
-    .stat-label { color: #55ffff; } /* Cyan */
-    .stat-ok    { color: #55ff55; } /* Green */
-    .stat-warn  { color: #ffff55; } /* Yellow */
-    .stat-off   { color: #cd7f32; } /* Bronze (Historical/Museum) */
-    .stat-ext   { color: #ff55ff; } /* Magenta (External Assets) */
-    .stat-info  { color: #ffffff; }
-
-    .ascii-bar { color: #55ff55; font-weight: bold; }
+    .ascii-bar { font-family: monospace; letter-spacing: -1px; }
 </style>
 
-<div class="fleet-terminal p-3">
+<div class="fleet-terminal container-fluid py-4">
     
-    <div class="d-flex justify-content-between border-bottom border-white pb-1 mb-4 text-uppercase small">
-        <div>
-            <span>LOGISTICS_DAEMON_V2.7</span>
-        </div>
-        <div>
-            USER: J_MILLER [ADMIN]
+    <div class="row">
+        <div class="col-12 mb-4 text-center">
+            <h1 class="h3 text-uppercase fw-bold mb-0">Stardust Logistics // T-Net</h1>
+            <p class="small text-secondary mb-0">System Time: <?php echo date('H:i:s T'); ?></p>
         </div>
     </div>
 
-    <div class="container-fluid px-0">
-        <div class="row g-4">
-            
-            <div class="col-lg-6">
-                <div class="tui-window">
-                    <div class="tui-header">[ INTERNAL_FLEET (CUSTOM COMMISSION) ]</div>
-                    <div class="tui-body">
-                        
-                        <div class="row mb-3 border-bottom border-secondary pb-3">
-                            <div class="col-12 mb-1"><strong class="text-white">UNIT_01: THE SOVEREIGN</strong></div>
-                            <div class="col-md-6">
-                                <span class="stat-label">TYPE:</span> 2019 Prevost H3-45<br>
-                                <span class="stat-label">BUILD:</span> Ground-Up Custom
-                            </div>
-                            <div class="col-md-6 text-end">
-                                <span class="stat-ok">STATUS: ACTIVE</span><br>
-                                <span class="small text-muted">LOC: Blacksburg HQ</span>
-                            </div>
-                            <div class="col-12 mt-2 small text-muted">
-                                > SPECS: Integrated Hydraulic Lift (Factory Install). Wide-aisle chassis config.
-                            </div>
-                        </div>
+    <div class="row justify-content-center">
+        <div class="col-lg-10">
 
-                        <div class="row">
-                            <div class="col-12 mb-1">
-                                <strong class="text-muted">UNIT_02: THE IRON HORSE</strong>
-                                <span class="badge bg-secondary float-end">MUSEUM ARTIFACT</span>
-                            </div>
-                            <div class="col-md-6">
-                                <span class="stat-label" style="color: #aaa;">TYPE:</span> 2002 Prevost H3-45<br>
-                                <span class="stat-label" style="color: #aaa;">BUILD:</span> The Prototype (Custom)
-                            </div>
-                            <div class="col-md-6 text-end">
-                                <span class="stat-off">STATUS: DONATED</span><br>
-                                <span class="small text-muted">LOC: Cwlth. Coach & Trolley (Roanoke)</span>
-                            </div>
-                            <div class="col-12 mt-2 small text-muted font-monospace border-top border-secondary pt-2">
-                                <span class="text-white">HISTORICAL NOTE:</span> Commissioned NEW in 2002. Not a retrofit. 
-                                <br>> <span class="stat-off">Exhibit:</span> "The First Accessible Tour Bus."
-                            </div>
-                        </div>
-
-                    </div>
+            <div class="tui-window">
+                <div class="tui-header">
+                    <span>UNIT_01: "The Sovereign"</span>
+                    <span>STATUS: ACTIVE</span>
                 </div>
-
-                <div class="tui-window">
-                    <div class="tui-header">[ FACTORY_DATA // SAINTE-CLAIRE, QC ]</div>
-                    <div class="tui-body small font-monospace">
-                        <div class="row">
-                            <div class="col-12 mb-2 text-white">
-                                <i class="fa-solid fa-handshake me-2"></i>CONTRACT NEGOTIATION LOGS
+                <div class="p-3 small">
+                    <div class="row">
+                        <div class="col-md-3 text-center border-end border-secondary">
+                            <i class="fa-solid fa-bus fa-4x text-white mb-2"></i>
+                            <br><strong>SAINTE-CLAIRE H3-CUSTOM</strong>
+                            <br><span class="badge bg-success text-white rounded-0 mt-2">FLEET COMMAND</span>
+                        </div>
+                        <div class="col-md-9 ps-md-4">
+                            <div class="row mb-2">
+                                <div class="col-3 text-secondary">CHASSIS:</div>
+                                <div class="col-9">Custom "Ground-Up" Commission (2018)</div>
                             </div>
-                            <div class="col-md-6">
-                                <span class="stat-label">LOCATION:</span> Prevost Car, Inc.<br>
-                                <span class="stat-label">LANGUAGE:</span> <span class="stat-info">Français (Québécois)</span>
+                            <div class="row mb-2">
+                                <div class="col-3 text-secondary">LOCATION:</div>
+                                <div class="col-9 text-warning">STARDUST STUDIOS (Blacksburg, VA)</div>
                             </div>
-                            <div class="col-md-6 text-end">
-                                <span class="stat-label">TRANSLATOR:</span> <span class="stat-warn">NONE (Not Required)</span>
+                            <div class="row mb-2">
+                                <div class="col-3 text-secondary">ODOMETER:</div>
+                                <div class="col-9">142,891 MI</div>
                             </div>
-                            <div class="col-12 mt-2 pt-2 border-top border-secondary text-muted">
-                                > NOTE: Client (The Stardust Engine) conducted all engineering reviews in local dialect.
-                                <br>> <span class="stat-ok">TEFAQ LEVEL:</span> C2 (Mastery) - All 5 Members.
-                                <br>> RESULT: Mutual respect established with floor crew. Build priority: HIGHEST.
+                            <div class="row mb-2">
+                                <div class="col-3 text-secondary">SPECS:</div>
+                                <div class="col-9">
+                                    Twin-Generator (24kW) // Hydraulic Leveling // Secure Comms Array
+                                </div>
+                            </div>
+                            <hr class="border-secondary">
+                            <div class="row">
+                                <div class="col-12">
+                                    <span class="stat-ok">[SYSTEM OK]</span> Engine
+                                    <span class="stat-ok ms-3">[SYSTEM OK]</span> HVAC
+                                    <span class="stat-ok ms-3">[SYSTEM OK]</span> Hydraulics
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-
             </div>
 
-            <div class="col-lg-6">
-                <div class="tui-window" style="border-color: #ff55ff;">
-                    <div class="tui-header" style="background-color: #ff55ff;">[ CIVIC-LINK INTEGRATION (PUBLIC) ]</div>
-                    <div class="tui-body">
-                        
-                        <div class="alert alert-dark border-0 p-2 mb-3 small font-monospace text-muted">
-                            > API_LINK: CIVIC-TRANSIT_LA (LIVE)<br>
-                            > FILTER: ACCESSIBILITY_MODE = TRUE<br>
-                            > NOTE: "The city manages the fleet; we just manage the schedule."
+            <div class="tui-window">
+                <div class="tui-header">
+                    <span>UNIT_03: "The Interceptor"</span>
+                    <span>STATUS: STANDBY</span>
+                </div>
+                <div class="p-3 small">
+                    <div class="row">
+                        <div class="col-md-3 text-center border-end border-secondary">
+                            <i class="fa-solid fa-van-shuttle fa-4x text-white mb-2"></i>
+                            <br><strong>CUSTOM LWB TRANSPORT</strong>
+                            <br><span class="badge bg-secondary rounded-0 mt-2 text-white">TACTICAL</span>
                         </div>
-
-                        <div class="row mb-3 border-bottom border-secondary pb-3">
-                            <div class="col-12 mb-1">
-                                <strong class="stat-ext">ROUTE_720 (The Rapid)</strong>
-                                <span class="badge bg-secondary float-end">BUS</span>
+                        <div class="col-md-9 ps-md-4">
+                            <div class="row mb-2">
+                                <div class="col-3 text-secondary">TYPE:</div>
+                                <div class="col-9">Modified High-Roof Logistics Van</div>
                             </div>
-                            <div class="col-md-6">
-                                <span class="stat-label">NEXT ARRIVAL:</span> <span class="text-white">2 MINS</span><br>
-                                <span class="stat-label">STOP:</span> Wilshire / Westwood
+                            <div class="row mb-2">
+                                <div class="col-3 text-secondary">ROLE:</div>
+                                <div class="col-9">Short-Range Extraction // Medical Support</div>
                             </div>
-                            <div class="col-md-6 text-end">
-                                <span class="stat-ok">LIFT: OPERATIONAL</span><br>
-                                <span class="ascii-bar">[||||......] CAP: 40%</span>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-12 mb-1">
-                                <strong class="stat-ext">EXPO_LINE (The Rail)</strong>
-                                <span class="badge bg-secondary float-end">TRAIN</span>
-                            </div>
-                            <div class="col-md-6">
-                                <span class="stat-label">NEXT ARRIVAL:</span> <span class="text-white">ON TIME</span><br>
-                                <span class="stat-label">STATION:</span> Culver City
-                            </div>
-                            <div class="col-md-6 text-end">
-                                <span class="stat-ok">ELEVATORS: OK</span><br>
-                                <span class="ascii-bar">[|||.......] CAP: 30%</span>
+                            <div class="alert alert-dark border-secondary p-2 mb-0 mt-3">
+                                <i class="fa-solid fa-triangle-exclamation text-warning me-2"></i>
+                                <strong>PROTOCOL NOTE:</strong> This vehicle is the only approved "Light Transport" for Ryan O'Connell.
                             </div>
                         </div>
-
                     </div>
+                </div>
+            </div>
+
+            <div class="tui-window border-danger">
+                <div class="tui-header bg-danger text-white">
+                    <span><i class="fa-solid fa-shield-check me-2"></i>SECURITY BULLETIN</span>
+                    <span>PRIORITY: HIGH</span>
+                </div>
+                <div class="p-3 font-monospace small">
+                    <p class="mb-2 text-danger fw-bold">SUBJECT: POV (Personal Owned Vehicle) DISINFORMATION</p>
+                    <p class="mb-2">
+                        <strong>CONTEXT:</strong> Recent social media reports (Google Reviews) allege sighting "Ryan's Car" at 1200 Industrial Park Rd.
+                    </p>
+                    <p class="mb-3">
+                        <strong>CORRECTION:</strong> Ryan O'Connell does not own, operate, or travel in a standard passenger sedan. Due to T-10 paralysis and security protocols, he travels exclusively in:
+                        <br>1. <strong>Unit 01</strong> (Heavy Coach)
+                        <br>2. <strong>Unit 03</strong> (Accessible Van)
+                    </p>
+                    <p class="mb-0 text-white-50">
+                        <em>Any report of a sports car or sedan belonging to the Principal is false.</em>
+                    </p>
                 </div>
             </div>
 
         </div>
     </div>
 
-    <div class="fixed-bottom bg-secondary text-black p-1 font-monospace small">
-        TERMINAL: TTY1 | CIVIC-API: CONNECTED | <span class="fw-bold">ACTIVE ASSETS: 1 (OWNED) + 2,400 (VIRTUAL)</span>
+    <div class="fixed-bottom bg-dark text-white border-top border-secondary p-2 font-monospace small">
+        <div class="container-fluid d-flex justify-content-between">
+            <span>TERMINAL: TTY1 (SECURE)</span>
+            <span>FLEET STATUS: <span class="text-success">READY</span></span>
+        </div>
     </div>
 
 </div>
