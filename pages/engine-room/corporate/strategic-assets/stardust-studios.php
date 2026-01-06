@@ -1,14 +1,26 @@
 <?php
-// pages/engine-room/corporate/stardust-studios/overview.php
+// pages/engine-room/corporate/strategic-assets/stardust-studios.php
 // Designation: Stardust Studios (The Warehouse)
 // Context: Falling Branch Industrial Park, Blacksburg, VA.
-// Configuration: 2013 Refit (Headquarters & Secure Living).
+// Access Level: RESTRICTED (Artists First Management Roster Only).
 
-$pageTitle = "Stardust Studios - Corporate HQ & Production";
+$pageTitle = "Stardust Studios - Global HQ & Production";
 ?>
 
 <style>
-    /* Motion Control: Only animate if user hasn't requested reduced motion */
+    /* PAGE-SPECIFIC STYLES */
+    
+    .warehouse-hero {
+        background: linear-gradient(rgba(33, 37, 41, 0.9), rgba(33, 37, 41, 0.95)), 
+                    url('https://assets.raggiesoft.com/stardust-engine/images/corporate/warehouse-exterior.jpg');
+        background-size: cover;
+        background-position: center;
+        padding: 6rem 2rem;
+        border-bottom: 6px solid var(--bs-warning);
+        color: #f8f9fa;
+    }
+
+    /* Card Hover Effects */
     @media (prefers-reduced-motion: no-preference) {
         .sector-card {
             transition: transform 0.2s ease, box-shadow 0.2s ease;
@@ -20,7 +32,6 @@ $pageTitle = "Stardust Studios - Corporate HQ & Production";
         }
     }
 
-    /* Blueprint Markers */
     .floor-badge {
         font-family: 'Courier New', monospace;
         font-weight: bold;
@@ -33,29 +44,48 @@ $pageTitle = "Stardust Studios - Corporate HQ & Production";
     }
 </style>
 
-<div class="container py-5">
+<div class="warehouse-hero text-center mb-5">
+    <div class="container">
+        <div class="mb-3">
+            <i class="fa-duotone fa-warehouse fa-4x text-secondary"></i>
+        </div>
+        <h1 class="display-4 fw-bold text-uppercase letter-spacing-2 mb-2">Stardust Studios</h1>
+        <p class="lead font-monospace text-warning mb-4">
+            <i class="fa-solid fa-location-dot me-2"></i>Falling Branch Industrial Park
+        </p>
+        <div class="d-inline-flex gap-2 align-items-center bg-black bg-opacity-50 px-4 py-2 rounded-pill border border-secondary">
+            <span class="text-uppercase small fw-bold text-light">Status:</span>
+            <span class="badge bg-danger text-white">PRIVATE FACILITY</span>
+        </div>
+    </div>
+</div>
+
+<div class="container pb-5">
     
     <div class="row justify-content-center mb-5">
-        <div class="col-lg-9">
-            <div class="d-flex align-items-center mb-3">
-                <span class="badge bg-warning text-dark border border-dark rounded-pill px-3 py-2 me-3">
-                    <i class="fa-duotone fa-warehouse me-2"></i>Commercial Zone
-                </span>
-                <span class="d-inline-flex gap-2 align-items-center border border-success text-success px-3 py-1 rounded-pill small fw-bold">
-                    <i class="fa-solid fa-check-circle"></i> Live/Work Compliant
-                </span>
-            </div>
-            <h1 class="display-4 fw-bold text-uppercase mb-2">Stardust Studios</h1>
-            <p class="lead text-body-secondary font-monospace">
-                Falling Branch Industrial Park, Blacksburg, VA.<br>
-                The nerve center. Following the 2013 restructuring, all commercial operations and the family's emergency retreat were relocated here.
+        <div class="col-lg-9 text-center">
+            <h2 class="h4 text-body-emphasis fw-bold text-uppercase mb-3">The Nerve Center</h2>
+            <p class="fs-5 text-body-secondary mb-4">
+                This 12,000 sq. ft. facility serves as the Global Headquarters for the <strong>O'Connell Family Trust</strong> and the primary rehearsal hangar for the <strong>Artists First Management</strong> roster.
             </p>
+            
+            <div class="alert alert-warning border-warning d-inline-block text-start shadow-sm" role="alert">
+                <div class="d-flex">
+                    <i class="fa-solid fa-hand-palm fa-2x me-3 mt-1"></i>
+                    <div>
+                        <h6 class="alert-heading fw-bold text-uppercase small">Booking Policy: Not For Hire</h6>
+                        <p class="small mb-0">
+                            Stardust Studios is a private asset. It is <strong>not available</strong> for commercial booking, hourly rental, or public tours. Access is strictly limited to artists currently signed to <strong>Artists First Management, LLC</strong>.
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
     <div class="d-flex align-items-center mb-4 pb-2 border-bottom border-secondary-subtle">
         <span class="floor-badge text-primary me-3">Level 1</span>
-        <h3 class="h5 text-uppercase text-body-emphasis mb-0">Commercial Operations</h3>
+        <h3 class="h5 text-uppercase text-body-emphasis mb-0">Operations & Production</h3>
     </div>
 
     <div class="row g-4 mb-5">
@@ -74,7 +104,7 @@ $pageTitle = "Stardust Studios - Corporate HQ & Production";
                     </p>
                     <ul class="list-unstyled small text-body-secondary mb-0 border-top border-secondary-subtle pt-3">
                         <li class="mb-2"><i class="fa-solid fa-check text-primary me-2"></i><strong>The War Board:</strong> Floor-to-ceiling tracking of global assets.</li>
-                        <li class="mb-2"><i class="fa-solid fa-check text-primary me-2"></i><strong>Secure Comms:</strong> Hardlined data link to the house (The Fortress).</li>
+                        <li class="mb-2"><i class="fa-solid fa-check text-primary me-2"></i><strong>Secure Comms:</strong> Hardlined data link to The Fortress.</li>
                         <li><i class="fa-solid fa-check text-primary me-2"></i><strong>The Vault:</strong> Fireproof storage for master tapes and deeds.</li>
                     </ul>
                 </div>
@@ -94,8 +124,8 @@ $pageTitle = "Stardust Studios - Corporate HQ & Production";
                         A cavernous, acoustically-isolated space designed to replicate stadium conditions.
                     </p>
                     <ul class="list-unstyled small text-body-secondary mb-0 border-top border-secondary-subtle pt-3">
-                        <li class="mb-2"><i class="fa-solid fa-check text-warning me-2"></i><strong>Floating Slab:</strong> Concrete floor isolated on rubber to prevent seismic vibration.</li>
-                        <li class="mb-2"><i class="fa-solid fa-check text-warning me-2"></i><strong>The Fleet Bay:</strong> Indoor parking/maintenance for the Tour Bus and accessible vans.</li>
+                        <li class="mb-2"><i class="fa-solid fa-check text-warning me-2"></i><strong>Exclusive Access:</strong> Available only to <em>The Stardust Engine</em>, <em>Mirage</em>, <em>Origin</em>, and <em>The Winter Palace</em>.</li>
+                        <li class="mb-2"><i class="fa-solid fa-check text-warning me-2"></i><strong>The Fleet Bay:</strong> Indoor maintenance for the tour buses.</li>
                         <li><i class="fa-solid fa-check text-warning me-2"></i><strong>Power:</strong> 3-Phase industrial mains with battery backup.</li>
                     </ul>
                 </div>
@@ -105,7 +135,7 @@ $pageTitle = "Stardust Studios - Corporate HQ & Production";
 
     <div class="d-flex align-items-center mb-4 pb-2 border-bottom border-danger-subtle">
         <span class="floor-badge text-danger me-3">Level 2</span>
-        <h3 class="h5 text-uppercase text-body-emphasis mb-0">Restricted Quarters (The Loft)</h3>
+        <h3 class="h5 text-uppercase text-body-emphasis mb-0">The Loft (Restricted)</h3>
     </div>
 
     <div class="card border-danger border-opacity-50 shadow-sm overflow-hidden mb-5">
@@ -113,13 +143,13 @@ $pageTitle = "Stardust Studios - Corporate HQ & Production";
             <div class="col-md-4 bg-body-secondary d-flex align-items-center justify-content-center p-5">
                 <div class="text-center">
                     <i class="fa-duotone fa-door-closed fa-5x text-danger opacity-50 mb-3"></i>
-                    <h5 class="fw-bold text-body-emphasis text-uppercase">Access Restricted</h5>
-                    <p class="small text-danger fw-bold font-monospace mb-0">TIER 1 PERSONNEL ONLY</p>
+                    <h5 class="fw-bold text-body-emphasis text-uppercase">Invitation Only</h5>
+                    <p class="small text-danger fw-bold font-monospace mb-0">FAMILY ESCORT REQUIRED</p>
                 </div>
             </div>
             <div class="col-md-8 p-4 p-lg-5 bg-body-tertiary">
                 <p class="text-body-secondary mb-4">
-                    Hidden behind a nondescript door labeled "Mechanical Storage" lies a fully furnished, luxury apartment. This space serves as an emergency retreat and long-term rehearsal residency. Access is via a biometric keypad or the freight elevator.
+                    Hidden behind a nondescript door labeled "Mechanical Storage" lies a fully furnished, luxury apartment. This space serves as an emergency retreat. Even artists signed to the label are <strong>prohibited</strong> from entering this level unless personally invited and escorted by a member of the O'Connell family.
                 </p>
                 
                 <div class="row g-4">
@@ -131,7 +161,7 @@ $pageTitle = "Stardust Studios - Corporate HQ & Production";
                                 <span class="fw-bold">1x King Bed</span>
                             </div>
                             <p class="small text-body-secondary mb-0">
-                                Configured for Ryan, Cassidy, and Holly. Features reinforced frame and adjacent medical supply storage.
+                                Configured for Ryan, Cassidy, and Holly.
                             </p>
                         </div>
                     </div>
@@ -144,7 +174,7 @@ $pageTitle = "Stardust Studios - Corporate HQ & Production";
                                 <span class="fw-bold">2x Full Beds</span>
                             </div>
                             <p class="small text-body-secondary mb-0">
-                                Sleeping quarters for Evan and Tyler Wright. Sound-dampened walls.
+                                Quarters for Evan and Tyler.
                             </p>
                         </div>
                     </div>
@@ -169,11 +199,12 @@ $pageTitle = "Stardust Studios - Corporate HQ & Production";
     <div class="row justify-content-center">
         <div class="col-lg-10">
             <div class="alert alert-secondary d-flex align-items-center p-4 rounded shadow-sm border-0 bg-body-secondary text-body-emphasis">
-                <i class="fa-duotone fa-bolt fa-3x me-4 text-warning"></i>
+                <i class="fa-duotone fa-cctv fa-3x me-4 text-secondary"></i>
                 <div>
-                    <h5 class="fw-bold text-uppercase mb-1">Off-Grid Capability</h5>
+                    <h5 class="fw-bold text-uppercase mb-1">Perimeter Security</h5>
                     <p class="mb-0 small opacity-75">
-                        The facility is backed by an industrial telecom-grade battery bank and a natural gas generator. In the event of a regional power failure, Stardust Studios can operate independently for 14 days.
+                        8-foot privacy fence. Automated gate entry. 
+                        <strong>Note to Solicitors:</strong> This facility is monitored by a closed-circuit system. Uninvited entry attempts will be prosecuted by Aethelgard Holdings.
                     </p>
                 </div>
             </div>
