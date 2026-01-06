@@ -54,10 +54,10 @@ $album_path_web = '/engine-room-records/artists/the-stardust-engine/1995-ad-astr
                         </div>
                         
                         <div class="mt-4">
-                            <a href="/engine-room/artists/stardust-engine/lore/nine-figure-refusal" class="btn btn-outline-danger btn-sm rounded-pill px-4 me-2">
+                            <a href="/engine-room/artists/stardust-engine/story/nine-figure-refusal" class="btn btn-outline-danger btn-sm rounded-pill px-4 me-2">
                                 <i class="fa-duotone fa-shield-halved me-2"></i>The 2018 Defense
                             </a>
-                            <a href="/engine-room/artists/stardust-engine/lore/ad-astra-lore" class="btn btn-outline-info btn-sm rounded-pill px-4">
+                            <a href="/engine-room/artists/stardust-engine/story/ad-astra" class="btn btn-outline-info btn-sm rounded-pill px-4">
                                 <i class="fa-duotone fa-book-sparkles me-2"></i>Mission Log
                             </a>
                         </div>
@@ -120,7 +120,7 @@ $album_path_web = '/engine-room-records/artists/the-stardust-engine/1995-ad-astr
                     <i class="fa-duotone fa-user-shield text-danger me-2"></i>
                     <strong class="text-danger">The "Section C" Incident:</strong>
                     <p class="small text-white mb-0 mt-1">
-                        In 2018, Omni-Global attempted to cut <strong>Part III: The Cosmos</strong> (07:00-12:00) to "optimize" the track. This attempt triggered the <a href="/engine-room/artists/stardust-engine/lore/nine-figure-refusal" class="alert-link text-white text-decoration-underline">$150M refusal meeting</a>. The band considers this section "sacred ground."
+                        In 2018, Omni-Global attempted to cut <strong>Part III: The Cosmos</strong> (07:00-12:00) to "optimize" the track. This attempt triggered the <a href="/engine-room/artists/stardust-engine/story/nine-figure-refusal" class="alert-link text-white text-decoration-underline">$150M refusal meeting</a>. The band considers this section "sacred ground."
                     </p>
                 </div>
 

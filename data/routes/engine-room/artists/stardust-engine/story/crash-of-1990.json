@@ -1,0 +1,21 @@
+{
+  "common": {
+    "site": "engine-room-records",
+    "showSidebar": true,
+    "sidebar": "engine-room/artists/stardust-engine/story/sidebar-nine-figure-refusal",
+    "siteName": "The Crash of 1990",
+    "headerMenu": "engine-room/artists/stardust-engine/story/header-nine-figure-refusal",
+    "footer": "engine-room/artists/stardust-engine/story/footer-nine-figure-refusal",
+    "navbarBrandLogo": "https://assets.raggiesoft.com/engine-room-records/images/logos/engine-room-records-logo.png",
+    "navbarBrandText": "<span class=\"d-none d-md-inline\">The </span>Crash of 1990",
+    "navbarBrandLink": "/engine-room/artists/stardust-engine",
+    "ogImage": "https://assets.raggiesoft.com/engine-room-records/artists/the-stardust-engine/social-preview.jpg",
+    "navbarBrandAlt": "Engine Room Records Official Seal",
+    "navbarBrandClass": "rounded-0 navbar-brand-corporate-img"
+  },
+
+  "/engine-room/artists/stardust-engine/story/crash-of-90": {
+    "title": "The Crash of 1990",
+    "ogDescription": "How The Stardust Engine survived their near-fatal 1990 incident."
+  }
+}
