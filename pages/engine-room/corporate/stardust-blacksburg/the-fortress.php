@@ -1,8 +1,8 @@
 <?php
 // pages/engine-room/corporate/stardust-blacksburg/the-fortress.php
-// Designation: PCC-01 (Primary Command Center)
-// Context: 512 Progress St NE. The "Grey Man" House.
-// Theme: "Camouflage" (Boring Exterior / High-Tech Interior).
+// Designation: PCC-01 (Primary Residence)
+// Context: 512 Progress St NE. The family home since 1985.
+// Status: "Grey Man" Residential Camouflage.
 
 $pageTitle = "Property Profile: 512 Progress St NE (The Fortress)";
 ?>
@@ -12,6 +12,11 @@ $pageTitle = "Property Profile: 512 Progress St NE (The Fortress)";
     .blueprint-card {
         border-left: 4px solid var(--bs-secondary);
         background-color: var(--bs-body-tertiary);
+        transition: transform 0.2s ease;
+    }
+    .blueprint-card:hover {
+        transform: translateX(5px);
+        border-left-color: var(--bs-primary);
     }
     
     .blueprint-card .icon-box {
@@ -25,12 +30,26 @@ $pageTitle = "Property Profile: 512 Progress St NE (The Fortress)";
         color: var(--bs-body-color);
     }
 
-    /* Floorplan Marker */
-    .marker-badge {
-        font-family: 'Courier New', monospace;
-        font-weight: bold;
-        text-transform: uppercase;
-        letter-spacing: 1px;
+    /* Timeline Styling */
+    .renovation-log {
+        border-left: 2px solid var(--bs-border-color);
+        margin-left: 1rem;
+        padding-left: 2rem;
+    }
+    .renovation-item {
+        position: relative;
+        margin-bottom: 2rem;
+    }
+    .renovation-item::before {
+        content: "";
+        position: absolute;
+        left: -2.4rem;
+        top: 0.25rem;
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background-color: var(--bs-primary);
+        border: 2px solid var(--bs-body-bg);
     }
 </style>
 
@@ -40,14 +59,14 @@ $pageTitle = "Property Profile: 512 Progress St NE (The Fortress)";
         <div class="col-lg-9">
             <div class="d-flex align-items-center mb-3">
                 <span class="badge bg-secondary text-white border border-white rounded-pill px-3 py-2 me-3">
-                    <i class="fa-solid fa-house-chimney me-2"></i>Residential Zone R-5
+                    <i class="fa-solid fa-house-chimney me-2"></i>Private Residence
                 </span>
-                <span class="font-monospace text-muted small">ID: PCC-01</span>
+                <span class="font-monospace text-muted small">Zone R-5</span>
             </div>
             <h1 class="display-4 fw-bold text-uppercase mb-2">The Fortress</h1>
             <p class="lead text-body-secondary font-monospace">
                 512 Progress St NE, Blacksburg, VA.<br>
-                To the neighbors, it's a quiet rental. To the Trust, it is the Capital City.
+                To the street, it's a 1900s farmhouse. Inside, it is a purpose-built accessible sanctuary.
             </p>
         </div>
     </div>
@@ -55,50 +74,83 @@ $pageTitle = "Property Profile: 512 Progress St NE (The Fortress)";
     <div class="row justify-content-center mb-5">
         <div class="col-lg-10">
             <div class="card shadow-lg border-0 overflow-hidden">
-                <div class="row g-0">
-                    <div class="col-md-5 position-relative">
-                        <div class="h-100 bg-secondary bg-opacity-25 d-flex align-items-center justify-content-center text-center p-5">
-                            <div>
-                                <i class="fa-duotone fa-house fa-5x text-secondary opacity-50 mb-3"></i>
-                                <p class="small text-muted font-monospace fst-italic">
-                                    IMG_EXT_01: White Vinyl Siding.<br>Standard Shingle Roof.<br>Invisible.
-                                </p>
+                <div class="card-header bg-black text-white border-bottom border-secondary py-3">
+                    <h5 class="fw-bold text-uppercase mb-0"><i class="fa-duotone fa-ruler-combined me-2 text-warning"></i>Current Layout (2013 Refit)</h5>
+                </div>
+                <div class="card-body p-0">
+                    <div class="table-responsive">
+                        <table class="table table-striped mb-0">
+                            <thead class="table-dark">
+                                <tr>
+                                    <th class="ps-4">Level</th>
+                                    <th>Designation</th>
+                                    <th>Key Features</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="ps-4 fw-bold font-monospace">Floor 2</td>
+                                    <td>The Quarters</td>
+                                    <td class="small">
+                                        <strong>Holly's Room:</strong> King Bed (Configured for emergency co-regulation).<br>
+                                        <strong>The Twins:</strong> Individual rooms for Tyler & Evan.<br>
+                                        <span class="text-muted fst-italic">Note: Office relocated to Warehouse in 2013.</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="ps-4 fw-bold font-monospace">Floor 1</td>
+                                    <td>The Barracks</td>
+                                    <td class="small">
+                                        <strong>Primary Bedroom:</strong> Shared Queen Bed (Wall-anchored) for Ryan & Cassidy.<br>
+                                        <strong>Hygiene:</strong> Zero-threshold roll-in wet room (Expanded into old pantry).<br>
+                                        <strong>Common:</strong> Kitchen & Dining.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="ps-4 fw-bold font-monospace">Basement</td>
+                                    <td>The Lounge</td>
+                                    <td class="small">
+                                        Finished living space. Sound-dampened media center.
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row justify-content-center mb-5">
+        <div class="col-lg-10">
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="card h-100 blueprint-card shadow-sm">
+                        <div class="card-body p-4">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="icon-box me-3"><i class="fa-solid fa-elevator"></i></div>
+                                <h5 class="fw-bold mb-0">Vertical Transport</h5>
                             </div>
+                            <p class="small text-body-secondary">
+                                <strong>System:</strong> Custom Hydraulic Drive (3-Stop).<br>
+                                <strong>Door Operation:</strong> Commercial-grade automatic sliding doors with pressure sensors. 
+                                <br><strong>Safety:</strong> Buttons configured as "Constant Pressure" (Dead Man) switches per residential code.
+                            </p>
                         </div>
                     </div>
-                    <div class="col-md-7 p-4 p-lg-5">
-                        <h3 class="h5 fw-bold text-uppercase border-bottom pb-2 mb-4">Strategic Overview</h3>
-                        
-                        <div class="d-flex align-items-start mb-4">
-                            <i class="fa-duotone fa-shield-check text-success fs-3 me-3 mt-1"></i>
-                            <div>
-                                <h5 class="fw-bold mb-1">The "Grey Man" Strategy</h5>
-                                <p class="small text-body-secondary mb-0">
-                                    Located 0.1 miles from the CPI campus. The constant foot traffic of students provides natural cover for the band's movements. A tour bus parked out front is dismissed as "Move-In Day."
-                                </p>
+                </div>
+                <div class="col-md-6">
+                    <div class="card h-100 blueprint-card shadow-sm">
+                        <div class="card-body p-4">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="icon-box me-3"><i class="fa-solid fa-wheelchair"></i></div>
+                                <h5 class="fw-bold mb-0">Exterior Access</h5>
                             </div>
+                            <p class="small text-body-secondary">
+                                <strong>The Ramp:</strong> Custom carpentry integrated into the wraparound porch. Painted to match existing trim. 
+                                <br><strong>Stealth:</strong> Hidden from street view by mature holly bushes. 1:12 gradient.
+                            </p>
                         </div>
-
-                        <div class="d-flex align-items-start mb-4">
-                            <i class="fa-duotone fa-network-wired text-primary fs-3 me-3 mt-1"></i>
-                            <div>
-                                <h5 class="fw-bold mb-1">Tier 1 Connectivity</h5>
-                                <p class="small text-body-secondary mb-0">
-                                    Connected directly to the university's internet backbone via private dark fiber buried under the backyard. Latency to the London Exchange: 72ms.
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="d-flex align-items-start">
-                            <i class="fa-duotone fa-wheelchair-move text-warning fs-3 me-3 mt-1"></i>
-                            <div>
-                                <h5 class="fw-bold mb-1">Stealth Accessibility</h5>
-                                <p class="small text-body-secondary mb-0">
-                                    No industrial ramps. The wraparound porch <em>is</em> the ramp, graded perfectly to code but disguised with traditional carpentry and holly bushes.
-                                </p>
-                            </div>
-                        </div>
-
                     </div>
                 </div>
             </div>
@@ -106,45 +158,43 @@ $pageTitle = "Property Profile: 512 Progress St NE (The Fortress)";
     </div>
 
     <div class="row justify-content-center">
-        <div class="col-lg-10">
-            <h3 class="h5 text-uppercase text-body-secondary border-bottom pb-2 mb-4">Internal Layout (Restricted)</h3>
-            
-            <div class="row g-4">
-                <div class="col-md-6">
-                    <div class="card h-100 blueprint-card shadow-sm">
-                        <div class="card-body p-4">
-                            <div class="d-flex justify-content-between align-items-start mb-3">
-                                <div class="icon-box"><i class="fa-solid fa-layer-group"></i></div>
-                                <span class="marker-badge text-primary">Floor 1</span>
-                            </div>
-                            <h5 class="fw-bold">Operations & Quarters</h5>
-                            <ul class="list-unstyled small text-body-secondary mt-3 mb-0">
-                                <li class="mb-2"><strong>The Bullpen (Living Room):</strong> Tactical meeting space. Touch-screen coffee table for logistics.</li>
-                                <li class="mb-2"><strong>The War Room (Dining Room):</strong> Holly's Office. Wall-to-wall whiteboards. Concealed lift access.</li>
-                                <li><strong>The Barracks (Parlor):</strong> Ryan & Cassidy's room. Positioned 15ft from the exit for rapid extraction.</li>
-                            </ul>
-                        </div>
-                    </div>
+        <div class="col-lg-8">
+            <h4 class="fw-bold text-uppercase border-bottom pb-2 mb-4 text-body-secondary">Property History Log</h4>
+            <div class="renovation-log">
+                
+                <div class="renovation-item">
+                    <span class="badge bg-secondary mb-2">1985</span>
+                    <h6 class="fw-bold">The Rental Era</h6>
+                    <p class="small text-muted mb-0">
+                        Rented from maternal aunt for $1/yr. Standard 3-bedroom configuration. Ryan occupies 2nd Floor bedroom.
+                    </p>
                 </div>
 
-                <div class="col-md-6">
-                    <div class="card h-100 blueprint-card shadow-sm" style="border-left-color: #dc3545;">
-                        <div class="card-body p-4">
-                            <div class="d-flex justify-content-between align-items-start mb-3">
-                                <div class="icon-box" style="background-color: rgba(220, 53, 69, 0.1); color: #dc3545;"><i class="fa-solid fa-server"></i></div>
-                                <span class="marker-badge text-danger">Basement</span>
-                            </div>
-                            <h5 class="fw-bold">The Engine Room</h5>
-                            <ul class="list-unstyled small text-body-secondary mt-3 mb-0">
-                                <li class="mb-2"><strong>Server Farm:</strong> Self-hosted architecture. No cloud dependencies.</li>
-                                <li class="mb-2"><strong>Power Vault:</strong> Victron/NorthStar AGM Battery Bank (72hr Silent Run).</li>
-                                <li><strong>Climate Control:</strong> 5-Ton Industrial HVAC disguised as residential unit.</li>
-                            </ul>
-                        </div>
-                    </div>
+                <div class="renovation-item">
+                    <span class="badge bg-warning text-dark mb-2">1990</span>
+                    <h6 class="fw-bold">The Crash Retrofit</h6>
+                    <p class="small text-muted mb-0">
+                        Emergency install of exterior metal ramp. Ryan relocated to 1st Floor Parlor. Cassidy moves in as "Bed Rail."
+                    </p>
                 </div>
+
+                <div class="renovation-item">
+                    <span class="badge bg-success mb-2">1996</span>
+                    <h6 class="fw-bold">Acquisition & Gut Renovation</h6>
+                    <p class="small text-muted mb-0">
+                        Holly purchases property. Interior gutted. First hydraulic elevator installed. Custom exterior ramp built.
+                    </p>
+                </div>
+
+                <div class="renovation-item">
+                    <span class="badge bg-primary mb-2">2013</span>
+                    <h6 class="fw-bold">The "Industrial" Split</h6>
+                    <p class="small text-muted mb-0">
+                        Commercial operations moved to Warehouse. House optimized for living only. Elevator upgraded to modern automatic system. Holly's office converted to King Bedroom.
+                    </p>
+                </div>
+
             </div>
-
         </div>
     </div>
 
