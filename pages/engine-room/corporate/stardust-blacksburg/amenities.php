@@ -1,6 +1,6 @@
 <?php
 // pages/engine-room/corporate/stardust-blacksburg/amenities.php
-// Context: Selling the "Academic Advantage."
+// Context: Selling the "Academic Advantage" & Strict Lease Terms.
 // Theme: "Crucible" (Maroon & Orange) / Varsity.
 
 $pageTitle = "Amenities - The Ironwood Standard";
@@ -62,7 +62,7 @@ $pageTitle = "Amenities - The Ironwood Standard";
             <div class="feature-icon-box shadow-sm">
                 <i class="fa-duotone fa-wifi fa-2x"></i>
             </div>
-            <h5 class="fw-bold text-body-emphasis">Gigabit Symetric</h5>
+            <h5 class="fw-bold text-body-emphasis">Gigabit Symmetric</h5>
             <p class="small text-body-secondary">
                 We don't use standard residential cable. Every Ironwood building is connected to the <strong>Stardust Dark Fiber Loop</strong>. 1Gbps Up/Down per unit. Zero lag during course registration.
             </p>
@@ -125,10 +125,46 @@ $pageTitle = "Amenities - The Ironwood Standard";
         </div>
     </div>
 
+    <div class="row mb-5">
+        <div class="col-12 mb-4 border-bottom pb-2">
+            <h3 class="h4 text-uppercase text-body-emphasis fw-bold">
+                <i class="fa-duotone fa-gavel me-2 text-danger"></i>The Ironwood Covenant
+            </h3>
+        </div>
+        
+        <div class="col-lg-6 mb-4">
+            <div class="alert alert-light border border-secondary shadow-sm h-100">
+                <div class="d-flex">
+                    <i class="fa-solid fa-ban-smoking fa-2x text-danger me-3 mt-1"></i>
+                    <div>
+                        <h5 class="alert-heading fw-bold text-uppercase small text-danger">Strictly Smoke-Free</h5>
+                        <p class="small mb-0 text-body-secondary">
+                            Stardust Blacksburg maintains a <strong>Total Clean Air</strong> policy. Smoking, vaping, and the use of tobacco products are prohibited anywhere on the property—indoors AND outdoors. This includes parking lots and balconies.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-6 mb-4">
+            <div class="alert alert-light border border-secondary shadow-sm h-100">
+                <div class="d-flex">
+                    <i class="fa-solid fa-glass-citrus-empty fa-2x text-danger me-3 mt-1"></i>
+                    <div>
+                        <h5 class="alert-heading fw-bold text-uppercase small text-danger">Substance-Free Zone (Dry Property)</h5>
+                        <p class="small mb-0 text-body-secondary">
+                            We operate 100% Dry Properties. The possession or consumption of alcohol is prohibited on all premises, <strong>regardless of the resident's age</strong>. We provide a sanctuary for focus, not a venue for nightlife.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="alert alert-secondary d-flex align-items-center p-3 small shadow-sm">
         <i class="fa-solid fa-circle-info me-3 text-secondary fs-4"></i>
         <div>
-            <strong>Note for Applicants:</strong> We do not offer "Party Packages." Stardust Blacksburg strictly enforces a "Scholar First" lease agreement. Excessive noise violations are grounds for lease termination. We protect the quiet.
+            <strong>Applicant Note:</strong> We do not offer "Party Packages." Stardust Blacksburg strictly enforces a "Scholar First" lease agreement. Violations of the Alcohol or Smoking covenants are grounds for immediate lease termination. We protect the quiet.
         </div>
     </div>
 
