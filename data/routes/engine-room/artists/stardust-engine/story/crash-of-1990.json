@@ -2,10 +2,10 @@
   "common": {
     "site": "engine-room-records",
     "showSidebar": true,
-    "sidebar": "engine-room/artists/stardust-engine/story/sidebar-nine-figure-refusal",
+    "sidebar": "sidebar-stories",
     "siteName": "The Crash of 1990",
-    "headerMenu": "engine-room/artists/stardust-engine/story/header-nine-figure-refusal",
-    "footer": "engine-room/artists/stardust-engine/story/footer-nine-figure-refusal",
+    "headerMenu": "engine-room/header-engine-room",
+    "footer": "engine-room/footer-engine-room",
     "navbarBrandLogo": "https://assets.raggiesoft.com/engine-room-records/images/logos/engine-room-records-logo.png",
     "navbarBrandText": "<span class=\"d-none d-md-inline\">The </span>Crash of 1990",
     "navbarBrandLink": "/engine-room/artists/stardust-engine",
