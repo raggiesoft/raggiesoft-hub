@@ -46,7 +46,7 @@ $pageTitle = "Stardust Studios - Global HQ & Production";
             </div>
             <h1 class="display-4 fw-bold text-uppercase text-body-emphasis mb-2">Stardust Studios</h1>
             <p class="lead text-body-secondary font-monospace">
-                1200 Industrial Park Road, Blacksburg, VA 24060.<br>
+                Blacksburg Industrial Park - South Main Corridor
             </p>
             <hr class="my-4 border-warning opacity-100" style="width: 60px; height: 3px;">
             <p class="fs-5 text-body-secondary">
