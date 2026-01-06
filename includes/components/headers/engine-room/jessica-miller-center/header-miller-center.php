@@ -35,5 +35,12 @@
             <i class="fa-duotone fa-id-card me-2"></i>Tenant Portal
         </a>
     </li>
+    <li class="nav-item border-start border-secondary mx-2 d-none d-md-block"></li>
+
+    <li class="nav-item">
+        <a class="nav-link text-secondary" href="/engine-room">
+            <i class="fa-solid fa-arrow-turn-up me-2"></i>Engine Room HQ
+        </a>
+    </li>
 
 </ul>
