@@ -8,19 +8,7 @@ $pageTitle = "Stardust Studios - Global HQ & Production";
 ?>
 
 <style>
-    /* PAGE-SPECIFIC STYLES */
-    
-    .warehouse-hero {
-        background: linear-gradient(rgba(33, 37, 41, 0.9), rgba(33, 37, 41, 0.95)), 
-                    url('https://assets.raggiesoft.com/stardust-engine/images/corporate/warehouse-exterior.jpg');
-        background-size: cover;
-        background-position: center;
-        padding: 6rem 2rem;
-        border-bottom: 6px solid var(--bs-warning);
-        color: #f8f9fa;
-    }
-
-    /* Card Hover Effects */
+    /* Motion Control: Only animate if user hasn't requested reduced motion */
     @media (prefers-reduced-motion: no-preference) {
         .sector-card {
             transition: transform 0.2s ease, box-shadow 0.2s ease;
@@ -44,32 +32,28 @@ $pageTitle = "Stardust Studios - Global HQ & Production";
     }
 </style>
 
-<div class="warehouse-hero text-center mb-5">
-    <div class="container">
-        <div class="mb-3">
-            <i class="fa-duotone fa-warehouse fa-4x text-secondary"></i>
-        </div>
-        <h1 class="display-4 fw-bold text-uppercase letter-spacing-2 mb-2">Stardust Studios</h1>
-        <p class="lead font-monospace text-warning mb-4">
-            <i class="fa-solid fa-location-dot me-2"></i>Falling Branch Industrial Park
-        </p>
-        <div class="d-inline-flex gap-2 align-items-center bg-black bg-opacity-50 px-4 py-2 rounded-pill border border-secondary">
-            <span class="text-uppercase small fw-bold text-light">Status:</span>
-            <span class="badge bg-danger text-white">PRIVATE FACILITY</span>
-        </div>
-    </div>
-</div>
-
-<div class="container pb-5">
+<div class="container py-5">
     
     <div class="row justify-content-center mb-5">
-        <div class="col-lg-9 text-center">
-            <h2 class="h4 text-body-emphasis fw-bold text-uppercase mb-3">The Nerve Center</h2>
-            <p class="fs-5 text-body-secondary mb-4">
-                This 12,000 sq. ft. facility serves as the Global Headquarters for the <strong>O'Connell Family Trust</strong> and the primary rehearsal hangar for the <strong>Artists First Management</strong> roster.
+        <div class="col-lg-10">
+            <div class="d-flex align-items-center mb-3">
+                <span class="badge bg-secondary text-white border border-secondary-subtle rounded-pill px-3 py-2 me-3">
+                    <i class="fa-solid fa-warehouse me-2"></i>Global HQ
+                </span>
+                <span class="badge bg-danger text-white border border-danger-subtle rounded-pill px-3 py-2">
+                    <i class="fa-solid fa-lock me-2"></i>PRIVATE FACILITY
+                </span>
+            </div>
+            <h1 class="display-4 fw-bold text-uppercase text-body-emphasis mb-2">Stardust Studios</h1>
+            <p class="lead text-body-secondary font-monospace">
+                Falling Branch Industrial Park, Blacksburg, VA.
+            </p>
+            <hr class="my-4 border-warning opacity-100" style="width: 60px; height: 3px;">
+            <p class="fs-5 text-body-secondary">
+                This 12,000 sq. ft. facility serves as the nerve center for the <strong>O'Connell Family Trust</strong> and the primary rehearsal hangar for the <strong>Artists First Management</strong> roster.
             </p>
             
-            <div class="alert alert-warning border-warning d-inline-block text-start shadow-sm" role="alert">
+            <div class="alert alert-warning border-warning d-inline-block text-start shadow-sm mt-3" role="alert">
                 <div class="d-flex">
                     <i class="fa-solid fa-hand-palm fa-2x me-3 mt-1"></i>
                     <div>
