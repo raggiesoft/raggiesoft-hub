@@ -124,7 +124,7 @@ $pageTitle = "Accessibility & Accommodations - Stardust Blacksburg";
                 <div>
                     <h6 class="fw-bold text-uppercase mb-1">Requesting an Accommodation</h6>
                     <p class="small mb-0">
-                        We process requests expediently. You do not need to fill out complex forms. Simply email the <strong>Accessibility Coordinator</strong> at <a href="#" class="alert-link">access@stardust-blacksburg.com</a> or visit the leasing office. We are here to say "Yes."
+                        We process requests expediently. You do not need to fill out complex forms. Simply visit the leasing office. We are here to say "Yes."
                     </p>
                 </div>
             </div>
