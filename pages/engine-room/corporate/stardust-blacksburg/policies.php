@@ -69,50 +69,56 @@ $pageTitle = "Household Protocols - Stardust Blacksburg";
                 </div>
                 <div class="card-body p-4">
                     <p class="card-text text-body-secondary mb-4">
-                        Stardust Blacksburg prioritizes academic focus and security. To prevent unauthorized "move-ins" and disruptions, the following rules are strictly enforced.
+                        Stardust Blacksburg prioritizes academic focus and sleep hygiene. To prevent unauthorized "move-ins" and disruptions, the following rules are strictly enforced.
                     </p>
 
                     <div class="row g-4">
-                        <div class="col-md-4 text-center">
-                            <div class="mb-2">
-                                <span class="fa-stack fa-2x">
-                                    <i class="fa-solid fa-circle fa-stack-2x text-body-tertiary"></i>
-                                    <i class="fa-solid fa-thumbs-up fa-stack-1x text-primary"></i>
-                                </span>
-                            </div>
-                            <h6 class="fw-bold text-uppercase small">1. Unanimous Consent</h6>
-                            <p class="small text-muted">
-                                <strong>Every roommate has Veto Power.</strong> An overnight guest requires the physical or digital signature of 100% of the leaseholders in the unit. If one person is studying and says "No," the guest cannot stay.
+                        <div class="col-md-6">
+                            <h6 class="fw-bold text-uppercase text-primary small mb-2">1. Unanimous Consent</h6>
+                            <p class="small text-muted mb-0">
+                                <strong>Every roommate has Veto Power.</strong> A guest (daytime or overnight) requires the consent of 100% of the leaseholders present in the unit. If one person is studying and says "No," the guest cannot enter.
                             </p>
                         </div>
 
-                        <div class="col-md-4 text-center">
-                            <div class="mb-2">
-                                <span class="fa-stack fa-2x">
-                                    <i class="fa-solid fa-circle fa-stack-2x text-body-tertiary"></i>
-                                    <i class="fa-solid fa-hourglass-end fa-stack-1x text-warning"></i>
-                                </span>
-                            </div>
-                            <h6 class="fw-bold text-uppercase small">2. The "48/7" Rule</h6>
-                            <p class="small text-muted">
-                                <strong>Max Stay:</strong> 2 Consecutive Nights.<br>
-                                <strong>Cooling Off:</strong> 7 Days.<br>
-                                Guests are limited to one person per resident. After a 2-night stay, that guest is prohibited from returning for 7 full days. No exceptions.
-                            </p>
-                        </div>
-
-                        <div class="col-md-4 text-center">
-                            <div class="mb-2">
-                                <span class="fa-stack fa-2x">
-                                    <i class="fa-solid fa-circle fa-stack-2x text-body-tertiary"></i>
-                                    <i class="fa-solid fa-key fa-stack-1x text-danger"></i>
-                                </span>
-                            </div>
-                            <h6 class="fw-bold text-uppercase small">3. The Escort Mandate</h6>
-                            <p class="small text-muted">
+                        <div class="col-md-6">
+                            <h6 class="fw-bold text-uppercase text-primary small mb-2">2. The Escort Mandate</h6>
+                            <p class="small text-muted mb-0">
                                 <strong>Keys are for Residents Only.</strong> Guests must be escorted by their host at all times while on property. You may not give your key or fob to a guest. Unescorted non-residents will be trespassed.
                             </p>
                         </div>
+
+                        <div class="col-12"><hr></div>
+
+                        <div class="col-md-6">
+                            <div class="d-flex align-items-center mb-2">
+                                <i class="fa-duotone fa-sun me-2 text-warning fs-4"></i>
+                                <h6 class="fw-bold text-uppercase text-body-emphasis small mb-0">Daytime Visitor Hours</h6>
+                            </div>
+                            <div class="bg-body-tertiary p-3 rounded border">
+                                <p class="fw-bold text-center mb-1 font-monospace">10:00 AM &ndash; 11:59 PM</p>
+                                <p class="small text-muted mb-2 text-center">(Daily)</p>
+                                <ul class="mb-0 small text-muted ps-3">
+                                    <li class="mb-1"><strong>Why 10 AM?</strong> We respect the sleep schedules of students working late.</li>
+                                    <li><strong>Early Access:</strong> Visits before 10:00 AM require written approval from Management to ensure neighborhood quiet.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="d-flex align-items-center mb-2">
+                                <i class="fa-duotone fa-moon me-2 text-primary fs-4"></i>
+                                <h6 class="fw-bold text-uppercase text-body-emphasis small mb-0">Overnight Protocol</h6>
+                            </div>
+                            <div class="bg-body-tertiary p-3 rounded border">
+                                <p class="fw-bold text-center mb-1 text-danger font-monospace">The "48/7" Rule</p>
+                                <ul class="mb-0 small text-muted ps-3">
+                                    <li class="mb-1"><strong>Limit:</strong> Max 2 consecutive nights.</li>
+                                    <li class="mb-1"><strong>Cooling Off:</strong> After 2 nights, the guest is prohibited from staying <em>overnight</em> for 7 full days.</li>
+                                    <li class="fst-italic text-secondary"><strong>Note:</strong> This guest MAY return as a daytime visitor during the cooling-off period, provided they depart by 11:59 PM.</li>
+                                </ul>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
                 <div class="card-footer bg-light border-top text-muted small fst-italic text-center">
