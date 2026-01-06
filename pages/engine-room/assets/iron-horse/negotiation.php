@@ -26,30 +26,37 @@ $pageTitle = "Lore: The Sainte-Claire Protocol (2002)";
                 <div class="card-body p-4">
                     <p class="mb-3 font-monospace text-body-secondary small">
                         <strong>LOCATION:</strong> Executive Sales Office, Sainte-Claire Coachworks.<br>
-                        <strong>CONTEXT:</strong> The band is in the middle of their 2002 "Trans-Canada" Tour. They have just played three sold-out nights in Montréal, performing strictly in French to honor the local culture.
+                        <strong>CONTEXT:</strong> The band is in the middle of their 2002 "Trans-Canada" Tour. They have just played three sold-out nights in Montréal, performing strictly in French.
                     </p>
                     <hr>
                     <p>
                         Michel, the VP of Sales, rubbed his temples. He had just gotten off the phone with the manager of a major American Pop Star who was screaming in English about "Jacuzzi weight limits."
                     </p>
                     <p>
-                        The door opened. Holly O'Connell (Age 33) walked in. She didn't have an entourage. She didn't have a translator. She was holding a bag of bagels from St-Viateur.
+                        The door opened. Holly O'Connell (Age 33) walked in. She held the door open.
+                    </p>
+                    <p>
+                        Ryan O'Connell (Age 31) rolled in past her. He maneuvered his manual chair with precision, turning to face the desk. He wasn't wearing sunglasses or a stage costume. He was wearing a flannel shirt and jeans.
                     </p>
                     <p>
                         <strong>Holly (in flawless Québécois):</strong> "Bonjour, Michel. Désolée du retard, le trafic sur la 20 était l'enfer." <br>
-                        <span class="small text-muted">(Hi Michel. Sorry I'm late, traffic on the 20 was hell.)</span>
+                        <span class="small text-body-secondary">(Hi Michel. Sorry I'm late, traffic on the 20 was hell.)</span>
                     </p>
                     <p>
-                        Michel blinked. He sat up straighter. "Madame O'Connell? You... speak our language?"
+                        Michel blinked. He looked from the woman to the man in the wheelchair. "Madame O'Connell? Monsieur O'Connell? You... speak our language?"
                     </p>
                     <p>
-                        <strong>Holly:</strong> "We just re-recorded our entire setlist in French so CHOM 97.7 could play us during the drive-time block. We don't do things halfway, Michel."
+                        <strong>Ryan (smiling, extending a hand):</strong> "On voulait pas vous forcer à parler anglais chez vous. C'est une question de respect."<br>
+                        <span class="small text-body-secondary">(We didn't want to force you to speak English in your own home. It's a matter of respect.)</span>
                     </p>
                     <p>
-                        She sat down and slid a folder across the desk. It wasn't a rider full of demands. It was a structural engineering schematic.
+                        Holly sat down and slid a folder across the desk. It wasn't a rider full of demands. It was a structural engineering schematic for a heavy-duty hydraulic lift installation.
                     </p>
-                    <p class="fst-italic text-body-secondary">
-                        "I know you have a waitlist," Holly said (still in French). "I know the Pop Star wants a swimming pool. I just want a chassis that won't twist when I put a 400-pound lift in the side door. I want steel, Michel. Just steel."
+                    <p class="fst-italic text-body-emphasis">
+                        "I know you have a waitlist," Holly said (still in French). "I know the Pop Star wants a swimming pool. That is dead weight. <strong>This</strong>..." she gestured to her brother, "...is precious cargo."
+                    </p>
+                    <p>
+                        "I don't need a party bus, Michel. I need a chassis that won't twist when I put a 400-pound industrial lift in the side door. I need steel."
                     </p>
                 </div>
             </div>
