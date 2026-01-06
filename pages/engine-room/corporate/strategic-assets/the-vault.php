@@ -2,6 +2,7 @@
 // pages/engine-room/corporate/strategic-assets/the-vault.php
 // Designation: The Engine Room Archives ("The Vault").
 // Location: Subterranean Level, Sector C (Beneath the Studio).
+// Construction: Completed 2013 (during Warehouse retrofit).
 // Access Level: RESTRICTED (Biometric + Two-Key).
 
 $pageTitle = "The Vault - Master Archives";
@@ -53,6 +54,9 @@ $pageTitle = "The Vault - Master Archives";
             "The memory of the music is fragile. We built a fortress to protect it."
         </p>
         <div class="mt-4">
+            <span class="badge bg-secondary text-white border border-secondary fw-bold px-3 py-2 m-1">
+                <i class="fa-solid fa-calendar-check me-2"></i>EST. 2013
+            </span>
             <span class="badge bg-danger text-white border border-danger fw-bold px-3 py-2 m-1">
                 <i class="fa-solid fa-lock me-2"></i>ACCESS RESTRICTED
             </span>
@@ -78,7 +82,7 @@ $pageTitle = "The Vault - Master Archives";
                         <h5 class="fw-bold text-body-emphasis mb-0">Collection A: The Family Trust</h5>
                     </div>
                     <p class="text-body-secondary ms-md-5 mb-0">
-                        The complete analog master reels (2-inch tape) for every album recorded by <em>The Stardust Engine</em>, <em>Mirage</em>, and <em>Origin</em>. Includes multitrack sessions, mix-downs, and unreleased demos dating back to 1984.
+                        The complete analog master reels (2-inch tape) for every album recorded by <em>The Stardust Engine</em>, <em>Mirage</em>, and <em>Origin</em>. Includes multitrack sessions, mix-downs, and unreleased demos dating back to <strong>1984</strong> (The Formation Era).
                     </p>
                 </div>
             </div>
@@ -127,7 +131,7 @@ $pageTitle = "The Vault - Master Archives";
                     <p class="small text-body-secondary mb-0">
                         <strong>Temp:</strong> 55°F (13°C) Constant.<br>
                         <strong>Humidity:</strong> 35% RH (+/- 2%).<br>
-                        This specific micro-climate prevents "Sticky Shed Syndrome" (binder hydrolysis), ensuring analog tapes from the 90s remain playable for decades.
+                        This specific micro-climate prevents "Sticky Shed Syndrome" (binder hydrolysis), ensuring analog tapes from the 80s and 90s remain playable for decades.
                     </p>
                 </div>
             </div>
