@@ -40,7 +40,7 @@ $pageTitle = "Location & Transit - Stardust Blacksburg";
         <div class="col-lg-9 text-center">
             <h1 class="display-4 fw-bold text-uppercase text-body-emphasis mb-3">The 15-Minute Rule</h1>
             <p class="lead text-body-secondary">
-                Stardust Blacksburg properties are strategically located to ensure you are never more than a 15-minute ride from the Drillfield.
+                Stardust Blacksburg properties are strategically located along the "Spine," ensuring you are never more than a 15-minute ride from Alumni Mall.
             </p>
             <div class="d-inline-flex align-items-center bg-warning bg-opacity-10 border border-warning rounded-pill px-4 py-2 mt-2">
                 <i class="fa-solid fa-id-card text-warning me-2"></i>
@@ -56,7 +56,7 @@ $pageTitle = "Location & Transit - Stardust Blacksburg";
                 <i class="fa-duotone fa-bus me-2 text-warning"></i>Local Network: Blue Ridge Transit
             </h3>
             <p class="text-body-secondary mb-4">
-                [cite_start]Your CPI ID is your fare[cite: 4]. Our properties are clustered around the high-frequency corridors of the <strong>Blue Ridge Transit</strong> network, ensuring you never have to fight for a parking spot on campus.
+                Your CPI ID is your fare. Our properties are clustered around the high-frequency corridors of the <strong>Blue Ridge Transit</strong> network, ensuring you never have to fight for a parking spot on campus.
             </p>
             
             <div class="list-group shadow-sm mb-4">
@@ -67,10 +67,10 @@ $pageTitle = "Location & Transit - Stardust Blacksburg";
                         <span class="badge bg-secondary">Every 15 Min</span>
                     </div>
                     <p class="small text-muted mb-1">
-                        [cite_start]<strong>Corridor:</strong> Pepper Plaza <i class="fa-solid fa-arrow-right mx-1" style="font-size: 0.7em;"></i> Downtown <i class="fa-solid fa-arrow-right mx-1" style="font-size: 0.7em;"></i> Alumni Mall[cite: 275].
+                        <strong>Corridor:</strong> Pepper Plaza <i class="fa-solid fa-arrow-right mx-1" style="font-size: 0.7em;"></i> Downtown <i class="fa-solid fa-arrow-right mx-1" style="font-size: 0.7em;"></i> Alumni Mall.
                     </p>
                     <p class="small text-muted mb-0 fst-italic">
-                        The heavy lifter. Direct access to Christiansburg shopping and the Uptown Mall. [cite_start]60-foot articulated buses deployed during peak hours[cite: 11].
+                        The heavy lifter. Direct access to Christiansburg shopping and the Uptown Mall. 60-foot articulated buses deployed during peak hours.
                     </p>
                 </div>
 
@@ -80,18 +80,19 @@ $pageTitle = "Location & Transit - Stardust Blacksburg";
                         <span class="badge bg-secondary">Every 30 Min</span>
                     </div>
                     <p class="small text-muted mb-0">
-                        [cite_start]<strong>Corridor:</strong> CPI <i class="fa-solid fa-arrow-right mx-1" style="font-size: 0.7em;"></i> McConnell Transit Center (Radford Univ)[cite: 284].
+                        <strong>Corridor:</strong> Pepper Plaza <i class="fa-solid fa-arrow-right mx-1" style="font-size: 0.7em;"></i> McConnell Transit Center (Radford Univ).
                         <br>Perfect for dual-enrolled students or visiting friends at RU.
                     </p>
                 </div>
 
                 <div class="list-group-item bg-body-tertiary">
                     <div class="d-flex justify-content-between align-items-center mb-2">
-                        <strong class="text-warning text-dark-emphasis"><i class="fa-solid fa-route me-2"></i>The Maroon Loop (Internal)</strong>
-                        <span class="badge bg-secondary">Every 10 Min</span>
+                        <strong class="text-warning text-dark-emphasis"><i class="fa-solid fa-route me-2"></i>Route 8: The Riner Run</strong>
+                        <span class="badge bg-secondary">Hourly</span>
                     </div>
                     <p class="small text-muted mb-0">
-                        <strong>Corridor:</strong> Newman Library <i class="fa-solid fa-arrow-right mx-1" style="font-size: 0.7em;"></i> Stadium <i class="fa-solid fa-arrow-right mx-1" style="font-size: 0.7em;"></i> Stardust "Fortress" Zone.
+                        <strong>Corridor:</strong> Pepper Plaza <i class="fa-solid fa-arrow-right mx-1" style="font-size: 0.7em;"></i> Riner.
+                        <br>Connection to rural medical services.
                     </p>
                 </div>
 
@@ -103,7 +104,7 @@ $pageTitle = "Location & Transit - Stardust Blacksburg";
                 <i class="fa-duotone fa-globe-americas me-2 text-primary"></i>Regional Connections
             </h3>
             <p class="text-body-secondary small mb-3">
-                Need to leave the bubble? [cite_start]The <strong>PolyPass</strong> works on regional partners too[cite: 5].
+                Need to leave the bubble? The <strong>PolyPass</strong> works on regional partners too.
             </p>
 
             <div class="card border-0 bg-body-tertiary shadow-sm mb-3">
@@ -113,8 +114,8 @@ $pageTitle = "Location & Transit - Stardust Blacksburg";
                         <h6 class="fw-bold text-body-emphasis mb-0">The Maroon Express (Bluewater)</h6>
                     </div>
                     <p class="card-text small text-body-secondary">
-                        [cite_start]<strong>Route:</strong> Bluewater <i class="fa-solid fa-left-right mx-1"></i> CPI[cite: 309].
-                        <br>Luxury coach service. [cite_start]A cultural phenomenon for students from Carroll County[cite: 315].
+                        <strong>Route:</strong> Bluewater <i class="fa-solid fa-left-right mx-1"></i> CPI via Falling Branch.
+                        <br>Luxury coach service. A cultural phenomenon for students from Carroll County.
                     </p>
                 </div>
             </div>
@@ -126,7 +127,7 @@ $pageTitle = "Location & Transit - Stardust Blacksburg";
                         <h6 class="fw-bold text-body-emphasis mb-0">Roanoke Valley Transit</h6>
                     </div>
                     <p class="card-text small text-body-secondary">
-                        [cite_start]<strong>Route:</strong> CPI <i class="fa-solid fa-left-right mx-1"></i> Roanoke (Campbell Court)[cite: 298].
+                        <strong>Route:</strong> CPI <i class="fa-solid fa-left-right mx-1"></i> Roanoke (Campbell Court).
                         <br>Direct connection to the airport and downtown Roanoke internships.
                     </p>
                 </div>
@@ -158,7 +159,7 @@ $pageTitle = "Location & Transit - Stardust Blacksburg";
                 </div>
                 
                 <div class="position-absolute bottom-0 end-0 p-3 text-end opacity-50 d-none d-md-block">
-                    [cite_start]<span class="font-monospace small text-muted d-block">HUB: ALUMNI MALL [cite: 266]</span>
+                    <span class="font-monospace small text-muted d-block">HUB: ALUMNI MALL</span>
                     <span class="font-monospace small text-muted d-block">ZONE: BLUE RIDGE TRANSIT</span>
                 </div>
             </div>
