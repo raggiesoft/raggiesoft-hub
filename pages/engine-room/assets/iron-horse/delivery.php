@@ -1,7 +1,7 @@
 <?php
 // pages/engine-room/assets/iron-horse/delivery.php
 // The Aftermath of the Negotiation.
-// Location: Sainte-Claire Coachworks // Quebec, Canada
+// Location: Sainte-Claire Coachworks // Québec, Canada
 // Date: June 2, 2002
 
 $pageTitle = "Lore: The First Ride";
@@ -27,24 +27,23 @@ $pageTitle = "Lore: The First Ride";
                     <h5 class="text-uppercase text-body-secondary letter-spacing-2 mb-4">Delivery Bay 1</h5>
                     
                     <p class="fs-5 lh-lg">
-                        There was no red ribbon. There was no champagne. Just a massive, gleaming silver monolith sitting under the fluorescent lights of the Quebec factory.
+                        There was no red ribbon. There was no press. Just the humming of the factory lights and the smell of ozone and welding flux.
                     </p>
                     <p>
-                        The "Iron Horse" (Unit 02) wasn't painted yet. It was raw, unpolished stainless steel—the trademark of <strong>Sainte-Claire Coachworks</strong>. Most clients bought a "shell" and sent it to a third-party upfitter for the interior. 
-                    </p>
-                    <p class="fw-bold text-body-emphasis">
-                        Holly O'Connell refused. 
+                        The "Iron Horse" (Unit 02) stood in the center of the bay. It was unpainted stainless steel—a massive, silver monolith. The twenty welders who had built it stood in a semi-circle, arms crossed, waiting.
                     </p>
                     <p>
-                        She had forced the factory to build the interior <em>in-house</em>, installing a commercial-grade hydraulic lift that was welded directly to the chassis frame before the walls were even put on. This wasn't an RV; it was a tank.
+                        Ryan O'Connell rolled onto the platform. The custom hydraulic system—over-engineered at Holly's insistence—hissed softly. He rose 60 inches into the air, the motion smooth and silent, and rolled into the main cabin.
                     </p>
                     <hr class="my-4">
                     <p>
-                        Ryan rolled onto the lift platform. The hydraulics hissed—a sound that would become the soundtrack of his freedom. He rose 60 inches into the air and rolled effortlessly into the main cabin.
+                        He rolled back out onto the lift and lowered himself down. He looked at the foreman, a man named Jean-Paul.
                     </p>
-                    <p class="fst-italic text-body-secondary">
-                        "It fits," he said quietly.
-                        <br>The crew of twenty welders and engineers erupted in applause.
+                    <p class="fst-italic text-body-emphasis fw-bold">
+                        "C'est parfait," Ryan said. "Merci, mes amis."
+                    </p>
+                    <p class="text-body-secondary">
+                        The applause from the crew was deafening. They weren't clapping for a client; they were clapping for one of their own.
                     </p>
                 </div>
             </div>

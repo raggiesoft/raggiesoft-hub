@@ -10,7 +10,7 @@ $pageTitle = "Fleet Command // T-Logistics";
 
 <style>
     /* THEME: "BIOS / TUI" (Text User Interface) */
-    /* We force a dark theme for the terminal window to maintain the aesthetic */
+    /* We force a dark terminal look regardless of system theme */
     .fleet-terminal {
         background-color: #0f0f0f; /* Deep Black */
         color: #e0e0e0; /* High Contrast Grey */
