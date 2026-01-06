@@ -1,122 +1,201 @@
 <?php
 // pages/engine-room/corporate/stardust-studios/overview.php
-// Designation: The Warehouse / "Fortress of Sound"
-// Context: Industrial Park, Blacksburg Outskirts.
-// Theme: "Heavy Metal" (Concrete, Steel, Acoustic Foam).
+// Designation: Stardust Studios (The Warehouse)
+// Context: Falling Branch Industrial Park, Blacksburg, VA.
+// Configuration: 2013 Refit (Headquarters & Secure Living).
 
-$pageTitle = "Stardust Studios - Production & Fleet Maintenance";
+$pageTitle = "Stardust Studios - Corporate HQ & Production";
 ?>
 
 <style>
-    /* INDUSTRIAL THEME */
-    .warehouse-header {
-        background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), 
-                    repeating-linear-gradient(45deg, #212529 0, #212529 10px, #2c3034 10px, #2c3034 20px);
-        color: white;
-        padding: 6rem 0;
-        border-bottom: 4px solid var(--bs-warning);
-    }
+    /* PAGE-SPECIFIC STYLES */
+    /* Using CSS Variables for Adaptive Theming */
     
-    .bay-card {
-        background-color: var(--bs-body-tertiary);
-        border: 1px solid var(--bs-border-color);
-        transition: transform 0.2s;
+    .warehouse-hero {
+        /* Force a dark industrial look for the header only, but maintain high contrast */
+        background: linear-gradient(rgba(33, 37, 41, 0.9), rgba(33, 37, 41, 0.95)), 
+                    url('https://assets.raggiesoft.com/stardust-engine/images/corporate/warehouse-exterior.jpg');
+        background-size: cover;
+        background-position: center;
+        padding: 6rem 2rem;
+        border-bottom: 6px solid var(--bs-warning);
+        color: #f8f9fa; /* Explicit light text on dark background is WCAG compliant */
     }
-    .bay-card:hover {
-        transform: translateY(-3px);
-        border-color: var(--bs-primary);
+
+    /* Card Hover Effects that work in both modes */
+    .sector-card {
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .sector-card:hover {
+        transform: translateY(-5px);
+        box-shadow: var(--bs-box-shadow-lg) !important;
+        border-color: var(--bs-primary) !important;
+    }
+
+    /* Blueprint Markers */
+    .floor-badge {
+        font-family: 'Courier New', monospace;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        padding: 0.35em 0.65em;
+        font-size: 0.75em;
+        border: 1px solid currentColor;
+        border-radius: 4px;
     }
 </style>
 
-<div class="warehouse-header text-center">
+<div class="warehouse-hero text-center mb-5">
     <div class="container">
-        <i class="fa-duotone fa-container-storage fa-4x text-white opacity-50 mb-3"></i>
-        <h1 class="display-4 fw-bold text-uppercase letter-spacing-2">Stardust Studios</h1>
-        <p class="lead font-monospace text-warning mb-0">
+        <div class="mb-3">
+            <i class="fa-duotone fa-warehouse fa-4x text-secondary"></i>
+        </div>
+        <h1 class="display-4 fw-bold text-uppercase letter-spacing-2 mb-2">Stardust Studios</h1>
+        <p class="lead font-monospace text-warning mb-4">
             <i class="fa-solid fa-location-dot me-2"></i>Falling Branch Industrial Park
         </p>
+        <div class="d-inline-flex gap-2 align-items-center bg-black bg-opacity-50 px-4 py-2 rounded-pill border border-secondary">
+            <span class="text-uppercase small fw-bold text-light">Zoning Status:</span>
+            <span class="badge bg-success text-white">Live / Work Compliant</span>
+        </div>
     </div>
 </div>
 
-<div class="container py-5">
+<div class="container pb-5">
     
     <div class="row justify-content-center mb-5">
-        <div class="col-lg-8 text-center">
+        <div class="col-lg-9 text-center">
+            <h2 class="h4 text-body-emphasis fw-bold text-uppercase mb-3">The Nerve Center</h2>
             <p class="fs-5 text-body-secondary">
-                A 12,000 sq. ft. converted distribution center. <br>
-                Soundproofed to <span class="fw-bold text-body-emphasis">STC-60 standards</span>. <br>
-                The only place in Virginia loud enough to hold The Stardust Engine.
+                Following the 2013 restructuring, all commercial operations were relocated from the family residence to this secure facility. It serves as the Global Headquarters for the <strong>O'Connell Family Trust</strong> and the rehearsal home for <strong>The Stardust Engine</strong>.
             </p>
         </div>
     </div>
 
+    <div class="d-flex align-items-center mb-4 pb-2 border-bottom border-secondary-subtle">
+        <span class="floor-badge text-primary me-3">Level 1</span>
+        <h3 class="h5 text-uppercase text-body-emphasis mb-0">Commercial Operations</h3>
+    </div>
+
     <div class="row g-4 mb-5">
-        
         <div class="col-lg-6">
-            <div class="card h-100 shadow border-0 overflow-hidden">
-                <div class="card-header bg-black text-white border-bottom border-warning py-3">
-                    <h5 class="fw-bold text-uppercase mb-0"><i class="fa-duotone fa-microphone-lines me-2 text-warning"></i>The Live Room</h5>
-                </div>
-                <div class="card-body p-4 bg-dark text-light">
-                    <p class="small text-white-50 mb-4">
-                        A massive open floor designed to replicate the acoustics of The Crucible. This is where "Ignition" was perfected.
+            <div class="card h-100 bg-body-tertiary border-secondary-subtle sector-card shadow-sm">
+                <div class="card-body p-4">
+                    <div class="d-flex justify-content-between align-items-start mb-3">
+                        <div class="p-3 bg-body-secondary rounded-circle">
+                            <i class="fa-duotone fa-briefcase fa-2x text-primary"></i>
+                        </div>
+                        <i class="fa-solid fa-shield-check text-success fs-5" title="Secure Zone"></i>
+                    </div>
+                    <h4 class="card-title text-body-emphasis fw-bold">"The Bridge" (Admin)</h4>
+                    <p class="card-text text-body-secondary">
+                        Holly O'Connell's primary office. From this room, she manages the multi-billion dollar portfolio of the Trust.
                     </p>
-                    <ul class="list-group list-group-flush list-group-dark">
-                        <li class="list-group-item bg-transparent text-white border-secondary">
-                            <i class="fa-solid fa-check text-success me-2"></i><strong>Floating Floor:</strong> Concrete slab isolated on rubber pucks to prevent seismic transmission.
-                        </li>
-                        <li class="list-group-item bg-transparent text-white border-secondary">
-                            <i class="fa-solid fa-check text-success me-2"></i><strong>The Rig:</strong> Permanently set up 360-degree drum kit (Tyler) and Ryan's "Engine" pedalboard.
-                        </li>
-                        <li class="list-group-item bg-transparent text-white border-secondary">
-                            <i class="fa-solid fa-check text-success me-2"></i><strong>Power:</strong> 3-Phase Industrial Power (400 Amps) to run the touring light rig.
-                        </li>
+                    <ul class="list-unstyled small text-body-secondary mb-0 border-top border-secondary-subtle pt-3">
+                        <li class="mb-2"><i class="fa-solid fa-check text-primary me-2"></i><strong>The War Board:</strong> Floor-to-ceiling tracking of global assets.</li>
+                        <li class="mb-2"><i class="fa-solid fa-check text-primary me-2"></i><strong>Secure Comms:</strong> Hardlined data link to the house (The Fortress).</li>
+                        <li><i class="fa-solid fa-check text-primary me-2"></i><strong>The Vault:</strong> Fireproof storage for master tapes and deeds.</li>
                     </ul>
                 </div>
             </div>
         </div>
 
         <div class="col-lg-6">
-            <div class="card h-100 shadow border-0 overflow-hidden">
-                <div class="card-header bg-secondary text-white border-bottom border-light py-3">
-                    <h5 class="fw-bold text-uppercase mb-0"><i class="fa-duotone fa-wrench me-2"></i>Fleet Maintenance</h5>
-                </div>
-                <div class="card-body p-4 bg-body-tertiary">
-                    <p class="small text-body-secondary mb-4">
-                        We don't trust mechanics we don't know. The band maintains their own fleet in-house.
-                    </p>
-                    <div class="row g-3">
-                        <div class="col-6">
-                            <div class="bay-card p-3 text-center rounded">
-                                <i class="fa-solid fa-van-shuttle fa-2x text-primary mb-2"></i>
-                                <h6 class="fw-bold small text-uppercase">Bay 1: The Van</h6>
-                                <small class="text-muted d-block">Ryan's Custom Sprinter</small>
-                                <span class="badge bg-success mt-2">Hydraulics: OK</span>
-                            </div>
-                        </div>
-                        <div class="col-6">
-                            <div class="bay-card p-3 text-center rounded">
-                                <i class="fa-solid fa-bus fa-2x text-danger mb-2"></i>
-                                <h6 class="fw-bold small text-uppercase">Bay 2: The Bus</h6>
-                                <small class="text-muted d-block">1998 Prevost H3-45</small>
-                                <span class="badge bg-warning text-dark mt-2">Service Due</span>
-                            </div>
+            <div class="card h-100 bg-body-tertiary border-secondary-subtle sector-card shadow-sm">
+                <div class="card-body p-4">
+                    <div class="d-flex justify-content-between align-items-start mb-3">
+                        <div class="p-3 bg-body-secondary rounded-circle">
+                            <i class="fa-duotone fa-microphone-lines fa-2x text-warning"></i>
                         </div>
                     </div>
+                    <h4 class="card-title text-body-emphasis fw-bold">Production Floor</h4>
+                    <p class="card-text text-body-secondary">
+                        A cavernous, acoustically-isolated space designed to replicate stadium conditions.
+                    </p>
+                    <ul class="list-unstyled small text-body-secondary mb-0 border-top border-secondary-subtle pt-3">
+                        <li class="mb-2"><i class="fa-solid fa-check text-warning me-2"></i><strong>Floating Slab:</strong> Concrete floor isolated on rubber to prevent seismic vibration.</li>
+                        <li class="mb-2"><i class="fa-solid fa-check text-warning me-2"></i><strong>The Fleet Bay:</strong> Indoor parking/maintenance for the Tour Bus and accessible vans.</li>
+                        <li><i class="fa-solid fa-check text-warning me-2"></i><strong>Power:</strong> 3-Phase industrial mains with battery backup.</li>
+                    </ul>
                 </div>
             </div>
         </div>
-
     </div>
 
-    <div class="alert alert-dark d-flex align-items-center p-4 rounded shadow-sm">
-        <i class="fa-duotone fa-lock-keyhole fa-3x me-4 text-secondary"></i>
-        <div>
-            <h5 class="fw-bold text-uppercase mb-1">Security Protocol</h5>
-            <p class="mb-0 small text-white-50">
-                This facility is not open to the public. It is surrounded by an 8-foot privacy fence and monitored by a local, closed-circuit security system (No cloud uploads). 
-                <br><strong>Note for Delivery Drivers:</strong> Leave packages at the gate box. Do not honk.
-            </p>
+    <div class="d-flex align-items-center mb-4 pb-2 border-bottom border-danger-subtle">
+        <span class="floor-badge text-danger me-3">Level 2</span>
+        <h3 class="h5 text-uppercase text-body-emphasis mb-0">Restricted Quarters (The Loft)</h3>
+    </div>
+
+    <div class="card border-danger border-opacity-50 shadow-sm overflow-hidden mb-5">
+        <div class="row g-0">
+            <div class="col-md-4 bg-body-secondary d-flex align-items-center justify-content-center p-5">
+                <div class="text-center">
+                    <i class="fa-duotone fa-door-closed fa-5x text-danger opacity-50 mb-3"></i>
+                    <h5 class="fw-bold text-body-emphasis text-uppercase">Access Restricted</h5>
+                    <p class="small text-danger fw-bold font-monospace mb-0">TIER 1 PERSONNEL ONLY</p>
+                </div>
+            </div>
+            <div class="col-md-8 p-4 p-lg-5 bg-body-tertiary">
+                <p class="text-body-secondary mb-4">
+                    Hidden behind a nondescript door labeled "Mechanical Storage" lies a fully furnished, luxury apartment. This space serves as an emergency retreat and long-term rehearsal residency. Access is via a biometric keypad or the freight elevator.
+                </p>
+                
+                <div class="row g-4">
+                    <div class="col-sm-6">
+                        <div class="p-3 border border-secondary-subtle rounded h-100 bg-body">
+                            <h6 class="fw-bold text-body-emphasis text-uppercase small mb-2">Bedroom A (The Family)</h6>
+                            <div class="d-flex align-items-center mb-2">
+                                <i class="fa-duotone fa-bed-front text-secondary me-2"></i>
+                                <span class="fw-bold">1x King Bed</span>
+                            </div>
+                            <p class="small text-body-secondary mb-0">
+                                Configured for Ryan, Cassidy, and Holly. Features reinforced frame and adjacent medical supply storage.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-sm-6">
+                        <div class="p-3 border border-secondary-subtle rounded h-100 bg-body">
+                            <h6 class="fw-bold text-body-emphasis text-uppercase small mb-2">Bedroom B (The Twins)</h6>
+                            <div class="d-flex align-items-center mb-2">
+                                <i class="fa-duotone fa-bed-empty text-secondary me-2"></i>
+                                <span class="fw-bold">2x Full Beds</span>
+                            </div>
+                            <p class="small text-body-secondary mb-0">
+                                Sleeping quarters for Evan and Tyler Wright. Sound-dampened walls.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-4 p-3 bg-body rounded border border-warning-subtle">
+                    <div class="d-flex align-items-start">
+                        <i class="fa-solid fa-universal-access text-warning mt-1 me-3"></i>
+                        <div>
+                            <strong class="text-body-emphasis text-uppercase small">Accessibility Note:</strong>
+                            <p class="small text-body-secondary mb-0">
+                                The second floor is accessible via a heavy-duty freight elevator (2,500lb capacity) capable of transporting Ryan's power chair and equipment simultaneously.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="row justify-content-center">
+        <div class="col-lg-10">
+            <div class="alert alert-secondary d-flex align-items-center p-4 rounded shadow-sm border-0 bg-body-secondary text-body-emphasis">
+                <i class="fa-duotone fa-bolt fa-3x me-4 text-warning"></i>
+                <div>
+                    <h5 class="fw-bold text-uppercase mb-1">Off-Grid Capability</h5>
+                    <p class="mb-0 small opacity-75">
+                        The facility is backed by an industrial telecom-grade battery bank and a natural gas generator. In the event of a regional power failure, Stardust Studios can operate independently for 14 days.
+                    </p>
+                </div>
+            </div>
         </div>
     </div>
 
