@@ -63,7 +63,7 @@ include_once ROOT_PATH . '/includes/components/arrays/_discography.php';
                             </div>
 
                             <div class="card-body d-flex flex-column">
-                                <h5 class="card-title text-light fw-bold mb-1">
+                                <h5 class="card-title text-body fw-bold mb-1">
                                     <?php echo $album['title']; ?>
                                 </h5>
                                 <p class="card-text small text-muted mb-3">

@@ -14,14 +14,17 @@
     "navbarBrandClass": "rounded-0 navbar-brand-corporate-img"
   },
   "/engine-room": {
+    "view": "pages/engine-room/overview",
     "title": "Engine Room Records, LLC",
     "showSidebar": false
   },
   "/engine-room/artists": {
+    "view": "pages/engine-room/artists/overview",
     "title": "Artists Archive | Engine Room Records",
     "ogDescription": "A comprehensive archive of artists, albums, and historical records from Engine Room Records."
   },
   "/engine-room/history": {
+    "view": "pages/engine-room/history/overview",
     "title": "Engine Room Records History | Company Timeline",
     "ogDescription": "An in-depth look at the founding, growth, and milestones of Engine Room Records from inception to present day."
   }
