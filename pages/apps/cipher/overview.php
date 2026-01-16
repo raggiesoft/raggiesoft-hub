@@ -2,7 +2,7 @@
     <div class="row mb-4">
         <div class="col-lg-8">
             <h1 class="display-5 fw-bold border-bottom pb-2 text-primary">
-                <i class="bi bi-broadcast"></i> Signal Decryptor
+                <i class="fa-duotone fa-tower-broadcast me-2"></i>Signal Decryptor
             </h1>
             <p class="lead text-muted">
                 Intercept and decode the transmission.
@@ -17,7 +17,9 @@
         <div class="col-md-5">
             <div class="card shadow-sm border-0 bg-light">
                 <div class="card-header bg-dark text-white d-flex justify-content-between align-items-center">
-                    <h5 class="mb-0"><i class="bi bi-joystick"></i> Controls</h5>
+                    <h5 class="mb-0">
+                        <i class="fa-duotone fa-gamepad-modern me-2"></i>Controls
+                    </h5>
                     <span class="badge bg-danger">LIVE</span>
                 </div>
                 <div class="card-body">
@@ -51,10 +53,10 @@
 
                         <div class="d-grid gap-2">
                             <button type="submit" class="btn btn-primary btn-lg">
-                                <i class="bi bi-search"></i> Analyze Signal
+                                <i class="fa-duotone fa-magnifying-glass me-2"></i>Analyze Signal
                             </button>
                             <button type="button" id="resetBtn" class="btn btn-outline-secondary">
-                                <i class="bi bi-arrow-counterclockwise"></i> Reset Transmission
+                                <i class="fa-duotone fa-rotate-left me-2"></i>Reset Transmission
                             </button>
                         </div>
                     </form>
@@ -71,7 +73,9 @@
 
             <div id="explanationBox" class="card border-primary d-none">
                 <div class="card-header bg-primary text-white">
-                    <strong class="small text-uppercase">Logic Analysis Log</strong>
+                    <strong class="small text-uppercase">
+                        <i class="fa-duotone fa-microchip me-2"></i>Logic Analysis Log
+                    </strong>
                 </div>
                 <div class="card-body bg-light">
                     <ul id="logList" class="list-group list-group-flush bg-transparent">
@@ -80,8 +84,8 @@
             </div>
 
             <div id="placeholderState" class="text-center text-muted py-5">
-                <i class="bi bi-shield-lock display-4 opacity-25"></i>
-                <p class="mt-3">Waiting for input...</p>
+                <i class="fa-duotone fa-shield-keyhole fa-4x opacity-25 mb-3"></i>
+                <p>Waiting for input...</p>
             </div>
         </div>
     </div>
