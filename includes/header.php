@@ -217,6 +217,9 @@ if (isset($customPageAssets) && is_array($customPageAssets)) {
   </head>
   
   <body class="d-flex flex-column h-100">
+    <a href="#main-content" class="visually-hidden-focusable p-3 m-2 bg-primary text-white rounded position-absolute start-0 top-0 z-3 text-decoration-none fw-bold">
+        Skip to Main Content
+    </a>
     
     <div id="page-loader">
         <div class="spinner-border text-primary mb-3" role="status" style="width: 3rem; height: 3rem;">

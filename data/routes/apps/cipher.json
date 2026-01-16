@@ -1,0 +1,7 @@
+{
+  "/apps/cipher": {
+    "view": "pages/apps/cipher/overview",
+    "title": "Signal Decryptor | The Stardust Engine",
+    "showSidebar": false
+  }
+}

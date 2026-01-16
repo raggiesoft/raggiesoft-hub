@@ -182,9 +182,9 @@ if ($showSidebar && file_exists($currentSidebar)) {
     echo '    <aside class="col-md-3 col-lg-2 d-none d-md-block bg-body-tertiary border-end p-3">';
     require_once $currentSidebar;
     echo '    </aside>';
-    echo '    <main id="main-content" class="col-md-9 col-lg-10 p-4">';
+    echo '    <main id="main-content" class="col-md-9 col-lg-10 p-4" tabindex="-1" style="outline:none;">';
 } else {
-    echo '    <main id="main-content" class="col-12 p-0">'; 
+    echo '    <main id="main-content" class="col-12 p-0" tabindex="-1" style="outline:none;">'; 
 }
 
 if (file_exists(ROOT_PATH . '/' . $config['view'] . '.php')) {
