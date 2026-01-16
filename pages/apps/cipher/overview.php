@@ -66,8 +66,8 @@
 
         <div class="col-md-7">
             <div id="resultBox" class="alert alert-dark text-center py-4 d-none mb-4 border-2">
-                <h6 class="text-uppercase text-muted letter-spacing-1 mb-3">Decryption Result</h6>
-                <div class="display-1 fw-bold text-dark" id="resultSymbols" style="letter-spacing: 0.2em;">
+                <h6 class="text-uppercase text-body-secondary letter-spacing-1 mb-3">Decryption Result</h6>
+                <div class="display-1 fw-bold text-body-emphasis" id="resultSymbols" style="letter-spacing: 0.2em;">
                     </div>
             </div>
 
