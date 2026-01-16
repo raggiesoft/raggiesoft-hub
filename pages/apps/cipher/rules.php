@@ -40,25 +40,25 @@
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td class="fw-bold text-success"><i class="fa-duotone fa-gauge me-2"></i>Calibration</td>
+                                    <th scope="row" class="fw-bold text-success"><i class="fa-duotone fa-gauge me-2"></i>Calibration</th>
                                     <td>Digits 1 - 5</td>
                                     <td><span class="badge bg-success-subtle text-success-emphasis">Unique (No Repeats)</span></td>
                                     <td>Cadet</td>
                                 </tr>
                                 <tr>
-                                    <td class="fw-bold text-info"><i class="fa-duotone fa-satellite me-2"></i>Orbital</td>
+                                    <th scope="row" class="fw-bold text-info"><i class="fa-duotone fa-satellite me-2"></i>Orbital</th>
                                     <td>Digits 1 - 6</td>
                                     <td><span class="badge bg-warning-subtle text-warning-emphasis">Repeats Allowed</span></td>
                                     <td>Standard</td>
                                 </tr>
                                 <tr>
-                                    <td class="fw-bold text-warning"><i class="fa-duotone fa-planet-ringed me-2"></i>Deep Space</td>
+                                    <th scope="row" class="fw-bold text-warning"><i class="fa-duotone fa-planet-ringed me-2"></i>Deep Space</th>
                                     <td>Digits 0 - 9</td>
                                     <td><span class="badge bg-success-subtle text-success-emphasis">Unique (No Repeats)</span></td>
                                     <td>Hard</td>
                                 </tr>
                                 <tr>
-                                    <td class="fw-bold text-danger"><i class="fa-duotone fa-galaxy me-2"></i>Horizon</td>
+                                    <th scope="row" class="fw-bold text-danger"><i class="fa-duotone fa-galaxy me-2"></i>Horizon</th>
                                     <td>Digits 0 - 9</td>
                                     <td><span class="badge bg-warning-subtle text-warning-emphasis">Repeats Allowed</span></td>
                                     <td>Expert</td>
