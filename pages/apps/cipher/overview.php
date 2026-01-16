@@ -26,7 +26,7 @@
                                 <input class="form-check-input" type="radio" name="difficulty" id="diffCalibration" value="calibration" checked>
                                 <label class="form-check-label" for="diffCalibration">
                                     <span class="d-block fw-bold text-success"><i class="fa-duotone fa-gauge me-1"></i> Calibration</span>
-                                    <small class="text-muted" style="font-size: 0.75rem;">1-5 • Unique</small>
+                                    <small class="text-body-secondary" style="font-size: 0.75rem;">1-5 • Unique</small>
                                 </label>
                             </div>
 
@@ -34,7 +34,7 @@
                                 <input class="form-check-input" type="radio" name="difficulty" id="diffOrbital" value="orbital">
                                 <label class="form-check-label" for="diffOrbital">
                                     <span class="d-block fw-bold text-info"><i class="fa-duotone fa-satellite me-1"></i> Orbital</span>
-                                    <small class="text-muted" style="font-size: 0.75rem;">1-6 • Repeats</small>
+                                    <small class="text-body-secondary" style="font-size: 0.75rem;">1-6 • Repeats</small>
                                 </label>
                             </div>
 
@@ -42,7 +42,7 @@
                                 <input class="form-check-input" type="radio" name="difficulty" id="diffDeep" value="deep">
                                 <label class="form-check-label" for="diffDeep">
                                     <span class="d-block fw-bold text-warning"><i class="fa-duotone fa-planet-ringed me-1"></i> Deep Space</span>
-                                    <small class="text-muted" style="font-size: 0.75rem;">0-9 • Unique</small>
+                                    <small class="text-body-secondary" style="font-size: 0.75rem;">0-9 • Unique</small>
                                 </label>
                             </div>
 
@@ -50,7 +50,7 @@
                                 <input class="form-check-input" type="radio" name="difficulty" id="diffHorizon" value="horizon">
                                 <label class="form-check-label" for="diffHorizon">
                                     <span class="d-block fw-bold text-danger"><i class="fa-duotone fa-black-hole me-1"></i> Horizon</span>
-                                    <small class="text-muted" style="font-size: 0.75rem;">0-9 • Repeats</small>
+                                    <small class="text-body-secondary" style="font-size: 0.75rem;">0-9 • Repeats</small>
                                 </label>
                             </div>
                         </div>
@@ -60,8 +60,8 @@
                         <div class="form-check form-switch p-3 bg-body rounded border w-100">
                             <input class="form-check-input fs-4 me-3" type="checkbox" role="switch" id="stealthMode">
                             <label class="form-check-label" for="stealthMode">
-                                <strong class="d-block text-dark dark:text-light">Stealth Protocol</strong>
-                                <small class="text-muted">Hide Code & Explain Logs</small>
+                                <strong class="d-block text-body-emphasis">Stealth Protocol</strong>
+                                <small class="text-body-secondary">Hide Code & Explain Logs</small>
                             </label>
                         </div>
                     </div>
@@ -96,7 +96,7 @@
                                     <i class="fa-duotone fa-eye" id="eyeIcon"></i>
                                 </button>
                             </div>
-                            <div class="form-text" id="secretHint">Enter 4 unique digits (1-5).</div>
+                            <div class="form-text text-body-secondary" id="secretHint">Enter 4 unique digits (1-5).</div>
                         </div>
                         
                         <hr class="my-4">
@@ -147,7 +147,7 @@
                 </div>
             </div>
 
-            <div id="placeholderState" class="text-center text-body-tertiary py-5">
+            <div id="placeholderState" class="text-center text-body-secondary py-5">
                 <i class="fa-duotone fa-shield-keyhole fa-4x opacity-50 mb-3"></i>
                 <p>Waiting for input...</p>
             </div>
@@ -174,12 +174,12 @@
     border-radius: 0.5rem;
     cursor: pointer;
     transition: all 0.2s;
-    background: var(--bs-body-bg);
+    background: var(--bs-body-bg); /* Adapts to theme background */
+    color: var(--bs-body-color);    /* Adapts to theme text color */
 }
 .card-radio input:checked + label {
     border-color: var(--bs-primary);
     background-color: var(--bs-primary-bg-subtle);
     box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
 }
-.dark\:text-light { color: var(--bs-body-color); }
 </style>
