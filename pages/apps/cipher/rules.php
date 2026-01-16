@@ -54,7 +54,17 @@
                     <i class="fa-duotone fa-magnifying-glass-chart me-2"></i>Reading the Feedback
                 </div>
                 <div class="card-body p-4 bg-body-tertiary">
-                    <p>After every guess, the Stardust Engine will return a set of symbols:</p>
+                    
+                    <div class="alert alert-warning d-flex align-items-center mb-4" role="alert">
+                        <i class="fa-duotone fa-sort-amount-down fa-2x me-3"></i>
+                        <div>
+                            <strong>Priority Sorting:</strong> The Stardust Engine always displays <strong>(+)</strong> symbols first.
+                            <br>
+                            <small>The position of a symbol in the result does <em>not</em> correspond to the position of the digit in your guess.</small>
+                        </div>
+                    </div>
+
+                    <p>After every guess, the system returns a set of symbols:</p>
                     
                     <div class="d-flex align-items-center mb-4 p-3 bg-body border rounded">
                         <div class="display-6 fw-bold text-success me-4 ps-2">+</div>
