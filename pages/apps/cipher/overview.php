@@ -155,6 +155,21 @@
     </div>
 </div>
 
+<div class="toast-container position-fixed bottom-0 end-0 p-3">
+    <div id="stealthToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="toast-header bg-dark text-white">
+            <i class="fa-duotone fa-user-secret me-2"></i>
+            <strong class="me-auto">System Notification</strong>
+            <small class="text-white-50">Just now</small>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+        <div class="toast-body bg-body-tertiary">
+            Stealth Protocol updated. <br>
+            <span class="text-body-secondary small">Changes will apply on next analysis.</span>
+        </div>
+    </div>
+</div>
+
 <script src="https://assets.raggiesoft.com/apps/cipher/js/cipher.js?v=<?php echo time(); ?>"></script>
 
 <style>
