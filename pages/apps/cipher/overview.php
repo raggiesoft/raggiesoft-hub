@@ -91,4 +91,4 @@
     </div>
 </div>
 
-<script src="https://assets.raggiesoft.com/apps/cipher/js/cipher.js"></script>
+<script src="https://assets.raggiesoft.com/apps/cipher/js/cipher.js?v=<?php echo time(); ?>"></script>
