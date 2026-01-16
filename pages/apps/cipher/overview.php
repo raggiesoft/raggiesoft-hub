@@ -49,7 +49,7 @@
                             <div class="form-check card-radio">
                                 <input class="form-check-input" type="radio" name="difficulty" id="diffHorizon" value="horizon">
                                 <label class="form-check-label" for="diffHorizon">
-                                    <span class="d-block fw-bold text-danger"><i class="fa-duotone fa-black-hole me-1"></i> Horizon</span>
+                                    <span class="d-block fw-bold text-danger"><i class="fa-duotone fa-galaxy me-1"></i> Horizon</span>
                                     <small class="text-body-secondary" style="font-size: 0.75rem;">0-9 • Repeats</small>
                                 </label>
                             </div>
