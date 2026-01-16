@@ -174,8 +174,8 @@
     border-radius: 0.5rem;
     cursor: pointer;
     transition: all 0.2s;
-    background: var(--bs-body-bg); /* Adapts to theme background */
-    color: var(--bs-body-color);    /* Adapts to theme text color */
+    background: var(--bs-body-bg); 
+    color: var(--bs-body-color);    
 }
 .card-radio input:checked + label {
     border-color: var(--bs-primary);
