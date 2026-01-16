@@ -18,7 +18,7 @@
         <div class="card-body">
             <form id="configForm">
                 <div class="row g-4">
-                    <div class="col-md-8 border-end-md">
+                    <div class="col-12 col-lg-8 border-end-lg">
                         <label class="form-label fw-bold text-uppercase small text-body-secondary mb-3">Signal Difficulty Tier</label>
                         <div class="d-flex flex-wrap gap-3">
                             
@@ -56,7 +56,7 @@
                         </div>
                     </div>
 
-                    <div class="col-md-4 d-flex align-items-center">
+                    <div class="col-12 col-lg-4 d-flex align-items-center">
                         <div class="form-check form-switch p-3 bg-body rounded border w-100">
                             <input class="form-check-input fs-4 me-3" type="checkbox" role="switch" id="stealthMode">
                             <label class="form-check-label" for="stealthMode">
@@ -85,11 +85,13 @@
                         <div class="mb-4">
                             <label for="secretCode" class="form-label fw-bold text-uppercase small text-body-secondary">Target Signal (Secret Code)</label>
                             <div class="input-group">
-                                <input type="text" 
+                                <input type="password" 
                                        class="form-control form-control-lg font-monospace text-center letter-spacing-2" 
                                        id="secretCode" 
                                        placeholder="Wait..." 
                                        maxlength="4" 
+                                       inputmode="numeric"
+                                       pattern="[0-9]*"
                                        required 
                                        autocomplete="off">
                                 <button class="btn btn-outline-secondary" type="button" id="toggleSecretVisibility">
@@ -103,11 +105,13 @@
                         
                         <div class="mb-3">
                             <label for="guessInput" class="form-label fw-bold text-uppercase small text-body-secondary">Incoming Frequency (Guess)</label>
-                            <input type="text" 
+                            <input type="tel" 
                                    class="form-control form-control-lg font-monospace text-center letter-spacing-2" 
                                    id="guessInput" 
                                    placeholder="----" 
                                    maxlength="4" 
+                                   inputmode="numeric"
+                                   pattern="[0-9]*"
                                    required
                                    autocomplete="off">
                         </div>
