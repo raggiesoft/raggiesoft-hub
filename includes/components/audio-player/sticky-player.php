@@ -54,7 +54,13 @@
     </div>
 </div>
 
-<div class="modal fade" id="lyricsModal" tabindex="-1" aria-hidden="true">
+<div class="modal fade" 
+     id="lyricsModal" 
+     tabindex="-1" 
+     aria-hidden="true" 
+     style="z-index: 1100;" 
+     data-turbo-permanent="true">
+     
   <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
     <div class="modal-content shadow-lg">
       <div class="modal-header">
@@ -79,6 +85,7 @@
     (function() {
         const player = document.getElementById('sticky-audio-player');
         const modal = document.getElementById('lyricsModal');
+        // Move elements to body to escape any CSS formatting contexts of the footer/container
         if (player && !document.body.contains(player)) document.body.appendChild(player);
         if (modal && !document.body.contains(modal)) document.body.appendChild(modal);
     })();
