@@ -2,6 +2,7 @@
 // includes/components/headers/raggiesoft-books/header-knox.php
 // Adapted from Engine Room Records template.
 // Context: Navigation for the specific book "Knox".
+// Theme: Stark, Functional, Adaptive Colors.
 
 $uri = $_SERVER['REQUEST_URI'] ?? '';
 
@@ -23,16 +24,16 @@ $isChars    = str_contains($uri, '/characters');
     <a class="nav-link dropdown-toggle <?php echo ($isLore || $isChars) ? 'active' : ''; ?>" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
       <i class="fa-duotone fa-planet-ringed me-2"></i>The Telsan Gap
     </a>
-    <ul class="dropdown-menu dropdown-menu-end rounded-0 border-secondary shadow-sm">
+    <ul class="dropdown-menu dropdown-menu-end rounded-0 shadow-sm">
       <li><h6 class="dropdown-header text-uppercase text-success fw-bold">The Reality</h6></li>
       <li>
           <a class="dropdown-item" href="/raggiesoft-books/knox/characters">
-            <i class="fa-solid fa-users me-2 text-secondary"></i>The Twins & Pip
+            <i class="fa-solid fa-users me-2 text-body-secondary"></i>The Twins & Pip
           </a>
       </li>
       <li>
           <a class="dropdown-item" href="/raggiesoft-books/knox/lore/aerie-hold">
-            <i class="fa-solid fa-tree me-2 text-secondary"></i>Aerie-Hold
+            <i class="fa-solid fa-tree me-2 text-body-secondary"></i>Aerie-Hold
           </a>
       </li>
 
@@ -53,7 +54,7 @@ $isChars    = str_contains($uri, '/characters');
 
   <li class="nav-item border-start ms-2 ps-2">
       <a class="nav-link" href="/">
-        <i class="fa-duotone fa-arrow-right-from-bracket me-2 text-secondary"></i><span class="text-secondary small">Exit to RaggieSoft</span>
+        <i class="fa-duotone fa-arrow-right-from-bracket me-2 text-body-secondary"></i><span class="text-body-secondary small">Exit to RaggieSoft</span>
       </a>
   </li>
 
