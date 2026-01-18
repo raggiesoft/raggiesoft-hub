@@ -1,7 +1,7 @@
 {
   "common": {
     "site": "knox",
-    "theme": "aerie-hold", 
+    "project-slug": "knox",
     "brandFont": ["Courier New", "monospace"],
     "siteName": "K.N.O.X.",
     "headerMenu": "raggiesoft-books/knox/header-knox",
