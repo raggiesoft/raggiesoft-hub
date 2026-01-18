@@ -1,0 +1,40 @@
+{
+  "common": {
+    "site": "knox",
+    "theme": "aerie-hold", 
+    "brandFont": ["Courier New", "monospace"],
+    "siteName": "K.N.O.X.",
+    "headerMenu": "raggiesoft-books/knox/header-knox",
+    "footer": "raggiesoft-books/knox/footer-knox",
+    "showSidebar": true,
+    "sidebar": "raggiesoft-books/knox/sidebar-knox",
+    "navbarBrandText": "K.N.O.X.",
+    "navbarBrandLink": "/raggiesoft-books/knox",
+    "ogImage": "https://assets.raggiesoft.com/knox/images/social-preview.jpg"
+  },
+
+  "/raggiesoft-books/knox": {
+    "view": "pages/raggiesoft-books/knox/overview",
+    "title": "Knox | Kinetic Null Operative: X",
+    "ogTitle": "Target: K.N.O.X. - The Myth vs. The Reality",
+    "showSidebar": false
+  },
+
+  "/raggiesoft-books/knox/chapters": {
+    "view": "pages/raggiesoft-books/knox/chapters",
+    "title": "Mission Logs | Knox",
+    "ogTitle": "Read the Story: The Six-Day Run"
+  },
+
+  "/raggiesoft-books/knox/lore": {
+    "view": "pages/raggiesoft-books/knox/lore/overview",
+    "title": "World Data | Telsus Minor",
+    "ogTitle": "The Green Hell: World Database"
+  },
+
+  "/raggiesoft-books/knox/characters": {
+    "view": "pages/raggiesoft-books/knox/characters",
+    "title": "Operatives | Knox",
+    "ogTitle": "The Ghosts of Aerie-Hold"
+  }
+}
