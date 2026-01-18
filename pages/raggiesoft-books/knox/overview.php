@@ -1,25 +1,23 @@
 <?php
 // pages/raggiesoft-books/knox/overview.php
-$pageTitle = "Knox | Kinetic Null Operative: X";
-$pageDesc  = "To the Axiom Corporation, Knox is a phantom super-soldier. In reality, they are two twins trying to save their home.";
-// Assuming theme supports dark/light mode via data-bs-theme on body/html
-$heroImage = "/raggiesoft-assets/knox/images/aerie-hold-atmospheric.jpg"; 
+// Landing Page for K.N.O.X. Microsite
+// Context: A welcoming gateway into the truth of the Telsan Gap.
 
-// 1. Include Book Header 
-include_once($_SERVER['DOCUMENT_ROOT'] . '/includes/header-book.php'); 
+// Hero Image (Absolute Path per user request)
+$heroImage = "https://assets.raggiesoft.com/knox/images/aerie-hold-atmospheric.jpg";
 ?>
 
-<section class="position-relative py-5" style="background-image: url('<?php echo $heroImage; ?>'); background-size: cover; background-position: center; min-height: 65vh;">
+<section class="position-relative py-5" style="background-image: url('<?php echo $heroImage; ?>'); background-size: cover; background-position: center; min-height: 70vh;">
     <div class="position-absolute top-0 start-0 w-100 h-100 bg-black opacity-75"></div>
     
     <div class="container position-relative h-100 d-flex flex-column justify-content-center pt-5">
         <div class="row">
             <div class="col-lg-8">
                 <h1 class="display-1 fw-bold text-white text-uppercase" style="letter-spacing: -2px;">K.N.O.X.</h1>
-                <p class="lead text-light font-monospace mb-4">
+                <p class="lead text-white-50 font-monospace mb-4">
                     <span class="text-danger">K</span>INETIC. <span class="text-danger">N</span>ULL. <span class="text-danger">O</span>PERATIVE: <span class="text-danger">X</span>.
                 </p>
-                <div class="d-flex gap-3">
+                <div class="d-flex flex-wrap gap-3">
                     <a href="/raggiesoft-books/knox/chapters/book-1/chapter-1" class="btn btn-danger btn-lg rounded-0 px-4">
                         <i class="fa-duotone fa-book-open me-2"></i>Start Reading
                     </a>
@@ -40,13 +38,15 @@ include_once($_SERVER['DOCUMENT_ROOT'] . '/includes/header-book.php');
             <p class="lead text-body">
                 To the Axiom Corporation, <strong>Subject K.N.O.X.</strong> is a Tier-1 threat: a rogue Republic super-soldier, likely male, heavy build, with extensive combat scarring. He is a phantom capable of leveling fuel depots and vanishing without a trace.
             </p>
+            
             <hr class="my-4 text-danger opacity-100" style="width: 50px; border-width: 3px;">
+            
             <h3 class="h4 text-body">The Reality</h3>
             <p class="text-body">
                 The Axiom is wrong. There is no soldier. There is no Knox.
             </p>
             <p class="text-body">
-                There is only <strong>Anya</strong>, a 4'11" woman often mistaken for a child, and her brother <strong>Kael</strong>, a nearsighted technician. They possess no military training and not a single scar on their bodies. Their invisibility isn't tech—it's the Axiom's arrogance. They are looking for a monster; they simply don't see the "children" standing right in front of them.
+                There is only <strong>Anya</strong>, a 1.5m woman often mistaken for a child, and her brother <strong>Kael</strong>, a nearsighted technician. They possess no military training and not a single scar on their bodies. Their "invisibility" isn't military-grade stealth tech—it's the Axiom's own arrogance. They are hunting a monster, so they simply don't see the "children" standing right in front of them.
             </p>
         </div>
 
@@ -111,7 +111,7 @@ include_once($_SERVER['DOCUMENT_ROOT'] . '/includes/header-book.php');
                     <i class="fa-duotone fa-industry-windows fa-3x text-body-secondary mb-3"></i>
                     <h4 class="text-body">The Spire</h4>
                     <p class="small text-body-secondary">
-                        A 10-mile high obsidian tower piercing the sky. The seat of the Axiom Corporation's power, built on the industrial rot of Port Telsus.
+                        A 16-kilometer high obsidian tower piercing the sky. The seat of the Axiom Corporation's power, built on the industrial rot of Port Telsus.
                     </p>
                 </div>
             </div>
@@ -120,7 +120,7 @@ include_once($_SERVER['DOCUMENT_ROOT'] . '/includes/header-book.php');
                     <i class="fa-duotone fa-trees fa-3x text-success mb-3"></i>
                     <h4 class="text-body">The Weave</h4>
                     <p class="small text-body-secondary">
-                        A vertical jungle of miles-high trees. To the Axiom, it is the "Green Hell." To the natives, it is a symbiotic ecosystem that provides life.
+                        A vertical jungle of kilometer-high trees. To the Axiom, it is the "Green Hell." To the natives, it is a symbiotic ecosystem that provides life.
                     </p>
                 </div>
             </div>
@@ -134,6 +134,83 @@ include_once($_SERVER['DOCUMENT_ROOT'] . '/includes/header-book.php');
                 </div>
             </div>
         </div>
+    </div>
+</div>
+
+<div class="container my-5">
+    <div class="row g-4">
+        
+        <div class="col-md-4">
+            <div class="card h-100 border-success shadow-sm">
+                <div class="card-body text-center bg-body">
+                    <div class="mb-4">
+                        <div class="rounded-circle bg-success bg-opacity-10 d-inline-flex align-items-center justify-content-center border border-success" style="width: 100px; height: 100px;">
+                            <i class="fa-duotone fa-leaf fa-3x text-success"></i>
+                        </div>
+                    </div>
+                    <h3 class="h4 text-success font-monospace mb-1">ANYA</h3>
+                    <span class="skill-pill border-success text-success mb-3">OPERATIVE: GHOST</span>
+                    <p class="card-text small text-body-secondary">
+                        "The Invisibility Cloak."<br>
+                        She doesn't fight; she vanishes. The master of fieldcraft who turns the jungle itself into a weapon.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card h-100 border-success shadow-sm">
+                <div class="card-body text-center bg-body">
+                    <div class="mb-4">
+                        <div class="rounded-circle bg-success bg-opacity-10 d-inline-flex align-items-center justify-content-center border border-success" style="width: 100px; height: 100px;">
+                            <i class="fa-duotone fa-flask-round-potion fa-3x text-success"></i>
+                        </div>
+                    </div>
+                    <h3 class="h4 text-success font-monospace mb-1">KAEL</h3>
+                    <span class="skill-pill border-success text-success mb-3">OPERATIVE: TOYMAKER</span>
+                    <p class="card-text small text-body-secondary">
+                        "The Architect."<br>
+                        He builds the 'toys' that make the big booms. Chemistry, fabrication, and the voice of reason.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card h-100 border-secondary bg-black overflow-hidden position-relative flicker-container">
+                
+                <div class="static-overlay"></div>
+
+                <div class="card-body text-center d-flex flex-column justify-content-center position-relative z-1">
+                    <div class="mb-4">
+                        <div class="rounded-circle bg-transparent d-inline-flex align-items-center justify-content-center border border-secondary" style="width: 100px; height: 100px;">
+                            <i class="fa-solid fa-chess-rook fa-3x text-secondary opacity-50"></i>
+                        </div>
+                    </div>
+                    
+                    <h3 class="h4 text-secondary font-monospace mb-1" style="letter-spacing: 3px;">
+                        R <span class="opacity-25">O</span> O <span class="opacity-25">K</span>
+                    </h3>
+                    
+                    <span class="skill-pill border-danger text-danger mb-3 blink-text">
+                        <i class="fa-solid fa-signal-stream-slash me-2"></i>NO CARRIER
+                    </span>
+                    
+                    <p class="card-text small text-muted font-monospace">
+                        "The Voice in the Static."<br>
+                        <span class="text-decoration-line-through">Dock Master.</span> <span class="text-decoration-line-through">Ally.</span><br>
+                        We deal with his intermediaries. He deals with the Devil.
+                    </p>
+                </div>
+                
+                <div class="card-footer bg-transparent border-top border-secondary border-opacity-25 text-center position-relative z-1">
+                    <small class="text-danger font-monospace" style="font-size: 0.7rem;">
+                        > ENCRYPTION KEY ROTATING...
+                    </small>
+                </div>
+            </div>
+        </div>
+
     </div>
 </div>
 
@@ -167,8 +244,3 @@ function toggleProfile() {
     }
 }
 </script>
-
-<?php
-// 3. Include Footer
-include_once($_SERVER['DOCUMENT_ROOT'] . '/includes/components/footers/raggiesoft-books/footer-knox.php');
-?>
