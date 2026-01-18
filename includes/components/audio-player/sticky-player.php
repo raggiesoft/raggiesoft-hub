@@ -81,7 +81,7 @@
 </div>
 
 <script>
-    // Self-Inject Logic (Keeps it safe from Turbo)
+    // Self-Inject Logic (Moves modal to Body to fix Z-Order stacking context issues)
     (function() {
         const player = document.getElementById('sticky-audio-player');
         const modal = document.getElementById('lyricsModal');
