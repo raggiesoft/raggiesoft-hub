@@ -128,10 +128,18 @@
                             <button type="button" id="resetBtn" class="btn btn-outline-secondary">
                                 <i class="fa-duotone fa-rotate-left me-2"></i>Reset Transmission
                             </button>
-                            <a href="/apps/cipher/rules" class="btn btn-link text-decoration-none mt-2">
-                                <i class="fa-duotone fa-book-open me-1"></i>View Protocols
+                        </div>
+                        
+                        <div class="d-flex justify-content-center gap-3 mt-3">
+                            <a href="/apps/cipher/rules" class="text-decoration-none text-body-secondary small">
+                                <i class="fa-duotone fa-book-open me-1"></i>Protocols
+                            </a>
+                            <span class="text-body-secondary small opacity-50">•</span>
+                            <a href="/apps/cipher/history" class="text-decoration-none text-body-secondary small">
+                                <i class="fa-duotone fa-scroll-old me-1"></i>Origins
                             </a>
                         </div>
+
                     </form>
                 </div>
             </div>
