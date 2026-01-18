@@ -85,8 +85,14 @@
     (function() {
         const player = document.getElementById('sticky-audio-player');
         const modal = document.getElementById('lyricsModal');
-        // Move elements to body to escape any CSS formatting contexts of the footer/container
-        if (player && !document.body.contains(player)) document.body.appendChild(player);
-        if (modal && !document.body.contains(modal)) document.body.appendChild(modal);
+
+        // FIX: Check if the parent is NOT the body. If so, move it.
+        if (player && player.parentNode !== document.body) {
+            document.body.appendChild(player);
+        }
+        
+        if (modal && modal.parentNode !== document.body) {
+            document.body.appendChild(modal);
+        }
     })();
 </script>
