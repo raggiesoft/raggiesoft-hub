@@ -57,12 +57,17 @@
                     </div>
 
                     <div class="col-12 col-lg-4 d-flex align-items-center">
-                        <div class="form-check form-switch p-3 bg-body rounded border w-100">
-                            <input class="form-check-input fs-4 me-3" type="checkbox" role="switch" id="stealthMode">
-                            <label class="form-check-label" for="stealthMode">
+                        <div class="d-flex align-items-center p-3 bg-body rounded border w-100">
+                            
+                            <div class="form-check form-switch m-0 min-w-auto">
+                                <input class="form-check-input fs-4 m-0" type="checkbox" role="switch" id="stealthMode">
+                            </div>
+
+                            <label class="form-check-label ms-3 cursor-pointer" for="stealthMode">
                                 <strong class="d-block text-body-emphasis">Stealth Protocol</strong>
-                                <small class="text-body-secondary">Hide Code & Explain Logs</small>
+                                <small class="text-body-secondary">Hide Code &amp; Explain Logs</small>
                             </label>
+                            
                         </div>
                     </div>
                 </div>
