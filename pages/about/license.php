@@ -50,7 +50,7 @@
                             </div>
                         </div>
                         <div class="card-body p-4 d-flex flex-column">
-                            <span class="badge bg-warning bg-opacity-10 text-body border border-warning align-self-start mb-3">CC BY-SA 4.0</span>
+                            <span class="badge bg-warning bg-opacity-10 text-warning border border-warning align-self-start mb-3">CC BY-SA 4.0</span>
                             <p class="card-text">
                                 All creative writing, fictional universes (e.g., <em>The Stardust Engine</em>, <em>Knox</em>, <em>Aethel</em>), music tracks, and lore documentation are licensed under <strong>Creative Commons Attribution-ShareAlike 4.0 International</strong>.
                             </p>
