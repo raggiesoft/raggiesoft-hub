@@ -17,7 +17,12 @@ $startImage = !empty($heroImages)
 // 3. Prepare JSON for JS
 $imagesJson = htmlspecialchars(json_encode($heroImages), ENT_QUOTES, 'UTF-8');
 ?>
-
+<style>
+/* LOGO FIX: Force the black logo to become white */
+    .logo-invert {
+        filter: invert(1) grayscale(100%) brightness(200%);
+    }
+</style>
 <div class="immersive-container hero-rotator-container" data-images="<?php echo $imagesJson; ?>">
     
     <div class="hero-bg-layer hero-bg-layer-1" style="background-image: url('<?php echo $startImage; ?>');"></div>
