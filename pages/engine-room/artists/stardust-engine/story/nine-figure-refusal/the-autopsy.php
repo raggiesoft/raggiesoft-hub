@@ -550,7 +550,7 @@ $pageTitle = "The Autopsy: Holly Takes Control - Evidence Item #02";
                     </div>
 
                     <p class="mt-4">
-                        "I stopped by the Pacific Rim office on Monday when we landed," Holly said softly. "Printed on 32lb linen stock. Served to a corporate officer. Witnesses present."
+                        "I stopped by the Pacific Rim office on our way upstairs," Holly said softly. "Printed on 32lb linen stock. Served to a corporate officer. Witnesses present."
                     </p>
                     <p>
                         Frost looked down at the paper. The laughter died in his throat.
