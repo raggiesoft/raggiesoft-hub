@@ -129,7 +129,7 @@ $imagesJson = htmlspecialchars(json_encode($heroImages), ENT_QUOTES, 'UTF-8');
             <div class="col-lg-3 col-md-6">
                 <a href="/about/stardust-engine" class="card glass-card h-100 text-decoration-none hover-lift border-primary transition-all">
                     <div class="card-body text-center">
-                        <img src="https://assets.raggiesoft.com/stardust-engine/images/logo/stardust-engine-logo.png" 
+                        <img src="https://assets.raggiesoft.com/engine-room-records/artists/the-stardust-engine/band-logo.png" 
                              class="mb-3" width="60" height="60" style="object-fit: contain;" alt="Stardust">
                         <h5 class="fw-bold text-white mb-2">Stardust Engine</h5>
                         <p class="small text-white-50 mb-0">80s Synth-Rock Narrative Universe.</p>
@@ -151,7 +151,7 @@ $imagesJson = htmlspecialchars(json_encode($heroImages), ENT_QUOTES, 'UTF-8');
             <div class="col-lg-3 col-md-6">
                 <a href="/about/engine-room" class="card glass-card h-100 text-decoration-none hover-lift border-danger transition-all">
                     <div class="card-body text-center">
-                        <img src="https://assets.raggiesoft.com/engine-room-records/images/logos/engine-room-records-logo.jpg" 
+                        <img src="https://assets.raggiesoft.com/engine-room-records/images/logos/engine-room-records-logo.png" 
                              class="rounded-circle mb-3 border border-danger shadow-sm" width="60" height="60" alt="Engine Room">
                         <h5 class="fw-bold text-danger mb-2">Engine Room</h5>
                         <p class="small text-white-50 mb-0">Fictional Industrial Record Label.</p>
