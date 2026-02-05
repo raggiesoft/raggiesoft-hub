@@ -15,7 +15,7 @@ $pageTitle = "The Extraction - Evidence Item #03";
                 <i class="fa-duotone fa-person-to-door me-2"></i>The Departure
             </span>
             <h1 class="display-4 fw-bold text-body-emphasis mb-2 text-uppercase" style="font-family: 'Impact', sans-serif;">
-                Protocol: Safe Harbor"
+                Protocol: Safe Harbor
             </h1>
             <p class="lead text-body-secondary font-monospace">
                 They didn't run. They didn't scream. They simply collected their own—and one extra—and walked out.
