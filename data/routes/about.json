@@ -34,15 +34,15 @@
     "title": "About Engine Room Records | Company History",
     "site": "engine-room-records",
     "siteName": "Engine Room Records",
-  
+    "theme": "industrial",
     "headerMenu": "about/header-about",
     "sidebar": "about/sidebar-about",
     "showSidebar": true,
+    "navbarBrandLogo": "https://assets.raggiesoft.com/engine-room-records/images/logos/engine-room-records-logo.png",
     "navbarBrandText": "Engine Room<span class=\"d-none d-md-inline\"> Records</span>",
     "navbarBrandLink": "/engine-room",
-    "navbarBrandLogo": "https://assets.raggiesoft.com/engine-room-records/images/logos/engine-room-records-logo.png",
-    "navbarBrandAlt": "Engine Room Records Industrial Logo",
-    "brandFont": ["Courier New", "monospace"]
+    "navbarBrandAlt": "Engine Room Records Official Seal",
+    "navbarBrandClass": "rounded-0 navbar-brand-corporate-img"
   },
   "/about/family": {
     "view": "pages/about/family",
