@@ -60,7 +60,7 @@
                                 <li class="mb-2"><i class="fa-solid fa-circle-exclamation text-warning me-2"></i><strong>Attribution:</strong> You must credit <em>Michael P. Ragsdale / RaggieSoft</em>.</li>
                                 <li class="mb-2"><i class="fa-solid fa-circle-exclamation text-warning me-2"></i><strong>ShareAlike:</strong> If you remix it, you must distribute your contributions under the same license.</li>
                             </ul>
-                            <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" class="btn btn-outline-warning text-dark btn-sm mt-auto">
+                            <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" class="btn btn-outline-warning text-warning btn-sm mt-auto">
                                 <i class="fa-solid fa-external-link me-2"></i>View CC BY-SA 4.0 Deed
                             </a>
                         </div>
