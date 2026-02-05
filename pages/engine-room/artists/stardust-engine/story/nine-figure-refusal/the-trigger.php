@@ -104,11 +104,11 @@ $pageTitle = "The Trigger: Slide 14 - Evidence Item #1";
                     <small class="opacity-75">Project: Golden Goose // Target: Catalog ID #95-AA</small>
                 </div>
                 <div class="slide-body">
-                    <h4 class="mb-4 text-dark fw-bold">Case Study: "Escape Velocity (Ad Astra)"</h4>
+                    <h4 class="mb-4 text-black fw-bold">Case Study: "Escape Velocity (Ad Astra)"</h4>
                     
                     <div class="row">
                         <div class="col-6">
-                            <h5 class="text-uppercase text-muted small fw-bold mb-3 border-bottom pb-1">Current State (Legacy)</h5>
+                            <h5 class="text-uppercase text-black small fw-bold mb-3 border-bottom pb-1">Current State (Legacy)</h5>
                             <ul class="list-unstyled text-danger">
                                 <li class="mb-3">
                                     <i class="fa-solid fa-xmark me-2"></i><strong>Runtime:</strong> 15:33 <span class="badge bg-danger ms-2">NON-VIABLE</span>
@@ -123,15 +123,15 @@ $pageTitle = "The Trigger: Slide 14 - Evidence Item #1";
                         </div>
                         <div class="col-6 border-start">
                             <h5 class="text-uppercase text-success small fw-bold mb-3 border-bottom pb-1">Proposed Strategy</h5>
-                            <ul class="list-unstyled text-dark">
-                                <li class="mb-3">
-                                    <i class="fa-solid fa-scissors me-2 text-success"></i><strong>Action:</strong> Isolate Female Vocal Stems
+                            <ul class="list-unstyled text-success">
+                                <li class="mb-3 ">
+                                    <i class="fa-solid fa-scissors me-2"></i><strong>Action:</strong> Isolate Female Vocal Stems
                                 </li>
                                 <li class="mb-3">
-                                    <i class="fa-solid fa-trash-can me-2 text-success"></i><strong>Action:</strong> Delete Instrumental Bridge <span class="red-pen ms-2">"Dead Weight"</span>
+                                    <i class="fa-solid fa-trash-can me-2"></i><strong>Action:</strong> Delete Instrumental Bridge <span class="red-pen ms-2">"Dead Weight"</span>
                                 </li>
                                 <li>
-                                    <i class="fa-solid fa-money-bill-wave me-2 text-success"></i><strong>Result:</strong> 3:30 Radio Edit + SUV Sync License
+                                    <i class="fa-solid fa-money-bill-wave me-2"></i><strong>Result:</strong> 3:30 Radio Edit + SUV Sync License
                                 </li>
                             </ul>
                         </div>
