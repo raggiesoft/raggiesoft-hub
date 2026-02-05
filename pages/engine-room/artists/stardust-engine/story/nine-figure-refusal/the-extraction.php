@@ -14,8 +14,8 @@ $pageTitle = "The Extraction - Evidence Item #03";
             <span class="badge bg-secondary-subtle text-secondary-emphasis rounded-pill px-3 py-2 mb-3 text-uppercase letter-spacing-1 shadow-sm border border-secondary-subtle">
                 <i class="fa-duotone fa-person-to-door me-2"></i>The Departure
             </span>
-            <h1 class="display-4 fw-bold text-body-emphasis mb-2" style="font-family: 'Impact', sans-serif;">
-                PROTOCOL: "SAFE HARBOR"
+            <h1 class="display-4 fw-bold text-body-emphasis mb-2 text-uppercase" style="font-family: 'Impact', sans-serif;">
+                Protocol: Safe Harbor"
             </h1>
             <p class="lead text-body-secondary font-monospace">
                 They didn't run. They didn't scream. They simply collected their own—and one extra—and walked out.
@@ -26,11 +26,11 @@ $pageTitle = "The Extraction - Evidence Item #03";
     <div class="row justify-content-center mb-5">
         <div class="col-lg-10">
             
-            <div class="card border-0 shadow-lg bg-dark text-white mb-4">
-                <div class="card-header bg-black bg-opacity-50 border-bottom border-secondary py-3">
-                    <h5 class="text-white fw-bold text-uppercase mb-0 letter-spacing-2">
+            <div class="card border-0 shadow-lg bg-body-tertiary mb-4">
+                <div class="card-header bg-body-secondary border-bottom border-secondary py-3">
+                    <h2 class="h5 text-body-emphasis fw-bold text-uppercase mb-0 letter-spacing-2">
                         <i class="fa-duotone fa-users-medical me-2"></i>Phase 1: Conference Room A (10:24 AM)
-                    </h5>
+                    </h2>
                 </div>
                 <div class="card-body p-5">
                     <p>
@@ -106,9 +106,9 @@ $pageTitle = "The Extraction - Evidence Item #03";
 
             <div class="card border-0 shadow-lg bg-body-tertiary mb-4">
                 <div class="card-header bg-body-secondary border-bottom border-secondary py-3">
-                    <h5 class="text-body-emphasis fw-bold text-uppercase mb-0 letter-spacing-2">
+                    <h2 class="h5 text-body-emphasis fw-bold text-uppercase mb-0 letter-spacing-2">
                         <i class="fa-duotone fa-elevator me-2"></i>Phase 2: The Descent (10:26 AM)
-                    </h5>
+                    </h2>
                 </div>
                 <div class="card-body p-5 text-body-secondary">
                     <p>
@@ -186,9 +186,9 @@ $pageTitle = "The Extraction - Evidence Item #03";
 
             <div class="card border-0 shadow-lg bg-body-tertiary">
                 <div class="card-header bg-body-secondary border-bottom border-secondary py-3">
-                    <h5 class="text-body-emphasis fw-bold text-uppercase mb-0 letter-spacing-2">
+                    <h2 class="h5 text-body-emphasis fw-bold text-uppercase mb-0 letter-spacing-2">
                         <i class="fa-duotone fa-bus me-2"></i>Phase 3: The Real World (10:30 AM)
-                    </h5>
+                    </h2>
                 </div>
                 <div class="card-body p-5 text-body-secondary">
                     <p>
