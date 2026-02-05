@@ -3,7 +3,12 @@
 // Theme: Industrial (Dark, Gritty, Red Accents)
 // Layout: Sidebar-Compatible (Contained Header)
 ?>
-
+<style>
+/* LOGO FIX: Force the black logo to become white */
+    .logo-invert {
+        filter: invert(1) grayscale(100%) brightness(200%);
+    }
+</style>
 <div class="card bg-black text-white border-danger mb-5 shadow-sm overflow-hidden position-relative">
     
     <div class="position-absolute top-0 start-0 w-100 h-100" 
@@ -11,9 +16,9 @@
     </div>
 
     <div class="card-body p-5 text-center position-relative" style="z-index: 2;">
-        <img src="https://assets.raggiesoft.com/engine-room-records/images/logos/engine-room-records-logo.jpg" 
+        <img src="https://assets.raggiesoft.com/engine-room-records/images/logos/engine-room-records-logo.png" 
              alt="Engine Room Records" 
-             class="rounded-circle border border-danger border-3 mb-4 shadow"
+             class="rounded-circle border border-danger border-3 mb-4 shadow logo-invert"
              width="100" height="100">
              
         <h1 class="display-5 fw-bold mb-2 text-uppercase" style="font-family: 'Courier New', monospace; letter-spacing: -1px;">

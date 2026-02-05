@@ -40,7 +40,7 @@
     "showSidebar": true,
     "navbarBrandText": "Engine Room<span class=\"d-none d-md-inline\"> Records</span>",
     "navbarBrandLink": "/engine-room",
-    "navbarBrandLogo": "https://assets.raggiesoft.com/engine-room-records/images/logos/engine-room-records-logo.jpg",
+    "navbarBrandLogo": "https://assets.raggiesoft.com/engine-room-records/images/logos/engine-room-records-logo.png",
     "navbarBrandAlt": "Engine Room Records Industrial Logo",
     "brandFont": ["Courier New", "monospace"]
   },
