@@ -42,7 +42,7 @@
             <h3 class="fw-bold text-danger mb-4 border-bottom border-secondary pb-2" style="font-family: 'Courier New', monospace;">
                 <i class="fa-solid fa-industry me-2"></i>Corporate History
             </h3>
-            <p class="lead text-dark">
+            <p class="lead text-body">
                 Founded in a converted warehouse in the industrial district of Blacksburg, <strong>Engine Room Records</strong> began as a rejection of the polished, over-produced pop of the early 90s.
             </p>
             <p class="text-muted">
