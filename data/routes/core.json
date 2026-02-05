@@ -1,7 +1,7 @@
 {
   "/": {
     "view": "pages/home",
-    "title": "Welcome Home",
+    "title": "Welcome to RaggieSoft.com | Michael Ragsdale",
     "showSidebar": false
   },
   "/contact": {
