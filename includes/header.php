@@ -85,6 +85,8 @@ if (isset($customPageAssets) && is_array($customPageAssets)) {
     <meta property="og:image" content="<?php echo htmlspecialchars($ogImage ?? ''); ?>">
     <meta property="og:url" content="<?php echo htmlspecialchars($ogUrl ?? "https://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]"); ?>">
 
+    <link rel="canonical" href="<?php echo htmlspecialchars($ogUrl ?? "https://" . $_SERVER['HTTP_HOST'] . parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH)); ?>">
+
     <?php foreach ($css_load_queue as $cssUrl): ?>
         <link href="<?php echo $cssUrl . '?v=' . time(); ?>" rel="stylesheet">
     <?php endforeach; ?>    
