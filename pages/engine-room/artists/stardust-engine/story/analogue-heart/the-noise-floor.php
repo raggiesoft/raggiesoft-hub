@@ -1,0 +1,366 @@
+<?php
+// pages/engine-room/artists/stardust-engine/story/analog-heart/the-noise-floor.php
+// Book 1: Analog Heart | Chapter 1: The Noise Floor
+// Context: 1978. Ryan's sensory processing and the formation of the "System".
+
+$pageTitle = "The Noise Floor (1978) - Engine Room History";
+?>
+
+<style>
+    /* SENSORY HIGHLIGHT STYLES */
+    .sensory-hz {
+        font-family: 'Courier New', monospace;
+        color: var(--bs-warning);
+        font-weight: bold;
+        letter-spacing: 1px;
+    }
+    
+    .sensory-safe {
+        font-family: 'Courier New', monospace;
+        color: var(--bs-info);
+        font-weight: bold;
+    }
+
+    .narrative-card {
+        background-color: var(--bs-body-tertiary);
+        border: 1px solid var(--bs-border-color);
+        box-shadow: 0 1rem 3rem rgba(0,0,0,0.1);
+        font-size: 1.1rem;
+        line-height: 1.8;
+    }
+    
+    [data-bs-theme="dark"] .narrative-card {
+        background-color: #15171e;
+        border-color: #333;
+    }
+
+    .timestamp {
+        font-family: 'Courier New', monospace;
+        color: #0dcaf0; 
+        font-size: 0.85rem;
+        letter-spacing: 1px;
+        margin-bottom: 0.5rem;
+        display: block;
+        text-transform: uppercase;
+    }
+</style>
+
+<div class="container py-5">
+    
+    <div class="row justify-content-center mb-5">
+        <div class="col-lg-8 text-center">
+            <span class="badge bg-warning text-dark rounded-pill px-3 py-2 mb-3 text-uppercase letter-spacing-1 border border-warning shadow-sm">
+                <i class="fa-duotone fa-cassette-tape me-2"></i>Archive: Book 1 - Analog Heart
+            </span>
+            <h1 class="display-4 fw-bold text-body-emphasis mb-2 text-uppercase" style="font-family: 'Impact', sans-serif;">
+                The Noise Floor
+            </h1>
+            <p class="lead text-body-secondary font-monospace">
+                "The world did not sound like people said it did. It was made of frequencies."
+            </p>
+        </div>
+    </div>
+
+    <div class="row justify-content-center mb-5">
+        <div class="col-lg-10">
+            
+            <div class="d-flex align-items-center mb-4 mt-2">
+                <span class="display-6 fw-bold text-body-secondary me-3">01</span>
+                <h3 class="text-uppercase mb-0 text-body-emphasis letter-spacing-2">High Fidelity</h3>
+            </div>
+
+            <div class="card border-0 shadow-lg narrative-card mb-5">
+                <div class="card-body p-4 p-md-5 text-body-secondary">
+                    
+                    <span class="timestamp">September 5, 1978 // Blacksburg High School</span>
+
+                    <p>
+                        To Ryan O’Connell, the world was not made of words or conversations. It was made of frequencies.
+                    </p>
+                    <p>
+                        Standing at the edge of the bus loop, clutching the strap of a canvas messenger bag that felt like sandpaper against his neck, Ryan cataloged the sonic landscape of his first day of high school. It was a war zone.
+                    </p>
+
+                    <div class="row g-3 my-4 font-monospace small">
+                        <div class="col-md-4">
+                            <div class="p-3 border border-danger border-opacity-50 rounded bg-danger-subtle text-danger-emphasis h-100">
+                                <span class="d-block fw-bold mb-1"><i class="fa-solid fa-wave-pulse me-2"></i>60 Hertz</span>
+                                The aggressive hum of the streetlamp buzzing overhead, signaling a failing ballast.
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="p-3 border border-danger border-opacity-50 rounded bg-danger-subtle text-danger-emphasis h-100">
+                                <span class="d-block fw-bold mb-1"><i class="fa-solid fa-wave-pulse me-2"></i>1200 Hertz</span>
+                                The squeal of the bus brakes, a high-pitched shriek that felt like a needle in his molars.
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="p-3 border border-warning border-opacity-50 rounded bg-warning-subtle text-warning-emphasis h-100">
+                                <span class="d-block fw-bold mb-1"><i class="fa-solid fa-waveform-lines me-2"></i>Low Freq Rumble</span>
+                                The idling diesel engines, vibrating through the soles of his sneakers and up his shinbones.
+                            </div>
+                        </div>
+                    </div>
+
+                    <p>
+                        He was fourteen years old. He was tall for his age, gangly, with hair that refused to lay flat. He looked normal enough, but inside, he was redlining.
+                    </p>
+                    <p>
+                        "Ryan?"
+                    </p>
+                    <p>
+                        His mother’s voice cut through the mix. She was leaning out of the window of their station wagon. She looked worried. She always looked worried when it came to him. In 1978, there wasn't a word for what Ryan was. There were only euphemisms: <em>High-strung. Particular. Sensitive.</em>
+                    </p>
+                    <p>
+                        "You have your lunch?" she asked.
+                    </p>
+                    <p>
+                        Ryan nodded. He couldn't speak. The transition from the safety of the car to the chaos of the sidewalk required all his processing power.
+                    </p>
+                    <p>
+                        "Okay. Go get 'em, tiger."
+                    </p>
+                    <p>
+                        He forced a smile—a mechanical lifting of the corners of his mouth that he had practiced in the mirror—and turned toward the building. Blacksburg High School loomed like a fortress of red brick and concrete. To anyone else, it was just a school. To Ryan, it was a sensory thresher.
+                    </p>
+
+                    <hr class="border-secondary opacity-25 my-4">
+
+                    <p>
+                        He walked into the main hallway, and the volume spiked. It wasn't just auditory; it was physical. The air was thick with the smell of floor wax, cheap perfume, and locker room humidity. Hundreds of bodies collided, shouted, and slammed metal locker doors.
+                    </p>
+                    <p class="font-monospace text-uppercase text-body-emphasis fw-bold text-center my-4">
+                        Clang. Slam. Laugh. Shout. Clang.
+                    </p>
+                    <p>
+                        It was arrhythmic. Chaotic. There was no tempo.
+                    </p>
+                    <p>
+                        Ryan kept his head down, counting his steps. <em>One, two, three, four. One, two, three, four.</em> If he could impose a 4/4 time signature on the walk to his homeroom, he wouldn't drown.
+                    </p>
+                    <p>
+                        He reached his locker—number 304. He dialed the combination. <em>12-24-36.</em> Multiples of twelve. Good numbers. The locker opened with a satisfying metallic click. He placed his lunch inside and took a breath, pressing his forehead against the cool metal of the locker door. The metal vibrated slightly. Everything in the building was vibrating.
+                    </p>
+                    <p>
+                        "Hey! Watch it, freak!"
+                    </p>
+                    <p>
+                        Someone slammed into his shoulder. Ryan stumbled, his hip checking the locker frame hard. A senior in a varsity jacket pushed past him, laughing with a friend. Ryan didn't retaliate. He didn't even look up. He just felt the phantom impact on his shoulder, the lingering tactile burn.
+                    </p>
+                    <p>
+                        The chaotic noise of the hallway surged—a wall of white noise that threatened to swallow him whole. He needed a filter. He needed an EQ pedal for reality.
+                    </p>
+                    <p>
+                        He closed his eyes tight, right there in the middle of the hallway traffic. He imagined a mixing board in his mind. It was a trick he had taught himself over the summer.
+                    </p>
+
+                    <div class="card bg-black text-white border-secondary my-4 font-monospace small shadow-sm">
+                        <div class="card-header bg-dark border-secondary">
+                            <i class="fa-duotone fa-sliders-up me-2"></i>INTERNAL MIXING CONSOLE
+                        </div>
+                        <div class="card-body">
+                            <div class="row mb-2">
+                                <div class="col-4 text-white-50">FADER 1: VOICES</div>
+                                <div class="col-8">
+                                    <div class="progress" style="height: 10px; background-color: #333;">
+                                        <div class="progress-bar bg-secondary" role="progressbar" style="width: 20%"></div>
+                                    </div>
+                                    <span class="text-white-50 d-block mt-1">STATUS: Slided down. Shouting becomes murmur.</span>
+                                </div>
+                            </div>
+                            <div class="row mb-2">
+                                <div class="col-4 text-white-50">FADER 2: LOCKERS</div>
+                                <div class="col-8">
+                                    <div class="progress" style="height: 10px; background-color: #333;">
+                                        <div class="progress-bar bg-secondary" role="progressbar" style="width: 30%"></div>
+                                    </div>
+                                    <span class="text-white-50 d-block mt-1">STATUS: Mids dipped. Metallic clanging loses bite.</span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-4 text-info fw-bold">FADER 3: THE HUM</div>
+                                <div class="col-8">
+                                    <div class="progress" style="height: 10px; background-color: #333;">
+                                        <div class="progress-bar bg-info" role="progressbar" style="width: 100%"></div>
+                                    </div>
+                                    <span class="text-info d-block mt-1">STATUS: Boosted. HVAC fans targeted.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <p>
+                        He focused on the ventilation system. The deep, steady drone of the massive HVAC fans on the roof. It was a constant B-flat. A steady, unwavering note.
+                    </p>
+                    <p class="fs-5 fst-italic text-info text-center my-4">
+                        Hmmmmmmmmmmmmmm.
+                    </p>
+                    <p>
+                        Ryan latched onto that B-flat. It was safe. It was predictable. It was the anchor. He opened his eyes. The hallway was still chaotic, but the B-flat gave him a path to walk on.
+                    </p>
+                    <p>
+                        He pulled a notebook out of his bag. It wasn't for schoolwork. The cover was drawn over in black marker with diagrams of star charts and guitar schematics he didn't fully understand yet. On the back cover, he had written two words in block letters.
+                    </p>
+                    <p class="fw-bold text-body-emphasis text-center fs-4 letter-spacing-2">
+                        PROJECT AETHELGARD
+                    </p>
+                    <p>
+                        He didn't know what it meant yet. He just liked the sound of the words. They sounded like a place where the noise didn't hurt.
+                    </p>
+                    <p>
+                        The bell rang—a harsh, dissonant electric buzzer that made Ryan flinch violently. The B-flat vanished. The chaos returned.
+                    </p>
+                    <p>
+                        Ryan O’Connell took a deep breath, gripped his notebook like a shield, and walked into the noise floor of the ninth grade. He just had to survive four years.
+                    </p>
+                    <p class="fst-italic text-body-emphasis mt-4">
+                        He had no idea that the survival manual was waiting for him at home, in the hands of his eleven-year-old sister who had just discovered she could play a C-major scale on a toy keyboard.
+                    </p>
+
+                </div>
+            </div>
+
+            <div class="d-flex align-items-center mb-4 mt-5">
+                <span class="display-6 fw-bold text-body-secondary me-3">02</span>
+                <h3 class="text-uppercase mb-0 text-body-emphasis letter-spacing-2">Safe Harbor</h3>
+            </div>
+
+            <div class="card border-0 shadow-lg narrative-card mb-5">
+                <div class="card-body p-4 p-md-5 text-body-secondary">
+                    
+                    <span class="timestamp">September 5, 1978 // 3:45 PM // The O'Connell Driveway</span>
+
+                    <p>
+                        The school bus—a rattled, yellow cage on wheels—screeched to a halt. To Ryan, the brakes didn't just squeal; they screamed at a frequency that felt like a drill bit boring directly into his molars.
+                    </p>
+                    <p>
+                        He didn't say goodbye to anyone. He didn't look at the other kids. He gripped the strap of his canvas bag, kept his head down, and launched himself out of the folding doors the second they opened. He landed on the cracked pavement of his street. The bus pulled away, taking the cloud of diesel fumes and the roar of shouting teenagers with it.
+                    </p>
+
+                    <div class="p-3 border-start border-4 border-warning bg-body-secondary my-4 font-monospace small">
+                        <strong class="text-uppercase text-body-emphasis">System Telemetry:</strong>
+                        <ul class="list-unstyled mb-0 ms-2 mt-2">
+                            <li>> Heart rate: 110 BPM (Too fast).</li>
+                            <li>> Shoulders: Tensed to the ears.</li>
+                            <li>> Social Battery: <span class="text-danger fw-bold">Depleted.</span></li>
+                        </ul>
+                    </div>
+
+                    <p>
+                        To anyone else, the seven hours spent at school were just "education." To Ryan, they were <em>wasted time</em>. Every minute he spent in that building, navigating the chaotic noise and the confusing social cues, was a minute he wasn't with <em>them</em>. It felt inefficient. It felt like bleeding.
+                    </p>
+                    <p>
+                        He turned toward the house. It was a modest suburban split-level, but to Ryan, it was a decompression chamber.
+                    </p>
+                    <p>
+                        And on the front porch, sitting on the top step like two gargoyles guarding a cathedral, were his sisters.
+                    </p>
+                    <p>
+                        <strong>Cassidy</strong> (11) was wearing oversized headphones plugged into nothing—just wearing them to muffle the wind. <strong>Holly</strong> (9) had a notebook on her lap and was organizing a pile of rocks she had found in the driveway by size and color.
+                    </p>
+                    <p>
+                        Ryan let out a breath he felt like he’d been holding since homeroom. The mask dropped. The "High School Freshman" act—the stoic, silent, terrified performance—evaporated.
+                    </p>
+                    <p>
+                        He didn't walk up the driveway. He ran.
+                    </p>
+                    <p>
+                        "Ryan!" Holly shouted, abandoning her rock collection.
+                    </p>
+                    <p>
+                        She hit him at full speed before he even reached the bottom step. She was small for nine, a dense little projectile of affection. She wrapped her arms around his waist, burying her face in his flannel shirt.
+                    </p>
+                    <p>
+                        Ryan dropped his bag on the grass. He didn't pull away. He slumped into the hug. He wrapped his long, lanky arms around her, resting his chin on the top of her head.
+                    </p>
+                    <p class="font-monospace text-uppercase text-success fw-bold text-center my-4">
+                        Pressure. Squeeze. Grounding.
+                    </p>
+                    <p>
+                        "Did you survive?" Holly asked, her voice muffled by his shirt.
+                    </p>
+                    <p>
+                        "Barely," Ryan groaned. "The cafeteria smells like wet cardboard and shouting."
+                    </p>
+                    <p>
+                        Cassidy stood up from the step. She didn't run; she drifted down to them. She slid under Ryan’s left arm, sandwiching him. She pressed her forehead against his shoulder, closing her eyes.
+                    </p>
+                    <p>
+                        "You're vibrating," Cassidy noted softly. "Like a struck bell."
+                    </p>
+                    <p>
+                        "Too much treble today," Ryan whispered, tightening the huddle.
+                    </p>
+                    <p>
+                        He stood there on the front lawn, eyes closed, holding his sisters. This wasn't just affection; it was a recharge cycle. Without them, he felt like he would float away into the static. With them, he had gravity. Every second of school was just the price he paid to get back to this moment.
+                    </p>
+                    <p>
+                        "Come on," Holly commanded, pulling back but keeping hold of his hand. "Mom's at the store. We have the perimeter."
+                    </p>
+                    <p>
+                        "Perimeter secure?" Ryan asked, a small smile finally breaking through the exhaustion.
+                    </p>
+                    <p>
+                        "Secure," Holly nodded seriously. "I made peanut butter toast. And Cass set up the station."
+                    </p>
+
+                    <hr class="border-secondary opacity-25 my-4">
+
+                    <p>
+                        They walked inside, an entangled knot of limbs. Ryan didn't just walk through the door; he shed the armor. He kicked off his sneakers. He threw his bag into the corner.
+                    </p>
+                    <p>
+                        They went straight to the living room floor. The carpet was shag, brown and orange—a tactile nightmare for some, but for Ryan, it was familiar ground.
+                    </p>
+                    <p>
+                        Cassidy had dragged the family’s heavy console record player onto the floor. She had the sleeve of the biggest movie soundtrack of 1977 propped up against the sofa: <em>"SOLARIS VANGUARD: Original Motion Picture Score"</em> by Marek Solnik.
+                    </p>
+                    <p>
+                        Ryan lay down on his back, staring at the textured ceiling. Cassidy lay down next to him, shoulder-to-shoulder, mimicking his posture. Holly flopped across both of their stomachs, acting as a weighted blanket.
+                    </p>
+                    <p>
+                        "Side A, Track 1?" Cassidy asked.
+                    </p>
+                    <p>
+                        "Please," Ryan said. "I need the Overture."
+                    </p>
+                    <p>
+                        Cassidy dropped the needle.
+                    </p>
+                    <p>
+                        The <em>Solaris Overture</em> blasted out. It began with a single, piercing trumpet blast, followed by the swell of a hundred strings. It was loud, but it was <em>good</em> loud. It was organized. It was heroic. It was math made into emotion.
+                    </p>
+                    <p>
+                        Ryan felt Holly’s weight on his stomach, rising and falling with his breath. He felt the heat of Cassidy’s arm against his side.
+                    </p>
+                    <p>
+                        "I hate ninth grade," Ryan said to the ceiling, the music washing over him.
+                    </p>
+                    <p>
+                        "We know," Holly said, picking at a loose thread on his shirt. "But you're home now."
+                    </p>
+                    <p>
+                        "Yeah," Ryan closed his eyes, his breathing finally syncing with the tempo of the orchestra. "I'm home."
+                    </p>
+                    
+                    <div class="alert alert-info border-info mt-4 mb-0 bg-info-subtle text-info-emphasis">
+                        <i class="fa-solid fa-circle-info me-2"></i>
+                        For the next twenty minutes, nobody moved. They didn't speak. They just lay in the "Pile," listening to the fictional space opera, letting the frequency of the house reset their nervous systems. This was the prototype. Years later, when the world tried to crush them with contracts, lawsuits, and steering wheels, they would always return to this formation.
+                    </div>
+
+                </div>
+            </div>
+
+            <?php
+                // Setup Navigation Stepper for the Story Arc
+                $nav = [
+                    'prev' => null, // First chapter
+                    'overview' => ['url' => '/engine-room/artists/stardust-engine/story', 'label' => 'The Archives'],
+                    'next' => ['url' => '/engine-room/artists/stardust-engine/story/analog-heart/the-circuit', 'label' => 'The Circuit']
+                ];
+                include ROOT_PATH . '/includes/components/navigation/narrative-stepper.php';
+            ?>
+
+        </div>
+    </div>
+</div>
