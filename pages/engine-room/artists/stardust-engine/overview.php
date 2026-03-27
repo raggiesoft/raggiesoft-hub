@@ -70,7 +70,7 @@ $root = '/engine-room/artists/stardust-engine';
                     </div>
                     <div class="small font-monospace text-white-75">
                         <strong class="text-success text-uppercase">100% Free Download</strong><br>
-                        All tracks released under <a href="/license" class="text-info text-decoration-none border-bottom border-info">CC BY-SA 4.0</a>.
+                        All tracks released under <a href="/about/license" class="text-info text-decoration-none border-bottom border-info">CC BY-SA 4.0</a>.
                     </div>
                 </div>
             </div>
