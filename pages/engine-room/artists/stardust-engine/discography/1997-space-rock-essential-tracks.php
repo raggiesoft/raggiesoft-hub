@@ -10,26 +10,25 @@ $album_path_web = '/engine-room-records/artists/the-stardust-engine/1997-space-r
         
         <?php $props = [
             'path' => $album_path_web, 
-            'alt' => 'Essential Tracks Album Art',
+            'alt' => 'Space Rock: Essential Tracks (1987 - 1997) Album Art',
             'variant' => 'pact' // A mix of past and present
         ]; include ROOT_PATH . '/includes/components/_album-art-header.php'; ?>
 
         <div class="col-md-7">
             <h1 class="display-3 fw-bold text-uppercase text-primary mb-0" style="font-family: 'Impact', sans-serif;">
-                Essential Tracks
+                Space Rock
             </h1>
             <p class="h4 text-warning fw-bold mb-3">
-                1987 &ndash; 1997
+                Essential Tracks (1987 &ndash; 1997)
             </p>
             <p class="lead text-secondary">
                 The definitive chronicle of the band's escape velocity. A single-disc compilation capturing the true sound of the Engine.
             </p>
             <p class="text-muted">
-                From the gilded cage of their studio-mandated pop hits under Apex Records to the raw, uncompromised rock anthems of their independent "Freedom Era," this 14-track collection documents one of the most violent and victorious sonic pivots in music history. It is the sound of a band breaking their own chains.
+                From the gilded cage of their studio-mandated pop hits under Apex Records to the raw, uncompromised rock anthems of their independent "Freedom Era," this 16-track collection documents one of the most violent and victorious sonic pivots in music history. It is the sound of a band breaking their own chains.
             </p>
         </div>
     </div>
-
     <hr class="border-secondary opacity-25 mb-5">
 
     <?php include ROOT_PATH . '/includes/components/_tracklist-downloader.php'; ?>
