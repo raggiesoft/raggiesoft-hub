@@ -82,11 +82,11 @@ $album_path_web = '/engine-room-records/artists/the-stardust-engine/1997-space-r
         </div>
     </div>
 
-    <div class="card bg-black border-danger border-2 mt-5 shadow-lg">
+   <div class="card bg-black border-danger border-2 mt-5 shadow-lg">
         <div class="card-header bg-danger text-white fw-bold text-uppercase letter-spacing-1">
             <i class="fa-duotone fa-file-shield me-2"></i>The Omission: An Authorized Statement
         </div>
-        <div class="card-body p-4 text-white-75">
+        <div class="card-body p-4 text-light">
             <p>
                 Noticeably absent from this "Greatest Hits" collection is the band's massive 1989 pop ballad, <em>If You Walked Away</em>. 
             </p>
