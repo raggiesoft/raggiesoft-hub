@@ -40,17 +40,17 @@ $album_path_web = '/engine-room-records/artists/the-stardust-engine/1997-space-r
             
             <div class="list-group-item bg-transparent border-secondary text-muted py-3">
                 <div class="d-flex w-100 justify-content-between align-items-center mb-1">
-                    <strong class="text-primary fs-5">Act I: The Apex Years (Tracks 1-4)</strong>
+                    <strong class="text-primary fs-5">Act I: The Apex Years (Tracks 1-5)</strong>
                     <span class="badge bg-primary">The Gilded Cage</span>
                 </div>
                 <p class="mb-0">
-                    Opening with their massive 1987 hit <em>Electric Color</em>, this section documents the polished, studio-mandated synth-pop that made them famous. It ends with the first crack in the armor: Cassidy's fierce arena-rock rejection of her own persona in <em>Not Your Doll</em>.
+                    Opening with their massive 1987 hit <em>Electric Color</em>, this section documents the polished, studio-mandated synth-pop that made them famous—including the aggressively manufactured corporate push of <em>Light Up the Night</em>. It ends with the first crack in the armor: Cassidy's fierce arena-rock rejection of her own persona in <em>Not Your Doll</em>.
                 </p>
             </div>
 
             <div class="list-group-item bg-transparent border-secondary text-muted py-3">
                 <div class="d-flex w-100 justify-content-between align-items-center mb-1">
-                    <strong class="text-info fs-5">Act II: The Live Rebellion (Tracks 5-6)</strong>
+                    <strong class="text-info fs-5">Act II: The Live Rebellion (Tracks 6-7)</strong>
                     <span class="badge bg-info text-dark">The Transition</span>
                 </div>
                 <p class="mb-0">
@@ -60,21 +60,21 @@ $album_path_web = '/engine-room-records/artists/the-stardust-engine/1997-space-r
 
             <div class="list-group-item bg-transparent border-secondary text-muted py-3">
                 <div class="d-flex w-100 justify-content-between align-items-center mb-1">
-                    <strong class="text-warning fs-5">Act III: The Wilderness (Tracks 7-9)</strong>
+                    <strong class="text-warning fs-5">Act III: The Wilderness (Tracks 8-11)</strong>
                     <span class="badge bg-warning text-dark">Ironhead Anthems</span>
                 </div>
                 <p class="mb-0">
-                    The shrieking feedback of <em>Static</em> violently announces the death of the Apex era. This section features the unpolished, independent fury of their warehouse years, culminating in the 5-minute "Radio Edit" of Cassidy's autobiography, <em>Escape Velocity (Ad Astra)</em>.
+                    The shrieking feedback of <em>Static</em> violently announces the death of the Apex era. This section features the unpolished, independent fury of their warehouse years, the necessary evil of the <em>Escape Velocity</em> radio edit, and culminates in their massive arena-rock love letter to the fans, <em>The Fortress</em>.
                 </p>
             </div>
 
             <div class="list-group-item bg-transparent border-secondary text-muted py-3">
                 <div class="d-flex w-100 justify-content-between align-items-center mb-1">
-                    <strong class="text-danger fs-5">Act IV: The Comeback (Tracks 10-14)</strong>
+                    <strong class="text-danger fs-5">Act IV: The Comeback (Tracks 12-16)</strong>
                     <span class="badge bg-danger">The $13.99 War</span>
                 </div>
                 <p class="mb-0">
-                    The massive, heavy-hitting anthems from their triumphant 1997 double album. The compilation closes with <em>Brand New Scene</em>, resolving the decade-long tension as the band wipes the slate clean and finally comes home.
+                    The massive, heavy-hitting anthems from their triumphant 1997 double album. After the healing power ballad of <em>Echoes in the Wire</em>, the compilation closes with <em>Brand New Scene</em>, finally resolving the decade-long tension as the band wipes the slate clean and comes home.
                 </p>
             </div>
 
