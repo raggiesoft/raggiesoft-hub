@@ -78,14 +78,14 @@ $pageTitle = "Holly O'Connell - The Stardust Engine";
                         </button>
 
                         <button type="button" class="btn badge rounded-pill bg-black border border-danger text-danger p-2 credential-btn" 
-                                data-bs-toggle="modal" data-bs-target="#credentialModal"
-                                data-title="New York Bar Admission (1998)"
-                                data-desc="Licensed to practice law in the State of New York."
-                                data-lore="The Attack Vector. Almost all major music labels are headquartered in NYC. Holly got this license so she could sue them on their own doorstep."
-                                data-color="danger"
-                                data-icon="fa-city">
-                            <i class="fa-solid fa-city me-1"></i>NY Bar ('98)
-                        </button>
+                            data-bs-toggle="modal" data-bs-target="#credentialModal"
+                            data-title="New York Bar Admission (1998)"
+                            data-desc="Licensed to practice law in the State of New York."
+                            data-lore="The Retaliation. After Apex Records threatened Engine Room with a baseless antitrust injunction in the summer of '97, Holly realized she needed the power to strike back on their home turf. She passed the NY Bar a year later so she could personally walk into the Southern District of New York and sue them on their own doorstep."
+                            data-color="danger"
+                            data-icon="fa-city">
+                        <i class="fa-solid fa-city me-1"></i>NY Bar ('98)
+                    </button>
 
                         <button type="button" class="btn badge rounded-pill bg-black border border-danger text-danger p-2 credential-btn" 
                                 data-bs-toggle="modal" data-bs-target="#credentialModal"
