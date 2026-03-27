@@ -1,7 +1,7 @@
 <?php
 // Page data
-$pageTitle = "Essential Tracks (1987-1997) - The Stardust Engine";
-$album_path_web = '/engine-room-records/artists/the-stardust-engine/1997-essential-tracks';
+$pageTitle = "Space Rock: Essential Tracks (1987-1997) - The Stardust Engine";
+$album_path_web = '/engine-room-records/artists/the-stardust-engine/1997-space-rock-essential-tracks';
 ?>
 
 <div class="container py-5">
