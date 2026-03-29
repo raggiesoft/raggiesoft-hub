@@ -213,6 +213,31 @@ $pageTitle = "Company History - Engine Room Records";
                 </div>
             </div>
 
+            <div class="timeline-node mb-5 position-relative">
+                <div class="node-marker position-absolute bg-secondary rounded-circle border border-dark border-3" style="width: 20px; height: 20px; left: -36px; top: 0;" aria-hidden="true"></div>
+                
+                <h3 class="fw-bold text-secondary text-uppercase mb-1">1997: Space Rock (Essential Tracks)</h3>
+                <p class="text-body-secondary font-monospace small mb-3">GLOBAL RETAIL // THE DEFINITIVE CHRONICLE</p>
+
+                <div class="card border-secondary bg-body-tertiary shadow-sm">
+                    <div class="card-body p-4 p-md-5" style="line-height: 1.7;">
+                        <p class="text-body-secondary">
+                            Capitalizing on the massive global momentum of <em>Hard Reset</em>, Engine Room Records closed out 1997 by releasing the band's first retrospective: <em>Space Rock: Essential Tracks (1987-1997)</em>. 
+                        </p>
+                        <p class="text-body-secondary">
+                            Because Holly O'Connell successfully forced Apex Records to surrender the band's master tapes during the 1992 <em>Friction</em> settlement, Engine Room Records held total control over their back catalog. This allowed the band to curate a single-disc, 16-track compilation that actively told the story of their "escape velocity." 
+                        </p>
+                        <p class="text-body-secondary mb-4">
+                            The album was divided into distinct narrative acts. It forced the pristine, studio-mandated pop hits of their "gilded cage" era (like <em>Electric Color</em> and <em>Dancing in the Neon</em>) to sit side-by-side with the furious, unpolished guitar rock of their warehouse years. It wasn't just a collection of hits; it was a carefully weaponized timeline, proving to the world that The Stardust Engine had successfully outmaneuvered the corporate machine and reclaimed their true sound.
+                        </p>
+                        
+                        <a href="/engine-room/artists/stardust-engine/discography/1997-essential-tracks" class="btn btn-outline-secondary btn-sm text-uppercase fw-bold font-monospace" aria-label="Access the Essential Tracks album archive">
+                            <i class="fa-duotone fa-compact-disc me-2" aria-hidden="true"></i>Access Album Archive
+                        </a>
+                    </div>
+                </div>
+            </div>
+
             <div class="alert alert-dark border-secondary border-opacity-50 text-center" role="alert">
                 <em class="text-body-secondary">[ Awaiting the next transmission from the Archives... ]</em>
             </div>
