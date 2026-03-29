@@ -95,7 +95,7 @@ $root = '/engine-room/artists/stardust-engine';
             <div class="card h-100 border-secondary bg-transparent hover-lift">
                 <div class="card-body d-flex flex-column text-center p-4">
                     <div class="mb-3 text-primary"><i class="fa-duotone fa-users fa-3x"></i></div>
-                    <h3 class="fw-bold text-white">The Band</h3>
+                    <h3 class="fw-bold text-primary">The Band</h3>
                     <p class="text-secondary small">
                         Meet the five family members who started it all: Cassidy, Ryan, Holly, Evan, and Tyler.
                     </p>
@@ -107,7 +107,7 @@ $root = '/engine-room/artists/stardust-engine';
             <div class="card h-100 border-secondary bg-transparent hover-lift">
                 <div class="card-body d-flex flex-column text-center p-4">
                     <div class="mb-3 text-warning"><i class="fa-duotone fa-book-atlas fa-3x"></i></div>
-                    <h3 class="fw-bold text-white">The Lore</h3>
+                    <h3 class="fw-bold text-primary">The Lore</h3>
                     <p class="text-secondary small">
                         Learn about the "Friction" scandal, the "Cold War" with Apex Records, and the birth of independence.
                     </p>
@@ -119,7 +119,7 @@ $root = '/engine-room/artists/stardust-engine';
             <div class="card h-100 border-secondary bg-transparent hover-lift">
                 <div class="card-body d-flex flex-column text-center p-4">
                     <div class="mb-3 text-success"><i class="fa-duotone fa-compact-disc fa-3x"></i></div>
-                    <h3 class="fw-bold text-white">The Discography</h3>
+                    <h3 class="fw-bold text-success">The Discography</h3>
                     <p class="text-secondary small">
                         Explore the full catalog, from the polished 80s pop to the raw, independent rock of their rebirth.
                     </p>

@@ -5,7 +5,7 @@
 $uri = $_SERVER['REQUEST_URI'] ?? '/';
 
 // Determine active section
-$isGovernance = (str_contains($uri, '/license') || str_contains($uri, '/privacy') || str_contains($uri, '/terms'));
+$isGovernance = (str_contains($uri, '/license') || str_contains($uri, '/privacy') || str_contains($uri, '/terms') || str_contains($uri, '/ai-disclaimer'));
 $isProfiles   = (!$isGovernance && $uri !== '/about'); // If not governance and not root about, assume it's a profile
 ?>
 
@@ -25,6 +25,7 @@ $isProfiles   = (!$isGovernance && $uri !== '/about'); // If not governance and 
       <li><a class="dropdown-item" href="/about/license"><i class="fa-duotone fa-file-certificate me-2 text-primary"></i>Licenses (MIT/CC)</a></li>
       <li><a class="dropdown-item" href="/about/privacy"><i class="fa-duotone fa-shield-check me-2 text-success"></i>Privacy Policy</a></li>
       <li><a class="dropdown-item" href="/about/terms"><i class="fa-duotone fa-gavel me-2 text-warning"></i>Terms of Service</a></li>
+      <li><a class="dropdown-item" href="/about/ai-disclaimer"><i class="fa-duotone fa-robot me-2 text-info"></i>AI Disclaimer</a></li>
     </ul>
   </li>
 

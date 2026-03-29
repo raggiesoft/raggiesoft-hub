@@ -26,7 +26,7 @@
                         </a>
                     </li>
                     <li class="mb-0">
-                        <a href="/engine-room/about" class="text-decoration-none hover-underline">
+                        <a href="/about/engine-room" class="text-decoration-none hover-underline">
                             > THE FORTRESS
                         </a>
                     </li>
@@ -34,7 +34,7 @@
             </div>
 
             <div class="col-md-4 text-center text-md-end small">
-                <p class="mb-1">EST. 1992</p>
+                <p class="mb-1">NARRATIVE EST. 1992</p>
                 <p class="mb-0">Norfolk, VA</p>
                 <div class="mt-3">
                     <a href="#" class="text-body me-3 hover-link-primary" aria-label="Visit our Instagram"><i class="fa-brands fa-instagram fa-lg"></i></a>
@@ -45,11 +45,12 @@
         
         <div class="row mt-5 pt-3 border-top border-secondary border-opacity-25">
             <div class="col-md-6 text-center text-md-start small">
-                &copy; 1992-<?php echo date("Y"); ?> Engine Room Records. A RaggieSoft Company.
+                &copy; 2026 Engine Room Records. A RaggieSoft Company.
             </div>
-            <div class="col-md-6 text-center text-md-end small">
+            <div class="col-md-6 text-center text-md-end small d-flex flex-wrap justify-content-center justify-content-md-end gap-2">
                  <a href="/about/privacy" class="text-reset text-decoration-underline hover-link-primary">Privacy</a> &bull; 
                  <a href="/about/terms" class="text-reset text-decoration-underline hover-link-primary">Terms</a> &bull; 
+                 <a href="/about/ai-disclaimer" class="text-reset text-decoration-underline hover-link-primary fw-bold text-info">AI Disclaimer</a> &bull; 
                  <a href="/about/license" class="text-reset text-decoration-underline hover-link-primary">MIT / CC BY-SA 4.0</a>
             </div>
         </div>

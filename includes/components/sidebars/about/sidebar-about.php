@@ -60,6 +60,9 @@ $currentUri = $_SERVER['REQUEST_URI'];
     <a href="/about/terms" class="nav-link d-flex align-items-center <?php echo (str_contains($currentUri, '/terms')) ? 'active' : 'link-body-emphasis'; ?>">
         <i class="fa-duotone fa-scroll-old me-2 opacity-75"></i> Terms of Service
     </a>
+    <a href="/about/ai-disclaimer" class="nav-link d-flex align-items-center <?php echo (str_contains($currentUri, '/ai-disclaimer')) ? 'active' : 'link-body-emphasis'; ?>">
+        <i class="fa-duotone fa-robot me-2 opacity-75"></i> AI Disclaimer
+    </a>
 </nav>
 
 <hr class="my-4 opacity-25">

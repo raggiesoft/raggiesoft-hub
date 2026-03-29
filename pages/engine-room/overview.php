@@ -59,7 +59,7 @@ $pageTitle = "Engine Room Records - The Fortress";
                 </p>
 
                 <div class="d-flex justify-content-center gap-3">
-                    <a href="/artists" class="btn btn-danger btn-lg rounded-0 fw-bold px-4 text-uppercase">
+                    <a href="/engine-room/artists" class="btn btn-danger btn-lg rounded-0 fw-bold px-4 text-uppercase">
                         <i class="fa-duotone fa-users-viewfinder me-2"></i>Artist Roster
                     </a>
                     <a href="/engine-room/history" class="btn btn-outline-light btn-lg rounded-0 fw-bold px-4 text-uppercase">
@@ -101,7 +101,7 @@ $pageTitle = "Engine Room Records - The Fortress";
                                 <p class="card-text small text-muted">
                                     The symphonic rock project behind the "Aethel" saga. Soaring vocals, heavy synths, and narrative depth.
                                 </p>
-                                <a href="/raggiesoft-books/aethel-saga" class="btn btn-sm btn-outline-primary fw-bold rounded-pill stretched-link">
+                                <a href="/about/aethel" class="btn btn-sm btn-outline-primary fw-bold rounded-pill stretched-link">
                                     View Project
                                 </a>
                             </div>
@@ -125,7 +125,7 @@ $pageTitle = "Engine Room Records - The Fortress";
                                 <p class="card-text small text-muted">
                                     The band that built the building. From the 1989 "Crash" to the 2016 "Crucible" reunion.
                                 </p>
-                                <a href="/engine-room/artists/stardust-engine" class="btn btn-sm btn-outline-danger fw-bold rounded-pill stretched-link">
+                                <a href="/about/stardust-engine" class="btn btn-sm btn-outline-danger fw-bold rounded-pill stretched-link">
                                     Enter Archive
                                 </a>
                             </div>
@@ -149,7 +149,7 @@ $pageTitle = "Engine Room Records - The Fortress";
                                 <p class="card-text small text-muted">
                                     The raw, unpolished sound of the early 2000s. Featuring "Static & Silence."
                                 </p>
-                                <a href="/engine-room/artists/mirage" class="btn btn-sm btn-outline-info fw-bold rounded-pill stretched-link"> 
+                                <a href="/engine-room/artists" class="btn btn-sm btn-outline-info fw-bold rounded-pill stretched-link"> 
                                     View Discography
                                 </a>
                             </div>
@@ -182,10 +182,10 @@ $pageTitle = "Engine Room Records - The Fortress";
     </div>
 
     <div class="text-center pt-5 border-top border-secondary mt-5">
-        <p class="text-muted small mb-0 font-monospace">
+        <p class="text-muted small mb-0 font-monospace" style="max-width: 800px; margin: 0 auto;">
             <i class="fa-duotone fa-microchip me-2"></i>
-            <strong>[SYSTEM MESSAGE]:</strong> This label serves as the organizational hub for Michael Ragsdale's AI-generated music portfolio.
-            All tracks produced using <strong>Suno AI</strong>. Lore co-written by <strong>Gemini</strong>.
+            <strong>[SYSTEM MESSAGE]:</strong> This label serves as the real-world organizational hub for Michael Ragsdale's AI-generated music portfolio, launched in 2026. <br>
+            All audio tracks are generated using a commercial-tier <strong>Suno Premium</strong> license. Lore, personas (Est. 1992 in-universe), and lyrics are co-written by human direction and <strong>Gemini</strong>.
         </p>
     </div>
 
