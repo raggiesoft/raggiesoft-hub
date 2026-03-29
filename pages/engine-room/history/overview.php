@@ -177,8 +177,40 @@ $pageTitle = "Company History - Engine Room Records";
                 </div>
             </div>
 
-            <div class="alert alert-dark border-secondary border-opacity-50 text-center" role="alert">
-                <em class="text-body-secondary">[ Awaiting the next transmission from the Archives... ]</em>
+            <div class="timeline-node mb-5 position-relative">
+                <div class="node-marker position-absolute bg-warning rounded-circle border border-dark border-3" style="width: 20px; height: 20px; left: -36px; top: 0;" aria-hidden="true"></div>
+                
+                <h3 class="fw-bold text-warning text-uppercase mb-1">1997: The Cosmic Tidal Lock Sound&reg;</h3>
+                <p class="text-body-secondary font-monospace small mb-3">THE STUDIO ARCHITECTURE // INTELLECTUAL PROPERTY</p>
+
+                <div class="card border-secondary bg-dark text-white shadow-sm">
+                    <div class="card-body p-4 p-md-5" style="line-height: 1.7;">
+                        <p class="text-white-75">
+                            While <em>Hard Reset</em> was a commercial triumph, its most enduring legacy was the perfection of the band's signature sonic architecture. On the track "Moon 1 (Tidal Lock)", Cassidy O'Connell finally realized the exact atmospheric "Space Rock" sound she had envisioned in 1987—a sound Apex Records had rejected in favor of safe dance-pop.
+                        </p>
+                        <p class="text-white-75">
+                            The fans and music press quickly dubbed this new genre <strong>"80s Cosmic Pop."</strong> However, Holly O'Connell recognized the immense value of Cassidy's engineering genius. Through Engine Room Records, LLC, Holly immediately weaponized the sound, officially registering it with the USPTO as <strong>The Cosmic Tidal Lock Sound&reg;</strong>. This impenetrable legal armor allowed Holly to issue immediate cease-and-desist orders to any rival studio or corporate entity attempting to replicate Cassidy's proprietary synth-layering techniques.
+                        </p>
+
+                        <div class="alert bg-black border border-secondary mt-4 mb-0 shadow-sm">
+                            <h5 class="text-uppercase fw-bold text-info mb-3">
+                                <i class="fa-duotone fa-sliders-up me-2" aria-hidden="true"></i>Audio Engineering (2026 Reality)
+                            </h5>
+                            <p class="text-white-75 small mb-3">
+                                In the real world, "The Cosmic Tidal Lock Sound&reg;" is a fictional trademark. It serves as the narrative wrapper for the proprietary prompt architecture used within a commercial <strong>Suno Premium</strong> workspace to generate the band's music.
+                            </p>
+                            <ul class="text-white-75 small mb-0">
+                                <li class="mb-2">
+                                    <strong>The Studio Master:</strong> Tracks are generated using a highly specific Style Prompt to honor Cassidy's solo architecture: <em>"1980s synth-pop, mid-tempo space-rock, driving 4/4 gated drum beat, shimmering analog synthesizers, melodic fretless bassline, crystal clear female vocals, lush spatial reverb, celestial atmosphere."</em>
+                                </li>
+                                <li>
+                                    <strong>The Live Engineering:</strong> To simulate the band's stadium tours, environmental tags (e.g., <em>live stadium concert, massive crowd cheering, echoing stadium acoustics</em>) are directly appended to the base Studio Master prompt. Utilizing Suno's "Cover" function (Audio Influence: 73%, Weirdness: 0%) alongside bracketed lyric cues like <code>[Low Synth Drone Intro]</code> or <code>[Seamless Transition]</code>, the engine physically alters the acoustic space to replicate a massive live performance.
+                                </li>
+                            </ul>
+                        </div>
+                        
+                    </div>
+                </div>
             </div>
 
             <div class="alert alert-dark border-secondary border-opacity-50 text-center" role="alert">
