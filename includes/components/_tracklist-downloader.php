@@ -188,11 +188,16 @@ $has_active_streams = !empty($stream_spotify_id) || !empty($stream_apple_id) || 
                             // Render WCAG-Compliant Lore Badge in the HTML list
                             if ($legacy_tier): 
                                 $badge_class = 'bg-secondary text-white';
+                                // Set a safe, WCAG-compliant default fallback
+                                $badge_class = 'bg-secondary-subtle text-secondary-emphasis'; 
+
                                 if ($legacy_tier === 'Chart Smash') $badge_class = 'bg-success-subtle text-success-emphasis';
-                                if ($legacy_tier === 'Fan Anthem') $badge_class = 'bg-warning text-dark';
-                                if ($legacy_tier === 'Deep Cut') $badge_class = 'bg-info text-dark';
+                                if ($legacy_tier === 'Fan Anthem') $badge_class = 'bg-warning-subtle text-warning-emphasis';
+                                if ($legacy_tier === 'Deep Cut') $badge_class = 'bg-info-subtle text-info-emphasis';
+                                if ($legacy_tier === 'The Dud' || $legacy_tier === 'Studio Filler') $badge_class = 'bg-danger-subtle text-danger-emphasis';
+
+                                // Vault Track: Kept your custom stark styling, as it fits the "locked in the archive" lore perfectly!
                                 if ($legacy_tier === 'Vault Track') $badge_class = 'bg-dark text-warning border border-warning';
-                                if ($legacy_tier === 'The Dud' || $legacy_tier === 'Studio Filler') $badge_class = 'bg-danger text-white';
                                 
                                 $safe_lore_attr = htmlspecialchars($lore_note, ENT_QUOTES);
                                 $wcag_attrs = $lore_note 
