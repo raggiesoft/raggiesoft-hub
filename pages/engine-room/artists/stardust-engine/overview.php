@@ -149,12 +149,12 @@ if ($eras) {
         <div class="col-lg-4">
             <div class="card h-100 border-secondary bg-transparent hover-lift">
                 <div class="card-body d-flex flex-column text-center p-4">
-                    <div class="mb-3 text-warning"><i class="fa-duotone fa-book-atlas fa-3x"></i></div>
-                    <h3 class="fw-bold text-primary">The Lore</h3>
+                    <div class="mb-3 text-info"><i class="fa-duotone fa-book-atlas fa-3x"></i></div>
+                    <h3 class="fw-bold text-info">The Lore</h3>
                     <p class="text-secondary small">
                         Learn about the "Friction" scandal, the "Cold War" with Apex Records, and the birth of independence.
                     </p>
-                    <a href="<?php echo $root; ?>/story" class="btn btn-outline-warning mt-auto rounded-pill">Read History</a>
+                    <a href="<?php echo $root; ?>/story" class="btn btn-outline-info mt-auto rounded-pill">Read History</a>
                 </div>
             </div>
         </div>
