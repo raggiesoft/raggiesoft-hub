@@ -1,12 +1,12 @@
 <?php
 /**
  * COMPONENT: _tracklist-downloader.php
- * VERSION: 7.0 (v12 JSON Logic Update)
+ * VERSION: 8.1 (Lore Engine & DRY Streaming IDs)
  * PURPOSE:
  * 1. Reads album metadata (tracks.json, album.json) from the CDN.
- * 2. Builds the Master Playlist array for the JavaScript player.
- * 3. Renders the visual tracklist (HTML).
- * 4. Includes the shared "Sticky Player" UI component.
+ * 2. Builds the Master Playlist array (including Lore Data) for the JavaScript player.
+ * 3. Renders the visual tracklist with dynamic WCAG Lore Badges.
+ * 4. Includes the dynamic Streaming Services card based on page-level IDs.
  * 5. Initializes the shared "Stardust Player" JavaScript engine.
  */
 
@@ -57,14 +57,70 @@ if (!function_exists('get_archive_name')) {
 }
 
 // ==============================================================================
-//  SECTION 3: DATA PREPARATION
+//  SECTION 3: DATA PREPARATION & UI RENDERING
 // ==============================================================================
 
 $archive_base_name = get_archive_name($album_data['albumName'], $album_data['narrativeReleaseDate']);
 $album_art_url = "https://assets.raggiesoft.com" . $album_path_web . "/album-art.jpg?v=" . time();
 $js_playlist = []; // The Master Array for JS
 
+// Safely capture the streaming IDs from the parent page
+$stream_spotify_id = isset($id_spotify) ? $id_spotify : '';
+$stream_apple_id   = isset($id_apple) ? $id_apple : '';
+$stream_amazon_id  = isset($id_amazon) ? $id_amazon : '';
+$stream_youtube_id = isset($id_youtube) ? $id_youtube : '';
+
+// Check if ANY IDs are active to change the prompt text
+$has_active_streams = !empty($stream_spotify_id) || !empty($stream_apple_id) || !empty($stream_amazon_id) || !empty($stream_youtube_id);
 ?>
+
+<div class="card border-secondary mb-4 bg-transparent">
+    <div class="card-header bg-body-tertiary border-secondary d-flex justify-content-between align-items-center">
+        <h5 class="mb-0 text-uppercase"><i class="fa-solid fa-headphones me-2"></i>Stream the Album</h5>
+    </div>
+    <div class="card-body">
+        
+        <?php if ($has_active_streams): ?>
+            <p class="text-success small mb-3"><strong>Support the band!</strong> Listen to the official release on your favorite streaming platform below.</p>
+        <?php else: ?>
+            <p class="text-muted small mb-3">Links will become active once the album clears the global distribution network.</p>
+        <?php endif; ?>
+
+        <div class="d-flex gap-2 flex-wrap">
+            <?php if (!empty($stream_spotify_id)): ?>
+                <a href="https://open.spotify.com/album/<?php echo htmlspecialchars($stream_spotify_id); ?>" target="_blank" rel="noopener noreferrer" class="btn btn-outline-success">
+                    <i class="fa-brands fa-spotify me-2"></i>Spotify
+                </a>
+            <?php else: ?>
+                <a href="#" class="btn btn-outline-success disabled"><i class="fa-brands fa-spotify me-2"></i>Spotify</a>
+            <?php endif; ?>
+
+            <?php if (!empty($stream_apple_id)): ?>
+                <a href="https://music.apple.com/us/album/<?php echo htmlspecialchars($stream_apple_id); ?>" target="_blank" rel="noopener noreferrer" class="btn btn-outline-danger">
+                    <i class="fa-brands fa-apple me-2"></i>Apple Music
+                </a>
+            <?php else: ?>
+                <a href="#" class="btn btn-outline-danger disabled"><i class="fa-brands fa-apple me-2"></i>Apple Music</a>
+            <?php endif; ?>
+
+            <?php if (!empty($stream_amazon_id)): ?>
+                <a href="https://music.amazon.com/albums/<?php echo htmlspecialchars($stream_amazon_id); ?>" target="_blank" rel="noopener noreferrer" class="btn btn-outline-info">
+                    <i class="fa-brands fa-amazon me-2"></i>Amazon Music
+                </a>
+            <?php else: ?>
+                <a href="#" class="btn btn-outline-info disabled"><i class="fa-brands fa-amazon me-2"></i>Amazon Music</a>
+            <?php endif; ?>
+
+            <?php if (!empty($stream_youtube_id)): ?>
+                <a href="https://music.youtube.com/playlist?list=<?php echo htmlspecialchars($stream_youtube_id); ?>" target="_blank" rel="noopener noreferrer" class="btn btn-outline-danger">
+                    <i class="fa-brands fa-youtube me-2"></i>YouTube Music
+                </a>
+            <?php else: ?>
+                <a href="#" class="btn btn-outline-danger disabled"><i class="fa-brands fa-youtube me-2"></i>YouTube Music</a>
+            <?php endif; ?>
+        </div>
+    </div>
+</div>
 
 <div class="card border-secondary mb-5 bg-transparent">
     <div class="card-header bg-body-tertiary border-secondary d-flex justify-content-between align-items-center">
@@ -93,10 +149,6 @@ $js_playlist = []; // The Master Array for JS
 <div class="list-group list-group-flush bg-transparent mb-5">
     <?php foreach ($raw_tracks as $index => $track): ?>
         <?php
-            // --- UPDATED V12 LOGIC ---
-            // We no longer calculate slugs. We trust the 'fileName' field from JSON.
-            // This field typically looks like: "1-01-static" (no extension)
-            
             $base_name = $track['fileName'];
             $version_string = "?v=" . time(); // Force fresh load for audio/lyrics
             
@@ -106,6 +158,10 @@ $js_playlist = []; // The Master Array for JS
             $ogg_url = $base_web_path . '/ogg/' . $base_name . '.ogg' . $version_string;
             $lyrics_url = $base_web_path . '/lyrics/' . $base_name . '.md' . $version_string;
 
+            // Extract Lore Data (Safe fallbacks)
+            $legacy_tier = isset($track['legacyTier']) ? $track['legacyTier'] : null;
+            $lore_note = isset($track['loreNote']) ? $track['loreNote'] : '';
+
             // --- B. Build JS Playlist Item ---
             $js_playlist[] = [
                 'title' => $track['title'],
@@ -113,23 +169,46 @@ $js_playlist = []; // The Master Array for JS
                 'album' => $album_data['albumName'],
                 'src' => $ogg_url, 
                 'artwork' => $album_art_url,
-                'lyrics' => $lyrics_url 
+                'lyrics' => $lyrics_url,
+                'legacyTier' => $legacy_tier,
+                'loreNote' => $lore_note
             ];
         ?>
         
         <div class="list-group-item bg-transparent border-secondary text-muted py-3 track-row" id="track-row-<?php echo $index; ?>">
             <div class="row align-items-center">
                 
-                <div class="col-md-6 mb-2 mb-md-0">
-                    <div class="d-flex align-items-center">
+                <div class="col-md-7 mb-2 mb-md-0">
+                    <div class="d-flex align-items-center flex-wrap">
                         <span class="text-secondary fw-bold me-3" style="width: 25px;"><?php echo $track['track']; ?>.</span>
                         <div>
-                            <strong class="text-body d-block fs-5"><?php echo htmlspecialchars($track['title']); ?></strong>
+                            <strong class="text-body d-block fs-5 d-inline-block me-2"><?php echo htmlspecialchars($track['title']); ?></strong>
+                            
+                            <?php 
+                            // Render WCAG-Compliant Lore Badge in the HTML list
+                            if ($legacy_tier): 
+                                $badge_class = 'bg-secondary text-white';
+                                if ($legacy_tier === 'Chart Smash') $badge_class = 'bg-success text-white';
+                                if ($legacy_tier === 'Fan Anthem') $badge_class = 'bg-warning text-dark';
+                                if ($legacy_tier === 'Deep Cut') $badge_class = 'bg-info text-dark';
+                                if ($legacy_tier === 'Vault Track') $badge_class = 'bg-dark text-warning border border-warning';
+                                if ($legacy_tier === 'The Dud' || $legacy_tier === 'Studio Filler') $badge_class = 'bg-danger text-white';
+                                
+                                $safe_lore_attr = htmlspecialchars($lore_note, ENT_QUOTES);
+                                $wcag_attrs = $lore_note 
+                                    ? 'title="' . $safe_lore_attr . '" aria-label="Legacy Tier: ' . htmlspecialchars($legacy_tier) . '. Lore Note: ' . $safe_lore_attr . '" tabindex="0"'
+                                    : 'aria-label="Legacy Tier: ' . htmlspecialchars($legacy_tier) . '" tabindex="0"';
+                            ?>
+                                <span class="badge <?php echo $badge_class; ?> align-text-bottom" style="font-size: 0.55em; letter-spacing: 0.5px; cursor: help;" <?php echo $wcag_attrs; ?>>
+                                    <span aria-hidden="true"><?php echo strtoupper($legacy_tier); ?></span>
+                                </span>
+                            <?php endif; ?>
+
                         </div>
                     </div>
                 </div>
 
-                <div class="col-md-6 text-end">
+                <div class="col-md-5 text-end mt-2 mt-md-0">
                     <div class="btn-group" role="group">
                         
                         <button type="button" 
@@ -161,6 +240,7 @@ $js_playlist = []; // The Master Array for JS
         </div>
     <?php endforeach; ?>
 </div>
+
 <?php
 // ==============================================================================
 //  SECTION 4: PLAYER HANDOFF (TURBO EDITION)
@@ -181,6 +261,6 @@ $js_playlist = []; // The Master Array for JS
         });
         document.dispatchEvent(event);
         
-        console.log("Stardust: Playlist beam initiated.", newPlaylist.length + " tracks.");
+        console.log("Stardust: Playlist beam initiated.", newPlaylist.length + " tracks with Lore Data.");
     })();
 </script>

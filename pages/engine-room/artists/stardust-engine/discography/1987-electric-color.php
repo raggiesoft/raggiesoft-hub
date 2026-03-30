@@ -2,6 +2,13 @@
 // Page data
 $pageTitle = "Electric Color (1987) - The Stardust Engine";
 $album_path_web = '/engine-room-records/artists/the-stardust-engine/1987-electric-color';
+
+// Streaming Services IDs
+// (Populate these with the unique platform IDs when DistroKid clears the release)
+$id_spotify = "";
+$id_apple   = "";
+$id_amazon  = "";
+$id_youtube = "";
 ?>
 
 <div class="container py-5">

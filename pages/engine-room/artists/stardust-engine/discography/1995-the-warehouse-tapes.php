@@ -2,6 +2,13 @@
 // Page data
 $pageTitle = "The Warehouse Tapes (1995) - The Stardust Engine";
 $album_path_web = '/engine-room-records/artists/the-stardust-engine/1995-the-warehouse-tapes';
+
+// Streaming Services IDs
+// (Populate these with the unique platform IDs when DistroKid clears the release)
+$id_spotify = "";
+$id_apple   = "";
+$id_amazon  = "";
+$id_youtube = "";
 ?>
 
 <div class="container py-5">

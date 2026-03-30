@@ -3,6 +3,13 @@
 $pageTitle = "Live at The Crucible (2016) - The Stardust Engine";
 $album_path_web = '/engine-room-records/artists/the-stardust-engine/2016-live-at-the-crucible';
 $pageTheme = 'crucible'; // Triggers the Maroon/Orange "Ironhead" theme
+
+// Streaming Services IDs
+// (Populate these with the unique platform IDs when DistroKid clears the release)
+$id_spotify = "";
+$id_apple   = "";
+$id_amazon  = "";
+$id_youtube = "";
 ?>
 
 <div class="container py-5">
