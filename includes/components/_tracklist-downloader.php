@@ -188,7 +188,7 @@ $has_active_streams = !empty($stream_spotify_id) || !empty($stream_apple_id) || 
                             // Render WCAG-Compliant Lore Badge in the HTML list
                             if ($legacy_tier): 
                                 $badge_class = 'bg-secondary text-white';
-                                if ($legacy_tier === 'Chart Smash') $badge_class = 'bg-success text-white';
+                                if ($legacy_tier === 'Chart Smash') $badge_class = 'bg-success-subtle text-success-emphasis';
                                 if ($legacy_tier === 'Fan Anthem') $badge_class = 'bg-warning text-dark';
                                 if ($legacy_tier === 'Deep Cut') $badge_class = 'bg-info text-dark';
                                 if ($legacy_tier === 'Vault Track') $badge_class = 'bg-dark text-warning border border-warning';
