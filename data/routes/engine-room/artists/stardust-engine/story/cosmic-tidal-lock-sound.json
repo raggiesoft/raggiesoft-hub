@@ -1,0 +1,21 @@
+{
+  "common": {
+    "site": "stardust-engine",
+    "theme": "ad-astra",
+    "showSidebar": true,
+    "brandFont": ["Audiowide", "sans-serif"],
+    
+    "siteName": "The Cosmic Tidal Lock Sound™",
+    "navbarBrandLogo": "https://assets.raggiesoft.com/engine-room-records/artists/the-stardust-engine/band-logo.png",
+    "navbarBrandText": "<span class=\"text-uppercase\">Tidal Lock</span><span class=\"d-none d-md-inline\"> Sound&trade;</span>",
+    "navbarBrandLink": "/engine-room/artists/stardust-engine/cosmic-tidal-lock-sound",
+    
+    "ogImage": "https://assets.raggiesoft.com/stardust-engine/images/band-members/cassidy.jpg"
+  },
+  "/engine-room/artists/stardust-engine/story/cosmic-tidal-lock-sound": {
+    "view": "pages/engine-room/artists/stardust-engine/story/cosmic-tidal-lock-sound/overview",
+    "title": "The Cosmic Tidal Lock Sound - The Stardust Engine",
+    "ogDescription": "The sonic architecture of absolute independence. Discover the heavily guarded trademark and engineering genius developed exclusively by Cassidy O'Connell.",
+    "showSidebar": true
+  }
+}
