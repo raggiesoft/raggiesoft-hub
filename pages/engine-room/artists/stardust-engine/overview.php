@@ -75,7 +75,7 @@ if ($eras) {
                 </a>
                 <?php
                     // Reusing your awesome dynamic store button component!
-                    $storeProps = [
+                   /* $storeProps = [
                         'type' => 'album',
                         'size' => 'large',
                         'spotify' => 'YOUR_SPOTIFY_ID',
@@ -84,6 +84,8 @@ if ($eras) {
                         'youtube' => 'YOUR_YOUTUBE_ID'
                     ];
                     include ROOT_PATH . '/includes/components/store-button.php';
+                    // Coming Soon: When The Stardust Engine's albums are live on streaming platforms, populate the IDs above and this will auto-render the correct buttons!
+                    */
                 ?>
             </div>
         </div>
