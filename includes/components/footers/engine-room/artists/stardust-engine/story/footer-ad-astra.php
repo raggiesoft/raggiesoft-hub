@@ -9,12 +9,6 @@
                 <span class="mx-2 text-secondary">|</span>
                 <span style="color: var(--astra-text);">Ad Astra Mission Archive</span>
             </div>
-
-            <div class="col-md-6 text-center text-md-end opacity-50">
-                <span>SIMULATION_ID: TSE_AA_95</span>
-                <br>
-                <span>&copy; 1995-<?php echo date("Y"); ?> Engine Room Records</span>
-            </div>
             
         </div>
     </div>

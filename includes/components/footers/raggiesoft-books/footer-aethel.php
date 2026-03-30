@@ -74,19 +74,6 @@
                 </a>
             </div>
         </div>
-
-        <hr class="border-secondary opacity-25 my-5">
-
-        <div class="row align-items-center small text-secondary">
-            <div class="col-md-6 text-center text-md-start font-monospace">
-                &copy; <?php echo date("Y"); ?> RaggieSoft Publishing.<br>
-                <span class="opacity-50">Content: CC BY-SA 4.0 | Code: MIT</span>
-            </div>
-            <div class="col-md-6 text-center text-md-end mt-3 mt-md-0">
-                <span class="opacity-50 me-3">V.<?php echo date("y.m"); ?> (Iron Era Build)</span>
-                <a href="https://github.com/raggiesoft" class="text-secondary text-decoration-none hover-text-warning"><i class="fa-brands fa-github"></i></a>
-            </div>
-        </div>
     </div>
 </footer>
 

@@ -88,17 +88,5 @@
                 </div>
             </div>
         </div>
-        
-        <div class="row mt-4 pt-3 border-top border-secondary border-opacity-25">
-            <div class="col-12 text-center x-small font-monospace text-secondary">
-                Document retrieved: <?php echo date("Y-m-d H:i:s"); ?> // IP: <?php echo $_SERVER['REMOTE_ADDR']; ?>
-                <br>
-                <span class="opacity-100">
-                    <a href="/about/privacy" class="text-reset text-decoration-none">Privacy</a> | 
-                    <a href="/about/terms" class="text-reset text-decoration-none">Terms</a> | 
-                    <a href="/about/license" class="text-reset text-decoration-none">Content: CC BY-SA 4.0 / Code: MIT</a>
-                </span>
-            </div>
-        </div>
     </div>
 </footer>

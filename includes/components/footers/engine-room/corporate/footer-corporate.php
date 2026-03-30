@@ -73,11 +73,7 @@
         
         <div class="row mt-5 pt-3 border-top border-secondary border-opacity-10 align-items-center">
             
-            <div class="col-md-6 text-center text-md-start small font-monospace">
-                <p class="mb-0">
-                    &copy; 1996-<?php echo date("Y"); ?> The O'Connell Family Revocable Trust.
-                </p>
-            </div>
+            
             
             <div class="col-md-6 text-center text-md-end small">
                  <div class="d-inline-block px-2 border-end border-secondary border-opacity-25">

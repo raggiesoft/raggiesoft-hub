@@ -42,17 +42,5 @@
                 </div>
             </div>
         </div>
-        
-        <div class="row mt-5 pt-3 border-top border-secondary border-opacity-25">
-            <div class="col-md-6 text-center text-md-start small">
-                &copy; 2026 Engine Room Records. A RaggieSoft Company.
-            </div>
-            <div class="col-md-6 text-center text-md-end small d-flex flex-wrap justify-content-center justify-content-md-end gap-2">
-                 <a href="/about/privacy" class="text-reset text-decoration-underline hover-link-primary">Privacy</a> &bull; 
-                 <a href="/about/terms" class="text-reset text-decoration-underline hover-link-primary">Terms</a> &bull; 
-                 <a href="/about/ai-disclaimer" class="text-reset text-decoration-underline hover-link-primary fw-bold text-info">AI Disclaimer</a> &bull; 
-                 <a href="/about/license" class="text-reset text-decoration-underline hover-link-primary">MIT / CC BY-SA 4.0</a>
-            </div>
-        </div>
     </div>
 </footer>

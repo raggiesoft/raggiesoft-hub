@@ -34,20 +34,6 @@
                     </li>
                 </ul>
             </div>
-
-            <div class="col-md-4 text-center text-md-end small text-body-secondary">
-                <p class="mb-1">TELSUS MINOR</p>
-                <p class="mb-0">Sector 7G (The Gap)</p>
-            </div>
-        </div>
-        
-        <div class="row mt-5 pt-3 border-top border-secondary border-opacity-25">
-            <div class="col-md-6 text-center text-md-start small text-body-secondary">
-                &copy; <?php echo date("Y"); ?> Michael Ragsdale. All Rights Reserved.
-            </div>
-            <div class="col-md-6 text-center text-md-end small">
-                 <a href="/" class="text-reset text-decoration-underline link-body-emphasis">Return to RaggieSoft</a>
-            </div>
         </div>
     </div>
 </footer>
