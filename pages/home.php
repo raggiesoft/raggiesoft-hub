@@ -49,6 +49,18 @@
     </div>
   </div>
 </section>
+<div class="container mt-4 mb-2">
+    <div class="alert alert-secondary border-secondary shadow-sm d-flex align-items-center" role="alert">
+        <i class="fa-duotone fa-robot-astromech fa-2x me-3 text-info"></i>
+        <div>
+            <h4 class="alert-heading h6 fw-bold mb-1 text-uppercase letter-spacing-1">Transparency Notice</h4>
+            <p class="mb-0 small text-body-secondary">
+                RaggieSoft is a multimedia storytelling and world-building project. Certain music, artwork, and narrative elements across this network are created with the assistance of Artificial Intelligence. 
+                <a href="/about/ai-disclaimer" class="alert-link fw-bold text-info border-bottom border-info text-decoration-none">Read the full AI Disclaimer.</a>
+            </p>
+        </div>
+    </div>
+</div>
 <section class="bg-black text-white py-5 border-bottom border-danger border-5" aria-labelledby="hard-reset-launch">
     <div class="container py-4">
         <div class="row align-items-center g-5">

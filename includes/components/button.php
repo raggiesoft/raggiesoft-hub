@@ -11,9 +11,12 @@ $fullWidth = $props['fullWidth'] ?? false;
 $size = $props['size'] ?? 'medium';
 
 // 2. Map your variants to Bootstrap theme colors
-$btnClass = 'btn-secondary'; // Default to neutral/secondary
-if ($variant === 'pact') $btnClass = 'btn-primary';
-if ($variant === 'axiom') $btnClass = 'btn-warning';
+$btnClass = "btn-" . ($props['variant'] ?? 'secondary'); // Pass standard Bootstrap colors through
+
+// Catch custom lore variants
+if (($props['variant'] ?? '') === 'pact') $btnClass = 'btn-primary';
+if (($props['variant'] ?? '') === 'axiom') $btnClass = 'btn-warning';
+if (($props['variant'] ?? '') === 'neutral') $btnClass = 'btn-secondary';
 
 // 3. Define Size classes
 $sizeClass = ''; // Bootstrap default size
