@@ -35,7 +35,7 @@ if (!file_exists($currentFooter)) {
                 <a href="/about/privacy" class="text-decoration-none text-reset me-3 hover-opacity">Privacy</a>
                 <a href="/about/terms" class="text-decoration-none text-reset me-3 hover-opacity">Terms</a>
                 <a href="/about/license" class="text-decoration-none text-reset me-3 hover-opacity">Licenses</a>
-                <a href="/about/ai-disclaimer" class="text-decoration-none text-info fw-bold text-uppercase letter-spacing-1" style="font-size: 0.9em;">
+                <a href="/about/ai-disclaimer" class="text-decoration-none text-primary-emphasis fw-bold text-uppercase letter-spacing-1" style="font-size: 0.9em;">
                     <i class="fa-duotone fa-robot-astromech me-1"></i>AI Disclaimer
                 </a>
             </div>
