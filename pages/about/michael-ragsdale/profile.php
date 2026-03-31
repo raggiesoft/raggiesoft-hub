@@ -64,6 +64,15 @@ $pageTitle = "Professional Profile | Michael Ragsdale";
     <h3 class="h4 fw-bold mb-4 border-start border-4 border-warning ps-3">Evolutionary Timeline</h3>
     
     <div class="timeline-container ps-2 border-start border-2 border-secondary border-opacity-10 ms-2">
+
+        <div class="ms-4 mb-5 position-relative">
+            <div class="position-absolute top-0 start-0 translate-middle-x bg-danger rounded-circle border border-white" style="width: 16px; height: 16px; left: -1.6rem;"></div>
+            <div class="badge bg-danger text-white mb-2">2026</div>
+            <h4 class="h5 fw-bold">Multimedia Automation & AI</h4>
+            <p class="text-muted small mb-0">
+                Architected and launched <strong>Engine Room Records</strong>, a narrative fiction multimedia platform. Developed a custom Bash/Python automated audio pipeline (FFmpeg) to transcode, package, and distribute AI-assisted master recordings to global streaming services.
+            </p>
+        </div>
         
         <div class="ms-4 mb-5 position-relative">
             <div class="position-absolute top-0 start-0 translate-middle-x bg-warning rounded-circle border border-white" style="width: 16px; height: 16px; left: -1.6rem;"></div>

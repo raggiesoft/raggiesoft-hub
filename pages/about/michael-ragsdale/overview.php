@@ -110,6 +110,25 @@ global $cdn_root;
             </div>
 
             <div class="col-lg-6 mb-4">
+                <a href="/about/engine-room" class="card h-100 border-0 shadow-sm bg-danger text-white overflow-hidden text-decoration-none hover-lift">
+                    <div class="card-body p-4 position-relative z-1">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="icon-box bg-white text-danger rounded-circle me-3 d-flex align-items-center justify-content-center" style="width:50px; height:50px;">
+                                <i class="fa-solid fa-record-vinyl"></i>
+                            </div>
+                            <h4 class="h5 fw-bold mb-0">Multimedia Production</h4>
+                        </div>
+                        <p class="card-text text-white opacity-75 mb-4">
+                            I direct and produce narrative fiction audio under the label <strong>Engine Room Records</strong>. This project explores the intersection of human world-building and AI-assisted music generation.
+                        </p>
+                        <span class="btn btn-outline-light rounded-pill btn-sm stretched-link">
+                            Enter the Engine Room <i class="fa-solid fa-arrow-right ms-1"></i>
+                        </span>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-lg-6 mb-4">
                 <a href="/family" class="card h-100 border-0 shadow-sm bg-primary text-white overflow-hidden text-decoration-none hover-lift">
                     <div class="card-body p-4">
                         <div class="d-flex align-items-center mb-3">
