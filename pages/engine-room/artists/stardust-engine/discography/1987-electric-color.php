@@ -41,18 +41,41 @@ $id_youtube = "";
 
     <?php include ROOT_PATH . '/includes/components/_tracklist-downloader.php'; ?>
 
-    <div class="alert alert-dark border-secondary mt-5">
-        <div class="d-flex">
-            <div class="me-3">
-                 <i class="fa-duotone fa-scissors text-secondary fs-3"></i>
+    <h3 class="h5 fw-bold text-uppercase text-muted mt-5 mb-3 border-bottom pb-2">
+        <i class="fa-duotone fa-box-archive me-2"></i>Studio Archives
+    </h3>
+
+    <div class="row g-4 mb-5">
+        <div class="col-md-6">
+            <div class="alert alert-dark border-secondary h-100 mb-0">
+                <div class="d-flex">
+                    <div class="me-3">
+                        <i class="fa-duotone fa-cassette-tape text-secondary fs-3"></i>
+                    </div>
+                    <div>
+                        <h5 class="alert-heading h6 fw-bold text-secondary text-uppercase mb-1">The Rejected Demo: "Midnight Drivers"</h5>
+                        <p class="mb-0 small text-muted">
+                            Originally part of the band's early demo tape used to shop for labels, this darkwave track was flatly rejected by Apex executives for being "too melancholic" and "off-brand." It remained locked in the Engine Room vault until the 2007 <em>Lost Sounds</em> compilation.
+                        </p>
+                    </div>
+                </div>
             </div>
-            <div>
-                <h5 class="alert-heading h6 fw-bold text-secondary text-uppercase mb-1">The Cut Track: "Midnight Drivers"</h5>
-                <p class="mb-0 small text-muted">
-                    Originally slated for Side B, the darkwave track "Midnight Drivers" was cut by Apex executives for being "too melancholic" and "off-brand." It remained unreleased until the 2007 <em>Lost Sounds</em> compilation.
-                </p>
+        </div>
+        
+        <div class="col-md-6">
+            <div class="alert alert-dark border-secondary h-100 mb-0">
+                <div class="d-flex">
+                    <div class="me-3">
+                        <i class="fa-duotone fa-record-vinyl text-secondary fs-3"></i>
+                    </div>
+                    <div>
+                        <h5 class="alert-heading h6 fw-bold text-secondary text-uppercase mb-1">The Vinyl Cut: "Out of Time"</h5>
+                        <p class="mb-0 small text-muted">
+                            While included on the cassette and CD releases, Apex Records gleefully cut Ryan's 1:35 punk-inspired track from the physical LP, citing that Side B was "too long." They subsequently mastered the remaining rock tracks quietly to neuter their energy.
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-
 </div>
