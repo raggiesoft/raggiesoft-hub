@@ -110,7 +110,7 @@ global $cdn_root;
             </div>
 
             <div class="col-lg-6 mb-4">
-                <a href="/about/engine-room" class="card h-100 border-0 shadow-sm bg-danger text-white overflow-hidden text-decoration-none hover-lift">
+                <a href="/engine-room" class="card h-100 border-0 shadow-sm bg-danger text-white overflow-hidden text-decoration-none hover-lift">
                     <div class="card-body p-4 position-relative z-1">
                         <div class="d-flex align-items-center mb-3">
                             <div class="icon-box bg-white text-danger rounded-circle me-3 d-flex align-items-center justify-content-center" style="width:50px; height:50px;">
