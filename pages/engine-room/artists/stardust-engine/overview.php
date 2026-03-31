@@ -75,17 +75,17 @@ if ($eras) {
                 </a>
                 <?php
                     // Reusing your awesome dynamic store button component!
-                   /* $storeProps = [
-                        'type' => 'album',
+                    $storeProps = [
+                        'type' => 'artist', // This tells the component to link to the artist page instead of a specific album
                         'size' => 'large',
-                        'spotify' => 'YOUR_SPOTIFY_ID',
-                        'apple'   => 'YOUR_APPLE_ID',
-                        'amazon'  => 'YOUR_AMAZON_ID',
-                        'youtube' => 'YOUR_YOUTUBE_ID'
+                        'spotify' => '7Lr6o5qOo1OgVQGumUjFFT', // Spotify ID for the artist page (not the album)
+                        //'apple'   => 'YOUR_APPLE_ID',
+                        //'amazon'  => 'YOUR_AMAZON_ID',
+                        //'youtube' => 'YOUR_YOUTUBE_ID'
                     ];
                     include ROOT_PATH . '/includes/components/store-button.php';
-                    // Coming Soon: When The Stardust Engine's albums are live on streaming platforms, populate the IDs above and this will auto-render the correct buttons!
-                    */
+                    
+                    
                 ?>
             </div>
         </div>
