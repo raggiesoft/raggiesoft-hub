@@ -38,22 +38,28 @@ $default = 'spotify';
 <div class="btn-group dynamic-store-group shadow-sm" role="group">
     <a href="<?php echo $urls[$default]; ?>" 
        class="btn btn-<?php echo $platforms[$default]['color']; ?> <?php echo $btnSize; ?> main-store-btn fw-bold px-4"
-       data-default-text="<?php echo $type === 'artist' ? 'Artist on' : 'Listen on'; ?>">
+       data-default-text="<?php echo $type === 'artist' ? 'Artist on' : 'Listen on'; ?>" target="_blank">
         <i class="main-store-icon <?php echo $platforms[$default]['icon']; ?> me-2"></i>
         <span class="main-store-text"><?php echo $type === 'artist' ? 'Artist on ' : 'Listen on '; echo $platforms[$default]['text']; ?></span>
     </a>
     
-    <button type="button" class="btn btn-<?php echo $platforms[$default]['color']; ?> <?php echo $btnSize; ?> dropdown-toggle dropdown-toggle-split toggle-store-btn" data-bs-toggle="dropdown" aria-expanded="false">
-        <span class="visually-hidden">Choose Music Store</span>
+    <button type="button" class="btn btn-<?php echo $platforms[$default]['color']; ?> <?php echo $btnSize; ?> dropdown-toggle dropdown-toggle-split toggle-store-btn" data-bs-toggle="dropdown" aria-expanded="false" title="Set Default Music App">
+        <span class="visually-hidden">Choose Default Music Store</span>
     </button>
     
-    <ul class="dropdown-menu dropdown-menu-end shadow-lg">
-        <li><h6 class="dropdown-header">Select Preferred Store</h6></li>
+    <ul class="dropdown-menu dropdown-menu-end shadow-lg border-secondary pb-1">
+        <li>
+            <div class="px-3 py-2 bg-body-tertiary border-bottom border-secondary-subtle mb-2">
+                <span class="d-block fw-bold text-primary mb-1"><i class="fa-solid fa-memory me-1"></i> Set Global Default</span>
+                <span class="d-block small text-muted lh-sm" style="font-size: 0.8em;">Select your preferred app. We will remember it for all future albums.</span>
+            </div>
+        </li>
         <?php foreach ($platforms as $key => $data): ?>
             <?php if (!empty($ids[$key])): // Only show if we have an ID for this platform ?>
                 <li>
-                    <a class="dropdown-item store-selector-link" 
+                    <a class="dropdown-item store-selector-link py-2" 
                        href="<?php echo $urls[$key]; ?>" 
+                       target="_blank"
                        data-platform="<?php echo $key; ?>"
                        data-color="btn-<?php echo $data['color']; ?>"
                        data-icon="<?php echo $data['icon']; ?>"

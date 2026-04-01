@@ -61,10 +61,10 @@ if ($eras) {
     <div class="bg-body-tertiary rounded shadow-sm p-4 p-md-5 border border-secondary border-opacity-50 text-center">
         <span class="badge bg-success mb-3 px-3 py-2 text-uppercase letter-spacing-1"><i class="fa-solid fa-satellite-dish me-2 pulse-icon"></i>Now Streaming</span>
         <h2 class="display-5 fw-bold text-uppercase mb-3" style="font-family: 'Impact', sans-serif;">The Engine is Live</h2>
-        <p class="lead text-body-secondary mb-5 mx-auto" style="max-width: 700px;">
+        <p class="lead text-body-secondary mb-4 mx-auto" style="max-width: 700px;">
             The complete, uncompromised discography of The Stardust Engine has officially cleared the global distribution network. Support the band and stream their entire catalog on your favorite platform.
         </p>
-        <div class="d-flex flex-wrap gap-3 justify-content-center">
+        <div class="d-flex flex-column align-items-center justify-content-center">
             <?php
                 // Dynamic store button component targeting the Artist profiles
                 $storeProps = [
@@ -77,6 +77,9 @@ if ($eras) {
                 ];
                 include ROOT_PATH . '/includes/components/store-button.php';
             ?>
+            <p class="small text-muted mt-3 mb-0" style="max-width: 350px;">
+                <i class="fa-duotone fa-sliders-up me-1 text-secondary"></i> <strong>Pro Tip:</strong> Click the arrow next to the button to set your default streaming app.
+            </p>
         </div>
     </div>
 </div>
