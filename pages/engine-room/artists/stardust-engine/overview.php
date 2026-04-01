@@ -57,7 +57,7 @@ if ($eras) {
     </div>
 </div>
 
-<div class="container py-5 border-bottom border-secondary border-opacity-25">
+<div class="container py-5 border-bottom border-secondary border-opacity-25 position-relative" style="z-index: 1050;">
     <div class="bg-body-tertiary rounded shadow-sm p-4 p-md-5 border border-secondary border-opacity-50 text-center">
         <span class="badge bg-success mb-3 px-3 py-2 text-uppercase letter-spacing-1"><i class="fa-solid fa-satellite-dish me-2 pulse-icon"></i>Now Streaming</span>
         <h2 class="display-5 fw-bold text-uppercase mb-3" style="font-family: 'Impact', sans-serif;">The Engine is Live</h2>
