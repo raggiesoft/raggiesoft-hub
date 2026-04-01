@@ -58,36 +58,25 @@ if ($eras) {
 </div>
 
 <div class="container py-5 border-bottom border-secondary border-opacity-25">
-    <div class="row align-items-center bg-body-tertiary rounded shadow-sm p-4 p-md-5 border border-secondary border-opacity-50">
-        <div class="col-md-5 text-center mb-4 mb-md-0">
-            <img src="https://assets.raggiesoft.com/engine-room-records/artists/the-stardust-engine/1997-hard-reset/album-art.jpg" 
-                 alt="Hard Reset" class="img-fluid rounded shadow-lg border border-dark" style="max-width: 300px;">
-        </div>
-        <div class="col-md-7 text-center text-md-start">
-            <span class="badge bg-danger mb-2 px-3 py-2 text-uppercase letter-spacing-1">Featured Era</span>
-            <h2 class="display-5 fw-bold text-uppercase" style="font-family: 'Impact', sans-serif;">Hard Reset</h2>
-            <p class="lead text-body-secondary mb-4">
-                The album that broke the industry cartel. 16 tracks of pure, uncompromised space-rock marking their return to independence.
-            </p>
-            <div class="d-flex flex-wrap gap-3 justify-content-center justify-content-md-start">
-                <a href="<?php echo $root; ?>/discography/1997-hard-reset" class="btn btn-dark btn-lg rounded-pill px-4 shadow-sm">
-                    <i class="fa-duotone fa-compact-disc me-2"></i>View Liner Notes
-                </a>
-                <?php
-                    // Reusing your awesome dynamic store button component!
-                    $storeProps = [
-                        'type' => 'artist', // This tells the component to link to the artist page instead of a specific album
-                        'size' => 'large',
-                        'spotify' => '7Lr6o5qOo1OgVQGumUjFFT', // Spotify ID for the artist page (not the album)
-                        //'apple'   => 'YOUR_APPLE_ID',
-                        //'amazon'  => 'YOUR_AMAZON_ID',
-                        //'youtube' => 'YOUR_YOUTUBE_ID'
-                    ];
-                    include ROOT_PATH . '/includes/components/store-button.php';
-                    
-                    
-                ?>
-            </div>
+    <div class="bg-body-tertiary rounded shadow-sm p-4 p-md-5 border border-secondary border-opacity-50 text-center">
+        <span class="badge bg-success mb-3 px-3 py-2 text-uppercase letter-spacing-1"><i class="fa-solid fa-satellite-dish me-2 pulse-icon"></i>Now Streaming</span>
+        <h2 class="display-5 fw-bold text-uppercase mb-3" style="font-family: 'Impact', sans-serif;">The Engine is Live</h2>
+        <p class="lead text-body-secondary mb-5 mx-auto" style="max-width: 700px;">
+            The complete, uncompromised discography of The Stardust Engine has officially cleared the global distribution network. Support the band and stream their entire catalog on your favorite platform.
+        </p>
+        <div class="d-flex flex-wrap gap-3 justify-content-center">
+            <?php
+                // Dynamic store button component targeting the Artist profiles
+                $storeProps = [
+                    'type' => 'artist', 
+                    'size' => 'large',
+                    'spotify' => '7Lr6o5qOo1OgVQGumUjFFT', 
+                    'apple'   => '1889194363',
+                    //'amazon'  => 'YOUR_AMAZON_ID',
+                    //'youtube' => 'YOUR_YOUTUBE_ID'
+                ];
+                include ROOT_PATH . '/includes/components/store-button.php';
+            ?>
         </div>
     </div>
 </div>
@@ -111,9 +100,31 @@ if ($eras) {
                             <span class="text-primary fw-bold font-monospace small text-uppercase"><?php echo htmlspecialchars($album['era_label']); ?></span>
                             <h3 class="fw-bold mb-1"><?php echo htmlspecialchars($album['title']); ?></h3>
                             <p class="text-muted mb-3">Released: <?php echo htmlspecialchars($album['year']); ?> <?php echo isset($album['extra']) ? $album['extra'] : ''; ?></p>
-                            <a href="<?php echo htmlspecialchars($album['url']); ?>" class="btn btn-outline-primary rounded-pill px-4">
-                                <i class="fa-duotone fa-music me-2"></i>Explore Album
-                            </a>
+                            
+                            <div class="d-flex flex-wrap gap-2 justify-content-center justify-content-sm-start">
+                                <a href="<?php echo htmlspecialchars($album['url']); ?>" class="btn btn-outline-primary rounded-pill px-4">
+                                    <i class="fa-duotone fa-compact-disc me-2"></i>Explore Vault
+                                </a>
+                                
+                                <?php 
+                                // Check if any DSP IDs exist for this specific album
+                                $hasStores = !empty($album['spotifyId']) || !empty($album['appleId']) || !empty($album['amazonId']) || !empty($album['youtubeId']);
+                                
+                                if ($hasStores) {
+                                    $storeProps = [
+                                        'type' => 'album',
+                                        'size' => 'normal',
+                                        'spotify' => $album['spotifyId'] ?? '',
+                                        'apple'   => $album['appleId'] ?? '',
+                                        'amazon'  => $album['amazonId'] ?? '',
+                                        'youtube' => $album['youtubeId'] ?? ''
+                                    ];
+                                    // Inject the dynamic DSP buttons
+                                    include ROOT_PATH . '/includes/components/store-button.php';
+                                }
+                                ?>
+                            </div>
+                            
                         </div>
                     </div>
                 </div>
@@ -176,4 +187,12 @@ if ($eras) {
 <style>
 .hover-lift { transition: transform 0.2s; }
 .hover-lift:hover { transform: translateY(-5px); }
+@keyframes pulse {
+    0% { opacity: 1; }
+    50% { opacity: 0.4; }
+    100% { opacity: 1; }
+}
+.pulse-icon {
+    animation: pulse 2s infinite;
+}
 </style>

@@ -1,6 +1,6 @@
 <?php
 // pages/discography/overview.php
-// v3.2 - Switched to Dynamic JSON Fetch for CDN syncing
+// v3.3 - Added Dynamic DSP Streaming Buttons
 
 $pageTitle = "Discography Overview - The Stardust Engine";
 
@@ -81,14 +81,33 @@ if ($jsonData !== false) {
                                     Released: <?php echo $album['year']; ?>
                                 </p>
                                 
-                                <div class="mt-auto">
-                                    <a href="<?php echo $album['url']; ?>" class="btn btn-sm <?php echo $isSeized ? 'btn-outline-danger' : 'btn-outline-primary'; ?> w-100 stretched-link">
+                                <div class="mt-auto d-flex flex-column gap-2">
+                                    <a href="<?php echo $album['url']; ?>" class="btn btn-sm <?php echo $isSeized ? 'btn-outline-danger' : 'btn-outline-primary'; ?> w-100">
                                         <?php if ($isSeized): ?>
                                             <i class="fa-duotone fa-gavel me-2"></i>View Case File
                                         <?php else: ?>
                                             <i class="fa-duotone fa-compact-disc me-2"></i>View Album
                                         <?php endif; ?>
                                     </a>
+
+                                    <?php 
+                                    // DYNAMIC DSP BUTTONS
+                                    $hasStores = !empty($album['spotifyId']) || !empty($album['appleId']) || !empty($album['amazonId']) || !empty($album['youtubeId']);
+                                    
+                                    if ($hasStores) {
+                                        echo '<div class="d-flex flex-wrap gap-2 justify-content-center mt-1">';
+                                        $storeProps = [
+                                            'type'    => 'album',
+                                            'size'    => 'small', // Scaled down to fit nicely in the card footprint
+                                            'spotify' => $album['spotifyId'] ?? '',
+                                            'apple'   => $album['appleId'] ?? '',
+                                            'amazon'  => $album['amazonId'] ?? '',
+                                            'youtube' => $album['youtubeId'] ?? ''
+                                        ];
+                                        include ROOT_PATH . '/includes/components/store-button.php';
+                                        echo '</div>';
+                                    }
+                                    ?>
                                 </div>
                             </div>
                         </div>

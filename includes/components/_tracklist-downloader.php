@@ -1,15 +1,21 @@
 <?php
 /**
  * COMPONENT: _tracklist-downloader.php
- * VERSION: 9.1 (Feature Flag Edition)
+ * VERSION: 9.4 (The Timeline Edition)
+ *
+ * LICENSE:
+ * The architecture and code of this file are licensed under the MIT License.
+ * Copyright (c) 2026 Michael P. Ragsdale / RaggieSoft
+ * * The underlying narrative, lore, and music tracks delivered by this component 
+ * are licensed under Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0),
+ * except where commercial distribution exemptions apply (e.g., DSP streaming links).
  */
 
 // ==============================================================================
 //  FEATURE FLAG: THE VAULT PAYWALL
 // ==============================================================================
-// Set to FALSE: Player uses Q9 OGGs. Downloads are public.
-// Set to TRUE: Player uses 128kbps MP3s. Downloads route to /api/download.php.
 $vault_active = false; 
+$vault_under_construction = true; // Set to TRUE to hide download buttons temporarily
 // ==============================================================================
 
 $base_web_path = 'https://assets.raggiesoft.com' . $album_path_web;
@@ -44,7 +50,17 @@ if (!function_exists('get_archive_name')) {
     }
 }
 
-$archive_base_name = get_archive_name($album_data['albumName'], $album_data['narrativeReleaseDate']);
+// --- NEW TIMELINE LOGIC ---
+$narrative_date = isset($album_data['narrativeReleaseDate']) ? $album_data['narrativeReleaseDate'] : '1900-01-01';
+$real_release_date = isset($album_data['realReleaseDate']) ? $album_data['realReleaseDate'] : date('Y-m-d');
+
+$narrative_year = substr($narrative_date, 0, 4);
+$real_release_year = substr($real_release_date, 0, 4);
+
+// This now uses just the 4-digit Narrative Year, perfectly syncing with Harper v20.3
+$archive_base_name = get_archive_name($album_data['albumName'], $narrative_year);
+// --------------------------
+
 $album_art_url = $base_web_path . "/album-art.jpg?v=" . time();
 $js_playlist = []; 
 
@@ -97,41 +113,51 @@ $has_active_streams = !empty($stream_spotify_id) || !empty($stream_apple_id) || 
 
 <div class="card border-secondary mb-5 bg-transparent">
     <div class="card-header bg-body-tertiary border-secondary d-flex justify-content-between align-items-center">
-        <?php if ($vault_active): ?>
-            <h5 class="mb-0 text-uppercase"><i class="fa-duotone fa-vault me-2"></i>Premium Archives</h5>
-            <span class="badge bg-warning text-dark"><i class="fa-solid fa-lock me-1"></i> VIP Access</span>
-        <?php else: ?>
-            <h5 class="mb-0 text-uppercase"><i class="fa-duotone fa-compact-disc me-2"></i>Full Album Archives</h5>
-            <span class="badge bg-secondary">CC BY-SA 4.0</span>
-        <?php endif; ?>
+        <h5 class="mb-0 text-uppercase"><i class="fa-duotone fa-vault me-2"></i>Premium Archives</h5>
+        <div>
+            <span class="badge bg-secondary me-2" title="Creative Commons Attribution-ShareAlike 4.0 International">CC BY-SA 4.0</span>
+            <?php if ($vault_under_construction): ?>
+                <span class="badge bg-info text-dark"><i class="fa-solid fa-person-digging me-1"></i> Coming Soon</span>
+            <?php elseif ($vault_active): ?>
+                <span class="badge bg-warning text-dark"><i class="fa-solid fa-lock me-1"></i> VIP Access</span>
+            <?php endif; ?>
+        </div>
     </div>
     <div class="card-body">
-        <?php if ($vault_active): ?>
-            <p class="text-muted small mb-3">Download the pristine master tapes directly from the Engine Room Vault.</p>
+        <?php if ($vault_under_construction): ?>
+            <p class="text-muted small mb-0">We are putting the finishing touches on the Engine Room Vault. High-fidelity master tapes (WAV, FLAC, V0 MP3) will be available here soon!</p>
+        <?php else: ?>
+            <?php if ($vault_active): ?>
+                <p class="text-muted small mb-3">Download the pristine master tapes directly from the Engine Room Vault.</p>
+            <?php endif; ?>
+            <div class="d-flex gap-2 flex-wrap">
+                <?php
+                    // Archive URL Routing based on Feature Flag
+                    if ($vault_active) {
+                        $arc_mp3 = "/engine-room/api/download.php?album=" . $archive_base_name . "&format=zip-mp3";
+                        $arc_ogg = "/engine-room/api/download.php?album=" . $archive_base_name . "&format=zip-ogg";
+                        $arc_wav = "/engine-room/api/download.php?album=" . $archive_base_name . "&format=zip-wav";
+                    } else {
+                        // Pointing to the new /vault/archives/ directory
+                        $arc_mp3 = $base_web_path . '/vault/archives/' . $archive_base_name . '-mp3.zip';
+                        $arc_ogg = $base_web_path . '/vault/archives/' . $archive_base_name . '-ogg.zip';
+                        $arc_wav = $base_web_path . '/vault/archives/' . $archive_base_name . '-wav.7z';
+                    }
+                ?>
+                <a href="<?php echo $arc_mp3; ?>" class="btn btn-outline-primary license-gate"><i class="fa-solid fa-file-zipper me-2"></i>MP3 (ZIP)</a>
+                <a href="<?php echo $arc_ogg; ?>" class="btn btn-outline-success license-gate"><i class="fa-solid fa-file-zipper me-2"></i>OGG (ZIP)</a>
+                <a href="<?php echo $arc_wav; ?>" class="btn btn-outline-warning license-gate"><i class="fa-solid fa-file-zipper me-2"></i>WAV (7z)</a>
+            </div>
         <?php endif; ?>
-        <div class="d-flex gap-2 flex-wrap">
-            <?php
-                // Archive URL Routing based on Feature Flag
-                if ($vault_active) {
-                    $arc_mp3 = "/engine-room/api/download.php?album=" . $archive_base_name . "&format=zip-mp3";
-                    $arc_ogg = "/engine-room/api/download.php?album=" . $archive_base_name . "&format=zip-ogg";
-                    $arc_wav = "/engine-room/api/download.php?album=" . $archive_base_name . "&format=zip-wav";
-                } else {
-                    $arc_mp3 = $base_web_path . '/archives/' . $archive_base_name . '-mp3.zip';
-                    $arc_ogg = $base_web_path . '/archives/' . $archive_base_name . '-ogg.zip';
-                    $arc_wav = $base_web_path . '/archives/' . $archive_base_name . '-wav.7z';
-                }
-            ?>
-            <a href="<?php echo $arc_mp3; ?>" class="btn btn-outline-primary license-gate"><i class="fa-solid fa-file-zipper me-2"></i>MP3 (ZIP)</a>
-            <a href="<?php echo $arc_ogg; ?>" class="btn btn-outline-success license-gate"><i class="fa-solid fa-file-zipper me-2"></i>OGG (ZIP)</a>
-            <a href="<?php echo $arc_wav; ?>" class="btn btn-outline-warning license-gate"><i class="fa-solid fa-file-zipper me-2"></i>WAV (7z)</a>
-        </div>
     </div>
 </div>
 
-<h3 class="h4 fw-bold text-uppercase text-muted mb-4 border-bottom pb-2">
+<h3 class="h4 fw-bold text-uppercase text-muted mb-1">
     <i class="fa-duotone fa-list-music me-2"></i>Tracklist & Lyrics
 </h3>
+<p class="text-muted small mb-4 border-bottom pb-2">
+    <i class="fa-solid fa-timeline me-1"></i> <strong>Narrative Era:</strong> <?php echo htmlspecialchars($narrative_year); ?> <span class="mx-2 text-secondary">|</span> <i class="fa-solid fa-calendar-check me-1"></i> <strong>Real-World Release:</strong> <?php echo htmlspecialchars($real_release_year); ?>
+</p>
 
 <div class="list-group list-group-flush bg-transparent mb-5">
     <?php foreach ($raw_tracks as $index => $track): ?>
@@ -143,15 +169,17 @@ $has_active_streams = !empty($stream_spotify_id) || !empty($stream_apple_id) || 
 
             // URL Routing based on Feature Flag
             if ($vault_active) {
+                // Player always gets the lightweight web edit
                 $player_src = $base_web_path . '/web-mp3/' . $base_name . '.mp3' . $version_string;
                 $gateway_base = "/engine-room/api/download.php?album=" . $archive_base_name . "&track=" . $base_name;
                 $dl_mp3 = $gateway_base . "&format=mp3";
                 $dl_ogg = $gateway_base . "&format=ogg";
                 $dl_wav = $gateway_base . "&format=wav";
             } else {
-                $player_src = $base_web_path . '/ogg/' . $base_name . '.ogg' . $version_string;
-                $dl_mp3 = $base_web_path . '/mp3/' . $base_name . '.mp3' . $version_string;
-                $dl_ogg = $base_web_path . '/ogg/' . $base_name . '.ogg' . $version_string;
+                // Player gets web edit, direct downloads hit the Vault
+                $player_src = $base_web_path . '/web-mp3/' . $base_name . '.mp3' . $version_string;
+                $dl_mp3 = $base_web_path . '/vault/mp3/' . $base_name . '.mp3' . $version_string;
+                $dl_ogg = $base_web_path . '/vault/ogg/' . $base_name . '.ogg' . $version_string;
                 $dl_wav = $base_web_path . '/wav/' . $base_name . '.wav';
             }
 
@@ -204,6 +232,7 @@ $has_active_streams = !empty($stream_spotify_id) || !empty($stream_apple_id) || 
                         <button type="button" class="btn btn-sm btn-primary btn-play-index" data-index="<?php echo $index; ?>"><i class="fa-duotone fa-play me-2"></i>Play</button>
                         <button type="button" class="btn btn-sm btn-outline-info btn-view-lyrics" data-title="<?php echo htmlspecialchars($track['title']); ?>" data-url="<?php echo $lyrics_url; ?>"><i class="fa-duotone fa-book-open me-2"></i>Lyrics</button>
                         
+                        <?php if (!$vault_under_construction): ?>
                         <div class="btn-group" role="group">
                             <?php if ($vault_active): ?>
                                 <button type="button" class="btn btn-sm btn-outline-warning dropdown-toggle" data-bs-toggle="dropdown" title="Vault Access Required"><i class="fa-solid fa-lock"></i></button>
@@ -219,6 +248,8 @@ $has_active_streams = !empty($stream_spotify_id) || !empty($stream_apple_id) || 
                                 <li><a class="dropdown-item text-light license-gate" href="<?php echo $dl_wav; ?>">WAV (Master)</a></li>
                             </ul>
                         </div>
+                        <?php endif; ?>
+                        
                     </div>
                 </div>
             </div>

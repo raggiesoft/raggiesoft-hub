@@ -37,7 +37,7 @@ if ($current_brand === 'pacific-rim') {
     $brand_est = "Est. 1992 (VA)";
     
     // UPDATED URL
-    $brand_url = "raggiesoft.com/engine-room";
+    $brand_url = "engineroom-records.com";
     
     // Ensure the logo path is correct based on your previous file uploads
     $brand_logo = '<img src="https://assets.raggiesoft.com/engine-room-records/images/logos/engine-room-records-logo.png" alt="Official Seal" style="width: 100px; mix-blend-mode: multiply; filter: contrast(120%);">';
