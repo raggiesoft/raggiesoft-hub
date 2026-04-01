@@ -88,7 +88,7 @@
 
             </div>
 
-            <div class="card border-0 shadow-sm bg-body-tertiary">
+            <div class="card border-0 shadow-sm bg-body-tertiary mb-4">
                 <div class="card-body p-4 p-lg-5">
                     <div class="text-center mb-4">
                         <h4 class="fw-bold">The Prompt Engineering Philosophy</h4>
@@ -106,6 +106,38 @@
                                 <li class="list-group-item bg-transparent border-0"><i class="fa-solid fa-angle-right text-primary me-2"></i><strong>Phonetic Control:</strong> AI struggles with local names. We manually spell out acronyms and fictional locations phonetically to force perfect pronunciation.</li>
                                 <li class="list-group-item bg-transparent border-0"><i class="fa-solid fa-angle-right text-primary me-2"></i><strong>Iterative Budgeting:</strong> Creating a final track often requires rendering dozens of variations, adjusting the "Weirdness" parameters, and piecing together extensions to get the perfect narrative fit.</li>
                             </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card border-0 shadow-sm bg-body-tertiary">
+                <div class="card-body p-4 p-lg-5">
+                    <div class="text-center mb-4">
+                        <h4 class="fw-bold"><i class="fa-solid fa-clock-rotate-left me-2 text-primary"></i>The Dual Timeline Architecture</h4>
+                        <p class="text-muted mb-0">Balancing immersive world-building with real-world distribution standards.</p>
+                    </div>
+                    
+                    <p class="small text-muted text-center mb-4 mx-auto" style="max-width: 800px;">
+                        Because this project operates as an overarching multimedia story, our catalog features two distinct release dates for every piece of music. This ensures we can maintain the illusion of our fictional universe while remaining strictly honest and compliant with modern digital streaming platforms (DSPs) and copyright databases.
+                    </p>
+
+                    <div class="row g-4 align-items-stretch">
+                        <div class="col-md-6">
+                            <div class="p-4 border border-secondary border-opacity-25 rounded bg-body h-100 shadow-sm">
+                                <h5 class="fw-bold text-info"><i class="fa-solid fa-book-atlas me-2"></i>The Narrative Era</h5>
+                                <p class="small text-muted mb-0 mt-2">
+                                    Every album is anchored to a specific year within the fictional lore (e.g., <strong>1987</strong>). This in-universe date dictates the band's history, the album's thematic tone, the retro visual aesthetic, and the fictional "legacy" of the tracks. On the RaggieSoft network, this is the primary timeline you will experience to maintain narrative immersion.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="p-4 border border-secondary border-opacity-25 rounded bg-body h-100 shadow-sm">
+                                <h5 class="fw-bold text-success"><i class="fa-solid fa-calendar-check me-2"></i>Actual Release Date</h5>
+                                <p class="small text-muted mb-0 mt-2">
+                                    This is the real-world date the audio was actually synthesized by AI and published to digital streaming platforms (e.g., <strong>March 2026</strong>). We use this modern date for all official metadata on Spotify, Apple Music, YouTube, and Amazon to comply with DSP algorithms and ensure absolute transparency regarding the music's creation.
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
