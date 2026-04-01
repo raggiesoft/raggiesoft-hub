@@ -1,7 +1,7 @@
 <?php
 /**
  * COMPONENT: _tracklist-downloader.php
- * VERSION: 9.4 (The Timeline Edition)
+ * VERSION: 9.5 (Dual-Date & Radio Edit Edition)
  *
  * LICENSE:
  * The architecture and code of this file are licensed under the MIT License.
@@ -57,7 +57,6 @@ $real_release_date = isset($album_data['realReleaseDate']) ? $album_data['realRe
 $narrative_year = substr($narrative_date, 0, 4);
 $real_release_year = substr($real_release_date, 0, 4);
 
-// This now uses just the 4-digit Narrative Year, perfectly syncing with Harper v20.3
 $archive_base_name = get_archive_name($album_data['albumName'], $narrative_year);
 // --------------------------
 
@@ -138,7 +137,6 @@ $has_active_streams = !empty($stream_spotify_id) || !empty($stream_apple_id) || 
                         $arc_ogg = "/engine-room/api/download.php?album=" . $archive_base_name . "&format=zip-ogg";
                         $arc_wav = "/engine-room/api/download.php?album=" . $archive_base_name . "&format=zip-wav";
                     } else {
-                        // Pointing to the new /vault/archives/ directory
                         $arc_mp3 = $base_web_path . '/vault/archives/' . $archive_base_name . '-mp3.zip';
                         $arc_ogg = $base_web_path . '/vault/archives/' . $archive_base_name . '-ogg.zip';
                         $arc_wav = $base_web_path . '/vault/archives/' . $archive_base_name . '-wav.7z';
@@ -167,17 +165,18 @@ $has_active_streams = !empty($stream_spotify_id) || !empty($stream_apple_id) || 
             
             $lyrics_url = $base_web_path . '/lyrics/' . $base_name . '.md' . $version_string;
 
+            // --- THE RADIO EDIT DOWNLOAD LINK ---
+            $dl_web_mp3 = $base_web_path . '/web-mp3/' . $base_name . '.mp3' . $version_string;
+
             // URL Routing based on Feature Flag
             if ($vault_active) {
-                // Player always gets the lightweight web edit
-                $player_src = $base_web_path . '/web-mp3/' . $base_name . '.mp3' . $version_string;
+                $player_src = $dl_web_mp3;
                 $gateway_base = "/engine-room/api/download.php?album=" . $archive_base_name . "&track=" . $base_name;
                 $dl_mp3 = $gateway_base . "&format=mp3";
                 $dl_ogg = $gateway_base . "&format=ogg";
                 $dl_wav = $gateway_base . "&format=wav";
             } else {
-                // Player gets web edit, direct downloads hit the Vault
-                $player_src = $base_web_path . '/web-mp3/' . $base_name . '.mp3' . $version_string;
+                $player_src = $dl_web_mp3;
                 $dl_mp3 = $base_web_path . '/vault/mp3/' . $base_name . '.mp3' . $version_string;
                 $dl_ogg = $base_web_path . '/vault/ogg/' . $base_name . '.ogg' . $version_string;
                 $dl_wav = $base_web_path . '/wav/' . $base_name . '.wav';
@@ -237,15 +236,22 @@ $has_active_streams = !empty($stream_spotify_id) || !empty($stream_apple_id) || 
                             <?php if ($vault_active): ?>
                                 <button type="button" class="btn btn-sm btn-outline-warning dropdown-toggle" data-bs-toggle="dropdown" title="Vault Access Required"><i class="fa-solid fa-lock"></i></button>
                                 <ul class="dropdown-menu dropdown-menu-end bg-dark border-secondary">
+                                    <li><h6 class="dropdown-header text-secondary"><i class="fa-solid fa-broadcast-tower me-1"></i> Public Stream</h6></li>
+                                    <li><a class="dropdown-item text-light license-gate" download href="<?php echo $dl_web_mp3; ?>">MP3 (128kbps)</a></li>
+                                    <li><hr class="dropdown-divider border-secondary"></li>
                                     <li><h6 class="dropdown-header text-warning"><i class="fa-solid fa-vault me-1"></i> Premium Vault</h6></li>
                             <?php else: ?>
                                 <button type="button" class="btn btn-sm btn-outline-secondary dropdown-toggle" data-bs-toggle="dropdown"><i class="fa-duotone fa-download"></i></button>
                                 <ul class="dropdown-menu dropdown-menu-end bg-dark border-secondary">
+                                    <li><h6 class="dropdown-header text-secondary"><i class="fa-solid fa-broadcast-tower me-1"></i> Public Stream</h6></li>
+                                    <li><a class="dropdown-item text-light license-gate" download href="<?php echo $dl_web_mp3; ?>">MP3 (128kbps)</a></li>
+                                    <li><hr class="dropdown-divider border-secondary"></li>
+                                    <li><h6 class="dropdown-header text-white"><i class="fa-solid fa-compact-disc me-1"></i> Master Tapes</h6></li>
                             <?php endif; ?>
-                                <li><a class="dropdown-item text-light license-gate" href="<?php echo $dl_mp3; ?>">MP3 <?php echo $vault_active ? '(V0)' : ''; ?></a></li>
-                                <li><a class="dropdown-item text-light license-gate" href="<?php echo $dl_ogg; ?>">OGG <?php echo $vault_active ? '(Q9)' : ''; ?></a></li>
+                                <li><a class="dropdown-item text-light license-gate" href="<?php echo $dl_mp3; ?>">MP3 (V0)</a></li>
+                                <li><a class="dropdown-item text-light license-gate" href="<?php echo $dl_ogg; ?>">OGG (Q9)</a></li>
                                 <li><hr class="dropdown-divider border-secondary"></li>
-                                <li><a class="dropdown-item text-light license-gate" href="<?php echo $dl_wav; ?>">WAV (Master)</a></li>
+                                <li><a class="dropdown-item text-light license-gate" href="<?php echo $dl_wav; ?>">WAV (Lossless)</a></li>
                             </ul>
                         </div>
                         <?php endif; ?>
