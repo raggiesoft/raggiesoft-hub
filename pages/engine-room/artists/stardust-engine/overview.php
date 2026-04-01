@@ -190,6 +190,7 @@ if ($eras) {
 <style>
 .hover-lift { transition: transform 0.2s; }
 .hover-lift:hover { transform: translateY(-5px); }
+
 @keyframes pulse {
     0% { opacity: 1; }
     50% { opacity: 0.4; }
@@ -197,5 +198,14 @@ if ($eras) {
 }
 .pulse-icon {
     animation: pulse 2s infinite;
+}
+
+/* --- CAROUSEL DROPDOWN FIX --- */
+#discographyCarousel {
+    position: relative;
+    z-index: 1040; /* Ensures the dropdown renders above the 3 cards below the carousel */
+}
+#discographyCarousel .carousel-inner {
+    overflow: visible; /* Removes the clipping box so the menu can drop down freely */
 }
 </style>
