@@ -30,8 +30,9 @@ $imagesJson = htmlspecialchars(json_encode($heroImages), ENT_QUOTES, 'UTF-8');
             </p>
         </div>
 
-        <div class="row g-5 justify-content-center">
-            <div class="col-lg-5">
+        <div class="row g-4 justify-content-center">
+            
+            <div class="col-lg-4">
                 <div class="card glass-card h-100 p-4 text-center rounded-4">
                     <div class="card-body">
                         <div class="mb-4 text-info">
@@ -42,7 +43,7 @@ $imagesJson = htmlspecialchars(json_encode($heroImages), ENT_QUOTES, 'UTF-8');
                             Questions about the <strong>Stardust Engine</strong> architecture, 
                             the <strong>Elara</strong> router, or the <strong>Suno/Gemini</strong> workflow?
                         </p>
-                        <div class="d-grid">
+                        <div class="d-grid mt-auto">
                             <a href="mailto:hireme@michaelpragsdale.com?subject=RaggieSoft: Project Inquiry" class="btn btn-info btn-lg rounded-pill fw-bold text-dark">
                                 <i class="fa-solid fa-paper-plane me-2"></i>Send Message
                             </a>
@@ -51,9 +52,28 @@ $imagesJson = htmlspecialchars(json_encode($heroImages), ENT_QUOTES, 'UTF-8');
                 </div>
             </div>
 
-            <div class="col-lg-5">
+            <div class="col-lg-4">
+                <div class="card glass-card h-100 p-4 text-center rounded-4 border-success">
+                    <div class="card-body d-flex flex-column">
+                        <div class="mb-4 text-success">
+                            <i class="fa-duotone fa-tower-broadcast fa-4x drop-shadow"></i>
+                        </div>
+                        <h2 class="h3 fw-bold mb-3 text-white">DSP & Industry</h2>
+                        <p class="text-white-50 mb-4">
+                            For <strong>Digital Service Providers</strong> (Spotify, Apple, Amazon) and artist profile verification support.
+                        </p>
+                        <div class="d-grid mt-auto">
+                            <a href="mailto:michael.ragsdale@raggiesoft.com?subject=RaggieSoft: DSP / Artist Profile Inquiry" class="btn btn-success btn-lg rounded-pill fw-bold shadow-glow text-white">
+                                <i class="fa-solid fa-envelope me-2"></i>Contact Label
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
                 <div class="card glass-card h-100 p-4 text-center rounded-4 border-danger">
-                    <div class="card-body">
+                    <div class="card-body d-flex flex-column">
                         <div class="mb-4 text-danger">
                             <i class="fa-duotone fa-briefcase fa-4x drop-shadow"></i>
                         </div>
@@ -61,14 +81,15 @@ $imagesJson = htmlspecialchars(json_encode($heroImages), ENT_QUOTES, 'UTF-8');
                         <p class="text-white-50 mb-4">
                             Recruiters looking for a <strong>Systems Architect</strong> or <strong>Full-Stack Developer</strong>.
                         </p>
-                        <div class="d-grid">
-                            <a href="/about/michael-ragsdale/contact" class="btn btn-danger btn-lg rounded-pill fw-bold shadow-glow">
+                        <div class="d-grid mt-auto">
+                            <a href="/about/michael-ragsdale/contact" class="btn btn-danger btn-lg rounded-pill fw-bold shadow-glow text-white">
                                 <i class="fa-duotone fa-id-card-clip me-2"></i>Access Hiring Hub
                             </a>
                         </div>
                     </div>
                 </div>
             </div>
+
         </div>
 
         <div class="text-center mt-5">
