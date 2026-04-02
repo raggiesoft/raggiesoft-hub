@@ -16,9 +16,9 @@ $imagesJson = htmlspecialchars(json_encode($heroImages), ENT_QUOTES, 'UTF-8');
 <style>
     /* =====================================================================
        BRUTE FORCE READABILITY ARMOR
-       These classes ensure the hero section text and icons remain light and 
-       visible over the rotating background images, completely ignoring any 
-       global dark/light mode CSS inversion rules.
+       These classes ensure the hero section text, backgrounds, and borders
+       remain highly visible over the rotating background images, completely 
+       ignoring any global dark/light mode CSS inversion rules.
        ===================================================================== */
     .force-text-light {
         color: #ffffff !important;
@@ -26,18 +26,28 @@ $imagesJson = htmlspecialchars(json_encode($heroImages), ENT_QUOTES, 'UTF-8');
     .force-text-muted {
         color: rgba(255, 255, 255, 0.75) !important;
     }
+    
+    /* The Dark Glass Core */
     .force-glass-bg {
         background-color: rgba(0, 0, 0, 0.65) !important;
         backdrop-filter: blur(8px) !important;
-        border: 1px solid rgba(255, 255, 255, 0.1) !important;
     }
+
+    /* Brute-Forced Borders to preserve themes in any mode */
+    .force-border-default { border: 1px solid rgba(255, 255, 255, 0.1) !important; }
+    .force-border-info { border: 1px solid rgba(13, 202, 240, 0.4) !important; }
+    .force-border-success { border: 1px solid rgba(25, 135, 84, 0.4) !important; }
+    .force-border-danger { border: 1px solid rgba(220, 53, 69, 0.4) !important; }
+
+    /* Shadow Stacking */
     .force-shadow-heavy {
         text-shadow: 0px 4px 15px rgba(0,0,0,0.9), 0px 1px 3px rgba(0,0,0,1) !important;
     }
     .force-shadow-medium {
         text-shadow: 0px 2px 8px rgba(0,0,0,0.9) !important;
     }
-    /* Icon brute forcing to ensure they don't flip to dark variants */
+    
+    /* Icon Brute Forcing */
     .force-icon-info { color: #0dcaf0 !important; }
     .force-icon-success { color: #198754 !important; }
     .force-icon-danger { color: #dc3545 !important; }
@@ -52,7 +62,7 @@ $imagesJson = htmlspecialchars(json_encode($heroImages), ENT_QUOTES, 'UTF-8');
     <div class="content-wrapper container">
         
         <div class="text-center mb-5 d-flex justify-content-center">
-            <div class="force-glass-bg p-4 rounded-4 shadow-lg">
+            <div class="force-glass-bg force-border-default p-4 rounded-4 shadow-lg">
                 <h1 class="display-3 fw-bold text-uppercase force-text-light force-shadow-heavy mb-2" style="font-family: 'Audiowide', cursive;">
                     Signal The Architect
                 </h1>
@@ -65,7 +75,7 @@ $imagesJson = htmlspecialchars(json_encode($heroImages), ENT_QUOTES, 'UTF-8');
         <div class="row g-4 justify-content-center">
             
             <div class="col-lg-4">
-                <div class="card glass-card h-100 p-4 text-center rounded-4">
+                <div class="card force-glass-bg force-border-info h-100 p-4 text-center rounded-4 shadow-lg">
                     <div class="card-body">
                         <div class="mb-4 force-icon-info">
                             <i class="fa-duotone fa-microchip-ai fa-4x drop-shadow"></i>
@@ -85,7 +95,7 @@ $imagesJson = htmlspecialchars(json_encode($heroImages), ENT_QUOTES, 'UTF-8');
             </div>
 
             <div class="col-lg-4">
-                <div class="card glass-card h-100 p-4 text-center rounded-4 border-success">
+                <div class="card force-glass-bg force-border-success h-100 p-4 text-center rounded-4 shadow-lg">
                     <div class="card-body d-flex flex-column">
                         <div class="mb-4 force-icon-success">
                             <i class="fa-duotone fa-tower-broadcast fa-4x drop-shadow"></i>
@@ -104,7 +114,7 @@ $imagesJson = htmlspecialchars(json_encode($heroImages), ENT_QUOTES, 'UTF-8');
             </div>
 
             <div class="col-lg-4">
-                <div class="card glass-card h-100 p-4 text-center rounded-4 border-danger">
+                <div class="card force-glass-bg force-border-danger h-100 p-4 text-center rounded-4 shadow-lg">
                     <div class="card-body d-flex flex-column">
                         <div class="mb-4 force-icon-danger">
                             <i class="fa-duotone fa-briefcase fa-4x drop-shadow"></i>
@@ -125,7 +135,7 @@ $imagesJson = htmlspecialchars(json_encode($heroImages), ENT_QUOTES, 'UTF-8');
         </div>
 
         <div class="text-center mt-5 d-flex justify-content-center">
-            <div class="force-glass-bg px-4 py-2 rounded-pill shadow-sm">
+            <div class="force-glass-bg force-border-default px-4 py-2 rounded-pill shadow-sm">
                 <p class="small force-text-light force-shadow-medium mb-0">
                     <i class="fa-solid fa-server me-2 force-text-muted"></i>
                     <strong>System Note:</strong> The Hiring Hub provides access to Resume, Salary, and Calendar.
