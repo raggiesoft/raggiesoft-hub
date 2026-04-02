@@ -21,13 +21,15 @@ $imagesJson = htmlspecialchars(json_encode($heroImages), ENT_QUOTES, 'UTF-8');
 
     <div class="content-wrapper container">
         
-        <div class="text-center mb-5">
-            <h1 class="display-3 fw-bold text-uppercase text-white text-shadow mb-3" style="font-family: 'Audiowide', cursive;">
-                Signal The Architect
-            </h1>
-            <p class="lead text-white-50 mx-auto text-shadow" style="max-width: 700px;">
-                Choose your communication channel.
-            </p>
+        <div class="text-center mb-5 d-flex justify-content-center">
+            <div class="p-4 rounded-4 shadow-lg" style="background: rgba(0, 0, 0, 0.55); backdrop-filter: blur(8px); border: 1px solid rgba(255, 255, 255, 0.1);">
+                <h1 class="display-3 fw-bold text-uppercase text-white mb-2" style="font-family: 'Audiowide', cursive; text-shadow: 0px 4px 15px rgba(0,0,0,0.9), 0px 1px 3px rgba(0,0,0,1);">
+                    Signal The Architect
+                </h1>
+                <p class="lead text-white mx-auto mb-0 fw-semibold" style="max-width: 700px; text-shadow: 0px 2px 8px rgba(0,0,0,0.9);">
+                    Choose your communication channel.
+                </p>
+            </div>
         </div>
 
         <div class="row g-4 justify-content-center">
@@ -92,11 +94,13 @@ $imagesJson = htmlspecialchars(json_encode($heroImages), ENT_QUOTES, 'UTF-8');
 
         </div>
 
-        <div class="text-center mt-5">
-            <p class="small text-white-50 text-shadow">
-                <i class="fa-solid fa-server me-2"></i>
-                <strong>System Note:</strong> The Hiring Hub provides access to Resume, Salary, and Calendar.
-            </p>
+        <div class="text-center mt-5 d-flex justify-content-center">
+            <div class="px-4 py-2 rounded-pill shadow-sm" style="background: rgba(0, 0, 0, 0.65); backdrop-filter: blur(5px); border: 1px solid rgba(255, 255, 255, 0.05);">
+                <p class="small text-white mb-0" style="text-shadow: 0px 2px 4px rgba(0,0,0,0.8);">
+                    <i class="fa-solid fa-server me-2 text-white-50"></i>
+                    <strong>System Note:</strong> The Hiring Hub provides access to Resume, Salary, and Calendar.
+                </p>
+            </div>
         </div>
 
     </div>
