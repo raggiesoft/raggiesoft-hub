@@ -13,6 +13,36 @@ $startImage = !empty($heroImages)
 $imagesJson = htmlspecialchars(json_encode($heroImages), ENT_QUOTES, 'UTF-8');
 ?>
 
+<style>
+    /* =====================================================================
+       BRUTE FORCE READABILITY ARMOR
+       These classes ensure the hero section text and icons remain light and 
+       visible over the rotating background images, completely ignoring any 
+       global dark/light mode CSS inversion rules.
+       ===================================================================== */
+    .force-text-light {
+        color: #ffffff !important;
+    }
+    .force-text-muted {
+        color: rgba(255, 255, 255, 0.75) !important;
+    }
+    .force-glass-bg {
+        background-color: rgba(0, 0, 0, 0.65) !important;
+        backdrop-filter: blur(8px) !important;
+        border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    }
+    .force-shadow-heavy {
+        text-shadow: 0px 4px 15px rgba(0,0,0,0.9), 0px 1px 3px rgba(0,0,0,1) !important;
+    }
+    .force-shadow-medium {
+        text-shadow: 0px 2px 8px rgba(0,0,0,0.9) !important;
+    }
+    /* Icon brute forcing to ensure they don't flip to dark variants */
+    .force-icon-info { color: #0dcaf0 !important; }
+    .force-icon-success { color: #198754 !important; }
+    .force-icon-danger { color: #dc3545 !important; }
+</style>
+
 <div class="immersive-container hero-rotator-container" data-images="<?php echo $imagesJson; ?>">
     
     <div class="hero-bg-layer hero-bg-layer-1" style="background-image: url('<?php echo $startImage; ?>');"></div>
@@ -22,11 +52,11 @@ $imagesJson = htmlspecialchars(json_encode($heroImages), ENT_QUOTES, 'UTF-8');
     <div class="content-wrapper container">
         
         <div class="text-center mb-5 d-flex justify-content-center">
-            <div class="p-4 rounded-4 shadow-lg" style="background: rgba(0, 0, 0, 0.55); backdrop-filter: blur(8px); border: 1px solid rgba(255, 255, 255, 0.1);">
-                <h1 class="display-3 fw-bold text-uppercase text-white mb-2" style="font-family: 'Audiowide', cursive; text-shadow: 0px 4px 15px rgba(0,0,0,0.9), 0px 1px 3px rgba(0,0,0,1);">
+            <div class="force-glass-bg p-4 rounded-4 shadow-lg">
+                <h1 class="display-3 fw-bold text-uppercase force-text-light force-shadow-heavy mb-2" style="font-family: 'Audiowide', cursive;">
                     Signal The Architect
                 </h1>
-                <p class="lead text-white mx-auto mb-0 fw-semibold" style="max-width: 700px; text-shadow: 0px 2px 8px rgba(0,0,0,0.9);">
+                <p class="lead force-text-light fw-semibold force-shadow-medium mx-auto mb-0" style="max-width: 700px;">
                     Choose your communication channel.
                 </p>
             </div>
@@ -37,11 +67,11 @@ $imagesJson = htmlspecialchars(json_encode($heroImages), ENT_QUOTES, 'UTF-8');
             <div class="col-lg-4">
                 <div class="card glass-card h-100 p-4 text-center rounded-4">
                     <div class="card-body">
-                        <div class="mb-4 text-info">
+                        <div class="mb-4 force-icon-info">
                             <i class="fa-duotone fa-microchip-ai fa-4x drop-shadow"></i>
                         </div>
-                        <h2 class="h3 fw-bold mb-3 text-white">Project Inquiry</h2>
-                        <p class="text-white-50 mb-4">
+                        <h2 class="h3 fw-bold mb-3 force-text-light">Project Inquiry</h2>
+                        <p class="force-text-muted mb-4">
                             Questions about the <strong>Stardust Engine</strong> architecture, 
                             the <strong>Elara</strong> router, or the <strong>Suno/Gemini</strong> workflow?
                         </p>
@@ -57,15 +87,15 @@ $imagesJson = htmlspecialchars(json_encode($heroImages), ENT_QUOTES, 'UTF-8');
             <div class="col-lg-4">
                 <div class="card glass-card h-100 p-4 text-center rounded-4 border-success">
                     <div class="card-body d-flex flex-column">
-                        <div class="mb-4 text-success">
+                        <div class="mb-4 force-icon-success">
                             <i class="fa-duotone fa-tower-broadcast fa-4x drop-shadow"></i>
                         </div>
-                        <h2 class="h3 fw-bold mb-3 text-white">DSP & Industry</h2>
-                        <p class="text-white-50 mb-4">
+                        <h2 class="h3 fw-bold mb-3 force-text-light">DSP & Industry</h2>
+                        <p class="force-text-muted mb-4">
                             For <strong>Digital Service Providers</strong> (Spotify, Apple, Amazon) and artist profile verification support.
                         </p>
                         <div class="d-grid mt-auto">
-                            <a href="mailto:michael.ragsdale@raggiesoft.com?subject=RaggieSoft: DSP / Artist Profile Inquiry" class="btn btn-success btn-lg rounded-pill fw-bold shadow-glow text-white">
+                            <a href="mailto:michael.ragsdale@raggiesoft.com?subject=RaggieSoft: DSP / Artist Profile Inquiry" class="btn btn-success btn-lg rounded-pill fw-bold shadow-glow force-text-light">
                                 <i class="fa-solid fa-envelope me-2"></i>Contact Label
                             </a>
                         </div>
@@ -76,15 +106,15 @@ $imagesJson = htmlspecialchars(json_encode($heroImages), ENT_QUOTES, 'UTF-8');
             <div class="col-lg-4">
                 <div class="card glass-card h-100 p-4 text-center rounded-4 border-danger">
                     <div class="card-body d-flex flex-column">
-                        <div class="mb-4 text-danger">
+                        <div class="mb-4 force-icon-danger">
                             <i class="fa-duotone fa-briefcase fa-4x drop-shadow"></i>
                         </div>
-                        <h2 class="h3 fw-bold mb-3 text-white">Hiring & Careers</h2>
-                        <p class="text-white-50 mb-4">
+                        <h2 class="h3 fw-bold mb-3 force-text-light">Hiring & Careers</h2>
+                        <p class="force-text-muted mb-4">
                             Recruiters looking for a <strong>Systems Architect</strong> or <strong>Full-Stack Developer</strong>.
                         </p>
                         <div class="d-grid mt-auto">
-                            <a href="/about/michael-ragsdale/contact" class="btn btn-danger btn-lg rounded-pill fw-bold shadow-glow text-white">
+                            <a href="/about/michael-ragsdale/contact" class="btn btn-danger btn-lg rounded-pill fw-bold shadow-glow force-text-light">
                                 <i class="fa-duotone fa-id-card-clip me-2"></i>Access Hiring Hub
                             </a>
                         </div>
@@ -95,9 +125,9 @@ $imagesJson = htmlspecialchars(json_encode($heroImages), ENT_QUOTES, 'UTF-8');
         </div>
 
         <div class="text-center mt-5 d-flex justify-content-center">
-            <div class="px-4 py-2 rounded-pill shadow-sm" style="background: rgba(0, 0, 0, 0.65); backdrop-filter: blur(5px); border: 1px solid rgba(255, 255, 255, 0.05);">
-                <p class="small text-white mb-0" style="text-shadow: 0px 2px 4px rgba(0,0,0,0.8);">
-                    <i class="fa-solid fa-server me-2 text-white-50"></i>
+            <div class="force-glass-bg px-4 py-2 rounded-pill shadow-sm">
+                <p class="small force-text-light force-shadow-medium mb-0">
+                    <i class="fa-solid fa-server me-2 force-text-muted"></i>
                     <strong>System Note:</strong> The Hiring Hub provides access to Resume, Salary, and Calendar.
                 </p>
             </div>
