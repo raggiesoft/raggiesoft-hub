@@ -46,6 +46,13 @@
     </ul>
   </li>
 
+  <li class="nav-item">
+    <a class="nav-link" href="/contact">
+        <i class="fa-duotone fa-envelope me-2"></i>Contact
+    </a>
+  </li>
+
+
   <li class="nav-item border-start border-secondary mx-2 d-none d-md-block"></li>
 
   <li class="nav-item">
