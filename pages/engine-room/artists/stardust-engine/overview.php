@@ -72,7 +72,7 @@ if ($eras) {
             </div>
 
             <div class="col-lg-6 p-4 p-md-5 text-center text-lg-start">
-                <span class="badge bg-success mb-3 px-3 py-2 text-uppercase letter-spacing-1">
+                <span class="badge bg-success-subtle text-success-emphasis mb-3 px-3 py-2 text-uppercase letter-spacing-1" style="border: 1px solid var(--bs-success-border-subtle);">
                     <i class="fa-solid fa-satellite-dish me-2 pulse-icon"></i>Now Streaming
                 </span>
                 <h2 class="display-5 fw-bold text-uppercase mb-3" style="font-family: 'Impact', sans-serif;">The Engine is Live</h2>
