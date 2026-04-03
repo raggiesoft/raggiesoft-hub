@@ -30,6 +30,21 @@ $pageTitle = "The Band - The Stardust Engine";
         </div>
     </div>
 
+    <div class="row justify-content-center mb-5">
+        <div class="col-lg-10">
+            <div class="card glass-card border-secondary p-2 shadow-lg">
+                <img src="https://assets.raggiesoft.com/stardust-engine/images/band-members/family-portraits/artist-header-all.jpg" 
+                     class="img-fluid rounded border border-secondary border-opacity-50" 
+                     alt="The full Stardust Engine family in the studio: Evan, Cassidy, Ryan, Holly, and Tyler.">
+                <div class="card-footer bg-transparent border-top-0 text-center pt-3 pb-2">
+                    <p class="text-white-50 fst-italic mb-0 small">
+                        <i class="fa-solid fa-users me-2"></i><strong>The Family Unit (1997):</strong> Evan Wright, Cassidy O'Connell, Ryan O'Connell, Holly O'Connell, and Tyler Wright inside The Fortress.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <hr class="border-secondary opacity-50 my-5">
 
     <div class="row justify-content-center mb-5">
