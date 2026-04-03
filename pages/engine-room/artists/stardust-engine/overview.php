@@ -75,8 +75,8 @@ if ($eras) {
                     'size' => 'large',
                     'spotify' => '7Lr6o5qOo1OgVQGumUjFFT', 
                     'apple'   => '1889194363',
-                    //'amazon'  => 'YOUR_AMAZON_ID',
-                    //'youtube' => 'YOUR_YOUTUBE_ID'
+                    'amazon'  => 'B0GVGL5RS7',
+                    'youtube' => 'UCqtJNbYErxJ7ivveQXVS2mg'
                 ];
                 include ROOT_PATH . '/includes/components/store-button.php';
             ?>
