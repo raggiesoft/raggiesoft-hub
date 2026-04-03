@@ -61,13 +61,13 @@ if ($eras) {
 </div>
 
 <div class="container py-5 border-bottom border-secondary border-opacity-25 position-relative" style="z-index: 1050;">
-    <div class="bg-body-tertiary rounded shadow-sm border border-secondary border-opacity-50 overflow-hidden">
+    <div class="bg-body-tertiary rounded shadow-sm border border-secondary border-opacity-50">
         <div class="row g-0 align-items-center">
             
             <div class="col-lg-6 d-none d-lg-block">
                 <img src="https://assets.raggiesoft.com/stardust-engine/images/band-members/family-portraits/artist-header-oconnell.jpg" 
                      alt="Ryan, Cassidy, and Holly O'Connell in the studio" 
-                     class="img-fluid h-100 object-fit-cover"
+                     class="img-fluid h-100 object-fit-cover rounded-start"
                      style="min-height: 400px;">
             </div>
 
