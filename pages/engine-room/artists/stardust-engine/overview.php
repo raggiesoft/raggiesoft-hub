@@ -61,28 +61,47 @@ if ($eras) {
 </div>
 
 <div class="container py-5 border-bottom border-secondary border-opacity-25 position-relative" style="z-index: 1050;">
-    <div class="bg-body-tertiary rounded shadow-sm p-4 p-md-5 border border-secondary border-opacity-50 text-center">
-        <span class="badge bg-success mb-3 px-3 py-2 text-uppercase letter-spacing-1"><i class="fa-solid fa-satellite-dish me-2 pulse-icon"></i>Now Streaming</span>
-        <h2 class="display-5 fw-bold text-uppercase mb-3" style="font-family: 'Impact', sans-serif;">The Engine is Live</h2>
-        <p class="lead text-body-secondary mb-4 mx-auto" style="max-width: 700px;">
-            The complete, uncompromised discography of The Stardust Engine has officially cleared the global distribution network. Support the band and stream their entire catalog on your favorite platform.
-        </p>
-        <div class="d-flex flex-column align-items-center justify-content-center">
-            <?php
-                // Dynamic store button component targeting the Artist profiles
-                $storeProps = [
-                    'type' => 'artist', 
-                    'size' => 'large',
-                    'spotify' => '7Lr6o5qOo1OgVQGumUjFFT', 
-                    'apple'   => '1889194363',
-                    'amazon'  => 'B0GVGL5RS7',
-                    'youtube' => 'UCqtJNbYErxJ7ivveQXVS2mg'
-                ];
-                include ROOT_PATH . '/includes/components/store-button.php';
-            ?>
-            <p class="small text-muted mt-3 mb-0" style="max-width: 350px;">
-                <i class="fa-duotone fa-sliders-up me-1 text-secondary"></i> <strong>Pro Tip:</strong> Click the arrow next to the button to set your default streaming app.
-            </p>
+    <div class="bg-body-tertiary rounded shadow-sm border border-secondary border-opacity-50 overflow-hidden">
+        <div class="row g-0 align-items-center">
+            
+            <div class="col-lg-6 d-none d-lg-block">
+                <img src="https://assets.raggiesoft.com/stardust-engine/images/band-members/family-portraits/artist-header-oconnell.jpg" 
+                     alt="Ryan, Cassidy, and Holly O'Connell in the studio" 
+                     class="img-fluid h-100 object-fit-cover"
+                     style="min-height: 400px;">
+            </div>
+
+            <div class="col-lg-6 p-4 p-md-5 text-center text-lg-start">
+                <span class="badge bg-success mb-3 px-3 py-2 text-uppercase letter-spacing-1">
+                    <i class="fa-solid fa-satellite-dish me-2 pulse-icon"></i>Now Streaming
+                </span>
+                <h2 class="display-5 fw-bold text-uppercase mb-3" style="font-family: 'Impact', sans-serif;">The Engine is Live</h2>
+                <p class="lead text-body-secondary mb-4">
+                    The complete, uncompromised discography of The Stardust Engine has officially cleared the global distribution network. Support the family and stream their entire catalog.
+                </p>
+                
+                <img src="https://assets.raggiesoft.com/stardust-engine/images/band-members/family-portraits/artist-header-oconnell.jpg" 
+                     alt="The O'Connell Family" 
+                     class="img-fluid rounded mb-4 d-block d-lg-none shadow-sm border border-secondary">
+
+                <div class="d-flex flex-column align-items-center align-items-lg-start">
+                    <?php
+                        $storeProps = [
+                            'type' => 'artist', 
+                            'size' => 'large',
+                            'spotify' => '7Lr6o5qOo1OgVQGumUjFFT', 
+                            'apple'   => '1889194363',
+                            'amazon'  => 'B0GVGL5RS7',
+                            'youtube' => 'UCqtJNbYErxJ7ivveQXVS2mg'
+                        ];
+                        include ROOT_PATH . '/includes/components/store-button.php';
+                    ?>
+                    <p class="small text-muted mt-3 mb-0">
+                        <i class="fa-duotone fa-sliders-up me-1 text-secondary"></i> <strong>Pro Tip:</strong> Click the arrow next to the button to set your default streaming app.
+                    </p>
+                </div>
+            </div>
+
         </div>
     </div>
 </div>
