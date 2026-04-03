@@ -162,7 +162,7 @@ $has_active_streams = !empty($stream_spotify_id) || !empty($stream_apple_id) || 
                 <i class="fa-solid fa-timeline me-2 text-info"></i> <strong>Narrative Era:</strong> <span class="badge bg-info text-dark ms-1" style="font-size: 0.9em;"><?php echo htmlspecialchars($narrative_year); ?></span>
             </div>
             <div class="text-light fs-6 mt-2 mt-md-0">
-                <i class="fa-solid fa-calendar-check me-2 text-success"></i> <strong>DSP / Real-World Release:</strong> <span class="badge bg-success ms-1" style="font-size: 0.9em;"><?php echo htmlspecialchars($real_release_date); ?></span>
+                <i class="fa-solid fa-calendar-check me-2 text-success"></i> <strong>DSP / Real-World Release:</strong> <span class="badge bg-success-subtle text-success-emphasis ms-1" style="font-size: 0.9em; border: 1px solid var(--bs-success-border-subtle);"><?php echo htmlspecialchars($real_release_date); ?></span>
             </div>
         </div>
         <div class="d-flex align-items-start mt-3">
