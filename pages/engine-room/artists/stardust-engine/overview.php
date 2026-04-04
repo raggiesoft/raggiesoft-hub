@@ -60,60 +60,78 @@ if ($eras) {
     </div>
 </div>
 
-<div class="card border-secondary-subtle mb-5 shadow-sm bg-body-tertiary">
-    <div class="card-header border-secondary-subtle d-flex justify-content-between align-items-center p-3">
-        <h4 class="mb-0 text-uppercase fw-bold text-body">
-            <i class="fa-solid fa-satellite-dish me-2 text-primary"></i> The Engine is Live
-        </h4>
-        <span class="badge bg-success-subtle text-success-emphasis" style="border: 1px solid var(--bs-success-border-subtle);">
-            <i class="fa-solid fa-signal-stream me-1"></i> Transmission Active
-        </span>
-    </div>
-    <div class="card-body p-4 p-md-5">
-        <h2 class="display-6 fw-bold text-body mb-3">Space Rock: Essential Tracks is streaming worldwide.</h2>
-        <p class="text-body-secondary fs-5 mb-5 lh-base">
-            Tune in and fire up the engine. Experience the definitive 1987 sound and join the narrative universe across all major platforms, or secure the high-fidelity master tapes directly from the Engine Room archive.
-        </p>
-
-        <style>
-            /* Official Meta Brand Colors */
-            .btn-facebook {
-                background-color: #1877F2;
-                color: #ffffff;
-                border: 1px solid #1877F2;
-                transition: all 0.2s ease-in-out;
-            }
-            .btn-facebook:hover, .btn-facebook:focus {
-                background-color: #166FE5;
-                color: #ffffff;
-                border-color: #166FE5;
-            }
-            /* Ensure the SVG icon scales correctly */
-            .btn-facebook svg {
-                width: 1.25rem;
-                height: 1.25rem;
-            }
-        </style>
-
-        <div class="d-flex flex-wrap align-items-center gap-3">
+<div class="container py-5 border-bottom border-secondary border-opacity-25 position-relative" style="z-index: 1050;">
+    <div class="bg-body-tertiary rounded shadow-sm border border-secondary border-opacity-50">
+        <div class="row g-0 align-items-center">
             
-            <?php 
-            $storeProps = [
-                'type'    => 'artist',
-                'size'    => 'large', /* Scaled up to 'large' to match the prominence of the card */
-                'spotify' => '1j58ruMuWa1DQ07aYQ3GMP', 
-                'apple'   => '1889498183'
-            ];
-            include 'store-button.php'; 
-            ?>
+            <div class="col-lg-6 d-none d-lg-block">
+                <img src="https://assets.raggiesoft.com/stardust-engine/images/band-members/family-portraits/artist-header-oconnell.jpg" 
+                     alt="Ryan, Cassidy, and Holly O'Connell in the studio" 
+                     class="img-fluid h-100 object-fit-cover rounded-start"
+                     style="min-height: 400px;">
+            </div>
 
-            <a href="https://facebook.com/TheStardustEngine" target="_blank" class="btn btn-facebook btn-lg shadow-sm px-4 fw-bold d-inline-flex align-items-center">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="me-2" viewBox="0 0 16 16">
-                    <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
-                </svg>
-                Find us on Facebook
-            </a>
-            
+            <div class="col-lg-6 p-4 p-md-5 text-center text-lg-start">
+                <span class="badge bg-success-subtle text-success-emphasis mb-3 px-3 py-2 text-uppercase letter-spacing-1" style="border: 1px solid var(--bs-success-border-subtle);">
+                    <i class="fa-solid fa-satellite-dish me-2 pulse-icon"></i>Now Streaming
+                </span>
+                <h2 class="display-5 fw-bold text-uppercase mb-3" style="font-family: 'Impact', sans-serif;">The Engine is Live</h2>
+                <p class="lead text-body-secondary mb-4">
+                    The complete, uncompromised discography of The Stardust Engine has officially cleared the global distribution network. Support the family and stream their entire catalog.
+                </p>
+                
+                <img src="https://assets.raggiesoft.com/stardust-engine/images/band-members/family-portraits/artist-header-oconnell.jpg" 
+                     alt="The O'Connell Family" 
+                     class="img-fluid rounded mb-4 d-block d-lg-none shadow-sm border border-secondary">
+
+                <style>
+                    /* Official Meta Brand Colors */
+                    .btn-facebook {
+                        background-color: #1877F2;
+                        color: #ffffff;
+                        border: 1px solid #1877F2;
+                        transition: all 0.2s ease-in-out;
+                    }
+                    .btn-facebook:hover, .btn-facebook:focus {
+                        background-color: #166FE5;
+                        color: #ffffff;
+                        border-color: #166FE5;
+                    }
+                    /* Ensure the SVG icon scales correctly */
+                    .btn-facebook svg {
+                        width: 1.25rem;
+                        height: 1.25rem;
+                    }
+                </style>
+
+                <div class="d-flex flex-column align-items-center align-items-lg-start">
+                    
+                    <div class="d-flex flex-wrap justify-content-center justify-content-lg-start gap-3">
+                        <?php
+                            $storeProps = [
+                                'type' => 'artist', 
+                                'size' => 'large',
+                                'spotify' => '7Lr6o5qOo1OgVQGumUjFFT', 
+                                'apple'   => '1889194363',
+                                'amazon'  => 'B0GVGL5RS7',
+                                'youtube' => 'UCqtJNbYErxJ7ivveQXVS2mg'
+                            ];
+                            include ROOT_PATH . '/includes/components/store-button.php';
+                        ?>
+
+                        <a href="https://facebook.com/TheStardustEngine" target="_blank" class="btn btn-facebook btn-lg shadow-sm px-4 fw-bold d-inline-flex align-items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="me-2" viewBox="0 0 16 16">
+                                <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+                            </svg>
+                            Find us on Facebook
+                        </a>
+                    </div>
+                    <p class="small text-muted mt-3 mb-0">
+                        <i class="fa-duotone fa-sliders-up me-1 text-secondary"></i> <strong>Pro Tip:</strong> Click the arrow next to the button to set your default streaming app.
+                    </p>
+                </div>
+            </div>
+
         </div>
     </div>
 </div>
