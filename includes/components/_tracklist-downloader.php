@@ -73,19 +73,19 @@ $stream_youtube_id = isset($id_youtube) ? $id_youtube : '';
 $has_active_streams = !empty($stream_spotify_id) || !empty($stream_apple_id) || !empty($stream_amazon_id) || !empty($stream_youtube_id);
 ?>
 
-<div class="card bg-dark border-secondary mb-5 shadow-sm">
+<div class="card bg-body-tertiary border-secondary-subtle mb-5 shadow-sm">
     <div class="card-body p-3">
-        <div class="d-flex flex-wrap align-items-center justify-content-between border-bottom border-secondary pb-2 mb-2">
-            <div class="text-light fs-6">
+        <div class="d-flex flex-wrap align-items-center justify-content-between border-bottom border-secondary-subtle pb-2 mb-2">
+            <div class="text-body fs-6">
                 <i class="fa-solid fa-timeline me-2 text-info"></i> <strong>Narrative Era:</strong> <span class="badge bg-info text-dark ms-1" style="font-size: 0.9em;"><?php echo htmlspecialchars($narrative_year); ?></span>
             </div>
-            <div class="text-light fs-6 mt-2 mt-md-0">
+            <div class="text-body fs-6 mt-2 mt-md-0">
                 <i class="fa-solid fa-calendar-check me-2 text-success"></i> <strong>DSP / Real-World Release:</strong> <span class="badge bg-success-subtle text-success-emphasis ms-1" style="font-size: 0.9em; border: 1px solid var(--bs-success-border-subtle);"><?php echo htmlspecialchars($real_release_date); ?></span>
             </div>
         </div>
         <div class="d-flex align-items-start mt-3">
             <i class="fa-solid fa-circle-info text-secondary mt-1 me-3 fs-5"></i>
-            <p class="small text-muted mb-0 lh-sm">
+            <p class="small text-body-secondary mb-0 lh-sm">
                 <strong>ARCHIVIST NOTE:</strong> <em>The Stardust Engine</em> is a narrative-driven musical universe. The <strong>Narrative Era</strong> denotes when the album was recorded by Ryan and Cassidy within the fictional history of the band. The <strong>DSP / Real-World Release</strong> reflects the legal copyright date when the audio files were officially pressed and distributed to global streaming platforms.
             </p>
         </div>
