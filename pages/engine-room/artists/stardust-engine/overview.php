@@ -60,45 +60,62 @@ if ($eras) {
     </div>
 </div>
 
-<style>
-    /* Official Meta Brand Colors */
-    .btn-facebook {
-        background-color: #1877F2;
-        color: #ffffff;
-        border: 1px solid #1877F2;
-        transition: all 0.2s ease-in-out;
-    }
-    .btn-facebook:hover, .btn-facebook:focus {
-        background-color: #166FE5;
-        color: #ffffff;
-        border-color: #166FE5;
-    }
-    /* Ensure the SVG icon scales correctly */
-    .btn-facebook svg {
-        width: 1.25rem;
-        height: 1.25rem;
-    }
-</style>
+<div class="card border-secondary-subtle mb-5 shadow-sm bg-body-tertiary">
+    <div class="card-header border-secondary-subtle d-flex justify-content-between align-items-center p-3">
+        <h4 class="mb-0 text-uppercase fw-bold text-body">
+            <i class="fa-solid fa-satellite-dish me-2 text-primary"></i> The Engine is Live
+        </h4>
+        <span class="badge bg-success-subtle text-success-emphasis" style="border: 1px solid var(--bs-success-border-subtle);">
+            <i class="fa-solid fa-signal-stream me-1"></i> Transmission Active
+        </span>
+    </div>
+    <div class="card-body p-4 p-md-5">
+        <h2 class="display-6 fw-bold text-body mb-3">Space Rock: Essential Tracks is streaming worldwide.</h2>
+        <p class="text-body-secondary fs-5 mb-5 lh-base">
+            Tune in and fire up the engine. Experience the definitive 1987 sound and join the narrative universe across all major platforms, or secure the high-fidelity master tapes directly from the Engine Room archive.
+        </p>
 
-<div class="d-flex flex-wrap align-items-center gap-3 mt-4">
-    
-    <?php 
-    $storeProps = [
-        'type'    => 'artist',
-        'size'    => 'medium',
-        'spotify' => '1j58ruMuWa1DQ07aYQ3GMP', 
-        'apple'   => '1889498183'
-    ];
-    include 'store-button.php'; 
-    ?>
+        <style>
+            /* Official Meta Brand Colors */
+            .btn-facebook {
+                background-color: #1877F2;
+                color: #ffffff;
+                border: 1px solid #1877F2;
+                transition: all 0.2s ease-in-out;
+            }
+            .btn-facebook:hover, .btn-facebook:focus {
+                background-color: #166FE5;
+                color: #ffffff;
+                border-color: #166FE5;
+            }
+            /* Ensure the SVG icon scales correctly */
+            .btn-facebook svg {
+                width: 1.25rem;
+                height: 1.25rem;
+            }
+        </style>
 
-    <a href="https://facebook.com/TheStardustEngine" target="_blank" class="btn btn-facebook shadow-sm px-4 py-2 fw-bold d-inline-flex align-items-center">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="me-2" viewBox="0 0 16 16">
-            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
-        </svg>
-        Find us on Facebook
-    </a>
-    
+        <div class="d-flex flex-wrap align-items-center gap-3">
+            
+            <?php 
+            $storeProps = [
+                'type'    => 'artist',
+                'size'    => 'large', /* Scaled up to 'large' to match the prominence of the card */
+                'spotify' => '1j58ruMuWa1DQ07aYQ3GMP', 
+                'apple'   => '1889498183'
+            ];
+            include 'store-button.php'; 
+            ?>
+
+            <a href="https://facebook.com/TheStardustEngine" target="_blank" class="btn btn-facebook btn-lg shadow-sm px-4 fw-bold d-inline-flex align-items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="me-2" viewBox="0 0 16 16">
+                    <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+                </svg>
+                Find us on Facebook
+            </a>
+            
+        </div>
+    </div>
 </div>
 
 <?php if (!empty($allAlbums)): ?>
