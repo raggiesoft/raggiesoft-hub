@@ -1,7 +1,7 @@
 <?php
 /**
  * COMPONENT: _tracklist-downloader.php
- * VERSION: 9.6 (Radio Edit Fix & Dual-Date Edition)
+ * VERSION: 9.7 (Multi-Disc & Suite Architecture)
  *
  * LICENSE:
  * The architecture and code of this file are licensed under the MIT License.
@@ -55,10 +55,7 @@ $narrative_date = isset($album_data['narrativeReleaseDate']) ? $album_data['narr
 $real_release_date = isset($album_data['realReleaseDate']) ? $album_data['realReleaseDate'] : date('Y-m-d');
 
 $narrative_year = substr($narrative_date, 0, 4);
-// Use regex or string extraction if the real release date isn't standard YYYY-MM-DD format
-// Since we are formatting it as "March 14, 2026" in the JSON, we extract the last 4 characters for the year.
 $real_release_year = substr(trim($real_release_date), -4);
-
 $archive_base_name = get_archive_name($album_data['albumName'], $narrative_year);
 // ----------------------
 
@@ -174,47 +171,93 @@ $has_active_streams = !empty($stream_spotify_id) || !empty($stream_apple_id) || 
     <i class="fa-duotone fa-list-music me-2"></i>Tracklist & Lyrics
 </h3>
 
-<div class="list-group list-group-flush bg-transparent mb-5">
-    <?php foreach ($raw_tracks as $index => $track): ?>
-        <?php
-            $base_name = $track['fileName'];
-            $version_string = "?v=" . time(); 
-            
-            $lyrics_url = $base_web_path . '/lyrics/' . $base_name . '.md' . $version_string;
+<div class="tracklist-wrapper mb-5">
+    <?php 
+    $current_disc = null;
+    $current_suite = null;
+    $is_list_open = false;
 
-            // --- THE RADIO EDIT DOWNLOAD LINK ---
-            $dl_web_mp3 = $base_web_path . '/web-mp3/' . $base_name . '.mp3' . $version_string;
+    foreach ($raw_tracks as $index => $track): 
+        
+        $disc = isset($track['disc']) ? $track['disc'] : 1;
+        $disc_name = isset($track['discName']) ? $track['discName'] : '';
+        $suite_name = isset($track['suiteName']) ? $track['suiteName'] : '';
+        $isrc_code = isset($track['isrc']) ? $track['isrc'] : '';
 
-            // URL Routing based on Feature Flag
-            if ($vault_active) {
-                $player_src = $dl_web_mp3;
-                $gateway_base = "/engine-room/api/download.php?album=" . $archive_base_name . "&track=" . $base_name;
-                $dl_mp3 = $gateway_base . "&format=mp3";
-                $dl_ogg = $gateway_base . "&format=ogg";
-                $dl_wav = $gateway_base . "&format=wav";
-            } else {
-                $player_src = $dl_web_mp3;
-                $dl_mp3 = $base_web_path . '/vault/mp3/' . $base_name . '.mp3' . $version_string;
-                $dl_ogg = $base_web_path . '/vault/ogg/' . $base_name . '.ogg' . $version_string;
-                $dl_wav = $base_web_path . '/vault/wav/' . $base_name . '.wav'; // Fixed to match Harper routing if needed
+        // ==========================================
+        // DISC HEADER LOGIC
+        // ==========================================
+        if ($disc !== $current_disc) {
+            if ($is_list_open) {
+                echo '</div>'; // Close previous list-group
             }
+            $current_disc = $disc;
+            $current_suite = null; // Reset suite on new disc
+            
+            $display_disc_name = !empty($disc_name) ? " &mdash; <span class='text-body-secondary fs-5'>" . htmlspecialchars($disc_name) . "</span>" : "";
+            
+            echo '<div class="mt-4 mb-3 pb-2 border-bottom border-secondary-subtle">';
+            echo '<h4 class="text-info-emphasis fw-bold mb-0"><i class="fa-duotone fa-compact-disc me-2"></i>Disc ' . $disc . $display_disc_name . '</h4>';
+            echo '</div>';
+            
+            echo '<div class="list-group list-group-flush bg-transparent">';
+            $is_list_open = true;
+        }
 
-            $legacy_tier = isset($track['legacyTier']) ? $track['legacyTier'] : null;
-            $lore_note = isset($track['loreNote']) ? $track['loreNote'] : '';
+        // ==========================================
+        // SUITE HEADER LOGIC
+        // ==========================================
+        if (!empty($suite_name) && $suite_name !== $current_suite) {
+            $current_suite = $suite_name;
+            echo '<div class="list-group-item bg-secondary-subtle border-start border-3 border-info py-2 mt-3 mb-1">';
+            echo '<h6 class="text-uppercase text-secondary mb-0 fw-bold"><i class="fa-solid fa-layer-group me-2"></i>' . htmlspecialchars($suite_name) . '</h6>';
+            echo '</div>';
+        } elseif (empty($suite_name) && $current_suite !== null) {
+            $current_suite = null; // We've exited a suite
+        }
 
-            $js_playlist[] = [
-                'title' => $track['title'],
-                'artist' => $album_data['albumArtist'],
-                'album' => $album_data['albumName'],
-                'src' => $player_src,
-                'artwork' => $album_art_url,
-                'lyrics' => $lyrics_url,
-                'legacyTier' => $legacy_tier,
-                'loreNote' => $lore_note
-            ];
+        // ==========================================
+        // TRACK ROW GENERATION
+        // ==========================================
+        $base_name = $track['fileName'];
+        $version_string = "?v=" . time(); 
+        $lyrics_url = $base_web_path . '/lyrics/' . $base_name . '.md' . $version_string;
+        $dl_web_mp3 = $base_web_path . '/web-mp3/' . $base_name . '.mp3' . $version_string;
+
+        // URL Routing based on Feature Flag
+        if ($vault_active) {
+            $player_src = $dl_web_mp3;
+            $gateway_base = "/engine-room/api/download.php?album=" . $archive_base_name . "&track=" . $base_name;
+            $dl_mp3 = $gateway_base . "&format=mp3";
+            $dl_ogg = $gateway_base . "&format=ogg";
+            $dl_wav = $gateway_base . "&format=wav";
+        } else {
+            $player_src = $dl_web_mp3;
+            $dl_mp3 = $base_web_path . '/vault/mp3/' . $base_name . '.mp3' . $version_string;
+            $dl_ogg = $base_web_path . '/vault/ogg/' . $base_name . '.ogg' . $version_string;
+            $dl_wav = $base_web_path . '/vault/wav/' . $base_name . '.wav'; 
+        }
+
+        $legacy_tier = isset($track['legacyTier']) ? $track['legacyTier'] : null;
+        $lore_note = isset($track['loreNote']) ? $track['loreNote'] : '';
+
+        // Add to JS Playlist
+        $js_playlist[] = [
+            'title' => $track['title'],
+            'artist' => $album_data['albumArtist'],
+            'album' => $album_data['albumName'],
+            'src' => $player_src,
+            'artwork' => $album_art_url,
+            'lyrics' => $lyrics_url,
+            'legacyTier' => $legacy_tier,
+            'loreNote' => $lore_note
+        ];
+
+        // Determine left-padding if track is inside a suite
+        $indent_class = !empty($current_suite) ? "ms-4 border-start-0 ps-3" : "";
         ?>
         
-        <div class="list-group-item bg-transparent border-secondary text-muted py-3 track-row" id="track-row-<?php echo $index; ?>">
+        <div class="list-group-item bg-transparent border-secondary text-muted py-3 track-row <?php echo $indent_class; ?>" id="track-row-<?php echo $index; ?>" data-isrc="<?php echo htmlspecialchars($isrc_code); ?>">
             <div class="row align-items-center">
                 <div class="col-md-7 mb-2 mb-md-0">
                     <div class="d-flex align-items-center flex-wrap">
@@ -275,6 +318,8 @@ $has_active_streams = !empty($stream_spotify_id) || !empty($stream_apple_id) || 
             </div>
         </div>
     <?php endforeach; ?>
+    
+    <?php if ($is_list_open) echo '</div>'; // Close final list-group ?>
 </div>
 
 <script>

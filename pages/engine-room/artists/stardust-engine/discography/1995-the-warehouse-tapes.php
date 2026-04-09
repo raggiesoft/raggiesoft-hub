@@ -6,9 +6,9 @@ $album_path_web = '/engine-room-records/artists/the-stardust-engine/1995-the-war
 // Streaming Services IDs
 // (Populate these with the unique platform IDs when DistroKid clears the release)
 $id_spotify = "2rKpE0vqHjB7awjOOVfNIE";
-$id_apple   = "";
-$id_amazon  = "";
-$id_youtube = "";
+$id_apple   = "890922755";
+$id_amazon  = "B0GW3LQT9L";
+$id_youtube = "OLAK5uy_nRjE2QuS--YtWs_8PSodnDgSnHnNRjbWk";
 ?>
 
 <div class="container py-5">
