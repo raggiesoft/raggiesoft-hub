@@ -3,12 +3,7 @@
 $pageTitle = "Neon Hearts (1989) - The Stardust Engine";
 $album_path_web = '/engine-room-records/artists/the-stardust-engine/1989-neon-hearts';
 
-// Streaming Services IDs
-// (Populate these with the unique platform IDs when DistroKid clears the release)
-$id_spotify = "w5XSjWEwvPTSQd9qAQkgG";
-$id_apple   = "1891383771";
-$id_amazon  = "B0GW96M9X2";
-$id_youtube = "OLAK5uy_nXmBKNOpa6GdEqNExjM9j6GDFhBqKLnAA&";
+
 ?>
 
 <div class="container py-5">

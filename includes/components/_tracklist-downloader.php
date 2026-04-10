@@ -1,7 +1,7 @@
 <?php
 /**
  * COMPONENT: _tracklist-downloader.php
- * VERSION: 9.7 (Multi-Disc & Suite Architecture)
+ * VERSION: 9.8 (Single Source of Truth DSP Integration)
  *
  * LICENSE:
  * The architecture and code of this file are licensed under the MIT License.
@@ -57,17 +57,45 @@ $real_release_date = isset($album_data['realReleaseDate']) ? $album_data['realRe
 $narrative_year = substr($narrative_date, 0, 4);
 $real_release_year = substr(trim($real_release_date), -4);
 $archive_base_name = get_archive_name($album_data['albumName'], $narrative_year);
+
+// --- DSP STREAMING IDS (SINGLE SOURCE OF TRUTH) ---
+$stream_spotify_id = '';
+$stream_apple_id   = '';
+$stream_amazon_id  = '';
+$stream_youtube_id = '';
+
+// Step up one directory from the album path to target the artist's root folder
+$artist_path_web = dirname($album_path_web);
+$albums_master_url = 'https://assets.raggiesoft.com' . $artist_path_web . '/albums.json?v=' . time();
+$albums_master_content = @file_get_contents($albums_master_url);
+
+if ($albums_master_content !== false) {
+    $master_data = json_decode($albums_master_content, true);
+    $current_slug = basename($album_path_web);
+    
+    foreach ($master_data as $era) {
+        if (!empty($era['albums'])) {
+            foreach ($era['albums'] as $master_album) {
+                // Match by explicitly defined folder, URL slug, or exact Album Name
+                $check_slug = isset($master_album['folder']) ? $master_album['folder'] : basename($master_album['url']);
+                
+                if ($check_slug === $current_slug || $master_album['title'] === $album_data['albumName']) {
+                    $stream_spotify_id = $master_album['spotifyId'] ?? '';
+                    $stream_apple_id   = $master_album['appleId'] ?? '';
+                    $stream_amazon_id  = $master_album['amazonId'] ?? '';
+                    $stream_youtube_id = $master_album['youtubeId'] ?? '';
+                    break 2; // Match found, break out of both loops
+                }
+            }
+        }
+    }
+}
+
+$has_active_streams = !empty($stream_spotify_id) || !empty($stream_apple_id) || !empty($stream_amazon_id) || !empty($stream_youtube_id);
 // ----------------------
 
 $album_art_url = $base_web_path . "/album-art.jpg?v=" . time();
 $js_playlist = []; 
-
-$stream_spotify_id = isset($id_spotify) ? $id_spotify : '';
-$stream_apple_id   = isset($id_apple) ? $id_apple : '';
-$stream_amazon_id  = isset($id_amazon) ? $id_amazon : '';
-$stream_youtube_id = isset($id_youtube) ? $id_youtube : '';
-
-$has_active_streams = !empty($stream_spotify_id) || !empty($stream_apple_id) || !empty($stream_amazon_id) || !empty($stream_youtube_id);
 ?>
 
 <div class="card bg-body-tertiary border-secondary-subtle mb-5 shadow-sm">
@@ -194,7 +222,7 @@ $has_active_streams = !empty($stream_spotify_id) || !empty($stream_apple_id) || 
             $current_disc = $disc;
             $current_suite = null; // Reset suite on new disc
             
-            $display_disc_name = !empty($disc_name) ? " &mdash; <span class='text-body-secondary fs-5'>" . htmlspecialchars($disc_name) . "</span>" : "";
+            $display_disc_name = !empty($disc_name) ? " — <span class='text-body-secondary fs-5'>" . htmlspecialchars($disc_name) . "</span>" : "";
             
             echo '<div class="mt-4 mb-3 pb-2 border-bottom border-secondary-subtle">';
             echo '<h4 class="text-info-emphasis fw-bold mb-0"><i class="fa-duotone fa-compact-disc me-2"></i>Disc ' . $disc . $display_disc_name . '</h4>';
@@ -253,7 +281,6 @@ $has_active_streams = !empty($stream_spotify_id) || !empty($stream_apple_id) || 
             'loreNote' => $lore_note
         ];
 
-        // Determine left-padding if track is inside a suite
         $indent_class = !empty($current_suite) ? "ms-4 border-start-0 ps-3" : "";
         ?>
         

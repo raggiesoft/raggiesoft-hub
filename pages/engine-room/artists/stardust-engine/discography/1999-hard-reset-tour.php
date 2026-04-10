@@ -3,12 +3,7 @@
 $pageTitle = "The Hard Reset Tour (1997-1998) - Engine Room Records";
 $album_path_web = '/engine-room-records/artists/the-stardust-engine/1999-hard-reset-tour';
 
-// Streaming Services IDs
-// (Populate these with the unique platform IDs when DistroKid clears the release)
-$id_spotify = "";
-$id_apple   = "";
-$id_amazon  = "";
-$id_youtube = "";
+
 ?>
 
 <div class="container py-5">
