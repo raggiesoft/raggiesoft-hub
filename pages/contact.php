@@ -110,8 +110,18 @@ $imagesJson = htmlspecialchars(json_encode($heroImages), ENT_QUOTES, 'UTF-8');
                             </a>
                         </div>
                     </div>
+                    <div class="text-center mt-3 d-flex justify-content-center">
+                        <div class="force-border-danger px-4 py-2 rounded-pill shadow-sm" style="background-color: rgba(220, 53, 69, 0.15) !important;">
+                            <p class="small force-text-light mb-0">
+                                <i class="fa-solid fa-ban me-2 force-text-danger"></i>
+                                <strong>Submission Policy:</strong> Engine Room Records is a closed private label. We do not sign artists and do not accept unsolicited demos. Unsolicited audio will be deleted.
+                            </p>
+                        </div>
+                    </div>
                 </div>
+                
             </div>
+            
 
             <div class="col-lg-4">
                 <div class="card force-glass-bg force-border-danger h-100 p-4 text-center rounded-4 shadow-lg">
