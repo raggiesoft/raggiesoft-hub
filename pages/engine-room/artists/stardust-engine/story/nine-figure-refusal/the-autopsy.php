@@ -249,7 +249,6 @@ $pageTitle = "The Autopsy: Holly Takes Control - Evidence Item #02";
                     <p>
                         Holly didn't answer. She didn't even look up from her keyboard. She simply let the panic ripple through the room, a terrifying variable that neither the executive nor his tech support could solve.
                     </p>
-
                     <p>
                         "It's not your offer," she said calmly, watching the wireless handshake complete. "I deleted your offer."
                     </p>
@@ -257,35 +256,44 @@ $pageTitle = "The Autopsy: Holly Takes Control - Evidence Item #02";
                         A new window appeared on the giant screen. It wasn't a spreadsheet. It was an email client.
                     </p>
                     <p>
-                        "We're here because last Tuesday, you bypassed my office. You sent an email directly to <code>tyler.wright@</code>."
+                        "We're here because last Tuesday, you decided to bypass our official channels. The only way to reach our company is through <code>inquiries@engineroom-records.com</code>. But you didn't want to talk to the label. You wanted to divide and conquer."
                     </p>
                     <p>
                         Frost paled. "I... I was simply reaching out to key stakeholders."
                     </p>
                     <p>
-                        "Tyler's email isn't public," Holly continued, her voice dangerously calm. "There is no 'admin@' catch-all. Evan has our <strong>Quantum Enterprise</strong> tenancy completely locked down. You can't search for us on <strong>Quantum Nexus</strong>. The server doesn't even confirm if a user exists."
+                        "You were reaching out to the men," Holly corrected, her voice dangerously calm. "You looked at our band roster, assumed the guys were in charge, and guessed an email address. You typed <code>tyler.wright@thestardustengine.com</code>."
                     </p>
                     <p>
                         She pointed at the screen, highlighting the email header.
                     </p>
                     <p>
-                        "That means you looked at my email—<code>holly.oconnell@</code>—and you guessed the pattern. You sat there typing names from our Band Bio page—<code>tyler.wright@</code>—until one didn't bounce back."
+                        "Tyler's email isn't public. In fact, that specific address doesn't even exist."
                     </p>
                     <p>
-                        She looked him dead in the eye.
+                        Frost squinted at the giant projection screen, his corporate arrogance momentarily replaced by genuine confusion. "If the address doesn't exist... how are you projecting my email on the wall?"
                     </p>
                     <p>
-                        "You assumed that because I'm a woman, I couldn't possibly be the decision maker. You assumed you had to hack your way through to 'the men' to get the real deal done."
+                        Holly smiled. It was a cold, terrifying expression.
+                    </p>
+                    <p>
+                        "Because Evan handles our network architecture. He configured our mail server so that any message sent to a fabricated alias doesn't just bounce. It gets trapped, flagged as an anomaly, and routed directly to our shared system log: <code>management@thestardustengine.com</code>."
+                    </p>
+                    <p>
+                        She leaned forward, locking eyes with him.
+                    </p>
+                    <p>
+                        "Which I read. Every morning. You didn't even bother to check if I was the decision maker. You just assumed you had to bypass the 'admin girl' to get the real deal done."
                     </p>
 
                     <div class="email-evidence shadow-sm my-4 rounded position-relative">
                         <div class="border-bottom border-secondary pb-2 mb-3">
                             <strong>From:</strong> Frost, Jameson (VP Acquisitions)<br>
-                            <strong>To:</strong> Wright, Tyler<br>
+                            <strong>To:</strong> tyler.wright@thestardustengine.com &lt;Unregistered Alias&gt;<br>
                             <strong>Subject:</strong> Let's talk business (Man to Man)
                         </div>
                         <p>Tyler,</p>
-                        <p>I tried reaching out to your "Manager" (Holly?), but I haven't heard back. I assume she's overwhelmed with the day-to-day admin work. These deals can be complex.</p>
+                        <p>I assume whoever handles your general <code>inquiries@</code> inbox is overwhelmed with day-to-day admin work, so I'm reaching out directly. These deals can be complex.</p>
                         <p>Look, I tried to message your band on The Sprawl (@StardustEngine), but whoever runs that account just kept sending me pictures of space? Very confusing branding. You should really tell your social media girl to check her DMs.</p>
                         <p>Anyway, we're ready to make a serious offer. We're talking generational wealth here. I think it's time we get the key players in a room and hash this out—you, me, and Ryan. We can handle the numbers, <strong>let the girls handle the merch.</strong></p>
                         <p>Let me know when you're in LA.</p>
@@ -300,7 +308,13 @@ $pageTitle = "The Autopsy: Holly Takes Control - Evidence Item #02";
                         The silence in the room was absolute. Even the junior analysts looked horrified.
                     </p>
                     <p>
-                        "That account on The Sprawl?" Holly asked, her voice dry. "It belongs to an astronomy student in New Zealand. He posts photos of nebulas. I didn't sue him for trademark infringement because I happen to like the pictures. The fact that you couldn't tell the difference between a global media brand and a hobbyist telescope feed is... concerning."
+                        "That account on The Sprawl?" Holly asked, the temperature in the room dropping. "It belongs to a nineteen-year-old astronomy student in New Zealand. He posts photos of nebulas from his backyard telescope. I haven't issued a cease-and-desist because I happen to like the pictures."
+                    </p>
+                    <p>
+                        She let the silence hang for a second, letting the sheer weight of his incompetence settle over the mahogany table.
+                    </p>
+                    <p>
+                        "My band has been touring internationally since 1987. We have sold millions of records. The fact that the Vice President of Acquisitions for a global media conglomerate couldn't tell the difference between a multi-platinum rock band and a teenager's telescope feed is... staggering."
                     </p>
                     <p>
                         She stood up and walked to the head of the table, pointing to the line in the email about "the girls."
