@@ -1,7 +1,7 @@
 <?php
 // Page data
-$pageTitle = "Space Rock: Essential Tracks (1987-1997) - The Stardust Engine";
-$album_path_web = '/engine-room-records/artists/the-stardust-engine/1997-space-rock-essential-tracks';
+$pageTitle = "Forger Nation War Chest - The Stardust Engine";
+$album_path_web = '/engine-room-records/artists/the-stardust-engine/1997-forger-nation-war-chest';
 
 ?>
 
@@ -11,17 +11,14 @@ $album_path_web = '/engine-room-records/artists/the-stardust-engine/1997-space-r
         
         <?php $props = [
             'path' => $album_path_web, 
-            'alt' => 'Space Rock: Essential Tracks (1987 - 1997) Album Art',
+            'alt' => 'Forger Nation War Chest Album Art',
             'variant' => 'pact' // A mix of past and present
         ]; include ROOT_PATH . '/includes/components/_album-art-header.php'; ?>
 
         <div class="col-md-7">
             <h1 class="display-3 fw-bold text-uppercase text-primary mb-0" style="font-family: 'Impact', sans-serif;">
-                Space Rock
+                Forger Nation War Chest
             </h1>
-            <p class="h4 text-warning fw-bold mb-3">
-                Essential Tracks (1987 &ndash; 1997)
-            </p>
             <p class="lead text-secondary">
                 The definitive chronicle of the band's escape velocity. A single-disc compilation capturing the true sound of the Engine.
             </p>
