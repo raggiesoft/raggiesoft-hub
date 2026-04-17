@@ -1,151 +1,112 @@
 <?php
 // includes/components/headers/engine-room/header-engine-room.php
-// The Corporate Navigation. Stark. Functional.
-// Used for: /engine-room/* pages
+// The Official Imprint Navigation. 
+// Balances Real-World B2B Operations with Narrative Archives.
 
 // 1. Determine Active States
 $uri = $_SERVER['REQUEST_URI'] ?? '';
 
 $isRoster = str_starts_with($uri, '/engine-room/artists');
-
-// Operations: Physical Assets, Systems, Security
-$isOperations = (
-    str_contains($uri, '/corporate/facilities') || 
-    str_contains($uri, '/corporate/fleet') || 
-    str_contains($uri, '/corporate/systems') || 
-    str_contains($uri, '/corporate/security')
-);
-
-// Governance: Structure, Leadership, HR, Compliance
-$isGovernance = (
-    str_contains($uri, '/corporate/structure') || 
-    str_contains($uri, '/corporate/leadership') || 
-    str_contains($uri, '/corporate/compliance') || 
-    str_contains($uri, '/corporate/careers') ||
-    str_contains($uri, '/corporate/financials')
-);
-
-// Archives: History, Legal Docs
-$isHistory = (
+$isLicensing = str_contains($uri, '/commercial-licensing');
+$isArchives = (
     str_starts_with($uri, '/engine-room/history') || 
-    str_contains($uri, '/acquisition-plan')
+    str_contains($uri, '/corporate') ||
+    str_contains($uri, '/story')
 );
 ?>
 
 <ul class="navbar-nav ms-auto mb-2 mb-md-0">
 
+  <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle <?php echo $isRoster ? 'active fw-bold' : ''; ?>" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+      <i class="fa-duotone fa-compact-disc me-2"></i>The Roster
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end rounded-0 border-secondary shadow-sm">
+      <li><a class="dropdown-item" href="/engine-room/artists">View Full Roster</a></li>
+      <li><hr class="dropdown-divider"></li>
+      <li><h6 class="dropdown-header text-uppercase text-primary fw-bold">Active Artists</h6></li>
+      <li>
+          <a class="dropdown-item" href="/engine-room/artists/stardust-engine">
+            <i class="fa-solid fa-rocket-launch me-2 text-primary"></i>The Stardust Engine
+          </a>
+      </li>
+      <li>
+          <a class="dropdown-item" href="/engine-room/artists/mirage">
+            <i class="fa-solid fa-waveform-lines me-2 text-danger"></i>Mirage
+          </a>
+      </li>
+      <li>
+          <a class="dropdown-item" href="/raggiesoft-books/aethel-saga">
+            <i class="fa-solid fa-sword me-2 text-warning"></i>Firelight
+          </a>
+      </li>
+    </ul>
+  </li>
+
   <li class="nav-item">
-    <a class="nav-link <?php echo $isRoster ? 'active' : ''; ?>" href="/engine-room/artists">
-        <i class="fa-duotone fa-users-viewfinder me-2"></i>The Roster
+    <a class="nav-link <?php echo $isLicensing ? 'active fw-bold text-primary' : ''; ?>" href="/engine-room/commercial-licensing">
+        <i class="fa-duotone fa-handshake me-2"></i>Commercial Licensing
     </a>
   </li>
 
   <li class="nav-item dropdown">
-    <a class="nav-link dropdown-toggle <?php echo $isOperations ? 'active' : ''; ?>" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-      <i class="fa-duotone fa-building-shield me-2"></i>Operations
+    <a class="nav-link dropdown-toggle <?php echo $isArchives ? 'active fw-bold' : ''; ?>" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+      <i class="fa-duotone fa-box-archive me-2"></i>The Archives
     </a>
     <ul class="dropdown-menu dropdown-menu-end rounded-0 border-secondary shadow-sm">
-      <li><h6 class="dropdown-header text-uppercase text-primary fw-bold">Infrastructure</h6></li>
-      <li>
-          <a class="dropdown-item" href="/engine-room/jessica-miller-center">
-            <i class="fa-solid fa-building me-2 text-secondary"></i>The Jessica Miller Center
-          </a>
-      </li>
-      <li>
-          <a class="dropdown-item" href="/engine-room/corporate/fleet">
-            <i class="fa-solid fa-truck-ramp-box me-2 text-secondary"></i>Logistics Fleet
-          </a>
-      </li>
-      <li>
-          <a class="dropdown-item" href="/engine-room/corporate/systems">
-            <i class="fa-solid fa-server me-2 text-secondary"></i>Systems Status
-          </a>
-      </li>
-
-      <li><hr class="dropdown-divider"></li>
-      <li><h6 class="dropdown-header text-uppercase text-danger fw-bold">Safety & Protocols</h6></li>
-      <li>
-          <a class="dropdown-item" href="/raggiesoft-books/encyclopedia/sensory-scale">
-            <i class="fa-solid fa-ear-listen me-2 text-danger"></i>Sensory Threat Scale
-          </a>
-      </li>
-      <li>
-          <a class="dropdown-item" href="/engine-room/corporate/security/protocol-safe-harbor">
-            <i class="fa-solid fa-person-to-door me-2 text-danger"></i>Protocol: Safe Harbor
-          </a>
-      </li>
-    </ul>
-  </li>
-
-  <li class="nav-item dropdown">
-    <a class="nav-link dropdown-toggle <?php echo $isGovernance ? 'active' : ''; ?>" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-      <i class="fa-duotone fa-scale-balanced me-2"></i>Governance
-    </a>
-    <ul class="dropdown-menu dropdown-menu-end rounded-0 border-secondary shadow-sm">
-      <li><h6 class="dropdown-header text-uppercase text-dark fw-bold">Organization</h6></li>
-      <li>
-          <a class="dropdown-item" href="/engine-room/corporate/structure">
-            <i class="fa-solid fa-sitemap me-2 text-secondary"></i>Entity Structure
-          </a>
-      </li>
-      <li>
-          <a class="dropdown-item" href="/engine-room/corporate/leadership">
-            <i class="fa-solid fa-user-tie me-2 text-secondary"></i>Board of Directors
-          </a>
-      </li>
-      <li>
-          <a class="dropdown-item" href="/engine-room/corporate/careers">
-            <i class="fa-solid fa-briefcase me-2 text-secondary"></i>Human Capital (Careers)
-          </a>
-      </li>
-
-      <li><hr class="dropdown-divider"></li>
-      <li><h6 class="dropdown-header text-uppercase text-success fw-bold">Transparency</h6></li>
-      <li>
-          <a class="dropdown-item" href="/engine-room/corporate/financials/transparency">
-             <i class="fa-solid fa-chart-pie me-2 text-success"></i>Financial Breakdown
-          </a>
-      </li>
-      <li>
-          <a class="dropdown-item" href="/engine-room/corporate/compliance/rider">
-             <i class="fa-solid fa-file-signature me-2 text-success"></i>Standard Rider (Public)
-          </a>
-      </li>
-    </ul>
-  </li>
-
-  <li class="nav-item dropdown">
-    <a class="nav-link dropdown-toggle <?php echo $isHistory ? 'active' : ''; ?>" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-      <i class="fa-duotone fa-box-archive me-2"></i>Archives
-    </a>
-    <ul class="dropdown-menu dropdown-menu-end rounded-0 border-secondary shadow-sm">
-      <li><h6 class="dropdown-header text-uppercase text-muted">Legal History</h6></li>
+      <li><h6 class="dropdown-header text-uppercase text-muted fw-bold">Company History</h6></li>
       <li>
           <a class="dropdown-item" href="/engine-room/history">
-            <i class="fa-solid fa-clock-rotate-left me-2"></i>Full Timeline
+            <i class="fa-solid fa-clock-rotate-left me-2 text-secondary"></i>Full Timeline
           </a>
       </li>
       <li>
+          <a class="dropdown-item" href="/about/engine-room">
+            <i class="fa-solid fa-industry me-2 text-secondary"></i>About The Fortress
+          </a>
+      </li>
+      <li><hr class="dropdown-divider"></li>
+      <li><h6 class="dropdown-header text-uppercase text-muted fw-bold">Declassified Case Files</h6></li>
+      <li>
           <a class="dropdown-item" href="/engine-room/artists/stardust-engine/story/friction">
-            <i class="fa-duotone fa-fire me-2 text-danger"></i>1992: Friction
+            <i class="fa-duotone fa-fire me-2 text-danger"></i>1992: The Friction Scandal
           </a>
       </li>
       <li>
           <a class="dropdown-item" href="/engine-room/artists/stardust-engine/story/nine-figure-refusal">
-            <i class="fa-duotone fa-handshake-slash me-2 text-success"></i>2018: The Refusal
-          </a>
-      </li>
-      <li><hr class="dropdown-divider"></li>
-      <li>
-          <a class="dropdown-item" href="/engine-room/corporate/acquisition-plan">
-             <i class="fa-solid fa-chess me-2"></i>The Acquisition Plan (2019)
+            <i class="fa-duotone fa-ban me-2 text-success"></i>2018: The $150M Refusal
           </a>
       </li>
     </ul>
   </li>
+
+  <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+      <i class="fa-duotone fa-envelope me-2"></i>Contact
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end rounded-0 border-secondary shadow-sm">
+      <li><h6 class="dropdown-header text-uppercase text-muted fw-bold">Official Channels</h6></li>
+      <li>
+          <a class="dropdown-item" href="mailto:licensing@engineroom-records.com">
+            <i class="fa-solid fa-file-audio me-2 text-primary"></i>Sync & Licensing
+          </a>
+      </li>
+      <li>
+          <a class="dropdown-item" href="mailto:legal@engineroom-records.com">
+            <i class="fa-solid fa-scale-balanced me-2 text-warning"></i>Legal & Copyright
+          </a>
+      </li>
+      <li>
+          <a class="dropdown-item" href="mailto:inquiries@engineroom-records.com">
+            <i class="fa-solid fa-circle-info me-2 text-secondary"></i>General Inquiries
+          </a>
+      </li>
+    </ul>
+  </li>
+
   <li class="nav-item border-start ms-2 ps-2">
-      <a class="nav-link" href="/">
-        <i class="fa-duotone fa-arrow-right-from-bracket me-2 text-secondary"></i><span class="text-secondary small">Exit to RaggieSoft</span>
+      <a class="nav-link text-body-secondary hover-text-primary" href="/">
+        <i class="fa-duotone fa-arrow-right-from-bracket me-2"></i><span class="small">Exit to RaggieSoft</span>
       </a>
   </li>
 
