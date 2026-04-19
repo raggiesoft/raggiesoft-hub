@@ -131,8 +131,8 @@ $not_found = ($is_artist_view && empty($artist_tracks));
                 <ul class="list-unstyled small mb-0">
                     <li class="mb-1"><strong>Operating Imprint:</strong> Engine Room Records</li>
                     <li class="mb-1"><strong>Owner / Parent Entity:</strong> Michael P. Ragsdale / RaggieSoft</li>
-                    <li class="mb-1"><strong>Official Web Domain:</strong> engineroom-records.com</li>
-                    <li class="mb-0"><strong>Primary Contact:</strong> dsp.operations@engineroom-records.com</li>
+                    <li class="mb-1"><strong>Official Web Domain:</strong> <a href="/engine-room">engineroom-records.com</a></li>
+                    <li class="mb-0"><strong>Primary Contact:</strong> <a href="mailto:dsp.operations@engineroom-records.com">dsp.operations@engineroom-records.com</a></li>
                 </ul>
             </div>
 
