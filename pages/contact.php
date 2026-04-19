@@ -105,8 +105,8 @@ $imagesJson = htmlspecialchars(json_encode($heroImages), ENT_QUOTES, 'UTF-8');
                             For <strong>Digital Service Providers</strong> (Spotify, Apple, Amazon) and artist profile verification support.
                         </p>
                         <div class="d-grid mt-auto">
-                            <a href="mailto:dsp.operations@engineroom-records.com?subject=Engine Room Records: DSP / Artist Profile Inquiry" class="btn btn-success btn-lg rounded-pill fw-bold shadow-glow force-text-light">
-                                <i class="fa-solid fa-envelope me-2"></i>Contact Label
+                            <a href="/engine-room/dsp-verification" class="btn btn-success btn-lg rounded-pill fw-bold shadow-glow force-text-light">
+                                <i class="fa-solid fa-shield-check me-2"></i>Access DSP Portal
                             </a>
                         </div>
                     </div>
@@ -119,7 +119,6 @@ $imagesJson = htmlspecialchars(json_encode($heroImages), ENT_QUOTES, 'UTF-8');
                         </div>
                     </div>
                 </div>
-                
             </div>
             
 

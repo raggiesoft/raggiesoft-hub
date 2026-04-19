@@ -27,5 +27,15 @@
     "view": "pages/engine-room/history/overview",
     "title": "Engine Room Records History | Company Timeline",
     "ogDescription": "An in-depth look at the founding, growth, and milestones of Engine Room Records from inception to present day."
+  },
+  "/engine-room/dsp-verification": {
+    "view": "pages/engine-room/dsp-verification",
+    "title": "DSP Verification Portal | Engine Room Records",
+    "siteName": "Engine Room Records DSP Verification",
+    "showSidebar": false,
+    "navbarBrandLink": "/engine-room/dsp-verification",
+    "headerMenu": "engine-room/header-dsp",
+    "footer": "engine-room/footer-dsp",
+    "ogDescription": "Official administrative portal for DSP identity and copyright verification."
   }
 }

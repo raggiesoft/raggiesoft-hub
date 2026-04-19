@@ -1,0 +1,42 @@
+{
+  "common": {
+    "site": "fractured-prisms",
+    "theme": "fractured-prisms",
+    "brandFont": ["Playfair Display", "serif"],
+    "siteName": "Fractured Prisms",
+    "headerMenu": "engine-room/artists/fractured-prisms/header-prisms",
+    "footer": "engine-room/artists/fractured-prisms/footer-prisms",
+    "showSidebar": true,
+    "sidebar": "engine-room/artists/fractured-prisms/sidebar-band",
+    "navbarBrandLogo": "https://assets.raggiesoft.com/engine-room-records/artists/fractured-prisms/band-logo.jpg",
+    "navbarBrandText": "Fractured Prisms",
+    "navbarBrandLink": "/engine-room/artists/fractured-prisms",
+    "ogImage": "https://assets.raggiesoft.com/engine-room-records/artists/fractured-prisms/1983-fractured-prisms/album-art.jpg"
+  },
+
+  "/engine-room/artists/fractured-prisms/band": {
+    "view": "pages/engine-room/artists/fractured-prisms/band/overview",
+    "title": "The Residents | Fractured Prisms",
+    "ogTitle": "The Residents - The Surviving Architects"
+  },
+  "/engine-room/artists/fractured-prisms/story": {
+    "view": "pages/engine-room/artists/fractured-prisms/story/overview",
+    "title": "The Lore | Fractured Prisms",
+    "ogTitle": "The Hollow Square - 1883 / 1983"
+  },
+  "/engine-room/artists/fractured-prisms/band/rhys-manning": {
+    "view": "pages/engine-room/artists/fractured-prisms/band/rhys-manning",
+    "title": "Rhys Manning | Fractured Prisms",
+    "ogTitle": "Rhys Manning - Synthesizers & Programming"
+  },
+  "/engine-room/artists/fractured-prisms/band/claire-manning": {
+    "view": "pages/engine-room/artists/fractured-prisms/band/claire-manning",
+    "title": "Claire Manning | Fractured Prisms",
+    "ogTitle": "Claire Manning - Lead Vocals & Flute"
+  },
+  "/engine-room/artists/fractured-prisms/band/the-missing-four": {
+    "view": "pages/engine-room/artists/fractured-prisms/band/the-missing-four",
+    "title": "The Missing Four | Fractured Prisms",
+    "ogTitle": "Gwen, Alistair, Julian, and Simon"
+  }
+}
