@@ -74,6 +74,9 @@ $not_found = ($is_artist_view && empty($artist_tracks));
     [data-bs-theme="dark"] .text-primary {
         color: #66b2ff !important; /* Accessible Blue */
     }
+    [data-bs-theme="dark"] .text-info {
+        color: #33d9b2 !important; 
+    }
     [data-bs-theme="dark"] .text-danger {
         color: #ff6b6b !important; /* Accessible Red */
     }
@@ -102,6 +105,11 @@ $not_found = ($is_artist_view && empty($artist_tracks));
         color: #e0e0e0 !important;
         border-color: #666 !important;
     }
+    [data-bs-theme="dark"] .alert-info {
+        background-color: #0b1a26 !important;
+        color: #e0e0e0 !important;
+        border-color: #1f4068 !important;
+    }
 </style>
 
 <div class="container py-5 dsp-portal shadow-lg my-4 rounded border border-secondary">
@@ -127,19 +135,20 @@ $not_found = ($is_artist_view && empty($artist_tracks));
 
         <div class="row mb-5">
             <div class="col-md-6">
-                <h3 class="h6 fw-bold text-uppercase border-bottom border-dark pb-2 mb-3">1. Label & Corporate Entity</h3>
+                <h3 class="h6 fw-bold text-uppercase border-bottom border-dark pb-2 mb-3">1. Corporate Entity & Management</h3>
                 <ul class="list-unstyled small mb-0">
                     <li class="mb-1"><strong>Operating Imprint:</strong> Engine Room Records</li>
-                    <li class="mb-1"><strong>Owner / Parent Entity:</strong> Michael P. Ragsdale / RaggieSoft</li>
+                    <li class="mb-1"><strong>Owner & Operator:</strong> Michael P. Ragsdale (Sole Proprietor / 1-Person Operation)</li>
+                    <li class="mb-1"><strong>Corporate Entity:</strong> RaggieSoft</li>
                     <li class="mb-1"><strong>Official Web Domain:</strong> <a href="/engine-room">engineroom-records.com</a></li>
                     <li class="mb-0"><strong>Primary Contact:</strong> <a href="mailto:dsp.operations@engineroom-records.com">dsp.operations@engineroom-records.com</a></li>
                 </ul>
             </div>
 
             <div class="col-md-6">
-                <h3 class="h6 fw-bold text-uppercase border-bottom border-dark pb-2 mb-3">2. Generative AI & Licensing Disclosure</h3>
+                <h3 class="h6 fw-bold text-uppercase border-bottom border-dark pb-2 mb-3">2. Production Workflow & AI Clearance</h3>
                 <div class="p-3 bg-light border border-secondary rounded small">
-                    <p class="mb-2"><strong>Platform:</strong> Suno AI (Commercial Premium License)</p>
+                    <p class="mb-2"><strong>Workflow:</strong> This catalog is entirely produced by Michael P. Ragsdale operating as a solo creator, utilizing <strong>Google Gemini</strong> for lyricism/editing and <strong>Suno AI (Commercial Premium License)</strong> for audio generation.</p>
                     <p class="mb-2"><strong>Rights Granted:</strong> Pursuant to the Suno Commercial Terms of Service, the creator (Michael P. Ragsdale / RaggieSoft) retains full, perpetual commercial exploitation rights, including but not limited to distribution, monetization, and synchronization.</p>
                     <p class="mb-0 text-danger fw-bold">No vocal cloning or deepfakes of real-world artists are utilized in this catalog.</p>
                 </div>
@@ -155,10 +164,11 @@ $not_found = ($is_artist_view && empty($artist_tracks));
 
         <?php else: ?>
             <div class="mb-4">
-                <h3 class="h6 fw-bold text-uppercase border-bottom border-dark pb-2 mb-3">3. Artist Profile Claim: <span class="text-primary"><?php echo htmlspecialchars($artist_persona); ?></span></h3>
-                <p class="small mb-4">
-                    If you are a representative of a Digital Service Provider (DSP) reviewing an artist profile claim, this page confirms that the user requesting access is the sole authorized administrator and rights-holder for the catalog below. All tracks are distributed via <strong>DistroKid</strong>.
-                </p>
+                <h3 class="h6 fw-bold text-uppercase border-bottom border-dark pb-2 mb-3">3. Artist Profile & Label Claim: <span class="text-primary"><?php echo htmlspecialchars($artist_persona); ?></span></h3>
+                
+                <div class="alert alert-info border-info p-3 small mb-4 shadow-sm">
+                    <strong><i class="fa-solid fa-circle-info me-1"></i> Notice to DSP Reviewers:</strong> Michael P. Ragsdale is the sole artist, direct manager, and label administrator for <strong><?php echo htmlspecialchars($artist_persona); ?></strong>. There are no external teams; the requesting user wears all hats. All tracks are distributed via <strong>DistroKid</strong> under the <em>Engine Room Records</em> label metadata.
+                </div>
 
                 <div class="table-responsive">
                     <table class="table table-bordered table-striped dsp-table">
