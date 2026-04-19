@@ -31,7 +31,7 @@ $not_found = ($is_artist_view && empty($artist_tracks));
 ?>
 
 <style>
-    /* Strictly Corporate / Legal Styling */
+    /* Strictly Corporate / Legal Styling - LIGHT MODE (Default) */
     .dsp-portal {
         background-color: #ffffff !important;
         color: #212529 !important;
@@ -54,9 +54,53 @@ $not_found = ($is_artist_view && empty($artist_tracks));
         font-size: 0.9rem;
         vertical-align: middle;
     }
-    /* Override Elara Dark Mode to keep this page looking like a legal document */
+
+    /* Override Elara Dark Mode - TRUE WCAG COMPLIANT DARK MODE */
     [data-bs-theme="dark"] .dsp-portal {
-        background-color: #e9ecef !important;
+        background-color: #121212 !important; /* Deep dark background */
+        color: #e0e0e0 !important; /* High contrast light text */
+        border-color: #444 !important;
+    }
+    [data-bs-theme="dark"] .dsp-header {
+        border-bottom-color: #666 !important; /* Visible border */
+    }
+    [data-bs-theme="dark"] .dsp-header h1 {
+        color: #ffffff !important;
+    }
+    /* Enhance contrast for utility classes against dark backgrounds */
+    [data-bs-theme="dark"] .text-muted {
+        color: #adb5bd !important; 
+    }
+    [data-bs-theme="dark"] .text-primary {
+        color: #66b2ff !important; /* Accessible Blue */
+    }
+    [data-bs-theme="dark"] .text-danger {
+        color: #ff6b6b !important; /* Accessible Red */
+    }
+    [data-bs-theme="dark"] .text-success {
+        color: #51cf66 !important; /* Accessible Green */
+    }
+    /* Invert the Corporate Table & Information Blocks */
+    [data-bs-theme="dark"] .dsp-table th {
+        background-color: #1a1a1a !important;
+        color: #ffffff !important;
+        border-bottom-color: #666 !important;
+        border-color: #444 !important;
+    }
+    [data-bs-theme="dark"] .dsp-table td, 
+    [data-bs-theme="dark"] .dsp-table {
+        border-color: #444 !important;
+        color: #e0e0e0 !important;
+    }
+    [data-bs-theme="dark"] .bg-light {
+        background-color: #1a1a1a !important; /* Replace Bootstrap bg-light */
+        border-color: #444 !important;
+        color: #e0e0e0 !important;
+    }
+    [data-bs-theme="dark"] .alert-secondary {
+        background-color: #1a1a1a !important;
+        color: #e0e0e0 !important;
+        border-color: #666 !important;
     }
 </style>
 
@@ -86,7 +130,7 @@ $not_found = ($is_artist_view && empty($artist_tracks));
                 <h3 class="h6 fw-bold text-uppercase border-bottom border-dark pb-2 mb-3">1. Label & Corporate Entity</h3>
                 <ul class="list-unstyled small mb-0">
                     <li class="mb-1"><strong>Operating Imprint:</strong> Engine Room Records</li>
-                    <li class="mb-1"><strong>Parent Company/Tenant:</strong> RaggieSoft</li>
+                    <li class="mb-1"><strong>Owner / Parent Entity:</strong> Michael P. Ragsdale / RaggieSoft</li>
                     <li class="mb-1"><strong>Official Web Domain:</strong> engineroom-records.com</li>
                     <li class="mb-0"><strong>Primary Contact:</strong> dsp.operations@engineroom-records.com</li>
                 </ul>
@@ -96,7 +140,7 @@ $not_found = ($is_artist_view && empty($artist_tracks));
                 <h3 class="h6 fw-bold text-uppercase border-bottom border-dark pb-2 mb-3">2. Generative AI & Licensing Disclosure</h3>
                 <div class="p-3 bg-light border border-secondary rounded small">
                     <p class="mb-2"><strong>Platform:</strong> Suno AI (Commercial Premium License)</p>
-                    <p class="mb-2"><strong>Rights Granted:</strong> Pursuant to the Suno Commercial Terms of Service, the creator (RaggieSoft) retains full, perpetual commercial exploitation rights, including but not limited to distribution, monetization, and synchronization.</p>
+                    <p class="mb-2"><strong>Rights Granted:</strong> Pursuant to the Suno Commercial Terms of Service, the creator (Michael P. Ragsdale / RaggieSoft) retains full, perpetual commercial exploitation rights, including but not limited to distribution, monetization, and synchronization.</p>
                     <p class="mb-0 text-danger fw-bold">No vocal cloning or deepfakes of real-world artists are utilized in this catalog.</p>
                 </div>
             </div>
@@ -120,27 +164,45 @@ $not_found = ($is_artist_view && empty($artist_tracks));
                     <table class="table table-bordered table-striped dsp-table">
                         <thead>
                             <tr>
-                                <th>ERR-ID</th>
-                                <th>ISRC</th>
-                                <th>Track Title</th>
-                                <th>Release Date</th>
-                                <th>AI Clearance</th>
+                                <th scope="col">ERR-ID</th>
+                                <th scope="col">ISRC</th>
+                                <th scope="col">Track Title</th>
+                                <th scope="col">Release Date</th>
+                                <th scope="col">AI Clearance</th>
                             </tr>
                         </thead>
                         <tbody>
                             <?php foreach ($artist_tracks as $track): ?>
+                                <?php 
+                                    // Determine if this is a web-only lore track
+                                    $is_vault = (isset($track['distributor']) && $track['distributor'] === 'Internal Vault');
+                                ?>
                                 <tr>
-                                    <td class="fw-bold"><?php echo htmlspecialchars($track['err_id'] ?? 'N/A'); ?></td>
+                                    <td class="fw-bold <?php echo $is_vault ? 'text-muted' : ''; ?>">
+                                        <?php echo htmlspecialchars($track['err_id'] ?? 'N/A'); ?>
+                                    </td>
                                     <td>
                                         <?php if (!empty($track['isrc']) && $track['isrc'] !== 'null'): ?>
                                             <?php echo htmlspecialchars($track['isrc']); ?>
+                                        <?php elseif ($is_vault): ?>
+                                            <span class="badge bg-secondary text-light border border-dark"><i class="fa-solid fa-lock me-1"></i>Vault Archive</span>
                                         <?php else: ?>
-                                            <span class="badge bg-warning text-dark">Pending</span>
+                                            <span class="badge bg-warning text-dark border border-dark">Pending</span>
                                         <?php endif; ?>
                                     </td>
-                                    <td><?php echo htmlspecialchars($track['trackTitle']); ?></td>
-                                    <td><?php echo htmlspecialchars($track['realReleaseDate']); ?></td>
-                                    <td class="small text-success fw-bold">Cleared (Commercial)</td>
+                                    <td class="<?php echo $is_vault ? 'text-muted' : ''; ?>">
+                                        <?php echo htmlspecialchars($track['trackTitle']); ?>
+                                    </td>
+                                    <td class="<?php echo $is_vault ? 'text-muted' : ''; ?>">
+                                        <?php echo htmlspecialchars($track['realReleaseDate']); ?>
+                                    </td>
+                                    <td>
+                                        <?php if ($is_vault): ?>
+                                            <span class="small text-muted fw-bold">Web Stream Only (No DSP)</span>
+                                        <?php else: ?>
+                                            <span class="small text-success fw-bold">Cleared (Commercial)</span>
+                                        <?php endif; ?>
+                                    </td>
                                 </tr>
                             <?php endforeach; ?>
                         </tbody>
