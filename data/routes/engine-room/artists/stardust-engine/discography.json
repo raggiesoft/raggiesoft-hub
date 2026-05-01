@@ -55,13 +55,11 @@
         "ogTitle": "The Warehouse Tapes - 1995 EP",
         "ogImage": "https://assets.raggiesoft.com/engine-room-records/artists/the-stardust-engine/1995-the-warehouse-tapes/social-preview.jpg"
     },
-    "/engine-room/artists/stardust-engine/discography/1995-the-warehouse-tapes/ad-astra": {
-        "view": "pages/engine-room/artists/stardust-engine/discography/1995-the-warehouse-tapes/ad-astra",
+    "/engine-room/artists/stardust-engine/discography/1996-escape-velocity-ad-astra": {
+        "view": "pages/engine-room/artists/stardust-engine/discography/1996-escape-velocity-ad-astra",
         "title": "Escape Velocity (Ad Astra) | Deep Dive",
         "ogTitle": "Ad Astra - The Progressive Rock Epic",
-        "ogImage": "https://assets.raggiesoft.com/engine-room-records/artists/the-stardust-engine/1995-the-warehouse-tapes/ad-astra/social-preview.jpg",
-        "site": "stardust-engine",
-        "theme": "ad-astra"
+        "ogImage": "https://assets.raggiesoft.com/engine-room-records/artists/the-stardust-engine/1996-ad-astra-single/social-preview.jpg"
     },
     "/engine-room/artists/stardust-engine/discography/1997-hard-reset": {
         "view": "pages/engine-room/artists/stardust-engine/discography/1997-hard-reset",
@@ -74,6 +72,12 @@
         "title": "Forger Nation War Chest (1997) | The Stardust Engine",
         "ogTitle": "Forger Nation War Chest - The 1997 Album",
         "ogImage": "https://assets.raggiesoft.com/engine-room-records/artists/the-stardust-engine/1997-forger-nation-war-chest/social-preview.jpg"
+    },
+    "/engine-room/artists/stardust-engine/discography/2001-midnight-drivers": {
+        "view": "pages/engine-room/artists/stardust-engine/discography/2001-midnight-drivers",
+        "title": "Midnight Drivers (2001) | The Stardust Engine",
+        "ogTitle": "Midnight Drivers - The 2001 Album",
+        "ogImage": "https://assets.raggiesoft.com/engine-room-records/artists/the-stardust-engine/2001-midnight-drivers/social-preview.jpg"
     },
     "/engine-room/artists/stardust-engine/discography/2007-lost-sounds": {
         "view": "pages/engine-room/artists/stardust-engine/discography/2007-lost-sounds",
