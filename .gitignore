@@ -1,56 +1,87 @@
 # =================================================
-# RAGGIESOFT HUB - GIT IGNORE PROTOCOLS
-# Context: PHP (Elara) + C# (Silas) + Web
+# 
+# RaggieSoft Assets - Git Ignore Rules
+# 
 # =================================================
+# 
+# --- Audio Source Files ---
+# These are the master files used for transcoding.
+*.wav
+*.aiff
+*.flac
+*.alac
+*.dsd
+*.dff
+*.dsf
 
-# --- 1. SECURITY (CRITICAL) ---
-# Never commit environment variables, keys, or secrets.
-.env
-.env.local
-*.pem
-*.key
+# --- Generated Audio Files ---
+# These are the output files created by the transcoder script.
+*.mp3
+*.ogg
+*.aac
+*.m4a
+*.wma
 
-# --- 2. C# / .NET (Silas) ---
-# Ignore build output (binaries) and intermediate files.
-# The pattern [Bb]in/ catches both "bin/" and "Bin/" case variations.
-_sysops/Silas/[Bb]in/
-_sysops/Silas/[Oo]bj/
+# --- High-Resolution Design & Art Files ---
+# Raw Photoshop/Illustrator files and uncompressed images.
+*.psd
+*.psb
+*.ai
+*.eps
+*.tiff
+*.tif
+*.raw
+*.cr2
+*.dng
 
-# --- 3. PHP / COMPOSER ---
-# Ignore 3rd party libraries. We only commit composer.json/.lock
-vendor/
-composer.phar
+# --- Video & Motion Graphics ---
+# Promotional videos, music videos, and raw renders.
+*.mp4
+*.mov
+*.avi
+*.mkv
+*.webm
+*.prproj
+*.aep
 
-# --- 4. WEB / JAVASCRIPT ---
-# If you use Node/NPM for frontend assets later
-node_modules/
-npm-debug.log
+# --- Archives & Compressed Files ---
+# These are the large downloadable packages for users.
+*.7z
+*.zip
+*.tar.gz
+*.rar
+*.gz
 
-# --- 5. IDE & EDITOR SETTINGS ---
-# Personal preference files that shouldn't be shared.
-.idea/
-.vscode/
-*.swp
-*.suo
-*.user
-.vs/
+# --- Disc Image & Binary Data ---
+# These formats are often large and not needed in version control.
+*.iso
+*.bin
+*.cue
+*.img
+*.dmg
 
-# --- 6. OS GENERATED FILES ---
-# Garbage left by operating systems.
+# --- OS Generated Files ---
 .DS_Store
 Thumbs.db
 Desktop.ini
 ehthumbs.db
 
-# --- 7. LARGE MEDIA SAFEGUARDS ---
-# The Hub is for code. Media goes in raggiesoft-assets.
-# These rules prevent accidental commits of heavy files to the Code repo.
-*.zip
-*.tar.gz
-*.rar
-*.iso
-*.mp3
-*.wav
-*.flac
-*.mp4
-*.mov
+# --- IDE / Editor Configs ---
+.vscode/
+.idea/
+*.swp
+
+# --- WORKSPACE SECURITY ---
+# Ignore the real keys
+_workspace/build-tools/rclone/rclone.conf
+_workspace/build-tools/ssh_keys.txt
+
+# Do NOT ignore the example config
+!_workspace/build-tools/rclone/rclone.conf.example
+
+# --- WORKSPACE & TOOLS ---
+# Ignore all binaries and configs in build-tools
+_workspace/build-tools/
+
+# Exception: Keep the example config so we know where to put keys
+!_workspace/build-tools/rclone/rclone.conf.example
