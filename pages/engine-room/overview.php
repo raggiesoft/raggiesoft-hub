@@ -1,7 +1,7 @@
 <?php
 // pages/engine-room/overview.php
 // The Front Door of Engine Room Records.
-// Focus: Audio Validation, Roster Navigation, B2B Licensing, and Entity SEO.
+// Focus: Music First, Output, B2B Licensing, and Entity SEO.
 
 $pageTitle = "Engine Room Records - Independent Imprint";
 ?>
@@ -25,7 +25,7 @@ $pageTitle = "Engine Room Records - Independent Imprint";
     "name": "RaggieSoft",
     "url": "https://raggiesoft.com"
   },
-  "genre": ["Rock", "Synth-Pop", "Symphonic Rock", "Alternative Rock"],
+  "genre": ["Alternative Rock", "Progressive Rock", "Synth-Pop", "Symphonic Rock"],
   "sameAs": [
     "https://raggiesoft.com/engine-room"
   ]
@@ -33,202 +33,196 @@ $pageTitle = "Engine Room Records - Independent Imprint";
 </script>
 
 <style>
-    /* ENGINE ROOM BRANDING: Industrial, Heavy, Stark */
-    .engine-hero {
-        background: linear-gradient(rgba(13, 17, 23, 0.95), rgba(13, 17, 23, 0.85)), 
-                    url('https://assets.raggiesoft.com/stardust-engine/images/studio-rack.jpg');
-        background-size: cover;
-        background-position: center;
-        border-bottom: 4px solid var(--bs-danger);
+    /* Premium Indie Label Aesthetics */
+    .hero-section {
+        background-color: #050505;
+        background-image: radial-gradient(circle at 70% 50%, #1a1a1a 0%, #050505 80%);
+        border-bottom: 1px solid #333;
+        min-height: 70vh;
+        display: flex;
+        align-items: center;
     }
     
+    .label-ethos {
+        font-family: 'Playfair Display', serif;
+        font-style: italic;
+        color: #888;
+        font-size: 1.25rem;
+    }
+
+    .album-cover-showcase {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        border: 1px solid #333;
+    }
+    .album-cover-showcase:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 15px 30px rgba(0,0,0,0.5);
+        border-color: #666;
+    }
+
+    .b2b-section {
+        background-color: #0a0a0a;
+        border-top: 1px solid #222;
+        border-bottom: 1px solid #222;
+    }
+
     .text-stenciled {
         font-family: 'Impact', 'Arial Black', sans-serif;
         text-transform: uppercase;
         letter-spacing: 2px;
     }
-
-    /* Filters for adapting logos in different themes */
-    .logo-invert {
-        filter: invert(1) grayscale(100%) brightness(200%);
-    }
-
-    /* Roster Card Hover Effects */
-    .roster-card {
-        transition: transform 0.2s ease, border-color 0.2s ease;
-    }
-    @media (prefers-reduced-motion: no-preference) {
-        .roster-card:hover {
-            transform: translateY(-5px);
-            border-color: var(--bs-danger) !important;
-        }
-    }
 </style>
 
-<div class="engine-hero py-5 d-flex align-items-center" style="min-height: 65vh;" data-bs-theme="dark">
-    <div class="container py-4">
+<!-- 1. THE HERO (Music First) -->
+<div class="hero-section py-5" data-bs-theme="dark">
+    <div class="container py-5">
         <div class="row align-items-center g-5">
-            
             <div class="col-lg-6 order-2 order-lg-1 text-center text-lg-start">
-                <img src="https://assets.raggiesoft.com/engine-room-records/images/logos/engine-room-records-logo.png" 
-                     alt="Engine Room Records Logo" 
-                     class="img-fluid mb-4 logo-invert" 
-                     style="max-width: 200px;">
-
-                <h1 class="display-4 fw-bold text-stenciled text-body-emphasis mb-3">
-                    Loud. Raw. Real.
-                </h1>
+                <div class="mb-4 d-inline-block border border-secondary px-3 py-1 rounded small text-uppercase tracking-widest text-muted fw-bold">
+                    Latest Release
+                </div>
                 
-                <p class="lead text-body mb-4">
-                    The exclusive home of The Stardust Engine, The Paper Wall, and Firelight. 100% independent.
+                <h1 class="display-3 fw-bold text-white mb-2" style="letter-spacing: -1px;">Hard Reset</h1>
+                <h2 class="h4 text-white-50 mb-4 text-uppercase">The Stardust Engine</h2>
+                
+                <p class="lead text-secondary mb-5 pe-lg-4">
+                    The defining space-rock opus. Featuring "Moon 1 (Tidal Lock)" and "Escape Velocity (Ad Astra)." High-fidelity masters now available globally.
                 </p>
-
-                <div class="p-4 bg-black bg-opacity-50 border border-secondary rounded shadow-sm">
-                    <span class="badge bg-danger text-uppercase letter-spacing-1 mb-2 px-2 py-1">Featured Release</span>
-                    <h2 class="h4 fw-bold text-body-emphasis mb-1">Hard Reset</h2>
-                    <p class="small text-body-secondary mb-3">The Stardust Engine &bull; UPC: 825486792528</p>
-                    
-                    <div class="d-flex flex-wrap gap-2 justify-content-center justify-content-lg-start">
-                        <a href="/engine-room/artists/stardust-engine/discography/1997-hard-reset" class="btn btn-danger text-uppercase fw-bold px-4">
-                            <i class="fa-duotone fa-compact-disc me-2" aria-hidden="true"></i>View Album Details
-                        </a>
-                        <a href="/engine-room/artists/stardust-engine/discography" class="btn btn-outline-light text-uppercase fw-bold px-4">
-                            <i class="fa-duotone fa-layer-group me-2" aria-hidden="true"></i>Full Catalog
-                        </a>
-                    </div>
+                
+                <div class="d-flex flex-wrap gap-3 justify-content-center justify-content-lg-start">
+                    <a href="/engine-room/artists/stardust-engine/discography/1997-hard-reset" class="btn btn-light btn-lg text-uppercase fw-bold rounded-pill px-4">
+                        <i class="fa-brands fa-spotify me-2"></i>Stream Now
+                    </a>
+                    <a href="/engine-room/artists/stardust-engine/discography" class="btn btn-outline-secondary btn-lg text-uppercase fw-bold rounded-pill px-4">
+                        View Details
+                    </a>
                 </div>
             </div>
-
+            
             <div class="col-lg-6 order-1 order-lg-2 text-center">
-                <img src="https://assets.raggiesoft.com/engine-room-records/artists/the-stardust-engine/1997-hard-reset/album-art.jpg" 
-                     alt="Hard Reset Album Cover" 
-                     class="img-fluid rounded shadow-lg border border-secondary" 
-                     style="max-width: 400px; width: 100%;">
-            </div>
-
-        </div>
-    </div>
-</div>
-
-<div class="bg-body-tertiary border-bottom border-secondary-subtle py-4">
-    <div class="container">
-        <div class="alert alert-dark border-danger border-2 d-flex align-items-center shadow-sm mb-0" role="alert">
-            <i class="fa-duotone fa-shield-xmark fa-2x text-danger me-3" aria-hidden="true"></i>
-            <div>
-                <h2 class="alert-heading h6 fw-bold mb-1 text-uppercase text-danger">Restricted Roster Policy</h2>
-                <p class="mb-0 small text-body-secondary">
-                    Engine Room Records is a closed, private imprint. <strong>We do not sign outside talent and do not accept unsolicited demos.</strong> Any unsolicited audio links or attachments sent to our servers are automatically deleted unread by our exchange transport rules.
-                </p>
+                <a href="/engine-room/artists/stardust-engine/discography/1997-hard-reset">
+                    <img src="https://assets.raggiesoft.com/engine-room-records/artists/the-stardust-engine/1997-hard-reset/album-art.jpg" 
+                         alt="Hard Reset Album Cover" 
+                         class="img-fluid shadow-lg album-cover-showcase" 
+                         style="max-width: 450px; width: 100%;">
+                </a>
             </div>
         </div>
     </div>
 </div>
 
-<div class="container py-5">
-    <div class="text-center mb-5">
-        <h2 class="display-6 fw-bold text-uppercase text-stenciled text-body-emphasis border-bottom border-secondary-subtle d-inline-block pb-2">
-            Active Roster
-        </h2>
-    </div>
-
-    <div class="row g-4 justify-content-center">
-        
-        <div class="col-md-6 col-lg-4">
-            <a href="/engine-room/artists/stardust-engine" class="text-decoration-none">
-                <div class="card h-100 bg-dark roster-card shadow-sm border-secondary" data-bs-theme="dark">
-                    <div class="card-body text-center p-4 d-flex flex-column align-items-center">
-                        <div class="bg-black rounded-circle p-3 mb-3 border border-secondary" style="width: 100px; height: 100px; display: flex; align-items: center; justify-content: center;">
-                            <img src="https://assets.raggiesoft.com/engine-room-records/artists/the-stardust-engine/band-logo.png" 
-                                 alt="The Stardust Engine Logo" 
-                                 class="img-fluid" style="max-height: 60px;">
-                        </div>
-                        <h3 class="h5 fw-bold text-body-emphasis text-uppercase mb-2">The Stardust Engine</h3>
-                        <p class="small text-body-secondary mb-0">
-                            80s Synth-Rock / Progressive Arena Rock. The founding artist of the Engine Room.
-                        </p>
-                    </div>
-                </div>
-            </a>
-        </div>
-
-        <div class="col-md-6 col-lg-4">
-            <a href="/raggiesoft-books/aethel-saga" class="text-decoration-none">
-                <div class="card h-100 bg-dark roster-card shadow-sm border-warning" data-bs-theme="dark">
-                    <div class="card-body text-center p-4 d-flex flex-column align-items-center">
-                        <div class="bg-black rounded-circle p-3 mb-3 border border-warning" style="width: 100px; height: 100px; display: flex; align-items: center; justify-content: center;">
-                            <img src="https://assets.raggiesoft.com/engine-room-records/artists/firelight/band-logo.png" 
-                                 alt="Firelight Logo" 
-                                 class="img-fluid" style="max-height: 60px;">
-                        </div>
-                        <h3 class="h5 fw-bold text-warning text-uppercase mb-2">Firelight</h3>
-                        <p class="small text-body-secondary mb-0">
-                            Symphonic Rock. The official musical voice and composers of the <em>Aethel Saga</em>.
-                        </p>
-                    </div>
-                </div>
-            </a>
-        </div>
-
-        <div class="col-md-6 col-lg-4">
-            <a href="/engine-room/artists/the-paper-wall" class="text-decoration-none">
-                <div class="card h-100 bg-dark roster-card shadow-sm border-primary" data-bs-theme="dark">
-                    <div class="card-body text-center p-4 d-flex flex-column align-items-center">
-                        <div class="bg-black rounded-circle p-3 mb-3 border border-primary" style="width: 100px; height: 100px; display: flex; align-items: center; justify-content: center;">
-                            <i class="fa-duotone fa-waveform-lines fa-3x text-primary opacity-75"></i>
-                        </div>
-                        <h3 class="h5 fw-bold text-primary text-uppercase mb-2">The Paper Wall</h3>
-                        <p class="small text-body-secondary mb-0">
-                            Alternative Rock / Post-Grunge. The architects of <em>Static & Silence</em>.
-                        </p>
-                    </div>
-                </div>
-            </a>
-        </div>
-
-    </div>
-
-    <div class="text-center mt-4">
-        <a href="/engine-room/artists" class="btn btn-outline-secondary rounded-pill px-4 font-monospace small text-uppercase">
-            <i class="fa-duotone fa-folder-open me-2" aria-hidden="true"></i>View Full Historical Roster
-        </a>
-    </div>
-</div>
-
-<div class="bg-body-secondary border-top border-bottom border-secondary-subtle py-5">
-    <div class="container text-center py-4">
-        <div class="mb-3">
-            <i class="fa-duotone fa-briefcase fa-3x text-primary opacity-75" aria-hidden="true"></i>
-        </div>
-        <h2 class="display-6 fw-bold text-uppercase text-stenciled text-body-emphasis mb-3">
-            B2B & Commercial Licensing
-        </h2>
-        <p class="lead text-body-secondary mx-auto mb-4" style="max-width: 700px;">
-            Engine Room Records controls 100% of the Master and Publishing rights for our entire active catalog. We offer rapid, one-stop clearance for <strong>Sync Placements</strong> and <strong>Direct Public Performance</strong> licenses.
+<!-- 2. THE ETHOS & ROSTER LINK -->
+<div class="bg-body py-5 border-bottom border-secondary-subtle">
+    <div class="container py-4 text-center">
+        <img src="https://assets.raggiesoft.com/engine-room-records/images/logos/engine-room-records-logo.png" 
+             alt="Engine Room Records Logo" 
+             class="img-fluid mb-4" 
+             style="max-width: 120px; filter: invert(1) grayscale(100%); mix-blend-mode: multiply;" data-bs-theme-filter="invert">
+             
+        <p class="label-ethos mb-4 mx-auto" style="max-width: 700px;">
+            "Engine Room Records is a private creative collective and independent imprint. We are dedicated exclusively to the development, production, and global distribution of our in-house roster."
         </p>
-        <a href="/engine-room/commercial-licensing" class="btn btn-primary btn-lg text-uppercase fw-bold letter-spacing-1 px-5 rounded-pill shadow-sm">
-            <i class="fa-duotone fa-handshake me-2" aria-hidden="true"></i>Access Licensing Portal
-        </a>
+        
+        <div class="mt-5">
+            <h3 class="h6 text-uppercase fw-bold text-muted letter-spacing-2 mb-3">Featuring Works By</h3>
+            <div class="d-flex flex-wrap justify-content-center gap-4 mb-4 fw-bold">
+                <span class="text-body-emphasis">The Stardust Engine</span>
+                <span class="text-muted">&bull;</span>
+                <span class="text-body-emphasis">Fractured Prisms</span>
+                <span class="text-muted">&bull;</span>
+                <span class="text-body-emphasis">The Paper Wall</span>
+                <span class="text-muted">&bull;</span>
+                <span class="text-body-emphasis">Firelight</span>
+            </div>
+            
+            <a href="/engine-room/artists" class="btn btn-dark text-uppercase fw-bold px-5 rounded-0 shadow-sm">
+                Explore the Full Roster
+            </a>
+        </div>
     </div>
 </div>
 
-<div id="hq-status" class="py-5 bg-body">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-lg-10">
-                <div class="alert alert-light border border-secondary shadow-sm d-flex align-items-start" role="alert">
-                    <i class="fa-duotone fa-robot-astromech fa-2x me-3 mt-1 text-info" aria-hidden="true"></i>
-                    <div>
-                        <h2 class="alert-heading h6 fw-bold mb-2 text-uppercase letter-spacing-1 text-body-emphasis">Transparency Notice</h2>
-                        <p class="small text-body-secondary mb-2">
-                            <strong>Engine Room Records</strong> serves as the real-world organizational publisher for Michael Ragsdale's generative music portfolio. All audio tracks are generated using a commercial-tier Suno Premium license, ensuring full commercial clearance. Lore, personas, and lyrics are co-written by human direction and Gemini.
-                        </p>
-                        <p class="small text-body-secondary mb-0">
-                            To maintain the immersion of our fictional universes while complying with digital distribution standards, all catalog entries feature a fictional <em>Narrative Era</em> alongside their true <em>Real-World Release Date</em>.
-                            <a href="/about/ai-disclaimer" class="alert-link fw-bold text-info text-decoration-none border-bottom border-info ms-1">Read the full AI Disclaimer.</a>
-                        </p>
+<!-- 3. RECENT PRESSINGS (The Output) -->
+<div class="bg-body-tertiary py-5 border-bottom border-secondary-subtle">
+    <div class="container py-4">
+        <div class="d-flex justify-content-between align-items-end mb-4">
+            <h2 class="h4 fw-bold text-uppercase text-stenciled mb-0">Recent Pressings</h2>
+            <a href="/engine-room/artists" class="text-decoration-none text-uppercase small fw-bold text-muted">View Catalog <i class="fa-solid fa-arrow-right ms-1"></i></a>
+        </div>
+        
+        <div class="row g-4">
+            <!-- Hard Reset -->
+            <div class="col-6 col-md-3">
+                <a href="/engine-room/artists/stardust-engine/discography/1997-hard-reset" class="text-decoration-none">
+                    <img src="https://assets.raggiesoft.com/engine-room-records/artists/the-stardust-engine/1997-hard-reset/album-art.jpg" class="img-fluid mb-2 album-cover-showcase" alt="Hard Reset">
+                    <h6 class="text-body-emphasis fw-bold mb-0 text-truncate">Hard Reset</h6>
+                    <small class="text-muted text-uppercase">The Stardust Engine</small>
+                </a>
+            </div>
+            <!-- Electric Color -->
+            <div class="col-6 col-md-3">
+                <a href="/engine-room/artists/stardust-engine/discography/1988-electric-color" class="text-decoration-none">
+                    <img src="https://assets.raggiesoft.com/engine-room-records/artists/the-stardust-engine/1988-electric-color/album-art.jpg" class="img-fluid mb-2 album-cover-showcase bg-dark" alt="Electric Color">
+                    <h6 class="text-body-emphasis fw-bold mb-0 text-truncate">Electric Color</h6>
+                    <small class="text-muted text-uppercase">The Stardust Engine</small>
+                </a>
+            </div>
+            <!-- Static & Silence (The Paper Wall) -->
+            <div class="col-6 col-md-3">
+                <a href="/engine-room/artists/the-paper-wall" class="text-decoration-none">
+                    <div class="ratio ratio-1x1 bg-dark mb-2 album-cover-showcase d-flex align-items-center justify-content-center border border-secondary">
+                        <i class="fa-duotone fa-waveform-lines fa-3x text-secondary opacity-50"></i>
                     </div>
-                </div>
+                    <h6 class="text-body-emphasis fw-bold mb-0 text-truncate">Static & Silence</h6>
+                    <small class="text-muted text-uppercase">The Paper Wall</small>
+                </a>
+            </div>
+            <!-- Origin / Fractured Prisms placeholder -->
+            <div class="col-6 col-md-3">
+                <a href="/engine-room/artists/fractured-prisms" class="text-decoration-none">
+                    <div class="ratio ratio-1x1 bg-dark mb-2 album-cover-showcase d-flex align-items-center justify-content-center border border-secondary">
+                        <i class="fa-duotone fa-compact-disc fa-3x text-secondary opacity-50"></i>
+                    </div>
+                    <h6 class="text-body-emphasis fw-bold mb-0 text-truncate">Kaleidoscope Sun</h6>
+                    <small class="text-muted text-uppercase">Fractured Prisms</small>
+                </a>
             </div>
         </div>
     </div>
 </div>
+
+<!-- 4. B2B LICENSING (The Business) -->
+<div class="b2b-section py-5 text-white" data-bs-theme="dark">
+    <div class="container py-4 text-center">
+        <i class="fa-duotone fa-file-contract fa-3x text-secondary mb-3"></i>
+        <h2 class="display-6 fw-bold text-uppercase text-stenciled mb-3">One-Stop Clearance</h2>
+        <p class="lead text-secondary mx-auto mb-4" style="max-width: 650px;">
+            Engine Room Records controls 100% of the Master and Publishing rights for our entire active catalog. We offer rapid, direct clearance for Sync Placements and Commercial Broadcasts.
+        </p>
+        <a href="/engine-room/commercial-licensing" class="btn btn-outline-light btn-lg text-uppercase fw-bold letter-spacing-1 px-5 rounded-0">
+            Access Licensing Portal
+        </a>
+    </div>
+</div>
+
+<!-- 5. TRANSPARENCY & LEGAL FOOTER -->
+<div class="py-4 bg-body text-center">
+    <div class="container">
+        <p class="small text-muted mb-0" style="max-width: 800px; margin: 0 auto;">
+            <strong>Transparency Notice:</strong> Engine Room Records serves as the real-world publishing imprint for Michael P. Ragsdale's generative music portfolio. Audio is generated via Suno AI (Commercial Premium License). Lore, personas, and lyrics are human-directed with AI assistance. To preserve immersion, catalog entries feature narrative release eras alongside actual DSP data. 
+            <a href="/about/ai-disclaimer" class="text-decoration-none text-body fw-bold border-bottom border-secondary ms-1">Read the full legal disclaimer.</a>
+        </p>
+    </div>
+</div>
+
+<script>
+    // Theme logic for the logo invert if needed
+    document.addEventListener('DOMContentLoaded', () => {
+        const isDark = document.documentElement.getAttribute('data-bs-theme') === 'dark';
+        const logo = document.querySelector('[data-bs-theme-filter="invert"]');
+        if (logo && isDark) {
+            logo.style.filter = 'invert(1) grayscale(100%) brightness(200%)';
+            logo.style.mixBlendMode = 'screen';
+        }
+    });
+</script>
