@@ -161,8 +161,8 @@ $pageTitle = "Engine Room Records - Independent Imprint";
             </div>
             <!-- Electric Color -->
             <div class="col-6 col-md-3">
-                <a href="/engine-room/artists/stardust-engine/discography/1988-electric-color" class="text-decoration-none">
-                    <img src="https://assets.raggiesoft.com/engine-room-records/artists/the-stardust-engine/1988-electric-color/album-art.jpg" class="img-fluid mb-2 album-cover-showcase bg-dark" alt="Electric Color">
+                <a href="/engine-room/artists/stardust-engine/discography/1987-electric-color" class="text-decoration-none">
+                    <img src="https://assets.raggiesoft.com/engine-room-records/artists/the-stardust-engine/1987-electric-color/album-art.jpg" class="img-fluid mb-2 album-cover-showcase bg-dark" alt="Electric Color">
                     <h6 class="text-body-emphasis fw-bold mb-0 text-truncate">Electric Color</h6>
                     <small class="text-muted text-uppercase">The Stardust Engine</small>
                 </a>
