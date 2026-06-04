@@ -91,10 +91,10 @@ $pageTitle = "Engine Room Records - Independent Imprint";
                 
                 <div class="d-flex flex-wrap gap-3 justify-content-center justify-content-lg-start">
                     <a href="/engine-room/artists/stardust-engine/discography/1997-hard-reset" class="btn btn-light btn-lg text-uppercase fw-bold rounded-pill px-4">
-                        <i class="fa-brands fa-spotify me-2"></i>Stream Now
+                        <i class="fa-duotone fa-play me-2"></i>Stream Now
                     </a>
                     <a href="/engine-room/artists/stardust-engine/discography" class="btn btn-outline-secondary btn-lg text-uppercase fw-bold rounded-pill px-4">
-                        View Details
+                        View Discography
                     </a>
                 </div>
             </div>
