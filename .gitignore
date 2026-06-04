@@ -71,6 +71,11 @@ ehthumbs.db
 .idea/
 *.swp
 
+# --- Narrative & Reference Assets ---
+# Ignore ALL source/reference images inside ANY book directory
+_workspace/books/*/images/source/
+*upscayl*.png
+
 # --- WORKSPACE SECURITY ---
 # Ignore the real keys
 _workspace/build-tools/rclone/rclone.conf
