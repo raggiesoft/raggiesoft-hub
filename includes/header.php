@@ -1,7 +1,7 @@
 <?php
 // includes/header.php
-// v7.1.2 - RaggieSoft Production
-// Updated: Added Animated Hamburger Menu (The "X" Transform)
+// v7.2.0 - RaggieSoft Production (SEO Schema Engine Active)
+// Updated: Added Animated Hamburger Menu & JSON-LD Structured Data
 
 // 1. Resolve Context
 $site  = $currentSite ?? 'raggiesoft';
@@ -87,6 +87,97 @@ if (isset($customPageAssets) && is_array($customPageAssets)) {
 
     <link rel="canonical" href="<?php echo htmlspecialchars($ogUrl ?? "https://" . $_SERVER['HTTP_HOST'] . parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH)); ?>">
 
+    <?php
+    // Default Schema for standard pages
+    $schema = [
+        "@context" => "https://schema.org",
+        "@type" => "WebPage",
+        "name" => $pageTitle ?? 'RaggieSoft',
+        "url" => $ogUrl ?? "https://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]"
+    ];
+
+    // 1. MUSIC GROUP (Band Profile Pages)
+    if (isset($pageConfig['schemaType']) && $pageConfig['schemaType'] === 'MusicGroup') {
+        $schema = [
+            "@context" => "https://schema.org",
+            "@type" => "MusicGroup",
+            "name" => "The Stardust Engine",
+            "genre" => "80s Arena Rock / Progressive Pop",
+            "url" => "https://thestardustengine.com/",
+            "image" => $ogImage ?? "",
+            "description" => $ogDescription ?? "The official portal for The Stardust Engine.",
+            "sameAs" => [
+                "https://music.apple.com/us/artist/the-stardust-engine/1889194363",
+                "https://open.spotify.com/artist/7Lr6o5qOo1OgVQGumUjFFT",
+                "https://music.youtube.com/channel/UCqtJNbYErxJ7ivveQXVS2mg"
+            ]
+        ];
+    }
+    
+    // 2. MUSIC ALBUM (Discography Pages w/ ISRC Track Looping)
+    elseif (isset($pageConfig['schemaType']) && $pageConfig['schemaType'] === 'MusicAlbum' && !empty($pageConfig['albumFilter'])) {
+        $schema = [
+            "@context" => "https://schema.org",
+            "@type" => "MusicAlbum",
+            "name" => $pageConfig['albumFilter'],
+            "byArtist" => [
+                "@type" => "MusicGroup",
+                "name" => "The Stardust Engine"
+            ],
+            "albumReleaseType" => "CompilationAlbum",
+            "datePublished" => $pageConfig['realReleaseDate'] ?? "", 
+            "url" => $ogUrl ?? "https://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]",
+            "image" => $ogImage ?? ""
+        ];
+        
+        // Attach the global UPC identifier 
+        if (!empty($pageConfig['upc'])) {
+            $schema["gtin12"] = $pageConfig['upc']; 
+        }
+
+        // Fallback load master data if file exists to query the catalog
+        $catalogFile = ROOT_PATH . '/master-catalog.json';
+        if (file_exists($catalogFile)) {
+            $catalogData = json_decode(file_get_contents($catalogFile), true);
+            if (is_array($catalogData)) {
+                $trackNum = 1;
+                foreach ($catalogData as $item) {
+                    // Match the tracks to the current album
+                    if (isset($item['albumTitle']) && $item['albumTitle'] === $pageConfig['albumFilter']) {
+                        $recording = [
+                            "@type" => "MusicRecording",
+                            "name" => $item['trackTitle'],
+                            "position" => $trackNum++
+                        ];
+                        // Inject the specific ISRC code for this track
+                        if (!empty($item['isrc'])) {
+                            $recording["isrcCode"] = $item['isrc'];
+                        }
+                        $schema['track'][] = $recording;
+                    }
+                }
+            }
+        }
+    }
+    
+    // 3. LORE / STORY PAGES
+    elseif (isset($pageConfig['schemaType']) && $pageConfig['schemaType'] === 'CreativeWork') {
+         $schema = [
+            "@context" => "https://schema.org",
+            "@type" => "Article",
+            "headline" => $pageTitle,
+            "author" => [
+                "@type" => "Person",
+                "name" => "Cassidy O'Connell"
+            ],
+            "url" => $ogUrl ?? "https://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]"
+         ];
+    }
+    ?>
+    <script type="application/ld+json">
+        <?php echo json_encode($schema, JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT); ?>
+    </script>
+
     <?php foreach ($css_load_queue as $cssUrl): ?>
         <link href="<?php echo $cssUrl . '?v=' . time(); ?>" rel="stylesheet">
     <?php endforeach; ?>    
@@ -113,15 +204,11 @@ if (isset($customPageAssets) && is_array($customPageAssets)) {
     <meta name="theme-color" content="#121212" media="(prefers-color-scheme: dark)">
     
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> 
-    
     <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
-    
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Mrs+Saint+Delafield&display=swap" rel="stylesheet">
-    
     <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
-
     <link href="https://fonts.googleapis.com/css2?family=Herr+Von+Muellerhoff&display=swap" rel="stylesheet">
 
     <script type="module">
