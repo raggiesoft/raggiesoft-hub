@@ -1,4 +1,5 @@
 <?php
+// pages/engine-room/artists/stardust-engine/2001-midnight-drivers.php
 // Page data
 $pageTitle = "Midnight Drivers (2001) - The Stardust Engine";
 $album_path_web = '/engine-room-records/artists/the-stardust-engine/2001-midnight-drivers';
@@ -48,9 +49,10 @@ $album_path_web = '/engine-room-records/artists/the-stardust-engine/2001-midnigh
                     </div>
                     <div>
                         <h5 class="alert-heading h6 fw-bold text-info text-uppercase mb-1">The 1987 Anchor</h5>
-                        <p class="mb-0 small text-muted">
-                            Because the title track was recorded in 1987—three years prior to the crash that caused Ryan's T-10 paralysis—the band explicitly chose not to rework or re-record any of the original stems in 2001. The album uses the raw, untouched 1987 master, preserving the exact Darkwave energy of that era.
+                        <p class="mb-3 small text-muted">
+                            Because the title track was recorded in 1987—three years prior to the crash that caused Ryan's T-10 paralysis—the band explicitly chose not to rework or re-record any of the original stems in 2001. The album uses the raw, untouched 1987 master, originally intended for their debut.
                         </p>
+                        <a href="/engine-room/artists/stardust-engine/discography/1987-electric-color" class="btn btn-sm btn-outline-info text-uppercase fw-bold">View the Electric Color Era</a>
                     </div>
                 </div>
             </div>

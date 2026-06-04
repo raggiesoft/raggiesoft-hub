@@ -1,4 +1,5 @@
 <?php
+// pages/engine-room/artists/stardust-engine/1987-electric-color.php
 // Page data
 $pageTitle = "Electric Color (1987) - The Stardust Engine";
 $album_path_web = '/engine-room-records/artists/the-stardust-engine/1987-electric-color';
@@ -48,9 +49,10 @@ $album_path_web = '/engine-room-records/artists/the-stardust-engine/1987-electri
                     </div>
                     <div>
                         <h5 class="alert-heading h6 fw-bold text-secondary text-uppercase mb-1">The Rejected Demo: "Midnight Drivers"</h5>
-                        <p class="mb-0 small text-muted">
-                            Originally part of the band's early demo tape used to shop for labels, this darkwave track was flatly rejected by Apex executives for being "too melancholic" and "off-brand." It remained locked in the Engine Room vault until the 2007 <em>Lost Sounds</em> compilation.
+                        <p class="mb-3 small text-muted">
+                            Originally part of the band's early demo tape used to shop for labels, this darkwave track was flatly rejected by Apex executives for being "too melancholic" and "off-brand." Kept locked in the vault, the raw 1987 master eventually became the anchor for a massive retro-engineered concept album fourteen years later.
                         </p>
+                        <a href="/engine-room/artists/stardust-engine/discography/2001-midnight-drivers" class="btn btn-sm btn-outline-secondary text-uppercase fw-bold">Explore the 2001 Album</a>
                     </div>
                 </div>
             </div>

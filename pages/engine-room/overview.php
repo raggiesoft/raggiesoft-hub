@@ -79,18 +79,18 @@ $pageTitle = "Engine Room Records - Independent Imprint";
         <div class="row align-items-center g-5">
             <div class="col-lg-6 order-2 order-lg-1 text-center text-lg-start">
                 <div class="mb-4 d-inline-block border border-secondary px-3 py-1 rounded small text-uppercase tracking-widest text-muted fw-bold">
-                    Latest Release
+                    Featured Archive
                 </div>
                 
-                <h1 class="display-3 fw-bold text-white mb-2" style="letter-spacing: -1px;">Hard Reset</h1>
+                <h1 class="display-3 fw-bold text-white mb-2" style="letter-spacing: -1px;">Midnight Drivers</h1>
                 <h2 class="h4 text-white-50 mb-4 text-uppercase">The Stardust Engine</h2>
                 
                 <p class="lead text-secondary mb-5 pe-lg-4">
-                    The defining space-rock opus. Featuring "Moon 1 (Tidal Lock)" and "Escape Velocity (Ad Astra)." High-fidelity masters now available globally.
+                    The 2001 retro-engineered concept album. Built entirely around a raw, untouched 1987 master recording to give an abandoned darkwave track the conceptual home it always deserved.
                 </p>
                 
                 <div class="d-flex flex-wrap gap-3 justify-content-center justify-content-lg-start">
-                    <a href="/engine-room/artists/stardust-engine/discography/1997-hard-reset" class="btn btn-light btn-lg text-uppercase fw-bold rounded-pill px-4">
+                    <a href="/engine-room/artists/stardust-engine/discography/2001-midnight-drivers" class="btn btn-light btn-lg text-uppercase fw-bold rounded-pill px-4">
                         <i class="fa-duotone fa-play me-2"></i>Stream Now
                     </a>
                     <a href="/engine-room/artists/stardust-engine/discography" class="btn btn-outline-secondary btn-lg text-uppercase fw-bold rounded-pill px-4">
@@ -100,9 +100,9 @@ $pageTitle = "Engine Room Records - Independent Imprint";
             </div>
             
             <div class="col-lg-6 order-1 order-lg-2 text-center">
-                <a href="/engine-room/artists/stardust-engine/discography/1997-hard-reset">
-                    <img src="https://assets.raggiesoft.com/engine-room-records/artists/the-stardust-engine/1997-hard-reset/album-art.jpg" 
-                         alt="Hard Reset Album Cover" 
+                <a href="/engine-room/artists/stardust-engine/discography/2001-midnight-drivers">
+                    <img src="https://assets.raggiesoft.com/engine-room-records/artists/the-stardust-engine/2001-midnight-drivers/album-art.jpg" 
+                         alt="Midnight Drivers Album Cover" 
                          class="img-fluid shadow-lg album-cover-showcase" 
                          style="max-width: 450px; width: 100%;">
                 </a>
@@ -151,11 +151,11 @@ $pageTitle = "Engine Room Records - Independent Imprint";
         </div>
         
         <div class="row g-4">
-            <!-- Hard Reset -->
+            <!-- Midnight Drivers -->
             <div class="col-6 col-md-3">
-                <a href="/engine-room/artists/stardust-engine/discography/1997-hard-reset" class="text-decoration-none">
-                    <img src="https://assets.raggiesoft.com/engine-room-records/artists/the-stardust-engine/1997-hard-reset/album-art.jpg" class="img-fluid mb-2 album-cover-showcase" alt="Hard Reset">
-                    <h6 class="text-body-emphasis fw-bold mb-0 text-truncate">Hard Reset</h6>
+                <a href="/engine-room/artists/stardust-engine/discography/2001-midnight-drivers" class="text-decoration-none">
+                    <img src="https://assets.raggiesoft.com/engine-room-records/artists/the-stardust-engine/2001-midnight-drivers/album-art.jpg" class="img-fluid mb-2 album-cover-showcase" alt="Midnight Drivers">
+                    <h6 class="text-body-emphasis fw-bold mb-0 text-truncate">Midnight Drivers</h6>
                     <small class="text-muted text-uppercase">The Stardust Engine</small>
                 </a>
             </div>
@@ -177,7 +177,7 @@ $pageTitle = "Engine Room Records - Independent Imprint";
                     <small class="text-muted text-uppercase">The Paper Wall</small>
                 </a>
             </div>
-            <!-- Origin / Fractured Prisms placeholder -->
+            <!-- Fractured Prisms placeholder -->
             <div class="col-6 col-md-3">
                 <a href="/engine-room/artists/fractured-prisms" class="text-decoration-none">
                     <div class="ratio ratio-1x1 bg-dark mb-2 album-cover-showcase d-flex align-items-center justify-content-center border border-secondary">
