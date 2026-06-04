@@ -2,7 +2,7 @@
 // pages/engine-room/artists/overview.php
 // The Complete Roster.
 // Access: /engine-room/artists
-// UPDATED: Fixed layout to properly accommodate the Engine Room sidebar.
+// UPDATED: Fixed layout to properly accommodate the Engine Room sidebar & synced ERR-003 Lore.
 
 $pageTitle = "Artist Roster - Engine Room Records, LLC";
 ?>
@@ -104,34 +104,33 @@ $pageTitle = "Artist Roster - Engine Room Records, LLC";
         </div>
 
         <div class="col-xl-6 col-lg-12 d-flex align-items-stretch">
-            <div class="card card-industrial w-100 border-primary">
+            <div class="card card-industrial w-100 border-secondary">
                 <div class="artist-img-box bg-dark">
-                     <i class="fa-duotone fa-user-group fa-5x text-primary opacity-50"></i>
+                     <i class="fa-duotone fa-user-group fa-5x text-secondary opacity-50"></i>
                 </div>
                 <div class="card-body d-flex flex-column p-4">
                     <span class="badge badge-industrial align-self-start mb-2">ERR-002</span>
-                    <h3 class="h4 fw-bold text-uppercase text-primary">Origin</h3>
+                    <h3 class="h4 fw-bold text-uppercase text-secondary">Origin</h3>
                     <p class="card-text small flex-grow-1">
                         The First Signing (1998). Discovered in a London basement. Known for "Kaleidoscope Sun" and the "Safe Harbor" flute melody.
                     </p>
-                    <a href="/engine-room/artists/origin" class="btn btn-outline-primary rounded-0 w-100 text-uppercase fw-bold mt-3">View Profile</a>
+                    <a href="/engine-room/artists/origin" class="btn btn-outline-secondary rounded-0 w-100 text-uppercase fw-bold mt-3">View Profile</a>
                 </div>
             </div>
         </div>
 
         <div class="col-xl-6 col-lg-12 d-flex align-items-stretch">
-            <div class="card card-industrial w-100 border-danger">
+            <div class="card card-industrial w-100 border-primary">
                 <div class="artist-img-box bg-dark">
-                    <img src="https://assets.raggiesoft.com/engine-room-records/artists/mirage/2001-static-and-silence/album-art.jpg" 
-                         alt="Mirage - Static & Silence">
+                    <i class="fa-duotone fa-waveform-lines fa-5x text-primary opacity-50"></i>
                 </div>
                 <div class="card-body d-flex flex-column p-4">
                     <span class="badge badge-industrial align-self-start mb-2">ERR-003</span>
-                    <h3 class="h4 fw-bold text-uppercase text-danger">Mirage</h3>
+                    <h3 class="h4 fw-bold text-uppercase text-primary">The Paper Wall</h3>
                     <p class="card-text small flex-grow-1">
-                        Cinematic rock opera led by Julian Croft. Known for the "Paper Wall" legal trust and the album <em>Static & Silence</em>.
+                        Alternative Rock / Post-Grunge. The architects of <em>Static & Silence</em>.
                     </p>
-                    <a href="/engine-room/artists/mirage" class="btn btn-outline-danger rounded-0 w-100 text-uppercase fw-bold mt-3">View Profile</a>
+                    <a href="/engine-room/artists/the-paper-wall" class="btn btn-outline-primary rounded-0 w-100 text-uppercase fw-bold mt-3">View Profile</a>
                 </div>
             </div>
         </div>
