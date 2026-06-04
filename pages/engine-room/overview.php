@@ -1,7 +1,7 @@
 <?php
 // pages/engine-room/overview.php
 // The Front Door of Engine Room Records.
-// Focus: Music First, Output, B2B Licensing, and Entity SEO.
+// Focus: Music First, Output, B2B Licensing, Entity SEO, and Transparency.
 
 $pageTitle = "Engine Room Records - Independent Imprint";
 ?>
@@ -73,11 +73,11 @@ $pageTitle = "Engine Room Records - Independent Imprint";
     }
 </style>
 
-<!-- TOP TIMELINE DISCLAIMER BAR -->
+<!-- TOP PROJECT DISCLAIMER BAR -->
 <div class="bg-black text-secondary text-center py-2 px-3 small border-bottom border-dark font-monospace" style="letter-spacing: 0.5px;">
-    <i class="fa-solid fa-clock-rotate-left me-2 text-warning"></i>
-    <strong>TIMELINE NOTICE:</strong> To preserve immersion, catalog entries feature a fictional Narrative Era (e.g., 2001) alongside their true Real-World Release Date (e.g., May 1, 2026).
-    <a href="/about/ai-disclaimer" class="text-white text-decoration-none border-bottom border-secondary ms-2 fw-bold">Learn More</a>
+    <i class="fa-duotone fa-robot-astromech me-2 text-info"></i>
+    <strong>PROJECT NOTICE:</strong> Engine Room Records is an AI-assisted narrative multimedia storytelling project. To preserve immersion, catalog entries feature fictional narrative eras alongside actual real-world release dates.
+    <a href="/about/ai-disclaimer" class="text-white text-decoration-none border-bottom border-secondary ms-2 fw-bold">Read the AI Disclaimer</a>
 </div>
 
 <!-- 1. THE HERO (Music First) -->
