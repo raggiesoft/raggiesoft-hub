@@ -73,6 +73,13 @@ $pageTitle = "Engine Room Records - Independent Imprint";
     }
 </style>
 
+<!-- TOP TIMELINE DISCLAIMER BAR -->
+<div class="bg-black text-secondary text-center py-2 px-3 small border-bottom border-dark font-monospace" style="letter-spacing: 0.5px;">
+    <i class="fa-solid fa-clock-rotate-left me-2 text-warning"></i>
+    <strong>TIMELINE NOTICE:</strong> To preserve immersion, catalog entries feature a fictional Narrative Era (e.g., 2001) alongside their true Real-World Release Date (e.g., May 1, 2026).
+    <a href="/about/ai-disclaimer" class="text-white text-decoration-none border-bottom border-secondary ms-2 fw-bold">Learn More</a>
+</div>
+
 <!-- 1. THE HERO (Music First) -->
 <div class="hero-section py-5" data-bs-theme="dark">
     <div class="container py-5">
