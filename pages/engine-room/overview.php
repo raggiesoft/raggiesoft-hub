@@ -1,10 +1,36 @@
 <?php
 // pages/engine-room/overview.php
 // The Front Door of Engine Room Records.
-// Focus: Audio Validation, Roster Navigation, and B2B Licensing.
+// Focus: Audio Validation, Roster Navigation, B2B Licensing, and Entity SEO.
 
 $pageTitle = "Engine Room Records - Independent Imprint";
 ?>
+
+<!-- RECORD LABEL ENTITY SCHEMA -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "RecordLabel",
+  "name": "Engine Room Records",
+  "alternateName": "ERR",
+  "url": "https://engineroom-records.com",
+  "logo": "https://assets.raggiesoft.com/engine-room-records/images/logos/engine-room-records-logo.png",
+  "description": "An independent record label, music publisher, and B2B licensing imprint.",
+  "founder": {
+    "@type": "Person",
+    "name": "Michael P. Ragsdale"
+  },
+  "parentOrganization": {
+    "@type": "Organization",
+    "name": "RaggieSoft",
+    "url": "https://raggiesoft.com"
+  },
+  "genre": ["Rock", "Synth-Pop", "Symphonic Rock", "Alternative Rock"],
+  "sameAs": [
+    "https://raggiesoft.com/engine-room"
+  ]
+}
+</script>
 
 <style>
     /* ENGINE ROOM BRANDING: Industrial, Heavy, Stark */
@@ -54,20 +80,20 @@ $pageTitle = "Engine Room Records - Independent Imprint";
                 </h1>
                 
                 <p class="lead text-body mb-4">
-                    The exclusive home of The Stardust Engine, Mirage, and Firelight. 100% independent.
+                    The exclusive home of The Stardust Engine, The Paper Wall, and Firelight. 100% independent.
                 </p>
 
                 <div class="p-4 bg-black bg-opacity-50 border border-secondary rounded shadow-sm">
-                    <span class="badge bg-danger text-uppercase letter-spacing-1 mb-2 px-2 py-1">Latest Release</span>
-                    <h2 class="h4 fw-bold text-body-emphasis mb-1">Space Rock: Essential Tracks</h2>
-                    <p class="small text-body-secondary mb-3">The Stardust Engine &bull; Out Now</p>
+                    <span class="badge bg-danger text-uppercase letter-spacing-1 mb-2 px-2 py-1">Featured Release</span>
+                    <h2 class="h4 fw-bold text-body-emphasis mb-1">Hard Reset</h2>
+                    <p class="small text-body-secondary mb-3">The Stardust Engine &bull; UPC: 825486792528</p>
                     
                     <div class="d-flex flex-wrap gap-2 justify-content-center justify-content-lg-start">
-                        <a href="#" class="btn btn-danger text-uppercase fw-bold px-4">
-                            <i class="fa-duotone fa-play me-2" aria-hidden="true"></i>Stream Now
+                        <a href="/engine-room/artists/stardust-engine/discography/1997-hard-reset" class="btn btn-danger text-uppercase fw-bold px-4">
+                            <i class="fa-duotone fa-compact-disc me-2" aria-hidden="true"></i>View Album Details
                         </a>
                         <a href="/engine-room/artists/stardust-engine/discography" class="btn btn-outline-light text-uppercase fw-bold px-4">
-                            <i class="fa-duotone fa-compact-disc me-2" aria-hidden="true"></i>Full Catalog
+                            <i class="fa-duotone fa-layer-group me-2" aria-hidden="true"></i>Full Catalog
                         </a>
                     </div>
                 </div>
@@ -75,7 +101,7 @@ $pageTitle = "Engine Room Records - Independent Imprint";
 
             <div class="col-lg-6 order-1 order-lg-2 text-center">
                 <img src="https://assets.raggiesoft.com/engine-room-records/artists/the-stardust-engine/1997-hard-reset/album-art.jpg" 
-                     alt="Space Rock: Essential Tracks Album Cover" 
+                     alt="Hard Reset Album Cover" 
                      class="img-fluid rounded shadow-lg border border-secondary" 
                      style="max-width: 400px; width: 100%;">
             </div>
@@ -144,15 +170,15 @@ $pageTitle = "Engine Room Records - Independent Imprint";
         </div>
 
         <div class="col-md-6 col-lg-4">
-            <a href="/engine-room/artists/mirage" class="text-decoration-none">
-                <div class="card h-100 bg-dark roster-card shadow-sm border-danger" data-bs-theme="dark">
+            <a href="/engine-room/artists/the-paper-wall" class="text-decoration-none">
+                <div class="card h-100 bg-dark roster-card shadow-sm border-primary" data-bs-theme="dark">
                     <div class="card-body text-center p-4 d-flex flex-column align-items-center">
-                        <div class="bg-black rounded-circle p-3 mb-3 border border-danger" style="width: 100px; height: 100px; display: flex; align-items: center; justify-content: center;">
-                            <i class="fa-duotone fa-waveform-lines fa-3x text-danger opacity-75"></i>
+                        <div class="bg-black rounded-circle p-3 mb-3 border border-primary" style="width: 100px; height: 100px; display: flex; align-items: center; justify-content: center;">
+                            <i class="fa-duotone fa-waveform-lines fa-3x text-primary opacity-75"></i>
                         </div>
-                        <h3 class="h5 fw-bold text-danger text-uppercase mb-2">Mirage</h3>
+                        <h3 class="h5 fw-bold text-primary text-uppercase mb-2">The Paper Wall</h3>
                         <p class="small text-body-secondary mb-0">
-                            Cinematic Rock Opera / Industrial Metal. The architects of <em>Static & Silence</em>.
+                            Alternative Rock / Post-Grunge. The architects of <em>Static & Silence</em>.
                         </p>
                     </div>
                 </div>
