@@ -2,7 +2,7 @@
   "common": {
     "site": "engine-room-records",
     "showSidebar": true,
-    "sidebar": "sidebar-history-engine-room",
+    "sidebar": "engine-room/sidebar-engine-room-history",
     "siteName": "Engine Room Records",
     "headerMenu": "engine-room/header-engine-room",
     "footer": "engine-room/footer-engine-room",
