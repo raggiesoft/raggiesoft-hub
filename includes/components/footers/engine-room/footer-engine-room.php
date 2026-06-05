@@ -65,9 +65,12 @@
 
             <div class="col-lg-3 col-md-6 text-center text-md-start">
                 <h6 class="text-uppercase fw-bold border-bottom border-secondary-subtle pb-2 mb-3">Location & Contact</h6>
-                <p class="small text-body-secondary mb-2">
-                    <i class="fa-solid fa-location-dot me-2"></i>Norfolk, Virginia
+                
+                <!-- Dynamic Location Rendered Here -->
+                <p class="small text-body-secondary mb-2" style="font-family: var(--bs-font-monospace);">
+                    <i class="fa-solid fa-location-dot me-2"></i>HQ: <?php echo htmlspecialchars($hq_location ?? 'Location Classified'); ?>
                 </p>
+                
                 <p class="small text-body-secondary mb-3">
                     <i class="fa-solid fa-envelope me-2"></i><a href="mailto:inquiries@engineroom-records.com" class="text-decoration-none text-body-secondary hover-text-primary">inquiries@engineroom-records.com</a>
                 </p>

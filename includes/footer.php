@@ -1,8 +1,27 @@
 <?php
 // includes/footer.php
 // v8.3 - Fixed Double-Script Invocation & Turbo Conflict
+// Updated: Added Dynamic Location Logic
 
-// 1. Resolve Visual Footer
+// --- 1. DYNAMIC LOCATION LOGIC ---
+$location_json_url = 'https://assets.raggiesoft.com/portfolio/json/locations.json';
+$hq_location = 'Location Classified'; // Fallback in case of failure
+
+$location_json = @file_get_contents($location_json_url);
+if ($location_json !== false) {
+    $location_data = json_decode($location_json, true);
+    if (is_array($location_data)) {
+        foreach ($location_data as $loc) {
+            if (isset($loc['is_home']) && $loc['is_home'] === true) {
+                // Strip out "In-Office: " and trim any whitespace
+                $hq_location = trim(str_replace('In-Office:', '', $loc['label']));
+                break;
+            }
+        }
+    }
+}
+
+// --- 2. RESOLVE VISUAL FOOTER ---
 if (isset($pageConfig['footer'])) {
     $footerFile = $pageConfig['footer'];
 } else {
