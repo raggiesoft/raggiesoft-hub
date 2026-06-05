@@ -30,6 +30,7 @@
     "ogDescription": "An in-depth look at the founding, growth, and milestones of Engine Room Records from inception to present day."
   },
   "/engine-room/commercial-licensing": {
+    "showSidebar": false,
     "view": "pages/engine-room/commercial-licensing",
     "title": "Corporate Licensing | Engine Room Records",
     "ogDescription": "The official commercial licensing portal for Engine Room Records. Secure synchronization rights, master use clearances, and broadcast licenses for our active catalog."
