@@ -1,37 +1,55 @@
-<h5 class="pt-3 pb-2 mb-3 border-bottom text-uppercase letter-spacing-1">
-    <i class="fa-duotone fa-file-contract me-2 text-secondary"></i>Archives
-</h5>
+<?php
+// includes/components/sidebars/engine-room/history/sidebar-history.php
+// The Navigation Panel for the Historical Archives
+?>
 
-<ul class="nav flex-column mb-4">
-    <li class="nav-item">
-        <a class="nav-link link-secondary" href="/engine-room">
-            <i class="fa-duotone fa-arrow-left me-2"></i>Return to HQ
-        </a>
-    </li>
-
-    <li class="nav-item mt-2">
-        <a class="nav-link link-primary fw-bold" href="/engine-room/history">
-            <i class="fa-duotone fa-list-timeline me-2"></i>Full Timeline
-        </a>
-    </li>
-</ul>
-
-<h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-2 text-muted text-uppercase small">
-    <span>Case Files</span>
-</h6>
-
-<ul class="nav flex-column">
+<div class="sticky-top" style="top: 100px;">
     
-    <li class="nav-item">
-        <a class="nav-link link-secondary" href="/engine-room/artists/stardust-engine/story/friction">
-            <i class="fa-duotone fa-fire me-2 text-danger opacity-75"></i>1992: Friction
-        </a>
-    </li>
+    <!-- DIRECTORY NAVIGATION -->
+    <div class="card rounded-0 border-secondary mb-4 bg-body-tertiary shadow-sm">
+        <div class="card-header bg-dark text-white fw-bold text-uppercase border-bottom border-danger font-monospace small">
+            <i class="fa-solid fa-folder-tree me-2" aria-hidden="true"></i>Archive Directory
+        </div>
+        <div class="list-group list-group-flush font-monospace small">
+            <a href="/engine-room" class="list-group-item list-group-item-action bg-transparent text-body">
+                <i class="fa-duotone fa-house-building me-2 w-20px text-center" aria-hidden="true"></i>HQ Overview
+            </a>
+            <a href="/engine-room/history" class="list-group-item list-group-item-action bg-transparent text-danger fw-bold" aria-current="page">
+                <i class="fa-duotone fa-list-timeline me-2 w-20px text-center" aria-hidden="true"></i>Full Timeline
+            </a>
+        </div>
+    </div>
 
-    <li class="nav-item">
-        <a class="nav-link link-secondary" href="/engine-room/artists/stardust-engine/story/nine-figure-refusal">
-            <i class="fa-duotone fa-gavel me-2 text-success opacity-75"></i>2018: The Refusal
-        </a>
-    </li>
+    <!-- DECLASSIFIED CASE FILES -->
+    <div class="card rounded-0 border-secondary mb-4 bg-transparent shadow-sm">
+        <div class="card-header bg-transparent text-body-emphasis fw-bold text-uppercase border-bottom border-secondary font-monospace small">
+            <i class="fa-solid fa-folder-open me-2" aria-hidden="true"></i>Case Files
+        </div>
+        <div class="list-group list-group-flush font-monospace small">
+            <a href="/engine-room/artists/stardust-engine/story/crash-of-90" class="list-group-item list-group-item-action bg-transparent text-body">
+                <i class="fa-duotone fa-car-crash me-2 w-20px text-center text-warning" aria-hidden="true"></i>1990: The Crash
+            </a>
+            <a href="/engine-room/artists/stardust-engine/story/friction" class="list-group-item list-group-item-action bg-transparent text-body">
+                <i class="fa-duotone fa-fire me-2 w-20px text-center text-danger" aria-hidden="true"></i>1992: Friction
+            </a>
+            <a href="/engine-room/artists/stardust-engine/story/nine-figure-refusal" class="list-group-item list-group-item-action bg-transparent text-body">
+                <i class="fa-duotone fa-gavel me-2 w-20px text-center text-success" aria-hidden="true"></i>2018: The Refusal
+            </a>
+        </div>
+    </div>
 
-</ul>
+    <!-- SECURITY REMINDER -->
+    <div class="alert alert-dark border-secondary bg-black text-white-50 p-3 font-monospace" style="font-size: 0.75rem;">
+        <i class="fa-solid fa-shield-halved text-danger mb-2 d-block fs-5" aria-hidden="true"></i>
+        Historical records and case files are maintained for internal reference and DSP compliance. Access to these documents is logged.
+    </div>
+
+</div>
+
+<style>
+    /* Helper for icon alignment in the sidebar */
+    .w-20px {
+        width: 20px;
+        display: inline-block;
+    }
+</style>
