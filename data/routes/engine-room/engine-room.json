@@ -40,7 +40,7 @@
     "title": "DSP Verification Portal | Engine Room Records",
     "siteName": "Engine Room Records DSP Verification",
     "showSidebar": false,
-    "navbarBrandLink": "/engine-room/dsp-verification",
+    "navbarBrandLink": "/engine-room",
     "headerMenu": "engine-room/header-dsp",
     "footer": "engine-room/footer-dsp",
     "ogDescription": "Official administrative portal for DSP identity and copyright verification."
