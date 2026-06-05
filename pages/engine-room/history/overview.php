@@ -30,15 +30,15 @@ $album_web_path = "https://assets.raggiesoft.com/engine-room-records/artists/the
                 <div class="col-md-8">
                     <h3 class="h4 fw-bold text-white mb-3">The RaggieSoft Audio Initiative</h3>
                     <p class="text-white-75">
-                        In the real world, <strong>Engine Room Records</strong> is a digital portfolio and publishing entity created by Michael P. Ragsdale[cite: 18]. Launched in 2026, it serves as the organizational hub for a massive, multi-band generative music project[cite: 18]. 
+                        In the real world, <strong>Engine Room Records</strong> is a digital portfolio and publishing entity created by Michael P. Ragsdale. Launched in 2026, it serves as the organizational hub for a massive, multi-band generative music project. 
                     </p>
                     <div class="alert alert-info bg-black border-info mb-4">
-                        <strong><i class="fa-solid fa-timeline me-2"></i>Timeline Notice:</strong> While the narrative lore spans decades (e.g., 1983, 1992, 1997), <strong>all music across this entire catalog was produced in 2025 and 2026</strong>, and officially distributed to streaming platforms via DistroKid in 2026[cite: 18].
+                        <strong><i class="fa-solid fa-timeline me-2"></i>Timeline Notice:</strong> While the narrative lore spans decades (e.g., 1983, 1992, 1997), <strong>all music across this entire catalog was produced in 2025 and 2026</strong>, and officially distributed to streaming platforms via DistroKid in 2026.
                     </div>
                     <ul class="text-white-75 mb-4">
-                        <li class="mb-2"><strong>Audio Generation:</strong> All instrumentation, synthetic vocals, and musical compositions are generated utilizing a commercial-tier <span class="text-warning">Suno Premium</span> license[cite: 18].</li>
-                        <li class="mb-2"><strong>Lore & Lyrics:</strong> The overarching narrative, fictional corporate structures, and original lyrics are human-directed, with <span class="text-info">Gemini</span> acting as a co-producer for style refinement and worldbuilding organization[cite: 18].</li>
-                        <li><strong>Distribution:</strong> The catalog is distributed to global streaming platforms (Spotify, Apple Music, etc.) while remaining freely available on this platform under a <strong>CC BY-SA 4.0</strong> license[cite: 18].</li>
+                        <li class="mb-2"><strong>Audio Generation:</strong> All instrumentation, synthetic vocals, and musical compositions are generated utilizing a commercial-tier <span class="text-warning">Suno Premium</span> license.</li>
+                        <li class="mb-2"><strong>Lore & Lyrics:</strong> The overarching narrative, fictional corporate structures, and original lyrics are human-directed, with <span class="text-info">Gemini</span> acting as a co-producer for style refinement and worldbuilding organization.</li>
+                        <li><strong>Distribution:</strong> The catalog is distributed to global streaming platforms (Spotify, Apple Music, etc.) while remaining freely available on this platform under a <strong>CC BY-SA 4.0</strong> license.</li>
                     </ul>
                     <a href="/about/ai-disclaimer" class="btn btn-outline-info btn-sm text-uppercase fw-bold font-monospace">
                         <i class="fa-duotone fa-robot-astromech me-2"></i>Read Full AI Disclaimer
@@ -77,13 +77,13 @@ $album_web_path = "https://assets.raggiesoft.com/engine-room-records/artists/the
                             </div>
                             <div class="col-lg-9" style="line-height: 1.7;">
                                 <p class="text-body-secondary">
-                                    The Stardust Engine exploded into the mainstream with their 1987 debut, <em>Electric Color</em>. The title track was a massive, studio-mandated synth-pop hit, sitting at the #2 spot for six weeks[cite: 19]. While fans embraced it, the band viewed this era as the beginning of a "Cold War" with Apex Records[cite: 27].
+                                    The Stardust Engine exploded into the mainstream with their 1987 debut, <em>Electric Color</em>. The title track was a massive, studio-mandated synth-pop hit, sitting at the #2 spot for six weeks. While fans embraced it, the band viewed this era as the beginning of a "Cold War" with Apex Records.
                                 </p>
                                 <p class="text-body-secondary">
-                                    The studio constantly prioritized polished, radio-friendly production over the band's authentic rock roots[cite: 19]. Tracks like "Dancing in the Neon" kept the lights on, but Ryan began hiding angsty, anti-corporate lyrics inside the safe pop wrappers ("Plastic Sky") in an act of malicious compliance[cite: 19]. Even "My Anchor Holds," marketed heavily by Apex as a romance, was actually the siblings' desperate love letter to their own unbreakable family bond under the suffocating pressure of the pop machine[cite: 19].
+                                    The studio constantly prioritized polished, radio-friendly production over the band's authentic rock roots. Tracks like "Dancing in the Neon" kept the lights on, but Ryan began hiding angsty, anti-corporate lyrics inside the safe pop wrappers ("Plastic Sky") in an act of malicious compliance. Even "My Anchor Holds," marketed heavily by Apex as a romance, was actually the siblings' desperate love letter to their own unbreakable family bond under the suffocating pressure of the pop machine.
                                 </p>
                                 <p class="text-body-secondary mb-4">
-                                    The true heart of the band was buried at the end of the album. The uncompromised synth-rock anthem "The Stardust Engine" could have spent 11 weeks at #1 if the label had trusted it as the lead single[cite: 19]. 
+                                    The true heart of the band was buried at the end of the album. The uncompromised synth-rock anthem "The Stardust Engine" could have spent 11 weeks at #1 if the label had trusted it as the lead single. 
                                 </p>
                                 
                                 <a href="/engine-room/artists/stardust-engine/discography/1987-electric-color" class="btn btn-outline-info text-dark btn-sm text-uppercase fw-bold font-monospace" aria-label="Access the Electric Color album archive">
@@ -110,13 +110,13 @@ $album_web_path = "https://assets.raggiesoft.com/engine-room-records/artists/the
                             </div>
                             <div class="col-lg-9" style="line-height: 1.7;">
                                 <p class="text-white-75">
-                                    For their 1989 sophomore album, <em>Neon Hearts</em>, Apex Records demanded pure brand consistency[cite: 22]. The label even forced the band to include a lyrical callback to their first hit ("It's an electric-colored feeling") on the title track[cite: 22]. However, the tension in the studio had become unbearable.
+                                    For their 1989 sophomore album, <em>Neon Hearts</em>, Apex Records demanded pure brand consistency. The label even forced the band to include a lyrical callback to their first hit ("It's an electric-colored feeling") on the title track. However, the tension in the studio had become unbearable.
                                 </p>
                                 <p class="text-white-75">
-                                    Ryan ramped up his malicious compliance, delivering "Hollow Sound"—a 5:31 protest track that explicitly called out the studio's panic over the canceled "Promise" single[cite: 22]. In a furious overcorrection, the executives demanded an absurdly short, manic 1:54 bubblegum pop track ("Side by Side") to fix the album's pacing[cite: 22]. They also forced the band to record "The Promise," a cynical, synth-gospel cash grab that was scrapped after Ryan snuck a face-melting, unholy rock guitar solo into the bridge[cite: 22, 28].
+                                    Ryan ramped up his malicious compliance, delivering "Hollow Sound"—a 5:31 protest track that explicitly called out the studio's panic over the canceled "Promise" single. In a furious overcorrection, the executives demanded an absurdly short, manic 1:54 bubblegum pop track ("Side by Side") to fix the album's pacing. They also forced the band to record "The Promise," a cynical, synth-gospel cash grab that was scrapped after Ryan snuck a face-melting, unholy rock guitar solo into the bridge.
                                 </p>
                                 <p class="text-white-75 mb-4">
-                                    But the fans were catching on. When Apex begrudgingly allowed a "one-two punch" of pure rock on Side B ("Chain Reaction" and "Not Your Doll"), the tracks became immediate fan-favorites[cite: 22]. It was definitive proof that the heavier "Engine" sound was exactly what the audience wanted, setting the stage for the coming war[cite: 22].
+                                    But the fans were catching on. When Apex begrudgingly allowed a "one-two punch" of pure rock on Side B ("Chain Reaction" and "Not Your Doll"), the tracks became immediate fan-favorites. It was definitive proof that the heavier "Engine" sound was exactly what the audience wanted, setting the stage for the coming war.
                                 </p>
                                 
                                 <a href="/engine-room/artists/stardust-engine/discography/1989-neon-hearts" class="btn btn-outline-primary btn-sm text-uppercase fw-bold font-monospace" aria-label="Access the Neon Hearts album archive">
@@ -143,13 +143,13 @@ $album_web_path = "https://assets.raggiesoft.com/engine-room-records/artists/the
                             </div>
                             <div class="col-lg-9" style="line-height: 1.7;">
                                 <p class="text-body-secondary">
-                                    During the Neon Hearts tour, the band was squeezed into a strict 30-minute opening slot, forcing them to rush through hits at a frantic tempo[cite: 26, 29]. The resulting live album is a source of fury for the band; the mix was actively sabotaged by Apex Records, maliciously burying Cassidy's "Stardust" synth leitmotif deep into the background to rebrand them as a male-fronted rock act[cite: 26, 29].
+                                    During the Neon Hearts tour, the band was squeezed into a strict 30-minute opening slot, forcing them to rush through hits at a frantic tempo. The resulting live album is a source of fury for the band; the mix was actively sabotaged by Apex Records, maliciously burying Cassidy's "Stardust" synth leitmotif deep into the background to rebrand them as a male-fronted rock act.
                                 </p>
                                 <p class="text-body-secondary">
-                                    However, the recording serves as the historical "Smoking Gun" that later dismantled the label's corporate narrative[cite: 26, 29]. During the opening, Ryan explicitly introduces Cassidy to the crowd as "my sister," publicly disproving the studio executive's assumption that they were a married couple—years before that exact misunderstanding caused the <em>Friction</em> disaster[cite: 26, 29]. 
+                                    However, the recording serves as the historical "Smoking Gun" that later dismantled the label's corporate narrative. During the opening, Ryan explicitly introduces Cassidy to the crowd as "my sister," publicly disproving the studio executive's assumption that they were a married couple—years before that exact misunderstanding caused the <em>Friction</em> disaster. 
                                 </p>
                                 <p class="text-body-secondary mb-4">
-                                    The performance was agonizing behind the scenes[cite: 26]. Cassidy experienced genuine terror while performing the abandonment-themed "If You Walked Away," leading to a backstage breakdown where Ryan had to ground her in a deep pressure hug for twenty minutes[cite: 26, 29]. But they fought through it together; their performance of "My Anchor Holds" wasn't a romantic duet, but a public promise of protection to each other that the hardcore Ironheads in the crowd fully understood[cite: 26].
+                                    The performance was agonizing behind the scenes. Cassidy experienced genuine terror while performing the abandonment-themed "If You Walked Away," leading to a backstage breakdown where Ryan had to ground her in a deep pressure hug for twenty minutes. But they fought through it together; their performance of "My Anchor Holds" wasn't a romantic duet, but a public promise of protection to each other that the hardcore Ironheads in the crowd fully understood.
                                 </p>
                                 
                                 <a href="/engine-room/artists/stardust-engine/discography/1990-live-in-chicago" class="btn btn-outline-warning text-dark btn-sm text-uppercase fw-bold font-monospace" aria-label="Access the Live in Chicago album archive">
@@ -176,13 +176,13 @@ $album_web_path = "https://assets.raggiesoft.com/engine-room-records/artists/the
                             </div>
                             <div class="col-lg-9" style="line-height: 1.7;">
                                 <p class="text-white-75">
-                                    On December 10, 1990, the trajectory of the band and the O'Connell family changed forever[cite: 23]. Racing a winter storm back to Blacksburg on Interstate 81, their Holt Freighter touring van was clipped by a speeding sedan[cite: 23]. The van spun off the icy road and rolled into the embankment[cite: 23]. 
+                                    On December 10, 1990, the trajectory of the band and the O'Connell family changed forever. Racing a winter storm back to Blacksburg on Interstate 81, their Holt Freighter touring van was clipped by a speeding sedan. The van spun off the icy road and rolled into the embankment. 
                                 </p>
                                 <p class="text-white-75">
-                                    While the rest of the family sustained minor injuries, Ryan O'Connell, who was driving, was pinned[cite: 23]. He suffered a complete T10 spinal cord injury, losing all function and sensation below the waist[cite: 23]. 
+                                    While the rest of the family sustained minor injuries, Ryan O'Connell, who was driving, was pinned. He suffered a complete T10 spinal cord injury, losing all function and sensation below the waist. 
                                 </p>
                                 <p class="text-white-75 mb-4">
-                                    The subsequent year (1991) was deemed the "Stalemate Year"—a brutal hiatus focused entirely on survival[cite: 23]. The family had to adapt to a new, inflexible reality, establishing strict protocols for Ryan's health (the "Iron Dome" morning routine, the 4-Hour Hydration clock, and rigorous pressure shifts)[cite: 23]. Because venues in the early 90s were largely inaccessible, the Wright twins developed a synchronized two-man lift to haul Ryan up fire escapes to the stage, becoming his "legs" as the band prepared for their eventual, defiant return[cite: 23].
+                                    The subsequent year (1991) was deemed the "Stalemate Year"—a brutal hiatus focused entirely on survival. The family had to adapt to a new, inflexible reality, establishing strict protocols for Ryan's health (the "Iron Dome" morning routine, the 4-Hour Hydration clock, and rigorous pressure shifts). Because venues in the early 90s were largely inaccessible, the Wright twins developed a synchronized two-man lift to haul Ryan up fire escapes to the stage, becoming his "legs" as the band prepared for their eventual, defiant return.
                                 </p>
                                 
                                 <a href="/engine-room/artists/stardust-engine/story/crash-of-90" class="btn btn-outline-danger btn-sm text-uppercase fw-bold font-monospace" aria-label="Access the Crash of 1990 story archive">
@@ -209,13 +209,13 @@ $album_web_path = "https://assets.raggiesoft.com/engine-room-records/artists/the
                             </div>
                             <div class="col-lg-9" style="line-height: 1.7;">
                                 <p class="text-body-secondary">
-                                    In September 1992, The Stardust Engine was locked in a bitter "Cold War" with Apex Records over their creative identity[cite: 18]. This culminated in a disastrous Los Angeles photo shoot for their canceled sophomore album, <em>Friction</em>[cite: 18]. An Apex executive fundamentally misunderstood the band's sci-fi aesthetic, attempting to coerce the band members into a highly inappropriate, shock-value marketing campaign to compete with industry trends[cite: 18].
+                                    In September 1992, The Stardust Engine was locked in a bitter "Cold War" with Apex Records over their creative identity. This culminated in a disastrous Los Angeles photo shoot for their canceled sophomore album, <em>Friction</em>. An Apex executive fundamentally misunderstood the band's sci-fi aesthetic, attempting to coerce the band members into a highly inappropriate, shock-value marketing campaign to compete with industry trends.
                                 </p>
                                 <p class="text-body-secondary">
-                                    The band's 23-year-old manager and law student, Holly O'Connell, immediately recognized the executive's demands as a severe material breach of contract[cite: 18]. However, before she could even file the civil paperwork, the hired photographer blew the whistle to the LAPD, turning a contract dispute into an active criminal investigation[cite: 18].
+                                    The band's 23-year-old manager and law student, Holly O'Connell, immediately recognized the executive's demands as a severe material breach of contract. However, before she could even file the civil paperwork, the hired photographer blew the whistle to the LAPD, turning a contract dispute into an active criminal investigation.
                                 </p>
                                 <p class="text-body-secondary mb-4">
-                                    Cornered by the impending legal scandal, Apex Records completely surrendered[cite: 18]. They voided the band's contract, returned all master tapes, and paid a substantial punitive settlement to avoid a public trial[cite: 18]. Holly O'Connell used this exact settlement capital to establish <strong>Engine Room Records</strong>, permanently transforming the family band from label employees into a sovereign, independent entity[cite: 18].
+                                    Cornered by the impending legal scandal, Apex Records completely surrendered. They voided the band's contract, returned all master tapes, and paid a substantial punitive settlement to avoid a public trial. Holly O'Connell used this exact settlement capital to establish <strong>Engine Room Records</strong>, permanently transforming the family band from label employees into a sovereign, independent entity.
                                 </p>
                                 
                                 <a href="/engine-room/artists/stardust-engine/story/friction" class="btn btn-outline-danger text-dark btn-sm text-uppercase fw-bold font-monospace" aria-label="Access the full 1992 Friction Catastrophe archive">
@@ -237,13 +237,13 @@ $album_web_path = "https://assets.raggiesoft.com/engine-room-records/artists/the
                 <div class="card border-secondary bg-dark text-white shadow-sm">
                     <div class="card-body p-4 p-md-5" style="line-height: 1.7;">
                         <p class="text-white-75">
-                            Following the collapse of the <em>Friction</em> project, the band immediately evacuated Los Angeles, retreating 2,500 miles back to their sanctuary in Blacksburg, Virginia[cite: 18]. As proud alumni of the Commonwealth Polytechnic Institute (CPI), the tight-knit college town offered them a quiet, fiercely protective community far removed from the tabloid fallout of the music industry[cite: 18].
+                            Following the collapse of the <em>Friction</em> project, the band immediately evacuated Los Angeles, retreating 2,500 miles back to their sanctuary in Blacksburg, Virginia. As proud alumni of the Commonwealth Polytechnic Institute (CPI), the tight-knit college town offered them a quiet, fiercely protective community far removed from the tabloid fallout of the music industry.
                         </p>
                         <p class="text-white-75">
-                            However, the "Cold War" was not over; it had merely moved into the courtroom[cite: 18]. While Holly O'Connell and her legal team dismantled Apex Records on the West Coast, the prolonged legal spectacle took a massive personal toll on the band[cite: 18]. The grueling requirement to provide cross-country testimony and endure hostile depositions was deeply distressing[cite: 18]. This was particularly traumatic for Ryan and Cassidy, both of whom are autistic, compounded by the severe logistical and physical exhaustion Ryan faced navigating an inaccessible 1990s legal system as a T10 paraplegic[cite: 18].
+                            However, the "Cold War" was not over; it had merely moved into the courtroom. While Holly O'Connell and her legal team dismantled Apex Records on the West Coast, the prolonged legal spectacle took a massive personal toll on the band. The grueling requirement to provide cross-country testimony and endure hostile depositions was deeply distressing. This was particularly traumatic for Ryan and Cassidy, both of whom are autistic, compounded by the severe logistical and physical exhaustion Ryan faced navigating an inaccessible 1990s legal system as a T10 paraplegic.
                         </p>
                         <p class="text-white-75 mb-0">
-                            By late 1994, the legal war officially concluded with a total victory for the O'Connell family[cite: 18]. The trauma and isolation of these "Wilderness Years" in their Blacksburg warehouse became a creative crucible[cite: 18]. Free from corporate oversight, they channeled the exhaustion of the trials into their instruments, laying the raw, unpolished groundwork for their independent 1995 comeback album, <em>The Warehouse Tapes</em>[cite: 18].
+                            By late 1994, the legal war officially concluded with a total victory for the O'Connell family. The trauma and isolation of these "Wilderness Years" in their Blacksburg warehouse became a creative crucible. Free from corporate oversight, they channeled the exhaustion of the trials into their instruments, laying the raw, unpolished groundwork for their independent 1995 comeback album, <em>The Warehouse Tapes</em>.
                         </p>
                     </div>
                 </div>
@@ -264,13 +264,13 @@ $album_web_path = "https://assets.raggiesoft.com/engine-room-records/artists/the
                             </div>
                             <div class="col-lg-9" style="line-height: 1.7;">
                                 <p class="text-body-secondary">
-                                    In 1995, Engine Room Records launched its first official release: <em>The Warehouse Tapes</em>[cite: 30]. Operating entirely outside the traditional music industry ecosystem, the label functioned as a direct-to-consumer operation[cite: 18]. The family fulfilled mail-orders directly to their loyal "Ironhead" fanbase, manually dubbing every cassette and burning early CD-Rs one at a time using expensive, bleeding-edge hardware installed in their Blacksburg rehearsal space[cite: 18].
+                                    In 1995, Engine Room Records launched its first official release: <em>The Warehouse Tapes</em>. Operating entirely outside the traditional music industry ecosystem, the label functioned as a direct-to-consumer operation. The family fulfilled mail-orders directly to their loyal "Ironhead" fanbase, manually dubbing every cassette and burning early CD-Rs one at a time using expensive, bleeding-edge hardware installed in their Blacksburg rehearsal space.
                                 </p>
                                 <p class="text-body-secondary">
-                                    The album itself was a sonic exorcism[cite: 18]. Side A featured raw, unpolished rock tracks (such as "Static" and "Garbage") that explicitly rejected the manufactured synth-pop forced upon them by Apex Records, while simultaneously tearing down the exhausting "victim" narrative pushed by the tabloid media during the 1994 trials[cite: 18].
+                                    The album itself was a sonic exorcism. Side A featured raw, unpolished rock tracks (such as "Static" and "Garbage") that explicitly rejected the manufactured synth-pop forced upon them by Apex Records, while simultaneously tearing down the exhausting "victim" narrative pushed by the tabloid media during the 1994 trials.
                                 </p>
                                 <p class="text-body-secondary mb-4">
-                                    However, the defining achievement of the album—and the early label—was Side B[cite: 18]. Consisting entirely of a single 15-minute-and-33-second progressive rock epic titled <strong>"Escape Velocity (Ad Astra),"</strong> the track served as Cassidy O'Connell's musical autobiography[cite: 18]. Cassidy wrote the lyrics, composed the complex score, and conducted the band through a sweeping journey from trauma to artistic transcendence[cite: 18]. To this day, she considers it her most important professional work[cite: 18].
+                                    However, the defining achievement of the album—and the early label—was Side B. Consisting entirely of a single 15-minute-and-33-second progressive rock epic titled <strong>"Escape Velocity (Ad Astra),"</strong> the track served as Cassidy O'Connell's musical autobiography. Cassidy wrote the lyrics, composed the complex score, and conducted the band through a sweeping journey from trauma to artistic transcendence. To this day, she considers it her most important professional work.
                                 </p>
                                 
                                 <a href="/engine-room/artists/stardust-engine/discography/1995-the-warehouse-tapes" class="btn btn-outline-info text-dark btn-sm text-uppercase fw-bold font-monospace" aria-label="Access The Warehouse Tapes album archive">
@@ -292,19 +292,19 @@ $album_web_path = "https://assets.raggiesoft.com/engine-room-records/artists/the
                 <div class="card border-secondary bg-dark text-white shadow-sm">
                     <div class="card-body p-4 p-md-5" style="line-height: 1.7;">
                         <p class="text-white-75">
-                            Engine Room Records had proven it could survive independently, but in 1996, a completely random event transformed the label from a self-sustaining warehouse operation into an unassailable financial juggernaut[cite: 18]. 
+                            Engine Room Records had proven it could survive independently, but in 1996, a completely random event transformed the label from a self-sustaining warehouse operation into an unassailable financial juggernaut. 
                         </p>
                         <p class="text-white-75">
-                            During a transit stop at a gas station in Daleville, Virginia, Cassidy O'Connell purchased a "Quick Pick" ticket for the <em>Mega Millions</em> lottery. She allowed the machine to select the numbers, keeping the ticket simply because she liked the geometric pattern the numbers formed on the printed slip—a visual harmony that deeply appealed to her autistic mind[cite: 18].
+                            During a transit stop at a gas station in Daleville, Virginia, Cassidy O'Connell purchased a "Quick Pick" ticket for the <em>Mega Millions</em> lottery. She allowed the machine to select the numbers, keeping the ticket simply because she liked the geometric pattern the numbers formed on the printed slip—a visual harmony that deeply appealed to her autistic mind.
                         </p>
                         <p class="text-white-75">
-                            That single ticket was the sole winner of a historic <strong>$2.04 Billion</strong> annuitized jackpot[cite: 18]. 
+                            That single ticket was the sole winner of a historic <strong>$2.04 Billion</strong> annuitized jackpot. 
                         </p>
                         <p class="text-white-75">
-                            Cassidy did not go to the press[cite: 18]. She simply handed the winning ticket to her sister, Holly, with a single directive: <em>"Build us a fortress so we never have to be hurt again."</em>[cite: 18]
+                            Cassidy did not go to the press. She simply handed the winning ticket to her sister, Holly, with a single directive: <em>"Build us a fortress so we never have to be hurt again."</em>
                         </p>
                         <p class="text-white-75 mb-0">
-                            The family opted for the lump-sum payout in absolute privacy[cite: 18]. Armed with her J.D. and her newly minted 1996 credential as a federally authorized Enrolled Agent, Holly personally navigated the IRS payout[cite: 18]. She immediately established the <strong>Forger Nation Trust</strong> to manage the wealth, weaponizing the capital to purchase state-of-the-art logistics fleets and infrastructure for Engine Room Records, permanently insulating the band from the rest of the music industry[cite: 18].
+                            The family opted for the lump-sum payout in absolute privacy. Armed with her J.D. and her newly minted 1996 credential as a federally authorized Enrolled Agent, Holly personally navigated the IRS payout. She immediately established the <strong>Forger Nation Trust</strong> to manage the wealth, weaponizing the capital to purchase state-of-the-art logistics fleets and infrastructure for Engine Room Records, permanently insulating the band from the rest of the music industry.
                         </p>
                     </div>
                 </div>
@@ -325,10 +325,10 @@ $album_web_path = "https://assets.raggiesoft.com/engine-room-records/artists/the
                             </div>
                             <div class="col-lg-9" style="line-height: 1.7;">
                                 <p class="text-body-secondary">
-                                    Originally conceptualized as the B-Side of <em>The Warehouse Tapes</em>, this 15-minute progressive rock magnum opus was elevated to a monumental A-Side EP release in 1996[cite: 31]. Financed by their newly secured independence, this release officially ended their "Wilderness Years."[cite: 31]
+                                    Originally conceptualized as the B-Side of <em>The Warehouse Tapes</em>, this 15-minute progressive rock magnum opus was elevated to a monumental A-Side EP release in 1996. Financed by their newly secured independence, this release officially ended their "Wilderness Years."
                                 </p>
                                 <p class="text-body-secondary mb-4">
-                                    Knowing mainstream radio would never play a 15-minute suite, Manager Holly O'Connell cut a condensed 5-minute "Trojan Horse" edit[cite: 31]. By stripping away the ambient transitions and focusing on the core narrative arc, this strategic edit successfully charted, introducing millions of new fans to the band's independent sound and acting as the rocket that launched their "Freedom Era."[cite: 31]
+                                    Knowing mainstream radio would never play a 15-minute suite, Manager Holly O'Connell cut a condensed 5-minute "Trojan Horse" edit. By stripping away the ambient transitions and focusing on the core narrative arc, this strategic edit successfully charted, introducing millions of new fans to the band's independent sound and acting as the rocket that launched their "Freedom Era."
                                 </p>
                                 
                                 <a href="/engine-room/artists/stardust-engine/discography/1996-ad-astra-single" class="btn btn-outline-info text-dark btn-sm text-uppercase fw-bold font-monospace" aria-label="Access the Ad Astra EP archive">
@@ -355,16 +355,16 @@ $album_web_path = "https://assets.raggiesoft.com/engine-room-records/artists/the
                             </div>
                             <div class="col-lg-9" style="line-height: 1.7;">
                                 <p class="text-white-75">
-                                    In 1997, The Stardust Engine released <em>Hard Reset</em>[cite: 18]. This massive, two-disc progressive rock epic was Engine Room Records' first foray into traditional commercial distribution[cite: 18]. Stepping out of the warehouse, Holly O'Connell signed sweeping contracts for professional CD stamping, cassette duplication, and global retail placement[cite: 18]. However, it was her pricing strategy that triggered an industry-wide panic[cite: 18].
+                                    In 1997, The Stardust Engine released <em>Hard Reset</em>. This massive, two-disc progressive rock epic was Engine Room Records' first foray into traditional commercial distribution. Stepping out of the warehouse, Holly O'Connell signed sweeping contracts for professional CD stamping, cassette duplication, and global retail placement. However, it was her pricing strategy that triggered an industry-wide panic.
                                 </p>
                                 <p class="text-white-75">
-                                    At the time, double-disc albums retailed for $24.99[cite: 18]. Holly set the retail price for <em>Hard Reset</em> at a staggering $13.99—the standard cost of a single-disc album[cite: 18]. She accomplished this by weaponizing the Forger Nation Trust's massive, risk-free U.S. Treasury yields[cite: 18]. She used the monthly interest generated by the 1996 lottery windfall to personally subsidize the manufacturing costs of the second disc, ensuring the pressing plants and distributors still received their full, premium cut[cite: 18]. 
+                                    At the time, double-disc albums retailed for $24.99. Holly set the retail price for <em>Hard Reset</em> at a staggering $13.99—the standard cost of a single-disc album. She accomplished this by weaponizing the Forger Nation Trust's massive, risk-free U.S. Treasury yields. She used the monthly interest generated by the 1996 lottery windfall to personally subsidize the manufacturing costs of the second disc, ensuring the pressing plants and distributors still received their full, premium cut. 
                                 </p>
                                 <p class="text-white-75">
-                                    Terrified by this unassailable market disruption, a coalition of major labels—led by their former captors, <strong>Apex Records</strong>, and the conglomerate <strong>Omni-Global Media Corporation</strong>—filed a massive antitrust injunction to halt the album's release, accusing Engine Room Records of predatory pricing[cite: 18].
+                                    Terrified by this unassailable market disruption, a coalition of major labels—led by their former captors, <strong>Apex Records</strong>, and the conglomerate <strong>Omni-Global Media Corporation</strong>—filed a massive antitrust injunction to halt the album's release, accusing Engine Room Records of predatory pricing.
                                 </p>
                                 <p class="text-white-75 mb-4">
-                                    Acting as lead counsel, Holly dismantled their coalition in federal court[cite: 18]. She successfully proved that because she was paying all vendors their full market rate out of her own pocket, there was no illegal market manipulation—just a superior, privately funded business model they couldn't compete with[cite: 18]. The injunction was dismissed, and <em>Hard Reset</em> dominated the global charts[cite: 18]. Realizing she needed the power to strike back at the conglomerates on their home turf, this battle prompted Holly to sit for the New York State Bar the following year[cite: 18].
+                                    Acting as lead counsel, Holly dismantled their coalition in federal court. She successfully proved that because she was paying all vendors their full market rate out of her own pocket, there was no illegal market manipulation—just a superior, privately funded business model they couldn't compete with. The injunction was dismissed, and <em>Hard Reset</em> dominated the global charts. Realizing she needed the power to strike back at the conglomerates on their home turf, this battle prompted Holly to sit for the New York State Bar the following year.
                                 </p>
                                 
                                 <a href="/engine-room/artists/stardust-engine/discography/1997-hard-reset" class="btn btn-outline-primary btn-sm text-uppercase fw-bold font-monospace" aria-label="Access the Hard Reset album archive">
@@ -386,10 +386,10 @@ $album_web_path = "https://assets.raggiesoft.com/engine-room-records/artists/the
                 <div class="card border-secondary bg-body-tertiary shadow-sm">
                     <div class="card-body p-4 p-md-5" style="line-height: 1.7;">
                         <p class="text-body-secondary">
-                            While <em>Hard Reset</em> was a commercial triumph, its most enduring legacy was the perfection of the band's signature sonic architecture[cite: 18]. On the track "Moon 1 (Tidal Lock)", Cassidy O'Connell finally realized the exact atmospheric "Space Rock" sound she had envisioned in 1987—a sound Apex Records had rejected in favor of safe dance-pop[cite: 18].
+                            While <em>Hard Reset</em> was a commercial triumph, its most enduring legacy was the perfection of the band's signature sonic architecture. On the track "Moon 1 (Tidal Lock)", Cassidy O'Connell finally realized the exact atmospheric "Space Rock" sound she had envisioned in 1987—a sound Apex Records had rejected in favor of safe dance-pop.
                         </p>
                         <p class="text-body-secondary">
-                            The fans and music press quickly dubbed this new genre <strong>"80s Cosmic Pop."</strong>[cite: 18] However, Holly O'Connell recognized the immense value of Cassidy's engineering genius[cite: 18]. Through Engine Room Records, Holly immediately weaponized the sound, officially registering it with the USPTO as <strong>The Cosmic Tidal Lock Sound&reg;</strong>[cite: 18]. This impenetrable legal armor allowed Holly to issue immediate cease-and-desist orders to any rival studio or corporate entity attempting to replicate Cassidy's proprietary synth-layering techniques[cite: 18].
+                            The fans and music press quickly dubbed this new genre <strong>"80s Cosmic Pop."</strong> However, Holly O'Connell recognized the immense value of Cassidy's engineering genius. Through Engine Room Records, Holly immediately weaponized the sound, officially registering it with the USPTO as <strong>The Cosmic Tidal Lock Sound&reg;</strong>. This impenetrable legal armor allowed Holly to issue immediate cease-and-desist orders to any rival studio or corporate entity attempting to replicate Cassidy's proprietary synth-layering techniques.
                         </p>
 
                         <div class="alert bg-black border border-secondary mt-4 mb-0 shadow-sm text-white">
@@ -397,14 +397,14 @@ $album_web_path = "https://assets.raggiesoft.com/engine-room-records/artists/the
                                 <i class="fa-duotone fa-sliders-up me-2" aria-hidden="true"></i>Audio Engineering (2026 Reality)
                             </h5>
                             <p class="text-white-75 small mb-3">
-                                In the real world, "The Cosmic Tidal Lock Sound&reg;" is a fictional trademark[cite: 18]. It serves as the narrative wrapper for the proprietary prompt architecture used within a commercial <strong>Suno Premium</strong> workspace to generate the band's music[cite: 18].
+                                In the real world, "The Cosmic Tidal Lock Sound&reg;" is a fictional trademark. It serves as the narrative wrapper for the proprietary prompt architecture used within a commercial <strong>Suno Premium</strong> workspace to generate the band's music.
                             </p>
                             <ul class="text-white-75 small mb-0">
                                 <li class="mb-2">
-                                    <strong>The Studio Master:</strong> Tracks are generated using a highly specific Style Prompt to honor Cassidy's solo architecture: <em>"1980s synth-pop, mid-tempo space-rock, driving 4/4 gated drum beat, shimmering analog synthesizers, melodic fretless bassline, crystal clear female vocals, lush spatial reverb, celestial atmosphere."</em>[cite: 18]
+                                    <strong>The Studio Master:</strong> Tracks are generated using a highly specific Style Prompt to honor Cassidy's solo architecture: <em>"1980s synth-pop, mid-tempo space-rock, driving 4/4 gated drum beat, shimmering analog synthesizers, melodic fretless bassline, crystal clear female vocals, lush spatial reverb, celestial atmosphere."</em>
                                 </li>
                                 <li>
-                                    <strong>The Live Engineering:</strong> To simulate the band's stadium tours, environmental tags (e.g., <em>live stadium concert, massive crowd cheering, echoing stadium acoustics</em>) are directly appended to the base Studio Master prompt[cite: 18]. Utilizing Suno's "Cover" function (Audio Influence: 73%, Weirdness: 0%) alongside bracketed lyric cues like <code>[Low Synth Drone Intro]</code> or <code>[Seamless Transition]</code>, the engine physically alters the acoustic space to replicate a massive live performance[cite: 18].
+                                    <strong>The Live Engineering:</strong> To simulate the band's stadium tours, environmental tags (e.g., <em>live stadium concert, massive crowd cheering, echoing stadium acoustics</em>) are directly appended to the base Studio Master prompt. Utilizing Suno's "Cover" function (Audio Influence: 73%, Weirdness: 0%) alongside bracketed lyric cues like <code>[Low Synth Drone Intro]</code> or <code>[Seamless Transition]</code>, the engine physically alters the acoustic space to replicate a massive live performance.
                                 </li>
                             </ul>
                         </div>
@@ -428,13 +428,13 @@ $album_web_path = "https://assets.raggiesoft.com/engine-room-records/artists/the
                             </div>
                             <div class="col-lg-9" style="line-height: 1.7;">
                                 <p class="text-white-75">
-                                    Capitalizing on the massive global momentum of <em>Hard Reset</em>, Engine Room Records closed out 1997 by releasing the band's first retrospective compilation: <em>Forger Nation War Chest</em>[cite: 18, 32]. 
+                                    Capitalizing on the massive global momentum of <em>Hard Reset</em>, Engine Room Records closed out 1997 by releasing the band's first retrospective compilation: <em>Forger Nation War Chest</em>. 
                                 </p>
                                 <p class="text-white-75">
-                                    Because Holly O'Connell successfully forced Apex Records to surrender the band's master tapes during the 1992 <em>Friction</em> settlement, Engine Room Records held total control over their back catalog[cite: 18]. This allowed the band to curate a single-disc, 17-track compilation that actively told the story of their "escape velocity."[cite: 18] 
+                                    Because Holly O'Connell successfully forced Apex Records to surrender the band's master tapes during the 1992 <em>Friction</em> settlement, Engine Room Records held total control over their back catalog. This allowed the band to curate a single-disc, 17-track compilation that actively told the story of their "escape velocity." 
                                 </p>
                                 <p class="text-white-75 mb-4">
-                                    The album was divided into distinct narrative acts[cite: 18]. It forced the pristine, studio-mandated pop hits of their "gilded cage" era (like <em>Electric Color</em> and <em>Dancing in the Neon</em>) to sit side-by-side with the furious, unpolished guitar rock of their warehouse years[cite: 18]. It wasn't just a collection of hits; it was a carefully weaponized timeline, proving to the world that The Stardust Engine had successfully outmaneuvered the corporate machine and reclaimed their true sound[cite: 18].
+                                    The album was divided into distinct narrative acts. It forced the pristine, studio-mandated pop hits of their "gilded cage" era (like <em>Electric Color</em> and <em>Dancing in the Neon</em>) to sit side-by-side with the furious, unpolished guitar rock of their warehouse years. It wasn't just a collection of hits; it was a carefully weaponized timeline, proving to the world that The Stardust Engine had successfully outmaneuvered the corporate machine and reclaimed their true sound.
                                 </p>
                                 
                                 <a href="/engine-room/artists/stardust-engine/discography/1997-forger-nation-war-chest" class="btn btn-outline-secondary btn-sm text-uppercase fw-bold font-monospace" aria-label="Access the Forger Nation War Chest album archive">
@@ -507,13 +507,13 @@ $album_web_path = "https://assets.raggiesoft.com/engine-room-records/artists/the
                             </div>
                             <div class="col-lg-9" style="line-height: 1.7;">
                                 <p class="text-body-secondary">
-                                    In 2001, Engine Room Records independently resurrected and released <em>Midnight Drivers</em>, the lost 1987 sophomore concept album[cite: 18]. Originally rejected by Apex Records for its moody, atmospheric Darkwave tone, the master tapes sat locked in the vault for over a decade[cite: 18, 34].
+                                    In 2001, Engine Room Records independently resurrected and released <em>Midnight Drivers</em>, the lost 1987 sophomore concept album. Originally rejected by Apex Records for its moody, atmospheric Darkwave tone, the master tapes sat locked in the vault for over a decade.
                                 </p>
                                 <p class="text-body-secondary">
-                                    Because the title track, "Midnight Drivers," was the only song actually written during the fraught 1987 sessions, the band had to build an entire retro-engineered album around it from scratch in 2001[cite: 18, 34]. The resulting album finally bridges the gap between the vibrant city lights of Side A and the isolating sanctuary of Side B[cite: 18, 34].
+                                    Because the title track, "Midnight Drivers," was the only song actually written during the fraught 1987 sessions, the band had to build an entire retro-engineered album around it from scratch in 2001. The resulting album finally bridges the gap between the vibrant city lights of Side A and the isolating sanctuary of Side B.
                                 </p>
                                 <p class="text-body-secondary mb-4">
-                                    Side A acts as an explosive, high-speed synth-pop prologue[cite: 18]. This brilliant pacing sets the stage for a vibrant night out in the city[cite: 18, 34], allowing the raw, untouched 1987 master of the title track to open Side B with maximum impact[cite: 18, 34]. It pulls the listener out of the bright lights and directly into the dark, finding sanctuary in a moving car at night[cite: 18].
+                                    Side A acts as an explosive, high-speed synth-pop prologue. This brilliant pacing sets the stage for a vibrant night out in the city, allowing the raw, untouched 1987 master of the title track to open Side B with maximum impact. It pulls the listener out of the bright lights and directly into the dark, finding sanctuary in a moving car at night.
                                 </p>
                                 
                                 <a href="/engine-room/artists/stardust-engine/discography/2001-midnight-drivers" class="btn btn-outline-dark btn-sm text-uppercase fw-bold font-monospace" aria-label="Access the Midnight Drivers album archive">
