@@ -1,4 +1,4 @@
-<footer class="mt-auto bg-light text-body border-top border-secondary py-5">
+<footer class="mt-auto border-top border-secondary py-5">
     <div class="container">
         <div class="row gy-4">
             
