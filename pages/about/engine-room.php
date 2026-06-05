@@ -28,7 +28,7 @@ $pageTitle = "About Engine Room Records";
         </p>
         <div class="d-inline-block border-top border-secondary pt-2">
             <p class="text-secondary small text-uppercase letter-spacing-2 mb-0">
-                Est. 1992 &bull; Blacksburg, VA &bull; Independent
+                Est. 2026 &bull; Norfolk, VA &bull; Independent
             </p>
         </div>
     </div>
@@ -43,7 +43,7 @@ $pageTitle = "About Engine Room Records";
                 <i class="fa-solid fa-industry me-2" aria-hidden="true"></i>Corporate History
             </h2>
             <p class="lead text-body-emphasis">
-                Founded in a converted warehouse in the industrial district of Blacksburg, <strong>Engine Room Records</strong> began as a total rejection of the polished, over-produced corporate pop machine.
+                Founded in Norfolk, Virginia, <strong>Engine Room Records</strong> began as a total rejection of the polished, over-produced corporate pop machine.
             </p>
             <p class="text-body-secondary">
                 We specialize in <strong>Industrial Rock, Synthwave, and Dark Ambient</strong> architectural soundscapes. Our artists don't just write hooks; they manipulate analog frequencies. They weld sonic environments.
@@ -59,7 +59,7 @@ $pageTitle = "About Engine Room Records";
                         <p class="small text-white-50 mb-0 fst-italic">
                             "If it doesn't sound like it was recorded inside a running turbine, we don't want it."
                         </p>
-                        <p class="small text-secondary mt-2 mb-0 text-end">- The Founder, 1993</p>
+                        <p class="small text-secondary mt-2 mb-0 text-end">- The Founder</p>
                     </div>
                 </div>
             </div>
