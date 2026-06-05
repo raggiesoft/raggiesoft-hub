@@ -37,7 +37,7 @@ $pageTitle = "Engine Room Records | The Gates Remain Closed";
 
 <div class="engine-hero py-5 mb-5 shadow-lg">
     <div class="container text-center py-5">
-        <i class="fa-duotone fa-building-shield fa-4x text-primary mb-4 opacity-75"></i>
+        <i class="fa-duotone fa-building-shield fa-4x text-primary mb-4 opacity-75" aria-hidden="true"></i>
         <h1 class="display-3 fw-bold text-uppercase mb-3 brand-font" style="letter-spacing: 2px;">
             Engine Room Records
         </h1>
@@ -45,14 +45,14 @@ $pageTitle = "Engine Room Records | The Gates Remain Closed";
             A closed-ecosystem production facility.
         </p>
         <span class="badge bg-primary text-uppercase px-3 py-2 fs-6 border border-dark shadow-sm">
-            <i class="fa-solid fa-lock me-2"></i>The Gates Remain Closed
+            <i class="fa-solid fa-lock me-2" aria-hidden="true"></i>The Gates Remain Closed
         </span>
     </div>
 </div>
 
 <div class="container pb-5">
     
-    <div class="row mb-5">
+    <div class="row mb-4">
         <div class="col-lg-10 mx-auto">
             <div class="card studio-card containment-unit p-4 p-md-5 text-center shadow-sm">
                 <div class="d-flex justify-content-center align-items-center mb-2">
@@ -71,7 +71,34 @@ $pageTitle = "Engine Room Records | The Gates Remain Closed";
                 
                 <div>
                     <a href="/engine-room/artists" class="btn btn-outline-secondary btn-lg rounded-0 text-uppercase fw-bold tech-font px-4 w-100 w-sm-auto">
-                        Access Artist Directory <i class="fa-solid fa-chevron-right ms-2"></i>
+                        Access Artist Directory <i class="fa-solid fa-chevron-right ms-2" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mb-5">
+        <div class="col-lg-10 mx-auto">
+            <div class="card studio-card containment-unit p-4 p-md-5 text-center shadow-sm">
+                <div class="d-flex justify-content-center align-items-center mb-3">
+                    <i class="fa-duotone fa-book-journal-whills fa-2x text-secondary me-3 opacity-75" aria-hidden="true"></i>
+                    <h2 class="h3 fw-bold text-uppercase mb-0">Company History</h2>
+                </div>
+                
+                <div class="mb-4">
+                    <span class="badge bg-secondary bg-opacity-10 text-secondary border border-secondary text-uppercase px-2 py-1 font-monospace small">
+                        <i class="fa-solid fa-mask me-1" aria-hidden="true"></i> 100% Fictional Lore
+                    </span>
+                </div>
+                
+                <p class="text-body-emphasis mb-5 mx-auto" style="max-width: 650px;">
+                    Engine Room Records operates within a deeply crafted narrative universe. Explore the complete, fictional timeline of the label and its artists—from the gilded pop cages of the 1980s to the establishment of the modern independent fortress.
+                </p>
+                
+                <div>
+                    <a href="/engine-room/history" class="btn btn-outline-secondary btn-lg rounded-0 text-uppercase fw-bold tech-font px-4 w-100 w-sm-auto">
+                        Access The Archives <i class="fa-solid fa-clock-rotate-left ms-2" aria-hidden="true"></i>
                     </a>
                 </div>
             </div>
@@ -88,7 +115,7 @@ $pageTitle = "Engine Room Records | The Gates Remain Closed";
         <div class="col-md-6">
             <div class="card studio-card b2b-card h-100 p-4">
                 <div class="d-flex align-items-center mb-3">
-                    <i class="fa-duotone fa-handshake fa-2x text-warning me-3 opacity-75"></i>
+                    <i class="fa-duotone fa-handshake fa-2x text-warning me-3 opacity-75" aria-hidden="true"></i>
                     <h3 class="h5 fw-bold text-uppercase mb-0">Commercial Sync</h3>
                 </div>
                 <p class="text-body-emphasis mb-4 small">
@@ -96,7 +123,7 @@ $pageTitle = "Engine Room Records | The Gates Remain Closed";
                 </p>
                 <div class="mt-auto">
                     <a href="/engine-room/commercial-licensing" class="btn btn-outline-warning btn-sm rounded-0 text-uppercase fw-bold w-100 tech-font">
-                        Licensing Portal <i class="fa-solid fa-arrow-right ms-2"></i>
+                        Licensing Portal <i class="fa-solid fa-arrow-right ms-2" aria-hidden="true"></i>
                     </a>
                 </div>
             </div>
@@ -105,7 +132,7 @@ $pageTitle = "Engine Room Records | The Gates Remain Closed";
         <div class="col-md-6">
             <div class="card studio-card b2b-card h-100 p-4">
                 <div class="d-flex align-items-center mb-3">
-                    <i class="fa-duotone fa-tower-broadcast fa-2x text-info me-3 opacity-75"></i>
+                    <i class="fa-duotone fa-tower-broadcast fa-2x text-info me-3 opacity-75" aria-hidden="true"></i>
                     <h3 class="h5 fw-bold text-uppercase mb-0">DSP Operations</h3>
                 </div>
                 <p class="text-body-emphasis mb-4 small">
@@ -113,7 +140,7 @@ $pageTitle = "Engine Room Records | The Gates Remain Closed";
                 </p>
                 <div class="mt-auto">
                     <a href="/engine-room/dsp-verification" class="btn btn-outline-info btn-sm rounded-0 text-uppercase fw-bold w-100 tech-font text-body-emphasis">
-                        Verify Artists <i class="fa-solid fa-arrow-right ms-2"></i>
+                        Verify Artists <i class="fa-solid fa-arrow-right ms-2" aria-hidden="true"></i>
                     </a>
                 </div>
             </div>
@@ -124,7 +151,7 @@ $pageTitle = "Engine Room Records | The Gates Remain Closed";
         <div class="col-lg-10 mx-auto">
             <div class="incinerator-warning p-4 shadow-sm mb-4">
                 <h4 class="text-primary fw-bold text-uppercase h5 mb-3">
-                    <i class="fa-solid fa-triangle-exclamation me-2"></i>Communications Protocol
+                    <i class="fa-solid fa-triangle-exclamation me-2" aria-hidden="true"></i>Communications Protocol
                 </h4>
                 <p class="small mb-2 text-body-emphasis">
                     General inquiries may be directed to <code class="bg-dark text-light px-1">inquiries@engineroom-records.com</code>.
