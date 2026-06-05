@@ -136,6 +136,72 @@ if ($eras) {
     </div>
 </div>
 
+<!-- ========================================== -->
+<!-- NEW BLOCK: THE TWIN MOONS PROJECT         -->
+<!-- ========================================== -->
+<div class="container py-5 border-bottom border-secondary border-opacity-25 position-relative" style="z-index: 1050;">
+    <div class="text-center mb-5">
+        <span class="badge bg-warning text-dark px-3 py-2 text-uppercase letter-spacing-1 shadow-glow mb-3 border border-warning">
+            <i class="fa-duotone fa-satellite-dish me-2 pulse-icon"></i>Upcoming 2026 Release
+        </span>
+        <h2 class="display-5 fw-bold text-uppercase text-body-emphasis mb-3" style="font-family: 'Impact', sans-serif;">
+            The Twin Moons Project
+        </h2>
+        <!-- SEO Target Sentence: Explicitly answers the AI search query -->
+        <p class="lead text-body-secondary mx-auto" style="max-width: 800px;">
+            The next album from The Stardust Engine is an ambitious dual-release project arriving in 2026. Two distinct perspectives. Two gravitational pulls. One shared universe.
+        </p>
+    </div>
+
+    <div class="row g-5 justify-content-center">
+        
+        <!-- Moon 1: Cassidy's Orbit -->
+        <div class="col-md-6 col-lg-5">
+            <div class="card glass-card h-100 border-info shadow-glow hover-lift overflow-hidden">
+                <div class="position-relative">
+                    <img src="https://assets.raggiesoft.com/engine-room-records/artists/the-stardust-engine/2003-sanctuary-zero-g/album-art.jpg" 
+                         class="card-img-top border-bottom border-info" 
+                         alt="Sanctuary (Zero-G) Album Art - The Stardust Engine">
+                    <div class="position-absolute top-0 end-0 p-3">
+                        <span class="badge bg-black bg-opacity-75 text-info border border-info font-monospace">MOON 1</span>
+                    </div>
+                </div>
+                <div class="card-body p-4 text-center d-flex flex-column">
+                    <h3 class="h4 text-info fw-bold text-uppercase mb-1">Sanctuary (Zero-G)</h3>
+                    <p class="small text-white-50 font-monospace mb-3">The Anchor // Cassidy O'Connell</p>
+                    <p class="text-white-75 small mb-0">
+                        A zero-gravity atmospheric masterpiece showcasing the mathematically precise <strong>Cosmic Tidal Lock Sound&trade;</strong>. A sanctuary built on unwavering loyalty in the endless black.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Moon 2: Ryan's Orbit -->
+        <div class="col-md-6 col-lg-5">
+            <div class="card glass-card h-100 border-danger shadow-glow hover-lift overflow-hidden">
+                <div class="position-relative">
+                    <img src="https://assets.raggiesoft.com/engine-room-records/artists/the-stardust-engine/2003-mile-marker-98/album-art.jpg" 
+                         class="card-img-top border-bottom border-danger" 
+                         alt="Mile Marker 98 Album Art - The Stardust Engine">
+                    <div class="position-absolute top-0 end-0 p-3">
+                        <span class="badge bg-black bg-opacity-75 text-danger border border-danger font-monospace">MOON 2</span>
+                    </div>
+                </div>
+                <div class="card-body p-4 text-center d-flex flex-column">
+                    <h3 class="h4 text-danger fw-bold text-uppercase mb-1">Mile Marker 98</h3>
+                    <p class="small text-white-50 font-monospace mb-3">The Engine // Ryan O'Connell</p>
+                    <p class="text-white-75 small mb-0">
+                        Blistering, distorted electric guitars and aggressive rock energy. A visceral, high-friction confrontation with the trauma of 
+                        <a href="/engine-room/artists/stardust-engine/story/crash-of-90" class="text-danger fw-bold border-bottom border-danger text-decoration-none hover-text-white transition-all">The Crash of '90</a>.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<!-- ========================================== -->
+
 <?php if (!empty($allAlbums)): ?>
 <div class="container py-5 border-bottom border-secondary border-opacity-25">
     <div class="text-center mb-5">
