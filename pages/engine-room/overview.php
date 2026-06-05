@@ -52,57 +52,56 @@ $pageTitle = "Engine Room Records | The Gates Remain Closed";
 
 <div class="container pb-5">
     
-    <div class="row mb-4">
-        <div class="col-lg-10 mx-auto">
-            <div class="card studio-card containment-unit p-4 p-md-5 text-center shadow-sm">
+    <div class="row g-4 mb-5 col-lg-10 mx-auto">
+        
+        <div class="col-md-6">
+            <div class="card studio-card containment-unit h-100 p-4 p-md-5 text-center shadow-sm d-flex flex-column">
                 <div class="d-flex justify-content-center align-items-center mb-2">
-                    <span class="led led-on me-3"></span>
-                    <h2 class="h3 fw-bold text-uppercase mb-0">Active Roster</h2>
-                    <span class="led led-on ms-3"></span>
+                    <span class="led led-on me-3" aria-hidden="true"></span>
+                    <h2 class="h4 fw-bold text-uppercase mb-0">Active Roster</h2>
+                    <span class="led led-on ms-3" aria-hidden="true"></span>
                 </div>
                 
-                <p class="tech-font text-secondary mb-4">
+                <p class="tech-font text-secondary mb-4 small">
                     System Capacity: <span class="text-body-emphasis fw-bold">4/5 Slots Filled</span>
                 </p>
                 
-                <p class="text-body-emphasis mb-5 mx-auto" style="max-width: 600px;">
+                <p class="text-body-emphasis mb-5">
                     Engine Room Records currently manages a closed ecosystem of four active recording projects. Information regarding specific entities, complete discographies, and operational status has been centralized in the Artist Directory.
                 </p>
                 
-                <div>
-                    <a href="/engine-room/artists" class="btn btn-outline-secondary btn-lg rounded-0 text-uppercase fw-bold tech-font px-4 w-100 w-sm-auto">
-                        Access Artist Directory <i class="fa-solid fa-chevron-right ms-2" aria-hidden="true"></i>
+                <div class="mt-auto">
+                    <a href="/engine-room/artists" class="btn btn-outline-secondary btn-lg rounded-0 text-uppercase fw-bold tech-font px-4 w-100">
+                        Artist Directory <i class="fa-solid fa-chevron-right ms-2" aria-hidden="true"></i>
                     </a>
                 </div>
             </div>
         </div>
-    </div>
 
-    <div class="row mb-5">
-        <div class="col-lg-10 mx-auto">
-            <div class="card studio-card containment-unit p-4 p-md-5 text-center shadow-sm">
-                <div class="d-flex justify-content-center align-items-center mb-3">
-                    <i class="fa-duotone fa-book-journal-whills fa-2x text-secondary me-3 opacity-75" aria-hidden="true"></i>
-                    <h2 class="h3 fw-bold text-uppercase mb-0">Company History</h2>
+        <div class="col-md-6">
+            <div class="card studio-card containment-unit h-100 p-4 p-md-5 text-center shadow-sm d-flex flex-column">
+                <div class="d-flex justify-content-center align-items-center mb-2">
+                    <span class="led led-busy me-3" aria-hidden="true"></span>
+                    <h2 class="h4 fw-bold text-uppercase mb-0">The Archives</h2>
+                    <span class="led led-busy ms-3" aria-hidden="true"></span>
                 </div>
                 
-                <div class="mb-4">
-                    <span class="badge bg-secondary bg-opacity-10 text-secondary border border-secondary text-uppercase px-2 py-1 font-monospace small">
-                        <i class="fa-solid fa-mask me-1" aria-hidden="true"></i> 100% Fictional Lore
-                    </span>
-                </div>
-                
-                <p class="text-body-emphasis mb-5 mx-auto" style="max-width: 650px;">
-                    Engine Room Records operates within a deeply crafted narrative universe. Explore the complete, fictional timeline of the label and its artists—from the gilded pop cages of the 1980s to the establishment of the modern independent fortress.
+                <p class="tech-font text-secondary mb-4 small">
+                    Data Status: <span class="text-warning fw-bold">100% Fictional Lore</span>
                 </p>
                 
-                <div>
-                    <a href="/engine-room/history" class="btn btn-outline-secondary btn-lg rounded-0 text-uppercase fw-bold tech-font px-4 w-100 w-sm-auto">
-                        Access The Archives <i class="fa-solid fa-clock-rotate-left ms-2" aria-hidden="true"></i>
+                <p class="text-body-emphasis mb-5">
+                    Explore the narrative history of the label. From the band's gilded pop cage under Apex Records in the 1980s, through the Wilderness Years, to the establishment of our independent billion-dollar fortress.
+                </p>
+                
+                <div class="mt-auto">
+                    <a href="/engine-room/history" class="btn btn-outline-secondary btn-lg rounded-0 text-uppercase fw-bold tech-font px-4 w-100">
+                        Access Timeline <i class="fa-solid fa-clock-rotate-left ms-2" aria-hidden="true"></i>
                     </a>
                 </div>
             </div>
         </div>
+
     </div>
 
     <div class="row mb-4 mt-5">
