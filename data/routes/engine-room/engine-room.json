@@ -19,6 +19,7 @@
     "showSidebar": false
   },
   "/engine-room/artists": {
+    "sidebar": "engine-room/sidebar-artists",
     "view": "pages/engine-room/artists/overview",
     "title": "Artists Archive | Engine Room Records",
     "ogDescription": "A comprehensive archive of artists, albums, and historical records from Engine Room Records."

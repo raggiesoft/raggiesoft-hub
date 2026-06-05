@@ -1,6 +1,6 @@
 <?php
 // pages/engine-room/overview.php
-// The Corporate Front Gate of Engine Room Records, LLC.
+// The Corporate Front Gate of Engine Room Records.
 
 $pageTitle = "Engine Room Records | The Gates Remain Closed";
 ?>
@@ -47,88 +47,31 @@ $pageTitle = "Engine Room Records | The Gates Remain Closed";
 
 <div class="container pb-5">
     
-    <!-- THE ROSTER (2x2 GRID) -->
+    <!-- THE ROSTER DIRECTORY LINK -->
     <div class="row mb-5">
-        <div class="col-12 d-flex justify-content-between align-items-end border-bottom border-secondary pb-2 mb-4">
-            <h2 class="h4 text-uppercase fw-bold mb-0">
-                Active Projects
-            </h2>
-            <span class="tech-font text-secondary">
-                Capacity: <span class="text-body-emphasis fw-bold">4/5</span>
-            </span>
-        </div>
-    </div>
-
-    <div class="row row-cols-1 row-cols-md-2 g-4 mb-5">
-        
-        <!-- Slot 1: The Stardust Engine -->
-        <div class="col">
-            <div class="card studio-card containment-unit h-100 p-4">
-                <div class="d-flex justify-content-between align-items-start mb-1">
-                    <h3 class="h5 fw-bold text-uppercase mb-0">The Stardust Engine</h3>
-                    <span title="Status: Online" class="mt-1"><span class="led led-on"></span></span>
+        <div class="col-lg-10 mx-auto">
+            <div class="card studio-card containment-unit p-4 p-md-5 text-center shadow-sm">
+                <div class="d-flex justify-content-center align-items-center mb-2">
+                    <span class="led led-on me-3"></span>
+                    <h2 class="h3 fw-bold text-uppercase mb-0">Active Roster</h2>
+                    <span class="led led-on ms-3"></span>
                 </div>
-                <p class="tech-font text-body-secondary mb-3">Est. 1992 | Rock / Space Rock</p>
-                <p class="text-body-emphasis mb-4">The flagship entity. Unapologetic, high-friction, arena-scale rock engineered for maximum seismic impact.</p>
-                <div class="mt-auto">
-                    <a href="/engine-room/artists/stardust-engine" class="btn btn-outline-secondary btn-sm rounded-0 text-uppercase fw-bold w-100 tech-font">
-                        Access Files <i class="fa-solid fa-chevron-right ms-2"></i>
+                
+                <p class="tech-font text-secondary mb-4">
+                    System Capacity: <span class="text-body-emphasis fw-bold">4/5 Slots Filled</span>
+                </p>
+                
+                <p class="text-body-emphasis mb-5 mx-auto" style="max-width: 600px;">
+                    Engine Room Records currently manages a closed ecosystem of four active recording projects. Information regarding specific entities, complete discographies, and operational status has been centralized in the Artist Directory.
+                </p>
+                
+                <div>
+                    <a href="/engine-room/artists" class="btn btn-outline-secondary btn-lg rounded-0 text-uppercase fw-bold tech-font px-4 w-100 w-sm-auto">
+                        Access Artist Directory <i class="fa-solid fa-chevron-right ms-2"></i>
                     </a>
                 </div>
             </div>
         </div>
-
-        <!-- Slot 2: Fractured Prisms -->
-        <div class="col">
-            <div class="card studio-card containment-unit h-100 p-4">
-                <div class="d-flex justify-content-between align-items-start mb-1">
-                    <h3 class="h5 fw-bold text-uppercase mb-0">Fractured Prisms</h3>
-                    <span title="Status: Processing" class="mt-1"><span class="led led-busy"></span></span>
-                </div>
-                <p class="tech-font text-body-secondary mb-3">Active File | Electronic / Synth</p>
-                <p class="text-body-emphasis mb-4">A sonic exploration of digital distortion and neon-soaked synthesis. Artificial rhythms for a modern grid.</p>
-                <div class="mt-auto">
-                    <a href="/engine-room/artists/fractured-prisms" class="btn btn-outline-secondary btn-sm rounded-0 text-uppercase fw-bold w-100 tech-font">
-                        Access Files <i class="fa-solid fa-chevron-right ms-2"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
-
-        <!-- Slot 3: Mirage -->
-        <div class="col">
-            <div class="card studio-card containment-unit h-100 p-4">
-                <div class="d-flex justify-content-between align-items-start mb-1">
-                    <h3 class="h5 fw-bold text-uppercase mb-0">Mirage</h3>
-                    <span title="Status: Processing" class="mt-1"><span class="led led-busy"></span></span>
-                </div>
-                <p class="tech-font text-body-secondary mb-3">Active File | Alternative / Ambient</p>
-                <p class="text-body-emphasis mb-4">Atmospheric textures and shifting audio landscapes. An auditory illusion built from the ground up.</p>
-                <div class="mt-auto">
-                    <a href="/engine-room/artists/mirage" class="btn btn-outline-secondary btn-sm rounded-0 text-uppercase fw-bold w-100 tech-font">
-                        Access Files <i class="fa-solid fa-chevron-right ms-2"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
-
-        <!-- Slot 4: The Winter Palace -->
-        <div class="col">
-            <div class="card studio-card containment-unit h-100 p-4">
-                <div class="d-flex justify-content-between align-items-start mb-1">
-                    <h3 class="h5 fw-bold text-uppercase mb-0">The Winter Palace</h3>
-                    <span title="Status: Processing" class="mt-1"><span class="led led-busy"></span></span>
-                </div>
-                <p class="tech-font text-body-secondary mb-3">Active File | Instrumental / Cinematic</p>
-                <p class="text-body-emphasis mb-4">Sweeping, cold-weather orchestrations and classical foundations fused with modern production.</p>
-                <div class="mt-auto">
-                    <a href="/engine-room/artists/the-winter-palace" class="btn btn-outline-secondary btn-sm rounded-0 text-uppercase fw-bold w-100 tech-font">
-                        Access Files <i class="fa-solid fa-chevron-right ms-2"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
-
     </div>
 
     <!-- THE PERIMETER WALL (SECURITY NOTICES) -->
