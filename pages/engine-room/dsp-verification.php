@@ -26,7 +26,17 @@ if ($is_artist_view && is_array($catalog)) {
     }
 }
 
-// 4. Verification Check
+// 4. Extract Unique Artists for Directory (If Root View)
+$unique_artists = [];
+if (!$is_artist_view && is_array($catalog)) {
+    foreach ($catalog as $track) {
+        if (!empty($track['artistSlug']) && !empty($track['artistPersona'])) {
+            $unique_artists[$track['artistSlug']] = $track['artistPersona'];
+        }
+    }
+}
+
+// 5. Verification Check
 $not_found = ($is_artist_view && empty($artist_tracks));
 ?>
 
@@ -54,36 +64,32 @@ $not_found = ($is_artist_view && empty($artist_tracks));
         font-size: 0.9rem;
         vertical-align: middle;
     }
+    .dsp-directory-link {
+        color: #0d6efd;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    .dsp-directory-link:hover { text-decoration: underline; }
 
     /* Override Elara Dark Mode - TRUE WCAG COMPLIANT DARK MODE */
     [data-bs-theme="dark"] .dsp-portal {
-        background-color: #121212 !important; /* Deep dark background */
-        color: #e0e0e0 !important; /* High contrast light text */
+        background-color: #121212 !important; 
+        color: #e0e0e0 !important; 
         border-color: #444 !important;
     }
     [data-bs-theme="dark"] .dsp-header {
-        border-bottom-color: #666 !important; /* Visible border */
+        border-bottom-color: #666 !important; 
     }
     [data-bs-theme="dark"] .dsp-header h1 {
         color: #ffffff !important;
     }
-    /* Enhance contrast for utility classes against dark backgrounds */
-    [data-bs-theme="dark"] .text-muted {
-        color: #adb5bd !important; 
-    }
-    [data-bs-theme="dark"] .text-primary {
-        color: #66b2ff !important; /* Accessible Blue */
-    }
-    [data-bs-theme="dark"] .text-info {
-        color: #33d9b2 !important; 
-    }
-    [data-bs-theme="dark"] .text-danger {
-        color: #ff6b6b !important; /* Accessible Red */
-    }
-    [data-bs-theme="dark"] .text-success {
-        color: #51cf66 !important; /* Accessible Green */
-    }
-    /* Invert the Corporate Table & Information Blocks */
+    [data-bs-theme="dark"] .text-muted { color: #adb5bd !important; }
+    [data-bs-theme="dark"] .text-primary { color: #66b2ff !important; }
+    [data-bs-theme="dark"] .text-info { color: #33d9b2 !important; }
+    [data-bs-theme="dark"] .text-danger { color: #ff6b6b !important; }
+    [data-bs-theme="dark"] .text-success { color: #51cf66 !important; }
+    [data-bs-theme="dark"] .dsp-directory-link { color: #66b2ff; }
+
     [data-bs-theme="dark"] .dsp-table th {
         background-color: #1a1a1a !important;
         color: #ffffff !important;
@@ -96,7 +102,7 @@ $not_found = ($is_artist_view && empty($artist_tracks));
         color: #e0e0e0 !important;
     }
     [data-bs-theme="dark"] .bg-light {
-        background-color: #1a1a1a !important; /* Replace Bootstrap bg-light */
+        background-color: #1a1a1a !important; 
         border-color: #444 !important;
         color: #e0e0e0 !important;
     }
@@ -114,12 +120,12 @@ $not_found = ($is_artist_view && empty($artist_tracks));
 
 <div class="container py-5 dsp-portal shadow-lg my-4 rounded border border-secondary">
     
-    <div class="dsp-header d-flex justify-content-between align-items-end">
+    <div class="dsp-header d-flex justify-content-between align-items-end flex-wrap gap-3">
         <div>
             <h1 class="h3 fw-bold text-uppercase mb-1" style="letter-spacing: -0.5px;">Independent Artist Verification</h1>
             <h2 class="h5 text-muted mb-0">Direct Ownership & Chain of Custody Portal</h2>
         </div>
-        <div class="text-end font-monospace small">
+        <div class="text-start text-md-end font-monospace small">
             <strong>Date of Record:</strong> <?php echo date('F j, Y'); ?><br>
             <strong>Status:</strong> OFFICIAL
         </div>
@@ -140,12 +146,12 @@ $not_found = ($is_artist_view && empty($artist_tracks));
                     <li class="mb-1"><strong>Primary Artist / Creator:</strong> Michael P. Ragsdale</li>
                     <li class="mb-1"><strong>Project / Persona:</strong> <?php echo htmlspecialchars($artist_persona ?: 'Various Artists'); ?></li>
                     <li class="mb-1"><strong>Self-Publishing Alias:</strong> Engine Room Records (Sole Proprietorship)</li>
-                    <li class="mb-1"><strong>Official Web Domain:</strong> <a href="/engine-room">engineroom-records.com</a></li>
-                    <li class="mb-0"><strong>Primary Contact:</strong> <a href="mailto:dsp.operations@engineroom-records.com">dsp.operations@engineroom-records.com</a></li>
+                    <li class="mb-1"><strong>Official Web Domain:</strong> <a href="/engine-room" class="dsp-directory-link">engineroom-records.com</a></li>
+                    <li class="mb-0"><strong>Primary Contact:</strong> <a href="mailto:dsp.operations@engineroom-records.com" class="dsp-directory-link">dsp.operations@engineroom-records.com</a></li>
                 </ul>
             </div>
 
-            <div class="col-md-6">
+            <div class="col-md-6 mt-4 mt-md-0">
                 <h3 class="h6 fw-bold text-uppercase border-bottom border-dark pb-2 mb-3">2. Production Workflow & AI Clearance</h3>
                 <div class="p-3 bg-light border border-secondary rounded small">
                     <p class="mb-2"><strong>Workflow:</strong> This catalog is entirely produced by Michael P. Ragsdale operating as a solo creator, utilizing <strong>Google Gemini</strong> for lyricism/editing and <strong>Suno AI (Commercial Premium License)</strong> for audio generation.</p>
@@ -156,15 +162,35 @@ $not_found = ($is_artist_view && empty($artist_tracks));
         </div>
 
         <?php if (!$is_artist_view): ?>
-            <div class="alert alert-secondary border-dark border-2 p-4 text-center">
-                <i class="fa-solid fa-folder-open fa-3x mb-3 text-secondary"></i>
-                <h4 class="fw-bold">Master Catalog Directory</h4>
-                <p class="mb-0">This portal verifies the independent ownership of the catalog. To view the ISRC records and chain of custody for a specific artist persona, please access this portal via the artist's specific verification URL.</p>
+            <div class="mb-4">
+                <h3 class="h6 fw-bold text-uppercase border-bottom border-dark pb-2 mb-3">3. Master Catalog Directory</h3>
+                <p class="small text-muted mb-4">Please select the artist persona under review to access their specific ISRC records and chain of custody documentation.</p>
+                
+                <div class="row g-3">
+                    <?php if (!empty($unique_artists)): ?>
+                        <?php foreach ($unique_artists as $slug => $persona): ?>
+                            <div class="col-md-6 col-lg-4">
+                                <a href="?artist=<?php echo urlencode($slug); ?>" class="text-decoration-none">
+                                    <div class="p-3 border border-dark rounded bg-light text-center h-100 d-flex align-items-center justify-content-center hover-lift">
+                                        <span class="fw-bold dsp-directory-link text-uppercase"><i class="fa-solid fa-folder-open me-2"></i><?php echo htmlspecialchars($persona); ?></span>
+                                    </div>
+                                </a>
+                            </div>
+                        <?php endforeach; ?>
+                    <?php else: ?>
+                        <div class="col-12">
+                            <div class="alert alert-secondary small"><i class="fa-solid fa-spinner fa-spin me-2"></i>Awaiting Master Catalog Sync...</div>
+                        </div>
+                    <?php endif; ?>
+                </div>
             </div>
 
         <?php else: ?>
             <div class="mb-4">
-                <h3 class="h6 fw-bold text-uppercase border-bottom border-dark pb-2 mb-3">3. Artist Profile & Direct Claim: <span class="text-primary"><?php echo htmlspecialchars($artist_persona); ?></span></h3>
+                <div class="d-flex justify-content-between align-items-end border-bottom border-dark pb-2 mb-3 flex-wrap gap-2">
+                    <h3 class="h6 fw-bold text-uppercase mb-0">3. Artist Profile & Direct Claim: <span class="text-primary"><?php echo htmlspecialchars($artist_persona); ?></span></h3>
+                    <a href="/engine-room/dsp-verification" class="btn btn-sm btn-outline-dark font-monospace"><i class="fa-solid fa-arrow-left me-1"></i> Back to Directory</a>
+                </div>
                 
                 <div class="alert alert-info border-info p-3 small mb-4 shadow-sm">
                     <strong><i class="fa-solid fa-circle-info me-1"></i> Notice to DSP Reviewers:</strong> I, Michael P. Ragsdale, am the 100% independent solo artist behind the project <strong><?php echo htmlspecialchars($artist_persona); ?></strong>. "Engine Room Records" is NOT a third-party record label; it is strictly my personal self-publishing alias used for DistroKid metadata. I am claiming my own artist profile.
@@ -184,7 +210,6 @@ $not_found = ($is_artist_view && empty($artist_tracks));
                         <tbody>
                             <?php foreach ($artist_tracks as $track): ?>
                                 <?php 
-                                    // Determine if this is a web-only lore track
                                     $is_vault = (isset($track['distributor']) && $track['distributor'] === 'Internal Vault');
                                 ?>
                                 <tr>
@@ -228,3 +253,8 @@ $not_found = ($is_artist_view && empty($artist_tracks));
         <p class="font-monospace">Authorized by Michael P. Ragsdale</p>
     </div>
 </div>
+
+<style>
+    .hover-lift { transition: transform 0.2s ease, box-shadow 0.2s ease; }
+    .hover-lift:hover { transform: translateY(-3px); box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important; }
+</style>

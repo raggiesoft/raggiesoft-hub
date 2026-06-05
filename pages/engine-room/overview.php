@@ -12,12 +12,12 @@ $pageTitle = "Engine Room Records | The Gates Remain Closed";
     }
 
     .containment-unit:hover {
-        border-color: var(--bs-primary); /* Uses the new hazard red */
-        box-shadow: 0 0 15px rgba(255, 107, 107, 0.15); /* Matches the header glow */
+        border-color: var(--bs-primary); 
+        box-shadow: 0 0 15px rgba(255, 107, 107, 0.15); 
     }
 
     .incinerator-warning {
-        background-color: #15181c; /* Matches dark mode card bg */
+        background-color: #15181c; 
         border-left: 4px solid var(--bs-primary);
     }
     
@@ -27,9 +27,14 @@ $pageTitle = "Engine Room Records | The Gates Remain Closed";
         border: 1px solid var(--bs-border-color);
         border-left-width: 4px;
     }
+    
+    /* Dedicated B2B Card Hover */
+    .b2b-card:hover {
+        border-color: var(--bs-warning);
+        box-shadow: 0 0 15px rgba(255, 184, 77, 0.15);
+    }
 </style>
 
-<!-- THE FRONT GATE (HERO) -->
 <div class="engine-hero py-5 mb-5 shadow-lg">
     <div class="container text-center py-5">
         <i class="fa-duotone fa-building-shield fa-4x text-primary mb-4 opacity-75"></i>
@@ -47,7 +52,6 @@ $pageTitle = "Engine Room Records | The Gates Remain Closed";
 
 <div class="container pb-5">
     
-    <!-- THE ROSTER DIRECTORY LINK -->
     <div class="row mb-5">
         <div class="col-lg-10 mx-auto">
             <div class="card studio-card containment-unit p-4 p-md-5 text-center shadow-sm">
@@ -74,7 +78,48 @@ $pageTitle = "Engine Room Records | The Gates Remain Closed";
         </div>
     </div>
 
-    <!-- THE PERIMETER WALL (SECURITY NOTICES) -->
+    <div class="row mb-4 mt-5">
+        <div class="col-lg-10 mx-auto d-flex justify-content-between align-items-end border-bottom border-secondary pb-2">
+            <h2 class="h4 text-uppercase fw-bold mb-0">Business & Licensing</h2>
+        </div>
+    </div>
+
+    <div class="row g-4 mb-5 col-lg-10 mx-auto">
+        <div class="col-md-6">
+            <div class="card studio-card b2b-card h-100 p-4">
+                <div class="d-flex align-items-center mb-3">
+                    <i class="fa-duotone fa-handshake fa-2x text-warning me-3 opacity-75"></i>
+                    <h3 class="h5 fw-bold text-uppercase mb-0">Commercial Sync</h3>
+                </div>
+                <p class="text-body-emphasis mb-4 small">
+                    One-stop clearance for Film, TV, and Interactive placements. We control 100% of Master and Publishing rights for our catalog.
+                </p>
+                <div class="mt-auto">
+                    <a href="/engine-room/commercial-licensing" class="btn btn-outline-warning btn-sm rounded-0 text-uppercase fw-bold w-100 tech-font">
+                        Licensing Portal <i class="fa-solid fa-arrow-right ms-2"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="card studio-card b2b-card h-100 p-4">
+                <div class="d-flex align-items-center mb-3">
+                    <i class="fa-duotone fa-tower-broadcast fa-2x text-info me-3 opacity-75"></i>
+                    <h3 class="h5 fw-bold text-uppercase mb-0">DSP Operations</h3>
+                </div>
+                <p class="text-body-emphasis mb-4 small">
+                    Administrative portal for streaming platforms (Spotify, Apple, YouTube, etc.) to verify independent ownership and AI clearance metadata.
+                </p>
+                <div class="mt-auto">
+                    <a href="/engine-room/dsp-verification" class="btn btn-outline-info btn-sm rounded-0 text-uppercase fw-bold w-100 tech-font text-body-emphasis">
+                        Verify Artists <i class="fa-solid fa-arrow-right ms-2"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="row mt-5 pt-4">
         <div class="col-lg-10 mx-auto">
             <div class="incinerator-warning p-4 shadow-sm mb-4">
