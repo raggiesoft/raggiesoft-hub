@@ -1,21 +1,32 @@
 <?php
 // includes/components/_timeline-node.php
-// Expected $props array variables:
-// 'color'      => Bootstrap color (info, primary, warning, danger, success, secondary, dark)
-// 'year'       => String (e.g., "1987")
-// 'title'      => String (e.g., "Electric Color")
-// 'subtitle'   => String (e.g., "APEX RECORDS // THE GILDED CAGE")
-// 'image'      => String URL (Optional)
-// 'icon'       => String FontAwesome class (Optional, used if image is not provided)
-// 'content'    => String (HTML paragraphs and alerts)
-// 'btnUrl'     => String URL
-// 'btnText'    => String
-// 'btnIcon'    => String FontAwesome class
-// 'reverse'    => Boolean (true to swap image to the right side)
+// Dynamically builds timeline cards while ensuring strict WCAG AA contrast compliance.
 
 $color = $props['color'] ?? 'secondary';
-$textColor = ($color === 'warning' || $color === 'info') ? 'text-dark' : 'text-white';
 $reverseClass = !empty($props['reverse']) ? 'flex-lg-row-reverse' : '';
+
+// 1. Define Card Background
+// To maintain the visual rhythm, we alternate dark and light cards based on the node color.
+$isDarkCard = in_array($color, ['primary', 'danger', 'info', 'dark']);
+$cardBgClass = $isDarkCard ? 'bg-dark text-white' : 'bg-body-tertiary';
+$contentClass = $isDarkCard ? 'text-light opacity-75' : 'text-body-secondary';
+
+// 2. WCAG Button Contrast Logic
+// Automatically shifts button styles to pass AA contrast ratios (4.5:1) based on the card background.
+$btnClass = 'btn-outline-' . $color;
+
+if ($isDarkCard) {
+    // On static dark cards, 'primary' and 'dark' outlines fail WCAG contrast. Swap them to light.
+    if ($color === 'primary' || $color === 'dark') {
+        $btnClass = 'btn-outline-light'; 
+    }
+} else {
+    // On tertiary (adapting) backgrounds, 'warning' and 'info' outlines fail WCAG on light mode.
+    // Swapping them to solid buttons ensures Bootstrap automatically applies the correct contrast text color.
+    if ($color === 'warning' || $color === 'info') {
+        $btnClass = 'btn-' . $color; 
+    }
+}
 ?>
 
 <div class="timeline-node mb-5 position-relative">
@@ -31,7 +42,7 @@ $reverseClass = !empty($props['reverse']) ? 'flex-lg-row-reverse' : '';
     </p>
 
     <!-- The Card -->
-    <div class="card border-secondary <?php echo ($color === 'secondary' || $color === 'warning' || $color === 'success') ? 'bg-body-tertiary' : 'bg-dark text-white'; ?> shadow-sm">
+    <div class="card border-secondary <?php echo $cardBgClass; ?> shadow-sm">
         <div class="card-body p-4 p-md-5">
             <div class="row align-items-center <?php echo $reverseClass; ?>">
                 
@@ -46,17 +57,15 @@ $reverseClass = !empty($props['reverse']) ? 'flex-lg-row-reverse' : '';
 
                 <!-- Narrative Content -->
                 <div class="col-lg-9" style="line-height: 1.7;">
-                    <?php 
-                    // Wrap the content in a div to handle text colors based on card background
-                    $contentClass = ($color === 'secondary' || $color === 'warning' || $color === 'success') ? 'text-body-secondary' : 'text-light opacity-75';
-                    ?>
                     <div class="<?php echo $contentClass; ?>">
-                        <?php echo $props['content']; // Output raw HTML paragraphs ?>
+                        <?php echo $props['content']; ?>
                     </div>
                     
-                    <a href="<?php echo htmlspecialchars($props['btnUrl']); ?>" class="btn btn-outline-<?php echo $color; ?> <?php echo ($color === 'warning' || $color === 'info') ? 'text-dark' : ''; ?> btn-sm text-uppercase fw-bold font-monospace mt-4">
+                    <?php if (!empty($props['btnUrl'])): ?>
+                    <a href="<?php echo htmlspecialchars($props['btnUrl']); ?>" class="btn <?php echo $btnClass; ?> btn-sm text-uppercase fw-bold font-monospace mt-4">
                         <i class="<?php echo htmlspecialchars($props['btnIcon']); ?> me-2" aria-hidden="true"></i><?php echo htmlspecialchars($props['btnText']); ?>
                     </a>
+                    <?php endif; ?>
                 </div>
 
             </div>
