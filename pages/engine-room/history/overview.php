@@ -14,6 +14,7 @@ $pageTitle = "Company History - Engine Room Records";
         </p>
     </div>
 
+    <!-- REAL WORLD DISCLAIMER -->
     <div class="card bg-dark text-white border-secondary mb-5 shadow-lg">
         <div class="card-header bg-black border-secondary d-flex justify-content-between align-items-center py-3">
             <h5 class="mb-0 text-uppercase font-monospace text-info">
@@ -26,8 +27,11 @@ $pageTitle = "Company History - Engine Room Records";
                 <div class="col-md-8">
                     <h3 class="h4 fw-bold text-white mb-3">The RaggieSoft Audio Initiative</h3>
                     <p class="text-white-75">
-                        In the real world, <strong>Engine Room Records</strong> is a digital portfolio and publishing entity created by Michael P. Ragsdale. Launched in 2026, it serves as the organizational hub for a massive, multi-band generative music project.
+                        In the real world, <strong>Engine Room Records</strong> is a digital portfolio and publishing entity created by Michael P. Ragsdale. Launched in 2026, it serves as the organizational hub for a massive, multi-band generative music project. 
                     </p>
+                    <div class="alert alert-info bg-black border-info mb-4">
+                        <strong><i class="fa-solid fa-timeline me-2"></i>Timeline Notice:</strong> While the narrative lore spans decades (e.g., 1983, 1992, 1997), <strong>all music across this entire catalog was produced in 2025 and 2026</strong>, and officially distributed to streaming platforms via DistroKid in 2026.
+                    </div>
                     <ul class="text-white-75 mb-0">
                         <li class="mb-2"><strong>Audio Generation:</strong> All instrumentation, synthetic vocals, and musical compositions are generated utilizing a commercial-tier <span class="text-warning">Suno Premium</span> license.</li>
                         <li class="mb-2"><strong>Lore & Lyrics:</strong> The overarching narrative, fictional corporate structures, and original lyrics are human-directed, with <span class="text-info">Gemini</span> acting as a co-producer for style refinement and worldbuilding organization.</li>
@@ -41,16 +45,18 @@ $pageTitle = "Company History - Engine Room Records";
         </div>
     </div>
 
+    <!-- THE NARRATIVE LORE -->
     <div class="position-relative mt-5 pt-5">
         
         <div class="text-center mb-5">
             <h2 class="display-5 fw-bold text-uppercase mb-3">The Narrative Timeline</h2>
-            <p class="text-muted">The fictional history of Engine Room Records, LLC.</p>
+            <p class="text-muted">The fictional history of Engine Room Records.</p>
             <hr class="w-25 mx-auto border-danger opacity-50 border-2">
         </div>
 
         <div class="timeline-container position-relative border-start border-danger border-3 ms-md-4 ps-4">
             
+            <!-- 1992: Friction -->
             <div class="timeline-node mb-5 position-relative">
                 <div class="node-marker position-absolute bg-danger rounded-circle border border-dark border-3" style="width: 20px; height: 20px; left: -36px; top: 0;" aria-hidden="true"></div>
                 
@@ -66,7 +72,7 @@ $pageTitle = "Company History - Engine Room Records";
                             The band's 23-year-old manager and law student, Holly O'Connell, immediately recognized the executive's demands as a severe material breach of contract. However, before she could even file the civil paperwork, the hired photographer blew the whistle to the LAPD, turning a contract dispute into an active criminal investigation.
                         </p>
                         <p class="text-white-75 mb-4">
-                            Cornered by the impending legal scandal, Apex Records completely surrendered. They voided the band's contract, returned all master tapes, and paid a substantial punitive settlement to avoid a public trial. Holly O'Connell used this exact settlement capital to establish <strong>Engine Room Records, LLC</strong>, permanently transforming the family band from label employees into a sovereign, independent entity.
+                            Cornered by the impending legal scandal, Apex Records completely surrendered. They voided the band's contract, returned all master tapes, and paid a substantial punitive settlement to avoid a public trial. Holly O'Connell used this exact settlement capital to establish <strong>Engine Room Records</strong>, permanently transforming the family band from label employees into a sovereign, independent entity.
                         </p>
                         
                         <a href="/engine-room/artists/stardust-engine/story/friction" class="btn btn-outline-danger btn-sm text-uppercase fw-bold font-monospace" aria-label="Access the full 1992 Friction Catastrophe archive">
@@ -76,6 +82,7 @@ $pageTitle = "Company History - Engine Room Records";
                 </div>
             </div>
 
+            <!-- 1992-1994: The Blacksburg Exile -->
             <div class="timeline-node mb-5 position-relative">
                 <div class="node-marker position-absolute bg-secondary rounded-circle border border-dark border-3" style="width: 20px; height: 20px; left: -36px; top: 0;" aria-hidden="true"></div>
                 
@@ -97,6 +104,7 @@ $pageTitle = "Company History - Engine Room Records";
                 </div>
             </div>
 
+            <!-- 1995: The Warehouse Tapes -->
             <div class="timeline-node mb-5 position-relative">
                 <div class="node-marker position-absolute bg-info rounded-circle border border-dark border-3" style="width: 20px; height: 20px; left: -36px; top: 0;" aria-hidden="true"></div>
                 
@@ -106,7 +114,7 @@ $pageTitle = "Company History - Engine Room Records";
                 <div class="card border-secondary bg-dark text-white shadow-sm">
                     <div class="card-body p-4 p-md-5" style="line-height: 1.7;">
                         <p class="text-white-75">
-                            In 1995, Engine Room Records, LLC launched its first official release: <em>The Warehouse Tapes</em>. Operating entirely outside the traditional music industry ecosystem, the label functioned as a direct-to-consumer operation. The family fulfilled mail-orders directly to their loyal "Ironhead" fanbase, manually dubbing every cassette and burning early CD-Rs one at a time using expensive, bleeding-edge hardware installed in their Blacksburg rehearsal space.
+                            In 1995, Engine Room Records launched its first official release: <em>The Warehouse Tapes</em>. Operating entirely outside the traditional music industry ecosystem, the label functioned as a direct-to-consumer operation. The family fulfilled mail-orders directly to their loyal "Ironhead" fanbase, manually dubbing every cassette and burning early CD-Rs one at a time using expensive, bleeding-edge hardware installed in their Blacksburg rehearsal space.
                         </p>
                         <p class="text-white-75">
                             The album itself was a sonic exorcism. Side A featured raw, unpolished rock tracks (such as "Static" and "Garbage") that explicitly rejected the manufactured synth-pop forced upon them by Apex Records, while simultaneously tearing down the exhausting "victim" narrative pushed by the tabloid media during the 1994 trials.
@@ -122,6 +130,7 @@ $pageTitle = "Company History - Engine Room Records";
                 </div>
             </div>
 
+            <!-- 1996: The American Dream -->
             <div class="timeline-node mb-5 position-relative">
                 <div class="node-marker position-absolute bg-success rounded-circle border border-dark border-3" style="width: 20px; height: 20px; left: -36px; top: 0;" aria-hidden="true"></div>
                 
@@ -143,12 +152,13 @@ $pageTitle = "Company History - Engine Room Records";
                             Cassidy did not go to the press. She simply handed the winning ticket to her sister, Holly, with a single directive: <em>"Build us a fortress so we never have to be hurt again."</em>
                         </p>
                         <p class="text-body-secondary mb-0">
-                            The family opted for the lump-sum payout in absolute privacy. Armed with her J.D. and her newly minted 1996 credential as a federally authorized Enrolled Agent, Holly personally navigated the IRS payout. She immediately established the <strong>Forger Nation Trust</strong> to manage the wealth, weaponizing the capital to purchase state-of-the-art logistics fleets and infrastructure for Engine Room Records, LLC, permanently insulating the band from the rest of the music industry.
+                            The family opted for the lump-sum payout in absolute privacy. Armed with her J.D. and her newly minted 1996 credential as a federally authorized Enrolled Agent, Holly personally navigated the IRS payout. She immediately established the <strong>Forger Nation Trust</strong> to manage the wealth, weaponizing the capital to purchase state-of-the-art logistics fleets and infrastructure for Engine Room Records, permanently insulating the band from the rest of the music industry.
                         </p>
                     </div>
                 </div>
             </div>
 
+            <!-- 1997: Hard Reset -->
             <div class="timeline-node mb-5 position-relative">
                 <div class="node-marker position-absolute bg-primary rounded-circle border border-dark border-3" style="width: 20px; height: 20px; left: -36px; top: 0;" aria-hidden="true"></div>
                 
@@ -177,6 +187,7 @@ $pageTitle = "Company History - Engine Room Records";
                 </div>
             </div>
 
+            <!-- 1997: Cosmic Tidal Lock Sound -->
             <div class="timeline-node mb-5 position-relative">
                 <div class="node-marker position-absolute bg-warning rounded-circle border border-dark border-3" style="width: 20px; height: 20px; left: -36px; top: 0;" aria-hidden="true"></div>
                 
@@ -189,7 +200,7 @@ $pageTitle = "Company History - Engine Room Records";
                             While <em>Hard Reset</em> was a commercial triumph, its most enduring legacy was the perfection of the band's signature sonic architecture. On the track "Moon 1 (Tidal Lock)", Cassidy O'Connell finally realized the exact atmospheric "Space Rock" sound she had envisioned in 1987—a sound Apex Records had rejected in favor of safe dance-pop.
                         </p>
                         <p class="text-white-75">
-                            The fans and music press quickly dubbed this new genre <strong>"80s Cosmic Pop."</strong> However, Holly O'Connell recognized the immense value of Cassidy's engineering genius. Through Engine Room Records, LLC, Holly immediately weaponized the sound, officially registering it with the USPTO as <strong>The Cosmic Tidal Lock Sound&reg;</strong>. This impenetrable legal armor allowed Holly to issue immediate cease-and-desist orders to any rival studio or corporate entity attempting to replicate Cassidy's proprietary synth-layering techniques.
+                            The fans and music press quickly dubbed this new genre <strong>"80s Cosmic Pop."</strong> However, Holly O'Connell recognized the immense value of Cassidy's engineering genius. Through Engine Room Records, Holly immediately weaponized the sound, officially registering it with the USPTO as <strong>The Cosmic Tidal Lock Sound&reg;</strong>. This impenetrable legal armor allowed Holly to issue immediate cease-and-desist orders to any rival studio or corporate entity attempting to replicate Cassidy's proprietary synth-layering techniques.
                         </p>
 
                         <div class="alert bg-black border border-secondary mt-4 mb-0 shadow-sm">
@@ -213,25 +224,26 @@ $pageTitle = "Company History - Engine Room Records";
                 </div>
             </div>
 
+            <!-- 1997: Forger Nation War Chest -->
             <div class="timeline-node mb-5 position-relative">
                 <div class="node-marker position-absolute bg-secondary rounded-circle border border-dark border-3" style="width: 20px; height: 20px; left: -36px; top: 0;" aria-hidden="true"></div>
                 
-                <h3 class="fw-bold text-secondary text-uppercase mb-1">1997: Space Rock (Essential Tracks)</h3>
+                <h3 class="fw-bold text-secondary text-uppercase mb-1">1997: Forger Nation War Chest</h3>
                 <p class="text-body-secondary font-monospace small mb-3">GLOBAL RETAIL // THE DEFINITIVE CHRONICLE</p>
 
                 <div class="card border-secondary bg-body-tertiary shadow-sm">
                     <div class="card-body p-4 p-md-5" style="line-height: 1.7;">
                         <p class="text-body-secondary">
-                            Capitalizing on the massive global momentum of <em>Hard Reset</em>, Engine Room Records closed out 1997 by releasing the band's first retrospective: <em>Space Rock: Essential Tracks (1987-1997)</em>. 
+                            Capitalizing on the massive global momentum of <em>Hard Reset</em>, Engine Room Records closed out 1997 by releasing the band's first retrospective compilation: <em>Forger Nation War Chest</em>. 
                         </p>
                         <p class="text-body-secondary">
-                            Because Holly O'Connell successfully forced Apex Records to surrender the band's master tapes during the 1992 <em>Friction</em> settlement, Engine Room Records held total control over their back catalog. This allowed the band to curate a single-disc, 16-track compilation that actively told the story of their "escape velocity." 
+                            Because Holly O'Connell successfully forced Apex Records to surrender the band's master tapes during the 1992 <em>Friction</em> settlement, Engine Room Records held total control over their back catalog. This allowed the band to curate a single-disc, 17-track compilation that actively told the story of their "escape velocity." 
                         </p>
                         <p class="text-body-secondary mb-4">
                             The album was divided into distinct narrative acts. It forced the pristine, studio-mandated pop hits of their "gilded cage" era (like <em>Electric Color</em> and <em>Dancing in the Neon</em>) to sit side-by-side with the furious, unpolished guitar rock of their warehouse years. It wasn't just a collection of hits; it was a carefully weaponized timeline, proving to the world that The Stardust Engine had successfully outmaneuvered the corporate machine and reclaimed their true sound.
                         </p>
                         
-                        <a href="/engine-room/artists/stardust-engine/discography/1997-essential-tracks" class="btn btn-outline-secondary btn-sm text-uppercase fw-bold font-monospace" aria-label="Access the Essential Tracks album archive">
+                        <a href="/engine-room/artists/stardust-engine/discography/1997-forger-nation-war-chest" class="btn btn-outline-secondary btn-sm text-uppercase fw-bold font-monospace" aria-label="Access the Forger Nation War Chest album archive">
                             <i class="fa-duotone fa-compact-disc me-2" aria-hidden="true"></i>Access Album Archive
                         </a>
                     </div>
