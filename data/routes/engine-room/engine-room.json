@@ -29,6 +29,11 @@
     "title": "Engine Room Records History | Company Timeline",
     "ogDescription": "An in-depth look at the founding, growth, and milestones of Engine Room Records from inception to present day."
   },
+  "/engine-room/commercial-licensing": {
+    "view": "pages/engine-room/commercial-licensing",
+    "title": "Corporate Licensing | Engine Room Records",
+    "ogDescription": "The official commercial licensing portal for Engine Room Records. Secure synchronization rights, master use clearances, and broadcast licenses for our active catalog."
+  },
   "/engine-room/dsp-verification": {
     "view": "pages/engine-room/dsp-verification",
     "title": "DSP Verification Portal | Engine Room Records",

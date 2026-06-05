@@ -1,157 +1,130 @@
 <?php
 // pages/engine-room/commercial-licensing.php
-// The B2B Front Door for Engine Room Records.
-// Clarifies Commercial Sync vs. Open Source (CC BY-SA 4.0) usage.
+// The B2B / Legal wing of Engine Room Records.
 
-$pageTitle = "Commercial Licensing & Sync - Engine Room Records";
+$pageTitle = "Commercial Licensing | Engine Room Records";
 ?>
 
 <style>
-    .industrial-header {
-        background: linear-gradient(rgba(13, 17, 23, 0.95), rgba(13, 17, 23, 0.85)), 
-                    url('https://assets.raggiesoft.com/stardust-engine/images/studio-rack.jpg');
-        background-size: cover;
-        background-position: center;
-        border-bottom: 4px solid var(--bs-primary);
+    .licensing-card {
+        transition: border-color 0.2s ease, box-shadow 0.2s ease;
     }
-    .text-stenciled {
-        font-family: 'Impact', 'Arial Black', sans-serif;
-        text-transform: uppercase;
-        letter-spacing: 2px;
+    .licensing-card:hover {
+        border-color: var(--bs-warning); /* Amber warning color for legal/business */
+        box-shadow: 0 0 15px rgba(255, 184, 77, 0.1);
+    }
+    .intake-protocol {
+        background-color: #15181c;
+        border-left: 4px solid var(--bs-warning);
+    }
+    [data-bs-theme="light"] .intake-protocol {
+        background-color: #f4f4f6;
+        border: 1px solid var(--bs-border-color);
+        border-left: 4px solid var(--bs-warning);
     }
 </style>
 
-<div class="industrial-header py-5 text-center" data-bs-theme="dark">
-    <div class="container py-5">
-        <span class="badge bg-primary text-uppercase letter-spacing-2 mb-3 px-3 py-2 border border-primary">
-            <i class="fa-duotone fa-briefcase me-2" aria-hidden="true"></i>B2B Portal
-        </span>
-        <h1 class="display-3 fw-bold text-stenciled text-body-emphasis mb-3">Commercial Licensing</h1>
-        <p class="lead text-body font-monospace mb-0">
-            SYNC PLACEMENTS // DIRECT PERFORMANCE // CLEARANCE
+<!-- THE HERO -->
+<div class="engine-hero py-5 mb-5 shadow-lg" style="border-bottom-color: var(--bs-warning);">
+    <div class="container text-center py-5">
+        <i class="fa-duotone fa-file-signature fa-4x text-warning mb-4 opacity-75"></i>
+        <h1 class="display-3 fw-bold text-uppercase mb-3 brand-font" style="letter-spacing: 2px;">
+            Commercial Licensing
+        </h1>
+        <p class="lead tech-font opacity-75 mb-4">
+            Master use and synchronization clearances.
         </p>
+        <span class="badge bg-warning text-dark text-uppercase px-3 py-2 fs-6 border border-dark shadow-sm">
+            <i class="fa-solid fa-briefcase me-2"></i>B2B Operations Portal
+        </span>
     </div>
 </div>
 
-<div class="container py-5">
+<div class="container pb-5">
     
-    <div class="row justify-content-center mb-5">
-        <div class="col-lg-9 text-center">
-            <h2 class="h3 fw-bold text-uppercase border-bottom border-secondary-subtle pb-2 mb-3">
-                One-Stop Clearance
+    <div class="row mb-5">
+        <div class="col-lg-10 mx-auto text-center">
+            <h2 class="h4 text-uppercase fw-bold border-bottom border-secondary pb-3 mb-4">
+                Catalog Clearance Categories
             </h2>
-            <p class="lead text-body-secondary">
-                Engine Room Records is an independent imprint operated by RaggieSoft. We control <strong>100% of the master recordings and publishing rights</strong> for our entire active roster. 
-            </p>
-            <p class="text-body-secondary">
-                Because we own our catalog outright, we guarantee immediate clearance and rapid deployment of high-fidelity audio assets for your commercial projects. No red tape. No waiting on third-party publishers.
+            <p class="text-body-emphasis mb-5">
+                Engine Room Records controls 100% of the Master and Publishing rights for all artists on our active roster. We offer streamlined, "one-stop" clearance for commercial applications, ensuring rapid turnaround for production timelines.
             </p>
         </div>
     </div>
 
-    <div class="row g-4 mb-5">
+    <!-- CLEARANCE TIERS (3 COLUMNS) -->
+    <div class="row g-4 mb-5 col-lg-10 mx-auto">
         
-        <div class="col-md-6">
-            <div class="card h-100 bg-body-tertiary border-primary shadow-sm hover-lift">
-                <div class="card-header bg-primary bg-opacity-10 text-primary-emphasis fw-bold text-uppercase border-bottom border-primary-subtle py-3">
-                    <i class="fa-duotone fa-film me-2" aria-hidden="true"></i>Synchronization (Sync)
-                </div>
-                <div class="card-body p-4 d-flex flex-column">
-                    <p class="card-text text-body-secondary small mb-4">
-                        For film, television, video games, trailers, and promotional media. Whether you need the driving 80s arena rock of <em>The Stardust Engine</em> or the cinematic, orchestral scope of <em>Firelight</em>, we provide high-resolution, broadcast-ready WAV files cleared for immediate deployment upon contract execution.
-                    </p>
-                    <div class="mt-auto">
-                        <a href="mailto:licensing@engineroom-records.com?subject=Sync Placement Inquiry" class="btn btn-outline-primary w-100 fw-bold text-uppercase">
-                            <i class="fa-solid fa-envelope me-2" aria-hidden="true"></i>Request Sync Clearance
-                        </a>
-                    </div>
-                </div>
+        <!-- Film & Television -->
+        <div class="col-md-4">
+            <div class="card studio-card licensing-card h-100 p-4 text-center">
+                <i class="fa-duotone fa-film fa-3x text-secondary mb-3"></i>
+                <h3 class="h6 fw-bold text-uppercase mb-2">Film & Television</h3>
+                <p class="tech-font text-warning mb-3 small">Sync & Master</p>
+                <p class="text-body-secondary small mb-0">
+                    Clearances for theatrical releases, streaming platform original content (Netflix, Hulu, Amazon), and traditional network television broadcasts.
+                </p>
             </div>
         </div>
 
-        <div class="col-md-6">
-            <div class="card h-100 bg-body-tertiary border-success shadow-sm hover-lift">
-                <div class="card-header bg-success bg-opacity-10 text-success-emphasis fw-bold text-uppercase border-bottom border-success-subtle py-3">
-                    <i class="fa-duotone fa-speakers me-2" aria-hidden="true"></i>Direct Public Performance
-                </div>
-                <div class="card-body p-4 d-flex flex-column">
-                    <p class="card-text text-body-secondary small mb-4">
-                        For retail environments, hospitality venues, cafes, and commercial spaces. By securing a Direct Performance License, you receive direct, secure downloads of our high-fidelity WAV catalog. This ensures total legal compliance for your venue without the need for expensive blanket PRO licenses (ASCAP/BMI).
-                    </p>
-                    <div class="mt-auto">
-                        <a href="mailto:licensing@engineroom-records.com?subject=Direct Performance License Inquiry" class="btn btn-outline-success w-100 fw-bold text-uppercase">
-                            <i class="fa-solid fa-envelope me-2" aria-hidden="true"></i>Request Venue License
-                        </a>
-                    </div>
-                </div>
+        <!-- Interactive & Gaming -->
+        <div class="col-md-4">
+            <div class="card studio-card licensing-card h-100 p-4 text-center">
+                <i class="fa-duotone fa-gamepad-modern fa-3x text-secondary mb-3"></i>
+                <h3 class="h6 fw-bold text-uppercase mb-2">Interactive Media</h3>
+                <p class="tech-font text-warning mb-3 small">In-Engine Audio</p>
+                <p class="text-body-secondary small mb-0">
+                    Licensing for AAA video games, independent interactive projects, immersive VR/AR experiences, and digital application environments.
+                </p>
+            </div>
+        </div>
+
+        <!-- Broadcast Advertising -->
+        <div class="col-md-4">
+            <div class="card studio-card licensing-card h-100 p-4 text-center">
+                <i class="fa-duotone fa-tower-broadcast fa-3x text-secondary mb-3"></i>
+                <h3 class="h6 fw-bold text-uppercase mb-2">Commercial / Ad</h3>
+                <p class="tech-font text-warning mb-3 small">Global Broadcast</p>
+                <p class="text-body-secondary small mb-0">
+                    Audio rights for regional, national, or global advertising campaigns across terrestrial television, radio, and digital social channels.
+                </p>
             </div>
         </div>
 
     </div>
 
-    <div class="row justify-content-center mb-5">
-        <div class="col-lg-12">
-            <div class="card border-secondary shadow-sm overflow-hidden">
-                <div class="row g-0">
-                    <div class="col-md-4 bg-dark text-white d-flex flex-column justify-content-center align-items-center p-4 text-center" data-bs-theme="dark">
-                        <i class="fa-duotone fa-scale-balanced fa-4x text-warning mb-3" aria-hidden="true"></i>
-                        <h3 class="h5 fw-bold text-uppercase mb-0">The Dual-License Model</h3>
-                    </div>
-                    <div class="col-md-8 p-4 p-lg-5 bg-body">
-                        <p class="text-body-secondary mb-4">
-                            Engine Room Records operates under a unique hybrid model. While we license our music exclusively for commercial brands and film, we actively support the open-source community and independent creators.
-                        </p>
-                        
-                        <div class="row g-4">
-                            <div class="col-sm-6">
-                                <div class="d-flex align-items-start">
-                                    <i class="fa-brands fa-creative-commons fa-2x text-warning me-3 mt-1" aria-hidden="true"></i>
-                                    <div>
-                                        <h4 class="h6 fw-bold text-body-emphasis mb-1">Creative Content (CC BY-SA 4.0)</h4>
-                                        <p class="small text-body-secondary mb-0">
-                                            Our narrative lore, world-building, and music tracks are available for non-commercial remixing and sharing, provided you attribute Engine Room Records and share your adaptations under the same terms.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="d-flex align-items-start">
-                                    <i class="fa-brands fa-github fa-2x text-secondary me-3 mt-1" aria-hidden="true"></i>
-                                    <div>
-                                        <h4 class="h6 fw-bold text-body-emphasis mb-1">System Architecture (MIT)</h4>
-                                        <p class="small text-body-secondary mb-0">
-                                            The underlying PHP routing infrastructure (Elara) and CMS code that powers this website are fully open-source under the MIT License.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="mt-4 pt-3 border-top border-secondary-subtle">
-                            <a href="/about/license" class="btn btn-link text-decoration-none px-0 fw-bold">
-                                Read Full Licensing Details <i class="fa-solid fa-arrow-right ms-1" aria-hidden="true"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    <!-- THE INTAKE PROTOCOL -->
+    <div class="row mt-5">
+        <div class="col-lg-10 mx-auto">
+            <div class="intake-protocol p-4 p-md-5 shadow-sm">
+                <h4 class="text-warning fw-bold text-uppercase h5 mb-4 border-bottom border-secondary border-opacity-25 pb-3">
+                    <i class="fa-solid fa-clipboard-list me-2"></i>Clearance Request Protocol
+                </h4>
+                
+                <p class="text-body-emphasis mb-4">
+                    To request a quote and initiate the clearance process, direct your inquiry to <code class="bg-dark text-light px-2 py-1 ms-1">licensing@engineroom-records.com</code>.
+                </p>
 
-    <div class="row justify-content-center">
-        <div class="col-lg-10">
-            <div class="alert alert-dark bg-body-tertiary border-danger border-2 d-flex flex-column flex-md-row align-items-center justify-content-between shadow-sm p-4" role="alert">
-                <div class="mb-3 mb-md-0 me-md-4">
-                    <h4 class="h5 fw-bold text-uppercase text-danger mb-2">
-                        <i class="fa-solid fa-shield-halved me-2" aria-hidden="true"></i>Copyright & Legal Affairs
-                    </h4>
-                    <p class="small text-body-secondary mb-0">
-                        For DMCA takedown notices, formal ISRC (International Standard Recording Code) verifications, or other legal matters regarding the Engine Room Records catalog, please contact our copyright administration desk.
-                    </p>
-                </div>
-                <div class="flex-shrink-0">
-                    <a href="mailto:legal@engineroom-records.com" class="btn btn-danger fw-bold px-4 rounded-pill shadow-sm">
-                        Contact Legal
+                <p class="tech-font text-body-secondary small fw-bold mb-2">REQUIRED DOCUMENTATION:</p>
+                <ul class="list-group list-group-flush border-bottom border-secondary border-opacity-25 mb-4">
+                    <li class="list-group-item bg-transparent text-body-secondary small border-secondary border-opacity-25">
+                        <i class="fa-solid fa-check text-success me-2"></i><strong>Artist & Track Title:</strong> The specific audio asset requested.
+                    </li>
+                    <li class="list-group-item bg-transparent text-body-secondary small border-secondary border-opacity-25">
+                        <i class="fa-solid fa-check text-success me-2"></i><strong>Project Synopsis:</strong> A brief description of the film, game, or campaign.
+                    </li>
+                    <li class="list-group-item bg-transparent text-body-secondary small border-secondary border-opacity-25">
+                        <i class="fa-solid fa-check text-success me-2"></i><strong>Media & Territory:</strong> Requested rights (e.g., All Media, Worldwide, in Perpetuity).
+                    </li>
+                    <li class="list-group-item bg-transparent text-body-secondary small border-secondary border-opacity-25">
+                        <i class="fa-solid fa-check text-success me-2"></i><strong>Usage Type:</strong> Background, featured, main title, or end credits.
+                    </li>
+                </ul>
+
+                <div class="text-end">
+                    <a href="mailto:licensing@engineroom-records.com" class="btn btn-warning fw-bold text-uppercase rounded-0 tech-font">
+                        Initiate Request <i class="fa-solid fa-envelope-open-text ms-2"></i>
                     </a>
                 </div>
             </div>
@@ -159,13 +132,3 @@ $pageTitle = "Commercial Licensing & Sync - Engine Room Records";
     </div>
 
 </div>
-
-<style>
-    .hover-lift { transition: transform 0.2s ease, box-shadow 0.2s ease; }
-    @media (prefers-reduced-motion: no-preference) {
-        .hover-lift:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
-        }
-    }
-</style>
