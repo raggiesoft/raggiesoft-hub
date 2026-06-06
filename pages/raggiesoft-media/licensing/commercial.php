@@ -6,12 +6,20 @@ $pageTitle = "Commercial Licensing | RaggieSoft Media";
 ?>
 
 <style>
+    /* WCAG FIX: Added adaptive light mode rules so the card turns white in Light Theme */
     .sync-card {
         background-color: #15181c;
         border: 1px solid rgba(255, 255, 255, 0.05);
-        transition: border-color 0.2s ease;
+        transition: border-color 0.2s ease, transform 0.2s ease;
     }
-    .sync-card:hover { border-color: var(--bs-primary); }
+    .sync-card:hover { 
+        border-color: var(--bs-primary); 
+        transform: translateY(-2px);
+    }
+    [data-bs-theme="light"] .sync-card {
+        background-color: #ffffff;
+        border: 1px solid var(--bs-border-color);
+    }
 </style>
 
 <div class="py-4 mb-5 border-bottom border-secondary-subtle text-center">
@@ -74,7 +82,8 @@ $pageTitle = "Commercial Licensing | RaggieSoft Media";
             </h2>
             
             <p class="text-body-emphasis mb-4">
-                To request a non-exclusive quote, direct your inquiry to the synchronization desk at <code class="bg-dark text-light px-2 py-1 ms-1">sync@raggiesoftmedia.com</code>.
+                To request a non-exclusive quote, direct your inquiry to the synchronization desk at 
+                <code class="bg-dark text-light px-2 py-1 ms-1">sync@raggiesoftmedia.com</code>.
             </p>
 
             <p class="font-monospace text-body-secondary small fw-bold mb-2">REQUIRED DOCUMENTATION:</p>
@@ -94,7 +103,7 @@ $pageTitle = "Commercial Licensing | RaggieSoft Media";
                 <a href="mailto:sync@raggiesoftmedia.com" class="btn btn-primary fw-bold text-uppercase rounded-0 font-monospace">
                     Initiate Request <i class="fa-solid fa-arrow-right ms-2" aria-hidden="true"></i>
                 </a>
-            </div>
+                </div>
         </div>
 
     </div>
