@@ -28,10 +28,10 @@ $pageTitle = "Master Licensing Portal | RaggieSoft Media";
         <div class="card license-card mit h-100 rounded-0 shadow-sm">
             <div class="card-header bg-info bg-opacity-10 border-bottom border-info border-opacity-25 py-3">
                 <div class="d-flex align-items-center">
-                    <i class="fa-brands fa-github fa-2x me-3 text-info"></i>
+                    <i class="fa-brands fa-github fa-2x me-3 text-info" aria-hidden="true"></i>
                     <div>
-                        <h5 class="mb-0 fw-bold text-info text-uppercase">The Architecture</h5>
-                        <small class="opacity-75 text-body-secondary font-monospace">Code, Scripts, & Systems</small>
+                        <h2 class="h5 mb-0 fw-bold text-info text-uppercase">The Architecture</h2>
+                        <span class="d-block opacity-75 text-body-secondary font-monospace small">Code, Scripts, & Systems</span>
                     </div>
                 </div>
             </div>
@@ -44,7 +44,7 @@ $pageTitle = "Master Licensing Portal | RaggieSoft Media";
                     You are free to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the software, provided the original copyright notice is included.
                 </p>
                 <button type="button" class="btn btn-outline-info btn-sm mt-auto rounded-0 fw-bold" data-bs-toggle="modal" data-bs-target="#mitLicenseModal">
-                    <i class="fa-solid fa-file-contract me-2"></i>Read Full MIT License
+                    <i class="fa-solid fa-file-contract me-2" aria-hidden="true"></i>Read Full MIT License
                 </button>
             </div>
         </div>
@@ -54,10 +54,10 @@ $pageTitle = "Master Licensing Portal | RaggieSoft Media";
         <div class="card license-card cc h-100 rounded-0 shadow-sm">
             <div class="card-header bg-warning bg-opacity-10 border-bottom border-warning border-opacity-25 py-3">
                 <div class="d-flex align-items-center">
-                    <i class="fa-brands fa-creative-commons fa-2x me-3 text-warning"></i>
+                    <i class="fa-brands fa-creative-commons fa-2x me-3 text-warning" aria-hidden="true"></i>
                     <div>
-                        <h5 class="mb-0 fw-bold text-warning text-uppercase">The Narrative</h5>
-                        <small class="opacity-75 text-body-secondary font-monospace">Stories, Music, & Worldbuilding</small>
+                        <h2 class="h5 mb-0 fw-bold text-warning text-uppercase">The Narrative</h2>
+                        <span class="d-block opacity-75 text-body-secondary font-monospace small">Stories, Music, & Worldbuilding</span>
                     </div>
                 </div>
             </div>
@@ -67,12 +67,13 @@ $pageTitle = "Master Licensing Portal | RaggieSoft Media";
                     All creative writing, fictional universes (<em>The Stardust Engine, Knox, Aethel</em>), and lore documentation are licensed under Creative Commons.
                 </p>
                 <ul class="list-unstyled small text-body-secondary mb-4 flex-grow-1">
-                    <li class="mb-2"><i class="fa-solid fa-check text-success me-2"></i><strong>Share & Adapt:</strong> You may redistribute and remix the material.</li>
-                    <li class="mb-2"><i class="fa-solid fa-circle-exclamation text-warning me-2"></i><strong>Attribution:</strong> You must explicitly credit <em>RaggieSoft Media</em>.</li>
-                    <li class="mb-2"><i class="fa-solid fa-circle-exclamation text-warning me-2"></i><strong>ShareAlike:</strong> Derivative works must use the same license.</li>
+                    <li class="mb-2"><i class="fa-solid fa-check text-success me-2" aria-hidden="true"></i><strong>Share & Adapt:</strong> You may redistribute and remix the material.</li>
+                    <li class="mb-2"><i class="fa-solid fa-circle-exclamation text-warning me-2" aria-hidden="true"></i><strong>Attribution:</strong> You must explicitly credit <em>RaggieSoft Media</em>.</li>
+                    <li class="mb-2"><i class="fa-solid fa-circle-exclamation text-warning me-2" aria-hidden="true"></i><strong>ShareAlike:</strong> Derivative works must use the same license.</li>
                 </ul>
                 <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener" class="btn btn-outline-warning btn-sm mt-auto rounded-0 fw-bold">
-                    <i class="fa-solid fa-external-link me-2"></i>View CC BY-SA 4.0 Deed
+                    <i class="fa-solid fa-external-link me-2" aria-hidden="true"></i>View CC BY-SA 4.0 Deed
+                    <span class="visually-hidden">(opens in a new tab)</span>
                 </a>
             </div>
         </div>
@@ -83,24 +84,26 @@ $pageTitle = "Master Licensing Portal | RaggieSoft Media";
 <div class="card border-0 shadow-sm bg-body-tertiary rounded-0 mb-5 border-start border-primary border-4">
     <div class="card-body p-4 p-lg-5 text-center text-md-start d-md-flex align-items-center justify-content-between">
         <div class="mb-4 mb-md-0 me-md-4">
-            <h4 class="fw-bold mb-2 text-uppercase text-primary">Commercial Media Clearances</h4>
+            <h2 class="h4 fw-bold mb-2 text-uppercase text-primary">Commercial Media Clearances</h2>
             <p class="text-body-secondary mb-0 small">
                 Require Engine Room Records audio for a commercial film? Adapting RaggieSoft narrative IP for a monetized product without ShareAlike restrictions? Commercial synchronization and clearance waivers are negotiated directly via our B2B portal.
             </p>
         </div>
         <div class="flex-shrink-0">
             <a href="/raggiesoft-media/licensing/commercial" class="btn btn-primary rounded-0 fw-bold text-uppercase">
-                <i class="fa-duotone fa-briefcase me-2"></i>Commercial Portal
+                <i class="fa-duotone fa-briefcase me-2" aria-hidden="true"></i>Commercial Portal
             </a>
         </div>
     </div>
 </div>
 
-<div class="modal fade" id="mitLicenseModal" tabindex="-1" aria-hidden="true">
+<div class="modal fade" id="mitLicenseModal" tabindex="-1" aria-labelledby="mitLicenseModalTitle" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered modal-lg">
     <div class="modal-content rounded-0 bg-dark border-info">
       <div class="modal-header border-secondary-subtle">
-        <h5 class="modal-title fw-bold text-info"><i class="fa-brands fa-github me-2"></i>The MIT License</h5>
+        <h2 class="modal-title h5 fw-bold text-info" id="mitLicenseModalTitle">
+            <i class="fa-brands fa-github me-2" aria-hidden="true"></i>The MIT License
+        </h2>
         <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body p-4 text-body-secondary font-monospace small">
