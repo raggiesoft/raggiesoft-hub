@@ -175,7 +175,8 @@ $currentSidebar = ROOT_PATH . '/includes/components/sidebars/' . $config['sideba
 
 require_once ROOT_PATH . '/includes/header.php';
 
-echo '<div class="container-fluid flex-grow-1 d-flex p-0">';
+// ADD THE ID HERE: id="elara-layout-wrapper"
+echo '<div id="elara-layout-wrapper" class="container-fluid flex-grow-1 d-flex p-0">';
 echo '  <div class="row flex-grow-1 m-0 w-100">';
 
 if ($showSidebar && file_exists($currentSidebar)) {
