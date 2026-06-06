@@ -1,13 +1,13 @@
 <?php
 // includes/components/headers/engine-room/header-engine-room.php
 // The Official Imprint Navigation. 
-// Balances Real-World B2B Operations with Narrative Archives.
+// Fan-Centric Focus with Corporate Routing to RaggieSoft Media.
 
 // 1. Determine Active States
 $uri = $_SERVER['REQUEST_URI'] ?? '';
 
 $isRoster = str_starts_with($uri, '/engine-room/artists');
-$isLicensing = str_contains($uri, '/commercial-licensing');
+$isRadio = str_contains($uri, '/radio');
 $isArchives = (
     str_starts_with($uri, '/engine-room/history') || 
     str_contains($uri, '/corporate') ||
@@ -16,6 +16,12 @@ $isArchives = (
 ?>
 
 <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+
+  <li class="nav-item">
+    <a class="nav-link <?php echo $isRadio ? 'active fw-bold text-warning' : ''; ?>" href="/engine-room/artists/stardust-engine/radio">
+        <i class="fa-duotone fa-signal-stream me-2"></i>Engine Room Radio
+    </a>
+  </li>
 
   <li class="nav-item dropdown">
     <a class="nav-link dropdown-toggle <?php echo $isRoster ? 'active fw-bold' : ''; ?>" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -36,17 +42,16 @@ $isArchives = (
           </a>
       </li>
       <li>
+          <a class="dropdown-item" href="/engine-room/artists/the-winter-palace">
+            <i class="fa-solid fa-snowflake me-2 text-info"></i>The Winter Palace
+          </a>
+      </li>
+      <li>
           <a class="dropdown-item" href="/raggiesoft-books/aethel-saga">
             <i class="fa-solid fa-sword me-2 text-warning"></i>Firelight
           </a>
       </li>
     </ul>
-  </li>
-
-  <li class="nav-item">
-    <a class="nav-link <?php echo $isLicensing ? 'active fw-bold text-primary' : ''; ?>" href="/engine-room/commercial-licensing">
-        <i class="fa-duotone fa-handshake me-2"></i>Commercial Licensing
-    </a>
   </li>
 
   <li class="nav-item dropdown">
@@ -61,7 +66,7 @@ $isArchives = (
           </a>
       </li>
       <li>
-          <a class="dropdown-item" href="/about/engine-room">
+          <a class="dropdown-item" href="/engine-room/about">
             <i class="fa-solid fa-industry me-2 text-secondary"></i>About The Fortress
           </a>
       </li>
@@ -81,24 +86,31 @@ $isArchives = (
   </li>
 
   <li class="nav-item dropdown">
-    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-      <i class="fa-duotone fa-envelope me-2"></i>Contact
+    <a class="nav-link dropdown-toggle text-body-secondary" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+      <i class="fa-duotone fa-briefcase me-2"></i>Industry
     </a>
     <ul class="dropdown-menu dropdown-menu-end rounded-0 border-secondary shadow-sm">
-      <li><h6 class="dropdown-header text-uppercase text-muted fw-bold">Official Channels</h6></li>
+      <li><h6 class="dropdown-header text-uppercase text-muted fw-bold">B2B Operations</h6></li>
       <li>
-          <a class="dropdown-item" href="mailto:licensing@engineroom-records.com">
-            <i class="fa-solid fa-file-audio me-2 text-primary"></i>Sync & Licensing
+          <a class="dropdown-item" href="/raggiesoft-media/licensing">
+            <i class="fa-solid fa-handshake me-2 text-primary"></i>Master Licensing Portal
           </a>
       </li>
       <li>
-          <a class="dropdown-item" href="mailto:legal@engineroom-records.com">
-            <i class="fa-solid fa-scale-balanced me-2 text-warning"></i>Legal & Copyright
+          <a class="dropdown-item" href="/engine-room/dsp-verification">
+            <i class="fa-solid fa-shield-check me-2 text-success"></i>DSP Verification Desk
+          </a>
+      </li>
+      <li><hr class="dropdown-divider"></li>
+      <li><h6 class="dropdown-header text-uppercase text-muted fw-bold">Media Contacts</h6></li>
+      <li>
+          <a class="dropdown-item font-monospace small" href="mailto:sync@raggiesoftmedia.com">
+            <i class="fa-solid fa-file-audio me-2 text-warning"></i>sync@raggiesoftmedia.com
           </a>
       </li>
       <li>
-          <a class="dropdown-item" href="mailto:inquiries@engineroom-records.com">
-            <i class="fa-solid fa-circle-info me-2 text-secondary"></i>General Inquiries
+          <a class="dropdown-item font-monospace small" href="mailto:ops@raggiesoftmedia.com">
+            <i class="fa-solid fa-envelope me-2 text-secondary"></i>ops@raggiesoftmedia.com
           </a>
       </li>
     </ul>
