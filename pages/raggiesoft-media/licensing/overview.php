@@ -25,7 +25,7 @@ $pageTitle = "Master Licensing Portal | RaggieSoft Media";
 <div class="row g-4 mb-5">
     
     <div class="col-md-6">
-        <div class="card license-card mit h-100 rounded-0 shadow-sm">
+        <div class="card license-card mit h-100 rounded-0 shadow-sm" data-bs-theme="dark">
             <div class="card-header bg-info bg-opacity-10 border-bottom border-info border-opacity-25 py-3">
                 <div class="d-flex align-items-center">
                     <i class="fa-brands fa-github fa-2x me-3 text-info" aria-hidden="true"></i>
@@ -51,7 +51,7 @@ $pageTitle = "Master Licensing Portal | RaggieSoft Media";
     </div>
 
     <div class="col-md-6">
-        <div class="card license-card cc h-100 rounded-0 shadow-sm">
+        <div class="card license-card cc h-100 rounded-0 shadow-sm" data-bs-theme="dark">
             <div class="card-header bg-warning bg-opacity-10 border-bottom border-warning border-opacity-25 py-3">
                 <div class="d-flex align-items-center">
                     <i class="fa-brands fa-creative-commons fa-2x me-3 text-warning" aria-hidden="true"></i>
@@ -99,7 +99,7 @@ $pageTitle = "Master Licensing Portal | RaggieSoft Media";
 
 <div class="modal fade" id="mitLicenseModal" tabindex="-1" aria-labelledby="mitLicenseModalTitle" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered modal-lg">
-    <div class="modal-content rounded-0 bg-dark border-info">
+    <div class="modal-content rounded-0 bg-dark border-info" data-bs-theme="dark">
       <div class="modal-header border-secondary-subtle">
         <h2 class="modal-title h5 fw-bold text-info" id="mitLicenseModalTitle">
             <i class="fa-brands fa-github me-2" aria-hidden="true"></i>The MIT License
