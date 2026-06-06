@@ -182,7 +182,8 @@ if (isset($customPageAssets) && is_array($customPageAssets)) {
         <link href="<?php echo $cssUrl . '?v=' . time(); ?>" rel="stylesheet">
     <?php endforeach; ?>    
 
-    <script src="https://kit.fontawesome.com/ec060982d4.js" crossorigin="anonymous"></script>
+    <!--<script src="https://kit.fontawesome.com/ec060982d4.js" crossorigin="anonymous"></script>-->
+    <link rel="stylesheet" href="https://kit.fontawesome.com/ec060982d4.css" crossorigin="anonymous">
 
     <?php foreach ($critical_images as $imgUrl): ?>
         <?php if($imgUrl): ?><link rel="preload" as="image" href="<?php echo $imgUrl; ?>"><?php endif; ?>
