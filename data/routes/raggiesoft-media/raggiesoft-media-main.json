@@ -17,7 +17,16 @@
   "/raggiesoft-media/licensing": {
     "view": "pages/raggiesoft-media/licensing/overview",
     "title": "Master Licensing Portal | RaggieSoft Media",
-    "ogDescription": "Centralized rights clearance for CC BY-SA 4.0 lore, MIT open-source code, and Commercial Sync."
+    "ogDescription": "Centralized rights clearance for CC BY-SA 4.0 lore, MIT open-source code, and Commercial Sync.",
+    "showSidebar": true,
+    "sidebar": "raggiesoft-media/licensing/sidebar-licensing"
+  },
+  "/raggiesoft-media/licensing/commercial": {
+    "view": "pages/raggiesoft-media/licensing/commercial",
+    "title": "Commercial Licensing | RaggieSoft Media",
+    "ogDescription": "Non-exclusive commercial synchronization clearances for RaggieSoft Media IP and Engine Room Records audio catalogs.",
+    "showSidebar": true,
+    "sidebar": "raggiesoft-media/licensing/sidebar-licensing"
   },
   "/raggiesoft-media/careers": {
     "view": "pages/raggiesoft-media/careers",
