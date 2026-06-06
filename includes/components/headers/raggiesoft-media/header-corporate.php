@@ -34,4 +34,10 @@ $isOpenSource = (str_starts_with($request_uri, '/raggiesoft-media/projects'));
     </a>
   </li>
 
+  <li class="nav-item border-start border-secondary-subtle ms-3 ps-3">
+      <a class="nav-link text-body-secondary hover-text-primary" href="/">
+        <i class="fa-duotone fa-arrow-right-from-bracket me-2" aria-hidden="true"></i><span class="small">Exit to RaggieSoft</span>
+      </a>
+  </li>
+
 </ul>

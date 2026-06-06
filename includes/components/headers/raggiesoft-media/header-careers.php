@@ -11,9 +11,9 @@
     </span>
   </li>
 
-  <li class="nav-item">
+  <li class="nav-item ms-2">
     <a class="nav-link btn btn-outline-secondary btn-sm rounded-0 px-3 py-1" href="/raggiesoft-media">
-        <i class="fa-solid fa-arrow-left me-2" aria-hidden="true"></i>Return to Corporate Hub
+        <i class="fa-duotone fa-arrow-right-from-bracket me-2" aria-hidden="true"></i>Exit to RaggieSoft Media
     </a>
   </li>
 
