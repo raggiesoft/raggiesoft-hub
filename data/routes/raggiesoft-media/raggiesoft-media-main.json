@@ -1,7 +1,7 @@
 {
   "common": {
     "site": "corporate",
-    "showSidebar": false,
+    "showSidebar": true,
     "brandFont": ["Roboto", "sans-serif"],
     "headerMenu": "raggiesoft-media/header-corporate",
     "footer": "raggiesoft-media/footer-corporate",
@@ -12,20 +12,19 @@
   "/raggiesoft-media": {
     "view": "pages/raggiesoft-media/overview",
     "title": "RaggieSoft Media | IP & Asset Management",
-    "ogDescription": "Independent multimedia asset management, open-source software architecture, and master licensing administration."
+    "ogDescription": "Independent multimedia asset management, open-source software architecture, and master licensing administration.",
+    "showSidebar": false
   },
   "/raggiesoft-media/licensing": {
     "view": "pages/raggiesoft-media/licensing/overview",
     "title": "Master Licensing Portal | RaggieSoft Media",
     "ogDescription": "Centralized rights clearance for CC BY-SA 4.0 lore, MIT open-source code, and Commercial Sync.",
-    "showSidebar": true,
     "sidebar": "raggiesoft-media/licensing/sidebar-licensing"
   },
   "/raggiesoft-media/licensing/commercial": {
     "view": "pages/raggiesoft-media/licensing/commercial",
     "title": "Commercial Licensing | RaggieSoft Media",
     "ogDescription": "Non-exclusive commercial synchronization clearances for RaggieSoft Media IP and Engine Room Records audio catalogs.",
-    "showSidebar": true,
     "sidebar": "raggiesoft-media/licensing/sidebar-licensing"
   },
   "/raggiesoft-media/careers": {
@@ -37,7 +36,6 @@
     "siteName": "Careers: RaggieSoft Is NOT Hiring",
     "headerMenu": "raggiesoft-media/header-careers",
     "footer": "raggiesoft-media/footer-careers",
-    "showSidebar": true,
     "sidebar": "raggiesoft-media/sidebar-careers"
   },
   "/raggiesoft-media/projects/elara": {
