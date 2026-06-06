@@ -13,7 +13,7 @@
     "view": "pages/raggiesoft-media/overview",
     "title": "RaggieSoft Media | IP & Asset Management",
     "ogDescription": "Independent multimedia asset management, open-source software architecture, and master licensing administration.",
-    "showSidebar": false,
+    "showSidebar": false
   },
   "/raggiesoft-media/licensing": {
     "view": "pages/raggiesoft-media/licensing/overview",
