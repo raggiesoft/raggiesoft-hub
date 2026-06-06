@@ -211,8 +211,7 @@ if (isset($customPageAssets) && is_array($customPageAssets)) {
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Herr+Von+Muellerhoff&display=swap" rel="stylesheet">
 
-    <script src="https://assets.raggiesoft.com/common/js/elara-spa.js" defer></script>
-    
+<script src="https://assets.raggiesoft.com/common/js/elara-spa.js?v=<?php echo time(); ?>" defer></script>    
     <style>
         .brand-font { font-family: <?php echo $brand_font_css; ?> !important; }
         
