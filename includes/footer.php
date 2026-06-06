@@ -63,7 +63,7 @@ if (!file_exists($currentFooter)) {
     </div>
 </div>
 
-<div id="global-player-zone" class="fixed-bottom" style="z-index: 1050;" data-turbo-permanent="true">
+<div id="global-player-zone" class="fixed-bottom" style="z-index: 1050;">
     
     <?php include ROOT_PATH . '/includes/components/audio-player/sticky-player.php'; ?>
 
@@ -77,52 +77,64 @@ if (!file_exists($currentFooter)) {
 
 <script src="<?php echo $cdn_root; ?>/common/js/bootstrap.js"></script>
 <script>
-document.addEventListener('DOMContentLoaded', function() {
-    // 1. Check if the user has a saved store preference
+// 1. Wrap the Store UI logic into a reusable function
+function initializeStorePreferences() {
     const savedPlatform = localStorage.getItem('preferredMusicStore');
     
-    // 2. Function to visually update a specific button group
     function updateButtonGroup(group, platformData) {
         const mainBtn = group.querySelector('.main-store-btn');
         const toggleBtn = group.querySelector('.toggle-store-btn');
         const icon = group.querySelector('.main-store-icon');
         const textSpan = group.querySelector('.main-store-text');
         
-        // Update Colors
+        if (!mainBtn || !toggleBtn) return; // Safety check
+        
         mainBtn.className = mainBtn.className.replace(/btn-\w+/, platformData.color);
         toggleBtn.className = toggleBtn.className.replace(/btn-\w+/, platformData.color);
-        
-        // Update URL, Icon, and Text
         mainBtn.href = platformData.url;
-        icon.className = `main-store-icon ${platformData.icon} me-2`;
-        textSpan.textContent = `${mainBtn.dataset.defaultText} ${platformData.name}`;
+        if(icon) icon.className = `main-store-icon ${platformData.icon} me-2`;
+        if(textSpan) textSpan.textContent = `${mainBtn.dataset.defaultText} ${platformData.name}`;
     }
 
-    // 3. Apply saved preference on page load
     if (savedPlatform) {
         document.querySelectorAll('.dynamic-store-group').forEach(group => {
-            // Find the dropdown link that matches the saved platform to steal its data attributes
             const targetLink = group.querySelector(`.store-selector-link[data-platform="${savedPlatform}"]`);
-            
-            if (targetLink) {
-                updateButtonGroup(group, targetLink.dataset);
-            }
+            if (targetLink) updateButtonGroup(group, targetLink.dataset);
         });
     }
 
-    // 4. Save preference when a user clicks a dropdown link
     document.querySelectorAll('.store-selector-link').forEach(link => {
-        link.addEventListener('click', function(e) {
-            // Save the newly selected platform to the browser
+        // Remove old listeners to prevent duplicates on SPA load
+        const newLink = link.cloneNode(true);
+        link.parentNode.replaceChild(newLink, link);
+        
+        newLink.addEventListener('click', function(e) {
             localStorage.setItem('preferredMusicStore', this.dataset.platform);
-            
-            // Note: We don't preventDefault() here because we actually want the browser 
-            // to follow the link and take them to Apple/Spotify/etc right after saving.
         });
     });
+}
+
+// 2. Run on initial hard load
+document.addEventListener('DOMContentLoaded', initializeStorePreferences);
+
+// 3. The Elara SPA Lifecycle Hook
+document.addEventListener('elara:loaded', function() {
+    // Re-bind the store selector buttons in the new DOM
+    initializeStorePreferences();
+
+    // Re-bind the Stardust Engine tracklist buttons so music keeps playing
+    if (typeof bindTracklistButtons === 'function') {
+        bindTracklistButtons(); 
+    }
+
+    // Ping Google Analytics to log the virtual pageview
+    if (typeof gtag === 'function') {
+        gtag('config', '<?php echo htmlspecialchars($settings['analytics']['trackingId'] ?? ''); ?>', {
+            'page_path': window.location.pathname
+        });
+    }
 });
 </script>
-
 <?php if (isset($pageConfig['scripts']) && is_array($pageConfig['scripts'])): ?>
     <?php foreach ($pageConfig['scripts'] as $script): ?>
         <script src="<?php echo $script; ?>"></script>

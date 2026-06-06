@@ -1,0 +1,41 @@
+{
+  "common": {
+    "site": "corporate",
+    "showSidebar": false,
+    "brandFont": ["Roboto", "sans-serif"],
+    "headerMenu": "raggiesoft-media/header-corporate",
+    "footer": "raggiesoft-media/footer-corporate",
+    "siteName": "RaggieSoft Media",
+    "navbarBrandText": "<span class=\"text-uppercase fw-bold\">RaggieSoft</span><span class=\"fw-light\"> Media</span>",
+    "navbarBrandLink": "/raggiesoft-media"
+  },
+  "/raggiesoft-media": {
+    "view": "pages/raggiesoft-media/overview",
+    "title": "RaggieSoft Media | IP & Asset Management",
+    "ogDescription": "Independent multimedia asset management, open-source software architecture, and master licensing administration."
+  },
+  "/raggiesoft-media/licensing": {
+    "view": "pages/raggiesoft-media/licensing/overview",
+    "title": "Master Licensing Portal | RaggieSoft Media",
+    "ogDescription": "Centralized rights clearance for CC BY-SA 4.0 lore, MIT open-source code, and Commercial Sync."
+  },
+  "/raggiesoft-media/careers": {
+    "view": "pages/raggiesoft-media/careers",
+    "title": "Careers and Jobs at RaggieSoft | Scam Warning",
+    "ogDescription": "Notice regarding fraudulent employment offers. RaggieSoft is a single-person entity and is not hiring.",
+    "schemaType": "FAQPage",
+    "navbarBrandText": "Careers: We Are NOT Hiring",
+    "siteName": "Careers: RaggieSoft Is NOT Hiring",
+    "headerMenu": "raggiesoft-media/header-careers",
+    "footer": "raggiesoft-media/footer-careers",
+    "showSidebar": true,
+    "sidebar": "raggiesoft-media/sidebar-careers"
+  },
+  "/raggiesoft-media/projects/elara": {
+    "view": "pages/raggiesoft-media/projects/elara/overview",
+    "title": "Elara CMS | Open-Source Hub",
+    "ogDescription": "Official documentation and repository for the generic, MIT-licensed Elara Content Management System.",
+    "showSidebar": true,
+    "sidebar": "raggiesoft-media/projects/elara/sidebar-docs"
+  }
+}

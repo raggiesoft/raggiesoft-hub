@@ -211,9 +211,7 @@ if (isset($customPageAssets) && is_array($customPageAssets)) {
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Herr+Von+Muellerhoff&display=swap" rel="stylesheet">
 
-    <script type="module">
-        import "https://cdn.skypack.dev/@hotwired/turbo";
-    </script>
+    <script src="https://assets.raggiesoft.com/common/js/elara-spa.js" defer></script>
     
     <style>
         .brand-font { font-family: <?php echo $brand_font_css; ?> !important; }
@@ -369,8 +367,8 @@ if (isset($customPageAssets) && is_array($customPageAssets)) {
             }, 500);
         }
 
-        // --- 3. TURBO INTEGRATION (The "SPA" Engine) ---
-        document.addEventListener('turbo:visit', () => {
+        // --- 3. ELARA SPA INTEGRATION ---
+        document.addEventListener('elara:navigating', () => {
             if(loader) {
                 loader.classList.remove('loader-hidden');
                 if(text) text.innerText = "> INITIALIZING JUMP...";
@@ -378,42 +376,11 @@ if (isset($customPageAssets) && is_array($customPageAssets)) {
             }
         });
 
-        // FIX: Ensure loader is hidden before caching, so the "Snapshot" 
-        // doesn't have the loader visible when the user clicks Back.
-        document.addEventListener('turbo:before-cache', () => {
-            if(loader) loader.classList.add('loader-hidden');
-        });
-
-        document.addEventListener('turbo:load', () => {
+        document.addEventListener('elara:loaded', () => {
             finishLoad();
         });
 
-        // --- 4. CLICK INTERCEPTOR (The "Instant" Feel) ---
-        document.addEventListener('click', function(e) {
-            const link = e.target.closest('a');
-            if (!link) return; 
-            if (link.target === '_blank') return; 
-            if (e.ctrlKey || e.metaKey || e.shiftKey) return; 
-            
-            const href = link.getAttribute('href');
-            if (!href || href.startsWith('javascript:') || href.startsWith('mailto:') || href.startsWith('tel:')) return; 
-
-            if (href.startsWith('#')) return; 
-            
-            const currentUrl = new URL(window.location.href);
-            const targetUrl = new URL(link.href, window.location.href); 
-
-            if (targetUrl.origin !== currentUrl.origin) return; 
-            if (targetUrl.pathname === currentUrl.pathname && targetUrl.hash !== '') return;
-
-            if(loader) {
-                loader.classList.remove('loader-hidden');
-                if(text) text.innerText = "> NAVIGATING..."; 
-                startHeartbeat();
-            }
-        });
-
-        // --- 5. BFCache Fix (Browser Back Button) ---
+        // --- 4. BFCache Fix (Browser Back Button) ---
         // Handles cases where the browser restores the page state from memory
         window.addEventListener('pageshow', (event) => {
             if (event.persisted) {
