@@ -19,6 +19,8 @@ $station_roster = [
 $master_playlist = []; 
 
 // 2. AGGREGATOR LOGIC
+$seen_isrcs = []; // Initialize our deduplication tracker
+
 foreach ($station_roster as $artist_slug) {
     
     // Fetch the master albums.json for the artist directly from the CDN
@@ -53,6 +55,18 @@ foreach ($station_roster as $artist_slug) {
                             foreach ($raw_tracks as $track) {
                                 $fn = $track['fileName'] ?? ($track['filename'] ?? null);
                                 if (!$fn) continue;
+
+                                // --- ISRC DEDUPLICATION LOGIC ---
+                                $isrc = $track['isrc'] ?? '';
+                                
+                                if (!empty($isrc)) {
+                                    if (in_array($isrc, $seen_isrcs)) {
+                                        continue; // We already have this exact recording. Skip it.
+                                    }
+                                    $seen_isrcs[] = $isrc; // Add it to the tracker so we don't play it again.
+                                }
+                                // If the ISRC is empty (like a Live in Chicago track), it bypasses the tracker and gets added.
+                                // --------------------------------
 
                                 $legacy_tier = isset($track['legacyTier']) ? $track['legacyTier'] : null;
                                 $lore_note = isset($track['loreNote']) ? $track['loreNote'] : '';
