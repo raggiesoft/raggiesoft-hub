@@ -1,7 +1,7 @@
 <?php
 /**
  * COMPONENT: _tracklist-downloader.php
- * VERSION: 9.8 (Single Source of Truth DSP Integration)
+ * VERSION: 10.1 (Schema.org & Track Length Integration)
  *
  * LICENSE:
  * The architecture and code of this file are licensed under the MIT License.
@@ -50,13 +50,15 @@ if (!function_exists('get_archive_name')) {
     }
 }
 
-// --- TIMELINE LOGIC ---
-$narrative_date = isset($album_data['narrativeReleaseDate']) ? $album_data['narrativeReleaseDate'] : '1900-01-01';
-$real_release_date = isset($album_data['realReleaseDate']) ? $album_data['realReleaseDate'] : date('Y-m-d');
+// --- TIMELINE LOGIC (SCHEMA.ORG INTEGRATION) ---
+$narrative_date = !empty($album_data['temporalCoverage']) ? $album_data['temporalCoverage'] : '1900-01-01';
+$real_release_date = !empty($album_data['datePublished']) ? $album_data['datePublished'] : 'TBA';
 
 $narrative_year = substr($narrative_date, 0, 4);
-$real_release_year = substr(trim($real_release_date), -4);
-$archive_base_name = get_archive_name($album_data['albumName'], $narrative_year);
+$real_release_year = $real_release_date !== 'TBA' ? substr(trim($real_release_date), -4) : 'TBA';
+
+$album_name = isset($album_data['name']) ? $album_data['name'] : 'Unknown Album';
+$archive_base_name = get_archive_name($album_name, $narrative_year);
 
 // --- DSP STREAMING IDS (SINGLE SOURCE OF TRUTH) ---
 $stream_spotify_id = '';
@@ -79,7 +81,7 @@ if ($albums_master_content !== false) {
                 // Match by explicitly defined folder, URL slug, or exact Album Name
                 $check_slug = isset($master_album['folder']) ? $master_album['folder'] : basename($master_album['url']);
                 
-                if ($check_slug === $current_slug || $master_album['title'] === $album_data['albumName']) {
+                if ($check_slug === $current_slug || $master_album['title'] === $album_name) {
                     $stream_spotify_id = $master_album['spotifyId'] ?? '';
                     $stream_apple_id   = $master_album['appleId'] ?? '';
                     $stream_amazon_id  = $master_album['amazonId'] ?? '';
@@ -97,7 +99,9 @@ $has_active_streams = !empty($stream_spotify_id) || !empty($stream_apple_id) || 
 $album_art_url = $base_web_path . "/album-art.jpg?v=" . time();
 $js_playlist = []; 
 ?>
-
+<script type="application/ld+json">
+    <?php echo $album_json_content; ?>
+</script>
 <div class="card bg-body-tertiary border-secondary-subtle mb-5 shadow-sm">
     <div class="card-body p-3">
         <div class="d-flex flex-wrap align-items-center justify-content-between border-bottom border-secondary-subtle pb-2 mb-2">
@@ -108,6 +112,15 @@ $js_playlist = [];
                 <i class="fa-solid fa-calendar-check me-2 text-success"></i> <strong>DSP / Real-World Release:</strong> <span class="badge bg-success-subtle text-success-emphasis ms-1" style="font-size: 0.9em; border: 1px solid var(--bs-success-border-subtle);"><?php echo htmlspecialchars($real_release_date); ?></span>
             </div>
         </div>
+        
+        <?php if (!empty($album_data['description'])): ?>
+        <div class="mt-3 mb-2 px-3 py-2 border-start border-3 border-primary bg-body rounded-end">
+            <p class="mb-0 fst-italic text-body-secondary small">
+                <?php echo htmlspecialchars($album_data['description']); ?>
+            </p>
+        </div>
+        <?php endif; ?>
+
         <div class="d-flex align-items-start mt-3">
             <i class="fa-solid fa-circle-info text-secondary mt-1 me-3 fs-5"></i>
             <p class="small text-body-secondary mb-0 lh-sm">
@@ -268,17 +281,21 @@ $js_playlist = [];
 
         $legacy_tier = isset($track['legacyTier']) ? $track['legacyTier'] : null;
         $lore_note = isset($track['loreNote']) ? $track['loreNote'] : '';
+        $duration = isset($track['duration']) ? $track['duration'] : '';
 
-        // Add to JS Playlist
+        // Add to JS Playlist (SCHEMA.ORG INTEGRATION)
+        $artist_name = isset($album_data['byArtist']['name']) ? $album_data['byArtist']['name'] : 'Unknown Artist';
+        
         $js_playlist[] = [
             'title' => $track['title'],
-            'artist' => $album_data['albumArtist'],
-            'album' => $album_data['albumName'],
+            'artist' => $artist_name,
+            'album' => $album_name,
             'src' => $player_src,
             'artwork' => $album_art_url,
             'lyrics' => $lyrics_url,
             'legacyTier' => $legacy_tier,
-            'loreNote' => $lore_note
+            'loreNote' => $lore_note,
+            'duration' => $duration
         ];
 
         $indent_class = !empty($current_suite) ? "ms-4 border-start-0 ps-3" : "";
@@ -290,7 +307,14 @@ $js_playlist = [];
                     <div class="d-flex align-items-center flex-wrap">
                         <span class="text-secondary fw-bold me-3" style="width: 25px;"><?php echo $track['track']; ?>.</span>
                         <div>
-                            <strong class="text-body d-block fs-5 d-inline-block me-2"><?php echo htmlspecialchars($track['title']); ?></strong>
+                            <strong class="text-body fs-5 d-inline-block me-2"><?php echo htmlspecialchars($track['title']); ?></strong>
+                            
+                            <?php if (!empty($duration)): ?>
+                                <span class="text-secondary small fw-medium me-2" title="Track Length">
+                                    <i class="fa-duotone fa-clock me-1" style="--fa-primary-opacity: 0.4;"></i><?php echo htmlspecialchars($duration); ?>
+                                </span>
+                            <?php endif; ?>
+
                             <?php 
                             if ($legacy_tier): 
                                 $badge_class = 'bg-secondary-subtle text-secondary-emphasis'; 

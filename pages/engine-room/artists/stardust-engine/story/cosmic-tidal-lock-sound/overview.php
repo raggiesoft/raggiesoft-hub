@@ -1,10 +1,28 @@
 <?php
 // pages/engine-room/artists/stardust-engine/cosmic-tidal-lock-sound/overview.php
 // Lore Page: The Cosmic Tidal Lock Sound & 80s Cosmic Pop
-// Note: 4th wall maintained. Technical prompt data excluded.
+// Updated: Includes Article Schema and Suno Engineering Meta-Data
 
 $pageTitle = "The Cosmic Tidal Lock Sound - The Stardust Engine";
+
+$articleSchema = [
+    "@context" => "https://schema.org",
+    "@type" => "Article",
+    "headline" => "The Cosmic Tidal Lock Sound - The Stardust Engine",
+    "about" => [
+        "@type" => "MusicGroup",
+        "name" => "The Stardust Engine"
+    ],
+    "publisher" => [
+        "@type" => "Organization",
+        "name" => "Engine Room Records"
+    ]
+];
 ?>
+
+<script type="application/ld+json">
+<?php echo json_encode($articleSchema, JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT); ?>
+</script>
 
 <div class="starfield-container"><div class="starfield-twinkling"></div></div>
 
@@ -22,7 +40,7 @@ $pageTitle = "The Cosmic Tidal Lock Sound - The Stardust Engine";
     <div class="row g-5 justify-content-center">
         
         <div class="col-lg-10">
-            <div class="card glass-card border-info overflow-hidden">
+            <div class="card glass-card border-info overflow-hidden shadow-lg">
                 <div class="card-header bg-info bg-opacity-10 border-info text-info fw-bold text-uppercase letter-spacing-1 p-3">
                     <i class="fa-duotone fa-book-journal-whills me-2"></i>The Nomenclature: Genre vs. Trademark
                 </div>
@@ -42,9 +60,9 @@ $pageTitle = "The Cosmic Tidal Lock Sound - The Stardust Engine";
                         </div>
                         <div class="col-md-6">
                             <div class="p-4 border border-warning rounded h-100 bg-black bg-opacity-50">
-                                <h4 class="text-warning fw-bold mb-3">The Cosmic Tidal Lock Sound&reg; (The Trademark)</h4>
+                                <h4 class="text-warning fw-bold mb-3">The Cosmic Tidal Lock Sound&trade; (The Trademark)</h4>
                                 <p class="text-white-75 small mb-0">
-                                    This is the heavily guarded, legally protected trademark officially registered with the USPTO. It refers strictly to the proprietary, highly specific audio engineering and synth-layering techniques developed exclusively by <strong>Cassidy O'Connell</strong>. It creates a massive, zero-gravity atmospheric effect that is mathematically distinct from standard 1980s pop.
+                                    This is the heavily guarded, proprietary trademark claimed by <strong>Engine Room Records</strong>. It refers strictly to the highly specific audio engineering and synth-layering techniques developed exclusively by <strong>Cassidy O'Connell</strong>. It creates a massive, zero-gravity atmospheric effect that is mathematically distinct from standard 1980s pop.
                                 </p>
                             </div>
                         </div>
@@ -54,7 +72,7 @@ $pageTitle = "The Cosmic Tidal Lock Sound - The Stardust Engine";
         </div>
 
         <div class="col-lg-10">
-            <div class="card glass-card border-secondary overflow-hidden">
+            <div class="card glass-card border-secondary overflow-hidden shadow-lg">
                 <div class="row g-0">
                     <div class="col-md-5 bg-black bg-opacity-50 p-4 p-lg-5 border-end border-secondary d-flex flex-column justify-content-center">
                         <h3 class="text-white fw-bold text-uppercase mb-3"><i class="fa-duotone fa-satellite-dish text-secondary me-2"></i>The Origin</h3>
@@ -62,7 +80,7 @@ $pageTitle = "The Cosmic Tidal Lock Sound - The Stardust Engine";
                             This sound is exactly what the band <em>wanted</em> to do in 1987. However, Apex Records flatly refused, demanding safe, terrestrial dance-pop instead.
                         </p>
                         <p class="text-white-75 small mb-0">
-                            The distinct engineering technique was born out of absolute necessity following the 1992 "Friction Catastrophe." It was finally realized and perfected by Cassidy on the 1997 track <strong>"Moon 1 (Tidal Lock)"</strong>. Because the sound is 100% Cassidy's vision and execution, tracks utilizing this specific profile feature her crystal-clear female vocals exclusively.
+                            The distinct engineering technique was born out of absolute necessity following the 1992 "Friction Catastrophe." It was first fully realized and perfected by Cassidy on the track <strong>"Moon 1 (Tidal Lock)"</strong>. Because the sound is 100% Cassidy's vision and execution, tracks utilizing this specific profile feature her crystal-clear female vocals exclusively.
                         </p>
                     </div>
                     <div class="col-md-7 bg-dark bg-opacity-75 p-4 p-lg-5 d-flex flex-column justify-content-center">
@@ -71,7 +89,7 @@ $pageTitle = "The Cosmic Tidal Lock Sound - The Stardust Engine";
                             Recognizing the immense value of Cassidy's engineering genius, Manager and CEO <strong>Holly O'Connell</strong> immediately weaponized it. 
                         </p>
                         <p class="text-white-75 small mb-0">
-                            Through the independent boutique label she founded in 1992—Engine Room Records, LLC—Holly officially registered <strong>The Cosmic Tidal Lock Sound&reg;</strong>. This gave the band impenetrable legal ammunition. If another studio or corporate entity attempts to rip off their exact production style in a commercial or pop track, Holly has the federal backing to shut them down immediately.
+                            Through the independent boutique label she founded in 1992—<strong>Engine Room Records</strong>—Holly officially registered <em>The Cosmic Tidal Lock Sound&reg;</em>. This gave the band impenetrable legal ammunition. If another studio or corporate entity attempts to rip off their exact production style in a commercial or pop track, Holly has the federal backing to shut them down immediately.
                         </p>
                     </div>
                 </div>
@@ -79,7 +97,56 @@ $pageTitle = "The Cosmic Tidal Lock Sound - The Stardust Engine";
         </div>
 
         <div class="col-lg-10">
-            <div class="card glass-card border-primary overflow-hidden mt-3">
+            <div class="card border-success bg-dark shadow-lg mt-4">
+                <div class="card-header bg-success text-white fw-bold text-uppercase letter-spacing-1 p-3 d-flex align-items-center">
+                    <i class="fa-duotone fa-sliders-simple me-2"></i>Archivist Note: The Suno Engineering Guide
+                </div>
+                <div class="card-body p-4 p-lg-5 text-light">
+                    <p class="mb-4 text-white-75">
+                        To accurately generate tracks within this specific sonic profile using Suno AI, the following Style Prompts must be used. Suno must rely entirely on the "female vocalist" tag to honor Cassidy's solo architecture.
+                    </p>
+
+                    <div class="list-group list-group-flush bg-transparent">
+                        
+                        <div class="list-group-item bg-transparent border-secondary py-3 px-0">
+                            <h5 class="text-success fw-bold mb-2">1. The Studio Master Prompt</h5>
+                            <p class="small text-white-50 mb-2 fst-italic">Use this for generating the clean, original album tracks.</p>
+                            <div class="bg-black border border-secondary rounded p-3 font-monospace small text-info">
+                                1980s synth-pop, mid-tempo space-rock, driving 4/4 gated drum beat, shimmering analog synthesizers, melodic fretless bassline, crystal clear female vocals, lush spatial reverb, celestial atmosphere
+                            </div>
+                        </div>
+
+                        <div class="list-group-item bg-transparent border-secondary py-3 px-0">
+                            <h5 class="text-success fw-bold mb-2">2. The Live "Walk-On" Prompt (Act Opener)</h5>
+                            <p class="small text-white-50 mb-2 fst-italic">Use this for the first song of a set, or returning from an intermission. It allows Suno the freedom to generate a 60-to-90 second tension-building vamp in the dark before Cassidy starts singing.</p>
+                            <ul class="small text-white-75 mb-2">
+                                <li><strong>Cover Settings:</strong> Audio Influence at 73% | Weirdness at 0%</li>
+                                <li><strong>Lyrics Box Requirement:</strong> Top the lyrics with bracketed audio-environment tags like <code>[Live Crowd Cheering]</code> or <code>[Low Synth Drone Intro]</code>.</li>
+                            </ul>
+                            <div class="bg-black border border-secondary rounded p-3 font-monospace small text-info">
+                                1980s synth-pop, live stadium concert, massive crowd cheering, mid-tempo space-rock, driving 4/4 gated drum beat, shimmering analog synthesizers, melodic fretless bassline, crystal clear female vocals, lush spatial reverb, celestial atmosphere, echoing stadium acoustics
+                            </div>
+                        </div>
+
+                        <div class="list-group-item bg-transparent border-secondary py-3 px-0 border-bottom-0">
+                            <h5 class="text-success fw-bold mb-2">3. The Live "Mid-Concert" Prompt (Immediate Start)</h5>
+                            <p class="small text-white-50 mb-2 fst-italic">Use this for songs deep in the setlist where the momentum cannot stop. It mathematically forces Suno to skip the intro vamp and slam right into the track.</p>
+                            <ul class="small text-white-75 mb-2">
+                                <li><strong>Cover Settings:</strong> Audio Influence at 73% | Weirdness at 0%</li>
+                                <li><strong>Lyrics Box Requirement:</strong> Top the lyrics with bracketed hard-cues like <code>[Continuous Crowd Roar]</code>, <code>[Seamless Transition]</code>, and <code>[Immediate Synth Riff]</code>.</li>
+                            </ul>
+                            <div class="bg-black border border-secondary rounded p-3 font-monospace small text-info">
+                                1980s synth-pop, live stadium concert, massive crowd cheering, mid-tempo space-rock, driving 4/4 gated drum beat, shimmering analog synthesizers, melodic fretless bassline, crystal clear female vocals, lush spatial reverb, celestial atmosphere, echoing stadium acoustics, mid-concert energy, seamless transition, continuous flow, immediate start
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-10">
+            <div class="card glass-card border-primary overflow-hidden mt-4 shadow-lg">
                 <div class="card-header bg-primary bg-opacity-10 border-primary d-flex justify-content-between align-items-center p-3">
                     <span class="text-primary fw-bold text-uppercase letter-spacing-1">
                         <i class="fa-duotone fa-music me-2"></i>The Catalyst Track

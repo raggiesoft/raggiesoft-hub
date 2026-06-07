@@ -4,7 +4,28 @@
 // Context: The engine room's heartbeat.
 
 $pageTitle = "Tyler Wright - The Stardust Engine";
+
+// Define Schema variables for the specific band member
+$memberName = "Tyler Wright";
+$memberRole = "Drums, Percussion";
+$memberImage = "https://assets.raggiesoft.com/stardust-engine/images/band-members/tyler.jpg";
+
+$personSchema = [
+    "@context" => "https://schema.org",
+    "@type" => "Person",
+    "name" => $memberName,
+    "jobTitle" => $memberRole,
+    "image" => $memberImage,
+    "memberOf" => [
+        "@type" => "MusicGroup",
+        "name" => "The Stardust Engine"
+    ]
+];
 ?>
+
+<script type="application/ld+json">
+<?php echo json_encode($personSchema, JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT); ?>
+</script>
 
 <div class="starfield-container"><div class="starfield-twinkling"></div></div>
 

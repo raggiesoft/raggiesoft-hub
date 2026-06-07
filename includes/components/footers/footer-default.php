@@ -9,7 +9,7 @@
                 <a href="/" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
                     <img src="https://assets.raggiesoft.com/raggiesoft-corporate/images/logo/raggiesoft-logo.png" 
                          alt="RaggieSoft Logo" width="40" height="40" class="me-2 navbar-brand-raggiesoft">
-                    <span class="fs-5 fw-bold text-uppercase brand-font">RaggieSoft</span>
+                    <span class="fs-5 fw-bold text-uppercase brand-font">RaggieSoft<sup>&trade;</sup></span>
                 </a>
                 <p class="text-body-secondary small">
                     Digital craftsmanship since 1997.<br> Specializing in narrative-driven experiences and systems architecture.

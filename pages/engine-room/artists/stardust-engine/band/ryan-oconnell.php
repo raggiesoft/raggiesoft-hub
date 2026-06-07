@@ -4,7 +4,28 @@
 // Context: The creative force and the survivor.
 
 $pageTitle = "Ryan O'Connell - The Stardust Engine";
+
+// Define Schema variables for the specific band member
+$memberName = "Ryan O'Connell";
+$memberRole = "Lead Vocals, Lead Guitar";
+$memberImage = "https://assets.raggiesoft.com/stardust-engine/images/band-members/ryan.jpg";
+
+$personSchema = [
+    "@context" => "https://schema.org",
+    "@type" => "Person",
+    "name" => $memberName,
+    "jobTitle" => $memberRole,
+    "image" => $memberImage,
+    "memberOf" => [
+        "@type" => "MusicGroup",
+        "name" => "The Stardust Engine"
+    ]
+];
 ?>
+
+<script type="application/ld+json">
+<?php echo json_encode($personSchema, JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT); ?>
+</script>
 
 <div class="starfield-container"><div class="starfield-twinkling"></div></div>
 

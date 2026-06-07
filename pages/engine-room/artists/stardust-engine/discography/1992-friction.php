@@ -8,7 +8,28 @@ $pageTitle = "CASE 94-CIV-404: Seized Assets - The Stardust Engine";
 
 // 1. Asset Setup
 $seized_art = 'https://assets.raggiesoft.com/stardust-engine/music/1992-friction/album-art.jpg';
+
+$albumSchema = [
+    "@context" => "https://schema.org",
+    "@type" => "MusicAlbum",
+    "name" => "FRICTION (Seized Assets)",
+    "byArtist" => [
+        "@type" => "MusicGroup",
+        "name" => "The Stardust Engine"
+    ],
+    "creativeWorkStatus" => "Withdrawn",
+    "description" => "The master recordings and artwork for the canceled 1992 project designated 'FRICTION' have been permanently sealed under court order.",
+    "image" => $seized_art,
+    "publisher" => [
+        "@type" => "Organization",
+        "name" => "Engine Room Records"
+    ]
+];
 ?>
+
+<script type="application/ld+json">
+<?php echo json_encode($albumSchema, JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT); ?>
+</script>
 
 <div class="container py-5 min-vh-100 d-flex flex-column justify-content-center">
     

@@ -1,7 +1,7 @@
 <?php
 // pages/radio.php
 // "Engine Room Radio" - Multi-Artist Broadcast Console
-// v9.0 - Elara SPA Integrated (The "Station" Update)
+// v10.0 - Schema.org & Track Length Integration
 
 $pageTitle = "Engine Room Radio - The Console";
 
@@ -9,11 +9,12 @@ $pageTitle = "Engine Room Radio - The Console";
 if (!defined('ROOT_PATH')) define('ROOT_PATH', dirname(__DIR__)); 
 $cdn_root = "https://assets.raggiesoft.com/engine-room-records"; 
 
-// Define the artists we want to broadcast
+// Define the exact slugs for the artists currently in the catalog
 $station_roster = [
     'the-stardust-engine', 
-    'origin',
-    'mirage' 
+    'fractured-prisms',
+    'firelight',
+    'the-paper-wall'
 ];
 
 $master_playlist = []; 
@@ -49,8 +50,9 @@ foreach ($station_roster as $artist_slug) {
                             $meta_data = json_decode($album_json, true);
                             $raw_tracks = $tracks_data['tracks'] ?? $tracks_data;
                             
-                            $artist_name = $meta_data['artist'] ?? ($meta_data['albumArtist'] ?? 'Engine Room Artist');
-                            $album_title = $meta_data['title'] ?? ($meta_data['albumName'] ?? 'Unknown Album');
+                            // Schema.org Standard parsing with legacy fallback
+                            $artist_name = $meta_data['byArtist']['name'] ?? ($meta_data['albumArtist'] ?? 'Engine Room Artist');
+                            $album_title = $meta_data['name'] ?? ($meta_data['albumName'] ?? 'Unknown Album');
 
                             foreach ($raw_tracks as $track) {
                                 $fn = $track['fileName'] ?? ($track['filename'] ?? null);
@@ -65,11 +67,12 @@ foreach ($station_roster as $artist_slug) {
                                     }
                                     $seen_isrcs[] = $isrc; // Add it to the tracker so we don't play it again.
                                 }
-                                // If the ISRC is empty (like a Live in Chicago track), it bypasses the tracker and gets added.
+                                // If the ISRC is empty, it bypasses the tracker and gets added.
                                 // --------------------------------
 
                                 $legacy_tier = isset($track['legacyTier']) ? $track['legacyTier'] : null;
                                 $lore_note = isset($track['loreNote']) ? $track['loreNote'] : '';
+                                $duration = isset($track['duration']) ? $track['duration'] : '';
 
                                 $master_playlist[] = [
                                     'title' => $track['title'],
@@ -79,7 +82,8 @@ foreach ($station_roster as $artist_slug) {
                                     'src' => "{$base_path}/web-mp3/{$fn}.mp3?v=" . time(),
                                     'lyrics' => "{$base_path}/lyrics/{$fn}.md?v=" . time(),
                                     'legacyTier' => $legacy_tier,
-                                    'loreNote' => $lore_note
+                                    'loreNote' => $lore_note,
+                                    'duration' => $duration
                                 ];
                             }
                         }
@@ -140,7 +144,12 @@ $master_playlist = array_values($master_playlist); // Re-index for JS
                                     </div>
 
                                     <div class="ms-3 ms-md-5 text-end d-none d-sm-block">
-                                        <div class="small text-body-secondary font-monospace"><i class="fa-duotone fa-compact-disc me-1"></i><?php echo $track['album']; ?></div>
+                                        <div class="small text-body-secondary font-monospace mb-1"><i class="fa-duotone fa-compact-disc me-1"></i><?php echo $track['album']; ?></div>
+                                        <?php if (!empty($track['duration'])): ?>
+                                            <div class="small text-secondary fw-semibold">
+                                                <i class="fa-duotone fa-clock me-1" style="--fa-primary-opacity: 0.4;"></i><?php echo $track['duration']; ?>
+                                            </div>
+                                        <?php endif; ?>
                                     </div>
 
                                     <div class="ms-4 ps-3 border-start border-secondary">
@@ -175,8 +184,6 @@ $master_playlist = array_values($master_playlist); // Re-index for JS
     window.STARDUST_PLAYLIST = <?php echo json_encode($master_playlist); ?>;
     
     // 2. Dispatch the payload for Elara's listener
-    // We wrap this in a micro-timeout to ensure stardust-player.js is fully mounted 
-    // in case Elara is thrashing the DOM during a page transition.
     setTimeout(() => {
         const event = new CustomEvent('stardust:playlist-update', { detail: { playlist: window.STARDUST_PLAYLIST } });
         document.dispatchEvent(event);

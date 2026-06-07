@@ -6,6 +6,25 @@
 $pageTitle = "Our History - The Stardust Engine";
 ?>
 
+<?php
+$historySchema = [
+    "@context" => "https://schema.org",
+    "@type" => "AboutPage",
+    "name" => "Our History - The Stardust Engine",
+    "about" => [
+        "@type" => "MusicGroup",
+        "name" => "The Stardust Engine"
+    ],
+    "publisher" => [
+        "@type" => "Organization",
+        "name" => "Engine Room Records"
+    ]
+];
+?>
+<script type="application/ld+json">
+<?php echo json_encode($historySchema, JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT); ?>
+</script>
+
 <div class="starfield-container"><div class="starfield-twinkling"></div></div>
 
 <div class="container py-5 glass-container position-relative z-1">

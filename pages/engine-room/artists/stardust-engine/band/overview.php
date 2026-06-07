@@ -3,6 +3,26 @@
 $pageTitle = "The Band - The Stardust Engine";
 ?>
 
+<?php
+$groupSchema = [
+    "@context" => "https://schema.org",
+    "@type" => "MusicGroup",
+    "name" => "The Stardust Engine",
+    "description" => "A Family Unit. A Creative Fortress.",
+    "image" => "https://assets.raggiesoft.com/stardust-engine/images/band-members/family-portraits/artist-header-all.jpg",
+    "member" => [
+        ["@type" => "Person", "name" => "Ryan O'Connell", "url" => "https://raggiesoft.com/engine-room/artists/stardust-engine/band/ryan-oconnell"],
+        ["@type" => "Person", "name" => "Cassidy O'Connell", "url" => "https://raggiesoft.com/engine-room/artists/stardust-engine/band/cassidy-oconnell"],
+        ["@type" => "Person", "name" => "Holly O'Connell", "url" => "https://raggiesoft.com/engine-room/artists/stardust-engine/band/holly-oconnell"],
+        ["@type" => "Person", "name" => "Evan Wright", "url" => "https://raggiesoft.com/engine-room/artists/stardust-engine/band/evan-wright"],
+        ["@type" => "Person", "name" => "Tyler Wright", "url" => "https://raggiesoft.com/engine-room/artists/stardust-engine/band/tyler-wright"]
+    ]
+];
+?>
+<script type="application/ld+json">
+<?php echo json_encode($groupSchema, JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT); ?>
+</script>
+
 <div class="starfield-container"><div class="starfield-twinkling"></div></div>
 
 <div class="container py-5 glass-container position-relative z-1">

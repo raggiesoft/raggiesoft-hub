@@ -4,7 +4,28 @@
 // UPDATED: Added Legal Credentials (J.D. + 4 Bar Admissions) to the timeline.
 
 $pageTitle = "Holly O'Connell - The Stardust Engine";
+
+// Define Schema variables for the specific band member
+$memberName = "Holly O'Connell";
+$memberRole = "Manager, CEO, CFO";
+$memberImage = "https://assets.raggiesoft.com/stardust-engine/images/band-members/holly.jpg";
+
+$personSchema = [
+    "@context" => "https://schema.org",
+    "@type" => "Person",
+    "name" => $memberName,
+    "jobTitle" => $memberRole,
+    "image" => $memberImage,
+    "memberOf" => [
+        "@type" => "MusicGroup",
+        "name" => "The Stardust Engine"
+    ]
+];
 ?>
+
+<script type="application/ld+json">
+<?php echo json_encode($personSchema, JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT); ?>
+</script>
 
 <div class="starfield-container"><div class="starfield-twinkling"></div></div>
 

@@ -2,7 +2,7 @@
 // pages/home.php
 // The RaggieSoft Global Y-Junction (Root Domain)
 
-$pageTitle = "RaggieSoft | The Central Hub";
+$pageTitle = "RaggieSoft&trade; | The Central Hub";
 ?>
 
 <script type="application/ld+json">
@@ -205,7 +205,7 @@ $pageTitle = "RaggieSoft | The Central Hub";
         <div>
             <h4 class="alert-heading h6 fw-bold mb-1 text-uppercase letter-spacing-1 text-body-emphasis">Transparency Notice</h4>
             <p class="mb-0 small text-body">
-                RaggieSoft is a multimedia storytelling and world-building project. Certain music, artwork, and narrative elements across this network are created with the assistance of Artificial Intelligence. 
+                RaggieSoft&trade; is a multimedia storytelling and world-building project. Certain music, artwork, and narrative elements across this network are created with the assistance of Artificial Intelligence. 
                 <a href="/about/ai-disclaimer" class="alert-link fw-bold text-info border-bottom border-info text-decoration-none">Read the full AI Disclaimer.</a>
             </p>
         </div>
