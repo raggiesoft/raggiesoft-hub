@@ -18,7 +18,7 @@ $isArchives = (
 <ul class="navbar-nav ms-auto mb-2 mb-md-0">
 
   <li class="nav-item">
-    <a class="nav-link <?php echo $isRadio ? 'active fw-bold text-warning' : ''; ?>" href="/engine-room/adio">
+    <a class="nav-link <?php echo $isRadio ? 'active fw-bold text-warning' : ''; ?>" href="/engine-room/radio">
         <i class="fa-duotone fa-signal-stream me-2"></i>Engine Room Radio
     </a>
   </li>
@@ -104,12 +104,12 @@ $isArchives = (
       <li><hr class="dropdown-divider"></li>
       <li><h6 class="dropdown-header text-uppercase text-muted fw-bold">Media Contacts</h6></li>
       <li>
-          <a class="dropdown-item font-monospace small" href="mailto:sync@raggiesoftmedia.com">
+          <a class="dropdown-item font-monospace small elara-secure-mail" href="#" data-u="sync" data-d="raggiesoftmedia" data-t="com">
             <i class="fa-solid fa-file-audio me-2 text-warning"></i>sync@raggiesoftmedia.com
           </a>
       </li>
       <li>
-          <a class="dropdown-item font-monospace small" href="mailto:ops@raggiesoftmedia.com">
+          <a class="dropdown-item font-monospace small elara-secure-mail" href="#" data-u="ops" data-d="raggiesoftmedia" data-t="com">
             <i class="fa-solid fa-envelope me-2 text-secondary"></i>ops@raggiesoftmedia.com
           </a>
       </li>
