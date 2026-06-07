@@ -12,6 +12,41 @@ $pageConfig = [
 ];
 ?>
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "ProfilePage",
+      "mainEntity": {
+        "@type": "Person",
+        "name": "Michael P. Ragsdale",
+        "jobTitle": "Full-Stack Developer & Systems Architect",
+        "url": "https://raggiesoft.com/about/michael-ragsdale"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [{
+        "@type": "Question",
+        "name": "Is RaggieSoft hiring employees or contractors?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. RaggieSoft is the personal portfolio of Michael Ragsdale. We are not a company and we do not hire. Any job offer claiming to be from RaggieSoft is a scam."
+        }
+      }, {
+        "@type": "Question",
+        "name": "How do I hire Michael Ragsdale?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Recruiters looking to hire Michael Ragsdale must complete the pre-screening alignment questionnaire on this page to access his calendar and direct email."
+        }
+      }]
+    }
+  ]
+}
+</script>
+
 <div class="container py-5" style="max-width: 55rem;">
     
     <div class="d-flex align-items-center justify-content-between border-bottom pb-4 mb-5">

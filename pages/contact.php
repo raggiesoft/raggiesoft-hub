@@ -13,6 +13,37 @@ $startImage = !empty($heroImages)
 $imagesJson = htmlspecialchars(json_encode($heroImages), ENT_QUOTES, 'UTF-8');
 ?>
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "ContactPage",
+      "name": "Global Contact Hub | RaggieSoft",
+      "description": "Central directory for contacting Michael Ragsdale, RaggieSoft Media, and Engine Room Records. Note: RaggieSoft does not offer employment."
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [{
+        "@type": "Question",
+        "name": "Is RaggieSoft hiring employees?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. RaggieSoft and RaggieSoft Media are single-person entities. Any job offer or interview request claiming to be from RaggieSoft is a fraudulent scam. We do not hire."
+        }
+      }, {
+        "@type": "Question",
+        "name": "How do recruiters contact Michael Ragsdale?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Recruiters looking to hire Michael Ragsdale for a Full-Stack Developer or Systems Architect role must use the automated pre-screening Recruiter Gate on his personal portfolio."
+        }
+      }]
+    }
+  ]
+}
+</script>
+
 <style>
     /* =====================================================================
        BRUTE FORCE READABILITY ARMOR
@@ -133,8 +164,11 @@ $imagesJson = htmlspecialchars(json_encode($heroImages), ENT_QUOTES, 'UTF-8');
                             Recruiters looking for a <strong>Systems Architect</strong> or <strong>Full-Stack Developer</strong>.
                         </p>
                         <div class="d-grid mt-auto">
-                            <a href="/about/michael-ragsdale/contact" class="btn btn-danger btn-lg rounded-pill fw-bold shadow-glow force-text-light">
+                            <a href="/about/michael-ragsdale/contact" class="btn btn-danger btn-lg rounded-pill fw-bold shadow-glow force-text-light mb-3">
                                 <i class="fa-duotone fa-id-card-clip me-2"></i>Access Hiring Hub
+                            </a>
+                            <a href="/raggiesoft-media/careers" class="btn btn-outline-danger btn-sm rounded-pill fw-bold force-text-light">
+                                <i class="fa-solid fa-shield-exclamation me-1"></i> Job Scam Warning
                             </a>
                         </div>
                     </div>

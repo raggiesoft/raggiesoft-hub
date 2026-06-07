@@ -7,11 +7,30 @@ $pageConfig = [
     'title' => 'Salary Requirements | Michael P. Ragsdale',
     'sidebar' => 'portfolio/sidebar-portfolio', 
     'scripts' => [
-        // POINT THIS TO THE SUPERIOR SCRIPT
-        'https://assets.raggiesoft.com/portfolio/js/recruiter-gate.js' 
+        // Cache Buster added to ensure Elara SPA always fetches the fresh script
+        'https://assets.raggiesoft.com/portfolio/js/recruiter-gate.js?v=' . time() 
     ]
 ];
 ?>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "FAQPage",
+      "mainEntity": [{
+        "@type": "Question",
+        "name": "Is RaggieSoft an employer?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. RaggieSoft is not an employer. This page is a salary alignment tool for recruiters looking to hire Michael Ragsdale for external roles."
+        }
+      }]
+    }
+  ]
+}
+</script>
 
 <div class="container py-5" style="max-width: 50rem;">
     
