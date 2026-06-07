@@ -34,6 +34,11 @@ $pageTitle = "Engine Room Records | Loud. Raw. Real.";
                     url('https://assets.raggiesoft.com/stardust-engine/images/studio-rack.jpg') center/cover;
         border-bottom: 4px solid var(--bs-primary);
     }
+    
+    /* Force black logos to white on permanently dark backgrounds */
+    .logo-invert {
+        filter: invert(1) grayscale(100%) brightness(100%);
+    }
 
     .roster-card {
         background-color: #15181c;
@@ -68,14 +73,19 @@ $pageTitle = "Engine Room Records | Loud. Raw. Real.";
         border-top: 2px solid var(--bs-secondary);
         border-bottom: 2px solid var(--bs-secondary);
     }
+    
+    /* Hover Helper */
+    .hover-primary:hover {
+        color: var(--bs-primary) !important;
+    }
 </style>
 
 <div class="engine-hero py-5 mb-5 shadow-lg text-white">
     <div class="container text-center py-5">
         <img src="https://assets.raggiesoft.com/engine-room-records/images/logos/engine-room-records-logo.png" 
              alt="Engine Room Records" 
-             class="mb-4 theme-invert" 
-             style="height: 100px; opacity: 0.8; mix-blend-mode: screen;">
+             class="mb-4 logo-invert" 
+             style="height: 100px; opacity: 0.8;">
              
         <h1 class="display-3 fw-bold text-uppercase mb-3 brand-font" style="letter-spacing: 2px;">
             Engine Room Records
