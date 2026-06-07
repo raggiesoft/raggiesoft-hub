@@ -21,16 +21,15 @@ $master_playlist = [];
 // 2. AGGREGATOR LOGIC
 foreach ($station_roster as $artist_slug) {
     
-    // Support the Stardust legacy path, otherwise use the standard array location
-    $discog_path = ($artist_slug === 'the-stardust-engine') 
-        ? ROOT_PATH . '/includes/components/arrays/_discography.php'
-        : ROOT_PATH . "/includes/components/arrays/artists/{$artist_slug}.php";
+    // Fetch the master albums.json for the artist directly from the CDN
+    $albums_json_url = "{$cdn_root}/artists/{$artist_slug}/albums.json";
+    $albums_json_content = @file_get_contents($albums_json_url);
     
-    if (file_exists($discog_path)) {
-        include $discog_path; 
+    if ($albums_json_content) {
+        $master_data = json_decode($albums_json_content, true);
         
-        if (!empty($discographyLibrary)) {
-            foreach ($discographyLibrary as $era) {
+        if (is_array($master_data)) {
+            foreach ($master_data as $era) {
                 if (!empty($era['albums'])) {
                     foreach ($era['albums'] as $album) {
                         
@@ -63,7 +62,7 @@ foreach ($station_roster as $artist_slug) {
                                     'artist' => $artist_name,
                                     'album' => $album_title,
                                     'artwork' => "{$base_path}/album-art.jpg?v=" . time(),
-                                    'src' => "{$base_path}/web-mp3/{$fn}.mp3?v=" . time(), // FIXED PATH
+                                    'src' => "{$base_path}/web-mp3/{$fn}.mp3?v=" . time(),
                                     'lyrics' => "{$base_path}/lyrics/{$fn}.md?v=" . time(),
                                     'legacyTier' => $legacy_tier,
                                     'loreNote' => $lore_note
@@ -74,7 +73,6 @@ foreach ($station_roster as $artist_slug) {
                 }
             }
         }
-        unset($discographyLibrary); // Prevent bleeding
     }
 }
 
@@ -159,10 +157,14 @@ $master_playlist = array_values($master_playlist); // Re-index for JS
 </style>
 
 <script>
-    // Dispatch the payload explicitly so Elara's listener catches it
-    (function() {
-        const stationPlaylist = <?php echo json_encode($master_playlist); ?>;
-        const event = new CustomEvent('stardust:playlist-update', { detail: { playlist: stationPlaylist } });
+    // 1. Assign it directly to the window object as a hard fallback
+    window.STARDUST_PLAYLIST = <?php echo json_encode($master_playlist); ?>;
+    
+    // 2. Dispatch the payload for Elara's listener
+    // We wrap this in a micro-timeout to ensure stardust-player.js is fully mounted 
+    // in case Elara is thrashing the DOM during a page transition.
+    setTimeout(() => {
+        const event = new CustomEvent('stardust:playlist-update', { detail: { playlist: window.STARDUST_PLAYLIST } });
         document.dispatchEvent(event);
-    })();
+    }, 50);
 </script>
