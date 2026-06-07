@@ -8,6 +8,7 @@ $request_uri = $_SERVER['REQUEST_URI'] ?? '/';
 $isHome = ($request_uri === '/');
 $isArchitect = (str_starts_with($request_uri, '/about/michael-ragsdale') || str_starts_with($request_uri, '/portfolio'));
 $isCreative = (str_starts_with($request_uri, '/raggiesoft-books') || str_starts_with($request_uri, '/engine-room'));
+$isMedia = str_starts_with($request_uri, '/raggiesoft-media');
 $isAbout = ($request_uri === '/about');
 $isContact = ($request_uri === '/contact');
 ?>
@@ -24,7 +25,7 @@ $isContact = ($request_uri === '/contact');
     <a class="nav-link dropdown-toggle <?php echo $isArchitect ? 'active' : ''; ?>" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
         <i class="fa-duotone fa-user-visor me-2" aria-hidden="true"></i>The Architect
     </a>
-    <ul class="dropdown-menu dropdown-menu-end">
+    <ul class="dropdown-menu dropdown-menu-end shadow-sm border-secondary-subtle">
       <li><a class="dropdown-item" href="/about/michael-ragsdale"><i class="fa-duotone fa-id-card me-2"></i>Overview</a></li>
       <li><a class="dropdown-item" href="/about/michael-ragsdale/resume"><i class="fa-duotone fa-file-user me-2"></i>Resume / CV</a></li>
       <li><a class="dropdown-item" href="/about/michael-ragsdale/profile"><i class="fa-duotone fa-user-gear me-2"></i>Skills & Profile</a></li>
@@ -37,17 +38,32 @@ $isContact = ($request_uri === '/contact');
     <a class="nav-link dropdown-toggle <?php echo $isCreative ? 'active' : ''; ?>" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
         <i class="fa-duotone fa-layer-group me-2" aria-hidden="true"></i>Creative Works
     </a>
-    <ul class="dropdown-menu dropdown-menu-end">
-      <li><h6 class="dropdown-header text-uppercase">Multimedia</h6></li>
+    <ul class="dropdown-menu dropdown-menu-end shadow-sm border-secondary-subtle">
+      <li><h6 class="dropdown-header text-uppercase fw-bold">Multimedia</h6></li>
       <li><a class="dropdown-item" href="/engine-room/artists/stardust-engine"><i class="fa-duotone fa-rocket-launch me-2 text-primary"></i>The Stardust Engine</a></li>
       
       <li><hr class="dropdown-divider"></li>
-      <li><h6 class="dropdown-header text-uppercase">Literature</h6></li>
+      <li><h6 class="dropdown-header text-uppercase fw-bold">Literature</h6></li>
       <li><a class="dropdown-item" href="/raggiesoft-books/aethel-saga"><i class="fa-duotone fa-sword me-2 text-warning"></i>The Silver Gauntlet of Aethel</a></li>
       <li><a class="dropdown-item" href="/raggiesoft-books/knox"><i class="fa-duotone fa-leaf me-2 text-success"></i>Project: KNOX</a></li>
       
       <li><hr class="dropdown-divider"></li>
       <li><a class="dropdown-item" href="/engine-room"><i class="fa-solid fa-industry me-2 text-secondary"></i>Engine Room Records</a></li>
+    </ul>
+  </li>
+
+  <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle <?php echo $isMedia ? 'active' : ''; ?>" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        <i class="fa-duotone fa-building me-2" aria-hidden="true"></i>RaggieSoft Media
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end shadow-sm border-secondary-subtle">
+      <li><h6 class="dropdown-header text-uppercase fw-bold">B2B Operations</h6></li>
+      <li><a class="dropdown-item" href="/raggiesoft-media"><i class="fa-duotone fa-network-wired me-2 text-primary"></i>Corporate Hub</a></li>
+      <li><a class="dropdown-item" href="/raggiesoft-media/licensing"><i class="fa-duotone fa-scale-balanced me-2 text-warning"></i>Master Licensing</a></li>
+      <li><a class="dropdown-item" href="/raggiesoft-media/licensing/commercial"><i class="fa-solid fa-briefcase me-2 text-secondary"></i>Commercial Portal</a></li>
+      <li><hr class="dropdown-divider"></li>
+      <li><h6 class="dropdown-header text-uppercase fw-bold">Infrastructure</h6></li>
+      <li><a class="dropdown-item" href="/raggiesoft-media/projects/elara"><i class="fa-brands fa-osi me-2 text-info"></i>Open Source (Elara)</a></li>
     </ul>
   </li>
 
