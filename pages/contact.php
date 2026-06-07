@@ -209,7 +209,7 @@ $imagesJson = htmlspecialchars(json_encode($heroImages), ENT_QUOTES, 'UTF-8');
                         </div>
                         <h2 class="h3 fw-bold mb-3 force-text-light">Fan Mail & Lore</h2>
                         <p class="force-text-muted mb-4">
-                            The members of The Stardust Engine and the characters within the Ocean View Archives are entirely fictional.
+                            All musical artists signed to Engine Room Records and all characters within the Ocean View Archives are entirely fictional entities.
                         </p>
                         <div class="d-grid mt-auto">
                             <a href="/about/ai-disclaimer" class="btn btn-secondary btn-lg rounded-pill fw-bold shadow-glow force-text-light mb-3">
