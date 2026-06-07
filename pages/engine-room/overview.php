@@ -40,6 +40,25 @@ $pageTitle = "Engine Room Records | Loud. Raw. Real.";
         filter: invert(1) grayscale(100%) brightness(100%);
     }
 
+    /* Responsive Hero Logo */
+    .hero-logo {
+        height: 110px; /* Base size for mobile */
+        opacity: 0.85;
+        transition: height 0.3s ease-in-out;
+    }
+
+    @media (min-width: 768px) {
+        .hero-logo {
+            height: 150px; /* Tablet */
+        }
+    }
+
+    @media (min-width: 992px) {
+        .hero-logo {
+            height: 190px; /* Desktop */
+        }
+    }
+
     .roster-card {
         background-color: #15181c;
         border: 1px solid rgba(255, 255, 255, 0.05);
@@ -84,8 +103,7 @@ $pageTitle = "Engine Room Records | Loud. Raw. Real.";
     <div class="container text-center py-5">
         <img src="https://assets.raggiesoft.com/engine-room-records/images/logos/engine-room-records-logo.png" 
              alt="Engine Room Records" 
-             class="mb-4 logo-invert" 
-             style="height: 100px; opacity: 0.8;">
+             class="mb-4 logo-invert hero-logo">
              
         <h1 class="display-3 fw-bold text-uppercase mb-3 brand-font" style="letter-spacing: 2px;">
             Engine Room Records
