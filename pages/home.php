@@ -5,6 +5,33 @@
 $pageTitle = "RaggieSoft | The Central Hub";
 ?>
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://raggiesoft.com/#organization",
+      "name": "RaggieSoft",
+      "url": "https://raggiesoft.com/",
+      "logo": "https://assets.raggiesoft.com/common/logos/raggiesoft-logo.png",
+      "description": "The central hub for the code, music, and narrative universes of Michael P. Ragsdale.",
+      "founder": {
+        "@type": "Person",
+        "name": "Michael P. Ragsdale"
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://raggiesoft.com/#website",
+      "url": "https://raggiesoft.com/",
+      "name": "RaggieSoft",
+      "publisher": {"@id": "https://raggiesoft.com/#organization"}
+    }
+  ]
+}
+</script>
+
 <style>
     /* --- THE Y-JUNCTION SPLIT HERO --- */
     .split-hero-container {
@@ -50,6 +77,14 @@ $pageTitle = "RaggieSoft | The Central Hub";
         max-width: 600px;
     }
 
+    /* Avatar Styling */
+    .pane-avatar {
+        width: 130px;
+        height: 130px;
+        object-fit: cover;
+        box-shadow: 0 8px 20px rgba(0,0,0,0.8);
+    }
+
     /* Desktop Hover Dynamics */
     @media (min-width: 992px) {
         .split-hero-container { flex-direction: row; }
@@ -59,6 +94,18 @@ $pageTitle = "RaggieSoft | The Central Hub";
         .split-pane:hover { flex: 1.25; }
         .split-pane:hover .pane-overlay { background-color: rgba(0, 0, 0, 0.5); }
         .split-pane:hover .pane-bg { transform: scale(1.05); }
+    }
+
+    /* Accessibility: Reduced Motion Override */
+    @media (prefers-reduced-motion: reduce) {
+        .split-pane, .pane-bg, .pane-overlay {
+            transition: none !important;
+            transform: none !important;
+        }
+        @media (min-width: 992px) {
+            .split-pane:hover { flex: 1 !important; }
+            .split-pane:hover .pane-bg { transform: none !important; }
+        }
     }
 
     /* Brute-force text overrides for the Hero */
@@ -80,7 +127,7 @@ $pageTitle = "RaggieSoft | The Central Hub";
         <div class="pane-overlay"></div>
         
         <div class="pane-content d-flex flex-column align-items-center h-100 justify-content-center">
-            <i class="fa-duotone fa-server fa-3x text-primary mb-3 drop-shadow"></i>
+            <img src="https://assets.raggiesoft.com/portfolio/images/logos/logo-michael.png" alt="Michael P. Ragsdale" class="rounded-circle border border-primary border-3 pane-avatar mb-3">
             <h1 class="display-4 fw-bold text-uppercase brand-font hero-title mb-2">The Architect</h1>
             <h2 class="h5 fw-light text-primary mb-4 hero-text text-uppercase letter-spacing-1">Infrastructure & Operations</h2>
             <p class="lead hero-text text-white-75 mb-4">
@@ -102,7 +149,7 @@ $pageTitle = "RaggieSoft | The Central Hub";
         <div class="pane-overlay"></div>
         
         <div class="pane-content d-flex flex-column align-items-center h-100 justify-content-center">
-            <i class="fa-duotone fa-compact-disc fa-3x text-danger mb-3 drop-shadow"></i>
+            <img src="https://assets.raggiesoft.com/family/images/logos/logo-family.png" alt="Michael and Paige" class="rounded-circle border border-danger border-3 pane-avatar mb-3">
             <h1 class="display-4 fw-bold text-uppercase brand-font hero-title mb-2">Creative Works</h1>
             <h2 class="h5 fw-light text-danger mb-4 hero-text text-uppercase letter-spacing-1">Music & Narrative Lore</h2>
             <p class="lead hero-text text-white-75 mb-4">

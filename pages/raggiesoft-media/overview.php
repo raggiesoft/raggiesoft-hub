@@ -5,6 +5,36 @@
 $pageTitle = "RaggieSoft Media | IP & Asset Management";
 ?>
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "name": "RaggieSoft Media",
+      "parentOrganization": {
+        "@type": "Organization",
+        "name": "RaggieSoft"
+      },
+      "description": "An independent multimedia asset management and distribution house based in Norfolk, Virginia. Specializing in automated audio engineering, custom web architecture, and open-source narrative lore.",
+      "location": {
+        "@type": "Place",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Norfolk",
+          "addressRegion": "VA"
+        }
+      }
+    },
+    {
+      "@type": "CollectionPage",
+      "name": "Intellectual Property Portfolio",
+      "description": "Directory of RaggieSoft Media divisions including Engine Room Records, Elara CMS & Infrastructure, and Ocean View Archives."
+    }
+  ]
+}
+</script>
+
 <style>
     /* B2B Corporate Overrides */
     .corporate-hero {
@@ -105,13 +135,13 @@ $pageTitle = "RaggieSoft Media | IP & Asset Management";
             <div class="card division-card h-100 p-4 shadow-sm d-flex flex-column rounded-0">
                 <i class="fa-duotone fa-books fa-2x text-warning mb-3" aria-hidden="true"></i>
                 <h3 class="h5 fw-bold text-uppercase mb-2">Narrative & Literary</h3>
-                <p class="data-label mb-3">Open-Source Lore</p>
+                <p class="data-label mb-3">Ocean View Archives</p>
                 <p class="text-body-emphasis mb-4 small">
-                    Extensive world-building, scriptwriting, and character asset management governed entirely under progressive public licensing frameworks.
+                    Extensive world-building, scriptwriting, and character asset management governed entirely under progressive CC BY-SA 4.0 public licensing frameworks.
                 </p>
                 <div class="mt-auto border-top border-secondary-subtle pt-3">
-                    <a href="/raggiesoft-media/licensing" class="text-decoration-none text-warning text-uppercase fw-bold small">
-                        CC BY-SA 4.0 Clearances <i class="fa-solid fa-arrow-right ms-1"></i>
+                    <a href="/raggiesoft-books" class="text-decoration-none text-warning text-uppercase fw-bold small">
+                        Explore Archives <i class="fa-solid fa-arrow-right ms-1"></i>
                     </a>
                 </div>
             </div>

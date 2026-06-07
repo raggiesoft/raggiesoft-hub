@@ -5,6 +5,28 @@
 $pageTitle = "Engine Room Records | Loud. Raw. Real.";
 ?>
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "name": "Engine Room Records",
+      "parentOrganization": {
+        "@type": "Organization",
+        "name": "RaggieSoft Media"
+      },
+      "description": "An independent creative collective dedicated to narrative-driven rock, industrial soundscapes, and symphonic metal. Note: Engine Room Records is a closed private label; unsolicited submissions are not accepted."
+    },
+    {
+      "@type": "CollectionPage",
+      "name": "Engine Room Records Roster",
+      "description": "Directory of active musical projects including The Stardust Engine, Mirage, and The Winter Palace."
+    }
+  ]
+}
+</script>
+
 <style>
     /* FAN HUB STYLING */
     .engine-hero {
