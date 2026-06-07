@@ -1,0 +1,40 @@
+{
+  "common": {
+    "site": "raggiesoft-books",
+    "theme": "ocean-view",
+    "siteName": "Ocean View Archives",
+    "headerMenu": "raggiesoft-books/header-books",
+    "footer": "raggiesoft-books/footer-books",
+    "showSidebar": false,
+    "navbarBrandLogo": "https://assets.raggiesoft.com/raggiesoft-books/images/logos/oceanview-archives.svg",
+    "navbarBrandText": "<span class=\"ova-serif fw-bold\" style=\"color: #E3B27C;\">Ocean View Archives</span>",
+    "navbarBrandLink": "/raggiesoft-books"
+  },
+
+  "/raggiesoft-books": {
+    "view": "pages/raggiesoft-books/overview",
+    "title": "Ocean View Archives | RaggieSoft Media",
+    "ogTitle": "Ocean View Archives - The Literary Imprint",
+    "schemaType": "CollectionPage"
+  },
+  
+  "/raggiesoft-books/contemporary": {
+    "view": "pages/raggiesoft-books/contemporary/overview",
+    "title": "Contemporary Fiction | Ocean View Archives",
+    "ogTitle": "Contemporary Fiction Library"
+  },
+
+  "/raggiesoft-books/knox": {
+    "view": "pages/raggiesoft-books/knox/overview",
+    "title": "Project: KNOX | Ocean View Archives",
+    "ogTitle": "Project: KNOX - Axiom Archival Logs",
+    "schemaType": "Book"
+  },
+
+  "/raggiesoft-books/aethel-saga": {
+    "view": "pages/raggiesoft-books/aethel/overview",
+    "title": "The Silver Gauntlet of Aethel | Ocean View Archives",
+    "ogTitle": "The Silver Gauntlet of Aethel",
+    "schemaType": "Book"
+  }
+}
