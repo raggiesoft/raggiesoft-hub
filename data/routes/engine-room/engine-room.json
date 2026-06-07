@@ -46,7 +46,7 @@
     "ogDescription": "Official administrative portal for DSP identity and copyright verification."
   },
   "/engine-room/radio": {
-    "view": "pages/radio",
+    "view": "pages/engine-room/radio",
     "title": "Engine Room Radio | Live Broadcast",
     "ogDescription": "Live broadcast console playing the complete Engine Room Records catalog.",
     "showSidebar": false
