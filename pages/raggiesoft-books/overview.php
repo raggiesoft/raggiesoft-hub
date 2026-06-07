@@ -71,7 +71,7 @@ $pageTitle = "Ocean View Archives | RaggieSoft Media";
 <section class="ova-hero py-5 text-center shadow-lg" aria-label="Ocean View Archives Introduction">
     <div class="container position-relative z-2 py-4">
         
-        <img src="https://assets.raggiesoft.com/raggiesoft-books/images/logos/oceanview-archive.svg" 
+        <img src="https://assets.raggiesoft.com/raggiesoft-books/images/logos/oceanview-archives.svg" 
              alt="Ocean View Archives Crest" 
              class="img-fluid mb-4 drop-shadow" 
              style="max-width: 220px;">
