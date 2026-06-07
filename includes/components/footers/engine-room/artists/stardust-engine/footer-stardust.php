@@ -21,9 +21,9 @@
             <div class="col-lg-3 col-md-4 text-center text-md-start">
                 <h6 class="text-uppercase fw-bold mb-3" style="color: #E699FF; letter-spacing: 1px;">Terminal / Audio</h6>
                 <ul class="list-unstyled small mb-0 d-flex flex-column gap-2">
-                    <li><a href="/engine-room/artists/stardust-engine/discography/electric-color" class="text-decoration-none text-white-50 hover-neon-blue">Electric Color</a></li>
-                    <li><a href="/engine-room/artists/stardust-engine/discography/carnaby-street" class="text-decoration-none text-white-50 hover-neon-blue">Carnaby Street</a></li>
-                    <li><a href="/engine-room/artists/stardust-engine/discography/hard-reset" class="text-decoration-none text-white-50 hover-neon-blue">Hard Reset</a></li>
+                    <li><a href="/engine-room/artists/stardust-engine/discography/1987-electric-color" class="text-decoration-none text-white-50 hover-neon-blue">Electric Color</a></li>
+                    <li><a href="/engine-room/artists/stardust-engine/discography/1989-neon-hearts" class="text-decoration-none text-white-50 hover-neon-blue">Neon Hearts</a></li>
+                    <li><a href="/engine-room/artists/stardust-engine/discography/1997-hard-reset" class="text-decoration-none text-white-50 hover-neon-blue">Hard Reset</a></li>
                     <li class="mt-2 pt-2 border-top border-secondary border-opacity-50">
                         <a href="/engine-room/artists/stardust-engine/discography" class="text-decoration-none text-white fw-bold hover-neon-purple">
                             View Full Catalog <i class="fa-solid fa-arrow-right ms-1"></i>
