@@ -6,7 +6,8 @@ $pageConfig = [
     'title' => 'Contact & Hiring | Michael P. Ragsdale',
     'sidebar' => 'portfolio/sidebar-portfolio', 
     'scripts' => [
-        'https://assets.raggiesoft.com/portfolio/js/recruiter-gate.js' 
+        // The Cache Buster: Appends ?v=1717719410 (current Unix timestamp) to force a fresh pull
+        'https://assets.raggiesoft.com/portfolio/js/recruiter-gate.js?v=' . time() 
     ]
 ];
 ?>
@@ -19,7 +20,7 @@ $pageConfig = [
             <p class="text-secondary mb-0">Automated pre-screening to ensure alignment.</p>
         </div>
         <a href="/about/michael-ragsdale" class="btn btn-outline-secondary btn-sm">
-            <i class="fa-solid fa-arrow-left me-1"></i> Back to Hub
+            <i class="fa-solid fa-arrow-left me-1" aria-hidden="true"></i> Back to Hub
         </a>
     </div>
 
@@ -44,7 +45,7 @@ $pageConfig = [
     </div>
 
     <div class="text-center small text-muted mt-5">
-        <i class="fa-solid fa-shield-check me-1"></i> 
+        <i class="fa-solid fa-shield-check me-1" aria-hidden="true"></i> 
         No data is stored. This check runs entirely in your browser.
     </div>
 
