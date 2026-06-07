@@ -34,7 +34,7 @@
     "title": "Careers and Jobs at RaggieSoft | Scam Warning",
     "ogDescription": "Notice regarding fraudulent employment offers. RaggieSoft is a single-person entity and is not hiring.",
     "schemaType": "FAQPage",
-    "navbarBrandText": "Careers: We Are NOT Hiring",
+    "navbarBrandText": "<span class=\"text-danger fw-bold text-uppercase\"><i class=\"fa-solid fa-hand me-2\"></i>Not Hiring</span>",
     "siteName": "Careers: RaggieSoft Is NOT Hiring",
     "headerMenu": "raggiesoft-media/header-careers",
     "footer": "raggiesoft-media/footer-careers",
