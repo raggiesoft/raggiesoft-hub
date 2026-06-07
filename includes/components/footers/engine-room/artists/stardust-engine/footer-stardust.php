@@ -35,9 +35,9 @@
             <div class="col-lg-2 col-md-4 text-center text-md-start">
                 <h6 class="text-uppercase fw-bold mb-3" style="color: #4DB8FF; letter-spacing: 1px;">The Network</h6>
                 <ul class="list-unstyled small mb-0 d-flex flex-column gap-2">
-                    <li><a href="/engine-room/artists/stardust-engine/history" class="text-decoration-none text-white-50 hover-neon-blue">Band History</a></li>
-                    <li><a href="/raggiesoft-books/knox" class="text-decoration-none text-white-50 hover-neon-blue">Project: KNOX Lore</a></li>
-                    <li><a href="/engine-room/artists/stardust-engine/forger-nation" class="text-decoration-none text-white-50 hover-neon-blue">Forger Nation Hub</a></li>
+                    <li><a href="/engine-room/artists/stardust-engine/band" class="text-decoration-none text-white-50 hover-neon-blue">Band Member Roster</a></li>
+                    <li><a href="/engine-room/artists/stardust-engine/band/history" class="text-decoration-none text-white-50 hover-neon-blue">History of the Band</a></li>
+                    <li><a href="/engine-room/artists/stardust-engine/story" class="text-decoration-none text-white-50 hover-neon-blue">The Band's Stories</a></li>
                 </ul>
             </div>
 
