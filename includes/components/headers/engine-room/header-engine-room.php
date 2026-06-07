@@ -18,7 +18,7 @@ $isArchives = (
 <ul class="navbar-nav ms-auto mb-2 mb-md-0">
 
   <li class="nav-item">
-    <a class="nav-link <?php echo $isRadio ? 'active fw-bold text-warning' : ''; ?>" href="/engine-room/artists/stardust-engine/radio">
+    <a class="nav-link <?php echo $isRadio ? 'active fw-bold text-warning' : ''; ?>" href="/engine-room/radio">
         <i class="fa-duotone fa-signal-stream me-2"></i>Engine Room Radio
     </a>
   </li>

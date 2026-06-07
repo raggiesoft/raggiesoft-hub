@@ -88,9 +88,6 @@
     <loc>https://raggiesoft.com/engine-room/artists/stardust-engine/band/tyler-wright</loc>
   </url>
   <url>
-    <loc>https://raggiesoft.com/engine-room/artists/stardust-engine</loc>
-  </url>
-  <url>
     <loc>https://raggiesoft.com/engine-room/artists/stardust-engine/discography</loc>
   </url>
   <url>
@@ -131,6 +128,9 @@
   </url>
   <url>
     <loc>https://raggiesoft.com/engine-room/artists/stardust-engine/discography/2017-knox-ost</loc>
+  </url>
+  <url>
+    <loc>https://raggiesoft.com/engine-room/artists/stardust-engine</loc>
   </url>
   <url>
     <loc>https://raggiesoft.com/engine-room/artists/stardust-engine/story/ad-astra</loc>
@@ -269,6 +269,9 @@
   </url>
   <url>
     <loc>https://raggiesoft.com/engine-room/dsp-verification</loc>
+  </url>
+  <url>
+    <loc>https://raggiesoft.com/engine-room/radio</loc>
   </url>
   <url>
     <loc>https://raggiesoft.com/family</loc>

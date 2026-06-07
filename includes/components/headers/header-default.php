@@ -41,7 +41,7 @@ $isContact = ($request_uri === '/contact');
     <ul class="dropdown-menu dropdown-menu-end shadow-sm border-secondary-subtle">
       <li><h6 class="dropdown-header text-uppercase fw-bold">Multimedia</h6></li>
       <li><a class="dropdown-item" href="/engine-room/artists/stardust-engine"><i class="fa-duotone fa-rocket-launch me-2 text-primary"></i>The Stardust Engine</a></li>
-      
+      <li><a class="dropdown-item" href="/engine-room/radio"><i class="fa-duotone fa-signal-stream me-2 text-warning"></i>Engine Room Radio</a></li>
       <li><hr class="dropdown-divider"></li>
       <li><h6 class="dropdown-header text-uppercase fw-bold">Literature</h6></li>
       <li><a class="dropdown-item" href="/raggiesoft-books/aethel-saga"><i class="fa-duotone fa-sword me-2 text-warning"></i>The Silver Gauntlet of Aethel</a></li>

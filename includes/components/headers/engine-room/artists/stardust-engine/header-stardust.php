@@ -23,6 +23,12 @@
     </a>
   </li>
 
+  <li class="nav-item">
+    <a class="nav-link text-warning" href="/engine-room/radio">
+        <i class="fa-duotone fa-signal-stream me-2"></i>Radio
+    </a>
+  </li>
+
   <li class="nav-item dropdown">
     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
         <i class="fa-duotone fa-users me-2"></i>The Band
