@@ -49,18 +49,20 @@
     </div>
   </div>
 </section>
+
 <div class="container mt-4 mb-2">
     <div class="alert alert-secondary border-secondary shadow-sm d-flex align-items-center" role="alert">
         <i class="fa-duotone fa-robot-astromech fa-2x me-3 text-info"></i>
         <div>
-            <h4 class="alert-heading h6 fw-bold mb-1 text-uppercase letter-spacing-1">Transparency Notice</h4>
-            <p class="mb-0 small text-body-secondary">
+            <h4 class="alert-heading h6 fw-bold mb-1 text-uppercase letter-spacing-1 text-body-emphasis">Transparency Notice</h4>
+            <p class="mb-0 small text-body">
                 RaggieSoft is a multimedia storytelling and world-building project. Certain music, artwork, and narrative elements across this network are created with the assistance of Artificial Intelligence. 
                 <a href="/about/ai-disclaimer" class="alert-link fw-bold text-info border-bottom border-info text-decoration-none">Read the full AI Disclaimer.</a>
             </p>
         </div>
     </div>
 </div>
+
 <section class="bg-black text-white py-5 border-bottom border-danger border-5" aria-labelledby="hard-reset-launch">
     <div class="container py-4">
         <div class="row align-items-center g-5">
@@ -112,7 +114,8 @@
         </div>
     </div>
 </section>
-<section id="network-spokes" class="py-5 bg-body-tertiary" aria-labelledby="spokes-title">
+
+<section id="network-spokes" class="py-5 bg-body-tertiary text-body" aria-labelledby="spokes-title">
   <div class="container-fluid px-4 px-xxl-5">
     
     <div class="row g-4 row-cols-1 row-cols-md-2 justify-content-center mb-4">
@@ -148,7 +151,7 @@
             'buttonProps' => [
               'href' => '/family',
               'text' => 'Meet the Family',
-              'variant' => 'info', // Matches Paige/Safe Person vibe
+              'variant' => 'info', 
               'icon' => 'fa-duotone fa-people-group',
               'fullWidth' => true
             ]
@@ -249,10 +252,10 @@
         <h2 id="about-hub-title" class="display-6 fw-bold mb-4">
         About the Network
         </h2>
-        <p class="fs-5 mb-3 text-body-secondary">
+        <p class="fs-5 mb-3 text-body">
         <strong>RaggieSoft.com</strong> serves as the central junction for the creative and professional works of Michael P. Ragsdale. 
         </p>
-        <p class="fs-5 text-body-secondary">
+        <p class="fs-5 text-body">
         Whether you are here to audit the corporate records of the <strong>Stardust Engine</strong>, explore the gravity-crushed jungles of <strong>Knox</strong>, or review professional qualifications, all paths start here.
         </p>
     </div>

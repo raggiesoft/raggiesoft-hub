@@ -1,7 +1,7 @@
 <?php
 // includes/footer.php
 // v8.3 - Fixed Double-Script Invocation & Turbo Conflict
-// Updated: Added Dynamic Location Logic
+// Updated: Fixed Dark Mode Link Contrast
 
 // --- 1. DYNAMIC LOCATION LOGIC ---
 $location_json_url = 'https://assets.raggiesoft.com/portfolio/json/locations.json';
@@ -46,20 +46,20 @@ if (!file_exists($currentFooter)) {
                 <span class="fw-bold">&copy; 2008 &ndash; <?php echo date("Y"); ?> Michael Ragsdale.</span>
                 <span class="mx-2 opacity-50 d-none d-lg-inline">|</span>
                 <span class="opacity-75 d-block d-lg-inline mt-1 mt-lg-0" style="font-size: 0.9em;">
-                    Content: <a href="/raggiesoft-media/licensing" class="text-reset text-decoration-none border-bottom">CC BY-SA 4.0</a> &bull; 
-                    Code: <a href="/raggiesoft-media/licensing" class="text-reset text-decoration-none border-bottom">MIT</a>
+                    Content: <a href="/raggiesoft-media/licensing" class="text-decoration-none link-body-emphasis border-bottom">CC BY-SA 4.0</a> &bull; 
+                    Code: <a href="/raggiesoft-media/licensing" class="text-decoration-none link-body-emphasis border-bottom">MIT</a>
                 </span>
             </div>
-            <div class="col-lg-7 text-center text-lg-end small text-body-secondary mt-2 mt-lg-0">
-                <a href="/raggiesoft-media" class="text-decoration-none text-reset me-3 hover-opacity fw-bold">RaggieSoft Media</a>
+            <div class="col-lg-7 text-center text-lg-end small mt-2 mt-lg-0">
+                <a href="/raggiesoft-media" class="text-decoration-none link-body-emphasis me-3 hover-opacity fw-bold">RaggieSoft Media</a>
                 <a href="/raggiesoft-media/careers" class="text-decoration-none text-danger fw-bold me-3 hover-opacity">
                     <i class="fa-solid fa-shield-exclamation me-1" aria-hidden="true"></i>Careers (Fraud Alert)
                 </a>
-                <a href="/about/privacy" class="text-decoration-none text-reset me-3 hover-opacity">Privacy</a>
-                <a href="/about/terms" class="text-decoration-none text-reset me-3 hover-opacity">Terms</a>
-                <a href="/raggiesoft-media/licensing" class="text-decoration-none text-reset me-3 hover-opacity">Licenses</a>
-                <a href="/contact" class="text-decoration-none text-reset me-3 hover-opacity">Contact</a>
-                <a href="/about/ai-disclaimer" class="text-decoration-none text-primary-emphasis fw-bold text-uppercase letter-spacing-1 d-inline-block mt-2 mt-md-0" style="font-size: 0.9em;">
+                <a href="/about/privacy" class="text-decoration-none link-body-emphasis me-3 hover-opacity">Privacy</a>
+                <a href="/about/terms" class="text-decoration-none link-body-emphasis me-3 hover-opacity">Terms</a>
+                <a href="/raggiesoft-media/licensing" class="text-decoration-none link-body-emphasis me-3 hover-opacity">Licenses</a>
+                <a href="/contact" class="text-decoration-none link-body-emphasis me-3 hover-opacity">Contact</a>
+                <a href="/about/ai-disclaimer" class="text-decoration-none text-primary fw-bold text-uppercase letter-spacing-1 d-inline-block mt-2 mt-md-0" style="font-size: 0.9em;">
                     <i class="fa-duotone fa-robot-astromech me-1"></i>AI Disclaimer
                 </a>
             </div>

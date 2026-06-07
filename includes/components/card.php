@@ -34,7 +34,7 @@ $placeholderUrl = "https://placehold.co/600x400/{$bgColor}/{$textColor}?text=" .
     <h3 class="card-title h5">
       <?php echo $title; ?>
     </h3>
-    <p class="card-text text-body-secondary flex-grow-1">
+    <p class="card-text text-body flex-grow-1">
       <?php echo $description; ?>
     </p>
 
