@@ -23,7 +23,7 @@ $pageTitle = "Ocean View Archives | RaggieSoft Media";
     {
       "@type": "CollectionPage",
       "name": "The Archives",
-      "description": "Directory of literary works, including Project: KNOX, The Silver Gauntlet of Aethel, and The Virginia Chronicles."
+      "description": "Directory of literary works, including Project: KNOX, The Silver Gauntlet of Aethel, and Contemporary Fiction."
     }
   ]
 }
@@ -101,19 +101,20 @@ $pageTitle = "Ocean View Archives | RaggieSoft Media";
             <div class="col" style="max-width: 500px;">
                 <?php
                 $props = [
-                    'imgSrc' => 'https://assets.raggiesoft.com/raggiesoft-books/images/covers/base-camp.jpg', // Placeholder
-                    'imgAlt' => 'The Virginia Chronicles',
-                    'fallbackText' => 'Base Camp',
-                    'title' => 'The Virginia Chronicles',
-                    'description' => 'A deeply grounded, multi-volume history of survival and fierce loyalty. Follow Toby, Samantha, Michael, Rachel, Alex, and Chloé as they build impenetrable perimeters against an unforgiving world.',
+                    'imgSrc' => 'https://assets.raggiesoft.com/raggiesoft-books/images/covers/contemporary-placeholder.jpg', // Placeholder
+                    'imgAlt' => 'Contemporary Fiction',
+                    'fallbackText' => 'Contemporary',
+                    'title' => 'Contemporary Fiction',
+                    'description' => 'A curated collection of standalone, grounded narratives set in coastal Virginia. Explore distinct stories of fierce loyalty, disability representation, and found families building perimeters against an unforgiving world.',
                     'buttonProps' => [
-                        'href' => '/raggiesoft-books/virginia-chronicles',
-                        'text' => 'Enter Base Camp',
-                        'variant' => 'dark', 
-                        'icon' => 'fa-duotone fa-house-lock',
+                        'href' => '#',
+                        'text' => 'Status: Typesetting',
+                        'variant' => 'secondary', 
+                        'icon' => 'fa-duotone fa-file-dashed-line',
                         'fullWidth' => true
                     ]
                 ];
+                // Note: href is '#' and variant is 'secondary' to indicate it is not yet active.
                 include ROOT_PATH . '/includes/components/card.php';
                 ?>
             </div>

@@ -72,7 +72,7 @@ $pageTitle = "RaggieSoft | The Central Hub";
         position: relative;
         z-index: 2;
         text-align: center;
-        color: #ffffff !important; /* Brute-force contrast */
+        color: #ffffff !important;
         padding: 3rem 1.5rem;
         max-width: 600px;
     }
@@ -108,7 +108,6 @@ $pageTitle = "RaggieSoft | The Central Hub";
         }
     }
 
-    /* Brute-force text overrides for the Hero */
     .hero-title { text-shadow: 0px 4px 15px rgba(0,0,0,0.9), 0px 1px 3px rgba(0,0,0,1); }
     .hero-text { text-shadow: 0px 2px 8px rgba(0,0,0,0.9); }
 
@@ -117,6 +116,38 @@ $pageTitle = "RaggieSoft | The Central Hub";
         filter: invert(1) grayscale(100%) !important; 
         mix-blend-mode: normal !important; 
         opacity: 0.9 !important; 
+    }
+
+    /* --- HORIZONTAL SCROLL CAROUSEL (The Netflix UI) --- */
+    .horizontal-scroll-wrapper {
+        display: flex;
+        overflow-x: auto;
+        gap: 1.5rem;
+        padding-bottom: 2rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none; /* Hide scrollbar Firefox */
+    }
+    
+    .horizontal-scroll-wrapper::-webkit-scrollbar {
+        display: none; /* Hide scrollbar Chrome/Safari/Edge */
+    }
+
+    .scroll-card {
+        flex: 0 0 85%; /* Shows 85% of card on mobile, forcing the next card to peek */
+        scroll-snap-align: center;
+        max-width: 400px;
+    }
+
+    @media (min-width: 768px) {
+        .scroll-card { flex: 0 0 45%; }
+    }
+
+    @media (min-width: 992px) {
+        .scroll-card { flex: 0 0 30%; }
+        .horizontal-scroll-wrapper { padding-left: 0; padding-right: 0; justify-content: center; } /* Centers on large screens if items fit */
     }
 </style>
 
@@ -131,14 +162,14 @@ $pageTitle = "RaggieSoft | The Central Hub";
             <h1 class="display-4 fw-bold text-uppercase brand-font hero-title mb-2">The Architect</h1>
             <h2 class="h5 fw-light text-primary mb-4 hero-text text-uppercase letter-spacing-1">Infrastructure & Operations</h2>
             <p class="lead hero-text text-white-75 mb-4">
-                Systems architecture, open-source development, B2B media licensing, and the professional portfolio of Michael P. Ragsdale.
+                Systems architecture, open-source development, and the professional portfolio of Michael P. Ragsdale.
             </p>
             <div class="d-flex flex-wrap gap-3 justify-content-center mt-auto">
                 <a href="/about/michael-ragsdale" class="btn btn-primary btn-lg rounded-0 fw-bold px-4 shadow-sm text-uppercase">
                     <i class="fa-duotone fa-user-visor me-2"></i> View Portfolio
                 </a>
                 <a href="/raggiesoft-media" class="btn btn-outline-light btn-lg rounded-0 fw-bold px-4 shadow-sm text-uppercase">
-                    <i class="fa-solid fa-building me-2"></i> Corporate Hub
+                    <i class="fa-solid fa-building me-2"></i> RaggieSoft Media
                 </a>
             </div>
         </div>
@@ -153,14 +184,14 @@ $pageTitle = "RaggieSoft | The Central Hub";
             <h1 class="display-4 fw-bold text-uppercase brand-font hero-title mb-2">Creative Works</h1>
             <h2 class="h5 fw-light text-danger mb-4 hero-text text-uppercase letter-spacing-1">Music & Narrative Lore</h2>
             <p class="lead hero-text text-white-75 mb-4">
-                100% independent audio production from Engine Room Records, and CC BY-SA 4.0 literary universes including Project: KNOX.
+                100% independent audio production and CC BY-SA 4.0 literary universes managed via private imprints.
             </p>
             <div class="d-flex flex-wrap gap-3 justify-content-center mt-auto">
-                <a href="/engine-room/artists/stardust-engine" class="btn btn-danger btn-lg rounded-0 fw-bold px-4 shadow-sm text-uppercase">
-                    <i class="fa-solid fa-rocket-launch me-2"></i> Stardust Engine
+                <a href="/engine-room" class="btn btn-danger btn-lg rounded-0 fw-bold px-4 shadow-sm text-uppercase">
+                    <i class="fa-solid fa-compact-disc me-2"></i> Engine Room Records
                 </a>
-                <a href="/engine-room" class="btn btn-outline-light btn-lg rounded-0 fw-bold px-4 shadow-sm text-uppercase">
-                    <i class="fa-solid fa-industry me-2"></i> Label Archives
+                <a href="/raggiesoft-books" class="btn btn-outline-light btn-lg rounded-0 fw-bold px-4 shadow-sm text-uppercase">
+                    <i class="fa-solid fa-landmark me-2"></i> Ocean View Archives
                 </a>
             </div>
         </div>
@@ -182,17 +213,17 @@ $pageTitle = "RaggieSoft | The Central Hub";
 </div>
 
 <section id="network-spokes" class="py-5 bg-body text-body" aria-labelledby="spokes-title">
-  <div class="container-fluid px-4 px-xxl-5">
+  <div class="container-fluid px-xxl-5">
     
-    <div class="text-center border-bottom border-secondary-subtle pb-3 mb-5">
+    <div class="text-center border-bottom border-secondary-subtle pb-3 mb-5 px-4">
         <h2 id="spokes-title" class="h4 fw-bold text-uppercase text-secondary letter-spacing-1">
             <i class="fa-duotone fa-network-wired me-2"></i>Global Directory
         </h2>
     </div>
 
-    <div class="row g-4 row-cols-1 row-cols-md-2 row-cols-xl-4 justify-content-center">
+    <div class="horizontal-scroll-wrapper">
       
-      <div class="col" style="max-width: 400px;">
+      <div class="scroll-card">
         <?php
           $props = [
             'imgSrc' => 'https://assets.raggiesoft.com/portfolio/images/logos/logo-michael.png',
@@ -212,14 +243,14 @@ $pageTitle = "RaggieSoft | The Central Hub";
         ?>
       </div>
 
-      <div class="col theme-invert" style="max-width: 400px;">
+      <div class="scroll-card theme-invert">
         <?php
           $props = [
             'imgSrc' => 'https://assets.raggiesoft.com/engine-room-records/images/logos/engine-room-records-logo.png',
             'imgAlt' => 'Engine Room Records',
             'fallbackText' => 'Engine Room Records',
             'title' => 'Engine Room Records',
-            'description' => 'The independent record label managing The Stardust Engine and active catalogs.',
+            'description' => 'The independent record label managing The Stardust Engine and active musical catalogs.',
             'buttonProps' => [
               'href' => '/engine-room',
               'text' => 'Enter Label',
@@ -232,19 +263,19 @@ $pageTitle = "RaggieSoft | The Central Hub";
         ?>
       </div>    
 
-      <div class="col" style="max-width: 400px;">
+      <div class="scroll-card">
         <?php
           $props = [
-            'imgSrc' => 'https://assets.raggiesoft.com/engine-room-records/artists/the-stardust-engine/2017-knox-ost/album-art.jpg',
-            'imgAlt' => 'Knox Universe',
-            'fallbackText' => 'Knox',
-            'title' => 'Literary Universes',
-            'description' => 'Explore the sci-fi world of Project: KNOX and the 1980s fantasy of Aethel.',
+            'imgSrc' => 'https://assets.raggiesoft.com/raggiesoft-books/images/logos/oceanview-archives.svg',
+            'imgAlt' => 'Ocean View Archives',
+            'fallbackText' => 'Archives',
+            'title' => 'Ocean View Archives',
+            'description' => 'The literary imprint preserving grounded narratives, sci-fi lore, and fantasy sagas.',
             'buttonProps' => [
-              'href' => '/raggiesoft-books/knox',
+              'href' => '/raggiesoft-books',
               'text' => 'Explore Lore',
-              'variant' => 'success', 
-              'icon' => 'fa-duotone fa-books',
+              'variant' => 'warning', 
+              'icon' => 'fa-duotone fa-landmark',
               'fullWidth' => true
             ]
           ];
@@ -252,7 +283,7 @@ $pageTitle = "RaggieSoft | The Central Hub";
         ?>
       </div>
 
-       <div class="col" style="max-width: 400px;">
+       <div class="scroll-card">
         <?php
           $props = [
             'imgSrc' => 'https://assets.raggiesoft.com/family/images/logos/logo-family.png',
