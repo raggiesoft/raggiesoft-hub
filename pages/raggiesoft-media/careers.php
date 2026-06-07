@@ -81,7 +81,7 @@ $pageTitle = "Careers and Jobs at RaggieSoft | Scam Warning";
                     </ul>
                 </div>
 
-                <<h3 class="h5 fw-bold text-uppercase mb-3 mt-4">Next Steps to Protect Yourself</h3>
+                <h3 class="h5 fw-bold text-uppercase mb-3 mt-4">Next Steps to Protect Yourself</h3>
                 <p class="small text-body-secondary mb-3">
                     1. <strong>Cease all communication</strong> with the fraudulent party immediately. Do not attempt to confront them.<br>
                     2. <strong>Do not deposit any checks</strong> they send you, and do not provide them with your banking routing numbers or social security information.<br>
