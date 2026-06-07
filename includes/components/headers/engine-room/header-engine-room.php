@@ -18,7 +18,7 @@ $isArchives = (
 <ul class="navbar-nav ms-auto mb-2 mb-md-0">
 
   <li class="nav-item">
-    <a class="nav-link <?php echo $isRadio ? 'active fw-bold text-warning' : ''; ?>" href="/engine-room/radio">
+    <a class="nav-link <?php echo $isRadio ? 'active fw-bold text-warning' : ''; ?>" href="/engine-room/adio">
         <i class="fa-duotone fa-signal-stream me-2"></i>Engine Room Radio
     </a>
   </li>
@@ -27,7 +27,7 @@ $isArchives = (
     <a class="nav-link dropdown-toggle <?php echo $isRoster ? 'active fw-bold' : ''; ?>" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
       <i class="fa-duotone fa-compact-disc me-2"></i>The Roster
     </a>
-    <ul class="dropdown-menu dropdown-menu-end rounded-0 border-secondary shadow-sm" style="z-index: 1060;">
+    <ul class="dropdown-menu dropdown-menu-end rounded-0 border-secondary shadow-sm">
       <li><a class="dropdown-item" href="/engine-room/artists">View Full Roster</a></li>
       <li><hr class="dropdown-divider"></li>
       <li><h6 class="dropdown-header text-uppercase text-primary fw-bold">Active Artists</h6></li>
@@ -58,7 +58,7 @@ $isArchives = (
     <a class="nav-link dropdown-toggle <?php echo $isArchives ? 'active fw-bold' : ''; ?>" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
       <i class="fa-duotone fa-box-archive me-2"></i>The Archives
     </a>
-    <ul class="dropdown-menu dropdown-menu-end rounded-0 border-secondary shadow-sm" style="z-index: 1060;">
+    <ul class="dropdown-menu dropdown-menu-end rounded-0 border-secondary shadow-sm">
       <li><h6 class="dropdown-header text-uppercase text-muted fw-bold">Company History</h6></li>
       <li>
           <a class="dropdown-item" href="/engine-room/history">
@@ -89,7 +89,7 @@ $isArchives = (
     <a class="nav-link dropdown-toggle text-body-secondary" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
       <i class="fa-duotone fa-briefcase me-2"></i>Industry
     </a>
-    <ul class="dropdown-menu dropdown-menu-end rounded-0 border-secondary shadow-sm" style="z-index: 1060;">
+    <ul class="dropdown-menu dropdown-menu-end rounded-0 border-secondary shadow-sm">
       <li><h6 class="dropdown-header text-uppercase text-muted fw-bold">B2B Operations</h6></li>
       <li>
           <a class="dropdown-item" href="/raggiesoft-media/licensing">
@@ -104,12 +104,12 @@ $isArchives = (
       <li><hr class="dropdown-divider"></li>
       <li><h6 class="dropdown-header text-uppercase text-muted fw-bold">Media Contacts</h6></li>
       <li>
-          <a class="dropdown-item font-monospace small elara-secure-mail" href="#" data-u="sync" data-d="raggiesoftmedia" data-t="com">
+          <a class="dropdown-item font-monospace small" href="mailto:sync@raggiesoftmedia.com">
             <i class="fa-solid fa-file-audio me-2 text-warning"></i>sync@raggiesoftmedia.com
           </a>
       </li>
       <li>
-          <a class="dropdown-item font-monospace small elara-secure-mail" href="#" data-u="ops" data-d="raggiesoftmedia" data-t="com">
+          <a class="dropdown-item font-monospace small" href="mailto:ops@raggiesoftmedia.com">
             <i class="fa-solid fa-envelope me-2 text-secondary"></i>ops@raggiesoftmedia.com
           </a>
       </li>
