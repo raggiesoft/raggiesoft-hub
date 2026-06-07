@@ -121,7 +121,7 @@ $master_playlist = array_values($master_playlist); // Re-index for JS
                                     <img src="<?php echo $track['artwork']; ?>" class="rounded shadow-sm me-3 border border-secondary" style="width: 50px; height: 50px; object-fit: cover;">
                                     
                                     <div class="flex-grow-1 text-start">
-                                        <div class="text-body-emphasis fw-bold fs-5 mb-1"><?php echo $track['title']; ?></div>
+                                        <div class="text-body-emphasis fs-5 mb-1"><strong><?php echo $track['title']; ?></strong></div>
                                         <div class="small text-info text-uppercase fw-semibold"><i class="fa-solid fa-microphone-lines me-1"></i><?php echo $track['artist']; ?></div>
                                     </div>
 
