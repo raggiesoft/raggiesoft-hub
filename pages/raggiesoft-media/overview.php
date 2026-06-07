@@ -10,6 +10,14 @@ $pageTitle = "RaggieSoft Media | IP & Asset Management";
     .corporate-hero {
         background: linear-gradient(180deg, #121212 0%, #1a1c20 100%);
         border-bottom: 1px solid var(--bs-secondary-bg);
+        color: #ffffff; /* WCAG Fix: Force white text for the dark gradient */
+    }
+
+    /* WCAG Fix: Adaptive Light Mode Hero */
+    [data-bs-theme="light"] .corporate-hero {
+        background: linear-gradient(180deg, #ffffff 0%, #f8f9fa 100%);
+        color: var(--bs-body-color);
+        border-bottom: 1px solid var(--bs-border-color);
     }
     
     .division-card {
@@ -45,7 +53,7 @@ $pageTitle = "RaggieSoft Media | IP & Asset Management";
         <p class="lead tech-font opacity-75 mb-4 mx-auto" style="max-width: 800px;">
             An independent multimedia asset management and distribution house based in Norfolk, Virginia. Specializing in automated audio engineering, custom web architecture, and open-source narrative lore.
         </p>
-        <span class="badge bg-secondary text-uppercase px-3 py-2 fs-6 border border-dark shadow-sm font-monospace">
+        <span class="badge bg-secondary text-uppercase px-3 py-2 fs-6 border border-dark shadow-sm font-monospace text-white">
             <i class="fa-solid fa-server me-2" aria-hidden="true"></i>Corporate Operations
         </span>
     </div>
@@ -70,7 +78,7 @@ $pageTitle = "RaggieSoft Media | IP & Asset Management";
                     Management of 100% independent master recordings and publishing rights. Flagship catalogs include The Stardust Engine and active commercial releases.
                 </p>
                 <div class="mt-auto border-top border-secondary-subtle pt-3">
-                    <a href="/raggiesoft-media/licensing/sync" class="text-decoration-none text-uppercase fw-bold small">
+                    <a href="/raggiesoft-media/licensing/commercial" class="text-decoration-none text-uppercase fw-bold small">
                         Commercial Sync <i class="fa-solid fa-arrow-right ms-1"></i>
                     </a>
                 </div>
@@ -102,7 +110,7 @@ $pageTitle = "RaggieSoft Media | IP & Asset Management";
                     Extensive world-building, scriptwriting, and character asset management governed entirely under progressive public licensing frameworks.
                 </p>
                 <div class="mt-auto border-top border-secondary-subtle pt-3">
-                    <a href="/raggiesoft-media/licensing/creative-commons" class="text-decoration-none text-warning text-uppercase fw-bold small">
+                    <a href="/raggiesoft-media/licensing" class="text-decoration-none text-warning text-uppercase fw-bold small">
                         CC BY-SA 4.0 Clearances <i class="fa-solid fa-arrow-right ms-1"></i>
                     </a>
                 </div>
@@ -124,17 +132,17 @@ $pageTitle = "RaggieSoft Media | IP & Asset Management";
                     
                     <div class="col-md-6 col-lg-3">
                         <p class="data-label mb-1">Commercial Media Licensing</p>
-                        <a href="mailto:sync@raggiesoftmedia.com" class="text-decoration-none fw-bold fs-6">sync@raggiesoftmedia.com</a>
+                        <a href="#" class="elara-secure-mail text-decoration-none fw-bold fs-6" data-u="sync" data-d="raggiesoftmedia" data-t="com">Email Sync Desk</a>
                     </div>
                     
                     <div class="col-md-6 col-lg-3">
                         <p class="data-label mb-1">Rights & Attributions</p>
-                        <a href="mailto:licensing@raggiesoftmedia.com" class="text-decoration-none fw-bold fs-6">licensing@raggiesoftmedia.com</a>
+                        <a href="#" class="elara-secure-mail text-decoration-none fw-bold fs-6" data-u="licensing" data-d="raggiesoftmedia" data-t="com">Email Licensing Team</a>
                     </div>
                     
                     <div class="col-md-6 col-lg-3">
                         <p class="data-label mb-1">Infrastructure & Engineering</p>
-                        <a href="mailto:ops@raggiesoftmedia.com" class="text-decoration-none fw-bold fs-6">ops@raggiesoftmedia.com</a>
+                        <a href="#" class="elara-secure-mail text-decoration-none fw-bold fs-6" data-u="ops" data-d="raggiesoftmedia" data-t="com">Email Operations</a>
                     </div>
 
                     <div class="col-md-6 col-lg-3">
