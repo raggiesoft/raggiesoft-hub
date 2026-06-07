@@ -28,8 +28,13 @@
                         </a>
                     </li>
                     <li class="mb-2">
-                        <a href="/raggiesoft-media/projects/elara" class="text-decoration-none text-body-secondary hover-text-info">
-                            <i class="fa-solid fa-code me-2 text-info opacity-75"></i>Software Infrastructure
+                        <a href="/raggiesoft-media/projects" class="text-decoration-none text-body-secondary hover-text-info">
+                            <i class="fa-brands fa-osi me-2 text-info opacity-75"></i>Open Source Projects
+                        </a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="/raggiesoft-media/projects/stardust-engine-cms" class="text-decoration-none text-body-secondary hover-text-info">
+                            <i class="fa-solid fa-rocket-launch me-2 text-info opacity-75"></i>Stardust Engine CMS
                         </a>
                     </li>
                     <li class="mb-0">

@@ -40,11 +40,17 @@
     "footer": "raggiesoft-media/footer-careers",
     "sidebar": "raggiesoft-media/sidebar-careers"
   },
-  "/raggiesoft-media/projects/elara": {
-    "view": "pages/raggiesoft-media/projects/elara/overview",
-    "title": "Elara CMS | Open-Source Hub",
-    "ogDescription": "Official documentation and repository for the generic, MIT-licensed Elara Content Management System.",
+  "/raggiesoft-media/projects": {
+    "view": "pages/raggiesoft-media/projects/overview",
+    "title": "Open Source Projects | RaggieSoft Media",
+    "ogDescription": "Explore MIT-licensed open-source software, frameworks, and infrastructure tools developed by RaggieSoft Media.",
+    "showSidebar": false
+  },
+  "/raggiesoft-media/projects/stardust-engine-cms": {
+    "view": "pages/raggiesoft-media/projects/stardust-engine-cms/overview",
+    "title": "The Stardust Engine CMS | Open Source",
+    "ogDescription": "Official documentation and repository for The Stardust Engine CMS and the Elara SPA router.",
     "showSidebar": true,
-    "sidebar": "raggiesoft-media/projects/elara/sidebar-docs"
+    "sidebar": "raggiesoft-media/projects/stardust-engine-cms/sidebar-docs"
   }
 }

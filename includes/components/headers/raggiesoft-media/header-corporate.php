@@ -22,10 +22,14 @@ $isOpenSource = (str_starts_with($request_uri, '/raggiesoft-media/projects'));
     </a>
   </li>
 
-  <li class="nav-item me-3">
-    <a class="nav-link <?php echo $isOpenSource ? 'active fw-bold text-info' : ''; ?>" href="/raggiesoft-media/projects/elara">
+  <li class="nav-item dropdown me-3">
+    <a class="nav-link dropdown-toggle <?php echo $isOpenSource ? 'active fw-bold text-info' : ''; ?>" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
         <i class="fa-brands fa-osi me-2" aria-hidden="true"></i>Open Source
     </a>
+    <ul class="dropdown-menu dropdown-menu-end shadow-sm border-secondary-subtle">
+      <li><a class="dropdown-item" href="/raggiesoft-media/projects"><i class="fa-duotone fa-network-wired me-2 text-info"></i>Projects Hub</a></li>
+      <li><a class="dropdown-item" href="/raggiesoft-media/projects/stardust-engine-cms"><i class="fa-duotone fa-rocket-launch me-2 text-primary"></i>Stardust Engine CMS</a></li>
+    </ul>
   </li>
 
   <li class="nav-item d-none d-md-block border-start border-secondary-subtle ps-3">
