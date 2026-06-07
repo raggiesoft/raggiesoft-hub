@@ -69,6 +69,8 @@ $imagesJson = htmlspecialchars(json_encode($heroImages), ENT_QUOTES, 'UTF-8');
     .force-border-info { border: 1px solid rgba(13, 202, 240, 0.4) !important; }
     .force-border-success { border: 1px solid rgba(25, 135, 84, 0.4) !important; }
     .force-border-danger { border: 1px solid rgba(220, 53, 69, 0.4) !important; }
+    .force-border-warning { border: 1px solid rgba(255, 193, 7, 0.4) !important; }
+    .force-border-secondary { border: 1px solid rgba(173, 181, 189, 0.4) !important; }
 
     /* Shadow Stacking */
     .force-shadow-heavy {
@@ -82,6 +84,8 @@ $imagesJson = htmlspecialchars(json_encode($heroImages), ENT_QUOTES, 'UTF-8');
     .force-icon-info { color: #0dcaf0 !important; }
     .force-icon-success { color: #198754 !important; }
     .force-icon-danger { color: #dc3545 !important; }
+    .force-icon-warning { color: #ffc107 !important; }
+    .force-icon-secondary { color: #adb5bd !important; }
 </style>
 
 <div class="immersive-container hero-rotator-container" data-images="<?php echo $imagesJson; ?>">
@@ -170,6 +174,54 @@ $imagesJson = htmlspecialchars(json_encode($heroImages), ENT_QUOTES, 'UTF-8');
                             <a href="/raggiesoft-media/careers" class="btn btn-outline-danger btn-sm rounded-pill fw-bold force-text-light">
                                 <i class="fa-solid fa-shield-exclamation me-1"></i> Job Scam Warning
                             </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="card force-glass-bg force-border-warning h-100 p-4 text-center rounded-4 shadow-lg">
+                    <div class="card-body d-flex flex-column">
+                        <div class="mb-4 force-icon-warning">
+                            <i class="fa-duotone fa-file-signature fa-4x drop-shadow"></i>
+                        </div>
+                        <h2 class="h3 fw-bold mb-3 force-text-light">Sync & Licensing</h2>
+                        <p class="force-text-muted mb-4">
+                            Looking to clear a master recording for film, television, gaming, or commercial broadcast?
+                        </p>
+                        <div class="d-grid mt-auto">
+                            <a href="/raggiesoft-media/licensing/commercial" class="btn btn-warning btn-lg rounded-pill fw-bold shadow-glow text-dark mb-3">
+                                <i class="fa-solid fa-file-contract me-2"></i>Commercial Portal
+                            </a>
+                            <a href="/raggiesoft-media/licensing" class="btn btn-outline-warning btn-sm rounded-pill fw-bold force-text-light">
+                                <i class="fa-solid fa-scale-balanced me-1"></i> General Rights Info
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="card force-glass-bg force-border-secondary h-100 p-4 text-center rounded-4 shadow-lg">
+                    <div class="card-body d-flex flex-column">
+                        <div class="mb-4 force-icon-secondary">
+                            <i class="fa-duotone fa-masks-theater fa-4x drop-shadow"></i>
+                        </div>
+                        <h2 class="h3 fw-bold mb-3 force-text-light">Fan Mail & Lore</h2>
+                        <p class="force-text-muted mb-4">
+                            The members of The Stardust Engine and the characters within the Ocean View Archives are entirely fictional.
+                        </p>
+                        <div class="d-grid mt-auto">
+                            <a href="/about/ai-disclaimer" class="btn btn-secondary btn-lg rounded-pill fw-bold shadow-glow force-text-light mb-3">
+                                <i class="fa-solid fa-robot-astromech me-2"></i>Read AI Disclaimer
+                            </a>
+                        </div>
+                    </div>
+                    <div class="text-center mt-3 d-flex justify-content-center">
+                        <div class="force-border-secondary px-3 py-2 rounded-pill shadow-sm" style="background-color: rgba(255, 255, 255, 0.05) !important;">
+                            <p class="small force-text-muted mb-0" style="font-size: 0.8rem;">
+                                Photorealistic imagery across this network is AI-generated. Fictional entities cannot respond to messages, grant interviews, or sign autographs.
+                            </p>
                         </div>
                     </div>
                 </div>
