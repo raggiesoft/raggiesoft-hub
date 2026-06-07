@@ -81,12 +81,21 @@ $pageTitle = "Careers and Jobs at RaggieSoft | Scam Warning";
                     </ul>
                 </div>
 
-                <h3 class="h5 fw-bold text-uppercase mb-3 mt-4">Next Steps to Protect Yourself</h3>
-                <p class="small text-body-secondary mb-2">
+                <<h3 class="h5 fw-bold text-uppercase mb-3 mt-4">Next Steps to Protect Yourself</h3>
+                <p class="small text-body-secondary mb-3">
                     1. <strong>Cease all communication</strong> with the fraudulent party immediately. Do not attempt to confront them.<br>
                     2. <strong>Do not deposit any checks</strong> they send you, and do not provide them with your banking routing numbers or social security information.<br>
                     3. Report the fraudulent listing to the platform where you found it (e.g., LinkedIn, Indeed, Upwork).
                 </p>
+
+                <div class="d-flex flex-wrap gap-2 mt-4">
+                    <a href="https://www.ic3.gov/" target="_blank" rel="noopener noreferrer" class="btn btn-danger btn-sm rounded-0 fw-bold">
+                        <i class="fa-solid fa-building-columns me-2" aria-hidden="true"></i>Report to FBI (IC3) <i class="fa-solid fa-arrow-up-right-from-square ms-1" style="font-size: 0.8em;" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://reportfraud.ftc.gov/" target="_blank" rel="noopener noreferrer" class="btn btn-outline-danger btn-sm rounded-0 fw-bold">
+                        <i class="fa-solid fa-scale-balanced me-2" aria-hidden="true"></i>Report to FTC <i class="fa-solid fa-arrow-up-right-from-square ms-1" style="font-size: 0.8em;" aria-hidden="true"></i>
+                    </a>
+                </div>
 
             </div>
         </div>
