@@ -1,7 +1,7 @@
 <?php
 // includes/footer.php
-// v8.3 - Fixed Double-Script Invocation & Turbo Conflict
-// Updated: Fixed Dark Mode Link Contrast
+// v8.4 - Fixed Dark Mode Text Contrast in Legal Band
+// Updated: Dynamic Location Logic
 
 // --- 1. DYNAMIC LOCATION LOGIC ---
 $location_json_url = 'https://assets.raggiesoft.com/portfolio/json/locations.json';
@@ -42,7 +42,7 @@ if (!file_exists($currentFooter)) {
 <div id="global-legal-band" class="bg-body-secondary border-top py-3 position-relative z-1">
     <div class="container">
         <div class="row align-items-center">
-            <div class="col-lg-5 text-center text-lg-start small text-body-secondary mb-2 mb-lg-0">
+            <div class="col-lg-5 text-center text-lg-start small text-body mb-2 mb-lg-0">
                 <span class="fw-bold">&copy; 2008 &ndash; <?php echo date("Y"); ?> Michael Ragsdale.</span>
                 <span class="mx-2 opacity-50 d-none d-lg-inline">|</span>
                 <span class="opacity-75 d-block d-lg-inline mt-1 mt-lg-0" style="font-size: 0.9em;">
