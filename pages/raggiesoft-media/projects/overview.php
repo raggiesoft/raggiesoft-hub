@@ -1,7 +1,7 @@
 <?php
 // pages/raggiesoft-media/projects/overview.php
 // The Open Source Division Hub
-// Updated: Frutiger Aero / Dark Aero Full-Width Glass Architecture
+// Updated: Frutiger Aero / Dark Aero Image Backgrounds
 
 $pageTitle = "Open Source Projects | RaggieSoft Media";
 ?>
@@ -17,28 +17,49 @@ $pageTitle = "Open Source Projects | RaggieSoft Media";
         z-index: 1;
     }
 
+    /* The Frutiger Aero Image Base (Light Mode) */
     .aero-hero::before {
         content: '';
         position: absolute;
+        top: -5%; left: -5%; right: -5%; bottom: -5%; 
+        background-image: url('https://assets.raggiesoft.com/raggiesoft-media/images/hero/frutiger-aero.jpg');
+        background-size: cover;
+        background-position: center;
+        z-index: -2;
+        animation: aero-pan 40s linear infinite alternate;
+    }
+
+    /* Legibility Overlay: Frosted Glass Fade (Tuned with Cyan Accent) */
+    .aero-hero::after {
+        content: '';
+        position: absolute;
         top: 0; left: 0; right: 0; bottom: 0;
-        background: linear-gradient(120deg, rgba(255,255,255,0.4), rgba(0, 195, 255, 0.08), rgba(255,255,255,0.4));
-        background-size: 200% 200%;
-        animation: aero-wash 12s ease infinite;
+        background: linear-gradient(120deg, rgba(244, 249, 253, 0.85) 0%, rgba(0, 195, 255, 0.1) 100%);
         z-index: -1;
     }
 
+    /* The Dark Aero Image Base */
     [data-bs-theme="dark"] .aero-hero {
         box-shadow: 0 8px 32px rgba(0, 229, 255, 0.05);
     }
     [data-bs-theme="dark"] .aero-hero::before {
-        background: linear-gradient(120deg, rgba(7, 11, 20, 0.9), rgba(0, 229, 255, 0.08), rgba(7, 11, 20, 0.9));
-        background-size: 200% 200%;
+        background-image: url('https://assets.raggiesoft.com/raggiesoft-media/images/hero/dark-aero.jpg');
+    }
+    [data-bs-theme="dark"] .aero-hero::after {
+        background: linear-gradient(120deg, rgba(7, 11, 20, 0.9) 0%, rgba(0, 229, 255, 0.08) 100%);
     }
 
+    /* Slow Cinematic Pan */
+    @keyframes aero-pan {
+        0% { transform: scale(1) translate(0, 0); }
+        100% { transform: scale(1.05) translate(-1.5%, -1.5%); }
+    }
+
+    /* WCAG: Respect Prefers Reduced Motion */
     @media (prefers-reduced-motion: reduce) {
         .aero-hero::before {
             animation: none;
-            background-position: center;
+            top: 0; left: 0; right: 0; bottom: 0;
         }
     }
 
@@ -61,7 +82,7 @@ $pageTitle = "Open Source Projects | RaggieSoft Media";
         box-shadow: 0 15px 35px rgba(0, 229, 255, 0.15), inset 0 1px 0 var(--raggie-gloss-highlight);
     }
 
-    /* Inner Glass Icon Pane (Replaces flat bg-dark) */
+    /* Inner Glass Icon Pane */
     .aero-project-icon-pane {
         background: linear-gradient(135deg, rgba(0, 195, 255, 0.15) 0%, rgba(0, 195, 255, 0.02) 100%);
         border-right: 1px solid var(--raggie-glass-border);
@@ -98,11 +119,18 @@ $pageTitle = "Open Source Projects | RaggieSoft Media";
         <h1 class="display-4 fw-bold text-uppercase mb-2 brand-font" style="letter-spacing: 2px;">
             <span class="text-glow-primary">Open Source</span>
         </h1>
-        <p class="lead tech-font mb-0 mx-auto" style="max-width: 700px; text-shadow: 0 1px 2px rgba(255,255,255,0.5);">
+        <p class="lead tech-font mb-0 mx-auto" style="max-width: 700px; text-shadow: 0 1px 2px rgba(255,255,255,0.9);">
             Infrastructure, architecture, and deployment tools built for the RaggieSoft network, released under the MIT License.
         </p>
     </div>
 </div>
+
+<style>
+    /* Dark Mode specific text shadow adjustments for the hero */
+    [data-bs-theme="dark"] .aero-hero .lead {
+        text-shadow: 0 1px 4px rgba(0,0,0,0.9), 0 0 10px rgba(0,0,0,0.5) !important;
+    }
+</style>
 
 <div class="container pb-5 pt-2">
     
