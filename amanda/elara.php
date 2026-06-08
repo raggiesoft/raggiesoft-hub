@@ -1,7 +1,7 @@
 <?php
 ob_start(); 
-// RaggieSoft Elara Router v6.0
-// Upgrade: Powered by Emily (Compiled Single-File JSON Routing) & Native 301 Redirects
+// RaggieSoft Elara Router v5.7
+// Fix v5.7: Added Recursive Route Discovery (Subfolders) & JSON Error Logging
 
 define('ROOT_PATH', dirname(__DIR__));
 $request_uri = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
@@ -11,33 +11,27 @@ if (strlen($request_uri) > 1) {
     $request_uri = rtrim($request_uri, '/');
 }
 
-// --- 1. WAKE UP EMILY ---
+// --- 1. LOAD GLOBAL SETTINGS ---
 $settingsFile = ROOT_PATH . '/data/settings.json';
-$emilyFile    = ROOT_PATH . '/data/emily.json';
 
-if (!file_exists($settingsFile) || !file_exists($emilyFile)) {
-    die('Critical Error: settings.json or emily.json is missing. Run Jenna to compile the routing engine.');
+if (!file_exists($settingsFile)) {
+    die('Critical Error: Configuration file (data/settings.json) missing.');
 }
 
-// Read and decode the payloads
 $settings = json_decode(file_get_contents($settingsFile), true);
-$emily    = json_decode(file_get_contents($emilyFile), true);
 
 if (json_last_error() !== JSON_ERROR_NONE) {
-    die('Critical Error: Emily suffered a catastrophic failure (Invalid JSON).');
+    die('Critical Error: Invalid JSON in settings.json');
 }
 
-// Unpack Emily's Namespaces (Supports if emily.json has a routes wrapper)
-$routes = $emily['routes'] ?? $emily;
-
 // Extract Core Globals
-$siteName = $settings['siteName'] ?? 'RaggieSoft';
-$projectSlug = $settings['projectSlug'] ?? 'raggiesoft'; 
-$cdnBaseUrl = $settings['cdnBaseUrl'] ?? '';
-$defaultTheme = $settings['defaultTheme'] ?? 'light'; 
+$siteName = $settings['siteName']; 
+$projectSlug = $settings['projectSlug']; 
+$cdnBaseUrl = $settings['cdnBaseUrl'];
+$defaultTheme = $settings['defaultTheme']; 
 
 // Build Defaults Array
-$defaults = array_merge($settings['defaults'] ?? [], [
+$defaults = array_merge($settings['defaults'], [
     'title' => $siteName, 
     'theme' => $defaultTheme,
     'site' => $projectSlug,
@@ -45,6 +39,46 @@ $defaults = array_merge($settings['defaults'] ?? [], [
     'ogUrl' => "https://" . $_SERVER['HTTP_HOST'] . $request_uri,
     'navbarBrandLogo' => $cdnBaseUrl . ($settings['defaults']['navbarBrandLogo'] ?? '')
 ]);
+
+// --- 2. LOAD & MERGE ROUTE FILES (RECURSIVE) ---
+$masterRoutes = [];
+
+// SCAN: Recursively find ALL .json files inside /data/routes/
+$routeFiles = [];
+$directory = new RecursiveDirectoryIterator(ROOT_PATH . '/data/routes');
+$iterator = new RecursiveIteratorIterator($directory);
+$regex = new RegexIterator($iterator, '/^.+\.json$/i', RecursiveRegexIterator::GET_MATCH);
+
+foreach ($regex as $file) {
+    $routeFiles[] = $file[0];
+}
+foreach ($routeFiles as $file) {
+    $jsonContent = file_get_contents($file);
+    $fileData = json_decode($jsonContent, true);
+
+    // FIX: Log JSON errors so they aren't silent
+    if (json_last_error() !== JSON_ERROR_NONE) {
+        error_log("Elara Error: Invalid JSON in " . basename($file) . " - " . json_last_error_msg());
+        continue; // Skip bad file
+    }
+
+    if (is_array($fileData)) {
+        
+        // --- 2A. INHERITANCE LOGIC (The "DRY" Fix) ---
+        if (isset($fileData['common'])) {
+            $commonConfig = $fileData['common'];
+            unset($fileData['common']); // Remove 'common' key
+
+            foreach ($fileData as $routeKey => $routeConfig) {
+                // Merge: Specific settings overwrite Common settings
+                $fileData[$routeKey] = array_merge($commonConfig, $routeConfig);
+            }
+        }
+        // ---------------------------------------------
+
+        $masterRoutes = array_merge($masterRoutes, $fileData);
+    }
+}
 
 // --- HELPER: RESOLVE ASSET INHERITANCE ---
 function resolveAsset($map, $currentUri) {
@@ -58,12 +92,13 @@ function resolveAsset($map, $currentUri) {
     return null;
 }
 
-// --- 2. MATCH ROUTE ---
-$pageConfig = [];
-if (isset($routes[$request_uri])) {
-    $pageConfig = $routes[$request_uri];
-} else {
-    // Auto-Discovery Logic for unmapped pages
+// --- 3. SMART ROUTER LOGIC ---
+
+// A. Check for Explicit Configuration
+$pageConfig = $masterRoutes[$request_uri] ?? [];
+
+// B. Auto-Discovery Logic
+if (!isset($pageConfig['view'])) {
     $potentialPath = 'pages' . $request_uri;
     if (file_exists(ROOT_PATH . '/' . $potentialPath . '.php')) {
         $pageConfig['view'] = $potentialPath;
@@ -78,27 +113,7 @@ if (isset($routes[$request_uri])) {
     }
 }
 
-// Handle 404 early if no route matches and no file exists
-if (empty($pageConfig)) {
-    http_response_code(404);
-    if(file_exists(ROOT_PATH . '/pages/errors/404.php')) {
-        require_once ROOT_PATH . '/pages/errors/404.php';
-    } else {
-        echo "404 Not Found";
-    }
-    ob_end_flush();
-    exit;
-}
-
-// --- 3. REDIRECT INTERCEPTOR ---
-// If the route JSON contains a "redirect" key, fire a 301 and halt immediately
-if (isset($pageConfig['redirect'])) {
-    header('Location: ' . $pageConfig['redirect'], true, 301);
-    ob_end_flush();
-    exit;
-}
-
-// C. Sidebar Intelligence & Auto-Titles
+// C. Sidebar Intelligence
 if (isset($pageConfig['view'])) {
     $sidebarMap = $settings['sidebarMap'] ?? [];
     
@@ -115,36 +130,36 @@ if (isset($pageConfig['view'])) {
         }
     }
 
-    // Auto-Title Generation
+    // Auto-Title
     if (!isset($pageConfig['title'])) {
         $slug = basename($request_uri);
         $pageConfig['title'] = ($slug === '' || $slug === 'index.php') ? 'Home - ' . $siteName : ucwords(str_replace('-', ' ', $slug)) . ' - ' . $siteName;
     }
 }
 
-// --- 4. RENDER PREPARATION ---
+// --- 4. RENDER ---
 $config = array_merge($defaults, $pageConfig);
 
-if (isset($config['view']) && $config['view'] === 'errors/500') {
+if ($config['view'] === 'errors/500') {
     http_response_code(500);
-} elseif (isset($config['view']) && $config['view'] === 'errors/404') {
+} elseif ($config['view'] === 'errors/404') {
     http_response_code(404);
 }
 
-// Extract variables for the View and Header
-$pageTitle = $config['title'] ?? $siteName;
-$currentPageTheme = $config['theme'] ?? $defaultTheme;
-$showSidebar = $config['showSidebar'] ?? false;
-$currentSite = $config['site'] ?? $projectSlug;
-$ogTitle = $config['ogTitle'] ?? '';
-$ogDescription = $config['ogDescription'] ?? '';
-$ogImage = $config['ogImage'] ?? '';
-$ogUrl = $config['ogUrl'] ?? '';
-$navbarBrandLogo = $config['navbarBrandLogo'] ?? '';
-$navbarBrandText = $config['navbarBrandText'] ?? '';
-$navbarBrandLink = $config['navbarBrandLink'] ?? '';
-$navbarBrandAlt = $config['navbarBrandAlt'] ?? '';
-$navbarBrandClass = $config['navbarBrandClass'] ?? '';
+// Extract variables for View
+$pageTitle = $config['title'];
+$currentPageTheme = $config['theme'];
+$showSidebar = $config['showSidebar'];
+$currentSite = $config['site'];
+$ogTitle = $config['ogTitle'];
+$ogDescription = $config['ogDescription'];
+$ogImage = $config['ogImage'];
+$ogUrl = $config['ogUrl'];
+$navbarBrandLogo = $config['navbarBrandLogo'];
+$navbarBrandText = $config['navbarBrandText'];
+$navbarBrandLink = $config['navbarBrandLink'];
+$navbarBrandAlt = $config['navbarBrandAlt'];
+$navbarBrandClass = $config['navbarBrandClass'];
 
 // --- HEADER RESOLUTION ---
 if (isset($pageConfig['headerMenu'])) {
@@ -155,13 +170,12 @@ if (isset($pageConfig['headerMenu'])) {
 }
 $currentHeaderMenu = ROOT_PATH . '/includes/components/headers/' . $headerFile . '.php';
 
-// --- SIDEBAR RESOLUTION ---
-$currentSidebar = ROOT_PATH . '/includes/components/sidebars/' . ($config['sidebar'] ?? 'sidebar-default') . '.php';
+// Sidebar Resolution
+$currentSidebar = ROOT_PATH . '/includes/components/sidebars/' . $config['sidebar'] . '.php';
 
-// --- OUTPUT ---
 require_once ROOT_PATH . '/includes/header.php';
 
-// Wrapper for the SPA or standard layout
+// ADD THE ID HERE: id="elara-layout-wrapper"
 echo '<div id="elara-layout-wrapper" class="container-fluid flex-grow-1 d-flex p-0">';
 echo '  <div class="row flex-grow-1 m-0 w-100">';
 
@@ -174,8 +188,7 @@ if ($showSidebar && file_exists($currentSidebar)) {
     echo '    <main id="main-content" class="col-12 p-0" tabindex="-1" style="outline:none;">'; 
 }
 
-// Require the actual view content
-if (isset($config['view']) && file_exists(ROOT_PATH . '/' . $config['view'] . '.php')) {
+if (file_exists(ROOT_PATH . '/' . $config['view'] . '.php')) {
     require_once ROOT_PATH . '/' . $config['view'] . '.php';
 } else {
     http_response_code(404);
