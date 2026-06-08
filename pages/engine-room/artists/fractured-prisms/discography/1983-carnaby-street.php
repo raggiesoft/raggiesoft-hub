@@ -26,15 +26,22 @@ $album_path_web = '/engine-room-records/artists/fractured-prisms/1983-carnaby-st
             <p class="lead">
                 The masterpiece that defined an era. Blending atmospheric progressive rock with sharp, melodic pop sensibilities, this 1983 release cemented Fractured Prisms as architects of the modern rock landscape.
             </p>
-            <p class="text-muted">
-                Following the devastating loss of their four bandmates in the 1981 Shap Fell disaster, surviving siblings Claire and Rhys fled the UK for the quiet isolation of Williamsport, Maryland. Inside their father's vacant childhood home, they built a "fragile fortress" of synthesisers, sequencers, and drum machines. The result is an electronic séance—a mechanical resurrection of their family's sound that balances soaring, ethereal pop with the crushing weight of profound grief.
+            <p class="text-muted mb-3">
+                Following the 1981 Shap Fell disaster that claimed the lives of four family members, Rhys and Claire Manning retreated to a heavily modified, soundproofed ranch house in Williamsport, Maryland. Refusing to hire session musicians, the two siblings sequenced sprawling progressive rock arrangements entirely on analog synthesizers and early drum machines to fill the silence left by their orchestra.
+            </p>
+            <p class="text-muted border-start border-prism ps-3 py-1" style="background: rgba(177, 156, 217, 0.05);">
+                <strong class="text-primary" style="font-family: var(--font-gothic); letter-spacing: 1px;">A TRIBUTE TO THE MISSING FOUR:</strong><br>
+                Originally intended to be a self-titled record, the siblings renamed it <em>Carnaby Street</em> as a heartbreaking homage. It commemorates the final, perfect day the six family members spent together shopping for records in Soho, just twenty-four hours before the train derailment shattered their world.
             </p>
         </div>
     </div>
 
     <hr class="border-prism opacity-50 mb-5">
 
-    <?php include ROOT_PATH . '/includes/components/_tracklist-downloader.php'; ?>
+    <?php 
+    // This will grab the exact track list using the JSON reader
+    include ROOT_PATH . '/includes/components/_tracklist-downloader.php'; 
+    ?>
 
     <h3 class="h5 fw-bold text-uppercase text-muted mt-5 mb-4 border-bottom border-prism pb-2" style="font-family: var(--font-tech);">
         <i class="fa-duotone fa-box-archive me-2 pulse-icon"></i>Studio Archives
@@ -46,11 +53,11 @@ $album_path_web = '/engine-room-records/artists/fractured-prisms/1983-carnaby-st
             <div class="card h-100 lore-card rounded-0">
                 <div class="card-body">
                     <div class="d-flex mb-3">
-                        <i class="fa-duotone fa-chart-network fs-3 text-primary"></i>
-                        <h5 class="card-title h6 fw-bold text-uppercase ms-3 mb-0 align-self-center" style="font-family: var(--font-tech);">The Chart Phenomenon</h5>
+                        <i class="fa-duotone fa-file-invoice-dollar fs-3 text-primary"></i>
+                        <h5 class="card-title h6 fw-bold text-uppercase ms-3 mb-0 align-self-center" style="font-family: var(--font-tech);">The Cost of Isolation</h5>
                     </div>
-                    <p class="card-text small">
-                        When the grief finally crystallised into this record, the world was completely unprepared for its emotional weight. The opening track, "The Hollow Square," became an absolute cultural phenomenon. It sat immovable at #1 on both the US and UK charts for 14 straight weeks, famously blocking pop titans from the top spot and inadvertently triggering a massive, unexpected IRS tax bill for the isolated, grieving siblings.
+                    <p class="card-text small mb-0">
+                        Because <em>Carnaby Street</em> was technically produced, mixed, and mastered across a hybrid corporate structure (Rhys's logistics company in Delaware and the physical studio in Maryland), the album's massive commercial success inadvertently created a financial disaster. The complex, multi-state royalty distribution bypassed standard band accounting, accidentally triggering a massive, unexpected IRS tax bill for the isolated, grieving siblings.
                     </p>
                 </div>
             </div>
@@ -69,8 +76,8 @@ $album_path_web = '/engine-room-records/artists/fractured-prisms/1983-carnaby-st
 
         <div class="col-md-3 d-flex justify-content-center align-items-center">
             <div class="polaroid-prism">
-                <img src="https://assets.raggiesoft.com/engine-room-records/artists/fractured-prisms/carnaby-street/archive-1883.jpg" alt="Claire and Rhys with the salvaged flute and cables">
-                <div class="polaroid-caption text-center">
+                <img src="https://assets.raggiesoft.com/engine-room-records/artists/fractured-prisms/1983-carnaby-street/archive-1883.jpg" alt="Claire and Rhys with the salvaged flute and cables" style="max-width: 100%; height: auto;">
+                <div class="polaroid-caption text-center mt-2" style="font-family: 'Shadows Into Light', cursive; font-size: 0.9rem; color: #333;">
                     Williamsport, MD (1983)
                 </div>
             </div>
