@@ -76,7 +76,7 @@ $album_path_web = '/engine-room-records/artists/fractured-prisms/1983-carnaby-st
 
         <div class="col-md-3 d-flex justify-content-center align-items-center">
             <div class="polaroid-prism">
-                <img src="https://assets.raggiesoft.com/engine-room-records/artists/fractured-prisms/images/1983-carnaby-street/claire-rhys-carnaby-street-session-overwhelm.jpg" 
+                <img src="https://assets.raggiesoft.com/fractured-prisms/images/1983-carnaby-street/claire-rhys-carnaby-street-session-overwhelm.jpg" 
                      alt="A candid 1983 Polaroid of Claire and Rhys Manning during the Carnaby Street sessions in Maryland. Claire sits amidst a tangle of synthesizers, protectively clutching Gwen's wooden flute and looking visibly overwhelmed, on the verge of a breakdown. Rhys stands nearby, both siblings struck by the crushing, inescapable memory of the Shap Fell disaster." 
                      style="max-width: 100%; height: auto;">
                 <div class="polaroid-caption text-center mt-2" style="font-family: 'Shadows Into Light', cursive; font-size: 0.9rem; color: #333; line-height: 1.2;">
