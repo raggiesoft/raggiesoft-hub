@@ -1,7 +1,7 @@
 <?php
 // pages/raggiesoft-media/overview.php
 // The B2B Corporate Hub for RaggieSoft IP and Master Licensing
-// Updated: Frutiger Aero / Dark Aero UI Overhaul (WCAG 2.1 Compliant)
+// Updated: Frutiger Aero / Dark Aero Image Backgrounds
 
 $pageTitle = "RaggieSoft Media | IP & Asset Management";
 ?>
@@ -47,31 +47,51 @@ $pageTitle = "RaggieSoft Media | IP & Asset Management";
         z-index: 1;
     }
 
-    /* Animated "Water Reflection / Aurora" Effect */
+    /* The Frutiger Aero Image Base (Light Mode) */
     .aero-hero::before {
         content: '';
         position: absolute;
+        /* Oversized slightly to allow for the animation without clipping edges */
+        top: -5%; left: -5%; right: -5%; bottom: -5%; 
+        background-image: url('https://assets.raggiesoft.com/raggiesoft-media/images/hero/frutiger-aero.jpg');
+        background-size: cover;
+        background-position: center;
+        z-index: -2;
+        animation: aero-pan 40s linear infinite alternate;
+    }
+
+    /* Legibility Overlay: Frosted Glass Fade */
+    .aero-hero::after {
+        content: '';
+        position: absolute;
         top: 0; left: 0; right: 0; bottom: 0;
-        background: linear-gradient(120deg, rgba(255,255,255,0.4), rgba(0, 130, 230, 0.05), rgba(255,255,255,0.4));
-        background-size: 200% 200%;
-        animation: aero-wash 12s ease infinite;
+        background: linear-gradient(120deg, rgba(244, 249, 253, 0.85) 0%, rgba(255, 255, 255, 0.4) 100%);
         z-index: -1;
     }
 
-    /* Dark Aero Aurora */
+    /* The Dark Aero Image Base */
     [data-bs-theme="dark"] .aero-hero {
         box-shadow: 0 8px 32px rgba(0, 229, 255, 0.05);
     }
     [data-bs-theme="dark"] .aero-hero::before {
-        background: linear-gradient(120deg, rgba(7, 11, 20, 0.9), rgba(0, 229, 255, 0.08), rgba(7, 11, 20, 0.9));
-        background-size: 200% 200%;
+        background-image: url('https://assets.raggiesoft.com/raggiesoft-media/images/hero/dark-aero.jpg');
+    }
+    [data-bs-theme="dark"] .aero-hero::after {
+        background: linear-gradient(120deg, rgba(7, 11, 20, 0.9) 0%, rgba(7, 11, 20, 0.6) 100%);
+    }
+
+    /* Slow Cinematic Pan */
+    @keyframes aero-pan {
+        0% { transform: scale(1) translate(0, 0); }
+        100% { transform: scale(1.05) translate(-1.5%, -1.5%); }
     }
 
     /* WCAG: Respect Prefers Reduced Motion */
     @media (prefers-reduced-motion: reduce) {
         .aero-hero::before {
             animation: none;
-            background-position: center; /* Locks the gradient to a pleasant static state */
+            /* Reset to standard sizing if motion is disabled */
+            top: 0; left: 0; right: 0; bottom: 0; 
         }
     }
 
@@ -97,7 +117,7 @@ $pageTitle = "RaggieSoft Media | IP & Asset Management";
     a:focus-visible, button:focus-visible {
         outline: 3px solid var(--bs-primary) !important;
         outline-offset: 4px;
-        border-radius: 4px; /* Prevents harsh square outlines on curved aero buttons */
+        border-radius: 4px;
     }
 </style>
 
@@ -106,7 +126,7 @@ $pageTitle = "RaggieSoft Media | IP & Asset Management";
         <h1 class="display-4 fw-bold text-uppercase mb-3 brand-font text-glow-primary" style="letter-spacing: 3px;">
             RaggieSoft Media
         </h1>
-        <p class="lead tech-font mb-4 mx-auto" style="max-width: 800px; text-shadow: 0 1px 2px rgba(255,255,255,0.8);">
+        <p class="lead tech-font mb-4 mx-auto fw-medium" style="max-width: 800px; text-shadow: 0 1px 2px rgba(255,255,255,0.9);">
             An independent multimedia asset management and distribution house based in Norfolk, Virginia. Specializing in automated audio engineering, custom web architecture, and open-source narrative lore.
         </p>
         <span class="badge aero-badge rounded-pill text-uppercase px-4 py-2 fs-6">
@@ -116,8 +136,9 @@ $pageTitle = "RaggieSoft Media | IP & Asset Management";
 </div>
 
 <style>
+    /* Dark Mode specific text shadow adjustments for the hero */
     [data-bs-theme="dark"] .aero-hero .lead {
-        text-shadow: 0 1px 3px rgba(0,0,0,0.8);
+        text-shadow: 0 1px 4px rgba(0,0,0,0.9), 0 0 10px rgba(0,0,0,0.5);
     }
 </style>
 
@@ -132,7 +153,7 @@ $pageTitle = "RaggieSoft Media | IP & Asset Management";
     <div class="row g-4 mb-5">
         
         <div class="col-lg-4">
-            <div class="card bg-hud-blue h-100 p-4 border-0 d-flex flex-column">
+            <div class="card bg-hud-blue h-100 p-4 border-0 d-flex flex-column hover-lift">
                 <i class="fa-duotone fa-waveform-lines fa-2x text-primary mb-3" aria-hidden="true"></i>
                 <h3 class="h5 fw-bold text-uppercase mb-2">Audio & Music Production</h3>
                 <p class="data-label mb-3">Engine Room Records</p>
@@ -148,7 +169,7 @@ $pageTitle = "RaggieSoft Media | IP & Asset Management";
         </div>
 
         <div class="col-lg-4">
-            <div class="card bg-hud-base h-100 p-4 border-0 d-flex flex-column" style="border-left: 4px solid var(--bs-info);">
+            <div class="card bg-hud-base h-100 p-4 border-0 d-flex flex-column hover-lift" style="border-left: 4px solid var(--bs-info);">
                 <i class="fa-duotone fa-code-merge fa-2x text-info mb-3" aria-hidden="true"></i>
                 <h3 class="h5 fw-bold text-uppercase mb-2">Software Architecture</h3>
                 <p class="data-label mb-3">Elara CMS & Infrastructure</p>
@@ -164,7 +185,7 @@ $pageTitle = "RaggieSoft Media | IP & Asset Management";
         </div>
 
         <div class="col-lg-4">
-            <div class="card bg-hud-warning h-100 p-4 border-0 d-flex flex-column">
+            <div class="card bg-hud-warning h-100 p-4 border-0 d-flex flex-column hover-lift">
                 <i class="fa-duotone fa-books fa-2x text-warning mb-3" aria-hidden="true"></i>
                 <h3 class="h5 fw-bold text-uppercase mb-2">Narrative & Literary</h3>
                 <p class="data-label mb-3">Ocean View Archives</p>
