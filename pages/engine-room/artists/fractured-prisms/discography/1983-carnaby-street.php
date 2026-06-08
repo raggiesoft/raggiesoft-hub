@@ -31,7 +31,7 @@ $album_path_web = '/engine-room-records/artists/fractured-prisms/1983-carnaby-st
             </p>
             <p class="text-muted border-start border-prism ps-3 py-1" style="background: rgba(177, 156, 217, 0.05);">
                 <strong class="text-primary" style="font-family: var(--font-gothic); letter-spacing: 1px;">A TRIBUTE TO THE MISSING FOUR:</strong><br>
-                Originally intended to be a self-titled record, the siblings renamed it <em>Carnaby Street</em> as a heartbreaking homage. It commemorates the final, perfect day the six family members spent together shopping for records in Soho, just twenty-four hours before the train derailment shattered their world.
+                Originally intended to be a self-titled record, the siblings renamed it <em>Carnaby Street</em> as a heartbreaking homage. It commemorates the final, perfect day the six family members spent together shopping for records in Soho, just twenty-four hours before a massive pile-up on the desolate, fog-choked Shap Fell stretch of the M6 motorway instantly claimed the lives of the four eldest siblings.
             </p>
         </div>
     </div>
