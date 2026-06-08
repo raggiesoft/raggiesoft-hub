@@ -12,25 +12,26 @@ if (strlen($request_uri) > 1) {
 }
 
 // --- 1. WAKE UP EMILY ---
-$emilyFile = ROOT_PATH . '/data/emily.json';
+$settingsFile = ROOT_PATH . '/data/settings.json';
+$emilyFile    = ROOT_PATH . '/data/emily.json';
 
-if (!file_exists($emilyFile)) {
-    die('Critical Error: Emily (emily.json) is missing. Run Jenna to compile the routing engine.');
+if (!file_exists($settingsFile) || !file_exists($emilyFile)) {
+    die('Critical Error: settings.json or emily.json is missing. Run Jenna to compile the routing engine.');
 }
 
-// Read and decode the single minified payload
-$emily = json_decode(file_get_contents($emilyFile), true);
+// Read and decode the payloads
+$settings = json_decode(file_get_contents($settingsFile), true);
+$emily    = json_decode(file_get_contents($emilyFile), true);
 
 if (json_last_error() !== JSON_ERROR_NONE) {
     die('Critical Error: Emily suffered a catastrophic failure (Invalid JSON).');
 }
 
-// Unpack Emily's Namespaces
-$settings = $emily['settings'] ?? [];
-$routes   = $emily['routes'] ?? [];
+// Unpack Emily's Namespaces (Supports if emily.json has a routes wrapper)
+$routes = $emily['routes'] ?? $emily;
 
 // Extract Core Globals
-$siteName = $settings['siteName'] ?? 'RaggieSoft'; 
+$siteName = $settings['siteName'] ?? 'RaggieSoft';
 $projectSlug = $settings['projectSlug'] ?? 'raggiesoft'; 
 $cdnBaseUrl = $settings['cdnBaseUrl'] ?? '';
 $defaultTheme = $settings['defaultTheme'] ?? 'light'; 
