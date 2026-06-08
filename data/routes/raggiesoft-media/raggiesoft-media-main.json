@@ -1,8 +1,8 @@
 {
   "common": {
-    "site": "corporate",
+    "site": "raggiesoft-media",
     "showSidebar": true,
-    "brandFont": ["Roboto", "sans-serif"],
+    "brandFont": ["Ubuntu", "system-ui", "sans-serif"],
     "headerMenu": "raggiesoft-media/header-corporate",
     "footer": "raggiesoft-media/footer-corporate",
     "siteName": "RaggieSoft Media",

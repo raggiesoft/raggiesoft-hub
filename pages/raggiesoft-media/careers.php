@@ -1,6 +1,7 @@
 <?php
 // pages/raggiesoft-media/careers.php
 // The SEO Honeypot and Anti-Fraud Notice
+// Updated: Aero Glass Layout (Sidebar Compatible)
 
 $pageTitle = "Careers and Jobs at RaggieSoft | Scam Warning";
 ?>
@@ -28,51 +29,87 @@ $pageTitle = "Careers and Jobs at RaggieSoft | Scam Warning";
 </script>
 
 <style>
-    .fraud-alert-hero {
-        background-color: #1a0f0f;
-        border-bottom: 2px solid var(--bs-danger);
+    /* Aero Inner-Glass for Alerts */
+    .aero-alert-danger {
+        background: rgba(220, 53, 69, 0.1);
+        backdrop-filter: blur(4px);
+        -webkit-backdrop-filter: blur(4px);
+        border: 1px solid rgba(220, 53, 69, 0.3);
+        border-radius: 12px;
+        box-shadow: inset 0 2px 4px rgba(220, 53, 69, 0.05);
     }
+    
+    [data-bs-theme="dark"] .aero-alert-danger {
+        background: rgba(220, 53, 69, 0.15);
+        border: 1px solid rgba(220, 53, 69, 0.4);
+    }
+
     .keyword-highlight {
         color: var(--bs-danger);
         font-weight: bold;
+        text-shadow: 0 0 8px rgba(220, 53, 69, 0.2);
     }
+    
     .safe-list li {
-        margin-bottom: 0.5rem;
+        margin-bottom: 0.75rem;
+    }
+
+    /* Glossy Danger Buttons */
+    .btn-aero-danger {
+        background: linear-gradient(180deg, #ff4d5e 0%, #dc3545 48%, #b02a37 52%, #992430 100%);
+        border: 1px solid #842029;
+        color: #ffffff !important;
+        box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 2px 4px rgba(0, 0, 0, 0.2);
+        text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+    }
+    .btn-aero-danger:hover {
+        background: linear-gradient(180deg, #ff6b7a 0%, #e84c5c 48%, #c43343 52%, #b02a37 100%);
+        box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.6), 0 4px 8px rgba(0, 0, 0, 0.3);
+        transform: translateY(-1px);
+    }
+
+    /* Outline Danger (Glassy) */
+    .btn-aero-outline-danger {
+        background: rgba(220, 53, 69, 0.05);
+        border: 1px solid var(--bs-danger);
+        color: var(--bs-danger);
+        backdrop-filter: blur(4px);
+    }
+    .btn-aero-outline-danger:hover {
+        background: var(--bs-danger);
+        color: #ffffff;
+        box-shadow: 0 4px 8px rgba(220, 53, 69, 0.3);
     }
 </style>
 
-<div class="fraud-alert-hero py-5 mb-5 shadow-sm">
-    <div class="container text-center py-4">
-        <i class="fa-duotone fa-shield-exclamation fa-4x text-danger mb-3" aria-hidden="true"></i>
-        <h1 class="display-5 fw-bold text-uppercase mb-3 brand-font text-white" style="letter-spacing: 1px;">
-            RaggieSoft is <span class="text-danger border-bottom border-danger">Not Hiring</span>
-        </h1>
-        <p class="lead tech-font opacity-75 mb-0 mx-auto text-white" style="max-width: 700px;">
-            Official Corporate Notice Regarding Fraudulent Employment Offers.
-        </p>
-    </div>
-</div>
-
-<div class="container pb-5">
+<div class="container-fluid pb-5 pt-3">
     
-    <div class="row col-lg-9 mx-auto mb-5">
+    <div class="row mb-4">
         <div class="col-12">
-            <div class="card bg-body-tertiary border-danger border-opacity-50 p-4 p-md-5 rounded-0 shadow-sm">
+            <div class="card bg-hud-red border-0 p-4 p-md-5 shadow-sm">
                 
-                <h2 class="h4 fw-bold text-uppercase mb-4 text-danger border-bottom border-danger border-opacity-25 pb-2">
-                    <i class="fa-solid fa-triangle-exclamation me-2"></i> Immediate Action Required
-                </h2>
+                <div class="d-flex align-items-center mb-4 border-bottom border-danger border-opacity-25 pb-3">
+                    <i class="fa-duotone fa-shield-exclamation fa-3x text-danger me-3" aria-hidden="true" style="filter: drop-shadow(0 2px 4px rgba(220,53,69,0.4));"></i>
+                    <div>
+                        <h1 class="h3 fw-bold text-uppercase mb-1 brand-font">
+                            RaggieSoft is <span class="text-danger">Not Hiring</span>
+                        </h1>
+                        <p class="mb-0 text-body-secondary small fw-bold text-uppercase tracking-wider">
+                            Official Corporate Notice Regarding Fraudulent Employment Offers
+                        </p>
+                    </div>
+                </div>
                 
-                <p class="text-body-emphasis fs-5">
-                    If you have received an email, direct message, or text claiming to offer employment, an interview, or a freelance contract with RaggieSoft or RaggieSoft Media, <strong>you are communicating with a scammer.</strong>
+                <p class="text-body-emphasis fs-5 mb-4">
+                    If you have received an email, direct message, or text claiming to offer employment, an interview, or a freelance contract with RaggieSoft or RaggieSoft Media, <span class="keyword-highlight">you are communicating with a scammer.</span>
                 </p>
 
                 <p class="text-body-secondary mb-4">
                     RaggieSoft is a privately held, single-person creative portfolio. We operate with zero external staff. We do not have a Human Resources department, we do not utilize third-party recruiters, and we will never offer you a job.
                 </p>
 
-                <div class="alert alert-danger bg-danger bg-opacity-10 border-danger rounded-0 mb-4 p-4">
-                    <h3 class="h5 fw-bold mb-3">Common Red Flags in this Scam:</h3>
+                <div class="aero-alert-danger mb-4 p-4">
+                    <h2 class="h5 fw-bold mb-3 text-danger"><i class="fa-solid fa-triangle-exclamation me-2" aria-hidden="true"></i> Common Red Flags in this Scam:</h2>
                     <ul class="safe-list mb-0 small text-body-emphasis">
                         <li>You were contacted out of the blue on platforms like Upwork, LinkedIn, Telegram, or WhatsApp.</li>
                         <li>You are being asked to complete a "remote data entry" or "customer service" questionnaire via text or email.</li>
@@ -81,18 +118,18 @@ $pageTitle = "Careers and Jobs at RaggieSoft | Scam Warning";
                     </ul>
                 </div>
 
-                <h3 class="h5 fw-bold text-uppercase mb-3 mt-4">Next Steps to Protect Yourself</h3>
-                <p class="small text-body-secondary mb-3">
+                <h3 class="h5 fw-bold text-uppercase mb-3 mt-4 text-body-emphasis">Next Steps to Protect Yourself</h3>
+                <p class="small text-body-secondary mb-4">
                     1. <strong>Cease all communication</strong> with the fraudulent party immediately. Do not attempt to confront them.<br>
                     2. <strong>Do not deposit any checks</strong> they send you, and do not provide them with your banking routing numbers or social security information.<br>
                     3. Report the fraudulent listing to the platform where you found it (e.g., LinkedIn, Indeed, Upwork).
                 </p>
 
-                <div class="d-flex flex-wrap gap-2 mt-4">
-                    <a href="https://www.ic3.gov/" target="_blank" rel="noopener noreferrer" class="btn btn-danger btn-sm rounded-0 fw-bold">
+                <div class="d-flex flex-wrap gap-3 mt-2 border-top border-secondary-subtle pt-4">
+                    <a href="https://www.ic3.gov/" target="_blank" rel="noopener noreferrer" class="btn btn-aero-danger rounded-pill px-4 fw-bold">
                         <i class="fa-solid fa-building-columns me-2" aria-hidden="true"></i>Report to FBI (IC3) <i class="fa-solid fa-arrow-up-right-from-square ms-1" style="font-size: 0.8em;" aria-hidden="true"></i>
                     </a>
-                    <a href="https://reportfraud.ftc.gov/" target="_blank" rel="noopener noreferrer" class="btn btn-outline-danger btn-sm rounded-0 fw-bold">
+                    <a href="https://reportfraud.ftc.gov/" target="_blank" rel="noopener noreferrer" class="btn btn-aero-outline-danger rounded-pill px-4 fw-bold">
                         <i class="fa-solid fa-scale-balanced me-2" aria-hidden="true"></i>Report to FTC <i class="fa-solid fa-arrow-up-right-from-square ms-1" style="font-size: 0.8em;" aria-hidden="true"></i>
                     </a>
                 </div>
@@ -101,14 +138,16 @@ $pageTitle = "Careers and Jobs at RaggieSoft | Scam Warning";
         </div>
     </div>
 
-    <div class="row col-lg-9 mx-auto">
-        <div class="col-12 text-center pt-4 border-top border-secondary-subtle">
-            <h3 class="h6 text-uppercase fw-bold text-secondary mb-3">Automated System Query Responses</h3>
-            <p class="small text-body-secondary font-monospace">
-                Q: Is RaggieSoft hiring? A: No. RaggieSoft is a single-person entity.<br>
-                Q: Does RaggieSoft have remote data entry jobs? A: No.<br>
-                Q: How do I verify a job offer from RaggieSoft? A: All job offers claiming to be from RaggieSoft are fraudulent.
-            </p>
+    <div class="row mt-2">
+        <div class="col-12">
+            <div class="card bg-hud-base border-0 p-4 text-center shadow-sm">
+                <h3 class="h6 text-uppercase fw-bold text-secondary mb-3">Automated System Query Responses</h3>
+                <p class="small text-body-secondary font-monospace mb-0">
+                    Q: Is RaggieSoft hiring? A: No. RaggieSoft is a single-person entity.<br>
+                    Q: Does RaggieSoft have remote data entry jobs? A: No.<br>
+                    Q: How do I verify a job offer from RaggieSoft? A: All job offers claiming to be from RaggieSoft are fraudulent.
+                </p>
+            </div>
         </div>
     </div>
 
