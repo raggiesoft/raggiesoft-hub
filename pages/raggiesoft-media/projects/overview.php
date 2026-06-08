@@ -1,45 +1,143 @@
 <?php
 // pages/raggiesoft-media/projects/overview.php
 // The Open Source Division Hub
+// Updated: Frutiger Aero / Dark Aero Full-Width Glass Architecture
 
 $pageTitle = "Open Source Projects | RaggieSoft Media";
 ?>
 
-<div class="py-5 mb-4 border-bottom border-secondary-subtle bg-body-tertiary">
-    <div class="container text-center">
-        <i class="fa-brands fa-osi fa-4x text-info mb-3" aria-hidden="true"></i>
-        <h1 class="display-4 fw-bold text-uppercase mb-2 brand-font" style="letter-spacing: 2px;">Open Source</h1>
-        <p class="lead tech-font text-body-secondary mb-0 mx-auto" style="max-width: 700px;">
+<style>
+    /* --- AERO HERO SECTION (Reused & Synced with Main Hub) --- */
+    .aero-hero {
+        position: relative;
+        overflow: hidden;
+        border-bottom: 1px solid var(--raggie-glass-border);
+        box-shadow: 0 8px 32px rgba(0, 195, 255, 0.08); /* Tuned to Info Cyan */
+        color: var(--bs-body-color);
+        z-index: 1;
+    }
+
+    .aero-hero::before {
+        content: '';
+        position: absolute;
+        top: 0; left: 0; right: 0; bottom: 0;
+        background: linear-gradient(120deg, rgba(255,255,255,0.4), rgba(0, 195, 255, 0.08), rgba(255,255,255,0.4));
+        background-size: 200% 200%;
+        animation: aero-wash 12s ease infinite;
+        z-index: -1;
+    }
+
+    [data-bs-theme="dark"] .aero-hero {
+        box-shadow: 0 8px 32px rgba(0, 229, 255, 0.05);
+    }
+    [data-bs-theme="dark"] .aero-hero::before {
+        background: linear-gradient(120deg, rgba(7, 11, 20, 0.9), rgba(0, 229, 255, 0.08), rgba(7, 11, 20, 0.9));
+        background-size: 200% 200%;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+        .aero-hero::before {
+            animation: none;
+            background-position: center;
+        }
+    }
+
+    /* --- WIDE PROJECT GLASS CARD --- */
+    .aero-project-card {
+        background: var(--raggie-glass-bg);
+        backdrop-filter: blur(16px) saturate(120%);
+        -webkit-backdrop-filter: blur(16px) saturate(120%);
+        border: 1px solid var(--raggie-glass-border);
+        box-shadow: var(--raggie-glass-shadow);
+        border-radius: 16px;
+        overflow: hidden;
+        transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1), box-shadow 0.3s ease;
+    }
+    .aero-project-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 15px 35px rgba(0, 195, 255, 0.15), inset 0 1px 0 var(--raggie-gloss-highlight);
+    }
+    [data-bs-theme="dark"] .aero-project-card:hover {
+        box-shadow: 0 15px 35px rgba(0, 229, 255, 0.15), inset 0 1px 0 var(--raggie-gloss-highlight);
+    }
+
+    /* Inner Glass Icon Pane (Replaces flat bg-dark) */
+    .aero-project-icon-pane {
+        background: linear-gradient(135deg, rgba(0, 195, 255, 0.15) 0%, rgba(0, 195, 255, 0.02) 100%);
+        border-right: 1px solid var(--raggie-glass-border);
+    }
+    [data-bs-theme="dark"] .aero-project-icon-pane {
+        background: linear-gradient(135deg, rgba(0, 229, 255, 0.15) 0%, rgba(0, 229, 255, 0.02) 100%);
+    }
+
+    /* Custom GitHub Glass Button */
+    .btn-glass-github {
+        background: rgba(108, 117, 125, 0.1);
+        border: 1px solid rgba(108, 117, 125, 0.3);
+        color: var(--bs-body-color) !important;
+        backdrop-filter: blur(4px);
+        -webkit-backdrop-filter: blur(4px);
+    }
+    .btn-glass-github:hover, .btn-glass-github:focus {
+        background: rgba(108, 117, 125, 0.2);
+        box-shadow: 0 0 12px rgba(255, 255, 255, 0.1), inset 0 1px 0 rgba(255,255,255,0.2);
+        transform: translateY(-1px);
+    }
+
+    /* WCAG Focus */
+    a:focus-visible, button:focus-visible {
+        outline: 3px solid var(--bs-info) !important;
+        outline-offset: 4px;
+        border-radius: 50rem;
+    }
+</style>
+
+<div class="aero-hero py-5 mb-5">
+    <div class="container text-center py-4">
+        <i class="fa-brands fa-osi fa-4x text-info mb-3" aria-hidden="true" style="filter: drop-shadow(0 2px 8px rgba(0, 195, 255, 0.5));"></i>
+        <h1 class="display-4 fw-bold text-uppercase mb-2 brand-font" style="letter-spacing: 2px;">
+            <span class="text-glow-primary">Open Source</span>
+        </h1>
+        <p class="lead tech-font mb-0 mx-auto" style="max-width: 700px; text-shadow: 0 1px 2px rgba(255,255,255,0.5);">
             Infrastructure, architecture, and deployment tools built for the RaggieSoft network, released under the MIT License.
         </p>
     </div>
 </div>
 
-<div class="container pb-5">
+<div class="container pb-5 pt-2">
     
     <div class="row g-4 justify-content-center mb-5">
         
-        <div class="col-lg-10">
-            <div class="card border-info border-opacity-50 shadow-sm rounded-0">
-                <div class="row g-0">
-                    <div class="col-md-4 bg-dark text-white d-flex flex-column justify-content-center align-items-center p-5 border-end border-info border-opacity-50">
-                        <i class="fa-duotone fa-rocket-launch fa-4x text-info mb-3" aria-hidden="true"></i>
-                        <h2 class="h5 fw-bold text-uppercase text-center brand-font mb-0">The Stardust Engine</h2>
+        <div class="col-lg-11 col-xl-10">
+            <div class="aero-project-card">
+                <div class="row g-0 h-100">
+                    
+                    <div class="col-md-4 aero-project-icon-pane d-flex flex-column justify-content-center align-items-center p-5 text-center">
+                        <i class="fa-duotone fa-rocket-launch fa-4x text-info mb-3" aria-hidden="true" style="filter: drop-shadow(0 2px 4px rgba(0,195,255,0.4));"></i>
+                        <h2 class="h5 fw-bold text-uppercase brand-font mb-0 text-glow-primary">The Stardust Engine</h2>
                     </div>
+                    
                     <div class="col-md-8 p-4 p-md-5 d-flex flex-column">
-                        <div class="d-flex justify-content-between align-items-start mb-2">
-                            <h3 class="h4 fw-bold mb-1">Stardust Engine CMS & Elara SPA</h3>
-                            <span class="badge bg-success font-monospace text-uppercase">v1.0 Stable</span>
+                        <div class="d-flex justify-content-between align-items-start mb-3 flex-wrap gap-2">
+                            <h3 class="h4 fw-bold mb-0 text-body-emphasis">Stardust Engine CMS & Elara SPA</h3>
+                            <span class="badge bg-hud-green border border-success rounded-pill font-monospace text-uppercase shadow-sm py-2 px-3 text-success fw-bold">
+                                v1.0 Stable
+                            </span>
                         </div>
-                        <p class="text-body-secondary font-monospace small mb-3">PHP 8.4 | Vanilla JS | Flat-File JSON</p>
-                        <p class="text-body-emphasis mb-4">
+                        
+                        <div class="d-inline-block px-3 py-2 rounded-3 mb-3" style="background: rgba(0,0,0,0.03); border: 1px solid var(--raggie-glass-border);">
+                            <p class="text-body-secondary font-monospace small mb-0">PHP 8.4 <span class="mx-2 opacity-50">|</span> Vanilla JS <span class="mx-2 opacity-50">|</span> Flat-File JSON</p>
+                        </div>
+                        
+                        <p class="text-body-emphasis mb-4 flex-grow-1">
                             A high-performance, zero-database web framework. Built natively for edge-cache synergy (Cloudflare/Nginx), featuring a lightning-fast Vanilla JS soft-routing engine (Elara) that mimics the speed of React without the heavy dependency overhead.
                         </p>
-                        <div class="mt-auto">
-                            <a href="/raggiesoft-media/projects/stardust-engine-cms" class="btn btn-info fw-bold text-uppercase rounded-0 shadow-sm px-4">
+                        
+                        <div class="mt-auto d-flex flex-wrap gap-2">
+                            <a href="/raggiesoft-media/projects/stardust-engine-cms" class="btn btn-primary rounded-pill fw-bold text-uppercase px-4 shadow transition-all" style="background: linear-gradient(180deg, #00C3FF 0%, #009ce6 48%, #0087cc 52%, #0073b3 100%); border-color: #006099;">
                                 View Documentation <i class="fa-solid fa-arrow-right ms-2" aria-hidden="true"></i>
                             </a>
-                            <a href="https://github.com/raggiesoft" target="_blank" rel="noopener noreferrer" class="btn btn-outline-secondary fw-bold rounded-0 ms-2 px-3">
+                            <a href="https://github.com/raggiesoft" target="_blank" rel="noopener noreferrer" class="btn btn-glass-github rounded-pill fw-bold px-4 transition-all">
                                 <i class="fa-brands fa-github me-2" aria-hidden="true"></i> GitHub
                             </a>
                         </div>
@@ -51,11 +149,15 @@ $pageTitle = "Open Source Projects | RaggieSoft Media";
     </div>
     
     <div class="row col-lg-10 mx-auto">
-        <div class="col-12 text-center pt-4 border-top border-secondary-subtle">
-            <h3 class="h6 text-uppercase fw-bold text-secondary mb-2">Licensing Transparency</h3>
-            <p class="small text-body-secondary font-monospace mb-0">
-                All source code hosted in the RaggieSoft Media public repositories is distributed under the <a href="/raggiesoft-media/licensing" class="text-info text-decoration-none border-bottom border-info">MIT License</a>. Narrative IP and audio Masters are strictly excluded.
-            </p>
+        <div class="col-12 text-center pt-4">
+            <div class="p-3 rounded-4" style="background: rgba(0,0,0,0.02); border: 1px solid var(--raggie-glass-border); box-shadow: inset 0 2px 4px rgba(0,0,0,0.02);">
+                <h3 class="h6 text-uppercase fw-bold text-secondary mb-2">
+                    <i class="fa-solid fa-scale-balanced me-2 text-info opacity-75" aria-hidden="true"></i>Licensing Transparency
+                </h3>
+                <p class="small text-body-secondary font-monospace mb-0">
+                    All source code hosted in the RaggieSoft Media public repositories is distributed under the <a href="/raggiesoft-media/licensing" class="text-info fw-bold text-decoration-none border-bottom border-info transition-all" style="text-shadow: 0 0 5px rgba(0, 195, 255, 0.3);">MIT License</a>. Narrative IP and audio Masters are strictly excluded.
+                </p>
+            </div>
         </div>
     </div>
 
