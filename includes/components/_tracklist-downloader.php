@@ -1,7 +1,7 @@
 <?php
 /**
  * COMPONENT: _tracklist-downloader.php
- * VERSION: 10.1 (Schema.org & Track Length Integration)
+ * VERSION: 10.2 (Schema.org Deep Metadata & Track Length Integration)
  *
  * LICENSE:
  * The architecture and code of this file are licensed under the MIT License.
@@ -60,6 +60,30 @@ $real_release_year = $real_release_date !== 'TBA' ? substr(trim($real_release_da
 $album_name = isset($album_data['name']) ? $album_data['name'] : 'Unknown Album';
 $archive_base_name = get_archive_name($album_name, $narrative_year);
 
+// --- METADATA TRANSLATION (SCHEMA.ORG INTEGRATION) ---
+$raw_release_type = isset($album_data['albumReleaseType']) ? basename($album_data['albumReleaseType']) : 'AlbumRelease';
+$raw_production_type = isset($album_data['albumProductionType']) ? basename($album_data['albumProductionType']) : 'StudioAlbum';
+$album_upc = !empty($album_data['gtin12']) ? $album_data['gtin12'] : (!empty($album_data['identifier']) ? $album_data['identifier'] : null);
+
+$release_map = [
+    'EPRelease' => 'EP',
+    'SingleRelease' => 'Single',
+    'BroadcastRelease' => 'Broadcast',
+    'AlbumRelease' => 'Full Length'
+];
+
+$production_map = [
+    'LiveAlbum' => 'Live Album',
+    'CompilationAlbum' => 'Compilation',
+    'SoundtrackAlbum' => 'Soundtrack',
+    'MixtapeAlbum' => 'Mixtape',
+    'RemixAlbum' => 'Remix Album',
+    'StudioAlbum' => 'Studio Album'
+];
+
+$friendly_release = isset($release_map[$raw_release_type]) ? $release_map[$raw_release_type] : 'Full Length';
+$friendly_production = isset($production_map[$raw_production_type]) ? $production_map[$raw_production_type] : 'Studio Album';
+
 // --- DSP STREAMING IDS (SINGLE SOURCE OF TRUTH) ---
 $stream_spotify_id = '';
 $stream_apple_id   = '';
@@ -104,12 +128,27 @@ $js_playlist = [];
 </script>
 <div class="card bg-body-tertiary border-secondary-subtle mb-5 shadow-sm">
     <div class="card-body p-3">
-        <div class="d-flex flex-wrap align-items-center justify-content-between border-bottom border-secondary-subtle pb-2 mb-2">
-            <div class="text-body fs-6">
-                <i class="fa-solid fa-timeline me-2 text-info"></i> <strong>Narrative Era:</strong> <span class="badge bg-info text-dark ms-1" style="font-size: 0.9em;"><?php echo htmlspecialchars($narrative_year); ?></span>
+        
+        <div class="row g-2 align-items-center border-bottom border-secondary-subtle pb-3 mb-3">
+            <div class="col-12 col-md-6">
+                <div class="text-body fs-6 mb-2">
+                    <i class="fa-solid fa-timeline me-2 text-info"></i> <strong>Narrative Era:</strong> <span class="badge bg-info text-dark ms-1" style="font-size: 0.9em;"><?php echo htmlspecialchars($narrative_year); ?></span>
+                </div>
+                <div class="text-body fs-6">
+                    <i class="fa-solid fa-record-vinyl me-2 text-warning"></i> <strong>Format:</strong> <span class="badge bg-dark text-warning ms-1" style="font-size: 0.9em; border: 1px solid var(--bs-warning);"><?php echo htmlspecialchars($friendly_production); ?></span>
+                </div>
             </div>
-            <div class="text-body fs-6 mt-2 mt-md-0">
-                <i class="fa-solid fa-calendar-check me-2 text-success"></i> <strong>DSP / Real-World Release:</strong> <span class="badge bg-success-subtle text-success-emphasis ms-1" style="font-size: 0.9em; border: 1px solid var(--bs-success-border-subtle);"><?php echo htmlspecialchars($real_release_date); ?></span>
+            
+            <div class="col-12 col-md-6 text-md-end">
+                <div class="text-body fs-6 mb-2">
+                    <i class="fa-solid fa-calendar-check me-2 text-success"></i> <strong>DSP Release:</strong> <span class="badge bg-success-subtle text-success-emphasis ms-1" style="font-size: 0.9em; border: 1px solid var(--bs-success-border-subtle);"><?php echo htmlspecialchars($real_release_date); ?></span>
+                </div>
+                <div class="text-body fs-6">
+                    <i class="fa-solid fa-music me-2 text-primary"></i> <strong>Length:</strong> <span class="badge bg-primary-subtle text-primary-emphasis ms-1 me-2" style="font-size: 0.9em; border: 1px solid var(--bs-primary-border-subtle);"><?php echo htmlspecialchars($friendly_release); ?></span>
+                    <?php if ($album_upc): ?>
+                        <span class="badge bg-secondary-subtle text-secondary-emphasis" style="font-size: 0.85em; border: 1px solid var(--bs-secondary-border-subtle);" title="Universal Product Code">UPC: <?php echo htmlspecialchars($album_upc); ?></span>
+                    <?php endif; ?>
+                </div>
             </div>
         </div>
         
@@ -124,7 +163,7 @@ $js_playlist = [];
         <div class="d-flex align-items-start mt-3">
             <i class="fa-solid fa-circle-info text-secondary mt-1 me-3 fs-5"></i>
             <p class="small text-body-secondary mb-0 lh-sm">
-                <strong>ARCHIVIST NOTE:</strong> <em>The Stardust Engine</em> is a narrative-driven musical universe. The <strong>Narrative Era</strong> denotes when the album was recorded by Ryan and Cassidy within the fictional history of the band. The <strong>DSP / Real-World Release</strong> reflects the legal copyright date when the audio files were officially pressed and distributed to global streaming platforms.
+                <strong>ARCHIVIST NOTE:</strong> <em>The Stardust Engine</em> is a narrative-driven musical universe. The <strong>Narrative Era</strong> denotes when the album was recorded by Ryan and Cassidy within the fictional history of the band. The <strong>DSP Release</strong> reflects the legal copyright date when the audio files were officially pressed and distributed to global streaming platforms.
             </p>
         </div>
     </div>

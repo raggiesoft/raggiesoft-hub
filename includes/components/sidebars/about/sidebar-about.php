@@ -51,7 +51,7 @@ $currentUri = $_SERVER['REQUEST_URI'];
 </h6>
 
 <nav class="nav flex-column nav-pills small gap-1">
-    <a href="/about/license" class="nav-link d-flex align-items-center <?php echo (str_contains($currentUri, '/license')) ? 'active' : 'link-body-emphasis'; ?>">
+    <a href="/raggiesoft-media/licensing" class="nav-link d-flex align-items-center <?php echo (str_contains($currentUri, '/license')) ? 'active' : 'link-body-emphasis'; ?>">
         <i class="fa-duotone fa-scale-balanced me-2 opacity-75"></i> Licenses (MIT/CC)
     </a>
     <a href="/about/privacy" class="nav-link d-flex align-items-center <?php echo (str_contains($currentUri, '/privacy')) ? 'active' : 'link-body-emphasis'; ?>">

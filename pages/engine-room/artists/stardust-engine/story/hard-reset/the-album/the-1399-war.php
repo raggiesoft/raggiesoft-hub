@@ -59,6 +59,13 @@ $pageTitle = "The $13.99 War - The Stardust Engine";
                 </div>
             </div>
 
+            <div class="alert alert-dark border-start border-4 border-info bg-body-tertiary shadow-sm my-4 text-body-emphasis">
+                <h6 class="fw-bold text-uppercase mb-2 text-info"><i class="fa-solid fa-truck-fast me-2"></i>Bypassing the MAP Cartel</h6>
+                <p class="mb-0 small">
+                    In 1997, the major labels controlled retail prices through strict MAP (Minimum Advertised Price) policies, threatening to pull cooperative advertising funds from any national retail chain or specialty record store that discounted CDs. Because Engine Room Records&trade; funded its own marketing via the Trust, Holly bypassed the traditional distributors entirely. She sold directly to the massive big-box retailers, offering them an unprecedented wholesale margin on the condition they place <em>Hard Reset</em> on their front end-caps for exactly $13.99. She broke the supply chain.
+                </p>
+            </div>
+
             <div class="card bg-black text-white border-danger border-2 shadow-lg mb-5">
                 <div class="card-body p-5">
                     <div class="d-flex align-items-center mb-4 border-bottom border-danger pb-3">
@@ -167,6 +174,35 @@ $pageTitle = "The $13.99 War - The Stardust Engine";
                     </p>
                 </div>
             </div>
+
+            <div class="card border-0 shadow-lg bg-body-tertiary mb-4">
+                <div class="card-header bg-body-secondary border-bottom border-secondary py-3">
+                    <h2 class="h5 text-body-emphasis fw-bold text-uppercase mb-0 letter-spacing-2">
+                        <i class="fa-duotone fa-truck-container me-2"></i>Phase 4: The Kitchen-Table Dispatch
+                    </h2>
+                </div>
+                <div class="card-body p-5 text-body-secondary">
+                    <p>
+                        Winning the legal battle was only half the war. The albums were pressed and packaged, sitting on hundreds of wooden pallets at commercial CD manufacturing plants. But the cartel controlled the traditional music distribution network—the specialized warehouses and trucking fleets that actually moved records to stores. They instituted a shadow embargo, threatening to blacklist any music distributor that touched the Engine Room release.
+                    </p>
+                    <p>
+                        They assumed that without a distributor, the physical albums would sit rotting on the factory floor. They assumed Holly was trapped because she didn't own a warehouse, a loading dock, or a single delivery truck. Engine Room Records was still just a residential house on Progress Street. 
+                    </p>
+                    <div class="alert alert-dark border-start border-4 border-warning bg-black text-white p-4 shadow-sm my-4">
+                        <h6 class="text-warning fw-bold text-uppercase mb-2"><i class="fa-solid fa-route me-2"></i>The LTL Freight Hack</h6>
+                        <p class="small text-white-75 mb-0">
+                            Holly realized she didn't need <em>music</em> distributors. She just needed trucks. Using the Trust's capital, she picked up the phone and started booking standard LTL (Less-Than-Truckload) commercial freight carriers—the independent, blue-collar haulers who usually moved auto parts and refrigerated goods. Commercial freight dispatchers didn't care about Apex Records or music industry politics; they just cared about a cleared check and a Bill of Lading.
+                        </p>
+                    </div>
+                    <p>
+                        For three sleepless weeks, the dining room table became a chaotic dispatch center. Holly, Ryan, and Evan manually routed hundreds of independent 18-wheelers from the manufacturing plants directly to the receiving docks of the national big-box retailers.
+                    </p>
+                    <p class="mb-0 fw-bold text-body-emphasis border-top border-secondary-subtle pt-3 mt-3">
+                        The albums hit the shelves exactly on time, and the cartel's embargo was shattered. But the family barely survived the logistical nightmare. It was the grueling, desperate reality of the "Kitchen-Table Dispatch" that taught Holly her most valuable lesson: <span class="fst-italic text-danger">Never rely on third-party infrastructure again. Next time, we buy the warehouse. We buy the trucks.</span> This moment became the direct catalyst for the creation of Stardust Logistics and the Fleet Command network.
+                    </p>
+                </div>
+            </div>
+            
 
         </div>
     </div>

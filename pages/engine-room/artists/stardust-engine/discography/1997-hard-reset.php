@@ -109,16 +109,22 @@ $album_path_web = '/engine-room-records/artists/the-stardust-engine/1997-hard-re
         </div>
     </div>
 
-    <div class="alert alert-dark border-success mt-5 shadow-sm">
-        <div class="d-flex">
-            <div class="me-3">
-                 <i class="fa-duotone fa-money-bill-wave text-success fs-3"></i>
+   <div class="alert alert-dark border-success mt-5 shadow-sm">
+        <div class="d-flex flex-column flex-md-row align-items-center align-items-md-start">
+            <div class="me-md-4 mb-3 mb-md-0 text-center">
+                 <i class="fa-duotone fa-money-bill-wave text-success fa-3x"></i>
             </div>
-            <div>
-                <h5 class="alert-heading h6 fw-bold text-success text-uppercase mb-1">Holly's $13.99 Retail War</h5>
-                <p class="mb-0 small text-muted">
-                    Following the family's $2.04 Billion lottery windfall in 1996, Manager and CEO Holly O'Connell parked the net payout in U.S. Treasury Bonds. Generating roughly $37 Million a year in risk-free interest, Holly used a fraction of those monthly yields to completely subsidize the pressing of the massive double-album. This strategic maneuver allowed Engine Room Records to sell <em>Hard Reset</em> at retail for only $13.99, completely undercutting the industry standard and terrifying Apex Records into surrendering their antitrust injunction.
+            <div class="flex-grow-1">
+                <h5 class="alert-heading h6 fw-bold text-success text-uppercase mb-2">Holly's $13.99 Retail War</h5>
+                <p class="small text-muted mb-2">
+                    Following the family's $2.04 Billion lottery windfall in 1996, Manager and CEO Holly O'Connell parked the net payout in U.S. Treasury Bonds. Generating roughly $37 Million a year in risk-free interest, Holly used a fraction of those monthly yields to completely subsidize the pressing of the massive double-album. 
                 </p>
+                <p class="small text-muted mb-3">
+                    This strategic maneuver allowed <strong>Engine Room Records&trade;</strong> to sell <em>Hard Reset</em> at retail for only $13.99, completely undercutting the $24.99 industry standard for double-disc releases. When a cartel of major labels—led by Apex Records—panicked and filed an emergency federal antitrust injunction for "predatory pricing," Holly O'Connell walked into court and defended the label <em>pro se</em> (without outside counsel). By entering the Treasury yields into the public record, she proved the price point wasn't an illegal monopoly tactic; it was just a vastly superior business model. The case was thrown out.
+                </p>
+                <a href="/engine-room/artists/stardust-engine/story/hard-reset/the-album/the-1399-war" class="btn btn-sm btn-outline-success text-uppercase fw-bold font-monospace">
+                    <i class="fa-duotone fa-gavel me-2"></i>Read The Full Court Case
+                </a>
             </div>
         </div>
     </div>

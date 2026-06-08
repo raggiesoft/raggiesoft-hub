@@ -2,7 +2,7 @@
 // pages/engine-room/overview.php
 // The Fan-Centric Hub of Engine Room Records.
 
-$pageTitle = "Engine Room Records | Loud. Raw. Real.";
+$pageTitle = "Engine Room Records™ | Loud. Raw. Real.";
 ?>
 
 <script type="application/ld+json">
@@ -11,17 +11,17 @@ $pageTitle = "Engine Room Records | Loud. Raw. Real.";
   "@graph": [
     {
       "@type": "Organization",
-      "name": "Engine Room Records",
+      "name": "Engine Room Records™",
       "parentOrganization": {
         "@type": "Organization",
-        "name": "RaggieSoft Media"
+        "name": "RaggieSoft Media™"
       },
       "description": "An independent creative collective dedicated to narrative-driven rock, industrial soundscapes, and symphonic metal. Note: Engine Room Records is a closed private label; unsolicited submissions are not accepted."
     },
     {
       "@type": "CollectionPage",
       "name": "Engine Room Records Roster",
-      "description": "Directory of active musical projects including The Stardust Engine, Mirage, and The Winter Palace."
+      "description": "Directory of active musical projects including The Stardust Engine™, Fractured Prisms™, The Paper Wall™, and The Winter Palace™."
     }
   ]
 }
@@ -65,7 +65,13 @@ $pageTitle = "Engine Room Records | Loud. Raw. Real.";
         transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
     }
 
-    .roster-card:hover {
+    /* Used for disabled roster cards */
+    .roster-card.inactive {
+        opacity: 0.7;
+        cursor: not-allowed;
+    }
+
+    .roster-card:hover:not(.inactive) {
         transform: translateY(-5px);
         border-color: var(--bs-primary); 
         box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5); 
@@ -77,7 +83,7 @@ $pageTitle = "Engine Room Records | Loud. Raw. Real.";
         box-shadow: 0 4px 6px rgba(0,0,0,0.05);
     }
 
-    [data-bs-theme="light"] .roster-card:hover {
+    [data-bs-theme="light"] .roster-card:hover:not(.inactive) {
         box-shadow: 0 10px 20px rgba(0,0,0,0.1); 
     }
 
@@ -106,7 +112,7 @@ $pageTitle = "Engine Room Records | Loud. Raw. Real.";
              class="mb-4 logo-invert hero-logo">
              
         <h1 class="display-3 fw-bold text-uppercase mb-3 brand-font" style="letter-spacing: 2px;">
-            Engine Room Records
+            Engine Room Records&trade;
         </h1>
         <p class="lead tech-font opacity-75 mb-4 mx-auto" style="max-width: 700px;">
             Loud. Raw. Real. An independent creative collective dedicated to narrative-driven rock, industrial soundscapes, and symphonic metal.
@@ -115,7 +121,7 @@ $pageTitle = "Engine Room Records | Loud. Raw. Real.";
             <a href="#latest-transmissions" class="btn btn-primary rounded-pill px-4 fw-bold text-uppercase tech-font">
                 <i class="fa-solid fa-play me-2" aria-hidden="true"></i>Latest Transmissions
             </a>
-            <a href="/engine-room/artists" class="btn btn-outline-light rounded-pill px-4 fw-bold text-uppercase tech-font">
+            <a href="#roster" class="btn btn-outline-light rounded-pill px-4 fw-bold text-uppercase tech-font">
                 <i class="fa-solid fa-users me-2" aria-hidden="true"></i>The Roster
             </a>
         </div>
@@ -145,7 +151,7 @@ $pageTitle = "Engine Room Records | Loud. Raw. Real.";
                         <div class="card-body p-4">
                             <span class="badge bg-warning text-dark mb-2 font-monospace">1997 / 2026 REMASTER</span>
                             <h3 class="h5 fw-bold text-uppercase mb-1">Hard Reset</h3>
-                            <p class="text-primary small fw-bold text-uppercase mb-3">The Stardust Engine</p>
+                            <p class="text-primary small fw-bold text-uppercase mb-3">The Stardust Engine&trade;</p>
                             <p class="card-text small text-body-secondary mb-0">
                                 The triumphant commercial comeback. A double-album featuring the relentless rock of "Terrestrial Velocity" and the zero-gravity progressive suite "Ad Astra."
                             </p>
@@ -163,24 +169,22 @@ $pageTitle = "Engine Room Records | Loud. Raw. Real.";
         <div class="col-lg-6">
             <div class="card h-100 border-0 shadow-sm bg-body-tertiary overflow-hidden">
                 <div class="row g-0 h-100">
-                    <div class="col-sm-5">
-                        <img src="https://assets.raggiesoft.com/engine-room-records/artists/mirage/2001-static-and-silence/album-art.jpg" 
-                             class="img-fluid h-100 object-fit-cover border-end border-secondary-subtle" 
-                             alt="Static and Silence Album Art">
+                    <div class="col-sm-5 bg-dark d-flex align-items-center justify-content-center border-end border-secondary-subtle">
+                        <i class="fa-duotone fa-waveform-lines fa-4x text-danger opacity-50"></i>
                     </div>
                     <div class="col-sm-7 d-flex flex-column">
                         <div class="card-body p-4">
-                            <span class="badge bg-danger mb-2 font-monospace">INDUSTRIAL ROCK OPERA</span>
+                            <span class="badge bg-danger mb-2 font-monospace">NARRATIVE ROCK OPERA</span>
                             <h3 class="h5 fw-bold text-uppercase mb-1">Static & Silence</h3>
-                            <p class="text-danger small fw-bold text-uppercase mb-3">Mirage</p>
+                            <p class="text-danger small fw-bold text-uppercase mb-3">The Paper Wall&trade;</p>
                             <p class="card-text small text-body-secondary mb-0">
                                 A harrowing, autobiographical concept album detailing survival, escape, and the brutal journey to find a safe harbor. 
                             </p>
                         </div>
                         <div class="card-footer bg-transparent border-0 pb-4 px-4 pt-0">
-                            <a href="/engine-room/artists/mirage/2001-static-and-silence" class="btn btn-sm btn-outline-danger w-100 rounded-pill fw-bold">
-                                <i class="fa-duotone fa-compact-disc me-2"></i>Explore Album
-                            </a>
+                            <button class="btn btn-sm btn-outline-secondary w-100 rounded-pill fw-bold" disabled>
+                                <i class="fa-solid fa-lock me-2"></i>Archive Pending
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -188,60 +192,70 @@ $pageTitle = "Engine Room Records | Loud. Raw. Real.";
         </div>
     </div>
 
-    <div class="row mb-4 mt-5">
+    <div class="row mb-4 mt-5" id="roster">
         <div class="col-12 d-flex justify-content-between align-items-end border-bottom border-secondary-subtle pb-2">
             <h2 class="h4 text-uppercase fw-bold mb-0 text-body-emphasis">
                 <i class="fa-duotone fa-users me-2 text-info"></i>The Collective
             </h2>
-            <a href="/engine-room/artists" class="text-decoration-none text-muted small text-uppercase font-monospace fw-bold hover-primary">
-                View Full Roster <i class="fa-solid fa-arrow-right ms-1"></i>
-            </a>
         </div>
     </div>
 
     <div class="row g-4 mb-5">
         
-        <div class="col-md-4">
+        <div class="col-md-6 col-xl-3">
             <a href="/engine-room/artists/stardust-engine" class="text-decoration-none">
                 <div class="card roster-card h-100 p-4 text-center">
                     <div class="mb-3">
                         <img src="https://assets.raggiesoft.com/engine-room-records/artists/the-stardust-engine/band-logo.png" 
                              alt="The Stardust Engine" style="height: 60px; object-fit: contain;">
                     </div>
-                    <h3 class="h5 fw-bold text-body-emphasis text-uppercase mb-2">The Stardust Engine</h3>
-                    <p class="text-body-secondary small mb-0">
+                    <h3 class="h6 fw-bold text-body-emphasis text-uppercase mb-2">The Stardust Engine&trade;</h3>
+                    <p class="text-body-secondary small mb-2 flex-grow-1">
                         80s Synth-Pop / Progressive Rock. The founding family unit that built the fortress.
                     </p>
+                    <span class="badge bg-success-subtle text-success-emphasis border border-success-subtle mt-auto mx-auto font-monospace"><i class="fa-solid fa-signal-stream me-1"></i> Live on DSPs</span>
                 </div>
             </a>
         </div>
 
-        <div class="col-md-4">
-            <a href="/engine-room/artists/mirage" class="text-decoration-none">
-                <div class="card roster-card h-100 p-4 text-center">
-                    <div class="mb-3">
-                        <i class="fa-duotone fa-waveform-lines fa-4x text-danger opacity-75"></i>
-                    </div>
-                    <h3 class="h5 fw-bold text-body-emphasis text-uppercase mb-2">Mirage</h3>
-                    <p class="text-body-secondary small mb-0">
-                        Industrial / Alt-Metal. A heavy, cinematic exploration of trauma and survival.
-                    </p>
+        <div class="col-md-6 col-xl-3">
+            <div class="card roster-card inactive h-100 p-4 text-center">
+                <div class="mb-3">
+                    <img src="https://assets.raggiesoft.com/engine-room-records/artists/fractured-prisms/band-logo-colour.jpg" 
+                         alt="Fractured Prisms" style="height: 60px; object-fit: contain;">
                 </div>
-            </a>
+                <h3 class="h6 fw-bold text-body-emphasis text-uppercase mb-2">Fractured Prisms&trade;</h3>
+                <p class="text-body-secondary small mb-2 flex-grow-1">
+                    British Synth-Pop and Retro-Engineered Soundscapes.
+                </p>
+                <span class="badge bg-success-subtle text-success-emphasis border border-success-subtle mt-auto mx-auto font-monospace"><i class="fa-solid fa-signal-stream me-1"></i> Live on DSPs</span>
+            </div>
         </div>
 
-        <div class="col-md-4">
-            <a href="/engine-room/artists/the-winter-palace" class="text-decoration-none">
-                <div class="card roster-card h-100 p-4 text-center">
-                    <div class="mb-3">
-                        <i class="fa-duotone fa-snowflake fa-4x text-info opacity-75"></i>
-                    </div>
-                    <h3 class="h5 fw-bold text-body-emphasis text-uppercase mb-2">The Winter Palace</h3>
-                    <p class="text-body-secondary small mb-0">
-                        Symphonic Rock / Neoclassical. Sweeping string arrangements meets heavy distortion.
-                    </p>
+        <div class="col-md-6 col-xl-3">
+            <div class="card roster-card inactive h-100 p-4 text-center">
+                <div class="mb-3 d-flex align-items-center justify-content-center" style="height: 60px;">
+                    <i class="fa-duotone fa-waveform-lines fa-3x text-danger opacity-75"></i>
                 </div>
-            </a>
+                <h3 class="h6 fw-bold text-body-emphasis text-uppercase mb-2">The Paper Wall&trade;</h3>
+                <p class="text-body-secondary small mb-2 flex-grow-1">
+                    Narrative-driven Rock Operas. A cinematic exploration of trauma and survival.
+                </p>
+                <span class="badge bg-secondary-subtle text-secondary-emphasis border border-secondary-subtle mt-auto mx-auto font-monospace"><i class="fa-solid fa-wrench me-1"></i> In Studio</span>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-xl-3">
+            <div class="card roster-card inactive h-100 p-4 text-center">
+                <div class="mb-3 d-flex align-items-center justify-content-center" style="height: 60px;">
+                    <i class="fa-duotone fa-snowflake fa-3x text-info opacity-75"></i>
+                </div>
+                <h3 class="h6 fw-bold text-body-emphasis text-uppercase mb-2">The Winter Palace&trade;</h3>
+                <p class="text-body-secondary small mb-2 flex-grow-1">
+                    Holiday-themed Symphonic Rock. Sweeping string arrangements meet heavy distortion.
+                </p>
+                <span class="badge bg-secondary-subtle text-secondary-emphasis border border-secondary-subtle mt-auto mx-auto font-monospace"><i class="fa-solid fa-wrench me-1"></i> In Studio</span>
+            </div>
         </div>
 
     </div>
@@ -256,7 +270,7 @@ $pageTitle = "Engine Room Records | Loud. Raw. Real.";
                     <i class="fa-solid fa-briefcase me-2"></i>Industry & Licensing
                 </h3>
                 <p class="small text-white-75 mb-3" style="line-height: 1.6;">
-                    Looking to clear a track for a film, game, or commercial broadcast? All commercial synchronization, master use clearances, and DSP verification operations are handled centrally by <strong>RaggieSoft Media</strong>. 
+                    Looking to clear a track for a film, game, or commercial broadcast? All commercial synchronization, master use clearances, and DSP verification operations are handled centrally by <strong>RaggieSoft Media&trade;</strong>. 
                 </p>
                 <div class="d-flex align-items-center bg-black bg-opacity-50 p-2 rounded border border-secondary border-opacity-50 d-inline-flex">
                     <i class="fa-solid fa-circle-info text-info me-2"></i>
@@ -292,10 +306,3 @@ $pageTitle = "Engine Room Records | Loud. Raw. Real.";
         </div>
     </div>
 </div>
-
-<style>
-    /* Hover Helper */
-    .hover-primary:hover {
-        color: var(--bs-primary) !important;
-    }
-</style>

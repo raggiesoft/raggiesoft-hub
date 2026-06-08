@@ -3,12 +3,12 @@
 // Lore Page: The Cosmic Tidal Lock Sound & 80s Cosmic Pop
 // Updated: Includes Article Schema and Suno Engineering Meta-Data
 
-$pageTitle = "The Cosmic Tidal Lock Sound - The Stardust Engine";
+$pageTitle = "The Cosmic Tidal Lock Sound&trade; - The Stardust Engine&trade;";
 
 $articleSchema = [
     "@context" => "https://schema.org",
     "@type" => "Article",
-    "headline" => "The Cosmic Tidal Lock Sound - The Stardust Engine",
+    "headline" => "The Cosmic Tidal Lock Sound&trade; - The Stardust Engine&trade;",
     "about" => [
         "@type" => "MusicGroup",
         "name" => "The Stardust Engine"
@@ -46,7 +46,7 @@ $articleSchema = [
                 </div>
                 <div class="card-body p-4 p-lg-5 text-light">
                     <p class="fs-5 text-white-75 mb-4">
-                        To understand the music of The Stardust Engine, there is a distinct difference between the genre the band pioneered and the actual sonic architecture they use to create it.
+                        To understand the music of <strong>The Stardust Engine&trade;</strong>, there is a distinct difference between the genre the band pioneered and the actual sonic architecture they use to create it.
                     </p>
 
                     <div class="row g-4">
@@ -62,7 +62,7 @@ $articleSchema = [
                             <div class="p-4 border border-warning rounded h-100 bg-black bg-opacity-50">
                                 <h4 class="text-warning fw-bold mb-3">The Cosmic Tidal Lock Sound&trade; (The Trademark)</h4>
                                 <p class="text-white-75 small mb-0">
-                                    This is the heavily guarded, proprietary trademark claimed by <strong>Engine Room Records</strong>. It refers strictly to the highly specific audio engineering and synth-layering techniques developed exclusively by <strong>Cassidy O'Connell</strong>. It creates a massive, zero-gravity atmospheric effect that is mathematically distinct from standard 1980s pop.
+                                    This is the heavily guarded, proprietary trademark claimed by <strong>Engine Room Records&trade;</strong>. It refers strictly to the highly specific audio engineering and synth-layering techniques developed exclusively by <strong>Cassidy O'Connell</strong>. It creates a massive, zero-gravity atmospheric effect that is mathematically distinct from standard 1980s pop.
                                 </p>
                             </div>
                         </div>
@@ -89,7 +89,7 @@ $articleSchema = [
                             Recognizing the immense value of Cassidy's engineering genius, Manager and CEO <strong>Holly O'Connell</strong> immediately weaponized it. 
                         </p>
                         <p class="text-white-75 small mb-0">
-                            Through the independent boutique label she founded in 1992—<strong>Engine Room Records</strong>—Holly officially registered <em>The Cosmic Tidal Lock Sound&reg;</em>. This gave the band impenetrable legal ammunition. If another studio or corporate entity attempts to rip off their exact production style in a commercial or pop track, Holly has the federal backing to shut them down immediately.
+                            Through the independent boutique label she founded in 1992—Engine Room Records—Holly aggressively established common law rights to <em>The Cosmic Tidal Lock Sound&trade;</em>. This gave the band impenetrable legal ammunition. If another studio or corporate entity attempts to rip off their exact production style in a commercial or pop track, Holly has the documentation and the priority of use to shut them down immediately.
                         </p>
                     </div>
                 </div>

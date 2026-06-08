@@ -177,7 +177,7 @@ $imagesJson = htmlspecialchars(json_encode($heroImages), ENT_QUOTES, 'UTF-8');
                         </div>
 
                         <div class="d-flex gap-3 gap-md-4">
-                            <a href="/about/license" class="text-white-50 text-decoration-none hover-text-white transition-all">
+                            <a href="/raggiesoft-media/licensing" class="text-white-50 text-decoration-none hover-text-white transition-all">
                                 <i class="fa-solid fa-file-certificate me-1"></i> Licenses
                             </a>
                             <a href="/about/privacy" class="text-white-50 text-decoration-none hover-text-white transition-all">

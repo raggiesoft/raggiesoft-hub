@@ -89,18 +89,7 @@
     "brandFont": ["Cinzel", "serif"]
   },
   "/about/license": {
-    "view": "pages/about/license",
-    "title": "Licenses & Copyright | RaggieSoft Governance",
-    "site": "portfolio",
-    "siteName": "RaggieSoft",
-    "headerMenu": "about/header-about",
-    "sidebar": "about/sidebar-about",
-    "showSidebar": true,
-    "navbarBrandText": "RaggieSoft",
-    "navbarBrandLink": "/",
-    "navbarBrandLogo": "https://assets.raggiesoft.com/portfolio/images/logos/logo-michael.png",
-    "navbarBrandAlt": "RaggieSoft Official Logo",
-    "brandFont": ["Roboto", "sans-serif"]
+    "redirect": "/raggiesoft-media/licensing"
   },
   "/about/privacy": {
     "view": "pages/about/privacy",
