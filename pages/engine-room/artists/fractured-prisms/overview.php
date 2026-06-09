@@ -215,12 +215,12 @@ if ($eras) {
             <?php endforeach; ?>
         </div>
         
-        <button class="carousel-control-prev" type="button" data-bs-target="#discographyCarousel" data-bs-slide="prev" style="width: 5%;">
-            <i class="fa-solid fa-chevron-left text-light fs-3" aria-hidden="true"></i>
+        <button class="carousel-control-prev custom-carousel-nav" type="button" data-bs-target="#discographyCarousel" data-bs-slide="prev" style="width: 5%;">
+            <i class="fa-solid fa-chevron-left fs-3" style="color: var(--bs-body-color);" aria-hidden="true"></i>
             <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#discographyCarousel" data-bs-slide="next" style="width: 5%;">
-            <i class="fa-solid fa-chevron-right text-light fs-3" aria-hidden="true"></i>
+        <button class="carousel-control-next custom-carousel-nav" type="button" data-bs-target="#discographyCarousel" data-bs-slide="next" style="width: 5%;">
+            <i class="fa-solid fa-chevron-right fs-3" style="color: var(--bs-body-color);" aria-hidden="true"></i>
             <span class="visually-hidden">Next</span>
         </button>
     </div>
@@ -289,5 +289,19 @@ if ($eras) {
 }
 #discographyCarousel .carousel-inner {
     overflow: visible; 
+}
+
+/* Ensure carousel arrows float above content and react to the dynamic theme */
+.custom-carousel-nav {
+    z-index: 1050; /* Forces them above the visible overflow */
+    opacity: 0.6;
+    transition: opacity var(--transition-speed) ease, transform var(--transition-speed) ease;
+}
+.custom-carousel-nav:hover {
+    opacity: 1;
+    transform: scale(1.2);
+}
+.custom-carousel-nav i {
+    text-shadow: 0 0 10px rgba(var(--bs-primary-rgb), 0.5); /* Subtle thematic glow */
 }
 </style>
