@@ -10,13 +10,13 @@ $pageTitle = "Claire Manning - The Residents | Fractured Prisms";
         
         <div class="row justify-content-center mb-5">
             <div class="col-lg-8 text-center">
-                <span class="badge bg-transparent border border-secondary text-white-50 rounded-pill px-3 py-2 mb-3 text-uppercase letter-spacing-1">
-                    <i class="fa-duotone fa-microphone-stand me-2"></i>Resident Profile
+                <span class="badge bg-transparent border border-secondary text-muted rounded-pill px-3 py-2 mb-3 text-uppercase letter-spacing-1">
+                    <i class="fa-duotone fa-microphone-stand me-2" aria-hidden="true"></i>Resident Profile
                 </span>
                 <h1 class="display-3 fw-bold text-glow-prism gothic-font mb-3">
                     Claire Manning
                 </h1>
-                <p class="lead text-white-50 font-monospace">
+                <p class="lead text-muted font-monospace">
                     Lead Vocals. Woodwinds. The Anchor.
                 </p>
             </div>
@@ -29,23 +29,23 @@ $pageTitle = "Claire Manning - The Residents | Fractured Prisms";
                         <div class="col-md-5 mb-4 mb-md-0">
                             <div class="polaroid-prism">
                                 <img src="https://assets.raggiesoft.com/engine-room-records/artists/fractured-prisms/1983-fractured-prisms/claire-portrait.jpg" 
-                                     alt="A degraded, sepia-toned photograph of Claire holding a wooden flute.">
-                                <div class="polaroid-caption text-center">
+                                     alt="A degraded, sepia-toned 1983 photograph of Claire Manning holding a wooden flute.">
+                                <div class="polaroid-caption text-center" aria-hidden="true">
                                     Archive: C. Manning, 1983
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-7 ps-md-5">
-                            <h2 class="h4 text-light fw-bold text-uppercase mb-3 gothic-font border-bottom border-prism pb-2">
+                            <h2 class="h4 text-body fw-bold text-uppercase mb-3 gothic-font border-bottom border-prism pb-2">
                                 The Voice in the Fog
                             </h2>
-                            <p class="text-white-75 fs-5" style="line-height: 1.8;">
+                            <p class="text-secondary fs-5" style="line-height: 1.8;">
                                 In the 1883 psychological sanctuary of The Hollow Square, Claire is whole, unbroken, and fiercely protective of her siblings. In the physical reality of 1983, she was a twenty-two-year-old autistic woman navigating severe cerebral palsy from the seat of a manual wheelchair.
                             </p>
-                            <p class="text-white-75 fs-5" style="line-height: 1.8;">
+                            <p class="text-secondary fs-5" style="line-height: 1.8;">
                                 Her physical limitations dictated the very sound of <em>Fractured Prisms</em>. Because complex, rapid instrumentation was impossible for her hands, she became the band's voice. Her vocal deliveries are often described as hauntingly detached, cutting through Rhys's dense synthesizer programming with a chilling, emotional clarity. 
                             </p>
-                            <p class="text-white-75 fs-5 mb-0" style="line-height: 1.8;">
+                            <p class="text-secondary fs-5 mb-0" style="line-height: 1.8;">
                                 But it is her work on the wooden flute—the instrument that originally belonged to her late sister, Gwen—that defines the band's acoustic soul. Claire taught herself to play it purely out of a desperate need to keep Gwen's memory alive, breathing humanity back into the cold, mechanical rhythms her brother built.
                             </p>
                         </div>
@@ -57,21 +57,21 @@ $pageTitle = "Claire Manning - The Residents | Fractured Prisms";
         <div class="row justify-content-center mb-5">
             <div class="col-lg-10">
                 
-                <h3 class="h4 text-uppercase text-light fw-bold mb-4 gothic-font mt-4">
+                <h3 class="h4 text-uppercase text-body fw-bold mb-4 gothic-font mt-4">
                     The Exit Strategy (1982)
                 </h3>
-                <p class="text-white-75 mb-4 fs-5">
+                <p class="text-secondary mb-4 fs-5">
                     Before fleeing to Maryland, Claire briefly attempted to find normalcy in a disastrous marriage. Her husband was a penny-pinching, emotionally neglectful man who quickly realized he had no interest in assisting with her daily physical care. Recognizing the trap she was in, Claire quietly orchestrated her escape, calling her younger brother Rhys to collect her and her wheelchair. 
                 </p>
-                <p class="text-white-75 mb-5 fs-5">
+                <p class="text-secondary mb-5 fs-5">
                     Her departure perfectly coincided with a knock at the door that would become a legendary piece of family lore.
                 </p>
 
                 <div class="card artifact-paper mb-5 p-4 p-md-5">
                     <div class="d-flex align-items-center mb-4 border-bottom border-dark pb-2">
-                        <i class="fa-duotone fa-typewriter fs-2 text-secondary me-3"></i>
+                        <i class="fa-duotone fa-typewriter fs-2 text-secondary me-3" aria-hidden="true"></i>
                         <div>
-                            <h4 class="fw-bold text-uppercase mb-0" style="font-family: 'Courier New', monospace; letter-spacing: 1px;">Archival Recovery: Incident Report</h4>
+                            <h4 class="fw-bold text-uppercase mb-0" style="font-family: var(--font-tech); letter-spacing: 1px;">Archival Recovery: Incident Report</h4>
                             <small class="text-muted font-monospace">Source: Rhys Manning's Personal Notes (Romford, 1982)</small>
                         </div>
                     </div>
@@ -144,8 +144,8 @@ $pageTitle = "Claire Manning - The Residents | Fractured Prisms";
 
         <div class="row mt-5 pt-4 border-top border-prism">
             <div class="col-12 text-center">
-                <a href="/engine-room/artists/fractured-prisms/band" class="btn btn-outline-light rounded-pill px-4 font-monospace small text-uppercase">
-                    <i class="fa-duotone fa-arrow-left me-2"></i>Return to The Residents
+                <a href="/engine-room/artists/fractured-prisms/band" class="btn btn-outline-primary rounded-pill px-4 font-monospace small text-uppercase">
+                    <i class="fa-duotone fa-arrow-left me-2" aria-hidden="true"></i>Return to The Residents
                 </a>
             </div>
         </div>
