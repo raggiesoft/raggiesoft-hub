@@ -162,17 +162,16 @@ if ($d >= 2) {
             <i class="fa-duotone fa-signal-stream me-3"></i>Engine Room Radio
         </h1>
         <p class="lead text-secondary font-monospace">Broadcasting from The Fortress // <span class="text-success fw-bold"><i class="fa-solid fa-circle text-danger blink-me fs-6 pb-1"></i> LIVE</span></p>
-        
-        <div class="mt-4">
-            <button class="btn btn-lg btn-outline-warning rounded-pill px-5 shadow-glow btn-play-index" data-index="0">
-                <i class="fa-solid fa-play me-2"></i>TUNE IN
-            </button>
-        </div>
         <div class="mt-3 text-secondary font-monospace small" style="letter-spacing: 0.5px;">
             <i class="fa-solid fa-plane-departure me-2 text-info"></i>ESTIMATED BLOCK TIME: <span class="text-white fw-bold"><?php echo $block_time; ?></span>
             <div class="mt-1 text-white-50 fst-italic" style="font-size: 0.9em;">
                 // <?php echo $context_string; ?>
             </div>
+        </div>
+        <div class="mt-4">
+            <button class="btn btn-lg btn-outline-warning rounded-pill px-5 shadow-glow btn-play-index" data-index="0">
+                <i class="fa-solid fa-play me-2"></i>TUNE IN
+            </button>
         </div>
     </div>
     <div class="container py-5">
