@@ -21,10 +21,10 @@ $master_playlist = [];
 
 // 2. AGGREGATOR LOGIC
 $seen_isrcs = []; // Initialize our deduplication tracker
+$shuffle_blocks = []; // NEW: Array to hold chunks of music for the shuffler
 
 foreach ($station_roster as $artist_slug) {
     
-    // Fetch the master albums.json for the artist directly from the CDN
     $albums_json_url = "{$cdn_root}/artists/{$artist_slug}/albums.json";
     $albums_json_content = @file_get_contents($albums_json_url);
     
@@ -36,7 +36,6 @@ foreach ($station_roster as $artist_slug) {
                 if (!empty($era['albums'])) {
                     foreach ($era['albums'] as $album) {
                         
-                        // Skip Canceled Releases
                         if (isset($album['extra']) && strpos($album['extra'], 'CANCELED') !== false) continue;
 
                         $album_folder = $album['folder'] ?? basename($album['url']);
@@ -50,41 +49,47 @@ foreach ($station_roster as $artist_slug) {
                             $meta_data = json_decode($album_json, true);
                             $raw_tracks = $tracks_data['tracks'] ?? $tracks_data;
                             
-                            // Schema.org Standard parsing with legacy fallback
                             $artist_name = $meta_data['byArtist']['name'] ?? ($meta_data['albumArtist'] ?? 'Engine Room Artist');
                             $album_title = $meta_data['name'] ?? ($meta_data['albumName'] ?? 'Unknown Album');
+                            
+                            // NEW: Check if this album demands sequential playback
+                            $is_rock_opera = isset($meta_data['isRockOpera']) && $meta_data['isRockOpera'] === true;
+                            $rock_opera_chunk = [];
 
                             foreach ($raw_tracks as $track) {
                                 $fn = $track['fileName'] ?? ($track['filename'] ?? null);
                                 if (!$fn) continue;
 
-                                // --- ISRC DEDUPLICATION LOGIC ---
                                 $isrc = $track['isrc'] ?? '';
                                 
                                 if (!empty($isrc)) {
-                                    if (in_array($isrc, $seen_isrcs)) {
-                                        continue; // We already have this exact recording. Skip it.
-                                    }
-                                    $seen_isrcs[] = $isrc; // Add it to the tracker so we don't play it again.
+                                    if (in_array($isrc, $seen_isrcs)) continue; 
+                                    $seen_isrcs[] = $isrc; 
                                 }
-                                // If the ISRC is empty, it bypasses the tracker and gets added.
-                                // --------------------------------
 
-                                $legacy_tier = isset($track['legacyTier']) ? $track['legacyTier'] : null;
-                                $lore_note = isset($track['loreNote']) ? $track['loreNote'] : '';
-                                $duration = isset($track['duration']) ? $track['duration'] : '';
-
-                                $master_playlist[] = [
+                                $track_payload = [
                                     'title' => $track['title'],
                                     'artist' => $artist_name,
                                     'album' => $album_title,
                                     'artwork' => "{$base_path}/album-art.jpg?v=" . time(),
                                     'src' => "{$base_path}/web-mp3/{$fn}.mp3?v=" . time(),
                                     'lyrics' => "{$base_path}/lyrics/{$fn}.md?v=" . time(),
-                                    'legacyTier' => $legacy_tier,
-                                    'loreNote' => $lore_note,
-                                    'duration' => $duration
+                                    'legacyTier' => $track['legacyTier'] ?? null,
+                                    'loreNote' => $track['loreNote'] ?? '',
+                                    'duration' => $track['duration'] ?? ''
                                 ];
+
+                                // If it's a Rock Opera, glue it to the chunk. Otherwise, it becomes its own solo block.
+                                if ($is_rock_opera) {
+                                    $rock_opera_chunk[] = $track_payload;
+                                } else {
+                                    $shuffle_blocks[] = [$track_payload];
+                                }
+                            }
+                            
+                            // Once the album is fully parsed, add the glued chunk to the shuffler
+                            if ($is_rock_opera && !empty($rock_opera_chunk)) {
+                                $shuffle_blocks[] = $rock_opera_chunk;
                             }
                         }
                     }
@@ -94,9 +99,17 @@ foreach ($station_roster as $artist_slug) {
     }
 }
 
-// 3. THE RADIO SHUFFLE
-shuffle($master_playlist);
-$master_playlist = array_values($master_playlist); // Re-index for JS
+// 3. THE RADIO SHUFFLE (Rock Opera Aware)
+// Shuffle the blocks (Solo tracks and glued Rock Operas move around as discrete units)
+shuffle($shuffle_blocks);
+
+// Flatten the shuffled blocks back into a standard 1D playlist for the JavaScript player
+$master_playlist = [];
+foreach ($shuffle_blocks as $block) {
+    foreach ($block as $track) {
+        $master_playlist[] = $track;
+    }
+}
 ?>
 
 <div class="container-fluid p-0">
