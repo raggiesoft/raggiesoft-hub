@@ -17,5 +17,10 @@
     "view": "pages/engine-room/artists/fractured-prisms/overview",
     "title": "Fractured Prisms",
     "ogTitle": "Fractured Prisms"
+  },
+  "/engine-room/artists/fractured-prisms/lore/colonial-theatre": {
+    "view": "pages/engine-room/artists/fractured-prisms/lore/colonial-theatre.php",
+    "title": "Colonial Theatre | Fractured Prisms",
+    "ogTitle": "Colonial Theatre | Fractured Prisms"
   }
 }
