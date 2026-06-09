@@ -286,35 +286,38 @@ $personSchema = [
 </div>
 
 <script>
-document.addEventListener('DOMContentLoaded', function () {
+(function() {
     var credentialModal = document.getElementById('credentialModal');
-    credentialModal.addEventListener('show.bs.modal', function (event) {
-        var button = event.relatedTarget;
-        
-        var title = button.getAttribute('data-title');
-        var desc = button.getAttribute('data-desc');
-        var lore = button.getAttribute('data-lore');
-        var color = button.getAttribute('data-color');
-        var icon = button.getAttribute('data-icon');
+    
+    if (credentialModal) {
+        credentialModal.addEventListener('show.bs.modal', function (event) {
+            var button = event.relatedTarget;
+            
+            // Extract info from data-* attributes
+            var title = button.getAttribute('data-title');
+            var desc = button.getAttribute('data-desc');
+            var lore = button.getAttribute('data-lore');
+            var color = button.getAttribute('data-color');
+            var icon = button.getAttribute('data-icon');
 
-        var modalTitle = credentialModal.querySelector('#credentialTitle');
-        var modalDesc = credentialModal.querySelector('#credentialDesc');
-        var modalLore = credentialModal.querySelector('#credentialLore');
-        var modalHeader = credentialModal.querySelector('#modalHeader');
-        var modalContent = credentialModal.querySelector('#modalContent');
-        var loreAlert = credentialModal.querySelector('#loreAlert');
+            // Find modal elements
+            var modalTitle = credentialModal.querySelector('#credentialTitle');
+            var modalDesc = credentialModal.querySelector('#credentialDesc');
+            var modalLore = credentialModal.querySelector('#credentialLore');
+            var modalHeader = credentialModal.querySelector('#modalHeader');
+            var modalContent = credentialModal.querySelector('#modalContent');
+            var loreAlert = credentialModal.querySelector('#loreAlert');
 
-        modalTitle.innerHTML = '<i class="fa-solid ' + icon + ' me-2"></i>' + title;
-        modalDesc.textContent = desc;
-        modalLore.textContent = lore;
+            // Inject Data
+            modalTitle.innerHTML = '<i class="fa-solid ' + icon + ' me-2"></i>' + title;
+            modalDesc.textContent = desc;
+            modalLore.textContent = lore;
 
-        modalHeader.className = 'modal-header border-bottom-0 text-white';
-        modalContent.className = 'modal-content bg-dark text-white border-2';
-        loreAlert.className = 'alert bg-black bg-opacity-50 border-start border-4 text-white';
-
-        modalHeader.classList.add('bg-' + color);
-        modalContent.classList.add('border-' + color);
-        loreAlert.classList.add('border-' + color);
-    });
-});
+            // Cleanly reset and apply color-coded classes
+            modalHeader.className = 'modal-header border-bottom-0 text-white bg-' + color;
+            modalContent.className = 'modal-content bg-dark text-white border-2 border-' + color;
+            loreAlert.className = 'alert bg-black bg-opacity-50 border-start border-4 text-white border-' + color;
+        });
+    }
+})();
 </script>
