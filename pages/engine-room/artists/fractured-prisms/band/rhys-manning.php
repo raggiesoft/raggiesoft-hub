@@ -28,7 +28,7 @@ $pageTitle = "Rhys Manning - The Residents | Fractured Prisms";
                     <div class="row g-0">
                         <div class="col-md-5 mb-4 mb-md-0">
                             <div class="polaroid-prism">
-                                <img src="https://assets.raggiesoft.com/engine-room-records/artists/fractured-prisms/1983-fractured-prisms/rhys-portrait.jpg" 
+                                <img src="https://assets.raggiesoft.com/fractured-prisms/images/siblings/rhys-portrait.jpg" 
                                      alt="A degraded, high-contrast 1983 photograph of Rhys Manning standing over an analog mixing console.">
                                 <div class="polaroid-caption text-center" aria-hidden="true">
                                     Archive: R. Manning, 1983
