@@ -50,11 +50,14 @@ $storyLinks = [
 
     <ul class="nav flex-column border-start border-secondary ms-3 ps-2">
         <?php foreach ($storyLinks as $key => $link): 
-            // LOGIC UPDATE: 
-            // 1. Exact Match (Standard behavior)
-            // 2. Sub-page Match (If we are at /story/friction/sub-page, keep /story/friction active)
-            $isExactMatch = ($current_req === $link['url']);
-            $isSubPage = (str_starts_with($current_req, $link['url'] . '/'));
+            // 1. Exact Match (Account for optional trailing slash)
+            $isExactMatch = ($current_req === $link['url'] || $current_req === $link['url'] . '/');
+            
+            // 2. Sub-page Match (Exclude the root 'history' link from this check)
+            $isSubPage = false;
+            if ($key !== 'history') {
+                $isSubPage = (str_starts_with($current_req, $link['url'] . '/'));
+            }
             
             $isActive = ($isExactMatch || $isSubPage);
         ?>
