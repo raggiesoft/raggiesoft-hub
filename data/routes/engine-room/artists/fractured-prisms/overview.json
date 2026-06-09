@@ -1,0 +1,21 @@
+{
+  "common": {
+    "site": "fractured-prisms",
+    "theme": "fractured-prisms",
+    "brandFont": ["Playfair Display", "serif"],
+    "headerMenu": "engine-room/artists/fractured-prisms/header-prisms",
+    "footer": "engine-room/artists/fractured-prisms/footer-prisms",
+    "showSidebar": true,
+    "sidebar": "engine-room/artists/fractured-prisms/sidebar-band",
+    "navbarBrandLogo": "https://assets.raggiesoft.com/engine-room-records/artists/fractured-prisms/band-logo.jpg",
+    "navbarBrandText": "Fractured Prisms",
+    "navbarBrandLink": "/engine-room/artists/fractured-prisms",
+    "ogImage": "https://assets.raggiesoft.com/engine-room-records/artists/fractured-prisms/1983-fractured-prisms/album-art.jpg"
+  },
+
+  "/engine-room/artists/fractured-prisms": {
+    "view": "pages/engine-room/artists/fractured-prisms/overview",
+    "title": "Fractured Prisms",
+    "ogTitle": "Fractured Prisms"
+  }
+}
