@@ -21,23 +21,23 @@ if ($eras) {
 }
 ?>
 
-<div class="border-bottom border-prism" style="
-    position: relative;
-    background-image: linear-gradient(rgba(11, 9, 20, 0.8), rgba(11, 9, 20, 0.9)), 
-                      url('https://assets.raggiesoft.com/engine-room-records/artists/fractured-prisms/hero-bg.jpg');
+<div class="border-bottom border-prism position-relative overflow-hidden" style="
+    background-image: url('https://assets.raggiesoft.com/engine-room-records/artists/fractured-prisms/hero-bg.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     width: 100%;
 ">
-    <div class="container-fluid text-center pt-5 pb-5">
+    <div class="position-absolute top-0 start-0 w-100 h-100 bg-prism-dark" style="opacity: 0.85;"></div>
+    
+    <div class="container-fluid text-center pt-5 pb-5 position-relative" style="z-index: 2;">
         <div class="container pt-5 pb-4">
             <h1 class="display-2 text-uppercase text-glow-prism gothic-font" 
                 style="letter-spacing: 4px;">
                 Fractured Prisms
             </h1>
-            <p class="lead fs-3 text-uppercase text-white-50 mt-3" 
-               style="font-family: var(--font-tech); letter-spacing: 3px; text-shadow: 0 2px 4px rgba(0,0,0,0.8);">
+            <p class="lead fs-3 text-uppercase text-muted mt-3" 
+               style="font-family: var(--font-tech); letter-spacing: 3px;">
                 1883 <span class="mx-2 text-secondary">||</span> 1983
             </p>
         </div>
@@ -48,11 +48,11 @@ if ($eras) {
     <div class="alert bg-prism-dark border-secondary shadow-sm d-flex align-items-center" role="alert">
         <i class="fa-duotone fa-robot-astromech fa-3x me-3 text-secondary d-none d-md-block"></i>
         <div>
-            <h4 class="alert-heading h6 fw-bold mb-1 text-uppercase letter-spacing-1 text-light"><i class="fa-duotone fa-robot-astromech me-2 text-secondary d-inline-block d-md-none"></i>Transparency & Timeline Notice</h4>
-            <p class="mb-2 small text-white-50 border-bottom border-secondary pb-2">
+            <h4 class="alert-heading h6 fw-bold mb-1 text-uppercase letter-spacing-1 text-body"><i class="fa-duotone fa-robot-astromech me-2 text-secondary d-inline-block d-md-none"></i>Transparency & Timeline Notice</h4>
+            <p class="mb-2 small text-muted border-bottom border-secondary pb-2">
                 <strong>Fractured Prisms</strong> is a multimedia storytelling and world-building project. The music is generated using a commercial Suno license, with conceptual lore, characters, and lyrics co-written by human direction and Gemini.
             </p>
-            <p class="mb-0 small text-white-50">
+            <p class="mb-0 small text-muted">
                 <strong>Dual Timelines:</strong> To maintain our immersive fictional universe while strictly complying with modern digital distribution standards, our catalog features two timelines: a fictional <strong>Narrative Era</strong> (e.g., 1983) tied to the band's lore, and a real-world <strong>Actual Release Date</strong> (e.g., 2026) reflecting when the audio was officially distributed to streaming platforms.
                 <a href="/about/ai-disclaimer" class="alert-link fw-bold text-primary border-bottom border-primary text-decoration-none ms-1">Read the full AI Disclaimer.</a>
             </p>
@@ -71,12 +71,12 @@ if ($eras) {
                      style="min-height: 400px; filter: grayscale(20%) contrast(1.1);">
             </div>
 
-            <div class="col-lg-6 p-4 p-md-5 text-center text-lg-start bg-prism-dark text-light rounded-end">
+            <div class="col-lg-6 p-4 p-md-5 text-center text-lg-start bg-prism-dark text-body rounded-end">
                 <span class="badge border border-prism text-primary mb-3 px-3 py-2 text-uppercase font-monospace">
                     <i class="fa-solid fa-satellite-dish me-2 pulse-icon"></i>Now Streaming
                 </span>
                 <h2 class="display-5 fw-bold text-uppercase mb-3 gothic-font">The Gates Are Open</h2>
-                <p class="lead text-white-50 mb-4 font-monospace small">
+                <p class="lead text-muted mb-4 font-monospace small">
                     The complete, uncompromised discography of Fractured Prisms has officially cleared the global distribution network. Step into the gaslamp fog and experience the 100-year echo.
                 </p>
                 
@@ -129,13 +129,13 @@ if ($eras) {
 
 <div class="container py-5 border-bottom border-secondary border-opacity-25 position-relative" style="z-index: 1050;">
     <div class="text-center mb-5">
-        <span class="badge bg-transparent border border-secondary text-white-50 px-3 py-2 text-uppercase font-monospace mb-3">
+        <span class="badge bg-transparent border border-secondary text-muted px-3 py-2 text-uppercase font-monospace mb-3">
             <i class="fa-duotone fa-landmark me-2"></i>Historical Archives
         </span>
-        <h2 class="display-5 fw-bold text-uppercase text-light mb-3 gothic-font text-glow-prism">
+        <h2 class="display-5 fw-bold text-uppercase text-body mb-3 gothic-font text-glow-prism">
             The 1985 Phenomenon
         </h2>
-        <p class="lead text-white-75 mx-auto" style="max-width: 800px;">
+        <p class="lead text-secondary mx-auto" style="max-width: 800px;">
             Backed by immense generational wealth and a distribution-only record deal, Fractured Prisms bypassed the traditional club circuit entirely. Their mythos was cemented by two monumental events.
         </p>
     </div>
@@ -146,8 +146,8 @@ if ($eras) {
             <div class="card h-100 border-secondary bg-prism-dark hover-lift overflow-hidden">
                 <div class="card-body p-4 text-center d-flex flex-column border-top border-prism">
                     <h3 class="h4 text-primary fw-bold text-uppercase mb-1 gothic-font">1883 (The Rock Opera)</h3>
-                    <p class="small text-white-50 font-monospace mb-3">Released: 1984 // 2-Disc Concept Album</p>
-                    <p class="text-white-75 small mb-0">
+                    <p class="small text-muted font-monospace mb-3">Released: 1984 // 2-Disc Concept Album</p>
+                    <p class="text-secondary small mb-0">
                         Following the massive success of <em>Carnaby Street</em>, Rhys and Claire plunged fully into their psychological sanctuary. The result was a sprawling, 2-disc rock opera set entirely within the gaslamp-lit halls of the Victorian-era Hollow Square, bringing the rest of their deceased family "back to life" through complex synthesiser arrangements.
                     </p>
                 </div>
@@ -158,8 +158,8 @@ if ($eras) {
             <div class="card h-100 border-secondary bg-prism-dark hover-lift overflow-hidden">
                 <div class="card-body p-4 text-center d-flex flex-column border-top border-prism">
                     <h3 class="h4 text-primary fw-bold text-uppercase mb-1 gothic-font">Live at Independence Stadium</h3>
-                    <p class="small text-white-50 font-monospace mb-3">Philadelphia, PA // 1985</p>
-                    <p class="text-white-75 small mb-0">
+                    <p class="small text-muted font-monospace mb-3">Philadelphia, PA // 1985</p>
+                    <p class="text-secondary small mb-0">
                         Their very first live performance was not in a pub or a theater, but a sold-out, 90,000-seat stadium. With no opening act, they rented the venue directly. The concert was a masterclass in controlled sensory environments, allowing Claire to perform safely while delivering a legendary, once-in-a-lifetime physical manifestation of their studio sound.
                     </p>
                 </div>
@@ -171,8 +171,8 @@ if ($eras) {
 <?php if (!empty($allAlbums)): ?>
 <div class="container py-5 border-bottom border-secondary border-opacity-25">
     <div class="text-center mb-5">
-        <h2 class="fw-bold text-uppercase text-light gothic-font">The Vault</h2>
-        <p class="text-white-50 font-monospace small">Swipe through the historical discography of Fractured Prisms.</p>
+        <h2 class="fw-bold text-uppercase text-body gothic-font">The Vault</h2>
+        <p class="text-muted font-monospace small">Swipe through the historical discography of Fractured Prisms.</p>
     </div>
 
     <div id="discographyCarousel" class="carousel slide carousel-fade bg-prism-dark rounded shadow-sm border border-prism p-4" data-bs-ride="carousel">
@@ -183,13 +183,13 @@ if ($eras) {
                         <div class="col-sm-5 text-center mb-3 mb-sm-0">
                             <img src="<?php echo htmlspecialchars($album['img']); ?>" class="img-fluid rounded shadow border border-secondary" alt="<?php echo htmlspecialchars($album['title']); ?>" style="max-height: 250px;">
                         </div>
-                        <div class="col-sm-6 text-center text-sm-start text-light">
+                        <div class="col-sm-6 text-center text-sm-start text-body">
                             <span class="text-primary fw-bold font-monospace small text-uppercase"><?php echo htmlspecialchars($album['era_label']); ?></span>
-                            <h3 class="fw-bold mb-1 gothic-font"><?php echo htmlspecialchars($album['title']); ?></h3>
-                            <p class="text-white-50 mb-3 font-monospace small">Released: <?php echo htmlspecialchars($album['year']); ?> <?php echo isset($album['extra']) ? $album['extra'] : ''; ?></p>
+                            <h3 class="fw-bold mb-1 gothic-font text-glow-prism"><?php echo htmlspecialchars($album['title']); ?></h3>
+                            <p class="text-muted mb-3 font-monospace small">Released: <?php echo htmlspecialchars($album['year']); ?> <?php echo isset($album['extra']) ? $album['extra'] : ''; ?></p>
                             
                             <div class="d-flex flex-wrap gap-2 justify-content-center justify-content-sm-start">
-                                <a href="<?php echo htmlspecialchars($album['url']); ?>" class="btn btn-outline-light rounded-pill px-4 font-monospace small">
+                                <a href="<?php echo htmlspecialchars($album['url']); ?>" class="btn btn-outline-primary rounded-pill px-4 font-monospace small">
                                     <i class="fa-duotone fa-compact-disc me-2"></i>Explore Record
                                 </a>
                                 
@@ -234,7 +234,7 @@ if ($eras) {
                 <div class="card-body d-flex flex-column text-center p-4">
                     <div class="mb-3 text-secondary"><i class="fa-duotone fa-ghost fa-3x"></i></div>
                     <h3 class="fw-bold text-primary gothic-font">The Residents</h3>
-                    <p class="text-white-75 small">
+                    <p class="text-muted small">
                         Meet Claire and Rhys Manning: the surviving siblings who built a mechanical sanctuary to resurrect their family's sound.
                     </p>
                     <a href="<?php echo $root; ?>/band" class="btn btn-outline-primary mt-auto rounded-pill font-monospace small">View Bios</a>
@@ -246,7 +246,7 @@ if ($eras) {
                 <div class="card-body d-flex flex-column text-center p-4">
                     <div class="mb-3 text-secondary"><i class="fa-duotone fa-book-journal-whills fa-3x"></i></div>
                     <h3 class="fw-bold text-primary gothic-font">The Lore</h3>
-                    <p class="text-white-75 small">
+                    <p class="text-muted small">
                         Uncover the tragedy of the 1981 Shap Fell disaster, the transatlantic escape to Maryland, and the 100-year time slip.
                     </p>
                     <a href="<?php echo $root; ?>/story" class="btn btn-outline-primary mt-auto rounded-pill font-monospace small">Read History</a>
@@ -258,7 +258,7 @@ if ($eras) {
                 <div class="card-body d-flex flex-column text-center p-4">
                     <div class="mb-3 text-secondary"><i class="fa-duotone fa-compact-disc fa-3x"></i></div>
                     <h3 class="fw-bold text-primary gothic-font">The Discography</h3>
-                    <p class="text-white-75 small">
+                    <p class="text-muted small">
                         From the 1983 mechanical resurrection of <em>Carnaby Street</em> to the sprawling 2-disc rock opera of <em>1883</em>. Explore their catalog.
                     </p>
                     <a href="<?php echo $root; ?>/discography" class="btn btn-outline-primary mt-auto rounded-pill font-monospace small">View Albums</a>
@@ -279,7 +279,7 @@ if ($eras) {
 }
 .pulse-icon {
     animation: pulse 2s infinite;
-    color: #b19cd9; /* Lavender glow */
+    color: var(--bs-primary);
 }
 
 /* --- CAROUSEL DROPDOWN FIX --- */
@@ -293,7 +293,7 @@ if ($eras) {
 
 /* Ensure carousel arrows float above content and react to the dynamic theme */
 .custom-carousel-nav {
-    z-index: 1050; /* Forces them above the visible overflow */
+    z-index: 1050; 
     opacity: 0.6;
     transition: opacity var(--transition-speed) ease, transform var(--transition-speed) ease;
 }
@@ -302,6 +302,6 @@ if ($eras) {
     transform: scale(1.2);
 }
 .custom-carousel-nav i {
-    text-shadow: 0 0 10px rgba(var(--bs-primary-rgb), 0.5); /* Subtle thematic glow */
+    text-shadow: 0 0 10px rgba(var(--bs-primary-rgb), 0.5); 
 }
 </style>
