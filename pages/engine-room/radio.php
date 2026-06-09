@@ -168,11 +168,11 @@ if ($d >= 2) {
                 <i class="fa-solid fa-play me-2"></i>TUNE IN
             </button>
         </div>
-    </div>
-    <div class="mt-3 text-secondary font-monospace small" style="letter-spacing: 0.5px;">
-        <i class="fa-solid fa-plane-departure me-2 text-info"></i>ESTIMATED BLOCK TIME: <span class="text-white fw-bold"><?php echo $block_time; ?></span>
-        <div class="mt-1 text-white-50 fst-italic" style="font-size: 0.9em;">
-            // <?php echo $context_string; ?>
+        <div class="mt-3 text-secondary font-monospace small" style="letter-spacing: 0.5px;">
+            <i class="fa-solid fa-plane-departure me-2 text-info"></i>ESTIMATED BLOCK TIME: <span class="text-white fw-bold"><?php echo $block_time; ?></span>
+            <div class="mt-1 text-white-50 fst-italic" style="font-size: 0.9em;">
+                // <?php echo $context_string; ?>
+            </div>
         </div>
     </div>
     <div class="container py-5">
