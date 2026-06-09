@@ -61,64 +61,66 @@ if ($eras) {
 </div>
 
 <div class="container py-5 border-bottom border-secondary border-opacity-25 position-relative" style="z-index: 1050;">
-    <div class="bg-body-tertiary rounded shadow-sm border border-prism">
-        <div class="row g-0 align-items-center">
+    <div class="bg-transparent rounded shadow-sm border border-prism overflow-hidden">
+        <div class="row g-0 align-items-stretch">
             
             <div class="col-lg-6 d-none d-lg-block">
                 <img src="https://assets.raggiesoft.com/engine-room-records/artists/fractured-prisms/1983-carnaby-street/album-art.jpg" 
                      alt="Claire and Rhys Manning at The Hollow Square" 
-                     class="img-fluid h-100 object-fit-cover rounded-start"
+                     class="img-fluid h-100 object-fit-cover"
                      style="min-height: 400px; filter: grayscale(20%) contrast(1.1);">
             </div>
 
-            <div class="col-lg-6 p-4 p-md-5 text-center text-lg-start bg-prism-dark text-body rounded-end">
-                <span class="badge border border-prism text-primary mb-3 px-3 py-2 text-uppercase font-monospace">
-                    <i class="fa-solid fa-satellite-dish me-2 pulse-icon"></i>Now Streaming
-                </span>
-                <h2 class="display-5 fw-bold text-uppercase mb-3 gothic-font">The Gates Are Open</h2>
-                <p class="lead text-muted mb-4 font-monospace small">
-                    The complete, uncompromised discography of Fractured Prisms has officially cleared the global distribution network. Step into the gaslamp fog and experience the 100-year echo.
-                </p>
-                
-                <img src="https://assets.raggiesoft.com/engine-room-records/artists/fractured-prisms/1983-carnaby-street/album-art.jpg" 
-                     alt="Fractured Prisms Art" 
-                     class="img-fluid rounded mb-4 d-block d-lg-none shadow-sm border border-secondary">
+            <div class="col-lg-6 p-4 p-md-5 d-flex flex-column justify-content-center text-center text-lg-start bg-prism-dark text-body">
+                <div>
+                    <span class="badge border border-prism text-primary mb-3 px-3 py-2 text-uppercase font-monospace">
+                        <i class="fa-solid fa-satellite-dish me-2 pulse-icon"></i>Now Streaming
+                    </span>
+                    <h2 class="display-5 fw-bold text-uppercase mb-3 gothic-font">The Gates Are Open</h2>
+                    <p class="lead text-muted mb-4 font-monospace small">
+                        The complete, uncompromised discography of Fractured Prisms has officially cleared the global distribution network. Step into the gaslamp fog and experience the 100-year echo.
+                    </p>
+                    
+                    <img src="https://assets.raggiesoft.com/engine-room-records/artists/fractured-prisms/1983-carnaby-street/album-art.jpg" 
+                         alt="Fractured Prisms Art" 
+                         class="img-fluid rounded mb-4 d-block d-lg-none shadow-sm border border-secondary">
 
-                <style>
-                    .btn-facebook {
-                        background-color: #1877F2;
-                        color: #ffffff;
-                        border: 1px solid #1877F2;
-                        transition: all 0.2s ease-in-out;
-                    }
-                    .btn-facebook:hover, .btn-facebook:focus {
-                        background-color: #166FE5;
-                        color: #ffffff;
-                        border-color: #166FE5;
-                    }
-                    .btn-facebook svg { width: 1.25rem; height: 1.25rem; }
-                </style>
+                    <style>
+                        .btn-facebook {
+                            background-color: #1877F2;
+                            color: #ffffff;
+                            border: 1px solid #1877F2;
+                            transition: all 0.2s ease-in-out;
+                        }
+                        .btn-facebook:hover, .btn-facebook:focus {
+                            background-color: #166FE5;
+                            color: #ffffff;
+                            border-color: #166FE5;
+                        }
+                        .btn-facebook svg { width: 1.25rem; height: 1.25rem; }
+                    </style>
 
-                <div class="d-flex flex-column align-items-center align-items-lg-start">
-                    <div class="d-flex flex-wrap justify-content-center justify-content-lg-start gap-3">
-                        <?php
-                            $storeProps = [
-                                'type' => 'artist', 
-                                'size' => 'large',
-                                'spotify' => '', 
-                                'apple'   => '',
-                                'amazon'  => '',
-                                'youtube' => ''
-                            ];
-                            include ROOT_PATH . '/includes/components/store-button.php';
-                        ?>
+                    <div class="d-flex flex-column align-items-center align-items-lg-start">
+                        <div class="d-flex flex-wrap justify-content-center justify-content-lg-start gap-3">
+                            <?php
+                                $storeProps = [
+                                    'type' => 'artist', 
+                                    'size' => 'large',
+                                    'spotify' => '', 
+                                    'apple'   => '',
+                                    'amazon'  => '',
+                                    'youtube' => ''
+                                ];
+                                include ROOT_PATH . '/includes/components/store-button.php';
+                            ?>
 
-                        <a href="https://facebook.com/The.Fractured.Prisms" target="_blank" class="btn btn-facebook btn-lg shadow-sm px-4 fw-bold d-inline-flex align-items-center font-monospace small">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="me-2" viewBox="0 0 16 16">
-                                <path d="M16 8.049c0-4.446-3.58-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
-                            </svg>
-                            Join the Square
-                        </a>
+                            <a href="https://facebook.com/The.Fractured.Prisms" target="_blank" class="btn btn-facebook btn-lg shadow-sm px-4 fw-bold d-inline-flex align-items-center font-monospace small">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="me-2" viewBox="0 0 16 16">
+                                    <path d="M16 8.049c0-4.446-3.58-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+                                </svg>
+                                Join the Square
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
