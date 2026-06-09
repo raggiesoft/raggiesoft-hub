@@ -54,18 +54,6 @@
             </div>
 
         </div>
-
-        <div class="row mt-5 pt-4 border-top border-prism border-opacity-50 align-items-center" style="font-family: var(--font-tech);">
-            <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                <p class="small mb-0" style="color: var(--bs-secondary);">
-                    &copy; <?php echo date('Y'); ?> RaggieSoft Media / Engine Room Records. All rights reserved.
-                </p>
-            </div>
-            <div class="col-md-6 text-center text-md-end">
-                <a href="/raggiesoft-media/licensing" class="text-decoration-none small prism-footer-link me-3">Licensing</a>
-                <a href="/about/terms" class="text-decoration-none small prism-footer-link">Terms of Broadcast</a>
-            </div>
-        </div>
     </div>
 </footer>
 
