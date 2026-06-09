@@ -33,44 +33,50 @@ $currentFooter = ROOT_PATH . '/includes/components/footers/' . $footerFile . '.p
 if (!file_exists($currentFooter)) {
     $currentFooter = ROOT_PATH . '/includes/components/footers/footer-default.php';
 }
+
+// Determine if the current theme demands a forced dark legal band
+$isDarkTheme = (isset($currentPageTheme) && in_array($currentPageTheme, ['dark', 'ad-astra']));
 ?>
 
-<div id="visual-footer-container">
-    <?php include $currentFooter; ?>
-</div>
+<footer id="elara-master-footer">
+    <div id="visual-footer-container">
+        <?php include $currentFooter; ?>
+    </div>
 
-<div id="global-legal-band" class="bg-body-secondary border-top py-3 position-relative z-1">
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col-lg-6 text-center text-lg-start small text-body mb-3 mb-lg-0">
-                <div>
-                    <span class="fw-bold">&copy; 2008 &ndash; <?php echo date("Y"); ?> Michael Ragsdale.</span>
-                    <span class="mx-2 opacity-50 d-none d-lg-inline">|</span>
-                    <span class="opacity-75 d-block d-lg-inline mt-1 mt-lg-0" style="font-size: 0.9em;">
-                        Content: <a href="/raggiesoft-media/licensing" class="text-decoration-none link-body-emphasis border-bottom">CC BY-SA 4.0</a> &bull; 
-                        Code: <a href="/raggiesoft-media/licensing" class="text-decoration-none link-body-emphasis border-bottom">MIT</a>
-                    </span>
+    <div id="global-legal-band" class="bg-body-secondary border-top py-3 position-relative z-1" <?php echo $isDarkTheme ? 'data-bs-theme="dark"' : ''; ?>>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 text-center text-lg-start small text-body mb-3 mb-lg-0">
+                    <div>
+                        <span class="fw-bold">&copy; 2008 &ndash; <?php echo date("Y"); ?> Michael Ragsdale.</span>
+                        <span class="mx-2 opacity-50 d-none d-lg-inline">|</span>
+                        <span class="opacity-75 d-block d-lg-inline mt-1 mt-lg-0" style="font-size: 0.9em;">
+                            Content: <a href="/raggiesoft-media/licensing" class="text-decoration-none link-body-emphasis border-bottom">CC BY-SA 4.0</a> &bull; 
+                            Code: <a href="/raggiesoft-media/licensing" class="text-decoration-none link-body-emphasis border-bottom">MIT</a>
+                        </span>
+                    </div>
+                    <div class="mt-2 text-body-secondary opacity-75" style="font-size: 0.85em;">
+                        RaggieSoft&trade;, The Stardust Engine&trade;, and Engine Room Records&trade; are trademarks of Michael P. Ragsdale.
+                    </div>
                 </div>
-                <div class="mt-2 text-body-secondary opacity-75" style="font-size: 0.85em;">
-                    RaggieSoft&trade;, The Stardust Engine&trade;, and Engine Room Records&trade; are trademarks of Michael P. Ragsdale.
+                <div class="col-lg-6 text-center text-lg-end small mt-2 mt-lg-0">
+                    <a href="/raggiesoft-media" class="text-decoration-none link-body-emphasis me-3 hover-opacity fw-bold">RaggieSoft Media</a>
+                    <a href="/raggiesoft-media/careers" class="text-decoration-none text-danger fw-bold me-3 hover-opacity">
+                        <i class="fa-solid fa-shield-exclamation me-1" aria-hidden="true"></i>Careers (Fraud Alert)
+                    </a>
+                    <a href="/about/privacy" class="text-decoration-none link-body-emphasis me-3 hover-opacity">Privacy</a>
+                    <a href="/about/terms" class="text-decoration-none link-body-emphasis me-3 hover-opacity">Terms</a>
+                    <a href="/raggiesoft-media/licensing" class="text-decoration-none link-body-emphasis me-3 hover-opacity">Licenses</a>
+                    <a href="/contact" class="text-decoration-none link-body-emphasis me-3 hover-opacity">Contact</a>
+                    <a href="/about/ai-disclaimer" class="text-decoration-none text-primary fw-bold text-uppercase letter-spacing-1 d-inline-block mt-2 mt-md-0" style="font-size: 0.9em;">
+                        <i class="fa-duotone fa-robot-astromech me-1"></i>AI Disclaimer
+                    </a>
                 </div>
-            </div>
-            <div class="col-lg-6 text-center text-lg-end small mt-2 mt-lg-0">
-                <a href="/raggiesoft-media" class="text-decoration-none link-body-emphasis me-3 hover-opacity fw-bold">RaggieSoft Media</a>
-                <a href="/raggiesoft-media/careers" class="text-decoration-none text-danger fw-bold me-3 hover-opacity">
-                    <i class="fa-solid fa-shield-exclamation me-1" aria-hidden="true"></i>Careers (Fraud Alert)
-                </a>
-                <a href="/about/privacy" class="text-decoration-none link-body-emphasis me-3 hover-opacity">Privacy</a>
-                <a href="/about/terms" class="text-decoration-none link-body-emphasis me-3 hover-opacity">Terms</a>
-                <a href="/raggiesoft-media/licensing" class="text-decoration-none link-body-emphasis me-3 hover-opacity">Licenses</a>
-                <a href="/contact" class="text-decoration-none link-body-emphasis me-3 hover-opacity">Contact</a>
-                <a href="/about/ai-disclaimer" class="text-decoration-none text-primary fw-bold text-uppercase letter-spacing-1 d-inline-block mt-2 mt-md-0" style="font-size: 0.9em;">
-                    <i class="fa-duotone fa-robot-astromech me-1"></i>AI Disclaimer
-                </a>
             </div>
         </div>
     </div>
-</div>
+</footer>
+
 
 <div id="global-player-zone" class="fixed-bottom" style="z-index: 1050;">
     
