@@ -9,7 +9,7 @@ $current_req = $_SERVER['REQUEST_URI'];
 $storyLinks = [
     'history' => [
         'title' => 'Full History',
-        'url' => '/engine-room/artists/stardust-engine/story/overview', // Acts as the section home
+        'url' => '/engine-room/artists/stardust-engine/story', // Acts as the section home
         'icon' => 'fa-duotone fa-book-open'
     ],
     'cpi' => [
