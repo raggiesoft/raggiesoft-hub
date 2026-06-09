@@ -110,6 +110,48 @@ foreach ($shuffle_blocks as $block) {
         $master_playlist[] = $track;
     }
 }
+
+// --- CALCULATE TOTAL BROADCAST DURATION ---
+$total_seconds = 0;
+
+foreach ($master_playlist as $track) {
+    if (!empty($track['duration'])) {
+        $parts = explode(':', $track['duration']);
+        if (count($parts) === 2) {
+            $total_seconds += ((int)$parts[0] * 60) + (int)$parts[1];
+        } elseif (count($parts) === 3) {
+            $total_seconds += ((int)$parts[0] * 3600) + ((int)$parts[1] * 60) + (int)$parts[2];
+        }
+    }
+}
+
+// Convert to Days, Hours, Minutes
+$d = floor($total_seconds / 86400);
+$h = floor(($total_seconds % 86400) / 3600);
+$m = floor(($total_seconds % 3600) / 60);
+
+// Build the "Block Time" string
+$time_strings = [];
+if ($d > 0) $time_strings[] = $d . ($d === 1 ? " Day" : " Days");
+if ($h > 0) $time_strings[] = $h . ($h === 1 ? " Hour" : " Hours");
+if ($m > 0 || empty($time_strings)) $time_strings[] = $m . " Minutes";
+
+$block_time = implode(', ', $time_strings);
+
+// The Reality Check (Scales as your catalog grows)
+if ($d >= 2) {
+    $context_string = "A deep-space orbital deployment.";
+} elseif ($d >= 1) {
+    $context_string = "A multi-day transoceanic transit.";
+} elseif ($h >= 12) {
+    $context_string = "An ultra-long-haul global flight.";
+} elseif ($h >= 6) {
+    $context_string = "A full closing shift at the recreation center.";
+} elseif ($h >= 3) {
+    $context_string = "Enough fuel to clear the Virginia state line.";
+} else {
+    $context_string = "A quick regional hop.";
+}
 ?>
 
 <div class="container-fluid p-0">
