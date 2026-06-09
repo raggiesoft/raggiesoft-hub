@@ -3,7 +3,6 @@
     "site": "fractured-prisms",
     "theme": "fractured-prisms",
     "brandFont": ["Playfair Display", "serif"],
-    "siteName": "Fractured Prisms",
     "headerMenu": "engine-room/artists/fractured-prisms/header-prisms",
     "footer": "engine-room/artists/fractured-prisms/footer-prisms",
     "showSidebar": true,
