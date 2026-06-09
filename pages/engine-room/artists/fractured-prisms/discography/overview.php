@@ -1,102 +1,132 @@
 <?php
-// pages/engine-room/artists/origin/discography.php
-// The Audio Archive for Origin.
-// Context: Contains the "Safe Harbor" source track.
+// pages/engine-room/artists/fractured-prisms/discography/overview.php
+// v1.0 - Fractured Prisms Discography Archive
 
-$pageTitle = "Origin - Discography Archive";
+$pageTitle = "Discography Overview - Fractured Prisms";
+$bandName = "Fractured Prisms";
+$baseUrl = "https://raggiesoft.com"; // Adjust to your actual production domain
+
+// Fetch the albums.json file directly from the CDN
+$jsonUrl = 'https://assets.raggiesoft.com/engine-room-records/artists/fractured-prisms/albums.json';
+$jsonData = @file_get_contents($jsonUrl);
+
+$discographyLibrary = [];
+$schemaAlbums = [];
+
+// Decode the JSON into an associative array
+if ($jsonData !== false) {
+    $discographyLibrary = json_decode($jsonData, true);
+    
+    // Build the Schema.org array dynamically
+    if (is_array($discographyLibrary)) {
+        foreach ($discographyLibrary as $eraData) {
+            if (empty($eraData['albums'])) continue;
+            
+            foreach ($eraData['albums'] as $album) {
+                $schemaAlbums[] = [
+                    "@type" => "MusicAlbum",
+                    "name" => $album['title'],
+                    "datePublished" => (string)$album['year'],
+                    "url" => $baseUrl . $album['url']
+                ];
+            }
+        }
+    }
+}
+
+// Construct the final MusicGroup Schema
+$musicGroupSchema = [
+    "@context" => "https://schema.org",
+    "@type" => "MusicGroup",
+    "name" => $bandName,
+    "album" => $schemaAlbums
+];
 ?>
+
+<script type="application/ld+json">
+<?php echo json_encode($musicGroupSchema, JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT); ?>
+</script>
 
 <div class="container py-5">
     
-    <div class="row mb-5">
-        <div class="col-12">
-            <h1 class="display-3 fw-bold text-uppercase text-body-emphasis mb-0" style="font-family: 'Audiowide', sans-serif;">
-                Audio Archive
-            </h1>
-            <p class="lead text-body-secondary font-monospace">
-                MASTER TAPES // RECOVERED 1998 // DIGITAL TRANSFER
-            </p>
-        </div>
+    <div class="text-center mb-5">
+        <h1 class="display-3 fw-bold text-uppercase text-glow-prism gothic-font mb-3">
+            The Archives
+        </h1>
+        <p class="lead text-secondary mx-auto" style="max-width: 800px; font-family: var(--font-tech);">
+            The complete discography of Fractured Prisms, from the mechanical isolation of the Maryland sanctuary to their sprawling, gaslamp-lit rock operas.
+        </p>
     </div>
 
-    <div class="card bg-body-tertiary border-secondary shadow-lg mb-5">
-        <div class="row g-0">
-            <div class="col-md-4 bg-dark d-flex align-items-center justify-content-center text-secondary border-end border-secondary" style="min-height: 300px;">
-                <div class="text-center">
-                    <i class="fa-duotone fa-compact-disc fa-5x mb-3 opacity-50"></i>
-                    <p class="font-monospace small mb-0">ARTWORK PENDING</p>
-                    <p class="font-monospace small opacity-50">REF: ERR-83-LP01</p>
-                </div>
-            </div>
+    <?php foreach ($discographyLibrary as $eraKey => $eraData): ?>
+        
+        <?php if (empty($eraData['albums'])) continue; ?>
+
+        <section id="<?php echo htmlspecialchars($eraKey); ?>" class="mb-5">
             
-            <div class="col-md-8">
-                <div class="card-header bg-body-secondary border-bottom border-secondary">
-                    <div class="d-flex justify-content-between align-items-center">
-                        <h2 class="h4 fw-bold mb-0 text-uppercase">Origin (Self-Titled)</h2>
-                        <span class="badge bg-secondary rounded-0">1983</span>
-                    </div>
-                </div>
-                <div class="card-body p-0">
-                    <div class="list-group list-group-flush">
-                        
-                        <div class="list-group-item bg-transparent p-4">
-                            <div class="d-flex justify-content-between align-items-start mb-2">
-                                <div>
-                                    <h5 class="fw-bold text-primary mb-1">01. Kaleidoscope Sun</h5>
-                                    <small class="text-body-secondary font-monospace">
-                                        <i class="fa-duotone fa-clock me-1"></i>04:12 &bull; 120 BPM &bull; Key: D Maj
-                                    </small>
-                                </div>
-                                <span class="badge bg-warning text-dark border border-warning">KEY TRACK</span>
-                            </div>
-                            
-                            <div class="bg-black rounded p-2 mb-3 d-flex align-items-center border border-secondary">
-                                <button class="btn btn-sm btn-primary rounded-circle me-3"><i class="fa-solid fa-play"></i></button>
-                                <div class="progress w-100" style="height: 4px;">
-                                    <div class="progress-bar bg-primary" role="progressbar" style="width: 0%"></div>
-                                </div>
-                            </div>
-
-                            <button class="btn btn-link btn-sm text-body-secondary text-decoration-none p-0" type="button" data-bs-toggle="collapse" data-bs-target="#lyrics-kaleidoscope">
-                                <i class="fa-duotone fa-file-lines me-1"></i>View Lyrics & Notes
-                            </button>
-
-                            <div class="collapse mt-3" id="lyrics-kaleidoscope">
-                                <div class="card card-body bg-black text-white-75 font-monospace small border-secondary">
-                                    <div class="row">
-                                        <div class="col-md-7 border-end border-secondary">
-                                            <strong class="text-white text-uppercase d-block mb-2">Lyrics</strong>
-                                            <p class="mb-2">The city sleeps in shades of grey, another dawn begins...</p>
-                                            <p class="text-warning mb-2">
-                                                [Chorus]<br>
-                                                Do you hear it? A whisper on the wind, a melody so clear?<br>
-                                                (Oh, the true light gleams...)
-                                            </p>
-                                            <p class="text-info mb-2">[Flute Interlude - The "Safe Harbor" Signal]</p>
-                                            <p class="mb-0">Through fractured prisms, light divides, in patterns sharp and bright...</p>
-                                        </div>
-                                        <div class="col-md-5 ps-3">
-                                            <strong class="text-white text-uppercase d-block mb-2">Production Data</strong>
-                                            <ul class="list-unstyled mb-0 opacity-75">
-                                                <li>> <strong>Style:</strong> 80s Art Rock / Prog Pop</li>
-                                                <li>> <strong>Vocals:</strong> Male, Cockney Accent</li>
-                                                <li>> <strong>Drums:</strong> Gated Reverb Snare</li>
-                                                <li>> <strong>Feature:</strong> Flute Solo (Bridge)</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="list-group-item bg-transparent p-3 text-center text-body-secondary small fst-italic">
-                            ...Additional tracks pending digital transfer...
-                        </div>
-
-                    </div>
+            <h2 class="display-6 fw-bold text-secondary text-uppercase border-bottom border-prism pb-2 mb-3 gothic-font">
+                <?php echo htmlspecialchars($eraData['heading']); ?>
+            </h2>
+            
+            <div class="row mb-4">
+                <div class="col-lg-8">
+                    <p class="fs-5 text-muted" style="font-family: var(--font-tech);">
+                        <?php echo htmlspecialchars($eraData['description']); ?>
+                    </p>
                 </div>
             </div>
-        </div>
-    </div>
+
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                <?php foreach ($eraData['albums'] as $album): ?>
+                    <div class="col">
+                        <div class="card h-100 lore-card rounded-0 shadow-sm overflow-hidden border-top-0 border-end-0 border-bottom-0">
+                            
+                            <div class="position-relative">
+                                <img src="<?php echo htmlspecialchars($album['img'] ?? 'https://assets.raggiesoft.com/common/images/defaults/vinyl-placeholder.jpg'); ?>" 
+                                     class="card-img-top border-bottom border-prism" 
+                                     alt="<?php echo htmlspecialchars($album['title']); ?>"
+                                     style="aspect-ratio: 1/1; object-fit: cover;">
+                            </div>
+
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title fw-bold mb-1 gothic-font" style="color: var(--bs-body-color);">
+                                    <?php echo htmlspecialchars($album['title']); ?>
+                                </h5>
+                                <p class="card-text small text-muted mb-3" style="font-family: var(--font-tech);">
+                                    Released: <?php echo htmlspecialchars($album['year']); ?>
+                                </p>
+                                
+                                <div class="mt-auto d-flex flex-column gap-2">
+                                    <a href="<?php echo htmlspecialchars($album['url']); ?>" class="btn btn-sm btn-outline-primary w-100 rounded-0" style="font-family: var(--font-tech); text-transform: uppercase;">
+                                        <i class="fa-duotone fa-compact-disc me-2"></i>Open Archive
+                                    </a>
+
+                                    <?php 
+                                    // DYNAMIC DSP BUTTONS
+                                    $hasStores = !empty($album['spotifyId']) || !empty($album['appleId']) || !empty($album['amazonId']) || !empty($album['youtubeId']);
+                                    
+                                    if ($hasStores) {
+                                        echo '<div class="d-flex flex-wrap gap-2 justify-content-center mt-1 pt-2 border-top border-prism border-opacity-50">';
+                                        $storeProps = [
+                                            'type'    => 'album',
+                                            'size'    => 'small', 
+                                            'spotify' => $album['spotifyId'] ?? '',
+                                            'apple'   => $album['appleId'] ?? '',
+                                            'amazon'  => $album['amazonId'] ?? '',
+                                            'youtube' => $album['youtubeId'] ?? ''
+                                        ];
+                                        include ROOT_PATH . '/includes/components/store-button.php';
+                                        echo '</div>';
+                                    }
+                                    ?>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <?php endforeach; ?>
+            </div>
+        </section>
+
+    <?php endforeach; ?>
 
 </div>
