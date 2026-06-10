@@ -121,7 +121,7 @@ $imagesJson = htmlspecialchars(json_encode($heroImages), ENT_QUOTES, 'UTF-8');
                             the <strong>Elara</strong> router, or the <strong>Suno/Gemini</strong> workflow?
                         </p>
                         <div class="d-grid mt-auto">
-                            <a href="mailto:hireme@michaelpragsdale.com?subject=RaggieSoft: Project Inquiry" class="btn btn-info btn-lg rounded-pill fw-bold text-dark">
+                            <a href="mailto:connect@michaelpragsdale.com?subject=RaggieSoft: Project Inquiry" class="btn btn-info btn-lg rounded-pill fw-bold text-dark">
                                 <i class="fa-solid fa-paper-plane me-2"></i>Send Message
                             </a>
                         </div>

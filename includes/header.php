@@ -289,13 +289,24 @@ if (isset($customPageAssets) && is_array($customPageAssets)) {
 
     <script>
     (function() {
+        // Check if PHP already forced a theme before JS takes over
+        const isForcedByServer = document.documentElement.hasAttribute('data-bs-theme');
+        
         const getPreferredTheme = () => {
             const storedTheme = localStorage.getItem('theme');
             if (storedTheme) return storedTheme;
             return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
         };
-        const setTheme = theme => document.documentElement.setAttribute('data-bs-theme', theme);
+        
+        const setTheme = theme => {
+            // Only apply the dynamic theme if the server didn't explicitly force one
+            if (!isForcedByServer) {
+                document.documentElement.setAttribute('data-bs-theme', theme);
+            }
+        };
+        
         setTheme(getPreferredTheme());
+        
         window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => {
             const storedTheme = localStorage.getItem('theme');
             if (storedTheme !== 'light' && storedTheme !== 'dark') setTheme(getPreferredTheme());
