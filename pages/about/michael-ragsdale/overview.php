@@ -120,9 +120,9 @@ global $cdn_root;
                         <a href="mailto:hireme@michaelpragsdale.com" class="d-block text-body-emphasis fs-6 fw-bold mb-3 text-break text-decoration-none hover-opacity">
                             <i class="fa-solid fa-envelope text-success me-2"></i>hireme@michaelpragsdale.com
                         </a>
-                        <a href="https://outlook.office.com/bookwithme/user/67bc6cb4baa248959b3303fa54ee7239@michaelpragsdale.com/meetingtype/QJPG_FQxOUOnFjCcEgu4sw2?anonymous&ismsaljsauthenabled&ep=mlink" target="_blank" class="btn btn-success w-100 rounded-pill fw-bold shadow-sm">
+                        <!--<a href="https://outlook.office.com/bookwithme/user/67bc6cb4baa248959b3303fa54ee7239@michaelpragsdale.com/meetingtype/QJPG_FQxOUOnFjCcEgu4sw2?anonymous&ismsaljsauthenabled&ep=mlink" target="_blank" class="btn btn-success w-100 rounded-pill fw-bold shadow-sm">
                             <i class="fa-solid fa-calendar-clock me-2"></i>Schedule Interview
-                        </a>
+                        </a>-->
                     </div>
                 </div>
             </div>
