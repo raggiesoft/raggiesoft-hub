@@ -161,7 +161,7 @@ $pageTitle = "RaggieSoft Media | IP & Asset Management";
                     <i class="fa-solid fa-microchip position-absolute bottom-0 start-0 m-3 text-white fs-4" style="filter: drop-shadow(0 2px 4px rgba(0,0,0,0.8));"></i>
                 </div>
                 <div class="card-body p-4">
-                    <h3 class="h5 fw-bold text-body-emphasis mb-2">Elara Architecture</h3>
+                    <h3 class="h5 fw-bold text-body-emphasis mb-2">Stardust Engine CMS</h3>
                     <p class="small text-secondary mb-0">
                         The open-source (MIT) infrastructure division. We design lightweight, high-performance PHP frameworks and Vanilla JS SPA routers (like Elara) to replace bloated legacy systems.
                     </p>
