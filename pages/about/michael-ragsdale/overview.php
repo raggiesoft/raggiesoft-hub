@@ -99,9 +99,9 @@ global $cdn_root;
                     
                     <ul class="list-unstyled mb-4 font-monospace">
                         <li class="mb-3">
-                            <h3 class="text-uppercase small text-success-emphasis fw-bold tracking-wider mb-0">Compensation Target</h3>
-                            <div class="fs-5 text-body-emphasis fw-bold">$85,000 Base Salary</div>
-                            <div class="small text-secondary fst-italic">Minimum floor: $75,000</div>
+                            <h3 class="text-uppercase small text-success-emphasis fw-bold tracking-wider mb-0">Compensation Alignment</h3>
+                            <div class="fs-5 text-body-emphasis fw-bold">Market Rate / Transparent Bands</div>
+                            <div class="small text-secondary fst-italic">To respect mutual time, all initial inquiries must include the approved compensation band for the role.</div>
                         </li>
                         <li class="mb-3">
                             <h3 class="text-uppercase small text-success-emphasis fw-bold tracking-wider mb-0">Employment Type</h3>
@@ -120,7 +120,11 @@ global $cdn_root;
                         <a href="mailto:hireme@michaelpragsdale.com" class="d-block text-body-emphasis fs-6 fw-bold mb-3 text-break text-decoration-none hover-opacity">
                             <i class="fa-solid fa-envelope text-success me-2"></i>hireme@michaelpragsdale.com
                         </a>
-                        </div>
+                        
+                        <a href="https://outlook.office.com/book/MichaelRagsdaleArchitecturalScreening@raggiesoft.com/s/hsXO14SV2EuCeXFylteKTQ2?ismsaljsauthenabled" target="_blank" rel="noopener noreferrer" class="btn btn-success w-100 rounded-pill fw-bold shadow-sm text-uppercase" style="letter-spacing: 0.5px;">
+                            <i class="fa-solid fa-calendar-clock me-2"></i>Schedule Pre-Screening
+                        </a>
+                    </div>  
                 </div>
             </div>
         </div>
