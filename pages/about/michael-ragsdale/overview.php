@@ -7,6 +7,45 @@
 global $cdn_root;
 ?>
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfilePage",
+  "dateCreated": "2026-06-10",
+  "mainEntity": {
+    "@type": "Person",
+    "name": "Michael P. Ragsdale",
+    "jobTitle": "Systems Architect & Full-Stack Developer",
+    "url": "https://raggiesoft.com/about/michael-ragsdale",
+    "image": "https://assets.raggiesoft.com/raggiesoft-corporate/images/logos/logo-michael.png",
+    "description": "Architecting accessible, resilient systems since 1997. Specializing in custom PHP MVC frameworks, Vanilla JS SPAs, and strict WCAG 2.1 AA compliance.",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Norfolk",
+      "addressRegion": "VA",
+      "addressCountry": "US"
+    },
+    "knowsAbout": [
+      "PHP 8.4",
+      "C# .NET 10",
+      "Linux Server Administration",
+      "WCAG 2.1 AA",
+      "Section 508 Compliance",
+      "DigitalOcean Cloud Infrastructure",
+      "Vanilla JavaScript SPA Development"
+    ],
+    "seeks": {
+      "@type": "Demand",
+      "itemOffered": {
+        "@type": "Service",
+        "name": "W2 Full-Time Systems Architecture"
+      },
+      "description": "Available exclusively for W2 Full-Time roles. Mutual compensation transparency and market-rate budget required prior to screening. Zero availability for 1099/Contract."
+    }
+  }
+}
+</script>
+
 <div class="container py-5" style="max-width: 75rem;">
 
     <div class="row align-items-center mb-5 pb-4 border-bottom border-secondary-subtle">
