@@ -169,26 +169,25 @@ $pageTitle = "Open Source Projects | RaggieSoft Media";
         </div>
 
         <div class="col-lg-6">
-            <div class="card bg-hud-base border-0 shadow-sm h-100">
-                <div class="card-body p-4 p-md-5">
+            <a href="/raggiesoft-media/projects/storetrainer" class="card bg-hud-base border-0 shadow-sm h-100 text-decoration-none hover-lift">
+                <div class="card-body p-4 p-md-5 d-flex flex-column">
                     <div class="d-flex align-items-center mb-3">
-                        <i class="fa-duotone fa-box-archive fa-3x text-secondary me-4" aria-hidden="true"></i>
+                        <i class="fa-duotone fa-floppy-disk fa-3x text-secondary me-4" aria-hidden="true"></i>
                         <div>
                             <h3 class="h5 fw-bold text-body-emphasis mb-1">StoreTrainer</h3>
-                            <p class="small text-secondary font-monospace mb-0 text-uppercase tracking-wider">Archived Product</p>
+                            <p class="small text-secondary font-monospace mb-0 text-uppercase tracking-wider">Legacy / Active</p>
                         </div>
                     </div>
                     <p class="text-body-secondary mb-4">
-                        A legacy retail simulation and training platform designed for cash register operations and policy enforcement. Officially deprecated and moved to cold storage in Q4 2025.
+                        A Windows utility from the 9x era built in Visual Basic 6.0 that orchestrates complex launch sequences for video game memory trainers. It generates custom <code>.STF</code> (INI-formatted) shortcuts to manage execution orders and working directories.
                     </p>
-                    <div class="d-flex align-items-center justify-content-between mt-auto">
-                        <span class="badge bg-secondary text-white">Cold Storage</span>
-                        <a href="/raggiesoft-media/projects/storetrainer" class="btn btn-outline-secondary btn-sm rounded-pill">
-                            View Post-Mortem
-                        </a>
+                    <div class="d-flex flex-wrap gap-2 mt-auto">
+                        <span class="badge bg-secondary-subtle text-secondary-emphasis border border-secondary-subtle">VB6</span>
+                        <span class="badge bg-secondary-subtle text-secondary-emphasis border border-secondary-subtle">Win32 API</span>
+                        <span class="badge bg-secondary-subtle text-secondary-emphasis border border-secondary-subtle">.STF / INI Parser</span>
                     </div>
                 </div>
-            </div>
+            </a>
         </div>
         
     </div>
