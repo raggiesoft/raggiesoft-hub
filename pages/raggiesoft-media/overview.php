@@ -42,176 +42,176 @@ $pageTitle = "RaggieSoft Media | IP & Asset Management";
         position: relative;
         overflow: hidden;
         border-bottom: 1px solid var(--raggie-glass-border);
-        box-shadow: 0 8px 32px rgba(0, 85, 150, 0.05);
-        color: var(--bs-body-color);
-        z-index: 1;
+        box-shadow: 0 8px 32px rgba(0, 130, 230, 0.1);
+        background: linear-gradient(135deg, rgba(0, 130, 230, 0.05) 0%, rgba(0, 130, 230, 0.01) 100%);
+    }
+    
+    [data-bs-theme="dark"] .aero-hero {
+        background: linear-gradient(135deg, rgba(0, 229, 255, 0.05) 0%, rgba(0, 229, 255, 0.01) 100%);
+        box-shadow: 0 8px 32px rgba(0, 229, 255, 0.05);
     }
 
-    /* The Frutiger Aero Image Base (Light Mode) */
     .aero-hero::before {
         content: '';
         position: absolute;
-        /* Oversized slightly to allow for the animation without clipping edges */
-        top: -5%; left: -5%; right: -5%; bottom: -5%; 
-        background-image: url('https://assets.raggiesoft.com/raggiesoft-media/images/hero/frutiger-aero.jpg');
-        background-size: cover;
-        background-position: center;
-        z-index: -2;
-        animation: aero-pan 40s linear infinite alternate;
+        top: -50%; left: -50%; width: 200%; height: 200%;
+        background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 60%);
+        pointer-events: none;
+        z-index: 0;
     }
 
-    /* Legibility Overlay: Frosted Glass Fade */
-    .aero-hero::after {
-        content: '';
+    [data-bs-theme="dark"] .aero-hero::before {
+        background: radial-gradient(circle, rgba(0,229,255,0.05) 0%, transparent 60%);
+    }
+
+    .aero-content { position: relative; z-index: 1; }
+
+    /* Tactile Hover Lift for Aero Cards */
+    .hover-lift {
+        transition: transform 0.2s cubic-bezier(0.25, 0.8, 0.25, 1), box-shadow 0.2s ease;
+    }
+    .hover-lift:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 12px 28px rgba(0, 85, 150, 0.15), inset 0 1px 0 var(--raggie-gloss-highlight) !important;
+    }
+    [data-bs-theme="dark"] .hover-lift:hover {
+        box-shadow: 0 12px 28px rgba(0, 229, 255, 0.15), inset 0 1px 0 var(--raggie-gloss-highlight) !important;
+    }
+
+    /* Aero Card Images */
+    .aero-card-img-container {
+        height: 160px;
+        position: relative;
+        overflow: hidden;
+        border-bottom: 1px solid var(--raggie-glass-border);
+    }
+    .aero-card-img-container img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.5s ease;
+    }
+    .hover-lift:hover .aero-card-img-container img {
+        transform: scale(1.05);
+    }
+    .aero-card-img-overlay {
         position: absolute;
         top: 0; left: 0; right: 0; bottom: 0;
-        background: linear-gradient(120deg, rgba(244, 249, 253, 0.85) 0%, rgba(255, 255, 255, 0.4) 100%);
-        z-index: -1;
-    }
-
-    /* The Dark Aero Image Base */
-    [data-bs-theme="dark"] .aero-hero {
-        box-shadow: 0 8px 32px rgba(0, 229, 255, 0.05);
-    }
-    [data-bs-theme="dark"] .aero-hero::before {
-        background-image: url('https://assets.raggiesoft.com/raggiesoft-media/images/hero/dark-aero.jpg');
-    }
-    [data-bs-theme="dark"] .aero-hero::after {
-        background: linear-gradient(120deg, rgba(7, 11, 20, 0.9) 0%, rgba(7, 11, 20, 0.6) 100%);
-    }
-
-    /* Slow Cinematic Pan */
-    @keyframes aero-pan {
-        0% { transform: scale(1) translate(0, 0); }
-        100% { transform: scale(1.05) translate(-1.5%, -1.5%); }
-    }
-
-    /* WCAG: Respect Prefers Reduced Motion */
-    @media (prefers-reduced-motion: reduce) {
-        .aero-hero::before {
-            animation: none;
-            /* Reset to standard sizing if motion is disabled */
-            top: 0; left: 0; right: 0; bottom: 0; 
-        }
-    }
-
-    /* --- AERO TYPOGRAPHY & LABELS --- */
-    .aero-badge {
-        background: var(--raggie-glass-bg);
-        backdrop-filter: blur(12px) saturate(120%);
-        -webkit-backdrop-filter: blur(12px) saturate(120%);
-        border: 1px solid var(--raggie-glass-border);
-        color: var(--bs-body-color);
-        box-shadow: var(--raggie-glass-shadow);
-    }
-    
-    .data-label {
-        font-size: 0.75rem;
-        letter-spacing: 1px;
-        text-transform: uppercase;
-        color: var(--bs-secondary);
-        font-family: monospace;
-    }
-
-    /* WCAG: Focus Outline for Keyboard Navigators */
-    a:focus-visible, button:focus-visible {
-        outline: 3px solid var(--bs-primary) !important;
-        outline-offset: 4px;
-        border-radius: 4px;
+        background: linear-gradient(to bottom, transparent 50%, rgba(0,0,0,0.6) 100%);
     }
 </style>
 
-<div class="aero-hero py-5 mb-5">
-    <div class="container text-center py-5">
-        <h1 class="display-4 fw-bold text-uppercase mb-3 brand-font text-glow-primary" style="letter-spacing: 3px;">
-            RaggieSoft Media
-        </h1>
-        <p class="lead tech-font mb-4 mx-auto fw-medium" style="max-width: 800px; text-shadow: 0 1px 2px rgba(255,255,255,0.9);">
-            An independent multimedia asset management and distribution house based in Norfolk, Virginia. Specializing in automated audio engineering, custom web architecture, and open-source narrative lore.
+<div class="aero-hero py-5">
+    <div class="container py-4 aero-content text-center">
+        <i class="fa-duotone fa-globe-pointer fa-4x text-primary mb-4" aria-hidden="true" style="filter: drop-shadow(0 0 15px rgba(0,130,230,0.4));"></i>
+        <h1 class="display-4 fw-bold text-uppercase mb-3 brand-font text-glow-primary">RaggieSoft Media</h1>
+        <p class="lead text-secondary mx-auto mb-5" style="max-width: 800px;">
+            An independent multimedia asset management and distribution house. We specialize in automated audio engineering, custom web architecture, and comprehensive licensing administration.
         </p>
-        <span class="badge aero-badge rounded-pill text-uppercase px-4 py-2 fs-6">
-            <i class="fa-solid fa-server me-2 text-primary" aria-hidden="true"></i>Corporate Operations
-        </span>
+        
+        <div class="d-flex flex-column flex-md-row justify-content-center align-items-center">
+            <a href="/raggiesoft-media/licensing/commercial" class="btn btn-primary rounded-pill fw-bold text-uppercase px-4 me-md-3 mb-3 mb-md-0 shadow-sm">
+                Commercial Sync Portal <i class="fa-solid fa-arrow-right ms-2" aria-hidden="true"></i>
+            </a>
+            <a href="/raggiesoft-media/projects" class="btn btn-outline-secondary rounded-pill fw-bold text-uppercase px-4 me-md-3 mb-3 mb-md-0 shadow-sm">
+                Open Source Projects <i class="fa-solid fa-code ms-2" aria-hidden="true"></i>
+            </a>
+            <a href="/about/michael-ragsdale" class="btn btn-outline-success rounded-pill fw-bold text-uppercase px-4 shadow-sm border-opacity-50">
+                Architect Portfolio <i class="fa-solid fa-user-tie ms-2" aria-hidden="true"></i>
+            </a>
+        </div>
     </div>
 </div>
 
-<style>
-    /* Dark Mode specific text shadow adjustments for the hero */
-    [data-bs-theme="dark"] .aero-hero .lead {
-        text-shadow: 0 1px 4px rgba(0,0,0,0.9), 0 0 10px rgba(0,0,0,0.5);
-    }
-</style>
+<div class="container py-5">
 
-<div class="container pb-5">
-    
-    <div class="row mb-4">
-        <div class="col-12 d-flex justify-content-between align-items-end border-bottom border-secondary-subtle pb-2">
-            <h2 class="h5 text-uppercase fw-bold mb-0 text-secondary">Intellectual Property Portfolio</h2>
-        </div>
-    </div>
-
-    <div class="row g-4 mb-5">
-        
-        <div class="col-lg-4">
-            <div class="card bg-hud-blue h-100 p-4 border-0 d-flex flex-column hover-lift">
-                <i class="fa-duotone fa-waveform-lines fa-2x text-primary mb-3" aria-hidden="true"></i>
-                <h3 class="h5 fw-bold text-uppercase mb-2">Audio & Music Production</h3>
-                <p class="data-label mb-3">Engine Room Records</p>
-                <p class="text-body-emphasis mb-4 small">
-                    Management of 100% independent master recordings and publishing rights. Flagship catalogs include The Stardust Engine and active commercial releases.
-                </p>
-                <div class="mt-auto pt-3" style="border-top: 1px solid var(--raggie-glass-border);">
-                    <a href="/raggiesoft-media/licensing/commercial" class="text-decoration-none text-uppercase fw-bold small">
-                        Commercial Sync <i class="fa-solid fa-arrow-right ms-1" aria-hidden="true"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-lg-4">
-            <div class="card bg-hud-base h-100 p-4 border-0 d-flex flex-column hover-lift" style="border-left: 4px solid var(--bs-info);">
-                <i class="fa-duotone fa-code-merge fa-2x text-info mb-3" aria-hidden="true"></i>
-                <h3 class="h5 fw-bold text-uppercase mb-2">Software Architecture</h3>
-                <p class="data-label mb-3">Elara CMS & Infrastructure</p>
-                <p class="text-body-emphasis mb-4 small">
-                    Development of proprietary web frameworks, native SPA routing engines, and high-availability Nginx edge-delivery setups.
-                </p>
-                <div class="mt-auto pt-3" style="border-top: 1px solid var(--raggie-glass-border);">
-                    <a href="/raggiesoft-media/projects/elara" class="text-decoration-none text-info text-uppercase fw-bold small">
-                        Elara Open-Source Hub <i class="fa-solid fa-arrow-right ms-1" aria-hidden="true"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-lg-4">
-            <div class="card bg-hud-warning h-100 p-4 border-0 d-flex flex-column hover-lift">
-                <i class="fa-duotone fa-books fa-2x text-warning mb-3" aria-hidden="true"></i>
-                <h3 class="h5 fw-bold text-uppercase mb-2">Narrative & Literary</h3>
-                <p class="data-label mb-3">Ocean View Archives</p>
-                <p class="text-body-emphasis mb-4 small">
-                    Extensive world-building, scriptwriting, and character asset management governed entirely under progressive CC BY-SA 4.0 public licensing frameworks.
-                </p>
-                <div class="mt-auto pt-3" style="border-top: 1px solid var(--raggie-glass-border);">
-                    <a href="/raggiesoft-books" class="text-decoration-none text-warning text-uppercase fw-bold small">
-                        Explore Archives <i class="fa-solid fa-arrow-right ms-1" aria-hidden="true"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
-
-    </div>
-
-    <div class="row mb-4 mt-5">
-        <div class="col-12 d-flex justify-content-between align-items-end border-bottom border-secondary-subtle pb-2">
-            <h2 class="h5 text-uppercase fw-bold mb-0 text-secondary">Global Communications Protocol</h2>
-        </div>
-    </div>
-
-    <div class="row g-4 mb-5">
+    <div class="row mb-5">
         <div class="col-12">
-            <div class="card bg-hud-base border-0 p-4 p-md-5">
-                <div class="row g-4">
+            <h2 class="h4 text-uppercase fw-bold border-bottom border-secondary-subtle pb-2 mb-4 text-secondary">IP Portfolio & Divisions</h2>
+        </div>
+        
+        <div class="col-lg-4 mb-4 mb-lg-0">
+            <a href="/engine-room" class="card bg-hud-base border-0 h-100 shadow-sm hover-lift text-decoration-none">
+                <div class="aero-card-img-container">
+                    <img src="https://assets.raggiesoft.com/stardust-engine/images/studio-rack.jpg" alt="Engine Room Records Studio Equipment">
+                    <div class="aero-card-img-overlay"></div>
+                    <i class="fa-solid fa-record-vinyl position-absolute bottom-0 start-0 m-3 text-white fs-4" style="filter: drop-shadow(0 2px 4px rgba(0,0,0,0.8));"></i>
+                </div>
+                <div class="card-body p-4">
+                    <h3 class="h5 fw-bold text-body-emphasis mb-2">Engine Room Records</h3>
+                    <p class="small text-secondary mb-0">
+                        The independent label managing the distribution, royalties, and narrative lore of our generative AI music portfolio. Features an active catalog and automated DSP integration.
+                    </p>
+                </div>
+            </a>
+        </div>
+
+        <div class="col-lg-4 mb-4 mb-lg-0">
+            <a href="/raggiesoft-media/projects/stardust-engine-cms" class="card bg-hud-base border-0 h-100 shadow-sm hover-lift text-decoration-none">
+                <div class="aero-card-img-container">
+                    <img src="https://assets.raggiesoft.com/raggiesoft-corporate/images/projects/code-architecture-frutiger-aero.jpg" 
+                        alt="Elara CMS Code Architecture" 
+                        class="theme-img-light">
+                        
+                    <img src="https://assets.raggiesoft.com/raggiesoft-corporate/images/projects/code-architecture-dark-aero.jpg" 
+                        alt="Elara CMS Code Architecture" 
+                        class="theme-img-dark">
+                        
+                    <div class="aero-card-img-overlay"></div>
+                    <i class="fa-solid fa-microchip position-absolute bottom-0 start-0 m-3 text-white fs-4" style="filter: drop-shadow(0 2px 4px rgba(0,0,0,0.8));"></i>
+                </div>
+                <div class="card-body p-4">
+                    <h3 class="h5 fw-bold text-body-emphasis mb-2">Elara Architecture</h3>
+                    <p class="small text-secondary mb-0">
+                        The open-source (MIT) infrastructure division. We design lightweight, high-performance PHP frameworks and Vanilla JS SPA routers (like Elara) to replace bloated legacy systems.
+                    </p>
+                </div>
+            </a>
+        </div>
+
+        <div class="col-lg-4">
+            <a href="/raggiesoft-media/licensing" class="card bg-hud-base border-0 h-100 shadow-sm hover-lift text-decoration-none">
+                <div class="aero-card-img-container">
+                    <img src="https://assets.raggiesoft.com/raggiesoft-corporate/images/projects/vault-archives.jpg" alt="Ocean View Archives">
+                    <div class="aero-card-img-overlay"></div>
+                    <i class="fa-solid fa-vault position-absolute bottom-0 start-0 m-3 text-white fs-4" style="filter: drop-shadow(0 2px 4px rgba(0,0,0,0.8));"></i>
+                </div>
+                <div class="card-body p-4">
+                    <h3 class="h5 fw-bold text-body-emphasis mb-2">Ocean View Archives</h3>
+                    <p class="small text-secondary mb-0">
+                        The narrative rights management division. Responsible for the CC BY-SA 4.0 licensing of all creative fiction, universe bibles, and story assets within the RaggieSoft ecosystem.
+                    </p>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <div class="row mb-5">
+        <div class="col-12">
+            <div class="card bg-hud-blue border-0 shadow-sm hover-lift">
+                <div class="card-body p-4 p-md-5 d-flex flex-column flex-md-row align-items-center justify-content-between">
+                    <div class="d-flex align-items-center mb-4 mb-md-0">
+                        <img src="https://assets.raggiesoft.com/raggiesoft-corporate/images/logos/logo-michael.png" alt="Michael Ragsdale" class="rounded-circle border border-2 border-primary shadow-sm me-4" style="width: 80px; height: 80px; object-fit: cover;">
+                        <div>
+                            <h3 class="h4 fw-bold text-body-emphasis mb-1">Looking to hire the Architect?</h3>
+                            <p class="text-secondary mb-0">Review qualifications, logistics, and schedule a screening interview.</p>
+                        </div>
+                    </div>
+                    <a href="/about/michael-ragsdale" class="btn btn-primary rounded-pill px-4 py-3 fw-bold shadow-sm text-uppercase text-nowrap">
+                        View Professional Portfolio <i class="fa-solid fa-arrow-right ms-2"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12">
+            <div class="card bg-hud-base border-0 p-4 p-md-5 shadow-sm">
+                <h2 class="h5 mb-4 text-primary fw-bold text-uppercase border-bottom border-secondary-subtle pb-3">
+                    <i class="fa-solid fa-address-book me-2" aria-hidden="true"></i>Corporate Directory & Direct Access
+                </h2>
+                <div class="row g-4 text-body-secondary small">
                     
                     <div class="col-md-6 col-lg-3">
                         <p class="data-label mb-1">Commercial Media Licensing</p>
@@ -231,10 +231,10 @@ $pageTitle = "RaggieSoft Media | IP & Asset Management";
                     <div class="col-md-6 col-lg-3">
                         <p class="data-label mb-1">Employment Verification</p>
                         <a href="/raggiesoft-media/careers" class="text-decoration-none text-danger fw-bold fs-6" style="text-shadow: 0 0 8px rgba(230, 57, 70, 0.4);">
-                            <i class="fa-solid fa-shield-exclamation me-1" aria-hidden="true"></i> Fraud Notice
+                            <i class="fa-solid fa-shield-exclamation me-1" aria-hidden="true"></i>Scam Warning
                         </a>
                     </div>
-
+                    
                 </div>
             </div>
         </div>

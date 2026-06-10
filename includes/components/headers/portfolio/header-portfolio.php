@@ -27,7 +27,7 @@ $isHub = ($request_uri === '/about/michael-ragsdale');
   </li>
 
   <li class="nav-item border-start ms-lg-3 ps-lg-3 mt-2 mt-lg-0">
-      <a class="nav-link text-secondary hover-opacity" href="/">
+      <a class="nav-link text-secondary hover-opacity" href="/raggiesoft-media">
         <i class="fa-duotone fa-arrow-right-from-bracket me-2"></i><span class="small">RaggieSoft Media</span>
       </a>
   </li>
