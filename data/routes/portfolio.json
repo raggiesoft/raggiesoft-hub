@@ -6,48 +6,18 @@
     "showSidebar": true,
     "navbarBrandText": "Michael P. Ragsdale",
     "navbarBrandLink": "/about/michael-ragsdale",
-    "navbarBrandLogo": "https://assets.raggiesoft.com/portfolio/images/logos/logo-michael.png",
+    "navbarBrandLogo": "https://assets.raggiesoft.com/raggiesoft-corporate/images/logos/logo-michael.png",
     "navbarBrandAlt": "Michael P. Ragsdale Logo",
     "navbarBrandClass": "navbar-brand-michael-ragsdale",
     "siteName": "Michael P. Ragsdale",
     "ogDescription": "The digital hub for Michael P. Ragsdale. Systems Architect, Full-Stack Developer, and Accessibility Specialist.",
     "ogImage": "https://assets.raggiesoft.com/common/images/mragsdale-social.jpg",
-    "site": "portfolio"
+    "site": "raggiesoft-corporate"
   },
   "/about/michael-ragsdale": {
     "view": "pages/about/michael-ragsdale/overview",
     "title": "Michael P. Ragsdale | Digital Architect",
     "ogTitle": "Michael P. Ragsdale - Digital Architect",
     "showSidebar": false
-  },
-  "/about/michael-ragsdale/resume": {
-    "view": "pages/about/michael-ragsdale/resume",
-    "title": "Resume | Michael P. Ragsdale",
-    "ogTitle": "Resume - Michael P. Ragsdale"
-  },
-  "/about/michael-ragsdale/location": {
-    "view": "pages/about/michael-ragsdale/location",
-    "title": "Location & Logistics | Michael P. Ragsdale",
-    "ogTitle": "Location & Logistics - Michael P. Ragsdale"
-  },
-  "/about/michael-ragsdale/salary": {
-    "view": "pages/about/michael-ragsdale/salary",
-    "title": "Salary Requirements | Michael P. Ragsdale",
-    "ogTitle": "Salary Requirements - Michael P. Ragsdale"
-  },
-  "/about/michael-ragsdale/contact": {
-    "view": "pages/about/michael-ragsdale/contact",
-    "title": "Contact Information | Michael P. Ragsdale",
-    "ogTitle": "Contact Information - Michael P. Ragsdale"
-  },
-  "/about/michael-ragsdale/education": {
-    "view": "pages/about/michael-ragsdale/education",
-    "title": "Education & Academics | Michael P. Ragsdale",
-    "ogTitle": "Education - Michael P. Ragsdale"
-  },
-  "/about/michael-ragsdale/profile": {
-    "view": "pages/about/michael-ragsdale/profile",
-    "title": "Professional Profile | Michael Ragsdale",
-    "ogTitle": "Professional Profile - Skills & History"
   }
 }

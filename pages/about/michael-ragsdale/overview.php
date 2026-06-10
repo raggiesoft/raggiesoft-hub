@@ -1,157 +1,186 @@
 <?php
 // pages/about/michael-ragsdale/overview.php
-// The "Lobby" of your Digital Self.
+// The Unified Professional Dashboard
 // Accessed via: raggiesoft.com/about/michael-ragsdale
+// Replaces Turbotastic, Pre-screening Quizzes, and multi-page complexity with "Aggressive Transparency."
 
 global $cdn_root;
 ?>
 
-<section class="py-5 text-center">
-    <div class="container py-4">
-        <div class="mb-4 position-relative d-inline-block">
-             <img src="<?php echo $cdn_root; ?>/portfolio/images/logos/logo-michael.png" 
+<div class="container py-5" style="max-width: 75rem;">
+
+    <div class="row align-items-center mb-5 pb-4 border-bottom border-secondary-subtle">
+        <div class="col-lg-3 text-center text-lg-start mb-4 mb-lg-0">
+             <img src="https://assets.raggiesoft.com/raggiesoft-corporate/images/logos/logo-michael.png" 
                   alt="Michael P. Ragsdale" 
                   class="rounded-circle shadow-lg border border-4 border-white"
-                  style="width: 180px; height: 180px; object-fit: cover;">
+                  style="width: 200px; height: 200px; object-fit: cover;">
         </div>
-        
-        <h1 class="display-4 fw-bold text-body-emphasis mb-2">Michael P. Ragsdale</h1>
-        <p class="fs-4 text-primary mb-4 fw-light">
-            Architecting accessible, resilient systems since 1997.
-        </p>
-        
-        <div class="row justify-content-center mb-5">
-            <div class="col-lg-8">
-                <p class="lead text-secondary">
-                    I am a <strong>Systems Administrator</strong> and <strong>Full-Stack Developer</strong> driven by a philosophy of "Empathetic Engineering." Whether I am automating Linux infrastructure with Bash or auditing Section 508 compliance, my goal is to build technology that works for everyone.
-                </p>
-            </div>
-        </div>
-
-        <div class="row g-4 justify-content-center">
-            
-            <div class="col-md-6">
-                <a href="/about/michael-ragsdale/resume" class="card h-100 text-decoration-none shadow-sm hover-lift border-0 bg-body-tertiary">
-                    <div class="card-body text-center p-5">
-                        <div class="text-primary mb-3"><i class="fa-duotone fa-file-user fa-3x"></i></div>
-                        <h3 class="h4 fw-bold text-body-emphasis">The Resume</h3>
-                        <p class="text-secondary small">
-                            A detailed record of my employment history, education, and technical certifications.
-                        </p>
-                        <span class="btn btn-outline-primary rounded-pill mt-2">View Resume</span>
-                    </div>
+        <div class="col-lg-9 text-center text-lg-start">
+            <h1 class="display-4 fw-bold text-uppercase text-glow-primary mb-2" style="font-family: 'Impact', sans-serif;">Michael P. Ragsdale</h1>
+            <p class="fs-4 text-primary mb-3 fw-bold">Systems Architect & Full-Stack Developer</p>
+            <p class="lead text-secondary mb-4">
+                Architecting accessible, resilient systems since 1997. Bridging the gap between legacy infrastructure and modern cloud reliability with an uncompromising focus on "Empathetic Engineering."
+            </p>
+            <div class="d-flex flex-wrap gap-2 justify-content-center justify-content-lg-start">
+                <a href="https://assets.raggiesoft.com/portfolio/documents/resume/mragsdale-resume.pdf" target="_blank" class="btn btn-primary btn-lg rounded-pill px-4 shadow-sm">
+                    <i class="fa-solid fa-file-pdf me-2"></i>Download Resume (PDF)
                 </a>
-            </div>
-
-            <div class="col-md-6">
-                <a href="/about/michael-ragsdale/location" class="card h-100 text-decoration-none shadow-sm hover-lift border-0 bg-body-tertiary">
-                    <div class="card-body text-center p-5">
-                        <div class="text-success mb-3"><i class="fa-duotone fa-map-location-dot fa-3x"></i></div>
-                        <h3 class="h4 fw-bold text-body-emphasis">Location</h3>
-                        <p class="text-secondary small">
-                            Relocation preferences, remote work availability, and office logistics for Virginia.
-                        </p>
-                        <span class="btn btn-outline-success rounded-pill mt-2">Check Availability</span>
-                    </div>
-                </a>
-            </div>
-
-             <div class="col-md-6">
-                <a href="/about/michael-ragsdale/profile" class="card h-100 text-decoration-none shadow-sm hover-lift border-0 bg-body-tertiary">
-                    <div class="card-body text-center p-5">
-                        <div class="text-warning mb-3"><i class="fa-duotone fa-layer-group fa-3x"></i></div>
-                        <h3 class="h4 fw-bold text-body-emphasis">Professional Profile</h3>
-                        <p class="text-secondary small">
-                            A technical timeline of my evolution from legacy coding to modern cloud architecture.
-                        </p>
-                        <span class="btn btn-outline-warning rounded-pill mt-2">View Skills & History</span>
-                    </div>
-                </a>
-            </div>
-
-            <div class="col-md-6">
-                <a href="/about/michael-ragsdale/contact" class="card h-100 text-decoration-none shadow-sm hover-lift border-0 bg-body-tertiary">
-                    <div class="card-body text-center p-5">
-                        <div class="text-danger mb-3"><i class="fa-duotone fa-calendar-check fa-3x"></i></div>
-                        <h3 class="h4 fw-bold text-body-emphasis">Schedule Interview</h3>
-                        <p class="text-secondary small">
-                            Ready to discuss a role? Complete a quick pre-screening check to access my <strong>Microsoft Bookings</strong> calendar.
-                        </p>
-                        <span class="btn btn-outline-danger rounded-pill mt-2">Open Scheduler</span>
-                    </div>
-                </a>
-            </div>
-
-        </div>
-        <div class="row mt-5">
-            <div class="col-12">
-                <h3 class="h6 text-uppercase text-secondary fw-bold mb-4 border-bottom pb-2">
-                    <i class="fa-duotone fa-infinity me-2"></i>Beyond the Terminal
-                </h3>
-            </div>
-
-            <div class="col-lg-6 mb-4">
-                <div class="card h-100 border-0 shadow-sm bg-dark text-white overflow-hidden position-relative">
-                    <div class="card-body p-4 position-relative z-1">
-                        <div class="d-flex align-items-center mb-3">
-                            <div class="icon-box bg-white text-dark rounded-circle me-3 d-flex align-items-center justify-content-center" style="width:50px; height:50px;">
-                                <i class="fa-solid fa-terminal"></i>
-                            </div>
-                            <h4 class="h5 fw-bold mb-0">The Architecture</h4>
-                        </div>
-                        <p class="card-text text-light opacity-75 mb-4">
-                            This platform is not just a website; it is an ecosystem managed by <strong>Silas</strong>, my custom .NET 10 System Guardian. I build the tools that build the web.
-                        </p>
-                        <span class="badge border border-light rounded-pill px-3 py-2">
-                            <i class="fa-brands fa-microsoft me-2"></i>Powered by .NET & MAUI
-                        </span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-6 mb-4">
-                <a href="/engine-room" class="card h-100 border-0 shadow-sm bg-danger text-white overflow-hidden text-decoration-none hover-lift">
-                    <div class="card-body p-4 position-relative z-1">
-                        <div class="d-flex align-items-center mb-3">
-                            <div class="icon-box bg-white text-danger rounded-circle me-3 d-flex align-items-center justify-content-center" style="width:50px; height:50px;">
-                                <i class="fa-solid fa-record-vinyl"></i>
-                            </div>
-                            <h4 class="h5 fw-bold mb-0">Multimedia Production</h4>
-                        </div>
-                        <p class="card-text text-white opacity-75 mb-4">
-                            I direct and produce narrative fiction audio under the label <strong>Engine Room Records</strong>. This project explores the intersection of human world-building and AI-assisted music generation.
-                        </p>
-                        <span class="btn btn-outline-light rounded-pill btn-sm stretched-link">
-                            Enter the Engine Room <i class="fa-solid fa-arrow-right ms-1"></i>
-                        </span>
-                    </div>
-                </a>
-            </div>
-
-            <div class="col-lg-6 mb-4">
-                <a href="/family" class="card h-100 border-0 shadow-sm bg-primary text-white overflow-hidden text-decoration-none hover-lift">
-                    <div class="card-body p-4">
-                        <div class="d-flex align-items-center mb-3">
-                            <div class="icon-box bg-white text-primary rounded-circle me-3 d-flex align-items-center justify-content-center" style="width:50px; height:50px;">
-                                <i class="fa-duotone fa-people-group"></i>
-                            </div>
-                            <h4 class="h5 fw-bold mb-0">The Family</h4>
-                        </div>
-                        <p class="card-text text-white opacity-75 mb-4">
-                            My infrastructure is alive. This isn't just code; it's a <strong>"Personified DevOps"</strong> ecosystem. Meet <em>Jessica</em> (Production), <em>Paige</em> (Editor), and the other constructs who run the servers.
-                        </p>
-                        <span class="btn btn-outline-light rounded-pill btn-sm stretched-link">
-                            Meet the Sisters <i class="fa-solid fa-arrow-right ms-1"></i>
-                        </span>
-                    </div>
+                <a href="#hiring-logistics" class="btn btn-outline-secondary btn-lg rounded-pill px-4">
+                    <i class="fa-solid fa-handshake me-2"></i>Hiring Logistics
                 </a>
             </div>
         </div>
     </div>
-    
-</section>
 
-<style>
-.hover-lift { transition: transform 0.2s ease, box-shadow 0.2s ease; }
-.hover-lift:hover { transform: translateY(-5px); box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important; }
-</style>
+    <div class="row g-5 mb-5">
+        
+        <div class="col-lg-7">
+            <h2 class="h4 fw-bold text-uppercase text-body-emphasis mb-4 border-start border-4 border-primary ps-3">Technical Ecosystem</h2>
+            
+            <div class="d-flex flex-wrap gap-2 mb-5">
+                <span class="badge bg-secondary-subtle text-secondary-emphasis border border-secondary-subtle px-3 py-2 font-monospace fs-7">PHP 8.4 (MVC)</span>
+                <span class="badge bg-secondary-subtle text-secondary-emphasis border border-secondary-subtle px-3 py-2 font-monospace fs-7">C# / .NET 10</span>
+                <span class="badge bg-secondary-subtle text-secondary-emphasis border border-secondary-subtle px-3 py-2 font-monospace fs-7">Linux (Bash/Shell)</span>
+                <span class="badge bg-secondary-subtle text-secondary-emphasis border border-secondary-subtle px-3 py-2 font-monospace fs-7">DigitalOcean</span>
+                <span class="badge bg-secondary-subtle text-secondary-emphasis border border-secondary-subtle px-3 py-2 font-monospace fs-7">Cloudflare</span>
+                <span class="badge bg-primary-subtle text-primary-emphasis border border-primary-subtle px-3 py-2 font-monospace fs-7 fw-bold">WCAG 2.1 AA / Sec 508</span>
+            </div>
+
+            <h3 class="h5 fw-bold text-body-emphasis mb-3">Live Architecture (Proof of Concept)</h3>
+            <div class="row g-3">
+                <div class="col-md-12">
+                    <a href="/raggiesoft-media/projects/stardust-engine-cms" class="card bg-hud-blue border-0 shadow-sm hover-lift text-decoration-none">
+                        <div class="card-body p-4 d-flex align-items-center">
+                            <i class="fa-duotone fa-server fa-2x text-primary me-4"></i>
+                            <div>
+                                <h4 class="h6 fw-bold mb-1 text-body-emphasis text-uppercase">The Stardust Engine CMS</h4>
+                                <p class="small text-secondary mb-0">The custom PHP MVC framework and Vanilla JS SPA Router (Elara) powering this exact platform.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-12">
+                    <a href="/engine-room" class="card bg-hud-red border-0 shadow-sm hover-lift text-decoration-none">
+                        <div class="card-body p-4 d-flex align-items-center">
+                            <i class="fa-duotone fa-record-vinyl fa-2x text-danger me-4"></i>
+                            <div>
+                                <h4 class="h6 fw-bold mb-1 text-body-emphasis text-uppercase">Engine Room Records</h4>
+                                <p class="small text-secondary mb-0">A multimedia label operated via automated Bash/Python FFmpeg pipelines to transcode and distribute AI-assisted audio.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-12">
+                    <a href="/engine-room/artists/stardust-engine" class="card bg-hud-warning border-0 shadow-sm hover-lift text-decoration-none">
+                        <div class="card-body p-4 d-flex align-items-center">
+                            <i class="fa-duotone fa-guitar-electric fa-2x text-warning me-4"></i>
+                            <div>
+                                <h4 class="h6 fw-bold mb-1 text-body-emphasis text-uppercase">The Stardust Engine (Lore)</h4>
+                                <p class="small text-secondary mb-0">The JSON-driven narrative universe testing the boundaries of accessible, immersive world-building.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-5" id="hiring-logistics">
+            <div class="card bg-hud-green border-0 shadow-lg h-100 position-relative overflow-hidden">
+                <div class="card-header bg-transparent border-bottom border-success border-opacity-25 p-4">
+                    <h2 class="h5 fw-bold text-success text-uppercase mb-0">
+                        <i class="fa-solid fa-clipboard-check me-2"></i>Hiring & Logistics
+                    </h2>
+                </div>
+                <div class="card-body p-4">
+                    <p class="small text-body-emphasis fw-bold mb-4">
+                        To respect everyone's time, please ensure your role aligns with these hard parameters before reaching out.
+                    </p>
+                    
+                    <ul class="list-unstyled mb-4 font-monospace">
+                        <li class="mb-3">
+                            <div class="text-uppercase small text-success fw-bold tracking-wider">Compensation Target</div>
+                            <div class="fs-5 text-body-emphasis fw-bold">$85,000 Base Salary</div>
+                            <div class="small text-secondary fst-italic">Minimum floor: $75,000</div>
+                        </li>
+                        <li class="mb-3">
+                            <div class="text-uppercase small text-success fw-bold tracking-wider">Employment Type</div>
+                            <div class="fs-6 text-body-emphasis fw-bold">W2 Full-Time Only</div>
+                            <div class="small text-secondary">Zero availability for 1099/Contract roles.</div>
+                        </li>
+                        <li class="mb-3">
+                            <div class="text-uppercase small text-success fw-bold tracking-wider">Location / Commute</div>
+                            <div class="fs-6 text-body-emphasis fw-bold">Norfolk, VA</div>
+                            <div class="small text-secondary">Available for Remote, Hybrid, or On-Site within Virginia (restricted to VA to maintain in-state community college tuition).</div>
+                        </li>
+                    </ul>
+
+                    <div class="p-3 rounded border border-success border-opacity-25" style="background: rgba(56, 229, 77, 0.05);">
+                        <div class="text-uppercase small text-success fw-bold mb-2">Direct Contact</div>
+                        <a href="mailto:hireme@michaelpragsdale.com" class="d-block text-body-emphasis fs-6 fw-bold mb-3 text-break text-decoration-none hover-opacity">
+                            <i class="fa-solid fa-envelope text-success me-2"></i>hireme@michaelpragsdale.com
+                        </a>
+                        <a href="https://outlook.office.com/bookwithme/user/67bc6cb4baa248959b3303fa54ee7239@michaelpragsdale.com/meetingtype/QJPG_FQxOUOnFjCcEgu4sw2?anonymous&ismsaljsauthenabled&ep=mlink" target="_blank" class="btn btn-success w-100 rounded-pill fw-bold shadow-sm">
+                            <i class="fa-solid fa-calendar-clock me-2"></i>Schedule Interview
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="row">
+        <div class="col-12">
+            <h2 class="h4 fw-bold text-uppercase text-body-emphasis mb-4 border-start border-4 border-secondary ps-3">Pragmatic Experience & Education</h2>
+        </div>
+        
+        <div class="col-lg-6 mb-4">
+            <div class="card bg-body-tertiary border-0 shadow-sm h-100 p-4">
+                <div class="d-flex align-items-center mb-3">
+                    <i class="fa-duotone fa-users-gear fa-2x text-secondary me-3"></i>
+                    <div>
+                        <h3 class="h6 fw-bold mb-0 text-body-emphasis">Operations & Technical Lead</h3>
+                        <div class="small text-primary font-monospace fs-7">City of Virginia Beach (Rec Center)</div>
+                    </div>
+                </div>
+                <p class="small text-secondary mb-0">
+                    Managing high-volume financial reconciliation and acting as the primary escalation point for complex logistical conflicts. Developed manual ETL pipelines to normalize legacy municipal reservation data into accessible, Section 508 compliant operational formats. Primary trainer for the ActiveNet CRM. WCAG compliant templates ensure universal access.
+                </p>
+            </div>
+        </div>
+
+        <div class="col-lg-6 mb-4">
+            <div class="card bg-body-tertiary border-0 shadow-sm h-100 p-4">
+                <div class="d-flex align-items-center mb-3">
+                    <i class="fa-duotone fa-shield-check fa-2x text-secondary me-3"></i>
+                    <div>
+                        <h3 class="h6 fw-bold mb-0 text-body-emphasis">Section 508 Compliance Specialist</h3>
+                        <div class="small text-primary font-monospace fs-7">ODU Online (Old Dominion University)</div>
+                    </div>
+                </div>
+                <p class="small text-secondary mb-0">
+                    Ensured WCAG 2.1 AA and Section 508 compliance across enterprise LMS platforms. Remediated web content using Deque axe and designed universal, accessible architectural templates deployed across university-wide syllabi. A cornerstone of Empathetic Engineering.
+                </p>
+            </div>
+        </div>
+
+        <div class="col-lg-12">
+            <div class="card bg-body-tertiary border-0 shadow-sm p-4 text-center d-flex flex-md-row align-items-center justify-content-center gap-4">
+                <div>
+                    <i class="fa-solid fa-building-columns text-secondary fa-2x mb-2"></i>
+                    <h3 class="h6 fw-bold mb-0 text-body-emphasis">Tidewater Community College</h3>
+                    <div class="small text-muted">A.S. Information Technology (Website Design) | <em>In Progress</em></div>
+                </div>
+                <div class="d-none d-md-block border-start border-secondary opacity-25" style="height: 50px;"></div>
+                <div>
+                    <i class="fa-solid fa-graduation-cap text-secondary fa-2x mb-2"></i>
+                    <h3 class="h6 fw-bold mb-0 text-body-emphasis">Old Dominion University</h3>
+                    <div class="small text-muted">B.S. Customized Studies in Leadership | <em>In Progress</em></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>

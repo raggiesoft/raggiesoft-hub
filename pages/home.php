@@ -158,7 +158,7 @@ $pageTitle = "RaggieSoft&trade; | The Central Hub";
         <div class="pane-overlay"></div>
         
         <div class="pane-content d-flex flex-column align-items-center h-100 justify-content-center">
-            <img src="https://assets.raggiesoft.com/portfolio/images/logos/logo-michael.png" alt="Michael P. Ragsdale" class="rounded-circle border border-primary border-3 pane-avatar mb-3">
+            <img src="https://assets.raggiesoft.com/raggiesoft-corporate/images/logos/logo-michael.png" alt="Michael P. Ragsdale" class="rounded-circle border border-primary border-3 pane-avatar mb-3">
             <h1 class="display-4 fw-bold text-uppercase brand-font hero-title mb-2">The Architect</h1>
             <h2 class="h5 fw-light text-primary mb-4 hero-text text-uppercase letter-spacing-1">Infrastructure & Operations</h2>
             <p class="lead hero-text text-white-75 mb-4">
@@ -226,7 +226,7 @@ $pageTitle = "RaggieSoft&trade; | The Central Hub";
       <div class="scroll-card">
         <?php
           $props = [
-            'imgSrc' => 'https://assets.raggiesoft.com/portfolio/images/logos/logo-michael.png',
+            'imgSrc' => 'https://assets.raggiesoft.com/raggiesoft-corporate/images/logos/logo-michael.png',
             'imgAlt' => 'Michael P. Ragsdale',
             'fallbackText' => 'Portfolio',
             'title' => 'Michael P. Ragsdale',

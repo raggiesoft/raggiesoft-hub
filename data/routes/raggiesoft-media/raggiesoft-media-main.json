@@ -1,6 +1,6 @@
 {
   "common": {
-    "site": "raggiesoft-media",
+    "site": "raggiesoft-corporate",
     "showSidebar": true,
     "brandFont": ["Ubuntu", "system-ui", "sans-serif"],
     "headerMenu": "raggiesoft-media/header-corporate",
