@@ -88,8 +88,8 @@ global $cdn_root;
         <div class="col-lg-5" id="hiring-logistics">
             <div class="card bg-hud-green border-0 shadow-lg h-100 position-relative overflow-hidden">
                 <div class="card-header bg-transparent border-bottom border-success border-opacity-25 p-4">
-                    <h2 class="h5 fw-bold text-success text-uppercase mb-0">
-                        <i class="fa-solid fa-clipboard-check me-2"></i>Hiring & Logistics
+                    <h2 class="h5 fw-bold text-success-emphasis text-uppercase mb-0">
+                        <i class="fa-solid fa-clipboard-check text-success me-2"></i>Hiring & Logistics
                     </h2>
                 </div>
                 <div class="card-body p-4">
@@ -99,31 +99,28 @@ global $cdn_root;
                     
                     <ul class="list-unstyled mb-4 font-monospace">
                         <li class="mb-3">
-                            <div class="text-uppercase small text-success fw-bold tracking-wider">Compensation Target</div>
+                            <h3 class="text-uppercase small text-success-emphasis fw-bold tracking-wider mb-0">Compensation Target</h3>
                             <div class="fs-5 text-body-emphasis fw-bold">$85,000 Base Salary</div>
                             <div class="small text-secondary fst-italic">Minimum floor: $75,000</div>
                         </li>
                         <li class="mb-3">
-                            <div class="text-uppercase small text-success fw-bold tracking-wider">Employment Type</div>
+                            <h3 class="text-uppercase small text-success-emphasis fw-bold tracking-wider mb-0">Employment Type</h3>
                             <div class="fs-6 text-body-emphasis fw-bold">W2 Full-Time Only</div>
                             <div class="small text-secondary">Zero availability for 1099/Contract roles.</div>
                         </li>
                         <li class="mb-3">
-                            <div class="text-uppercase small text-success fw-bold tracking-wider">Location / Commute</div>
+                            <h3 class="text-uppercase small text-success-emphasis fw-bold tracking-wider mb-0">Location / Commute</h3>
                             <div class="fs-6 text-body-emphasis fw-bold">Norfolk, VA</div>
                             <div class="small text-secondary">Available for Remote, Hybrid, or On-Site within Virginia (restricted to VA to maintain in-state community college tuition).</div>
                         </li>
                     </ul>
 
                     <div class="p-3 rounded border border-success border-opacity-25" style="background: rgba(56, 229, 77, 0.05);">
-                        <div class="text-uppercase small text-success fw-bold mb-2">Direct Contact</div>
+                        <h3 class="text-uppercase small text-success-emphasis fw-bold mb-2">Direct Contact</h3>
                         <a href="mailto:hireme@michaelpragsdale.com" class="d-block text-body-emphasis fs-6 fw-bold mb-3 text-break text-decoration-none hover-opacity">
                             <i class="fa-solid fa-envelope text-success me-2"></i>hireme@michaelpragsdale.com
                         </a>
-                        <!--<a href="https://outlook.office.com/bookwithme/user/67bc6cb4baa248959b3303fa54ee7239@michaelpragsdale.com/meetingtype/QJPG_FQxOUOnFjCcEgu4sw2?anonymous&ismsaljsauthenabled&ep=mlink" target="_blank" class="btn btn-success w-100 rounded-pill fw-bold shadow-sm">
-                            <i class="fa-solid fa-calendar-clock me-2"></i>Schedule Interview
-                        </a>-->
-                    </div>
+                        </div>
                 </div>
             </div>
         </div>
