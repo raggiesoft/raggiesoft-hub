@@ -170,7 +170,7 @@ $pageTitle = "RaggieSoft Media | IP & Asset Management";
         </div>
 
         <div class="col-lg-4">
-            <a href="/raggiesoft-media/licensing" class="card bg-hud-base border-0 h-100 shadow-sm hover-lift text-decoration-none">
+            <a href="/raggiesoft-books" class="card bg-hud-base border-0 h-100 shadow-sm hover-lift text-decoration-none">
                 <div class="aero-card-img-container">
                     <img src="https://assets.raggiesoft.com/raggiesoft-corporate/images/projects/ocean-vault-light.jpg" 
                         alt="Ocean View Archives Light Mode" 
