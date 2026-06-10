@@ -171,7 +171,7 @@ $pageTitle = "RaggieSoft Media | IP & Asset Management";
 
         <div class="col-lg-4">
             <a href="/raggiesoft-media/licensing" class="card bg-hud-base border-0 h-100 shadow-sm hover-lift text-decoration-none">
-                <div class="aero-card-img-container position-relative">
+                <div class="aero-card-img-container">
                     <img src="https://assets.raggiesoft.com/raggiesoft-corporate/images/projects/ocean-vault-light.jpg" 
                         alt="Ocean View Archives Light Mode" 
                         class="theme-img-light">
@@ -182,12 +182,6 @@ $pageTitle = "RaggieSoft Media | IP & Asset Management";
                         
                     <div class="aero-card-img-overlay"></div>
                     
-                    <div class="position-absolute top-50 start-50 translate-middle" style="z-index: 2;">
-                        <img src="https://assets.raggiesoft.com/raggiesoft-corporate/images/logos/oceanview-archives.png" 
-                            alt="Ocean View Archives Logo" 
-                            style="width: 90px; height: 90px; filter: drop-shadow(0 8px 16px rgba(0,0,0,0.6));">
-                    </div>
-
                     <i class="fa-solid fa-vault position-absolute bottom-0 start-0 m-3 text-white fs-4" style="filter: drop-shadow(0 2px 4px rgba(0,0,0,0.8));"></i>
                 </div>
                 <div class="card-body p-4">
