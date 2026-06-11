@@ -20,12 +20,16 @@ $pageTitle = "Open Source Projects | RaggieSoft Media";
     .aero-hero::before {
         content: '';
         position: absolute;
-        top: -5%; left: -5%; right: -5%; bottom: -5%; 
-        background-image: url('https://assets.raggiesoft.com/raggiesoft-media/images/hero/frutiger-aero.jpg');
-        background-size: cover;
-        background-position: center;
-        z-index: -2;
-        animation: aero-pan 40s linear infinite alternate;
+        top: -50%; left: -50%; width: 200%; height: 200%;
+        background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 60%);
+        background-image: url('https://assets.raggiesoft.com/raggiesoft-corporate/images/hero/frutiger-aero.jpg');
+        pointer-events: none;
+        z-index: 0;
+    }
+
+    [data-bs-theme="dark"] .aero-hero::before {
+        background: radial-gradient(circle, rgba(0,229,255,0.05) 0%, transparent 60%);
+        background-image: url('https://assets.raggiesoft.com/raggiesoft-corporate/images/hero/dark-aero.jpg');
     }
 
     .aero-hero::after {

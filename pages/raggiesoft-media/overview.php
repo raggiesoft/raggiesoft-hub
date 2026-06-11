@@ -56,12 +56,14 @@ $pageTitle = "RaggieSoft Media | IP & Asset Management";
         position: absolute;
         top: -50%; left: -50%; width: 200%; height: 200%;
         background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 60%);
+        background-image: url('https://assets.raggiesoft.com/raggiesoft-corporate/images/hero/frutiger-aero.jpg');
         pointer-events: none;
         z-index: 0;
     }
 
     [data-bs-theme="dark"] .aero-hero::before {
         background: radial-gradient(circle, rgba(0,229,255,0.05) 0%, transparent 60%);
+        background-image: url('https://assets.raggiesoft.com/raggiesoft-corporate/images/hero/dark-aero.jpg');
     }
 
     .aero-content { position: relative; z-index: 1; }
