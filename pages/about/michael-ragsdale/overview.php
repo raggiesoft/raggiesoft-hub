@@ -170,47 +170,77 @@ global $cdn_root;
 
     </div>
 
-    <div class="row">
-        <div class="col-12">
-            <h2 class="h4 fw-bold text-uppercase text-body-emphasis mb-4 border-start border-4 border-secondary ps-3">Pragmatic Experience & Education</h2>
+    <div class="row g-4">
+        <div class="col-12 mb-2">
+            <h2 class="h4 fw-bold text-uppercase text-body-emphasis border-start border-4 border-secondary ps-3">Pragmatic Experience & Education</h2>
         </div>
         
-        <div class="col-lg-6 mb-4">
+        <div class="col-lg-6">
             <div class="card bg-body-tertiary border-0 shadow-sm h-100 p-4">
                 <div class="d-flex align-items-center mb-3">
-                    <i class="fa-duotone fa-users-gear fa-2x text-secondary me-3"></i>
+                    <i class="fa-duotone fa-server fa-2x text-primary me-3"></i>
                     <div>
-                        <h3 class="h6 fw-bold mb-0 text-body-emphasis">Technical Lead & Data Normalization</h3>
-                        <div class="small text-primary font-monospace fs-7">City of Virginia Beach (Parks & Recreation)</div>
+                        <h3 class="h6 fw-bold mb-0 text-body-emphasis">Founder & Systems Architect</h3>
+                        <div class="small text-primary font-monospace fs-7">RaggieSoft Media | Est. 2008 – Present</div>
                     </div>
                 </div>
                 <p class="small text-secondary mb-0">
-                    Engineered manual ETL pipelines to normalize legacy municipal reservation data into fully accessible, Section 508 compliant digital formats. Function as the primary technical trainer for the ActiveNet CRM, enforcing strict data integrity protocols and acting as the primary escalation point for complex logistical conflicts.
+                    Engineered and open-sourced the Stardust Engine CMS (MIT License), a custom-built PHP 8.4 MVC framework. Architected Elara, a Vanilla JS SPA router that parses JSON payloads to dynamically swap entire site themes per route, completely bypassing traditional database latency.
                 </p>
             </div>
         </div>
 
-        <div class="col-lg-6 mb-4">
+        <div class="col-lg-6">
+            <div class="card bg-body-tertiary border-0 shadow-sm h-100 p-4">
+                <div class="d-flex align-items-center mb-3">
+                    <i class="fa-duotone fa-users-gear fa-2x text-success me-3"></i>
+                    <div>
+                        <h3 class="h6 fw-bold mb-0 text-body-emphasis">Technical Lead & Data Normalization Specialist</h3>
+                        <div class="small text-success font-monospace fs-7">City of Virginia Beach | May 2023 – Present</div>
+                    </div>
+                </div>
+                <p class="small text-secondary mb-0">
+                    Engineered manual ETL pipelines to normalize legacy municipal reservation data into fully accessible, Section 508 compliant operational formats. Primary technical trainer for the ActiveNet CRM, enforcing strict data integrity protocols and mitigating logistical conflicts.
+                </p>
+            </div>
+        </div>
+
+        <div class="col-lg-6">
             <div class="card bg-body-tertiary border-0 shadow-sm h-100 p-4">
                 <div class="d-flex align-items-center mb-3">
                     <i class="fa-duotone fa-shield-check fa-2x text-secondary me-3"></i>
                     <div>
                         <h3 class="h6 fw-bold mb-0 text-body-emphasis">Section 508 Compliance Specialist</h3>
-                        <div class="small text-primary font-monospace fs-7">ODU Online (Old Dominion University)</div>
+                        <div class="small text-secondary font-monospace fs-7">ODU Online | Nov 2019 – Jul 2022</div>
                     </div>
                 </div>
                 <p class="small text-secondary mb-0">
-                    Served as the primary accessibility gatekeeper for enterprise-level web content during university-wide LMS migrations. Enforced strict WCAG 2.1 AA compliance parameters, utilizing tools like Deque axe, and engineered universal, accessible architectural templates deployed across institutional syllabi.
+                    Served as the primary accessibility gatekeeper for enterprise-level web content during university-wide LMS migrations. Enforced strict WCAG 2.1 AA compliance utilizing tools like Deque axe, and engineered universal architectural templates deployed across institutional syllabi.
                 </p>
             </div>
         </div>
 
-        <div class="col-lg-12">
+        <div class="col-lg-6">
+            <div class="card bg-body-tertiary border-0 shadow-sm h-100 p-4">
+                <div class="d-flex align-items-center mb-3">
+                    <i class="fa-duotone fa-mobile-code fa-2x text-secondary me-3"></i>
+                    <div>
+                        <h3 class="h6 fw-bold mb-0 text-body-emphasis">Mobile Applications Developer Intern</h3>
+                        <div class="small text-secondary font-monospace fs-7">Dominion Enterprises | Sep 2012 – Dec 2012</div>
+                    </div>
+                </div>
+                <p class="small text-secondary mb-0">
+                    Engineered cross-platform mobile applications for iOS and Android utilizing the JavaScript-based Titanium SDK. Established a foundational trajectory in software engineering, mobile architecture, and application deployment.
+                </p>
+            </div>
+        </div>
+
+        <div class="col-lg-12 mt-4">
             <div class="card bg-body-tertiary border-0 shadow-sm p-4 text-center d-flex flex-md-row align-items-center justify-content-center gap-4">
                 <div>
                     <i class="fa-solid fa-building-columns text-secondary fa-2x mb-2"></i>
                     <h3 class="h6 fw-bold mb-0 text-body-emphasis">Tidewater Community College</h3>
-                    <div class="small text-muted">A.S. Information Technology (Focus: Software Engineering & Web Dev) | <em>In Progress</em></div>
+                    <div class="small text-muted">A.S. Information Technology (Focus: Software Eng.) | <em>Expected Dec 2026</em></div>
                 </div>
                 <div class="d-none d-md-block border-start border-secondary opacity-25" style="height: 50px;"></div>
                 <div>
