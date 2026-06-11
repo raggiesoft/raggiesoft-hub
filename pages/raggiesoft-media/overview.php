@@ -39,8 +39,12 @@ $pageTitle = "RaggieSoft Media | IP & Asset Management";
 <div class="aero-hero py-5">
     <div class="container py-4 aero-content text-center">
         <i class="fa-duotone fa-globe-pointer fa-4x text-primary mb-4" aria-hidden="true" style="filter: drop-shadow(0 0 15px rgba(0,130,230,0.4));"></i>
-        <h1 class="display-4 fw-bold text-uppercase mb-3 brand-font text-glow-primary">RaggieSoft Media</h1>
-        <p class="lead text-secondary mx-auto mb-5" style="max-width: 800px;">
+        
+        <h1 class="display-4 fw-bold text-uppercase mb-3 brand-font text-body-emphasis" style="text-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+            RaggieSoft Media
+        </h1>
+        
+        <p class="lead text-body fw-medium mx-auto mb-5" style="max-width: 800px;">
             An independent multimedia asset management and distribution house. We specialize in automated audio engineering, custom web architecture, and comprehensive licensing administration.
         </p>
         

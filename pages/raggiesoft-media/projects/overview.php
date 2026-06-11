@@ -9,8 +9,12 @@ $pageTitle = "Open Source Projects | RaggieSoft Media";
 <div class="aero-hero py-5">
     <div class="container py-5 aero-content text-center">
         <i class="fa-brands fa-osi fa-4x text-info mb-4" aria-hidden="true" style="filter: drop-shadow(0 0 15px rgba(0,195,255,0.4));"></i>
-        <h1 class="display-4 fw-bold text-uppercase mb-3 brand-font text-glow-primary">Open Source Division</h1>
-        <p class="lead text-secondary mx-auto mb-0" style="max-width: 800px;">
+        
+        <h1 class="display-4 fw-bold text-uppercase mb-3 brand-font text-body-emphasis" style="text-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+            Open Source Division
+        </h1>
+        
+        <p class="lead text-body fw-medium mx-auto mb-0" style="max-width: 800px;">
             RaggieSoft Media is committed to the open web. We build and maintain MIT-licensed infrastructure, frameworks, and tools designed to democratize narrative publishing and web accessibility.
         </p>
     </div>
