@@ -6,7 +6,91 @@
 $pageTitle = "Open Source Projects | RaggieSoft Media";
 ?>
 
+<style>
+    /* --- AERO HERO SECTION --- */
+    .aero-hero {
+        position: relative;
+        overflow: hidden;
+        border-bottom: 1px solid var(--raggie-glass-border);
+        box-shadow: 0 8px 32px rgba(0, 195, 255, 0.08);
+        color: var(--bs-body-color);
+        z-index: 1;
+    }
 
+    .aero-hero::before {
+        content: '';
+        position: absolute;
+        top: -5%; left: -5%; right: -5%; bottom: -5%; 
+        background-image: url('https://assets.raggiesoft.com/raggiesoft-media/images/hero/frutiger-aero.jpg');
+        background-size: cover;
+        background-position: center;
+        z-index: -2;
+        animation: aero-pan 40s linear infinite alternate;
+    }
+
+    .aero-hero::after {
+        content: '';
+        position: absolute;
+        top: 0; left: 0; right: 0; bottom: 0;
+        background: linear-gradient(135deg, rgba(255,255,255,0.7) 0%, rgba(255,255,255,0.9) 100%);
+        backdrop-filter: blur(4px);
+        -webkit-backdrop-filter: blur(4px);
+        z-index: -1;
+    }
+
+    [data-bs-theme="dark"] .aero-hero::after {
+        background: linear-gradient(135deg, rgba(7, 11, 20, 0.7) 0%, rgba(7, 11, 20, 0.95) 100%);
+    }
+
+    @keyframes aero-pan {
+        0% { transform: scale(1) translate(0, 0); }
+        100% { transform: scale(1.1) translate(-2%, -2%); }
+    }
+
+    .aero-content { position: relative; z-index: 1; }
+
+    /* Tactile Hover Lift for Aero Cards */
+    .hover-lift {
+        transition: transform 0.2s cubic-bezier(0.25, 0.8, 0.25, 1), box-shadow 0.2s ease;
+    }
+    .hover-lift:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 12px 28px rgba(0, 85, 150, 0.15), inset 0 1px 0 var(--raggie-gloss-highlight) !important;
+    }
+    [data-bs-theme="dark"] .hover-lift:hover {
+        box-shadow: 0 12px 28px rgba(0, 229, 255, 0.15), inset 0 1px 0 var(--raggie-gloss-highlight) !important;
+    }
+    
+    .btn-glass-github {
+        background: rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(10px);
+        border: 1px solid var(--raggie-glass-border);
+        color: var(--bs-body-color);
+    }
+    .btn-glass-github:hover {
+        background: rgba(255, 255, 255, 0.4);
+        color: var(--bs-primary);
+    }
+    [data-bs-theme="dark"] .btn-glass-github {
+        background: rgba(0, 0, 0, 0.4);
+    }
+    [data-bs-theme="dark"] .btn-glass-github:hover {
+        background: rgba(0, 229, 255, 0.2);
+        color: #fff;
+        border-color: var(--mpr-cyan-400);
+        box-shadow: 0 0 15px rgba(0, 229, 255, 0.3);
+    }
+</style>
+
+<div class="aero-hero py-5">
+    <div class="container py-5 aero-content text-center">
+        <i class="fa-brands fa-osi fa-4x text-info mb-4" aria-hidden="true" style="filter: drop-shadow(0 0 15px rgba(0,195,255,0.4));"></i>
+        <h1 class="display-4 fw-bold text-uppercase mb-3 brand-font text-glow-primary">Open Source Division</h1>
+        <p class="lead text-secondary mx-auto mb-0" style="max-width: 800px;">
+            RaggieSoft Media is committed to the open web. We build and maintain MIT-licensed infrastructure, frameworks, and tools designed to democratize narrative publishing and web accessibility.
+        </p>
+    </div>
+</div>
 
 <div class="container py-5">
     <div class="row mb-4">
