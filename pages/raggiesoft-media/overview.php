@@ -35,81 +35,8 @@ $pageTitle = "RaggieSoft Media | IP & Asset Management";
   ]
 }
 </script>
-<style>
-    /* --- AERO HERO SECTION --- */
-    .aero-hero {
-        position: relative;
-        overflow: hidden;
-        border-bottom: 1px solid var(--raggie-glass-border);
-        box-shadow: 0 8px 32px rgba(0, 130, 230, 0.1);
-        background: linear-gradient(135deg, rgba(0, 130, 230, 0.05) 0%, rgba(0, 130, 230, 0.01) 100%);
-    }
-    
-    [data-bs-theme="dark"] .aero-hero {
-        background: linear-gradient(135deg, rgba(0, 229, 255, 0.05) 0%, rgba(0, 229, 255, 0.01) 100%);
-        box-shadow: 0 8px 32px rgba(0, 229, 255, 0.05);
-    }
-    .aero-hero::before {
-        content: '';
-        position: absolute;
-        top: -5%; left: -5%; right: -5%; bottom: -5%; 
-        background-image: url('https://assets.raggiesoft.com/raggiesoft-media/images/hero/frutiger-aero.jpg');
-        background-size: cover;
-        background-position: center;
-        z-index: -2;
-        animation: aero-pan 40s linear infinite alternate;
-    }
 
-    .aero-hero::after {
-        content: '';
-        position: absolute;
-        top: 0; left: 0; right: 0; bottom: 0;
-        background: linear-gradient(135deg, rgba(255,255,255,0.7) 0%, rgba(255,255,255,0.9) 100%);
-        backdrop-filter: blur(4px);
-        -webkit-backdrop-filter: blur(4px);
-        z-index: -1;
-    }
 
-    [data-bs-theme="dark"] .aero-hero::before {
-        background: radial-gradient(circle, rgba(0,229,255,0.05) 0%, transparent 60%);
-    }
-
-    .aero-content { position: relative; z-index: 1; }
-
-    /* Tactile Hover Lift for Aero Cards */
-    .hover-lift {
-        transition: transform 0.2s cubic-bezier(0.25, 0.8, 0.25, 1), box-shadow 0.2s ease;
-    }
-    .hover-lift:hover {
-        transform: translateY(-4px);
-        box-shadow: 0 12px 28px rgba(0, 85, 150, 0.15), inset 0 1px 0 var(--raggie-gloss-highlight) !important;
-    }
-    [data-bs-theme="dark"] .hover-lift:hover {
-        box-shadow: 0 12px 28px rgba(0, 229, 255, 0.15), inset 0 1px 0 var(--raggie-gloss-highlight) !important;
-    }
-
-    /* Aero Card Images */
-    .aero-card-img-container {
-        height: 160px;
-        position: relative;
-        overflow: hidden;
-        border-bottom: 1px solid var(--raggie-glass-border);
-    }
-    .aero-card-img-container img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        transition: transform 0.5s ease;
-    }
-    .hover-lift:hover .aero-card-img-container img {
-        transform: scale(1.05);
-    }
-    .aero-card-img-overlay {
-        position: absolute;
-        top: 0; left: 0; right: 0; bottom: 0;
-        background: linear-gradient(to bottom, transparent 50%, rgba(0,0,0,0.6) 100%);
-    }
-</style>
 
 <div class="aero-hero py-5">
     <div class="container py-4 aero-content text-center">
