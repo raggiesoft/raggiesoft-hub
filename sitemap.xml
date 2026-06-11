@@ -1,91 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://raggiesoft.com/oconnell-trust/structure</loc>
+    <loc>https://raggiesoft.com/about</loc>
   </url>
   <url>
-    <loc>https://raggiesoft.com/about/michael-ragsdale</loc>
+    <loc>https://raggiesoft.com/about/stardust-engine</loc>
   </url>
   <url>
-    <loc>https://raggiesoft.com/raggiesoft-media</loc>
+    <loc>https://raggiesoft.com/about/engine-room</loc>
   </url>
   <url>
-    <loc>https://raggiesoft.com/raggiesoft-media/licensing</loc>
+    <loc>https://raggiesoft.com/about/family</loc>
   </url>
   <url>
-    <loc>https://raggiesoft.com/raggiesoft-media/licensing/commercial</loc>
+    <loc>https://raggiesoft.com/about/ai-disclaimer</loc>
   </url>
   <url>
-    <loc>https://raggiesoft.com/raggiesoft-media/careers</loc>
+    <loc>https://raggiesoft.com/about/aethel</loc>
   </url>
   <url>
-    <loc>https://raggiesoft.com/raggiesoft-media/projects</loc>
+    <loc>https://raggiesoft.com/about/license</loc>
   </url>
   <url>
-    <loc>https://raggiesoft.com/raggiesoft-media/projects/stardust-engine-cms</loc>
+    <loc>https://raggiesoft.com/about/privacy</loc>
   </url>
   <url>
-    <loc>https://raggiesoft.com/family</loc>
+    <loc>https://raggiesoft.com/about/terms</loc>
   </url>
   <url>
-    <loc>https://raggiesoft.com/family/michael</loc>
-  </url>
-  <url>
-    <loc>https://raggiesoft.com/family/paige</loc>
-  </url>
-  <url>
-    <loc>https://raggiesoft.com/family/jessica</loc>
-  </url>
-  <url>
-    <loc>https://raggiesoft.com/family/sarah</loc>
-  </url>
-  <url>
-    <loc>https://raggiesoft.com/family/jenna</loc>
-  </url>
-  <url>
-    <loc>https://raggiesoft.com/family/harper</loc>
-  </url>
-  <url>
-    <loc>https://raggiesoft.com/family/amanda-elara</loc>
-  </url>
-  <url>
-    <loc>https://raggiesoft.com/</loc>
-  </url>
-  <url>
-    <loc>https://raggiesoft.com/contact</loc>
-  </url>
-  <url>
-    <loc>https://raggiesoft.com/raggiesoft-books/encyclopedia</loc>
-  </url>
-  <url>
-    <loc>https://raggiesoft.com/raggiesoft-books/encyclopedia/sensory-scale</loc>
-  </url>
-  <url>
-    <loc>https://raggiesoft.com/raggiesoft-books/aethel-saga</loc>
-  </url>
-  <url>
-    <loc>https://raggiesoft.com/raggiesoft-books/aethel-saga/lore/characters</loc>
-  </url>
-  <url>
-    <loc>https://raggiesoft.com/raggiesoft-books/aethel-saga/soundtrack</loc>
-  </url>
-  <url>
-    <loc>https://raggiesoft.com/raggiesoft-books</loc>
-  </url>
-  <url>
-    <loc>https://raggiesoft.com/raggiesoft-books/contemporary</loc>
-  </url>
-  <url>
-    <loc>https://raggiesoft.com/raggiesoft-books/knox</loc>
-  </url>
-  <url>
-    <loc>https://raggiesoft.com/raggiesoft-books/knox/chapters</loc>
-  </url>
-  <url>
-    <loc>https://raggiesoft.com/raggiesoft-books/knox/lore</loc>
-  </url>
-  <url>
-    <loc>https://raggiesoft.com/raggiesoft-books/knox/characters</loc>
+    <loc>https://raggiesoft.com/apps/cipher</loc>
   </url>
   <url>
     <loc>https://raggiesoft.com/case-studies</loc>
@@ -97,70 +40,10 @@
     <loc>https://raggiesoft.com/case-studies/shenandoah-valley</loc>
   </url>
   <url>
-    <loc>https://raggiesoft.com/engine-room/jessica-miller-center</loc>
+    <loc>https://raggiesoft.com/</loc>
   </url>
   <url>
-    <loc>https://raggiesoft.com/engine-room/jessica-miller-center/the-quiet-floor</loc>
-  </url>
-  <url>
-    <loc>https://raggiesoft.com/engine-room/jessica-miller-center/destination-dispatch-elevators</loc>
-  </url>
-  <url>
-    <loc>https://raggiesoft.com/engine-room/corporate</loc>
-  </url>
-  <url>
-    <loc>https://raggiesoft.com/engine-room/corporate/structure</loc>
-  </url>
-  <url>
-    <loc>https://raggiesoft.com/engine-room/corporate/aethelgard</loc>
-  </url>
-  <url>
-    <loc>https://raggiesoft.com/engine-room/corporate/leadership</loc>
-  </url>
-  <url>
-    <loc>https://raggiesoft.com/engine-room/corporate/systems</loc>
-  </url>
-  <url>
-    <loc>https://raggiesoft.com/engine-room/corporate/fleet</loc>
-  </url>
-  <url>
-    <loc>https://raggiesoft.com/engine-room/corporate/acquisition-plan</loc>
-  </url>
-  <url>
-    <loc>https://raggiesoft.com/stardust-blacksburg</loc>
-  </url>
-  <url>
-    <loc>https://raggiesoft.com/engine-room</loc>
-  </url>
-  <url>
-    <loc>https://raggiesoft.com/engine-room/artists</loc>
-  </url>
-  <url>
-    <loc>https://raggiesoft.com/engine-room/history</loc>
-  </url>
-  <url>
-    <loc>https://raggiesoft.com/engine-room/commercial-licensing</loc>
-  </url>
-  <url>
-    <loc>https://raggiesoft.com/engine-room/dsp-verification</loc>
-  </url>
-  <url>
-    <loc>https://raggiesoft.com/engine-room/radio</loc>
-  </url>
-  <url>
-    <loc>https://raggiesoft.com/engine-room/artists/fractured-prisms/discography</loc>
-  </url>
-  <url>
-    <loc>https://raggiesoft.com/engine-room/artists/fractured-prisms/discography/1983-carnaby-street</loc>
-  </url>
-  <url>
-    <loc>https://raggiesoft.com/engine-room/artists/fractured-prisms/discography/1984-1883</loc>
-  </url>
-  <url>
-    <loc>https://raggiesoft.com/engine-room/artists/fractured-prisms</loc>
-  </url>
-  <url>
-    <loc>https://raggiesoft.com/engine-room/artists/fractured-prisms/lore/colonial-theatre</loc>
+    <loc>https://raggiesoft.com/contact</loc>
   </url>
   <url>
     <loc>https://raggiesoft.com/engine-room/artists/fractured-prisms/band</loc>
@@ -178,10 +61,46 @@
     <loc>https://raggiesoft.com/engine-room/artists/fractured-prisms/band/the-missing-four</loc>
   </url>
   <url>
+    <loc>https://raggiesoft.com/engine-room/artists/fractured-prisms/discography</loc>
+  </url>
+  <url>
+    <loc>https://raggiesoft.com/engine-room/artists/fractured-prisms/discography/1983-carnaby-street</loc>
+  </url>
+  <url>
+    <loc>https://raggiesoft.com/engine-room/artists/fractured-prisms/discography/1984-1883</loc>
+  </url>
+  <url>
+    <loc>https://raggiesoft.com/engine-room/artists/fractured-prisms</loc>
+  </url>
+  <url>
+    <loc>https://raggiesoft.com/engine-room/artists/fractured-prisms/lore/colonial-theatre</loc>
+  </url>
+  <url>
     <loc>https://raggiesoft.com/engine-room/artists/origin</loc>
   </url>
   <url>
     <loc>https://raggiesoft.com/engine-room/artists/origin/discography</loc>
+  </url>
+  <url>
+    <loc>https://raggiesoft.com/engine-room/artists/stardust-engine/band</loc>
+  </url>
+  <url>
+    <loc>https://raggiesoft.com/engine-room/artists/stardust-engine/band/history</loc>
+  </url>
+  <url>
+    <loc>https://raggiesoft.com/engine-room/artists/stardust-engine/band/ryan-oconnell</loc>
+  </url>
+  <url>
+    <loc>https://raggiesoft.com/engine-room/artists/stardust-engine/band/cassidy-oconnell</loc>
+  </url>
+  <url>
+    <loc>https://raggiesoft.com/engine-room/artists/stardust-engine/band/holly-oconnell</loc>
+  </url>
+  <url>
+    <loc>https://raggiesoft.com/engine-room/artists/stardust-engine/band/evan-wright</loc>
+  </url>
+  <url>
+    <loc>https://raggiesoft.com/engine-room/artists/stardust-engine/band/tyler-wright</loc>
   </url>
   <url>
     <loc>https://raggiesoft.com/engine-room/artists/stardust-engine/discography</loc>
@@ -229,25 +148,31 @@
     <loc>https://raggiesoft.com/engine-room/artists/stardust-engine</loc>
   </url>
   <url>
-    <loc>https://raggiesoft.com/engine-room/artists/stardust-engine/band</loc>
+    <loc>https://raggiesoft.com/engine-room/artists/stardust-engine/story/ad-astra</loc>
   </url>
   <url>
-    <loc>https://raggiesoft.com/engine-room/artists/stardust-engine/band/history</loc>
+    <loc>https://raggiesoft.com/engine-room/artists/stardust-engine/story/ad-astra/voyage</loc>
   </url>
   <url>
-    <loc>https://raggiesoft.com/engine-room/artists/stardust-engine/band/ryan-oconnell</loc>
+    <loc>https://raggiesoft.com/engine-room/artists/stardust-engine/story/ad-astra/voyage/day-01</loc>
   </url>
   <url>
-    <loc>https://raggiesoft.com/engine-room/artists/stardust-engine/band/cassidy-oconnell</loc>
+    <loc>https://raggiesoft.com/engine-room/artists/stardust-engine/story/ad-astra/voyage/day-02</loc>
   </url>
   <url>
-    <loc>https://raggiesoft.com/engine-room/artists/stardust-engine/band/holly-oconnell</loc>
+    <loc>https://raggiesoft.com/engine-room/artists/stardust-engine/story/ad-astra/voyage/day-03</loc>
   </url>
   <url>
-    <loc>https://raggiesoft.com/engine-room/artists/stardust-engine/band/evan-wright</loc>
+    <loc>https://raggiesoft.com/engine-room/artists/stardust-engine/story/ad-astra/voyage/day-10</loc>
   </url>
   <url>
-    <loc>https://raggiesoft.com/engine-room/artists/stardust-engine/band/tyler-wright</loc>
+    <loc>https://raggiesoft.com/engine-room/artists/stardust-engine/story/ad-astra/voyage/day-21</loc>
+  </url>
+  <url>
+    <loc>https://raggiesoft.com/engine-room/artists/stardust-engine/story/cosmic-tidal-lock-sound</loc>
+  </url>
+  <url>
+    <loc>https://raggiesoft.com/engine-room/artists/stardust-engine/story/crash-of-90</loc>
   </url>
   <url>
     <loc>https://raggiesoft.com/engine-room/artists/stardust-engine/story/friction</loc>
@@ -310,63 +235,138 @@
     <loc>https://raggiesoft.com/engine-room/artists/stardust-engine/story/nine-figure-refusal/frost-interview</loc>
   </url>
   <url>
-    <loc>https://raggiesoft.com/engine-room/artists/stardust-engine/story/cosmic-tidal-lock-sound</loc>
-  </url>
-  <url>
     <loc>https://raggiesoft.com/engine-room/artists/stardust-engine/story</loc>
   </url>
   <url>
-    <loc>https://raggiesoft.com/engine-room/artists/stardust-engine/story/crash-of-90</loc>
+    <loc>https://raggiesoft.com/engine-room/jessica-miller-center</loc>
   </url>
   <url>
-    <loc>https://raggiesoft.com/engine-room/artists/stardust-engine/story/ad-astra</loc>
+    <loc>https://raggiesoft.com/engine-room/jessica-miller-center/the-quiet-floor</loc>
   </url>
   <url>
-    <loc>https://raggiesoft.com/engine-room/artists/stardust-engine/story/ad-astra/voyage</loc>
+    <loc>https://raggiesoft.com/engine-room/jessica-miller-center/destination-dispatch-elevators</loc>
   </url>
   <url>
-    <loc>https://raggiesoft.com/engine-room/artists/stardust-engine/story/ad-astra/voyage/day-01</loc>
+    <loc>https://raggiesoft.com/engine-room/corporate</loc>
   </url>
   <url>
-    <loc>https://raggiesoft.com/engine-room/artists/stardust-engine/story/ad-astra/voyage/day-02</loc>
+    <loc>https://raggiesoft.com/engine-room/corporate/structure</loc>
   </url>
   <url>
-    <loc>https://raggiesoft.com/engine-room/artists/stardust-engine/story/ad-astra/voyage/day-03</loc>
+    <loc>https://raggiesoft.com/engine-room/corporate/aethelgard</loc>
   </url>
   <url>
-    <loc>https://raggiesoft.com/engine-room/artists/stardust-engine/story/ad-astra/voyage/day-10</loc>
+    <loc>https://raggiesoft.com/engine-room/corporate/leadership</loc>
   </url>
   <url>
-    <loc>https://raggiesoft.com/engine-room/artists/stardust-engine/story/ad-astra/voyage/day-21</loc>
+    <loc>https://raggiesoft.com/engine-room/corporate/systems</loc>
   </url>
   <url>
-    <loc>https://raggiesoft.com/about</loc>
+    <loc>https://raggiesoft.com/engine-room/corporate/fleet</loc>
   </url>
   <url>
-    <loc>https://raggiesoft.com/about/stardust-engine</loc>
+    <loc>https://raggiesoft.com/engine-room/corporate/acquisition-plan</loc>
   </url>
   <url>
-    <loc>https://raggiesoft.com/about/engine-room</loc>
+    <loc>https://raggiesoft.com/stardust-blacksburg</loc>
   </url>
   <url>
-    <loc>https://raggiesoft.com/about/family</loc>
+    <loc>https://raggiesoft.com/engine-room</loc>
   </url>
   <url>
-    <loc>https://raggiesoft.com/about/ai-disclaimer</loc>
+    <loc>https://raggiesoft.com/engine-room/artists</loc>
   </url>
   <url>
-    <loc>https://raggiesoft.com/about/aethel</loc>
+    <loc>https://raggiesoft.com/engine-room/history</loc>
   </url>
   <url>
-    <loc>https://raggiesoft.com/about/license</loc>
+    <loc>https://raggiesoft.com/engine-room/commercial-licensing</loc>
   </url>
   <url>
-    <loc>https://raggiesoft.com/about/privacy</loc>
+    <loc>https://raggiesoft.com/engine-room/dsp-verification</loc>
   </url>
   <url>
-    <loc>https://raggiesoft.com/about/terms</loc>
+    <loc>https://raggiesoft.com/engine-room/radio</loc>
   </url>
   <url>
-    <loc>https://raggiesoft.com/apps/cipher</loc>
+    <loc>https://raggiesoft.com/family</loc>
+  </url>
+  <url>
+    <loc>https://raggiesoft.com/family/michael</loc>
+  </url>
+  <url>
+    <loc>https://raggiesoft.com/family/paige</loc>
+  </url>
+  <url>
+    <loc>https://raggiesoft.com/family/jessica</loc>
+  </url>
+  <url>
+    <loc>https://raggiesoft.com/family/sarah</loc>
+  </url>
+  <url>
+    <loc>https://raggiesoft.com/family/jenna</loc>
+  </url>
+  <url>
+    <loc>https://raggiesoft.com/family/harper</loc>
+  </url>
+  <url>
+    <loc>https://raggiesoft.com/family/amanda-elara</loc>
+  </url>
+  <url>
+    <loc>https://raggiesoft.com/oconnell-trust/structure</loc>
+  </url>
+  <url>
+    <loc>https://raggiesoft.com/about/michael-ragsdale</loc>
+  </url>
+  <url>
+    <loc>https://raggiesoft.com/raggiesoft-books/encyclopedia</loc>
+  </url>
+  <url>
+    <loc>https://raggiesoft.com/raggiesoft-books/encyclopedia/sensory-scale</loc>
+  </url>
+  <url>
+    <loc>https://raggiesoft.com/raggiesoft-books/knox</loc>
+  </url>
+  <url>
+    <loc>https://raggiesoft.com/raggiesoft-books/knox/chapters</loc>
+  </url>
+  <url>
+    <loc>https://raggiesoft.com/raggiesoft-books/knox/lore</loc>
+  </url>
+  <url>
+    <loc>https://raggiesoft.com/raggiesoft-books/knox/characters</loc>
+  </url>
+  <url>
+    <loc>https://raggiesoft.com/raggiesoft-books</loc>
+  </url>
+  <url>
+    <loc>https://raggiesoft.com/raggiesoft-books/contemporary</loc>
+  </url>
+  <url>
+    <loc>https://raggiesoft.com/raggiesoft-books/aethel-saga</loc>
+  </url>
+  <url>
+    <loc>https://raggiesoft.com/raggiesoft-books/aethel-saga/lore/characters</loc>
+  </url>
+  <url>
+    <loc>https://raggiesoft.com/raggiesoft-books/aethel-saga/soundtrack</loc>
+  </url>
+  <url>
+    <loc>https://raggiesoft.com/raggiesoft-media</loc>
+  </url>
+  <url>
+    <loc>https://raggiesoft.com/raggiesoft-media/licensing</loc>
+  </url>
+  <url>
+    <loc>https://raggiesoft.com/raggiesoft-media/licensing/commercial</loc>
+  </url>
+  <url>
+    <loc>https://raggiesoft.com/raggiesoft-media/careers</loc>
+  </url>
+  <url>
+    <loc>https://raggiesoft.com/raggiesoft-media/projects</loc>
+  </url>
+  <url>
+    <loc>https://raggiesoft.com/raggiesoft-media/projects/stardust-engine-cms</loc>
   </url>
 </urlset>

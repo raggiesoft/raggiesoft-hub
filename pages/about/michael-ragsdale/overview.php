@@ -18,7 +18,7 @@ global $cdn_root;
     "jobTitle": "Systems Architect & Full-Stack Developer",
     "url": "https://raggiesoft.com/about/michael-ragsdale",
     "image": "https://assets.raggiesoft.com/raggiesoft-corporate/images/logos/logo-michael.png",
-    "description": "Architecting accessible, resilient systems since 1997. Specializing in custom PHP MVC frameworks, Vanilla JS SPAs, and strict WCAG 2.1 AA compliance.",
+    "description": "Architecting accessible, resilient systems since 1997. Specializing in custom-built PHP MVC frameworks, Vanilla JS SPAs, and strict WCAG 2.1 AA compliance.",
     "address": {
       "@type": "PostalAddress",
       "addressLocality": "Norfolk",
@@ -27,12 +27,12 @@ global $cdn_root;
     },
     "knowsAbout": [
       "PHP 8.4",
-      "C# .NET 10",
+      "Vanilla JavaScript (ES6+)",
       "Linux Server Administration",
       "WCAG 2.1 AA",
       "Section 508 Compliance",
       "DigitalOcean Cloud Infrastructure",
-      "Vanilla JavaScript SPA Development"
+      "Bash CI/CD Automation"
     ],
     "seeks": {
       "@type": "Demand",
@@ -79,7 +79,7 @@ global $cdn_root;
             
             <div class="d-flex flex-wrap gap-2 mb-5">
                 <span class="badge bg-secondary-subtle text-secondary-emphasis border border-secondary-subtle px-3 py-2 font-monospace fs-7">PHP 8.4 (MVC)</span>
-                <span class="badge bg-secondary-subtle text-secondary-emphasis border border-secondary-subtle px-3 py-2 font-monospace fs-7">C# / .NET 10</span>
+                <span class="badge bg-secondary-subtle text-secondary-emphasis border border-secondary-subtle px-3 py-2 font-monospace fs-7">Vanilla JS (ES6+)</span>
                 <span class="badge bg-secondary-subtle text-secondary-emphasis border border-secondary-subtle px-3 py-2 font-monospace fs-7">Linux (Bash/Shell)</span>
                 <span class="badge bg-secondary-subtle text-secondary-emphasis border border-secondary-subtle px-3 py-2 font-monospace fs-7">DigitalOcean</span>
                 <span class="badge bg-secondary-subtle text-secondary-emphasis border border-secondary-subtle px-3 py-2 font-monospace fs-7">Cloudflare</span>
@@ -94,7 +94,7 @@ global $cdn_root;
                             <i class="fa-duotone fa-server fa-2x text-primary me-4"></i>
                             <div>
                                 <h4 class="h6 fw-bold mb-1 text-body-emphasis text-uppercase">The Stardust Engine CMS</h4>
-                                <p class="small text-secondary mb-0">The custom PHP MVC framework and Vanilla JS SPA Router (Elara) powering this exact platform.</p>
+                                <p class="small text-secondary mb-0">The custom-built PHP MVC framework (MIT License) and Vanilla JS SPA Router (Elara) powering this exact platform.</p>
                             </div>
                         </div>
                     </a>
@@ -180,12 +180,12 @@ global $cdn_root;
                 <div class="d-flex align-items-center mb-3">
                     <i class="fa-duotone fa-users-gear fa-2x text-secondary me-3"></i>
                     <div>
-                        <h3 class="h6 fw-bold mb-0 text-body-emphasis">Operations & Technical Lead</h3>
-                        <div class="small text-primary font-monospace fs-7">City of Virginia Beach (Rec Center)</div>
+                        <h3 class="h6 fw-bold mb-0 text-body-emphasis">Technical Lead & Data Normalization</h3>
+                        <div class="small text-primary font-monospace fs-7">City of Virginia Beach (Parks & Recreation)</div>
                     </div>
                 </div>
                 <p class="small text-secondary mb-0">
-                    Managing high-volume financial reconciliation and acting as the primary escalation point for complex logistical conflicts. Developed manual ETL pipelines to normalize legacy municipal reservation data into accessible, Section 508 compliant operational formats. Primary trainer for the ActiveNet CRM. WCAG compliant templates ensure universal access.
+                    Engineered manual ETL pipelines to normalize legacy municipal reservation data into fully accessible, Section 508 compliant digital formats. Function as the primary technical trainer for the ActiveNet CRM, enforcing strict data integrity protocols and acting as the primary escalation point for complex logistical conflicts.
                 </p>
             </div>
         </div>
@@ -200,7 +200,7 @@ global $cdn_root;
                     </div>
                 </div>
                 <p class="small text-secondary mb-0">
-                    Ensured WCAG 2.1 AA and Section 508 compliance across enterprise LMS platforms. Remediated web content using Deque axe and designed universal, accessible architectural templates deployed across university-wide syllabi. A cornerstone of Empathetic Engineering.
+                    Served as the primary accessibility gatekeeper for enterprise-level web content during university-wide LMS migrations. Enforced strict WCAG 2.1 AA compliance parameters, utilizing tools like Deque axe, and engineered universal, accessible architectural templates deployed across institutional syllabi.
                 </p>
             </div>
         </div>
@@ -210,7 +210,7 @@ global $cdn_root;
                 <div>
                     <i class="fa-solid fa-building-columns text-secondary fa-2x mb-2"></i>
                     <h3 class="h6 fw-bold mb-0 text-body-emphasis">Tidewater Community College</h3>
-                    <div class="small text-muted">A.S. Information Technology (Website Design) | <em>In Progress</em></div>
+                    <div class="small text-muted">A.S. Information Technology (Focus: Software Engineering & Web Dev) | <em>In Progress</em></div>
                 </div>
                 <div class="d-none d-md-block border-start border-secondary opacity-25" style="height: 50px;"></div>
                 <div>
