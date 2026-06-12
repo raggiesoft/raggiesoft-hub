@@ -433,7 +433,11 @@ if (isset($customPageAssets) && is_array($customPageAssets)) {
     <header>
       <nav class="navbar navbar-expand-md sticky-top border-bottom border-primary border-opacity-50 bg-body">
         <div class="container-fluid">
-          
+          <?php 
+            // 1. Safely extract the logos from Elara's routing arrays
+            $navLogoLight = $pageConfig['navbarBrandLogo'] ?? $settings['navbarBrandLogo'] ?? $navbarBrandLogo ?? '';
+            $navLogoDark  = $pageConfig['navbarBrandLogoDark'] ?? $settings['navbarBrandLogoDark'] ?? $navbarBrandLogoDark ?? '';
+          ?>
           <a class="navbar-brand d-flex align-items-center" href="<?php echo htmlspecialchars($navbarBrandLink ?? '/'); ?>">
             <?php if (!empty($navbarBrandLogo) && !empty($navbarBrandLogoDark)): ?>
                 <img src="<?php echo htmlspecialchars($navbarBrandLogo); ?>" 
