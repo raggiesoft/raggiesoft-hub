@@ -32,7 +32,10 @@ global $cdn_root;
       "WCAG 2.1 AA",
       "Section 508 Compliance",
       "DigitalOcean Cloud Infrastructure",
-      "Bash CI/CD Automation"
+      "Bash CI/CD Automation",
+      "Gemini LLM (Production/Prompt Engineering)",
+      "GitHub Copilot",
+      "Suno AI Audio Generation"
     ],
     "seeks": {
       "@type": "Demand",
@@ -83,6 +86,11 @@ global $cdn_root;
                 <span class="badge bg-secondary-subtle text-secondary-emphasis border border-secondary-subtle px-3 py-2 font-monospace fs-7">Linux (Bash/Shell)</span>
                 <span class="badge bg-secondary-subtle text-secondary-emphasis border border-secondary-subtle px-3 py-2 font-monospace fs-7">DigitalOcean</span>
                 <span class="badge bg-secondary-subtle text-secondary-emphasis border border-secondary-subtle px-3 py-2 font-monospace fs-7">Cloudflare</span>
+                
+                <span class="badge bg-info-subtle text-info-emphasis border border-info-subtle px-3 py-2 font-monospace fs-7"><i class="fa-solid fa-sparkles me-1"></i>Gemini LLM</span>
+                <span class="badge bg-dark-subtle text-dark-emphasis border border-dark-subtle px-3 py-2 font-monospace fs-7"><i class="fa-brands fa-github me-1"></i>Copilot</span>
+                <span class="badge bg-warning-subtle text-warning-emphasis border border-warning-subtle px-3 py-2 font-monospace fs-7"><i class="fa-solid fa-music me-1"></i>Suno</span>
+                
                 <span class="badge bg-primary-subtle text-primary-emphasis border border-primary-subtle px-3 py-2 font-monospace fs-7 fw-bold">WCAG 2.1 AA / Sec 508</span>
             </div>
 
@@ -117,6 +125,17 @@ global $cdn_root;
                             <div>
                                 <h4 class="h6 fw-bold mb-1 text-body-emphasis text-uppercase">The Stardust Engine (Lore)</h4>
                                 <p class="small text-secondary mb-0">The JSON-driven narrative universe testing the boundaries of accessible, immersive world-building.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-12">
+                    <a href="/about/ai-disclaimer" class="card bg-body-secondary border-0 shadow-sm hover-lift text-decoration-none border-start border-4 border-info">
+                        <div class="card-body p-4 d-flex align-items-center">
+                            <i class="fa-duotone fa-robot-astromech fa-2x text-info me-4"></i>
+                            <div>
+                                <h4 class="h6 fw-bold mb-1 text-body-emphasis text-uppercase">AI Integration & Transparency</h4>
+                                <p class="small text-secondary mb-0">Read the rigorous prompt engineering philosophy and production workflow used to safely orchestrate Gemini and Suno within these ecosystems.</p>
                             </div>
                         </div>
                     </a>
