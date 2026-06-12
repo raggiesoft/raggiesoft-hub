@@ -49,7 +49,10 @@ $css_load_queue = [
 ];
 
 // 5. Critical Images
-$critical_images = [ $navbarBrandLogo ?? '' ];
+$critical_images = [];
+if (!empty($navbarBrandLogo)) $critical_images[] = $navbarBrandLogo;
+if (!empty($navbarBrandLogoDark)) $critical_images[] = $navbarBrandLogoDark;
+
 if (isset($customPageAssets) && is_array($customPageAssets)) {
     $critical_images = array_merge($critical_images, $customPageAssets);
 }
@@ -285,6 +288,10 @@ if (isset($customPageAssets) && is_array($customPageAssets)) {
             top: 9px;
             transform: rotate(-135deg);
         }
+
+        /* Global Theme Image Toggling (Protects non-Aero themes) */
+        [data-bs-theme="dark"] .theme-img-light { display: none !important; }
+        html:not([data-bs-theme="dark"]) .theme-img-dark { display: none !important; }
     </style>
 
     <script>
@@ -417,16 +424,28 @@ if (isset($customPageAssets) && is_array($customPageAssets)) {
         <div class="container-fluid">
           
           <a class="navbar-brand d-flex align-items-center" href="<?php echo htmlspecialchars($navbarBrandLink ?? '/'); ?>">
-            <?php if (!empty($navbarBrandLogo)): ?>
-            <img src="<?php echo htmlspecialchars($navbarBrandLogo); ?>" 
-                 alt="<?php echo htmlspecialchars($navbarBrandAlt ?? 'Logo'); ?>" 
-                 height="30" 
-                 class="me-2 d-inline-block align-text-top <?php echo htmlspecialchars($navbarBrandClass ?? ''); ?>">
+            <?php if (!empty($navbarBrandLogo) && !empty($navbarBrandLogoDark)): ?>
+                <img src="<?php echo htmlspecialchars($navbarBrandLogo); ?>" 
+                    alt="<?php echo htmlspecialchars($navbarBrandAlt ?? 'Logo'); ?>" 
+                    height="30" width="30"
+                    class="theme-img-light me-2 d-inline-block align-text-top <?php echo htmlspecialchars($navbarBrandClass ?? ''); ?>">
+                
+                <img src="<?php echo htmlspecialchars($navbarBrandLogoDark); ?>" 
+                    alt="<?php echo htmlspecialchars($navbarBrandAlt ?? 'Logo Dark'); ?>" 
+                    height="30" width="30"
+                    class="theme-img-dark me-2 d-inline-block align-text-top <?php echo htmlspecialchars($navbarBrandClass ?? ''); ?>">
+                    
+            <?php elseif (!empty($navbarBrandLogo)): ?>
+                <img src="<?php echo htmlspecialchars($navbarBrandLogo); ?>" 
+                    alt="<?php echo htmlspecialchars($navbarBrandAlt ?? 'Logo'); ?>" 
+                    height="30" width="30"
+                    class="me-2 d-inline-block align-text-top <?php echo htmlspecialchars($navbarBrandClass ?? ''); ?>">
             <?php endif; ?>
+            
             <span class="fw-bold text-uppercase brand-font">
-              <?php echo strip_tags($navbarBrandText ?? $settings['siteName'] ?? 'Elara Site', '<span>'); ?>
+            <?php echo strip_tags($navbarBrandText ?? $settings['siteName'] ?? 'Elara Site', '<span>'); ?>
             </span>
-          </a>
+        </a>
           
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
              <div class="hamburger-icon">
