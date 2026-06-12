@@ -336,12 +336,6 @@ if (isset($customPageAssets) && is_array($customPageAssets)) {
   </head>
   
   <body class="d-flex flex-column h-100">
-    <div style="background: #dc3545; color: white; padding: 15px; font-family: monospace; z-index: 99999; position: relative; border-bottom: 3px solid #ffc107;">
-    <strong>ELARA ROUTING DIAGNOSTIC</strong><br><br>
-    $pageConfig['navbarBrandLogoDark'] : <?php var_dump($pageConfig['navbarBrandLogoDark'] ?? 'UNDEFINED KEY'); ?><br>
-    $settings['navbarBrandLogoDark']   : <?php var_dump($settings['navbarBrandLogoDark'] ?? 'UNDEFINED KEY'); ?><br>
-    $navbarBrandLogoDark (Raw)         : <?php var_dump($navbarBrandLogoDark ?? 'UNDEFINED VARIABLE'); ?>
-</div>
     <a href="#main-content" class="visually-hidden-focusable p-3 m-2 bg-primary text-white rounded position-absolute start-0 top-0 z-3 text-decoration-none fw-bold">
         Skip to Main Content
     </a>
