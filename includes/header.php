@@ -289,9 +289,20 @@ if (isset($customPageAssets) && is_array($customPageAssets)) {
             transform: rotate(-135deg);
         }
 
-        /* Global Theme Image Toggling (Protects non-Aero themes) */
+        /* --- Global Theme Image Toggling --- */
+        /* 1. Default State (Light) */
+        .theme-img-light { display: inline-block !important; }
+        .theme-img-dark { display: none !important; }
+
+        /* 2. Explicit Dark Mode (Data Attribute) */
         [data-bs-theme="dark"] .theme-img-light { display: none !important; }
-        html:not([data-bs-theme="dark"]) .theme-img-dark { display: none !important; }
+        [data-bs-theme="dark"] .theme-img-dark { display: inline-block !important; }
+
+        /* 3. Native OS Dark Mode (Fires before JS sets the attribute) */
+        @media (prefers-color-scheme: dark) {
+            html:not([data-bs-theme="light"]) .theme-img-light { display: none !important; }
+            html:not([data-bs-theme="light"]) .theme-img-dark { display: inline-block !important; }
+        }
     </style>
 
     <script>
@@ -428,12 +439,12 @@ if (isset($customPageAssets) && is_array($customPageAssets)) {
                 <img src="<?php echo htmlspecialchars($navbarBrandLogo); ?>" 
                     alt="<?php echo htmlspecialchars($navbarBrandAlt ?? 'Logo'); ?>" 
                     height="30" width="30"
-                    class="theme-img-light me-2 d-inline-block align-text-top <?php echo htmlspecialchars($navbarBrandClass ?? ''); ?>">
+                    class="theme-img-light me-2 align-text-top <?php echo htmlspecialchars($navbarBrandClass ?? ''); ?>">
                 
                 <img src="<?php echo htmlspecialchars($navbarBrandLogoDark); ?>" 
                     alt="<?php echo htmlspecialchars($navbarBrandAlt ?? 'Logo Dark'); ?>" 
                     height="30" width="30"
-                    class="theme-img-dark me-2 d-inline-block align-text-top <?php echo htmlspecialchars($navbarBrandClass ?? ''); ?>">
+                    class="theme-img-dark me-2 align-text-top <?php echo htmlspecialchars($navbarBrandClass ?? ''); ?>">
                     
             <?php elseif (!empty($navbarBrandLogo)): ?>
                 <img src="<?php echo htmlspecialchars($navbarBrandLogo); ?>" 
