@@ -53,10 +53,15 @@ global $cdn_root;
 
     <div class="row align-items-center mb-5 pb-4 border-bottom border-secondary-subtle">
         <div class="col-lg-3 text-center text-lg-start mb-4 mb-lg-0">
-             <img src="https://assets.raggiesoft.com/raggiesoft-corporate/images/logos/logo-michael.png" 
-                  alt="Michael P. Ragsdale" 
-                  class="rounded-circle shadow-lg border border-4 border-white"
-                  style="width: 200px; height: 200px; object-fit: cover;">
+            <img src="https://assets.raggiesoft.com/raggiesoft-corporate/images/mragsdale-aero/mragsdale-frutiger-aero.jpg" 
+                alt="Michael P. Ragsdale" 
+                class="theme-img-light rounded-circle shadow-lg border border-4 border-white mx-auto mx-lg-0"
+                style="width: 200px; height: 200px; object-fit: cover; display: block;">
+            
+            <img src="https://assets.raggiesoft.com/raggiesoft-corporate/images/mragsdale-aero/mragsdale-dark-aero.jpg" 
+                alt="Michael P. Ragsdale" 
+                class="theme-img-dark rounded-circle shadow-lg border border-4 mx-auto mx-lg-0"
+                style="width: 200px; height: 200px; object-fit: cover; border-color: rgba(0, 229, 255, 0.4) !important; box-shadow: 0 0 20px rgba(0, 229, 255, 0.2) !important;">
         </div>
         <div class="col-lg-9 text-center text-lg-start">
             <h1 class="display-4 fw-bold text-uppercase text-glow-primary mb-2" style="font-family: 'Impact', sans-serif;">Michael P. Ragsdale</h1>
