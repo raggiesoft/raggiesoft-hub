@@ -50,8 +50,10 @@ $css_load_queue = [
 
 // 5. Critical Images
 $critical_images = [];
-if (!empty($navbarBrandLogo)) $critical_images[] = $navbarBrandLogo;
-if (!empty($navbarBrandLogoDark)) $critical_images[] = $navbarBrandLogoDark;
+if (!empty($pageConfig['navbarBrandLogo'])) $critical_images[] = $pageConfig['navbarBrandLogo'];
+elseif (!empty($navbarBrandLogo)) $critical_images[] = $navbarBrandLogo;
+
+if (!empty($pageConfig['navbarBrandLogoDark'])) $critical_images[] = $pageConfig['navbarBrandLogoDark'];
 
 if (isset($customPageAssets) && is_array($customPageAssets)) {
     $critical_images = array_merge($critical_images, $customPageAssets);
@@ -439,35 +441,38 @@ if (isset($customPageAssets) && is_array($customPageAssets)) {
     <header>
       <nav class="navbar navbar-expand-md sticky-top border-bottom border-primary border-opacity-50 bg-body">
         <div class="container-fluid">
-          <?php 
-            // 1. Safely extract the logos from Elara's routing arrays
-            $navLogoLight = $pageConfig['navbarBrandLogo'] ?? $settings['navbarBrandLogo'] ?? $navbarBrandLogo ?? '';
-            $navLogoDark  = $pageConfig['navbarBrandLogoDark'] ?? $settings['navbarBrandLogoDark'] ?? $navbarBrandLogoDark ?? '';
-          ?>
-          <a class="navbar-brand d-flex align-items-center" href="<?php echo htmlspecialchars($navbarBrandLink ?? '/'); ?>">
-            <?php if (!empty($navbarBrandLogo) && !empty($navbarBrandLogoDark)): ?>
-                <img src="<?php echo htmlspecialchars($navbarBrandLogo); ?>" 
-                    alt="<?php echo htmlspecialchars($navbarBrandAlt ?? 'Logo'); ?>" 
-                    height="30" width="30"
-                    class="theme-img-light me-2 align-text-top <?php echo htmlspecialchars($navbarBrandClass ?? ''); ?>">
+          </a>
+            <a class="navbar-brand d-flex align-items-center" href="<?php echo htmlspecialchars($pageConfig['navbarBrandLink'] ?? $navbarBrandLink ?? '/'); ?>">
                 
-                <img src="<?php echo htmlspecialchars($navbarBrandLogoDark); ?>" 
-                    alt="<?php echo htmlspecialchars($navbarBrandAlt ?? 'Logo Dark'); ?>" 
-                    height="30" width="30"
-                    class="theme-img-dark me-2 align-text-top <?php echo htmlspecialchars($navbarBrandClass ?? ''); ?>">
+                <?php 
+                // Directly query the array where we know the data lives
+                $logoLight = $pageConfig['navbarBrandLogo'] ?? $settings['navbarBrandLogo'] ?? $navbarBrandLogo ?? '';
+                $logoDark  = $pageConfig['navbarBrandLogoDark'] ?? '';
+                ?>
+
+                <?php if (!empty($logoLight) && !empty($logoDark)): ?>
+                    <img src="<?php echo htmlspecialchars($logoLight); ?>" 
+                        alt="<?php echo htmlspecialchars($pageConfig['navbarBrandAlt'] ?? 'Logo'); ?>" 
+                        height="30" width="30"
+                        class="theme-img-light me-2 align-text-top <?php echo htmlspecialchars($pageConfig['navbarBrandClass'] ?? ''); ?>">
                     
-            <?php elseif (!empty($navbarBrandLogo)): ?>
-                <img src="<?php echo htmlspecialchars($navbarBrandLogo); ?>" 
-                    alt="<?php echo htmlspecialchars($navbarBrandAlt ?? 'Logo'); ?>" 
-                    height="30" width="30"
-                    class="me-2 d-inline-block align-text-top <?php echo htmlspecialchars($navbarBrandClass ?? ''); ?>">
-            <?php endif; ?>
-            
-            <span class="fw-bold text-uppercase brand-font">
-            <?php echo strip_tags($navbarBrandText ?? $settings['siteName'] ?? 'Elara Site', '<span>'); ?>
-            </span>
-        </a>
-          
+                    <img src="<?php echo htmlspecialchars($logoDark); ?>" 
+                        alt="<?php echo htmlspecialchars($pageConfig['navbarBrandAlt'] ?? 'Logo Dark'); ?>" 
+                        height="30" width="30"
+                        class="theme-img-dark me-2 align-text-top <?php echo htmlspecialchars($pageConfig['navbarBrandClass'] ?? ''); ?>">
+                        
+                <?php elseif (!empty($logoLight)): ?>
+                    <img src="<?php echo htmlspecialchars($logoLight); ?>" 
+                        alt="<?php echo htmlspecialchars($pageConfig['navbarBrandAlt'] ?? 'Logo'); ?>" 
+                        height="30" width="30"
+                        class="me-2 align-text-top <?php echo htmlspecialchars($pageConfig['navbarBrandClass'] ?? ''); ?>">
+                <?php endif; ?>
+                
+                <span class="fw-bold text-uppercase brand-font">
+                <?php echo strip_tags($pageConfig['navbarBrandText'] ?? $settings['siteName'] ?? 'Elara Site', '<span>'); ?>
+                </span>
+            </a>
+                    
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
              <div class="hamburger-icon">
                 <span></span>
