@@ -270,7 +270,7 @@ global $cdn_root;
                 <div>
                     <i class="fa-solid fa-graduation-cap text-secondary fa-2x mb-2"></i>
                     <h3 class="h6 fw-bold mb-0 text-body-emphasis">Old Dominion University</h3>
-                    <div class="small text-muted">B.S. Customized Studies in Leadership | <em>In Progress</em></div>
+                    <div class="small text-muted">B.S. Customized Studies in Leadership | <em>Prior Coursework</em></div>
                 </div>
             </div>
         </div>
