@@ -94,6 +94,7 @@ _workspace/build-tools/
 # --- Narrative & Reference Assets ---
 # Ignore ALL source/reference images inside ANY book directory
 _workspace/books/*/images/source/
+_workspace/books/*/images/people/real-person/
 
 # Ignore all Upscayl output directories and contents (case-insensitive catch)
 *[Uu]pscayl*/
