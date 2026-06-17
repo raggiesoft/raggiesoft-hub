@@ -176,6 +176,11 @@ global $cdn_root;
                             <div class="fs-6 text-body-emphasis fw-bold">Norfolk, VA</div>
                             <div class="small text-secondary">Available for Remote, Hybrid, or On-Site within Virginia (restricted to VA to maintain in-state community college tuition).</div>
                         </li>
+                        <li class="mb-3">
+                            <h3 class="text-uppercase small text-success-emphasis fw-bold tracking-wider mb-0">Clearance Status</h3>
+                            <div class="fs-6 text-body-emphasis fw-bold">Uncleared (Eligible)</div>
+                            <div class="small text-secondary">U.S. Citizen eligible for DoD sponsorship. Previously held federal Public Trust.</div>
+                        </li>
                     </ul>
 
                     <div class="p-3 rounded border border-success border-opacity-25" style="background: rgba(56, 229, 77, 0.05);">
