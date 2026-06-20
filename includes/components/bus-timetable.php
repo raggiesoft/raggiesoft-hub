@@ -1,7 +1,7 @@
 <?php
 // includes/components/bus-timetable.php
 // Reusable component for rendering transit schedules.
-// Expects: $routeMeta, $inboundStops, $inboundTimes, $outboundStops, $outboundTimes
+// Expects: $routeMeta, $schedules
 
 if (!function_exists('formatTransitTime')) {
     function formatTransitTime($timeStr) {
@@ -14,10 +14,8 @@ if (!function_exists('formatTransitTime')) {
         $cleanTime = trim(str_replace(['a', 'p', 'A', 'P', 'm', 'M'], '', $timeStr));
 
         if ($isPm) {
-            // PM: Dark Badge + Moon Icon
             return '<span class="badge bg-dark text-white border border-secondary shadow-sm px-2 py-1 fw-bold"><i class="fa-solid fa-moon me-1 text-info opacity-75"></i>' . htmlspecialchars($cleanTime) . ' PM</span>';
         } else {
-            // AM: Light Badge + Sun Icon
             return '<span class="badge bg-body-tertiary text-body-emphasis border border-secondary-subtle px-2 py-1 fw-normal"><i class="fa-solid fa-sun me-1 text-warning opacity-75"></i>' . htmlspecialchars($cleanTime) . ' AM</span>';
         }
     }
@@ -77,73 +75,107 @@ if (!function_exists('formatTransitTime')) {
         <?php endif; ?>
     </div>
 
-    <div class="row g-5">
-        
-        <?php if (!empty($inboundStops) && !empty($inboundTimes)): ?>
-        <div class="col-lg-6">
-            <div class="card border-0 shadow-sm">
-                <div class="card-header bg-dark text-white py-3 d-flex justify-content-between align-items-center">
-                    <h3 class="h5 fw-bold mb-0 text-uppercase letter-spacing-1">
-                        <i class="fa-solid fa-arrow-down-to-line me-2 text-success"></i>Inbound
-                    </h3>
-                    <span class="small font-monospace text-white-50">To <?php echo htmlspecialchars(end($inboundStops)); ?></span>
-                </div>
-                <div class="table-responsive">
-                    <table class="table table-striped table-hover align-middle text-center font-monospace small mb-0">
-                        <thead class="table-light border-bottom border-dark">
-                            <tr>
-                                <?php foreach($inboundStops as $stop): ?>
-                                    <th scope="col" class="py-3 px-2 text-body-secondary" style="width: <?php echo 100/count($inboundStops); ?>%"><?php echo htmlspecialchars($stop); ?></th>
-                                <?php endforeach; ?>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <?php foreach($inboundTimes as $row): ?>
-                                <tr>
-                                    <?php foreach($row as $time): ?>
-                                        <td class="py-2"><?php echo formatTransitTime($time); ?></td>
-                                    <?php endforeach; ?>
-                                </tr>
-                            <?php endforeach; ?>
-                        </tbody>
-                    </table>
+    <?php if (!empty($schedules) && count($schedules) > 1): ?>
+        <ul class="nav nav-pills mb-4" id="scheduleTabs" role="tablist">
+            <?php 
+            $tabIndex = 0;
+            foreach ($schedules as $dayName => $dayData): 
+                $tabId = strtolower(preg_replace('/[^a-zA-Z0-9]+/', '-', $dayName));
+                $isActive = ($tabIndex === 0) ? 'active' : '';
+            ?>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link <?php echo $isActive; ?> fw-bold" id="<?php echo $tabId; ?>-tab" data-bs-toggle="pill" data-bs-target="#<?php echo $tabId; ?>-pane" type="button" role="tab" aria-controls="<?php echo $tabId; ?>-pane" aria-selected="<?php echo ($tabIndex === 0) ? 'true' : 'false'; ?>">
+                        <?php echo htmlspecialchars($dayName); ?>
+                    </button>
+                </li>
+            <?php 
+                $tabIndex++;
+            endforeach; 
+            ?>
+        </ul>
+    <?php endif; ?>
+
+    <div class="tab-content" id="scheduleTabsContent">
+        <?php 
+        $paneIndex = 0;
+        foreach ($schedules as $dayName => $dayData): 
+            $paneId = strtolower(preg_replace('/[^a-zA-Z0-9]+/', '-', $dayName));
+            $isActivePane = ($paneIndex === 0) ? 'show active' : '';
+        ?>
+            <div class="tab-pane fade <?php echo $isActivePane; ?>" id="<?php echo $paneId; ?>-pane" role="tabpanel" aria-labelledby="<?php echo $paneId; ?>-tab" tabindex="0">
+                <div class="row g-5">
+                    
+                    <?php if (!empty($dayData['inbound'])): ?>
+                    <div class="col-lg-6">
+                        <div class="card border-0 shadow-sm">
+                            <div class="card-header bg-dark text-white py-3 d-flex justify-content-between align-items-center">
+                                <h3 class="h5 fw-bold mb-0 text-uppercase letter-spacing-1">
+                                    <i class="fa-solid fa-arrow-down-to-line me-2 text-success"></i>Inbound
+                                </h3>
+                                <span class="small font-monospace text-white-50">To <?php echo htmlspecialchars(end($dayData['inbound']['stops'])); ?></span>
+                            </div>
+                            <div class="table-responsive">
+                                <table class="table table-striped table-hover align-middle text-center font-monospace small mb-0">
+                                    <thead class="table-secondary border-bottom border-secondary-subtle">
+                                        <tr>
+                                            <?php foreach($dayData['inbound']['stops'] as $stop): ?>
+                                                <th scope="col" class="py-3 px-2 text-body-emphasis fw-bold" style="width: <?php echo 100/count($dayData['inbound']['stops']); ?>%"><?php echo htmlspecialchars($stop); ?></th>
+                                            <?php endforeach; ?>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <?php foreach($dayData['inbound']['times'] as $row): ?>
+                                            <tr>
+                                                <?php foreach($row as $time): ?>
+                                                    <td class="py-2"><?php echo formatTransitTime($time); ?></td>
+                                                <?php endforeach; ?>
+                                            </tr>
+                                        <?php endforeach; ?>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <?php endif; ?>
+
+                    <?php if (!empty($dayData['outbound'])): ?>
+                    <div class="col-lg-6">
+                        <div class="card border-0 shadow-sm">
+                            <div class="card-header bg-dark text-white py-3 d-flex justify-content-between align-items-center">
+                                <h3 class="h5 fw-bold mb-0 text-uppercase letter-spacing-1">
+                                    <i class="fa-solid fa-arrow-up-from-line me-2 text-info"></i>Outbound
+                                </h3>
+                                <span class="small font-monospace text-white-50">To <?php echo htmlspecialchars(end($dayData['outbound']['stops'])); ?></span>
+                            </div>
+                            <div class="table-responsive">
+                                <table class="table table-striped table-hover align-middle text-center font-monospace small mb-0">
+                                    <thead class="table-secondary border-bottom border-secondary-subtle">
+                                        <tr>
+                                            <?php foreach($dayData['outbound']['stops'] as $stop): ?>
+                                                <th scope="col" class="py-3 px-2 text-body-emphasis fw-bold" style="width: <?php echo 100/count($dayData['outbound']['stops']); ?>%"><?php echo htmlspecialchars($stop); ?></th>
+                                            <?php endforeach; ?>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <?php foreach($dayData['outbound']['times'] as $row): ?>
+                                            <tr>
+                                                <?php foreach($row as $time): ?>
+                                                    <td class="py-2"><?php echo formatTransitTime($time); ?></td>
+                                                <?php endforeach; ?>
+                                            </tr>
+                                        <?php endforeach; ?>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <?php endif; ?>
+
                 </div>
             </div>
-        </div>
-        <?php endif; ?>
-
-        <?php if (!empty($outboundStops) && !empty($outboundTimes)): ?>
-        <div class="col-lg-6">
-            <div class="card border-0 shadow-sm">
-                <div class="card-header bg-dark text-white py-3 d-flex justify-content-between align-items-center">
-                    <h3 class="h5 fw-bold mb-0 text-uppercase letter-spacing-1">
-                        <i class="fa-solid fa-arrow-up-from-line me-2 text-info"></i>Outbound
-                    </h3>
-                    <span class="small font-monospace text-white-50">To <?php echo htmlspecialchars(end($outboundStops)); ?></span>
-                </div>
-                <div class="table-responsive">
-                    <table class="table table-striped table-hover align-middle text-center font-monospace small mb-0">
-                        <thead class="table-light border-bottom border-dark">
-                            <tr>
-                                <?php foreach($outboundStops as $stop): ?>
-                                    <th scope="col" class="py-3 px-2 text-body-secondary" style="width: <?php echo 100/count($outboundStops); ?>%"><?php echo htmlspecialchars($stop); ?></th>
-                                <?php endforeach; ?>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <?php foreach($outboundTimes as $row): ?>
-                                <tr>
-                                    <?php foreach($row as $time): ?>
-                                        <td class="py-2"><?php echo formatTransitTime($time); ?></td>
-                                    <?php endforeach; ?>
-                                </tr>
-                            <?php endforeach; ?>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-        </div>
-        <?php endif; ?>
-
+        <?php 
+            $paneIndex++;
+        endforeach; 
+        ?>
     </div>
 </div>
