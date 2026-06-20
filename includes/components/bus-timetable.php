@@ -42,13 +42,19 @@ if (!function_exists('formatTransitTime')) {
     <div class="row g-4 mb-5">
         <?php if (!empty($routeMeta['alerts'])): ?>
         <div class="col-md-8">
-            <div class="alert alert-secondary bg-body-tertiary border-start border-4 border-secondary shadow-sm d-flex h-100 mb-0">
-                <i class="fa-duotone fa-triangle-exclamation fs-3 text-secondary me-3 mt-1"></i>
-                <div>
-                    <h5 class="alert-heading h6 fw-bold text-uppercase">Service Alerts</h5>
-                    <?php foreach($routeMeta['alerts'] as $alert): ?>
-                        <p class="small text-body-secondary mb-1"><?php echo htmlspecialchars($alert); ?></p>
-                    <?php endforeach; ?>
+            <div class="card h-100 bg-body-tertiary border-0 shadow-sm border-start border-4 border-warning">
+                <div class="card-header bg-transparent border-bottom border-secondary-subtle fw-bold text-uppercase small">
+                    <i class="fa-duotone fa-triangle-exclamation me-2 text-warning"></i>Service Alerts
+                </div>
+                <div class="card-body p-3">
+                    <ul class="list-group list-group-flush bg-transparent small font-monospace mb-0">
+                        <?php foreach($routeMeta['alerts'] as $alert): ?>
+                            <li class="list-group-item bg-transparent px-0 border-secondary-subtle d-flex align-items-start text-body-secondary py-2">
+                                <i class="fa-solid fa-circle-info text-secondary mt-1 me-3 opacity-50"></i>
+                                <span><?php echo htmlspecialchars($alert); ?></span>
+                            </li>
+                        <?php endforeach; ?>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -61,13 +67,12 @@ if (!function_exists('formatTransitTime')) {
                     <i class="fa-duotone fa-shuffle me-2 text-primary"></i>Transfer Points
                 </div>
                 <div class="card-body p-3">
-                    <ul class="list-group list-group-flush bg-transparent small font-monospace">
+                    <ul class="list-group list-group-flush bg-transparent small font-monospace mb-0">
                         <?php foreach($routeMeta['transfers'] as $location => $routes): ?>
-                            <li class="list-group-item bg-transparent px-0 d-flex flex-column flex-sm-row justify-content-between align-items-start align-items-sm-center py-2">
+                            <li class="list-group-item bg-transparent px-0 d-flex flex-column flex-sm-row justify-content-between align-items-start align-items-sm-center py-2 border-secondary-subtle">
                                 <span class="text-body-emphasis mb-2 mb-sm-0 pe-2"><?php echo htmlspecialchars($location); ?></span>
                                 <div class="d-flex flex-wrap gap-1 justify-content-sm-end">
                                     <?php 
-                                    // If it's a single string, convert to array so we can loop it easily
                                     $routeArray = is_array($routes) ? $routes : [$routes];
                                     foreach ($routeArray as $r): 
                                     ?>
