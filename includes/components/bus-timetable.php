@@ -116,7 +116,7 @@ if (!function_exists('formatTransitTime')) {
                             </div>
                             <div class="table-responsive">
                                 <table class="table table-striped table-hover align-middle text-center font-monospace small mb-0">
-                                    <thead class="table-secondary border-bottom border-secondary-subtle">
+                                    <thead class="bg-body-secondary border-bottom border-secondary-subtle">
                                         <tr>
                                             <?php foreach($dayData['inbound']['stops'] as $stop): ?>
                                                 <th scope="col" class="py-3 px-2 text-body-emphasis fw-bold" style="width: <?php echo 100/count($dayData['inbound']['stops']); ?>%"><?php echo htmlspecialchars($stop); ?></th>
@@ -149,7 +149,7 @@ if (!function_exists('formatTransitTime')) {
                             </div>
                             <div class="table-responsive">
                                 <table class="table table-striped table-hover align-middle text-center font-monospace small mb-0">
-                                    <thead class="table-secondary border-bottom border-secondary-subtle">
+                                    <thead class="bg-body-secondary border-bottom border-secondary-subtle">
                                         <tr>
                                             <?php foreach($dayData['outbound']['stops'] as $stop): ?>
                                                 <th scope="col" class="py-3 px-2 text-body-emphasis fw-bold" style="width: <?php echo 100/count($dayData['outbound']['stops']); ?>%"><?php echo htmlspecialchars($stop); ?></th>
