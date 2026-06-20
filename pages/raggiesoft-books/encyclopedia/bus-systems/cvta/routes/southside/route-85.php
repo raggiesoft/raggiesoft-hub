@@ -1,295 +1,92 @@
-<style>
-	.time-pm {
-		font-weight: bold;
-	}
-</style>
-<div class="container py-5">
-    <h1 class="display-5 fw-bold border-bottom pb-2 mb-4">Route 85: Town Point Road</h1>
-    <p>Weekday Service Only</p>
-    <table>
-        <caption>Inbound: From Community College of Hampton Roads, Portsmouth Campus to Churchland Square</caption>
-        <thead>
-            <tr>
-                <th scope="col">Community College of Hampton Roads</th>
-                <th scope="col">Gateway Dr. &amp; Twin Pines Rd.</th>
-                <th scope="col">Churchland Square</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td class="time-am">6:15</td>
-                <td>&nbsp;</td>
-                <td class="time-am">6:30</td>
-            </tr>
-            <tr>
-                <td>&nbsp;</td>
-                <td class="time-am">6:45</td>
-                <td class="time-am">7:00</td>
-            </tr>
-            <tr>
-                <td>&nbsp;</td>
-                <td class="time-am">7:15</td>
-                <td class="time-am">7:30</td>
-            </tr>
-            <tr>
-                <td class="time-am">7:45</td>
-                <td>&nbsp;</td>
-                <td class="time-am">8:00</td>
-            </tr>
-            <tr>
-                <td>&nbsp;</td>
-                <td class="time-am">8:15</td>
-                <td class="time-am">8:30</td>
-            </tr>
-            <tr>
-                <td class="time-am">8:45</td>
-                <td>&nbsp;</td>
-                <td class="time-am">9:00</td>
-            </tr>
-            <tr>
-                <td>&nbsp;</td>
-                <td class="time-am">9:15</td>
-                <td class="time-am">9:30</td>
-            </tr>
-            <tr>
-                <td class="time-am">9:45</td>
-                <td>&nbsp;</td>
-                <td class="time-am">10:00</td>
-            </tr>
-            <tr>
-                <td>&nbsp;</td>
-                <td class="time-am">10:15</td>
-                <td class="time-am">10:30</td>
-            </tr>
-            <tr>
-                <td class="time-am">10:45</td>
-                <td>&nbsp;</td>
-                <td class="time-am">11:00</td>
-            </tr>
-            <tr>
-                <td>&nbsp;</td>
-                <td class="time-am">11:15</td>
-                <td class="time-am">11:30</td>
-            </tr>
-            <tr>
-                <td class="time-am">11:45</td>
-                <td>&nbsp;</td>
-                <td class="time-pm">12:00</td>
-            </tr>
-            <tr>
-                <td class="time-pm"></td>
-                <td class="time-pm">12:15</td>
-                <td class="time-pm">12:30</td>
-            </tr>
-            <tr>
-                <td class="time-pm">12:45</td>
-                <td class="time-pm"></td>
-                <td class="time-pm">1:00</td>
-            </tr>
-            <tr>
-                <td class="time-pm"></td>
-                <td class="time-pm">1:15</td>
-                <td class="time-pm">1:30</td>
-            </tr>
-            <tr>
-                <td class="time-pm">1:45</td>
-                <td class="time-pm"></td>
-                <td class="time-pm">2:00</td>
-            </tr>
-            <tr>
-                <td class="time-pm"></td>
-                <td class="time-pm">2:15</td>
-                <td class="time-pm">2:30</td>
-            </tr>
-            <tr>
-                <td class="time-pm">2:45</td>
-                <td class="time-pm"></td>
-                <td class="time-pm">3:00</td>
-            </tr>
-            <tr>
-                <td class="time-pm"></td>
-                <td class="time-pm">3:15</td>
-                <td class="time-pm">3:30</td>
-            </tr>
-            <tr>
-                <td class="time-pm">3:45</td>
-                <td class="time-pm"></td>
-                <td class="time-pm">4:00</td>
-            </tr>
-            <tr>
-                <td class="time-pm"></td>
-                <td class="time-pm">4:15</td>
-                <td class="time-pm">4:30</td>
-            </tr>
-            <tr>
-                <td class="time-pm">4:45</td>
-                <td class="time-pm"></td>
-                <td class="time-pm">5:00</td>
-            </tr>
-            <tr>
-                <td class="time-pm"></td>
-                <td class="time-pm">5:15</td>
-                <td class="time-pm">5:30</td>
-            </tr>
-            <tr>
-                <td class="time-pm">5:45</td>
-                <td class="time-pm"></td>
-                <td class="time-pm">6:00</td>
-            </tr>
-            <tr>
-                <td class="time-pm"></td>
-                <td class="time-pm">6:15</td>
-                <td class="time-pm">6:30</td>
-            </tr>
-            <tr>
-                <td class="time-pm">6:45</td>
-                <td class="time-pm"></td>
-                <td class="time-pm">7:00</td>
-            </tr>
-        </tbody>
-    </table>
-    <table>
-        <caption>Outbound: From Churchland Square to Community College of Hampton Roads, Portsmouth Campus</caption>
-        <thead>
-            <tr>
-                <th scope="col">Churchland Square</th>
-                <th scope="col">Gateway Dr. &amp; Twin Pines Rd.</th>
-                <th scope="col">Community College of Hampton Roads</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td class="time-am">6:30</td>
-                <td class="time-am">6:45</td>
-                <td>&nbsp;</td>
-            </tr>
-            <tr>
-                <td class="time-am">7:00</td>
-                <td class="time-am">7:15a</td>
-                <td>&nbsp;</td>
-            </tr>
-            <tr>
-                <td class="time-am">7:30</td>
-                <td>&nbsp;</td>
-                <td class="time-am">7:45</td>
-            </tr>
-            <tr>
-                <td class="time-am">8:00</td>
-                <td class="time-am">8:15</td>
-                <td>&nbsp;</td>
-            </tr>
-            <tr>
-                <td class="time-am">8:30</td>
-                <td>&nbsp;</td>
-                <td class="time-am">8:45</td>
-            </tr>
-            <tr>
-                <td class="time-am">9:00</td>
-                <td class="time-am">9:15</td>
-                <td>&nbsp;</td>
-            </tr>
-            <tr>
-                <td class="time-am">9:30</td>
-                <td>&nbsp;</td>
-                <td class="time-am">9:45</td>
-            </tr>
-            <tr>
-                <td class="time-am">10:00</td>
-                <td class="time-am">10:15</td>
-                <td>&nbsp;</td>
-            </tr>
-            <tr>
-                <td class="time-am">10:30</td>
-                <td>&nbsp;</td>
-                <td class="time-am">10:45</td>
-            </tr>
-            <tr>
-                <td class="time-am">11:00</td>
-                <td class="time-am">11:15</td>
-                <td>&nbsp;</td>
-            </tr>
-            <tr>
-                <td class="time-am">11:30</td>
-                <td>&nbsp;</td>
-                <td class="time-am">11:45</td>
-            </tr>
-            <tr>
-                <td class="time-pm">12:00</td>
-                <td class="time-pm">12:15</td>
-                <td class="time-pm"></td>
-            </tr>
-            <tr>
-                <td class="time-pm">12:30</td>
-                <td class="time-pm"></td>
-                <td class="time-pm">12:45</td>
-            </tr>
-            <tr>
-                <td class="time-pm">1:00</td>
-                <td class="time-pm">1:15</td>
-                <td class="time-pm"></td>
-            </tr>
-            <tr>
-                <td class="time-pm">1:30</td>
-                <td class="time-pm"></td>
-                <td class="time-pm">1:45</td>
-            </tr>
-            <tr>
-                <td class="time-pm">2:00</td>
-                <td class="time-pm">2:15</td>
-                <td class="time-pm"></td>
-            </tr>
-            <tr>
-                <td class="time-pm">2:30</td>
-                <td class="time-pm"></td>
-                <td class="time-pm">2:45</td>
-            </tr>
-            <tr>
-                <td class="time-pm">3:00</td>
-                <td class="time-pm">3:15</td>
-                <td>&nbsp;</td>
-            </tr>
-            <tr>
-                <td class="time-pm">3:30</td>
-                <td class="time-pm"></td>
-                <td class="time-pm">3:45</td>
-            </tr>
-            <tr>
-                <td class="time-pm">4:00</td>
-                <td class="time-pm">4:15</td>
-                <td class="time-pm"></td>
-            </tr>
-            <tr>
-                <td class="time-pm">4:30</td>
-                <td class="time-pm"></td>
-                <td class="time-pm">4:45</td>
-            </tr>
-            <tr>
-                <td class="time-pm">5:00</td>
-                <td class="time-pm">5:15</td>
-                <td class="time-pm"></td>
-            </tr>
-            <tr>
-                <td class="time-pm">5:30</td>
-                <td class="time-pm"></td>
-                <td class="time-pm">5:45</td>
-            </tr>
-            <tr>
-                <td class="time-pm">6:00</td>
-                <td class="time-pm">6:15</td>
-                <td class="time-pm"></td>
-            </tr>
-            <tr>
-                <td class="time-pm">6:30</td>
-                <td class="time-pm"></td>
-                <td class="time-pm">6:45</td>
-            </tr>
-        </tbody>
-    </table>
+<?php
+// pages/raggiesoft-books/encyclopedia/bus-systems/cvta/routes/southside/route-85.php
 
-    <p class="time-pm">PM Stops in Bold</p>
-    <p>Holiday Schedule: There will be no service on New Year's Day, Thanksgiving Day or Christmas Day. A Saturday schedule will be observed on Martin Luther King, Jr. Day, Memorial Day, Independence Day and Labor Day.</p>
-    <h1>Transfer Points</h1>
-    <ul>
-        <li>Churchland Square: Route 47</li>
-    </ul>
-</div>
+// 1. ROUTE METADATA
+$routeMeta = [
+    'id' => '85',
+    'name' => 'Town Point Road',
+    'agency' => 'Coastal Virginia Transit Authority (CVTA)',
+    'service' => 'Weekday Service Only',
+    'alerts' => [
+        'Holiday Schedule: There will be no service on New Year\'s Day, Thanksgiving Day or Christmas Day.',
+        'A Saturday schedule will be observed on Martin Luther King, Jr. Day, Memorial Day, Independence Day and Labor Day.'
+    ],
+    'transfers' => [
+        'Churchland Square' => 'Route 47'
+    ]
+];
+
+// 2. INBOUND DATA
+$inboundStops = [
+    "Community College of Hampton Roads",
+    "Gateway Dr. & Twin Pines Rd.",
+    "Churchland Square"
+];
+
+$inboundTimes = [
+    ["6:15a", "-", "6:30a"],
+    ["-", "6:45a", "7:00a"],
+    ["-", "7:15a", "7:30a"],
+    ["7:45a", "-", "8:00a"],
+    ["-", "8:15a", "8:30a"],
+    ["8:45a", "-", "9:00a"],
+    ["-", "9:15a", "9:30a"],
+    ["9:45a", "-", "10:00a"],
+    ["-", "10:15a", "10:30a"],
+    ["10:45a", "-", "11:00a"],
+    ["-", "11:15a", "11:30a"],
+    ["11:45a", "-", "12:00p"],
+    ["-", "12:15p", "12:30p"],
+    ["12:45p", "-", "1:00p"],
+    ["-", "1:15p", "1:30p"],
+    ["1:45p", "-", "2:00p"],
+    ["-", "2:15p", "2:30p"],
+    ["2:45p", "-", "3:00p"],
+    ["-", "3:15p", "3:30p"],
+    ["3:45p", "-", "4:00p"],
+    ["-", "4:15p", "4:30p"],
+    ["4:45p", "-", "5:00p"],
+    ["-", "5:15p", "5:30p"],
+    ["5:45p", "-", "6:00p"],
+    ["-", "6:15p", "6:30p"],
+    ["6:45p", "-", "7:00p"],
+];
+
+// 3. OUTBOUND DATA
+$outboundStops = [
+    "Churchland Square",
+    "Gateway Dr. & Twin Pines Rd.",
+    "Community College of Hampton Roads"
+];
+
+$outboundTimes = [
+    ["6:30a", "6:45a", "-"],
+    ["7:00a", "7:15a", "-"],
+    ["7:30a", "-", "7:45a"],
+    ["8:00a", "8:15a", "-"],
+    ["8:30a", "-", "8:45a"],
+    ["9:00a", "9:15a", "-"],
+    ["9:30a", "-", "9:45a"],
+    ["10:00a", "10:15a", "-"],
+    ["10:30a", "-", "10:45a"],
+    ["11:00a", "11:15a", "-"],
+    ["11:30a", "-", "11:45a"],
+    ["12:00p", "12:15p", "-"],
+    ["12:30p", "-", "12:45p"],
+    ["1:00p", "1:15p", "-"],
+    ["1:30p", "-", "1:45p"],
+    ["2:00p", "2:15p", "-"],
+    ["2:30p", "-", "2:45p"],
+    ["3:00p", "3:15p", "-"],
+    ["3:30p", "-", "3:45p"],
+    ["4:00p", "4:15p", "-"],
+    ["4:30p", "-", "4:45p"],
+    ["5:00p", "5:15p", "-"],
+    ["5:30p", "-", "5:45p"],
+    ["6:00p", "6:15p", "-"],
+    ["6:30p", "-", "6:45p"],
+];
+
+// 4. RENDER THE COMPONENT
+include ROOT_PATH . '/includes/components/bus-timetable.php';
+?>
