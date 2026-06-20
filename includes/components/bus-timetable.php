@@ -62,12 +62,20 @@ if (!function_exists('formatTransitTime')) {
                 </div>
                 <div class="card-body p-3">
                     <ul class="list-group list-group-flush bg-transparent small font-monospace">
-                        <?php foreach($routeMeta['transfers'] as $location => $route): ?>
-                            <li class="list-group-item bg-transparent px-0 d-flex justify-content-between align-items-center">
-                                <span class="text-body-emphasis"><?php echo htmlspecialchars($location); ?></span>
-                                <span class="badge bg-primary-subtle text-primary-emphasis border border-primary-subtle rounded-pill">
-                                    <?php echo htmlspecialchars($route); ?>
-                                </span>
+                        <?php foreach($routeMeta['transfers'] as $location => $routes): ?>
+                            <li class="list-group-item bg-transparent px-0 d-flex flex-column flex-sm-row justify-content-between align-items-start align-items-sm-center py-2">
+                                <span class="text-body-emphasis mb-2 mb-sm-0 pe-2"><?php echo htmlspecialchars($location); ?></span>
+                                <div class="d-flex flex-wrap gap-1 justify-content-sm-end">
+                                    <?php 
+                                    // If it's a single string, convert to array so we can loop it easily
+                                    $routeArray = is_array($routes) ? $routes : [$routes];
+                                    foreach ($routeArray as $r): 
+                                    ?>
+                                        <span class="badge bg-primary-subtle text-primary-emphasis border border-primary-subtle rounded-pill">
+                                            <?php echo htmlspecialchars($r); ?>
+                                        </span>
+                                    <?php endforeach; ?>
+                                </div>
                             </li>
                         <?php endforeach; ?>
                     </ul>
