@@ -7,8 +7,20 @@ $routeMeta = [
     'agency' => 'Coastal Virginia Transit Authority (CVTA)',
     'service' => 'Weekday Service Only',
     'alerts' => [
-        'Holiday Schedule: There will be no service on New Year\'s Day, Thanksgiving Day or Christmas Day.',
-        'A Saturday schedule will be observed on Martin Luther King, Jr. Day, Memorial Day, Independence Day and Labor Day.'
+        // 1. The classic string format automatically gets an "info" icon
+        'Holiday Schedule: A Sunday schedule will be observed on major holidays.',
+        
+        // 2. A specific "warning" for detours
+        [
+            'type' => 'warning',
+            'text' => 'Detour: The stop at High St & Court St is closed due to a water main break. Please board at High St & Dinwiddie St.'
+        ],
+
+        // 3. A specific "stop" for major service disruptions
+        [
+            'type' => 'stop',
+            'text' => 'Major Reroute: Due to the County Street Parking Garage construction project, buses will meet at Crawford Street & High Street instead of County Street & Court Street.'
+        ]
     ],
     'transfers' => [
         'Churchland Square' => 'Route 47'

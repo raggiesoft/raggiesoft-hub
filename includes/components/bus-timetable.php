@@ -40,18 +40,45 @@ if (!function_exists('formatTransitTime')) {
     </div>
     
     <div class="row g-4 mb-5">
-        <?php if (!empty($routeMeta['alerts'])): ?>
+        <?php if (!empty($routeMeta['alerts'])): 
+            // 1. Severity Scanner: Determine main card styling based on highest alert level
+            $severityLevel = 1; // 1 = info, 2 = warning, 3 = stop
+            $formattedAlerts = [];
+            
+            foreach($routeMeta['alerts'] as $alertItem) {
+                // If the data is just a string, default to 'info'
+                $alertText = is_string($alertItem) ? $alertItem : ($alertItem['text'] ?? '');
+                $alertType = is_string($alertItem) ? 'info' : strtolower($alertItem['type'] ?? 'info');
+                
+                if ($alertType === 'stop') $severityLevel = 3;
+                elseif ($alertType === 'warning' && $severityLevel < 3) $severityLevel = 2;
+                
+                $formattedAlerts[] = ['text' => $alertText, 'type' => $alertType];
+            }
+
+            // 2. Set main container color scheme
+            $cardBorderColor = ($severityLevel === 3) ? 'border-danger' : (($severityLevel === 2) ? 'border-warning' : 'border-info');
+            $headerIcon = ($severityLevel === 3) ? 'fa-circle-xmark text-danger' : (($severityLevel === 2) ? 'fa-triangle-exclamation text-warning' : 'fa-circle-info text-info');
+        ?>
         <div class="col-md-8">
-            <div class="card h-100 bg-body-tertiary border-0 shadow-sm border-start border-4 border-warning">
+            <div class="card h-100 bg-body-tertiary border-0 shadow-sm border-start border-4 <?php echo $cardBorderColor; ?>">
                 <div class="card-header bg-transparent border-bottom border-secondary-subtle fw-bold text-uppercase small">
-                    <i class="fa-duotone fa-triangle-exclamation me-2 text-warning"></i>Service Alerts
+                    <i class="fa-duotone <?php echo $headerIcon; ?> me-2"></i>Service Alerts
                 </div>
                 <div class="card-body p-3">
                     <ul class="list-group list-group-flush bg-transparent small font-monospace mb-0">
-                        <?php foreach($routeMeta['alerts'] as $alert): ?>
+                        <?php foreach($formattedAlerts as $alert): 
+                            // 3. Set individual line-item icons
+                            $iconClass = 'fa-circle-info text-secondary opacity-50'; // default info
+                            if ($alert['type'] === 'warning') {
+                                $iconClass = 'fa-triangle-exclamation text-warning';
+                            } elseif ($alert['type'] === 'stop') {
+                                $iconClass = 'fa-circle-xmark text-danger'; 
+                            }
+                        ?>
                             <li class="list-group-item bg-transparent px-0 border-secondary-subtle d-flex align-items-start text-body-secondary py-2">
-                                <i class="fa-solid fa-circle-info text-secondary mt-1 me-3 opacity-50"></i>
-                                <span><?php echo htmlspecialchars($alert); ?></span>
+                                <i class="fa-solid <?php echo $iconClass; ?> mt-1 me-3"></i>
+                                <span><?php echo htmlspecialchars($alert['text']); ?></span>
                             </li>
                         <?php endforeach; ?>
                     </ul>
