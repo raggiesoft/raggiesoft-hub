@@ -65,7 +65,9 @@ if (!function_exists('formatTransitTime')) {
                         <?php foreach($routeMeta['transfers'] as $location => $route): ?>
                             <li class="list-group-item bg-transparent px-0 d-flex justify-content-between align-items-center">
                                 <span class="text-body-emphasis"><?php echo htmlspecialchars($location); ?></span>
-                                <span class="badge bg-primary rounded-pill"><?php echo htmlspecialchars($route); ?></span>
+                                <span class="badge bg-primary-subtle text-primary-emphasis border border-primary-subtle rounded-pill">
+                                    <?php echo htmlspecialchars($route); ?>
+                                </span>
                             </li>
                         <?php endforeach; ?>
                     </ul>
