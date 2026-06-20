@@ -25,7 +25,7 @@ if (!function_exists('formatTransitTime')) {
 <div class="container py-5">
     
     <div class="d-flex align-items-center mb-4 border-bottom border-secondary-subtle pb-3">
-        <div class="bg-primary text-white rounded p-3 me-4 text-center shadow-sm" style="min-width: 90px;">
+        <div class="bg-primary-subtle text-primary-emphasis border border-primary-subtle rounded p-3 me-4 text-center shadow-sm" style="min-width: 90px;">
             <h2 class="display-5 fw-bold mb-0"><?php echo htmlspecialchars($routeMeta['id'] ?? ''); ?></h2>
         </div>
         <div>
