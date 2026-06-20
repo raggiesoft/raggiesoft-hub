@@ -116,5 +116,5 @@ $schedules = [
 
 <?php
 // RENDER THE COMPONENT
-include ROOT_PATH . '/includes/components/bus-timetable.php';
+include ROOT_PATH . '/includes/components/bus-service/bus-timetable.php';
 ?>
