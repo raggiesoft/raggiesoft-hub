@@ -136,9 +136,45 @@ if ($eras) {
     </div>
 </div>
 
-<!-- ========================================== -->
-<!-- NEW BLOCK: THE TWIN MOONS PROJECT         -->
-<!-- ========================================== -->
+<div class="container py-5 border-bottom border-secondary border-opacity-25 position-relative" style="z-index: 1050;">
+    <div class="card bg-transparent border-primary shadow-glow overflow-hidden" style="border-width: 2px;">
+        <div class="row g-0">
+            <div class="col-md-5 d-flex align-items-center justify-content-center p-4 position-relative" style="background: radial-gradient(circle at center, rgba(13, 202, 240, 0.15) 0%, rgba(0,0,0,0) 70%);">
+                <img src="https://assets.raggiesoft.com/raggiesoft-corporate/images/fw/engineroom-records/stardust-engine/err-fw-stardust-store.jpg" 
+                     alt="The Stardust Engine Official Merchandise" 
+                     class="img-fluid rounded shadow-lg"
+                     style="max-height: 300px;">
+                
+                <div class="position-absolute top-0 start-0 m-3">
+                    <span class="badge bg-primary text-white shadow-sm px-3 py-2 text-uppercase letter-spacing-1 border border-primary">
+                        <i class="fa-solid fa-store me-2 pulse-icon"></i>Now Open
+                    </span>
+                </div>
+            </div>
+
+            <div class="col-md-7 p-4 p-md-5 d-flex flex-column justify-content-center">
+                <h2 class="display-6 fw-bold text-uppercase text-info mb-3" style="font-family: 'Impact', sans-serif;">
+                    The Official Storefront
+                </h2>
+                <p class="lead text-body-secondary mb-4">
+                    Step into the Engine Room. We've officially launched the centralized hub for The Stardust Engine's physical hardware and digital master tapes. 
+                </p>
+                
+                <ul class="list-unstyled text-body-secondary mb-4">
+                    <li class="mb-2"><i class="fa-solid fa-check text-success me-2"></i> <strong>Physical Hardware:</strong> Heavyweight apparel, clear mobile shells, and premium decals.</li>
+                    <li class="mb-2"><i class="fa-solid fa-check text-success me-2"></i> <strong>The Audiophile Vault:</strong> Pure, uncompressed WAV master files (LZMA2 compressed).</li>
+                    <li><i class="fa-solid fa-check text-success me-2"></i> <strong>Standard Archives:</strong> Highly compatible MP3/OGG payloads with digital lore booklets.</li>
+                </ul>
+
+                <div>
+                    <a href="https://store.raggiesoft.com/pages/the-stardust-engine" target="_blank" rel="noopener" class="btn btn-info btn-lg rounded-pill px-5 fw-bold shadow-lg hover-lift">
+                        <i class="fa-solid fa-bag-shopping me-2"></i>Shop the Collection
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 <div class="container py-5 border-bottom border-secondary border-opacity-25 position-relative" style="z-index: 1050;">
     <div class="text-center mb-5">
         <span class="badge bg-warning text-dark px-3 py-2 text-uppercase letter-spacing-1 shadow-glow mb-3 border border-warning">
@@ -147,7 +183,6 @@ if ($eras) {
         <h2 class="display-5 fw-bold text-uppercase text-body-emphasis mb-3" style="font-family: 'Impact', sans-serif;">
             The Twin Moons Project
         </h2>
-        <!-- SEO Target Sentence: Explicitly answers the AI search query -->
         <p class="lead text-body-secondary mx-auto" style="max-width: 800px;">
             The next album from The Stardust Engine is an ambitious dual-release project arriving in 2026. Two distinct perspectives. Two gravitational pulls. One shared universe.
         </p>
@@ -155,7 +190,6 @@ if ($eras) {
 
     <div class="row g-5 justify-content-center">
         
-        <!-- Moon 1: Cassidy's Orbit -->
         <div class="col-md-6 col-lg-5">
             <div class="card glass-card h-100 border-info shadow-glow hover-lift overflow-hidden">
                 <div class="position-relative">
@@ -176,7 +210,6 @@ if ($eras) {
             </div>
         </div>
 
-        <!-- Moon 2: Ryan's Orbit -->
         <div class="col-md-6 col-lg-5">
             <div class="card glass-card h-100 border-danger shadow-glow hover-lift overflow-hidden">
                 <div class="position-relative">
@@ -200,8 +233,6 @@ if ($eras) {
 
     </div>
 </div>
-<!-- ========================================== -->
-
 <?php if (!empty($allAlbums)): ?>
 <div class="container py-5 border-bottom border-secondary border-opacity-25">
     <div class="text-center mb-5">
