@@ -60,6 +60,10 @@ $isDarkTheme = (isset($currentPageTheme) && in_array($currentPageTheme, ['dark',
                     </div>
                 </div>
                 <div class="col-lg-6 text-center text-lg-end small mt-2 mt-lg-0">
+                    <a href="https://store.raggiesoft.com/" target="_blank" rel="noopener" class="text-decoration-none link-body-emphasis fw-bold me-3 hover-opacity">
+                        <i class="fa-solid fa-bag-shopping me-1" aria-hidden="true"></i>Official Store
+                    </a>
+                    
                     <a href="/raggiesoft-media" class="text-decoration-none link-body-emphasis me-3 hover-opacity fw-bold">RaggieSoft Media</a>
                     <a href="/raggiesoft-media/careers" class="text-decoration-none text-danger fw-bold me-3 hover-opacity">
                         <i class="fa-solid fa-shield-exclamation me-1" aria-hidden="true"></i>Careers (Fraud Alert)
