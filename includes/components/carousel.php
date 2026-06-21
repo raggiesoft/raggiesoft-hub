@@ -1,7 +1,6 @@
 <?php
 // includes/components/carousel.php
-// v3.3 - "Cinema Mode" Layout (Fixes cropping of square album art)
-// Uses a blurred background fill + centered containment for the main art.
+// v3.4 - "Cinema Mode" Layout with Storefront Routing & Vault Exclusive Logic
 
 // 1. Configuration
 $jsonUrl = 'https://assets.raggiesoft.com/engine-room-records/artists/the-stardust-engine/albums.json';
@@ -22,6 +21,9 @@ if ($discographyData) {
             foreach ($era['albums'] as $album) {
                 
                 $isSeized = (isset($album['extra']) && str_contains($album['extra'], 'CANCELED'));
+                
+                // Prioritize Standard Store URL for general "Shop Archives" link, fallback to Audiophile
+                $store_link = $album['storeStandardUrl'] ?? ($album['storeAudiophileUrl'] ?? '');
 
                 $carousel_albums[] = [
                     'title'       => $album['title'],
@@ -32,7 +34,9 @@ if ($discographyData) {
                     'is_seized'   => $isSeized,
                     'btn_class'   => $isSeized ? 'btn-danger' : 'btn-primary',
                     'btn_text'    => $isSeized ? 'View Case File' : 'View Album',
-                    'btn_icon'    => $isSeized ? 'fa-duotone fa-file-contract' : 'fa-duotone fa-circle-info'
+                    'btn_icon'    => $isSeized ? 'fa-duotone fa-file-contract' : 'fa-duotone fa-circle-info',
+                    'store_link'  => $store_link,
+                    'dsp_exempt'  => $album['dspExempt'] ?? false
                 ];
             }
         }
@@ -83,7 +87,14 @@ if (!empty($carousel_albums)):
                     <?php endif; ?>
 
                     <div class="position-relative w-100 h-100 d-flex align-items-center justify-content-center" style="z-index: 2;">
-                        <a href="<?php echo htmlspecialchars($album['link']); ?>" class="d-block h-100 py-4 text-center">
+                        <a href="<?php echo htmlspecialchars($album['link']); ?>" class="d-block h-100 py-4 text-center position-relative">
+                            
+                            <?php if ($album['dsp_exempt'] && !$album['is_seized']): ?>
+                                <div class="position-absolute top-0 end-0 mt-4 me-3" style="z-index: 4;">
+                                    <span class="badge bg-warning text-dark shadow-sm border border-dark"><i class="fa-solid fa-vault me-1"></i> Vault Exclusive</span>
+                                </div>
+                            <?php endif; ?>
+
                             <img src="<?php echo htmlspecialchars($album['img_src']); ?>" 
                                  alt="<?php echo htmlspecialchars($album['title']); ?> Album Art"
                                  class="img-fluid shadow-lg rounded border border-secondary border-opacity-25"
@@ -107,10 +118,16 @@ if (!empty($carousel_albums)):
                             </h5>
                         </div>
                         
-                        <div class="mt-3">
-                            <a href="<?php echo htmlspecialchars($album['link']); ?>" class="btn <?php echo $album['btn_class']; ?> btn-sm rounded-pill px-4 fw-bold shadow-lg">
+                        <div class="mt-3 d-flex justify-content-center gap-3">
+                            <a href="<?php echo htmlspecialchars($album['link']); ?>" class="btn <?php echo $album['btn_class']; ?> rounded-pill px-4 fw-bold shadow-lg">
                                 <i class="<?php echo $album['btn_icon']; ?> me-2" aria-hidden="true"></i> <?php echo $album['btn_text']; ?>
                             </a>
+                            
+                            <?php if (!empty($album['store_link'])): ?>
+                                <a href="<?php echo htmlspecialchars($album['store_link']); ?>" target="_blank" class="btn btn-outline-light rounded-pill px-4 fw-bold shadow-lg">
+                                    <i class="fa-solid fa-bag-shopping me-2" aria-hidden="true"></i> Shop Archives
+                                </a>
+                            <?php endif; ?>
                         </div>
                     </div>
 

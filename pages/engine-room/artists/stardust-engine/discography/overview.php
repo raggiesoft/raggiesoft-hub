@@ -1,6 +1,6 @@
 <?php
 // pages/discography/overview.php
-// v4.0 - Added Dynamic DSP Streaming Buttons & MusicGroup Schema.org JSON-LD
+// v4.1 - Added Fourthwall Store Routing, DSP Exemption Logic & Schema.org Updates
 
 $pageTitle = "Discography Overview - The Stardust Engine";
 $bandName = "The Stardust Engine";
@@ -83,8 +83,11 @@ $musicGroupSchema = [
 
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
                 <?php foreach ($eraData['albums'] as $album): 
-                    // Check if this is a seized asset
+                    // Metadata Extraction
                     $isSeized = (isset($album['extra']) && str_contains($album['extra'], 'CANCELED'));
+                    $dspExempt = $album['dspExempt'] ?? false;
+                    $storeStandardUrl = $album['storeStandardUrl'] ?? '';
+                    $storeAudiophileUrl = $album['storeAudiophileUrl'] ?? '';
                 ?>
                     <div class="col">
                         <div class="card h-100 bg-transparent border-secondary glass-card shadow-sm overflow-hidden">
@@ -97,6 +100,12 @@ $musicGroupSchema = [
                                              style="transform: rotate(-15deg); border: 3px dashed #000; opacity: 0.9; font-family: 'Impact', sans-serif; box-shadow: 0 0 10px #000;">
                                             Evidence
                                         </div>
+                                    </div>
+                                <?php endif; ?>
+
+                                <?php if ($dspExempt && !$isSeized): ?>
+                                    <div class="position-absolute top-0 end-0 m-2" style="z-index: 3;">
+                                        <span class="badge bg-warning text-dark shadow-sm border border-dark"><i class="fa-solid fa-vault me-1"></i> Vault Exclusive</span>
                                     </div>
                                 <?php endif; ?>
 
@@ -116,7 +125,7 @@ $musicGroupSchema = [
                                 </p>
                                 
                                 <div class="mt-auto d-flex flex-column gap-2">
-                                    <a href="<?php echo htmlspecialchars($album['url']); ?>" class="btn btn-sm <?php echo $isSeized ? 'btn-outline-danger' : 'btn-outline-primary'; ?> w-100">
+                                    <a href="<?php echo htmlspecialchars($album['url']); ?>" class="btn btn-sm <?php echo $isSeized ? 'btn-outline-danger' : 'btn-outline-primary'; ?> w-100 mb-1">
                                         <?php if ($isSeized): ?>
                                             <i class="fa-duotone fa-gavel me-2"></i>View Case File
                                         <?php else: ?>
@@ -124,22 +133,39 @@ $musicGroupSchema = [
                                         <?php endif; ?>
                                     </a>
 
+                                    <?php if ($storeStandardUrl || $storeAudiophileUrl): ?>
+                                        <div class="d-flex gap-2 w-100 mb-1">
+                                            <?php if ($storeStandardUrl): ?>
+                                                <a href="<?php echo htmlspecialchars($storeStandardUrl); ?>" target="_blank" class="btn btn-sm btn-info flex-grow-1" title="Standard Digital Archive">
+                                                    <i class="fa-solid fa-bag-shopping me-1"></i> Standard
+                                                </a>
+                                            <?php endif; ?>
+                                            <?php if ($storeAudiophileUrl): ?>
+                                                <a href="<?php echo htmlspecialchars($storeAudiophileUrl); ?>" target="_blank" class="btn btn-sm btn-warning flex-grow-1" title="Audiophile Master Vault">
+                                                    <i class="fa-solid fa-waveform-lines me-1"></i> WAV
+                                                </a>
+                                            <?php endif; ?>
+                                        </div>
+                                    <?php endif; ?>
+
                                     <?php 
                                     // DYNAMIC DSP BUTTONS
-                                    $hasStores = !empty($album['spotifyId']) || !empty($album['appleId']) || !empty($album['amazonId']) || !empty($album['youtubeId']);
-                                    
-                                    if ($hasStores) {
-                                        echo '<div class="d-flex flex-wrap gap-2 justify-content-center mt-1">';
-                                        $storeProps = [
-                                            'type'    => 'album',
-                                            'size'    => 'small', 
-                                            'spotify' => $album['spotifyId'] ?? '',
-                                            'apple'   => $album['appleId'] ?? '',
-                                            'amazon'  => $album['amazonId'] ?? '',
-                                            'youtube' => $album['youtubeId'] ?? ''
-                                        ];
-                                        include ROOT_PATH . '/includes/components/store-button.php';
-                                        echo '</div>';
+                                    if (!$dspExempt) {
+                                        $hasStores = !empty($album['spotifyId']) || !empty($album['appleId']) || !empty($album['amazonId']) || !empty($album['youtubeId']);
+                                        
+                                        if ($hasStores) {
+                                            echo '<div class="d-flex flex-wrap gap-2 justify-content-center mt-1">';
+                                            $storeProps = [
+                                                'type'    => 'album',
+                                                'size'    => 'small', 
+                                                'spotify' => $album['spotifyId'] ?? '',
+                                                'apple'   => $album['appleId'] ?? '',
+                                                'amazon'  => $album['amazonId'] ?? '',
+                                                'youtube' => $album['youtubeId'] ?? ''
+                                            ];
+                                            include ROOT_PATH . '/includes/components/store-button.php';
+                                            echo '</div>';
+                                        }
                                     }
                                     ?>
                                 </div>
