@@ -1,7 +1,7 @@
 <?php
 /**
  * COMPONENT: _tracklist-downloader.php
- * VERSION: 10.2 (Schema.org Deep Metadata & Track Length Integration)
+ * VERSION: 10.3 (Schema.org Deep Metadata, Store Routing & DSP Exemption Logic)
  *
  * LICENSE:
  * The architecture and code of this file are licensed under the MIT License.
@@ -84,11 +84,15 @@ $production_map = [
 $friendly_release = isset($release_map[$raw_release_type]) ? $release_map[$raw_release_type] : 'Full Length';
 $friendly_production = isset($production_map[$raw_production_type]) ? $production_map[$raw_production_type] : 'Studio Album';
 
-// --- DSP STREAMING IDS (SINGLE SOURCE OF TRUTH) ---
+// --- DSP STREAMING IDS & STORE LINKS (SINGLE SOURCE OF TRUTH) ---
 $stream_spotify_id = '';
 $stream_apple_id   = '';
 $stream_amazon_id  = '';
 $stream_youtube_id = '';
+$store_standard_url = '';
+$store_audiophile_url = '';
+$dsp_exempt = false;
+$dsp_notice = '';
 
 // Step up one directory from the album path to target the artist's root folder
 $artist_path_web = dirname($album_path_web);
@@ -110,6 +114,14 @@ if ($albums_master_content !== false) {
                     $stream_apple_id   = $master_album['appleId'] ?? '';
                     $stream_amazon_id  = $master_album['amazonId'] ?? '';
                     $stream_youtube_id = $master_album['youtubeId'] ?? '';
+                    
+                    // Pull the Fourthwall Store URLs
+                    $store_standard_url = $master_album['storeStandardUrl'] ?? '';
+                    $store_audiophile_url = $master_album['storeAudiophileUrl'] ?? '';
+                    
+                    // Check for DSP exemptions
+                    $dsp_exempt = $master_album['dspExempt'] ?? false;
+                    $dsp_notice = $master_album['dspNotice'] ?? 'This release is intentionally withheld from commercial streaming algorithms.';
                     break 2; // Match found, break out of both loops
                 }
             }
@@ -174,76 +186,75 @@ $js_playlist = [];
         <h5 class="mb-0 text-uppercase"><i class="fa-solid fa-headphones me-2"></i>Stream the Album</h5>
     </div>
     <div class="card-body">
-        <?php if ($has_active_streams): ?>
-            <p class="text-success small mb-3"><strong>Support the band!</strong> Listen to the official release on your favorite streaming platform below.</p>
+        <?php if ($dsp_exempt): ?>
+            <div class="alert alert-warning border-warning bg-warning-subtle text-warning-emphasis py-2 px-3 mb-0" role="alert">
+                <i class="fa-solid fa-triangle-exclamation me-2"></i><strong>VAULT EXCLUSIVE:</strong> <?php echo htmlspecialchars($dsp_notice); ?>
+            </div>
         <?php else: ?>
-            <p class="text-muted small mb-3">Links will become active once the album clears the global distribution network.</p>
+            <?php if ($has_active_streams): ?>
+                <p class="text-success small mb-3"><strong>Support the band!</strong> Listen to the official release on your favorite streaming platform below.</p>
+            <?php else: ?>
+                <p class="text-muted small mb-3">Links will become active once the album clears the global distribution network.</p>
+            <?php endif; ?>
+
+            <div class="d-flex gap-2 flex-wrap">
+                <?php if (!empty($stream_spotify_id)): ?>
+                    <a href="https://open.spotify.com/album/<?php echo htmlspecialchars($stream_spotify_id); ?>" target="_blank" class="btn btn-outline-success"><i class="fa-brands fa-spotify me-2"></i>Spotify</a>
+                <?php else: ?>
+                    <a href="#" class="btn btn-outline-success disabled"><i class="fa-brands fa-spotify me-2"></i>Spotify</a>
+                <?php endif; ?>
+                
+                <?php if (!empty($stream_apple_id)): ?>
+                    <a href="https://music.apple.com/us/album/<?php echo htmlspecialchars($stream_apple_id); ?>" target="_blank" class="btn btn-outline-danger"><i class="fa-brands fa-apple me-2"></i>Apple Music</a>
+                <?php else: ?>
+                    <a href="#" class="btn btn-outline-danger disabled"><i class="fa-brands fa-apple me-2"></i>Apple Music</a>
+                <?php endif; ?>
+
+                <?php if (!empty($stream_amazon_id)): ?>
+                    <a href="https://music.amazon.com/albums/<?php echo htmlspecialchars($stream_amazon_id); ?>" target="_blank" class="btn btn-outline-info"><i class="fa-brands fa-amazon me-2"></i>Amazon Music</a>
+                <?php else: ?>
+                    <a href="#" class="btn btn-outline-info disabled"><i class="fa-brands fa-amazon me-2"></i>Amazon Music</a>
+                <?php endif; ?>
+
+                <?php if (!empty($stream_youtube_id)): ?>
+                    <a href="https://music.youtube.com/playlist?list=<?php echo htmlspecialchars($stream_youtube_id); ?>" target="_blank" class="btn btn-outline-danger"><i class="fa-brands fa-youtube me-2"></i>YouTube Music</a>
+                <?php else: ?>
+                    <a href="#" class="btn btn-outline-danger disabled"><i class="fa-brands fa-youtube me-2"></i>YouTube Music</a>
+                <?php endif; ?>
+            </div>
         <?php endif; ?>
-
-        <div class="d-flex gap-2 flex-wrap">
-            <?php if (!empty($stream_spotify_id)): ?>
-                <a href="https://open.spotify.com/album/<?php echo htmlspecialchars($stream_spotify_id); ?>" target="_blank" class="btn btn-outline-success"><i class="fa-brands fa-spotify me-2"></i>Spotify</a>
-            <?php else: ?>
-                <a href="#" class="btn btn-outline-success disabled"><i class="fa-brands fa-spotify me-2"></i>Spotify</a>
-            <?php endif; ?>
-            
-            <?php if (!empty($stream_apple_id)): ?>
-                <a href="https://music.apple.com/us/album/<?php echo htmlspecialchars($stream_apple_id); ?>" target="_blank" class="btn btn-outline-danger"><i class="fa-brands fa-apple me-2"></i>Apple Music</a>
-            <?php else: ?>
-                <a href="#" class="btn btn-outline-danger disabled"><i class="fa-brands fa-apple me-2"></i>Apple Music</a>
-            <?php endif; ?>
-
-            <?php if (!empty($stream_amazon_id)): ?>
-                <a href="https://music.amazon.com/albums/<?php echo htmlspecialchars($stream_amazon_id); ?>" target="_blank" class="btn btn-outline-info"><i class="fa-brands fa-amazon me-2"></i>Amazon Music</a>
-            <?php else: ?>
-                <a href="#" class="btn btn-outline-info disabled"><i class="fa-brands fa-amazon me-2"></i>Amazon Music</a>
-            <?php endif; ?>
-
-            <?php if (!empty($stream_youtube_id)): ?>
-                <a href="https://music.youtube.com/playlist?list=<?php echo htmlspecialchars($stream_youtube_id); ?>" target="_blank" class="btn btn-outline-danger"><i class="fa-brands fa-youtube me-2"></i>YouTube Music</a>
-            <?php else: ?>
-                <a href="#" class="btn btn-outline-danger disabled"><i class="fa-brands fa-youtube me-2"></i>YouTube Music</a>
-            <?php endif; ?>
-        </div>
     </div>
 </div>
 
 <div class="card border-secondary mb-5 bg-transparent">
     <div class="card-header bg-body-tertiary border-secondary d-flex justify-content-between align-items-center">
-        <h5 class="mb-0 text-uppercase"><i class="fa-duotone fa-vault me-2"></i>Premium Archives</h5>
+        <h5 class="mb-0 text-uppercase"><i class="fa-duotone fa-vault me-2"></i>Digital Archives & Studio Masters</h5>
         <div>
             <span class="badge bg-secondary me-2" title="Creative Commons Attribution-ShareAlike 4.0 International">CC BY-SA 4.0</span>
-            <?php if ($vault_under_construction): ?>
-                <span class="badge bg-info text-dark"><i class="fa-solid fa-person-digging me-1"></i> Syncing Master Tapes</span>
-            <?php elseif ($vault_active): ?>
-                <span class="badge bg-warning text-dark"><i class="fa-solid fa-lock me-1"></i> VIP Access</span>
-            <?php endif; ?>
         </div>
     </div>
     <div class="card-body">
-        <?php if ($vault_under_construction): ?>
-            <p class="text-muted small mb-0">We are currently syncing the high-fidelity master files (WAV, FLAC, V0 MP3) to the Engine Room Vault. They will be available here soon!</p>
-        <?php else: ?>
-            <?php if ($vault_active): ?>
-                <p class="text-muted small mb-3">Download the pristine master tapes directly from the Engine Room Vault.</p>
+        <p class="text-muted small mb-3">Support the band and own the master tapes. High-fidelity payloads are available directly from the Engine Room storefront.</p>
+        
+        <div class="d-flex gap-2 flex-wrap">
+            <?php if (!empty($store_standard_url)): ?>
+                <a href="<?php echo htmlspecialchars($store_standard_url); ?>" target="_blank" class="btn btn-outline-info">
+                    <i class="fa-solid fa-file-zipper me-2"></i>Standard Archive (MP3/OGG)
+                </a>
             <?php endif; ?>
-            <div class="d-flex gap-2 flex-wrap">
-                <?php
-                    if ($vault_active) {
-                        $arc_mp3 = "/engine-room/api/download.php?album=" . $archive_base_name . "&format=zip-mp3";
-                        $arc_ogg = "/engine-room/api/download.php?album=" . $archive_base_name . "&format=zip-ogg";
-                        $arc_wav = "/engine-room/api/download.php?album=" . $archive_base_name . "&format=zip-wav";
-                    } else {
-                        $arc_mp3 = $base_web_path . '/vault/archives/' . $archive_base_name . '-mp3.zip';
-                        $arc_ogg = $base_web_path . '/vault/archives/' . $archive_base_name . '-ogg.zip';
-                        $arc_wav = $base_web_path . '/vault/archives/' . $archive_base_name . '-wav.7z';
-                    }
-                ?>
-                <a href="<?php echo $arc_mp3; ?>" class="btn btn-outline-primary license-gate"><i class="fa-solid fa-file-zipper me-2"></i>MP3 (ZIP)</a>
-                <a href="<?php echo $arc_ogg; ?>" class="btn btn-outline-success license-gate"><i class="fa-solid fa-file-zipper me-2"></i>OGG (ZIP)</a>
-                <a href="<?php echo $arc_wav; ?>" class="btn btn-outline-warning license-gate"><i class="fa-solid fa-file-zipper me-2"></i>WAV (7z)</a>
-            </div>
-        <?php endif; ?>
+            
+            <?php if (!empty($store_audiophile_url)): ?>
+                <a href="<?php echo htmlspecialchars($store_audiophile_url); ?>" target="_blank" class="btn btn-outline-warning">
+                    <i class="fa-solid fa-waveform-lines me-2"></i>Audiophile Vault (WAV)
+                </a>
+            <?php endif; ?>
+
+            <?php if (empty($store_standard_url) && empty($store_audiophile_url)): ?>
+                <span class="btn btn-outline-secondary disabled">
+                    <i class="fa-solid fa-clock me-2"></i>Archives Pending Processing
+                </span>
+            <?php endif; ?>
+        </div>
     </div>
 </div>
 
