@@ -2,6 +2,7 @@
 // includes/components/headers/engine-room/artists/stardust-engine/header-stardust.php
 // Dedicated navigation for The Stardust Engine artist sub-site.
 // UPDATED: Corrected Dropdown Labels (O'Connells vs Wrights) to reflect that everyone is kin.
+// UPDATED: Added Official Storefront routing.
 ?>
 <ul class="navbar-nav ms-auto mb-2 mb-md-0">
   
@@ -58,8 +59,13 @@
     </a>
   </li>
 
-
   <li class="nav-item border-start border-secondary mx-2 d-none d-md-block"></li>
+
+  <li class="nav-item">
+      <a class="nav-link text-info fw-bold" href="https://store.raggiesoft.com/pages/the-stardust-engine" target="_blank" rel="noopener">
+        <i class="fa-solid fa-bag-shopping me-2"></i>Official Store
+      </a>
+  </li>
 
   <li class="nav-item">
       <a class="nav-link text-secondary" href="/engine-room">
