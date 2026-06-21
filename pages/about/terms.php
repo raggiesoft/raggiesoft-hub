@@ -35,11 +35,30 @@
                         </div>
                     </div>
 
-                    <h4 class="fw-bold mt-5 mb-3">3. Disclaimer of Warranty</h4>
+                    <h4 class="fw-bold mt-5 mb-3">3. E-Commerce & Merchandise</h4>
+                    <div class="d-flex gap-3 mb-4 p-4 rounded bg-body-tertiary border border-start border-5 border-primary">
+                        <div class="fs-2 text-primary"><i class="fa-solid fa-cart-shopping"></i></div>
+                        <div>
+                            <h5 class="fw-bold mb-2">Store Operated by Fourthwall</h5>
+                            <p class="text-body mb-3">
+                                All physical and digital merchandise purchases made through my web store (<code>store.raggiesoft.com</code>) are facilitated by <strong>Fourthwall</strong>, acting as the Merchant of Record. By placing an order, you agree to their specific terms, shipping policies, and return guidelines.
+                            </p>
+                            <p class="text-body mb-3">
+                                While the storefront operates on my subdomain and features my designs, the transaction, fulfillment, and customer support for those goods are managed entirely by Fourthwall. RaggieSoft assumes no liability for shipping delays, lost packages, or manufacturing defects.
+                            </p>
+                            <div class="d-flex flex-wrap gap-2">
+                                <a href="https://store.raggiesoft.com/pages/terms-of-service" class="btn btn-sm btn-outline-primary">Terms of Service</a>
+                                <a href="https://store.raggiesoft.com/pages/returns-faq" class="btn btn-sm btn-outline-primary">Returns & FAQ</a>
+                                <a href="https://store.raggiesoft.com/contact" class="btn btn-sm btn-outline-primary">Store Support</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h4 class="fw-bold mt-5 mb-3">4. Disclaimer of Warranty</h4>
                     <p class="text-uppercase small fw-bold text-muted">The "It works on my machine" Clause</p>
                     <p>This website and all content within are provided "as is" without warranty of any kind. While I strive for 99.9% uptime (thanks to Sarah's deployment scripts), I cannot guarantee that the site will be error-free or uninterrupted. I am not liable for any damages arising from your use of the code or information provided here.</p>
 
-                    <h4 class="fw-bold mt-5 mb-3">4. Governing Law</h4>
+                    <h4 class="fw-bold mt-5 mb-3">5. Governing Law</h4>
                     <p>These terms shall be governed by the laws of the <strong>Commonwealth of Virginia</strong> and the United States of America. Any disputes shall be resolved in the courts of Norfolk, Virginia.</p>
                     
                 </div>

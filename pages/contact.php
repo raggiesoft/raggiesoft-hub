@@ -71,6 +71,8 @@ $imagesJson = htmlspecialchars(json_encode($heroImages), ENT_QUOTES, 'UTF-8');
     .force-border-danger { border: 1px solid rgba(220, 53, 69, 0.4) !important; }
     .force-border-warning { border: 1px solid rgba(255, 193, 7, 0.4) !important; }
     .force-border-secondary { border: 1px solid rgba(173, 181, 189, 0.4) !important; }
+    .force-border-primary { border: 1px solid rgba(13, 110, 253, 0.4) !important; }
+    .force-icon-primary { color: #0d6efd !important; }
 
     /* Shadow Stacking */
     .force-shadow-heavy {
@@ -124,6 +126,35 @@ $imagesJson = htmlspecialchars(json_encode($heroImages), ENT_QUOTES, 'UTF-8');
                             <a href="mailto:connect@michaelpragsdale.com?subject=RaggieSoft: Project Inquiry" class="btn btn-info btn-lg rounded-pill fw-bold text-dark">
                                 <i class="fa-solid fa-paper-plane me-2"></i>Send Message
                             </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="card force-glass-bg force-border-primary h-100 p-4 text-center rounded-4 shadow-lg">
+                    <div class="card-body d-flex flex-column">
+                        <div class="mb-4 force-icon-primary">
+                            <i class="fa-duotone fa-shop fa-4x drop-shadow"></i>
+                        </div>
+                        <h2 class="h3 fw-bold mb-3 force-text-light">Store Support</h2>
+                        <p class="force-text-muted mb-4">
+                            Questions about merchandise, order status, shipping details, or returns?
+                        </p>
+                        <div class="d-grid mt-auto">
+                            <a href="https://store.raggiesoft.com/contact" class="btn btn-primary btn-lg rounded-pill fw-bold shadow-glow force-text-light mb-3">
+                                <i class="fa-solid fa-headset me-2"></i>Contact Fourthwall
+                            </a>
+                            <a href="https://store.raggiesoft.com/pages/returns-faq" class="btn btn-outline-primary btn-sm rounded-pill fw-bold force-text-light">
+                                <i class="fa-solid fa-circle-question me-1"></i> View Returns & FAQ
+                            </a>
+                        </div>
+                    </div>
+                    <div class="text-center mt-3 d-flex justify-content-center">
+                        <div class="force-border-primary px-3 py-2 rounded-pill shadow-sm" style="background-color: rgba(13, 110, 253, 0.1) !important;">
+                            <p class="small force-text-muted mb-0" style="font-size: 0.8rem;">
+                                <strong>Merchant of Record:</strong> All merchandise fulfillment and customer support is operated directly by Fourthwall.
+                            </p>
                         </div>
                     </div>
                 </div>

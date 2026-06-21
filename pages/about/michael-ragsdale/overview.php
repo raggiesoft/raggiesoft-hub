@@ -26,16 +26,21 @@ global $cdn_root;
       "addressCountry": "US"
     },
     "knowsAbout": [
-      "PHP 8.4",
-      "Vanilla JavaScript (ES6+)",
-      "Linux Server Administration",
-      "WCAG 2.1 AA",
-      "Section 508 Compliance",
-      "DigitalOcean Cloud Infrastructure",
-      "Bash CI/CD Automation",
-      "Gemini LLM (Production/Prompt Engineering)",
-      "GitHub Copilot",
-      "Suno AI Audio Generation"
+    "PHP 8.4",
+    "Vanilla JavaScript (ES6+)",
+    "Linux Server Administration",
+    "WCAG 2.1 AA",
+    "Section 508 Compliance",
+    "DigitalOcean Cloud Infrastructure",
+    "Bash CI/CD Automation",
+    "Gemini LLM (Production/Prompt Engineering)",
+    "GitHub Copilot",
+    "Suno AI Audio Generation",
+    "E-Commerce Architecture (MoR)",
+    "DNS Routing & Virtual Hosting"
+    ],
+    "sameAs": [
+        "https://store.raggiesoft.com"
     ],
     "seeks": {
       "@type": "Demand",
@@ -95,6 +100,9 @@ global $cdn_root;
                 <span class="badge bg-info-subtle text-info-emphasis border border-info-subtle px-3 py-2 font-monospace fs-7"><i class="fa-solid fa-sparkles me-1"></i>Gemini LLM</span>
                 <span class="badge bg-dark-subtle text-dark-emphasis border border-dark-subtle px-3 py-2 font-monospace fs-7"><i class="fa-brands fa-github me-1"></i>Copilot</span>
                 <span class="badge bg-warning-subtle text-warning-emphasis border border-warning-subtle px-3 py-2 font-monospace fs-7"><i class="fa-solid fa-music me-1"></i>Suno</span>
+                <span class="badge bg-warning-subtle text-warning-emphasis border border-warning-subtle px-3 py-2 font-monospace fs-7"><i class="fa-solid fa-music me-1"></i>Suno</span>
+                
+                <span class="badge bg-success-subtle text-success-emphasis border border-success-subtle px-3 py-2 font-monospace fs-7"><i class="fa-solid fa-shop me-1"></i>Fourthwall MoR / DNS</span>
                 
                 <span class="badge bg-primary-subtle text-primary-emphasis border border-primary-subtle px-3 py-2 font-monospace fs-7 fw-bold">WCAG 2.1 AA / Sec 508</span>
             </div>
@@ -119,6 +127,17 @@ global $cdn_root;
                             <div>
                                 <h4 class="h6 fw-bold mb-1 text-body-emphasis text-uppercase">Engine Room Records</h4>
                                 <p class="small text-secondary mb-0">A multimedia label operated via automated Bash/Python FFmpeg pipelines to transcode and distribute AI-assisted audio.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-12">
+                    <a href="https://store.raggiesoft.com/" target="_blank" rel="noopener noreferrer" class="card bg-body-secondary border-0 shadow-sm hover-lift text-decoration-none border-start border-4 border-success">
+                        <div class="card-body p-4 d-flex align-items-center">
+                            <i class="fa-duotone fa-shop fa-2x text-success me-4"></i>
+                            <div>
+                                <h4 class="h6 fw-bold mb-1 text-body-emphasis text-uppercase">RaggieSoft Media Storefront</h4>
+                                <p class="small text-secondary mb-0">A fully integrated e-commerce pipeline utilizing custom DNS routing and Fourthwall as a managed CMS and Merchant of Record (MoR) for automated physical and digital asset distribution.</p>
                             </div>
                         </div>
                     </a>

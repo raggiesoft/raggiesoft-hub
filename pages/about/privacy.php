@@ -27,6 +27,17 @@
                     <h3 class="h5 h6 fw-bold text-primary">D. Infrastructure & Edge Security (Cloudflare)</h3>
                     <p>This website utilizes <strong>Cloudflare</strong> as a Content Delivery Network (CDN) and security perimeter. Cloudflare acts as a reverse proxy, meaning your traffic passes through their global network before reaching my server. Cloudflare may collect data (including IP addresses and system configuration) to protect the site from DDoS attacks and malicious bots. They may also place strictly necessary cookies (e.g., <code>__cf_bm</code>) to verify that you are a human visitor.</p>
 
+                    <h3 class="h5 h6 fw-bold text-primary mt-4">E. E-Commerce Transactions (Fourthwall)</h3>
+                    <div class="p-4 mb-3 rounded bg-body-tertiary border border-start border-5 border-primary">
+                        <p class="text-body mb-3">
+                            My official merchandise store at <code>store.raggiesoft.com</code> is hosted and operated by <strong>Fourthwall</strong>, who acts as the Merchant of Record. When you make a purchase, you are transacting directly with them. Fourthwall collects and processes your payment details, shipping address, and order information.
+                        </p>
+                        <p class="text-body fw-bold mb-3">
+                            I receive basic order summaries to monitor store performance, but I do not collect, process, or store your credit card data or payment information on my server.
+                        </p>
+                        <a href="https://store.raggiesoft.com/pages/privacy-policy" class="btn btn-sm btn-outline-primary">Read Fourthwall's Privacy Policy</a>
+                    </div>
+
                     <h2 class="h4 fw-bold mt-5 mb-3">3. Third-Party Links</h2>
                     <p>This site contains links to external platforms (GitHub, LinkedIn, Spotify/Apple Music). Once you leave RaggieSoft.com, I am not responsible for the privacy practices of those other sites.</p>
 
