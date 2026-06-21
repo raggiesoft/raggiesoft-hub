@@ -234,7 +234,7 @@ global $cdn_root;
                     <i class="fa-duotone fa-server fa-2x text-primary me-3"></i>
                     <div>
                         <h3 class="h6 fw-bold mb-0 text-body-emphasis">Founder & Systems Architect</h3>
-                        <div class="small text-primary font-monospace fs-7">RaggieSoft Media | Est. 2008 – Present</div>
+                        <div class="small text-secondary font-monospace fs-7">RaggieSoft Media | Est. 2008 – Present | HR: Sole Proprietor</div>
                     </div>
                 </div>
                 <p class="small text-secondary mb-0">
@@ -279,7 +279,7 @@ global $cdn_root;
                     <i class="fa-duotone fa-mobile-code fa-2x text-secondary me-3"></i>
                     <div>
                         <h3 class="h6 fw-bold mb-0 text-body-emphasis">Mobile Applications Developer Intern</h3>
-                        <div class="small text-secondary font-monospace fs-7">Dominion Enterprises | Sep 2012 – Dec 2012</div>
+                        <div class="small text-secondary font-monospace fs-7">Dominion Enterprises | Sep 2012 – Dec 2012 | HR: Developer Intern</div>
                     </div>
                 </div>
                 <p class="small text-secondary mb-0">
