@@ -249,7 +249,7 @@ global $cdn_root;
                     <i class="fa-duotone fa-users-gear fa-2x text-primary me-3"></i>
                     <div>
                         <h3 class="h6 fw-bold mb-0 text-body-emphasis">Technical Lead & Data Normalization Specialist</h3>
-                        <div class="small text-secondary font-monospace fs-7">City of Virginia Beach | HR: Clerk-Cashier</div>
+                        <div class="small text-secondary font-monospace fs-7">City of Virginia Beach | May 2023 – Present | HR: Clerk-Cashier</div>
                     </div>
                 </div>
                 <p class="small text-secondary mb-0">
@@ -264,7 +264,7 @@ global $cdn_root;
                     <i class="fa-duotone fa-shield-check fa-2x text-secondary me-3"></i>
                     <div>
                         <h3 class="h6 fw-bold mb-0 text-body-emphasis">Section 508 Compliance Specialist</h3>
-                        <div class="small text-secondary font-monospace fs-7">ODU Online | HR: Computer Operations Tech</div>
+                        <div class="small text-secondary font-monospace fs-7">ODU Online | Nov 2019 – Jul 2022 | HR: Computer Operations Tech</div>
                     </div>
                 </div>
                 <p class="small text-secondary mb-0">
