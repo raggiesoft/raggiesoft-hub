@@ -98,7 +98,7 @@
         </h6>
         <ul class="nav flex-column small">
             <li class="nav-item mb-2">
-                <a class="aero-external-link link-secondary fw-bold" href="https://github.com/raggiesoft" target="_blank" rel="noopener noreferrer">
+                <a class="aero-external-link link-secondary fw-bold" href="https://github.com/raggiesoft/stardust-engine-cms" target="_blank" rel="noopener noreferrer">
                     <span class="d-flex align-items-center justify-content-between">
                         <span><i class="fa-solid fa-code-branch me-2 text-secondary" aria-hidden="true"></i>Source Code</span>
                         <i class="fa-solid fa-arrow-up-right-from-square small opacity-50" aria-hidden="true"></i>
@@ -106,7 +106,7 @@
                 </a>
             </li>
             <li class="nav-item">
-                <a class="aero-external-link link-secondary fw-bold" href="https://github.com/raggiesoft" target="_blank" rel="noopener noreferrer">
+                <a class="aero-external-link link-secondary fw-bold" href="https://github.com/raggiesoft/stardust-engine-cms/issues" target="_blank" rel="noopener noreferrer">
                     <span class="d-flex align-items-center justify-content-between">
                         <span><i class="fa-solid fa-bug me-2 text-danger opacity-75" aria-hidden="true"></i>Report an Issue</span>
                         <i class="fa-solid fa-arrow-up-right-from-square small opacity-50" aria-hidden="true"></i>
