@@ -75,7 +75,7 @@ $pageTitle = "The Stardust Engine CMS | Open Source";
                         <span class="badge bg-info text-dark font-monospace text-uppercase rounded-pill shadow-sm px-3 py-2 fw-bold" style="box-shadow: inset 0 1px 0 rgba(255,255,255,0.5);">
                             MIT License
                         </span>
-                        <a href="https://github.com/raggiesoft" target="_blank" rel="noopener noreferrer" class="badge bg-body text-body-secondary text-decoration-none border font-monospace rounded-pill px-3 py-2 transition-all aero-hover-secondary">
+                        <a href="https://github.com/raggiesoft/stardust-engine-cms" target="_blank" rel="noopener noreferrer" class="badge bg-body text-body-secondary text-decoration-none border font-monospace rounded-pill px-3 py-2 transition-all aero-hover-secondary">
                             <i class="fa-brands fa-github me-1" aria-hidden="true"></i> Public Repository
                         </a>
                     </div>
@@ -97,9 +97,9 @@ $pageTitle = "The Stardust Engine CMS | Open Source";
         <div class="col-xl-4">
             <div class="card bg-hud-base h-100 border-0 shadow-sm p-4 hover-lift">
                 <i class="fa-brands fa-php fa-3x text-secondary mb-3" aria-hidden="true" style="filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));"></i>
-                <h3 class="h5 fw-bold mb-2 text-body-emphasis">The Engine (PHP 8.4)</h3>
+                <h3 class="h5 fw-bold mb-2 text-body-emphasis">The Engine (PHP 8.5)</h3>
                 <p class="small text-body-secondary mb-0">
-                    A strictly structural MVC routing layer. Uses a centralized JSON configuration to determine layouts, sidebars, and SEO schema injection. Zero SQL databases required; entirely flat-file architecture driven by PHP 8.4 arrays and includes.
+                    A strictly structural MVC routing layer natively optimized for Ubuntu 26.04 LTS. Uses a centralized JSON configuration to determine layouts, sidebars, and SEO schema injection. Zero SQL databases required; entirely flat-file architecture driven by PHP 8.5 arrays and includes.
                 </p>
             </div>
         </div>
@@ -119,7 +119,7 @@ $pageTitle = "The Stardust Engine CMS | Open Source";
                 <i class="fa-solid fa-terminal fa-3x text-secondary mb-3" aria-hidden="true" style="filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));"></i>
                 <h3 class="h5 fw-bold mb-2 text-body-emphasis">Jenna & Sarah (DevOps)</h3>
                 <p class="small text-body-secondary mb-0">
-                    Included bash automation scripts. 'Jenna' handles local deployment, enforcing WCAG accessibility checks before pushing code to GitHub and syncing static assets via `rclone`. 'Sarah' sits on your server, quietly pulling updates via `rsync` without requiring root permissions.
+                    Included bash automation scripts. 'Jenna' handles local deployment, enforcing strict WCAG 2.1 AA accessibility checks before pushing code to GitHub and syncing static assets via `rclone`. 'Sarah' sits on your server, quietly pulling updates via `rsync` without requiring root permissions.
                 </p>
             </div>
         </div>
@@ -142,7 +142,7 @@ $pageTitle = "The Stardust Engine CMS | Open Source";
             </div>
             <div class="col-md-6">
                 <div class="aero-feature-box">
-                    <h3 class="h6 fw-bold text-uppercase text-body-emphasis"><i class="fa-solid fa-universal-access me-2 text-primary" aria-hidden="true"></i>WCAG AAA Focus</h3>
+                    <h3 class="h6 fw-bold text-uppercase text-body-emphasis"><i class="fa-solid fa-universal-access me-2 text-primary" aria-hidden="true"></i>WCAG 2.1 AA Focus</h3>
                     <p class="small text-body-secondary mb-0">
                         The included Bootstrap 5 templates are heavily modified for contrast compliance and screen reader legibility. The deployment script explicitly refuses to push code if required alt-text fields are missing from your configuration.
                     </p>
@@ -168,7 +168,7 @@ $pageTitle = "The Stardust Engine CMS | Open Source";
     </div>
 
     <div class="text-center mb-4 border-top border-secondary-subtle pt-5">
-        <a href="https://github.com/raggiesoft" target="_blank" rel="noopener noreferrer" class="btn btn-glass-info btn-lg rounded-pill fw-bold text-uppercase shadow-sm px-5 py-3 transition-all">
+        <a href="https://github.com/raggiesoft/stardust-engine-cms" target="_blank" rel="noopener noreferrer" class="btn btn-glass-info btn-lg rounded-pill fw-bold text-uppercase shadow-sm px-5 py-3 transition-all">
             <i class="fa-brands fa-github me-2 fa-lg" aria-hidden="true"></i> View Source on GitHub
         </a>
         <p class="small text-body-secondary font-monospace mt-4">
