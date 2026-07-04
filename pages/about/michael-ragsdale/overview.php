@@ -197,10 +197,9 @@ global $cdn_root;
                         <li class="mb-3">
                             <h3 class="text-uppercase small text-success-emphasis fw-bold tracking-wider mb-0">Clearance Status</h3>
                             <div class="fs-6 text-body-emphasis fw-bold">Uncleared (Eligible)</div>
-                            <!-- UPDATED SUBTEXT -->
-                            <div class="small text-secondary">U.S. Citizen eligible for immediate DoD sponsorship. Pristine background check baseline (zero criminal record, zero traffic/speeding citations). Previously held federal Public Trust.</div>
+                            <div class="small text-secondary">U.S. Citizen eligible for immediate DoD sponsorship. Pristine background (zero criminal or traffic records). Previously held federal Public Trust.</div>
                         </li>
-                        <li class="mb-3 mt-4 pt-3 border-top border-success border-opacity-25">
+                        <li class="mb-3 mt-3 pt-3 border-top border-success border-opacity-25">
                             <h3 class="text-uppercase small text-success-emphasis fw-bold tracking-wider mb-0">Interview Protocol</h3>
                             <div class="fs-6 text-body-emphasis fw-bold">System Design over Algorithms</div>
                             <div class="small text-secondary">I prioritize high-level architectural discussions, portfolio reviews, and pair-programming. I respectfully decline multi-day, unpaid "take-home" coding assignments.</div>
