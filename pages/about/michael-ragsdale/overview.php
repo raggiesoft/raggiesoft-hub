@@ -100,7 +100,6 @@ global $cdn_root;
                 <span class="badge bg-info-subtle text-info-emphasis border border-info-subtle px-3 py-2 font-monospace fs-7"><i class="fa-solid fa-sparkles me-1"></i>Gemini LLM</span>
                 <span class="badge bg-dark-subtle text-dark-emphasis border border-dark-subtle px-3 py-2 font-monospace fs-7"><i class="fa-brands fa-github me-1"></i>Copilot</span>
                 <span class="badge bg-warning-subtle text-warning-emphasis border border-warning-subtle px-3 py-2 font-monospace fs-7"><i class="fa-solid fa-music me-1"></i>Suno</span>
-                <span class="badge bg-warning-subtle text-warning-emphasis border border-warning-subtle px-3 py-2 font-monospace fs-7"><i class="fa-solid fa-music me-1"></i>Suno</span>
 
                 <span class="badge bg-success-subtle text-success-emphasis border border-success-subtle px-3 py-2 font-monospace fs-7"><i class="fa-solid fa-shop me-1"></i>Fourthwall MoR / DNS</span>
                 
