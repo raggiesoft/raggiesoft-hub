@@ -209,7 +209,7 @@ $pageTitle = "The Autopsy: Holly Takes Control - Evidence Item #02";
                             <br><br>
                             The IT Director, watching from the corner, frowned. There were no other networks. But Holly's fingers flew across the keys, manually typing a hidden SSID that didn't broadcast its existence: <code>PRP_MGT_VLAN_01</code>.
                             <br><br>
-                            She hit <code>ENTER</code>. Connected.
+                            She dropped in the sixteen-character master key and hit <code>ENTER</code>. Connected.
                             <br><br>
                             She hit <code>CTRL+K</code> to open the <strong>Quantum Cast</strong> menu. The massive 85-inch monitor on the wall—hardware leased from Pacific Rim and sitting on that same hidden management VLAN—recognized the command immediately. Following its hard-coded protocols, the device prioritized the Landlord signal over the Tenant signal, dumping Frost's HDMI connection and instantly mirroring her screen.
                         </p>
