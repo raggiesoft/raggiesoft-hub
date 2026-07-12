@@ -1,0 +1,2176 @@
+{
+    "common": {
+        "site": "raggiesoft-books",
+        "theme": "",
+        "siteName": "alex-chloe",
+        "showSidebar": true,
+        "sidebar": "raggiesoft-books/sidebar-book",
+        "headerMenu": "raggiesoft-books/header-books",
+        "footer": "raggiesoft-books/footer-books"
+    },
+    "/raggiesoft-books/books/alex-chloe": {
+        "view": "pages/raggiesoft-books/books/overview",
+        "title": "alex-chloe - Library",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b001/c001/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The First Meeting (1987)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b001/c002/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The First Day of Kindergarten (Fall 1990)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b001/c002/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Afternoon Block",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b001/c002/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Eye of the Storm",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b001/c002/p004": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: The Guardian and the Architect",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b001/c002/p005": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 5: The Nickname (Fall 1990)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b001/c002/p006": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 6: A Quiet Place in the Chaos (c. 1992)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b001/c002/p007": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 7: The Grand Prix",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b001/c003/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Dare and The Setup",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b001/c003/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: Senior Week",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b001/c003/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: Aftermath of a Movie",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b001/c003/p004": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: The Antidote",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b001/c003/p005": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 5: The Fizzle",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b001/c003/p006": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 6: A Better Kind of Friendship",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b001/c003/p007": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 7: The Aftermath at School",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b001/c004/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: A Quiet Place in the Chaos (Fall 1998)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b001/c004/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Resonance Cascade (Winter 1998)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b001/c004/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Codex (Alex's 14th Birthday - April 1999)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b001/c004/p004": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: The Declaration (April 8th, 1999)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b001/c004/p005": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 5: The Upgrade (Early June 1999)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b001/c004/p006": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 6: The Training Montage & The Sign (Early June 1999)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b002/c001/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: An Instant Connection (Saturday, June 19, 1999)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b002/c001/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: Boardwalk Blasts & Budding Bonds (A Few Days Later, Summer 1999)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b002/c001/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: Sandwiches and Shared Worlds (Sunday Afternoon, Summer 1999)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b002/c001/p004": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: The Sweetness of a Hug (Summer of Discovery, 1999)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b002/c001/p005": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 5: A Day at Fairlawn and Shared Stories",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b002/c001/p006": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 6: The First Boundary (Late Summer 1999)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b002/c001/p007": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 7: The Reunion (Late Summer 1999)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b002/c001/p008": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 8: A Ramp of Welcome (Mid-Summer 1999)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b002/c001/p009": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 9: Electives, Echoes of French, and an Informal Tutor (Mid-Late Summer 1999)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b002/c001/p010": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 10: The Architect of The Codex (Summer 1999)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b002/c001/p011": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 11: The First Sleepover \u2013 Labor Day Weekend (1999)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b002/c001/p012": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 12: The Morning After \u2013 A New Normal (Sunday, Labor Day Weekend 1999)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b002/c001/p013": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 13: Bedtime and Beach Dreams (Sunday Evening, Labor Day Weekend 1999)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b002/c001/p014": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 14: Beach Day Bound \u2013 The Last Day of Freedom (Labor Day Monday, 1999)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b002/c001/p015": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 15: Oceanfront Wonders \u2013 A Day of Firsts (Labor Day Monday, 1999)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b002/c001/p016": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 16: A Drawer of Belonging (Late Summer 1999)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b003/c001/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Unofficial Orientation (First Day of Freshman Year, Fall 1999)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b003/c001/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: Bonjour, Madame Beaumont (First Day of School, Fall 1999)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b003/c001/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Infamous Game and Instant Justice (First Day of School Lunch, Fall 1999)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b003/c001/p004": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: An Aromatic Apprenticeship (First Day of School - 2:15 PM, Fall 1999)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b003/c001/p005": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 5: The Lingering Aroma of Justice (Second Day of Freshman Year, Fall 1999)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b003/c001/p006": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 6: The Delinquent, The Dumpsters, and The Deep Fryer's Due (Second Day of School - 2:10 PM, Fall 1999)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b003/c001/p007": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 7: A Humble Request and a Changing Tide (Later that Week, Fall 1999)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b003/c001/p008": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 8: A Different Kind of \"The Talk\" (Early September 1999)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b003/c001/p009": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 9: A Quiet Understanding \u2013 Their Own Conversation (Saturday Evening, Early September 1999)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b003/c001/p010": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 10: An Interrupted Lesson and an Inevitable Summons (A Week Later, Fall 1999)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b003/c001/p011": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 11: Cafeteria Justice, Multilingual Edition *(Freshman Year, Fall 1999)*",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b003/c001/p012": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 2: A First Winter",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b003/c001/p013": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: A Canadian Word (Winter 1999)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b003/c001/p014": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: A New Tradition",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b003/c001/p015": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: Christmas Eve on Lisa Court (December 24, 1999)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b003/c001/p016": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: A Quiet Ritual",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b003/c001/p017": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 5: A Christmas of Firsts",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b003/c001/p018": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 6: A Cross-Border Introduction",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b003/c002/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Gaelic Gambit and the Grease Trap Lament",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b003/c002/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: Birthday Twins (Early April 2000)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b003/c002/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: A Party for Two (Early April 2000)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b003/c002/p004": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: A Miller-Mason Birthday Extravaganza (April 8, 2000)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b003/c002/p005": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 5: A Change of Scenery (April 8, 2000)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b003/c002/p006": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 6: The First Step of the Adventure (April 9, 2000)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b003/c003/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Adventure Becomes Real (Mid-Summer 2000)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b003/c003/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Night Before (Late July 2000)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b003/c003/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Journey North (Late July 2000)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b003/c003/p004": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: A Familiar Crossing (Summer 2000)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b003/c003/p005": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 5: A Town Without Walls (Summer 2000)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b003/c003/p006": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 6: One Street, Two Countries (Summer 2000)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b003/c003/p007": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 7: A Day of Two Nations (Summer 2000)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b003/c003/p008": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 8: The Montr\u00e9al Rule (Summer 2000)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b003/c003/p009": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 9: Montr\u00e9al",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b003/c003/p010": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 10: The Return Journey (Summer 2000)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b003/c003/p011": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 11: A Lesson in Chocolate and Law (Summer 2000)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b003/c003/p012": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 12: The Forbidden Fruit (Summer 2000)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b003/c004/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: A Qu\u00e9b\u00e9cois Welcome (Summer 2000)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b003/c004/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Reunion \u2013 Food, Family, and French (Summer 2000)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b003/c004/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: Character Moments and Interactions (Summer 2000)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b003/c004/p004": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: The Last Farewell (Summer 2000)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b004/c001/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The A/B Block (First Day of Sophomore Year, Fall 2000)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b004/c001/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Calendar Keeper",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b004/c002/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: A Simple Cough (Fall 2000)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b004/c002/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Nurse's Verdict",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b004/c002/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Hospital",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b004/c002/p004": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: A Turn for the Worse",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b004/c002/p005": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 5: The Anchor",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b004/c002/p006": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 6: Touch and Go",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b004/c002/p007": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 7: The Road Back",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b004/c002/p008": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 8: Alex\u2019s Recovery",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b004/c003/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: Re-establishing a Rhythm (Fall 2000)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b004/c003/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: A New Low",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b004/c004/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Blast Radius (Fall 2000)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b004/c004/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Cold War",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b004/c004/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Reconciliation",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b004/c004/p004": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: The Unbreakable Bond",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b004/c005/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Lab Partner (Fall 2000)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b004/c005/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Study Session",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b004/c005/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Invitation",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b004/c005/p004": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: The Answer",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b005/c001/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: A Compatibility Crisis",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b005/c001/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Justification",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b005/c001/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Unboxing",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b005/c001/p004": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: A Lesson in Virtualization",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b005/c002/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: Parents Make Plans",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b005/c002/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Handover",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b005/c002/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: A Quiet Domesticity",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b005/c002/p004": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: MEGAN!!!! (The Chaperone Arrives)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b005/c002/p005": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 5: The Departure and The Reflection",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b005/c002/p006": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 6: The Return",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b006/c001/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: Cafeteria Entrance & Cafeteria \u2013 First Day, Fall 2002",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b006/c001/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The First Separation (First Purple Day, Fall 2002)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b006/c001/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: Main Lobby & Front Exit \u2013 End of First Day, Fall 2002",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b006/c001/p004": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: By the Dumpsters \u2013 First Day of School, Fall 2002, 2:13 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b006/c001/p005": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 5: A Line too Far (for Josh Riley)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b006/c002/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The TADA Heard 'Round the Lab (First Day, Fall 2002)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b006/c002/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Missing Semicolon (Fall 2002)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b006/c003/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The \"What's Next?\" Meeting (Fall 2002)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b006/c004/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: A Quiet Hurt (Winter 2002)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b006/c004/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: A Simple Offer",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b006/c005/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Accident (Spring 2003)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b006/c005/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The New Reality",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b006/c005/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: A New Kind of Teamwork",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b006/c005/p004": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: Private Struggles and Quiet Dignity",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b006/c005/p005": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 5: A Deeper Understanding",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b006/c006/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Decision",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b006/c006/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Sabotage",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b006/c006/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The People's Vote",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b006/c006/p004": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: The Real Victory",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b007/c001/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: Exploring Seattle and Lynnwood",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b007/c001/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: A Special Evening",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b007/c001/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Afterglow",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b007/c001/p004": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: A New Threshold of Trust (Summer 2003)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b007/c002/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: Two Separate Worlds (Late August 2003)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b007/c002/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Soundtrack to a Heartbreak",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b007/c002/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: A Night in an Empty Room (Late August 2003)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b007/c002/p004": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: The First Lifeline (Las Vegas)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b007/c002/p005": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 5: A Voice Across the Continent (Seattle)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b007/c002/p006": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 6: Home Safe (Lynnwood)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b008/c001/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: Student Development 101",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b008/c001/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: A Familiar Face",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b008/c001/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: Coffee, and an Open Wound (Late August 2003)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b008/c001/p004": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: The Promise (Late August 2003)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b008/c001/p005": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 5: Moving Fast",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b008/c001/p006": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 6: How I Met Her Mother",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b008/c001/p007": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 7: A Lifeline Offered",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b008/c001/p008": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 8: The Presentation and the Aftermath",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b008/c002/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: A Doubt Starts to Form",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b008/c002/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Refusal",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b008/c002/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Call for Help",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b008/c002/p004": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: The Confrontation",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b008/c002/p005": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 5: A Debrief in the Dark",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b008/c002/p006": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 6: A Debrief at Lisa Court",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b008/c002/p007": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 7: The Morning Debrief",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b008/c002/p008": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 8: The Love Bomb",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b008/c003/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Video Call Interruption",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b008/c003/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: A Dinner of Dissent",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b008/c003/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Slow Encroachment",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b008/c003/p004": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: An Unstable Connection",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b008/c003/p005": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 5: A Lifeline from Lynnwood",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b008/c003/p006": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 6: Vera's \"Rescue\" Mission",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b008/c003/p007": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 7: A Secret Rebellion",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b008/c004/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Cavalry Arrives",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b008/c004/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: A Return to Sanctuary",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b008/c004/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: A Safe Harbor",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b008/c004/p004": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: A Taste of Normalcy",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b008/c004/p005": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 5: A Night of Healing",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b008/c004/p006": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 6: The Lifeline",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b008/c004/p007": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 7: The Bedtime Routine",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b008/c004/p008": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 8: A Safe Place to Land",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b008/c004/p009": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 9: An Early Start",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b008/c004/p010": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 10: Opening Remarks",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b008/c004/p011": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 11: The Campus Tour",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b008/c004/p012": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 12: The Residential Tour",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b008/c004/p013": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 13: The Thirteenth Floor",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b008/c004/p014": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 14: The Famous Fried Chicken",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b008/c004/p015": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 15: Practicing for the Future",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b008/c004/p016": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 16: Homework Sanctuary",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b008/c004/p017": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 17: The Tender Shack",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b008/c004/p018": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 18: The Second Video Call",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b008/c004/p019": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 19: Starship Sentinels",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b008/c004/p020": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 20: The Second Evening of Care",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b008/c004/p021": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 21: A Morning of Trust",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b008/c004/p022": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 22: The Heart-to-Heart",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b008/c004/p023": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 23: The Aftermath",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b008/c005/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Vacuum",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b008/c005/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Thanksgiving Lie",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b008/c005/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: Across the Country on a Pathfinder",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b008/c005/p004": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: Welcome to Hell, Welcome to Kent",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b008/c006/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Desperate Call (Wednesday, November 22, 2003)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b008/c006/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: Race to Kent",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b008/c006/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: Confrontation and Choice (Wednesday, November 22, 2003)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b008/c006/p004": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: The Drive to Lynnwood \u2013 Safety and Silence (Wednesday, November 22, 2003)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b008/c007/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: An Urgent Call Home (Wednesday, November 22, 2003)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b008/c007/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: An Emergency Deep Cleaning \u2013 Restoring Dignity (Wednesday, November 22, 2003)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b008/c007/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: First Meal in Sanctuary \u2013 Simple Comforts (Wednesday, November 22, 2003)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b008/c007/p004": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: A Healing Nap and a New Plan (Wednesday, November 22, 2003)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b008/c007/p005": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 5: A Quiet Thanksgiving (Thursday, November 23, 2003)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b008/c008/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: A Quiet Conversation (Lynnwood, Weekend After Thanksgiving 2003)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b008/c008/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Clinic Visit and a Clean Slate",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b008/c008/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: Resuming Intimacy \u2013 The Afterglow Revisited",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b008/c008/p004": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: The Afterglow \u2013 A New Dawn, A Reclaimed Voice",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b008/c008/p005": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 5: The Weight of Certainty",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b008/c008/p006": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 6: Homeward Bound for Graduation",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b008/c009/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Cavalry Arrives (Mid-December 2003)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b008/c009/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: A Gentle Deconstruction",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b008/c009/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: Shipping a Life",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b008/c009/p004": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: The Flight Home",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b008/c009/p005": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 5: Sanctuary",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b008/c009/p006": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 6: Magna Cum Laude",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b008/c009/p007": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 7: The Three-Way Escape Hatch",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b008/c010/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Insurance Dilemma and a Loving Proposition (Mid December 2003)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b008/c010/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Doctor's Verdict",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b008/c010/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: A New Foundation",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b008/c010/p004": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: A New Normal",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b008/c010/p005": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 5: A Canadian Landing (December 22, 2003)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b008/c010/p006": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 6: A Day of Two Cultures (December 23, 2003)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b008/c010/p007": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 7: Le R\u00e9veillon on Lisa Court (December 24, 2003)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b008/c010/p008": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 8: The Aftermath of the Feast (December 24, 2003)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b008/c010/p009": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 9: A Cross-Border Christmas (December 25, 2003)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b008/c010/p010": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 10: A Gift of Togetherness (December 25, 2003)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b008/c010/p011": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 11: The American Christmas and a New Allegiance (December 25, 2003)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b008/c010/p012": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 12: A Rivalry is Born (December 25, 2003)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b008/c010/p013": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 13: A Quiet \"I Do\" for Practical Love (January 5, 2004)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b008/c010/p014": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 14: A Grocery Store Guardian (Winter Break 2003)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b008/c010/p015": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 15: Confrontation in ValueMart (Virginia Beach, Winter Break \u2013 Early January 2004)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b008/c010/p016": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 16: The Aftermath",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b008/c010/p017": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 17: A Shared Secret",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b009/c001/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: Gearing Up",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b009/c001/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: A New Sanctuary (Sunday, January 11, 2004)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b009/c002/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Empty Seat (Monday, January 12, 2004)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b009/c002/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Confrontation on Lisa Court",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b009/c002/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Final, Desperate Call",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b009/c002/p004": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: The Letter",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b009/c003/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: A Family's Resolve (January 2004)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b009/c003/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Demand",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b009/c003/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Truth in a Letter",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b009/c003/p004": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: The Unraveling and The Aftermath",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b009/c003/p005": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 5: A New Beginning",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b009/c003/p006": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 6: Vera\u2019s Reckoning \u2013 A Mother's Fury, A Daughter's Ruin",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b009/c003/p007": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 7: Un Avenir Sans Fardeau (A Future Unburdened)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b009/c003/p008": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 8: Building the Sanctuary",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b009/c004/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Morning Commute (Monday, January 12, 2004)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b009/c004/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: A Different First Day",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b009/c004/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Conversation",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b009/c004/p004": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: An Investment in the Future",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b009/c004/p005": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 5: Building a Foundation",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b009/c004/p006": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 6: The Breaking Point",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b009/c005/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Excitement and the Learning Curve",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b009/c005/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Reality Check",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b009/c005/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Brush with Danger",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b009/c005/p004": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: The Discovery",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b009/c005/p005": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 5: Project Freedom",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b009/c005/p006": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 6: Shopping for a Van",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b009/c006/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: A Quiet Day Trip",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b009/c006/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Family Investment",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b009/c006/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: Domestic Details",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b009/c006/p004": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: A Return to the Water",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b009/c006/p005": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 5: The Quiet Before the Move",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b009/c006/p006": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 6: The Three Musketeers",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b009/c007/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Keys (Friday, April 2, 2004)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b009/c007/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The First Look",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b009/c007/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Big Move (Saturday, April 3, 2004)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b009/c007/p004": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: The First Night",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b009/c007/p005": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 5: A New (Old) Trusted Friend ",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b009/c008/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: A Marathon, Not a Sprint (Summer 2004)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b009/c008/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: Technological Bandages",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b009/c008/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: Freedom Arrives",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b009/c008/p004": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: The Expected Rejection",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b009/c008/p005": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 5: The Fight Begins",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b009/c008/p006": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 6: A Fragile Sanctuary",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b009/c008/p007": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 7: The Aftermath",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b009/c008/p008": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 8: The Journey Home",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b009/c008/p009": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 9: The Approval",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b010/c001/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: Delivery Day (Fall 2005)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b010/c001/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The First Morning",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b010/c001/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The First Movie Night",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b010/c001/p004": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: A New Day on Campus",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b010/c002/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Power Couple of Campus",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b010/c002/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: An Unwavering Bond",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b010/c002/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: A Healthy Friendship",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b010/c002/p004": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: The Final Push",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b010/c002/p005": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 5: Graduation Day",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b010/c003/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Launch (Summer 2006)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b010/c003/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Journey North",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b010/c003/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: Bienvenue au Qu\u00e9bec (Welcome to Qu\u00e9bec)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b010/c003/p004": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: An Aunt's Welcome and a Modern Warning (Summer 2006)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b010/c003/p005": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 5: An Aunt's Advice and a New Itinerary (Summer 2006)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b010/c003/p006": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 6: A Sweet Discovery (Summer 2006)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b010/c003/p007": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 7: A Walk Through a Changed Town (Summer 2006)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b010/c003/p008": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 8: One Last Line to Cross (Summer 2006)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b010/c003/p009": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 9: A Homecoming of the Heart (Summer 2006)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b010/c003/p010": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 10: Navigating the City (Summer 2006)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b010/c003/p011": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 11: Tensions at the Deli (Summer 2006)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b010/c003/p012": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 12: A Quiet Day of Decompression (Summer 2006)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b010/c003/p013": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 13: A Family Farewell (Summer 2006)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b010/c003/p014": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 14: One Last Night in Canada (Summer 2006)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b010/c003/p015": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 15: Echoes on the Line (Summer 2006)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b010/c003/p016": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 16: A Taste of Vermont (Summer 2006)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b010/c003/p017": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 17: A New Dream on the Boardwalk (Summer 2006)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b010/c003/p018": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 18: The Long Road Home (Summer 2006)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b010/c004/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: Operation: Pacific Northwest",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b010/c004/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Quantum Opportunity",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b010/c004/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Great Commute Debate",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b010/c004/p004": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: The Final Summit",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b010/c004/p005": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 5: The Confirmation",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b010/c004/p006": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 6: The Last Swim",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b010/c004/p007": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 7: Weathering the Storm",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b011/c001/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Launch (Summer 2006)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b011/c001/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Open Road",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b011/c001/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: Washington",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b011/c001/p004": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: Seattle",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b011/c001/p005": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 5: Home",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b011/c001/p006": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 6: The Unpacking",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b011/c001/p007": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 7: The First Adventure",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b011/c001/p008": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 8: A Day in the City",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b011/c001/p009": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 9: The Welcome Home",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b011/c002/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Micro-Test (Late 2006)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b011/c002/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Setup (A Week Later)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b011/c002/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Inhabitants",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b011/c002/p004": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: A Quiet Success",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b011/c003/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: Weekend Warriors (2007)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b011/c003/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Beagle and the Blueprint (Spring 2008)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b011/c003/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The First Test and a New Role",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b011/c003/p004": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Accessibility Specialist (2008-2009)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b011/c003/p005": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Non-Profit Architects",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b011/c003/p006": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Turning Point (Late 2009)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b011/c003/p007": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: The Long Road to a Dream (January 2010)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b013/c001/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Matchup is Set (February 26, 2010)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b013/c001/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: La Taverne des Voyageurs (2010)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b013/c001/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Spoils of Victory (2010)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b013/c001/p004": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: The Uniform of Defeat (2010)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b013/c001/p005": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 5: Opening a Cross-Border Life (2010)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b013/c001/p006": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 6: The Preclearance Predicament (2010)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b013/c002/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Accident (Spring 2010)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b013/c002/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: A Different Kind of Hospital Visit",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b013/c002/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Long Road Ahead",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b013/c002/p004": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: Setback One - The Infection",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b013/c002/p005": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 5: Setback Two - The Catastrophe",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b013/c002/p006": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 6: The Depths of Despair",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b013/c002/p007": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 7: The Slow Path to Healing",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b013/c002/p008": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 8: The Hospital Revelation",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b014/c001/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Blueprint of Home (Spring 2010)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b014/c001/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: A Border of Our Own (Spring 2010)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b014/c002/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Peace Arch Crossing (2010)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b014/c002/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Peak of the City (2010)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b015/c001/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Proposition",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b015/c001/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Family Announcement",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b015/c002/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: Boots on the Ground",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b015/c002/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Attire",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b015/c002/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: Writing the Vows",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b015/c002/p004": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: The Vow Script",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b015/c002/p005": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 5: The Birth of an Idea",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b015/c002/p006": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 6: A Prototype is Born",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b015/c002/p007": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 7: A Brand is Born",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b015/c002/p008": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 8: The Art Director",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b015/c002/p009": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 9: Boots on the Ground Report",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b015/c002/p010": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 10: The Point of No Return",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b015/c003/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Journey East",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b015/c003/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: Welcome to the Virginia Base Camp",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b015/c003/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: A Day in the Virginia Base Camp",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b015/c003/p004": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: The Journey North",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b015/c004/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: Les Pr\u00e9paratifs (Getting Ready)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b015/c004/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: La C\u00e9r\u00e9monie (The Ceremony)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b015/c004/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: La R\u00e9ception (The Reception)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b015/c004/p004": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: La Premi\u00e8re Danse (The First Dance)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b015/c004/p005": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 5: Les Danses d'Honneur (The Dances of Honor)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b015/c004/p006": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 6: L'Unit\u00e9 Ins\u00e9parable (The Unbreakable Unit)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b015/c004/p007": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 7: Les Discours (The Toasts)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b015/c004/p008": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 8: La Coupe du G\u00e2teau (The Cutting of the Cake)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b015/c004/p009": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 9: La Poutine C\u00e9l\u00e9bratoire (The Celebratory Poutine)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b015/c004/p010": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 10: La Derni\u00e8re Danse (The Last Dance)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b015/c004/p011": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 11: La Fin de la Soir\u00e9e (The End of the Night)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b015/c004/p012": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Bonus Scene: A View from Portsmouth",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b015/c005/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Morning After",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b015/c005/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: A Taste of the Townships",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b015/c005/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Promise to Return",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b015/c005/p004": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: The Honeymoon",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b015/c005/p005": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 5: The Departure",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b016/c001/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Boston Showdown (Fall 2011)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b016/c001/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Boston Victory Parade (Fall 2011)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b016/c001/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Long Drive of Shame (The Next Day)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b016/c001/p004": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: Breakfast with the Enemy",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b017/c001/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The World Shuts Down (March 2020)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b017/c001/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Race to the Border",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b017/c001/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: Stranded in Vermont",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b017/c001/p004": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: The Airport and the Call",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b017/c001/p005": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 5: The Rescue Mission",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b017/c001/p006": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 6: A Virginia Haven",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b017/c001/p007": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 7: An Unexpected Family Lockdown (March 2020)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b017/c001/p008": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 8: The Cross-Country Problem",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b017/c001/p009": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 9: The Long Road Home (March/April 2020)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b017/c001/p010": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 10: A Birthday in Lockdown (April 8, 2020)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b017/c001/p011": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 11: A Full House (April 2020)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b017/c002/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The First Sign (April 2020)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b017/c002/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Diagnosis",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b017/c002/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Lockdown Within the Lockdown",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b017/c002/p004": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: The Fever Breaks",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b017/c003/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The New Normal (Late Spring/Early Summer 2020)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b017/c003/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The First Venture Out (Summer 2020)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b018/c001/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Leap of Faith (Spring 2022)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b018/c001/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Grant (Late 2022)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b018/c002/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: A Much-Needed Breather (Early December 2022)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b018/c002/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Return (December 2022)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b018/c002/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Boxing Day Mission",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b018/c002/p004": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: The Architect Returns",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b018/c002/p005": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 5: A Mission Solidified",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b018/c002/p006": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 6: Return to Lynnwood",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b018/c003/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Call and the Land",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b018/c003/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: From Blueprint to Reality (Spring 2023)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b018/c004/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The 20-Year Reunion (Fall 2023)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b018/c004/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: A New Home Base",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b018/c004/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Debriefing",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b018/c004/p004": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: The Next Platform",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b018/c004/p005": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 5: The Flight Home",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b018/c005/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: A Cross-Platform Future",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b018/c005/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The First Prototype",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b018/c006/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: A Montage of Progress (2024)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b018/c006/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The First Enterprise",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b018/c006/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: Acceleration",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b018/c006/p004": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: A Living Building",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b018/c006/p005": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 5: The Physical Toll (Late 2027)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b018/c006/p006": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 6: A New Horizon",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b018/c006/p007": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 7: The Rejection",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b018/c006/p008": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 8: The Rejection Letter",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b018/c007/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: An Unexpected Encounter (Lynnwood, Washington \u2013 Summer 2028)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b018/c007/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: A Family Reunited, A Tour Begins",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b018/c007/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Directors\u2019 Work",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b019/c001/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: A Quiet Question (Summer 2030)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b020/c001/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: A Conscious Goodbye (January 2057)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b020/c001/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: Last Wishes",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b020/c001/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Last Goodbye",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b020/c001/p004": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: A Promise Kept",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b020/c001/p005": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 5: The Last Guardian",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/alex-chloe/b020/c001/p006": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 6: A Service for Three",
+        "theme": ""
+    }
+}

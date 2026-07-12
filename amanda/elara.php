@@ -92,6 +92,14 @@ function resolveAsset($map, $currentUri) {
     return null;
 }
 
+// --- HELPER: SLUGIFY STRINGS FOR URL MATCHING ---
+function slugify($string) {
+    // Replace non-letter/number characters with a dash, convert to lowercase
+    $slug = strtolower(trim(preg_replace('/[^A-Za-z0-9-]+/', '-', $string), '-'));
+    // Remove duplicate dashes
+    return preg_replace('/-+/', '-', $slug);
+}
+
 // --- 3. SMART ROUTER LOGIC ---
 
 // A. Check for Explicit Configuration
@@ -109,6 +117,46 @@ if (!isset($pageConfig['view'])) {
         } elseif (file_exists(ROOT_PATH . '/' . $potentialPath . '/home.php')) {
             $pageConfig['view'] = $potentialPath . '/home';
             $isIndexPage = true;
+        }
+    }
+}
+
+// B.2 DYNAMIC NARRATIVE ROUTING (The Katie.json Intercept)
+if (!isset($pageConfig['view'])) {
+    $katiePath = ROOT_PATH . '/books/katie.json';
+    
+    if (file_exists($katiePath)) {
+        $katie = json_decode(file_get_contents($katiePath), true);
+        
+        if (json_last_error() === JSON_ERROR_NONE) {
+            // Trim slashes from the requested URI to match cleanly
+            $cleanUri = trim($request_uri, '/');
+            
+            // Loop through Katie to find a matching URL structure
+            foreach ($katie as $book) {
+                $bookSlug = slugify($book['book_title']);
+                
+                foreach ($book['chapters'] as $chapter) {
+                    $chapSlug = slugify($chapter['chap_title']);
+                    
+                    foreach ($chapter['parts'] as $part) {
+                        $partSlug = slugify($part['part_title']);
+                        
+                        // Construct the expected URL for this part
+                        $expectedUri = "{$bookSlug}/{$chapSlug}/{$partSlug}";
+                        
+                        if ($cleanUri === $expectedUri) {
+                            // MATCH FOUND! Tell Elara to use the book viewer
+                            $pageConfig['view'] = 'pages/book_viewer';
+                            $pageConfig['title'] = $part['part_title'] . ' - ' . $book['book_title'];
+                            
+                            // Pass the actual Markdown file path to the viewer
+                            define('ACTIVE_MD_FILE', $part['file_path']);
+                            break 3; // Break out of all loops
+                        }
+                    }
+                }
+            }
         }
     }
 }

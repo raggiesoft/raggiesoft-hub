@@ -1,0 +1,171 @@
+{
+    "common": {
+        "site": "raggiesoft-books",
+        "theme": "",
+        "siteName": "nate",
+        "showSidebar": true,
+        "sidebar": "raggiesoft-books/sidebar-book",
+        "headerMenu": "raggiesoft-books/header-books",
+        "footer": "raggiesoft-books/footer-books"
+    },
+    "/raggiesoft-books/books/nate": {
+        "view": "pages/raggiesoft-books/books/overview",
+        "title": "nate - Library",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/nate/b001/c001/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Pixelated Runway (3:30 PM)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/nate/b002/c001/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: Arrival at the Pathfinder Terminal (2:15 PM)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/nate/b002/c001/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Holding Pattern (2:25 PM)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/nate/b002/c001/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Extraction (2:58 PM)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/nate/b002/c001/p004": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: The Confession (3:15 PM)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/nate/b002/c001/p005": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 5: The Drive Home (3:45 PM)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/nate/b002/c001/p006": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 6: The Fortress (4:10 PM)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/nate/b002/c001/p007": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 7: The Reset (4:25 PM)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/nate/b002/c001/p008": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 8: The Echoes of the Matriarchy (5:30 PM)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/nate/b002/c001/p009": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 9: The 8:38 Sanctuary (6:15 PM)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/nate/b002/c001/p010": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 10: The System Overload (6:45 PM)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/nate/b002/c001/p011": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 11: The Garrison Logistics (Saturday, 9:00 AM)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/nate/b002/c002/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Garrison Logistics (9:00 AM)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/nate/b002/c002/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The St. Louis Convergence (10:15 AM CST)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/nate/b002/c002/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The ORF Strategy (11:15 AM)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/nate/b002/c002/p004": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: The Route to ORF (1:00 PM)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/nate/b002/c002/p005": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 5: The Fortress Reassembled (2:25 PM)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/nate/b002/c003/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Phalanx of Chesapeake Bay Mall (1:10 PM)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/nate/b002/c003/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Food Court Command Center (1:15 PM)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/nate/b002/c003/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Descent and the Plush Mountain (2:00 PM)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/nate/b002/c003/p004": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: The CVTA Extraction (3:15 PM)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/nate/b003/c001/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Inbound 25 (11:00 AM)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/nate/b003/c001/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: Sanctuary at Waverly's (11:45 AM)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/nate/b003/c001/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Architecture of the Fortress (8:30 PM)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/nate/b003/c002/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The One-Mile Detour (6:30 AM)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/nate/b003/c002/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: MATH 03 (8:50 AM)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/nate/b003/c002/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: HST 111 - Ancient Rome (10:00 AM)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/nate/b003/c002/p004": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: The Cafeteria Catalyst (11:45 AM)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/nate/b003/c002/p005": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 5: The Assessment (12:48 PM)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/nate/b003/c002/p006": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 6: The Aftershock (Saturday, August 25, 2007)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/nate/b003/c003/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: ENG 111 (12:50 PM)",
+        "theme": ""
+    }
+}

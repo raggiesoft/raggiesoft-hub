@@ -1,0 +1,2231 @@
+{
+    "common": {
+        "site": "raggiesoft-books",
+        "theme": "",
+        "siteName": "The Rachel Narrative",
+        "showSidebar": true,
+        "sidebar": "raggiesoft-books/sidebar-book",
+        "headerMenu": "raggiesoft-books/header-books",
+        "footer": "raggiesoft-books/footer-books"
+    },
+    "/raggiesoft-books/books/the-rachel-narrative": {
+        "view": "pages/raggiesoft-books/books/overview",
+        "title": "The Rachel Narrative - Library",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b001/c001/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Sensory Avalanche \u2013 9:00 AM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b001/c002/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: Sanctuary \u2013 9:30 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b001/c002/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The New Arrangement \u2013 10:30 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b001/c003/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Discovery \u2013 7:00 AM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b001/c003/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Breakfast Table \u2013 9:00 AM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b001/c003/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: Emerald Creek Mall \u2013 1:00 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b001/c003/p004": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: The Doll Aisle \u2013 1:15 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b001/c003/p005": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 5: The Neon Quarter \u2013 1:45 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b001/c003/p006": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 6: Not Proper \u2013 2:30 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b001/c003/p007": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 7: The Bantam Workaround \u2013 3:15 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b001/c003/p008": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 8: The Father's Perspective \u2013 3:30 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b002/c001/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Safe Harbor \u2013 4:55 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b002/c001/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Shift \u2013 5:00 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b002/c001/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Mechanics of Spirit \u2013 5:05 PM to 6:00 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b002/c001/p004": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: The Pal and the Perimeter \u2013 6:05 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b002/c001/p005": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 5: The Perimeter Secured \u2013 6:25 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b002/c001/p006": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 6: The Living Room Bivouac \u2013 7:30 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b002/c001/p007": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 7: The Core Pack \u2013 9:00 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b002/c002/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Inventory \u2013 9:00 AM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b002/c002/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Physicality of Spirit \u2013 10:15 AM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b002/c002/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Deafening Silence \u2013 10:30 AM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b002/c002/p004": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: The 3rd Dan Disaster \u2013 11:45 AM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b002/c002/p005": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 5: The Genesis of Hatred \u2013 12:05 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b002/c003/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Mirrored Room \u2013 4:00 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b002/c003/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Missing Cup \u2013 4:15 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b002/c003/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: Breaking the Silence \u2013 4:55 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b002/c003/p004": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: The Anchor and the Ego \u2013 5:00 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b002/c003/p005": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 5: The Top Row \u2013 5:10 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b002/c003/p006": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 6: The Delaney Street Revelation \u2013 5:45 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b002/c003/p007": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 7: Wash the Dojang Away \u2013 6:00 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b002/c003/p008": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 8: The Dinner Table \u2013 6:30 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b002/c003/p009": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 9: The Code Wizard \u2013 7:30 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b002/c003/p010": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 10: The Solstice Myth \u2013 8:30 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b002/c003/p011": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 11: The Twin-Bed Geometry \u2013 10:45 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b002/c004/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Latchkey Captain \u2013 8:30 AM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b002/c004/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Live-Action Tape \u2013 10:00 AM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b002/c004/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Highland Leviathan \u2013 11:45 AM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b002/c004/p004": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: The Canvas Fortress \u2013 1:00 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b002/c004/p005": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 5: Shore Power \u2013 7:00 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b002/c004/p006": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 6: The Ball Pit Strategy \u2013 8:30 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b002/c004/p007": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 7: Lights Out \u2013 8:45 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b002/c005/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: Breaking Camp \u2013 7:30 AM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b002/c005/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Living Room Dojang \u2013 11:30 AM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b002/c005/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Neurological Wall \u2013 11:45 AM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b002/c005/p004": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: The Observation Deck \u2013 1:30 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b002/c005/p005": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 5: The Staging Area \u2013 4:30 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b002/c005/p006": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 6: The Core Check \u2013 5:00 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b002/c005/p007": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 7: The Rest of the Hour \u2013 5:30 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b002/c005/p008": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 8: The Observation Deck \u2013 6:30 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b002/c005/p009": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 9: The Broken Routine \u2013 7:00 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b002/c005/p010": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 10: The Adult Echo Chamber \u2013 7:15 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b002/c005/p011": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 11: The Locked Door \u2013 7:45 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b002/c005/p012": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 12: The Fracture \u2013 8:15 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b002/c006/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Physical Proof \u2013 8:00 AM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b002/c006/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Convergence \u2013 10:30 AM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b002/c006/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Children's Hospital \u2013 11:05 AM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b002/c006/p004": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: The Admission \u2013 1:00 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b002/c006/p005": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 5: The ICU Encounter \u2013 3:30 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b002/c006/p006": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 6: The Statement \u2013 4:30 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b002/c006/p007": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 7: The Pack Assembles \u2013 6:15 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b002/c006/p008": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 8: The Empty Mats \u2013 5:15 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b002/c006/p009": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 9: The Ultimate Bow \u2013 6:45 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b002/c006/p010": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 10: The Promise \u2013 6:50 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b002/c006/p011": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 11: The Anchor \u2013 7:15 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b002/c006/p012": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 12: The Perimeter \u2013 8:00 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b002/c006/p013": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 13: The Night Shift \u2013 9:00 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b002/c007/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: Kehr\u2019s Sign \u2013 7:30 AM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b002/c007/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Second Snap \u2013 7:45 AM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b002/c007/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Broken Anchor \u2013 10:00 AM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b002/c007/p004": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: The Transport \u2013 1:30 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b002/c007/p005": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 5: The Protocols of Base Camp \u2013 6:00 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b002/c007/p006": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 6: The Night Watch \u2013 10:30 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b002/c008/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: Bear and Bug \u2013 8:00 AM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b002/c008/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Morning Logistics \u2013 9:00 AM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b002/c008/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Interrogation \u2013 10:30 AM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b002/c008/p004": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: Stripping the Titles \u2013 10:15 AM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b002/c008/p005": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 5: The Outer Perimeter \u2013 11:30 AM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b002/c008/p006": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 7: The Hygiene Protocol \u2013 8:00 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b002/c008/p007": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 8: The Night Watch \u2013 8:30 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b003/c001/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Weight of September \u2013 7:00 AM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b003/c001/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Gavel \u2013 9:00 AM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b003/c001/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The War Room \u2013 9:00 AM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b003/c001/p004": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: The Meltdown \u2013 10:45 AM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b003/c001/p005": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 5: Safe Harbor \u2013 1:00 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b003/c001/p006": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 6: The Full Perimeter \u2013 2:30 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b003/c001/p007": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 7: The Art of Letting Go \u2013 4:30 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b003/c001/p008": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 8: The Cost of the War \u2013 5:15 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b003/c001/p009": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 9: Nightfall \u2013 7:30 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b003/c002/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Transfer of Trust \u2013 8:30 AM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b003/c002/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Vault and the VHS \u2013 9:30 AM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b003/c002/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The First Lift \u2013 12:00 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b003/c002/p004": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: Silly Fill-Ins and Mending \u2013 1:00 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b003/c002/p005": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 5: The Hum of the House \u2013 4:00 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b003/c002/p006": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 6: The Night Shift \u2013 7:00 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b003/c003/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Sunday Shift \u2013 8:00 AM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b003/c003/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Rootkit \u2013 1:05 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b003/c003/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Canine Guard \u2013 2:30 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b003/c003/p004": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: The Gentle Lift \u2013 8:00 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b003/c003/p005": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 5: The Flat Relief \u2013 8:30 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b003/c004/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The First Bell \u2013 7:30 AM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b003/c004/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Assessment \u2013 9:00 AM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b003/c004/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Brain Break \u2013 10:15 AM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b003/c004/p004": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: The Physics of the Lift \u2013 10:20 AM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b003/c004/p005": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 5: The Independent System \u2013 11:15 AM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b003/c004/p006": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 6: The Changing of the Guard \u2013 11:55 AM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b003/c004/p007": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 7: The Afternoon Rest \u2013 12:10 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b003/c004/p008": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 8: The Way of Seondu \u2013 1:00 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b003/c005/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Autumn Shift \u2013 8:30 AM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b003/c005/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Breach \u2013 9:00 AM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b003/c005/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Soot and the Sound \u2013 9:30 AM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b003/c005/p004": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: Fortifying the Perimeter \u2013 10:30 AM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b003/c006/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Wednesday Rhythm \u2013 4:00 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b003/c006/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Envelope \u2013 4:20 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b003/c006/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: Visual Proof \u2013 4:25 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b003/c006/p004": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: Closure \u2013 4:40 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b003/c007/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: A Full Perimeter \u2013 5:00 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b003/c007/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Lead Guard \u2013 5:30 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b003/c007/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Phantom Anchor \u2013 5:45 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b003/c008/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Midnight Blue Shield \u2013 4:30 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b003/c008/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Voice of Korea \u2013 4:35 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b003/c008/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Shadow Arts \u2013 4:45 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b003/c008/p004": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: The Internal Kihap \u2013 5:15 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b003/c008/p005": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 5: The Official Capacity \u2013 5:30 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b004/c001/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Friday Commute \u2013 3:40 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b004/c001/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Homework Hurdle \u2013 5:15 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b004/c001/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: Deploying Base Camp \u2013 8:00 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b004/c002/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Departure Protocol \u2013 6:30 AM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b004/c002/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Data Shift \u2013 7:30 AM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b004/c002/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Flash and the Photograph \u2013 8:00 AM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b004/c002/p004": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: The Sovereign Palace Theater \u2013 9:00 AM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b004/c002/p005": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 5: The Loch Serpent \u2013 9:15 AM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b004/c002/p006": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 6: The Iron Aeronaut \u2013 10:00 AM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b004/c002/p007": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 7: Heart Attack Hill \u2013 11:30 AM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b004/c002/p008": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 8: Josephine\u2019s and the Ghost \u2013 12:30 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b004/c002/p009": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 9: The Timber Mill Plunge \u2013 12:45 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b004/c002/p010": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 10: The Translation in the Grand Hall \u2013 1:30 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b004/c002/p011": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 11: The Speed of Fright \u2013 2:30 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b004/c002/p012": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 12: The Siege Engine \u2013 3:15 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b004/c002/p013": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 13: The Imperial Rapids \u2013 4:45 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b004/c002/p014": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 14: The Sovereign Palace Theater \u2013 5:30 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b004/c002/p015": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 15: The Missing Variable \u2013 6:15 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b004/c002/p016": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 16: The Flawless Equation \u2013 7:00 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b004/c002/p017": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 17: The Mathematics of Victory \u2013 8:30 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b004/c002/p018": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 18: The Expansion of the Perimeter \u2013 10:00 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b004/c002/p019": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 19: The Immutable Geometry \u2013 10:30 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b004/c003/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Sleepover Calculation \u2013 7:15 AM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b005/c001/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: Jessica\u2019s Wake Up Call \u2013 6:00 AM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b005/c001/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: Band Camp (8:00 AM)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b005/c002/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: Black Friday \u2013 4:15 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b005/c002/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: Tidewater General \u2013 5:15 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b005/c002/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Trauma Bay \u2013 7:30 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b005/c002/p004": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: The Empty House \u2013 8:00 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b005/c003/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Daytime Warden \u2013 8:00 AM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b005/c003/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Logic Blueprint \u2013 10:30 AM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b005/c004/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Accessibility Calculation \u2013 8:30 AM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b005/c004/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Biological Anchors \u2013 9:35 AM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b005/c004/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Logistics of Hope \u2013 4:15 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b005/c004/p004": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: The Honorary Lifters \u2013 5:00 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b005/c004/p005": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 5: The Perimeter Defense \u2013 5:27 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b005/c004/p006": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 6: The Alibi and the Feast \u2013 5:42 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b005/c004/p007": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 7: The System Overload \u2013 6:10 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b005/c004/p008": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 8: The Sensory Safe Menu \u2013 7:00 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b005/c004/p009": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 9: The Perimeter Epiphany \u2013 7:30 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b005/c004/p010": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 10: The Santa Stakeout \u2013 7:50 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b005/c005/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Phantom Drop \u2013 4:21 AM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b005/c005/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Green Light \u2013 6:42 AM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b005/c005/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Drop Zone \u2013 7:00 AM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b005/c005/p004": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: The Sentinel\u2019s Briefing \u2013 9:00 AM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b005/c005/p005": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 5: The Social Algorithm \u2013 11:45 AM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b005/c005/p006": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 6: The First Crush \u2013 12:00 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b005/c005/p007": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 7: The Christmas Tree Portrait \u2013 12:10 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b005/c005/p008": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 8: The Emotional High \u2013 12:15 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b005/c005/p009": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 9: The Missing Exposure \u2013 1:30 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b005/c005/p010": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 10: The Syntax of Survival \u2013 2:30 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b005/c005/p011": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 11: The Bare-Metal Blueprint \u2013 4:00 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b005/c005/p012": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 12: Christmas Day Dinner \u2013 5:00 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b005/c005/p013": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 13: The Infinite Loop \u2013 7:00 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b005/c005/p014": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 14: The Night Watch \u2013 10:30 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b005/c006/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Bare Metal (1:00 AM)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b005/c006/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: Severing the Runtime (1:45 AM)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b005/c006/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Hold (3:00 AM)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b006/c001/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Desktop Under the Stairs \u2013 4:00 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b006/c001/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Quantum Packet \u2013 4:10 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b006/c001/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Long-Distance Loophole \u2013 4:30 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b006/c001/p004": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: The Vanguard \u2013 4:45 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b006/c001/p005": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 5: The Mirror \u2013 4:50 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b006/c002/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Wheelchair Lift \u2013 4:00 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b006/c002/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Cafeteria Serenade \u2013 6:30 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b006/c002/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Lido Deck \u2013 8:00 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b006/c003/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Crown Burger Trigger \u2013 8:30 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b007/c001/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Aunt Janet Extraction \u2013 4:30 AM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b007/c001/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Check-In \u2013 5:15 AM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b007/c001/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Perimeter Breach \u2013 5:30 AM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b007/c001/p004": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: The Vanguard Flight \u2013 6:15 AM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b007/c001/p005": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 5: The Prismatic Corridor \u2013 8:45 AM (CST)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b007/c001/p006": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 6: The Sunlit Valley \u2013 10:30 AM (CST)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b007/c002/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: Reclaiming the Armor \u2013 1:00 PM (PST)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b007/c002/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Breda Lift \u2013 1:30 PM (PST)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b007/c002/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Lobby Perimeter \u2013 2:15 PM (PST)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b007/c002/p004": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: The Room 412 Perimeter \u2013 3:15 PM (PST)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b007/c003/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The ADA Fortress \u2013 8:00 AM (PST)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b007/c003/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Cascade Haul \u2013 1:00 PM (PST)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b007/c003/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Topography Lesson \u2013 4:00 PM (PST)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b007/c003/p004": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: The Ave \u2013 6:30 PM (PST)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b007/c003/p005": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 5: The Perimeter Handoff \u2013 8:00 PM (PST)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b007/c003/p006": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 6: The Empty Flank \u2013 9:30 PM (PST)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b007/c004/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Reassembled Pack \u2013 7:00 AM (PST)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b007/c004/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Concrete Canyons \u2013 11:30 AM (PST)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b007/c004/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Puget Place Gauntlet \u2013 12:30 PM (PST)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b007/c004/p004": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: The Saltwater Grid \u2013 1:15 PM (PST)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b007/c004/p005": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 5: The Bremerton Landing \u2013 2:30 PM (PST)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b008/c001/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: Awakening My Sister \u2013 6:00 AM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b008/c001/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Sentinel and the Ghost \u2013 7:45 AM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b008/c001/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Sanctuary Shatters \u2013 8:45 AM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b008/c001/p004": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: The Commercial Carpet \u2013 9:00 AM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b008/c001/p005": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 5: The Anchor and the Alpine Snowdrop \u2013 9:15 AM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b008/c001/p006": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 6: The Muscle Memory Map \u2013 10:00 AM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b008/c001/p007": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 7: The Stage Door Fortress \u2013 12:00 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b008/c001/p008": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 8: The Afternoon Metronome \u2013 1:00 PM to 5:00 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b008/c001/p009": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 9: 1802 Rich Court \u2013 5:15 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b008/c001/p010": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 10: The Giant Bed \u2013 7:30 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b009/c001/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: Vacation from Parents \u2013 10:30 AM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b009/c001/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: Afternoon at the Mall \u2013 1:00 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b009/c001/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: Up All Night Party \u2013 8:00 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b009/c002/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Elephant in the Room \u2013 8:30 AM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b009/c002/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Morning Routine \u2013 9:00 AM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b009/c002/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Cross-Country Bargain \u2013 1:00 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b010/c001/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: Rachel's Fury \u2013 5:30 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b010/c001/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Anchor \u2013 6:00 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b010/c001/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Push-Button Lock \u2013 6:45 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b010/c002/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Guidance Office \u2013 6:30 AM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b010/c003/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Eerie Silence \u2013 4:00 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b010/c003/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Wooden Barricade \u2013 5:30 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b010/c003/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Second Barricade \u2013 6:30 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b010/c003/p004": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: System Shutdown \u2013 8:00 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b010/c004/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Broken Routine \u2013 5:45 AM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b010/c004/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Afternoon Siege \u2013 11:30 AM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b010/c005/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Bleeding Finances \u2013 2:15 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b010/c005/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Living Hell \u2013 2:30 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b010/c006/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Bright Idea \u2013 8:00 AM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b010/c006/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Assumption \u2013 8:15 AM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b010/c006/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Calling Cards \u2013 8:30 AM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b011/c001/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: Arrival at PDX \u2013 2:30 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b011/c001/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Columbia Transit Service \u2013 3:15 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b011/c001/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: Sibling Cuddles \u2013 5:00 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b011/c002/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: Left Coast Time \u2013 7:00 AM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b011/c002/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Burger Arch \u2013 8:30 AM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b011/c002/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Hard Conversation \u2013 9:15 AM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b011/c003/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Transit Protocol \u2013 10:00 AM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b011/c003/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Largest Mall in Oregon \u2013 11:00 AM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b011/c003/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Investment \u2013 12:30 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b011/c003/p004": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: The Federal Way Proposal \u2013 4:00 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b011/c004/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Quantum Shield \u2013 10:00 AM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b011/c004/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Status Quo \u2013 Tuesday, November 20th, 3:15 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b011/c005/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Legal Stranger \u2013 10:00 AM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b011/c005/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Aero-Transit Packet \u2013 11:15 AM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b011/c005/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Apartment Confrontation \u2013 4:00 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b011/c005/p004": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: The Assembly Line \u2013 6:00 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b011/c005/p005": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 5: The Escrow Anchor \u2013 8:00 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b011/c005/p006": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 6: The Regulated Sanctuary \u2013 10:00 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b011/c006/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Hudson's Parade \u2013 9:00 AM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b011/c006/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Thanksgiving Ultimatum \u2013 10:30 AM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b011/c006/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Signature Act \u2013 10:45 AM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b011/c006/p004": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: The Shape of Tradition \u2013 11:45 AM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b011/c006/p005": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 5: The Heavy Lifting \u2013 12:30 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b011/c006/p006": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 6: The 101% Secret \u2013 1:30 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b011/c006/p007": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 7: The Final Push \u2013 3:30 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b011/c007/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Reverse Route \u2013 8:00 AM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b011/c007/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Security Checkpoint \u2013 1:00 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b012/c001/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The First Class Algorithm \u2013 6:00 AM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b012/c001/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Priority Perimeter \u2013 6:45 AM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b012/c001/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Four-Hour Buffer \u2013 7:00 AM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b012/c001/p004": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: The Aisle Transfer \u2013 10:45 AM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b012/c001/p005": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 5: The Cabin Sanctuary \u2013 11:45 AM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b012/c001/p006": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 6: The Prismatic Corridor \u2013 4:30 PM (CST)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b012/c001/p007": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 7: The System Crash \u2013 4:45 PM (CST)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b012/c001/p008": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 8: The Joyful Overload \u2013 5:00 PM (CST)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b012/c001/p009": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 9: The Midwestern Sanctuary \u2013 5:15 PM (CST)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b012/c002/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: Sibling Reunification \u2013 9:30 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b012/c002/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Sibling Perimeter \u2013 9:45 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b012/c002/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Northern Star \u2013 10:45 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b012/c003/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Three-Hour Shift \u2013 8:30 AM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b013/c001/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Last Morning \u2013 7:30 AM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b013/c001/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Baldwin Briefing \u2013 8:45 AM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b013/c001/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Frictionless Trap \u2013 9:15 AM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b013/c001/p004": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: The Transit Grid \u2013 2:00 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b013/c001/p005": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 5: The Logistical Paradox \u2013 5:30 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b013/c001/p006": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 6: The Extraction Plan \u2013 7:30 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b013/c001/p007": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 7: The Phone Call \u2013 9:02 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b013/c001/p008": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 8: The Bare Mechanics \u2013 9:45 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b013/c002/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Best Tech Ambush \u2013 1:15 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b013/c002/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Malicious Code \u2013 1:35 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b013/c002/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Hardware Check \u2013 2:45 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b013/c002/p004": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: The Holding Pattern \u2013 3:15 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b013/c002/p005": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 5: The Inventory Protocol \u2013 4:00 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b013/c002/p006": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 6: The On-Us Override \u2013 5:15 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b013/c002/p007": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 7: The Initial Provisioning \u2013 6:30 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b013/c002/p008": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 8: The New Parameter \u2013 7:30 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b013/c003/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Morning Perimeter \u2013 7:30 AM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b014/c001/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Last of the Pack \u2013 8:00 AM (EDT)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b014/c001/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Solo Transit \u2013 12:15 PM (EDT)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b014/c001/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Time Sync \u2013 1:30 PM (EDT)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b014/c001/p004": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: The Ticket Line \u2013 6:45 PM (EDT)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b014/c001/p005": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 5: The Midtown Transfer \u2013 9:00 PM (EDT)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b014/c002/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Morning Call \u2013 7:00 AM (EDT)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b015/c001/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Ride Free Area \u2013 3:30 PM (PST)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b015/c001/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: King Street Station \u2013 4:15 PM (PST)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b015/c001/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Hostile Perimeter \u2013 6:30 PM (PST)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b015/c001/p004": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: Pizza Diplomacy \u2013 7:15 PM (PST)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b015/c001/p005": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 5: The Ascent \u2013 8:30 PM (PST)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b015/c001/p006": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 6: The Air Mattress Barricade \u2013 9:30 PM (PST)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b015/c001/p007": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 7: Stille Nacht \u2013 10:30 PM (PST)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b015/c002/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Kent Station Transfer \u2013 8:00 AM (PST)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b015/c002/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: Jessica's Train Ride \u2013 8:15 AM (PST)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b015/c002/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: Off to Pierce County \u2013 8:15 AM (PST)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b015/c002/p004": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: Quantum Reunion \u2013 11:45 AM (PST)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b015/c002/p005": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 5: The Shattered Fog \u2013 11:45 PM (PST)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b015/c003/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: Forced Exit \u2013 4:00 AM (PST)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b015/c003/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Renton Transfer \u2013 6:00 AM (PST)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b015/c003/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Broil's Run \u2013 12:15 PM (PST)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b015/c003/p004": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: The Corporate Perimeter \u2013 1:30 PM (PST)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b015/c003/p005": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 5: The Clarity Upgrade \u2013 2:30 PM (PST)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b015/c003/p006": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 6: The Software Payload \u2013 3:00 PM (PST)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b015/c003/p007": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 7: The Southern Cavalry \u2013 2:00 PM (PST)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b015/c003/p008": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 8: The Physical Evidence \u2013 5:30 PM (PST)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b015/c003/p009": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 9: The Pack Secures the Perimeter \u2013 6:30 PM (PST)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b015/c004/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Liquid Rebellion \u2013 9:00 AM (PST)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b015/c004/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Route 106 Escort \u2013 11:30 AM (PST)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b015/c004/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Victory Meal \u2013 12:00 PM (PST)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b015/c004/p004": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: Forging the Armor \u2013 1:00 PM (PST)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b015/c004/p005": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 5: The Mountain Prospect \u2013 2:30 PM (PST)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b015/c004/p006": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 6: The First Citizen \u2013 4:30 PM (PST)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b015/c004/p007": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 7: The Lost Sentinel \u2013 6:00 PM (PST)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b015/c004/p008": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 8: The Perimeter Holds \u2013 8:30 PM (PST)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b015/c005/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Tukwila Extraction \u2013 5:30 AM (PST)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b015/c005/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Moving Fortress \u2013 6:15 AM (PST)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b015/c005/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: Crossing the Rubicon \u2013 12:30 PM (PST)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b015/c005/p004": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: The Forward Operating Base \u2013 1:15 PM (PST)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b015/c005/p005": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 5: The Hydrotherapy Protocol \u2013 2:30 PM (PST)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b015/c005/p006": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 6: The House Guard Protocol \u2013 5:00 PM (PST)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b015/c005/p007": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 7: The Digital Sandbox \u2013 6:30 PM (PST)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b015/c005/p008": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 8: The Final Baseline \u2013 10:00 PM (PST)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b016/c001/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Morning Deployment \u2013 6:00 AM (PST)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b016/c001/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Logic of the Ban \u2013 6:45 AM (PST)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b016/c001/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Holding Pattern \u2013 10:00 AM (PST)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b016/c001/p004": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: The Plaza Approach \u2013 2:20 PM (PST)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b016/c002/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: Will Call \u2013 2:30 PM (PST)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b016/c002/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Arsenal \u2013 2:45 PM (PST)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b016/c002/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Arsenal's Promise \u2013 3:15 PM (PST)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b016/c002/p004": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: The Tycoon, The Thief, and the Foam Finger \u2013 3:45 PM (PST)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b016/c002/p005": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 5: The Descent and the Trust Fall \u2013 4:15 PM (PST)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b016/c002/p006": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 6: The Dark Matches \u2013 5:30 PM (PST)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b016/c003/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: LIVE From Portland \u2013 6:00 PM (PST)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b016/c003/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Bottom Line \u2013 6:02 PM (PST)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b016/c003/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Hometown Hero \u2013 6:08 PM (PST)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b016/c003/p004": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: The Cruiserweight Crash \u2013 6:18 PM (PST)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b016/c003/p005": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 5: The Corporate Meltdown \u2013 6:30 PM (PST)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b016/c003/p006": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 6: The Riot vs. The Empress \u2013 6:40 PM (PST)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b016/c003/p007": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 7: The Tycoon and the Thief \u2013 6:55 PM (PST)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b016/c003/p008": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 8: The Top of the Hour \u2013 7:00 PM (PST)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b016/c003/p009": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 9: The Backstage Assault \u2013 7:15 PM (PST)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b016/c003/p010": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 10: The Upset of the Century \u2013 7:25 PM (PST)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b016/c003/p011": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 11: The Main Event Recap \u2013 7:45 PM (PST)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b016/c003/p012": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 12: The Main Event \u2013 7:45 PM to 7:56 PM (PST)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b016/c003/p013": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 13: The Rampage & The Ultimatum \u2013 7:56 PM to 8:00 PM (PST)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b016/c003/p014": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 14: The House Lights & The Journey Home \u2013 8:00 PM (PST)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b017/c001/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Anchor's Rest \u2013 7:00 AM (PST)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b017/c001/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: Crossing the Columbia River \u2013 8:30 AM (PST)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b017/c001/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Tactical Seating Chart \u2013 9:45 AM (PST)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b017/c001/p004": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: The Pathetic Text \u2013 9:55 AM (PST)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b017/c001/p005": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 5: The Financial Guillotine \u2013 10:15 AM (PST)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b017/c001/p006": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 6: The 360 Area Code \u2013 10:45 AM (PST)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b017/c001/p007": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 7: The Unified Grid \u2013 11:30 AM (PST)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b017/c001/p008": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 8: The Union Station Protocol \u2013 12:30 PM (PST)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b017/c002/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Transit Grid \u2013 7:30 AM (PS1T)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b017/c002/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Sentinel's Shield \u2013 8:15 AM (PST)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b017/c002/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Financial Severance \u2013 8:55 AM (PST)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b017/c002/p004": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: The Corporate Armor \u2013 9:45 AM (PST)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b017/c002/p005": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 5: Caf\u00e9 34 and The Code-Off \u2013 10:30 AM (PST)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b017/c002/p006": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 6: The Crossway Matinee \u2013 1:15 PM (PST)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b017/c002/p007": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 7: The Digital Void & The Shrine \u2013 4:00 PM (PST)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b017/c002/p008": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 8: Bug and Bear \u2013 5:15 PM (PST)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b017/c002/p009": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 9: The Heavyweight Knockout Grill \u2013 6:45 PM (PST)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b017/c002/p010": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 10: The Sanctuary Bed \u2013 10:30 PM (PST)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b017/c003/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Sentinel Tether \u2013 10:00 AM (PST)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b017/c003/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Sanctuary Feast \u2013 6:00 PM (PST)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b017/c003/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Sugar Crash & The Independent Perimeter \u2013 10:00 PM (PST)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b017/c004/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Afterglow and the Doorbuster Clock \u2013 5:30 AM (PST)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b017/c004/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Transit Deployment \u2013 8:00 AM (PST)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b017/c004/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Pine Street Skybridge \u2013 9:30 AM (PST)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b017/c004/p004": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: The Holiday Windows \u2013 10:00 AM (PST)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b017/c004/p005": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 5: The Ride Free Area \u2013 10:30 AM (PST)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b017/c004/p006": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 6: The Pocket Fortress \u2013 11:45 AM (PST)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b017/c004/p007": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 7: The Pioneer Deli and The Regional Route \u2013 12:15 PM (PST)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b017/c004/p008": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 8: The Pierce County Deployment \u2013 1:30 PM (PST)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b017/c004/p009": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 9: The Lakewood Fortress \u2013 2:45 PM (PST)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b017/c004/p010": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 10: The Southern Base Camp \u2013 8:00 PM (PST)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b017/c005/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Choice \u2013 5:00 AM (PST)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b017/c005/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Milk Rule \u2013 5:30 AM (PST)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b017/c005/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Dead Grid \u2013 7:30 AM (PST)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b017/c005/p004": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: The Northbound Route \u2013 8:00 AM (PST)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b017/c005/p005": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 5: The Grocery Side \u2013 8:30 AM (PST)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b017/c005/p006": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 6: The Pantry Algorithm \u2013 10:00 AM (PST)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b018/c001/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Tarmac and the Tear \u2013 10:15 PM (EST)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b018/c001/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Decoy Protocol \u2013 11:30 PM (EST)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b018/c002/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Transition Wake-Up \u2013 9:00 AM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b018/c002/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Adult Perimeter \u2013 10:30 AM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b018/c002/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Reunion at the Register \u2013 1:00 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b018/c002/p004": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: The Alumni Roster \u2013 1:15 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b018/c002/p005": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 5: The Canadian Arch Perimeter \u2013 4:00 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b018/c002/p006": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 6: The Woven Stripe \u2013 6:00 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b018/c002/p007": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 7: The Sea of Truth \u2013 6:45 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b018/c002/p008": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 8: The Muscle Memory \u2013 7:00 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b018/c002/p009": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 9: The Criollo Drive Ascent \u2013 8:30 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b018/c003/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Three-Day Math \u2013 10:00 AM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b018/c003/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Transit Trap \u2013 11:30 AM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b018/c003/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Blue Leather Anchor \u2013 1:00 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b018/c003/p004": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: The Evolution of the Anchor \u2013 5:30 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b018/c004/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Command Center \u2013 2:00 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b018/c004/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Passcode \u2013 2:30 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b018/c004/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Blackwater Extraction \u2013 2:45 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b018/c004/p004": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: The Evasive Route \u2013 3:15 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b018/c004/p005": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 5: The Paper Trail \u2013 4:00 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b018/c004/p006": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 6: The 1802 Perimeter \u2013 8:00 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b018/c004/p007": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 7: The Legal Definition \u2013 10:30 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b018/c004/p008": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 8: The Weight of the Anchor \u2013 10:32 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b018/c005/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Lifelong Partner \u2013 7:00 AM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b018/c005/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Fault Line \u2013 7:30 AM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b018/c005/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Shark of Downtown Norfolk \u2013 8:45 AM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b018/c005/p004": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: Shedding the Name \u2013 11:00 AM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b018/c005/p005": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 5: The Dollar Lease \u2013 12:30 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b018/c006/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The West Coast Wake-Up \u2013 6:30 A M (EST)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b019/c001/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The SME Directive \u2013 9:15 AM (EST)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b019/c002/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Twenty-First Milestone \u2013 6:30 PM (EST)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b019/c002/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Subprime Shield \u2013 8:15 PM (EST)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b019/c002/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Moosewood Anomaly \u2013 8:25 PM (EST)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b019/c002/p004": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: The Evasive Route \u2013 8:35 PM (EST)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b019/c003/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Route 36 Commute \u2013 6:40 AM (EST)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b019/c003/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Corporate Guillotine \u2013 8:05 AM (EST)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b019/c004/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Demolition Directive \u2013 7:45 AM (EST)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b019/c004/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Catharsis \u2013 8:05 AM (EST)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b019/c004/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Clinical Blueprint \u2013 1:00 PM (EST)",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-rachel-narrative/b019/c004/p004": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: The Intact Architecture \u2013 4:45 PM (EST)",
+        "theme": ""
+    }
+}

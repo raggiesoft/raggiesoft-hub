@@ -1,0 +1,211 @@
+{
+    "common": {
+        "site": "raggiesoft-books",
+        "theme": "",
+        "siteName": "ashley-tower",
+        "showSidebar": true,
+        "sidebar": "raggiesoft-books/sidebar-book",
+        "headerMenu": "raggiesoft-books/header-books",
+        "footer": "raggiesoft-books/footer-books"
+    },
+    "/raggiesoft-books/books/ashley-tower": {
+        "view": "pages/raggiesoft-books/books/overview",
+        "title": "ashley-tower - Library",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/ashley-tower/b001/c001/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: Best Laid Plans \u2013 7:30 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/ashley-tower/b001/c001/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Anchor and the Watch \u2013 8:15 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/ashley-tower/b001/c001/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Ten O'Clock News \u2013 10:00 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/ashley-tower/b001/c002/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Departure \u2013 7:00 AM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/ashley-tower/b001/c002/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Interlude: The Shifting Models \u2013 12:15 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/ashley-tower/b001/c002/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Right Call \u2013 3:45 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/ashley-tower/b001/c002/p004": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Inventory \u2013 6:30 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/ashley-tower/b001/c003/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Video Link \u2013 7:00 AM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/ashley-tower/b001/c004/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Interlude: The Vanguard Lands \u2013 10:15 AM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/ashley-tower/b001/c005/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Agony of Proximity \u2013 8:30 AM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/ashley-tower/b001/c006/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: Gentlemen Only \u2013 6:45 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/ashley-tower/b001/c007/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: Going Dark \u2013 1:20 AM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/ashley-tower/b001/c007/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Interlude: The Gravity Trap \u2013 2:30 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/ashley-tower/b001/c007/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Interlude: The Backchannel \u2013 3:45 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/ashley-tower/b001/c007/p004": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Interlude: Grounded \u2013 4:15 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/ashley-tower/b001/c007/p005": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Deep Freeze \u2013 10:30 AM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/ashley-tower/b001/c007/p006": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Long Night \u2013 5:15 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/ashley-tower/b001/c008/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Birthday \u2013 3:15 AM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/ashley-tower/b001/c008/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Barrier \u2013 4:45 AM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/ashley-tower/b001/c008/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: Morning Light \u2013 7:15 AM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/ashley-tower/b001/c008/p004": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: The Siege \u2013 Tuesday Afternoon",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/ashley-tower/b001/c008/p005": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Interlude: Radio Silence \u2013 Tuesday, 2:45 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/ashley-tower/b001/c008/p006": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 5: The Shattered Script \u2013 9:45 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/ashley-tower/b001/c008/p007": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Interlude: The Current Loop \u2013 Tuesday, 11:30 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/ashley-tower/b001/c009/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Arrival \u2013 8:15 AM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/ashley-tower/b001/c009/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Extraction \u2013 8:18 AM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/ashley-tower/b001/c009/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: Sanctuary \u2013 9:30 AM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/ashley-tower/b002/c001/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: Arrival at EBF \u2013 10:45 AM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/ashley-tower/b002/c001/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Red Line \u2013 11:20 AM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/ashley-tower/b002/c001/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Monolith \u2013 12:15 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/ashley-tower/b002/c001/p004": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: The Ascent \u2013 12:25 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/ashley-tower/b002/c001/p005": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 5: The Hearth \u2013 12:28 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/ashley-tower/b002/c001/p006": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 6: The Architect of the Transition \u2013 1:15 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/ashley-tower/b002/c001/p007": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 7: The Legal Strike \u2013 1:30 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/ashley-tower/b002/c001/p008": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 8: The Inheritance \u2013 6:00 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/ashley-tower/b002/c001/p009": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 9: The Legacy Boardroom \u2013 6:30 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/ashley-tower/b002/c001/p010": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 10: The Lungs and Guts \u2013 6:55 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/ashley-tower/b002/c001/p011": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 11: The Town Square \u2013 7:15 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/ashley-tower/b002/c002/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Interlude: The Texas Head Start \u2013 8:15 AM",
+        "theme": ""
+    }
+}

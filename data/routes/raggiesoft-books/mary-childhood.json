@@ -1,0 +1,26 @@
+{
+    "common": {
+        "site": "raggiesoft-books",
+        "theme": "",
+        "siteName": "mary-childhood",
+        "showSidebar": true,
+        "sidebar": "raggiesoft-books/sidebar-book",
+        "headerMenu": "raggiesoft-books/header-books",
+        "footer": "raggiesoft-books/footer-books"
+    },
+    "/raggiesoft-books/books/mary-childhood": {
+        "view": "pages/raggiesoft-books/books/overview",
+        "title": "mary-childhood - Library",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/mary-childhood/b001/c001/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: High Command \u2013 2:15 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/mary-childhood/b001/c001/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Deep Woods \u2013 8:30 PM",
+        "theme": ""
+    }
+}

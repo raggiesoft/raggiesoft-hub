@@ -1,0 +1,401 @@
+{
+    "common": {
+        "site": "raggiesoft-books",
+        "theme": "",
+        "siteName": "jessica",
+        "showSidebar": true,
+        "sidebar": "raggiesoft-books/sidebar-book",
+        "headerMenu": "raggiesoft-books/header-books",
+        "footer": "raggiesoft-books/footer-books"
+    },
+    "/raggiesoft-books/books/jessica": {
+        "view": "pages/raggiesoft-books/books/overview",
+        "title": "jessica - Library",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/jessica/b001/c001/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: Day-to-Day at Quantum",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/jessica/b001/c001/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The \u201cReview\u201d That Isn\u2019t",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/jessica/b001/c001/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: Across the Quad",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/jessica/b001/c001/p004": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: The Executive Suite",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/jessica/b001/c001/p005": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 5: Off to BFI",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/jessica/b001/c001/p006": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 6: The Flight East",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/jessica/b001/c001/p007": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 7: Providence to Boston",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/jessica/b001/c001/p008": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 8: The Morning Hand-Off",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/jessica/b001/c001/p009": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 9: The Green Room",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/jessica/b001/c001/p010": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 10: The Cue",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/jessica/b001/c001/p011": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 11: The Reveal",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/jessica/b001/c001/p012": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 12: The Introduction",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/jessica/b001/c001/p013": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 13: The Crown Jewel",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/jessica/b001/c001/p014": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 14: The Aftermath",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/jessica/b001/c001/p015": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 15: The Fallout",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/jessica/b001/c001/p016": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 16: The Debrief",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/jessica/b001/c002/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: Homecoming",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/jessica/b001/c002/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part\u202f2: Unwelcome Currents",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/jessica/b001/c002/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part\u202f3: Evening Edition",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/jessica/b001/c002/p004": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part\u202f4: The \\#60 into Town",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/jessica/b001/c002/p005": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part\u202f5: The Creamery Along the Wall",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/jessica/b001/c002/p006": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part\u202f6: Breakfast at the Creamery",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/jessica/b001/c002/p007": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 7: The First Autograph",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/jessica/b001/c003/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Morning Commute",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/jessica/b001/c003/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: A Silent Protest",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/jessica/b001/c003/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Confrontation at Aurora",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/jessica/b001/c004/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: Quantum's Alliance",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/jessica/b001/c004/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: Aurora's Rebellion",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/jessica/b001/c005/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Leak",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/jessica/b001/c005/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: Damage Control",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/jessica/b001/c006/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Intercepted Letter",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/jessica/b001/c006/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Last Stand",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/jessica/b001/c007/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: A New Alliance",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/jessica/b001/c007/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: To Fork or Not to Fork?",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/jessica/b001/c007/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: Solidarity in Action",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/jessica/b001/c008/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Empty Loft",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/jessica/b001/c008/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Board Meeting",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/jessica/b001/c008/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: Kelly is Not For Sale",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/jessica/b001/c008/p004": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: The Press Conference",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/jessica/b001/c008/p005": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 5: Spilling the Beans",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/jessica/b001/c008/p006": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 6: The Final Paycheck",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/jessica/b001/c009/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: An Intern's Story",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/jessica/b001/c009/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: A Poisoned Well",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/jessica/b001/c010/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: Writing the Next Chapter",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/jessica/b001/c010/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: Kelly and Ryan\u2019s First Day",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/jessica/b001/c010/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: Break Room",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/jessica/b001/c010/p004": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: Jessica's Office",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/jessica/b001/c010/p005": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 5: The Overwhelming Good",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/jessica/b001/c010/p006": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 6: The First Line of Code",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/jessica/b001/c011/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Cupertino Trip",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/jessica/b001/c011/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Gate and the Extended Family",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/jessica/b001/c011/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: On the Bridge to Cupertino",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/jessica/b001/c011/p004": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: The California Sun",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/jessica/b001/c011/p005": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 5: Inside Infinite Loop",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/jessica/b001/c011/p006": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 6: The Dev Lab",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/jessica/b001/c011/p007": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 7: A Day at Work",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/jessica/b001/c011/p008": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 8: Lunch at Caffe Magna",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/jessica/b001/c011/p009": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 9: The Bug Bash",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/jessica/b001/c011/p010": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 10: The Kernel Panic Fix",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/jessica/b001/c011/p011": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 11: A Room with a View",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/jessica/b001/c011/p012": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 12: Finders Keepers",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/jessica/b001/c011/p013": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 13: Morning in Cupertino",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/jessica/b001/c011/p014": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 14: A Picnic with Cousins",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/jessica/b001/c011/p015": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 15: Homeward Bound",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/jessica/b001/c011/p016": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 16: The Flight Home",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/jessica/b001/c012/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Offer",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/jessica/b001/c012/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Bidding War",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/jessica/b001/c012/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Escalation",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/jessica/b001/c012/p004": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: The Decision",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/jessica/b001/c012/p005": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 5: The Dotted Line",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/jessica/b001/c012/p006": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 6: The First Paycheck",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/jessica/b001/c012/p007": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 7: Acknowledging Talent",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/jessica/b001/c012/p008": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 8: A New Role",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/jessica/b001/c013/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: Pizza Night",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/jessica/b001/c013/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Apartment Hunt",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/jessica/b001/c013/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Capitol Hill Grand",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/jessica/b001/c013/p004": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: Move-In Day",
+        "theme": ""
+    }
+}

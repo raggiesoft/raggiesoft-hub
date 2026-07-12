@@ -1,0 +1,171 @@
+{
+    "common": {
+        "site": "raggiesoft-books",
+        "theme": "",
+        "siteName": "samantha",
+        "showSidebar": true,
+        "sidebar": "raggiesoft-books/sidebar-book",
+        "headerMenu": "raggiesoft-books/header-books",
+        "footer": "raggiesoft-books/footer-books"
+    },
+    "/raggiesoft-books/books/samantha": {
+        "view": "pages/raggiesoft-books/books/overview",
+        "title": "samantha - Library",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/samantha/b001/c001/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Breadcrumbs \u2013 2:40 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/samantha/b001/c001/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: Fern Lake \u2013 8:15 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/samantha/b001/c001/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Interlude \u2013 9:45 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/samantha/b001/c001/p004": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: Justice \u2013 11:15 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/samantha/b001/c002/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Cumberland Gap \u2013 12:05 AM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/samantha/b001/c002/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Phalanx \u2013 2:15 AM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/samantha/b001/c002/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Winding Road \u2013 4:30 AM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/samantha/b001/c002/p004": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: Dawn and the Drive-Thru \u2013 5:15 AM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/samantha/b001/c002/p005": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 5: The Bottleneck and the Adrenaline Crash \u2013 9:15 AM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/samantha/b001/c002/p006": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 6: The Sentries \u2013 9:45 AM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/samantha/b001/c002/p007": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 7: The Living Room Camp \u2013 10:05 AM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/samantha/b001/c002/p008": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 8: The Sentry's Rest \u2013 10:15 AM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/samantha/b001/c002/p009": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 9: Jointly and Severally \u2013 6:00 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/samantha/b001/c002/p010": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 10: The Kitchen Perimeter \u2013 6:45 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/samantha/b001/c002/p011": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 11: The Iron Perimeter \u2013 7:30 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/samantha/b001/c002/p012": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 12: The Medical Perimeter \u2013 8:30 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/samantha/b001/c002/p013": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 13: The Triage Desk \u2013 8:45 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/samantha/b001/c002/p014": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 14: The Medical Perimeter \u2013 8:55 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/samantha/b001/c002/p015": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 15: Irrefutable Proof \u2013 11:30 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/samantha/b001/c002/p016": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 16: The Shift Change \u2013 11:45 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/samantha/b001/c003/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Midnight Protocol \u2013 1:55 AM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/samantha/b002/c001/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Guidance Summons \u2013 1:15 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/samantha/b002/c001/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Rueger Street Debrief \u2013 3:20 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/samantha/b002/c002/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Formal Declination \u2013 4:30 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/samantha/b002/c003/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: Joint and Several \u2013 10:15 AM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/samantha/b002/c004/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Arrival \u2013 3:05 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/samantha/b002/c004/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Gridlock Ultimatum \u2013 3:11 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/samantha/b002/c004/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Mic Drop \u2013 4:05 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/samantha/b002/c004/p004": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: The Drop \u2013 4:15 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/samantha/b003/c001/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: Galaxy Fitness \u2013 10:15 AM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/samantha/b003/c001/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Brute Protocol \u2013 10:28 AM",
+        "theme": ""
+    }
+}

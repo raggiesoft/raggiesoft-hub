@@ -1,0 +1,46 @@
+{
+    "common": {
+        "site": "raggiesoft-books",
+        "theme": "",
+        "siteName": "dream-kingdom",
+        "showSidebar": true,
+        "sidebar": "raggiesoft-books/sidebar-book",
+        "headerMenu": "raggiesoft-books/header-books",
+        "footer": "raggiesoft-books/footer-books"
+    },
+    "/raggiesoft-books/books/dream-kingdom": {
+        "view": "pages/raggiesoft-books/books/overview",
+        "title": "dream-kingdom - Library",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/dream-kingdom/b001/c001/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: Pixel Dust and Purple Light \u2013 11:42 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/dream-kingdom/b001/c001/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Inspection \u2013 11:45 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/dream-kingdom/b001/c001/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Prison of the Mind \u2013 11:55 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/dream-kingdom/b001/c002/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Weight of Survival \u2013 12:03 AM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/dream-kingdom/b001/c002/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: Relics of Home \u2013 12:15 AM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/dream-kingdom/b001/c002/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Denim Problem \u2013 12:20 AM",
+        "theme": ""
+    }
+}

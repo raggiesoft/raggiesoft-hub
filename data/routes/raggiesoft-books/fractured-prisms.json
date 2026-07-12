@@ -1,0 +1,16 @@
+{
+    "common": {
+        "site": "raggiesoft-books",
+        "theme": "",
+        "siteName": "fractured-prisms",
+        "showSidebar": true,
+        "sidebar": "raggiesoft-books/sidebar-book",
+        "headerMenu": "raggiesoft-books/header-books",
+        "footer": "raggiesoft-books/footer-books"
+    },
+    "/raggiesoft-books/books/fractured-prisms": {
+        "view": "pages/raggiesoft-books/books/overview",
+        "title": "fractured-prisms - Library",
+        "theme": ""
+    }
+}

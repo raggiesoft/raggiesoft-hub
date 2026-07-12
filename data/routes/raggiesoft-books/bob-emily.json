@@ -1,0 +1,326 @@
+{
+    "common": {
+        "site": "raggiesoft-books",
+        "theme": "",
+        "siteName": "bob-emily",
+        "showSidebar": true,
+        "sidebar": "raggiesoft-books/sidebar-book",
+        "headerMenu": "raggiesoft-books/header-books",
+        "footer": "raggiesoft-books/footer-books"
+    },
+    "/raggiesoft-books/books/bob-emily": {
+        "view": "pages/raggiesoft-books/books/overview",
+        "title": "bob-emily - Library",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/bob-emily/b001/c001/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Final Promise",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/bob-emily/b001/c001/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Hallway War",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/bob-emily/b001/c001/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Choice",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/bob-emily/b001/c001/p004": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: The Pact in the Back Seat",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/bob-emily/b001/c001/p005": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 5: The Line is Drawn",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/bob-emily/b001/c001/p006": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 6: A Shared Sanctuary",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/bob-emily/b001/c001/p007": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 7: A New Plan of Action",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/bob-emily/b001/c002/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The First Day",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/bob-emily/b001/c002/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: Meeting with the Principal",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/bob-emily/b001/c002/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: Planning with the Counselor",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/bob-emily/b001/c002/p004": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: The First Class",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/bob-emily/b001/c002/p005": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 5: Bus Orientation",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/bob-emily/b001/c002/p006": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 6: Emily\u2019s Rejects a Suitor",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/bob-emily/b001/c002/p007": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 7: A Failure to Communicate",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/bob-emily/b001/c002/p008": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 8: The Teacher's Apology",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/bob-emily/b001/c002/p009": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 9: The Principal's Wrath",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/bob-emily/b001/c002/p010": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 10: Reaffirming the Sanctuary",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/bob-emily/b001/c002/p011": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 11: The Grounding Walk",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/bob-emily/b001/c002/p012": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 12: The Reckoning",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/bob-emily/b001/c002/p013": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 13: A Message in Muscle",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/bob-emily/b001/c002/p014": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 14: The Gable Report",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/bob-emily/b001/c002/p015": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 15: The Emily Jenkins Rule",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/bob-emily/b002/c001/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Assault",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/bob-emily/b002/c001/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Discovery",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/bob-emily/b002/c001/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: The Investigation",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/bob-emily/b002/c001/p004": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 5: The Arrest",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/bob-emily/b002/c001/p005": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 6: The Perp Walk",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/bob-emily/b002/c002/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Long Wait",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/bob-emily/b002/c002/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: Emily Explains Everything",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/bob-emily/b002/c002/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: Waking Up",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/bob-emily/b002/c002/p004": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: The Daily Vigil",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/bob-emily/b002/c002/p005": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 5: The Storm Arrives",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/bob-emily/b002/c002/p006": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 6: The Longest Night",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/bob-emily/b002/c002/p007": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 7: Discharge Day",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/bob-emily/b002/c002/p008": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter Notes: The Planetarium Promise",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/bob-emily/b003/c001/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The First Day Home",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/bob-emily/b003/c001/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Call to Madison",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/bob-emily/b003/c001/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Dress Rehearsal",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/bob-emily/b003/c001/p004": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: A Spark of Hope",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/bob-emily/b003/c001/p005": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 5: The Green Light",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/bob-emily/b003/c001/p006": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 6: Homecoming",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/bob-emily/b003/c001/p007": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 7: The First Carry",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/bob-emily/b003/c001/p008": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 8: Cleared for Travel",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/bob-emily/b003/c002/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: A Trip to the Stars",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/bob-emily/b003/c002/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: A Double Honor",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/bob-emily/b003/c002/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Deepest of Space",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/bob-emily/b003/c002/p004": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: The Journey Home",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/bob-emily/b003/c002/p005": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter Notes: Bluewater Transit Steps Up to the Plate",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/bob-emily/b003/c003/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: A Hard Limit",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/bob-emily/b003/c003/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Accommodations Meeting",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/bob-emily/b003/c003/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Testing Lab",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/bob-emily/b003/c003/p004": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: The Waiting Game",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/bob-emily/b003/c003/p005": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 5: The Final Sprint",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/bob-emily/b003/c003/p006": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 6: The Graduation Pact",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/bob-emily/b004/c001/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Christiansburg Connection",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/bob-emily/b004/c001/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Ironclad Will",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/bob-emily/b004/c001/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Bluewater Star Party",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/bob-emily/b004/c001/p004": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: The Best News",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/bob-emily/b004/c001/p005": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 5: The Schedule and the Ride",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/bob-emily/b004/c001/p006": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 6: The Backyard Feast",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/bob-emily/b004/c001/p007": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 7: The Last Drop of Summer",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/bob-emily/b004/c001/p008": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 7: The Last Drop of Summer",
+        "theme": ""
+    }
+}

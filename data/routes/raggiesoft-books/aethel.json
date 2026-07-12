@@ -1,0 +1,196 @@
+{
+    "common": {
+        "site": "raggiesoft-books",
+        "theme": "",
+        "siteName": "aethel",
+        "showSidebar": true,
+        "sidebar": "raggiesoft-books/sidebar-book",
+        "headerMenu": "raggiesoft-books/header-books",
+        "footer": "raggiesoft-books/footer-books"
+    },
+    "/raggiesoft-books/books/aethel": {
+        "view": "pages/raggiesoft-books/books/overview",
+        "title": "aethel - Library",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/aethel/b001/c001/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 1: The Architect's Lesson",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/aethel/b001/c001/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 2: The Age of Twilight",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/aethel/b002/c001/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 1: The Sundering of Sunstead",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/aethel/b002/c001/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 2: The Silence of the Hearth",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/aethel/b002/c002/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 1: The Hunted and the Caged",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/aethel/b002/c002/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 2: The Tyrant's Throne",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/aethel/b002/c002/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 3: The Last Temptation",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/aethel/b002/c002/p004": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 4: The Bridge of a Thousand Truths",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/aethel/b002/c003/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 1: The Siege of the Shadowspire",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/aethel/b002/c003/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 2: The Heart of the Gloom",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/aethel/b002/c003/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 3: The Long Road Home",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/aethel/b002/c003/p004": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 4: The Scouring of Sunstead",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/aethel/b002/c003/p005": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 5: The Aftermath",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/aethel/b003/c001/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 1: The Tide and the Torch",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/aethel/b003/c001/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 2: The Heart of the World",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/aethel/b003/c001/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 3: The Weave of the Water",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/aethel/b003/c001/p004": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 4: The Gyre",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/aethel/b003/c002/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 1: The Silent Sector",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/aethel/b003/c002/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 2: The Ribcage of the Gods",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/aethel/b003/c002/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 3: The War for the Mind",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/aethel/b003/c002/p004": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 4: The Long Way Down",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/aethel/b003/c002/p005": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 5: The Cottage",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/aethel/b004/c001/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 1: The Art of Doing Nothing",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/aethel/b004/c001/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 2: The Alarm Clock",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/aethel/b004/c001/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 3: The Magnetic Highway",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/aethel/b004/c001/p004": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 4: The Clockwork Ocean",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/aethel/b004/c001/p005": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 4: The Return Journey",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/aethel/b004/c002/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 1: The Privacy of Stone",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/aethel/b004/c002/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 2: The Smoke and the Fire",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/aethel/b004/c002/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 3: The Council of Neighbors",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/aethel/b004/c002/p004": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 4: The King at the Gate",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/aethel/b004/c002/p005": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 5: The Demon and the Witch",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/aethel/b004/c002/p006": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 6: The Starlight Check-In",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/aethel/b004/c003/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Prologue: The Silence Between Stars",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/aethel/b004/c003/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 1: The Shadow at Noon",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/aethel/b004/c003/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 2: The Needle and the Shroud",
+        "theme": ""
+    }
+}
