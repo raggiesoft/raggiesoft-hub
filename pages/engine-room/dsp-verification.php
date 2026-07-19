@@ -1,7 +1,7 @@
 <?php
 // pages/engine-room/dsp-verification.php
 // Internal Administrative Portal for DSP Identity & Copyright Verification
-// Context: Independent Artist Verification. No corporate jargon.
+// Context: Independent Artist Verification. Clean, authoritative, audit-ready layout.
 
 // 1. Fetch the Master Catalog using the CMS utility
 require_once ROOT_PATH . '/includes/utils/json-reader.php';
@@ -9,11 +9,16 @@ $catalog = fetch_asset_json('engine-room-records/json/master-catalog.json');
 
 // 2. Determine Request State
 $requested_artist_slug = isset($_GET['artist']) ? htmlspecialchars(strip_tags($_GET['artist'])) : '';
-$is_artist_view = !empty($requested_artist_slug);
+$requested_album_slug  = isset($_GET['album'])  ? htmlspecialchars(strip_tags($_GET['album']))  : '';
+$requested_track_slug  = isset($_GET['track'])  ? htmlspecialchars(strip_tags($_GET['track']))  : '';
 
-// 3. Filter Data (If Artist View)
+$is_artist_view = !empty($requested_artist_slug);
+$is_track_view  = ($is_artist_view && !empty($requested_album_slug) && !empty($requested_track_slug));
+
+// 3. Filter Data based on routing state
 $artist_tracks = [];
 $artist_persona = '';
+$current_track_metadata = null;
 
 if ($is_artist_view && is_array($catalog)) {
     foreach ($catalog as $track) {
@@ -21,6 +26,10 @@ if ($is_artist_view && is_array($catalog)) {
             $artist_tracks[] = $track;
             if (empty($artist_persona)) {
                 $artist_persona = $track['artistPersona']; 
+            }
+            // If checking a specific track, locate its index object
+            if ($is_track_view && isset($track['trackSlug']) && $track['trackSlug'] === $requested_track_slug) {
+                $current_track_metadata = $track;
             }
         }
     }
@@ -36,8 +45,8 @@ if (!$is_artist_view && is_array($catalog)) {
     }
 }
 
-// 5. Verification Check
-$not_found = ($is_artist_view && empty($artist_tracks));
+// 5. Run Verification Validation
+$not_found = ($is_artist_view && empty($artist_tracks)) || ($is_track_view && empty($current_track_metadata));
 ?>
 
 <style>
@@ -116,10 +125,18 @@ $not_found = ($is_artist_view && empty($artist_tracks));
         color: #e0e0e0 !important;
         border-color: #1f4068 !important;
     }
+
+    /* Print Overrides for Official Documentation Cleanliness */
+    @media print {
+        body { background: #fff !important; color: #000 !important; }
+        .dsp-portal { border: none !important; box-shadow: none !important; my: 0 !important; p: 0 !important; }
+        #elara-master-footer, .d-print-none, .btn { display: none !important; }
+    }
 </style>
 
 <div class="container py-5 dsp-portal shadow-lg my-4 rounded border border-secondary">
     
+    <!-- Unified Section Header -->
     <div class="dsp-header d-flex justify-content-between align-items-end flex-wrap gap-3">
         <div>
             <h1 class="h3 fw-bold text-uppercase mb-1" style="letter-spacing: -0.5px;">Independent Artist Verification</h1>
@@ -127,18 +144,51 @@ $not_found = ($is_artist_view && empty($artist_tracks));
         </div>
         <div class="text-start text-md-end font-monospace small">
             <strong>Date of Record:</strong> <?php echo date('F j, Y'); ?><br>
-            <strong>Status:</strong> OFFICIAL
+            <strong>Status:</strong> OFFICIAL AUDIT LOG
         </div>
     </div>
 
     <?php if ($not_found): ?>
-        <div class="alert alert-danger border-danger border-2 p-4">
-            <h4 class="alert-heading fw-bold"><i class="fa-solid fa-triangle-exclamation me-2"></i>Verification Failed</h4>
-            <p class="mb-0">No records found for the requested artist identifier: <code><?php echo $requested_artist_slug; ?></code></p>
+        <div class="alert alert-danger border-danger border-2 p-4 font-sans-serif">
+            <h4 class="alert-heading fw-bold"><i class="fa-solid fa-triangle-exclamation me-2"></i>Verification Tracking Error</h4>
+            <p class="mb-0">The requested asset footprint parameter map could not be verified within the master registry index.</p>
         </div>
-        <a href="/engine-room/dsp-verification" class="btn btn-outline-dark mt-3">Return to Master Catalog</a>
-    <?php else: ?>
+        <a href="/engine-room/dsp-verification" class="btn btn-outline-dark mt-3 d-print-none">Return to Master Catalog</a>
+    
+    <?php elseif ($is_track_view): ?>
+        <!-- LAYOUT B: STANDALONE TRACK AFFIDAVIT VIEW -->
+        <div class="d-flex justify-content-between align-items-center mb-4 d-print-none">
+            <a href="?artist=<?php echo urlencode($requested_artist_slug); ?>" class="btn btn-sm btn-outline-dark font-monospace">
+                <i class="fa-solid fa-arrow-left me-1"></i> Return to Table View
+            </a>
+            <button onclick="window.print();" class="btn btn-sm btn-dark font-monospace">
+                <i class="fa-solid fa-print me-1"></i> Export Affidavit (PDF)
+            </button>
+        </div>
 
+        <div class="alert alert-info border-info p-3 small mb-4 shadow-sm font-sans-serif">
+            <strong><i class="fa-solid fa-circle-certificate me-1"></i> System Log:</strong> Displaying cryptographically indexed metadata ledger sheets for track asset resource: <code><?php echo htmlspecialchars($current_track_metadata['err_id']); ?></code>.
+        </div>
+
+        <div class="p-4 border border-secondary rounded bg-body shadow-sm">
+            <?php
+            require_once ROOT_PATH . '/includes/classes/stardust-parsedown.php';
+            $parsedown = new StardustParsedown();
+
+            // Assemble clean, direct pathing variables using our new schema elements
+            $ddex_url = "https://assets.raggiesoft.com/engine-room-records/artists/{$requested_artist_slug}/{$requested_album_slug}/streaming-services/song-metadata/{$requested_track_slug}.md";
+            $md_content = @file_get_contents($ddex_url);
+            
+            if ($md_content !== false) {
+                echo $parsedown->text($md_content);
+            } else {
+                echo '<div class="alert alert-danger font-sans-serif m-0"><i class="fa-solid fa-file-circle-exclamation me-2"></i><strong>Audit Trace Failed:</strong> Secure asset description block could not be pulled from target server location.</div>';
+            }
+            ?>
+        </div>
+
+    <?php else: ?>
+        <!-- CORE INFORMATION METRICS BAR -->
         <div class="row mb-5">
             <div class="col-md-6">
                 <h3 class="h6 fw-bold text-uppercase border-bottom border-dark pb-2 mb-3">1. Primary Creator & Ownership</h3>
@@ -162,6 +212,7 @@ $not_found = ($is_artist_view && empty($artist_tracks));
         </div>
 
         <?php if (!$is_artist_view): ?>
+            <!-- LAYOUT C: MASTER DIRECTORY VIEW -->
             <div class="mb-4">
                 <h3 class="h6 fw-bold text-uppercase border-bottom border-dark pb-2 mb-3">3. Master Catalog Directory</h3>
                 <p class="small text-muted mb-4">Please select the artist persona under review to access their specific ISRC records and chain of custody documentation.</p>
@@ -186,10 +237,11 @@ $not_found = ($is_artist_view && empty($artist_tracks));
             </div>
 
         <?php else: ?>
+            <!-- LAYOUT A: ARTIST TRACK TABLE VIEW -->
             <div class="mb-4">
                 <div class="d-flex justify-content-between align-items-end border-bottom border-dark pb-2 mb-3 flex-wrap gap-2">
                     <h3 class="h6 fw-bold text-uppercase mb-0">3. Artist Profile & Direct Claim: <span class="text-primary"><?php echo htmlspecialchars($artist_persona); ?></span></h3>
-                    <a href="/engine-room/dsp-verification" class="btn btn-sm btn-outline-dark font-monospace"><i class="fa-solid fa-arrow-left me-1"></i> Back to Directory</a>
+                    <a href="/engine-room/dsp-verification" class="btn btn-sm btn-outline-dark font-monospace d-print-none"><i class="fa-solid fa-arrow-left me-1"></i> Back to Directory</a>
                 </div>
                 
                 <div class="alert alert-info border-info p-3 small mb-4 shadow-sm">
@@ -197,7 +249,7 @@ $not_found = ($is_artist_view && empty($artist_tracks));
                 </div>
 
                 <div class="table-responsive">
-                    <table class="table table-bordered table-striped dsp-table">
+                    <table class="table table-bordered table-striped dsp-table align-middle">
                         <thead>
                             <tr>
                                 <th scope="col">ERR-ID</th>
@@ -211,6 +263,7 @@ $not_found = ($is_artist_view && empty($artist_tracks));
                             <?php foreach ($artist_tracks as $track): ?>
                                 <?php 
                                     $is_vault = (isset($track['distributor']) && $track['distributor'] === 'Internal Vault');
+                                    $has_slugs = (!empty($track['albumSlug']) && !empty($track['trackSlug']));
                                 ?>
                                 <tr>
                                     <td class="fw-bold <?php echo $is_vault ? 'text-muted' : ''; ?>">
@@ -225,8 +278,17 @@ $not_found = ($is_artist_view && empty($artist_tracks));
                                             <span class="badge bg-warning text-dark border border-dark">Pending</span>
                                         <?php endif; ?>
                                     </td>
-                                    <td class="<?php echo $is_vault ? 'text-muted' : ''; ?>">
-                                        <?php echo htmlspecialchars($track['trackTitle']); ?>
+                                    <td>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <span class="<?php echo $is_vault ? 'text-muted' : ''; ?>"><?php echo htmlspecialchars($track['trackTitle']); ?></span>
+                                            <?php if (!$is_vault && $has_slugs): ?>
+                                                <a href="?artist=<?php echo urlencode($track['artistSlug']); ?>&album=<?php echo urlencode($track['albumSlug']); ?>&track=<?php echo urlencode($track['trackSlug']); ?>" 
+                                                   class="btn btn-sm btn-link p-0 text-decoration-none font-monospace small ms-2 d-print-none fw-bold" 
+                                                   title="Review Verification Statement">
+                                                    [Review Affidavit]
+                                                </a>
+                                            <?php endif; ?>
+                                        </div>
                                     </td>
                                     <td class="<?php echo $is_vault ? 'text-muted' : ''; ?>">
                                         <?php echo htmlspecialchars($track['realReleaseDate']); ?>
@@ -249,8 +311,8 @@ $not_found = ($is_artist_view && empty($artist_tracks));
     <?php endif; ?>
     
     <div class="mt-5 text-center border-top border-dark pt-3 small text-muted">
-        <p class="mb-0">This page is automatically generated from the Master Catalog.</p>
-        <p class="font-monospace">Authorized by Michael P. Ragsdale</p>
+        <p class="mb-0">This verification environment is dynamically compiled from active systemic deployment listings.</p>
+        <p class="font-monospace m-0">Authorized Electronic Signature: Michael P. Ragsdale</p>
     </div>
 </div>
 
