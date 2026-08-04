@@ -21,17 +21,10 @@ $isContact = ($request_uri === '/contact');
     </a>
   </li>
 
-  <li class="nav-item dropdown">
-    <a class="nav-link dropdown-toggle <?php echo $isArchitect ? 'active' : ''; ?>" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+  <li class="nav-item">
+    <a class="nav-link <?php echo $isArchitect ? 'active' : ''; ?>" href="/">
         <i class="fa-duotone fa-user-visor me-2" aria-hidden="true"></i>The Architect
     </a>
-    <ul class="dropdown-menu dropdown-menu-end shadow-sm border-secondary-subtle">
-      <li><a class="dropdown-item" href="/about/michael-ragsdale"><i class="fa-duotone fa-id-card me-2"></i>Overview</a></li>
-      <li><a class="dropdown-item" href="/about/michael-ragsdale/resume"><i class="fa-duotone fa-file-user me-2"></i>Resume / CV</a></li>
-      <li><a class="dropdown-item" href="/about/michael-ragsdale/profile"><i class="fa-duotone fa-user-gear me-2"></i>Skills & Profile</a></li>
-      <li><hr class="dropdown-divider"></li>
-      <li><a class="dropdown-item" href="/about/michael-ragsdale/contact"><i class="fa-duotone fa-address-card me-2"></i>Contact Card</a></li>
-    </ul>
   </li>
 
   <li class="nav-item dropdown">
@@ -63,7 +56,7 @@ $isContact = ($request_uri === '/contact');
       <li><a class="dropdown-item" href="/raggiesoft-media/licensing/commercial"><i class="fa-solid fa-briefcase me-2 text-secondary"></i>Commercial Portal</a></li>
       <li><hr class="dropdown-divider"></li>
       <li><h6 class="dropdown-header text-uppercase fw-bold">Infrastructure</h6></li>
-      <li><a class="dropdown-item" href="/raggiesoft-media/projects/elara"><i class="fa-brands fa-osi me-2 text-info"></i>Open Source (Elara)</a></li>
+      <li><a class="dropdown-item" href="/raggiesoft-media/projects/stardust-engine-cms"><i class="fa-brands fa-rocket-launch me-2 text-info"></i>Stardust Engine CMS</a></li>
     </ul>
   </li>
 
