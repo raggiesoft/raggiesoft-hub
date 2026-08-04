@@ -31,7 +31,7 @@
             <div class="col-lg-2 col-md-6">
                 <h6 class="fw-bold mb-3">Built With</h6>
                 <ul class="nav flex-column small">
-                    <li class="nav-item mb-2"><span class="nav-link p-0 text-body-secondary">PHP 8.4</span></li>
+                    <li class="nav-item mb-2"><span class="nav-link p-0 text-body-secondary">PHP 8.5</span></li>
                     <li class="nav-item mb-2"><span class="nav-link p-0 text-body-secondary">Bootstrap 5.3</span></li>
                     <li class="nav-item mb-2"><span class="nav-link p-0 text-body-secondary">FontAwesome Pro</span></li>
                 </ul>
