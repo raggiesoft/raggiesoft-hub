@@ -22,7 +22,7 @@ $isContact = ($request_uri === '/contact');
   </li>
 
   <li class="nav-item">
-    <a class="nav-link <?php echo $isArchitect ? 'active' : ''; ?>" href="/">
+    <a class="nav-link <?php echo $isArchitect ? 'active' : ''; ?>" href="/about/michael-ragsdale">
         <i class="fa-duotone fa-user-visor me-2" aria-hidden="true"></i>The Architect
     </a>
   </li>
