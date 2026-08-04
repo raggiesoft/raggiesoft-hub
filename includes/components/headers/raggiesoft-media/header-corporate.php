@@ -67,4 +67,10 @@ $isPortfolio = (str_starts_with($request_uri, '/about/michael-ragsdale'));
     </a>
   </li>
 
+  <li class="nav-item border-start ms-2 ps-2">
+      <a class="nav-link text-body-secondary hover-text-primary" href="/">
+        <i class="fa-duotone fa-arrow-right-from-bracket me-2"></i><span class="small">Exit to RaggieSoft</span>
+      </a>
+  </li>
+
 </ul>
