@@ -55,5 +55,71 @@ class StardustParsedown extends Parsedown {
 
         return $Block;
     }
+
+    // NEW EXTENSION: Handle Checkbox Lists for DSP Forms
+    protected function blockLi($Line, array $Block = null) {
+        // Call the parent to do the heavy lifting of parsing the list item
+        $Block = parent::blockLi($Line, $Block);
+
+        if (!$Block) {
+            return $Block;
+        }
+
+        // Target the text content of the list item
+        if (isset($Block['element']['handler']) && $Block['element']['handler'] === 'line') {
+            $text = $Block['element']['text'];
+
+            // Check if the text starts with a Markdown checkbox pattern
+            $isChecked = false;
+            $isCheckbox = false;
+
+            if (preg_match('/^\[[xX]\]\s/', $text)) {
+                $isChecked = true;
+                $isCheckbox = true;
+                $text = preg_replace('/^\[[xX]\]\s/', '', $text); // Remove the [x]
+            } elseif (preg_match('/^\[ \]\s/', $text)) {
+                $isCheckbox = true;
+                $text = preg_replace('/^\[ \]\s/', '', $text); // Remove the [ ]
+            }
+
+            // If a checkbox pattern was found, inject the HTML
+            if ($isCheckbox) {
+                // Generate a unique ID for accessibility mapping
+                $checkboxId = 'chk-' . uniqid();
+
+                $checkboxHtml = '<input class="form-check-input me-2" type="checkbox" id="' . $checkboxId . '" disabled';
+                if ($isChecked) {
+                    $checkboxHtml .= ' checked';
+                }
+                $checkboxHtml .= ' aria-label="Read-only checkbox for DSP Metadata status">';
+
+                // Update the text property, turning off the 'line' handler so HTML renders correctly
+                $Block['element']['handler'] = 'elements';
+                $Block['element']['text'] = array(
+                    array(
+                        'name' => 'div',
+                        'attributes' => array('class' => 'form-check d-flex align-items-center mb-1'),
+                        'text' => array(
+                            array('rawHtml' => $checkboxHtml),
+                            array(
+                                'name' => 'label',
+                                'attributes' => array(
+                                    'class' => 'form-check-label text-dark', 
+                                    'for' => $checkboxId
+                                ),
+                                'handler' => 'line',
+                                'text' => $text // The remaining text after the [x] is stripped
+                            )
+                        )
+                    )
+                );
+                
+                // Add a class to the parent <li> to remove standard bullet styling
+                $Block['element']['attributes']['class'] = 'list-unstyled';
+            }
+        }
+
+        return $Block;
+    }
 }
 ?>
