@@ -75,16 +75,13 @@ include_once $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
     <?php 
     // SETUP THE NARRATIVE STEPPER
     $nav = [
-        'prev' => [
-            'url' => 'overview.php', 
-            'label' => 'Overview'
-        ],
+        
         'overview' => [
-            'url' => 'overview.php', 
+            'url' => '/raggiesoft-games/pathfinder-west/strategy-guide/golden-ending/hail-mary/', 
             'label' => 'Table of Contents'
         ],
         'next' => [
-            'url' => 'chapter-02.php', 
+            'url' => '/raggiesoft-games/pathfinder-west/strategy-guide/golden-ending/hail-mary/chapter-02', 
             'label' => 'Chapter 2: The Cipher'
         ]
     ];
