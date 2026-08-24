@@ -84,7 +84,7 @@ include_once $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
             'label' => 'Table of Contents'
         ],
         'next' => [
-            'url' => 'chapter-2.php', 
+            'url' => 'chapter-02.php', 
             'label' => 'Chapter 2: The Cipher'
         ]
     ];

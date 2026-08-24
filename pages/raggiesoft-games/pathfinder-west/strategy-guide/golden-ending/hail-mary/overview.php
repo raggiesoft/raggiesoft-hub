@@ -10,9 +10,9 @@ include_once $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
 <main class="container my-5 strategy-guide-overview">
     <header class="mb-5 pb-3 border-bottom">
         <h1 class="display-4 fw-bold">The Pasco Hail Mary</h1>
-        <h2 class="text-muted fs-4">Pathfinder West: Official Narrative Strategy Guide</h2>
+        <h2 class="text-light fs-4">Pathfinder West: Official Narrative Strategy Guide</h2>
         
-        <div class="card mt-4 bg-light border-0 shadow-sm">
+        <div class="card mt-4 bg-dark border-0 shadow-sm">
             <div class="card-body">
                 <h3 class="card-title h5 text-uppercase tracking-wider">Run Parameters</h3>
                 <ul class="mb-0">
@@ -30,35 +30,35 @@ include_once $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
         <p class="lead">Follow Roxy's journey as she balances the grueling reality of a cross-country sprint against the invisible ticking clock of the Pathfinder schedule. This guide details the exact route, financial risks, and dialogue choices required to secure the Pasco Hail Mary intercept.</p>
 
         <div class="list-group list-group-flush mt-4">
-            <a href="chapter-1.php" class="list-group-item list-group-item-action py-3">
+            <a href="chapter-01.php" class="list-group-item list-group-item-action py-3">
                 <div class="d-flex w-100 justify-content-between">
                     <h4 class="mb-1 h5">Chapter 1: The False Start</h4>
                 </div>
                 <p class="mb-1 text-muted">Hampton Roads, VA — Navigating the Newport decoy and mitigating the Chesapeake Bay Bridge-Tunnel toll trap.</p>
             </a>
             
-            <a href="chapter-2.php" class="list-group-item list-group-item-action py-3">
+            <a href="chapter-02.php" class="list-group-item list-group-item-action py-3">
                 <div class="d-flex w-100 justify-content-between">
                     <h4 class="mb-1 h5">Chapter 2: The Cipher</h4>
                 </div>
                 <p class="mb-1 text-muted">Appalachia to the Midwest — Decoding the <em>Static & Silence</em> CD and executing the I-85 Southern Cut.</p>
             </a>
             
-            <a href="chapter-3.php" class="list-group-item list-group-item-action py-3">
+            <a href="chapter-03.php" class="list-group-item list-group-item-action py-3">
                 <div class="d-flex w-100 justify-content-between">
                     <h4 class="mb-1 h5">Chapter 3: The Engine's Toll</h4>
                 </div>
                 <p class="mb-1 text-muted">The Great Plains to the Rockies — Managing the Check Engine Light, combating the Kansas Turnpike, and bypassing the Denver gouge.</p>
             </a>
             
-            <a href="chapter-4.php" class="list-group-item list-group-item-action py-3">
+            <a href="chapter-04.php" class="list-group-item list-group-item-action py-3">
                 <div class="d-flex w-100 justify-content-between">
                     <h4 class="mb-1 h5">Chapter 4: The Speed Trap</h4>
                 </div>
                 <p class="mb-1 text-muted">The High Desert — Pushing the speed slider, surviving the 3-second radar mini-game, and managing thermal overload.</p>
             </a>
             
-            <a href="chapter-5.php" class="list-group-item list-group-item-action py-3">
+            <a href="chapter-05.php" class="list-group-item list-group-item-action py-3">
                 <div class="d-flex w-100 justify-content-between">
                     <h4 class="mb-1 h5">Chapter 5: The Hail Mary</h4>
                 </div>
