@@ -30,11 +30,11 @@ include_once $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
 
         <div class="row my-4">
             <div class="col-md-6 text-center">
-                <img src="https://assets.raggiesoft.com/engine-room-records/the-paper-wall/2001-static-and-silence-book-1/album-art.jpg" alt="Static & Silence Book 1" class="img-fluid rounded shadow-sm">
+                <img src="https://assets.raggiesoft.com/engine-room-records/artists/the-paper-wall/2001-static-and-silence-book-1/album-art.jpg" alt="Static & Silence Book 1" class="img-fluid rounded shadow-sm">
                 <p class="text-muted small mt-2">Book 1: The Long Road West</p>
             </div>
             <div class="col-md-6 text-center">
-                <img src="https://assets.raggiesoft.com/engine-room-records/the-paper-wall/2001-static-and-silence-book-2/album-art.jpg" alt="Static & Silence Book 2" class="img-fluid rounded shadow-sm">
+                <img src="https://assets.raggiesoft.com/engine-room-records/artists/the-paper-wall/2001-static-and-silence-book-2/album-art.jpg" alt="Static & Silence Book 2" class="img-fluid rounded shadow-sm">
                 <p class="text-muted small mt-2">Book 2: The Journey Home</p>
             </div>
         </div>
