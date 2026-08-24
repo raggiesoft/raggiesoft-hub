@@ -60,7 +60,7 @@ include_once $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
 
     <!-- STRATEGY GUIDE NOTES -->
     <div class="card bg-dark text-light my-5 border-0 shadow">
-        <div class="card-header bg-primary text-white text-uppercase fw-bold tracking-wider">
+        <div class="card-header bg-primary text-dark text-uppercase fw-bold tracking-wider">
             <i class="fa-solid fa-gamepad me-2"></i> Guide Notes
         </div>
         <div class="card-body">
