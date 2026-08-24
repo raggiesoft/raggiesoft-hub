@@ -65,7 +65,7 @@ include_once $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
         </div>
         <div class="card-body">
             <ul class="mb-0 lh-lg">
-                <li><strong>The Audio Cipher:</strong> If you do not pick up <em>Static & Silence</em> here (where it is completely free), you will be forced to buy it at a truck stop later for a costly $25.</li>
+                <li><strong>The Audio Cipher:</strong> If you do not pick up <em>Static & Silence</em> here (where it is completely free), you may buy it at a truck stop later for a costly $25.</li>
                 <li><strong>The Mystery Track:</strong> If you examine the CD case, you might notice that track 15, "A Night in Kent", is circled. I wonder why that specific song is highlighted? Could it mean something?</li>
                 <li><strong>The Island 1 Turnaround:</strong> By choosing to stop and turn around at Island 1, the girls successfully avoid paying the punishing $5 return trip toll that triggers if you cross the entire span to the Eastern Shore.</li>
             </ul>
