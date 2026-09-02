@@ -29,12 +29,5 @@
     "title": "Project: KNOX | Ocean View Archives",
     "ogTitle": "Project: KNOX - Axiom Archival Logs",
     "schemaType": "Book"
-  },
-
-  "/raggiesoft-books/aethel-saga": {
-    "view": "pages/raggiesoft-books/aethel/overview",
-    "title": "The Silver Gauntlet of Aethel | Ocean View Archives",
-    "ogTitle": "The Silver Gauntlet of Aethel",
-    "schemaType": "Book"
   }
 }
