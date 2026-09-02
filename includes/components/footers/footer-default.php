@@ -24,7 +24,7 @@
                 <ul class="nav flex-column small">
                     <li class="nav-item mb-2"><a href="/engine-room" class="nav-link p-0 text-body-secondary">Engine Room Records</a></li>
                     <li class="nav-item mb-2"><a href="/family" class="nav-link p-0 text-body-secondary">Family</a></li>
-                    <li class="nav-item mb-2"><a href="/raggiesoft-books/aethel" class="nav-link p-0 text-body-secondary">Silver Gauntlet of Aethel</a></li>
+                    <li class="nav-item mb-2"><a href="/raggiesoft-books/aethel-saga" class="nav-link p-0 text-body-secondary">Silver Gauntlet of Aethel</a></li>
                 </ul>
             </div>
 
