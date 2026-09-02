@@ -60,11 +60,11 @@ $isPortfolio = (str_starts_with($request_uri, '/about/michael-ragsdale'));
         <i class="fa-solid fa-briefcase me-2" aria-hidden="true"></i>Commercial Portal
     </a>
   </li>
-  
-  <li class="nav-item d-md-none mt-2 pt-2 border-top">
-    <a class="nav-link text-primary" href="/raggiesoft-media/licensing/commercial">
-        <i class="fa-solid fa-briefcase me-2" aria-hidden="true"></i>Commercial Portal
-    </a>
+
+  <li class="nav-item border-start ms-2 ps-2">
+      <a class="nav-link text-body-secondary hover-text-primary" href="/">
+        <i class="fa-duotone fa-arrow-right-from-bracket me-2"></i><span class="small">Exit to RaggieSoft</span>
+      </a>
   </li>
 
 </ul>
