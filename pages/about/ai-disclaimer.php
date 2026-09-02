@@ -88,55 +88,26 @@
 
             </div>
 
-            <!-- FIXED: Dual Timeline Architecture -->
-            <div class="card border-info shadow-sm mb-5 bg-body-tertiary">
-                <div class="card-body p-4 p-lg-5">
-                    <div class="d-flex align-items-center mb-4">
-                        <i class="fa-duotone fa-timeline fa-3x text-info me-4 d-none d-md-block" aria-hidden="true"></i>
-                        <div>
-                            <h4 class="fw-bold mb-1 text-body-emphasis">The Dual Timeline Architecture</h4>
-                            <p class="text-body-secondary mb-0">Transparency in publishing metadata across all multimedia and literary projects.</p>
-                        </div>
-                    </div>
-                    <p class="card-text mb-4 text-body-emphasis">
-                        RaggieSoft's projects—spanning chapter book novels, narrative fiction, and concept music albums—exist within deeply crafted fictional universes. To maintain the immersion of these stories while strictly complying with real-world digital publishing and music distribution standards, all works utilize a dual-timeline approach:
-                    </p>
-                    <div class="row g-4">
-                        <div class="col-md-6">
-                            <div class="p-3 bg-body rounded border border-secondary-subtle h-100 shadow-sm">
-                                <h6 class="fw-bold text-primary"><i class="fa-solid fa-book-journal-whills me-2" aria-hidden="true"></i>Narrative Era (In-Universe)</h6>
-                                <p class="small text-body-secondary mb-0">The fictional date when an event occurred, a book is set, or a record was released within the lore (e.g., a band's "1987" debut album). This is purely for artistic world-building and immersion.</p>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="p-3 bg-body rounded border border-secondary-subtle h-100 shadow-sm">
-                                <h6 class="fw-bold text-success"><i class="fa-solid fa-calendar-check me-2" aria-hidden="true"></i>Actual Release Date (Real-World)</h6>
-                                <p class="small text-body-secondary mb-0">The literal, real-world date the novel was published or the audio was distributed to streaming platforms (e.g., 2026). This ensures absolute transparency and compliance for copyright, platform algorithms, and human reviewers.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
             <!-- Prompt Engineering Section -->
             <div class="card border-0 shadow-sm bg-body-tertiary">
                 <div class="card-body p-4 p-lg-5">
                     <div class="text-center mb-4">
                         <h4 class="fw-bold text-body-emphasis">The Prompt Engineering Philosophy</h4>
-                        <p class="text-body-secondary">Generating good music isn't just pushing a button. It requires a rigorous, iterative workflow.</p>
+                        <p class="text-body-secondary">Generating good music and art isn't just pushing a button. It requires a rigorous, iterative workflow.</p>
                     </div>
                     <div class="row">
                         <div class="col-md-6">
                             <ul class="list-group list-group-flush bg-transparent">
                                 <li class="list-group-item bg-transparent border-0 text-body-emphasis"><i class="fa-solid fa-angle-right text-primary me-2" aria-hidden="true"></i><strong>No Copyrighted Triggers:</strong> We never use real artist names or copyrighted song titles in our prompts to ensure 100% original sonic output.</li>
                                 <li class="list-group-item bg-transparent border-0 text-body-emphasis"><i class="fa-solid fa-angle-right text-primary me-2" aria-hidden="true"></i><strong>Clean Styles:</strong> Every song is built on a self-contained, keyword-heavy Styles prompt that dictates the exact genre, instrumentation, and era.</li>
-                                <li class="list-group-item bg-transparent border-0 text-body-emphasis"><i class="fa-solid fa-angle-right text-primary me-2" aria-hidden="true"></i><strong>Diacritical & Cultural Precision:</strong> We mandate the use of accurate typographic representation and proper indigenous names (e.g., Uluṟu instead of Ayers Rock, Québec, Montréal). We do not accept Anglicized spelling shortcuts.</li>
+                                <li class="list-group-item bg-transparent border-0 text-body-emphasis"><i class="fa-solid fa-angle-right text-primary me-2" aria-hidden="true"></i><strong>Diacritical & Cultural Precision:</strong> We mandate the exact typographic representation of proper indigenous names and locations. For example, we require the precise spelling <strong>Uluṟu</strong>—strictly rejecting both the colonial name "Ayers Rock" and the unaccented "Uluru." We similarly enforce proper accents for locations like Québec and Montréal.</li>
                             </ul>
                         </div>
                         <div class="col-md-6">
                             <ul class="list-group list-group-flush bg-transparent">
                                 <li class="list-group-item bg-transparent border-0 text-body-emphasis"><i class="fa-solid fa-angle-right text-primary me-2" aria-hidden="true"></i><strong>Phonetic Control:</strong> AI struggles with local names. We manually spell out acronyms and fictional locations phonetically to force perfect pronunciation.</li>
                                 <li class="list-group-item bg-transparent border-0 text-body-emphasis"><i class="fa-solid fa-angle-right text-primary me-2" aria-hidden="true"></i><strong>Iterative Budgeting:</strong> Creating a final track often requires rendering dozens of variations, adjusting the "Weirdness" parameters, and piecing together extensions to get the perfect narrative fit.</li>
+                                <li class="list-group-item bg-transparent border-0 text-body-emphasis"><i class="fa-solid fa-angle-right text-primary me-2" aria-hidden="true"></i><strong>Visual Blueprinting:</strong> We do not rely on single-shot text prompts for visual assets. We utilize Image-to-Image blueprints and low-denoising workflows to force the AI to adhere to exact typographic layouts, overriding its tendency to hallucinate lettering.</li>
                             </ul>
                         </div>
                     </div>
