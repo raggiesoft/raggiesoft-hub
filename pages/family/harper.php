@@ -19,16 +19,16 @@
                         <i class="fa-duotone fa-file-audio me-2"></i>_workspace/harper.sh
                     </span>
                     <span class="badge border bg-transparent" style="border-color: var(--family-harper) !important; color: var(--family-harper) !important;">
-                        FFmpeg / LAME
+                        FFmpeg / Real-ESRGAN / 7-Zip
                     </span>
                 </div>
                 
                 <h1 class="display-4 fw-bold mb-2 text-body">Harper</h1>
-                <p class="lead mb-4" style="color: var(--family-harper);">The Studio Engineer</p>
+                <p class="lead mb-4" style="color: var(--family-harper);">The Studio Engineer (v21.7.0)</p>
                 
                 <figure class="border-start ps-3 mb-0" style="border-color: var(--family-harper) !important;">
                     <blockquote class="blockquote fs-6 mb-0 text-muted">
-                        <p class="fst-italic mb-0">"LOUD IS GOOD. But optimized bitrate is better. Let's make some noise!"</p>
+                        <p class="fst-italic mb-0">"I live in the studio. I take raw master tapes and press them for the airwaves."</p>
                     </blockquote>
                 </figure>
 
@@ -63,18 +63,19 @@
 <div class="row g-5 mb-5">
     <div class="col-md-12 col-xl-6">
         <div class="p-4 h-100 rounded-3 border bg-body-tertiary">
-            <h3 class="border-bottom pb-3 mb-4" style="color: var(--family-harper);"><i class="fa-duotone fa-waveform-lines me-2"></i>The Transcoder</h3>
-            <p>Harper is a recursive audio processing script living in the studio directory. She is responsible for the entire <strong>Engine Room Records</strong> archival pipeline.</p>
+            <h3 class="border-bottom pb-3 mb-4" style="color: var(--family-harper);"><i class="fa-duotone fa-waveform-lines me-2"></i>The Heavy Lifter</h3>
+            <p>Harper is a highly-concurrent audio processing script living in the studio directory. She is the backbone of the <strong>Engine Room Records</strong> archival pipeline, managing everything from metadata to multi-core rendering.</p>
             
             <h5 class="fw-bold mt-4 mb-3 text-body">Audio Pipeline</h5>
             <ul class="list-group list-group-flush bg-transparent mb-4">
-                <li class="list-group-item bg-transparent px-0"><i class="fa-duotone fa-magnifying-glass-waveform me-2" style="color: var(--family-harper);"></i><strong>Discovery:</strong> Recursively scans the workspace for fresh Master WAV files.</li>
-                <li class="list-group-item bg-transparent px-0"><i class="fa-duotone fa-file-mp3 me-2" style="color: var(--family-harper);"></i><strong>Transcoding:</strong> Uses FFmpeg to generate web-optimized MP3 (320kbps) and OGG mirrors.</li>
-                <li class="list-group-item bg-transparent px-0"><i class="fa-duotone fa-box-archive me-2" style="color: var(--family-harper);"></i><strong>Archival:</strong> Auto-generates ZIP archives for licensing deliverables.</li>
+                <li class="list-group-item bg-transparent px-0"><i class="fa-duotone fa-magnifying-glass-waveform me-2" style="color: var(--family-harper);"></i><strong>Discovery:</strong> Scans for <code>tracks.json</code> and pulls pristine master audio directly from the Artist Vault.</li>
+                <li class="list-group-item bg-transparent px-0"><i class="fa-duotone fa-microchip me-2" style="color: var(--family-harper);"></i><strong>Multi-Threading:</strong> Leverages Dynamic Hardware Threading for parallelized multi-tier audio pressing.</li>
+                <li class="list-group-item bg-transparent px-0"><i class="fa-duotone fa-file-mp3 me-2" style="color: var(--family-harper);"></i><strong>Transcoding:</strong> Generates 128kbps "Radio Edits", High-Fidelity MP3s (V0), and OGGs (Q9).</li>
+                <li class="list-group-item bg-transparent px-0"><i class="fa-duotone fa-image me-2" style="color: var(--family-harper);"></i><strong>Enhancement:</strong> Integrates Real-ESRGAN for 4K artwork upscaling and auto-binds lyric booklets.</li>
             </ul>
             <div class="bg-dark text-light p-3 rounded font-monospace small shadow-sm">
-                <span class="text-secondary"># The "Make it Loud" Command</span><br>
-                <span class="text-success">michael@studio:~$</span> ./harper.sh --process "The Stardust Engine"
+                <span class="text-secondary"># Rebuild the Vault with Parallel Processing</span><br>
+                <span class="text-success">michael@studio:~$</span> ./harper.sh --rebuild
             </div>
         </div>
     </div>
@@ -82,9 +83,9 @@
     <div class="col-md-12 col-xl-6">
         <div class="p-4 h-100 rounded-3 border bg-opacity-10" style="background-color: rgba(102, 16, 242, 0.05); border-color: var(--family-harper) !important;">
             <h3 class="border-bottom pb-3 mb-4" style="color: var(--family-harper); border-color: var(--family-harper) !important;"><i class="fa-duotone fa-headphones-simple me-2"></i>The Audiophile</h3>
-            <p class="lead fs-5">"High-energy and optimized."</p>
-            <p>Harper ensures the creative flow isn't interrupted by technical limitations. She is the reason the "Stardust Player" works seamlessly across all browsers.</p>
-            <p>Her studio environment is built for accessibility. As an ambulatory wheelchair user, she has designed her workflow to minimize physical strain—everything is scripted, automated, and within reach. This efficiency translates directly to her code: fast, precise, and highly optimized.</p>
+            <p class="lead fs-5">"High-Energy, Efficient, Loud."</p>
+            <p>Harper ensures the creative flow isn't interrupted by technical limitations. She calculates exact track runtimes, parses Schema.org JSON-LD properties, and issues universal ERR-ID tracking numbers automatically.</p>
+            <p>Her studio environment is built for accessibility. As an ambulatory wheelchair user, she has designed her workflow to minimize physical strain—everything is scripted, automated, and within reach. This efficiency translates directly to her code: fast, dynamic, and highly optimized for modern hardware constraints.</p>
             <p class="mb-0 text-muted small">She proves that accessibility isn't just about accommodation; it's about superior engineering.</p>
         </div>
     </div>
@@ -95,34 +96,31 @@
         <div class="card shadow-lg font-monospace" style="background-color: #0d1117; color: #c9d1d9; border: 1px solid var(--family-harper);">
             <div class="card-header fw-bold d-flex justify-content-between align-items-center" 
                  style="background-color: rgba(102, 16, 242, 0.15); border-bottom: 1px solid var(--family-harper); color: #d0bfff;">
-                <span><i class="fa-duotone fa-sliders-up me-2"></i>harper.sh --process</span>
+                <span><i class="fa-duotone fa-sliders-up me-2"></i>harper.sh --rebuild</span>
                 <span class="badge text-white" style="background-color: #6610f2;">PROCESSING</span>
             </div>
             <div class="card-body p-4">
                 <div style="opacity: 1;">
-                    <p class="mb-2"><span style="color: #3fb950;">michael@studio:~$</span> ./harper.sh</p>
+                    <p class="mb-2"><span style="color: #3fb950;">michael@studio:~$</span> ./harper.sh --rebuild</p>
                     
                     <div class="mb-3 ps-3 border-start border-opacity-25" style="border-color: var(--family-harper) !important; color: #c9d1d9;">
-                        <span style="color: #d0bfff;">🎧 HARPER:</span> Alright! Firing up the mixing board (v18)... Let's make some noise!<br>
-                        <span style="color: #8b949e;">🎚️ Targeting Studio Archives: ../engine-room-records/artists</span><br><br>
+                        <span style="color: #d0bfff;">🎧 HARPER:</span> Alright! Firing up the mixing board (v21.7.0)... Let's hit the Vault!<br>
+                        <span style="color: #8b949e;">   🎚️ Targeting Studio Archives: ../engine-room-records/artists</span><br>
+                        <span style="color: #8b949e;">   🔍 HARPER: Scanning system hardware for multi-threading...</span><br>
+                        <span style="color: #8b949e;">   🎛️ System reports 8 logical CPU cores.</span><br><br>
                         
-                        <span style="color: #d0bfff;">[1/3] Processing: "Neon Hearts (1989)"</span><br>
-                        &nbsp;&nbsp;&nbsp;> Found Master: <span style="color: #a277ff;">01-Neon-Hearts.wav</span> (24-bit / 48kHz)<br>
-                        &nbsp;&nbsp;&nbsp;> FFmpeg: WAV -> MP3 (320k) ... <span style="color: #3fb950;">DONE</span><br>
-                        &nbsp;&nbsp;&nbsp;> FFmpeg: WAV -> OGG (q5) ..... <span style="color: #3fb950;">DONE</span><br>
-                        &nbsp;&nbsp;&nbsp;> Tags: ID3v2 wrote "The Stardust Engine"<br><br>
-                        
-                        <span style="color: #d0bfff;">[2/3] Processing: "Electric Color (1987)"</span><br>
-                        &nbsp;&nbsp;&nbsp;> Found Master: <span style="color: #a277ff;">07-Light-Up-The-Night.wav</span><br>
-                        &nbsp;&nbsp;&nbsp;> FFmpeg: Encoding... [====================] 100%<br>
-                        &nbsp;&nbsp;&nbsp;<span style="color: #3fb950;">✓ Track ready for streaming.</span><br><br>
-                        
-                        <span style="color: #d0bfff;">[3/3] Creating License Packs (7-Zip)</span><br>
-                        &nbsp;&nbsp;&nbsp;> Compressing: archives/electric-color-wav.7z ... <span style="color: #3fb950;">OK</span>
+                        <span style="color: #d0bfff;">   💿 HARPER: Processing 'Neon Hearts' by The Stardust Engine...</span><br>
+                        <span style="color: #8b949e;">      🖼️ HARPER: Artwork detected. Firing up the upscaler to 4K...</span><br>
+                        <span style="color: #8b949e;">      ⏱️ HARPER: Track runtime clocked at 3:45</span><br>
+                        <span style="color: #8b949e;">         -> 💾 Pulling master-wav from the vault...</span><br>
+                        <span style="color: #8b949e;">         -> 📋 Drafting DistroKid-Optimized Metadata sheet...</span><br>
+                        <span style="color: #8b949e;">         -> 🎚️ Pressing Multi-Tier Audio (Parallelized)...</span><br><br>
+
+                        <span style="color: #d0bfff;">   📦 HARPER: Vault secure. Archives packed.</span>
                     </div>
                     
                     <p class="mb-0 mt-3">
-                        <span style="color: #d0bfff;">🎧 HARPER:</span> Mixdown complete! That sounded awesome.<br>
+                        <span style="color: #d0bfff;">🎧 HARPER:</span> Session complete! The radio edits are public, and the master tapes are locked in the vault.<br>
                         <span style="color: #3fb950;">michael@studio:~$</span> <span class="blink-cursor">_</span>
                     </p>
                 </div>
