@@ -130,6 +130,7 @@
                             <ul class="list-group list-group-flush bg-transparent">
                                 <li class="list-group-item bg-transparent border-0 text-body-emphasis"><i class="fa-solid fa-angle-right text-primary me-2" aria-hidden="true"></i><strong>No Copyrighted Triggers:</strong> We never use real artist names or copyrighted song titles in our prompts to ensure 100% original sonic output.</li>
                                 <li class="list-group-item bg-transparent border-0 text-body-emphasis"><i class="fa-solid fa-angle-right text-primary me-2" aria-hidden="true"></i><strong>Clean Styles:</strong> Every song is built on a self-contained, keyword-heavy Styles prompt that dictates the exact genre, instrumentation, and era.</li>
+                                <li class="list-group-item bg-transparent border-0 text-body-emphasis"><i class="fa-solid fa-angle-right text-primary me-2" aria-hidden="true"></i><strong>Diacritical & Cultural Precision:</strong> We mandate the use of accurate typographic representation and proper indigenous names (e.g., Uluṟu instead of Ayers Rock, Québec, Montréal). We do not accept Anglicized spelling shortcuts.</li>
                             </ul>
                         </div>
                         <div class="col-md-6">
