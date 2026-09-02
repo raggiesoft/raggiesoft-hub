@@ -22,9 +22,9 @@
             <div class="col-lg-2 col-md-6">
                 <h6 class="fw-bold mb-3">Projects</h6>
                 <ul class="nav flex-column small">
-                    <li class="nav-item mb-2"><a href="/engine-room" class="nav-link p-0 text-body-secondary">Engine Room Records</a></li>
+                    <li class="nav-item mb-2"><a href="/engine-room/stardust-engine" class="nav-link p-0 text-body-secondary">The Stardust Engine</a></li>
                     <li class="nav-item mb-2"><a href="/family" class="nav-link p-0 text-body-secondary">Family</a></li>
-                    <li class="nav-item mb-2"><a href="/raggiesoft-books/aethel-saga" class="nav-link p-0 text-body-secondary">Silver Gauntlet of Aethel</a></li>
+                    <li class="nav-item mb-2"><a href="/raggiesoft-media" class="nav-link p-0 text-body-secondary">RaggieSoft Media</a></li>
                 </ul>
             </div>
 
