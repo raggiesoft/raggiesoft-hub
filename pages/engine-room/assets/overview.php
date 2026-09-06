@@ -164,7 +164,7 @@ $pageTitle = "Strategic Assets - Engine Room Records";
                             <div class="col-6">
                                 <ul class="list-unstyled text-muted">
                                     <li class="mb-2"><strong>Hardware:</strong> 24k Gold Plated (Corrosion Resist)</li>
-                                    [cite_start]<li class="mb-2"><strong>Snare:</strong> The "Gated Reverb" Custom [cite: 74]</li>
+                                    [cite_start]<li class="mb-2"><strong>Snare:</strong> The "Gated Reverb" Custom </li>
                                     <li class="mb-2"><strong>Status:</strong> Tour Ready</li>
                                 </ul>
                             </div>
