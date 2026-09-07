@@ -1,0 +1,58 @@
+{
+  "common": {
+    "site": "shiloh",
+    "brandFont": ["Impact", "sans-serif"],
+    "siteName": "Crimson Node",
+    "headerMenu": "engine-room/artists/crimson-node/header-crimson",
+    "footer": "engine-room/artists/crimson-node/footer-crimson",
+    "showSidebar": true,
+    "sidebar": "engine-room/artists/crimson-node/sidebar-phalanx",
+    "navbarBrandLogo": "https://assets.raggiesoft.com/engine-room-records/artists/crimson-node/2002-crimson-node/album-art.jpg",
+    "navbarBrandText": "<span class=\"navbar-brand-text\"><span class=\"d-none d-md-inline\">Crimson </span>Node</span>",
+    "navbarBrandLink": "/engine-room/artists/crimson-node",
+    "ogImage": "https://assets.raggiesoft.com/engine-room-records/artists/crimson-node/2002-crimson-node/album-art.jpg"
+  },
+
+  "/engine-room/artists/crimson-node/family": {
+    "view": "pages/engine-room/artists/crimson-node/family/overview",
+    "title": "The Phalanx | Crimson Node",
+    "ogTitle": "The Phalanx - The Albemarle Ecosystem",
+    "schemaType": "MusicGroup",
+    "showSidebar": false
+  },
+  "/engine-room/artists/crimson-node/family/matt-miller": {
+    "view": "pages/engine-room/artists/crimson-node/family/matt-miller",
+    "title": "Matt Miller | Crimson Node",
+    "ogTitle": "Matt Miller - The Crimson Node"
+  },
+  "/engine-room/artists/crimson-node/family/sarah-miller": {
+    "view": "pages/engine-room/artists/crimson-node/family/sarah-miller",
+    "title": "Sarah Miller | Crimson Node",
+    "ogTitle": "Sarah Miller - Co-Manager & Primary Protector"
+  },
+  "/engine-room/artists/crimson-node/family/emily-miller": {
+    "view": "pages/engine-room/artists/crimson-node/family/emily-miller",
+    "title": "Emily Miller | Crimson Node",
+    "ogTitle": "Emily Miller - Lead Vocals"
+  },
+  "/engine-room/artists/crimson-node/family/jessica-brooks": {
+    "view": "pages/engine-room/artists/crimson-node/family/jessica-brooks",
+    "title": "Jessica Brooks | Crimson Node",
+    "ogTitle": "Jessica Brooks - Bass & Analog Synthesizers"
+  },
+  "/engine-room/artists/crimson-node/family/rachel-miller": {
+    "view": "pages/engine-room/artists/crimson-node/family/rachel-miller",
+    "title": "Rachel Miller | Crimson Node",
+    "ogTitle": "Rachel Miller - Drums & Percussion"
+  },
+  "/engine-room/artists/crimson-node/family/shiloh-brooks": {
+    "view": "pages/engine-room/artists/crimson-node/family/shiloh-brooks",
+    "title": "Shiloh Brooks | Crimson Node",
+    "ogTitle": "Shiloh Brooks - Rhythm Guitar"
+  },
+  "/engine-room/artists/crimson-node/family/chloe-brooks": {
+    "view": "pages/engine-room/artists/crimson-node/family/chloe-brooks",
+    "title": "Chloe Brooks | Crimson Node",
+    "ogTitle": "Chloe Brooks - The Master Strategist"
+  }
+}

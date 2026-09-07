@@ -47,10 +47,10 @@ $album_path_web = '/engine-room-records/artists/crimson-node/2002-crimson-node';
             <div class="alert alert-dark border-glow bg-hud-red h-100 mb-0 shadow-glow">
                 <div class="d-flex">
                     <div class="me-3">
-                        <i class="fa-duotone fa-warehouse text-white fs-3"></i>
+                        <i class="fa-duotone fa-warehouse fs-3"></i>
                     </div>
                     <div>
-                        <h5 class="alert-heading h6 fw-bold text-white text-uppercase mb-1">The Garage Studio</h5>
+                        <h5 class="alert-heading h6 fw-bold text-uppercase mb-1">The Garage Studio</h5>
                         <p class="mb-0 small text-muted">
                             Engineered in the Kids House attached garage, the space was entirely repurposed from vehicle storage into a sound-dampened rehearsal room. Matt oversaw all audio production from his custom Vanguard LogicPad rig, utilizing a strict "Rotating Vocalist" protocol for his sister and cousins to seamlessly trade off lead duties depending on the track's required energy.
                         </p>
@@ -64,10 +64,10 @@ $album_path_web = '/engine-room-records/artists/crimson-node/2002-crimson-node';
             <div class="alert alert-dark border-secondary bg-hud-blue h-100 mb-0 shadow-sm">
                 <div class="d-flex">
                     <div class="me-3">
-                        <i class="fa-duotone fa-file-signature text-white fs-3"></i>
+                        <i class="fa-duotone fa-file-signature fs-3"></i>
                     </div>
                     <div>
-                        <h5 class="alert-heading h6 fw-bold text-white text-uppercase mb-1">The Engine Room Signing</h5>
+                        <h5 class="alert-heading h6 fw-bold text-uppercase mb-1">The Engine Room Signing</h5>
                         <p class="mb-0 small text-muted">
                             Discovered by <a href="/engine-room/artists/stardust-engine/band/ryan-oconnell">Ryan O'Connell</a> during a Commonwealth Polytechnic Institute (CPI) open house, the burned CD-R demo tape was passed to Engine Room Records CEO Holly O'Connell. Recognizing a shared ethos of independence, fierce family loyalty, and blue-collar musical integrity, the label officially signed <em>Crimson Node</em> to their Blacksburg-based roster.
                         </p>
