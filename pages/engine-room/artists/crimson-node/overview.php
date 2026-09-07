@@ -123,26 +123,40 @@ if ($eras) {
 
     <div class="row g-5 justify-content-center">
         
+        <!-- Card 1: The Manager -->
         <div class="col-md-6 col-lg-5">
             <div class="card bg-hud-red h-100 border-primary shadow-glow hover-lift overflow-hidden">
                 <div class="card-body p-4 text-center d-flex flex-column">
-                    <div class="mb-3"><i class="fa-duotone fa-laptop-code fa-3x text-white"></i></div>
-                    <h3 class="h4 text-white fw-bold text-uppercase mb-1">The Manager</h3>
-                    <p class="small text-white-50 font-monospace mb-3">Matt Miller // The Crimson Node</p>
-                    <p class="text-white-75 small mb-0">
+                    <div class="mb-3"><i class="fa-duotone fa-laptop-code fa-3x opacity-75"></i></div>
+                    
+                    <!-- Stripped text-white, letting the HUD class dictate the safe color -->
+                    <h3 class="h4 fw-bold text-uppercase mb-1">The Manager</h3>
+                    
+                    <!-- Replaced text-white-50 with opacity-50 -->
+                    <p class="small font-monospace opacity-50 mb-3">Matt Miller // The Crimson Node</p>
+                    
+                    <!-- Replaced text-white-75 with opacity-75 -->
+                    <p class="small opacity-75 mb-0">
                         Functionally non-verbal and operating from a manual wheelchair, Matt acts as the band's brilliant, systems-oriented producer. From his Tactile Command Rig, he oversees the digital track routing and manages the band's entire operation without speaking a single word.
                     </p>
                 </div>
             </div>
         </div>
 
+        <!-- Card 2: The Rotating Vocalist -->
         <div class="col-md-6 col-lg-5">
             <div class="card bg-hud-blue h-100 border-info shadow-glow hover-lift overflow-hidden">
                 <div class="card-body p-4 text-center d-flex flex-column">
-                    <div class="mb-3"><i class="fa-duotone fa-microphone-stand fa-3x text-white"></i></div>
-                    <h3 class="h4 text-white fw-bold text-uppercase mb-1">The Rotating Vocalist</h3>
-                    <p class="small text-white-50 font-monospace mb-3">Emily, Jessica, Rachel, & Shiloh</p>
-                    <p class="text-white-75 small mb-0">
+                    <div class="mb-3"><i class="fa-duotone fa-microphone-stand fa-3x opacity-75"></i></div>
+                    
+                    <!-- Stripped text-white -->
+                    <h3 class="h4 fw-bold text-uppercase mb-1">The Rotating Vocalist</h3>
+                    
+                    <!-- Replaced text-white-50 with opacity-50 -->
+                    <p class="small font-monospace opacity-50 mb-3">Emily, Jessica, Rachel, & Shiloh</p>
+                    
+                    <!-- Replaced text-white-75 with opacity-75 -->
+                    <p class="small opacity-75 mb-0">
                         The band rejects the concept of a single lead singer. Instead, the women of the Albemarle compound seamlessly rotate through the vocal booth, trading powerhouse stadium belts, aggressive punk energy, and melodic power-ballads to match the emotional weight of each track.
                     </p>
                 </div>
