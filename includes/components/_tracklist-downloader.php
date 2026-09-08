@@ -1,22 +1,15 @@
 <?php
 /**
  * COMPONENT: _tracklist-downloader.php
- * VERSION: 10.3 (Schema.org Deep Metadata, Store Routing & DSP Exemption Logic)
+ * VERSION: 10.4 (Fourthwall Integration & Free Web Archive Routing)
  *
  * LICENSE:
  * The architecture and code of this file are licensed under the MIT License.
  * Copyright (c) 2026 Michael P. Ragsdale / RaggieSoft
- * * The underlying narrative, lore, and music tracks delivered by this component 
+ * The underlying narrative, lore, and music tracks delivered by this component 
  * are licensed under Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0),
  * except where commercial distribution exemptions apply (e.g., DSP streaming links).
  */
-
-// ==============================================================================
-//  FEATURE FLAG: THE VAULT PAYWALL
-// ==============================================================================
-$vault_active = false; 
-$vault_under_construction = true; // Set to TRUE to hide ONLY the massive master files temporarily
-// ==============================================================================
 
 $base_web_path = 'https://assets.raggiesoft.com' . $album_path_web;
 $tracks_json_url = $base_web_path . '/tracks.json?v=' . time();
@@ -59,6 +52,12 @@ $real_release_year = $real_release_date !== 'TBA' ? substr(trim($real_release_da
 
 $album_name = isset($album_data['name']) ? $album_data['name'] : 'Unknown Album';
 $archive_base_name = get_archive_name($album_name, $narrative_year);
+
+// Define the Artist Name for UI rendering, defaulting to the label
+$display_artist = !empty($album_data['byArtist']['name']) ? $album_data['byArtist']['name'] : 'Engine Room Records';
+
+// The Auto-Generated Free Archive ZIP Path
+$free_archive_zip = $base_web_path . '/web-mp3/' . $archive_base_name . '-free-archive.zip';
 
 // --- METADATA TRANSLATION (SCHEMA.ORG INTEGRATION) ---
 $raw_release_type = isset($album_data['albumReleaseType']) ? basename($album_data['albumReleaseType']) : 'AlbumRelease';
@@ -175,7 +174,7 @@ $js_playlist = [];
         <div class="d-flex align-items-start mt-3">
             <i class="fa-solid fa-circle-info text-secondary mt-1 me-3 fs-5"></i>
             <p class="small text-body-secondary mb-0 lh-sm">
-                <strong>ARCHIVIST NOTE:</strong> <em>The Stardust Engine</em> is a narrative-driven musical universe. The <strong>Narrative Era</strong> denotes when the album was recorded by Ryan and Cassidy within the fictional history of the band. The <strong>DSP Release</strong> reflects the legal copyright date when the audio files were officially pressed and distributed to global streaming platforms.
+                <strong>ARCHIVIST NOTE:</strong> <em><?php echo htmlspecialchars($display_artist); ?></em> is a narrative-driven musical universe. The <strong>Narrative Era</strong> denotes when the album was recorded within the fictional history of the band. The <strong>DSP Release</strong> reflects the legal copyright date when the audio files were officially pressed and distributed to global streaming platforms.
             </p>
         </div>
     </div>
@@ -237,22 +236,20 @@ $js_playlist = [];
         <p class="text-muted small mb-3">Support the band and own the master tapes. High-fidelity payloads are available directly from the Engine Room storefront.</p>
         
         <div class="d-flex gap-2 flex-wrap">
+            <a href="<?php echo htmlspecialchars($free_archive_zip); ?>" download class="btn btn-outline-success">
+                <i class="fa-solid fa-file-zipper me-2"></i>Free Archive (128kbps)
+            </a>
+            
             <?php if (!empty($store_standard_url)): ?>
                 <a href="<?php echo htmlspecialchars($store_standard_url); ?>" target="_blank" class="btn btn-outline-info">
-                    <i class="fa-solid fa-file-zipper me-2"></i>Standard Archive (MP3/OGG)
+                    <i class="fa-solid fa-compact-disc me-2"></i>Standard Archive (V0 MP3/OGG)
                 </a>
             <?php endif; ?>
             
             <?php if (!empty($store_audiophile_url)): ?>
                 <a href="<?php echo htmlspecialchars($store_audiophile_url); ?>" target="_blank" class="btn btn-outline-warning">
-                    <i class="fa-solid fa-waveform-lines me-2"></i>Audiophile Vault (WAV)
+                    <i class="fa-solid fa-waveform-lines me-2"></i>Audiophile Vault (FLAC/WAV)
                 </a>
-            <?php endif; ?>
-
-            <?php if (empty($store_standard_url) && empty($store_audiophile_url)): ?>
-                <span class="btn btn-outline-secondary disabled">
-                    <i class="fa-solid fa-clock me-2"></i>Archives Pending Processing
-                </span>
             <?php endif; ?>
         </div>
     </div>
@@ -315,19 +312,7 @@ $js_playlist = [];
         $lyrics_url = $base_web_path . '/lyrics/' . $base_name . '.md' . $version_string;
         $dl_web_mp3 = $base_web_path . '/web-mp3/' . $base_name . '.mp3' . $version_string;
 
-        // URL Routing based on Feature Flag
-        if ($vault_active) {
-            $player_src = $dl_web_mp3;
-            $gateway_base = "/engine-room/api/download.php?album=" . $archive_base_name . "&track=" . $base_name;
-            $dl_mp3 = $gateway_base . "&format=mp3";
-            $dl_ogg = $gateway_base . "&format=ogg";
-            $dl_wav = $gateway_base . "&format=wav";
-        } else {
-            $player_src = $dl_web_mp3;
-            $dl_mp3 = $base_web_path . '/vault/mp3/' . $base_name . '.mp3' . $version_string;
-            $dl_ogg = $base_web_path . '/vault/ogg/' . $base_name . '.ogg' . $version_string;
-            $dl_wav = $base_web_path . '/vault/wav/' . $base_name . '.wav'; 
-        }
+        $player_src = $dl_web_mp3;
 
         $legacy_tier = isset($track['legacyTier']) ? $track['legacyTier'] : null;
         $lore_note = isset($track['loreNote']) ? $track['loreNote'] : '';
@@ -353,7 +338,7 @@ $js_playlist = [];
         
         <div class="list-group-item bg-transparent border-secondary text-muted py-3 track-row <?php echo $indent_class; ?>" id="track-row-<?php echo $index; ?>" data-isrc="<?php echo htmlspecialchars($isrc_code); ?>">
             <div class="row align-items-center">
-                <div class="col-md-7 mb-2 mb-md-0">
+                <div class="col-md-8 mb-2 mb-md-0">
                     <div class="d-flex align-items-center flex-wrap">
                         <span class="text-secondary fw-bold me-3" style="width: 25px;"><?php echo $track['track']; ?>.</span>
                         <div>
@@ -387,33 +372,17 @@ $js_playlist = [];
                     </div>
                 </div>
 
-                <div class="col-md-5 text-end mt-2 mt-md-0">
-                    <div class="btn-group" role="group">
-                        <button type="button" class="btn btn-sm btn-primary btn-play-index" data-index="<?php echo $index; ?>"><i class="fa-duotone fa-play me-2"></i>Play</button>
-                        <button type="button" class="btn btn-sm btn-outline-info btn-view-lyrics" data-title="<?php echo htmlspecialchars($track['title']); ?>" data-url="<?php echo $lyrics_url; ?>"><i class="fa-duotone fa-book-open me-2"></i>Lyrics</button>
-                        
-                        <div class="btn-group" role="group">
-                            <?php if ($vault_active): ?>
-                                <button type="button" class="btn btn-sm btn-outline-warning dropdown-toggle" data-bs-toggle="dropdown" title="Vault Access Required"><i class="fa-solid fa-lock"></i></button>
-                            <?php else: ?>
-                                <button type="button" class="btn btn-sm btn-outline-secondary dropdown-toggle" data-bs-toggle="dropdown"><i class="fa-duotone fa-download"></i></button>
-                            <?php endif; ?>
-                            
-                            <ul class="dropdown-menu dropdown-menu-end bg-dark border-secondary shadow">
-                                <li><h6 class="dropdown-header text-secondary"><i class="fa-solid fa-broadcast-tower me-1"></i> Public Stream</h6></li>
-                                <li><a class="dropdown-item text-light license-gate" download href="<?php echo $dl_web_mp3; ?>">MP3 (128kbps)</a></li>
-                                
-                                <?php if (!$vault_under_construction): ?>
-                                    <li><hr class="dropdown-divider border-secondary"></li>
-                                    <li><h6 class="dropdown-header <?php echo $vault_active ? 'text-warning' : 'text-white'; ?>"><i class="fa-solid <?php echo $vault_active ? 'fa-vault' : 'fa-compact-disc'; ?> me-1"></i> <?php echo $vault_active ? 'Premium Vault' : 'Master Tapes'; ?></h6></li>
-                                    <li><a class="dropdown-item text-light license-gate" href="<?php echo $dl_mp3; ?>">MP3 <?php echo $vault_active ? '(V0)' : '(V0)'; ?></a></li>
-                                    <li><a class="dropdown-item text-light license-gate" href="<?php echo $dl_ogg; ?>">OGG <?php echo $vault_active ? '(Q9)' : '(Q9)'; ?></a></li>
-                                    <li><hr class="dropdown-divider border-secondary"></li>
-                                    <li><a class="dropdown-item text-light license-gate" href="<?php echo $dl_wav; ?>">WAV (Lossless)</a></li>
-                                <?php endif; ?>
-                            </ul>
-                        </div>
-
+                <div class="col-md-4 text-end mt-2 mt-md-0">
+                    <div class="btn-group" role="group" aria-label="Track Actions">
+                        <button type="button" class="btn btn-sm btn-primary btn-play-index" data-index="<?php echo $index; ?>" title="Play Track">
+                            <i class="fa-duotone fa-play me-2"></i>Play
+                        </button>
+                        <button type="button" class="btn btn-sm btn-outline-info btn-view-lyrics" data-title="<?php echo htmlspecialchars($track['title']); ?>" data-url="<?php echo $lyrics_url; ?>" title="View Lyrics">
+                            <i class="fa-duotone fa-book-open me-2"></i>Lyrics
+                        </button>
+                        <a href="<?php echo $dl_web_mp3; ?>" download class="btn btn-sm btn-outline-secondary license-gate" title="Download Free MP3">
+                            <i class="fa-duotone fa-download"></i>
+                        </a>
                     </div>
                 </div>
             </div>
