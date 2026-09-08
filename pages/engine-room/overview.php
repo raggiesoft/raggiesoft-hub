@@ -236,7 +236,7 @@ $pageTitle = "Engine Room Records™ | Loud. Raw. Real.";
 
         <div class="col-md-6 col-xl-3">
             <a href="/engine-room/artists/fractured-prisms" class="text-decoration-none">
-                <div class="card roster-card inactive h-100 p-4 text-center">
+                <div class="card roster-card h-100 p-4 text-center">
                     <div class="mb-3">
                         <img src="https://assets.raggiesoft.com/engine-room-records/artists/fractured-prisms/band-logo-colour.jpg" 
                              alt="Fractured Prisms" style="height: 60px; object-fit: contain;">
