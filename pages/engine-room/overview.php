@@ -235,16 +235,19 @@ $pageTitle = "Engine Room Records™ | Loud. Raw. Real.";
         </div>
 
         <div class="col-md-6 col-xl-3">
-            <div class="card roster-card inactive h-100 p-4 text-center">
-                <div class="mb-3 d-flex align-items-center justify-content-center" style="height: 60px;">
-                    <i class="fa-duotone fa-gem fa-3x text-secondary opacity-75"></i>
+            <a href="/engine-room/artists/fractured-prisms" class="text-decoration-none">
+                <div class="card roster-card inactive h-100 p-4 text-center">
+                    <div class="mb-3">
+                        <img src="https://assets.raggiesoft.com/engine-room-records/artists/fractured-prisms/band-logo-colour.jpg" 
+                             alt="Fractured Prisms" style="height: 60px; object-fit: contain;">
+                    </div>
+                    <h3 class="h6 fw-bold text-body-emphasis text-uppercase mb-2">Fractured Prisms&trade;</h3>
+                    <p class="text-body-secondary small mb-2 flex-grow-1">
+                        British Synth-Pop and Retro-Engineered Soundscapes.
+                    </p>
+                    <span class="badge bg-success-subtle text-success-emphasis border border-success-subtle mt-auto mx-auto font-monospace"><i class="fa-solid fa-signal-stream me-1"></i> Live on DSPs</span>
                 </div>
-                <h3 class="h6 fw-bold text-body-emphasis text-uppercase mb-2">Fractured Prisms&trade;</h3>
-                <p class="text-body-secondary small mb-2 flex-grow-1">
-                    British Synth-Pop and Retro-Engineered Soundscapes.
-                </p>
-                <span class="badge bg-success-subtle text-success-emphasis border border-success-subtle mt-auto mx-auto font-monospace"><i class="fa-solid fa-signal-stream me-1"></i> Live on DSPs</span>
-            </div>
+            </a>
         </div>
 
         <div class="col-md-6 col-xl-3">
