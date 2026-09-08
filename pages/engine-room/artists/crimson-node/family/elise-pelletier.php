@@ -1,7 +1,7 @@
 <div class="row">
     <div class="col-12 mb-4">
         <h1 class="display-4 fw-bold" style="font-family: 'Impact', sans-serif; letter-spacing: 2px;">
-            ELISE <span class="text-dark">PELLETIER</span>
+            ELISE <span class="opacity-75">PELLETIER</span>
         </h1>
         <h4 class="text-muted">Guest Vocals / The Safe Variable</h4>
         <hr class="mt-4 mb-0">
@@ -10,7 +10,7 @@
     <!-- Quick Stats Sidebar Area -->
     <div class="col-lg-4 mb-4 mb-lg-0">
         <div class="card border-0 shadow-sm h-100" style="border-top: 5px solid #212529;">
-            <div class="card-body bg-light">
+            <div class="card-body bg-body-tertiary">
                 <h5 class="fw-bold mb-3 text-uppercase border-bottom pb-2">Profile Data</h5>
                 <ul class="list-unstyled mb-0" style="line-height: 1.8;">
                     <li><strong>Band Role:</strong> Guest Vocals</li>

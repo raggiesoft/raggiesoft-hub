@@ -54,7 +54,7 @@
                     <h4 class="card-title fw-bold">Emily Miller</h4>
                     <h6 class="card-subtitle mb-3 text-warning">Lead Vocals / The Operator</h6>
                     <p class="card-text text-muted">A disciplined Navy brat who flawlessly executes military-style clinical transfers and delivers powerhouse 1980s arena-rock lead vocals.</p>
-                    <a href="/engine-room/artists/crimson-node/family/emily-miller" class="btn btn-outline-warning btn-sm text-dark">View Profile</a>
+                    <a href="/engine-room/artists/crimson-node/family/emily-miller" class="btn btn-outline-warning btn-sm text-body-emphasis">View Profile</a>
                 </div>
             </div>
         </div>
@@ -66,7 +66,7 @@
                     <h4 class="card-title fw-bold">Jessica Brooks</h4>
                     <h6 class="card-subtitle mb-3 text-info">Bass & Synths / The Agent of Chaos</h6>
                     <p class="card-text text-muted">The unfiltered in-house SysAdmin. She commands the analog synthesizers and ruthlessly routes the compound's network to guarantee Matt absolute QoS.</p>
-                    <a href="/engine-room/artists/crimson-node/family/jessica-brooks" class="btn btn-outline-info btn-sm text-dark">View Profile</a>
+                    <a href="/engine-room/artists/crimson-node/family/jessica-brooks" class="btn btn-outline-info btn-sm text-body-emphasis">View Profile</a>
                 </div>
             </div>
         </div>
@@ -100,9 +100,9 @@
             <div class="card h-100 border-0 shadow-sm" style="border-top: 5px solid #212529;">
                 <div class="card-body">
                     <h4 class="card-title fw-bold">Elise Pelletier</h4>
-                    <h6 class="card-subtitle mb-3 text-dark">Guest Vocals / The Safe Variable</h6>
+                    <h6 class="card-subtitle mb-3 text-body-emphasis">Guest Vocals / The Safe Variable</h6>
                     <p class="card-text text-muted">A grounding presence who completely disarmed the defensive perimeters of the Kids House, earning the ultimate status as a trusted emergency proxy.</p>
-                    <a href="/engine-room/artists/crimson-node/family/elise-pelletier" class="btn btn-outline-dark btn-sm">View Profile</a>
+                    <a href="/engine-room/artists/crimson-node/family/elise-pelletier" class="btn btn-outline-secondary btn-sm text-body-emphasis">View Profile</a>
                 </div>
             </div>
         </div>
@@ -112,9 +112,9 @@
             <div class="card h-100 border-0 shadow-sm" style="border-top: 5px solid #212529;">
                 <div class="card-body">
                     <h4 class="card-title fw-bold">Elodie Pelletier</h4>
-                    <h6 class="card-subtitle mb-3 text-dark">Guest Vocals / The Husky Diplomat</h6>
+                    <h6 class="card-subtitle mb-3 text-body-emphasis">Guest Vocals / The Husky Diplomat</h6>
                     <p class="card-text text-muted">Seamlessly integrated into the living room puppy pile. She easily navigates cross-species debates with Echo and provides safe, joyful energy to the flock.</p>
-                    <a href="/engine-room/artists/crimson-node/family/elodie-pelletier" class="btn btn-outline-dark btn-sm">View Profile</a>
+                    <a href="/engine-room/artists/crimson-node/family/elodie-pelletier" class="btn btn-outline-secondary btn-sm text-body-emphasis">View Profile</a>
                 </div>
             </div>
         </div>
