@@ -263,6 +263,27 @@ $pageTitle = "RaggieSoft&trade; | The Central Hub";
         ?>
       </div>    
 
+      <!-- NEW: CRIMSON NODE -->
+      <div class="scroll-card">
+        <?php
+          $props = [
+            'imgSrc' => 'https://assets.raggiesoft.com/engine-room-records/artists/crimson-node/2002-crimson-node/album-art.jpg',
+            'imgAlt' => 'Crimson Node',
+            'fallbackText' => 'Crimson Node',
+            'title' => 'Crimson Node',
+            'description' => '1980s progressive rock and stadium synth-pop. The unstoppable musical phalanx of the Miller and Brooks family.',
+            'buttonProps' => [
+              'href' => '/engine-room/artists/crimson-node',
+              'text' => 'Access Archive',
+              'variant' => 'danger', 
+              'icon' => 'fa-duotone fa-waveform-lines',
+              'fullWidth' => true
+            ]
+          ];
+          include __DIR__ . '/../includes/components/card.php';
+        ?>
+      </div>
+
       <div class="scroll-card">
         <?php
           $props = [

@@ -54,5 +54,15 @@
     "view": "pages/engine-room/artists/crimson-node/family/chloe-brooks",
     "title": "Chloe Brooks | Crimson Node",
     "ogTitle": "Chloe Brooks - The Master Strategist"
+  },
+  "/engine-room/artists/crimson-node/family/elise-pelletier": {
+    "view": "pages/engine-room/artists/crimson-node/family/elise-pelletier",
+    "title": "Elise Pelletier | Crimson Node",
+    "ogTitle": "Elise Pelletier - The Safe Variable"
+  },
+  "/engine-room/artists/crimson-node/family/elodie-pelletier": {
+    "view": "pages/engine-room/artists/crimson-node/family/elodie-pelletier",
+    "title": "Elodie Pelletier | Crimson Node",
+    "ogTitle": "Elodie Pelletier - The Husky Diplomat"
   }
 }

@@ -189,6 +189,27 @@ $pageTitle = "Artist Roster - Engine Room Records";
                 </div>
             </div>
         </div>
+        
+        <!-- CRIMSON NODE (ONLINE) -->
+        <div class="col-xl-6 col-lg-12 d-flex align-items-stretch">
+            <div class="card card-industrial w-100">
+                <div class="artist-img-box">
+                    <img src="https://assets.raggiesoft.com/engine-room-records/artists/crimson-node/2002-crimson-node/album-art.jpg" 
+                         alt="Crimson Node">
+                </div>
+                <div class="card-body d-flex flex-column p-4">
+                    <div class="d-flex justify-content-between align-items-start mb-2">
+                        <span class="badge badge-industrial">ERR-006</span>
+                        <span class="led led-on" title="System Online"></span>
+                    </div>
+                    <h3 class="h4 fw-bold text-uppercase">Crimson Node</h3>
+                    <p class="card-text small flex-grow-1">
+                        1980s progressive rock and stadium synth-pop. The unstoppable musical phalanx of the Miller and Brooks family operating out of the Kids House.
+                    </p>
+                    <a href="/engine-room/artists/crimson-node" class="btn btn-outline-primary rounded-0 w-100 text-uppercase fw-bold mt-3 font-monospace">Access Archive</a>
+                </div>
+            </div>
+        </div>
 
     </div>
 
