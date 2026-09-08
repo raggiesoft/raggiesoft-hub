@@ -217,12 +217,27 @@ $pageTitle = "Engine Room Records™ | Loud. Raw. Real.";
                 </div>
             </a>
         </div>
+        
+        <div class="col-md-6 col-xl-3">
+            <a href="/engine-room/artists/crimson-node" class="text-decoration-none">
+                <div class="card roster-card h-100 p-4 text-center">
+                    <div class="mb-3">
+                        <img src="https://assets.raggiesoft.com/engine-room-records/artists/crimson-node/2002-crimson-node/album-art.jpg" 
+                             alt="Crimson Node" style="height: 60px; object-fit: contain;">
+                    </div>
+                    <h3 class="h6 fw-bold text-body-emphasis text-uppercase mb-2">Crimson Node&trade;</h3>
+                    <p class="text-body-secondary small mb-2 flex-grow-1">
+                        1980s stadium synth-pop and heavy progressive rock fueled by the DevOps family phalanx.
+                    </p>
+                    <span class="badge bg-success-subtle text-success-emphasis border border-success-subtle mt-auto mx-auto font-monospace"><i class="fa-solid fa-signal-stream me-1"></i> Live on DSPs</span>
+                </div>
+            </a>
+        </div>
 
         <div class="col-md-6 col-xl-3">
             <div class="card roster-card inactive h-100 p-4 text-center">
-                <div class="mb-3">
-                    <img src="https://assets.raggiesoft.com/engine-room-records/artists/fractured-prisms/band-logo-colour.jpg" 
-                         alt="Fractured Prisms" style="height: 60px; object-fit: contain;">
+                <div class="mb-3 d-flex align-items-center justify-content-center" style="height: 60px;">
+                    <i class="fa-duotone fa-gem fa-3x text-secondary opacity-75"></i>
                 </div>
                 <h3 class="h6 fw-bold text-body-emphasis text-uppercase mb-2">Fractured Prisms&trade;</h3>
                 <p class="text-body-secondary small mb-2 flex-grow-1">

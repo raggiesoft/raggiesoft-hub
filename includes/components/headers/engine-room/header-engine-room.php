@@ -37,8 +37,18 @@ $isArchives = (
           </a>
       </li>
       <li>
-          <a class="dropdown-item" href="/engine-room/artists/mirage">
-            <i class="fa-solid fa-waveform-lines me-2 text-danger"></i>Mirage
+          <a class="dropdown-item" href="/engine-room/artists/crimson-node">
+            <i class="fa-solid fa-waveform-lines me-2 text-danger"></i>Crimson Node
+          </a>
+      </li>
+      <li>
+          <a class="dropdown-item" href="/engine-room/artists/fractured-prisms">
+            <i class="fa-solid fa-gem me-2 text-secondary"></i>Fractured Prisms
+          </a>
+      </li>
+      <li>
+          <a class="dropdown-item" href="/engine-room/artists/the-paper-wall">
+            <i class="fa-solid fa-waveform-lines me-2 text-danger"></i>The Paper Wall
           </a>
       </li>
       <li>

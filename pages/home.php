@@ -263,6 +263,27 @@ $pageTitle = "RaggieSoft&trade; | The Central Hub";
         ?>
       </div>    
 
+      <!-- THE STARDUST ENGINE -->
+      <div class="scroll-card">
+        <?php
+          $props = [
+            'imgSrc' => 'https://assets.raggiesoft.com/engine-room-records/artists/the-stardust-engine/band-logo.png',
+            'imgAlt' => 'The Stardust Engine',
+            'fallbackText' => 'Stardust Engine',
+            'title' => 'The Stardust Engine',
+            'description' => 'The founding artist. A family-owned progressive rock unit blending 80s synth-pop with industrial rock.',
+            'buttonProps' => [
+              'href' => '/engine-room/artists/stardust-engine',
+              'text' => 'Access Archive',
+              'variant' => 'primary', 
+              'icon' => 'fa-duotone fa-turntable',
+              'fullWidth' => true
+            ]
+          ];
+          include __DIR__ . '/../includes/components/card.php';
+        ?>
+      </div>
+
       <!-- NEW: CRIMSON NODE -->
       <div class="scroll-card">
         <?php
