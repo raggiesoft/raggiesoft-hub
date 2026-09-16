@@ -10,8 +10,8 @@
     <!-- Quick Stats Sidebar Area -->
     <div class="col-lg-4 mb-4 mb-lg-0">
         <!-- Portrait Image -->
-        <a href="https://assets.raggiesoft.com/shiloh/images/family/emily-miller.jpg" target="_blank" class="d-block mb-4">
-            <img src="https://assets.raggiesoft.com/shiloh/images/family/emily-miller-thumb.jpg" alt="Portrait of Emily Miller" class="img-fluid rounded shadow-sm  w-100">
+        <a href="https://assets.raggiesoft.com/shiloh/images/characters/family/miller/peter/emily-miller.jpg" target="_blank" class="d-block mb-4">
+            <img src="https://assets.raggiesoft.com/shiloh/images/thumbnails/family/miller/peter/emily-miller-thumb.jpg" alt="Portrait of Emily Miller" class="img-fluid rounded shadow-sm  w-100">
         </a>
         <div class="card border-0 shadow-sm" style="border-top: 5px solid #ffc107;">
             <div class="card-body bg-body-tertiary">
