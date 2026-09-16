@@ -1,3 +1,10 @@
+<?php
+// pages/engine-room/artists/crimson-node/family/overview.php
+// The Phalanx Directory
+
+$pageTitle = "The Phalanx - Crimson Node";
+?>
+
 <div class="container py-5">
     <div class="row mb-5">
         <div class="col-12 text-center">
@@ -95,26 +102,25 @@
             </div>
         </div>
 
-        <!-- Elise Pelletier -->
-        <div class="col-md-6 col-lg-4">
+        <!-- Elise & Elodie Pelletier (Double Width) -->
+        <div class="col-lg-8">
             <div class="card h-100 border-0 shadow-sm" style="border-top: 5px solid #212529;">
                 <div class="card-body">
-                    <h4 class="card-title fw-bold">Elise Pelletier</h4>
-                    <h6 class="card-subtitle mb-3 text-body-emphasis">Guest Vocals / The Safe Variable</h6>
-                    <p class="card-text text-muted">A grounding presence who completely disarmed the defensive perimeters of the Kids House, earning the ultimate status as a trusted emergency proxy.</p>
-                    <a href="/engine-room/artists/crimson-node/family/elise-pelletier" class="btn btn-outline-secondary btn-sm text-body-emphasis">View Profile</a>
-                </div>
-            </div>
-        </div>
+                    <h4 class="card-title fw-bold mb-1">Elise & Elodie Pelletier</h4>
+                    <h6 class="card-subtitle mb-4 text-body-emphasis">Guest Vocals / Honorary Flock / Life Partners</h6>
+                    
+                    <div class="row">
+                        <div class="col-md-6 mb-3 mb-md-0 border-end border-secondary-subtle">
+                            <p class="card-text text-muted small"><strong>The Safe Variable (Right):</strong> Elise provides a grounding presence, completely disarming the defensive perimeters of the Kids House and earning the ultimate status as a trusted emergency proxy.</p>
+                        </div>
+                        <div class="col-md-6">
+                            <p class="card-text text-muted small"><strong>The Husky Diplomat (Left):</strong> Elodie seamlessly integrates into the living room puppy pile, effortlessly navigating cross-species debates with Echo and providing safe, joyful energy to the flock.</p>
+                        </div>
+                    </div>
 
-        <!-- Elodie Pelletier -->
-        <div class="col-md-6 col-lg-4">
-            <div class="card h-100 border-0 shadow-sm" style="border-top: 5px solid #212529;">
-                <div class="card-body">
-                    <h4 class="card-title fw-bold">Elodie Pelletier</h4>
-                    <h6 class="card-subtitle mb-3 text-body-emphasis">Guest Vocals / The Husky Diplomat</h6>
-                    <p class="card-text text-muted">Seamlessly integrated into the living room puppy pile. She easily navigates cross-species debates with Echo and provides safe, joyful energy to the flock.</p>
-                    <a href="/engine-room/artists/crimson-node/family/elodie-pelletier" class="btn btn-outline-secondary btn-sm text-body-emphasis">View Profile</a>
+                    <div class="mt-4">
+                        <a href="/engine-room/artists/crimson-node/family/the-pelletier-twins" class="btn btn-outline-dark btn-sm">View Unified Profile</a>
+                    </div>
                 </div>
             </div>
         </div>

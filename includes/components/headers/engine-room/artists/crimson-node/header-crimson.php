@@ -4,9 +4,11 @@
 
 // 1. Determine Active States
 $request_uri = $_SERVER['REQUEST_URI'] ?? '/';
+
 $isHome = str_starts_with($request_uri, '/engine-room/artists/crimson-node/overview') || $request_uri === '/engine-room/artists/crimson-node';
 $isDisco = str_starts_with($request_uri, '/engine-room/artists/crimson-node/discography');
-$isPhalanx = str_starts_with($request_uri, '/engine-room/artists/crimson-node/family') || str_starts_with($request_uri, '/engine-room/artists/crimson-node/band');
+// Fully scrubbed the incorrect /band/ route
+$isPhalanx = str_starts_with($request_uri, '/engine-room/artists/crimson-node/family');
 $isLore = str_starts_with($request_uri, '/engine-room/artists/crimson-node/story');
 ?>
 
