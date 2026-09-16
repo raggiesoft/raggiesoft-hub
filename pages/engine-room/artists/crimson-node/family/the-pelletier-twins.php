@@ -32,7 +32,7 @@ $pageTitle = "Elise & Elodie Pelletier - Crimson Node";
             </div>
 
             <!-- Elise's Card (Right Side) -->
-            <div class="card border-0 shadow-sm h-100" style="border-top: 5px solid var(--bs-info);">
+            <div class="card border-0 shadow-sm" style="border-top: 5px solid var(--bs-info);">
                 <div class="card-body bg-body-tertiary">
                     <h5 class="fw-bold mb-3 text-uppercase border-bottom pb-2">Elise Pelletier (Right Side)</h5>
                     <ul class="list-unstyled mb-0 small" style="line-height: 1.8;">
