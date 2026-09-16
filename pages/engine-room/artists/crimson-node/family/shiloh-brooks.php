@@ -10,7 +10,9 @@
     <!-- Quick Stats Sidebar Area -->
     <div class="col-lg-4 mb-4 mb-lg-0">
         <!-- Portrait Image -->
-        <img src="https://assets.raggiesoft.com/shiloh/images/family/shiloh-brooks.jpg" alt="Portrait of Shiloh Brooks" class="img-fluid rounded shadow-sm mb-4 w-100">
+        <a href="https://assets.raggiesoft.com/shiloh/images/family/shiloh-brooks.jpg" target="_blank" class="d-block mb-4">
+            <img src="https://assets.raggiesoft.com/shiloh/images/family/shiloh-brooks-thumb.jpg" alt="Portrait of Shiloh Brooks" class="img-fluid rounded shadow-sm  w-100">
+        </a>
         <div class="card border-0 shadow-sm" style="border-top: 5px solid #0d6efd;">
             <div class="card-body bg-body-tertiary">
                 <h5 class="fw-bold mb-3 text-uppercase border-bottom pb-2">Profile Data</h5>
