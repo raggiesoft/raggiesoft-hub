@@ -20,7 +20,7 @@ $pageTitle = "The Phalanx - Crimson Node";
     <div class="row g-4">
         <!-- Matt Miller -->
         <div class="col-md-6 col-lg-4">
-            <div class="card border-0 shadow-sm" style="border-top: 5px solid #dc3545;">
+            <div class="card h-100 border-0 shadow-sm" style="border-top: 5px solid #dc3545;">
                 <a href="https://assets.raggiesoft.com/shiloh/images/family/matt-miller.jpg" target="_blank">
                     <img src="https://assets.raggiesoft.com/shiloh/images/family/matt-miller-thumb.jpg" class="card-img-top rounded-0" alt="Portrait of Matt Miller" style="aspect-ratio: 1/1; object-fit: cover; object-position: center top;">
                 </a>
@@ -35,7 +35,7 @@ $pageTitle = "The Phalanx - Crimson Node";
 
         <!-- Sarah Miller -->
         <div class="col-md-6 col-lg-4">
-            <div class="card border-0 shadow-sm" style="border-top: 5px solid #0d6efd;">
+            <div class="card h-100 border-0 shadow-sm" style="border-top: 5px solid #0d6efd;">
                 <a href="https://assets.raggiesoft.com/shiloh/images/family/sarah-miller.jpg" target="_blank">
                     <img src="https://assets.raggiesoft.com/shiloh/images/family/sarah-miller-thumb.jpg" class="card-img-top rounded-0" alt="Portrait of Sarah Miller" style="aspect-ratio: 1/1; object-fit: cover; object-position: center top;">
                 </a>
@@ -50,7 +50,7 @@ $pageTitle = "The Phalanx - Crimson Node";
 
         <!-- Shiloh Brooks -->
         <div class="col-md-6 col-lg-4">
-            <div class="card border-0 shadow-sm" style="border-top: 5px solid #0d6efd;">
+            <div class="card h-100 border-0 shadow-sm" style="border-top: 5px solid #0d6efd;">
                 <a href="https://assets.raggiesoft.com/shiloh/images/family/shiloh-brooks.jpg" target="_blank">
                     <img src="https://assets.raggiesoft.com/shiloh/images/family/shiloh-brooks-thumb.jpg" class="card-img-top rounded-0" alt="Portrait of Shiloh Brooks" style="aspect-ratio: 1/1; object-fit: cover; object-position: center top;">
                 </a>
@@ -65,7 +65,7 @@ $pageTitle = "The Phalanx - Crimson Node";
 
         <!-- Emily Miller -->
         <div class="col-md-6 col-lg-4">
-            <div class="card border-0 shadow-sm" style="border-top: 5px solid #ffc107;">
+            <div class="card h-100 border-0 shadow-sm" style="border-top: 5px solid #ffc107;">
                 <a href="https://assets.raggiesoft.com/shiloh/images/family/emily-miller.jpg" target="_blank">
                     <img src="https://assets.raggiesoft.com/shiloh/images/family/emily-miller-thumb.jpg" class="card-img-top rounded-0" alt="Portrait of Emily Miller" style="aspect-ratio: 1/1; object-fit: cover; object-position: center top;">
                 </a>
@@ -80,7 +80,7 @@ $pageTitle = "The Phalanx - Crimson Node";
 
         <!-- Jessica Brooks -->
         <div class="col-md-6 col-lg-4">
-            <div class="card border-0 shadow-sm" style="border-top: 5px solid #0dcaf0;">
+            <div class="card h-100 border-0 shadow-sm" style="border-top: 5px solid #0dcaf0;">
                 <a href="https://assets.raggiesoft.com/shiloh/images/family/jessica-brooks.jpg" target="_blank">
                     <img src="https://assets.raggiesoft.com/shiloh/images/family/jessica-brooks-thumb.jpg" class="card-img-top rounded-0" alt="Portrait of Jessica Brooks" style="aspect-ratio: 1/1; object-fit: cover; object-position: center top;">
                 </a>
@@ -95,7 +95,7 @@ $pageTitle = "The Phalanx - Crimson Node";
 
         <!-- Rachel Miller -->
         <div class="col-md-6 col-lg-4">
-            <div class="card border-0 shadow-sm" style="border-top: 5px solid #198754;">
+            <div class="card h-100 border-0 shadow-sm" style="border-top: 5px solid #198754;">
                 <a href="https://assets.raggiesoft.com/shiloh/images/family/rachel-miller.jpg" target="_blank">
                     <img src="https://assets.raggiesoft.com/shiloh/images/family/rachel-miller-thumb.jpg" class="card-img-top rounded-0" alt="Portrait of Rachel Miller" style="aspect-ratio: 1/1; object-fit: cover; object-position: center top;">
                 </a>
@@ -110,7 +110,7 @@ $pageTitle = "The Phalanx - Crimson Node";
 
         <!-- Chloe Brooks -->
         <div class="col-md-6 col-lg-4">
-            <div class="card border-0 shadow-sm" style="border-top: 5px solid #6c757d;">
+            <div class="card h-100 border-0 shadow-sm" style="border-top: 5px solid #6c757d;">
                 <a href="https://assets.raggiesoft.com/shiloh/images/family/chloe-brooks.jpg" target="_blank">
                     <img src="https://assets.raggiesoft.com/shiloh/images/family/chloe-brooks-thumb.jpg" class="card-img-top rounded-0" alt="Portrait of Chloe Brooks" style="aspect-ratio: 1/1; object-fit: cover; object-position: center top;">
                 </a>
@@ -125,7 +125,7 @@ $pageTitle = "The Phalanx - Crimson Node";
 
         <!-- Elise & Elodie Pelletier (Double Width) -->
         <div class="col-lg-8">
-            <div class="card border-0 shadow-sm overflow-hidden" style="border-top: 5px solid #212529;">
+            <div class="card h-100 border-0 shadow-sm overflow-hidden" style="border-top: 5px solid #212529;">
                 <div class="row g-0 h-100">
                     <div class="col-md-5 col-lg-4">
                         <a href="https://assets.raggiesoft.com/shiloh/images/family/elise-elodie-pelletier.jpg" target="_blank" class="d-block h-100">
@@ -147,7 +147,7 @@ $pageTitle = "The Phalanx - Crimson Node";
                     </div>
 
                     <div class="mt-4">
-                        <a href="/engine-room/artists/crimson-node/family/the-pelletier-twins" class="btn btn-outline-dark btn-sm">View Unified Profile</a>
+                        <a href="/engine-room/artists/crimson-node/family/the-pelletier-twins" class="btn btn-outline-secondary btn-sm">View Unified Profile</a>
                     </div>
                         </div>
                     </div>
