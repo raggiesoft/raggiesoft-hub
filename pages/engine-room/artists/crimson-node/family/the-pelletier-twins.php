@@ -19,6 +19,9 @@ $pageTitle = "Elise & Elodie Pelletier - Crimson Node";
     <div class="row">
         <!-- Quick Stats Sidebar Area -->
         <div class="col-lg-4 mb-4 mb-lg-0">
+            <!-- Portrait Image -->
+            <img src="https://assets.raggiesoft.com/shiloh/images/family/elise-elodie-pelletier.jpg" alt="Portrait of Elise and Elodie Pelletier" class="img-fluid rounded shadow-sm mb-4 w-100">
+
             <!-- Elodie's Card (Left Side) -->
             <div class="card border-0 shadow-sm mb-4" style="border-top: 5px solid var(--bs-primary);">
                 <div class="card-body bg-body-tertiary">
@@ -32,13 +35,26 @@ $pageTitle = "Elise & Elodie Pelletier - Crimson Node";
             </div>
 
             <!-- Elise's Card (Right Side) -->
-            <div class="card border-0 shadow-sm" style="border-top: 5px solid var(--bs-info);">
+            <div class="card border-0 shadow-sm mb-4" style="border-top: 5px solid var(--bs-info);">
                 <div class="card-body bg-body-tertiary">
                     <h5 class="fw-bold mb-3 text-uppercase border-bottom pb-2">Elise Pelletier (Right Side)</h5>
                     <ul class="list-unstyled mb-0 small" style="line-height: 1.8;">
                         <li><strong>Compound Role:</strong> The Safe Variable</li>
                         <li><strong>Milestone:</strong> First physical contact post-DTS</li>
                         <li><strong>Tactical Specialty:</strong> Holding space without pity</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Anatomical Reality Card -->
+            <div class="card border-0 shadow-sm" style="border-top: 5px solid var(--bs-secondary);">
+                <div class="card-body bg-body-tertiary">
+                    <h5 class="fw-bold mb-3 text-uppercase border-bottom pb-2">Anatomical Reality</h5>
+                    <ul class="list-unstyled mb-0 small" style="line-height: 1.8;">
+                        <li><strong>Classification:</strong> Parapagus Tetrapus</li>
+                        <li><strong>The Inner Pair:</strong> Two vestigial inner legs (tripodes) terminating below the knee</li>
+                        <li><strong>Dietary Law:</strong> Synchronized meals to manage merged intestinal checkpoint</li>
+                        <li><strong>The Denim Dilemma:</strong> Requires custom tailoring to reconstruct for four legs</li>
                     </ul>
                 </div>
             </div>
