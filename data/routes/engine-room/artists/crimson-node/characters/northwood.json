@@ -30,5 +30,17 @@
         "view": "pages/engine-room/artists/crimson-node/characters/northwood/arthur-vance",
         "title": "Arthur Vance | Crimson Node",
         "ogTitle": "Arthur Vance - The Guardian"
+    },
+    "/engine-room/artists/crimson-node/characters/northwood/mrs-demarco": {
+        "view": "pages/engine-room/artists/crimson-node/characters/northwood/mrs-demarco",
+        "title": "Mrs. DeMarco | Northwood High - Crimson Node",
+        "ogTitle": "Mrs. DeMarco",
+        "ogImage": "https://assets.raggiesoft.com/shiloh/images/characters/northwood/mrs-demarco.jpg"
+    },
+    "/engine-room/artists/crimson-node/characters/northwood/mrs-periwinkle": {
+        "view": "pages/engine-room/artists/crimson-node/characters/northwood/mrs-periwinkle",
+        "title": "Mrs. Periwinkle | Northwood High - Crimson Node",
+        "ogTitle": "Mrs. Periwinkle",
+        "ogImage": "https://assets.raggiesoft.com/shiloh/images/characters/northwood/mrs-periwinkle.jpg"
     }
 }
