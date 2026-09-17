@@ -98,7 +98,6 @@ $nav = [
                 <p>
                     "Alright then," Linda smiled, gesturing to the massive spread of food. "Eat up, everyone!"
                 </p>
-            </div>
 
             
                 <hr class="my-5 border-secondary border-opacity-50 w-50 mx-auto">
@@ -127,7 +126,7 @@ $nav = [
                     Shiloh leaned over the glass counter, pointing eagerly. "And the massive bucket of Polar Cola. Oh, and the chocolate-covered caramels. And the sour gummies. We’re not playing around today."
                 </p>
                 <p>
-                    The sheer volume of sugar and saturated fat they walked away with was staggering—the kind of dietary bomb that would silently lay the groundwork for Matt's complex metabolic and health issues years down the line. But today, they were eighteen and twenty, invincible, and determined to celebrate. 
+                    The sheer volume of sugar and butter they walked away with was staggering. But today, they were eighteen and twenty, invincible, and determined to celebrate. 
                 </p>
                 <p>
                     Sarah carried the grease-stained, tub-sized popcorn, while Shiloh proudly balanced the candies and a massive, literal bucket of dark, bubbling Polar Cola. Sticking out of the plastic lid were three distinct neon straws—one for Sarah, one for Shiloh, and one specifically angled for Matt. 
@@ -147,7 +146,59 @@ $nav = [
                 <p>
                     With their concession haul secured and their seating arrangement established, Sarah pushed the heavy auditorium door open, and the three of them rolled into the dim, air-conditioned cavern to watch <em>The Paradigm</em>.
                 </p>
+            
 
+            
+                <hr class="my-5 border-secondary border-opacity-50 w-50 mx-auto">
+
+                <h3 id="part-4" class="mt-5 mb-4 text-uppercase tracking-wide text-muted fw-bold">Part 4: The Majesty Express &ndash; 1:40 PM</h3>
+
+                <p>
+                    The auditorium buzzed with the dense, electric energy of a sold-out opening weekend crowd. They secured their spot in the wheelchair-accessible cutout along the stadium cross-aisle. Sarah took the seat on Matt's left, while Shiloh dropped into the seat on his right, creating a perfect, protective family phalanx around him.
+                </p>
+                <p>
+                    The giant screen played the standard pre-show trivia while the audience settled in. All around them, snippets of conversation floated through the dark room. <em>The Paradigm</em> was the most highly anticipated, visually groundbreaking cyber-dystopian film of the decade, and the hype was deafening. 
+                </p>
+                <p>
+                    "I heard they basically invented new camera technology just for the slow-motion fight scenes," a guy in the row behind them was explaining to his date. "A buddy of mine saw it on Friday. Said it completely melts your brain."
+                </p>
+                <p>
+                    Shiloh passed the giant tub of popcorn over Matt’s lap so Sarah could grab a handful. "What do you think it's actually about?" she asked, popping a kernel into her mouth. "The commercials make it look like they're all living inside a giant computer program."
+                </p>
+                <p>
+                    <em>"It is about philosophical determinism,"</em> Matt’s travel keyboard announced, the flat, robotic female voice cutting perfectly through the ambient theater noise. 
+                </p>
+                <p>
+                    Sarah snorted, taking a sip from her designated neon straw in the massive Polar Cola bucket resting in the cup holder between her and Matt. "Okay, Professor. We'll see. I just hope the leather trench coats look as cool as they do on the poster."
+                </p>
+                <p>
+                    Matt grinned, typing rapidly. <em>"The trench coats are a metaphor for shielding oneself from the systemic reality."</em>
+                </p>
+                <p>
+                    "Nerd," Shiloh laughed affectionately, reaching over to ruffle his hair. Matt hummed happily, leaning into her touch. 
+                </p>
+                <p>
+                    Slowly, the ambient theater music faded out. A wave of anticipatory silence washed over the crowd as the massive house lights finally began to dim. The heavy bass of the theater’s state-of-the-art sound system rumbled to life, vibrating through the stadium seating and straight into Matt’s chest.
+                </p>
+                <p>
+                    The screen lit up with the iconic, neon-purple logo of Majesty Cinemas. 
+                </p>
+                <p>
+                    Matt immediately sat up straighter, a massive, uncontainable smile spreading across his face. He began to bounce slightly in his wheelchair, his fingers drumming rapidly against the plastic armrests in sheer, unadulterated joy. 
+                </p>
+                <p>
+                    It was time for the <em>Majesty Express</em>. 
+                </p>
+                <p>
+                    The legendary, fast-paced CGI roller coaster sequence blasted onto the screen, rocketing the audience through a virtual concession stand landscape. Giant, animated popcorn kernels exploded like fireworks while the "camera" plummeted down a massive soda-straw track. 
+                </p>
+                <p>
+                    Because of his severe dyspraxia and the fragile rigidity of his body, Matt could never safely ride a real roller coaster. The violent, physical G-forces would be far too dangerous for his frame. But here, anchored securely between the two women who loved him most, surrounded by the deafening surround sound and the massive screen filling his peripheral vision, Matt could safely surrender to the illusion. 
+                </p>
+                <p>
+                    As the virtual coaster crested its digital peak and plunged downward, Matt grabbed both Sarah and Shiloh’s hands, squeezing tight as he threw his head back and let out a bright, wordless squeal of pure joy.
+                </p>
+            </div>
             <?php include $_SERVER['DOCUMENT_ROOT'] . '/includes/components/navigation/narrative-stepper.php'; ?>
 
         </div>
