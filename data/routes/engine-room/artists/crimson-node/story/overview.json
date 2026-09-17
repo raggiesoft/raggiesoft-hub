@@ -7,12 +7,13 @@
         ],
         "siteName": "Crimson Node",
         "footer": "engine-room/artists/crimson-node/footer-crimson",
-        "showSidebar": false,
+        "showSidebar": true,
         "navbarBrandLogo": "https://assets.raggiesoft.com/engine-room-records/artists/crimson-node/2002-crimson-node/album-art.jpg",
         "navbarBrandText": "<span class=\"navbar-brand-text\"><span class=\"d-none d-md-inline\">The </span>Archives</span>",
         "navbarBrandLink": "/engine-room/artists/crimson-node/story",
         "ogImage": "https://assets.raggiesoft.com/engine-room-records/artists/crimson-node/2002-crimson-node/album-art.jpg",
-        "headerMenu": "engine-room/artists/crimson-node/header-story"
+        "headerMenu": "engine-room/artists/crimson-node/header-story",
+        "sidebar": "engine-room/artists/crimson-node/sidebar-story"
     },
     "/engine-room/artists/crimson-node/story": {
         "view": "pages/engine-room/artists/crimson-node/story/overview",

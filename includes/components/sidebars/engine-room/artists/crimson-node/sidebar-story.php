@@ -1,4 +1,5 @@
 <?php
+// includes/components/sidebars/engine-room/artists/crimson-node/sidebar-story.php
 $request_uri = $_SERVER['REQUEST_URI'] ?? '/';
 ?>
 <div class="list-group list-group-flush border-bottom mb-4">
@@ -8,16 +9,29 @@ $request_uri = $_SERVER['REQUEST_URI'] ?? '/';
 </div>
 
 <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted text-uppercase">
-    <span>Narrative Logs</span>
+    <span>Book 1: The Illusion</span>
 </h6>
 <div class="list-group list-group-flush">
-    <a href="/engine-room/artists/crimson-node/story/log-01" class="list-group-item list-group-item-action <?= ($request_uri == '/engine-room/artists/crimson-node/story/log-01') ? 'active' : '' ?>">
-        Log 01: The Approach
+    <!-- Chapter 1 -->
+    <a href="/engine-room/artists/crimson-node/story/chapter-01" class="list-group-item list-group-item-action fw-bold <?= ($request_uri == '/engine-room/artists/crimson-node/story/chapter-01') ? 'active' : '' ?>">
+        Chapter 1: The Approach
     </a>
-    <a href="/engine-room/artists/crimson-node/story/log-02" class="list-group-item list-group-item-action <?= ($request_uri == '/engine-room/artists/crimson-node/story/log-02') ? 'active' : '' ?>">
-        Log 02: The Illusion
+    <?php if ($request_uri == '/engine-room/artists/crimson-node/story/chapter-01'): ?>
+        <a href="#part-1" class="list-group-item list-group-item-action ps-4 py-2 border-0 text-secondary" style="font-size: 0.9em; background-color: rgba(0,0,0,0.02);">
+            <i class="fa-solid fa-angle-right me-2 text-danger"></i>Part 1: Anomalies
+        </a>
+    <?php endif; ?>
+
+    <!-- Chapter 2 -->
+    <a href="/engine-room/artists/crimson-node/story/chapter-02" class="list-group-item list-group-item-action fw-bold <?= ($request_uri == '/engine-room/artists/crimson-node/story/chapter-02') ? 'active' : '' ?>">
+        Chapter 2: The Core Ecosystem
     </a>
-    <a href="/engine-room/artists/crimson-node/story/log-03" class="list-group-item list-group-item-action <?= ($request_uri == '/engine-room/artists/crimson-node/story/log-03') ? 'active' : '' ?>">
-        Log 03: The 6th Period Ecosystem
-    </a>
+    <?php if ($request_uri == '/engine-room/artists/crimson-node/story/chapter-02'): ?>
+        <a href="#part-1" class="list-group-item list-group-item-action ps-4 py-2 border-0 text-secondary" style="font-size: 0.9em; background-color: rgba(0,0,0,0.02);">
+            <i class="fa-solid fa-angle-right me-2 text-danger"></i>Part 1: The Commons
+        </a>
+        <a href="#part-2" class="list-group-item list-group-item-action ps-4 py-2 border-0 text-secondary" style="font-size: 0.9em; background-color: rgba(0,0,0,0.02);">
+            <i class="fa-solid fa-angle-right me-2 text-danger"></i>Part 2: 6th Period Lunch
+        </a>
+    <?php endif; ?>
 </div>

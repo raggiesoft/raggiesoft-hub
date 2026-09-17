@@ -28,7 +28,7 @@ $nav = [
 
             <div class="story-content fs-5" style="line-height: 1.8;">
                 
-                <h3 class="mt-5 mb-4 text-uppercase tracking-wide text-muted fw-bold">Part 1: The Commons &ndash; 7:15 AM</h3>
+                <h3 id="part-1" class="mt-5 mb-4 text-uppercase tracking-wide text-muted fw-bold">Part 1: The Commons &ndash; 7:15 AM</h3>
                 
                 <p>
                     The wide, bumpy tiles of the Northwood High Commons created a continuous, bone-rattling vibration for anyone in a wheelchair, but in this exact moment, Matt didn't feel the drag. The heavy fire doors of the "Blue Mile" were pinned open by electromagnets, the fluorescent lights buzzed overhead, and the 1999 morning rush swirled around them like white noise.
@@ -60,7 +60,7 @@ $nav = [
 
                 <hr class="my-5 border-secondary border-opacity-50 w-50 mx-auto">
 
-                <h3 class="mt-5 mb-4 text-uppercase tracking-wide text-muted fw-bold">Part 2: 6th Period Lunch &ndash; 12:45 PM</h3>
+                <h3 id="part-2" class="mt-5 mb-4 text-uppercase tracking-wide text-muted fw-bold">Part 2: 6th Period Lunch &ndash; 12:45 PM</h3>
 
                 <p>
                     The Northwood High cafeteria during 6th period lunch was a symphony of controlled chaos. Trays clattered against plastic tables, sneakers squeaked relentlessly on the polished linoleum, and the overlapping conversations of hundreds of teenagers fused into a dull, throbbing roar beneath the humming fluorescent lights.

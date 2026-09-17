@@ -20,7 +20,7 @@ $nav = [
 
             <div class="story-content fs-5" style="line-height: 1.8;">
                 
-                <h3 class="mt-5 mb-4 text-uppercase tracking-wide text-muted fw-bold">Part 1: Anomalies &ndash; 10:15 AM</h3>
+                <h3 id="part-1" class="mt-5 mb-4 text-uppercase tracking-wide text-muted fw-bold">Part 1: Anomalies &ndash; 10:15 AM</h3>
                 
                 <p>
                     The social ecosystem of Northwood High School was brutal, rigidly structured, and entirely unforgiving of anomalies. So when Courtney Evans&mdash;a girl who effortlessly belonged to the upper-middle tier of the high school hierarchy&mdash;broke formation to walk down the quiet end of the academic wing, people noticed. 
