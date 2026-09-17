@@ -190,13 +190,16 @@ $nav = [
                     It was time for the <em>Majesty Express</em>. 
                 </p>
                 <p>
-                    The legendary, fast-paced CGI roller coaster sequence blasted onto the screen, rocketing the audience through a virtual concession stand landscape. Giant, animated popcorn kernels exploded like fireworks while the "camera" plummeted down a massive soda-straw track. 
+                    The legendary, fast-paced CGI roller coaster sequence blasted onto the screen. Instead of metal rails, the first-person "camera" locked onto a glowing, translucent celluloid filmstrip track. As the coaster slowly climbed the first steep lift hill, a futuristic, low-polygon dashboard popped up at the bottom of the screen, aggressively flashing the theater policies in neon text: <em>"NO SMOKING," "QUIET PLEASE," "DISPOSE OF TRASH."</em>
                 </p>
                 <p>
                     Because of his severe dyspraxia and the fragile rigidity of his body, Matt could never safely ride a real roller coaster. The violent, physical G-forces would be far too dangerous for his frame. But here, anchored securely between the two women who loved him most, surrounded by the deafening surround sound and the massive screen filling his peripheral vision, Matt could safely surrender to the illusion. 
                 </p>
                 <p>
-                    As the virtual coaster crested its digital peak and plunged downward, Matt grabbed both Sarah and Shiloh’s hands, squeezing tight as he threw his head back and let out a bright, wordless squeal of pure joy.
+                    The coaster crested the digital peak and plunged downward into the "Candy Canyon." Matt grabbed both Sarah and Shiloh’s hands, squeezing tight as he threw his head back and let out a bright, wordless squeal of pure joy. The screen rocketed them past gigantic, floating concession items—massive boxes of <em>Meteor Bites</em> and <em>Saturn Rings</em> flying past the camera in a barrage of primary colors and abrasive, treble-heavy 90s synth-rock. 
+                </p>
+                <p>
+                    The wild ride culminated in a chaotic visual explosion of oversized, buttery popcorn kernels popping violently right into the camera lens, accompanied by an aggressive, famously loud popping sound effect, right before the screen faded to black to start the feature presentation.
                 </p>
             </div>
             <?php include $_SERVER['DOCUMENT_ROOT'] . '/includes/components/navigation/narrative-stepper.php'; ?>
