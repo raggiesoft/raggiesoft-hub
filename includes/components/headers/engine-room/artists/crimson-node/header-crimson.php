@@ -11,6 +11,7 @@ $isDisco = str_starts_with($request_uri, '/engine-room/artists/crimson-node/disc
 $isPhalanx = str_starts_with($request_uri, '/engine-room/artists/crimson-node/characters/family');
 $isCcc = str_starts_with($request_uri, '/engine-room/artists/crimson-node/characters/ccc');
 $isNorthwood = str_starts_with($request_uri, '/engine-room/artists/crimson-node/characters/northwood');
+$isPiedmont = str_starts_with($request_uri, '/engine-room/artists/crimson-node/characters/piedmont');
 $isLore = str_starts_with($request_uri, '/engine-room/artists/crimson-node/story');
 ?>
 
@@ -29,7 +30,7 @@ $isLore = str_starts_with($request_uri, '/engine-room/artists/crimson-node/story
   </li>
 
   <li class="nav-item dropdown">
-    <a class="nav-link dropdown-toggle <?php echo ($isPhalanx || $isCcc || $isNorthwood) ? 'active' : ''; ?>" href="#" id="charactersDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    <a class="nav-link dropdown-toggle <?php echo ($isPhalanx || $isCcc || $isNorthwood || $isPiedmont) ? 'active' : ''; ?>" href="#" id="charactersDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
         <i class="fa-duotone fa-users me-2" aria-hidden="true"></i>Characters <i class="fa-solid fa-chevron-down ms-1" style="font-size: 0.8em;" aria-hidden="true"></i>
     </a>
     <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="charactersDropdown">
@@ -47,6 +48,12 @@ $isLore = str_starts_with($request_uri, '/engine-room/artists/crimson-node/story
       <li>
         <a class="dropdown-item <?php echo $isNorthwood ? 'active' : ''; ?>" href="/engine-room/artists/crimson-node/characters/northwood">
             <i class="fa-duotone fa-school me-2"></i>Northwood High
+        </a>
+      </li>
+      <li><hr class="dropdown-divider border-secondary"></li>
+      <li>
+        <a class="dropdown-item <?php echo $isPiedmont ? 'active' : ''; ?>" href="/engine-room/artists/crimson-node/characters/piedmont">
+            <i class="fa-duotone fa-building-columns me-2"></i>The University of the Piedmont
         </a>
       </li>
     </ul>
