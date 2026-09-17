@@ -29,22 +29,24 @@
                         <a href="/engine-room/artists/crimson-node/story/chapter-01" class="btn btn-danger btn-lg text-start d-flex justify-content-between align-items-center">
                             <span>
                                 <div class="fw-bold text-uppercase">Chapter 1: The Approach</div>
-                                <div class="fs-6 fw-normal opacity-75">Friday, April 30, 1999</div>
+                                <div class="fs-6 fw-normal opacity-75">Friday, April 23, 1999</div>
                             </span>
                             <i class="fa-solid fa-chevron-right"></i>
                         </a>
                         <a href="/engine-room/artists/crimson-node/story/chapter-02" class="btn btn-danger btn-lg text-start d-flex justify-content-between align-items-center">
                             <span>
                                 <div class="fw-bold text-uppercase">Chapter 2: The Core Ecosystem</div>
-                                <div class="fs-6 fw-normal opacity-75">Friday, May 7, 1999</div>
+                                <div class="fs-6 fw-normal opacity-75">Friday, April 30, 1999</div>
                             </span>
                             <i class="fa-solid fa-chevron-right"></i>
                         </a>
-                        <button class="btn btn-outline-secondary btn-lg text-start d-flex justify-content-between align-items-center" disabled>
+                        <a href="/engine-room/artists/crimson-node/story/chapter-03" class="btn btn-danger btn-lg text-start d-flex justify-content-between align-items-center">
                             <span>
-                                <div class="fw-bold text-uppercase text-body-emphasis"><i class="fa-solid fa-lock me-2"></i> Chapter 3</div>
+                                <div class="fw-bold text-uppercase">Chapter 3: The Triple Birthday</div>
+                                <div class="fs-6 fw-normal opacity-75">Sunday, May 2, 1999</div>
                             </span>
-                        </button>
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </a>
                     </div>
                     
                 </div>

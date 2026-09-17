@@ -34,7 +34,7 @@ $nav = [
                     The wide, bumpy tiles of the Northwood High Commons created a continuous, bone-rattling vibration for anyone in a wheelchair, but in this exact moment, Matt didn't feel the drag. The heavy fire doors of the "Blue Mile" were pinned open by electromagnets, the fluorescent lights buzzed overhead, and the 1999 morning rush swirled around them like white noise.
                 </p>
                 <p>
-                    Courtney leaned down, her arms wrapping around his shoulders in a warm, grounding hug. She smelled like Bath & Body Works Sweet Pea and teenage optimism. In her late-90s spaghetti-strap tank top, she looked like the quintessential high school girlfriend. She had approached him. She had asked him out. She seemed to see right past the wheelchair and the laptop to the fiercely intelligent, sarcastic guy beneath. 
+                    <a href="/engine-room/artists/crimson-node/characters/northwood/students/courtney-evans" class="encyclopedia-link text-decoration-none border-bottom border-danger text-body-emphasis fw-bold">Courtney</a> leaned down, her arms wrapping around his shoulders in a warm, grounding hug. She smelled like Bath & Body Works Sweet Pea and teenage optimism. In her late-90s spaghetti-strap tank top, she looked like the quintessential high school girlfriend. She had approached him. She had asked him out. She seemed to see right past the wheelchair and the laptop to the fiercely intelligent, sarcastic guy beneath. 
                 </p>
                 <p>
                     "I can't wait for tonight," she said, her voice cutting through the ambient noise of the Commons. "<em>The Paradigm</em> is supposed to be amazing. Are you still coming to pick me up?"
@@ -49,10 +49,10 @@ $nav = [
                     Matt knew exactly what it took to maintain this bubble.
                 </p>
                 <p>
-                    Just a few feet behind them, slightly out of focus to anyone not actively looking for him, stood Arthur Vance. Wearing a navy blue polo shirt and a staff lanyard, the 65-year-old retired paraprofessional observed the hallway with quiet, stoic precision. Mr. Vance was the physical manifestation of the heavy, clinical reality that allowed Matt to safely exist in the Northwood ecosystem.
+                    Just a few feet behind them, slightly out of focus to anyone not actively looking for him, stood <a href="/engine-room/artists/crimson-node/characters/northwood/staff/arthur-vance" class="encyclopedia-link text-decoration-none border-bottom border-danger text-body-emphasis fw-bold">Arthur Vance</a>. Wearing a navy blue polo shirt and a staff lanyard, the 65-year-old retired paraprofessional observed the hallway with quiet, stoic precision. Mr. Vance was the physical manifestation of the heavy, clinical reality that allowed Matt to safely exist in the Northwood ecosystem.
                 </p>
                 <p>
-                    Mr. Vance didn't intrude on the conversation. He simply maintained the perimeter, quietly managing the complex medical and physical variables so that this sweet, romantic moment could exist in the middle of the morning rush. 
+                    <a href="/engine-room/artists/crimson-node/characters/northwood/staff/arthur-vance" class="encyclopedia-link text-decoration-none border-bottom border-danger text-body-emphasis fw-bold">Mr. Vance</a> didn't intrude on the conversation. He simply maintained the perimeter, quietly managing the complex medical and physical variables so that this sweet, romantic moment could exist in the middle of the morning rush. 
                 </p>
                 <p>
                     For now, the environment was perfectly controlled. The affection was genuine, the connection was real, and the sensory overload of the high school was held safely at bay. Matt relaxed into the embrace, letting himself enjoy the simplicity of the moment, looking forward to the movie tonight.
@@ -93,7 +93,7 @@ $nav = [
                     Matt didn’t need to turn his head to know what was happening. He just watched the faces of the sophomore boys at the next table go instantly pale.
                 </p>
                 <p>
-                    Mrs. DeMarco was on patrol.
+                    <a href="/engine-room/artists/crimson-node/characters/northwood/staff/mrs-demarco" class="encyclopedia-link text-decoration-none border-bottom border-danger text-body-emphasis fw-bold">Mrs. DeMarco</a> was on patrol.
                 </p>
                 <p>
                     The cafeteria supervisor moved through the aisles with the terrifying, unshakeable authority of a monarch surveying her domain. Matt watched with quiet amusement as she stopped dead in her tracks near a table of rowdy juniors who had, seconds prior, been attempting to construct a structural tower out of half-eaten tater tots. 

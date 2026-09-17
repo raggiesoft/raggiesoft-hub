@@ -26,7 +26,7 @@ $nav = [
                     The morning light filtered softly through the blinds of the shared bedroom, casting thin, dusty stripes across the mattress. It was Sunday, May 2nd. A massive milestone. It was Matt's eighteenth birthday, and Sarah's twentieth. 
                 </p>
                 <p>
-                    <a href="/engine-room/artists/crimson-node/characters/family/sarah-brooks" class="encyclopedia-link text-decoration-none border-bottom border-danger text-body-emphasis fw-bold">Sarah</a> stirred first, untangling herself from the blankets. The heavy emotional exhaustion of Friday's Omni-Q incident had faded into a renewed, fiercely protective energy. She sat up, stretching her arms above her head, before gently shaking Matt's shoulder.
+                    <a href="/engine-room/artists/crimson-node/characters/family/sarah-miller" class="encyclopedia-link text-decoration-none border-bottom border-danger text-body-emphasis fw-bold">Sarah</a> stirred first, untangling herself from the blankets. The heavy emotional exhaustion of Friday's Omni-Q incident had faded into a renewed, fiercely protective energy. She sat up, stretching her arms above her head, before gently shaking Matt's shoulder.
                 </p>
                 <p>
                     "Wake up, birthday boy," she said softly, a warm smile breaking across her face. "You're officially an adult. Kind of."
