@@ -3,7 +3,7 @@
 $nav = [
     'prev' => null,
     'overview' => ['url' => '/engine-room/artists/crimson-node/story', 'label' => 'Book 1 Overview'],
-    'next' => ['url' => '/engine-room/artists/crimson-node/story/chapter-02', 'label' => 'Chapter 2']
+    'next' => ['url' => '/engine-room/artists/crimson-node/story/book-1/chapter-02', 'label' => 'Chapter 2']
 ];
 ?>
 <div class="container py-5">

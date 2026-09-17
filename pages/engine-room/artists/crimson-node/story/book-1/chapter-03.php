@@ -1,7 +1,7 @@
 <?php
 // pages/engine-room/artists/crimson-node/story/chapter-03.php
 $nav = [
-    'prev' => ['url' => '/engine-room/artists/crimson-node/story/chapter-02', 'label' => 'Chapter 2'],
+    'prev' => ['url' => '/engine-room/artists/crimson-node/story/book-1/chapter-02', 'label' => 'Chapter 2'],
     'overview' => ['url' => '/engine-room/artists/crimson-node/story', 'label' => 'Book 1 Overview'],
     'next' => null
 ];
@@ -247,6 +247,50 @@ $nav = [
                 </p>
                 <p>
                     Matt couldn't articulate the complex, racing thoughts swirling through his head. He didn't reach for his travel keyboard to type out an intellectual analysis of the film's systemic themes. Instead, he simply looked at his sister and his cousin, his eyes bright with adrenaline, and let out a soft, happy hum. It was, without question, the greatest birthday of his life.
+                </p>
+
+                <hr class="my-5 border-secondary border-opacity-50 w-50 mx-auto">
+
+                <h3 id="part-6" class="mt-5 mb-4 text-uppercase tracking-wide text-muted fw-bold">Part 6: Player Two &ndash; 4:30 PM</h3>
+
+                <p>
+                    By the time they pushed through the heavy auditorium doors and back out into the bright, chaotic lobby of Majesty Cinemas, Matt was utterly exhausted. It was a good exhaustion—the kind that comes from being happily overwhelmed by a massive, two-hour sensory and intellectual thrill ride. 
+                </p>
+                <p>
+                    His eyelids drooped slightly as Sarah navigated his wheelchair through the thick crowds of opening weekend moviegoers. But despite the fatigue, a deep, resonant warmth settled in his chest. Shiloh was spending the night back in Virginia Beach. That meant when they finally got home, both Sarah and Shiloh would be piling into the shared bed with him, wrapping him in the familiar, deeply grounding physical affection he craved. 
+                </p>
+                <p>
+                    "Alright, pit stop," Sarah announced, expertly steering his wheelchair away from the main exit and toward the secluded hallway that housed the oversized family restroom. 
+                </p>
+                <p>
+                    The massive bucket of Polar Cola had taken its toll, and all three of them desperately needed to use the facilities. Sarah pushed the heavy wooden door open and wheeled Matt inside, locking the deadbolt behind them to secure their privacy. 
+                </p>
+                <p>
+                    As Sarah locked the brakes on Matt's chair, she looked back at her cousin. "Hey, Shi. Come here."
+                </p>
+                <p>
+                    Shiloh stepped away from the sink, tilting her head. 
+                </p>
+                <p>
+                    "You're eighteen now. And you're going to be spending a lot more time down here," Sarah said, her voice dropping the casual, joking tone of a sister and adopting the calm, authoritative cadence of a primary caregiver. She gestured toward Matt's chair. "It’s time you learned how to do this."
+                </p>
+                <p>
+                    Matt looked up at Shiloh. He didn't feel embarrassed or exposed. Shiloh was part of his core; he trusted her implicitly with his physical survival. He gave a soft, upward-inflected hum of approval.
+                </p>
+                <p>
+                    Shiloh stepped up to the chair, her expression instantly shifting into one of focused, clinical seriousness. For the next fifteen minutes, Sarah carefully walked her cousin through her very first formal lesson in Matt’s Activities of Daily Living. She showed Shiloh the exact mechanics of emptying and securing his urinary leg bag, and the precise, sterile procedures for managing his MACE stoma. Shiloh absorbed every detail with quiet, unshakeable precision. 
+                </p>
+                <p>
+                    Once Matt was fully taken care of, Sarah and Shiloh took their respective turns utilizing the restroom. The lesson concluded with all three of them gathered around the sink, rigorously scrubbing their hands with hot water and anti-bacterial soap—a non-negotiable rule in Sarah's medical ecosystem.
+                </p>
+                <p>
+                    Sarah dried Matt's hands with a paper towel and unlocked his brakes. She looked over at Shiloh, casually tossing her the keys to Linda's sedan.
+                </p>
+                <p>
+                    "You drive us home," Sarah said with a tired, affectionate smile. "I need a break."
+                </p>
+                <p>
+                    Shiloh caught the keys smoothly out of the air. "You got it, Boss."
                 </p>
             </div>
             <?php include $_SERVER['DOCUMENT_ROOT'] . '/includes/components/navigation/narrative-stepper.php'; ?>

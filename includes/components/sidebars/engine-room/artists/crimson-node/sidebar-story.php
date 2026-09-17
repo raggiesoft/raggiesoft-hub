@@ -13,7 +13,7 @@ $request_uri = $_SERVER['REQUEST_URI'] ?? '/';
 </h6>
 <div class="list-group list-group-flush">
     <!-- Chapter 1 -->
-    <a href="/engine-room/artists/crimson-node/story/chapter-01" class="list-group-item list-group-item-action fw-bold <?= ($request_uri == '/engine-room/artists/crimson-node/story/chapter-01') ? 'active' : '' ?>">
+    <a href="/engine-room/artists/crimson-node/story/book-1/chapter-01" class="list-group-item list-group-item-action fw-bold <?= ($request_uri == '/engine-room/artists/crimson-node/story/chapter-01') ? 'active' : '' ?>">
         Chapter 1: The Approach
     </a>
     <?php if ($request_uri == '/engine-room/artists/crimson-node/story/chapter-01'): ?>
@@ -23,7 +23,7 @@ $request_uri = $_SERVER['REQUEST_URI'] ?? '/';
     <?php endif; ?>
 
     <!-- Chapter 2 -->
-    <a href="/engine-room/artists/crimson-node/story/chapter-02" class="list-group-item list-group-item-action fw-bold <?= ($request_uri == '/engine-room/artists/crimson-node/story/chapter-02') ? 'active' : '' ?>">
+    <a href="/engine-room/artists/crimson-node/story/book-1/chapter-02" class="list-group-item list-group-item-action fw-bold <?= ($request_uri == '/engine-room/artists/crimson-node/story/chapter-02') ? 'active' : '' ?>">
         Chapter 2: The Core Ecosystem
     </a>
     <?php if ($request_uri == '/engine-room/artists/crimson-node/story/chapter-02'): ?>
@@ -43,7 +43,7 @@ $request_uri = $_SERVER['REQUEST_URI'] ?? '/';
 </div>
 
     <!-- Chapter 3 -->
-    <a href="/engine-room/artists/crimson-node/story/chapter-03" class="list-group-item list-group-item-action fw-bold <?= ($request_uri == '/engine-room/artists/crimson-node/story/chapter-03') ? 'active' : '' ?>">
+    <a href="/engine-room/artists/crimson-node/story/book-1/chapter-03" class="list-group-item list-group-item-action fw-bold <?= ($request_uri == '/engine-room/artists/crimson-node/story/chapter-03') ? 'active' : '' ?>">
         Chapter 3: The Triple Birthday
     </a>
     <?php if ($request_uri == '/engine-room/artists/crimson-node/story/chapter-03'): ?>
