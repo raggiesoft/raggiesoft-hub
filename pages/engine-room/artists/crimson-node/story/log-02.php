@@ -15,8 +15,8 @@
 
             <!-- Hero Image -->
             <figure class="figure w-100 mb-5">
-                <a href="https://assets.raggiesoft.com/shiloh/images/story/log-03.jpg" target="_blank">
-                    <img src="https://assets.raggiesoft.com/shiloh/images/story/log-03.jpg" class="figure-img img-fluid rounded shadow" alt="Courtney hugging Matt in the Commons, with Mr. Vance standing guard.">
+                <a href="https://assets.raggiesoft.com/shiloh/images/story/log-02.jpg" target="_blank">
+                    <img src="https://assets.raggiesoft.com/shiloh/images/story/log-02.jpg" class="figure-img img-fluid rounded shadow" alt="Courtney hugging Matt in the Commons, with Mr. Vance standing guard.">
                 </a>
                 <figcaption class="figure-caption text-end fst-italic">Courtney grounds Matt in the Northwood Commons while Mr. Vance anchors the perimeter.</figcaption>
             </figure>
