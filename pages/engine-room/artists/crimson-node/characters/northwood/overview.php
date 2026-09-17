@@ -105,17 +105,17 @@ $pageTitle = "Northwood High - Crimson Node";
             </div>
         </div>
 
-        <!-- Benard Morgan -->
+        <!-- Bernard Morgan -->
         <div class="col-md-6 col-lg-4">
             <div class="card h-100 border-0 shadow-sm" style="border-top: 5px solid #0dcaf0;">
                 <a href="https://assets.raggiesoft.com/shiloh/images/characters/northwood/bernard-morgan.jpg" target="_blank">
-                    <img src="https://assets.raggiesoft.com/shiloh/images/characters/northwood/bernard-morgan.jpg" class="card-img-top rounded-0" alt="Benard Morgan" style="aspect-ratio: 1/1; object-fit: cover; object-position: center top;">
+                    <img src="https://assets.raggiesoft.com/shiloh/images/characters/northwood/bernard-morgan.jpg" class="card-img-top rounded-0" alt="Bernard Morgan" style="aspect-ratio: 1/1; object-fit: cover; object-position: center top;">
                 </a>
                 <div class="card-body">
-                    <h4 class="card-title fw-bold">Benard Morgan</h4>
+                    <h4 class="card-title fw-bold">Bernard Morgan</h4>
                     <h6 class="card-subtitle mb-3 text-info text-uppercase fw-bold">The Principal</h6>
                     <p class="card-text text-muted">An approachable and perceptive administrator who insists on first names and prioritizes student well-being above administrative bureaucracy.</p>
-                    <a href="/engine-room/artists/crimson-node/characters/northwood/staff/benard-morgan" class="btn btn-outline-secondary btn-sm">View Profile</a>
+                    <a href="/engine-room/artists/crimson-node/characters/northwood/staff/bernard-morgan" class="btn btn-outline-secondary btn-sm">View Profile</a>
                 </div>
             </div>
         </div>
