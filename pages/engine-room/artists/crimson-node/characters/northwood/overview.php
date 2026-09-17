@@ -59,7 +59,21 @@ $pageTitle = "Northwood High - Crimson Node";
             </div>
         </div>
 
-        <!-- Space for Trent Montgomery (pending lore) -->
+        
+        <!-- Arthur Vance -->
+        <div class="col-md-6 col-lg-4">
+            <div class="card h-100 border-0 shadow-sm" style="border-top: 5px solid #198754;">
+                <a href="https://assets.raggiesoft.com/shiloh/images/characters/northwood/arthur-vance.jpg" target="_blank">
+                    <img src="https://assets.raggiesoft.com/shiloh/images/thumbnails/northwood/arthur-vance-thumb.jpg" class="card-img-top rounded-0" alt="Arthur Vance" style="aspect-ratio: 1/1; object-fit: cover; object-position: center top;">
+                </a>
+                <div class="card-body">
+                    <h4 class="card-title fw-bold">Arthur Vance</h4>
+                    <h6 class="card-subtitle mb-3 text-success text-uppercase fw-bold">The Guardian</h6>
+                    <p class="card-text text-muted">Matt's deeply lovable, fiercely protective one-on-one paraprofessional aide who serves as the clinical anchor inside the high school bubble.</p>
+                    <a href="/engine-room/artists/crimson-node/characters/northwood/arthur-vance" class="btn btn-outline-secondary btn-sm">View Profile</a>
+                </div>
+            </div>
+        </div>
 
     </div>
 </div>

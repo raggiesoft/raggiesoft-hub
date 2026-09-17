@@ -74,7 +74,7 @@ $pageTitle = "Courtney Evans - Crimson Node";
             <div class="alert alert-secondary mt-5 rounded-3 border-0">
                 <h6 class="alert-heading fw-bold mb-2"><i class="fa-duotone fa-cassette-tape me-2"></i>Lore Notes</h6>
                 <p class="small mb-0">
-                    The pop-culture landscape of Courtney's era heavily features <em>The Paradigm</em> (the highly anticipated late-90s cyber-dystopian action movie) and <em>The Final Note</em> (a massive 1997-era historical romance blockbuster, the poster for which hangs prominently above Courtney's beige computer monitor). The communication vector for the betrayal was <em>Omni-Q</em>, the in-universe drop-in for ICQ. It is important to note that Matt exclusively uses Omni-Q and does not use AIM (AOL Instant Messenger).
+                    The pop-culture landscape of Courtney's era heavily features <em>The Paradigm</em> (the highly anticipated late-90s cyber-dystopian action movie) and <em>The Final Note</em> (a massive 1997-era historical romance blockbuster, the poster for which hangs prominently above Courtney's beige computer monitor). The communication vector for the betrayal was <em>Omni-Q</em>, the primary desktop instant messaging client used by teenagers in 1999.
                 </p>
             </div>
 

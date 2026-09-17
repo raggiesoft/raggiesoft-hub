@@ -1,27 +1,28 @@
 {
-  "common": {
-    "site": "crimson-node",
-    "brandFont": [
-      "Impact",
-      "sans-serif"
-    ],
-    "siteName": "Crimson Node",
-    "headerMenu": "engine-room/artists/crimson-node/header-node",
-    "footer": "engine-room/artists/crimson-node/footer-node",
-    "showSidebar": false,
-    "navbarBrandLogo": "https://assets.raggiesoft.com/engine-room-records/artists/crimson-node/2002-crimson-node/album-art.jpg",
-    "navbarBrandText": "Crimson Node",
-    "navbarBrandLink": "/engine-room/artists/crimson-node",
-    "ogImage": "https://assets.raggiesoft.com/engine-room-records/artists/crimson-node/2002-crimson-node/album-art.jpg"
-  },
-  "/engine-room/artists/crimson-node/story": {
-    "view": "pages/engine-room/artists/crimson-node/story/overview.php",
-    "title": "The Archives | Crimson Node",
-    "ogTitle": "Crimson Node - The Story Archives"
-  },
-  "/engine-room/artists/crimson-node/story/chapter-01": {
-    "view": "pages/engine-room/artists/crimson-node/story/chapter-01.php",
-    "title": "Chapter 01: Initializing | Crimson Node",
-    "ogTitle": "Chapter 01 - The Archives"
-  }
+    "common": {
+        "site": "crimson-node",
+        "brandFont": [
+            "Impact",
+            "sans-serif"
+        ],
+        "siteName": "Crimson Node",
+        "headerMenu": "engine-room/artists/crimson-node/header-node",
+        "footer": "engine-room/artists/crimson-node/footer-node",
+        "showSidebar": false,
+        "navbarBrandLogo": "https://assets.raggiesoft.com/engine-room-records/artists/crimson-node/2002-crimson-node/album-art.jpg",
+        "navbarBrandText": "Crimson Node",
+        "navbarBrandLink": "/engine-room/artists/crimson-node",
+        "ogImage": "https://assets.raggiesoft.com/engine-room-records/artists/crimson-node/2002-crimson-node/album-art.jpg"
+    },
+    "/engine-room/artists/crimson-node/story": {
+        "view": "pages/engine-room/artists/crimson-node/story/overview.php",
+        "title": "The Archives | Crimson Node",
+        "ogTitle": "Crimson Node - The Story Archives"
+    },
+    "/engine-room/artists/crimson-node/story/log-01": {
+        "view": "pages/engine-room/artists/crimson-node/story/log-01",
+        "title": "Log 01: The Illusion - Crimson Node",
+        "ogTitle": "Log 01: The Illusion",
+        "ogImage": "https://assets.raggiesoft.com/shiloh/images/thumbnails/story/log-01-thumb.jpg"
+    }
 }

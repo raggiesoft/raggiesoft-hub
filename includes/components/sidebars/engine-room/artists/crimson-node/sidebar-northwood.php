@@ -11,6 +11,9 @@
         <a href="/engine-room/artists/crimson-node/characters/northwood/courtney-evans" class="list-group-item list-group-item-action <?= ($currentPath == '/engine-room/artists/crimson-node/characters/northwood/courtney-evans') ? 'active' : '' ?>">
             Courtney Evans
         </a>
+        <a href="/engine-room/artists/crimson-node/characters/northwood/arthur-vance" class="list-group-item list-group-item-action <?= ($currentPath == '/engine-room/artists/crimson-node/characters/northwood/arthur-vance') ? 'active' : '' ?>">
+            Arthur Vance
+        </a>
     </div>
 </div>
 <div class="card border-0 shadow-sm">

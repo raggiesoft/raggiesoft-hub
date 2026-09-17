@@ -25,5 +25,10 @@
         "view": "pages/engine-room/artists/crimson-node/characters/northwood/courtney-evans",
         "title": "Courtney Evans | Crimson Node",
         "ogTitle": "Courtney Evans - The Illusion"
+    },
+    "/engine-room/artists/crimson-node/characters/northwood/arthur-vance": {
+        "view": "pages/engine-room/artists/crimson-node/characters/northwood/arthur-vance",
+        "title": "Arthur Vance | Crimson Node",
+        "ogTitle": "Arthur Vance - The Guardian"
     }
 }
