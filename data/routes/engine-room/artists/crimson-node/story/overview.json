@@ -6,34 +6,27 @@
             "sans-serif"
         ],
         "siteName": "Crimson Node",
-        "headerMenu": "engine-room/artists/crimson-node/header-story",
         "footer": "engine-room/artists/crimson-node/footer-crimson",
-        "showSidebar": true,
+        "showSidebar": false,
         "navbarBrandLogo": "https://assets.raggiesoft.com/engine-room-records/artists/crimson-node/2002-crimson-node/album-art.jpg",
         "navbarBrandText": "<span class=\"navbar-brand-text\"><span class=\"d-none d-md-inline\">The </span>Archives</span>",
         "navbarBrandLink": "/engine-room/artists/crimson-node/story",
-        "ogImage": "https://assets.raggiesoft.com/engine-room-records/artists/crimson-node/2002-crimson-node/album-art.jpg",
-        "sidebar": "engine-room/artists/crimson-node/sidebar-story"
+        "ogImage": "https://assets.raggiesoft.com/engine-room-records/artists/crimson-node/2002-crimson-node/album-art.jpg"
     },
     "/engine-room/artists/crimson-node/story": {
         "view": "pages/engine-room/artists/crimson-node/story/overview",
         "title": "The Archives | Crimson Node",
         "ogTitle": "Crimson Node - The Story Archives"
     },
-    "/engine-room/artists/crimson-node/story/log-01": {
-        "view": "pages/engine-room/artists/crimson-node/story/log-01",
-        "title": "Log 01: The Approach - Crimson Node",
-        "ogTitle": "Log 01: The Approach"
+    "/engine-room/artists/crimson-node/story/chapter-01": {
+        "view": "pages/engine-room/artists/crimson-node/story/chapter-01",
+        "title": "Chapter 1: The Approach - Book 1 - Crimson Node",
+        "ogTitle": "Chapter 1: The Approach"
     },
-    "/engine-room/artists/crimson-node/story/log-02": {
-        "view": "pages/engine-room/artists/crimson-node/story/log-02",
-        "title": "Log 02: The Illusion - Crimson Node",
-        "ogTitle": "Log 02: The Illusion",
+    "/engine-room/artists/crimson-node/story/chapter-02": {
+        "view": "pages/engine-room/artists/crimson-node/story/chapter-02",
+        "title": "Chapter 2: The Core Ecosystem - Book 1 - Crimson Node",
+        "ogTitle": "Chapter 2: The Core Ecosystem",
         "ogImage": "https://assets.raggiesoft.com/shiloh/images/thumbnails/story/log-02-thumb.jpg"
-    },
-    "/engine-room/artists/crimson-node/story/log-03": {
-        "view": "pages/engine-room/artists/crimson-node/story/log-03",
-        "title": "Log 03: The 6th Period Ecosystem - Crimson Node",
-        "ogTitle": "Log 03: The 6th Period Ecosystem"
     }
 }
