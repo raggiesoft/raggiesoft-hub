@@ -42,5 +42,11 @@
         "title": "Mrs. Periwinkle | Northwood High - Crimson Node",
         "ogTitle": "Mrs. Periwinkle",
         "ogImage": "https://assets.raggiesoft.com/shiloh/images/characters/northwood/mrs-periwinkle.jpg"
+    
+    "/engine-room/artists/crimson-node/characters/northwood/staff/benard-morgan": {
+        "view": "pages/engine-room/artists/crimson-node/characters/northwood/staff/benard-morgan",
+        "title": "Benard Morgan | Northwood High - Crimson Node",
+        "ogTitle": "Benard Morgan",
+        "ogImage": "https://assets.raggiesoft.com/shiloh/images/characters/northwood/bernard-morgan.jpg"
     }
 }

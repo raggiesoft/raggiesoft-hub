@@ -97,7 +97,7 @@ $nav = [
                     Vance unlocked the brakes and began pushing Matt’s wheelchair down the crowded hallway toward third period. The sheer physical presence of the paraprofessional acting as a vanguard forced the sea of students to naturally part around them. 
                 </p>
                 <p>
-                    As they turned the corner into the main academic wing, they crossed paths with <a href="/engine-room/artists/crimson-node/characters/staff/benard-morgan" class="text-decoration-none border-bottom border-danger text-body-emphasis fw-bold">Benard Morgan</a>, the school principal. Unlike most administrators who insisted on strict formalities, Benard actively encouraged the students to call him by his first name. He was walking briskly toward the front office, but he stopped immediately when he saw the tense, frightened look still lingering on Matt's face. 
+                    As they turned the corner into the main academic wing, they crossed paths with <a href="/engine-room/artists/crimson-node/characters/northwood/staff/benard-morgan" class="text-decoration-none border-bottom border-danger text-body-emphasis fw-bold">Benard Morgan</a>, the school principal. Unlike most administrators who insisted on strict formalities, Benard actively encouraged the students to call him by his first name. He was walking briskly toward the front office, but he stopped immediately when he saw the tense, frightened look still lingering on Matt's face. 
                 </p>
                 <p>
                     Having spent years working with Matt, Benard was deeply attuned to his non-verbal cues. He didn't need words to know that Matt had just experienced a significant distress event.
