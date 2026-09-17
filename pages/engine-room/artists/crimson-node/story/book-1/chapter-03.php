@@ -284,13 +284,60 @@ $nav = [
                     Once Matt was fully taken care of, Sarah and Shiloh took their respective turns utilizing the restroom. The lesson concluded with all three of them gathered around the sink, rigorously scrubbing their hands with hot water and anti-bacterial soap—a non-negotiable rule in Sarah's medical ecosystem.
                 </p>
                 <p>
-                    Sarah dried Matt's hands with a paper towel and unlocked his brakes. She looked over at Shiloh, casually tossing her the keys to Linda's sedan.
+                    Sarah dried Matt's hands with a paper towel and unlocked his brakes. As they headed back out to the parking lot, Matt gave a soft, urgent hum, looking pointedly between Shiloh and the driver's side door of Linda's sedan. 
                 </p>
                 <p>
-                    "You drive us home," Sarah said with a tired, affectionate smile. "I need a break."
+                    Sarah laughed, immediately understanding the request. Since she had sat up front with him on the way to the theater, he wanted to sit next to his cousin on the ride home. 
                 </p>
                 <p>
-                    Shiloh caught the keys smoothly out of the air. "You got it, Boss."
+                    Sarah looked over at Shiloh, casually tossing her the keys. "You drive us home," she said with a tired, affectionate smile. "I need a break in the back seat anyway."
+                </p>
+                <p>
+                    Shiloh caught the keys smoothly out of the air, shooting Matt a warm grin. "You got it, Boss."
+                </p>
+
+                <hr class="my-5 border-secondary border-opacity-50 w-50 mx-auto">
+
+                <h3 id="part-7" class="mt-5 mb-4 text-uppercase tracking-wide text-muted fw-bold">Part 7: The Legal Baseline &ndash; 7:00 PM</h3>
+
+                <p>
+                    By the time they arrived back at the house, the adrenaline from the movie had completely evaporated. The massive intake of sugar and the sheer sensory load of the afternoon left Matt profoundly, deeply exhausted. 
+                </p>
+                <p>
+                    Linda had initially planned a large birthday dinner, but recognizing her son's drained state, she quickly pivoted. She prepared a light, easy meal instead, setting it up in the quiet comfort of the living room.
+                </p>
+                <p>
+                    As Sarah and Shiloh settled onto the couch with their plates, Linda pulled up a chair next to Matt’s wheelchair. Her expression was warm, but carried a protective, fiercely maternal edge.
+                </p>
+                <p>
+                    "I want you to know something," Linda said softly, keeping her voice low. "Courtney called the house while you three were at the theater."
+                </p>
+                <p>
+                    Matt stiffened slightly, his fingers hovering over the armrest. 
+                </p>
+                <p>
+                    "She wanted to apologize," Linda continued, her tone hardening. "She said she wanted to figure out a way to make it up to you. I didn't let her speak. I told her that you were out having a wonderful birthday with your sister and your cousin, and I hung up the phone."
+                </p>
+                <p>
+                    Matt paused. He waited for the crushing, anxious weight in his chest to return—the same weight that had made him cry in his bedroom on Friday afternoon. But to his own surprise, he didn't feel upset at all. He felt overwhelmingly relieved. He looked at Sarah, then at Shiloh, who were both watching him closely. He realized in that moment that he had already made his decision. Courtney had been cruel to him. He didn't want to see her again anyway. He gave his mother a firm, sharp nod of approval. 
+                </p>
+                <p>
+                    Linda smiled, patting his arm. "Good. Because we have more important things to talk about. You're eighteen now, Matt. You're legally an adult."
+                </p>
+                <p>
+                    Matt knew this conversation was coming. Given his profound physical limitations, they had spent months preparing the legal framework for a Guardianship and Conservatorship. It was a necessary step to ensure his parents retained the legal authority to continue taking care of him, managing his medical needs, and protecting him from outside interference. 
+                </p>
+                <p>
+                    "Your father and I will remain your primary guardians," Linda explained gently. "But we are setting this up so that you have a massive safety net. We've structured the legal paperwork so that Sarah—and now Shiloh—are officially permitted to help make decisions for you. They will have the legal authority to step in, advocate for you, and ensure your needs are met no matter what happens."
+                </p>
+                <p>
+                    Matt looked over at his sister and his cousin. Shiloh offered a soft, deeply reassuring smile, while Sarah reached over and squeezed his hand. The realization that the two people he trusted most in the world were now legally anchored into his survival provided an immense, profound sense of security.
+                </p>
+                <p>
+                    "Now, eat up and rest," Linda instructed, standing back up. "You know your dad and I are preparing to sell this house. So once you've recovered your energy in a few days, we are going to sit down and have a very big conversation about what your future looks like."
+                </p>
+                <p>
+                    Matt gave a soft, exhausted hum of agreement. Whatever the future held, he knew one thing with absolute certainty: he was completely, fiercely protected. 
                 </p>
             </div>
             <?php include $_SERVER['DOCUMENT_ROOT'] . '/includes/components/navigation/narrative-stepper.php'; ?>
