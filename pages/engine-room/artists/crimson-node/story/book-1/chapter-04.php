@@ -158,6 +158,11 @@ $nav = [
                 <p>
                     Ten minutes later, Courtney Evans was sitting rigidly in one of the hard plastic chairs opposite Bernard’s desk. Her polished cheerleader aesthetic had completely unraveled, replaced by the tear-streaked panic of a teenager watching her entire social ecosystem collapse in real time.
                 </p>
+                <figure class="figure my-4 text-center d-block">
+                    <img src="https://assets.raggiesoft.com/shiloh/images/story/courtney-principal-office.jpg" class="figure-img img-fluid rounded shadow" alt="Courtney pleading with Bernard Morgan">
+                    <figcaption class="figure-caption fst-italic">"Mr. Morgan! Please!?"</figcaption>
+                </figure>
+
                 <p>
                     Bernard sat behind his desk, his expression devoid of its usual warmth. The phone receiver was pressed to his ear. 
                 </p>
