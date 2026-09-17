@@ -88,6 +88,68 @@ $nav = [
                 <p>
                     "Good," Vance smiled, standing back up and grabbing the handles of the wheelchair. "Let's get to third period. I think we've had enough hallway drama for one morning."
                 </p>
+
+                <hr class="my-5 border-secondary border-opacity-50 w-50 mx-auto">
+
+                <h3 id="part-2" class="mt-5 mb-4 text-uppercase tracking-wide text-muted fw-bold">Part 2: The Principal's Office &ndash; 10:20 AM</h3>
+
+                <p>
+                    Vance unlocked the brakes and began pushing Matt’s wheelchair down the crowded hallway toward third period. The sheer physical presence of the paraprofessional acting as a vanguard forced the sea of students to naturally part around them. 
+                </p>
+                <p>
+                    As they turned the corner into the main academic wing, they crossed paths with <a href="/engine-room/artists/crimson-node/characters/staff/benard-morgan" class="text-decoration-none border-bottom border-danger text-body-emphasis fw-bold">Benard Morgan</a>, the school principal. Unlike most administrators who insisted on strict formalities, Benard actively encouraged the students to call him by his first name. He was walking briskly toward the front office, but he stopped immediately when he saw the tense, frightened look still lingering on Matt's face. 
+                </p>
+                <p>
+                    Having spent years working with Matt, Benard was deeply attuned to his non-verbal cues. He didn't need words to know that Matt had just experienced a significant distress event.
+                </p>
+                <p>
+                    "Matt," Benard said warmly, stepping out of the flow of traffic. "You look like you just saw a ghost. Do you need to talk to me?"
+                </p>
+                <p>
+                    Matt gave a sharp, urgent nod, tapping his fingers rapidly against his travel keyboard. 
+                </p>
+                <p>
+                    Benard immediately gestured down the hall. "Alright. My office. Let's go."
+                </p>
+                <p>
+                    Vance quickly pivoted the chair, following the principal away from the noisy commons and into the quiet, carpeted sanctuary of the front office. Once the heavy wooden door was closed, shielding them from the outside world, Benard sat behind his desk and leaned forward.
+                </p>
+                <p>
+                    "What happened?" Benard asked gently.
+                </p>
+                <p>
+                    Matt spent a long minute tapping deliberately on his Quantum WritePad. He didn't understand the exact mechanics of what Courtney had offered him. But his logical framework recognized that being pulled into an abandoned storage closet off the stage by someone who had just been cruel to him was fundamentally wrong—and physically impossible.
+                </p>
+                <p>
+                    <em>"Courtney Evans cornered me,"</em> the flat, synthesized female voice announced into the quiet office. <em>"She said she wanted to go into the stage closet. To hook up. I do not understand what hooking up means. But I do not want to go into the closet. There are three steps down. I would fall."</em>
+                </p>
+                <p>
+                    Benard’s expression instantly dropped into a cold, hard mask of absolute fury. He looked up at Vance.
+                </p>
+                <p>
+                    "I walked out of the restroom just as she was trapping him against the wall," Vance confirmed, his voice grave. "I chased her off before it escalated. But she was actively soliciting him, Benard. An eighteen-year-old disabled adult under a state conservatorship."
+                </p>
+                <p>
+                    Benard took a slow, deep breath, rubbing his temples. The legal and ethical magnitude of what Courtney had just attempted was staggering. If Matt's mother or sister found out about this before the school handled it, the resulting legal explosion would level the entire building.
+                </p>
+                <p>
+                    "Matt, I am so sorry this happened," Benard said, looking directly at the teenager. "You did the exact right thing by telling me. You do not ever have to go anywhere with anyone if you don't want to. I promise you, Courtney will be dealt with immediately."
+                </p>
+                <p>
+                    Matt let out a soft hum, his shoulders finally dropping in relief. The system was functioning exactly as it should. The adults were in control. 
+                </p>
+                <p>
+                    "Now," Benard said, forcing a kind smile back onto his face. "Where are you supposed to be right now?"
+                </p>
+                <p>
+                    <em>"Third period. History,"</em> the keyboard spoke. 
+                </p>
+                <p>
+                    Benard picked up the receiver of his desk phone. "Let me page Mr. Harrison. I’ll let him know you were with me and that your tardy is fully excused."
+                </p>
+                <p>
+                    Once the call was made, Matt offered a bright, thankful hum. Vance exchanged a heavy, knowing nod with the principal before unlocking the wheelchair brakes. He pushed Matt back out into the now-empty hallway, heading safely toward third period, leaving Benard Morgan alone in his office to initiate what would undoubtedly be a catastrophic phone call to Courtney Evans' mother.
+                </p>
             </div>
 
             <?php include $_SERVER['DOCUMENT_ROOT'] . '/includes/components/navigation/narrative-stepper.php'; ?>
