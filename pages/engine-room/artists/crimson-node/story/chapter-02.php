@@ -125,6 +125,104 @@ $nav = [
                 <p>
                     For Matt, the 6th period ecosystem was operating flawlessly. The noise, the architectural hazards, the clinical requirements—all of it was being managed, absorbed, and filtered out. In this exact moment, surrounded by the chaos of Northwood High, he was just a guy looking forward to taking a girl to the movies.
                 </p>
+
+                <hr class="my-5 border-secondary border-opacity-50 w-50 mx-auto">
+
+                <h3 id="part-3" class="mt-5 mb-4 text-uppercase tracking-wide text-muted fw-bold">Part 3: The Omni-Q Incident &ndash; 4:30 PM</h3>
+                
+                <p>
+                    Back in the safety of his bedroom, Matt parked his manual wheelchair at his desk. The Vanguard LogicPad was docked, and the familiar, high-pitched "Uh-Oh!" chime of an incoming message echoed through his speakers. It was Omni-Q.
+                </p>
+                
+                <div class="card bg-dark text-light font-monospace p-3 my-4 border border-secondary shadow-sm">
+                    <div class="border-bottom border-secondary pb-2 mb-3">
+                        <strong class="text-success">System:</strong> Connection established.<br>
+                        <strong class="text-success">System:</strong> Chatting with Court99.
+                    </div>
+                    <div>
+                        <span class="text-info fw-bold">Court99:</span> Hey! Just got home. So excited for Sunday!<br>
+                        <span class="text-warning fw-bold">MattTheLion:</span> hey. me too. <br>
+                        <span class="text-info fw-bold">Court99:</span> Are we meeting at the theater or is Mr. Vance driving you?<br>
+                    </div>
+                </div>
+
+                <p>
+                    Matt stared at the screen, his fingers hovering over the red TrackPoint "crimson node" in the center of his keyboard. The "School Matt" illusion was about to fracture. He took a slow breath, knowing he had to type the truth.
+                </p>
+
+                <div class="card bg-dark text-light font-monospace p-3 my-4 border border-secondary shadow-sm">
+                    <div>
+                        <span class="text-warning fw-bold">MattTheLion:</span> Mr. Vance only works during the school day. My sister Sarah is driving me.<br>
+                        <span class="text-info fw-bold">Court99:</span> Oh cool! I haven't met her yet. We can all hang out!<br>
+                        <span class="text-warning fw-bold">MattTheLion:</span> Courtney, she's not just dropping me off. She's my private duty nurse. She has to sit with us during the movie to monitor my equipment.<br>
+                    </div>
+                </div>
+
+                <p>
+                    The typing indicator on the other end vanished. Thirty seconds passed. Then a minute. 
+                </p>
+                <p>
+                    The silence radiating from the chat window felt louder than the Northwood Commons at high noon. Courtney had fallen completely in love with the quiet boy who navigated the school halls, but the clinical reality—that his survival outside of school required a heavily trained medical professional sitting right next to them—was suddenly, sharply, undeniable.
+                </p>
+                <p>
+                    The "Uh-Oh!" chime finally sounded again.
+                </p>
+
+                <div class="card bg-dark text-light font-monospace p-3 my-4 border border-secondary shadow-sm">
+                    <div>
+                        <span class="text-info fw-bold">Court99:</span> Oh.<br>
+                        <span class="text-info fw-bold">Court99:</span> Okay.<br>
+                    </div>
+                </div>
+
+                <p>
+                    It wasn't explosive, but it didn't need to be. The brevity spoke volumes. The bubble had officially burst.
+                </p>
+
+                <hr class="my-5 border-secondary border-opacity-50 w-50 mx-auto">
+
+                <h3 id="part-4" class="mt-5 mb-4 text-uppercase tracking-wide text-muted fw-bold">Part 4: The Fallout &ndash; 5:15 PM</h3>
+                
+                <p>
+                    Outside the bedroom window, the muggy, oppressive heat of an unseasonably warm Virginia afternoon had broken into a heavy, relentless rain. A battered box fan rattled aggressively in the window frame, desperately trying to pull in whatever cool air it could scavenge from the storm. 
+                </p>
+                <p>
+                    Inside, the Omni-Q window remained silently open on the monitor. Matt was no longer at his desk.
+                </p>
+                <p>
+                    He sat on the edge of his bed, his chest heaving with silent, ragged sobs. The emotional processing of an eighteen-year-old was violently clashing with the developmental reality of a child trapped within a growing man's failing body. The rejection—simple, brief, and absolute—cut through him with a devastating finality. 
+                </p>
+                
+                <div class="my-4 text-center">
+                    <img src="https://assets.raggiesoft.com/shiloh/images/story/sarah-comfort-matt.jpg" alt="Sarah comforting Matt in their bedroom" class="img-fluid rounded shadow border border-secondary" style="max-width: 100%;">
+                    <div class="text-muted small mt-2 fst-italic">The sanctuary of the shared bedroom.</div>
+                </div>
+
+                <p>
+                    The walls of the shared bedroom were plastered with his artwork. Dozens of crayon drawings were taped haphazardly above his headboard—a stark contrast to the sterile, clinical hardware surrounding his bed. His absolute favorite drawing, recently completed, hung proudly near the center: a vibrant, child-like interpretation of the inside of Sarah’s computer tower, complete with bright green motherboards and messy tangles of red wires. 
+                </p>
+
+                <div class="my-4 text-center">
+                    <img src="https://assets.raggiesoft.com/shiloh/images/story/matt-computer-drawing.jpg" alt="Matt's crayon drawing of Sarah's computer" class="img-fluid rounded shadow border border-secondary" style="max-width: 80%;">
+                    <div class="text-muted small mt-2 fst-italic">Matt's favorite drawing: The inside of Sarah's computer.</div>
+                </div>
+
+                <p>
+                    Sarah sat beside him on the mattress, her arm wrapped tightly around his shaking shoulders. She didn't need to read the Omni-Q logs to know what had happened. She pulled him closer, resting her cheek against the top of his head while the rain hammered against the glass.
+                </p>
+                <p>
+                    "It's okay, Matty," Sarah murmured, her voice steady and fiercely protective over the rattling hum of the box fan. "It's her loss. She doesn't get it, and that's on her."
+                </p>
+                <p>
+                    Matt buried his face into her shoulder, the crushing weight of the isolation finally settling over him. The "School Matt" persona was dead. 
+                </p>
+                <p>
+                    Sarah squeezed him tighter, rocking him slightly. "Hey," she said softly, forcing a gentle smile into her voice. "We don't need her anyway. Sunday is our birthday. Just you and me. We'll go see <em>The Paradigm</em> together, just like we planned before she even came into the picture. It's going to be awesome. I promise."
+                </p>
+                <p>
+                    Matt closed his eyes, leaning into the only anchor he had left as the storm raged on outside.
+                </p>
+
             </div>
 
             <?php include $_SERVER['DOCUMENT_ROOT'] . '/includes/components/navigation/narrative-stepper.php'; ?>
