@@ -75,5 +75,35 @@ $pageTitle = "Northwood High - Crimson Node";
             </div>
         </div>
 
+        <!-- Mrs. DeMarco -->
+        <div class="col-md-6 col-lg-4">
+            <div class="card h-100 border-0 shadow-sm" style="border-top: 5px solid #ffc107;">
+                <a href="https://assets.raggiesoft.com/shiloh/images/characters/northwood/mrs-demarco.jpg" target="_blank">
+                    <img src="https://assets.raggiesoft.com/shiloh/images/characters/northwood/mrs-demarco.jpg" class="card-img-top rounded-0" alt="Mrs. DeMarco" style="aspect-ratio: 1/1; object-fit: cover; object-position: center top;">
+                </a>
+                <div class="card-body">
+                    <h4 class="card-title fw-bold">Mrs. DeMarco</h4>
+                    <h6 class="card-subtitle mb-3 text-warning text-uppercase fw-bold">The Culinary Warden</h6>
+                    <p class="card-text text-muted">The undisputed ruler of the Commons. She operates the "Shadow Law" justice system, trading physical labor (Trash Duty) for clean administrative records.</p>
+                    <a href="/engine-room/artists/crimson-node/characters/northwood/mrs-demarco" class="btn btn-outline-secondary btn-sm">View Profile</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mrs. Periwinkle -->
+        <div class="col-md-6 col-lg-4">
+            <div class="card h-100 border-0 shadow-sm" style="border-top: 5px solid #6c757d;">
+                <a href="https://assets.raggiesoft.com/shiloh/images/characters/northwood/mrs-periwinkle.jpg" target="_blank">
+                    <img src="https://assets.raggiesoft.com/shiloh/images/characters/northwood/mrs-periwinkle.jpg" class="card-img-top rounded-0" alt="Mrs. Periwinkle" style="aspect-ratio: 1/1; object-fit: cover; object-position: center top;">
+                </a>
+                <div class="card-body">
+                    <h4 class="card-title fw-bold">Mrs. Periwinkle</h4>
+                    <h6 class="card-subtitle mb-3 text-secondary text-uppercase fw-bold">The Dewey Decimal Terror</h6>
+                    <p class="card-text text-muted">The Head Librarian who executes uncompromising psychological warfare. Her punishment—endless library categorization in absolute silence.</p>
+                    <a href="/engine-room/artists/crimson-node/characters/northwood/mrs-periwinkle" class="btn btn-outline-secondary btn-sm">View Profile</a>
+                </div>
+            </div>
+        </div>
+
     </div>
 </div>
