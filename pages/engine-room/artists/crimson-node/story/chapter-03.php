@@ -26,7 +26,7 @@ $nav = [
                     The morning light filtered softly through the blinds of the shared bedroom, casting thin, dusty stripes across the mattress. It was Sunday, May 2nd. A massive milestone. It was Matt's eighteenth birthday, and Sarah's twentieth. 
                 </p>
                 <p>
-                    Sarah stirred first, untangling herself from the blankets. The heavy emotional exhaustion of Friday's Omni-Q incident had faded into a renewed, fiercely protective energy. She sat up, stretching her arms above her head, before gently shaking Matt's shoulder.
+                    <a href="/engine-room/artists/crimson-node/characters/family/sarah-brooks" class="encyclopedia-link text-decoration-none border-bottom border-danger text-body-emphasis fw-bold">Sarah</a> stirred first, untangling herself from the blankets. The heavy emotional exhaustion of Friday's Omni-Q incident had faded into a renewed, fiercely protective energy. She sat up, stretching her arms above her head, before gently shaking Matt's shoulder.
                 </p>
                 <p>
                     "Wake up, birthday boy," she said softly, a warm smile breaking across her face. "You're officially an adult. Kind of."
@@ -61,11 +61,16 @@ $nav = [
                     But the table wasn't set for three. It was set for four.
                 </p>
                 <p>
-                    Sitting at the edge of the table, already stealing a piece of bacon, was Shiloh. Their maternal cousin had made the long drive from Charlottesville the night before. May 2nd wasn't just Matt and Sarah's birthday—it was Shiloh's eighteenth birthday, too.
+                    Sitting at the edge of the table, already stealing a piece of bacon, was <a href="/engine-room/artists/crimson-node/characters/family/shiloh-brooks" class="encyclopedia-link text-decoration-none border-bottom border-danger text-body-emphasis fw-bold">Shiloh</a>. Their maternal cousin had made the long drive from Charlottesville the night before. May 2nd wasn't just Matt and Sarah's birthday—it was Shiloh's eighteenth birthday, too.
                 </p>
                 <p>
                     "About time you two woke up," Shiloh grinned, waving a piece of toast at Matt. "I’ve been starving since eight. Happy birthday, losers."
                 </p>
+                <div class="my-5 text-center">
+                    <img src="https://assets.raggiesoft.com/shiloh/images/story/matt-sarah-shiloh.jpg" alt="Matt getting hugged by Sarah and Shiloh at breakfast" class="img-fluid rounded shadow border border-secondary" style="max-width: 100%;">
+                    <div class="text-muted small mt-2 fst-italic">Matt fiercely loves hugs from women he trusts. Sarah and Shiloh sandwich him in a birthday embrace.</div>
+                </div>
+
                 <p>
                     Sarah laughed, parking Matt at the table and taking the seat next to him. She immediately began cutting up a stack of pancakes into small, manageable bites for him. 
                 </p>

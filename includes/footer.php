@@ -85,6 +85,7 @@ $isDarkTheme = (isset($currentPageTheme) && in_array($currentPageTheme, ['dark',
 <div id="global-player-zone" class="fixed-bottom" style="z-index: 1050;">
     
     <?php include ROOT_PATH . '/includes/components/audio-player/sticky-player.php'; ?>
+    <?php include ROOT_PATH . '/includes/components/modals/encyclopedia-modal.php'; ?>
 
     <script src="https://assets.raggiesoft.com/engine-room-records/js/stardust-player.js?v=<?php echo time(); ?>"></script>
     
@@ -95,6 +96,7 @@ $isDarkTheme = (isset($currentPageTheme) && in_array($currentPageTheme, ['dark',
 </div>
 
 <script src="<?php echo $cdn_root; ?>/common/js/bootstrap.js"></script>
+<script src="https://assets.raggiesoft.com/common/js/encyclopedia.js?v=1789647924"></script>
 <script>
 // 1. Wrap the Store UI logic into a reusable function
 function initializeStorePreferences() {
@@ -142,6 +144,10 @@ document.addEventListener('elara:loaded', function() {
     initializeStorePreferences();
 
     // Re-bind the Stardust Engine tracklist buttons so music keeps playing
+    if (typeof bindEncyclopediaLinks === 'function') {
+        bindEncyclopediaLinks();
+    }
+
     if (typeof bindTracklistButtons === 'function') {
         bindTracklistButtons(); 
     }
