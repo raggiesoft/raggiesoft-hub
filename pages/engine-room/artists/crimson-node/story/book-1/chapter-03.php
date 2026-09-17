@@ -339,6 +339,38 @@ $nav = [
                 <p>
                     Matt gave a soft, exhausted hum of agreement. Whatever the future held, he knew one thing with absolute certainty: he was completely, fiercely protected. 
                 </p>
+
+                <hr class="my-5 border-secondary border-opacity-50 w-50 mx-auto">
+
+                <h3 id="part-8" class="mt-5 mb-4 text-uppercase tracking-wide text-muted fw-bold">Part 8: The Triad &ndash; 7:45 PM</h3>
+
+                <p>
+                    It wasn't even eight o'clock in the evening, but neither Sarah nor Shiloh cared. They understood the delicate mechanics of Matt's neurological battery, and right now, it was completely empty.
+                </p>
+                <p>
+                    Sarah pushed him down the hall and into the quiet sanctuary of the bedroom. With Shiloh stepping in seamlessly to assist, the two of them tackled Matt's evening ADLs with the synchronized efficiency of an established clinical team. They got him out of his daytime clothes and carefully maneuvered his stiff limbs into comfortable, soft pajamas.
+                </p>
+                <p>
+                    Once Matt was securely transferred onto the mattress, Sarah and Shiloh took turns changing into their own sleepwear. 
+                </p>
+                <p>
+                    "Move over, birthday boy," Shiloh murmured gently, climbing into the bed and pulling the heavy comforter up. 
+                </p>
+                <p>
+                    Matt shimmied as best he could toward the center of the mattress. Shiloh settled against his right side, draping an arm across his chest. A moment later, Sarah climbed in on his left, pressing her back against his side to secure him perfectly in place. 
+                </p>
+                <p>
+                    Sandwiched between the two fiercely protective women who anchored his entire existence, Matt let out a long, shuddering sigh of absolute contentment. The tactile grounding of their shared body heat instantly quieted the lingering sensory noise of the day. Friday's anxiety and heartbreak felt like it belonged to a different lifetime. 
+                </p>
+                <p>
+                    "Goodnight, guys," Sarah whispered into the dark room. 
+                </p>
+                <p>
+                    "Night, Sarah. Night, Matt," Shiloh replied softly, already half-asleep.
+                </p>
+                <p>
+                    Matt closed his eyes, his breathing slowing to match the steady rhythm of his sister and cousin. It was the perfect end to a monumental milestone. Good night, you three birthday kids.
+                </p>
             </div>
             <?php include $_SERVER['DOCUMENT_ROOT'] . '/includes/components/navigation/narrative-stepper.php'; ?>
 
