@@ -10,6 +10,7 @@ $isDisco = str_starts_with($request_uri, '/engine-room/artists/crimson-node/disc
 // Fully scrubbed the incorrect /band/ route
 $isPhalanx = str_starts_with($request_uri, '/engine-room/artists/crimson-node/characters/family');
 $isCcc = str_starts_with($request_uri, '/engine-room/artists/crimson-node/characters/ccc');
+$isNorthwood = str_starts_with($request_uri, '/engine-room/artists/crimson-node/characters/northwood');
 $isLore = str_starts_with($request_uri, '/engine-room/artists/crimson-node/story');
 ?>
 
@@ -27,16 +28,28 @@ $isLore = str_starts_with($request_uri, '/engine-room/artists/crimson-node/story
     </a>
   </li>
 
-  <li class="nav-item">
-    <a class="nav-link <?php echo $isPhalanx ? 'active' : ''; ?>" href="/engine-room/artists/crimson-node/characters/family">
-        <i class="fa-duotone fa-users me-2" aria-hidden="true"></i>The Phalanx
+  <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle <?php echo ($isPhalanx || $isCcc || $isNorthwood) ? 'active' : ''; ?>" href="#" id="charactersDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        <i class="fa-duotone fa-users me-2" aria-hidden="true"></i>Characters
     </a>
-  </li>
-
-  <li class="nav-item">
-    <a class="nav-link <?php echo $isCcc ? 'active' : ''; ?>" href="/engine-room/artists/crimson-node/characters/ccc">
-        <i class="fa-duotone fa-graduation-cap me-2" aria-hidden="true"></i>CCC Campus
-    </a>
+    <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="charactersDropdown">
+      <li>
+        <a class="dropdown-item <?php echo $isPhalanx ? 'active' : ''; ?>" href="/engine-room/artists/crimson-node/characters/family">
+            <i class="fa-duotone fa-shield-halved me-2"></i>The Phalanx
+        </a>
+      </li>
+      <li>
+        <a class="dropdown-item <?php echo $isCcc ? 'active' : ''; ?>" href="/engine-room/artists/crimson-node/characters/ccc">
+            <i class="fa-duotone fa-graduation-cap me-2"></i>CCC Campus
+        </a>
+      </li>
+      <li><hr class="dropdown-divider border-secondary"></li>
+      <li>
+        <a class="dropdown-item <?php echo $isNorthwood ? 'active' : ''; ?>" href="/engine-room/artists/crimson-node/characters/northwood">
+            <i class="fa-duotone fa-school me-2"></i>Northwood High
+        </a>
+      </li>
+    </ul>
   </li>
 
   <li class="nav-item">
