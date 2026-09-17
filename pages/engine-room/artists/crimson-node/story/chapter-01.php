@@ -16,7 +16,7 @@ $nav = [
             </div>
 
             <!-- Chapter Heading -->
-            <h2 class="mb-4 text-danger fw-bold">Chapter 1: The Approach &ndash; Friday, April 30, 1999</h2>
+            <h2 class="mb-4 text-danger fw-bold">Chapter 1: The Approach &ndash; Friday, April 23, 1999</h2>
 
             <div class="story-content fs-5" style="line-height: 1.8;">
                 

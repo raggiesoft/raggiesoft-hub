@@ -24,7 +24,7 @@ $nav = [
             </figure>
 
             <!-- Chapter Heading -->
-            <h2 class="mb-4 text-danger fw-bold">Chapter 2: The Core Ecosystem &ndash; Friday, May 7, 1999</h2>
+            <h2 class="mb-4 text-danger fw-bold">Chapter 2: The Core Ecosystem &ndash; Friday, April 30, 1999</h2>
 
             <div class="story-content fs-5" style="line-height: 1.8;">
                 
@@ -43,7 +43,7 @@ $nav = [
                     Matt tapped out a quick sequence on his laptop keyboard. He had Quantum WritePad 97 open, the font blown up to 72 points so Courtney could easily read it from where she stood. He absolutely hated the robotic cadence of Quantum Mary, the default synthesized voice, so he preferred to just let the glowing text speak for him: <strong>YES. SEVEN PM.</strong>
                 </p>
                 <p>
-                    Courtney beamed, her smile bright and untroubled. She squeezed his shoulder gently, entirely absorbed in the romantic anticipation of their Friday night date. Matt looked up at her, appreciating the simple, uncomplicated affection she offered. She didn't seem to notice the hardware, or the chest harness holding him securely in the manual chair. To her, he was just a guy taking her to the movies.
+                    Courtney beamed, her smile bright and untroubled. She squeezed his shoulder gently, entirely absorbed in the romantic anticipation of their upcoming Sunday movie date. Matt looked up at her, appreciating the simple, uncomplicated affection she offered. She didn't seem to notice the hardware, or the chest harness holding him securely in the manual chair. To her, he was just a guy taking her to the movies.
                 </p>
                 <p>
                     Matt knew exactly what it took to maintain this bubble.
