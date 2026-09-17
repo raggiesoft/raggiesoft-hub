@@ -6,27 +6,18 @@ $request_uri = $_SERVER['REQUEST_URI'] ?? '/';
 $isArchives = $request_uri === '/engine-room/artists/crimson-node/story';
 
 // Logic to determine Previous and Next based on current URL
-// (This can be expanded as more logs are added)
+// (This can be expanded as more chapters are added)
 $prevLink = "#";
 $prevDisabled = "disabled";
 $nextLink = "#";
 $nextDisabled = "disabled";
 
-if ($request_uri === '/engine-room/artists/crimson-node/story/log-01') {
+if ($request_uri === '/engine-room/artists/crimson-node/story/chapter-01') {
     $prevDisabled = "disabled";
-    $nextLink = "/engine-room/artists/crimson-node/story/log-02";
+    $nextLink = "/engine-room/artists/crimson-node/story/chapter-02";
     $nextDisabled = "";
-} elseif ($request_uri === '/engine-room/artists/crimson-node/story/log-02') {
-    $prevLink = "/engine-room/artists/crimson-node/story/log-01";
-    $prevDisabled = "";
-    $nextLink = "/engine-room/artists/crimson-node/story/log-03";
-    $nextDisabled = "";
-} elseif ($request_uri === '/engine-room/artists/crimson-node/story/log-03') {
-    $prevLink = "/engine-room/artists/crimson-node/story/log-02";
-    $prevDisabled = "";
-    $nextDisabled = "disabled";
-} elseif ($request_uri === '/engine-room/artists/crimson-node/story/log-02') {
-    $prevLink = "/engine-room/artists/crimson-node/story/log-01";
+} elseif ($request_uri === '/engine-room/artists/crimson-node/story/chapter-02') {
+    $prevLink = "/engine-room/artists/crimson-node/story/chapter-01";
     $prevDisabled = "";
     $nextDisabled = "disabled";
 }
