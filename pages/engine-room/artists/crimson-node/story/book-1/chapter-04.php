@@ -185,6 +185,103 @@ $nav = [
                 <p>
                     "Stand up, Courtney," he instructed coldly. "We're taking a walk out to the trailers."
                 </p>
+
+                <hr class="my-5 border-secondary border-opacity-50 w-50 mx-auto">
+
+                <h3 id="part-4" class="mt-5 mb-4 text-uppercase tracking-wide text-muted fw-bold">Part 4: The Rumor Mill &ndash; 6th Period Lunch</h3>
+
+                <p>
+                    By the time the bell rang for sixth period lunch, the Northwood High rumor mill was already operating at maximum capacity.
+                </p>
+                <p>
+                    Vance wheeled Matt to his usual spot at the edge of the Commons. Matt glanced over toward the center tables where the cheerleaders usually congregated. Courtney’s seat was conspicuously empty. 
+                </p>
+                <p>
+                    As Vance locked the brakes on Matt's chair and began unpacking his specialized lunch containers, snippets of frantic teenage gossip drifted over the ambient roar of the cafeteria.
+                </p>
+                <p>
+                    "...did you hear about Courtney?..."
+                </p>
+                <p>
+                    "...she totally lost her mind this morning..."
+                </p>
+                <p>
+                    "...tried to hurt that boy in the wheelchair! I heard she cornered him in the band hallway..."
+                </p>
+                <p>
+                    "...Mrs. Evans is supposedly coming to get her, but they locked her in the ISS trailer until then..."
+                </p>
+                <p>
+                    Matt let out a slow, tired exhale. The high school melodrama was exhausting. He had survived the Omni-Q betrayal on Friday, celebrated a massive triple birthday on Sunday, and navigated a bizarre, borderline-illegal solicitation on Monday morning. Right now, he didn’t care about Courtney’s social execution or the rampant gossip. He just wanted to go home and sleep.
+                </p>
+                <p>
+                    A group of sophomores drifted a little too close to Matt’s table, their eyes wide as they tried to stare at the boy who had inadvertently taken down the school's most prominent cheerleader. 
+                </p>
+                <p>
+                    Before Matt could even react, Mrs. DeMarco materialized from behind the lunch line like an apex predator. 
+                </p>
+                <p>
+                    "Keep walking," Mrs. DeMarco ordered the sophomores, her voice snapping like a whip across the cafeteria. She pointed a rigid finger toward the far side of the room. "If any of you so much as breathe in Mr. Miller's direction for the rest of this lunch period, you will be scraping the grease traps until graduation. Move."
+                </p>
+                <p>
+                    The sophomores scattered instantly, terrified of the Culinary Warden's "Shadow Law."
+                </p>
+                <p>
+                    Vance chuckled softly, tapping Matt's shoulder. "Eat in peace, buddy. We've got a perimeter."
+                </p>
+                <p>
+                    Matt offered a soft, grateful hum. He slowly began to eat, heavily insulated by the combined protection of his towering paraprofessional and the terrifying cafeteria supervisor. He only had to survive seventh period. Then, at 1:50 PM—ten minutes before the two thousand students rushed the main doors—he would get his early dismissal and board the quiet, air-conditioned safety of the special needs bus. Home, and the grounding safety of Sarah and his mother, was only a few hours away.
+                </p>
+
+                <hr class="my-5 border-secondary border-opacity-50 w-50 mx-auto">
+
+                <h3 id="part-5" class="mt-5 mb-4 text-uppercase tracking-wide text-muted fw-bold">Part 5: The Charlottesville Plan &ndash; 4:00 PM</h3>
+
+                <p>
+                    The transition from the rigid, exhausting architecture of Northwood High to the soft, quiet sanctuary of home was the best part of Matt’s day. 
+                </p>
+                <p>
+                    He was currently transferred out of his wheelchair and lying on the living room sofa, his head resting comfortably in Sarah's lap. She ran her fingers absentmindedly through his hair, providing the deep, rhythmic tactile grounding his nervous system desperately needed to decompress. 
+                </p>
+                <p>
+                    His parents, Linda and David, sat across from them in the armchairs. The house was quiet, but the air felt charged with a strange, buzzing anticipation. It was time for the "Big Conversation" Linda had promised the night before.
+                </p>
+                <p>
+                    "We got a phone call from the family in Charlottesville this morning," David began, leaning forward and resting his elbows on his knees. "Your aunt told us that the property directly next door to their house just went up for sale."
+                </p>
+                <p>
+                    Matt stopped humming, his full attention immediately snapping to his father.
+                </p>
+                <p>
+                    "As you know, we've been preparing to put this house on the market," Linda chimed in, a massive, brilliant smile breaking across her face. "But we've spent the morning figuring out the logistics with the rest of the family. If we sell this house, we can afford to buy the property next door to them in Charlottesville. And we’ve come up with a plan."
+                </p>
+                <p>
+                    Sarah stopped brushing Matt's hair, looking just as eagerly at her parents.
+                </p>
+                <p>
+                    "The adults are going to live in one house," David explained, gesturing with his hands to map out the properties. "And we are going to turn the new house into the Kids House."
+                </p>
+                <p>
+                    Matt's eyes widened. He tapped his fingers rapidly against Sarah’s knee. 
+                </p>
+                <p>
+                    "That means you, Sarah, Shiloh, and all the rest of your cousins will live together under one roof," Linda said, her voice thick with emotion. "You'll have your own massive, shared ecosystem, and your dad and I will be right next door if you ever need us. We’ve already agreed. We’re moving to Charlottesville this Summer, right after you graduate."
+                </p>
+                <p>
+                    A profound, overwhelming wave of joy crashed over Matt. A sharp, loud hum of absolute excitement vibrated in his chest. 
+                </p>
+                <p>
+                    Growing up, some of the happiest, most anchoring memories of his life were from his childhood, surrounded by his all-female cousins. They had never treated him like a burden or an outsider. They treated him as "One of the Girls"—fiercely protecting him, constantly including him, and naturally weaving his complex medical needs into the fabric of their play. The idea that he was going to get that back permanently was intoxicating. 
+                </p>
+                <p>
+                    He wouldn't just be surviving high school anymore. He wouldn't have to worry about girls like Courtney treating his existence as an inconvenience or an aesthetic failure. He was going to spend his adult life entirely surrounded by the women who loved him, protected him, and anchored him to the world.
+                </p>
+                <p>
+                    "You hear that, buddy?" Sarah beamed, leaning down and pressing a tight, affectionate kiss to the side of his head. "We're going to build our own kingdom."
+                </p>
+                <p>
+                    Matt closed his eyes, leaning deeply into his sister’s embrace. Graduation couldn't come fast enough.
+                </p>
             </div>
 
             <?php include $_SERVER['DOCUMENT_ROOT'] . '/includes/components/navigation/narrative-stepper.php'; ?>

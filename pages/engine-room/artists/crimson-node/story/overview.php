@@ -47,6 +47,13 @@
                             </span>
                             <i class="fa-solid fa-chevron-right"></i>
                         </a>
+                        <a href="/engine-room/artists/crimson-node/story/book-1/chapter-04" class="btn btn-danger btn-lg text-start d-flex justify-content-between align-items-center">
+                            <span>
+                                <div class="fw-bold text-uppercase">Chapter 4: The Failed Apology</div>
+                                <div class="fs-6 fw-normal opacity-75">Monday, May 3, 1999</div>
+                            </span>
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </a>
                     </div>
                     
                 </div>
