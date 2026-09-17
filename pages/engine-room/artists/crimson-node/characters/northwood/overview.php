@@ -24,7 +24,7 @@ $pageTitle = "Northwood High - Crimson Node";
             <div class="alert alert-secondary border-0 shadow-sm rounded-3">
                 <div class="row align-items-center">
                     <div class="col-md-8">
-                        <h5 class="fw-bold text-dark"><i class="fa-solid fa-school me-2"></i>The Architecture of Isolation</h5>
+                        <h5 class="fw-bold text-body-emphasis"><i class="fa-solid fa-school me-2"></i>The Architecture of Isolation</h5>
                         <p class="mb-1 text-muted">
                             Northwood High is a physical manifestation of obstacles. From the "Blue Mile" (industrial carpet creating rolling resistance) and the singular Dover hydraulic elevator acting as a failure chokepoint, to the "Kidney Breaker" chairs that force wheelchair users into isolation at the back of the classroom. The school functions as the ultimate foil to the curated safety of the Crimson Node ecosystem.
                         </p>
@@ -34,7 +34,7 @@ $pageTitle = "Northwood High - Crimson Node";
                         <span class="d-block fw-bold" style="color: var(--bs-purple);">The Lion (Purple & Gold)</span>
                         <hr class="my-2 border-secondary">
                         <span class="d-block text-uppercase fw-bold text-muted small mb-1">Era</span>
-                        <span class="d-block fw-bold text-dark">Fall 1999 &ndash; Spring 2003</span>
+                        <span class="d-block fw-bold text-body-emphasis">Fall 1999 &ndash; Spring 2003</span>
                     </div>
                 </div>
             </div>
