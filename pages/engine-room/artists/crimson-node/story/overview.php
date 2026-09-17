@@ -1,3 +1,6 @@
+<?php
+// pages/engine-room/artists/crimson-node/story/overview.php
+?>
 <div class="container py-5">
     <div class="row mb-5 justify-content-center">
         <div class="col-lg-8 text-center">
@@ -22,20 +25,21 @@
                         <p class="text-muted mb-0">Select an episodic log below to begin the playback sequence.</p>
                     </div>
                     
-                    <!-- Episode Index / Stepper Placeholder -->
                     <div class="d-grid gap-3">
                         <a href="/engine-room/artists/crimson-node/story/log-01" class="btn btn-danger btn-lg text-uppercase fw-bold text-white text-start d-flex justify-content-between align-items-center">
-                            <span><i class="fa-duotone fa-play me-3"></i> Log 01: The Illusion</span>
+                            <span><i class="fa-duotone fa-play me-3"></i> Log 01: The Approach</span>
                             <i class="fa-solid fa-chevron-right"></i>
                         </a>
-                        
                         <a href="/engine-room/artists/crimson-node/story/log-02" class="btn btn-danger btn-lg text-uppercase fw-bold text-white text-start d-flex justify-content-between align-items-center">
-                            <span><i class="fa-duotone fa-play me-3"></i> Log 02: The 6th Period Ecosystem</span>
+                            <span><i class="fa-duotone fa-play me-3"></i> Log 02: The Illusion</span>
                             <i class="fa-solid fa-chevron-right"></i>
                         </a>
-                        
+                        <a href="/engine-room/artists/crimson-node/story/log-03" class="btn btn-danger btn-lg text-uppercase fw-bold text-white text-start d-flex justify-content-between align-items-center">
+                            <span><i class="fa-duotone fa-play me-3"></i> Log 03: The 6th Period Ecosystem</span>
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </a>
                         <button class="btn btn-outline-secondary btn-lg text-uppercase fw-bold text-body-emphasis" disabled>
-                            <i class="fa-solid fa-lock me-2"></i> Log 03 (Awaiting Decryption)
+                            <i class="fa-solid fa-lock me-2"></i> Log 04 (Awaiting Decryption)
                         </button>
                     </div>
                     

@@ -1,5 +1,4 @@
 <?php
-// includes/components/sidebars/engine-room/artists/crimson-node/sidebar-story.php
 $request_uri = $_SERVER['REQUEST_URI'] ?? '/';
 ?>
 <div class="list-group list-group-flush border-bottom mb-4">
@@ -13,9 +12,12 @@ $request_uri = $_SERVER['REQUEST_URI'] ?? '/';
 </h6>
 <div class="list-group list-group-flush">
     <a href="/engine-room/artists/crimson-node/story/log-01" class="list-group-item list-group-item-action <?= ($request_uri == '/engine-room/artists/crimson-node/story/log-01') ? 'active' : '' ?>">
-        Log 01: The Illusion
+        Log 01: The Approach
     </a>
     <a href="/engine-room/artists/crimson-node/story/log-02" class="list-group-item list-group-item-action <?= ($request_uri == '/engine-room/artists/crimson-node/story/log-02') ? 'active' : '' ?>">
-        Log 02: The 6th Period Ecosystem
+        Log 02: The Illusion
+    </a>
+    <a href="/engine-room/artists/crimson-node/story/log-03" class="list-group-item list-group-item-action <?= ($request_uri == '/engine-room/artists/crimson-node/story/log-03') ? 'active' : '' ?>">
+        Log 03: The 6th Period Ecosystem
     </a>
 </div>

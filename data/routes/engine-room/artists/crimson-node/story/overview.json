@@ -22,13 +22,18 @@
     },
     "/engine-room/artists/crimson-node/story/log-01": {
         "view": "pages/engine-room/artists/crimson-node/story/log-01",
-        "title": "Log 01: The Illusion - Crimson Node",
-        "ogTitle": "Log 01: The Illusion",
-        "ogImage": "https://assets.raggiesoft.com/shiloh/images/thumbnails/story/log-01-thumb.jpg"
+        "title": "Log 01: The Approach - Crimson Node",
+        "ogTitle": "Log 01: The Approach"
     },
     "/engine-room/artists/crimson-node/story/log-02": {
         "view": "pages/engine-room/artists/crimson-node/story/log-02",
-        "title": "Log 02: The 6th Period Ecosystem - Crimson Node",
-        "ogTitle": "Log 02: The 6th Period Ecosystem"
+        "title": "Log 02: The Illusion - Crimson Node",
+        "ogTitle": "Log 02: The Illusion",
+        "ogImage": "https://assets.raggiesoft.com/shiloh/images/thumbnails/story/log-02-thumb.jpg"
+    },
+    "/engine-room/artists/crimson-node/story/log-03": {
+        "view": "pages/engine-room/artists/crimson-node/story/log-03",
+        "title": "Log 03: The 6th Period Ecosystem - Crimson Node",
+        "ogTitle": "Log 03: The 6th Period Ecosystem"
     }
 }

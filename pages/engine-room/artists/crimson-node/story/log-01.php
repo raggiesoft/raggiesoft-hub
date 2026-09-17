@@ -3,52 +3,65 @@
 ?>
 <div class="container py-5">
     <div class="row justify-content-center">
-        <div class="col-lg-8">
+        <div class="col-lg-10">
             
             <!-- Header -->
             <div class="text-center mb-5">
                 <h6 class="text-danger fw-bold text-uppercase tracking-wider mb-2">Episodic Narrative Log 01</h6>
-                <h1 class="display-5 fw-bold mb-3" style="font-family: 'Impact', sans-serif; letter-spacing: 1px;">THE ILLUSION</h1>
-                <p class="text-muted">Location: Northwood High School Commons | Time: Spring 1999</p>
+                <h1 class="display-5 fw-bold mb-3" style="font-family: 'Impact', sans-serif; letter-spacing: 1px;">THE APPROACH</h1>
+                <p class="text-muted">Location: Northwood High School | Time: Spring 1999 (One Week Prior)</p>
                 <hr class="w-25 mx-auto border-secondary">
             </div>
-
-            <!-- Hero Image -->
-            <figure class="figure w-100 mb-5">
-                <a href="https://assets.raggiesoft.com/shiloh/images/story/log-01.jpg" target="_blank">
-                    <img src="https://assets.raggiesoft.com/shiloh/images/story/log-01.jpg" class="figure-img img-fluid rounded shadow" alt="Courtney hugging Matt in the Commons, with Mr. Vance standing guard.">
-                </a>
-                <figcaption class="figure-caption text-end fst-italic">Courtney grounds Matt in the Northwood Commons while Mr. Vance anchors the perimeter.</figcaption>
-            </figure>
 
             <!-- Story Content -->
             <div class="story-content fs-5" style="line-height: 1.8;">
                 <p>
-                    The wide, bumpy tiles of the Northwood High Commons created a continuous, bone-rattling vibration for anyone in a wheelchair, but in this exact moment, Matt didn't feel the drag. The heavy fire doors of the "Blue Mile" were pinned open by electromagnets, the fluorescent lights buzzed overhead, and the 1999 morning rush swirled around them like white noise.
+                    The social ecosystem of Northwood High School was brutal, rigidly structured, and entirely unforgiving of anomalies. So when Courtney Evans—a girl who effortlessly belonged to the upper-middle tier of the high school hierarchy—broke formation to walk down the quiet end of the academic wing, people noticed. 
                 </p>
                 <p>
-                    Courtney leaned down, her arms wrapping around his shoulders in a warm, grounding hug. She smelled like Bath & Body Works Sweet Pea and teenage optimism. In her late-90s spaghetti-strap tank top, she looked like the quintessential high school girlfriend. She had approached him. She had asked him out. She seemed to see right past the wheelchair and the VocaLink 3000 to the fiercely intelligent, sarcastic guy beneath. 
+                    Her friends had been merciless about it all week. <em>"You like the guy in the wheelchair?" "Courtney, are you serious?" "He can't even talk to you."</em>
                 </p>
                 <p>
-                    "I can't wait for tonight," she said, her voice cutting through the ambient noise of the Commons. "<em>The Paradigm</em> is supposed to be amazing. Are you still coming to pick me up?"
+                    But Courtney didn't care. She had watched Matt in AP History for a month. She had watched the way his eyes sparked with dry, sarcastic intelligence, and she had seen the effortless, massive-font takedowns he typed out in Quantum WritePad 97 when the teacher called on him. He didn't use the robotic Quantum Mary voice—he refused to—but he didn't need to. His glowing, 72-point text projected more confidence than the loudmouth athletes in the back row.
                 </p>
                 <p>
-                    Matt tapped out a quick sequence on his Vanguard LogicPad. The robotic voice synthesized smoothly: <strong>"YES. SEVEN PM."</strong>
+                    Matt was parked near a bank of lockers, a quiet island in the bustling hallway. Mr. Vance, his ever-present paraprofessional, stood a respectful few paces away. Mr. Vance was the one who pushed the manual chair between classes, but once they arrived, he faded back, a silent guardian allowing Matt his space.
                 </p>
                 <p>
-                    Courtney beamed, her smile bright and untroubled. She squeezed his shoulder gently, entirely absorbed in the romantic anticipation of their Friday night date. Matt looked up at her, appreciating the simple, uncomplicated affection she offered. She didn't seem to notice the hardware, the chest harness, or the complex joystick mechanism under his right hand. To her, he was just a guy taking her to the movies.
+                    Courtney took a breath, clutching her binder to her chest, and walked up to him. 
                 </p>
                 <p>
-                    Matt knew exactly what it took to maintain this bubble.
+                    "Hey," she said, offering a genuine, slightly nervous smile.
                 </p>
                 <p>
-                    Just a few feet behind them, slightly out of focus to anyone not actively looking for him, stood Arthur Vance. Wearing a navy blue polo shirt and a staff lanyard, the 65-year-old retired paraprofessional observed the hallway with quiet, stoic precision. Mr. Vance was the physical manifestation of the heavy, clinical reality that allowed Matt to safely exist in the Northwood ecosystem.
+                    Matt looked up from his laptop screen, his expression neutral but observant. His hands rested near the keyboard.
                 </p>
                 <p>
-                    Mr. Vance didn't intrude on the conversation. He simply maintained the perimeter, quietly managing the complex medical and physical variables so that this sweet, romantic moment could exist in the middle of the morning rush. 
+                    "I, um..." Courtney shifted her weight, ignoring the stares of two girls walking past. "I saw your notes from the lecture yesterday. On the Cold War stuff. You're like, way smarter than Mr. Harrison."
                 </p>
                 <p>
-                    For now, the environment was perfectly controlled. The affection was genuine, the connection was real, and the sensory overload of the high school was held safely at bay. Matt relaxed into the embrace, letting himself enjoy the simplicity of the moment, looking forward to the movie tonight.
+                    Matt's lips twitched. His fingers hit the keys.
+                </p>
+                <p>
+                    <strong>A LOW BAR, BUT THANK YOU.</strong>
+                </p>
+                <p>
+                    Courtney laughed, the sound warm and unguarded. It felt easy. The wheelchair, the chest harness, the silent presence of Mr. Vance—none of it mattered to her in that moment. She just liked him. 
+                </p>
+                <p>
+                    "So," she said, her heart beating a little faster. "I was wondering if... maybe you wanted to go see <em>The Paradigm</em> next week? With me?"
+                </p>
+                <p>
+                    Matt stared at her for a long second. He evaluated the sincerity in her eyes, the slightly flushed cheeks, the way she completely ignored her gossiping friends down the hall to stand here with him. She wasn't doing this on a dare. She wasn't trying to be a saint. She just wanted to go to the movies.
+                </p>
+                <p>
+                    His fingers found the keys again.
+                </p>
+                <p>
+                    <strong>I WOULD LIKE THAT.</strong>
+                </p>
+                <p>
+                    Courtney's face lit up with a brilliant, triumphant smile. The connection was made. The bubble had officially been cast.
                 </p>
             </div>
 

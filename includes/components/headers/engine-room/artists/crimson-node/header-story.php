@@ -19,6 +19,15 @@ if ($request_uri === '/engine-room/artists/crimson-node/story/log-01') {
 } elseif ($request_uri === '/engine-room/artists/crimson-node/story/log-02') {
     $prevLink = "/engine-room/artists/crimson-node/story/log-01";
     $prevDisabled = "";
+    $nextLink = "/engine-room/artists/crimson-node/story/log-03";
+    $nextDisabled = "";
+} elseif ($request_uri === '/engine-room/artists/crimson-node/story/log-03') {
+    $prevLink = "/engine-room/artists/crimson-node/story/log-02";
+    $prevDisabled = "";
+    $nextDisabled = "disabled";
+} elseif ($request_uri === '/engine-room/artists/crimson-node/story/log-02') {
+    $prevLink = "/engine-room/artists/crimson-node/story/log-01";
+    $prevDisabled = "";
     $nextDisabled = "disabled";
 }
 ?>
