@@ -30,7 +30,7 @@ $isLore = str_starts_with($request_uri, '/engine-room/artists/crimson-node/story
 
   <li class="nav-item dropdown">
     <a class="nav-link dropdown-toggle <?php echo ($isPhalanx || $isCcc || $isNorthwood) ? 'active' : ''; ?>" href="#" id="charactersDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-        <i class="fa-duotone fa-users me-2" aria-hidden="true"></i>Characters <i class="fa-solid fa-chevron-down ms-1" style="font-size: 0.8em;"></i>
+        <i class="fa-duotone fa-users me-2" aria-hidden="true"></i>Characters <i class="fa-solid fa-chevron-down ms-1" style="font-size: 0.8em;" aria-hidden="true"></i>
     </a>
     <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="charactersDropdown">
       <li>
