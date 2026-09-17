@@ -237,7 +237,7 @@ if ($eras) {
                     <p class="text-secondary small">
                         Meet the family ecosystem: Matt, Sarah, Shiloh, Rachel, Emily, and Jessica.
                     </p>
-                    <a href="<?php echo $root; ?>/family" class="btn btn-outline-primary mt-auto rounded-pill">View Roster</a>
+                    <a href="<?php echo $root; ?>/characters/family" class="btn btn-outline-primary mt-auto rounded-pill">View Roster</a>
                 </div>
             </div>
         </div>

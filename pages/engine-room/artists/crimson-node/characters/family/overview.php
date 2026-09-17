@@ -1,5 +1,5 @@
 <?php
-// pages/engine-room/artists/crimson-node/family/overview.php
+// pages/engine-room/artists/crimson-node/characters/family/overview.php
 // The Phalanx Directory
 
 $pageTitle = "The Phalanx - Crimson Node";
@@ -28,7 +28,7 @@ $pageTitle = "The Phalanx - Crimson Node";
                     <h4 class="card-title fw-bold">Matt Miller</h4>
                     <h6 class="card-subtitle mb-3 text-danger">The Crimson Node / Manager</h6>
                     <p class="card-text text-muted">The brilliant, systems-oriented architect of the band. Operating from his Tactile Command Rig, he is the core around which the entire compound orbits.</p>
-                    <a href="/engine-room/artists/crimson-node/family/matt-miller" class="btn btn-outline-danger btn-sm">View Profile</a>
+                    <a href="/engine-room/artists/crimson-node/characters/family/matt-miller" class="btn btn-outline-danger btn-sm">View Profile</a>
                 </div>
             </div>
         </div>
@@ -43,7 +43,7 @@ $pageTitle = "The Phalanx - Crimson Node";
                     <h4 class="card-title fw-bold">Sarah Miller</h4>
                     <h6 class="card-subtitle mb-3 text-primary">Co-Manager / Primary Protector</h6>
                     <p class="card-text text-muted">Standing 6'4", the "Charge Nurse" provides the absolute structural baseline for the family's joint-and-several medical and security architecture.</p>
-                    <a href="/engine-room/artists/crimson-node/family/sarah-miller" class="btn btn-outline-primary btn-sm">View Profile</a>
+                    <a href="/engine-room/artists/crimson-node/characters/family/sarah-miller" class="btn btn-outline-primary btn-sm">View Profile</a>
                 </div>
             </div>
         </div>
@@ -58,7 +58,7 @@ $pageTitle = "The Phalanx - Crimson Node";
                     <h4 class="card-title fw-bold">Shiloh Brooks</h4>
                     <h6 class="card-subtitle mb-3 text-primary">Rhythm Guitar / Player Two</h6>
                     <p class="card-text text-muted">Matt's 24/7 companion and trusted clinical technician. She anchors the band's rhythm section right next to his manual wheelchair.</p>
-                    <a href="/engine-room/artists/crimson-node/family/shiloh-brooks" class="btn btn-outline-primary btn-sm">View Profile</a>
+                    <a href="/engine-room/artists/crimson-node/characters/family/shiloh-brooks" class="btn btn-outline-primary btn-sm">View Profile</a>
                 </div>
             </div>
         </div>
@@ -73,7 +73,7 @@ $pageTitle = "The Phalanx - Crimson Node";
                     <h4 class="card-title fw-bold">Emily Miller</h4>
                     <h6 class="card-subtitle mb-3 text-warning">Lead Vocals / The Operator</h6>
                     <p class="card-text text-muted">A disciplined Navy brat who flawlessly executes military-style clinical transfers and delivers powerhouse 1980s arena-rock lead vocals.</p>
-                    <a href="/engine-room/artists/crimson-node/family/emily-miller" class="btn btn-outline-warning btn-sm text-body-emphasis">View Profile</a>
+                    <a href="/engine-room/artists/crimson-node/characters/family/emily-miller" class="btn btn-outline-warning btn-sm text-body-emphasis">View Profile</a>
                 </div>
             </div>
         </div>
@@ -88,7 +88,7 @@ $pageTitle = "The Phalanx - Crimson Node";
                     <h4 class="card-title fw-bold">Jessica Brooks</h4>
                     <h6 class="card-subtitle mb-3 text-info">Bass & Synths / The Agent of Chaos</h6>
                     <p class="card-text text-muted">The unfiltered in-house SysAdmin. She commands the analog synthesizers and ruthlessly routes the compound's network to guarantee Matt absolute QoS.</p>
-                    <a href="/engine-room/artists/crimson-node/family/jessica-brooks" class="btn btn-outline-info btn-sm text-body-emphasis">View Profile</a>
+                    <a href="/engine-room/artists/crimson-node/characters/family/jessica-brooks" class="btn btn-outline-info btn-sm text-body-emphasis">View Profile</a>
                 </div>
             </div>
         </div>
@@ -103,7 +103,7 @@ $pageTitle = "The Phalanx - Crimson Node";
                     <h4 class="card-title fw-bold">Rachel Miller</h4>
                     <h6 class="card-subtitle mb-3 text-success">Drums / The Naval Artillery</h6>
                     <p class="card-text text-muted">Armed with a refined, highly articulate sailor mouth, she unleashes mathematically flawless artillery strikes on the acoustic drum kit.</p>
-                    <a href="/engine-room/artists/crimson-node/family/rachel-miller" class="btn btn-outline-success btn-sm">View Profile</a>
+                    <a href="/engine-room/artists/crimson-node/characters/family/rachel-miller" class="btn btn-outline-success btn-sm">View Profile</a>
                 </div>
             </div>
         </div>
@@ -118,7 +118,7 @@ $pageTitle = "The Phalanx - Crimson Node";
                     <h4 class="card-title fw-bold">Chloe Brooks</h4>
                     <h6 class="card-subtitle mb-3 text-secondary">Conservatory Flute / The Strategist</h6>
                     <p class="card-text text-muted">The academic anchor with absolute unbothered energy. She elevates the band's progressive sound with her premium classical woodwind training.</p>
-                    <a href="/engine-room/artists/crimson-node/family/chloe-brooks" class="btn btn-outline-secondary btn-sm">View Profile</a>
+                    <a href="/engine-room/artists/crimson-node/characters/family/chloe-brooks" class="btn btn-outline-secondary btn-sm">View Profile</a>
                 </div>
             </div>
         </div>
@@ -147,7 +147,7 @@ $pageTitle = "The Phalanx - Crimson Node";
                     </div>
 
                     <div class="mt-4">
-                        <a href="/engine-room/artists/crimson-node/family/the-pelletier-twins" class="btn btn-outline-secondary btn-sm">View Unified Profile</a>
+                        <a href="/engine-room/artists/crimson-node/characters/family/the-pelletier-twins" class="btn btn-outline-secondary btn-sm">View Unified Profile</a>
                     </div>
                         </div>
                     </div>

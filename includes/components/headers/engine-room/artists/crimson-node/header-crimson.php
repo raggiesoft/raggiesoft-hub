@@ -8,7 +8,8 @@ $request_uri = $_SERVER['REQUEST_URI'] ?? '/';
 $isHome = str_starts_with($request_uri, '/engine-room/artists/crimson-node/overview') || $request_uri === '/engine-room/artists/crimson-node';
 $isDisco = str_starts_with($request_uri, '/engine-room/artists/crimson-node/discography');
 // Fully scrubbed the incorrect /band/ route
-$isPhalanx = str_starts_with($request_uri, '/engine-room/artists/crimson-node/family');
+$isPhalanx = str_starts_with($request_uri, '/engine-room/artists/crimson-node/characters/family');
+$isCcc = str_starts_with($request_uri, '/engine-room/artists/crimson-node/characters/ccc');
 $isLore = str_starts_with($request_uri, '/engine-room/artists/crimson-node/story');
 ?>
 
@@ -27,8 +28,14 @@ $isLore = str_starts_with($request_uri, '/engine-room/artists/crimson-node/story
   </li>
 
   <li class="nav-item">
-    <a class="nav-link <?php echo $isPhalanx ? 'active' : ''; ?>" href="/engine-room/artists/crimson-node/family">
+    <a class="nav-link <?php echo $isPhalanx ? 'active' : ''; ?>" href="/engine-room/artists/crimson-node/characters/family">
         <i class="fa-duotone fa-users me-2" aria-hidden="true"></i>The Phalanx
+    </a>
+  </li>
+
+  <li class="nav-item">
+    <a class="nav-link <?php echo $isCcc ? 'active' : ''; ?>" href="/engine-room/artists/crimson-node/characters/ccc">
+        <i class="fa-duotone fa-graduation-cap me-2" aria-hidden="true"></i>CCC Campus
     </a>
   </li>
 

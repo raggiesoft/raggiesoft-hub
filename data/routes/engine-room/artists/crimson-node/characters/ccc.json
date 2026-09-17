@@ -1,0 +1,34 @@
+{
+    "common": {
+        "site": "shiloh",
+        "brandFont": [
+            "Impact",
+            "sans-serif"
+        ],
+        "siteName": "Crimson Node",
+        "headerMenu": "engine-room/artists/crimson-node/header-crimson",
+        "footer": "engine-room/artists/crimson-node/footer-crimson",
+        "showSidebar": true,
+        "sidebar": "engine-room/artists/crimson-node/sidebar-ccc",
+        "navbarBrandLogo": "https://assets.raggiesoft.com/engine-room-records/artists/crimson-node/2002-crimson-node/album-art.jpg",
+        "navbarBrandText": "<span class=\"navbar-brand-text\"><span class=\"d-none d-md-inline\">Crimson </span>Node</span>",
+        "navbarBrandLink": "/engine-room/artists/crimson-node",
+        "ogImage": "https://assets.raggiesoft.com/engine-room-records/artists/crimson-node/2002-crimson-node/album-art.jpg"
+    },
+    "/engine-room/artists/crimson-node/characters/ccc/heather-bouchard": {
+        "view": "pages/engine-room/artists/crimson-node/characters/ccc/heather-bouchard",
+        "title": "Heather Bouchard | Crimson Node",
+        "ogTitle": "Heather Bouchard - The Sensory Regulation System"
+    },
+    "/engine-room/artists/crimson-node/characters/ccc/hailey-bouchard": {
+        "view": "pages/engine-room/artists/crimson-node/characters/ccc/hailey-bouchard",
+        "title": "Hailey Bouchard | Crimson Node",
+        "ogTitle": "Hailey Bouchard - The Creative Co-Processor"
+    },
+    "/engine-room/artists/crimson-node/characters/ccc": {
+        "view": "pages/engine-room/artists/crimson-node/characters/ccc/overview",
+        "title": "CCC Campus | Crimson Node",
+        "ogTitle": "CCC Campus - Charlottesville Community College",
+        "showSidebar": false
+    }
+}
