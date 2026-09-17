@@ -190,19 +190,28 @@ $nav = [
                     It was time for the <em>Majesty Express</em>. 
                 </p>
                 <p>
-                    The legendary, fast-paced CGI roller coaster sequence blasted onto the screen. Instead of metal rails, the first-person "camera" locked onto a glowing, translucent celluloid filmstrip track. As the coaster slowly climbed the first steep lift hill, a futuristic, low-polygon dashboard popped up at the bottom of the screen, aggressively flashing the theater policies in neon text: <em>"NO SMOKING," "QUIET PLEASE," "DISPOSE OF TRASH."</em>
+                    The legendary, fast-paced CGI roller coaster sequence blasted onto the screen. Instead of metal rails, the first-person "camera" locked onto a glowing, translucent celluloid filmstrip track. At the very bottom of the initial lift hill, a flashing electronic sign ordered <em>"NO SMOKING."</em> As the coaster slowly clattered upward, a futuristic, low-polygon dashboard popped up at the bottom of the screen to rapidly display the theater policies: <em>"DISPOSE OF TRASH IN TRASH CANS. GIFT CERTIFICATES ARE AVAILABLE FOR ANY SPECIAL OCCASION."</em> 
+                </p>
+                <p>
+                    At the top of the lift hill, a massive electronic sign suspended over the track alternated between <em>"QUIET PLEASE"</em> and <em>"NO TALKING DURING MOVIE,"</em> accompanied by a sharp, synthesized <em>ding!</em> sound with every flash.
                 </p>
                 <p>
                     Because of his severe dyspraxia and the fragile rigidity of his body, Matt could never safely ride a real roller coaster. The violent, physical G-forces would be far too dangerous for his frame. But here, anchored securely between the two women who loved him most, surrounded by the deafening surround sound and the massive screen filling his peripheral vision, Matt could safely surrender to the illusion. 
                 </p>
                 <p>
-                    As the coaster approached the crest of the digital peak, it navigated through a chaotic visual explosion of oversized, buttery popcorn kernels. Just before the massive drop, there was a sudden jump scare—a gigantic popcorn kernel inflated violently right into the camera lens with an aggressive, famously loud popping sound effect, designed to make the audience feel like they were going to smash right into it. The sensory assault didn't trigger Matt; instead, he dramatically threw his head back, happily pretending to flinch, playing right along with the illusion Majesty Cinemas wanted him to feel.
+                    The coaster crested the peak and plunged into a series of wild twists and turns through the "Candy Canyon." Matt grabbed both Sarah and Shiloh’s hands, squeezing tight as he threw his head back and let out a bright, wordless squeal of pure joy. The screen rocketed them past massive boxes of <em>Meteor Bites</em> and <em>Saturn Rings</em> flying past the camera in a barrage of primary colors and abrasive, treble-heavy 90s synth-rock. 
                 </p>
                 <p>
-                    Then, the coaster plunged downward into the "Candy Canyon." Matt grabbed both Sarah and Shiloh’s hands, squeezing tight as he let out a bright, wordless squeal of pure joy. The screen rocketed them past gigantic, floating concession items—massive boxes of <em>Meteor Bites</em> and <em>Saturn Rings</em> flying past the camera in a barrage of primary colors and abrasive, treble-heavy 90s synth-rock. 
+                    They hit more aggressive twists and turns, dodging giant cups of <em>Polar Cola</em> and a massive box of chocolate-covered <em>Peanut Pals</em>, before navigating into a chaotic visual explosion of oversized, buttery popcorn kernels. 
                 </p>
                 <p>
-                    The wild ride finally whipped back around to the futuristic station, revealing the sleek, metallic vehicle they had supposedly been riding in. The sequence culminated with the massive, neon-glowing Majesty Cinemas logo filling the screen, right before it faded to black to start the feature presentation.
+                    Just ahead of the final, massive drop, there was a sudden jump scare—a gigantic popcorn kernel inflated violently right into the camera lens with an aggressive, famously loud popping sound effect, designed to make the audience feel like they were going to smash right into it. The sensory assault didn't trigger Matt; instead, he dramatically threw his head back, happily pretending to flinch, playing right along with the exact illusion Majesty Cinemas wanted him to feel.
+                </p>
+                <p>
+                    After surviving the final drop, the track took one last hard curve to the right, hurtling toward the futuristic station. Above the station doors, red alert lights flashed on the upper left and upper right as a blaring alarm signaled the doors opening. The perspective suddenly cut—the camera was now panning up from below the track, with the rails off to the right, watching the sleek, metallic train come roaring out of the station they had just entered.
+                </p>
+                <p>
+                    The sequence culminated with the massive, neon-glowing Majesty Cinemas logo filling the screen. A sharp, futuristic chime echoed through the subwoofers as the crown on the logo shined brilliantly, right before the screen finally faded to black to start the feature presentation.
                 </p>
 
                 <hr class="my-5 border-secondary border-opacity-50 w-50 mx-auto">
