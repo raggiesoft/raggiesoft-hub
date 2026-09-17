@@ -196,10 +196,48 @@ $nav = [
                     Because of his severe dyspraxia and the fragile rigidity of his body, Matt could never safely ride a real roller coaster. The violent, physical G-forces would be far too dangerous for his frame. But here, anchored securely between the two women who loved him most, surrounded by the deafening surround sound and the massive screen filling his peripheral vision, Matt could safely surrender to the illusion. 
                 </p>
                 <p>
-                    The coaster crested the digital peak and plunged downward into the "Candy Canyon." Matt grabbed both Sarah and Shiloh’s hands, squeezing tight as he threw his head back and let out a bright, wordless squeal of pure joy. The screen rocketed them past gigantic, floating concession items—massive boxes of <em>Meteor Bites</em> and <em>Saturn Rings</em> flying past the camera in a barrage of primary colors and abrasive, treble-heavy 90s synth-rock. 
+                    As the coaster approached the crest of the digital peak, it navigated through a chaotic visual explosion of oversized, buttery popcorn kernels. Just before the massive drop, there was a sudden jump scare—a gigantic popcorn kernel inflated violently right into the camera lens with an aggressive, famously loud popping sound effect, designed to make the audience feel like they were going to smash right into it. The sensory assault didn't trigger Matt; instead, he dramatically threw his head back, happily pretending to flinch, playing right along with the illusion Majesty Cinemas wanted him to feel.
                 </p>
                 <p>
-                    The wild ride culminated in a chaotic visual explosion of oversized, buttery popcorn kernels popping violently right into the camera lens, accompanied by an aggressive, famously loud popping sound effect, right before the screen faded to black to start the feature presentation.
+                    Then, the coaster plunged downward into the "Candy Canyon." Matt grabbed both Sarah and Shiloh’s hands, squeezing tight as he let out a bright, wordless squeal of pure joy. The screen rocketed them past gigantic, floating concession items—massive boxes of <em>Meteor Bites</em> and <em>Saturn Rings</em> flying past the camera in a barrage of primary colors and abrasive, treble-heavy 90s synth-rock. 
+                </p>
+                <p>
+                    The wild ride finally whipped back around to the futuristic station, revealing the sleek, metallic vehicle they had supposedly been riding in. The sequence culminated with the massive, neon-glowing Majesty Cinemas logo filling the screen, right before it faded to black to start the feature presentation.
+                </p>
+
+                <hr class="my-5 border-secondary border-opacity-50 w-50 mx-auto">
+
+                <h3 id="part-5" class="mt-5 mb-4 text-uppercase tracking-wide text-muted fw-bold">Part 5: The Simulation &ndash; 2:15 PM</h3>
+
+                <p>
+                    For the next two hours and fifteen minutes, Matt did not move. He barely even blinked.
+                </p>
+                <p>
+                    From the moment the opening sequence hit the screen—a mesmerizing cascade of glowing green symbols raining down a black digital void—Matt was entirely captivated. To an ordinary viewer, <em>The Paradigm</em> was just a high-octane science fiction action movie about rebellion and martial arts. But to Matt, whose entire existence relied on rigid structures, predictable systems, and translating his mind into an external machine, the movie resonated on a profound, almost spiritual level.
+                </p>
+                <p>
+                    He sat utterly transfixed as the protagonist was violently pulled from his mundane life and thrust into the horrifying truth: that his entire world was nothing more than a complex, systemic illusion programmed by machines. The philosophical concept of determinism, of breaking free from the code that dictated one's physical limitations, felt impossibly personal. 
+                </p>
+                <p>
+                    During the intense, reality-bending action sequences, the theater subwoofers roared, rattling the ice in their massive Polar Cola cup. In the past, sudden, explosive noise might have triggered a sensory overload. But the sheer cinematic spectacle of the movie—the impossible, gravity-defying slow-motion acrobatics, the dark leather aesthetics, the relentless cyberpunk soundtrack—acted as a perfectly engineered hyper-focus anchor for his neurodivergent brain. 
+                </p>
+                <p>
+                    Whenever the aggressive strobe lighting or sudden gunfire peaked, Matt didn't retreat inward. Instead, he simply leaned to his left, pressing his shoulder firmly against Sarah's arm, or reached to his right, tangling his fingers into Shiloh's sleeve. Their steady, physical presence provided the immediate, tactile grounding he needed to safely process the massive sensory input on the screen. 
+                </p>
+                <p>
+                    He watched the protagonist learn to bend the rules of the simulation, dodging bullets and rewriting the physical boundaries of his environment through sheer mental willpower. Matt felt a deep, swelling sense of awe. He couldn't run, he couldn't speak, and he couldn't fight in the physical world. But his mind was sharp, fast, and entirely unconstrained. 
+                </p>
+                <p>
+                    When the final credits rolled, accompanied by a heavy, rebellious industrial rock anthem, the theater erupted into spontaneous applause. The house lights slowly faded back up, revealing a room full of teenagers and adults whose minds had just been thoroughly blown.
+                </p>
+                <p>
+                    Sarah let out a long breath, staring blankly at the scrolling credits before turning to Matt. "Okay. You were right. That was... insane."
+                </p>
+                <p>
+                    Shiloh was still chewing on a sour gummy, her eyes wide. "I feel like I need to go home and unplug my computer. Just in case."
+                </p>
+                <p>
+                    Matt couldn't articulate the complex, racing thoughts swirling through his head. He didn't reach for his travel keyboard to type out an intellectual analysis of the film's systemic themes. Instead, he simply looked at his sister and his cousin, his eyes bright with adrenaline, and let out a soft, happy hum. It was, without question, the greatest birthday of his life.
                 </p>
             </div>
             <?php include $_SERVER['DOCUMENT_ROOT'] . '/includes/components/navigation/narrative-stepper.php'; ?>
