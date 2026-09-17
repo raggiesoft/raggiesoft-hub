@@ -18,7 +18,7 @@
                 <a href="https://assets.raggiesoft.com/shiloh/images/story/log-01.jpg" target="_blank">
                     <img src="https://assets.raggiesoft.com/shiloh/images/story/log-01.jpg" class="figure-img img-fluid rounded shadow" alt="Courtney hugging Matt in the Commons, with Mr. Vance standing guard.">
                 </a>
-                <figcaption class="figure-caption text-end fst-italic">The calm before the storm: Courtney grounds Matt while Mr. Vance anchors the perimeter.</figcaption>
+                <figcaption class="figure-caption text-end fst-italic">Courtney grounds Matt in the Northwood Commons while Mr. Vance anchors the perimeter.</figcaption>
             </figure>
 
             <!-- Story Content -->
@@ -27,7 +27,7 @@
                     The wide, bumpy tiles of the Northwood High Commons created a continuous, bone-rattling vibration for anyone in a wheelchair, but in this exact moment, Matt didn't feel the drag. The heavy fire doors of the "Blue Mile" were pinned open by electromagnets, the fluorescent lights buzzed overhead, and the 1999 morning rush swirled around them like white noise.
                 </p>
                 <p>
-                    Courtney leaned down, her arms wrapping around his shoulders in a warm, grounding hug. She smelled like Bath & Body Works Sweet Pea and teenage optimism. In her late-90s spaghetti-strap tank top, she looked like the quintessential high school girlfriend—because in this bubble, that was exactly what she was. She had approached him. She had asked him out. She saw past the wheelchair and the VocaLink 3000 to the fiercely intelligent, sarcastic guy beneath. 
+                    Courtney leaned down, her arms wrapping around his shoulders in a warm, grounding hug. She smelled like Bath & Body Works Sweet Pea and teenage optimism. In her late-90s spaghetti-strap tank top, she looked like the quintessential high school girlfriend. She had approached him. She had asked him out. She seemed to see right past the wheelchair and the VocaLink 3000 to the fiercely intelligent, sarcastic guy beneath. 
                 </p>
                 <p>
                     "I can't wait for tonight," she said, her voice cutting through the ambient noise of the Commons. "<em>The Paradigm</em> is supposed to be amazing. Are you still coming to pick me up?"
@@ -36,22 +36,19 @@
                     Matt tapped out a quick sequence on his Vanguard LogicPad. The robotic voice synthesized smoothly: <strong>"YES. SEVEN PM."</strong>
                 </p>
                 <p>
-                    Courtney beamed, completely enamored with the "School Matt" persona—the charming, capable student who seemed perfectly manageable within the structured walls of Northwood High. She squeezed his shoulder gently, entirely absorbed in the romantic anticipation of their Friday night date. 
+                    Courtney beamed, her smile bright and untroubled. She squeezed his shoulder gently, entirely absorbed in the romantic anticipation of their Friday night date. Matt looked up at her, appreciating the simple, uncomplicated affection she offered. She didn't seem to notice the hardware, the chest harness, or the complex joystick mechanism under his right hand. To her, he was just a guy taking her to the movies.
                 </p>
                 <p>
-                    But the illusion of "School Matt" was just that—an illusion carefully maintained by the ecosystem surrounding him.
+                    Matt knew exactly what it took to maintain this bubble.
                 </p>
                 <p>
-                    Standing just a few feet behind them, slightly out of focus to anyone not paying attention, was Arthur Vance. Wearing a navy blue polo shirt and a staff lanyard, the 65-year-old retired paraprofessional observed the interaction with quiet, stoic precision. Mr. Vance was the physical manifestation of the heavy, clinical reality that Courtney was actively ignoring. 
+                    Just a few feet behind them, slightly out of focus to anyone not actively looking for him, stood Arthur Vance. Wearing a navy blue polo shirt and a staff lanyard, the 65-year-old retired paraprofessional observed the hallway with quiet, stoic precision. Mr. Vance was the physical manifestation of the heavy, clinical reality that allowed Matt to safely exist in the Northwood ecosystem.
                 </p>
                 <p>
-                    He maintained the perimeter, quietly managing Matt's complex medical and physical needs so that this sweet, romantic moment could exist. The visual contrast between Courtney's carefree aesthetic and Mr. Vance's grounded, protective presence perfectly illustrated her fatal blind spot: she believed she was just dating a high school boy, failing entirely to recognize the complex care ecosystem required to keep him alive.
+                    Mr. Vance didn't intrude on the conversation. He simply maintained the perimeter, quietly managing the complex medical and physical variables so that this sweet, romantic moment could exist in the middle of the morning rush. 
                 </p>
                 <p>
-                    For now, the bubble held. The affection was genuine, the connection was real, and the heartbreak was entirely unwritten. But the ticking clock of the outside world was growing louder. Tonight, the ecosystem would attempt to transition from the safety of Northwood High to the uncontrolled reality of a movie theater.
-                </p>
-                <p>
-                    And the system was about to crash.
+                    For now, the environment was perfectly controlled. The affection was genuine, the connection was real, and the sensory overload of the high school was held safely at bay. Matt relaxed into the embrace, letting himself enjoy the simplicity of the moment, looking forward to the movie tonight.
                 </p>
             </div>
 
@@ -60,9 +57,9 @@
                 <a href="/engine-room/artists/crimson-node/story" class="btn btn-outline-secondary">
                     <i class="fa-solid fa-arrow-left me-2"></i> Back to Archives
                 </a>
-                <button class="btn btn-outline-danger disabled">
+                <a href="/engine-room/artists/crimson-node/story/log-02" class="btn btn-outline-danger">
                     Log 02 <i class="fa-solid fa-arrow-right ms-2"></i>
-                </button>
+                </a>
             </div>
 
         </div>

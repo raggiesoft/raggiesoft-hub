@@ -8,11 +8,12 @@
         "siteName": "Crimson Node",
         "headerMenu": "engine-room/artists/crimson-node/header-story",
         "footer": "engine-room/artists/crimson-node/footer-crimson",
-        "showSidebar": false,
+        "showSidebar": true,
         "navbarBrandLogo": "https://assets.raggiesoft.com/engine-room-records/artists/crimson-node/2002-crimson-node/album-art.jpg",
         "navbarBrandText": "<span class=\"navbar-brand-text\"><span class=\"d-none d-md-inline\">The </span>Archives</span>",
         "navbarBrandLink": "/engine-room/artists/crimson-node/story",
-        "ogImage": "https://assets.raggiesoft.com/engine-room-records/artists/crimson-node/2002-crimson-node/album-art.jpg"
+        "ogImage": "https://assets.raggiesoft.com/engine-room-records/artists/crimson-node/2002-crimson-node/album-art.jpg",
+        "sidebar": "engine-room/artists/crimson-node/sidebar-story"
     },
     "/engine-room/artists/crimson-node/story": {
         "view": "pages/engine-room/artists/crimson-node/story/overview",
@@ -24,5 +25,10 @@
         "title": "Log 01: The Illusion - Crimson Node",
         "ogTitle": "Log 01: The Illusion",
         "ogImage": "https://assets.raggiesoft.com/shiloh/images/thumbnails/story/log-01-thumb.jpg"
+    },
+    "/engine-room/artists/crimson-node/story/log-02": {
+        "view": "pages/engine-room/artists/crimson-node/story/log-02",
+        "title": "Log 02: The 6th Period Ecosystem - Crimson Node",
+        "ogTitle": "Log 02: The 6th Period Ecosystem"
     }
 }

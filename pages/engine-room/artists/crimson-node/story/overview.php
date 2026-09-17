@@ -29,9 +29,10 @@
                             <i class="fa-solid fa-chevron-right"></i>
                         </a>
                         
-                        <button class="btn btn-outline-secondary btn-lg text-uppercase fw-bold text-body-emphasis" disabled>
-                            <i class="fa-solid fa-lock me-2"></i> Log 02 (Awaiting Decryption)
-                        </button>
+                        <a href="/engine-room/artists/crimson-node/story/log-02" class="btn btn-danger btn-lg text-uppercase fw-bold text-white text-start d-flex justify-content-between align-items-center">
+                            <span><i class="fa-duotone fa-play me-3"></i> Log 02: The 6th Period Ecosystem</span>
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </a>
                         
                         <button class="btn btn-outline-secondary btn-lg text-uppercase fw-bold text-body-emphasis" disabled>
                             <i class="fa-solid fa-lock me-2"></i> Log 03 (Awaiting Decryption)

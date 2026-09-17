@@ -13,8 +13,12 @@ $nextLink = "#";
 $nextDisabled = "disabled";
 
 if ($request_uri === '/engine-room/artists/crimson-node/story/log-01') {
-    // For Log 01, no previous log yet. Next is disabled until Log 02 is built.
     $prevDisabled = "disabled";
+    $nextLink = "/engine-room/artists/crimson-node/story/log-02";
+    $nextDisabled = "";
+} elseif ($request_uri === '/engine-room/artists/crimson-node/story/log-02') {
+    $prevLink = "/engine-room/artists/crimson-node/story/log-01";
+    $prevDisabled = "";
     $nextDisabled = "disabled";
 }
 ?>
