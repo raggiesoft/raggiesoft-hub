@@ -30,5 +30,10 @@
         "title": "Chapter 2: The Core Ecosystem - Book 1 - Crimson Node",
         "ogTitle": "Chapter 2: The Core Ecosystem",
         "ogImage": "https://assets.raggiesoft.com/shiloh/images/thumbnails/story/log-02-thumb.jpg"
+    },
+    "/engine-room/artists/crimson-node/story/chapter-03": {
+        "view": "pages/engine-room/artists/crimson-node/story/chapter-03",
+        "title": "Chapter 3: The Triple Birthday - Book 1 - Crimson Node",
+        "ogTitle": "Chapter 3: The Triple Birthday"
     }
 }

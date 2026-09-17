@@ -19,6 +19,11 @@ if ($request_uri === '/engine-room/artists/crimson-node/story/chapter-01') {
 } elseif ($request_uri === '/engine-room/artists/crimson-node/story/chapter-02') {
     $prevLink = "/engine-room/artists/crimson-node/story/chapter-01";
     $prevDisabled = "";
+    $nextLink = "/engine-room/artists/crimson-node/story/chapter-03";
+    $nextDisabled = "";
+} elseif ($request_uri === '/engine-room/artists/crimson-node/story/chapter-03') {
+    $prevLink = "/engine-room/artists/crimson-node/story/chapter-02";
+    $prevDisabled = "";
     $nextDisabled = "disabled";
 }
 ?>

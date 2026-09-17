@@ -41,3 +41,16 @@ $request_uri = $_SERVER['REQUEST_URI'] ?? '/';
         </a>
     <?php endif; ?>
 </div>
+
+    <!-- Chapter 3 -->
+    <a href="/engine-room/artists/crimson-node/story/chapter-03" class="list-group-item list-group-item-action fw-bold <?= ($request_uri == '/engine-room/artists/crimson-node/story/chapter-03') ? 'active' : '' ?>">
+        Chapter 3: The Triple Birthday
+    </a>
+    <?php if ($request_uri == '/engine-room/artists/crimson-node/story/chapter-03'): ?>
+        <a href="#part-1" class="list-group-item list-group-item-action ps-4 py-2 border-0 text-secondary" style="font-size: 0.9em; background-color: rgba(0,0,0,0.02);">
+            <i class="fa-solid fa-angle-right me-2 text-danger"></i>Part 1: The Morning Routine
+        </a>
+        <a href="#part-2" class="list-group-item list-group-item-action ps-4 py-2 border-0 text-secondary" style="font-size: 0.9em; background-color: rgba(0,0,0,0.02);">
+            <i class="fa-solid fa-angle-right me-2 text-danger"></i>Part 2: The Breakfast Spread
+        </a>
+    <?php endif; ?>
