@@ -21,24 +21,24 @@
         "ogTitle": "Northwood High - Virginia Beach",
         "showSidebar": false
     },
-    "/engine-room/artists/crimson-node/characters/northwood/courtney-evans": {
-        "view": "pages/engine-room/artists/crimson-node/characters/northwood/courtney-evans",
+    "/engine-room/artists/crimson-node/characters/northwood/students/courtney-evans": {
+        "view": "pages/engine-room/artists/crimson-node/characters/northwood/students/courtney-evans",
         "title": "Courtney Evans | Crimson Node",
         "ogTitle": "Courtney Evans - The Illusion"
     },
-    "/engine-room/artists/crimson-node/characters/northwood/arthur-vance": {
-        "view": "pages/engine-room/artists/crimson-node/characters/northwood/arthur-vance",
+    "/engine-room/artists/crimson-node/characters/northwood/staff/arthur-vance": {
+        "view": "pages/engine-room/artists/crimson-node/characters/northwood/staff/arthur-vance",
         "title": "Arthur Vance | Crimson Node",
         "ogTitle": "Arthur Vance - The Guardian"
     },
-    "/engine-room/artists/crimson-node/characters/northwood/mrs-demarco": {
-        "view": "pages/engine-room/artists/crimson-node/characters/northwood/mrs-demarco",
+    "/engine-room/artists/crimson-node/characters/northwood/staff/mrs-demarco": {
+        "view": "pages/engine-room/artists/crimson-node/characters/northwood/staff/mrs-demarco",
         "title": "Mrs. DeMarco | Northwood High - Crimson Node",
         "ogTitle": "Mrs. DeMarco",
         "ogImage": "https://assets.raggiesoft.com/shiloh/images/characters/northwood/mrs-demarco.jpg"
     },
-    "/engine-room/artists/crimson-node/characters/northwood/mrs-periwinkle": {
-        "view": "pages/engine-room/artists/crimson-node/characters/northwood/mrs-periwinkle",
+    "/engine-room/artists/crimson-node/characters/northwood/staff/mrs-periwinkle": {
+        "view": "pages/engine-room/artists/crimson-node/characters/northwood/staff/mrs-periwinkle",
         "title": "Mrs. Periwinkle | Northwood High - Crimson Node",
         "ogTitle": "Mrs. Periwinkle",
         "ogImage": "https://assets.raggiesoft.com/shiloh/images/characters/northwood/mrs-periwinkle.jpg"

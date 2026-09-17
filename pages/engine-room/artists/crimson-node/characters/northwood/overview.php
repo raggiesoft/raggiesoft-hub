@@ -54,7 +54,7 @@ $pageTitle = "Northwood High - Crimson Node";
                     <h4 class="card-title fw-bold">Courtney Evans</h4>
                     <h6 class="card-subtitle mb-3 text-danger text-uppercase fw-bold">The Illusion</h6>
                     <p class="card-text text-muted">Matt's first high school girlfriend. Enamored with the curated "School Matt," but utterly unwilling to accept the clinical reality of his survival requirements.</p>
-                    <a href="/engine-room/artists/crimson-node/characters/northwood/courtney-evans" class="btn btn-outline-secondary btn-sm">View Profile</a>
+                    <a href="/engine-room/artists/crimson-node/characters/northwood/students/courtney-evans" class="btn btn-outline-secondary btn-sm">View Profile</a>
                 </div>
             </div>
         </div>
@@ -70,7 +70,7 @@ $pageTitle = "Northwood High - Crimson Node";
                     <h4 class="card-title fw-bold">Arthur Vance</h4>
                     <h6 class="card-subtitle mb-3 text-success text-uppercase fw-bold">The Guardian</h6>
                     <p class="card-text text-muted">Matt's deeply lovable, fiercely protective one-on-one paraprofessional aide who serves as the clinical anchor inside the high school bubble.</p>
-                    <a href="/engine-room/artists/crimson-node/characters/northwood/arthur-vance" class="btn btn-outline-secondary btn-sm">View Profile</a>
+                    <a href="/engine-room/artists/crimson-node/characters/northwood/staff/arthur-vance" class="btn btn-outline-secondary btn-sm">View Profile</a>
                 </div>
             </div>
         </div>
@@ -85,7 +85,7 @@ $pageTitle = "Northwood High - Crimson Node";
                     <h4 class="card-title fw-bold">Mrs. DeMarco</h4>
                     <h6 class="card-subtitle mb-3 text-warning text-uppercase fw-bold">The Culinary Warden</h6>
                     <p class="card-text text-muted">The undisputed ruler of the Commons. She operates the "Shadow Law" justice system, trading physical labor (Trash Duty) for clean administrative records.</p>
-                    <a href="/engine-room/artists/crimson-node/characters/northwood/mrs-demarco" class="btn btn-outline-secondary btn-sm">View Profile</a>
+                    <a href="/engine-room/artists/crimson-node/characters/northwood/staff/mrs-demarco" class="btn btn-outline-secondary btn-sm">View Profile</a>
                 </div>
             </div>
         </div>
@@ -100,7 +100,7 @@ $pageTitle = "Northwood High - Crimson Node";
                     <h4 class="card-title fw-bold">Mrs. Periwinkle</h4>
                     <h6 class="card-subtitle mb-3 text-secondary text-uppercase fw-bold">The Dewey Decimal Terror</h6>
                     <p class="card-text text-muted">The Head Librarian who executes uncompromising psychological warfare. Her punishment—endless library categorization in absolute silence.</p>
-                    <a href="/engine-room/artists/crimson-node/characters/northwood/mrs-periwinkle" class="btn btn-outline-secondary btn-sm">View Profile</a>
+                    <a href="/engine-room/artists/crimson-node/characters/northwood/staff/mrs-periwinkle" class="btn btn-outline-secondary btn-sm">View Profile</a>
                 </div>
             </div>
         </div>
