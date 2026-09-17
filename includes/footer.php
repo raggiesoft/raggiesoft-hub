@@ -144,10 +144,6 @@ document.addEventListener('elara:loaded', function() {
     initializeStorePreferences();
 
     // Re-bind the Stardust Engine tracklist buttons so music keeps playing
-    if (typeof bindEncyclopediaLinks === 'function') {
-        bindEncyclopediaLinks();
-    }
-
     if (typeof bindTracklistButtons === 'function') {
         bindTracklistButtons(); 
     }

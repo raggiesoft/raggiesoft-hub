@@ -26,7 +26,7 @@ $nav = [
                     The morning light filtered softly through the blinds of the shared bedroom, casting thin, dusty stripes across the mattress. It was Sunday, May 2nd. A massive milestone. It was Matt's eighteenth birthday, and Sarah's twentieth. 
                 </p>
                 <p>
-                    <a href="/engine-room/artists/crimson-node/characters/family/sarah-miller" class="encyclopedia-link text-decoration-none border-bottom border-danger text-body-emphasis fw-bold">Sarah</a> stirred first, untangling herself from the blankets. The heavy emotional exhaustion of Friday's Omni-Q incident had faded into a renewed, fiercely protective energy. She sat up, stretching her arms above her head, before gently shaking Matt's shoulder.
+                    <a href="/engine-room/artists/crimson-node/characters/family/sarah-miller" class="text-decoration-none border-bottom border-danger text-body-emphasis fw-bold">Sarah</a> stirred first, untangling herself from the blankets. The heavy emotional exhaustion of Friday's Omni-Q incident had faded into a renewed, fiercely protective energy. She sat up, stretching her arms above her head, before gently shaking Matt's shoulder.
                 </p>
                 <p>
                     "Wake up, birthday boy," she said softly, a warm smile breaking across her face. "You're officially an adult. Kind of."
@@ -61,7 +61,7 @@ $nav = [
                     But the table wasn't set for three. It was set for four.
                 </p>
                 <p>
-                    Sitting at the edge of the table, already stealing a piece of bacon, was <a href="/engine-room/artists/crimson-node/characters/family/shiloh-brooks" class="encyclopedia-link text-decoration-none border-bottom border-danger text-body-emphasis fw-bold">Shiloh</a>. Their maternal cousin had made the long drive from Charlottesville the night before. May 2nd wasn't just Matt and Sarah's birthday—it was Shiloh's eighteenth birthday, too.
+                    Sitting at the edge of the table, already stealing a piece of bacon, was <a href="/engine-room/artists/crimson-node/characters/family/shiloh-brooks" class="text-decoration-none border-bottom border-danger text-body-emphasis fw-bold">Shiloh</a>. Their maternal cousin had made the long drive from Charlottesville the night before. May 2nd wasn't just Matt and Sarah's birthday—it was Shiloh's eighteenth birthday, too.
                 </p>
                 <p>
                     "About time you two woke up," Shiloh grinned, waving a piece of toast at Matt. "I’ve been starving since eight. Happy birthday, losers."
