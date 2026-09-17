@@ -287,6 +287,50 @@ $nav = [
                 <p>
                     Matt closed his eyes, leaning deeply into his sister’s embrace. Graduation couldn't come fast enough.
                 </p>
+
+                <hr class="my-5 border-secondary border-opacity-50 w-50 mx-auto">
+
+                <h3 id="part-6" class="mt-5 mb-4 text-uppercase tracking-wide text-muted fw-bold">Part 6: The ISS Trailer</h3>
+
+                <p>
+                    The In-School Suspension trailer at Northwood High School was the ultimate sensory deprivation chamber. Physically disconnected from the main brick building, the modular unit vibrated with the droning hum of an oversized window AC unit and the harsh buzz of fluorescent lights. 
+                </p>
+                <p>
+                    Courtney sat in a rigid plastic desk facing the blank, vinyl-coated wall paneling. She had been staring at the same spot for hours. Because she was only in a holding pattern waiting for her mother, she didn't even have the distraction of busywork or encyclopedias to copy. She was simply trapped in the humming quiet with her own thoughts.
+                </p>
+                <p>
+                    And the thoughts were devastating.
+                </p>
+                <p>
+                    With her Omni-Q cutoff and her cheer uniform metaphorically stripped away, her ego had finally collapsed. She wasn’t panicking about her social standing anymore. Sitting in the silence, she was forced to replay the terrified look on Matt's face in the band room hallway. He hadn’t looked at her with love or understanding—he had looked at her like she was a threat. 
+                </p>
+                <p>
+                    "I didn't mean to scare him," Courtney whispered into the empty air, tears slipping down her cheeks. "I just... I just wanted to fix it. I didn't think about what he needed. I only thought about me."
+                </p>
+                <p>
+                    At the front of the room, the ISS monitor—a retired, hard-nosed military veteran who usually possessed zero empathy for teenage tears—paused his paperwork. He looked at the girl. Over the decades, he had seen thousands of students try to manipulate their way out of punishment with fake crying. But looking at Courtney’s completely shattered posture, he recognized genuine, agonizing remorse.
+                </p>
+                <p>
+                    "I believe you," the monitor said quietly, his voice lacking its usual administrative bark. "But being sorry doesn't erase the consequences, Miss Evans. You still have to face the music."
+                </p>
+                <p>
+                    At 2:15 PM, the heavy metal door to the trailer groaned open. 
+                </p>
+                <p>
+                    Courtney flinched, turning her head. Standing in the doorway was Mrs. Evans, flanked by Courtney's younger brothers, Jason (a sophomore) and Ryan (a freshman), who had just been dismissed from their final period classes. 
+                </p>
+                <p>
+                    Mrs. Evans didn't yell. She didn't cause a scene. She simply walked to the monitor's desk, her posture rigid with an icy, contained fury, and signed the formal Out-of-School Suspension paperwork. Jason and Ryan stood by the door, watching their older sister. They knew exactly how severely she had messed up, and there was no sibling sympathy in their eyes. Over the coming weeks, they would be the ones to break down her remaining teenage pride and force her to truly rebuild her character.
+                </p>
+                <p>
+                    Mrs. Evans put the pen down and turned to Courtney.
+                </p>
+                <p>
+                    "To the car," she ordered. "Now."
+                </p>
+                <p>
+                    Courtney stood up, her legs trembling. She didn't say a word as she walked past her brothers and followed her mother out of the trailer. As the heavy metal door slammed shut behind them, the suffocating silence of the car ride home began. The Illusion was over; the reckoning had begun.
+                </p>
             </div>
 
             <?php include $_SERVER['DOCUMENT_ROOT'] . '/includes/components/navigation/narrative-stepper.php'; ?>
