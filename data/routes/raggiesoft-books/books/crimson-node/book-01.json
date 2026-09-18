@@ -45,5 +45,10 @@
         "view": "pages/raggiesoft-books/books/crimson-node/book-01/chapter-04",
         "title": "Chapter 4: The Failed Apology - Book 1 - Crimson Node",
         "ogTitle": "Chapter 4: The Failed Apology"
+    },
+    "/raggiesoft-books/books/crimson-node/book-01/chapter-05": {
+        "view": "pages/raggiesoft-books/books/crimson-node/book-01/chapter-05",
+        "title": "Chapter 5: Interlude - Book 1 - Crimson Node",
+        "ogTitle": "Chapter 5: Interlude"
     }
 }

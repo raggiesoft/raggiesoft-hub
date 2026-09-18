@@ -1,5 +1,6 @@
 <?php
 // pages/raggiesoft-books/books/crimson-node/overview.php
+// Crimson Node Series Library Hub
 ?>
 <div class="container py-5">
     <div class="row mb-5 justify-content-center">
@@ -10,54 +11,51 @@
             <p class="lead text-muted mt-3">
                 Welcome to the Albemarle County Kids House. This is the complete narrative documenting the formation of the Miller and Brooks family phalanx and the rise of Crimson Node.
             </p>
-            <hr class="my-4 border-secondary opacity-50">
+            <hr class="my-4 border-secondary opacity-50 w-50 mx-auto">
         </div>
     </div>
 
-    <div class="row justify-content-center">
-        <div class="col-lg-8">
-            <div class="card border-0 shadow-sm mb-4" style="border-top: 5px solid #dc3545;">
-                <div class="card-body p-4 p-md-5 bg-body-tertiary">
-                    
-                    <div class="text-center mb-4 border-bottom border-secondary-subtle pb-4">
-                        <i class="fa-duotone fa-book-open-cover fa-4x text-danger mb-3"></i>
-                        <h2 class="h3 fw-bold text-uppercase">Book 1: The Illusion</h2>
-                        <p class="text-muted mb-0">Select a chapter below to read.</p>
-                    </div>
-                    
-                    <div class="d-grid gap-3">
-                        <a href="/raggiesoft-books/books/crimson-node/book-01/chapter-01" class="btn btn-danger btn-lg text-start d-flex justify-content-between align-items-center">
-                            <span>
-                                <div class="fw-bold text-uppercase">Chapter 1: The Approach</div>
-                                <div class="fs-6 fw-normal opacity-75">Friday, April 23, 1999</div>
-                            </span>
-                            <i class="fa-solid fa-chevron-right"></i>
-                        </a>
-                        <a href="/raggiesoft-books/books/crimson-node/book-01/chapter-02" class="btn btn-danger btn-lg text-start d-flex justify-content-between align-items-center">
-                            <span>
-                                <div class="fw-bold text-uppercase">Chapter 2: The Core Ecosystem</div>
-                                <div class="fs-6 fw-normal opacity-75">Friday, April 30, 1999</div>
-                            </span>
-                            <i class="fa-solid fa-chevron-right"></i>
-                        </a>
-                        <a href="/raggiesoft-books/books/crimson-node/book-01/chapter-03" class="btn btn-danger btn-lg text-start d-flex justify-content-between align-items-center">
-                            <span>
-                                <div class="fw-bold text-uppercase">Chapter 3: The Triple Birthday</div>
-                                <div class="fs-6 fw-normal opacity-75">Sunday, May 2, 1999</div>
-                            </span>
-                            <i class="fa-solid fa-chevron-right"></i>
-                        </a>
-                        <a href="/raggiesoft-books/books/crimson-node/book-01/chapter-04" class="btn btn-danger btn-lg text-start d-flex justify-content-between align-items-center">
-                            <span>
-                                <div class="fw-bold text-uppercase">Chapter 4: The Failed Apology</div>
-                                <div class="fs-6 fw-normal opacity-75">Monday, May 3, 1999</div>
-                            </span>
-                            <i class="fa-solid fa-chevron-right"></i>
-                        </a>
-                    </div>
-                    
-                </div>
-            </div>
+    <div class="row g-4 justify-content-center">
+        <!-- Book 1 Card -->
+        <div class="col-md-6 col-lg-5">
+            <?php
+            $props = [
+                'imgSrc' => 'https://assets.raggiesoft.com/engine-room-records/artists/crimson-node/2002-crimson-node/album-art.jpg',
+                'imgAlt' => 'Crimson Node: The Illusion',
+                'fallbackText' => 'B1',
+                'title' => 'Book 1: The Illusion',
+                'description' => 'The story of Matt Miller\'s final months of high school. As the reality of post-graduate life approaches, a shattered illusion forces Matt and Sarah to confront a vicious social hierarchy.',
+                'buttonProps' => [
+                    'href' => '/raggiesoft-books/books/crimson-node/book-01',
+                    'text' => 'Read Book 1',
+                    'variant' => 'danger', 
+                    'icon' => 'fa-duotone fa-book-open',
+                    'fullWidth' => true
+                ]
+            ];
+            include ROOT_PATH . '/includes/components/card.php';
+            ?>
+        </div>
+        
+        <!-- Book 2 Placeholder -->
+        <div class="col-md-6 col-lg-5">
+            <?php
+            $props = [
+                'imgSrc' => 'https://assets.raggiesoft.com/common/patterns/noise-subtle.png',
+                'imgAlt' => 'Encrypted File',
+                'fallbackText' => 'B2',
+                'title' => 'Book 2: The Foundation',
+                'description' => 'Currently under typesetting. The narrative continues as the cousins establish the Kids House in Charlottesville and navigate their first year away from home.',
+                'buttonProps' => [
+                    'href' => '#',
+                    'text' => 'Classified',
+                    'variant' => 'secondary', 
+                    'icon' => 'fa-solid fa-lock',
+                    'fullWidth' => true
+                ]
+            ];
+            include ROOT_PATH . '/includes/components/card.php';
+            ?>
         </div>
     </div>
 </div>

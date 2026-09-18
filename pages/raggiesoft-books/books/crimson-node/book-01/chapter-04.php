@@ -260,7 +260,19 @@ $nav = [
                     With her Omni-Q cutoff and her cheer uniform metaphorically stripped away, her ego had finally collapsed. She wasn’t panicking about her social standing anymore. Sitting in the silence, she was forced to replay the terrified look on Matt's face in the band room hallway. He hadn’t looked at her with love or understanding—he had looked at her like she was a threat. 
                 </p>
                 <p>
-                    "I didn't mean to scare him," Courtney whispered into the empty air, tears slipping down her cheeks. "I just... I just wanted to fix it. I didn't think about what he needed. I only thought about me."
+                    As she sat in her shattered state, a brutal, quiet mirror for her failure played out right in front of her at the monitor's metal desk.
+                </p>
+                <p>
+                    Another student in the trailer had approached the front. He needed to take his lunchtime medication, which, according to his federally protected IEP, had to be taken with a specific nutritional diet. The ISS monitor—a retired, hard-nosed military veteran who usually despised granting special privileges—was not arguing with the boy. Instead, he was rigorously verifying the paperwork, cross-referencing the student's daily clinic pass with the administration's medical exemptions manifest. He forced the boy to stand there in silence until the exact minute mandated by the IEP arrived.
+                </p>
+                <p>
+                    Because this was an isolated trailer, the monitor couldn't just let the student walk back into the main brick building alone, nor could he abandon his post to escort the boy himself. Instead, he picked up the desk phone and called the clinic, requesting a paraprofessional be dispatched to the trailer for an official extraction. The student wasn't getting the standard, punitive ISS brown-bag lunch; he was going to be marched to the clinic to eat his specifically approved meal from the medical refrigerator under the nurse's direct supervision, take his medication, and be immediately marched back.
+                </p>
+                <p>
+                    The clash between the unyielding monitor and the doctor-signed medical directive was absolute. The IEP was an immovable legal object. Watching this highly regimented protocol play out underscored exactly why Courtney was sitting in this vinyl-coated purgatory. She was here precisely because she had arrogantly tried to bypass Matt's clinical protections and legal boundaries for a teenage romance trope. The system was coldly and successfully protecting this boy's medical needs, highlighting the catastrophic gravity of her own ableism.
+                </p>
+                <p>
+                    "I didn't mean to scare him," Courtney whispered into the empty air, tears finally slipping down her cheeks. "I just... I just wanted to fix it. I didn't think about what he needed. I only thought about me."
                 </p>
                 <p>
                     At the front of the room, the ISS monitor—a retired, hard-nosed military veteran who usually possessed zero empathy for teenage tears—paused his paperwork. He looked at the girl. Over the decades, he had seen thousands of students try to manipulate their way out of punishment with fake crying. But looking at Courtney’s completely shattered posture, he recognized genuine, agonizing remorse.
