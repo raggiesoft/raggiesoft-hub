@@ -12,7 +12,7 @@ $isPhalanx = str_starts_with($request_uri, '/engine-room/artists/crimson-node/ch
 $isCcc = str_starts_with($request_uri, '/engine-room/artists/crimson-node/characters/ccc');
 $isNorthwood = str_starts_with($request_uri, '/engine-room/artists/crimson-node/characters/northwood');
 $isPiedmont = str_starts_with($request_uri, '/engine-room/artists/crimson-node/characters/piedmont');
-$isLore = str_starts_with($request_uri, '/engine-room/artists/crimson-node/story');
+$isLore = str_starts_with($request_uri, '/raggiesoft-books/books/crimson-node');
 ?>
 
 <ul class="navbar-nav ms-auto mb-2 mb-md-0">
@@ -60,7 +60,7 @@ $isLore = str_starts_with($request_uri, '/engine-room/artists/crimson-node/story
   </li>
 
   <li class="nav-item">
-    <a class="nav-link <?php echo $isLore ? 'active' : ''; ?>" href="/engine-room/artists/crimson-node/story">
+    <a class="nav-link <?php echo $isLore ? 'active' : ''; ?>" href="/raggiesoft-books/books/crimson-node">
         <i class="fa-duotone fa-book-atlas me-2" aria-hidden="true"></i>The Lore
     </a>
   </li>

@@ -3,7 +3,7 @@
 // Custom Header for The Archives (Story Mode)
 
 $request_uri = $_SERVER['REQUEST_URI'] ?? '/';
-$isArchives = $request_uri === '/engine-room/artists/crimson-node/story';
+$isArchives = $request_uri === '/raggiesoft-books/books/crimson-node';
 
 // Logic to determine Previous and Next based on current URL
 // (This can be expanded as more chapters are added)
@@ -40,7 +40,7 @@ if ($request_uri === '/engine-room/artists/crimson-node/story/chapter-01') {
 
   <!-- Archives Up -->
   <li class="nav-item">
-    <a class="nav-link <?= $isArchives ? 'active' : '' ?>" href="/engine-room/artists/crimson-node/story" title="The Archives Index">
+    <a class="nav-link <?= $isArchives ? 'active' : '' ?>" href="/raggiesoft-books/books/crimson-node" title="The Archives Index">
         <i class="fa-duotone fa-book-atlas me-1" aria-hidden="true"></i> Archives
     </a>
   </li>

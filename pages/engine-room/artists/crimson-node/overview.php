@@ -249,7 +249,7 @@ if ($eras) {
                     <p class="text-secondary small">
                         Explore the architecture of the Kids House, the Trent Ejection, and the CCC Crash.
                     </p>
-                    <a href="<?php echo $root; ?>/story" class="btn btn-outline-danger mt-auto rounded-pill">Read History</a>
+                    <a href="/raggiesoft-books/books/crimson-node" class="btn btn-outline-danger mt-auto rounded-pill">Read History</a>
                 </div>
             </div>
         </div>
