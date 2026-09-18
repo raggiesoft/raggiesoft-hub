@@ -167,7 +167,25 @@ $nav = [
                 <p>
                     Courtney nodded, picking up the pen with a trembling hand. For the next hour, the kitchen was dead silent, save for the scratching of the ballpoint pen. She didn't try to justify her actions. Ryan's empathy drill had burned away her excuses. She poured every ounce of her genuine remorse onto the pages, her tears occasionally blotting the blue ink. She wrote about her selfishness, her arrogance, and her horrifying realization of the danger she had put him in. 
                 </p>
-                <p>
+                
+                <div class="card border-0 shadow-sm my-4 bg-light position-relative">
+                    <div class="position-absolute top-0 start-0 h-100 bg-danger opacity-25" style="width: 4px;"></div>
+                    <div class="card-body p-4 p-md-5 font-serif fst-italic" style="color: #1a365d; font-size: 1.15rem; line-height: 1.8;">
+                        <p>Dear Matt, Sarah, and the Brooks family,</p>
+                        
+                        <p>There are no excuses for what I did yesterday. I cornered Matt when he couldn't defend himself, and I refused to let him leave. When he tried to get the help he needed, I treated his medical proxy like an obstacle in a game. I threw a tantrum because he wouldn't let me bypass the rules that are meant to keep him safe.</p>
+                        
+                        <p>I didn't see him. I didn't think about what his physical boundaries actually meant, and I didn't care about the panic I was causing him. I only cared about what I wanted and how I felt. I treated a disabled person like a prop for my own ego.</p>
+                        
+                        <p>I am so deeply sorry for the disrespect I showed your family, and for assuming I had the right to bypass the protections you have built for him. I know I have permanently broken your trust, and I understand why you had to file the No Contact order. I will honor it completely.</p>
+                        
+                        <p>I am so sorry.</p>
+                        
+                        <p>Courtney</p>
+                    </div>
+                </div>
+
+<p>
                     When her hand finally cramped, she capped the pen and pushed the two heavily inked pages across the table to her mother.
                 </p>
                 <p>
