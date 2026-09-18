@@ -101,7 +101,7 @@ $pageTitle = "Ocean View Archives | RaggieSoft Media";
             <div class="col" style="max-width: 500px;">
                 <?php
                 $props = [
-                    'imgSrc' => 'https://assets.raggiesoft.com/raggiesoft-books/images/covers/contemporary-placeholder.jpg', // Placeholder
+                    'imgSrc' => 'https://assets.raggiesoft.com/raggiesoft-books/images/covers/contemporary.jpg', // Placeholder
                     'imgAlt' => 'Contemporary Fiction',
                     'fallbackText' => 'Contemporary',
                     'title' => 'Contemporary Fiction',
