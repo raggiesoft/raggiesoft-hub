@@ -213,6 +213,100 @@ $nav = [
                     "That letter wasn't for him to read," Mrs. Evans said, walking back over and tapping the empty table where the paper had been. "That letter was for you to realize that some mistakes can't be fixed with an apology. Sometimes, the only way to say you're sorry is to stay far away and never do it again."
                 </p>
 
+                                <hr class="my-5 border-secondary border-opacity-50 w-50 mx-auto">
+
+                <h3 id="part-4" class="mt-5 mb-4 text-uppercase tracking-wide text-muted fw-bold">Part 4: The Empty Frame &ndash; 8:00 PM</h3>
+                
+                <p>
+                    By eight o'clock, the house had settled into a quiet, oppressive evening routine. Jason and Ryan grabbed their backpacks from the kitchen and headed upstairs to log onto the family computer to finish their homework. 
+                </p>
+                <p>
+                    Because of the tight family budget, the only internet-connected PC in the house was located at the desk in Courtney's bedroom. Historically, this was a massive symbol of trust and her status as the responsible eldest child. Her brothers usually had to knock and ask for permission to enter her sanctuary.
+                </p>
+                <p>
+                    As Jason and Ryan reached the top of the stairs, they both stopped dead in their tracks.
+                </p>
+                <p>
+                    They stared, wide-eyed, at the entrance to Courtney's room. They knew their mother had threatened extreme measures, but neither of them actually believed she would follow through with it. The heavy, wooden door was completely gone. All that remained were three bare metal hinges screwed into the doorframe. Her private sanctuary had been forcibly converted into a public thoroughfare.
+                </p>
+                <p>
+                    The brothers slowly walked into the room. Courtney was sitting in the middle of her mattress, her knees pulled tight to her chest, her chin resting on her arms. She looked completely, utterly hollowed out. She didn't protest them entering. She didn't even look up. She was a ghost haunting her own bedroom.
+                </p>
+                <p>
+                    Jason awkwardly dropped his backpack next to the desk, pulled out the chair, and reached out to press the power button on the desktop tower. The whir of the hard drive and the hum of the CRT monitor filled the silence. 
+                </p>
+                <p>
+                    Ryan stood in the center of the room, his hands shoved into the pockets of his cargo pants. He looked at his older sister—the untouchable, polished Varsity cheerleader he had idolized just a few days ago—and saw exactly how thoroughly their mother had broken her down. The image of the torn apology letter sitting in the kitchen trash can flashed in his mind. 
+                </p>
+                <p>
+                    The punishment had worked. The toxic ego was gone. There was nothing left to break. 
+                </p>
+                <p>
+                    And honestly? He missed his sister.
+                </p>
+                <p>
+                    Ryan slowly walked over to the bed. He sat down on the edge of the mattress. Courtney flinched slightly, her shoulders tensing as if she was bracing herself for another grueling empathy drill or a chore assignment. 
+                </p>
+                <p>
+                    Instead, Ryan just sat there in silence. Then, he shifted his weight backward and let his shoulder firmly bump against hers. He left it there, leaning into her space.
+                </p>
+                <p>
+                    Courtney's breath hitched violently. She turned her head, staring at the side of Ryan's face in shock.
+                </p>
+                <p>
+                    At the desk, Jason turned around in the computer chair. He looked at Ryan sitting on the bed, and then looked at Courtney's tear-streaked, exhausted face. Jason sighed, a soft, yielding sound. He stood up from the desk, walked over to the bed, and sat down on Courtney's other side.
+                </p>
+                <p>
+                    The weaponization of silence was over. The physical blockade had been lifted.
+                </p>
+                <p>
+                    A fractured sob broke out of Courtney's chest. She turned and threw her arms around Ryan, burying her face into his flannel shirt. Without hesitation, Ryan wrapped his lanky arms around her, holding her tightly. Jason leaned in, wrapping his arms around both of them in a fierce, clumsy pile of siblings on the mattress.
+                </p>
+                <p>
+                    She wept openly against their shoulders, but this time, they weren't tears of self-pity or humiliation. They were tears of pure, desperate relief. She was still expelled. Her cheerleading career was permanently over. She had a massive, grueling path of rehabilitation ahead of her. But as she held onto the brothers she used to build indoor tents with, Courtney finally felt the first genuine crack in the ice. 
+                </p>
+                <p>
+                    She wasn't entirely lost.
+                </p>
+
+                                <hr class="my-5 border-secondary border-opacity-50 w-50 mx-auto">
+
+                <h3 id="part-5" class="mt-5 mb-4 text-uppercase tracking-wide text-muted fw-bold">Part 5: The Thunderstorm &ndash; 11:00 PM</h3>
+                
+                <p>
+                    By eleven o'clock, the massive spring thunderstorm that the local meteorologists had been warning about for two days finally broke over the neighborhood. 
+                </p>
+                <p>
+                    Lightning strobed through the bedroom window, casting harsh, jagged shadows across the empty doorframe. A split-second later, a crack of thunder shook the drywall, rattling the picture frames on Courtney's desk.
+                </p>
+                <p>
+                    Courtney was sitting up in bed in the dark, wearing an oversized t-shirt and staring out at the torrential rain. As another brilliant flash of lightning illuminated the hallway, two figures appeared in the doorless threshold. 
+                </p>
+                <p>
+                    Jason and Ryan were standing there in their pajamas. Ryan was clutching a pillow to his chest, his shoulders hunched.
+                </p>
+                <p>
+                    He had always been terrified of thunderstorms. When they were little, the indoor camping tents they built were usually constructed during bad weather. And as they got older, the unspoken rule remained: when the sky broke open, the brothers always gravitated to Courtney's room to huddle together until it passed.
+                </p>
+                <p>
+                    For a brief second, Courtney worried that the events of the last two days had permanently severed this ritual. She worried they would turn around and go back to their own rooms to endure the storm alone.
+                </p>
+                <p>
+                    Then, another deafening boom of thunder rolled over the roof. Ryan flinched hard.
+                </p>
+                <p>
+                    Courtney didn't say a word. She simply grabbed the edge of her comforter and pulled it back. 
+                </p>
+                <p>
+                    Ryan immediately hurried into the room, scrambled onto the mattress, and curled up tightly against her side. Jason followed right behind him, climbing into the bed and settling on her other side, tossing his own pillow down. 
+                </p>
+                <p>
+                    Courtney pulled the heavy blanket up over the three of them. She wrapped one arm securely around Ryan, pulling him close, and rested her other hand against Jason's back. The wind howled outside, driving the rain violently against the glass, but inside the bed, it was warm and safe. 
+                </p>
+                <p>
+                    She closed her eyes, resting her chin on top of Ryan's floppy blonde hair. Her social standing was gone. Her cheerleading legacy was erased. Her bedroom door had been taken off its hinges. But as she held her brothers tightly against the storm, Courtney Evans finally stopped mourning the superficial girl she used to be, and took the first, quiet step toward becoming the fiercely protective woman they needed her to be.
+                </p>
+
                 <!-- Content goes here -->
 
             </div>
