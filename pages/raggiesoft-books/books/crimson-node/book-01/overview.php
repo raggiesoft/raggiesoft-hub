@@ -1,14 +1,14 @@
 <?php
-// pages/engine-room/artists/crimson-node/story/overview.php
+// pages/raggiesoft-books/books/crimson-node/book-01/overview.php
 ?>
 <div class="container py-5">
     <div class="row mb-5 justify-content-center">
         <div class="col-lg-8 text-center">
             <h1 class="display-4 fw-bold" style="font-family: 'Impact', sans-serif; letter-spacing: 2px;">
-                THE <span class="text-danger">ARCHIVES</span>
+                THE <span class="text-danger">ILLUSION</span>
             </h1>
             <p class="lead text-muted mt-3">
-                Welcome to the Albemarle County Kids House. This is the complete narrative documenting the formation of the Miller and Brooks family phalanx and the rise of Crimson Node.
+                Book 1 of the Crimson Node Archives. The story of Matt Miller's final months of high school.
             </p>
             <hr class="my-4 border-secondary opacity-50">
         </div>
@@ -21,33 +21,33 @@
                     
                     <div class="text-center mb-4 border-bottom border-secondary-subtle pb-4">
                         <i class="fa-duotone fa-book-open-cover fa-4x text-danger mb-3"></i>
-                        <h2 class="h3 fw-bold text-uppercase">Book 1: The Illusion</h2>
+                        <h2 class="h3 fw-bold text-uppercase">Table of Contents</h2>
                         <p class="text-muted mb-0">Select a chapter below to read.</p>
                     </div>
                     
                     <div class="d-grid gap-3">
-                        <a href="/engine-room/artists/crimson-node/story/book-1/chapter-01" class="btn btn-danger btn-lg text-start d-flex justify-content-between align-items-center">
+                        <a href="/raggiesoft-books/books/crimson-node/book-01/chapter-01" class="btn btn-danger btn-lg text-start d-flex justify-content-between align-items-center">
                             <span>
                                 <div class="fw-bold text-uppercase">Chapter 1: The Approach</div>
                                 <div class="fs-6 fw-normal opacity-75">Friday, April 23, 1999</div>
                             </span>
                             <i class="fa-solid fa-chevron-right"></i>
                         </a>
-                        <a href="/engine-room/artists/crimson-node/story/book-1/chapter-02" class="btn btn-danger btn-lg text-start d-flex justify-content-between align-items-center">
+                        <a href="/raggiesoft-books/books/crimson-node/book-01/chapter-02" class="btn btn-danger btn-lg text-start d-flex justify-content-between align-items-center">
                             <span>
                                 <div class="fw-bold text-uppercase">Chapter 2: The Core Ecosystem</div>
                                 <div class="fs-6 fw-normal opacity-75">Friday, April 30, 1999</div>
                             </span>
                             <i class="fa-solid fa-chevron-right"></i>
                         </a>
-                        <a href="/engine-room/artists/crimson-node/story/book-1/chapter-03" class="btn btn-danger btn-lg text-start d-flex justify-content-between align-items-center">
+                        <a href="/raggiesoft-books/books/crimson-node/book-01/chapter-03" class="btn btn-danger btn-lg text-start d-flex justify-content-between align-items-center">
                             <span>
                                 <div class="fw-bold text-uppercase">Chapter 3: The Triple Birthday</div>
                                 <div class="fs-6 fw-normal opacity-75">Sunday, May 2, 1999</div>
                             </span>
                             <i class="fa-solid fa-chevron-right"></i>
                         </a>
-                        <a href="/engine-room/artists/crimson-node/story/book-1/chapter-04" class="btn btn-danger btn-lg text-start d-flex justify-content-between align-items-center">
+                        <a href="/raggiesoft-books/books/crimson-node/book-01/chapter-04" class="btn btn-danger btn-lg text-start d-flex justify-content-between align-items-center">
                             <span>
                                 <div class="fw-bold text-uppercase">Chapter 4: The Failed Apology</div>
                                 <div class="fs-6 fw-normal opacity-75">Monday, May 3, 1999</div>
