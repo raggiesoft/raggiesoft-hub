@@ -23,13 +23,13 @@ $nav = [
 
             <div class="fs-5 lh-lg font-serif text-body">
                 
-                <h3 id="part-1" class="mt-5 mb-4 text-uppercase tracking-wide text-muted fw-bold">Part 1: The New Hierarchy &ndash; 9:00 AM</h3>
+                <h3 id="part-1" class="mt-5 mb-4 text-uppercase tracking-wide text-muted fw-bold">Part 1: The New Hierarchy &ndash; 3:00 PM</h3>
                 
                                 <p>
                     The transition from the undisputed queen of the Northwood High social ecosystem to a disgraced, indentured servant within the walls of her own home was absolute.
                 </p>
                 <p>
-                    It was Tuesday morning. Under normal circumstances, Courtney would be sitting in AP English, strategically ignoring the teacher while silently communicating with her cheer friends across the room. Instead, she was on her hands and knees in the upstairs hallway bathroom, her knuckles raw and her back aching from scrubbing the grout with a stiff-bristled brush.
+                    It was Tuesday afternoon. Under normal circumstances, Courtney would be sitting in AP English, strategically ignoring the teacher while silently communicating with her cheer friends across the room. Instead, she was on her hands and knees in the upstairs hallway bathroom, her knuckles raw and her back aching from scrubbing the grout with a stiff-bristled brush.
                 </p>
                 <p>
                     The Evans household was operating under a strict new regime. Mrs. Evans had dictated the terms of the three-day Out-of-School Suspension before leaving for work: Courtney was not to watch television, she was not to use the computer, and the landline phone was completely off-limits. She was given a grueling, multi-page checklist of deep-cleaning chores that were designed not just to occupy her time, but to physically break down her arrogance.
@@ -67,13 +67,13 @@ $nav = [
 
                                 <hr class="my-5 border-secondary border-opacity-50 w-50 mx-auto">
 
-                <h3 id="part-2" class="mt-5 mb-4 text-uppercase tracking-wide text-muted fw-bold">Part 2: The Empathy Drill &ndash; 1:00 PM</h3>
+                <h3 id="part-2" class="mt-5 mb-4 text-uppercase tracking-wide text-muted fw-bold">Part 2: The Empathy Drill &ndash; 4:00 PM</h3>
                 
                 <p>
-                    By early afternoon, Courtney had transitioned from deep-cleaning the bathrooms to tackling the massive pile of laundry her brothers had deliberately accumulated in the living room.
+                    By late afternoon, Courtney had transitioned from deep-cleaning the bathrooms to tackling the massive pile of laundry her brothers had deliberately accumulated in the living room.
                 </p>
                 <p>
-                    She knelt on the carpet, folding a stack of Ryan's oversized, fading grunge flannels. Her hands were still raw from the morning's scrubbing, and the sheer monotony of the labor was beginning to wear down her fragile emotional state. As she picked up a particularly wrinkled shirt, she let out a long, heavy, exasperated sigh, momentarily slipping back into the role of the put-upon teenage victim.
+                    She knelt on the carpet, folding a stack of Ryan's oversized, fading grunge flannels. Her hands were still raw from the day's scrubbing, and the sheer monotony of the labor was beginning to wear down her fragile emotional state. As she picked up a particularly wrinkled shirt, she let out a long, heavy, exasperated sigh, momentarily slipping back into the role of the put-upon teenage victim.
                 </p>
                 <p>
                     "Stop."
@@ -134,6 +134,65 @@ $nav = [
                 </p>
                 <p>
                     "Right," Ryan finally said, turning to walk back toward the kitchen. "Finish folding the shirts."
+                </p>
+
+                                <hr class="my-5 border-secondary border-opacity-50 w-50 mx-auto">
+
+                <h3 id="part-3" class="mt-5 mb-4 text-uppercase tracking-wide text-muted fw-bold">Part 3: The Ghost Letter &ndash; 6:30 PM</h3>
+                
+                <p>
+                    By the time Mrs. Evans returned home from work at six-thirty, the physical and emotional toll of the day had completely hollowed Courtney out. 
+                </p>
+                <p>
+                    She was standing in the kitchen, washing the last of the dinner prep dishes, when Jason and Ryan walked in to grab drinks from the fridge. The instinct was overpowering. Courtney dropped the sponge, her vision blurring with tears. She didn't want her social status back; she didn't care about the cheer squad. She just desperately wanted the baseline warmth of her family. She wanted the boys she used to build indoor tents with.
+                </p>
+                <p>
+                    "I'm so sorry," she choked out, taking a step toward them, her arms opening in a desperate bid for a hug.
+                </p>
+                <p>
+                    Both brothers instantly stepped back, creating a physical barrier of empty space between them. The rejection was instinctual, a silent but absolute refusal of her touch. Jason looked away, his jaw tight, while Ryan stared at her with that same grieving disappointment. Without a word, they grabbed their sodas and walked out of the kitchen, leaving her standing with her arms wrapped around her own torso, sobbing.
+                </p>
+                <p>
+                    "Sit down, Courtney."
+                </p>
+                <p>
+                    Her mother's voice was firm. Mrs. Evans walked over to the kitchen table and placed a blank pad of lined notebook paper and a blue ballpoint pen on the placemat. 
+                </p>
+                <p>
+                    Courtney wiped her eyes and slowly pulled out a chair, sitting down across from her mother. 
+                </p>
+                <p>
+                    "You are going to write a letter to Matthew Miller," Mrs. Evans instructed. "And you are going to write a second letter to Sarah Miller and the Brooks family. You will explain exactly what you did, why it was unacceptable, and you will apologize for violating his boundaries and treating his medical proxy like a game."
+                </p>
+                <p>
+                    Courtney nodded, picking up the pen with a trembling hand. For the next hour, the kitchen was dead silent, save for the scratching of the ballpoint pen. She didn't try to justify her actions. Ryan's empathy drill had burned away her excuses. She poured every ounce of her genuine remorse onto the pages, her tears occasionally blotting the blue ink. She wrote about her selfishness, her arrogance, and her horrifying realization of the danger she had put him in. 
+                </p>
+                <p>
+                    When her hand finally cramped, she capped the pen and pushed the two heavily inked pages across the table to her mother.
+                </p>
+                <p>
+                    Mrs. Evans picked them up. She read them slowly, her expression unreadable. She analyzed every sentence, ensuring that her daughter had taken full, unmitigated accountability. When she reached the bottom of the second page, she nodded once.
+                </p>
+                <p>
+                    Then, Mrs. Evans stood up, walked over to the kitchen trash can, tore the letters cleanly in half, and dropped them into the garbage.
+                </p>
+                <p>
+                    Courtney gasped, surging half out of her chair. "Mom! What are you doing? I meant every word of that!"
+                </p>
+                <p>
+                    "I know you did," Mrs. Evans said quietly, turning back to face her daughter. "And it was a good apology. But you aren't going to send it."
+                </p>
+                <p>
+                    Courtney stared at the trash can, entirely bewildered. "Then why did you make me write it?"
+                </p>
+                <p>
+                    "Because there is a strict administrative No Contact order in place," her mother explained, her tone softening just a fraction, though the boundary remained absolute. "Matt's legal and emotional boundaries supersede your desire for forgiveness. He doesn't owe you absolution, Courtney. And he shouldn't have to carry the emotional labor of reading your apology just so you can feel better about yourself."
+                </p>
+                <p>
+                    Courtney slowly sank back into her chair as the brutal reality washed over her. 
+                </p>
+                <p>
+                    "That letter wasn't for him to read," Mrs. Evans said, walking back over and tapping the empty table where the paper had been. "That letter was for you to realize that some mistakes can't be fixed with an apology. Sometimes, the only way to say you're sorry is to stay far away and never do it again."
                 </p>
 
                 <!-- Content goes here -->
