@@ -6,6 +6,28 @@ $request_uri = $_SERVER['REQUEST_URI'] ?? '/';
     <a href="/engine-room/artists/crimson-node/story" class="list-group-item list-group-item-action <?= ($request_uri == '/engine-room/artists/crimson-node/story') ? 'active' : '' ?>">
         <i class="fa-duotone fa-book-atlas me-2"></i>Archives Index
     </a>
+
+    <!-- Chapter 5 -->
+    <a href="/raggiesoft-books/books/crimson-node/book-01/chapter-05" class="list-group-item list-group-item-action fw-bold <?= ($request_uri == '/raggiesoft-books/books/crimson-node/book-01/chapter-05') ? 'active' : '' ?>">
+        Chapter 5: Interlude
+    </a>
+    <?php if ($request_uri == '/raggiesoft-books/books/crimson-node/book-01/chapter-05'): ?>
+        <a href="#part-1" class="list-group-item list-group-item-action ps-4 py-2 border-0 text-secondary" style="font-size: 0.9em; background-color: rgba(0,0,0,0.02);">
+            <i class="fa-solid fa-angle-right me-2 text-danger"></i>Part 1: The New Hierarchy
+        </a>
+        <a href="#part-2" class="list-group-item list-group-item-action ps-4 py-2 border-0 text-secondary" style="font-size: 0.9em; background-color: rgba(0,0,0,0.02);">
+            <i class="fa-solid fa-angle-right me-2 text-danger"></i>Part 2: The Empathy Drill
+        </a>
+        <a href="#part-3" class="list-group-item list-group-item-action ps-4 py-2 border-0 text-secondary" style="font-size: 0.9em; background-color: rgba(0,0,0,0.02);">
+            <i class="fa-solid fa-angle-right me-2 text-danger"></i>Part 3: The Ghost Letter
+        </a>
+        <a href="#part-4" class="list-group-item list-group-item-action ps-4 py-2 border-0 text-secondary" style="font-size: 0.9em; background-color: rgba(0,0,0,0.02);">
+            <i class="fa-solid fa-angle-right me-2 text-danger"></i>Part 4: The Empty Frame
+        </a>
+        <a href="#part-5" class="list-group-item list-group-item-action ps-4 py-2 border-0 text-secondary" style="font-size: 0.9em; background-color: rgba(0,0,0,0.02);">
+            <i class="fa-solid fa-angle-right me-2 text-danger"></i>Part 5: The Thunderstorm
+        </a>
+    <?php endif; ?>
 </div>
 
 <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted text-uppercase">
@@ -94,6 +116,50 @@ $request_uri = $_SERVER['REQUEST_URI'] ?? '/';
         </a>
         <a href="#part-6" class="list-group-item list-group-item-action ps-4 py-2 border-0 text-secondary" style="font-size: 0.9em; background-color: rgba(0,0,0,0.02);">
             <i class="fa-solid fa-angle-right me-2 text-danger"></i>Part 6: The Charlottesville Plan
+        </a>
+    <?php endif; ?>
+
+    <!-- Chapter 5 -->
+    <a href="/raggiesoft-books/books/crimson-node/book-01/chapter-05" class="list-group-item list-group-item-action fw-bold <?= ($request_uri == '/raggiesoft-books/books/crimson-node/book-01/chapter-05') ? 'active' : '' ?>">
+        Chapter 5: Interlude
+    </a>
+    <?php if ($request_uri == '/raggiesoft-books/books/crimson-node/book-01/chapter-05'): ?>
+        <a href="#part-1" class="list-group-item list-group-item-action ps-4 py-2 border-0 text-secondary" style="font-size: 0.9em; background-color: rgba(0,0,0,0.02);">
+            <i class="fa-solid fa-angle-right me-2 text-danger"></i>Part 1: The New Hierarchy
+        </a>
+        <a href="#part-2" class="list-group-item list-group-item-action ps-4 py-2 border-0 text-secondary" style="font-size: 0.9em; background-color: rgba(0,0,0,0.02);">
+            <i class="fa-solid fa-angle-right me-2 text-danger"></i>Part 2: The Empathy Drill
+        </a>
+        <a href="#part-3" class="list-group-item list-group-item-action ps-4 py-2 border-0 text-secondary" style="font-size: 0.9em; background-color: rgba(0,0,0,0.02);">
+            <i class="fa-solid fa-angle-right me-2 text-danger"></i>Part 3: The Ghost Letter
+        </a>
+        <a href="#part-4" class="list-group-item list-group-item-action ps-4 py-2 border-0 text-secondary" style="font-size: 0.9em; background-color: rgba(0,0,0,0.02);">
+            <i class="fa-solid fa-angle-right me-2 text-danger"></i>Part 4: The Empty Frame
+        </a>
+        <a href="#part-5" class="list-group-item list-group-item-action ps-4 py-2 border-0 text-secondary" style="font-size: 0.9em; background-color: rgba(0,0,0,0.02);">
+            <i class="fa-solid fa-angle-right me-2 text-danger"></i>Part 5: The Thunderstorm
+        </a>
+    <?php endif; ?>
+
+    <!-- Chapter 5 -->
+    <a href="/raggiesoft-books/books/crimson-node/book-01/chapter-05" class="list-group-item list-group-item-action fw-bold <?= ($request_uri == '/raggiesoft-books/books/crimson-node/book-01/chapter-05') ? 'active' : '' ?>">
+        Chapter 5: Interlude
+    </a>
+    <?php if ($request_uri == '/raggiesoft-books/books/crimson-node/book-01/chapter-05'): ?>
+        <a href="#part-1" class="list-group-item list-group-item-action ps-4 py-2 border-0 text-secondary" style="font-size: 0.9em; background-color: rgba(0,0,0,0.02);">
+            <i class="fa-solid fa-angle-right me-2 text-danger"></i>Part 1: The New Hierarchy
+        </a>
+        <a href="#part-2" class="list-group-item list-group-item-action ps-4 py-2 border-0 text-secondary" style="font-size: 0.9em; background-color: rgba(0,0,0,0.02);">
+            <i class="fa-solid fa-angle-right me-2 text-danger"></i>Part 2: The Empathy Drill
+        </a>
+        <a href="#part-3" class="list-group-item list-group-item-action ps-4 py-2 border-0 text-secondary" style="font-size: 0.9em; background-color: rgba(0,0,0,0.02);">
+            <i class="fa-solid fa-angle-right me-2 text-danger"></i>Part 3: The Ghost Letter
+        </a>
+        <a href="#part-4" class="list-group-item list-group-item-action ps-4 py-2 border-0 text-secondary" style="font-size: 0.9em; background-color: rgba(0,0,0,0.02);">
+            <i class="fa-solid fa-angle-right me-2 text-danger"></i>Part 4: The Empty Frame
+        </a>
+        <a href="#part-5" class="list-group-item list-group-item-action ps-4 py-2 border-0 text-secondary" style="font-size: 0.9em; background-color: rgba(0,0,0,0.02);">
+            <i class="fa-solid fa-angle-right me-2 text-danger"></i>Part 5: The Thunderstorm
         </a>
     <?php endif; ?>
 </div>
