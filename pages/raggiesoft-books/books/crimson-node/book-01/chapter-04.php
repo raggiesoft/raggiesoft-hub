@@ -240,12 +240,17 @@ $nav = [
 
                 <hr class="my-5 border-secondary border-opacity-50 w-50 mx-auto">
 
-                <h3 id="part-5" class="mt-5 mb-4 text-uppercase tracking-wide text-muted fw-bold">Part 5: The ISS Trailer</h3>
+                <h3 id="part-5" class="mt-5 mb-4 text-uppercase tracking-wide text-muted fw-bold">Part 5: The ISS Trailer &ndash; 2:15 PM</h3>
 
                 <p>
                     The In-School Suspension trailer at Northwood High School was the ultimate sensory deprivation chamber. Physically disconnected from the main brick building, the modular unit vibrated with the droning hum of an oversized window AC unit and the harsh buzz of fluorescent lights. 
                 </p>
-                <p>
+                                <figure class="figure my-5 w-100 text-center">
+                    <img src="https://assets.raggiesoft.com/shiloh/images/story/courtney-evans-iss.jpg" class="figure-img img-fluid rounded shadow-lg border border-secondary" alt="Courtney sitting in the ISS trailer with no busywork, facing the wall.">
+                    <figcaption class="figure-caption mt-3 fst-italic">Trapped in the sensory deprivation chamber of the ISS Trailer.</figcaption>
+                </figure>
+
+<p>
                     Courtney sat in a rigid plastic desk facing the blank, vinyl-coated wall paneling. She had been staring at the same spot for hours. Because she was only in a holding pattern waiting for her mother, she didn't even have the distraction of busywork or encyclopedias to copy. She was simply trapped in the humming quiet with her own thoughts.
                 </p>
                 <p>
