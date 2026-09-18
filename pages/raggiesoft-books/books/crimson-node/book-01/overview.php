@@ -61,7 +61,7 @@
         <div class="col-md-6 col-lg-4">
             <?php
             $props = [
-                'imgSrc' => 'https://assets.raggiesoft.com/shiloh/images/thumbnails/story/log-03-thumb.jpg', 
+                'imgSrc' => 'https://assets.raggiesoft.com/shiloh/images/story/matt-sarah-shiloh.jpg', 
                 'imgAlt' => 'Chapter 3',
                 'fallbackText' => '03',
                 'title' => 'Chapter 3: The Triple Birthday',
