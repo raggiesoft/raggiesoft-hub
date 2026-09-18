@@ -331,6 +331,59 @@ $nav = [
                 <p>
                     Matt closed his eyes, leaning deeply into his sister’s embrace. Graduation couldn't come fast enough.
                 </p>
+
+                <hr class="my-5 border-secondary border-opacity-50 w-50 mx-auto">
+
+                <h3 id="part-7" class="mt-5 mb-4 text-uppercase tracking-wide text-muted fw-bold">Part 7: The Final Transfer &ndash; 9:00 PM</h3>
+
+                <p>
+                    By the time nine o'clock rolled around, the adrenaline and sheer emotional exhaustion of the day had finally caught up with the Miller household. 
+                </p>
+                <p>
+                    Rather than his usual quick evening shower, Matt had made it clear through a series of insistent vocalizations and gestures that he wanted a full bath. The warm water was the ultimate sensory reset for his spastic muscles. Sarah, as always, happily obliged. She carefully helped him navigate the logistics of the tub, bathing him with a practiced, gentle efficiency while talking quietly about how they were going to decorate the Kids House in Charlottesville. 
+                </p>
+                <p>
+                    Once he was clean and wrapped in his favorite soft towel, Sarah took her own quick shower. She then helped Matt use the toilet for the final time that evening before using it herself. The bathroom routine, which might have seemed invasive to an outsider, was simply the natural, un-self-conscious rhythm of their intense sibling bond. 
+                </p>
+                <p>
+                    Dressed for bed, Sarah wheeled Matt back out into the living room. 
+                </p>
+                <p>
+                    "Goodnight, you two," David said from his armchair, lowering his Vanguard LogicPad. 
+                </p>
+                <p>
+                    "Sweet dreams," Linda added, walking over to press a kiss to both of their foreheads. "We have a lot of planning to do tomorrow."
+                </p>
+                <p>
+                    Sarah wheeled Matt down the hallway and into their shared bedroom, maneuvering the chair right alongside his bed. She locked the brakes and turned to face him.
+                </p>
+                <p>
+                    "Alright, buddy. Up we go," she whispered.
+                </p>
+                <p>
+                    Rather than using a sliding board or a pivot technique, Sarah simply leaned in, wrapped her arms securely around his waist, and executed a flawless deadlift carry, scooping him completely out of the wheelchair. Matt absolutely loved this transfer method. The moment his feet left the footrests, he would lean his entire body weight forward into her chest, burying his face in her shoulder. He treated the heavy, physical carry like a giant hug, and Sarah fully understood that. She held him tightly against her for a few extra seconds, swaying slightly, before she gently lowered him down into the mattress.
+                </p>
+                <p>
+                    She pulled the heavy blankets up over him, tucked them tightly around his shoulders for sensory compression, and then climbed into the bed right beside him.
+                </p>
+                <p>
+                    The lights went out, but Matt's mind was racing. 
+                </p>
+                <p>
+                    He lay in the darkness, his breathing shallow and rapid. He was completely restless. Every time he closed his eyes, his mind flooded with images of walking across the graduation stage next month, and the glorious reality of packing up and moving to Charlottesville to be with Shiloh, Jessica, Rachel, and Emily. The anxiety of the day—Courtney’s terrifying ambush, the chaotic screaming match in the hallway, the crushing weight of navigating a school that wasn't built for him—was completely gone. 
+                </p>
+                <p>
+                    It was replaced entirely by a fierce, burning hope.
+                </p>
+                <p>
+                    Sensing his restlessness, Sarah shifted closer. She wrapped her arm over his chest, pulling him tight against her side. 
+                </p>
+                <p>
+                    "It's going to happen, Matty," she murmured softly into the darkness, her chin resting on the top of his head. "It's all going to happen. Just go to sleep."
+                </p>
+                <p>
+                    Anchored by the familiar warmth and steady heartbeat of his sister, the frantic energy in Matt's body finally began to ebb. He snuggled deeper into Sarah's embrace, letting the heavy compression of the blankets and her protective grip ground him. Slowly, surrounded by the total safety of his ecosystem, he drifted off to sleep.
+                </p>
             </div>
 
             <?php include $_SERVER['DOCUMENT_ROOT'] . '/includes/components/navigation/narrative-stepper.php'; ?>

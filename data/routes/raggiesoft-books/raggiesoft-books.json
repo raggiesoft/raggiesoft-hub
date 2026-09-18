@@ -18,8 +18,8 @@
     "schemaType": "CollectionPage"
   },
   
-  "/raggiesoft-books/contemporary": {
-    "view": "pages/raggiesoft-books/contemporary/overview",
+  "/raggiesoft-books/books": {
+    "view": "pages/raggiesoft-books/books/overview",
     "title": "Contemporary Fiction | Ocean View Archives",
     "ogTitle": "Contemporary Fiction Library"
   },

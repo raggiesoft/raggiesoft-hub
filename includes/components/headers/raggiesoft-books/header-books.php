@@ -6,7 +6,7 @@ $request_uri = $_SERVER['REQUEST_URI'] ?? '/raggiesoft-books';
 $isHub = ($request_uri === '/raggiesoft-books');
 $isKnox = (str_starts_with($request_uri, '/raggiesoft-books/knox'));
 $isAethel = (str_starts_with($request_uri, '/raggiesoft-books/aethel-saga'));
-$isContemporary = (str_starts_with($request_uri, '/raggiesoft-books/contemporary'));
+$isBooks = (str_starts_with($request_uri, '/raggiesoft-books/books'));
 ?>
 
 <ul class="navbar-nav ms-auto mb-2 mb-md-0 align-items-center">
@@ -18,8 +18,8 @@ $isContemporary = (str_starts_with($request_uri, '/raggiesoft-books/contemporary
   </li>
 
   <li class="nav-item me-2">
-    <a class="nav-link <?php echo $isContemporary ? 'active fw-bold text-info' : ''; ?>" href="/raggiesoft-books/contemporary">
-        <i class="fa-duotone fa-books me-2" aria-hidden="true"></i>Contemporary Fiction
+    <a class="nav-link <?php echo $isBooks ? 'active fw-bold text-info' : ''; ?>" href="/raggiesoft-books/books">
+        <i class="fa-duotone fa-books me-2" aria-hidden="true"></i>Contemporary Library
     </a>
   </li>
 

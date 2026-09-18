@@ -107,10 +107,10 @@ $pageTitle = "Ocean View Archives | RaggieSoft Media";
                     'title' => 'Contemporary Fiction',
                     'description' => 'A curated collection of standalone, grounded narratives set in coastal Virginia. Explore distinct stories of fierce loyalty, disability representation, and found families building perimeters against an unforgiving world.',
                     'buttonProps' => [
-                        'href' => '#',
-                        'text' => 'Status: Typesetting',
-                        'variant' => 'secondary', 
-                        'icon' => 'fa-duotone fa-file-dashed-line',
+                        'href' => '/raggiesoft-books/books',
+                        'text' => 'Enter the Library',
+                        'variant' => 'primary', 
+                        'icon' => 'fa-duotone fa-book-open',
                         'fullWidth' => true
                     ]
                 ];

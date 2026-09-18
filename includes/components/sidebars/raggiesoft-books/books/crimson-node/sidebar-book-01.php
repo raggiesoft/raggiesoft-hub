@@ -95,5 +95,8 @@ $request_uri = $_SERVER['REQUEST_URI'] ?? '/';
         <a href="#part-6" class="list-group-item list-group-item-action ps-4 py-2 border-0 text-secondary" style="font-size: 0.9em; background-color: rgba(0,0,0,0.02);">
             <i class="fa-solid fa-angle-right me-2 text-danger"></i>Part 6: The Charlottesville Plan
         </a>
+        <a href="#part-7" class="list-group-item list-group-item-action ps-4 py-2 border-0 text-secondary" style="font-size: 0.9em; background-color: rgba(0,0,0,0.02);">
+            <i class="fa-solid fa-angle-right me-2 text-danger"></i>Part 7: The Final Transfer
+        </a>
     <?php endif; ?>
 </div>
