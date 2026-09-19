@@ -111,9 +111,9 @@ function initializeStorePreferences() {
         
         if (!mainBtn || !toggleBtn) return; // Safety check
         
-        // Remove old DSP classes
-        mainBtn.classList.forEach(c => { if (c.startsWith('dsp-')) mainBtn.classList.remove(c); });
-        toggleBtn.classList.forEach(c => { if (c.startsWith('dsp-')) toggleBtn.classList.remove(c); });
+        // Safely remove old DSP classes
+        Array.from(mainBtn.classList).forEach(c => { if (c.startsWith('dsp-')) mainBtn.classList.remove(c); });
+        Array.from(toggleBtn.classList).forEach(c => { if (c.startsWith('dsp-')) toggleBtn.classList.remove(c); });
         
         // Add new DSP class
         if (platformData.class) {
@@ -139,7 +139,14 @@ function initializeStorePreferences() {
         link.parentNode.replaceChild(newLink, link);
         
         newLink.addEventListener('click', function(e) {
-            localStorage.setItem('preferredMusicStore', this.dataset.platform);
+            const platform = this.dataset.platform;
+            localStorage.setItem('preferredMusicStore', platform);
+            
+            // Instantly visually swap all buttons on the page without needing a refresh
+            document.querySelectorAll('.dynamic-store-group').forEach(group => {
+                const targetLink = group.querySelector(`.store-selector-link[data-platform="${platform}"]`);
+                if (targetLink) updateButtonGroup(group, targetLink.dataset);
+            });
         });
     });
 }
