@@ -191,44 +191,47 @@ if ($eras) {
     <div class="row g-5 justify-content-center">
         
         <div class="col-md-6 col-lg-5">
-            <div class="card glass-card h-100 border-info shadow-glow hover-lift overflow-hidden">
-                <div class="position-relative">
-                    <img src="https://assets.raggiesoft.com/engine-room-records/artists/the-stardust-engine/2003-sanctuary-zero-g/album-art.jpg" 
-                         class="card-img-top border-bottom border-info" 
-                         alt="Sanctuary (Zero-G) Album Art - The Stardust Engine">
-                    <div class="position-absolute top-0 end-0 p-3">
-                        <span class="badge bg-black bg-opacity-75 text-info border border-info font-monospace">MOON 1</span>
+            <a href="/engine-room/artists/stardust-engine/discography/2003-moon-1-sanctuary-zero-g" class="text-decoration-none">
+                <wa-card class="glass-card h-100 shadow-glow hover-lift w-100" style="border: 1px solid var(--wa-color-brand);">
+                    <div class="position-relative">
+                        <img src="https://assets.raggiesoft.com/engine-room-records/artists/the-stardust-engine/2003-sanctuary-zero-g/album-art.jpg" 
+                             class="w-100 border-bottom border-info" 
+                             alt="Sanctuary (Zero-G) Album Art - The Stardust Engine">
+                        <div class="position-absolute top-0 end-0 p-3">
+                            <wa-badge variant="brand" class="font-monospace">MOON 1</wa-badge>
+                        </div>
                     </div>
-                </div>
-                <div class="card-body p-4 text-center d-flex flex-column">
-                    <h3 class="h4 text-info fw-bold text-uppercase mb-1">Sanctuary (Zero-G)</h3>
-                    <p class="small text-white-50 font-monospace mb-3">The Anchor // Cassidy O'Connell</p>
-                    <p class="text-white-75 small mb-0">
-                        A zero-gravity atmospheric masterpiece showcasing the mathematically precise <strong>Cosmic Tidal Lock Sound&trade;</strong>. A sanctuary built on unwavering loyalty in the endless black.
-                    </p>
-                </div>
-            </div>
+                    <div class="p-4 text-center d-flex flex-column">
+                        <h3 class="h4 text-info fw-bold text-uppercase mb-1">Sanctuary (Zero-G)</h3>
+                        <p class="small text-white-50 font-monospace mb-3">The Anchor // Cassidy O'Connell</p>
+                        <p class="text-white-75 small mb-0">
+                            A zero-gravity atmospheric masterpiece showcasing the mathematically precise <strong>Cosmic Tidal Lock Sound&trade;</strong>. A sanctuary built on unwavering loyalty in the endless black.
+                        </p>
+                    </div>
+                </wa-card>
+            </a>
         </div>
 
         <div class="col-md-6 col-lg-5">
-            <div class="card glass-card h-100 border-danger shadow-glow hover-lift overflow-hidden">
-                <div class="position-relative">
-                    <img src="https://assets.raggiesoft.com/engine-room-records/artists/the-stardust-engine/2003-mile-marker-98/album-art.jpg" 
-                         class="card-img-top border-bottom border-danger" 
-                         alt="Mile Marker 98 Album Art - The Stardust Engine">
-                    <div class="position-absolute top-0 end-0 p-3">
-                        <span class="badge bg-black bg-opacity-75 text-danger border border-danger font-monospace">MOON 2</span>
+            <a href="/engine-room/artists/stardust-engine/discography/2003-moon-2-mile-marker-98" class="text-decoration-none">
+                <wa-card class="glass-card h-100 shadow-glow hover-lift w-100" style="border: 1px solid var(--wa-color-danger);">
+                    <div class="position-relative">
+                        <img src="https://assets.raggiesoft.com/engine-room-records/artists/the-stardust-engine/2003-mile-marker-98/album-art.jpg" 
+                             class="w-100 border-bottom border-danger" 
+                             alt="Mile Marker 98 Album Art - The Stardust Engine">
+                        <div class="position-absolute top-0 end-0 p-3">
+                            <wa-badge variant="danger" class="font-monospace">MOON 2</wa-badge>
+                        </div>
                     </div>
-                </div>
-                <div class="card-body p-4 text-center d-flex flex-column">
-                    <h3 class="h4 text-danger fw-bold text-uppercase mb-1">Mile Marker 98</h3>
-                    <p class="small text-white-50 font-monospace mb-3">The Engine // Ryan O'Connell</p>
-                    <p class="text-white-75 small mb-0">
-                        Blistering, distorted electric guitars and aggressive rock energy. A visceral, high-friction confrontation with the trauma of 
-                        <a href="/engine-room/artists/stardust-engine/story/crash-of-90" class="text-danger fw-bold border-bottom border-danger text-decoration-none hover-text-white transition-all">The Crash of '90</a>.
-                    </p>
-                </div>
-            </div>
+                    <div class="p-4 text-center d-flex flex-column">
+                        <h3 class="h4 text-danger fw-bold text-uppercase mb-1">Mile Marker 98</h3>
+                        <p class="small text-white-50 font-monospace mb-3">The Engine // Ryan O'Connell</p>
+                        <p class="text-white-75 small mb-0">
+                            Blistering, distorted electric guitars and aggressive rock energy. A visceral, high-friction confrontation with the trauma of The Crash of '90.
+                        </p>
+                    </div>
+                </wa-card>
+            </a>
         </div>
 
     </div>
@@ -240,11 +243,10 @@ if ($eras) {
         <p class="text-body-secondary">Swipe through the historical discography of The Stardust Engine.</p>
     </div>
 
-    <div id="discographyCarousel" class="carousel slide carousel-fade bg-body-tertiary rounded shadow-sm border border-secondary border-opacity-50 p-4" data-bs-ride="carousel">
-        <div class="carousel-inner">
+    <wa-carousel id="discographyCarousel" class="bg-body-tertiary rounded shadow-sm border border-secondary border-opacity-50 p-4 w-100" pagination navigation>
             <?php foreach ($allAlbums as $index => $album): ?>
-                <div class="carousel-item <?php echo $index === 0 ? 'active' : ''; ?>">
-                    <div class="row align-items-center justify-content-center">
+                <wa-carousel-item>
+                    <div class="row align-items-center justify-content-center w-100 h-100">
                         <div class="col-sm-5 text-center mb-3 mb-sm-0">
                             <img src="<?php echo htmlspecialchars($album['img']); ?>" class="img-fluid rounded shadow border border-dark" alt="<?php echo htmlspecialchars($album['title']); ?>" style="max-height: 250px;">
                         </div>
@@ -254,9 +256,9 @@ if ($eras) {
                             <p class="text-muted mb-3">Released: <?php echo htmlspecialchars($album['year']); ?> <?php echo isset($album['extra']) ? $album['extra'] : ''; ?></p>
                             
                             <div class="d-flex flex-wrap gap-2 justify-content-center justify-content-sm-start">
-                                <a href="<?php echo htmlspecialchars($album['url']); ?>" class="btn btn-outline-primary rounded-pill px-4">
-                                    <i class="fa-duotone fa-compact-disc me-2"></i>Explore Vault
-                                </a>
+                                <wa-button href="<?php echo htmlspecialchars($album['url']); ?>" variant="primary" appearance="outline">
+                                    <i slot="start" class="fa-duotone fa-compact-disc"></i> Explore Vault
+                                </wa-button>
                                 
                                 <?php 
                                 // Check if any DSP IDs exist for this specific album
@@ -279,59 +281,49 @@ if ($eras) {
                             
                         </div>
                     </div>
-                </div>
+                </wa-carousel-item>
             <?php endforeach; ?>
-        </div>
-        
-        <button class="carousel-control-prev" type="button" data-bs-target="#discographyCarousel" data-bs-slide="prev" style="width: 5%;">
-            <i class="fa-solid fa-chevron-left text-body-emphasis fs-3" aria-hidden="true"></i>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#discographyCarousel" data-bs-slide="next" style="width: 5%;">
-            <i class="fa-solid fa-chevron-right text-body-emphasis fs-3" aria-hidden="true"></i>
-            <span class="visually-hidden">Next</span>
-        </button>
-    </div>
+    </wa-carousel>
 </div>
 <?php endif; ?>
 
 <div class="container py-5">
     <div class="row g-4">
         <div class="col-lg-4">
-            <div class="card h-100 border-secondary bg-transparent hover-lift">
-                <div class="card-body d-flex flex-column text-center p-4">
+            <wa-card class="h-100 hover-lift w-100">
+                <div class="d-flex flex-column text-center p-2">
                     <div class="mb-3 text-primary"><i class="fa-duotone fa-users fa-3x"></i></div>
                     <h3 class="fw-bold text-primary">The Band</h3>
                     <p class="text-secondary small">
                         Meet the five family members who started it all: Cassidy, Ryan, Holly, Evan, and Tyler.
                     </p>
-                    <a href="<?php echo $root; ?>/band" class="btn btn-outline-primary mt-auto rounded-pill">View Bios</a>
+                    <wa-button href="<?php echo $root; ?>/band" variant="primary" appearance="outline" class="mt-auto">View Bios</wa-button>
                 </div>
-            </div>
+            </wa-card>
         </div>
         <div class="col-lg-4">
-            <div class="card h-100 border-secondary bg-transparent hover-lift">
-                <div class="card-body d-flex flex-column text-center p-4">
+            <wa-card class="h-100 hover-lift w-100">
+                <div class="d-flex flex-column text-center p-2">
                     <div class="mb-3 text-danger"><i class="fa-duotone fa-book-atlas fa-3x"></i></div>
                     <h3 class="fw-bold text-danger">The Lore</h3>
                     <p class="text-secondary small">
                         Learn about the "Friction" scandal, the "Cold War" with Apex Records, and the birth of independence.
                     </p>
-                    <a href="<?php echo $root; ?>/story" class="btn btn-outline-danger mt-auto rounded-pill">Read History</a>
+                    <wa-button href="<?php echo $root; ?>/story" variant="danger" appearance="outline" class="mt-auto">Read History</wa-button>
                 </div>
-            </div>
+            </wa-card>
         </div>
         <div class="col-lg-4">
-            <div class="card h-100 border-secondary bg-transparent hover-lift">
-                <div class="card-body d-flex flex-column text-center p-4">
+            <wa-card class="h-100 hover-lift w-100">
+                <div class="d-flex flex-column text-center p-2">
                     <div class="mb-3 text-success"><i class="fa-duotone fa-compact-disc fa-3x"></i></div>
                     <h3 class="fw-bold text-success">The Discography</h3>
                     <p class="text-secondary small">
                         Explore the full catalog, from the polished 80s pop to the raw, independent rock of their rebirth.
                     </p>
-                    <a href="<?php echo $root; ?>/discography" class="btn btn-outline-success mt-auto rounded-pill">View Albums</a>
+                    <wa-button href="<?php echo $root; ?>/discography" variant="success" appearance="outline" class="mt-auto">View Albums</wa-button>
                 </div>
-            </div>
+            </wa-card>
         </div>
     </div>
 </div>
