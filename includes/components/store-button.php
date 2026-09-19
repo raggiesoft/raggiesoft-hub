@@ -48,6 +48,21 @@ $default = 'spotify';
 $hasMerch = !empty($physical['vinyl']) || !empty($physical['cd']) || !empty($physical['apparel']);
 ?>
 
+<style>
+/* Patch for Web Awesome Button Group not recognizing wa-dropdown in split buttons */
+wa-button-group.dynamic-store-group wa-button.main-store-btn::part(base) {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+wa-button-group.dynamic-store-group wa-dropdown {
+    margin-left: -1px;
+}
+wa-button-group.dynamic-store-group wa-dropdown wa-button::part(base) {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+</style>
+
 <div class="d-flex flex-wrap gap-2">
     
     <wa-button-group class="dynamic-store-group">
@@ -65,7 +80,7 @@ $hasMerch = !empty($physical['vinyl']) || !empty($physical['cd']) || !empty($phy
             <wa-button slot="trigger" size="<?php echo htmlspecialchars($size); ?>" variant="<?php echo $platforms[$default]['color']; ?>" class="toggle-store-btn px-2">
                 <i class="fa-solid fa-chevron-down"></i>
             </wa-button>
-            <wa-menu class="bg-body rounded-3 shadow-lg border border-secondary border-opacity-25" style="padding: 0; overflow: hidden;">
+            <wa-menu class="rounded-3 shadow-lg border border-secondary border-opacity-25" style="--wa-panel-background-color: var(--bs-body-bg); padding: 0; overflow: hidden;">
                 <div class="px-3 py-2 bg-body-tertiary border-bottom border-secondary-subtle mb-2">
                     <span class="d-block fw-bold text-primary mb-1"><i class="fa-solid fa-memory me-1"></i> Set Global Default</span>
                     <span class="d-block small text-body-secondary lh-sm" style="font-size: 0.8em;">Select your preferred app. We will remember it for all future albums.</span>
@@ -96,7 +111,7 @@ $hasMerch = !empty($physical['vinyl']) || !empty($physical['cd']) || !empty($phy
             <i slot="start" class="fa-solid fa-cart-shopping"></i> Buy Physical
             <i slot="suffix" class="fa-solid fa-chevron-down ms-2"></i>
         </wa-button>
-        <wa-menu class="bg-body rounded-3 shadow-lg border border-secondary border-opacity-25" style="padding: 0; overflow: hidden;">
+        <wa-menu class="rounded-3 shadow-lg border border-secondary border-opacity-25" style="--wa-panel-background-color: var(--bs-body-bg); padding: 0; overflow: hidden;">
             <div class="px-3 py-2 bg-body-tertiary border-bottom border-warning-subtle mb-2">
                 <span class="d-block fw-bold text-warning-emphasis mb-1"><i class="fa-solid fa-box-open me-1"></i> Official Merchandise</span>
                 <span class="d-block small text-body-secondary lh-sm" style="font-size: 0.8em;">Orders fulfilled via our on-demand partners.</span>
