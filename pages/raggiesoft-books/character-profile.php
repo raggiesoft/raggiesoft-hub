@@ -2,19 +2,23 @@
 require_once ROOT_PATH . '/includes/classes/stardust-parsedown.php';
 $Parsedown = new StardustParsedown();
 
-$charData = isset($char) ? $char : (defined('ACTIVE_CHARACTER_JSON') ? json_decode(ACTIVE_CHARACTER_JSON, true) : null);
-$mdFile = defined('ACTIVE_CHARACTER_MD') ? ACTIVE_CHARACTER_MD : null;
+// If we are showing a specific character, $config will have 'character_id'
+$is_directory = $config['is_directory'] ?? (!isset($config['character_id']));
 
-// IF NO CHARACTER IS SELECTED, RENDER THE DIRECTORY
-if (!$charData): 
-    $characterListPath = ROOT_PATH . '/data/characters.json';
+if ($is_directory): 
+    // Directory Mode: Load all characters from the route file to display the grid
+    $characterListPath = ROOT_PATH . '/data/routes/raggiesoft-books/characters.json';
     $characters = [];
     if (file_exists($characterListPath)) {
-        $data = json_decode(file_get_contents($characterListPath), true);
-        $characters = $data['characters'] ?? [];
+        $routesData = json_decode(file_get_contents($characterListPath), true) ?? [];
+        foreach ($routesData as $route => $char) {
+            if (isset($char['character_id'])) {
+                $characters[] = $char;
+            }
+        }
     }
     
-    // Group fictional characters by story
+    // Group characters by story
     $groupedCharacters = [];
     foreach ($characters as $c) {
         if (!isset($c['is_public']) || $c['is_public']) {
@@ -41,7 +45,7 @@ if (!$charData):
         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 mb-5">
             <?php foreach ($chars as $c): ?>
                 <div class="col">
-                    <a href="/character/<?php echo urlencode($c['id']); ?>" class="text-decoration-none">
+                    <a href="/raggiesoft-books/characters/<?php echo urlencode($c['character_id']); ?>" class="text-decoration-none">
                         <div class="card h-100 shadow-sm character-card">
                             <div class="card-body d-flex align-items-center">
                                 <wa-avatar 
@@ -67,12 +71,14 @@ if (!$charData):
 <?php 
 // IF A CHARACTER IS SELECTED, RENDER THEIR PROFILE
 else: 
-    $fullName = $charData['name'] ?? 'Unknown Character';
-    $isReal = !($charData['is_public'] ?? true);
-    $imagePath = $cdnBaseUrl . '/' . ($charData['image_path'] ?? 'common/images/placeholder.jpg');
+    $fullName = $config['name'] ?? 'Unknown Character';
+    $isReal = !($config['is_public'] ?? true);
+    $imagePath = $cdnBaseUrl . '/' . ($config['image_path'] ?? 'common/images/placeholder.jpg');
     
+    $mdFile = ROOT_PATH . '/data/characters/' . ($config['markdown_file'] ?? 'none.md');
     $mdContent = '';
-    if ($mdFile && file_exists($mdFile)) {
+    
+    if (file_exists($mdFile)) {
         $rawMd = file_get_contents($mdFile);
         
         // 1. Strip YAML frontmatter if it exists
@@ -99,14 +105,14 @@ else:
         
         $mdContent = $Parsedown->text(trim($rawMd));
     } else {
-        $mdContent = "<div class='alert alert-danger'>Character profile data could not be found.</div>";
+        $mdContent = "<div class='alert alert-danger'>Markdown biography file missing for this character.</div>";
     }
 ?>
 <div class="container py-4">
     <div class="mb-4">
         <wa-breadcrumb>
             <wa-breadcrumb-item href="/">Home</wa-breadcrumb-item>
-            <wa-breadcrumb-item href="/raggiesoft-books/character-profile">Characters</wa-breadcrumb-item>
+            <wa-breadcrumb-item href="/raggiesoft-books/characters">Characters</wa-breadcrumb-item>
             <wa-breadcrumb-item><?php echo htmlspecialchars($fullName); ?></wa-breadcrumb-item>
         </wa-breadcrumb>
     </div>
@@ -127,7 +133,7 @@ else:
                 <img src="<?php echo htmlspecialchars($imagePath); ?>" class="card-img-top" alt="<?php echo htmlspecialchars($fullName); ?>">
                 <div class="card-body">
                     <h3 class="card-title fw-bold text-light mb-1"><?php echo htmlspecialchars($fullName); ?></h3>
-                    <p class="text-primary fw-bold mb-0"><?php echo htmlspecialchars($charData['subtitle'] ?? ''); ?></p>
+                    <p class="text-primary fw-bold mb-0"><?php echo htmlspecialchars($config['subtitle'] ?? ''); ?></p>
                 </div>
             </div>
         </div>

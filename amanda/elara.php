@@ -121,30 +121,6 @@ if (!isset($pageConfig['view'])) {
     }
 }
 
-// B.3 DYNAMIC CHARACTER ROUTING
-if (!isset($pageConfig['view']) && preg_match('#^/?character/(.+)$#', $request_uri, $matches)) {
-    $characterListPath = ROOT_PATH . '/data/characters.json';
-    if (file_exists($characterListPath)) {
-        $charData = json_decode(file_get_contents($characterListPath), true);
-        $characters = $charData['characters'] ?? [];
-        if (json_last_error() === JSON_ERROR_NONE) {
-            $slug = $matches[1];
-            foreach ($characters as $char) {
-                if (isset($char['id']) && $char['id'] === $slug) {
-                    $pageConfig['view'] = 'pages/raggiesoft-books/character-profile';
-                    $pageConfig['title'] = $char['name'] . ' - Character Profile';
-                    $pageConfig['showSidebar'] = true;
-                    
-                    // Route variables
-                    define('ACTIVE_CHARACTER_MD', ROOT_PATH . '/data/characters/' . $char['markdown_file']);
-                    define('ACTIVE_CHARACTER_JSON', json_encode($char));
-                    break;
-                }
-            }
-        }
-    }
-}
-
 // B.2 DYNAMIC NARRATIVE ROUTING (The Katie.json Intercept)
 if (!isset($pageConfig['view'])) {
     $katiePath = ROOT_PATH . '/books/katie.json';

@@ -1,0 +1,939 @@
+{
+    "/raggiesoft-books/characters/brooks-alyssa": {
+        "view": "pages/raggiesoft-books/character-profile",
+        "title": "Alyssa Brooks - Character Profile",
+        "showSidebar": true,
+        "character_id": "brooks-alyssa",
+        "name": "Alyssa Brooks",
+        "narratives": [
+            "amaya"
+        ],
+        "is_public": true,
+        "based_on": [],
+        "markdown_file": "brooks-alyssa.md",
+        "image_path": "amaya/images/characters/brooks-alyssa.jpg"
+    },
+    "/raggiesoft-books/characters/clark-amanda": {
+        "view": "pages/raggiesoft-books/character-profile",
+        "title": "Amanda Clark - Character Profile",
+        "showSidebar": true,
+        "character_id": "clark-amanda",
+        "name": "Amanda Clark",
+        "narratives": [
+            "amaya"
+        ],
+        "is_public": true,
+        "based_on": [],
+        "markdown_file": "clark-amanda.md",
+        "image_path": "amaya/images/characters/clark-amanda.jpg"
+    },
+    "/raggiesoft-books/characters/rios-amaya": {
+        "view": "pages/raggiesoft-books/character-profile",
+        "title": "Amaya Rios - Character Profile",
+        "showSidebar": true,
+        "character_id": "rios-amaya",
+        "name": "Amaya Rios",
+        "narratives": [
+            "amaya"
+        ],
+        "is_public": true,
+        "based_on": [
+            "Kristyn Holmes"
+        ],
+        "markdown_file": "rios-amaya.md",
+        "image_path": "amaya/images/characters/rios-amaya.jpg"
+    },
+    "/raggiesoft-books/characters/mitchell-amber": {
+        "view": "pages/raggiesoft-books/character-profile",
+        "title": "Amber Mitchell - Character Profile",
+        "showSidebar": true,
+        "character_id": "mitchell-amber",
+        "name": "Amber Mitchell",
+        "narratives": [
+            "amaya"
+        ],
+        "is_public": true,
+        "based_on": [],
+        "markdown_file": "mitchell-amber.md",
+        "image_path": "amaya/images/characters/mitchell-amber.jpg"
+    },
+    "/raggiesoft-books/characters/ouellette-amy": {
+        "view": "pages/raggiesoft-books/character-profile",
+        "title": "Amy Ouellette - Character Profile",
+        "showSidebar": true,
+        "character_id": "ouellette-amy",
+        "name": "Amy Ouellette",
+        "narratives": [
+            "autistic-warning"
+        ],
+        "is_public": false,
+        "based_on": [],
+        "markdown_file": "ouellette-amy.md",
+        "image_path": "autistic-warning/images/characters/ouellette-amy.jpg"
+    },
+    "/raggiesoft-books/characters/april": {
+        "view": "pages/raggiesoft-books/character-profile",
+        "title": "April - Character Profile",
+        "showSidebar": true,
+        "character_id": "april",
+        "name": "April",
+        "narratives": [
+            "rachel"
+        ],
+        "is_public": true,
+        "based_on": [],
+        "markdown_file": "april.md",
+        "image_path": "rachel/images/characters/april.jpg"
+    },
+    "/raggiesoft-books/characters/vance-arthur": {
+        "view": "pages/raggiesoft-books/character-profile",
+        "title": "Arthur Vance - Character Profile",
+        "showSidebar": true,
+        "character_id": "vance-arthur",
+        "name": "Arthur Vance",
+        "narratives": [
+            "shiloh",
+            "crimson-node"
+        ],
+        "is_public": true,
+        "based_on": [],
+        "markdown_file": "vance-arthur.md",
+        "image_path": "shiloh/images/characters/vance-arthur.jpg"
+    },
+    "/raggiesoft-books/characters/williams-ashley": {
+        "view": "pages/raggiesoft-books/character-profile",
+        "title": "Ashley Williams - Character Profile",
+        "showSidebar": true,
+        "character_id": "williams-ashley",
+        "name": "Ashley Williams",
+        "narratives": [
+            "amaya"
+        ],
+        "is_public": true,
+        "based_on": [],
+        "markdown_file": "williams-ashley.md",
+        "image_path": "amaya/images/characters/williams-ashley.jpg"
+    },
+    "/raggiesoft-books/characters/morgan-bernard": {
+        "view": "pages/raggiesoft-books/character-profile",
+        "title": "Bernard Morgan - Character Profile",
+        "showSidebar": true,
+        "character_id": "morgan-bernard",
+        "name": "Bernard Morgan",
+        "narratives": [
+            "shiloh",
+            "northwood-high-school",
+            "crimson-node"
+        ],
+        "is_public": true,
+        "based_on": [],
+        "markdown_file": "morgan-bernard.md",
+        "image_path": "shiloh/images/characters/morgan-bernard.jpg"
+    },
+    "/raggiesoft-books/characters/torres-brittany": {
+        "view": "pages/raggiesoft-books/character-profile",
+        "title": "Brittany Torres - Character Profile",
+        "showSidebar": true,
+        "character_id": "torres-brittany",
+        "name": "Brittany Torres",
+        "narratives": [
+            "amaya"
+        ],
+        "is_public": true,
+        "based_on": [],
+        "markdown_file": "torres-brittany.md",
+        "image_path": "amaya/images/characters/torres-brittany.jpg"
+    },
+    "/raggiesoft-books/characters/brooks-casper": {
+        "view": "pages/raggiesoft-books/character-profile",
+        "title": "Casper Brooks - Character Profile",
+        "showSidebar": true,
+        "character_id": "brooks-casper",
+        "name": "Casper Brooks",
+        "narratives": [
+            "shiloh",
+            "crimson-node"
+        ],
+        "is_public": true,
+        "based_on": [],
+        "markdown_file": "brooks-casper.md",
+        "image_path": "shiloh/images/characters/brooks-casper.jpg"
+    },
+    "/raggiesoft-books/characters/oconnell-cassidy": {
+        "view": "pages/raggiesoft-books/character-profile",
+        "title": "Cassidy O'Connell - Character Profile",
+        "showSidebar": true,
+        "character_id": "oconnell-cassidy",
+        "name": "Cassidy O'Connell",
+        "narratives": [
+            "stardust-engine"
+        ],
+        "is_public": true,
+        "based_on": [],
+        "markdown_file": "oconnell-cassidy.md",
+        "image_path": "stardust-engine/images/characters/oconnell-cassidy.jpg"
+    },
+    "/raggiesoft-books/characters/sullivan-chelsea": {
+        "view": "pages/raggiesoft-books/character-profile",
+        "title": "Chelsea Sullivan - Character Profile",
+        "showSidebar": true,
+        "character_id": "sullivan-chelsea",
+        "name": "Chelsea Sullivan",
+        "narratives": [
+            "amaya"
+        ],
+        "is_public": true,
+        "based_on": [],
+        "markdown_file": "sullivan-chelsea.md",
+        "image_path": "amaya/images/characters/sullivan-chelsea.jpg"
+    },
+    "/raggiesoft-books/characters/brooks-chloe": {
+        "view": "pages/raggiesoft-books/character-profile",
+        "title": "Chloe Brooks - Character Profile",
+        "showSidebar": true,
+        "character_id": "brooks-chloe",
+        "name": "Chloe Brooks",
+        "narratives": [
+            "shiloh",
+            "crimson-node"
+        ],
+        "is_public": true,
+        "based_on": [],
+        "markdown_file": "brooks-chloe.md",
+        "image_path": "shiloh/images/characters/brooks-chloe.jpg"
+    },
+    "/raggiesoft-books/characters/manning-claire": {
+        "view": "pages/raggiesoft-books/character-profile",
+        "title": "Claire Manning - Character Profile",
+        "showSidebar": true,
+        "character_id": "manning-claire",
+        "name": "Claire Manning",
+        "narratives": [
+            "fractured-prisms"
+        ],
+        "is_public": true,
+        "based_on": [],
+        "markdown_file": "manning-claire.md",
+        "image_path": "fractured-prisms/images/characters/manning-claire.jpg"
+    },
+    "/raggiesoft-books/characters/evans-courtney": {
+        "view": "pages/raggiesoft-books/character-profile",
+        "title": "Courtney Evans - Character Profile",
+        "showSidebar": true,
+        "character_id": "evans-courtney",
+        "name": "Courtney Evans",
+        "narratives": [
+            "amaya",
+            "crimson-node",
+            "shiloh"
+        ],
+        "is_public": true,
+        "based_on": [],
+        "markdown_file": "evans-courtney.md",
+        "image_path": "amaya/images/characters/evans-courtney.jpg"
+    },
+    "/raggiesoft-books/characters/morgan-danielle": {
+        "view": "pages/raggiesoft-books/character-profile",
+        "title": "Danielle Morgan - Character Profile",
+        "showSidebar": true,
+        "character_id": "morgan-danielle",
+        "name": "Danielle Morgan",
+        "narratives": [
+            "amaya"
+        ],
+        "is_public": true,
+        "based_on": [],
+        "markdown_file": "morgan-danielle.md",
+        "image_path": "amaya/images/characters/morgan-danielle.jpg"
+    },
+    "/raggiesoft-books/characters/miller-david": {
+        "view": "pages/raggiesoft-books/character-profile",
+        "title": "David Miller - Character Profile",
+        "showSidebar": true,
+        "character_id": "miller-david",
+        "name": "David Miller",
+        "narratives": [
+            "shiloh",
+            "crimson-node"
+        ],
+        "is_public": true,
+        "based_on": [],
+        "markdown_file": "miller-david.md",
+        "image_path": "shiloh/images/characters/miller-david.jpg"
+    },
+    "/raggiesoft-books/characters/patterson-david": {
+        "view": "pages/raggiesoft-books/character-profile",
+        "title": "David Patterson - Character Profile",
+        "showSidebar": true,
+        "character_id": "patterson-david",
+        "name": "David Patterson",
+        "narratives": [
+            "david-meredith"
+        ],
+        "is_public": true,
+        "based_on": [],
+        "markdown_file": "patterson-david.md",
+        "image_path": "david-meredith/images/characters/patterson-david.jpg"
+    },
+    "/raggiesoft-books/characters/pelletier-elise": {
+        "view": "pages/raggiesoft-books/character-profile",
+        "title": "Elise Pelletier - Character Profile",
+        "showSidebar": true,
+        "character_id": "pelletier-elise",
+        "name": "Elise Pelletier",
+        "narratives": [
+            "crimson-node",
+            "other",
+            "shiloh"
+        ],
+        "is_public": true,
+        "based_on": [],
+        "markdown_file": "pelletier-elise.md",
+        "image_path": "other/images/characters/pelletier-elise.jpg"
+    },
+    "/raggiesoft-books/characters/parker-elizabeth": {
+        "view": "pages/raggiesoft-books/character-profile",
+        "title": "Elizabeth Parker - Character Profile",
+        "showSidebar": true,
+        "character_id": "parker-elizabeth",
+        "name": "Elizabeth Parker",
+        "narratives": [
+            "amaya"
+        ],
+        "is_public": true,
+        "based_on": [],
+        "markdown_file": "parker-elizabeth.md",
+        "image_path": "amaya/images/characters/parker-elizabeth.jpg"
+    },
+    "/raggiesoft-books/characters/pelletier-elodie": {
+        "view": "pages/raggiesoft-books/character-profile",
+        "title": "Elodie Pelletier - Character Profile",
+        "showSidebar": true,
+        "character_id": "pelletier-elodie",
+        "name": "Elodie Pelletier",
+        "narratives": [
+            "crimson-node",
+            "shiloh"
+        ],
+        "is_public": true,
+        "based_on": [],
+        "markdown_file": "pelletier-elodie.md",
+        "image_path": "crimson-node/images/characters/pelletier-elodie.jpg"
+    },
+    "/raggiesoft-books/characters/miller-emily": {
+        "view": "pages/raggiesoft-books/character-profile",
+        "title": "Emily Miller - Character Profile",
+        "showSidebar": true,
+        "character_id": "miller-emily",
+        "name": "Emily Miller",
+        "narratives": [
+            "shiloh",
+            "crimson-node"
+        ],
+        "is_public": true,
+        "based_on": [],
+        "markdown_file": "miller-emily.md",
+        "image_path": "shiloh/images/characters/miller-emily.jpg"
+    },
+    "/raggiesoft-books/characters/wright-evan": {
+        "view": "pages/raggiesoft-books/character-profile",
+        "title": "Evan Wright - Character Profile",
+        "showSidebar": true,
+        "character_id": "wright-evan",
+        "name": "Evan Wright",
+        "narratives": [
+            "stardust-engine"
+        ],
+        "is_public": true,
+        "based_on": [],
+        "markdown_file": "wright-evan.md",
+        "image_path": "stardust-engine/images/characters/wright-evan.jpg"
+    },
+    "/raggiesoft-books/characters/bouchard-hailey": {
+        "view": "pages/raggiesoft-books/character-profile",
+        "title": "Hailey Bouchard - Character Profile",
+        "showSidebar": true,
+        "character_id": "bouchard-hailey",
+        "name": "Hailey Bouchard",
+        "narratives": [
+            "shiloh",
+            "crimson-node"
+        ],
+        "is_public": true,
+        "based_on": [],
+        "markdown_file": "bouchard-hailey.md",
+        "image_path": "shiloh/images/characters/bouchard-hailey.jpg"
+    },
+    "/raggiesoft-books/characters/bouchard-heather": {
+        "view": "pages/raggiesoft-books/character-profile",
+        "title": "Heather Bouchard - Character Profile",
+        "showSidebar": true,
+        "character_id": "bouchard-heather",
+        "name": "Heather Bouchard",
+        "narratives": [
+            "shiloh",
+            "crimson-node"
+        ],
+        "is_public": true,
+        "based_on": [],
+        "markdown_file": "bouchard-heather.md",
+        "image_path": "shiloh/images/characters/bouchard-heather.jpg"
+    },
+    "/raggiesoft-books/characters/oconnell-holly": {
+        "view": "pages/raggiesoft-books/character-profile",
+        "title": "Holly O'Connell - Character Profile",
+        "showSidebar": true,
+        "character_id": "oconnell-holly",
+        "name": "Holly O'Connell",
+        "narratives": [
+            "stardust-engine"
+        ],
+        "is_public": true,
+        "based_on": [],
+        "markdown_file": "oconnell-holly.md",
+        "image_path": "stardust-engine/images/characters/oconnell-holly.jpg"
+    },
+    "/raggiesoft-books/characters/washington-jasmine": {
+        "view": "pages/raggiesoft-books/character-profile",
+        "title": "Jasmine Washington - Character Profile",
+        "showSidebar": true,
+        "character_id": "washington-jasmine",
+        "name": "Jasmine Washington",
+        "narratives": [
+            "amaya"
+        ],
+        "is_public": true,
+        "based_on": [],
+        "markdown_file": "washington-jasmine.md",
+        "image_path": "amaya/images/characters/washington-jasmine.jpg"
+    },
+    "/raggiesoft-books/characters/barnes-jessica": {
+        "view": "pages/raggiesoft-books/character-profile",
+        "title": "Jessica Barnes - Character Profile",
+        "showSidebar": true,
+        "character_id": "barnes-jessica",
+        "name": "Jessica Barnes",
+        "narratives": [
+            "amaya"
+        ],
+        "is_public": true,
+        "based_on": [],
+        "markdown_file": "barnes-jessica.md",
+        "image_path": "amaya/images/characters/barnes-jessica.jpg"
+    },
+    "/raggiesoft-books/characters/brooks-jessica": {
+        "view": "pages/raggiesoft-books/character-profile",
+        "title": "Jessica Brooks - Character Profile",
+        "showSidebar": true,
+        "character_id": "brooks-jessica",
+        "name": "Jessica Brooks",
+        "narratives": [
+            "shiloh",
+            "crimson-node"
+        ],
+        "is_public": true,
+        "based_on": [],
+        "markdown_file": "brooks-jessica.md",
+        "image_path": "shiloh/images/characters/brooks-jessica.jpg"
+    },
+    "/raggiesoft-books/characters/hayes-justin": {
+        "view": "pages/raggiesoft-books/character-profile",
+        "title": "Justin Hayes - Character Profile",
+        "showSidebar": true,
+        "character_id": "hayes-justin",
+        "name": "Justin Hayes",
+        "narratives": [
+            "amaya"
+        ],
+        "is_public": true,
+        "based_on": [],
+        "markdown_file": "hayes-justin.md",
+        "image_path": "amaya/images/characters/hayes-justin.jpg"
+    },
+    "/raggiesoft-books/characters/kate": {
+        "view": "pages/raggiesoft-books/character-profile",
+        "title": "Kate - Character Profile",
+        "showSidebar": true,
+        "character_id": "kate",
+        "name": "Kate",
+        "narratives": [
+            "david-meredith"
+        ],
+        "is_public": true,
+        "based_on": [],
+        "markdown_file": "kate.md",
+        "image_path": "david-meredith/images/characters/kate.jpg"
+    },
+    "/raggiesoft-books/characters/brooks-katrina": {
+        "view": "pages/raggiesoft-books/character-profile",
+        "title": "Katrina Brooks - Character Profile",
+        "showSidebar": true,
+        "character_id": "brooks-katrina",
+        "name": "Katrina Brooks",
+        "narratives": [
+            "shiloh",
+            "crimson-node"
+        ],
+        "is_public": true,
+        "based_on": [],
+        "markdown_file": "brooks-katrina.md",
+        "image_path": "shiloh/images/characters/brooks-katrina.jpg"
+    },
+    "/raggiesoft-books/characters/ouellette-kristin": {
+        "view": "pages/raggiesoft-books/character-profile",
+        "title": "Kristin Ouellette - Character Profile",
+        "showSidebar": true,
+        "character_id": "ouellette-kristin",
+        "name": "Kristin Ouellette",
+        "narratives": [
+            "autistic-warning"
+        ],
+        "is_public": false,
+        "based_on": [],
+        "markdown_file": "ouellette-kristin.md",
+        "image_path": "autistic-warning/images/characters/ouellette-kristin.jpg"
+    },
+    "/raggiesoft-books/characters/bennett-lauren": {
+        "view": "pages/raggiesoft-books/character-profile",
+        "title": "Lauren Bennett - Character Profile",
+        "showSidebar": true,
+        "character_id": "bennett-lauren",
+        "name": "Lauren Bennett",
+        "narratives": [
+            "amaya"
+        ],
+        "is_public": true,
+        "based_on": [],
+        "markdown_file": "bennett-lauren.md",
+        "image_path": "amaya/images/characters/bennett-lauren.jpg"
+    },
+    "/raggiesoft-books/characters/miller-linda": {
+        "view": "pages/raggiesoft-books/character-profile",
+        "title": "Linda Miller - Character Profile",
+        "showSidebar": true,
+        "character_id": "miller-linda",
+        "name": "Linda Miller",
+        "narratives": [
+            "shiloh",
+            "crimson-node"
+        ],
+        "is_public": true,
+        "based_on": [],
+        "markdown_file": "miller-linda.md",
+        "image_path": "shiloh/images/characters/miller-linda.jpg"
+    },
+    "/raggiesoft-books/characters/miller-matt": {
+        "view": "pages/raggiesoft-books/character-profile",
+        "title": "Matt Miller - Character Profile",
+        "showSidebar": true,
+        "character_id": "miller-matt",
+        "name": "Matt Miller",
+        "narratives": [
+            "shiloh",
+            "crimson-node"
+        ],
+        "is_public": true,
+        "based_on": [],
+        "markdown_file": "miller-matt.md",
+        "image_path": "shiloh/images/characters/miller-matt.jpg"
+    },
+    "/raggiesoft-books/characters/delaney-meredith": {
+        "view": "pages/raggiesoft-books/character-profile",
+        "title": "Meredith Delaney - Character Profile",
+        "showSidebar": true,
+        "character_id": "delaney-meredith",
+        "name": "Meredith Delaney",
+        "narratives": [
+            "david-meredith"
+        ],
+        "is_public": true,
+        "based_on": [],
+        "markdown_file": "delaney-meredith.md",
+        "image_path": "david-meredith/images/characters/delaney-meredith.jpg"
+    },
+    "/raggiesoft-books/characters/hayes-meredith": {
+        "view": "pages/raggiesoft-books/character-profile",
+        "title": "Meredith Hayes - Character Profile",
+        "showSidebar": true,
+        "character_id": "hayes-meredith",
+        "name": "Meredith Hayes",
+        "narratives": [
+            "amaya"
+        ],
+        "is_public": true,
+        "based_on": [],
+        "markdown_file": "hayes-meredith.md",
+        "image_path": "amaya/images/characters/hayes-meredith.jpg"
+    },
+    "/raggiesoft-books/characters/delaney-morgan": {
+        "view": "pages/raggiesoft-books/character-profile",
+        "title": "Morgan Delaney - Character Profile",
+        "showSidebar": true,
+        "character_id": "delaney-morgan",
+        "name": "Morgan Delaney",
+        "narratives": [
+            "david-meredith"
+        ],
+        "is_public": true,
+        "based_on": [],
+        "markdown_file": "delaney-morgan.md",
+        "image_path": "david-meredith/images/characters/delaney-morgan.jpg"
+    },
+    "/raggiesoft-books/characters/demarco-mrs": {
+        "view": "pages/raggiesoft-books/character-profile",
+        "title": "Mrs Demarco - Character Profile",
+        "showSidebar": true,
+        "character_id": "demarco-mrs",
+        "name": "Mrs Demarco",
+        "narratives": [
+            "shiloh",
+            "northwood-high-school",
+            "crimson-node"
+        ],
+        "is_public": true,
+        "based_on": [],
+        "markdown_file": "demarco-mrs.md",
+        "image_path": "shiloh/images/characters/demarco-mrs.jpg"
+    },
+    "/raggiesoft-books/characters/periwinkle-mrs": {
+        "view": "pages/raggiesoft-books/character-profile",
+        "title": "Mrs Periwinkle - Character Profile",
+        "showSidebar": true,
+        "character_id": "periwinkle-mrs",
+        "name": "Mrs Periwinkle",
+        "narratives": [
+            "shiloh",
+            "northwood-high-school",
+            "crimson-node"
+        ],
+        "is_public": true,
+        "based_on": [],
+        "markdown_file": "periwinkle-mrs.md",
+        "image_path": "shiloh/images/characters/periwinkle-mrs.jpg"
+    },
+    "/raggiesoft-books/characters/foster-nichole": {
+        "view": "pages/raggiesoft-books/character-profile",
+        "title": "Nichole Foster - Character Profile",
+        "showSidebar": true,
+        "character_id": "foster-nichole",
+        "name": "Nichole Foster",
+        "narratives": [
+            "amaya"
+        ],
+        "is_public": true,
+        "based_on": [],
+        "markdown_file": "foster-nichole.md",
+        "image_path": "amaya/images/characters/foster-nichole.jpg"
+    },
+    "/raggiesoft-books/characters/miller-peter": {
+        "view": "pages/raggiesoft-books/character-profile",
+        "title": "Peter Miller - Character Profile",
+        "showSidebar": true,
+        "character_id": "miller-peter",
+        "name": "Peter Miller",
+        "narratives": [
+            "shiloh",
+            "crimson-node"
+        ],
+        "is_public": true,
+        "based_on": [],
+        "markdown_file": "miller-peter.md",
+        "image_path": "shiloh/images/characters/miller-peter.jpg"
+    },
+    "/raggiesoft-books/characters/davis-rachel": {
+        "view": "pages/raggiesoft-books/character-profile",
+        "title": "Rachel Davis - Character Profile",
+        "showSidebar": true,
+        "character_id": "davis-rachel",
+        "name": "Rachel Davis",
+        "narratives": [
+            "amaya"
+        ],
+        "is_public": true,
+        "based_on": [],
+        "markdown_file": "davis-rachel.md",
+        "image_path": "amaya/images/characters/davis-rachel.jpg"
+    },
+    "/raggiesoft-books/characters/miller-rachel": {
+        "view": "pages/raggiesoft-books/character-profile",
+        "title": "Rachel Miller - Character Profile",
+        "showSidebar": true,
+        "character_id": "miller-rachel",
+        "name": "Rachel Miller",
+        "narratives": [
+            "shiloh",
+            "crimson-node"
+        ],
+        "is_public": true,
+        "based_on": [],
+        "markdown_file": "miller-rachel.md",
+        "image_path": "shiloh/images/characters/miller-rachel.jpg"
+    },
+    "/raggiesoft-books/characters/manning-rhys": {
+        "view": "pages/raggiesoft-books/character-profile",
+        "title": "Rhys Manning - Character Profile",
+        "showSidebar": true,
+        "character_id": "manning-rhys",
+        "name": "Rhys Manning",
+        "narratives": [
+            "fractured-prisms"
+        ],
+        "is_public": true,
+        "based_on": [],
+        "markdown_file": "manning-rhys.md",
+        "image_path": "fractured-prisms/images/characters/manning-rhys.jpg"
+    },
+    "/raggiesoft-books/characters/oconnell-ryan": {
+        "view": "pages/raggiesoft-books/character-profile",
+        "title": "Ryan O'Connell - Character Profile",
+        "showSidebar": true,
+        "character_id": "oconnell-ryan",
+        "name": "Ryan O'Connell",
+        "narratives": [
+            "stardust-engine"
+        ],
+        "is_public": true,
+        "based_on": [],
+        "markdown_file": "oconnell-ryan.md",
+        "image_path": "stardust-engine/images/characters/oconnell-ryan.jpg"
+    },
+    "/raggiesoft-books/characters/hughes-samantha": {
+        "view": "pages/raggiesoft-books/character-profile",
+        "title": "Samantha Hughes - Character Profile",
+        "showSidebar": true,
+        "character_id": "hughes-samantha",
+        "name": "Samantha Hughes",
+        "narratives": [
+            "amaya"
+        ],
+        "is_public": true,
+        "based_on": [],
+        "markdown_file": "hughes-samantha.md",
+        "image_path": "amaya/images/characters/hughes-samantha.jpg"
+    },
+    "/raggiesoft-books/characters/miller-sarah": {
+        "view": "pages/raggiesoft-books/character-profile",
+        "title": "Sarah Miller - Character Profile",
+        "showSidebar": true,
+        "character_id": "miller-sarah",
+        "name": "Sarah Miller",
+        "narratives": [
+            "shiloh",
+            "crimson-node"
+        ],
+        "is_public": true,
+        "based_on": [],
+        "markdown_file": "miller-sarah.md",
+        "image_path": "shiloh/images/characters/miller-sarah.jpg"
+    },
+    "/raggiesoft-books/characters/brooks-shiloh": {
+        "view": "pages/raggiesoft-books/character-profile",
+        "title": "Shiloh Brooks - Character Profile",
+        "showSidebar": true,
+        "character_id": "brooks-shiloh",
+        "name": "Shiloh Brooks",
+        "narratives": [
+            "shiloh",
+            "crimson-node"
+        ],
+        "is_public": true,
+        "based_on": [],
+        "markdown_file": "brooks-shiloh.md",
+        "image_path": "shiloh/images/characters/brooks-shiloh.jpg"
+    },
+    "/raggiesoft-books/characters/reed-stephanie": {
+        "view": "pages/raggiesoft-books/character-profile",
+        "title": "Stephanie Reed - Character Profile",
+        "showSidebar": true,
+        "character_id": "reed-stephanie",
+        "name": "Stephanie Reed",
+        "narratives": [
+            "amaya"
+        ],
+        "is_public": true,
+        "based_on": [],
+        "markdown_file": "reed-stephanie.md",
+        "image_path": "amaya/images/characters/reed-stephanie.jpg"
+    },
+    "/raggiesoft-books/characters/miller-susan": {
+        "view": "pages/raggiesoft-books/character-profile",
+        "title": "Susan Miller - Character Profile",
+        "showSidebar": true,
+        "character_id": "miller-susan",
+        "name": "Susan Miller",
+        "narratives": [
+            "shiloh",
+            "crimson-node"
+        ],
+        "is_public": true,
+        "based_on": [],
+        "markdown_file": "miller-susan.md",
+        "image_path": "shiloh/images/characters/miller-susan.jpg"
+    },
+    "/raggiesoft-books/characters/jenkins-taylor": {
+        "view": "pages/raggiesoft-books/character-profile",
+        "title": "Taylor Jenkins - Character Profile",
+        "showSidebar": true,
+        "character_id": "jenkins-taylor",
+        "name": "Taylor Jenkins",
+        "narratives": [
+            "amaya"
+        ],
+        "is_public": true,
+        "based_on": [],
+        "markdown_file": "jenkins-taylor.md",
+        "image_path": "amaya/images/characters/jenkins-taylor.jpg"
+    },
+    "/raggiesoft-books/characters/pelletier-twins-the": {
+        "view": "pages/raggiesoft-books/character-profile",
+        "title": "The Pelletier Twins - Character Profile",
+        "showSidebar": true,
+        "character_id": "pelletier-twins-the",
+        "name": "The Pelletier Twins",
+        "narratives": [
+            "crimson-node",
+            "shiloh"
+        ],
+        "is_public": true,
+        "based_on": [],
+        "markdown_file": "pelletier-twins-the.md",
+        "image_path": "crimson-node/images/characters/pelletier-twins-the.jpg"
+    },
+    "/raggiesoft-books/characters/montgomery-trent": {
+        "view": "pages/raggiesoft-books/character-profile",
+        "title": "Trent Montgomery - Character Profile",
+        "showSidebar": true,
+        "character_id": "montgomery-trent",
+        "name": "Trent Montgomery",
+        "narratives": [
+            "shiloh",
+            "crimson-node"
+        ],
+        "is_public": true,
+        "based_on": [],
+        "markdown_file": "montgomery-trent.md",
+        "image_path": "shiloh/images/characters/montgomery-trent.jpg"
+    },
+    "/raggiesoft-books/characters/wright-tyler": {
+        "view": "pages/raggiesoft-books/character-profile",
+        "title": "Tyler Wright - Character Profile",
+        "showSidebar": true,
+        "character_id": "wright-tyler",
+        "name": "Tyler Wright",
+        "narratives": [
+            "stardust-engine"
+        ],
+        "is_public": true,
+        "based_on": [],
+        "markdown_file": "wright-tyler.md",
+        "image_path": "stardust-engine/images/characters/wright-tyler.jpg"
+    },
+    "/raggiesoft-books/characters/kowalski-vera": {
+        "view": "pages/raggiesoft-books/character-profile",
+        "title": "Vera Kowalski - Character Profile",
+        "showSidebar": true,
+        "character_id": "kowalski-vera",
+        "name": "Vera Kowalski",
+        "narratives": [
+            "amaya"
+        ],
+        "is_public": true,
+        "based_on": [
+            "Kristine Mannone"
+        ],
+        "markdown_file": "kowalski-vera.md",
+        "image_path": "amaya/images/characters/kowalski-vera.jpg"
+    },
+    "/raggiesoft-books/characters/lawson-victoria": {
+        "view": "pages/raggiesoft-books/character-profile",
+        "title": "Victoria Lawson - Character Profile",
+        "showSidebar": true,
+        "character_id": "lawson-victoria",
+        "name": "Victoria Lawson",
+        "narratives": [
+            "amaya"
+        ],
+        "is_public": true,
+        "based_on": [],
+        "markdown_file": "lawson-victoria.md",
+        "image_path": "amaya/images/characters/lawson-victoria.jpg"
+    },
+    "/raggiesoft-books/characters": {
+        "view": "pages/raggiesoft-books/character-profile",
+        "title": "Character Directory - RaggieSoft Books",
+        "showSidebar": true,
+        "is_directory": true
+    },
+    "/raggiesoft-books/characters/mahone-delores": {
+        "view": "pages/raggiesoft-books/character-profile",
+        "title": "Delores Mahone - Character Profile",
+        "showSidebar": true,
+        "character_id": "mahone-delores",
+        "name": "Delores Mahone",
+        "narratives": [
+            "unknown"
+        ],
+        "is_public": true,
+        "based_on": [
+            "Kristine Mannone"
+        ],
+        "markdown_file": "mahone-delores.md",
+        "image_path": "common/images/placeholder.jpg"
+    },
+    "/raggiesoft-books/characters/ragsdale-michael": {
+        "view": "pages/raggiesoft-books/character-profile",
+        "title": "Michael Ragsdale - Character Profile",
+        "showSidebar": true,
+        "character_id": "ragsdale-michael",
+        "name": "Michael Ragsdale",
+        "narratives": [
+            "rachel"
+        ],
+        "is_public": true,
+        "based_on": [],
+        "markdown_file": "ragsdale-michael.md",
+        "image_path": "rachel/images/characters/ragsdale-michael.jpg"
+    },
+    "/raggiesoft-books/characters/ragsdale-rachel": {
+        "view": "pages/raggiesoft-books/character-profile",
+        "title": "Rachel Ragsdale - Character Profile",
+        "showSidebar": true,
+        "character_id": "ragsdale-rachel",
+        "name": "Rachel Ragsdale",
+        "narratives": [
+            "rachel"
+        ],
+        "is_public": true,
+        "based_on": [],
+        "markdown_file": "ragsdale-rachel.md",
+        "image_path": "rachel/images/characters/ragsdale-rachel.jpg"
+    },
+    "/raggiesoft-books/characters/ragsdale-jessica": {
+        "view": "pages/raggiesoft-books/character-profile",
+        "title": "Jessica Ragsdale - Character Profile",
+        "showSidebar": true,
+        "character_id": "ragsdale-jessica",
+        "name": "Jessica Ragsdale",
+        "narratives": [
+            "rachel"
+        ],
+        "is_public": true,
+        "based_on": [],
+        "markdown_file": "ragsdale-jessica.md",
+        "image_path": "rachel/images/characters/ragsdale-jessica.jpg"
+    },
+    "/raggiesoft-books/characters/ashley": {
+        "view": "pages/raggiesoft-books/character-profile",
+        "title": "Ashley - Character Profile",
+        "showSidebar": true,
+        "character_id": "ashley",
+        "name": "Ashley",
+        "narratives": [
+            "rachel"
+        ],
+        "is_public": true,
+        "based_on": [],
+        "markdown_file": "ashley.md",
+        "image_path": "rachel/images/characters/ashley.jpg"
+    }
+}

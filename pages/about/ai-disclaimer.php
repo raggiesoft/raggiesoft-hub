@@ -37,44 +37,44 @@
                 </div>
 
                 <div class="col-md-4">
-                    <div class="card h-100 border-primary shadow-sm">
-                        <div class="card-header bg-primary text-white py-3">
+                    <wa-card class="h-100 shadow-sm w-100" style="--border-color: var(--wa-color-primary);">
+                        <div slot="header" class="bg-primary text-white p-3 mx-n4 mt-n4 mb-3 border-bottom">
                             <div class="d-flex align-items-center">
                                 <i class="fa-solid fa-sparkles fa-2x me-3" aria-hidden="true"></i>
                                 <div>
-                                    <h5 class="mb-0 fw-bold">The Co-Writer</h5>
-                                    <small class="opacity-75">Gemini (AI)</small>
+                                    <h5 class="mb-0 fw-bold text-white">The Co-Writer</h5>
+                                    <small class="text-white opacity-75">Google Antigravity (Powered by Gemini)</small>
                                 </div>
                             </div>
                         </div>
-                        <div class="card-body p-4 d-flex flex-column bg-body">
-                            <span class="badge bg-primary bg-opacity-10 text-primary border border-primary align-self-start mb-3">Lyrics & Prompting</span>
-                            <p class="card-text text-body-emphasis">
-                                The creative sounding board. Taking the raw human concepts and refining them into structured, rhythmic lyrics and technical prompt data.
+                        <div class="d-flex flex-column h-100">
+                            <wa-badge variant="primary" class="align-self-start mb-3">Code & Creative Strategy</wa-badge>
+                            <p class="text-body-emphasis">
+                                The full-stack pair-programmer and creative sounding board. Antigravity writes the platform's backend PHP/CSS architecture, while Gemini refines raw human concepts into structured lyrics and technical prompt data.
                             </p>
                             <ul class="list-unstyled small text-body-secondary flex-grow-1">
+                                <li class="mb-2"><i class="fa-solid fa-check text-primary me-2" aria-hidden="true"></i>Acts as an autonomous software engineer, writing the PHP and UI code for this very platform.</li>
                                 <li class="mb-2"><i class="fa-solid fa-check text-primary me-2" aria-hidden="true"></i>Polishes meter, rhyme, and lyrical flow.</li>
                                 <li class="mb-2"><i class="fa-solid fa-check text-primary me-2" aria-hidden="true"></i>Translates musical vibes into highly specific <i>Styles</i> prompts.</li>
-                                <li class="mb-2"><i class="fa-solid fa-check text-primary me-2" aria-hidden="true"></i>Navigates safety filters to ensure clean, compliant generation.</li>
                             </ul>
                         </div>
-                    </div>
+                    </wa-card>
                 </div>
 
                 <div class="col-md-4">
-                    <div class="card h-100 border-warning shadow-sm">
-                        <div class="card-header bg-warning text-dark py-3">
+                    <wa-card class="h-100 shadow-sm w-100" style="--border-color: var(--wa-color-warning);">
+                        <div slot="header" class="bg-warning text-dark p-3 mx-n4 mt-n4 mb-3 border-bottom">
                             <div class="d-flex align-items-center">
                                 <i class="fa-solid fa-music fa-2x me-3" aria-hidden="true"></i>
                                 <div>
-                                    <h5 class="mb-0 fw-bold">The Studio</h5>
-                                    <small class="opacity-75">Suno (AI)</small>
+                                    <h5 class="mb-0 fw-bold text-dark">The Studio</h5>
+                                    <small class="text-dark opacity-75">Suno (AI)</small>
                                 </div>
                             </div>
                         </div>
-                        <div class="card-body p-4 d-flex flex-column bg-body">
-                            <span class="badge bg-warning bg-opacity-10 text-warning border border-warning align-self-start mb-3">Audio Generation</span>
-                            <p class="card-text text-body-emphasis">
+                        <div class="d-flex flex-column h-100">
+                            <wa-badge variant="warning" class="align-self-start mb-3">Audio Generation</wa-badge>
+                            <p class="text-body-emphasis">
                                 The musicians in the booth. Suno takes the finalized lyrics and stylistic parameters and synthesizes the actual audio tracks.
                             </p>
                             <ul class="list-unstyled small text-body-secondary flex-grow-1">
@@ -83,14 +83,14 @@
                                 <li class="mb-2"><i class="fa-solid fa-check text-warning me-2" aria-hidden="true"></i>Operates under a commercial-tier license for full rights clearance.</li>
                             </ul>
                         </div>
-                    </div>
+                    </wa-card>
                 </div>
 
             </div>
 
             <!-- Prompt Engineering Section -->
-            <div class="card border-0 shadow-sm bg-body-tertiary">
-                <div class="card-body p-4 p-lg-5">
+            <wa-card class="w-100 shadow-sm mt-5 border-0" style="background-color: var(--bs-tertiary-bg);">
+                <div class="p-4 p-lg-5">
                     <div class="text-center mb-4">
                         <h4 class="fw-bold text-body-emphasis">The Prompt Engineering Philosophy</h4>
                         <p class="text-body-secondary">Generating good music and art isn't just pushing a button. It requires a rigorous, iterative workflow.</p>
@@ -112,7 +112,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </wa-card>
 
         </div>
     </div>
