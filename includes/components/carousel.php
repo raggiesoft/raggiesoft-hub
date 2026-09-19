@@ -168,27 +168,70 @@ if (!empty($carousel_albums)):
         const carousel = document.getElementById('cinemaCarousel');
         const prevBtns = document.querySelectorAll('.cinema-prev');
         const nextBtns = document.querySelectorAll('.cinema-next');
+        let autoplayInterval;
+        const autoplayDelay = 6000; // 6 seconds
         
+        // WCAG: Check for reduced motion
+        const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
         if(carousel) {
             const scrollNext = () => {
-                // If at the end, scroll to 0
-                if (carousel.scrollLeft + carousel.clientWidth >= carousel.scrollWidth - 10) {
-                    carousel.scrollTo({ left: 0, behavior: 'smooth' });
+                const scrollBehavior = prefersReducedMotion ? 'auto' : 'smooth';
+                // Using a slightly wider threshold to account for rounding errors in scrollWidth
+                if (carousel.scrollLeft + carousel.clientWidth >= carousel.scrollWidth - 50) {
+                    carousel.scrollTo({ left: 0, behavior: scrollBehavior });
                 } else {
-                    carousel.scrollBy({ left: carousel.clientWidth, behavior: 'smooth' });
+                    carousel.scrollBy({ left: carousel.clientWidth, behavior: scrollBehavior });
                 }
             };
             const scrollPrev = () => {
-                // If at the beginning, scroll to end
-                if (carousel.scrollLeft <= 10) {
-                    carousel.scrollTo({ left: carousel.scrollWidth, behavior: 'smooth' });
+                const scrollBehavior = prefersReducedMotion ? 'auto' : 'smooth';
+                if (carousel.scrollLeft <= 50) {
+                    carousel.scrollTo({ left: carousel.scrollWidth, behavior: scrollBehavior });
                 } else {
-                    carousel.scrollBy({ left: -carousel.clientWidth, behavior: 'smooth' });
+                    carousel.scrollBy({ left: -carousel.clientWidth, behavior: scrollBehavior });
                 }
             };
             
-            prevBtns.forEach(btn => btn.addEventListener('click', scrollPrev));
-            nextBtns.forEach(btn => btn.addEventListener('click', scrollNext));
+            // Wire up buttons
+            prevBtns.forEach(btn => btn.addEventListener('click', (e) => {
+                e.preventDefault();
+                scrollPrev();
+                resetAutoplay(); // Reset timer if user manually navigates
+            }));
+            
+            nextBtns.forEach(btn => btn.addEventListener('click', (e) => {
+                e.preventDefault();
+                scrollNext();
+                resetAutoplay();
+            }));
+
+            // Autoplay Logic (Only if user has NOT requested reduced motion)
+            const startAutoplay = () => {
+                if (!prefersReducedMotion) {
+                    autoplayInterval = setInterval(scrollNext, autoplayDelay);
+                }
+            };
+
+            const stopAutoplay = () => {
+                if (autoplayInterval) {
+                    clearInterval(autoplayInterval);
+                }
+            };
+
+            const resetAutoplay = () => {
+                stopAutoplay();
+                startAutoplay();
+            };
+
+            // WCAG: Pause autoplay when user hovers or interacts
+            carousel.parentElement.addEventListener('mouseenter', stopAutoplay);
+            carousel.parentElement.addEventListener('mouseleave', startAutoplay);
+            carousel.parentElement.addEventListener('touchstart', stopAutoplay, {passive: true});
+            carousel.parentElement.addEventListener('touchend', startAutoplay, {passive: true});
+
+            // Start initially
+            startAutoplay();
         }
     });
 </script>
