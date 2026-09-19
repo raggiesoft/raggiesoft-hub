@@ -181,7 +181,7 @@ if (!empty($carousel_albums)):
     });
 </script>
 
-<?php else: ?><?php else: ?>
+<?php else: ?>
     <div class="alert alert-warning text-center">
         <i class="fa-duotone fa-triangle-exclamation me-2"></i> 
         Unable to load discography data.
