@@ -54,31 +54,18 @@
     </div>
 </div>
 
-<div class="modal fade" 
-     id="lyricsModal" 
-     tabindex="-1" 
-     aria-hidden="true" 
-     style="z-index: 1100;" 
-     data-turbo-permanent="true">
-     
-  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
-    <div class="modal-content shadow-lg">
-      <div class="modal-header">
-        <h5 class="modal-title">
-            <i class="fa-duotone fa-music me-2 text-primary" aria-hidden="true"></i>
-            <span id="lyricsModalTitle" class="text-glow-primary">Track Title</span>
-        </h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <div id="lyricsContent" class="font-monospace small text-body opacity-75"></div>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close Archive</button>
-      </div>
+<wa-dialog id="lyricsModal" label="Track Title" style="--width: 75vw;" data-turbo-permanent="true">
+    <div slot="label">
+        <i class="fa-duotone fa-music me-2" style="color: var(--wa-color-primary);"></i>
+        <span id="lyricsModalTitle" class="text-glow-primary">Track Title</span>
     </div>
-  </div>
-</div>
+    
+    <div id="lyricsContent" class="font-monospace small text-body" style="opacity: 0.75;"></div>
+    
+    <wa-button slot="footer" variant="primary" onclick="document.getElementById('lyricsModal').hide()">
+        Close Archive
+    </wa-button>
+</wa-dialog>
 
 <script>
     // Self-Inject Logic (Moves modal to Body to fix Z-Order stacking context issues)
