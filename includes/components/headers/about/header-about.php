@@ -19,7 +19,7 @@ $isProfiles   = (!$isGovernance && $uri !== '/about'); // If not governance and 
 
   
   <wa-dropdown placement="bottom-start">
-    <wa-button class="nav-link  <?php echo $isGovernance ? 'active' : ''; ? slot="trigger" appearance="plain">" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    <wa-button class="nav-link  <?php echo $isGovernance ? 'active' : ''; ?>" slot="trigger" appearance="plain">" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
         <i class="fa-duotone fa-scale-balanced me-2"></i>Governance
     </wa-button>
     <wa-menu>
@@ -33,7 +33,7 @@ $isProfiles   = (!$isGovernance && $uri !== '/about'); // If not governance and 
 
   
   <wa-dropdown placement="bottom-start">
-    <wa-button class="nav-link  <?php echo $isProfiles ? 'active' : ''; ? slot="trigger" appearance="plain">" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    <wa-button class="nav-link  <?php echo $isProfiles ? 'active' : ''; ?>" slot="trigger" appearance="plain">" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
         <i class="fa-duotone fa-sitemap me-2"></i>Network Profiles
     </wa-button>
     <wa-menu>

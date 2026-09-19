@@ -22,7 +22,7 @@ $isEvidence = str_contains($uri, '/the-lost-title-track');
 
     
   <wa-dropdown placement="bottom-start">
-    <wa-button class="nav-link  <?php echo $isEvidence ? 'active fw-bold text-danger' : ''; ? slot="trigger" appearance="plain">" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    <wa-button class="nav-link  <?php echo $isEvidence ? 'active fw-bold text-danger' : ''; ?>" slot="trigger" appearance="plain">" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             <i class="fa-duotone fa-folder-magnifying-glass me-2"></i>Evidence
         </wa-button>
     <wa-menu>

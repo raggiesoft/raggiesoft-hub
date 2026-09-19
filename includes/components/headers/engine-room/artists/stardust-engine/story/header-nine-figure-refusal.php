@@ -50,7 +50,7 @@ $isEpilogue = str_contains($uri, '/frost-interview');
 
     
   <wa-dropdown placement="bottom-start">
-    <wa-button class="nav-link  <?php echo $isEvidence ? 'active fw-bold' : ''; ? slot="trigger" appearance="plain">" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    <wa-button class="nav-link  <?php echo $isEvidence ? 'active fw-bold' : ''; ?>" slot="trigger" appearance="plain">" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             <i class="fa-duotone fa-file-magnifying-glass me-2"></i>The Case File
         </wa-button>
     <wa-menu>
@@ -97,7 +97,7 @@ $isEpilogue = str_contains($uri, '/frost-interview');
 
     
   <wa-dropdown placement="bottom-start">
-        <wa-button class="nav-link  <?php echo $isAssets ? 'active fw-bold' : ''; ? slot="trigger" appearance="plain">" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        <wa-button class="nav-link  <?php echo $isAssets ? 'active fw-bold' : ''; ?>" slot="trigger" appearance="plain">" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             <i class="fa-duotone fa-building me-2"></i>Legacy
         </wa-button>
         
@@ -116,7 +116,7 @@ $isEpilogue = str_contains($uri, '/frost-interview');
 
      
   <wa-dropdown placement="bottom-start">
-    <wa-button class="nav-link  <?php echo $isEpilogue ? 'active fw-bold' : ''; ? slot="trigger" appearance="plain">" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    <wa-button class="nav-link  <?php echo $isEpilogue ? 'active fw-bold' : ''; ?>" slot="trigger" appearance="plain">" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             <i class="fa-duotone fa-building me-2"></i>Epilogue
         </wa-button>
     <wa-menu>
