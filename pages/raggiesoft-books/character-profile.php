@@ -1,6 +1,6 @@
 <?php
-require_once ROOT_PATH . '/includes/components/3rdparty/parsedown/parsedown.php';
-$Parsedown = new Parsedown();
+require_once ROOT_PATH . '/includes/classes/stardust-parsedown.php';
+$Parsedown = new StardustParsedown();
 
 $charData = isset($char) ? $char : (defined('ACTIVE_CHARACTER_JSON') ? json_decode(ACTIVE_CHARACTER_JSON, true) : null);
 $mdFile = defined('ACTIVE_CHARACTER_MD') ? ACTIVE_CHARACTER_MD : null;

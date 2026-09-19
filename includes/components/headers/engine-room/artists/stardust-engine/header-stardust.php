@@ -35,9 +35,18 @@
     <wa-button  href="#"    slot="trigger" appearance="plain">
         <i class="fa-duotone fa-users me-2"></i>The Band
     </wa-button>
-    <wa-menu>
+        <wa-menu>
       <wa-dropdown-item href="/engine-room/artists/stardust-engine/band">Overview</wa-dropdown-item>
         <wa-dropdown-item href="/engine-room/artists/stardust-engine/band/history">History & Lore</wa-dropdown-item>
+        
+        <wa-divider></wa-divider>
+        
+        <div class="px-3 py-2 small text-uppercase fw-bold text-uppercase small">The Kin</div>
+        <wa-dropdown-item href="/character/stardust-engine/ryan-oconnell"><i class="fa-duotone fa-microphone me-2"></i>Ryan O'Connell</wa-dropdown-item>
+        <wa-dropdown-item href="/character/stardust-engine/cassidy-oconnell"><i class="fa-duotone fa-guitar me-2"></i>Cassidy O'Connell</wa-dropdown-item>
+        <wa-dropdown-item href="/character/stardust-engine/holly-oconnell"><i class="fa-duotone fa-scale-balanced me-2"></i>Holly O'Connell</wa-dropdown-item>
+        <wa-dropdown-item href="/character/stardust-engine/evan-wright"><i class="fa-duotone fa-drum me-2"></i>Evan Wright</wa-dropdown-item>
+        <wa-dropdown-item href="/character/stardust-engine/tyler-wright"><i class="fa-duotone fa-guitar-electric me-2"></i>Tyler Wright</wa-dropdown-item>
     </wa-menu>
   </wa-dropdown>
 

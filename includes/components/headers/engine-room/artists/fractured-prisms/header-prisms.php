@@ -27,20 +27,14 @@
     <wa-button  href="#"    slot="trigger" appearance="plain">
         <i class="fa-duotone fa-ghost me-2"></i>The Residents
     </wa-button>
-    <wa-menu>
+        <wa-menu>
       <wa-dropdown-item href="/engine-room/artists/fractured-prisms/band">Overview</wa-dropdown-item>
-        <wa-dropdown-item href="/engine-room/artists/fractured-prisms/story">History & Lore</wa-dropdown-item>
         
         <wa-divider></wa-divider>
         
-        <div class="px-3 py-2 small text-uppercase  fw-bold text-uppercase small ">The Surviving Architects</div>
-        <wa-dropdown-item href="/engine-room/artists/fractured-prisms/band/claire-manning"><i class="fa-duotone fa-microphone me-2 "></i>Claire Manning</wa-dropdown-item>
-        <wa-dropdown-item href="/engine-room/artists/fractured-prisms/band/rhys-manning"><i class="fa-duotone fa-keyboard me-2 "></i>Rhys Manning</wa-dropdown-item>
-        
-        <wa-divider></wa-divider>
-        
-        <div class="px-3 py-2 small text-uppercase  fw-bold text-uppercase small ">The Echoes</div>
-        <wa-dropdown-item href="/engine-room/artists/fractured-prisms/band/the-missing-four"><i class="fa-duotone fa-users-slash me-2 "></i>The Missing Four</wa-dropdown-item>
+        <div class="px-3 py-2 small text-uppercase fw-bold text-uppercase small">The Mannings</div>
+        <wa-dropdown-item href="/character/fractured-prisms/claire-manning"><i class="fa-duotone fa-microphone me-2"></i>Claire Manning</wa-dropdown-item>
+        <wa-dropdown-item href="/character/fractured-prisms/rhys-manning"><i class="fa-duotone fa-guitar me-2"></i>Rhys Manning</wa-dropdown-item>
     </wa-menu>
   </wa-dropdown>
 

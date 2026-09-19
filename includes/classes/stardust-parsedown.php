@@ -3,6 +3,8 @@
 require_once __DIR__ . '/../components/3rdparty/parsedown/parsedown.php';
 
 class StardustParsedown extends Parsedown {
+
+
     
     protected function blockTableComplete(array $Block) {
         $Block = parent::blockTableComplete($Block);
@@ -121,5 +123,88 @@ class StardustParsedown extends Parsedown {
 
         return $Block;
     }
+
+    
+    // NEW EXTENSION: GitHub-style Alerts (Web Awesome mapped)
+    protected function blockQuoteComplete($Block) {
+        if (!isset($Block['element']['handler']['argument'][0])) return $Block;
+        
+        $firstLine = $Block['element']['handler']['argument'][0];
+        
+        $alerts = [
+            '[!NOTE]' => ['variant' => 'neutral', 'icon' => 'fa-circle-info'],
+            '[!TIP]' => ['variant' => 'success', 'icon' => 'fa-lightbulb'],
+            '[!WARNING]' => ['variant' => 'warning', 'icon' => 'fa-triangle-exclamation'],
+            '[!CAUTION]' => ['variant' => 'danger', 'icon' => 'fa-radiation'],
+            '[!IMPORTANT]' => ['variant' => 'primary', 'icon' => 'fa-star'],
+        ];
+
+        foreach ($alerts as $trigger => $config) {
+            if (strpos($firstLine, $trigger) === 0) {
+                // Remove the trigger
+                $Block['element']['handler']['argument'][0] = trim(str_replace($trigger, '', $firstLine));
+                
+                // Add icon raw HTML
+                $Block['element']['handler']['argument'][0] = '<i slot="icon" class="fa-duotone ' . $config['icon'] . '"></i> ' . $Block['element']['handler']['argument'][0];
+                
+                // Convert to Web Awesome Alert
+                $Block['element']['name'] = 'wa-alert';
+                $Block['element']['attributes'] = [
+                    'variant' => $config['variant'],
+                    'open' => 'true',
+                    'class' => 'my-4 shadow-sm'
+                ];
+                
+                break;
+            }
+        }
+        
+        return $Block;
+    }
+
+    
+    // Pre-process shortcodes before Parsedown gets confused by raw HTML blocks
+    public function text($text) {
+        // Pre-process [credential ...] shortcodes anywhere in the text
+        $text = preg_replace_callback('/\[credential\s+(.+?)\]/', function($matches) {
+            $attributesString = $matches[1];
+            
+            $attrs = [];
+            preg_match_all('/([a-zA-Z]+)="([^"]*)"/', $attributesString, $attrMatches, PREG_SET_ORDER);
+            foreach ($attrMatches as $match) {
+                $attrs[$match[1]] = $match[2];
+            }
+            
+            $title = $attrs['title'] ?? 'Credential';
+            $desc = $attrs['desc'] ?? '';
+            $lore = $attrs['lore'] ?? '';
+            $color = $attrs['color'] ?? 'primary';
+            $icon = $attrs['icon'] ?? 'fa-id-card';
+            
+            $id = 'cred-' . uniqid();
+            
+            return '<wa-button variant="' . $color . '" size="small" class="me-2 mb-2" outline onclick="document.getElementById(\'' . $id . '\').show()">
+<i class="fa-duotone ' . $icon . ' me-2"></i> ' . htmlspecialchars($title) . '
+</wa-button>
+<wa-dialog id="' . $id . '" label="' . htmlspecialchars($title) . '">
+<i slot="label-icon" class="fa-duotone ' . $icon . '"></i>
+<div class="mb-4">
+<h6 class="text-uppercase small opacity-75 mb-2">Technical Definition</h6>
+<p class="mb-0 text-body-secondary">' . htmlspecialchars($desc) . '</p>
+</div>
+<wa-alert variant="' . $color . '" open class="shadow-sm">
+<i slot="icon" class="fa-duotone fa-shield-check"></i>
+<strong class="d-block mb-1">Application to the Universe</strong>
+<div class="small">' . htmlspecialchars($lore) . '</div>
+</wa-alert>
+<wa-button slot="footer" variant="neutral" onclick="document.getElementById(\'' . $id . '\').hide()">Close</wa-button>
+</wa-dialog>';
+        }, $text);
+        
+        return parent::text($text);
+    }
 }
 ?>
+
+
+
