@@ -30,7 +30,7 @@ $css_font_parts = array_map(function($font) {
 $brand_font_css = implode(', ', $css_font_parts);
 
 // 3. Path Definitions
-$path_bootstrap = $cdn_root . "/common/css/bootstrap.css";
+$path_bootstrap = $cdn_root . "/common/css/raggiesoft-grid.css";
 
 if ($theme === 'corporate' || $theme === $site || $theme === 'light') {
     $path_theme_base = $cdn_root . "/{$site}/css/bootstrap";
@@ -60,7 +60,7 @@ if (isset($customPageAssets) && is_array($customPageAssets)) {
 }
 ?>
 <!doctype html>
-<html lang="en" class="h-100" <?php echo $force_dark_mode ? 'data-bs-theme="dark"' : ''; ?>>
+<html lang="en" class="h-100" data-fa-kit-code="ec060982d4" <?php echo $force_dark_mode ? 'data-bs-theme="dark"' : ''; ?>>
   <head>
     
     <?php 

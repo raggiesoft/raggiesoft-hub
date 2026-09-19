@@ -66,57 +66,57 @@
 <div class="card bg-hud-base border-0 shadow-sm mb-4">
     <div class="card-body p-3 p-xl-4">
         <h5 class="pb-2 mb-3 border-bottom border-secondary-subtle text-uppercase h6 fw-bold text-secondary">
-            <i class="fa-solid fa-folder-tree me-2" aria-hidden="true"></i>IP Portfolio
+            <i slot="start" class="fa-solid fa-folder-tree"></i> IP Portfolio
         </h5>
-        <ul class="nav flex-column small">
-            <li class="nav-item">
-                <a class="nav-link aero-nav-link nav-primary link-body-emphasis" href="/raggiesoft-media/licensing">
-                    <i class="fa-duotone fa-house fa-fw me-2 text-secondary" aria-hidden="true"></i>Licensing Overview
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link aero-nav-link nav-primary link-body-emphasis" href="/raggiesoft-media/licensing/commercial">
-                    <i class="fa-duotone fa-briefcase fa-fw me-2 text-primary" aria-hidden="true"></i>Commercial Sync
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link aero-nav-link nav-warning link-body-emphasis" href="/raggiesoft-media/licensing#cc-by-sa">
-                    <i class="fa-brands fa-creative-commons fa-fw me-2 text-warning" aria-hidden="true"></i>Creative Commons
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link aero-nav-link nav-info link-body-emphasis" href="/raggiesoft-media/projects/elara">
-                    <i class="fa-brands fa-github fa-fw me-2 text-info" aria-hidden="true"></i>MIT Architecture
-                </a>
-            </li>
-        </ul>
+        <div class="d-flex flex-column gap-1">
+            
+                <wa-button appearance="plain" href="/raggiesoft-media/licensing" class="text-body w-100 text-start justify-content-start" style="text-align: left;">
+                    <i slot="start" class="fa-duotone fa-house fa-fw me-2 text-secondary" aria-hidden="true"></i> Licensing Overview
+                </wa-button>
+            
+            
+                <wa-button appearance="plain" href="/raggiesoft-media/licensing/commercial" class="text-body w-100 text-start justify-content-start" style="text-align: left;">
+                    <i slot="start" class="fa-duotone fa-briefcase fa-fw"></i> Commercial Sync
+                </wa-button>
+            
+            
+                <wa-button appearance="plain" href="/raggiesoft-media/licensing#cc-by-sa" class="text-body w-100 text-start justify-content-start" style="text-align: left;">
+                    <i slot="start" class="fa-brands fa-creative-commons fa-fw"></i> Creative Commons
+                </wa-button>
+            
+            
+                <wa-button appearance="plain" href="/raggiesoft-media/projects/elara" class="text-body w-100 text-start justify-content-start" style="text-align: left;">
+                    <i slot="start" class="fa-brands fa-github fa-fw"></i> MIT Architecture
+                </wa-button>
+            
+        </div>
     </div>
 </div>
 
 <div class="card border-0 bg-transparent">
     <div class="card-body p-0 p-xl-2">
         <h6 class="text-uppercase fw-bold text-body-secondary mb-3 small border-bottom border-secondary-subtle pb-2">
-            <i class="fa-solid fa-envelope me-2" aria-hidden="true"></i>Direct Desks
+            <i slot="start" class="fa-solid fa-envelope"></i> Direct Desks
         </h6>
-        <ul class="nav flex-column small">
-            <li class="nav-item mb-2">
+        <div class="d-flex flex-column gap-1">
+            
                 <a class="aero-mail-link link-secondary font-monospace text-break" href="mailto:sync@raggiesoftmedia.com">
                     <span class="d-block text-primary small fw-bold mb-1">SYNC DESK</span>
                     sync@raggiesoftmedia.com
-                </a>
-            </li>
-            <li class="nav-item mb-2">
+                </wa-button>
+            
+            
                 <a class="aero-mail-link link-secondary font-monospace text-break" href="mailto:licensing@raggiesoftmedia.com">
                     <span class="d-block text-warning small fw-bold mb-1">RIGHTS DESK</span>
                     licensing@raggiesoftmedia.com
-                </a>
-            </li>
-            <li class="nav-item">
+                </wa-button>
+            
+            
                 <a class="aero-mail-link link-secondary font-monospace text-break" href="mailto:ops@raggiesoftmedia.com">
                     <span class="d-block text-info small fw-bold mb-1">INFRASTRUCTURE</span>
                     ops@raggiesoftmedia.com
-                </a>
-            </li>
-        </ul>
+                </wa-button>
+            
+        </div>
     </div>
 </div>

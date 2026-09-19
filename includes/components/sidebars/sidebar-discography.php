@@ -58,8 +58,8 @@ $current_req = $_SERVER['REQUEST_URI'];
                             aria-controls="<?php echo $collapseId; ?>">
                         <?php 
                             // Flavor Icons based on Era Key
-                            if ($eraKey === 'apex') echo '<i class="fa-duotone fa-building me-2"></i>';
-                            elseif ($eraKey === 'freedom') echo '<i class="fa-duotone fa-warehouse me-2"></i>';
+                            if ($eraKey === 'apex') echo '<i slot="start" class="fa-duotone fa-building"></i> ';
+                            elseif ($eraKey === 'freedom') echo '<i slot="start" class="fa-duotone fa-warehouse me-2"></i> ';
                             elseif ($eraKey === 'reignition') echo '<i class="fa-duotone fa-fire-burner me-2"></i>';
                             else echo '<i class="fa-duotone fa-compact-disc me-2"></i>';
                         ?>
@@ -73,7 +73,7 @@ $current_req = $_SERVER['REQUEST_URI'];
                      data-bs-parent="#discographyAccordion">
                     
                     <div class="accordion-body p-0 ps-3">
-                        <ul class="nav flex-column border-start border-secondary ms-2 ps-2">
+                        <div class="d-flex flex-column gap-1">
                             
                             <?php foreach ($albums as $album): 
                                 $isActive = ($current_req === $album['url']);
@@ -82,16 +82,16 @@ $current_req = $_SERVER['REQUEST_URI'];
                                 $url = $album['url'];
                                 $extra = $album['extra'] ?? ''; 
                             ?>
-                                <li class="nav-item">
+                                
                                     <a class="nav-link link-secondary py-1 <?php echo $isActive ? 'active fw-bold text-light' : ''; ?>" 
                                        href="<?php echo $url; ?>">
                                         <small><?php echo $title; ?> (<?php echo $year; ?>)</small>
                                         <?php echo $extra; ?>
-                                    </a>
-                                </li>
+                                    </wa-button>
+                                
                             <?php endforeach; ?>
 
-                        </ul>
+                        </div>
                     </div>
                 </div>
             </div>

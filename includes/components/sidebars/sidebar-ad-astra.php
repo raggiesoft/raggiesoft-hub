@@ -1,41 +1,41 @@
 <h5 class="pt-3 pb-2 mb-3 border-bottom text-info">
-    <i class="fa-duotone fa-rocket-launch me-2"></i>Mission Control
+    <i slot="start" class="fa-duotone fa-rocket-launch"></i> Mission Control
 </h5>
-<ul class="nav flex-column">
-  <li class="nav-item">
-    <a class="nav-link link-secondary" href="/engine-room/artists/stardust-engine/lore/ad-astra">
-      <i class="fa-duotone fa-radar me-2"></i>Mission Overview
-    </a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link link-secondary" href="/engine-room/artists/stardust-engine/lore/ad-astra/voyage">
-      <i class="fa-duotone fa-book-sparkles me-2"></i>The Maiden Voyage
-    </a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link link-secondary" href="/engine-room/artists/stardust-engine/discography/1995-the-warehouse-tapes/ad-astra">
-      <i class="fa-duotone fa-play-circle me-2"></i>The Transmission (Audio)
-    </a>
-  </li>
-</ul>
+<div class="d-flex flex-column gap-1">
+  
+    <wa-button appearance="plain" href="/engine-room/artists/stardust-engine/lore/ad-astra" class="text-body w-100 text-start justify-content-start" style="text-align: left;">
+      <i slot="start" class="fa-duotone fa-radar me-2"></i> Mission Overview
+    </wa-button>
+  
+  
+    <wa-button appearance="plain" href="/engine-room/artists/stardust-engine/lore/ad-astra/voyage" class="text-body w-100 text-start justify-content-start" style="text-align: left;">
+      <i slot="start" class="fa-duotone fa-book-sparkles"></i> The Maiden Voyage
+    </wa-button>
+  
+  
+    <wa-button appearance="plain" href="/engine-room/artists/stardust-engine/discography/1995-the-warehouse-tapes/ad-astra" class="text-body w-100 text-start justify-content-start" style="text-align: left;">
+      <i slot="start" class="fa-duotone fa-play-circle"></i> The Transmission (Audio)
+    </wa-button>
+  
+</div>
 
 <h6 class="pt-3 pb-2 mb-3 border-bottom mt-4 text-secondary">
-    <i class="fa-duotone fa-database me-2"></i>Related Archives
+    <i slot="start" class="fa-duotone fa-database"></i> Related Archives
 </h6>
-<ul class="nav flex-column mb-2">
-  <li class="nav-item">
-    <a class="nav-link link-secondary" href="/engine-room/artists/stardust-engine/discography/1995-the-warehouse-tapes">
-      <i class="fa-duotone fa-compact-disc me-2"></i>The Warehouse Tapes
-    </a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link link-secondary" href="/engine-room/artists/stardust-engine/lore/nine-figure-refusal">
-      <i class="fa-duotone fa-file-invoice-dollar me-2"></i>The Refusal
-    </a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link link-secondary" href="/engine-room/artists/stardust-engine/lore">
-      <i class="fa-duotone fa-chevron-left me-2"></i>Return to Lore
-    </a>
-  </li>
-</ul>
+<div class="d-flex flex-column gap-1">
+  
+    <wa-button appearance="plain" href="/engine-room/artists/stardust-engine/discography/1995-the-warehouse-tapes" class="text-body w-100 text-start justify-content-start" style="text-align: left;">
+      <i slot="start" class="fa-duotone fa-compact-disc me-2"></i> The Warehouse Tapes
+    </wa-button>
+  
+  
+    <wa-button appearance="plain" href="/engine-room/artists/stardust-engine/lore/nine-figure-refusal" class="text-body w-100 text-start justify-content-start" style="text-align: left;">
+      <i slot="start" class="fa-duotone fa-file-invoice-dollar"></i> The Refusal
+    </wa-button>
+  
+  
+    <wa-button appearance="plain" href="/engine-room/artists/stardust-engine/lore" class="text-body w-100 text-start justify-content-start" style="text-align: left;">
+      <i slot="start" class="fa-duotone fa-chevron-left"></i> Return to Lore
+    </wa-button>
+  
+</div>

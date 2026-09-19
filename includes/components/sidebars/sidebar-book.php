@@ -65,11 +65,11 @@ extract($navData);
                                                                            class="text-decoration-none d-block py-1 px-2 rounded-1 <?php echo $isSceneActive ? 'bg-primary text-white' : 'text-body-secondary hover-bg-light'; ?>"
                                                                            style="font-size: 0.85rem;">
                                                                             <?php echo $scene['title']; ?>
-                                                                        </a>
-                                                                    </li>
+                                                                        </wa-button>
+                                                                    
                                                                 <?php endforeach; ?>
-                                                            </ul>
-                                                        </li>
+                                                            </div>
+                                                        
 
                                                     <?php else: ?>
                                                         <?php 
@@ -82,14 +82,14 @@ extract($navData);
                                                                class="text-decoration-none d-block py-1 px-2 rounded-1 <?php echo $isSceneActive ? 'bg-primary text-white' : 'text-body-secondary hover-bg-light'; ?>"
                                                                style="font-size: 0.9rem;">
                                                                 <?php echo $part['title']; ?>
-                                                            </a>
-                                                        </li>
+                                                            </wa-button>
+                                                        
                                                     <?php endif; ?>
 
                                                 <?php endforeach; ?>
                                             <?php endif; ?>
                                             
-                                        </ul>
+                                        </div>
                                     </div>
                                 </div>
                             </div>

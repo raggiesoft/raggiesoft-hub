@@ -1,6 +1,7 @@
 <?php
 // includes/components/headers/raggiesoft-books/header-books.php
 // Global navigation for the Ocean View Archives imprint.
+// Updated: Web Awesome Components
 
 $request_uri = $_SERVER['REQUEST_URI'] ?? '/raggiesoft-books';
 $isHub = ($request_uri === '/raggiesoft-books');
@@ -9,36 +10,28 @@ $isAethel = (str_starts_with($request_uri, '/raggiesoft-books/aethel-saga'));
 $isBooks = (str_starts_with($request_uri, '/raggiesoft-books/books'));
 ?>
 
-<ul class="navbar-nav ms-auto mb-2 mb-md-0 align-items-center">
+<div class="d-flex flex-wrap align-items-center gap-2 ms-auto">
   
-  <li class="nav-item me-2">
-    <a class="nav-link <?php echo $isHub ? 'active fw-bold' : ''; ?>" href="/raggiesoft-books" style="<?php echo $isHub ? 'color: #E3B27C !important;' : ''; ?>">
-        <i class="fa-duotone fa-landmark me-2" aria-hidden="true"></i>The Archive
-    </a>
-  </li>
+  <wa-button appearance="plain" href="/raggiesoft-books" style="<?php echo $isHub ? 'color: #E3B27C !important; font-weight: bold;' : ''; ?>" class="<?php echo $isHub ? '' : 'text-body-secondary'; ?>">
+    <i slot="start" class="fa-duotone fa-landmark"></i> The Archive
+  </wa-button>
 
-  <li class="nav-item me-2">
-    <a class="nav-link <?php echo $isBooks ? 'active fw-bold text-info' : ''; ?>" href="/raggiesoft-books/books">
-        <i class="fa-duotone fa-books me-2" aria-hidden="true"></i>Contemporary Library
-    </a>
-  </li>
+  <wa-button appearance="plain" href="/raggiesoft-books/books" class="<?php echo $isBooks ? 'text-info fw-bold' : 'text-body-secondary'; ?>">
+    <i slot="start" class="fa-duotone fa-books"></i> Contemporary Library
+  </wa-button>
 
-  <li class="nav-item me-2">
-    <a class="nav-link <?php echo $isKnox ? 'active fw-bold text-success' : ''; ?>" href="/raggiesoft-books/knox">
-        <i class="fa-duotone fa-planet-ringed me-2" aria-hidden="true"></i>Project: KNOX
-    </a>
-  </li>
+  <wa-button appearance="plain" href="/raggiesoft-books/knox" class="<?php echo $isKnox ? 'text-success fw-bold' : 'text-body-secondary'; ?>">
+    <i slot="start" class="fa-duotone fa-planet-ringed"></i> Project: KNOX
+  </wa-button>
 
-  <li class="nav-item me-3">
-    <a class="nav-link <?php echo $isAethel ? 'active fw-bold text-primary' : ''; ?>" href="/raggiesoft-books/aethel-saga">
-        <i class="fa-duotone fa-sword me-2" aria-hidden="true"></i>Aethel Saga
-    </a>
-  </li>
+  <wa-button appearance="plain" href="/raggiesoft-books/aethel-saga" class="<?php echo $isAethel ? 'text-primary fw-bold' : 'text-body-secondary'; ?>">
+    <i slot="start" class="fa-duotone fa-sword"></i> Aethel Saga
+  </wa-button>
 
-  <li class="nav-item border-start border-secondary-subtle ms-3 ps-3">
-      <a class="nav-link text-body-secondary hover-text-primary" href="/raggiesoft-media">
-        <i class="fa-duotone fa-arrow-right-from-bracket me-2" aria-hidden="true"></i><span class="small">RaggieSoft Media</span>
-      </a>
-  </li>
+  <div class="ms-2 ps-2 border-start border-secondary border-opacity-50">
+      <wa-button appearance="plain" variant="neutral" href="/raggiesoft-media" class="text-body-secondary">
+        <i slot="start" class="fa-duotone fa-arrow-right-from-bracket"></i> RaggieSoft Media
+      </wa-button>
+  </div>
 
-</ul>
+</div>

@@ -48,7 +48,7 @@ $storyLinks = [
         </span>
     </div>
 
-    <ul class="nav flex-column border-start border-secondary ms-3 ps-2">
+    <div class="d-flex flex-column gap-1">
         <?php foreach ($storyLinks as $key => $link): 
             // 1. Exact Match (Account for optional trailing slash)
             $isExactMatch = ($current_req === $link['url'] || $current_req === $link['url'] . '/');
@@ -61,15 +61,14 @@ $storyLinks = [
             
             $isActive = ($isExactMatch || $isSubPage);
         ?>
-            <li class="nav-item">
+            
                 <a class="nav-link py-2 <?php echo $isActive ? 'active fw-bold text-body-emphasis' : 'link-secondary'; ?>" 
                    href="<?php echo $link['url']; ?>">
-                    <i class="<?php echo $link['icon']; ?> me-2" style="width: 20px; text-align: center;"></i>
-                    <?php echo $link['title']; ?>
-                </a>
-            </li>
+                    <i slot="start" class="<?php echo $link['icon']; ?>"></i> <?php echo $link['title']; ?>
+                </wa-button>
+            
         <?php endforeach; ?>
-    </ul>
+    </div>
 
     <div class="mt-4 px-3 text-muted small fst-italic opacity-75">
         <hr class="border-secondary">

@@ -10,8 +10,8 @@ $isStaffActive = strpos($request_uri, '/staff/') !== false;
 <div class="card border-0 shadow-sm mb-4">
     <div class="card-header bg-dark text-white fw-bold text-uppercase" style="letter-spacing: 1px;">
         <a href="/engine-room/artists/crimson-node/characters/northwood" class="text-white text-decoration-none d-block">
-            <i class="fa-solid fa-arrow-left me-2"></i> Northwood High
-        </a>
+            <i slot="start" class="fa-solid fa-arrow-left"></i> Northwood High
+        </wa-button>
     </div>
 
     <div class="accordion accordion-flush" id="northwoodAccordion">
@@ -27,7 +27,7 @@ $isStaffActive = strpos($request_uri, '/staff/') !== false;
                 <div class="list-group list-group-flush">
                     <a href="/engine-room/artists/crimson-node/characters/northwood/students/courtney-evans" class="list-group-item list-group-item-action <?= ($request_uri == '/engine-room/artists/crimson-node/characters/northwood/students/courtney-evans') ? 'active' : '' ?>">
                         Courtney Evans
-                    </a>
+                    </wa-button>
                 </div>
             </div>
         </div>
@@ -43,13 +43,13 @@ $isStaffActive = strpos($request_uri, '/staff/') !== false;
                 <div class="list-group list-group-flush">
                     <a href="/engine-room/artists/crimson-node/characters/northwood/staff/arthur-vance" class="list-group-item list-group-item-action <?= ($request_uri == '/engine-room/artists/crimson-node/characters/northwood/staff/arthur-vance') ? 'active' : '' ?>">
                         Arthur Vance
-                    </a>
+                    </wa-button>
                     <a href="/engine-room/artists/crimson-node/characters/northwood/staff/mrs-demarco" class="list-group-item list-group-item-action <?= ($request_uri == '/engine-room/artists/crimson-node/characters/northwood/staff/mrs-demarco') ? 'active' : '' ?>">
                         Mrs. DeMarco
-                    </a>
+                    </wa-button>
                     <a href="/engine-room/artists/crimson-node/characters/northwood/staff/mrs-periwinkle" class="list-group-item list-group-item-action <?= ($request_uri == '/engine-room/artists/crimson-node/characters/northwood/staff/mrs-periwinkle') ? 'active' : '' ?>">
                         Mrs. Periwinkle
-                    </a>
+                    </wa-button>
                 </div>
             </div>
         </div>
@@ -64,6 +64,6 @@ $isStaffActive = strpos($request_uri, '/staff/') !== false;
     <div class="list-group list-group-flush">
         <a href="/engine-room/artists/crimson-node/characters/family" class="list-group-item list-group-item-action">
             View Family Directory
-        </a>
+        </wa-button>
     </div>
 </div>

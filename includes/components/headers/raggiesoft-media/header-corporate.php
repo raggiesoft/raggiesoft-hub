@@ -1,7 +1,7 @@
 <?php
 // includes/components/headers/raggiesoft-media/header-corporate.php
 // The global B2B navigation for the RaggieSoft Media holding entity.
-// Updated: Frutiger Aero Glass Navigation
+// Updated: Web Awesome Components
 
 $request_uri = $_SERVER['REQUEST_URI'] ?? '/raggiesoft-media';
 $isHub = ($request_uri === '/raggiesoft-media');
@@ -10,61 +10,51 @@ $isOpenSource = (str_starts_with($request_uri, '/raggiesoft-media/projects'));
 $isPortfolio = (str_starts_with($request_uri, '/about/michael-ragsdale'));
 ?>
 
-<style>
-    /* Active Link Text Glows */
-    .nav-link.active.text-primary { text-shadow: 0 0 8px rgba(0, 130, 230, 0.4); }
-    .nav-link.active.text-warning { text-shadow: 0 0 8px rgba(255, 179, 0, 0.4); }
-    .nav-link.active.text-info { text-shadow: 0 0 8px rgba(0, 195, 255, 0.4); }
-    
-    [data-bs-theme="dark"] .nav-link.active.text-primary { text-shadow: 0 0 10px var(--mpr-cyan-400); }
-    
-    /* Aero Glass Nav Dividers */
-    .aero-nav-divider {
-        border-left: 1px solid var(--raggie-glass-border) !important;
-        opacity: 0.5;
-    }
-</style>
-
-<ul class="navbar-nav ms-auto mb-2 mb-md-0 fw-bold text-uppercase align-items-center" style="letter-spacing: 0.5px;">
+<div class="d-flex flex-wrap align-items-center gap-2 ms-auto text-uppercase fw-bold" style="letter-spacing: 0.5px;">
   
-  <li class="nav-item">
-    <a class="nav-link px-3 rounded-pill transition-all <?php echo $isHub ? 'active fw-bold text-primary bg-primary bg-opacity-10 border border-primary border-opacity-25' : ''; ?>" href="/raggiesoft-media">
-        <i class="fa-duotone fa-house-building me-2" aria-hidden="true"></i>Hub
-    </a>
-  </li>
+  <wa-button href="/raggiesoft-media" pill
+    variant="<?php echo $isHub ? 'brand' : 'neutral'; ?>" 
+    appearance="<?php echo $isHub ? 'filled-outlined' : 'plain'; ?>">
+    <i slot="start" class="fa-duotone fa-house-building"></i> Hub
+  </wa-button>
 
-  <li class="nav-item">
-    <a class="nav-link px-3 rounded-pill transition-all <?php echo $isLicensing ? 'active fw-bold text-warning bg-warning bg-opacity-10 border border-warning border-opacity-25' : ''; ?>" href="/raggiesoft-media/licensing">
-        <i class="fa-duotone fa-file-signature me-2" aria-hidden="true"></i>Master Licensing
-    </a>
-  </li>
+  <wa-button href="/raggiesoft-media/licensing" pill
+    variant="<?php echo $isLicensing ? 'warning' : 'neutral'; ?>" 
+    appearance="<?php echo $isLicensing ? 'filled-outlined' : 'plain'; ?>">
+    <i slot="start" class="fa-duotone fa-file-signature"></i> Master Licensing
+  </wa-button>
 
-  <li class="nav-item dropdown me-2">
-    <a class="nav-link dropdown-toggle px-3 rounded-pill transition-all <?php echo $isOpenSource ? 'active fw-bold text-info bg-info bg-opacity-10 border border-info border-opacity-25' : ''; ?>" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-        <i class="fa-brands fa-osi me-2" aria-hidden="true"></i>Open Source
-    </a>
-    <ul class="dropdown-menu dropdown-menu-end border-info border-opacity-25 shadow">
-      <li><a class="dropdown-item" href="/raggiesoft-media/projects"><i class="fa-duotone fa-network-wired fa-fw me-2 text-info" aria-hidden="true"></i>Projects Hub</a></li>
-      <li><a class="dropdown-item" href="/raggiesoft-media/projects/stardust-engine-cms"><i class="fa-duotone fa-rocket-launch fa-fw me-2 text-primary" aria-hidden="true"></i>Stardust Engine CMS</a></li>
-    </ul>
-  </li>
+  <wa-dropdown placement="bottom-end">
+    <wa-button slot="trigger" with-caret pill
+      variant="<?php echo $isOpenSource ? 'neutral' : 'neutral'; ?>" 
+      appearance="<?php echo $isOpenSource ? 'filled-outlined' : 'plain'; ?>">
+      <i slot="start" class="fa-brands fa-osi"></i> Open Source
+    </wa-button>
+    <wa-dropdown-item href="/raggiesoft-media/projects">
+      <i slot="start" class="fa-duotone fa-network-wired text-info"></i> Projects Hub
+    </wa-dropdown-item>
+    <wa-dropdown-item href="/raggiesoft-media/projects/stardust-engine-cms">
+      <i slot="start" class="fa-duotone fa-rocket-launch text-primary"></i> Stardust Engine CMS
+    </wa-dropdown-item>
+  </wa-dropdown>
 
-  <li class="nav-item me-3">
-    <a class="nav-link px-3 rounded-pill transition-all text-success hover-opacity <?php echo $isPortfolio ? 'active fw-bold bg-success bg-opacity-10 border border-success border-opacity-25' : ''; ?>" href="/about/michael-ragsdale">
-        <i class="fa-duotone fa-user-tie me-2" aria-hidden="true"></i>Architect Portfolio
-    </a>
-  </li>
+  <wa-button href="/about/michael-ragsdale" pill
+    variant="<?php echo $isPortfolio ? 'success' : 'neutral'; ?>" 
+    appearance="<?php echo $isPortfolio ? 'filled-outlined' : 'plain'; ?>"
+    class="me-3">
+    <i slot="start" class="fa-duotone fa-user-tie <?php echo !$isPortfolio ? 'text-success' : ''; ?>"></i> Architect Portfolio
+  </wa-button>
 
-  <li class="nav-item d-none d-md-block aero-nav-divider ps-3">
-    <a class="btn btn-primary btn-sm rounded-pill px-4 py-2 font-monospace fw-bold text-uppercase shadow-sm" href="/raggiesoft-media/licensing/commercial">
-        <i class="fa-solid fa-briefcase me-2" aria-hidden="true"></i>Commercial Portal
-    </a>
-  </li>
+  <div class="d-none d-md-flex align-items-center ps-3" style="border-left: 1px solid var(--wa-color-neutral-border-quiet); opacity: 0.8;">
+    <wa-button href="/raggiesoft-media/licensing/commercial" variant="brand" appearance="filled" pill>
+        <i slot="start" class="fa-solid fa-briefcase"></i> Commercial Portal
+    </wa-button>
+  </div>
 
-  <li class="nav-item border-start ms-2 ps-2">
-      <a class="nav-link text-body-secondary hover-text-primary" href="/">
-        <i class="fa-duotone fa-arrow-right-from-bracket me-2"></i><span class="small">Exit to RaggieSoft</span>
-      </a>
-  </li>
+  <div class="ms-2 ps-2 border-start border-secondary border-opacity-50">
+      <wa-button appearance="plain" variant="neutral" href="/" class="text-body-secondary">
+        <i slot="start" class="fa-duotone fa-arrow-right-from-bracket"></i> Exit to RaggieSoft
+      </wa-button>
+  </div>
 
-</ul>
+</div>

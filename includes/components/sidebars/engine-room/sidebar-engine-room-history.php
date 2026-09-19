@@ -8,33 +8,33 @@
     <!-- DIRECTORY NAVIGATION -->
     <div class="card rounded-0 border-secondary mb-4 bg-body-tertiary shadow-sm">
         <div class="card-header bg-dark text-white fw-bold text-uppercase border-bottom border-danger font-monospace small">
-            <i class="fa-solid fa-folder-tree me-2" aria-hidden="true"></i>Archive Directory
+            <i slot="start" class="fa-solid fa-folder-tree"></i> Archive Directory
         </div>
         <div class="list-group list-group-flush font-monospace small">
             <a href="/engine-room" class="list-group-item list-group-item-action bg-transparent text-body">
-                <i class="fa-duotone fa-house-building me-2 w-20px text-center" aria-hidden="true"></i>HQ Overview
-            </a>
+                <i slot="start" class="fa-duotone fa-house-building me-2 w-20px text-center" aria-hidden="true"></i> HQ Overview
+            </wa-button>
             <a href="/engine-room/history" class="list-group-item list-group-item-action bg-transparent text-danger fw-bold" aria-current="page">
-                <i class="fa-duotone fa-list-timeline me-2 w-20px text-center" aria-hidden="true"></i>Full Timeline
-            </a>
+                <i slot="start" class="fa-duotone fa-list-timeline"></i> Full Timeline
+            </wa-button>
         </div>
     </div>
 
     <!-- DECLASSIFIED CASE FILES -->
     <div class="card rounded-0 border-secondary mb-4 bg-transparent shadow-sm">
         <div class="card-header bg-transparent text-body-emphasis fw-bold text-uppercase border-bottom border-secondary font-monospace small">
-            <i class="fa-solid fa-folder-open me-2" aria-hidden="true"></i>Case Files
+            <i slot="start" class="fa-solid fa-folder-open"></i> Case Files
         </div>
         <div class="list-group list-group-flush font-monospace small">
             <a href="/engine-room/artists/stardust-engine/story/crash-of-90" class="list-group-item list-group-item-action bg-transparent text-body">
-                <i class="fa-duotone fa-car-crash me-2 w-20px text-center text-warning" aria-hidden="true"></i>1990: The Crash
-            </a>
+                <i slot="start" class="fa-duotone fa-car-crash me-2 w-20px text-center text-warning" aria-hidden="true"></i> 1990: The Crash
+            </wa-button>
             <a href="/engine-room/artists/stardust-engine/story/friction" class="list-group-item list-group-item-action bg-transparent text-body">
-                <i class="fa-duotone fa-fire me-2 w-20px text-center text-danger" aria-hidden="true"></i>1992: Friction
-            </a>
+                <i slot="start" class="fa-duotone fa-fire"></i> 1992: Friction
+            </wa-button>
             <a href="/engine-room/artists/stardust-engine/story/nine-figure-refusal" class="list-group-item list-group-item-action bg-transparent text-body">
-                <i class="fa-duotone fa-gavel me-2 w-20px text-center text-success" aria-hidden="true"></i>2018: The Refusal
-            </a>
+                <i slot="start" class="fa-duotone fa-gavel"></i> 2018: The Refusal
+            </wa-button>
         </div>
     </div>
 

@@ -10,7 +10,7 @@ $root = '/about/michael-ragsdale';
              alt="Michael P. Ragsdale Headshot" 
              class="rounded-circle shadow-glow border border-2 border-white mb-3"
              style="width: 80px; height: 80px; object-fit: cover;">
-    </a>
+    </wa-button>
     <h5 class="fw-bold mb-0">Michael P. Ragsdale</h5>
     <p class="small text-secondary mb-0">Systems Architect</p>
 </div>
@@ -19,30 +19,30 @@ $root = '/about/michael-ragsdale';
 
 <nav class="nav flex-column nav-pills small gap-1">
     <a href="<?php echo $root; ?>" class="nav-link link-body-emphasis">
-        <i class="fa-duotone fa-house me-2"></i> Home Lobby
-    </a>
+        <i slot="start" class="fa-duotone fa-house"></i> Home Lobby
+    </wa-button>
     
     <a href="<?php echo $root; ?>/profile" class="nav-link link-body-emphasis">
-        <i class="fa-duotone fa-layer-group me-2"></i> Professional Profile
-    </a>
+        <i slot="start" class="fa-duotone fa-layer-group"></i> Professional Profile
+    </wa-button>
 
     <a href="<?php echo $root; ?>/resume" class="nav-link link-body-emphasis">
-        <i class="fa-duotone fa-file-user me-2"></i> Resume & Skills
-    </a>
+        <i slot="start" class="fa-duotone fa-file-user"></i> Resume & Skills
+    </wa-button>
     <a href="<?php echo $root; ?>/education" class="nav-link link-body-emphasis">
-        <i class="fa-duotone fa-graduation-cap me-2"></i> Education
-    </a>
+        <i slot="start" class="fa-duotone fa-graduation-cap"></i> Education
+    </wa-button>
     
     <a href="/family" class="nav-link link-body-emphasis">
-        <i class="fa-duotone fa-people-group me-2"></i> The RaggieSoft Family
-    </a>
+        <i slot="start" class="fa-duotone fa-people-group"></i> The RaggieSoft Family
+    </wa-button>
     
     <a href="<?php echo $root; ?>/location" class="nav-link link-body-emphasis">
-        <i class="fa-duotone fa-map-location-dot me-2"></i> Location & Logistics
-    </a>
+        <i slot="start" class="fa-duotone fa-map-location-dot"></i> Location & Logistics
+    </wa-button>
     <a href="<?php echo $root; ?>/contact" class="nav-link link-body-emphasis">
-        <i class="fa-duotone fa-clipboard-check me-2"></i> Hiring Inquiries
-    </a>
+        <i slot="start" class="fa-duotone fa-clipboard-check"></i> Hiring Inquiries
+    </wa-button>
 </nav>
 
 <hr class="my-4">
@@ -53,11 +53,11 @@ $root = '/about/michael-ragsdale';
 
 <nav class="nav flex-column nav-pills small gap-1 mb-4">
     <a href="/engine-room" class="nav-link link-body-emphasis">
-        <i class="fa-solid fa-industry me-2 text-danger"></i> Engine Room HQ
-    </a>
+        <i slot="start" class="fa-solid fa-industry"></i> Engine Room HQ
+    </wa-button>
     <a href="/engine-room/artists/stardust-engine" class="nav-link link-body-emphasis">
-        <i class="fa-solid fa-rocket-launch me-2 text-warning"></i> The Stardust Engine
-    </a>
+        <i slot="start" class="fa-solid fa-rocket-launch"></i> The Stardust Engine
+    </wa-button>
 </nav>
 
 <div class="small text-center text-muted mt-auto pt-3 border-top">

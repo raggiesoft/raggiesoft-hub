@@ -1,6 +1,6 @@
 <?php
 // includes/components/headers/header-default.php
-// UPDATED: Main RaggieSoft Network Header
+// UPDATED: Main RaggieSoft Network Header (Web Awesome Edition)
 // Serves as the global navigation for the root domain
 
 // 1. Determine Active States
@@ -13,70 +13,83 @@ $isAbout = ($request_uri === '/about');
 $isContact = ($request_uri === '/contact');
 ?>
 
-<ul class="navbar-nav ms-auto mb-2 mb-md-0">
+<div class="d-flex flex-wrap align-items-center gap-2 ms-auto">
   
-  <li class="nav-item">
-    <a class="nav-link <?php echo $isHome ? 'active' : ''; ?>" href="/">
-        <i class="fa-duotone fa-house me-2" aria-hidden="true"></i>Home
-    </a>
-  </li>
+  <wa-button appearance="plain" href="/" class="<?php echo $isHome ? 'text-primary' : 'text-body-secondary'; ?>">
+    <i slot="start" class="fa-duotone fa-house"></i> Home
+  </wa-button>
 
-  <li class="nav-item dropdown">
-    <a class="nav-link dropdown-toggle <?php echo $isArchitect ? 'active' : ''; ?>" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-        <i class="fa-duotone fa-user-visor me-2" aria-hidden="true"></i>The Architect
-    </a>
-    <ul class="dropdown-menu dropdown-menu-end shadow-sm border-secondary-subtle">
-      <li><a class="dropdown-item" href="/about/michael-ragsdale"><i class="fa-duotone fa-id-card me-2"></i>Overview</a></li>
-      <li><a class="dropdown-item" href="/about/michael-ragsdale/resume"><i class="fa-duotone fa-file-user me-2"></i>Resume / CV</a></li>
-      <li><a class="dropdown-item" href="/about/michael-ragsdale/profile"><i class="fa-duotone fa-user-gear me-2"></i>Skills & Profile</a></li>
-      <li><hr class="dropdown-divider"></li>
-      <li><a class="dropdown-item" href="/about/michael-ragsdale/contact"><i class="fa-duotone fa-address-card me-2"></i>Contact Card</a></li>
-    </ul>
-  </li>
+  <wa-dropdown placement="bottom-start">
+    <wa-button slot="trigger" appearance="plain" with-caret class="<?php echo $isArchitect ? 'text-primary' : 'text-body-secondary'; ?>">
+      <i slot="start" class="fa-duotone fa-user-visor"></i> The Architect
+    </wa-button>
+    <wa-dropdown-item href="/about/michael-ragsdale">
+      <i slot="start" class="fa-duotone fa-id-card"></i> Overview
+    </wa-dropdown-item>
+    <wa-dropdown-item href="/about/michael-ragsdale/resume">
+      <i slot="start" class="fa-duotone fa-file-user"></i> Resume / CV
+    </wa-dropdown-item>
+    <wa-dropdown-item href="/about/michael-ragsdale/profile">
+      <i slot="start" class="fa-duotone fa-user-gear"></i> Skills & Profile
+    </wa-dropdown-item>
+    <wa-divider></wa-divider>
+    <wa-dropdown-item href="/about/michael-ragsdale/contact">
+      <i slot="start" class="fa-duotone fa-address-card"></i> Contact Card
+    </wa-dropdown-item>
+  </wa-dropdown>
 
-  <li class="nav-item dropdown">
-    <a class="nav-link dropdown-toggle <?php echo $isCreative ? 'active' : ''; ?>" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-        <i class="fa-duotone fa-layer-group me-2" aria-hidden="true"></i>Creative Works
-    </a>
-    <ul class="dropdown-menu dropdown-menu-end shadow-sm border-secondary-subtle">
-      <li><h6 class="dropdown-header text-uppercase fw-bold">Multimedia</h6></li>
-      <li><a class="dropdown-item" href="/engine-room/artists/stardust-engine"><i class="fa-duotone fa-rocket-launch me-2 text-primary"></i>The Stardust Engine</a></li>
-      <li><a class="dropdown-item" href="/engine-room/radio"><i class="fa-duotone fa-signal-stream me-2 text-warning"></i>Engine Room Radio</a></li>
-      <li><hr class="dropdown-divider"></li>
-      <li><h6 class="dropdown-header text-uppercase fw-bold">Literature</h6></li>
-      <li><a class="dropdown-item" href="/raggiesoft-books/aethel-saga"><i class="fa-duotone fa-sword me-2 text-warning"></i>The Silver Gauntlet of Aethel</a></li>
-      <li><a class="dropdown-item" href="/raggiesoft-books/knox"><i class="fa-duotone fa-leaf me-2 text-success"></i>Project: KNOX</a></li>
-      
-      <li><hr class="dropdown-divider"></li>
-      <li><a class="dropdown-item" href="/engine-room"><i class="fa-solid fa-industry me-2 text-secondary"></i>Engine Room Records</a></li>
-    </ul>
-  </li>
+  <wa-dropdown placement="bottom-start">
+    <wa-button slot="trigger" appearance="plain" with-caret class="<?php echo $isCreative ? 'text-primary' : 'text-body-secondary'; ?>">
+      <i slot="start" class="fa-duotone fa-layer-group"></i> Creative Works
+    </wa-button>
+    <div class="px-3 py-2 small text-uppercase fw-bold text-muted">Multimedia</div>
+    <wa-dropdown-item href="/engine-room/artists/stardust-engine">
+      <i slot="start" class="fa-duotone fa-rocket-launch text-primary"></i> The Stardust Engine
+    </wa-dropdown-item>
+    <wa-dropdown-item href="/engine-room/radio">
+      <i slot="start" class="fa-duotone fa-signal-stream text-warning"></i> Engine Room Radio
+    </wa-dropdown-item>
+    <wa-divider></wa-divider>
+    <div class="px-3 py-2 small text-uppercase fw-bold text-muted">Literature</div>
+    <wa-dropdown-item href="/raggiesoft-books/aethel-saga">
+      <i slot="start" class="fa-duotone fa-sword text-warning"></i> The Silver Gauntlet of Aethel
+    </wa-dropdown-item>
+    <wa-dropdown-item href="/raggiesoft-books/knox">
+      <i slot="start" class="fa-duotone fa-leaf text-success"></i> Project: KNOX
+    </wa-dropdown-item>
+    <wa-divider></wa-divider>
+    <wa-dropdown-item href="/engine-room">
+      <i slot="start" class="fa-solid fa-industry text-secondary"></i> Engine Room Records
+    </wa-dropdown-item>
+  </wa-dropdown>
 
-  <li class="nav-item dropdown">
-    <a class="nav-link dropdown-toggle <?php echo $isMedia ? 'active' : ''; ?>" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-        <i class="fa-duotone fa-building me-2" aria-hidden="true"></i>RaggieSoft Media
-    </a>
-    <ul class="dropdown-menu dropdown-menu-end shadow-sm border-secondary-subtle">
-      <li><h6 class="dropdown-header text-uppercase fw-bold">B2B Operations</h6></li>
-      <li><a class="dropdown-item" href="/raggiesoft-media"><i class="fa-duotone fa-network-wired me-2 text-primary"></i>Corporate Hub</a></li>
-      <li><a class="dropdown-item" href="/raggiesoft-media/licensing"><i class="fa-duotone fa-scale-balanced me-2 text-warning"></i>Master Licensing</a></li>
-      <li><a class="dropdown-item" href="/raggiesoft-media/licensing/commercial"><i class="fa-solid fa-briefcase me-2 text-secondary"></i>Commercial Portal</a></li>
-      <li><hr class="dropdown-divider"></li>
-      <li><h6 class="dropdown-header text-uppercase fw-bold">Infrastructure</h6></li>
-      <li><a class="dropdown-item" href="/raggiesoft-media/projects/elara"><i class="fa-brands fa-osi me-2 text-info"></i>Open Source (Elara)</a></li>
-    </ul>
-  </li>
+  <wa-dropdown placement="bottom-start">
+    <wa-button slot="trigger" appearance="plain" with-caret class="<?php echo $isMedia ? 'text-primary' : 'text-body-secondary'; ?>">
+      <i slot="start" class="fa-duotone fa-building"></i> RaggieSoft Media
+    </wa-button>
+    <div class="px-3 py-2 small text-uppercase fw-bold text-muted">B2B Operations</div>
+    <wa-dropdown-item href="/raggiesoft-media">
+      <i slot="start" class="fa-duotone fa-network-wired text-primary"></i> Corporate Hub
+    </wa-dropdown-item>
+    <wa-dropdown-item href="/raggiesoft-media/licensing">
+      <i slot="start" class="fa-duotone fa-scale-balanced text-warning"></i> Master Licensing
+    </wa-dropdown-item>
+    <wa-dropdown-item href="/raggiesoft-media/licensing/commercial">
+      <i slot="start" class="fa-solid fa-briefcase text-secondary"></i> Commercial Portal
+    </wa-dropdown-item>
+    <wa-divider></wa-divider>
+    <div class="px-3 py-2 small text-uppercase fw-bold text-muted">Infrastructure</div>
+    <wa-dropdown-item href="/raggiesoft-media/projects/elara">
+      <i slot="start" class="fa-brands fa-osi text-info"></i> Open Source (Elara)
+    </wa-dropdown-item>
+  </wa-dropdown>
 
-  <li class="nav-item">
-    <a class="nav-link <?php echo $isAbout ? 'active' : ''; ?>" href="/about">
-        <i class="fa-duotone fa-circle-info me-2" aria-hidden="true"></i>Mission Profile
-    </a>
-  </li>
+  <wa-button appearance="plain" href="/about" class="<?php echo $isAbout ? 'text-primary' : 'text-body-secondary'; ?>">
+    <i slot="start" class="fa-duotone fa-circle-info"></i> Mission Profile
+  </wa-button>
 
-  <li class="nav-item">
-    <a class="nav-link <?php echo $isContact ? 'active' : ''; ?>" href="/contact">
-        <i class="fa-duotone fa-envelope-open me-2" aria-hidden="true"></i>Contact
-    </a>
-  </li>
+  <wa-button appearance="plain" href="/contact" class="<?php echo $isContact ? 'text-primary' : 'text-body-secondary'; ?>">
+    <i slot="start" class="fa-duotone fa-envelope-open"></i> Contact
+  </wa-button>
 
-</ul>
+</div>

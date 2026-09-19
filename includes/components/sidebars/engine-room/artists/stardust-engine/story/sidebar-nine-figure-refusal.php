@@ -66,22 +66,22 @@ $chapters = [
 ?>
 
 <h5 class="pt-3 pb-2 mb-3 border-bottom text-uppercase letter-spacing-1 text-body-secondary">
-    <i class="fa-duotone fa-folder-open me-2 text-warning-emphasis"></i>Case File: OGM-2018
+    <i slot="start" class="fa-duotone fa-folder-open"></i> Case File: OGM-2018
 </h5>
 
-<ul class="nav flex-column mb-3">
-    <li class="nav-item">
-        <a class="nav-link link-secondary" href="/engine-room/artists/stardust-engine/story">
-            <i class="fa-duotone fa-arrow-turn-up me-2"></i>Back to Story
-        </a>
-    </li>
-    <li class="nav-item mt-2">
+<div class="d-flex flex-column gap-1">
+    
+        <wa-button appearance="plain" href="/engine-room/artists/stardust-engine/story" class="text-body w-100 text-start justify-content-start" style="text-align: left;">
+            <i slot="start" class="fa-duotone fa-arrow-turn-up me-2"></i> Back to Story
+        </wa-button>
+    
+    
         <a class="nav-link <?php echo ($currentUri === '/engine-room/artists/stardust-engine/story/nine-figure-refusal') ? 'active fw-bold text-body-emphasis' : 'text-body-secondary'; ?>" 
            href="/engine-room/artists/stardust-engine/story/nine-figure-refusal">
-            <i class="fa-duotone fa-chart-network me-2"></i>Overview
-        </a>
-    </li>
-</ul>
+            <i slot="start" class="fa-duotone fa-chart-network"></i> Overview
+        </wa-button>
+    
+</div>
 
 <div class="accordion accordion-flush" id="historyAccordion">
     
@@ -105,17 +105,17 @@ $chapters = [
              aria-labelledby="heading<?php echo $id; ?>" 
              data-bs-parent="#historyAccordion">
             <div class="accordion-body p-0 ps-3 mb-3">
-                <ul class="nav flex-column border-start border-2 border-secondary border-opacity-10 ms-2">
+                <div class="d-flex flex-column gap-1">
                     <?php foreach ($data['pages'] as $url => $linkData): 
                         $isLinkActive = ($currentUri === $url);
                     ?>
-                    <li class="nav-item">
-                        <a class="nav-link <?php echo $isLinkActive ? 'active fw-bold text-warning-emphasis bg-warning-subtle rounded-end' : 'text-body-secondary'; ?> py-1 ms-1 ps-2" href="<?php echo $url; ?>">
-                            <i class="<?php echo $linkData['icon']; ?> me-2" style="width: 20px;"></i><?php echo $linkData['label']; ?>
-                        </a>
-                    </li>
+                    
+                        <wa-button appearance="plain" href="<?php echo $url; ?>" class="text-body w-100 text-start justify-content-start" style="text-align: left;">
+                            <i slot="start" class="<?php echo $linkData['icon']; ?>"></i> <?php echo $linkData['label']; ?>
+                        </wa-button>
+                    
                     <?php endforeach; ?>
-                </ul>
+                </div>
             </div>
         </div>
     </div>

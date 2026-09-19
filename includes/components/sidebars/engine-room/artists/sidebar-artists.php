@@ -8,18 +8,18 @@
     <!-- DIRECTORY NAVIGATION -->
     <div class="card rounded-0 border-secondary mb-4 bg-body-tertiary shadow-sm">
         <div class="card-header bg-dark text-white fw-bold text-uppercase border-bottom border-primary font-monospace small">
-            <i class="fa-solid fa-folder-tree me-2"></i>System Directory
+            <i slot="start" class="fa-solid fa-folder-tree"></i> System Directory
         </div>
         <div class="list-group list-group-flush font-monospace small">
             <a href="/engine-room" class="list-group-item list-group-item-action bg-transparent text-body">
-                <i class="fa-duotone fa-house-building me-2 w-20px text-center"></i>HQ Overview
-            </a>
+                <i slot="start" class="fa-duotone fa-house-building me-2 w-20px text-center"></i> HQ Overview
+            </wa-button>
             <a href="/engine-room/artists" class="list-group-item list-group-item-action bg-transparent text-primary fw-bold">
-                <i class="fa-duotone fa-users me-2 w-20px text-center"></i>Active Roster
-            </a>
+                <i slot="start" class="fa-duotone fa-users"></i> Active Roster
+            </wa-button>
             <a href="/engine-room/history" class="list-group-item list-group-item-action bg-transparent text-body">
-                <i class="fa-duotone fa-clock-rotate-left me-2 w-20px text-center"></i>Event Log
-            </a>
+                <i slot="start" class="fa-duotone fa-clock-rotate-left"></i> Event Log
+            </wa-button>
         </div>
     </div>
 

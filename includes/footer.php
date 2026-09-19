@@ -95,7 +95,7 @@ $isDarkTheme = (isset($currentPageTheme) && in_array($currentPageTheme, ['dark',
     </script>
 </div>
 
-<script src="<?php echo $cdn_root; ?>/common/js/bootstrap.js"></script>
+
 <script src="https://assets.raggiesoft.com/common/js/encyclopedia.js?v=1789647924"></script>
 <script>
 // 1. Wrap the Store UI logic into a reusable function

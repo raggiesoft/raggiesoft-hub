@@ -1,48 +1,36 @@
 <?php
 // --- Component: button.php ---
+// Updated: Web Awesome Components
 
-// 1. Get data from $props
 $href = $props['href'] ?? '#';
 $text = isset($props['text']) ? htmlspecialchars($props['text']) : 'Button';
-$variant = $props['variant'] ?? 'secondary'; // Map pact->primary, axiom->warning, neutral->secondary
+$variantRaw = $props['variant'] ?? 'secondary';
 $icon = $props['icon'] ?? null;
 $iconPosition = $props['iconPosition'] ?? 'after';
 $fullWidth = $props['fullWidth'] ?? false;
 $size = $props['size'] ?? 'medium';
 
-// 2. Map your variants to Bootstrap theme colors
-$btnClass = "btn-" . ($props['variant'] ?? 'secondary'); // Pass standard Bootstrap colors through
+// Map variants to Web Awesome variants
+$waVariant = 'neutral';
+if (in_array($variantRaw, ['pact', 'primary', 'brand'])) $waVariant = 'brand';
+if (in_array($variantRaw, ['axiom', 'warning'])) $waVariant = 'warning';
+if ($variantRaw === 'danger') $waVariant = 'danger';
+if ($variantRaw === 'success') $waVariant = 'success';
 
-// Catch custom lore variants
-if (($props['variant'] ?? '') === 'pact') $btnClass = 'btn-primary';
-if (($props['variant'] ?? '') === 'axiom') $btnClass = 'btn-warning';
-if (($props['variant'] ?? '') === 'neutral') $btnClass = 'btn-secondary';
-
-// 3. Define Size classes
-$sizeClass = ''; // Bootstrap default size
-if ($size === 'large') $sizeClass = 'btn-lg';
-if ($size === 'small') $sizeClass = 'btn-sm';
-
-// 4. Define other classes
-$widthClass = $fullWidth ? 'd-block w-100' : ''; // Use d-block for full width anchor buttons
-
-// 5. Build Icon HTML
 $iconHtml = '';
 if ($icon) {
-    // Bootstrap uses margin utilities (e.g., me-2 for margin-end)
-    $iconMargin = ($text && $iconPosition === 'before') ? 'me-2' : 'ms-2';
-    $iconHtml = "<i class='" . htmlspecialchars($icon) . " " . $iconMargin . "'></i>";
+    $slot = ($iconPosition === 'before') ? 'start' : 'end';
+    $iconHtml = "<i slot=\"{$slot}\" class=\"" . htmlspecialchars($icon) . "\"></i>";
 }
 
+$widthStyle = $fullWidth ? 'style="width: 100%; display: block;"' : '';
 ?>
 
-<a href="<?php echo htmlspecialchars($href); ?>"
-   class="btn <?php echo "$btnClass $sizeClass $widthClass"; ?> d-inline-flex align-items-center justify-content-center">
-
+<wa-button href="<?php echo htmlspecialchars($href); ?>" 
+           variant="<?php echo $waVariant; ?>" 
+           size="<?php echo htmlspecialchars($size); ?>"
+           <?php echo $widthStyle; ?>>
     <?php if ($iconPosition === 'before' && $icon) echo $iconHtml; ?>
-    <?php if ($text): ?>
-      <span><?php echo $text; ?></span>
-    <?php endif; ?>
+    <?php echo $text; ?>
     <?php if ($iconPosition === 'after' && $icon) echo $iconHtml; ?>
-
-</a>
+</wa-button>

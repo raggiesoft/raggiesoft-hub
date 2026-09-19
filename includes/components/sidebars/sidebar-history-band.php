@@ -1,59 +1,59 @@
 <h5 class="pt-3 pb-2 mb-3 border-bottom">
-    <i class="fa-duotone fa-timeline me-2"></i>Timeline
+    <i slot="start" class="fa-duotone fa-timeline"></i> Timeline
 </h5>
-<ul class="nav flex-column">
-  <li class="nav-item">
-    <a class="nav-link link-secondary" href="/engine-room/artists/stardust-engine/band">
-      <i class="fa-duotone fa-chevron-up me-2"></i>Go Up
-    </a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link link-secondary" href="#origins">
-      <i class="fa-duotone fa-graduation-cap me-2"></i>Origins (CPI)
-    </a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link link-secondary" href="#apex-years">
-      <i class="fa-duotone fa-hand-fist me-2"></i>The Apex "Cold War"
-    </a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link link-secondary" href="#independence">
-      <i class="fa-duotone fa-flag me-2"></i>Independence (1992)
-    </a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link link-secondary" href="#freedom-era">
-      <i class="fa-duotone fa-dove me-2"></i>The Freedom Era
-    </a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link link-secondary" href="#hiatus">
-      <i class="fa-duotone fa-moon me-2"></i>The Long Hiatus
-    </a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link link-warning" href="#homecoming">
-      <i class="fa-duotone fa-fire me-2"></i>Re-Ignition & Legacy
-    </a>
-  </li>
-</ul>
+<div class="d-flex flex-column gap-1">
+  
+    <wa-button appearance="plain" href="/engine-room/artists/stardust-engine/band" class="text-body w-100 text-start justify-content-start" style="text-align: left;">
+      <i slot="start" class="fa-duotone fa-chevron-up me-2"></i> Go Up
+    </wa-button>
+  
+  
+    <wa-button appearance="plain" href="#origins" class="text-body w-100 text-start justify-content-start" style="text-align: left;">
+      <i slot="start" class="fa-duotone fa-graduation-cap"></i> Origins (CPI)
+    </wa-button>
+  
+  
+    <wa-button appearance="plain" href="#apex-years" class="text-body w-100 text-start justify-content-start" style="text-align: left;">
+      <i slot="start" class="fa-duotone fa-hand-fist"></i> The Apex "Cold War"
+    </wa-button>
+  
+  
+    <wa-button appearance="plain" href="#independence" class="text-body w-100 text-start justify-content-start" style="text-align: left;">
+      <i slot="start" class="fa-duotone fa-flag"></i> Independence (1992)
+    </wa-button>
+  
+  
+    <wa-button appearance="plain" href="#freedom-era" class="text-body w-100 text-start justify-content-start" style="text-align: left;">
+      <i slot="start" class="fa-duotone fa-dove"></i> The Freedom Era
+    </wa-button>
+  
+  
+    <wa-button appearance="plain" href="#hiatus" class="text-body w-100 text-start justify-content-start" style="text-align: left;">
+      <i slot="start" class="fa-duotone fa-moon"></i> The Long Hiatus
+    </wa-button>
+  
+  
+    <wa-button appearance="plain" href="#homecoming" class="text-body w-100 text-start justify-content-start" style="text-align: left;">
+      <i slot="start" class="fa-duotone fa-fire"></i> Re-Ignition & Legacy
+    </wa-button>
+  
+</div>
 
 <h6 class="pt-3 pb-2 mb-3 border-bottom mt-4">Related Lore</h6>
-<ul class="nav flex-column mb-2">
-  <li class="nav-item">
-  <a class="nav-link link-secondary" href="/engine-room/artists/stardust-engine/lore/ad-astra">
-    <i class="fa-duotone fa-rocket-launch me-2"></i>Ad Astra
-  </a>
-  </li>
-   <li class="nav-item">
-    <a class="nav-link link-secondary" href="/engine-room/artists/stardust-engine/lore/cpi">
-        <i class="fa-duotone fa-school me-2"></i>About CPI & The Forgers
-    </a>
-   </li>
-   <li class="nav-item">
-    <a class="nav-link link-secondary" href="/engine-room/artists/stardust-engine/band">
-      <i class="fa-duotone fa-users me-2"></i>Band Bios
-    </a>
-   </li>
-</ul>
+<div class="d-flex flex-column gap-1">
+  
+  <wa-button appearance="plain" href="/engine-room/artists/stardust-engine/lore/ad-astra" class="text-body w-100 text-start justify-content-start" style="text-align: left;">
+    <i slot="start" class="fa-duotone fa-rocket-launch"></i> Ad Astra
+  </wa-button>
+  
+   
+    <wa-button appearance="plain" href="/engine-room/artists/stardust-engine/lore/cpi" class="text-body w-100 text-start justify-content-start" style="text-align: left;">
+        <i slot="start" class="fa-duotone fa-school"></i> About CPI & The Forgers
+    </wa-button>
+   
+   
+    <wa-button appearance="plain" href="/engine-room/artists/stardust-engine/band" class="text-body w-100 text-start justify-content-start" style="text-align: left;">
+      <i slot="start" class="fa-duotone fa-users"></i> Band Bios
+    </wa-button>
+   
+</div>
