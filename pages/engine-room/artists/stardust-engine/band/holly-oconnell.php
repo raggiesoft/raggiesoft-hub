@@ -278,7 +278,7 @@ $personSchema = [
         color: #FFFFFF !important;
     }
 </style>
-<wa-dialog id="credentialModal" label="Credential" style="--wa-panel-background-color: #050508; --wa-panel-border-color: var(--wa-color-primary);">
+<wa-dialog id="credentialModal" label="Credential" style="--wa-panel-background-color: #050508; --sl-panel-background-color: #050508; --wa-dialog-background-color: #050508; --sl-dialog-background-color: #050508; background-color: #050508; --wa-panel-border-color: var(--wa-color-primary); opacity: 1; backdrop-filter: none;">
     <div slot="label" id="credentialTitle" class="d-flex align-items-center gap-2 fw-bold text-light">
         <wa-icon name="circle-info" variant="solid"></wa-icon> Credential
     </div>
@@ -330,11 +330,17 @@ $personSchema = [
         });
     });
     
-    // Ensure clicking outside always works
-    dialog.addEventListener('wa-request-close', (e) => {
-        if (e.detail.source === 'overlay') {
+    // Ensure clicking outside always works - foolproof manual listener
+    // Web Awesome events can be unreliable, so we manually catch overlay clicks
+    dialog.addEventListener('click', (e) => {
+        // If the user clicks directly on the dialog wrapper (the overlay), and not its children (the panel)
+        if (e.target === dialog) {
             dialog.open = false;
         }
     });
+    
+    // Also catch any potential WA/SL events just in case
+    dialog.addEventListener('wa-request-close', (e) => { if (e.detail.source === 'overlay') dialog.open = false; });
+    dialog.addEventListener('sl-request-close', (e) => { if (e.detail.source === 'overlay') dialog.open = false; });
 })();
 </script>
