@@ -13,7 +13,7 @@ $currentUri = $_SERVER['REQUEST_URI'];
              style="width: 60px; height: 60px; object-fit: contain;">
         <h5 class="fw-bold text-uppercase mb-0 text-body letter-spacing-1">Mission Profile</h5>
         <p class="small text-muted mb-0">Central Intelligence</p>
-    </wa-button>
+    </a>
 </div>
 
 <hr class="my-3 opacity-25">
@@ -26,23 +26,23 @@ $currentUri = $_SERVER['REQUEST_URI'];
     
     <a href="/about/michael-ragsdale" class="nav-link d-flex align-items-center <?php echo (str_contains($currentUri, '/michael-ragsdale')) ? 'active' : 'link-body-emphasis'; ?>">
         <i slot="start" class="fa-duotone fa-user-visor"></i> The Architect
-    </wa-button>
+    </a>
 
     <a href="/about/family" class="nav-link d-flex align-items-center <?php echo (str_contains($currentUri, '/family')) ? 'active' : 'link-body-emphasis'; ?>">
         <i slot="start" class="fa-duotone fa-people-group"></i> The Family
-    </wa-button>
+    </a>
 
     <a href="/about/engine-room" class="nav-link d-flex align-items-center <?php echo (str_contains($currentUri, '/engine-room')) ? 'active' : 'link-body-emphasis'; ?>">
         <i slot="start" class="fa-solid fa-industry"></i> Engine Room Records
-    </wa-button>
+    </a>
 
     <a href="/about/stardust-engine" class="nav-link d-flex align-items-center <?php echo (str_contains($currentUri, '/stardust-engine')) ? 'active' : 'link-body-emphasis'; ?>">
         <i slot="start" class="fa-duotone fa-rocket-launch"></i> The Stardust Engine
-    </wa-button>
+    </a>
     
     <a href="/about/aethel" class="nav-link d-flex align-items-center <?php echo (str_contains($currentUri, '/aethel')) ? 'active' : 'link-body-emphasis'; ?>">
         <i slot="start" class="fa-duotone fa-sword"></i> Aethel Saga
-    </wa-button>
+    </a>
 
 </nav>
 
@@ -53,16 +53,16 @@ $currentUri = $_SERVER['REQUEST_URI'];
 <nav class="nav flex-column nav-pills small gap-1">
     <a href="/raggiesoft-media/licensing" class="nav-link d-flex align-items-center <?php echo (str_contains($currentUri, '/license')) ? 'active' : 'link-body-emphasis'; ?>">
         <i slot="start" class="fa-duotone fa-scale-balanced"></i> Licenses (MIT/CC)
-    </wa-button>
+    </a>
     <a href="/about/privacy" class="nav-link d-flex align-items-center <?php echo (str_contains($currentUri, '/privacy')) ? 'active' : 'link-body-emphasis'; ?>">
         <i slot="start" class="fa-duotone fa-user-shield"></i> Privacy Policy
-    </wa-button>
+    </a>
     <a href="/about/terms" class="nav-link d-flex align-items-center <?php echo (str_contains($currentUri, '/terms')) ? 'active' : 'link-body-emphasis'; ?>">
         <i slot="start" class="fa-duotone fa-scroll-old"></i> Terms of Service
-    </wa-button>
+    </a>
     <a href="/about/ai-disclaimer" class="nav-link d-flex align-items-center <?php echo (str_contains($currentUri, '/ai-disclaimer')) ? 'active' : 'link-body-emphasis'; ?>">
         <i slot="start" class="fa-duotone fa-robot"></i> AI Disclaimer
-    </wa-button>
+    </a>
 </nav>
 
 <hr class="my-4 opacity-25">

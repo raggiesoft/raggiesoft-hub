@@ -11,7 +11,7 @@
              style="width: 100px; height: 100px; object-fit: cover;">
         <h5 class="mb-0 fw-bold">The Family</h5>
         <small class="text-muted">Personified DevOps</small>
-    </wa-button>
+    </a>
 </div>
 
 <hr class="my-3">
@@ -70,7 +70,7 @@
            class="rounded-circle me-2 border border-opacity-25" 
            width="24" height="24" style="object-fit: cover; border-color: var(--family-jenna);">
       Jenna
-    </wa-button>
+    </a>
   
 
   
@@ -81,7 +81,7 @@
            class="rounded-circle me-2 border border-opacity-25" 
            width="24" height="24" style="object-fit: cover; border-color: var(--family-harper);">
       Harper
-    </wa-button>
+    </a>
   
 
   
@@ -92,7 +92,7 @@
            class="rounded-circle me-2 border border-opacity-25" 
            width="24" height="24" style="object-fit: cover; border-color: var(--family-amanda);">
       Amanda & Elara
-    </wa-button>
+    </a>
   
 </div>
 

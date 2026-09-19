@@ -103,14 +103,14 @@
                         <span><i slot="start" class="fa-solid fa-code-branch me-2 text-secondary" aria-hidden="true"></i> Source Code</span>
                         <i class="fa-solid fa-arrow-up-right-from-square small opacity-50" aria-hidden="true"></i>
                     </span>
-                </wa-button>
+                </a>
             
             
                 <a class="aero-external-link link-secondary fw-bold" href="https://github.com/raggiesoft/stardust-engine-cms/issues" target="_blank" rel="noopener noreferrer">
                     <span class="d-flex align-items-center justify-content-between">
                         <span><i slot="start" class="fa-solid fa-bug"></i> Report an Issue</span>
                         <i slot="start" class="fa-solid fa-arrow-up-right-from-square small opacity-50" aria-hidden="true"></i> </span>
-                </wa-button>
+                </a>
             
         </div>
     </div>

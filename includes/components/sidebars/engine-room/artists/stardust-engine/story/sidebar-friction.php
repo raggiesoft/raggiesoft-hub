@@ -14,13 +14,13 @@ $currentUri = $_SERVER['REQUEST_URI'] ?? '';
         <a class="nav-link <?php echo ($currentUri === '/engine-room/artists/stardust-engine/story/friction') ? 'active fw-bold text-danger' : 'link-secondary'; ?>" 
            href="/engine-room/artists/stardust-engine/story/friction">
             <i slot="start" class="fa-duotone fa-book-open me-2"></i> Overview
-        </wa-button>
+        </a>
     
     
         <a class="nav-link <?php echo str_contains($currentUri, 'the-lost-title-track') ? 'active fw-bold text-danger' : 'link-secondary'; ?>" 
            href="/engine-room/artists/stardust-engine/story/friction/the-lost-title-track">
             <i slot="start" class="fa-duotone fa-file-audio"></i> The Lost Title Track
-        </wa-button>
+        </a>
     
 </div>
 
@@ -51,5 +51,5 @@ $currentUri = $_SERVER['REQUEST_URI'] ?? '';
 <div class="mt-auto pt-4 border-top">
     <a href="/engine-room/artists/stardust-engine/band/history" class="nav-link link-secondary">
         <i slot="start" class="fa-duotone fa-arrow-left me-2"></i> Back to Full History
-    </wa-button>
+    </a>
 </div>

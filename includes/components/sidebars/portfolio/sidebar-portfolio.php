@@ -10,7 +10,7 @@ $root = '/about/michael-ragsdale';
              alt="Michael P. Ragsdale Headshot" 
              class="rounded-circle shadow-glow border border-2 border-white mb-3"
              style="width: 80px; height: 80px; object-fit: cover;">
-    </wa-button>
+    </a>
     <h5 class="fw-bold mb-0">Michael P. Ragsdale</h5>
     <p class="small text-secondary mb-0">Systems Architect</p>
 </div>
@@ -20,29 +20,29 @@ $root = '/about/michael-ragsdale';
 <nav class="nav flex-column nav-pills small gap-1">
     <a href="<?php echo $root; ?>" class="nav-link link-body-emphasis">
         <i slot="start" class="fa-duotone fa-house"></i> Home Lobby
-    </wa-button>
+    </a>
     
     <a href="<?php echo $root; ?>/profile" class="nav-link link-body-emphasis">
         <i slot="start" class="fa-duotone fa-layer-group"></i> Professional Profile
-    </wa-button>
+    </a>
 
     <a href="<?php echo $root; ?>/resume" class="nav-link link-body-emphasis">
         <i slot="start" class="fa-duotone fa-file-user"></i> Resume & Skills
-    </wa-button>
+    </a>
     <a href="<?php echo $root; ?>/education" class="nav-link link-body-emphasis">
         <i slot="start" class="fa-duotone fa-graduation-cap"></i> Education
-    </wa-button>
+    </a>
     
     <a href="/family" class="nav-link link-body-emphasis">
         <i slot="start" class="fa-duotone fa-people-group"></i> The RaggieSoft Family
-    </wa-button>
+    </a>
     
     <a href="<?php echo $root; ?>/location" class="nav-link link-body-emphasis">
         <i slot="start" class="fa-duotone fa-map-location-dot"></i> Location & Logistics
-    </wa-button>
+    </a>
     <a href="<?php echo $root; ?>/contact" class="nav-link link-body-emphasis">
         <i slot="start" class="fa-duotone fa-clipboard-check"></i> Hiring Inquiries
-    </wa-button>
+    </a>
 </nav>
 
 <hr class="my-4">
@@ -54,10 +54,10 @@ $root = '/about/michael-ragsdale';
 <nav class="nav flex-column nav-pills small gap-1 mb-4">
     <a href="/engine-room" class="nav-link link-body-emphasis">
         <i slot="start" class="fa-solid fa-industry"></i> Engine Room HQ
-    </wa-button>
+    </a>
     <a href="/engine-room/artists/stardust-engine" class="nav-link link-body-emphasis">
         <i slot="start" class="fa-solid fa-rocket-launch"></i> The Stardust Engine
-    </wa-button>
+    </a>
 </nav>
 
 <div class="small text-center text-muted mt-auto pt-3 border-top">

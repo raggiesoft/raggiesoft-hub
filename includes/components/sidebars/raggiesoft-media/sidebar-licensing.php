@@ -103,19 +103,19 @@
                 <a class="aero-mail-link link-secondary font-monospace text-break" href="mailto:sync@raggiesoftmedia.com">
                     <span class="d-block text-primary small fw-bold mb-1">SYNC DESK</span>
                     sync@raggiesoftmedia.com
-                </wa-button>
+                </a>
             
             
                 <a class="aero-mail-link link-secondary font-monospace text-break" href="mailto:licensing@raggiesoftmedia.com">
                     <span class="d-block text-warning small fw-bold mb-1">RIGHTS DESK</span>
                     licensing@raggiesoftmedia.com
-                </wa-button>
+                </a>
             
             
                 <a class="aero-mail-link link-secondary font-monospace text-break" href="mailto:ops@raggiesoftmedia.com">
                     <span class="d-block text-info small fw-bold mb-1">INFRASTRUCTURE</span>
                     ops@raggiesoftmedia.com
-                </wa-button>
+                </a>
             
         </div>
     </div>

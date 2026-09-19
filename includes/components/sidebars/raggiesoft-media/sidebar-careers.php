@@ -83,9 +83,9 @@
         <div class="d-grid gap-2">
             <a class="btn btn-glass-danger-sidebar btn-sm rounded-pill text-start fw-bold" href="https://www.ic3.gov/" target="_blank" rel="noopener noreferrer">
               <i class="fa-solid fa-building-columns me-2 fa-fw" aria-hidden="true"></i>FBI IC3 Portal <i class="fa-solid fa-arrow-up-right-from-square float-end mt-1 small opacity-75" aria-hidden="true"></i>
-            </wa-button>
+            </a>
             <a class="btn btn-glass-danger-sidebar btn-sm rounded-pill text-start fw-bold" href="https://reportfraud.ftc.gov/" target="_blank" rel="noopener noreferrer">
-              <i slot="start" class="fa-solid fa-scale-balanced"></i> FTC Fraud Report <i slot="start" class="fa-solid fa-arrow-up-right-from-square float-end mt-1 small opacity-75" aria-hidden="true"></i> </wa-button>
+              <i slot="start" class="fa-solid fa-scale-balanced"></i> FTC Fraud Report <i slot="start" class="fa-solid fa-arrow-up-right-from-square float-end mt-1 small opacity-75" aria-hidden="true"></i> </a>
         </div>
     </div>
 </div>

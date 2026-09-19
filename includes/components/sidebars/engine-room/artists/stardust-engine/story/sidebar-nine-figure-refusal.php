@@ -79,7 +79,7 @@ $chapters = [
         <a class="nav-link <?php echo ($currentUri === '/engine-room/artists/stardust-engine/story/nine-figure-refusal') ? 'active fw-bold text-body-emphasis' : 'text-body-secondary'; ?>" 
            href="/engine-room/artists/stardust-engine/story/nine-figure-refusal">
             <i slot="start" class="fa-duotone fa-chart-network"></i> Overview
-        </wa-button>
+        </a>
     
 </div>
 

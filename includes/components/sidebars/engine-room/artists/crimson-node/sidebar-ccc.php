@@ -5,15 +5,15 @@
     <div class="card-header bg-dark text-white fw-bold text-uppercase" style="letter-spacing: 1px;">
         <a href="/engine-room/artists/crimson-node/characters/ccc" class="text-white text-decoration-none d-block">
             <i slot="start" class="fa-solid fa-arrow-left"></i> CCC Campus
-        </wa-button>
+        </a>
     </div>
     <div class="list-group list-group-flush">
         <a href="/engine-room/artists/crimson-node/characters/ccc/heather-bouchard" class="list-group-item list-group-item-action <?= ($currentPath == '/engine-room/artists/crimson-node/characters/ccc/heather-bouchard') ? 'active' : '' ?>">
             Heather Bouchard
-        </wa-button>
+        </a>
         <a href="/engine-room/artists/crimson-node/characters/ccc/hailey-bouchard" class="list-group-item list-group-item-action <?= ($currentPath == '/engine-room/artists/crimson-node/characters/ccc/hailey-bouchard') ? 'active' : '' ?>">
             Hailey Bouchard
-        </wa-button>
+        </a>
     </div>
 </div>
 <div class="card border-0 shadow-sm">
@@ -23,6 +23,6 @@
     <div class="list-group list-group-flush">
         <a href="/engine-room/artists/crimson-node/characters/family" class="list-group-item list-group-item-action">
             View Family Directory
-        </wa-button>
+        </a>
     </div>
 </div>

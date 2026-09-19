@@ -10,11 +10,11 @@
     <div class="list-group list-group-flush small">
         <a href="/engine-room/corporate/structure" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
             <span>The Trust Map</span>
-            <i slot="start" class="fa-solid fa-chevron-right text-muted"></i> </wa-button>
+            <i slot="start" class="fa-solid fa-chevron-right text-muted"></i> </a>
         <a href="/engine-room/corporate/leadership" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
             <span>Executive Leadership</span>
             <i slot="start" class="fa-solid fa-chevron-right text-muted"></i>
-        </wa-button>
+        </a>
     </div>
 </div>
 
@@ -27,7 +27,7 @@
             <div class="fw-bold">Case 18-11492</div>
             <div class="text-muted fst-italic">Re: Omni-Global Media</div>
             <span class="badge bg-success mt-1">CLOSED / ACQUIRED</span>
-        </wa-button>
+        </a>
     </div>
 </div>
 
@@ -41,6 +41,6 @@
             <li class="mb-1 text-success"><i class="fa-solid fa-check me-2"></i>FLEET_GPS: ACTIVE
             <li class="mb-0 text-success"><i class="fa-solid fa-check me-2"></i>AETHEL_BOT: IDLE
         </div>
-        <a href="/engine-room/corporate/systems" class="btn btn-outline-info btn-sm w-100 mt-3">Access Console</wa-button>
+        <a href="/engine-room/corporate/systems" class="btn btn-outline-info btn-sm w-100 mt-3">Access Console</a>
     </div>
 </div>

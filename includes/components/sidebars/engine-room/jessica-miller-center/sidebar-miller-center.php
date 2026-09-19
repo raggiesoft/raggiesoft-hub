@@ -11,16 +11,16 @@
     <div class="list-group list-group-flush border-bottom border-secondary-subtle">
         <a href="/engine-room/jessica-miller-center" class="list-group-item list-group-item-action bg-transparent text-body-secondary border-secondary-subtle px-0">
             <i slot="start" class="fa-solid fa-map-location-dot"></i> Campus Map
-        </wa-button>
+        </a>
         <a href="/engine-room/jessica-miller-center/the-quiet-floor" class="list-group-item list-group-item-action bg-transparent text-body-secondary border-secondary-subtle px-0">
             <i slot="start" class="fa-solid fa-universal-access"></i> The Quiet Floor <span class="badge bg-body-secondary text-body-secondary ms-2 rounded-pill border" style="font-size: 0.6em;">BUILDING HOURS</span>
-        </wa-button>
+        </a>
         <a href="/engine-room/jessica-miller-center/destination-dispatch-elevators" class="list-group-item list-group-item-action bg-transparent text-body-secondary border-secondary-subtle px-0">
             <i slot="start" class="fa-solid fa-elevator"></i> Destination Dispatch
-        </wa-button>
+        </a>
         <a href="#" class="list-group-item list-group-item-action bg-transparent text-body-secondary border-secondary-subtle px-0">
             <i slot="start" class="fa-solid fa-calendar-check"></i> Book a Room
-        </wa-button>
+        </a>
     </div>
 </div>
 
@@ -31,13 +31,13 @@
     <div class="list-group list-group-flush">
         <a href="#" class="list-group-item list-group-item-action bg-transparent text-body-secondary border-0 px-0 py-1">
             <small><i slot="start" class="fa-solid fa-user-tie"></i> Exec. Dir. J. Miller</small>
-        </wa-button>
+        </a>
         <a href="#" class="list-group-item list-group-item-action bg-transparent text-body-secondary border-0 px-0 py-1">
             <small><i slot="start" class="fa-solid fa-building"></i> Facilities Mgmt</small>
-        </wa-button>
+        </a>
         <a href="#" class="list-group-item list-group-item-action bg-transparent text-body-secondary border-0 px-0 py-1">
             <small><i slot="start" class="fa-solid fa-shield-check"></i> Security (Lobby)</small>
-        </wa-button>
+        </a>
     </div>
 </div>
 

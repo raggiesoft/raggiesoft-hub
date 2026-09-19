@@ -65,7 +65,7 @@ $storyLinks = [
                 <a class="nav-link py-2 <?php echo $isActive ? 'active fw-bold text-body-emphasis' : 'link-secondary'; ?>" 
                    href="<?php echo $link['url']; ?>">
                     <i slot="start" class="<?php echo $link['icon']; ?>"></i> <?php echo $link['title']; ?>
-                </wa-button>
+                </a>
             
         <?php endforeach; ?>
     </div>

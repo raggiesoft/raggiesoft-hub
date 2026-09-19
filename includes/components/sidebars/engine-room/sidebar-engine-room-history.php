@@ -13,10 +13,10 @@
         <div class="list-group list-group-flush font-monospace small">
             <a href="/engine-room" class="list-group-item list-group-item-action bg-transparent text-body">
                 <i slot="start" class="fa-duotone fa-house-building me-2 w-20px text-center" aria-hidden="true"></i> HQ Overview
-            </wa-button>
+            </a>
             <a href="/engine-room/history" class="list-group-item list-group-item-action bg-transparent text-danger fw-bold" aria-current="page">
                 <i slot="start" class="fa-duotone fa-list-timeline"></i> Full Timeline
-            </wa-button>
+            </a>
         </div>
     </div>
 
@@ -28,13 +28,13 @@
         <div class="list-group list-group-flush font-monospace small">
             <a href="/engine-room/artists/stardust-engine/story/crash-of-90" class="list-group-item list-group-item-action bg-transparent text-body">
                 <i slot="start" class="fa-duotone fa-car-crash me-2 w-20px text-center text-warning" aria-hidden="true"></i> 1990: The Crash
-            </wa-button>
+            </a>
             <a href="/engine-room/artists/stardust-engine/story/friction" class="list-group-item list-group-item-action bg-transparent text-body">
                 <i slot="start" class="fa-duotone fa-fire"></i> 1992: Friction
-            </wa-button>
+            </a>
             <a href="/engine-room/artists/stardust-engine/story/nine-figure-refusal" class="list-group-item list-group-item-action bg-transparent text-body">
                 <i slot="start" class="fa-duotone fa-gavel"></i> 2018: The Refusal
-            </wa-button>
+            </a>
         </div>
     </div>
 

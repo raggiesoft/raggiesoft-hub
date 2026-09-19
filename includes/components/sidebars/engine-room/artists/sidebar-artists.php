@@ -13,13 +13,13 @@
         <div class="list-group list-group-flush font-monospace small">
             <a href="/engine-room" class="list-group-item list-group-item-action bg-transparent text-body">
                 <i slot="start" class="fa-duotone fa-house-building me-2 w-20px text-center"></i> HQ Overview
-            </wa-button>
+            </a>
             <a href="/engine-room/artists" class="list-group-item list-group-item-action bg-transparent text-primary fw-bold">
                 <i slot="start" class="fa-duotone fa-users"></i> Active Roster
-            </wa-button>
+            </a>
             <a href="/engine-room/history" class="list-group-item list-group-item-action bg-transparent text-body">
                 <i slot="start" class="fa-duotone fa-clock-rotate-left"></i> Event Log
-            </wa-button>
+            </a>
         </div>
     </div>
 

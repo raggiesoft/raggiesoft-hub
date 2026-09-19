@@ -87,7 +87,7 @@ $current_req = $_SERVER['REQUEST_URI'];
                                        href="<?php echo $url; ?>">
                                         <small><?php echo $title; ?> (<?php echo $year; ?>)</small>
                                         <?php echo $extra; ?>
-                                    </wa-button>
+                                    </a>
                                 
                             <?php endforeach; ?>
 

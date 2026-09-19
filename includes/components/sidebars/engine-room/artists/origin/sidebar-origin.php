@@ -9,10 +9,10 @@
     <div class="list-group list-group-flush mb-4">
         <a href="/engine-room/artists/origin" class="list-group-item list-group-item-action bg-transparent ps-0 border-0">
             <i slot="start" class="fa-duotone fa-id-card me-3 text-body-secondary"></i> Profile & Bio
-        </wa-button>
+        </a>
         <a href="/engine-room/artists/origin/discography" class="list-group-item list-group-item-action bg-transparent ps-0 border-0">
             <i slot="start" class="fa-duotone fa-compact-disc"></i> Discography
-        </wa-button>
+        </a>
     </div>
 
     <h6 class="text-uppercase fw-bold text-body-secondary mb-3 small" style="font-family: 'Oswald', sans-serif;">
@@ -21,15 +21,15 @@
     <div class="list-group list-group-flush">
          <a href="/engine-room/history/london-discovery" class="list-group-item list-group-item-action bg-transparent ps-0 border-0 small text-body-secondary">
             <i slot="start" class="fa-duotone fa-handshake"></i> The 1998 Signing
-        </wa-button>
+        </a>
          <a href="/engine-room/artists/stardust-engine/story/crash-of-90" class="list-group-item list-group-item-action bg-transparent ps-0 border-0 small text-body-secondary">
             <i slot="start" class="fa-duotone fa-shield-heart"></i> Protocol: Safe Harbor
-        </wa-button>
+        </a>
     </div>
 
     <div class="mt-5 pt-3 border-top border-secondary">
         <a href="/engine-room/artists" class="btn btn-outline-secondary btn-sm w-100 rounded-0">
             <i slot="start" class="fa-duotone fa-arrow-left"></i> Full Roster
-        </wa-button>
+        </a>
     </div>
 </div>

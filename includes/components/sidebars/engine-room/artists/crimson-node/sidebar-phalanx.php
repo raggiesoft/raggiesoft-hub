@@ -15,38 +15,38 @@ function is_active_phalanx($path, $current_uri) {
     
     <a href="/engine-room/artists/crimson-node/characters/family" class="list-group-item list-group-item-action <?php echo ($sidebar_uri === '/engine-room/artists/crimson-node/characters/family' || $sidebar_uri === '/engine-room/artists/crimson-node/characters/family/') ? 'active' : ''; ?>">
         <i slot="start" class="fa-solid fa-users"></i> Overview
-    </wa-button>
+    </a>
     
     <a href="/engine-room/artists/crimson-node/characters/family/matt-miller" class="list-group-item list-group-item-action <?php echo is_active_phalanx('/matt-miller', $sidebar_uri) ? 'active' : ''; ?>">
         <i slot="start" class="fa-solid fa-microchip"></i> Matt Miller
-    </wa-button>
+    </a>
     
     <a href="/engine-room/artists/crimson-node/characters/family/sarah-miller" class="list-group-item list-group-item-action <?php echo is_active_phalanx('/sarah-miller', $sidebar_uri) ? 'active' : ''; ?>">
         <i slot="start" class="fa-solid fa-shield-halved"></i> Sarah Miller
-    </wa-button>
+    </a>
     
     <a href="/engine-room/artists/crimson-node/characters/family/emily-miller" class="list-group-item list-group-item-action <?php echo is_active_phalanx('/emily-miller', $sidebar_uri) ? 'active' : ''; ?>">
         <i slot="start" class="fa-solid fa-microphone"></i> Emily Miller
-    </wa-button>
+    </a>
     
     <a href="/engine-room/artists/crimson-node/characters/family/jessica-brooks" class="list-group-item list-group-item-action <?php echo is_active_phalanx('/jessica-brooks', $sidebar_uri) ? 'active' : ''; ?>">
         <i slot="start" class="fa-solid fa-wave-square"></i> Jessica Brooks
-    </wa-button>
+    </a>
     
     <a href="/engine-room/artists/crimson-node/characters/family/rachel-miller" class="list-group-item list-group-item-action <?php echo is_active_phalanx('/rachel-miller', $sidebar_uri) ? 'active' : ''; ?>">
         <i slot="start" class="fa-solid fa-drum"></i> Rachel Miller
-    </wa-button>
+    </a>
     
     <a href="/engine-room/artists/crimson-node/characters/family/shiloh-brooks" class="list-group-item list-group-item-action <?php echo is_active_phalanx('/shiloh-brooks', $sidebar_uri) ? 'active' : ''; ?>">
         <i slot="start" class="fa-solid fa-guitar"></i> Shiloh Brooks
-    </wa-button>
+    </a>
     
     <a href="/engine-room/artists/crimson-node/characters/family/chloe-brooks" class="list-group-item list-group-item-action <?php echo is_active_phalanx('/chloe-brooks', $sidebar_uri) ? 'active' : ''; ?>">
         <i slot="start" class="fa-solid fa-chess-knight"></i> Chloe Brooks
-    </wa-button>
+    </a>
     
     <!-- Unified Pelletier Twins Profile -->
     <a href="/engine-room/artists/crimson-node/characters/family/the-pelletier-twins" class="list-group-item list-group-item-action <?php echo is_active_phalanx('/the-pelletier-twins', $sidebar_uri) ? 'active' : ''; ?>">
         <i slot="start" class="fa-solid fa-user-group"></i> Elise & Elodie Pelletier
-    </wa-button>
+    </a>
 </div>
