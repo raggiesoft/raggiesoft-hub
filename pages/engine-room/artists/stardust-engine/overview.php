@@ -192,8 +192,8 @@ if ($eras) {
         
         <div class="col-md-6 col-lg-5">
             <a href="/engine-room/artists/stardust-engine/discography/2003-moon-1-sanctuary-zero-g" class="text-decoration-none">
-                <wa-card class="glass-card h-100 shadow-glow hover-lift w-100" style="border: 1px solid var(--wa-color-brand);">
-                    <div slot="image" class="position-relative">
+                <div class="card bg-transparent h-100 shadow-glow hover-lift w-100 overflow-hidden" style="border: 1px solid var(--wa-color-brand);">
+                    <div class="position-relative">
                         <img src="https://assets.raggiesoft.com/engine-room-records/artists/the-stardust-engine/2003-sanctuary-zero-g/album-art.jpg" 
                              class="w-100 border-bottom border-info" 
                              alt="Sanctuary (Zero-G) Album Art - The Stardust Engine">
@@ -201,21 +201,21 @@ if ($eras) {
                             <wa-badge variant="brand" class="font-monospace">MOON 1</wa-badge>
                         </div>
                     </div>
-                    <div class="p-4 text-center d-flex flex-column">
+                    <div class="card-body p-4 text-center d-flex flex-column">
                         <h3 class="h4 text-info fw-bold text-uppercase mb-1">Sanctuary (Zero-G)</h3>
-                        <p class="small text-white-50 font-monospace mb-3">The Anchor // Cassidy O'Connell</p>
-                        <p class="text-white-75 small mb-0">
+                        <p class="small text-body-secondary font-monospace mb-3">The Anchor // Cassidy O'Connell</p>
+                        <p class="text-body small mb-0">
                             A zero-gravity atmospheric masterpiece showcasing the mathematically precise <strong>Cosmic Tidal Lock Sound&trade;</strong>. A sanctuary built on unwavering loyalty in the endless black.
                         </p>
                     </div>
-                </wa-card>
+                </div>
             </a>
         </div>
 
         <div class="col-md-6 col-lg-5">
             <a href="/engine-room/artists/stardust-engine/discography/2003-moon-2-mile-marker-98" class="text-decoration-none">
-                <wa-card class="glass-card h-100 shadow-glow hover-lift w-100" style="border: 1px solid var(--wa-color-danger);">
-                    <div slot="image" class="position-relative">
+                <div class="card bg-transparent h-100 shadow-glow hover-lift w-100 overflow-hidden" style="border: 1px solid var(--wa-color-danger);">
+                    <div class="position-relative">
                         <img src="https://assets.raggiesoft.com/engine-room-records/artists/the-stardust-engine/2003-mile-marker-98/album-art.jpg" 
                              class="w-100 border-bottom border-danger" 
                              alt="Mile Marker 98 Album Art - The Stardust Engine">
@@ -223,14 +223,14 @@ if ($eras) {
                             <wa-badge variant="danger" class="font-monospace">MOON 2</wa-badge>
                         </div>
                     </div>
-                    <div class="p-4 text-center d-flex flex-column">
+                    <div class="card-body p-4 text-center d-flex flex-column">
                         <h3 class="h4 text-danger fw-bold text-uppercase mb-1">Mile Marker 98</h3>
-                        <p class="small text-white-50 font-monospace mb-3">The Engine // Ryan O'Connell</p>
-                        <p class="text-white-75 small mb-0">
-                            Blistering, distorted electric guitars and aggressive rock energy. A visceral, high-friction confrontation with the trauma of The Crash of '90.
+                        <p class="small text-body-secondary font-monospace mb-3">The Engine // Ryan O'Connell</p>
+                        <p class="text-body small mb-0">
+                            Blistering, distorted electric guitars and aggressive rock energy. A visceral, high-friction confrontation with the trauma of <a href="/engine-room/artists/stardust-engine/story/crash-of-90" class="text-info fw-bold text-decoration-none border-bottom border-info">The Crash of '90</a>.
                         </p>
                     </div>
-                </wa-card>
+                </div>
             </a>
         </div>
 
@@ -243,10 +243,13 @@ if ($eras) {
         <p class="text-body-secondary">Swipe through the historical discography of The Stardust Engine.</p>
     </div>
 
-    <div id="discographyCarousel" class="carousel slide carousel-fade bg-body-tertiary rounded shadow-sm border border-secondary border-opacity-50 p-4" data-bs-ride="carousel">
-        <div class="carousel-inner">
+    <div class="position-relative bg-body-tertiary rounded shadow-sm border border-secondary border-opacity-50 p-4">
+        
+        <div id="discographyCarousel" class="d-flex overflow-auto" style="scroll-snap-type: x mandatory; scroll-behavior: smooth; scrollbar-width: none; -ms-overflow-style: none;">
+            <style>#discographyCarousel::-webkit-scrollbar { display: none; }</style>
+            
             <?php foreach ($allAlbums as $index => $album): ?>
-                <div class="carousel-item <?php echo $index === 0 ? 'active' : ''; ?>">
+                <div class="w-100 flex-shrink-0" style="scroll-snap-align: start;">
                     <div class="row align-items-center justify-content-center">
                         <div class="col-sm-5 text-center mb-3 mb-sm-0">
                             <img src="<?php echo htmlspecialchars($album['img']); ?>" class="img-fluid rounded shadow border border-dark" alt="<?php echo htmlspecialchars($album['title']); ?>" style="max-height: 250px;">
@@ -286,15 +289,32 @@ if ($eras) {
             <?php endforeach; ?>
         </div>
         
-        <button class="carousel-control-prev" type="button" data-bs-target="#discographyCarousel" data-bs-slide="prev" style="width: 5%;">
-            <i class="fa-solid fa-chevron-left text-body-emphasis fs-3" aria-hidden="true"></i>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#discographyCarousel" data-bs-slide="next" style="width: 5%;">
-            <i class="fa-solid fa-chevron-right text-body-emphasis fs-3" aria-hidden="true"></i>
-            <span class="visually-hidden">Next</span>
-        </button>
+        <div class="d-flex justify-content-between position-absolute w-100 px-2" style="top: 50%; left: 0; transform: translateY(-50%); pointer-events: none; z-index: 10;">
+            <wa-button variant="neutral" appearance="outline" id="prevCarouselBtn" class="bg-body shadow-sm" style="pointer-events: auto;">
+                <i class="fa-solid fa-chevron-left"></i>
+            </wa-button>
+            <wa-button variant="neutral" appearance="outline" id="nextCarouselBtn" class="bg-body shadow-sm" style="pointer-events: auto;">
+                <i class="fa-solid fa-chevron-right"></i>
+            </wa-button>
+        </div>
     </div>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const carousel = document.getElementById('discographyCarousel');
+            const prevBtn = document.getElementById('prevCarouselBtn');
+            const nextBtn = document.getElementById('nextCarouselBtn');
+            
+            if(carousel && prevBtn && nextBtn) {
+                prevBtn.addEventListener('click', () => {
+                    carousel.scrollBy({ left: -carousel.clientWidth, behavior: 'smooth' });
+                });
+                nextBtn.addEventListener('click', () => {
+                    carousel.scrollBy({ left: carousel.clientWidth, behavior: 'smooth' });
+                });
+            }
+        });
+    </script>
 </div>
 <?php endif; ?>
 

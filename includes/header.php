@@ -487,8 +487,8 @@ if (isset($customPageAssets) && is_array($customPageAssets)) {
                 </span>
             </a>
                     
-          <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+          <button class="navbar-toggler border-0 shadow-none d-block d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fa-solid fa-bars fs-3 text-body-emphasis"></i>
           </button>
           
           <div class="collapse navbar-collapse" id="navbarCollapse">
