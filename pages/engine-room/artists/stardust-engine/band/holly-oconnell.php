@@ -78,7 +78,7 @@ $personSchema = [
                     <h5 class="text-white fw-bold mb-3"><i class="fa-solid fa-gavel me-2 text-primary"></i>Legal Armor (The Sword)</h5>
                     <div class="d-flex flex-wrap gap-2 mb-4">
                         
-                        <wa-button size="small" pill outline variant="primary" class="credential-btn m-1" 
+                        <wa-button size="small" pill appearance="outline" variant="primary" class="credential-btn m-1" 
                                 
                                 data-title="Juris Doctor (1994)"
                                 data-desc="CPI School of Law. Graduated Summa Cum Laude."
@@ -88,7 +88,7 @@ $personSchema = [
                             <i class="fa-solid fa-graduation-cap me-1 text-primary"></i>J.D. (CPI Law '94)
                         </wa-button>
 
-                        <wa-button size="small" pill outline variant="primary" class="credential-btn m-1" 
+                        <wa-button size="small" pill appearance="outline" variant="primary" class="credential-btn m-1" 
                                 
                                 data-title="Virginia Bar Admission (1994)"
                                 data-desc="Licensed to practice law in the Commonwealth of Virginia."
@@ -98,7 +98,7 @@ $personSchema = [
                             <i class="fa-solid fa-gavel me-1"></i>VA Bar ('94)
                         </wa-button>
 
-                        <wa-button size="small" pill outline variant="danger" class="credential-btn m-1" 
+                        <wa-button size="small" pill appearance="outline" variant="danger" class="credential-btn m-1" 
                             
                             data-title="New York Bar Admission (1998)"
                             data-desc="Licensed to practice law in the State of New York."
@@ -108,7 +108,7 @@ $personSchema = [
                         <i class="fa-solid fa-city me-1"></i>NY Bar ('98)
                     </wa-button>
 
-                        <wa-button size="small" pill outline variant="danger" class="credential-btn m-1" 
+                        <wa-button size="small" pill appearance="outline" variant="danger" class="credential-btn m-1" 
                                 
                                 data-title="California Bar Admission (2002)"
                                 data-desc="Licensed to practice law in the State of California."
@@ -118,7 +118,7 @@ $personSchema = [
                             <i class="fa-solid fa-sun me-1"></i>CA Bar ('02)
                         </wa-button>
 
-                        <wa-button size="small" pill outline variant="success" class="credential-btn m-1" 
+                        <wa-button size="small" pill appearance="outline" variant="success" class="credential-btn m-1" 
                                 
                                 data-title="Delaware Bar Admission (2015)"
                                 data-desc="Licensed to practice law in Delaware (Corporate Law Hub)."
@@ -134,7 +134,7 @@ $personSchema = [
                     <h5 class="text-white fw-bold mb-3"><i class="fa-solid fa-shield-check me-2 text-success"></i>Fiduciary Armor (The Shield)</h5>
                     <div class="d-flex flex-wrap gap-2">
                         
-                        <wa-button size="small" pill outline variant="neutral" class="credential-btn m-1" 
+                        <wa-button size="small" pill appearance="outline" variant="neutral" class="credential-btn m-1" 
                                 
                                 data-title="Notary Public (1994)"
                                 data-desc="A public officer constituted by law to serve the public in non-contentious matters."
@@ -144,7 +144,7 @@ $personSchema = [
                             <i class="fa-solid fa-stamp me-1 text-secondary"></i>Notary Public ('94)
                         </wa-button>
                         
-                        <wa-button size="small" pill outline variant="neutral" class="credential-btn m-1" 
+                        <wa-button size="small" pill appearance="outline" variant="neutral" class="credential-btn m-1" 
                                 
                                 data-title="Enrolled Agent (1996)"
                                 data-desc="A federally-authorized tax practitioner empowered to represent taxpayers before the IRS."
@@ -154,7 +154,7 @@ $personSchema = [
                             <i class="fa-solid fa-file-invoice-dollar me-1 text-secondary"></i>Enrolled Agent ('96)
                         </wa-button>
                         
-                        <wa-button size="small" pill outline variant="neutral" class="credential-btn m-1" 
+                        <wa-button size="small" pill appearance="outline" variant="neutral" class="credential-btn m-1" 
                                 
                                 data-title="LL.M. in Taxation (1999)"
                                 data-desc="An advanced law degree specializing in the complexities of tax law."
@@ -164,7 +164,7 @@ $personSchema = [
                             <i class="fa-solid fa-scale-balanced me-1 text-secondary"></i>LL.M. Taxation ('99)
                         </wa-button>
 
-                        <wa-button size="small" pill outline variant="success" class="credential-btn m-1" 
+                        <wa-button size="small" pill appearance="outline" variant="success" class="credential-btn m-1" 
                                 
                                 data-title="Certified Trust & Fiduciary Advisor (2003)"
                                 data-desc="The standard of excellence for trust and wealth management professionals."
@@ -174,7 +174,7 @@ $personSchema = [
                             <i class="fa-solid fa-landmark me-1"></i>CTFA (Trusts) ('03)
                         </wa-button>
 
-                        <wa-button size="small" pill outline variant="success" class="credential-btn m-1" 
+                        <wa-button size="small" pill appearance="outline" variant="success" class="credential-btn m-1" 
                                 
                                 data-title="CFA Charterholder (2006)"
                                 data-desc="Chartered Financial Analyst. The gold standard for investment analysis and portfolio management."
@@ -184,7 +184,7 @@ $personSchema = [
                             <i class="fa-solid fa-briefcase me-1"></i>CFA ('06)
                         </wa-button>
 
-                        <wa-button size="small" pill outline variant="primary" class="credential-btn m-1" 
+                        <wa-button size="small" pill appearance="outline" variant="primary" class="credential-btn m-1" 
                                 
                                 data-title="M.S. Quantitative Finance (2009)"
                                 data-desc="The application of mathematical models to financial markets and risk management."
@@ -194,7 +194,7 @@ $personSchema = [
                             <i class="fa-solid fa-chart-line me-1"></i>M.S. Quant ('09)
                         </wa-button>
 
-                        <wa-button size="small" pill outline variant="danger" class="credential-btn m-1" 
+                        <wa-button size="small" pill appearance="outline" variant="danger" class="credential-btn m-1" 
                                 
                                 data-title="Certified Forensic Accountant (2014)"
                                 data-desc="Specialists in detecting financial fraud and auditing complex records."
@@ -204,7 +204,7 @@ $personSchema = [
                             <i class="fa-solid fa-magnifying-glass-dollar me-1"></i>Cr.FA ('14)
                         </wa-button>
 
-                        <wa-button size="small" pill outline variant="danger" class="credential-btn m-1" 
+                        <wa-button size="small" pill appearance="outline" variant="danger" class="credential-btn m-1" 
                                 
                                 data-title="Certified Insolvency & Restructuring Advisor (2016)"
                                 data-desc="Experts in corporate bankruptcy and turnaround management."
@@ -307,7 +307,7 @@ $personSchema = [
             const title = btn.getAttribute('data-title');
             const desc = btn.getAttribute('data-desc');
             const lore = btn.getAttribute('data-lore');
-            const color = btn.getAttribute('data-color');
+            const color = btn.getAttribute('variant');
             const icon = btn.getAttribute('data-icon');
             
             // Inject Data
@@ -321,11 +321,12 @@ $personSchema = [
             if (color === 'danger') waColor = 'var(--wa-color-danger)';
             if (color === 'warning') waColor = 'var(--wa-color-warning)';
             if (color === 'info') waColor = 'var(--wa-color-neutral)';
+            if (!color) waColor = 'var(--wa-color-neutral)'; // Fallback
             
             const loreAlert = document.getElementById('loreAlert');
             loreAlert.style.borderLeftColor = waColor;
             
-            dialog.show();
+            dialog.open = true;
         });
     });
     
@@ -334,8 +335,6 @@ $personSchema = [
         if (e.detail.source === 'overlay') {
             dialog.open = false;
         }
-    });
-        });
     });
 })();
 </script>
