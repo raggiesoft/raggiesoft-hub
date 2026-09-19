@@ -12,20 +12,20 @@
             <div class="row g-4 mb-5">
                 
                 <div class="col-md-4">
-                    <div class="card h-100 border-success shadow-sm">
-                        <div class="card-header bg-success text-white py-3">
+                    <wa-card class="h-100 shadow-sm w-100" style="--border-color: var(--wa-color-success);">
+                        <div slot="header" class="bg-success text-white p-3 mx-n4 mt-n4 mb-3 border-bottom">
                             <div class="d-flex align-items-center">
-                                <i class="fa-solid fa-user fa-2x me-3" aria-hidden="true"></i>
+                                <i class="fa-solid fa-user-pen fa-2x me-3" aria-hidden="true"></i>
                                 <div>
-                                    <h5 class="mb-0 fw-bold">The Architect</h5>
-                                    <small class="opacity-75">Michael Ragsdale (Human)</small>
+                                    <h5 class="mb-0 fw-bold text-white">The Writer</h5>
+                                    <small class="text-white opacity-75">Michael (Human)</small>
                                 </div>
                             </div>
                         </div>
-                        <div class="card-body p-4 d-flex flex-column bg-body">
-                            <span class="badge bg-success bg-opacity-10 text-success border border-success align-self-start mb-3">Concept & Lore</span>
-                            <p class="card-text text-body-emphasis">
-                                The heart of the universe. Every storyline, character persona, thematic concept, and narrative direction originates here. 
+                        <div class="d-flex flex-column h-100">
+                            <div class="text-uppercase small fw-bold mb-3 text-success"><i class="fa-solid fa-pen-nib me-2"></i>Concept & Lore</div>
+                            <p class="text-body-emphasis">
+                                The architect of the universe. Every RaggieSoft project starts and ends with human intention, emotion, and life experience.
                             </p>
                             <ul class="list-unstyled small text-body-secondary flex-grow-1">
                                 <li class="mb-2"><i class="fa-solid fa-check text-success me-2" aria-hidden="true"></i>Develops the overarching narrative and writes the prose for novels.</li>
@@ -33,7 +33,7 @@
                                 <li class="mb-2"><i class="fa-solid fa-check text-success me-2" aria-hidden="true"></i>Acts as the final executive producer and editor for all outputs.</li>
                             </ul>
                         </div>
-                    </div>
+                    </wa-card>
                 </div>
 
                 <div class="col-md-4">
@@ -48,7 +48,7 @@
                             </div>
                         </div>
                         <div class="d-flex flex-column h-100">
-                            <wa-badge variant="primary" class="align-self-start mb-3">Code & Creative Strategy</wa-badge>
+                            <div class="text-uppercase small fw-bold mb-3 text-primary"><i class="fa-solid fa-code me-2"></i>Code & Creative Strategy</div>
                             <p class="text-body-emphasis">
                                 The full-stack pair-programmer and creative sounding board. Antigravity writes the platform's backend PHP/CSS architecture, while Gemini refines raw human concepts into structured lyrics and technical prompt data.
                             </p>
@@ -73,7 +73,7 @@
                             </div>
                         </div>
                         <div class="d-flex flex-column h-100">
-                            <wa-badge variant="warning" class="align-self-start mb-3">Audio Generation</wa-badge>
+                            <div class="text-uppercase small fw-bold mb-3 text-warning"><i class="fa-solid fa-waveform-lines me-2"></i>Audio Generation</div>
                             <p class="text-body-emphasis">
                                 The musicians in the booth. Suno takes the finalized lyrics and stylistic parameters and synthesizes the actual audio tracks.
                             </p>
