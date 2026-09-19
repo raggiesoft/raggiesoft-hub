@@ -292,7 +292,7 @@ $personSchema = [
 </wa-dialog>
 
 <script>
-document.addEventListener('DOMContentLoaded', () => {
+(function() {
     const dialog = document.getElementById('credentialModal');
     if (!dialog) return;
     
@@ -326,5 +326,5 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('closeCredentialBtn').addEventListener('click', () => {
         dialog.hide();
     });
-});
+})();
 </script>
