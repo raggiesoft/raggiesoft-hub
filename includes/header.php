@@ -352,6 +352,13 @@ if (isset($customPageAssets) && is_array($customPageAssets)) {
       <script src="https://assets.raggiesoft.com/common/js/cinema-carousel.js?v=2"></script>
 
     <style>
+    
+
+    wa-menu {
+        --wa-panel-background-color: var(--bs-body-bg);
+        background-color: var(--bs-body-bg);
+    }
+
     /* Clean up Web Awesome buttons inside mobile nav */
     @media (max-width: 767.98px) {
         .mobile-nav-menu wa-button::part(base) {

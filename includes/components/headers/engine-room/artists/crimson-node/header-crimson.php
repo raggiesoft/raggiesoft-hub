@@ -35,18 +35,18 @@ $isLore = str_starts_with($request_uri, '/raggiesoft-books/books/crimson-node');
         <i class="fa-duotone fa-users me-2" aria-hidden="true"></i>Characters <i class="fa-solid fa-chevron-down ms-1" style="font-size: 0.8em;" aria-hidden="true"></i>
     </wa-button>
     <wa-menu>
-      <wa-dropdown-item href="/engine-room/artists/crimson-node/characters/family">
+      <wa-dropdown-item onclick="navigateTo('/engine-room/artists/crimson-node/characters/family')">
             <i class="fa-duotone fa-shield-halved me-2"></i>The Phalanx
         </wa-dropdown-item>
-      <wa-dropdown-item href="/engine-room/artists/crimson-node/characters/ccc">
+      <wa-dropdown-item onclick="navigateTo('/engine-room/artists/crimson-node/characters/ccc')">
             <i class="fa-duotone fa-graduation-cap me-2"></i>CCC Campus
         </wa-dropdown-item>
       <wa-divider></wa-divider>
-      <wa-dropdown-item href="/engine-room/artists/crimson-node/characters/northwood">
+      <wa-dropdown-item onclick="navigateTo('/engine-room/artists/crimson-node/characters/northwood')">
             <i class="fa-duotone fa-school me-2"></i>Northwood High
         </wa-dropdown-item>
       <wa-divider></wa-divider>
-      <wa-dropdown-item href="/engine-room/artists/crimson-node/characters/piedmont">
+      <wa-dropdown-item onclick="navigateTo('/engine-room/artists/crimson-node/characters/piedmont')">
             <i class="fa-duotone fa-building-columns me-2"></i>The University of the Piedmont
         </wa-dropdown-item>
     </wa-menu>
