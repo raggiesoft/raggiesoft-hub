@@ -62,6 +62,7 @@ if (isset($customPageAssets) && is_array($customPageAssets)) {
 ?>
 <!doctype html>
 <html lang="en" class="h-100" data-fa-kit-code="ec060982d4" <?php echo $force_dark_mode ? 'data-bs-theme="dark"' : ''; ?>>
+<html lang="en" class="h-100 <?php echo $force_dark_mode ? 'wa-theme-dark' : ''; ?>" data-fa-kit-code="ec060982d4" <?php echo $force_dark_mode ? 'data-bs-theme="dark"' : ''; ?>>
   <head>
     
     <?php 

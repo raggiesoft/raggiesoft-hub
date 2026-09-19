@@ -26,5 +26,25 @@
     "view": "pages/engine-room/artists/stardust-engine/band/history",
     "title": "History | The Stardust Engine",
     "ogTitle": "The History - From CPI to The Fortress"
+  },
+  "/engine-room/artists/stardust-engine/band/ryan-oconnell": {
+    "view": "pages/engine-room/artists/stardust-engine/band/ryan-oconnell",
+    "title": "Ryan O'Connell | The Stardust Engine"
+  },
+  "/engine-room/artists/stardust-engine/band/cassidy-oconnell": {
+    "view": "pages/engine-room/artists/stardust-engine/band/cassidy-oconnell",
+    "title": "Cassidy O'Connell | The Stardust Engine"
+  },
+  "/engine-room/artists/stardust-engine/band/holly-oconnell": {
+    "view": "pages/engine-room/artists/stardust-engine/band/holly-oconnell",
+    "title": "Holly O'Connell | The Stardust Engine"
+  },
+  "/engine-room/artists/stardust-engine/band/evan-wright": {
+    "view": "pages/engine-room/artists/stardust-engine/band/evan-wright",
+    "title": "Evan Wright | The Stardust Engine"
+  },
+  "/engine-room/artists/stardust-engine/band/tyler-wright": {
+    "view": "pages/engine-room/artists/stardust-engine/band/tyler-wright",
+    "title": "Tyler Wright | The Stardust Engine"
   }
 }
