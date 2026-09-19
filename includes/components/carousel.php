@@ -26,6 +26,17 @@ if ($discographyData) {
                 $store_link = $album['storeStandardUrl'] ?? ($album['storeAudiophileUrl'] ?? '');
 
                 $carousel_albums[] = [
+                    'storeProps'  => [
+                         'type' => 'album',
+                         'size' => 'medium',
+                         'spotify' => $album['spotifyId'] ?? '',
+                         'apple'   => $album['appleId'] ?? '',
+                         'amazon'  => $album['amazonId'] ?? '',
+                         'youtube' => $album['youtubeId'] ?? '',
+                         'vinyl'   => $album['vinylUrl'] ?? '',
+                         'cd'      => $album['cdUrl'] ?? '',
+                         'apparel' => $album['apparelUrl'] ?? ''
+                    ],
                     'title'       => $album['title'],
                     'year'        => $album['year'],
                     'link'        => $album['url'],
@@ -46,92 +57,96 @@ if ($discographyData) {
 if (!empty($carousel_albums)):
 ?>
 
-<div class="position-relative shadow-lg rounded-3 mb-5 overflow-hidden" style="background: black;">
+<div class="position-relative shadow-lg rounded-4 mb-5 overflow-hidden" style="background: #0a0a0a; border: 1px solid rgba(255,255,255,0.1);">
     <div id="cinemaCarousel" class="d-flex overflow-auto w-100" style="scroll-snap-type: x mandatory; scroll-behavior: smooth; scrollbar-width: none; -ms-overflow-style: none;">
         <style>#cinemaCarousel::-webkit-scrollbar { display: none; }</style>
         
         <?php foreach ($carousel_albums as $index => $album): ?>
-            <div class="w-100 flex-shrink-0 position-relative" style="scroll-snap-align: start; min-height: 400px; aspect-ratio: 2.5;">
-            <div style="height: 100%; position: relative; overflow: hidden; display: flex; align-items: center; justify-content: center;">
+            <div class="w-100 flex-shrink-0 position-relative d-flex align-items-center" style="scroll-snap-align: start; min-height: 500px;">
                 
-                <!-- Background blur -->
-                <div style="
-                    position: absolute;
-                    top: -10%; left: -10%; width: 120%; height: 120%;
+                <!-- Blurred Background -->
+                <div class="position-absolute top-0 start-0 w-100 h-100" style="
                     background-image: url('<?php echo htmlspecialchars($album['img_src']); ?>');
                     background-size: cover;
                     background-position: center;
-                    filter: blur(30px) brightness(0.4) <?php echo $album['is_seized'] ? 'grayscale(100%)' : ''; ?>;
+                    filter: blur(40px) brightness(0.3) <?php echo $album['is_seized'] ? 'grayscale(100%)' : ''; ?>;
+                    transform: scale(1.1);
                     z-index: 1;
                 "></div>
 
-                <?php if ($album['is_seized']): ?>
-                    <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center" 
-                         style="z-index: 3; pointer-events: none;">
-                        <div class="bg-danger text-dark fw-bold display-1 text-uppercase px-5 py-2" 
-                             style="transform: rotate(-15deg); border: 5px dashed #000; opacity: 0.8; font-family: 'Impact', sans-serif; box-shadow: 0 0 30px #000;">
-                            Evidence
+                <div class="container position-relative py-5" style="z-index: 2;">
+                    <div class="row align-items-center justify-content-center">
+                        <!-- Left Column: Album Art -->
+                        <div class="col-md-5 col-lg-4 mb-4 mb-md-0 text-center position-relative">
+                            <?php if ($album['is_seized']): ?>
+                                <div class="position-absolute top-50 start-50 translate-middle w-100" style="z-index: 3; pointer-events: none;">
+                                    <div class="bg-danger text-dark fw-bold display-4 text-uppercase px-3 py-1" 
+                                         style="transform: rotate(-15deg); border: 4px dashed #000; opacity: 0.9; font-family: 'Impact', sans-serif; box-shadow: 0 0 20px #000;">
+                                        Evidence
+                                    </div>
+                                </div>
+                            <?php endif; ?>
+
+                            <?php if ($album['dsp_exempt'] && !$album['is_seized']): ?>
+                                <div class="position-absolute top-0 end-0 mt-3 me-3" style="z-index: 4;">
+                                    <span class="badge bg-warning text-dark shadow-sm border border-dark px-2 py-1"><i class="fa-solid fa-vault me-1"></i> Vault Exclusive</span>
+                                </div>
+                            <?php endif; ?>
+
+                            <a href="<?php echo htmlspecialchars($album['link']); ?>">
+                                <img src="<?php echo htmlspecialchars($album['img_src']); ?>" 
+                                     alt="<?php echo htmlspecialchars($album['title']); ?> Album Art"
+                                     class="img-fluid shadow-lg rounded-3 border border-secondary border-opacity-50"
+                                     style="max-height: 400px; <?php echo $album['is_seized'] ? 'filter: blur(4px) grayscale(100%); opacity: 0.7;' : ''; ?>">
+                            </a>
+                        </div>
+                        
+                        <!-- Right Column: Album Info & Buttons -->
+                        <div class="col-md-7 col-lg-6 text-center text-md-start">
+                            <h2 class="fw-bold text-white display-5 text-uppercase mb-1" style="text-shadow: 0 2px 10px rgba(0,0,0,0.5);">
+                                <?php echo htmlspecialchars($album['title']); ?>
+                            </h2>
+                            <p class="text-primary font-monospace mb-4 fs-5 fw-bold">
+                                Released: <span class="text-white"><?php echo $album['year']; ?></span>
+                            </p>
+                            
+                            <p class="text-white-50 lead mb-5" style="max-width: 600px;">
+                                <?php echo htmlspecialchars($album['description']); ?>
+                            </p>
+                            
+                            <div class="d-flex flex-wrap gap-3 justify-content-center justify-content-md-start">
+                                <wa-button href="<?php echo htmlspecialchars($album['link']); ?>" variant="<?php echo $album['is_seized'] ? 'danger' : 'brand'; ?>">
+                                    <i slot="start" class="<?php echo $album['btn_icon']; ?>"></i> <?php echo $album['btn_text']; ?>
+                                </wa-button>
+                                
+                                <?php 
+                                $storeProps = $album['storeProps'];
+                                $hasStores = !empty($storeProps['spotify']) || !empty($storeProps['apple']) || !empty($storeProps['amazon']) || !empty($storeProps['youtube']);
+                                if ($hasStores && !$album['is_seized']) {
+                                    include $_SERVER['DOCUMENT_ROOT'] . '/includes/components/store-button.php';
+                                }
+                                ?>
+
+                                <?php if (!empty($album['store_link'])): ?>
+                                    <wa-button href="<?php echo htmlspecialchars($album['store_link']); ?>" target="_blank" variant="neutral" appearance="filled">
+                                        <i slot="start" class="fa-solid fa-bag-shopping"></i> Shop Archives
+                                    </wa-button>
+                                <?php endif; ?>
+                            </div>
                         </div>
                     </div>
-                <?php endif; ?>
-
-                <div class="position-relative w-100 h-100 d-flex align-items-center justify-content-center" style="z-index: 2;">
-                    <a href="<?php echo htmlspecialchars($album['link']); ?>" class="d-block h-100 py-4 text-center position-relative">
-                        
-                        <?php if ($album['dsp_exempt'] && !$album['is_seized']): ?>
-                            <div class="position-absolute top-0 end-0 mt-4 me-3" style="z-index: 4;">
-                                <span class="badge bg-warning text-dark shadow-sm border border-dark"><i class="fa-solid fa-vault me-1"></i> Vault Exclusive</span>
-                            </div>
-                        <?php endif; ?>
-
-                        <img src="<?php echo htmlspecialchars($album['img_src']); ?>" 
-                             alt="<?php echo htmlspecialchars($album['title']); ?> Album Art"
-                             class="img-fluid shadow-lg rounded border border-secondary border-opacity-25"
-                             style="
-                                height: 100%; 
-                                width: auto; 
-                                aspect-ratio: 1/1; 
-                                object-fit: contain;
-                                <?php echo $album['is_seized'] ? 'filter: blur(5px) grayscale(100%); opacity: 0.7;' : ''; ?>
-                             "
-                             onerror="this.onerror=null; this.src='https://placehold.co/800x800/050508/FF2A6D?text=Image+Missing';">
-                    </a>
                 </div>
-                
-                <div class="position-absolute w-100 text-center d-none d-md-block" style="z-index: 4; bottom: 40px;">
-                    <div class="bg-black bg-opacity-75 p-3 rounded-pill d-inline-block border border-secondary border-opacity-50 px-5 backdrop-blur">
-                        <h5 class="fw-bold text-white mb-0 text-uppercase letter-spacing-1">
-                            <?php echo htmlspecialchars($album['title']); ?> 
-                            <span class="text-primary mx-2">//</span> 
-                            <span class="fw-light"><?php echo $album['year']; ?></span>
-                        </h5>
-                    </div>
-                    
-                    <div class="mt-3 d-flex justify-content-center gap-3">
-                        <wa-button href="<?php echo htmlspecialchars($album['link']); ?>" variant="<?php echo $album['is_seized'] ? 'danger' : 'brand'; ?>" pill>
-                            <i slot="start" class="<?php echo $album['btn_icon']; ?>"></i> <?php echo $album['btn_text']; ?>
-                        </wa-button>
-                        
-                        <?php if (!empty($album['store_link'])): ?>
-                            <wa-button href="<?php echo htmlspecialchars($album['store_link']); ?>" target="_blank" variant="neutral" appearance="outlined" pill style="color: white; border-color: white;">
-                                <i slot="start" class="fa-solid fa-bag-shopping"></i> Shop Archives
-                            </wa-button>
-                        <?php endif; ?>
-                    </div>
-                </div>
-
-            </div>
             </div>
         <?php endforeach; ?>
     </div>
     
     <!-- Navigation Buttons -->
-    <div class="d-flex justify-content-between position-absolute w-100 px-4" style="top: 50%; left: 0; transform: translateY(-50%); pointer-events: none; z-index: 10;">
-        <wa-button variant="neutral" appearance="outline" class="cinema-prev" style="pointer-events: auto; background: rgba(0,0,0,0.5); color: white; border: none;" pill>
-            <i class="fa-solid fa-chevron-left fs-4"></i>
+    <div class="d-flex justify-content-between position-absolute w-100 px-3" style="top: 50%; left: 0; transform: translateY(-50%); pointer-events: none; z-index: 10;">
+        <wa-button variant="neutral" appearance="filled" class="cinema-prev shadow-lg" style="pointer-events: auto; opacity: 0.8;" pill>
+            <i class="fa-solid fa-chevron-left fs-5"></i>
         </wa-button>
-        <wa-button variant="neutral" appearance="outline" class="cinema-next" style="pointer-events: auto; background: rgba(0,0,0,0.5); color: white; border: none;" pill>
-            <i class="fa-solid fa-chevron-right fs-4"></i>
+        <wa-button variant="neutral" appearance="filled" class="cinema-next shadow-lg" style="pointer-events: auto; opacity: 0.8;" pill>
+            <i class="fa-solid fa-chevron-right fs-5"></i>
         </wa-button>
     </div>
 </div>
@@ -143,17 +158,30 @@ if (!empty($carousel_albums)):
         const nextBtns = document.querySelectorAll('.cinema-next');
         
         if(carousel) {
-            prevBtns.forEach(btn => btn.addEventListener('click', () => {
-                carousel.scrollBy({ left: -carousel.clientWidth, behavior: 'smooth' });
-            }));
-            nextBtns.forEach(btn => btn.addEventListener('click', () => {
-                carousel.scrollBy({ left: carousel.clientWidth, behavior: 'smooth' });
-            }));
+            const scrollNext = () => {
+                // If at the end, scroll to 0
+                if (carousel.scrollLeft + carousel.clientWidth >= carousel.scrollWidth - 10) {
+                    carousel.scrollTo({ left: 0, behavior: 'smooth' });
+                } else {
+                    carousel.scrollBy({ left: carousel.clientWidth, behavior: 'smooth' });
+                }
+            };
+            const scrollPrev = () => {
+                // If at the beginning, scroll to end
+                if (carousel.scrollLeft <= 10) {
+                    carousel.scrollTo({ left: carousel.scrollWidth, behavior: 'smooth' });
+                } else {
+                    carousel.scrollBy({ left: -carousel.clientWidth, behavior: 'smooth' });
+                }
+            };
+            
+            prevBtns.forEach(btn => btn.addEventListener('click', scrollPrev));
+            nextBtns.forEach(btn => btn.addEventListener('click', scrollNext));
         }
     });
 </script>
 
-<?php else: ?>
+<?php else: ?><?php else: ?>
     <div class="alert alert-warning text-center">
         <i class="fa-duotone fa-triangle-exclamation me-2"></i> 
         Unable to load discography data.
