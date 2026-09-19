@@ -55,19 +55,27 @@
 </div>
 
 <style>
-    /* Ensure Web Awesome Dialog has an opaque background in case theme variables fail */
-    wa-dialog::part(panel) {
-        background-color: var(--wa-color-surface-default, #ffffff);
-        color: var(--wa-color-text-normal, #000000);
+    /* Nuke transparent dialogs globally from orbit */
+    wa-dialog::part(base),
+    wa-dialog::part(panel),
+    wa-dialog {
+        --wa-panel-background-color: var(--bs-body-bg, #ffffff) !important;
+        --wa-dialog-background-color: var(--bs-body-bg, #ffffff) !important;
+        background-color: var(--bs-body-bg, #ffffff) !important;
+        color: var(--bs-body-color, #000000) !important;
     }
     
-    [data-bs-theme="dark"] wa-dialog::part(panel) {
-        background-color: var(--wa-color-surface-default, #121212);
-        color: var(--wa-color-text-normal, #e0e0e0);
+    [data-bs-theme="dark"] wa-dialog::part(base),
+    [data-bs-theme="dark"] wa-dialog::part(panel),
+    [data-bs-theme="dark"] wa-dialog {
+        --wa-panel-background-color: var(--bs-body-bg, #121212) !important;
+        --wa-dialog-background-color: var(--bs-body-bg, #121212) !important;
+        background-color: var(--bs-body-bg, #121212) !important;
+        color: var(--bs-body-color, #e0e0e0) !important;
     }
 </style>
 
-<wa-dialog id="lyricsModal" label="Track Title" style="--width: 75vw;" data-turbo-permanent="true">
+<wa-dialog id="lyricsModal" label="Track Title" style="--width: 75vw; --wa-panel-background-color: var(--bs-body-bg, #121212) !important;" data-turbo-permanent="true">
     <div slot="label">
         <i class="fa-duotone fa-music me-2" style="color: var(--wa-color-primary);"></i>
         <span id="lyricsModalTitle" class="text-glow-primary">Track Title</span>
@@ -86,7 +94,6 @@
         const player = document.getElementById('sticky-audio-player');
         const modal = document.getElementById('lyricsModal');
 
-        // FIX: Check if the parent is NOT the body. If so, move it.
         if (player && player.parentNode !== document.body) {
             document.body.appendChild(player);
         }

@@ -1,44 +1,64 @@
 <?php
 // includes/components/easter-eggs/konami.php
-// A reusable "Loot Box" modal triggered by the Konami Code.
+// Stardust Engine CMS
 
-// 1. Set Defaults (Safety Net)
-$k_title     = $konami_config['title']     ?? 'Secret Unlocked';
-$k_icon      = $konami_config['icon']      ?? 'fa-duotone fa-unlock';
-$k_theme     = $konami_config['theme']     ?? '#0d6efd'; // Default Blue
-$k_text_clr  = $konami_config['text_color']?? '#FFD700'; // Gold default
-$k_image     = $konami_config['image']     ?? '';
-$k_body      = $konami_config['body']      ?? 'You have found a secret area.';
-$k_btn_text  = $konami_config['btn_text']  ?? 'Proceed';
-$k_btn_link  = $konami_config['btn_link']  ?? '#';
-$k_btn_style = $konami_config['btn_style'] ?? 'primary'; // mapped to wa-button variant
+// Use the current theme color, default to primary
+$k_theme = "var(--bs-primary, #42AADB)"; 
+if (isset($theme)) {
+    if ($theme === 'ad-astra') $k_theme = "var(--bs-warning, #ffc107)";
+    if ($theme === 'crucible') $k_theme = "var(--bs-danger, #dc3545)";
+}
 ?>
 
-<wa-dialog id="konamiModal" label="<?php echo $k_title; ?>" style="--width: 50vw; border: 2px solid <?php echo $k_theme; ?>;">
+<style>
+    /* Ensure Konami dialog also has an opaque background */
+    #konamiModal::part(panel) {
+        --wa-panel-background-color: var(--bs-body-bg, #ffffff) !important;
+        background-color: var(--bs-body-bg, #ffffff) !important;
+        color: var(--bs-body-color, #000000) !important;
+        border: 2px solid <?php echo $k_theme; ?>;
+    }
     
-    <div slot="label" style="color: <?php echo $k_text_clr; ?>;">
-        <i class="<?php echo $k_icon; ?> me-2"></i><?php echo $k_title; ?>
-    </div>
+    [data-bs-theme="dark"] #konamiModal::part(panel) {
+        --wa-panel-background-color: var(--bs-body-bg, #121212) !important;
+        background-color: var(--bs-body-bg, #121212) !important;
+        color: var(--bs-body-color, #e0e0e0) !important;
+    }
+</style>
 
-    <div class="text-center p-4">
+<wa-dialog id="konamiModal" label="System Override" style="--width: 600px; --wa-panel-background-color: var(--bs-body-bg, #121212) !important;" data-turbo-permanent="true">
+    <div slot="label" class="fw-bold" style="color: <?php echo $k_theme; ?>;">
+        <i class="fa-duotone fa-user-secret me-2"></i> System Override Authorized
+    </div>
+    
+    <div class="text-center p-3">
+        <i class="fa-duotone fa-gamepad-modern fa-4x mb-3" style="color: <?php echo $k_theme; ?>;"></i>
+        <h4 class="mb-3">Konami Code Accepted</h4>
+        <p class="lead mb-4">
+            You've unlocked the developer access terminal. 
+            <br>
+            <span class="small text-muted">Just kidding. But you did find a secret!</span>
+        </p>
         
-        <?php if($k_image): ?>
-        <img src="<?php echo $k_image; ?>" 
-             class="img-fluid rounded shadow-lg mb-4 border border-secondary" 
-             alt="Secret Reward"
-             style="max-height: 300px;">
-        <?php endif; ?>
-        
-        <div class="mb-4 text-muted">
-            <?php echo $k_body; ?>
+        <div class="alert alert-secondary small text-start font-monospace mb-0 border border-secondary-subtle">
+            > INITIALIZING STARDUST ENGINE...<br>
+            > BYPASSING MAINFRAME SECURITY...<br>
+            > ACCESS GRANTED.<br>
+            > WELCOME, ADMIN.
         </div>
-        
     </div>
-
-    <wa-button slot="footer" variant="primary" href="<?php echo $k_btn_link; ?>" style="--wa-color-primary-fill: <?php echo $k_theme; ?>; --wa-color-primary-border: <?php echo $k_theme; ?>;">
-        <?php echo $k_btn_text; ?>
+    
+    <wa-button slot="footer" variant="primary" onclick="document.getElementById('konamiModal').hide()">
+        Close Terminal
     </wa-button>
-
 </wa-dialog>
 
-<script src="https://assets.raggiesoft.com/common/js/konami.js"></script>
+<script>
+    // Self-Inject Logic (Moves modal to Body to fix Z-Order stacking context issues)
+    (function() {
+        const modal = document.getElementById('konamiModal');
+        if (modal && modal.parentNode !== document.body) {
+            document.body.appendChild(modal);
+        }
+    })();
+</script>

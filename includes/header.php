@@ -342,6 +342,10 @@ if (isset($customPageAssets) && is_array($customPageAssets)) {
   </head>
   
   <body class="d-flex flex-column h-100">
+    <?php if (isset($pageConfig["enableGalaxyBg"]) && $pageConfig["enableGalaxyBg"] === true): ?>
+        <div id="stardust-labs-bg" class="position-fixed w-100 h-100" style="z-index: -1; top: 0; left: 0;"></div>
+        <script src="<?php echo $cdn_root; ?>/common/js/glowing-galaxy.js"></script>
+    <?php endif; ?>
     <a href="#main-content" class="visually-hidden-focusable p-3 m-2 bg-primary text-white rounded position-absolute start-0 top-0 z-3 text-decoration-none fw-bold">
         Skip to Main Content
     </a>
