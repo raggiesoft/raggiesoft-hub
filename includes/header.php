@@ -441,7 +441,7 @@ if (isset($customPageAssets) && is_array($customPageAssets)) {
     <header>
       <nav class="navbar navbar-expand-md sticky-top border-bottom border-primary border-opacity-50 bg-body">
         <div class="container-fluid">
-          </a>
+          
             <a class="navbar-brand d-flex align-items-center" href="<?php echo htmlspecialchars($pageConfig['navbarBrandLink'] ?? $navbarBrandLink ?? '/'); ?>">
                 
                 <?php 
@@ -473,13 +473,6 @@ if (isset($customPageAssets) && is_array($customPageAssets)) {
                 </span>
             </a>
                     
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-             <div class="hamburger-icon">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-          </button>
           
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <?php 
