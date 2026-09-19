@@ -15,17 +15,18 @@ $isArchitect = (str_starts_with($request_uri, '/about/michael-ragsdale'));
     </a>
   </li>
 
-  <li class="nav-item dropdown">
-    <a class="nav-link dropdown-toggle <?php echo $isArchitect ? 'active' : ''; ?>" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+  <li class="nav-item">
+  <wa-dropdown placement="bottom-start">
+    <wa-buttonclass="nav-link  <?php echo $isArchitect ? 'active' : ''; ? slot="trigger" appearance="plain">" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
         <i class="fa-duotone fa-user-visor me-2" aria-hidden="true"></i>The Architect
-    </a>
-    <ul class="dropdown-menu dropdown-menu-end">
-      <li><a class="dropdown-item" href="/about/michael-ragsdale"><i class="fa-duotone fa-id-card me-2"></i>Overview</a></li>
-      <li><a class="dropdown-item" href="/about/michael-ragsdale/resume"><i class="fa-duotone fa-file-user me-2"></i>Resume / CV</a></li>
-      <li><hr class="dropdown-divider"></li>
-      <li><a class="dropdown-item" href="/about/michael-ragsdale/contact"><i class="fa-duotone fa-address-card me-2"></i>Recruiter Contact</a></li>
-    </ul>
-  </li>
+    </wa-button>
+    
+      <wa-dropdown-item href="/about/michael-ragsdale"><i class="fa-duotone fa-id-card me-2"></i>Overview</wa-dropdown-item>
+      <wa-dropdown-item href="/about/michael-ragsdale/resume"><i class="fa-duotone fa-file-user me-2"></i>Resume / CV</wa-dropdown-item>
+      <wa-divider></wa-divider>
+      <wa-dropdown-item href="/about/michael-ragsdale/contact"><i class="fa-duotone fa-address-card me-2"></i>Recruiter Contact</wa-dropdown-item>
+    </wa-dropdown>
+</li>
 
   <li class="nav-item">
     <a class="nav-link" href="/engine-room">

@@ -29,35 +29,28 @@ $isLore = str_starts_with($request_uri, '/raggiesoft-books/books/crimson-node');
     </a>
   </li>
 
-  <li class="nav-item dropdown">
-    <a class="nav-link dropdown-toggle <?php echo ($isPhalanx || $isCcc || $isNorthwood || $isPiedmont) ? 'active' : ''; ?>" href="#" id="charactersDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+  <li class="nav-item">
+  <wa-dropdown placement="bottom-start">
+    <wa-button slot="trigger" appearance="plain" class="nav-link  <?php echo ($isPhalanx || $isCcc || $isNorthwood || $isPiedmont) ? 'active' : '';?>">
         <i class="fa-duotone fa-users me-2" aria-hidden="true"></i>Characters <i class="fa-solid fa-chevron-down ms-1" style="font-size: 0.8em;" aria-hidden="true"></i>
-    </a>
-    <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="charactersDropdown">
-      <li>
-        <a class="dropdown-item <?php echo $isPhalanx ? 'active' : ''; ?>" href="/engine-room/artists/crimson-node/characters/family">
+    </wa-button>
+    
+      <wa-dropdown-item href="/engine-room/artists/crimson-node/characters/family">
             <i class="fa-duotone fa-shield-halved me-2"></i>The Phalanx
-        </a>
-      </li>
-      <li>
-        <a class="dropdown-item <?php echo $isCcc ? 'active' : ''; ?>" href="/engine-room/artists/crimson-node/characters/ccc">
+        </wa-dropdown-item>
+      <wa-dropdown-item href="/engine-room/artists/crimson-node/characters/ccc">
             <i class="fa-duotone fa-graduation-cap me-2"></i>CCC Campus
-        </a>
-      </li>
-      <li><hr class="dropdown-divider border-secondary"></li>
-      <li>
-        <a class="dropdown-item <?php echo $isNorthwood ? 'active' : ''; ?>" href="/engine-room/artists/crimson-node/characters/northwood">
+        </wa-dropdown-item>
+      <wa-divider></wa-divider>
+      <wa-dropdown-item href="/engine-room/artists/crimson-node/characters/northwood">
             <i class="fa-duotone fa-school me-2"></i>Northwood High
-        </a>
-      </li>
-      <li><hr class="dropdown-divider border-secondary"></li>
-      <li>
-        <a class="dropdown-item <?php echo $isPiedmont ? 'active' : ''; ?>" href="/engine-room/artists/crimson-node/characters/piedmont">
+        </wa-dropdown-item>
+      <wa-divider></wa-divider>
+      <wa-dropdown-item href="/engine-room/artists/crimson-node/characters/piedmont">
             <i class="fa-duotone fa-building-columns me-2"></i>The University of the Piedmont
-        </a>
-      </li>
-    </ul>
-  </li>
+        </wa-dropdown-item>
+    </wa-dropdown>
+</li>
 
   <li class="nav-item">
     <a class="nav-link <?php echo $isLore ? 'active' : ''; ?>" href="/raggiesoft-books/books/crimson-node">

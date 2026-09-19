@@ -20,37 +20,30 @@ $isChars    = str_contains($uri, '/characters');
     </a>
   </li>
 
-  <li class="nav-item dropdown">
-    <a class="nav-link dropdown-toggle <?php echo ($isLore || $isChars) ? 'active' : ''; ?>" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+  <li class="nav-item">
+  <wa-dropdown placement="bottom-start">
+    <wa-buttonclass="nav-link  <?php echo ($isLore || $isChars) ? 'active' : ''; ? slot="trigger" appearance="plain">" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
       <i class="fa-duotone fa-planet-ringed me-2"></i>The Telsan Gap
-    </a>
-    <ul class="dropdown-menu dropdown-menu-end rounded-0 shadow-sm">
+    </wa-button>
+    
       <li><h6 class="dropdown-header text-uppercase text-success fw-bold">The Reality</h6></li>
-      <li>
-          <a class="dropdown-item" href="/raggiesoft-books/knox/characters">
+      <wa-dropdown-item href="/raggiesoft-books/knox/characters">
             <i class="fa-solid fa-users me-2 text-body-secondary"></i>The Twins & Pip
-          </a>
-      </li>
-      <li>
-          <a class="dropdown-item" href="/raggiesoft-books/knox/lore/aerie-hold">
+          </wa-dropdown-item>
+      <wa-dropdown-item href="/raggiesoft-books/knox/lore/aerie-hold">
             <i class="fa-solid fa-tree me-2 text-body-secondary"></i>Aerie-Hold
-          </a>
-      </li>
+          </wa-dropdown-item>
 
-      <li><hr class="dropdown-divider"></li>
+      <wa-divider></wa-divider>
       <li><h6 class="dropdown-header text-uppercase text-danger fw-bold">The Threat</h6></li>
-      <li>
-          <a class="dropdown-item" href="/raggiesoft-books/knox/lore/axiom-corp">
+      <wa-dropdown-item href="/raggiesoft-books/knox/lore/axiom-corp">
             <i class="fa-solid fa-building me-2 text-danger"></i>The Axiom
-          </a>
-      </li>
-      <li>
-          <a class="dropdown-item" href="/raggiesoft-books/knox/lore/port-telsus">
+          </wa-dropdown-item>
+      <wa-dropdown-item href="/raggiesoft-books/knox/lore/port-telsus">
             <i class="fa-solid fa-industry-windows me-2 text-danger"></i>Port Telsus
-          </a>
-      </li>
-    </ul>
-  </li>
+          </wa-dropdown-item>
+    </wa-dropdown>
+</li>
 
   <li class="nav-item border-start ms-2 ps-2">
       <a class="nav-link" href="/">

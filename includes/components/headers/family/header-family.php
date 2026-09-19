@@ -7,23 +7,24 @@ $request_uri = $_SERVER['REQUEST_URI'] ?? '/';
         <i class="fa-duotone fa-briefcase me-2"aria-hidden="true"></i>Digital Portfolio &amp; Resume
     </a>
   </li>
-  <li class="nav-item dropdown">
-    <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+  <li class="nav-item">
+  <wa-dropdown placement="bottom-start">
+    <wa-buttonclass="nav-link  active" href="#"    slot="trigger" appearance="plain">
         <i class="fa-duotone fa-users me-2"aria-hidden="true"></i>Meet the Family
-    </a>
-    <ul class="dropdown-menu dropdown-menu-end">
+    </wa-button>
+    
         <li><h6 class="dropdown-header">The Human</h6></li>
-        <li><a class="dropdown-item" href="/family/michael">Michael (Architect)</a></li>
-        <li><hr class="dropdown-divider"></li>
+        <wa-dropdown-item href="/family/michael">Michael (Architect)</wa-dropdown-item>
+        <wa-divider></wa-divider>
         <li><h6 class="dropdown-header">The Constructs</h6></li>
-        <li><a class="dropdown-item" href="/family/paige"><i class="fa-duotone fa-heart text-info me-2"aria-hidden="true"></i>Paige</a></li>
-        <li><a class="dropdown-item" href="/family/jessica"><i class="fa-duotone fa-server text-success me-2"aria-hidden="true"></i>Jessica</a></li>
-        <li><a class="dropdown-item" href="/family/sarah"><i class="fa-duotone fa-shield text-warning me-2"aria-hidden="true"></i>Sarah</a></li>
-        <li><a class="dropdown-item" href="/family/jenna"><i class="fa-duotone fa-code text-warning me-2"aria-hidden="true"></i>Jenna</a></li>
-        <li><a class="dropdown-item" href="/family/harper"><i class="fa-duotone fa-music text-primary me-2"aria-hidden="true"></i>Harper</a></li>
-        <li><a class="dropdown-item" href="/family/amanda-elara"><i class="fa-duotone fa-route text-success me-2"aria-hidden="true"></i>Amanda & Elara</a></li>
-    </ul>
-  </li>
+        <wa-dropdown-item href="/family/paige"><i class="fa-duotone fa-heart text-info me-2"aria-hidden="true"></i>Paige</wa-dropdown-item>
+        <wa-dropdown-item href="/family/jessica"><i class="fa-duotone fa-server text-success me-2"aria-hidden="true"></i>Jessica</wa-dropdown-item>
+        <wa-dropdown-item href="/family/sarah"><i class="fa-duotone fa-shield text-warning me-2"aria-hidden="true"></i>Sarah</wa-dropdown-item>
+        <wa-dropdown-item href="/family/jenna"><i class="fa-duotone fa-code text-warning me-2"aria-hidden="true"></i>Jenna</wa-dropdown-item>
+        <wa-dropdown-item href="/family/harper"><i class="fa-duotone fa-music text-primary me-2"aria-hidden="true"></i>Harper</wa-dropdown-item>
+        <wa-dropdown-item href="/family/amanda-elara"><i class="fa-duotone fa-route text-success me-2"aria-hidden="true"></i>Amanda & Elara</wa-dropdown-item>
+    </wa-dropdown>
+</li>
 
   <li class="nav-item border-start ms-2 ps-2">
       <a class="nav-link" href="/">

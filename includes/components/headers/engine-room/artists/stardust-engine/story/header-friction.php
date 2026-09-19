@@ -21,26 +21,23 @@ $isEvidence = str_contains($uri, '/the-lost-title-track');
         </a>
     </li>
 
-    <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle <?php echo $isEvidence ? 'active fw-bold text-danger' : ''; ?>" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    <li class="nav-item">
+  <wa-dropdown placement="bottom-start">
+        <wa-buttonclass="nav-link  <?php echo $isEvidence ? 'active fw-bold text-danger' : ''; ? slot="trigger" appearance="plain">" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             <i class="fa-duotone fa-folder-magnifying-glass me-2"></i>Evidence
-        </a>
-        <ul class="dropdown-menu dropdown-menu-end shadow-lg border-danger">
+        </wa-button>
+        
             <li><h6 class="dropdown-header text-uppercase text-danger fw-bold">Restricted Assets</h6></li>
-            <li>
-                <a class="dropdown-item" href="/engine-room/artists/stardust-engine/story/friction/the-lost-title-track">
+            <wa-dropdown-item href="/engine-room/artists/stardust-engine/story/friction/the-lost-title-track">
                     <i class="fa-duotone fa-ban me-2 text-danger"></i>The Lost Title Track
-                </a>
-            </li>
-            <li><hr class="dropdown-divider"></li>
+                </wa-dropdown-item>
+            <wa-divider></wa-divider>
             <li><h6 class="dropdown-header text-uppercase text-muted">Related Archives</h6></li>
-            <li>
-                <a class="dropdown-item" href="/engine-room/artists/stardust-engine/discography/1992-friction">
+            <wa-dropdown-item href="/engine-room/artists/stardust-engine/discography/1992-friction">
                     <i class="fa-duotone fa-compact-disc me-2"></i>The Canceled Album
-                </a>
-            </li>
-        </ul>
-    </li>
+                </wa-dropdown-item>
+        </wa-dropdown>
+</li>
 
     <li class="nav-item border-start ms-2 ps-2">
         <a class="nav-link" href="/engine-room/artists/stardust-engine/band/history">

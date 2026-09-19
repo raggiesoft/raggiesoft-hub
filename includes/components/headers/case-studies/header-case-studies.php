@@ -20,17 +20,18 @@ $isOverview = ($request_uri === '/case-studies');
     </a>
   </li>
 
-  <li class="nav-item dropdown">
-    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+  <li class="nav-item">
+  <wa-dropdown placement="bottom-start">
+    <wa-buttonclass="nav-link " href="#"    slot="trigger" appearance="plain">
         <i class="fa-duotone fa-user-visor me-2" aria-hidden="true"></i>The Architect
-    </a>
-    <ul class="dropdown-menu dropdown-menu-end">
-      <li><a class="dropdown-item" href="/about/michael-ragsdale"><i class="fa-duotone fa-id-card me-2"></i>Overview</a></li>
-      <li><a class="dropdown-item" href="/about/michael-ragsdale/resume"><i class="fa-duotone fa-file-user me-2"></i>Resume / CV</a></li>
-      <li><hr class="dropdown-divider"></li>
-      <li><a class="dropdown-item" href="/contact"><i class="fa-duotone fa-envelope-open me-2"></i>Contact</a></li>
-    </ul>
-  </li>
+    </wa-button>
+    
+      <wa-dropdown-item href="/about/michael-ragsdale"><i class="fa-duotone fa-id-card me-2"></i>Overview</wa-dropdown-item>
+      <wa-dropdown-item href="/about/michael-ragsdale/resume"><i class="fa-duotone fa-file-user me-2"></i>Resume / CV</wa-dropdown-item>
+      <wa-divider></wa-divider>
+      <wa-dropdown-item href="/contact"><i class="fa-duotone fa-envelope-open me-2"></i>Contact</wa-dropdown-item>
+    </wa-dropdown>
+</li>
 
   <li class="nav-item">
     <a class="nav-link" href="/about">

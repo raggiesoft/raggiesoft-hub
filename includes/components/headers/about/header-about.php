@@ -17,34 +17,36 @@ $isProfiles   = (!$isGovernance && $uri !== '/about'); // If not governance and 
     </a>
   </li>
 
-  <li class="nav-item dropdown">
-    <a class="nav-link dropdown-toggle <?php echo $isGovernance ? 'active' : ''; ?>" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+  <li class="nav-item">
+  <wa-dropdown placement="bottom-start">
+    <wa-buttonclass="nav-link  <?php echo $isGovernance ? 'active' : ''; ? slot="trigger" appearance="plain">" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
         <i class="fa-duotone fa-scale-balanced me-2"></i>Governance
-    </a>
-    <ul class="dropdown-menu dropdown-menu-end shadow-sm border-0">
-      <li><a class="dropdown-item" href="/raggiesoft-media/licensing"><i class="fa-duotone fa-file-certificate me-2 text-primary"></i>Licenses (MIT/CC)</a></li>
-      <li><a class="dropdown-item" href="/about/privacy"><i class="fa-duotone fa-shield-check me-2 text-success"></i>Privacy Policy</a></li>
-      <li><a class="dropdown-item" href="/about/terms"><i class="fa-duotone fa-gavel me-2 text-warning"></i>Terms of Service</a></li>
-      <li><a class="dropdown-item" href="/about/ai-disclaimer"><i class="fa-duotone fa-robot me-2 text-info"></i>AI Disclaimer</a></li>
-    </ul>
-  </li>
+    </wa-button>
+    
+      <wa-dropdown-item href="/raggiesoft-media/licensing"><i class="fa-duotone fa-file-certificate me-2 text-primary"></i>Licenses (MIT/CC)</wa-dropdown-item>
+      <wa-dropdown-item href="/about/privacy"><i class="fa-duotone fa-shield-check me-2 text-success"></i>Privacy Policy</wa-dropdown-item>
+      <wa-dropdown-item href="/about/terms"><i class="fa-duotone fa-gavel me-2 text-warning"></i>Terms of Service</wa-dropdown-item>
+      <wa-dropdown-item href="/about/ai-disclaimer"><i class="fa-duotone fa-robot me-2 text-info"></i>AI Disclaimer</wa-dropdown-item>
+    </wa-dropdown>
+</li>
 
-  <li class="nav-item dropdown">
-    <a class="nav-link dropdown-toggle <?php echo $isProfiles ? 'active' : ''; ?>" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+  <li class="nav-item">
+  <wa-dropdown placement="bottom-start">
+    <wa-buttonclass="nav-link  <?php echo $isProfiles ? 'active' : ''; ? slot="trigger" appearance="plain">" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
         <i class="fa-duotone fa-sitemap me-2"></i>Network Profiles
-    </a>
-    <ul class="dropdown-menu dropdown-menu-end shadow-sm border-0">
+    </wa-button>
+    
       <li><h6 class="dropdown-header text-uppercase">The Core</h6></li>
-      <li><a class="dropdown-item" href="/about/michael-ragsdale"><i class="fa-duotone fa-user-visor me-2"></i>The Architect (Portfolio)</a></li>
-      <li><a class="dropdown-item" href="/about/family"><i class="fa-duotone fa-people-group me-2"></i>The Family (DevOps)</a></li>
+      <wa-dropdown-item href="/about/michael-ragsdale"><i class="fa-duotone fa-user-visor me-2"></i>The Architect (Portfolio)</wa-dropdown-item>
+      <wa-dropdown-item href="/about/family"><i class="fa-duotone fa-people-group me-2"></i>The Family (DevOps)</wa-dropdown-item>
       
-      <li><hr class="dropdown-divider"></li>
+      <wa-divider></wa-divider>
       <li><h6 class="dropdown-header text-uppercase">The Projects</h6></li>
-      <li><a class="dropdown-item" href="/about/engine-room"><i class="fa-solid fa-industry me-2"></i>Engine Room Records</a></li>
-      <li><a class="dropdown-item" href="/about/stardust-engine"><i class="fa-duotone fa-rocket-launch me-2"></i>The Stardust Engine</a></li>
-      <li><a class="dropdown-item" href="/about/aethel"><i class="fa-duotone fa-sword me-2"></i>The Aethel Saga</a></li>
-    </ul>
-  </li>
+      <wa-dropdown-item href="/about/engine-room"><i class="fa-solid fa-industry me-2"></i>Engine Room Records</wa-dropdown-item>
+      <wa-dropdown-item href="/about/stardust-engine"><i class="fa-duotone fa-rocket-launch me-2"></i>The Stardust Engine</wa-dropdown-item>
+      <wa-dropdown-item href="/about/aethel"><i class="fa-duotone fa-sword me-2"></i>The Aethel Saga</wa-dropdown-item>
+    </wa-dropdown>
+</li>
 
   <li class="nav-item ms-2">
     <a class="nav-link" href="/contact">

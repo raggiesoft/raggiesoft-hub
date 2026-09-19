@@ -18,53 +18,47 @@ extract($navData);
     <a class="nav-link text-primary" href="/library/">Library</a>
   </li>
 
-  <li class="nav-item dropdown">
-    <a class="nav-link dropdown-toggle text-secondary" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+  <li class="nav-item">
+  <wa-dropdown placement="bottom-start">
+    <wa-buttonclass="nav-link  text-secondary" href="#"    slot="trigger" appearance="plain">
       Aethel
-    </a>
-    <ul class="dropdown-menu dropdown-menu-end">
-      <li><a class="dropdown-item" href="/library/aethel">Hub</a></li>
-      <li><a class="dropdown-item" href="/library/aethel/aethel-book">Book Index</a></li>
-      <li><a class="dropdown-item" href="/library/aethel/lore">Lore</a></li>
-    </ul>
-  </li>
+    </wa-button>
+    
+      <wa-dropdown-item href="/library/aethel">Hub</wa-dropdown-item>
+      <wa-dropdown-item href="/library/aethel/aethel-book">Book Index</wa-dropdown-item>
+      <wa-dropdown-item href="/library/aethel/lore">Lore</wa-dropdown-item>
+    </wa-dropdown>
+</li>
 
-  <li class="nav-item dropdown">
-    <a class="nav-link dropdown-toggle text-secondary" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+  <li class="nav-item">
+  <wa-dropdown placement="bottom-start">
+    <wa-buttonclass="nav-link  text-secondary" href="#"    slot="trigger" appearance="plain">
       <i class="fa-duotone fa-compass me-1"></i>Navigate
-    </a>
-    <ul class="dropdown-menu dropdown-menu-end">
-      <li>
-        <a class="dropdown-item <?php echo ($currentIndex <= 0 && !empty($currentSceneId)) ? 'disabled' : ''; ?>" 
-           href="<?php echo $prevLink; ?>">
+    </wa-button>
+    
+      <wa-dropdown-item href="<?php echo $prevLink; ?>">
            <i class="fa-duotone fa-arrow-left me-2"></i>Back
-        </a>
-      </li>
+        </wa-dropdown-item>
       
-      <li>
-        <a class="dropdown-item" href="<?php echo $upLink; ?>">
+      <wa-dropdown-item>
             <i class="fa-duotone fa-arrow-up me-2"></i>Up
-        </a>
-      </li>
+        </wa-dropdown-item>
       
-      <li>
-        <a class="dropdown-item <?php echo ($nextLink === '#') ? 'disabled' : ''; ?>" 
-           href="<?php echo $nextLink; ?>">
+      <wa-dropdown-item href="<?php echo $nextLink; ?>">
            Next<i class="fa-duotone fa-arrow-right ms-2"></i>
-        </a>
-      </li>
-    </ul>
-  </li>
+        </wa-dropdown-item>
+    </wa-dropdown>
+</li>
   
   <li class="nav-item-dropdown">
-    <a class="nav-link dropdown-toggle text-secondary" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    <wa-buttonclass="nav-link  text-secondary" href="#"    slot="trigger" appearance="plain">
       RaggieSoft
-    </a>
-    <ul class="dropdown-menu dropdown-menu-end">
-      <li><a class="dropdown-item" href="#">RaggieSoft.com</a></li>
-      <li><a class="dropdown-item active" href="/">RaggieSoft Knox</a></li>
-      <li><hr class="dropdown-divider"></li>
-      <li><a class="dropdown-item" href="/engine-room/artists/stardust-engine/contact">Contact Me</a></li>
-    </ul>
-  </li>
+    </wa-button>
+    
+      <wa-dropdown-item href="#">RaggieSoft.com</wa-dropdown-item>
+      <wa-dropdown-item href="/" class="active">RaggieSoft Knox</wa-dropdown-item>
+      <wa-divider></wa-divider>
+      <wa-dropdown-item href="/engine-room/artists/stardust-engine/contact">Contact Me</wa-dropdown-item>
+    </wa-dropdown>
+</li>
 </ul>

@@ -12,48 +12,39 @@
     </a>
   </li>
 
-  <li class="nav-item dropdown">
-    <a class="nav-link dropdown-toggle text-uppercase" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: var(--astra-text) !important;">
+  <li class="nav-item">
+  <wa-dropdown placement="bottom-start">
+    <wa-buttonclass="nav-link  text-uppercase" href="#"    style="color: var(--astra-text) !important;" slot="trigger" appearance="plain">
       <i class="fa-duotone fa-book-sparkles me-2"></i>Flight Logs
-    </a>
-    <ul class="dropdown-menu dropdown-menu-end rounded-0 shadow-lg">
+    </wa-button>
+    
       
       <li><h6 class="dropdown-header text-uppercase text-secondary">Phase I: Departure</h6></li>
-      <li>
-          <a class="dropdown-item" href="/engine-room/artists/stardust-engine/story/ad-astra/voyage/day-01">
+      <wa-dropdown-item href="/engine-room/artists/stardust-engine/story/ad-astra/voyage/day-01">
             <i class="fa-solid fa-shuttle-space me-2"></i>Day 01: Ignition
-          </a>
-      </li>
-      <li>
-          <a class="dropdown-item" href="/engine-room/artists/stardust-engine/story/ad-astra/voyage/day-02">
+          </wa-dropdown-item>
+      <wa-dropdown-item href="/engine-room/artists/stardust-engine/story/ad-astra/voyage/day-02">
             <i class="fa-solid fa-earth-americas me-2"></i>Day 02: Stabilization
-          </a>
-      </li>
-      <li>
-          <a class="dropdown-item" href="/engine-room/artists/stardust-engine/story/ad-astra/voyage/day-03">
+          </wa-dropdown-item>
+      <wa-dropdown-item href="/engine-room/artists/stardust-engine/story/ad-astra/voyage/day-03">
             <i class="fa-solid fa-clock me-2"></i>Day 03: Ship's Time
-          </a>
-      </li>
+          </wa-dropdown-item>
       
-      <li><hr class="dropdown-divider border-secondary"></li>
+      <wa-divider></wa-divider>
       
       <li><h6 class="dropdown-header text-uppercase text-secondary">Phase II: The Void</h6></li>
-      <li>
-          <a class="dropdown-item" href="/engine-room/artists/stardust-engine/story/ad-astra/voyage/day-10">
+      <wa-dropdown-item href="/engine-room/artists/stardust-engine/story/ad-astra/voyage/day-10">
             <i class="fa-solid fa-stars me-2"></i>Day 10: Harmonic Velocity
-          </a>
-      </li>
+          </wa-dropdown-item>
       
-      <li><hr class="dropdown-divider border-secondary"></li>
+      <wa-divider></wa-divider>
       
       <li><h6 class="dropdown-header text-uppercase text-secondary">Phase III: Return</h6></li>
-      <li>
-          <a class="dropdown-item" href="/engine-room/artists/stardust-engine/story/ad-astra/voyage/day-21">
+      <wa-dropdown-item href="/engine-room/artists/stardust-engine/story/ad-astra/voyage/day-21">
             <i class="fa-solid fa-meteor me-2"></i>Day 21: Hard Reset
-          </a>
-      </li>
-    </ul>
-  </li>
+          </wa-dropdown-item>
+    </wa-dropdown>
+</li>
 
   <li class="nav-item">
     <a class="nav-link text-uppercase" href="/engine-room/artists/stardust-engine/discography/1995-the-warehouse-tapes/ad-astra" style="color: var(--astra-warning) !important;">

@@ -30,28 +30,29 @@
     </a>
   </li>
 
-  <li class="nav-item dropdown">
-    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+  <li class="nav-item">
+  <wa-dropdown placement="bottom-start">
+    <wa-buttonclass="nav-link " href="#"    slot="trigger" appearance="plain">
         <i class="fa-duotone fa-users me-2"></i>The Band
-    </a>
-    <ul class="dropdown-menu dropdown-menu-end shadow-lg border-secondary">
-        <li><a class="dropdown-item" href="/engine-room/artists/stardust-engine/band">Overview</a></li>
-        <li><a class="dropdown-item" href="/engine-room/artists/stardust-engine/band/history">History & Lore</a></li>
+    </wa-button>
+    
+        <wa-dropdown-item href="/engine-room/artists/stardust-engine/band">Overview</wa-dropdown-item>
+        <wa-dropdown-item href="/engine-room/artists/stardust-engine/band/history">History & Lore</wa-dropdown-item>
         
-        <li><hr class="dropdown-divider"></li>
+        <wa-divider></wa-divider>
         
         <li><h6 class="dropdown-header text-uppercase small opacity-75">The O'Connells</h6></li>
-        <li><a class="dropdown-item" href="/engine-room/artists/stardust-engine/band/ryan-oconnell"><i class="fa-duotone fa-wheelchair me-2 opacity-50"></i>Ryan O'Connell</a></li>
-        <li><a class="dropdown-item" href="/engine-room/artists/stardust-engine/band/cassidy-oconnell"><i class="fa-duotone fa-microphone me-2 opacity-50"></i>Cassidy O'Connell</a></li>
-        <li><a class="dropdown-item" href="/engine-room/artists/stardust-engine/band/holly-oconnell"><i class="fa-duotone fa-briefcase me-2 opacity-50"></i>Holly O'Connell</a></li>
+        <wa-dropdown-item href="/engine-room/artists/stardust-engine/band/ryan-oconnell"><i class="fa-duotone fa-wheelchair me-2 opacity-50"></i>Ryan O'Connell</wa-dropdown-item>
+        <wa-dropdown-item href="/engine-room/artists/stardust-engine/band/cassidy-oconnell"><i class="fa-duotone fa-microphone me-2 opacity-50"></i>Cassidy O'Connell</wa-dropdown-item>
+        <wa-dropdown-item href="/engine-room/artists/stardust-engine/band/holly-oconnell"><i class="fa-duotone fa-briefcase me-2 opacity-50"></i>Holly O'Connell</wa-dropdown-item>
         
-        <li><hr class="dropdown-divider"></li>
+        <wa-divider></wa-divider>
         
         <li><h6 class="dropdown-header text-uppercase small opacity-75">The Wrights</h6></li>
-        <li><a class="dropdown-item" href="/engine-room/artists/stardust-engine/band/evan-wright"><i class="fa-duotone fa-guitar me-2 opacity-50"></i>Evan Wright</a></li>
-        <li><a class="dropdown-item" href="/engine-room/artists/stardust-engine/band/tyler-wright"><i class="fa-duotone fa-drum me-2 opacity-50"></i>Tyler Wright</a></li>
-    </ul>
-  </li>
+        <wa-dropdown-item href="/engine-room/artists/stardust-engine/band/evan-wright"><i class="fa-duotone fa-guitar me-2 opacity-50"></i>Evan Wright</wa-dropdown-item>
+        <wa-dropdown-item href="/engine-room/artists/stardust-engine/band/tyler-wright"><i class="fa-duotone fa-drum me-2 opacity-50"></i>Tyler Wright</wa-dropdown-item>
+    </wa-dropdown>
+</li>
 
   <li class="nav-item">
     <a class="nav-link" href="/contact">

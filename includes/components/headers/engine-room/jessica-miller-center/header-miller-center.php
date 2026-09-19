@@ -12,23 +12,22 @@
         </a>
     </li>
     
-    <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    <li class="nav-item">
+  <wa-dropdown placement="bottom-start">
+        <wa-buttonclass="nav-link " href="#"    slot="trigger" appearance="plain">
             <i class="fa-duotone fa-wheelchair me-2"></i>The Standard
-        </a>
-        <ul class="dropdown-menu dropdown-menu-dark shadow-lg border-secondary">
+        </wa-button>
+        
             <li><span class="dropdown-header text-uppercase small letter-spacing-1">Universal Design</span></li>
-            <li><a class="dropdown-item" href="#"><i class="fa-solid fa-eye-slash me-2 text-muted"></i>Low-Sensory Lighting</a></li>
-            <li><a class="dropdown-item" href="#"><i class="fa-solid fa-volume-xmark me-2 text-muted"></i>Acoustic Zoning</a></li>
-            <li>
-                <a class="dropdown-item" href="/engine-room/jessica-miller-center/destination-dispatch-elevators">
+            <wa-dropdown-item href="#"><i class="fa-solid fa-eye-slash me-2 text-muted"></i>Low-Sensory Lighting</wa-dropdown-item>
+            <wa-dropdown-item href="#"><i class="fa-solid fa-volume-xmark me-2 text-muted"></i>Acoustic Zoning</wa-dropdown-item>
+            <wa-dropdown-item href="/engine-room/jessica-miller-center/destination-dispatch-elevators">
                     <i class="fa-solid fa-elevator me-2 text-muted"></i>Destination Dispatch
-                </a>
-            </li>
-            <li><hr class="dropdown-divider border-secondary"></li>
-            <li><a class="dropdown-item" href="#"><i class="fa-solid fa-book-open me-2 text-primary"></i>Research Library</a></li>
-        </ul>
-    </li>
+                </wa-dropdown-item>
+            <wa-divider></wa-divider>
+            <wa-dropdown-item href="#"><i class="fa-solid fa-book-open me-2 text-primary"></i>Research Library</wa-dropdown-item>
+        </wa-dropdown>
+</li>
     
     <li class="nav-item">
         <a class="nav-link" href="#">
