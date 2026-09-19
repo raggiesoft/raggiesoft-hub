@@ -362,11 +362,24 @@ if (isset($customPageAssets) && is_array($customPageAssets)) {
             width: 100%;
         }
     }
+
+    /* Missing responsive flex utilities from custom grid */
     @media (min-width: 768px) {
+        .flex-md-row {
+            flex-direction: row !important;
+        }
+        .align-items-md-center {
+            align-items: center !important;
+        }
+        .py-md-0 {
+            padding-top: 0 !important;
+            padding-bottom: 0 !important;
+        }
         .mobile-nav-menu {
             width: auto !important; /* Undo w-100 on desktop */
         }
     }
+
         
         /* Ensure navbar collapse breaks to a new line on mobile */
         @media (max-width: 767.98px) {
