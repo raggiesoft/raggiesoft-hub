@@ -122,12 +122,12 @@ if (!isset($pageConfig['view'])) {
 }
 
 // B.3 DYNAMIC CHARACTER ROUTING
-if (!isset($pageConfig['view']) && strpos(trim($request_uri, '/'), 'character/') === 0) {
+if (!isset($pageConfig['view']) && preg_match('#^/?character/(.+)$#', $request_uri, $matches)) {
     $characterListPath = ROOT_PATH . '/../raggiesoft-assets/raggiesoft-books/json/character-list.json';
     if (file_exists($characterListPath)) {
         $characters = json_decode(file_get_contents($characterListPath), true);
         if (json_last_error() === JSON_ERROR_NONE) {
-            $slug = substr(trim($request_uri, '/'), 10); // remove 'character/'
+            $slug = $matches[1];
             foreach ($characters as $char) {
                 if (isset($char['slug']) && $char['slug'] === $slug) {
                     $pageConfig['view'] = 'pages/raggiesoft-books/character-profile';

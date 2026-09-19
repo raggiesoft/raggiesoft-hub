@@ -31,7 +31,7 @@ if ($mdFile && file_exists($mdFile)) {
     <div class="mb-4">
         <wa-breadcrumb>
             <wa-breadcrumb-item href="/">Home</wa-breadcrumb-item>
-            <wa-breadcrumb-item href="/characters">Characters</wa-breadcrumb-item>
+            <wa-breadcrumb-item href="/raggiesoft-books/character-list">Characters</wa-breadcrumb-item>
             <wa-breadcrumb-item><?php echo htmlspecialchars($fullName); ?></wa-breadcrumb-item>
         </wa-breadcrumb>
     </div>
