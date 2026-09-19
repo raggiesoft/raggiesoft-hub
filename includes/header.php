@@ -188,6 +188,12 @@ if (isset($customPageAssets) && is_array($customPageAssets)) {
     <?php endforeach; ?>    
 
     <!--<script src="https://kit.fontawesome.com/ec060982d4.js" crossorigin="anonymous"></script>-->
+    <!-- Web Awesome Pro Kit -->
+    <link rel="stylesheet" href="https://ka-p.webawesome.com/kit/bb765cf132c5414e/webawesome@3.10.0/styles/themes/default.css">
+    <link rel="stylesheet" href="https://ka-p.webawesome.com/kit/bb765cf132c5414e/webawesome@3.10.0/styles/utilities.css">
+    <link rel="stylesheet" href="https://ka-p.webawesome.com/kit/bb765cf132c5414e/webawesome@3.10.0/styles/native.css">
+    <script type="module" src="https://ka-p.webawesome.com/kit/bb765cf132c5414e/webawesome@3.10.0/webawesome.loader.js"></script>
+
     <link rel="stylesheet" href="https://kit.fontawesome.com/ec060982d4.css" crossorigin="anonymous">
 
     <?php foreach ($critical_images as $imgUrl): ?>
