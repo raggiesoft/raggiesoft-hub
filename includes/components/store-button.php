@@ -23,10 +23,10 @@ $physical = [
 
 // Configuration array for streaming platforms
 $platforms = [
-    'spotify' => ['color' => 'success', 'icon' => 'fa-brands fa-spotify', 'text' => 'Spotify'],
-    'apple'   => ['color' => 'danger',  'icon' => 'fa-brands fa-apple',   'text' => 'Apple Music'],
-    'amazon'  => ['color' => 'brand',    'icon' => 'fa-brands fa-amazon',  'text' => 'Amazon Music'],
-    'youtube' => ['color' => 'danger',  'icon' => 'fa-brands fa-youtube', 'text' => 'YouTube']
+    'spotify' => ['class' => 'dsp-spotify', 'icon' => 'fa-brands fa-spotify', 'text' => 'Spotify'],
+    'apple'   => ['class' => 'dsp-apple',   'icon' => 'fa-brands fa-apple',   'text' => 'Apple Music'],
+    'amazon'  => ['class' => 'dsp-amazon',  'icon' => 'fa-brands fa-amazon',  'text' => 'Amazon Music'],
+    'youtube' => ['class' => 'dsp-youtube', 'icon' => 'fa-brands fa-youtube', 'text' => 'YouTube']
 ];
 
 // Configuration array for physical merchandise
@@ -74,6 +74,25 @@ wa-button-group.dynamic-store-group wa-dropdown wa-button::part(base) {
 wa-button-group.dynamic-store-group wa-dropdown wa-button:hover::part(base) {
     z-index: 3 !important;
 }
+
+/* DSP Custom Colors */
+wa-button.dsp-spotify::part(base) { background-color: #1DB954 !important; border-color: #1DB954 !important; color: white !important; }
+wa-button.dsp-spotify:hover::part(base) { background-color: #1ed760 !important; border-color: #1ed760 !important; }
+
+wa-button.dsp-apple::part(base) { background-color: #FA243C !important; border-color: #FA243C !important; color: white !important; }
+wa-button.dsp-apple:hover::part(base) { background-color: #ff4055 !important; border-color: #ff4055 !important; }
+
+wa-button.dsp-amazon::part(base) { background-color: #00A8E1 !important; border-color: #00A8E1 !important; color: white !important; }
+wa-button.dsp-amazon:hover::part(base) { background-color: #00c0ff !important; border-color: #00c0ff !important; }
+
+wa-button.dsp-youtube::part(base) { background-color: #FF0000 !important; border-color: #FF0000 !important; color: white !important; }
+wa-button.dsp-youtube:hover::part(base) { background-color: #ff3333 !important; border-color: #ff3333 !important; }
+
+/* DSP Custom Text Colors for Dropdown Icons */
+.text-dsp-spotify { color: #1DB954 !important; }
+.text-dsp-apple { color: #FA243C !important; }
+.text-dsp-amazon { color: #00A8E1 !important; }
+.text-dsp-youtube { color: #FF0000 !important; }
 </style>
 
 <div class="d-flex flex-wrap gap-2">
@@ -82,15 +101,15 @@ wa-button-group.dynamic-store-group wa-dropdown wa-button:hover::part(base) {
         <wa-button href="<?php echo $urls[$default]; ?>" 
            target="_blank"
            size="<?php echo htmlspecialchars($size); ?>"
-           variant="<?php echo $platforms[$default]['color']; ?>"
-           class="main-store-btn fw-bold"
+           class="main-store-btn fw-bold <?php echo $platforms[$default]['class']; ?>"
+           
            data-default-text="<?php echo $type === 'artist' ? 'Artist on' : 'Listen on'; ?>">
             <i slot="start" class="main-store-icon <?php echo $platforms[$default]['icon']; ?>"></i>
             <span class="main-store-text"><?php echo $type === 'artist' ? 'Artist on ' : 'Listen on '; echo $platforms[$default]['text']; ?></span>
         </wa-button>
         
         <wa-dropdown placement="bottom-end">
-            <wa-button slot="trigger" size="<?php echo htmlspecialchars($size); ?>" variant="<?php echo $platforms[$default]['color']; ?>" class="toggle-store-btn px-2">
+            <wa-button slot="trigger" size="<?php echo htmlspecialchars($size); ?>" class="main-store-btn fw-bold <?php echo $platforms[$default]['class']; ?>" class="toggle-store-btn px-2 <?php echo $platforms[$default]['class']; ?>">
                 <i class="fa-solid fa-chevron-down"></i>
             </wa-button>
             <wa-menu class="bg-body rounded-3 shadow-lg border border-secondary border-opacity-25" style="--wa-panel-background-color: inherit; padding: 0; overflow: hidden;">
@@ -103,11 +122,11 @@ wa-button-group.dynamic-store-group wa-dropdown wa-button:hover::part(base) {
                         <wa-menu-item class="store-selector-link"
                            value="<?php echo $key; ?>"
                            data-platform="<?php echo $key; ?>"
-                           data-color="<?php echo $data['color']; ?>"
+                           data-class="<?php echo $data['class']; ?>"
                            data-icon="<?php echo $data['icon']; ?>"
                            data-name="<?php echo $data['text']; ?>"
                            data-url="<?php echo $urls[$key]; ?>">
-                            <i slot="prefix" class="<?php echo $data['icon']; ?> text-<?php echo $data['color']; ?>"></i> 
+                            <i slot="prefix" class="<?php echo $data['icon']; ?> text-<?php echo $data['class']; ?>"></i> 
                             <a href="<?php echo $urls[$key]; ?>" target="_blank" class="text-decoration-none text-body fw-bold stretched-link">
                                 <?php echo $data['text']; ?>
                             </a>
