@@ -22,6 +22,7 @@ $isContact = ($request_uri === '/contact');
   <wa-dropdown placement="bottom-start">
     <wa-button slot="trigger" appearance="plain" with-caret class="<?php echo $isArchitect ? 'text-primary' : 'text-body-secondary'; ?>">
       <i slot="start" class="fa-duotone fa-user-visor"></i> The Architect
+        <i slot="suffix" class="fa-solid fa-circle-caret-down ms-2 opacity-50"></i>
     </wa-button>
     <wa-menu>
       <wa-dropdown-item href="/about/michael-ragsdale">
@@ -43,6 +44,7 @@ $isContact = ($request_uri === '/contact');
   <wa-dropdown placement="bottom-start">
     <wa-button slot="trigger" appearance="plain" with-caret class="<?php echo $isCreative ? 'text-primary' : 'text-body-secondary'; ?>">
       <i slot="start" class="fa-duotone fa-layer-group"></i> Creative Works
+        <i slot="suffix" class="fa-solid fa-circle-caret-down ms-2 opacity-50"></i>
     </wa-button>
     <wa-menu>
       <div class="px-3 py-2 small text-uppercase fw-bold ">Multimedia</div>
@@ -70,6 +72,7 @@ $isContact = ($request_uri === '/contact');
   <wa-dropdown placement="bottom-start">
     <wa-button slot="trigger" appearance="plain" with-caret class="<?php echo $isMedia ? 'text-primary' : 'text-body-secondary'; ?>">
       <i slot="start" class="fa-duotone fa-building"></i> RaggieSoft Media
+        <i slot="suffix" class="fa-solid fa-circle-caret-down ms-2 opacity-50"></i>
     </wa-button>
     <wa-menu>
       <div class="px-3 py-2 small text-uppercase fw-bold ">B2B Operations</div>

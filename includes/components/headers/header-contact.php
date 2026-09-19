@@ -17,8 +17,9 @@ $isArchitect = (str_starts_with($request_uri, '/about/michael-ragsdale'));
 
   
   <wa-dropdown placement="bottom-start">
-    <wa-button class="nav-link  <?php echo $isArchitect ? 'active' : ''; ?>" slot="trigger" appearance="plain">" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    <wa-button class="nav-link  <?php echo $isArchitect ? 'active' : ''; ?>" slot="trigger" appearance="plain">
         <i class="fa-duotone fa-user-visor me-2" aria-hidden="true"></i>The Architect
+     <i slot="suffix" class="fa-solid fa-circle-caret-down ms-2 opacity-50"></i>
     </wa-button>
     <wa-menu>
       <wa-dropdown-item href="/about/michael-ragsdale"><i class="fa-duotone fa-id-card me-2"></i>Overview</wa-dropdown-item>

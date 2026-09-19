@@ -19,8 +19,9 @@ $isProfiles   = (!$isGovernance && $uri !== '/about'); // If not governance and 
 
   
   <wa-dropdown placement="bottom-start">
-    <wa-button class="nav-link  <?php echo $isGovernance ? 'active' : ''; ?>" slot="trigger" appearance="plain">" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    <wa-button class="nav-link  <?php echo $isGovernance ? 'active' : ''; ?>" slot="trigger" appearance="plain">
         <i class="fa-duotone fa-scale-balanced me-2"></i>Governance
+     <i slot="suffix" class="fa-solid fa-circle-caret-down ms-2 opacity-50"></i>
     </wa-button>
     <wa-menu>
       <wa-dropdown-item href="/raggiesoft-media/licensing"><i class="fa-duotone fa-file-certificate me-2 text-primary"></i>Licenses (MIT/CC)</wa-dropdown-item>
@@ -33,8 +34,9 @@ $isProfiles   = (!$isGovernance && $uri !== '/about'); // If not governance and 
 
   
   <wa-dropdown placement="bottom-start">
-    <wa-button class="nav-link  <?php echo $isProfiles ? 'active' : ''; ?>" slot="trigger" appearance="plain">" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    <wa-button class="nav-link  <?php echo $isProfiles ? 'active' : ''; ?>" slot="trigger" appearance="plain">
         <i class="fa-duotone fa-sitemap me-2"></i>Network Profiles
+     <i slot="suffix" class="fa-solid fa-circle-caret-down ms-2 opacity-50"></i>
     </wa-button>
     <wa-menu>
       <div class="px-3 py-2 small text-uppercase  fw-bold text-uppercase">The Core</div>

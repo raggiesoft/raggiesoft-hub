@@ -13,7 +13,7 @@
                 
                 <div class="col-md-4">
                     <wa-card class="h-100 shadow-sm w-100" style="--border-color: var(--wa-color-success);">
-                        <div slot="header" class="bg-success text-white p-3 mx-n4 mt-n4 mb-3 border-bottom">
+                        <div slot="image" class="bg-success text-white p-3 border-bottom">
                             <div class="d-flex align-items-center">
                                 <i class="fa-solid fa-user-pen fa-2x me-3" aria-hidden="true"></i>
                                 <div>
@@ -38,7 +38,7 @@
 
                 <div class="col-md-4">
                     <wa-card class="h-100 shadow-sm w-100" style="--border-color: var(--wa-color-primary);">
-                        <div slot="header" class="bg-primary text-white p-3 mx-n4 mt-n4 mb-3 border-bottom">
+                        <div slot="image" class="bg-primary text-white p-3 border-bottom">
                             <div class="d-flex align-items-center">
                                 <i class="fa-solid fa-sparkles fa-2x me-3" aria-hidden="true"></i>
                                 <div>
@@ -63,7 +63,7 @@
 
                 <div class="col-md-4">
                     <wa-card class="h-100 shadow-sm w-100" style="--border-color: var(--wa-color-warning);">
-                        <div slot="header" class="bg-warning text-dark p-3 mx-n4 mt-n4 mb-3 border-bottom">
+                        <div slot="image" class="bg-warning text-dark p-3 border-bottom">
                             <div class="d-flex align-items-center">
                                 <i class="fa-solid fa-music fa-2x me-3" aria-hidden="true"></i>
                                 <div>

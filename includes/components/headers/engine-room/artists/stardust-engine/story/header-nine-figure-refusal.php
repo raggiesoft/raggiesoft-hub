@@ -50,8 +50,9 @@ $isEpilogue = str_contains($uri, '/frost-interview');
 
     
   <wa-dropdown placement="bottom-start">
-    <wa-button class="nav-link  <?php echo $isEvidence ? 'active fw-bold' : ''; ?>" slot="trigger" appearance="plain">" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    <wa-button class="nav-link  <?php echo $isEvidence ? 'active fw-bold' : ''; ?>" slot="trigger" appearance="plain">
             <i class="fa-duotone fa-file-magnifying-glass me-2"></i>The Case File
+         <i slot="suffix" class="fa-solid fa-circle-caret-down ms-2 opacity-50"></i>
         </wa-button>
     <wa-menu>
       <div class="dropdown-menu dropdown-menu-end shadow-lg border-danger mega-menu-case-file p-0">
@@ -97,8 +98,9 @@ $isEpilogue = str_contains($uri, '/frost-interview');
 
     
   <wa-dropdown placement="bottom-start">
-        <wa-button class="nav-link  <?php echo $isAssets ? 'active fw-bold' : ''; ?>" slot="trigger" appearance="plain">" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        <wa-button class="nav-link  <?php echo $isAssets ? 'active fw-bold' : ''; ?>" slot="trigger" appearance="plain">
             <i class="fa-duotone fa-building me-2"></i>Legacy
+         <i slot="suffix" class="fa-solid fa-circle-caret-down ms-2 opacity-50"></i>
         </wa-button>
         
             <div class="px-3 py-2 small text-uppercase  fw-bold text-uppercase text-success fw-bold">Real Estate</div>
@@ -116,8 +118,9 @@ $isEpilogue = str_contains($uri, '/frost-interview');
 
      
   <wa-dropdown placement="bottom-start">
-    <wa-button class="nav-link  <?php echo $isEpilogue ? 'active fw-bold' : ''; ?>" slot="trigger" appearance="plain">" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    <wa-button class="nav-link  <?php echo $isEpilogue ? 'active fw-bold' : ''; ?>" slot="trigger" appearance="plain">
             <i class="fa-duotone fa-building me-2"></i>Epilogue
+         <i slot="suffix" class="fa-solid fa-circle-caret-down ms-2 opacity-50"></i>
         </wa-button>
     <wa-menu>
       <div class="px-3 py-2 small text-uppercase  fw-bold text-uppercase text-success fw-bold">Epilogue</div>

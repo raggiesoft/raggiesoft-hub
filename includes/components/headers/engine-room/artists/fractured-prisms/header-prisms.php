@@ -26,6 +26,7 @@
   <wa-dropdown placement="bottom-start">
     <wa-button  href="#"    slot="trigger" appearance="plain">
         <i class="fa-duotone fa-ghost me-2"></i>The Residents
+        <i slot="suffix" class="fa-solid fa-circle-caret-down ms-2 opacity-50"></i>
     </wa-button>
         <wa-menu>
       <wa-dropdown-item href="/engine-room/artists/fractured-prisms/band">Overview</wa-dropdown-item>

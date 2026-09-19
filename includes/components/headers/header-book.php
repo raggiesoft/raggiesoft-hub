@@ -22,6 +22,7 @@ extract($navData);
   <wa-dropdown placement="bottom-start">
     <wa-button class="nav-link  " href="#"    slot="trigger" appearance="plain">
       Aethel
+        <i slot="suffix" class="fa-solid fa-circle-caret-down ms-2 opacity-50"></i>
     </wa-button>
     <wa-menu>
       <wa-dropdown-item href="/library/aethel">Hub</wa-dropdown-item>
@@ -35,6 +36,7 @@ extract($navData);
   <wa-dropdown placement="bottom-start">
     <wa-button class="nav-link  " href="#"    slot="trigger" appearance="plain">
       <i class="fa-duotone fa-compass me-1"></i>Navigate
+        <i slot="suffix" class="fa-solid fa-circle-caret-down ms-2 opacity-50"></i>
     </wa-button>
     <wa-menu>
       <wa-dropdown-item href="<?php echo $prevLink; ?>">
@@ -55,6 +57,7 @@ extract($navData);
   
     <wa-button class="nav-link  " href="#"    slot="trigger" appearance="plain">
       RaggieSoft
+        <i slot="suffix" class="fa-solid fa-circle-caret-down ms-2 opacity-50"></i>
     </wa-button>
     
       <wa-dropdown-item href="#">RaggieSoft.com</wa-dropdown-item>

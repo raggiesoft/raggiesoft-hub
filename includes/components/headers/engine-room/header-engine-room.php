@@ -24,6 +24,7 @@ $isArchives = (
   <wa-dropdown placement="bottom-start">
     <wa-button slot="trigger" appearance="plain" with-caret class="<?php echo $isRoster ? 'text-primary' : ''; ?>">
       <i slot="start" class="fa-duotone fa-compact-disc"></i> The Roster
+        <i slot="suffix" class="fa-solid fa-circle-caret-down ms-2 opacity-50"></i>
     </wa-button>
     <wa-menu>
       <wa-dropdown-item href="/engine-room/artists">View Full Roster</wa-dropdown-item>
@@ -53,6 +54,7 @@ $isArchives = (
   <wa-dropdown placement="bottom-start">
     <wa-button slot="trigger" appearance="plain" with-caret class="<?php echo $isArchives ? 'text-primary' : ''; ?>">
       <i slot="start" class="fa-duotone fa-box-archive"></i> The Archives
+        <i slot="suffix" class="fa-solid fa-circle-caret-down ms-2 opacity-50"></i>
     </wa-button>
     <wa-menu>
       <div class="px-3 py-2 small text-uppercase  fw-bold">Company History</div>
@@ -76,6 +78,7 @@ $isArchives = (
   <wa-dropdown placement="bottom-end">
     <wa-button slot="trigger" appearance="plain" with-caret class="text-body-secondary">
       <i slot="start" class="fa-duotone fa-briefcase"></i> Industry
+        <i slot="suffix" class="fa-solid fa-circle-caret-down ms-2 opacity-50"></i>
     </wa-button>
     <wa-menu>
       <div class="px-3 py-2 small text-uppercase  fw-bold">B2B Operations</div>

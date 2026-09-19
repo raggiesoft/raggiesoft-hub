@@ -16,6 +16,7 @@
   <wa-dropdown placement="bottom-start">
     <wa-button class="nav-link  text-uppercase" href="#"    style="color: var(--astra-text) !important;" slot="trigger" appearance="plain">
       <i class="fa-duotone fa-book-sparkles me-2"></i>Flight Logs
+        <i slot="suffix" class="fa-solid fa-circle-caret-down ms-2 opacity-50"></i>
     </wa-button>
     <wa-menu>
       <div class="px-3 py-2 small text-uppercase  fw-bold text-uppercase ">Phase I: Departure</div>

@@ -22,8 +22,9 @@ $isChars    = str_contains($uri, '/characters');
 
   
   <wa-dropdown placement="bottom-start">
-    <wa-button class="nav-link  <?php echo ($isLore || $isChars) ? 'active' : ''; ?>" slot="trigger" appearance="plain">" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    <wa-button class="nav-link  <?php echo ($isLore || $isChars) ? 'active' : ''; ?>" slot="trigger" appearance="plain">
       <i class="fa-duotone fa-planet-ringed me-2"></i>The Telsan Gap
+     <i slot="suffix" class="fa-solid fa-circle-caret-down ms-2 opacity-50"></i>
     </wa-button>
     <wa-menu>
       <div class="px-3 py-2 small text-uppercase  fw-bold text-uppercase text-success fw-bold">The Reality</div>
