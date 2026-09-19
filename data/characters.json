@@ -1,0 +1,17 @@
+{
+  "characters": [
+    {
+      "id": "oconnell-holly",
+      "name": "Holly O'Connell",
+      "subtitle": "Manager, CEO, CFO",
+      "narratives": [
+        "stardust-engine",
+        "crimson-node"
+      ],
+      "tags": ["fictional", "unbroken"],
+      "image_path": "stardust-engine/images/characters/oconnell-holly.jpg",
+      "markdown_file": "oconnell-holly.md",
+      "is_public": true
+    }
+  ]
+}
