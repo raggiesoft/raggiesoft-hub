@@ -109,7 +109,7 @@ wa-button.dsp-youtube:hover::part(base) { background-color: #ff3333 !important; 
         </wa-button>
         
         <wa-dropdown placement="bottom-end">
-            <wa-button slot="trigger" size="<?php echo htmlspecialchars($size); ?>" class="main-store-btn fw-bold <?php echo $platforms[$default]['class']; ?>" class="toggle-store-btn px-2 <?php echo $platforms[$default]['class']; ?>">
+            <wa-button slot="trigger" size="<?php echo htmlspecialchars($size); ?>" class="toggle-store-btn px-2 <?php echo $platforms[$default]['class']; ?>">
                 <i class="fa-solid fa-chevron-down"></i>
             </wa-button>
             <wa-menu class="bg-body rounded-3 shadow-lg border border-secondary border-opacity-25" style="--wa-panel-background-color: inherit; padding: 0; overflow: hidden;">

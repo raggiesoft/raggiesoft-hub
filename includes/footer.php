@@ -134,11 +134,10 @@ function initializeStorePreferences() {
     }
 
     document.querySelectorAll('.store-selector-link').forEach(link => {
-        // Remove old listeners to prevent duplicates on SPA load
-        const newLink = link.cloneNode(true);
-        link.parentNode.replaceChild(newLink, link);
+        if (link.dataset.listenerAttached) return;
+        link.dataset.listenerAttached = 'true';
         
-        newLink.addEventListener('click', function(e) {
+        link.addEventListener('click', function(e) {
             const platform = this.dataset.platform;
             localStorage.setItem('preferredMusicStore', platform);
             
