@@ -2,4 +2,61 @@
 // includes/components/headers/engine-room/artists/fractured-prisms/header-prisms.php
 // Dedicated navigation for the Fractured Prisms artist sub-site.
 ?>
-<div class="d-flex flex-wrap align-items-center gap-2 ms-auto"> <wa-button appearance="plain" href="/engine-room/artists/fractured-prisms"> <i slot="start" class="fa-duotone fa-house me-2"></i>The Square </wa-button> <wa-button appearance="plain" href="/engine-room/artists/fractured-prisms/story"> <i slot="start" class="fa-duotone fa-book-journal-whills me-2"></i>Lore </wa-button> <wa-button appearance="plain" href="/engine-room/artists/fractured-prisms/discography"> <i slot="start" class="fa-duotone fa-compact-disc me-2"></i>Discography </wa-button> <wa-dropdown placement="bottom-start"> <wa-button href="#" slot="trigger" appearance="plain"> <i class="fa-duotone fa-ghost me-2"></i>The Residents </wa-button> <wa-menu> <wa-dropdown-item href="/engine-room/artists/fractured-prisms/band">Overview</wa-dropdown-item> <wa-dropdown-item href="/engine-room/artists/fractured-prisms/story">History & Lore</wa-dropdown-item> <wa-divider></wa-divider> <div class="px-3 py-2 small text-uppercase fw-bold text-uppercase small">The Surviving Architects</div> <wa-dropdown-item href="/engine-room/artists/fractured-prisms/band/claire-manning"><i class="fa-duotone fa-microphone me-2"></i>Claire Manning</wa-dropdown-item> <wa-dropdown-item href="/engine-room/artists/fractured-prisms/band/rhys-manning"><i class="fa-duotone fa-keyboard me-2"></i>Rhys Manning</wa-dropdown-item> <wa-divider></wa-divider> <div class="px-3 py-2 small text-uppercase fw-bold text-uppercase small">The Echoes</div> <wa-dropdown-item href="/engine-room/artists/fractured-prisms/band/the-missing-four"><i class="fa-duotone fa-users-slash me-2"></i>The Missing Four</wa-dropdown-item> </wa-menu> </wa-dropdown> <wa-button appearance="plain" href="/contact"> <i slot="start" class="fa-duotone fa-envelope me-2"></i>Contact </wa-button> <wa-button appearance="plain" href="/engine-room" > <i slot="start" class="fa-solid fa-arrow-turn-up me-2"></i>Engine Room HQ </wa-button> </div>
+<div class=\"d-flex flex-wrap align-items-center gap-2 ms-auto\">
+  
+  
+    <wa-button appearance="plain" href="/engine-room/artists/fractured-prisms">
+        <i slot=\"start\" class=\"fa-duotone fa-house me-2\"></i>The Square
+    </wa-button>
+  
+
+  
+    <wa-button appearance="plain" href="/engine-room/artists/fractured-prisms/story">
+        <i slot=\"start\" class=\"fa-duotone fa-book-journal-whills me-2\"></i>Lore
+    </wa-button>
+  
+
+  
+    <wa-button appearance="plain" href="/engine-room/artists/fractured-prisms/discography">
+        <i slot=\"start\" class=\"fa-duotone fa-compact-disc me-2\"></i>Discography
+    </wa-button>
+  
+
+  
+  <wa-dropdown placement="bottom-start">
+    <wa-button  href="#"    slot="trigger" appearance="plain">
+        <i class="fa-duotone fa-ghost me-2"></i>The Residents
+    </wa-button>
+    <wa-menu>
+      <wa-dropdown-item href="/engine-room/artists/fractured-prisms/band">Overview</wa-dropdown-item>
+        <wa-dropdown-item href="/engine-room/artists/fractured-prisms/story">History & Lore</wa-dropdown-item>
+        
+        <wa-divider></wa-divider>
+        
+        <div class="px-3 py-2 small text-uppercase  fw-bold text-uppercase small \">The Surviving Architects</div>
+        <wa-dropdown-item href="/engine-room/artists/fractured-prisms/band/claire-manning"><i class="fa-duotone fa-microphone me-2 "></i>Claire Manning</wa-dropdown-item>
+        <wa-dropdown-item href="/engine-room/artists/fractured-prisms/band/rhys-manning"><i class="fa-duotone fa-keyboard me-2 "></i>Rhys Manning</wa-dropdown-item>
+        
+        <wa-divider></wa-divider>
+        
+        <div class="px-3 py-2 small text-uppercase  fw-bold text-uppercase small \">The Echoes</div>
+        <wa-dropdown-item href="/engine-room/artists/fractured-prisms/band/the-missing-four"><i class="fa-duotone fa-users-slash me-2 "></i>The Missing Four</wa-dropdown-item>
+    </wa-menu>
+  </wa-dropdown>
+
+
+  
+    <wa-button appearance="plain" href="/contact">
+        <i slot=\"start\" class=\"fa-duotone fa-envelope me-2\"></i>Contact
+    </wa-button>
+  
+
+  
+
+  
+      <wa-button appearance="plain" href="/engine-room" class="">
+        <i slot=\"start\" class=\"fa-solid fa-arrow-turn-up me-2\"></i>Engine Room HQ
+      </wa-button>
+  
+
+</div>
