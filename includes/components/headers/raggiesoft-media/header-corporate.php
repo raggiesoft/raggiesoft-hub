@@ -30,12 +30,14 @@ $isPortfolio = (str_starts_with($request_uri, '/about/michael-ragsdale'));
       appearance="<?php echo $isOpenSource ? 'filled-outlined' : 'plain'; ?>">
       <i slot="start" class="fa-brands fa-osi"></i> Open Source
     </wa-button>
-    <wa-dropdown-item href="/raggiesoft-media/projects">
+    <wa-menu>
+      <wa-dropdown-item href="/raggiesoft-media/projects">
       <i slot="start" class="fa-duotone fa-network-wired text-info"></i> Projects Hub
     </wa-dropdown-item>
     <wa-dropdown-item href="/raggiesoft-media/projects/stardust-engine-cms">
       <i slot="start" class="fa-duotone fa-rocket-launch text-primary"></i> Stardust Engine CMS
     </wa-dropdown-item>
+    </wa-menu>
   </wa-dropdown>
 
   <wa-button href="/about/michael-ragsdale" pill

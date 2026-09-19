@@ -34,7 +34,7 @@ $isLore = str_starts_with($request_uri, '/raggiesoft-books/books/crimson-node');
     <wa-button slot="trigger" appearance="plain" class="nav-link  <?php echo ($isPhalanx || $isCcc || $isNorthwood || $isPiedmont) ? 'active' : '';?>">
         <i class="fa-duotone fa-users me-2" aria-hidden="true"></i>Characters <i class="fa-solid fa-chevron-down ms-1" style="font-size: 0.8em;" aria-hidden="true"></i>
     </wa-button>
-    
+    <wa-menu>
       <wa-dropdown-item href="/engine-room/artists/crimson-node/characters/family">
             <i class="fa-duotone fa-shield-halved me-2"></i>The Phalanx
         </wa-dropdown-item>
@@ -49,7 +49,8 @@ $isLore = str_starts_with($request_uri, '/raggiesoft-books/books/crimson-node');
       <wa-dropdown-item href="/engine-room/artists/crimson-node/characters/piedmont">
             <i class="fa-duotone fa-building-columns me-2"></i>The University of the Piedmont
         </wa-dropdown-item>
-    </wa-dropdown>
+    </wa-menu>
+  </wa-dropdown>
 </li>
 
   <li class="nav-item">

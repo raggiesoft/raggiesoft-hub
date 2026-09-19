@@ -103,3 +103,18 @@
         }
     })();
 </script>
+
+<script>
+    // Brute force shadow DOM background injection for wa-dialog
+    document.addEventListener('wa-show', (e) => {
+        if (e.target.tagName === 'WA-DIALOG') {
+            const panel = e.target.shadowRoot.querySelector('[part="panel"]');
+            if (panel) {
+                // Get current body bg or fallback to dark/light
+                const isDark = document.documentElement.getAttribute('data-bs-theme') === 'dark';
+                panel.style.backgroundColor = isDark ? '#121212' : '#ffffff';
+                panel.style.color = isDark ? '#e0e0e0' : '#000000';
+            }
+        }
+    });
+</script>

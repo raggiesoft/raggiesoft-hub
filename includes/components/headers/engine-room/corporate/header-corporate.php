@@ -18,30 +18,32 @@
 
   <li class="nav-item">
   <wa-dropdown placement="bottom-start">
-    <wa-buttonclass="nav-link " href="#"    slot="trigger" appearance="plain">
+    <wa-button class="nav-link " href="#"    slot="trigger" appearance="plain">
         <i class="fa-duotone fa-briefcase me-2"></i>Entities
     </wa-button>
-    
-        <li><h6 class="dropdown-header">Operating Companies</h6></li>
+    <wa-menu>
+      <div class="px-3 py-2 small text-uppercase text-muted fw-bold\">Operating Companies</div>
         <wa-dropdown-item href="/engine-room"><i class="fa-solid fa-record-vinyl me-2 text-danger"></i>Engine Room Records</wa-dropdown-item>
         <wa-dropdown-item href="/engine-room/corporate/aethelgard"><i class="fa-solid fa-gavel me-2 text-secondary"></i>Aethelgard Holdings</wa-dropdown-item>
         <wa-dropdown-item href="/pacific-rim"><i class="fa-solid fa-city me-2 text-primary"></i>Pacific Rim Properties</wa-dropdown-item>
         <wa-divider></wa-divider>
-        <li><h6 class="dropdown-header">Philanthropy</h6></li>
+        <div class="px-3 py-2 small text-uppercase text-muted fw-bold\">Philanthropy</div>
         <wa-dropdown-item href="/engine-room/corporate/leadership"><i class="fa-solid fa-hand-holding-heart me-2 text-success"></i>Jessica Miller Center</wa-dropdown-item>
-    </wa-dropdown>
+    </wa-menu>
+  </wa-dropdown>
 </li>
 
   <li class="nav-item">
   <wa-dropdown placement="bottom-start">
-    <wa-buttonclass="nav-link " href="#"    slot="trigger" appearance="plain">
+    <wa-button class="nav-link " href="#"    slot="trigger" appearance="plain">
         <i class="fa-duotone fa-server me-2"></i>Ops
     </wa-button>
-    
-        <li><h6 class="dropdown-header text-info">Internal Only</h6></li>
+    <wa-menu>
+      <div class="px-3 py-2 small text-uppercase text-muted fw-bold text-info\">Internal Only</div>
         <wa-dropdown-item href="/engine-room/corporate/systems"><i class="fa-solid fa-terminal me-2"></i>Systems (Justin)</wa-dropdown-item>
         <wa-dropdown-item href="/engine-room/corporate/fleet"><i class="fa-solid fa-bus me-2"></i>Fleet Command</wa-dropdown-item>
-    </wa-dropdown>
+    </wa-menu>
+  </wa-dropdown>
 </li>
 
   <li class="nav-item ms-3 border-start border-secondary ps-3">

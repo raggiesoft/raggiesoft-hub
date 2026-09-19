@@ -23,7 +23,8 @@ $isContact = ($request_uri === '/contact');
     <wa-button slot="trigger" appearance="plain" with-caret class="<?php echo $isArchitect ? 'text-primary' : 'text-body-secondary'; ?>">
       <i slot="start" class="fa-duotone fa-user-visor"></i> The Architect
     </wa-button>
-    <wa-dropdown-item href="/about/michael-ragsdale">
+    <wa-menu>
+      <wa-dropdown-item href="/about/michael-ragsdale">
       <i slot="start" class="fa-duotone fa-id-card"></i> Overview
     </wa-dropdown-item>
     <wa-dropdown-item href="/about/michael-ragsdale/resume">
@@ -36,13 +37,15 @@ $isContact = ($request_uri === '/contact');
     <wa-dropdown-item href="/about/michael-ragsdale/contact">
       <i slot="start" class="fa-duotone fa-address-card"></i> Contact Card
     </wa-dropdown-item>
+    </wa-menu>
   </wa-dropdown>
 
   <wa-dropdown placement="bottom-start">
     <wa-button slot="trigger" appearance="plain" with-caret class="<?php echo $isCreative ? 'text-primary' : 'text-body-secondary'; ?>">
       <i slot="start" class="fa-duotone fa-layer-group"></i> Creative Works
     </wa-button>
-    <div class="px-3 py-2 small text-uppercase fw-bold text-muted">Multimedia</div>
+    <wa-menu>
+      <div class="px-3 py-2 small text-uppercase fw-bold text-muted">Multimedia</div>
     <wa-dropdown-item href="/engine-room/artists/stardust-engine">
       <i slot="start" class="fa-duotone fa-rocket-launch text-primary"></i> The Stardust Engine
     </wa-dropdown-item>
@@ -61,13 +64,15 @@ $isContact = ($request_uri === '/contact');
     <wa-dropdown-item href="/engine-room">
       <i slot="start" class="fa-solid fa-industry text-secondary"></i> Engine Room Records
     </wa-dropdown-item>
+    </wa-menu>
   </wa-dropdown>
 
   <wa-dropdown placement="bottom-start">
     <wa-button slot="trigger" appearance="plain" with-caret class="<?php echo $isMedia ? 'text-primary' : 'text-body-secondary'; ?>">
       <i slot="start" class="fa-duotone fa-building"></i> RaggieSoft Media
     </wa-button>
-    <div class="px-3 py-2 small text-uppercase fw-bold text-muted">B2B Operations</div>
+    <wa-menu>
+      <div class="px-3 py-2 small text-uppercase fw-bold text-muted">B2B Operations</div>
     <wa-dropdown-item href="/raggiesoft-media">
       <i slot="start" class="fa-duotone fa-network-wired text-primary"></i> Corporate Hub
     </wa-dropdown-item>
@@ -82,6 +87,7 @@ $isContact = ($request_uri === '/contact');
     <wa-dropdown-item href="/raggiesoft-media/projects/elara">
       <i slot="start" class="fa-brands fa-osi text-info"></i> Open Source (Elara)
     </wa-dropdown-item>
+    </wa-menu>
   </wa-dropdown>
 
   <wa-button appearance="plain" href="/about" class="<?php echo $isAbout ? 'text-primary' : 'text-body-secondary'; ?>">

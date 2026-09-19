@@ -25,7 +25,8 @@ $isArchives = (
     <wa-button slot="trigger" appearance="plain" with-caret class="<?php echo $isRoster ? 'text-primary' : ''; ?>">
       <i slot="start" class="fa-duotone fa-compact-disc"></i> The Roster
     </wa-button>
-    <wa-dropdown-item href="/engine-room/artists">View Full Roster</wa-dropdown-item>
+    <wa-menu>
+      <wa-dropdown-item href="/engine-room/artists">View Full Roster</wa-dropdown-item>
     <wa-divider></wa-divider>
     <div class="px-3 py-2 small text-uppercase text-primary fw-bold">Active Artists</div>
     <wa-dropdown-item href="/engine-room/artists/stardust-engine">
@@ -46,13 +47,15 @@ $isArchives = (
     <wa-dropdown-item href="/raggiesoft-books/aethel-saga">
       <i slot="start" class="fa-solid fa-sword text-warning"></i> Firelight
     </wa-dropdown-item>
+    </wa-menu>
   </wa-dropdown>
 
   <wa-dropdown placement="bottom-start">
     <wa-button slot="trigger" appearance="plain" with-caret class="<?php echo $isArchives ? 'text-primary' : ''; ?>">
       <i slot="start" class="fa-duotone fa-box-archive"></i> The Archives
     </wa-button>
-    <div class="px-3 py-2 small text-uppercase text-muted fw-bold">Company History</div>
+    <wa-menu>
+      <div class="px-3 py-2 small text-uppercase text-muted fw-bold">Company History</div>
     <wa-dropdown-item href="/engine-room/history">
       <i slot="start" class="fa-solid fa-clock-rotate-left text-secondary"></i> Full Timeline
     </wa-dropdown-item>
@@ -67,13 +70,15 @@ $isArchives = (
     <wa-dropdown-item href="/engine-room/artists/stardust-engine/story/nine-figure-refusal">
       <i slot="start" class="fa-duotone fa-ban text-success"></i> 2018: The $150M Refusal
     </wa-dropdown-item>
+    </wa-menu>
   </wa-dropdown>
 
   <wa-dropdown placement="bottom-end">
     <wa-button slot="trigger" appearance="plain" with-caret class="text-body-secondary">
       <i slot="start" class="fa-duotone fa-briefcase"></i> Industry
     </wa-button>
-    <div class="px-3 py-2 small text-uppercase text-muted fw-bold">B2B Operations</div>
+    <wa-menu>
+      <div class="px-3 py-2 small text-uppercase text-muted fw-bold">B2B Operations</div>
     <wa-dropdown-item href="/raggiesoft-media/licensing">
       <i slot="start" class="fa-solid fa-handshake text-primary"></i> Master Licensing Portal
     </wa-dropdown-item>
@@ -88,6 +93,7 @@ $isArchives = (
     <wa-dropdown-item class="elara-secure-mail font-monospace" href="#" data-u="ops" data-d="raggiesoftmedia" data-t="com">
       <i slot="start" class="fa-solid fa-envelope text-secondary"></i> ops@raggiesoftmedia.com
     </wa-dropdown-item>
+    </wa-menu>
   </wa-dropdown>
 
   <div class="ms-2 ps-2 border-start border-secondary border-opacity-50">

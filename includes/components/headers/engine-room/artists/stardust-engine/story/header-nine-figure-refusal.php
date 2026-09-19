@@ -51,10 +51,11 @@ $isEpilogue = str_contains($uri, '/frost-interview');
 
     <li class="nav-item">
   <wa-dropdown placement="bottom-start">
-        <wa-buttonclass="nav-link  <?php echo $isEvidence ? 'active fw-bold' : ''; ? slot="trigger" appearance="plain">" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    <wa-button class="nav-link  <?php echo $isEvidence ? 'active fw-bold' : ''; ? slot="trigger" appearance="plain">" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             <i class="fa-duotone fa-file-magnifying-glass me-2"></i>The Case File
         </wa-button>
-        <div class="dropdown-menu dropdown-menu-end shadow-lg border-danger mega-menu-case-file p-0">
+    <wa-menu>
+      <div class="dropdown-menu dropdown-menu-end shadow-lg border-danger mega-menu-case-file p-0">
             <div class="row g-0">
                 
                 <div class="col-lg-6 border-end border-secondary border-opacity-25 p-3">
@@ -97,33 +98,35 @@ $isEpilogue = str_contains($uri, '/frost-interview');
 
     <li class="nav-item">
   <wa-dropdown placement="bottom-start">
-        <wa-buttonclass="nav-link  <?php echo $isAssets ? 'active fw-bold' : ''; ? slot="trigger" appearance="plain">" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        <wa-button class="nav-link  <?php echo $isAssets ? 'active fw-bold' : ''; ? slot="trigger" appearance="plain">" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             <i class="fa-duotone fa-building me-2"></i>Legacy
         </wa-button>
         
-            <li><h6 class="dropdown-header text-uppercase text-success fw-bold">Real Estate</h6></li>
+            <div class="px-3 py-2 small text-uppercase text-muted fw-bold text-uppercase text-success fw-bold\">Real Estate</div>
             <wa-dropdown-item href="/engine-room/artists/stardust-engine/story/nine-figure-refusal/the-jessica-miller-center">
                     <i class="fa-duotone fa-building-columns me-2 text-success"></i>The Jessica Miller Center
                 </wa-dropdown-item>
             <wa-divider></wa-divider>
-            <li><h6 class="dropdown-header text-uppercase text-primary fw-bold">Operations</h6></li>
+            <div class="px-3 py-2 small text-uppercase text-muted fw-bold text-uppercase text-primary fw-bold\">Operations</div>
             <wa-dropdown-item href="/engine-room/artists/stardust-engine/story/nine-figure-refusal/the-non-profit-model">
                     <i class="fa-duotone fa-hand-holding-box me-2 text-primary"></i>The Non-Profit Model
                 </wa-dropdown-item>
-        </wa-dropdown>
+    </wa-menu>
+  </wa-dropdown>
 </li>
 
      <li class="nav-item">
   <wa-dropdown placement="bottom-start">
-        <wa-buttonclass="nav-link  <?php echo $isEpilogue ? 'active fw-bold' : ''; ? slot="trigger" appearance="plain">" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    <wa-button class="nav-link  <?php echo $isEpilogue ? 'active fw-bold' : ''; ? slot="trigger" appearance="plain">" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             <i class="fa-duotone fa-building me-2"></i>Epilogue
         </wa-button>
-        
-            <li><h6 class="dropdown-header text-uppercase text-success fw-bold">Epilogue</h6></li>
+    <wa-menu>
+      <div class="px-3 py-2 small text-uppercase text-muted fw-bold text-uppercase text-success fw-bold\">Epilogue</div>
             <wa-dropdown-item href="/engine-room/artists/stardust-engine/story/nine-figure-refusal/frost-interview">
                     <i class="fa-duotone fa-clipboard-question me-2 text-success"></i>Frost Interview
                 </wa-dropdown-item>
-        </wa-dropdown>
+    </wa-menu>
+  </wa-dropdown>
 </li>
 
     <li class="nav-item border-start ms-2 ps-2">

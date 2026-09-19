@@ -24,24 +24,25 @@
 
   <li class="nav-item">
   <wa-dropdown placement="bottom-start">
-    <wa-buttonclass="nav-link " href="#"    slot="trigger" appearance="plain">
+    <wa-button class="nav-link " href="#"    slot="trigger" appearance="plain">
         <i class="fa-duotone fa-ghost me-2"></i>The Residents
     </wa-button>
-    
-        <wa-dropdown-item href="/engine-room/artists/fractured-prisms/band">Overview</wa-dropdown-item>
+    <wa-menu>
+      <wa-dropdown-item href="/engine-room/artists/fractured-prisms/band">Overview</wa-dropdown-item>
         <wa-dropdown-item href="/engine-room/artists/fractured-prisms/story">History & Lore</wa-dropdown-item>
         
         <wa-divider></wa-divider>
         
-        <li><h6 class="dropdown-header text-uppercase small opacity-75">The Surviving Architects</h6></li>
+        <div class="px-3 py-2 small text-uppercase text-muted fw-bold text-uppercase small opacity-75\">The Surviving Architects</div>
         <wa-dropdown-item href="/engine-room/artists/fractured-prisms/band/claire-manning"><i class="fa-duotone fa-microphone me-2 opacity-50"></i>Claire Manning</wa-dropdown-item>
         <wa-dropdown-item href="/engine-room/artists/fractured-prisms/band/rhys-manning"><i class="fa-duotone fa-keyboard me-2 opacity-50"></i>Rhys Manning</wa-dropdown-item>
         
         <wa-divider></wa-divider>
         
-        <li><h6 class="dropdown-header text-uppercase small opacity-75">The Echoes</h6></li>
+        <div class="px-3 py-2 small text-uppercase text-muted fw-bold text-uppercase small opacity-75\">The Echoes</div>
         <wa-dropdown-item href="/engine-room/artists/fractured-prisms/band/the-missing-four"><i class="fa-duotone fa-users-slash me-2 opacity-50"></i>The Missing Four</wa-dropdown-item>
-    </wa-dropdown>
+    </wa-menu>
+  </wa-dropdown>
 </li>
 
   <li class="nav-item">

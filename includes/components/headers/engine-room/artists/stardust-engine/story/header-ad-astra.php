@@ -14,12 +14,11 @@
 
   <li class="nav-item">
   <wa-dropdown placement="bottom-start">
-    <wa-buttonclass="nav-link  text-uppercase" href="#"    style="color: var(--astra-text) !important;" slot="trigger" appearance="plain">
+    <wa-button class="nav-link  text-uppercase" href="#"    style="color: var(--astra-text) !important;" slot="trigger" appearance="plain">
       <i class="fa-duotone fa-book-sparkles me-2"></i>Flight Logs
     </wa-button>
-    
-      
-      <li><h6 class="dropdown-header text-uppercase text-secondary">Phase I: Departure</h6></li>
+    <wa-menu>
+      <div class="px-3 py-2 small text-uppercase text-muted fw-bold text-uppercase text-secondary\">Phase I: Departure</div>
       <wa-dropdown-item href="/engine-room/artists/stardust-engine/story/ad-astra/voyage/day-01">
             <i class="fa-solid fa-shuttle-space me-2"></i>Day 01: Ignition
           </wa-dropdown-item>
@@ -32,18 +31,19 @@
       
       <wa-divider></wa-divider>
       
-      <li><h6 class="dropdown-header text-uppercase text-secondary">Phase II: The Void</h6></li>
+      <div class="px-3 py-2 small text-uppercase text-muted fw-bold text-uppercase text-secondary\">Phase II: The Void</div>
       <wa-dropdown-item href="/engine-room/artists/stardust-engine/story/ad-astra/voyage/day-10">
             <i class="fa-solid fa-stars me-2"></i>Day 10: Harmonic Velocity
           </wa-dropdown-item>
       
       <wa-divider></wa-divider>
       
-      <li><h6 class="dropdown-header text-uppercase text-secondary">Phase III: Return</h6></li>
+      <div class="px-3 py-2 small text-uppercase text-muted fw-bold text-uppercase text-secondary\">Phase III: Return</div>
       <wa-dropdown-item href="/engine-room/artists/stardust-engine/story/ad-astra/voyage/day-21">
             <i class="fa-solid fa-meteor me-2"></i>Day 21: Hard Reset
           </wa-dropdown-item>
-    </wa-dropdown>
+    </wa-menu>
+  </wa-dropdown>
 </li>
 
   <li class="nav-item">

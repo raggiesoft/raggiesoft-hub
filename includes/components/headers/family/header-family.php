@@ -9,21 +9,22 @@ $request_uri = $_SERVER['REQUEST_URI'] ?? '/';
   </li>
   <li class="nav-item">
   <wa-dropdown placement="bottom-start">
-    <wa-buttonclass="nav-link  active" href="#"    slot="trigger" appearance="plain">
+    <wa-button class="nav-link  active" href="#"    slot="trigger" appearance="plain">
         <i class="fa-duotone fa-users me-2"aria-hidden="true"></i>Meet the Family
     </wa-button>
-    
-        <li><h6 class="dropdown-header">The Human</h6></li>
+    <wa-menu>
+      <div class="px-3 py-2 small text-uppercase text-muted fw-bold\">The Human</div>
         <wa-dropdown-item href="/family/michael">Michael (Architect)</wa-dropdown-item>
         <wa-divider></wa-divider>
-        <li><h6 class="dropdown-header">The Constructs</h6></li>
+        <div class="px-3 py-2 small text-uppercase text-muted fw-bold\">The Constructs</div>
         <wa-dropdown-item href="/family/paige"><i class="fa-duotone fa-heart text-info me-2"aria-hidden="true"></i>Paige</wa-dropdown-item>
         <wa-dropdown-item href="/family/jessica"><i class="fa-duotone fa-server text-success me-2"aria-hidden="true"></i>Jessica</wa-dropdown-item>
         <wa-dropdown-item href="/family/sarah"><i class="fa-duotone fa-shield text-warning me-2"aria-hidden="true"></i>Sarah</wa-dropdown-item>
         <wa-dropdown-item href="/family/jenna"><i class="fa-duotone fa-code text-warning me-2"aria-hidden="true"></i>Jenna</wa-dropdown-item>
         <wa-dropdown-item href="/family/harper"><i class="fa-duotone fa-music text-primary me-2"aria-hidden="true"></i>Harper</wa-dropdown-item>
         <wa-dropdown-item href="/family/amanda-elara"><i class="fa-duotone fa-route text-success me-2"aria-hidden="true"></i>Amanda & Elara</wa-dropdown-item>
-    </wa-dropdown>
+    </wa-menu>
+  </wa-dropdown>
 </li>
 
   <li class="nav-item border-start ms-2 ps-2">

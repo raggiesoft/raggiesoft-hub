@@ -20,22 +20,23 @@ extract($navData);
 
   <li class="nav-item">
   <wa-dropdown placement="bottom-start">
-    <wa-buttonclass="nav-link  text-secondary" href="#"    slot="trigger" appearance="plain">
+    <wa-button class="nav-link  text-secondary" href="#"    slot="trigger" appearance="plain">
       Aethel
     </wa-button>
-    
+    <wa-menu>
       <wa-dropdown-item href="/library/aethel">Hub</wa-dropdown-item>
       <wa-dropdown-item href="/library/aethel/aethel-book">Book Index</wa-dropdown-item>
       <wa-dropdown-item href="/library/aethel/lore">Lore</wa-dropdown-item>
-    </wa-dropdown>
+    </wa-menu>
+  </wa-dropdown>
 </li>
 
   <li class="nav-item">
   <wa-dropdown placement="bottom-start">
-    <wa-buttonclass="nav-link  text-secondary" href="#"    slot="trigger" appearance="plain">
+    <wa-button class="nav-link  text-secondary" href="#"    slot="trigger" appearance="plain">
       <i class="fa-duotone fa-compass me-1"></i>Navigate
     </wa-button>
-    
+    <wa-menu>
       <wa-dropdown-item href="<?php echo $prevLink; ?>">
            <i class="fa-duotone fa-arrow-left me-2"></i>Back
         </wa-dropdown-item>
@@ -47,11 +48,12 @@ extract($navData);
       <wa-dropdown-item href="<?php echo $nextLink; ?>">
            Next<i class="fa-duotone fa-arrow-right ms-2"></i>
         </wa-dropdown-item>
-    </wa-dropdown>
+    </wa-menu>
+  </wa-dropdown>
 </li>
   
   <li class="nav-item-dropdown">
-    <wa-buttonclass="nav-link  text-secondary" href="#"    slot="trigger" appearance="plain">
+    <wa-button class="nav-link  text-secondary" href="#"    slot="trigger" appearance="plain">
       RaggieSoft
     </wa-button>
     
