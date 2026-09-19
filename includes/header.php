@@ -349,7 +349,8 @@ if (isset($customPageAssets) && is_array($customPageAssets)) {
         });
     })();
     </script>
-  </head>
+      <script src="https://assets.raggiesoft.com/common/js/cinema-carousel.js?v=2"></script>
+</head>
   
   <body class="d-flex flex-column h-100">
     <?php if (isset($pageConfig["enableGalaxyBg"]) && $pageConfig["enableGalaxyBg"] === true): ?>

@@ -154,16 +154,77 @@ if (!empty($carousel_albums)):
     
     <!-- Navigation Buttons -->
     <div class="d-flex justify-content-between position-absolute w-100 px-3" style="top: 50%; left: 0; transform: translateY(-50%); pointer-events: none; z-index: 10;">
-        <wa-button variant="neutral" appearance="filled" class="cinema-prev shadow-lg" style="pointer-events: auto; border: 2px solid rgba(255,255,255,0.2);" pill>
+        <wa-button variant="neutral" appearance="filled" class="cinema-prev shadow-lg" onclick="window.scrollCinemaCarousel(-1)" style="pointer-events: auto; border: 2px solid rgba(255,255,255,0.2);" pill>
             <i class="fa-solid fa-chevron-left fs-5 text-body-emphasis"></i>
         </wa-button>
-        <wa-button variant="neutral" appearance="filled" class="cinema-next shadow-lg" style="pointer-events: auto; border: 2px solid rgba(255,255,255,0.2);" pill>
+        <wa-button variant="neutral" appearance="filled" class="cinema-next shadow-lg" onclick="window.scrollCinemaCarousel(1)" style="pointer-events: auto; border: 2px solid rgba(255,255,255,0.2);" pill>
             <i class="fa-solid fa-chevron-right fs-5 text-body-emphasis"></i>
         </wa-button>
     </div>
 </div>
 
 
+
+
+<!-- Foolproof Carousel Script -->
+<script>
+(function() {
+    // 1. Define global scroll function so onclick works perfectly
+    window.scrollCinemaCarousel = function(direction) {
+        const carousel = document.getElementById('cinemaCarousel');
+        if (!carousel) return;
+        
+        const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        const scrollBehavior = prefersReducedMotion ? 'auto' : 'smooth';
+        
+        if (direction === 1) { // Next
+            if (carousel.scrollLeft + carousel.clientWidth >= carousel.scrollWidth - 50) {
+                carousel.scrollTo({ left: 0, behavior: scrollBehavior });
+            } else {
+                carousel.scrollTo({ left: carousel.scrollLeft + carousel.clientWidth, behavior: scrollBehavior });
+            }
+        } else { // Prev
+            if (carousel.scrollLeft <= 50) {
+                carousel.scrollTo({ left: carousel.scrollWidth, behavior: scrollBehavior });
+            } else {
+                carousel.scrollTo({ left: carousel.scrollLeft - carousel.clientWidth, behavior: scrollBehavior });
+            }
+        }
+        
+        // Reset autoplay when manually clicked
+        if (window.cinemaAutoplayInterval) {
+            clearInterval(window.cinemaAutoplayInterval);
+            window.startCinemaAutoplay();
+        }
+    };
+
+    // 2. Setup Autoplay
+    window.startCinemaAutoplay = function() {
+        if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+        
+        window.cinemaAutoplayInterval = setInterval(() => {
+            window.scrollCinemaCarousel(1);
+        }, 6000);
+    };
+
+    // Clear any existing interval from previous page loads
+    if (window.cinemaAutoplayInterval) {
+        clearInterval(window.cinemaAutoplayInterval);
+    }
+    
+    // Start Autoplay
+    window.startCinemaAutoplay();
+
+    // 3. Pause on hover
+    const carouselParent = document.getElementById('cinemaCarousel').parentElement;
+    if (carouselParent) {
+        carouselParent.addEventListener('mouseenter', () => clearInterval(window.cinemaAutoplayInterval));
+        carouselParent.addEventListener('mouseleave', () => window.startCinemaAutoplay());
+        carouselParent.addEventListener('touchstart', () => clearInterval(window.cinemaAutoplayInterval), {passive: true});
+        carouselParent.addEventListener('touchend', () => window.startCinemaAutoplay(), {passive: true});
+    }
+})();
+</script>
 
 <?php else: ?>
     <div class="alert alert-warning text-center">
