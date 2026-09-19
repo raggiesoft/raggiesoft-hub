@@ -243,78 +243,10 @@ if ($eras) {
         <p class="text-body-secondary">Swipe through the historical discography of The Stardust Engine.</p>
     </div>
 
-    <div class="position-relative bg-body-tertiary rounded shadow-sm border border-secondary border-opacity-50 p-4">
-        
-        <div id="discographyCarousel" class="d-flex overflow-auto" style="scroll-snap-type: x mandatory; scroll-behavior: smooth; scrollbar-width: none; -ms-overflow-style: none;">
-            <style>#discographyCarousel::-webkit-scrollbar { display: none; }</style>
-            
-            <?php foreach ($allAlbums as $index => $album): ?>
-                <div class="w-100 flex-shrink-0" style="scroll-snap-align: start;">
-                    <div class="row align-items-center justify-content-center">
-                        <div class="col-sm-5 text-center mb-3 mb-sm-0">
-                            <img src="<?php echo htmlspecialchars($album['img']); ?>" class="img-fluid rounded shadow border border-dark" alt="<?php echo htmlspecialchars($album['title']); ?>" style="max-height: 250px;">
-                        </div>
-                        <div class="col-sm-6 text-center text-sm-start">
-                            <span class="text-primary fw-bold font-monospace small text-uppercase"><?php echo htmlspecialchars($album['era_label']); ?></span>
-                            <h3 class="fw-bold mb-1"><?php echo htmlspecialchars($album['title']); ?></h3>
-                            <p class="text-muted mb-3">Released: <?php echo htmlspecialchars($album['year']); ?> <?php echo isset($album['extra']) ? $album['extra'] : ''; ?></p>
-                            
-                            <div class="d-flex flex-wrap gap-2 justify-content-center justify-content-sm-start">
-                                <wa-button href="<?php echo htmlspecialchars($album['url']); ?>" variant="primary" appearance="outline">
-                                    <i slot="start" class="fa-duotone fa-compact-disc"></i> Explore Vault
-                                </wa-button>
-                                
-                                <?php 
-                                // Check if any DSP IDs exist for this specific album
-                                $hasStores = !empty($album['spotifyId']) || !empty($album['appleId']) || !empty($album['amazonId']) || !empty($album['youtubeId']);
-                                
-                                if ($hasStores) {
-                                    $storeProps = [
-                                        'type' => 'album',
-                                        'size' => 'normal',
-                                        'spotify' => $album['spotifyId'] ?? '',
-                                        'apple'   => $album['appleId'] ?? '',
-                                        'amazon'  => $album['amazonId'] ?? '',
-                                        'youtube' => $album['youtubeId'] ?? ''
-                                    ];
-                                    // Inject the dynamic DSP buttons
-                                    include ROOT_PATH . '/includes/components/store-button.php';
-                                }
-                                ?>
-                            </div>
-                            
-                        </div>
-                    </div>
-                </div>
-            <?php endforeach; ?>
-        </div>
-        
-        <div class="d-flex justify-content-between position-absolute w-100 px-2" style="top: 50%; left: 0; transform: translateY(-50%); pointer-events: none; z-index: 10;">
-            <wa-button variant="neutral" appearance="outline" id="prevCarouselBtn" class="bg-body shadow-sm" style="pointer-events: auto;">
-                <i class="fa-solid fa-chevron-left"></i>
-            </wa-button>
-            <wa-button variant="neutral" appearance="outline" id="nextCarouselBtn" class="bg-body shadow-sm" style="pointer-events: auto;">
-                <i class="fa-solid fa-chevron-right"></i>
-            </wa-button>
-        </div>
-    </div>
-    
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const carousel = document.getElementById('discographyCarousel');
-            const prevBtn = document.getElementById('prevCarouselBtn');
-            const nextBtn = document.getElementById('nextCarouselBtn');
-            
-            if(carousel && prevBtn && nextBtn) {
-                prevBtn.addEventListener('click', () => {
-                    carousel.scrollBy({ left: -carousel.clientWidth, behavior: 'smooth' });
-                });
-                nextBtn.addEventListener('click', () => {
-                    carousel.scrollBy({ left: carousel.clientWidth, behavior: 'smooth' });
-                });
-            }
-        });
-    </script>
+    <?php 
+    $carouselJsonUrl = 'https://assets.raggiesoft.com/engine-room-records/artists/the-stardust-engine/albums.json';
+    include $_SERVER['DOCUMENT_ROOT'] . '/includes/components/carousel.php'; 
+    ?>
 </div>
 <?php endif; ?>
 

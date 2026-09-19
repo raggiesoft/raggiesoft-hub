@@ -3,7 +3,7 @@
 // v3.4 - "Cinema Mode" Layout with Storefront Routing & Vault Exclusive Logic
 
 // 1. Configuration
-$jsonUrl = 'https://assets.raggiesoft.com/engine-room-records/artists/the-stardust-engine/albums.json';
+$jsonUrl = $carouselJsonUrl ?? 'https://assets.raggiesoft.com/engine-room-records/artists/the-stardust-engine/albums.json';
 $carousel_albums = [];
 
 // 2. Fetch Data (Timeout Context)
@@ -46,9 +46,12 @@ if ($discographyData) {
 if (!empty($carousel_albums)):
 ?>
 
-<wa-carousel pagination navigation autoplay autoplay-interval="5000" loop class="shadow-lg rounded-3 mb-5" style="--aspect-ratio: 2.5; background: black; --slide-gap: 0;">
-    <?php foreach ($carousel_albums as $index => $album): ?>
-        <wa-carousel-item>
+<div class="position-relative shadow-lg rounded-3 mb-5 overflow-hidden" style="background: black;">
+    <div id="cinemaCarousel" class="d-flex overflow-auto w-100" style="scroll-snap-type: x mandatory; scroll-behavior: smooth; scrollbar-width: none; -ms-overflow-style: none;">
+        <style>#cinemaCarousel::-webkit-scrollbar { display: none; }</style>
+        
+        <?php foreach ($carousel_albums as $index => $album): ?>
+            <div class="w-100 flex-shrink-0 position-relative" style="scroll-snap-align: start; min-height: 400px; aspect-ratio: 2.5;">
             <div style="height: 100%; position: relative; overflow: hidden; display: flex; align-items: center; justify-content: center;">
                 
                 <!-- Background blur -->
@@ -118,9 +121,37 @@ if (!empty($carousel_albums)):
                 </div>
 
             </div>
-        </wa-carousel-item>
-    <?php endforeach; ?>
-</wa-carousel>
+            </div>
+        <?php endforeach; ?>
+    </div>
+    
+    <!-- Navigation Buttons -->
+    <div class="d-flex justify-content-between position-absolute w-100 px-4" style="top: 50%; left: 0; transform: translateY(-50%); pointer-events: none; z-index: 10;">
+        <wa-button variant="neutral" appearance="outline" class="cinema-prev" style="pointer-events: auto; background: rgba(0,0,0,0.5); color: white; border: none;" pill>
+            <i class="fa-solid fa-chevron-left fs-4"></i>
+        </wa-button>
+        <wa-button variant="neutral" appearance="outline" class="cinema-next" style="pointer-events: auto; background: rgba(0,0,0,0.5); color: white; border: none;" pill>
+            <i class="fa-solid fa-chevron-right fs-4"></i>
+        </wa-button>
+    </div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const carousel = document.getElementById('cinemaCarousel');
+        const prevBtns = document.querySelectorAll('.cinema-prev');
+        const nextBtns = document.querySelectorAll('.cinema-next');
+        
+        if(carousel) {
+            prevBtns.forEach(btn => btn.addEventListener('click', () => {
+                carousel.scrollBy({ left: -carousel.clientWidth, behavior: 'smooth' });
+            }));
+            nextBtns.forEach(btn => btn.addEventListener('click', () => {
+                carousel.scrollBy({ left: carousel.clientWidth, behavior: 'smooth' });
+            }));
+        }
+    });
+</script>
 
 <?php else: ?>
     <div class="alert alert-warning text-center">
