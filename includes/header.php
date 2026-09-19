@@ -493,6 +493,32 @@ if (isset($customPageAssets) && is_array($customPageAssets)) {
           </button>
           
           <div class="collapse navbar-collapse" id="navbarCollapse">
+          <script>
+            // Vanilla JS fallback for Mobile Hamburger Menu
+            document.addEventListener('DOMContentLoaded', function() {
+                const toggler = document.querySelector('.navbar-toggler');
+                const target = document.getElementById('navbarCollapse');
+                if (toggler && target) {
+                    toggler.addEventListener('click', function() {
+                        target.classList.toggle('show');
+                        toggler.setAttribute('aria-expanded', target.classList.contains('show'));
+                    });
+                }
+            });
+            // Re-bind for Elara SPA
+            document.addEventListener('elara:loaded', function() {
+                const toggler = document.querySelector('.navbar-toggler');
+                const target = document.getElementById('navbarCollapse');
+                if (toggler && target && !toggler.dataset.listenerAttached) {
+                    toggler.dataset.listenerAttached = 'true';
+                    toggler.addEventListener('click', function() {
+                        target.classList.toggle('show');
+                        toggler.setAttribute('aria-expanded', target.classList.contains('show'));
+                    });
+                }
+            });
+          </script>
+
             <?php 
                 if (isset($currentHeaderMenu) && file_exists($currentHeaderMenu)) {
                     include $currentHeaderMenu;
