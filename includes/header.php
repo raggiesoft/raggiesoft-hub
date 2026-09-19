@@ -33,9 +33,9 @@ $brand_font_css = implode(', ', $css_font_parts);
 $path_bootstrap = $cdn_root . "/common/css/raggiesoft-grid.css";
 
 if ($theme === 'corporate' || $theme === $site || $theme === 'light') {
-    $path_theme_base = $cdn_root . "/{$site}/css/bootstrap";
+    $path_theme_base = $cdn_root . "/{$site}/css/webawesome";
 } else {
-    $path_theme_base = $cdn_root . "/{$site}/css/bootstrap/{$theme}";
+    $path_theme_base = $cdn_root . "/{$site}/css/webawesome/{$theme}";
 }
 
 // 4. Build CSS Queue

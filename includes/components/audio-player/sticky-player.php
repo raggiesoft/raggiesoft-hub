@@ -54,6 +54,19 @@
     </div>
 </div>
 
+<style>
+    /* Ensure Web Awesome Dialog has an opaque background in case theme variables fail */
+    wa-dialog::part(panel) {
+        background-color: var(--wa-color-surface-default, #ffffff);
+        color: var(--wa-color-text-normal, #000000);
+    }
+    
+    [data-bs-theme="dark"] wa-dialog::part(panel) {
+        background-color: var(--wa-color-surface-default, #121212);
+        color: var(--wa-color-text-normal, #e0e0e0);
+    }
+</style>
+
 <wa-dialog id="lyricsModal" label="Track Title" style="--width: 75vw;" data-turbo-permanent="true">
     <div slot="label">
         <i class="fa-duotone fa-music me-2" style="color: var(--wa-color-primary);"></i>
