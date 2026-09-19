@@ -137,27 +137,27 @@ $js_playlist = [];
 <script type="application/ld+json">
     <?php echo $album_json_content; ?>
 </script>
-<div class="card bg-body-tertiary border-secondary-subtle mb-5 shadow-sm">
-    <div class="card-body p-3">
+<wa-card class="mb-5 w-100">
+    <div class="p-3">
         
         <div class="row g-2 align-items-center border-bottom border-secondary-subtle pb-3 mb-3">
             <div class="col-12 col-md-6">
                 <div class="text-body fs-6 mb-2">
-                    <i class="fa-solid fa-timeline me-2 text-info"></i> <strong>Narrative Era:</strong> <span class="badge bg-info text-dark ms-1" style="font-size: 0.9em;"><?php echo htmlspecialchars($narrative_year); ?></span>
+                    <i class="fa-solid fa-timeline me-2 text-info"></i> <strong>Narrative Era:</strong> <wa-badge variant="brand" class="ms-1"><?php echo htmlspecialchars($narrative_year); ?></wa-badge>
                 </div>
                 <div class="text-body fs-6">
-                    <i class="fa-solid fa-record-vinyl me-2 text-warning"></i> <strong>Format:</strong> <span class="badge bg-dark text-warning ms-1" style="font-size: 0.9em; border: 1px solid var(--bs-warning);"><?php echo htmlspecialchars($friendly_production); ?></span>
+                    <i class="fa-solid fa-record-vinyl me-2 text-warning"></i> <strong>Format:</strong> <wa-badge variant="warning" appearance="outline" class="ms-1"><?php echo htmlspecialchars($friendly_production); ?></wa-badge>
                 </div>
             </div>
             
             <div class="col-12 col-md-6 text-md-end">
                 <div class="text-body fs-6 mb-2">
-                    <i class="fa-solid fa-calendar-check me-2 text-success"></i> <strong>DSP Release:</strong> <span class="badge bg-success-subtle text-success-emphasis ms-1" style="font-size: 0.9em; border: 1px solid var(--bs-success-border-subtle);"><?php echo htmlspecialchars($real_release_date); ?></span>
+                    <i class="fa-solid fa-calendar-check me-2 text-success"></i> <strong>DSP Release:</strong> <wa-badge variant="success" class="ms-1"><?php echo htmlspecialchars($real_release_date); ?></wa-badge>
                 </div>
                 <div class="text-body fs-6">
-                    <i class="fa-solid fa-music me-2 text-primary"></i> <strong>Length:</strong> <span class="badge bg-primary-subtle text-primary-emphasis ms-1 me-2" style="font-size: 0.9em; border: 1px solid var(--bs-primary-border-subtle);"><?php echo htmlspecialchars($friendly_release); ?></span>
+                    <i class="fa-solid fa-music me-2 text-primary"></i> <strong>Length:</strong> <wa-badge variant="primary" class="ms-1 me-2"><?php echo htmlspecialchars($friendly_release); ?></wa-badge>
                     <?php if ($album_upc): ?>
-                        <span class="badge bg-secondary-subtle text-secondary-emphasis" style="font-size: 0.85em; border: 1px solid var(--bs-secondary-border-subtle);" title="Universal Product Code">UPC: <?php echo htmlspecialchars($album_upc); ?></span>
+                        <wa-badge variant="neutral" title="Universal Product Code">UPC: <?php echo htmlspecialchars($album_upc); ?></wa-badge>
                     <?php endif; ?>
                 </div>
             </div>
@@ -177,18 +177,16 @@ $js_playlist = [];
                 <strong>ARCHIVIST NOTE:</strong> <em><?php echo htmlspecialchars($display_artist); ?></em> is a narrative-driven musical universe. The <strong>Narrative Era</strong> denotes when the album was recorded within the fictional history of the band. The <strong>DSP Release</strong> reflects the legal copyright date when the audio files were officially pressed and distributed to global streaming platforms.
             </p>
         </div>
-    </div>
-</div>
+</wa-card>
 
-<div class="card border-secondary mb-4 bg-transparent">
-    <div class="card-header bg-body-tertiary border-secondary d-flex justify-content-between align-items-center">
+<wa-card class="mb-4 w-100">
+    <div slot="header" class="d-flex justify-content-between align-items-center">
         <h5 class="mb-0 text-uppercase"><i class="fa-solid fa-headphones me-2"></i>Stream the Album</h5>
     </div>
-    <div class="card-body">
         <?php if ($dsp_exempt): ?>
-            <div class="alert alert-warning border-warning bg-warning-subtle text-warning-emphasis py-2 px-3 mb-0" role="alert">
+            <wa-alert variant="warning" open>
                 <i class="fa-solid fa-triangle-exclamation me-2"></i><strong>VAULT EXCLUSIVE:</strong> <?php echo htmlspecialchars($dsp_notice); ?>
-            </div>
+            </wa-alert>
         <?php else: ?>
             <?php if ($has_active_streams): ?>
                 <p class="text-success small mb-3"><strong>Support the band!</strong> Listen to the official release on your favorite streaming platform below.</p>
@@ -198,62 +196,59 @@ $js_playlist = [];
 
             <div class="d-flex gap-2 flex-wrap">
                 <?php if (!empty($stream_spotify_id)): ?>
-                    <a href="https://open.spotify.com/album/<?php echo htmlspecialchars($stream_spotify_id); ?>" target="_blank" class="btn btn-outline-success"><i class="fa-brands fa-spotify me-2"></i>Spotify</a>
+                    <wa-button href="https://open.spotify.com/album/<?php echo htmlspecialchars($stream_spotify_id); ?>" variant="success" appearance="outline" target="_blank"><i slot="start" class="fa-brands fa-spotify me-2"></i>Spotify</wa-button>
                 <?php else: ?>
-                    <a href="#" class="btn btn-outline-success disabled"><i class="fa-brands fa-spotify me-2"></i>Spotify</a>
+                    <wa-button href="#" variant="success" appearance="outline" disabled><i slot="start" class="fa-brands fa-spotify me-2"></i>Spotify</wa-button>
                 <?php endif; ?>
                 
                 <?php if (!empty($stream_apple_id)): ?>
-                    <a href="https://music.apple.com/us/album/<?php echo htmlspecialchars($stream_apple_id); ?>" target="_blank" class="btn btn-outline-danger"><i class="fa-brands fa-apple me-2"></i>Apple Music</a>
+                    <wa-button href="https://music.apple.com/us/album/<?php echo htmlspecialchars($stream_apple_id); ?>" variant="danger" appearance="outline" target="_blank"><i slot="start" class="fa-brands fa-apple me-2"></i>Apple Music</wa-button>
                 <?php else: ?>
-                    <a href="#" class="btn btn-outline-danger disabled"><i class="fa-brands fa-apple me-2"></i>Apple Music</a>
+                    <wa-button href="#" variant="danger" appearance="outline" disabled><i slot="start" class="fa-brands fa-apple me-2"></i>Apple Music</wa-button>
                 <?php endif; ?>
 
                 <?php if (!empty($stream_amazon_id)): ?>
-                    <a href="https://music.amazon.com/albums/<?php echo htmlspecialchars($stream_amazon_id); ?>" target="_blank" class="btn btn-outline-info"><i class="fa-brands fa-amazon me-2"></i>Amazon Music</a>
+                    <wa-button href="https://music.amazon.com/albums/<?php echo htmlspecialchars($stream_amazon_id); ?>" variant="brand" appearance="outline" target="_blank"><i slot="start" class="fa-brands fa-amazon me-2"></i>Amazon Music</wa-button>
                 <?php else: ?>
-                    <a href="#" class="btn btn-outline-info disabled"><i class="fa-brands fa-amazon me-2"></i>Amazon Music</a>
+                    <wa-button href="#" variant="brand" appearance="outline" disabled><i slot="start" class="fa-brands fa-amazon me-2"></i>Amazon Music</wa-button>
                 <?php endif; ?>
 
                 <?php if (!empty($stream_youtube_id)): ?>
-                    <a href="https://music.youtube.com/playlist?list=<?php echo htmlspecialchars($stream_youtube_id); ?>" target="_blank" class="btn btn-outline-danger"><i class="fa-brands fa-youtube me-2"></i>YouTube Music</a>
+                    <wa-button href="https://music.youtube.com/playlist?list=<?php echo htmlspecialchars($stream_youtube_id); ?>" variant="danger" appearance="outline" target="_blank"><i slot="start" class="fa-brands fa-youtube me-2"></i>YouTube Music</wa-button>
                 <?php else: ?>
-                    <a href="#" class="btn btn-outline-danger disabled"><i class="fa-brands fa-youtube me-2"></i>YouTube Music</a>
+                    <wa-button href="#" variant="danger" appearance="outline" disabled><i slot="start" class="fa-brands fa-youtube me-2"></i>YouTube Music</wa-button>
                 <?php endif; ?>
             </div>
         <?php endif; ?>
-    </div>
-</div>
+</wa-card>
 
-<div class="card border-secondary mb-5 bg-transparent">
-    <div class="card-header bg-body-tertiary border-secondary d-flex justify-content-between align-items-center">
+<wa-card class="mb-5 w-100">
+    <div slot="header" class="d-flex justify-content-between align-items-center">
         <h5 class="mb-0 text-uppercase"><i class="fa-duotone fa-vault me-2"></i>Digital Archives & Studio Masters</h5>
         <div>
-            <span class="badge bg-secondary me-2" title="Creative Commons Attribution-ShareAlike 4.0 International">CC BY-SA 4.0</span>
+            <wa-badge variant="neutral" class="me-2" title="Creative Commons Attribution-ShareAlike 4.0 International">CC BY-SA 4.0</wa-badge>
         </div>
     </div>
-    <div class="card-body">
         <p class="text-muted small mb-3">Support the band and own the master tapes. High-fidelity payloads are available directly from the Engine Room storefront.</p>
         
         <div class="d-flex gap-2 flex-wrap">
-            <a href="<?php echo htmlspecialchars($free_archive_zip); ?>" download class="btn btn-outline-success">
-                <i class="fa-solid fa-file-zipper me-2"></i>Free Archive (128kbps)
-            </a>
+            <wa-button href="<?php echo htmlspecialchars($free_archive_zip); ?>" download variant="success" appearance="outline">
+                <i slot="start" class="fa-solid fa-file-zipper"></i> Free Archive (128kbps)
+            </wa-button>
             
             <?php if (!empty($store_standard_url)): ?>
-                <a href="<?php echo htmlspecialchars($store_standard_url); ?>" target="_blank" class="btn btn-outline-info">
-                    <i class="fa-solid fa-compact-disc me-2"></i>Standard Archive (V0 MP3/OGG)
-                </a>
+                <wa-button href="<?php echo htmlspecialchars($store_standard_url); ?>" variant="brand" appearance="outline" target="_blank">
+                    <i slot="start" class="fa-solid fa-compact-disc me-2"></i>Standard Archive (V0 MP3/OGG)
+                </wa-button>
             <?php endif; ?>
             
             <?php if (!empty($store_audiophile_url)): ?>
-                <a href="<?php echo htmlspecialchars($store_audiophile_url); ?>" target="_blank" class="btn btn-outline-warning">
-                    <i class="fa-solid fa-waveform-lines me-2"></i>Audiophile Vault (FLAC/WAV)
-                </a>
+                <wa-button href="<?php echo htmlspecialchars($store_audiophile_url); ?>" variant="warning" appearance="outline" target="_blank">
+                    <i slot="start" class="fa-solid fa-waveform-lines me-2"></i>Audiophile Vault (FLAC/WAV)
+                </wa-button>
             <?php endif; ?>
         </div>
-    </div>
-</div>
+</wa-card>
 
 <h3 class="h4 fw-bold text-uppercase text-muted mb-3">
     <i class="fa-duotone fa-list-music me-2"></i>Tracklist & Lyrics
@@ -288,7 +283,7 @@ $js_playlist = [];
             echo '<h4 class="text-info-emphasis fw-bold mb-0"><i class="fa-duotone fa-compact-disc me-2"></i>Disc ' . $disc . $display_disc_name . '</h4>';
             echo '</div>';
             
-            echo '<div class="list-group list-group-flush bg-transparent">';
+            echo '<div class="d-flex flex-column gap-2">';
             $is_list_open = true;
         }
 
@@ -297,7 +292,7 @@ $js_playlist = [];
         // ==========================================
         if (!empty($suite_name) && $suite_name !== $current_suite) {
             $current_suite = $suite_name;
-            echo '<div class="list-group-item bg-secondary-subtle border-start border-3 border-info py-2 mt-3 mb-1">';
+            echo '<div class="bg-secondary bg-opacity-10 border-start border-3 border-info py-2 mt-3 mb-1 px-3 rounded-end">';
             echo '<h6 class="text-uppercase text-secondary mb-0 fw-bold"><i class="fa-solid fa-layer-group me-2"></i>' . htmlspecialchars($suite_name) . '</h6>';
             echo '</div>';
         } elseif (empty($suite_name) && $current_suite !== null) {
@@ -336,7 +331,7 @@ $js_playlist = [];
         $indent_class = !empty($current_suite) ? "ms-4 border-start-0 ps-3" : "";
         ?>
         
-        <div class="list-group-item bg-transparent border-secondary text-muted py-3 track-row <?php echo $indent_class; ?>" id="track-row-<?php echo $index; ?>" data-isrc="<?php echo htmlspecialchars($isrc_code); ?>">
+        <wa-card class="track-row w-100 <?php echo $indent_class; ?>" id="track-row-<?php echo $index; ?>" data-isrc="<?php echo htmlspecialchars($isrc_code); ?>">
             <div class="row align-items-center">
                 <div class="col-md-8 mb-2 mb-md-0">
                     <div class="d-flex align-items-center flex-wrap">
@@ -352,41 +347,46 @@ $js_playlist = [];
 
                             <?php 
                             if ($legacy_tier): 
-                                $badge_class = 'bg-secondary-subtle text-secondary-emphasis'; 
-                                if ($legacy_tier === 'Chart Smash') $badge_class = 'bg-success-subtle text-success-emphasis';
-                                if ($legacy_tier === 'Fan Anthem') $badge_class = 'bg-warning-subtle text-warning-emphasis';
-                                if ($legacy_tier === 'Deep Cut') $badge_class = 'bg-info-subtle text-info-emphasis';
-                                if ($legacy_tier === 'The Dud' || $legacy_tier === 'Studio Filler') $badge_class = 'bg-danger-subtle text-danger-emphasis';
-                                if ($legacy_tier === 'Vault Track') $badge_class = 'bg-dark text-warning border border-warning';
+                                $badge_variant = 'neutral';
+                                $badge_appearance = 'filled';
+                                
+                                if ($legacy_tier === 'Chart Smash') $badge_variant = 'success';
+                                if ($legacy_tier === 'Fan Anthem') $badge_variant = 'warning';
+                                if ($legacy_tier === 'Deep Cut') $badge_variant = 'brand'; // Brand usually maps to info/primary
+                                if ($legacy_tier === 'The Dud' || $legacy_tier === 'Studio Filler') $badge_variant = 'danger';
+                                if ($legacy_tier === 'Vault Track') {
+                                    $badge_variant = 'warning';
+                                    $badge_appearance = 'outline';
+                                }
                                 
                                 $safe_lore_attr = htmlspecialchars($lore_note, ENT_QUOTES);
                                 $wcag_attrs = $lore_note 
                                     ? 'title="' . $safe_lore_attr . '" aria-label="Legacy Tier: ' . htmlspecialchars($legacy_tier) . '. Lore Note: ' . $safe_lore_attr . '" tabindex="0"'
                                     : 'aria-label="Legacy Tier: ' . htmlspecialchars($legacy_tier) . '" tabindex="0"';
                             ?>
-                                <span class="badge <?php echo $badge_class; ?> align-text-bottom" style="font-size: 0.55em; letter-spacing: 0.5px; cursor: help;" <?php echo $wcag_attrs; ?>>
-                                    <span aria-hidden="true"><?php echo strtoupper($legacy_tier); ?></span>
-                                </span>
+                                <wa-badge variant="<?php echo $badge_variant; ?>" appearance="<?php echo $badge_appearance; ?>" class="align-text-bottom" style="cursor: help;" <?php echo $wcag_attrs; ?>>
+                                    <?php echo strtoupper($legacy_tier); ?>
+                                </wa-badge>
                             <?php endif; ?>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-md-4 text-end mt-2 mt-md-0">
-                    <div class="btn-group" role="group" aria-label="Track Actions">
-                        <button type="button" class="btn btn-sm btn-primary btn-play-index" data-index="<?php echo $index; ?>" title="Play Track">
-                            <i class="fa-duotone fa-play me-2"></i>Play
-                        </button>
-                        <button type="button" class="btn btn-sm btn-outline-info btn-view-lyrics" data-title="<?php echo htmlspecialchars($track['title']); ?>" data-url="<?php echo $lyrics_url; ?>" title="View Lyrics">
-                            <i class="fa-duotone fa-book-open me-2"></i>Lyrics
-                        </button>
-                        <a href="<?php echo $dl_web_mp3; ?>" download class="btn btn-sm btn-outline-secondary license-gate" title="Download Free MP3">
+                    <div class="d-flex gap-2 justify-content-md-end" aria-label="Track Actions">
+                        <wa-button variant="primary" size="small" class="btn-play-index" data-index="<?php echo $index; ?>" title="Play Track">
+                            <i slot="start" class="fa-duotone fa-play me-2"></i>Play
+                        </wa-button>
+                        <wa-button variant="brand" appearance="outline" size="small" class="btn-view-lyrics" data-title="<?php echo htmlspecialchars($track['title']); ?>" data-url="<?php echo $lyrics_url; ?>" title="View Lyrics">
+                            <i slot="start" class="fa-duotone fa-book-open me-2"></i>Lyrics
+                        </wa-button>
+                        <wa-button href="<?php echo $dl_web_mp3; ?>" download variant="neutral" appearance="outline" size="small" class="license-gate" title="Download Free MP3">
                             <i class="fa-duotone fa-download"></i>
-                        </a>
+                        </wa-button>
                     </div>
                 </div>
             </div>
-        </div>
+        </wa-card>
     <?php endforeach; ?>
     
     <?php if ($is_list_open) echo '</div>'; // Close final list-group ?>
