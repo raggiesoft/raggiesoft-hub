@@ -367,6 +367,14 @@ if (isset($customPageAssets) && is_array($customPageAssets)) {
             width: auto !important; /* Undo w-100 on desktop */
         }
     }
+        
+        /* Ensure navbar collapse breaks to a new line on mobile */
+        @media (max-width: 767.98px) {
+            #navbarCollapse {
+                flex-basis: 100% !important;
+                flex-grow: 1;
+            }
+        }
     </style>
 </head>
   
@@ -473,7 +481,7 @@ if (isset($customPageAssets) && is_array($customPageAssets)) {
     
     <header>
       <nav class="navbar navbar-expand-md sticky-top border-bottom border-primary border-opacity-50 bg-body">
-        <div class="container-fluid">
+        <div class="container-fluid d-flex flex-wrap justify-content-between align-items-center">
           
             <a class="navbar-brand d-flex align-items-center" href="<?php echo htmlspecialchars($pageConfig['navbarBrandLink'] ?? $navbarBrandLink ?? '/'); ?>">
                 
