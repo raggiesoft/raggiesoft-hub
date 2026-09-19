@@ -11,7 +11,7 @@
         "showSidebar": true,
         "sidebar": "engine-room/artists/crimson-node/sidebar-northwood",
         "navbarBrandLogo": "https://assets.raggiesoft.com/engine-room-records/artists/crimson-node/2002-crimson-node/album-art.jpg",
-        "navbarBrandText": "<span class=\"navbar-brand-text\"><span class=\"d-none d-md-inline\">Crimson </span>Node</span>",
+        "navbarBrandText": "Crimson Node",
         "navbarBrandLink": "/engine-room/artists/crimson-node",
         "ogImage": "https://assets.raggiesoft.com/engine-room-records/artists/crimson-node/2002-crimson-node/album-art.jpg"
     },
