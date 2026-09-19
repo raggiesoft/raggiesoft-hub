@@ -163,79 +163,7 @@ if (!empty($carousel_albums)):
     </div>
 </div>
 
-<script>
-    (function() {
-        const carousel = document.getElementById('cinemaCarousel');
-        const prevBtns = document.querySelectorAll('.cinema-prev');
-        const nextBtns = document.querySelectorAll('.cinema-next');
-        let autoplayInterval;
-        const autoplayDelay = 6000; // 6 seconds
-        
-        // WCAG: Check for reduced motion
-        const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-        if(carousel) {
-            const scrollNext = () => {
-                const scrollBehavior = prefersReducedMotion ? 'auto' : 'smooth';
-                console.log('Scroll Next Fired. Current Left:', carousel.scrollLeft);
-                if (carousel.scrollLeft + carousel.clientWidth >= carousel.scrollWidth - 50) {
-                    carousel.scrollTo({ left: 0, behavior: scrollBehavior });
-                } else {
-                    carousel.scrollTo({ left: carousel.scrollLeft + carousel.clientWidth, behavior: scrollBehavior });
-                }
-            };
-            const scrollPrev = () => {
-                const scrollBehavior = prefersReducedMotion ? 'auto' : 'smooth';
-                console.log('Scroll Prev Fired. Current Left:', carousel.scrollLeft);
-                if (carousel.scrollLeft <= 50) {
-                    carousel.scrollTo({ left: carousel.scrollWidth, behavior: scrollBehavior });
-                } else {
-                    carousel.scrollTo({ left: carousel.scrollLeft - carousel.clientWidth, behavior: scrollBehavior });
-                }
-            };
-            
-            // Wire up buttons
-            prevBtns.forEach(btn => btn.addEventListener('click', (e) => {
-                e.preventDefault();
-                scrollPrev();
-                resetAutoplay(); // Reset timer if user manually navigates
-            }));
-            
-            nextBtns.forEach(btn => btn.addEventListener('click', (e) => {
-                e.preventDefault();
-                scrollNext();
-                resetAutoplay();
-            }));
-
-            // Autoplay Logic (Only if user has NOT requested reduced motion)
-            const startAutoplay = () => {
-                if (!prefersReducedMotion) {
-                    autoplayInterval = setInterval(scrollNext, autoplayDelay);
-                }
-            };
-
-            const stopAutoplay = () => {
-                if (autoplayInterval) {
-                    clearInterval(autoplayInterval);
-                }
-            };
-
-            const resetAutoplay = () => {
-                stopAutoplay();
-                startAutoplay();
-            };
-
-            // WCAG: Pause autoplay when user hovers or interacts
-            carousel.parentElement.addEventListener('mouseenter', stopAutoplay);
-            carousel.parentElement.addEventListener('mouseleave', startAutoplay);
-            carousel.parentElement.addEventListener('touchstart', stopAutoplay, {passive: true});
-            carousel.parentElement.addEventListener('touchend', startAutoplay, {passive: true});
-
-            // Start initially
-            startAutoplay();
-        }
-    })();
-</script>
 
 <?php else: ?>
     <div class="alert alert-warning text-center">

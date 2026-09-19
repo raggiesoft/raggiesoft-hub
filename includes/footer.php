@@ -97,6 +97,7 @@ $isDarkTheme = (isset($currentPageTheme) && in_array($currentPageTheme, ['dark',
 
 
 <script src="https://assets.raggiesoft.com/common/js/encyclopedia.js?v=1789647924"></script>
+<script src="https://assets.raggiesoft.com/common/js/cinema-carousel.js"></script>
 <script>
 // 1. Wrap the Store UI logic into a reusable function
 function initializeStorePreferences() {
