@@ -39,6 +39,8 @@ if ($discographyData) {
                     ],
                     'title'       => $album['title'],
                     'year'        => $album['year'],
+                    'realRelease' => $album['realRelease'] ?? '',
+                    'genre'       => $album['genre'] ?? 'Rock',
                     'link'        => $album['url'],
                     'img_src'     => $album['img'] ?? 'https://assets.raggiesoft.com/common/images/defaults/vinyl-placeholder.jpg', 
                     'description' => $album['description'] ?? "Released in {$album['year']}.",
@@ -103,14 +105,24 @@ if (!empty($carousel_albums)):
                         
                         <!-- Right Column: Album Info & Buttons -->
                         <div class="col-md-7 col-lg-6 text-center text-md-start">
-                            <h2 class="fw-bold text-white display-5 text-uppercase mb-1" style="text-shadow: 0 2px 10px rgba(0,0,0,0.5);">
+                            <h2 class="fw-bold text-white display-5 text-uppercase mb-1" style="text-shadow: 0 2px 4px rgba(0,0,0,0.8), 0 4px 15px rgba(0,0,0,0.6);">
                                 <?php echo htmlspecialchars($album['title']); ?>
                             </h2>
-                            <p class="text-primary font-monospace mb-4 fs-5 fw-bold">
-                                Released: <span class="text-white"><?php echo $album['year']; ?></span>
-                            </p>
+                            <div class="d-flex flex-wrap gap-2 justify-content-center justify-content-md-start mb-4">
+                                <span class="badge bg-black bg-opacity-50 border border-secondary border-opacity-25 fs-6 fw-normal px-3 py-2 text-white" style="backdrop-filter: blur(5px);">
+                                    <i class="fa-solid fa-compact-disc text-info me-2"></i><?php echo htmlspecialchars($album['genre']); ?>
+                                </span>
+                                <span class="badge bg-black bg-opacity-50 border border-secondary border-opacity-25 fs-6 fw-normal px-3 py-2 text-white" style="backdrop-filter: blur(5px);">
+                                    <i class="fa-regular fa-clock text-warning me-2"></i>Narrative: <?php echo htmlspecialchars($album['year']); ?>
+                                </span>
+                                <?php if (!empty($album['realRelease'])): ?>
+                                <span class="badge bg-black bg-opacity-50 border border-secondary border-opacity-25 fs-6 fw-normal px-3 py-2 text-white" style="backdrop-filter: blur(5px);">
+                                    <i class="fa-solid fa-calendar-check text-success me-2"></i>World: <?php echo htmlspecialchars($album['realRelease']); ?>
+                                </span>
+                                <?php endif; ?>
+                            </div>
                             
-                            <p class="text-white-50 lead mb-5" style="max-width: 600px;">
+                            <p class="lead mb-5 fw-medium" style="color: rgba(255, 255, 255, 0.95); text-shadow: 0 1px 5px rgba(0,0,0,0.9); max-width: 600px; line-height: 1.6;">
                                 <?php echo htmlspecialchars($album['description']); ?>
                             </p>
                             
@@ -142,11 +154,11 @@ if (!empty($carousel_albums)):
     
     <!-- Navigation Buttons -->
     <div class="d-flex justify-content-between position-absolute w-100 px-3" style="top: 50%; left: 0; transform: translateY(-50%); pointer-events: none; z-index: 10;">
-        <wa-button variant="neutral" appearance="filled" class="cinema-prev shadow-lg" style="pointer-events: auto; opacity: 0.8;" pill>
-            <i class="fa-solid fa-chevron-left fs-5"></i>
+        <wa-button variant="neutral" appearance="filled" class="cinema-prev shadow-lg" style="pointer-events: auto; border: 2px solid rgba(255,255,255,0.2);" pill>
+            <i class="fa-solid fa-chevron-left fs-5 text-body-emphasis"></i>
         </wa-button>
-        <wa-button variant="neutral" appearance="filled" class="cinema-next shadow-lg" style="pointer-events: auto; opacity: 0.8;" pill>
-            <i class="fa-solid fa-chevron-right fs-5"></i>
+        <wa-button variant="neutral" appearance="filled" class="cinema-next shadow-lg" style="pointer-events: auto; border: 2px solid rgba(255,255,255,0.2);" pill>
+            <i class="fa-solid fa-chevron-right fs-5 text-body-emphasis"></i>
         </wa-button>
     </div>
 </div>
