@@ -288,7 +288,7 @@ $personSchema = [
             <p id="credentialLore" class="mb-0 small fst-italic text-light">Lore goes here.</p>
         </div>
     </div>
-    <wa-button slot="footer" id="closeCredentialBtn" variant="neutral">Close</wa-button>
+    <wa-button slot="footer" id="closeCredentialBtn" variant="neutral" onclick="this.closest('wa-dialog').open = false;">Close</wa-button>
 </wa-dialog>
 
 <script>
@@ -321,10 +321,6 @@ $personSchema = [
             
             dialog.show();
         });
-    });
-    
-    document.getElementById('closeCredentialBtn').addEventListener('click', () => {
-        dialog.hide();
     });
 })();
 </script>
