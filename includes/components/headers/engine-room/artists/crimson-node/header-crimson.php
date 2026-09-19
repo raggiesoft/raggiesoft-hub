@@ -30,7 +30,7 @@ $isLore = str_starts_with($request_uri, '/raggiesoft-books/books/crimson-node');
   
 
   
-  <wa-dropdown placement="bottom-start">
+  <wa-dropdown placement="bottom-start" hoist>
     <wa-button slot="trigger" appearance="plain" class="nav-link  <?php echo ($isPhalanx || $isCcc || $isNorthwood || $isPiedmont) ? 'active' : '';?>">
         <i class="fa-duotone fa-users me-2" aria-hidden="true"></i>Characters <i class="fa-solid fa-chevron-down ms-1" style="font-size: 0.8em;" aria-hidden="true"></i>
     </wa-button>

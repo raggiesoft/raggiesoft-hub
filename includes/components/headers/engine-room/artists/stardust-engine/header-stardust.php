@@ -31,8 +31,8 @@
   
 
   
-  <wa-dropdown placement="bottom-start">
-    <wa-button  href="#"    slot="trigger" appearance="plain">
+  <wa-dropdown placement="bottom-start" hoist>
+    <wa-button slot="trigger" appearance="plain">
         <i class="fa-duotone fa-users me-2"></i>The Band
     </wa-button>
         <wa-menu>
