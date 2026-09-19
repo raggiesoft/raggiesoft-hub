@@ -184,16 +184,15 @@ if (isset($customPageAssets) && is_array($customPageAssets)) {
         <?php echo json_encode($schema, JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT); ?>
     </script>
 
-    <?php foreach ($css_load_queue as $cssUrl): ?>
-        <link href="<?php echo $cssUrl . '?v=' . time(); ?>" rel="stylesheet">
-    <?php endforeach; ?>    
-
-    <!--<script src="https://kit.fontawesome.com/ec060982d4.js" crossorigin="anonymous"></script>-->
-    <!-- Web Awesome Pro Kit -->
+    <!-- Web Awesome Pro Kit (Load FIRST so custom CSS can override) -->
     <link rel="stylesheet" href="https://ka-p.webawesome.com/kit/bb765cf132c5414e/webawesome@3.10.0/styles/themes/default.css">
     <link rel="stylesheet" href="https://ka-p.webawesome.com/kit/bb765cf132c5414e/webawesome@3.10.0/styles/utilities.css">
     <link rel="stylesheet" href="https://ka-p.webawesome.com/kit/bb765cf132c5414e/webawesome@3.10.0/styles/native.css">
     <script type="module" src="https://ka-p.webawesome.com/kit/bb765cf132c5414e/webawesome@3.10.0/webawesome.loader.js"></script>
+
+    <?php foreach ($css_load_queue as $cssUrl): ?>
+        <link href="<?php echo $cssUrl . '?v=' . time(); ?>" rel="stylesheet">
+    <?php endforeach; ?>    
 
     <link rel="stylesheet" href="https://kit.fontawesome.com/ec060982d4.css" crossorigin="anonymous">
 

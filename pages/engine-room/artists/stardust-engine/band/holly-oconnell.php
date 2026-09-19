@@ -263,7 +263,16 @@ $personSchema = [
     </div>
 </div>
 
-<wa-dialog id="credentialModal" label="Credential">
+<style>
+    wa-dialog::part(panel) {
+        background-color: #050508;
+        border: 2px solid var(--wa-color-primary);
+    }
+    wa-dialog::part(close-button) {
+        display: none;
+    }
+</style>
+<wa-dialog id="credentialModal" label="Credential" style="--wa-panel-background-color: #050508; --wa-panel-border-color: var(--wa-color-primary);">
     <div slot="label" id="credentialTitle" class="d-flex align-items-center gap-2 fw-bold text-light">
         <wa-icon name="circle-info" variant="solid"></wa-icon> Credential
     </div>
@@ -279,7 +288,7 @@ $personSchema = [
             <p id="credentialLore" class="mb-0 small fst-italic text-light">Lore goes here.</p>
         </div>
     </div>
-    <wa-button slot="footer" variant="neutral" onclick="document.getElementById('credentialModal').hide()">Close</wa-button>
+    <wa-button slot="footer" id="closeCredentialBtn" variant="neutral">Close</wa-button>
 </wa-dialog>
 
 <script>
@@ -312,6 +321,10 @@ document.addEventListener('DOMContentLoaded', () => {
             
             dialog.show();
         });
+    });
+    
+    document.getElementById('closeCredentialBtn').addEventListener('click', () => {
+        dialog.hide();
     });
 });
 </script>
