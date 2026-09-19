@@ -236,19 +236,7 @@ if ($eras) {
 
     </div>
 </div>
-<?php if (!empty($allAlbums)): ?>
-<div class="container py-5 border-bottom border-secondary border-opacity-25">
-    <div class="text-center mb-5">
-        <h2 class="fw-bold text-uppercase text-body-emphasis">The Archives</h2>
-        <p class="text-body-secondary">Swipe through the historical discography of The Stardust Engine.</p>
-    </div>
 
-    <?php 
-    $carouselJsonUrl = 'https://assets.raggiesoft.com/engine-room-records/artists/the-stardust-engine/albums.json';
-    include $_SERVER['DOCUMENT_ROOT'] . '/includes/components/carousel.php'; 
-    ?>
-</div>
-<?php endif; ?>
 
 <div class="container py-5">
     <div class="row g-4">
@@ -304,12 +292,5 @@ if ($eras) {
     animation: pulse 2s infinite;
 }
 
-/* --- CAROUSEL DROPDOWN FIX --- */
-#discographyCarousel {
-    position: relative;
-    z-index: 1040; /* Ensures the dropdown renders above the 3 cards below the carousel */
-}
-#discographyCarousel .carousel-inner {
-    overflow: visible; /* Removes the clipping box so the menu can drop down freely */
-}
+
 </style>
