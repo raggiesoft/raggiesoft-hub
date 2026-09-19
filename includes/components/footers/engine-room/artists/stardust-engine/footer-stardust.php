@@ -10,7 +10,7 @@
                 <a href="/engine-room/artists/stardust-engine" class="d-inline-block mb-3">
                     <img src="https://assets.raggiesoft.com/engine-room-records/artists/the-stardust-engine/band-logo.png" 
                          alt="The Stardust Engine" 
-                         class="img-fluid drop-shadow-neon" 
+                         class="img-fluid drop-shadow-neon logo-invert" 
                          style="max-height: 80px;">
                 </a>
                 <p class="small text-white-75 pe-lg-4" style="line-height: 1.6;">

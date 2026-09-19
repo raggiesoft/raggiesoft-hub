@@ -40,7 +40,8 @@ if ($theme === 'corporate' || $theme === $site || $theme === 'light') {
 
 // 4. Build CSS Queue
 $css_load_queue = [
-    $path_bootstrap,                    
+    $path_bootstrap,
+    $cdn_root . "/common/css/raggiesoft-logo.css",                    
     $path_theme_base . '/root.css',     
     $path_theme_base . '/extras.css',   
     $path_theme_base . '/header.css',   
