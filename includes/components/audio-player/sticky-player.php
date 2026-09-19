@@ -55,27 +55,33 @@
 </div>
 
 <style>
-    /* Completely eliminate padding in wa-dialog so our wrapper fills it */
-    #lyricsModal {
-        --body-spacing: 0 !important;
-        --header-spacing: 0 !important;
-        --footer-spacing: 0 !important;
-        border: none !important;
+    /* Native HTML5 Dialog Styling */
+    dialog#lyricsModal {
+        width: 90vw;
+        max-width: 800px;
+        border: 1px solid var(--wa-color-primary, #42AADB);
+        border-radius: 8px;
+        background-color: var(--bs-body-bg, #121212);
+        color: var(--bs-body-color, #e0e0e0);
+        padding: 0;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.5);
     }
-    #lyricsModal::part(panel) {
-        border: 1px solid var(--wa-color-primary, #42AADB) !important;
+    
+    dialog#lyricsModal::backdrop {
+        background: rgba(0, 0, 0, 0.6);
+        backdrop-filter: blur(4px);
     }
 </style>
 
-<wa-dialog id="lyricsModal" no-header style="--width: 75vw;" data-turbo-permanent="true">
-    <div class="w-100 h-100 d-flex flex-column" style="background-color: var(--bs-body-bg, #121212) !important; color: var(--bs-body-color, #e0e0e0) !important; padding: 1.5rem; min-height: 50vh;">
+<dialog id="lyricsModal" data-turbo-permanent="true">
+    <div class="w-100 h-100 d-flex flex-column" style="padding: 1.5rem; max-height: 85vh; overflow-y: auto;">
         
         <div class="d-flex align-items-center justify-content-between mb-4 border-bottom border-secondary pb-3">
             <div>
                 <i class="fa-duotone fa-music me-2" style="color: var(--wa-color-primary);"></i>
                 <strong id="lyricsModalTitle" class="text-glow-primary fs-5">Track Title</strong>
             </div>
-            <wa-button appearance="plain" variant="neutral" onclick="document.getElementById('lyricsModal').hide()" aria-label="Close">
+            <wa-button appearance="plain" variant="neutral" onclick="document.getElementById('lyricsModal').close()" aria-label="Close">
                 <i class="fa-solid fa-xmark fs-4"></i>
             </wa-button>
         </div>
@@ -83,13 +89,13 @@
         <div id="lyricsContent" class="font-monospace small flex-grow-1" style="opacity: 0.85;"></div>
         
         <div class="mt-4 pt-3 border-top border-secondary text-end">
-            <wa-button variant="primary" onclick="document.getElementById('lyricsModal').hide()">
+            <wa-button variant="primary" onclick="document.getElementById('lyricsModal').close()">
                 Close Archive
             </wa-button>
         </div>
         
     </div>
-</wa-dialog>
+</dialog>
 
 <script>
     // Self-Inject Logic
