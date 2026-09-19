@@ -55,41 +55,44 @@
 </div>
 
 <style>
-    /* Nuke transparent dialogs globally from orbit */
-    wa-dialog::part(base),
-    wa-dialog::part(panel),
-    wa-dialog {
-        --wa-panel-background-color: var(--bs-body-bg, #ffffff) !important;
-        --wa-dialog-background-color: var(--bs-body-bg, #ffffff) !important;
-        background-color: var(--bs-body-bg, #ffffff) !important;
-        color: var(--bs-body-color, #000000) !important;
+    /* Completely eliminate padding in wa-dialog so our wrapper fills it */
+    #lyricsModal {
+        --body-spacing: 0 !important;
+        --header-spacing: 0 !important;
+        --footer-spacing: 0 !important;
+        border: none !important;
     }
-    
-    [data-bs-theme="dark"] wa-dialog::part(base),
-    [data-bs-theme="dark"] wa-dialog::part(panel),
-    [data-bs-theme="dark"] wa-dialog {
-        --wa-panel-background-color: var(--bs-body-bg, #121212) !important;
-        --wa-dialog-background-color: var(--bs-body-bg, #121212) !important;
-        background-color: var(--bs-body-bg, #121212) !important;
-        color: var(--bs-body-color, #e0e0e0) !important;
+    #lyricsModal::part(panel) {
+        border: 1px solid var(--wa-color-primary, #42AADB) !important;
     }
 </style>
 
-<wa-dialog id="lyricsModal" label="Track Title" style="--width: 75vw; --wa-panel-background-color: var(--bs-body-bg, #121212) !important;" data-turbo-permanent="true">
-    <div slot="label">
-        <i class="fa-duotone fa-music me-2" style="color: var(--wa-color-primary);"></i>
-        <span id="lyricsModalTitle" class="text-glow-primary">Track Title</span>
+<wa-dialog id="lyricsModal" no-header style="--width: 75vw;" data-turbo-permanent="true">
+    <div class="w-100 h-100 d-flex flex-column" style="background-color: var(--bs-body-bg, #121212) !important; color: var(--bs-body-color, #e0e0e0) !important; padding: 1.5rem; min-height: 50vh;">
+        
+        <div class="d-flex align-items-center justify-content-between mb-4 border-bottom border-secondary pb-3">
+            <div>
+                <i class="fa-duotone fa-music me-2" style="color: var(--wa-color-primary);"></i>
+                <strong id="lyricsModalTitle" class="text-glow-primary fs-5">Track Title</strong>
+            </div>
+            <wa-button appearance="plain" variant="neutral" onclick="document.getElementById('lyricsModal').hide()" aria-label="Close">
+                <i class="fa-solid fa-xmark fs-4"></i>
+            </wa-button>
+        </div>
+        
+        <div id="lyricsContent" class="font-monospace small flex-grow-1" style="opacity: 0.85;"></div>
+        
+        <div class="mt-4 pt-3 border-top border-secondary text-end">
+            <wa-button variant="primary" onclick="document.getElementById('lyricsModal').hide()">
+                Close Archive
+            </wa-button>
+        </div>
+        
     </div>
-    
-    <div id="lyricsContent" class="font-monospace small text-body" style="opacity: 0.75;"></div>
-    
-    <wa-button slot="footer" variant="primary" onclick="document.getElementById('lyricsModal').hide()">
-        Close Archive
-    </wa-button>
 </wa-dialog>
 
 <script>
-    // Self-Inject Logic (Moves modal to Body to fix Z-Order stacking context issues)
+    // Self-Inject Logic
     (function() {
         const player = document.getElementById('sticky-audio-player');
         const modal = document.getElementById('lyricsModal');
@@ -102,19 +105,4 @@
             document.body.appendChild(modal);
         }
     })();
-</script>
-
-<script>
-    // Brute force shadow DOM background injection for wa-dialog
-    document.addEventListener('wa-show', (e) => {
-        if (e.target.tagName === 'WA-DIALOG') {
-            const panel = e.target.shadowRoot.querySelector('[part="panel"]');
-            if (panel) {
-                // Get current body bg or fallback to dark/light
-                const isDark = document.documentElement.getAttribute('data-bs-theme') === 'dark';
-                panel.style.backgroundColor = isDark ? '#121212' : '#ffffff';
-                panel.style.color = isDark ? '#e0e0e0' : '#000000';
-            }
-        }
-    });
 </script>
