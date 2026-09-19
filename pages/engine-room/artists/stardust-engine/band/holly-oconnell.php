@@ -79,7 +79,7 @@ $personSchema = [
                     <div class="d-flex flex-wrap gap-2 mb-4">
                         
                         <button type="button" class="btn badge rounded-pill bg-black border border-primary text-white p-2 credential-btn" 
-                                data-bs-toggle="modal" data-bs-target="#credentialModal"
+                                
                                 data-title="Juris Doctor (1994)"
                                 data-desc="CPI School of Law. Graduated Summa Cum Laude."
                                 data-lore="While the band was touring the 'Wilderness Years,' Holly was in the library. She passed the bar exam two weeks before the 'Warehouse Tapes' tour began."
@@ -89,7 +89,7 @@ $personSchema = [
                         </button>
 
                         <button type="button" class="btn badge rounded-pill bg-black border border-primary text-primary p-2 credential-btn" 
-                                data-bs-toggle="modal" data-bs-target="#credentialModal"
+                                
                                 data-title="Virginia Bar Admission (1994)"
                                 data-desc="Licensed to practice law in the Commonwealth of Virginia."
                                 data-lore="The Home Turf. Holly ensures that no one can sue the O'Connell family in their own backyard without facing her personally."
@@ -99,7 +99,7 @@ $personSchema = [
                         </button>
 
                         <button type="button" class="btn badge rounded-pill bg-black border border-danger text-danger p-2 credential-btn" 
-                            data-bs-toggle="modal" data-bs-target="#credentialModal"
+                            
                             data-title="New York Bar Admission (1998)"
                             data-desc="Licensed to practice law in the State of New York."
                             data-lore="The Retaliation. After Apex Records threatened Engine Room with a baseless antitrust injunction in the summer of '97, Holly realized she needed the power to strike back on their home turf. She passed the NY Bar a year later so she could personally walk into the Southern District of New York and sue them on their own doorstep."
@@ -109,7 +109,7 @@ $personSchema = [
                     </button>
 
                         <button type="button" class="btn badge rounded-pill bg-black border border-danger text-danger p-2 credential-btn" 
-                                data-bs-toggle="modal" data-bs-target="#credentialModal"
+                                
                                 data-title="California Bar Admission (2002)"
                                 data-desc="Licensed to practice law in the State of California."
                                 data-lore="The Omni-Global Countermeasure. Knowing Omni-Global was based in Los Angeles, Holly passed this bar specifically to threaten them on their home turf. 'I don't need local counsel. I am local counsel.'"
@@ -119,7 +119,7 @@ $personSchema = [
                         </button>
 
                         <button type="button" class="btn badge rounded-pill bg-black border border-success text-success p-2 credential-btn" 
-                                data-bs-toggle="modal" data-bs-target="#credentialModal"
+                                
                                 data-title="Delaware Bar Admission (2015)"
                                 data-desc="Licensed to practice law in Delaware (Corporate Law Hub)."
                                 data-lore="The Corporate Shield. When Engine Room Records, LLC re-incorporated in Delaware in 2015, Holly ensured she was the only lawyer the company would ever need."
@@ -135,7 +135,7 @@ $personSchema = [
                     <div class="d-flex flex-wrap gap-2">
                         
                         <button type="button" class="btn badge rounded-pill bg-black border border-secondary text-white p-2 credential-btn" 
-                                data-bs-toggle="modal" data-bs-target="#credentialModal"
+                                
                                 data-title="Notary Public (1994)"
                                 data-desc="A public officer constituted by law to serve the public in non-contentious matters."
                                 data-lore="Holly became a Notary so no outsider would ever witness the family's signatures. Every contract, medical release, and NDA is sealed in-house."
@@ -145,7 +145,7 @@ $personSchema = [
                         </button>
                         
                         <button type="button" class="btn badge rounded-pill bg-black border border-secondary text-white p-2 credential-btn" 
-                                data-bs-toggle="modal" data-bs-target="#credentialModal"
+                                
                                 data-title="Enrolled Agent (1996)"
                                 data-desc="A federally-authorized tax practitioner empowered to represent taxpayers before the IRS."
                                 data-lore="Obtained immediately after the Lottery win. Holly represented the Trust directly before the IRS to ensure the $2.04B windfall was taxed perfectly."
@@ -155,7 +155,7 @@ $personSchema = [
                         </button>
                         
                         <button type="button" class="btn badge rounded-pill bg-black border border-secondary text-white p-2 credential-btn" 
-                                data-bs-toggle="modal" data-bs-target="#credentialModal"
+                                
                                 data-title="LL.M. in Taxation (1999)"
                                 data-desc="An advanced law degree specializing in the complexities of tax law."
                                 data-lore="The blueprint. This degree allowed Holly to build the 'Forger Nation Trust' structure, turning a rock band into a sovereign economic state."
@@ -165,7 +165,7 @@ $personSchema = [
                         </button>
 
                         <button type="button" class="btn badge rounded-pill bg-black border border-success text-success p-2 credential-btn" 
-                                data-bs-toggle="modal" data-bs-target="#credentialModal"
+                                
                                 data-title="Certified Trust & Fiduciary Advisor (2003)"
                                 data-desc="The standard of excellence for trust and wealth management professionals."
                                 data-lore="Holly doesn't hire trustees; she *is* the trustee. This certification allows her to legally manage the family's generational wealth without third-party oversight."
@@ -175,7 +175,7 @@ $personSchema = [
                         </button>
 
                         <button type="button" class="btn badge rounded-pill bg-black border border-success text-success p-2 credential-btn" 
-                                data-bs-toggle="modal" data-bs-target="#credentialModal"
+                                
                                 data-title="CFA Charterholder (2006)"
                                 data-desc="Chartered Financial Analyst. The gold standard for investment analysis and portfolio management."
                                 data-lore="Holly trades the family's $2.4B portfolio herself, ensuring the 'Loss Leader' band never runs out of ammo."
@@ -185,7 +185,7 @@ $personSchema = [
                         </button>
 
                         <button type="button" class="btn badge rounded-pill bg-black border border-primary text-info p-2 credential-btn" 
-                                data-bs-toggle="modal" data-bs-target="#credentialModal"
+                                
                                 data-title="M.S. Quantitative Finance (2009)"
                                 data-desc="The application of mathematical models to financial markets and risk management."
                                 data-lore="Obtained after the 2008 crash. Holly built custom algorithmic hedges to ensure the family fortune would be 'Recession-Proof' forever."
@@ -195,7 +195,7 @@ $personSchema = [
                         </button>
 
                         <button type="button" class="btn badge rounded-pill bg-black border border-danger text-danger p-2 credential-btn" 
-                                data-bs-toggle="modal" data-bs-target="#credentialModal"
+                                
                                 data-title="Certified Forensic Accountant (2014)"
                                 data-desc="Specialists in detecting financial fraud and auditing complex records."
                                 data-lore="The Weapon. Holly uses this to audit streaming services. If you steal a penny of royalties, she *will* find it."
@@ -205,7 +205,7 @@ $personSchema = [
                         </button>
 
                         <button type="button" class="btn badge rounded-pill bg-black border border-danger text-danger p-2 credential-btn" 
-                                data-bs-toggle="modal" data-bs-target="#credentialModal"
+                                
                                 data-title="Certified Insolvency & Restructuring Advisor (2016)"
                                 data-desc="Experts in corporate bankruptcy and turnaround management."
                                 data-lore="The Cleanup Crew. When a rival company fails (often because they crossed Holly), she uses this expertise to buy their distressed assets for pennies."
@@ -263,61 +263,55 @@ $personSchema = [
     </div>
 </div>
 
-<div class="modal fade" id="credentialModal" tabindex="-1" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content bg-dark text-white border-2" id="modalContent">
-            <div class="modal-header border-bottom-0" id="modalHeader">
-                <h5 class="modal-title fw-bold" id="credentialTitle">
-                    <i class="fa-solid fa-circle-info me-2"></i>Credential
-                </h5>
-                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body p-4">
-                <h6 class="text-uppercase small opacity-75 mb-2">Technical Definition</h6>
-                <p id="credentialDesc" class="text-white-50 mb-4">Description goes here.</p>
-                
-                <div class="alert bg-black bg-opacity-50 border-start border-4" id="loreAlert" style="border-color: currentColor;">
-                    <h6 class="text-uppercase small fw-bold mb-1"><i class="fa-duotone fa-shield-check me-2"></i>Application to The Family</h6>
-                    <p id="credentialLore" class="mb-0 small fst-italic text-white">Lore goes here.</p>
-                </div>
-            </div>
+<wa-dialog id="credentialModal" label="Credential">
+    <div slot="label" id="credentialTitle" class="d-flex align-items-center gap-2 fw-bold text-light">
+        <wa-icon name="circle-info" variant="solid"></wa-icon> Credential
+    </div>
+    
+    <div class="p-2">
+        <h6 class="text-uppercase small opacity-75 mb-2 text-light">Technical Definition</h6>
+        <p id="credentialDesc" class="text-white-50 mb-4">Description goes here.</p>
+        
+        <div class="p-3 rounded-2" id="loreAlert" style="background: rgba(0,0,0,0.3); border-left: 4px solid var(--wa-color-primary);">
+            <h6 class="text-uppercase small fw-bold mb-1 text-light">
+                <i class="fa-duotone fa-shield-check me-2"></i>Application to The Family
+            </h6>
+            <p id="credentialLore" class="mb-0 small fst-italic text-light">Lore goes here.</p>
         </div>
     </div>
-</div>
+    <wa-button slot="footer" variant="neutral" onclick="document.getElementById('credentialModal').hide()">Close</wa-button>
+</wa-dialog>
 
 <script>
-(function() {
-    var credentialModal = document.getElementById('credentialModal');
+document.addEventListener('DOMContentLoaded', () => {
+    const dialog = document.getElementById('credentialModal');
+    if (!dialog) return;
     
-    if (credentialModal) {
-        credentialModal.addEventListener('show.bs.modal', function (event) {
-            var button = event.relatedTarget;
+    document.querySelectorAll('.credential-btn').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            const title = btn.getAttribute('data-title');
+            const desc = btn.getAttribute('data-desc');
+            const lore = btn.getAttribute('data-lore');
+            const color = btn.getAttribute('data-color');
+            const icon = btn.getAttribute('data-icon');
             
-            // Extract info from data-* attributes
-            var title = button.getAttribute('data-title');
-            var desc = button.getAttribute('data-desc');
-            var lore = button.getAttribute('data-lore');
-            var color = button.getAttribute('data-color');
-            var icon = button.getAttribute('data-icon');
-
-            // Find modal elements
-            var modalTitle = credentialModal.querySelector('#credentialTitle');
-            var modalDesc = credentialModal.querySelector('#credentialDesc');
-            var modalLore = credentialModal.querySelector('#credentialLore');
-            var modalHeader = credentialModal.querySelector('#modalHeader');
-            var modalContent = credentialModal.querySelector('#modalContent');
-            var loreAlert = credentialModal.querySelector('#loreAlert');
-
             // Inject Data
-            modalTitle.innerHTML = '<i class="fa-solid ' + icon + ' me-2"></i>' + title;
-            modalDesc.textContent = desc;
-            modalLore.textContent = lore;
-
-            // Cleanly reset and apply color-coded classes
-            modalHeader.className = 'modal-header border-bottom-0 text-white bg-' + color;
-            modalContent.className = 'modal-content bg-dark text-white border-2 border-' + color;
-            loreAlert.className = 'alert bg-black bg-opacity-50 border-start border-4 text-white border-' + color;
+            document.getElementById('credentialTitle').innerHTML = '<i class="fa-solid ' + icon + ' me-2"></i>' + title;
+            document.getElementById('credentialDesc').textContent = desc;
+            document.getElementById('credentialLore').textContent = lore;
+            
+            // Map Bootstrap colors to Web Awesome CSS variables
+            let waColor = 'var(--wa-color-primary)';
+            if (color === 'success') waColor = 'var(--wa-color-success)';
+            if (color === 'danger') waColor = 'var(--wa-color-danger)';
+            if (color === 'warning') waColor = 'var(--wa-color-warning)';
+            if (color === 'info') waColor = 'var(--wa-color-neutral)';
+            
+            const loreAlert = document.getElementById('loreAlert');
+            loreAlert.style.borderLeftColor = waColor;
+            
+            dialog.show();
         });
-    }
-})();
+    });
+});
 </script>
