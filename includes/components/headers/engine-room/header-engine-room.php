@@ -15,7 +15,7 @@ $isArchives = (
 );
 ?>
 
-<div class="d-flex flex-column flex-md-row align-items-start align-items-md-center py-3 py-md-0 gap-2 ms-auto">
+<div class="d-flex flex-wrap align-items-center gap-2 ms-auto">
 
   <wa-button appearance="plain" href="/engine-room/radio" class="<?php echo $isRadio ? 'text-warning' : ''; ?>">
     <i slot="start" class="fa-duotone fa-signal-stream"></i> Engine Room Radio

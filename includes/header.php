@@ -255,6 +255,15 @@ if (isset($customPageAssets) && is_array($customPageAssets)) {
 
         /* --- HAMBURGER MENU ANIMATION --- */
         .navbar-toggler { border: none; padding: 0.5rem; }
+        
+        @media (max-width: 767.98px) {
+            #navbarCollapse .d-flex {
+                flex-direction: column !important;
+                align-items: flex-start !important;
+                padding-top: 1rem;
+                padding-bottom: 1rem;
+            }
+        }
         .navbar-toggler:focus { box-shadow: none; }
         
         .hamburger-icon {
