@@ -89,7 +89,7 @@ $musicGroupSchema = [
                     $storeStandardUrl = $album['storeStandardUrl'] ?? '';
                     $storeAudiophileUrl = $album['storeAudiophileUrl'] ?? '';
                 ?>
-                    <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-4">
                         <div class="card h-100 bg-transparent border-secondary glass-card shadow-sm overflow-hidden">
                             <div class="position-relative">
                                 
