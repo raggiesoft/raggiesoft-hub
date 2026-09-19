@@ -111,10 +111,18 @@ function initializeStorePreferences() {
         
         if (!mainBtn || !toggleBtn) return; // Safety check
         
-        mainBtn.className = mainBtn.className.replace(/btn-\w+/, platformData.color);
-        toggleBtn.className = toggleBtn.className.replace(/btn-\w+/, platformData.color);
+        // Remove old DSP classes
+        mainBtn.classList.forEach(c => { if (c.startsWith('dsp-')) mainBtn.classList.remove(c); });
+        toggleBtn.classList.forEach(c => { if (c.startsWith('dsp-')) toggleBtn.classList.remove(c); });
+        
+        // Add new DSP class
+        if (platformData.class) {
+            mainBtn.classList.add(platformData.class);
+            toggleBtn.classList.add(platformData.class);
+        }
+        
         mainBtn.href = platformData.url;
-        if(icon) icon.className = `main-store-icon ${platformData.icon} me-2`;
+        if(icon) icon.className = `main-store-icon ${platformData.icon}`;
         if(textSpan) textSpan.textContent = `${mainBtn.dataset.defaultText} ${platformData.name}`;
     }
 
