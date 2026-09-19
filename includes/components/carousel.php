@@ -164,7 +164,7 @@ if (!empty($carousel_albums)):
 </div>
 
 <script>
-    document.addEventListener('DOMContentLoaded', () => {
+    (function() {
         const carousel = document.getElementById('cinemaCarousel');
         const prevBtns = document.querySelectorAll('.cinema-prev');
         const nextBtns = document.querySelectorAll('.cinema-next');
@@ -177,19 +177,20 @@ if (!empty($carousel_albums)):
         if(carousel) {
             const scrollNext = () => {
                 const scrollBehavior = prefersReducedMotion ? 'auto' : 'smooth';
-                // Using a slightly wider threshold to account for rounding errors in scrollWidth
+                console.log('Scroll Next Fired. Current Left:', carousel.scrollLeft);
                 if (carousel.scrollLeft + carousel.clientWidth >= carousel.scrollWidth - 50) {
                     carousel.scrollTo({ left: 0, behavior: scrollBehavior });
                 } else {
-                    carousel.scrollBy({ left: carousel.clientWidth, behavior: scrollBehavior });
+                    carousel.scrollTo({ left: carousel.scrollLeft + carousel.clientWidth, behavior: scrollBehavior });
                 }
             };
             const scrollPrev = () => {
                 const scrollBehavior = prefersReducedMotion ? 'auto' : 'smooth';
+                console.log('Scroll Prev Fired. Current Left:', carousel.scrollLeft);
                 if (carousel.scrollLeft <= 50) {
                     carousel.scrollTo({ left: carousel.scrollWidth, behavior: scrollBehavior });
                 } else {
-                    carousel.scrollBy({ left: -carousel.clientWidth, behavior: scrollBehavior });
+                    carousel.scrollTo({ left: carousel.scrollLeft - carousel.clientWidth, behavior: scrollBehavior });
                 }
             };
             
@@ -233,7 +234,7 @@ if (!empty($carousel_albums)):
             // Start initially
             startAutoplay();
         }
-    });
+    })();
 </script>
 
 <?php else: ?>
