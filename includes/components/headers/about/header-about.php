@@ -9,7 +9,7 @@ $isGovernance = (str_contains($uri, '/license') || str_contains($uri, '/privacy'
 $isProfiles   = (!$isGovernance && $uri !== '/about'); // If not governance and not root about, assume it's a profile
 ?>
 
-<div class="d-flex flex-wrap align-items-center gap-2 ms-auto">
+<div class="d-flex flex-column flex-md-row align-items-stretch align-items-md-center gap-2 ms-auto py-3 py-md-0 w-100 mobile-nav-menu">
   
   
     <wa-button appearance="plain" href="/">

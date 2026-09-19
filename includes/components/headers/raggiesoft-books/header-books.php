@@ -10,7 +10,7 @@ $isAethel = (str_starts_with($request_uri, '/raggiesoft-books/aethel-saga'));
 $isBooks = (str_starts_with($request_uri, '/raggiesoft-books/books'));
 ?>
 
-<div class="d-flex flex-wrap align-items-center gap-2 ms-auto">
+<div class="d-flex flex-column flex-md-row align-items-stretch align-items-md-center gap-2 ms-auto py-3 py-md-0 w-100 mobile-nav-menu">
   
   <wa-button appearance="plain" href="/raggiesoft-books" style="<?php echo $isHub ? 'color: #E3B27C !important; font-weight: bold;' : ''; ?>" class="<?php echo $isHub ? '' : 'text-body-secondary'; ?>">
     <i slot="start" class="fa-duotone fa-landmark"></i> The Archive

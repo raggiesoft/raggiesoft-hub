@@ -350,6 +350,24 @@ if (isset($customPageAssets) && is_array($customPageAssets)) {
     })();
     </script>
       <script src="https://assets.raggiesoft.com/common/js/cinema-carousel.js?v=2"></script>
+
+    <style>
+    /* Clean up Web Awesome buttons inside mobile nav */
+    @media (max-width: 767.98px) {
+        .mobile-nav-menu wa-button::part(base) {
+            justify-content: flex-start !important;
+            text-align: left !important;
+        }
+        .mobile-nav-menu wa-dropdown, .mobile-nav-menu wa-dropdown wa-button {
+            width: 100%;
+        }
+    }
+    @media (min-width: 768px) {
+        .mobile-nav-menu {
+            width: auto !important; /* Undo w-100 on desktop */
+        }
+    }
+    </style>
 </head>
   
   <body class="d-flex flex-column h-100">

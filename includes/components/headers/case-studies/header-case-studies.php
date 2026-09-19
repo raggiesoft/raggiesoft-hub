@@ -6,7 +6,7 @@ $request_uri = $_SERVER['REQUEST_URI'] ?? '/';
 $isOverview = ($request_uri === '/case-studies');
 ?>
 
-<div class="d-flex flex-wrap align-items-center gap-2 ms-auto">
+<div class="d-flex flex-column flex-md-row align-items-stretch align-items-md-center gap-2 ms-auto py-3 py-md-0 w-100 mobile-nav-menu">
   
   
     <wa-button appearance="plain" href="/">

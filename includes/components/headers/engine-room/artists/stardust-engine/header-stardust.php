@@ -4,7 +4,7 @@
 // UPDATED: Corrected Dropdown Labels (O'Connells vs Wrights) to reflect that everyone is kin.
 // UPDATED: Added Official Storefront routing.
 ?>
-<div class="d-flex flex-wrap align-items-center gap-2 ms-auto">
+<div class="d-flex flex-column flex-md-row align-items-stretch align-items-md-center gap-2 ms-auto py-3 py-md-0 w-100 mobile-nav-menu">
   
   
     <wa-button appearance="plain" href="/engine-room/artists/stardust-engine">

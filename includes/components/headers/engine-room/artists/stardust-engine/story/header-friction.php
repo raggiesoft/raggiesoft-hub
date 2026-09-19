@@ -8,7 +8,7 @@ $isOverview = ($uri === '/engine-room/artists/stardust-engine/story/friction');
 $isEvidence = str_contains($uri, '/the-lost-title-track');
 ?>
 
-<div class="d-flex flex-wrap align-items-center gap-2 ms-auto">
+<div class="d-flex flex-column flex-md-row align-items-stretch align-items-md-center gap-2 ms-auto py-3 py-md-0 w-100 mobile-nav-menu">
 
     
         <wa-button appearance="plain" href="/"><i class="fa-duotone fa-house me-2">></i> Home</wa-button>
