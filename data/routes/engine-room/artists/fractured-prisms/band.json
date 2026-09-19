@@ -14,7 +14,6 @@
     "navbarBrandLink": "/engine-room/artists/fractured-prisms",
     "ogImage": "https://assets.raggiesoft.com/engine-room-records/artists/fractured-prisms/1983-carnaby-street/album-art.jpg"
   },
-
   "/engine-room/artists/fractured-prisms/band": {
     "view": "pages/engine-room/artists/fractured-prisms/band/overview",
     "title": "The Residents | Fractured Prisms",
@@ -24,16 +23,6 @@
     "view": "pages/engine-room/artists/fractured-prisms/story/overview",
     "title": "The Lore | Fractured Prisms",
     "ogTitle": "The Hollow Square - 1883 / 1983"
-  },
-  "/engine-room/artists/fractured-prisms/band/rhys-manning": {
-    "view": "pages/engine-room/artists/fractured-prisms/band/rhys-manning",
-    "title": "Rhys Manning | Fractured Prisms",
-    "ogTitle": "Rhys Manning - Synthesizers & Programming"
-  },
-  "/engine-room/artists/fractured-prisms/band/claire-manning": {
-    "view": "pages/engine-room/artists/fractured-prisms/band/claire-manning",
-    "title": "Claire Manning | Fractured Prisms",
-    "ogTitle": "Claire Manning - Lead Vocals & Flute"
   },
   "/engine-room/artists/fractured-prisms/band/the-missing-four": {
     "view": "pages/engine-room/artists/fractured-prisms/band/the-missing-four",

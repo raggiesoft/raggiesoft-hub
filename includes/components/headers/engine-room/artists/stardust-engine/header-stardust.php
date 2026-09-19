@@ -38,19 +38,6 @@
     <wa-menu>
       <wa-dropdown-item href="/engine-room/artists/stardust-engine/band">Overview</wa-dropdown-item>
         <wa-dropdown-item href="/engine-room/artists/stardust-engine/band/history">History & Lore</wa-dropdown-item>
-        
-        <wa-divider></wa-divider>
-        
-        <div class="px-3 py-2 small text-uppercase  fw-bold text-uppercase small ">The O'Connells</div>
-        <wa-dropdown-item href="/engine-room/artists/stardust-engine/band/ryan-oconnell"><i class="fa-duotone fa-wheelchair me-2 "></i>Ryan O'Connell</wa-dropdown-item>
-        <wa-dropdown-item href="/engine-room/artists/stardust-engine/band/cassidy-oconnell"><i class="fa-duotone fa-microphone me-2 "></i>Cassidy O'Connell</wa-dropdown-item>
-        <wa-dropdown-item href="/engine-room/artists/stardust-engine/band/holly-oconnell"><i class="fa-duotone fa-briefcase me-2 "></i>Holly O'Connell</wa-dropdown-item>
-        
-        <wa-divider></wa-divider>
-        
-        <div class="px-3 py-2 small text-uppercase  fw-bold text-uppercase small ">The Wrights</div>
-        <wa-dropdown-item href="/engine-room/artists/stardust-engine/band/evan-wright"><i class="fa-duotone fa-guitar me-2 "></i>Evan Wright</wa-dropdown-item>
-        <wa-dropdown-item href="/engine-room/artists/stardust-engine/band/tyler-wright"><i class="fa-duotone fa-drum me-2 "></i>Tyler Wright</wa-dropdown-item>
     </wa-menu>
   </wa-dropdown>
 
