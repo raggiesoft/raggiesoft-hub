@@ -7,11 +7,11 @@ $request_uri = $_SERVER['REQUEST_URI'] ?? '/';
 $isArchitect = (str_starts_with($request_uri, '/about/michael-ragsdale'));
 ?>
 
-<div class=\"d-flex flex-wrap align-items-center gap-2 ms-auto\">
+<div class="d-flex flex-column flex-md-row align-items-start align-items-md-center py-3 py-md-0 gap-2 ms-auto">
   
   
     <wa-button appearance="plain" href="/">
-        <i slot=\"start\" class=\"fa-duotone fa-house me-2\" aria-hidden="true"></i>Home
+        <i slot="start" class="fa-duotone fa-house me-2" aria-hidden="true"></i>Home
     </wa-button>
   
 
@@ -31,13 +31,13 @@ $isArchitect = (str_starts_with($request_uri, '/about/michael-ragsdale'));
 
   
     <wa-button appearance="plain" href="/engine-room">
-        <i slot=\"start\" class=\"fa-solid fa-industry me-2\" aria-hidden="true"></i>Engine Room
+        <i slot="start" class="fa-solid fa-industry me-2" aria-hidden="true"></i>Engine Room
     </wa-button>
   
 
   
     <wa-button appearance="plain" href="/contact" class="active">
-        <i slot=\"start\" class=\"fa-duotone fa-envelope-open me-2\" aria-hidden="true"></i>Contact
+        <i slot="start" class="fa-duotone fa-envelope-open me-2" aria-hidden="true"></i>Contact
     </wa-button>
   
 

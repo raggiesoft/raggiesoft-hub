@@ -4,11 +4,11 @@
 // Theme: HUD / Sci-Fi / High Contrast
 // CONTEXT: The navigation HUD for the spaceship simulation.
 ?>
-<div class=\"d-flex flex-wrap align-items-center gap-2 ms-auto\">
+<div class="d-flex flex-column flex-md-row align-items-start align-items-md-center py-3 py-md-0 gap-2 ms-auto">
   
   
     <wa-button appearance="plain" href="/engine-room/artists/stardust-engine/story/ad-astra" class="text-uppercase">
-        <i slot=\"start\" class=\"fa-duotone fa-radar me-2\"></i>Mission Hub
+        <i slot="start" class="fa-duotone fa-radar me-2"></i>Mission Hub
     </wa-button>
   
 
@@ -18,7 +18,7 @@
       <i class="fa-duotone fa-book-sparkles me-2"></i>Flight Logs
     </wa-button>
     <wa-menu>
-      <div class="px-3 py-2 small text-uppercase  fw-bold text-uppercase \">Phase I: Departure</div>
+      <div class="px-3 py-2 small text-uppercase  fw-bold text-uppercase ">Phase I: Departure</div>
       <wa-dropdown-item href="/engine-room/artists/stardust-engine/story/ad-astra/voyage/day-01">
             <i class="fa-solid fa-shuttle-space me-2"></i>Day 01: Ignition
           </wa-dropdown-item>
@@ -31,14 +31,14 @@
       
       <wa-divider></wa-divider>
       
-      <div class="px-3 py-2 small text-uppercase  fw-bold text-uppercase \">Phase II: The Void</div>
+      <div class="px-3 py-2 small text-uppercase  fw-bold text-uppercase ">Phase II: The Void</div>
       <wa-dropdown-item href="/engine-room/artists/stardust-engine/story/ad-astra/voyage/day-10">
             <i class="fa-solid fa-stars me-2"></i>Day 10: Harmonic Velocity
           </wa-dropdown-item>
       
       <wa-divider></wa-divider>
       
-      <div class="px-3 py-2 small text-uppercase  fw-bold text-uppercase \">Phase III: Return</div>
+      <div class="px-3 py-2 small text-uppercase  fw-bold text-uppercase ">Phase III: Return</div>
       <wa-dropdown-item href="/engine-room/artists/stardust-engine/story/ad-astra/voyage/day-21">
             <i class="fa-solid fa-meteor me-2"></i>Day 21: Hard Reset
           </wa-dropdown-item>
@@ -48,13 +48,13 @@
 
   
     <wa-button appearance="plain" href="/engine-room/artists/stardust-engine/discography/1995-the-warehouse-tapes/ad-astra" class="text-uppercase">
-        <i slot=\"start\" class=\"fa-duotone fa-play me-2\"></i>Transmission
+        <i slot="start" class="fa-duotone fa-play me-2"></i>Transmission
     </wa-button>
   
 
   
       <wa-button appearance="plain" href="/engine-room/artists/stardust-engine" class="text-uppercase small">
-        <i slot=\"start\" class=\"fa-duotone fa-arrow-right-from-bracket me-2\"></i>Exit Sim
+        <i slot="start" class="fa-duotone fa-arrow-right-from-bracket me-2"></i>Exit Sim
       </wa-button>
   
 

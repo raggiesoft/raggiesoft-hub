@@ -12,11 +12,11 @@ $isLore     = str_contains($uri, '/lore');
 $isChars    = str_contains($uri, '/characters');
 ?>
 
-<div class=\"d-flex flex-wrap align-items-center gap-2 ms-auto\">
+<div class="d-flex flex-column flex-md-row align-items-start align-items-md-center py-3 py-md-0 gap-2 ms-auto">
 
   
     <wa-button appearance="plain" href="/raggiesoft-books/knox/chapters" class="<?php echo $isChapters ? 'active' : ''; ?>">
-        <i slot=\"start\" class=\"fa-duotone fa-book-open-reader me-2\"></i>Read the Story
+        <i slot="start" class="fa-duotone fa-book-open-reader me-2"></i>Read the Story
     </wa-button>
   
 
@@ -26,7 +26,7 @@ $isChars    = str_contains($uri, '/characters');
       <i class="fa-duotone fa-planet-ringed me-2"></i>The Telsan Gap
     </wa-button>
     <wa-menu>
-      <div class="px-3 py-2 small text-uppercase  fw-bold text-uppercase text-success fw-bold\">The Reality</div>
+      <div class="px-3 py-2 small text-uppercase  fw-bold text-uppercase text-success fw-bold">The Reality</div>
       <wa-dropdown-item href="/raggiesoft-books/knox/characters">
             <i class="fa-solid fa-users me-2 text-body-secondary"></i>The Twins & Pip
           </wa-dropdown-item>
@@ -35,7 +35,7 @@ $isChars    = str_contains($uri, '/characters');
           </wa-dropdown-item>
 
       <wa-divider></wa-divider>
-      <div class="px-3 py-2 small text-uppercase  fw-bold text-uppercase text-danger fw-bold\">The Threat</div>
+      <div class="px-3 py-2 small text-uppercase  fw-bold text-uppercase text-danger fw-bold">The Threat</div>
       <wa-dropdown-item href="/raggiesoft-books/knox/lore/axiom-corp">
             <i class="fa-solid fa-building me-2 text-danger"></i>The Axiom
           </wa-dropdown-item>
@@ -48,7 +48,7 @@ $isChars    = str_contains($uri, '/characters');
 
   
       <wa-button appearance="plain" href="/">
-        <i slot=\"start\" class=\"fa-duotone fa-arrow-right-from-bracket me-2 text-body-secondary\"></i><span class="text-body-secondary small">Exit to RaggieSoft</span>
+        <i slot="start" class="fa-duotone fa-arrow-right-from-bracket me-2 text-body-secondary"></i><span class="text-body-secondary small">Exit to RaggieSoft</span>
       </wa-button>
   
 

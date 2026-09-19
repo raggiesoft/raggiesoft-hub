@@ -193,7 +193,7 @@ if ($eras) {
         <div class="col-md-6 col-lg-5">
             <a href="/engine-room/artists/stardust-engine/discography/2003-moon-1-sanctuary-zero-g" class="text-decoration-none">
                 <wa-card class="glass-card h-100 shadow-glow hover-lift w-100" style="border: 1px solid var(--wa-color-brand);">
-                    <div class="position-relative">
+                    <div slot="image" class="position-relative">
                         <img src="https://assets.raggiesoft.com/engine-room-records/artists/the-stardust-engine/2003-sanctuary-zero-g/album-art.jpg" 
                              class="w-100 border-bottom border-info" 
                              alt="Sanctuary (Zero-G) Album Art - The Stardust Engine">
@@ -215,7 +215,7 @@ if ($eras) {
         <div class="col-md-6 col-lg-5">
             <a href="/engine-room/artists/stardust-engine/discography/2003-moon-2-mile-marker-98" class="text-decoration-none">
                 <wa-card class="glass-card h-100 shadow-glow hover-lift w-100" style="border: 1px solid var(--wa-color-danger);">
-                    <div class="position-relative">
+                    <div slot="image" class="position-relative">
                         <img src="https://assets.raggiesoft.com/engine-room-records/artists/the-stardust-engine/2003-mile-marker-98/album-art.jpg" 
                              class="w-100 border-bottom border-danger" 
                              alt="Mile Marker 98 Album Art - The Stardust Engine">
@@ -243,10 +243,11 @@ if ($eras) {
         <p class="text-body-secondary">Swipe through the historical discography of The Stardust Engine.</p>
     </div>
 
-    <wa-carousel id="discographyCarousel" class="bg-body-tertiary rounded shadow-sm border border-secondary border-opacity-50 p-4 w-100" pagination navigation>
+    <div id="discographyCarousel" class="carousel slide carousel-fade bg-body-tertiary rounded shadow-sm border border-secondary border-opacity-50 p-4" data-bs-ride="carousel">
+        <div class="carousel-inner">
             <?php foreach ($allAlbums as $index => $album): ?>
-                <wa-carousel-item>
-                    <div class="row align-items-center justify-content-center w-100 h-100">
+                <div class="carousel-item <?php echo $index === 0 ? 'active' : ''; ?>">
+                    <div class="row align-items-center justify-content-center">
                         <div class="col-sm-5 text-center mb-3 mb-sm-0">
                             <img src="<?php echo htmlspecialchars($album['img']); ?>" class="img-fluid rounded shadow border border-dark" alt="<?php echo htmlspecialchars($album['title']); ?>" style="max-height: 250px;">
                         </div>
@@ -281,9 +282,19 @@ if ($eras) {
                             
                         </div>
                     </div>
-                </wa-carousel-item>
+                </div>
             <?php endforeach; ?>
-    </wa-carousel>
+        </div>
+        
+        <button class="carousel-control-prev" type="button" data-bs-target="#discographyCarousel" data-bs-slide="prev" style="width: 5%;">
+            <i class="fa-solid fa-chevron-left text-body-emphasis fs-3" aria-hidden="true"></i>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#discographyCarousel" data-bs-slide="next" style="width: 5%;">
+            <i class="fa-solid fa-chevron-right text-body-emphasis fs-3" aria-hidden="true"></i>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
 </div>
 <?php endif; ?>
 

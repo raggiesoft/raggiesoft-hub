@@ -9,11 +9,11 @@ $isGovernance = (str_contains($uri, '/license') || str_contains($uri, '/privacy'
 $isProfiles   = (!$isGovernance && $uri !== '/about'); // If not governance and not root about, assume it's a profile
 ?>
 
-<div class=\"d-flex flex-wrap align-items-center gap-2 ms-auto\">
+<div class="d-flex flex-column flex-md-row align-items-start align-items-md-center py-3 py-md-0 gap-2 ms-auto">
   
   
     <wa-button appearance="plain" href="/">
-        <i slot=\"start\" class=\"fa-duotone fa-house me-2\"></i>Home
+        <i slot="start" class="fa-duotone fa-house me-2"></i>Home
     </wa-button>
   
 
@@ -37,12 +37,12 @@ $isProfiles   = (!$isGovernance && $uri !== '/about'); // If not governance and 
         <i class="fa-duotone fa-sitemap me-2"></i>Network Profiles
     </wa-button>
     <wa-menu>
-      <div class="px-3 py-2 small text-uppercase  fw-bold text-uppercase\">The Core</div>
+      <div class="px-3 py-2 small text-uppercase  fw-bold text-uppercase">The Core</div>
       <wa-dropdown-item href="/about/michael-ragsdale"><i class="fa-duotone fa-user-visor me-2"></i>The Architect (Portfolio)</wa-dropdown-item>
       <wa-dropdown-item href="/about/family"><i class="fa-duotone fa-people-group me-2"></i>The Family (DevOps)</wa-dropdown-item>
       
       <wa-divider></wa-divider>
-      <div class="px-3 py-2 small text-uppercase  fw-bold text-uppercase\">The Projects</div>
+      <div class="px-3 py-2 small text-uppercase  fw-bold text-uppercase">The Projects</div>
       <wa-dropdown-item href="/about/engine-room"><i class="fa-solid fa-industry me-2"></i>Engine Room Records</wa-dropdown-item>
       <wa-dropdown-item href="/about/stardust-engine"><i class="fa-duotone fa-rocket-launch me-2"></i>The Stardust Engine</wa-dropdown-item>
       <wa-dropdown-item href="/about/aethel"><i class="fa-duotone fa-sword me-2"></i>The Aethel Saga</wa-dropdown-item>
@@ -52,7 +52,7 @@ $isProfiles   = (!$isGovernance && $uri !== '/about'); // If not governance and 
 
   
     <wa-button appearance="plain" href="/contact">
-        <i slot=\"start\" class=\"fa-duotone fa-envelope me-2\"></i>Contact
+        <i slot="start" class="fa-duotone fa-envelope me-2"></i>Contact
     </wa-button>
   
 

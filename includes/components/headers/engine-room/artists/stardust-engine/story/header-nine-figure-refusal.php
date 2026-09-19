@@ -36,7 +36,7 @@ $isEpilogue = str_contains($uri, '/frost-interview');
     }
 </style>
 
-<div class=\"d-flex flex-wrap align-items-center gap-2 ms-auto\">
+<div class="d-flex flex-column flex-md-row align-items-start align-items-md-center py-3 py-md-0 gap-2 ms-auto">
 
     
         <wa-button appearance="plain" href="/"><i class="fa-duotone fa-house me-2">></i> Home</wa-button>
@@ -44,7 +44,7 @@ $isEpilogue = str_contains($uri, '/frost-interview');
 
     
         <wa-button appearance="plain" href="/engine-room/artists/stardust-engine/story/nine-figure-refusal" class="<?php echo $isOverview ? 'active fw-bold' : ''; ?>">
-            <i slot=\"start\" class=\"fa-duotone fa-chart-network me-2\"></i>Overview
+            <i slot="start" class="fa-duotone fa-chart-network me-2"></i>Overview
         </wa-button>
     
 
@@ -101,12 +101,12 @@ $isEpilogue = str_contains($uri, '/frost-interview');
             <i class="fa-duotone fa-building me-2"></i>Legacy
         </wa-button>
         
-            <div class="px-3 py-2 small text-uppercase  fw-bold text-uppercase text-success fw-bold\">Real Estate</div>
+            <div class="px-3 py-2 small text-uppercase  fw-bold text-uppercase text-success fw-bold">Real Estate</div>
             <wa-dropdown-item href="/engine-room/artists/stardust-engine/story/nine-figure-refusal/the-jessica-miller-center">
                     <i class="fa-duotone fa-building-columns me-2 text-success"></i>The Jessica Miller Center
                 </wa-dropdown-item>
             <wa-divider></wa-divider>
-            <div class="px-3 py-2 small text-uppercase  fw-bold text-uppercase text-primary fw-bold\">Operations</div>
+            <div class="px-3 py-2 small text-uppercase  fw-bold text-uppercase text-primary fw-bold">Operations</div>
             <wa-dropdown-item href="/engine-room/artists/stardust-engine/story/nine-figure-refusal/the-non-profit-model">
                     <i class="fa-duotone fa-hand-holding-box me-2 text-primary"></i>The Non-Profit Model
                 </wa-dropdown-item>
@@ -120,7 +120,7 @@ $isEpilogue = str_contains($uri, '/frost-interview');
             <i class="fa-duotone fa-building me-2"></i>Epilogue
         </wa-button>
     <wa-menu>
-      <div class="px-3 py-2 small text-uppercase  fw-bold text-uppercase text-success fw-bold\">Epilogue</div>
+      <div class="px-3 py-2 small text-uppercase  fw-bold text-uppercase text-success fw-bold">Epilogue</div>
             <wa-dropdown-item href="/engine-room/artists/stardust-engine/story/nine-figure-refusal/frost-interview">
                     <i class="fa-duotone fa-clipboard-question me-2 text-success"></i>Frost Interview
                 </wa-dropdown-item>
@@ -130,7 +130,7 @@ $isEpilogue = str_contains($uri, '/frost-interview');
 
     
       <wa-button appearance="plain" href="/engine-room">
-        <i slot=\"start\" class=\"fa-duotone fa-arrow-right-from-bracket me-2 \"></i><span class=" small">Engine Room HQ</span>
+        <i slot="start" class="fa-duotone fa-arrow-right-from-bracket me-2 "></i><span class=" small">Engine Room HQ</span>
       </wa-button>
   
 

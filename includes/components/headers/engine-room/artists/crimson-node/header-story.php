@@ -28,11 +28,11 @@ if ($request_uri === '/engine-room/artists/crimson-node/story/chapter-01') {
 }
 ?>
 
-<div class=\"d-flex flex-wrap align-items-center gap-2 ms-auto\">
+<div class="d-flex flex-column flex-md-row align-items-start align-items-md-center py-3 py-md-0 gap-2 ms-auto">
   
   
     <wa-button appearance="plain" href="/engine-room/artists/crimson-node">
-        <i slot=\"start\" class=\"fa-duotone fa-house-chimney-blank me-1\" aria-hidden="true"></i> Node
+        <i slot="start" class="fa-duotone fa-house-chimney-blank me-1" aria-hidden="true"></i> Node
     </wa-button>
   
 
@@ -41,7 +41,7 @@ if ($request_uri === '/engine-room/artists/crimson-node/story/chapter-01') {
   <!-- Archives Up -->
   
     <wa-button appearance="plain" href="/raggiesoft-books/books/crimson-node" class="<?= $isArchives ? 'active' : '' ?>">
-        <i slot=\"start\" class=\"fa-duotone fa-book-atlas me-1\" aria-hidden="true"></i> Archives
+        <i slot="start" class="fa-duotone fa-book-atlas me-1" aria-hidden="true"></i> Archives
     </wa-button>
   
 
@@ -50,12 +50,12 @@ if ($request_uri === '/engine-room/artists/crimson-node/story/chapter-01') {
   <!-- Playback Controls -->
   
     <wa-button appearance="plain" href="<?= $prevLink ?>" class="<?= $prevDisabled ?>">">
-        <i slot=\"start\" class=\"fa-solid fa-backward-step\" aria-hidden="true"></i>
+        <i slot="start" class="fa-solid fa-backward-step" aria-hidden="true"></i>
     </wa-button>
   
   
     <wa-button appearance="plain" href="<?= $nextLink ?>" class="<?= $nextDisabled ?>">">
-        <i slot=\"start\" class=\"fa-solid fa-forward-step\" aria-hidden="true"></i>
+        <i slot="start" class="fa-solid fa-forward-step" aria-hidden="true"></i>
     </wa-button>
   
 

@@ -2,23 +2,23 @@
 // includes/components/headers/engine-room/artists/fractured-prisms/header-prisms.php
 // Dedicated navigation for the Fractured Prisms artist sub-site.
 ?>
-<div class=\"d-flex flex-wrap align-items-center gap-2 ms-auto\">
+<div class="d-flex flex-column flex-md-row align-items-start align-items-md-center py-3 py-md-0 gap-2 ms-auto">
   
   
     <wa-button appearance="plain" href="/engine-room/artists/fractured-prisms">
-        <i slot=\"start\" class=\"fa-duotone fa-house me-2\"></i>The Square
+        <i slot="start" class="fa-duotone fa-house me-2"></i>The Square
     </wa-button>
   
 
   
     <wa-button appearance="plain" href="/engine-room/artists/fractured-prisms/story">
-        <i slot=\"start\" class=\"fa-duotone fa-book-journal-whills me-2\"></i>Lore
+        <i slot="start" class="fa-duotone fa-book-journal-whills me-2"></i>Lore
     </wa-button>
   
 
   
     <wa-button appearance="plain" href="/engine-room/artists/fractured-prisms/discography">
-        <i slot=\"start\" class=\"fa-duotone fa-compact-disc me-2\"></i>Discography
+        <i slot="start" class="fa-duotone fa-compact-disc me-2"></i>Discography
     </wa-button>
   
 
@@ -33,13 +33,13 @@
         
         <wa-divider></wa-divider>
         
-        <div class="px-3 py-2 small text-uppercase  fw-bold text-uppercase small \">The Surviving Architects</div>
+        <div class="px-3 py-2 small text-uppercase  fw-bold text-uppercase small ">The Surviving Architects</div>
         <wa-dropdown-item href="/engine-room/artists/fractured-prisms/band/claire-manning"><i class="fa-duotone fa-microphone me-2 "></i>Claire Manning</wa-dropdown-item>
         <wa-dropdown-item href="/engine-room/artists/fractured-prisms/band/rhys-manning"><i class="fa-duotone fa-keyboard me-2 "></i>Rhys Manning</wa-dropdown-item>
         
         <wa-divider></wa-divider>
         
-        <div class="px-3 py-2 small text-uppercase  fw-bold text-uppercase small \">The Echoes</div>
+        <div class="px-3 py-2 small text-uppercase  fw-bold text-uppercase small ">The Echoes</div>
         <wa-dropdown-item href="/engine-room/artists/fractured-prisms/band/the-missing-four"><i class="fa-duotone fa-users-slash me-2 "></i>The Missing Four</wa-dropdown-item>
     </wa-menu>
   </wa-dropdown>
@@ -47,7 +47,7 @@
 
   
     <wa-button appearance="plain" href="/contact">
-        <i slot=\"start\" class=\"fa-duotone fa-envelope me-2\"></i>Contact
+        <i slot="start" class="fa-duotone fa-envelope me-2"></i>Contact
     </wa-button>
   
 
@@ -55,7 +55,7 @@
 
   
       <wa-button appearance="plain" href="/engine-room" class="">
-        <i slot=\"start\" class=\"fa-solid fa-arrow-turn-up me-2\"></i>Engine Room HQ
+        <i slot="start" class="fa-solid fa-arrow-turn-up me-2"></i>Engine Room HQ
       </wa-button>
   
 

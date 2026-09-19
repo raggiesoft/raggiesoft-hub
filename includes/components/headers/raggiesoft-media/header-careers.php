@@ -36,7 +36,7 @@
     }
 </style>
 
-<div class=\"d-flex flex-wrap align-items-center gap-2 ms-auto\">
+<div class="d-flex flex-column flex-md-row align-items-start align-items-md-center py-3 py-md-0 gap-2 ms-auto">
   
   
     <span class="badge aero-badge-danger text-uppercase px-3 py-2 rounded-pill shadow-sm">
@@ -46,7 +46,7 @@
 
   
     <wa-button appearance="plain" href="/raggiesoft-media" class="btn btn-glass-exit btn-sm rounded-pill px-3 py-1 fw-bold">
-        <i slot=\"start\" class=\"fa-duotone fa-arrow-right-from-bracket me-2\" aria-hidden="true"></i>Exit to RaggieSoft Media
+        <i slot="start" class="fa-duotone fa-arrow-right-from-bracket me-2" aria-hidden="true"></i>Exit to RaggieSoft Media
     </wa-button>
   
 

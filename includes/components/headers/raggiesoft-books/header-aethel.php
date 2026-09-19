@@ -16,23 +16,23 @@ $isSoundtrack = str_contains($request_uri, '/soundtrack');
 $isMap        = str_contains($request_uri, '/map');
 ?>
 
-<div class=\"d-flex flex-wrap align-items-center gap-2 ms-auto\" style="letter-spacing: 1px;">
+<div class="d-flex flex-wrap align-items-center gap-2 ms-auto" style="letter-spacing: 1px;">
   
   
     <wa-button appearance="plain" href="/raggiesoft-books/aethel-saga" class="px-3 <?php echo $isOverview ? 'active text-warning fw-bold' : ' hover-text-white'; ?>">
-       <i slot=\"start\" class=\"fa-duotone fa-book-sparkles me-2\"></i>Overview
+       <i slot="start" class="fa-duotone fa-book-sparkles me-2"></i>Overview
     </wa-button>
   
 
   
     <wa-button appearance="plain" href="/raggiesoft-books/aethel-saga/lore/characters" class="px-3 <?php echo $isLore ? 'active text-warning fw-bold' : ' hover-text-white'; ?>">
-       <i slot=\"start\" class=\"fa-duotone fa-users-crown me-2\"></i>Characters
+       <i slot="start" class="fa-duotone fa-users-crown me-2"></i>Characters
     </wa-button>
   
 
   
     <wa-button appearance="plain" href="/raggiesoft-books/aethel-saga/soundtrack" class="px-3 <?php echo $isSoundtrack ? 'active text-warning fw-bold' : ' hover-text-white'; ?>">
-       <i slot=\"start\" class=\"fa-duotone fa-compact-disc me-2\"></i>Soundtrack
+       <i slot="start" class="fa-duotone fa-compact-disc me-2"></i>Soundtrack
     </wa-button>
   
 
@@ -44,7 +44,7 @@ $isMap        = str_contains($request_uri, '/map');
 
   
       <wa-button appearance="plain" href="/raggiesoft-books" class=" hover-text-warning small">
-        <i slot=\"start\" class=\"fa-duotone fa-arrow-right-from-bracket\"></i>
+        <i slot="start" class="fa-duotone fa-arrow-right-from-bracket"></i>
       </wa-button>
   
 

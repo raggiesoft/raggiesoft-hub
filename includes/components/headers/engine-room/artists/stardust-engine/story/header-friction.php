@@ -8,7 +8,7 @@ $isOverview = ($uri === '/engine-room/artists/stardust-engine/story/friction');
 $isEvidence = str_contains($uri, '/the-lost-title-track');
 ?>
 
-<div class=\"d-flex flex-wrap align-items-center gap-2 ms-auto\">
+<div class="d-flex flex-column flex-md-row align-items-start align-items-md-center py-3 py-md-0 gap-2 ms-auto">
 
     
         <wa-button appearance="plain" href="/"><i class="fa-duotone fa-house me-2">></i> Home</wa-button>
@@ -16,7 +16,7 @@ $isEvidence = str_contains($uri, '/the-lost-title-track');
 
     
         <wa-button appearance="plain" href="/engine-room/artists/stardust-engine/story/friction" class="<?php echo $isOverview ? 'active fw-bold text-danger' : ''; ?>">
-            <i slot=\"start\" class=\"fa-duotone fa-file-contract me-2\"></i>Overview
+            <i slot="start" class="fa-duotone fa-file-contract me-2"></i>Overview
         </wa-button>
     
 
@@ -26,12 +26,12 @@ $isEvidence = str_contains($uri, '/the-lost-title-track');
             <i class="fa-duotone fa-folder-magnifying-glass me-2"></i>Evidence
         </wa-button>
     <wa-menu>
-      <div class="px-3 py-2 small text-uppercase  fw-bold text-uppercase text-danger fw-bold\">Restricted Assets</div>
+      <div class="px-3 py-2 small text-uppercase  fw-bold text-uppercase text-danger fw-bold">Restricted Assets</div>
             <wa-dropdown-item href="/engine-room/artists/stardust-engine/story/friction/the-lost-title-track">
                     <i class="fa-duotone fa-ban me-2 text-danger"></i>The Lost Title Track
                 </wa-dropdown-item>
             <wa-divider></wa-divider>
-            <div class="px-3 py-2 small text-uppercase  fw-bold text-uppercase \">Related Archives</div>
+            <div class="px-3 py-2 small text-uppercase  fw-bold text-uppercase ">Related Archives</div>
             <wa-dropdown-item href="/engine-room/artists/stardust-engine/discography/1992-friction">
                     <i class="fa-duotone fa-compact-disc me-2"></i>The Canceled Album
                 </wa-dropdown-item>
@@ -41,7 +41,7 @@ $isEvidence = str_contains($uri, '/the-lost-title-track');
 
     
         <wa-button appearance="plain" href="/engine-room/artists/stardust-engine/band/history">
-            <i slot=\"start\" class=\"fa-duotone fa-arrow-turn-up me-2 \"></i><span class=" small">Return to Timeline</span>
+            <i slot="start" class="fa-duotone fa-arrow-turn-up me-2 "></i><span class=" small">Return to Timeline</span>
         </wa-button>
     
 

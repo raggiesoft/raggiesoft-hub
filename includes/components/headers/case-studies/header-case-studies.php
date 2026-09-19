@@ -6,17 +6,17 @@ $request_uri = $_SERVER['REQUEST_URI'] ?? '/';
 $isOverview = ($request_uri === '/case-studies');
 ?>
 
-<div class=\"d-flex flex-wrap align-items-center gap-2 ms-auto\">
+<div class="d-flex flex-column flex-md-row align-items-start align-items-md-center py-3 py-md-0 gap-2 ms-auto">
   
   
     <wa-button appearance="plain" href="/">
-        <i slot=\"start\" class=\"fa-duotone fa-house me-2\" aria-hidden="true"></i>Home
+        <i slot="start" class="fa-duotone fa-house me-2" aria-hidden="true"></i>Home
     </wa-button>
   
 
   
     <wa-button appearance="plain" href="/case-studies" class="active">
-        <i slot=\"start\" class=\"fa-duotone fa-file-magnifying-glass me-2\" aria-hidden="true"></i>Case Studies
+        <i slot="start" class="fa-duotone fa-file-magnifying-glass me-2" aria-hidden="true"></i>Case Studies
     </wa-button>
   
 
@@ -36,7 +36,7 @@ $isOverview = ($request_uri === '/case-studies');
 
   
     <wa-button appearance="plain" href="/about">
-        <i slot=\"start\" class=\"fa-duotone fa-circle-info me-2\" aria-hidden="true"></i>Mission
+        <i slot="start" class="fa-duotone fa-circle-info me-2" aria-hidden="true"></i>Mission
     </wa-button>
   
 

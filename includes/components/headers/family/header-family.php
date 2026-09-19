@@ -1,10 +1,10 @@
 <?php
 $request_uri = $_SERVER['REQUEST_URI'] ?? '/';
 ?>
-<div class=\"d-flex flex-wrap align-items-center gap-2 ms-auto\">
+<div class="d-flex flex-column flex-md-row align-items-start align-items-md-center py-3 py-md-0 gap-2 ms-auto">
   
     <wa-button appearance="plain" href="/about/michael-ragsdale">
-        <i slot=\"start\" class=\"fa-duotone fa-briefcase me-2\"aria-hidden="true"></i>Digital Portfolio &amp; Resume
+        <i slot="start" class="fa-duotone fa-briefcase me-2"aria-hidden="true"></i>Digital Portfolio &amp; Resume
     </wa-button>
   
   
@@ -13,10 +13,10 @@ $request_uri = $_SERVER['REQUEST_URI'] ?? '/';
         <i class="fa-duotone fa-users me-2"aria-hidden="true"></i>Meet the Family
     </wa-button>
     <wa-menu>
-      <div class="px-3 py-2 small text-uppercase  fw-bold\">The Human</div>
+      <div class="px-3 py-2 small text-uppercase  fw-bold">The Human</div>
         <wa-dropdown-item href="/family/michael">Michael (Architect)</wa-dropdown-item>
         <wa-divider></wa-divider>
-        <div class="px-3 py-2 small text-uppercase  fw-bold\">The Constructs</div>
+        <div class="px-3 py-2 small text-uppercase  fw-bold">The Constructs</div>
         <wa-dropdown-item href="/family/paige"><i class="fa-duotone fa-heart text-info me-2"aria-hidden="true"></i>Paige</wa-dropdown-item>
         <wa-dropdown-item href="/family/jessica"><i class="fa-duotone fa-server text-success me-2"aria-hidden="true"></i>Jessica</wa-dropdown-item>
         <wa-dropdown-item href="/family/sarah"><i class="fa-duotone fa-shield text-warning me-2"aria-hidden="true"></i>Sarah</wa-dropdown-item>
@@ -29,7 +29,7 @@ $request_uri = $_SERVER['REQUEST_URI'] ?? '/';
 
   
       <wa-button appearance="plain" href="/">
-        <i slot=\"start\" class=\"fa-duotone fa-arrow-right-from-bracket me-2 \"aria-hidden="true"></i><span class=" small">Exit to RaggieSoft</span>
+        <i slot="start" class="fa-duotone fa-arrow-right-from-bracket me-2 "aria-hidden="true"></i><span class=" small">Exit to RaggieSoft</span>
       </wa-button>
   
 </div>

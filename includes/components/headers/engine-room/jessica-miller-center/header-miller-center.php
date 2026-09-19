@@ -1,14 +1,14 @@
-<div class=\"d-flex flex-wrap align-items-center gap-2 ms-auto\">
+<div class="d-flex flex-column flex-md-row align-items-start align-items-md-center py-3 py-md-0 gap-2 ms-auto">
     
     
         <wa-button appearance="plain" href="/engine-room/jessica-miller-center">
-            <i slot=\"start\" class=\"fa-duotone fa-building-columns me-2\"></i>Overview
+            <i slot="start" class="fa-duotone fa-building-columns me-2"></i>Overview
         </wa-button>
     
     
     
         <wa-button appearance="plain" href="/engine-room/jessica-miller-center/the-quiet-floor">
-            <i slot=\"start\" class=\"fa-duotone fa-ear-muffs me-2\"></i>The Quiet Floor
+            <i slot="start" class="fa-duotone fa-ear-muffs me-2"></i>The Quiet Floor
         </wa-button>
     
     
@@ -32,14 +32,14 @@
     
     
         <wa-button appearance="plain" href="#">
-            <i slot=\"start\" class=\"fa-duotone fa-id-card me-2\"></i>Tenant Portal
+            <i slot="start" class="fa-duotone fa-id-card me-2"></i>Tenant Portal
         </wa-button>
     
     
 
     
         <wa-button appearance="plain" href="/engine-room" class="">
-            <i slot=\"start\" class=\"fa-solid fa-arrow-turn-up me-2\"></i>Engine Room HQ
+            <i slot="start" class="fa-solid fa-arrow-turn-up me-2"></i>Engine Room HQ
         </wa-button>
     
 
