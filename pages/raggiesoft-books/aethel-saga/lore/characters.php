@@ -8,8 +8,7 @@ $pageTitle = "Lore: The Figures of Legend";
         
         <nav aria-label="breadcrumb" class="mb-4">
             <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="/library/aethel">Aethel Home</a></li>
-                <li class="breadcrumb-item"><a href="/library/aethel/lore">Archives</a></li>
+                <li class="breadcrumb-item"><a href="/raggiesoft-books/aethel-saga" class="text-warning text-decoration-none">Aethel Home</a></li>
                 <li class="breadcrumb-item active" aria-current="page">Figures of Legend</li>
             </ol>
         </nav>

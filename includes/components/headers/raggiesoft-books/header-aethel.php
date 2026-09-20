@@ -20,31 +20,33 @@ $isMap        = str_contains($request_uri, '/map');
   
   
     <wa-button appearance="plain" href="/raggiesoft-books/aethel-saga" class="px-3 <?php echo $isOverview ? 'active text-warning fw-bold' : ' hover-text-white'; ?>">
-       <i slot="start" class="fa-duotone fa-book-sparkles me-2"></i>Overview
+       <i slot="prefix" class="fa-duotone fa-book-sparkles me-2"></i>Overview
     </wa-button>
   
-
-  
-    <wa-button appearance="plain" href="/raggiesoft-books/aethel-saga/lore/characters" class="px-3 <?php echo $isLore ? 'active text-warning fw-bold' : ' hover-text-white'; ?>">
-       <i slot="start" class="fa-duotone fa-users-crown me-2"></i>Characters
+    <wa-button appearance="plain" href="/raggiesoft-books/books/aethel" class="px-3 hover-text-white">
+       <i slot="prefix" class="fa-duotone fa-book-open-cover me-2"></i>Read The Book
     </wa-button>
-  
 
-  
+    <wa-button appearance="plain" href="/raggiesoft-books/aethel-saga/lore/characters" class="px-3 <?php echo $isLore && !str_contains($request_uri, '/locations') ? 'active text-warning fw-bold' : ' hover-text-white'; ?>">
+       <i slot="prefix" class="fa-duotone fa-users-crown me-2"></i>Characters
+    </wa-button>
+
+    <wa-button appearance="plain" href="/raggiesoft-books/aethel-saga/lore/locations" class="px-3 <?php echo str_contains($request_uri, '/locations') ? 'active text-warning fw-bold' : ' hover-text-white'; ?>">
+       <i slot="prefix" class="fa-duotone fa-map-location-dot me-2"></i>Locations
+    </wa-button>
+
     <wa-button appearance="plain" href="/raggiesoft-books/aethel-saga/soundtrack" class="px-3 <?php echo $isSoundtrack ? 'active text-warning fw-bold' : ' hover-text-white'; ?>">
-       <i slot="start" class="fa-duotone fa-compact-disc me-2"></i>Soundtrack
+       <i slot="prefix" class="fa-duotone fa-compact-disc me-2"></i>Soundtrack
     </wa-button>
-  
 
-  
-    <span class="nav-link px-3  " style="cursor: not-allowed;" title="The Cartographer is still working...">
-       <i class="fa-duotone fa-map-location-dot me-2"></i>Map <small class="ms-1" style="font-size: 0.6em; vertical-align: middle;">(LOCKED)</small>
+    <span class="nav-link px-3" style="cursor: not-allowed;" title="The Cartographer is still working...">
+       <i class="fa-duotone fa-map me-2"></i>Map <small class="ms-1" style="font-size: 0.6em; vertical-align: middle;">(LOCKED)</small>
     </span>
   
 
   
       <wa-button appearance="plain" href="/raggiesoft-books" class=" hover-text-warning small">
-        <i slot="start" class="fa-duotone fa-arrow-right-from-bracket"></i>
+        <i slot="prefix" class="fa-duotone fa-arrow-right-from-bracket"></i>
       </wa-button>
   
 

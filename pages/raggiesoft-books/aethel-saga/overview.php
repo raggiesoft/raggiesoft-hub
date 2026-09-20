@@ -42,7 +42,7 @@ $cover_art = $cdnBaseUrl . '/engine-room-records/artists/firelight/2025-silver-g
                 </p>
 
                 <div class="d-flex flex-column flex-md-row gap-3 justify-content-center justify-content-md-start">
-                    <a href="#prologue" class="btn btn-warning btn-xl rounded-pill px-5 py-3 fw-bold shadow-glow text-dark text-uppercase">
+                    <a href="/raggiesoft-books/books/aethel" class="btn btn-warning btn-xl rounded-pill px-5 py-3 fw-bold shadow-glow text-dark text-uppercase">
                         <i class="fa-duotone fa-book-open me-2"></i>Begin The Journey
                     </a>
                     <a href="#soundtrack" class="btn btn-outline-light btn-xl rounded-pill px-5 py-3 text-uppercase backdrop-blur">
@@ -93,17 +93,18 @@ $cover_art = $cdnBaseUrl . '/engine-room-records/artists/firelight/2025-silver-g
                         <div class="mb-3 text-warning"><i class="fa-duotone fa-sun-cloud fa-3x"></i></div>
                         <h5 class="card-title cinzel-font">Era 1: Myth</h5>
                         <p class="small text-secondary mt-3">The Architect's Lesson. The tuning of the flare and the betrayal that broke the sky.</p>
-                        <a href="/raggiesoft-books/aethel-saga/era-1" class="btn btn-sm btn-outline-warning w-100 mt-2">Enter Era I</a>
+                        <a href="/raggiesoft-books/books/aethel/b001/c001/p001" class="btn btn-sm btn-outline-warning w-100 mt-2">Enter Era I</a>
                     </div>
                 </div>
             </div>
             
-            <div class="col-lg-3 col-md-6 opacity-75">
-                <div class="card h-100 era-card grayscale">
+            <div class="col-lg-3 col-md-6">
+                <div class="card h-100 era-card border-warning">
                     <div class="card-body p-4 text-center">
-                        <div class="mb-3 text-secondary"><i class="fa-duotone fa-snowflake fa-3x"></i></div>
-                        <h5 class="card-title cinzel-font text-muted">Era 2: Silence</h5>
+                        <div class="mb-3 text-warning"><i class="fa-duotone fa-snowflake fa-3x"></i></div>
+                        <h5 class="card-title cinzel-font">Era 2: Silence</h5>
                         <p class="small text-secondary mt-3">The twins wake in a world without suns to fight the Iron Heart.</p>
+                        <a href="/raggiesoft-books/books/aethel/b002/c001/p001" class="btn btn-sm btn-outline-warning w-100 mt-2">Enter Era II</a>
                     </div>
                 </div>
             </div>
