@@ -122,12 +122,12 @@ $articleSchema = [
                             <p class="mb-3 fw-bold">TRACK 01: "FRICTION"</p>
                             <p class="mb-0 font-monospace">
                                 [VERSE 1 - RYAN]<br>
-                                <span class="redaction-bar">██████████████████████████████████</span><br>
-                                <span class="redaction-bar">██████████████████████████</span><br><br>
+                                <span class="redaction-bar"><span class="visually-hidden">Redacted lyrics</span><span aria-hidden="true">██████████████████████████████████</span></span><br>
+                                <span class="redaction-bar"><span class="visually-hidden">Redacted lyrics</span><span aria-hidden="true">██████████████████████████</span></span><br><br>
                                 [CHORUS - CASSIDY / RYAN HARMONY]<br>
-                                <span class="redaction-bar">██████████████████████████████</span><br>
-                                <span class="redaction-bar">████████████████████████████████████</span><br>
-                                <span class="redaction-bar">████████████████████████</span>
+                                <span class="redaction-bar"><span class="visually-hidden">Redacted lyrics</span><span aria-hidden="true">██████████████████████████████</span></span><br>
+                                <span class="redaction-bar"><span class="visually-hidden">Redacted lyrics</span><span aria-hidden="true">████████████████████████████████████</span></span><br>
+                                <span class="redaction-bar"><span class="visually-hidden">Redacted lyrics</span><span aria-hidden="true">████████████████████████</span></span>
                             </p>
                         </div>
 
@@ -149,12 +149,13 @@ $articleSchema = [
                             Because the lyrics to "Friction" were engineered as an act of profound psychological violence and exploitation against the siblings, Engine Room Records established an absolute, zero-tolerance protocol regarding the track.
                         </p>
 
-                        <div class="alert bg-danger bg-opacity-10 border-start border-4 border-danger p-4 mt-4">
-                            <h4 class="text-danger fw-bold text-uppercase mb-2"><i class="fa-solid fa-lock me-2"></i>The Vault Directive</h4>
-                            <p class="text-danger-emphasis mb-0">
+                        <wa-alert variant="danger" open class="mt-4 border-start border-4 border-danger rounded-0" style="--wa-panel-border-width: 0;">
+                            <i slot="icon" class="fa-solid fa-lock fs-4"></i>
+                            <h4 class="fw-bold text-uppercase mb-2">The Vault Directive</h4>
+                            <p class="mb-0">
                                 The lyrics, sheet music, and any associated audio for the song <em>"Friction"</em> will <strong>never be rendered, published, or performed</strong> in any capacity. The song died the day the band walked out of that warehouse, ensuring Vance's depravity would never define their legacy.
                             </p>
-                        </div>
+                        </wa-alert>
 
                     </div>
                 </wa-card>
