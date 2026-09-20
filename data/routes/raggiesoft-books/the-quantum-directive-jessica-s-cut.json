@@ -1,0 +1,402 @@
+{
+    "common": {
+        "site": "raggiesoft-books",
+        "theme": "",
+        "siteName": "The Quantum Directive: Jessica's Cut",
+        "isSequential": true,
+        "showSidebar": true,
+        "sidebar": "raggiesoft-books/sidebar-book",
+        "headerMenu": "raggiesoft-books/header-books",
+        "footer": "raggiesoft-books/footer-books"
+    },
+    "/raggiesoft-books/books/the-quantum-directive-jessica-s-cut": {
+        "view": "pages/raggiesoft-books/books/series",
+        "title": "The Quantum Directive: Jessica's Cut",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-quantum-directive-jessica-s-cut/b001/c001/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Day-to-Day at Quantum",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-quantum-directive-jessica-s-cut/b001/c001/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The \u201cReview\u201d That Isn\u2019t",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-quantum-directive-jessica-s-cut/b001/c001/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Across the Quad",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-quantum-directive-jessica-s-cut/b001/c001/p004": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Executive Suite",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-quantum-directive-jessica-s-cut/b001/c001/p005": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Off to BFI",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-quantum-directive-jessica-s-cut/b001/c001/p006": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Flight East",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-quantum-directive-jessica-s-cut/b001/c001/p007": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Providence to Boston",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-quantum-directive-jessica-s-cut/b001/c001/p008": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Morning Hand-Off",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-quantum-directive-jessica-s-cut/b001/c001/p009": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Green Room",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-quantum-directive-jessica-s-cut/b001/c001/p010": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Cue",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-quantum-directive-jessica-s-cut/b001/c001/p011": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Reveal",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-quantum-directive-jessica-s-cut/b001/c001/p012": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Introduction",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-quantum-directive-jessica-s-cut/b001/c001/p013": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Crown Jewel",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-quantum-directive-jessica-s-cut/b001/c001/p014": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Aftermath",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-quantum-directive-jessica-s-cut/b001/c001/p015": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Fallout",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-quantum-directive-jessica-s-cut/b001/c001/p016": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Debrief",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-quantum-directive-jessica-s-cut/b001/c002/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Homecoming",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-quantum-directive-jessica-s-cut/b001/c002/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part\u202f2: Unwelcome Currents",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-quantum-directive-jessica-s-cut/b001/c002/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part\u202f3: Evening Edition",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-quantum-directive-jessica-s-cut/b001/c002/p004": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part\u202f4: The \\#60 into Town",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-quantum-directive-jessica-s-cut/b001/c002/p005": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part\u202f5: The Creamery Along the Wall",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-quantum-directive-jessica-s-cut/b001/c002/p006": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part\u202f6: Breakfast at the Creamery",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-quantum-directive-jessica-s-cut/b001/c002/p007": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The First Autograph",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-quantum-directive-jessica-s-cut/b001/c003/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Morning Commute",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-quantum-directive-jessica-s-cut/b001/c003/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "A Silent Protest",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-quantum-directive-jessica-s-cut/b001/c003/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Confrontation at Aurora",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-quantum-directive-jessica-s-cut/b001/c004/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Quantum's Alliance",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-quantum-directive-jessica-s-cut/b001/c004/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Aurora's Rebellion",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-quantum-directive-jessica-s-cut/b001/c005/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Leak",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-quantum-directive-jessica-s-cut/b001/c005/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Damage Control",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-quantum-directive-jessica-s-cut/b001/c006/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Intercepted Letter",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-quantum-directive-jessica-s-cut/b001/c006/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Last Stand",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-quantum-directive-jessica-s-cut/b001/c007/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "A New Alliance",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-quantum-directive-jessica-s-cut/b001/c007/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "To Fork or Not to Fork?",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-quantum-directive-jessica-s-cut/b001/c007/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Solidarity in Action",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-quantum-directive-jessica-s-cut/b001/c008/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Empty Loft",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-quantum-directive-jessica-s-cut/b001/c008/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Board Meeting",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-quantum-directive-jessica-s-cut/b001/c008/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Kelly is Not For Sale",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-quantum-directive-jessica-s-cut/b001/c008/p004": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Press Conference",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-quantum-directive-jessica-s-cut/b001/c008/p005": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Spilling the Beans",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-quantum-directive-jessica-s-cut/b001/c008/p006": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Final Paycheck",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-quantum-directive-jessica-s-cut/b001/c009/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "An Intern's Story",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-quantum-directive-jessica-s-cut/b001/c009/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "A Poisoned Well",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-quantum-directive-jessica-s-cut/b001/c010/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Writing the Next Chapter",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-quantum-directive-jessica-s-cut/b001/c010/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Kelly and Ryan\u2019s First Day",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-quantum-directive-jessica-s-cut/b001/c010/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Break Room",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-quantum-directive-jessica-s-cut/b001/c010/p004": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Jessica's Office",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-quantum-directive-jessica-s-cut/b001/c010/p005": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Overwhelming Good",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-quantum-directive-jessica-s-cut/b001/c010/p006": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The First Line of Code",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-quantum-directive-jessica-s-cut/b001/c011/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Cupertino Trip",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-quantum-directive-jessica-s-cut/b001/c011/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Gate and the Extended Family",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-quantum-directive-jessica-s-cut/b001/c011/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "On the Bridge to Cupertino",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-quantum-directive-jessica-s-cut/b001/c011/p004": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The California Sun",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-quantum-directive-jessica-s-cut/b001/c011/p005": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Inside Infinite Loop",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-quantum-directive-jessica-s-cut/b001/c011/p006": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Dev Lab",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-quantum-directive-jessica-s-cut/b001/c011/p007": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "A Day at Work",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-quantum-directive-jessica-s-cut/b001/c011/p008": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Lunch at Caffe Magna",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-quantum-directive-jessica-s-cut/b001/c011/p009": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Bug Bash",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-quantum-directive-jessica-s-cut/b001/c011/p010": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Kernel Panic Fix",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-quantum-directive-jessica-s-cut/b001/c011/p011": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "A Room with a View",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-quantum-directive-jessica-s-cut/b001/c011/p012": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Finders Keepers",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-quantum-directive-jessica-s-cut/b001/c011/p013": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Morning in Cupertino",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-quantum-directive-jessica-s-cut/b001/c011/p014": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "A Picnic with Cousins",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-quantum-directive-jessica-s-cut/b001/c011/p015": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Homeward Bound",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-quantum-directive-jessica-s-cut/b001/c011/p016": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Flight Home",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-quantum-directive-jessica-s-cut/b001/c012/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Offer",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-quantum-directive-jessica-s-cut/b001/c012/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Bidding War",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-quantum-directive-jessica-s-cut/b001/c012/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Escalation",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-quantum-directive-jessica-s-cut/b001/c012/p004": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Decision",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-quantum-directive-jessica-s-cut/b001/c012/p005": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Dotted Line",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-quantum-directive-jessica-s-cut/b001/c012/p006": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The First Paycheck",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-quantum-directive-jessica-s-cut/b001/c012/p007": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Acknowledging Talent",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-quantum-directive-jessica-s-cut/b001/c012/p008": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "A New Role",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-quantum-directive-jessica-s-cut/b001/c013/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Pizza Night",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-quantum-directive-jessica-s-cut/b001/c013/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Apartment Hunt",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-quantum-directive-jessica-s-cut/b001/c013/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Capitol Hill Grand",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/the-quantum-directive-jessica-s-cut/b001/c013/p004": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Move-In Day",
+        "theme": ""
+    }
+}
