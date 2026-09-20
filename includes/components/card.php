@@ -19,13 +19,20 @@ $placeholderUrl = "https://placehold.co/600x400/{$bgColor}/{$textColor}?text=" .
 
 <wa-card style="height: 100%; display: flex; flex-direction: column;">
   <?php if ($imgSrc): ?>
-    <img slot="media" 
-         src="<?php echo htmlspecialchars($imgSrc); ?>"
-         alt="<?php echo htmlspecialchars($imgAlt); ?>"
-         onerror="this.onerror=null;this.src='<?php echo $placeholderUrl; ?>';"
-         style="width: 100%; height: auto; object-fit: cover;">
+    <div slot="media" style="position: relative; width: 100%; padding-top: 150%;">
+      <img src="<?php echo htmlspecialchars($imgSrc); ?>"
+           alt="<?php echo htmlspecialchars($imgAlt); ?>"
+           onerror="this.onerror=null;this.src='<?php echo $placeholderUrl; ?>';"
+           style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;">
+      <?php if (strpos($imgSrc, 'book-placeholder.jpg') !== false): ?>
+          <img src="<?php echo (isset($cdnBaseUrl) ? $cdnBaseUrl : ''); ?>/raggiesoft-books/images/logos/oceanview-archives.svg" 
+               style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 70%; height: auto; pointer-events: none; opacity: 0.85;">
+      <?php endif; ?>
+    </div>
   <?php else: ?>
-     <img slot="media" src="<?php echo $placeholderUrl; ?>" alt="<?php echo htmlspecialchars($imgAlt); ?>" style="width: 100%; height: auto; object-fit: cover;">
+    <div slot="media" style="position: relative; width: 100%; padding-top: 150%;">
+      <img src="<?php echo $placeholderUrl; ?>" alt="<?php echo htmlspecialchars($imgAlt); ?>" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;">
+    </div>
   <?php endif; ?>
 
   <h3 class="h5 mt-0 mb-2 fw-bold text-body">

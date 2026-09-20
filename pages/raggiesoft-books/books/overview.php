@@ -133,7 +133,7 @@ $imagesJson = htmlspecialchars(json_encode($heroImages), ENT_QUOTES, 'UTF-8');
                 if (empty($fallback)) $fallback = '??';
                 
                 // Determine cover art
-                $imgSrc = $cdnBaseUrl . '/raggiesoft-books/images/logos/oceanview-archives.svg';
+                $imgSrc = $cdnBaseUrl . '/raggiesoft-books/images/book-placeholder.jpg';
                 if (!empty($book['image'])) {
                     $imgSrc = $cdnBaseUrl . $book['image'];
                 }
