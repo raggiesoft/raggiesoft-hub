@@ -6,26 +6,18 @@ $color = $props['color'] ?? 'secondary';
 $reverseClass = !empty($props['reverse']) ? 'flex-lg-row-reverse' : '';
 
 // 1. Define Card Background
-// To maintain the visual rhythm, we alternate dark and light cards based on the node color.
-$isDarkCard = in_array($color, ['primary', 'danger', 'info', 'dark']);
-$cardBgClass = $isDarkCard ? 'bg-dark text-white' : 'bg-body-tertiary';
-$contentClass = $isDarkCard ? 'text-light opacity-75' : 'text-body-secondary';
+// We rely on native Bootstrap contextual classes to handle light/dark mode rather than brute-forcing colors.
+$cardBgClass = 'bg-body-tertiary';
+$contentClass = 'text-body-secondary';
 
 // 2. WCAG Button Contrast Logic
 // Automatically shifts button styles to pass AA contrast ratios (4.5:1) based on the card background.
 $btnClass = 'btn-outline-' . $color;
 
-if ($isDarkCard) {
-    // On static dark cards, 'primary' and 'dark' outlines fail WCAG contrast. Swap them to light.
-    if ($color === 'primary' || $color === 'dark') {
-        $btnClass = 'btn-outline-light'; 
-    }
-} else {
-    // On tertiary (adapting) backgrounds, 'warning' and 'info' outlines fail WCAG on light mode.
-    // Swapping them to solid buttons ensures Bootstrap automatically applies the correct contrast text color.
-    if ($color === 'warning' || $color === 'info') {
-        $btnClass = 'btn-' . $color; 
-    }
+// On tertiary (adapting) backgrounds, 'warning' and 'info' outlines fail WCAG on light mode.
+// Swapping them to solid buttons ensures Bootstrap automatically applies the correct contrast text color.
+if ($color === 'warning' || $color === 'info') {
+    $btnClass = 'btn-' . $color; 
 }
 ?>
 
