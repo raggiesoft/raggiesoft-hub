@@ -81,8 +81,14 @@ require_once ROOT_PATH . '/includes/utils/nav-logic.php';
         <?php endif; ?>
 
         <div class="text-center mt-5 pt-4 border-top border-secondary border-opacity-25">
-            <a href="/library/aethel" class="btn btn-outline-secondary">
-                <i class="fa-duotone fa-arrow-left me-2"></i>Return to Aethel Hub
+            <a href="/raggiesoft-books/aethel-saga" class="btn btn-outline-secondary">
+                <i class="fa-duotone fa-arrow-left me-2"></i>Return to Aethel Home
+            </a>
+            <a href="/raggiesoft-books/aethel-saga/lore/characters" class="btn btn-outline-info ms-2">
+                <i class="fa-duotone fa-users-crown me-2"></i>Characters
+            </a>
+            <a href="/raggiesoft-books/aethel-saga/lore/locations" class="btn btn-outline-success ms-2">
+                <i class="fa-duotone fa-map-location-dot me-2"></i>Locations
             </a>
         </div>
 

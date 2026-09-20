@@ -27,6 +27,13 @@
     "ogDescription": "Meet Kaelan, Kaela, and the forces of the Gloom in this 80s fantasy saga.",
     "ogImage": "/aethel/images/aethel-poster-background.jpg"
   },
+  "/raggiesoft-books/aethel-saga/lore/locations": {
+    "view": "pages/raggiesoft-books/aethel-saga/lore/locations",
+    "title": "Locations | The Silver Gauntlet of Aethel",
+    "ogTitle": "Locations - The Realms of Aethel",
+    "ogDescription": "Explore Sunstead, the Twins' Hut, and the crossroads of the realms.",
+    "ogImage": "/aethel/images/sunstead-village.jpg"
+  },
   "/raggiesoft-books/aethel-saga/soundtrack": {
     "view": "pages/raggiesoft-books/aethel-saga/soundtrack",
     "title": "Original Soundtrack | The Silver Gauntlet of Aethel",

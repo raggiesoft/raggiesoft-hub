@@ -129,3 +129,36 @@ $cover_art = $cdnBaseUrl . '/engine-room-records/artists/firelight/2025-silver-g
         </div>
     </div>
 </div>
+
+<div id="lore" class="py-5 bg-body border-top border-secondary border-opacity-25">
+    <div class="container py-4">
+        <div class="text-center mb-5">
+            <h3 class="h2 text-body cinzel-font border-bottom border-warning d-inline-block pb-2">
+                Explore The Lore
+            </h3>
+        </div>
+        
+        <div class="row justify-content-center g-4">
+            <div class="col-md-5">
+                <div class="card bg-transparent border-info text-center h-100 shadow-sm" style="border-color: rgba(13, 202, 240, 0.3) !important;">
+                    <div class="card-body p-4">
+                        <i class="fa-duotone fa-users-crown fa-3x text-info mb-3"></i>
+                        <h4 class="cinzel-font text-light">Characters</h4>
+                        <p class="text-muted">Meet the Twins, the forces of the Gloom, and the legends of Aethel.</p>
+                        <a href="/raggiesoft-books/aethel-saga/lore/characters" class="btn btn-outline-info w-100 mt-2">View Characters</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-5">
+                <div class="card bg-transparent border-success text-center h-100 shadow-sm" style="border-color: rgba(25, 135, 84, 0.3) !important;">
+                    <div class="card-body p-4">
+                        <i class="fa-duotone fa-map-location-dot fa-3x text-success mb-3"></i>
+                        <h4 class="cinzel-font text-light">Locations</h4>
+                        <p class="text-muted">Explore Sunstead, the Twins' Hut, and the crossroads of the realms.</p>
+                        <a href="/raggiesoft-books/aethel-saga/lore/locations" class="btn btn-outline-success w-100 mt-2">View Locations</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

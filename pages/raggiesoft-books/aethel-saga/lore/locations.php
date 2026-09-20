@@ -19,11 +19,11 @@ $pageTitle = "Lore: The Realms of Aethel";
             <div class="col-md-12">
                 <div class="card bg-transparent border-0">
                     <div class="card-body p-0">
-                        <div class="d-flex align-items-start gap-4">
-                            <div class="text-warning d-none d-sm-block mt-1">
-                                <i class="fa-duotone fa-house-chimney-window fa-4x"></i>
+                        <div class="row">
+                            <div class="col-lg-5 mb-4 mb-lg-0">
+                                <img src="<?php echo $cdnBaseUrl; ?>/aethel/images/sunstead-village.jpg" class="img-fluid rounded shadow-lg border border-secondary border-opacity-50" alt="The Village of Sunstead">
                             </div>
-                            <div>
+                            <div class="col-lg-7">
                                 <h2 class="h2 text-warning mb-2 cinzel-font">Sunstead</h2>
                                 <h5 class="text-muted fst-italic mb-4">"The Independent Crossroads"</h5>
                                 <p class="fs-5">
@@ -46,19 +46,19 @@ $pageTitle = "Lore: The Realms of Aethel";
             <div class="col-md-12">
                 <div class="card bg-transparent border border-warning border-opacity-50">
                     <div class="card-body p-5">
-                        <div class="d-flex align-items-start gap-4">
-                            <div class="text-secondary d-none d-sm-block mt-1">
-                                <i class="fa-duotone fa-bed-front fa-3x"></i>
-                            </div>
-                            <div>
+                        <div class="row align-items-center">
+                            <div class="col-lg-7 mb-4 mb-lg-0">
                                 <h3 class="h3 text-light mb-2 cinzel-font">The Twins' Hut</h3>
                                 <h5 class="text-muted fst-italic mb-3">A Cramped Sanctuary</h5>
-                                <p>
+                                <p class="fs-5">
                                     Located on the outskirts of Sunstead, the Twins' Hut is a very small, remarkably modest dwelling. It is really only meant for one person. 
                                 </p>
-                                <p>
+                                <p class="fs-5">
                                     Despite the cramped quarters, Kaelan and Kaela make it work. They are completely comfortable getting changed in front of each other and sharing the hut's single bed to sleep. This extreme closeness highlights not only their profound bond as twins, but their subconscious draw to one another as the literal avatars of the binary stars—two halves of a single celestial system forced into a tiny, singular orbit on earth.
                                 </p>
+                            </div>
+                            <div class="col-lg-5">
+                                <img src="<?php echo $cdnBaseUrl; ?>/aethel/images/twins-hut.jpg" class="img-fluid rounded shadow-lg border border-warning border-opacity-25" alt="Inside The Twins' Hut">
                             </div>
                         </div>
                     </div>
