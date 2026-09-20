@@ -9,20 +9,27 @@ $pageTitle = "Engine Room Radio - The Console";
 if (!defined('ROOT_PATH')) define('ROOT_PATH', dirname(__DIR__)); 
 $cdn_root = $cdnBaseUrl . "/engine-room-records"; 
 
-// Define the exact slugs for the artists currently in the catalog
-$station_roster = [
-    'the-stardust-engine', 
-    'fractured-prisms',
-    'firelight',
-    'the-paper-wall',
-    'crimson-node'
-];
+// Dynamically build the roster from the Master Catalog
+$masterCatalogPath = $cdnBaseUrl . '/engine-room-records/json/master-catalog.json';
+$masterCatalogData = @file_get_contents($masterCatalogPath);
+$masterCatalog = $masterCatalogData ? json_decode($masterCatalogData, true) : [];
+
+$station_roster = [];
+if (is_array($masterCatalog)) {
+    foreach ($masterCatalog as $track) {
+        $slug = $track['artistSlug'] ?? '';
+        if (!empty($slug) && !in_array($slug, $station_roster)) {
+            $station_roster[] = $slug;
+        }
+    }
+}
 
 $master_playlist = []; 
 
 // 2. AGGREGATOR LOGIC
 $seen_isrcs = []; // Initialize our deduplication tracker
 $shuffle_blocks = []; // NEW: Array to hold chunks of music for the shuffler
+$rock_opera_sets = []; // Accumulator for multi-album Rock Operas
 
 foreach ($station_roster as $artist_slug) {
     
@@ -55,6 +62,7 @@ foreach ($station_roster as $artist_slug) {
                             
                             // NEW: Check if this album demands sequential playback
                             $is_rock_opera = isset($meta_data['isRockOpera']) && $meta_data['isRockOpera'] === true;
+                            $rock_opera_set_id = $album['rockOperaSetId'] ?? ($meta_data['rockOperaSetId'] ?? $album_title);
                             $rock_opera_chunk = [];
 
                             foreach ($raw_tracks as $track) {
@@ -88,15 +96,25 @@ foreach ($station_roster as $artist_slug) {
                                 }
                             }
                             
-                            // Once the album is fully parsed, add the glued chunk to the shuffler
+                            // Once the album is fully parsed, accumulate the glued chunk into the master set
                             if ($is_rock_opera && !empty($rock_opera_chunk)) {
-                                $shuffle_blocks[] = $rock_opera_chunk;
+                                if (!isset($rock_opera_sets[$rock_opera_set_id])) {
+                                    $rock_opera_sets[$rock_opera_set_id] = [];
+                                }
+                                $rock_opera_sets[$rock_opera_set_id] = array_merge($rock_opera_sets[$rock_opera_set_id], $rock_opera_chunk);
                             }
                         }
                     }
                 }
             }
         }
+    }
+}
+
+// Add all accumulated rock opera sets to the shuffler as massive, unbreakable blocks
+foreach ($rock_opera_sets as $set_id => $chunk) {
+    if (!empty($chunk)) {
+        $shuffle_blocks[] = $chunk;
     }
 }
 
