@@ -69,9 +69,31 @@ foreach ($routeFiles as $file) {
             $commonConfig = $fileData['common'];
             unset($fileData['common']); // Remove 'common' key
 
+            // --- INJECT SEQUENCE DATA (PREV/NEXT) ---
+            $isSequential = !empty($commonConfig['isSequential']);
+            $urls = $isSequential ? array_keys($fileData) : [];
+            $urlCount = count($urls);
+            $seqIndex = 1;
+
             foreach ($fileData as $routeKey => $routeConfig) {
                 // Merge: Specific settings overwrite Common settings
-                $fileData[$routeKey] = array_merge($commonConfig, $routeConfig);
+                $merged = array_merge($commonConfig, $routeConfig);
+                
+                if ($isSequential) {
+                    $merged['schemaType'] = 'CreativeWorkSequence';
+                    $merged['sequenceIndex'] = $seqIndex;
+                    $merged['sequenceName'] = $commonConfig['siteName'] ?? 'Story Sequence';
+                    
+                    if ($seqIndex > 1) {
+                        $merged['prevUrl'] = $urls[$seqIndex - 2];
+                    }
+                    if ($seqIndex < $urlCount) {
+                        $merged['nextUrl'] = $urls[$seqIndex];
+                    }
+                    $seqIndex++;
+                }
+                
+                $fileData[$routeKey] = $merged;
             }
         }
         // ---------------------------------------------

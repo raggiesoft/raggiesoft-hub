@@ -165,23 +165,39 @@ if (isset($customPageAssets) && is_array($customPageAssets)) {
         }
     }
     
-    // 3. LORE / STORY PAGES
-    elseif (isset($pageConfig['schemaType']) && $pageConfig['schemaType'] === 'CreativeWork') {
+    // 3. LORE / STORY PAGES & SEQUENCES
+    elseif (isset($pageConfig['schemaType']) && ($pageConfig['schemaType'] === 'CreativeWork' || $pageConfig['schemaType'] === 'CreativeWorkSequence')) {
          $schema = [
             "@context" => "https://schema.org",
             "@type" => "Article",
             "headline" => $pageTitle,
-            "author" => [
-                "@type" => "Person",
-                "name" => "Cassidy O'Connell"
-            ],
             "url" => $ogUrl ?? "https://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]"
          ];
+         
+         if ($pageConfig['schemaType'] === 'CreativeWorkSequence') {
+             $schema['position'] = $pageConfig['sequenceIndex'];
+             $schema['partOfSeries'] = [
+                 "@type" => "CreativeWorkSeries",
+                 "name" => $pageConfig['sequenceName']
+             ];
+         } else {
+             $schema['author'] = [
+                 "@type" => "Person",
+                 "name" => "Cassidy O'Connell"
+             ];
+         }
     }
     ?>
     <script type="application/ld+json">
         <?php echo json_encode($schema, JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT); ?>
     </script>
+
+    <?php if (!empty($pageConfig['prevUrl'])): ?>
+    <link rel="prev" href="https://<?php echo $_SERVER['HTTP_HOST'] . $pageConfig['prevUrl']; ?>">
+    <?php endif; ?>
+    <?php if (!empty($pageConfig['nextUrl'])): ?>
+    <link rel="next" href="https://<?php echo $_SERVER['HTTP_HOST'] . $pageConfig['nextUrl']; ?>">
+    <?php endif; ?>
 
     <!-- Web Awesome Pro Kit (Load FIRST so custom CSS can override) -->
     <link rel="stylesheet" href="https://ka-p.webawesome.com/kit/bb765cf132c5414e/webawesome@3.10.0/styles/themes/default.css">

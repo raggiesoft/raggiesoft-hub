@@ -1,42 +1,43 @@
 {
-  "common": {
-    "site": "stardust-engine",
-    "brandFont": [
-      "Audiowide",
-      "sans-serif"
-    ],
-    "siteName": "The Stardust Engine",
-    "headerMenu": "engine-room/artists/stardust-engine/story/header-friction",
-    "footer": "engine-room/artists/stardust-engine/footer-stardust",
-    "showSidebar": true,
-    "sidebar": "engine-room/artists/stardust-engine/story/sidebar-friction",
-    "navbarBrandLogo": "/engine-room-records/artists/the-stardust-engine/band-logo.png",
-    "navbarBrandText": "<span class=\"d-none d-md-inline\">The </span>Stardust Engine",
-    "navbarBrandLink": "/engine-room/artists/stardust-engine",
-    "ogImage": "/stardust-engine/images/story/friction-photoshoot.jpg"
-  },
-  "/engine-room/artists/stardust-engine/story/friction": {
-    "view": "pages/engine-room/artists/stardust-engine/story/friction/overview",
-    "title": "The Friction Catastrophe | Lore",
-    "ogTitle": "The Friction Catastrophe - 1992",
-    "ogDescription": "How a fatal assumption by a record executive ended the band's Cold War and gave them their freedom."
-  },
-  "/engine-room/artists/stardust-engine/story/friction/the-lost-title-track": {
-    "view": "pages/engine-room/artists/stardust-engine/story/friction/the-lost-title-track",
-    "title": "Friction (The Lost Title Track) | Evidence",
-    "ogTitle": "Friction - The Banned Recording",
-    "ogDescription": "Restricted Access: The unrecorded song that killed the Apex Records contract."
-  },
-  "/engine-room/artists/stardust-engine/story/friction/atmosphere": {
-    "view": "pages/engine-room/artists/stardust-engine/story/friction/atmosphere",
-    "title": "The Atmosphere Demo | Friction Lore",
-    "ogTitle": "Atmosphere - The Surviving Demo",
-    "ogDescription": "The sci-fi thematic B-side that survived the catastrophe untouched."
-  },
-  "/engine-room/artists/stardust-engine/story/friction/kevin-deposition": {
-    "view": "pages/engine-room/artists/stardust-engine/story/friction/kevin-deposition",
-    "title": "Evidence #94-C: The Mitchell Deposition | Friction Lore",
-    "ogTitle": "The Mitchell Deposition",
-    "ogDescription": "The devastating testimony from the mall Santa photographer that broke Apex Records."
-  }
+    "common": {
+        "site": "stardust-engine",
+        "brandFont": [
+            "Audiowide",
+            "sans-serif"
+        ],
+        "siteName": "The Stardust Engine",
+        "headerMenu": "engine-room/artists/stardust-engine/story/header-friction",
+        "footer": "engine-room/artists/stardust-engine/footer-stardust",
+        "showSidebar": true,
+        "sidebar": "engine-room/artists/stardust-engine/story/sidebar-friction",
+        "navbarBrandLogo": "/engine-room-records/artists/the-stardust-engine/band-logo.png",
+        "navbarBrandText": "<span class=\"d-none d-md-inline\">The </span>Stardust Engine",
+        "navbarBrandLink": "/engine-room/artists/stardust-engine",
+        "ogImage": "/stardust-engine/images/story/friction-photoshoot.jpg",
+        "isSequential": true
+    },
+    "/engine-room/artists/stardust-engine/story/friction": {
+        "view": "pages/engine-room/artists/stardust-engine/story/friction/overview",
+        "title": "The Friction Catastrophe | Lore",
+        "ogTitle": "The Friction Catastrophe - 1992",
+        "ogDescription": "How a fatal assumption by a record executive ended the band's Cold War and gave them their freedom."
+    },
+    "/engine-room/artists/stardust-engine/story/friction/the-lost-title-track": {
+        "view": "pages/engine-room/artists/stardust-engine/story/friction/the-lost-title-track",
+        "title": "Friction (The Lost Title Track) | Evidence",
+        "ogTitle": "Friction - The Banned Recording",
+        "ogDescription": "Restricted Access: The unrecorded song that killed the Apex Records contract."
+    },
+    "/engine-room/artists/stardust-engine/story/friction/atmosphere": {
+        "view": "pages/engine-room/artists/stardust-engine/story/friction/atmosphere",
+        "title": "The Atmosphere Demo | Friction Lore",
+        "ogTitle": "Atmosphere - The Surviving Demo",
+        "ogDescription": "The sci-fi thematic B-side that survived the catastrophe untouched."
+    },
+    "/engine-room/artists/stardust-engine/story/friction/kevin-deposition": {
+        "view": "pages/engine-room/artists/stardust-engine/story/friction/kevin-deposition",
+        "title": "Evidence #94-C: The Mitchell Deposition | Friction Lore",
+        "ogTitle": "The Mitchell Deposition",
+        "ogDescription": "The devastating testimony from the mall Santa photographer that broke Apex Records."
+    }
 }

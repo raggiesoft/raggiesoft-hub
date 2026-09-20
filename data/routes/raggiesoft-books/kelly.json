@@ -3,6 +3,7 @@
         "site": "raggiesoft-books",
         "theme": "",
         "siteName": "kelly",
+        "isSequential": true,
         "showSidebar": true,
         "sidebar": "raggiesoft-books/sidebar-book",
         "headerMenu": "raggiesoft-books/header-books",

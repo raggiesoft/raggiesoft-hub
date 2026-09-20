@@ -1,55 +1,57 @@
 {
-  "common": {
-    "site": "stardust-engine",
-    "theme": "ad-astra",
-    "showSidebar": true,
-    "brandFont": ["Audiowide", "sans-serif"],
-    
-    "sidebar": "engine-room/artists/stardust-engine/story/sidebar-ad-astra",
-    "headerMenu": "engine-room/artists/stardust-engine/story/header-ad-astra",
-    "footer": "engine-room/artists/stardust-engine/story/footer-ad-astra",
-    
-    "siteName": "Ad Astra // Mission Control",
-    "navbarBrandLogo": "/engine-room-records/artists/the-stardust-engine/band-logo.png",
-    "navbarBrandText": "<span class=\"text-uppercase\">Ad Astra</span><span class=\"d-none d-md-inline\">: To The Stars</span>",
-    "navbarBrandLink": "/engine-room/artists/stardust-engine/story/ad-astra",
-    "ogImage": "/stardust-engine/images/story/ad-astra/ad-astra-hero.jpg"
-  },
-  "/engine-room/artists/stardust-engine/story/ad-astra": {
-    "view": "pages/engine-room/artists/stardust-engine/story/ad-astra/overview",
-    "title": "Ad Astra | Mission Hub",
-    "ogDescription": "Mission Control for the U.S.S. Aethelgard.",
-    "showSidebar": false
-  },
-  "/engine-room/artists/stardust-engine/story/ad-astra/voyage": {
-    "view": "pages/engine-room/artists/stardust-engine/story/ad-astra/voyage/overview",
-    "title": "Flight Log: Overview",
-    "ogDescription": "The narrative log of the 21-day journey to the Veil Nebula.",
-    "showSidebar": false
-  },
-  "/engine-room/artists/stardust-engine/story/ad-astra/voyage/day-01": {
-    "view": "pages/engine-room/artists/stardust-engine/story/ad-astra/voyage/day-01",
-    "title": "Day 01: Ignition | Flight Log",
-    "ogDescription": "Atmospheric Exit. 1.5G Ascent."
-  },
-  "/engine-room/artists/stardust-engine/story/ad-astra/voyage/day-02": {
-    "view": "pages/engine-room/artists/stardust-engine/story/ad-astra/voyage/day-02",
-    "title": "Day 02: Acceleration | Flight Log",
-    "ogDescription": "1.5G Ascent. 1.0G Cruise."
-  },
-  "/engine-room/artists/stardust-engine/story/ad-astra/voyage/day-03": {
-    "view": "pages/engine-room/artists/stardust-engine/story/ad-astra/voyage/day-03",
-    "title": "Day 03: Ship's Time | Flight Log",
-    "ogDescription": "Living arrangements and the 24-hour cycle aboard the Aethelgard."
-  },
-  "/engine-room/artists/stardust-engine/story/ad-astra/voyage/day-10": {
-    "view": "pages/engine-room/artists/stardust-engine/story/ad-astra/voyage/day-10",
-    "title": "Day 10: The Drift | Flight Log",
-    "ogDescription": "Zero-G Concert at the Veil Nebula."
-  },
-  "/engine-room/artists/stardust-engine/story/ad-astra/voyage/day-21": {
-    "view": "pages/engine-room/artists/stardust-engine/story/ad-astra/voyage/day-21",
-    "title": "Day 21: The Drop | Flight Log",
-    "ogDescription": "Atmospheric Re-entry. The Hard Reset."
-  }
+    "common": {
+        "site": "stardust-engine",
+        "theme": "ad-astra",
+        "showSidebar": true,
+        "brandFont": [
+            "Audiowide",
+            "sans-serif"
+        ],
+        "sidebar": "engine-room/artists/stardust-engine/story/sidebar-ad-astra",
+        "headerMenu": "engine-room/artists/stardust-engine/story/header-ad-astra",
+        "footer": "engine-room/artists/stardust-engine/story/footer-ad-astra",
+        "siteName": "Ad Astra // Mission Control",
+        "navbarBrandLogo": "/engine-room-records/artists/the-stardust-engine/band-logo.png",
+        "navbarBrandText": "<span class=\"text-uppercase\">Ad Astra</span><span class=\"d-none d-md-inline\">: To The Stars</span>",
+        "navbarBrandLink": "/engine-room/artists/stardust-engine/story/ad-astra",
+        "ogImage": "/stardust-engine/images/story/ad-astra/ad-astra-hero.jpg",
+        "isSequential": true
+    },
+    "/engine-room/artists/stardust-engine/story/ad-astra": {
+        "view": "pages/engine-room/artists/stardust-engine/story/ad-astra/overview",
+        "title": "Ad Astra | Mission Hub",
+        "ogDescription": "Mission Control for the U.S.S. Aethelgard.",
+        "showSidebar": false
+    },
+    "/engine-room/artists/stardust-engine/story/ad-astra/voyage": {
+        "view": "pages/engine-room/artists/stardust-engine/story/ad-astra/voyage/overview",
+        "title": "Flight Log: Overview",
+        "ogDescription": "The narrative log of the 21-day journey to the Veil Nebula.",
+        "showSidebar": false
+    },
+    "/engine-room/artists/stardust-engine/story/ad-astra/voyage/day-01": {
+        "view": "pages/engine-room/artists/stardust-engine/story/ad-astra/voyage/day-01",
+        "title": "Day 01: Ignition | Flight Log",
+        "ogDescription": "Atmospheric Exit. 1.5G Ascent."
+    },
+    "/engine-room/artists/stardust-engine/story/ad-astra/voyage/day-02": {
+        "view": "pages/engine-room/artists/stardust-engine/story/ad-astra/voyage/day-02",
+        "title": "Day 02: Acceleration | Flight Log",
+        "ogDescription": "1.5G Ascent. 1.0G Cruise."
+    },
+    "/engine-room/artists/stardust-engine/story/ad-astra/voyage/day-03": {
+        "view": "pages/engine-room/artists/stardust-engine/story/ad-astra/voyage/day-03",
+        "title": "Day 03: Ship's Time | Flight Log",
+        "ogDescription": "Living arrangements and the 24-hour cycle aboard the Aethelgard."
+    },
+    "/engine-room/artists/stardust-engine/story/ad-astra/voyage/day-10": {
+        "view": "pages/engine-room/artists/stardust-engine/story/ad-astra/voyage/day-10",
+        "title": "Day 10: The Drift | Flight Log",
+        "ogDescription": "Zero-G Concert at the Veil Nebula."
+    },
+    "/engine-room/artists/stardust-engine/story/ad-astra/voyage/day-21": {
+        "view": "pages/engine-room/artists/stardust-engine/story/ad-astra/voyage/day-21",
+        "title": "Day 21: The Drop | Flight Log",
+        "ogDescription": "Atmospheric Re-entry. The Hard Reset."
+    }
 }

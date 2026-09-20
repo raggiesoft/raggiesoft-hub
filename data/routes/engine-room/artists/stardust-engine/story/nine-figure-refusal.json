@@ -4,6 +4,7 @@
         "showSidebar": true,
         "sidebar": "engine-room/artists/stardust-engine/story/sidebar-nine-figure-refusal",
         "siteName": "The Nine Figure Refusal",
+        "isSequential": true,
         "headerMenu": "engine-room/artists/stardust-engine/story/header-nine-figure-refusal",
         "footer": "engine-room/artists/stardust-engine/story/footer-nine-figure-refusal",
         "navbarBrandLogo": "/engine-room-records/images/logos/engine-room-records-logo.png",
