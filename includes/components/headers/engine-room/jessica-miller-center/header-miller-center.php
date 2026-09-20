@@ -16,7 +16,7 @@
   <wa-dropdown placement="bottom-start">
     <wa-button  href="#"    slot="trigger" appearance="plain">
             <i class="fa-duotone fa-wheelchair me-2"></i>The Standard
-        <i slot="suffix" class="fa-solid fa-circle-caret-down ms-2 opacity-50"></i>
+        <i slot="end" class="fa-solid fa-circle-caret-down ms-2 opacity-50" aria-hidden="true"></i>
         </wa-button>
     <wa-menu>
       <li><span class="dropdown-header text-uppercase small letter-spacing-1">Universal Design</span>

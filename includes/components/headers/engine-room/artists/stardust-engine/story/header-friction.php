@@ -24,7 +24,7 @@ $isEvidence = str_contains($uri, '/the-lost-title-track');
   <wa-dropdown placement="bottom-start">
     <wa-button class="nav-link  <?php echo $isEvidence ? 'active fw-bold text-danger' : ''; ?>" slot="trigger" appearance="plain">
             <i class="fa-duotone fa-folder-magnifying-glass me-2"></i>Evidence
-         <i slot="suffix" class="fa-solid fa-circle-caret-down ms-2 opacity-50"></i>
+         <i slot="end" class="fa-solid fa-circle-caret-down ms-2 opacity-50" aria-hidden="true"></i>
         </wa-button>
     <wa-menu>
       <div class="px-3 py-2 small text-uppercase  fw-bold text-uppercase text-danger fw-bold">Restricted Assets</div>

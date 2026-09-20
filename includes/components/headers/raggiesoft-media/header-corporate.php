@@ -29,7 +29,7 @@ $isPortfolio = (str_starts_with($request_uri, '/about/michael-ragsdale'));
       variant="<?php echo $isOpenSource ? 'neutral' : 'neutral'; ?>" 
       appearance="<?php echo $isOpenSource ? 'filled-outlined' : 'plain'; ?>">
       <i slot="start" class="fa-brands fa-osi"></i> Open Source
-        <i slot="suffix" class="fa-solid fa-circle-caret-down ms-2 opacity-50"></i>
+        <i slot="end" class="fa-solid fa-circle-caret-down ms-2 opacity-50" aria-hidden="true"></i>
     </wa-button>
     <wa-menu>
       <wa-dropdown-item href="/raggiesoft-media/projects">

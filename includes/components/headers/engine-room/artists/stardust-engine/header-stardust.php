@@ -34,7 +34,7 @@
   <wa-dropdown placement="bottom-start" hoist>
     <wa-button slot="trigger" appearance="plain">
         <i class="fa-duotone fa-users me-2"></i>The Band
-        <i slot="suffix" class="fa-solid fa-circle-caret-down ms-2 opacity-50"></i>
+        <i slot="end" class="fa-solid fa-circle-caret-down ms-2 opacity-50" aria-hidden="true"></i>
     </wa-button>
         <wa-menu>
       <wa-dropdown-item onclick="navigateTo('/engine-room/artists/stardust-engine/band')">Overview</wa-dropdown-item>
