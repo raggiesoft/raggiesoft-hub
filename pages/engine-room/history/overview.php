@@ -18,7 +18,7 @@ $base_path = $cdnBaseUrl . "/engine-room-records/artists";
     </div>
 
     <!-- 1. REAL WORLD INFRASTRUCTURE -->
-    <div class="card bg-dark text-white border-secondary mb-5 shadow-lg">
+    <div class="card bg-dark text-white border-secondary mb-5 shadow-lg wa-theme-dark" data-bs-theme="dark">
         <div class="card-header bg-black border-secondary d-flex justify-content-between align-items-center py-3">
             <h5 class="mb-0 text-uppercase font-monospace text-info">
                 <i class="fa-duotone fa-server me-2" aria-hidden="true"></i>Real-World Infrastructure

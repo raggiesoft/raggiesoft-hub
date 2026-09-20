@@ -84,7 +84,8 @@ usort($latestAlbums, function($a, $b) {
     /* FAN HUB STYLING */
     .engine-hero {
         background: linear-gradient(to bottom, rgba(13, 17, 23, 0.8), rgba(13, 17, 23, 0.95)), 
-                    url($cdnBaseUrl . '/stardust-engine/images/studio-rack.jpg') center/cover;
+                    url('<?php echo $cdnBaseUrl; ?>/stardust-engine/images/studio-rack.jpg') center/cover;
+        background-color: #0d1117; /* Fallback */
         border-bottom: 4px solid var(--bs-primary);
     }
     
@@ -158,7 +159,7 @@ usort($latestAlbums, function($a, $b) {
     }
 </style>
 
-<div class="engine-hero py-5 mb-5 shadow-lg text-white">
+<div class="engine-hero py-5 mb-5 shadow-lg text-white wa-theme-dark w-100" data-bs-theme="dark">
     <div class="container text-center py-5">
         <img src="<?php echo $cdnBaseUrl; ?>/engine-room-records/images/logos/engine-room-records-logo.png" 
              alt="Engine Room Records" 
