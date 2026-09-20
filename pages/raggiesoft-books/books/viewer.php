@@ -155,9 +155,11 @@ $overviewUrl = dirname($request_uri, 3); // Backs out of /b001/c001/p001
         </div>
 
         <div>
-            <?php if ($nextUrl): ?>
+            <?php if ($nextUrl): 
+                $nextText = $config['nextText'] ?? 'Next Part';
+            ?>
                 <wa-button href="<?php echo htmlspecialchars($nextUrl); ?>" variant="brand">
-                    Next Part
+                    <?php echo htmlspecialchars($nextText); ?>
                     <wa-icon name="arrow-right" slot="suffix"></wa-icon>
                 </wa-button>
             <?php else: ?>

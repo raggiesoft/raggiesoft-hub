@@ -1,0 +1,17 @@
+{
+    "common": {
+        "site": "raggiesoft-books",
+        "theme": "",
+        "siteName": "dream-kingdom",
+        "isSequential": true,
+        "showSidebar": true,
+        "sidebar": "raggiesoft-books/sidebar-book",
+        "headerMenu": "raggiesoft-books/header-books",
+        "footer": "raggiesoft-books/footer-books"
+    },
+    "/raggiesoft-books/books/dream-kingdom": {
+        "view": "pages/raggiesoft-books/books/overview",
+        "title": "dream-kingdom - Library",
+        "theme": ""
+    }
+}

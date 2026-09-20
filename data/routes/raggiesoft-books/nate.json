@@ -1,0 +1,17 @@
+{
+    "common": {
+        "site": "raggiesoft-books",
+        "theme": "",
+        "siteName": "nate",
+        "isSequential": true,
+        "showSidebar": true,
+        "sidebar": "raggiesoft-books/sidebar-book",
+        "headerMenu": "raggiesoft-books/header-books",
+        "footer": "raggiesoft-books/footer-books"
+    },
+    "/raggiesoft-books/books/nate": {
+        "view": "pages/raggiesoft-books/books/overview",
+        "title": "nate - Library",
+        "theme": ""
+    }
+}

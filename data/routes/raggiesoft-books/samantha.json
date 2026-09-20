@@ -1,0 +1,17 @@
+{
+    "common": {
+        "site": "raggiesoft-books",
+        "theme": "",
+        "siteName": "samantha",
+        "isSequential": true,
+        "showSidebar": true,
+        "sidebar": "raggiesoft-books/sidebar-book",
+        "headerMenu": "raggiesoft-books/header-books",
+        "footer": "raggiesoft-books/footer-books"
+    },
+    "/raggiesoft-books/books/samantha": {
+        "view": "pages/raggiesoft-books/books/overview",
+        "title": "samantha - Library",
+        "theme": ""
+    }
+}
