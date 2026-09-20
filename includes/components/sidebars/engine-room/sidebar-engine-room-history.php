@@ -7,7 +7,7 @@
     
     <!-- DIRECTORY NAVIGATION -->
     <wa-card class="rounded-0 border-secondary mb-4 shadow-sm w-100 p-0" style="--wa-panel-bg: var(--bs-body-bg); --body-padding: 0; --header-padding: 0;">
-        <div slot="header" class="bg-dark text-white fw-bold text-uppercase border-bottom border-danger font-monospace small px-3 py-2">
+        <div slot="header" class="fw-bold text-uppercase border-bottom border-danger font-monospace small px-3 py-2" style="background-color: #212529 !important; color: #fff !important;">
             <i class="fa-solid fa-folder-tree me-2"></i> Archive Directory
         </div>
         <div class="list-group list-group-flush font-monospace small">
@@ -39,7 +39,7 @@
     </wa-card>
 
     <!-- SECURITY REMINDER -->
-    <div class="alert alert-dark border-secondary bg-black text-white-50 p-3 font-monospace" style="font-size: 0.75rem;">
+    <div class="alert bg-black border-secondary text-white-50 p-3 font-monospace shadow-sm" style="font-size: 0.75rem;">
         <i class="fa-solid fa-shield-halved text-danger mb-2 d-block fs-5" aria-hidden="true"></i>
         Historical records and case files are maintained for internal reference and DSP compliance. Access to these documents is logged.
     </div>
