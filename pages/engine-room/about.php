@@ -89,6 +89,37 @@ $pageTitle = "About Engine Room Records - The Fortress";
     </div>
 
     <div class="row justify-content-center mb-5">
+        <div class="col-lg-10">
+            <div class="card border-0 shadow-lg overflow-hidden">
+                <div class="row g-0">
+                    <div class="col-md-5 bg-black d-flex align-items-center justify-content-center p-5 border-end border-secondary border-opacity-25">
+                        <div class="text-center">
+                            <h1 class="display-1 fw-bold text-success mb-0">1994</h1>
+                            <p class="text-white-50 text-uppercase letter-spacing-2">The Settlement</p>
+                        </div>
+                    </div>
+                    <div class="col-md-7">
+                        <div class="card-body p-5 bg-dark text-white h-100">
+                            <h3 class="h4 fw-bold text-uppercase text-success mb-3">
+                                <i class="fa-duotone fa-gavel me-2"></i>The Trials & The Vault
+                            </h3>
+                            <p class="text-white-50">
+                                In a media circus rivaling the "Trial of the Century," Julian Vance faced criminal and civil trials for his actions. But unlike reality, justice prevailed: Vance was found guilty on all criminal charges, and the judge ruled decisively in The Stardust Engine's favor in civil court.
+                            </p>
+                            <p class="text-white-50">
+                                Desperate to stop the catastrophic PR bleeding, Apex Records capitulated to every single demand Holly O'Connell made. They released the band from all contracts, handed over the original masters of every track recorded to date, and transferred all copyrights and trademarks fully to Holly.
+                            </p>
+                            <p class="text-white-50 mb-0">
+                                To house this reclaimed IP, Holly formally incorporated <strong>Engine Room Records, LLC</strong>. It wasn't built as a vanity label&mdash;it was built as an impregnable vault. In the real world, Engine Room Records is the brand name used to release our Suno AI-generated catalog to the public.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row justify-content-center mb-5">
         <div class="col-lg-8">
             <div class="timeline-connector">
                 <div class="timeline-dot"></div>

@@ -39,6 +39,24 @@ $album_path_web = '/engine-room-records/artists/the-stardust-engine/1996-ad-astr
         <i class="fa-duotone fa-rocket-launch me-2"></i>Mission Logs & Lore
     </h3>
 
+        <!-- VOYAGE CROSSLINK -->
+    <wa-card class="bg-black border-warning shadow-sm mb-4 w-100 wa-theme-dark" data-bs-theme="dark" style="--body-padding: 0; --wa-panel-bg: #050508;">
+        <div class="row g-0 align-items-center">
+            <div class="col-md-8 p-4">
+                <wa-badge variant="warning" class="mb-2 text-dark font-monospace"><i class="fa-duotone fa-book-sparkles me-2"></i>THE MAIDEN VOYAGE</wa-badge>
+                <h4 class="h5 fw-bold text-light mb-2 text-uppercase">Explore the Flight Logs</h4>
+                <p class="text-white-50 mb-0 small">
+                    Dive into the complete in-universe narrative of the U.S.S. Aethelgard. The Escape Velocity suite was originally envisioned as the soundtrack to an ambitious, unproduced short film event. View the surviving concept art and mission logs that outline the band's cosmic journey.
+                </p>
+            </div>
+            <div class="col-md-4 p-4 text-md-end border-start border-secondary border-opacity-25">
+                <wa-button variant="warning" outline href="/engine-room/artists/stardust-engine/story/ad-astra/overview" class="rounded-pill w-100">
+                    <i slot="prefix" class="fa-duotone fa-rocket-launch"></i>Access Mission Hub
+                </wa-button>
+            </div>
+        </div>
+    </wa-card>
+
     <div class="row g-4 mb-5">
         <div class="col-md-4">
             <div class="alert alert-dark border-success h-100 mb-0 shadow-sm">

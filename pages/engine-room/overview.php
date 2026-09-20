@@ -181,6 +181,22 @@ usort($latestAlbums, function($a, $b) {
     </div>
 </div>
 
+<div class="container mt-4 mb-2">
+    <div class="alert alert-secondary border-secondary shadow-sm d-flex align-items-center" role="alert">
+        <i class="fa-duotone fa-robot-astromech fa-3x me-3 text-info d-none d-md-block"></i>
+        <div>
+            <h4 class="alert-heading h6 fw-bold mb-1 text-uppercase letter-spacing-1"><i class="fa-duotone fa-robot-astromech me-2 text-info d-inline-block d-md-none"></i>Transparency & Timeline Notice</h4>
+            <p class="mb-2 small text-body-secondary border-bottom border-secondary-subtle pb-2">
+                <strong>Engine Room Records</strong> is a multimedia storytelling and world-building project. The music is generated using a commercial Suno license, with conceptual lore, characters, and lyrics co-written by human direction and Gemini.
+            </p>
+            <p class="mb-0 small text-body-secondary">
+                <strong>Dual Timelines:</strong> To maintain our immersive fictional universe while strictly complying with modern digital distribution standards, our catalog features two timelines: a fictional <strong>Narrative Era</strong> (e.g., 1987) tied to the band's lore, and a real-world <strong>Actual Release Date</strong> (e.g., 2026) reflecting when the audio was officially distributed to streaming platforms.
+                <a href="/about/ai-disclaimer" class="alert-link fw-bold text-info border-bottom border-info text-decoration-none ms-1">Read the full AI Disclaimer.</a>
+            </p>
+        </div>
+    </div>
+</div>
+
 <div class="container pb-5">
     
         <div class="row mb-4" id="latest-transmissions">

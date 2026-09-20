@@ -97,7 +97,34 @@ $cardBackground = $cdnBaseUrl . '/stardust-engine/images/story/ad-astra/ad-astra
         </div>
     </div>
 
-    <div class="row justify-content-center g-4">
+        <!-- THE UNMADE SHORT FILM CONCEPT -->
+    <div class="row justify-content-center mb-5">
+        <div class="col-lg-10">
+            <wa-card class="bg-black border-secondary shadow-lg w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: #050508;">
+                <div class="row g-0">
+                    <div class="col-md-5">
+                        <img src="<?php echo $cdnBaseUrl; ?>/engine-room-records/artists/the-stardust-engine/1996-ad-astra-single/album-art.jpg" class="img-fluid h-100 w-100 object-fit-cover" style="object-fit: cover; min-height: 250px;" alt="A glowing monolith inside a spaceship cockpit">
+                    </div>
+                    <div class="col-md-7 d-flex align-items-center">
+                        <div class="p-4 p-lg-5">
+                            <wa-badge variant="warning" class="mb-3 text-dark font-monospace shadow-glow">
+                                <i class="fa-duotone fa-film me-2"></i>THE UNMADE SHORT FILM
+                            </wa-badge>
+                            <h3 class="h4 text-light fw-bold text-uppercase mb-3" style="font-family: 'Audiowide', sans-serif;">A Cinematic Vision</h3>
+                            <p class="text-white-50 mb-3">
+                                The visual logs of the <em>Escape Velocity</em> voyage are more than just tour photos&mdash;they are surviving concept art for an incredibly ambitious, but ultimately unproduced, short film event.
+                            </p>
+                            <p class="text-white-50 mb-0">
+                                The band envisioned a groundbreaking cinematic music video experience&mdash;a sweeping sci-fi narrative to accompany the 15-minute suite. The iconic album art itself, featuring a mysterious monolith dominating the cockpit of the <em>Aethelgard</em>, was designed as the central promotional poster for this unrealized cinematic journey.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </wa-card>
+        </div>
+    </div>
+
+<div class="row justify-content-center g-4">
         
         <div class="col-lg-6">
             <wa-card class="h-100 border-info shadow-lg overflow-hidden position-relative group-hover-scale p-0 w-100" style="--wa-panel-bg: transparent; --body-padding: 0;">

@@ -166,7 +166,7 @@ $base_path = $cdnBaseUrl . "/engine-room-records/artists";
                 'btnIcon'  => 'fa-solid fa-link',
                 'content'  => '
                     <p>Following the collapse of the <em>Friction</em> project, the band immediately evacuated Los Angeles, retreating 2,500 miles back to their sanctuary in Blacksburg, Virginia.</p>
-                    <p class="mb-4">While Holly O\'Connell dismantled Apex Records on the West Coast, the prolonged legal spectacle took a massive personal toll on the band. The trauma and isolation of these "Wilderness Years" in their Blacksburg warehouse became a creative crucible. Free from corporate oversight, they channeled the exhaustion of the trials into their instruments.</p>
+                    <p class="mb-4">Meanwhile, Holly O\'Connell remained on the West Coast to dismantle Apex Records. In a media circus rivaling the "Trial of the Century," Julian Vance faced criminal and civil trials. He was found guilty on all charges, and the judge ruled decisively in the band\'s favor in civil court. Desperate to stop the PR bleeding, Apex Records capitulated to all of Holly\'s demands, returning their master tapes and copyrights, which she used to formally establish <strong>Engine Room Records, LLC</strong>. The trauma and isolation of these "Wilderness Years" became a creative crucible for the band in Blacksburg.</p>
                 '
             ];
             include ROOT_PATH . '/includes/components/_timeline-node.php';
