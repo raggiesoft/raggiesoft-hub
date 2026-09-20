@@ -4,24 +4,28 @@
 
 $pageTitle = "Engine Room Records™ | Loud. Raw. Real.";
 
-// Fetch the latest albums dynamically from the master catalog
-$masterCatalogPath = __DIR__ . '/../../../raggiesoft-assets/engine-room-records/json/master-catalog.json';
-$masterCatalog = file_exists($masterCatalogPath) ? json_decode(file_get_contents($masterCatalogPath), true) : [];
+// Fetch the latest albums dynamically from the master catalog via CDN
+$masterCatalogPath = $cdnBaseUrl . '/engine-room-records/json/master-catalog.json';
+$masterCatalogData = @file_get_contents($masterCatalogPath);
+$masterCatalog = $masterCatalogData ? json_decode($masterCatalogData, true) : [];
 
 $artistsMap = [];
-foreach ($masterCatalog as $track) {
-    $slug = $track['artistSlug'] ?? '';
-    $persona = $track['artistPersona'] ?? '';
-    if (!empty($slug) && !empty($persona)) {
-        $artistsMap[$slug] = $persona;
+if (is_array($masterCatalog)) {
+    foreach ($masterCatalog as $track) {
+        $slug = $track['artistSlug'] ?? '';
+        $persona = $track['artistPersona'] ?? '';
+        if (!empty($slug) && !empty($persona)) {
+            $artistsMap[$slug] = $persona;
+        }
     }
 }
 
 $latestAlbums = [];
 foreach ($artistsMap as $slug => $persona) {
-    $albumsPath = __DIR__ . "/../../../raggiesoft-assets/engine-room-records/artists/{$slug}/albums.json";
-    if (file_exists($albumsPath)) {
-        $albumsData = json_decode(file_get_contents($albumsPath), true);
+    $albumsPath = $cdnBaseUrl . "/engine-room-records/artists/{$slug}/albums.json";
+    $albumsDataRaw = @file_get_contents($albumsPath);
+    if ($albumsDataRaw) {
+        $albumsData = json_decode($albumsDataRaw, true);
         
         $allAlbums = [];
         foreach ($albumsData as $eraKey => $eraData) {
@@ -192,7 +196,9 @@ usort($latestAlbums, function($a, $b) {
         wa-card::part(body) { flex: 1 1 auto; display: flex; flex-direction: column; }
     </style>
 
+    
     <div class="row g-4 mb-5">
+
         <?php foreach ($latestAlbums as $album): ?>
         <div class="col-12 col-md-6 col-lg-3 d-flex align-items-stretch">
             <wa-card class="h-100 border border-secondary shadow-sm bg-transparent w-100 p-0 hover-card" style="--wa-panel-bg: transparent; --body-padding: 0; --header-padding: 0;">
@@ -235,7 +241,9 @@ usort($latestAlbums, function($a, $b) {
         </div>
     </div>
 
+    
     <div class="row g-4 mb-5">
+
         
         <div class="col-md-6 col-xl-3">
             <a href="/engine-room/artists/stardust-engine" class="text-decoration-none">
