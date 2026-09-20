@@ -67,8 +67,8 @@ $pageTitle = "Master Licensing Portal | RaggieSoft Media";
 <div class="row g-4 mb-5">
     
     <div class="col-md-6">
-        <div class="card bg-hud-blue h-100 border-0 shadow-sm d-flex flex-column transition-base hover-lift">
-            <div class="p-4 border-bottom" style="border-color: var(--raggie-glass-border) !important;">
+        <wa-card class="bg-hud-blue h-100 w-100 shadow-sm transition-base hover-lift" style="--border-color: var(--raggie-glass-border);">
+            <div slot="header" class="p-4 border-bottom" style="border-color: var(--raggie-glass-border) !important;">
                 <div class="d-flex align-items-center">
                     <i class="fa-brands fa-github fa-2x me-3 text-primary" aria-hidden="true" style="filter: drop-shadow(0 2px 4px rgba(0,130,230,0.4));"></i>
                     <div>
@@ -77,24 +77,24 @@ $pageTitle = "Master Licensing Portal | RaggieSoft Media";
                     </div>
                 </div>
             </div>
-            <div class="card-body p-4 d-flex flex-column">
-                <span class="badge bg-primary text-white align-self-start mb-3 rounded-pill font-monospace shadow-sm">MIT License</span>
-                <p class="card-text text-body-emphasis mb-3">
+            <div class="d-flex flex-column h-100 p-4">
+                <wa-badge variant="primary" class="align-self-start mb-3 font-monospace shadow-sm">MIT License</wa-badge>
+                <p class="text-body-emphasis mb-3">
                     All source code, proprietary routing scripts (Elara CMS), and web architecture patterns developed by RaggieSoft are distributed open-source.
                 </p>
-                <p class="card-text small text-body-secondary flex-grow-1">
+                <p class="small text-body-secondary flex-grow-1">
                     You are free to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the software, provided the original copyright notice is included.
                 </p>
-                <button type="button" class="btn btn-glass-info btn-sm mt-auto rounded-pill fw-bold transition-all" data-bs-toggle="modal" data-bs-target="#mitLicenseModal">
+                <wa-button variant="info" size="small" class="mt-auto fw-bold" data-bs-toggle="modal" data-bs-target="#mitLicenseModal">
                     <i class="fa-solid fa-file-contract me-2" aria-hidden="true"></i>Read Full MIT License
-                </button>
+                </wa-button>
             </div>
-        </div>
+        </wa-card>
     </div>
 
     <div class="col-md-6">
-        <div class="card bg-hud-warning h-100 border-0 shadow-sm d-flex flex-column transition-base hover-lift">
-            <div class="p-4 border-bottom" style="border-color: var(--raggie-glass-border) !important;">
+        <wa-card class="bg-hud-warning h-100 w-100 shadow-sm transition-base hover-lift" style="--border-color: var(--raggie-glass-border);">
+            <div slot="header" class="p-4 border-bottom" style="border-color: var(--raggie-glass-border) !important;">
                 <div class="d-flex align-items-center">
                     <i class="fa-brands fa-creative-commons fa-2x me-3 text-warning" aria-hidden="true" style="filter: drop-shadow(0 2px 4px rgba(255,179,0,0.4));"></i>
                     <div>
@@ -103,9 +103,9 @@ $pageTitle = "Master Licensing Portal | RaggieSoft Media";
                     </div>
                 </div>
             </div>
-            <div class="card-body p-4 d-flex flex-column">
-                <span class="badge bg-warning text-dark align-self-start mb-3 rounded-pill font-monospace shadow-sm">CC BY-SA 4.0</span>
-                <p class="card-text text-body-emphasis mb-3">
+            <div class="d-flex flex-column h-100 p-4">
+                <wa-badge variant="warning" class="align-self-start mb-3 font-monospace shadow-sm">CC BY-SA 4.0</wa-badge>
+                <p class="text-body-emphasis mb-3">
                     All creative writing, fictional universes (<em>The Stardust Engine, Knox, Aethel</em>), and lore documentation are licensed under Creative Commons.
                 </p>
                 <ul class="list-unstyled small text-body-secondary mb-4 flex-grow-1">
@@ -113,18 +113,17 @@ $pageTitle = "Master Licensing Portal | RaggieSoft Media";
                     <li class="mb-2"><i class="fa-solid fa-circle-exclamation text-warning me-2" aria-hidden="true"></i><strong>Attribution:</strong> You must explicitly credit <em>RaggieSoft Media</em>.</li>
                     <li class="mb-2"><i class="fa-solid fa-circle-exclamation text-warning me-2" aria-hidden="true"></i><strong>ShareAlike:</strong> Derivative works must use the same license.</li>
                 </ul>
-                <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener" class="btn btn-glass-warning btn-sm mt-auto rounded-pill fw-bold transition-all">
+                <wa-button href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" variant="warning" size="small" class="mt-auto fw-bold">
                     <i class="fa-solid fa-external-link me-2" aria-hidden="true"></i>View CC BY-SA 4.0 Deed
-                    <span class="visually-hidden">(opens in a new tab)</span>
-                </a>
+                </wa-button>
             </div>
-        </div>
+        </wa-card>
     </div>
 
 </div>
 
-<div class="card bg-hud-base border-0 shadow-sm mb-5 p-2">
-    <div class="card-body p-4 p-lg-5 text-center text-md-start d-md-flex align-items-center justify-content-between">
+<wa-card class="bg-hud-base w-100 shadow-sm mb-5 p-2" style="--border-color: transparent;">
+    <div class="p-4 p-lg-5 text-center text-md-start d-md-flex align-items-center justify-content-between">
         <div class="mb-4 mb-md-0 me-md-4">
             <h2 class="h4 fw-bold mb-2 text-uppercase text-glow-primary">Commercial Media Clearances</h2>
             <p class="text-body-secondary mb-0 small" style="max-width: 700px;">
@@ -132,12 +131,12 @@ $pageTitle = "Master Licensing Portal | RaggieSoft Media";
             </p>
         </div>
         <div class="flex-shrink-0 mt-3 mt-md-0">
-            <a href="/raggiesoft-media/licensing/commercial" class="btn btn-primary rounded-pill px-4 py-2 fw-bold text-uppercase shadow">
+            <wa-button href="/raggiesoft-media/licensing/commercial" variant="primary" class="fw-bold text-uppercase shadow">
                 <i class="fa-duotone fa-briefcase me-2" aria-hidden="true"></i>Commercial Portal
-            </a>
+            </wa-button>
         </div>
     </div>
-</div>
+</wa-card>
 
 <div class="modal fade" id="mitLicenseModal" tabindex="-1" aria-labelledby="mitLicenseModalTitle" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered modal-lg">

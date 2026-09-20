@@ -25,17 +25,11 @@ $isContact = ($request_uri === '/contact');
         <i slot="end" class="fa-solid fa-circle-caret-down ms-2 opacity-50" aria-hidden="true"></i>
     </wa-button>
     <wa-menu>
-      <wa-dropdown-item value="/about/michael-ragsdale">
-      <i slot="start" class="fa-duotone fa-id-card"></i> Overview
-    </wa-dropdown-item>
-    <wa-dropdown-item value="/about/michael-ragsdale/resume">
-      <i slot="start" class="fa-duotone fa-file-user"></i> Resume / CV
-    </wa-dropdown-item>
-    <wa-dropdown-item value="/about/michael-ragsdale/profile">
+    <wa-dropdown-item value="/about/michael-ragsdale">
       <i slot="start" class="fa-duotone fa-user-gear"></i> Skills & Profile
     </wa-dropdown-item>
     <wa-divider></wa-divider>
-    <wa-dropdown-item value="/about/michael-ragsdale/contact">
+    <wa-dropdown-item value="/contact">
       <i slot="start" class="fa-duotone fa-address-card"></i> Contact Card
     </wa-dropdown-item>
     </wa-menu>
