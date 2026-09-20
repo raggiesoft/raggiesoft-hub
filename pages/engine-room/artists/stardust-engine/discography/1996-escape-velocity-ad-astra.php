@@ -50,7 +50,7 @@ $album_path_web = '/engine-room-records/artists/the-stardust-engine/1996-ad-astr
                 </p>
             </div>
             <div class="col-md-4 p-4 text-md-end border-start border-secondary border-opacity-25">
-                <wa-button variant="warning" outline href="/engine-room/artists/stardust-engine/story/ad-astra/overview" class="rounded-pill w-100">
+                <wa-button variant="warning" outline href="/engine-room/artists/stardust-engine/story/ad-astra/" class="rounded-pill w-100">
                     <i slot="prefix" class="fa-duotone fa-rocket-launch"></i>Access Mission Hub
                 </wa-button>
             </div>

@@ -157,7 +157,7 @@ $pageTitle = "The Trigger: Slide 14 - Evidence Item #1";
                                 "They are going to rip my baby apart!"
                             </p>
                             <p class="text-white-50 mt-3">
-                                Cassidy O'Connell didn't see a slide. She saw a knife. <em><a href="/engine-room/artists/stardust-engine/story/ad-astra/overview" class="text-info text-decoration-underline fw-bold">Escape Velocity (Ad Astra)</a></em> wasn't a product; it was the autobiography of her trauma. She wrote the notes. She wrote the lyrics. She directed her family. It was the safe space Ryan had built for her with his guitar.
+                                Cassidy O'Connell didn't see a slide. She saw a knife. <em><a href="/engine-room/artists/stardust-engine/story/ad-astra/" class="text-info text-decoration-underline fw-bold">Escape Velocity (Ad Astra)</a></em> wasn't a product; it was the autobiography of her trauma. She wrote the notes. She wrote the lyrics. She directed her family. It was the safe space Ryan had built for her with his guitar.
                             </p>
                             <p class="text-white-50 mb-0">
                                 She began to hyperventilate. It was a Level 5 Autistic Meltdown, triggered by the profound violation of her core identity.

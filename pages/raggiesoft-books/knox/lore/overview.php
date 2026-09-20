@@ -41,7 +41,7 @@ $heroImage = $cdnBaseUrl . "/knox/images/aerie-hold-atmospheric.jpg";
                             <li><i class="fa-solid fa-arrow-down me-2 text-warning"></i>The Jungle Floor (-3km)</li>
                             <li><i class="fa-solid fa-skull me-2 text-danger"></i>The Blight Zone</li>
                         </ul>
-                        <a href="/raggiesoft-books/knox/lore/telsus-minor/overview" class="btn btn-outline-success w-100 rounded-0">
+                        <a href="/raggiesoft-books/knox/lore/telsus-minor/" class="btn btn-outline-success w-100 rounded-0">
                             Explore the Planet
                         </a>
                     </div>
@@ -97,7 +97,7 @@ $heroImage = $cdnBaseUrl . "/knox/images/aerie-hold-atmospheric.jpg";
                                     <span class="skill-pill border-secondary">Stalker's Call</span>
                                     <span class="skill-pill border-secondary">Bio-Scrambler</span>
                                 </div>
-                                <a href="/raggiesoft-books/knox/lore/toys/overview" class="btn btn-primary w-100 rounded-0">
+                                <a href="/raggiesoft-books/knox/lore/toys/" class="btn btn-primary w-100 rounded-0">
                                     Open the Arsenal
                                 </a>
                             </div>

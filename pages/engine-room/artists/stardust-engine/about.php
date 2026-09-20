@@ -41,7 +41,7 @@ $customPageAssets = [
                     <p>
                         The narrative follows their struggle against the corporate monolith <strong>Apex Records</strong>, their retreat to the "Fortress," and their eventual broadcast from <strong>Port Telsus</strong>, a space station orbiting Telsus Minor.
                     </p>
-                    <a href="/engine-room/artists/stardust-engine/band/overview" class="btn btn-sm btn-outline-warning mt-2">
+                    <a href="/engine-room/artists/stardust-engine/band/" class="btn btn-sm btn-outline-warning mt-2">
                         <i class="fa-duotone fa-book-open me-2"></i>Read the History
                     </a>
                 </div>

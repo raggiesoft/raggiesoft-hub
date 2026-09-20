@@ -75,7 +75,7 @@ $articleSchema = [
                         <strong>deliberate corporate exploitation and severe psychological distress</strong>.
                     </p>
                     <div class="d-grid gap-3 d-md-flex justify-content-center">
-                        <wa-button variant="neutral" outline size="large" href="/engine-room/artists/stardust-engine/story/friction/overview">
+                        <wa-button variant="neutral" outline size="large" href="/engine-room/artists/stardust-engine/story/friction/">
                             <i class="fa-duotone fa-arrow-left me-2"></i>Return to Overview
                         </wa-button>
                         <wa-button variant="danger" size="large" onclick="unlockContent()">
@@ -161,7 +161,7 @@ $articleSchema = [
                 </wa-card>
 
                 <div class="text-center mt-5">
-                    <wa-button variant="neutral" outline href="/engine-room/artists/stardust-engine/story/friction/overview" class="rounded-pill">
+                    <wa-button variant="neutral" outline href="/engine-room/artists/stardust-engine/story/friction/" class="rounded-pill">
                         <i class="fa-duotone fa-arrow-left me-2"></i>Back to The Catastrophe
                     </wa-button>
                 </div>
