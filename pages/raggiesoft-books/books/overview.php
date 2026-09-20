@@ -14,46 +14,67 @@
     </div>
 
     <div class="row g-4 justify-content-center">
-        <!-- Crimson Node Card -->
-        <div class="col-lg-5">
-            <?php
-            $props = [
-                'imgSrc' => $cdnBaseUrl . '/engine-room-records/artists/crimson-node/2002-crimson-node/album-art.jpg',
-                'imgAlt' => 'Crimson Node',
-                'fallbackText' => 'CN',
-                'title' => 'Crimson Node: The Archives',
-                'description' => 'The complete, grounded narrative of Matt Miller and the chaotic, fiercely protective ecosystem of the Albemarle compound.',
-                'buttonProps' => [
-                    'href' => '/raggiesoft-books/books/crimson-node',
-                    'text' => 'Read Series',
-                    'variant' => 'danger', 
-                    'icon' => 'fa-duotone fa-book-atlas',
-                    'fullWidth' => true
-                ]
-            ];
-            include ROOT_PATH . '/includes/components/card.php';
-            ?>
-        </div>
+        <?php
+        // Fetch the master catalog directly from the CDN
+        $catalogUrl = $cdnBaseUrl . '/raggiesoft-books/books/catalog.json';
+        $catalogData = @file_get_contents($catalogUrl);
+        $books = [];
         
-        <!-- Future Series Placeholder -->
-        <div class="col-lg-5">
-            <?php
-            $props = [
-                'imgSrc' => $cdnBaseUrl . '/common/patterns/noise-subtle.png',
-                'imgAlt' => 'Encrypted File',
-                'fallbackText' => '???',
-                'title' => 'Encrypted File',
-                'description' => 'Further contemporary manuscripts are currently undergoing typesetting and review. Check back later for more archives.',
-                'buttonProps' => [
-                    'href' => '#',
-                    'text' => 'Classified',
-                    'variant' => 'secondary', 
-                    'icon' => 'fa-solid fa-lock',
-                    'fullWidth' => true
-                ]
-            ];
-            include ROOT_PATH . '/includes/components/card.php';
-            ?>
-        </div>
+        if ($catalogData) {
+            $books = json_decode($catalogData, true) ?? [];
+        }
+
+        if (empty($books)):
+        ?>
+            <div class="col-12 text-center py-5">
+                <wa-icon name="books" style="font-size: 3rem; color: var(--bs-secondary);"></wa-icon>
+                <h3 class="mt-3 text-muted">Library Catalog Offline</h3>
+                <p>The system is currently compiling the archives. Please check back later.</p>
+            </div>
+        <?php
+        else:
+            foreach ($books as $book):
+                $slug = $book['slug'] ?? '';
+                $title = $book['title'] ?? 'Unknown Archive';
+                $desc = $book['description'] ?? '';
+                
+                // Construct initials for fallback
+                $words = explode(' ', str_replace('The ', '', $title));
+                $fallback = '';
+                foreach ($words as $w) {
+                    if (!empty($w)) $fallback .= strtoupper($w[0]);
+                }
+                $fallback = substr($fallback, 0, 2);
+                if (empty($fallback)) $fallback = '??';
+                
+                // Specific cover art overrides
+                $imgSrc = $cdnBaseUrl . '/raggiesoft-books/images/logos/oceanview-archives.svg';
+                if ($slug === 'crimson-node') {
+                    $imgSrc = $cdnBaseUrl . '/engine-room-records/artists/crimson-node/2002-crimson-node/album-art.jpg';
+                }
+        ?>
+            <div class="col-md-6 col-lg-4">
+                <?php
+                $props = [
+                    'imgSrc' => $imgSrc,
+                    'imgAlt' => $title,
+                    'fallbackText' => $fallback,
+                    'title' => $title,
+                    'description' => $desc,
+                    'buttonProps' => [
+                        'href' => '/raggiesoft-books/books/' . $slug,
+                        'text' => 'Read Series',
+                        'variant' => 'primary', 
+                        'icon' => 'fa-duotone fa-book-open-cover',
+                        'fullWidth' => true
+                    ]
+                ];
+                include ROOT_PATH . '/includes/components/card.php';
+                ?>
+            </div>
+        <?php
+            endforeach;
+        endif;
+        ?>
     </div>
 </div>
