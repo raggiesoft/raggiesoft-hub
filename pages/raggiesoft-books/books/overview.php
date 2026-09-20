@@ -62,7 +62,7 @@
                     'title' => $title,
                     'description' => $desc,
                     'buttonProps' => [
-                        'href' => '/raggiesoft-books/books/' . $slug,
+                        'href' => !empty($book['first_route']) ? $book['first_route'] : '/raggiesoft-books/books/' . $slug,
                         'text' => 'Read Series',
                         'variant' => 'primary', 
                         'icon' => 'fa-duotone fa-book-open-cover',

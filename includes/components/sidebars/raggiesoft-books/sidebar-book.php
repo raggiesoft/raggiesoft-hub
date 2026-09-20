@@ -43,7 +43,7 @@ $seriesTitle = $katie['series_title'] ?? $config['sequenceName'] ?? 'Narrative T
                     $isBookExpanded = count($books) === 1 ? 'expanded' : ''; 
                 ?>
                 <wa-tree-item <?php echo $isBookExpanded; ?>>
-                    <span class="fw-semibold text-body-emphasis"><?php echo htmlspecialchars($bookTitle); ?></span>
+                    <span class="fw-semibold text-body-emphasis d-block" style="cursor: pointer;" onclick="this.parentElement.expanded = !this.parentElement.expanded;"><?php echo htmlspecialchars($bookTitle); ?></span>
                     
                     <?php foreach ($chapters as $cIndex => $chapter): ?>
                         <?php 
@@ -61,7 +61,7 @@ $seriesTitle = $katie['series_title'] ?? $config['sequenceName'] ?? 'Narrative T
                             }
                         ?>
                         <wa-tree-item <?php echo $isChapterActive ? 'expanded' : ''; ?>>
-                            <span class="text-body fw-medium"><?php echo htmlspecialchars($chapTitle); ?></span>
+                            <span class="text-body fw-medium d-block" style="cursor: pointer;" onclick="this.parentElement.expanded = !this.parentElement.expanded;"><?php echo htmlspecialchars($chapTitle); ?></span>
                             
                             <?php foreach ($parts as $part): ?>
                                 <?php
