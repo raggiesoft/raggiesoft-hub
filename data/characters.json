@@ -8,9 +8,804 @@
         "stardust-engine",
         "crimson-node"
       ],
-      "tags": ["fictional", "unbroken"],
+      "tags": [
+        "fictional",
+        "unbroken"
+      ],
       "image_path": "stardust-engine/images/characters/oconnell-holly.jpg",
       "markdown_file": "oconnell-holly.md",
+      "is_public": true
+    },
+    {
+      "id": "pelletier-elodie",
+      "name": "Elodie Pelletier",
+      "subtitle": "Profile Data",
+      "narratives": [
+        "stardust-engine"
+      ],
+      "tags": [],
+      "image_path": "shiloh/images/family/elodie-pelletier-thumb.jpg",
+      "markdown_file": "pelletier-elodie.md",
+      "is_public": true
+    },
+    {
+      "id": "vance-arthur",
+      "name": "Arthur Vance",
+      "subtitle": "The Guardian",
+      "narratives": [
+        "stardust-engine"
+      ],
+      "tags": [
+        "<i class=\"fa-solid fa-school me-1\"></i> northwood high school",
+        "<i class=\"fa-solid fa-shield-check me-1\"></i> paraprofessional aide"
+      ],
+      "image_path": "shiloh/images/thumbnails/northwood/arthur-vance-thumb.jpg",
+      "markdown_file": "vance-arthur.md",
+      "is_public": true
+    },
+    {
+      "id": "miller-sarah",
+      "name": "Sarah Miller",
+      "subtitle": "Profile Data",
+      "narratives": [
+        "stardust-engine"
+      ],
+      "tags": [],
+      "image_path": "shiloh/images/thumbnails/family/miller/david/sarah-miller-thumb.jpg",
+      "markdown_file": "miller-sarah.md",
+      "is_public": true
+    },
+    {
+      "id": "oconnell-ryan",
+      "name": "Ryan O\\",
+      "subtitle": "",
+      "narratives": [
+        "stardust-engine"
+      ],
+      "tags": [],
+      "image_path": "",
+      "markdown_file": "oconnell-ryan.md",
+      "is_public": true
+    },
+    {
+      "id": "miller-matt",
+      "name": "Matt Miller",
+      "subtitle": "Profile Data",
+      "narratives": [
+        "stardust-engine"
+      ],
+      "tags": [],
+      "image_path": "shiloh/images/thumbnails/family/miller/david/matt-miller-thumb.jpg",
+      "markdown_file": "miller-matt.md",
+      "is_public": true
+    },
+    {
+      "id": "bouchard-heather",
+      "name": "Heather Bouchard",
+      "subtitle": "Profile Data",
+      "narratives": [
+        "stardust-engine"
+      ],
+      "tags": [],
+      "image_path": "shiloh/images/thumbnails/ccc/bouchard/heather-bouchard-thumb.jpg",
+      "markdown_file": "bouchard-heather.md",
+      "is_public": true
+    },
+    {
+      "id": "oconnell-cassidy",
+      "name": "Cassidy O\\",
+      "subtitle": "",
+      "narratives": [
+        "stardust-engine"
+      ],
+      "tags": [],
+      "image_path": "",
+      "markdown_file": "oconnell-cassidy.md",
+      "is_public": true
+    },
+    {
+      "id": "bouchard-hailey",
+      "name": "Hailey Bouchard",
+      "subtitle": "Profile Data",
+      "narratives": [
+        "stardust-engine"
+      ],
+      "tags": [],
+      "image_path": "shiloh/images/thumbnails/ccc/bouchard/hailey-bouchard-thumb.jpg",
+      "markdown_file": "bouchard-hailey.md",
+      "is_public": true
+    },
+    {
+      "id": "wright-evan",
+      "name": "Evan Wright",
+      "subtitle": "",
+      "narratives": [
+        "stardust-engine"
+      ],
+      "tags": [],
+      "image_path": "",
+      "markdown_file": "wright-evan.md",
+      "is_public": true
+    },
+    {
+      "id": "manning-rhys",
+      "name": "Rhys Manning",
+      "subtitle": "",
+      "narratives": [
+        "stardust-engine"
+      ],
+      "tags": [],
+      "image_path": "fractured-prisms/images/siblings/rhys-portrait.jpg",
+      "markdown_file": "manning-rhys.md",
+      "is_public": true
+    },
+    {
+      "id": "miller-emily",
+      "name": "Emily Miller",
+      "subtitle": "Profile Data",
+      "narratives": [
+        "stardust-engine"
+      ],
+      "tags": [],
+      "image_path": "shiloh/images/thumbnails/family/miller/peter/emily-miller-thumb.jpg",
+      "markdown_file": "miller-emily.md",
+      "is_public": true
+    },
+    {
+      "id": "twins-the-pelletier",
+      "name": "The Pelletier Twins",
+      "subtitle": "Elodie Pelletier (Left Side)",
+      "narratives": [
+        "stardust-engine"
+      ],
+      "tags": [],
+      "image_path": "shiloh/images/thumbnails/ccc/pelletier/elise-elodie-pelletier-thumb.jpg",
+      "markdown_file": "twins-the-pelletier.md",
+      "is_public": true
+    },
+    {
+      "id": "morgan-bernard",
+      "name": "Bernard Morgan",
+      "subtitle": "",
+      "narratives": [
+        "stardust-engine"
+      ],
+      "tags": [],
+      "image_path": "shiloh/images/characters/northwood/bernard-morgan.jpg",
+      "markdown_file": "morgan-bernard.md",
+      "is_public": true
+    },
+    {
+      "id": "periwinkle-mrs",
+      "name": "Mrs Periwinkle",
+      "subtitle": "",
+      "narratives": [
+        "stardust-engine"
+      ],
+      "tags": [],
+      "image_path": "shiloh/images/characters/northwood/mrs-periwinkle.jpg",
+      "markdown_file": "periwinkle-mrs.md",
+      "is_public": true
+    },
+    {
+      "id": "brooks-jessica",
+      "name": "Jessica Brooks",
+      "subtitle": "Profile Data",
+      "narratives": [
+        "stardust-engine"
+      ],
+      "tags": [],
+      "image_path": "shiloh/images/thumbnails/family/brooks/casper/jessica-brooks-thumb.jpg",
+      "markdown_file": "brooks-jessica.md",
+      "is_public": true
+    },
+    {
+      "id": "montgomery-trent",
+      "name": "Trent Montgomery",
+      "subtitle": "The Lacrosse Bro",
+      "narratives": [
+        "stardust-engine"
+      ],
+      "tags": [
+        "<i class=\"fa-solid fa-cake-candles me-1\"></i> 1977 (approx)",
+        "<i class=\"fa-solid fa-building-columns me-1\"></i> the university of the piedmont",
+        "<i class=\"fa-solid fa-ban me-1\"></i> exiled"
+      ],
+      "image_path": "shiloh/images/thumbnails/piedmont/trent-montgomery-thumb.jpg",
+      "markdown_file": "montgomery-trent.md",
+      "is_public": true
+    },
+    {
+      "id": "evans-courtney",
+      "name": "Courtney Evans",
+      "subtitle": "The Ex-Girlfriend",
+      "narratives": [
+        "stardust-engine"
+      ],
+      "tags": [
+        "<i class=\"fa-solid fa-cake-candles me-1\"></i> july 23, 1981",
+        "<i class=\"fa-solid fa-ruler-vertical me-1\"></i> 5'3\"",
+        "<i class=\"fa-solid fa-school me-1\"></i> northwood high (1999)",
+        "<i class=\"fa-solid fa-ban me-1\"></i> exiled"
+      ],
+      "image_path": "shiloh/images/thumbnails/northwood/courtney-evans-thumb.jpg",
+      "markdown_file": "evans-courtney.md",
+      "is_public": true
+    },
+    {
+      "id": "demarco-mrs",
+      "name": "Mrs Demarco",
+      "subtitle": "",
+      "narratives": [
+        "stardust-engine"
+      ],
+      "tags": [],
+      "image_path": "shiloh/images/characters/northwood/mrs-demarco.jpg",
+      "markdown_file": "demarco-mrs.md",
+      "is_public": true
+    },
+    {
+      "id": "manning-claire",
+      "name": "Claire Manning",
+      "subtitle": "",
+      "narratives": [
+        "stardust-engine"
+      ],
+      "tags": [],
+      "image_path": "fractured-prisms/images/siblings/claire-portrait.jpg",
+      "markdown_file": "manning-claire.md",
+      "is_public": true
+    },
+    {
+      "id": "miller-rachel",
+      "name": "Rachel Miller",
+      "subtitle": "Profile Data",
+      "narratives": [
+        "stardust-engine"
+      ],
+      "tags": [],
+      "image_path": "shiloh/images/thumbnails/family/miller/peter/rachel-miller-thumb.jpg",
+      "markdown_file": "miller-rachel.md",
+      "is_public": true
+    },
+    {
+      "id": "pelletier-elise",
+      "name": "Elise Pelletier",
+      "subtitle": "Profile Data",
+      "narratives": [
+        "stardust-engine"
+      ],
+      "tags": [],
+      "image_path": "shiloh/images/family/elise-pelletier-thumb.jpg",
+      "markdown_file": "pelletier-elise.md",
+      "is_public": true
+    },
+    {
+      "id": "brooks-shiloh",
+      "name": "Shiloh Brooks",
+      "subtitle": "Profile Data",
+      "narratives": [
+        "stardust-engine"
+      ],
+      "tags": [],
+      "image_path": "shiloh/images/thumbnails/family/brooks/casper/shiloh-brooks-thumb.jpg",
+      "markdown_file": "brooks-shiloh.md",
+      "is_public": true
+    },
+    {
+      "id": "wright-tyler",
+      "name": "Tyler Wright",
+      "subtitle": "",
+      "narratives": [
+        "stardust-engine"
+      ],
+      "tags": [],
+      "image_path": "",
+      "markdown_file": "wright-tyler.md",
+      "is_public": true
+    },
+    {
+      "id": "brooks-chloe",
+      "name": "Chloe Brooks",
+      "subtitle": "Profile Data",
+      "narratives": [
+        "stardust-engine"
+      ],
+      "tags": [],
+      "image_path": "shiloh/images/thumbnails/family/brooks/casper/chloe-brooks-thumb.jpg",
+      "markdown_file": "brooks-chloe.md",
+      "is_public": true
+    },
+    {
+      "id": "miller-linda",
+      "name": "\"Linda Miller\"",
+      "subtitle": "Unknown Role",
+      "narratives": [
+        "stardust-engine"
+      ],
+      "tags": [],
+      "image_path": "",
+      "markdown_file": "miller-linda.md",
+      "is_public": true
+    },
+    {
+      "id": "barnes-jessica",
+      "name": "Jessica Barnes",
+      "subtitle": "Unknown Role",
+      "narratives": [
+        "stardust-engine"
+      ],
+      "tags": [],
+      "image_path": "",
+      "markdown_file": "barnes-jessica.md",
+      "is_public": true
+    },
+    {
+      "id": "miller-peter",
+      "name": "\"Peter Miller\"",
+      "subtitle": "Unknown Role",
+      "narratives": [
+        "stardust-engine"
+      ],
+      "tags": [],
+      "image_path": "",
+      "markdown_file": "miller-peter.md",
+      "is_public": true
+    },
+    {
+      "id": "brooks-casper",
+      "name": "\"Casper Brooks\"",
+      "subtitle": "Unknown Role",
+      "narratives": [
+        "stardust-engine"
+      ],
+      "tags": [],
+      "image_path": "",
+      "markdown_file": "brooks-casper.md",
+      "is_public": true
+    },
+    {
+      "id": "sullivan-chelsea",
+      "name": "Chelsea Sullivan",
+      "subtitle": "Unknown Role",
+      "narratives": [
+        "stardust-engine"
+      ],
+      "tags": [],
+      "image_path": "",
+      "markdown_file": "sullivan-chelsea.md",
+      "is_public": true
+    },
+    {
+      "id": "parker-elizabeth",
+      "name": "Elizabeth Parker",
+      "subtitle": "Unknown Role",
+      "narratives": [
+        "stardust-engine"
+      ],
+      "tags": [],
+      "image_path": "",
+      "markdown_file": "parker-elizabeth.md",
+      "is_public": true
+    },
+    {
+      "id": "davis-rachel",
+      "name": "Rachel Davis",
+      "subtitle": "Unknown Role",
+      "narratives": [
+        "stardust-engine"
+      ],
+      "tags": [],
+      "image_path": "",
+      "markdown_file": "davis-rachel.md",
+      "is_public": true
+    },
+    {
+      "id": "april",
+      "name": "April Mercer",
+      "subtitle": "Unknown Role",
+      "narratives": [
+        "stardust-engine"
+      ],
+      "tags": [],
+      "image_path": "",
+      "markdown_file": "april.md",
+      "is_public": true
+    },
+    {
+      "id": "delaney-meredith",
+      "name": "Meredith Delaney",
+      "subtitle": "Unknown Role",
+      "narratives": [
+        "stardust-engine"
+      ],
+      "tags": [],
+      "image_path": "",
+      "markdown_file": "delaney-meredith.md",
+      "is_public": true
+    },
+    {
+      "id": "ragsdale-jessica",
+      "name": "Jessica Ragsdale",
+      "subtitle": "Unknown Role",
+      "narratives": [
+        "stardust-engine"
+      ],
+      "tags": [],
+      "image_path": "",
+      "markdown_file": "ragsdale-jessica.md",
+      "is_public": true
+    },
+    {
+      "id": "patterson-david",
+      "name": "David Patterson",
+      "subtitle": "Unknown Role",
+      "narratives": [
+        "stardust-engine"
+      ],
+      "tags": [],
+      "image_path": "",
+      "markdown_file": "patterson-david.md",
+      "is_public": true
+    },
+    {
+      "id": "bennett-lauren",
+      "name": "Lauren Bennett",
+      "subtitle": "Unknown Role",
+      "narratives": [
+        "stardust-engine"
+      ],
+      "tags": [],
+      "image_path": "",
+      "markdown_file": "bennett-lauren.md",
+      "is_public": true
+    },
+    {
+      "id": "washington-jasmine",
+      "name": "Jasmine Washington",
+      "subtitle": "Unknown Role",
+      "narratives": [
+        "stardust-engine"
+      ],
+      "tags": [],
+      "image_path": "",
+      "markdown_file": "washington-jasmine.md",
+      "is_public": true
+    },
+    {
+      "id": "brooks-katrina",
+      "name": "\"Dr. Katrina Brooks\"",
+      "subtitle": "Unknown Role",
+      "narratives": [
+        "stardust-engine"
+      ],
+      "tags": [],
+      "image_path": "",
+      "markdown_file": "brooks-katrina.md",
+      "is_public": true
+    },
+    {
+      "id": "hayes-meredith",
+      "name": "Meredith Hayes",
+      "subtitle": "Unknown Role",
+      "narratives": [
+        "stardust-engine"
+      ],
+      "tags": [],
+      "image_path": "",
+      "markdown_file": "hayes-meredith.md",
+      "is_public": true
+    },
+    {
+      "id": "sullivan-piper",
+      "name": "Piper Sullivan",
+      "subtitle": "Unknown Role",
+      "narratives": [
+        "stardust-engine"
+      ],
+      "tags": [],
+      "image_path": "",
+      "markdown_file": "sullivan-piper.md",
+      "is_public": true
+    },
+    {
+      "id": "miller-david",
+      "name": "\"David Miller\"",
+      "subtitle": "Unknown Role",
+      "narratives": [
+        "stardust-engine"
+      ],
+      "tags": [],
+      "image_path": "",
+      "markdown_file": "miller-david.md",
+      "is_public": true
+    },
+    {
+      "id": "williams-ashley",
+      "name": "Ashley Williams",
+      "subtitle": "Unknown Role",
+      "narratives": [
+        "stardust-engine"
+      ],
+      "tags": [],
+      "image_path": "",
+      "markdown_file": "williams-ashley.md",
+      "is_public": true
+    },
+    {
+      "id": "mitchell-amber",
+      "name": "Amber Mitchell",
+      "subtitle": "Unknown Role",
+      "narratives": [
+        "stardust-engine"
+      ],
+      "tags": [],
+      "image_path": "",
+      "markdown_file": "mitchell-amber.md",
+      "is_public": true
+    },
+    {
+      "id": "kowalski-vera",
+      "name": "Vera Kowalski (Antagonist)",
+      "subtitle": "Unknown Role",
+      "narratives": [
+        "stardust-engine"
+      ],
+      "tags": [],
+      "image_path": "",
+      "markdown_file": "kowalski-vera.md",
+      "is_public": true
+    },
+    {
+      "id": "miller-susan",
+      "name": "\"Susan Miller\"",
+      "subtitle": "Unknown Role",
+      "narratives": [
+        "stardust-engine"
+      ],
+      "tags": [],
+      "image_path": "",
+      "markdown_file": "miller-susan.md",
+      "is_public": true
+    },
+    {
+      "id": "ragsdale-rachel",
+      "name": "Rachel Ragsdale",
+      "subtitle": "Unknown Role",
+      "narratives": [
+        "stardust-engine"
+      ],
+      "tags": [],
+      "image_path": "",
+      "markdown_file": "ragsdale-rachel.md",
+      "is_public": true
+    },
+    {
+      "id": "cydele",
+      "name": "Cydele",
+      "subtitle": "Unknown Role",
+      "narratives": [
+        "stardust-engine"
+      ],
+      "tags": [],
+      "image_path": "",
+      "markdown_file": "cydele.md",
+      "is_public": true
+    },
+    {
+      "id": "clark-amanda",
+      "name": "Amanda Clark",
+      "subtitle": "Unknown Role",
+      "narratives": [
+        "stardust-engine"
+      ],
+      "tags": [],
+      "image_path": "",
+      "markdown_file": "clark-amanda.md",
+      "is_public": true
+    },
+    {
+      "id": "mahone-delores",
+      "name": "Delores Mahone",
+      "subtitle": "Unknown Role",
+      "narratives": [
+        "stardust-engine"
+      ],
+      "tags": [],
+      "image_path": "",
+      "markdown_file": "mahone-delores.md",
+      "is_public": true
+    },
+    {
+      "id": "hughes-samantha",
+      "name": "Samantha Hughes",
+      "subtitle": "Unknown Role",
+      "narratives": [
+        "stardust-engine"
+      ],
+      "tags": [],
+      "image_path": "",
+      "markdown_file": "hughes-samantha.md",
+      "is_public": true
+    },
+    {
+      "id": "hayes-justin",
+      "name": "Justin Hayes",
+      "subtitle": "Unknown Role",
+      "narratives": [
+        "stardust-engine"
+      ],
+      "tags": [],
+      "image_path": "",
+      "markdown_file": "hayes-justin.md",
+      "is_public": true
+    },
+    {
+      "id": "morgan-danielle",
+      "name": "Danielle Morgan",
+      "subtitle": "Unknown Role",
+      "narratives": [
+        "stardust-engine"
+      ],
+      "tags": [],
+      "image_path": "",
+      "markdown_file": "morgan-danielle.md",
+      "is_public": true
+    },
+    {
+      "id": "jenkins-taylor",
+      "name": "Taylor Jenkins",
+      "subtitle": "Unknown Role",
+      "narratives": [
+        "stardust-engine"
+      ],
+      "tags": [],
+      "image_path": "",
+      "markdown_file": "jenkins-taylor.md",
+      "is_public": true
+    },
+    {
+      "id": "brooks-alyssa",
+      "name": "Alyssa Brooks",
+      "subtitle": "Unknown Role",
+      "narratives": [
+        "stardust-engine"
+      ],
+      "tags": [],
+      "image_path": "",
+      "markdown_file": "brooks-alyssa.md",
+      "is_public": true
+    },
+    {
+      "id": "rios-amaya",
+      "name": "Amaya Rios",
+      "subtitle": "Unknown Role",
+      "narratives": [
+        "stardust-engine"
+      ],
+      "tags": [],
+      "image_path": "",
+      "markdown_file": "rios-amaya.md",
+      "is_public": true
+    },
+    {
+      "id": "torres-brittany",
+      "name": "Brittany Torres",
+      "subtitle": "Unknown Role",
+      "narratives": [
+        "stardust-engine"
+      ],
+      "tags": [],
+      "image_path": "",
+      "markdown_file": "torres-brittany.md",
+      "is_public": true
+    },
+    {
+      "id": "ragsdale-michael",
+      "name": "Michael Ragsdale",
+      "subtitle": "Unknown Role",
+      "narratives": [
+        "stardust-engine"
+      ],
+      "tags": [],
+      "image_path": "",
+      "markdown_file": "ragsdale-michael.md",
+      "is_public": true
+    },
+    {
+      "id": "ashley",
+      "name": "Ashley",
+      "subtitle": "Unknown Role",
+      "narratives": [
+        "stardust-engine"
+      ],
+      "tags": [],
+      "image_path": "",
+      "markdown_file": "ashley.md",
+      "is_public": true
+    },
+    {
+      "id": "vance-julian",
+      "name": "Julian Vance",
+      "subtitle": "Unknown Role",
+      "narratives": [
+        "stardust-engine"
+      ],
+      "tags": [],
+      "image_path": "",
+      "markdown_file": "vance-julian.md",
+      "is_public": true
+    },
+    {
+      "id": "lawson-victoria",
+      "name": "Victoria Lawson",
+      "subtitle": "Unknown Role",
+      "narratives": [
+        "stardust-engine"
+      ],
+      "tags": [],
+      "image_path": "",
+      "markdown_file": "lawson-victoria.md",
+      "is_public": true
+    },
+    {
+      "id": "delaney-morgan",
+      "name": "Morgan Delaney",
+      "subtitle": "Unknown Role",
+      "narratives": [
+        "stardust-engine"
+      ],
+      "tags": [],
+      "image_path": "",
+      "markdown_file": "delaney-morgan.md",
+      "is_public": true
+    },
+    {
+      "id": "kevin",
+      "name": "Kevin",
+      "subtitle": "Unknown Role",
+      "narratives": [
+        "stardust-engine"
+      ],
+      "tags": [],
+      "image_path": "",
+      "markdown_file": "kevin.md",
+      "is_public": true
+    },
+    {
+      "id": "foster-nichole",
+      "name": "Nichole Foster",
+      "subtitle": "Unknown Role",
+      "narratives": [
+        "stardust-engine"
+      ],
+      "tags": [],
+      "image_path": "",
+      "markdown_file": "foster-nichole.md",
+      "is_public": true
+    },
+    {
+      "id": "reed-stephanie",
+      "name": "Stephanie Reed",
+      "subtitle": "Unknown Role",
+      "narratives": [
+        "stardust-engine"
+      ],
+      "tags": [],
+      "image_path": "",
+      "markdown_file": "reed-stephanie.md",
+      "is_public": true
+    },
+    {
+      "id": "kate",
+      "name": "Kate",
+      "subtitle": "Unknown Role",
+      "narratives": [
+        "stardust-engine"
+      ],
+      "tags": [],
+      "image_path": "",
+      "markdown_file": "kate.md",
       "is_public": true
     }
   ]

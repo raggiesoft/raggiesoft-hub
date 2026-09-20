@@ -87,7 +87,7 @@ $articleSchema = [
         </div>
     </div>
 
-    <div id="restricted-content" class="d-none fade-in">
+    <div id="restricted-content" class="d-none">
         
         <div class="text-center mb-5">
             <wa-badge variant="danger" class="rounded-pill shadow-sm mb-3 text-uppercase letter-spacing-1" style="--wa-badge-padding: 0.5rem 1rem;">
@@ -175,7 +175,6 @@ function unlockContent() {
     document.getElementById('content-gate').classList.add('d-none');
     const content = document.getElementById('restricted-content');
     content.classList.remove('d-none');
-    content.classList.add('animate-fade-in'); 
     window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 </script>

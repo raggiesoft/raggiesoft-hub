@@ -135,7 +135,11 @@ $articleSchema = [
                         <div slot="header" class="bg-danger text-white fw-bold p-3 border-bottom border-danger">
                             <i class="fa-duotone fa-bolt me-2"></i>The Breaking Point
                         </div>
-                        <div class="d-flex flex-column justify-content-center h-100">
+                        <img src="<?php echo $cdnBaseUrl; ?>/stardust-engine/images/story/shattered-lens.jpg" 
+                            class="card-img-top p-0 border-bottom border-danger" 
+                            style="aspect-ratio: 1/1; object-fit: cover;"
+                            alt="A shattered camera lens on a dark warehouse floor illuminated by red emergency lights.">
+                        <div class="d-flex flex-column justify-content-center h-100 p-3">
                             <h6 class="fw-bold text-white">"Shot 12"</h6>
                             <p class="card-text small text-white-50">
                                 Disgusted by the wheelchair and rejecting Cassidy's artwork as "childish," Vance attempted to force his original plan. He ordered the photographer to set up "Shot 12"—a demand for Ryan and Cassidy to simulate a highly explicit, sexual act on camera.
