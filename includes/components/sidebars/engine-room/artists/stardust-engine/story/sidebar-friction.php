@@ -44,6 +44,9 @@ $currentUri = $_SERVER['REQUEST_URI'] ?? '';
             <i slot="start" class="fa-duotone fa-compact-disc"></i> 1989: Neon Hearts
         </wa-button>
     
+        <wa-button appearance="plain" href="/engine-room/artists/stardust-engine/story/crash-of-90" class="text-body w-100 text-start justify-content-start" style="text-align: left;">
+            <i slot="start" class="fa-duotone fa-car-burst"></i> The Crash of 1990
+        </wa-button>
     
         <wa-button appearance="plain" href="/engine-room/artists/stardust-engine/discography/1995-the-warehouse-tapes" class="text-body w-100 text-start justify-content-start" style="text-align: left;">
             <i slot="start" class="fa-duotone fa-compact-disc"></i> 1995: Warehouse Tapes

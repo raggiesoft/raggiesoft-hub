@@ -28,7 +28,7 @@ $pageTitle = "The Crash of '90 - The Stardust Engine Lore";
             <div class="card bg-body-tertiary border-danger shadow-lg">
                 <div class="card-header bg-danger bg-opacity-10 text-danger-emphasis border-bottom border-danger fw-bold d-flex justify-content-between align-items-center">
                     <span><i class="fa-duotone fa-file-medical-alt me-2 text-danger"></i>Virginia State Police // Report #90-81-114</span>
-                    <span class="badge bg-danger text-white border border-danger">CRITICAL</span>
+                    <wa-badge variant="danger">CRITICAL</wa-badge>
                 </div>
                 <div class="card-body font-monospace small text-body-secondary p-4">
                     <div class="row mb-3 opacity-75">
@@ -64,13 +64,13 @@ $pageTitle = "The Crash of '90 - The Stardust Engine Lore";
 
     <div class="row justify-content-center mb-5">
         <div class="col-lg-8">
-            <div class="card bg-body border-secondary shadow-lg p-3 transform-rotate-1">
+            <wa-card class="bg-body border-secondary shadow-lg transform-rotate-1 p-0">
                 <img src="<?php echo $cdnBaseUrl; ?>/stardust-engine/images/story/crash-of-1990.jpg" 
                     class="card-img-top border border-secondary" 
                     alt="Ryan O'Connell in his wheelchair at Star City General Hospital, surrounded by Cassidy, Holly, and the Wright twins. December 18, 1990."
                     style="filter: sepia(20%) contrast(1.1);">
                     
-                <div class="card-body text-center pt-3 pb-0">
+                <div class="text-center p-3">
                     <p class="font-monospace text-danger small fw-bold mb-1" style="font-family: 'Courier New', monospace; letter-spacing: 1px;">
                         DEC 18 '90 // STAR CITY GENERAL
                     </p>
@@ -80,7 +80,7 @@ $pageTitle = "The Crash of '90 - The Stardust Engine Lore";
                         But the girls begged for a walk. He's pushing through for them."
                     </p>
                 </div>
-            </div>
+            </wa-card>
         </div>
     </div>
 
@@ -97,11 +97,11 @@ $pageTitle = "The Crash of '90 - The Stardust Engine Lore";
         </div>
 
         <div class="col-md-6 mb-4">
-            <div class="card h-100 bg-body-tertiary border-secondary shadow-sm">
-                <div class="card-header bg-secondary bg-opacity-10 text-body-emphasis fw-bold">
+            <wa-card class="h-100 w-100 bg-body-tertiary border-secondary shadow-sm p-0">
+                <div slot="header" class="bg-secondary bg-opacity-10 text-body-emphasis fw-bold p-3 border-bottom border-secondary">
                     <i class="fa-duotone fa-clock me-2 text-primary"></i>The "Iron Dome" (Morning Routine)
                 </div>
-                <div class="card-body">
+                <div class="p-3">
                     <p class="card-text text-body-secondary small">
                         Spontaneity died on I-81. Ryan requires 60 minutes every morning for a strict <strong>Bowel Program</strong>. Because his body can no longer regulate this automatically, it must be manually triggered on a strict schedule to prevent accidents.
                     </p>
@@ -109,15 +109,15 @@ $pageTitle = "The Crash of '90 - The Stardust Engine Lore";
                         <strong>Holly's Role:</strong> She enforces the "Iron Dome." No interviews, no load-ins, no visitors before 10:00 AM. The tour bus does not move during this hour.
                     </p>
                 </div>
-            </div>
+            </wa-card>
         </div>
 
         <div class="col-md-6 mb-4">
-            <div class="card h-100 bg-body-tertiary border-secondary shadow-sm">
-                <div class="card-header bg-secondary bg-opacity-10 text-body-emphasis fw-bold">
+            <wa-card class="h-100 w-100 bg-body-tertiary border-secondary shadow-sm p-0">
+                <div slot="header" class="bg-secondary bg-opacity-10 text-body-emphasis fw-bold p-3 border-bottom border-secondary">
                     <i class="fa-duotone fa-glass-water me-2 text-info"></i>The 4-Hour Clock (Hydration)
                 </div>
-                <div class="card-body">
+                <div class="p-3">
                     <p class="card-text text-body-secondary small">
                         Ryan manages his bladder via Intermittent Catheterization (IC) every 4 hours. If he waits too long, he risks kidney damage or <strong>Autonomic Dysreflexia</strong> (a life-threatening blood pressure spike).
                     </p>
@@ -125,15 +125,15 @@ $pageTitle = "The Crash of '90 - The Stardust Engine Lore";
                         <strong>The Logic:</strong> He constantly calculates water intake vs. showtime. On the 1990s tour buses, this meant relying on discreet urinals in his bunk, often assisted by Cassidy or Holly when his hands were too tired from playing.
                     </p>
                 </div>
-            </div>
+            </wa-card>
         </div>
 
         <div class="col-md-6 mb-4">
-            <div class="card h-100 bg-body-tertiary border-secondary shadow-sm">
-                <div class="card-header bg-secondary bg-opacity-10 text-body-emphasis fw-bold">
+            <wa-card class="h-100 w-100 bg-body-tertiary border-secondary shadow-sm p-0">
+                <div slot="header" class="bg-secondary bg-opacity-10 text-body-emphasis fw-bold p-3 border-bottom border-secondary">
                     <i class="fa-duotone fa-loveseat me-2 text-warning"></i>The Pressure Clock
                 </div>
-                <div class="card-body">
+                <div class="p-3">
                     <p class="card-text text-body-secondary small">
                         If Ryan sits still for >2 hours, skin tissue dies (pressure sores). He must perform a "weight shift" (lifting himself off the seat) every 15 minutes.
                     </p>
@@ -141,15 +141,15 @@ $pageTitle = "The Crash of '90 - The Stardust Engine Lore";
                         <strong>Cassidy's Role:</strong> She is his "Spotter." During interviews or studio sessions, she watches the clock. A subtle tap on his shoulder is their code: <em>"Lift."</em> She also handles the nightly skin checks, looking for red spots that Ryan cannot feel or see.
                     </p>
                 </div>
-            </div>
+            </wa-card>
         </div>
 
         <div class="col-md-6 mb-4">
-            <div class="card h-100 bg-body-tertiary border-secondary shadow-sm">
-                <div class="card-header bg-secondary bg-opacity-10 text-body-emphasis fw-bold">
+            <wa-card class="h-100 w-100 bg-body-tertiary border-secondary shadow-sm p-0">
+                <div slot="header" class="bg-secondary bg-opacity-10 text-body-emphasis fw-bold p-3 border-bottom border-secondary">
                     <i class="fa-duotone fa-stairs me-2 text-danger"></i>The "Freight Dog" Reality
                 </div>
-                <div class="card-body">
+                <div class="p-3">
                     <p class="card-text text-body-secondary small">
                         The ADA passed in 1990, but venues in 1991 didn't care. Stages were inaccessible. Ryan often entered venues through loading docks and freight elevators, hauled up alongside the gear.
                     </p>
@@ -157,19 +157,19 @@ $pageTitle = "The Crash of '90 - The Stardust Engine Lore";
                         <strong>The Twins' Role:</strong> Evan and Tyler developed a synchronized two-man lift to carry Ryan and his chair up fire escapes and narrow stairwells. They became his legs.
                     </p>
                 </div>
-            </div>
+            </wa-card>
         </div>
 
     </div>
 
     <div class="row mt-5">
         <div class="col-12 text-center">
-            <a href="/engine-room/artists/stardust-engine/band/ryan-oconnell" class="btn btn-outline-secondary rounded-pill px-4 mb-3 mb-md-0">
+            <wa-button variant="neutral" outline href="/engine-room/artists/stardust-engine/band/ryan-oconnell" class="rounded-pill px-4 mb-3 mb-md-0">
                 <i class="fa-duotone fa-user me-2"></i>Return to Ryan's Bio
-            </a>
-            <a href="/engine-room/artists/stardust-engine/story/friction" class="btn btn-outline-danger rounded-pill px-4 ms-md-3">
+            </wa-button>
+            <wa-button variant="danger" outline href="/engine-room/artists/stardust-engine/story/friction" class="rounded-pill px-4 ms-md-3">
                 <i class="fa-duotone fa-forward me-2"></i>Next: The Friction Scandal (1992)
-            </a>
+            </wa-button>
         </div>
     </div>
 
