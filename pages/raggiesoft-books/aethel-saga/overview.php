@@ -68,7 +68,7 @@ $cover_art = $cdnBaseUrl . '/engine-room-records/artists/firelight/2025-silver-g
                     he was a construct of pure, radiant energy, his skin glowing with the heat of a young star."
                 </blockquote>
                 <div class="text-end mt-4">
-                    <a href="/raggiesoft-books/aethel-saga/era-1/book-1/chapter-01" class="icon-link icon-link-hover text-body-emphasis text-decoration-none">
+                    <a href="/raggiesoft-books/books/aethel/b001/c001/p001" class="icon-link icon-link-hover text-body-emphasis text-decoration-none">
                         Read "The Architect's Lesson"
                         <i class="bi bi-arrow-right"></i>
                     </a>
