@@ -43,14 +43,12 @@ $imagesJson = htmlspecialchars(json_encode($heroImages), ENT_QUOTES, 'UTF-8');
         overflow: hidden;
         width: 100%;
         background-color: #000;
-        min-height: 400px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        min-height: 100vh;
+        padding-bottom: 50px;
     }
 
     .hero-bg-layer {
-        position: absolute;
+        position: fixed;
         top: 0;
         left: 0;
         width: 100%;
@@ -95,11 +93,9 @@ $imagesJson = htmlspecialchars(json_encode($heroImages), ENT_QUOTES, 'UTF-8');
                 </p>
             </div>
         </div>
-    </div>
-</div>
-<script src="<?php echo $cdnBaseUrl; ?>/common/js/hero-image.js"></script>
 
-<div class="container pb-5">
+        <!-- Move cards inside content-wrapper -->
+        <div class="container pb-5 mt-5">
 
     <div class="row g-4 justify-content-center">
         <?php
@@ -165,4 +161,6 @@ $imagesJson = htmlspecialchars(json_encode($heroImages), ENT_QUOTES, 'UTF-8');
         endif;
         ?>
     </div>
-</div>
+</div> <!-- End content-wrapper -->
+</div> <!-- End immersive-container -->
+<script src="<?php echo $cdnBaseUrl; ?>/common/js/hero-image.js"></script>
