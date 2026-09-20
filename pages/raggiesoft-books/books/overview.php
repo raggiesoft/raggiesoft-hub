@@ -47,10 +47,10 @@
                 $fallback = substr($fallback, 0, 2);
                 if (empty($fallback)) $fallback = '??';
                 
-                // Specific cover art overrides
+                // Determine cover art
                 $imgSrc = $cdnBaseUrl . '/raggiesoft-books/images/logos/oceanview-archives.svg';
-                if ($slug === 'crimson-node') {
-                    $imgSrc = $cdnBaseUrl . '/engine-room-records/artists/crimson-node/2002-crimson-node/album-art.jpg';
+                if (!empty($book['image'])) {
+                    $imgSrc = $cdnBaseUrl . $book['image'];
                 }
         ?>
             <div class="col-md-6 col-lg-4">
