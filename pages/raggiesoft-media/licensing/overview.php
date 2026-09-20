@@ -70,7 +70,7 @@ $pageTitle = "Master Licensing Portal | RaggieSoft Media";
         <wa-card class="bg-hud-blue h-100 w-100 shadow-sm transition-base hover-lift" style="--border-color: var(--raggie-glass-border);">
             <div slot="header" class="p-4 border-bottom" style="border-color: var(--raggie-glass-border) !important;">
                 <div class="d-flex align-items-center">
-                    <i class="fa-brands fa-github fa-2x me-3 text-primary" aria-hidden="true" style="filter: drop-shadow(0 2px 4px rgba(0,130,230,0.4));"></i>
+                    <i class="fa-brands fa-osi fa-2x me-3 text-primary" aria-hidden="true" style="filter: drop-shadow(0 2px 4px rgba(0,130,230,0.4));"></i>
                     <div>
                         <h2 class="h5 mb-0 fw-bold text-uppercase text-body-emphasis">The Architecture</h2>
                         <span class="d-block text-secondary font-monospace small">Code, Scripts, & Systems</span>
