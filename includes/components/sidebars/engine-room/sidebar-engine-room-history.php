@@ -7,7 +7,7 @@
     
     <!-- DIRECTORY NAVIGATION -->
     <div class="wa-theme-dark mb-4" data-bs-theme="dark">
-        <wa-card class="rounded-0 border-secondary shadow-sm w-100" style="--wa-panel-bg: #212529; --body-padding: 0; --header-padding: 0;">
+        <wa-card class="bg-dark text-white rounded-0 border-secondary shadow-sm w-100" style="--wa-panel-background-color: #212529; --body-padding: 0; --header-padding: 0;">
             <div slot="header" class="bg-black text-white fw-bold text-uppercase border-bottom border-danger font-monospace small px-3 py-2">
                 <i class="fa-solid fa-folder-tree me-2"></i> Archive Directory
             </div>
@@ -24,7 +24,7 @@
 
     <!-- DECLASSIFIED CASE FILES -->
     <div class="wa-theme-dark mb-4" data-bs-theme="dark">
-        <wa-card class="rounded-0 border-secondary shadow-sm w-100" style="--wa-panel-bg: #212529; --body-padding: 0; --header-padding: 0;">
+        <wa-card class="bg-dark text-white rounded-0 border-secondary shadow-sm w-100" style="--wa-panel-background-color: #212529; --body-padding: 0; --header-padding: 0;">
             <div slot="header" class="bg-black text-white fw-bold text-uppercase border-bottom border-secondary font-monospace small px-3 py-2">
                 <i class="fa-solid fa-folder-open me-2"></i> Case Files
             </div>

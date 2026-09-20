@@ -19,7 +19,7 @@ $base_path = $cdnBaseUrl . "/engine-room-records/artists";
 
     <!-- 1. REAL WORLD INFRASTRUCTURE -->
     <div class="wa-theme-dark w-100 mb-5" data-bs-theme="dark">
-        <wa-card class="border-secondary shadow-lg w-100" style="--wa-panel-bg: #212529; --body-padding: 0; --header-padding: 0;">
+        <wa-card class="bg-dark text-white border-secondary shadow-lg w-100" style="--wa-panel-background-color: #212529; --body-padding: 0; --header-padding: 0;">
             <div slot="header" class="bg-black border-secondary d-flex justify-content-between align-items-center py-3 px-4">
                 <h5 class="mb-0 text-uppercase font-monospace text-info">
                     <i class="fa-duotone fa-server me-2" aria-hidden="true"></i>Real-World Infrastructure
