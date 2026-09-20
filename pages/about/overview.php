@@ -33,7 +33,7 @@ $imagesJson = htmlspecialchars(json_encode($heroImages), ENT_QUOTES, 'UTF-8');
     <div class="content-wrapper container py-5">
         
         <div class="text-center mb-5">
-            <img src= $cdnBaseUrl . "/raggiesoft-corporate/images/logo/raggiesoft-logo.png" 
+            <img src="<?php echo $cdnBaseUrl; ?>/raggiesoft-corporate/images/logo/raggiesoft-logo.png" 
                 alt="RaggieSoft" 
                 class="mb-3 opacity-75 logo-white-glow"
                 style="width: 80px; height: 80px; object-fit: contain;">
@@ -123,7 +123,7 @@ $imagesJson = htmlspecialchars(json_encode($heroImages), ENT_QUOTES, 'UTF-8');
             <div class="col-lg-3 col-md-6">
                 <a href="/about/family" class="card glass-card h-100 text-decoration-none hover-lift border-info transition-all">
                     <div class="card-body text-center">
-                        <img src= $cdnBaseUrl . "/family/images/logos/logo-family.png" 
+                        <img src="<?php echo $cdnBaseUrl; ?>/family/images/logos/logo-family.png" 
                              class="rounded-circle mb-3 border border-info shadow-sm" width="60" height="60" alt="Family">
                         <h5 class="fw-bold text-white mb-2">The Family</h5>
                         <p class="small text-white-50 mb-0">Personified DevOps & Emotional Support Constructs.</p>
@@ -134,7 +134,7 @@ $imagesJson = htmlspecialchars(json_encode($heroImages), ENT_QUOTES, 'UTF-8');
             <div class="col-lg-3 col-md-6">
                 <a href="/about/stardust-engine" class="card glass-card h-100 text-decoration-none hover-lift border-primary transition-all">
                     <div class="card-body text-center">
-                        <img src= $cdnBaseUrl . "/engine-room-records/artists/the-stardust-engine/band-logo.png" 
+                        <img src="<?php echo $cdnBaseUrl; ?>/engine-room-records/artists/the-stardust-engine/band-logo.png" 
                              class="mb-3" width="60" height="60" style="object-fit: contain;" alt="Stardust">
                         <h5 class="fw-bold text-white mb-2">Stardust Engine</h5>
                         <p class="small text-white-50 mb-0">80s Synth-Rock Narrative Universe.</p>
@@ -145,7 +145,7 @@ $imagesJson = htmlspecialchars(json_encode($heroImages), ENT_QUOTES, 'UTF-8');
             <div class="col-lg-3 col-md-6">
                 <a href="/about/aethel" class="card glass-card h-100 text-decoration-none hover-lift border-warning transition-all">
                     <div class="card-body text-center">
-                        <img src= $cdnBaseUrl . "/aethel/images/logos/silver-gauntlet-of-aethel-logo.png" 
+                        <img src="<?php echo $cdnBaseUrl; ?>/aethel/images/logos/silver-gauntlet-of-aethel-logo.png" 
                              class="mb-3" width="60" height="60" style="object-fit: contain;" alt="Aethel">
                         <h5 class="fw-bold text-warning mb-2">Aethel Saga</h5>
                         <p class="small text-white-50 mb-0">High Fantasy Adventure Series.</p>
@@ -156,7 +156,7 @@ $imagesJson = htmlspecialchars(json_encode($heroImages), ENT_QUOTES, 'UTF-8');
             <div class="col-lg-3 col-md-6">
                 <a href="/about/engine-room" class="card glass-card h-100 text-decoration-none hover-lift border-danger transition-all">
                     <div class="card-body text-center">
-                        <img src= $cdnBaseUrl . "/engine-room-records/images/logos/engine-room-records-logo.png" 
+                        <img src="<?php echo $cdnBaseUrl; ?>/engine-room-records/images/logos/engine-room-records-logo.png" 
                              class="rounded-circle mb-3 border border-danger shadow-sm logo-invert" width="60" height="60" alt="Engine Room">
                         <h5 class="fw-bold text-danger mb-2">Engine Room</h5>
                         <p class="small text-white-50 mb-0">Fictional Industrial Record Label.</p>
@@ -196,7 +196,7 @@ $imagesJson = htmlspecialchars(json_encode($heroImages), ENT_QUOTES, 'UTF-8');
     </div>
 </div>
 
-<script src= $cdnBaseUrl . "/common/js/hero-image.js"></script>
+<script src="<?php echo $cdnBaseUrl; ?>/common/js/hero-image.js"></script>
 
 <style>
     /* CRITICAL: Immersive Container Logic 

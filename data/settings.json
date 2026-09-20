@@ -1,7 +1,7 @@
 {
   "siteName": "RaggieSoft",
   "projectSlug": "raggiesoft-corporate",
-  "cdnBaseUrl": "",
+  "cdnBaseUrl": "https://assets.raggiesoft.com",
   "defaultTheme": "light",
   "brandFont": [
     "Roboto",

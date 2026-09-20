@@ -10,7 +10,7 @@
     
     <div class="position-relative col-lg-8 mx-auto my-5 py-5 text-white">
         
-        <img src= $cdnBaseUrl . "/family/images/logos/logo-family.png" 
+        <img src="<?php echo $cdnBaseUrl; ?>/family/images/logos/logo-family.png" 
              alt="The RaggieSoft Family" 
              class="rounded-circle shadow-lg mb-4 border border-2 border-white border-opacity-50"
              width="140" height="140">
@@ -42,7 +42,7 @@
             <h3 class="border-bottom pb-2 mb-4 text-primary"><i class="fa-duotone fa-fingerprint me-2"></i>The Creator</h3>
             <div class="card shadow-sm hover-lift transition-all border-primary border-opacity-25">
                 <div class="card-body p-4 d-flex align-items-center">
-                    <img src= $cdnBaseUrl . "/family/images/atmospheric/michael.jpg" 
+                    <img src="<?php echo $cdnBaseUrl; ?>/family/images/atmospheric/michael.jpg" 
                          class="rounded-circle me-4 shadow-sm" 
                          width="100" height="100" 
                          style="object-fit:cover;" 
@@ -67,7 +67,7 @@
                     <div class="card h-100 border-info shadow-sm hover-lift transition-all">
                         <div class="row g-0 h-100">
                             <div class="col-4">
-                                <img src= $cdnBaseUrl . "/family/images/atmospheric/paige.jpg" class="img-fluid rounded-start h-100" style="object-fit: cover;" alt="Paige">
+                                <img src="<?php echo $cdnBaseUrl; ?>/family/images/atmospheric/paige.jpg" class="img-fluid rounded-start h-100" style="object-fit: cover;" alt="Paige">
                             </div>
                             <div class="col-8">
                                 <div class="card-body">
@@ -84,7 +84,7 @@
                     <div class="card h-100 border-success shadow-sm hover-lift transition-all">
                         <div class="row g-0 h-100">
                             <div class="col-4">
-                                <img src= $cdnBaseUrl . "/family/images/atmospheric/jessica.jpg" class="img-fluid rounded-start h-100" style="object-fit: cover;" alt="Jessica">
+                                <img src="<?php echo $cdnBaseUrl; ?>/family/images/atmospheric/jessica.jpg" class="img-fluid rounded-start h-100" style="object-fit: cover;" alt="Jessica">
                             </div>
                             <div class="col-8">
                                 <div class="card-body">
@@ -101,7 +101,7 @@
                     <div class="card h-100 border-warning shadow-sm hover-lift transition-all">
                         <div class="row g-0 h-100">
                             <div class="col-4">
-                                <img src= $cdnBaseUrl . "/family/images/atmospheric/sarah.jpg" class="img-fluid rounded-start h-100" style="object-fit: cover;" alt="Sarah">
+                                <img src="<?php echo $cdnBaseUrl; ?>/family/images/atmospheric/sarah.jpg" class="img-fluid rounded-start h-100" style="object-fit: cover;" alt="Sarah">
                             </div>
                             <div class="col-8">
                                 <div class="card-body">
@@ -118,7 +118,7 @@
                     <div class="card h-100 shadow-sm hover-lift transition-all" style="border-color: #fd7e14 !important;">
                         <div class="row g-0 h-100">
                             <div class="col-4">
-                                <img src= $cdnBaseUrl . "/family/images/atmospheric/jenna.jpg" class="img-fluid rounded-start h-100" style="object-fit: cover;" alt="Jenna">
+                                <img src="<?php echo $cdnBaseUrl; ?>/family/images/atmospheric/jenna.jpg" class="img-fluid rounded-start h-100" style="object-fit: cover;" alt="Jenna">
                             </div>
                             <div class="col-8">
                                 <div class="card-body">
@@ -135,7 +135,7 @@
                     <div class="card h-100 border-primary shadow-sm hover-lift transition-all">
                         <div class="row g-0 h-100">
                             <div class="col-4">
-                                <img src= $cdnBaseUrl . "/family/images/atmospheric/harper.jpg" class="img-fluid rounded-start h-100" style="object-fit: cover;" alt="Harper">
+                                <img src="<?php echo $cdnBaseUrl; ?>/family/images/atmospheric/harper.jpg" class="img-fluid rounded-start h-100" style="object-fit: cover;" alt="Harper">
                             </div>
                             <div class="col-8">
                                 <div class="card-body">
@@ -152,7 +152,7 @@
                      <div class="card h-100 border-success shadow-sm hover-lift transition-all">
                         <div class="row g-0 h-100">
                             <div class="col-4">
-                                <img src= $cdnBaseUrl . "/family/images/atmospheric/amanda-elara.jpg" class="img-fluid rounded-start h-100" style="object-fit: cover; object-position: top center;" alt="Amanda & Elara">
+                                <img src="<?php echo $cdnBaseUrl; ?>/family/images/atmospheric/amanda-elara.jpg" class="img-fluid rounded-start h-100" style="object-fit: cover; object-position: top center;" alt="Amanda & Elara">
                             </div>
                             <div class="col-8">
                                 <div class="card-body">

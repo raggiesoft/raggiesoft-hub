@@ -28,7 +28,7 @@ $pageTitle = "Claire Manning - The Residents | Fractured Prisms";
                     <div class="row g-0">
                         <div class="col-md-5 mb-4 mb-md-0">
                             <div class="polaroid-prism">
-                                <img src= $cdnBaseUrl . "/fractured-prisms/images/siblings/claire-portrait.jpg" 
+                                <img src="<?php echo $cdnBaseUrl; ?>/fractured-prisms/images/siblings/claire-portrait.jpg" 
                                      alt="A degraded, sepia-toned 1983 photograph of Claire Manning holding a wooden flute.">
                                 <div class="polaroid-caption text-center" aria-hidden="true">
                                     Archive: C. Manning, 1983

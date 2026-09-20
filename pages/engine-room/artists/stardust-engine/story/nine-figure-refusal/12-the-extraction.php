@@ -82,7 +82,7 @@ $pageTitle = "The Extraction - Evidence Item #03";
 
             <div class="card bg-black border-secondary mb-4 overflow-hidden shadow-lg">
                 <div class="position-relative">
-                    <img src= $cdnBaseUrl . "/engine-room-records/images/omni-global/cassidy-extraction.jpg" 
+                    <img src="<?php echo $cdnBaseUrl; ?>/engine-room-records/images/omni-global/cassidy-extraction.jpg" 
                          class="img-fluid w-100 opacity-75" 
                          alt="Security footage (10:25 AM). Evan and Tyler Wright carrying a sobbing Cassidy O'Connell down the executive hallway toward the camera. Holly walks confidently in the lead with a briefcase. Ryan O'Connell follows in his wheelchair. Omni-Global staff watch from the background."
                          style="filter: contrast(1.1) sepia(0.2);">

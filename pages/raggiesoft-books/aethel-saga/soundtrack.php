@@ -225,7 +225,7 @@ $art_2017 = $cdnBaseUrl . '/engine-room-records/artists/firelight/2025-silver-ga
             
             <div class="col-md-6 col-lg-3">
                 <div class="polaroid">
-                    <img src= $cdnBaseUrl . "/aethel/images/Gemini_Generated_Image_w9qi0lw9qi0lw9qi.jpg" alt="Miniature Shadowspire Set">
+                    <img src="<?php echo $cdnBaseUrl; ?>/aethel/images/Gemini_Generated_Image_w9qi0lw9qi0lw9qi.jpg" alt="Miniature Shadowspire Set">
                     <div class="polaroid-caption text-center">
                         Shadowspire Miniature.<br>Stage 4. Forced perspective.
                     </div>
@@ -234,7 +234,7 @@ $art_2017 = $cdnBaseUrl . '/engine-room-records/artists/firelight/2025-silver-ga
 
             <div class="col-md-6 col-lg-3">
                 <div class="polaroid">
-                    <img src= $cdnBaseUrl . "/aethel/images/Gemini_Generated_Image_vf0harvf0harvf0h.jpg" alt="Gloomwraith Suit">
+                    <img src="<?php echo $cdnBaseUrl; ?>/aethel/images/Gemini_Generated_Image_vf0harvf0harvf0h.jpg" alt="Gloomwraith Suit">
                     <div class="polaroid-caption text-center">
                         Gloomwraith suit test.<br>110°F inside the rubber.
                     </div>
@@ -243,7 +243,7 @@ $art_2017 = $cdnBaseUrl . '/engine-room-records/artists/firelight/2025-silver-ga
 
             <div class="col-md-6 col-lg-3">
                 <div class="polaroid">
-                    <img src= $cdnBaseUrl . "/aethel/images/Gemini_Generated_Image_wivr1zwivr1zwivr.jpg" alt="Optical Effects The Void">
+                    <img src="<?php echo $cdnBaseUrl; ?>/aethel/images/Gemini_Generated_Image_wivr1zwivr1zwivr.jpg" alt="Optical Effects The Void">
                     <div class="polaroid-caption text-center">
                         The Void.<br>Pure optical double-exposure.
                     </div>
@@ -252,7 +252,7 @@ $art_2017 = $cdnBaseUrl . '/engine-room-records/artists/firelight/2025-silver-ga
 
             <div class="col-md-6 col-lg-3">
                 <div class="polaroid">
-                    <img src= $cdnBaseUrl . "/aethel/images/Gemini_Generated_Image_9ojtk49ojtk49ojt.jpg" alt="The Iron Heart Set">
+                    <img src="<?php echo $cdnBaseUrl; ?>/aethel/images/Gemini_Generated_Image_9ojtk49ojtk49ojt.jpg" alt="The Iron Heart Set">
                     <div class="polaroid-caption text-center">
                         The Iron Heart.<br>Built from actual industrial scrap.
                     </div>

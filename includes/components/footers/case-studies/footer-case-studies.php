@@ -7,7 +7,7 @@
             
             <div class="col-lg-5 col-md-6">
                 <a href="/case-studies" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
-                    <img src= $cdnBaseUrl . "/raggiesoft-corporate/images/logo/raggiesoft-logo.png" 
+                    <img src="<?php echo $cdnBaseUrl; ?>/raggiesoft-corporate/images/logo/raggiesoft-logo.png" 
                          alt="RaggieSoft Logo" width="40" height="40" class="me-2 navbar-brand-raggiesoft">
                     <span class="fs-5 fw-bold text-uppercase brand-font">RaggieSoft Archives</span>
                 </a>

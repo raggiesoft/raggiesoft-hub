@@ -21,8 +21,8 @@ $pageTitle = "The University of the Piedmont - Crimson Node";
         <!-- Trent Montgomery -->
         <div class="col-md-6 col-lg-4">
             <div class="card h-100 border-0 shadow-sm" style="border-top: 5px solid #ff7900;">
-                <a href= $cdnBaseUrl . "/shiloh/images/characters/piedmont/trent-montgomery.jpg" target="_blank">
-                    <img src= $cdnBaseUrl . "/shiloh/images/thumbnails/piedmont/trent-montgomery-thumb.jpg" class="card-img-top rounded-0" alt="Portrait of Trent Montgomery" style="aspect-ratio: 1/1; object-fit: cover; object-position: center top;">
+                <a href="<?php echo $cdnBaseUrl; ?>/shiloh/images/characters/piedmont/trent-montgomery.jpg" target="_blank">
+                    <img src="<?php echo $cdnBaseUrl; ?>/shiloh/images/thumbnails/piedmont/trent-montgomery-thumb.jpg" class="card-img-top rounded-0" alt="Portrait of Trent Montgomery" style="aspect-ratio: 1/1; object-fit: cover; object-position: center top;">
                 </a>
                 <div class="card-body">
                     <h4 class="card-title fw-bold">Trent Montgomery</h4>

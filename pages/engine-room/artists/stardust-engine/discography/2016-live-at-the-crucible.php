@@ -36,7 +36,7 @@ $albumSchema = [
     <div class="row align-items-center my-5">
         
         <div class="col-md-5 mb-4 mb-md-0 position-relative">
-            <img src= $cdnBaseUrl . "<?php echo $album_art; ?>" 
+            <img src="<?php echo $cdnBaseUrl; ?><?php echo $album_art; ?>" 
                  class="img-fluid rounded shadow-lg border border-danger border-3" 
                  alt="Live at The Crucible Album Art">
             <div class="position-absolute bottom-0 end-0 m-3">

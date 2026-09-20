@@ -10,8 +10,8 @@
     <!-- Quick Stats Sidebar Area -->
     <div class="col-lg-4 mb-4 mb-lg-0">
         <!-- Portrait Image -->
-        <a href= $cdnBaseUrl . "/shiloh/images/characters/family/brooks/casper/jessica-brooks.jpg" target="_blank" class="d-block mb-4">
-            <img src= $cdnBaseUrl . "/shiloh/images/thumbnails/family/brooks/casper/jessica-brooks-thumb.jpg" alt="Portrait of Jessica Brooks" class="img-fluid rounded shadow-sm  w-100">
+        <a href="<?php echo $cdnBaseUrl; ?>/shiloh/images/characters/family/brooks/casper/jessica-brooks.jpg" target="_blank" class="d-block mb-4">
+            <img src="<?php echo $cdnBaseUrl; ?>/shiloh/images/thumbnails/family/brooks/casper/jessica-brooks-thumb.jpg" alt="Portrait of Jessica Brooks" class="img-fluid rounded shadow-sm  w-100">
         </a>
         <div class="card border-0 shadow-sm" style="border-top: 5px solid #0dcaf0;">
             <div class="card-body bg-body-tertiary">

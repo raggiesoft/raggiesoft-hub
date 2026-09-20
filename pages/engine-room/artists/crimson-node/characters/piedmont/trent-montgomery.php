@@ -19,7 +19,7 @@ $pageTitle = "Trent Montgomery - Crimson Node";
             
             <!-- Character Header -->
             <div class="d-flex flex-column flex-md-row align-items-md-center border-bottom pb-4 mb-4">
-                <img src= $cdnBaseUrl . "/shiloh/images/thumbnails/piedmont/trent-montgomery-thumb.jpg" 
+                <img src="<?php echo $cdnBaseUrl; ?>/shiloh/images/thumbnails/piedmont/trent-montgomery-thumb.jpg" 
                      alt="Trent Montgomery" 
                      class="rounded shadow-sm mb-3 mb-md-0 me-md-4" 
                      style="width: 150px; height: 150px; object-fit: cover;">

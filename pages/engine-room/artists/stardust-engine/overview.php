@@ -65,7 +65,7 @@ if ($eras) {
         <div class="row g-0 align-items-center">
             
             <div class="col-lg-6 d-none d-lg-block">
-                <img src= $cdnBaseUrl . "/stardust-engine/images/band-members/family-portraits/artist-header-oconnell.jpg" 
+                <img src="<?php echo $cdnBaseUrl; ?>/stardust-engine/images/band-members/family-portraits/artist-header-oconnell.jpg" 
                      alt="Ryan, Cassidy, and Holly O'Connell in the studio" 
                      class="img-fluid h-100 object-fit-cover rounded-start"
                      style="min-height: 400px;">
@@ -80,7 +80,7 @@ if ($eras) {
                     The complete, uncompromised discography of The Stardust Engine has officially cleared the global distribution network. Support the family and stream their entire catalog.
                 </p>
                 
-                <img src= $cdnBaseUrl . "/stardust-engine/images/band-members/family-portraits/artist-header-oconnell.jpg" 
+                <img src="<?php echo $cdnBaseUrl; ?>/stardust-engine/images/band-members/family-portraits/artist-header-oconnell.jpg" 
                      alt="The O'Connell Family" 
                      class="img-fluid rounded mb-4 d-block d-lg-none shadow-sm border border-secondary">
 
@@ -140,7 +140,7 @@ if ($eras) {
     <div class="card bg-transparent border-primary shadow-glow overflow-hidden" style="border-width: 2px;">
         <div class="row g-0">
             <div class="col-md-5 d-flex align-items-center justify-content-center p-4 position-relative" style="background: radial-gradient(circle at center, rgba(13, 202, 240, 0.15) 0%, rgba(0,0,0,0) 70%);">
-                <img src= $cdnBaseUrl . "/raggiesoft-corporate/images/fw/engineroom-records/stardust-engine/err-fw-stardust-store.jpg" 
+                <img src="<?php echo $cdnBaseUrl; ?>/raggiesoft-corporate/images/fw/engineroom-records/stardust-engine/err-fw-stardust-store.jpg" 
                      alt="The Stardust Engine Official Merchandise" 
                      class="img-fluid rounded shadow-lg"
                      style="max-height: 300px;">
@@ -194,7 +194,7 @@ if ($eras) {
             <a href="/engine-room/artists/stardust-engine/discography/2003-moon-1-sanctuary-zero-g" class="text-decoration-none">
                 <div class="card bg-transparent h-100 shadow-glow hover-lift w-100 overflow-hidden" style="border: 1px solid var(--wa-color-brand);">
                     <div class="position-relative">
-                        <img src= $cdnBaseUrl . "/engine-room-records/artists/the-stardust-engine/2003-sanctuary-zero-g/album-art.jpg" 
+                        <img src="<?php echo $cdnBaseUrl; ?>/engine-room-records/artists/the-stardust-engine/2003-sanctuary-zero-g/album-art.jpg" 
                              class="w-100 border-bottom border-info" 
                              alt="Sanctuary (Zero-G) Album Art - The Stardust Engine">
                         <div class="position-absolute top-0 end-0 p-3">
@@ -216,7 +216,7 @@ if ($eras) {
             <a href="/engine-room/artists/stardust-engine/discography/2003-moon-2-mile-marker-98" class="text-decoration-none">
                 <div class="card bg-transparent h-100 shadow-glow hover-lift w-100 overflow-hidden" style="border: 1px solid var(--wa-color-danger);">
                     <div class="position-relative">
-                        <img src= $cdnBaseUrl . "/engine-room-records/artists/the-stardust-engine/2003-mile-marker-98/album-art.jpg" 
+                        <img src="<?php echo $cdnBaseUrl; ?>/engine-room-records/artists/the-stardust-engine/2003-mile-marker-98/album-art.jpg" 
                              class="w-100 border-bottom border-danger" 
                              alt="Mile Marker 98 Album Art - The Stardust Engine">
                         <div class="position-absolute top-0 end-0 p-3">

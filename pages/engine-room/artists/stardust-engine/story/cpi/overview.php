@@ -18,7 +18,7 @@ $pageTitle = "About CPI & The Forgers - The Stardust Engine";
     <!-- Hero Image: The Crucible -->
     <div class="text-center mb-5">
         <figure class="figure">
-            <img src= $cdnBaseUrl . "/engine-room-records/artists/the-stardust-engine/2016-live-at-the-crucible/album-art.jpg" 
+            <img src="<?php echo $cdnBaseUrl; ?>/engine-room-records/artists/the-stardust-engine/2016-live-at-the-crucible/album-art.jpg" 
                  class="figure-img img-fluid rounded shadow-lg border-glow" 
                  alt="The Crucible stadium at night, packed with fans.">
             <figcaption class="figure-caption text-muted fst-italic mt-2">

@@ -21,8 +21,8 @@ $pageTitle = "CCC Campus - Crimson Node";
         <!-- Heather Bouchard -->
         <div class="col-md-6 col-lg-4">
             <div class="card h-100 border-0 shadow-sm" style="border-top: 5px solid var(--bs-purple);">
-                <a href= $cdnBaseUrl . "/shiloh/images/characters/ccc/bouchard/heather-bouchard.jpg" target="_blank">
-                    <img src= $cdnBaseUrl . "/shiloh/images/thumbnails/ccc/bouchard/heather-bouchard-thumb.jpg" class="card-img-top rounded-0" alt="Portrait of Heather Bouchard" style="aspect-ratio: 1/1; object-fit: cover; object-position: center top;">
+                <a href="<?php echo $cdnBaseUrl; ?>/shiloh/images/characters/ccc/bouchard/heather-bouchard.jpg" target="_blank">
+                    <img src="<?php echo $cdnBaseUrl; ?>/shiloh/images/thumbnails/ccc/bouchard/heather-bouchard-thumb.jpg" class="card-img-top rounded-0" alt="Portrait of Heather Bouchard" style="aspect-ratio: 1/1; object-fit: cover; object-position: center top;">
                 </a>
                 <div class="card-body">
                     <h4 class="card-title fw-bold">Heather Bouchard</h4>
@@ -36,8 +36,8 @@ $pageTitle = "CCC Campus - Crimson Node";
         <!-- Hailey Bouchard -->
         <div class="col-md-6 col-lg-4">
             <div class="card h-100 border-0 shadow-sm" style="border-top: 5px solid var(--bs-indigo);">
-                <a href= $cdnBaseUrl . "/shiloh/images/characters/ccc/bouchard/hailey-bouchard.jpg" target="_blank">
-                    <img src= $cdnBaseUrl . "/shiloh/images/thumbnails/ccc/bouchard/hailey-bouchard-thumb.jpg" class="card-img-top rounded-0" alt="Portrait of Hailey Bouchard" style="aspect-ratio: 1/1; object-fit: cover; object-position: center top;">
+                <a href="<?php echo $cdnBaseUrl; ?>/shiloh/images/characters/ccc/bouchard/hailey-bouchard.jpg" target="_blank">
+                    <img src="<?php echo $cdnBaseUrl; ?>/shiloh/images/thumbnails/ccc/bouchard/hailey-bouchard-thumb.jpg" class="card-img-top rounded-0" alt="Portrait of Hailey Bouchard" style="aspect-ratio: 1/1; object-fit: cover; object-position: center top;">
                 </a>
                 <div class="card-body">
                     <h4 class="card-title fw-bold">Hailey Bouchard</h4>

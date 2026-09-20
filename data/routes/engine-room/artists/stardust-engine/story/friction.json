@@ -10,10 +10,10 @@
     "footer": "engine-room/artists/stardust-engine/footer-stardust",
     "showSidebar": true,
     "sidebar": "engine-room/artists/stardust-engine/story/sidebar-friction",
-    "navbarBrandLogo": "<?php echo $cdnBaseUrl; ?>/engine-room-records/artists/the-stardust-engine/band-logo.png",
+    "navbarBrandLogo": "/engine-room-records/artists/the-stardust-engine/band-logo.png",
     "navbarBrandText": "<span class=\"d-none d-md-inline\">The </span>Stardust Engine",
     "navbarBrandLink": "/engine-room/artists/stardust-engine",
-    "ogImage": "<?php echo $cdnBaseUrl; ?>/stardust-engine/images/story/friction-photoshoot.jpg"
+    "ogImage": "/stardust-engine/images/story/friction-photoshoot.jpg"
   },
   "/engine-room/artists/stardust-engine/story/friction": {
     "view": "pages/engine-room/artists/stardust-engine/story/friction/overview",

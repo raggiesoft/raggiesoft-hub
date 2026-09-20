@@ -8,7 +8,7 @@
             
             <div class="col-lg-4 text-center text-lg-start">
                 <a href="/engine-room/artists/stardust-engine" class="d-inline-block mb-3">
-                    <img src= $cdnBaseUrl . "/engine-room-records/artists/the-stardust-engine/band-logo.png" 
+                    <img src="<?php echo $cdnBaseUrl; ?>/engine-room-records/artists/the-stardust-engine/band-logo.png" 
                          alt="The Stardust Engine" 
                          class="img-fluid drop-shadow-neon logo-invert" 
                          style="max-height: 80px;">
@@ -47,7 +47,7 @@
             <div class="col-lg-3 col-md-4 text-center text-md-start">
                 <h6 class="text-uppercase fw-bold mb-3 " style="letter-spacing: 1px;">Management</h6>
                 <a href="/engine-room" class="d-inline-block mb-2">
-                    <img src= $cdnBaseUrl . "/engine-room-records/images/logos/engine-room-records-logo.png" 
+                    <img src="<?php echo $cdnBaseUrl; ?>/engine-room-records/images/logos/engine-room-records-logo.png" 
                         alt="Engine Room Records" 
                         class="logo-invert"
                         style="height: 35px; opacity: 0.7; transition: opacity 0.3s ease;">

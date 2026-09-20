@@ -37,7 +37,7 @@ $customPageAssets = [
                 <div class="card-body p-5 text-center">
                     
                     <div class="mb-4">
-                        <img src= $cdnBaseUrl . "/stardust-engine/images/stardust-engine-logo.png" 
+                        <img src="<?php echo $cdnBaseUrl; ?>/stardust-engine/images/stardust-engine-logo.png" 
                              alt="Stardust Insignia" 
                              class="img-fluid rounded-circle border border-secondary p-1 shadow-lg mb-4"
                              style="width: 100px; height: 100px;">

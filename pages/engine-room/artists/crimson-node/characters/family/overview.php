@@ -21,8 +21,8 @@ $pageTitle = "The Phalanx - Crimson Node";
         <!-- Matt Miller -->
         <div class="col-md-6 col-lg-4">
             <div class="card h-100 border-0 shadow-sm" style="border-top: 5px solid #dc3545;">
-                <a href= $cdnBaseUrl . "/shiloh/images/characters/family/miller/david/matt-miller.jpg" target="_blank">
-                    <img src= $cdnBaseUrl . "/shiloh/images/thumbnails/family/miller/david/matt-miller-thumb.jpg" class="card-img-top rounded-0" alt="Portrait of Matt Miller" style="aspect-ratio: 1/1; object-fit: cover; object-position: center top;">
+                <a href="<?php echo $cdnBaseUrl; ?>/shiloh/images/characters/family/miller/david/matt-miller.jpg" target="_blank">
+                    <img src="<?php echo $cdnBaseUrl; ?>/shiloh/images/thumbnails/family/miller/david/matt-miller-thumb.jpg" class="card-img-top rounded-0" alt="Portrait of Matt Miller" style="aspect-ratio: 1/1; object-fit: cover; object-position: center top;">
                 </a>
                 <div class="card-body">
                     <h4 class="card-title fw-bold">Matt Miller</h4>
@@ -36,8 +36,8 @@ $pageTitle = "The Phalanx - Crimson Node";
         <!-- Sarah Miller -->
         <div class="col-md-6 col-lg-4">
             <div class="card h-100 border-0 shadow-sm" style="border-top: 5px solid #0d6efd;">
-                <a href= $cdnBaseUrl . "/shiloh/images/characters/family/miller/david/sarah-miller.jpg" target="_blank">
-                    <img src= $cdnBaseUrl . "/shiloh/images/thumbnails/family/miller/david/sarah-miller-thumb.jpg" class="card-img-top rounded-0" alt="Portrait of Sarah Miller" style="aspect-ratio: 1/1; object-fit: cover; object-position: center top;">
+                <a href="<?php echo $cdnBaseUrl; ?>/shiloh/images/characters/family/miller/david/sarah-miller.jpg" target="_blank">
+                    <img src="<?php echo $cdnBaseUrl; ?>/shiloh/images/thumbnails/family/miller/david/sarah-miller-thumb.jpg" class="card-img-top rounded-0" alt="Portrait of Sarah Miller" style="aspect-ratio: 1/1; object-fit: cover; object-position: center top;">
                 </a>
                 <div class="card-body">
                     <h4 class="card-title fw-bold">Sarah Miller</h4>
@@ -51,8 +51,8 @@ $pageTitle = "The Phalanx - Crimson Node";
         <!-- Shiloh Brooks -->
         <div class="col-md-6 col-lg-4">
             <div class="card h-100 border-0 shadow-sm" style="border-top: 5px solid #0d6efd;">
-                <a href= $cdnBaseUrl . "/shiloh/images/characters/family/brooks/casper/shiloh-brooks.jpg" target="_blank">
-                    <img src= $cdnBaseUrl . "/shiloh/images/thumbnails/family/brooks/casper/shiloh-brooks-thumb.jpg" class="card-img-top rounded-0" alt="Portrait of Shiloh Brooks" style="aspect-ratio: 1/1; object-fit: cover; object-position: center top;">
+                <a href="<?php echo $cdnBaseUrl; ?>/shiloh/images/characters/family/brooks/casper/shiloh-brooks.jpg" target="_blank">
+                    <img src="<?php echo $cdnBaseUrl; ?>/shiloh/images/thumbnails/family/brooks/casper/shiloh-brooks-thumb.jpg" class="card-img-top rounded-0" alt="Portrait of Shiloh Brooks" style="aspect-ratio: 1/1; object-fit: cover; object-position: center top;">
                 </a>
                 <div class="card-body">
                     <h4 class="card-title fw-bold">Shiloh Brooks</h4>
@@ -66,8 +66,8 @@ $pageTitle = "The Phalanx - Crimson Node";
         <!-- Emily Miller -->
         <div class="col-md-6 col-lg-4">
             <div class="card h-100 border-0 shadow-sm" style="border-top: 5px solid #ffc107;">
-                <a href= $cdnBaseUrl . "/shiloh/images/characters/family/miller/peter/emily-miller.jpg" target="_blank">
-                    <img src= $cdnBaseUrl . "/shiloh/images/thumbnails/family/miller/peter/emily-miller-thumb.jpg" class="card-img-top rounded-0" alt="Portrait of Emily Miller" style="aspect-ratio: 1/1; object-fit: cover; object-position: center top;">
+                <a href="<?php echo $cdnBaseUrl; ?>/shiloh/images/characters/family/miller/peter/emily-miller.jpg" target="_blank">
+                    <img src="<?php echo $cdnBaseUrl; ?>/shiloh/images/thumbnails/family/miller/peter/emily-miller-thumb.jpg" class="card-img-top rounded-0" alt="Portrait of Emily Miller" style="aspect-ratio: 1/1; object-fit: cover; object-position: center top;">
                 </a>
                 <div class="card-body">
                     <h4 class="card-title fw-bold">Emily Miller</h4>
@@ -81,8 +81,8 @@ $pageTitle = "The Phalanx - Crimson Node";
         <!-- Jessica Brooks -->
         <div class="col-md-6 col-lg-4">
             <div class="card h-100 border-0 shadow-sm" style="border-top: 5px solid #0dcaf0;">
-                <a href= $cdnBaseUrl . "/shiloh/images/characters/family/brooks/casper/jessica-brooks.jpg" target="_blank">
-                    <img src= $cdnBaseUrl . "/shiloh/images/thumbnails/family/brooks/casper/jessica-brooks-thumb.jpg" class="card-img-top rounded-0" alt="Portrait of Jessica Brooks" style="aspect-ratio: 1/1; object-fit: cover; object-position: center top;">
+                <a href="<?php echo $cdnBaseUrl; ?>/shiloh/images/characters/family/brooks/casper/jessica-brooks.jpg" target="_blank">
+                    <img src="<?php echo $cdnBaseUrl; ?>/shiloh/images/thumbnails/family/brooks/casper/jessica-brooks-thumb.jpg" class="card-img-top rounded-0" alt="Portrait of Jessica Brooks" style="aspect-ratio: 1/1; object-fit: cover; object-position: center top;">
                 </a>
                 <div class="card-body">
                     <h4 class="card-title fw-bold">Jessica Brooks</h4>
@@ -96,8 +96,8 @@ $pageTitle = "The Phalanx - Crimson Node";
         <!-- Rachel Miller -->
         <div class="col-md-6 col-lg-4">
             <div class="card h-100 border-0 shadow-sm" style="border-top: 5px solid #198754;">
-                <a href= $cdnBaseUrl . "/shiloh/images/characters/family/miller/peter/rachel-miller.jpg" target="_blank">
-                    <img src= $cdnBaseUrl . "/shiloh/images/thumbnails/family/miller/peter/rachel-miller-thumb.jpg" class="card-img-top rounded-0" alt="Portrait of Rachel Miller" style="aspect-ratio: 1/1; object-fit: cover; object-position: center top;">
+                <a href="<?php echo $cdnBaseUrl; ?>/shiloh/images/characters/family/miller/peter/rachel-miller.jpg" target="_blank">
+                    <img src="<?php echo $cdnBaseUrl; ?>/shiloh/images/thumbnails/family/miller/peter/rachel-miller-thumb.jpg" class="card-img-top rounded-0" alt="Portrait of Rachel Miller" style="aspect-ratio: 1/1; object-fit: cover; object-position: center top;">
                 </a>
                 <div class="card-body">
                     <h4 class="card-title fw-bold">Rachel Miller</h4>
@@ -111,8 +111,8 @@ $pageTitle = "The Phalanx - Crimson Node";
         <!-- Chloe Brooks -->
         <div class="col-md-6 col-lg-4">
             <div class="card h-100 border-0 shadow-sm" style="border-top: 5px solid #6c757d;">
-                <a href= $cdnBaseUrl . "/shiloh/images/characters/family/brooks/casper/chloe-brooks.jpg" target="_blank">
-                    <img src= $cdnBaseUrl . "/shiloh/images/thumbnails/family/brooks/casper/chloe-brooks-thumb.jpg" class="card-img-top rounded-0" alt="Portrait of Chloe Brooks" style="aspect-ratio: 1/1; object-fit: cover; object-position: center top;">
+                <a href="<?php echo $cdnBaseUrl; ?>/shiloh/images/characters/family/brooks/casper/chloe-brooks.jpg" target="_blank">
+                    <img src="<?php echo $cdnBaseUrl; ?>/shiloh/images/thumbnails/family/brooks/casper/chloe-brooks-thumb.jpg" class="card-img-top rounded-0" alt="Portrait of Chloe Brooks" style="aspect-ratio: 1/1; object-fit: cover; object-position: center top;">
                 </a>
                 <div class="card-body">
                     <h4 class="card-title fw-bold">Chloe Brooks</h4>
@@ -128,8 +128,8 @@ $pageTitle = "The Phalanx - Crimson Node";
             <div class="card h-100 border-0 shadow-sm overflow-hidden" style="border-top: 5px solid #212529;">
                 <div class="row g-0 h-100">
                     <div class="col-md-5 col-lg-4">
-                        <a href= $cdnBaseUrl . "/shiloh/images/characters/ccc/pelletier/elise-elodie-pelletier.jpg" target="_blank" class="d-block h-100">
-                            <img src= $cdnBaseUrl . "/shiloh/images/thumbnails/ccc/pelletier/elise-elodie-pelletier-thumb.jpg" class="img-fluid" alt="Portrait of Elise & Elodie Pelletier" style="width: 100%; height: 100%; object-fit: cover; object-position: center top; min-height: 250px;">
+                        <a href="<?php echo $cdnBaseUrl; ?>/shiloh/images/characters/ccc/pelletier/elise-elodie-pelletier.jpg" target="_blank" class="d-block h-100">
+                            <img src="<?php echo $cdnBaseUrl; ?>/shiloh/images/thumbnails/ccc/pelletier/elise-elodie-pelletier-thumb.jpg" class="img-fluid" alt="Portrait of Elise & Elodie Pelletier" style="width: 100%; height: 100%; object-fit: cover; object-position: center top; min-height: 250px;">
                         </a>
                     </div>
                     <div class="col-md-7 col-lg-8">

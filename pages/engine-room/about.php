@@ -141,35 +141,35 @@ $pageTitle = "About Engine Room Records - The Fortress";
             <div class="row g-3 justify-content-center">
                 <div class="col-md-2 col-4">
                     <a href="/engine-room/artists/stardust-engine/band/holly-oconnell" class="text-decoration-none">
-                        <img src= $cdnBaseUrl . "/stardust-engine/images/band-members/holly.jpg" class="img-fluid rounded-circle border border-2 border-primary mb-2 shadow-glow" alt="Holly">
+                        <img src="<?php echo $cdnBaseUrl; ?>/stardust-engine/images/band-members/holly.jpg" class="img-fluid rounded-circle border border-2 border-primary mb-2 shadow-glow" alt="Holly">
                         <h6 class="text-white small fw-bold text-uppercase">Holly</h6>
                         <span class="d-block x-small text-muted">CEO / Legal</span>
                     </a>
                 </div>
                 <div class="col-md-2 col-4">
                     <a href="/engine-room/artists/stardust-engine/band/ryan-oconnell" class="text-decoration-none">
-                        <img src= $cdnBaseUrl . "/stardust-engine/images/band-members/ryan.jpg" class="img-fluid rounded-circle border border-2 border-warning mb-2" alt="Ryan">
+                        <img src="<?php echo $cdnBaseUrl; ?>/stardust-engine/images/band-members/ryan.jpg" class="img-fluid rounded-circle border border-2 border-warning mb-2" alt="Ryan">
                         <h6 class="text-white small fw-bold text-uppercase">Ryan</h6>
                         <span class="d-block x-small text-muted">Creative Dir.</span>
                     </a>
                 </div>
                 <div class="col-md-2 col-4">
                     <a href="/engine-room/artists/stardust-engine/band/cassidy-oconnell" class="text-decoration-none">
-                        <img src= $cdnBaseUrl . "/stardust-engine/images/band-members/cassidy.jpg" class="img-fluid rounded-circle border border-2 border-warning mb-2" alt="Cassidy">
+                        <img src="<?php echo $cdnBaseUrl; ?>/stardust-engine/images/band-members/cassidy.jpg" class="img-fluid rounded-circle border border-2 border-warning mb-2" alt="Cassidy">
                         <h6 class="text-white small fw-bold text-uppercase">Cassidy</h6>
                         <span class="d-block x-small text-muted">A&R / Design</span>
                     </a>
                 </div>
                  <div class="col-md-2 col-4">
                     <a href="/engine-room/artists/stardust-engine/band/evan-wright" class="text-decoration-none">
-                        <img src= $cdnBaseUrl . "/stardust-engine/images/band-members/evan.jpg" class="img-fluid rounded-circle border border-2 border-secondary mb-2" alt="Evan">
+                        <img src="<?php echo $cdnBaseUrl; ?>/stardust-engine/images/band-members/evan.jpg" class="img-fluid rounded-circle border border-2 border-secondary mb-2" alt="Evan">
                         <h6 class="text-white small fw-bold text-uppercase">Evan</h6>
                         <span class="d-block x-small text-muted">Operations / IT</span>
                     </a>
                 </div>
                  <div class="col-md-2 col-4">
                     <a href="/engine-room/artists/stardust-engine/band/tyler-wright" class="text-decoration-none">
-                        <img src= $cdnBaseUrl . "/stardust-engine/images/band-members/tyler.jpg" class="img-fluid rounded-circle border border-2 border-secondary mb-2" alt="Tyler">
+                        <img src="<?php echo $cdnBaseUrl; ?>/stardust-engine/images/band-members/tyler.jpg" class="img-fluid rounded-circle border border-2 border-secondary mb-2" alt="Tyler">
                         <h6 class="text-white small fw-bold text-uppercase">Tyler</h6>
                         <span class="d-block x-small text-muted">Logistics</span>
                     </a>

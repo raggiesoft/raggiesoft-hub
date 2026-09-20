@@ -3,7 +3,7 @@
         <div class="row gy-4">
             
             <div class="col-lg-3 col-md-6 text-center text-md-start">
-                <img src= $cdnBaseUrl . "/engine-room-records/images/logos/engine-room-records-logo.png" 
+                <img src="<?php echo $cdnBaseUrl; ?>/engine-room-records/images/logos/engine-room-records-logo.png" 
                      alt="Engine Room Records" 
                      width="120" 
                      class="navbar-brand-corporate-img mb-3"> 

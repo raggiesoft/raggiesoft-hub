@@ -76,7 +76,7 @@ $pageTitle = "The Jessica Miller Center - Universal Design & Workplace Equity";
             <div class="card shadow-sm overflow-hidden border-0 bg-body-tertiary">
                 <div class="row g-0">
                     <div class="col-md-4 position-relative">
-                        <img src= $cdnBaseUrl . "/stardust-engine/images/corporate/jessica-miller.jpg" 
+                        <img src="<?php echo $cdnBaseUrl; ?>/stardust-engine/images/corporate/jessica-miller.jpg" 
                              class="img-fluid h-100 object-fit-cover" 
                              alt="Jessica Miller, Executive Director, sitting in a wheelchair at an adjustable desk overlooking the Hollywood Hills.">
                         

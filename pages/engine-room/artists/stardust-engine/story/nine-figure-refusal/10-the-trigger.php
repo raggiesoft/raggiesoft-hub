@@ -142,7 +142,7 @@ $pageTitle = "The Trigger: Slide 14 - Evidence Item #1";
                     </div>
 
                 </div>
-                <img src= $cdnBaseUrl . "/engine-room-records/images/logos/engine-room-records-logo.png" class="slide-watermark" style="filter: grayscale(100%); mix-blend-mode: multiply;">
+                <img src="<?php echo $cdnBaseUrl; ?>/engine-room-records/images/logos/engine-room-records-logo.png" class="slide-watermark" style="filter: grayscale(100%); mix-blend-mode: multiply;">
             </div>
 
             <div class="card bg-black text-white border-danger border-2 shadow-lg">

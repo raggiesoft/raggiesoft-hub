@@ -5,7 +5,7 @@
 
 <div class="mb-4 text-center">
     <a href="/family" class="text-decoration-none text-body">
-        <img src= $cdnBaseUrl . "/family/images/logos/logo-family.png" 
+        <img src="<?php echo $cdnBaseUrl; ?>/family/images/logos/logo-family.png" 
              alt="The RaggieSoft Family" 
              class="rounded-circle shadow-sm border border-2 border-white mb-2"
              style="width: 100px; height: 100px; object-fit: cover;">
@@ -22,7 +22,7 @@
 <div class="d-flex flex-column gap-1">
   
     <wa-button appearance="plain" href="/family/michael" class="text-body w-100 text-start justify-content-start" style="text-align: left;">
-      <img src= $cdnBaseUrl . "/portfolio/images/family/atmospheric/michael.jpg" 
+      <img src="<?php echo $cdnBaseUrl; ?>/portfolio/images/family/atmospheric/michael.jpg" 
            class="rounded-circle me-2 border border-primary border-" 
            width="24" height="24" style="object-fit: cover;">
       Michael
@@ -37,7 +37,7 @@
   
   
     <wa-button appearance="plain" href="/family/paige" class="text-body w-100 text-start justify-content-start" style="text-align: left;">
-      <img src= $cdnBaseUrl . "/family/images/atmospheric/paige.jpg" 
+      <img src="<?php echo $cdnBaseUrl; ?>/family/images/atmospheric/paige.jpg" 
            class="rounded-circle me-2 border border-info border-" 
            width="24" height="24" style="object-fit: cover;">
       Paige
@@ -46,7 +46,7 @@
   
   
     <wa-button appearance="plain" href="/family/jessica" class="text-body w-100 text-start justify-content-start" style="text-align: left;">
-      <img src= $cdnBaseUrl . "/family/images/atmospheric/jessica.jpg" 
+      <img src="<?php echo $cdnBaseUrl; ?>/family/images/atmospheric/jessica.jpg" 
            class="rounded-circle me-2 border border-success border-" 
            width="24" height="24" style="object-fit: cover;">
       Jessica
@@ -55,7 +55,7 @@
 
   
     <wa-button appearance="plain" href="/family/sarah" class="text-body w-100 text-start justify-content-start" style="text-align: left;">
-      <img src= $cdnBaseUrl . "/family/images/atmospheric/sarah.jpg" 
+      <img src="<?php echo $cdnBaseUrl; ?>/family/images/atmospheric/sarah.jpg" 
            class="rounded-circle me-2 border border-warning border-" 
            width="24" height="24" style="object-fit: cover;">
       Sarah
@@ -66,7 +66,7 @@
     <a class="nav-link d-flex align-items-center <?php echo ($currentView === 'pages/family/jenna') ? 'active fw-bold' : 'link-body-emphasis'; ?>" 
        href="/family/jenna"
        style="<?php echo ($currentView === 'pages/family/jenna') ? 'color: var(--family-jenna);' : ''; ?>">
-      <img src= $cdnBaseUrl . "/family/images/atmospheric/jenna.jpg" 
+      <img src="<?php echo $cdnBaseUrl; ?>/family/images/atmospheric/jenna.jpg" 
            class="rounded-circle me-2 border border-" 
            width="24" height="24" style="object-fit: cover; border-color: var(--family-jenna);">
       Jenna
@@ -77,7 +77,7 @@
     <a class="nav-link d-flex align-items-center <?php echo ($currentView === 'pages/family/harper') ? 'active fw-bold' : 'link-body-emphasis'; ?>" 
        href="/family/harper"
        style="<?php echo ($currentView === 'pages/family/harper') ? 'color: var(--family-harper);' : ''; ?>">
-      <img src= $cdnBaseUrl . "/family/images/atmospheric/harper.jpg" 
+      <img src="<?php echo $cdnBaseUrl; ?>/family/images/atmospheric/harper.jpg" 
            class="rounded-circle me-2 border border-" 
            width="24" height="24" style="object-fit: cover; border-color: var(--family-harper);">
       Harper
@@ -88,7 +88,7 @@
     <a class="nav-link d-flex align-items-center <?php echo ($currentView === 'pages/family/amanda-elara') ? 'active fw-bold' : 'link-body-emphasis'; ?>" 
        href="/family/amanda-elara"
        style="<?php echo ($currentView === 'pages/family/amanda-elara') ? 'color: var(--family-amanda);' : ''; ?>">
-      <img src= $cdnBaseUrl . "/family/images/atmospheric/amanda-elara.jpg" 
+      <img src="<?php echo $cdnBaseUrl; ?>/family/images/atmospheric/amanda-elara.jpg" 
            class="rounded-circle me-2 border border-" 
            width="24" height="24" style="object-fit: cover; border-color: var(--family-amanda);">
       Amanda & Elara

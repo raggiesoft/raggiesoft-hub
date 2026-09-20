@@ -20,8 +20,8 @@ $pageTitle = "Elise & Elodie Pelletier - Crimson Node";
         <!-- Quick Stats Sidebar Area -->
         <div class="col-lg-4 mb-4 mb-lg-0">
             <!-- Portrait Image -->
-        <a href= $cdnBaseUrl . "/shiloh/images/characters/ccc/pelletier/elise-elodie-pelletier.jpg" target="_blank" class="d-block mb-4">
-            <img src= $cdnBaseUrl . "/shiloh/images/thumbnails/ccc/pelletier/elise-elodie-pelletier-thumb.jpg" alt="Portrait of Elise and Elodie Pelletier" class="img-fluid rounded shadow-sm  w-100">
+        <a href="<?php echo $cdnBaseUrl; ?>/shiloh/images/characters/ccc/pelletier/elise-elodie-pelletier.jpg" target="_blank" class="d-block mb-4">
+            <img src="<?php echo $cdnBaseUrl; ?>/shiloh/images/thumbnails/ccc/pelletier/elise-elodie-pelletier-thumb.jpg" alt="Portrait of Elise and Elodie Pelletier" class="img-fluid rounded shadow-sm  w-100">
         </a>
 
             <!-- Elodie's Card (Left Side) -->

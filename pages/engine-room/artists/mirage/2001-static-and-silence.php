@@ -161,7 +161,7 @@ $album_path_web = '/engine-room-records/artists/mirage/2001-static-and-silence';
                 
                 <div class="col-md-5">
                     <div class="position-relative shadow-lg border border-4 border-white">
-                        <img src= $cdnBaseUrl . "/engine-room-records/artists/mirage/2001-static-and-silence/album-art.jpg" 
+                        <img src="<?php echo $cdnBaseUrl; ?>/engine-room-records/artists/mirage/2001-static-and-silence/album-art.jpg" 
                              class="img-fluid w-100" alt="Static & Silence Cover Art">
                         <div class="position-absolute bottom-0 start-0 bg-danger text-white px-3 py-1 fw-bold text-uppercase small">
                             New Release (2001)

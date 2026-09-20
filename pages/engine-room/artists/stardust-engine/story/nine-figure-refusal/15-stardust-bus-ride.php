@@ -165,7 +165,7 @@ include ROOT_PATH . '/includes/components/styles/zenith-theme.php';
                                 </p>
                                 
                                 <div class="my-4 p-1 border border-dark bg-white shadow-sm">
-                                    <img src= $cdnBaseUrl . "/engine-room-records/images/omni-global/cassidy-extraction.jpg" 
+                                    <img src="<?php echo $cdnBaseUrl; ?>/engine-room-records/images/omni-global/cassidy-extraction.jpg" 
                                          class="img-fluid security-footage-print" 
                                          alt="Grainy black and white security footage on newsprint showing Evan and Tyler carrying Cassidy down the hallway, flanked by Ryan and Holly.">
                                     <div class="p-2 small font-monospace text-black border-top border-secondary-subtle mt-1 text-center bg-light">

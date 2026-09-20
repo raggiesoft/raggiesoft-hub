@@ -27,7 +27,7 @@ $pageTitle = "The $150M Offer Letter - Evidence Item #01-A";
             <div class="card bg-body-tertiary border-secondary shadow-lg overflow-hidden">
                 <div class="row g-0">
                     <div class="col-lg-6 position-relative min-vh-25">
-                         <img src= $cdnBaseUrl . "/engine-room-records/images/omni-global/150-million-refusal.jpg" 
+                         <img src="<?php echo $cdnBaseUrl; ?>/engine-room-records/images/omni-global/150-million-refusal.jpg" 
                              class="img-fluid h-100 w-100 object-fit-cover" 
                              alt="Boardroom Standoff. Left: Ryan (in wheelchair), Cassidy, and Holly seated; Evan and Tyler standing. Right: Executives Marcus Thorne, Jameson Frost, and Brad Haskins standing aggressively.">
                     </div>

@@ -5,7 +5,7 @@
 <div class="card mb-5 border-0 shadow-sm overflow-hidden bg-body-tertiary">
     <div class="row g-0">
         <div class="col-lg-4 position-relative" style="min-height: 300px;">
-            <img src= $cdnBaseUrl . "/family/images/atmospheric/michael.jpg" 
+            <img src="<?php echo $cdnBaseUrl; ?>/family/images/atmospheric/michael.jpg" 
                  class="position-absolute w-100 h-100" 
                  style="object-fit: cover; object-position: center;" 
                  alt="Michael P. Ragsdale">
@@ -97,7 +97,7 @@
         <div class="card overflow-hidden shadow-lg border-info mb-4">
             <div class="row g-0">
                 <div class="col-lg-7 position-relative" style="min-height: 400px;">
-                    <img src= $cdnBaseUrl . "/family/images/scenes/paige-michael-hug.jpg" 
+                    <img src="<?php echo $cdnBaseUrl; ?>/family/images/scenes/paige-michael-hug.jpg" 
                          class="position-absolute w-100 h-100" 
                          style="object-fit: cover; object-position: center;" 
                          alt="Michael and Paige">

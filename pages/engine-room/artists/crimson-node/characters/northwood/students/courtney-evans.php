@@ -20,7 +20,7 @@ $pageTitle = "Courtney Evans - Crimson Node";
             
             <!-- Character Header -->
             <div class="d-flex flex-column flex-md-row align-items-md-center border-bottom pb-4 mb-4">
-                <img src= $cdnBaseUrl . "/shiloh/images/thumbnails/northwood/courtney-evans-thumb.jpg" 
+                <img src="<?php echo $cdnBaseUrl; ?>/shiloh/images/thumbnails/northwood/courtney-evans-thumb.jpg" 
                      alt="Courtney Evans" 
                      class="rounded shadow-sm mb-3 mb-md-0 me-md-4" 
                      style="width: 150px; height: 150px; object-fit: cover;">

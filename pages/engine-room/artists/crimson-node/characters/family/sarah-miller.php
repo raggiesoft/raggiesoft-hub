@@ -10,8 +10,8 @@
     <!-- Quick Stats Sidebar Area -->
     <div class="col-lg-4 mb-4 mb-lg-0">
         <!-- Portrait Image -->
-        <a href= $cdnBaseUrl . "/shiloh/images/characters/family/miller/david/sarah-miller.jpg" target="_blank" class="d-block mb-4">
-            <img src= $cdnBaseUrl . "/shiloh/images/thumbnails/family/miller/david/sarah-miller-thumb.jpg" alt="Portrait of Sarah Miller" class="img-fluid rounded shadow-sm  w-100">
+        <a href="<?php echo $cdnBaseUrl; ?>/shiloh/images/characters/family/miller/david/sarah-miller.jpg" target="_blank" class="d-block mb-4">
+            <img src="<?php echo $cdnBaseUrl; ?>/shiloh/images/thumbnails/family/miller/david/sarah-miller-thumb.jpg" alt="Portrait of Sarah Miller" class="img-fluid rounded shadow-sm  w-100">
         </a>
         <div class="card border-0 shadow-sm" style="border-top: 5px solid #0d6efd;">
             <div class="card-body bg-body-tertiary">

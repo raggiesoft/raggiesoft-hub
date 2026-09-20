@@ -86,7 +86,7 @@ $pageTitle = "Systems Architecture - Aethelgard Intranet";
                     </div>
                     <div class="p-3 text-center">
                         <div class="mb-3 position-relative d-inline-block">
-                            <img src= $cdnBaseUrl . "/stardust-engine/images/characters/justin-miller.jpg" 
+                            <img src="<?php echo $cdnBaseUrl; ?>/stardust-engine/images/characters/justin-miller.jpg" 
                                  class="rounded-circle border border-2 border-info" 
                                  style="width: 100px; height: 100px; object-fit: cover; filter: grayscale(20%);"
                                  alt="Justin Miller">

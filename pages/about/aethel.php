@@ -16,7 +16,7 @@
     </div>
 
     <div class="position-relative col-lg-8 mx-auto my-5 py-5 text-white">
-        <img src= $cdnBaseUrl . "/aethel/images/logos/silver-gauntlet-of-aethel-logo.png" 
+        <img src="<?php echo $cdnBaseUrl; ?>/aethel/images/logos/silver-gauntlet-of-aethel-logo.png" 
              alt="The Silver Gauntlet" 
              class="mb-4 drop-shadow-glow" 
              style="max-width: 150px; opacity: 0.9;">
@@ -93,7 +93,7 @@
                             </p>
                         </div>
                         <div class="col-lg-4 text-center mt-4 mt-lg-0">
-                            <img src= $cdnBaseUrl . "/portfolio/images/logos/logo-michael.png" 
+                            <img src="<?php echo $cdnBaseUrl; ?>/portfolio/images/logos/logo-michael.png" 
                                  class="rounded-circle border border-warning shadow-sm" 
                                  width="120" 
                                  alt="Michael Ragsdale">

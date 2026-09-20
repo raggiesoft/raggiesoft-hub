@@ -78,7 +78,7 @@ $pageTitle = "Executive Leadership - The Jessica Miller Center";
                 <div class="col-lg-5 order-lg-2 mb-4 mb-lg-0">
                     <div class="position-relative">
                         <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-10 rounded-3 transform-rotate-minus-2" style="z-index: 0;"></div>
-                        <img src= $cdnBaseUrl . "/stardust-engine/images/corporate/justin-and-jessica-miller.jpg" 
+                        <img src="<?php echo $cdnBaseUrl; ?>/stardust-engine/images/corporate/justin-and-jessica-miller.jpg" 
                              class="img-fluid rounded-3 shadow-lg position-relative z-1 border border-secondary"
                              alt="Jessica and Justin Miller together">
                         <div class="position-absolute bottom-0 end-0 z-2 p-2">
@@ -117,7 +117,7 @@ $pageTitle = "Executive Leadership - The Jessica Miller Center";
             
             <div class="col-lg-6">
                 <div class="card twin-card shadow-sm bg-body-tertiary">
-                    <img src= $cdnBaseUrl . "/stardust-engine/images/corporate/jessica-miller.jpg" 
+                    <img src="<?php echo $cdnBaseUrl; ?>/stardust-engine/images/corporate/jessica-miller.jpg" 
                          class="img-executive" 
                          style="border-color: #198754;"
                          alt="Jessica Miller">
@@ -142,7 +142,7 @@ $pageTitle = "Executive Leadership - The Jessica Miller Center";
 
             <div class="col-lg-6">
                 <div class="card twin-card shadow-sm bg-body-tertiary">
-                    <img src= $cdnBaseUrl . "/stardust-engine/images/corporate/justin-server-rom.jpg" 
+                    <img src="<?php echo $cdnBaseUrl; ?>/stardust-engine/images/corporate/justin-server-rom.jpg" 
                          class="img-executive" 
                          style="border-color: #0dcaf0;"
                          alt="Justin Miller in Server Room">

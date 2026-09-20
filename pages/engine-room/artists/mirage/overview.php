@@ -162,7 +162,7 @@ $pageTitle = "Mirage - Engine Room Records Roster";
         <div class="container">
             <div class="row">
                 <div class="col-md-4 mb-4 mb-md-0">
-                    <img src= $cdnBaseUrl . "/engine-room-records/artists/mirage/2001-static-and-silence/album-art.jpg" 
+                    <img src="<?php echo $cdnBaseUrl; ?>/engine-room-records/artists/mirage/2001-static-and-silence/album-art.jpg" 
                          class="img-fluid border border-secondary shadow-glow" alt="Static & Silence Art">
                     
                     <div class="mt-4">

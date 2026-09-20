@@ -272,4 +272,4 @@ $imagesJson = htmlspecialchars(json_encode($heroImages), ENT_QUOTES, 'UTF-8');
     </div>
 </div>
 
-<script src= $cdnBaseUrl . "/common/js/hero-image.js"></script>
+<script src="<?php echo $cdnBaseUrl; ?>/common/js/hero-image.js"></script>

@@ -25,7 +25,7 @@ $pageTitle = "Day 21: The Drop - Ad Astra Log";
 
     <div class="card border-0 mb-5 overflow-hidden shadow-lg rounded-3 border-start border-danger border-4">
         <div class="position-relative">
-            <img src= $cdnBaseUrl . "/stardust-engine/images/story/ad-astra/re-entry.jpg" 
+            <img src="<?php echo $cdnBaseUrl; ?>/stardust-engine/images/story/ad-astra/re-entry.jpg" 
                  class="img-fluid w-100" 
                  alt="Chaos on stage. Red lights. Ryan shredding guitar amidst sparks.">
             

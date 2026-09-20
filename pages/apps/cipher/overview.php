@@ -187,7 +187,7 @@
     </div>
 </div>
 
-<script src= $cdnBaseUrl . "/apps/cipher/js/cipher.js?v=<?php echo time(); ?>"></script>
+<script src="<?php echo $cdnBaseUrl; ?>/apps/cipher/js/cipher.js?v=<?php echo time(); ?>"></script>
 
 <style>
 .card-radio {

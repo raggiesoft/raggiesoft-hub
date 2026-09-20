@@ -39,7 +39,7 @@ $pageTitle = "Pacific Rim Properties - Commercial Real Estate";
 <div class="pac-rim-body">
 
     <div class="position-relative" style="height: 400px; overflow: hidden;">
-        <img src= $cdnBaseUrl . "/stardust-engine/images/corporate/pacific-rim-hero.jpg" 
+        <img src="<?php echo $cdnBaseUrl; ?>/stardust-engine/images/corporate/pacific-rim-hero.jpg" 
              class="w-100 h-100 object-fit-cover" 
              style="filter: grayscale(80%); opacity: 0.8;"
              alt="Glass Skyscraper on Avenue of the Stars">
@@ -73,7 +73,7 @@ $pageTitle = "Pacific Rim Properties - Commercial Real Estate";
             
             <div class="col-md-4">
                 <div class="card property-card h-100">
-                    <img src= $cdnBaseUrl . "/stardust-engine/images/corporate/omni-building.jpg" class="card-img-top" alt="The Omni Tower">
+                    <img src="<?php echo $cdnBaseUrl; ?>/stardust-engine/images/corporate/omni-building.jpg" class="card-img-top" alt="The Omni Tower">
                     <div class="card-body">
                         <h5 class="card-title fw-bold" style="color: #003366;">1999 Avenue of the Stars</h5>
                         <p class="card-text text-muted small">Los Angeles, CA (Century City)</p>
@@ -91,7 +91,7 @@ $pageTitle = "Pacific Rim Properties - Commercial Real Estate";
 
             <div class="col-md-4">
                 <div class="card property-card h-100">
-                    <img src= $cdnBaseUrl . "/stardust-engine/images/corporate/blacksburg-housing.jpg" class="card-img-top" alt="CPI Student Housing">
+                    <img src="<?php echo $cdnBaseUrl; ?>/stardust-engine/images/corporate/blacksburg-housing.jpg" class="card-img-top" alt="CPI Student Housing">
                     <div class="card-body">
                         <h5 class="card-title fw-bold" style="color: #003366;">The Ironwood Collective</h5>
                         <p class="card-text text-muted small">Blacksburg, VA</p>
@@ -109,7 +109,7 @@ $pageTitle = "Pacific Rim Properties - Commercial Real Estate";
 
             <div class="col-md-4">
                 <div class="card property-card h-100">
-                    <img src= $cdnBaseUrl . "/stardust-engine/images/corporate/la-warehouse.jpg" class="card-img-top" alt="Warehouse Conversion">
+                    <img src="<?php echo $cdnBaseUrl; ?>/stardust-engine/images/corporate/la-warehouse.jpg" class="card-img-top" alt="Warehouse Conversion">
                     <div class="card-body">
                         <h5 class="card-title fw-bold" style="color: #003366;">The Arts District Terminal</h5>
                         <p class="card-text text-muted small">Los Angeles, CA</p>

@@ -64,7 +64,7 @@ $pageTheme = "ad-astra";
             <div class="card glass-card border-secondary mb-4">
                 <div class="row g-0 align-items-center">
                     <div class="col-md-4">
-                        <img src= $cdnBaseUrl . "/external/music/the-winter-palace/tales-of-the-solstice/julian-variant.jpg" 
+                        <img src="<?php echo $cdnBaseUrl; ?>/external/music/the-winter-palace/tales-of-the-solstice/julian-variant.jpg" 
                              class="img-fluid rounded-start h-100 object-fit-cover" 
                              alt="A figure in a wheelchair moving down a candlelit hall.">
                     </div>

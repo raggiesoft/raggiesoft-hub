@@ -87,7 +87,7 @@ $isDarkTheme = (isset($currentPageTheme) && in_array($currentPageTheme, ['dark',
     <?php include ROOT_PATH . '/includes/components/audio-player/sticky-player.php'; ?>
     <?php include ROOT_PATH . '/includes/components/modals/encyclopedia-modal.php'; ?>
 
-    <script src= $cdnBaseUrl . "/engine-room-records/js/stardust-player.js?v=<?php echo time(); ?>"></script>
+    <script src="<?php echo $cdnBaseUrl; ?>/engine-room-records/js/stardust-player.js?v=<?php echo time(); ?>"></script>
     
     <script>
         // Initialize global registry if not exists
@@ -96,9 +96,9 @@ $isDarkTheme = (isset($currentPageTheme) && in_array($currentPageTheme, ['dark',
 </div>
 
 
-<script src= $cdnBaseUrl . "/common/js/piper-sullivan.js?v=<?php echo time(); ?>"></script>
-<script src= $cdnBaseUrl . "/common/js/encyclopedia.js?v=1789647924"></script>
-<script src= $cdnBaseUrl . "/common/js/cinema-carousel.js"></script>
+<script src="<?php echo $cdnBaseUrl; ?>/common/js/piper-sullivan.js?v=<?php echo time(); ?>"></script>
+<script src="<?php echo $cdnBaseUrl; ?>/common/js/encyclopedia.js?v=1789647924"></script>
+<script src="<?php echo $cdnBaseUrl; ?>/common/js/cinema-carousel.js"></script>
 <script>
 // 1. Wrap the Store UI logic into a reusable function
 function initializeStorePreferences() {
