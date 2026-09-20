@@ -18,14 +18,14 @@ $base_path = $cdnBaseUrl . "/engine-room-records/artists";
     </div>
 
     <!-- 1. REAL WORLD INFRASTRUCTURE -->
-    <wa-card class="border-secondary mb-5 shadow-lg w-100 wa-theme-dark" data-bs-theme="dark" style="--wa-panel-bg: var(--bs-dark); --body-padding: 0; --header-padding: 0;">
-        <div slot="header" class="bg-black border-secondary d-flex justify-content-between align-items-center py-3 px-4">
-            <h5 class="mb-0 text-uppercase font-monospace text-info">
+    <wa-card class="border-secondary mb-5 shadow-lg w-100" style="--wa-panel-bg: transparent; --body-padding: 0; --header-padding: 0;">
+        <div slot="header" class="border-secondary d-flex justify-content-between align-items-center py-3 px-4" style="background-color: #000 !important;">
+            <h5 class="mb-0 text-uppercase font-monospace" style="color: #0dcaf0 !important;">
                 <i class="fa-duotone fa-server me-2" aria-hidden="true"></i>Real-World Infrastructure
             </h5>
-            <span class="badge bg-secondary font-monospace">EST. 2026</span>
+            <span class="badge font-monospace" style="background-color: #6c757d !important; color: #fff !important;">EST. 2026</span>
         </div>
-        <div class="p-4 p-md-5">
+        <div class="p-4 p-md-5" style="background-color: #212529 !important;">
             <div class="row align-items-center">
                 <div class="col-md-8">
                     <h3 class="h4 fw-bold text-white mb-3">The RaggieSoft Audio Initiative</h3>
