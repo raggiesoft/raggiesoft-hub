@@ -4,7 +4,8 @@
 
 $heroImages = [
     $cdnBaseUrl . "/raggiesoft-books/images/library-hero/1.jpg",
-    $cdnBaseUrl . "/raggiesoft-books/images/library-hero/2.jpg"
+    $cdnBaseUrl . "/raggiesoft-books/images/library-hero/2.jpg",
+    $cdnBaseUrl . "/raggiesoft-books/images/library-hero/3.jpg"
 ];
 $startImage = !empty($heroImages) 
     ? $heroImages[array_rand($heroImages)] 
