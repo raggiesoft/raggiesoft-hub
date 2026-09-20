@@ -46,7 +46,7 @@ $articleSchema = [
     <div class="row justify-content-center">
         <div class="col-lg-10 mx-auto">
             
-            <wa-card class="bg-dark border-secondary mb-5 shadow-lg overflow-hidden w-100">
+            <wa-card class="bg-body-tertiary border-secondary mb-5 shadow-lg overflow-hidden w-100">
                 <div class="row g-0">
                     <div class="col-md-7 position-relative">
                          <img src="<?php echo $warehouse_shoot; ?>" 
@@ -59,15 +59,15 @@ $articleSchema = [
                             </wa-badge>
                         </div>
                     </div>
-                    <div class="col-md-5 d-flex align-items-center bg-dark">
+                    <div class="col-md-5 d-flex align-items-center bg-body-tertiary">
                         <div class="card-body p-4">
-                            <h3 class="h5 text-white fw-bold border-bottom border-secondary pb-2 mb-3">
+                            <h3 class="h5 text-body-emphasis fw-bold border-bottom border-secondary pb-2 mb-3">
                                 The "Toon Brigade" Incident
                             </h3>
-                            <p class="text-white-50 small mb-3">
+                            <p class="text-body-secondary small mb-3">
                                 <strong>09:30 AM:</strong> The band arrived at a freezing Los Angeles warehouse. They were excited, believing this shoot was to promote their hard sci-fi concept album. While waiting, the band huddled around a rolling TV cart playing a VHS of <em>Toon Brigade Against Trouble</em> just to pass the time.
                             </p>
-                            <p class="text-white-50 small mb-0">
+                            <p class="text-body-secondary small mb-0">
                                 When executive <strong>Julian Vance</strong> walked in, the reality of his incompetence crashed down immediately. Vance had no idea Ryan O'Connell was paralyzed. Seeing the frontman in a wheelchair shattered his manufactured vision instantly, but the true catastrophe was still to come when Vance demanded they set up for "Shot 12."
                             </p>
                         </div>
@@ -131,7 +131,7 @@ $articleSchema = [
                 </div>
 
                 <div class="col-md-4">
-                    <wa-card class="h-100 border-danger bg-dark shadow-sm">
+                    <wa-card class="h-100 border-danger bg-body-tertiary shadow-sm">
                         <div slot="header" class="bg-danger text-white fw-bold p-3 border-bottom border-danger">
                             <i class="fa-duotone fa-bolt me-2"></i>The Breaking Point
                         </div>
@@ -140,11 +140,11 @@ $articleSchema = [
                             style="aspect-ratio: 1/1; object-fit: cover;"
                             alt="A shattered camera lens on a dark warehouse floor illuminated by red emergency lights.">
                         <div class="p-3">
-                            <h6 class="fw-bold text-white">"Shot 12"</h6>
-                            <p class="card-text small text-white-50">
+                            <h6 class="fw-bold text-body-emphasis">"Shot 12"</h6>
+                            <p class="card-text small text-body-secondary">
                                 Disgusted by the wheelchair and rejecting Cassidy's artwork as "childish," Vance attempted to force his original plan. He ordered the photographer to set up "Shot 12"—a demand for Ryan and Cassidy to simulate a highly explicit, sexual act on camera.
                             </p>
-                            <p class="card-text small text-white-50 fw-bold border-start border-danger ps-2 mb-0">
+                            <p class="card-text small text-body-secondary fw-bold border-start border-danger ps-2 mb-0">
                                 Ryan's response shattered the warehouse: <em>"SHE'S MY SISTER!"</em>
                             </p>
                         </div>
@@ -161,12 +161,12 @@ $articleSchema = [
 
             <div class="row g-4 mb-5">
                 <div class="col-md-6">
-                    <wa-card class="border-danger h-100 shadow-sm bg-dark">
+                    <wa-card class="border-danger h-100 shadow-sm bg-body-tertiary">
                         <div class="d-flex flex-column h-100">
                             <h4 class="h5 fw-bold text-danger mb-2">
                                 <i class="fa-solid fa-file-circle-xmark me-2"></i>"Friction" (Title Track)
                             </h4>
-                            <p class="card-text text-white-50 small mb-4">
+                            <p class="card-text text-body-secondary small mb-4">
                                 <strong>STATUS: PERMANENTLY REDACTED.</strong><br>
                                 Because Vance weaponized the lyrics against the siblings, the band made a unified decision: the audio and sheet music for the title track will <em>never</em> be published, performed, or rendered in any capacity. The song died in that warehouse.
                             </p>
