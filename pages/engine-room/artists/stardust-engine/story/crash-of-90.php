@@ -120,7 +120,7 @@ $pageTitle = "The Crash of '90 - The Stardust Engine Lore";
         </div>
 
         <div class="col-md-6 mb-4">
-            <wa-card class="h-100 w-100 bg-body-tertiary border-secondary shadow-sm p-0">
+            <wa-card class="h-100 w-100 bg-body-tertiary border-secondary shadow-sm" style="--header-padding: 0; --body-padding: 0;">
                 <div slot="header" class="bg-secondary bg-opacity-10 text-body-emphasis fw-bold p-3 border-bottom border-secondary">
                     <i class="fa-duotone fa-clock me-2 text-primary"></i>The "Iron Dome" (Morning Routine)
                 </div>
@@ -136,7 +136,7 @@ $pageTitle = "The Crash of '90 - The Stardust Engine Lore";
         </div>
 
         <div class="col-md-6 mb-4">
-            <wa-card class="h-100 w-100 bg-body-tertiary border-secondary shadow-sm p-0">
+            <wa-card class="h-100 w-100 bg-body-tertiary border-secondary shadow-sm" style="--header-padding: 0; --body-padding: 0;">
                 <div slot="header" class="bg-secondary bg-opacity-10 text-body-emphasis fw-bold p-3 border-bottom border-secondary">
                     <i class="fa-duotone fa-glass-water me-2 text-info"></i>The 4-Hour Clock (Hydration)
                 </div>
@@ -152,7 +152,7 @@ $pageTitle = "The Crash of '90 - The Stardust Engine Lore";
         </div>
 
         <div class="col-md-6 mb-4">
-            <wa-card class="h-100 w-100 bg-body-tertiary border-secondary shadow-sm p-0">
+            <wa-card class="h-100 w-100 bg-body-tertiary border-secondary shadow-sm" style="--header-padding: 0; --body-padding: 0;">
                 <div slot="header" class="bg-secondary bg-opacity-10 text-body-emphasis fw-bold p-3 border-bottom border-secondary">
                     <i class="fa-duotone fa-loveseat me-2 text-warning"></i>The Pressure Clock
                 </div>
@@ -168,7 +168,7 @@ $pageTitle = "The Crash of '90 - The Stardust Engine Lore";
         </div>
 
         <div class="col-md-6 mb-4">
-            <wa-card class="h-100 w-100 bg-body-tertiary border-secondary shadow-sm p-0">
+            <wa-card class="h-100 w-100 bg-body-tertiary border-secondary shadow-sm" style="--header-padding: 0; --body-padding: 0;">
                 <div slot="header" class="bg-secondary bg-opacity-10 text-body-emphasis fw-bold p-3 border-bottom border-secondary">
                     <i class="fa-duotone fa-stairs me-2 text-danger"></i>The "Freight Dog" Reality
                 </div>

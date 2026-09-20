@@ -39,7 +39,7 @@ $album_path_web = '/engine-room-records/artists/the-stardust-engine/2003-mile-ma
                         <wa-badge variant="danger" class="mb-2">Historical Archive</wa-badge>
                         <h5 class="fw-bold text-danger mb-2 text-uppercase">The Crash of '90</h5>
                         <p class="text-body-secondary small mb-3">
-                            Ryan absolutely loathed his new wheelchair, but he would do anything for his sisters when they asked him to go for a walk in the ward. Read the historical archive detailing the real-world events of December 10, 1990, that served as the harrowing inspiration for this album.
+                            Ryan absolutely loathed his new wheelchair, but he would do anything for his sisters when they asked him to go for a walk in the ward. Read the historical archive detailing the biographical events of December 10, 1990, that served as the harrowing inspiration for this album.
                         </p>
                         <wa-button variant="danger" outline href="/engine-room/artists/stardust-engine/story/crash-of-90">
                             <i class="fa-duotone fa-book-open me-2"></i>Read the Archive
