@@ -29,14 +29,20 @@ $album_path_web = '/engine-room-records/artists/the-stardust-engine/2003-mile-ma
                 Driven by Ryan O'Connell, this record represents the raw, chaotic energy and unresolved anger of The Stardust Engine. It serves as the explosive, high-friction counterweight to its atmospheric sibling, Sanctuary (Zero-G). Thematically, this is a show being put on by the Engine Room Records Planetarium.
             </p>
             
-            <wa-card class="bg-body-tertiary border-danger shadow-sm mt-4 p-0 w-100">
-                <div class="d-flex align-items-center p-3">
-                    <i class="fa-duotone fa-car-burst fs-1 text-danger me-4 ms-2"></i>
-                    <div>
-                        <h6 class="fw-bold text-danger mb-1 text-uppercase">Explore the Lore: The Crash of '90</h6>
-                        <p class="text-secondary small mb-2">Read the historical archive detailing the real-world events of December 10, 1990, that inspired this album.</p>
-                        <wa-button variant="danger" outline size="small" href="/engine-room/artists/stardust-engine/story/crash-of-90">
-                            Read the Archive
+            <wa-card class="bg-body border-danger shadow-sm mt-4 p-0 overflow-hidden w-100">
+                <div class="d-flex flex-column flex-md-row align-items-center">
+                    <img src="<?php echo $cdnBaseUrl; ?>/stardust-engine/images/story/crash-of-1990.jpg" 
+                        alt="Ryan O'Connell in his wheelchair at Star City General Hospital" 
+                        class="img-fluid border-end border-danger" 
+                        style="max-width: 200px; aspect-ratio: 1/1; object-fit: cover; filter: sepia(20%) contrast(1.1);">
+                    <div class="p-4 w-100">
+                        <wa-badge variant="danger" class="mb-2">Historical Archive</wa-badge>
+                        <h5 class="fw-bold text-danger mb-2 text-uppercase">The Crash of '90</h5>
+                        <p class="text-body-secondary small mb-3">
+                            Ryan absolutely loathed his new wheelchair, but he would do anything for his sisters when they asked him to go for a walk in the ward. Read the historical archive detailing the real-world events of December 10, 1990, that served as the harrowing inspiration for this album.
+                        </p>
+                        <wa-button variant="danger" outline href="/engine-room/artists/stardust-engine/story/crash-of-90">
+                            <i class="fa-duotone fa-book-open me-2"></i>Read the Archive
                         </wa-button>
                     </div>
                 </div>
