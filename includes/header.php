@@ -51,10 +51,9 @@ $css_load_queue = [
 
 // 5. Critical Images
 $critical_images = [];
-if (!empty($pageConfig['navbarBrandLogo'])) $critical_images[] = $pageConfig['navbarBrandLogo'];
-elseif (!empty($navbarBrandLogo)) $critical_images[] = $navbarBrandLogo;
+if (!empty($navbarBrandLogo)) $critical_images[] = $navbarBrandLogo;
 
-if (!empty($pageConfig['navbarBrandLogoDark'])) $critical_images[] = $pageConfig['navbarBrandLogoDark'];
+if (!empty($pageConfig['navbarBrandLogoDark'])) $critical_images[] = $cdnBaseUrl . $pageConfig['navbarBrandLogoDark'];
 
 if (isset($customPageAssets) && is_array($customPageAssets)) {
     $critical_images = array_merge($critical_images, $customPageAssets);
@@ -506,8 +505,8 @@ if (isset($customPageAssets) && is_array($customPageAssets)) {
                 
                 <?php 
                 // Directly query the array where we know the data lives
-                $logoLight = $pageConfig['navbarBrandLogo'] ?? $settings['navbarBrandLogo'] ?? $navbarBrandLogo ?? '';
-                $logoDark  = $pageConfig['navbarBrandLogoDark'] ?? '';
+                $logoLight = $navbarBrandLogo ?? '';
+                $logoDark  = (isset($pageConfig['navbarBrandLogoDark']) && !str_starts_with($pageConfig['navbarBrandLogoDark'], 'http') && $pageConfig['navbarBrandLogoDark'] !== '') ? $cdnBaseUrl . $pageConfig['navbarBrandLogoDark'] : ($pageConfig['navbarBrandLogoDark'] ?? '');
                 ?>
 
                 <?php if (!empty($logoLight) && !empty($logoDark)): ?>
