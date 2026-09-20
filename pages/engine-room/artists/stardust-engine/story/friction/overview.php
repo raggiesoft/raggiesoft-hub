@@ -80,7 +80,7 @@ $articleSchema = [
             </h2>
 
              <div class="mb-4">
-                <span class="badge bg-danger bg-opacity-10 text-danger border border-danger mb-2">Market Context: 1992</span>
+                <wa-badge variant="danger" class="mb-2 text-uppercase">Market Context: 1992</wa-badge>
                 <p class="text-body-secondary small">
                     In 1992, the music industry was obsessed with <strong>"Shock Value."</strong>
                     Superstar <strong>Cydele</strong> was dominating the global conversation with a highly controversial, explicit multimedia project. Apex Records, terrified of losing market share, wanted to compete.
