@@ -112,7 +112,26 @@ $pageTitle = "The Lore - The Stardust Engine";
             </wa-card>
         </div>
 
-        <!-- 3. CPI & The Forgers -->
+        <!-- 3. The Refusal -->
+        <div class="col-12 col-md-6 col-lg-4 d-flex align-items-stretch">
+            <wa-card class="h-100 border-warning shadow-sm hover-card bg-transparent w-100 p-0" style="--wa-panel-bg: transparent; --body-padding: 0;">
+                <img src="<?php echo $cdnBaseUrl; ?>/engine-room-records/images/omni-global/150-million-refusal.jpg" class="img-fluid border-bottom" alt="Cassidy O'Connell looking fierce in a corporate boardroom rejecting a contract offer"
+                     style="filter: brightness(0.8);">
+                <div class="d-flex flex-column h-100 p-3">
+                    <h3 class="h5 fw-bold text-warning">The $150M Refusal</h3>
+                    <p class="card-text text-muted small">
+                        The day they said no. Discover how Cassidy O'Connell's meltdown in a corporate boardroom saved <em>Ad Astra</em> from being butchered by an algorithm.
+                    </p>
+                    <div class="mt-auto pt-3">
+                        <wa-button variant="warning" outline href="/engine-room/artists/stardust-engine/story/nine-figure-refusal" class="w-100">
+                            <i slot="prefix" class="fa-duotone fa-shield-halved"></i>Read The Minutes
+                        </wa-button>
+                    </div>
+                </div>
+            </wa-card>
+        </div>
+
+        <!-- 4. CPI & The Forgers -->
         <div class="col-12 col-md-6 col-lg-4 d-flex align-items-stretch">
             <wa-card class="h-100 border-secondary shadow-sm hover-card bg-transparent w-100 p-0" style="--wa-panel-bg: transparent; --body-padding: 0;">
                 <img src="<?php echo $cdnBaseUrl; ?>/engine-room-records/artists/the-stardust-engine/2016-live-at-the-crucible/album-art.jpg" class="img-fluid border-bottom" alt="The Crucible Stadium at night">
@@ -134,43 +153,20 @@ $pageTitle = "The Lore - The Stardust Engine";
             </wa-card>
         </div>
 
-        <!-- 4. The Refusal (New Entry) -->
+        <!-- 5. KNOX -->
         <div class="col-12 col-md-6 col-lg-4 d-flex align-items-stretch">
-            <wa-card class="h-100 border-warning shadow-sm hover-card bg-transparent w-100 p-0" style="--wa-panel-bg: transparent; --body-padding: 0;">
-                <img src="<?php echo $cdnBaseUrl; ?>/engine-room-records/images/omni-global/150-million-refusal.jpg" class="img-fluid border-bottom" alt="Cassidy O'Connell looking fierce in a corporate boardroom rejecting a contract offer"
-                     style="filter: brightness(0.8);">
-                <div class="d-flex flex-column h-100 p-3">
-                    <h3 class="h5 fw-bold text-warning">The $150M Refusal</h3>
-                    <p class="card-text text-muted small">
-                        The day they said no. Discover how Cassidy O'Connell's meltdown in a corporate boardroom saved <em>Ad Astra</em> from being butchered by an algorithm.
-                    </p>
-                    <div class="mt-auto pt-3">
-                        <wa-button variant="warning" outline href="/engine-room/artists/stardust-engine/story/nine-figure-refusal" class="w-100">
-                            <i slot="prefix" class="fa-duotone fa-shield-halved"></i>Read The Minutes
-                        </wa-button>
-                    </div>
-                </div>
-            </wa-card>
-        </div>
-
-        <!-- 5. Port Telsus -->
-         <div class="col-12 col-md-6 col-lg-4 d-flex align-items-stretch">
             <wa-card class="h-100 border-info shadow-sm hover-card bg-transparent w-100 p-0" style="--wa-panel-bg: transparent; --body-padding: 0;">
-                <img src="<?php echo $cdnBaseUrl; ?>/engine-room-records/artists/the-stardust-engine/2017-knox-ost/album-art.jpg" class="img-fluid border-bottom" alt="The neon-lit industrial sprawl of Port Telsus"
+                <img src="<?php echo $cdnBaseUrl; ?>/engine-room-records/artists/the-stardust-engine/2017-knox-ost/album-art.jpg" class="img-fluid border-bottom" alt="The cover of KNOX"
                      style="filter: brightness(0.8);">
                 <div class="d-flex flex-column h-100 p-3">
-                    <h3 class="h5 fw-bold text-info">The Ironworks</h3>
+                    <h3 class="h5 fw-bold text-info">KNOX</h3>
                     <p class="card-text text-muted small">
-                        The band's current base of operations. Explore the "sanctioned entertainment zone" in the lower decks of Port Telsus, where they broadcast their signal to the Weave.
+                        The Stardust Engine writes a narrative story, and composes the music for it.
                     </p>
                     <div class="mt-auto pt-3">
-                        <?php $props = [
-                            'text' => 'Enter Sector 4', 
-                            'href' => '/engine-room/artists/stardust-engine/discography/2017-knox-ost', 
-                            'variant' => 'neutral',
-                            'icon' => 'fa-duotone fa-location-dot',
-                            'fullWidth' => true
-                        ]; include ROOT_PATH . '/includes/components/button.php'; ?>
+                        <wa-button variant="info" outline href="/raggiesoft-books/knox" class="w-100">
+                            <i slot="prefix" class="fa-duotone fa-book-open"></i>Read The Story
+                        </wa-button>
                     </div>
                 </div>
             </wa-card>

@@ -178,6 +178,15 @@ $nav = [
                 <p>
                     It wasn't explosive, but it didn't need to be. The brevity spoke volumes. The bubble had officially burst.
                 </p>
+                <p>
+                    Before Matt could even pull his hands back up to the keyboard to type a response, his speakers popped with Omni-Q's distinct, hollow sign-off chime.
+                </p>
+                <p>
+                    <em>Doink.</em>
+                </p>
+                <p>
+                    Her screen name vanished from his active roster, fading out to a dull gray offline status. The audio cue wasn't anything dramatic&mdash;just an abrupt, echoing clink of a connection dropping&mdash;but in the suffocating quiet of his bedroom, it hit him harder than a slammed door ever could.
+                </p>
 
                 <hr class="my-5 border-secondary border-opacity-50 w-50 mx-auto">
 
