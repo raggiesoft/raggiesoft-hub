@@ -57,8 +57,8 @@ $pageTitle = "The Lore - The Stardust Engine";
         
         <!-- 1. The Crash of '90 (New Entry) -->
         <div class="col">
-            <wa-card class="h-100 border-danger shadow-sm hover-card bg-transparent w-100 p-0" style="--wa-panel-bg: transparent;">
-                <img slot="image" src="<?php echo $cdnBaseUrl; ?>/stardust-engine/images/story/crash-of-1990.jpg" class="img-fluid border-bottom" alt="Ryan in a wheelchair in a hospital room with Holly and Cassidy by his side"
+            <wa-card class="h-100 border-danger shadow-sm hover-card bg-transparent w-100 p-0" style="--wa-panel-bg: transparent; --body-padding: 0;">
+                <img src="<?php echo $cdnBaseUrl; ?>/stardust-engine/images/story/crash-of-1990.jpg" class="img-fluid border-bottom" alt="Ryan in a wheelchair in a hospital room with Holly and Cassidy by his side"
                      style="filter: brightness(0.8);">
                 <div class="d-flex flex-column h-100 p-3">
                     <h3 class="h5 fw-bold text-danger">The Crash of '90</h3>
@@ -76,9 +76,9 @@ $pageTitle = "The Lore - The Stardust Engine";
 
         <!-- 2. The Friction Catastrophe -->
         <div class="col">
-            <wa-card class="h-100 border-primary shadow-sm hover-card bg-transparent w-100 p-0" style="--wa-panel-bg: transparent;">
+            <wa-card class="h-100 border-primary shadow-sm hover-card bg-transparent w-100 p-0" style="--wa-panel-bg: transparent; --body-padding: 0;">
                 
-                <div slot="image" class="position-relative">
+                <div class="position-relative">
                     
                     <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center" 
                          style="z-index: 2; background: rgba(0,0,0,0.5); pointer-events: none;">
@@ -114,8 +114,8 @@ $pageTitle = "The Lore - The Stardust Engine";
 
         <!-- 3. CPI & The Forgers -->
         <div class="col">
-            <wa-card class="h-100 border-secondary shadow-sm hover-card bg-transparent w-100 p-0" style="--wa-panel-bg: transparent;">
-                <img slot="image" src="<?php echo $cdnBaseUrl; ?>/engine-room-records/artists/the-stardust-engine/2016-live-at-the-crucible/album-art.jpg" class="img-fluid border-bottom" alt="The Crucible Stadium at night">
+            <wa-card class="h-100 border-secondary shadow-sm hover-card bg-transparent w-100 p-0" style="--wa-panel-bg: transparent; --body-padding: 0;">
+                <img src="<?php echo $cdnBaseUrl; ?>/engine-room-records/artists/the-stardust-engine/2016-live-at-the-crucible/album-art.jpg" class="img-fluid border-bottom" alt="The Crucible Stadium at night">
                 <div class="d-flex flex-column h-100 p-3">
                     <h3 class="h5 fw-bold text-light">CPI & The Forgers</h3>
                     <p class="card-text text-muted small">
@@ -136,8 +136,8 @@ $pageTitle = "The Lore - The Stardust Engine";
 
         <!-- 4. The Refusal (New Entry) -->
         <div class="col">
-            <wa-card class="h-100 border-warning shadow-sm hover-card bg-transparent w-100 p-0" style="--wa-panel-bg: transparent;">
-                <img slot="image" src="<?php echo $cdnBaseUrl; ?>/engine-room-records/images/omni-global/150-million-refusal.jpg" class="img-fluid border-bottom" alt="Cassidy O'Connell looking fierce in a corporate boardroom rejecting a contract offer"
+            <wa-card class="h-100 border-warning shadow-sm hover-card bg-transparent w-100 p-0" style="--wa-panel-bg: transparent; --body-padding: 0;">
+                <img src="<?php echo $cdnBaseUrl; ?>/engine-room-records/images/omni-global/150-million-refusal.jpg" class="img-fluid border-bottom" alt="Cassidy O'Connell looking fierce in a corporate boardroom rejecting a contract offer"
                      style="filter: brightness(0.8);">
                 <div class="d-flex flex-column h-100 p-3">
                     <h3 class="h5 fw-bold text-warning">The $150M Refusal</h3>
@@ -155,8 +155,8 @@ $pageTitle = "The Lore - The Stardust Engine";
 
         <!-- 5. Port Telsus -->
          <div class="col">
-            <wa-card class="h-100 border-info shadow-sm hover-card bg-transparent w-100 p-0" style="--wa-panel-bg: transparent;">
-                <img slot="image" src="<?php echo $cdnBaseUrl; ?>/engine-room-records/artists/the-stardust-engine/2017-knox-ost/album-art.jpg" class="img-fluid border-bottom" alt="The neon-lit industrial sprawl of Port Telsus"
+            <wa-card class="h-100 border-info shadow-sm hover-card bg-transparent w-100 p-0" style="--wa-panel-bg: transparent; --body-padding: 0;">
+                <img src="<?php echo $cdnBaseUrl; ?>/engine-room-records/artists/the-stardust-engine/2017-knox-ost/album-art.jpg" class="img-fluid border-bottom" alt="The neon-lit industrial sprawl of Port Telsus"
                      style="filter: brightness(0.8);">
                 <div class="d-flex flex-column h-100 p-3">
                     <h3 class="h5 fw-bold text-info">The Ironworks</h3>
@@ -178,8 +178,8 @@ $pageTitle = "The Lore - The Stardust Engine";
 
         <!-- 6. Complete Timeline -->
         <div class="col">
-            <wa-card class="h-100 border-secondary shadow-sm hover-card bg-transparent w-100 p-0" style="--wa-panel-bg: transparent;">
-                <img slot="image" src="<?php echo $cdnBaseUrl; ?>/stardust-engine/images/story/timeline.jpg" class="img-fluid border-bottom" alt="A stylized timeline graphic showing key events in the band's history"
+            <wa-card class="h-100 border-secondary shadow-sm hover-card bg-transparent w-100 p-0" style="--wa-panel-bg: transparent; --body-padding: 0;">
+                <img src="<?php echo $cdnBaseUrl; ?>/stardust-engine/images/story/timeline.jpg" class="img-fluid border-bottom" alt="A stylized timeline graphic showing key events in the band's history"
                      style="filter: brightness(0.8);">
                 <div class="d-flex flex-column h-100 p-3">
                     <h3 class="h5 fw-bold text-secondary">Complete Timeline</h3>
