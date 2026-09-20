@@ -78,16 +78,25 @@ $pageTitle = "Master Licensing Portal | RaggieSoft Media";
                 </div>
             </div>
             <div class="d-flex flex-column h-100 p-4">
-                <wa-badge variant="primary" class="align-self-start mb-3 font-monospace shadow-sm">MIT License</wa-badge>
+                <div class="text-uppercase small fw-bold mb-3 text-primary"><i class="fa-solid fa-code-commit me-2"></i>MIT License</div>
                 <p class="text-body-emphasis mb-3">
                     All source code, proprietary routing scripts (Elara CMS), and web architecture patterns developed by RaggieSoft are distributed open-source.
                 </p>
                 <p class="small text-body-secondary flex-grow-1">
                     You are free to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the software, provided the original copyright notice is included.
                 </p>
-                <wa-button variant="info" size="small" class="mt-auto fw-bold" data-bs-toggle="modal" data-bs-target="#mitLicenseModal">
-                    <i class="fa-solid fa-file-contract me-2" aria-hidden="true"></i>Read Full MIT License
-                </wa-button>
+                <wa-details summary="Read Full MIT License" class="mt-auto pt-3 border-top border-secondary-subtle">
+                    <div class="font-monospace small text-body-secondary mt-3">
+                        <p class="fw-bold text-body-emphasis">Copyright &copy; <?php echo date("Y"); ?> Michael P. Ragsdale / RaggieSoft Media</p>
+        <p>Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:</p>
+        <p>The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.</p>
+        <div class="p-3 mt-4 rounded-3" style="background: rgba(220, 53, 69, 0.1); border: 1px solid rgba(220, 53, 69, 0.2);">
+            <p class="text-uppercase fw-bold text-danger mb-0 text-center" style="letter-spacing: 0.5px;">
+                The Software is provided "as is", without warranty of any kind, express or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose and noninfringement.
+            </p>
+                    </div>
+                </div>
+                </wa-details>
             </div>
         </wa-card>
     </div>
@@ -104,7 +113,7 @@ $pageTitle = "Master Licensing Portal | RaggieSoft Media";
                 </div>
             </div>
             <div class="d-flex flex-column h-100 p-4">
-                <wa-badge variant="warning" class="align-self-start mb-3 font-monospace shadow-sm">CC BY-SA 4.0</wa-badge>
+                <div class="text-uppercase small fw-bold mb-3 text-warning"><i class="fa-brands fa-creative-commons me-2"></i>CC BY-SA 4.0</div>
                 <p class="text-body-emphasis mb-3">
                     All creative writing, fictional universes (<em>The Stardust Engine, Knox, Aethel</em>), and lore documentation are licensed under Creative Commons.
                 </p>
@@ -138,25 +147,5 @@ $pageTitle = "Master Licensing Portal | RaggieSoft Media";
     </div>
 </wa-card>
 
-<div class="modal fade" id="mitLicenseModal" tabindex="-1" aria-labelledby="mitLicenseModalTitle" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered modal-lg">
-    <div class="modal-content aero-modal-content">
-      <div class="modal-header border-bottom" style="border-color: var(--raggie-glass-border) !important;">
-        <h2 class="modal-title h5 fw-bold text-primary" id="mitLicenseModalTitle">
-            <i class="fa-brands fa-github me-2" aria-hidden="true"></i>The MIT License
-        </h2>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body p-4 text-body-secondary font-monospace small">
-        <p class="fw-bold text-body-emphasis">Copyright &copy; <?php echo date("Y"); ?> Michael P. Ragsdale / RaggieSoft Media</p>
-        <p>Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:</p>
-        <p>The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.</p>
-        <div class="p-3 mt-4 rounded-3" style="background: rgba(220, 53, 69, 0.1); border: 1px solid rgba(220, 53, 69, 0.2);">
-            <p class="text-uppercase fw-bold text-danger mb-0 text-center" style="letter-spacing: 0.5px;">
-                The Software is provided "as is", without warranty of any kind, express or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose and noninfringement.
-            </p>
-        </div>
-      </div>
-    </div>
-  </div>
+
 </div>
