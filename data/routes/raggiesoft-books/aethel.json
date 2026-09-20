@@ -10,8 +10,8 @@
         "footer": "raggiesoft-books/footer-books"
     },
     "/raggiesoft-books/books/aethel": {
-        "view": "pages/raggiesoft-books/books/overview",
-        "title": "aethel - Library",
+        "view": "pages/raggiesoft-books/books/series",
+        "title": "aethel",
         "theme": ""
     },
     "/raggiesoft-books/books/aethel/b001/c001/p001": {

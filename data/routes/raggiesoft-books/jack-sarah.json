@@ -10,8 +10,8 @@
         "footer": "raggiesoft-books/footer-books"
     },
     "/raggiesoft-books/books/jack-sarah": {
-        "view": "pages/raggiesoft-books/books/overview",
-        "title": "jack-sarah - Library",
+        "view": "pages/raggiesoft-books/books/series",
+        "title": "jack-sarah",
         "theme": ""
     },
     "/raggiesoft-books/books/jack-sarah/b001/c001/p001": {

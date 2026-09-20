@@ -10,8 +10,8 @@
         "footer": "raggiesoft-books/footer-books"
     },
     "/raggiesoft-books/books/jessica": {
-        "view": "pages/raggiesoft-books/books/overview",
-        "title": "jessica - Library",
+        "view": "pages/raggiesoft-books/books/series",
+        "title": "jessica",
         "theme": ""
     },
     "/raggiesoft-books/books/jessica/b001/c001/p001": {

@@ -10,8 +10,8 @@
         "footer": "raggiesoft-books/footer-books"
     },
     "/raggiesoft-books/books/kelly": {
-        "view": "pages/raggiesoft-books/books/overview",
-        "title": "kelly - Library",
+        "view": "pages/raggiesoft-books/books/series",
+        "title": "kelly",
         "theme": ""
     },
     "/raggiesoft-books/books/kelly/b001/c001/p001": {

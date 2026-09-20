@@ -10,8 +10,8 @@
         "footer": "raggiesoft-books/footer-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth": {
-        "view": "pages/raggiesoft-books/books/overview",
-        "title": "apex-fall-of-earth - Library",
+        "view": "pages/raggiesoft-books/books/series",
+        "title": "apex-fall-of-earth",
         "theme": ""
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b001/c001/p001": {

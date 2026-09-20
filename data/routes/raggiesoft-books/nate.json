@@ -10,8 +10,8 @@
         "footer": "raggiesoft-books/footer-books"
     },
     "/raggiesoft-books/books/nate": {
-        "view": "pages/raggiesoft-books/books/overview",
-        "title": "nate - Library",
+        "view": "pages/raggiesoft-books/books/series",
+        "title": "nate",
         "theme": ""
     }
 }

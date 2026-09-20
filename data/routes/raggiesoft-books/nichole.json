@@ -10,8 +10,8 @@
         "footer": "raggiesoft-books/footer-books"
     },
     "/raggiesoft-books/books/nichole": {
-        "view": "pages/raggiesoft-books/books/overview",
-        "title": "nichole - Library",
+        "view": "pages/raggiesoft-books/books/series",
+        "title": "nichole",
         "theme": ""
     },
     "/raggiesoft-books/books/nichole/b001/c001/p001": {

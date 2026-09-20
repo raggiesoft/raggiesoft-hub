@@ -10,8 +10,8 @@
         "footer": "raggiesoft-books/footer-books"
     },
     "/raggiesoft-books/books/paige": {
-        "view": "pages/raggiesoft-books/books/overview",
-        "title": "paige - Library",
+        "view": "pages/raggiesoft-books/books/series",
+        "title": "paige",
         "theme": ""
     },
     "/raggiesoft-books/books/paige/b001/c001/p001": {

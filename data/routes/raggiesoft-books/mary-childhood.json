@@ -10,8 +10,8 @@
         "footer": "raggiesoft-books/footer-books"
     },
     "/raggiesoft-books/books/mary-childhood": {
-        "view": "pages/raggiesoft-books/books/overview",
-        "title": "mary-childhood - Library",
+        "view": "pages/raggiesoft-books/books/series",
+        "title": "mary-childhood",
         "theme": ""
     },
     "/raggiesoft-books/books/mary-childhood/b001/c001/p001": {

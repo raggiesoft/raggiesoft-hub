@@ -10,8 +10,8 @@
         "footer": "raggiesoft-books/footer-books"
     },
     "/raggiesoft-books/books/the-rachel-narrative": {
-        "view": "pages/raggiesoft-books/books/overview",
-        "title": "The Rachel Narrative - Library",
+        "view": "pages/raggiesoft-books/books/series",
+        "title": "The Rachel Narrative",
         "theme": ""
     },
     "/raggiesoft-books/books/the-rachel-narrative/b001/c001/p001": {

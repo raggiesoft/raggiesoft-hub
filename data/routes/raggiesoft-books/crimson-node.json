@@ -10,8 +10,8 @@
         "footer": "raggiesoft-books/footer-books"
     },
     "/raggiesoft-books/books/crimson-node": {
-        "view": "pages/raggiesoft-books/books/overview",
-        "title": "Crimson Node - Library",
+        "view": "pages/raggiesoft-books/books/series",
+        "title": "Crimson Node",
         "theme": ""
     },
     "/raggiesoft-books/books/crimson-node/b001/c001/p001": {

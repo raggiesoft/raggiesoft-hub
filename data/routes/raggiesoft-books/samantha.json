@@ -10,8 +10,8 @@
         "footer": "raggiesoft-books/footer-books"
     },
     "/raggiesoft-books/books/samantha": {
-        "view": "pages/raggiesoft-books/books/overview",
-        "title": "samantha - Library",
+        "view": "pages/raggiesoft-books/books/series",
+        "title": "samantha",
         "theme": ""
     }
 }

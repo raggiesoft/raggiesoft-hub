@@ -10,8 +10,8 @@
         "footer": "raggiesoft-books/footer-books"
     },
     "/raggiesoft-books/books/aubrie": {
-        "view": "pages/raggiesoft-books/books/overview",
-        "title": "aubrie - Library",
+        "view": "pages/raggiesoft-books/books/series",
+        "title": "aubrie",
         "theme": ""
     },
     "/raggiesoft-books/books/aubrie/b001/c001/p001": {

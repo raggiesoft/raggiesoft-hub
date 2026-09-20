@@ -10,8 +10,8 @@
         "footer": "raggiesoft-books/footer-books"
     },
     "/raggiesoft-books/books/luna-leo": {
-        "view": "pages/raggiesoft-books/books/overview",
-        "title": "luna-leo - Library",
+        "view": "pages/raggiesoft-books/books/series",
+        "title": "luna-leo",
         "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b001/c001/p001": {

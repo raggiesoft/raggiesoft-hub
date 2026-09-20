@@ -10,8 +10,8 @@
         "footer": "raggiesoft-books/footer-books"
     },
     "/raggiesoft-books/books/ashley-tower": {
-        "view": "pages/raggiesoft-books/books/overview",
-        "title": "ashley-tower - Library",
+        "view": "pages/raggiesoft-books/books/series",
+        "title": "ashley-tower",
         "theme": ""
     }
 }

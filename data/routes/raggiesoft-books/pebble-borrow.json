@@ -10,8 +10,8 @@
         "footer": "raggiesoft-books/footer-books"
     },
     "/raggiesoft-books/books/pebble-borrow": {
-        "view": "pages/raggiesoft-books/books/overview",
-        "title": "pebble-borrow - Library",
+        "view": "pages/raggiesoft-books/books/series",
+        "title": "pebble-borrow",
         "theme": ""
     },
     "/raggiesoft-books/books/pebble-borrow/b002/c001/p001": {

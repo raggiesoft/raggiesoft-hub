@@ -10,8 +10,8 @@
         "footer": "raggiesoft-books/footer-books"
     },
     "/raggiesoft-books/books/bob-emily": {
-        "view": "pages/raggiesoft-books/books/overview",
-        "title": "bob-emily - Library",
+        "view": "pages/raggiesoft-books/books/series",
+        "title": "bob-emily",
         "theme": ""
     },
     "/raggiesoft-books/books/bob-emily/b001/c001/p001": {

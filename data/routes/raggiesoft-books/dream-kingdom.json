@@ -10,8 +10,8 @@
         "footer": "raggiesoft-books/footer-books"
     },
     "/raggiesoft-books/books/dream-kingdom": {
-        "view": "pages/raggiesoft-books/books/overview",
-        "title": "dream-kingdom - Library",
+        "view": "pages/raggiesoft-books/books/series",
+        "title": "dream-kingdom",
         "theme": ""
     }
 }

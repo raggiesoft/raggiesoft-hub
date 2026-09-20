@@ -10,8 +10,8 @@
         "footer": "raggiesoft-books/footer-books"
     },
     "/raggiesoft-books/books/alex-chloe": {
-        "view": "pages/raggiesoft-books/books/overview",
-        "title": "alex-chloe - Library",
+        "view": "pages/raggiesoft-books/books/series",
+        "title": "alex-chloe",
         "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b001/c001/p001": {
