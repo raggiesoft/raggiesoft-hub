@@ -48,7 +48,8 @@ $imagesJson = htmlspecialchars(json_encode($heroImages), ENT_QUOTES, 'UTF-8');
     }
 
     .hero-bg-layer {
-        position: fixed;
+        position: absolute;
+        background-attachment: fixed;
         top: 0;
         left: 0;
         width: 100%;
