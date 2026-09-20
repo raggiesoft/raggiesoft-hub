@@ -3,6 +3,55 @@
 // The Fan-Centric Hub of Engine Room Records.
 
 $pageTitle = "Engine Room Records™ | Loud. Raw. Real.";
+
+// Fetch the latest albums dynamically from the master catalog
+$masterCatalogPath = __DIR__ . '/../../../raggiesoft-assets/engine-room-records/json/master-catalog.json';
+$masterCatalog = file_exists($masterCatalogPath) ? json_decode(file_get_contents($masterCatalogPath), true) : [];
+
+$artistsMap = [];
+foreach ($masterCatalog as $track) {
+    $slug = $track['artistSlug'] ?? '';
+    $persona = $track['artistPersona'] ?? '';
+    if (!empty($slug) && !empty($persona)) {
+        $artistsMap[$slug] = $persona;
+    }
+}
+
+$latestAlbums = [];
+foreach ($artistsMap as $slug => $persona) {
+    $albumsPath = __DIR__ . "/../../../raggiesoft-assets/engine-room-records/artists/{$slug}/albums.json";
+    if (file_exists($albumsPath)) {
+        $albumsData = json_decode(file_get_contents($albumsPath), true);
+        
+        $allAlbums = [];
+        foreach ($albumsData as $eraKey => $eraData) {
+            if (isset($eraData['albums'])) {
+                foreach ($eraData['albums'] as $album) {
+                    $allAlbums[] = $album;
+                }
+            }
+        }
+        
+        usort($allAlbums, function($a, $b) {
+            $yearA = intval($a['year'] ?? 0);
+            $yearB = intval($b['year'] ?? 0);
+            return $yearB - $yearA;
+        });
+        
+        if (count($allAlbums) > 0) {
+            $latest = $allAlbums[0];
+            $latest['artistPersona'] = $persona;
+            $latestAlbums[] = $latest;
+        }
+    }
+}
+
+// Sort latest albums by narrative year descending
+usort($latestAlbums, function($a, $b) {
+    $yearA = intval($a['year'] ?? 0);
+    $yearB = intval($b['year'] ?? 0);
+    return $yearB - $yearA;
+});
 ?>
 
 <script type="application/ld+json">
@@ -130,7 +179,7 @@ $pageTitle = "Engine Room Records™ | Loud. Raw. Real.";
 
 <div class="container pb-5">
     
-    <div class="row mb-4" id="latest-transmissions">
+        <div class="row mb-4" id="latest-transmissions">
         <div class="col-12 d-flex justify-content-between align-items-end border-bottom border-secondary-subtle pb-2">
             <h2 class="h4 text-uppercase fw-bold mb-0 text-body-emphasis">
                 <i class="fa-duotone fa-satellite-dish me-2 text-primary"></i>Now Spinning
@@ -138,61 +187,47 @@ $pageTitle = "Engine Room Records™ | Loud. Raw. Real.";
         </div>
     </div>
 
-    <div class="row g-4 mb-5">
-        <div class="col-lg-6">
-            <div class="card h-100 border-0 shadow-sm bg-body-tertiary overflow-hidden">
-                <div class="row g-0 h-100">
-                    <div class="col-sm-5">
-                        <img src="<?php echo $cdnBaseUrl; ?>/engine-room-records/artists/the-stardust-engine/1997-hard-reset/album-art.jpg" 
-                             class="img-fluid h-100 object-fit-cover border-end border-secondary-subtle" 
-                             alt="Hard Reset Album Art">
-                    </div>
-                    <div class="col-sm-7 d-flex flex-column">
-                        <div class="card-body p-4">
-                            <span class="badge bg-warning text-dark mb-2 font-monospace">1997 / 2026 REMASTER</span>
-                            <h3 class="h5 fw-bold text-uppercase mb-1">Hard Reset</h3>
-                            <p class="text-primary small fw-bold text-uppercase mb-3">The Stardust Engine&trade;</p>
-                            <p class="card-text small text-body-secondary mb-0">
-                                The triumphant commercial comeback. A double-album featuring the relentless rock of "Terrestrial Velocity" and the zero-gravity progressive suite "Ad Astra."
-                            </p>
-                        </div>
-                        <div class="card-footer bg-transparent border-0 pb-4 px-4 pt-0">
-                            <a href="/engine-room/artists/stardust-engine/discography/1997-hard-reset" class="btn btn-sm btn-outline-primary w-100 rounded-pill fw-bold">
-                                <i class="fa-duotone fa-compact-disc me-2"></i>Explore Album
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <style>
+        wa-card::part(base) { height: 100%; display: flex; flex-direction: column; }
+        wa-card::part(body) { flex: 1 1 auto; display: flex; flex-direction: column; }
+    </style>
 
-        <div class="col-lg-6">
-            <div class="card h-100 border-0 shadow-sm bg-body-tertiary overflow-hidden">
-                <div class="row g-0 h-100">
-                    <div class="col-sm-5 bg-dark d-flex align-items-center justify-content-center border-end border-secondary-subtle">
+    <div class="row g-4 mb-5">
+        <?php foreach ($latestAlbums as $album): ?>
+        <div class="col-12 col-md-6 col-lg-3 d-flex align-items-stretch">
+            <wa-card class="h-100 border border-secondary shadow-sm bg-transparent w-100 p-0 hover-card" style="--wa-panel-bg: transparent; --body-padding: 0; --header-padding: 0;">
+                <?php if (!empty($album['img'])): ?>
+                    <img src="<?php echo htmlspecialchars($album['img']); ?>" class="img-fluid border-bottom" alt="<?php echo htmlspecialchars($album['title']); ?> Album Art" style="object-fit: cover; width: 100%; aspect-ratio: 1/1;">
+                <?php else: ?>
+                    <div class="bg-dark d-flex align-items-center justify-content-center border-bottom" style="width: 100%; aspect-ratio: 1/1;">
                         <i class="fa-duotone fa-waveform-lines fa-4x text-danger opacity-50"></i>
                     </div>
-                    <div class="col-sm-7 d-flex flex-column">
-                        <div class="card-body p-4">
-                            <span class="badge bg-danger mb-2 font-monospace">NARRATIVE ROCK OPERA</span>
-                            <h3 class="h5 fw-bold text-uppercase mb-1">Static & Silence</h3>
-                            <p class="text-danger small fw-bold text-uppercase mb-3">The Paper Wall&trade;</p>
-                            <p class="card-text small text-body-secondary mb-0">
-                                A harrowing, autobiographical concept album detailing survival, escape, and the brutal journey to find a safe harbor. 
-                            </p>
-                        </div>
-                        <div class="card-footer bg-transparent border-0 pb-4 px-4 pt-0">
-                            <button class="btn btn-sm btn-outline-secondary w-100 rounded-pill fw-bold" disabled>
-                                <i class="fa-solid fa-lock me-2"></i>Archive Pending
-                            </button>
-                        </div>
+                <?php endif; ?>
+                <div class="d-flex flex-column h-100 p-3 bg-body-tertiary">
+                    <span class="badge bg-warning text-dark mb-2 font-monospace" style="align-self: flex-start;"><?php echo htmlspecialchars($album['year'] ?? 'TBA'); ?> RELEASE</span>
+                    <h3 class="h6 fw-bold text-uppercase mb-1"><?php echo htmlspecialchars($album['title']); ?></h3>
+                    <p class="text-primary small fw-bold text-uppercase mb-3"><?php echo htmlspecialchars($album['artistPersona']); ?>&trade;</p>
+                    <p class="card-text small text-body-secondary mb-3">
+                        <?php echo htmlspecialchars($album['description'] ?? ''); ?>
+                    </p>
+                    <div class="mt-auto pt-3">
+                        <?php if (!empty($album['url'])): ?>
+                            <wa-button href="<?php echo htmlspecialchars($album['url']); ?>" variant="neutral" class="w-100">
+                                <i class="fa-duotone fa-compact-disc me-2" slot="prefix"></i> Explore
+                            </wa-button>
+                        <?php else: ?>
+                            <wa-button disabled variant="neutral" class="w-100">
+                                <i class="fa-solid fa-lock me-2" slot="prefix"></i> In Vault
+                            </wa-button>
+                        <?php endif; ?>
                     </div>
                 </div>
-            </div>
+            </wa-card>
         </div>
+        <?php endforeach; ?>
     </div>
 
-    <div class="row mb-4 mt-5" id="roster">
+<div class="row mb-4 mt-5" id="roster">
         <div class="col-12 d-flex justify-content-between align-items-end border-bottom border-secondary-subtle pb-2">
             <h2 class="h4 text-uppercase fw-bold mb-0 text-body-emphasis">
                 <i class="fa-duotone fa-users me-2 text-info"></i>The Collective

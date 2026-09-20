@@ -53,7 +53,7 @@ $nav = [
                     <em>The storage closet? On the right side of the stage?</em> 
                 </p>
                 <p>
-                    To get onto the auditorium stage from this hallway, there was a mandatory descent of three steep, concrete stairs. It was physically impossible to navigate a 150-pound teenager in a rigid manual wheelchair down those steps without catastrophic injury. Furthermore, Matt was officially eighteen as of yesterday. He was a legally protected adult under a massive conservatorship. What she was offering wasn't just physically absurd; it was a terrifying, exploitative legal violation. 
+                    To get onto the auditorium stage from this hallway, there was a mandatory descent of three steep, concrete stairs. It was physically impossible to navigate a 150-pound teenager in a rigid manual wheelchair down those steps without catastrophic injury. Furthermore, Matt was officially eighteen as of yesterday. He was a legally protected adult under a strict legal guardianship. What she was offering wasn't just physically absurd; it was a terrifying, exploitative legal violation. 
                 </p>
                 <p>
                     Matt squeezed his eyes shut, his hum growing louder and sharper in distress. He couldn't vocalize the absurdity of her plan, and he couldn't physically push her away.
@@ -127,7 +127,7 @@ $nav = [
                     Bernard’s expression instantly dropped into a cold, hard mask of absolute fury. He looked up at Vance.
                 </p>
                 <p>
-                    "I walked out of the restroom just as she was trapping him against the wall," Vance confirmed, his voice grave. "I chased her off before it escalated. But she was actively soliciting him, Bernard. An eighteen-year-old disabled adult under a state conservatorship."
+                    "I walked out of the restroom just as she was trapping him against the wall," Vance confirmed, his voice grave. "I chased her off before it escalated. But she was actively soliciting him, Bernard. An eighteen-year-old disabled adult under a state guardianship."
                 </p>
                 <p>
                     Bernard took a slow, deep breath, rubbing his temples. The legal and ethical magnitude of what Courtney had just attempted was staggering. If Matt's mother or sister found out about this before the school handled it, the resulting legal explosion would level the entire building.
@@ -167,7 +167,7 @@ $nav = [
                     Bernard sat behind his desk, his expression devoid of its usual warmth. The phone receiver was pressed to his ear. 
                 </p>
                 <p>
-                    "Yes, Mrs. Evans," Bernard said, his voice calm and unyielding. "She explicitly solicited him for a sexual encounter in an abandoned auditorium storage closet. Aside from the severe behavioral violation, Matt Miller is a legally protected adult under a conservatorship. We are treating this with the utmost severity."
+                    "Yes, Mrs. Evans," Bernard said, his voice calm and unyielding. "She explicitly solicited him for a sexual encounter in an abandoned auditorium storage closet. Aside from the severe behavioral violation, Matt Miller is a legally protected adult under a guardianship. We are treating this with the utmost severity."
                 </p>
                 <p>
                     Courtney leaned forward, her hands shaking. "Mr. Morgan! Please!?" she begged, her desperation completely overriding the fact that he insisted on being called Bernard. "I didn't mean it like that! I was just trying to fix things! Please don't take cheer away, it’s all I have!"
