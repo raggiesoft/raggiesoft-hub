@@ -53,6 +53,9 @@ if (preg_match('/^---\s*[
     }
 }
 
+// Support dynamic CDN variables in Markdown
+$mdContent = str_replace('{{CDN}}', $cdnBaseUrl, $mdContent);
+
 // 4. Render HTML
 require_once ROOT_PATH . '/includes/classes/stardust-parsedown.php';
 $Parsedown = new StardustParsedown();
@@ -85,7 +88,12 @@ $overviewUrl = dirname($request_uri, 3); // Backs out of /b001/c001/p001
     </div>
 
     <!-- Main Content Reader -->
-    <wa-card class="w-100 mb-4 border-0 shadow-sm" style="--body-padding: 0;">
+    <wa-card class="w-100 mb-4 border-0 shadow-sm overflow-hidden" style="--body-padding: 0;">
+        <?php if (!empty($frontmatter['hero_image'])): 
+            $heroSrc = str_replace('{{CDN}}', $cdnBaseUrl, $frontmatter['hero_image']);
+        ?>
+            <div class="w-100" style="height: 350px; background-image: url('<?php echo htmlspecialchars($heroSrc); ?>'); background-size: cover; background-position: center; border-bottom: 3px solid var(--bs-primary);"></div>
+        <?php endif; ?>
         <div class="p-4 p-md-5 fs-5 lh-lg story-content bg-body-tertiary text-body">
             <!-- Title Header -->
             <div class="text-center mb-5 pb-3 border-bottom border-secondary-subtle">

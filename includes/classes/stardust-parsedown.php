@@ -163,6 +163,36 @@ class StardustParsedown extends Parsedown {
     }
 
     
+    // NEW EXTENSION: Handle Image Formatting via URL Hashes (#fullwidth, #inline)
+    protected function inlineImage($Excerpt) {
+        $Image = parent::inlineImage($Excerpt);
+        if (!$Image) return $Image;
+
+        $src = $Image['element']['attributes']['src'];
+        
+        // Default styling for standard images
+        $classes = 'img-fluid rounded shadow border border-secondary my-4';
+        $style = 'max-width: 80%; display: block; margin: 0 auto;';
+        
+        if (strpos($src, '#fullwidth') !== false) {
+            $classes = 'img-fluid rounded shadow border border-secondary my-4 w-100';
+            $style = 'display: block;';
+            $Image['element']['attributes']['src'] = str_replace('#fullwidth', '', $src);
+        } elseif (strpos($src, '#inline') !== false) {
+            $classes = 'img-fluid rounded shadow ms-4 mb-3 float-md-end';
+            $style = 'max-width: 350px;';
+            $Image['element']['attributes']['src'] = str_replace('#inline', '', $src);
+        }
+        
+        $Image['element']['attributes']['class'] = $classes;
+        if ($style) {
+            $Image['element']['attributes']['style'] = $style;
+        }
+
+        // We wrap it in a figure so the float doesn't break everything, or just return the image
+        return $Image;
+    }
+
     // Pre-process shortcodes before Parsedown gets confused by raw HTML blocks
     public function text($text) {
         // Pre-process [credential ...] shortcodes anywhere in the text
