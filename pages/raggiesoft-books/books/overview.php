@@ -1,17 +1,61 @@
 <?php
 // pages/raggiesoft-books/books/overview.php
 // Contemporary Fiction Library
+
+$heroImages = [
+    $cdnBaseUrl . "/raggiesoft-books/images/library-hero/1.jpg",
+    $cdnBaseUrl . "/raggiesoft-books/images/library-hero/2.jpg"
+];
+$startImage = !empty($heroImages) 
+    ? $heroImages[array_rand($heroImages)] 
+    : $cdnBaseUrl . "/common/patterns/stars-transparent.png";
+$imagesJson = htmlspecialchars(json_encode($heroImages), ENT_QUOTES, 'UTF-8');
 ?>
-<div class="container py-5">
-    <div class="row mb-5 text-center">
-        <div class="col-12">
-            <h1 class="display-4 fw-bold ova-serif ova-text-bronze mb-3">Contemporary Library</h1>
-            <p class="lead text-muted mx-auto" style="max-width: 600px;">
-                The grounded, real-world archives of RaggieSoft Media.
-            </p>
-            <hr class="my-4 border-secondary opacity-50 w-50 mx-auto">
+<style>
+    /* =====================================================================
+       BRUTE FORCE READABILITY ARMOR
+       These classes ensure the hero section text, backgrounds, and borders
+       remain highly visible over the rotating background images
+       ===================================================================== */
+    .force-text-light { color: #ffffff !important; }
+    .force-text-muted { color: rgba(255, 255, 255, 0.75) !important; }
+    
+    .force-glass-bg {
+        background-color: rgba(0, 0, 0, 0.65) !important;
+        backdrop-filter: blur(8px) !important;
+    }
+
+    .force-border-default { border: 1px solid rgba(255, 255, 255, 0.1) !important; }
+
+    .force-shadow-heavy {
+        text-shadow: 0px 4px 15px rgba(0,0,0,0.9), 0px 1px 3px rgba(0,0,0,1) !important;
+    }
+    .force-shadow-medium {
+        text-shadow: 0px 2px 8px rgba(0,0,0,0.9) !important;
+    }
+</style>
+
+<div class="immersive-container hero-rotator-container mb-5" data-images="<?php echo $imagesJson; ?>">
+    <div class="hero-bg-layer hero-bg-layer-1" style="background-image: url('<?php echo $startImage; ?>');"></div>
+    <div class="hero-bg-layer hero-bg-layer-2" style="background-image: url(''); opacity: 0;"></div>
+    <div class="hero-overlay"></div>
+
+    <div class="content-wrapper container py-5 mt-5">
+        <div class="text-center d-flex justify-content-center">
+            <div class="force-glass-bg force-border-default p-4 rounded-4 shadow-lg">
+                <h1 class="display-3 fw-bold text-uppercase force-text-light force-shadow-heavy mb-2" style="font-family: 'Audiowide', cursive;">
+                    Contemporary Library
+                </h1>
+                <p class="lead force-text-light fw-semibold force-shadow-medium mx-auto mb-0" style="max-width: 700px;">
+                    The grounded, real-world archives of RaggieSoft Media.
+                </p>
+            </div>
         </div>
     </div>
+</div>
+<script src="<?php echo $cdnBaseUrl; ?>/common/js/hero-image.js"></script>
+
+<div class="container pb-5">
 
     <div class="row g-4 justify-content-center">
         <?php

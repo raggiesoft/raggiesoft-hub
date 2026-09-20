@@ -233,6 +233,16 @@
       "is_public": true
     },
     {
+      "id": "evans-joanne",
+      "name": "Joanne Evans",
+      "subtitle": "Unknown Role",
+      "narratives": [],
+      "tags": [],
+      "image_path": "",
+      "markdown_file": "",
+      "is_public": false
+    },
+    {
       "id": "demarco-mrs",
       "name": "Mrs Demarco",
       "subtitle": "",
