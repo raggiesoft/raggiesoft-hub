@@ -113,5 +113,30 @@
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 7: The Final Transfer \u2013 9:00 PM",
         "theme": ""
+    },
+    "/raggiesoft-books/books/crimson-node/b001/c005/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The New Hierarchy \u2013 3:00 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/crimson-node/b001/c005/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Empathy Drill \u2013 4:00 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/crimson-node/b001/c005/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Ghost Letter \u2013 6:30 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/crimson-node/b001/c005/p004": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: The Empty Frame \u2013 8:00 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/crimson-node/b001/c005/p005": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 5: The Thunderstorm \u2013 11:00 PM",
+        "theme": ""
     }
 }
