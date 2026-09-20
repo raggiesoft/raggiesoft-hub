@@ -28,7 +28,32 @@ if ($mdContent === false) {
     return;
 }
 
-// 3. Render HTML
+// 3. Parse YAML Frontmatter
+$frontmatter = [];
+if (preg_match('/^---\s*[
+]+(.*?)[
+]+---\s*[
+]+/s', $mdContent, $matches)) {
+    $rawFrontmatter = $matches[1];
+    $mdContent = substr($mdContent, strlen($matches[0])); // Strip it from the content
+    
+    // Parse key-value pairs manually since php-yaml may not be available
+    $lines = explode("\n", $rawFrontmatter);
+    foreach ($lines as $line) {
+        $line = trim($line);
+        if (strpos($line, ':') !== false) {
+            list($key, $val) = explode(':', $line, 2);
+            $key = trim($key);
+            $val = trim($val);
+            $val = trim($val, '"\''); // remove surrounding quotes
+            if ($val !== '') {
+                $frontmatter[$key] = $val;
+            }
+        }
+    }
+}
+
+// 4. Render HTML
 require_once ROOT_PATH . '/includes/classes/stardust-parsedown.php';
 $Parsedown = new StardustParsedown();
 $htmlContent = $Parsedown->text($mdContent);
@@ -66,8 +91,29 @@ $overviewUrl = dirname($request_uri, 3); // Backs out of /b001/c001/p001
             <div class="text-center mb-5 pb-3 border-bottom border-secondary-subtle">
                 <h1 class="font-heading fw-bold mb-2"><?php echo htmlspecialchars($config['title'] ?? 'Untitled Chapter'); ?></h1>
                 <?php if ($sequenceName): ?>
-                    <div class="text-body-secondary small text-uppercase tracking-wider">
+                    <div class="text-body-secondary small text-uppercase tracking-wider mb-3">
                         <?php echo htmlspecialchars($sequenceName); ?>
+                    </div>
+                <?php endif; ?>
+                
+                <?php if (!empty($frontmatter['date']) || !empty($frontmatter['start_time']) || !empty($frontmatter['pov'])): ?>
+                    <div class="d-flex flex-wrap justify-content-center gap-3 text-body-secondary small fw-semibold">
+                        <?php if (!empty($frontmatter['date'])): ?>
+                            <span><wa-icon name="calendar-day" class="me-1"></wa-icon> <?php echo htmlspecialchars($frontmatter['date']); ?></span>
+                        <?php endif; ?>
+                        
+                        <?php if (!empty($frontmatter['start_time'])): ?>
+                            <span>
+                                <wa-icon name="clock" class="me-1"></wa-icon> 
+                                <?php echo htmlspecialchars($frontmatter['start_time']); ?>
+                                <?php if (!empty($frontmatter['end_time'])): ?> - <?php echo htmlspecialchars($frontmatter['end_time']); ?><?php endif; ?>
+                                <?php echo htmlspecialchars($frontmatter['timezone'] ?? ''); ?>
+                            </span>
+                        <?php endif; ?>
+                        
+                        <?php if (!empty($frontmatter['pov'])): ?>
+                            <span><wa-icon name="eye" class="me-1"></wa-icon> POV: <?php echo htmlspecialchars($frontmatter['pov']); ?></span>
+                        <?php endif; ?>
                     </div>
                 <?php endif; ?>
             </div>
