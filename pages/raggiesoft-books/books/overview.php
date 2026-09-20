@@ -33,7 +33,47 @@ $imagesJson = htmlspecialchars(json_encode($heroImages), ENT_QUOTES, 'UTF-8');
     .force-shadow-medium {
         text-shadow: 0px 2px 8px rgba(0,0,0,0.9) !important;
     }
+
+    .immersive-container {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        background-color: #000;
+        min-height: 400px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .hero-bg-layer {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        transition: opacity 2s ease-in-out; 
+        z-index: 0;
+    }
+
+    .hero-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        background: linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.8));
+    }
+    
+    .content-wrapper {
+        position: relative;
+        z-index: 2;
+    }
 </style>
+
 
 <div class="immersive-container hero-rotator-container mb-5" data-images="<?php echo $imagesJson; ?>">
     <div class="hero-bg-layer hero-bg-layer-1" style="background-image: url('<?php echo $startImage; ?>');"></div>
