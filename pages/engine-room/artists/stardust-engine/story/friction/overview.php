@@ -97,11 +97,11 @@ $articleSchema = [
                         <div slot="header" class="bg-danger bg-opacity-10 text-danger-emphasis fw-bold p-3 border-bottom border-danger">
                             <i class="fa-duotone fa-image-polaroid me-2"></i>The Fatal Assumption
                         </div>
-                        <img slot="image" src="<?php echo $promo_1989; ?>" 
-                            class="card-img-top p-0" 
+                        <img src="<?php echo $promo_1989; ?>" 
+                            class="card-img-top p-0 border-bottom border-danger" 
                             style="aspect-ratio: 1/1; object-fit: cover;"
                             alt="1989 Promo Photo of Ryan and Cassidy smiling together.">
-                        <div>
+                        <div class="p-3">
                             <h6 class="fw-bold">Exhibit A: The '89 Promo</h6>
                             <p class="card-text small text-body-secondary">
                                 Vance based his entire campaign on this 1989 press photo—taken before Ryan's accident. Vance assumed the band's dynamic was a stage act, and that Ryan and Cassidy were a married couple.
@@ -116,12 +116,12 @@ $articleSchema = [
                             <i class="fa-duotone fa-shuttle-space me-2"></i>The Band's Vision
                         </div>
                         <div class="position-relative">
-                            <img slot="image" src="<?php echo $intended_art; ?>" 
-                                class="card-img-top p-0 bg-white" 
+                            <img src="<?php echo $intended_art; ?>" 
+                                class="card-img-top p-0 bg-white border-bottom border-info" 
                                 style="aspect-ratio: 1/1; object-fit: cover;"
                                 alt="Cassidy's drawing of a space shuttle re-entering atmosphere with a trail of fire.">
                         </div>
-                        <div>
+                        <div class="p-3">
                             <h6 class="fw-bold">Exhibit B: Re-Entry Heat</h6>
                             <p class="card-text small text-body-secondary">
                                 When Vance pitched the title <em>Friction</em>, the band thought they were finally making a sci-fi record. Cassidy drew this concept art depicting the thermal friction of a shuttle hull re-entering the atmosphere.
