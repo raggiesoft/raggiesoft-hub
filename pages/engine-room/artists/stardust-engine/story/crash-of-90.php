@@ -40,8 +40,8 @@ $pageTitle = "The Crash of '90 - The Stardust Engine Lore";
                     <div class="text-body-secondary">
                         <p class="mb-2"><strong class="text-body-emphasis">CONDITIONS:</strong> Heavy Snow, Visibility < 50ft. Road surface iced. Winter Weather Ban pending.</p>
                         <p class="mb-2"><strong class="text-body-emphasis">VEHICLE 1 (Victim):</strong> 1988 Holt Freighter Van (Touring Vehicle). Traveling North at approx 40 MPH in right lane. Hazard lights active.</p>
-                        <p class="mb-2"><strong class="text-body-emphasis">VEHICLE 2 (At Fault):</strong> Commercial Sedan. Traveling North at est. 65-70 MPH. Driver lost control attempting to pass, clipping Vehicle 1's rear quarter panel.</p>
-                        <p class="mb-0"><strong class="text-body-emphasis">OUTCOME:</strong> Vehicle 1 spun off roadway, rolling twice into the embankment. Driver (R. O'Connell) pinned requiring extraction. Four passengers sustained minor injuries. Driver airlifted to Star City General Hospital.</p>
+                        <p class="mb-2"><strong class="text-body-emphasis">VEHICLE 2 (At Fault):</strong> Commercial Sedan. Traveling North at est. 70-75 MPH (speed calculated via crush depth analysis and debris field vectoring). Driver lost control attempting to pass, clipping Vehicle 1's rear quarter panel.</p>
+                        <p class="mb-0"><strong class="text-body-emphasis">OUTCOME:</strong> Vehicle 1 spun off roadway, rolling twice into the embankment. Driver (R. O'Connell) pinned and required hydraulic extrication (Jaws of Life). Four passengers sustained minor injuries. Driver airlifted to Star City General Hospital.</p>
                     </div>
                 </div>
             </div>

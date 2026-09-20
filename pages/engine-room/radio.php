@@ -14,7 +14,8 @@ $station_roster = [
     'the-stardust-engine', 
     'fractured-prisms',
     'firelight',
-    'the-paper-wall'
+    'the-paper-wall',
+    'crimson-node'
 ];
 
 $master_playlist = []; 
@@ -169,21 +170,21 @@ if ($d >= 2) {
             </div>
         </div>
         <div class="mt-4">
-            <button class="btn btn-lg btn-outline-warning rounded-pill px-5 shadow-glow btn-play-index" data-index="0">
-                <i class="fa-solid fa-play me-2"></i>TUNE IN
-            </button>
+            <wa-button size="large" variant="warning" outline class="rounded-pill px-5 shadow-glow btn-play-index" data-index="0">
+                <i slot="prefix" class="fa-solid fa-play"></i>TUNE IN
+            </wa-button>
         </div>
     </div>
     <div class="container py-5">
         <div class="row justify-content-center">
             <div class="col-lg-10">
-                <div class="card bg-body-tertiary border-secondary shadow-lg">
-                    <div class="card-header bg-transparent border-bottom border-secondary p-3 d-flex justify-content-between align-items-center">
+                <wa-card class="bg-body-tertiary border-secondary shadow-lg w-100" style="--header-padding: 0; --body-padding: 0;">
+                    <div slot="header" class="bg-transparent border-bottom border-secondary p-3 d-flex justify-content-between align-items-center">
                         <h5 class="text-body-emphasis mb-0 text-uppercase"><i class="fa-duotone fa-list-music me-2"></i>The Broadcast Queue</h5>
-                        <span class="badge bg-primary text-light font-monospace"><?php echo count($master_playlist); ?> Tracks</span>
+                        <wa-badge variant="primary" class="font-monospace"><?php echo count($master_playlist); ?> Tracks</wa-badge>
                     </div>
                     
-                    <div class="card-body p-0" style="max-height: 700px; overflow-y: auto;">
+                    <div class="p-0" style="max-height: 700px; overflow-y: auto;">
                         <div class="list-group list-group-flush bg-transparent">
                             <?php foreach ($master_playlist as $index => $track): ?>
                                 <button type="button" 
@@ -218,7 +219,7 @@ if ($d >= 2) {
                             <?php endforeach; ?>
                         </div>
                     </div>
-                </div>
+                </wa-card>
             </div>
         </div>
     </div>
