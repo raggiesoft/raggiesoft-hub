@@ -1,7 +1,10 @@
 {
     "common": {
         "site": "stardust-engine",
-        "brandFont": ["Audiowide", "sans-serif"],
+        "brandFont": [
+            "Audiowide",
+            "sans-serif"
+        ],
         "siteName": "The Stardust Engine",
         "headerMenu": "engine-room/artists/stardust-engine/header-stardust",
         "footer": "engine-room/artists/stardust-engine/footer-stardust",
@@ -108,6 +111,26 @@
         "upc": "825324114857",
         "narrativeReleaseDate": "2001",
         "realReleaseDate": "2026-05-01"
+    },
+    "/engine-room/artists/stardust-engine/discography/2003-moon-1-sanctuary-zero-g": {
+        "view": "pages/engine-room/artists/stardust-engine/discography/2003-moon-1-sanctuary-zero-g",
+        "title": "Moon 1: Sanctuary Zero G (2003) | The Stardust Engine",
+        "ogTitle": "Moon 1: Sanctuary Zero G - The 2003 Album",
+        "ogImage": "/engine-room-records/artists/the-stardust-engine/2003-sanctuary-zero-g/social-preview.jpg",
+        "schemaType": "MusicAlbum",
+        "albumFilter": "Moon 1: Sanctuary Zero G",
+        "narrativeReleaseDate": "2003",
+        "realReleaseDate": "2026-06-03"
+    },
+    "/engine-room/artists/stardust-engine/discography/2003-moon-2-mile-marker-98": {
+        "view": "pages/engine-room/artists/stardust-engine/discography/2003-moon-2-mile-marker-98",
+        "title": "Moon 2: Mile Marker 98 (2003) | The Stardust Engine",
+        "ogTitle": "Moon 2: Mile Marker 98 - The 2003 Album",
+        "ogImage": "/engine-room-records/artists/the-stardust-engine/2003-mile-marker-98/social-preview.jpg",
+        "schemaType": "MusicAlbum",
+        "albumFilter": "Moon 2: Mile Marker 98",
+        "narrativeReleaseDate": "2003",
+        "realReleaseDate": "2026-06-03"
     },
     "/engine-room/artists/stardust-engine/discography/2007-lost-sounds": {
         "view": "pages/engine-room/artists/stardust-engine/discography/2007-lost-sounds",

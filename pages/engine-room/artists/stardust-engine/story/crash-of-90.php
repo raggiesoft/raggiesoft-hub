@@ -18,7 +18,7 @@ $pageTitle = "The Crash of '90 - The Stardust Engine Lore";
                 The Crash of '90
             </h1>
             <p class="lead text-body-secondary font-monospace mt-2">
-                December 10, 1990 // Interstate 81 // Mile Marker 98
+                December 10, 1990 <span aria-hidden="true" class="mx-1 opacity-50">//</span><span class="visually-hidden">,</span> Interstate 81 <span aria-hidden="true" class="mx-1 opacity-50">//</span><span class="visually-hidden">,</span> <a href="/engine-room/artists/stardust-engine/discography/2003-moon-2-mile-marker-98" class="text-decoration-none text-body-secondary fw-bold border-bottom border-secondary border-dashed" title="View the album inspired by this event">Mile Marker 98</a>
             </p>
         </div>
     </div>
@@ -27,7 +27,7 @@ $pageTitle = "The Crash of '90 - The Stardust Engine Lore";
         <div class="col-lg-10">
             <div class="card bg-body-tertiary border-danger shadow-lg">
                 <div class="card-header bg-danger bg-opacity-10 text-danger-emphasis border-bottom border-danger fw-bold d-flex justify-content-between align-items-center">
-                    <span><i class="fa-duotone fa-file-medical-alt me-2 text-danger"></i>Virginia State Police // Report #90-81-114</span>
+                    <span><i class="fa-duotone fa-file-medical-alt me-2 text-danger"></i>Virginia State Police <span aria-hidden="true" class="mx-1 opacity-50">//</span><span class="visually-hidden">,</span> Report #90-81-114</span>
                     <wa-badge variant="danger">CRITICAL</wa-badge>
                 </div>
                 <div class="card-body font-monospace small text-body-secondary p-4">
@@ -63,6 +63,29 @@ $pageTitle = "The Crash of '90 - The Stardust Engine Lore";
     </div>
 
     <div class="row justify-content-center mb-5">
+        <div class="col-lg-9">
+            <wa-card class="bg-body border-info shadow-sm w-100 p-0 overflow-hidden">
+                <div class="d-flex flex-column flex-md-row align-items-center">
+                    <img src="<?php echo $cdnBaseUrl; ?>/engine-room-records/artists/the-stardust-engine/2003-mile-marker-98/album-art.jpg" 
+                        alt="Mile Marker 98 Album Art" 
+                        class="img-fluid border-end border-info" 
+                        style="max-width: 200px; aspect-ratio: 1/1; object-fit: cover;">
+                    <div class="p-4">
+                        <wa-badge variant="info" class="mb-2">Discography Link</wa-badge>
+                        <h4 class="fw-bold mb-2 text-body-emphasis">Mile Marker 98</h4>
+                        <p class="text-body-secondary small mb-3">
+                            Years later, Ryan would process the trauma of this night through his music. The critically acclaimed concept album <em>Mile Marker 98</em> reimagines the violent highway crash as a tragic malfunction aboard a spacecraft drifting through the vast cosmos.
+                        </p>
+                        <wa-button variant="info" outline href="/engine-room/artists/stardust-engine/discography/2003-moon-2-mile-marker-98">
+                            <i class="fa-duotone fa-compact-disc me-2"></i>Explore the Album
+                        </wa-button>
+                    </div>
+                </div>
+            </wa-card>
+        </div>
+    </div>
+
+    <div class="row justify-content-center mb-5">
         <div class="col-lg-8">
             <wa-card class="bg-body border-secondary shadow-lg transform-rotate-1 p-0">
                 <img src="<?php echo $cdnBaseUrl; ?>/stardust-engine/images/story/crash-of-1990.jpg" 
@@ -72,7 +95,7 @@ $pageTitle = "The Crash of '90 - The Stardust Engine Lore";
                     
                 <div class="text-center p-3">
                     <p class="font-monospace text-danger small fw-bold mb-1" style="font-family: 'Courier New', monospace; letter-spacing: 1px;">
-                        DEC 18 '90 // STAR CITY GENERAL
+                        DEC 18 '90 <span aria-hidden="true" class="mx-1 opacity-50">//</span><span class="visually-hidden">,</span> STAR CITY GENERAL
                     </p>
                     
                     <p class="text-secondary mb-0 font-handwriting fst-italic" style="line-height: 1.2;">
