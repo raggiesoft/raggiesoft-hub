@@ -7,7 +7,7 @@ $pageTitle = "Engine Room Radio - The Console";
 
 // 1. CONFIGURATION
 if (!defined('ROOT_PATH')) define('ROOT_PATH', dirname(__DIR__)); 
-$cdn_root = "https://assets.raggiesoft.com/engine-room-records"; 
+$cdn_root = $cdnBaseUrl . "/engine-room-records"; 
 
 // Define the exact slugs for the artists currently in the catalog
 $station_roster = [
@@ -156,7 +156,7 @@ if ($d >= 2) {
 
 <div class="container-fluid p-0">
     <div class="p-5 text-center border-bottom border-secondary" 
-         style="background: linear-gradient(rgba(13, 17, 23, 0.8), rgba(13, 17, 23, 0.95)), url('https://assets.raggiesoft.com/stardust-engine/images/studio-rack.jpg'); background-size: cover; background-position: center;">
+         style="background: linear-gradient(rgba(13, 17, 23, 0.8), rgba(13, 17, 23, 0.95)), url($cdnBaseUrl . '/stardust-engine/images/studio-rack.jpg'); background-size: cover; background-position: center;">
         
         <h1 class="display-2 fw-bold text-uppercase text-warning mb-2" style="font-family: 'Audiowide', sans-serif;">
             <i class="fa-duotone fa-signal-stream me-3"></i>Engine Room Radio

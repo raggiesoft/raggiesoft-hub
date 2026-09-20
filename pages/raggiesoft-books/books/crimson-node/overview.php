@@ -20,7 +20,7 @@
         <div class="col-md-6 col-lg-5">
             <?php
             $props = [
-                'imgSrc' => 'https://assets.raggiesoft.com/engine-room-records/artists/crimson-node/2002-crimson-node/album-art.jpg',
+                'imgSrc' => $cdnBaseUrl . '/engine-room-records/artists/crimson-node/2002-crimson-node/album-art.jpg',
                 'imgAlt' => 'Crimson Node: The Illusion',
                 'fallbackText' => 'B1',
                 'title' => 'Book 1: The Illusion',
@@ -41,7 +41,7 @@
         <div class="col-md-6 col-lg-5">
             <?php
             $props = [
-                'imgSrc' => 'https://assets.raggiesoft.com/common/patterns/noise-subtle.png',
+                'imgSrc' => $cdnBaseUrl . '/common/patterns/noise-subtle.png',
                 'imgAlt' => 'Encrypted File',
                 'fallbackText' => 'B2',
                 'title' => 'Book 2: The Foundation',

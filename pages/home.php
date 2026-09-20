@@ -14,7 +14,7 @@ $pageTitle = "RaggieSoft&trade; | The Central Hub";
       "@id": "https://raggiesoft.com/#organization",
       "name": "RaggieSoft",
       "url": "https://raggiesoft.com/",
-      "logo": "https://assets.raggiesoft.com/common/logos/raggiesoft-logo.png",
+      "logo": "<?php echo $cdnBaseUrl; ?>/common/logos/raggiesoft-logo.png",
       "description": "The central hub for the code, music, and narrative universes of Michael P. Ragsdale.",
       "founder": {
         "@type": "Person",
@@ -154,11 +154,11 @@ $pageTitle = "RaggieSoft&trade; | The Central Hub";
 <section class="split-hero-container w-100" aria-label="Main Navigation Routing">
     
     <div class="split-pane bg-dark">
-        <div class="pane-bg" style="background-image: url('https://assets.raggiesoft.com/common/patterns/stars-transparent.png'); background-color: #0a0e14; background-size: auto;"></div>
+        <div class="pane-bg" style="background-image: url($cdnBaseUrl . '/common/patterns/stars-transparent.png'); background-color: #0a0e14; background-size: auto;"></div>
         <div class="pane-overlay"></div>
         
         <div class="pane-content d-flex flex-column align-items-center h-100 justify-content-center">
-            <img src="https://assets.raggiesoft.com/raggiesoft-corporate/images/logos/logo-michael.png" alt="Michael P. Ragsdale" class="rounded-circle border border-primary border-3 pane-avatar mb-3">
+            <img src= $cdnBaseUrl . "/raggiesoft-corporate/images/logos/logo-michael.png" alt="Michael P. Ragsdale" class="rounded-circle border border-primary border-3 pane-avatar mb-3">
             <h1 class="display-4 fw-bold text-uppercase brand-font hero-title mb-2">The Architect</h1>
             <h2 class="h5 fw-light text-primary mb-4 hero-text text-uppercase letter-spacing-1">Infrastructure & Operations</h2>
             <p class="lead hero-text text-white-75 mb-4">
@@ -176,11 +176,11 @@ $pageTitle = "RaggieSoft&trade; | The Central Hub";
     </div>
 
     <div class="split-pane bg-black">
-        <div class="pane-bg" style="background-image: url('https://assets.raggiesoft.com/stardust-engine/images/stardust-nebula.jpg');"></div>
+        <div class="pane-bg" style="background-image: url($cdnBaseUrl . '/stardust-engine/images/stardust-nebula.jpg');"></div>
         <div class="pane-overlay"></div>
         
         <div class="pane-content d-flex flex-column align-items-center h-100 justify-content-center">
-            <img src="https://assets.raggiesoft.com/family/images/logos/logo-family.png" alt="Michael and Paige" class="rounded-circle border border-danger border-3 pane-avatar mb-3">
+            <img src= $cdnBaseUrl . "/family/images/logos/logo-family.png" alt="Michael and Paige" class="rounded-circle border border-danger border-3 pane-avatar mb-3">
             <h1 class="display-4 fw-bold text-uppercase brand-font hero-title mb-2">Creative Works</h1>
             <h2 class="h5 fw-light text-danger mb-4 hero-text text-uppercase letter-spacing-1">Music & Narrative Lore</h2>
             <p class="lead hero-text text-white-75 mb-4">
@@ -226,7 +226,7 @@ $pageTitle = "RaggieSoft&trade; | The Central Hub";
       <div class="scroll-card">
         <?php
           $props = [
-            'imgSrc' => 'https://assets.raggiesoft.com/raggiesoft-corporate/images/logos/logo-michael.png',
+            'imgSrc' => $cdnBaseUrl . '/raggiesoft-corporate/images/logos/logo-michael.png',
             'imgAlt' => 'Michael P. Ragsdale',
             'fallbackText' => 'Portfolio',
             'title' => 'Michael P. Ragsdale',
@@ -246,7 +246,7 @@ $pageTitle = "RaggieSoft&trade; | The Central Hub";
       <div class="scroll-card theme-invert">
         <?php
           $props = [
-            'imgSrc' => 'https://assets.raggiesoft.com/engine-room-records/images/logos/engine-room-records-logo.png',
+            'imgSrc' => $cdnBaseUrl . '/engine-room-records/images/logos/engine-room-records-logo.png',
             'imgAlt' => 'Engine Room Records',
             'fallbackText' => 'Engine Room Records',
             'title' => 'Engine Room Records',
@@ -267,7 +267,7 @@ $pageTitle = "RaggieSoft&trade; | The Central Hub";
       <div class="scroll-card">
         <?php
           $props = [
-            'imgSrc' => 'https://assets.raggiesoft.com/engine-room-records/artists/the-stardust-engine/band-logo.png',
+            'imgSrc' => $cdnBaseUrl . '/engine-room-records/artists/the-stardust-engine/band-logo.png',
             'imgAlt' => 'The Stardust Engine',
             'fallbackText' => 'Stardust Engine',
             'title' => 'The Stardust Engine',
@@ -288,7 +288,7 @@ $pageTitle = "RaggieSoft&trade; | The Central Hub";
       <div class="scroll-card">
         <?php
           $props = [
-            'imgSrc' => 'https://assets.raggiesoft.com/engine-room-records/artists/crimson-node/2002-crimson-node/album-art.jpg',
+            'imgSrc' => $cdnBaseUrl . '/engine-room-records/artists/crimson-node/2002-crimson-node/album-art.jpg',
             'imgAlt' => 'Crimson Node',
             'fallbackText' => 'Crimson Node',
             'title' => 'Crimson Node',
@@ -308,7 +308,7 @@ $pageTitle = "RaggieSoft&trade; | The Central Hub";
       <div class="scroll-card">
         <?php
           $props = [
-            'imgSrc' => 'https://assets.raggiesoft.com/raggiesoft-books/images/logos/oceanview-archives.svg',
+            'imgSrc' => $cdnBaseUrl . '/raggiesoft-books/images/logos/oceanview-archives.svg',
             'imgAlt' => 'Ocean View Archives',
             'fallbackText' => 'Archives',
             'title' => 'Ocean View Archives',
@@ -328,7 +328,7 @@ $pageTitle = "RaggieSoft&trade; | The Central Hub";
        <div class="scroll-card">
         <?php
           $props = [
-            'imgSrc' => 'https://assets.raggiesoft.com/family/images/logos/logo-family.png',
+            'imgSrc' => $cdnBaseUrl . '/family/images/logos/logo-family.png',
             'imgAlt' => 'The RaggieSoft Family',
             'fallbackText' => 'Family',
             'title' => 'The DevOps Family',

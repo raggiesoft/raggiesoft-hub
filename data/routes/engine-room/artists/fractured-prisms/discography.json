@@ -9,10 +9,10 @@
     "headerMenu": "engine-room/artists/fractured-prisms/header-prisms",
     "footer": "engine-room/artists/fractured-prisms/footer-prisms",
     "showSidebar": false,
-    "navbarBrandLogo": "https://assets.raggiesoft.com/engine-room-records/artists/fractured-prisms/band-logo.jpg",
+    "navbarBrandLogo": "/engine-room-records/artists/fractured-prisms/band-logo.jpg",
     "navbarBrandText": "Fractured Prisms",
     "navbarBrandLink": "/engine-room/artists/fractured-prisms",
-    "ogImage": "https://assets.raggiesoft.com/engine-room-records/artists/fractured-prisms/1983-carnaby-street/album-art.jpg"
+    "ogImage": "/engine-room-records/artists/fractured-prisms/1983-carnaby-street/album-art.jpg"
   },
   "/engine-room/artists/fractured-prisms/discography": {
     "view": "pages/engine-room/artists/fractured-prisms/discography/overview",
@@ -23,7 +23,7 @@
     "view": "pages/engine-room/artists/fractured-prisms/discography/1983-carnaby-street",
     "title": "Carnaby Street (1983) | Fractured Prisms",
     "ogTitle": "Carnaby Street - The 1983 Debut Album",
-    "ogImage": "https://assets.raggiesoft.com/engine-room-records/artists/fractured-prisms/1983-carnaby-street/album-art.jpg",
+    "ogImage": "/engine-room-records/artists/fractured-prisms/1983-carnaby-street/album-art.jpg",
     "schemaType": "MusicAlbum",
     "albumFilter": "Carnaby Street",
     "upc": "825393798187",
@@ -34,7 +34,7 @@
     "view": "pages/engine-room/artists/fractured-prisms/discography/1984-1883",
     "title": "1883 (The Rock Opera) | Fractured Prisms",
     "ogTitle": "1883 - The 1984 Concept Album",
-    "ogImage": "https://assets.raggiesoft.com/engine-room-records/artists/fractured-prisms/1984-1883/album-art.jpg",
+    "ogImage": "/engine-room-records/artists/fractured-prisms/1984-1883/album-art.jpg",
     "schemaType": "MusicAlbum",
     "albumFilter": "1883",
     "narrativeReleaseDate": "1984"

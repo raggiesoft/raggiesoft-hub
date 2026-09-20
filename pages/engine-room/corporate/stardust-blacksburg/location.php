@@ -10,7 +10,7 @@ $pageTitle = "Location & Transit - Stardust Blacksburg";
     /* MAP PLACEHOLDER THEME */
     .transit-map-placeholder {
         background-color: #e9ecef;
-        background-image: url('https://assets.raggiesoft.com/common/patterns/topography.png');
+        background-image: url($cdnBaseUrl . '/common/patterns/topography.png');
         height: 450px;
         display: flex;
         align-items: center;

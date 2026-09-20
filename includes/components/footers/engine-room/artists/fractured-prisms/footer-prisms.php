@@ -8,7 +8,7 @@
             
             <div class="col-lg-4 text-center text-lg-start">
                 <a href="/engine-room/artists/fractured-prisms" class="d-inline-block mb-3">
-                    <img src="https://assets.raggiesoft.com/engine-room-records/artists/fractured-prisms/band-logo.jpg" 
+                    <img src= $cdnBaseUrl . "/engine-room-records/artists/fractured-prisms/band-logo.jpg" 
                          alt="Fractured Prisms" 
                          class="img-fluid prism-footer-logo" 
                          style="max-height: 80px;">
@@ -43,7 +43,7 @@
             <div class="col-lg-3 col-md-4 text-center text-md-start">
                 <h6 class="text-uppercase fw-bold mb-3 gothic-font" style="color: var(--bs-secondary); letter-spacing: 1px;">Management</h6>
                 <a href="/engine-room" class="d-inline-block mb-2">
-                    <img src="https://assets.raggiesoft.com/engine-room-records/images/logos/engine-room-records-logo.png" 
+                    <img src= $cdnBaseUrl . "/engine-room-records/images/logos/engine-room-records-logo.png" 
                         alt="Engine Room Records" 
                         class="engine-room-logo"
                         style="height: 35px; opacity: 0.7; transition: opacity var(--transition-speed) ease, filter var(--transition-speed) ease;">

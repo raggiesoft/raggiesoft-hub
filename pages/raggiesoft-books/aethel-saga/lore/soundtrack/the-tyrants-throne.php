@@ -4,7 +4,7 @@
 // Design: 1980s Deluxe Edition / Director's Cut Script Comparison
 
 $pageTitle = "The Tyrant's Throne - The Silver Gauntlet of Aethel";
-$poster_bg = 'https://assets.raggiesoft.com/aethel/images/aethel-hero.jpg'; 
+$poster_bg = $cdnBaseUrl . '/aethel/images/aethel-hero.jpg'; 
 ?>
 
 <style>

@@ -4,7 +4,7 @@
     "headerMenu": "engine-room/jessica-miller-center/header-miller-center",
     "sidebar": "engine-room/jessica-miller-center/sidebar-miller-center",
     "showSidebar": true,
-    "navbarBrandLogo": "https://assets.raggiesoft.com/engine-room-records/images/logos/miller-center-logo.png",
+    "navbarBrandLogo": "/engine-room-records/images/logos/miller-center-logo.png",
     "navbarBrandText": "<span class=\"d-none d-md-inline\">The Jessica </span>Miller Center",
     "navbarBrandLink": "/engine-room/jessica-miller-center",
     "navbarBrandAlt": "The Jessica Miller Center Official Seal",

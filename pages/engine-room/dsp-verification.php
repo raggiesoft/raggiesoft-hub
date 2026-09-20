@@ -176,7 +176,7 @@ $not_found = ($is_artist_view && empty($artist_tracks)) || ($is_track_view && em
             $parsedown = new StardustParsedown();
 
             // Assemble clean, direct pathing variables using our new schema elements
-            $ddex_url = "https://assets.raggiesoft.com/engine-room-records/artists/{$requested_artist_slug}/{$requested_album_slug}/streaming-services/song-metadata/{$requested_track_slug}.md";
+            $ddex_url = $cdnBaseUrl . "/engine-room-records/artists/{$requested_artist_slug}/{$requested_album_slug}/streaming-services/song-metadata/{$requested_track_slug}.md";
             $md_content = @file_get_contents($ddex_url);
             
             if ($md_content !== false) {

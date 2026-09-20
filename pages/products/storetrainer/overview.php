@@ -166,7 +166,7 @@ $pageTitle = "StoreTrainer | RaggieSoft Software";
                         <strong>tssetup100.exe</strong>
                         <p style="font-size: 10px; margin-top: 5px; color: #666;">(Includes Source Code & Redistributables)</p>
                         
-                        <a href="https://assets.raggiesoft.com/products/downloads/store-trainer/tssetup100.exe" class="win-button mt-3 fw-bold">
+                        <a href= $cdnBaseUrl . "/products/downloads/store-trainer/tssetup100.exe" class="win-button mt-3 fw-bold">
                             <i class="fa-solid fa-download me-1" aria-hidden="true"></i> Download Now
                         </a>
                     </div>

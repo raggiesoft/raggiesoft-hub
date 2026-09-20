@@ -51,7 +51,7 @@ $pageTitle = "Organizational Structure - The O'Connell Family Revocable Trust";
         <div class="card-body overflow-auto bg-body-tertiary">
             <?php
             // 1. DEFINE PATH TO JSON DATA (CDN Link)
-            $jsonUrl = 'https://assets.raggiesoft.com/engine-room-records/json/corporate-structure.json';
+            $jsonUrl = $cdnBaseUrl . '/engine-room-records/json/corporate-structure.json';
 
             // 2. FETCH AND DECODE
             // Suppress errors (@) to handle network issues gracefully

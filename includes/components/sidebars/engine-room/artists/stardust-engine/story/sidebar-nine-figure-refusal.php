@@ -76,57 +76,36 @@ $chapters = [
         </wa-button>
     
     
-        <a class="nav-link <?php echo ($currentUri === '/engine-room/artists/stardust-engine/story/nine-figure-refusal') ? 'active fw-bold text-body-emphasis' : 'text-body-secondary'; ?>" 
-           href="/engine-room/artists/stardust-engine/story/nine-figure-refusal">
+        <wa-button appearance="plain" href="/engine-room/artists/stardust-engine/story/nine-figure-refusal" class="w-100 text-start justify-content-start <?php echo ($currentUri === '/engine-room/artists/stardust-engine/story/nine-figure-refusal') ? 'text-primary fw-bold' : 'text-body'; ?>" style="text-align: left;">
             <i slot="start" class="fa-duotone fa-chart-network"></i> Overview
-        </a>
+        </wa-button>
     
 </div>
 
-<div class="accordion accordion-flush" id="historyAccordion">
-    
+
+<div class="mt-2 d-flex flex-column gap-1">
     <?php foreach ($chapters as $id => $data): 
         $isActive = isChapterActive($data['pages'], $currentUri);
-        $collapseId = 'collapse' . ucfirst($id);
     ?>
-    <div class="accordion-item bg-transparent border-0">
-        <h2 class="accordion-header" id="heading<?php echo $id; ?>">
-            <button class="accordion-button <?php echo $isActive ? 'fw-bold text-body-emphasis bg-body-tertiary' : 'collapsed text-body-secondary bg-transparent'; ?> shadow-none py-2 px-3 rounded" 
-                    type="button" 
-                    data-bs-toggle="collapse" 
-                    data-bs-target="#<?php echo $collapseId; ?>" 
-                    aria-expanded="<?php echo $isActive ? 'true' : 'false'; ?>" 
-                    aria-controls="<?php echo $collapseId; ?>">
-                <span class="small text-uppercase"><?php echo $data['title']; ?></span>
-            </button>
-        </h2>
-        <div id="<?php echo $collapseId; ?>" 
-             class="accordion-collapse collapse <?php echo $isActive ? 'show' : ''; ?>" 
-             aria-labelledby="heading<?php echo $id; ?>" 
-             data-bs-parent="#historyAccordion">
-            <div class="accordion-body p-0 ps-3 mb-3">
-                <div class="d-flex flex-column gap-1">
-                    <?php foreach ($data['pages'] as $url => $linkData): 
-                        $isLinkActive = ($currentUri === $url);
-                    ?>
-                    
-                        <wa-button appearance="plain" href="<?php echo $url; ?>" class="text-body w-100 text-start justify-content-start" style="text-align: left;">
-                            <i slot="start" class="<?php echo $linkData['icon']; ?>"></i> <?php echo $linkData['label']; ?>
-                        </wa-button>
-                    
-                    <?php endforeach; ?>
-                </div>
-            </div>
+    <wa-details summary="<?php echo $data['title']; ?>" <?php echo $isActive ? 'open' : ''; ?> class="border-0 bg-transparent">
+        <div class="d-flex flex-column gap-1 ps-2 pb-2">
+            <?php foreach ($data['pages'] as $url => $linkData): 
+                $isLinkActive = ($currentUri === $url);
+            ?>
+                <wa-button appearance="plain" href="<?php echo $url; ?>" class="w-100 text-start justify-content-start <?php echo $isLinkActive ? 'text-primary fw-bold' : 'text-body'; ?>" style="text-align: left; font-size: 0.9em;">
+                    <i slot="start" class="<?php echo $linkData['icon']; ?> me-2"></i> <?php echo $linkData['label']; ?>
+                </wa-button>
+            <?php endforeach; ?>
         </div>
-    </div>
+    </wa-details>
     <?php endforeach; ?>
-
 </div>
+
 
 <div class="mt-4 p-3 bg-body-tertiary border border-secondary-subtle rounded">
     <h6 class="text-body-emphasis text-uppercase small fw-bold mb-2">Status Update</h6>
     <div class="d-flex align-items-center mb-2">
-        <span class="badge bg-success me-2 text-uppercase">Closed</span>
+        <wa-badge variant="success" class="me-2 font-monospace">Closed</wa-badge>
         <small class="text-body-secondary font-monospace">Jan 15, 2019</small>
     </div>
     <p class="text-body-secondary small mb-0">

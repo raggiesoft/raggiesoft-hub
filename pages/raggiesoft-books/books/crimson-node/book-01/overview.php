@@ -19,7 +19,7 @@
         <div class="col-md-6 col-lg-4">
             <?php
             $props = [
-                'imgSrc' => 'https://assets.raggiesoft.com/engine-room-records/artists/crimson-node/2002-crimson-node/album-art.jpg',
+                'imgSrc' => $cdnBaseUrl . '/engine-room-records/artists/crimson-node/2002-crimson-node/album-art.jpg',
                 'imgAlt' => 'Chapter 1',
                 'fallbackText' => '01',
                 'title' => 'Chapter 1: The Approach',
@@ -40,7 +40,7 @@
         <div class="col-md-6 col-lg-4">
             <?php
             $props = [
-                'imgSrc' => 'https://assets.raggiesoft.com/shiloh/images/thumbnails/story/log-02-thumb.jpg',
+                'imgSrc' => $cdnBaseUrl . '/shiloh/images/thumbnails/story/log-02-thumb.jpg',
                 'imgAlt' => 'Chapter 2',
                 'fallbackText' => '02',
                 'title' => 'Chapter 2: The Core Ecosystem',
@@ -61,7 +61,7 @@
         <div class="col-md-6 col-lg-4">
             <?php
             $props = [
-                'imgSrc' => 'https://assets.raggiesoft.com/shiloh/images/story/matt-sarah-shiloh.jpg', 
+                'imgSrc' => $cdnBaseUrl . '/shiloh/images/story/matt-sarah-shiloh.jpg', 
                 'imgAlt' => 'Chapter 3',
                 'fallbackText' => '03',
                 'title' => 'Chapter 3: The Triple Birthday',
@@ -82,7 +82,7 @@
         <div class="col-md-6 col-lg-4">
             <?php
             $props = [
-                'imgSrc' => 'https://assets.raggiesoft.com/shiloh/images/story/courtney-principal-office.jpg',
+                'imgSrc' => $cdnBaseUrl . '/shiloh/images/story/courtney-principal-office.jpg',
                 'imgAlt' => 'Chapter 4',
                 'fallbackText' => '04',
                 'title' => 'Chapter 4: The Failed Apology',
@@ -103,7 +103,7 @@
         <div class="col-md-6 col-lg-4">
             <?php
             $props = [
-                'imgSrc' => 'https://assets.raggiesoft.com/common/patterns/noise-subtle.png',
+                'imgSrc' => $cdnBaseUrl . '/common/patterns/noise-subtle.png',
                 'imgAlt' => 'Chapter 5 Placeholder',
                 'fallbackText' => '05',
                 'title' => 'Chapter 5: Interlude',

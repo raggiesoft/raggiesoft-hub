@@ -9,9 +9,9 @@ $pageTitle = "The Silver Gauntlet of Aethel";
 $album_path_web = '/engine-room-records/artists/firelight/2025-silver-gauntlet-of-aethel';
 
 // NEW: Updated Hero Poster
-$poster_bg = 'https://assets.raggiesoft.com/aethel/images/aethel-hero.jpg';
+$poster_bg = $cdnBaseUrl . '/aethel/images/aethel-hero.jpg';
 
-$cover_art = 'https://assets.raggiesoft.com/engine-room-records/artists/firelight/2025-silver-gauntlet-of-aethel/album-art.jpg';
+$cover_art = $cdnBaseUrl . '/engine-room-records/artists/firelight/2025-silver-gauntlet-of-aethel/album-art.jpg';
 ?>
 
 <div class="aethel-hero py-5 text-center text-md-start d-flex align-items-center" 

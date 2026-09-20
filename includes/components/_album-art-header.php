@@ -15,7 +15,7 @@ if ($variant === 'neutral') $borderColor = 'secondary';
 
 // 3. Build URL with NUCLEAR CACHE BUSTING
 // We append time() so the URL changes every second. Chrome CANNOT cache this.
-$imgSrc = "https://assets.raggiesoft.com" . $path . "/album-art.jpg?v=" . time();
+$imgSrc = $cdnBaseUrl . "" . $path . "/album-art.jpg?v=" . time();
 ?>
 
 <div class="col-md-5 text-center text-md-start">

@@ -9,7 +9,7 @@
             
             <div class="col-lg-5 col-md-12">
                 <a href="/raggiesoft-books/aethel-saga" class="d-flex align-items-center mb-3 text-decoration-none group-hover">
-                    <img src="https://assets.raggiesoft.com/aethel/images/logos/silver-gauntlet-of-aethel-logo.png" 
+                    <img src= $cdnBaseUrl . "/aethel/images/logos/silver-gauntlet-of-aethel-logo.png" 
                          alt="The Silver Gauntlet Logo" 
                          width="60" 
                          class="me-3 opacity-90">
@@ -69,7 +69,7 @@
                 </ul>
 
                 <a href="/" class="d-inline-flex align-items-center text-decoration-none bg-dark border border-secondary rounded px-3 py-2  hover-border-warning transition-all">
-                    <img src="https://assets.raggiesoft.com/raggiesoft-corporate/images/logo/raggiesoft-logo.png" width="20" class="me-2 " style="filter: grayscale(100%);">
+                    <img src= $cdnBaseUrl . "/raggiesoft-corporate/images/logo/raggiesoft-logo.png" width="20" class="me-2 " style="filter: grayscale(100%);">
                     <span class="small text-uppercase letter-spacing-1">A RaggieSoft Production</span>
                 </a>
             </div>
@@ -84,7 +84,7 @@ $konami_config = [
     'icon'       => 'fa-duotone fa-dungeon',
     'theme'      => '#d4af37', // Sunstead Gold
     'text_color' => '#000000',
-    'image'      => 'https://assets.raggiesoft.com/aethel/images/logos/silver-gauntlet-of-aethel-logo.png',
+    'image'      => $cdnBaseUrl . '/aethel/images/logos/silver-gauntlet-of-aethel-logo.png',
     'body'       => '
         <h4 class="cinzel-font fw-bold">You have unlocked the Hidden Path.</h4>
         <p class="mt-2" style="font-family: Georgia, serif;">

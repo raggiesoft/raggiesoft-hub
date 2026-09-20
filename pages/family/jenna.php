@@ -5,7 +5,7 @@
 <div class="card mb-5 border-0 shadow-sm overflow-hidden bg-body-tertiary">
     <div class="row g-0">
         <div class="col-lg-4 position-relative" style="min-height: 300px;">
-            <img src="https://assets.raggiesoft.com/family/images/atmospheric/jenna.jpg" 
+            <img src= $cdnBaseUrl . "/family/images/atmospheric/jenna.jpg" 
                  class="position-absolute w-100 h-100" 
                  style="object-fit: cover; object-position: center top;" 
                  alt="Jenna">

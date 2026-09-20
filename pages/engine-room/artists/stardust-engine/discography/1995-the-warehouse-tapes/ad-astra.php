@@ -12,7 +12,7 @@ $album_path_web = '/engine-room-records/artists/the-stardust-engine/1995-ad-astr
 
 <div class="container pb-5 glass-container">
     
-    <div style="background: linear-gradient(to bottom right, rgba(5, 5, 8, 0.8), rgba(5, 5, 8, 0.6)), url('https://assets.raggiesoft.com/stardust-engine/images/story/ad-astra/harmonic-velocity.jpg') center/cover no-repeat;">
+    <div style="background: linear-gradient(to bottom right, rgba(5, 5, 8, 0.8), rgba(5, 5, 8, 0.6)), url($cdnBaseUrl . '/stardust-engine/images/story/ad-astra/harmonic-velocity.jpg') center/cover no-repeat;">
         <div class="text-center mb-5 fade-in-up">
             <span class="badge rounded-pill border border-warning text-warning mb-3 px-3 py-2 shadow-glow">
                 <i class="fa-duotone fa-stars me-2"></i>The Magnum Opus

@@ -17,7 +17,7 @@ global $cdn_root;
     "name": "Michael P. Ragsdale",
     "jobTitle": "Systems Architect & Full-Stack Developer",
     "url": "https://raggiesoft.com/about/michael-ragsdale",
-    "image": "https://assets.raggiesoft.com/raggiesoft-corporate/images/logos/logo-michael.png",
+    "image": "<?php echo $cdnBaseUrl; ?>/raggiesoft-corporate/images/logos/logo-michael.png",
     "description": "Architecting accessible, resilient systems since 1997. Specializing in custom-built PHP MVC frameworks, Vanilla JS SPAs, and strict WCAG 2.1 AA compliance.",
     "address": {
       "@type": "PostalAddress",
@@ -58,12 +58,12 @@ global $cdn_root;
 
     <div class="row align-items-center mb-5 pb-4 border-bottom border-secondary-subtle">
         <div class="col-lg-3 text-center text-lg-start mb-4 mb-lg-0">
-            <img src="https://assets.raggiesoft.com/raggiesoft-corporate/images/mragsdale-aero/mragsdale-frutiger-aero.jpg" 
+            <img src= $cdnBaseUrl . "/raggiesoft-corporate/images/mragsdale-aero/mragsdale-frutiger-aero.jpg" 
                 alt="Michael P. Ragsdale" 
                 class="theme-img-light rounded-circle shadow-lg border border-4 border-white"
                 style="width: 200px; height: 200px; object-fit: cover;">
             
-            <img src="https://assets.raggiesoft.com/raggiesoft-corporate/images/mragsdale-aero/mragsdale-dark-aero.jpg" 
+            <img src= $cdnBaseUrl . "/raggiesoft-corporate/images/mragsdale-aero/mragsdale-dark-aero.jpg" 
                 alt="Michael P. Ragsdale" 
                 class="theme-img-dark rounded-circle shadow-lg border border-4"
                 style="width: 200px; height: 200px; object-fit: cover; border-color: rgba(0, 229, 255, 0.4) !important; box-shadow: 0 0 20px rgba(0, 229, 255, 0.2) !important;">
@@ -75,7 +75,7 @@ global $cdn_root;
                 Architecting accessible, resilient systems since 1997. Bridging the gap between legacy infrastructure and modern cloud reliability with an uncompromising focus on "Empathetic Engineering."
             </p>
             <div class="d-flex flex-wrap gap-2 justify-content-center justify-content-lg-start">
-                <a href="https://assets.raggiesoft.com/portfolio/documents/resume/mragsdale-resume.pdf" target="_blank" class="btn btn-primary btn-lg rounded-pill px-4 shadow-sm">
+                <a href= $cdnBaseUrl . "/portfolio/documents/resume/mragsdale-resume.pdf" target="_blank" class="btn btn-primary btn-lg rounded-pill px-4 shadow-sm">
                     <i class="fa-solid fa-file-pdf me-2"></i>Download Resume (PDF)
                 </a>
                 <a href="#hiring-logistics" class="btn btn-outline-secondary btn-lg rounded-pill px-4">

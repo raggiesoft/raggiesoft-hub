@@ -9,7 +9,7 @@
     "showSidebar": false,
     "navbarBrandText": "O'Connell Family Trust",
     "navbarBrandLink": "/oconnell-trust/structure",
-    "navbarBrandLogo": "https://assets.raggiesoft.com/oconnell-trust/images/logo/trust-seal.png",
+    "navbarBrandLogo": "/oconnell-trust/images/logo/trust-seal.png",
     "navbarBrandAlt": "Official Seal of the O'Connell Family Trust",
     "brandFont": ["Playfair Display", "serif"]
   }

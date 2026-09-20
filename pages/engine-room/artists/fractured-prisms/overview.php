@@ -5,7 +5,7 @@
 $root = '/engine-room/artists/fractured-prisms';
 
 // Fetch and decode the Albums JSON
-$jsonUrl = 'https://assets.raggiesoft.com/engine-room-records/artists/fractured-prisms/albums.json';
+$jsonUrl = $cdnBaseUrl . '/engine-room-records/artists/fractured-prisms/albums.json';
 $jsonData = @file_get_contents($jsonUrl); // @ suppresses warnings if the fetch fails
 $eras = $jsonData ? json_decode($jsonData, true) : [];
 
@@ -22,7 +22,7 @@ if ($eras) {
 ?>
 
 <div class="border-bottom border-prism position-relative overflow-hidden" style="
-    background-image: url('https://assets.raggiesoft.com/engine-room-records/artists/fractured-prisms/hero-bg.jpg');
+    background-image: url($cdnBaseUrl . '/engine-room-records/artists/fractured-prisms/hero-bg.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -65,7 +65,7 @@ if ($eras) {
         <div class="row g-0 align-items-stretch">
             
             <div class="col-lg-6 d-none d-lg-block">
-                <img src="https://assets.raggiesoft.com/engine-room-records/artists/fractured-prisms/1983-carnaby-street/album-art.jpg" 
+                <img src= $cdnBaseUrl . "/engine-room-records/artists/fractured-prisms/1983-carnaby-street/album-art.jpg" 
                      alt="Claire and Rhys Manning at The Hollow Square" 
                      class="img-fluid h-100 object-fit-cover"
                      style="min-height: 400px; filter: grayscale(20%) contrast(1.1);">
@@ -81,7 +81,7 @@ if ($eras) {
                         The complete, uncompromised discography of Fractured Prisms has officially cleared the global distribution network. Step into the gaslamp fog and experience the 100-year echo.
                     </p>
                     
-                    <img src="https://assets.raggiesoft.com/engine-room-records/artists/fractured-prisms/1983-carnaby-street/album-art.jpg" 
+                    <img src= $cdnBaseUrl . "/engine-room-records/artists/fractured-prisms/1983-carnaby-street/album-art.jpg" 
                          alt="Fractured Prisms Art" 
                          class="img-fluid rounded mb-4 d-block d-lg-none shadow-sm border border-secondary">
 

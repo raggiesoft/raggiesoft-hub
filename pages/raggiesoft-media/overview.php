@@ -72,7 +72,7 @@ $pageTitle = "RaggieSoft Media | IP & Asset Management";
         <div class="col-lg-4 mb-4 mb-lg-0">
             <a href="/engine-room" class="card bg-hud-base border-0 h-100 shadow-sm hover-lift text-decoration-none">
                 <div class="aero-card-img-container">
-                    <img src="https://assets.raggiesoft.com/stardust-engine/images/studio-rack.jpg" alt="Engine Room Records Studio Equipment">
+                    <img src= $cdnBaseUrl . "/stardust-engine/images/studio-rack.jpg" alt="Engine Room Records Studio Equipment">
                     <div class="aero-card-img-overlay"></div>
                     <i class="fa-solid fa-record-vinyl position-absolute bottom-0 start-0 m-3 text-white fs-4" style="filter: drop-shadow(0 2px 4px rgba(0,0,0,0.8));"></i>
                 </div>
@@ -88,11 +88,11 @@ $pageTitle = "RaggieSoft Media | IP & Asset Management";
         <div class="col-lg-4 mb-4 mb-lg-0">
             <a href="/raggiesoft-media/projects/stardust-engine-cms" class="card bg-hud-base border-0 h-100 shadow-sm hover-lift text-decoration-none">
                 <div class="aero-card-img-container">
-                    <img src="https://assets.raggiesoft.com/raggiesoft-corporate/images/projects/code-architecture-frutiger-aero.jpg" 
+                    <img src= $cdnBaseUrl . "/raggiesoft-corporate/images/projects/code-architecture-frutiger-aero.jpg" 
                         alt="Elara CMS Code Architecture" 
                         class="theme-img-light">
                         
-                    <img src="https://assets.raggiesoft.com/raggiesoft-corporate/images/projects/code-architecture-dark-aero.jpg" 
+                    <img src= $cdnBaseUrl . "/raggiesoft-corporate/images/projects/code-architecture-dark-aero.jpg" 
                         alt="Elara CMS Code Architecture" 
                         class="theme-img-dark">
                         
@@ -111,11 +111,11 @@ $pageTitle = "RaggieSoft Media | IP & Asset Management";
         <div class="col-lg-4">
             <a href="/raggiesoft-books" class="card bg-hud-base border-0 h-100 shadow-sm hover-lift text-decoration-none">
                 <div class="aero-card-img-container">
-                    <img src="https://assets.raggiesoft.com/raggiesoft-corporate/images/projects/ocean-vault-light.jpg" 
+                    <img src= $cdnBaseUrl . "/raggiesoft-corporate/images/projects/ocean-vault-light.jpg" 
                         alt="Ocean View Archives Light Mode" 
                         class="theme-img-light">
                         
-                    <img src="https://assets.raggiesoft.com/raggiesoft-corporate/images/projects/ocean-vault-dark.jpg" 
+                    <img src= $cdnBaseUrl . "/raggiesoft-corporate/images/projects/ocean-vault-dark.jpg" 
                         alt="Ocean View Archives Dark Mode" 
                         class="theme-img-dark">
                         
@@ -138,7 +138,7 @@ $pageTitle = "RaggieSoft Media | IP & Asset Management";
             <div class="card bg-hud-blue border-0 shadow-sm hover-lift">
                 <div class="card-body p-4 p-md-5 d-flex flex-column flex-md-row align-items-center justify-content-between">
                     <div class="d-flex align-items-center mb-4 mb-md-0">
-                        <img src="https://assets.raggiesoft.com/raggiesoft-corporate/images/logos/logo-michael.png" alt="Michael Ragsdale" class="rounded-circle border border-2 border-primary shadow-sm me-4" style="width: 80px; height: 80px; object-fit: cover;">
+                        <img src= $cdnBaseUrl . "/raggiesoft-corporate/images/logos/logo-michael.png" alt="Michael Ragsdale" class="rounded-circle border border-2 border-primary shadow-sm me-4" style="width: 80px; height: 80px; object-fit: cover;">
                         <div>
                             <h3 class="h4 fw-bold text-body-emphasis mb-1">Looking to hire the Architect?</h3>
                             <p class="text-secondary mb-0">Review qualifications, logistics, and schedule a screening interview.</p>

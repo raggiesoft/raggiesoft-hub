@@ -21,7 +21,7 @@ $isHub = ($request_uri === '/about/michael-ragsdale');
   
 
   
-    <wa-button appearance="plain" href="https://assets.raggiesoft.com/portfolio/documents/resume/mragsdale-resume.pdf" class="text-primary">
+    <wa-button appearance="plain" href= $cdnBaseUrl . "/portfolio/documents/resume/mragsdale-resume.pdf" class="text-primary">
         <i slot="start" class="fa-solid fa-file-pdf me-2"></i>Resume (PDF)
     </wa-button>
   

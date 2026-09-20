@@ -6,7 +6,7 @@
     "headerMenu": "raggiesoft-books/header-books",
     "footer": "raggiesoft-books/footer-books",
     "showSidebar": false,
-    "navbarBrandLogo": "https://assets.raggiesoft.com/raggiesoft-books/images/logos/oceanview-archives.svg",
+    "navbarBrandLogo": "/raggiesoft-books/images/logos/oceanview-archives.svg",
     "navbarBrandText": "<span class=\"ova-serif fw-bold\" style=\"color: #E3B27C;\">Ocean View Archives</span>",
     "navbarBrandLink": "/raggiesoft-books"
   },

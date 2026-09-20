@@ -19,7 +19,7 @@ $pageTitle = "Arthur Vance - Crimson Node";
             
             <!-- Character Header -->
             <div class="d-flex flex-column flex-md-row align-items-md-center border-bottom pb-4 mb-4">
-                <img src="https://assets.raggiesoft.com/shiloh/images/thumbnails/northwood/arthur-vance-thumb.jpg" 
+                <img src= $cdnBaseUrl . "/shiloh/images/thumbnails/northwood/arthur-vance-thumb.jpg" 
                      alt="Arthur Vance" 
                      class="rounded shadow-sm mb-3 mb-md-0 me-md-4" 
                      style="width: 150px; height: 150px; object-fit: cover;">

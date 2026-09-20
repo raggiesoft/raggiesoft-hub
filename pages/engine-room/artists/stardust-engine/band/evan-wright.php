@@ -8,7 +8,7 @@ $pageTitle = "Evan Wright - The Stardust Engine";
 // Define Schema variables for the specific band member
 $memberName = "Evan Wright";
 $memberRole = "Bass Guitar, Rhythm Guitar, Backing Vocals";
-$memberImage = "https://assets.raggiesoft.com/stardust-engine/images/band-members/evan.jpg";
+$memberImage = $cdnBaseUrl . "/stardust-engine/images/band-members/evan.jpg";
 
 $personSchema = [
     "@context" => "https://schema.org",
@@ -75,7 +75,7 @@ $personSchema = [
             <div class="sticky-top" style="top: 8rem;">
                 <?php $props = [
                     'title' => 'Evan Wright',
-                    'imgSrc' => 'https://assets.raggiesoft.com/stardust-engine/images/band-members/evan.jpg',
+                    'imgSrc' => $cdnBaseUrl . '/stardust-engine/images/band-members/evan.jpg',
                     'imgAlt' => 'Headshot of Evan Wright with his bass',
                     'variant' => 'neutral',
                     // FIX: Wrapped content in a div with text-white-75 to force readability

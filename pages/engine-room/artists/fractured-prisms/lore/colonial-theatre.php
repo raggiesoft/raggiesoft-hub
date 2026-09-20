@@ -6,7 +6,7 @@ $pageTitle = "The Colonial Theatre | Fractured Prisms Archives";
 ?>
 
 <div class="border-bottom border-prism position-relative overflow-hidden" style="
-    background-image: url('https://assets.raggiesoft.com/fractured-prisms/images/lore/colonial-theatre/colonial-theatre-exterior.jpg');
+    background-image: url($cdnBaseUrl . '/fractured-prisms/images/lore/colonial-theatre/colonial-theatre-exterior.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed; /* Native 2.5D Parallax */

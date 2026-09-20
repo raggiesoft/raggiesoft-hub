@@ -6,7 +6,7 @@
     "siteName": "Engine Room: Origin",
     "headerMenu": "engine-room/header-engine-room",
     "footer": "engine-room/footer-engine-room",
-    "navbarBrandLogo": "https://assets.raggiesoft.com/engine-room-records/images/logos/engine-room-records-logo.png",
+    "navbarBrandLogo": "/engine-room-records/images/logos/engine-room-records-logo.png",
     "navbarBrandText": "Origin <span class=\"text-muted small\">// Archive</span>"
   },
   "/engine-room/artists/origin": {

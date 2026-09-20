@@ -21,7 +21,7 @@ $pageTitle = "StoreTrainer Archive | RaggieSoft Media";
         content: '';
         position: absolute;
         top: -5%; left: -5%; right: -5%; bottom: -5%; 
-        background-image: url('https://assets.raggiesoft.com/raggiesoft-media/images/hero/dark-aero.jpg'); /* Defaults to dark aero for legacy feel */
+        background-image: url($cdnBaseUrl . '/raggiesoft-media/images/hero/dark-aero.jpg'); /* Defaults to dark aero for legacy feel */
         background-size: cover;
         background-position: center;
         z-index: -2;

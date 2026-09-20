@@ -6,9 +6,9 @@
 $pageTitle = "The Friction Catastrophe - Engine Room History";
 
 // ASSETS
-$intended_art = 'https://assets.raggiesoft.com/engine-room-records/artists/the-stardust-engine/1992-friction/album-art.jpg';
-$promo_1989 = 'https://assets.raggiesoft.com/stardust-engine/images/story/ryan-cassidy-1989.jpg';
-$warehouse_shoot = 'https://assets.raggiesoft.com/stardust-engine/images/story/friction-photoshoot.jpg';
+$intended_art = $cdnBaseUrl . '/engine-room-records/artists/the-stardust-engine/1992-friction/album-art.jpg';
+$promo_1989 = $cdnBaseUrl . '/stardust-engine/images/ryan-cassidy-1989.jpg';
+$warehouse_shoot = $cdnBaseUrl . '/stardust-engine/images/story/friction-photoshoot.jpg';
 
 $articleSchema = [
     "@context" => "https://schema.org",
@@ -46,7 +46,7 @@ $articleSchema = [
     <div class="row justify-content-center">
         <div class="col-lg-10 mx-auto">
             
-            <div class="card bg-dark border-secondary mb-5 shadow-lg overflow-hidden">
+            <wa-card class="bg-dark border-secondary mb-5 shadow-lg overflow-hidden w-100">
                 <div class="row g-0">
                     <div class="col-md-7 position-relative">
                          <img src="<?php echo $warehouse_shoot; ?>" 
@@ -54,9 +54,9 @@ $articleSchema = [
                              style="filter: sepia(10%) contrast(1.1);"
                              alt="The Stardust Engine waiting in a cold warehouse. Ryan is in his wheelchair looking annoyed. Cassidy is shivering in a black dress. A TV cart plays cartoons in the background.">
                         <div class="position-absolute top-0 start-0 m-3">
-                            <span class="badge bg-black bg-opacity-75 border border-secondary text-white shadow-sm">
+                            <wa-badge variant="neutral" class="bg-black bg-opacity-75 border border-secondary text-white shadow-sm">
                                 <i class="fa-duotone fa-camera-retro me-2 text-danger"></i>Los Angeles, 1992
-                            </span>
+                            </wa-badge>
                         </div>
                     </div>
                     <div class="col-md-5 d-flex align-items-center bg-dark">
@@ -71,7 +71,7 @@ $articleSchema = [
                                 When executive <strong>Julian Vance</strong> walked in, the reality of his incompetence crashed down immediately. Vance had no idea Ryan O'Connell was paralyzed. Seeing the frontman in a wheelchair shattered his manufactured vision instantly, but the true catastrophe was still to come when Vance demanded they set up for "Shot 12."
                             </p>
                         </div>
-                    </div>
+                    </wa-card>
                 </div>
             </div>
             
@@ -93,49 +93,49 @@ $articleSchema = [
             <div class="row g-4 mb-5">
                 
                 <div class="col-md-4">
-                    <div class="card h-100 border-danger bg-body-tertiary shadow-sm">
-                        <div class="card-header bg-danger bg-opacity-10 text-danger-emphasis fw-bold">
+                    <wa-card class="h-100 border-danger bg-body-tertiary shadow-sm">
+                        <div slot="header" class="bg-danger bg-opacity-10 text-danger-emphasis fw-bold p-3 border-bottom border-danger">
                             <i class="fa-duotone fa-image-polaroid me-2"></i>The Fatal Assumption
                         </div>
-                        <img src="<?php echo $promo_1989; ?>" 
+                        <img slot="image" src="<?php echo $promo_1989; ?>" 
                             class="card-img-top p-0" 
                             style="aspect-ratio: 1/1; object-fit: cover;"
                             alt="1989 Promo Photo of Ryan and Cassidy smiling together.">
-                        <div class="card-body">
+                        <div>
                             <h6 class="fw-bold">Exhibit A: The '89 Promo</h6>
                             <p class="card-text small text-body-secondary">
                                 Vance based his entire campaign on this 1989 press photo—taken before Ryan's accident. Vance assumed the band's dynamic was a stage act, and that Ryan and Cassidy were a married couple.
                             </p>
                         </div>
-                    </div>
+                    </wa-card>
                 </div>
 
                 <div class="col-md-4">
-                    <div class="card h-100 border-info bg-body-tertiary shadow-sm">
-                        <div class="card-header bg-info bg-opacity-10 text-info-emphasis fw-bold">
+                    <wa-card class="h-100 border-info bg-body-tertiary shadow-sm">
+                        <div slot="header" class="bg-info bg-opacity-10 text-info-emphasis fw-bold p-3 border-bottom border-info">
                             <i class="fa-duotone fa-shuttle-space me-2"></i>The Band's Vision
                         </div>
                         <div class="position-relative">
-                            <img src="<?php echo $intended_art; ?>" 
+                            <img slot="image" src="<?php echo $intended_art; ?>" 
                                 class="card-img-top p-0 bg-white" 
                                 style="aspect-ratio: 1/1; object-fit: cover;"
                                 alt="Cassidy's drawing of a space shuttle re-entering atmosphere with a trail of fire.">
                         </div>
-                        <div class="card-body">
+                        <div>
                             <h6 class="fw-bold">Exhibit B: Re-Entry Heat</h6>
                             <p class="card-text small text-body-secondary">
                                 When Vance pitched the title <em>Friction</em>, the band thought they were finally making a sci-fi record. Cassidy drew this concept art depicting the thermal friction of a shuttle hull re-entering the atmosphere.
                             </p>
                         </div>
-                    </div>
+                    </wa-card>
                 </div>
 
                 <div class="col-md-4">
-                    <div class="card h-100 border-danger bg-dark shadow-sm">
-                        <div class="card-header bg-danger text-white fw-bold">
+                    <wa-card class="h-100 border-danger bg-dark shadow-sm">
+                        <div slot="header" class="bg-danger text-white fw-bold p-3 border-bottom border-danger">
                             <i class="fa-duotone fa-bolt me-2"></i>The Breaking Point
                         </div>
-                        <div class="card-body d-flex flex-column justify-content-center">
+                        <div class="d-flex flex-column justify-content-center h-100">
                             <h6 class="fw-bold text-white">"Shot 12"</h6>
                             <p class="card-text small text-white-50">
                                 Disgusted by the wheelchair and rejecting Cassidy's artwork as "childish," Vance attempted to force his original plan. He ordered the photographer to set up "Shot 12"—a demand for Ryan and Cassidy to simulate a highly explicit, sexual act on camera.
@@ -144,7 +144,7 @@ $articleSchema = [
                                 Ryan's response shattered the warehouse: <em>"SHE'S MY SISTER!"</em>
                             </p>
                         </div>
-                    </div>
+                    </wa-card>
                 </div>
             </div>
 
@@ -157,8 +157,8 @@ $articleSchema = [
 
             <div class="row g-4 mb-5">
                 <div class="col-md-6">
-                    <div class="card border-danger h-100 shadow-sm bg-dark">
-                        <div class="card-body d-flex flex-column">
+                    <wa-card class="border-danger h-100 shadow-sm bg-dark">
+                        <div class="d-flex flex-column h-100">
                             <h4 class="h5 fw-bold text-danger mb-2">
                                 <i class="fa-solid fa-file-circle-xmark me-2"></i>"Friction" (Title Track)
                             </h4>
@@ -166,16 +166,16 @@ $articleSchema = [
                                 <strong>STATUS: PERMANENTLY REDACTED.</strong><br>
                                 Because Vance weaponized the lyrics against the siblings, the band made a unified decision: the audio and sheet music for the title track will <em>never</em> be published, performed, or rendered in any capacity. The song died in that warehouse.
                             </p>
-                            <a href="/engine-room/artists/stardust-engine/story/friction/the-lost-title-track" class="btn btn-sm btn-outline-danger w-100 mt-auto fw-bold">
+                            <wa-button variant="danger" outline href="/engine-room/artists/stardust-engine/story/friction/the-lost-title-track" class="w-100 mt-auto fw-bold">
                                 <i class="fa-solid fa-lock me-2"></i>Read the Archival File
-                            </a>
+                            </wa-button>
                         </div>
-                    </div>
+                    </wa-card>
                 </div>
 
                 <div class="col-md-6">
-                    <div class="card border-info h-100 shadow-sm bg-body-tertiary">
-                        <div class="card-body d-flex flex-column">
+                    <wa-card class="border-info h-100 shadow-sm bg-body-tertiary">
+                        <div class="d-flex flex-column h-100">
                             <h4 class="h5 fw-bold text-info-emphasis mb-2">
                                 <i class="fa-duotone fa-cloud-showers-heavy me-2"></i>"Atmosphere" (Demo)
                             </h4>
@@ -184,7 +184,7 @@ $articleSchema = [
                                 The thematic B-side to "Friction," exploring the cooling relief of breaking through the clouds. Because Vance never heard this lush, cinematic ballad, it remained untainted and was eventually released exactly as-is on <em>The Warehouse Tapes</em> in 1995.
                             </p>
                         </div>
-                    </div>
+                    </wa-card>
                 </div>
             </div>
 

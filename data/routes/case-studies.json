@@ -7,7 +7,7 @@
     "headerMenu": "case-studies/header-case-studies",
     "footer": "case-studies/footer-case-studies",
     
-    "navbarBrandLogo": "https://assets.raggiesoft.com/raggiesoft-corporate/images/logo/raggiesoft-logo.png",
+    "navbarBrandLogo": "/raggiesoft-corporate/images/logo/raggiesoft-logo.png",
     "navbarBrandText": "RaggieSoft <span class=\"d-none d-md-inline\">Archives</span>",
     "navbarBrandLink": "/case-studies",
     "navbarBrandAlt": "RaggieSoft Case Studies",

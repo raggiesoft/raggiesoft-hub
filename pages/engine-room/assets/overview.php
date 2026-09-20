@@ -88,7 +88,7 @@ $pageTitle = "Strategic Assets - Engine Room Records";
                 </div>
             </div>
             <div class="col-lg-7">
-                <div class="p-5 border border-secondary text-center opacity-50" style="background-image: url('https://assets.raggiesoft.com/common/images/patterns/grid.png');">
+                <div class="p-5 border border-secondary text-center opacity-50" style="background-image: url($cdnBaseUrl . '/common/images/patterns/grid.png');">
                     <i class="fa-duotone fa-waveform-lines fa-5x mb-3"></i>
                     <h5 class="text-uppercase text-muted">Facility Schematic: Restricted</h5>
                 </div>

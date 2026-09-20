@@ -3,10 +3,10 @@ $pageTitle = "Tales of the Solstice - The Winter Palace";
 $pageTheme = "ad-astra"; 
 
 // ASSETS
-$hero_art = 'https://assets.raggiesoft.com/engine-room-records/music/the-winter-palace/tales-of-the-solstice/julian-variant.jpg';
-$original_art = 'https://assets.raggiesoft.com/engine-room-records/music/the-winter-palace/tales-of-the-solstice/album-art.jpg';
+$hero_art = $cdnBaseUrl . '/engine-room-records/music/the-winter-palace/tales-of-the-solstice/julian-variant.jpg';
+$original_art = $cdnBaseUrl . '/engine-room-records/music/the-winter-palace/tales-of-the-solstice/album-art.jpg';
 // NOTE: Ensure this OGG file exists in your Spaces bucket!
-$audio_src = 'https://assets.raggiesoft.com/engine-room-records/music/the-winter-palace/upon-this-winters-night.ogg';
+$audio_src = $cdnBaseUrl . '/engine-room-records/music/the-winter-palace/upon-this-winters-night.ogg';
 ?>
 
 <div class="starfield-container"><div class="starfield-twinkling"></div></div>

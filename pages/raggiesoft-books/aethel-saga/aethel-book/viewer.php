@@ -8,7 +8,7 @@ $sceneId = $pageConfig['currentContext'][3] ?? '';
 
 // 2. Locate the Asset
 // URL: .../content/{book}/{chapter}/{part}/{scene}.md
-$mdUrl = "https://assets.raggiesoft.com/aethel/content/{$bookId}/{$chapId}/{$partId}/{$sceneId}.md";
+$mdUrl = $cdnBaseUrl . "/aethel/content/{$bookId}/{$chapId}/{$partId}/{$sceneId}.md";
 $rawMarkdown = @file_get_contents($mdUrl);
 
 if ($rawMarkdown === false) {

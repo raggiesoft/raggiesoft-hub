@@ -9,10 +9,10 @@
     "headerMenu": "engine-room/artists/fractured-prisms/header-prisms",
     "footer": "engine-room/artists/fractured-prisms/footer-prisms",
     "showSidebar": false,
-    "navbarBrandLogo": "https://assets.raggiesoft.com/engine-room-records/artists/fractured-prisms/band-logo.jpg",
+    "navbarBrandLogo": "/engine-room-records/artists/fractured-prisms/band-logo.jpg",
     "navbarBrandText": "Fractured Prisms",
     "navbarBrandLink": "/engine-room/artists/fractured-prisms",
-    "ogImage": "https://assets.raggiesoft.com/engine-room-records/artists/fractured-prisms/1983-carnaby-street/album-art.jpg"
+    "ogImage": "/engine-room-records/artists/fractured-prisms/1983-carnaby-street/album-art.jpg"
   },
 
   "/engine-room/artists/fractured-prisms": {

@@ -187,7 +187,7 @@
     </div>
 </div>
 
-<script src="https://assets.raggiesoft.com/apps/cipher/js/cipher.js?v=<?php echo time(); ?>"></script>
+<script src= $cdnBaseUrl . "/apps/cipher/js/cipher.js?v=<?php echo time(); ?>"></script>
 
 <style>
 .card-radio {

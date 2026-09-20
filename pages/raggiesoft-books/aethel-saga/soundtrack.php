@@ -6,16 +6,16 @@
 $pageTitle = "Original Soundtrack - The Silver Gauntlet of Aethel";
 
 // 1. ASSETS CONFIGURATION
-$poster_bg = 'https://assets.raggiesoft.com/aethel/images/aethel-hero.jpg';
-$label_logo = 'https://assets.raggiesoft.com/engine-room-records/images/logos/engine-room-records-logo.png';
+$poster_bg = $cdnBaseUrl . '/aethel/images/aethel-hero.jpg';
+$label_logo = $cdnBaseUrl . '/engine-room-records/images/logos/engine-room-records-logo.png';
 
 // 1987 Assets
 $path_1987 = '/engine-room-records/artists/firelight/1987-aethel-theatrical';
-$art_1987 = 'https://assets.raggiesoft.com/aethel/images/aethel-poster-background.jpg'; // Using the concept art for the theatrical poster
+$art_1987 = $cdnBaseUrl . '/aethel/images/aethel-poster-background.jpg'; // Using the concept art for the theatrical poster
 
 // 2017 Assets
 $path_2017 = '/engine-room-records/artists/firelight/2017-aethel-leviathan-cut';
-$art_2017 = 'https://assets.raggiesoft.com/engine-room-records/artists/firelight/2025-silver-gauntlet-of-aethel/album-art.jpg';
+$art_2017 = $cdnBaseUrl . '/engine-room-records/artists/firelight/2025-silver-gauntlet-of-aethel/album-art.jpg';
 ?>
 
 <style>
@@ -225,7 +225,7 @@ $art_2017 = 'https://assets.raggiesoft.com/engine-room-records/artists/firelight
             
             <div class="col-md-6 col-lg-3">
                 <div class="polaroid">
-                    <img src="https://assets.raggiesoft.com/aethel/images/Gemini_Generated_Image_w9qi0lw9qi0lw9qi.jpg" alt="Miniature Shadowspire Set">
+                    <img src= $cdnBaseUrl . "/aethel/images/Gemini_Generated_Image_w9qi0lw9qi0lw9qi.jpg" alt="Miniature Shadowspire Set">
                     <div class="polaroid-caption text-center">
                         Shadowspire Miniature.<br>Stage 4. Forced perspective.
                     </div>
@@ -234,7 +234,7 @@ $art_2017 = 'https://assets.raggiesoft.com/engine-room-records/artists/firelight
 
             <div class="col-md-6 col-lg-3">
                 <div class="polaroid">
-                    <img src="https://assets.raggiesoft.com/aethel/images/Gemini_Generated_Image_vf0harvf0harvf0h.jpg" alt="Gloomwraith Suit">
+                    <img src= $cdnBaseUrl . "/aethel/images/Gemini_Generated_Image_vf0harvf0harvf0h.jpg" alt="Gloomwraith Suit">
                     <div class="polaroid-caption text-center">
                         Gloomwraith suit test.<br>110°F inside the rubber.
                     </div>
@@ -243,7 +243,7 @@ $art_2017 = 'https://assets.raggiesoft.com/engine-room-records/artists/firelight
 
             <div class="col-md-6 col-lg-3">
                 <div class="polaroid">
-                    <img src="https://assets.raggiesoft.com/aethel/images/Gemini_Generated_Image_wivr1zwivr1zwivr.jpg" alt="Optical Effects The Void">
+                    <img src= $cdnBaseUrl . "/aethel/images/Gemini_Generated_Image_wivr1zwivr1zwivr.jpg" alt="Optical Effects The Void">
                     <div class="polaroid-caption text-center">
                         The Void.<br>Pure optical double-exposure.
                     </div>
@@ -252,7 +252,7 @@ $art_2017 = 'https://assets.raggiesoft.com/engine-room-records/artists/firelight
 
             <div class="col-md-6 col-lg-3">
                 <div class="polaroid">
-                    <img src="https://assets.raggiesoft.com/aethel/images/Gemini_Generated_Image_9ojtk49ojtk49ojt.jpg" alt="The Iron Heart Set">
+                    <img src= $cdnBaseUrl . "/aethel/images/Gemini_Generated_Image_9ojtk49ojtk49ojt.jpg" alt="The Iron Heart Set">
                     <div class="polaroid-caption text-center">
                         The Iron Heart.<br>Built from actual industrial scrap.
                     </div>

@@ -7,7 +7,7 @@ $bandName = "Fractured Prisms";
 $baseUrl = "https://raggiesoft.com"; // Adjust to your actual production domain
 
 // Fetch the albums.json file directly from the CDN
-$jsonUrl = 'https://assets.raggiesoft.com/engine-room-records/artists/fractured-prisms/albums.json';
+$jsonUrl = $cdnBaseUrl . '/engine-room-records/artists/fractured-prisms/albums.json';
 $jsonData = @file_get_contents($jsonUrl);
 
 $discographyLibrary = [];
@@ -82,7 +82,7 @@ $musicGroupSchema = [
                         <div class="card h-100 lore-card rounded-0 shadow-sm overflow-hidden border-top-0 border-end-0 border-bottom-0">
                             
                             <div class="position-relative">
-                                <img src="<?php echo htmlspecialchars($album['img'] ?? 'https://assets.raggiesoft.com/common/images/defaults/vinyl-placeholder.jpg'); ?>" 
+                                <img src="<?php echo htmlspecialchars($album['img'] ?? $cdnBaseUrl . '/common/images/defaults/vinyl-placeholder.jpg'); ?>" 
                                      class="card-img-top border-bottom border-prism" 
                                      alt="<?php echo htmlspecialchars($album['title']); ?>"
                                      style="aspect-ratio: 1/1; object-fit: cover;">

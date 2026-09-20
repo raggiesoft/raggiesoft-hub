@@ -8,8 +8,8 @@ $pageTitle = "Contact Channels | Michael Ragsdale";
 require_once ROOT_PATH . '/includes/utils/json-reader.php';
 $heroImages = fetch_asset_json('common/json/hero-images.json');
 $startImage = !empty($heroImages) 
-    ? "https://assets.raggiesoft.com" . $heroImages[array_rand($heroImages)] 
-    : "https://assets.raggiesoft.com/common/patterns/stars-transparent.png";
+    ? "<?php echo $cdnBaseUrl; ?>" . $heroImages[array_rand($heroImages)] 
+    : "<?php echo $cdnBaseUrl; ?>/common/patterns/stars-transparent.png";
 $imagesJson = htmlspecialchars(json_encode($heroImages), ENT_QUOTES, 'UTF-8');
 ?>
 
@@ -272,4 +272,4 @@ $imagesJson = htmlspecialchars(json_encode($heroImages), ENT_QUOTES, 'UTF-8');
     </div>
 </div>
 
-<script src="https://assets.raggiesoft.com/common/js/hero-image.js"></script>
+<script src= $cdnBaseUrl . "/common/js/hero-image.js"></script>

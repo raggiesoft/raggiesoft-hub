@@ -10,10 +10,10 @@
     "footer": "engine-room/artists/stardust-engine/story/footer-ad-astra",
     
     "siteName": "Ad Astra // Mission Control",
-    "navbarBrandLogo": "https://assets.raggiesoft.com/engine-room-records/artists/the-stardust-engine/band-logo.png",
+    "navbarBrandLogo": "/engine-room-records/artists/the-stardust-engine/band-logo.png",
     "navbarBrandText": "<span class=\"text-uppercase\">Ad Astra</span><span class=\"d-none d-md-inline\">: To The Stars</span>",
     "navbarBrandLink": "/engine-room/artists/stardust-engine/story/ad-astra",
-    "ogImage": "https://assets.raggiesoft.com/stardust-engine/images/story/ad-astra/ad-astra-hero.jpg"
+    "ogImage": "/stardust-engine/images/story/ad-astra/ad-astra-hero.jpg"
   },
   "/engine-room/artists/stardust-engine/story/ad-astra": {
     "view": "pages/engine-room/artists/stardust-engine/story/ad-astra/overview",

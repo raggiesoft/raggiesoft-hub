@@ -950,5 +950,49 @@
         "based_on": [],
         "markdown_file": "sullivan-piper.md",
         "image_path": "crimson-node/images/characters/sullivan-piper.jpg"
+    },
+    "/raggiesoft-books/characters/vance-julian": {
+        "view": "pages/raggiesoft-books/character-profile",
+        "title": "Julian Vance - Character Profile",
+        "showSidebar": true,
+        "character_id": "vance-julian",
+        "name": "Julian Vance",
+        "narratives": [
+            "stardust-engine"
+        ],
+        "is_public": true,
+        "based_on": [],
+        "markdown_file": "vance-julian.md",
+        "image_path": "stardust-engine/images/characters/vance-julian.jpg"
+    },
+    "/raggiesoft-books/characters/kevin": {
+        "view": "pages/raggiesoft-books/character-profile",
+        "title": "Kevin (Photographer) - Character Profile",
+        "showSidebar": true,
+        "character_id": "kevin",
+        "name": "Kevin",
+        "narratives": [
+            "stardust-engine"
+        ],
+        "is_public": true,
+        "based_on": [],
+        "markdown_file": "kevin.md",
+        "image_path": "stardust-engine/images/characters/kevin.jpg"
+    },
+    "/raggiesoft-books/characters/cydele": {
+        "view": "pages/raggiesoft-books/character-profile",
+        "title": "Cydele - Character Profile",
+        "showSidebar": true,
+        "character_id": "cydele",
+        "name": "Cydele",
+        "narratives": [
+            "stardust-engine"
+        ],
+        "is_public": true,
+        "based_on": [
+            "Madonna (In-universe equivalent)"
+        ],
+        "markdown_file": "cydele.md",
+        "image_path": "stardust-engine/images/characters/cydele.jpg"
     }
 }

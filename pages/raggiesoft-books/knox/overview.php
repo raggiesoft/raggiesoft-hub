@@ -4,7 +4,7 @@
 // Context: A welcoming gateway into the truth of the Telsan Gap.
 
 // Hero Image (Absolute Path per user request)
-$heroImage = "https://assets.raggiesoft.com/knox/images/aerie-hold-atmospheric.jpg";
+$heroImage = $cdnBaseUrl . "/knox/images/aerie-hold-atmospheric.jpg";
 ?>
 
 <section class="position-relative py-5" style="background-image: url('<?php echo $heroImage; ?>'); background-size: cover; background-position: center; min-height: 70vh;">

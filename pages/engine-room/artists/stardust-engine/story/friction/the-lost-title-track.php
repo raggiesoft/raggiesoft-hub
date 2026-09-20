@@ -68,31 +68,31 @@ $articleSchema = [
                 <div class="card-header bg-danger text-white fw-bold text-uppercase">
                     <i class="fa-duotone fa-triangle-exclamation me-2"></i>Content Warning
                 </div>
-                <div class="card-body p-5 text-center">
+                <div class="p-5 text-center">
                     <h2 class="h3 fw-bold text-danger mb-4">Restricted Archival File</h2>
                     <p class="lead mb-4 text-body-secondary">
                         This historical archive discusses the conceptual origins of the song "Friction," including 
                         <strong>deliberate corporate exploitation and severe psychological distress</strong>.
                     </p>
                     <div class="d-grid gap-3 d-md-flex justify-content-center">
-                        <a href="/engine-room/artists/stardust-engine/story/friction/overview" class="btn btn-outline-secondary btn-lg">
+                        <wa-button variant="neutral" outline size="large" href="/engine-room/artists/stardust-engine/story/friction/overview">
                             <i class="fa-duotone fa-arrow-left me-2"></i>Return to Overview
-                        </a>
-                        <button onclick="unlockContent()" class="btn btn-danger btn-lg">
+                        </wa-button>
+                        <wa-button variant="danger" size="large" onclick="unlockContent()">
                             <i class="fa-duotone fa-eye me-2"></i>I Understand & Wish to Proceed
-                        </button>
+                        </wa-button>
                     </div>
                 </div>
-            </div>
+            </wa-card>
         </div>
     </div>
 
     <div id="restricted-content" class="d-none fade-in">
         
         <div class="text-center mb-5">
-            <span class="badge bg-danger-subtle text-danger-emphasis rounded-pill px-3 py-2 shadow-sm mb-3 border border-danger-subtle text-uppercase letter-spacing-1">
+            <wa-badge variant="danger" class="rounded-pill shadow-sm mb-3 text-uppercase letter-spacing-1" style="--wa-badge-padding: 0.5rem 1rem;">
                 <i class="fa-solid fa-file-circle-xmark me-2"></i>Evidence Item #94-B
-            </span>
+            </wa-badge>
             <h1 class="display-3 fw-bold text-uppercase text-danger" style="font-family: 'Impact', sans-serif;">
                 The Lost Title Track
             </h1>
@@ -104,8 +104,8 @@ $articleSchema = [
         <div class="row justify-content-center">
             <div class="col-lg-10">
                 
-                <div class="card border-0 narrative-card mb-5">
-                    <div class="card-body p-4 p-md-5 text-body-secondary">
+                <wa-card class="border-0 narrative-card mb-5 w-100">
+                    <div class="p-4 p-md-5 text-body-secondary">
                         <h3 class="text-danger fw-bold text-uppercase mb-4 border-bottom border-danger-subtle pb-2">The Shock Value Mandate</h3>
                         <p>
                             In 1992, Cydele's multimedia controversies were rewriting the rules of the music industry. "Shock value" was the ultimate currency, and Apex Records demanded a piece of the market share. 
@@ -157,12 +157,12 @@ $articleSchema = [
                         </div>
 
                     </div>
-                </div>
+                </wa-card>
 
                 <div class="text-center mt-5">
-                    <a href="/engine-room/artists/stardust-engine/story/friction/overview" class="btn btn-outline-secondary rounded-pill px-4">
+                    <wa-button variant="neutral" outline href="/engine-room/artists/stardust-engine/story/friction/overview" class="rounded-pill">
                         <i class="fa-duotone fa-arrow-left me-2"></i>Back to The Catastrophe
-                    </a>
+                    </wa-button>
                 </div>
 
             </div>

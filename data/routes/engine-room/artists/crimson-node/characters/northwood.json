@@ -10,10 +10,10 @@
         "footer": "engine-room/artists/crimson-node/footer-crimson",
         "showSidebar": true,
         "sidebar": "engine-room/artists/crimson-node/sidebar-northwood",
-        "navbarBrandLogo": "https://assets.raggiesoft.com/engine-room-records/artists/crimson-node/2002-crimson-node/album-art.jpg",
+        "navbarBrandLogo": "/engine-room-records/artists/crimson-node/2002-crimson-node/album-art.jpg",
         "navbarBrandText": "Crimson Node",
         "navbarBrandLink": "/engine-room/artists/crimson-node",
-        "ogImage": "https://assets.raggiesoft.com/engine-room-records/artists/crimson-node/2002-crimson-node/album-art.jpg"
+        "ogImage": "/engine-room-records/artists/crimson-node/2002-crimson-node/album-art.jpg"
     },
     "/engine-room/artists/crimson-node/characters/northwood": {
         "view": "pages/engine-room/artists/crimson-node/characters/northwood/overview",
@@ -35,18 +35,18 @@
         "view": "pages/engine-room/artists/crimson-node/characters/northwood/staff/mrs-demarco",
         "title": "Mrs. DeMarco | Northwood High - Crimson Node",
         "ogTitle": "Mrs. DeMarco",
-        "ogImage": "https://assets.raggiesoft.com/shiloh/images/characters/northwood/mrs-demarco.jpg"
+        "ogImage": "/shiloh/images/characters/northwood/mrs-demarco.jpg"
     },
     "/engine-room/artists/crimson-node/characters/northwood/staff/mrs-periwinkle": {
         "view": "pages/engine-room/artists/crimson-node/characters/northwood/staff/mrs-periwinkle",
         "title": "Mrs. Periwinkle | Northwood High - Crimson Node",
         "ogTitle": "Mrs. Periwinkle",
-        "ogImage": "https://assets.raggiesoft.com/shiloh/images/characters/northwood/mrs-periwinkle.jpg"
+        "ogImage": "/shiloh/images/characters/northwood/mrs-periwinkle.jpg"
     },
     "/engine-room/artists/crimson-node/characters/northwood/staff/bernard-morgan": {
         "view": "pages/engine-room/artists/crimson-node/characters/northwood/staff/bernard-morgan",
         "title": "Bernard Morgan | Northwood High - Crimson Node",
         "ogTitle": "Bernard Morgan",
-        "ogImage": "https://assets.raggiesoft.com/shiloh/images/characters/northwood/bernard-morgan.jpg"
+        "ogImage": "/shiloh/images/characters/northwood/bernard-morgan.jpg"
     }
 }

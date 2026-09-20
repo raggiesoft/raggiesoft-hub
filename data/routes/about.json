@@ -10,7 +10,7 @@
     "siteName": "About RaggieSoft",
     "navbarBrandText": "RaggieSoft",
     "navbarBrandLink": "/",
-    "navbarBrandLogo": "https://assets.raggiesoft.com/portfolio/images/logos/logo-michael.png",
+    "navbarBrandLogo": "/portfolio/images/logos/logo-michael.png",
     "navbarBrandAlt": "RaggieSoft Logo",
     "brandFont": ["Audiowide", "sans-serif"]
   },
@@ -25,7 +25,7 @@
     "showSidebar": true,
     "navbarBrandText": "<span class=\"d-none d-md-inline\">The </span>Stardust Engine",
     "navbarBrandLink": "/engine-room/artists/stardust-engine",
-    "navbarBrandLogo": "https://assets.raggiesoft.com/engine-room-records/artists/the-stardust-engine/band-logo.png",
+    "navbarBrandLogo": "/engine-room-records/artists/the-stardust-engine/band-logo.png",
     "navbarBrandAlt": "The Stardust Engine Retro Logo",
     "brandFont": ["Audiowide", "sans-serif"]
   },
@@ -38,7 +38,7 @@
     "headerMenu": "about/header-about",
     "sidebar": "about/sidebar-about",
     "showSidebar": true,
-    "navbarBrandLogo": "https://assets.raggiesoft.com/engine-room-records/images/logos/engine-room-records-logo.png",
+    "navbarBrandLogo": "/engine-room-records/images/logos/engine-room-records-logo.png",
     "navbarBrandText": "Engine Room<span class=\"d-none d-md-inline\"> Records</span>",
     "navbarBrandLink": "/engine-room",
     "navbarBrandAlt": "Engine Room Records Official Seal",
@@ -55,7 +55,7 @@
     "showSidebar": true,
     "navbarBrandText": "The Family",
     "navbarBrandLink": "/family",
-    "navbarBrandLogo": "https://assets.raggiesoft.com/family/images/logos/logo-family.png",
+    "navbarBrandLogo": "/family/images/logos/logo-family.png",
     "navbarBrandAlt": "The RaggieSoft Family Crest",
     "brandFont": ["Roboto", "sans-serif"]
   },
@@ -69,7 +69,7 @@
     "showSidebar": true,
     "navbarBrandText": "RaggieSoft",
     "navbarBrandLink": "/",
-    "navbarBrandLogo": "https://assets.raggiesoft.com/portfolio/images/logos/logo-michael.png",
+    "navbarBrandLogo": "/portfolio/images/logos/logo-michael.png",
     "navbarBrandAlt": "RaggieSoft Official Logo",
     "brandFont": ["Roboto", "sans-serif"]
   },
@@ -84,7 +84,7 @@
     "showSidebar": true,
     "navbarBrandText": "The Silver Gauntlet",
     "navbarBrandLink": "/raggiesoft-books/aethel-saga",
-    "navbarBrandLogo": "https://assets.raggiesoft.com/aethel/images/logos/silver-gauntlet-of-aethel-logo.png",
+    "navbarBrandLogo": "/aethel/images/logos/silver-gauntlet-of-aethel-logo.png",
     "navbarBrandAlt": "Silver Gauntlet of Aethel Logo",
     "brandFont": ["Cinzel", "serif"]
   },
@@ -101,7 +101,7 @@
     "showSidebar": true,
     "navbarBrandText": "RaggieSoft",
     "navbarBrandLink": "/",
-    "navbarBrandLogo": "https://assets.raggiesoft.com/portfolio/images/logos/logo-michael.png",
+    "navbarBrandLogo": "/portfolio/images/logos/logo-michael.png",
     "navbarBrandAlt": "RaggieSoft Official Logo",
     "brandFont": ["Roboto", "sans-serif"]
   },
@@ -115,7 +115,7 @@
     "showSidebar": true,
     "navbarBrandText": "RaggieSoft",
     "navbarBrandLink": "/",
-    "navbarBrandLogo": "https://assets.raggiesoft.com/portfolio/images/logos/logo-michael.png",
+    "navbarBrandLogo": "/portfolio/images/logos/logo-michael.png",
     "navbarBrandAlt": "RaggieSoft Official Logo",
     "brandFont": ["Roboto", "sans-serif"]
   }

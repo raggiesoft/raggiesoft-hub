@@ -22,6 +22,16 @@ $currentUri = $_SERVER['REQUEST_URI'] ?? '';
             <i slot="start" class="fa-duotone fa-file-audio"></i> The Lost Title Track
         </a>
     
+
+        <a class="nav-link <?php echo str_contains($currentUri, 'atmosphere') ? 'active fw-bold text-danger' : 'link-secondary'; ?>" 
+           href="/engine-room/artists/stardust-engine/story/friction/atmosphere">
+            <i slot="start" class="fa-duotone fa-cloud-showers-heavy me-2"></i> The Atmosphere Demo
+        </a>
+    
+        <a class="nav-link <?php echo str_contains($currentUri, 'kevin-deposition') ? 'active fw-bold text-danger' : 'link-secondary'; ?>" 
+           href="/engine-room/artists/stardust-engine/story/friction/kevin-deposition">
+            <i slot="start" class="fa-duotone fa-scale-balanced me-2"></i> The Mitchell Deposition
+        </a>
 </div>
 
 <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-2 mt-4 mb-2  text-uppercase" style="font-size: 0.75rem; letter-spacing: 1px;">

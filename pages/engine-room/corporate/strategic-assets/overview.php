@@ -11,7 +11,7 @@ $pageTitle = "Stardust Strategic Assets - Corporate Infrastructure";
     /* STEALTH THEME */
     .hero-section {
         background: linear-gradient(rgba(33, 37, 41, 0.95), rgba(33, 37, 41, 0.98)), 
-                    url('https://assets.raggiesoft.com/stardust-engine/images/corporate/secure-server-room.jpg');
+                    url($cdnBaseUrl . '/stardust-engine/images/corporate/secure-server-room.jpg');
         background-size: cover;
         background-position: center;
         color: white;

@@ -12,7 +12,7 @@ $pageTitle = "The Vault - Master Archives";
     /* THEME: "Cold Storage" */
     .vault-hero {
         background: linear-gradient(rgba(13, 20, 30, 0.95), rgba(13, 20, 30, 0.98)), 
-                    url('https://assets.raggiesoft.com/stardust-engine/images/corporate/server-room.jpg');
+                    url($cdnBaseUrl . '/stardust-engine/images/corporate/server-room.jpg');
         background-size: cover;
         background-position: center;
         padding: 5rem 0;

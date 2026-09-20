@@ -6,7 +6,7 @@ $pageTitle = "Crimson Node - Engine Room Records";
 $root = '/engine-room/artists/crimson-node';
 
 // Fetch and decode the Albums JSON (Future-proofed for when more albums are added)
-$jsonUrl = 'https://assets.raggiesoft.com/engine-room-records/artists/crimson-node/albums.json';
+$jsonUrl = $cdnBaseUrl . '/engine-room-records/artists/crimson-node/albums.json';
 $jsonData = @file_get_contents($jsonUrl); // @ suppresses warnings if the fetch fails
 $eras = $jsonData ? json_decode($jsonData, true) : [];
 
@@ -25,7 +25,7 @@ if ($eras) {
 <div class="border-bottom border-primary border-opacity-50" style="
     position: relative;
     background-image: linear-gradient(rgba(13, 13, 13, 0.85), rgba(13, 13, 13, 0.85)), 
-                      url('https://assets.raggiesoft.com/engine-room-records/artists/crimson-node/2002-crimson-node/album-art.jpg');
+                      url($cdnBaseUrl . '/engine-room-records/artists/crimson-node/2002-crimson-node/album-art.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -65,7 +65,7 @@ if ($eras) {
         <div class="row g-0 align-items-center">
             
             <div class="col-lg-6 d-none d-lg-block">
-                <img src="https://assets.raggiesoft.com/engine-room-records/artists/crimson-node/2002-crimson-node/album-art.jpg" 
+                <img src= $cdnBaseUrl . "/engine-room-records/artists/crimson-node/2002-crimson-node/album-art.jpg" 
                      alt="Crimson Node Debut Album" 
                      class="img-fluid h-100 object-fit-cover rounded-start border-end border-secondary border-opacity-50"
                      style="min-height: 400px;">
@@ -80,7 +80,7 @@ if ($eras) {
                     The 15-track debut album has officially cleared the global distribution network. Featuring the massive stadium synth-prog of "The Flight Path" and the relentless energy of "Quality of Service."
                 </p>
                 
-                <img src="https://assets.raggiesoft.com/engine-room-records/artists/crimson-node/2002-crimson-node/album-art.jpg" 
+                <img src= $cdnBaseUrl . "/engine-room-records/artists/crimson-node/2002-crimson-node/album-art.jpg" 
                      alt="Crimson Node Debut Album" 
                      class="img-fluid rounded mb-4 d-block d-lg-none shadow-sm border border-secondary">
 

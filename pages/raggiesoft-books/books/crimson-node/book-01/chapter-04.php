@@ -159,7 +159,7 @@ $nav = [
                     Ten minutes later, Courtney Evans was sitting rigidly in one of the hard plastic chairs opposite Bernard’s desk. Her polished cheerleader aesthetic had completely unraveled, replaced by the tear-streaked panic of a teenager watching her entire social ecosystem collapse in real time.
                 </p>
                 <figure class="figure my-4 text-center d-block">
-                    <img src="https://assets.raggiesoft.com/shiloh/images/story/courtney-principal-office.jpg" class="figure-img img-fluid rounded shadow" alt="Courtney pleading with Bernard Morgan">
+                    <img src= $cdnBaseUrl . "/shiloh/images/story/courtney-principal-office.jpg" class="figure-img img-fluid rounded shadow" alt="Courtney pleading with Bernard Morgan">
                     <figcaption class="figure-caption fst-italic">"Mr. Morgan! Please!?"</figcaption>
                 </figure>
 
@@ -246,7 +246,7 @@ $nav = [
                     The In-School Suspension trailer at Northwood High School was the ultimate sensory deprivation chamber. Physically disconnected from the main brick building, the modular unit vibrated with the droning hum of an oversized window AC unit and the harsh buzz of fluorescent lights. 
                 </p>
                                 <figure class="figure my-5 w-100 text-center">
-                    <img src="https://assets.raggiesoft.com/shiloh/images/story/courtney-evans-iss.jpg" class="figure-img img-fluid rounded shadow-lg border border-secondary" alt="Courtney sitting in the ISS trailer with no busywork, facing the wall.">
+                    <img src= $cdnBaseUrl . "/shiloh/images/story/courtney-evans-iss.jpg" class="figure-img img-fluid rounded shadow-lg border border-secondary" alt="Courtney sitting in the ISS trailer with no busywork, facing the wall.">
                     <figcaption class="figure-caption mt-3 fst-italic">Trapped in the sensory deprivation chamber of the ISS Trailer.</figcaption>
                 </figure>
 

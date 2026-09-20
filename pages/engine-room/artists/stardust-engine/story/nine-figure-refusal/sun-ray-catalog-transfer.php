@@ -156,7 +156,7 @@ $pageTitle = "Lot 200: The Sun-Ray Repatriation";
 
                     <div class="text-center mt-5">
                         <div class="d-inline-block border-bottom border-dark px-5 pb-1 mb-2">
-                            <img src="https://assets.raggiesoft.com/signatures/holly-oconnell.png" style="height: 40px; opacity: 1.0;" alt="Holly O'Connell Signature">
+                            <img src= $cdnBaseUrl . "/signatures/holly-oconnell.png" style="height: 40px; opacity: 1.0;" alt="Holly O'Connell Signature">
                         </div>
                         <div class="small">HOLLY O'CONNELL, TRUSTEE</div>
                     </div>

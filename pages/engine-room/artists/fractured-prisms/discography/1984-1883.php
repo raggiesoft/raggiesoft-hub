@@ -18,7 +18,7 @@ $album_path_web = '/engine-room-records/artists/fractured-prisms/1984-1883';
 
         <div class="col-md-7">
             <div class="mb-3">
-                <img src="https://assets.raggiesoft.com/engine-room-records/artists/fractured-prisms/band-logo.jpg" 
+                <img src= $cdnBaseUrl . "/engine-room-records/artists/fractured-prisms/band-logo.jpg" 
                      alt="Fractured Prisms Monochrome Logo" 
                      style="height: 40px; filter: invert(1) opacity(0.8);" 
                      class="mb-2">

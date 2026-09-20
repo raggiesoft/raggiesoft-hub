@@ -7,7 +7,7 @@ $pageTheme = "ad-astra";
 
 // ASSET MERGE
 $customPageAssets = [
-    'Starfield Texture' => 'https://assets.raggiesoft.com/common/patterns/stars-transparent.png'
+    'Starfield Texture' => $cdnBaseUrl . '/common/patterns/stars-transparent.png'
 ];
 
 ?>

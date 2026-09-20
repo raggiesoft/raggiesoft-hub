@@ -9,7 +9,7 @@ $album_path_web = '/stardust-engine/music/1995-ad-astra-single';
 
 // Special Asset Merge for the "High Tech" feel
 $customPageAssets = [
-    'Starfield' => 'https://assets.raggiesoft.com/common/patterns/stars-transparent.png'
+    'Starfield' => $cdnBaseUrl . '/common/patterns/stars-transparent.png'
 ];
 
 ?>
@@ -37,7 +37,7 @@ $customPageAssets = [
                 <div class="card-body p-5 text-center">
                     
                     <div class="mb-4">
-                        <img src="https://assets.raggiesoft.com/stardust-engine/images/stardust-engine-logo.png" 
+                        <img src= $cdnBaseUrl . "/stardust-engine/images/stardust-engine-logo.png" 
                              alt="Stardust Insignia" 
                              class="img-fluid rounded-circle border border-secondary p-1 shadow-lg mb-4"
                              style="width: 100px; height: 100px;">

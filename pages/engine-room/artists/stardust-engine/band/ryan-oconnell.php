@@ -8,7 +8,7 @@ $pageTitle = "Ryan O'Connell - The Stardust Engine";
 // Define Schema variables for the specific band member
 $memberName = "Ryan O'Connell";
 $memberRole = "Lead Vocals, Lead Guitar";
-$memberImage = "https://assets.raggiesoft.com/stardust-engine/images/band-members/ryan.jpg";
+$memberImage = $cdnBaseUrl . "/stardust-engine/images/band-members/ryan.jpg";
 
 $personSchema = [
     "@context" => "https://schema.org",
@@ -88,7 +88,7 @@ $personSchema = [
             <div class="sticky-top" style="top: 8rem;">
                 <?php $props = [
                     'title' => 'Ryan O\'Connell',
-                    'imgSrc' => 'https://assets.raggiesoft.com/stardust-engine/images/band-members/ryan.jpg',
+                    'imgSrc' => $cdnBaseUrl . '/stardust-engine/images/band-members/ryan.jpg',
                     'imgAlt' => 'Headshot of Ryan O\'Connell in his wheelchair',
                     'variant' => 'axiom', // Cyan
                     // FIX: Wrapped content in a div with text-white-75 to force readability

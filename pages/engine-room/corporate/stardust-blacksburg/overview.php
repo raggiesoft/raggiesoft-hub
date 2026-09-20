@@ -14,7 +14,7 @@ $pageTitle = "Stardust Blacksburg - The Ironwood Collective";
     .hero-section {
         /* Maroon Gradient Overlay */
         background: linear-gradient(rgba(99, 0, 49, 0.85), rgba(26, 5, 13, 0.9)), 
-                    url('https://assets.raggiesoft.com/stardust-engine/images/corporate/blacksburg-housing.jpg');
+                    url($cdnBaseUrl . '/stardust-engine/images/corporate/blacksburg-housing.jpg');
         background-size: cover;
         background-position: center;
         color: white;

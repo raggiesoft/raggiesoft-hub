@@ -11,7 +11,7 @@ require_once ROOT_PATH . '/includes/utils/nav-logic.php';
     <div class="container tome-container">
         
         <div class="text-center mb-5">
-            <img src="https://assets.raggiesoft.com/engine-room-records/artists/silver-gauntlet-of-aethel/2017-the-aethel-saga/album-art.jpg" 
+            <img src= $cdnBaseUrl . "/engine-room-records/artists/silver-gauntlet-of-aethel/2017-the-aethel-saga/album-art.jpg" 
                  alt="Cover Art" 
                  class="img-fluid border border-warning shadow-sm mb-4" 
                  style="max-width: 200px; transform: rotate(-2deg);">

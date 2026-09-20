@@ -42,7 +42,7 @@ $pageTitle = "Ocean View Archives | RaggieSoft Media";
         content: '';
         position: absolute;
         top: 0; left: 0; right: 0; bottom: 0;
-        background-image: url('https://assets.raggiesoft.com/common/patterns/noise-subtle.png');
+        background-image: url($cdnBaseUrl . '/common/patterns/noise-subtle.png');
         opacity: 0.4;
         mix-blend-mode: overlay;
         z-index: 1;
@@ -71,7 +71,7 @@ $pageTitle = "Ocean View Archives | RaggieSoft Media";
 <section class="ova-hero py-5 text-center shadow-lg" aria-label="Ocean View Archives Introduction">
     <div class="container position-relative z-2 py-4">
         
-        <img src="https://assets.raggiesoft.com/raggiesoft-books/images/logos/oceanview-archives.svg" 
+        <img src= $cdnBaseUrl . "/raggiesoft-books/images/logos/oceanview-archives.svg" 
              alt="Ocean View Archives Crest" 
              class="img-fluid mb-4 drop-shadow" 
              style="max-width: 220px;">
@@ -101,7 +101,7 @@ $pageTitle = "Ocean View Archives | RaggieSoft Media";
             <div class="col" style="max-width: 500px;">
                 <?php
                 $props = [
-                    'imgSrc' => 'https://assets.raggiesoft.com/raggiesoft-books/images/covers/contemporary.jpg', // Placeholder
+                    'imgSrc' => $cdnBaseUrl . '/raggiesoft-books/images/covers/contemporary.jpg', // Placeholder
                     'imgAlt' => 'Contemporary Fiction',
                     'fallbackText' => 'Contemporary',
                     'title' => 'Contemporary Fiction',
@@ -122,7 +122,7 @@ $pageTitle = "Ocean View Archives | RaggieSoft Media";
             <div class="col" style="max-width: 500px;">
                 <?php
                 $props = [
-                    'imgSrc' => 'https://assets.raggiesoft.com/engine-room-records/artists/the-stardust-engine/2017-knox-ost/album-art.jpg',
+                    'imgSrc' => $cdnBaseUrl . '/engine-room-records/artists/the-stardust-engine/2017-knox-ost/album-art.jpg',
                     'imgAlt' => 'Project: KNOX',
                     'fallbackText' => 'KNOX',
                     'title' => 'Project: KNOX',
@@ -142,7 +142,7 @@ $pageTitle = "Ocean View Archives | RaggieSoft Media";
             <div class="col" style="max-width: 500px;">
                 <?php
                 $props = [
-                    'imgSrc' => 'https://assets.raggiesoft.com/aethel/images/logos/silver-gauntlet-of-aethel-logo.png', 
+                    'imgSrc' => $cdnBaseUrl . '/aethel/images/logos/silver-gauntlet-of-aethel-logo.png', 
                     'imgAlt' => 'The Silver Gauntlet of Aethel',
                     'fallbackText' => 'Aethel',
                     'title' => 'The Silver Gauntlet of Aethel',

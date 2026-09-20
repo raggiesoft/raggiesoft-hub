@@ -3,7 +3,7 @@
 // v3.4 - "Cinema Mode" Layout with Storefront Routing & Vault Exclusive Logic
 
 // 1. Configuration
-$jsonUrl = $carouselJsonUrl ?? 'https://assets.raggiesoft.com/engine-room-records/artists/the-stardust-engine/albums.json';
+$jsonUrl = $carouselJsonUrl ?? $cdnBaseUrl . '/engine-room-records/artists/the-stardust-engine/albums.json';
 $carousel_albums = [];
 
 // 2. Fetch Data (Timeout Context)
@@ -42,7 +42,7 @@ if ($discographyData) {
                     'realRelease' => $album['realRelease'] ?? '',
                     'genre'       => $album['genre'] ?? 'Rock',
                     'link'        => $album['url'],
-                    'img_src'     => $album['img'] ?? 'https://assets.raggiesoft.com/common/images/defaults/vinyl-placeholder.jpg', 
+                    'img_src'     => $album['img'] ?? $cdnBaseUrl . '/common/images/defaults/vinyl-placeholder.jpg', 
                     'description' => $album['description'] ?? "Released in {$album['year']}.",
                     'is_seized'   => $isSeized,
                     'btn_class'   => $isSeized ? 'btn-danger' : 'btn-primary',

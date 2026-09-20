@@ -21,7 +21,7 @@ $pageTitle = "The Lore - The Stardust Engine";
             <div class="card bg-dark border-info shadow-lg overflow-hidden position-relative group-hover-scale">
                 <div class="row g-0">
                     <div class="col-lg-7 position-relative">
-                        <img src="https://assets.raggiesoft.com/stardust-engine/images/story/ad-astra/band-ready.jpg" 
+                        <img src= $cdnBaseUrl . "/stardust-engine/images/story/ad-astra/band-ready.jpg" 
                              class="img-fluid h-100 object-fit-cover" 
                              alt="A wide-angle shot captures Cassidy O'Connell singing into a microphone on stage, wearing a red t-shirt and jeans. To her right, her older brother Ryan O'Connell plays an electric guitar, seated in a wheelchair. In the background, their twin cousins, Evan (on bass guitar) and Tyler (on drums), perform. They are on a stage inside a spaceship, with a massive window behind them displaying a vibrant nebula in space. A banner with a rocket logo hangs on the right."
                              style="min-height: 350px;">
@@ -58,7 +58,7 @@ $pageTitle = "The Lore - The Stardust Engine";
         <!-- 1. The Crash of '90 (New Entry) -->
         <div class="col">
             <div class="card h-100 border-danger bg-transparent shadow-sm hover-card">
-                <img src="https://assets.raggiesoft.com/stardust-engine/images/story/crash-of-1990.jpg" 
+                <img src= $cdnBaseUrl . "/stardust-engine/images/story/crash-of-1990.jpg" 
                      class="card-img-top" 
                      alt="Ryan in a wheelchair in a hospital room with Holly and Cassidy by his side"
                      style="filter: brightness(0.8);">
@@ -90,7 +90,7 @@ $pageTitle = "The Lore - The Stardust Engine";
                         </div>
                     </div>
 
-                    <img src="https://assets.raggiesoft.com/engine-room-records/artists/the-stardust-engine/1992-friction/album-art.jpg" 
+                    <img src= $cdnBaseUrl . "/engine-room-records/artists/the-stardust-engine/1992-friction/album-art.jpg" 
                          class="card-img-top border-bottom border-primary" 
                          alt="Abstract art representing the Friction scandal"
                          style="filter: grayscale(100%) brightness(0.8);">
@@ -117,7 +117,7 @@ $pageTitle = "The Lore - The Stardust Engine";
         <!-- 3. CPI & The Forgers -->
         <div class="col">
             <div class="card h-100 border-secondary bg-transparent shadow-sm hover-card">
-                <img src="https://assets.raggiesoft.com/engine-room-records/artists/the-stardust-engine/2016-live-at-the-crucible/album-art.jpg" 
+                <img src= $cdnBaseUrl . "/engine-room-records/artists/the-stardust-engine/2016-live-at-the-crucible/album-art.jpg" 
                      class="card-img-top" 
                      alt="The Crucible Stadium at night">
                 <div class="card-body d-flex flex-column">
@@ -141,7 +141,7 @@ $pageTitle = "The Lore - The Stardust Engine";
         <!-- 4. The Refusal (New Entry) -->
         <div class="col">
             <div class="card h-100 border-warning bg-transparent shadow-sm hover-card">
-                <img src="https://assets.raggiesoft.com/engine-room-records/images/omni-global/150-million-refusal.jpg" 
+                <img src= $cdnBaseUrl . "/engine-room-records/images/omni-global/150-million-refusal.jpg" 
                      class="card-img-top" 
                      alt="Cassidy O'Connell looking fierce in a corporate boardroom rejecting a contract offer"
                      style="filter: brightness(0.8);">
@@ -162,7 +162,7 @@ $pageTitle = "The Lore - The Stardust Engine";
         <!-- 5. Port Telsus -->
          <div class="col">
             <div class="card h-100 border-info bg-transparent shadow-sm hover-card">
-                <img src="https://assets.raggiesoft.com/engine-room-records/artists/the-stardust-engine/2017-knox-ost/album-art.jpg" 
+                <img src= $cdnBaseUrl . "/engine-room-records/artists/the-stardust-engine/2017-knox-ost/album-art.jpg" 
                      class="card-img-top" 
                      alt="The neon-lit industrial sprawl of Port Telsus"
                      style="filter: brightness(0.8);">
@@ -187,7 +187,7 @@ $pageTitle = "The Lore - The Stardust Engine";
         <!-- 6. Complete Timeline -->
         <div class="col">
             <div class="card h-100 border-secondary bg-transparent shadow-sm hover-card">
-                <img src="https://assets.raggiesoft.com/stardust-engine/images/story/timeline.jpg" 
+                <img src= $cdnBaseUrl . "/stardust-engine/images/story/timeline.jpg" 
                      class="card-img-top" 
                      alt="A stylized timeline graphic showing key events in the band's history"
                      style="filter: brightness(0.8);">

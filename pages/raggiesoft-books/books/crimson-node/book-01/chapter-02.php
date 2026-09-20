@@ -17,8 +17,8 @@ $nav = [
 
             <!-- Hero Image -->
             <figure class="figure w-100 mb-5">
-                <a href="https://assets.raggiesoft.com/shiloh/images/story/log-02.jpg" target="_blank">
-                    <img src="https://assets.raggiesoft.com/shiloh/images/story/log-02.jpg" class="figure-img img-fluid rounded shadow" alt="Courtney hugging Matt in the Commons, with Mr. Vance standing guard.">
+                <a href= $cdnBaseUrl . "/shiloh/images/story/log-02.jpg" target="_blank">
+                    <img src= $cdnBaseUrl . "/shiloh/images/story/log-02.jpg" class="figure-img img-fluid rounded shadow" alt="Courtney hugging Matt in the Commons, with Mr. Vance standing guard.">
                 </a>
                 <figcaption class="figure-caption text-end fst-italic">Courtney grounds Matt in the Northwood Commons while Mr. Vance anchors the perimeter.</figcaption>
             </figure>
@@ -194,7 +194,7 @@ $nav = [
                 </p>
                 
                 <div class="my-4 text-center">
-                    <img src="https://assets.raggiesoft.com/shiloh/images/story/sarah-comfort-matt.jpg" alt="Sarah comforting Matt in their bedroom" class="img-fluid rounded shadow border border-secondary" style="max-width: 100%;">
+                    <img src= $cdnBaseUrl . "/shiloh/images/story/sarah-comfort-matt.jpg" alt="Sarah comforting Matt in their bedroom" class="img-fluid rounded shadow border border-secondary" style="max-width: 100%;">
                     <div class="text-muted small mt-2 fst-italic">The sanctuary of the shared bedroom.</div>
                 </div>
 
@@ -203,7 +203,7 @@ $nav = [
                 </p>
 
                 <div class="my-4 text-center">
-                    <img src="https://assets.raggiesoft.com/shiloh/images/story/matt-computer-drawing.jpg" alt="Matt's crayon drawing of Sarah's computer" class="img-fluid rounded shadow border border-secondary" style="max-width: 80%;">
+                    <img src= $cdnBaseUrl . "/shiloh/images/story/matt-computer-drawing.jpg" alt="Matt's crayon drawing of Sarah's computer" class="img-fluid rounded shadow border border-secondary" style="max-width: 80%;">
                     <div class="text-muted small mt-2 fst-italic">Matt's favorite drawing: The inside of Sarah's computer.</div>
                 </div>
 

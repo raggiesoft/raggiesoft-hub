@@ -24,7 +24,7 @@ $pageTitle = "Day 10: Harmonic Velocity - Ad Astra Log";
 
     <div class="card border-0 mb-5 overflow-hidden shadow-lg rounded-3 border-start border-info border-4">
         <div class="position-relative">
-            <img src="https://assets.raggiesoft.com/stardust-engine/images/story/ad-astra/harmonic-velocity.jpg" 
+            <img src= $cdnBaseUrl . "/stardust-engine/images/story/ad-astra/harmonic-velocity.jpg" 
                  class="img-fluid w-100" 
                  alt="The band performing in front of the open window, nebula visible">
             

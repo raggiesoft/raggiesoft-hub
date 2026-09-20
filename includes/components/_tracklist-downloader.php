@@ -11,7 +11,7 @@
  * except where commercial distribution exemptions apply (e.g., DSP streaming links).
  */
 
-$base_web_path = 'https://assets.raggiesoft.com' . $album_path_web;
+$base_web_path = $cdnBaseUrl . $album_path_web;
 $tracks_json_url = $base_web_path . '/tracks.json?v=' . time();
 $album_json_url = $base_web_path . '/album.json?v=' . time();
 
@@ -95,7 +95,7 @@ $dsp_notice = '';
 
 // Step up one directory from the album path to target the artist's root folder
 $artist_path_web = dirname($album_path_web);
-$albums_master_url = 'https://assets.raggiesoft.com' . $artist_path_web . '/albums.json?v=' . time();
+$albums_master_url = $cdnBaseUrl . $artist_path_web . '/albums.json?v=' . time();
 $albums_master_content = @file_get_contents($albums_master_url);
 
 if ($albums_master_content !== false) {

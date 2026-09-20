@@ -85,7 +85,7 @@ $pageTitle = "Artist Roster - Engine Room Records";
         <div class="col-xl-6 col-lg-12 d-flex align-items-stretch">
             <div class="card card-industrial w-100">
                 <div class="artist-img-box">
-                    <img src="https://assets.raggiesoft.com/engine-room-records/artists/the-stardust-engine/band-logo.png" 
+                    <img src= $cdnBaseUrl . "/engine-room-records/artists/the-stardust-engine/band-logo.png" 
                          alt="The Stardust Engine">
                 </div>
                 <div class="card-body d-flex flex-column p-4">
@@ -194,7 +194,7 @@ $pageTitle = "Artist Roster - Engine Room Records";
         <div class="col-xl-6 col-lg-12 d-flex align-items-stretch">
             <div class="card card-industrial w-100">
                 <div class="artist-img-box">
-                    <img src="https://assets.raggiesoft.com/engine-room-records/artists/crimson-node/2002-crimson-node/album-art.jpg" 
+                    <img src= $cdnBaseUrl . "/engine-room-records/artists/crimson-node/2002-crimson-node/album-art.jpg" 
                          alt="Crimson Node">
                 </div>
                 <div class="card-body d-flex flex-column p-4">

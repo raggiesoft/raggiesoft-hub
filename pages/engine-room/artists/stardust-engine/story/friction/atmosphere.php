@@ -4,7 +4,7 @@
 // Context: The scientific lyrics that Julian Vance misinterpreted as sexual innuendo.
 
 $pageTitle = "Evidence #94-B: Atmosphere (Demo) - The Stardust Engine Lore";
-$cover_art = 'https://assets.raggiesoft.com/engine-room-records/artists/the-stardust-engine/1992-friction/album-art.jpg';
+$cover_art = $cdnBaseUrl . '/engine-room-records/artists/the-stardust-engine/1992-friction/album-art.jpg';
 ?>
 
 <style>
@@ -75,8 +75,8 @@ $cover_art = 'https://assets.raggiesoft.com/engine-room-records/artists/the-star
         <!-- Cassidy's Concept Art -->
         <div class="col-lg-5">
             <div class="sticky-top" style="top: 100px;">
-                <div class="card bg-dark border-secondary shadow-lg">
-                    <div class="card-header bg-black text-white-50 font-monospace small border-bottom border-secondary d-flex justify-content-between text-uppercase">
+                <wa-card class="bg-dark border-secondary shadow-lg w-100">
+                    <div slot="header" class="bg-black text-white-50 font-monospace small border-bottom border-secondary d-flex justify-content-between text-uppercase p-3">
                         <span>Exhibit C: Visual Concept</span>
                         <span>Date: Aug 1992</span>
                     </div>
@@ -85,7 +85,7 @@ $cover_art = 'https://assets.raggiesoft.com/engine-room-records/artists/the-star
                              class="img-fluid border border-secondary shadow-sm w-100" 
                              alt="Cassidy's concept art of a space shuttle enveloped in the bright pink and orange flames of atmospheric re-entry.">
                     </div>
-                    <div class="card-body bg-body-tertiary">
+                    <div class="bg-body-tertiary p-3">
                         <h5 class="fw-bold text-body-emphasis">"Thermal Friction"</h5>
                         <p class="small text-body-secondary mb-0">
                             Cassidy O'Connell drafted this concept art to accompany the track. It clearly depicts a spacecraft enveloped in the superheated plasma of atmospheric re-entry. 
@@ -95,7 +95,7 @@ $cover_art = 'https://assets.raggiesoft.com/engine-room-records/artists/the-star
                             Julian Vance rejected this artwork, calling it "childish," proving he never understood the band's core identity.
                         </p>
                     </div>
-                </div>
+                </wa-card>
             </div>
         </div>
 
@@ -188,8 +188,8 @@ $cover_art = 'https://assets.raggiesoft.com/engine-room-records/artists/the-star
             </div>
 
             <!-- Court Record Context -->
-            <div class="card bg-dark text-white border-secondary mt-5 shadow-lg">
-                <div class="card-body p-4">
+            <wa-card class="bg-dark text-white border-secondary mt-5 shadow-lg w-100">
+                <div class="p-4">
                     <h4 class="h5 text-warning fw-bold text-uppercase mb-3">
                         <i class="fa-duotone fa-scale-balanced me-2"></i>The Deposition Reality
                     </h4>
@@ -200,7 +200,7 @@ $cover_art = 'https://assets.raggiesoft.com/engine-room-records/artists/the-star
                         Holly O'Connell destroyed their argument by placing Cassidy's concept art on the projector, followed by an expert witness from the <strong>Jet Propulsion Laboratory</strong> who testified that every metaphor in the song perfectly described the physics of the Space Shuttle <em>Discovery</em>. The jury took less than three hours to side with the band.
                     </p>
                 </div>
-            </div>
+            </wa-card>
 
         </div>
     </div>

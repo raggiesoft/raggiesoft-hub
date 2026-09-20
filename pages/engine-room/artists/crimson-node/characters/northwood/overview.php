@@ -47,8 +47,8 @@ $pageTitle = "Northwood High - Crimson Node";
         <!-- Courtney Evans -->
         <div class="col-md-6 col-lg-4">
             <div class="card h-100 border-0 shadow-sm" style="border-top: 5px solid #dc3545;">
-                <a href="https://assets.raggiesoft.com/shiloh/images/characters/northwood/courtney-evans.jpg" target="_blank">
-                    <img src="https://assets.raggiesoft.com/shiloh/images/thumbnails/northwood/courtney-evans-thumb.jpg" class="card-img-top rounded-0" alt="Courtney Evans" style="aspect-ratio: 1/1; object-fit: cover; object-position: center top;">
+                <a href= $cdnBaseUrl . "/shiloh/images/characters/northwood/courtney-evans.jpg" target="_blank">
+                    <img src= $cdnBaseUrl . "/shiloh/images/thumbnails/northwood/courtney-evans-thumb.jpg" class="card-img-top rounded-0" alt="Courtney Evans" style="aspect-ratio: 1/1; object-fit: cover; object-position: center top;">
                 </a>
                 <div class="card-body">
                     <h4 class="card-title fw-bold">Courtney Evans</h4>
@@ -63,8 +63,8 @@ $pageTitle = "Northwood High - Crimson Node";
         <!-- Arthur Vance -->
         <div class="col-md-6 col-lg-4">
             <div class="card h-100 border-0 shadow-sm" style="border-top: 5px solid #198754;">
-                <a href="https://assets.raggiesoft.com/shiloh/images/characters/northwood/arthur-vance.jpg" target="_blank">
-                    <img src="https://assets.raggiesoft.com/shiloh/images/thumbnails/northwood/arthur-vance-thumb.jpg" class="card-img-top rounded-0" alt="Arthur Vance" style="aspect-ratio: 1/1; object-fit: cover; object-position: center top;">
+                <a href= $cdnBaseUrl . "/shiloh/images/characters/northwood/arthur-vance.jpg" target="_blank">
+                    <img src= $cdnBaseUrl . "/shiloh/images/thumbnails/northwood/arthur-vance-thumb.jpg" class="card-img-top rounded-0" alt="Arthur Vance" style="aspect-ratio: 1/1; object-fit: cover; object-position: center top;">
                 </a>
                 <div class="card-body">
                     <h4 class="card-title fw-bold">Arthur Vance</h4>
@@ -78,8 +78,8 @@ $pageTitle = "Northwood High - Crimson Node";
         <!-- Mrs. DeMarco -->
         <div class="col-md-6 col-lg-4">
             <div class="card h-100 border-0 shadow-sm" style="border-top: 5px solid #ffc107;">
-                <a href="https://assets.raggiesoft.com/shiloh/images/characters/northwood/mrs-demarco.jpg" target="_blank">
-                    <img src="https://assets.raggiesoft.com/shiloh/images/characters/northwood/mrs-demarco.jpg" class="card-img-top rounded-0" alt="Mrs. DeMarco" style="aspect-ratio: 1/1; object-fit: cover; object-position: center top;">
+                <a href= $cdnBaseUrl . "/shiloh/images/characters/northwood/mrs-demarco.jpg" target="_blank">
+                    <img src= $cdnBaseUrl . "/shiloh/images/characters/northwood/mrs-demarco.jpg" class="card-img-top rounded-0" alt="Mrs. DeMarco" style="aspect-ratio: 1/1; object-fit: cover; object-position: center top;">
                 </a>
                 <div class="card-body">
                     <h4 class="card-title fw-bold">Mrs. DeMarco</h4>
@@ -93,8 +93,8 @@ $pageTitle = "Northwood High - Crimson Node";
         <!-- Mrs. Periwinkle -->
         <div class="col-md-6 col-lg-4">
             <div class="card h-100 border-0 shadow-sm" style="border-top: 5px solid #6c757d;">
-                <a href="https://assets.raggiesoft.com/shiloh/images/characters/northwood/mrs-periwinkle.jpg" target="_blank">
-                    <img src="https://assets.raggiesoft.com/shiloh/images/characters/northwood/mrs-periwinkle.jpg" class="card-img-top rounded-0" alt="Mrs. Periwinkle" style="aspect-ratio: 1/1; object-fit: cover; object-position: center top;">
+                <a href= $cdnBaseUrl . "/shiloh/images/characters/northwood/mrs-periwinkle.jpg" target="_blank">
+                    <img src= $cdnBaseUrl . "/shiloh/images/characters/northwood/mrs-periwinkle.jpg" class="card-img-top rounded-0" alt="Mrs. Periwinkle" style="aspect-ratio: 1/1; object-fit: cover; object-position: center top;">
                 </a>
                 <div class="card-body">
                     <h4 class="card-title fw-bold">Mrs. Periwinkle</h4>
@@ -108,8 +108,8 @@ $pageTitle = "Northwood High - Crimson Node";
         <!-- Bernard Morgan -->
         <div class="col-md-6 col-lg-4">
             <div class="card h-100 border-0 shadow-sm" style="border-top: 5px solid #0dcaf0;">
-                <a href="https://assets.raggiesoft.com/shiloh/images/characters/northwood/bernard-morgan.jpg" target="_blank">
-                    <img src="https://assets.raggiesoft.com/shiloh/images/characters/northwood/bernard-morgan.jpg" class="card-img-top rounded-0" alt="Bernard Morgan" style="aspect-ratio: 1/1; object-fit: cover; object-position: center top;">
+                <a href= $cdnBaseUrl . "/shiloh/images/characters/northwood/bernard-morgan.jpg" target="_blank">
+                    <img src= $cdnBaseUrl . "/shiloh/images/characters/northwood/bernard-morgan.jpg" class="card-img-top rounded-0" alt="Bernard Morgan" style="aspect-ratio: 1/1; object-fit: cover; object-position: center top;">
                 </a>
                 <div class="card-body">
                     <h4 class="card-title fw-bold">Bernard Morgan</h4>

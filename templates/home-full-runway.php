@@ -10,7 +10,7 @@
           <div class="scroll-card">
             <?php
               $props = [
-                'imgSrc' => 'https://assets.raggiesoft.com/portfolio/images/logos/logo-michael.png',
+                'imgSrc' => $cdnBaseUrl . '/portfolio/images/logos/logo-michael.png',
                 'imgAlt' => 'Michael P. Ragsdale',
                 'fallbackText' => 'Portfolio',
                 'title' => 'Michael P. Ragsdale',
@@ -30,7 +30,7 @@
           <div class="scroll-card theme-invert">
             <?php
               $props = [
-                'imgSrc' => 'https://assets.raggiesoft.com/engine-room-records/images/logos/engine-room-records-logo.png',
+                'imgSrc' => $cdnBaseUrl . '/engine-room-records/images/logos/engine-room-records-logo.png',
                 'imgAlt' => 'Engine Room Records',
                 'fallbackText' => 'Engine Room Records',
                 'title' => 'Engine Room Records',
@@ -50,7 +50,7 @@
           <div class="scroll-card">
             <?php
               $props = [
-                'imgSrc' => 'https://assets.raggiesoft.com/raggiesoft-books/images/logos/oceanview-archives.svg',
+                'imgSrc' => $cdnBaseUrl . '/raggiesoft-books/images/logos/oceanview-archives.svg',
                 'imgAlt' => 'Ocean View Archives',
                 'fallbackText' => 'Archives',
                 'title' => 'Ocean View Archives',
@@ -70,7 +70,7 @@
            <div class="scroll-card">
             <?php
               $props = [
-                'imgSrc' => 'https://assets.raggiesoft.com/family/images/logos/logo-family.png',
+                'imgSrc' => $cdnBaseUrl . '/family/images/logos/logo-family.png',
                 'imgAlt' => 'The RaggieSoft Family',
                 'fallbackText' => 'Family',
                 'title' => 'The DevOps Family',
@@ -104,7 +104,7 @@
           <div class="scroll-card theme-invert">
             <?php
               $props = [
-                'imgSrc' => 'https://assets.raggiesoft.com/engine-room-records/artists/the-stardust-engine/band-logo.png', // Or an album cover
+                'imgSrc' => $cdnBaseUrl . '/engine-room-records/artists/the-stardust-engine/band-logo.png', // Or an album cover
                 'imgAlt' => 'The Stardust Engine',
                 'fallbackText' => 'Stardust',
                 'title' => 'The Stardust Engine',
@@ -124,7 +124,7 @@
           <div class="scroll-card">
             <?php
               $props = [
-                'imgSrc' => 'https://assets.raggiesoft.com/engine-room-records/artists/fractured-prisms/placeholder.jpg',
+                'imgSrc' => $cdnBaseUrl . '/engine-room-records/artists/fractured-prisms/placeholder.jpg',
                 'imgAlt' => 'Fractured Prisms',
                 'fallbackText' => 'Prisms',
                 'title' => 'Fractured Prisms',
@@ -144,7 +144,7 @@
           <div class="scroll-card">
             <?php
               $props = [
-                'imgSrc' => 'https://assets.raggiesoft.com/engine-room-records/artists/the-paper-wall/placeholder.jpg',
+                'imgSrc' => $cdnBaseUrl . '/engine-room-records/artists/the-paper-wall/placeholder.jpg',
                 'imgAlt' => 'The Paper Wall',
                 'fallbackText' => 'Paper Wall',
                 'title' => 'The Paper Wall',
@@ -178,7 +178,7 @@
           <div class="scroll-card">
             <?php
               $props = [
-                'imgSrc' => 'https://assets.raggiesoft.com/raggiesoft-books/images/covers/contemporary-placeholder.jpg',
+                'imgSrc' => $cdnBaseUrl . '/raggiesoft-books/images/covers/contemporary-placeholder.jpg',
                 'imgAlt' => 'Contemporary Fiction',
                 'fallbackText' => 'Contemporary',
                 'title' => 'Contemporary Fiction',
@@ -198,7 +198,7 @@
           <div class="scroll-card">
             <?php
               $props = [
-                'imgSrc' => 'https://assets.raggiesoft.com/engine-room-records/artists/the-stardust-engine/2017-knox-ost/album-art.jpg',
+                'imgSrc' => $cdnBaseUrl . '/engine-room-records/artists/the-stardust-engine/2017-knox-ost/album-art.jpg',
                 'imgAlt' => 'Project: KNOX',
                 'fallbackText' => 'KNOX',
                 'title' => 'Project: KNOX',
@@ -218,7 +218,7 @@
           <div class="scroll-card">
             <?php
               $props = [
-                'imgSrc' => 'https://assets.raggiesoft.com/aethel/images/logos/silver-gauntlet-of-aethel-logo.png',
+                'imgSrc' => $cdnBaseUrl . '/aethel/images/logos/silver-gauntlet-of-aethel-logo.png',
                 'imgAlt' => 'The Silver Gauntlet of Aethel',
                 'fallbackText' => 'Aethel',
                 'title' => 'The Silver Gauntlet of Aethel',

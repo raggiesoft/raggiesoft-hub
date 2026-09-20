@@ -7,7 +7,7 @@
      style="min-height: 60vh;">
      
     <div class="position-absolute top-0 start-0 w-100 h-100" 
-         style="background-image: url('https://assets.raggiesoft.com/aethel/images/scenes/aethel-ruins-bg.jpg'); 
+         style="background-image: url($cdnBaseUrl . '/aethel/images/scenes/aethel-ruins-bg.jpg'); 
                 background-size: cover; background-position: center; opacity: 0.4;">
     </div>
     
@@ -16,7 +16,7 @@
     </div>
 
     <div class="position-relative col-lg-8 mx-auto my-5 py-5 text-white">
-        <img src="https://assets.raggiesoft.com/aethel/images/logos/silver-gauntlet-of-aethel-logo.png" 
+        <img src= $cdnBaseUrl . "/aethel/images/logos/silver-gauntlet-of-aethel-logo.png" 
              alt="The Silver Gauntlet" 
              class="mb-4 drop-shadow-glow" 
              style="max-width: 150px; opacity: 0.9;">
@@ -93,7 +93,7 @@
                             </p>
                         </div>
                         <div class="col-lg-4 text-center mt-4 mt-lg-0">
-                            <img src="https://assets.raggiesoft.com/portfolio/images/logos/logo-michael.png" 
+                            <img src= $cdnBaseUrl . "/portfolio/images/logos/logo-michael.png" 
                                  class="rounded-circle border border-warning shadow-sm" 
                                  width="120" 
                                  alt="Michael Ragsdale">

@@ -8,7 +8,7 @@ $site  = $currentSite ?? 'raggiesoft';
 $theme = $currentPageTheme ?? $site;
 
 // Ensure CDN Root exists
-$cdn_root = $cdnBaseUrl ?? 'https://assets.raggiesoft.com'; 
+$cdn_root = $cdnBaseUrl ?? $cdnBaseUrl; 
 
 // Theme Reset Logic
 if ($site !== 'raggiesoft' && $theme === 'raggiesoft') {
@@ -224,7 +224,7 @@ if (isset($customPageAssets) && is_array($customPageAssets)) {
     <link href="https://fonts.googleapis.com/css2?family=Herr+Von+Muellerhoff&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,700;1,400&family=M+PLUS+Rounded+1c:wght@400;700&family=Titillium+Web:wght@400;700&display=swap" rel="stylesheet">
 
-<script src="https://assets.raggiesoft.com/common/js/elara-spa.js?v=<?php echo time(); ?>" defer></script>    
+<script src= $cdnBaseUrl . "/common/js/elara-spa.js?v=<?php echo time(); ?>" defer></script>    
     <style>
         .brand-font { font-family: <?php echo $brand_font_css; ?> !important; }
         
@@ -348,7 +348,7 @@ if (isset($customPageAssets) && is_array($customPageAssets)) {
         });
     })();
     </script>
-      <script src="https://assets.raggiesoft.com/common/js/cinema-carousel.js?v=2"></script>
+      <script src= $cdnBaseUrl . "/common/js/cinema-carousel.js?v=2"></script>
 
     <style>
     

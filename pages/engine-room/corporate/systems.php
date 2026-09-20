@@ -86,7 +86,7 @@ $pageTitle = "Systems Architecture - Aethelgard Intranet";
                     </div>
                     <div class="p-3 text-center">
                         <div class="mb-3 position-relative d-inline-block">
-                            <img src="https://assets.raggiesoft.com/stardust-engine/images/characters/justin-miller.jpg" 
+                            <img src= $cdnBaseUrl . "/stardust-engine/images/characters/justin-miller.jpg" 
                                  class="rounded-circle border border-2 border-info" 
                                  style="width: 100px; height: 100px; object-fit: cover; filter: grayscale(20%);"
                                  alt="Justin Miller">
@@ -195,7 +195,7 @@ $pageTitle = "Systems Architecture - Aethelgard Intranet";
                         <span class="status-blue">LIVE MAP</span>
                     </div>
                     <div class="p-0 position-relative">
-                        <div style="height: 200px; background: url('https://assets.raggiesoft.com/common/patterns/grid.png'); opacity: 0.5;"></div>
+                        <div style="height: 200px; background: url($cdnBaseUrl . '/common/patterns/grid.png'); opacity: 0.5;"></div>
                         <div class="position-absolute top-50 start-50 translate-middle text-center w-100">
                             <div class="d-inline-block bg-black border border-info p-2 rounded text-info mb-2 shadow-lg">
                                 <i class="fa-solid fa-bus me-2"></i>UNIT 1 (The Sovereign)

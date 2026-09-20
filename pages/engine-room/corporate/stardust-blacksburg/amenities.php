@@ -10,7 +10,7 @@ $pageTitle = "Amenities - The Ironwood Standard";
     /* VARSITY THEME OVERRIDES */
     .amenity-hero {
         background: linear-gradient(rgba(44, 48, 52, 0.9), rgba(44, 48, 52, 0.95)), 
-                    url('https://assets.raggiesoft.com/stardust-engine/images/corporate/study-lounge.jpg');
+                    url($cdnBaseUrl . '/stardust-engine/images/corporate/study-lounge.jpg');
         background-size: cover;
         background-position: center;
         padding: 5rem 0;

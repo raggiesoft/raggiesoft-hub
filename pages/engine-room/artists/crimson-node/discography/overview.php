@@ -7,7 +7,7 @@ $bandName = "Crimson Node";
 $baseUrl = "https://raggiesoft.com"; 
 
 // Fetch the albums.json file directly from the CDN (Specific to Crimson Node)
-$jsonUrl = 'https://assets.raggiesoft.com/engine-room-records/artists/crimson-node/albums.json';
+$jsonUrl = $cdnBaseUrl . '/engine-room-records/artists/crimson-node/albums.json';
 $jsonData = @file_get_contents($jsonUrl);
 
 $discographyLibrary = [];
@@ -108,7 +108,7 @@ $musicGroupSchema = [
                                     </div>
                                 <?php endif; ?>
 
-                                <img src="<?php echo htmlspecialchars($album['img'] ?? 'https://assets.raggiesoft.com/common/images/defaults/vinyl-placeholder.jpg'); ?>" 
+                                <img src="<?php echo htmlspecialchars($album['img'] ?? $cdnBaseUrl . '/common/images/defaults/vinyl-placeholder.jpg'); ?>" 
                                      class="card-img-top border-bottom border-primary border-opacity-50" 
                                      alt="<?php echo htmlspecialchars($album['title']); ?>"
                                      style="aspect-ratio: 1/1; object-fit: cover; <?php echo $isSeized ? 'filter: blur(5px) grayscale(100%);' : ''; ?>">

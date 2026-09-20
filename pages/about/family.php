@@ -5,7 +5,7 @@
 ?>
 
 <div class="mb-5 position-relative">
-    <img src="https://assets.raggiesoft.com/family/images/scenes/paige-michael-hug.jpg" 
+    <img src= $cdnBaseUrl . "/family/images/scenes/paige-michael-hug.jpg" 
          alt="Michael and Paige sharing a moment of calm" 
          class="img-fluid rounded shadow w-100 border border-secondary border-opacity-10"
          style="max-height: 500px; object-fit: cover; object-position: center 30%;">

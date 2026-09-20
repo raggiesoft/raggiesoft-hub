@@ -4,7 +4,7 @@
 // Context: The "Magnum Opus" mission.
 
 $pageTitle = "Ad Astra: The Mission - The Stardust Engine Lore";
-$cardBackground = 'https://assets.raggiesoft.com/stardust-engine/images/story/ad-astra/ad-astra-siblings-bg.jpg';
+$cardBackground = $cdnBaseUrl . '/stardust-engine/images/story/ad-astra/ad-astra-siblings-bg.jpg';
 ?>
 
 <div class="starfield-container"><div class="starfield-twinkling"></div></div>
@@ -12,7 +12,7 @@ $cardBackground = 'https://assets.raggiesoft.com/stardust-engine/images/story/ad
 <div class="position-relative d-flex align-items-center justify-content-center overflow-hidden border-bottom border-info" style="height: 60vh;">
     
     <div class="position-absolute top-0 start-0 w-100 h-100" style="z-index: 0;">
-                <img src="https://assets.raggiesoft.com/stardust-engine/images/story/ad-astra/ad-astra-hero.jpg" 
+                <img src= $cdnBaseUrl . "/stardust-engine/images/story/ad-astra/ad-astra-hero.jpg" 
              alt="The Stardust Engine performing in front of a massive window showing the Veil Nebula." 
              class="w-100 h-100 object-fit-cover"
              style="opacity: 0.95; filter: brightness(0.8);">

@@ -4,7 +4,7 @@
 // Updated: Dynamic Location Logic
 
 // --- 1. DYNAMIC LOCATION LOGIC ---
-$location_json_url = 'https://assets.raggiesoft.com/portfolio/json/locations.json';
+$location_json_url = $cdnBaseUrl . '/portfolio/json/locations.json';
 $hq_location = 'Location Classified'; // Fallback in case of failure
 
 $location_json = @file_get_contents($location_json_url);
@@ -87,7 +87,7 @@ $isDarkTheme = (isset($currentPageTheme) && in_array($currentPageTheme, ['dark',
     <?php include ROOT_PATH . '/includes/components/audio-player/sticky-player.php'; ?>
     <?php include ROOT_PATH . '/includes/components/modals/encyclopedia-modal.php'; ?>
 
-    <script src="https://assets.raggiesoft.com/engine-room-records/js/stardust-player.js?v=<?php echo time(); ?>"></script>
+    <script src= $cdnBaseUrl . "/engine-room-records/js/stardust-player.js?v=<?php echo time(); ?>"></script>
     
     <script>
         // Initialize global registry if not exists
@@ -96,9 +96,9 @@ $isDarkTheme = (isset($currentPageTheme) && in_array($currentPageTheme, ['dark',
 </div>
 
 
-<script src="https://assets.raggiesoft.com/common/js/piper-sullivan.js?v=<?php echo time(); ?>"></script>
-<script src="https://assets.raggiesoft.com/common/js/encyclopedia.js?v=1789647924"></script>
-<script src="https://assets.raggiesoft.com/common/js/cinema-carousel.js"></script>
+<script src= $cdnBaseUrl . "/common/js/piper-sullivan.js?v=<?php echo time(); ?>"></script>
+<script src= $cdnBaseUrl . "/common/js/encyclopedia.js?v=1789647924"></script>
+<script src= $cdnBaseUrl . "/common/js/cinema-carousel.js"></script>
 <script>
 // 1. Wrap the Store UI logic into a reusable function
 function initializeStorePreferences() {

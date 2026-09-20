@@ -15,7 +15,7 @@ $pageTitle = "About Engine Room Records";
 
 <div class="card bg-black text-white border-danger mb-5 shadow-sm overflow-hidden">
     <div class="card-body p-5 text-center">
-        <img src="https://assets.raggiesoft.com/engine-room-records/images/logos/engine-room-records-logo.png" 
+        <img src= $cdnBaseUrl . "/engine-room-records/images/logos/engine-room-records-logo.png" 
              alt="Engine Room Records" 
              class="rounded-circle border border-danger border-3 mb-4 shadow logo-invert"
              width="100" height="100">

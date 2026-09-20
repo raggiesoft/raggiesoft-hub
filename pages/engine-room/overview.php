@@ -31,7 +31,7 @@ $pageTitle = "Engine Room Records™ | Loud. Raw. Real.";
     /* FAN HUB STYLING */
     .engine-hero {
         background: linear-gradient(to bottom, rgba(13, 17, 23, 0.8), rgba(13, 17, 23, 0.95)), 
-                    url('https://assets.raggiesoft.com/stardust-engine/images/studio-rack.jpg') center/cover;
+                    url($cdnBaseUrl . '/stardust-engine/images/studio-rack.jpg') center/cover;
         border-bottom: 4px solid var(--bs-primary);
     }
     
@@ -107,7 +107,7 @@ $pageTitle = "Engine Room Records™ | Loud. Raw. Real.";
 
 <div class="engine-hero py-5 mb-5 shadow-lg text-white">
     <div class="container text-center py-5">
-        <img src="https://assets.raggiesoft.com/engine-room-records/images/logos/engine-room-records-logo.png" 
+        <img src= $cdnBaseUrl . "/engine-room-records/images/logos/engine-room-records-logo.png" 
              alt="Engine Room Records" 
              class="mb-4 logo-invert hero-logo">
              
@@ -143,7 +143,7 @@ $pageTitle = "Engine Room Records™ | Loud. Raw. Real.";
             <div class="card h-100 border-0 shadow-sm bg-body-tertiary overflow-hidden">
                 <div class="row g-0 h-100">
                     <div class="col-sm-5">
-                        <img src="https://assets.raggiesoft.com/engine-room-records/artists/the-stardust-engine/1997-hard-reset/album-art.jpg" 
+                        <img src= $cdnBaseUrl . "/engine-room-records/artists/the-stardust-engine/1997-hard-reset/album-art.jpg" 
                              class="img-fluid h-100 object-fit-cover border-end border-secondary-subtle" 
                              alt="Hard Reset Album Art">
                     </div>
@@ -206,7 +206,7 @@ $pageTitle = "Engine Room Records™ | Loud. Raw. Real.";
             <a href="/engine-room/artists/stardust-engine" class="text-decoration-none">
                 <div class="card roster-card h-100 p-4 text-center">
                     <div class="mb-3">
-                        <img src="https://assets.raggiesoft.com/engine-room-records/artists/the-stardust-engine/band-logo.png" 
+                        <img src= $cdnBaseUrl . "/engine-room-records/artists/the-stardust-engine/band-logo.png" 
                              alt="The Stardust Engine" style="height: 60px; object-fit: contain;">
                     </div>
                     <h3 class="h6 fw-bold text-body-emphasis text-uppercase mb-2">The Stardust Engine&trade;</h3>
@@ -222,7 +222,7 @@ $pageTitle = "Engine Room Records™ | Loud. Raw. Real.";
             <a href="/engine-room/artists/crimson-node" class="text-decoration-none">
                 <div class="card roster-card h-100 p-4 text-center">
                     <div class="mb-3">
-                        <img src="https://assets.raggiesoft.com/engine-room-records/artists/crimson-node/2002-crimson-node/album-art.jpg" 
+                        <img src= $cdnBaseUrl . "/engine-room-records/artists/crimson-node/2002-crimson-node/album-art.jpg" 
                              alt="Crimson Node" style="height: 60px; object-fit: contain;">
                     </div>
                     <h3 class="h6 fw-bold text-body-emphasis text-uppercase mb-2">Crimson Node&trade;</h3>
@@ -238,7 +238,7 @@ $pageTitle = "Engine Room Records™ | Loud. Raw. Real.";
             <a href="/engine-room/artists/fractured-prisms" class="text-decoration-none">
                 <div class="card roster-card h-100 p-4 text-center">
                     <div class="mb-3">
-                        <img src="https://assets.raggiesoft.com/engine-room-records/artists/fractured-prisms/band-logo-colour.jpg" 
+                        <img src= $cdnBaseUrl . "/engine-room-records/artists/fractured-prisms/band-logo-colour.jpg" 
                              alt="Fractured Prisms" style="height: 60px; object-fit: contain;">
                     </div>
                     <h3 class="h6 fw-bold text-body-emphasis text-uppercase mb-2">Fractured Prisms&trade;</h3>

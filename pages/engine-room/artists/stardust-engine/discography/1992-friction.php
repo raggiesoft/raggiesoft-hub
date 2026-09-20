@@ -7,7 +7,7 @@ $pageTitle = "CASE 94-CIV-404: Seized Assets - The Stardust Engine";
 // $pageTheme is intentionally omitted to use the default dark industrial background
 
 // 1. Asset Setup
-$seized_art = 'https://assets.raggiesoft.com/stardust-engine/music/1992-friction/album-art.jpg';
+$seized_art = $cdnBaseUrl . '/stardust-engine/music/1992-friction/album-art.jpg';
 
 $albumSchema = [
     "@context" => "https://schema.org",

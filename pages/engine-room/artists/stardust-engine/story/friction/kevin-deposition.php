@@ -99,8 +99,8 @@ $pageTitle = "Evidence #94-C: The Mitchell Deposition - The Stardust Engine Lore
     <div class="row justify-content-center mb-5">
         <div class="col-lg-10">
             
-            <div class="card bg-body-tertiary border-secondary shadow-sm mb-5">
-                <div class="card-body p-4">
+            <wa-card class="bg-body-tertiary border-secondary shadow-sm mb-5 w-100">
+                <div class="p-4">
                     <h4 class="h5 fw-bold text-uppercase text-danger mb-3 border-bottom border-secondary-subtle pb-2">
                         <i class="fa-solid fa-microphone-lines me-2"></i>Context Brief
                     </h4>
@@ -110,7 +110,7 @@ $pageTitle = "Evidence #94-C: The Mitchell Deposition - The Stardust Engine Lore
                         They vastly underestimated who they were talking to.
                     </p>
                 </div>
-            </div>
+            </wa-card>
 
             <div class="transcript-paper">
                 <div class="line-number-col"></div>

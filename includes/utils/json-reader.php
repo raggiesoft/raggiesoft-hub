@@ -13,7 +13,7 @@ function fetch_asset_json($path) {
     // 1. Resolve Access to the CDN Root
     // We look for $cdn_root (Header scope) or $cdnBaseUrl (Router scope)
     global $cdn_root, $cdnBaseUrl;
-    $root = $cdn_root ?? $cdnBaseUrl ?? 'https://assets.raggiesoft.com';
+    $root = $cdn_root ?? $cdnBaseUrl ?? $cdnBaseUrl;
     
     // 2. Clean the Path
     // Remove leading slashes to prevent double-slashing

@@ -14,7 +14,7 @@
     <div class="row align-items-start">
         <div class="col-lg-5 mb-4 mb-lg-0">
             <div class="card bg-body-tertiary border-secondary border-opacity-25 shadow-sm">
-                <img src="https://assets.raggiesoft.com/shiloh/images/characters/northwood/mrs-demarco.jpg" class="card-img-top" alt="Mrs. DeMarco Portrait">
+                <img src= $cdnBaseUrl . "/shiloh/images/characters/northwood/mrs-demarco.jpg" class="card-img-top" alt="Mrs. DeMarco Portrait">
                 <div class="card-body">
                     <ul class="list-unstyled mb-0 text-muted">
                         <li class="mb-2"><i class="fa-duotone fa-id-badge text-danger me-2"></i> <strong>Role:</strong> Cafeteria Supervisor</li>

@@ -8,7 +8,7 @@ $pageTitle = "Cassidy O'Connell - The Stardust Engine";
 // Define Schema variables for the specific band member
 $memberName = "Cassidy O'Connell";
 $memberRole = "Lead Vocals, Piano, Synthesizers";
-$memberImage = "https://assets.raggiesoft.com/stardust-engine/images/band-members/cassidy.jpg";
+$memberImage = $cdnBaseUrl . "/stardust-engine/images/band-members/cassidy.jpg";
 
 $personSchema = [
     "@context" => "https://schema.org",
@@ -83,7 +83,7 @@ $personSchema = [
             <div class="sticky-top" style="top: 8rem;">
                 <?php $props = [
                     'title' => 'Cassidy O\'Connell',
-                    'imgSrc' => 'https://assets.raggiesoft.com/stardust-engine/images/band-members/cassidy.jpg',
+                    'imgSrc' => $cdnBaseUrl . '/stardust-engine/images/band-members/cassidy.jpg',
                     'imgAlt' => 'Headshot of Cassidy O\'Connell',
                     'variant' => 'pact', // Pink/Violet
                     // FIX: Wrapped content in a div with text-white-75 to force readability

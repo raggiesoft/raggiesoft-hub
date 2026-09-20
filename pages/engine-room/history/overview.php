@@ -5,7 +5,7 @@
 $pageTitle = "Company History - Engine Room Records";
 
 // Define the root path for all Engine Room artist assets
-$base_path = "https://assets.raggiesoft.com/engine-room-records/artists";
+$base_path = $cdnBaseUrl . "/engine-room-records/artists";
 ?>
 
 <div class="container py-5">

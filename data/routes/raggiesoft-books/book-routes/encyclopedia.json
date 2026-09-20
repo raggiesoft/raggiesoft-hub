@@ -12,7 +12,7 @@
     "siteName": "The Narrative Encyclopedia",
     "navbarBrandText": "RaggieSoft <span class=\"d-none d-md-inline\">Books</span>",
     "navbarBrandLink": "/raggiesoft-books",
-    "navbarBrandLogo": "https://assets.raggiesoft.com/raggiesoft-corporate/images/logo/raggiesoft-logo.png",
+    "navbarBrandLogo": "/raggiesoft-corporate/images/logo/raggiesoft-logo.png",
     "navbarBrandAlt": "RaggieSoft Books Logo",
     "brandFont": ["Crimson Text", "serif"]
   },

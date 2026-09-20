@@ -7,7 +7,7 @@ $currentUri = $_SERVER['REQUEST_URI'];
 
 <div class="text-center mb-4 pt-3">
     <a href="/about" class="text-decoration-none">
-        <img src="https://assets.raggiesoft.com/raggiesoft-corporate/images/logo/raggiesoft-logo.png" 
+        <img src= $cdnBaseUrl . "/raggiesoft-corporate/images/logo/raggiesoft-logo.png" 
              alt="RaggieSoft" 
              class="mb-3"
              style="width: 60px; height: 60px; object-fit: contain;">

@@ -8,7 +8,7 @@ $pageTitle = "Holly O'Connell - The Stardust Engine";
 // Define Schema variables for the specific band member
 $memberName = "Holly O'Connell";
 $memberRole = "Manager, CEO, CFO";
-$memberImage = "https://assets.raggiesoft.com/stardust-engine/images/band-members/holly.jpg";
+$memberImage = $cdnBaseUrl . "/stardust-engine/images/band-members/holly.jpg";
 
 $personSchema = [
     "@context" => "https://schema.org",
@@ -224,7 +224,7 @@ $personSchema = [
             <div class="sticky-top" style="top: 8rem;">
                 <?php $props = [
                     'title' => 'Holly O\'Connell',
-                    'imgSrc' => 'https://assets.raggiesoft.com/stardust-engine/images/band-members/holly.jpg',
+                    'imgSrc' => $cdnBaseUrl . '/stardust-engine/images/band-members/holly.jpg',
                     'imgAlt' => 'Headshot of Holly O\'Connell',
                     'variant' => 'neutral',
                     'description' => "<div class='text-white-75'>

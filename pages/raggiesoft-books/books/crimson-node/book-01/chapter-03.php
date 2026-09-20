@@ -76,7 +76,7 @@ $nav = [
                     "Hold it right there!" Linda called out, quickly stepping back and pulling a disposable camera from her apron pocket. The flash popped, capturing the three birthday kids tangled in a warm, protective embrace.
                 </p>
                 <div class="my-5 text-center">
-                    <img src="https://assets.raggiesoft.com/shiloh/images/story/matt-sarah-shiloh.jpg" alt="Matt getting hugged by Sarah and Shiloh at breakfast" class="img-fluid rounded shadow border border-secondary" style="max-width: 100%;">
+                    <img src= $cdnBaseUrl . "/shiloh/images/story/matt-sarah-shiloh.jpg" alt="Matt getting hugged by Sarah and Shiloh at breakfast" class="img-fluid rounded shadow border border-secondary" style="max-width: 100%;">
                     <div class="text-muted small mt-2 fst-italic">Matt fiercely loves hugs from women he trusts. Sarah and Shiloh sandwich him in a birthday embrace.</div>
                 </div>
 

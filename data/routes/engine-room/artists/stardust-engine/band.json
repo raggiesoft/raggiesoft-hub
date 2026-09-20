@@ -11,10 +11,10 @@
     "footer": "engine-room/artists/stardust-engine/footer-stardust",
     "showSidebar": true,
     "sidebar": "engine-room/artists/stardust-engine/sidebar-band",
-    "navbarBrandLogo": "https://assets.raggiesoft.com/engine-room-records/artists/the-stardust-engine/band-logo.png",
+    "navbarBrandLogo": "/engine-room-records/artists/the-stardust-engine/band-logo.png",
     "navbarBrandText": "<span class=\"navbar-brand-text\"><span class=\"d-none d-md-inline\">The </span>Stardust Engine</span>",
     "navbarBrandLink": "/engine-room/artists/stardust-engine",
-    "ogImage": "https://assets.raggiesoft.com/engine-room-records/artists/the-stardust-engine/social-preview.jpg"
+    "ogImage": "/engine-room-records/artists/the-stardust-engine/social-preview.jpg"
   },
   "/engine-room/artists/stardust-engine/band": {
     "view": "pages/engine-room/artists/stardust-engine/band/overview",

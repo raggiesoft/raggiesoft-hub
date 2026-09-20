@@ -9,13 +9,13 @@ $discographyLibrary = [
         'description' => 'The band\'s first releases were defined by a "cold war" with their label, Apex Records, who suppressed their rock sound to push a marketable synth-pop image.',
         'albums' => [
             // READY
-            ['title' => 'Electric Color', 'year' => '1987', 'url' => '/engine-room/artists/stardust-engine/discography/1987-electric-color', 'img' => 'https://assets.raggiesoft.com/engine-room-records/artists/the-stardust-engine/1987-electric-color/album-art.jpg'],
+            ['title' => 'Electric Color', 'year' => '1987', 'url' => '/engine-room/artists/stardust-engine/discography/1987-electric-color', 'img' => $cdnBaseUrl . '/engine-room-records/artists/the-stardust-engine/1987-electric-color/album-art.jpg'],
             // READY
-            ['title' => 'Neon Hearts', 'year' => '1989', 'url' => '/engine-room/artists/stardust-engine/discography/1989-neon-hearts', 'img' => 'https://assets.raggiesoft.com/engine-room-records/artists/the-stardust-engine/1989-neon-hearts/album-art.jpg'],
+            ['title' => 'Neon Hearts', 'year' => '1989', 'url' => '/engine-room/artists/stardust-engine/discography/1989-neon-hearts', 'img' => $cdnBaseUrl . '/engine-room-records/artists/the-stardust-engine/1989-neon-hearts/album-art.jpg'],
             // READY
-            ['title' => 'Live in Chicago', 'year' => '1990', 'url' => '/engine-room/artists/stardust-engine/discography/1990-live-in-chicago', 'img' => 'https://assets.raggiesoft.com/engine-room-records/artists/the-stardust-engine/1990-live-in-chicago/album-art.jpg'],
+            ['title' => 'Live in Chicago', 'year' => '1990', 'url' => '/engine-room/artists/stardust-engine/discography/1990-live-in-chicago', 'img' => $cdnBaseUrl . '/engine-room-records/artists/the-stardust-engine/1990-live-in-chicago/album-art.jpg'],
             // CANCELED
-            ['title' => 'Friction', 'year' => '1992', 'url' => '/engine-room/artists/stardust-engine/discography/1992-friction', 'extra' => '<span class="badge bg-danger ms-2" style="font-size: 0.6em;">CANCELED</span>', 'img' => 'https://assets.raggiesoft.com/engine-room-records/artists/the-stardust-engine/1992-friction/album-art.jpg'],
+            ['title' => 'Friction', 'year' => '1992', 'url' => '/engine-room/artists/stardust-engine/discography/1992-friction', 'extra' => '<span class="badge bg-danger ms-2" style="font-size: 0.6em;">CANCELED</span>', 'img' => $cdnBaseUrl . '/engine-room-records/artists/the-stardust-engine/1992-friction/album-art.jpg'],
         ]
     ],
     'freedom' => [
@@ -24,14 +24,14 @@ $discographyLibrary = [
         'description' => 'After the contract was voided, the band retreated to "The Fortress"—a warehouse studio where they finally forged the industrial-rock sound they always heard in their heads.',
         'albums' => [
             // READY
-            ['title' => 'The Warehouse Tapes', 'year' => '1995', 'url' => '/engine-room/artists/stardust-engine/discography/1995-the-warehouse-tapes', 'img' => 'https://assets.raggiesoft.com/engine-room-records/artists/the-stardust-engine/1995-the-warehouse-tapes/album-art.jpg'],
+            ['title' => 'The Warehouse Tapes', 'year' => '1995', 'url' => '/engine-room/artists/stardust-engine/discography/1995-the-warehouse-tapes', 'img' => $cdnBaseUrl . '/engine-room-records/artists/the-stardust-engine/1995-the-warehouse-tapes/album-art.jpg'],
             // READY (With Folder Override)
             [
                 'title' => 'Ad Astra (Single)', 
                 'year' => '1995', 
                 'url' => '/engine-room/artists/stardust-engine/discography/1995-the-warehouse-tapes/ad-astra',
                 'folder' => '1995-ad-astra-single',
-                'img' => 'https://assets.raggiesoft.com/engine-room-records/artists/the-stardust-engine/1995-ad-astra-single/album-art.jpg'
+                'img' => $cdnBaseUrl . '/engine-room-records/artists/the-stardust-engine/1995-ad-astra-single/album-art.jpg'
             ],
             // NOT READY
             // ['title' => 'Hard Reset', 'year' => '1997', 'url' => '/engine-room/artists/stardust-engine/discography/1997-hard-reset', 'img' => '...'],

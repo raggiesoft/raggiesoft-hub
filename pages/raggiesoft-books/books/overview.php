@@ -18,7 +18,7 @@
         <div class="col-lg-5">
             <?php
             $props = [
-                'imgSrc' => 'https://assets.raggiesoft.com/engine-room-records/artists/crimson-node/2002-crimson-node/album-art.jpg',
+                'imgSrc' => $cdnBaseUrl . '/engine-room-records/artists/crimson-node/2002-crimson-node/album-art.jpg',
                 'imgAlt' => 'Crimson Node',
                 'fallbackText' => 'CN',
                 'title' => 'Crimson Node: The Archives',
@@ -39,7 +39,7 @@
         <div class="col-lg-5">
             <?php
             $props = [
-                'imgSrc' => 'https://assets.raggiesoft.com/common/patterns/noise-subtle.png',
+                'imgSrc' => $cdnBaseUrl . '/common/patterns/noise-subtle.png',
                 'imgAlt' => 'Encrypted File',
                 'fallbackText' => '???',
                 'title' => 'Encrypted File',

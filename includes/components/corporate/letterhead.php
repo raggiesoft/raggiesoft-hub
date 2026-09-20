@@ -40,7 +40,7 @@ if ($current_brand === 'pacific-rim') {
     $brand_url = "engineroom-records.com";
     
     // Ensure the logo path is correct based on your previous file uploads
-    $brand_logo = '<img src="https://assets.raggiesoft.com/engine-room-records/images/logos/engine-room-records-logo.png" alt="Official Seal" style="width: 100px; mix-blend-mode: multiply; filter: contrast(120%);">';
+    $brand_logo = '<img src= $cdnBaseUrl . "/engine-room-records/images/logos/engine-room-records-logo.png" alt="Official Seal" style="width: 100px; mix-blend-mode: multiply; filter: contrast(120%);">';
     
     // Signature: The CEO
     $sig_title = "Chief Executive Officer & General Counsel";

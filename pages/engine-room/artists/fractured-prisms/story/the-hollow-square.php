@@ -81,7 +81,7 @@ $pageTitle = "The Hollow Square - Fractured Prisms Lore";
                     <div class="row g-0 align-items-center">
                         <div class="col-md-5">
                             <div class="polaroid-prism">
-                                <img src="https://assets.raggiesoft.com/engine-room-records/artists/fractured-prisms/1983-carnaby-street/album-art.jpg" 
+                                <img src= $cdnBaseUrl . "/engine-room-records/artists/fractured-prisms/1983-carnaby-street/album-art.jpg" 
                                      alt="Claire standing with Gwen's flute, alongside Rhys at the iron gates.">
                                 <div class="polaroid-caption text-center">
                                     Archive: The 1883 Manifestation
