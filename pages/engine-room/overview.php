@@ -197,35 +197,40 @@ usort($latestAlbums, function($a, $b) {
     </style>
 
     
-    <div class="row g-4 mb-5">
-
+        <div class="row g-4 mb-5 justify-content-center">
         <?php foreach ($latestAlbums as $album): ?>
-        <div class="col-12 col-md-6 col-lg-3 d-flex align-items-stretch">
-            <wa-card class="h-100 border border-secondary shadow-sm bg-transparent w-100 p-0 hover-card" style="--wa-panel-bg: transparent; --body-padding: 0; --header-padding: 0;">
-                <?php if (!empty($album['img'])): ?>
-                    <img src="<?php echo htmlspecialchars($album['img']); ?>" class="img-fluid border-bottom" alt="<?php echo htmlspecialchars($album['title']); ?> Album Art" style="object-fit: cover; width: 100%; aspect-ratio: 1/1;">
-                <?php else: ?>
-                    <div class="bg-dark d-flex align-items-center justify-content-center border-bottom" style="width: 100%; aspect-ratio: 1/1;">
-                        <i class="fa-duotone fa-waveform-lines fa-4x text-danger opacity-50"></i>
-                    </div>
-                <?php endif; ?>
-                <div class="d-flex flex-column h-100 p-3 bg-body-tertiary">
-                    <span class="badge bg-warning text-dark mb-2 font-monospace" style="align-self: flex-start;"><?php echo htmlspecialchars($album['year'] ?? 'TBA'); ?> RELEASE</span>
-                    <h3 class="h6 fw-bold text-uppercase mb-1"><?php echo htmlspecialchars($album['title']); ?></h3>
-                    <p class="text-primary small fw-bold text-uppercase mb-3"><?php echo htmlspecialchars($album['artistPersona']); ?>&trade;</p>
-                    <p class="card-text small text-body-secondary mb-3">
-                        <?php echo htmlspecialchars($album['description'] ?? ''); ?>
-                    </p>
-                    <div class="mt-auto pt-3">
-                        <?php if (!empty($album['url'])): ?>
-                            <wa-button href="<?php echo htmlspecialchars($album['url']); ?>" variant="neutral" class="w-100">
-                                <i class="fa-duotone fa-compact-disc me-2" slot="prefix"></i> Explore
-                            </wa-button>
+        <div class="col-12 col-xl-6 d-flex align-items-stretch">
+            <wa-card class="h-100 border border-secondary shadow-sm bg-transparent w-100 p-0 hover-card overflow-hidden" style="--wa-panel-bg: transparent; --body-padding: 0; --header-padding: 0;">
+                <div class="row g-0 h-100">
+                    <div class="col-sm-5 col-md-4 col-xl-5">
+                        <?php if (!empty($album['img'])): ?>
+                            <img src="<?php echo htmlspecialchars($album['img']); ?>" class="img-fluid h-100 object-fit-cover border-end border-secondary-subtle" alt="<?php echo htmlspecialchars($album['title']); ?> Album Art" style="min-height: 100%;">
                         <?php else: ?>
-                            <wa-button disabled variant="neutral" class="w-100">
-                                <i class="fa-solid fa-lock me-2" slot="prefix"></i> In Vault
-                            </wa-button>
+                            <div class="bg-dark d-flex align-items-center justify-content-center border-end border-secondary-subtle h-100" style="min-height: 250px;">
+                                <i class="fa-duotone fa-waveform-lines fa-4x text-danger opacity-50"></i>
+                            </div>
                         <?php endif; ?>
+                    </div>
+                    <div class="col-sm-7 col-md-8 col-xl-7 d-flex flex-column bg-body-tertiary">
+                        <div class="p-4 flex-grow-1 d-flex flex-column">
+                            <span class="badge bg-warning text-dark mb-2 font-monospace" style="align-self: flex-start;"><?php echo htmlspecialchars($album['year'] ?? 'TBA'); ?> RELEASE</span>
+                            <h3 class="h5 fw-bold text-uppercase mb-1"><?php echo htmlspecialchars($album['title']); ?></h3>
+                            <p class="text-primary small fw-bold text-uppercase mb-3"><?php echo htmlspecialchars($album['artistPersona']); ?>&trade;</p>
+                            <p class="card-text small text-body-secondary mb-0">
+                                <?php echo htmlspecialchars($album['description'] ?? ''); ?>
+                            </p>
+                        </div>
+                        <div class="px-4 pb-4 mt-auto">
+                            <?php if (!empty($album['url'])): ?>
+                                <wa-button href="<?php echo htmlspecialchars($album['url']); ?>" variant="neutral" class="w-100 rounded-pill">
+                                    <i class="fa-duotone fa-compact-disc me-2" slot="prefix"></i> Explore Album
+                                </wa-button>
+                            <?php else: ?>
+                                <wa-button disabled variant="neutral" class="w-100 rounded-pill">
+                                    <i class="fa-solid fa-lock me-2" slot="prefix"></i> In the Vault
+                                </wa-button>
+                            <?php endif; ?>
+                        </div>
                     </div>
                 </div>
             </wa-card>
