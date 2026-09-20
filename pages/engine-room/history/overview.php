@@ -18,38 +18,40 @@ $base_path = $cdnBaseUrl . "/engine-room-records/artists";
     </div>
 
     <!-- 1. REAL WORLD INFRASTRUCTURE -->
-    <wa-card class="bg-dark text-white border-secondary mb-5 shadow-lg w-100 wa-theme-dark" data-bs-theme="dark" style="--wa-panel-bg: #212529; --body-padding: 0; --header-padding: 0;">
-        <div slot="header" class="bg-black border-secondary d-flex justify-content-between align-items-center py-3 px-4">
-            <h5 class="mb-0 text-uppercase font-monospace text-info">
-                <i class="fa-duotone fa-server me-2" aria-hidden="true"></i>Real-World Infrastructure
-            </h5>
-            <span class="badge bg-secondary text-white font-monospace">EST. 2026</span>
-        </div>
-        <div class="p-4 p-md-5 text-white">
-            <div class="row align-items-center">
-                <div class="col-md-8">
-                    <h3 class="h4 fw-bold text-white mb-3">The RaggieSoft Audio Initiative</h3>
-                    <p class="text-light opacity-75">
-                        In the real world, <strong>Engine Room Records</strong> is a digital portfolio and publishing entity created by Michael P. Ragsdale. Launched in 2026, it serves as the organizational hub for a massive, multi-band generative music project. 
-                    </p>
-                    <div class="alert alert-info bg-black border-info mb-4 text-info-emphasis">
-                        <strong><i class="fa-solid fa-timeline me-2" aria-hidden="true"></i>Timeline Notice:</strong> While the narrative lore spans decades (e.g., 1983, 1992, 1997), <strong>all music across this entire catalog was produced in 2025 and 2026</strong>, and officially distributed to streaming platforms via DistroKid in 2026.
+    <div class="wa-theme-dark w-100 mb-5" data-bs-theme="dark">
+        <wa-card class="border-secondary shadow-lg w-100" style="--wa-panel-bg: #212529; --body-padding: 0; --header-padding: 0;">
+            <div slot="header" class="bg-black border-secondary d-flex justify-content-between align-items-center py-3 px-4">
+                <h5 class="mb-0 text-uppercase font-monospace text-info">
+                    <i class="fa-duotone fa-server me-2" aria-hidden="true"></i>Real-World Infrastructure
+                </h5>
+                <span class="badge bg-secondary font-monospace">EST. 2026</span>
+            </div>
+            <div class="p-4 p-md-5">
+                <div class="row align-items-center">
+                    <div class="col-md-8">
+                        <h3 class="h4 fw-bold text-white mb-3">The RaggieSoft Audio Initiative</h3>
+                        <p class="text-light opacity-75">
+                            In the real world, <strong>Engine Room Records</strong> is a digital portfolio and publishing entity created by Michael P. Ragsdale. Launched in 2026, it serves as the organizational hub for a massive, multi-band generative music project. 
+                        </p>
+                        <div class="alert alert-info bg-black border-info mb-4 text-info-emphasis">
+                            <strong><i class="fa-solid fa-timeline me-2" aria-hidden="true"></i>Timeline Notice:</strong> While the narrative lore spans decades (e.g., 1983, 1992, 1997), <strong>all music across this entire catalog was produced in 2025 and 2026</strong>, and officially distributed to streaming platforms via DistroKid in 2026.
+                        </div>
+                        <ul class="text-light opacity-75 mb-4">
+                            <li class="mb-2"><strong>Audio Generation:</strong> All instrumentation, synthetic vocals, and musical compositions are generated utilizing a commercial-tier <span class="text-warning">Suno Premium</span> license.</li>
+                            <li class="mb-2"><strong>Lore & Lyrics:</strong> The overarching narrative, fictional corporate structures, and original lyrics are human-directed, with <span class="text-info">Gemini</span> acting as a co-producer for style refinement and worldbuilding organization.</li>
+                            <li><strong>Distribution:</strong> The catalog is distributed to global streaming platforms (Spotify, Apple Music, etc.) while remaining freely available on this platform under a <strong>CC BY-SA 4.0</strong> license.</li>
+                        </ul>
+                        <a href="/about/ai-disclaimer" class="btn btn-outline-info btn-sm text-uppercase fw-bold font-monospace">
+                            <i class="fa-duotone fa-robot-astromech me-2" aria-hidden="true"></i>Read Full AI Disclaimer
+                        </a>
                     </div>
-                    <ul class="text-light opacity-75 mb-4">
-                        <li class="mb-2"><strong>Audio Generation:</strong> All instrumentation, synthetic vocals, and musical compositions are generated utilizing a commercial-tier <span class="text-warning">Suno Premium</span> license.</li>
-                        <li class="mb-2"><strong>Lore & Lyrics:</strong> The overarching narrative, fictional corporate structures, and original lyrics are human-directed, with <span class="text-info">Gemini</span> acting as a co-producer for style refinement and worldbuilding organization.</li>
-                        <li><strong>Distribution:</strong> The catalog is distributed to global streaming platforms (Spotify, Apple Music, etc.) while remaining freely available on this platform under a <strong>CC BY-SA 4.0</strong> license.</li>
-                    </ul>
-                    <a href="/about/ai-disclaimer" class="btn btn-outline-info btn-sm text-uppercase fw-bold font-monospace">
-                        <i class="fa-duotone fa-robot-astromech me-2" aria-hidden="true"></i>Read Full AI Disclaimer
-                    </a>
-                </div>
-                <div class="col-md-4 text-center mt-4 mt-md-0">
-                    <i class="fa-duotone fa-microchip fa-5x text-secondary opacity-50" aria-hidden="true"></i>
+                    <div class="col-md-4 text-center mt-4 mt-md-0">
+                        <i class="fa-duotone fa-microchip fa-5x text-secondary opacity-50" aria-hidden="true"></i>
+                    </div>
                 </div>
             </div>
-        </div>
-    </wa-card>
+        </wa-card>
+    </div>
 
     <!-- THE NARRATIVE LORE -->
     <div class="position-relative mt-5 pt-5">
