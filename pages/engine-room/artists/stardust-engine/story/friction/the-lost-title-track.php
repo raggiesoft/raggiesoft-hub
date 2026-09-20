@@ -83,7 +83,7 @@ $articleSchema = [
                         </wa-button>
                     </div>
                 </div>
-            </wa-card>
+            </div>
         </div>
     </div>
 
