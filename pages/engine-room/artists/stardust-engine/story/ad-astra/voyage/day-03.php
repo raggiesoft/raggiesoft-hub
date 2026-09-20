@@ -6,6 +6,7 @@
 $pageTitle = "Day 03: Ship's Time - Ad Astra Log";
 ?>
 
+<div class="wa-theme-dark w-100" data-bs-theme="dark">
 <div class="starfield-container"><div class="starfield-twinkling"></div></div>
 
 <div class="container py-5 glass-container">
@@ -38,8 +39,8 @@ $pageTitle = "Day 03: Ship's Time - Ad Astra Log";
                     Our quarters are essentially a high-tech efficiency apartment bolted to a bulkhead. It's tight, utilitarian, and surprisingly comfortable. Everything is magnetic—coffee cups, data pads, even the pillows have weak mag-strips to keep them from drifting if the gravity fluctuating.
                 </p>
                 
-                <div class="card terminal-card mt-4 border-light" style="border-color: var(--astra-secondary) !important;">
-                    <div class="card-header border-bottom border-secondary text-secondary fw-bold font-monospace">
+                <wa-card class="card terminal-card mt-4 border-light w-100" style="border-color: var(--astra-secondary) !important; --body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
+                    <div slot="header" class=" border-bottom border-secondary text-secondary fw-bold font-monospace p-3">
                         <i class="fa-duotone fa-bed-bunk me-2"></i>BERTHING MANIFEST
                     </div>
                     <div class="card-body">
@@ -67,15 +68,15 @@ $pageTitle = "Day 03: Ship's Time - Ad Astra Log";
                             </li>
                         </ul>
                     </div>
-                </div>
+                </wa-card>
 
             </div>
         </div>
 
         <div class="col-lg-4">
             
-            <div class="card glass-card mb-4">
-                <div class="card-header text-light fw-bold text-uppercase border-bottom border-secondary">
+            <wa-card class="card glass-card mb-4 w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
+                <div slot="header" class=" text-light fw-bold text-uppercase border-bottom border-secondary p-3">
                     <i class="fa-duotone fa-clock me-2"></i>Cycle Status
                 </div>
                 <div class="card-body text-white-50 small">
@@ -93,9 +94,9 @@ $pageTitle = "Day 03: Ship's Time - Ad Astra Log";
                         <li class="mb-0">> <strong>Gravity:</strong> Stable (1.0)</li>
                     </ul>
                 </div>
-            </div>
+            </wa-card>
 
-            <div class="card bg-black border-secondary mb-4">
+            <wa-card class="card bg-black border-secondary mb-4 w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
                 <div class="card-body">
                     <h6 class="text-secondary fw-bold text-uppercase mb-2">
                         <i class="fa-duotone fa-mug-hot me-2"></i>Personal Log
@@ -104,7 +105,7 @@ $pageTitle = "Day 03: Ship's Time - Ad Astra Log";
                         "The couch isn't bad, actually. Better than the tour bus bunk in '93. But looking out the window and seeing... nothing? That takes some getting used to." — Evan
                     </p>
                 </div>
-            </div>
+            </wa-card>
 
         </div>
 
@@ -120,3 +121,4 @@ $pageTitle = "Day 03: Ship's Time - Ad Astra Log";
     ?>
 
 </div>
+</div> <!-- End dark theme wrap -->

@@ -6,6 +6,7 @@
 $pageTitle = "Day 01: Ignition - Ad Astra Log";
 ?>
 
+<div class="wa-theme-dark w-100" data-bs-theme="dark">
 <div class="starfield-container"><div class="starfield-twinkling"></div></div>
 
 <div class="container py-5 glass-container">
@@ -46,8 +47,8 @@ $pageTitle = "Day 01: Ignition - Ad Astra Log";
                 </p>
             </div>
 
-            <div class="card terminal-card mb-5">
-                <div class="card-header border-bottom border-success text-success fw-bold font-monospace">
+            <wa-card class="card terminal-card mb-5 w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
+                <div slot="header" class=" border-bottom border-success text-success fw-bold font-monospace p-3">
                     <i class="fa-duotone fa-waveform-lines me-2"></i>AUDIO LOG: "IGNITION" (LIVE)
                 </div>
                 <div class="card-body">
@@ -65,14 +66,14 @@ $pageTitle = "Day 01: Ignition - Ad Astra Log";
                         </div>
                     </div>
                 </div>
-            </div>
+            </wa-card>
 
         </div>
 
         <div class="col-lg-4">
             
-            <div class="card glass-card mb-4">
-                <div class="card-header text-warning fw-bold text-uppercase border-bottom border-secondary">
+            <wa-card class="card glass-card mb-4 w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
+                <div slot="header" class=" text-warning fw-bold text-uppercase border-bottom border-secondary p-3">
                     <i class="fa-duotone fa-sensor-on me-2"></i>Sensory Data
                 </div>
                 <div class="card-body text-white-50 small">
@@ -83,9 +84,9 @@ $pageTitle = "Day 01: Ignition - Ad Astra Log";
                         <li class="mb-0">> <strong>Physical:</strong> Chest compression, difficulty breathing</li>
                     </ul>
                 </div>
-            </div>
+            </wa-card>
 
-            <div class="card bg-black border-danger mb-4">
+            <wa-card class="card bg-black border-danger mb-4 w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
                 <div class="card-body">
                     <h6 class="text-danger fw-bold text-uppercase mb-2">
                         <i class="fa-duotone fa-triangle-exclamation me-2"></i>Safety Protocol
@@ -94,7 +95,7 @@ $pageTitle = "Day 01: Ignition - Ad Astra Log";
                         In the event of a launch abort, the stage module is designed to detach and deploy parachutes. The band continues playing until the "Safe" light illuminates.
                     </p>
                 </div>
-            </div>
+            </wa-card>
 
         </div>
 
@@ -110,3 +111,4 @@ $pageTitle = "Day 01: Ignition - Ad Astra Log";
     ?>
 
 </div>
+</div> <!-- End dark theme wrap -->

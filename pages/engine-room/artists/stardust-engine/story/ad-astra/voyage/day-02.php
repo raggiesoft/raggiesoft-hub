@@ -6,6 +6,7 @@
 $pageTitle = "Day 02: Stabilization - Ad Astra Log";
 ?>
 
+<div class="wa-theme-dark w-100" data-bs-theme="dark">
 <div class="starfield-container"><div class="starfield-twinkling"></div></div>
 
 <div class="container py-5 glass-container">
@@ -36,8 +37,8 @@ $pageTitle = "Day 02: Stabilization - Ad Astra Log";
                     <strong>Ryan</strong> took the brunt of it. His spine, already fused and fragile, didn't appreciate the 1.5G push. Holly and Cassidy spent the morning helping him transfer from the crash couch to his chair. It was a slow process, quiet and practiced. This is the reality of our "glamorous" space voyage: ice packs, muscle relaxers, and the slow click-clack of a wheelchair engaging its magnetic locks on the deck plates.
                 </p>
                 
-                <div class="card terminal-card mt-5 border-success">
-                    <div class="card-header border-bottom border-success text-success fw-bold font-monospace">
+                <wa-card class="card terminal-card mt-5 border-success w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
+                    <div slot="header" class=" border-bottom border-success text-success fw-bold font-monospace p-3">
                         <i class="fa-duotone fa-earth-americas me-2"></i>VISUAL LOG: THE BLUE MARBLE
                     </div>
                     <div class="card-body">
@@ -51,15 +52,15 @@ $pageTitle = "Day 02: Stabilization - Ad Astra Log";
                             <p class="mb-0 text-success font-monospace small">"It looks fragile. Like if I tapped the glass, it would shatter." — Cassidy</p>
                         </blockquote>
                     </div>
-                </div>
+                </wa-card>
 
             </div>
         </div>
 
         <div class="col-lg-4">
             
-            <div class="card glass-card mb-4">
-                <div class="card-header text-success fw-bold text-uppercase border-bottom border-secondary">
+            <wa-card class="card glass-card mb-4 w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
+                <div slot="header" class=" text-success fw-bold text-uppercase border-bottom border-secondary p-3">
                     <i class="fa-duotone fa-notes-medical me-2"></i>Medical Status
                 </div>
                 <div class="card-body text-white-50 small">
@@ -70,9 +71,9 @@ $pageTitle = "Day 02: Stabilization - Ad Astra Log";
                         <li class="mb-0">> <strong>Meds:</strong> Ibuprofen (800mg) dispensed.</li>
                     </ul>
                 </div>
-            </div>
+            </wa-card>
 
-            <div class="card bg-black border-secondary mb-4">
+            <wa-card class="card bg-black border-secondary mb-4 w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
                 <div class="card-body">
                     <h6 class="text-secondary fw-bold text-uppercase mb-2">
                         <i class="fa-duotone fa-coffee-pot me-2"></i>Galley Note
@@ -81,7 +82,7 @@ $pageTitle = "Day 02: Stabilization - Ad Astra Log";
                         "The coffee machine works in Zero-G, but the taste is... metallic. Evan is trying to hack the temperature settings. I give it 24 hours before he voids the warranty." — Holly
                     </p>
                 </div>
-            </div>
+            </wa-card>
 
         </div>
 
@@ -97,3 +98,4 @@ $pageTitle = "Day 02: Stabilization - Ad Astra Log";
     ?>
 
 </div>
+</div> <!-- End dark theme wrap -->

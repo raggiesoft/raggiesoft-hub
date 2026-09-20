@@ -210,19 +210,19 @@ if ($d >= 2) {
                                         id="track-row-<?php echo $index; ?>"
                                         data-index="<?php echo $index; ?>">
                                     
-                                    <div class="me-3 text-secondary font-monospace fw-bold" style="width: 30px;">
+                                    <div class="me-3 text-secondary font-monospace fw-bold flex-shrink-0" style="width: 30px;">
                                         <?php echo str_pad($index + 1, 2, '0', STR_PAD_LEFT); ?>
                                     </div>
                                     
-                                    <img src="<?php echo $track['artwork']; ?>" class="rounded shadow-sm me-3 border border-secondary" style="width: 50px; height: 50px; object-fit: cover;">
+                                    <img src="<?php echo $track['artwork']; ?>" class="rounded shadow-sm me-3 border border-secondary flex-shrink-0" style="width: 50px; height: 50px; object-fit: cover;">
                                     
-                                    <div class="flex-grow-1 text-start">
-                                        <div class="text-body-emphasis fs-5 mb-1"><strong><?php echo $track['title']; ?></strong></div>
-                                        <div class="small text-info text-uppercase fw-semibold"><i class="fa-solid fa-microphone-lines me-1"></i><?php echo $track['artist']; ?></div>
+                                    <div class="flex-grow-1 text-start" style="min-width: 0;">
+                                        <div class="text-body-emphasis fs-5 mb-1 text-wrap" style="word-break: break-word;"><strong><?php echo htmlspecialchars($track['title']); ?></strong></div>
+                                        <div class="small text-info text-uppercase fw-semibold text-wrap"><i class="fa-solid fa-microphone-lines me-1"></i><?php echo htmlspecialchars($track['artist']); ?></div>
                                     </div>
 
-                                    <div class="ms-3 ms-md-5 text-end d-none d-sm-block">
-                                        <div class="small text-body-secondary font-monospace mb-1"><i class="fa-duotone fa-compact-disc me-1"></i><?php echo $track['album']; ?></div>
+                                    <div class="ms-3 ms-md-5 text-end d-none d-sm-block flex-shrink-0" style="max-width: 250px;">
+                                        <div class="small text-body-secondary font-monospace mb-1 text-truncate" title="<?php echo htmlspecialchars($track['album']); ?>"><i class="fa-duotone fa-compact-disc me-1"></i><?php echo htmlspecialchars($track['album']); ?></div>
                                         <?php if (!empty($track['duration'])): ?>
                                             <div class="small text-secondary fw-semibold">
                                                 <i class="fa-duotone fa-clock me-1" style="--fa-primary-opacity: 0.4;"></i><?php echo $track['duration']; ?>
@@ -230,7 +230,7 @@ if ($d >= 2) {
                                         <?php endif; ?>
                                     </div>
 
-                                    <div class="ms-4 ps-3 border-start border-secondary">
+                                    <div class="ms-4 ps-3 border-start border-secondary flex-shrink-0">
                                         <i class="play-indicator fa-duotone fa-play-circle fs-3 text-secondary opacity-50"></i>
                                     </div>
                                 </button>

@@ -18,7 +18,7 @@ $pageTitle = "The Lore - The Stardust Engine";
     <!-- FEATURED: AD ASTRA (THE BOOK) -->
     <div class="row justify-content-center mb-5">
         <div class="col-lg-12">
-            <wa-card class="bg-dark border-info shadow-lg position-relative group-hover-scale p-0 w-100" style="--wa-panel-bg: #0d1117; --body-padding: 0;">
+            <wa-card class="bg-dark border-info shadow-lg position-relative group-hover-scale p-0 w-100 wa-theme-dark" data-bs-theme="dark" style="--wa-panel-bg: #0d1117; --body-padding: 0;">
                 <div class="row g-0">
                     <div class="col-lg-7 position-relative">
                         <img src="<?php echo $cdnBaseUrl; ?>/stardust-engine/images/story/ad-astra/band-ready.jpg" 
@@ -32,7 +32,7 @@ $pageTitle = "The Lore - The Stardust Engine";
                     <div class="col-lg-5 d-flex align-items-center" style="background-color: #0d1117;">
                         <div class="card-body p-4 p-lg-5 position-relative z-1">
                             <wa-badge variant="info" class="mb-3 shadow-glow">
-                                <i class="fa-duotone fa-book-sparkles me-2"></i>New Release
+                                <i class="fa-duotone fa-star me-2"></i>Band Favorite
                             </wa-badge>
                             <h2 class="display-5 fw-bold text-uppercase text-light mb-2" style="font-family: 'Audiowide', sans-serif;">
                                 Ad Astra

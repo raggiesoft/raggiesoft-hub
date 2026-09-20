@@ -6,6 +6,7 @@
 $pageTitle = "Day 10: Harmonic Velocity - Ad Astra Log";
 ?>
 
+<div class="wa-theme-dark w-100" data-bs-theme="dark">
 <div class="starfield-container"><div class="starfield-twinkling"></div></div>
 
 <div class="container py-5 glass-container">
@@ -22,7 +23,7 @@ $pageTitle = "Day 10: Harmonic Velocity - Ad Astra Log";
         </div>
     </div>
 
-    <div class="card border-0 mb-5 overflow-hidden shadow-lg rounded-3 border-start border-info border-4">
+    <wa-card class="card border-0 mb-5 overflow-hidden shadow-lg rounded-3 border-start border-info border-4 w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
         <div class="position-relative">
             <img src="<?php echo $cdnBaseUrl; ?>/stardust-engine/images/story/ad-astra/harmonic-velocity.jpg" 
                  class="img-fluid w-100" 
@@ -33,7 +34,7 @@ $pageTitle = "Day 10: Harmonic Velocity - Ad Astra Log";
                 <span class="badge bg-black border border-info text-info rounded-0">LIVE FEED</span>
             </div>
         </div>
-    </div>
+    </wa-card>
 
     <div class="row g-5">
         
@@ -56,8 +57,8 @@ $pageTitle = "Day 10: Harmonic Velocity - Ad Astra Log";
                 </p>
             </div>
 
-            <div class="card terminal-card mb-5" style="border-color: var(--astra-primary);">
-                <div class="card-header border-bottom border-primary text-primary fw-bold font-monospace" style="border-color: var(--astra-primary) !important;">
+            <wa-card class="card terminal-card mb-5 w-100" style="border-color: var(--astra-primary); --body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
+                <div slot="header" class=" border-bottom border-primary text-primary fw-bold font-monospace p-3" style="border-color: var(--astra-primary) !important;">
                     <i class="fa-duotone fa-stars me-2"></i>AUDIO LOG: "AD ASTRA" (PART III)
                 </div>
                 <div class="card-body">
@@ -75,14 +76,14 @@ $pageTitle = "Day 10: Harmonic Velocity - Ad Astra Log";
                         </div>
                     </div>
                 </div>
-            </div>
+            </wa-card>
 
         </div>
 
         <div class="col-lg-4">
             
-            <div class="card glass-card mb-4" style="border-color: var(--astra-info);">
-                <div class="card-header text-info fw-bold text-uppercase border-bottom border-secondary" style="border-color: var(--astra-info) !important;">
+            <wa-card class="card glass-card mb-4 w-100" style="border-color: var(--astra-info); --body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
+                <div slot="header" class=" text-info fw-bold text-uppercase border-bottom border-secondary p-3" style="border-color: var(--astra-info) !important;">
                     <i class="fa-duotone fa-globe-stand me-2"></i>Environmental
                 </div>
                 <div class="card-body text-white-50 small">
@@ -93,9 +94,9 @@ $pageTitle = "Day 10: Harmonic Velocity - Ad Astra Log";
                         <li class="mb-0">> <strong>Gravity:</strong> 0.82 G</li>
                     </ul>
                 </div>
-            </div>
+            </wa-card>
 
-            <div class="card bg-black border-secondary mb-4">
+            <wa-card class="card bg-black border-secondary mb-4 w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
                 <div class="card-body">
                     <h6 class="text-secondary fw-bold text-uppercase mb-2">
                         <i class="fa-duotone fa-message-code me-2"></i>Crew Note
@@ -104,7 +105,7 @@ $pageTitle = "Day 10: Harmonic Velocity - Ad Astra Log";
                         "Playing guitar in 0.8G is weird. You have to anchor your elbow or your picking hand floats away from the strings. Ryan is lucky; he's already strapped down." — Tyler
                     </p>
                 </div>
-            </div>
+            </wa-card>
 
         </div>
 
@@ -120,3 +121,4 @@ $pageTitle = "Day 10: Harmonic Velocity - Ad Astra Log";
     ?>
 
 </div>
+</div> <!-- End dark theme wrap -->

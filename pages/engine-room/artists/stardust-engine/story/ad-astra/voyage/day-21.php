@@ -7,6 +7,7 @@
 $pageTitle = "Day 21: The Drop - Ad Astra Log";
 ?>
 
+<div class="wa-theme-dark w-100" data-bs-theme="dark">
 <div class="starfield-container"><div class="starfield-twinkling"></div></div>
 
 <div class="container py-5 glass-container">
@@ -23,7 +24,7 @@ $pageTitle = "Day 21: The Drop - Ad Astra Log";
         </div>
     </div>
 
-    <div class="card border-0 mb-5 overflow-hidden shadow-lg rounded-3 border-start border-danger border-4">
+    <wa-card class="card border-0 mb-5 overflow-hidden shadow-lg rounded-3 border-start border-danger border-4 w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
         <div class="position-relative">
             <img src="<?php echo $cdnBaseUrl; ?>/stardust-engine/images/story/ad-astra/re-entry.jpg" 
                  class="img-fluid w-100" 
@@ -34,7 +35,7 @@ $pageTitle = "Day 21: The Drop - Ad Astra Log";
                 <span class="badge bg-danger border border-white text-white rounded-0 blink-animation text-uppercase">Alert</span>
             </div>
         </div>
-    </div>
+    </wa-card>
 
     <div class="row g-5">
         
@@ -57,8 +58,8 @@ $pageTitle = "Day 21: The Drop - Ad Astra Log";
                 </p>
             </div>
 
-            <div class="card terminal-card mb-5" style="border-color: var(--astra-danger);">
-                <div class="card-header border-bottom border-danger text-danger fw-bold font-monospace" style="border-color: var(--astra-danger) !important;">
+            <wa-card class="card terminal-card mb-5 w-100" style="border-color: var(--astra-danger); --body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
+                <div slot="header" class=" border-bottom border-danger text-danger fw-bold font-monospace p-3" style="border-color: var(--astra-danger) !important;">
                     <i class="fa-duotone fa-radiation me-2"></i>AUDIO LOG: "HARD RESET"
                 </div>
                 <div class="card-body">
@@ -76,14 +77,14 @@ $pageTitle = "Day 21: The Drop - Ad Astra Log";
                         </div>
                     </div>
                 </div>
-            </div>
+            </wa-card>
 
         </div>
 
         <div class="col-lg-4">
             
-            <div class="card glass-card mb-4" style="border-color: var(--astra-danger);">
-                <div class="card-header text-danger fw-bold text-uppercase border-bottom border-secondary" style="border-color: var(--astra-danger) !important;">
+            <wa-card class="card glass-card mb-4 w-100" style="border-color: var(--astra-danger); --body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
+                <div slot="header" class=" text-danger fw-bold text-uppercase border-bottom border-secondary p-3" style="border-color: var(--astra-danger) !important;">
                     <i class="fa-duotone fa-temperature-arrow-up me-2"></i>Critical Telemetry
                 </div>
                 <div class="card-body text-white-50 small">
@@ -94,9 +95,9 @@ $pageTitle = "Day 21: The Drop - Ad Astra Log";
                         <li class="mb-0">> <strong>Touchdown:</strong> T-Minus 90s</li>
                     </ul>
                 </div>
-            </div>
+            </wa-card>
 
-            <div class="card bg-black border-secondary mb-4">
+            <wa-card class="card bg-black border-secondary mb-4 w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
                 <div class="card-body">
                     <h6 class="text-secondary fw-bold text-uppercase mb-2">
                         <i class="fa-duotone fa-file-check me-2"></i>Post-Flight Note
@@ -105,7 +106,7 @@ $pageTitle = "Day 21: The Drop - Ad Astra Log";
                         "I never want to do that again. When do we leave for the next one?" — Holly, 2 minutes after landing.
                     </p>
                 </div>
-            </div>
+            </wa-card>
 
         </div>
 
@@ -121,3 +122,4 @@ $pageTitle = "Day 21: The Drop - Ad Astra Log";
     ?>
 
 </div>
+</div> <!-- End dark theme wrap -->

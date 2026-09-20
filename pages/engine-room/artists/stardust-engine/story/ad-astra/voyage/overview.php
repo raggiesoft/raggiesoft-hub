@@ -6,6 +6,7 @@
 $pageTitle = "Flight Log: Overview - Ad Astra";
 ?>
 
+<div class="wa-theme-dark w-100" data-bs-theme="dark">
 <div class="starfield-container"><div class="starfield-twinkling"></div></div>
 
 <div class="position-relative min-vh-50 d-flex align-items-center justify-content-center overflow-hidden border-bottom border-info">
@@ -35,8 +36,8 @@ $pageTitle = "Flight Log: Overview - Ad Astra";
     <div class="row justify-content-center">
         <div class="col-lg-10">
             
-            <div class="card terminal-card mb-5">
-                <div class="card-header bg-success bg-opacity-10 text-success fw-bold font-monospace border-bottom border-success">
+            <wa-card class="card terminal-card mb-5 w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
+                <div slot="header" class=" bg-success bg-opacity-10 text-success fw-bold font-monospace border-bottom border-success p-3">
                     <i class="fa-duotone fa-list-check me-2"></i>SELECT MISSION PHASE
                 </div>
                 <div class="card-body p-0">
@@ -104,7 +105,7 @@ $pageTitle = "Flight Log: Overview - Ad Astra";
 
                     </div>
                 </div>
-            </div>
+            </wa-card>
 
             <div class="text-center">
                 <a href="/engine-room/artists/stardust-engine/story/ad-astra" class="btn btn-outline-secondary rounded-pill text-uppercase font-monospace small">
@@ -115,3 +116,4 @@ $pageTitle = "Flight Log: Overview - Ad Astra";
         </div>
     </div>
 </div>
+</div> <!-- End dark theme wrap -->

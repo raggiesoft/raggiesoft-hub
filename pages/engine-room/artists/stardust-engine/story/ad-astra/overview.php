@@ -7,6 +7,7 @@ $pageTitle = "Ad Astra: The Mission - The Stardust Engine Lore";
 $cardBackground = $cdnBaseUrl . '/stardust-engine/images/story/ad-astra/ad-astra-siblings-bg.jpg';
 ?>
 
+<div class="wa-theme-dark w-100" data-bs-theme="dark">
 <div class="starfield-container"><div class="starfield-twinkling"></div></div>
 
 <div class="position-relative d-flex align-items-center justify-content-center overflow-hidden border-bottom border-info" style="height: 60vh;">
@@ -34,8 +35,8 @@ $cardBackground = $cdnBaseUrl . '/stardust-engine/images/story/ad-astra/ad-astra
     
     <div class="row justify-content-center mb-5">
         <div class="col-lg-10">
-            <div class="card terminal-card border-info shadow-lg">
-                <div class="card-header bg-info bg-opacity-10 border-bottom border-info text-info fw-bold">
+            <wa-card class="terminal-card border-info shadow-lg w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: #0d1117;">
+                <div slot="header" class="bg-info bg-opacity-10 border-bottom border-info text-info fw-bold p-3">
                     <i class="fa-duotone fa-clipboard-list me-2"></i>MISSION MANIFEST: THE "DEEP DIVE"
                 </div>
                 <div class="card-body p-0">
@@ -91,14 +92,15 @@ $cardBackground = $cdnBaseUrl . '/stardust-engine/images/story/ad-astra/ad-astra
                     </div>
 
                 </div>
-            </div>
+                </div>
+            </wa-card>
         </div>
     </div>
 
     <div class="row justify-content-center g-4">
         
         <div class="col-lg-6">
-            <div class="card h-100 bg-transparent border-info shadow-lg overflow-hidden position-relative group-hover-scale">
+            <wa-card class="h-100 border-info shadow-lg overflow-hidden position-relative group-hover-scale p-0 w-100" style="--wa-panel-bg: transparent; --body-padding: 0;">
                 <div class="position-absolute top-0 start-0 w-100 h-100" 
                      style="background: url('<?php echo $cardBackground; ?>') center/cover no-repeat;">
                 </div>
@@ -113,15 +115,15 @@ $cardBackground = $cdnBaseUrl . '/stardust-engine/images/story/ad-astra/ad-astra
                         Read the official narrative of the "Concert at the Edge of the World." 
                         Experience the launch, the nebula, and the crash landing.
                     </p>
-                    <a href="/engine-room/artists/stardust-engine/story/ad-astra/voyage" class="btn btn-outline-info rounded-pill px-4 stretched-link">
+                    <wa-button variant="info" outline href="/engine-room/artists/stardust-engine/story/ad-astra/voyage" class="rounded-pill w-100">
                         <i class="fa-duotone fa-book-open me-2"></i>Open Flight Log
-                    </a>
+                    </wa-button>
                 </div>
-            </div>
+            </wa-card>
         </div>
 
         <div class="col-lg-6">
-            <div class="card h-100 bg-transparent border-warning shadow-lg overflow-hidden position-relative">
+            <wa-card class="h-100 border-warning shadow-lg overflow-hidden position-relative p-0 w-100" style="--wa-panel-bg: transparent; --body-padding: 0;">
                 <div class="position-absolute top-0 start-0 w-100 h-100" 
                      style="background: url('<?php echo $cardBackground; ?>') center/cover no-repeat; filter: hue-rotate(45deg);">
                 </div>
@@ -136,13 +138,14 @@ $cardBackground = $cdnBaseUrl . '/stardust-engine/images/story/ad-astra/ad-astra
                         Listen to the 15-minute progressive rock suite.
                         Four movements. One journey.
                     </p>
-                    <a href="/engine-room/artists/stardust-engine/discography/1995-the-warehouse-tapes/ad-astra" class="btn btn-outline-warning rounded-pill px-4 stretched-link">
+                    <wa-button variant="warning" outline href="/engine-room/artists/stardust-engine/discography/1996-escape-velocity-ad-astra" class="rounded-pill w-100">
                         <i class="fa-duotone fa-play me-2"></i>Listen Now
-                    </a>
+                    </wa-button>
                 </div>
-            </div>
+            </wa-card>
         </div>
 
     </div>
 
 </div>
+</div> <!-- End dark theme wrap -->
