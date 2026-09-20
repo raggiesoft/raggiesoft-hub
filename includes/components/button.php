@@ -19,17 +19,17 @@ if ($variantRaw === 'success') $waVariant = 'success';
 
 $iconHtml = '';
 if ($icon) {
-    $slot = ($iconPosition === 'before') ? 'start' : 'end';
+    $slot = ($iconPosition === 'before') ? 'prefix' : 'suffix';
     $iconHtml = "<i slot=\"{$slot}\" class=\"" . htmlspecialchars($icon) . "\"></i>";
 }
 
-$widthStyle = $fullWidth ? 'style="width: 100%; display: block;"' : '';
+$widthClass = $fullWidth ? 'w-100' : '';
 ?>
 
 <wa-button href="<?php echo htmlspecialchars($href); ?>" 
            variant="<?php echo $waVariant; ?>" 
            size="<?php echo htmlspecialchars($size); ?>"
-           <?php echo $widthStyle; ?>>
+           class="<?php echo $widthClass; ?>">
     <?php if ($iconPosition === 'before' && $icon) echo $iconHtml; ?>
     <?php echo $text; ?>
     <?php if ($iconPosition === 'after' && $icon) echo $iconHtml; ?>
