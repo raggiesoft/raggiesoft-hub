@@ -18,9 +18,9 @@ $base_path = $cdnBaseUrl . "/engine-room-records/artists";
     </div>
 
     <!-- 1. REAL WORLD INFRASTRUCTURE -->
-    <div class="wa-theme-dark w-100 mb-5" data-bs-theme="dark">
-        <wa-card class="bg-dark text-white border-secondary shadow-lg w-100" style="--wa-panel-background-color: #212529; --body-padding: 0; --header-padding: 0;">
-            <div slot="header" class="bg-black border-secondary d-flex justify-content-between align-items-center py-3 px-4">
+    <div class="mb-5 w-100">
+        <wa-card class="border-secondary shadow-lg w-100" style="--body-padding: 0; --header-padding: 0;">
+            <div slot="header" class="bg-black text-white border-secondary d-flex justify-content-between align-items-center py-3 px-4">
                 <h5 class="mb-0 text-uppercase font-monospace text-info">
                     <i class="fa-duotone fa-server me-2" aria-hidden="true"></i>Real-World Infrastructure
                 </h5>
@@ -29,14 +29,14 @@ $base_path = $cdnBaseUrl . "/engine-room-records/artists";
             <div class="p-4 p-md-5">
                 <div class="row align-items-center">
                     <div class="col-md-8">
-                        <h3 class="h4 fw-bold text-white mb-3">The RaggieSoft Audio Initiative</h3>
-                        <p class="text-light opacity-75">
+                        <h3 class="h4 fw-bold mb-3">The RaggieSoft Audio Initiative</h3>
+                        <p class="text-body-secondary">
                             In the real world, <strong>Engine Room Records</strong> is a digital portfolio and publishing entity created by Michael P. Ragsdale. Launched in 2026, it serves as the organizational hub for a massive, multi-band generative music project. 
                         </p>
-                        <div class="alert alert-info bg-black border-info mb-4 text-info-emphasis">
+                        <div class="alert alert-info border-info mb-4">
                             <strong><i class="fa-solid fa-timeline me-2" aria-hidden="true"></i>Timeline Notice:</strong> While the narrative lore spans decades (e.g., 1983, 1992, 1997), <strong>all music across this entire catalog was produced in 2025 and 2026</strong>, and officially distributed to streaming platforms via DistroKid in 2026.
                         </div>
-                        <ul class="text-light opacity-75 mb-4">
+                        <ul class="text-body-secondary mb-4">
                             <li class="mb-2"><strong>Audio Generation:</strong> All instrumentation, synthetic vocals, and musical compositions are generated utilizing a commercial-tier <span class="text-warning">Suno Premium</span> license.</li>
                             <li class="mb-2"><strong>Lore & Lyrics:</strong> The overarching narrative, fictional corporate structures, and original lyrics are human-directed, with <span class="text-info">Gemini</span> acting as a co-producer for style refinement and worldbuilding organization.</li>
                             <li><strong>Distribution:</strong> The catalog is distributed to global streaming platforms (Spotify, Apple Music, etc.) while remaining freely available on this platform under a <strong>CC BY-SA 4.0</strong> license.</li>
