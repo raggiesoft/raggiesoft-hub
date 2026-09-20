@@ -96,6 +96,7 @@ $isDarkTheme = (isset($currentPageTheme) && in_array($currentPageTheme, ['dark',
 </div>
 
 
+<script src="https://assets.raggiesoft.com/common/js/piper-sullivan.js?v=<?php echo time(); ?>"></script>
 <script src="https://assets.raggiesoft.com/common/js/encyclopedia.js?v=1789647924"></script>
 <script src="https://assets.raggiesoft.com/common/js/cinema-carousel.js"></script>
 <script>
@@ -170,6 +171,7 @@ document.addEventListener('elara:loaded', function() {
         });
     }
 });
+
 </script>
 <?php if (isset($pageConfig['scripts']) && is_array($pageConfig['scripts'])): ?>
     <?php foreach ($pageConfig['scripts'] as $script): ?>

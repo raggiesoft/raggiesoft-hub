@@ -20,13 +20,13 @@
         </wa-button>
     <wa-menu>
       <li><span class="dropdown-header text-uppercase small letter-spacing-1">Universal Design</span>
-            <wa-dropdown-item href="#"><i class="fa-solid fa-eye-slash me-2 "></i>Low-Sensory Lighting</wa-dropdown-item>
-            <wa-dropdown-item href="#"><i class="fa-solid fa-volume-xmark me-2 "></i>Acoustic Zoning</wa-dropdown-item>
-            <wa-dropdown-item href="/engine-room/jessica-miller-center/destination-dispatch-elevators">
+            <wa-dropdown-item value="#"><i class="fa-solid fa-eye-slash me-2 "></i>Low-Sensory Lighting</wa-dropdown-item>
+            <wa-dropdown-item value="#"><i class="fa-solid fa-volume-xmark me-2 "></i>Acoustic Zoning</wa-dropdown-item>
+            <wa-dropdown-item value="/engine-room/jessica-miller-center/destination-dispatch-elevators">
                     <i class="fa-solid fa-elevator me-2 "></i>Destination Dispatch
                 </wa-dropdown-item>
             <wa-divider></wa-divider>
-            <wa-dropdown-item href="#"><i class="fa-solid fa-book-open me-2 text-primary"></i>Research Library</wa-dropdown-item>
+            <wa-dropdown-item value="#"><i class="fa-solid fa-book-open me-2 text-primary"></i>Research Library</wa-dropdown-item>
     </wa-menu>
   </wa-dropdown>
 

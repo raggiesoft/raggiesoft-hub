@@ -28,19 +28,19 @@ $isChars    = str_contains($uri, '/characters');
     </wa-button>
     <wa-menu>
       <div class="px-3 py-2 small text-uppercase  fw-bold text-uppercase text-success fw-bold">The Reality</div>
-      <wa-dropdown-item href="/raggiesoft-books/knox/characters">
+      <wa-dropdown-item value="/raggiesoft-books/knox/characters">
             <i class="fa-solid fa-users me-2 text-body-secondary"></i>The Twins & Pip
           </wa-dropdown-item>
-      <wa-dropdown-item href="/raggiesoft-books/knox/lore/aerie-hold">
+      <wa-dropdown-item value="/raggiesoft-books/knox/lore/aerie-hold">
             <i class="fa-solid fa-tree me-2 text-body-secondary"></i>Aerie-Hold
           </wa-dropdown-item>
 
       <wa-divider></wa-divider>
       <div class="px-3 py-2 small text-uppercase  fw-bold text-uppercase text-danger fw-bold">The Threat</div>
-      <wa-dropdown-item href="/raggiesoft-books/knox/lore/axiom-corp">
+      <wa-dropdown-item value="/raggiesoft-books/knox/lore/axiom-corp">
             <i class="fa-solid fa-building me-2 text-danger"></i>The Axiom
           </wa-dropdown-item>
-      <wa-dropdown-item href="/raggiesoft-books/knox/lore/port-telsus">
+      <wa-dropdown-item value="/raggiesoft-books/knox/lore/port-telsus">
             <i class="fa-solid fa-industry-windows me-2 text-danger"></i>Port Telsus
           </wa-dropdown-item>
     </wa-menu>

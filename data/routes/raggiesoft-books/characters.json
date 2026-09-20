@@ -935,5 +935,20 @@
         "based_on": [],
         "markdown_file": "ashley.md",
         "image_path": "rachel/images/characters/ashley.jpg"
+    },
+    "/raggiesoft-books/characters/sullivan-piper": {
+        "view": "pages/raggiesoft-books/character-profile",
+        "title": "Piper Sullivan - Character Profile",
+        "showSidebar": true,
+        "character_id": "sullivan-piper",
+        "name": "Piper Sullivan",
+        "narratives": [
+            "crimson-node",
+            "raggiesoft-corporate"
+        ],
+        "is_public": true,
+        "based_on": [],
+        "markdown_file": "sullivan-piper.md",
+        "image_path": "crimson-node/images/characters/sullivan-piper.jpg"
     }
 }

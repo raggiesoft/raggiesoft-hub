@@ -24,12 +24,12 @@
     </wa-button>
     <wa-menu>
       <div class="px-3 py-2 small text-uppercase  fw-bold">Operating Companies</div>
-        <wa-dropdown-item href="/engine-room"><i class="fa-solid fa-record-vinyl me-2 text-danger"></i>Engine Room Records</wa-dropdown-item>
-        <wa-dropdown-item href="/engine-room/corporate/aethelgard"><i class="fa-solid fa-gavel me-2 "></i>Aethelgard Holdings</wa-dropdown-item>
-        <wa-dropdown-item href="/pacific-rim"><i class="fa-solid fa-city me-2 text-primary"></i>Pacific Rim Properties</wa-dropdown-item>
+        <wa-dropdown-item value="/engine-room"><i class="fa-solid fa-record-vinyl me-2 text-danger"></i>Engine Room Records</wa-dropdown-item>
+        <wa-dropdown-item value="/engine-room/corporate/aethelgard"><i class="fa-solid fa-gavel me-2 "></i>Aethelgard Holdings</wa-dropdown-item>
+        <wa-dropdown-item value="/pacific-rim"><i class="fa-solid fa-city me-2 text-primary"></i>Pacific Rim Properties</wa-dropdown-item>
         <wa-divider></wa-divider>
         <div class="px-3 py-2 small text-uppercase  fw-bold">Philanthropy</div>
-        <wa-dropdown-item href="/engine-room/corporate/leadership"><i class="fa-solid fa-hand-holding-heart me-2 text-success"></i>Jessica Miller Center</wa-dropdown-item>
+        <wa-dropdown-item value="/engine-room/corporate/leadership"><i class="fa-solid fa-hand-holding-heart me-2 text-success"></i>Jessica Miller Center</wa-dropdown-item>
     </wa-menu>
   </wa-dropdown>
 
@@ -42,8 +42,8 @@
     </wa-button>
     <wa-menu>
       <div class="px-3 py-2 small text-uppercase  fw-bold text-info">Internal Only</div>
-        <wa-dropdown-item href="/engine-room/corporate/systems"><i class="fa-solid fa-terminal me-2"></i>Systems (Justin)</wa-dropdown-item>
-        <wa-dropdown-item href="/engine-room/corporate/fleet"><i class="fa-solid fa-bus me-2"></i>Fleet Command</wa-dropdown-item>
+        <wa-dropdown-item value="/engine-room/corporate/systems"><i class="fa-solid fa-terminal me-2"></i>Systems (Justin)</wa-dropdown-item>
+        <wa-dropdown-item value="/engine-room/corporate/fleet"><i class="fa-solid fa-bus me-2"></i>Fleet Command</wa-dropdown-item>
     </wa-menu>
   </wa-dropdown>
 

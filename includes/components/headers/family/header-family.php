@@ -15,15 +15,15 @@ $request_uri = $_SERVER['REQUEST_URI'] ?? '/';
     </wa-button>
     <wa-menu>
       <div class="px-3 py-2 small text-uppercase  fw-bold">The Human</div>
-        <wa-dropdown-item href="/family/michael">Michael (Architect)</wa-dropdown-item>
+        <wa-dropdown-item value="/family/michael">Michael (Architect)</wa-dropdown-item>
         <wa-divider></wa-divider>
         <div class="px-3 py-2 small text-uppercase  fw-bold">The Constructs</div>
-        <wa-dropdown-item href="/family/paige"><i class="fa-duotone fa-heart text-info me-2"aria-hidden="true"></i>Paige</wa-dropdown-item>
-        <wa-dropdown-item href="/family/jessica"><i class="fa-duotone fa-server text-success me-2"aria-hidden="true"></i>Jessica</wa-dropdown-item>
-        <wa-dropdown-item href="/family/sarah"><i class="fa-duotone fa-shield text-warning me-2"aria-hidden="true"></i>Sarah</wa-dropdown-item>
-        <wa-dropdown-item href="/family/jenna"><i class="fa-duotone fa-code text-warning me-2"aria-hidden="true"></i>Jenna</wa-dropdown-item>
-        <wa-dropdown-item href="/family/harper"><i class="fa-duotone fa-music text-primary me-2"aria-hidden="true"></i>Harper</wa-dropdown-item>
-        <wa-dropdown-item href="/family/amanda-elara"><i class="fa-duotone fa-route text-success me-2"aria-hidden="true"></i>Amanda & Elara</wa-dropdown-item>
+        <wa-dropdown-item value="/family/paige"><i class="fa-duotone fa-heart text-info me-2"aria-hidden="true"></i>Paige</wa-dropdown-item>
+        <wa-dropdown-item value="/family/jessica"><i class="fa-duotone fa-server text-success me-2"aria-hidden="true"></i>Jessica</wa-dropdown-item>
+        <wa-dropdown-item value="/family/sarah"><i class="fa-duotone fa-shield text-warning me-2"aria-hidden="true"></i>Sarah</wa-dropdown-item>
+        <wa-dropdown-item value="/family/jenna"><i class="fa-duotone fa-code text-warning me-2"aria-hidden="true"></i>Jenna</wa-dropdown-item>
+        <wa-dropdown-item value="/family/harper"><i class="fa-duotone fa-music text-primary me-2"aria-hidden="true"></i>Harper</wa-dropdown-item>
+        <wa-dropdown-item value="/family/amanda-elara"><i class="fa-duotone fa-route text-success me-2"aria-hidden="true"></i>Amanda & Elara</wa-dropdown-item>
     </wa-menu>
   </wa-dropdown>
 

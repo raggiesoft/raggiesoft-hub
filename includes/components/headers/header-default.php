@@ -25,17 +25,17 @@ $isContact = ($request_uri === '/contact');
         <i slot="end" class="fa-solid fa-circle-caret-down ms-2 opacity-50" aria-hidden="true"></i>
     </wa-button>
     <wa-menu>
-      <wa-dropdown-item href="/about/michael-ragsdale">
+      <wa-dropdown-item value="/about/michael-ragsdale">
       <i slot="start" class="fa-duotone fa-id-card"></i> Overview
     </wa-dropdown-item>
-    <wa-dropdown-item href="/about/michael-ragsdale/resume">
+    <wa-dropdown-item value="/about/michael-ragsdale/resume">
       <i slot="start" class="fa-duotone fa-file-user"></i> Resume / CV
     </wa-dropdown-item>
-    <wa-dropdown-item href="/about/michael-ragsdale/profile">
+    <wa-dropdown-item value="/about/michael-ragsdale/profile">
       <i slot="start" class="fa-duotone fa-user-gear"></i> Skills & Profile
     </wa-dropdown-item>
     <wa-divider></wa-divider>
-    <wa-dropdown-item href="/about/michael-ragsdale/contact">
+    <wa-dropdown-item value="/about/michael-ragsdale/contact">
       <i slot="start" class="fa-duotone fa-address-card"></i> Contact Card
     </wa-dropdown-item>
     </wa-menu>
@@ -48,22 +48,22 @@ $isContact = ($request_uri === '/contact');
     </wa-button>
     <wa-menu>
       <div class="px-3 py-2 small text-uppercase fw-bold ">Multimedia</div>
-    <wa-dropdown-item href="/engine-room/artists/stardust-engine">
+    <wa-dropdown-item value="/engine-room/artists/stardust-engine">
       <i slot="start" class="fa-duotone fa-rocket-launch text-primary"></i> The Stardust Engine
     </wa-dropdown-item>
-    <wa-dropdown-item href="/engine-room/radio">
+    <wa-dropdown-item value="/engine-room/radio">
       <i slot="start" class="fa-duotone fa-signal-stream text-warning"></i> Engine Room Radio
     </wa-dropdown-item>
     <wa-divider></wa-divider>
     <div class="px-3 py-2 small text-uppercase fw-bold ">Literature</div>
-    <wa-dropdown-item href="/raggiesoft-books/aethel-saga">
+    <wa-dropdown-item value="/raggiesoft-books/aethel-saga">
       <i slot="start" class="fa-duotone fa-sword text-warning"></i> The Silver Gauntlet of Aethel
     </wa-dropdown-item>
-    <wa-dropdown-item href="/raggiesoft-books/knox">
+    <wa-dropdown-item value="/raggiesoft-books/knox">
       <i slot="start" class="fa-duotone fa-leaf text-success"></i> Project: KNOX
     </wa-dropdown-item>
     <wa-divider></wa-divider>
-    <wa-dropdown-item href="/engine-room">
+    <wa-dropdown-item value="/engine-room">
       <i slot="start" class="fa-solid fa-industry "></i> Engine Room Records
     </wa-dropdown-item>
     </wa-menu>
@@ -76,18 +76,18 @@ $isContact = ($request_uri === '/contact');
     </wa-button>
     <wa-menu>
       <div class="px-3 py-2 small text-uppercase fw-bold ">B2B Operations</div>
-    <wa-dropdown-item href="/raggiesoft-media">
+    <wa-dropdown-item value="/raggiesoft-media">
       <i slot="start" class="fa-duotone fa-network-wired text-primary"></i> Corporate Hub
     </wa-dropdown-item>
-    <wa-dropdown-item href="/raggiesoft-media/licensing">
+    <wa-dropdown-item value="/raggiesoft-media/licensing">
       <i slot="start" class="fa-duotone fa-scale-balanced text-warning"></i> Master Licensing
     </wa-dropdown-item>
-    <wa-dropdown-item href="/raggiesoft-media/licensing/commercial">
+    <wa-dropdown-item value="/raggiesoft-media/licensing/commercial">
       <i slot="start" class="fa-solid fa-briefcase "></i> Commercial Portal
     </wa-dropdown-item>
     <wa-divider></wa-divider>
     <div class="px-3 py-2 small text-uppercase fw-bold ">Infrastructure</div>
-    <wa-dropdown-item href="/raggiesoft-media/projects/elara">
+    <wa-dropdown-item value="/raggiesoft-media/projects/elara">
       <i slot="start" class="fa-brands fa-osi text-info"></i> Open Source (Elara)
     </wa-dropdown-item>
     </wa-menu>

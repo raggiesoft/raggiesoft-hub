@@ -32,10 +32,10 @@ $isPortfolio = (str_starts_with($request_uri, '/about/michael-ragsdale'));
         <i slot="end" class="fa-solid fa-circle-caret-down ms-2 opacity-50" aria-hidden="true"></i>
     </wa-button>
     <wa-menu>
-      <wa-dropdown-item href="/raggiesoft-media/projects">
+      <wa-dropdown-item value="/raggiesoft-media/projects">
       <i slot="start" class="fa-duotone fa-network-wired text-info"></i> Projects Hub
     </wa-dropdown-item>
-    <wa-dropdown-item href="/raggiesoft-media/projects/stardust-engine-cms">
+    <wa-dropdown-item value="/raggiesoft-media/projects/stardust-engine-cms">
       <i slot="start" class="fa-duotone fa-rocket-launch text-primary"></i> Stardust Engine CMS
     </wa-dropdown-item>
     </wa-menu>

@@ -25,9 +25,9 @@ extract($navData);
         <i slot="end" class="fa-solid fa-circle-caret-down ms-2 opacity-50" aria-hidden="true"></i>
     </wa-button>
     <wa-menu>
-      <wa-dropdown-item href="/library/aethel">Hub</wa-dropdown-item>
-      <wa-dropdown-item href="/library/aethel/aethel-book">Book Index</wa-dropdown-item>
-      <wa-dropdown-item href="/library/aethel/lore">Lore</wa-dropdown-item>
+      <wa-dropdown-item value="/library/aethel">Hub</wa-dropdown-item>
+      <wa-dropdown-item value="/library/aethel/aethel-book">Book Index</wa-dropdown-item>
+      <wa-dropdown-item value="/library/aethel/lore">Lore</wa-dropdown-item>
     </wa-menu>
   </wa-dropdown>
 
@@ -39,7 +39,7 @@ extract($navData);
         <i slot="end" class="fa-solid fa-circle-caret-down ms-2 opacity-50" aria-hidden="true"></i>
     </wa-button>
     <wa-menu>
-      <wa-dropdown-item href="<?php echo $prevLink; ?>">
+      <wa-dropdown-item value="<?php echo $prevLink; ?>">
            <i class="fa-duotone fa-arrow-left me-2"></i>Back
         </wa-dropdown-item>
       
@@ -47,7 +47,7 @@ extract($navData);
             <i class="fa-duotone fa-arrow-up me-2"></i>Up
         </wa-dropdown-item>
       
-      <wa-dropdown-item href="<?php echo $nextLink; ?>">
+      <wa-dropdown-item value="<?php echo $nextLink; ?>">
            Next<i class="fa-duotone fa-arrow-right ms-2"></i>
         </wa-dropdown-item>
     </wa-menu>
@@ -60,10 +60,10 @@ extract($navData);
         <i slot="end" class="fa-solid fa-circle-caret-down ms-2 opacity-50" aria-hidden="true"></i>
     </wa-button>
     
-      <wa-dropdown-item href="#">RaggieSoft.com</wa-dropdown-item>
-      <wa-dropdown-item href="/" class="active">RaggieSoft Knox</wa-dropdown-item>
+      <wa-dropdown-item value="#">RaggieSoft.com</wa-dropdown-item>
+      <wa-dropdown-item value="/" class="active">RaggieSoft Knox</wa-dropdown-item>
       <wa-divider></wa-divider>
-      <wa-dropdown-item href="/engine-room/artists/stardust-engine/contact">Contact Me</wa-dropdown-item>
+      <wa-dropdown-item value="/engine-room/artists/stardust-engine/contact">Contact Me</wa-dropdown-item>
     </wa-dropdown>
 
 </div>

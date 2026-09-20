@@ -28,12 +28,12 @@ $isEvidence = str_contains($uri, '/the-lost-title-track');
         </wa-button>
     <wa-menu>
       <div class="px-3 py-2 small text-uppercase  fw-bold text-uppercase text-danger fw-bold">Restricted Assets</div>
-            <wa-dropdown-item href="/engine-room/artists/stardust-engine/story/friction/the-lost-title-track">
+            <wa-dropdown-item value="/engine-room/artists/stardust-engine/story/friction/the-lost-title-track">
                     <i class="fa-duotone fa-ban me-2 text-danger"></i>The Lost Title Track
                 </wa-dropdown-item>
             <wa-divider></wa-divider>
             <div class="px-3 py-2 small text-uppercase  fw-bold text-uppercase ">Related Archives</div>
-            <wa-dropdown-item href="/engine-room/artists/stardust-engine/discography/1992-friction">
+            <wa-dropdown-item value="/engine-room/artists/stardust-engine/discography/1992-friction">
                     <i class="fa-duotone fa-compact-disc me-2"></i>The Canceled Album
                 </wa-dropdown-item>
     </wa-menu>

@@ -29,13 +29,13 @@
         <i slot="end" class="fa-solid fa-circle-caret-down ms-2 opacity-50" aria-hidden="true"></i>
     </wa-button>
         <wa-menu>
-      <wa-dropdown-item href="/engine-room/artists/fractured-prisms/band">Overview</wa-dropdown-item>
+      <wa-dropdown-item value="/engine-room/artists/fractured-prisms/band">Overview</wa-dropdown-item>
         
         <wa-divider></wa-divider>
         
         <div class="px-3 py-2 small text-uppercase fw-bold text-uppercase small">The Mannings</div>
-        <wa-dropdown-item href="/character/fractured-prisms/claire-manning"><i class="fa-duotone fa-microphone me-2"></i>Claire Manning</wa-dropdown-item>
-        <wa-dropdown-item href="/character/fractured-prisms/rhys-manning"><i class="fa-duotone fa-guitar me-2"></i>Rhys Manning</wa-dropdown-item>
+        <wa-dropdown-item value="/character/fractured-prisms/claire-manning"><i class="fa-duotone fa-microphone me-2"></i>Claire Manning</wa-dropdown-item>
+        <wa-dropdown-item value="/character/fractured-prisms/rhys-manning"><i class="fa-duotone fa-guitar me-2"></i>Rhys Manning</wa-dropdown-item>
     </wa-menu>
   </wa-dropdown>
 
