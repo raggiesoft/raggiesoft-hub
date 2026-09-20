@@ -9,12 +9,12 @@ $pageTitle = "Flight Log: Overview - Ad Astra";
 <div class="wa-theme-dark w-100" data-bs-theme="dark">
 <div class="starfield-container"><div class="starfield-twinkling"></div></div>
 
-<div class="position-relative min-vh-50 d-flex align-items-center justify-content-center overflow-hidden border-bottom border-info">
+<div class="position-relative d-flex align-items-center justify-content-center overflow-hidden border-bottom border-info" style="min-height: 50vh;">
     <div class="position-absolute top-0 start-0 w-100 h-100" style="z-index: 0;">
         <img src="<?php echo $cdnBaseUrl; ?>/stardust-engine/images/story/ad-astra/band-ready.jpg" 
              alt="The Stardust Engine strapped in for launch." 
              class="w-100 h-100 object-fit-cover"
-             style="filter: brightness(0.6);">
+             style="filter: brightness(0.6); object-fit: cover;">
         <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark" 
              style="opacity: 0.5; background: linear-gradient(to bottom, transparent 0%, #050508 100%);"></div>
     </div>

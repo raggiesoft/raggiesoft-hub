@@ -16,7 +16,7 @@ $cardBackground = $cdnBaseUrl . '/stardust-engine/images/story/ad-astra/ad-astra
                 <img src="<?php echo $cdnBaseUrl; ?>/stardust-engine/images/story/ad-astra/ad-astra-hero.jpg" 
              alt="The Stardust Engine performing in front of a massive window showing the Veil Nebula." 
              class="w-100 h-100 object-fit-cover"
-             style="opacity: 0.95; filter: brightness(0.8);">
+             style="opacity: 0.95; filter: brightness(0.8); object-fit: cover;">
         <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark" 
              style="opacity: 0.3; background: linear-gradient(to bottom, transparent 0%, #050508 100%);"></div>
     </div>
