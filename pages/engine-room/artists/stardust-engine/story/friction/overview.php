@@ -139,7 +139,7 @@ $articleSchema = [
                             class="card-img-top p-0 border-bottom border-danger" 
                             style="aspect-ratio: 1/1; object-fit: cover;"
                             alt="A shattered camera lens on a dark warehouse floor illuminated by red emergency lights.">
-                        <div class="d-flex flex-column justify-content-center h-100 p-3">
+                        <div class="p-3">
                             <h6 class="fw-bold text-white">"Shot 12"</h6>
                             <p class="card-text small text-white-50">
                                 Disgusted by the wheelchair and rejecting Cassidy's artwork as "childish," Vance attempted to force his original plan. He ordered the photographer to set up "Shot 12"—a demand for Ryan and Cassidy to simulate a highly explicit, sexual act on camera.

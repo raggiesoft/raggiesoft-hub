@@ -209,7 +209,7 @@ $pageTitle = "Evidence #94-C: The Mitchell Deposition - The Stardust Engine Lore
                     </p>
 
                     <p>
-                        <span class="speaker-label text-uppercase">Mitchell:</span> I don't need to speculate, sir. The boy in the wheelchair started screaming. A horrible, terrifying scream. His sister looked like she was going to faint. I capped my lens, I packed my bag, and I drove straight to the Hollywood Police Precinct. I didn't even pack my lighting umbrellas. I left them there.
+                        <span class="speaker-label text-uppercase">Mitchell:</span> I don't need to speculate, sir. The boy in the wheelchair started screaming. A horrible, terrifying scream. His sister looked like she was going to faint. I grabbed my camera bag and ran for the door. I didn't even pack my lighting umbrellas, I just left them there. In my rush to get out, my primary lens fell off my rig and smashed on the concrete floor. I didn't stop to pick it up. I drove straight to the Hollywood Police Precinct.
                     </p>
 
                     <p>
