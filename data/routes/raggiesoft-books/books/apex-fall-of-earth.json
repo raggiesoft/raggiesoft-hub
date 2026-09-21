@@ -1,12 +1,13 @@
 {
     "common": {
         "site": "raggiesoft-books",
-        "theme": "",
+        "theme": "raggiesoft-books",
         "siteName": "Ocean View Archives",
         "isSequential": true,
+        "showSidebar": true,
+        "sidebar": "raggiesoft-books/sidebar-book",
         "headerMenu": "raggiesoft-books/header-books",
         "footer": "raggiesoft-books/footer-books",
-        "showSidebar": false,
         "navbarBrandLogo": "/raggiesoft-books/images/logos/oceanview-archives.svg",
         "navbarBrandText": "<span class=\"ova-serif fw-bold\" style=\"color: #E3B27C;\">Ocean View Archives</span>",
         "navbarBrandLink": "/raggiesoft-books"
@@ -14,1276 +15,1276 @@
     "/raggiesoft-books/books/apex-fall-of-earth": {
         "view": "pages/raggiesoft-books/books/series",
         "title": "apex-fall-of-earth",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b001/c001/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Deep End \u2013 Mid-October 2044 (Days prior to arrival)\u00a0\u00a0",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b001/c001/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Freight \u2013 Mid-October 2044 (Interstellar transit)\u00a0",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b001/c001/p003": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Pipeline \u2013 Thursday, October 20, 2044 (Transit to NTTR)",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b001/c001/p004": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Intake \u2013 Thursday, October 20, 2044 \u2013 04:00",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b001/c001/p005": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Filing Cabinet \u2013 Thursday, October 20, 2044 \u2013 ~04:20 (Shift starts in 20 minutes)",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b001/c001/p006": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Washroom \u2013 Thursday, October 20, 2044 \u2013 ~04:30",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b001/c001/p007": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Trough \u2013 Thursday, October 20, 2044 \u2013 ~04:40",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b001/c001/p008": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Checkpoint \u2013 Thursday, October 20, 2044 \u2013 ~04:50",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b002/c001/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "First Flight \u2013 Mid-October 2044 (Days prior to arrival)",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b002/c001/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Voyage \u2013 Mid-October 2044 (Interstellar transit)",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b002/c001/p003": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Transfer \u2013 Thursday, October 20, 2044 \u2013 08:00 (Local Spaceport Time)",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b002/c001/p004": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Handoff \u2013 Thursday, October 20, 2044 \u2013 04:00 (NTTR Local Time)",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b002/c001/p005": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Glitch \u2013 Thursday, October 20, 2044 \u2013 ~04:15 (Shift starts in exactly forty-five minutes)",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b002/c001/p006": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Washroom \u2013 Thursday, October 20, 2044 \u2013 ~04:30",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b002/c001/p007": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Divide \u2013 Thursday, October 20, 2044 \u2013 ~04:40",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b002/c001/p008": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Checkpoint \u2013 Thursday, October 20, 2044 \u2013 ~04:50",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b003/c001/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Powder Keg \u2013 Thursday, October 20, 2044 \u2013 ~05:00",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b003/c001/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Chain of Command \u2013 Thursday, October 20, 2044 \u2013 ~06:00",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b003/c001/p003": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Maintenance Closet \u2013 Thursday, October 20, 2044 \u2013 ~07:00",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b003/c001/p004": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Grind \u2013 Thursday, October 20, 2044 \u2013 ~08:00",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b003/c001/p005": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Break \u2013 Thursday, October 20, 2044 \u2013 ~11:00 (Six hours into the shift)",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b003/c001/p006": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "42-C \u2013 Thursday, October 20, 2044 \u2013 ~17:00 (The twelve-hour mark hit)",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b003/c002/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Wake Up Call \u2013 Friday, October 21, 2044 \u2013 01:00 (After sleeping for eight hours)",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b003/c002/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Morning Ration \u2013 Friday, October 21, 2044 \u2013 ~01:15",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b003/c002/p003": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Checkpoint \u2013 Friday, October 21, 2044 \u2013 ~01:30",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b003/c002/p004": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Telemetry Anomaly \u2013 Friday, October 21, 2044 \u2013 ~02:00",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b003/c002/p005": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Anchor \u2013 Friday, October 21, 2044 \u2013 ~03:00",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b003/c002/p006": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Ghost Shift \u2013 Friday, October 21, 2044 \u2013 07:00 (Six more hours until shift change)",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b003/c002/p007": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Blind Spot \u2013 Friday, October 21, 2044 \u2013 ~08:00 (During the one-hour meal rotation)",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b003/c002/p008": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Ghost Roster \u2013 Friday, October 21, 2044 \u2013 10:00 (Two hours later)",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b003/c002/p009": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Sanctuary \u2013 Friday, October 21, 2044 \u2013 11:00 (With two hours left on the twelve-hour clock)",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b003/c002/p010": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Off the Clock \u2013 Friday, October 21, 2044 \u2013 13:00 (The twelve-hour klaxon finally screamed)",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b003/c002/p011": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Return to The Sanctuary \u2013 Friday, October 21, 2044 \u2013 ~13:30 (Setting up camp in the abandoned break room)",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b003/c003/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Illusion of Control \u2013 Saturday, October 22, 2044 \u2013 05:00 (PDA alarm goes off at 0500 hours)",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b003/c003/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Veterans \u2013 Saturday, October 22, 2044 \u2013 ~05:15",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b003/c003/p003": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Echo \u2013 Saturday, October 22, 2044 \u2013 ~05:30",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b003/c003/p004": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Bleeding Bedrock \u2013 Saturday, October 22, 2044 \u2013 ~06:00",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b003/c003/p005": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Pact \u2013 Saturday, October 22, 2044 \u2013 ~07:00",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b003/c003/p006": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Clear Parameters \u2013 Saturday, October 22, 2044 \u2013 ~08:00 (About twenty minutes into the patrol)",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b003/c003/p007": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Masterclass \u2013 Saturday, October 22, 2044 \u2013 11:00 (Mid-shift PA chime)",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b003/c003/p008": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Ping \u2013 Saturday, October 22, 2044 \u2013 12:00 (An hour into the second half of the shift)",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b003/c003/p009": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Prison Break \u2013 Saturday, October 22, 2044 \u2013 17:00 (The twelve-hour klaxon)",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b003/c003/p010": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Fallen Hierarchy \u2013 Saturday, October 22, 2044 \u2013 ~17:30",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b003/c004/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Structural Failure \u2013 Sunday, October 23, 2044 \u2013 05:00 (PDA vibrates at 0500 hours)",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b003/c004/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Deployment \u2013 Sunday, October 23, 2044 \u2013 ~05:15 (Given twenty minutes to collect gear)",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b003/c004/p003": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Transit \u2013 Sunday, October 23, 2044 \u2013 ~05:30 (Floor detonates; they escape in the shuttle)",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b003/c004/p004": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Relic \u2013 Monday, October 24, 2044 \u2013 07:15 (Arriving at Outpost Delta 9)",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b003/c004/p005": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Captain's Quarters \u2013 Monday, October 24, 2044 \u2013 ~07:30",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b004/c001/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Blinking Clock \u2013 Monday, October 24, 2044 \u2013 07:45 (Wyatt sets the VCR clock to 07:45, mirroring their arrival time)",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b004/c001/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Ghost Ship \u2013 Monday, October 24, 2044 \u2013 ~10:00 (A few more hours pass)",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b004/c001/p003": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Broadcast \u2013 Monday, October 24, 2044 \u2013 ~10:15 (Shortly after checking the command center)",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b004/c002/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Hydroponics Bay \u2013 Monday, October 24, 2044 \u2013 ~10:30",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b004/c002/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Strawberry Festival \u2013 Monday, October 24, 2044 \u2013 ~10:50 (For the first twenty minutes, it was pure trial and error)",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b004/c002/p003": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Expanding Fracture \u2013 Monday, October 24, 2044 \u2013 ~11:00",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b004/c003/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Descent \u2013 Monday, October 24, 2044 \u2013 ~11:15",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b004/c003/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Baffle \u2013 Monday, October 24, 2044 \u2013 ~11:30",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b004/c003/p003": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Harvest \u2013 Monday, October 24, 2044 \u2013 ~11:45",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b004/c003/p004": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Acceleration \u2013 Monday, October 24, 2044 \u2013 12:05 (They hadn't even been out of the engine room for twenty minutes)",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b004/c003/p005": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Scorched Earth \u2013 Monday, October 24, 2044 \u2013 ~12:15 (The military broadcast states scorched earth was authorized at 1300 hours on Earth)",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b004/c004/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "An Attempt at Normalcy \u2013 Monday, October 24, 2044 \u2013 Evening (e.g. ~20:00)",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b004/c004/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Shedding the Armor \u2013 Tuesday, October 25, 2044 \u2013 Morning (e.g. ~08:00) (The deep-space morning cycled over the outpost)",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b004/c004/p003": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Ghost Ship \u2013 Tuesday, October 25, 2044 \u2013 ~10:00 (Exactly two hours after breakfast)",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b004/c004/p004": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Void \u2013 Tuesday, October 25, 2044 \u2013 ~10:30 (Dropship is four hours out)",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b004/c004/p005": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Ghost Awakens \u2013 Tuesday, October 25, 2044 \u2013 ~11:15 (Forty-five minutes of absolute agony)",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b004/c005/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A Vector to Nowhere \u2013 Tuesday, October 25, 2044 \u2013 ~13:30 (Two hours later after leaving orbit)",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b004/c005/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Hubris of Apex \u2013 Tuesday, October 25, 2044 \u2013 ~14:00 (Yellowstone erupts; broadcast states event occurred at 0915 hours Earth-time)",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b004/c005/p003": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Billionaire\u2019s Secrets \u2013 Tuesday, October 25, 2044 \u2013 ~14:30",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b004/c005/p004": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The 2044 Reveal \u2013 Tuesday, October 25, 2044 \u2013 ~15:00",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b004/c005/p005": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Blank Slate \u2013 Tuesday, October 25, 2044 \u2013 ~15:15",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b004/c006/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Coordinates \u2013 Wednesday, October 26, 2044 \u2013 09:00",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b004/c006/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Spacetime Fold \u2013 Wednesday, October 26, 2044 \u2013 09:15 HRS",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b004/c006/p003": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Interstellar Road Trip \u2013 Wednesday, October 26, 2044 \u2013 09:30",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b004/c006/p004": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Algorithm's Gift \u2013 Wednesday, October 26, 2044 \u2013 16:00",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b004/c006/p005": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Blank Slate \u2013 Thursday, October 27 to Tuesday, November 1, 2044 (FTL Transit)",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b004/c006/p006": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Backlog \u2013 Tuesday, November 1, 2044 \u2013 09:30",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b004/c006/p007": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Backlog \u2013 Tuesday, November 1, 2044 \u2013 09:32",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b005/c001/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Atmospheric Entry \u2013 Tuesday, November 1, 2044 \u2013 10:00",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b005/c001/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The First Steps \u2013 Tuesday, November 1, 2044 \u2013 10:15",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b005/c001/p003": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Solar Bloom \u2013 Tuesday, November 1, 2044 \u2013 10:30",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b005/c001/p004": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Footprint \u2013 Sunday, May 7, 2045 \u2013 15:15",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b005/c001/p005": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The True Face of Apex \u2013 Tuesday, May 7, 2045 \u2013 16:00 (Standard Galactic Time)",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b005/c001/p006": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Ghost Protocol \u2013 Tuesday, May 7, 2045 \u2013 18:30",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b005/c001/p007": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Canopy \u2013 Tuesday, May 7, 2045 \u2013 19:00",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b005/c001/p008": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Blind Sweep \u2013 Wednesday, May 8, 2045 \u2013 14:00 (Standard Galactic Time)",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b005/c001/p009": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Vow \u2013 Wednesday, May 8, 2045 \u2013 15:24",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b005/c001/p010": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Living Light \u2013 Wednesday, May 8, 2045 \u2013 21:00",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b005/c001/p011": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Under the Stars \u2013 Wednesday, May 8, 2045 \u2013 23:15",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b005/c002/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The River \u2013 Thursday, May 9, 2045 \u2013 06:30",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b005/c002/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Nomad \u2013 Thursday, May 9, 2045 \u2013 07:45",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b005/c002/p003": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Blueprint \u2013 Thursday, May 9, 2045 \u2013 08:00",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b005/c002/p004": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The First Harvest \u2013 Thursday, May 9, 2045 \u2013 08:30",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b005/c002/p005": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Bait \u2013 Thursday, May 9, 2045 \u2013 10:00 (Standard Galactic Time)",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b005/c002/p006": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Broken Snare \u2013 Thursday, May 9, 2045 \u2013 11:30",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b005/c002/p007": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Eden Rule \u2013 Thursday, May 9, 2045 \u2013 12:15",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b005/c003/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Floodplain \u2013 Thursday, May 9, 2045 \u2013 17:00",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b005/c003/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Dead Reckoning \u2013 Thursday, May 9, 2045 \u2013 17:15",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b005/c003/p003": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Mountain's Mouth \u2013 Thursday, May 9, 2045 \u2013 17:22",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b005/c003/p004": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Winter Window \u2013 Thursday, May 9, 2045 \u2013 17:40",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b005/c003/p005": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Genesis Vault \u2013 Thursday, May 9, 2045 \u2013 18:00",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b005/c003/p006": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Genesis Vault \u2013 Thursday, May 9, 2045 \u2013 18:15",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b005/c003/p007": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Master Kitchen \u2013 Thursday, May 9, 2045 \u2013 18:30",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b005/c003/p008": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Curriculum \u2013 Thursday, May 9, 2045 \u2013 19:15",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b005/c003/p009": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Saltwater Oasis \u2013 Thursday, May 9, 2045 \u2013 19:30",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b005/c004/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The First Semester \u2013 Friday, May 10, 2045 \u2013 08:00",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b005/c004/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Debugger \u2013 Friday, May 10, 2045 \u2013 11:30",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b005/c004/p003": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Earth Conservatory \u2013 Friday, May 10, 2045 \u2013 12:15",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b005/c004/p004": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Ark \u2013 Friday, May 10, 2045 \u2013 12:30",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b005/c004/p005": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Comfort Food \u2013 Friday, May 10, 2045 \u2013 13:00",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b005/c004/p006": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Hello World \u2013 Friday, May 10, 2045 \u2013 13:45",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b005/c004/p007": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Biology 101 \u2013 Friday, May 10, 2045 \u2013 14:15",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b005/c004/p008": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Vitality Roster \u2013 Friday, May 10, 2045 \u2013 14:30",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b005/c004/p009": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Facelift \u2013 Friday, May 10, 2045 \u2013 15:00",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b005/c004/p010": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The First Generation \u2013 Friday, May 10, 2045 \u2013 17:00",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b005/c004/p011": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The First Landing \u2013 Friday, May 10, 2045 \u2013 17:30",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b005/c004/p012": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Parent Protocol \u2013 Friday, May 10, 2045 \u2013 21:00",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b005/c005/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Upgrade \u2013 Saturday, May 11, 2045 \u2013 07:00",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b005/c005/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Archives \u2013 Saturday, May 11, 2045 \u2013 08:30",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b005/c005/p003": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Husk \u2013 Saturday, May 11, 2045 \u2013 09:15",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b005/c005/p004": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Lost Time \u2013 Saturday, May 11, 2045 \u2013 09:45",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b005/c005/p005": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Trade-Off \u2013 Saturday, May 11, 2045 \u2013 10:15",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b005/c005/p006": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Mapmakers \u2013 Saturday, May 11, 2045 \u2013 10:30",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b005/c005/p007": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Six Moons \u2013 Saturday, May 11, 2045 \u2013 10:45",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b005/c005/p008": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Petrichor \u2013 Saturday, May 11, 2045 \u2013 12:30",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b005/c005/p009": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Runabout \u2013 Saturday, May 11, 2045 \u2013 13:15",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b005/c006/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Maiden Voyage \u2013 Saturday, May 11, 2045 \u2013 13:45",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b005/c006/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Alpine Meadow \u2013 Saturday, May 11, 2045 \u2013 17:00",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b005/c006/p003": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Anchor \u2013 Sunday, May 12, 2045 \u2013 07:30",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b005/c006/p004": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Lunar Bound \u2013 Sunday, May 12, 2045 \u2013 08:00",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b005/c006/p005": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Reading List \u2013 Sunday, May 12, 2045 \u2013 10:30",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b005/c006/p006": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The 2002 Fiction \u2013 Sunday, May 12, 2045 \u2013 14:00",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b005/c006/p007": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Terrace Picnic \u2013 Sunday, May 12, 2045 \u2013 15:30",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b005/c006/p008": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Gravity Tax \u2013 Sunday, May 12, 2045 \u2013 16:15",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b005/c006/p009": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Sowing the Seeds \u2013 Sunday, May 12, 2045 \u2013 16:45",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b005/c006/p010": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Architect \u2013 Sunday, May 12, 2045 \u2013 17:45",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b005/c006/p011": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Overcompensation \u2013 Sunday, May 12, 2045 \u2013 18:00",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b005/c007/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Three Pulses \u2013 Sunday, May 12, 2045 \u2013 18:15",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b005/c007/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Multiplier \u2013 Sunday, May 12, 2045 \u2013 18:25",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b005/c007/p003": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Tax Evasion and Timber \u2013 Sunday, May 12, 2045 \u2013 18:45",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b005/c007/p004": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The 50,000 Crib Deficit \u2013 Sunday, May 12, 2045 \u2013 23:45",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b005/c007/p005": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Constitution \u2013 Monday, May 13, 2045 \u2013 09:00",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b005/c007/p006": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Agrarian Model \u2013 Monday, May 13, 2045 \u2013 09:30",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b005/c007/p007": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Wardrobe \u2013 Sunday, June 4, 2045 \u2013 09:00",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b005/c007/p008": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Toll of Three \u2013 Sunday, June 18, 2045 \u2013 10:00",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b005/c007/p009": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Remedy \u2013 Sunday, June 18, 2045 \u2013 10:15",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b005/c007/p010": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Chariot \u2013 Sunday, June 18, 2045 \u2013 12:30",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b005/c007/p011": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Craving \u2013 Sunday, June 18, 2045 \u2013 13:00",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b005/c007/p012": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Foundation \u2013 Sunday, June 18, 2045 \u2013 14:00",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b006/c001/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Tolerances of Eden \u2013 Monday, September 4, 2045 \u2013 10:00",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b006/c001/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Silent Scout \u2013 Tuesday, September 5, 2045 \u2013 14:00",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b006/c001/p003": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Shield and the Spark \u2013 Wednesday, September 20, 2045 \u2013 11:00",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b006/c001/p004": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Ghost of Eden \u2013 Friday, September 22, 2045 \u2013 13:15",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b006/c001/p005": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Dead Rock \u2013 Thursday, October 12, 2045 \u2013 02:15",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b006/c001/p006": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Aegis Hallucination \u2013 Thursday, October 12, 2045 \u2013 08:00",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b006/c001/p007": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Administrative Override \u2013 Friday, November 10, 2045 \u2013 15:00",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b006/c001/p008": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Weight of the World \u2013 Monday, November 27, 2045 \u2013 03:15",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b006/c001/p009": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Cosmic Dust \u2013 Monday, November 27, 2045 \u2013 06:00",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b006/c002/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Gravity of Eden \u2013 Tuesday, December 5, 2045 \u2013 02:30",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b006/c002/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Vanguard's Spear \u2013 Tuesday, December 5, 2045 \u2013 02:45",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b006/c002/p003": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Hypoxic Clock \u2013 Tuesday, December 5, 2045 \u2013 02:52",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b006/c002/p004": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Lion's Fight \u2013 Tuesday, December 5, 2045 \u2013 03:00",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b006/c002/p005": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Incubator Watch \u2013 Tuesday, December 5, 2045 \u2013 05:00",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b006/c002/p006": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Reaching in the Dark \u2013 Tuesday, December 5, 2045 \u2013 05:15",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b006/c002/p007": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Maintenance Schedule \u2013 Tuesday, December 12, 2045 \u2013 14:00",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b006/c002/p008": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Annoyance \u2013 Thursday, December 21, 2045 \u2013 02:15",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b006/c002/p009": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Engine Block \u2013 Tuesday, January 9, 2046 \u2013 10:00",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b006/c003/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Flaw in the Wood \u2013 Tuesday, January 30, 2046 \u2013 14:00",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b006/c003/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Gravity of the Hive \u2013 Wednesday, January 31, 2046 \u2013 03:00",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b006/c003/p003": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Sentinel Directive \u2013 Wednesday, January 31, 2046 \u2013 09:00",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b006/c003/p004": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Mega-Crib \u2013 Wednesday, January 31, 2046 \u2013 14:00",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b006/c003/p005": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Supply Drop \u2013 Thursday, May 14, 2046 \u2013 11:30",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b006/c003/p006": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Soup Kitchen \u2013 Thursday, May 14, 2046 \u2013 21:00",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b006/c004/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Rule of Three \u2013 Tuesday, March 10, 2048 \u2013 07:30",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b006/c004/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Tactical Extraction \u2013 Thursday, April 2, 2048 \u2013 14:15",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b006/c004/p003": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Milestones \u2013 Tuesday, August 18, 2048 \u2013 16:00",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b006/c004/p004": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Chariot \u2013 Friday, September 4, 2048 \u2013 10:00",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b006/c004/p005": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Hydroponics Breach \u2013 Monday, February 15, 2049 \u2013 13:15",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b006/c004/p006": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Establishing Comms \u2013 Thursday, May 6, 2049 \u2013 15:00",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b006/c005/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The New Recruit \u2013 Wednesday, September 15, 2049 \u2013 10:00",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b006/c005/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Unified Design \u2013 Tuesday, October 5, 2049 \u2013 02:15",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b006/c005/p003": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Tactical Latrine \u2013 Friday, November 12, 2049 \u2013 09:00",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b006/c005/p004": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Defensive Perimeter \u2013 Wednesday, December 15, 2049 \u2013 18:30",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b006/c005/p005": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Bootcamp \u2013 Monday, December 20, 2049 \u2013 04:15",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b006/c005/p006": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Genesis Check \u2013 Wednesday, March 1, 2050 \u2013 21:00",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b006/c006/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Accelerated Recruit \u2013 Tuesday, October 18, 2050 \u2013 14:00",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b006/c006/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Terrain Deficit \u2013 Wednesday, April 12, 2051 \u2013 10:00",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b006/c006/p003": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Multi-Front War \u2013 Friday, April 21, 2051 \u2013 15:30",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b006/c006/p004": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Ghost Planet \u2013 Friday, April 21, 2051 \u2013 15:45 (Standard Galactic Time)",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b006/c006/p005": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The All-Terrain Vanguard \u2013 Friday, April 28, 2051 \u2013 10:00",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b006/c006/p006": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Authorized Harvest \u2013 Thursday, May 18, 2051 \u2013 13:00",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b006/c006/p007": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Constitutional Override \u2013 Friday, November 3, 2051 \u2013 10:15",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b006/c006/p008": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Legal Precedent \u2013 Friday, November 3, 2051 \u2013 11:30",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b006/c006/p009": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Perimeter Test \u2013 Friday, November 3, 2051 \u2013 11:45",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b007/c001/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Sovereign\u2019s Hubris \u2013 Tuesday, May 2, 2051 \u2013 08:00 (Standard Galactic Time)",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b007/c001/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Geneva Standard \u2013 Tuesday, May 2, 2051 \u2013 08:05 (Standard Galactic Time)",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b007/c001/p003": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Extraction \u2013 Tuesday, May 2, 2051 \u2013 08:30 (Standard Galactic Time)",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b007/c001/p004": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Laws of War \u2013 Tuesday, May 2, 2051 \u2013 08:45 (Standard Galactic Time)",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b007/c001/p005": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Interrogation \u2013 Tuesday, May 2, 2051 \u2013 10:00 (Standard Galactic Time)",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b007/c001/p006": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Handover \u2013 Friday, May 5, 2051 \u2013 14:00 (Standard Galactic Time)",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b007/c001/p007": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Classified Intel \u2013 Friday, May 5, 2051 \u2013 14:15",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b007/c002/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Government-in-Exile \u2013 Monday, September 18, 2051 \u2013 09:00 (Standard Galactic Time)",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b007/c002/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Star Witnesses \u2013 Monday, September 18, 2051 \u2013 09:30",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b007/c002/p003": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Fab-Foundry Apprentice \u2013 Tuesday, September 19, 2051 \u2013 10:00 (Standard Galactic Time)",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b007/c002/p004": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Verdict and the Vault \u2013 Friday, January 12, 2052 \u2013 09:00 (Standard Galactic Time)",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b007/c002/p005": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Sentinel Treaty \u2013 Monday, April 8, 2052 \u2013 14:00 (Standard Galactic Time)",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b007/c003/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Healing Room \u2013 Monday, May 20, 2052 \u2013 14:00 (Standard Galactic Time)",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b007/c003/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Diplomat's Detail \u2013 Thursday, May 23, 2052 \u2013 09:30",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b007/c003/p003": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The First Blueprint \u2013 Friday, May 24, 2052 \u2013 20:00",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b007/c003/p004": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The History Lesson \u2013 Saturday, July 13, 2052 \u2013 10:00 (Standard Galactic Time)",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b008/c001/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Pattern Disruption \u2013 Wednesday, September 18, 2052 \u2013 15:00 (Standard Galactic Time)",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b008/c001/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Rhythm Section \u2013 Thursday, July 18, 2052 \u2013 14:00",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b008/c001/p003": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Archives of Earth \u2013 Thursday, July 18, 2052 \u2013 14:15",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b008/c001/p004": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Fleet Upgrade \u2013 Friday, October 25, 2052 \u2013 14:00",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b008/c001/p005": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Stabilizers \u2013 Friday, October 25, 2052 \u2013 14:15",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b008/c001/p006": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Enforcers \u2013 Thursday, June 12, 2053 \u2013 04:30 (Local Eden Time)",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b008/c002/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Expanded Jurisdiction \u2013 Thursday, October 10, 2053 \u2013 09:30",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b008/c002/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Cornerstone \u2013 Tuesday, April 14, 2054 \u2013 08:00",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b008/c002/p003": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Biological Override \u2013 Friday, April 16, 2055 \u2013 10:00 (Local Eden Time)",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b008/c002/p004": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Anomalous Data \u2013 Tuesday, August 17, 2055 \u2013 13:00",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b008/c002/p005": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Endocrine Protocol \u2013 Friday, October 20, 2056 \u2013 14:00 (Local Eden Time)",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b008/c002/p006": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The First Ten \u2013 Monday, September 8, 2057 \u2013 10:00 (Local Eden Time)",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b008/c002/p007": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Sydney Protocol \u2013 Friday, October 24, 2057 \u2013 15:00 (Local Eden Time)",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b008/c003/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The First Breath \u2013 Friday, January 29, 2058 \u2013 09:00 (Local Eden Time)",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b008/c003/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Command Staff Celebration \u2013 Friday, January 29, 2058 \u2013 10:30 (Local Eden Time)",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b008/c003/p003": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Gestation Protocol \u2013 Friday, October 28, 2058 \u2013 18:00 (Local Eden Time)",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b008/c003/p004": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Arrival Day \u2013 Saturday, July 19, 2058 \u2013 06:00 (Local Eden Time)",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b008/c003/p005": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Roster Expansion \u2013 Saturday, July 19, 2058 \u2013 09:00",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b008/c003/p006": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Nursery Logistics \u2013 Friday, August 2, 2058 \u2013 14:00 (Local Eden Time)",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b009/c001/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Expanding Perimeter \u2013 Sunday, August 12, 2063 \u2013 10:00 (Local Eden Time)",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b009/c001/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Commander\u2019s Blessing \u2013 Sunday, August 12, 2063 \u2013 13:00 (Local Eden Time)",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b009/c001/p003": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Lunar Embassy \u2013 Tuesday, September 4, 2063 \u2013 14:00 (Standard Galactic Time)",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b009/c001/p004": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Wild Sparrows \u2013 Sunday, August 12, 2063 \u2013 14:30 (Local Eden Time)",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b009/c001/p005": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Breaking Ground \u2013 Friday, September 7, 2063 \u2013 09:00 (Standard Galactic Time)",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b009/c002/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Fleet Girl \u2013 Friday, July 10, 2066 \u2013 16:00 (Standard Galactic Time)",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b009/c002/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Gravity of Home \u2013 Friday, July 10, 2066 \u2013 17:30 (Local Eden Time)",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b009/c002/p003": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Newport Fifty \u2013 Saturday, August 15, 2066 \u2013 10:00 (Local Eden Time)",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b009/c003/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Great Chowder Rebellion \u2013 Tuesday, June 16, 2071 \u2013 12:30 (Local Eden Time)",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b009/c003/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Exception \u2013 Tuesday, June 16, 2071 \u2013 13:15 (Standard Galactic Time)",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b009/c003/p003": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Golden Cage \u2013 Thursday, June 18, 2071 \u2013 10:00 (Local Eden Time)",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b009/c004/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Scavenger's Tale \u2013 Monday, June 22, 2071 \u2013 14:00 (Local Eden Time)",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b009/c004/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Village Square \u2013 Monday, June 22, 2071 \u2013 15:00 (Local Eden Time)",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b009/c004/p003": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Collection Agency \u2013 Wednesday, June 17, 2071 \u2013 09:15 (Local Eden Time)",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b009/c004/p004": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Extraction of Toxicity \u2013 Wednesday, June 17, 2071 \u2013 20:00 (Local Eden Time)",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b009/c004/p005": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Detox \u2013 Wednesday, June 17, 2071 \u2013 21:30 (Local Eden Time)",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b009/c004/p006": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Filter \u2013 Wednesday, June 17, 2071 \u2013 22:30 (Local Eden Time)",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b009/c005/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Geometry of Peace \u2013 Thursday, June 25, 2071 \u2013 10:00 (Local Eden Time)",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b009/c005/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Kinetic Variables \u2013 Thursday, June 25, 2071 \u2013 10:30 (Local Eden Time)",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b009/c005/p003": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Shenandoah Curve \u2013 Thursday, June 25, 2071 \u2013 10:45 (Local Eden Time)",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b009/c005/p004": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Stewards \u2013 Thursday, June 25, 2071 \u2013 11:00 (Local Eden Time)",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b009/c006/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Watch \u2013 Thursday, June 25, 2071 \u2013 11:15 (Local Eden Time)",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b009/c006/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Age of Majority \u2013 Thursday, June 25, 2071 \u2013 13:00 (Local Eden Time)",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b009/c007/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Logistics of the Wild \u2013 Friday, June 26, 2071 \u2013 10:00 (Local Eden Time)",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b009/c007/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Raising the Canvas \u2013 Friday, June 26, 2071 \u2013 13:00 (Local Eden Time)",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b009/c007/p003": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The 16-Bit Horizon \u2013 Sunday, June 28, 2071 \u2013 09:00 (Local Eden Time)",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/apex-fall-of-earth/b009/c007/p004": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Sydney Echo \u2013 Sunday, June 28, 2071 \u2013 11:30 (Local Eden Time)",
-        "theme": ""
+        "theme": "raggiesoft-books"
     }
 }

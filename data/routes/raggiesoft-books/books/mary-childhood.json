@@ -1,12 +1,13 @@
 {
     "common": {
         "site": "raggiesoft-books",
-        "theme": "",
+        "theme": "raggiesoft-books",
         "siteName": "Ocean View Archives",
         "isSequential": true,
+        "showSidebar": true,
+        "sidebar": "raggiesoft-books/sidebar-book",
         "headerMenu": "raggiesoft-books/header-books",
         "footer": "raggiesoft-books/footer-books",
-        "showSidebar": false,
         "navbarBrandLogo": "/raggiesoft-books/images/logos/oceanview-archives.svg",
         "navbarBrandText": "<span class=\"ova-serif fw-bold\" style=\"color: #E3B27C;\">Ocean View Archives</span>",
         "navbarBrandLink": "/raggiesoft-books"
@@ -14,12 +15,12 @@
     "/raggiesoft-books/books/mary-childhood": {
         "view": "pages/raggiesoft-books/books/series",
         "title": "mary-childhood",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/mary-childhood/b001/c001/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Beginning",
-        "theme": "",
+        "theme": "raggiesoft-books",
         "nextUrl": "/raggiesoft-books/books/ashley-tower/b001/c001/p001",
         "nextText": "Continue to Ashley Tower"
     }
