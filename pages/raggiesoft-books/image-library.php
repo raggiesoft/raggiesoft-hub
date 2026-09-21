@@ -50,7 +50,7 @@ $images = [
     [
         "url" => $cdnBaseUrl . "/raggiesoft-books/images/library-hero/10.jpg",
         "title" => "The Golden Goal Bet",
-        "description" => "Montréal, 2010. Alex and Megan look miserable while forced to wear Canada hockey gear after losing a bet to a very smug Chloé during the Winter Olympics."
+        "description" => "Montréal, 2010. Alex and Megan look miserable while forced to wear Canada hockey gear after losing a bet to a very smug Chloé during the Winter Games."
     ]
 ];
 ?>
