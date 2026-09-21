@@ -156,5 +156,15 @@
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 3: The Coronation \u2013 10:45 PM",
         "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/crimson-node/b001/c006/p004": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: Off the Record \u2013 11:30 PM",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/crimson-node/b001/c006/p005": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 5: The End of the Night \u2013 12:30 AM",
+        "theme": "raggiesoft-books"
     }
 }
