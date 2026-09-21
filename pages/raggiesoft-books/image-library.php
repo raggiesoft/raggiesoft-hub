@@ -54,23 +54,23 @@ $images = [
     ]
 ];
 ?>
-<div class="container py-5 mt-5">
-    <div class="text-center mb-5">
-        <h1 class="display-4 fw-bold ova-serif text-primary">Image Library</h1>
-        <p class="lead text-muted">Browse the visual moments that define the Ocean View Archives.</p>
-    </div>
-
-    <div class="row g-4">
-        <?php foreach ($images as $index => $img): ?>
-        <div class="col-md-6 mb-4">
-            <div class="card h-100 shadow-sm border-0 bg-dark text-light overflow-hidden rounded-4">
-                <img src="<?php echo htmlspecialchars($img['url']); ?>" class="card-img-top" alt="<?php echo htmlspecialchars($img['title']); ?>" style="object-fit: cover; height: 300px;">
-                <div class="card-body p-4">
-                    <h4 class="card-title fw-bold text-primary mb-2"><?php echo htmlspecialchars($img['title']); ?></h4>
-                    <p class="card-text text-light opacity-75"><?php echo htmlspecialchars($img['description']); ?></p>
-                </div>
-            </div>
+<div class="container-fluid py-5 mt-5 bg-dark text-light" data-bs-theme="dark" style="min-height: 100vh;">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h1 class="display-4 fw-bold ova-serif text-light">Image Library</h1>
+            <p class="lead text-light opacity-75">Browse the visual moments that define the Ocean View Archives.</p>
         </div>
-        <?php endforeach; ?>
+
+        <div class="row g-4">
+            <?php foreach ($images as $index => $img): ?>
+            <div class="col-md-6 mb-4">
+                <wa-card class="h-100 shadow-sm border-0 w-100">
+                    <img slot="media" src="<?php echo htmlspecialchars($img['url']); ?>" alt="<?php echo htmlspecialchars($img['title']); ?>" style="object-fit: cover; height: 300px; width: 100%;">
+                    <h4 class="fw-bold mb-2"><?php echo htmlspecialchars($img['title']); ?></h4>
+                    <p class="mb-0 text-muted"><?php echo htmlspecialchars($img['description']); ?></p>
+                </wa-card>
+            </div>
+            <?php endforeach; ?>
+        </div>
     </div>
 </div>
