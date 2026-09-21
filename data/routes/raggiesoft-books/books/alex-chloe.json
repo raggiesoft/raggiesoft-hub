@@ -2,7 +2,7 @@
     "common": {
         "site": "raggiesoft-books",
         "theme": "",
-        "siteName": "alex-chloe",
+        "siteName": "Alex & Chlo\u00e9",
         "isSequential": true,
         "showSidebar": true,
         "sidebar": "raggiesoft-books/sidebar-book",
@@ -11,7 +11,7 @@
     },
     "/raggiesoft-books/books/alex-chloe": {
         "view": "pages/raggiesoft-books/books/series",
-        "title": "alex-chloe",
+        "title": "Alex & Chlo\u00e9",
         "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b001/c001/p001": {
