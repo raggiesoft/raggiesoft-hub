@@ -24,7 +24,7 @@ if ($eras) {
 <div class="border-bottom border-primary border-opacity-50" style="
     position: relative;
     background-image: linear-gradient(rgba(13, 6, 26, 0.7), rgba(13, 6, 26, 0.7)), 
-                      url($cdnBaseUrl . '/stardust-engine/images/stardust-engine-hero.jpg');
+                      url('<?php echo $cdnBaseUrl; ?>/stardust-engine/images/stardust-engine-hero.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

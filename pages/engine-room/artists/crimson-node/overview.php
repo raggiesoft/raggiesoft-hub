@@ -25,7 +25,7 @@ if ($eras) {
 <div class="border-bottom border-primary border-opacity-50" style="
     position: relative;
     background-image: linear-gradient(rgba(13, 13, 13, 0.85), rgba(13, 13, 13, 0.85)), 
-                      url($cdnBaseUrl . '/engine-room-records/artists/crimson-node/2002-crimson-node/album-art.jpg');
+                      url('<?php echo $cdnBaseUrl; ?>/engine-room-records/artists/crimson-node/2002-crimson-node/album-art.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

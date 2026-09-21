@@ -22,7 +22,7 @@ if ($eras) {
 ?>
 
 <div class="border-bottom border-prism position-relative overflow-hidden" style="
-    background-image: url($cdnBaseUrl . '/engine-room-records/artists/fractured-prisms/hero-bg.jpg');
+    background-image: url('<?php echo $cdnBaseUrl; ?>/engine-room-records/artists/fractured-prisms/hero-bg.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
