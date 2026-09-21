@@ -344,8 +344,6 @@ if (isset($customPageAssets) && is_array($customPageAssets)) {
         const isForcedByServer = document.documentElement.hasAttribute('data-bs-theme');
         
         const getPreferredTheme = () => {
-            const storedTheme = localStorage.getItem('theme');
-            if (storedTheme) return storedTheme;
             return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
         };
         
@@ -353,6 +351,7 @@ if (isset($customPageAssets) && is_array($customPageAssets)) {
             // Only apply the dynamic theme if the server didn't explicitly force one
             if (!isForcedByServer) {
                 document.documentElement.setAttribute('data-bs-theme', theme);
+                document.documentElement.setAttribute('data-theme', theme);
                 if (theme === 'dark') {
                     document.documentElement.classList.add('wa-theme-dark');
                 } else {
@@ -364,8 +363,7 @@ if (isset($customPageAssets) && is_array($customPageAssets)) {
         setTheme(getPreferredTheme());
         
         window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => {
-            const storedTheme = localStorage.getItem('theme');
-            if (storedTheme !== 'light' && storedTheme !== 'dark') setTheme(getPreferredTheme());
+            setTheme(getPreferredTheme());
         });
     })();
     </script>
