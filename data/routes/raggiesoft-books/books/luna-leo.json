@@ -1,7 +1,7 @@
 {
     "common": {
         "site": "raggiesoft-books",
-        "theme": "raggiesoft-books",
+        "theme": "",
         "siteName": "Ocean View Archives",
         "isSequential": true,
         "headerMenu": "raggiesoft-books/header-books",
@@ -14,1861 +14,1861 @@
     "/raggiesoft-books/books/luna-leo": {
         "view": "pages/raggiesoft-books/books/series",
         "title": "luna-leo",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b001/c001/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Birthday Morning and the Grandparents' Arrival",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b001/c001/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Journey North and Boston Greetings",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b001/c001/p003": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Bay State Marine Center Wonders",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b001/c001/p004": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "First Rides on \"The B\" and a Diaper Debacle",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b001/c001/p005": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Discoveries and a Starlight Pavilion",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b001/c001/p006": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Infamous BSTA Delay and Homeward Bound",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b001/c001/p007": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Birthday Cake and Sweet Memories on Ludlow Road",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b002/c002/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Breakthrough for Leo",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b002/c002/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Student Training and Education Program",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b002/c004/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Stella to the Sore Rescue",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b002/c004/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Sunday with Stella",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b004/c002/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Introduction and Anticipation",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b004/c002/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Leo's New Wheelchair - A World of Difference",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b004/c002/p003": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Quantum Communicators Arrive - Finding Their Voices",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b004/c002/p004": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A New Soundtrack and Leo's Poem",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b005/c001/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Northwood High Cafeteria \u2013 Lunch Period, Fall 1999 (From Luna and Leo Porter\u2019s POV)",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b005/c018/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Charter Bus to the Mountains",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b005/c018/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Motel Check-In and Push-Up Penalties",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b005/c018/p003": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Waiting Game",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b005/c018/p004": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Pre-Performance Hustle",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b005/c018/p005": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Showtime Preparation",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b005/c019/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A Form from School",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b005/c019/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Talk",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b005/c019/p003": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Mary is Snubbed",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b005/c019/p004": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Kevin is Snubbed",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b006/c001/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Porter Morning Machine",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b006/c001/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Stand-Off",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b006/c001/p003": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Unwritten Rules",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b006/c001/p004": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Parallel Lines",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b006/c001/p005": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Dead Language, Live Connection",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b006/c001/p006": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Cafeteria Court",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b006/c001/p007": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Sanctuary of the Stacks",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b006/c001/p008": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Getaway Driver",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b006/c002/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Online Reconnaissance",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b006/c002/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Olympus No Go",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b006/c002/p003": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Like a Rock? No, Like a Financing Offer",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b006/c002/p004": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Lunch Break",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b006/c002/p005": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Built Holt Tough",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b006/c003/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Showing Off the New Car",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b006/c003/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "First Official Trip (Dinner)",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b006/c003/p003": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Narc Special",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b006/c003/p004": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Clinic Hand-Off",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b006/c003/p005": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Range of Motion",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b006/c004/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Difficult News",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b006/c004/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Final Phone Call",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b006/c005/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Turnpike Wonders",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b006/c005/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Mystic Stopover",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b006/c005/p003": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Newport Expressway",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b006/c005/p004": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Ghosts of Keystone Motors of Middletown",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b006/c005/p005": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A Colossal Good Distraction",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b006/c005/p006": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Jingle and the Mansions",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b007/c001/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A Rainy Saturday Session",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b007/c001/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The True Light",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b007/c001/p003": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Signal (1:30)",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b007/c002/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Rental Agreement",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b007/c002/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Embouchure Struggle",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b007/c002/p003": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The One-Month Trial",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b007/c002/p004": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Silver and Ownership",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b007/c002/p005": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Sterling Standard",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b008/c001/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "An Unseen Ally",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b008/c001/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "College and Elections Assembly",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b008/c001/p003": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A Grateful Introduction",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b008/c001/p004": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Cafeteria Connection, Contact Exchange, and a Vile Misinterpretation",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b008/c002/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "An Afternoon Visit and Gathering Clouds",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b008/c002/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "An Invitation in the Storm \u2013 And Stella's Call",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b008/c002/p003": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Weathering the Storm \u2013 A Best Friend's Comfort",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b008/c002/p004": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Morning Calm and Sisterly Smiles",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b008/c002/p005": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Saturday Respite and a Planned Weekend Stay",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b008/c002/p006": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A Sunday of Simple Comforts and Vintage Tech",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b008/c002/p007": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A Sunday Well Spent \u2013 Comforts, Chores, and Continued Connection",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b008/c002/p008": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A Guardian\u2019s Trust",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b008/c003/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A Quiet Evening Promised",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b008/c003/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Shift \u2013 After Stella Leaves",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b008/c003/p003": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Overload and Observation \u2013 The Decision Forms",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b008/c003/p004": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Call for Rescue",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b008/c003/p005": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Extraction and Stella's Quiet Wrath",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b008/c003/p006": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Drive Away & A Fitting Finale",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b008/c003/p007": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A Quiet Countdown, A Noisy Neighborhood",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b008/c004/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Calculus Tutoring",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b008/c004/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "An Unwanted Attempt",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b008/c004/p003": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Band Room Practice",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b008/c004/p004": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Mall Eats and Movie Anticipation",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b008/c004/p005": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Saturday Matinee and a Souring Mood",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b009/c001/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "All Aboard",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b009/c001/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Journey North",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b009/c001/p003": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Approaching Union Station",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b009/c001/p004": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The District Rail Gauntlet",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b009/c001/p005": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Home Base on the Hill",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b009/c001/p006": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "An Afternoon Among the Animals",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b009/c001/p007": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A Necessary Interlude",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b009/c001/p008": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "An Evening on the Town",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b009/c001/p009": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A Culinary Discovery",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b009/c001/p010": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A Sanctuary of Water",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b009/c001/p011": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A Fortress Assembles for the Night",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b009/c002/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Museum Hopping",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b009/c002/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Wonders of Flight and Space",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b009/c002/p003": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Rocket Burger Refuel",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b009/c002/p004": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Fortress Cracks",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b009/c002/p005": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A Fragile Promise",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b009/c002/p006": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A Walk Through Time",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b009/c002/p007": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A Taste of Stanstead",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b009/c002/p008": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A Fortress in the Storm",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b009/c002/p009": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Fortress, Reassembled",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b009/c003/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Practice Mission",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b009/c003/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Breakfast in Georgetown",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b009/c003/p003": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A Walk by the Water",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b009/c003/p004": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A Walk Among Giants",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b009/c003/p005": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Lunch on the Mall",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b009/c003/p006": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "An Afternoon on the Potomac",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b009/c003/p007": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "An Evening In",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b009/c003/p008": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A Sanctuary of Calm",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b009/c003/p009": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Journey Continues",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b009/c004/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A Layover in Philly",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b009/c004/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Cheesesteak Debate",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b009/c004/p003": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A Journey Through the Alleghenies",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b009/c004/p004": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Arrival in the Steel City",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b009/c004/p005": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A Room with a View (of Three Rivers)",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b009/c004/p006": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A Desperate Search",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b009/c004/p007": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A Day in the Steel City",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b009/c005/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Shattering",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b009/c005/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Long Ride Home",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b009/c005/p003": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Infinite Loop",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b009/c005/p004": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A Sanctuary in the Storm",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b009/c005/p005": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Long Night Begins",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b009/c005/p006": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Leo\u2019s Nightmare",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b009/c005/p007": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Morning After",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b009/c005/p008": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A Sanity of a Sponge Bath",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b009/c006/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Shadow on the Platform",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b010/c001/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A Grieving Start",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b010/c001/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "American Literature",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b010/c001/p003": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Separation",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b010/c001/p004": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "An Unexpected Addition",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b010/c001/p005": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The First Red Flag",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b010/c001/p006": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A Cautious Assessment",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b010/c001/p007": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Confronting Quantum",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b010/c001/p008": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A Cautious Assessment",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b010/c001/p009": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Ride Home",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b010/c001/p010": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A Long-Distance Lifeline",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b010/c002/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Tutor",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b010/c002/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Unveiling",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b010/c002/p003": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A Controlled Visit",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b010/c002/p004": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "An Unsettling Silence",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b010/c002/p005": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A Guardian's Shadow",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b010/c002/p006": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A Sleepless Resolve",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b010/c002/p007": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A Fragile Normalcy",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b010/c003/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Hijacked Plan",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b010/c003/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The College Pickup (Friday Afternoon)",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b010/c003/p003": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Drive and Arrival",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b010/c003/p004": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "An Uneasy Evening (Friday)",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b010/c003/p005": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Saturday Under Siege",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b010/c003/p006": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "MagnaByte Conflict (Saturday Afternoon)",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b010/c003/p007": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Printer Rage, Guardianship Questions, and a Forceful Kiss (Saturday Afternoon/Evening)",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b010/c003/p008": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Leftovers, Bus Schedules, and Locked Doors (Sunday Evening/Night)",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b010/c003/p009": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A Day Under Duress (Monday)",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b010/c003/p010": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Tuesday Morning Departure",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b010/c004/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Trip Proposal",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b010/c004/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Four Days on the Bus",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b010/c004/p003": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Doubts and Desperation",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b010/c004/p004": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Arrival in the Pacific Northwest",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b010/c004/p005": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "An Unwelcoming House",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b010/c004/p006": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Jet Lag, Pancakes, and a Fragile Plan",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b010/c004/p007": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Delores Forces Herself",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b010/c004/p008": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Breaking Point",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b010/c005/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Escape Through the Rain (Curbstone, 4 AM)",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b010/c005/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Carol Looks for Leo",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b010/c005/p003": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The TTY Lifeline",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b010/c005/p004": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Longest Hour",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b010/c005/p005": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Sanctuary in a Sterile Room",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b010/c005/p006": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The First Meal",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b010/c005/p007": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A Virtual Sanctuary",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b010/c005/p008": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Boarding Pass",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b010/c005/p009": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Airside Sanctuary",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b010/c005/p010": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Airside Mission \u2013 Clothing",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b010/c005/p011": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Restoring Dignity",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b010/c005/p012": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A Song of Homecoming",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b010/c005/p013": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Storm Before the Calm",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b010/c005/p014": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Journey Home Begins",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b010/c005/p015": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A Longing for Simplicity",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b010/c005/p016": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A Midway Dash",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b010/c005/p017": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Arrival at ORF & Reunion",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b010/c005/p018": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Checking In, Cleaning Up (For Now)",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b010/c005/p019": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Contaminated Sanctuary",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b010/c005/p020": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Later That Night",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b011/c001/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Safe Harbor, Stark Reality",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b011/c001/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Restoring Care \u2013 The Bath",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b011/c001/p003": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Dignity Restored, Needs Assessed",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b011/c001/p004": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Cereal, Milk, and Cruelty Revealed",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b011/c001/p005": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "MagnaByte Sanctuary and Digital Dysentery",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b011/c001/p006": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Grandparents Relief",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b011/c001/p007": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A Kitchen Filled with Warmth",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b011/c001/p008": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Phone Call",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b011/c001/p009": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Reckoning and Reunion",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b011/c001/p010": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Feast of Homecoming",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b011/c001/p011": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Evening Rituals and Secure Sleep",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b011/c002/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A Change of Plans",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b011/c002/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A Gentle Waking",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b011/c002/p003": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Sanctuary of Breakfast",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b011/c002/p004": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A Mission of Restoration",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b011/c002/p005": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A Voice of His Own",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b011/c002/p006": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A Mission of Agency",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b011/c002/p007": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Reclaiming a Sanctuary",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b011/c002/p008": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Designing a New Sanctuary",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b011/c002/p009": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Victory Lunch",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b011/c002/p010": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Sanctuary Rebuilt",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b011/c002/p011": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The First Rest",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b011/c002/p012": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A Boundary Drawn",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b011/c002/p013": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A New Path Forward",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b011/c002/p014": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Fortress Goes to College",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b011/c002/p015": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The First Peaceful Sleep",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b011/c003/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The First Morning",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b011/c003/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Designing the Future",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b011/c003/p003": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A Palette of Possibilities \ud83c\udfa8",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b011/c003/p004": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The First Coat of Freedom",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b011/c003/p005": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Chemical Fire",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b011/c003/p006": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Fortress Assembles for the Night",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b011/c003/p007": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Kent?",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b011/c003/p008": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Quiet Dawn",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b011/c003/p009": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A Breakfast of Comfort",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b011/c003/p010": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Final Coat",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b011/c003/p011": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Assembling the Case",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b011/c004/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Assembling the Fortress",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b011/c004/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Setting the Wheels in Motion",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b011/c004/p003": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Official Cooperation",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b011/c004/p004": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Ordering a New Voice",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b011/c005/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A New Language of Home",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b011/c005/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Fortress Goes to the Mall",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b011/c005/p003": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A New Talker!",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b011/c005/p004": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A New Language of Home",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b011/c005/p005": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Operation: Conquer Quantum",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b011/c005/p006": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Poutine Logistics and a Fortress in French Class",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b011/c005/p007": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A Tale of Two Frances",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b011/c005/p008": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Soft Interview",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b011/c005/p009": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Sacres and Seafood",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b011/c005/p010": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Mon Chum, Ma Blonde",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b011/c005/p011": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A Grandparent's Surprise",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b011/c005/p012": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Final Secret",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b011/c005/p013": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Grand Old Lady on the Hill",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b011/c005/p014": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Fortress Suite",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b011/c005/p015": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A Sanctuary of Pampering",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b011/c005/p016": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A Baptism of Care",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b011/c005/p017": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Night Before the R\u00e9veillon",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b011/c005/p018": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A Tradition Adapted",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b011/c005/p019": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Fortress Expanded",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b011/c005/p020": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Prime-Time R\u00e9veillon",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b011/c005/p021": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Comfort of Home",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b011/c006/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Morning After",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b011/c006/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "An American Christmas",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b011/c006/p003": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "An American Christmas Feast",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b011/c006/p004": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A Moment to Regulate",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b011/c006/p005": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A Fortress of Love",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b011/c006/p006": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "An Impromptu Recital",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b011/c006/p007": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Long Goodbye",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b011/c006/p008": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Holiday Afterglow",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b011/c007/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A Day of Quiet",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b011/c007/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A House Full of Joy",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b011/c007/p003": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Quiet After",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b011/c007/p004": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Water and Trust",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b011/c007/p005": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Cocoon of Safety",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b011/c007/p006": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A Nightmare in the Safe Harbor",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b011/c008/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Day in Court",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b012/c001/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Judge's Order",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b012/c001/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Longest Morning",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b012/c001/p003": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The New Ms. Walker Porter",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b012/c001/p004": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A Toast at The Tidewater Grill",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b012/c001/p005": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Secret Melody",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b012/c001/p006": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "An Impossible Thought",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b012/c002/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A Test and a Toast",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b012/c002/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Separation",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b012/c002/p003": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Two Rooms",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b012/c002/p004": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Procession",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b012/c002/p005": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A Declaration of Commitment",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b012/c002/p006": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The First Dance",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b012/c002/p007": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A Montage of Dances",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b012/c002/p008": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Toasts",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b012/c002/p009": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Feast",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b012/c002/p010": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Cake",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b012/c002/p011": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Send-Off",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b012/c002/p012": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Decompression",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b013/c001/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Weapon",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b013/c001/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Green and Gold",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b013/c001/p003": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Shibboleth",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b013/c001/p004": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Tape",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b013/c001/p005": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Verdict",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b013/c001/p006": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Northward Compass",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b013/c001/p007": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Long Twilight",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b013/c002/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Iron Link",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b013/c002/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Hospitality Standard",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b013/c002/p003": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Concourse Encounter",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b013/c002/p004": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Victory Lap & The Blueprint",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b013/c002/p005": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Subterranean City",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b013/c002/p006": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Silver Standard",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b013/c002/p007": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Adrenaline Crash",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b013/c002/p008": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Foundation",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b013/c002/p009": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Last Train Out",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b013/c002/p010": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Pulse of the City",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b013/c002/p011": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Cash Hammer",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b013/c002/p012": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Paper Fortress",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b013/c002/p013": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Lobster Toast",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b013/c003/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Orange Army",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b013/c003/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Subterranean City",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b013/c003/p003": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Quiet Harbor",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b013/c003/p004": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Blue Line Run",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b013/c003/p005": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Restoration",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b013/c003/p006": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Closing Table",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b013/c003/p007": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Final Look",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b013/c003/p008": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Iron Record",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b013/c003/p009": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Engine Stops",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b013/c003/p010": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Quiet Departure",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b013/c003/p011": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Vessel",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b013/c003/p012": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Final Passenger",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b013/c004/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Transfer of Power",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b013/c004/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The War Room",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b013/c004/p003": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Permission Slip",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b013/c004/p004": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Heavy Lift",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b013/c004/p005": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Final Crossing",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b013/c004/p006": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The ARTS-Box",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b013/c005/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Landing",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b013/c005/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Home Court",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b013/c005/p003": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Traffic Report",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b013/c005/p004": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Ghost Layout",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b013/c005/p005": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Capital Request",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b013/c005/p006": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Ghost in the Deed",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b013/c005/p007": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Twin Frequency",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b013/c005/p008": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Wall Test",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b013/c005/p009": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Warning Signs",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b013/c006/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Ticket Kiosk",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b013/c006/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Commute to Commerce",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b013/c006/p003": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Showroom",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b013/c006/p004": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Blue Planet",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b013/c006/p005": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Crossing and the Calm",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b013/c006/p006": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Shield",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b013/c006/p007": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Supply Run",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b013/c006/p008": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Return of the Fleet",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b013/c007/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Official Stamp",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b013/c007/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Eastern Townships Connection",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b013/c007/p003": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Principal Chair",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b013/c007/p004": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Lock Test",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b013/c007/p005": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Master Schedule",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b013/c007/p006": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Bill",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b013/c007/p007": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Textbook Run",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b013/c007/p008": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Last Mile Problem",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b013/c008/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Ferry and the Fortress",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b013/c008/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Gilded Age Tour",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b013/c008/p003": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Express Return",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b013/c008/p004": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Calm Before the Herd",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b013/c008/p005": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Clean Break",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b013/c008/p006": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Night Watch",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b014/c001/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The 05:30 Alarm",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b014/c001/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Rainy Day Express",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b014/c001/p003": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Split Screen",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b014/c001/p004": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Vetting Process",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b014/c001/p005": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Dialect Shock",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b014/c001/p006": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Machine Shop (The M.U.L.E. Begins)",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b014/c001/p007": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Audition",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b014/c001/p008": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Library Rendezvous",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b014/c001/p009": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Safe Harbor",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b014/c001/p010": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Missing Frequency",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b014/c001/p011": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Glass Wall",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b014/c002/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Green Room",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b014/c002/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Accessible Box",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b014/c002/p003": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Vivaldi",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b014/c002/p004": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Snow Convoy",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b014/c002/p005": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Sanctuary Protocol",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b014/c002/p006": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Jurisdiction Trap",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b014/c002/p007": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Station Assault",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b014/c002/p008": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Flight Risk",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b014/c002/p009": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Identity Crisis",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b014/c002/p010": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Identity Protocol",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b014/c002/p011": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Plastic Anchor",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b014/c002/p012": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Ghost Tax",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/luna-leo/b014/c002/p013": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Maiden Voyage",
-        "theme": "raggiesoft-books"
+        "theme": ""
     }
 }

@@ -1,7 +1,7 @@
 {
     "common": {
         "site": "raggiesoft-books",
-        "theme": "raggiesoft-books",
+        "theme": "",
         "siteName": "Ocean View Archives",
         "isSequential": true,
         "headerMenu": "raggiesoft-books/header-books",
@@ -14,2166 +14,2166 @@
     "/raggiesoft-books/books/alex-chloe": {
         "view": "pages/raggiesoft-books/books/series",
         "title": "Alex & Chlo\u00e9",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b001/c001/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The First Meeting",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b001/c002/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The First Day of Kindergarten",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b001/c002/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Afternoon Block",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b001/c002/p003": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Eye of the Storm",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b001/c002/p004": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Guardian and the Architect",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b001/c002/p005": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Nickname",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b001/c002/p006": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A Quiet Place in the Chaos",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b001/c002/p007": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Grand Prix",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b001/c003/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Dare and The Setup",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b001/c003/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Senior Week",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b001/c003/p003": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Aftermath of a Movie",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b001/c003/p004": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Antidote",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b001/c003/p005": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Fizzle",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b001/c003/p006": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A Better Kind of Friendship",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b001/c003/p007": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Aftermath at School",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b001/c004/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A Quiet Place in the Chaos",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b001/c004/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Resonance Cascade",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b001/c004/p003": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Codex",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b001/c004/p004": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Declaration",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b001/c004/p005": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Upgrade",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b001/c004/p006": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Training Montage & The Sign",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b002/c001/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "An Instant Connection",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b002/c001/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Boardwalk Blasts & Budding Bonds",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b002/c001/p003": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Sandwiches and Shared Worlds",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b002/c001/p004": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Sweetness of a Hug",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b002/c001/p005": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A Day at Fairlawn and Shared Stories",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b002/c001/p006": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The First Boundary",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b002/c001/p007": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Reunion",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b002/c001/p008": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A Ramp of Welcome",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b002/c001/p009": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Electives, Echoes of French, and an Informal Tutor",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b002/c001/p010": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Architect of The Codex",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b002/c001/p011": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The First Sleepover \u2013 Labor Day Weekend",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b002/c001/p012": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Morning After \u2013 A New Normal",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b002/c001/p013": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Bedtime and Beach Dreams",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b002/c001/p014": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Beach Day Bound \u2013 The Last Day of Freedom",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b002/c001/p015": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Oceanfront Wonders \u2013 A Day of Firsts",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b002/c001/p016": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A Drawer of Belonging",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b003/c001/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Unofficial Orientation",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b003/c001/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Bonjour, Madame Beaumont",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b003/c001/p003": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Infamous Game and Instant Justice",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b003/c001/p004": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "An Aromatic Apprenticeship",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b003/c001/p005": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Lingering Aroma of Justice",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b003/c001/p006": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Delinquent, The Dumpsters, and The Deep Fryer's Due",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b003/c001/p007": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A Humble Request and a Changing Tide",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b003/c001/p008": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A Different Kind of \"The Talk\"",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b003/c001/p009": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A Quiet Understanding \u2013 Their Own Conversation",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b003/c001/p010": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "An Interrupted Lesson and an Inevitable Summons",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b003/c001/p011": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Cafeteria Justice, Multilingual Edition **",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b003/c001/p012": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Chapter 2: A First Winter",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b003/c001/p013": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A Canadian Word",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b003/c001/p014": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A New Tradition",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b003/c001/p015": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Christmas Eve on Lisa Court",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b003/c001/p016": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A Quiet Ritual",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b003/c001/p017": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A Christmas of Firsts",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b003/c001/p018": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A Cross-Border Introduction",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b003/c002/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Gaelic Gambit and the Grease Trap Lament",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b003/c002/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Birthday Twins",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b003/c002/p003": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A Party for Two",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b003/c002/p004": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A Miller-Mason Birthday Extravaganza",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b003/c002/p005": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A Change of Scenery",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b003/c002/p006": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The First Step of the Adventure",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b003/c003/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Adventure Becomes Real",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b003/c003/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Night Before",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b003/c003/p003": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Journey North",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b003/c003/p004": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A Familiar Crossing",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b003/c003/p005": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A Town Without Walls",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b003/c003/p006": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "One Street, Two Countries",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b003/c003/p007": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A Day of Two Nations",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b003/c003/p008": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Montr\u00e9al Rule",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b003/c003/p009": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Montr\u00e9al",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b003/c003/p010": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Return Journey",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b003/c003/p011": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A Lesson in Chocolate and Law",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b003/c003/p012": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Forbidden Fruit",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b003/c004/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A Qu\u00e9b\u00e9cois Welcome",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b003/c004/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Reunion \u2013 Food, Family, and French",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b003/c004/p003": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Character Moments and Interactions",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b003/c004/p004": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Last Farewell",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b004/c001/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The A/B Block",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b004/c001/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Calendar Keeper",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b004/c002/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A Simple Cough",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b004/c002/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Nurse's Verdict",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b004/c002/p003": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Hospital",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b004/c002/p004": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A Turn for the Worse",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b004/c002/p005": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Anchor",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b004/c002/p006": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Touch and Go",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b004/c002/p007": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Road Back",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b004/c002/p008": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Alex\u2019s Recovery",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b004/c003/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Re-establishing a Rhythm",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b004/c003/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A New Low",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b004/c004/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Blast Radius",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b004/c004/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Cold War",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b004/c004/p003": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Reconciliation",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b004/c004/p004": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Unbreakable Bond",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b004/c005/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Lab Partner",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b004/c005/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Study Session",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b004/c005/p003": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Invitation",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b004/c005/p004": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Answer",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b005/c001/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A Compatibility Crisis",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b005/c001/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Justification",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b005/c001/p003": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Unboxing",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b005/c001/p004": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A Lesson in Virtualization",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b005/c002/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Parents Make Plans",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b005/c002/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Handover",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b005/c002/p003": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A Quiet Domesticity",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b005/c002/p004": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "MEGAN!!!! (The Chaperone Arrives)",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b005/c002/p005": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Departure and The Reflection",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b005/c002/p006": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Return",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b006/c001/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Cafeteria Entrance & Cafeteria \u2013 First Day, Fall 2002",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b006/c001/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The First Separation",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b006/c001/p003": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Main Lobby & Front Exit \u2013 End of First Day, Fall 2002",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b006/c001/p004": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "By the Dumpsters \u2013 First Day of School, Fall 2002, 2:13 PM",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b006/c001/p005": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A Line too Far (for Josh Riley)",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b006/c002/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The TADA Heard 'Round the Lab",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b006/c002/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Missing Semicolon",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b006/c003/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The \"What's Next?\" Meeting",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b006/c004/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A Quiet Hurt",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b006/c004/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A Simple Offer",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b006/c005/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Accident",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b006/c005/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The New Reality",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b006/c005/p003": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A New Kind of Teamwork",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b006/c005/p004": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Private Struggles and Quiet Dignity",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b006/c005/p005": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A Deeper Understanding",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b006/c006/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Decision",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b006/c006/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Sabotage",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b006/c006/p003": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The People's Vote",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b006/c006/p004": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Real Victory",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b007/c001/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Exploring Seattle and Lynnwood",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b007/c001/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A Special Evening",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b007/c001/p003": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Afterglow",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b007/c001/p004": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A New Threshold of Trust",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b007/c002/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Two Separate Worlds",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b007/c002/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Soundtrack to a Heartbreak",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b007/c002/p003": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A Night in an Empty Room",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b007/c002/p004": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The First Lifeline (Las Vegas)",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b007/c002/p005": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A Voice Across the Continent (Seattle)",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b007/c002/p006": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Home Safe (Lynnwood)",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b008/c001/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Student Development 101",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b008/c001/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A Familiar Face",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b008/c001/p003": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Coffee, and an Open Wound",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b008/c001/p004": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Promise",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b008/c001/p005": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Moving Fast",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b008/c001/p006": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "How I Met Her Mother",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b008/c001/p007": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A Lifeline Offered",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b008/c001/p008": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Presentation and the Aftermath",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b008/c002/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A Doubt Starts to Form",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b008/c002/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Refusal",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b008/c002/p003": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Call for Help",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b008/c002/p004": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Confrontation",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b008/c002/p005": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A Debrief in the Dark",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b008/c002/p006": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A Debrief at Lisa Court",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b008/c002/p007": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Morning Debrief",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b008/c002/p008": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Love Bomb",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b008/c003/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Video Call Interruption",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b008/c003/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A Dinner of Dissent",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b008/c003/p003": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Slow Encroachment",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b008/c003/p004": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "An Unstable Connection",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b008/c003/p005": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A Lifeline from Lynnwood",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b008/c003/p006": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Vera's \"Rescue\" Mission",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b008/c003/p007": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A Secret Rebellion",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b008/c004/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Cavalry Arrives",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b008/c004/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A Return to Sanctuary",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b008/c004/p003": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A Safe Harbor",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b008/c004/p004": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A Taste of Normalcy",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b008/c004/p005": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A Night of Healing",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b008/c004/p006": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Lifeline",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b008/c004/p007": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Bedtime Routine",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b008/c004/p008": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A Safe Place to Land",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b008/c004/p009": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "An Early Start",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b008/c004/p010": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Opening Remarks",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b008/c004/p011": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Campus Tour",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b008/c004/p012": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Residential Tour",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b008/c004/p013": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Thirteenth Floor",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b008/c004/p014": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Famous Fried Chicken",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b008/c004/p015": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Practicing for the Future",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b008/c004/p016": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Homework Sanctuary",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b008/c004/p017": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Tender Shack",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b008/c004/p018": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Second Video Call",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b008/c004/p019": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Starship Sentinels",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b008/c004/p020": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Second Evening of Care",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b008/c004/p021": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A Morning of Trust",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b008/c004/p022": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Heart-to-Heart",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b008/c004/p023": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Aftermath",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b008/c005/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Vacuum",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b008/c005/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Thanksgiving Lie",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b008/c005/p003": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Across the Country on a Pathfinder",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b008/c005/p004": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Welcome to Hell, Welcome to Kent",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b008/c006/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Desperate Call",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b008/c006/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Race to Kent",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b008/c006/p003": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Confrontation and Choice",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b008/c006/p004": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Drive to Lynnwood \u2013 Safety and Silence",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b008/c007/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "An Urgent Call Home",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b008/c007/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "An Emergency Deep Cleaning \u2013 Restoring Dignity",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b008/c007/p003": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "First Meal in Sanctuary \u2013 Simple Comforts",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b008/c007/p004": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A Healing Nap and a New Plan",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b008/c007/p005": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A Quiet Thanksgiving",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b008/c008/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A Quiet Conversation",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b008/c008/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Clinic Visit and a Clean Slate",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b008/c008/p003": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Resuming Intimacy \u2013 The Afterglow Revisited",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b008/c008/p004": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Afterglow \u2013 A New Dawn, A Reclaimed Voice",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b008/c008/p005": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Weight of Certainty",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b008/c008/p006": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Homeward Bound for Graduation",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b008/c009/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Cavalry Arrives",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b008/c009/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A Gentle Deconstruction",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b008/c009/p003": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Shipping a Life",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b008/c009/p004": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Flight Home",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b008/c009/p005": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Sanctuary",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b008/c009/p006": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Magna Cum Laude",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b008/c009/p007": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Three-Way Escape Hatch",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b008/c010/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Insurance Dilemma and a Loving Proposition",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b008/c010/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Doctor's Verdict",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b008/c010/p003": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A New Foundation",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b008/c010/p004": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A New Normal",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b008/c010/p005": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A Canadian Landing",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b008/c010/p006": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A Day of Two Cultures",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b008/c010/p007": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Le R\u00e9veillon on Lisa Court",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b008/c010/p008": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Aftermath of the Feast",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b008/c010/p009": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A Cross-Border Christmas",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b008/c010/p010": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A Gift of Togetherness",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b008/c010/p011": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The American Christmas and a New Allegiance",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b008/c010/p012": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A Rivalry is Born",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b008/c010/p013": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A Quiet \"I Do\" for Practical Love",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b008/c010/p014": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A Grocery Store Guardian",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b008/c010/p015": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Confrontation in ValueMart",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b008/c010/p016": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Aftermath",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b008/c010/p017": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A Shared Secret",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b009/c001/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Gearing Up",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b009/c001/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A New Sanctuary",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b009/c002/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Empty Seat",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b009/c002/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Confrontation on Lisa Court",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b009/c002/p003": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Final, Desperate Call",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b009/c002/p004": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Letter",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b009/c003/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A Family's Resolve",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b009/c003/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Demand",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b009/c003/p003": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Truth in a Letter",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b009/c003/p004": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Unraveling and The Aftermath",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b009/c003/p005": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A New Beginning",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b009/c003/p006": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Vera\u2019s Reckoning \u2013 A Mother's Fury, A Daughter's Ruin",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b009/c003/p007": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Un Avenir Sans Fardeau (A Future Unburdened)",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b009/c003/p008": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Building the Sanctuary",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b009/c004/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Morning Commute",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b009/c004/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A Different First Day",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b009/c004/p003": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Conversation",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b009/c004/p004": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "An Investment in the Future",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b009/c004/p005": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Building a Foundation",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b009/c004/p006": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Breaking Point",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b009/c005/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Excitement and the Learning Curve",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b009/c005/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Reality Check",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b009/c005/p003": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Brush with Danger",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b009/c005/p004": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Discovery",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b009/c005/p005": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Project Freedom",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b009/c005/p006": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Shopping for a Van",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b009/c006/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A Quiet Day Trip",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b009/c006/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Family Investment",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b009/c006/p003": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Domestic Details",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b009/c006/p004": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A Return to the Water",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b009/c006/p005": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Quiet Before the Move",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b009/c006/p006": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Three Musketeers",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b009/c007/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Keys",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b009/c007/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The First Look",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b009/c007/p003": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Big Move",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b009/c007/p004": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The First Night",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b009/c007/p005": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A New (Old) Trusted Friend",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b009/c008/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A Marathon, Not a Sprint",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b009/c008/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Technological Bandages",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b009/c008/p003": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Freedom Arrives",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b009/c008/p004": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Expected Rejection",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b009/c008/p005": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Fight Begins",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b009/c008/p006": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A Fragile Sanctuary",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b009/c008/p007": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Aftermath",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b009/c008/p008": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Journey Home",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b009/c008/p009": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Approval",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b010/c001/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Delivery Day",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b010/c001/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The First Morning",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b010/c001/p003": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The First Movie Night",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b010/c001/p004": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A New Day on Campus",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b010/c002/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Power Couple of Campus",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b010/c002/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "An Unwavering Bond",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b010/c002/p003": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A Healthy Friendship",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b010/c002/p004": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Final Push",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b010/c002/p005": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Graduation Day",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b010/c003/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Launch",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b010/c003/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Journey North",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b010/c003/p003": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Bienvenue au Qu\u00e9bec (Welcome to Qu\u00e9bec)",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b010/c003/p004": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "An Aunt's Welcome and a Modern Warning",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b010/c003/p005": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "An Aunt's Advice and a New Itinerary",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b010/c003/p006": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A Sweet Discovery",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b010/c003/p007": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A Walk Through a Changed Town",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b010/c003/p008": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "One Last Line to Cross",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b010/c003/p009": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A Homecoming of the Heart",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b010/c003/p010": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Navigating the City",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b010/c003/p011": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Tensions at the Deli",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b010/c003/p012": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A Quiet Day of Decompression",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b010/c003/p013": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A Family Farewell",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b010/c003/p014": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "One Last Night in Canada",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b010/c003/p015": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Echoes on the Line",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b010/c003/p016": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A Taste of Vermont",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b010/c003/p017": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A New Dream on the Boardwalk",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b010/c003/p018": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Long Road Home",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b010/c004/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Operation: Pacific Northwest",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b010/c004/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Quantum Opportunity",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b010/c004/p003": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Great Commute Debate",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b010/c004/p004": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Final Summit",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b010/c004/p005": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Confirmation",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b010/c004/p006": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Last Swim",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b010/c004/p007": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Weathering the Storm",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b011/c001/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Launch",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b011/c001/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Open Road",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b011/c001/p003": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Washington",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b011/c001/p004": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Seattle",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b011/c001/p005": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Home",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b011/c001/p006": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Unpacking",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b011/c001/p007": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The First Adventure",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b011/c001/p008": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A Day in the City",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b011/c001/p009": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Welcome Home",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b011/c002/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Micro-Test",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b011/c002/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Setup (A Week Later)",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b011/c002/p003": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Inhabitants",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b011/c002/p004": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A Quiet Success",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b011/c003/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Weekend Warriors",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b011/c003/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Beagle and the Blueprint",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b011/c003/p003": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The First Test and a New Role",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b011/c003/p004": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Accessibility Specialist",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b011/c003/p005": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Non-Profit Architects",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b011/c003/p006": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Turning Point",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b011/c003/p007": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Long Road to a Dream",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b013/c001/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Matchup is Set",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b013/c001/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "La Taverne des Voyageurs",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b013/c001/p003": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Spoils of Victory",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b013/c001/p004": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Uniform of Defeat",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b013/c001/p005": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Opening a Cross-Border Life",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b013/c001/p006": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Preclearance Predicament",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b013/c002/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Accident",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b013/c002/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A Different Kind of Hospital Visit",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b013/c002/p003": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Long Road Ahead",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b013/c002/p004": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Setback One - The Infection",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b013/c002/p005": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Setback Two - The Catastrophe",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b013/c002/p006": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Depths of Despair",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b013/c002/p007": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Slow Path to Healing",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b013/c002/p008": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Hospital Revelation",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b014/c001/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Blueprint of Home",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b014/c001/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A Border of Our Own",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b014/c002/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Peace Arch Crossing",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b014/c002/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Peak of the City",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b015/c001/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Proposition",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b015/c001/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Family Announcement",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b015/c002/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Boots on the Ground",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b015/c002/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Attire",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b015/c002/p003": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Writing the Vows",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b015/c002/p004": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Vow Script",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b015/c002/p005": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Birth of an Idea",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b015/c002/p006": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A Prototype is Born",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b015/c002/p007": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A Brand is Born",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b015/c002/p008": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Art Director",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b015/c002/p009": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Boots on the Ground Report",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b015/c002/p010": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Point of No Return",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b015/c003/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Journey East",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b015/c003/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Welcome to the Virginia Base Camp",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b015/c003/p003": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A Day in the Virginia Base Camp",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b015/c003/p004": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Journey North",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b015/c004/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Les Pr\u00e9paratifs (Getting Ready)",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b015/c004/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "La C\u00e9r\u00e9monie (The Ceremony)",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b015/c004/p003": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "La R\u00e9ception (The Reception)",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b015/c004/p004": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "La Premi\u00e8re Danse (The First Dance)",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b015/c004/p005": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Les Danses d'Honneur (The Dances of Honor)",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b015/c004/p006": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "L'Unit\u00e9 Ins\u00e9parable (The Unbreakable Unit)",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b015/c004/p007": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Les Discours (The Toasts)",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b015/c004/p008": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "La Coupe du G\u00e2teau (The Cutting of the Cake)",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b015/c004/p009": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "La Poutine C\u00e9l\u00e9bratoire (The Celebratory Poutine)",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b015/c004/p010": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "La Derni\u00e8re Danse (The Last Dance)",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b015/c004/p011": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "La Fin de la Soir\u00e9e (The End of the Night)",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b015/c004/p012": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Bonus Scene: A View from Portsmouth",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b015/c005/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Morning After",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b015/c005/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A Taste of the Townships",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b015/c005/p003": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Promise to Return",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b015/c005/p004": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Honeymoon",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b015/c005/p005": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Departure",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b016/c001/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Boston Showdown",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b016/c001/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Boston Victory Parade",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b016/c001/p003": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Long Drive of Shame (The Next Day)",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b016/c001/p004": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Breakfast with the Enemy",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b017/c001/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The World Shuts Down",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b017/c001/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Race to the Border",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b017/c001/p003": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Stranded in Vermont",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b017/c001/p004": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Airport and the Call",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b017/c001/p005": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Rescue Mission",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b017/c001/p006": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A Virginia Haven",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b017/c001/p007": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "An Unexpected Family Lockdown",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b017/c001/p008": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Cross-Country Problem",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b017/c001/p009": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Long Road Home",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b017/c001/p010": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A Birthday in Lockdown",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b017/c001/p011": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A Full House",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b017/c002/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The First Sign",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b017/c002/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Diagnosis",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b017/c002/p003": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Lockdown Within the Lockdown",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b017/c002/p004": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Fever Breaks",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b017/c003/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The New Normal",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b017/c003/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The First Venture Out",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b018/c001/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Leap of Faith",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b018/c001/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Grant",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b018/c002/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A Much-Needed Breather",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b018/c002/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Return",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b018/c002/p003": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Boxing Day Mission",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b018/c002/p004": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Architect Returns",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b018/c002/p005": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A Mission Solidified",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b018/c002/p006": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Return to Lynnwood",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b018/c003/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Call and the Land",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b018/c003/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "From Blueprint to Reality",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b018/c004/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The 20-Year Reunion",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b018/c004/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A New Home Base",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b018/c004/p003": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Debriefing",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b018/c004/p004": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Next Platform",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b018/c004/p005": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Flight Home",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b018/c005/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A Cross-Platform Future",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b018/c005/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The First Prototype",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b018/c006/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A Montage of Progress",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b018/c006/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The First Enterprise",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b018/c006/p003": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Acceleration",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b018/c006/p004": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A Living Building",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b018/c006/p005": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Physical Toll",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b018/c006/p006": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A New Horizon",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b018/c006/p007": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Rejection",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b018/c006/p008": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Rejection Letter",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b018/c007/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "An Unexpected Encounter",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b018/c007/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A Family Reunited, A Tour Begins",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b018/c007/p003": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Directors\u2019 Work",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b019/c001/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A Quiet Question",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b020/c001/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A Conscious Goodbye",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b020/c001/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Last Wishes",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b020/c001/p003": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Last Goodbye",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b020/c001/p004": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A Promise Kept",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b020/c001/p005": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Last Guardian",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/alex-chloe/b020/c001/p006": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A Service for Three",
-        "theme": "raggiesoft-books"
+        "theme": ""
     }
 }

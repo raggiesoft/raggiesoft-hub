@@ -1,7 +1,7 @@
 {
     "common": {
         "site": "raggiesoft-books",
-        "theme": "raggiesoft-books",
+        "theme": "",
         "siteName": "Ocean View Archives",
         "isSequential": true,
         "headerMenu": "raggiesoft-books/header-books",
@@ -14,6 +14,6 @@
     "/raggiesoft-books/books/samantha": {
         "view": "pages/raggiesoft-books/books/series",
         "title": "samantha",
-        "theme": "raggiesoft-books"
+        "theme": ""
     }
 }

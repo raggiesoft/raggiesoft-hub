@@ -1,7 +1,7 @@
 {
     "common": {
         "site": "raggiesoft-books",
-        "theme": "raggiesoft-books",
+        "theme": "",
         "siteName": "Ocean View Archives",
         "isSequential": true,
         "headerMenu": "raggiesoft-books/header-books",
@@ -14,996 +14,996 @@
     "/raggiesoft-books/books/nichole": {
         "view": "pages/raggiesoft-books/books/series",
         "title": "Nichole",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b001/c001/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Bachelor Pad (The Lab)",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b001/c001/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Night Watch",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b001/c001/p003": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Pitch",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b001/c001/p004": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Circuit Barn",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b001/c001/p005": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Island Tour",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b001/c001/p006": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Park Summit",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b001/c001/p007": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Quiet Convoy",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b001/c001/p008": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "BayFront Creamery",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b001/c001/p009": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Bennett Beacon",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b001/c002/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Origin Story: Project Alpha",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b002/c001/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Curb Trap",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b002/c002/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Arrival at Morrison Middle School",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b002/c003/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Fire Alarm",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b002/c003/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Call",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b002/c003/p003": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Federal Hammer Date: November 12, 1996 Time: 3:45 PM Location: 1850 Delaney Street, Virginia Beach",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b002/c003/p004": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Third Wheel",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b002/c003/p005": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Architect and the Laborer",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b003/c001/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The 5 AM Alarm",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b003/c001/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The War Room (Breakfast)",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b003/c001/p003": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Soft Trap",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b003/c001/p004": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Reckoning",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b003/c001/p005": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Escort",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b003/c001/p006": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Return",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b003/c001/p007": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Longest Hour",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b003/c001/p008": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Hand-Off",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b003/c002/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Area of Rescue",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b003/c002/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Descent",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b003/c002/p003": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Bus Loop",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b003/c002/p004": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Stand",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b003/c002/p005": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Long Hour",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b003/c002/p006": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The All Clear",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b003/c002/p007": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Return",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b004/c001/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Transitioning Nichole\u2019s IEP",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b004/c001/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Poverty Trap",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b004/c001/p003": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Offer",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b004/c002/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The First Shift",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b004/c002/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Certification",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b004/c002/p003": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Maintenance Crew",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b005/c001/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Breach",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b005/c001/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Empty Chair",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b005/c001/p003": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Search",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b005/c001/p004": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Promise",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b005/c002/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Damage Control",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b005/c002/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Vow",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b005/c002/p003": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The War Room",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b006/c001/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The \"Free\" Laptop Trap",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b006/c001/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Commuter Special",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b006/c002/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Valley of Hope",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b006/c002/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Fortress",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b006/c002/p003": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Intake",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b006/c002/p004": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Cage",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b006/c002/p005": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Barracks",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b006/c002/p006": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Rec Hall",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b006/c002/p007": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Escape",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b006/c002/p008": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Intersection",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b006/c002/p009": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Safe House",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b006/c002/p010": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Pasture",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b006/c002/p011": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The War Council",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b006/c002/p012": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Nest",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b006/c002/p013": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Night Watch",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b006/c002/p014": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Morning Report",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b006/c002/p015": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Pivot",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b006/c003/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Thirteen-Hour Problem",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b006/c003/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Home Field Advantage",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b006/c003/p003": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Roll Call",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b006/c003/p004": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Tower of Words",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b006/c003/p005": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Sanctuary",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b006/c003/p006": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Life Sciences Hub",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b006/c003/p007": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Magic Carpet",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b006/c003/p008": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Hub",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b006/c003/p009": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Dealbreaker",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b006/c003/p010": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Retreat",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b006/c004/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Peninsula Run",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b006/c004/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Delaware Trap",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b006/c004/p003": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The New Jersey Layover",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b006/c004/p004": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Machine at Rest",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b006/c004/p005": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Hopeful Morning",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b006/c005/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Green Mountain Haul",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b006/c005/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Putney College Open House",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b006/c005/p003": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Drive Back",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b006/c005/p004": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Fuel Stop",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b006/c006/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The New Jersey Pivot",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b006/c006/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Juggernaut",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b006/c006/p003": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Diner Debrief",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b006/c006/p004": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Ocean State Option",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b006/c006/p005": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Ocean State Arrival",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b006/c007/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Holy Cow",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b006/c007/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Gateway Connection",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b006/c007/p003": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Sea Gate",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b006/c007/p004": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Bull Run",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b006/c007/p005": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Braxton Link",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b006/c007/p006": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Library Commons",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b006/c007/p007": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Debrief",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b006/c007/p008": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Upgrade",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b006/c008/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Disassembly Date: July 8, 2003 Time: 6:30 PM Location: 1850 Delaney Street, Virginia Beach, Virginia",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b006/c008/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Portsmouth Project",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b006/c008/p003": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Fortress on West Main",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b006/c008/p004": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Departure",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b006/c008/p005": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Visitor",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b006/c008/p006": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Hydrostatic Lock",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b006/c008/p007": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Milestone Payment",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b006/c008/p008": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Fortress Blueprint",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b006/c008/p009": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Credential Hunt",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b006/c009/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Commute",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b006/c009/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Concourse Connection",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b006/c009/p003": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Call of the Bull",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b006/c009/p004": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Mole Lifestyle",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b006/c009/p005": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Commuter Waiver",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b006/c009/p006": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Anti-Sales Pitch",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b006/c009/p007": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Refueling the Machine",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b006/c009/p008": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Bull Run",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b006/c009/p009": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Credential Check",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b006/c009/p010": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Detour and The Grid",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b006/c009/p011": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Debrief",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b007/c001/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Dual-Grid Dilemma",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b007/c001/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Medical Handover",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b007/c001/p003": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Christmas Compiler",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b007/c001/p004": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Winter Test",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b007/c001/p005": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Grid Returns",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b007/c001/p006": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Long Goodbye",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b007/c001/p007": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Silent Investor",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b007/c001/p008": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Final Transfer",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b007/c002/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Intake",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b007/c002/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Application",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b007/c002/p003": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Hardship Loophole",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b007/c002/p004": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Liability Lie",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b007/c002/p005": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Bridge Fund",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b007/c002/p006": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Foundry",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b007/c002/p007": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Early Deployment",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b007/c002/p008": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Zero-Barrier Routine",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b007/c003/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Zero-Friction Protocol",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b007/c003/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The River and the System",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b007/c003/p003": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Edge of the Grid",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b007/c003/p004": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Safe Harbor",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b007/c003/p005": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Gen-Ed Pact",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b007/c004/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The War Room",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b007/c005/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Severed Link",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b007/c005/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Siege",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b007/c005/p003": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Watch",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b007/c005/p004": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The All-Clear",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b007/c005/p005": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Blueprint",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b007/c005/p006": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Biological Override",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b007/c005/p007": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Sacred Trust",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b008/c001/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Sorting Failure",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b008/c001/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The System Reboot",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b008/c001/p003": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Assembly",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b008/c001/p004": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Tactical Retreat",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b008/c001/p005": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Fortress Weekend",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b008/c002/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Zero-Friction Morning",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b008/c002/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Commute",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b008/c002/p003": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Gen-Ed Pact",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b008/c002/p004": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The First Lecture",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b008/c002/p005": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Clinical Override",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b008/c002/p006": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Green Light",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b008/c002/p007": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Transit Chase",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b008/c002/p008": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Checkpoint Failure",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b008/c002/p009": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Realization",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b008/c002/p010": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Wrap Up",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b008/c002/p011": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Treatment Protocol",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b008/c002/p012": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Double Ambush",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b008/c002/p013": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Sub-Level Sanctuary",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b008/c002/p014": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Filing",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b008/c002/p015": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Loudmouth",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b008/c003/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Engine Failure",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b008/c003/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Malpractice Shield",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b008/c003/p003": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Integration",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b008/c004/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Handover (The Night Before) Time: 8:00 PM",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b008/c004/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Admission",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b008/c004/p003": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Surgical Consult",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b008/c004/p004": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Separation",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b008/c004/p005": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The War Room",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b008/c005/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Recovery Room (The Advocacy Test)",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b008/c005/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Shift Partner",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b008/c005/p003": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Discharge",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b008/c005/p004": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The \"Stiff Leg\" Transfer (The Physical Test)",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b008/c005/p005": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Clinical Standard",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b008/c005/p006": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Night Shift (The Spasm Protocol)",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b008/c005/p007": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "New Year's Eve (The Shift Change)",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b008/c006/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Winter Siege",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b008/c006/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Fuel Station",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b008/c006/p003": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Creative Session",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b008/c006/p004": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Physical Toll",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b008/c006/p005": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Downgrade (Day Release)",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b009/c001/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Outcome",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b010/c001/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Protocol Negotiation",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b010/c001/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The \"Cool Suit\" Modification",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b011/c001/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Incorporation",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b011/c001/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Home Office (The Workflow)",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b011/c001/p003": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Tablet Revolution",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b012/c001/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Last Funeral",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b012/c001/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The City Problem",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b012/c001/p003": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Decision",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b012/c001/p004": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Return",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b012/c002/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The First Breakdown",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b012/c002/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Shared Breath",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b012/c002/p003": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Final Perimeter",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b013/c001/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Date: February 14, 2058 Age: 72 Location: The Master Suite, 95 West Main Road, Portsmouth, RI",
-        "theme": "raggiesoft-books"
+        "theme": ""
     },
     "/raggiesoft-books/books/nichole/b013/c001/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Epilogue: The Legacy",
-        "theme": "raggiesoft-books"
+        "theme": ""
     }
 }
