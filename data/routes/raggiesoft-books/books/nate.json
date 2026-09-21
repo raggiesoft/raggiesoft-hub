@@ -1,7 +1,7 @@
 {
     "common": {
         "site": "raggiesoft-books",
-        "theme": "",
+        "theme": "raggiesoft-books",
         "siteName": "nate",
         "isSequential": true,
         "showSidebar": true,
@@ -12,6 +12,6 @@
     "/raggiesoft-books/books/nate": {
         "view": "pages/raggiesoft-books/books/series",
         "title": "nate",
-        "theme": ""
+        "theme": "raggiesoft-books"
     }
 }

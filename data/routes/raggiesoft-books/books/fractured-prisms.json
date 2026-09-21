@@ -1,7 +1,7 @@
 {
     "common": {
         "site": "raggiesoft-books",
-        "theme": "",
+        "theme": "raggiesoft-books",
         "siteName": "fractured-prisms",
         "isSequential": true,
         "showSidebar": true,
@@ -12,6 +12,6 @@
     "/raggiesoft-books/books/fractured-prisms": {
         "view": "pages/raggiesoft-books/books/series",
         "title": "fractured-prisms",
-        "theme": ""
+        "theme": "raggiesoft-books"
     }
 }

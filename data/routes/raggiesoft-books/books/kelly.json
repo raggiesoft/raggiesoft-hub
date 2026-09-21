@@ -1,7 +1,7 @@
 {
     "common": {
         "site": "raggiesoft-books",
-        "theme": "",
+        "theme": "raggiesoft-books",
         "siteName": "The Quantum Directive: Kelly's Cut",
         "isSequential": true,
         "showSidebar": true,
@@ -12,341 +12,341 @@
     "/raggiesoft-books/books/kelly": {
         "view": "pages/raggiesoft-books/books/series",
         "title": "The Quantum Directive: Kelly's Cut",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/kelly/b001/c001/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Bulletin Board \ud83d\udccc",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/kelly/b001/c001/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Perfect Pitch \ud83d\udcde",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/kelly/b001/c001/p003": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The First Day \ud83c\udfe2",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/kelly/b001/c001/p004": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Lunch with the Devs \ud83d\udcbb",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/kelly/b001/c001/p005": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Pager Code 005.1 \ud83d\udcdf",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/kelly/b001/c002/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Peace Treaty Before Sunrise\u2600\ufe0f",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/kelly/b001/c002/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Aftermath \ud83c\udf07",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/kelly/b001/c002/p003": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Memo Arrives \ud83d\udcc4",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/kelly/b001/c002/p004": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Three Thousand Miles of Fury \ud83d\ude20",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/kelly/b001/c002/p005": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Anchor \u2693",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/kelly/b001/c002/p006": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A Powerful Ally \ud83e\udd1d",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/kelly/b001/c002/p007": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "One of the Trench People \ud83c\udf7d\ufe0f",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/kelly/b001/c002/p008": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Envelope \u2709\ufe0f",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/kelly/b001/c002/p009": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Story Breaks \ud83d\udcf0",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/kelly/b001/c002/p010": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Out of the Loop \ud83d\udeec",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/kelly/b001/c003/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Last Stand \ud83d\udeb6\u200d\u2642\ufe0f",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/kelly/b001/c003/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Verdict \u2696\ufe0f",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/kelly/b001/c004/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Press Conference \ud83c\udfa4",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/kelly/b001/c004/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Spilling the Beans \ud83d\udcbb",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/kelly/b001/c004/p003": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Good News at Jester's \ud83c\udf54",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/kelly/b001/c004/p004": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "An Unbelievable Offer \ud83e\udd64",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/kelly/b001/c004/p005": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Walk Home \ud83c\udfe1",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/kelly/b001/c004/p006": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A New Family Plan \ud83d\udc68\u200d\ud83d\udc69\u200d\ud83d\udc67\u200d\ud83d\udc66",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/kelly/b001/c004/p007": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Leaving on Good Terms \ud83d\udcdd",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/kelly/b001/c004/p008": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Making it Official \ud83c\udf93",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/kelly/b001/c004/p009": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Training Day \ud83d\udc68\u200d\ud83c\udfeb",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/kelly/b001/c004/p010": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A New Wardrobe \ud83d\udc54",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/kelly/b001/c004/p011": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "First Steps, First Stumbles \ud83d\udc63",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/kelly/b001/c004/p012": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Blue Badge \ud83d\udfe6",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/kelly/b001/c004/p013": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Breaking the Ice \ud83e\uddca",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/kelly/b001/c004/p014": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Priceless Photo \ud83d\uddbc\ufe0f",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/kelly/b001/c004/p015": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Clocking Out for the Last Time \ud83d\udd70\ufe0f",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/kelly/b001/c005/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Your Voices Matter Here \ud83e\udd1d",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/kelly/b001/c005/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Starting with 'Why' \ud83d\udca1",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/kelly/b001/c005/p003": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "An Overwhelming Good \u221e",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/kelly/b001/c005/p004": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The First Line of Code \u2328\ufe0f",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/kelly/b001/c006/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "An Unexpected Invitation \u2708\ufe0f",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/kelly/b001/c006/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Jessica Did Her Homework \ud83d\udcda",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/kelly/b001/c006/p003": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A Fortuitous Encounter \ud83e\udd1d",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/kelly/b001/c006/p004": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Southbound on I-5 \ud83d\udcbc",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/kelly/b001/c006/p005": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The First-Time Flyers' Arrival at SEA \u2708\ufe0f",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/kelly/b001/c006/p006": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Bridge Builders \ud83c\udf09",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/kelly/b001/c006/p007": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "First Class to Cupertino \u2708\ufe0f",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/kelly/b001/c006/p008": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Six Years \ud83e\udd2f",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/kelly/b001/c006/p009": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Welcome to Cupertino \u2600\ufe0f",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/kelly/b001/c006/p010": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Best Behavior \ud83e\udd1d",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/kelly/b001/c006/p011": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Binary Canteen \ud83e\udd6a",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/kelly/b001/c007/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Company Policy \ud83d\udccb",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/kelly/b001/c007/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "An Uneven Gait \ud83d\udeb6\u200d\u2642\ufe0f",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/kelly/b001/c007/p003": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A Necessary Anchor \u2693",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/kelly/b001/c007/p004": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Proof of Work \ud83d\udcbb",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/kelly/b001/c007/p005": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Coding from the Couch \ud83d\udecb\ufe0f",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/kelly/b001/c007/p006": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Project Chimera \ud83e\udd2b",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/kelly/b001/c007/p007": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A Sister's Insistence \u6756",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/kelly/b001/c007/p008": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Right Tool for the Job \ud83c\udf7d\ufe0f",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/kelly/b001/c007/p009": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "What's Really Going On? \ud83d\udcac",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/kelly/b001/c008/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Right Tool for the Job \u267f",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/kelly/b001/c008/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Breakfast at the Hotel \ud83e\udd5e",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/kelly/b001/c008/p003": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Bug Bash \ud83d\udc1e",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/kelly/b001/c008/p004": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Lunch at Caffe Magna \ud83c\udf55",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/kelly/b001/c008/p005": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Analysis \ud83e\udde0",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/kelly/b001/c008/p006": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Phone Call \ud83d\udcde",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/kelly/b001/c008/p007": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Bidding War Begins \u2696\ufe0f",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/kelly/b001/c008/p008": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Professional Courtesy \ud83e\udd2b",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/kelly/b002/c002/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Developer Community (The Narrators)",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/kelly/b002/c002/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The CEOs (The Bidders)",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/kelly/b002/c003/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "All the Offers on the Table \ud83d\udcc2",
-        "theme": ""
+        "theme": "raggiesoft-books"
     }
 }

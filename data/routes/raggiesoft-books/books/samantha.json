@@ -1,7 +1,7 @@
 {
     "common": {
         "site": "raggiesoft-books",
-        "theme": "",
+        "theme": "raggiesoft-books",
         "siteName": "samantha",
         "isSequential": true,
         "showSidebar": true,
@@ -12,6 +12,6 @@
     "/raggiesoft-books/books/samantha": {
         "view": "pages/raggiesoft-books/books/series",
         "title": "samantha",
-        "theme": ""
+        "theme": "raggiesoft-books"
     }
 }

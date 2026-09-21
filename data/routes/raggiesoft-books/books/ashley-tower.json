@@ -1,7 +1,7 @@
 {
     "common": {
         "site": "raggiesoft-books",
-        "theme": "",
+        "theme": "raggiesoft-books",
         "siteName": "ashley-tower",
         "isSequential": true,
         "showSidebar": true,
@@ -12,6 +12,6 @@
     "/raggiesoft-books/books/ashley-tower": {
         "view": "pages/raggiesoft-books/books/series",
         "title": "ashley-tower",
-        "theme": ""
+        "theme": "raggiesoft-books"
     }
 }

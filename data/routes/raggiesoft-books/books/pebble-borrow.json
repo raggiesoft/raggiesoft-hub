@@ -1,7 +1,7 @@
 {
     "common": {
         "site": "raggiesoft-books",
-        "theme": "",
+        "theme": "raggiesoft-books",
         "siteName": "pebble-borrow",
         "isSequential": true,
         "showSidebar": true,
@@ -12,91 +12,91 @@
     "/raggiesoft-books/books/pebble-borrow": {
         "view": "pages/raggiesoft-books/books/series",
         "title": "pebble-borrow",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/pebble-borrow/b002/c001/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Out of the Storm",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/pebble-borrow/b002/c002/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The APEX Late-Night Switch",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/pebble-borrow/b002/c002/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The APEX World Premier Presentation",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/pebble-borrow/b002/c003/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The APEX Late\u2011Night Switch (Amanda Wakes Up at 10:59 PM)",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/pebble-borrow/b002/c003/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Saturday Morning \u2014 The Teasing Begins",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/pebble-borrow/b007/c014/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Apocalyptic Reality",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/pebble-borrow/b007/c014/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Burden of Ownership",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/pebble-borrow/b008/c002/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "0700 Hours: The First Refusal",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/pebble-borrow/b008/c003/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Net Closes",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/pebble-borrow/b008/c005/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Breach",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/pebble-borrow/b023/c007/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Call 1: The Surgeon",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/pebble-borrow/b023/c007/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Call 2: The Social Worker",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/pebble-borrow/b023/c007/p003": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Call 3: The Director of Nursing",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/pebble-borrow/b023/c008/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Night Watch (The RNs)",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/pebble-borrow/b023/c008/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Muscle (The CNAs)",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/pebble-borrow/b023/c008/p003": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Rebuilders (The PTA and OT)",
-        "theme": ""
+        "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/pebble-borrow/b023/c008/p004": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Shield (The Administration)",
-        "theme": ""
+        "theme": "raggiesoft-books"
     }
 }
