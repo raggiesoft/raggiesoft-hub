@@ -64,7 +64,7 @@ $images = [
         <div class="row g-4">
             <?php foreach ($images as $index => $img): ?>
             <div class="col-md-6 mb-4">
-                <wa-card class="h-100 shadow-sm border-0 w-100" style="cursor: pointer;" onclick="openImageModal('<?php echo htmlspecialchars($img['url'], ENT_QUOTES); ?>', '<?php echo htmlspecialchars($img['title'], ENT_QUOTES); ?>')">
+                <wa-card class="h-100 shadow-sm border-0 w-100" style="cursor: pointer;" onclick="openImageModal(<?php echo $index; ?>)">
                     <img slot="media" src="<?php echo htmlspecialchars($img['url']); ?>" alt="<?php echo htmlspecialchars($img['title']); ?>" style="object-fit: cover; height: 300px; width: 100%;">
                     <h4 class="fw-bold mb-2"><?php echo htmlspecialchars($img['title']); ?></h4>
                     <p class="mb-0 text-muted"><?php echo htmlspecialchars($img['description']); ?></p>
@@ -79,18 +79,62 @@ $images = [
     <div style="text-align: center; display: flex; justify-content: center; align-items: center;">
         <img id="image-modal-img" src="" alt="" style="max-width: 100%; max-height: 70vh; object-fit: contain; border-radius: 8px;">
     </div>
-    <wa-button slot="footer" variant="primary" onclick="document.getElementById('image-modal').hide()">Close</wa-button>
+    <div slot="footer" style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
+        <div>
+            <wa-button variant="neutral" onclick="prevImage()">
+                <wa-icon slot="start" name="chevron-left"></wa-icon> Previous
+            </wa-button>
+            <wa-button variant="neutral" onclick="nextImage()">
+                Next <wa-icon slot="end" name="chevron-right"></wa-icon>
+            </wa-button>
+        </div>
+        <wa-button variant="primary" onclick="closeImageModal()">Close</wa-button>
+    </div>
 </wa-dialog>
 
 <script>
-function openImageModal(url, title) {
+const libraryImages = <?php echo json_encode($images, JSON_HEX_TAG | JSON_HEX_APOS | JSON_HEX_QUOT | JSON_HEX_AMP); ?>;
+let currentImageIndex = 0;
+
+function openImageModal(index) {
+    currentImageIndex = index;
+    updateModalContent();
+    
+    const dialog = document.getElementById('image-modal');
+    if (typeof dialog.show === 'function') {
+        dialog.show();
+    } else {
+        dialog.open = true;
+    }
+}
+
+function closeImageModal() {
+    const dialog = document.getElementById('image-modal');
+    if (typeof dialog.hide === 'function') {
+        dialog.hide();
+    } else {
+        dialog.open = false;
+        dialog.removeAttribute('open');
+    }
+}
+
+function nextImage() {
+    currentImageIndex = (currentImageIndex + 1) % libraryImages.length;
+    updateModalContent();
+}
+
+function prevImage() {
+    currentImageIndex = (currentImageIndex - 1 + libraryImages.length) % libraryImages.length;
+    updateModalContent();
+}
+
+function updateModalContent() {
+    const imgData = libraryImages[currentImageIndex];
     const dialog = document.getElementById('image-modal');
     const img = document.getElementById('image-modal-img');
     
-    dialog.label = title;
-    img.src = url;
-    img.alt = title;
-    
-    dialog.show();
+    dialog.label = imgData.title;
+    img.src = imgData.url;
+    img.alt = imgData.title;
 }
 </script>
