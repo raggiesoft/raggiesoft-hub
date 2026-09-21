@@ -521,6 +521,13 @@ if (isset($customPageAssets) && is_array($customPageAssets)) {
       <nav class="navbar navbar-expand-md sticky-top border-bottom border-primary border-opacity-50 bg-body">
         <div class="container-fluid d-flex flex-wrap justify-content-between align-items-center">
           
+          <div class="d-flex align-items-center">
+            <?php if (isset($showSidebar) && $showSidebar): ?>
+            <button class="btn btn-link text-body-emphasis border-0 shadow-none d-block d-md-none me-2 p-0" type="button" onclick="const drawer = document.getElementById('mobileSidebarDrawer'); if (drawer) drawer.show();">
+                <i class="fa-solid fa-bars-staggered fs-4"></i>
+            </button>
+            <?php endif; ?>
+            
             <a class="navbar-brand d-flex align-items-center" href="<?php echo htmlspecialchars($pageConfig['navbarBrandLink'] ?? $navbarBrandLink ?? '/'); ?>">
                 
                 <?php 
@@ -551,6 +558,7 @@ if (isset($customPageAssets) && is_array($customPageAssets)) {
                 <?php echo strip_tags($pageConfig['navbarBrandText'] ?? $settings['siteName'] ?? 'Elara Site', '<span>'); ?>
                 </span>
             </a>
+          </div>
                     
           <button class="navbar-toggler border-0 shadow-none d-block d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
             <i class="fa-solid fa-bars fs-3 text-body-emphasis"></i>
