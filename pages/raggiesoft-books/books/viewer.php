@@ -104,7 +104,7 @@ $overviewUrl = dirname($request_uri, 3); // Backs out of /b001/c001/p001
                     </div>
                 <?php endif; ?>
                 
-                <?php if (!empty($frontmatter['date']) || !empty($frontmatter['start_time']) || !empty($frontmatter['pov'])): ?>
+                <?php if (!empty($frontmatter['date']) || !empty($frontmatter['start_time']) || !empty($frontmatter['pov']) || !empty($frontmatter['location'])): ?>
                     <div class="d-flex flex-wrap justify-content-center gap-3 text-body-secondary small fw-semibold">
                         <?php if (!empty($frontmatter['date'])): ?>
                             <span><wa-icon name="calendar-day" class="me-1"></wa-icon> <?php echo htmlspecialchars($frontmatter['date']); ?></span>
@@ -117,6 +117,10 @@ $overviewUrl = dirname($request_uri, 3); // Backs out of /b001/c001/p001
                                 <?php if (!empty($frontmatter['end_time'])): ?> - <?php echo htmlspecialchars($frontmatter['end_time']); ?><?php endif; ?>
                                 <?php echo htmlspecialchars($frontmatter['timezone'] ?? ''); ?>
                             </span>
+                        <?php endif; ?>
+                        
+                        <?php if (!empty($frontmatter['location'])): ?>
+                            <span><wa-icon name="location-dot" class="me-1"></wa-icon> <?php echo htmlspecialchars($frontmatter['location']); ?></span>
                         <?php endif; ?>
                         
                         <?php if (!empty($frontmatter['pov'])): ?>
