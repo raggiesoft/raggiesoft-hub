@@ -9,8 +9,8 @@ $images = [
     ],
     [
         "url" => $cdnBaseUrl . "/raggiesoft-books/images/library-hero/2.jpg",
-        "title" => "Contemporary Fiction",
-        "description" => "Moments captured from the contemporary, grounded stories of the RaggieSoft universe."
+        "title" => "Matt & Courtney (Crimson Node)",
+        "description" => "A quiet moment in the hallway captured by Arthur Vance, Matt's one-on-one aide, with their permission."
     ],
     [
         "url" => $cdnBaseUrl . "/raggiesoft-books/images/library-hero/3.jpg",
