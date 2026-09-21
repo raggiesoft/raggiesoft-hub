@@ -10,24 +10,26 @@
     "navbarBrandText": "<span class=\"ova-serif fw-bold\" style=\"color: #E3B27C;\">Ocean View Archives</span>",
     "navbarBrandLink": "/raggiesoft-books"
   },
-
   "/raggiesoft-books": {
     "view": "pages/raggiesoft-books/overview",
     "title": "Ocean View Archives | RaggieSoft Media",
     "ogTitle": "Ocean View Archives - The Literary Imprint",
     "schemaType": "CollectionPage"
   },
-  
   "/raggiesoft-books/books": {
     "view": "pages/raggiesoft-books/books/overview",
     "title": "Contemporary Fiction | Ocean View Archives",
     "ogTitle": "Contemporary Fiction Library"
   },
-
   "/raggiesoft-books/knox": {
     "view": "pages/raggiesoft-books/knox/overview",
     "title": "Project: KNOX | Ocean View Archives",
     "ogTitle": "Project: KNOX - Axiom Archival Logs",
     "schemaType": "Book"
+  },
+  "/raggiesoft-books/image-library": {
+    "view": "pages/raggiesoft-books/image-library",
+    "title": "Image Library | Ocean View Archives",
+    "ogTitle": "Image Library - RaggieSoft Books"
   }
 }

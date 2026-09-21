@@ -10,7 +10,9 @@ $heroImages = [
     $cdnBaseUrl . "/raggiesoft-books/images/library-hero/5.jpg",
     $cdnBaseUrl . "/raggiesoft-books/images/library-hero/6.jpg",
     $cdnBaseUrl . "/raggiesoft-books/images/library-hero/7.jpg",
-    $cdnBaseUrl . "/raggiesoft-books/images/library-hero/8.jpg"
+    $cdnBaseUrl . "/raggiesoft-books/images/library-hero/8.jpg",
+    $cdnBaseUrl . "/raggiesoft-books/images/library-hero/9.jpg",
+    $cdnBaseUrl . "/raggiesoft-books/images/library-hero/10.jpg"
 ];
 $startImage = !empty($heroImages) 
     ? $heroImages[array_rand($heroImages)] 
@@ -94,6 +96,11 @@ $imagesJson = htmlspecialchars(json_encode($heroImages), ENT_QUOTES, 'UTF-8');
                 <p class="lead force-text-light fw-semibold force-shadow-medium mx-auto mb-0" style="max-width: 700px;">
                     The grounded, real-world archives of RaggieSoft Media.
                 </p>
+                <div class="mt-4">
+                    <a href="/raggiesoft-books/image-library" class="btn btn-outline-light px-4 py-2 fw-bold" style="border-radius: 50px;">
+                        <i class="ph-fill ph-images"></i> View Image Library
+                    </a>
+                </div>
             </div>
         </div>
 
