@@ -138,5 +138,20 @@
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 5: The Thunderstorm \u2013 11:00 PM",
         "theme": ""
+    },
+    "/raggiesoft-books/books/crimson-node/b001/c006/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Request \u2013 3:30 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/crimson-node/b001/c006/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Exile \u2013 7:00 PM",
+        "theme": ""
+    },
+    "/raggiesoft-books/books/crimson-node/b001/c006/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Coronation \u2013 10:45 PM",
+        "theme": ""
     }
 }
