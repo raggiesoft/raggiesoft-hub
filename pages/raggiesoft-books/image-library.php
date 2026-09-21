@@ -79,7 +79,7 @@ $images = [
     <div style="text-align: center; display: flex; justify-content: center; align-items: center;">
         <img id="image-modal-img" src="" alt="" style="max-width: 100%; max-height: 70vh; object-fit: contain; border-radius: 8px;">
     </div>
-    <wa-button slot="footer" variant="primary" onclick="document.getElementById('image-modal').hide()">Close</wa-button>
+    <wa-button slot="footer" variant="primary" onclick="document.getElementById('image-modal').open = false">Close</wa-button>
 </wa-dialog>
 
 <script>
