@@ -352,6 +352,11 @@ if (isset($customPageAssets) && is_array($customPageAssets)) {
             // Only apply the dynamic theme if the server didn't explicitly force one
             if (!isForcedByServer) {
                 document.documentElement.setAttribute('data-bs-theme', theme);
+                if (theme === 'dark') {
+                    document.documentElement.classList.add('wa-theme-dark');
+                } else {
+                    document.documentElement.classList.remove('wa-theme-dark');
+                }
             }
         };
         

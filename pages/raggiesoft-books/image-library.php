@@ -75,7 +75,7 @@ $images = [
     </div>
 </div>
 
-<wa-dialog id="image-modal" label="Image View" light-dismiss>
+<wa-dialog id="image-modal" label="Image View" light-dismiss style="--width: 90vw; max-width: 1600px;">
     <div style="text-align: center;">
         <img id="image-modal-img" src="" alt="" style="max-width: 100%; height: auto; border-radius: 8px;">
     </div>
