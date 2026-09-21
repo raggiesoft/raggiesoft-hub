@@ -1,7 +1,7 @@
 {
   "common": {
     "site": "raggiesoft-books",
-    "theme": "ocean-view",
+    "theme": "raggiesoft-books",
     "siteName": "Ocean View Archives",
     "headerMenu": "raggiesoft-books/header-books",
     "footer": "raggiesoft-books/footer-books",
