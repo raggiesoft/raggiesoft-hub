@@ -182,12 +182,12 @@ $overviewUrl = dirname($request_uri, 3); // Backs out of /b001/c001/p001
 </div>
 
 <!-- Reader Settings Dialog -->
-<wa-dialog id="reader-settings-dialog" label="Reader Settings">
+<wa-dialog id="reader-settings-dialog" class="reader-settings-dialog" label="Reader Settings" light-dismiss>
     <div class="mb-3">
         <h6 class="fw-bold mb-2">Page Width</h6>
         <p class="text-body-secondary small mb-4">Adjust the width of the reading column. Wider columns allow for larger images, but can make reading long paragraphs more difficult on large displays.</p>
         
-        <wa-radio-group id="page-width-setting" value="800px">
+        <wa-radio-group id="page-width-setting" class="page-width-setting" value="800px">
             <wa-radio value="800px">800px (Default - Best Readability)</wa-radio>
             <wa-radio value="1000px">1000px (Wide)</wa-radio>
             <wa-radio value="1200px">1200px (Extra Wide)</wa-radio>
@@ -195,29 +195,46 @@ $overviewUrl = dirname($request_uri, 3); // Backs out of /b001/c001/p001
         </wa-radio-group>
     </div>
     
-    <wa-button slot="footer" variant="neutral" id="reset-settings-btn" class="me-2">Reset to Default</wa-button>
-    <wa-button slot="footer" variant="brand" onclick="document.getElementById('reader-settings-dialog').hide()">Close</wa-button>
+    <wa-button slot="footer" variant="neutral" id="reset-settings-btn" class="reset-settings-btn me-2">Reset to Default</wa-button>
+    <wa-button slot="footer" variant="brand" id="close-settings-btn" class="close-settings-btn">Close</wa-button>
 </wa-dialog>
 
 <script>
 (function() {
-    const container = document.getElementById('book-container');
-    const dialog = document.getElementById('reader-settings-dialog');
-    const btnOpen = document.getElementById('open-settings-btn');
-    const btnReset = document.getElementById('reset-settings-btn');
-    const radioGroup = document.getElementById('page-width-setting');
+    // Because elara-spa.js keeps old pages in the DOM, we must target the latest injected elements
+    const containers = document.querySelectorAll('#book-container');
+    const container = containers[containers.length - 1];
+    
+    const dialogs = document.querySelectorAll('.reader-settings-dialog');
+    const dialog = dialogs[dialogs.length - 1];
+    
+    const btnOpens = document.querySelectorAll('#open-settings-btn');
+    const btnOpen = btnOpens[btnOpens.length - 1];
+    
+    const btnResets = document.querySelectorAll('.reset-settings-btn');
+    const btnReset = btnResets[btnResets.length - 1];
+    
+    const btnCloses = document.querySelectorAll('.close-settings-btn');
+    const btnClose = btnCloses[btnCloses.length - 1];
+    
+    const radioGroups = document.querySelectorAll('.page-width-setting');
+    const radioGroup = radioGroups[radioGroups.length - 1];
     
     // Load preference from local storage immediately
     const savedWidth = localStorage.getItem('raggiesoft-reader-width');
     if (savedWidth && container && radioGroup) {
         container.style.maxWidth = savedWidth;
-        // The radio group might not be fully upgraded by Web Awesome yet, so set it after a tick
         setTimeout(() => { radioGroup.value = savedWidth; }, 0);
     }
     
     // Open Dialog
     if (btnOpen && dialog) {
-        btnOpen.addEventListener('click', () => dialog.show());
+        btnOpen.addEventListener('click', () => dialog.open = true);
+    }
+    
+    // Close Dialog Button
+    if (btnClose && dialog) {
+        btnClose.addEventListener('click', () => dialog.open = false);
     }
     
     // Listen for setting change (Web Awesome uses 'change' natively)
@@ -230,12 +247,13 @@ $overviewUrl = dirname($request_uri, 3); // Backs out of /b001/c001/p001
     }
     
     // Reset to Default
-    if (btnReset && radioGroup && container) {
+    if (btnReset && radioGroup && container && dialog) {
         btnReset.addEventListener('click', () => {
             const defaultWidth = '800px';
             radioGroup.value = defaultWidth;
             container.style.maxWidth = defaultWidth;
             localStorage.removeItem('raggiesoft-reader-width');
+            dialog.open = false; // Close it after resetting
         });
     }
 })();
