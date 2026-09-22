@@ -305,6 +305,11 @@ $overviewUrl = dirname($request_uri, 3); // Backs out of /b001/c001/p001
         }
     };
 
+    // Clean up legacy setting from earlier version
+    if (localStorage.getItem('raggiesoft-reader-width')) {
+        localStorage.removeItem('raggiesoft-reader-width');
+    }
+
     // Load from LocalStorage
     const savedSettings = JSON.parse(localStorage.getItem('raggiesoft-reader-settings') || '{}');
     const currentSettings = { ...defaults, ...savedSettings };
@@ -341,11 +346,13 @@ $overviewUrl = dirname($request_uri, 3); // Backs out of /b001/c001/p001
     // Open Dialog
     if (btnOpen && dialog) {
         btnOpen.addEventListener('click', () => dialog.open = true);
+        btnOpen.addEventListener('click', () => dialog.show());
     }
     
     // Close Dialog Button
     if (btnClose && dialog) {
         btnClose.addEventListener('click', () => dialog.open = false);
+        btnClose.addEventListener('click', () => dialog.hide());
     }
     
     // Listen for setting change (Web Awesome uses 'change' natively)
@@ -377,6 +384,7 @@ $overviewUrl = dirname($request_uri, 3); // Backs out of /b001/c001/p001
             });
             
             dialog.open = false; // Close it after resetting
+            dialog.hide(); // Close it after resetting
         });
     }
 })();
