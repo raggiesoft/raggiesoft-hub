@@ -70,21 +70,27 @@ $sequenceName = $config['sequenceName'] ?? null;
 $overviewUrl = dirname($request_uri, 3); // Backs out of /b001/c001/p001
 ?>
 
-<div class="container py-4" style="max-width: 800px;">
-    <!-- Breadcrumbs -->
-    <div class="mb-4 d-none d-md-block">
-        <wa-breadcrumb>
-            <wa-breadcrumb-item href="/">Home</wa-breadcrumb-item>
-            <wa-breadcrumb-item href="/raggiesoft-books/books">Library</wa-breadcrumb-item>
-            <?php if ($sequenceName): ?>
-                <wa-breadcrumb-item href="<?php echo htmlspecialchars($overviewUrl); ?>">
-                    <?php echo htmlspecialchars($sequenceName); ?>
+<div id="book-container" class="container py-4" style="max-width: 800px; transition: max-width 0.3s ease-in-out;">
+    <!-- Breadcrumbs & Settings -->
+    <div class="mb-4 d-flex justify-content-end justify-content-md-between align-items-center">
+        <div class="d-none d-md-block">
+            <wa-breadcrumb>
+                <wa-breadcrumb-item href="/">Home</wa-breadcrumb-item>
+                <wa-breadcrumb-item href="/raggiesoft-books/books">Library</wa-breadcrumb-item>
+                <?php if ($sequenceName): ?>
+                    <wa-breadcrumb-item href="<?php echo htmlspecialchars($overviewUrl); ?>">
+                        <?php echo htmlspecialchars($sequenceName); ?>
+                    </wa-breadcrumb-item>
+                <?php endif; ?>
+                <wa-breadcrumb-item>
+                    <?php echo htmlspecialchars($config['title'] ?? 'Chapter'); ?>
                 </wa-breadcrumb-item>
-            <?php endif; ?>
-            <wa-breadcrumb-item>
-                <?php echo htmlspecialchars($config['title'] ?? 'Chapter'); ?>
-            </wa-breadcrumb-item>
-        </wa-breadcrumb>
+            </wa-breadcrumb>
+        </div>
+        <wa-button id="open-settings-btn" size="small" variant="neutral" pill>
+            <wa-icon name="gear" slot="prefix"></wa-icon>
+            Settings
+        </wa-button>
     </div>
 
     <!-- Main Content Reader -->
@@ -174,6 +180,62 @@ $overviewUrl = dirname($request_uri, 3); // Backs out of /b001/c001/p001
         </div>
     </div>
 </div>
+
+<!-- Reader Settings Dialog -->
+<wa-dialog id="reader-settings-dialog" label="Reader Settings">
+    <div class="mb-3">
+        <h6 class="fw-bold mb-2">Page Width</h6>
+        <p class="text-body-secondary small mb-4">Adjust the width of the reading column. Wider columns allow for larger images, but can make reading long paragraphs more difficult on large displays.</p>
+        
+        <wa-radio-group id="page-width-setting" value="800px">
+            <wa-radio value="800px">800px (Default - Best Readability)</wa-radio>
+            <wa-radio value="1000px">1000px (Wide)</wa-radio>
+            <wa-radio value="1200px">1200px (Extra Wide)</wa-radio>
+            <wa-radio value="100%">100% (Full Width)</wa-radio>
+        </wa-radio-group>
+    </div>
+    
+    <wa-button slot="footer" variant="neutral" id="reset-settings-btn" class="me-2">Reset to Default</wa-button>
+    <wa-button slot="footer" variant="brand" onclick="document.getElementById('reader-settings-dialog').hide()">Close</wa-button>
+</wa-dialog>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    const container = document.getElementById('book-container');
+    const dialog = document.getElementById('reader-settings-dialog');
+    const btnOpen = document.getElementById('open-settings-btn');
+    const btnReset = document.getElementById('reset-settings-btn');
+    const radioGroup = document.getElementById('page-width-setting');
+    
+    // Load preference from local storage immediately
+    const savedWidth = localStorage.getItem('raggiesoft-reader-width');
+    if (savedWidth) {
+        container.style.maxWidth = savedWidth;
+        // The radio group might not be fully upgraded by Web Awesome yet, so set it after a tick
+        setTimeout(() => { radioGroup.value = savedWidth; }, 0);
+    }
+    
+    // Open Dialog
+    if (btnOpen) {
+        btnOpen.addEventListener('click', () => dialog.show());
+    }
+    
+    // Listen for setting change
+    radioGroup.addEventListener('wa-change', (e) => {
+        const newWidth = e.target.value;
+        container.style.maxWidth = newWidth;
+        localStorage.setItem('raggiesoft-reader-width', newWidth);
+    });
+    
+    // Reset to Default
+    btnReset.addEventListener('click', () => {
+        const defaultWidth = '800px';
+        radioGroup.value = defaultWidth;
+        container.style.maxWidth = defaultWidth;
+        localStorage.removeItem('raggiesoft-reader-width');
+    });
+});
+</script>
 
 <style>
 /* Story Typeography & Formatting */
