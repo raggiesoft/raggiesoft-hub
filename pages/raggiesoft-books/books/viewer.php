@@ -317,8 +317,13 @@ $overviewUrl = dirname($request_uri, 3); // Backs out of /b001/c001/p001
         });
 
         // Close Buttons
-        const closeBtns = dialog.querySelectorAll('.close-settings-btn');
-        closeBtns.forEach(btn => btn.addEventListener('click', () => dialog.hide()));
+                const closeBtns = dialog.querySelectorAll('.close-settings-btn');
+        closeBtns.forEach(btn => btn.addEventListener('click', (e) => {
+            e.preventDefault();
+            e.stopPropagation();
+            dialog.open = false;
+            try { dialog.hide(); } catch(err) {}
+        }));
 
         // Reset Buttons
         const resetBtns = dialog.querySelectorAll('.reset-settings-btn');
@@ -334,14 +339,19 @@ $overviewUrl = dirname($request_uri, 3); // Backs out of /b001/c001/p001
                     applySetting(settingKey, defaultVal);
                 });
                 
-                dialog.hide(); // Close it after resetting
+                                dialog.open = false; // Close it after resetting
+                try { dialog.hide(); } catch(err) {}
             });
         });
     }
     
     // Open Dialog
-    if (btnOpen && dialog) {
-        btnOpen.addEventListener('click', () => dialog.show());
+        if (btnOpen && dialog) {
+        btnOpen.addEventListener('click', (e) => {
+            e.preventDefault();
+            dialog.open = true;
+            try { dialog.show(); } catch(err) {}
+        });
     }
 })();
 </script>
