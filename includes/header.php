@@ -539,6 +539,7 @@ if (isset($customPageAssets) && is_array($customPageAssets)) {
           <div class="d-flex align-items-center">
             <?php if (isset($showSidebar) && $showSidebar): ?>
             <button class="btn btn-link text-body-emphasis border-0 shadow-none d-block d-md-none me-2 p-0" type="button" onclick="event.preventDefault(); event.stopPropagation(); const drawer = document.getElementById('mobileSidebarDrawer'); if (drawer) setTimeout(() => drawer.show(), 50);">
+            <button class="btn btn-link text-body-emphasis border-0 shadow-none d-block d-md-none me-2 p-0" type="button" onclick="event.preventDefault(); event.stopPropagation(); const drawers = document.querySelectorAll('wa-drawer[id=\'mobileSidebarDrawer\']'); const drawer = drawers[drawers.length - 1]; if (drawer) setTimeout(() => drawer.show(), 50);">
                 <i class="fa-solid fa-bars-staggered fs-4"></i>
             </button>
             <?php endif; ?>
