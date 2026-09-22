@@ -183,17 +183,6 @@ $overviewUrl = dirname($request_uri, 3); // Backs out of /b001/c001/p001
 
 <!-- Reader Settings Dialog -->
 <wa-dialog id="reader-settings-dialog" class="reader-settings-dialog" label="Reader Settings" light-dismiss>
-    <div class="mb-3">
-        <h6 class="fw-bold mb-2">Page Width</h6>
-        <p class="text-body-secondary small mb-4">Adjust the width of the reading column. Wider columns allow for larger images, but can make reading long paragraphs more difficult on large displays.</p>
-        
-        <wa-radio-group id="page-width-setting" class="page-width-setting" value="800px">
-            <wa-radio value="800px">800px (Default - Best Readability)</wa-radio>
-            <wa-radio value="1000px">1000px (Wide)</wa-radio>
-            <wa-radio value="1200px">1200px (Extra Wide)</wa-radio>
-            <wa-radio value="100%">100% (Full Width)</wa-radio>
-        </wa-radio-group>
-    </div>
     <wa-tab-group>
         <wa-tab slot="nav" panel="layout">Layout</wa-tab>
         <wa-tab slot="nav" panel="typography">Typography</wa-tab>
@@ -256,8 +245,6 @@ $overviewUrl = dirname($request_uri, 3); // Backs out of /b001/c001/p001
         </wa-tab-panel>
     </wa-tab-group>
     
-    <wa-button slot="footer" variant="neutral" id="reset-settings-btn" class="reset-settings-btn me-2">Reset to Default</wa-button>
-    <wa-button slot="footer" variant="brand" id="close-settings-btn" class="close-settings-btn">Close</wa-button>
     <wa-button slot="footer" variant="neutral" class="reset-settings-btn me-2">Reset to Default</wa-button>
     <wa-button slot="footer" variant="brand" class="close-settings-btn">Close</wa-button>
 </wa-dialog>
@@ -276,12 +263,6 @@ $overviewUrl = dirname($request_uri, 3); // Backs out of /b001/c001/p001
     
     const btnOpens = document.querySelectorAll('#open-settings-btn');
     const btnOpen = btnOpens[btnOpens.length - 1];
-    
-    const btnResets = document.querySelectorAll('.reset-settings-btn');
-    const btnReset = btnResets[btnResets.length - 1];
-    
-    const btnCloses = document.querySelectorAll('.close-settings-btn');
-    const btnClose = btnCloses[btnCloses.length - 1];
     
     // Default Settings
     const defaults = {
@@ -312,8 +293,8 @@ $overviewUrl = dirname($request_uri, 3); // Backs out of /b001/c001/p001
     const savedSettings = JSON.parse(localStorage.getItem('raggiesoft-reader-settings') || '{}');
     const currentSettings = { ...defaults, ...savedSettings };
     
-    // Find our specific radio groups inside the latest dialog
     if (dialog) {
+        // Find our specific radio groups inside the latest dialog
         const inputs = dialog.querySelectorAll('.reader-setting-input');
         
         inputs.forEach(input => {
@@ -334,34 +315,33 @@ $overviewUrl = dirname($request_uri, 3); // Backs out of /b001/c001/p001
                 localStorage.setItem('raggiesoft-reader-settings', JSON.stringify(currentSettings));
             });
         });
+
+        // Close Buttons
+        const closeBtns = dialog.querySelectorAll('.close-settings-btn');
+        closeBtns.forEach(btn => btn.addEventListener('click', () => dialog.hide()));
+
+        // Reset Buttons
+        const resetBtns = dialog.querySelectorAll('.reset-settings-btn');
+        resetBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                localStorage.removeItem('raggiesoft-reader-settings');
+                
+                inputs.forEach(input => {
+                    const settingKey = input.getAttribute('data-setting');
+                    const defaultVal = defaults[settingKey];
+                    
+                    input.value = defaultVal;
+                    applySetting(settingKey, defaultVal);
+                });
+                
+                dialog.hide(); // Close it after resetting
+            });
+        });
     }
     
     // Open Dialog
     if (btnOpen && dialog) {
         btnOpen.addEventListener('click', () => dialog.show());
-    }
-    
-    // Close Dialog Button
-    if (btnClose && dialog) {
-        btnClose.addEventListener('click', () => dialog.hide());
-    }
-    
-    // Reset to Default
-    if (btnReset && dialog) {
-        btnReset.addEventListener('click', () => {
-            localStorage.removeItem('raggiesoft-reader-settings');
-            
-            const inputs = dialog.querySelectorAll('.reader-setting-input');
-            inputs.forEach(input => {
-                const settingKey = input.getAttribute('data-setting');
-                const defaultVal = defaults[settingKey];
-                
-                input.value = defaultVal;
-                applySetting(settingKey, defaultVal);
-            });
-            
-            dialog.hide(); // Close it after resetting
-        });
     }
 })();
 </script>
