@@ -283,8 +283,6 @@ $overviewUrl = dirname($request_uri, 3); // Backs out of /b001/c001/p001
     const btnCloses = document.querySelectorAll('.close-settings-btn');
     const btnClose = btnCloses[btnCloses.length - 1];
     
-    const radioGroups = document.querySelectorAll('.page-width-setting');
-    const radioGroup = radioGroups[radioGroups.length - 1];
     // Default Settings
     const defaults = {
         width: '800px',
@@ -314,11 +312,6 @@ $overviewUrl = dirname($request_uri, 3); // Backs out of /b001/c001/p001
     const savedSettings = JSON.parse(localStorage.getItem('raggiesoft-reader-settings') || '{}');
     const currentSettings = { ...defaults, ...savedSettings };
     
-    // Load preference from local storage immediately
-    const savedWidth = localStorage.getItem('raggiesoft-reader-width');
-    if (savedWidth && container && radioGroup) {
-        container.style.maxWidth = savedWidth;
-        setTimeout(() => { radioGroup.value = savedWidth; }, 0);
     // Find our specific radio groups inside the latest dialog
     if (dialog) {
         const inputs = dialog.querySelectorAll('.reader-setting-input');
@@ -345,33 +338,17 @@ $overviewUrl = dirname($request_uri, 3); // Backs out of /b001/c001/p001
     
     // Open Dialog
     if (btnOpen && dialog) {
-        btnOpen.addEventListener('click', () => dialog.open = true);
         btnOpen.addEventListener('click', () => dialog.show());
     }
     
     // Close Dialog Button
     if (btnClose && dialog) {
-        btnClose.addEventListener('click', () => dialog.open = false);
         btnClose.addEventListener('click', () => dialog.hide());
     }
     
-    // Listen for setting change (Web Awesome uses 'change' natively)
-    if (radioGroup && container) {
-        radioGroup.addEventListener('change', (e) => {
-            const newWidth = e.target.value;
-            container.style.maxWidth = newWidth;
-            localStorage.setItem('raggiesoft-reader-width', newWidth);
-        });
-    }
-    
     // Reset to Default
-    if (btnReset && radioGroup && container && dialog) {
     if (btnReset && dialog) {
         btnReset.addEventListener('click', () => {
-            const defaultWidth = '800px';
-            radioGroup.value = defaultWidth;
-            container.style.maxWidth = defaultWidth;
-            localStorage.removeItem('raggiesoft-reader-width');
             localStorage.removeItem('raggiesoft-reader-settings');
             
             const inputs = dialog.querySelectorAll('.reader-setting-input');
@@ -383,7 +360,6 @@ $overviewUrl = dirname($request_uri, 3); // Backs out of /b001/c001/p001
                 applySetting(settingKey, defaultVal);
             });
             
-            dialog.open = false; // Close it after resetting
             dialog.hide(); // Close it after resetting
         });
     }
