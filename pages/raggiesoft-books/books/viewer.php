@@ -200,7 +200,7 @@ $overviewUrl = dirname($request_uri, 3); // Backs out of /b001/c001/p001
 </wa-dialog>
 
 <script>
-document.addEventListener('DOMContentLoaded', () => {
+(function() {
     const container = document.getElementById('book-container');
     const dialog = document.getElementById('reader-settings-dialog');
     const btnOpen = document.getElementById('open-settings-btn');
@@ -209,32 +209,36 @@ document.addEventListener('DOMContentLoaded', () => {
     
     // Load preference from local storage immediately
     const savedWidth = localStorage.getItem('raggiesoft-reader-width');
-    if (savedWidth) {
+    if (savedWidth && container && radioGroup) {
         container.style.maxWidth = savedWidth;
         // The radio group might not be fully upgraded by Web Awesome yet, so set it after a tick
         setTimeout(() => { radioGroup.value = savedWidth; }, 0);
     }
     
     // Open Dialog
-    if (btnOpen) {
+    if (btnOpen && dialog) {
         btnOpen.addEventListener('click', () => dialog.show());
     }
     
-    // Listen for setting change
-    radioGroup.addEventListener('wa-change', (e) => {
-        const newWidth = e.target.value;
-        container.style.maxWidth = newWidth;
-        localStorage.setItem('raggiesoft-reader-width', newWidth);
-    });
+    // Listen for setting change (Web Awesome uses 'change' natively)
+    if (radioGroup && container) {
+        radioGroup.addEventListener('change', (e) => {
+            const newWidth = e.target.value;
+            container.style.maxWidth = newWidth;
+            localStorage.setItem('raggiesoft-reader-width', newWidth);
+        });
+    }
     
     // Reset to Default
-    btnReset.addEventListener('click', () => {
-        const defaultWidth = '800px';
-        radioGroup.value = defaultWidth;
-        container.style.maxWidth = defaultWidth;
-        localStorage.removeItem('raggiesoft-reader-width');
-    });
-});
+    if (btnReset && radioGroup && container) {
+        btnReset.addEventListener('click', () => {
+            const defaultWidth = '800px';
+            radioGroup.value = defaultWidth;
+            container.style.maxWidth = defaultWidth;
+            localStorage.removeItem('raggiesoft-reader-width');
+        });
+    }
+})();
 </script>
 
 <style>
