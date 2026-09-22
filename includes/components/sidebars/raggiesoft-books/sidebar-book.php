@@ -41,6 +41,20 @@ $seriesTitle = $katie['series_title'] ?? $config['sequenceName'] ?? 'Narrative T
                     $chapters = $book['chapters'] ?? [];
                     // Auto-expand if there's only one book in the series
                     $isBookExpanded = count($books) === 1 ? 'expanded' : ''; 
+                    
+                    // Check if the current request URI matches any part in this BOOK to auto-expand it
+                    $isBookActive = false;
+                    foreach ($chapters as $ch) {
+                        foreach (($ch['parts'] ?? []) as $p) {
+                            $cPath = preg_replace('/\.md$/i', '', $p['file_path']);
+                            if ($request_uri === '/raggiesoft-books/books/' . $seriesSlug . '/' . $cPath) {
+                                $isBookActive = true;
+                                break 2;
+                            }
+                        }
+                    }
+                    // Auto-expand if there's only one book in the series OR if we are currently reading this book
+                    $isBookExpanded = (count($books) === 1 || $isBookActive) ? 'expanded' : ''; 
                 ?>
                 <wa-tree-item <?php echo $isBookExpanded; ?>>
                     <span class="fw-semibold text-body-emphasis d-block" style="cursor: pointer;" onclick="this.parentElement.expanded = !this.parentElement.expanded;"><?php echo htmlspecialchars(html_entity_decode($bookTitle, ENT_QUOTES, 'UTF-8')); ?></span>
