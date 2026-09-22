@@ -194,9 +194,72 @@ $overviewUrl = dirname($request_uri, 3); // Backs out of /b001/c001/p001
             <wa-radio value="100%">100% (Full Width)</wa-radio>
         </wa-radio-group>
     </div>
+    <wa-tab-group>
+        <wa-tab slot="nav" panel="layout">Layout</wa-tab>
+        <wa-tab slot="nav" panel="typography">Typography</wa-tab>
+        <wa-tab slot="nav" panel="theme">Theme</wa-tab>
+
+        <!-- Layout Tab -->
+        <wa-tab-panel name="layout" class="pt-3">
+            <div class="mb-4">
+                <h6 class="fw-bold mb-2">Page Width</h6>
+                <wa-radio-group class="reader-setting-input" data-setting="width" value="800px">
+                    <wa-radio value="800px">800px (Default)</wa-radio>
+                    <wa-radio value="1000px">1000px (Wide)</wa-radio>
+                    <wa-radio value="1200px">1200px (Extra Wide)</wa-radio>
+                    <wa-radio value="100%">100% (Full Width)</wa-radio>
+                </wa-radio-group>
+            </div>
+            <div class="mb-2">
+                <h6 class="fw-bold mb-2">Line Spacing</h6>
+                <wa-radio-group class="reader-setting-input" data-setting="spacing" value="normal">
+                    <wa-radio value="tight">Tight</wa-radio>
+                    <wa-radio value="normal">Normal (Default)</wa-radio>
+                    <wa-radio value="relaxed">Relaxed</wa-radio>
+                </wa-radio-group>
+            </div>
+        </wa-tab-panel>
+
+        <!-- Typography Tab -->
+        <wa-tab-panel name="typography" class="pt-3">
+            <div class="mb-4">
+                <h6 class="fw-bold mb-2">Font Family</h6>
+                <wa-radio-group class="reader-setting-input" data-setting="font" value="sans">
+                    <wa-radio value="sans">Sans-Serif (Default)</wa-radio>
+                    <wa-radio value="serif">Serif (Classic Book)</wa-radio>
+                    <wa-radio value="mono">Monospace</wa-radio>
+                </wa-radio-group>
+            </div>
+            <div class="mb-2">
+                <h6 class="fw-bold mb-2">Font Size</h6>
+                <wa-radio-group class="reader-setting-input" data-setting="size" value="md">
+                    <wa-radio value="sm">Small</wa-radio>
+                    <wa-radio value="md">Medium (Default)</wa-radio>
+                    <wa-radio value="lg">Large</wa-radio>
+                    <wa-radio value="xl">Extra Large</wa-radio>
+                </wa-radio-group>
+            </div>
+        </wa-tab-panel>
+
+        <!-- Theme Tab -->
+        <wa-tab-panel name="theme" class="pt-3">
+            <div class="mb-2">
+                <h6 class="fw-bold mb-2">Reading Theme</h6>
+                <p class="text-body-secondary small mb-3">Overrides the system default theme to provide a custom reading experience.</p>
+                <wa-radio-group class="reader-setting-input" data-setting="theme" value="auto">
+                    <wa-radio value="auto">System Default</wa-radio>
+                    <wa-radio value="light">Light Mode</wa-radio>
+                    <wa-radio value="dark">Dark Mode</wa-radio>
+                    <wa-radio value="sepia">Sepia (Eye Comfort)</wa-radio>
+                </wa-radio-group>
+            </div>
+        </wa-tab-panel>
+    </wa-tab-group>
     
     <wa-button slot="footer" variant="neutral" id="reset-settings-btn" class="reset-settings-btn me-2">Reset to Default</wa-button>
     <wa-button slot="footer" variant="brand" id="close-settings-btn" class="close-settings-btn">Close</wa-button>
+    <wa-button slot="footer" variant="neutral" class="reset-settings-btn me-2">Reset to Default</wa-button>
+    <wa-button slot="footer" variant="brand" class="close-settings-btn">Close</wa-button>
 </wa-dialog>
 
 <script>
@@ -204,6 +267,9 @@ $overviewUrl = dirname($request_uri, 3); // Backs out of /b001/c001/p001
     // Because elara-spa.js keeps old pages in the DOM, we must target the latest injected elements
     const containers = document.querySelectorAll('#book-container');
     const container = containers[containers.length - 1];
+    
+    const storyContents = document.querySelectorAll('.story-content');
+    const storyContent = storyContents[storyContents.length - 1];
     
     const dialogs = document.querySelectorAll('.reader-settings-dialog');
     const dialog = dialogs[dialogs.length - 1];
@@ -219,12 +285,57 @@ $overviewUrl = dirname($request_uri, 3); // Backs out of /b001/c001/p001
     
     const radioGroups = document.querySelectorAll('.page-width-setting');
     const radioGroup = radioGroups[radioGroups.length - 1];
+    // Default Settings
+    const defaults = {
+        width: '800px',
+        spacing: 'normal',
+        font: 'sans',
+        size: 'md',
+        theme: 'auto'
+    };
+
+    // Initialize Settings
+    const applySetting = (key, value) => {
+        if (!container || !storyContent) return;
+        
+        if (key === 'width') {
+            container.style.maxWidth = value;
+        } else {
+            storyContent.setAttribute(`data-reader-${key}`, value);
+        }
+    };
+
+    // Load from LocalStorage
+    const savedSettings = JSON.parse(localStorage.getItem('raggiesoft-reader-settings') || '{}');
+    const currentSettings = { ...defaults, ...savedSettings };
     
     // Load preference from local storage immediately
     const savedWidth = localStorage.getItem('raggiesoft-reader-width');
     if (savedWidth && container && radioGroup) {
         container.style.maxWidth = savedWidth;
         setTimeout(() => { radioGroup.value = savedWidth; }, 0);
+    // Find our specific radio groups inside the latest dialog
+    if (dialog) {
+        const inputs = dialog.querySelectorAll('.reader-setting-input');
+        
+        inputs.forEach(input => {
+            const settingKey = input.getAttribute('data-setting');
+            const val = currentSettings[settingKey];
+            
+            // Apply visually
+            applySetting(settingKey, val);
+            
+            // Set radio value after a tick for Web Awesome to hydrate
+            setTimeout(() => { input.value = val; }, 0);
+            
+            // Listen for changes
+            input.addEventListener('change', (e) => {
+                const newValue = e.target.value;
+                currentSettings[settingKey] = newValue;
+                applySetting(settingKey, newValue);
+                localStorage.setItem('raggiesoft-reader-settings', JSON.stringify(currentSettings));
+            });
+        });
     }
     
     // Open Dialog
@@ -248,11 +359,23 @@ $overviewUrl = dirname($request_uri, 3); // Backs out of /b001/c001/p001
     
     // Reset to Default
     if (btnReset && radioGroup && container && dialog) {
+    if (btnReset && dialog) {
         btnReset.addEventListener('click', () => {
             const defaultWidth = '800px';
             radioGroup.value = defaultWidth;
             container.style.maxWidth = defaultWidth;
             localStorage.removeItem('raggiesoft-reader-width');
+            localStorage.removeItem('raggiesoft-reader-settings');
+            
+            const inputs = dialog.querySelectorAll('.reader-setting-input');
+            inputs.forEach(input => {
+                const settingKey = input.getAttribute('data-setting');
+                const defaultVal = defaults[settingKey];
+                
+                input.value = defaultVal;
+                applySetting(settingKey, defaultVal);
+            });
+            
             dialog.open = false; // Close it after resetting
         });
     }
@@ -307,5 +430,49 @@ $overviewUrl = dirname($request_uri, 3); // Backs out of /b001/c001/p001
     margin-bottom: 1.5rem;
     font-family: var(--bs-font-sans-serif);
 }
+
+/* -----------------------------
+   READER SETTING OVERRIDES 
+------------------------------ */
+.story-content {
+    transition: background-color 0.3s ease, color 0.3s ease, font-size 0.3s ease, line-height 0.3s ease;
+}
+
+/* Theme Overrides */
+.story-content[data-reader-theme="sepia"] {
+    background-color: #f4ecd8 !important;
+    color: #433422 !important;
+}
+.story-content[data-reader-theme="dark"] {
+    background-color: #121212 !important;
+    color: #e0e0e0 !important;
+}
+.story-content[data-reader-theme="light"] {
+    background-color: #ffffff !important;
+    color: #212529 !important;
+}
+
+/* Typography Overrides */
+.story-content[data-reader-font="serif"] {
+    font-family: Georgia, 'Times New Roman', serif !important;
+}
+.story-content[data-reader-font="sans"] {
+    font-family: var(--bs-font-sans-serif) !important;
+}
+.story-content[data-reader-font="mono"] {
+    font-family: var(--bs-font-monospace) !important;
+}
+
+/* Font Size Overrides */
+.story-content[data-reader-size="sm"] { font-size: 1rem !important; }
+.story-content[data-reader-size="md"] { font-size: 1.25rem !important; }
+.story-content[data-reader-size="lg"] { font-size: 1.5rem !important; }
+.story-content[data-reader-size="xl"] { font-size: 1.75rem !important; }
+
+/* Line Height Overrides */
+.story-content[data-reader-spacing="tight"] { line-height: 1.4 !important; }
+.story-content[data-reader-spacing="normal"] { line-height: 1.8 !important; }
+.story-content[data-reader-spacing="relaxed"] { line-height: 2.2 !important; }
+
 </style>
 
