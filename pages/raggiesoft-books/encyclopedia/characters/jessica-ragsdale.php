@@ -23,10 +23,10 @@ $pageTitle = "Jessica Ragsdale - Character Encyclopedia";
             </p>
         </div>
         <div class="col-md-5">
-            <wa-card class="w-100 shadow-lg border-0">
-                <img slot="image" src="<?= $cdnBaseUrl ?>/raggiesoft-books/images/characters/outfits/jessica_aggressively_casual_2006.jpg" alt="Jessica Ragsdale in her Quantum office">
-                <div class="text-center">
-                    <small class="text-uppercase fw-bold text-body-secondary">Circa 2006 - Quantum HQ (Building 33)</small>
+            <wa-card class="w-100 shadow-lg border-0" style="--body-padding: 0;">
+                <img src="<?= $cdnBaseUrl ?>/raggiesoft-books/images/characters/outfits/jessica_aggressively_casual_2006.jpg" alt="Jessica Ragsdale in her Quantum office" class="w-100 d-block">
+                <div class="text-center p-3 bg-dark">
+                    <small class="text-uppercase fw-bold text-white-50">Circa 2006 - Quantum HQ (Building 33)</small>
                 </div>
             </wa-card>
         </div>

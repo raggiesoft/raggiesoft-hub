@@ -1,6 +1,5 @@
 <?php
 $pageTitle = "Sensory Scale - Encyclopedia";
-include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
 ?>
 
 <div class="container py-5" style="max-width: 900px;">
@@ -175,5 +174,3 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
     </wa-card>
 
 </div>
-
-<?php include $_SERVER['DOCUMENT_ROOT'] . '/includes/footer.php'; ?>
