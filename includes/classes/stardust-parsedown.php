@@ -195,6 +195,9 @@ class StardustParsedown extends Parsedown {
 
     // Pre-process shortcodes before Parsedown gets confused by raw HTML blocks
     public function text($text) {
+        // Strip out AI Meta notes so they don't render for human readers
+        $text = preg_replace('/\\\\?\[Note to the AI:.*?\\\\?\]/is', '', $text);
+        
         // Pre-process [credential ...] shortcodes anywhere in the text
         $text = preg_replace_callback('/\[credential\s+(.+?)\]/', function($matches) {
             $attributesString = $matches[1];
