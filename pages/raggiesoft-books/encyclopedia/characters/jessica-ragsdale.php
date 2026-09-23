@@ -1,6 +1,5 @@
 <?php
 $pageTitle = "Jessica Ragsdale - Character Encyclopedia";
-include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
 ?>
 
 <div class="container py-5" style="max-width: 1000px;">
@@ -92,5 +91,3 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
         </div>
     </wa-card>
 </div>
-
-<?php include $_SERVER['DOCUMENT_ROOT'] . '/includes/footer.php'; ?>
