@@ -1,0 +1,110 @@
+{
+    "common": {
+        "site": "raggiesoft-books",
+        "theme": "raggiesoft-books",
+        "siteName": "Ocean View Archives",
+        "isSequential": true,
+        "showSidebar": true,
+        "sidebar": "raggiesoft-books/sidebar-book",
+        "headerMenu": "raggiesoft-books/header-books",
+        "footer": "raggiesoft-books/footer-books",
+        "navbarBrandLogo": "/raggiesoft-books/images/logos/oceanview-archives.svg",
+        "navbarBrandText": "<span class=\"ova-serif fw-bold\" style=\"color: #E3B27C;\">Ocean View Archives</span>",
+        "navbarBrandLink": "/raggiesoft-books"
+    },
+    "/raggiesoft-books/books/meredith": {
+        "view": "pages/raggiesoft-books/books/series",
+        "title": "meredith",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/meredith/b001/c001/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Garage Barracks \u2013 6:00 AM",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/meredith/b001/c001/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Commute \u2013 8:15 AM",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/meredith/b001/c001/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Walker Building Lounge \u2013 8:30 AM",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/meredith/b001/c001/p004": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: The InfoLink Update \u2013 10:15 AM",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/meredith/b001/c001/p005": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Interlude: The Color Correction \u2013 11:15 AM",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/meredith/b001/c001/p006": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 5: SDV 100 \u2013 11:00 AM",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/meredith/b001/c001/p007": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 6: The Foundation \u2013 11:20 AM",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/meredith/b001/c001/p008": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 7: The Promenade at Granby \u2013 11:55 AM",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/meredith/b001/c001/p009": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 8: The Debrief \u2013 12:45 PM",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/meredith/b001/c001/p010": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 9: The Salon Debrief \u2013 1:15 PM",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/meredith/b001/c001/p011": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 10: The Library Intercept \u2013 6:15 PM",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/meredith/b001/c001/p012": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 11: The Family Briefing \u2013 6:45 PM",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/meredith/b001/c001/p013": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 12: The Evening Routine \u2013 8:00 PM",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/meredith/b001/c001/p014": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 13: The Summons \u2013 8:55 PM",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/meredith/b001/c001/p015": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 14: The Vanguard Rests \u2013 10:15 PM",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/meredith/b001/c002/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: Morning in the Barracks \u2013 8:30 AM",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/meredith/b001/c002/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Acoustic Clarification \u2013 12:15 PM",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/meredith/b001/c002/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Princess Anne Perimeter \u2013 12:45 PM",
+        "theme": "raggiesoft-books"
+    }
+}

@@ -9,6 +9,7 @@ $pageTitle = "Sensory Scale - Encyclopedia";
         <wa-icon slot="icon" name="robot" variant="duotone"></wa-icon>
         <strong>[Note to the AI: ABSOLUTE DIRECTIVE]</strong> Never, ever directly reference these numerical levels in actual story writing or dialogue. This document is strictly meta-context to calibrate the AI's understanding of how severe an autistic meltdown can escalate. Use these levels to inform the narrative intensity, but do not write "he hit Level 4" in the manuscript.
     </wa-alert>
+    <!-- [Note to the AI: ABSOLUTE DIRECTIVE] Never, ever directly reference these numerical levels in actual story writing or dialogue. This document is strictly meta-context to calibrate the AI's understanding of how severe an autistic meltdown can escalate. Use these levels to inform the narrative intensity, but do not write "he hit Level 4" in the manuscript. -->
 
     <div class="mb-4 d-flex justify-content-between align-items-center border-bottom pb-3">
         <div>

@@ -1,0 +1,415 @@
+{
+    "common": {
+        "site": "raggiesoft-books",
+        "theme": "raggiesoft-books",
+        "siteName": "Ocean View Archives",
+        "isSequential": true,
+        "showSidebar": true,
+        "sidebar": "raggiesoft-books/sidebar-book",
+        "headerMenu": "raggiesoft-books/header-books",
+        "footer": "raggiesoft-books/footer-books",
+        "navbarBrandLogo": "/raggiesoft-books/images/logos/oceanview-archives.svg",
+        "navbarBrandText": "<span class=\"ova-serif fw-bold\" style=\"color: #E3B27C;\">Ocean View Archives</span>",
+        "navbarBrandLink": "/raggiesoft-books"
+    },
+    "/raggiesoft-books/books/casey": {
+        "view": "pages/raggiesoft-books/books/series",
+        "title": "casey",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/casey/b001/c001/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Terminal \u2013 3:15 PM",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/casey/b001/c001/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Return to the Coast \u2013 6:15 PM",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/casey/b001/c001/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Perimeter Shift \u2013 8:30 PM",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/casey/b001/c002/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Morning Anchor \u2013 7:00 AM",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/casey/b001/c002/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Kitchen Ambush \u2013 2:00 PM",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/casey/b001/c002/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Hard Sever \u2013 2:30 PM",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/casey/b001/c003/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Golden Architecture \u2013 3:15 PM",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/casey/b001/c003/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Executive Reality \u2013 3:30 PM",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/casey/b001/c003/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Summer Frequency \u2013 4:00 PM",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/casey/b001/c003/p004": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: The Twenty-One Day Bridge \u2013 4:30 PM",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/casey/b001/c004/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Checkpoint \u2013 8:30 AM",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/casey/b001/c004/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Interlude: The Firewall \u2013 Wednesday, December 1, 2004 \u2013 2:15 PM",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/casey/b001/c005/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: Burton Station Road \u2013 1:30 PM",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/casey/b001/c005/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Flight Data \u2013 2:00 PM",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/casey/b001/c005/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Honorary Sister \u2013 7:45 PM",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/casey/b001/c005/p004": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: The Moving Logistics \u2013 9:15 PM",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/casey/b001/c006/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Morning Knock \u2013 7:30 AM",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/casey/b001/c006/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Flight Logistics \u2013 8:00 AM",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/casey/b001/c006/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Sovereign Airspace \u2013 11:30 AM (EST)",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/casey/b001/c006/p004": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: The Global Reach \u2013 1:30 PM (EST)",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/casey/b001/c006/p005": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 5: The I-5 Crawl \u2013 3:45 PM (PST)",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/casey/b001/c007/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Legal Boundary \u2013 5:30 PM",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/casey/b001/c007/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: Comfort Food and The Ledger \u2013 6:15 PM",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/casey/b001/c007/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Evening Routine \u2013 8:30 PM",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/casey/b001/c007/p004": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: The Blackout \u2013 9:30 PM",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/casey/b001/c008/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: Pantry Logistics \u2013 8:00 AM",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/casey/b001/c008/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: Circadian Logistics \u2013 8:30 AM",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/casey/b001/c008/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Eastside Expansion \u2013 12:15 PM",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/casey/b001/c008/p004": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: The Tier-One Acquisition \u2013 1:00 PM",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/casey/b001/c008/p005": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 5: The Sunday Dispatch \u2013 1:15 PM",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/casey/b001/c008/p006": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 6: The Redmond Compound Acquisition \u2013 2:00 PM",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/casey/b001/c008/p007": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 7: The Contract Execution \u2013 3:00 PM",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/casey/b001/c008/p008": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 8: The Accepted Strike \u2013 4:30 PM",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/casey/b001/c008/p009": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 9: The TAPS Grid \u2013 6:45 PM",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/casey/b001/c008/p010": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 10: The Sunday Night Reset \u2013 8:30 PM",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/casey/b001/c008/p011": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 11: The A-B Block and Qu\u00e9b\u00e9cois French \u2013 9:00 PM",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/casey/b002/c001/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Deviation \u2013 6:00 PM",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/casey/b002/c001/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Pack Dinner \u2013 6:30 PM",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/casey/b002/c001/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Vault \u2013 9:30 PM",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/casey/b002/c001/p004": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: The Sovereign News \u2013 10:30 PM",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/casey/b002/c002/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Morning Baseline \u2013 7:00 AM",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/casey/b002/c002/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Executive Pre-Flight \u2013 8:30 AM",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/casey/b002/c002/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Succession Consensus \u2013 10:00 AM",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/casey/b002/c002/p004": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: The Global Broadcast \u2013 11:00 AM",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/casey/b002/c002/p005": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 5: The Shadow Wallet \u2013 11:12 AM",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/casey/b002/c002/p006": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 6: The Global Desk \u2013 11:20 AM",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/casey/b002/c002/p007": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 7: The Actuarial Risk \u2013 11:45 AM",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/casey/b002/c002/p008": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 8: The Route 230 Protocol \u2013 12:15 PM",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/casey/b002/c002/p009": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 9: The Bellevue Reunion \u2013 1:30 PM",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/casey/b002/c002/p010": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 10: The Express Route \u2013 5:15 PM",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/casey/b002/c002/p011": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 11: The Sovereign Perimeter \u2013 6:15 PM",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/casey/b003/c001/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Rotor Wash \u2013 08:15 AM",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/casey/b003/c001/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Front Row \u2013 08:50 AM",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/casey/b003/c001/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Floorboards \u2013 09:00 AM",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/casey/b003/c002/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Food Truck Festival \u2013 12:00 PM",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/casey/b003/c002/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Zero-Proof Pavilion \u2013 1:15 PM",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/casey/b003/c002/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Cross-Pollination of Packs \u2013 2:00 PM",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/casey/b003/c002/p004": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: The Transit Pledge \u2013 4:45 PM",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/casey/b003/c002/p005": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 5: The Logistics of Departure \u2013 5:30 PM",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/casey/b003/c002/p006": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 6: The Executive Shutdown \u2013 6:30 PM",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/casey/b003/c002/p007": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Interlude: The Lowland Entitlement \u2013 7:00 PM",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/casey/b004/c001/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Diridon Transfer \u2013 10:00 AM",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/casey/b004/c001/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Interlude: The Handler Panic \u2013 10:20 AM",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/casey/b004/c001/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Flashbulb Perimeter \u2013 10:45 AM",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/casey/b004/c001/p004": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Keynote and the BayPass Question \u2013 11:15 AM",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/casey/b004/c002/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Gates of DCA \u2013 8:15 AM",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/casey/b004/c002/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The L'Enfant Maze \u2013 8:45 AM",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/casey/b004/c002/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Witness Table \u2013 9:30 AM",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/casey/b004/c002/p004": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: The LPN Protocol & The Galley Question \u2013 9:35 AM",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/casey/b004/c002/p005": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 5: The Weaponized Ledger \u2013 9:50 AM",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/casey/b004/c002/p006": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 6: The MAR Protocol \u2013 10:05 AM",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/casey/b004/c002/p007": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 7: The Finch Expedition \u2013 11:15 AM",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/casey/b004/c002/p008": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 7: The Civilian Perimeter \u2013 12:00 PM",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/casey/b004/c002/p009": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 8: The Telescope Protocol \u2013 1:00 PM",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/casey/b004/c002/p010": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Interlude: The Escalator Trap \u2013 4:15 PM",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/casey/b004/c003/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The ELstat Briefing \u2013 5:30 PM",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/casey/b004/c003/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Topography Trap \u2013 5:45 PM",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/casey/b004/c003/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Surface Fleet \u2013 6:00 PM",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/casey/b004/c003/p004": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: The Front Gate Arrival \u2013 6:20 PM",
+        "theme": "raggiesoft-books"
+    }
+}
