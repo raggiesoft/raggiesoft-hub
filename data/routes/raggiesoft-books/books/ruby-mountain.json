@@ -1,0 +1,530 @@
+{
+    "common": {
+        "site": "raggiesoft-books",
+        "theme": "raggiesoft-books",
+        "siteName": "Ocean View Archives",
+        "isSequential": true,
+        "showSidebar": true,
+        "sidebar": "raggiesoft-books/sidebar-book",
+        "headerMenu": "raggiesoft-books/header-books",
+        "footer": "raggiesoft-books/footer-books",
+        "navbarBrandLogo": "/raggiesoft-books/images/logos/oceanview-archives.svg",
+        "navbarBrandText": "<span class=\"ova-serif fw-bold\" style=\"color: #E3B27C;\">Ocean View Archives</span>",
+        "navbarBrandLink": "/raggiesoft-books"
+    },
+    "/raggiesoft-books/books/ruby-mountain": {
+        "view": "pages/raggiesoft-books/books/series",
+        "title": "ruby-mountain",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/ruby-mountain/b001/c001/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Traitor (18:00)",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/ruby-mountain/b001/c001/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Vision (18:15)",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/ruby-mountain/b001/c001/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Migration (19:00)",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/ruby-mountain/b001/c002/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Final Ultimatum (09:00)",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/ruby-mountain/b001/c002/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Standoff (11:00)",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/ruby-mountain/b001/c002/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Eviction (11:22 AM)",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/ruby-mountain/b001/c002/p004": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: The Assessment (11:45)",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/ruby-mountain/b001/c003/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Diagnostics (08:00)",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/ruby-mountain/b001/c003/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Truman Execution (14:30)",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/ruby-mountain/b002/c001/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Handover (12:00)",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/ruby-mountain/b002/c001/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Baseline (12:15)",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/ruby-mountain/b002/c001/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The System Error (13:10)",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/ruby-mountain/b002/c001/p004": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: The Island Anomaly (17:50)",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/ruby-mountain/b002/c001/p005": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 5: The Domestic Delusion (19:30)",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/ruby-mountain/b002/c001/p006": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 6: The Autonomous Transfer (03:00)",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/ruby-mountain/b003/c001/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Dial-Up Escape (08:45)",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/ruby-mountain/b003/c001/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Coffee Shop Contingency (09:05)",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/ruby-mountain/b003/c001/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Mountain Mobilizes (08:47)",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/ruby-mountain/b003/c001/p004": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: The Wrong Schedule (09:15)",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/ruby-mountain/b003/c001/p005": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 5: The Free Passage (10:35)",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/ruby-mountain/b003/c001/p006": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 6: The Widening Gap (10:55)",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/ruby-mountain/b003/c001/p007": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 7: The Terminal (11:54)",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/ruby-mountain/b003/c002/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Reunion (12:08)",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/ruby-mountain/b003/c002/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Ascent and the Truth (12:15)",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/ruby-mountain/b003/c002/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Island Trap (12:15)",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/ruby-mountain/b003/c002/p004": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: The Gateway (13:15)",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/ruby-mountain/b003/c002/p005": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 5: Prospector Road & The Ticking Clock (14:30)",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/ruby-mountain/b003/c002/p006": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 6: The Rationalization (17:15)",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/ruby-mountain/b003/c002/p007": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 7: Johnny is Home (17:25)",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/ruby-mountain/b003/c003/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Proxy (10:00)",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/ruby-mountain/b003/c004/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: Pro Se (08:50)",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/ruby-mountain/b003/c004/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Paper Trail (09:05)",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/ruby-mountain/b003/c004/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Federal Trap (09:15)",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/ruby-mountain/b003/c004/p004": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: The Recess (09:20)",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/ruby-mountain/b003/c004/p005": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 5: The Gavel (09:35)",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/ruby-mountain/b003/c005/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: Baseline Telemetry (14:00)",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/ruby-mountain/b003/c005/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Sovereign Blueprint (14:30)",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/ruby-mountain/b003/c005/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Winter Manifest (15:00)",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/ruby-mountain/b003/c005/p004": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: The Legal Nuke (15:30)",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/ruby-mountain/b003/c005/p005": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 5: The Anchor (16:15)",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/ruby-mountain/b003/c005/p006": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 6: The Perimeter (18:30)",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/ruby-mountain/b003/c005/p007": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 7: The Final Perimeter (19:15)",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/ruby-mountain/b003/c006/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Pineapple Express (09:15)",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/ruby-mountain/b003/c006/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Checkpoint (11:15)",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/ruby-mountain/b003/c006/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Air-Gap (11:30)",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/ruby-mountain/b003/c006/p004": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: The Escort (12:00)",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/ruby-mountain/b003/c006/p005": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 5: The Tactical Seed (12:45)",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/ruby-mountain/b003/c007/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Backchannel (10:30)",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/ruby-mountain/b003/c007/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The War Council (10:35)",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/ruby-mountain/b003/c008/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: All Hands (06:30)",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/ruby-mountain/b003/c008/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Rebrand (07:00)",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/ruby-mountain/b003/c008/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Line of Fire (08:30)",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/ruby-mountain/b003/c009/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Breaking Point (05:45)",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/ruby-mountain/b004/c001/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Dining Hall & The Iron Shield (15:20)",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/ruby-mountain/b004/c001/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The May Variable (15:30)",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/ruby-mountain/b004/c001/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Switchback & The Sanctuary (16:00)",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/ruby-mountain/b004/c001/p004": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: The Revelation (21:45)",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/ruby-mountain/b004/c001/p005": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 5: The Midnight War Room (23:15)",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/ruby-mountain/b004/c002/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Waking Fortress (08:15)",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/ruby-mountain/b004/c002/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Underworld (08:45)",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/ruby-mountain/b004/c002/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Heat of the Kitchen (09:15)",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/ruby-mountain/b004/c002/p004": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: The Five-Mile Moat (09:45)",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/ruby-mountain/b004/c002/p005": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 5: The 1903 Illusion (10:15)",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/ruby-mountain/b004/c002/p006": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 6: The Golden Hour (17:00)",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/ruby-mountain/b004/c003/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Grand Seating (19:30)",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/ruby-mountain/b004/c003/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Architecture of Influence (20:15)",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/ruby-mountain/b004/c003/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The 1.3 Billion Dollar Ghost (20:45)",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/ruby-mountain/b004/c003/p004": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: The Palate Cleanser (21:30)",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/ruby-mountain/b004/c003/p005": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 5: The Sanctuary (00:30)",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/ruby-mountain/b004/c004/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Cascades Concrete (08:45)",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/ruby-mountain/b004/c004/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Brutal Awakening (09:00 - 10:00)",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/ruby-mountain/b004/c004/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Heavy Escort (10:15 - 11:30)",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/ruby-mountain/b004/c004/p004": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: The Handoff (12:23)",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/ruby-mountain/b004/c004/p005": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 5: The Steel Drops (12:42)",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/ruby-mountain/b005/c001/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Winter Syllabus (15:00)",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/ruby-mountain/b005/c001/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Practical Lab (15:20)",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/ruby-mountain/b005/c001/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Presentation (15:45)",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/ruby-mountain/b005/c001/p004": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: The Pack (16:00)",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/ruby-mountain/b005/c002/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Pajama Protocol (18:15)",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/ruby-mountain/b005/c003/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Whiteout (07:00)",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/ruby-mountain/b005/c003/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Tether (07:30)",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/ruby-mountain/b005/c003/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Anchor and the Kitchen (07:30)",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/ruby-mountain/b005/c003/p004": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: The Thaw (08:35)",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/ruby-mountain/b005/c003/p005": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 5: The Deep Clean (09:30)",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/ruby-mountain/b005/c003/p006": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 6: The West Wing (11:45)",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/ruby-mountain/b005/c003/p007": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 7: The Heist (13:30)",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/ruby-mountain/b005/c003/p008": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 8: The Heart of the Keep (14:15)",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/ruby-mountain/b005/c003/p009": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 9: The Tripwire (14:35)",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/ruby-mountain/b005/c003/p010": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 10: The SS7 Layer (14:45)",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/ruby-mountain/b005/c003/p011": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 11: The Legacy Grid (14:50)",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/ruby-mountain/b005/c004/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: Logistical Triage (08:00)",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/ruby-mountain/b005/c005/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The First Summit (09:00)",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/ruby-mountain/b006/c001/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Broadcast (09:00)",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/ruby-mountain/b006/c001/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Sentencing (09:15)",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/ruby-mountain/b007/c001/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: A Pulled Permit (10:15)",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/ruby-mountain/b007/c001/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Vanguard Assembly (10:45)",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/ruby-mountain/b007/c002/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: Judicial Fury (09:00)",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/ruby-mountain/b007/c002/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Rendezvous (13:30)",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/ruby-mountain/b008/c001/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Rookie (14:00)",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/ruby-mountain/b008/c001/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Gridmaster (14:15)",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/ruby-mountain/b008/c002/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Civilian Instinct (14:15)",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/ruby-mountain/b008/c002/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Apex Protocol (14:20)",
+        "theme": "raggiesoft-books"
+    }
+}

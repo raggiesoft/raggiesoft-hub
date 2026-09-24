@@ -1544,187 +1544,297 @@
     },
     "/raggiesoft-books/books/rachel/b015/c001/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 1: The Ride Free Area \u2013 3:30 PM (PST)",
-        "theme": "raggiesoft-books"
-    },
-    "/raggiesoft-books/books/rachel/b015/c001/p002": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 2: King Street Station \u2013 4:15 PM (PST)",
-        "theme": "raggiesoft-books"
-    },
-    "/raggiesoft-books/books/rachel/b015/c001/p003": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 3: The Hostile Perimeter \u2013 6:30 PM (PST)",
-        "theme": "raggiesoft-books"
-    },
-    "/raggiesoft-books/books/rachel/b015/c001/p004": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 4: Pizza Diplomacy \u2013 7:15 PM (PST)",
-        "theme": "raggiesoft-books"
-    },
-    "/raggiesoft-books/books/rachel/b015/c001/p005": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 5: The Ascent \u2013 8:30 PM (PST)",
-        "theme": "raggiesoft-books"
-    },
-    "/raggiesoft-books/books/rachel/b015/c001/p006": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 6: The Air Mattress Barricade \u2013 9:30 PM (PST)",
-        "theme": "raggiesoft-books"
-    },
-    "/raggiesoft-books/books/rachel/b015/c001/p007": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 7: Stille Nacht \u2013 10:30 PM (PST)",
+        "title": "Part 1: The Pitch",
         "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/rachel/b015/c002/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 1: The Kent Station Transfer \u2013 8:00 AM (PST)",
+        "title": "Part 1: The Deception at Churchland Square",
         "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/rachel/b015/c002/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 2: Jessica's Train Ride \u2013 8:15 AM (PST)",
+        "title": "Part 2: The Monticello Arena Transfer",
         "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/rachel/b015/c002/p003": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 3: Off to Pierce County \u2013 8:15 AM (PST)",
+        "title": "Part 3: The Terminal Counter",
         "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/rachel/b015/c002/p004": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 4: Quantum Reunion \u2013 11:45 AM (PST)",
+        "title": "Part 4: Gate 4",
         "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/rachel/b015/c002/p005": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 5: The Shattered Fog \u2013 11:45 PM (PST)",
+        "title": "Part 5: The Last Hot Meal",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/rachel/b015/c002/p006": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 6: Interstate 81",
         "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/rachel/b015/c003/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 1: Forced Exit \u2013 4:00 AM (PST)",
+        "title": "Part 1: The Knoxville Layover",
         "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/rachel/b015/c003/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 2: The Renton Transfer \u2013 6:00 AM (PST)",
+        "title": "Part 2: Music City",
         "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/rachel/b015/c003/p003": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 3: The Broil's Run \u2013 12:15 PM (PST)",
+        "title": "Part 3: The CRT Bus",
         "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/rachel/b015/c003/p004": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 4: The Corporate Perimeter \u2013 1:30 PM (PST)",
+        "title": "Part 4: Lambert Airport",
         "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/rachel/b015/c003/p005": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 5: The Clarity Upgrade \u2013 2:30 PM (PST)",
+        "title": "Part 5: Kansas City",
         "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/rachel/b015/c003/p006": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 6: The Software Payload \u2013 3:00 PM (PST)",
-        "theme": "raggiesoft-books"
-    },
-    "/raggiesoft-books/books/rachel/b015/c003/p007": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 7: The Southern Cavalry \u2013 2:00 PM (PST)",
-        "theme": "raggiesoft-books"
-    },
-    "/raggiesoft-books/books/rachel/b015/c003/p008": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 8: The Physical Evidence \u2013 5:30 PM (PST)",
-        "theme": "raggiesoft-books"
-    },
-    "/raggiesoft-books/books/rachel/b015/c003/p009": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 9: The Pack Secures the Perimeter \u2013 6:30 PM (PST)",
+        "title": "Part 6: The Heart of the Night",
         "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/rachel/b015/c004/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 1: The Liquid Rebellion \u2013 9:00 AM (PST)",
+        "title": "Part 1: The State Line",
         "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/rachel/b015/c004/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 2: The Route 106 Escort \u2013 11:30 AM (PST)",
+        "title": "Part 2: The Colby Turn",
         "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/rachel/b015/c004/p003": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 3: The Victory Meal \u2013 12:00 PM (PST)",
+        "title": "Part 3: Mile High",
         "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/rachel/b015/c004/p004": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 4: Forging the Armor \u2013 1:00 PM (PST)",
+        "title": "Part 4: The Denver Layover",
         "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/rachel/b015/c004/p005": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 5: The Mountain Prospect \u2013 2:30 PM (PST)",
+        "title": "Part 5: The Wyoming Detour",
         "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/rachel/b015/c004/p006": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 6: The First Citizen \u2013 4:30 PM (PST)",
-        "theme": "raggiesoft-books"
-    },
-    "/raggiesoft-books/books/rachel/b015/c004/p007": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 7: The Lost Sentinel \u2013 6:00 PM (PST)",
-        "theme": "raggiesoft-books"
-    },
-    "/raggiesoft-books/books/rachel/b015/c004/p008": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 8: The Perimeter Holds \u2013 8:30 PM (PST)",
+        "title": "Part 6: The Salt Lake Layover",
         "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/rachel/b015/c005/p001": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 1: The Tukwila Extraction \u2013 5:30 AM (PST)",
+        "title": "Part 1: The Idaho Crossing",
         "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/rachel/b015/c005/p002": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 2: The Moving Fortress \u2013 6:15 AM (PST)",
+        "title": "Part 2: The Pasco Lock",
         "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/rachel/b015/c005/p003": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 3: Crossing the Rubicon \u2013 12:30 PM (PST)",
+        "title": "Part 3: 911 Stewart Street",
         "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/rachel/b015/c005/p004": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 4: The Forward Operating Base \u2013 1:15 PM (PST)",
+        "title": "Part 4: The Ride Free Area",
         "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/rachel/b015/c005/p005": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 5: The Hydrotherapy Protocol \u2013 2:30 PM (PST)",
+        "title": "Part 5: King Street Station",
         "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/rachel/b015/c005/p006": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 6: The House Guard Protocol \u2013 5:00 PM (PST)",
+        "title": "Part 6: The Hostile Perimeter",
         "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/rachel/b015/c005/p007": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 7: The Digital Sandbox \u2013 6:30 PM (PST)",
+        "title": "Part 7: Pizza Diplomacy",
         "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/rachel/b015/c005/p008": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 8: The Final Baseline \u2013 10:00 PM (PST)",
+        "title": "Part 8: The Ascent",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/rachel/b015/c005/p009": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 9: The Air Mattress Barricade",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/rachel/b015/c005/p010": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 10: Stille Nacht",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/rachel/b015/c006/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Kent Station Transfer",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/rachel/b015/c006/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: Jessica's Train Ride",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/rachel/b015/c006/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: Off to Pierce County",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/rachel/b015/c006/p004": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: Quantum Reunion",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/rachel/b015/c006/p005": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 5: The Shattered Fog",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/rachel/b015/c007/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: Forced Exit",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/rachel/b015/c007/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Renton Transfer",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/rachel/b015/c007/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Broil's Run",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/rachel/b015/c007/p004": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: The Corporate Perimeter",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/rachel/b015/c007/p005": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 5: The Clarity Upgrade",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/rachel/b015/c007/p006": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 6: The Software Payload",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/rachel/b015/c007/p007": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 7: The Southern Cavalry",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/rachel/b015/c007/p008": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 8: The Physical Evidence",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/rachel/b015/c007/p009": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 9: The Pack Secures the Perimeter",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/rachel/b015/c008/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Liquid Rebellion",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/rachel/b015/c008/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Route 106 Escort",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/rachel/b015/c008/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Victory Meal",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/rachel/b015/c008/p004": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: Forging the Armor",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/rachel/b015/c008/p005": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 5: The Mountain Prospect",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/rachel/b015/c008/p006": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 6: The First Citizen",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/rachel/b015/c008/p007": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 7: The Lost Sentinel",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/rachel/b015/c008/p008": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 8: The Perimeter Holds",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/rachel/b015/c009/p001": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Tukwila Extraction",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/rachel/b015/c009/p002": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Moving Fortress",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/rachel/b015/c009/p003": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: Crossing the Rubicon",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/rachel/b015/c009/p004": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: The Forward Operating Base",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/rachel/b015/c009/p005": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 5: The Hydrotherapy Protocol",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/rachel/b015/c009/p006": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 6: The House Guard Protocol",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/rachel/b015/c009/p007": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 7: The Digital Sandbox",
+        "theme": "raggiesoft-books"
+    },
+    "/raggiesoft-books/books/rachel/b015/c009/p008": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 8: The Final Baseline",
         "theme": "raggiesoft-books"
     },
     "/raggiesoft-books/books/rachel/b016/c001/p001": {
