@@ -17,319 +17,382 @@
         "title": "The Silver Gauntlet of Aethel",
         "theme": "raggiesoft-books"
     },
-    "/raggiesoft-books/books/aethel/b001/c001/p001": {
+    "/raggiesoft-books/books/aethel/era-1-the-age-of-myth/book-i-the-silver-sun/chapter-1-the-architect-s-lesson": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Chapter 1: The Architect's Lesson",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c001/p001.md"
     },
-    "/raggiesoft-books/books/aethel/b001/c001/p002": {
+    "/raggiesoft-books/books/aethel/era-1-the-age-of-myth/book-i-the-silver-sun/chapter-2-the-age-of-twilight": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Chapter 2: The Age of Twilight",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c001/p002.md"
     },
-    "/raggiesoft-books/books/aethel/b002/c001/p001": {
+    "/raggiesoft-books/books/aethel/era-2-the-age-of-silence/book-i-the-silver-gauntlet-of-aethel/chapter-1-the-scholar-of-the-twin-suns": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Chapter 1: The Scholar of the Twin Suns",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b002/c001/p001.md"
     },
-    "/raggiesoft-books/books/aethel/b002/c001/p002": {
+    "/raggiesoft-books/books/aethel/era-2-the-age-of-silence/book-i-the-silver-gauntlet-of-aethel/chapter-2-the-heresy-of-order": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Chapter 2: The Heresy of Order",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b002/c001/p002.md"
     },
-    "/raggiesoft-books/books/aethel/b002/c001/p003": {
+    "/raggiesoft-books/books/aethel/era-2-the-age-of-silence/book-i-the-silver-gauntlet-of-aethel/chapter-3-the-flight-of-the-guardians": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Chapter 3: The Flight of the Guardians",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b002/c001/p003.md"
     },
-    "/raggiesoft-books/books/aethel/b002/c001/p004": {
+    "/raggiesoft-books/books/aethel/era-2-the-age-of-silence/book-i-the-silver-gauntlet-of-aethel/chapter-4-the-northern-wastes": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Chapter 4: The Northern Wastes",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b002/c001/p004.md"
     },
-    "/raggiesoft-books/books/aethel/b002/c001/p005": {
+    "/raggiesoft-books/books/aethel/era-2-the-age-of-silence/book-i-the-silver-gauntlet-of-aethel/chapter-5-the-foundlings-of-sunstead": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Chapter 5: The Foundlings of Sunstead",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b002/c001/p005.md"
     },
-    "/raggiesoft-books/books/aethel/b002/c001/p006": {
+    "/raggiesoft-books/books/aethel/era-2-the-age-of-silence/book-i-the-silver-gauntlet-of-aethel/chapter-6-a-home-in-the-hearth": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Chapter 6: A Home in the Hearth",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b002/c001/p006.md"
     },
-    "/raggiesoft-books/books/aethel/b002/c001/p007": {
+    "/raggiesoft-books/books/aethel/era-2-the-age-of-silence/book-i-the-silver-gauntlet-of-aethel/chapter-7-a-cage-of-comfort": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Chapter 7: A Cage of Comfort",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b002/c001/p007.md"
     },
-    "/raggiesoft-books/books/aethel/b002/c001/p008": {
+    "/raggiesoft-books/books/aethel/era-2-the-age-of-silence/book-i-the-silver-gauntlet-of-aethel/chapter-8-the-abduction": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Chapter 8: The Abduction",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b002/c001/p008.md"
     },
-    "/raggiesoft-books/books/aethel/b002/c001/p009": {
+    "/raggiesoft-books/books/aethel/era-2-the-age-of-silence/book-i-the-silver-gauntlet-of-aethel/chapter-9-a-reluctant-vow": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Chapter 9: A Reluctant Vow",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b002/c001/p009.md"
     },
-    "/raggiesoft-books/books/aethel/b002/c001/p010": {
+    "/raggiesoft-books/books/aethel/era-2-the-age-of-silence/book-i-the-silver-gauntlet-of-aethel/chapter-10-the-sunken-city-of-sorrows": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Chapter 10: The Sunken City of Sorrows",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b002/c001/p010.md"
     },
-    "/raggiesoft-books/books/aethel/b002/c001/p011": {
+    "/raggiesoft-books/books/aethel/era-2-the-age-of-silence/book-i-the-silver-gauntlet-of-aethel/chapter-11-the-whispering-woods": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Chapter 11: The Whispering Woods",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b002/c001/p011.md"
     },
-    "/raggiesoft-books/books/aethel/b002/c001/p012": {
+    "/raggiesoft-books/books/aethel/era-2-the-age-of-silence/book-i-the-silver-gauntlet-of-aethel/chapter-12-the-hunted-hero": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Chapter 12: The Hunted Hero",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b002/c001/p012.md"
     },
-    "/raggiesoft-books/books/aethel/b002/c002/p001": {
+    "/raggiesoft-books/books/aethel/era-2-the-age-of-silence/book-ii-the-shadow-s-heart/chapter-1-the-hunter-and-the-hunted": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Chapter 1: The Hunter and the Hunted",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b002/c002/p001.md"
     },
-    "/raggiesoft-books/books/aethel/b002/c002/p002": {
+    "/raggiesoft-books/books/aethel/era-2-the-age-of-silence/book-ii-the-shadow-s-heart/chapter-2-a-cage-of-silver-light": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Chapter 2: A Cage of Silver Light",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b002/c002/p002.md"
     },
-    "/raggiesoft-books/books/aethel/b002/c002/p003": {
+    "/raggiesoft-books/books/aethel/era-2-the-age-of-silence/book-ii-the-shadow-s-heart/chapter-3-the-trial-of-the-crystal-spiders": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Chapter 3: The Trial of the Crystal Spiders",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b002/c002/p003.md"
     },
-    "/raggiesoft-books/books/aethel/b002/c002/p004": {
+    "/raggiesoft-books/books/aethel/era-2-the-age-of-silence/book-ii-the-shadow-s-heart/chapter-4-seeds-of-rebellion": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Chapter 4: Seeds of Rebellion",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b002/c002/p004.md"
     },
-    "/raggiesoft-books/books/aethel/b002/c002/p005": {
+    "/raggiesoft-books/books/aethel/era-2-the-age-of-silence/book-ii-the-shadow-s-heart/chapter-5-a-lord-s-manifesto": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Chapter 5: A Lord's Manifesto",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b002/c002/p005.md"
     },
-    "/raggiesoft-books/books/aethel/b002/c002/p006": {
+    "/raggiesoft-books/books/aethel/era-2-the-age-of-silence/book-ii-the-shadow-s-heart/chapter-6-a-question-of-chaos": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Chapter 6: A Question of Chaos",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b002/c002/p006.md"
     },
-    "/raggiesoft-books/books/aethel/b002/c002/p007": {
+    "/raggiesoft-books/books/aethel/era-2-the-age-of-silence/book-ii-the-shadow-s-heart/chapter-7-sacrifice-or-queen": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Chapter 7: Sacrifice or Queen?",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b002/c002/p007.md"
     },
-    "/raggiesoft-books/books/aethel/b002/c002/p008": {
+    "/raggiesoft-books/books/aethel/era-2-the-age-of-silence/book-ii-the-shadow-s-heart/chapter-8-the-silverwing-s-flight": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Chapter 8: The Silverwing's Flight",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b002/c002/p008.md"
     },
-    "/raggiesoft-books/books/aethel/b002/c002/p009": {
+    "/raggiesoft-books/books/aethel/era-2-the-age-of-silence/book-ii-the-shadow-s-heart/chapter-9-the-guardian-s-gate": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Chapter 9: The Guardian's Gate",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b002/c002/p009.md"
     },
-    "/raggiesoft-books/books/aethel/b002/c002/p010": {
+    "/raggiesoft-books/books/aethel/era-2-the-age-of-silence/book-ii-the-shadow-s-heart/chapter-10-the-last-temptation": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Chapter 10: The Last Temptation",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b002/c002/p010.md"
     },
-    "/raggiesoft-books/books/aethel/b002/c002/p011": {
+    "/raggiesoft-books/books/aethel/era-2-the-age-of-silence/book-ii-the-shadow-s-heart/chapter-11-the-vision-and-the-vow": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Chapter 11: The Vision and the Vow",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b002/c002/p011.md"
     },
-    "/raggiesoft-books/books/aethel/b002/c002/p012": {
+    "/raggiesoft-books/books/aethel/era-2-the-age-of-silence/book-ii-the-shadow-s-heart/chapter-12-a-path-of-light": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Chapter 12: A Path of Light",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b002/c002/p012.md"
     },
-    "/raggiesoft-books/books/aethel/b002/c003/p001": {
+    "/raggiesoft-books/books/aethel/era-2-the-age-of-silence/book-iii-the-dawn-of-the-twins/chapter-1-embers-of-hope": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Chapter 1: Embers of Hope",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b002/c003/p001.md"
     },
-    "/raggiesoft-books/books/aethel/b002/c003/p002": {
+    "/raggiesoft-books/books/aethel/era-2-the-age-of-silence/book-iii-the-dawn-of-the-twins/chapter-2-the-hall-of-shattered-heroes": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Chapter 2: The Hall of Shattered Heroes",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b002/c003/p002.md"
     },
-    "/raggiesoft-books/books/aethel/b002/c003/p003": {
+    "/raggiesoft-books/books/aethel/era-2-the-age-of-silence/book-iii-the-dawn-of-the-twins/chapter-3-a-fortress-divided": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Chapter 3: A Fortress Divided",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b002/c003/p003.md"
     },
-    "/raggiesoft-books/books/aethel/b002/c003/p004": {
+    "/raggiesoft-books/books/aethel/era-2-the-age-of-silence/book-iii-the-dawn-of-the-twins/chapter-4-the-ascent": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Chapter 4: The Ascent",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b002/c003/p004.md"
     },
-    "/raggiesoft-books/books/aethel/b002/c003/p005": {
+    "/raggiesoft-books/books/aethel/era-2-the-age-of-silence/book-iii-the-dawn-of-the-twins/chapter-5-reunion": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Chapter 5: Reunion",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b002/c003/p005.md"
     },
-    "/raggiesoft-books/books/aethel/b002/c003/p006": {
+    "/raggiesoft-books/books/aethel/era-2-the-age-of-silence/book-iii-the-dawn-of-the-twins/chapter-6-the-battle-of-wills": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Chapter 6: The Battle of Wills",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b002/c003/p006.md"
     },
-    "/raggiesoft-books/books/aethel/b002/c003/p007": {
+    "/raggiesoft-books/books/aethel/era-2-the-age-of-silence/book-iii-the-dawn-of-the-twins/chapter-7-an-empathetic-victory": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Chapter 7: An Empathetic Victory",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b002/c003/p007.md"
     },
-    "/raggiesoft-books/books/aethel/b002/c003/p008": {
+    "/raggiesoft-books/books/aethel/era-2-the-age-of-silence/book-iii-the-dawn-of-the-twins/chapter-8-the-earned-hug": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Chapter 8: The Earned Hug",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b002/c003/p008.md"
     },
-    "/raggiesoft-books/books/aethel/b002/c003/p009": {
+    "/raggiesoft-books/books/aethel/era-2-the-age-of-silence/book-iii-the-dawn-of-the-twins/chapter-9-a-new-dawn": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Chapter 9: A New Dawn",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b002/c003/p009.md"
     },
-    "/raggiesoft-books/books/aethel/b002/c003/p010": {
+    "/raggiesoft-books/books/aethel/era-2-the-age-of-silence/book-iii-the-dawn-of-the-twins/chapter-10-the-long-road-home": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Chapter 10: The Long Road Home",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b002/c003/p010.md"
     },
-    "/raggiesoft-books/books/aethel/b002/c003/p011": {
+    "/raggiesoft-books/books/aethel/era-2-the-age-of-silence/book-iii-the-dawn-of-the-twins/chapter-11-the-steward-s-law": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Chapter 11: The Steward's Law",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b002/c003/p011.md"
     },
-    "/raggiesoft-books/books/aethel/b002/c003/p012": {
+    "/raggiesoft-books/books/aethel/era-2-the-age-of-silence/book-iii-the-dawn-of-the-twins/chapter-12-the-last-temptation": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Chapter 12: The Last Temptation",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b002/c003/p012.md"
     },
-    "/raggiesoft-books/books/aethel/b002/c003/p013": {
+    "/raggiesoft-books/books/aethel/era-2-the-age-of-silence/book-iii-the-dawn-of-the-twins/chapter-13-the-people-s-will": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Chapter 13: The People's Will",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b002/c003/p013.md"
     },
-    "/raggiesoft-books/books/aethel/b002/c003/p014": {
+    "/raggiesoft-books/books/aethel/era-2-the-age-of-silence/book-iii-the-dawn-of-the-twins/epilogue-the-twin-suns-hearth": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Epilogue: The Twin Suns' Hearth",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b002/c003/p014.md"
     },
-    "/raggiesoft-books/books/aethel/b003/c001/p001": {
+    "/raggiesoft-books/books/aethel/era-3-the-age-of-tides/book-i-the-glass-sea/chapter-1-the-tide-and-the-torch": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Chapter 1: The Tide and the Torch",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b003/c001/p001.md"
     },
-    "/raggiesoft-books/books/aethel/b003/c001/p002": {
+    "/raggiesoft-books/books/aethel/era-3-the-age-of-tides/book-i-the-glass-sea/chapter-2-the-heart-of-the-world": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Chapter 2: The Heart of the World",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b003/c001/p002.md"
     },
-    "/raggiesoft-books/books/aethel/b003/c001/p003": {
+    "/raggiesoft-books/books/aethel/era-3-the-age-of-tides/book-i-the-glass-sea/chapter-3-the-weave-of-the-water": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Chapter 3: The Weave of the Water",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b003/c001/p003.md"
     },
-    "/raggiesoft-books/books/aethel/b003/c001/p004": {
+    "/raggiesoft-books/books/aethel/era-3-the-age-of-tides/book-i-the-glass-sea/chapter-4-the-gyre": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Chapter 4: The Gyre",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b003/c001/p004.md"
     },
-    "/raggiesoft-books/books/aethel/b003/c002/p001": {
+    "/raggiesoft-books/books/aethel/era-3-the-age-of-tides/book-ii-the-star-eater/chapter-1-the-silent-sector": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Chapter 1: The Silent Sector",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b003/c002/p001.md"
     },
-    "/raggiesoft-books/books/aethel/b003/c002/p002": {
+    "/raggiesoft-books/books/aethel/era-3-the-age-of-tides/book-ii-the-star-eater/chapter-2-the-ribcage-of-the-gods": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Chapter 2: The Ribcage of the Gods",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b003/c002/p002.md"
     },
-    "/raggiesoft-books/books/aethel/b003/c002/p003": {
+    "/raggiesoft-books/books/aethel/era-3-the-age-of-tides/book-ii-the-star-eater/chapter-3-the-war-for-the-mind": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Chapter 3: The War for the Mind",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b003/c002/p003.md"
     },
-    "/raggiesoft-books/books/aethel/b003/c002/p004": {
+    "/raggiesoft-books/books/aethel/era-3-the-age-of-tides/book-ii-the-star-eater/chapter-4-the-long-way-down": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Chapter 4: The Long Way Down",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b003/c002/p004.md"
     },
-    "/raggiesoft-books/books/aethel/b003/c002/p005": {
+    "/raggiesoft-books/books/aethel/era-3-the-age-of-tides/book-ii-the-star-eater/chapter-5-the-cottage": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Chapter 5: The Cottage",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b003/c002/p005.md"
     },
-    "/raggiesoft-books/books/aethel/b004/c001/p001": {
+    "/raggiesoft-books/books/aethel/era-4-the-iron-heart/book-i-the-magnetic-north/chapter-1-the-art-of-doing-nothing": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Chapter 1: The Art of Doing Nothing",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b004/c001/p001.md"
     },
-    "/raggiesoft-books/books/aethel/b004/c001/p002": {
+    "/raggiesoft-books/books/aethel/era-4-the-iron-heart/book-i-the-magnetic-north/chapter-2-the-alarm-clock": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Chapter 2: The Alarm Clock",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b004/c001/p002.md"
     },
-    "/raggiesoft-books/books/aethel/b004/c001/p003": {
+    "/raggiesoft-books/books/aethel/era-4-the-iron-heart/book-i-the-magnetic-north/chapter-3-the-magnetic-highway": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Chapter 3: The Magnetic Highway",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b004/c001/p003.md"
     },
-    "/raggiesoft-books/books/aethel/b004/c001/p004": {
+    "/raggiesoft-books/books/aethel/era-4-the-iron-heart/book-i-the-magnetic-north/chapter-4-the-clockwork-ocean": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Chapter 4: The Clockwork Ocean",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b004/c001/p004.md"
     },
-    "/raggiesoft-books/books/aethel/b004/c001/p005": {
+    "/raggiesoft-books/books/aethel/era-4-the-iron-heart/book-i-the-magnetic-north/chapter-4-the-return-journey": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Chapter 4: The Return Journey",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b004/c001/p005.md"
     },
-    "/raggiesoft-books/books/aethel/b004/c002/p001": {
+    "/raggiesoft-books/books/aethel/era-4-the-iron-heart/book-ii-the-pilgrimage/chapter-1-the-privacy-of-stone": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Chapter 1: The Privacy of Stone",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b004/c002/p001.md"
     },
-    "/raggiesoft-books/books/aethel/b004/c002/p002": {
+    "/raggiesoft-books/books/aethel/era-4-the-iron-heart/book-ii-the-pilgrimage/chapter-2-the-smoke-and-the-fire": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Chapter 2: The Smoke and the Fire",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b004/c002/p002.md"
     },
-    "/raggiesoft-books/books/aethel/b004/c002/p003": {
+    "/raggiesoft-books/books/aethel/era-4-the-iron-heart/book-ii-the-pilgrimage/chapter-3-the-council-of-neighbors": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Chapter 3: The Council of Neighbors",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b004/c002/p003.md"
     },
-    "/raggiesoft-books/books/aethel/b004/c002/p004": {
+    "/raggiesoft-books/books/aethel/era-4-the-iron-heart/book-ii-the-pilgrimage/chapter-4-the-king-at-the-gate": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Chapter 4: The King at the Gate",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b004/c002/p004.md"
     },
-    "/raggiesoft-books/books/aethel/b004/c002/p005": {
+    "/raggiesoft-books/books/aethel/era-4-the-iron-heart/book-ii-the-pilgrimage/chapter-5-the-demon-and-the-witch": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Chapter 5: The Demon and the Witch",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b004/c002/p005.md"
     },
-    "/raggiesoft-books/books/aethel/b004/c002/p006": {
+    "/raggiesoft-books/books/aethel/era-4-the-iron-heart/book-ii-the-pilgrimage/chapter-6-the-starlight-check-in": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Chapter 6: The Starlight Check-In",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b004/c002/p006.md"
     },
-    "/raggiesoft-books/books/aethel/b004/c003/p001": {
+    "/raggiesoft-books/books/aethel/era-4-the-iron-heart/book-iii-the-zero-point/prologue-the-silence-between-stars": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Prologue: The Silence Between Stars",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b004/c003/p001.md"
     },
-    "/raggiesoft-books/books/aethel/b004/c003/p002": {
+    "/raggiesoft-books/books/aethel/era-4-the-iron-heart/book-iii-the-zero-point/chapter-1-the-shadow-at-noon": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Chapter 1: The Shadow at Noon",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b004/c003/p002.md"
     },
-    "/raggiesoft-books/books/aethel/b004/c003/p003": {
+    "/raggiesoft-books/books/aethel/era-4-the-iron-heart/book-iii-the-zero-point/chapter-2-the-needle-and-the-shroud": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Chapter 2: The Needle and the Shroud",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b004/c003/p003.md"
     }
 }

@@ -17,994 +17,1192 @@
         "title": "Nichole",
         "theme": "raggiesoft-books"
     },
-    "/raggiesoft-books/books/nichole/b001/c001/p001": {
+    "/raggiesoft-books/books/nichole/elementary-school/the-newport-vacation/the-bachelor-pad-the-lab": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Bachelor Pad (The Lab)",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c001/p001.md"
     },
-    "/raggiesoft-books/books/nichole/b001/c001/p002": {
+    "/raggiesoft-books/books/nichole/elementary-school/the-newport-vacation/the-night-watch": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Night Watch",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c001/p002.md"
     },
-    "/raggiesoft-books/books/nichole/b001/c001/p003": {
+    "/raggiesoft-books/books/nichole/elementary-school/the-newport-vacation/the-pitch": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Pitch",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c001/p003.md"
     },
-    "/raggiesoft-books/books/nichole/b001/c001/p004": {
+    "/raggiesoft-books/books/nichole/elementary-school/the-newport-vacation/the-circuit-barn": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Circuit Barn",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c001/p004.md"
     },
-    "/raggiesoft-books/books/nichole/b001/c001/p005": {
+    "/raggiesoft-books/books/nichole/elementary-school/the-newport-vacation/the-island-tour": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Island Tour",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c001/p005.md"
     },
-    "/raggiesoft-books/books/nichole/b001/c001/p006": {
+    "/raggiesoft-books/books/nichole/elementary-school/the-newport-vacation/the-park-summit": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Park Summit",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c001/p006.md"
     },
-    "/raggiesoft-books/books/nichole/b001/c001/p007": {
+    "/raggiesoft-books/books/nichole/elementary-school/the-newport-vacation/the-quiet-convoy": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Quiet Convoy",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c001/p007.md"
     },
-    "/raggiesoft-books/books/nichole/b001/c001/p008": {
+    "/raggiesoft-books/books/nichole/elementary-school/the-newport-vacation/bayfront-creamery": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "BayFront Creamery",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c001/p008.md"
     },
-    "/raggiesoft-books/books/nichole/b001/c001/p009": {
+    "/raggiesoft-books/books/nichole/elementary-school/the-newport-vacation/the-bennett-beacon": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Bennett Beacon",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c001/p009.md"
     },
-    "/raggiesoft-books/books/nichole/b001/c002/p001": {
+    "/raggiesoft-books/books/nichole/elementary-school/project-alpha/origin-story-project-alpha": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Origin Story: Project Alpha",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c002/p001.md"
     },
-    "/raggiesoft-books/books/nichole/b002/c001/p001": {
+    "/raggiesoft-books/books/nichole/middle-school/the-test-run/the-curb-trap": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Curb Trap",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b002/c001/p001.md"
     },
-    "/raggiesoft-books/books/nichole/b002/c002/p001": {
+    "/raggiesoft-books/books/nichole/middle-school/the-yellow-wall/arrival-at-morrison-middle-school": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Arrival at Morrison Middle School",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b002/c002/p001.md"
     },
-    "/raggiesoft-books/books/nichole/b002/c003/p001": {
+    "/raggiesoft-books/books/nichole/middle-school/middle-school-life-working-title/the-fire-alarm": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Fire Alarm",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b002/c003/p001.md"
     },
-    "/raggiesoft-books/books/nichole/b002/c003/p002": {
+    "/raggiesoft-books/books/nichole/middle-school/middle-school-life-working-title/the-call": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Call",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b002/c003/p002.md"
     },
-    "/raggiesoft-books/books/nichole/b002/c003/p003": {
+    "/raggiesoft-books/books/nichole/middle-school/middle-school-life-working-title/the-federal-hammer-date-november-12-1996-time-3-45-pm-location-1850-delaney-street-virginia-beach": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Federal Hammer Date: November 12, 1996 Time: 3:45 PM Location: 1850 Delaney Street, Virginia Beach",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b002/c003/p003.md"
     },
-    "/raggiesoft-books/books/nichole/b002/c003/p004": {
+    "/raggiesoft-books/books/nichole/middle-school/middle-school-life-working-title/the-third-wheel": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Third Wheel",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b002/c003/p004.md"
     },
-    "/raggiesoft-books/books/nichole/b002/c003/p005": {
+    "/raggiesoft-books/books/nichole/middle-school/middle-school-life-working-title/the-architect-and-the-laborer": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Architect and the Laborer",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b002/c003/p005.md"
     },
-    "/raggiesoft-books/books/nichole/b003/c001/p001": {
+    "/raggiesoft-books/books/nichole/freshman-year/welcome-to-northwood-high-school/the-5-am-alarm": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The 5 AM Alarm",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b003/c001/p001.md"
     },
-    "/raggiesoft-books/books/nichole/b003/c001/p002": {
+    "/raggiesoft-books/books/nichole/freshman-year/welcome-to-northwood-high-school/the-war-room-breakfast": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The War Room (Breakfast)",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b003/c001/p002.md"
     },
-    "/raggiesoft-books/books/nichole/b003/c001/p003": {
+    "/raggiesoft-books/books/nichole/freshman-year/welcome-to-northwood-high-school/the-soft-trap": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Soft Trap",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b003/c001/p003.md"
     },
-    "/raggiesoft-books/books/nichole/b003/c001/p004": {
+    "/raggiesoft-books/books/nichole/freshman-year/welcome-to-northwood-high-school/the-reckoning": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Reckoning",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b003/c001/p004.md"
     },
-    "/raggiesoft-books/books/nichole/b003/c001/p005": {
+    "/raggiesoft-books/books/nichole/freshman-year/welcome-to-northwood-high-school/the-escort": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Escort",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b003/c001/p005.md"
     },
-    "/raggiesoft-books/books/nichole/b003/c001/p006": {
+    "/raggiesoft-books/books/nichole/freshman-year/welcome-to-northwood-high-school/the-return": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Return",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b003/c001/p006.md"
     },
-    "/raggiesoft-books/books/nichole/b003/c001/p007": {
+    "/raggiesoft-books/books/nichole/freshman-year/welcome-to-northwood-high-school/the-longest-hour": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Longest Hour",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b003/c001/p007.md"
     },
-    "/raggiesoft-books/books/nichole/b003/c001/p008": {
+    "/raggiesoft-books/books/nichole/freshman-year/welcome-to-northwood-high-school/the-hand-off": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Hand-Off",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b003/c001/p008.md"
     },
-    "/raggiesoft-books/books/nichole/b003/c002/p001": {
+    "/raggiesoft-books/books/nichole/freshman-year/the-smoke-test/the-area-of-rescue": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Area of Rescue",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b003/c002/p001.md"
     },
-    "/raggiesoft-books/books/nichole/b003/c002/p002": {
+    "/raggiesoft-books/books/nichole/freshman-year/the-smoke-test/the-descent": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Descent",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b003/c002/p002.md"
     },
-    "/raggiesoft-books/books/nichole/b003/c002/p003": {
+    "/raggiesoft-books/books/nichole/freshman-year/the-smoke-test/the-bus-loop": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Bus Loop",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b003/c002/p003.md"
     },
-    "/raggiesoft-books/books/nichole/b003/c002/p004": {
+    "/raggiesoft-books/books/nichole/freshman-year/the-smoke-test/the-stand": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Stand",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b003/c002/p004.md"
     },
-    "/raggiesoft-books/books/nichole/b003/c002/p005": {
+    "/raggiesoft-books/books/nichole/freshman-year/the-smoke-test/the-long-hour": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Long Hour",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b003/c002/p005.md"
     },
-    "/raggiesoft-books/books/nichole/b003/c002/p006": {
+    "/raggiesoft-books/books/nichole/freshman-year/the-smoke-test/the-all-clear": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The All Clear",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b003/c002/p006.md"
     },
-    "/raggiesoft-books/books/nichole/b003/c002/p007": {
+    "/raggiesoft-books/books/nichole/freshman-year/the-smoke-test/the-return": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Return",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b003/c002/p007.md"
     },
-    "/raggiesoft-books/books/nichole/b004/c001/p001": {
+    "/raggiesoft-books/books/nichole/junior-year/planning-for-the-future/transitioning-nichole-s-iep": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Transitioning Nichole\u2019s IEP",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b004/c001/p001.md"
     },
-    "/raggiesoft-books/books/nichole/b004/c001/p002": {
+    "/raggiesoft-books/books/nichole/junior-year/planning-for-the-future/the-poverty-trap": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Poverty Trap",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b004/c001/p002.md"
     },
-    "/raggiesoft-books/books/nichole/b004/c001/p003": {
+    "/raggiesoft-books/books/nichole/junior-year/planning-for-the-future/the-offer": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Offer",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b004/c001/p003.md"
     },
-    "/raggiesoft-books/books/nichole/b004/c002/p001": {
+    "/raggiesoft-books/books/nichole/junior-year/the-handover/the-first-shift": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The First Shift",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b004/c002/p001.md"
     },
-    "/raggiesoft-books/books/nichole/b004/c002/p002": {
+    "/raggiesoft-books/books/nichole/junior-year/the-handover/the-certification": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Certification",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b004/c002/p002.md"
     },
-    "/raggiesoft-books/books/nichole/b004/c002/p003": {
+    "/raggiesoft-books/books/nichole/junior-year/the-handover/the-maintenance-crew": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Maintenance Crew",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b004/c002/p003.md"
     },
-    "/raggiesoft-books/books/nichole/b005/c001/p001": {
+    "/raggiesoft-books/books/nichole/senior-year/graduation/the-breach": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Breach",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b005/c001/p001.md"
     },
-    "/raggiesoft-books/books/nichole/b005/c001/p002": {
+    "/raggiesoft-books/books/nichole/senior-year/graduation/the-empty-chair": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Empty Chair",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b005/c001/p002.md"
     },
-    "/raggiesoft-books/books/nichole/b005/c001/p003": {
+    "/raggiesoft-books/books/nichole/senior-year/graduation/the-search": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Search",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b005/c001/p003.md"
     },
-    "/raggiesoft-books/books/nichole/b005/c001/p004": {
+    "/raggiesoft-books/books/nichole/senior-year/graduation/the-promise": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Promise",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b005/c001/p004.md"
     },
-    "/raggiesoft-books/books/nichole/b005/c002/p001": {
+    "/raggiesoft-books/books/nichole/senior-year/the-reset/damage-control": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Damage Control",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b005/c002/p001.md"
     },
-    "/raggiesoft-books/books/nichole/b005/c002/p002": {
+    "/raggiesoft-books/books/nichole/senior-year/the-reset/the-vow": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Vow",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b005/c002/p002.md"
     },
-    "/raggiesoft-books/books/nichole/b005/c002/p003": {
+    "/raggiesoft-books/books/nichole/senior-year/the-reset/the-war-room": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The War Room",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b005/c002/p003.md"
     },
-    "/raggiesoft-books/books/nichole/b006/c001/p001": {
+    "/raggiesoft-books/books/nichole/college-tours/the-misfit-tour/the-free-laptop-trap": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The \"Free\" Laptop Trap",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b006/c001/p001.md"
     },
-    "/raggiesoft-books/books/nichole/b006/c001/p002": {
+    "/raggiesoft-books/books/nichole/college-tours/the-misfit-tour/the-commuter-special": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Commuter Special",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b006/c001/p002.md"
     },
-    "/raggiesoft-books/books/nichole/b006/c002/p001": {
+    "/raggiesoft-books/books/nichole/college-tours/the-institution/the-valley-of-hope": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Valley of Hope",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b006/c002/p001.md"
     },
-    "/raggiesoft-books/books/nichole/b006/c002/p002": {
+    "/raggiesoft-books/books/nichole/college-tours/the-institution/the-fortress": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Fortress",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b006/c002/p002.md"
     },
-    "/raggiesoft-books/books/nichole/b006/c002/p003": {
+    "/raggiesoft-books/books/nichole/college-tours/the-institution/the-intake": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Intake",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b006/c002/p003.md"
     },
-    "/raggiesoft-books/books/nichole/b006/c002/p004": {
+    "/raggiesoft-books/books/nichole/college-tours/the-institution/the-cage": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Cage",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b006/c002/p004.md"
     },
-    "/raggiesoft-books/books/nichole/b006/c002/p005": {
+    "/raggiesoft-books/books/nichole/college-tours/the-institution/the-barracks": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Barracks",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b006/c002/p005.md"
     },
-    "/raggiesoft-books/books/nichole/b006/c002/p006": {
+    "/raggiesoft-books/books/nichole/college-tours/the-institution/the-rec-hall": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Rec Hall",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b006/c002/p006.md"
     },
-    "/raggiesoft-books/books/nichole/b006/c002/p007": {
+    "/raggiesoft-books/books/nichole/college-tours/the-institution/the-escape": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Escape",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b006/c002/p007.md"
     },
-    "/raggiesoft-books/books/nichole/b006/c002/p008": {
+    "/raggiesoft-books/books/nichole/college-tours/the-institution/the-intersection": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Intersection",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b006/c002/p008.md"
     },
-    "/raggiesoft-books/books/nichole/b006/c002/p009": {
+    "/raggiesoft-books/books/nichole/college-tours/the-institution/the-safe-house": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Safe House",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b006/c002/p009.md"
     },
-    "/raggiesoft-books/books/nichole/b006/c002/p010": {
+    "/raggiesoft-books/books/nichole/college-tours/the-institution/the-pasture": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Pasture",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b006/c002/p010.md"
     },
-    "/raggiesoft-books/books/nichole/b006/c002/p011": {
+    "/raggiesoft-books/books/nichole/college-tours/the-institution/the-war-council": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The War Council",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b006/c002/p011.md"
     },
-    "/raggiesoft-books/books/nichole/b006/c002/p012": {
+    "/raggiesoft-books/books/nichole/college-tours/the-institution/the-nest": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Nest",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b006/c002/p012.md"
     },
-    "/raggiesoft-books/books/nichole/b006/c002/p013": {
+    "/raggiesoft-books/books/nichole/college-tours/the-institution/the-night-watch": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Night Watch",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b006/c002/p013.md"
     },
-    "/raggiesoft-books/books/nichole/b006/c002/p014": {
+    "/raggiesoft-books/books/nichole/college-tours/the-institution/the-morning-report": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Morning Report",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b006/c002/p014.md"
     },
-    "/raggiesoft-books/books/nichole/b006/c002/p015": {
+    "/raggiesoft-books/books/nichole/college-tours/the-institution/the-pivot": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Pivot",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b006/c002/p015.md"
     },
-    "/raggiesoft-books/books/nichole/b006/c003/p001": {
+    "/raggiesoft-books/books/nichole/college-tours/virginia-dominion-university/the-thirteen-hour-problem": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Thirteen-Hour Problem",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b006/c003/p001.md"
     },
-    "/raggiesoft-books/books/nichole/b006/c003/p002": {
+    "/raggiesoft-books/books/nichole/college-tours/virginia-dominion-university/home-field-advantage": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Home Field Advantage",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b006/c003/p002.md"
     },
-    "/raggiesoft-books/books/nichole/b006/c003/p003": {
+    "/raggiesoft-books/books/nichole/college-tours/virginia-dominion-university/the-roll-call": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Roll Call",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b006/c003/p003.md"
     },
-    "/raggiesoft-books/books/nichole/b006/c003/p004": {
+    "/raggiesoft-books/books/nichole/college-tours/virginia-dominion-university/the-tower-of-words": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Tower of Words",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b006/c003/p004.md"
     },
-    "/raggiesoft-books/books/nichole/b006/c003/p005": {
+    "/raggiesoft-books/books/nichole/college-tours/virginia-dominion-university/the-sanctuary": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Sanctuary",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b006/c003/p005.md"
     },
-    "/raggiesoft-books/books/nichole/b006/c003/p006": {
+    "/raggiesoft-books/books/nichole/college-tours/virginia-dominion-university/the-life-sciences-hub": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Life Sciences Hub",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b006/c003/p006.md"
     },
-    "/raggiesoft-books/books/nichole/b006/c003/p007": {
+    "/raggiesoft-books/books/nichole/college-tours/virginia-dominion-university/the-magic-carpet": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Magic Carpet",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b006/c003/p007.md"
     },
-    "/raggiesoft-books/books/nichole/b006/c003/p008": {
+    "/raggiesoft-books/books/nichole/college-tours/virginia-dominion-university/the-hub": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Hub",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b006/c003/p008.md"
     },
-    "/raggiesoft-books/books/nichole/b006/c003/p009": {
+    "/raggiesoft-books/books/nichole/college-tours/virginia-dominion-university/the-dealbreaker": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Dealbreaker",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b006/c003/p009.md"
     },
-    "/raggiesoft-books/books/nichole/b006/c003/p010": {
+    "/raggiesoft-books/books/nichole/college-tours/virginia-dominion-university/the-retreat": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Retreat",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b006/c003/p010.md"
     },
-    "/raggiesoft-books/books/nichole/b006/c004/p001": {
+    "/raggiesoft-books/books/nichole/college-tours/trek-up-the-east-coast/the-peninsula-run": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Peninsula Run",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b006/c004/p001.md"
     },
-    "/raggiesoft-books/books/nichole/b006/c004/p002": {
+    "/raggiesoft-books/books/nichole/college-tours/trek-up-the-east-coast/the-delaware-trap": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Delaware Trap",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b006/c004/p002.md"
     },
-    "/raggiesoft-books/books/nichole/b006/c004/p003": {
+    "/raggiesoft-books/books/nichole/college-tours/trek-up-the-east-coast/the-new-jersey-layover": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The New Jersey Layover",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b006/c004/p003.md"
     },
-    "/raggiesoft-books/books/nichole/b006/c004/p004": {
+    "/raggiesoft-books/books/nichole/college-tours/trek-up-the-east-coast/the-machine-at-rest": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Machine at Rest",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b006/c004/p004.md"
     },
-    "/raggiesoft-books/books/nichole/b006/c004/p005": {
+    "/raggiesoft-books/books/nichole/college-tours/trek-up-the-east-coast/the-hopeful-morning": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Hopeful Morning",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b006/c004/p005.md"
     },
-    "/raggiesoft-books/books/nichole/b006/c005/p001": {
+    "/raggiesoft-books/books/nichole/college-tours/vermont/the-green-mountain-haul": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Green Mountain Haul",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b006/c005/p001.md"
     },
-    "/raggiesoft-books/books/nichole/b006/c005/p002": {
+    "/raggiesoft-books/books/nichole/college-tours/vermont/putney-college-open-house": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Putney College Open House",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b006/c005/p002.md"
     },
-    "/raggiesoft-books/books/nichole/b006/c005/p003": {
+    "/raggiesoft-books/books/nichole/college-tours/vermont/the-drive-back": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Drive Back",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b006/c005/p003.md"
     },
-    "/raggiesoft-books/books/nichole/b006/c005/p004": {
+    "/raggiesoft-books/books/nichole/college-tours/vermont/the-fuel-stop": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Fuel Stop",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b006/c005/p004.md"
     },
-    "/raggiesoft-books/books/nichole/b006/c006/p001": {
+    "/raggiesoft-books/books/nichole/college-tours/an-ocean-of-an-idea/the-new-jersey-pivot": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The New Jersey Pivot",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b006/c006/p001.md"
     },
-    "/raggiesoft-books/books/nichole/b006/c006/p002": {
+    "/raggiesoft-books/books/nichole/college-tours/an-ocean-of-an-idea/the-juggernaut": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Juggernaut",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b006/c006/p002.md"
     },
-    "/raggiesoft-books/books/nichole/b006/c006/p003": {
+    "/raggiesoft-books/books/nichole/college-tours/an-ocean-of-an-idea/the-diner-debrief": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Diner Debrief",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b006/c006/p003.md"
     },
-    "/raggiesoft-books/books/nichole/b006/c006/p004": {
+    "/raggiesoft-books/books/nichole/college-tours/an-ocean-of-an-idea/the-ocean-state-option": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Ocean State Option",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b006/c006/p004.md"
     },
-    "/raggiesoft-books/books/nichole/b006/c006/p005": {
+    "/raggiesoft-books/books/nichole/college-tours/an-ocean-of-an-idea/the-ocean-state-arrival": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Ocean State Arrival",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b006/c006/p005.md"
     },
-    "/raggiesoft-books/books/nichole/b006/c007/p001": {
+    "/raggiesoft-books/books/nichole/college-tours/the-commuter-loop/the-holy-cow": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Holy Cow",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b006/c007/p001.md"
     },
-    "/raggiesoft-books/books/nichole/b006/c007/p002": {
+    "/raggiesoft-books/books/nichole/college-tours/the-commuter-loop/the-gateway-connection": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Gateway Connection",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b006/c007/p002.md"
     },
-    "/raggiesoft-books/books/nichole/b006/c007/p003": {
+    "/raggiesoft-books/books/nichole/college-tours/the-commuter-loop/the-sea-gate": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Sea Gate",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b006/c007/p003.md"
     },
-    "/raggiesoft-books/books/nichole/b006/c007/p004": {
+    "/raggiesoft-books/books/nichole/college-tours/the-commuter-loop/the-bull-run": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Bull Run",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b006/c007/p004.md"
     },
-    "/raggiesoft-books/books/nichole/b006/c007/p005": {
+    "/raggiesoft-books/books/nichole/college-tours/the-commuter-loop/the-braxton-link": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Braxton Link",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b006/c007/p005.md"
     },
-    "/raggiesoft-books/books/nichole/b006/c007/p006": {
+    "/raggiesoft-books/books/nichole/college-tours/the-commuter-loop/the-library-commons": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Library Commons",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b006/c007/p006.md"
     },
-    "/raggiesoft-books/books/nichole/b006/c007/p007": {
+    "/raggiesoft-books/books/nichole/college-tours/the-commuter-loop/the-debrief": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Debrief",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b006/c007/p007.md"
     },
-    "/raggiesoft-books/books/nichole/b006/c007/p008": {
+    "/raggiesoft-books/books/nichole/college-tours/the-commuter-loop/the-upgrade": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Upgrade",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b006/c007/p008.md"
     },
-    "/raggiesoft-books/books/nichole/b006/c008/p001": {
+    "/raggiesoft-books/books/nichole/college-tours/the-gap-year-protocol/the-disassembly-date-july-8-2003-time-6-30-pm-location-1850-delaney-street-virginia-beach-virginia": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Disassembly Date: July 8, 2003 Time: 6:30 PM Location: 1850 Delaney Street, Virginia Beach, Virginia",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b006/c008/p001.md"
     },
-    "/raggiesoft-books/books/nichole/b006/c008/p002": {
+    "/raggiesoft-books/books/nichole/college-tours/the-gap-year-protocol/the-portsmouth-project": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Portsmouth Project",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b006/c008/p002.md"
     },
-    "/raggiesoft-books/books/nichole/b006/c008/p003": {
+    "/raggiesoft-books/books/nichole/college-tours/the-gap-year-protocol/the-fortress-on-west-main": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Fortress on West Main",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b006/c008/p003.md"
     },
-    "/raggiesoft-books/books/nichole/b006/c008/p004": {
+    "/raggiesoft-books/books/nichole/college-tours/the-gap-year-protocol/the-departure": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Departure",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b006/c008/p004.md"
     },
-    "/raggiesoft-books/books/nichole/b006/c008/p005": {
+    "/raggiesoft-books/books/nichole/college-tours/the-gap-year-protocol/the-visitor": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Visitor",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b006/c008/p005.md"
     },
-    "/raggiesoft-books/books/nichole/b006/c008/p006": {
+    "/raggiesoft-books/books/nichole/college-tours/the-gap-year-protocol/the-hydrostatic-lock": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Hydrostatic Lock",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b006/c008/p006.md"
     },
-    "/raggiesoft-books/books/nichole/b006/c008/p007": {
+    "/raggiesoft-books/books/nichole/college-tours/the-gap-year-protocol/the-milestone-payment": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Milestone Payment",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b006/c008/p007.md"
     },
-    "/raggiesoft-books/books/nichole/b006/c008/p008": {
+    "/raggiesoft-books/books/nichole/college-tours/the-gap-year-protocol/the-fortress-blueprint": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Fortress Blueprint",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b006/c008/p008.md"
     },
-    "/raggiesoft-books/books/nichole/b006/c008/p009": {
+    "/raggiesoft-books/books/nichole/college-tours/the-gap-year-protocol/the-credential-hunt": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Credential Hunt",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b006/c008/p009.md"
     },
-    "/raggiesoft-books/books/nichole/b006/c009/p001": {
+    "/raggiesoft-books/books/nichole/college-tours/the-independent-grid/the-commute": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Commute",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b006/c009/p001.md"
     },
-    "/raggiesoft-books/books/nichole/b006/c009/p002": {
+    "/raggiesoft-books/books/nichole/college-tours/the-independent-grid/the-concourse-connection": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Concourse Connection",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b006/c009/p002.md"
     },
-    "/raggiesoft-books/books/nichole/b006/c009/p003": {
+    "/raggiesoft-books/books/nichole/college-tours/the-independent-grid/the-call-of-the-bull": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Call of the Bull",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b006/c009/p003.md"
     },
-    "/raggiesoft-books/books/nichole/b006/c009/p004": {
+    "/raggiesoft-books/books/nichole/college-tours/the-independent-grid/the-mole-lifestyle": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Mole Lifestyle",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b006/c009/p004.md"
     },
-    "/raggiesoft-books/books/nichole/b006/c009/p005": {
+    "/raggiesoft-books/books/nichole/college-tours/the-independent-grid/the-commuter-waiver": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Commuter Waiver",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b006/c009/p005.md"
     },
-    "/raggiesoft-books/books/nichole/b006/c009/p006": {
+    "/raggiesoft-books/books/nichole/college-tours/the-independent-grid/the-anti-sales-pitch": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Anti-Sales Pitch",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b006/c009/p006.md"
     },
-    "/raggiesoft-books/books/nichole/b006/c009/p007": {
+    "/raggiesoft-books/books/nichole/college-tours/the-independent-grid/refueling-the-machine": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Refueling the Machine",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b006/c009/p007.md"
     },
-    "/raggiesoft-books/books/nichole/b006/c009/p008": {
+    "/raggiesoft-books/books/nichole/college-tours/the-independent-grid/the-bull-run": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Bull Run",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b006/c009/p008.md"
     },
-    "/raggiesoft-books/books/nichole/b006/c009/p009": {
+    "/raggiesoft-books/books/nichole/college-tours/the-independent-grid/the-credential-check": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Credential Check",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b006/c009/p009.md"
     },
-    "/raggiesoft-books/books/nichole/b006/c009/p010": {
+    "/raggiesoft-books/books/nichole/college-tours/the-independent-grid/the-detour-and-the-grid": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Detour and The Grid",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b006/c009/p010.md"
     },
-    "/raggiesoft-books/books/nichole/b006/c009/p011": {
+    "/raggiesoft-books/books/nichole/college-tours/the-independent-grid/the-debrief": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Debrief",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b006/c009/p011.md"
     },
-    "/raggiesoft-books/books/nichole/b007/c001/p001": {
+    "/raggiesoft-books/books/nichole/the-gap-year/the-fleet-upgrade/the-dual-grid-dilemma": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Dual-Grid Dilemma",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b007/c001/p001.md"
     },
-    "/raggiesoft-books/books/nichole/b007/c001/p002": {
+    "/raggiesoft-books/books/nichole/the-gap-year/the-fleet-upgrade/the-medical-handover": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Medical Handover",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b007/c001/p002.md"
     },
-    "/raggiesoft-books/books/nichole/b007/c001/p003": {
+    "/raggiesoft-books/books/nichole/the-gap-year/the-fleet-upgrade/the-christmas-compiler": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Christmas Compiler",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b007/c001/p003.md"
     },
-    "/raggiesoft-books/books/nichole/b007/c001/p004": {
+    "/raggiesoft-books/books/nichole/the-gap-year/the-fleet-upgrade/the-winter-test": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Winter Test",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b007/c001/p004.md"
     },
-    "/raggiesoft-books/books/nichole/b007/c001/p005": {
+    "/raggiesoft-books/books/nichole/the-gap-year/the-fleet-upgrade/the-grid-returns": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Grid Returns",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b007/c001/p005.md"
     },
-    "/raggiesoft-books/books/nichole/b007/c001/p006": {
+    "/raggiesoft-books/books/nichole/the-gap-year/the-fleet-upgrade/the-long-goodbye": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Long Goodbye",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b007/c001/p006.md"
     },
-    "/raggiesoft-books/books/nichole/b007/c001/p007": {
+    "/raggiesoft-books/books/nichole/the-gap-year/the-fleet-upgrade/the-silent-investor": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Silent Investor",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b007/c001/p007.md"
     },
-    "/raggiesoft-books/books/nichole/b007/c001/p008": {
+    "/raggiesoft-books/books/nichole/the-gap-year/the-fleet-upgrade/the-final-transfer": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Final Transfer",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b007/c001/p008.md"
     },
-    "/raggiesoft-books/books/nichole/b007/c002/p001": {
+    "/raggiesoft-books/books/nichole/the-gap-year/the-commuter-protocol/the-intake": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Intake",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b007/c002/p001.md"
     },
-    "/raggiesoft-books/books/nichole/b007/c002/p002": {
+    "/raggiesoft-books/books/nichole/the-gap-year/the-commuter-protocol/the-application": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Application",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b007/c002/p002.md"
     },
-    "/raggiesoft-books/books/nichole/b007/c002/p003": {
+    "/raggiesoft-books/books/nichole/the-gap-year/the-commuter-protocol/the-hardship-loophole": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Hardship Loophole",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b007/c002/p003.md"
     },
-    "/raggiesoft-books/books/nichole/b007/c002/p004": {
+    "/raggiesoft-books/books/nichole/the-gap-year/the-commuter-protocol/the-liability-lie": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Liability Lie",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b007/c002/p004.md"
     },
-    "/raggiesoft-books/books/nichole/b007/c002/p005": {
+    "/raggiesoft-books/books/nichole/the-gap-year/the-commuter-protocol/the-bridge-fund": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Bridge Fund",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b007/c002/p005.md"
     },
-    "/raggiesoft-books/books/nichole/b007/c002/p006": {
+    "/raggiesoft-books/books/nichole/the-gap-year/the-commuter-protocol/the-foundry": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Foundry",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b007/c002/p006.md"
     },
-    "/raggiesoft-books/books/nichole/b007/c002/p007": {
+    "/raggiesoft-books/books/nichole/the-gap-year/the-commuter-protocol/the-early-deployment": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Early Deployment",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b007/c002/p007.md"
     },
-    "/raggiesoft-books/books/nichole/b007/c002/p008": {
+    "/raggiesoft-books/books/nichole/the-gap-year/the-commuter-protocol/the-zero-barrier-routine": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Zero-Barrier Routine",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b007/c002/p008.md"
     },
-    "/raggiesoft-books/books/nichole/b007/c003/p001": {
+    "/raggiesoft-books/books/nichole/the-gap-year/exploring-braxton/the-zero-friction-protocol": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Zero-Friction Protocol",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b007/c003/p001.md"
     },
-    "/raggiesoft-books/books/nichole/b007/c003/p002": {
+    "/raggiesoft-books/books/nichole/the-gap-year/exploring-braxton/the-river-and-the-system": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The River and the System",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b007/c003/p002.md"
     },
-    "/raggiesoft-books/books/nichole/b007/c003/p003": {
+    "/raggiesoft-books/books/nichole/the-gap-year/exploring-braxton/the-edge-of-the-grid": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Edge of the Grid",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b007/c003/p003.md"
     },
-    "/raggiesoft-books/books/nichole/b007/c003/p004": {
+    "/raggiesoft-books/books/nichole/the-gap-year/exploring-braxton/the-safe-harbor": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Safe Harbor",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b007/c003/p004.md"
     },
-    "/raggiesoft-books/books/nichole/b007/c003/p005": {
+    "/raggiesoft-books/books/nichole/the-gap-year/exploring-braxton/the-gen-ed-pact": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Gen-Ed Pact",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b007/c003/p005.md"
     },
-    "/raggiesoft-books/books/nichole/b007/c004/p001": {
+    "/raggiesoft-books/books/nichole/the-gap-year/the-sync/the-war-room": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The War Room",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b007/c004/p001.md"
     },
-    "/raggiesoft-books/books/nichole/b007/c005/p001": {
+    "/raggiesoft-books/books/nichole/the-gap-year/the-fortress-test/the-severed-link": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Severed Link",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b007/c005/p001.md"
     },
-    "/raggiesoft-books/books/nichole/b007/c005/p002": {
+    "/raggiesoft-books/books/nichole/the-gap-year/the-fortress-test/the-siege": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Siege",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b007/c005/p002.md"
     },
-    "/raggiesoft-books/books/nichole/b007/c005/p003": {
+    "/raggiesoft-books/books/nichole/the-gap-year/the-fortress-test/the-watch": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Watch",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b007/c005/p003.md"
     },
-    "/raggiesoft-books/books/nichole/b007/c005/p004": {
+    "/raggiesoft-books/books/nichole/the-gap-year/the-fortress-test/the-all-clear": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The All-Clear",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b007/c005/p004.md"
     },
-    "/raggiesoft-books/books/nichole/b007/c005/p005": {
+    "/raggiesoft-books/books/nichole/the-gap-year/the-fortress-test/the-blueprint": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Blueprint",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b007/c005/p005.md"
     },
-    "/raggiesoft-books/books/nichole/b007/c005/p006": {
+    "/raggiesoft-books/books/nichole/the-gap-year/the-fortress-test/the-biological-override": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Biological Override",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b007/c005/p006.md"
     },
-    "/raggiesoft-books/books/nichole/b007/c005/p007": {
+    "/raggiesoft-books/books/nichole/the-gap-year/the-fortress-test/the-sacred-trust": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Sacred Trust",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b007/c005/p007.md"
     },
-    "/raggiesoft-books/books/nichole/b008/c001/p001": {
+    "/raggiesoft-books/books/nichole/braxton-freshman/the-first-semester/the-sorting-failure": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Sorting Failure",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b008/c001/p001.md"
     },
-    "/raggiesoft-books/books/nichole/b008/c001/p002": {
+    "/raggiesoft-books/books/nichole/braxton-freshman/the-first-semester/the-system-reboot": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The System Reboot",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b008/c001/p002.md"
     },
-    "/raggiesoft-books/books/nichole/b008/c001/p003": {
+    "/raggiesoft-books/books/nichole/braxton-freshman/the-first-semester/the-assembly": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Assembly",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b008/c001/p003.md"
     },
-    "/raggiesoft-books/books/nichole/b008/c001/p004": {
+    "/raggiesoft-books/books/nichole/braxton-freshman/the-first-semester/the-tactical-retreat": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Tactical Retreat",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b008/c001/p004.md"
     },
-    "/raggiesoft-books/books/nichole/b008/c001/p005": {
+    "/raggiesoft-books/books/nichole/braxton-freshman/the-first-semester/the-fortress-weekend": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Fortress Weekend",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b008/c001/p005.md"
     },
-    "/raggiesoft-books/books/nichole/b008/c002/p001": {
+    "/raggiesoft-books/books/nichole/braxton-freshman/the-machine-in-motion/the-zero-friction-morning": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Zero-Friction Morning",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b008/c002/p001.md"
     },
-    "/raggiesoft-books/books/nichole/b008/c002/p002": {
+    "/raggiesoft-books/books/nichole/braxton-freshman/the-machine-in-motion/the-commute": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Commute",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b008/c002/p002.md"
     },
-    "/raggiesoft-books/books/nichole/b008/c002/p003": {
+    "/raggiesoft-books/books/nichole/braxton-freshman/the-machine-in-motion/the-gen-ed-pact": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Gen-Ed Pact",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b008/c002/p003.md"
     },
-    "/raggiesoft-books/books/nichole/b008/c002/p004": {
+    "/raggiesoft-books/books/nichole/braxton-freshman/the-machine-in-motion/the-first-lecture": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The First Lecture",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b008/c002/p004.md"
     },
-    "/raggiesoft-books/books/nichole/b008/c002/p005": {
+    "/raggiesoft-books/books/nichole/braxton-freshman/the-machine-in-motion/the-clinical-override": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Clinical Override",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b008/c002/p005.md"
     },
-    "/raggiesoft-books/books/nichole/b008/c002/p006": {
+    "/raggiesoft-books/books/nichole/braxton-freshman/the-machine-in-motion/the-green-light": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Green Light",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b008/c002/p006.md"
     },
-    "/raggiesoft-books/books/nichole/b008/c002/p007": {
+    "/raggiesoft-books/books/nichole/braxton-freshman/the-machine-in-motion/the-transit-chase": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Transit Chase",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b008/c002/p007.md"
     },
-    "/raggiesoft-books/books/nichole/b008/c002/p008": {
+    "/raggiesoft-books/books/nichole/braxton-freshman/the-machine-in-motion/the-checkpoint-failure": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Checkpoint Failure",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b008/c002/p008.md"
     },
-    "/raggiesoft-books/books/nichole/b008/c002/p009": {
+    "/raggiesoft-books/books/nichole/braxton-freshman/the-machine-in-motion/the-realization": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Realization",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b008/c002/p009.md"
     },
-    "/raggiesoft-books/books/nichole/b008/c002/p010": {
+    "/raggiesoft-books/books/nichole/braxton-freshman/the-machine-in-motion/the-wrap-up": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Wrap Up",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b008/c002/p010.md"
     },
-    "/raggiesoft-books/books/nichole/b008/c002/p011": {
+    "/raggiesoft-books/books/nichole/braxton-freshman/the-machine-in-motion/the-treatment-protocol": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Treatment Protocol",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b008/c002/p011.md"
     },
-    "/raggiesoft-books/books/nichole/b008/c002/p012": {
+    "/raggiesoft-books/books/nichole/braxton-freshman/the-machine-in-motion/the-double-ambush": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Double Ambush",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b008/c002/p012.md"
     },
-    "/raggiesoft-books/books/nichole/b008/c002/p013": {
+    "/raggiesoft-books/books/nichole/braxton-freshman/the-machine-in-motion/the-sub-level-sanctuary": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Sub-Level Sanctuary",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b008/c002/p013.md"
     },
-    "/raggiesoft-books/books/nichole/b008/c002/p014": {
+    "/raggiesoft-books/books/nichole/braxton-freshman/the-machine-in-motion/the-filing": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Filing",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b008/c002/p014.md"
     },
-    "/raggiesoft-books/books/nichole/b008/c002/p015": {
+    "/raggiesoft-books/books/nichole/braxton-freshman/the-machine-in-motion/the-loudmouth": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Loudmouth",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b008/c002/p015.md"
     },
-    "/raggiesoft-books/books/nichole/b008/c003/p001": {
+    "/raggiesoft-books/books/nichole/braxton-freshman/nichole-adapts/engine-failure": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Engine Failure",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b008/c003/p001.md"
     },
-    "/raggiesoft-books/books/nichole/b008/c003/p002": {
+    "/raggiesoft-books/books/nichole/braxton-freshman/nichole-adapts/the-malpractice-shield": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Malpractice Shield",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b008/c003/p002.md"
     },
-    "/raggiesoft-books/books/nichole/b008/c003/p003": {
+    "/raggiesoft-books/books/nichole/braxton-freshman/nichole-adapts/the-integration": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Integration",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b008/c003/p003.md"
     },
-    "/raggiesoft-books/books/nichole/b008/c004/p001": {
+    "/raggiesoft-books/books/nichole/braxton-freshman/the-procedure-the-tune-up/the-handover-the-night-before-time-8-00-pm": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Handover (The Night Before) Time: 8:00 PM",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b008/c004/p001.md"
     },
-    "/raggiesoft-books/books/nichole/b008/c004/p002": {
+    "/raggiesoft-books/books/nichole/braxton-freshman/the-procedure-the-tune-up/the-admission": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Admission",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b008/c004/p002.md"
     },
-    "/raggiesoft-books/books/nichole/b008/c004/p003": {
+    "/raggiesoft-books/books/nichole/braxton-freshman/the-procedure-the-tune-up/the-surgical-consult": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Surgical Consult",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b008/c004/p003.md"
     },
-    "/raggiesoft-books/books/nichole/b008/c004/p004": {
+    "/raggiesoft-books/books/nichole/braxton-freshman/the-procedure-the-tune-up/the-separation": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Separation",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b008/c004/p004.md"
     },
-    "/raggiesoft-books/books/nichole/b008/c004/p005": {
+    "/raggiesoft-books/books/nichole/braxton-freshman/the-procedure-the-tune-up/the-war-room": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The War Room",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b008/c004/p005.md"
     },
-    "/raggiesoft-books/books/nichole/b008/c005/p001": {
+    "/raggiesoft-books/books/nichole/braxton-freshman/nichole-s-recovery/the-recovery-room-the-advocacy-test": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Recovery Room (The Advocacy Test)",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b008/c005/p001.md"
     },
-    "/raggiesoft-books/books/nichole/b008/c005/p002": {
+    "/raggiesoft-books/books/nichole/braxton-freshman/nichole-s-recovery/the-shift-partner": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Shift Partner",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b008/c005/p002.md"
     },
-    "/raggiesoft-books/books/nichole/b008/c005/p003": {
+    "/raggiesoft-books/books/nichole/braxton-freshman/nichole-s-recovery/the-discharge": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Discharge",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b008/c005/p003.md"
     },
-    "/raggiesoft-books/books/nichole/b008/c005/p004": {
+    "/raggiesoft-books/books/nichole/braxton-freshman/nichole-s-recovery/the-stiff-leg-transfer-the-physical-test": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The \"Stiff Leg\" Transfer (The Physical Test)",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b008/c005/p004.md"
     },
-    "/raggiesoft-books/books/nichole/b008/c005/p005": {
+    "/raggiesoft-books/books/nichole/braxton-freshman/nichole-s-recovery/the-clinical-standard": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Clinical Standard",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b008/c005/p005.md"
     },
-    "/raggiesoft-books/books/nichole/b008/c005/p006": {
+    "/raggiesoft-books/books/nichole/braxton-freshman/nichole-s-recovery/the-night-shift-the-spasm-protocol": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Night Shift (The Spasm Protocol)",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b008/c005/p006.md"
     },
-    "/raggiesoft-books/books/nichole/b008/c005/p007": {
+    "/raggiesoft-books/books/nichole/braxton-freshman/nichole-s-recovery/new-year-s-eve-the-shift-change": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "New Year's Eve (The Shift Change)",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b008/c005/p007.md"
     },
-    "/raggiesoft-books/books/nichole/b008/c006/p001": {
+    "/raggiesoft-books/books/nichole/braxton-freshman/the-routine/the-winter-siege": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Winter Siege",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b008/c006/p001.md"
     },
-    "/raggiesoft-books/books/nichole/b008/c006/p002": {
+    "/raggiesoft-books/books/nichole/braxton-freshman/the-routine/the-fuel-station": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Fuel Station",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b008/c006/p002.md"
     },
-    "/raggiesoft-books/books/nichole/b008/c006/p003": {
+    "/raggiesoft-books/books/nichole/braxton-freshman/the-routine/the-creative-session": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Creative Session",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b008/c006/p003.md"
     },
-    "/raggiesoft-books/books/nichole/b008/c006/p004": {
+    "/raggiesoft-books/books/nichole/braxton-freshman/the-routine/the-physical-toll": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Physical Toll",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b008/c006/p004.md"
     },
-    "/raggiesoft-books/books/nichole/b008/c006/p005": {
+    "/raggiesoft-books/books/nichole/braxton-freshman/the-routine/the-downgrade-day-release": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Downgrade (Day Release)",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b008/c006/p005.md"
     },
-    "/raggiesoft-books/books/nichole/b009/c001/p001": {
+    "/raggiesoft-books/books/nichole/braxton-junior-year/concept-the-joint-defense/the-outcome": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Outcome",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b009/c001/p001.md"
     },
-    "/raggiesoft-books/books/nichole/b010/c001/p001": {
+    "/raggiesoft-books/books/nichole/braxton-senior-year/graduation/the-protocol-negotiation": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Protocol Negotiation",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b010/c001/p001.md"
     },
-    "/raggiesoft-books/books/nichole/b010/c001/p002": {
+    "/raggiesoft-books/books/nichole/braxton-senior-year/graduation/the-cool-suit-modification": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The \"Cool Suit\" Modification",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b010/c001/p002.md"
     },
-    "/raggiesoft-books/books/nichole/b011/c001/p001": {
+    "/raggiesoft-books/books/nichole/bennett-dynamics/an-idea/the-incorporation": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Incorporation",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b011/c001/p001.md"
     },
-    "/raggiesoft-books/books/nichole/b011/c001/p002": {
+    "/raggiesoft-books/books/nichole/bennett-dynamics/an-idea/the-home-office-the-workflow": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Home Office (The Workflow)",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b011/c001/p002.md"
     },
-    "/raggiesoft-books/books/nichole/b011/c001/p003": {
+    "/raggiesoft-books/books/nichole/bennett-dynamics/an-idea/the-tablet-revolution": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Tablet Revolution",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b011/c001/p003.md"
     },
-    "/raggiesoft-books/books/nichole/b012/c001/p001": {
+    "/raggiesoft-books/books/nichole/the-twilight-years/the-long-retreat/the-last-funeral": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Last Funeral",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b012/c001/p001.md"
     },
-    "/raggiesoft-books/books/nichole/b012/c001/p002": {
+    "/raggiesoft-books/books/nichole/the-twilight-years/the-long-retreat/the-city-problem": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The City Problem",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b012/c001/p002.md"
     },
-    "/raggiesoft-books/books/nichole/b012/c001/p003": {
+    "/raggiesoft-books/books/nichole/the-twilight-years/the-long-retreat/the-decision": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Decision",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b012/c001/p003.md"
     },
-    "/raggiesoft-books/books/nichole/b012/c001/p004": {
+    "/raggiesoft-books/books/nichole/the-twilight-years/the-long-retreat/the-return": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Return",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b012/c001/p004.md"
     },
-    "/raggiesoft-books/books/nichole/b012/c002/p001": {
+    "/raggiesoft-books/books/nichole/the-twilight-years/the-slow-rust/the-first-breakdown": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The First Breakdown",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b012/c002/p001.md"
     },
-    "/raggiesoft-books/books/nichole/b012/c002/p002": {
+    "/raggiesoft-books/books/nichole/the-twilight-years/the-slow-rust/the-shared-breath": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Shared Breath",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b012/c002/p002.md"
     },
-    "/raggiesoft-books/books/nichole/b012/c002/p003": {
+    "/raggiesoft-books/books/nichole/the-twilight-years/the-slow-rust/the-final-perimeter": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Final Perimeter",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b012/c002/p003.md"
     },
-    "/raggiesoft-books/books/nichole/b013/c001/p001": {
+    "/raggiesoft-books/books/nichole/the-end/the-synchronized-shutdown/date-february-14-2058-age-72-location-the-master-suite-95-west-main-road-portsmouth-ri": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Date: February 14, 2058 Age: 72 Location: The Master Suite, 95 West Main Road, Portsmouth, RI",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b013/c001/p001.md"
     },
-    "/raggiesoft-books/books/nichole/b013/c001/p002": {
+    "/raggiesoft-books/books/nichole/the-end/the-synchronized-shutdown/epilogue-the-legacy": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Epilogue: The Legacy",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "b013/c001/p002.md"
     }
 }

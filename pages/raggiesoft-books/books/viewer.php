@@ -6,13 +6,35 @@
 
 // 1. Determine the path to the Markdown file on the CDN
 $prefix = '/raggiesoft-books/books/';
+$mdUrl = '';
+
 if (str_starts_with($request_uri, $prefix)) {
     $relativePath = substr($request_uri, strlen($prefix));
-} else {
-    $relativePath = ltrim($request_uri, '/');
+    $parts = explode('/', $relativePath);
+    $seriesSlug = $parts[0] ?? '';
+    
+    // Look up the actual file path in the Stardust Route JSON
+    $routesDir = dirname(__DIR__, 4) . '/data/routes/raggiesoft-books/books';
+    $routeFile = $routesDir . '/' . $seriesSlug . '.json';
+    
+    if (file_exists($routeFile)) {
+        $routeData = json_decode(file_get_contents($routeFile), true);
+        if (isset($routeData[$request_uri]['filePath'])) {
+            $actualFilePath = $routeData[$request_uri]['filePath'];
+            $mdUrl = $cdnBaseUrl . '/raggiesoft-books/books/' . $seriesSlug . '/' . $actualFilePath;
+        }
+    }
 }
 
-$mdUrl = $cdnBaseUrl . '/raggiesoft-books/books/' . $relativePath . '.md';
+// Fallback to legacy extraction if not found
+if (empty($mdUrl)) {
+    if (str_starts_with($request_uri, $prefix)) {
+        $relativePath = substr($request_uri, strlen($prefix));
+    } else {
+        $relativePath = ltrim($request_uri, '/');
+    }
+    $mdUrl = $cdnBaseUrl . '/raggiesoft-books/books/' . $relativePath . '.md';
+}
 
 // 2. Fetch Markdown Content
 $mdContent = @file_get_contents($mdUrl);
