@@ -94,8 +94,8 @@ if (count($pathParts) >= 2) {
     $bookSlug = $pathParts[0];
     $bookIdStr = $pathParts[1];
     
-    if (str_starts_with($bookIdStr, 'b')) {
-        $bookNum = (int)str_replace('b', '', $bookIdStr);
+    if (preg_match('/^book-(\d+)/', $bookIdStr, $m)) {
+        $bookNum = (int)$m[1];
         $katieUrl = $cdnBaseUrl . '/raggiesoft-books/books/' . $bookSlug . '/katie.json';
         $katieJson = @file_get_contents($katieUrl);
         

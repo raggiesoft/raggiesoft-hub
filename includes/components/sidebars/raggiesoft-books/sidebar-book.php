@@ -1,10 +1,12 @@
 <?php
 if (!function_exists('rs_slugify')) {
     function rs_slugify($string) {
-        $slug = strtolower(trim(preg_replace('/[^A-Za-z0-9-]+/', '-', strip_tags($string)), '-'));
+        $slug = mb_strtolower(trim(preg_replace('/[^A-Za-z0-9-]+/u', '-', strip_tags($string)), '-'));
         return preg_replace('/-+/', '-', $slug);
     }
 }
+
+
 /**
  * RaggieSoft Books - Sidebar Table of Contents
  * Fetches the specific book's katie.json from the CDN and builds a Web Awesome Tree
@@ -35,38 +37,18 @@ $seriesTitle = $katie['series_title'] ?? $config['sequenceName'] ?? 'Narrative T
 <div class="sidebar-wrapper">
     <div class="mb-4 pb-3 border-bottom px-2">
         <h5 class="fw-bold mb-1 font-heading text-body-emphasis"><?php
-if (!function_exists('rs_slugify')) {
-    function rs_slugify($string) {
-        $slug = strtolower(trim(preg_replace('/[^A-Za-z0-9-]+/', '-', strip_tags($string)), '-'));
-        return preg_replace('/-+/', '-', $slug);
-    }
-} echo htmlspecialchars($seriesTitle); ?></h5>
+ echo htmlspecialchars($seriesTitle); ?></h5>
         <div class="small text-body-secondary text-uppercase tracking-wider">Table of Contents</div>
     </div>
     
     <div class="book-toc">
         <?php
-if (!function_exists('rs_slugify')) {
-    function rs_slugify($string) {
-        $slug = strtolower(trim(preg_replace('/[^A-Za-z0-9-]+/', '-', strip_tags($string)), '-'));
-        return preg_replace('/-+/', '-', $slug);
-    }
-} if (!empty($books) && is_array($books)): ?>
+ if (!empty($books) && is_array($books)): ?>
             <wa-tree class="w-100 bg-transparent">
             <?php
-if (!function_exists('rs_slugify')) {
-    function rs_slugify($string) {
-        $slug = strtolower(trim(preg_replace('/[^A-Za-z0-9-]+/', '-', strip_tags($string)), '-'));
-        return preg_replace('/-+/', '-', $slug);
-    }
-} foreach ($books as $bIndex => $book): ?>
+ foreach ($books as $bIndex => $book): ?>
                 <?php
-if (!function_exists('rs_slugify')) {
-    function rs_slugify($string) {
-        $slug = strtolower(trim(preg_replace('/[^A-Za-z0-9-]+/', '-', strip_tags($string)), '-'));
-        return preg_replace('/-+/', '-', $slug);
-    }
-} 
+ 
                     $bookTitle = $book['book_title'] ?? 'Book ' . ($bIndex + 1); 
                     $chapters = $book['chapters'] ?? [];
                     // Auto-expand if there's only one book in the series
@@ -90,41 +72,16 @@ if (!function_exists('rs_slugify')) {
                     $isBookExpanded = (count($books) === 1 || $isBookActive) ? 'expanded="true"' : ''; 
                 ?>
                 <wa-tree-item <?php
-if (!function_exists('rs_slugify')) {
-    function rs_slugify($string) {
-        $slug = strtolower(trim(preg_replace('/[^A-Za-z0-9-]+/', '-', strip_tags($string)), '-'));
-        return preg_replace('/-+/', '-', $slug);
-    }
-} echo $isBookExpanded; ?>>
+ echo $isBookExpanded; ?>>
                     <span class="fw-semibold text-body-emphasis d-block" style="cursor: pointer;" onclick="this.parentElement.expanded = !this.parentElement.expanded;"><?php
-if (!function_exists('rs_slugify')) {
-    function rs_slugify($string) {
-        $slug = strtolower(trim(preg_replace('/[^A-Za-z0-9-]+/', '-', strip_tags($string)), '-'));
-        return preg_replace('/-+/', '-', $slug);
-    }
-} echo htmlspecialchars(html_entity_decode($bookTitle, ENT_QUOTES, 'UTF-8')); ?></span>
+ echo htmlspecialchars(html_entity_decode($bookTitle, ENT_QUOTES, 'UTF-8')); ?></span>
                     <span class="fw-semibold text-body-emphasis d-block" style="cursor: pointer;" onclick="event.preventDefault(); event.stopPropagation(); this.parentElement.expanded = !this.parentElement.expanded;"><?php
-if (!function_exists('rs_slugify')) {
-    function rs_slugify($string) {
-        $slug = strtolower(trim(preg_replace('/[^A-Za-z0-9-]+/', '-', strip_tags($string)), '-'));
-        return preg_replace('/-+/', '-', $slug);
-    }
-} echo htmlspecialchars(html_entity_decode($bookTitle, ENT_QUOTES, 'UTF-8')); ?></span>
+ echo htmlspecialchars(html_entity_decode($bookTitle, ENT_QUOTES, 'UTF-8')); ?></span>
                     
                     <?php
-if (!function_exists('rs_slugify')) {
-    function rs_slugify($string) {
-        $slug = strtolower(trim(preg_replace('/[^A-Za-z0-9-]+/', '-', strip_tags($string)), '-'));
-        return preg_replace('/-+/', '-', $slug);
-    }
-} foreach ($chapters as $cIndex => $chapter): ?>
+ foreach ($chapters as $cIndex => $chapter): ?>
                         <?php
-if (!function_exists('rs_slugify')) {
-    function rs_slugify($string) {
-        $slug = strtolower(trim(preg_replace('/[^A-Za-z0-9-]+/', '-', strip_tags($string)), '-'));
-        return preg_replace('/-+/', '-', $slug);
-    }
-} 
+ 
                             $chapTitle = $chapter['chap_title'] ?? 'Chapter ' . ($cIndex + 1); 
                             $parts = $chapter['parts'] ?? [];
                             
@@ -142,41 +99,16 @@ if (!function_exists('rs_slugify')) {
                             }
                         ?>
                         <wa-tree-item <?php
-if (!function_exists('rs_slugify')) {
-    function rs_slugify($string) {
-        $slug = strtolower(trim(preg_replace('/[^A-Za-z0-9-]+/', '-', strip_tags($string)), '-'));
-        return preg_replace('/-+/', '-', $slug);
-    }
-} echo $isChapterActive ? 'expanded="true"' : ''; ?>>
+ echo $isChapterActive ? 'expanded="true"' : ''; ?>>
                             <span class="text-body fw-medium d-block" style="cursor: pointer;" onclick="this.parentElement.expanded = !this.parentElement.expanded;"><?php
-if (!function_exists('rs_slugify')) {
-    function rs_slugify($string) {
-        $slug = strtolower(trim(preg_replace('/[^A-Za-z0-9-]+/', '-', strip_tags($string)), '-'));
-        return preg_replace('/-+/', '-', $slug);
-    }
-} echo htmlspecialchars(html_entity_decode($chapTitle, ENT_QUOTES, 'UTF-8')); ?></span>
+ echo htmlspecialchars(html_entity_decode($chapTitle, ENT_QUOTES, 'UTF-8')); ?></span>
                             <span class="text-body fw-medium d-block" style="cursor: pointer;" onclick="event.preventDefault(); event.stopPropagation(); this.parentElement.expanded = !this.parentElement.expanded;"><?php
-if (!function_exists('rs_slugify')) {
-    function rs_slugify($string) {
-        $slug = strtolower(trim(preg_replace('/[^A-Za-z0-9-]+/', '-', strip_tags($string)), '-'));
-        return preg_replace('/-+/', '-', $slug);
-    }
-} echo htmlspecialchars(html_entity_decode($chapTitle, ENT_QUOTES, 'UTF-8')); ?></span>
+ echo htmlspecialchars(html_entity_decode($chapTitle, ENT_QUOTES, 'UTF-8')); ?></span>
                             
                             <?php
-if (!function_exists('rs_slugify')) {
-    function rs_slugify($string) {
-        $slug = strtolower(trim(preg_replace('/[^A-Za-z0-9-]+/', '-', strip_tags($string)), '-'));
-        return preg_replace('/-+/', '-', $slug);
-    }
-} foreach ($parts as $part): ?>
+ foreach ($parts as $part): ?>
                                 <?php
-if (!function_exists('rs_slugify')) {
-    function rs_slugify($string) {
-        $slug = strtolower(trim(preg_replace('/[^A-Za-z0-9-]+/', '-', strip_tags($string)), '-'));
-        return preg_replace('/-+/', '-', $slug);
-    }
-}
+
                                     $partTitle = strip_tags($part['part_title'] ?? 'Part');
                                     $bookSlug = rs_slugify($bookTitle);
                                     $chapSlug = rs_slugify($chapTitle);
@@ -185,75 +117,30 @@ if (!function_exists('rs_slugify')) {
                                     $isActive = ($request_uri === $partUrl);
                                 ?>
                                 <wa-tree-item <?php
-if (!function_exists('rs_slugify')) {
-    function rs_slugify($string) {
-        $slug = strtolower(trim(preg_replace('/[^A-Za-z0-9-]+/', '-', strip_tags($string)), '-'));
-        return preg_replace('/-+/', '-', $slug);
-    }
-} echo $isActive ? 'selected' : ''; ?>>
+ echo $isActive ? 'selected' : ''; ?>>
                                     <a href="<?php
-if (!function_exists('rs_slugify')) {
-    function rs_slugify($string) {
-        $slug = strtolower(trim(preg_replace('/[^A-Za-z0-9-]+/', '-', strip_tags($string)), '-'));
-        return preg_replace('/-+/', '-', $slug);
-    }
-} echo htmlspecialchars($partUrl); ?>" class="text-decoration-none <?php
-if (!function_exists('rs_slugify')) {
-    function rs_slugify($string) {
-        $slug = strtolower(trim(preg_replace('/[^A-Za-z0-9-]+/', '-', strip_tags($string)), '-'));
-        return preg_replace('/-+/', '-', $slug);
-    }
-} echo $isActive ? 'text-primary fw-bold' : 'text-body-secondary'; ?> d-block py-1">
+ echo htmlspecialchars($partUrl); ?>" class="text-decoration-none <?php
+ echo $isActive ? 'text-primary fw-bold' : 'text-body-secondary'; ?> d-block py-1">
                                         <?php
-if (!function_exists('rs_slugify')) {
-    function rs_slugify($string) {
-        $slug = strtolower(trim(preg_replace('/[^A-Za-z0-9-]+/', '-', strip_tags($string)), '-'));
-        return preg_replace('/-+/', '-', $slug);
-    }
-} echo htmlspecialchars(html_entity_decode($partTitle, ENT_QUOTES, 'UTF-8')); ?>
+ echo htmlspecialchars(html_entity_decode($partTitle, ENT_QUOTES, 'UTF-8')); ?>
                                     </a>
                                 </wa-tree-item>
                             <?php
-if (!function_exists('rs_slugify')) {
-    function rs_slugify($string) {
-        $slug = strtolower(trim(preg_replace('/[^A-Za-z0-9-]+/', '-', strip_tags($string)), '-'));
-        return preg_replace('/-+/', '-', $slug);
-    }
-} endforeach; ?>
+ endforeach; ?>
                         </wa-tree-item>
                     <?php
-if (!function_exists('rs_slugify')) {
-    function rs_slugify($string) {
-        $slug = strtolower(trim(preg_replace('/[^A-Za-z0-9-]+/', '-', strip_tags($string)), '-'));
-        return preg_replace('/-+/', '-', $slug);
-    }
-} endforeach; ?>
+ endforeach; ?>
                 </wa-tree-item>
             <?php
-if (!function_exists('rs_slugify')) {
-    function rs_slugify($string) {
-        $slug = strtolower(trim(preg_replace('/[^A-Za-z0-9-]+/', '-', strip_tags($string)), '-'));
-        return preg_replace('/-+/', '-', $slug);
-    }
-} endforeach; ?>
+ endforeach; ?>
             </wa-tree>
         <?php
-if (!function_exists('rs_slugify')) {
-    function rs_slugify($string) {
-        $slug = strtolower(trim(preg_replace('/[^A-Za-z0-9-]+/', '-', strip_tags($string)), '-'));
-        return preg_replace('/-+/', '-', $slug);
-    }
-} else: ?>
+ else: ?>
             <div class="px-2 text-body-secondary small">
                 <wa-icon name="circle-info" class="me-1"></wa-icon> Table of contents could not be loaded.
             </div>
         <?php
-if (!function_exists('rs_slugify')) {
-    function rs_slugify($string) {
-        $slug = strtolower(trim(preg_replace('/[^A-Za-z0-9-]+/', '-', strip_tags($string)), '-'));
-        return preg_replace('/-+/', '-', $slug);
-    }
-} endif; ?>
+ endif; ?>
     </div>
 </div>
 
