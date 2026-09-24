@@ -14,7 +14,7 @@ if (str_starts_with($request_uri, $prefix)) {
     $seriesSlug = $parts[0] ?? '';
     
     // Look up the actual file path in the Stardust Route JSON
-    $routesDir = dirname(__DIR__, 4) . '/data/routes/raggiesoft-books/books';
+    $routesDir = ROOT_PATH . '/data/routes/raggiesoft-books/books';
     $routeFile = $routesDir . '/' . $seriesSlug . '.json';
     
     if (file_exists($routeFile)) {

@@ -74,9 +74,9 @@ $seriesTitle = $katie['series_title'] ?? $config['sequenceName'] ?? 'Narrative T
                 <wa-tree-item <?php
  echo $isBookExpanded; ?>>
                     <span class="fw-semibold text-body-emphasis d-block" style="cursor: pointer;" onclick="this.parentElement.expanded = !this.parentElement.expanded;"><?php
- echo htmlspecialchars(html_entity_decode($bookTitle, ENT_QUOTES, 'UTF-8')); ?></span>
+ echo $bookTitle; ?></span>
                     <span class="fw-semibold text-body-emphasis d-block" style="cursor: pointer;" onclick="event.preventDefault(); event.stopPropagation(); this.parentElement.expanded = !this.parentElement.expanded;"><?php
- echo htmlspecialchars(html_entity_decode($bookTitle, ENT_QUOTES, 'UTF-8')); ?></span>
+ echo $bookTitle; ?></span>
                     
                     <?php
  foreach ($chapters as $cIndex => $chapter): ?>
@@ -101,9 +101,9 @@ $seriesTitle = $katie['series_title'] ?? $config['sequenceName'] ?? 'Narrative T
                         <wa-tree-item <?php
  echo $isChapterActive ? 'expanded="true"' : ''; ?>>
                             <span class="text-body fw-medium d-block" style="cursor: pointer;" onclick="this.parentElement.expanded = !this.parentElement.expanded;"><?php
- echo htmlspecialchars(html_entity_decode($chapTitle, ENT_QUOTES, 'UTF-8')); ?></span>
+ echo $chapTitle; ?></span>
                             <span class="text-body fw-medium d-block" style="cursor: pointer;" onclick="event.preventDefault(); event.stopPropagation(); this.parentElement.expanded = !this.parentElement.expanded;"><?php
- echo htmlspecialchars(html_entity_decode($chapTitle, ENT_QUOTES, 'UTF-8')); ?></span>
+ echo $chapTitle; ?></span>
                             
                             <?php
  foreach ($parts as $part): ?>
@@ -122,7 +122,7 @@ $seriesTitle = $katie['series_title'] ?? $config['sequenceName'] ?? 'Narrative T
  echo htmlspecialchars($partUrl); ?>" class="text-decoration-none <?php
  echo $isActive ? 'text-primary fw-bold' : 'text-body-secondary'; ?> d-block py-1">
                                         <?php
- echo htmlspecialchars(html_entity_decode($partTitle, ENT_QUOTES, 'UTF-8')); ?>
+ echo $partTitle; ?>
                                     </a>
                                 </wa-tree-item>
                             <?php
