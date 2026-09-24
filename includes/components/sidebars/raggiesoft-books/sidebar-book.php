@@ -75,8 +75,6 @@ $seriesTitle = $katie['series_title'] ?? $config['sequenceName'] ?? 'Narrative T
  echo $isBookExpanded; ?>>
                     <span class="fw-semibold text-body-emphasis d-block" style="cursor: pointer;" onclick="this.parentElement.expanded = !this.parentElement.expanded;"><?php
  echo $bookTitle; ?></span>
-                    <span class="fw-semibold text-body-emphasis d-block" style="cursor: pointer;" onclick="event.preventDefault(); event.stopPropagation(); this.parentElement.expanded = !this.parentElement.expanded;"><?php
- echo $bookTitle; ?></span>
                     
                     <?php
  foreach ($chapters as $cIndex => $chapter): ?>
@@ -101,8 +99,6 @@ $seriesTitle = $katie['series_title'] ?? $config['sequenceName'] ?? 'Narrative T
                         <wa-tree-item <?php
  echo $isChapterActive ? 'expanded="true"' : ''; ?>>
                             <span class="text-body fw-medium d-block" style="cursor: pointer;" onclick="this.parentElement.expanded = !this.parentElement.expanded;"><?php
- echo $chapTitle; ?></span>
-                            <span class="text-body fw-medium d-block" style="cursor: pointer;" onclick="event.preventDefault(); event.stopPropagation(); this.parentElement.expanded = !this.parentElement.expanded;"><?php
  echo $chapTitle; ?></span>
                             
                             <?php
