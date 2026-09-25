@@ -17,369 +17,375 @@
         "title": "bob-emily",
         "theme": "raggiesoft-books"
     },
-    "/raggiesoft-books/books/bob-emily/life-without-a-father/the-longest-day/the-final-promise": {
+    "/raggiesoft-books/books/bob-emily/life-without-a-father/the-longest-day/part-1-the-final-promise": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "The Final Promise",
+        "title": "Part 1: The Final Promise",
         "theme": "raggiesoft-books",
         "filePath": "b001/c001/p001.md"
     },
-    "/raggiesoft-books/books/bob-emily/life-without-a-father/the-longest-day/the-hallway-war": {
+    "/raggiesoft-books/books/bob-emily/life-without-a-father/the-longest-day/part-2-the-hallway-war": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "The Hallway War",
+        "title": "Part 2: The Hallway War",
         "theme": "raggiesoft-books",
         "filePath": "b001/c001/p002.md"
     },
-    "/raggiesoft-books/books/bob-emily/life-without-a-father/the-longest-day/the-choice": {
+    "/raggiesoft-books/books/bob-emily/life-without-a-father/the-longest-day/part-3-the-choice": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "The Choice",
+        "title": "Part 3: The Choice",
         "theme": "raggiesoft-books",
         "filePath": "b001/c001/p003.md"
     },
-    "/raggiesoft-books/books/bob-emily/life-without-a-father/the-longest-day/the-pact-in-the-back-seat": {
+    "/raggiesoft-books/books/bob-emily/life-without-a-father/the-longest-day/part-4-the-pact-in-the-back-seat": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "The Pact in the Back Seat",
+        "title": "Part 4: The Pact in the Back Seat",
         "theme": "raggiesoft-books",
         "filePath": "b001/c001/p004.md"
     },
-    "/raggiesoft-books/books/bob-emily/life-without-a-father/the-longest-day/the-line-is-drawn": {
+    "/raggiesoft-books/books/bob-emily/life-without-a-father/the-longest-day/part-5-the-line-is-drawn": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "The Line is Drawn",
+        "title": "Part 5: The Line is Drawn",
         "theme": "raggiesoft-books",
         "filePath": "b001/c001/p005.md"
     },
-    "/raggiesoft-books/books/bob-emily/life-without-a-father/the-longest-day/a-shared-sanctuary": {
+    "/raggiesoft-books/books/bob-emily/life-without-a-father/the-longest-day/part-6-a-shared-sanctuary": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "A Shared Sanctuary",
+        "title": "Part 6: A Shared Sanctuary",
         "theme": "raggiesoft-books",
         "filePath": "b001/c001/p006.md"
     },
-    "/raggiesoft-books/books/bob-emily/life-without-a-father/the-longest-day/a-new-plan-of-action": {
+    "/raggiesoft-books/books/bob-emily/life-without-a-father/the-longest-day/part-7-a-new-plan-of-action": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "A New Plan of Action",
+        "title": "Part 7: A New Plan of Action",
         "theme": "raggiesoft-books",
         "filePath": "b001/c001/p007.md"
     },
-    "/raggiesoft-books/books/bob-emily/life-without-a-father/the-new-normal/the-first-day": {
+    "/raggiesoft-books/books/bob-emily/life-without-a-father/the-new-normal/part-1-the-first-day": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "The First Day",
+        "title": "Part 1: The First Day",
         "theme": "raggiesoft-books",
         "filePath": "b001/c002/p001.md"
     },
-    "/raggiesoft-books/books/bob-emily/life-without-a-father/the-new-normal/meeting-with-the-principal": {
+    "/raggiesoft-books/books/bob-emily/life-without-a-father/the-new-normal/part-2-meeting-with-the-principal": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Meeting with the Principal",
+        "title": "Part 2: Meeting with the Principal",
         "theme": "raggiesoft-books",
         "filePath": "b001/c002/p002.md"
     },
-    "/raggiesoft-books/books/bob-emily/life-without-a-father/the-new-normal/planning-with-the-counselor": {
+    "/raggiesoft-books/books/bob-emily/life-without-a-father/the-new-normal/part-3-planning-with-the-counselor": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Planning with the Counselor",
+        "title": "Part 3: Planning with the Counselor",
         "theme": "raggiesoft-books",
         "filePath": "b001/c002/p003.md"
     },
-    "/raggiesoft-books/books/bob-emily/life-without-a-father/the-new-normal/the-first-class": {
+    "/raggiesoft-books/books/bob-emily/life-without-a-father/the-new-normal/part-4-the-first-class": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "The First Class",
+        "title": "Part 4: The First Class",
         "theme": "raggiesoft-books",
         "filePath": "b001/c002/p004.md"
     },
-    "/raggiesoft-books/books/bob-emily/life-without-a-father/the-new-normal/bus-orientation": {
+    "/raggiesoft-books/books/bob-emily/life-without-a-father/the-new-normal/part-5-bus-orientation": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Bus Orientation",
+        "title": "Part 5: Bus Orientation",
         "theme": "raggiesoft-books",
         "filePath": "b001/c002/p005.md"
     },
-    "/raggiesoft-books/books/bob-emily/life-without-a-father/the-new-normal/emily-s-rejects-a-suitor": {
+    "/raggiesoft-books/books/bob-emily/life-without-a-father/the-new-normal/part-6-emily-s-rejects-a-suitor": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Emily\u2019s Rejects a Suitor",
+        "title": "Part 6: Emily\u2019s Rejects a Suitor",
         "theme": "raggiesoft-books",
         "filePath": "b001/c002/p006.md"
     },
-    "/raggiesoft-books/books/bob-emily/life-without-a-father/the-new-normal/a-failure-to-communicate": {
+    "/raggiesoft-books/books/bob-emily/life-without-a-father/the-new-normal/part-7-a-failure-to-communicate": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "A Failure to Communicate",
+        "title": "Part 7: A Failure to Communicate",
         "theme": "raggiesoft-books",
         "filePath": "b001/c002/p007.md"
     },
-    "/raggiesoft-books/books/bob-emily/life-without-a-father/the-new-normal/the-teacher-s-apology": {
+    "/raggiesoft-books/books/bob-emily/life-without-a-father/the-new-normal/part-8-the-teacher-s-apology": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "The Teacher's Apology",
+        "title": "Part 8: The Teacher\\'s Apology",
         "theme": "raggiesoft-books",
         "filePath": "b001/c002/p008.md"
     },
-    "/raggiesoft-books/books/bob-emily/life-without-a-father/the-new-normal/the-principal-s-wrath": {
+    "/raggiesoft-books/books/bob-emily/life-without-a-father/the-new-normal/part-9-the-principal-s-wrath": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "The Principal's Wrath",
+        "title": "Part 9: The Principal\\'s Wrath",
         "theme": "raggiesoft-books",
         "filePath": "b001/c002/p009.md"
     },
-    "/raggiesoft-books/books/bob-emily/life-without-a-father/the-new-normal/reaffirming-the-sanctuary": {
+    "/raggiesoft-books/books/bob-emily/life-without-a-father/the-new-normal/part-10-reaffirming-the-sanctuary": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Reaffirming the Sanctuary",
+        "title": "Part 10: Reaffirming the Sanctuary",
         "theme": "raggiesoft-books",
         "filePath": "b001/c002/p010.md"
     },
-    "/raggiesoft-books/books/bob-emily/life-without-a-father/the-new-normal/the-grounding-walk": {
+    "/raggiesoft-books/books/bob-emily/life-without-a-father/the-new-normal/part-11-the-grounding-walk": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "The Grounding Walk",
+        "title": "Part 11: The Grounding Walk",
         "theme": "raggiesoft-books",
         "filePath": "b001/c002/p011.md"
     },
-    "/raggiesoft-books/books/bob-emily/life-without-a-father/the-new-normal/the-reckoning": {
+    "/raggiesoft-books/books/bob-emily/life-without-a-father/the-new-normal/part-12-the-reckoning": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "The Reckoning",
+        "title": "Part 12: The Reckoning",
         "theme": "raggiesoft-books",
         "filePath": "b001/c002/p012.md"
     },
-    "/raggiesoft-books/books/bob-emily/life-without-a-father/the-new-normal/a-message-in-muscle": {
+    "/raggiesoft-books/books/bob-emily/life-without-a-father/the-new-normal/part-13-a-message-in-muscle": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "A Message in Muscle",
+        "title": "Part 13: A Message in Muscle",
         "theme": "raggiesoft-books",
         "filePath": "b001/c002/p013.md"
     },
-    "/raggiesoft-books/books/bob-emily/life-without-a-father/the-new-normal/the-gable-report": {
+    "/raggiesoft-books/books/bob-emily/life-without-a-father/the-new-normal/part-14-the-gable-report": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "The Gable Report",
+        "title": "Part 14: The Gable Report",
         "theme": "raggiesoft-books",
         "filePath": "b001/c002/p014.md"
     },
-    "/raggiesoft-books/books/bob-emily/life-without-a-father/the-new-normal/the-emily-jenkins-rule": {
+    "/raggiesoft-books/books/bob-emily/life-without-a-father/the-new-normal/part-15-the-emily-jenkins-rule": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "The Emily Jenkins Rule",
+        "title": "Part 15: The Emily Jenkins Rule",
         "theme": "raggiesoft-books",
         "filePath": "b001/c002/p015.md"
     },
-    "/raggiesoft-books/books/bob-emily/assault/the-locker/the-assault": {
+    "/raggiesoft-books/books/bob-emily/assault/the-locker/part-1-the-assault": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "The Assault",
+        "title": "Part 1: The Assault",
         "theme": "raggiesoft-books",
         "filePath": "b002/c001/p001.md"
     },
-    "/raggiesoft-books/books/bob-emily/assault/the-locker/the-discovery": {
+    "/raggiesoft-books/books/bob-emily/assault/the-locker/part-2-the-discovery": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "The Discovery",
+        "title": "Part 2: The Discovery",
         "theme": "raggiesoft-books",
         "filePath": "b002/c001/p002.md"
     },
-    "/raggiesoft-books/books/bob-emily/assault/the-locker/the-investigation": {
+    "/raggiesoft-books/books/bob-emily/assault/the-locker/part-3-the-investigation": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "The Investigation",
+        "title": "Part 3: The Investigation",
         "theme": "raggiesoft-books",
         "filePath": "b002/c001/p003.md"
     },
-    "/raggiesoft-books/books/bob-emily/assault/the-locker/the-arrest": {
+    "/raggiesoft-books/books/bob-emily/assault/the-locker/part-4-the-arrest": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "The Arrest",
+        "title": "Part 4: The Arrest",
         "theme": "raggiesoft-books",
         "filePath": "b002/c001/p004.md"
     },
-    "/raggiesoft-books/books/bob-emily/assault/the-locker/the-perp-walk": {
+    "/raggiesoft-books/books/bob-emily/assault/the-locker/part-5-the-perp-walk": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "The Perp Walk",
+        "title": "Part 5: The Perp Walk",
         "theme": "raggiesoft-books",
         "filePath": "b002/c001/p005.md"
     },
-    "/raggiesoft-books/books/bob-emily/assault/the-hospital/the-long-wait": {
+    "/raggiesoft-books/books/bob-emily/assault/the-hospital/part-1-the-long-wait": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "The Long Wait",
+        "title": "Part 1: The Long Wait",
         "theme": "raggiesoft-books",
         "filePath": "b002/c002/p001.md"
     },
-    "/raggiesoft-books/books/bob-emily/assault/the-hospital/emily-explains-everything": {
+    "/raggiesoft-books/books/bob-emily/assault/the-hospital/part-2-emily-explains-everything": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Emily Explains Everything",
+        "title": "Part 2: Emily Explains Everything",
         "theme": "raggiesoft-books",
         "filePath": "b002/c002/p002.md"
     },
-    "/raggiesoft-books/books/bob-emily/assault/the-hospital/waking-up": {
+    "/raggiesoft-books/books/bob-emily/assault/the-hospital/part-3-waking-up": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Waking Up",
+        "title": "Part 3: Waking Up",
         "theme": "raggiesoft-books",
         "filePath": "b002/c002/p003.md"
     },
-    "/raggiesoft-books/books/bob-emily/assault/the-hospital/the-daily-vigil": {
+    "/raggiesoft-books/books/bob-emily/assault/the-hospital/part-4-the-daily-vigil": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "The Daily Vigil",
+        "title": "Part 4: The Daily Vigil",
         "theme": "raggiesoft-books",
         "filePath": "b002/c002/p004.md"
     },
-    "/raggiesoft-books/books/bob-emily/assault/the-hospital/the-storm-arrives": {
+    "/raggiesoft-books/books/bob-emily/assault/the-hospital/part-5-the-storm-arrives": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "The Storm Arrives",
+        "title": "Part 5: The Storm Arrives",
         "theme": "raggiesoft-books",
         "filePath": "b002/c002/p005.md"
     },
-    "/raggiesoft-books/books/bob-emily/assault/the-hospital/the-longest-night": {
+    "/raggiesoft-books/books/bob-emily/assault/the-hospital/part-6-the-longest-night": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "The Longest Night",
+        "title": "Part 6: The Longest Night",
         "theme": "raggiesoft-books",
         "filePath": "b002/c002/p006.md"
     },
-    "/raggiesoft-books/books/bob-emily/assault/the-hospital/discharge-day": {
+    "/raggiesoft-books/books/bob-emily/assault/the-hospital/part-7-discharge-day": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Discharge Day",
+        "title": "Part 7: Discharge Day",
         "theme": "raggiesoft-books",
         "filePath": "b002/c002/p007.md"
     },
-    "/raggiesoft-books/books/bob-emily/assault/the-hospital/chapter-notes-the-planetarium-promise": {
+    "/raggiesoft-books/books/bob-emily/assault/the-hospital/part-8-chapter-notes-the-planetarium-promise": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Chapter Notes: The Planetarium Promise",
+        "title": "Part 8: Chapter Notes: The Planetarium Promise",
         "theme": "raggiesoft-books",
         "filePath": "b002/c002/p008.md"
     },
-    "/raggiesoft-books/books/bob-emily/bob-healing/bob-s-new-reality/the-first-day-home": {
+    "/raggiesoft-books/books/bob-emily/bob-healing/bob-s-new-reality/part-1-the-first-day-home": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "The First Day Home",
+        "title": "Part 1: The First Day Home",
         "theme": "raggiesoft-books",
         "filePath": "b003/c001/p001.md"
     },
-    "/raggiesoft-books/books/bob-emily/bob-healing/bob-s-new-reality/the-call-to-madison": {
+    "/raggiesoft-books/books/bob-emily/bob-healing/bob-s-new-reality/part-2-the-call-to-madison": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "The Call to Madison",
+        "title": "Part 2: The Call to Madison",
         "theme": "raggiesoft-books",
         "filePath": "b003/c001/p002.md"
     },
-    "/raggiesoft-books/books/bob-emily/bob-healing/bob-s-new-reality/the-dress-rehearsal": {
+    "/raggiesoft-books/books/bob-emily/bob-healing/bob-s-new-reality/part-3-the-dress-rehearsal": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "The Dress Rehearsal",
+        "title": "Part 3: The Dress Rehearsal",
         "theme": "raggiesoft-books",
         "filePath": "b003/c001/p003.md"
     },
-    "/raggiesoft-books/books/bob-emily/bob-healing/bob-s-new-reality/a-spark-of-hope": {
+    "/raggiesoft-books/books/bob-emily/bob-healing/bob-s-new-reality/part-4-a-spark-of-hope": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "A Spark of Hope",
+        "title": "Part 4: A Spark of Hope",
         "theme": "raggiesoft-books",
         "filePath": "b003/c001/p004.md"
     },
-    "/raggiesoft-books/books/bob-emily/bob-healing/bob-s-new-reality/the-green-light": {
+    "/raggiesoft-books/books/bob-emily/bob-healing/bob-s-new-reality/part-5-the-green-light": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "The Green Light",
+        "title": "Part 5: The Green Light",
         "theme": "raggiesoft-books",
         "filePath": "b003/c001/p005.md"
     },
-    "/raggiesoft-books/books/bob-emily/bob-healing/bob-s-new-reality/homecoming": {
+    "/raggiesoft-books/books/bob-emily/bob-healing/bob-s-new-reality/part-6-homecoming": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Homecoming",
+        "title": "Part 6: Homecoming",
         "theme": "raggiesoft-books",
         "filePath": "b003/c001/p006.md"
     },
-    "/raggiesoft-books/books/bob-emily/bob-healing/bob-s-new-reality/the-first-carry": {
+    "/raggiesoft-books/books/bob-emily/bob-healing/bob-s-new-reality/part-7-the-first-carry": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "The First Carry",
+        "title": "Part 7: The First Carry",
         "theme": "raggiesoft-books",
         "filePath": "b003/c001/p007.md"
     },
-    "/raggiesoft-books/books/bob-emily/bob-healing/bob-s-new-reality/cleared-for-travel": {
+    "/raggiesoft-books/books/bob-emily/bob-healing/bob-s-new-reality/part-8-cleared-for-travel": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Cleared for Travel",
+        "title": "Part 8: Cleared for Travel",
         "theme": "raggiesoft-books",
         "filePath": "b003/c001/p008.md"
     },
-    "/raggiesoft-books/books/bob-emily/bob-healing/bob-and-emily-see-the-stars/a-trip-to-the-stars": {
+    "/raggiesoft-books/books/bob-emily/bob-healing/bob-and-emily-see-the-stars/part-1-a-trip-to-the-stars": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "A Trip to the Stars",
+        "title": "Part 1: A Trip to the Stars",
         "theme": "raggiesoft-books",
         "filePath": "b003/c002/p001.md"
     },
-    "/raggiesoft-books/books/bob-emily/bob-healing/bob-and-emily-see-the-stars/a-double-honor": {
+    "/raggiesoft-books/books/bob-emily/bob-healing/bob-and-emily-see-the-stars/part-2-a-double-honor": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "A Double Honor",
+        "title": "Part 2: A Double Honor",
         "theme": "raggiesoft-books",
         "filePath": "b003/c002/p002.md"
     },
-    "/raggiesoft-books/books/bob-emily/bob-healing/bob-and-emily-see-the-stars/the-deepest-of-space": {
+    "/raggiesoft-books/books/bob-emily/bob-healing/bob-and-emily-see-the-stars/part-3-the-deepest-of-space": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "The Deepest of Space",
+        "title": "Part 3: The Deepest of Space",
         "theme": "raggiesoft-books",
         "filePath": "b003/c002/p003.md"
     },
-    "/raggiesoft-books/books/bob-emily/bob-healing/bob-and-emily-see-the-stars/the-journey-home": {
+    "/raggiesoft-books/books/bob-emily/bob-healing/bob-and-emily-see-the-stars/part-4-the-journey-home": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "The Journey Home",
+        "title": "Part 4: The Journey Home",
         "theme": "raggiesoft-books",
         "filePath": "b003/c002/p004.md"
     },
-    "/raggiesoft-books/books/bob-emily/bob-healing/bob-and-emily-see-the-stars/chapter-notes-bluewater-transit-steps-up-to-the-plate": {
+    "/raggiesoft-books/books/bob-emily/bob-healing/bob-and-emily-see-the-stars/part-5-chapter-notes-bluewater-transit-steps-up-to-the-plate": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Chapter Notes: Bluewater Transit Steps Up to the Plate",
+        "title": "Part 5: Chapter Notes: Bluewater Transit Steps Up to the Plate",
         "theme": "raggiesoft-books",
         "filePath": "b003/c002/p005.md"
     },
-    "/raggiesoft-books/books/bob-emily/bob-healing/finishing-the-semester-strong/a-hard-limit": {
+    "/raggiesoft-books/books/bob-emily/bob-healing/finishing-the-semester-strong/part-1-a-hard-limit": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "A Hard Limit",
+        "title": "Part 1: A Hard Limit",
         "theme": "raggiesoft-books",
         "filePath": "b003/c003/p001.md"
     },
-    "/raggiesoft-books/books/bob-emily/bob-healing/finishing-the-semester-strong/the-accommodations-meeting": {
+    "/raggiesoft-books/books/bob-emily/bob-healing/finishing-the-semester-strong/part-2-the-accommodations-meeting": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "The Accommodations Meeting",
+        "title": "Part 2: The Accommodations Meeting",
         "theme": "raggiesoft-books",
         "filePath": "b003/c003/p002.md"
     },
-    "/raggiesoft-books/books/bob-emily/bob-healing/finishing-the-semester-strong/the-testing-lab": {
+    "/raggiesoft-books/books/bob-emily/bob-healing/finishing-the-semester-strong/part-3-the-testing-lab": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "The Testing Lab",
+        "title": "Part 3: The Testing Lab",
         "theme": "raggiesoft-books",
         "filePath": "b003/c003/p003.md"
     },
-    "/raggiesoft-books/books/bob-emily/bob-healing/finishing-the-semester-strong/the-waiting-game": {
+    "/raggiesoft-books/books/bob-emily/bob-healing/finishing-the-semester-strong/part-4-the-waiting-game": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "The Waiting Game",
+        "title": "Part 4: The Waiting Game",
         "theme": "raggiesoft-books",
         "filePath": "b003/c003/p004.md"
     },
-    "/raggiesoft-books/books/bob-emily/bob-healing/finishing-the-semester-strong/the-final-sprint": {
+    "/raggiesoft-books/books/bob-emily/bob-healing/finishing-the-semester-strong/part-5-the-final-sprint": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "The Final Sprint",
+        "title": "Part 5: The Final Sprint",
         "theme": "raggiesoft-books",
         "filePath": "b003/c003/p005.md"
     },
-    "/raggiesoft-books/books/bob-emily/bob-healing/finishing-the-semester-strong/the-graduation-pact": {
+    "/raggiesoft-books/books/bob-emily/bob-healing/finishing-the-semester-strong/part-6-the-graduation-pact": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "The Graduation Pact",
+        "title": "Part 6: The Graduation Pact",
         "theme": "raggiesoft-books",
         "filePath": "b003/c003/p006.md"
     },
-    "/raggiesoft-books/books/bob-emily/summer-2015/a-tale-of-two-sanctuaries/the-christiansburg-connection": {
+    "/raggiesoft-books/books/bob-emily/summer-2015/a-tale-of-two-sanctuaries/part-1-the-christiansburg-connection": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "The Christiansburg Connection",
+        "title": "Part 1: The Christiansburg Connection",
         "theme": "raggiesoft-books",
         "filePath": "b004/c001/p001.md"
     },
-    "/raggiesoft-books/books/bob-emily/summer-2015/a-tale-of-two-sanctuaries/the-ironclad-will": {
+    "/raggiesoft-books/books/bob-emily/summer-2015/a-tale-of-two-sanctuaries/part-2-the-ironclad-will": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "The Ironclad Will",
+        "title": "Part 2: The Ironclad Will",
         "theme": "raggiesoft-books",
         "filePath": "b004/c001/p002.md"
     },
-    "/raggiesoft-books/books/bob-emily/summer-2015/a-tale-of-two-sanctuaries/the-bluewater-star-party": {
+    "/raggiesoft-books/books/bob-emily/summer-2015/a-tale-of-two-sanctuaries/part-3-the-bluewater-star-party": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "The Bluewater Star Party",
+        "title": "Part 3: The Bluewater Star Party",
         "theme": "raggiesoft-books",
         "filePath": "b004/c001/p003.md"
     },
-    "/raggiesoft-books/books/bob-emily/summer-2015/a-tale-of-two-sanctuaries/the-best-news": {
+    "/raggiesoft-books/books/bob-emily/summer-2015/a-tale-of-two-sanctuaries/part-4-the-best-news": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "The Best News",
+        "title": "Part 4: The Best News",
         "theme": "raggiesoft-books",
         "filePath": "b004/c001/p004.md"
     },
-    "/raggiesoft-books/books/bob-emily/summer-2015/a-tale-of-two-sanctuaries/the-schedule-and-the-ride": {
+    "/raggiesoft-books/books/bob-emily/summer-2015/a-tale-of-two-sanctuaries/part-5-the-schedule-and-the-ride": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "The Schedule and the Ride",
+        "title": "Part 5: The Schedule and the Ride",
         "theme": "raggiesoft-books",
         "filePath": "b004/c001/p005.md"
     },
-    "/raggiesoft-books/books/bob-emily/summer-2015/a-tale-of-two-sanctuaries/the-backyard-feast": {
+    "/raggiesoft-books/books/bob-emily/summer-2015/a-tale-of-two-sanctuaries/part-6-the-backyard-feast": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "The Backyard Feast",
+        "title": "Part 6: The Backyard Feast",
         "theme": "raggiesoft-books",
         "filePath": "b004/c001/p006.md"
     },
-    "/raggiesoft-books/books/bob-emily/summer-2015/a-tale-of-two-sanctuaries/the-last-drop-of-summer": {
+    "/raggiesoft-books/books/bob-emily/summer-2015/a-tale-of-two-sanctuaries/part-7-the-last-drop-of-summer": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "The Last Drop of Summer",
+        "title": "Part 7: The Last Drop of Summer",
+        "theme": "raggiesoft-books",
+        "filePath": "b004/c001/p007.md"
+    },
+    "/raggiesoft-books/books/bob-emily/summer-2015/a-tale-of-two-sanctuaries/part-8-the-last-drop-of-summer": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 8: The Last Drop of Summer",
         "theme": "raggiesoft-books",
         "filePath": "b004/c001/p008.md"
     }
