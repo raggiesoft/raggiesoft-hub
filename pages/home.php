@@ -154,7 +154,7 @@ $pageTitle = "RaggieSoft&trade; | The Central Hub";
 <section class="split-hero-container w-100" aria-label="Main Navigation Routing">
     
     <div class="split-pane bg-dark">
-        <div class="pane-bg" style="background-image: url($cdnBaseUrl . '/common/patterns/stars-transparent.png'); background-color: #0a0e14; background-size: auto;"></div>
+        <div class="pane-bg" style="background-image: url('<?php echo $cdnBaseUrl; ?>/common/patterns/stars-transparent.png'); background-color: #0a0e14; background-size: auto;"></div>
         <div class="pane-overlay"></div>
         
         <div class="pane-content d-flex flex-column align-items-center h-100 justify-content-center">
@@ -176,7 +176,7 @@ $pageTitle = "RaggieSoft&trade; | The Central Hub";
     </div>
 
     <div class="split-pane bg-black">
-        <div class="pane-bg" style="background-image: url($cdnBaseUrl . '/stardust-engine/images/stardust-nebula.jpg');"></div>
+        <div class="pane-bg" style="background-image: url('<?php echo $cdnBaseUrl; ?>/stardust-engine/images/stardust-nebula.jpg');"></div>
         <div class="pane-overlay"></div>
         
         <div class="pane-content d-flex flex-column align-items-center h-100 justify-content-center">
