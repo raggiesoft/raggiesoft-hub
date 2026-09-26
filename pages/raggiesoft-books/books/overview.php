@@ -155,6 +155,7 @@ $imagesJson = htmlspecialchars(json_encode($heroImages), ENT_QUOTES, 'UTF-8');
                     'fallbackText' => $fallback,
                     'title' => $title,
                     'description' => $desc,
+                    'aspectRatio' => '150%',
                     'buttonProps' => [
                         'href' => !empty($book['first_route']) ? $book['first_route'] : '/raggiesoft-books/books/' . $slug,
                         'text' => 'Read Series',
