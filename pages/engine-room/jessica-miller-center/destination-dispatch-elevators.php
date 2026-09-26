@@ -2,7 +2,7 @@
 // pages/engine-room/jessica-miller-center/destination-dispatch-elevators.php
 // Public Guide: Destination Dispatch & Accessibility Features
 // Context: Universal Design standard for JMC vertical transport.
-// WCAG STATUS: AAA Compliant (Adaptive Bootstrap 5.3)
+// WCAG STATUS: AAA Compliant (Adaptive Web Awesome Pro)
 
 $pageTitle = "Destination Dispatch Elevators - The Jessica Miller Center";
 ?>

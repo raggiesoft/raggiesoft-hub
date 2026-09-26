@@ -60,7 +60,7 @@ $rotation_style = $rotation ? "transform: rotate({$rotation}deg);" : "";
         color: #000000 !important;
     }
     
-    /* Override Bootstrap utilities inside the document context */
+    /* Override Web Awesome Pro utilities inside the document context */
     .physical-document .text-muted { color: #6c757d !important; }
     .physical-document .text-secondary { color: #6c757d !important; }
     .physical-document .text-dark { color: #000000 !important; }

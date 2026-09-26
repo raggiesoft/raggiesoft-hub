@@ -26,7 +26,7 @@ global $cdn_root;
       "addressCountry": "US"
     },
     "knowsAbout": [
-    "PHP 8.4",
+    "PHP 8.5",
     "Vanilla JavaScript (ES6+)",
     "Linux Server Administration",
     "WCAG 2.1 AA",

@@ -32,7 +32,7 @@
                 <h6 class="fw-bold mb-3">Built With</h6>
                 <ul class="nav flex-column small">
                     <li class="nav-item mb-2"><span class="nav-link p-0 text-body-secondary">PHP 8.5</span></li>
-                    <li class="nav-item mb-2"><span class="nav-link p-0 text-body-secondary">Bootstrap 5.3</span></li>
+                    <li class="nav-item mb-2"><span class="nav-link p-0 text-body-secondary">Web Awesome Pro</span></li>
                     <li class="nav-item mb-2"><span class="nav-link p-0 text-body-secondary">FontAwesome Pro</span></li>
                 </ul>
             </div>
@@ -54,7 +54,7 @@
 $konami_config = [
     'title'      => 'System Admin Access',
     'icon'       => 'fa-solid fa-terminal',
-    'theme'      => '#0d6efd', // Bootstrap Blue
+    'theme'      => '#0d6efd', // Web Awesome Pro Blue
     'text_color' => '#ffffff',
     'image'      => '',        // No image for this one, just text
     'body'       => '

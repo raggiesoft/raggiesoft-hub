@@ -85,7 +85,7 @@ $pageTitle = "The Autopsy: Holly Takes Control - Evidence Item #02";
 
     /* Ensure the border stands out */
     .forced-dark-zone.border-success {
-        border-color: #198754 !important; /* Bootstrap Success Green */
+        border-color: #198754 !important; /* Web Awesome Pro Success Green */
     }
 </style>
 

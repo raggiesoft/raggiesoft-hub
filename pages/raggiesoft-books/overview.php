@@ -4,7 +4,7 @@
 
 $pageTitle = "Ocean View Archives | RaggieSoft Media";
 
-// We establish a dedicated theme for the Archives to override the global Bootstrap variables locally
+// We establish a dedicated theme for the Archives to override the global Web Awesome Pro variables locally
 ?>
 
 <script type="application/ld+json">

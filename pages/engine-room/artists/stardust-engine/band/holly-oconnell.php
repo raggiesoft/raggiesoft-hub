@@ -315,7 +315,7 @@ $personSchema = [
             document.getElementById('credentialDesc').textContent = desc;
             document.getElementById('credentialLore').textContent = lore;
             
-            // Map Bootstrap colors to Web Awesome CSS variables
+            // Map Web Awesome Pro colors to Web Awesome CSS variables
             let waColor = 'var(--wa-color-primary)';
             if (color === 'success') waColor = 'var(--wa-color-success)';
             if (color === 'danger') waColor = 'var(--wa-color-danger)';

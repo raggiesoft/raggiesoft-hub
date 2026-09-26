@@ -144,7 +144,7 @@ $pageTitle = "The Stardust Engine CMS | Open Source";
                 <div class="aero-feature-box">
                     <h3 class="h6 fw-bold text-uppercase text-body-emphasis"><i class="fa-solid fa-universal-access me-2 text-primary" aria-hidden="true"></i>WCAG 2.1 AA Focus</h3>
                     <p class="small text-body-secondary mb-0">
-                        The included Bootstrap 5 templates are heavily modified for contrast compliance and screen reader legibility. The deployment script explicitly refuses to push code if required alt-text fields are missing from your configuration.
+                        The included Web Awesome Pro templates are heavily modified for contrast compliance and screen reader legibility. The deployment script explicitly refuses to push code if required alt-text fields are missing from your configuration.
                     </p>
                 </div>
             </div>

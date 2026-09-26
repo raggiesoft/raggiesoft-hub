@@ -2,7 +2,7 @@
 // pages/engine-room/jessica-miller-center/the-quiet-floor.php
 // The Quiet Floor - Level 40 Sanctuary
 // Context: Public amenity guide for tenants of The Jessica Miller Center.
-// WCAG STATUS: AAA Compliant (Adaptive Bootstrap 5.3)
+// WCAG STATUS: AAA Compliant (Adaptive Web Awesome Pro)
 
 $pageTitle = "The Quiet Floor - Level 40 Sanctuary";
 ?>

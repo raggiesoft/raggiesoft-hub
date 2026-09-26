@@ -30,7 +30,7 @@ $css_font_parts = array_map(function($font) {
 $brand_font_css = implode(', ', $css_font_parts);
 
 // 3. Path Definitions
-$path_bootstrap = $cdn_root . "/common/css/raggiesoft-grid.css";
+$path_grid = $cdn_root . "/common/css/raggiesoft-grid.css";
 
 if ($theme === 'corporate' || $theme === $site || $theme === 'light') {
     $path_theme_base = $cdn_root . "/{$site}/css/webawesome";
@@ -40,7 +40,7 @@ if ($theme === 'corporate' || $theme === $site || $theme === 'light') {
 
 // 4. Build CSS Queue
 $css_load_queue = [
-    $path_bootstrap,
+    $path_grid,
     $cdn_root . "/common/css/raggiesoft-logo.css",                    
     $path_theme_base . '/root.css',     
     $path_theme_base . '/extras.css',   

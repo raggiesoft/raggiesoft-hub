@@ -2,7 +2,7 @@
 // pages/engine-room/jessica-miller-center/overview.php
 // The Homepage for The Jessica Miller Center
 // Context: Universal Design Showcase.
-// WCAG STATUS: AAA Compliant (Adaptive Bootstrap 5.3)
+// WCAG STATUS: AAA Compliant (Adaptive Web Awesome Pro)
 
 $pageTitle = "The Jessica Miller Center - Universal Design & Workplace Equity";
 ?>

@@ -6,7 +6,7 @@ $color = $props['color'] ?? 'secondary';
 $reverseClass = !empty($props['reverse']) ? 'flex-lg-row-reverse' : '';
 
 // 1. Define Card Background
-// We rely on native Bootstrap contextual classes to handle light/dark mode rather than brute-forcing colors.
+// We rely on native Web Awesome Pro contextual classes to handle light/dark mode rather than brute-forcing colors.
 $cardBgClass = 'bg-body-tertiary';
 $contentClass = 'text-body-secondary';
 
@@ -15,7 +15,7 @@ $contentClass = 'text-body-secondary';
 $btnClass = 'btn-outline-' . $color;
 
 // On tertiary (adapting) backgrounds, 'warning' and 'info' outlines fail WCAG on light mode.
-// Swapping them to solid buttons ensures Bootstrap automatically applies the correct contrast text color.
+// Swapping them to solid buttons ensures Web Awesome Pro automatically applies the correct contrast text color.
 if ($color === 'warning' || $color === 'info') {
     $btnClass = 'btn-' . $color; 
 }

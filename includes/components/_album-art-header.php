@@ -7,7 +7,7 @@ $path = $props['path'] ?? '';
 $alt = $props['alt'] ?? 'Album Art';
 $variant = $props['variant'] ?? 'primary'; 
 
-// 2. Map Narrative Variants to Bootstrap Colors
+// 2. Map Narrative Variants to Web Awesome Pro Colors
 $borderColor = $variant;
 if ($variant === 'pact') $borderColor = 'primary';   // Pink/Teal
 if ($variant === 'axiom') $borderColor = 'warning';  // Cyan/Orange

@@ -1,7 +1,7 @@
 <?php
 // includes/components/sidebars/engine-room/jessica-miller-center/sidebar-miller-center.php
 // Sidebar for The Jessica Miller Center
-// WCAG STATUS: AAA Compliant (Adaptive Bootstrap 5.3)
+// WCAG STATUS: AAA Compliant (Adaptive Web Awesome Pro)
 ?>
 
 <div class="mb-4">

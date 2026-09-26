@@ -40,7 +40,7 @@ class StardustParsedown extends Parsedown {
             }
         }
 
-        // 4. Add your Bootstrap 5.3 classes
+        // 4. Add your Web Awesome Pro classes
         $Block['element']['attributes']['class'] = 'table table-striped table-hover align-middle';
 
         // 5. Wrap the entire table in the responsive div

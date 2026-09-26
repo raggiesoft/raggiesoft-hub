@@ -97,7 +97,7 @@ $pageTitle = "StoreTrainer | RaggieSoft Software";
         padding: 7px 14px 5px 16px; /* Shift content slightly down and right */
     }
 
-    /* Reset some Elara SPA / Bootstrap defaults inside the capsule */
+    /* Reset some Elara SPA / Web Awesome Pro defaults inside the capsule */
     .time-capsule-wrapper h1, 
     .time-capsule-wrapper h2, 
     .time-capsule-wrapper h3 {
