@@ -33,7 +33,7 @@ global $cdn_root;
     "Section 508 Compliance",
     "DigitalOcean Cloud Infrastructure",
     "Bash CI/CD Automation",
-    "Gemini LLM (Production/Prompt Engineering)",
+    "Google Antigravity Agentic IDE (Gemini LLM)",
     "GitHub Copilot",
     "Suno AI Audio Generation",
     "E-Commerce Architecture (MoR)",
@@ -97,7 +97,7 @@ global $cdn_root;
                 <span class="badge bg-secondary-subtle text-secondary-emphasis border border-secondary-subtle px-3 py-2 font-monospace fs-7">DigitalOcean</span>
                 <span class="badge bg-secondary-subtle text-secondary-emphasis border border-secondary-subtle px-3 py-2 font-monospace fs-7">Cloudflare</span>
                 
-                <span class="badge bg-info-subtle text-info-emphasis border border-info-subtle px-3 py-2 font-monospace fs-7"><i class="fa-solid fa-sparkles me-1"></i>Gemini LLM</span>
+                <span class="badge bg-info-subtle text-info-emphasis border border-info-subtle px-3 py-2 font-monospace fs-7"><i class="fa-solid fa-sparkles me-1"></i>Antigravity IDE (Gemini)</span>
                 <span class="badge bg-dark-subtle text-dark-emphasis border border-dark-subtle px-3 py-2 font-monospace fs-7"><i class="fa-brands fa-github me-1"></i>Copilot</span>
                 <span class="badge bg-warning-subtle text-warning-emphasis border border-warning-subtle px-3 py-2 font-monospace fs-7"><i class="fa-solid fa-music me-1"></i>Suno</span>
 
