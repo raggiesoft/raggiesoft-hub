@@ -3,8 +3,10 @@
 $sidebar_uri = $_SERVER['REQUEST_URI'] ?? '/';
 
 // Helper function to easily check active states
-function is_active_phalanx($path, $current_uri) {
-    return str_contains($current_uri, $path);
+if (!function_exists('is_active_phalanx')) {
+    function is_active_phalanx($path, $current_uri) {
+        return str_contains($current_uri, $path);
+    }
 }
 ?>
 

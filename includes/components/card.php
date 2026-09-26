@@ -15,12 +15,11 @@ if ($variant === 'pact') $bgColor = '005A5A';
 if ($variant === 'axiom') $bgColor = 'A8491A';
 $textColor = 'FFFFFF';
 $placeholderUrl = "https://placehold.co/600x400/{$bgColor}/{$textColor}?text=" . urlencode($fallbackText);
-$aspectRatio = $props['aspectRatio'] ?? '100%'; // Default to 1:1, pass '150%' for 2:3
 ?>
 
 <wa-card style="height: 100%; display: flex; flex-direction: column;">
   <?php if ($imgSrc): ?>
-    <div slot="media" style="position: relative; width: 100%; padding-top: <?php echo $aspectRatio; ?>;">
+    <div slot="media" style="position: relative; width: 100%; padding-top: 150%;">
       <img src="<?php echo htmlspecialchars($imgSrc); ?>"
            alt="<?php echo htmlspecialchars($imgAlt); ?>"
            onerror="this.onerror=null;this.src='<?php echo $placeholderUrl; ?>';"
@@ -31,7 +30,7 @@ $aspectRatio = $props['aspectRatio'] ?? '100%'; // Default to 1:1, pass '150%' f
       <?php endif; ?>
     </div>
   <?php else: ?>
-    <div slot="media" style="position: relative; width: 100%; padding-top: <?php echo $aspectRatio; ?>;">
+    <div slot="media" style="position: relative; width: 100%; padding-top: 150%;">
       <img src="<?php echo $placeholderUrl; ?>" alt="<?php echo htmlspecialchars($imgAlt); ?>" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;">
     </div>
   <?php endif; ?>

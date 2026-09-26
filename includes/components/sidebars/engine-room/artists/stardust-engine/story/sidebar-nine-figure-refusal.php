@@ -5,12 +5,13 @@
 
 $currentUri = $_SERVER['REQUEST_URI'] ?? '';
 
-// Helper function to check if a chapter is active
-function isChapterActive($pages, $uri) {
-    foreach ($pages as $url => $data) {
-        if (str_contains($uri, $url)) return true;
+if (!function_exists('isChapterActive')) {
+    function isChapterActive($pages, $uri) {
+        foreach ($pages as $url => $data) {
+            if (str_contains($uri, $url)) return true;
+        }
+        return false;
     }
-    return false;
 }
 
 // Chapter Data Structure
