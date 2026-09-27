@@ -173,6 +173,102 @@
         "theme": "raggiesoft-books",
         "filePath": "b001/c006/p003.md"
     },
+    "/raggiesoft-books/books/casey/book-1-the-george-wythe-expedition/chapter/part-4-the-assistant-manager-6-00-pm": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: The Assistant Manager \u2013 6:00 PM",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c006/p004.md"
+    },
+    "/raggiesoft-books/books/casey/book-1-the-george-wythe-expedition/chapter/part-1-the-chesapeake-crossing-8-30-am": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Chesapeake Crossing \u2013 8:30 AM",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c007/p001.md"
+    },
+    "/raggiesoft-books/books/casey/book-1-the-george-wythe-expedition/chapter/part-2-the-squall-10-30-am": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Squall \u2013 10:30 AM",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c007/p002.md"
+    },
+    "/raggiesoft-books/books/casey/book-1-the-george-wythe-expedition/chapter/part-3-sample-recovery-11-00-am": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: Sample Recovery \u2013 11:00 AM",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c007/p003.md"
+    },
+    "/raggiesoft-books/books/casey/book-1-the-george-wythe-expedition/chapter/part-1-the-security-gate-9-00-am": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Security Gate \u2013 9:00 AM",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c008/p001.md"
+    },
+    "/raggiesoft-books/books/casey/book-1-the-george-wythe-expedition/chapter/part-2-the-full-scale-tunnel-10-00-am": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Full-Scale Tunnel \u2013 10:00 AM",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c008/p002.md"
+    },
+    "/raggiesoft-books/books/casey/book-1-the-george-wythe-expedition/chapter/part-1-the-glass-elevator-9-30-am": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Glass Elevator \u2013 9:30 AM",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c009/p001.md"
+    },
+    "/raggiesoft-books/books/casey/book-1-the-george-wythe-expedition/chapter/part-2-apollo-and-the-cafe-10-30-am": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: Apollo and the Cafe \u2013 10:30 AM",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c009/p002.md"
+    },
+    "/raggiesoft-books/books/casey/book-1-the-george-wythe-expedition/chapter/part-3-novascreen-and-the-gift-shop-1-00-pm": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: NovaScreen and the Gift Shop \u2013 1:00 PM",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c009/p003.md"
+    },
+    "/raggiesoft-books/books/casey/book-1-the-george-wythe-expedition/chapter/part-1-the-soft-opening-9-00-am": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Soft Opening \u2013 9:00 AM",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c010/p001.md"
+    },
+    "/raggiesoft-books/books/casey/book-1-the-george-wythe-expedition/chapter/part-2-the-catalyst-challenge-3-00-pm": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Catalyst Challenge \u2013 3:00 PM",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c010/p002.md"
+    },
+    "/raggiesoft-books/books/casey/book-1-the-george-wythe-expedition/chapter/part-3-the-submission-4-00-pm": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Submission \u2013 4:00 PM",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c010/p003.md"
+    },
+    "/raggiesoft-books/books/casey/book-1-the-george-wythe-expedition/chapter/part-1-the-departure-6-00-am": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Departure \u2013 6:00 AM",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c011/p001.md"
+    },
+    "/raggiesoft-books/books/casey/book-1-the-george-wythe-expedition/chapter/part-2-the-denver-layover-11-30-am-mountain-time": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Denver Layover \u2013 11:30 AM (Mountain Time)",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c011/p002.md"
+    },
+    "/raggiesoft-books/books/casey/book-1-the-george-wythe-expedition/chapter/part-3-the-ride-free-area-2-30-pm-pacific-time": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Ride Free Area \u2013 2:30 PM (Pacific Time)",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c011/p003.md"
+    },
+    "/raggiesoft-books/books/casey/book-1-the-george-wythe-expedition/chapter/part-1-the-call-april-21st-1996": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Call \u2013 April 21st, 1996",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c015/p001.md"
+    },
     "/raggiesoft-books/books/casey/book-2-the-sovereign-perimeter/chapter-1-the-mask-wednesday-november-24-2004/part-1-the-terminal-3-15-pm": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The Terminal \u2013 3:15 PM",
