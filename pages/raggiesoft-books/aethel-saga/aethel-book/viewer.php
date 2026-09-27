@@ -90,4 +90,32 @@ function cleanSlug($slug, $prefixToRemove) {
         </div>
 
     </div>
-</div>
+</div><script>
+(function() {
+    // Open Mobile TOC Drawer
+    const tocBtns = document.querySelectorAll('#mobile-toc-toggle-btn');
+    const tocBtn = tocBtns[tocBtns.length - 1];
+    
+    if (tocBtn) {
+        tocBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            e.stopPropagation(); // VERY IMPORTANT: Prevents Web Awesome from immediately closing it due to outside click!
+            const drawer = document.getElementById('mobileSidebarDrawer');
+            if (drawer) {
+                drawer.open = true;
+                try { drawer.show(); } catch(err) {}
+            }
+        });
+    }
+})();
+</script>
+
+<style>
+/* Story Typeography & Formatting */
+.story-content {
+}
+.story-content p {
+    margin-bottom: 1.5rem;
+    text-indent: 2rem; /* Traditional book indentation */
+}
+</style>

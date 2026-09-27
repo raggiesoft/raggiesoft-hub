@@ -69,7 +69,7 @@ $seriesTitle = $katie['series_title'] ?? $config['sequenceName'] ?? 'Narrative T
                         }
                     }
                     // Auto-expand if there's only one book in the series OR if we are currently reading this book
-                    $isBookExpanded = (count($books) === 1 || $isBookActive) ? 'expanded="true"' : ''; 
+                    $isBookExpanded = (count($books) === 1 || $isBookActive) ? 'expanded' : ''; 
                 ?>
                 <wa-tree-item <?php
  echo $isBookExpanded; ?>>
@@ -97,7 +97,7 @@ $seriesTitle = $katie['series_title'] ?? $config['sequenceName'] ?? 'Narrative T
                             }
                         ?>
                         <wa-tree-item <?php
- echo $isChapterActive ? 'expanded="true"' : ''; ?>>
+ echo $isChapterActive ? 'expanded' : ''; ?>>
                             <span class="text-body fw-medium d-block" style="cursor: pointer;" onclick="this.parentElement.expanded = !this.parentElement.expanded;"><?php
  echo $chapTitle; ?></span>
                             

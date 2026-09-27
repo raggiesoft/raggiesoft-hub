@@ -210,6 +210,14 @@ if (isset($pageConfig['view'])) {
 // --- 4. RENDER ---
 $config = array_merge($defaults, $pageConfig);
 
+// Apply Global Site/Theme Overrides from settings-dialog.php
+if (!empty($_COOKIE['elara_site_override'])) {
+    $config['site'] = htmlspecialchars($_COOKIE['elara_site_override']);
+}
+if (!empty($_COOKIE['elara_theme_override'])) {
+    $config['theme'] = htmlspecialchars($_COOKIE['elara_theme_override']);
+}
+
 if ($config['view'] === 'errors/500') {
     http_response_code(500);
 } elseif ($config['view'] === 'errors/404') {
@@ -254,9 +262,15 @@ if ($showSidebar && file_exists($currentSidebar)) {
     require_once $currentSidebar;
     echo '    </aside>';
     
-    echo '    <wa-drawer id="mobileSidebarDrawer" label="Navigation" placement="start" class="d-md-none">';
+    echo '    <div class="offcanvas offcanvas-start d-md-none bg-body-tertiary" tabindex="-1" id="mobileSidebarDrawer" aria-labelledby="mobileSidebarDrawerLabel">';
+    echo '      <div class="offcanvas-header border-bottom py-3 px-4">';
+    echo '        <h5 class="offcanvas-title fw-bold font-heading mb-0" id="mobileSidebarDrawerLabel">Navigation</h5>';
+    echo '        <button type="button" class="btn-close shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>';
+    echo '      </div>';
+    echo '      <div class="offcanvas-body p-3">';
     require $currentSidebar;
-    echo '    </wa-drawer>';
+    echo '      </div>';
+    echo '    </div>';
     
     echo '    <main id="main-content" class="col-md-9 col-lg-10 p-4" tabindex="-1" style="outline:none;">';
 } else {

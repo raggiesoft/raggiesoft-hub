@@ -7,11 +7,23 @@
   "/contact": {
     "view": "pages/contact",
     "title": "Contact Channels | Michael Ragsdale",
-    "brandFont": ["Audiowide", "sans-serif"],
+    "brandFont": [
+      "Audiowide",
+      "sans-serif"
+    ],
     "headerMenu": "header-contact",
     "showSidebar": false,
     "site": "portfolio",
     "ogTitle": "Contact The Architect",
     "ogDescription": "Open a direct channel to Michael Ragsdale (Systems Architect) or Engine Room Records."
+  },
+  "/api/lore": {
+    "view": "pages/api/lore-fetcher",
+    "isApi": true
+  },
+  "/encyclopedia/view": {
+    "view": "pages/encyclopedia/viewer",
+    "title": "Stardust Lore Encyclopedia",
+    "showSidebar": false
   }
 }
