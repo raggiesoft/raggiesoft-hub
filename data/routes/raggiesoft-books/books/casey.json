@@ -263,11 +263,179 @@
         "theme": "raggiesoft-books",
         "filePath": "b001/c011/p003.md"
     },
+    "/raggiesoft-books/books/casey/book-1-the-george-wythe-expedition/chapter/part-4-the-topography-4-00-pm-pacific-time": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: The Topography \u2013 4:00 PM (Pacific Time)",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c011/p004.md"
+    },
+    "/raggiesoft-books/books/casey/book-1-the-george-wythe-expedition/chapter/part-5-the-hotel-logistics-8-00-pm-pacific-time": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 5: The Hotel Logistics \u2013 8:00 PM (Pacific Time)",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c011/p005.md"
+    },
+    "/raggiesoft-books/books/casey/book-1-the-george-wythe-expedition/chapter/part-1-the-engineering-quad-9-00-am-pacific-time": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Engineering Quad \u2013 9:00 AM (Pacific Time)",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c012/p001.md"
+    },
+    "/raggiesoft-books/books/casey/book-1-the-george-wythe-expedition/chapter/part-2-the-quantum-pavilion-9-30-am-pacific-time": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Quantum Pavilion \u2013 9:30 AM (Pacific Time)",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c012/p002.md"
+    },
+    "/raggiesoft-books/books/casey/book-1-the-george-wythe-expedition/chapter/part-3-the-quantaneers-10-00-am-pacific-time": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Quantaneers \u2013 10:00 AM (Pacific Time)",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c012/p003.md"
+    },
+    "/raggiesoft-books/books/casey/book-1-the-george-wythe-expedition/chapter/part-4-the-internal-elevators-11-00-am-pacific-time": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: The Internal Elevators \u2013 11:00 AM (Pacific Time)",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c012/p004.md"
+    },
+    "/raggiesoft-books/books/casey/book-1-the-george-wythe-expedition/chapter/part-5-the-two-paths-1-00-pm-pacific-time": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 5: The Two Paths \u2013 1:00 PM (Pacific Time)",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c012/p005.md"
+    },
+    "/raggiesoft-books/books/casey/book-1-the-george-wythe-expedition/chapter/part-6-the-logistics-of-care-3-00-pm-pacific-time": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 6: The Logistics of Care \u2013 3:00 PM (Pacific Time)",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c012/p006.md"
+    },
+    "/raggiesoft-books/books/casey/book-1-the-george-wythe-expedition/chapter/part-7-the-vacation-protocol-7-00-pm-pacific-time": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 7: The Vacation Protocol \u2013 7:00 PM (Pacific Time)",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c012/p007.md"
+    },
+    "/raggiesoft-books/books/casey/book-1-the-george-wythe-expedition/chapter/part-1-the-century-spire-10-00-am-pacific-time": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Century Spire \u2013 10:00 AM (Pacific Time)",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c013/p001.md"
+    },
+    "/raggiesoft-books/books/casey/book-1-the-george-wythe-expedition/chapter/part-2-the-planetarium-12-00-pm-pacific-time": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Planetarium \u2013 12:00 PM (Pacific Time)",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c013/p002.md"
+    },
+    "/raggiesoft-books/books/casey/book-1-the-george-wythe-expedition/chapter/part-3-the-emperor-of-redmond-2-00-pm-pacific-time": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Emperor of Redmond \u2013 2:00 PM (Pacific Time)",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c013/p003.md"
+    },
+    "/raggiesoft-books/books/casey/book-1-the-george-wythe-expedition/chapter/part-4-the-zenith-motherboard-2-15-pm-pacific-time": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: The Zenith Motherboard \u2013 2:15 PM (Pacific Time)",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c013/p004.md"
+    },
+    "/raggiesoft-books/books/casey/book-1-the-george-wythe-expedition/chapter/part-5-the-five-megabyte-monolith-2-30-pm-pacific-time": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 5: The Five-Megabyte Monolith \u2013 2:30 PM (Pacific Time)",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c013/p005.md"
+    },
+    "/raggiesoft-books/books/casey/book-1-the-george-wythe-expedition/chapter/part-6-lake-washington-5-00-pm-pacific-time": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 6: Lake Washington \u2013 5:00 PM (Pacific Time)",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c013/p006.md"
+    },
+    "/raggiesoft-books/books/casey/book-1-the-george-wythe-expedition/chapter/part-7-the-privacy-protocol-8-00-pm-pacific-time": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 7: The Privacy Protocol \u2013 8:00 PM (Pacific Time)",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c013/p007.md"
+    },
+    "/raggiesoft-books/books/casey/book-1-the-george-wythe-expedition/chapter/part-2-the-underwater-dome-9-30-am-pacific-time": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Underwater Dome \u2013 9:30 AM (Pacific Time)",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c014/p002.md"
+    },
+    "/raggiesoft-books/books/casey/book-1-the-george-wythe-expedition/chapter/part-3-the-gift-shop-10-45-am-pacific-time": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Gift Shop \u2013 10:45 AM (Pacific Time)",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c014/p003.md"
+    },
+    "/raggiesoft-books/books/casey/book-1-the-george-wythe-expedition/chapter/part-4-the-prospector-s-registry-11-30-am-pacific-time": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: The Prospector's Registry \u2013 11:30 AM (Pacific Time)",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c014/p004.md"
+    },
+    "/raggiesoft-books/books/casey/book-1-the-george-wythe-expedition/chapter/part-5-taps-route-174-12-15-pm-pacific-time": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 5: TAPS Route 174 \u2013 12:15 PM (Pacific Time)",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c014/p005.md"
+    },
+    "/raggiesoft-books/books/casey/book-1-the-george-wythe-expedition/chapter/part-6-the-great-gallery-1-00-pm-pacific-time": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 6: The Great Gallery \u2013 1:00 PM (Pacific Time)",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c014/p006.md"
+    },
+    "/raggiesoft-books/books/casey/book-1-the-george-wythe-expedition/chapter/part-7-the-extraction-4-30-pm-pacific-time": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 7: The Extraction \u2013 4:30 PM (Pacific Time)",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c014/p007.md"
+    },
+    "/raggiesoft-books/books/casey/book-1-the-george-wythe-expedition/chapter/part-1-the-174-southbound-4-30-am-pacific-time": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The 174 Southbound \u2013 4:30 AM (Pacific Time)",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c015/p001.md"
+    },
+    "/raggiesoft-books/books/casey/book-1-the-george-wythe-expedition/chapter/part-2-the-gateway-counter-6-00-am-pacific-time": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Gateway Counter \u2013 6:00 AM (Pacific Time)",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c015/p002.md"
+    },
+    "/raggiesoft-books/books/casey/book-1-the-george-wythe-expedition/chapter/part-3-the-chicago-layover-2-00-pm-central-time": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Chicago Layover \u2013 2:00 PM (Central Time)",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c015/p003.md"
+    },
     "/raggiesoft-books/books/casey/book-1-the-george-wythe-expedition/chapter/part-1-the-call-april-21st-1996": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The Call \u2013 April 21st, 1996",
         "theme": "raggiesoft-books",
-        "filePath": "b001/c015/p001.md"
+        "filePath": "b001/c016/p001.md"
+    },
+    "/raggiesoft-books/books/casey/book-1-the-george-wythe-expedition/chapter/part-2-the-celebration-7-00-pm-eastern-time": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Celebration \u2013 7:00 PM (Eastern Time)",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c016/p002.md"
+    },
+    "/raggiesoft-books/books/casey/book-1-the-george-wythe-expedition/chapter/part-3-the-sleepover-11-30-pm-eastern-time": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Sleepover \u2013 11:30 PM (Eastern Time)",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c016/p003.md"
+    },
+    "/raggiesoft-books/books/casey/book-1-the-george-wythe-expedition/chapter/part-1-siren-roasters-8-00-am-pacific-time": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: Siren Roasters \u2013 8:00 AM (Pacific Time)",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c014/p001.md"
     },
     "/raggiesoft-books/books/casey/book-2-the-sovereign-perimeter/chapter-1-the-mask-wednesday-november-24-2004/part-1-the-terminal-3-15-pm": {
         "view": "pages/raggiesoft-books/books/viewer",
