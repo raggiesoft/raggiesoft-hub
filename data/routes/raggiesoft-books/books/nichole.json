@@ -17,9 +17,9 @@
         "title": "Nichole",
         "theme": "raggiesoft-books"
     },
-    "/raggiesoft-books/books/nichole/elementary-school/the-newport-vacation/part-1-the-bachelor-pad-the-lab": {
+    "/raggiesoft-books/books/nichole/elementary-school/the-newport-vacation/part-1-the-bachelor-pad": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 1: The Bachelor Pad (The Lab)",
+        "title": "Part 1: The Bachelor Pad",
         "theme": "raggiesoft-books",
         "filePath": "b001/c001/p001.md"
     },
@@ -89,31 +89,31 @@
         "theme": "raggiesoft-books",
         "filePath": "b002/c002/p001.md"
     },
-    "/raggiesoft-books/books/nichole/middle-school/middle-school-life-working-title/part-1-the-fire-alarm": {
+    "/raggiesoft-books/books/nichole/middle-school/middle-school-life/part-1-the-fire-alarm": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The Fire Alarm",
         "theme": "raggiesoft-books",
         "filePath": "b002/c003/p001.md"
     },
-    "/raggiesoft-books/books/nichole/middle-school/middle-school-life-working-title/part-2-the-call": {
+    "/raggiesoft-books/books/nichole/middle-school/middle-school-life/part-2-the-call": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 2: The Call",
         "theme": "raggiesoft-books",
         "filePath": "b002/c003/p002.md"
     },
-    "/raggiesoft-books/books/nichole/middle-school/middle-school-life-working-title/part-3-the-federal-hammer-date-november-12-1996-time-3-45-pm-location-1850-delaney-street-virginia-beach": {
+    "/raggiesoft-books/books/nichole/middle-school/middle-school-life/part-3-the-federal-hammer-date-november-12-1996-time-3-45-pm-location-1850-delaney-street-virginia-beach": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 3: The Federal Hammer Date: November 12, 1996 Time: 3:45 PM Location: 1850 Delaney Street, Virginia Beach",
         "theme": "raggiesoft-books",
         "filePath": "b002/c003/p003.md"
     },
-    "/raggiesoft-books/books/nichole/middle-school/middle-school-life-working-title/part-4-the-third-wheel": {
+    "/raggiesoft-books/books/nichole/middle-school/middle-school-life/part-4-the-third-wheel": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 4: The Third Wheel",
         "theme": "raggiesoft-books",
         "filePath": "b002/c003/p004.md"
     },
-    "/raggiesoft-books/books/nichole/middle-school/middle-school-life-working-title/part-5-the-architect-and-the-laborer": {
+    "/raggiesoft-books/books/nichole/middle-school/middle-school-life/part-5-the-architect-and-the-laborer": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 5: The Architect and the Laborer",
         "theme": "raggiesoft-books",
@@ -125,9 +125,9 @@
         "theme": "raggiesoft-books",
         "filePath": "b003/c001/p001.md"
     },
-    "/raggiesoft-books/books/nichole/freshman-year/welcome-to-northwood-high-school/part-2-the-war-room-breakfast": {
+    "/raggiesoft-books/books/nichole/freshman-year/welcome-to-northwood-high-school/part-2-the-war-room": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 2: The War Room (Breakfast)",
+        "title": "Part 2: The War Room",
         "theme": "raggiesoft-books",
         "filePath": "b003/c001/p002.md"
     },
@@ -1043,9 +1043,9 @@
         "theme": "raggiesoft-books",
         "filePath": "b008/c004/p005.md"
     },
-    "/raggiesoft-books/books/nichole/braxton-freshman/nichole-s-recovery/part-1-the-recovery-room-the-advocacy-test": {
+    "/raggiesoft-books/books/nichole/braxton-freshman/nichole-s-recovery/part-1-the-recovery-room": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 1: The Recovery Room (The Advocacy Test)",
+        "title": "Part 1: The Recovery Room",
         "theme": "raggiesoft-books",
         "filePath": "b008/c005/p001.md"
     },
@@ -1073,15 +1073,15 @@
         "theme": "raggiesoft-books",
         "filePath": "b008/c005/p005.md"
     },
-    "/raggiesoft-books/books/nichole/braxton-freshman/nichole-s-recovery/part-6-the-night-shift-the-spasm-protocol": {
+    "/raggiesoft-books/books/nichole/braxton-freshman/nichole-s-recovery/part-6-the-night-shift": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 6: The Night Shift (The Spasm Protocol)",
+        "title": "Part 6: The Night Shift",
         "theme": "raggiesoft-books",
         "filePath": "b008/c005/p006.md"
     },
-    "/raggiesoft-books/books/nichole/braxton-freshman/nichole-s-recovery/part-7-new-year-s-eve-the-shift-change": {
+    "/raggiesoft-books/books/nichole/braxton-freshman/nichole-s-recovery/part-7-new-year-s-eve": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 7: New Year\\'s Eve (The Shift Change)",
+        "title": "Part 7: New Year\\'s Eve",
         "theme": "raggiesoft-books",
         "filePath": "b008/c005/p007.md"
     },
@@ -1109,9 +1109,9 @@
         "theme": "raggiesoft-books",
         "filePath": "b008/c006/p004.md"
     },
-    "/raggiesoft-books/books/nichole/braxton-freshman/the-routine/part-5-the-downgrade-day-release": {
+    "/raggiesoft-books/books/nichole/braxton-freshman/the-routine/part-5-the-downgrade": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 5: The Downgrade (Day Release)",
+        "title": "Part 5: The Downgrade",
         "theme": "raggiesoft-books",
         "filePath": "b008/c006/p005.md"
     },
@@ -1139,9 +1139,9 @@
         "theme": "raggiesoft-books",
         "filePath": "b011/c001/p001.md"
     },
-    "/raggiesoft-books/books/nichole/bennett-dynamics/an-idea/part-2-the-home-office-the-workflow": {
+    "/raggiesoft-books/books/nichole/bennett-dynamics/an-idea/part-2-the-home-office": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 2: The Home Office (The Workflow)",
+        "title": "Part 2: The Home Office",
         "theme": "raggiesoft-books",
         "filePath": "b011/c001/p002.md"
     },

@@ -35,9 +35,9 @@
         "theme": "raggiesoft-books",
         "filePath": "b002/c002/p002.md"
     },
-    "/raggiesoft-books/books/pebble-borrow/the-motel-on-the-highway/amanda-protects-her-siblings/part-1-the-apex-late-night-switch-amanda-wakes-up-at-10-59-pm": {
+    "/raggiesoft-books/books/pebble-borrow/the-motel-on-the-highway/amanda-protects-her-siblings/part-1-the-apex-late-night-switch": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 1: The APEX Late\u2011Night Switch (Amanda Wakes Up at 10:59 PM)",
+        "title": "Part 1: The APEX Late\u2011Night Switch",
         "theme": "raggiesoft-books",
         "filePath": "b002/c003/p001.md"
     },
@@ -95,27 +95,27 @@
         "theme": "raggiesoft-books",
         "filePath": "b023/c007/p003.md"
     },
-    "/raggiesoft-books/books/pebble-borrow/amanda-interviews-care-nurses/the-fortress-is-staffed/part-1-the-night-watch-the-rns": {
+    "/raggiesoft-books/books/pebble-borrow/amanda-interviews-care-nurses/the-fortress-is-staffed/part-1-the-night-watch": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 1: The Night Watch (The RNs)",
+        "title": "Part 1: The Night Watch",
         "theme": "raggiesoft-books",
         "filePath": "b023/c008/p001.md"
     },
-    "/raggiesoft-books/books/pebble-borrow/amanda-interviews-care-nurses/the-fortress-is-staffed/part-2-the-muscle-the-cnas": {
+    "/raggiesoft-books/books/pebble-borrow/amanda-interviews-care-nurses/the-fortress-is-staffed/part-2-the-muscle": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 2: The Muscle (The CNAs)",
+        "title": "Part 2: The Muscle",
         "theme": "raggiesoft-books",
         "filePath": "b023/c008/p002.md"
     },
-    "/raggiesoft-books/books/pebble-borrow/amanda-interviews-care-nurses/the-fortress-is-staffed/part-3-the-rebuilders-the-pta-and-ot": {
+    "/raggiesoft-books/books/pebble-borrow/amanda-interviews-care-nurses/the-fortress-is-staffed/part-3-the-rebuilders": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 3: The Rebuilders (The PTA and OT)",
+        "title": "Part 3: The Rebuilders",
         "theme": "raggiesoft-books",
         "filePath": "b023/c008/p003.md"
     },
-    "/raggiesoft-books/books/pebble-borrow/amanda-interviews-care-nurses/the-fortress-is-staffed/part-4-the-shield-the-administration": {
+    "/raggiesoft-books/books/pebble-borrow/amanda-interviews-care-nurses/the-fortress-is-staffed/part-4-the-shield": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 4: The Shield (The Administration)",
+        "title": "Part 4: The Shield",
         "theme": "raggiesoft-books",
         "filePath": "b023/c008/p004.md"
     }

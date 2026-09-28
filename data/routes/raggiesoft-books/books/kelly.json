@@ -401,15 +401,15 @@
         "theme": "raggiesoft-books",
         "filePath": "b001/c008/p008.md"
     },
-    "/raggiesoft-books/books/kelly/the-bidding-war-as-seen-on-devnet/the-players/part-1-the-developer-community-the-narrators": {
+    "/raggiesoft-books/books/kelly/the-bidding-war-as-seen-on-devnet/the-players/part-1-the-developer-community": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 1: The Developer Community (The Narrators)",
+        "title": "Part 1: The Developer Community",
         "theme": "raggiesoft-books",
         "filePath": "b002/c002/p001.md"
     },
-    "/raggiesoft-books/books/kelly/the-bidding-war-as-seen-on-devnet/the-players/part-2-the-ceos-the-bidders": {
+    "/raggiesoft-books/books/kelly/the-bidding-war-as-seen-on-devnet/the-players/part-2-the-ceos": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 2: The CEOs (The Bidders)",
+        "title": "Part 2: The CEOs",
         "theme": "raggiesoft-books",
         "filePath": "b002/c002/p002.md"
     },
