@@ -17,897 +17,957 @@
         "title": "casey",
         "theme": "raggiesoft-books"
     },
-    "/raggiesoft-books/books/casey/book-1-the-george-wythe-expedition/chapter-1-the-northern-regional-summer-1995/part-1-departing-npn-8-00-am": {
+    "/raggiesoft-books/books/casey/book-1-the-george-wythe-expedition/chapter-1-the-northern-regional/part-1-departing-npn": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 1: Departing NPN \u2013 8:00 AM",
+        "title": "Part 1: Departing NPN",
         "theme": "raggiesoft-books",
         "filePath": "b001/c001/p001.md"
     },
-    "/raggiesoft-books/books/casey/book-1-the-george-wythe-expedition/chapter-1-the-northern-regional-summer-1995/part-2-the-northern-regional-8-30-am": {
+    "/raggiesoft-books/books/casey/book-1-the-george-wythe-expedition/chapter-1-the-northern-regional/part-2-the-northern-regional": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 2: The Northern Regional \u2013 8:30 AM",
+        "title": "Part 2: The Northern Regional",
         "theme": "raggiesoft-books",
         "filePath": "b001/c001/p002.md"
     },
-    "/raggiesoft-books/books/casey/book-1-the-george-wythe-expedition/chapter-1-the-northern-regional-summer-1995/part-3-the-seven-corners-transfer-12-45-pm": {
+    "/raggiesoft-books/books/casey/book-1-the-george-wythe-expedition/chapter-1-the-northern-regional/part-3-the-seven-corners-transfer": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 3: The Seven Corners Transfer \u2013 12:45 PM",
+        "title": "Part 3: The Seven Corners Transfer",
         "theme": "raggiesoft-books",
         "filePath": "b001/c001/p003.md"
     },
-    "/raggiesoft-books/books/casey/book-1-the-george-wythe-expedition/chapter-1-the-northern-regional-summer-1995/part-4-the-crown-burger-debrief-6-30-pm": {
+    "/raggiesoft-books/books/casey/book-1-the-george-wythe-expedition/chapter-1-the-northern-regional/part-4-the-crown-burger-debrief": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 4: The Crown Burger Debrief \u2013 6:30 PM",
+        "title": "Part 4: The Crown Burger Debrief",
         "theme": "raggiesoft-books",
         "filePath": "b001/c001/p004.md"
     },
-    "/raggiesoft-books/books/casey/book-1-the-george-wythe-expedition/chapter-2-the-open-house-summer-1995/part-1-the-continental-breakfast-7-30-am": {
+    "/raggiesoft-books/books/casey/book-1-the-george-wythe-expedition/chapter-2-the-open-house/part-1-the-continental-breakfast": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 1: The Continental Breakfast \u2013 7:30 AM",
+        "title": "Part 1: The Continental Breakfast",
         "theme": "raggiesoft-books",
         "filePath": "b001/c002/p001.md"
     },
-    "/raggiesoft-books/books/casey/book-1-the-george-wythe-expedition/chapter-2-the-open-house-summer-1995/part-2-the-architecture-of-the-past-9-45-am": {
+    "/raggiesoft-books/books/casey/book-1-the-george-wythe-expedition/chapter-2-the-open-house/part-2-the-architecture-of-the-past": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 2: The Architecture of the Past \u2013 9:45 AM",
+        "title": "Part 2: The Architecture of the Past",
         "theme": "raggiesoft-books",
         "filePath": "b001/c002/p002.md"
     },
-    "/raggiesoft-books/books/casey/book-1-the-george-wythe-expedition/chapter-2-the-open-house-summer-1995/part-3-the-dormitory-metric-1-00-pm": {
+    "/raggiesoft-books/books/casey/book-1-the-george-wythe-expedition/chapter-2-the-open-house/part-3-the-dormitory-metric": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 3: The Dormitory Metric \u2013 1:00 PM",
+        "title": "Part 3: The Dormitory Metric",
         "theme": "raggiesoft-books",
         "filePath": "b001/c002/p003.md"
     },
-    "/raggiesoft-books/books/casey/book-1-the-george-wythe-expedition/chapter-2-the-open-house-summer-1995/part-4-early-dismissal-2-15-pm": {
+    "/raggiesoft-books/books/casey/book-1-the-george-wythe-expedition/chapter-2-the-open-house/part-4-early-dismissal": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 4: Early Dismissal \u2013 2:15 PM",
+        "title": "Part 4: Early Dismissal",
         "theme": "raggiesoft-books",
         "filePath": "b001/c002/p004.md"
     },
-    "/raggiesoft-books/books/casey/book-1-the-george-wythe-expedition/chapter-2-the-open-house-summer-1995/part-5-the-evening-routine-8-00-pm": {
+    "/raggiesoft-books/books/casey/book-1-the-george-wythe-expedition/chapter-2-the-open-house/part-5-the-evening-routine": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 5: The Evening Routine \u2013 8:00 PM",
+        "title": "Part 5: The Evening Routine",
         "theme": "raggiesoft-books",
         "filePath": "b001/c002/p005.md"
     },
-    "/raggiesoft-books/books/casey/book-1-the-george-wythe-expedition/chapter-2-the-open-house-summer-1995/part-6-lights-out-9-30-pm": {
+    "/raggiesoft-books/books/casey/book-1-the-george-wythe-expedition/chapter-2-the-open-house/part-6-lights-out": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 6: Lights Out \u2013 9:30 PM",
+        "title": "Part 6: Lights Out",
         "theme": "raggiesoft-books",
         "filePath": "b001/c002/p006.md"
     },
-    "/raggiesoft-books/books/casey/book-1-the-george-wythe-expedition/chapter-3-the-national-zoo-summer-1995/part-1-the-connecticut-avenue-bypass-9-00-am": {
+    "/raggiesoft-books/books/casey/book-1-the-george-wythe-expedition/chapter-3-the-national-zoo/part-1-the-connecticut-avenue-bypass": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 1: The Connecticut Avenue Bypass \u2013 9:00 AM",
+        "title": "Part 1: The Connecticut Avenue Bypass",
         "theme": "raggiesoft-books",
         "filePath": "b001/c003/p001.md"
     },
-    "/raggiesoft-books/books/casey/book-1-the-george-wythe-expedition/chapter-3-the-national-zoo-summer-1995/part-2-the-olmsted-walk-10-30-am": {
+    "/raggiesoft-books/books/casey/book-1-the-george-wythe-expedition/chapter-3-the-national-zoo/part-2-the-olmsted-walk": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 2: The Olmsted Walk \u2013 10:30 AM",
+        "title": "Part 2: The Olmsted Walk",
         "theme": "raggiesoft-books",
         "filePath": "b001/c003/p002.md"
     },
-    "/raggiesoft-books/books/casey/book-1-the-george-wythe-expedition/chapter-3-the-national-zoo-summer-1995/part-3-the-pop-up-storm-12-15-pm": {
+    "/raggiesoft-books/books/casey/book-1-the-george-wythe-expedition/chapter-3-the-national-zoo/part-3-the-pop-up-storm": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 3: The Pop-Up Storm \u2013 12:15 PM",
+        "title": "Part 3: The Pop-Up Storm",
         "theme": "raggiesoft-books",
         "filePath": "b001/c003/p003.md"
     },
-    "/raggiesoft-books/books/casey/book-1-the-george-wythe-expedition/chapter-3-the-national-zoo-summer-1995/part-4-the-wet-weather-metric-1-30-pm": {
+    "/raggiesoft-books/books/casey/book-1-the-george-wythe-expedition/chapter-3-the-national-zoo/part-4-the-wet-weather-metric": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 4: The Wet Weather Metric \u2013 1:30 PM",
+        "title": "Part 4: The Wet Weather Metric",
         "theme": "raggiesoft-books",
         "filePath": "b001/c003/p004.md"
     },
-    "/raggiesoft-books/books/casey/book-1-the-george-wythe-expedition/chapter-3-the-national-zoo-summer-1995/part-5-the-l-enfant-maze-2-30-pm": {
+    "/raggiesoft-books/books/casey/book-1-the-george-wythe-expedition/chapter-3-the-national-zoo/part-5-the-l-enfant-maze": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 5: The L'Enfant Maze \u2013 2:30 PM",
+        "title": "Part 5: The L'Enfant Maze",
         "theme": "raggiesoft-books",
         "filePath": "b001/c003/p005.md"
     },
-    "/raggiesoft-books/books/casey/book-1-the-george-wythe-expedition/chapter-3-the-national-zoo-summer-1995/part-6-the-air-problem-2-45-pm": {
+    "/raggiesoft-books/books/casey/book-1-the-george-wythe-expedition/chapter-3-the-national-zoo/part-6-the-air-problem": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 6: The \"Air\" Problem \u2013 2:45 PM",
+        "title": "Part 6: The \"Air\" Problem",
         "theme": "raggiesoft-books",
         "filePath": "b001/c003/p006.md"
     },
-    "/raggiesoft-books/books/casey/book-1-the-george-wythe-expedition/chapter-3-the-national-zoo-summer-1995/part-7-rocket-burger-and-the-return-vector-5-00-pm": {
+    "/raggiesoft-books/books/casey/book-1-the-george-wythe-expedition/chapter-3-the-national-zoo/part-7-rocket-burger-and-the-return-vector": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 7: Rocket Burger and the Return Vector \u2013 5:00 PM",
+        "title": "Part 7: Rocket Burger and the Return Vector",
         "theme": "raggiesoft-books",
         "filePath": "b001/c003/p007.md"
     },
-    "/raggiesoft-books/books/casey/book-1-the-george-wythe-expedition/chapter-3-the-national-zoo-summer-1995/part-8-the-gwu-rivalry-and-deep-pressure-9-00-pm": {
+    "/raggiesoft-books/books/casey/book-1-the-george-wythe-expedition/chapter-3-the-national-zoo/part-8-the-gwu-rivalry-and-deep-pressure": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 8: The GWU Rivalry and Deep Pressure \u2013 9:00 PM",
+        "title": "Part 8: The GWU Rivalry and Deep Pressure",
         "theme": "raggiesoft-books",
         "filePath": "b001/c003/p008.md"
     },
-    "/raggiesoft-books/books/casey/book-1-the-george-wythe-expedition/chapter/part-1-the-union-station-bottleneck-12-30-pm": {
+    "/raggiesoft-books/books/casey/book-1-the-george-wythe-expedition/chapter/part-1-the-union-station-bottleneck": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 1: The Union Station Bottleneck \u2013 12:30 PM",
+        "title": "Part 1: The Union Station Bottleneck",
         "theme": "raggiesoft-books",
         "filePath": "b001/c004/p001.md"
     },
-    "/raggiesoft-books/books/casey/book-1-the-george-wythe-expedition/chapter/part-2-the-monitor-merrimac-detour-9-00-pm": {
+    "/raggiesoft-books/books/casey/book-1-the-george-wythe-expedition/chapter/part-2-the-monitor-merrimac-detour": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 2: The Monitor-Merrimac Detour \u2013 9:00 PM",
+        "title": "Part 2: The Monitor-Merrimac Detour",
         "theme": "raggiesoft-books",
         "filePath": "b001/c004/p002.md"
     },
-    "/raggiesoft-books/books/casey/book-1-the-george-wythe-expedition/chapter/part-3-the-sibling-anchor-10-00-pm": {
+    "/raggiesoft-books/books/casey/book-1-the-george-wythe-expedition/chapter/part-3-the-sibling-anchor": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 3: The Sibling Anchor \u2013 10:00 PM",
+        "title": "Part 3: The Sibling Anchor",
         "theme": "raggiesoft-books",
         "filePath": "b001/c004/p003.md"
     },
-    "/raggiesoft-books/books/casey/book-1-the-george-wythe-expedition/chapter/part-1-the-lightning-strike-8-00-am": {
+    "/raggiesoft-books/books/casey/book-1-the-george-wythe-expedition/chapter/part-1-the-lightning-strike": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 1: The Lightning Strike \u2013 8:00 AM",
+        "title": "Part 1: The Lightning Strike",
         "theme": "raggiesoft-books",
         "filePath": "b001/c005/p001.md"
     },
-    "/raggiesoft-books/books/casey/book-1-the-george-wythe-expedition/chapter/part-2-the-ecology-camp-logistics-10-00-am": {
+    "/raggiesoft-books/books/casey/book-1-the-george-wythe-expedition/chapter/part-2-the-ecology-camp-logistics": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 2: The Ecology Camp Logistics \u2013 10:00 AM",
+        "title": "Part 2: The Ecology Camp Logistics",
         "theme": "raggiesoft-books",
         "filePath": "b001/c005/p002.md"
     },
-    "/raggiesoft-books/books/casey/book-1-the-george-wythe-expedition/chapter/part-1-the-junior-cohort-9-00-am": {
+    "/raggiesoft-books/books/casey/book-1-the-george-wythe-expedition/chapter/part-1-the-junior-cohort": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 1: The Junior Cohort \u2013 9:00 AM",
+        "title": "Part 1: The Junior Cohort",
         "theme": "raggiesoft-books",
         "filePath": "b001/c006/p001.md"
     },
-    "/raggiesoft-books/books/casey/book-1-the-george-wythe-expedition/chapter/part-2-the-ecology-lab-1-00-pm": {
+    "/raggiesoft-books/books/casey/book-1-the-george-wythe-expedition/chapter/part-2-the-ecology-lab": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 2: The Ecology Lab \u2013 1:00 PM",
+        "title": "Part 2: The Ecology Lab",
         "theme": "raggiesoft-books",
         "filePath": "b001/c006/p002.md"
     },
-    "/raggiesoft-books/books/casey/book-1-the-george-wythe-expedition/chapter/part-3-the-catalyst-4-00-pm": {
+    "/raggiesoft-books/books/casey/book-1-the-george-wythe-expedition/chapter/part-3-the-catalyst": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 3: The Catalyst \u2013 4:00 PM",
+        "title": "Part 3: The Catalyst",
         "theme": "raggiesoft-books",
         "filePath": "b001/c006/p003.md"
     },
-    "/raggiesoft-books/books/casey/book-1-the-george-wythe-expedition/chapter/part-4-the-assistant-manager-6-00-pm": {
+    "/raggiesoft-books/books/casey/book-1-the-george-wythe-expedition/chapter/part-4-the-assistant-manager": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 4: The Assistant Manager \u2013 6:00 PM",
+        "title": "Part 4: The Assistant Manager",
         "theme": "raggiesoft-books",
         "filePath": "b001/c006/p004.md"
     },
-    "/raggiesoft-books/books/casey/book-1-the-george-wythe-expedition/chapter/part-1-the-chesapeake-crossing-8-30-am": {
+    "/raggiesoft-books/books/casey/book-1-the-george-wythe-expedition/chapter/part-1-the-chesapeake-crossing": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 1: The Chesapeake Crossing \u2013 8:30 AM",
+        "title": "Part 1: The Chesapeake Crossing",
         "theme": "raggiesoft-books",
         "filePath": "b001/c007/p001.md"
     },
-    "/raggiesoft-books/books/casey/book-1-the-george-wythe-expedition/chapter/part-2-the-squall-10-30-am": {
+    "/raggiesoft-books/books/casey/book-1-the-george-wythe-expedition/chapter/part-2-the-squall": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 2: The Squall \u2013 10:30 AM",
+        "title": "Part 2: The Squall",
         "theme": "raggiesoft-books",
         "filePath": "b001/c007/p002.md"
     },
-    "/raggiesoft-books/books/casey/book-1-the-george-wythe-expedition/chapter/part-3-sample-recovery-11-00-am": {
+    "/raggiesoft-books/books/casey/book-1-the-george-wythe-expedition/chapter/part-3-sample-recovery": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 3: Sample Recovery \u2013 11:00 AM",
+        "title": "Part 3: Sample Recovery",
         "theme": "raggiesoft-books",
         "filePath": "b001/c007/p003.md"
     },
-    "/raggiesoft-books/books/casey/book-1-the-george-wythe-expedition/chapter/part-1-the-security-gate-9-00-am": {
+    "/raggiesoft-books/books/casey/book-1-the-george-wythe-expedition/chapter/part-1-the-security-gate": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 1: The Security Gate \u2013 9:00 AM",
+        "title": "Part 1: The Security Gate",
         "theme": "raggiesoft-books",
         "filePath": "b001/c008/p001.md"
     },
-    "/raggiesoft-books/books/casey/book-1-the-george-wythe-expedition/chapter/part-2-the-full-scale-tunnel-10-00-am": {
+    "/raggiesoft-books/books/casey/book-1-the-george-wythe-expedition/chapter/part-2-the-full-scale-tunnel": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 2: The Full-Scale Tunnel \u2013 10:00 AM",
+        "title": "Part 2: The Full-Scale Tunnel",
         "theme": "raggiesoft-books",
         "filePath": "b001/c008/p002.md"
     },
-    "/raggiesoft-books/books/casey/book-1-the-george-wythe-expedition/chapter/part-1-the-glass-elevator-9-30-am": {
+    "/raggiesoft-books/books/casey/book-1-the-george-wythe-expedition/chapter/part-1-the-glass-elevator": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 1: The Glass Elevator \u2013 9:30 AM",
+        "title": "Part 1: The Glass Elevator",
         "theme": "raggiesoft-books",
         "filePath": "b001/c009/p001.md"
     },
-    "/raggiesoft-books/books/casey/book-1-the-george-wythe-expedition/chapter/part-2-apollo-and-the-cafe-10-30-am": {
+    "/raggiesoft-books/books/casey/book-1-the-george-wythe-expedition/chapter/part-2-apollo-and-the-cafe": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 2: Apollo and the Cafe \u2013 10:30 AM",
+        "title": "Part 2: Apollo and the Cafe",
         "theme": "raggiesoft-books",
         "filePath": "b001/c009/p002.md"
     },
-    "/raggiesoft-books/books/casey/book-1-the-george-wythe-expedition/chapter/part-3-novascreen-and-the-gift-shop-1-00-pm": {
+    "/raggiesoft-books/books/casey/book-1-the-george-wythe-expedition/chapter/part-3-novascreen-and-the-gift-shop": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 3: NovaScreen and the Gift Shop \u2013 1:00 PM",
+        "title": "Part 3: NovaScreen and the Gift Shop",
         "theme": "raggiesoft-books",
         "filePath": "b001/c009/p003.md"
     },
-    "/raggiesoft-books/books/casey/book-1-the-george-wythe-expedition/chapter/part-1-the-soft-opening-9-00-am": {
+    "/raggiesoft-books/books/casey/book-1-the-george-wythe-expedition/chapter/part-1-the-soft-opening": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 1: The Soft Opening \u2013 9:00 AM",
+        "title": "Part 1: The Soft Opening",
         "theme": "raggiesoft-books",
         "filePath": "b001/c010/p001.md"
     },
-    "/raggiesoft-books/books/casey/book-1-the-george-wythe-expedition/chapter/part-2-the-catalyst-challenge-3-00-pm": {
+    "/raggiesoft-books/books/casey/book-1-the-george-wythe-expedition/chapter/part-2-the-catalyst-challenge": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 2: The Catalyst Challenge \u2013 3:00 PM",
+        "title": "Part 2: The Catalyst Challenge",
         "theme": "raggiesoft-books",
         "filePath": "b001/c010/p002.md"
     },
-    "/raggiesoft-books/books/casey/book-1-the-george-wythe-expedition/chapter/part-3-the-submission-4-00-pm": {
+    "/raggiesoft-books/books/casey/book-1-the-george-wythe-expedition/chapter/part-3-the-submission": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 3: The Submission \u2013 4:00 PM",
+        "title": "Part 3: The Submission",
         "theme": "raggiesoft-books",
         "filePath": "b001/c010/p003.md"
     },
-    "/raggiesoft-books/books/casey/book-1-the-george-wythe-expedition/chapter/part-1-the-departure-6-00-am": {
+    "/raggiesoft-books/books/casey/book-1-the-george-wythe-expedition/chapter/part-1-the-departure": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 1: The Departure \u2013 6:00 AM",
+        "title": "Part 1: The Departure",
         "theme": "raggiesoft-books",
         "filePath": "b001/c011/p001.md"
     },
-    "/raggiesoft-books/books/casey/book-1-the-george-wythe-expedition/chapter/part-2-the-denver-layover-11-30-am-mountain-time": {
+    "/raggiesoft-books/books/casey/book-1-the-george-wythe-expedition/chapter/part-2-the-denver-layover": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 2: The Denver Layover \u2013 11:30 AM (Mountain Time)",
+        "title": "Part 2: The Denver Layover",
         "theme": "raggiesoft-books",
         "filePath": "b001/c011/p002.md"
     },
-    "/raggiesoft-books/books/casey/book-1-the-george-wythe-expedition/chapter/part-3-the-ride-free-area-2-30-pm-pacific-time": {
+    "/raggiesoft-books/books/casey/book-1-the-george-wythe-expedition/chapter/part-3-the-ride-free-area": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 3: The Ride Free Area \u2013 2:30 PM (Pacific Time)",
+        "title": "Part 3: The Ride Free Area",
         "theme": "raggiesoft-books",
         "filePath": "b001/c011/p003.md"
     },
-    "/raggiesoft-books/books/casey/book-1-the-george-wythe-expedition/chapter/part-4-the-topography-4-00-pm-pacific-time": {
+    "/raggiesoft-books/books/casey/book-1-the-george-wythe-expedition/chapter/part-4-the-topography": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 4: The Topography \u2013 4:00 PM (Pacific Time)",
+        "title": "Part 4: The Topography",
         "theme": "raggiesoft-books",
         "filePath": "b001/c011/p004.md"
     },
-    "/raggiesoft-books/books/casey/book-1-the-george-wythe-expedition/chapter/part-5-the-hotel-logistics-8-00-pm-pacific-time": {
+    "/raggiesoft-books/books/casey/book-1-the-george-wythe-expedition/chapter/part-5-the-hotel-logistics": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 5: The Hotel Logistics \u2013 8:00 PM (Pacific Time)",
+        "title": "Part 5: The Hotel Logistics",
         "theme": "raggiesoft-books",
         "filePath": "b001/c011/p005.md"
     },
-    "/raggiesoft-books/books/casey/book-1-the-george-wythe-expedition/chapter/part-1-the-engineering-quad-9-00-am-pacific-time": {
+    "/raggiesoft-books/books/casey/book-1-the-george-wythe-expedition/chapter/part-1-the-engineering-quad": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 1: The Engineering Quad \u2013 9:00 AM (Pacific Time)",
+        "title": "Part 1: The Engineering Quad",
         "theme": "raggiesoft-books",
         "filePath": "b001/c012/p001.md"
     },
-    "/raggiesoft-books/books/casey/book-1-the-george-wythe-expedition/chapter/part-2-the-quantum-pavilion-9-30-am-pacific-time": {
+    "/raggiesoft-books/books/casey/book-1-the-george-wythe-expedition/chapter/part-2-the-quantum-pavilion": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 2: The Quantum Pavilion \u2013 9:30 AM (Pacific Time)",
+        "title": "Part 2: The Quantum Pavilion",
         "theme": "raggiesoft-books",
         "filePath": "b001/c012/p002.md"
     },
-    "/raggiesoft-books/books/casey/book-1-the-george-wythe-expedition/chapter/part-3-the-quantaneers-10-00-am-pacific-time": {
+    "/raggiesoft-books/books/casey/book-1-the-george-wythe-expedition/chapter/part-3-the-quantaneers": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 3: The Quantaneers \u2013 10:00 AM (Pacific Time)",
+        "title": "Part 3: The Quantaneers",
         "theme": "raggiesoft-books",
         "filePath": "b001/c012/p003.md"
     },
-    "/raggiesoft-books/books/casey/book-1-the-george-wythe-expedition/chapter/part-4-the-internal-elevators-11-00-am-pacific-time": {
+    "/raggiesoft-books/books/casey/book-1-the-george-wythe-expedition/chapter/part-4-the-internal-elevators": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 4: The Internal Elevators \u2013 11:00 AM (Pacific Time)",
+        "title": "Part 4: The Internal Elevators",
         "theme": "raggiesoft-books",
         "filePath": "b001/c012/p004.md"
     },
-    "/raggiesoft-books/books/casey/book-1-the-george-wythe-expedition/chapter/part-5-the-two-paths-1-00-pm-pacific-time": {
+    "/raggiesoft-books/books/casey/book-1-the-george-wythe-expedition/chapter/part-5-the-two-paths": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 5: The Two Paths \u2013 1:00 PM (Pacific Time)",
+        "title": "Part 5: The Two Paths",
         "theme": "raggiesoft-books",
         "filePath": "b001/c012/p005.md"
     },
-    "/raggiesoft-books/books/casey/book-1-the-george-wythe-expedition/chapter/part-6-the-logistics-of-care-3-00-pm-pacific-time": {
+    "/raggiesoft-books/books/casey/book-1-the-george-wythe-expedition/chapter/part-6-the-logistics-of-care": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 6: The Logistics of Care \u2013 3:00 PM (Pacific Time)",
+        "title": "Part 6: The Logistics of Care",
         "theme": "raggiesoft-books",
         "filePath": "b001/c012/p006.md"
     },
-    "/raggiesoft-books/books/casey/book-1-the-george-wythe-expedition/chapter/part-7-the-vacation-protocol-7-00-pm-pacific-time": {
+    "/raggiesoft-books/books/casey/book-1-the-george-wythe-expedition/chapter/part-7-the-vacation-protocol": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 7: The Vacation Protocol \u2013 7:00 PM (Pacific Time)",
+        "title": "Part 7: The Vacation Protocol",
         "theme": "raggiesoft-books",
         "filePath": "b001/c012/p007.md"
     },
-    "/raggiesoft-books/books/casey/book-1-the-george-wythe-expedition/chapter/part-1-the-century-spire-10-00-am-pacific-time": {
+    "/raggiesoft-books/books/casey/book-1-the-george-wythe-expedition/chapter/part-1-the-century-spire": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 1: The Century Spire \u2013 10:00 AM (Pacific Time)",
+        "title": "Part 1: The Century Spire",
         "theme": "raggiesoft-books",
         "filePath": "b001/c013/p001.md"
     },
-    "/raggiesoft-books/books/casey/book-1-the-george-wythe-expedition/chapter/part-2-the-planetarium-12-00-pm-pacific-time": {
+    "/raggiesoft-books/books/casey/book-1-the-george-wythe-expedition/chapter/part-2-the-planetarium": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 2: The Planetarium \u2013 12:00 PM (Pacific Time)",
+        "title": "Part 2: The Planetarium",
         "theme": "raggiesoft-books",
         "filePath": "b001/c013/p002.md"
     },
-    "/raggiesoft-books/books/casey/book-1-the-george-wythe-expedition/chapter/part-3-the-emperor-of-redmond-2-00-pm-pacific-time": {
+    "/raggiesoft-books/books/casey/book-1-the-george-wythe-expedition/chapter/part-3-the-emperor-of-redmond": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 3: The Emperor of Redmond \u2013 2:00 PM (Pacific Time)",
+        "title": "Part 3: The Emperor of Redmond",
         "theme": "raggiesoft-books",
         "filePath": "b001/c013/p003.md"
     },
-    "/raggiesoft-books/books/casey/book-1-the-george-wythe-expedition/chapter/part-4-the-zenith-motherboard-2-15-pm-pacific-time": {
+    "/raggiesoft-books/books/casey/book-1-the-george-wythe-expedition/chapter/part-4-the-zenith-motherboard": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 4: The Zenith Motherboard \u2013 2:15 PM (Pacific Time)",
+        "title": "Part 4: The Zenith Motherboard",
         "theme": "raggiesoft-books",
         "filePath": "b001/c013/p004.md"
     },
-    "/raggiesoft-books/books/casey/book-1-the-george-wythe-expedition/chapter/part-5-the-five-megabyte-monolith-2-30-pm-pacific-time": {
+    "/raggiesoft-books/books/casey/book-1-the-george-wythe-expedition/chapter/part-5-the-five-megabyte-monolith": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 5: The Five-Megabyte Monolith \u2013 2:30 PM (Pacific Time)",
+        "title": "Part 5: The Five-Megabyte Monolith",
         "theme": "raggiesoft-books",
         "filePath": "b001/c013/p005.md"
     },
-    "/raggiesoft-books/books/casey/book-1-the-george-wythe-expedition/chapter/part-6-lake-washington-5-00-pm-pacific-time": {
+    "/raggiesoft-books/books/casey/book-1-the-george-wythe-expedition/chapter/part-6-lake-washington": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 6: Lake Washington \u2013 5:00 PM (Pacific Time)",
+        "title": "Part 6: Lake Washington",
         "theme": "raggiesoft-books",
         "filePath": "b001/c013/p006.md"
     },
-    "/raggiesoft-books/books/casey/book-1-the-george-wythe-expedition/chapter/part-7-the-privacy-protocol-8-00-pm-pacific-time": {
+    "/raggiesoft-books/books/casey/book-1-the-george-wythe-expedition/chapter/part-7-the-privacy-protocol": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 7: The Privacy Protocol \u2013 8:00 PM (Pacific Time)",
+        "title": "Part 7: The Privacy Protocol",
         "theme": "raggiesoft-books",
         "filePath": "b001/c013/p007.md"
     },
-    "/raggiesoft-books/books/casey/book-1-the-george-wythe-expedition/chapter/part-2-the-underwater-dome-9-30-am-pacific-time": {
+    "/raggiesoft-books/books/casey/book-1-the-george-wythe-expedition/chapter/part-2-the-underwater-dome": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 2: The Underwater Dome \u2013 9:30 AM (Pacific Time)",
+        "title": "Part 2: The Underwater Dome",
         "theme": "raggiesoft-books",
         "filePath": "b001/c014/p002.md"
     },
-    "/raggiesoft-books/books/casey/book-1-the-george-wythe-expedition/chapter/part-3-the-gift-shop-10-45-am-pacific-time": {
+    "/raggiesoft-books/books/casey/book-1-the-george-wythe-expedition/chapter/part-3-the-gift-shop": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 3: The Gift Shop \u2013 10:45 AM (Pacific Time)",
+        "title": "Part 3: The Gift Shop",
         "theme": "raggiesoft-books",
         "filePath": "b001/c014/p003.md"
     },
-    "/raggiesoft-books/books/casey/book-1-the-george-wythe-expedition/chapter/part-4-the-prospector-s-registry-11-30-am-pacific-time": {
+    "/raggiesoft-books/books/casey/book-1-the-george-wythe-expedition/chapter/part-4-the-prospector-s-registry": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 4: The Prospector's Registry \u2013 11:30 AM (Pacific Time)",
+        "title": "Part 4: The Prospector's Registry",
         "theme": "raggiesoft-books",
         "filePath": "b001/c014/p004.md"
     },
-    "/raggiesoft-books/books/casey/book-1-the-george-wythe-expedition/chapter/part-5-taps-route-174-12-15-pm-pacific-time": {
+    "/raggiesoft-books/books/casey/book-1-the-george-wythe-expedition/chapter/part-5-taps-route-174": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 5: TAPS Route 174 \u2013 12:15 PM (Pacific Time)",
+        "title": "Part 5: TAPS Route 174",
         "theme": "raggiesoft-books",
         "filePath": "b001/c014/p005.md"
     },
-    "/raggiesoft-books/books/casey/book-1-the-george-wythe-expedition/chapter/part-6-the-great-gallery-1-00-pm-pacific-time": {
+    "/raggiesoft-books/books/casey/book-1-the-george-wythe-expedition/chapter/part-6-the-great-gallery": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 6: The Great Gallery \u2013 1:00 PM (Pacific Time)",
+        "title": "Part 6: The Great Gallery",
         "theme": "raggiesoft-books",
         "filePath": "b001/c014/p006.md"
     },
-    "/raggiesoft-books/books/casey/book-1-the-george-wythe-expedition/chapter/part-7-the-extraction-4-30-pm-pacific-time": {
+    "/raggiesoft-books/books/casey/book-1-the-george-wythe-expedition/chapter/part-7-the-extraction": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 7: The Extraction \u2013 4:30 PM (Pacific Time)",
+        "title": "Part 7: The Extraction",
         "theme": "raggiesoft-books",
         "filePath": "b001/c014/p007.md"
     },
-    "/raggiesoft-books/books/casey/book-1-the-george-wythe-expedition/chapter/part-1-the-174-southbound-4-30-am-pacific-time": {
+    "/raggiesoft-books/books/casey/book-1-the-george-wythe-expedition/chapter/part-1-the-174-southbound": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 1: The 174 Southbound \u2013 4:30 AM (Pacific Time)",
+        "title": "Part 1: The 174 Southbound",
         "theme": "raggiesoft-books",
         "filePath": "b001/c015/p001.md"
     },
-    "/raggiesoft-books/books/casey/book-1-the-george-wythe-expedition/chapter/part-2-the-gateway-counter-6-00-am-pacific-time": {
+    "/raggiesoft-books/books/casey/book-1-the-george-wythe-expedition/chapter/part-2-the-gateway-counter": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 2: The Gateway Counter \u2013 6:00 AM (Pacific Time)",
+        "title": "Part 2: The Gateway Counter",
         "theme": "raggiesoft-books",
         "filePath": "b001/c015/p002.md"
     },
-    "/raggiesoft-books/books/casey/book-1-the-george-wythe-expedition/chapter/part-3-the-chicago-layover-2-00-pm-central-time": {
+    "/raggiesoft-books/books/casey/book-1-the-george-wythe-expedition/chapter/part-3-the-chicago-layover": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 3: The Chicago Layover \u2013 2:00 PM (Central Time)",
+        "title": "Part 3: The Chicago Layover",
         "theme": "raggiesoft-books",
         "filePath": "b001/c015/p003.md"
     },
-    "/raggiesoft-books/books/casey/book-1-the-george-wythe-expedition/chapter/part-1-the-call-april-21st-1996": {
+    "/raggiesoft-books/books/casey/book-1-the-george-wythe-expedition/chapter/part-1-the-call": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 1: The Call \u2013 April 21st, 1996",
+        "title": "Part 1: The Call",
         "theme": "raggiesoft-books",
         "filePath": "b001/c016/p001.md"
     },
-    "/raggiesoft-books/books/casey/book-1-the-george-wythe-expedition/chapter/part-2-the-celebration-7-00-pm-eastern-time": {
+    "/raggiesoft-books/books/casey/book-1-the-george-wythe-expedition/chapter/part-2-the-celebration": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 2: The Celebration \u2013 7:00 PM (Eastern Time)",
+        "title": "Part 2: The Celebration",
         "theme": "raggiesoft-books",
         "filePath": "b001/c016/p002.md"
     },
-    "/raggiesoft-books/books/casey/book-1-the-george-wythe-expedition/chapter/part-3-the-sleepover-11-30-pm-eastern-time": {
+    "/raggiesoft-books/books/casey/book-1-the-george-wythe-expedition/chapter/part-3-the-sleepover": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 3: The Sleepover \u2013 11:30 PM (Eastern Time)",
+        "title": "Part 3: The Sleepover",
         "theme": "raggiesoft-books",
         "filePath": "b001/c016/p003.md"
     },
-    "/raggiesoft-books/books/casey/book-1-the-george-wythe-expedition/chapter/part-1-siren-roasters-8-00-am-pacific-time": {
+    "/raggiesoft-books/books/casey/book-1-the-george-wythe-expedition/chapter/part-1-siren-roasters": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 1: Siren Roasters \u2013 8:00 AM (Pacific Time)",
+        "title": "Part 1: Siren Roasters",
         "theme": "raggiesoft-books",
         "filePath": "b001/c014/p001.md"
     },
-    "/raggiesoft-books/books/casey/book-2-the-sovereign-perimeter/chapter-1-the-mask-wednesday-november-24-2004/part-1-the-terminal-3-15-pm": {
+    "/raggiesoft-books/books/casey/book-2-the-sovereign-perimeter/chapter-1-the-semester-baseline/part-1-the-syllabus": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 1: The Terminal \u2013 3:15 PM",
+        "title": "Part 1: The Syllabus",
         "theme": "raggiesoft-books",
         "filePath": "b002/c001/p001.md"
     },
-    "/raggiesoft-books/books/casey/book-2-the-sovereign-perimeter/chapter-1-the-mask-wednesday-november-24-2004/part-2-the-return-to-the-coast-6-15-pm": {
+    "/raggiesoft-books/books/casey/book-2-the-sovereign-perimeter/chapter-1-the-semester-baseline/part-2-the-library": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 2: The Return to the Coast \u2013 6:15 PM",
+        "title": "Part 2: The Library",
         "theme": "raggiesoft-books",
         "filePath": "b002/c001/p002.md"
     },
-    "/raggiesoft-books/books/casey/book-2-the-sovereign-perimeter/chapter-1-the-mask-wednesday-november-24-2004/part-3-the-perimeter-shift-8-30-pm": {
+    "/raggiesoft-books/books/casey/book-2-the-sovereign-perimeter/chapter-1-the-semester-baseline/part-3-the-integumentary-system": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 3: The Perimeter Shift \u2013 8:30 PM",
+        "title": "Part 3: The Integumentary System",
         "theme": "raggiesoft-books",
         "filePath": "b002/c001/p003.md"
     },
-    "/raggiesoft-books/books/casey/book-2-the-sovereign-perimeter/chapter-2-the-ambush-thursday-november-25-2004/part-1-the-morning-anchor-7-00-am": {
+    "/raggiesoft-books/books/casey/book-2-the-sovereign-perimeter/chapter-1-the-semester-baseline/part-4-the-apartment": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 1: The Morning Anchor \u2013 7:00 AM",
+        "title": "Part 4: The Apartment",
+        "theme": "raggiesoft-books",
+        "filePath": "b002/c001/p004.md"
+    },
+    "/raggiesoft-books/books/casey/book-2-the-sovereign-perimeter/chapter-2-the-reboot/part-1-the-apology": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Apology",
         "theme": "raggiesoft-books",
         "filePath": "b002/c002/p001.md"
     },
-    "/raggiesoft-books/books/casey/book-2-the-sovereign-perimeter/chapter-2-the-ambush-thursday-november-25-2004/part-2-the-kitchen-ambush-2-00-pm": {
+    "/raggiesoft-books/books/casey/book-2-the-sovereign-perimeter/chapter-2-the-reboot/part-2-the-text-message": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 2: The Kitchen Ambush \u2013 2:00 PM",
+        "title": "Part 2: The Text Message",
         "theme": "raggiesoft-books",
         "filePath": "b002/c002/p002.md"
     },
-    "/raggiesoft-books/books/casey/book-2-the-sovereign-perimeter/chapter-2-the-ambush-thursday-november-25-2004/part-3-the-hard-sever-2-30-pm": {
+    "/raggiesoft-books/books/casey/book-2-the-sovereign-perimeter/chapter-2-the-reboot/part-3-the-introduction": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 3: The Hard Sever \u2013 2:30 PM",
+        "title": "Part 3: The Introduction",
         "theme": "raggiesoft-books",
         "filePath": "b002/c002/p003.md"
     },
-    "/raggiesoft-books/books/casey/book-2-the-sovereign-perimeter/chapter-3-the-crossroads-thursday-november-25-2004/part-1-the-golden-architecture-3-15-pm": {
+    "/raggiesoft-books/books/casey/book-2-the-sovereign-perimeter/chapter-2-the-reboot/part-4-the-dinner": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 1: The Golden Architecture \u2013 3:15 PM",
+        "title": "Part 4: The Dinner",
+        "theme": "raggiesoft-books",
+        "filePath": "b002/c002/p004.md"
+    },
+    "/raggiesoft-books/books/casey/book-2-the-sovereign-perimeter/chapter-3-the-delete-key/part-1-the-ultimatum": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Ultimatum",
         "theme": "raggiesoft-books",
         "filePath": "b002/c003/p001.md"
     },
-    "/raggiesoft-books/books/casey/book-2-the-sovereign-perimeter/chapter-3-the-crossroads-thursday-november-25-2004/part-2-the-executive-reality-3-30-pm": {
+    "/raggiesoft-books/books/casey/book-2-the-sovereign-perimeter/chapter-3-the-delete-key/part-2-the-compromise": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 2: The Executive Reality \u2013 3:30 PM",
+        "title": "Part 2: The Compromise",
         "theme": "raggiesoft-books",
         "filePath": "b002/c003/p002.md"
     },
-    "/raggiesoft-books/books/casey/book-2-the-sovereign-perimeter/chapter-3-the-crossroads-thursday-november-25-2004/part-3-the-summer-frequency-4-00-pm": {
+    "/raggiesoft-books/books/casey/book-2-the-sovereign-perimeter/chapter-4-the-mask/part-1-the-terminal": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 3: The Summer Frequency \u2013 4:00 PM",
-        "theme": "raggiesoft-books",
-        "filePath": "b002/c003/p003.md"
-    },
-    "/raggiesoft-books/books/casey/book-2-the-sovereign-perimeter/chapter-3-the-crossroads-thursday-november-25-2004/part-4-the-twenty-one-day-bridge-4-30-pm": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 4: The Twenty-One Day Bridge \u2013 4:30 PM",
-        "theme": "raggiesoft-books",
-        "filePath": "b002/c003/p004.md"
-    },
-    "/raggiesoft-books/books/casey/book-2-the-sovereign-perimeter/chapter-4-the-severance-saturday-november-27-2004/part-1-the-checkpoint-8-30-am": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 1: The Checkpoint \u2013 8:30 AM",
+        "title": "Part 1: The Terminal",
         "theme": "raggiesoft-books",
         "filePath": "b002/c004/p001.md"
     },
-    "/raggiesoft-books/books/casey/book-2-the-sovereign-perimeter/chapter-4-the-severance-saturday-november-27-2004/interlude-the-firewall-wednesday-december-1-2004-2-15-pm": {
+    "/raggiesoft-books/books/casey/book-2-the-sovereign-perimeter/chapter-4-the-mask/part-2-the-return-to-the-coast": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Interlude: The Firewall \u2013 Wednesday, December 1, 2004 \u2013 2:15 PM",
+        "title": "Part 2: The Return to the Coast",
         "theme": "raggiesoft-books",
         "filePath": "b002/c004/p002.md"
     },
-    "/raggiesoft-books/books/casey/book-2-the-sovereign-perimeter/chapter-5-the-executive-ascent-friday-december-17-2004/part-1-burton-station-road-1-30-pm": {
+    "/raggiesoft-books/books/casey/book-2-the-sovereign-perimeter/chapter-4-the-mask/part-3-the-perimeter-shift": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 1: Burton Station Road \u2013 1:30 PM",
+        "title": "Part 3: The Perimeter Shift",
+        "theme": "raggiesoft-books",
+        "filePath": "b002/c004/p003.md"
+    },
+    "/raggiesoft-books/books/casey/book-2-the-sovereign-perimeter/chapter-5-the-ambush/part-1-the-morning-anchor": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Morning Anchor",
         "theme": "raggiesoft-books",
         "filePath": "b002/c005/p001.md"
     },
-    "/raggiesoft-books/books/casey/book-2-the-sovereign-perimeter/chapter-5-the-executive-ascent-friday-december-17-2004/part-2-the-flight-data-2-00-pm": {
+    "/raggiesoft-books/books/casey/book-2-the-sovereign-perimeter/chapter-5-the-ambush/part-2-the-kitchen-ambush": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 2: The Flight Data \u2013 2:00 PM",
+        "title": "Part 2: The Kitchen Ambush",
         "theme": "raggiesoft-books",
         "filePath": "b002/c005/p002.md"
     },
-    "/raggiesoft-books/books/casey/book-2-the-sovereign-perimeter/chapter-5-the-executive-ascent-friday-december-17-2004/part-3-the-honorary-sister-7-45-pm": {
+    "/raggiesoft-books/books/casey/book-2-the-sovereign-perimeter/chapter-5-the-ambush/part-3-the-hard-sever": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 3: The Honorary Sister \u2013 7:45 PM",
+        "title": "Part 3: The Hard Sever",
         "theme": "raggiesoft-books",
         "filePath": "b002/c005/p003.md"
     },
-    "/raggiesoft-books/books/casey/book-2-the-sovereign-perimeter/chapter-5-the-executive-ascent-friday-december-17-2004/part-4-the-moving-logistics-9-15-pm": {
+    "/raggiesoft-books/books/casey/book-2-the-sovereign-perimeter/chapter-6-the-crossroads/part-1-the-golden-architecture": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 4: The Moving Logistics \u2013 9:15 PM",
-        "theme": "raggiesoft-books",
-        "filePath": "b002/c005/p004.md"
-    },
-    "/raggiesoft-books/books/casey/book-2-the-sovereign-perimeter/chapter-6-the-executive-departure-saturday-december-18-2004/part-1-the-morning-knock-7-30-am": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 1: The Morning Knock \u2013 7:30 AM",
+        "title": "Part 1: The Golden Architecture",
         "theme": "raggiesoft-books",
         "filePath": "b002/c006/p001.md"
     },
-    "/raggiesoft-books/books/casey/book-2-the-sovereign-perimeter/chapter-6-the-executive-departure-saturday-december-18-2004/part-2-the-flight-logistics-8-00-am": {
+    "/raggiesoft-books/books/casey/book-2-the-sovereign-perimeter/chapter-6-the-crossroads/part-2-the-executive-reality": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 2: The Flight Logistics \u2013 8:00 AM",
+        "title": "Part 2: The Executive Reality",
         "theme": "raggiesoft-books",
         "filePath": "b002/c006/p002.md"
     },
-    "/raggiesoft-books/books/casey/book-2-the-sovereign-perimeter/chapter-6-the-executive-departure-saturday-december-18-2004/part-3-the-sovereign-airspace-11-30-am-est": {
+    "/raggiesoft-books/books/casey/book-2-the-sovereign-perimeter/chapter-6-the-crossroads/part-3-the-summer-frequency": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 3: The Sovereign Airspace \u2013 11:30 AM (EST)",
+        "title": "Part 3: The Summer Frequency",
         "theme": "raggiesoft-books",
         "filePath": "b002/c006/p003.md"
     },
-    "/raggiesoft-books/books/casey/book-2-the-sovereign-perimeter/chapter-6-the-executive-departure-saturday-december-18-2004/part-4-the-global-reach-1-30-pm-est": {
+    "/raggiesoft-books/books/casey/book-2-the-sovereign-perimeter/chapter-6-the-crossroads/part-4-the-twenty-one-day-bridge": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 4: The Global Reach \u2013 1:30 PM (EST)",
+        "title": "Part 4: The Twenty-One Day Bridge",
         "theme": "raggiesoft-books",
         "filePath": "b002/c006/p004.md"
     },
-    "/raggiesoft-books/books/casey/book-2-the-sovereign-perimeter/chapter-6-the-executive-departure-saturday-december-18-2004/part-5-the-i-5-crawl-3-45-pm-pst": {
+    "/raggiesoft-books/books/casey/book-2-the-sovereign-perimeter/chapter-7-the-severance/part-1-the-checkpoint": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 5: The I-5 Crawl \u2013 3:45 PM (PST)",
-        "theme": "raggiesoft-books",
-        "filePath": "b002/c006/p005.md"
-    },
-    "/raggiesoft-books/books/casey/book-2-the-sovereign-perimeter/chapter-7-the-federal-way-perimeter-saturday-december-18-2004/part-1-the-legal-boundary-5-30-pm": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 1: The Legal Boundary \u2013 5:30 PM",
+        "title": "Part 1: The Checkpoint",
         "theme": "raggiesoft-books",
         "filePath": "b002/c007/p001.md"
     },
-    "/raggiesoft-books/books/casey/book-2-the-sovereign-perimeter/chapter-7-the-federal-way-perimeter-saturday-december-18-2004/part-2-comfort-food-and-the-ledger-6-15-pm": {
+    "/raggiesoft-books/books/casey/book-2-the-sovereign-perimeter/chapter-7-the-severance/interlude-the-firewall": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 2: Comfort Food and The Ledger \u2013 6:15 PM",
+        "title": "Interlude: The Firewall",
         "theme": "raggiesoft-books",
         "filePath": "b002/c007/p002.md"
     },
-    "/raggiesoft-books/books/casey/book-2-the-sovereign-perimeter/chapter-7-the-federal-way-perimeter-saturday-december-18-2004/part-3-the-evening-routine-8-30-pm": {
+    "/raggiesoft-books/books/casey/book-2-the-sovereign-perimeter/chapter-8-the-executive-ascent/part-1-burton-station-road": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 3: The Evening Routine \u2013 8:30 PM",
-        "theme": "raggiesoft-books",
-        "filePath": "b002/c007/p003.md"
-    },
-    "/raggiesoft-books/books/casey/book-2-the-sovereign-perimeter/chapter-7-the-federal-way-perimeter-saturday-december-18-2004/part-4-the-blackout-9-30-pm": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 4: The Blackout \u2013 9:30 PM",
-        "theme": "raggiesoft-books",
-        "filePath": "b002/c007/p004.md"
-    },
-    "/raggiesoft-books/books/casey/book-2-the-sovereign-perimeter/chapter-8-the-blackout-sunday-december-19-2004/part-1-pantry-logistics-8-00-am": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 1: Pantry Logistics \u2013 8:00 AM",
+        "title": "Part 1: Burton Station Road",
         "theme": "raggiesoft-books",
         "filePath": "b002/c008/p001.md"
     },
-    "/raggiesoft-books/books/casey/book-2-the-sovereign-perimeter/chapter-8-the-blackout-sunday-december-19-2004/part-2-circadian-logistics-8-30-am": {
+    "/raggiesoft-books/books/casey/book-2-the-sovereign-perimeter/chapter-8-the-executive-ascent/part-2-the-flight-data": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 2: Circadian Logistics \u2013 8:30 AM",
+        "title": "Part 2: The Flight Data",
         "theme": "raggiesoft-books",
         "filePath": "b002/c008/p002.md"
     },
-    "/raggiesoft-books/books/casey/book-2-the-sovereign-perimeter/chapter-8-the-blackout-sunday-december-19-2004/part-3-the-eastside-expansion-12-15-pm": {
+    "/raggiesoft-books/books/casey/book-2-the-sovereign-perimeter/chapter-8-the-executive-ascent/part-3-the-honorary-sister": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 3: The Eastside Expansion \u2013 12:15 PM",
+        "title": "Part 3: The Honorary Sister",
         "theme": "raggiesoft-books",
         "filePath": "b002/c008/p003.md"
     },
-    "/raggiesoft-books/books/casey/book-2-the-sovereign-perimeter/chapter-8-the-blackout-sunday-december-19-2004/part-4-the-tier-one-acquisition-1-00-pm": {
+    "/raggiesoft-books/books/casey/book-2-the-sovereign-perimeter/chapter-8-the-executive-ascent/part-4-the-moving-logistics": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 4: The Tier-One Acquisition \u2013 1:00 PM",
+        "title": "Part 4: The Moving Logistics",
         "theme": "raggiesoft-books",
         "filePath": "b002/c008/p004.md"
     },
-    "/raggiesoft-books/books/casey/book-2-the-sovereign-perimeter/chapter-8-the-blackout-sunday-december-19-2004/part-5-the-sunday-dispatch-1-15-pm": {
+    "/raggiesoft-books/books/casey/book-2-the-sovereign-perimeter/chapter-9-the-executive-departure/part-1-the-morning-knock": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 5: The Sunday Dispatch \u2013 1:15 PM",
+        "title": "Part 1: The Morning Knock",
         "theme": "raggiesoft-books",
-        "filePath": "b002/c008/p005.md"
+        "filePath": "b002/c009/p001.md"
     },
-    "/raggiesoft-books/books/casey/book-2-the-sovereign-perimeter/chapter-8-the-blackout-sunday-december-19-2004/part-6-the-redmond-compound-acquisition-2-00-pm": {
+    "/raggiesoft-books/books/casey/book-2-the-sovereign-perimeter/chapter-9-the-executive-departure/part-2-the-flight-logistics": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 6: The Redmond Compound Acquisition \u2013 2:00 PM",
+        "title": "Part 2: The Flight Logistics",
         "theme": "raggiesoft-books",
-        "filePath": "b002/c008/p006.md"
+        "filePath": "b002/c009/p002.md"
     },
-    "/raggiesoft-books/books/casey/book-2-the-sovereign-perimeter/chapter-8-the-blackout-sunday-december-19-2004/part-7-the-contract-execution-3-00-pm": {
+    "/raggiesoft-books/books/casey/book-2-the-sovereign-perimeter/chapter-9-the-executive-departure/part-3-the-sovereign-airspace": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 7: The Contract Execution \u2013 3:00 PM",
+        "title": "Part 3: The Sovereign Airspace",
         "theme": "raggiesoft-books",
-        "filePath": "b002/c008/p007.md"
+        "filePath": "b002/c009/p003.md"
     },
-    "/raggiesoft-books/books/casey/book-2-the-sovereign-perimeter/chapter-8-the-blackout-sunday-december-19-2004/part-8-the-accepted-strike-4-30-pm": {
+    "/raggiesoft-books/books/casey/book-2-the-sovereign-perimeter/chapter-9-the-executive-departure/part-4-the-global-reach": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 8: The Accepted Strike \u2013 4:30 PM",
+        "title": "Part 4: The Global Reach",
         "theme": "raggiesoft-books",
-        "filePath": "b002/c008/p008.md"
+        "filePath": "b002/c009/p004.md"
     },
-    "/raggiesoft-books/books/casey/book-2-the-sovereign-perimeter/chapter-8-the-blackout-sunday-december-19-2004/part-9-the-taps-grid-6-45-pm": {
+    "/raggiesoft-books/books/casey/book-2-the-sovereign-perimeter/chapter-9-the-executive-departure/part-5-the-i-5-crawl": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 9: The TAPS Grid \u2013 6:45 PM",
+        "title": "Part 5: The I-5 Crawl",
         "theme": "raggiesoft-books",
-        "filePath": "b002/c008/p009.md"
+        "filePath": "b002/c009/p005.md"
     },
-    "/raggiesoft-books/books/casey/book-2-the-sovereign-perimeter/chapter-8-the-blackout-sunday-december-19-2004/part-10-the-sunday-night-reset-8-30-pm": {
+    "/raggiesoft-books/books/casey/book-2-the-sovereign-perimeter/chapter-10-the-federal-way-perimeter/part-1-the-legal-boundary": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 10: The Sunday Night Reset \u2013 8:30 PM",
+        "title": "Part 1: The Legal Boundary",
         "theme": "raggiesoft-books",
-        "filePath": "b002/c008/p010.md"
+        "filePath": "b002/c010/p001.md"
     },
-    "/raggiesoft-books/books/casey/book-2-the-sovereign-perimeter/chapter-8-the-blackout-sunday-december-19-2004/part-11-the-a-b-block-and-qu-b-cois-french-9-00-pm": {
+    "/raggiesoft-books/books/casey/book-2-the-sovereign-perimeter/chapter-10-the-federal-way-perimeter/part-2-comfort-food-and-the-ledger": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 11: The A-B Block and Qu\u00e9b\u00e9cois French \u2013 9:00 PM",
+        "title": "Part 2: Comfort Food and The Ledger",
         "theme": "raggiesoft-books",
-        "filePath": "b002/c008/p011.md"
+        "filePath": "b002/c010/p002.md"
     },
-    "/raggiesoft-books/books/casey/book-3-the-sovereign-empire/chapter-1-the-mandate-tuesday-january-14-2014/part-1-the-deviation-6-00-pm": {
+    "/raggiesoft-books/books/casey/book-2-the-sovereign-perimeter/chapter-10-the-federal-way-perimeter/part-3-the-evening-routine": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 1: The Deviation \u2013 6:00 PM",
+        "title": "Part 3: The Evening Routine",
+        "theme": "raggiesoft-books",
+        "filePath": "b002/c010/p003.md"
+    },
+    "/raggiesoft-books/books/casey/book-2-the-sovereign-perimeter/chapter-10-the-federal-way-perimeter/part-4-the-blackout": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: The Blackout",
+        "theme": "raggiesoft-books",
+        "filePath": "b002/c010/p004.md"
+    },
+    "/raggiesoft-books/books/casey/book-2-the-sovereign-perimeter/chapter-11-the-blackout/part-1-pantry-logistics": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: Pantry Logistics",
+        "theme": "raggiesoft-books",
+        "filePath": "b002/c011/p001.md"
+    },
+    "/raggiesoft-books/books/casey/book-2-the-sovereign-perimeter/chapter-11-the-blackout/part-2-circadian-logistics": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: Circadian Logistics",
+        "theme": "raggiesoft-books",
+        "filePath": "b002/c011/p002.md"
+    },
+    "/raggiesoft-books/books/casey/book-2-the-sovereign-perimeter/chapter-11-the-blackout/part-3-the-eastside-expansion": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Eastside Expansion",
+        "theme": "raggiesoft-books",
+        "filePath": "b002/c011/p003.md"
+    },
+    "/raggiesoft-books/books/casey/book-2-the-sovereign-perimeter/chapter-11-the-blackout/part-4-the-tier-one-acquisition": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: The Tier-One Acquisition",
+        "theme": "raggiesoft-books",
+        "filePath": "b002/c011/p004.md"
+    },
+    "/raggiesoft-books/books/casey/book-2-the-sovereign-perimeter/chapter-11-the-blackout/part-5-the-sunday-dispatch": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 5: The Sunday Dispatch",
+        "theme": "raggiesoft-books",
+        "filePath": "b002/c011/p005.md"
+    },
+    "/raggiesoft-books/books/casey/book-2-the-sovereign-perimeter/chapter-11-the-blackout/part-6-the-redmond-compound-acquisition": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 6: The Redmond Compound Acquisition",
+        "theme": "raggiesoft-books",
+        "filePath": "b002/c011/p006.md"
+    },
+    "/raggiesoft-books/books/casey/book-2-the-sovereign-perimeter/chapter-11-the-blackout/part-7-the-contract-execution": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 7: The Contract Execution",
+        "theme": "raggiesoft-books",
+        "filePath": "b002/c011/p007.md"
+    },
+    "/raggiesoft-books/books/casey/book-2-the-sovereign-perimeter/chapter-11-the-blackout/part-8-the-accepted-strike": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 8: The Accepted Strike",
+        "theme": "raggiesoft-books",
+        "filePath": "b002/c011/p008.md"
+    },
+    "/raggiesoft-books/books/casey/book-2-the-sovereign-perimeter/chapter-11-the-blackout/part-9-the-taps-grid": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 9: The TAPS Grid",
+        "theme": "raggiesoft-books",
+        "filePath": "b002/c011/p009.md"
+    },
+    "/raggiesoft-books/books/casey/book-2-the-sovereign-perimeter/chapter-11-the-blackout/part-10-the-sunday-night-reset": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 10: The Sunday Night Reset",
+        "theme": "raggiesoft-books",
+        "filePath": "b002/c011/p010.md"
+    },
+    "/raggiesoft-books/books/casey/book-2-the-sovereign-perimeter/chapter-11-the-blackout/part-11-the-a-b-block-and-qu-b-cois-french": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 11: The A-B Block and Qu\u00e9b\u00e9cois French",
+        "theme": "raggiesoft-books",
+        "filePath": "b002/c011/p011.md"
+    },
+    "/raggiesoft-books/books/casey/book-3-the-sovereign-empire/chapter-1-the-mandate/part-1-the-deviation": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Deviation",
         "theme": "raggiesoft-books",
         "filePath": "b003/c001/p001.md"
     },
-    "/raggiesoft-books/books/casey/book-3-the-sovereign-empire/chapter-1-the-mandate-tuesday-january-14-2014/part-2-the-pack-dinner-6-30-pm": {
+    "/raggiesoft-books/books/casey/book-3-the-sovereign-empire/chapter-1-the-mandate/part-2-the-pack-dinner": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 2: The Pack Dinner \u2013 6:30 PM",
+        "title": "Part 2: The Pack Dinner",
         "theme": "raggiesoft-books",
         "filePath": "b003/c001/p002.md"
     },
-    "/raggiesoft-books/books/casey/book-3-the-sovereign-empire/chapter-1-the-mandate-tuesday-january-14-2014/part-3-the-vault-9-30-pm": {
+    "/raggiesoft-books/books/casey/book-3-the-sovereign-empire/chapter-1-the-mandate/part-3-the-vault": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 3: The Vault \u2013 9:30 PM",
+        "title": "Part 3: The Vault",
         "theme": "raggiesoft-books",
         "filePath": "b003/c001/p003.md"
     },
-    "/raggiesoft-books/books/casey/book-3-the-sovereign-empire/chapter-1-the-mandate-tuesday-january-14-2014/part-4-the-sovereign-news-10-30-pm": {
+    "/raggiesoft-books/books/casey/book-3-the-sovereign-empire/chapter-1-the-mandate/part-4-the-sovereign-news": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 4: The Sovereign News \u2013 10:30 PM",
+        "title": "Part 4: The Sovereign News",
         "theme": "raggiesoft-books",
         "filePath": "b003/c001/p004.md"
     },
-    "/raggiesoft-books/books/casey/book-3-the-sovereign-empire/chapter-2-the-ground-truth-wednesday-january-15-2014/part-1-the-morning-baseline-7-00-am": {
+    "/raggiesoft-books/books/casey/book-3-the-sovereign-empire/chapter-2-the-ground-truth/part-1-the-morning-baseline": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 1: The Morning Baseline \u2013 7:00 AM",
+        "title": "Part 1: The Morning Baseline",
         "theme": "raggiesoft-books",
         "filePath": "b003/c002/p001.md"
     },
-    "/raggiesoft-books/books/casey/book-3-the-sovereign-empire/chapter-2-the-ground-truth-wednesday-january-15-2014/part-2-the-executive-pre-flight-8-30-am": {
+    "/raggiesoft-books/books/casey/book-3-the-sovereign-empire/chapter-2-the-ground-truth/part-2-the-executive-pre-flight": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 2: The Executive Pre-Flight \u2013 8:30 AM",
+        "title": "Part 2: The Executive Pre-Flight",
         "theme": "raggiesoft-books",
         "filePath": "b003/c002/p002.md"
     },
-    "/raggiesoft-books/books/casey/book-3-the-sovereign-empire/chapter-2-the-ground-truth-wednesday-january-15-2014/part-3-the-succession-consensus-10-00-am": {
+    "/raggiesoft-books/books/casey/book-3-the-sovereign-empire/chapter-2-the-ground-truth/part-3-the-succession-consensus": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 3: The Succession Consensus \u2013 10:00 AM",
+        "title": "Part 3: The Succession Consensus",
         "theme": "raggiesoft-books",
         "filePath": "b003/c002/p003.md"
     },
-    "/raggiesoft-books/books/casey/book-3-the-sovereign-empire/chapter-2-the-ground-truth-wednesday-january-15-2014/part-4-the-global-broadcast-11-00-am": {
+    "/raggiesoft-books/books/casey/book-3-the-sovereign-empire/chapter-2-the-ground-truth/part-4-the-global-broadcast": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 4: The Global Broadcast \u2013 11:00 AM",
+        "title": "Part 4: The Global Broadcast",
         "theme": "raggiesoft-books",
         "filePath": "b003/c002/p004.md"
     },
-    "/raggiesoft-books/books/casey/book-3-the-sovereign-empire/chapter-2-the-ground-truth-wednesday-january-15-2014/part-5-the-shadow-wallet-11-12-am": {
+    "/raggiesoft-books/books/casey/book-3-the-sovereign-empire/chapter-2-the-ground-truth/part-5-the-shadow-wallet": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 5: The Shadow Wallet \u2013 11:12 AM",
+        "title": "Part 5: The Shadow Wallet",
         "theme": "raggiesoft-books",
         "filePath": "b003/c002/p005.md"
     },
-    "/raggiesoft-books/books/casey/book-3-the-sovereign-empire/chapter-2-the-ground-truth-wednesday-january-15-2014/part-6-the-global-desk-11-20-am": {
+    "/raggiesoft-books/books/casey/book-3-the-sovereign-empire/chapter-2-the-ground-truth/part-6-the-global-desk": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 6: The Global Desk \u2013 11:20 AM",
+        "title": "Part 6: The Global Desk",
         "theme": "raggiesoft-books",
         "filePath": "b003/c002/p006.md"
     },
-    "/raggiesoft-books/books/casey/book-3-the-sovereign-empire/chapter-2-the-ground-truth-wednesday-january-15-2014/part-7-the-actuarial-risk-11-45-am": {
+    "/raggiesoft-books/books/casey/book-3-the-sovereign-empire/chapter-2-the-ground-truth/part-7-the-actuarial-risk": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 7: The Actuarial Risk \u2013 11:45 AM",
+        "title": "Part 7: The Actuarial Risk",
         "theme": "raggiesoft-books",
         "filePath": "b003/c002/p007.md"
     },
-    "/raggiesoft-books/books/casey/book-3-the-sovereign-empire/chapter-2-the-ground-truth-wednesday-january-15-2014/part-8-the-route-230-protocol-12-15-pm": {
+    "/raggiesoft-books/books/casey/book-3-the-sovereign-empire/chapter-2-the-ground-truth/part-8-the-route-230-protocol": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 8: The Route 230 Protocol \u2013 12:15 PM",
+        "title": "Part 8: The Route 230 Protocol",
         "theme": "raggiesoft-books",
         "filePath": "b003/c002/p008.md"
     },
-    "/raggiesoft-books/books/casey/book-3-the-sovereign-empire/chapter-2-the-ground-truth-wednesday-january-15-2014/part-9-the-bellevue-reunion-1-30-pm": {
+    "/raggiesoft-books/books/casey/book-3-the-sovereign-empire/chapter-2-the-ground-truth/part-9-the-bellevue-reunion": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 9: The Bellevue Reunion \u2013 1:30 PM",
+        "title": "Part 9: The Bellevue Reunion",
         "theme": "raggiesoft-books",
         "filePath": "b003/c002/p009.md"
     },
-    "/raggiesoft-books/books/casey/book-3-the-sovereign-empire/chapter-2-the-ground-truth-wednesday-january-15-2014/part-10-the-express-route-5-15-pm": {
+    "/raggiesoft-books/books/casey/book-3-the-sovereign-empire/chapter-2-the-ground-truth/part-10-the-express-route": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 10: The Express Route \u2013 5:15 PM",
+        "title": "Part 10: The Express Route",
         "theme": "raggiesoft-books",
         "filePath": "b003/c002/p010.md"
     },
-    "/raggiesoft-books/books/casey/book-3-the-sovereign-empire/chapter-2-the-ground-truth-wednesday-january-15-2014/part-11-the-sovereign-perimeter-6-15-pm": {
+    "/raggiesoft-books/books/casey/book-3-the-sovereign-empire/chapter-2-the-ground-truth/part-11-the-sovereign-perimeter": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 11: The Sovereign Perimeter \u2013 6:15 PM",
+        "title": "Part 11: The Sovereign Perimeter",
         "theme": "raggiesoft-books",
         "filePath": "b003/c002/p011.md"
     },
-    "/raggiesoft-books/books/casey/book-4-the-sovereign-ascension/chapter-1-the-bloodline-convergence-friday-february-14-2014/part-1-the-rotor-wash-08-15-am": {
+    "/raggiesoft-books/books/casey/book-4-the-sovereign-ascension/chapter-1-the-bloodline-convergence/part-1-the-rotor-wash": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 1: The Rotor Wash \u2013 08:15 AM",
+        "title": "Part 1: The Rotor Wash",
         "theme": "raggiesoft-books",
         "filePath": "b004/c001/p001.md"
     },
-    "/raggiesoft-books/books/casey/book-4-the-sovereign-ascension/chapter-1-the-bloodline-convergence-friday-february-14-2014/part-2-the-front-row-08-50-am": {
+    "/raggiesoft-books/books/casey/book-4-the-sovereign-ascension/chapter-1-the-bloodline-convergence/part-2-the-front-row": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 2: The Front Row \u2013 08:50 AM",
+        "title": "Part 2: The Front Row",
         "theme": "raggiesoft-books",
         "filePath": "b004/c001/p002.md"
     },
-    "/raggiesoft-books/books/casey/book-4-the-sovereign-ascension/chapter-1-the-bloodline-convergence-friday-february-14-2014/part-3-the-floorboards-09-00-am": {
+    "/raggiesoft-books/books/casey/book-4-the-sovereign-ascension/chapter-1-the-bloodline-convergence/part-3-the-floorboards": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 3: The Floorboards \u2013 09:00 AM",
+        "title": "Part 3: The Floorboards",
         "theme": "raggiesoft-books",
         "filePath": "b004/c001/p003.md"
     },
-    "/raggiesoft-books/books/casey/book-4-the-sovereign-ascension/chapter-2-the-after-party-friday-february-14-2014/part-1-the-food-truck-festival-12-00-pm": {
+    "/raggiesoft-books/books/casey/book-4-the-sovereign-ascension/chapter-2-the-after-party/part-1-the-food-truck-festival": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 1: The Food Truck Festival \u2013 12:00 PM",
+        "title": "Part 1: The Food Truck Festival",
         "theme": "raggiesoft-books",
         "filePath": "b004/c002/p001.md"
     },
-    "/raggiesoft-books/books/casey/book-4-the-sovereign-ascension/chapter-2-the-after-party-friday-february-14-2014/part-2-the-zero-proof-pavilion-1-15-pm": {
+    "/raggiesoft-books/books/casey/book-4-the-sovereign-ascension/chapter-2-the-after-party/part-2-the-zero-proof-pavilion": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 2: The Zero-Proof Pavilion \u2013 1:15 PM",
+        "title": "Part 2: The Zero-Proof Pavilion",
         "theme": "raggiesoft-books",
         "filePath": "b004/c002/p002.md"
     },
-    "/raggiesoft-books/books/casey/book-4-the-sovereign-ascension/chapter-2-the-after-party-friday-february-14-2014/part-3-the-cross-pollination-of-packs-2-00-pm": {
+    "/raggiesoft-books/books/casey/book-4-the-sovereign-ascension/chapter-2-the-after-party/part-3-the-cross-pollination-of-packs": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 3: The Cross-Pollination of Packs \u2013 2:00 PM",
+        "title": "Part 3: The Cross-Pollination of Packs",
         "theme": "raggiesoft-books",
         "filePath": "b004/c002/p003.md"
     },
-    "/raggiesoft-books/books/casey/book-4-the-sovereign-ascension/chapter-2-the-after-party-friday-february-14-2014/part-4-the-transit-pledge-4-45-pm": {
+    "/raggiesoft-books/books/casey/book-4-the-sovereign-ascension/chapter-2-the-after-party/part-4-the-transit-pledge": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 4: The Transit Pledge \u2013 4:45 PM",
+        "title": "Part 4: The Transit Pledge",
         "theme": "raggiesoft-books",
         "filePath": "b004/c002/p004.md"
     },
-    "/raggiesoft-books/books/casey/book-4-the-sovereign-ascension/chapter-2-the-after-party-friday-february-14-2014/part-5-the-logistics-of-departure-5-30-pm": {
+    "/raggiesoft-books/books/casey/book-4-the-sovereign-ascension/chapter-2-the-after-party/part-5-the-logistics-of-departure": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 5: The Logistics of Departure \u2013 5:30 PM",
+        "title": "Part 5: The Logistics of Departure",
         "theme": "raggiesoft-books",
         "filePath": "b004/c002/p005.md"
     },
-    "/raggiesoft-books/books/casey/book-4-the-sovereign-ascension/chapter-2-the-after-party-friday-february-14-2014/part-6-the-executive-shutdown-6-30-pm": {
+    "/raggiesoft-books/books/casey/book-4-the-sovereign-ascension/chapter-2-the-after-party/part-6-the-executive-shutdown": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 6: The Executive Shutdown \u2013 6:30 PM",
+        "title": "Part 6: The Executive Shutdown",
         "theme": "raggiesoft-books",
         "filePath": "b004/c002/p006.md"
     },
-    "/raggiesoft-books/books/casey/book-4-the-sovereign-ascension/chapter-2-the-after-party-friday-february-14-2014/interlude-the-lowland-entitlement-7-00-pm": {
+    "/raggiesoft-books/books/casey/book-4-the-sovereign-ascension/chapter-2-the-after-party/interlude-the-lowland-entitlement": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Interlude: The Lowland Entitlement \u2013 7:00 PM",
+        "title": "Interlude: The Lowland Entitlement",
         "theme": "raggiesoft-books",
         "filePath": "b004/c002/p007.md"
     },
-    "/raggiesoft-books/books/casey/book-5-the-sovereign-autonomy/chapter-1-the-silicon-valley-bypass-thursday-may-15-2014/part-1-the-diridon-transfer-10-00-am": {
+    "/raggiesoft-books/books/casey/book-5-the-sovereign-autonomy/chapter-1-the-silicon-valley-bypass/part-1-the-diridon-transfer": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 1: The Diridon Transfer \u2013 10:00 AM",
+        "title": "Part 1: The Diridon Transfer",
         "theme": "raggiesoft-books",
         "filePath": "b005/c001/p001.md"
     },
-    "/raggiesoft-books/books/casey/book-5-the-sovereign-autonomy/chapter-1-the-silicon-valley-bypass-thursday-may-15-2014/interlude-the-handler-panic-10-20-am": {
+    "/raggiesoft-books/books/casey/book-5-the-sovereign-autonomy/chapter-1-the-silicon-valley-bypass/interlude-the-handler-panic": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Interlude: The Handler Panic \u2013 10:20 AM",
+        "title": "Interlude: The Handler Panic",
         "theme": "raggiesoft-books",
         "filePath": "b005/c001/p002.md"
     },
-    "/raggiesoft-books/books/casey/book-5-the-sovereign-autonomy/chapter-1-the-silicon-valley-bypass-thursday-may-15-2014/part-2-the-flashbulb-perimeter-10-45-am": {
+    "/raggiesoft-books/books/casey/book-5-the-sovereign-autonomy/chapter-1-the-silicon-valley-bypass/part-2-the-flashbulb-perimeter": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 2: The Flashbulb Perimeter \u2013 10:45 AM",
+        "title": "Part 2: The Flashbulb Perimeter",
         "theme": "raggiesoft-books",
         "filePath": "b005/c001/p003.md"
     },
-    "/raggiesoft-books/books/casey/book-5-the-sovereign-autonomy/chapter-1-the-silicon-valley-bypass-thursday-may-15-2014/part-3-the-keynote-and-the-baypass-question-11-15-am": {
+    "/raggiesoft-books/books/casey/book-5-the-sovereign-autonomy/chapter-1-the-silicon-valley-bypass/part-3-the-keynote-and-the-baypass-question": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 3: The Keynote and the BayPass Question \u2013 11:15 AM",
+        "title": "Part 3: The Keynote and the BayPass Question",
         "theme": "raggiesoft-books",
         "filePath": "b005/c001/p004.md"
     },
-    "/raggiesoft-books/books/casey/book-5-the-sovereign-autonomy/chapter-2-the-fenwick-bridge-protocol-tuesday-june-10-2014/part-1-the-gates-of-dca-8-15-am": {
+    "/raggiesoft-books/books/casey/book-5-the-sovereign-autonomy/chapter-2-the-fenwick-bridge-protocol/part-1-the-gates-of-dca": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 1: The Gates of DCA \u2013 8:15 AM",
+        "title": "Part 1: The Gates of DCA",
         "theme": "raggiesoft-books",
         "filePath": "b005/c002/p001.md"
     },
-    "/raggiesoft-books/books/casey/book-5-the-sovereign-autonomy/chapter-2-the-fenwick-bridge-protocol-tuesday-june-10-2014/part-2-the-l-enfant-maze-8-45-am": {
+    "/raggiesoft-books/books/casey/book-5-the-sovereign-autonomy/chapter-2-the-fenwick-bridge-protocol/part-2-the-l-enfant-maze": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 2: The L'Enfant Maze \u2013 8:45 AM",
+        "title": "Part 2: The L'Enfant Maze",
         "theme": "raggiesoft-books",
         "filePath": "b005/c002/p002.md"
     },
-    "/raggiesoft-books/books/casey/book-5-the-sovereign-autonomy/chapter-2-the-fenwick-bridge-protocol-tuesday-june-10-2014/part-3-the-witness-table-9-30-am": {
+    "/raggiesoft-books/books/casey/book-5-the-sovereign-autonomy/chapter-2-the-fenwick-bridge-protocol/part-3-the-witness-table": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 3: The Witness Table \u2013 9:30 AM",
+        "title": "Part 3: The Witness Table",
         "theme": "raggiesoft-books",
         "filePath": "b005/c002/p003.md"
     },
-    "/raggiesoft-books/books/casey/book-5-the-sovereign-autonomy/chapter-2-the-fenwick-bridge-protocol-tuesday-june-10-2014/part-4-the-lpn-protocol-the-galley-question-9-35-am": {
+    "/raggiesoft-books/books/casey/book-5-the-sovereign-autonomy/chapter-2-the-fenwick-bridge-protocol/part-4-the-lpn-protocol-the-galley-question": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 4: The LPN Protocol & The Galley Question \u2013 9:35 AM",
+        "title": "Part 4: The LPN Protocol & The Galley Question",
         "theme": "raggiesoft-books",
         "filePath": "b005/c002/p004.md"
     },
-    "/raggiesoft-books/books/casey/book-5-the-sovereign-autonomy/chapter-2-the-fenwick-bridge-protocol-tuesday-june-10-2014/part-5-the-weaponized-ledger-9-50-am": {
+    "/raggiesoft-books/books/casey/book-5-the-sovereign-autonomy/chapter-2-the-fenwick-bridge-protocol/part-5-the-weaponized-ledger": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 5: The Weaponized Ledger \u2013 9:50 AM",
+        "title": "Part 5: The Weaponized Ledger",
         "theme": "raggiesoft-books",
         "filePath": "b005/c002/p005.md"
     },
-    "/raggiesoft-books/books/casey/book-5-the-sovereign-autonomy/chapter-2-the-fenwick-bridge-protocol-tuesday-june-10-2014/part-6-the-mar-protocol-10-05-am": {
+    "/raggiesoft-books/books/casey/book-5-the-sovereign-autonomy/chapter-2-the-fenwick-bridge-protocol/part-6-the-mar-protocol": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 6: The MAR Protocol \u2013 10:05 AM",
+        "title": "Part 6: The MAR Protocol",
         "theme": "raggiesoft-books",
         "filePath": "b005/c002/p006.md"
     },
-    "/raggiesoft-books/books/casey/book-5-the-sovereign-autonomy/chapter-2-the-fenwick-bridge-protocol-tuesday-june-10-2014/part-7-the-finch-expedition-11-15-am": {
+    "/raggiesoft-books/books/casey/book-5-the-sovereign-autonomy/chapter-2-the-fenwick-bridge-protocol/part-7-the-finch-expedition": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 7: The Finch Expedition \u2013 11:15 AM",
+        "title": "Part 7: The Finch Expedition",
         "theme": "raggiesoft-books",
         "filePath": "b005/c002/p007.md"
     },
-    "/raggiesoft-books/books/casey/book-5-the-sovereign-autonomy/chapter-2-the-fenwick-bridge-protocol-tuesday-june-10-2014/part-7-the-civilian-perimeter-12-00-pm": {
+    "/raggiesoft-books/books/casey/book-5-the-sovereign-autonomy/chapter-2-the-fenwick-bridge-protocol/part-7-the-civilian-perimeter": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 7: The Civilian Perimeter \u2013 12:00 PM",
+        "title": "Part 7: The Civilian Perimeter",
         "theme": "raggiesoft-books",
         "filePath": "b005/c002/p008.md"
     },
-    "/raggiesoft-books/books/casey/book-5-the-sovereign-autonomy/chapter-2-the-fenwick-bridge-protocol-tuesday-june-10-2014/part-8-the-telescope-protocol-1-00-pm": {
+    "/raggiesoft-books/books/casey/book-5-the-sovereign-autonomy/chapter-2-the-fenwick-bridge-protocol/part-8-the-telescope-protocol": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 8: The Telescope Protocol \u2013 1:00 PM",
+        "title": "Part 8: The Telescope Protocol",
         "theme": "raggiesoft-books",
         "filePath": "b005/c002/p009.md"
     },
-    "/raggiesoft-books/books/casey/book-5-the-sovereign-autonomy/chapter-2-the-fenwick-bridge-protocol-tuesday-june-10-2014/interlude-the-escalator-trap-4-15-pm": {
+    "/raggiesoft-books/books/casey/book-5-the-sovereign-autonomy/chapter-2-the-fenwick-bridge-protocol/interlude-the-escalator-trap": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Interlude: The Escalator Trap \u2013 4:15 PM",
+        "title": "Interlude: The Escalator Trap",
         "theme": "raggiesoft-books",
         "filePath": "b005/c002/p010.md"
     },
-    "/raggiesoft-books/books/casey/book-5-the-sovereign-autonomy/chapter-3-the-connecticut-avenue-protocol-wednesday-june-11-2014/part-1-the-elstat-briefing-5-30-pm": {
+    "/raggiesoft-books/books/casey/book-5-the-sovereign-autonomy/chapter-3-the-connecticut-avenue-protocol/part-1-the-elstat-briefing": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 1: The ELstat Briefing \u2013 5:30 PM",
+        "title": "Part 1: The ELstat Briefing",
         "theme": "raggiesoft-books",
         "filePath": "b005/c003/p001.md"
     },
-    "/raggiesoft-books/books/casey/book-5-the-sovereign-autonomy/chapter-3-the-connecticut-avenue-protocol-wednesday-june-11-2014/part-2-the-topography-trap-5-45-pm": {
+    "/raggiesoft-books/books/casey/book-5-the-sovereign-autonomy/chapter-3-the-connecticut-avenue-protocol/part-2-the-topography-trap": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 2: The Topography Trap \u2013 5:45 PM",
+        "title": "Part 2: The Topography Trap",
         "theme": "raggiesoft-books",
         "filePath": "b005/c003/p002.md"
     },
-    "/raggiesoft-books/books/casey/book-5-the-sovereign-autonomy/chapter-3-the-connecticut-avenue-protocol-wednesday-june-11-2014/part-3-the-surface-fleet-6-00-pm": {
+    "/raggiesoft-books/books/casey/book-5-the-sovereign-autonomy/chapter-3-the-connecticut-avenue-protocol/part-3-the-surface-fleet": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 3: The Surface Fleet \u2013 6:00 PM",
+        "title": "Part 3: The Surface Fleet",
         "theme": "raggiesoft-books",
         "filePath": "b005/c003/p003.md"
     },
-    "/raggiesoft-books/books/casey/book-5-the-sovereign-autonomy/chapter-3-the-connecticut-avenue-protocol-wednesday-june-11-2014/part-4-the-front-gate-arrival-6-20-pm": {
+    "/raggiesoft-books/books/casey/book-5-the-sovereign-autonomy/chapter-3-the-connecticut-avenue-protocol/part-4-the-front-gate-arrival": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 4: The Front Gate Arrival \u2013 6:20 PM",
+        "title": "Part 4: The Front Gate Arrival",
         "theme": "raggiesoft-books",
         "filePath": "b005/c003/p004.md"
     }
