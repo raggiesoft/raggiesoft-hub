@@ -233,15 +233,15 @@
         "theme": "raggiesoft-books",
         "filePath": "b001/c008/p001.md"
     },
-    "/raggiesoft-books/books/crimson-node/book-1-the-illusion/chapter-8-the-administration/interlude-the-municipal-center": {
+    "/raggiesoft-books/books/crimson-node/book-1-the-illusion/chapter-8-the-administration/part-2-the-municipal-center": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Interlude: The Municipal Center",
+        "title": "Part 2: The Municipal Center",
         "theme": "raggiesoft-books",
         "filePath": "b001/c008/p002.md"
     },
-    "/raggiesoft-books/books/crimson-node/book-1-the-illusion/chapter-8-the-administration/part-2-the-victory": {
+    "/raggiesoft-books/books/crimson-node/book-1-the-illusion/chapter-8-the-administration/part-3-the-victory": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 2: The Victory",
+        "title": "Part 3: The Victory",
         "theme": "raggiesoft-books",
         "filePath": "b001/c008/p003.md"
     }

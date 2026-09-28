@@ -107,9 +107,9 @@
         "theme": "raggiesoft-books",
         "filePath": "b001/c003/p005.md"
     },
-    "/raggiesoft-books/books/casey/book-1-the-george-wythe-expedition/chapter-3-the-national-zoo/part-6-the-air-problem": {
+    "/raggiesoft-books/books/casey/book-1-the-george-wythe-expedition/chapter-3-the-national-zoo/part-6-the": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 6: The \"Air\" Problem",
+        "title": "Part 6: The",
         "theme": "raggiesoft-books",
         "filePath": "b001/c003/p006.md"
     },
@@ -563,9 +563,9 @@
         "theme": "raggiesoft-books",
         "filePath": "b002/c007/p001.md"
     },
-    "/raggiesoft-books/books/casey/book-2-the-sovereign-perimeter/chapter-7-the-severance/interlude-the-firewall": {
+    "/raggiesoft-books/books/casey/book-2-the-sovereign-perimeter/chapter-7-the-severance/part-2-the-firewall": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Interlude: The Firewall",
+        "title": "Part 2: The Firewall",
         "theme": "raggiesoft-books",
         "filePath": "b002/c007/p002.md"
     },
@@ -857,9 +857,9 @@
         "theme": "raggiesoft-books",
         "filePath": "b004/c002/p006.md"
     },
-    "/raggiesoft-books/books/casey/book-4-the-sovereign-ascension/chapter-2-the-after-party/interlude-the-lowland-entitlement": {
+    "/raggiesoft-books/books/casey/book-4-the-sovereign-ascension/chapter-2-the-after-party/part-7-the-lowland-entitlement": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Interlude: The Lowland Entitlement",
+        "title": "Part 7: The Lowland Entitlement",
         "theme": "raggiesoft-books",
         "filePath": "b004/c002/p007.md"
     },
@@ -869,21 +869,21 @@
         "theme": "raggiesoft-books",
         "filePath": "b005/c001/p001.md"
     },
-    "/raggiesoft-books/books/casey/book-5-the-sovereign-autonomy/chapter-1-the-silicon-valley-bypass/interlude-the-handler-panic": {
+    "/raggiesoft-books/books/casey/book-5-the-sovereign-autonomy/chapter-1-the-silicon-valley-bypass/part-2-the-handler-panic": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Interlude: The Handler Panic",
+        "title": "Part 2: The Handler Panic",
         "theme": "raggiesoft-books",
         "filePath": "b005/c001/p002.md"
     },
-    "/raggiesoft-books/books/casey/book-5-the-sovereign-autonomy/chapter-1-the-silicon-valley-bypass/part-2-the-flashbulb-perimeter": {
+    "/raggiesoft-books/books/casey/book-5-the-sovereign-autonomy/chapter-1-the-silicon-valley-bypass/part-3-the-flashbulb-perimeter": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 2: The Flashbulb Perimeter",
+        "title": "Part 3: The Flashbulb Perimeter",
         "theme": "raggiesoft-books",
         "filePath": "b005/c001/p003.md"
     },
-    "/raggiesoft-books/books/casey/book-5-the-sovereign-autonomy/chapter-1-the-silicon-valley-bypass/part-3-the-keynote-and-the-baypass-question": {
+    "/raggiesoft-books/books/casey/book-5-the-sovereign-autonomy/chapter-1-the-silicon-valley-bypass/part-4-the-keynote-and-the-baypass-question": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 3: The Keynote and the BayPass Question",
+        "title": "Part 4: The Keynote and the BayPass Question",
         "theme": "raggiesoft-books",
         "filePath": "b005/c001/p004.md"
     },
@@ -929,21 +929,21 @@
         "theme": "raggiesoft-books",
         "filePath": "b005/c002/p007.md"
     },
-    "/raggiesoft-books/books/casey/book-5-the-sovereign-autonomy/chapter-2-the-fenwick-bridge-protocol/part-7-the-civilian-perimeter": {
+    "/raggiesoft-books/books/casey/book-5-the-sovereign-autonomy/chapter-2-the-fenwick-bridge-protocol/part-8-the-civilian-perimeter": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 7: The Civilian Perimeter",
+        "title": "Part 8: The Civilian Perimeter",
         "theme": "raggiesoft-books",
         "filePath": "b005/c002/p008.md"
     },
-    "/raggiesoft-books/books/casey/book-5-the-sovereign-autonomy/chapter-2-the-fenwick-bridge-protocol/part-8-the-telescope-protocol": {
+    "/raggiesoft-books/books/casey/book-5-the-sovereign-autonomy/chapter-2-the-fenwick-bridge-protocol/part-9-the-telescope-protocol": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 8: The Telescope Protocol",
+        "title": "Part 9: The Telescope Protocol",
         "theme": "raggiesoft-books",
         "filePath": "b005/c002/p009.md"
     },
-    "/raggiesoft-books/books/casey/book-5-the-sovereign-autonomy/chapter-2-the-fenwick-bridge-protocol/interlude-the-escalator-trap": {
+    "/raggiesoft-books/books/casey/book-5-the-sovereign-autonomy/chapter-2-the-fenwick-bridge-protocol/part-10-the-escalator-trap": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Interlude: The Escalator Trap",
+        "title": "Part 10: The Escalator Trap",
         "theme": "raggiesoft-books",
         "filePath": "b005/c002/p010.md"
     },
