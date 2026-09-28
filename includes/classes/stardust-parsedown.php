@@ -125,11 +125,25 @@ class StardustParsedown extends Parsedown {
     }
 
     
-    // NEW EXTENSION: GitHub-style Alerts (Web Awesome mapped)
+
+    // NEW EXTENSION: Handle Corporate Emails
     protected function blockQuoteComplete($Block) {
         if (!isset($Block['element']['handler']['argument'][0])) return $Block;
         
         $firstLine = $Block['element']['handler']['argument'][0];
+        
+        // Check if the blockquote starts with **From:** to format it as a Corporate Email
+        if (strpos($firstLine, '**From:**') === 0) {
+            $Block['element']['name'] = 'wa-card';
+            $Block['element']['attributes'] = [
+                'class' => 'my-4 w-100'
+            ];
+            
+            // Add a little envelope icon header using the Web Awesome card header slot
+            array_unshift($Block['element']['handler']['argument'], '<div slot="header" style="font-size: 0.85em; text-transform: uppercase; font-weight: bold; opacity: 0.7;"><i class="fa-duotone fa-envelope" style="margin-right: 8px;"></i> Secure Corporate Transmission</div>');
+            
+            return $Block;
+        }
         
         $alerts = [
             '[!NOTE]' => ['variant' => 'neutral', 'icon' => 'fa-circle-info'],
