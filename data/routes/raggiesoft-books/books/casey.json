@@ -929,6 +929,24 @@
         "theme": "raggiesoft-books",
         "filePath": "b003/c001/p001.md"
     },
+    "/raggiesoft-books/books/casey/book-3-the-nclex/chapter-2-the-invasion/part-1-the-sea-tac-crush-load": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Sea-Tac Crush-Load",
+        "theme": "raggiesoft-books",
+        "filePath": "b003/c002/p001.md"
+    },
+    "/raggiesoft-books/books/casey/book-3-the-nclex/chapter-2-the-invasion/part-2-the-route-194-deployment": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Route 194 Deployment",
+        "theme": "raggiesoft-books",
+        "filePath": "b003/c002/p002.md"
+    },
+    "/raggiesoft-books/books/casey/book-3-the-nclex/chapter-2-the-invasion/part-3-checking-in": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: Checking In",
+        "theme": "raggiesoft-books",
+        "filePath": "b003/c002/p003.md"
+    },
     "/raggiesoft-books/books/casey/book-4-the-sovereign-empire/chapter-1-the-mandate/part-1-the-deviation": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The Deviation",
