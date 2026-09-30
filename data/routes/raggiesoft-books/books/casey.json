@@ -947,6 +947,18 @@
         "theme": "raggiesoft-books",
         "filePath": "b003/c002/p003.md"
     },
+    "/raggiesoft-books/books/casey/book-3-the-nclex/chapter-2-the-invasion/part-4-the-twelfth-floor": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: The Twelfth Floor",
+        "theme": "raggiesoft-books",
+        "filePath": "b003/c002/p004.md"
+    },
+    "/raggiesoft-books/books/casey/book-3-the-nclex/chapter-2-the-invasion/part-5-the-banquet-room": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 5: The Banquet Room",
+        "theme": "raggiesoft-books",
+        "filePath": "b003/c002/p005.md"
+    },
     "/raggiesoft-books/books/casey/book-4-the-sovereign-empire/chapter-1-the-mandate/part-1-the-deviation": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The Deviation",
