@@ -959,6 +959,84 @@
         "theme": "raggiesoft-books",
         "filePath": "b003/c002/p005.md"
     },
+    "/raggiesoft-books/books/casey/book-3-the-nclex/chapter-2-the-invasion/part-6-the-bellevue-acquisition": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 6: The Bellevue Acquisition",
+        "theme": "raggiesoft-books",
+        "filePath": "b003/c002/p006.md"
+    },
+    "/raggiesoft-books/books/casey/book-3-the-nclex/chapter-2-the-invasion/part-7-interlude-the-bellevue-bidding-war": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 7: Interlude: The Bellevue Bidding War",
+        "theme": "raggiesoft-books",
+        "filePath": "b003/c002/p007.md"
+    },
+    "/raggiesoft-books/books/casey/book-3-the-nclex/chapter-3-the-eastside-tour/part-1-the-morning-perimeter": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Morning Perimeter",
+        "theme": "raggiesoft-books",
+        "filePath": "b003/c003/p001.md"
+    },
+    "/raggiesoft-books/books/casey/book-3-the-nclex/chapter-3-the-eastside-tour/part-2-the-highcliff-announcement": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Highcliff Announcement",
+        "theme": "raggiesoft-books",
+        "filePath": "b003/c003/p002.md"
+    },
+    "/raggiesoft-books/books/casey/book-3-the-nclex/chapter-3-the-eastside-tour/part-3-the-redmond-hard-hat-tour": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Redmond Hard Hat Tour",
+        "theme": "raggiesoft-books",
+        "filePath": "b003/c003/p003.md"
+    },
+    "/raggiesoft-books/books/casey/book-3-the-nclex/chapter-3-the-eastside-tour/part-4-the-bellevue-transfer": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: The Bellevue Transfer",
+        "theme": "raggiesoft-books",
+        "filePath": "b003/c003/p004.md"
+    },
+    "/raggiesoft-books/books/casey/book-3-the-nclex/chapter-4-the-puget-sound-aquarium/part-1-the-vip-experience": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The VIP Experience",
+        "theme": "raggiesoft-books",
+        "filePath": "b003/c004/p001.md"
+    },
+    "/raggiesoft-books/books/casey/book-3-the-nclex/chapter-4-the-puget-sound-aquarium/part-2-the-deep-ocean-encounters": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Deep Ocean Encounters",
+        "theme": "raggiesoft-books",
+        "filePath": "b003/c004/p002.md"
+    },
+    "/raggiesoft-books/books/casey/book-3-the-nclex/chapter-4-the-puget-sound-aquarium/part-3-the-ride-free-area": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Ride Free Area",
+        "theme": "raggiesoft-books",
+        "filePath": "b003/c004/p003.md"
+    },
+    "/raggiesoft-books/books/casey/book-3-the-nclex/chapter-4-the-puget-sound-aquarium/part-4-dinner-in-the-sky": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: Dinner in the Sky",
+        "theme": "raggiesoft-books",
+        "filePath": "b003/c004/p004.md"
+    },
+    "/raggiesoft-books/books/casey/book-3-the-nclex/chapter-4-the-puget-sound-aquarium/part-5-the-night-shift": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 5: The Night Shift",
+        "theme": "raggiesoft-books",
+        "filePath": "b003/c004/p005.md"
+    },
+    "/raggiesoft-books/books/casey/book-3-the-nclex/chapter-5-the-evergreen-marine/part-1-colman-dock": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: Colman Dock",
+        "theme": "raggiesoft-books",
+        "filePath": "b003/c005/p001.md"
+    },
+    "/raggiesoft-books/books/casey/book-3-the-nclex/chapter-5-the-evergreen-marine/part-2-the-crossing": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Crossing",
+        "theme": "raggiesoft-books",
+        "filePath": "b003/c005/p002.md"
+    },
     "/raggiesoft-books/books/casey/book-4-the-sovereign-empire/chapter-1-the-mandate/part-1-the-deviation": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The Deviation",
