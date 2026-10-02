@@ -1037,6 +1037,96 @@
         "theme": "raggiesoft-books",
         "filePath": "b003/c005/p002.md"
     },
+    "/raggiesoft-books/books/casey/book-3-the-nclex/chapter-5-the-evergreen-marine/part-3-the-bremerton-boardwalk": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Bremerton Boardwalk",
+        "theme": "raggiesoft-books",
+        "filePath": "b003/c005/p003.md"
+    },
+    "/raggiesoft-books/books/casey/book-3-the-nclex/chapter-5-the-evergreen-marine/part-4-the-pacific-fleet-naval-museum": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: The Pacific Fleet Naval Museum",
+        "theme": "raggiesoft-books",
+        "filePath": "b003/c005/p004.md"
+    },
+    "/raggiesoft-books/books/casey/book-3-the-nclex/chapter-5-the-evergreen-marine/part-5-the-sunday-return": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 5: The Sunday Return",
+        "theme": "raggiesoft-books",
+        "filePath": "b003/c005/p005.md"
+    },
+    "/raggiesoft-books/books/casey/book-3-the-nclex/chapter-5-the-evergreen-marine/part-6-the-private-dining-room": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 6: The Private Dining Room",
+        "theme": "raggiesoft-books",
+        "filePath": "b003/c005/p006.md"
+    },
+    "/raggiesoft-books/books/casey/book-3-the-nclex/chapter-5-the-evergreen-marine/part-7-lights-out": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 7: Lights Out",
+        "theme": "raggiesoft-books",
+        "filePath": "b003/c005/p007.md"
+    },
+    "/raggiesoft-books/books/casey/book-3-the-nclex/chapter/part-1-the-194-express": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The 194 Express",
+        "theme": "raggiesoft-books",
+        "filePath": "b003/c006/p001.md"
+    },
+    "/raggiesoft-books/books/casey/book-3-the-nclex/chapter/part-2-decompression": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: Decompression",
+        "theme": "raggiesoft-books",
+        "filePath": "b003/c006/p002.md"
+    },
+    "/raggiesoft-books/books/casey/book-3-the-nclex/chapter/part-3-the-bathroom-queue": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Bathroom Queue",
+        "theme": "raggiesoft-books",
+        "filePath": "b003/c006/p003.md"
+    },
+    "/raggiesoft-books/books/casey/book-3-the-nclex/chapter/part-4-the-565": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: The 565",
+        "theme": "raggiesoft-books",
+        "filePath": "b003/c006/p004.md"
+    },
+    "/raggiesoft-books/books/casey/book-3-the-nclex/chapter-7-the-may-logistics/part-1-the-may-logistics": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The May Logistics",
+        "theme": "raggiesoft-books",
+        "filePath": "b003/c007/p001.md"
+    },
+    "/raggiesoft-books/books/casey/book-3-the-nclex/chapter-7-the-may-logistics/part-2-the-snohomish-run": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Snohomish Run",
+        "theme": "raggiesoft-books",
+        "filePath": "b003/c007/p002.md"
+    },
+    "/raggiesoft-books/books/casey/book-3-the-nclex/chapter-7-the-may-logistics/part-3-tuscany-slice": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: Tuscany Slice",
+        "theme": "raggiesoft-books",
+        "filePath": "b003/c007/p003.md"
+    },
+    "/raggiesoft-books/books/casey/book-3-the-nclex/chapter-7-the-may-logistics/part-4-the-retreat": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: The Retreat",
+        "theme": "raggiesoft-books",
+        "filePath": "b003/c007/p004.md"
+    },
+    "/raggiesoft-books/books/casey/book-3-the-nclex/chapter-7-the-may-logistics/part-5-triage": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 5: Triage",
+        "theme": "raggiesoft-books",
+        "filePath": "b003/c007/p005.md"
+    },
+    "/raggiesoft-books/books/casey/book-3-the-nclex/chapter-8-the-prospector-s-keep/part-1-the-motorpool": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Motorpool",
+        "theme": "raggiesoft-books",
+        "filePath": "b003/c008/p001.md"
+    },
     "/raggiesoft-books/books/casey/book-4-the-sovereign-empire/chapter-1-the-mandate/part-1-the-deviation": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The Deviation",
