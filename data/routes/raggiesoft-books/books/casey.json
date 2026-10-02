@@ -1127,6 +1127,60 @@
         "theme": "raggiesoft-books",
         "filePath": "b003/c008/p001.md"
     },
+    "/raggiesoft-books/books/casey/book-3-the-nclex/chapter-8-the-prospector-s-keep/part-2-the-great-hall-reveal": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Great Hall Reveal",
+        "theme": "raggiesoft-books",
+        "filePath": "b003/c008/p002.md"
+    },
+    "/raggiesoft-books/books/casey/book-3-the-nclex/chapter-8-the-prospector-s-keep/part-3-the-sovereign-tour": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Sovereign Tour",
+        "theme": "raggiesoft-books",
+        "filePath": "b003/c008/p003.md"
+    },
+    "/raggiesoft-books/books/casey/book-3-the-nclex/chapter-8-the-prospector-s-keep/part-4-the-grand-ballroom": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: The Grand Ballroom",
+        "theme": "raggiesoft-books",
+        "filePath": "b003/c008/p004.md"
+    },
+    "/raggiesoft-books/books/casey/book-3-the-nclex/chapter-8-the-prospector-s-keep/part-5-the-chilkoot-wing": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 5: The Chilkoot Wing",
+        "theme": "raggiesoft-books",
+        "filePath": "b003/c008/p005.md"
+    },
+    "/raggiesoft-books/books/casey/book-3-the-nclex/chapter-8-the-prospector-s-keep/part-6-the-summit-suite": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 6: The Summit Suite",
+        "theme": "raggiesoft-books",
+        "filePath": "b003/c008/p006.md"
+    },
+    "/raggiesoft-books/books/casey/book-3-the-nclex/chapter-8-the-prospector-s-keep/part-7-the-residential-wing": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 7: The Residential Wing",
+        "theme": "raggiesoft-books",
+        "filePath": "b003/c008/p007.md"
+    },
+    "/raggiesoft-books/books/casey/book-3-the-nclex/chapter-8-the-prospector-s-keep/part-8-the-birthday-lunch": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 8: The Birthday Lunch",
+        "theme": "raggiesoft-books",
+        "filePath": "b003/c008/p008.md"
+    },
+    "/raggiesoft-books/books/casey/book-3-the-nclex/chapter-8-the-prospector-s-keep/part-9-the-extractions": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 9: The Extractions",
+        "theme": "raggiesoft-books",
+        "filePath": "b003/c008/p009.md"
+    },
+    "/raggiesoft-books/books/casey/book-3-the-nclex/chapter-8-the-prospector-s-keep/part-10-the-great-hall-cinema": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 10: The Great Hall Cinema",
+        "theme": "raggiesoft-books",
+        "filePath": "b003/c008/p010.md"
+    },
     "/raggiesoft-books/books/casey/book-4-the-sovereign-empire/chapter-1-the-mandate/part-1-the-deviation": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The Deviation",
