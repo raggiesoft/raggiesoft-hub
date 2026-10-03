@@ -1121,9 +1121,21 @@
         "theme": "raggiesoft-books",
         "filePath": "b003/c007/p005.md"
     },
-    "/raggiesoft-books/books/casey/book-3-the-nclex/chapter-8-the-prospector-s-keep/part-1-the-motorpool": {
+    "/raggiesoft-books/books/casey/book-3-the-nclex/chapter-7-the-may-logistics/part-6-the-recovery-protocol": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 1: The Motorpool",
+        "title": "Part 6: The Recovery Protocol",
+        "theme": "raggiesoft-books",
+        "filePath": "b003/c007/p006.md"
+    },
+    "/raggiesoft-books/books/casey/book-3-the-nclex/chapter-7-the-may-logistics/part-7-bedtime-routine": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 7: Bedtime Routine",
+        "theme": "raggiesoft-books",
+        "filePath": "b003/c007/p007.md"
+    },
+    "/raggiesoft-books/books/casey/book-3-the-nclex/chapter-8-the-prospector-s-keep/part-1-the-brat-diet": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The BRAT Diet",
         "theme": "raggiesoft-books",
         "filePath": "b003/c008/p001.md"
     },
