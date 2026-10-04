@@ -34,6 +34,7 @@
                     <li class="nav-item mb-2"><span class="nav-link p-0 text-body-secondary">PHP 8.5</span></li>
                     <li class="nav-item mb-2"><span class="nav-link p-0 text-body-secondary">Web Awesome Pro</span></li>
                     <li class="nav-item mb-2"><span class="nav-link p-0 text-body-secondary">FontAwesome Pro</span></li>
+                    <li class="nav-item mt-3"><a href="/accessibility.php" class="nav-link p-0 text-primary fw-bold"><i class="fa-solid fa-universal-access me-1"></i> Accessibility</a></li>
                 </ul>
             </div>
 
