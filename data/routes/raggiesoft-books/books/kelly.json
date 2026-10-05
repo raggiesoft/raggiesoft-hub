@@ -17,6 +17,12 @@
         "title": "Kelly",
         "theme": "raggiesoft-books"
     },
+    "/raggiesoft-books/books/kelly/toc": {
+        "view": "pages/raggiesoft-books/books/toc",
+        "title": "Table of Contents - Kelly",
+        "theme": "raggiesoft-books",
+        "filePath": "__TOC__"
+    },
     "/raggiesoft-books/books/kelly/the-anchor/a-fork-in-the-road/part-1-the-bulletin-board": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The Bulletin Board \ud83d\udccc",
