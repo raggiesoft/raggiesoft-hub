@@ -7,6 +7,9 @@
 // 1. Determine the path to the Markdown file on the CDN
 $prefix = '/raggiesoft-books/books/';
 $mdUrl = '';
+$specialPageType = null;
+$specialPageIndex1 = null;
+$specialPageIndex2 = null;
 
 if (str_starts_with($request_uri, $prefix)) {
     $relativePath = substr($request_uri, strlen($prefix));
@@ -21,9 +24,41 @@ if (str_starts_with($request_uri, $prefix)) {
         $routeData = json_decode(file_get_contents($routeFile), true);
         if (isset($routeData[$request_uri]['filePath'])) {
             $actualFilePath = $routeData[$request_uri]['filePath'];
-            $mdUrl = $cdnBaseUrl . '/raggiesoft-books/books/' . $seriesSlug . '/' . $actualFilePath;
+            if ($actualFilePath === '__SERIES_LANDING__') {
+                $specialPageType = 'landing';
+            } elseif ($actualFilePath === '__TOC__') {
+                $specialPageType = 'toc';
+            } elseif (str_starts_with($actualFilePath, '__BOOK_TOC__|')) {
+                $p = explode('|', $actualFilePath);
+                $specialPageType = 'book_toc';
+                $specialPageIndex1 = $p[1] ?? 0;
+            } elseif (str_starts_with($actualFilePath, '__CHAP_TOC__|')) {
+                $p = explode('|', $actualFilePath);
+                $specialPageType = 'chap_toc';
+                $specialPageIndex1 = $p[1] ?? 0;
+                $specialPageIndex2 = $p[2] ?? 0;
+            } else {
+                $mdUrl = $cdnBaseUrl . '/raggiesoft-books/books/' . $seriesSlug . '/' . $actualFilePath;
+            }
         }
     }
+}
+
+// Intercept Special Pages
+if ($specialPageType !== null) {
+    if ($specialPageType === 'landing') {
+        require __DIR__ . '/landing.php';
+    } elseif ($specialPageType === 'toc') {
+        require __DIR__ . '/series.php';
+    } elseif ($specialPageType === 'book_toc') {
+        $bIndex = $specialPageIndex1;
+        require __DIR__ . '/book-index.php';
+    } elseif ($specialPageType === 'chap_toc') {
+        $bIndex = $specialPageIndex1;
+        $cIndex = $specialPageIndex2;
+        require __DIR__ . '/chapter-index.php';
+    }
+    return;
 }
 
 // Fallback to legacy extraction if not found
