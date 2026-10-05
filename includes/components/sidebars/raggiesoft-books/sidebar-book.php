@@ -9,7 +9,7 @@ if (!function_exists('rs_slugify')) {
 
 /**
  * RaggieSoft Books - Sidebar Table of Contents
- * Fetches the specific book's katie.json from the CDN and builds a Web Awesome Tree
+ * Fetches the specific book's toc.json from the CDN and builds a Web Awesome Tree
  */
 
 $prefix = '/raggiesoft-books/books/';
@@ -23,7 +23,7 @@ if (str_starts_with($request_uri, $prefix)) {
 // Ensure we have a valid slug before attempting to fetch
 $katie = [];
 if (!empty($seriesSlug)) {
-    $manifestUrl = $cdnBaseUrl . '/raggiesoft-books/books/' . $seriesSlug . '/katie.json';
+    $manifestUrl = $cdnBaseUrl . '/raggiesoft-books/books/' . $seriesSlug . '/toc.json';
     $manifestContent = @file_get_contents($manifestUrl);
     if ($manifestContent !== false) {
         $katie = json_decode($manifestContent, true) ?? [];

@@ -145,7 +145,7 @@ if (!isset($pageConfig['view'])) {
 
 // B.2 DYNAMIC NARRATIVE ROUTING (The Katie.json Intercept)
 if (!isset($pageConfig['view'])) {
-    $katiePath = ROOT_PATH . '/books/katie.json';
+    $katiePath = ROOT_PATH . '/books/toc.json';
     
     if (file_exists($katiePath)) {
         $katie = json_decode(file_get_contents($katiePath), true);

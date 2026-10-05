@@ -5,7 +5,7 @@ if (!defined('ACTIVE_MD_FILE')) {
 }
 
 $markdownPath = ROOT_PATH . '/books/' . ACTIVE_MD_FILE;
-$katiePath = ROOT_PATH . '/books/katie.json';
+$katiePath = ROOT_PATH . '/books/toc.json';
 
 if (!file_exists($markdownPath)) {
     echo "<h1>Error: Narrative segment not found.</h1>";
@@ -34,7 +34,7 @@ if (!file_exists($markdownPath)) {
             $cleanTarget = str_replace('.md', '', $target);
             $resolvedUrl = '#'; // Fallback link if the route can't be resolved
             
-            // Scan katie.json to find where this file lives in the SEO routing structure
+            // Scan toc.json to find where this file lives in the SEO routing structure
             if (!empty($katie)) {
                 foreach ($katie as $book) {
                     $bookSlug = slugify($book['book_title']);

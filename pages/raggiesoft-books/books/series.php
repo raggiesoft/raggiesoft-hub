@@ -12,7 +12,7 @@ if (str_starts_with($request_uri, $prefix)) {
 
 $katie = [];
 if (!empty($seriesSlug)) {
-    $manifestUrl = $cdnBaseUrl . '/raggiesoft-books/books/' . $seriesSlug . '/katie.json';
+    $manifestUrl = $cdnBaseUrl . '/raggiesoft-books/books/' . $seriesSlug . '/toc.json';
     $manifestContent = @file_get_contents($manifestUrl);
     if ($manifestContent !== false) {
         $katie = json_decode($manifestContent, true) ?? [];

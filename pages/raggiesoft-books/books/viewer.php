@@ -88,25 +88,29 @@ $prevUrl = $config['prevUrl'] ?? null;
 $nextUrl = $config['nextUrl'] ?? null;
 $sequenceName = $config['sequenceName'] ?? null;
 
-// Dynamically fetch the Book Name from katie.json to override the generic site name
+// Fetch the manifest (toc.json) to make $katie available to oliver.php and sidebar.php
+$katie = [];
 $pathParts = explode('/', $relativePath);
+if (count($pathParts) >= 1) {
+    $seriesSlug = $pathParts[0];
+    $katieUrl = $cdnBaseUrl . '/raggiesoft-books/books/' . $seriesSlug . '/toc.json';
+    $katieJson = @file_get_contents($katieUrl);
+    if ($katieJson) {
+        $katie = json_decode($katieJson, true);
+    }
+}
+
+// Dynamically fetch the Book Name from toc.json to override the generic site name
 if (count($pathParts) >= 2) {
-    $bookSlug = $pathParts[0];
     $bookIdStr = $pathParts[1];
     
     if (preg_match('/^book-(\d+)/', $bookIdStr, $m)) {
         $bookNum = (int)$m[1];
-        $katieUrl = $cdnBaseUrl . '/raggiesoft-books/books/' . $bookSlug . '/katie.json';
-        $katieJson = @file_get_contents($katieUrl);
-        
-        if ($katieJson) {
-            $katieData = json_decode($katieJson, true);
-            if (isset($katieData['books'])) {
-                foreach ($katieData['books'] as $book) {
-                    if (isset($book['book_num']) && $book['book_num'] == $bookNum) {
-                        $sequenceName = $book['book_title'];
-                        break;
-                    }
+        if (!empty($katie) && isset($katie['books'])) {
+            foreach ($katie['books'] as $book) {
+                if (isset($book['book_num']) && $book['book_num'] == $bookNum) {
+                    $sequenceName = $book['book_title'];
+                    break;
                 }
             }
         }
