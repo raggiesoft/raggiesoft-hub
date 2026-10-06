@@ -128,6 +128,9 @@ $imagesJson = htmlspecialchars(json_encode($heroImages), ENT_QUOTES, 'UTF-8');
         <?php
         else:
             foreach ($books as $book):
+                if (!empty($book['hide']) && $book['hide'] === true && !isset($_GET['show_hidden'])) {
+                    continue;
+                }
                 $slug = $book['slug'] ?? '';
                 $title = $book['title'] ?? 'Unknown Archive';
                 $desc = $book['description'] ?? '';

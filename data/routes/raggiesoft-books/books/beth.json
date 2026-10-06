@@ -14,13 +14,13 @@
     },
     "/raggiesoft-books/books/beth": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Beth",
+        "title": "Synchronized",
         "theme": "raggiesoft-books",
         "filePath": "__SERIES_LANDING__"
     },
     "/raggiesoft-books/books/beth/toc": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Table of Contents - Beth",
+        "title": "Table of Contents - Synchronized",
         "theme": "raggiesoft-books",
         "filePath": "__TOC__"
     }
