@@ -79,6 +79,18 @@ $imagesJson = htmlspecialchars(json_encode($heroImages), ENT_QUOTES, 'UTF-8');
         position: relative;
         z-index: 2;
     }
+
+    /* Force wa-card to stretch and push footer to bottom */
+    wa-card::part(base) {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    wa-card::part(body) {
+        flex: 1 1 auto;
+        display: flex;
+        flex-direction: column;
+    }
 </style>
 
 
