@@ -19,7 +19,9 @@
   "/raggiesoft-books/books": {
     "view": "pages/raggiesoft-books/books/overview",
     "title": "Contemporary Fiction | Ocean View Archives",
-    "ogTitle": "Contemporary Fiction Library"
+    "ogTitle": "Contemporary Fiction | Ocean View Archives",
+    "ogDescription": "Step into the RaggieSoft literary universe. Follow intertwining lives, complex relationships, and deep worldbuilding across our entire contemporary fiction collection.",
+    "ogImage": "/raggiesoft-books/images/og/contemporary.jpg"
   },
   "/raggiesoft-books/knox": {
     "view": "pages/raggiesoft-books/knox/overview",

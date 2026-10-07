@@ -34,6 +34,9 @@ global $cdn_root;
     "DigitalOcean Cloud Infrastructure",
     "Bash CI/CD Automation",
     "Google Antigravity Agentic IDE (Gemini LLM)",
+    "Autonomous Agent Orchestration",
+    "Python Automation Tooling",
+    "Creative Engineering & Worldbuilding",
     "GitHub Copilot",
     "Suno AI Audio Generation",
     "E-Commerce Architecture (MoR)",
@@ -72,7 +75,7 @@ global $cdn_root;
             <h1 class="display-4 fw-bold text-uppercase text-glow-primary mb-2" style="font-family: 'Impact', sans-serif;">Michael P. Ragsdale</h1>
             <p class="fs-4 text-primary mb-3 fw-bold">Systems Architect & Full-Stack Developer</p>
             <p class="lead text-secondary mb-4">
-                Architecting accessible, resilient systems since 1997. Bridging the gap between legacy infrastructure and modern cloud reliability with an uncompromising focus on "Empathetic Engineering."
+                Systems Architect, Creative Developer, and AI Orchestration Specialist. Bridging the gap between legacy infrastructure and modern digital ecosystems—from high-performance PHP/Vanilla JS multisite frameworks to advanced autonomous agent workflows and deep-lore worldbuilding.
             </p>
             <div class="d-flex flex-wrap gap-2 justify-content-center justify-content-lg-start">
                 <a href="<?php echo $cdnBaseUrl; ?>/portfolio/documents/resume/mragsdale-resume.pdf" target="_blank" class="btn btn-primary btn-lg rounded-pill px-4 shadow-sm">
@@ -237,7 +240,7 @@ global $cdn_root;
                     </div>
                 </div>
                 <p class="small text-secondary mb-0">
-                    Engineered and open-sourced the Stardust Engine CMS (MIT License), a custom-built PHP 8.4 MVC framework. Architected Elara, a Vanilla JS SPA router that parses JSON payloads to dynamically swap entire site themes per route, completely bypassing traditional database latency.
+                    Engineered the Stardust Engine CMS (PHP 8.4 MVC) and Elara (Vanilla JS SPA router). Architected automated deployment pipelines, orchestrated advanced AI agent workflows (Google Antigravity), and developed custom Python/Bash automation tools to power rapid multisite prototyping and large-scale creative engineering, including the Ocean View Archives fiction imprint and Engine Room Records.
                 </p>
             </div>
         </div>
