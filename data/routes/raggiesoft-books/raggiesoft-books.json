@@ -33,5 +33,11 @@
     "view": "pages/raggiesoft-books/image-library",
     "title": "Image Library | Ocean View Archives",
     "ogTitle": "Image Library - RaggieSoft Books"
+  },
+  "/raggiesoft-books/search": {
+    "view": "pages/raggiesoft-books/search",
+    "title": "Deep Search | Ocean View Archives",
+    "ogTitle": "Deep Search - Ocean View Archives",
+    "showSidebar": true
   }
 }
