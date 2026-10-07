@@ -11,11 +11,13 @@
     "navbarBrandText": "Engine Room<span class=\"d-none d-md-inline\"> Records</span>",
     "navbarBrandLink": "/engine-room",
     "navbarBrandAlt": "Engine Room Records Official Seal",
-    "navbarBrandClass": "rounded-0 navbar-brand-corporate-img"
+    "navbarBrandClass": "rounded-0 navbar-brand-corporate-img",
+    "ogImage": "/engine-room-records/images/og/engine-room-og.jpg"
   },
   "/engine-room": {
     "view": "pages/engine-room/overview",
     "title": "Engine Room Records | Independent Music Label",
+    "ogDescription": "Engine Room Records. Loud. Raw. Real.",
     "showSidebar": false
   },
   "/engine-room/artists": {
