@@ -7,13 +7,25 @@ $results = [];
 if (!empty($query)) {
     // Local path to search index
     $indexPath = ROOT_PATH . '/../raggiesoft-assets/raggiesoft-books/json/search-index.json';
+    $indexData = null;
     
     if (file_exists($indexPath)) {
-        // Read and decode the search index
         $indexData = json_decode(file_get_contents($indexPath), true);
+    } else {
+        // Production fallback: fetch from CDN
+        global $cdnBaseUrl;
+        $cdnUrl = ($cdnBaseUrl ?? 'https://assets.raggiesoft.com') . '/raggiesoft-books/json/search-index.json';
         
-        if ($indexData) {
-            $lowerQuery = strtolower($query);
+        // Use stream context to handle redirects and timeouts gracefully
+        $context = stream_context_create(['http' => ['timeout' => 5]]);
+        $json = @file_get_contents($cdnUrl, false, $context);
+        if ($json) {
+            $indexData = json_decode($json, true);
+        }
+    }
+    
+    if ($indexData) {
+        $lowerQuery = strtolower($query);
             $queryLen = strlen($lowerQuery);
             
             foreach ($indexData as $item) {
@@ -82,7 +94,6 @@ if (!empty($query)) {
             }
         }
     }
-}
 ?>
 
 <div class="container py-5 mt-5" style="min-height: 100vh;">
@@ -103,38 +114,39 @@ if (!empty($query)) {
 
             <div class="search-results-container">
                 <?php if (empty($query)): ?>
-                    <div class="text-center text-muted py-5 mt-4 bg-light rounded-4 border">
-                        <i class="fa-duotone fa-magnifying-glass fa-3x mb-3 text-secondary"></i>
-                        <h4 class="fw-bold">Enter a search term</h4>
-                        <p>Search across the entire Ocean View Archives textual content.</p>
+                    <div class="text-center py-5 mt-4 bg-white rounded-4 border shadow-sm">
+                        <i class="fa-duotone fa-magnifying-glass fa-3x mb-3" style="color: #6c757d;"></i>
+                        <h4 class="fw-bold text-dark">Enter a search term</h4>
+                        <p style="color: #495057;">Search across the entire Ocean View Archives textual content.</p>
                     </div>
                 <?php else: ?>
-                    <p class="text-muted mb-4 fw-bold">
+                    <p class="text-light mb-4 fw-bold">
                         Found <?php echo count($results); ?> result(s) for "<?php echo htmlspecialchars($query); ?>"
                     </p>
 
                     <?php if (empty($results)): ?>
-                        <div class="text-center py-5 mt-4 bg-light rounded-4 border">
-                            <i class="fa-duotone fa-folder-open fa-3x mb-3 text-muted"></i>
+                        <div class="text-center py-5 mt-4 bg-white rounded-4 border shadow-sm">
+                            <i class="fa-duotone fa-folder-open fa-3x mb-3" style="color: #6c757d;"></i>
                             <h4 class="fw-bold text-dark">No records found</h4>
-                            <p class="text-muted">No documents match your query in the archives.</p>
+                            <p style="color: #495057; font-weight: 500;">No documents match your query in the archives.</p>
                         </div>
                     <?php else: ?>
                         <ul class="list-unstyled">
                             <?php foreach ($results as $result): ?>
                                 <li class="mb-4 bg-white p-4 rounded-4 shadow-sm border search-result-item" style="transition: transform 0.2s ease, box-shadow 0.2s ease;">
                                     <div class="d-flex flex-column">
-                                        <div class="mb-1 text-uppercase fw-bold text-muted" style="font-size: 0.8rem; letter-spacing: 0.5px;">
+                                        <div class="mb-1 text-uppercase fw-bold" style="color: #6c757d; font-size: 0.8rem; letter-spacing: 0.5px;">
                                             <?php echo htmlspecialchars($result['series']); ?> 
                                             &rsaquo; <?php echo htmlspecialchars($result['book']); ?> 
                                             &rsaquo; <?php echo htmlspecialchars($result['chapter']); ?>
                                         </div>
                                         <h3 class="h5 fw-bold mb-2">
-                                            <a href="<?php echo htmlspecialchars($result['url']); ?>" class="text-decoration-none text-dark">
+                                            <?php $booksUrl = str_replace('/raggiesoft-books/books/', 'https://books.raggiesoft.com/', $result['url']); ?>
+                                            <a href="<?php echo htmlspecialchars($booksUrl); ?>" class="text-decoration-none" style="color: #0056b3;">
                                                 <?php echo $result['highlightedTitle'] ?? htmlspecialchars($result['title']); ?>
                                             </a>
                                         </h3>
-                                        <p class="text-muted mb-0" style="line-height: 1.6; font-size: 0.95rem;">
+                                        <p class="mb-0" style="color: #343a40; line-height: 1.6; font-size: 0.95rem;">
                                             <?php echo $result['snippet']; ?>
                                         </p>
                                     </div>
