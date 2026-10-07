@@ -9,8 +9,14 @@ $title = isset($props['title']) ? htmlspecialchars($props['title']) : 'Card Titl
 $description = $props['description'] ?? 'Card description goes here.';
 $buttonProps = $props['buttonProps'] ?? null;
 $variant = $buttonProps['variant'] ?? 'secondary';
+$aspectRatio = $props['aspectRatio'] ?? '1:1';
+$paddingTop = '100%';
+if ($aspectRatio === '2:3') $paddingTop = '150%';
+else if ($aspectRatio === '1:1') $paddingTop = '100%';
+else $paddingTop = $aspectRatio;
 
 $bgColor = '6c757d'; 
+
 if ($variant === 'pact') $bgColor = '005A5A'; 
 if ($variant === 'axiom') $bgColor = 'A8491A';
 $textColor = 'FFFFFF';
@@ -19,7 +25,7 @@ $placeholderUrl = "https://placehold.co/600x400/{$bgColor}/{$textColor}?text=" .
 
 <wa-card style="height: 100%; display: flex; flex-direction: column;">
   <?php if ($imgSrc): ?>
-    <div slot="media" style="position: relative; width: 100%; padding-top: 100%;">
+    <div slot="media" style="position: relative; width: 100%; padding-top: <?php echo $paddingTop; ?>;">
       <img src="<?php echo htmlspecialchars($imgSrc); ?>"
            alt="<?php echo htmlspecialchars($imgAlt); ?>"
            onerror="this.onerror=null;this.src='<?php echo $placeholderUrl; ?>';"
@@ -30,7 +36,7 @@ $placeholderUrl = "https://placehold.co/600x400/{$bgColor}/{$textColor}?text=" .
       <?php endif; ?>
     </div>
   <?php else: ?>
-    <div slot="media" style="position: relative; width: 100%; padding-top: 100%;">
+    <div slot="media" style="position: relative; width: 100%; padding-top: <?php echo $paddingTop; ?>;">
       <img src="<?php echo $placeholderUrl; ?>" alt="<?php echo htmlspecialchars($imgAlt); ?>" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;">
     </div>
   <?php endif; ?>
