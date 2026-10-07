@@ -19,7 +19,7 @@ $placeholderUrl = "https://placehold.co/600x400/{$bgColor}/{$textColor}?text=" .
 
 <wa-card style="height: 100%; display: flex; flex-direction: column;">
   <?php if ($imgSrc): ?>
-    <div slot="media" style="position: relative; width: 100%; padding-top: 150%;">
+    <div slot="media" style="position: relative; width: 100%; padding-top: 100%;">
       <img src="<?php echo htmlspecialchars($imgSrc); ?>"
            alt="<?php echo htmlspecialchars($imgAlt); ?>"
            onerror="this.onerror=null;this.src='<?php echo $placeholderUrl; ?>';"
@@ -30,7 +30,7 @@ $placeholderUrl = "https://placehold.co/600x400/{$bgColor}/{$textColor}?text=" .
       <?php endif; ?>
     </div>
   <?php else: ?>
-    <div slot="media" style="position: relative; width: 100%; padding-top: 150%;">
+    <div slot="media" style="position: relative; width: 100%; padding-top: 100%;">
       <img src="<?php echo $placeholderUrl; ?>" alt="<?php echo htmlspecialchars($imgAlt); ?>" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;">
     </div>
   <?php endif; ?>
