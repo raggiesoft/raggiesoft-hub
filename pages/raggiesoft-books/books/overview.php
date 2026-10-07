@@ -141,6 +141,12 @@ $imagesJson = htmlspecialchars(json_encode($heroImages), ENT_QUOTES, 'UTF-8');
                         <i class="ph-fill ph-images"></i> View Image Library
                     </a>
                 </div>
+                <div class="mt-4">
+                    <form action="/raggiesoft-books/search" method="GET" class="d-flex bg-white rounded-pill overflow-hidden mx-auto shadow-sm" style="max-width: 500px;">
+                        <input type="text" name="q" class="form-control border-0 px-4 py-2" placeholder="Search characters, quotes, or lore..." style="box-shadow: none; outline: none; background: transparent;">
+                        <button type="submit" class="btn btn-primary px-4 fw-bold m-1 rounded-pill">Search</button>
+                    </form>
+                </div>
             </div>
         </div>
 
