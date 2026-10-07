@@ -17,6 +17,7 @@
   "/engine-room": {
     "view": "pages/engine-room/overview",
     "title": "Engine Room Records | Independent Music Label",
+    "ogTitle": "Engine Room Records | Independent Music Label",
     "ogDescription": "The official home of Engine Room Records. An independent music label forging loud, raw, and real audio. Discover our artists, catalog, and latest releases.",
     "showSidebar": false
   },
