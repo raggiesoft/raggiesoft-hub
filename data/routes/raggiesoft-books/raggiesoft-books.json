@@ -38,6 +38,9 @@
     "view": "pages/raggiesoft-books/search",
     "title": "Deep Search | Ocean View Archives",
     "ogTitle": "Deep Search - Ocean View Archives",
-    "showSidebar": true
+    "showSidebar": true,
+    "sidebar": "raggiesoft-books/sidebar-search",
+    "headerMenu": "raggiesoft-books/header-search",
+    "footer": "raggiesoft-books/footer-search"
   }
 }

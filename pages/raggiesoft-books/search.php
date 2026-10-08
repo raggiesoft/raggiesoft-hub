@@ -135,7 +135,7 @@ if (!empty($query)) {
                             <?php foreach ($results as $result): ?>
                                 <li class="mb-4 bg-white p-4 rounded-4 shadow-sm border search-result-item" style="transition: transform 0.2s ease, box-shadow 0.2s ease;">
                                     <div class="d-flex flex-column">
-                                        <div class="mb-1 text-uppercase fw-bold" style="color: #6c757d; font-size: 0.8rem; letter-spacing: 0.5px;">
+                                        <div class="mb-1 text-uppercase fw-bold" style="color: #495057; font-size: 0.8rem; letter-spacing: 0.5px;">
                                             <?php echo htmlspecialchars($result['series']); ?> 
                                             &rsaquo; <?php echo htmlspecialchars($result['book']); ?> 
                                             &rsaquo; <?php echo htmlspecialchars($result['chapter']); ?>
