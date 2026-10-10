@@ -1,6 +1,21 @@
 <?php
+/**
+ * Crimson Node - Mrs. DeMarco Profile
+ *
+ * This file renders the character biography for Mrs. DeMarco, the Cafeteria Supervisor 
+ * at Northwood High School. It details her "Shadow Law" justice system and student protection rules.
+ *
+ * Architecture Notes:
+ * - Designed as an HTML fragment to be included dynamically within a parent layout template.
+ * - Uses a two-column Bootstrap 5 layout (`col-lg-5` for the portrait card, `col-lg-7` for content).
+ * - Accented with a danger/red (`#dc3545`) color scheme mirroring her intimidating persona.
+ *
+ * Maintainer Note: This is an include fragment. Do not wrap in `<html>` or `<body>` tags. 
+ * Maintain the existing layout elements to match other Northwood High staff profiles.
+ */
 // pages/engine-room/artists/crimson-node/characters/northwood/mrs-demarco.php
 ?>
+<!-- PROFILE FRAGMENT -->
 <div class="container py-5">
     <div class="row mb-5">
         <div class="col-12 text-center">

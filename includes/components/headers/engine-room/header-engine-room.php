@@ -1,7 +1,27 @@
 <?php
-// includes/components/headers/engine-room/header-engine-room.php
-// The Official Imprint Navigation. 
-// Fan-Centric Focus with Corporate Routing to RaggieSoft Media.
+/**
+ * Engine Room - Main Navigation Header
+ * 
+ * ARCHITECTURAL OVERVIEW:
+ * This is the primary navigation component for the "Engine Room Records" section.
+ * It serves as a central hub linking to active artists, historical archives, and corporate operations.
+ * 
+ * LORE CONTEXT:
+ * The "Official Imprint Navigation" blending fan-centric content (roster, radio) with 
+ * corporate elements (B2B licensing, verification desks).
+ * 
+ * LOGIC & CONSTRAINTS:
+ * - Complex active state logic: Evaluates `$_SERVER['REQUEST_URI']` using `str_starts_with` 
+ *   and `str_contains` to dynamically color-highlight dropdown triggers (`$isRoster`, `$isArchives`, etc.).
+ * - Heavy usage of Web Awesome (`<wa-dropdown>`, `<wa-menu>`, `<wa-dropdown-item>`) mixed 
+ *   with Bootstrap flexbox classes.
+ * - The Media Contacts section uses `data-u`, `data-d`, `data-t` attributes on `.elara-secure-mail` 
+ *   elements. This is likely tied to a JavaScript obfuscator for email addresses. Do NOT modify these attributes.
+ * 
+ * File Info: includes/components/headers/engine-room/header-engine-room.php
+ * The Official Imprint Navigation. 
+ * Fan-Centric Focus with Corporate Routing to RaggieSoft Media.
+ */
 
 // 1. Determine Active States
 $uri = $_SERVER['REQUEST_URI'] ?? '';
@@ -90,6 +110,11 @@ $isArchives = (
     </wa-dropdown-item>
     <wa-divider></wa-divider>
     <div class="px-3 py-2 small text-uppercase  fw-bold">Media Contacts</div>
+    <!-- 
+      Obfuscated Email Links:
+      The `.elara-secure-mail` class and `data-` attributes are used by an external
+      JavaScript function to construct `mailto:` links dynamically, preventing spam harvesters.
+    -->
     <wa-dropdown-item class="elara-secure-mail font-monospace" value="#" data-u="sync" data-d="raggiesoftmedia" data-t="com">
       <i slot="start" class="fa-solid fa-file-audio text-warning"></i> sync@raggiesoftmedia.com
     </wa-dropdown-item>

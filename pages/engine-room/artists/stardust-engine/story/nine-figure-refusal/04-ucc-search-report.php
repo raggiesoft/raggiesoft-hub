@@ -1,4 +1,27 @@
 <?php
+/**
+ * ============================================================================
+ * ARCHITECTURAL MAINTENANCE BLOCK
+ * ============================================================================
+ * File: 04-ucc-search-report.php
+ * Component Type: Story / Lore HTML View (PHP Partial)
+ * 
+ * DESCRIPTION:
+ * Displays "Evidence Item #12-C: The 'Impossible' UCC Search." This page visually 
+ * simulates a government document indicating that Engine Room Records has zero debt, 
+ * alongside an arrogant handwritten note from the antagonist.
+ * 
+ * STRUCTURAL NOTES & CONSTRAINTS:
+ * - SKEUOMORPHIC UI: The `.state-doc` uses monospace fonts and double borders 
+ *   to simulate a formal state filing.
+ * - WATERMARK: The `.watermark-text` class overlays "NO RECORDS FOUND" across 
+ *   the document. It relies on specific z-indexing to sit behind `.doc-content` 
+ *   while maintaining `pointer-events: none;`.
+ * - ABSOLUTE POSITIONING: The "Analyst Note" is a rotated, absolute-positioned 
+ *   sticky note. Do not break the container's relative layout or the math driving 
+ *   this element's position.
+ * ============================================================================
+ */
 // pages/engine-room/artists/stardust-engine/story/nine-figure-refusal/ucc-search-report.php
 // EVIDENCE ITEM #12-C: The "Impossible" UCC Search
 // Context: Proof of zero debt AND Proof of Frost's incompetence (Wrong Jurisdiction).

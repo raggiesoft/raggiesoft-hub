@@ -1,4 +1,27 @@
 <?php
+/**
+ * ============================================================================
+ * ARCHITECTURE & MAINTENANCE NOTES
+ * ============================================================================
+ * File: pages/engine-room/artists/stardust-engine/story/friction/kevin-deposition.php
+ * 
+ * 1. Lore Context:
+ *    - EVIDENCE ITEM #94-C. The legal transcript of photographer Kevin Mitchell.
+ *    - His testimony (revealing he shoots toddlers for the Wishbook, not edgy 
+ *      avant-garde work) proved Vance's guilt and secured the band's freedom.
+ * 
+ * 2. Component Architecture:
+ *    - Uses custom inline `<style>` blocks to mimic a legal transcript layout 
+ *      (`.transcript-paper`, `.line-number-col`).
+ *    - Implements an absolute-positioned `.gideon-note` mimicking a Post-It from 
+ *      the band's lawyer.
+ *    - Includes the `narrative-stepper.php` component at the bottom.
+ * 
+ * 3. Maintenance Rule:
+ *    - DO NOT alter the inline CSS blocks or their mapping to the HTML elements.
+ *    - Ensure the responsive media query logic for `.gideon-note` is preserved.
+ * ============================================================================
+ */
 // pages/engine-room/artists/stardust-engine/story/friction/kevin-deposition.php
 // EVIDENCE ITEM #94-C: The Deposition of Kevin Mitchell
 // Context: The Mall Santa photographer breaks the case wide open.

@@ -1,4 +1,15 @@
 <?php
+/**
+ * @file structure.php
+ * @brief Organizational Structure - The Corporate Hierarchy (The "Iceberg" Model)
+ * 
+ * ARCHITECTURE & MAINTENANCE NOTES:
+ * - Domain: O'Connell Trust
+ * - Context: Visualizing how a $2B Trust hides behind a rock band.
+ * - Presentation: Uses specific `.waterline` CSS styling with dashed borders and monospace typography to convey the 'iceberg' visual metaphor.
+ * - Integration: Interacts with the global theme variables (`--bs-body-bg`) to maintain visual consistency across light and dark modes.
+ * - DO NOT modify the HTML structure, specific layout constraints, or the thematic CSS rules embedded within.
+ */
 // pages/oconnell-trust/structure.php
 // The Corporate Hierarchy (The "Iceberg" Model)
 // Context: Visualizing how a $2B Trust hides behind a rock band.

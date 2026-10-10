@@ -1,10 +1,26 @@
 <?php
-// includes/components/headers/about/header-about.php
-// Navigation for the /about/* directory (Mission Profile)
+/**
+ * RaggieSoft Hub - About/Mission Profile Header
+ * 
+ * ARCHITECTURAL OVERVIEW:
+ * This component provides top-level horizontal navigation for the "About" (Mission Profile) 
+ * directory. It utilizes Web Awesome components (`<wa-button>`, `<wa-dropdown>`, `<wa-menu>`)
+ * for rendering interactive navigation elements styled for the Hub.
+ * 
+ * LOGIC & CONSTRAINTS:
+ * - Active state logic (`$isGovernance`, `$isProfiles`) determines which dropdown 
+ *   menu appears "active". It relies on `str_contains` checks against `$_SERVER['REQUEST_URI']`.
+ * - Do NOT alter the DOM structure of the Web Awesome components (e.g., `slot="trigger"`, 
+ *   `placement="bottom-start"`) as this will break the dropdown behavior.
+ * - Classes like `.mobile-nav-menu` tie into global CSS for responsive design.
+ * 
+ * File Info: includes/components/headers/about/header-about.php
+ * Navigation for the /about/* directory (Mission Profile)
+ */
 
 $uri = $_SERVER['REQUEST_URI'] ?? '/';
 
-// Determine active section
+// Determine active section for dropdown highlighting
 $isGovernance = (str_contains($uri, '/license') || str_contains($uri, '/privacy') || str_contains($uri, '/terms') || str_contains($uri, '/ai-disclaimer'));
 $isProfiles   = (!$isGovernance && $uri !== '/about'); // If not governance and not root about, assume it's a profile
 ?>
@@ -19,6 +35,11 @@ $isProfiles   = (!$isGovernance && $uri !== '/about'); // If not governance and 
 
   
   <wa-dropdown placement="bottom-start">
+    <!-- 
+      Dropdown Trigger:
+      Uses the `$isGovernance` boolean to dynamically inject the 'active' class.
+      The `slot="trigger"` attribute is required by Web Awesome to bind the button to the dropdown.
+    -->
     <wa-button class="nav-link  <?php echo $isGovernance ? 'active' : ''; ?>" slot="trigger" appearance="plain">
         <i class="fa-duotone fa-scale-balanced me-2"></i>Governance
      <i slot="end" class="fa-solid fa-circle-caret-down ms-2 opacity-50" aria-hidden="true"></i>

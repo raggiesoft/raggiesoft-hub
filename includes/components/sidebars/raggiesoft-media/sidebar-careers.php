@@ -1,4 +1,23 @@
 <?php
+/**
+ * ============================================================================
+ * ARCHITECTURE & DESIGN: Careers Sidebar (Scam Warning)
+ * ============================================================================
+ * ROLE: A critical security UI component serving as a secondary sidebar on 
+ *       the Careers/Employment pages of RaggieSoft Media. It warns users about
+ *       ongoing employment scams and guides victims to official reporting channels.
+ * 
+ * CORE FEATURES:
+ * - Frutiger Aero Danger HUD: Custom CSS overrides standard danger colors with 
+ *   a glassy, high-urgency aesthetic (`.aero-step-box`, `.btn-glass-danger-sidebar`).
+ * - Narrative Validation: Breaks down the "Anatomy of the Scam" step-by-step
+ *   to help victims recognize their situation without shame.
+ * 
+ * MAINTENANCE: Keep the external links to IC3 and the FTC updated. Do NOT 
+ *              remove the step breakdown; it is designed specifically for 
+ *              vulnerable users in a panic state.
+ * ============================================================================
+ */
 // includes/components/sidebars/raggiesoft-media/sidebar-careers.php
 // The Anatomy of a Scam - Validates the victim's experience and provides exit links.
 // Updated: Frutiger Aero Danger HUD
@@ -40,6 +59,7 @@
     }
 </style>
 
+<!-- [LAYOUT] Scam Breakdown Card: Red-tinted HUD explaining the scam vector -->
 <div class="card bg-hud-red border-0 shadow-sm mb-4">
     <div class="card-body p-3 p-xl-4">
         <h5 class="pb-2 mb-3 border-bottom border-danger border- text-danger fw-bold text-uppercase h6" style="filter: drop-shadow(0 1px 2px rgba(220,53,69,0.3));">
@@ -75,6 +95,7 @@
     </div>
 </div>
 
+<!-- [LAYOUT] Reporting Hub Card: Contains primary external action links for victims -->
 <div class="card bg-hud-base border-0 shadow-sm">
     <div class="card-body p-3 p-xl-4">
         <h5 class="pb-2 mb-3 border-bottom border-secondary-subtle text-uppercase h6 fw-bold text-body-emphasis">

@@ -3,6 +3,24 @@
 // The StoreTrainer Legacy Archive
 // Theme: Amber/Warning (Legacy Open Source)
 
+/**
+ * ARCHITECTURE & MAINTENANCE NOTES:
+ * 
+ * Component: StoreTrainer Legacy Archive
+ * Purpose: A historical preservation and documentation page for the Visual Basic 6.0 StoreTrainer application.
+ * 
+ * Strategy & Implementation:
+ * - Explicitly deviates from the standard RaggieSoft color palette, using Amber/Warning styling (`text-warning`, `border-warning`) 
+ *   to visually communicate that this is a legacy/archived project.
+ * - Features inline CSS overriding the `.legacy-hero` to inject a sepia/amber-tinted background image.
+ * - Includes code snippets formatted within `.code-block` customized `<pre>` tags.
+ * 
+ * Maintenance Recommendations:
+ * - The `$cdnBaseUrl` is utilized inside the `<style>` block via PHP echoing. Ensure the PHP parser processes the `<style>` block correctly.
+ * - Download links should point to static assets that will not change, as this legacy software is no longer updated.
+ */
+
+// Route configuration title
 $pageTitle = "StoreTrainer Archive | RaggieSoft Media";
 ?>
 
@@ -21,7 +39,8 @@ $pageTitle = "StoreTrainer Archive | RaggieSoft Media";
         content: '';
         position: absolute;
         top: -5%; left: -5%; right: -5%; bottom: -5%; 
-        background-image: url($cdnBaseUrl . '/raggiesoft-media/images/hero/dark-aero.jpg'); /* Defaults to dark aero for legacy feel */
+        /* Dynamically resolves the CDN path to ensure the background image loads across environments */
+        background-image: url('<?php echo $cdnBaseUrl; ?>/raggiesoft-media/images/hero/dark-aero.jpg'); /* Defaults to dark aero for legacy feel */
         background-size: cover;
         background-position: center;
         z-index: -2;
@@ -55,6 +74,7 @@ $pageTitle = "StoreTrainer Archive | RaggieSoft Media";
     }
 </style>
 
+<!-- Amber Legacy Hero: Visually distinguishes the page as a historical archive rather than active infrastructure -->
 <div class="legacy-hero py-5 mb-5 text-light">
     <div class="container py-4">
         <div class="row align-items-center">

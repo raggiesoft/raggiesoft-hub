@@ -1,4 +1,32 @@
 <?php
+/**
+ * ============================================================================
+ * ARCHITECTURE & MAINTENANCE NOTES
+ * ============================================================================
+ * File: pages/engine-room/artists/crimson-node/overview.php
+ * 
+ * 1. Lore Context:
+ *    - This is the main landing page for "Crimson Node", a fictional band in the
+ *      RaggieSoft universe.
+ *    - The lore involves a "Rotating Vocalist" setup (Emily, Jessica, Rachel, Shiloh)
+ *      and is managed by Matt Miller ("The Manager") from a wheelchair-accessible
+ *      Vanguard LogicPad rig in the "Albemarle County Garage Sessions".
+ * 
+ * 2. Component Architecture:
+ *    - Uses Bootstrap 5 utility classes and components extensively.
+ *    - Uses specific custom utility classes (e.g., bg-hud-red, bg-hud-blue, border-glow).
+ *    - FontAwesome (fa-duotone, fa-solid) is used for icons.
+ *    - Includes dynamic DSP store buttons component (`/includes/components/store-button.php`).
+ * 
+ * 3. Data Integration:
+ *    - Dynamically fetches album data from a CDN-hosted `albums.json` file.
+ *    - Flattens the structured JSON (organized by eras) for use in the discography carousel.
+ * 
+ * 4. Maintenance Rule:
+ *    - DO NOT modify the HTML structure, CSS classes (especially Web Awesome or custom HUD classes),
+ *      or the DOM hierarchy, as this will break the visual styling and layout.
+ * ============================================================================
+ */
 // pages/engine-room/artists/crimson-node/overview.php
 // The Band's "Home" Page
 

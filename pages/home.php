@@ -1,4 +1,32 @@
 <?php
+/**
+ * RaggieSoft.com - The Global Y-Junction (Root Domain)
+ *
+ * ARCHITECTURE & CONTEXT:
+ * This is the central hub for the entire RaggieSoft network. It acts as a "Y-Junction",
+ * forcing the user to choose between the professional/technical side (The Architect) 
+ * and the creative/narrative side (Creative Works).
+ * 
+ * It includes a global directory represented as a horizontal scroll carousel, linking 
+ * to major network spokes (Engine Room Records, The Stardust Engine, Crimson Node, 
+ * Ocean View Archives, The DevOps Family).
+ *
+ * UI/UX ARCHITECTURE:
+ * - Employs a custom `.split-hero-container` utilizing Flexbox to create two dynamic,
+ *   hover-expanding panes on desktop, which stack vertically on mobile.
+ * - Uses responsive `.scroll-card` elements in a `.horizontal-scroll-wrapper` to 
+ *   create a Netflix-style horizontal sliding carousel for network spokes.
+ * - Respects `prefers-reduced-motion` for accessibility, disabling the split-pane 
+ *   animations for sensitive users.
+ * - Includes a Schema.org JSON-LD payload for SEO organization and website linking.
+ *
+ * MAINTENANCE NOTES:
+ * - When adding a new "Spoke" to the network, append a new `.scroll-card` block 
+ *   in the `#network-spokes` section using the `card.php` component include.
+ * - Ensure `$cdnBaseUrl` is properly configured to serve background images and avatars.
+ * - Do NOT alter the AI transparency notice without legal/policy review.
+ */
+
 // pages/home.php
 // The RaggieSoft Global Y-Junction (Root Domain)
 

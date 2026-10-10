@@ -1,9 +1,25 @@
 <?php
+/**
+ * ============================================================================
+ * ARCHITECTURE & DESIGN: Professional Portfolio Sidebar
+ * ============================================================================
+ * ROLE: The primary navigation spine for the "Michael P. Ragsdale" portfolio 
+ *       hub. Connects formal resume data with the broader narrative properties.
+ * 
+ * INTEGRATION: Relies on `$cdnBaseUrl` to load the primary headshot. Used 
+ *              exclusively within the `/about/michael-ragsdale` route tree.
+ * 
+ * MAINTENANCE: The layout uses standard Bootstrap navigation pills (`.nav-pills`).
+ *              Ensure the "Engine Room" section remains intact as it serves as
+ *              the bridge between professional and creative identities.
+ * ============================================================================
+ */
 // includes/components/sidebars/portfolio/sidebar-portfolio.php
 // The main navigation sidebar for the professional portfolio.
 $root = '/about/michael-ragsdale';
 ?>
 
+<!-- [LAYOUT] Professional Identity Block: Contains headshot and primary title -->
 <div class="text-center mb-4 pt-3">
     <a href="<?php echo $root; ?>">
         <img src="<?php echo $cdnBaseUrl; ?>/portfolio/images/logos/logo-michael.png" 
@@ -17,6 +33,7 @@ $root = '/about/michael-ragsdale';
 
 <hr class="my-3">
 
+<!-- [UI COMPONENT] Primary Navigation: Standard bootstrap pills for portfolio sections -->
 <nav class="nav flex-column nav-pills small gap-1">
     <a href="<?php echo $root; ?>" class="nav-link link-body-emphasis">
         <i slot="start" class="fa-duotone fa-house"></i> Home Lobby
@@ -47,6 +64,7 @@ $root = '/about/michael-ragsdale';
 
 <hr class="my-4">
 
+<!-- [UI COMPONENT] Creative Bridge: Links to the Engine Room narrative properties -->
 <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-2 mb-2 text-body-secondary text-uppercase" style="font-size: 0.75rem; letter-spacing: 1px;">
   <span>The Engine Room</span>
 </h6>

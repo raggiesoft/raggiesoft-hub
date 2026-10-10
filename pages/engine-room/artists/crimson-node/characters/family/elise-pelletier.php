@@ -1,3 +1,27 @@
+<?php
+/**
+ * ============================================================================
+ * ARCHITECTURE & MAINTENANCE NOTES
+ * ============================================================================
+ * File: pages/engine-room/artists/crimson-node/characters/family/elise-pelletier.php
+ * 
+ * 1. Lore Context:
+ *    - Elise Pelletier provides Guest Vocals for "Crimson Node".
+ *    - Key lore traits: "The Safe Variable" and "Honorary Flock" member.
+ *    - Earned the "Pelletier Clearance Protocol" by safely navigating Matt's boundaries
+ *      post-DTS ("Unhandled Exception") trauma, sharing the crucial first hug.
+ * 
+ * 2. Component Architecture:
+ *    - This file acts as an HTML partial rendered within a larger character context.
+ *    - Utilizes Bootstrap 5 grid classes (`row`, `col-lg-4`, `col-lg-8`).
+ *    - Employs utility classes for layout, typography, and styling (`display-4`, `opacity-75`, `shadow-sm`).
+ * 
+ * 3. Maintenance Rule:
+ *    - DO NOT modify the HTML DOM structure or the Bootstrap utility classes.
+ *    - Inline comments are avoided inside HTML content to prevent unintended text rendering.
+ * ============================================================================
+ */
+?>
 <div class="row">
     <div class="col-12 mb-4">
         <h1 class="display-4 fw-bold" style="font-family: 'Impact', sans-serif; letter-spacing: 2px;">

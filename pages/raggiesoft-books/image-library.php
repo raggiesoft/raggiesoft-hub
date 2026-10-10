@@ -1,4 +1,20 @@
 <?php
+/**
+ * RaggieSoft Architecture - Page Component
+ * 
+ * File: pages/raggiesoft-books/image-library.php
+ * Component: Narrative Image Library
+ * Type: Gallery / Media Viewer
+ * 
+ * Description:
+ * A hardcoded static gallery displaying prominent images from the Ocean View Archives.
+ * Uses Web Awesome components (wa-card, wa-dialog) to create a modal lightbox gallery.
+ *
+ * Maintenance Notes:
+ * - $images array holds all metadata (URL, Title, Description).
+ * - JavaScript at the bottom handles the previous/next logic and modal state.
+ * - Relies on Web Awesome's `show()` and `hide()` methods, with fallbacks for older DOM attributes.
+ */
 // pages/raggiesoft-books/image-library.php
 
 $images = [

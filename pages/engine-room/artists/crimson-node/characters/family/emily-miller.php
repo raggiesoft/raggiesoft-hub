@@ -1,3 +1,20 @@
+<?php
+/**
+ * Crimson Node - Emily Miller Profile
+ *
+ * This file renders the character biography for Emily Miller, Lead Vocals for Crimson Node.
+ * It details her band role, background, and narrative integration.
+ *
+ * Architecture Notes:
+ * - This file is a HTML fragment intended to be included within a parent layout template.
+ * - Uses Bootstrap 5 columns (`col-lg-4`, `col-lg-8`) for a sidebar/main-content split.
+ * - Quick stats are displayed in a styled card component.
+ *
+ * Maintainer Note: Since this is an include fragment, do not add `<html>` or `<body>` tags. 
+ * Maintain the existing grid structure for consistency with other family profiles.
+ */
+?>
+<!-- PROFILE FRAGMENT -->
 <div class="row">
     <div class="col-12 mb-4">
         <h1 class="display-4 fw-bold" style="font-family: 'Impact', sans-serif; letter-spacing: 2px;">

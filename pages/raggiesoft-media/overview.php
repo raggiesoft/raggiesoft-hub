@@ -1,4 +1,17 @@
 <?php
+/**
+ * ARCHITECTURE: overview.php
+ * 
+ * Context: RaggieSoft Media - Corporate Hub.
+ * Narrative/Purpose: The main landing page for the "RaggieSoft Media" B2B division. It outlines the 
+ * IP portfolio, licensing administration, and links to the Architect's portfolio, using a distinct 
+ * "Frutiger Aero" corporate aesthetic.
+ * 
+ * Mechanics:
+ * - Injects `application/ld+json` schema for SEO (Organization and CollectionPage).
+ * - Utilizes adaptive image sources (`theme-img-light` / `theme-img-dark`) to switch assets based on OS preference.
+ * - Implements `elara-secure-mail` data attributes for bot-resistant email link generation.
+ */
 // pages/raggiesoft-media/overview.php
 // The B2B Corporate Hub for RaggieSoft IP and Master Licensing
 // Updated: Frutiger Aero / Dark Aero Image Backgrounds
@@ -6,6 +19,7 @@
 $pageTitle = "RaggieSoft Media | IP & Asset Management";
 ?>
 
+<!-- START: SEO Structured Data -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -36,6 +50,7 @@ $pageTitle = "RaggieSoft Media | IP & Asset Management";
 }
 </script>
 
+<!-- START: Corporate Hero Section -->
 <div class="aero-hero py-5">
     <div class="container py-4 aero-content text-center">
         <i class="fa-duotone fa-globe-pointer fa-4x text-primary mb-4" aria-hidden="true" style="filter: drop-shadow(0 0 15px rgba(0,130,230,0.4));"></i>
@@ -64,6 +79,7 @@ $pageTitle = "RaggieSoft Media | IP & Asset Management";
 
 <div class="container py-5">
 
+    <!-- START: IP Portfolio Grid -->
     <div class="row mb-5">
         <div class="col-12">
             <h2 class="h4 text-uppercase fw-bold border-bottom border-secondary-subtle pb-2 mb-4 text-secondary">IP Portfolio & Divisions</h2>
@@ -133,6 +149,7 @@ $pageTitle = "RaggieSoft Media | IP & Asset Management";
         </div>
     </div>
 
+    <!-- START: Architect Hiring CTA -->
     <div class="row mb-5">
         <div class="col-12">
             <div class="card bg-hud-blue border-0 shadow-sm hover-lift">
@@ -152,6 +169,7 @@ $pageTitle = "RaggieSoft Media | IP & Asset Management";
         </div>
     </div>
 
+    <!-- START: Corporate Directory Footer -->
     <div class="row">
         <div class="col-12">
             <div class="card bg-hud-base border-0 p-4 p-md-5 shadow-sm">

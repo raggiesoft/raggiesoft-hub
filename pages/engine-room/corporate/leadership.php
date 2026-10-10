@@ -1,5 +1,22 @@
 <?php
-// pages/engine-room/corporate/leadership.php
+/**
+ * RaggieSoft Architecture - Page Component
+ * 
+ * File: pages/engine-room/corporate/leadership.php
+ * Component: Executive Leadership Profiles
+ * Type: Character Lore / Corporate Directory
+ * 
+ * Description:
+ * Details the "Miller Unit" (Jessica and Justin Miller) and their operational
+ * mandate ("Zero Separation"). Uses a dual-core visual theme to represent
+ * their intertwined roles (Front End vs. Back End).
+ *
+ * Maintenance Notes:
+ * - Custom CSS handles card hover states and specific color badges.
+ * - Uses Bootstrap grid to stack the twins side-by-side on desktop, 
+ *   vertically on mobile.
+ * - Images are fetched via $cdnBaseUrl.
+ */
 // The Executive Office.
 // "The Twin Protocol" - Zero Separation.
 

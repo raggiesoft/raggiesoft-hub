@@ -1,4 +1,20 @@
 <?php
+/**
+ * Stardust Blacksburg - Competitor Analysis
+ *
+ * This file presents the "Market Threat Analysis" document from the perspective
+ * of a mega-complex competitor (Apex Student Living). It details strategic pivots
+ * and internal tactics used to counter Stardust Blacksburg.
+ *
+ * Architecture Notes:
+ * - Standard Bootstrap 5 layout using cards, alerts, and grid classes.
+ * - The document uses a faux-confidential styling (alert-dark, font-monospace) 
+ *   to simulate an internal corporate memo.
+ *
+ * Maintainer Note: Content changes here should preserve the satirical/contrasting 
+ * tone of a high-end corporate competitor.
+ */
+
 // pages/engine-room/corporate/stardust-blacksburg/competitor-analysis.php
 // Source: Apex Student Living (The "Mega-Complex" Competitor)
 // Subject: Market Threat Analysis - The "Ironwood" Anomaly
@@ -8,6 +24,7 @@ $pageTitle = "Competitor Intel: The Anti-Stardust Strategy";
 
 <div class="container py-5">
     
+    <!-- CONFIDENTIAL MEMO HEADER -->
     <div class="row justify-content-center mb-5">
         <div class="col-lg-10">
             <div class="alert alert-dark border-0 shadow-sm p-4 font-monospace small">

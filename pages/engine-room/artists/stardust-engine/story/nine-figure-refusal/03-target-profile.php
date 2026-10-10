@@ -1,4 +1,26 @@
 <?php
+/**
+ * ============================================================================
+ * ARCHITECTURAL MAINTENANCE BLOCK
+ * ============================================================================
+ * File: 03-target-profile.php
+ * Component Type: Story / Lore HTML View (PHP Partial)
+ * 
+ * DESCRIPTION:
+ * Displays the "Target Profile", representing Omni-Global's internal assessment 
+ * of Engine Room Records prior to the acquisition attempt.
+ * 
+ * STRUCTURAL NOTES & CONSTRAINTS:
+ * - OMNI-GLOBAL THEME: This page breaks the standard Engine Room styling to simulate 
+ *   an enemy document. The `.omni-doc` wrapper and associated styles enforce a 
+ *   "Sterile, Corporate" look (Helvetica, light gray backgrounds, blue borders).
+ * - WATERMARK: The `.watermark` class uses fixed positioning and `pointer-events: none` 
+ *   to overlay a "CONFIDENTIAL" stamp. Maintain z-index layering so content remains clickable.
+ * - DARK MODE SUPPORT: Extensive `[data-bs-theme="dark"]` overrides ensure the 
+ *   "sterile corporate" look translates to dark mode without losing contrast. 
+ *   Do NOT strip these overrides.
+ * ============================================================================
+ */
 // pages/engine-room/artists/stardust-engine/story/nine-figure-refusal/target-profile.php
 // The Enemy's Playbook.
 // UPDATED: Clarified the "Algorithmic Estimate" logic (How Frost "knows" the financials).

@@ -1,3 +1,27 @@
+<?php
+/**
+ * ============================================================================
+ * ARCHITECTURE & MAINTENANCE NOTES
+ * ============================================================================
+ * File: pages/engine-room/artists/crimson-node/characters/family/jessica-brooks.php
+ * 
+ * 1. Lore Context:
+ *    - Jessica Brooks is the bassist and analog synth player for "Crimson Node".
+ *    - Key lore traits: "Agent of Chaos", "Lead SysAdmin" of the Kids House.
+ *    - She aggressively prioritizes Matt's network traffic (QoS rules) on her 
+ *      POSIX-compliant gateway and notoriously enjoys unapologetic toilet humor.
+ * 
+ * 2. Component Architecture:
+ *    - This file acts as an HTML partial rendered within a larger character context.
+ *    - Utilizes Bootstrap 5 grid classes (`row`, `col-lg-4`, `col-lg-8`).
+ *    - Employs utility classes for layout, typography, and styling (`display-4`, `opacity-75`, `shadow-sm`).
+ * 
+ * 3. Maintenance Rule:
+ *    - DO NOT modify the HTML DOM structure or the Bootstrap utility classes.
+ *    - Inline comments are avoided inside HTML content to prevent unintended text rendering.
+ * ============================================================================
+ */
+?>
 <div class="row">
     <div class="col-12 mb-4">
         <h1 class="display-4 fw-bold" style="font-family: 'Impact', sans-serif; letter-spacing: 2px;">

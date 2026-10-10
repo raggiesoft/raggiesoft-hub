@@ -1,4 +1,20 @@
 <?php
+/**
+ * ARCHITECTURE & LORE SYSTEM
+ * -------------------------------------------------------------------------
+ * File: overview.php
+ * Component Type: Dual-Purpose Hub (Corporate Lore & Real-World Disclosure)
+ * Purpose: Presents the fictional timeline of Engine Room Records alongside mandatory real-world AI disclaimers.
+ * 
+ * DESIGN CONSTRAINTS:
+ * - Employs a complex vertical timeline using the `_timeline-node.php` component.
+ * - Heavy usage of narrative lore data structures (years, specific corporate conflicts).
+ * - Distinguishes between "Real-World Infrastructure" (using Web Awesome `<wa-card>`) and "Narrative Timeline" (Bootstrap layout).
+ * 
+ * MAINTENANCE NOTES:
+ * - When adding new timeline nodes, ensure `$props` array exactly matches the keys expected by `_timeline-node.php`.
+ * - The `$base_path` variable depends on `$cdnBaseUrl` being globally defined.
+ */
 // pages/engine-room/history/overview.php
 // Dual-purpose page: Real-world portfolio disclosure + Fictional Universe Timeline.
 

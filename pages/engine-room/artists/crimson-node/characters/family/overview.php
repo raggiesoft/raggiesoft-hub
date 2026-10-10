@@ -1,10 +1,28 @@
 <?php
+/**
+ * Crimson Node - The Phalanx Directory
+ *
+ * This file serves as the main directory overview for "The Phalanx" (the core family unit).
+ * It features a grid of character cards highlighting their roles in the band and the household.
+ *
+ * Architecture Notes:
+ * - Employs a Bootstrap 5 grid layout (`row g-4`).
+ * - Uses distinct, color-coded top borders (e.g., `#dc3545` for danger, `#0d6efd` for primary)
+ *   to visually separate each character's card.
+ * - Links to individual character profiles located in the same directory.
+ *
+ * Maintainer Note: When adding new family members, ensure the card style (border color, 
+ * button color) aligns with their established narrative theme. The 'Elise & Elodie' card 
+ * uses a custom double-width layout (`col-lg-8`) that should be preserved.
+ */
+
 // pages/engine-room/artists/crimson-node/characters/family/overview.php
 // The Phalanx Directory
 
 $pageTitle = "The Phalanx - Crimson Node";
 ?>
 
+<!-- PHALANX DIRECTORY WRAPPER -->
 <div class="container py-5">
     <div class="row mb-5">
         <div class="col-12 text-center">

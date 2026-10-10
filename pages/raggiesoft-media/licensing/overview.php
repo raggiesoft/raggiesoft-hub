@@ -1,4 +1,29 @@
 <?php
+/**
+ * RaggieSoft Master Licensing Portal
+ *
+ * ARCHITECTURE & CONTEXT:
+ * This page serves as the master gateway outlining the hybrid licensing model 
+ * for RaggieSoft Media. It explains the dual-license approach:
+ * 1. MIT License for code, scripts (Elara CMS), and web architecture.
+ * 2. CC BY-SA 4.0 for narrative IP, lore (The Stardust Engine, Knox, Aethel), and worldbuilding.
+ * 
+ * It also acts as a funnel to the Commercial Licensing portal for B2B synchronization requests.
+ *
+ * UI/UX ARCHITECTURE:
+ * - Employs a Frutiger Aero / Dark Aero Glass design language.
+ * - Uses Web Awesome (<wa-card>, <wa-button>, <wa-details>) for semantic, interactive components.
+ * - Features custom CSS for glassmorphism effects (`btn-glass-info`, `aero-modal-content`) 
+ *   and keyboard accessibility (WCAG focus outlines).
+ * - Implements a responsive grid layout mapping the licensing structures clearly.
+ *
+ * MAINTENANCE NOTES:
+ * - Update the copyright year logic `date("Y")` if licensing terms change, but it auto-updates currently.
+ * - Ensure links to external licenses (e.g., CC BY-SA deed) remain active.
+ * - Do NOT alter the DOM structure of the Web Awesome components as they are integral 
+ *   to the design system.
+ */
+
 // pages/raggiesoft-media/licensing/overview.php
 // Master gateway for MIT, CC BY-SA 4.0, and Commercial clearances.
 // Updated: Frutiger Aero / Dark Aero Glass Architecture

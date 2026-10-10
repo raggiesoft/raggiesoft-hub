@@ -1,4 +1,16 @@
 <?php
+/**
+ * ============================================================================
+ * ARCHITECTURE & LORE: SARAH ARC DIRECTORY:
+ * This file is the primary Table of Contents for the "Sarah" narrative arc (Fall 2007).
+ * It structurally categorizes the chapters and acts into a linear progression.
+ * 
+ * Future Maintenance:
+ * - The layout relies heavily on Bootstrap 5 list-groups and cards.
+ * - The narrative stepper component at the bottom (`narrative-stepper.php`) must 
+ *   receive a valid `$nav` array to enable pagination between arcs.
+ * ============================================================================
+ */
 // pages/raggiesoft-books/sarah/overview.php
 // The Index Page for the "Sarah" Book/Arc.
 // Acts as the landing page/table of contents for the Fall 2007 timeline.
@@ -25,6 +37,7 @@ $pageTitle = "Sarah: The Architecture of a Safe Space";
     <div class="row justify-content-center">
         <div class="col-lg-10">
             
+            <!-- ARCHITECTURE: Thematic grouping of narrative Acts into Chapters -->
             <div class="card mb-4 border-0 shadow-sm">
                 <div class="card-header bg-body-tertiary border-bottom border-secondary py-3">
                     <h5 class="mb-0 text-body-emphasis fw-bold text-uppercase"><i class="fa-solid fa-shield-halved me-2 text-secondary"></i>Chapter 1: The Breach</h5>
@@ -152,6 +165,7 @@ $pageTitle = "Sarah: The Architecture of a Safe Space";
 
     <?php
         // NARRATIVE STEPPER
+        // ARCHITECTURE: Define pagination states for the narrative stepper component
         $nav = [
             'prev' => ['url' => '/raggiesoft-books', 'label' => 'Library'],
             'overview' => ['url' => '/raggiesoft-books/sarah', 'label' => 'Sarah Hub'],

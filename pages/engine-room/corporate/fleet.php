@@ -1,5 +1,22 @@
 <?php
-// pages/engine-room/corporate/fleet.php
+/**
+ * RaggieSoft Architecture - Page Component
+ * 
+ * File: pages/engine-room/corporate/fleet.php
+ * Component: Fleet Command // T-Logistics Terminal
+ * Type: Interactive Lore / Dashboard
+ * 
+ * Description:
+ * Renders a mock "BIOS/TUI" (Text User Interface) terminal displaying the
+ * logistics status of the fictional "Ironhead" fleet. Managed narratively
+ * by Justin Miller. Highlights protocols for the character Ryan O'Connell.
+ *
+ * Maintenance Notes:
+ * - Uses custom CSS classes (.fleet-terminal, .tui-window) to force a dark 
+ *   terminal theme regardless of the user's OS dark/light mode settings.
+ * - Dynamic system time injected via PHP date().
+ * - Static HTML layout; no actual database connections.
+ */
 // The Logistics Monitor.
 // Managed by: Justin Miller.
 // Context: The movement of the "Ironhead" assets.

@@ -1,4 +1,22 @@
 <?php
+/**
+ * RaggieSoft Architecture - Page Component / Controller
+ * 
+ * File: pages/raggiesoft-books/character-profile.php
+ * Component: Character Directory & Profile Viewer
+ * Type: Dynamic Controller / Renderer
+ * 
+ * Description:
+ * Dual-purpose component. If no specific character is requested ($config['is_directory']),
+ * it lists all public characters from `characters.json`. If a character is requested,
+ * it parses their Markdown biography, including custom shortcodes for credentials,
+ * and renders a profile page.
+ *
+ * Maintenance Notes:
+ * - Custom regex parser converts "* [Title] | Desc | color" into Web Awesome <wa-button> modals.
+ * - The `characters.json` route file defines the mappings and metadata.
+ * - Uses Web Awesome Dialog (`wa-dialog`) for credential popups.
+ */
 require_once ROOT_PATH . '/includes/classes/stardust-parsedown.php';
 $Parsedown = new StardustParsedown();
 

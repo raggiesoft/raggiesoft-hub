@@ -1,4 +1,27 @@
 <?php
+/**
+ * ============================================================================
+ * ARCHITECTURE & MAINTENANCE NOTES
+ * ============================================================================
+ * File: pages/engine-room/artists/stardust-engine/about.php
+ * 
+ * 1. Lore Context:
+ *    - This is the "Mission Profile" page breaking the fourth wall to explain the 
+ *      project's "Dual-Layer" reality (In-Universe Lore vs. Real-World AI Generation).
+ *    - Lists the actual creative "Crew Manifest" (Human Director, Gemini, Suno, DALL-E).
+ * 
+ * 2. Component Architecture:
+ *    - Defines `$pageTheme = "ad-astra"` and merges `$customPageAssets` to trigger 
+ *      global cosmic styling.
+ *    - UI relies heavily on `starfield-container`, `glass-card`, and `text-glow-primary` 
+ *      classes for the futuristic, glassmorphism aesthetic.
+ *    - Utilizes standard Bootstrap 5 grids and FontAwesome icons (`fa-duotone`).
+ * 
+ * 3. Maintenance Rule:
+ *    - DO NOT modify the `$pageTheme` assignment or the custom cosmic UI classes, 
+ *      as they control the core visual identity of this meta-page.
+ * ============================================================================
+ */
 // pages/about.php
 // "Mission Profile" - Explaining the Meta & The Lore
 

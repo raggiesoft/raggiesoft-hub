@@ -3,7 +3,29 @@
 // The global B2B navigation for the RaggieSoft Media holding entity.
 // Updated: Web Awesome Components
 
+/**
+ * ARCHITECTURE & MAINTENANCE NOTES:
+ * 
+ * Component: Corporate Header Navigation
+ * Purpose: Provides global B2B navigation for the RaggieSoft Media holding entity.
+ * 
+ * Strategy & Implementation:
+ * - Employs a front-controller style URL parsing (`$request_uri`) to determine active states.
+ * - Variables ($isHub, $isLicensing, etc.) are evaluated to strictly boolean values and used 
+ *   within Web Awesome (<wa-button>, <wa-dropdown>) components.
+ * - This component integrates custom attributes (variant, appearance, slot) native to the 
+ *   Web Awesome library, establishing a unified visual language and behavioral consistency.
+ * 
+ * Maintenance Recommendations:
+ * - When adding new routes or sections to the corporate portal, define a new strict 
+ *   string-checking boolean variable at the top of the file to manage active states.
+ * - Avoid embedding complex logic directly within the HTML/View layer; maintain the pattern 
+ *   of preparing data variables prior to HTML output.
+ */
+
+// Extract current URI to drive declarative active state rendering
 $request_uri = $_SERVER['REQUEST_URI'] ?? '/raggiesoft-media';
+// Determine if we are strictly at the Corporate Hub root
 $isHub = ($request_uri === '/raggiesoft-media');
 $isLicensing = (str_starts_with($request_uri, '/raggiesoft-media/licensing'));
 $isOpenSource = (str_starts_with($request_uri, '/raggiesoft-media/projects'));
@@ -24,6 +46,7 @@ $isPortfolio = (str_starts_with($request_uri, '/about/michael-ragsdale'));
     <i slot="start" class="fa-duotone fa-file-signature"></i> Master Licensing
   </wa-button>
 
+  <!-- Open Source Projects Dropdown: Groups sub-projects under a single accessible menu -->
   <wa-dropdown placement="bottom-end">
     <wa-button slot="trigger" with-caret pill
       variant="<?php echo $isOpenSource ? 'neutral' : 'neutral'; ?>" 

@@ -1,4 +1,20 @@
 <?php
+/**
+ * Fractured Prisms - Carnaby Street Album Page
+ *
+ * This file displays the discography entry for the 1983 debut album "Carnaby Street".
+ * It details the lore, origins, and emotional weight of the album in the band's narrative.
+ *
+ * Architecture Notes:
+ * - Uses the bespoke "Fractured Prisms" dark theme.
+ * - Employs custom CSS components like `polaroid-prism` for visual storytelling.
+ * - Pulls the album tracklist dynamically using `_tracklist-downloader.php`.
+ *
+ * Maintainer Note: Changes to the historical narrative must be carefully verified against 
+ * the master lore document (The Hollow Square). The polaroid styling relies on precise CSS 
+ * rotations and filters; avoid altering without testing.
+ */
+
 // pages/engine-room/artists/fractured-prisms/discography/1983-carnaby-street.php
 // Page data
 $pageTitle = "Carnaby Street (1983) - Fractured Prisms";
@@ -6,6 +22,7 @@ $album_path_web = '/engine-room-records/artists/fractured-prisms/1983-carnaby-st
 
 ?>
 
+<!-- ALBUM OVERVIEW WRAPPER -->
 <div class="container py-5 bg-prism-dark">
     
     <div class="row align-items-center mb-5">

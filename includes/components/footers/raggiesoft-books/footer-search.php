@@ -1,4 +1,33 @@
 <?php
+/**
+ * ARCHITECTURAL DOCBLOCK
+ * 
+ * File: raggiesoft-hub/includes/components/footers/raggiesoft-books/footer-search.php
+ * Path: /includes/components/footers/raggiesoft-books/footer-search.php
+ * 
+ * CORE RESPONSIBILITY:
+ * Reusable UI Component: Ocean View Archives Footer (Search context variant).
+ * Renders the dedicated footer for the literary preservation imprint.
+ * 
+ * LORE CONTEXT:
+ * - Establishes "Ocean View Archives" as the publishing imprint of RaggieSoft Media.
+ * - Disclaims that it is not a traditional publishing house.
+ * 
+ * UI/UX & STYLING ARCHITECTURE:
+ * - Uses a custom color palette (`#0F4C5C` background, `#E3B27C` highlights) distinct from
+ *   the main RaggieSoft corporate theme.
+ * - Relies on Bootstrap 5 utility classes for layout, supplemented by inline styles.
+ * - Defines a custom `<style>` block for `.hover-white` link interactions.
+ * 
+ * DEPENDENCIES & INCLUSIONS:
+ * - None natively required within this partial. Assumes Bootstrap and FontAwesome are
+ *   loaded by the parent wrapper.
+ * 
+ * MAINTENANCE NOTES:
+ * - This file is currently identical to `footer-books.php`. If they diverge based on
+ *   search-specific logic (e.g., adding a search bar or index link to the footer), 
+ *   ensure changes are scoped correctly to this file.
+ */
 // includes/components/footers/raggiesoft-books/footer-books.php
 // The dedicated footer for Ocean View Archives.
 ?>

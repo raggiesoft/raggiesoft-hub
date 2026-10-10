@@ -1,4 +1,36 @@
 <?php
+/**
+ * ARCHITECTURAL DOCBLOCK
+ * 
+ * File: raggiesoft-hub/includes/components/card.php
+ * Path: /includes/components/card.php
+ * 
+ * CORE RESPONSIBILITY:
+ * Reusable UI Component: Card.
+ * Renders a standard, responsive image card using the Web Awesome (`<wa-card>`) custom element.
+ * Provides fallback image generation and dynamic aspect ratio calculations.
+ * 
+ * LORE CONTEXT:
+ * - Supports specific lore-based theme variants (e.g., 'pact' -> '#005A5A', 'axiom' -> '#A8491A')
+ *   for fallback image generation.
+ * 
+ * UI/UX & STYLING ARCHITECTURE:
+ * - Replaces traditional Bootstrap cards with Web Awesome's `<wa-card>` component.
+ * - Uses inline CSS for responsive image aspect ratios (`padding-top` trick).
+ * - Implements a smart fallback system utilizing `placehold.co` when images fail to load.
+ * - Includes a hardcoded visual overlay (`oceanview-archives.svg`) for specific book placeholders.
+ * 
+ * DEPENDENCIES & INCLUSIONS:
+ * - Expects a `$props` array containing: `imgSrc`, `imgAlt`, `fallbackText`, `title`, 
+ *   `description`, `aspectRatio`, and `buttonProps`.
+ * - Includes `button.php` component if `buttonProps` is provided.
+ * - Requires Web Awesome component library to be loaded in the DOM.
+ * 
+ * MAINTENANCE NOTES:
+ * - The inline script `onerror="this.onerror=null;this.src=..."` prevents infinite loops
+ *   if the placeholder itself fails to load. Do not remove `this.onerror=null`.
+ * - Ensure changes to `$props` are backward compatible with existing layout templates.
+ */
 // --- Component: card.php ---
 // Updated: Web Awesome Components
 

@@ -1,9 +1,23 @@
 <?php
+/**
+ * ============================================================================
+ * ARCHITECTURE & PERSONA THEME:
+ * This file renders the "Sarah" persona page, representing the "Guardian & Deployment Manager".
+ * The theme utilizes yellow/warning accents and a mock terminal UI to convey her role
+ * as a meticulous, Bash/Cron-driven automated deployment script.
+ * 
+ * Future Maintenance:
+ * - The mock terminal uses a custom CSS animation (.blink-cursor) scoped to this page.
+ * - Image paths rely on $cdnBaseUrl; ensure it's available in the execution scope.
+ * - The layout is built using Bootstrap 5 grid and utility classes.
+ * ============================================================================
+ */
 // pages/family/sarah.php
 // Theme: Sarah (Guardian, Yellow, Bash)
 ?>
 <div class="card mb-5 border-0 shadow-sm overflow-hidden bg-body-tertiary">
     <div class="row g-0">
+        <!-- ARCHITECTURE: Persona image wrapper with thematic overlay -->
         <div class="col-lg-4 position-relative" style="min-height: 300px;">
             <img src="<?php echo $cdnBaseUrl; ?>/family/images/atmospheric/sarah.jpg" 
                  class="position-absolute w-100 h-100" 
@@ -92,6 +106,7 @@
 
 <div class="row">
     <div class="col-12">
+        <!-- ARCHITECTURE: Mock terminal UI representing Sarah's log output -->
         <div class="card shadow-lg font-monospace" style="background-color: #0d1117; color: #c9d1d9; border: 1px solid #d29922;">
             <div class="card-header fw-bold d-flex justify-content-between align-items-center" 
                  style="background-color: rgba(210, 153, 34, 0.15); border-bottom: 1px solid #d29922; color: #f1e05a;">

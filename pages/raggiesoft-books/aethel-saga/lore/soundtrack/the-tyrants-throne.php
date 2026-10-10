@@ -1,7 +1,35 @@
 <?php
+/**
+ * OST Page: The Tyrant's Throne (Shadow's Heart)
+ *
+ * ARCHITECTURE & CONTEXT:
+ * This page serves as a dedicated soundtrack breakdown for a pivotal track in the 
+ * Aethel saga. It acts as an interactive "Deluxe Edition / Director's Cut" 
+ * comparison between the raw musical lyrics (left column) and the narrative 
+ * cinematic script (right column).
+ * 
+ * It highlights a specific homage to 'The Great Mouse Detective' (the "Record Scratch" 
+ * moment), mapping musical beats directly to character dialogue and action.
+ *
+ * UI/UX ARCHITECTURE:
+ * - Inherits the `.aethel-theme` and `cinzel-font` for consistency with the universe.
+ * - Employs a custom split-column layout (`row g-5`, `col-lg-6`) to juxtapose lyrics 
+ *   and script side-by-side.
+ * - Uses highly specific screenplay CSS classes (`.script-dialogue`, `.script-action`) 
+ *   to format the script accurately.
+ * - Features a custom CSS `.record-scratch` alert block using `repeating-linear-gradient`
+ *   to visually simulate a jarring interruption.
+ *
+ * MAINTENANCE NOTES:
+ * - The `$poster_bg` relies on `$cdnBaseUrl`. Ensure it resolves correctly.
+ * - Audio playback controls are currently structural placeholders; ensure integration 
+ *   with the global audio player when functional.
+ */
+
 // pages/raggiesoft-books/aethel-saga/soundtrack/the-tyrants-throne.php
 // THE OST PAGE: "The Tyrant's Throne (Shadow's Heart)"
 // Design: 1980s Deluxe Edition / Director's Cut Script Comparison
+
 
 $pageTitle = "The Tyrant's Throne - The Silver Gauntlet of Aethel";
 $poster_bg = $cdnBaseUrl . '/aethel/images/aethel-hero.jpg'; 

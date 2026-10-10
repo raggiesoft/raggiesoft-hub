@@ -1,4 +1,15 @@
 <?php
+/**
+ * @file day-21.php
+ * @brief Log Entry: Day 21 - Atmospheric Re-entry. The "Hard Reset."
+ * 
+ * ARCHITECTURE & MAINTENANCE NOTES:
+ * - Domain: Engine Room Records -> Stardust Engine -> Ad Astra Voyage Story
+ * - Presentation: Heavily relies on Web Awesome (`<wa-card>`) components with inline custom properties (e.g., `--wa-panel-bg`).
+ * - Animation: Includes specific `blink-animation` tied to `prefers-reduced-motion` in global CSS for accessibility compliance.
+ * - Integration: HTML partials strategy. Ensure that any updates to the Web Awesome components adhere to the existing attributes and properties.
+ * - DO NOT modify the HTML structure, custom CSS logic, or Web Awesome configurations.
+ */
 // pages/engine-room/artists/stardust-engine/story/ad-astra/voyage/day-21.php
 // Log Entry: Day 21
 // Context: Atmospheric Re-entry. The "Hard Reset."

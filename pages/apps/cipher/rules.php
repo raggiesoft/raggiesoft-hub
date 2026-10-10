@@ -1,3 +1,16 @@
+<?php
+/**
+ * @file rules.php
+ * @brief Decryption Protocols & Standard Operating Procedures for Signal Analysis
+ * 
+ * ARCHITECTURE & MAINTENANCE NOTES:
+ * - Domain: Apps -> Cipher
+ * - Presentation: This file is purely a view partial containing structural HTML and Bootstrap 5 layout classes (e.g., `container`, `row`, `col-lg-8`).
+ * - Styling: Relies on FontAwesome (`fa-duotone`) and Bootstrap utilities (`bg-body-tertiary`, `shadow-sm`, `text-primary`).
+ * - Integration: Designed to be included dynamically within a parent layout. Does not contain explicit PHP processing logic.
+ * - DO NOT alter the structural classes, FontAwesome icons, or textual constraints, as they define the Cipher application ruleset.
+ */
+?>
 <div class="container py-5">
     <div class="row justify-content-center">
         <div class="col-lg-8">

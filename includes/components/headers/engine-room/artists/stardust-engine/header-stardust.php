@@ -3,6 +3,24 @@
 // Dedicated navigation for The Stardust Engine artist sub-site.
 // UPDATED: Corrected Dropdown Labels (O'Connells vs Wrights) to reflect that everyone is kin.
 // UPDATED: Added Official Storefront routing.
+
+/**
+ * ARCHITECTURE & MAINTENANCE NOTES:
+ * 
+ * Component: The Stardust Engine Artist Header
+ * Purpose: Dedicated global navigation for "The Stardust Engine" fictional band sub-site.
+ * 
+ * Strategy & Implementation:
+ * - Employs a complex Web Awesome `<wa-dropdown>` with client-side JavaScript routing (`onclick="navigateTo(...)"`) 
+ *   for the band members. Ensure `navigateTo` is available globally in the upstream layout.
+ * - Flex-based `mobile-nav-menu` maintains consistency with the parent Engine Room UI.
+ * - External link integration for the Official Storefront is hardcoded to the Shopify/commerce instance.
+ * 
+ * Maintenance Recommendations:
+ * - If band roster changes (in-universe lore updates), append new members to "The Kin" list maintaining the icon schema.
+ * - Standardize the routing approach: consider converting `onclick="navigateTo"` to standard `href="..."` with Web Awesome 
+ *   or ensure the JS footprint remains lightweight to avoid hydration delays.
+ */
 ?>
 <div class="d-flex flex-column flex-md-row align-items-stretch align-items-md-center gap-2 ms-auto py-3 py-md-0 w-100 mobile-nav-menu">
   
@@ -31,6 +49,7 @@
   
 
   
+  <!-- Band Roster Dropdown: Utilizes client-side routing for lore pages -->
   <wa-dropdown placement="bottom-start" hoist>
     <wa-button slot="trigger" appearance="plain">
         <i class="fa-duotone fa-users me-2"></i>The Band
@@ -61,6 +80,7 @@
   
 
   
+      <!-- External Storefront: Links directly to commerce platform, bypassing local router -->
       <wa-button appearance="plain" href="https://store.raggiesoft.com/pages/the-stardust-engine" class="text-info fw-bold">
         <i slot="start" class="fa-solid fa-bag-shopping me-2"></i>Official Store
       </wa-button>

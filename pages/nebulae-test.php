@@ -1,3 +1,17 @@
+<?php
+/**
+ * ARCHITECTURE: nebulae-test.php
+ * 
+ * Context: RaggieSoft Hub - Server Infrastructure.
+ * Narrative/Purpose: A temporary validation page used during the migration from a DigitalOcean Droplet 
+ * to the new "Nebulae Server" (Ubuntu 26.04). It confirms that DNS, Nginx, and PHP 8.5 are routing correctly.
+ * 
+ * Mechanics:
+ * - Pure HTML payload intended to be wrapped by the Elara Gateway 5.7 master layout.
+ * - Static content verifying system status flags (SSL, Sync, PHP version).
+ */
+?>
+<!-- START: Server Validation Container -->
 <div class="container py-5">
     <h1 class="display-5 fw-bold border-bottom pb-2 mb-4 text-success">
         🚀 Nebulae Server Confirmed!
@@ -10,6 +24,7 @@
             and served it from the new Ubuntu 26.04 architecture.
         </p>
         
+        <!-- START: Infrastructure Status Report -->
         <div class="alert alert-info border-0 shadow-sm mt-4">
             <h4 class="alert-heading fw-bold">System Status:</h4>
             <ul class="mb-0 mt-2">

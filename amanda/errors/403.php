@@ -1,4 +1,16 @@
 <?php
+/**
+ * ARCHITECTURE: 403.php
+ * 
+ * Context: Amanda/Stardust Engine - Error Handling.
+ * Narrative/Purpose: A themed 403 Forbidden page portraying an "Access Denied" event in the Knox universe. 
+ * The user is treated as having violated an "Axiom Security Protocol", blending technical error handling 
+ * with immersive storytelling.
+ * 
+ * Mechanics:
+ * - Functions similarly to 404.php, detecting standalone vs routed invocation to bootstrap the UI.
+ * - Uses specific warning/amber styling typical of secure or restricted systems.
+ */
 // public/errors/403.php
 // Theme: Knox / Industrial / Axiom
 // Context: "Access Denied" / Security Breach
@@ -27,6 +39,7 @@ if ($is_standalone) {
 
 <div class="starfield-container"><div class="starfield-twinkling"></div></div>
 
+<!-- START: 403 Error Main Container -->
 <div class="container py-5 glass-container d-flex flex-column justify-content-center min-vh-75">
     
     <div class="row justify-content-center text-center">
@@ -43,6 +56,7 @@ if ($is_standalone) {
                 <span class="text-warning">>></span> AXIOM SECURITY PROTOCOL
             </h2>
             
+            <!-- START: 403 Terminal Narrative Context -->
             <div class="card terminal-card p-4 border-warning text-start mb-5 mx-auto" style="max-width: 600px;">
                 <div class="terminal-header text-warning">
                     <i class="fa-duotone fa-fingerprint me-2"></i>
@@ -58,6 +72,7 @@ if ($is_standalone) {
                 </div>
             </div>
             
+            <!-- START: 403 Safe Escape Actions -->
             <div class="d-flex justify-content-center gap-3 flex-wrap">
                 <a href="/" class="btn btn-outline-light rounded-pill px-4">
                     <i class="fa-duotone fa-house me-2"></i>Return to Safety

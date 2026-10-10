@@ -1,4 +1,18 @@
 <?php
+/**
+ * ============================================================================
+ * ARCHITECTURE & CORPORATE LORE (LEASING PHILOSOPHY):
+ * This file details the fictional leasing economics of Stardust Blacksburg.
+ * It serves a dual narrative purpose: establishing the O'Connell family's ethical
+ * business practices ("Fair Market") and attacking predatory student housing models.
+ * 
+ * Future Maintenance:
+ * - The layout relies heavily on Bootstrap 5 grids and a responsive table.
+ * - The signature font (`Herr Von Muellerhoff`) requires external loading (usually
+ *   handled in the global `header.php`).
+ * - Price tags and comparison tables use distinct semantic colors (danger vs success).
+ * ============================================================================
+ */
 // pages/engine-room/corporate/stardust-blacksburg/leasing.php
 // Context: Explaining the "Unit vs. Bed" pricing model.
 // Theme: "Crucible" (Maroon & Orange) / Varsity.
@@ -66,6 +80,7 @@ $pageTitle = "Leasing Philosophy - Stardust Blacksburg";
                 <div class="card-header bg-dark text-white text-center text-uppercase fw-bold">
                     The Math: "Ironwood" vs. "The Mega-Complex"
                 </div>
+                <!-- ARCHITECTURE: Responsive comparison table detailing the fictional economic model -->
                 <div class="table-responsive">
                     <table class="table table-striped comparison-table mb-0 text-center">
                         <thead>
@@ -142,6 +157,7 @@ $pageTitle = "Leasing Philosophy - Stardust Blacksburg";
             </p>
             
             <div class="mt-3">
+                <!-- ARCHITECTURE: Simulated handwritten signature for narrative authenticity -->
                 <div class="signature-text" aria-label="Signed: Holly O'Connell">
                     Holly O'Connell
                 </div>

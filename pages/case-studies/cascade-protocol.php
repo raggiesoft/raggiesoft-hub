@@ -1,4 +1,19 @@
 <?php
+/**
+ * ============================================================================
+ * ARCHITECTURE & INCIDENT RESPONSE:
+ * This file renders "The Cascade Protocol", a narrative case study structured
+ * as an engineering incident report. It maps a psychological event (a meltdown)
+ * to technical infrastructure concepts (system crashes, reboots, safety protocols).
+ * 
+ * Future Maintenance:
+ * - The UI leverages Bootstrap 5 alerts, cards, and FontAwesome icons to simulate
+ *   a technical post-mortem aesthetic.
+ * - The page is entirely static HTML/CSS; no dynamic data loading is present.
+ * - Do NOT alter the clinical tone; the juxtaposition of emotional trauma with
+ *   sterile engineering analysis is the core narrative device.
+ * ============================================================================
+ */
 // pages/case-studies/cascade-protocol.php
 // Case Study: The Cascade Protocol (Incident Response)
 // Context: Neurodivergent Meltdown & Recovery (System Crash)
@@ -17,6 +32,7 @@ $pageTitle = "Case Study: The Cascade Protocol";
 
     <div class="fs-5">
         
+        <!-- ARCHITECTURE: Incident Report UI mimicking an operational system failure log -->
         <div class="card border-danger mb-4 shadow-sm">
             <div class="card-header border-danger bg-danger bg-opacity-10 fw-bold text-uppercase text-danger">
                 <i class="fa-duotone fa-file-waveform me-2"></i>Incident Report
@@ -85,6 +101,7 @@ $pageTitle = "Case Study: The Cascade Protocol";
             The Response Team (Jessica and Paige) executed <strong>Immediate Containment Procedures</strong>. They did not attempt to debug the error (talk him down); they physically stabilized the hardware to prevent self-destruction.
         </p>
         <div class="row g-4 mb-4">
+            <!-- ARCHITECTURE: Mapping interpersonal support to technical redundancies -->
             <div class="col-md-6">
                 <div class="card h-100 border-0 bg-body-tertiary">
                     <div class="card-body">

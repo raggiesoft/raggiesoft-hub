@@ -1,4 +1,19 @@
 <?php
+/**
+ * ARCHITECTURE & MAINTENANCE (LEGACY)
+ *
+ * This file provides a specialized "Silent" footer specifically for the "Careers / Fake Recruiting" pages within RaggieSoft Media.
+ * 
+ * DESIGN INTENT:
+ * - Strips away the standard global navigation and audio players to maintain a strict, corporate, "Danger Glass" aesthetic.
+ * - Explicitly states "Not an employer. Not hiring." to prevent actual job applications based on the fictional lore.
+ * - Incorporates custom CSS (`<!-- LEGACY STYLING: Localized CSS injection. Necessary because this specific "Danger Glass" aesthetic is only used on this single footer. -->
+<style>` block) overriding the `aero-danger-footer` class to enforce a red/warning visual motif.
+ * 
+ * MAINTENANCE NOTES:
+ * - The inline CSS should eventually be migrated to a compiled stylesheet (e.g., `_frutiger-aero.scss`) for better performance.
+ * - The `data-bs-theme="dark"` selector specifically adjusts shadow opacity for dark mode contexts. Ensure this aligns with any global theme toggle logic.
+ */
 // includes/components/footers/raggiesoft-media/footer-careers.php
 // The Silent Footer - Strips out audio players and promotional links.
 // Updated: Frutiger Aero Danger Glass
@@ -8,6 +23,7 @@
     <div class="container relative-z1">
         <div class="row gy-4 align-items-center">
             
+            <!-- LEGACY DISCLAIMER: Critical UI component to break the fourth wall and inform users that this is a lore page, not a real business. -->
             <div class="col-md-6 text-center text-md-start">
                 <div class="text-uppercase fw-bold fs-4 mb-2 brand-font text-danger" style="letter-spacing: 1px; text-shadow: 0 0 10px rgba(220,53,69,0.3);">
                     RaggieSoft Media

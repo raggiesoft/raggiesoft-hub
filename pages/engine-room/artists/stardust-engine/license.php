@@ -1,5 +1,13 @@
 <?php
+/**
+ * @file license.php
+ * @description Outlines the dual-licensing model for The Stardust Engine project.
+ * @context Clearly separates the creative lore/narrative (CC BY-SA 4.0) from the underlying technical codebase (MIT), establishing open-source parameters for the universe. Includes a disclaimer about AI collaboration.
+ * @architecture Static PHP page utilizing Bootstrap cards to visually delineate the two licenses.
+ * @maintenance If the licensing terms change or new repositories are added, update the respective HTML blocks.
+ */
 // Page data
+// INLINE: Define the page title for the global layout wrapper
 $pageTitle = "License Information - The Stardust Engine";
 ?>
 
@@ -17,6 +25,7 @@ $pageTitle = "License Information - The Stardust Engine";
 
     <div class="row g-5">
         
+        <!-- INLINE: Section detailing the Creative Commons license for narrative and lore -->
         <!-- 1. Creative Content (CC BY-SA 4.0) -->
         <div class="col-md-6">
             <div class="card h-100 border-warning bg-transparent">
@@ -45,6 +54,7 @@ $pageTitle = "License Information - The Stardust Engine";
             </div>
         </div>
 
+        <!-- INLINE: Section detailing the MIT open-source license for the codebase -->
         <!-- 2. Source Code (MIT) -->
         <div class="col-md-6">
             <div class="card h-100 border-primary bg-transparent">

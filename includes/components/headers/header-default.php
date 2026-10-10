@@ -3,8 +3,31 @@
 // UPDATED: Main RaggieSoft Network Header (Web Awesome Edition)
 // Serves as the global navigation for the root domain
 
+/**
+ * ARCHITECTURE & MAINTENANCE NOTES:
+ * 
+ * Component: Main Network Header
+ * Purpose: Serves as the primary global navigation mechanism across the root domain.
+ * 
+ * Strategy & Implementation:
+ * - Utilizes early URL evaluation mapping the current `$request_uri` to specific active 
+ *   state flags.
+ * - Adopts a data-preparation approach where view logic strictly consumes pre-computed 
+ *   booleans ($isHome, $isArchitect, $isCreative, etc.).
+ * - Integrates Web Awesome components to manage responsive behaviors and complex UI 
+ *   interactions (dropdowns, menus) declaratively.
+ * 
+ * Maintenance Recommendations:
+ * - Route conditions (e.g., `str_starts_with`) should remain at the top-level block 
+ *   to ensure a clean separation of concerns and avoid inline PHP conditional spaghetti.
+ * - Verify Web Awesome icon classes (e.g., `fa-duotone`) and slots remain compatible 
+ *   when upgrading FontAwesome or the Web Awesome framework.
+ */
+
 // 1. Determine Active States
+// Extract the URI safely to map against defined architectural routes
 $request_uri = $_SERVER['REQUEST_URI'] ?? '/';
+// Evaluate primary root entry point
 $isHome = ($request_uri === '/');
 $isArchitect = (str_starts_with($request_uri, '/about/michael-ragsdale') || str_starts_with($request_uri, '/portfolio'));
 $isCreative = (str_starts_with($request_uri, '/raggiesoft-books') || str_starts_with($request_uri, '/engine-room'));
@@ -19,6 +42,7 @@ $isContact = ($request_uri === '/contact');
     <i slot="start" class="fa-duotone fa-house"></i> Home
   </wa-button>
 
+  <!-- Architect Section Dropdown: Aggregates personal portfolio and skills content -->
   <wa-dropdown placement="bottom-start">
     <wa-button slot="trigger" appearance="plain" with-caret class="<?php echo $isArchitect ? 'text-primary' : 'text-body-secondary'; ?>">
       <i slot="start" class="fa-duotone fa-user-visor"></i> The Architect

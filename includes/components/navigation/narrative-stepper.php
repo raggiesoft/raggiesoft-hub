@@ -1,5 +1,21 @@
 <?php
 /**
+ * ============================================================================
+ * ARCHITECTURE & DESIGN: Narrative Stepper Navigation
+ * ============================================================================
+ * ROLE: Standardizes horizontal "Back / Hub / Next" pagination across multi-page
+ *       narrative sequences (e.g., historical timelines or story chapters).
+ * 
+ * INTEGRATION: Relies on an expected `$nav` array payload configured in the 
+ *              parent template before inclusion. Gracefully falls back to disabled
+ *              states or placeholder UI elements if `prev` or `next` are missing.
+ * 
+ * MAINTENANCE: The grid is composed of a rigid 3-column (`col-4`) structure. 
+ *              The labels collapse intelligently on mobile (`d-md-none` vs `d-none d-md-inline`)
+ *              to prevent overflowing the viewport. Keep these breakpoint constraints intact.
+ * ============================================================================
+ */
+/**
  * COMPONENT: Narrative Stepper (History Navigation)
  * PURPOSE: Standardizes the "Back / Up / Next" footer navigation for story chapters.
  * * USAGE:
@@ -17,6 +33,7 @@ $next = $nav['next'] ?? null;
 $overview = $nav['overview'] ?? ['url' => '/engine-room/history', 'label' => 'History Hub'];
 ?>
 
+<!-- [LAYOUT] Main Stepper Wrapper: Horizontal 3-column navigation grid -->
 <div class="row mt-5 pt-4 border-top border-secondary border-opacity-25 align-items-center">
     
     <div class="col-4">
@@ -33,6 +50,7 @@ $overview = $nav['overview'] ?? ['url' => '/engine-room/history', 'label' => 'Hi
         <?php endif; ?>
     </div>
 
+    <!-- [UI COMPONENT] Overview Hub Button: Central anchor back to the main directory -->
     <div class="col-4 text-center">
         <a href="<?php echo $overview['url']; ?>" class="btn btn-outline-primary rounded-pill">
             <i class="fa-duotone fa-list-tree me-2"></i>

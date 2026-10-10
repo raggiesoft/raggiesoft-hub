@@ -1,10 +1,26 @@
 <?php
+/**
+ * ============================================================================
+ * ARCHITECTURE & MISSION PROFILE OVERVIEW:
+ * This file is the central "Mission Profile" hub, merging the user's hero rotator
+ * with the site's primary directory structure. It visually bridges the gap
+ * between Systems Architecture and Creative Narrative.
+ * 
+ * Future Maintenance:
+ * - The background rotator relies on a JSON manifest ($heroImages) and custom
+ *   JS (hero-image.js) for smooth transitions.
+ * - The UI relies heavily on 'glass-card' CSS to maintain readability over
+ *   dynamic backgrounds.
+ * - Ensure 'logo-invert' filter remains for the Engine Room logo to maintain visibility.
+ * ============================================================================
+ */
 // pages/about/overview.php
 // "Mission Profile" - The Central Hub & Narrative Overview
 // Merged: User's Hero Rotator + Directory Structure
 
 $pageTitle = "Mission Profile - RaggieSoft";
 
+// ARCHITECTURE: Fetching thematic background manifest for the immersive UI
 // 1. Fetch Hero Images for the rotator
 require_once ROOT_PATH . '/includes/utils/json-reader.php';
 $heroImages = fetch_asset_json('common/json/hero-images.json');
@@ -23,6 +39,7 @@ $imagesJson = htmlspecialchars(json_encode($heroImages), ENT_QUOTES, 'UTF-8');
         filter: invert(1) grayscale(100%) brightness(200%);
     }
 </style>
+<!-- ARCHITECTURE: Wrapper for the dynamic background crossfade logic -->
 <div class="immersive-container hero-rotator-container" data-images="<?php echo $imagesJson; ?>">
     
     <div class="hero-bg-layer hero-bg-layer-1" style="background-image: url('<?php echo $startImage; ?>');"></div>
@@ -121,6 +138,7 @@ $imagesJson = htmlspecialchars(json_encode($heroImages), ENT_QUOTES, 'UTF-8');
         <div class="row g-4 justify-content-center mb-5">
             
             <div class="col-lg-3 col-md-6">
+                <!-- ARCHITECTURE: Portal to the Personified DevOps Constructs -->
                 <a href="/about/family" class="card glass-card h-100 text-decoration-none hover-lift border-info transition-all">
                     <div class="card-body text-center">
                         <img src="<?php echo $cdnBaseUrl; ?>/family/images/logos/logo-family.png" 

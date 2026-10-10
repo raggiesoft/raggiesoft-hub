@@ -1,4 +1,17 @@
 <?php
+/**
+ * ARCHITECTURE: header-crimson.php
+ * 
+ * Context: Engine Room Records - Crimson Node Global Navigation.
+ * Narrative/Purpose: The primary navigation for the Crimson Node artist hub. 
+ * It manages routing between the main garage, discography, extensive character/lore sections,
+ * and the broader RaggieSoft Books integration for "The Lore".
+ * 
+ * Mechanics:
+ * - Uses `$_SERVER['REQUEST_URI']` extensive pattern matching to highlight active states across complex nested routes.
+ * - Employs a Web Awesome dropdown (`wa-dropdown` with `hoist`) for organizing character factions (Phalanx, CCC, Northwood, Piedmont).
+ * - Links back to the parent label hub to maintain the ecosystem structure.
+ */
 // includes/components/headers/engine-room/artists/crimson-node/header-crimson.php
 // Crimson Node Custom Header
 
@@ -15,6 +28,7 @@ $isPiedmont = str_starts_with($request_uri, '/engine-room/artists/crimson-node/c
 $isLore = str_starts_with($request_uri, '/raggiesoft-books/books/crimson-node');
 ?>
 
+<!-- START: Crimson Node Navigation Container -->
 <div class="d-flex flex-column flex-md-row align-items-stretch align-items-md-center gap-2 ms-auto py-3 py-md-0 w-100 mobile-nav-menu">
   
   
@@ -30,6 +44,7 @@ $isLore = str_starts_with($request_uri, '/raggiesoft-books/books/crimson-node');
   
 
   
+  <!-- START: Character Factions Dropdown -->
   <wa-dropdown placement="bottom-start" hoist>
     <wa-button slot="trigger" appearance="plain" class="nav-link  <?php echo ($isPhalanx || $isCcc || $isNorthwood || $isPiedmont) ? 'active' : '';?>">
         <i class="fa-duotone fa-users me-2" aria-hidden="true"></i>Characters <i class="fa-solid fa-chevron-down ms-1" style="font-size: 0.8em;" aria-hidden="true"></i>
@@ -60,6 +75,7 @@ $isLore = str_starts_with($request_uri, '/raggiesoft-books/books/crimson-node');
     </wa-button>
   
 
+  <!-- START: Exit to Label Hub -->
   <!-- Link back to the parent label -->
   
   

@@ -1,5 +1,17 @@
 <?php
 /**
+ * @file overview.php
+ * @brief PAGE: O'Connell Trust Hub
+ * 
+ * ARCHITECTURE & MAINTENANCE NOTES:
+ * - Domain: O'Connell Trust Hub
+ * - Route: /oconnell-trust
+ * - Context: The "Parent Company" landing page.
+ * - Presentation: Built to adapt to a 'Dark Luxury' aesthetic. Uses specific `trust-hero` and `trust-font` (`Playfair Display`) styles.
+ * - Integration: Includes custom styling for `.stat-card` adapting to dark mode using `var(--bs-body-bg)`.
+ * - Note: This file relies heavily on Bootstrap CSS variables (`--bs-tertiary-bg`, `--bs-body-bg`) for its dynamic theming.
+ * - DO NOT change the CSS structure, inline styles, or dynamic mode classes.
+ * 
  * PAGE: O'Connell Trust Hub
  * ROUTE: /oconnell-trust
  * CONTEXT: The "Parent Company" landing page.

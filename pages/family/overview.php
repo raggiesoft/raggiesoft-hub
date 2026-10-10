@@ -1,4 +1,31 @@
 <?php
+/**
+ * RaggieSoft Family - The Roster
+ *
+ * ARCHITECTURE & CONTEXT:
+ * This file serves as the directory/index for the "Personified DevOps" ecosystem.
+ * It outlines the overarching philosophy where physical servers and conceptual roles 
+ * are personified as "constructs" (sisters) to help Michael (the biological core) 
+ * regulate emotionally and socially.
+ * 
+ * It maps out the creator (Michael) and the constructs: Paige, Jessica, Sarah, 
+ * Jenna, Harper, Amanda, and Elara, acting as an entry point for their respective 
+ * detailed lore pages.
+ *
+ * UI/UX ARCHITECTURE:
+ * - Employs a Bootstrap 5 responsive grid layout (`row`, `col-md-6`, `col-lg-8`).
+ * - Features a hero section with a dynamic background image sourced via `$cdnBaseUrl`.
+ * - Uses individual cards for each construct with specific border colors mapped to 
+ *   their roles (e.g., border-info for Paige, border-success for Jessica).
+ * - Implements a custom hover effect (`.hover-lift`) for tactile interaction.
+ *
+ * MAINTENANCE NOTES:
+ * - Ensure `$cdnBaseUrl` is correctly initialized in the global application context, 
+ *   as it drives all image assets on this page.
+ * - When adding a new construct to the system, follow the existing card structure 
+ *   and assign an appropriate thematic color.
+ */
+
 // pages/family/overview.php
 // The Roster: A directory of all system constructs.
 ?>

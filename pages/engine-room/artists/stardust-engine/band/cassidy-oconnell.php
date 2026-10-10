@@ -1,10 +1,19 @@
 <?php
+/**
+ * @file cassidy-oconnell.php
+ * @description Detailed character lore profile for Cassidy O'Connell (The Stardust Engine).
+ * @context Outlines Cassidy's role as the "Anchor" of the band, her survival of the "Friction" scandal, and the monumental "Daleville Event" (winning the lottery).
+ * @architecture Standalone PHP page generating a Schema.org Person JSON-LD blob for SEO. Uses standard Bootstrap grid and the shared `card.php` component for the sidebar.
+ * @maintenance Update HTML content directly for lore adjustments. Ensure the `$personSchema` array stays synced with her role and image.
+ */
 // pages/engine-room/artists/stardust-engine/band/cassidy-oconnell.php
 // The "Anchor" and the "Angel Investor".
 // Context: The silent power behind the throne.
 
+// INLINE: Define the global page title and initialize Schema data
 $pageTitle = "Cassidy O'Connell - The Stardust Engine";
 
+// INLINE: Construct the SEO-friendly JSON-LD data for Cassidy's profile
 // Define Schema variables for the specific band member
 $memberName = "Cassidy O'Connell";
 $memberRole = "Lead Vocals, Piano, Synthesizers";
@@ -27,6 +36,7 @@ $personSchema = [
 <?php echo json_encode($personSchema, JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT); ?>
 </script>
 
+<!-- INLINE: Animated starfield background specific to the Stardust Engine theme -->
 <div class="starfield-container"><div class="starfield-twinkling"></div></div>
 
 <div class="container py-5 glass-container position-relative z-1">

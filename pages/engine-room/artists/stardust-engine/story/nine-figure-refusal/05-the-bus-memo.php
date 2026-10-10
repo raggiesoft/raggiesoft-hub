@@ -1,4 +1,28 @@
 <?php
+/**
+ * ============================================================================
+ * ARCHITECTURAL MAINTENANCE BLOCK
+ * ============================================================================
+ * File: 05-the-bus-memo.php
+ * Component Type: Story / Lore HTML View (PHP Partial)
+ * 
+ * DESCRIPTION:
+ * Displays "Evidence Item #44-B: The 'Bus Memo'", a crucial document in the 
+ * "Nine-Figure Refusal" storyline. The UI simulates an internal email with 
+ * skeuomorphic annotations (red pen marks, sticky notes).
+ * 
+ * STRUCTURAL NOTES & CONSTRAINTS:
+ * - SKEUOMORPHIC UI: Contains complex inline CSS and custom `<style>` blocks 
+ *   that simulate hand-drawn circles (`.circled-text`), underlines (`.hand-underline`),
+ *   and a rotated sticky note (`.sticky-note-container`).
+ * - DARK MODE OVERRIDES: Specific dark mode overrides are present to ensure red 
+ *   annotations pop against dark backgrounds. 
+ * - SVG USAGE: An inline SVG is used for drawing a hand-drawn arrow. Do NOT alter 
+ *   the SVG attributes or coordinate math.
+ * - DO NOT ALTER DOM: The layering and absolute positioning rely heavily on the 
+ *   current DOM structure. Editing HTML tags or classes may break the visual illusion.
+ * ============================================================================
+ */
 // pages/engine-room/artists/stardust-engine/story/nine-figure-refusal/the-bus-memo.php
 // EVIDENCE ITEM #44-B: The Document That Killed a Corporation
 // UPDATED: Dark Mode "Red Pen" visibility improvements.

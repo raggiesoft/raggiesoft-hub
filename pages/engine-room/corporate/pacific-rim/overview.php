@@ -1,5 +1,22 @@
 <?php
-// pages/engine-room/corporate/pacific-rim/overview.php
+/**
+ * RaggieSoft Architecture - Page Component
+ * 
+ * File: pages/engine-room/corporate/pacific-rim/overview.php
+ * Component: Pacific Rim Properties Portal
+ * Type: Promotional / Fictional Corporate Site
+ * 
+ * Description:
+ * A mock corporate real estate landing page for "Pacific Rim Properties."
+ * Designed to look deliberately mundane ("Corporate Beige") to contrast
+ * with the surrounding Stardust/Aethelgard lore.
+ *
+ * Maintenance Notes:
+ * - Custom CSS overrides Bootstrap defaults to enforce the corporate theme
+ *   (.pac-rim-body, .pac-rim-header).
+ * - Relies on $cdnBaseUrl for property images.
+ * - Static layout; property cards are hard-coded.
+ */
 // Context: The "Boring" Real Estate Holding Company.
 // Location: Avenue of the Stars, Los Angeles.
 

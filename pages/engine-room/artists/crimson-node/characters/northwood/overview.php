@@ -1,7 +1,15 @@
 <?php
+/**
+ * @file overview.php
+ * @description The main directory and lore landing page for Northwood High School (Crimson Node storyline).
+ * @context Northwood High is presented as the primary antagonistic environment—a rigid, bureaucratic contrast to the band's curated safe space.
+ * @architecture Standalone PHP page utilizing Bootstrap grid for layout. Defines $pageTitle and lists staff/student profiles in a card grid.
+ * @maintenance When adding new characters (e.g., students or teachers), add a new card block within the "Roster Grid" section.
+ */
 // pages/engine-room/artists/crimson-node/characters/northwood/overview.php
 // Northwood High School Directory
 
+// INLINE: Define the global page title
 $pageTitle = "Northwood High - Crimson Node";
 ?>
 
@@ -41,6 +49,7 @@ $pageTitle = "Northwood High - Crimson Node";
         </div>
     </div>
 
+    <!-- INLINE: Grid system to list all associated Northwood High character profiles -->
     <!-- Roster Grid -->
     <div class="row g-4 justify-content-center">
         

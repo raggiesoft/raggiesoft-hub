@@ -1,4 +1,34 @@
 <?php
+/**
+ * Stardust Engine - Band Overview Template
+ * 
+ * ARCHITECTURAL OVERVIEW:
+ * This file serves as the main directory page for "The Band" section of the Stardust Engine site.
+ * It presents a macro view of the band's history as a family unit and provides links to
+ * individual member profiles.
+ * 
+ * DATA & SCHEMA:
+ * - Employs Schema.org MusicGroup structured data via JSON-LD to establish entity relationships
+ *   between the band and its individual members for SEO purposes.
+ * 
+ * LAYOUT STRUCTURE:
+ * - Built on Bootstrap 5 grid system.
+ * - Uses custom CSS classes (e.g., .starfield-container, .glass-container, .glass-card) 
+ *   for the thematic space/sci-fi visual identity.
+ * - Content is organized into sequential rows: introductory text, full group portrait, 
+ *   archival notes, and a stacked list of individual member profiles using card components.
+ * 
+ * DEPENDENCIES:
+ * - Requires $cdnBaseUrl to be defined in the parent context.
+ * - Utilizes ROOT_PATH for including shared UI components (e.g., button.php).
+ * - Depends on FontAwesome (fa-solid, fa-duotone) for iconography.
+ * 
+ * MAINTENANCE NOTES:
+ * - When adding new band members, ensure they are added to both the Schema JSON array
+ *   and the HTML card list below.
+ * - Update archival text and imagery carefully to maintain canon continuity.
+ */
+
 // Page data
 $pageTitle = "The Band - The Stardust Engine";
 ?>
@@ -19,12 +49,17 @@ $groupSchema = [
     ]
 ];
 ?>
+<!-- BEGIN: Dynamic Schema.org JSON-LD Output -->
 <script type="application/ld+json">
 <?php echo json_encode($groupSchema, JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT); ?>
 </script>
+<!-- END: Dynamic Schema.org JSON-LD Output -->
 
+<!-- BEGIN: Thematic Background Animation Layer -->
 <div class="starfield-container"><div class="starfield-twinkling"></div></div>
+<!-- END: Thematic Background Animation Layer -->
 
+<!-- BEGIN: Main Page Content Container (Glassmorphism UI) -->
 <div class="container py-5 glass-container position-relative z-1">
     
     <div class="text-center mb-5">

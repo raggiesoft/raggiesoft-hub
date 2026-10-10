@@ -1,8 +1,25 @@
 <?php
-// sidebar-northwood.php
+/**
+ * Crimson Node - Northwood High Sidebar
+ * 
+ * ARCHITECTURAL OVERVIEW:
+ * This sidebar component manages navigation for the "Northwood High" narrative section
+ * within the Crimson Node universe. It features a complex UI structure using a 
+ * Bootstrap 5 Accordion to categorize characters into "Students" and "Staff".
+ * A supplementary card linking back to "The Phalanx" is also included.
+ * 
+ * LOGIC & CONSTRAINTS:
+ * - Uses `strpos` on `$_SERVER['REQUEST_URI']` to determine which accordion section
+ *   (Students vs Staff) should default to "open" on page load.
+ * - Relies strictly on standard Bootstrap 5 `.accordion` classes.
+ * - Care must be taken not to alter the `data-bs-*` attributes (`data-bs-toggle`, `data-bs-target`, etc.)
+ *   as they are critical for the accordion's JavaScript functionality.
+ * 
+ * File Info: includes/components/sidebars/engine-room/artists/crimson-node/sidebar-northwood.php
+ */
 $request_uri = $_SERVER['REQUEST_URI'] ?? '/';
 
-// Determine which accordion should be open
+// Determine which accordion should be open based on the URL path.
 $isStudentActive = strpos($request_uri, '/students/') !== false;
 $isStaffActive = strpos($request_uri, '/staff/') !== false;
 ?>
@@ -19,10 +36,19 @@ $isStaffActive = strpos($request_uri, '/staff/') !== false;
         <!-- Students Section -->
         <div class="accordion-item border-0 border-bottom">
             <h2 class="accordion-header" id="headingStudents">
+                <!-- 
+                  Accordion Button State:
+                  Uses `$isStudentActive` to remove the 'collapsed' class and set `aria-expanded="true"`
+                  if the student section should be open.
+                -->
                 <button class="accordion-button <?= $isStudentActive ? '' : 'collapsed' ?> bg-body-tertiary fw-bold text-uppercase " type="button" data-bs-toggle="collapse" data-bs-target="#collapseStudents" aria-expanded="<?= $isStudentActive ? 'true' : 'false' ?>" aria-controls="collapseStudents" style="font-size: 0.85rem; letter-spacing: 1px;">
                     Students
                 </button>
             </h2>
+            <!-- 
+              Accordion Body State:
+              Uses `$isStudentActive` to add the 'show' class to keep the accordion body visible.
+            -->
             <div id="collapseStudents" class="accordion-collapse collapse <?= $isStudentActive ? 'show' : '' ?>" aria-labelledby="headingStudents" data-bs-parent="#northwoodAccordion">
                 <div class="list-group list-group-flush">
                     <a href="/engine-room/artists/crimson-node/characters/northwood/students/courtney-evans" class="list-group-item list-group-item-action <?= ($request_uri == '/engine-room/artists/crimson-node/characters/northwood/students/courtney-evans') ? 'active' : '' ?>">

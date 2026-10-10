@@ -1,4 +1,33 @@
 <?php
+/**
+ * Stardust Engine - Lore/Story Template: The Repatriation (Lot 200)
+ * 
+ * ARCHITECTURAL OVERVIEW:
+ * This template visually represents the legal disposition of the Stardust Engine's
+ * master recordings following the Omni-Global bankruptcy. It acts as the triumphant
+ * conclusion to the "Nine Figure Refusal" arc.
+ * 
+ * LAYOUT STRUCTURE:
+ * - Uses a standard Bootstrap 5 container grid.
+ * - Custom CSS: Contains inline styles to force high-contrast black-and-white
+ *   rendering for the physical invoice simulation, overriding dark mode where necessary.
+ * - Chain of Title Diagram: A vertical flow-chart using Bootstrap flex utilities
+ *   and FontAwesome icons to track the legal transfer of the assets.
+ * - Invoice Simulation: A custom styled .physical-invoice component that mimics
+ *   a printed legal bill of sale, including a transparent signature image overlay.
+ * - Narrative Stepper: Included at the bottom to continue/conclude the story sequence.
+ * 
+ * DEPENDENCIES:
+ * - Expects $cdnBaseUrl for resolving the signature image asset.
+ * - Uses FontAwesome for thematic iconography (fa-building-columns, fa-shield-halved).
+ * 
+ * MAINTENANCE NOTES:
+ * - The .physical-invoice class includes !important tags in the <style> block to
+ *   prevent Bootstrap's dark mode variables from inverting the invoice colors.
+ * - If you update the table structure of the invoice, ensure the $1.00 consideration
+ *   remains clear, as it is a critical plot point.
+ */
+
 // pages/engine-room/artists/stardust-engine/story/nine-figure-refusal/sun-ray-catalog-transfer.php
 // EVIDENCE ITEM #200-FINAL: The Repatriation
 // Context: The journey from "Toxic Asset" to "Artist Owned."
@@ -7,6 +36,7 @@
 $pageTitle = "Lot 200: The Sun-Ray Repatriation";
 ?>
 
+<!-- BEGIN: Page-Specific Styles (Invoice overrides) -->
 <style>
     /* Force high contrast for the physical invoice simulation */
     .physical-invoice {
@@ -29,9 +59,12 @@ $pageTitle = "Lot 200: The Sun-Ray Repatriation";
         background-color: #212529 !important;
     }
 </style>
+<!-- END: Page-Specific Styles -->
 
+<!-- BEGIN: Main Page Container -->
 <div class="container py-5">
     
+    <!-- BEGIN: Header Section -->
     <div class="row justify-content-center mb-5">
         <div class="col-lg-8 text-center">
             <span class="badge bg-success-subtle text-success-emphasis rounded-pill px-3 py-2 mb-3 text-uppercase letter-spacing-1 border border-success-subtle">
@@ -45,7 +78,9 @@ $pageTitle = "Lot 200: The Sun-Ray Repatriation";
             </p>
         </div>
     </div>
+    <!-- END: Header Section -->
 
+    <!-- BEGIN: Chain of Title Diagram -->
     <div class="row justify-content-center mb-5">
         <div class="col-lg-10">
             <div class="card bg-body-tertiary border-secondary shadow-lg">
@@ -54,6 +89,7 @@ $pageTitle = "Lot 200: The Sun-Ray Repatriation";
                         <i class="fa-solid fa-route me-2"></i>Chain of Title (2018-2019)
                     </h5>
 
+                    <!-- Step 1: Omni-Global -->
                     <div class="d-flex align-items-center mb-4">
                         <div class="flex-shrink-0 text-center" style="width: 80px;">
                             <i class="fa-duotone fa-building-columns fa-2x text-body-secondary"></i>
@@ -71,6 +107,7 @@ $pageTitle = "Lot 200: The Sun-Ray Repatriation";
                         <i class="fa-solid fa-arrow-down fa-xl"></i>
                     </div>
 
+                    <!-- Step 2: Aethelgard Holdings -->
                     <div class="d-flex align-items-center mb-4">
                         <div class="flex-shrink-0 text-center" style="width: 80px;">
                             <i class="fa-duotone fa-shield-halved fa-2x text-primary"></i>
@@ -91,6 +128,7 @@ $pageTitle = "Lot 200: The Sun-Ray Repatriation";
                         <i class="fa-solid fa-arrow-down fa-xl"></i>
                     </div>
 
+                    <!-- Step 3: The Artist -->
                     <div class="d-flex align-items-center">
                         <div class="flex-shrink-0 text-center" style="width: 80px;">
                             <i class="fa-duotone fa-guitar-electric fa-2x text-success"></i>
@@ -110,7 +148,9 @@ $pageTitle = "Lot 200: The Sun-Ray Repatriation";
             </div>
         </div>
     </div>
+    <!-- END: Chain of Title Diagram -->
 
+    <!-- BEGIN: Physical Invoice Simulation -->
     <div class="row justify-content-center">
         <div class="col-lg-8">
             <div class="card border-0 shadow-lg physical-invoice" style="font-family: 'Courier New', monospace;">
@@ -169,7 +209,9 @@ $pageTitle = "Lot 200: The Sun-Ray Repatriation";
             </div>
         </div>
     </div>
+    <!-- END: Physical Invoice Simulation -->
     
+    <!-- BEGIN: Narrative Stepper -->
     <?php
         $nav = [
             'prev' => ['url' => '/engine-room/artists/stardust-engine/story/nine-figure-refusal/liquidation-auction', 'label' => 'The Liquidation Auction'],
@@ -178,5 +220,6 @@ $pageTitle = "Lot 200: The Sun-Ray Repatriation";
         ];
         include ROOT_PATH . '/includes/components/navigation/narrative-stepper.php';
     ?>
+    <!-- END: Narrative Stepper -->
 
 </div>

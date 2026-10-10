@@ -1,9 +1,24 @@
 <?php
+/**
+ * ARCHITECTURE: fare-table.php
+ * 
+ * Context: RaggieSoft Hub - Bus Service Component.
+ * Narrative/Purpose: A highly adaptable, data-driven fare table component designed for regional 
+ * transit agencies (like the fictional Piedmont Regional Transit). It renders dynamic pricing, 
+ * transfer policies, and perk banners based on structured PHP arrays passed to it.
+ * 
+ * Mechanics:
+ * - Expects specific data structures: $systemMeta, $fares, $fareProducts, and $transferPolicy.
+ * - Supports two `$fares['type']` rendering modes: 'flat' (simple list) and 'comparison' (table).
+ * - Utilizes Bootstrap 5 utility classes extensively for responsive typography (e.g., 'font-monospace') 
+ *   and thematic coloring.
+ */
 // includes/components/fare-table.php
 // A highly adaptable, data-driven fare table component for regional transit agencies.
 // Expects: $systemMeta, $fares, $fareProducts (optional), $transferPolicy
 ?>
 
+<!-- START: Fare Table Component Container -->
 <div class="container py-5">
     
     <div class="text-center mb-5">
@@ -19,6 +34,7 @@
     </div>
 
     <?php if (!empty($systemMeta['perk_banner'])): ?>
+    <!-- START: Perk Banner Section -->
     <div class="row justify-content-center mb-5">
         <div class="col-lg-10">
             <div class="card border-0 shadow-lg" style="background: linear-gradient(135deg, #630031 0%, #1a050d 100%); border-left: 5px solid #ffc107 !important;">
@@ -38,6 +54,7 @@
     </div>
     <?php endif; ?>
 
+    <!-- START: Fares Table/List Section -->
     <div class="row justify-content-center mb-5">
         <div class="col-lg-10">
             <div class="card bg-body-tertiary border-secondary shadow-sm">
@@ -93,6 +110,7 @@
         </div>
     </div>
 
+    <!-- START: Fare Products & Policies -->
     <div class="row justify-content-center g-4">
         
         <?php if (!empty($fareProducts)): ?>

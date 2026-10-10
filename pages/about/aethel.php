@@ -1,5 +1,20 @@
 <?php
-// pages/about/aethel.php
+/**
+ * RaggieSoft Architecture - Page Component
+ * 
+ * File: pages/about/aethel.php
+ * Component: The Silver Gauntlet of Aethel (About Page)
+ * Type: Project Showcase / Lore
+ * 
+ * Description:
+ * Renders the promotional "About" page for the Aethel Saga book/project.
+ * Includes thematic styling, lore snippets, and an author intent section.
+ *
+ * Maintenance Notes:
+ * - Theme is "Onyx (Fantasy/Gold)" using custom CSS overrides (.cinzel-font).
+ * - Relies on global $cdnBaseUrl for images (backgrounds, logos, author avatar).
+ * - The hero section uses absolute positioning for background image and gradients.
+ */
 // Theme: Onyx (Fantasy/Gold)
 ?>
 

@@ -1,9 +1,28 @@
 <?php
+/**
+ * ============================================================================
+ * ARCHITECTURE & DESIGN: Corporate Footer (RaggieSoft Media)
+ * ============================================================================
+ * ROLE: The authoritative B2B footer for the RaggieSoft Media holding entity.
+ *       Utilizes the "Frutiger Aero / Dark Aero Master Glass" aesthetic to 
+ *       communicate professionalism, transparency, and technical proficiency.
+ * 
+ * INTEGRATION: Can be dynamically swapped in via Elara's router configuration 
+ *              (`footerMenu` parameter in routes JSON) or explicitly included 
+ *              in specific layout templates.
+ * 
+ * MAINTENANCE: The CSS block at the bottom handles specific Aero glass effects
+ *              that override the default framework (Web Awesome) utility classes.
+ *              Ensure changes to the grid layout remain responsive across all
+ *              break points (Mobile -> Tablet -> Desktop).
+ * ============================================================================
+ */
 // includes/components/footers/raggiesoft-media/footer-corporate.php
 // The authoritative B2B footer for the holding entity.
 // Updated: Frutiger Aero / Dark Aero Master Glass
 ?>
 
+<!-- [LAYOUT] Main Footer Wrapper: Responsive grid handling branding, directory, and legal links -->
 <footer class="mt-auto py-5">
     <div class="container relative-z1">
         <div class="row gy-4">
@@ -20,6 +39,7 @@
                 </p>
             </div>
 
+            <!-- [UI COMPONENT] Operations Directory: Column containing internal licensing and project links -->
             <div class="col-lg-4 col-md-6">
                 <h6 class="text-uppercase fw-bold border-bottom border-secondary-subtle pb-2 mb-3 ">Operations Directory</h6>
                 <ul class="list-unstyled small mb-0">
@@ -57,6 +77,7 @@
                     </li>
                 </ul>
                 
+                <!-- [UI COMPONENT] Aero Glass Alert: Narrative/Security notice specifically styled for B2B contexts -->
                 <div class="aero-footer-alert p-3 small text-start mb-0" role="alert">
                     <strong class="d-block mb-1 text-uppercase font-monospace text-body-emphasis">
                         <i class="fa-solid fa-shield-check me-2 text-success" aria-hidden="true" style="filter: drop-shadow(0 0 4px rgba(56,229,77,0.5));"></i>Employment Notice

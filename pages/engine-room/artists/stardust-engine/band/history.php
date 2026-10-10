@@ -1,4 +1,34 @@
 <?php
+/**
+ * Stardust Engine - Official Band History Template
+ * 
+ * ARCHITECTURAL OVERVIEW:
+ * This file presents the chronological timeline of "The Stardust Engine", organized
+ * into distinct eras (Origins, Independence, Lottery, Fortress). It acts as the 
+ * core lore repository for the band's narrative arc.
+ * 
+ * DATA & SCHEMA:
+ * - Implements Schema.org AboutPage structured data. This connects the page content
+ *   to both the 'MusicGroup' (The Stardust Engine) and the 'Organization' (Engine Room Records).
+ * 
+ * LAYOUT STRUCTURE:
+ * - Uses a centralized Bootstrap 5 container with glassmorphism UI treatments.
+ * - Content is broken down into semantic <section> elements, each representing a specific era.
+ * - Incorporates varied UI treatments (e.g., standard text columns, bordered cards, 
+ *   and alert boxes) to visually distinguish key historical milestones.
+ * - Utilizes themed border and text colors (primary, warning, success, info) to create
+ *   a visual rhythm down the page.
+ * 
+ * DEPENDENCIES:
+ * - No custom component includes, entirely standard Bootstrap/HTML markup.
+ * - FontAwesome icons used for thematic flair (e.g., fa-graduation-cap, fa-ticket).
+ * 
+ * MAINTENANCE NOTES:
+ * - When adding new historical sections, follow the established pattern:
+ *   <section id="..."> with a thematic heading and matching border colors.
+ * - Ensure timeline logic remains consistent (e.g., verify dates like 1992 Independence).
+ */
+
 // pages/engine-room/artists/stardust-engine/band/history.php
 // The Official Timeline
 // UPDATED: Corrected 1992 Independence & 1996 Lottery Logic
@@ -21,12 +51,17 @@ $historySchema = [
     ]
 ];
 ?>
+<!-- BEGIN: AboutPage Schema.org Definition -->
 <script type="application/ld+json">
 <?php echo json_encode($historySchema, JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT); ?>
 </script>
+<!-- END: AboutPage Schema.org Definition -->
 
+<!-- BEGIN: Thematic Background FX Layer -->
 <div class="starfield-container"><div class="starfield-twinkling"></div></div>
+<!-- END: Thematic Background FX Layer -->
 
+<!-- BEGIN: Main Chronological Content Container -->
 <div class="container py-5 glass-container position-relative z-1">
     
     <div class="text-center mb-5">
@@ -39,6 +74,7 @@ $historySchema = [
         </p>
     </div>
 
+    <!-- ERA 1: Origins -->
     <section id="origins" class="mb-5">
         <h2 class="text-primary border-bottom border-primary pb-2 mb-4">
             1985-1992: The Ironheads & The Cold War

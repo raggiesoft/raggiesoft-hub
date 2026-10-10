@@ -1,4 +1,25 @@
 <?php
+/**
+ * ============================================================================
+ * ARCHITECTURAL MAINTENANCE BLOCK
+ * ============================================================================
+ * File: 12-the-extraction.php
+ * Component Type: Story / Lore HTML View (PHP Partial)
+ * 
+ * DESCRIPTION:
+ * Presents "Evidence Item #03: The Extraction" in the "Nine-Figure Refusal" arc. 
+ * Details the Stardust Engine family's tactical exit from the Omni-Global offices.
+ * 
+ * STRUCTURAL NOTES & CONSTRAINTS:
+ * - LORE-DRIVEN UI: Heavily leverages Bootstrap 5 cards (`bg-body-tertiary`), 
+ *   alerts, and FontAwesome icons to segment narrative phases. 
+ * - IMAGE OVERLAYS: Features a simulated "Security Footage" section using 
+ *   `cassidy-extraction.jpg`. Uses CSS filters (`contrast(1.1) sepia(0.2)`) and 
+ *   absolute positioning (`top-0 end-0`) to mimic a CCTV camera feed overlay. 
+ *   Preserve these styles and DOM nesting.
+ * - NAVIGATION: Concludes with the `$nav` narrative stepper configuration.
+ * ============================================================================
+ */
 // pages/engine-room/artists/stardust-engine/story/nine-figure-refusal/the-extraction.php
 // EVIDENCE ITEM #03: The Departure
 // Context: The family executes "Code Carry" and leaves the building.

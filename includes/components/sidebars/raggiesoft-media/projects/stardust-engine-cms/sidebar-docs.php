@@ -1,4 +1,19 @@
 <?php
+/**
+ * ARCHITECTURE & MAINTENANCE (LEGACY)
+ *
+ * This file provides the documentation navigation sidebar for the Stardust Engine CMS project pages.
+ * 
+ * DESIGN INTENT:
+ * - Implements the "Frutiger Aero Glass" visual aesthetic using custom CSS targeting Web Awesome (`<wa-button>`) components and standard links.
+ * - Separates internal documentation links from external repository links (GitHub).
+ * - Utilizes CSS Custom Properties (`var(--mpr-cyan-400)`, `var(--raggie-glass-bg)`) to automatically support theme switching.
+ * 
+ * MAINTENANCE NOTES:
+ * - Contains a substantial inline `<!-- LEGACY STYLING: Defines complex glassmorphism effects (backdrop-filters, inset shadows) specifically for this sidebar. -->
+<style>` block. As the Aero Glass theme is used elsewhere, these styles should ideally be abstracted into a global `_aero-glass.scss` file.
+ * - Relies on the `<wa-button appearance="plain">` Web Awesome component for navigation, styled to look like a list group item.
+ */
 // includes/components/sidebars/raggiesoft-media/projects/stardust-engine-cms/sidebar-docs.php
 // Documentation navigation for the Stardust Engine CMS.
 // Updated: Frutiger Aero Glass Navigation
@@ -61,6 +76,7 @@
     }
 </style>
 
+<!-- LEGACY LAYOUT: Primary documentation links container wrapped in a Web Awesome compatible Card structure. -->
 <div class="card bg-hud-base border-0 shadow-sm mb-4">
     <div class="card-body p-3 p-xl-4">
         <h5 class="pb-2 mb-3 border-bottom border-secondary-subtle text-uppercase h6 fw-bold ">

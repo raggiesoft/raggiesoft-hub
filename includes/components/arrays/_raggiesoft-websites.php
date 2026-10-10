@@ -1,7 +1,21 @@
 <?php
-// /includes/components/arrays/_raggiesoft-websites.php
-// Central source of truth for the RaggieSoft Network navigation.
-
+/**
+ * RaggieSoft Hub - Cross-Network Websites Dictionary
+ * 
+ * ARCHITECTURAL OVERVIEW:
+ * This data array acts as the central source of truth for top-level routing across the 
+ * various distinct domains/applications within the RaggieSoft ecosystem (e.g., the 
+ * corporate site, the Stardust Engine site, Knox, Portfolio).
+ * 
+ * LOGIC & CONSTRAINTS:
+ * - This array ($raggiesoftSites) is typically consumed by global navigation components 
+ *   (like a global footer or cross-site launcher).
+ * - Modifying URLs here will affect outbound links globally where this array is used.
+ * - Ensure icons exist in the FontAwesome library loaded by the consuming applications.
+ * 
+ * File Info: /includes/components/arrays/_raggiesoft-websites.php
+ * Central source of truth for the RaggieSoft Network navigation.
+ */
 $raggiesoftSites = [
     'network_home' => [
         'title' => 'RaggieSoft.com',

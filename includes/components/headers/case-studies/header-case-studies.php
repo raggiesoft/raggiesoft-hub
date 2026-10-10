@@ -1,6 +1,18 @@
 <?php
-// includes/components/headers/case-studies/header-case-studies.php
-// Header for the Case Studies / Operational Archives section
+/**
+ * RaggieSoft Hub - Case Studies Header
+ * 
+ * ARCHITECTURAL OVERVIEW:
+ * This component provides horizontal navigation for the "Case Studies / Operational Archives" 
+ * section of the hub. It uses Web Awesome components for the buttons and dropdown menus.
+ * 
+ * LOGIC & CONSTRAINTS:
+ * - Simple active state logic: checks if the exact URI is `/case-studies` for `$isOverview`.
+ * - Relies on standard FontAwesome `fa-duotone` classes for iconography.
+ * 
+ * File Info: includes/components/headers/case-studies/header-case-studies.php
+ * Header for the Case Studies / Operational Archives section
+ */
 
 $request_uri = $_SERVER['REQUEST_URI'] ?? '/';
 $isOverview = ($request_uri === '/case-studies');
@@ -15,6 +27,11 @@ $isOverview = ($request_uri === '/case-studies');
   
 
   
+    <!-- 
+      Static Active State:
+      The 'active' class is hardcoded here, though ideally it should use `$isOverview`.
+      Check if this matches intended behavior.
+    -->
     <wa-button appearance="plain" href="/case-studies" class="active">
         <i slot="start" class="fa-duotone fa-file-magnifying-glass me-2" aria-hidden="true"></i>Case Studies
     </wa-button>

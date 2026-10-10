@@ -1,6 +1,24 @@
 <?php
-// includes/components/sidebars/sidebar-discography.php
-// v2.1 - Fixed Variable Name Mismatch & Data Structure Access
+/**
+ * RaggieSoft Hub - Universal Discography Sidebar
+ * 
+ * ARCHITECTURAL OVERVIEW:
+ * This complex sidebar dynamically generates a Bootstrap 5 accordion menu based on 
+ * data provided by the `_discography.php` array. It categorizes albums into "Eras" 
+ * and automatically handles active state and accordion-open logic based on the 
+ * current URI.
+ * 
+ * LOGIC & CONSTRAINTS:
+ * - Data Source: `includes/components/arrays/_discography.php`. The structure of 
+ *   this array ($discographyLibrary) dictates the rendering.
+ * - Auto-Open Logic: Iterates through albums in an era; if any album's URL matches 
+ *   the current URI, that specific era's accordion is set to open (`$isOpen = true`).
+ * - Icons are hardcoded based on `$eraKey` (e.g., 'apex', 'freedom'). If new eras are
+ *   added to the data array, they will receive a fallback generic disc icon.
+ * 
+ * File Info: includes/components/sidebars/sidebar-discography.php
+ * v2.1 - Fixed Variable Name Mismatch & Data Structure Access
+ */
 
 // 1. Ensure Data exists
 include_once ROOT_PATH . '/includes/components/arrays/_discography.php';
@@ -50,6 +68,11 @@ $current_req = $_SERVER['REQUEST_URI'];
 
             <div class="accordion-item bg-transparent border-0">
                 <h2 class="accordion-header" id="<?php echo $headingId; ?>">
+                    <!-- 
+                      Accordion Button:
+                      Applies the 'collapsed' class dynamically if this era is not active.
+                      `data-bs-target` links to the generated `$collapseId` to toggle visibility.
+                    -->
                     <button class="accordion-button bg-transparent shadow-none p-2  fw-bold <?php echo $isOpen ? '' : 'collapsed'; ?>" 
                             type="button" 
                             data-bs-toggle="collapse" 

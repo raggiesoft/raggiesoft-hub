@@ -1,8 +1,17 @@
 <?php
+/**
+ * @file overview.php
+ * @description Landing page for the artist 'The Winter Palace'.
+ * @context Explains the lore behind Holly O'Connell's acquisition of the band's catalog to save a specific track ("Upon This Winter's Night") for Julian. Uses the "ad-astra" page theme.
+ * @architecture Static HTML/PHP template detailing band lore, utilizing Bootstrap grid and styled cards.
+ * @maintenance The content is static lore. Ensure that paths to the legacy release images are correct.
+ */
+// INLINE: Set page title and define the 'ad-astra' theme for global layout
 $pageTitle = "The Winter Palace - Engine Room Records";
 $pageTheme = "ad-astra"; 
 ?>
 
+<!-- INLINE: Main container for the Winter Palace overview -->
 <div class="container py-5">
     
     <nav aria-label="breadcrumb" class="mb-4">
@@ -61,6 +70,7 @@ $pageTheme = "ad-astra";
             
             <h2 class="h4 fw-bold text-light border-bottom border-secondary pb-2 mb-4">Featured Legacy Release</h2>
             
+            <!-- INLINE: Featured legacy release showcase -->
             <div class="card glass-card border-secondary mb-4">
                 <div class="row g-0 align-items-center">
                     <div class="col-md-4">

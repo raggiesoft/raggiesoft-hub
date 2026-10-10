@@ -3,6 +3,23 @@
 // Navigation for the Global Contact Hub.
 // UPDATED: Matches the new RaggieSoft Hub structure (Architect vs. Creative)
 
+/**
+ * ARCHITECTURE & MAINTENANCE NOTES:
+ * 
+ * Component: Global Contact Hub Header
+ * Purpose: Navigation specifically scoped for the global contact forms and associated routing.
+ * 
+ * Strategy & Implementation:
+ * - Provides immediate escape hatches back to core network domains (Home, Engine Room).
+ * - Implements Web Awesome dropdown `<wa-dropdown>` for nested recruiter/architect links to preserve screen real estate.
+ * - The active state ($isArchitect) focuses on the Architect sub-domain given its proximity to contact operations.
+ * 
+ * Maintenance Recommendations:
+ * - Ensure that paths provided in the `<wa-dropdown-item>` components reflect the canonical routes in the routing engine.
+ * - Avoid bloating this header with too many external links; keep the focus on communication and professional inquiry.
+ */
+
+// Evaluate request path to determine if we are in the context of the Architect's profile
 $request_uri = $_SERVER['REQUEST_URI'] ?? '/';
 $isArchitect = (str_starts_with($request_uri, '/about/michael-ragsdale'));
 ?>
@@ -16,6 +33,7 @@ $isArchitect = (str_starts_with($request_uri, '/about/michael-ragsdale'));
   
 
   
+  <!-- Architect Navigation: Consolidates resume and overview links for recruiters -->
   <wa-dropdown placement="bottom-start">
     <wa-button class="nav-link  <?php echo $isArchitect ? 'active' : ''; ?>" slot="trigger" appearance="plain">
         <i class="fa-duotone fa-user-visor me-2" aria-hidden="true"></i>The Architect

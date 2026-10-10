@@ -1,4 +1,32 @@
 <?php
+/**
+ * Stardust Engine - Discography Template: Ad Astra Single Detail
+ * 
+ * ARCHITECTURAL OVERVIEW:
+ * This template renders the detailed single/suite page for "Ad Astra (Escape Velocity)".
+ * Because this track is the narrative anchor for the entire "Freedom Era," it receives
+ * a highly customized, standalone layout distinct from standard album pages.
+ * 
+ * LAYOUT STRUCTURE:
+ * - A custom full-bleed hero banner utilizing linear gradients and a specific background image.
+ * - The hero section includes a prominent "Launch Mission" button that integrates with
+ *   the global audio player (window.STARDUST_PLAYLIST) via custom JavaScript.
+ * - Terminal UI Component: A styled box representing an in-universe broadcast log.
+ * - Mission Data Sidebar: Uses Bootstrap's sticky-top class for a persistent metadata pane.
+ * - Suite Timeline: A vertical sequence of interactive cards representing the 4 movements
+ *   of the suite, complete with jump-links to specific timestamps in the audio player.
+ * 
+ * SCRIPT DEPENDENCIES:
+ * - The inline <script> at the bottom interfaces with the global window.STARDUST_PLAYLIST array
+ *   to find the correct track index and trigger playback.
+ * - It also defines window.seekTo() to handle jumping to specific seconds within the track.
+ * 
+ * MAINTENANCE NOTES:
+ * - DO NOT ALTER the timestamp jump links (onclick="seekTo(...)") unless the underlying audio
+ *   file has been re-rendered or modified. The narrative timing is precise.
+ * - Ensure window.STARDUST_PLAYLIST logic remains compatible with any global player refactors.
+ */
+
 // pages/discography/1995-the-warehouse-tapes/ad-astra.php
 // The Magnum Opus. The song they went to war for.
 
@@ -8,10 +36,14 @@ $pageTitle = "Ad Astra (Escape Velocity) - The Stardust Engine";
 $album_path_web = '/engine-room-records/artists/the-stardust-engine/1995-ad-astra-single';
 ?>
 
+<!-- BEGIN: Thematic Background Animation Layer -->
 <div class="starfield-container"><div class="starfield-twinkling"></div></div>
+<!-- END: Thematic Background Animation Layer -->
 
+<!-- BEGIN: Main Page Content Container -->
 <div class="container pb-5 glass-container">
     
+    <!-- BEGIN: Custom Hero Section -->
     <div style="background: linear-gradient(to bottom right, rgba(5, 5, 8, 0.8), rgba(5, 5, 8, 0.6)), url('<?php echo $cdnBaseUrl; ?>/stardust-engine/images/story/ad-astra/harmonic-velocity.jpg') center/cover no-repeat;">
         <div class="text-center mb-5 fade-in-up">
             <span class="badge rounded-pill border border-warning text-warning mb-3 px-3 py-2 shadow-glow">
@@ -66,7 +98,9 @@ $album_path_web = '/engine-room-records/artists/the-stardust-engine/1995-ad-astr
             </div>
         </div>
     </div>
+    <!-- END: Custom Hero Section -->
 
+    <!-- BEGIN: Terminal UI Lore Log -->
     <div class="row justify-content-center mb-5">
         <div class="col-lg-10">
             <div class="card terminal-card p-4 border-start border-info border-4">
@@ -94,9 +128,11 @@ $album_path_web = '/engine-room-records/artists/the-stardust-engine/1995-ad-astr
             </div>
         </div>
     </div>
+    <!-- END: Terminal UI Lore Log -->
 
     <hr class="border-secondary opacity-25 mb-5">
 
+    <!-- BEGIN: Suite Timeline Layout (2-Column Grid) -->
     <div class="row g-5">
         
         <div class="col-lg-4">
@@ -201,8 +237,11 @@ $album_path_web = '/engine-room-records/artists/the-stardust-engine/1995-ad-astr
 
         </div>
     </div>
+    <!-- END: Suite Timeline Layout -->
 </div>
+<!-- END: Main Page Content Container -->
 
+<!-- BEGIN: Page-Specific Audio Player Integration Scripts -->
 <script>
     // Wait for DOM
     document.addEventListener('DOMContentLoaded', () => {
@@ -247,3 +286,4 @@ $album_path_web = '/engine-room-records/artists/the-stardust-engine/1995-ad-astr
         };
     });
 </script>
+<!-- END: Page-Specific Audio Player Integration Scripts -->

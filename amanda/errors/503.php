@@ -1,13 +1,30 @@
 <?php
-// public/errors/503.php
-// Theme: Knox / Industrial / Maintenance
-// Context: "In The Studio" / Service Unavailable
+/**
+ * Stardust Engine - 503 Service Unavailable Error Page
+ * 
+ * ARCHITECTURAL OVERVIEW:
+ * A custom error page designed to handle HTTP 503 (Service Unavailable) errors, 
+ * typically triggered during planned maintenance or server overloads.
+ * Features dual-mode execution (standalone via web server vs router).
+ * 
+ * LORE CONTEXT:
+ * Themed as "In The Studio" or "System Maintenance" within the Fortress.
+ * 
+ * LOGIC & CONSTRAINTS:
+ * - Standalone Mode (`$is_standalone`): Handles manual inclusion of the header/footer 
+ *   if bypassed by the main router (e.g., during actual maintenance where the router is down).
+ * 
+ * File Info: public/errors/503.php
+ * Theme: Knox / Industrial / Maintenance
+ * Context: "In The Studio" / Service Unavailable
+ */
 
 // Detect if loaded directly by Nginx or via Router
+// If ROOT_PATH is missing, this was triggered by the server's ErrorDocument directive.
 $is_standalone = !defined('ROOT_PATH');
 
 if ($is_standalone) {
-    // Fix Path: Go up 2 levels from /public/errors/ to get to project root
+    // Fix Path: Go up 2 levels from /amanda/errors/ to get to project root
     define('ROOT_PATH', realpath(__DIR__ . '/../../'));
     
     // 2. Set Headers
@@ -17,10 +34,10 @@ if ($is_standalone) {
     $pageTitle = "503 Service Unavailable - The Stardust Engine";
     $pageTheme = "ad-astra"; 
     
-    // 4. Load Header
+    // 4. Load Header manually since the router didn't do it
     require_once ROOT_PATH . '/includes/header.php';
     
-    // 5. Open Wrapper
+    // 5. Open Wrapper to match the router's standard DOM structure
     echo '<div class="container-fluid flex-grow-1 d-flex"><div class="row flex-grow-1"><main id="main-content" class="col-12 p-0">';
 }
 ?>

@@ -1,4 +1,20 @@
 <?php
+/**
+ * ARCHITECTURE & LORE SYSTEM
+ * -------------------------------------------------------------------------
+ * File: destination-dispatch-elevators.php
+ * Component Type: User Guide / Technical Document
+ * Purpose: Instructs users on the Destination Dispatch elevator system and highlights its accessibility features.
+ * 
+ * DESIGN CONSTRAINTS:
+ * - Incorporates decorative typography (`.step-number`) utilizing the 'Audiowide' font for a technical feel.
+ * - Uses adaptive coloring (`--bs-tertiary-color`) to ensure watermark numbers look correct in both Light/Dark modes.
+ * - Contains a collapsible FAQ accordion using Bootstrap's native `accordion-flush` component.
+ * 
+ * MAINTENANCE NOTES:
+ * - If modifying the `accordion`, verify `data-bs-toggle` and `data-bs-target` IDs match exactly (`#collapse1`, `#faq1`).
+ * - Narrative focus on "ADA Mode" and cognitive safety must remain central to the copy.
+ */
 // pages/engine-room/jessica-miller-center/destination-dispatch-elevators.php
 // Public Guide: Destination Dispatch & Accessibility Features
 // Context: Universal Design standard for JMC vertical transport.

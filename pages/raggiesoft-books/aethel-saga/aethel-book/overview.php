@@ -1,8 +1,23 @@
 <?php
+/**
+ * ============================================================================
+ * ARCHITECTURE & AETHEL SAGA INDEX:
+ * This file serves as the Table of Contents / Index for "The Silver Gauntlet of Aethel".
+ * It consumes the book structure ($bookData) loaded by `nav-logic.php` and renders
+ * a nested directory of Parts and Chapters.
+ * 
+ * Future Maintenance:
+ * - The UI relies on Bootstrap 5 cards and custom classes (.aethel-theme, .tome-container).
+ * - Ensure the CDN asset path for the cover art remains valid.
+ * - The dynamically generated URLs must match the Elara SPA routing format:
+ *   /library/aethel/aethel-book/{bookId}/{partId}/{chapterId}
+ * ============================================================================
+ */
 // Context: Book Index / Table of Contents
 $currentSite = 'aethel';
 $pageTitle = "Table of Contents - The Silver Gauntlet";
 
+// ARCHITECTURE: Fetch JSON manifest containing the structural hierarchy of the book
 // Load the book data (reusing the logic we built for the sidebar)
 require_once ROOT_PATH . '/includes/utils/nav-logic.php';
 ?>
@@ -31,6 +46,7 @@ require_once ROOT_PATH . '/includes/utils/nav-logic.php';
             <div class="row justify-content-center">
                 <div class="col-lg-10">
                     
+                    <!-- ARCHITECTURE: Iterate through the top-level book manifest -->
                     <?php foreach ($bookData['structure'] as $book): ?>
                         <div class="mb-5">
                             
@@ -44,6 +60,7 @@ require_once ROOT_PATH . '/includes/utils/nav-logic.php';
                             <?php foreach ($book['parts'] as $part): ?>
                                 <div class="card bg-transparent border-secondary mb-4 shadow-sm" style="border-color: rgba(139, 69, 19, 0.3) !important;">
                                     
+                                    <!-- ARCHITECTURE: Render Part headers (e.g., Part I, Part II) -->
                                     <div class="card-header bg-transparent border-secondary border-opacity-25 text-center py-3" 
                                          style="background-color: rgba(139, 69, 19, 0.05);">
                                         <h3 class="h5 m-0 text-uppercase fw-bold" style="color: var(--aethel-rust); letter-spacing: 1px;">

@@ -1,4 +1,19 @@
 <?php
+/**
+ * ============================================================================
+ * ARCHITECTURE & OBSIDIAN MD ROUTING:
+ * This is the core Markdown rendering engine for the Elara SPA. It intercepts
+ * raw Obsidian markdown files (.md) and dynamically converts them to HTML.
+ * Crucially, it resolves Obsidian-style internal links ([[Link]]) into 
+ * valid SEO-friendly canonical URLs using the `toc.json` manifest.
+ * 
+ * Future Maintenance:
+ * - `ACTIVE_MD_FILE` must be defined by the upstream Elara router before inclusion.
+ * - The regex intercept (`preg_replace_callback`) is performance-critical; it scans
+ *   the entire `toc.json` tree for match resolution.
+ * - Parsedown (3rd party) is required for final HTML generation.
+ * ============================================================================
+ */
 // Prevent direct access if Elara didn't route this
 if (!defined('ACTIVE_MD_FILE')) {
     die("No narrative file specified.");
@@ -11,6 +26,7 @@ if (!file_exists($markdownPath)) {
     echo "<h1>Error: Narrative segment not found.</h1>";
     echo "<p>System attempted to load: <code>" . htmlspecialchars(ACTIVE_MD_FILE) . "</code></p>";
 } else {
+    // ARCHITECTURE: Load the target text artifact from the local filesystem
     // 1. Ingest the raw Markdown from the file system
     $rawMarkdown = file_get_contents($markdownPath);
     
@@ -20,6 +36,7 @@ if (!file_exists($markdownPath)) {
         $katie = json_decode(file_get_contents($katiePath), true);
     }
     
+    // ARCHITECTURE: Intercept and translate proprietary Obsidian syntax to standard web routes
     // 3. The Obsidian Link Intercept
     // Searches for [[Target]] or [[Target|Display Text]]
     $processedMarkdown = preg_replace_callback(
@@ -47,6 +64,7 @@ if (!file_exists($markdownPath)) {
                             $cleanFilePath = str_replace('.md', '', $part['file_path']);
                             
                             // If the Obsidian link matches the file path in the manifest
+                            // ARCHITECTURE: Deep-scan manifest resolution for internal linking
                             if (str_ends_with($cleanFilePath, $cleanTarget) || $cleanFilePath === $cleanTarget) {
                                 $resolvedUrl = "/{$bookSlug}/{$chapSlug}/{$partSlug}";
                                 break 3; // Break out of all three loops immediately to save memory

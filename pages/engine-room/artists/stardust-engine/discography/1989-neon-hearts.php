@@ -1,4 +1,25 @@
 <?php
+/**
+ * ============================================================================
+ * ARCHITECTURE & MAINTENANCE NOTES
+ * ============================================================================
+ * File: pages/engine-room/artists/stardust-engine/discography/1989-neon-hearts.php
+ * 
+ * 1. Lore Context:
+ *    - The 1989 "Panic" Album. Created under intense studio pressure from Apex Records 
+ *      following the Cydele "Sermon" controversy.
+ *    - Represents a clash of "Studio Overcorrection" vs. "Artist Rebellion," famously 
+ *      featuring the canceled track "The Promise."
+ * 
+ * 2. Component Architecture:
+ *    - Uses shared `_album-art-header.php` component with the 'pact' variant (pink border) 
+ *      to visually signal Apex Records' oppressive contractual control.
+ *    - Uses standard Bootstrap 5 container and grid layouts, along with `_tracklist-downloader.php`.
+ * 
+ * 3. Maintenance Rule:
+ *    - DO NOT alter the Bootstrap 5 DOM layout or the 'pact' variant designation.
+ * ============================================================================
+ */
 // Page data
 $pageTitle = "Neon Hearts (1989) - The Stardust Engine";
 $album_path_web = '/engine-room-records/artists/the-stardust-engine/1989-neon-hearts';

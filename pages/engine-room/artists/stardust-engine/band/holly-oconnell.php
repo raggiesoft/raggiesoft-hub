@@ -1,4 +1,31 @@
 <?php
+/**
+ * ============================================================================
+ * ARCHITECTURE & MAINTENANCE NOTES
+ * ============================================================================
+ * File: pages/engine-room/artists/stardust-engine/band/holly-oconnell.php
+ * 
+ * 1. Lore Context:
+ *    - Holly O'Connell is "The Anchor" and "The Architect". She is the Manager, CEO, 
+ *      and CFO of Engine Room Records, LLC.
+ *    - She aggressively acquired legal (J.D., 4 Bar Admissions) and financial 
+ *      certifications (CFA, LL.M. Taxation) to build the "Forger Nation Trust", 
+ *      protecting the family's empire post-lottery win.
+ * 
+ * 2. Component Architecture:
+ *    - Generates Schema.org JSON-LD for the `Person` entity.
+ *    - Implements highly complex, interactive UI using Web Awesome components 
+ *      (`<wa-button>`, `<wa-dialog>`) combined with Bootstrap 5.
+ *    - Uses vanilla JavaScript to bind dynamic "Credential Modal" lore data via 
+ *      `data-*` attributes (`data-title`, `data-desc`, `data-lore`).
+ * 
+ * 3. Maintenance Rule:
+ *    - DO NOT alter the `data-*` attribute structure on the `<wa-button>` elements, 
+ *      as the vanilla JS logic depends on them.
+ *    - Maintain the custom shadow DOM styling overrides (`wa-dialog::part(...)`) 
+ *      at the bottom of the file to ensure the dark theme renders correctly.
+ * ============================================================================
+ */
 // pages/engine-room/artists/stardust-engine/band/holly-oconnell.php
 // The "Anchor" and the "Architect".
 // UPDATED: Added Legal Credentials (J.D. + 4 Bar Admissions) to the timeline.

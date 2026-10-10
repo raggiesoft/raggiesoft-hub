@@ -1,4 +1,19 @@
 <?php
+/**
+ * Organizational Structure - The O'Connell Family Revocable Trust
+ *
+ * This file renders the "Iceberg" Model corporate hierarchy. It dynamically fetches 
+ * organizational data from a JSON file and includes a component to render the org chart.
+ *
+ * Architecture Notes:
+ * - Relies on `file_get_contents` to fetch `corporate-structure.json` from the CDN.
+ * - Renders the UI using `org-chart.php` component.
+ * - Contains custom CSS for the "waterline" and catalyst card elements.
+ *
+ * Maintainer Note: Changes to the organizational structure should be made in the JSON data file, 
+ * not here. This file merely fetches and delegates rendering.
+ */
+
 // pages/engine-room/corporate/structure.php
 // The Corporate Hierarchy (The "Iceberg" Model)
 // Context: Visualizing how a $2.4B Trust hides behind a rock band.
@@ -35,6 +50,7 @@ $pageTitle = "Organizational Structure - The O'Connell Family Revocable Trust";
 
 <div class="container py-5">
 
+    <!-- PAGE HEADER -->
     <div class="row justify-content-center mb-5">
         <div class="col-lg-10 text-center">
             <h6 class="text-uppercase text-body-secondary fw-bold letter-spacing-2 mb-2">Governance & Oversight</h6>

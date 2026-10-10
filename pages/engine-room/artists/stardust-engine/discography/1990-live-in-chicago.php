@@ -1,8 +1,17 @@
 <?php
+/**
+ * @file 1990-live-in-chicago.php
+ * @description Lore and tracklist page for the "Live in Chicago (1990)" EP.
+ * @context Highlights the "cold war" era with Apex Records, specifically the engineering sabotage (muting Cassidy's synth/vocals) that became a plot point in the lore.
+ * @architecture Static PHP page using the shared `_album-art-header.php` and `_tracklist-downloader.php` components.
+ * @maintenance Update DSP links once DistroKid clears the release. Update HTML for any lore changes.
+ */
 // Page data
+// INLINE: Define page title and CDN path for the tracklist fetcher
 $pageTitle = "Live in Chicago (1990) - The Stardust Engine";
 $album_path_web = '/engine-room-records/artists/the-stardust-engine/1990-live-in-chicago';
 
+// INLINE: Define DSP platform IDs for dynamic routing
 // Streaming Services IDs
 // (Populate these with the unique platform IDs when DistroKid clears the release)
 $id_spotify = "";
@@ -45,6 +54,7 @@ $id_youtube = "";
 
     <?php include ROOT_PATH . '/includes/components/_tracklist-downloader.php'; ?>
 
+    <!-- INLINE: Lore section detailing the engineering sabotage and "phantom vocal" -->
     <div class="row g-4 mt-4">
         
         <div class="col-lg-4">

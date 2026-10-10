@@ -1,9 +1,25 @@
 <?php
+/**
+ * ============================================================================
+ * ARCHITECTURE & LORE ENCYCLOPEDIA (SENSORY SCALE):
+ * This document defines the 5-Level "Sensory Scale," a meta-contextual framework
+ * used to calibrate AI story generation and maintain narrative consistency regarding
+ * autistic meltdowns within the Ocean View Archives.
+ * 
+ * Future Maintenance:
+ * - This file utilizes Web Awesome (Shoelace) web components (<wa-card>, <wa-alert>) 
+ *   rather than standard Bootstrap for its UI. Ensure the Web Awesome library is 
+ *   loaded in the global scope.
+ * - Do NOT remove the strict AI warning blocks; they are essential prompt engineering
+ *   guardrails to prevent the LLM from writing immersion-breaking dialogue.
+ * ============================================================================
+ */
 $pageTitle = "Sensory Scale - Encyclopedia";
 ?>
 
 <div class="container py-5" style="max-width: 900px;">
     
+    <!-- ARCHITECTURE: Critical Prompt Engineering directive. Must remain visible in HTML source. -->
     <!-- AI Rule Warning -->
     <wa-alert variant="warning" open class="mb-5 shadow-sm">
         <wa-icon slot="icon" name="robot" variant="duotone"></wa-icon>
@@ -113,6 +129,7 @@ $pageTitle = "Sensory Scale - Encyclopedia";
         </div>
     </wa-card>
 
+    <!-- ARCHITECTURE: Level 5 collapse includes internal routing links to historical narrative case studies -->
     <!-- Level 5 -->
     <wa-card class="w-100 mb-5 shadow-lg" style="--wa-panel-background-color: var(--wa-color-neutral-900); --wa-color-neutral-1000: #000;">
         <div slot="header" class="d-flex justify-content-between align-items-center">

@@ -1,3 +1,17 @@
+<?php
+/**
+ * Signal Decryptor (Cipher App Overview)
+ *
+ * This file serves as the main user interface for the "Signal Decryptor" game, a modern
+ * interpretation of the classic "Bulls and Cows" / Mastermind logic puzzle.
+ *
+ * Architecture Notes:
+ * - Implements a form-driven interface for configuring game difficulty (Calibration, Orbital, Deep Space, Horizon).
+ * - Includes a "Stealth Protocol" toggle that interacts with the frontend JS to obscure codes and logs.
+ * - Relies heavily on `apps/cipher/js/cipher.js` for the client-side game loop and validation.
+ * - Future UI updates should ensure the difficulty inputs (`diffCalibration`, etc.) remain in sync with the JS constants.
+ */
+?>
 <div class="container py-5">
     <div class="row mb-4">
         <div class="col-lg-8">

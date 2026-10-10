@@ -11,6 +11,31 @@
  * except where commercial distribution exemptions apply (e.g., DSP streaming links).
  */
 
+/**
+ * ARCHITECTURE & MAINTENANCE NOTES:
+ * 
+ * Component: Universal Tracklist & Asset Downloader
+ * Purpose: Dynamically renders album metadata, tracklists, lyrics links, and DSP routing by parsing JSON files 
+ *          from the CDN. Integrates Fourthwall storefront routes and Free Archive ZIPs.
+ * 
+ * Strategy & Implementation:
+ * - Fetches `tracks.json` and `album.json` from the CDN path (derived from `$album_path_web`).
+ * - Employs robust fallback logic to translate `schema.org` native types into human-friendly strings 
+ *   (`$release_map`, `$production_map`).
+ * - Resolves DSP streaming links by matching the current album against a global `albums.json` via URL or folder slugs.
+ * - Bridges server-side rendering with client-side architecture by dispatching a custom `stardust:playlist-update` 
+ *   event with a JSON payload for the persistent audio player.
+ * 
+ * Maintenance Recommendations:
+ * - Do NOT alter the `schema.org` parsing keys unless the underlying JSON structures on the CDN are permanently changed.
+ * - If new DSP platforms are added to Fourthwall/Engine Room records, add them to the global `albums.json` and 
+ *   extend the UI logic here to render the new button.
+ * - Handle `$cdnBaseUrl` and `file_get_contents` with care; network latency to the CDN will delay page rendering 
+ *   since this runs synchronously. Ensure CDN caching is active upstream.
+ */
+
+// Resolve CDN endpoint dynamically using the injected $album_path_web variable
+// Query parameters are appended to bypass edge caching during active development/updates
 $base_web_path = $cdnBaseUrl . $album_path_web;
 $tracks_json_url = $base_web_path . '/tracks.json?v=' . time();
 $album_json_url = $base_web_path . '/album.json?v=' . time();
@@ -53,6 +78,7 @@ $real_release_year = $real_release_date !== 'TBA' ? substr(trim($real_release_da
 $album_name = isset($album_data['name']) ? $album_data['name'] : 'Unknown Album';
 $archive_base_name = get_archive_name($album_name, $narrative_year);
 
+// Evaluate Schema.org 'byArtist' property; default to the Label entity if artist metadata is omitted
 // Define the Artist Name for UI rendering, defaulting to the label
 $display_artist = !empty($album_data['byArtist']['name']) ? $album_data['byArtist']['name'] : 'Engine Room Records';
 

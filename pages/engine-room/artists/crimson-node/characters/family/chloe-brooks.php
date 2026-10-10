@@ -1,3 +1,20 @@
+<?php
+/**
+ * Crimson Node - Chloe Brooks Profile
+ *
+ * This file renders the character biography for Chloe Brooks, Conservatory Flute player.
+ * It details her academic anchor role and her clinical partnership with Emily.
+ *
+ * Architecture Notes:
+ * - Designed as an HTML fragment to be included dynamically within a parent layout template.
+ * - Uses a two-column Bootstrap 5 layout (`col-lg-4` sidebar, `col-lg-8` main content).
+ * - Implements a secondary/grey (`#6c757d`) accent color scheme to match her academic persona.
+ *
+ * Maintainer Note: This is an include fragment. Do not wrap in `<html>` or `<body>` tags.
+ * Maintain the existing class structures for the Quick Stats card.
+ */
+?>
+<!-- PROFILE FRAGMENT -->
 <div class="row">
     <div class="col-12 mb-4">
         <h1 class="display-4 fw-bold" style="font-family: 'Impact', sans-serif; letter-spacing: 2px;">

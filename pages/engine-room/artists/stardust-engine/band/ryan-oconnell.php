@@ -1,4 +1,26 @@
 <?php
+/**
+ * ============================================================================
+ * ARCHITECTURE & MAINTENANCE NOTES
+ * ============================================================================
+ * File: pages/engine-room/artists/stardust-engine/band/ryan-oconnell.php
+ * 
+ * 1. Lore Context:
+ *    - Ryan O'Connell is "The Engine" and lead vocalist of The Stardust Engine.
+ *    - Following a catastrophic T10 spinal cord injury in 1990 ("The Crash"), 
+ *      he became a wheelchair user and engineered a custom setup to continue performing.
+ *    - He is the defiant center of the 1992 "Friction" scandal where he protected his sister Cassidy.
+ * 
+ * 2. Component Architecture:
+ *    - Constructs a Schema.org `Person` JSON-LD linked to the main `MusicGroup`.
+ *    - Layout integrates Bootstrap 5 grids, custom visual classes (`starfield-container`, 
+ *      `glass-container`, `text-glow-primary`), and relies on the shared `card.php` component.
+ * 
+ * 3. Maintenance Rule:
+ *    - DO NOT modify the structural HTML or the Bootstrap 5 and custom cosmic classes.
+ *    - The Schema.org generation logic must be preserved for SEO continuity.
+ * ============================================================================
+ */
 // pages/engine-room/artists/stardust-engine/band/ryan-oconnell.php
 // The "Engine" and the "Protector".
 // Context: The creative force and the survivor.

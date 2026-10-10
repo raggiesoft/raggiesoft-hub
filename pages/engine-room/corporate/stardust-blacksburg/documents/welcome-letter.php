@@ -1,4 +1,18 @@
 <?php
+/**
+ * ============================================================================
+ * ARCHITECTURE & CORPORATE LORE (WELCOME LETTER):
+ * This file presents the official "Welcome Letter" for Stardust Blacksburg residents.
+ * It establishes the strict, academic-focused tone of the property management
+ * and clearly outlines the community rules (No Alcohol, No Smoking).
+ * 
+ * Future Maintenance:
+ * - The `@media print` CSS block ensures this page can be printed directly as an
+ *   official document, stripping shadows and forcing black ink for the signature.
+ * - The UI utilizes standard Bootstrap 5 layouts, relying on semantic colors
+ *   (danger for rules, success for amenities) to guide the reader.
+ * ============================================================================
+ */
 // pages/engine-room/corporate/stardust-blacksburg/documents/welcome-letter.php
 // Context: The official "Day 1" communication for new residents.
 // Theme: Professional, Academic, and Firm.
@@ -20,6 +34,7 @@ $pageTitle = "Welcome to The Ironwood Collective";
     }
 
     /* Print-specific styles to ensure the letter looks official on paper */
+    /* ARCHITECTURE: Print stylesheet to allow this page to serve as physical onboarding collateral */
     @media print {
         .signature-text {
             color: #000 !important; /* Force black ink for printing */
@@ -57,6 +72,7 @@ $pageTitle = "Welcome to The Ironwood Collective";
                 </p>
             </div>
 
+            <!-- ARCHITECTURE: Amenity summary highlighting the "Scholar-Grade" infrastructure -->
             <div class="card bg-light border-0 mb-5 shadow-sm">
                 <div class="card-body p-4">
                     <h5 class="text-primary fw-bold text-uppercase mb-3">
@@ -80,6 +96,7 @@ $pageTitle = "Welcome to The Ironwood Collective";
             </div>
 
             <div class="mb-5">
+                <!-- ARCHITECTURE: Strict covenant enforcement block. The core lore differentiator. -->
                 <h5 class="text-danger fw-bold text-uppercase mb-3 border-bottom border-danger pb-2">
                     <i class="fa-solid fa-file-signature me-2"></i>The Ironwood Covenant
                 </h5>

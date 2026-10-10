@@ -1,4 +1,35 @@
 <?php
+/**
+ * ARCHITECTURAL DOCBLOCK
+ * 
+ * File: raggiesoft-hub/includes/components/footers/engine-room/artists/stardust-engine/footer-stardust.php
+ * Path: /includes/components/footers/engine-room/artists/stardust-engine/footer-stardust.php
+ * 
+ * CORE RESPONSIBILITY:
+ * Reusable UI Component: Artist Footer (The Stardust Engine).
+ * Renders the dedicated footer for the flagship "The Stardust Engine" artist section.
+ * 
+ * LORE CONTEXT:
+ * - Leans heavily into the 80s Synth-Pop and digital frontier aesthetic.
+ * - Directs users to the discography, band roster, lore, and official storefront.
+ * 
+ * UI/UX & STYLING ARCHITECTURE:
+ * - Forces a dark aesthetic (`.bg-black`, `.text-white-50`) regardless of global theme,
+ *   matching the neon/cyber aesthetic of the band.
+ * - Defines custom inline CSS for neon hover effects (`.hover-neon-blue`, `.hover-neon-purple`)
+ *   using text-shadow drops to simulate glowing text.
+ * - Applies a custom `.drop-shadow-neon` to the main band logo.
+ * 
+ * DEPENDENCIES & INCLUSIONS:
+ * - Requires `$cdnBaseUrl` to resolve the `band-logo.png` and Engine Room Records logo.
+ * 
+ * MAINTENANCE NOTES:
+ * - This footer is specifically designed to remain dark and neon-accented. Do not attempt
+ *   to apply `[data-bs-theme="light"]` overrides here, as it breaks the intended artistic
+ *   visual identity.
+ * - The Engine Room logo uses a generic `.logo-invert` class; ensure the global stylesheet
+ *   provides this class to make the black logo visible against the `.bg-black` background.
+ */
 // includes/components/footers/engine-room/artists/stardust-engine/footer-stardust.php
 // The dedicated footer for The Stardust Engine
 ?>

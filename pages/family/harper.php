@@ -1,9 +1,24 @@
 <?php
+/**
+ * ============================================================================
+ * ARCHITECTURE & PERSONA THEME:
+ * This file renders the "Harper" persona page, representing the "Studio Engineer".
+ * The theme utilizes purple accents (via var(--family-harper)) and a mock terminal UI
+ * to convey her role in the Engine Room Records audio processing pipeline.
+ * 
+ * Future Maintenance:
+ * - The mock terminal uses a custom CSS animation (.blink-cursor) scoped to this page.
+ * - Image paths rely on $cdnBaseUrl; ensure it's available in the execution scope.
+ * - The layout relies on custom CSS variables (e.g., --family-harper) which must
+ *   be defined in the global stylesheet.
+ * ============================================================================
+ */
 // pages/family/harper.php
 // Theme: Harper (High Energy, Purple, Studio)
 ?>
 <div class="card mb-5 border-0 shadow-sm overflow-hidden bg-body-tertiary">
     <div class="row g-0">
+        <!-- ARCHITECTURE: Persona image wrapper with thematic purple overlay -->
         <div class="col-lg-4 position-relative" style="min-height: 300px;">
             <img src="<?php echo $cdnBaseUrl; ?>/family/images/atmospheric/harper.jpg" 
                  class="position-absolute w-100 h-100" 
@@ -93,6 +108,7 @@
 
 <div class="row">
     <div class="col-12">
+        <!-- ARCHITECTURE: Mock terminal UI representing Harper's processing logs -->
         <div class="card shadow-lg font-monospace" style="background-color: #0d1117; color: #c9d1d9; border: 1px solid var(--family-harper);">
             <div class="card-header fw-bold d-flex justify-content-between align-items-center" 
                  style="background-color: rgba(102, 16, 242, 0.15); border-bottom: 1px solid var(--family-harper); color: #d0bfff;">

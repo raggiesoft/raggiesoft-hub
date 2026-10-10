@@ -1,4 +1,29 @@
 <?php
+/**
+ * Aethel Lore: Overview & Cosmology
+ *
+ * ARCHITECTURE & CONTEXT:
+ * This page serves as the entry hub for the deeper mythological lore of the Aethel universe.
+ * It immediately introduces the core cosmological twist: the binary star system (Twin Suns)
+ * are alive, and have manifested as the mortal twins, Kaelan (Sol-Aura) and Kaela (Lun-Argent).
+ * 
+ * It sets the stakes of the conflict (The Eclipse Ritual) where Malakor attempts to 
+ * drain their celestial essence.
+ *
+ * UI/UX ARCHITECTURE:
+ * - Built on the global `.aethel-theme` with custom `.tome-container` styling to 
+ *   simulate reading an ancient manuscript.
+ * - Utilizes `<article>` and `.drop-cap` for semantic, stylized prose formatting.
+ * - Uses contrasting background colors (`rgba(212, 175, 55, 0.1)` for Gold, 
+ *   `rgba(192, 192, 192, 0.1)` for Silver) to visually distinguish the twin suns.
+ * - Displays a heavily styled `.alert` block to highlight "The Eclipse Ritual".
+ *
+ * MAINTENANCE NOTES:
+ * - Breadcrumbs point to `/library/aethel`. Ensure router definitions map correctly.
+ * - The "Figures of Legend" card points to `/library/aethel/lore/characters`. Keep 
+ *   link targets valid as the Civilopedia expands.
+ */
+
 $currentSite = 'aethel';
 $pageTitle = "Lore: The Archives of Aethel";
 ?>

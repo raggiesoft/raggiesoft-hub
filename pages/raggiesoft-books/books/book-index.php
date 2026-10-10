@@ -1,5 +1,19 @@
 <?php
-// pages/raggiesoft-books/books/book-index.php
+/**
+ * RaggieSoft Architecture - Page Component
+ * 
+ * File: pages/raggiesoft-books/books/book-index.php
+ * Component: Mini Table of Contents (Single Book)
+ * Type: Routing / Navigation UI
+ * 
+ * Description:
+ * Renders the chapter list for a specific book within a larger series.
+ * Uses the global $katie (TOC JSON payload) to build the list dynamically.
+ *
+ * Maintenance Notes:
+ * - Expects $katie, $bIndex, and $seriesSlug to be set by the calling script (viewer.php).
+ * - Uses Web Awesome (wa-icon) web components for icons.
+ */
 // Mini TOC for a single Book
 
 global $katie, $bIndex, $seriesSlug;

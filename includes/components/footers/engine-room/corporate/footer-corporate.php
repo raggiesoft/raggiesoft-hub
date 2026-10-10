@@ -1,4 +1,18 @@
 <?php
+/**
+ * ARCHITECTURE & MAINTENANCE (LEGACY)
+ *
+ * This file provides the specialized footer for the "O'Connell Family Trust" corporate intranet pages.
+ * 
+ * DESIGN INTENT:
+ * - Establishes a formal, legalistic, and secure tone ("Stewardship. Sovereignty. Silence.") differentiating it from the public-facing Engine Room band pages.
+ * - Utilizes a strict dark theme (`bg-black`, `text-white-50`) to evoke a sense of a private, high-security data terminal.
+ * - Includes visual deterrents (e.g., `cursor-not-allowed` on Restricted links) to reinforce the immersive "corporate espionage" lore.
+ * 
+ * MAINTENANCE NOTES:
+ * - The layout relies on standard Bootstrap 5 grids, but uses localized inline styles (`<style>`) for hover states.
+ * - Links to internal systems (e.g., `/engine-room/corporate/systems`) are part of the lore and may lead to simulated login screens rather than actual functional apps.
+ */
 // includes/components/footers/engine-room/corporate/footer.php
 // Context: The Footer for the Family Office / Trust Intranet.
 // Theme: Corporate, Legal, Serious.
@@ -7,6 +21,7 @@
     <div class="container">
         <div class="row gy-4">
             
+            <!-- LEGACY CORPORATE IDENTITY: Uses the serif font 'Playfair Display' to contrast with the modern sans-serif fonts used elsewhere on the site. -->
             <div class="col-md-4 text-center text-md-start">
                 <div class="mb-3">
                     <i class="fa-duotone fa-shield-halved fa-2x text-light"></i>
@@ -71,6 +86,7 @@
 
         </div>
         
+        <!-- LEGACY META-NAVIGATION: Bottom-most bar containing explicit "Exit" links to help users escape the immersive corporate roleplay. -->
         <div class="row mt-5 pt-3 border-top border-secondary border-opacity-10 align-items-center">
             
             

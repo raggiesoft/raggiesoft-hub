@@ -1,4 +1,18 @@
 <?php
+/**
+ * ARCHITECTURE & MAINTENANCE (LEGACY)
+ *
+ * This file provides the specialized footer for "The Silver Gauntlet of Aethel" book/lore hub.
+ * 
+ * DESIGN INTENT:
+ * - Implements a "Back Cover" aesthetic using Onyx and Gold (Cinzel font) to match the high-fantasy theme of the novel.
+ * - Houses the "Architect's Vault" easter egg (via `konami.php` inclusion) which grants access to debug/hidden lore areas.
+ * - Utilizes inline `<style>` blocks for localized hover effects to avoid cluttering global stylesheets.
+ * 
+ * MAINTENANCE NOTES:
+ * - The `ROOT_PATH` constant must be defined before this file is included, otherwise the `require`/`include` for the easter egg will fail.
+ * - The Easter Egg configuration array (`$konami_config`) passes specific thematic variables into the generic Konami component.
+ */
 // includes/components/footers/raggiesoft-books/footer-aethel.php
 // THE SAGA FOOTER: Immersive "Back Cover" Design
 // Theme: Onyx, Gold, and Cinzel
@@ -7,6 +21,7 @@
     <div class="container">
         <div class="row gy-5">
             
+            <!-- LEGACY LAYOUT: Primary branding column. The opacity on the logo is intentional to blend with the dark background. -->
             <div class="col-lg-5 col-md-12">
                 <a href="/raggiesoft-books/aethel-saga" class="d-flex align-items-center mb-3 text-decoration-none group-hover">
                     <img src="<?php echo $cdnBaseUrl; ?>/aethel/images/logos/silver-gauntlet-of-aethel-logo.png" 
@@ -78,6 +93,7 @@
 </footer>
 
 <?php
+// LEGACY SECRETS: Injects the Konami Code event listener. Hidden links appear in the DOM only after successful code entry.
 // EASTER EGG: The Architect's Cheat Code
 $konami_config = [
     'title'      => 'The Architect\'s Vault',

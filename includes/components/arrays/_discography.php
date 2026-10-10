@@ -2,6 +2,25 @@
 // includes/components/arrays/_discography.php
 // v2.0 - Enhanced Metadata Structure (Era Descriptions & Timelines)
 
+/**
+ * ARCHITECTURE & MAINTENANCE NOTES:
+ * 
+ * Component: Discography Configuration Array
+ * Purpose: Defines the central data structure for The Stardust Engine's discography, organized by narrative "Eras".
+ * 
+ * Strategy & Implementation:
+ * - This file acts as a pseudo-database (Data Layer) that feeds into the UI components.
+ * - Structured as a multi-dimensional associative array. Each key represents an Era containing metadata 
+ *   and an array of Album definitions.
+ * - Heavily utilizes `$cdnBaseUrl` to dynamically resolve static assets (album art) based on the environment.
+ * 
+ * Maintenance Recommendations:
+ * - When adding new albums, uncomment the "NOT READY" lines and verify the paths exist within the CDN and server routing.
+ * - Always maintain the exact key structure (`title`, `year`, `url`, `img`) so that upstream components (e.g., `_tracklist-downloader.php`) 
+ *   do not break. The optional `folder` key is used to override path matching if the folder differs from the URL slug.
+ */
+
+// Master Discography Array: Feeds data to the front-end timeline and album routing engine.
 $discographyLibrary = [
     'apex' => [
         'label' => 'Apex "Cold War" Era', // Sidebar / Radio Label
@@ -26,6 +45,7 @@ $discographyLibrary = [
             // READY
             ['title' => 'The Warehouse Tapes', 'year' => '1995', 'url' => '/engine-room/artists/stardust-engine/discography/1995-the-warehouse-tapes', 'img' => $cdnBaseUrl . '/engine-room-records/artists/the-stardust-engine/1995-the-warehouse-tapes/album-art.jpg'],
             // READY (With Folder Override)
+            // 'folder' property is strictly required here because the URL slug does not match the physical asset directory
             [
                 'title' => 'Ad Astra (Single)', 
                 'year' => '1995', 

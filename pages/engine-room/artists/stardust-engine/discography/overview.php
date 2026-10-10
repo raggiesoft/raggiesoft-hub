@@ -1,4 +1,30 @@
 <?php
+/**
+ * ============================================================================
+ * ARCHITECTURE & MAINTENANCE NOTES
+ * ============================================================================
+ * File: pages/engine-room/artists/stardust-engine/discography/overview.php
+ * 
+ * 1. Architecture Context:
+ *    - This is the master discography routing page for The Stardust Engine.
+ *    - Dynamically builds a Schema.org `MusicGroup` and `MusicAlbum` JSON-LD index 
+ *      for SEO optimization.
+ * 
+ * 2. Data Processing:
+ *    - Fetches the band-specific `albums.json` manifest from the CDN.
+ *    - Automatically parses eras and albums, strategically ignoring "CANCELED" 
+ *      (lore-seized/evidence) records from the Schema output.
+ *    - Applies visual flags for `dspExempt` (Vault Exclusives).
+ * 
+ * 3. Component Architecture:
+ *    - Renders responsive Bootstrap 5 grids utilizing custom `glass-card` styling.
+ *    - Dynamically includes the DSP `store-button.php` component for valid albums.
+ * 
+ * 4. Maintenance Rule:
+ *    - DO NOT alter the HTML DOM, custom UI classes, or the JSON parsing logic.
+ *    - Ensure Schema.org strictly omits "CANCELED" evidence records.
+ * ============================================================================
+ */
 // pages/discography/overview.php
 // v4.1 - Added Fourthwall Store Routing, DSP Exemption Logic & Schema.org Updates
 

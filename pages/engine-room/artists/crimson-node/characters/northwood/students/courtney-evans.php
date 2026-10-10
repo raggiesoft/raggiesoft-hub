@@ -1,6 +1,14 @@
 <?php
+/**
+ * @file courtney-evans.php
+ * @description Detailed character lore profile for Courtney Evans (Crimson Node storyline).
+ * @context Outlines the character's tragic arc from sweet girlfriend to exiled antagonist due to an inability to accept the clinical reality of the main character's life.
+ * @architecture Standalone PHP page designed to be loaded into the main layout. Defines $pageTitle and uses standard Bootstrap grid styling.
+ * @maintenance To update the lore text, modify the HTML paragraphs. Ensure image paths to the CDN remain accurate.
+ */
 // pages/engine-room/artists/crimson-node/characters/northwood/courtney-evans.php
 
+// INLINE: Define the global page title
 $pageTitle = "Courtney Evans - Crimson Node";
 ?>
 
@@ -18,6 +26,7 @@ $pageTitle = "Courtney Evans - Crimson Node";
         <!-- Sidebar Column (handled by global sidebar system, this is main content area) -->
         <div class="col-12">
             
+            <!-- INLINE: Header block containing portrait, title, and quick stat badges -->
             <!-- Character Header -->
             <div class="d-flex flex-column flex-md-row align-items-md-center border-bottom pb-4 mb-4">
                 <img src="<?php echo $cdnBaseUrl; ?>/shiloh/images/thumbnails/northwood/courtney-evans-thumb.jpg" 
@@ -37,6 +46,7 @@ $pageTitle = "Courtney Evans - Crimson Node";
                 </div>
             </div>
 
+            <!-- INLINE: Main biography sections detailing the character arc -->
             <!-- Content Sections -->
             <div class="mb-5">
                 <h3 class="h4 fw-bold border-bottom pb-2 mb-3 text-body-emphasis">The "School Matt" Illusion</h3>

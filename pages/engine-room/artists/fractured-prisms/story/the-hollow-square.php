@@ -1,4 +1,22 @@
 <?php
+/**
+ * Fractured Prisms - The Hollow Square (Lore Foundation)
+ *
+ * This file serves as the definitive lore document for Fractured Prisms, establishing 
+ * the band's timeline, origins, and the "Three Realities" concept.
+ *
+ * Architecture Notes:
+ * - Uses scoped inline CSS overrides to enforce the "Fractured Prisms" dark, gothic aesthetic 
+ *   (`gothic-font`, `text-glow-prism`, `polaroid-prism`, `artifact-paper`).
+ * - Employs Bootstrap 5 rows and nested cards to separate the long-form narrative blocks.
+ * - Archival Standard: Uses UK English spelling (e.g., "defence", "colours") deliberately in 
+ *   artist artifact quotes to match their character origins.
+ *
+ * Maintainer Note: This is a core storytelling anchor. Do not change the timeline dates 
+ * (1981 Shap Fell, 1982 Escape) or the UK English spelling in the archival quotes without 
+ * updating the master narrative bible.
+ */
+
 // pages/engine-room/artists/fractured-prisms/story/the-hollow-square.php
 // The Lore Foundation: The 100-Year Echo and the Physical Reality.
 // Archival Standard: US English (Label) / Queen's English (Artist Artifacts)
@@ -58,6 +76,7 @@ $pageTitle = "The Hollow Square - Fractured Prisms Lore";
     }
 </style>
 
+<!-- MAIN STORY CONTAINER -->
 <div class="bg-prism-dark min-vh-100 py-5">
     <div class="container">
         

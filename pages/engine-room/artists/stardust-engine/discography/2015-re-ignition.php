@@ -1,5 +1,13 @@
 <?php
+/**
+ * @file 2015-re-ignition.php
+ * @description Lore and tracklist page for the 2015 reunion album "Re-Ignition".
+ * @context Documents the band's return from their 7-year "Burnout Hiatus", reclaiming an unused track from 1992.
+ * @architecture Static PHP page using the shared `_album-art-header.php` and `_tracklist-downloader.php` components.
+ * @maintenance To update the track-by-track lore notes, modify the HTML list-group items directly.
+ */
 // Page data
+// INLINE: Define page title and CDN path for the tracklist fetcher
 $pageTitle = "Re-Ignition (2015) - The Stardust Engine";
 $album_path_web = '/engine-room-records/artists/the-stardust-engine/2015-re-ignition';
 
@@ -36,6 +44,7 @@ $album_path_web = '/engine-room-records/artists/the-stardust-engine/2015-re-igni
     <?php include ROOT_PATH . '/includes/components/_tracklist-downloader.php'; ?>
 
     <div class="mt-5">
+        <!-- INLINE: Track-by-track lore breakdown for the reunion album -->
         <h3 class="h4 fw-bold text-uppercase text-muted mb-4 border-bottom pb-2">Liner Notes & Lore</h3>
         
         <div class="card border-warning bg-transparent mb-4">

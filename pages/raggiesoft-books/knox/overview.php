@@ -1,5 +1,21 @@
 <?php
-// pages/raggiesoft-books/knox/overview.php
+/**
+ * RaggieSoft Architecture - Page Component
+ * 
+ * File: pages/raggiesoft-books/knox/overview.php
+ * Component: K.N.O.X. Microsite Landing Page
+ * Type: Promotional / Story Portal
+ * 
+ * Description:
+ * Renders the interactive landing page for the K.N.O.X. sci-fi story.
+ * Includes a "Dossier" section that toggles between an Axiom Corporation (villain)
+ * perspective and the Reality (hero) perspective using JavaScript.
+ *
+ * Maintenance Notes:
+ * - The toggleProfile() JS function flips CSS classes and visibility for the dossier cards.
+ * - Uses Bootstrap grid and utilities heavily.
+ * - Relies on $cdnBaseUrl for image assets.
+ */
 // Landing Page for K.N.O.X. Microsite
 // Context: A welcoming gateway into the truth of the Telsan Gap.
 

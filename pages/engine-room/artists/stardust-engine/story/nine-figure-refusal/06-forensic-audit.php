@@ -1,4 +1,27 @@
 <?php
+/**
+ * ============================================================================
+ * ARCHITECTURAL MAINTENANCE BLOCK
+ * ============================================================================
+ * File: 06-forensic-audit.php
+ * Component Type: Story / Lore HTML View (PHP Partial)
+ * 
+ * DESCRIPTION:
+ * Renders "Evidence Item #00-B: Holly's Homework", showcasing a side-by-side 
+ * financial breakdown and three skeuomorphic federal report forms.
+ * 
+ * STRUCTURAL NOTES & CONSTRAINTS:
+ * - SKEUOMORPHIC UI (FEDERAL FORMS): The `.federal-form` class forces light mode 
+ *   (black text on white background) to accurately reflect physical government 
+ *   documents regardless of the global site theme. Do not alter these overrides.
+ * - ABSOLUTE STAMPS: Within the forms, `.stamp-rotate` classes apply a 
+ *   `mix-blend-mode: multiply;` for realism. Keep these attributes to retain 
+ *   visual fidelity.
+ * - LAYOUT INTEGRITY: The balance sheet uses `table-responsive` with explicit 
+ *   Bootstrap color utilities (e.g., `bg-danger-subtle`). Maintain exact column 
+ *   widths and cell borders.
+ * ============================================================================
+ */
 // pages/engine-room/artists/stardust-engine/story/nine-figure-refusal/forensic-audit.php
 // EVIDENCE ITEM #00-B: Holly's "Homework" & The Federal "Triple Tap"
 // Context: The moment Holly realized she could drop a nuclear bomb on Omni-Global.

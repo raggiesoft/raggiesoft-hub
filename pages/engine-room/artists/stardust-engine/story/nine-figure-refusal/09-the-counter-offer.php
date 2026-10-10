@@ -4,11 +4,18 @@
 // The "Poison Pill" Letter. Holly rejects the $150M and triggers the collapse.
 // UPDATED: WCAG Compliance & Component Implementation
 
+/*
+ * ARCHITECTURE & LORE:
+ * This page documents Holly O'Connell's "Poison Pill" counter-offer to Jameson Frost.
+ * It highlights her bluff using the "corporate plural" (our legal teams = just Holly) and sets up the SEC whistleblower action.
+ * Utilizes the custom corporate letterhead component.
+ */
 $pageTitle = "The Counter-Offer (Sept 14, 2018) - Engine Room History";
 ?>
 
 <div class="container py-5">
     
+    <!-- INLINE: Page header framing the counter-offer as a "Kill Switch" -->
     <div class="row justify-content-center mb-5">
         <div class="col-lg-8 text-center">
             <span class="badge bg-warning-subtle text-warning-emphasis rounded-pill px-3 py-2 mb-3 text-uppercase letter-spacing-1 shadow-sm border border-warning-subtle">
@@ -26,6 +33,7 @@ $pageTitle = "The Counter-Offer (Sept 14, 2018) - Engine Room History";
     <div class="row justify-content-center">
         <div class="col-lg-10">
             
+            <!-- INLINE: Narrative context block explaining Holly's "Army of One" bluff -->
             <div class="card bg-body-tertiary border-start border-4 border-warning shadow-lg mb-5">
                 <div class="card-body p-4">
                     <h5 class="text-warning-emphasis fw-bold text-uppercase mb-3"><i class="fa-solid fa-circle-info me-2"></i>Narrative Context</h5>

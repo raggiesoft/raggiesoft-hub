@@ -1,5 +1,20 @@
 <?php
-// pages/about/license.php
+/**
+ * RaggieSoft Architecture - Page Component
+ * 
+ * File: pages/about/license.php
+ * Component: License Redirect Notice
+ * Type: Legal / Routing (Deprecated)
+ * 
+ * Description:
+ * Deprecated page that serves as a soft redirect for users accessing old
+ * licensing URLs. Informs them of the move to the RaggieSoft Media B2B portal.
+ *
+ * Maintenance Notes:
+ * - Uses a JavaScript setTimeout for a 5-second automatic redirect.
+ * - Ensure $pageTitle is respected by the surrounding layout.
+ * - Keep this page active as long as legacy links might exist in the wild.
+ */
 // DEPRECATED: Notice page for the old licensing URL.
 // All traffic should now route to the centralized RaggieSoft Media portal.
 

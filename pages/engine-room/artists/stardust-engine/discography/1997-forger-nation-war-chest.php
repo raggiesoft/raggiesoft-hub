@@ -1,5 +1,11 @@
 <?php
 // Page data
+/*
+ * ARCHITECTURE & LORE:
+ * Greatest Hits compilation page for "Forger Nation War Chest" (1997).
+ * Features standard album components plus detailed "Eras" breakdowns.
+ * Critically, includes an "Omission" section explaining the exclusion of a traumatizing track.
+ */
 $pageTitle = "Forger Nation War Chest - The Stardust Engine";
 $album_path_web = '/engine-room-records/artists/the-stardust-engine/1997-forger-nation-war-chest';
 
@@ -8,6 +14,7 @@ $album_path_web = '/engine-room-records/artists/the-stardust-engine/1997-forger-
 <div class="container py-5">
     
     <div class="row align-items-center mb-5">
+        <!-- INLINE: Includes album art header with 'pact' variant indicating mixed era representation -->
         
         <?php $props = [
             'path' => $album_path_web, 
@@ -31,6 +38,7 @@ $album_path_web = '/engine-room-records/artists/the-stardust-engine/1997-forger-
 
     <?php include ROOT_PATH . '/includes/components/_tracklist-downloader.php'; ?>
 
+    <!-- INLINE: The Eras - Breaking down the 16 tracks into four thematic acts -->
     <div class="mt-5">
         <h3 class="h4 fw-bold text-uppercase text-muted mb-4 border-bottom pb-2">The Eras</h3>
         
@@ -79,6 +87,7 @@ $album_path_web = '/engine-room-records/artists/the-stardust-engine/1997-forger-
         </div>
     </div>
 
+   <!-- INLINE: The Omission card - critical lore context regarding Cassidy's autism and track removal -->
    <div class="card bg-black border-danger border-2 mt-5 shadow-lg">
         <div class="card-header bg-danger text-white fw-bold text-uppercase letter-spacing-1">
             <i class="fa-duotone fa-file-shield me-2"></i>The Omission: An Authorized Statement

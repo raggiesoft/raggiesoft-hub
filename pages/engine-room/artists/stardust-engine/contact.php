@@ -1,7 +1,15 @@
 <?php
+/**
+ * @file contact.php
+ * @description The "Subspace Relay" contact page for The Stardust Engine.
+ * @context Provides a real-world bridge to the creator (Michael Ragsdale) while maintaining the in-universe "high tech/sci-fi" aesthetic of the band.
+ * @architecture Standalone PHP page utilizing the "ad-astra" theme. It merges custom assets (Starfield) to build an immersive UI using Bootstrap grid.
+ * @maintenance Keep the LinkedIn link updated. Ensure the Starfield asset path remains valid.
+ */
 // pages/contact.php
 // "Subspace Relay" - The connection to the Real World.
 
+// INLINE: Define global layout parameters including title and theme
 $pageTitle = "Contact Flight Control - The Stardust Engine";
 $pageTheme = "ad-astra"; 
 
@@ -14,6 +22,7 @@ $customPageAssets = [
 
 ?>
 
+<!-- INLINE: Immersive animated starfield background -->
 <div class="starfield-container"><div class="starfield-twinkling"></div></div>
 
 <div class="container py-5" style="min-height: 80vh; display: flex; align-items: center;">

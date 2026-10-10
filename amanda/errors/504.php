@@ -1,13 +1,32 @@
 <?php
-// public/errors/504.php
-// Theme: Knox / Industrial / Timeout
-// Context: "Gateway Timeout" / Connection Lost
+/**
+ * Stardust Engine - 504 Gateway Timeout Error Page
+ * 
+ * ARCHITECTURAL OVERVIEW:
+ * A custom error page designed to handle HTTP 504 (Gateway Timeout) errors. 
+ * It features dual-mode execution: it can be loaded independently by the web server (Nginx/Apache) 
+ * or included dynamically via the application router.
+ * 
+ * LORE CONTEXT:
+ * Themed as "Deep Space Network Latency" to fit the Stardust Engine sci-fi aesthetic.
+ * 
+ * LOGIC & CONSTRAINTS:
+ * - Standalone Mode (`$is_standalone`): If `ROOT_PATH` is not defined, it assumes it was loaded 
+ *   directly by the web server. It then defines paths, sends the 504 header, and manually 
+ *   requires the global header/footer to ensure the page renders correctly outside the router.
+ * - Relies on `glass-container` and `terminal-card` global CSS classes for styling.
+ * 
+ * File Info: public/errors/504.php
+ * Theme: Knox / Industrial / Timeout
+ * Context: "Gateway Timeout" / Connection Lost
+ */
 
 // Detect if loaded directly by Nginx or via Router
+// If ROOT_PATH is missing, this was triggered by the server's ErrorDocument directive.
 $is_standalone = !defined('ROOT_PATH');
 
 if ($is_standalone) {
-    // Fix Path: Go up 2 levels from /public/errors/ to get to project root
+    // Fix Path: Go up 2 levels from /amanda/errors/ to get to project root
     define('ROOT_PATH', realpath(__DIR__ . '/../../'));
     
     // 2. Set Headers
@@ -17,10 +36,10 @@ if ($is_standalone) {
     $pageTitle = "504 Gateway Timeout - The Stardust Engine";
     $pageTheme = "ad-astra"; 
     
-    // 4. Load Header
+    // 4. Load Header manually since the router didn't do it
     require_once ROOT_PATH . '/includes/header.php';
     
-    // 5. Open Wrapper
+    // 5. Open Wrapper to match the router's standard DOM structure
     echo '<div class="container-fluid flex-grow-1 d-flex"><div class="row flex-grow-1"><main id="main-content" class="col-12 p-0">';
 }
 ?>

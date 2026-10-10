@@ -1,4 +1,27 @@
 <?php
+/**
+ * Knox Lore: The Toy Box
+ *
+ * ARCHITECTURE & CONTEXT:
+ * This page acts as a catalog of improvised ordnance ("Toys") utilized by the native 
+ * protagonists in the "Project: KNOX" universe. It outlines the Operational Doctrine 
+ * (Scavenged, Deniable, Portable) to establish the low-tech, high-impact survival aesthetic.
+ *
+ * UI/UX ARCHITECTURE:
+ * - Employs a Bootstrap grid (`col-md-6 col-lg-4`) to display the ordnance as individual 
+ *   cards.
+ * - Heavily utilizes `font-monospace` to simulate a tactical, datapad readout style.
+ * - Colors are mapped semantically to weapon types (e.g., `border-danger` for High Yield, 
+ *   `border-success` for Chemical, `border-warning` for Electronic).
+ * - Implements custom `.skill-pill` badges to categorize the ordnance.
+ *
+ * MAINTENANCE NOTES:
+ * - The `$heroImage` currently uses a placeholder path; ensure it's replaced with a 
+ *   valid `$cdnBaseUrl` reference when the final asset is generated.
+ * - Some cards have "disabled" buttons (e.g., "Encrypted", "Restricted Data"). These 
+ *   are narrative conceits; they can be linked to detail pages as the lore expands.
+ */
+
 // pages/raggiesoft-books/knox/lore/toys/overview.php
 // The Toy Box: A catalog of improvised ordnance.
 // Context: "Crude, primitive, and totally effective."

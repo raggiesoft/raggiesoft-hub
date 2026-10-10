@@ -1,5 +1,27 @@
 <?php
-// pages/engine-room/artists/stardust-engine/story/ad-astra/voyage/day-03.php
+/**
+ * ============================================================================
+ * FILE: day-03.php
+ * PATH: /pages/engine-room/artists/stardust-engine/story/ad-astra/voyage/day-03.php
+ * MODULE: Stardust Engine - Ad Astra - Voyage Logs
+ * 
+ * DESCRIPTION:
+ * This file renders the Day 03 log entry for the Ad Astra voyage narrative.
+ * It details the living arrangements (Berthing Manifest) and the ship's 
+ * Day/Night cycle simulation using a dark-themed UI with Bootstrap 5 and Web Components.
+ *
+ * ARCHITECTURAL NOTES:
+ * - Theme: Uses `.wa-theme-dark` to enforce a dark UI context.
+ * - Components: Integrates standard HTML and custom `<wa-card>` components.
+ * - Layout: Follows a standard 8-column/4-column Bootstrap grid for content vs. sidebar.
+ * 
+ * MAINTENANCE INSTRUCTIONS:
+ * - When updating text, do not modify the structural HTML or grid classes.
+ * - Ensure any new cards or panels use the appropriate CSS custom properties 
+ *   (e.g., `--body-padding: 0;`, `--wa-panel-bg: transparent;`).
+ * - Do not alter the narrative stepper PHP include unless the story routing changes.
+ * ============================================================================
+ */
 // Log Entry: Day 03
 // Context: Living arrangements and the Day/Night cycle.
 
@@ -11,6 +33,7 @@ $pageTitle = "Day 03: Ship's Time - Ad Astra Log";
 
 <div class="container py-5 glass-container">
     
+    <!-- BEGIN: Log Header -->
     <div class="d-flex justify-content-between align-items-center mb-5 border-bottom border-light pb-3" style="border-color: var(--astra-text) !important;">
         <div>
             <span class="badge bg-light text-dark font-monospace mb-2">LOG: DAY 03</span>
@@ -22,9 +45,12 @@ $pageTitle = "Day 03: Ship's Time - Ad Astra Log";
             G-FORCE: 1.0 (ARTIFICIAL)
         </div>
     </div>
+    <!-- END: Log Header -->
 
+    <!-- BEGIN: Main Layout -->
     <div class="row g-5">
         
+        <!-- BEGIN: Main Content Area -->
         <div class="col-lg-8">
             <div class="mb-5">
                 <p class="lead text-light">
@@ -39,6 +65,7 @@ $pageTitle = "Day 03: Ship's Time - Ad Astra Log";
                     Our quarters are essentially a high-tech efficiency apartment bolted to a bulkhead. It's tight, utilitarian, and surprisingly comfortable. Everything is magnetic—coffee cups, data pads, even the pillows have weak mag-strips to keep them from drifting if the gravity fluctuating.
                 </p>
                 
+                <!-- BEGIN: Berthing Manifest Card -->
                 <wa-card class="card terminal-card mt-4 border-light w-100" style="border-color: var(--astra-secondary) !important; --body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
                     <div slot="header" class=" border-bottom border-secondary text-secondary fw-bold font-monospace p-3">
                         <i class="fa-duotone fa-bed-bunk me-2"></i>BERTHING MANIFEST
@@ -69,12 +96,16 @@ $pageTitle = "Day 03: Ship's Time - Ad Astra Log";
                         </ul>
                     </div>
                 </wa-card>
+                <!-- END: Berthing Manifest Card -->
 
             </div>
         </div>
+        <!-- END: Main Content Area -->
 
+        <!-- BEGIN: Sidebar Layout -->
         <div class="col-lg-4">
             
+            <!-- BEGIN: Cycle Status Card -->
             <wa-card class="card glass-card mb-4 w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
                 <div slot="header" class=" text-light fw-bold text-uppercase border-bottom border-secondary p-3">
                     <i class="fa-duotone fa-clock me-2"></i>Cycle Status
@@ -95,7 +126,9 @@ $pageTitle = "Day 03: Ship's Time - Ad Astra Log";
                     </ul>
                 </div>
             </wa-card>
+            <!-- END: Cycle Status Card -->
 
+            <!-- BEGIN: Personal Log Card -->
             <wa-card class="card bg-black border-secondary mb-4 w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
                 <div class="card-body">
                     <h6 class="text-secondary fw-bold text-uppercase mb-2">
@@ -106,11 +139,15 @@ $pageTitle = "Day 03: Ship's Time - Ad Astra Log";
                     </p>
                 </div>
             </wa-card>
+            <!-- END: Personal Log Card -->
 
         </div>
+        <!-- END: Sidebar Layout -->
 
     </div>
+    <!-- END: Main Layout -->
 
+    <!-- BEGIN: Narrative Stepper Navigation -->
     <?php
         $nav = [
             'prev' => ['url' => '/engine-room/artists/stardust-engine/story/ad-astra/voyage/day-02', 'label' => 'Day 02: Stabilization'],
@@ -119,6 +156,7 @@ $pageTitle = "Day 03: Ship's Time - Ad Astra Log";
         ];
         include ROOT_PATH . '/includes/components/navigation/narrative-stepper.php';
     ?>
+    <!-- END: Narrative Stepper Navigation -->
 
 </div>
 </div> <!-- End dark theme wrap -->

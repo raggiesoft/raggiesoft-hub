@@ -1,4 +1,28 @@
 <?php
+/**
+ * RaggieSoft Books - Master Contemporary Library
+ *
+ * ARCHITECTURE & CONTEXT:
+ * This acts as the root gateway for all narrative texts outside of the Aethel universe.
+ * It fetches the master `catalog.json` from the CDN and dynamically renders a grid of 
+ * available series. It respects the `hide` attribute in the JSON (unless bypassed by 
+ * `?show_hidden` for admin preview).
+ *
+ * UI/UX ARCHITECTURE:
+ * - Features a complex, rotating "Netflix-style" hero header. It preloads a massive 
+ *   array of `$heroImages` and uses `array_rand()` to pick a starting image, handing 
+ *   off to `hero-image.js` for continuous cross-fade transitions.
+ * - Employs "Brute Force Readability Armor" (custom CSS classes like `.force-glass-bg`, 
+ *   `.force-text-light`) to guarantee text legibility over any random background image.
+ * - Renders book items using the modular `card.php` component, auto-generating 
+ *   fallback initials if cover art is missing.
+ *
+ * MAINTENANCE NOTES:
+ * - The `$heroImages` array must be manually updated if new hero art is pushed to the CDN.
+ * - Do NOT remove the `.force-` CSS classes, as unpredictable background colors will 
+ *   ruin accessibility contrast scores without them.
+ */
+
 // pages/raggiesoft-books/books/overview.php
 // Contemporary Fiction Library
 

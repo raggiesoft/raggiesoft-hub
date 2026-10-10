@@ -3,6 +3,24 @@
 // The Promotional / Documentation Hub for the open-source CMS
 // Updated: Frutiger Aero / Dark Aero Glass Architecture (Sidebar Compatible)
 
+/**
+ * ARCHITECTURE & MAINTENANCE NOTES:
+ * 
+ * Component: Stardust Engine CMS Overview (Project Page)
+ * Purpose: Documentation and promotional hub for the open-source flat-file CMS powering RaggieSoft.
+ * 
+ * Strategy & Implementation:
+ * - Employs the "Frutiger Aero / Dark Aero" aesthetic using custom CSS scoping within the `<style>` block.
+ * - Heavily utilizes backdrop-filters, custom box-shadows, and `rgba` color values to simulate glassmorphism.
+ * - Relies on Bootstrap's grid system (`row`, `col-xl-4`, etc.) combined with FontAwesome Duotone icons.
+ * 
+ * Maintenance Recommendations:
+ * - When adjusting the Aero Glass CSS rules, ensure that the `[data-bs-theme="dark"]` selectors are updated 
+ *   to maintain the required visual contrast for WCAG AA compliance.
+ * - External links to GitHub are hardcoded; update these if the repository organization structure changes.
+ */
+
+// Define page title for the Elara router metadata payload
 $pageTitle = "The Stardust Engine CMS | Open Source";
 ?>
 
@@ -63,6 +81,7 @@ $pageTitle = "The Stardust Engine CMS | Open Source";
     }
 </style>
 
+<!-- CMS Documentation Layout: Utilizes a fluid container to maximize screen real estate for code and features -->
 <div class="container-fluid pb-5 pt-2">
 
     <div class="row mb-5">

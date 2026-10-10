@@ -1,4 +1,29 @@
 <?php
+/**
+ * ============================================================================
+ * ARCHITECTURAL MAINTENANCE BLOCK
+ * ============================================================================
+ * File: 07-the-smoking-gun.php
+ * Component Type: Story / Lore HTML View (PHP Partial)
+ * 
+ * DESCRIPTION:
+ * Displays "Evidence Item #00-C: The Smoking Gun", the famous letter that 
+ * triggered a mail fraud investigation.
+ * 
+ * STRUCTURAL NOTES & CONSTRAINTS:
+ * - SKEUOMORPHIC UI (PROSPECTUS PAPER): Contains custom `<style>` block to 
+ *   create `.prospectus-paper` (linear-gradient, forced white background) 
+ *   and a `.stamp-postage-due` that uses CSS rotation and blend modes.
+ * - SKEUOMORPHIC UI (HOLLY'S NOTE): The `.holly-note` class uses absolute 
+ *   positioning to hang off the edge of the paper document, combined with a 
+ *   hover animation (`transform: scale(1.05)`). 
+ * - RESPONSIVENESS: The `<style>` block includes specific media queries for 
+ *   screens under 992px to reset the note's absolute positioning so it doesn't 
+ *   break mobile layouts.
+ * - DO NOT ALTER DOM: Structural wrappers are critical to maintain the visual 
+ *   layering of the skeuomorphic components.
+ * ============================================================================
+ */
 // pages/engine-room/artists/stardust-engine/story/nine-figure-refusal/the-smoking-gun.php
 // EVIDENCE ITEM #00-C: The Letter (The "Smoking Gun")
 // Context: The moment Jameson Frost tried to save $0.50 and lost $600 Million.

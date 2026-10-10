@@ -1,7 +1,26 @@
 <?php
-// includes/components/headers/header-nine-figure-refusal.php
-// Dedicated Navigation for the "Accidental Empire" Case File
-// UPDATED: Added "The Approach" to the dropdown menu logic.
+/**
+ * Stardust Engine - "Nine-Figure Refusal" Case File Header
+ * 
+ * ARCHITECTURAL OVERVIEW:
+ * This component provides highly specific, complex horizontal navigation for the 
+ * "Accidental Empire / Nine-Figure Refusal" lore section. It features a mega-menu 
+ * dropdown structure mapping out the chapters of this specific narrative.
+ * 
+ * LORE CONTEXT:
+ * This header acts as a "Case File" directory, guiding the user through the chronological 
+ * events of a fictional corporate buyout attempt.
+ * 
+ * LOGIC & CONSTRAINTS:
+ * - Iterates over an array of `$evidenceFiles` to dynamically set the active state of 
+ *   the primary "Case File" dropdown if the current URI matches any file fragment.
+ * - Mega-Menu CSS: Relies on inline `<style>` and specific Bootstrap grid classes 
+ *   (`.col-lg-6`) to create a two-column layout within the Web Awesome dropdown.
+ * 
+ * File Info: includes/components/headers/header-nine-figure-refusal.php
+ * Dedicated Navigation for the "Accidental Empire" Case File
+ * UPDATED: Added "The Approach" to the dropdown menu logic.
+ */
 
 // 1. Determine Active States
 $uri = $_SERVER['REQUEST_URI'] ?? '';
@@ -55,6 +74,12 @@ $isEpilogue = str_contains($uri, '/frost-interview');
          <i slot="end" class="fa-solid fa-circle-caret-down ms-2 opacity-50" aria-hidden="true"></i>
         </wa-button>
     <wa-menu>
+      <!-- 
+        Mega-Menu Layout:
+        Uses Bootstrap grid (`row`, `col-lg-6`) to create a wide, two-column layout 
+        inside the dropdown. The `.mega-menu-case-file` class ensures a minimum width 
+        on large screens via the embedded `<style>` block.
+      -->
       <div class="dropdown-menu dropdown-menu-end shadow-lg border-danger mega-menu-case-file p-0">
             <div class="row g-0">
                 

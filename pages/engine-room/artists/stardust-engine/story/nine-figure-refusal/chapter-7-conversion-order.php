@@ -1,4 +1,25 @@
 <?php
+/**
+ * ============================================================================
+ * ARCHITECTURAL MAINTENANCE BLOCK
+ * ============================================================================
+ * File: chapter-7-conversion-order.php
+ * Component Type: Story / Lore HTML View (PHP Partial)
+ * 
+ * DESCRIPTION:
+ * Renders the formal legal "Order Converting Case to Chapter 7", ending 
+ * Omni-Global Media Corp's existence.
+ * 
+ * STRUCTURAL NOTES & CONSTRAINTS:
+ * - FORCED LIGHT MODE: The `.force-light-mode` class forces black-on-white text 
+ *   regardless of the global theme, simulating a physical court document.
+ * - PLEADING LINE NUMBERS: The `.line-numbers` element uses explicit `line-height: 2` 
+ *   to visually align with the double-spaced legal text adjacent to it. Modifying 
+ *   the text container's line height requires recalculating this alignment.
+ * - SKEUOMORPHIC ELEMENTS: Uses inline fonts (`Mrs Saint Delafield`) for the judge's 
+ *   signature and rotated Absolute Positioning for the "FILED" stamp. Maintain DOM structure.
+ * ============================================================================
+ */
 // pages/engine-room/artists/stardust-engine/story/nine-figure-refusal/chapter-7-conversion-order.php
 // The Death Certificate.
 // Context: The Bankruptcy Court orders Omni-Global to cease operations immediately.

@@ -1,6 +1,23 @@
 <?php
-// includes/components/headers/engine-room/corporate/header.php
-// Context: The Corporate Intranet Navigation.
+/**
+ * Engine Room - Corporate Intranet Header
+ * 
+ * ARCHITECTURAL OVERVIEW:
+ * This component provides horizontal navigation for the "Corporate" intranet section of the 
+ * Engine Room. It simulates an internal company portal with dropdowns for Entities and Ops.
+ * 
+ * LORE CONTEXT:
+ * Part of the broader RaggieSoft fictional universe, linking out to other "Operating Companies"
+ * and internal operations.
+ * 
+ * LOGIC & CONSTRAINTS:
+ * - Built using Web Awesome components (`<wa-button>`, `<wa-dropdown>`).
+ * - Contains static links to other parts of the site; does NOT implement dynamic active state 
+ *   logic out-of-the-box in this snippet.
+ * 
+ * File Info: includes/components/headers/engine-room/corporate/header.php
+ * Context: The Corporate Intranet Navigation.
+ */
 ?>
 <div class="d-flex flex-column flex-md-row align-items-stretch align-items-md-center gap-2 ms-auto py-3 py-md-0 w-100 mobile-nav-menu">
   
@@ -18,6 +35,10 @@
 
   
   <wa-dropdown placement="bottom-start">
+    <!-- 
+      Dropdown Trigger:
+      Web Awesome requires `slot="trigger"` to map this button to the `<wa-menu>` below.
+    -->
     <wa-button  href="#"    slot="trigger" appearance="plain">
         <i class="fa-duotone fa-briefcase me-2"></i>Entities
         <i slot="end" class="fa-solid fa-circle-caret-down ms-2 opacity-50" aria-hidden="true"></i>

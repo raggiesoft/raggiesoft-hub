@@ -1,4 +1,22 @@
 <?php
+/**
+ * Engine Room Records - DSP Verification Portal
+ *
+ * This administrative portal provides authoritative chain-of-custody documentation and 
+ * independent artist verification for DSPs (Digital Service Providers). It processes URL parameters
+ * to display specific artist, album, or track verification affidavits.
+ *
+ * Architecture Notes:
+ * - Dynamic routing driven by `$_GET` parameters (`artist`, `album`, `track`).
+ * - Employs a strict corporate/legal CSS theme, overriding global dark mode settings to ensure 
+ *   high contrast and WCAG compliance. Includes print-specific media queries for affidavit export.
+ * - Integrates `StardustParsedown` to render markdown metadata into HTML.
+ *
+ * Maintainer Note: This file acts as a legal point of truth. Be extremely cautious when editing 
+ * the text within the system logs and transparency notices. Ensure print styles (`@media print`) 
+ * are maintained if layout changes are made.
+ */
+
 // pages/engine-room/dsp-verification.php
 // Internal Administrative Portal for DSP Identity & Copyright Verification
 // Context: Independent Artist Verification. Clean, authoritative, audit-ready layout.

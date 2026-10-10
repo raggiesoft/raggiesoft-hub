@@ -1,6 +1,21 @@
 <?php
-// includes/components/sidebars/about/sidebar-about.php
-// The central directory for RaggieSoft "Mission Profile" pages.
+/**
+ * RaggieSoft Hub - About/Mission Profile Sidebar
+ * 
+ * ARCHITECTURAL OVERVIEW:
+ * This sidebar serves as the navigation hub for the "About" (Mission Profile) section.
+ * It provides links to top-level organizational entities, legal documentation, and status.
+ * 
+ * LOGIC & CONSTRAINTS:
+ * - Uses `$_SERVER['REQUEST_URI']` to determine the active navigation state via `str_contains()`.
+ *   This is a simplistic but effective way to handle active states without complex routing logic.
+ * - Relies on standard Bootstrap 5 `.nav-pills` and `.nav-link` classes.
+ * - Iconography utilizes FontAwesome `fa-duotone` and `fa-solid` classes. Ensure these remain
+ *   consistent with the site-wide icon sets.
+ * 
+ * File Info: includes/components/sidebars/about/sidebar-about.php
+ * The central directory for RaggieSoft "Mission Profile" pages.
+ */
 
 $currentUri = $_SERVER['REQUEST_URI'];
 ?>
@@ -24,6 +39,11 @@ $currentUri = $_SERVER['REQUEST_URI'];
 
 <nav class="nav flex-column nav-pills small gap-1 mb-4">
     
+    <!-- 
+      Active State Logic:
+      Checks if the current URI contains the specific path fragment (e.g., '/michael-ragsdale').
+      If true, applies the Bootstrap 'active' class to highlight the link.
+    -->
     <a href="/about/michael-ragsdale" class="nav-link d-flex align-items-center <?php echo (str_contains($currentUri, '/michael-ragsdale')) ? 'active' : 'link-body-emphasis'; ?>">
         <i slot="start" class="fa-duotone fa-user-visor"></i> The Architect
     </a>

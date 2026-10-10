@@ -1,4 +1,19 @@
 <?php
+/**
+ * ARCHITECTURE & MAINTENANCE (LEGACY)
+ *
+ * This script (`nav-logic.php`) contains the core navigation engine for the Narrative/Book reader interface.
+ * 
+ * DESIGN INTENT:
+ * - Parses a hierarchical JSON structure representing the book's contents (Book -> Chapter -> Part -> Scene).
+ * - "Flattens" this hierarchy into a single linear array (`$flatList`) to easily determine "Previous" and "Next" scene links.
+ * - Analyzes the current URL (`$_SERVER['REQUEST_URI']`) to locate the user's current position within the flattened structure.
+ * 
+ * MAINTENANCE NOTES:
+ * - The deep nesting `foreach` loops (4 levels deep) are computationally light but visually messy.
+ * - Relies heavily on exact URL structure matching. Changes to `.htaccess` or routing rules will break the `parse_url` logic here.
+ * - Fails gracefully by returning empty/hash links (`#`) if the JSON data cannot be fetched or parsed.
+ */
 // includes/utils/nav-logic.php
 // v4.0 - Universal Narrative Engine (Scene-Aware)
 
@@ -21,6 +36,7 @@ function getBookNavigation($jsonUrl) {
         ];
     }
 
+    // LEGACY DATA PARSING: Assumes JSON is well-formed. No explicit error handling for JSON syntax errors is present.
     $bookData = json_decode($jsonData, true);
 
     // 2. Analyze Current URL (4 Levels Deep)
@@ -35,6 +51,7 @@ function getBookNavigation($jsonUrl) {
     $currentPartId = $pathSegments[2] ?? '';
     $currentSceneId = $pathSegments[3] ?? '';
 
+    // LEGACY NAVIGATION ALGORITHM: Converts the tree structure into a flat array to simplify index-based previous/next calculation.
     // 3. Flatten Structure for Linear Navigation
     $flatList = [];
 

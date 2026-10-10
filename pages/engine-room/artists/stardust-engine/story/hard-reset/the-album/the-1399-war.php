@@ -3,11 +3,18 @@
 // The Antitrust Narrative (1997)
 // Context: The industry cartel attempts to block the release of Hard Reset.
 
+/*
+ * ARCHITECTURE & LORE:
+ * This page documents the "$13.99 War" (1997), detailing how Holly O'Connell broke the MAP cartel using trust fund capital.
+ * Features complex lore mechanics regarding antitrust litigation and supply chain hacks.
+ * Built using Bootstrap 5 cards and alerts to segment the narrative into distinct "Phases".
+ */
 $pageTitle = "The $13.99 War - The Stardust Engine";
 ?>
 
 <div class="container py-5">
     
+    <!-- INLINE: Page header defining the historical archive setting -->
     <div class="row justify-content-center mb-5">
         <div class="col-lg-8 text-center">
             <span class="badge bg-danger-subtle text-danger-emphasis rounded-pill px-3 py-2 mb-3 text-uppercase letter-spacing-1 shadow-sm border border-danger-subtle">
@@ -59,6 +66,7 @@ $pageTitle = "The $13.99 War - The Stardust Engine";
                 </div>
             </div>
 
+            <!-- INLINE: Key lore component explaining the MAP Cartel bypass -->
             <div class="alert alert-dark border-start border-4 border-info bg-body-tertiary shadow-sm my-4 text-body-emphasis">
                 <h6 class="fw-bold text-uppercase mb-2 text-info"><i class="fa-solid fa-truck-fast me-2"></i>Bypassing the MAP Cartel</h6>
                 <p class="mb-0 small">

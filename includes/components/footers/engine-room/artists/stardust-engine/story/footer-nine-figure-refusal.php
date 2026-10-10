@@ -1,3 +1,18 @@
+<!--
+ * ARCHITECTURE & MAINTENANCE (LEGACY)
+ *
+ * This file provides a highly thematic, "Classified Evidence" style footer for the "Nine Figure Refusal" lore page.
+ * 
+ * DESIGN INTENT:
+ * - Simulates a physical, redacted legal document using custom CSS (`.footer-evidence`, `.evidence-stamp`, `.redacted-text`).
+ * - Employs a light/off-white background (`#f8f9fa`) to contrast sharply with the standard dark mode of the surrounding Engine Room pages, enhancing the "paper document" illusion.
+ * - Includes a massive, low-opacity background watermark ("EVIDENCE #492-B") using absolute positioning.
+ * 
+ * MAINTENANCE NOTES:
+ * - The `.redacted-text` class relies on setting both `background-color` and `color` to black. While visually effective, it is readable by screen readers (which is desired for accessibility). Do not use `display: none` for redacted text.
+ * - The `transform: rotate(-5deg)` on the stamp may cause slight layout shifts on older mobile browsers.
+ -->
+<!-- LEGACY CSS: Component-scoped styles injected directly to avoid polluting global stylesheets with highly specific "legal document" classes. -->
 <style>
     /* Scoped Styles for the Redacted Footer */
     .footer-evidence {
@@ -52,6 +67,7 @@
                 </div>
             </div>
 
+            <!-- LEGACY NAVIGATION: Links point to fictional "Exhibits" which are actually other lore pages within the Engine Room hierarchy. -->
             <div class="col-md-4 text-center">
                 <h6 class="fw-bold text-uppercase border-bottom border-dark d-inline-block pb-1 mb-3">
                     Related Exhibits

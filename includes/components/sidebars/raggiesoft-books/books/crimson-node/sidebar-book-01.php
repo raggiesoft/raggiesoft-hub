@@ -1,4 +1,18 @@
 <?php
+/**
+ * ARCHITECTURE & MAINTENANCE (LEGACY)
+ *
+ * This file provides the highly specific, deeply nested sidebar navigation for "Book 1: The Illusion" of the Crimson Node series.
+ * 
+ * DESIGN INTENT:
+ * - Dynamically expands the Table of Contents based on the current `REQUEST_URI`.
+ * - If a user is viewing a specific chapter (e.g., Chapter 2), the sidebar reveals the sub-parts for that specific chapter as anchor links (`#part-X`), while keeping other chapters collapsed.
+ * - Uses standard Bootstrap 5 List Group classes for structure.
+ * 
+ * MAINTENANCE NOTES:
+ * - Highly brittle. The `$request_uri` checks require exact string matches. If routing changes (e.g., trailing slashes are enforced, or query strings are added), the expanding logic will fail.
+ * - Anchor links (`#part-1`) require corresponding `id` attributes on the target page's HTML elements to function correctly.
+ */
 // includes/components/sidebars/engine-room/artists/crimson-node/sidebar-story.php
 $request_uri = $_SERVER['REQUEST_URI'] ?? '/';
 ?>
@@ -11,12 +25,15 @@ $request_uri = $_SERVER['REQUEST_URI'] ?? '/';
 <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1  text-uppercase">
     <span>Book 1: The Illusion</span>
 </h6>
+<!-- LEGACY NAVIGATION ENGINE: Flush list group used to remove outer borders and rounded corners for seamless sidebar integration. -->
 <div class="list-group list-group-flush">
     <!-- Chapter 1 -->
     <a href="/raggiesoft-books/books/crimson-node/book-01/chapter-01" class="list-group-item list-group-item-action fw-bold <?= ($request_uri == '/raggiesoft-books/books/crimson-node/book-01/chapter-01') ? 'active' : '' ?>">
         Chapter 1: The Approach
     </a>
-    <?php if ($request_uri == '/raggiesoft-books/books/crimson-node/book-01/chapter-01'): ?>
+    <?php
+    // LEGACY ACCORDION LOGIC: Hardcoded PHP conditional to simulate an accordion UI without requiring client-side JavaScript.
+    if ($request_uri == '/raggiesoft-books/books/crimson-node/book-01/chapter-01'): ?>
         <a href="#part-1" class="list-group-item list-group-item-action ps-4 py-2 border-0 " style="font-size: 0.9em; background-color: rgba(0,0,0,0.02);">
             <i slot="start" class="fa-solid fa-angle-right"></i> Part 1: Anomalies
         </a>

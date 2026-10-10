@@ -1,4 +1,21 @@
 <?php
+/**
+ * ARCHITECTURE & LORE SYSTEM
+ * -------------------------------------------------------------------------
+ * File: amenities.php
+ * Component Type: Corporate Landing Page (Real Estate)
+ * Purpose: Outlines the student housing amenities and strict covenants for "Stardust Blacksburg."
+ * 
+ * DESIGN CONSTRAINTS:
+ * - Employs a "Varsity" color theme: overriding Bootstrap variables via inline `<style>`.
+ * - Uses `.feature-icon-box` with hover transformations (requires `prefers-reduced-motion` awareness if expanded).
+ * - Component structure depends on FontAwesome duotone icons.
+ * - Do NOT remove the `alert` classes, as they signify critical lore (e.g., Smoke-Free/Dry Property).
+ * 
+ * MAINTENANCE NOTES:
+ * - If Bootstrap updates break the custom `.amenity-hero` CSS, verify z-index and flexbox alignment.
+ * - The "$cdnBaseUrl" variable must be available in the global scope for the hero background image to render.
+ */
 // pages/engine-room/corporate/stardust-blacksburg/amenities.php
 // Context: Selling the "Academic Advantage" & Strict Lease Terms.
 // Theme: "Crucible" (Maroon & Orange) / Varsity.

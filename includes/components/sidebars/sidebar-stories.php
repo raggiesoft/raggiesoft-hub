@@ -1,4 +1,17 @@
 <?php
+/**
+ * ARCHITECTURE & MAINTENANCE (LEGACY)
+ *
+ * This file provides the secondary sidebar navigation for the Engine Room "Lore & History" section.
+ * 
+ * DESIGN INTENT:
+ * - Dynamically determines the `active` state of sidebar links by comparing the current `REQUEST_URI` against an array of predefined routes.
+ * - Handles both exact matches (for index pages) and sub-page matches (so a child page keeps the parent's nav item active).
+ * 
+ * MAINTENANCE NOTES:
+ * - The `$current_req` matching is fragile. If URL parameters (`?v=1`) are present, `str_starts_with` or exact matching might fail. Consider parsing the URL path explicitly via `parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH)`.
+ * - The `history` key is treated as an edge case root and excluded from partial sub-page matching to prevent it from always being active.
+ */
 // includes/components/sidebars/sidebar-stories.php
 // Navigation for the Lore & History Section
 // Updated: v2.1 (Fixed Active State Visibility for Corporate Theme)
@@ -50,6 +63,7 @@ $storyLinks = [
 
     <div class="d-flex flex-column gap-1">
         <?php foreach ($storyLinks as $key => $link): 
+            // LEGACY ROUTING LOGIC: Checks for explicit route equality to handle index pages accurately.
             // 1. Exact Match (Account for optional trailing slash)
             $isExactMatch = ($current_req === $link['url'] || $current_req === $link['url'] . '/');
             
@@ -70,6 +84,7 @@ $storyLinks = [
         <?php endforeach; ?>
     </div>
 
+    <!-- LEGACY UI COMPONENT: Contextual helper text for the sidebar. -->
     <div class="mt-4 px-3  small fst-italic ">
         <hr class="border-secondary">
         <i class="fa-duotone fa-info-circle me-1"></i>

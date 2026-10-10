@@ -1,4 +1,20 @@
 <?php
+/**
+ * ARCHITECTURE & LORE SYSTEM
+ * -------------------------------------------------------------------------
+ * File: 1985-american-shores-tour.php
+ * Component Type: Lore Archive / Narrative Artifact
+ * Purpose: Documents the fictional "Independence Stadium Manifesto" for the band Fractured Prisms.
+ * 
+ * DESIGN CONSTRAINTS:
+ * - Employs a specific "Artifact Paper" CSS styling (`.artifact-paper`) to simulate a recovered historical document.
+ * - Uses a massive angled watermark (`.artifact-watermark`) that reacts to light/dark themes.
+ * - Inherits the Fractured Prisms global theme overrides (`.gothic-font`, `.text-glow-prism`, `.bg-prism-dark`).
+ * 
+ * MAINTENANCE NOTES:
+ * - When writing narrative content, maintain the "Archival Standard: Queen's English" as requested by the original author.
+ * - The `z-index` stacking in the `.artifact-paper` card is critical to prevent the text from being hidden behind the watermark.
+ */
 // pages/engine-room/artists/fractured-prisms/story/1985-american-shores-tour.php
 // The 1985 Stadium Tour Manifesto
 // Archival Standard: Queen's English (Artist Artifacts)

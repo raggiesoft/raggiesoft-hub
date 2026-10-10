@@ -1,8 +1,39 @@
 <?php
+/**
+ * Stardust Engine - Lore/Story Template: Archives Overview
+ * 
+ * ARCHITECTURAL OVERVIEW:
+ * This template serves as the main directory index for all Stardust Engine lore,
+ * presenting historical events, narrative arcs, and contextual "Archives."
+ * 
+ * LAYOUT STRUCTURE:
+ * - Built on Bootstrap 5 grid layout.
+ * - Header Row: Introduction and title.
+ * - Featured Entry (Ad Astra): A full-width (col-lg-12) custom card layout displaying
+ *   the flagship lore entry. It uses Web Awesome (<wa-card>) components integrated
+ *   with Bootstrap classes.
+ * - Archive Grid: A responsive grid (col-12 col-md-6 col-lg-4) containing uniform
+ *   <wa-card> elements for the remaining lore entries (Crash of '90, Friction, etc.).
+ * - Force Height CSS: Includes an inline <style> block at the bottom to ensure
+ *   Web Awesome cards stretch properly within the Bootstrap flex grid.
+ * 
+ * DEPENDENCIES:
+ * - Uses Web Awesome components (<wa-card>, <wa-badge>, <wa-button>).
+ * - Depends on $cdnBaseUrl for image assets.
+ * - Uses ROOT_PATH button.php components for some links, while others use <wa-button>.
+ * 
+ * MAINTENANCE NOTES:
+ * - When adding new lore entries, duplicate the HTML structure of an existing grid item
+ *   to ensure uniform height and styling.
+ * - The inline CSS at the bottom overriding `wa-card::part(base)` is critical for the
+ *   masonry/grid layout to maintain equal heights; do not remove it.
+ */
+
 // Page data
 $pageTitle = "The Lore - The Stardust Engine";
 ?>
 
+<!-- BEGIN: Main Archives Container -->
 <div class="container py-5">
     
     <div class="text-center mb-5">
@@ -15,7 +46,7 @@ $pageTitle = "The Lore - The Stardust Engine";
         </p>
     </div>
 
-    <!-- FEATURED: AD ASTRA (THE BOOK) -->
+    <!-- BEGIN: Featured Hero Section (Ad Astra) -->
     <div class="row justify-content-center mb-5">
         <div class="col-lg-12">
             <wa-card class="bg-dark border-info shadow-lg position-relative group-hover-scale p-0 w-100 wa-theme-dark" data-bs-theme="dark" style="--wa-panel-bg: #0d1117; --body-padding: 0;">
@@ -51,11 +82,12 @@ $pageTitle = "The Lore - The Stardust Engine";
             </wa-card>
         </div>
     </div>
+    <!-- END: Featured Hero Section (Ad Astra) -->
 
-    <!-- THE ARCHIVE GRID -->
+    <!-- BEGIN: Standard Archive Grid -->
     <div class="row g-4">
         
-        <!-- 1. The Crash of '90 (New Entry) -->
+        <!-- Grid Item: The Crash of '90 -->
         <div class="col-12 col-md-6 col-lg-4 d-flex align-items-stretch">
             <wa-card class="h-100 border-danger shadow-sm hover-card bg-transparent w-100 p-0" style="--wa-panel-bg: transparent; --body-padding: 0;">
                 <img src="<?php echo $cdnBaseUrl; ?>/stardust-engine/images/story/crash-of-1990.jpg" class="img-fluid border-bottom" alt="Ryan in a wheelchair in a hospital room with Holly and Cassidy by his side"
@@ -74,7 +106,7 @@ $pageTitle = "The Lore - The Stardust Engine";
             </wa-card>
         </div>
 
-        <!-- 2. The Friction Catastrophe -->
+        <!-- Grid Item: The Friction Catastrophe -->
         <div class="col-12 col-md-6 col-lg-4 d-flex align-items-stretch">
             <wa-card class="h-100 border-primary shadow-sm hover-card bg-transparent w-100 p-0" style="--wa-panel-bg: transparent; --body-padding: 0;">
                 
@@ -112,7 +144,7 @@ $pageTitle = "The Lore - The Stardust Engine";
             </wa-card>
         </div>
 
-        <!-- 3. The Refusal -->
+        <!-- Grid Item: The Refusal -->
         <div class="col-12 col-md-6 col-lg-4 d-flex align-items-stretch">
             <wa-card class="h-100 border-warning shadow-sm hover-card bg-transparent w-100 p-0" style="--wa-panel-bg: transparent; --body-padding: 0;">
                 <img src="<?php echo $cdnBaseUrl; ?>/engine-room-records/images/omni-global/150-million-refusal.jpg" class="img-fluid border-bottom" alt="Cassidy O'Connell looking fierce in a corporate boardroom rejecting a contract offer"
@@ -131,7 +163,7 @@ $pageTitle = "The Lore - The Stardust Engine";
             </wa-card>
         </div>
 
-        <!-- 4. CPI & The Forgers -->
+        <!-- Grid Item: CPI & The Forgers -->
         <div class="col-12 col-md-6 col-lg-4 d-flex align-items-stretch">
             <wa-card class="h-100 border-secondary shadow-sm hover-card bg-transparent w-100 p-0" style="--wa-panel-bg: transparent; --body-padding: 0;">
                 <img src="<?php echo $cdnBaseUrl; ?>/engine-room-records/artists/the-stardust-engine/2016-live-at-the-crucible/album-art.jpg" class="img-fluid border-bottom" alt="The Crucible Stadium at night">
@@ -153,7 +185,7 @@ $pageTitle = "The Lore - The Stardust Engine";
             </wa-card>
         </div>
 
-        <!-- 5. KNOX -->
+        <!-- Grid Item: KNOX -->
         <div class="col-12 col-md-6 col-lg-4 d-flex align-items-stretch">
             <wa-card class="h-100 border-info shadow-sm hover-card bg-transparent w-100 p-0" style="--wa-panel-bg: transparent; --body-padding: 0;">
                 <img src="<?php echo $cdnBaseUrl; ?>/engine-room-records/artists/the-stardust-engine/2017-knox-ost/album-art.jpg" class="img-fluid border-bottom" alt="The cover of KNOX"
@@ -172,7 +204,7 @@ $pageTitle = "The Lore - The Stardust Engine";
             </wa-card>
         </div>
 
-        <!-- 6. Complete Timeline -->
+        <!-- Grid Item: Complete Timeline -->
         <div class="col-12 col-md-6 col-lg-4 d-flex align-items-stretch">
             <wa-card class="h-100 border-secondary shadow-sm hover-card bg-transparent w-100 p-0" style="--wa-panel-bg: transparent; --body-padding: 0;">
                 <img src="<?php echo $cdnBaseUrl; ?>/stardust-engine/images/story/timeline.jpg" class="img-fluid border-bottom" alt="A stylized timeline graphic showing key events in the band's history"
@@ -196,7 +228,11 @@ $pageTitle = "The Lore - The Stardust Engine";
         </div>
 
     </div>
+    <!-- END: Standard Archive Grid -->
 </div>
+<!-- END: Main Archives Container -->
+
+<!-- BEGIN: Web Awesome Layout Fixes -->
 <style>
     /* Force Web Awesome cards to stretch their internal body container */
     wa-card.hover-card::part(base) {
@@ -210,3 +246,4 @@ $pageTitle = "The Lore - The Stardust Engine";
         flex-direction: column;
     }
 </style>
+<!-- END: Web Awesome Layout Fixes -->

@@ -1,4 +1,32 @@
 <?php
+/**
+ * Civilopedia - Markdown Viewer & Renderer
+ *
+ * ARCHITECTURE & CONTEXT:
+ * This script acts as the dynamic renderer for the "Civilopedia" (in-universe wiki).
+ * It receives an `entry` parameter via GET, safely resolves it against the physical 
+ * Markdown repository (`raggiesoft-assets/raggiesoft-books/encyclopedia/`), and uses 
+ * `StardustLoreParser` to convert the markdown into HTML.
+ *
+ * SECURITY:
+ * - Implements a strict `preg_match('/\.\./')` directory traversal check to prevent 
+ *   malicious path escalation.
+ * - Forces a 404 response if the resolved markdown file does not exist.
+ *
+ * UI/UX ARCHITECTURE:
+ * - Employs a dual-column layout: a sticky Sidebar Navigation (TOC) on the left, 
+ *   and the Main Lore Content on the right.
+ * - Includes dynamic theme overriding: If the markdown frontmatter specifies a theme 
+ *   (`ad-astra` or `dark`), it injects a JS snippet to force `data-bs-theme="dark"` 
+ *   on the document root.
+ *
+ * MAINTENANCE NOTES:
+ * - Ensure `ROOT_PATH` and the asset directory path remain synchronized if the 
+ *   folder structure changes.
+ * - The `StardustLoreParser::parse()` method is expected to return an array containing 
+ *   `metadata` (frontmatter), `html`, and `toc` (Table of Contents).
+ */
+
 require_once ROOT_PATH . '/includes/classes/stardust-lore-parser.php';
 
 $entry = $_GET['entry'] ?? '';

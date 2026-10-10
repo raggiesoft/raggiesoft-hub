@@ -1,3 +1,34 @@
+<?php
+/**
+ * ARCHITECTURAL DOCBLOCK
+ * 
+ * File: raggiesoft-hub/includes/components/modals/settings-dialog.php
+ * Path: /includes/components/modals/settings-dialog.php
+ * 
+ * CORE RESPONSIBILITY:
+ * Reusable UI Component: Accessibility Settings Modal.
+ * Renders a Web Awesome `<wa-dialog>` allowing users to override global theme preferences
+ * (Light, Dark, Auto, Sepia) and persists these settings via `localStorage`.
+ * 
+ * LORE CONTEXT:
+ * - N/A. This is a functional site-wide utility component.
+ * 
+ * UI/UX & STYLING ARCHITECTURE:
+ * - Uses `<wa-dialog>` and `<wa-radio-group>` for native Web Components styling.
+ * - Implements a custom "Sepia" theme (`.wa-theme-sepia`) using inline CSS variables 
+ *   to provide a low-contrast reading mode.
+ * 
+ * DEPENDENCIES & INCLUSIONS:
+ * - Expects Web Awesome component library to be loaded.
+ * - Expects buttons with the ID `#open-site-settings-btn` to exist in the DOM to trigger the modal.
+ * 
+ * MAINTENANCE NOTES:
+ * - The JavaScript logic is self-contained within an IIFE to prevent namespace collisions.
+ * - Modifying theme classes (`wa-theme-light`, `wa-theme-dark`, `theme-auto`) must align with
+ *   the global CSS framework (Bootstrap 5 `data-bs-theme` attribute).
+ * - This file is a static HTML/JS partial executing within a PHP environment.
+ */
+?>
 <!-- Site Settings Dialog -->
 <wa-dialog id="site-settings-dialog" class="site-settings-dialog" label="Accessibility Settings" light-dismiss>
     

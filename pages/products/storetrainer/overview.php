@@ -1,4 +1,19 @@
 <?php
+/**
+ * ============================================================================
+ * ARCHITECTURE & LEGACY PRESERVATION:
+ * This file serves as a legacy endpoint for the TSSetup.nsi installer.
+ * The UI is deliberately designed to mimic the Windows Classic / Y2K aesthetic
+ * to provide a consistent experience when opened via the installer's "Finish Page" link.
+ * 
+ * Future Maintenance:
+ * - Do NOT modernize the UI of this specific page; it is meant to be a time capsule.
+ * - The CSS classes (e.g., .win-window, .win-sunken) are isolated to prevent
+ *   interference with the global Elara SPA styling.
+ * - The $cdnBaseUrl variable is used for dynamic asset linking. Ensure it is
+ *   properly echo'ed within <?php ?> tags even inside HTML blocks.
+ * ============================================================================
+ */
 // pages/products/storetrainer/overview.php
 // Legacy Endpoint for TSSetup.nsi (MUI_FINISHPAGE_LINK_LOCATION)
 // Theme: Windows Classic / Y2K Time Capsule
@@ -7,6 +22,7 @@ $pageTitle = "StoreTrainer | RaggieSoft Software";
 ?>
 
 <style>
+    /* --- ARCHITECTURE: Isolated Windows Classic Theme --- */
     /* --- TIME CAPSULE: WINDOWS CLASSIC THEME --- */
     .time-capsule-wrapper {
         background-color: #008080; /* Classic Windows 95 Desktop Teal */
@@ -121,6 +137,7 @@ $pageTitle = "StoreTrainer | RaggieSoft Software";
 <div class="time-capsule-wrapper w-100">
     <div class="win-window">
         
+        <!-- ARCHITECTURE: Classic Title Bar matching Y2K application aesthetics -->
         <div class="win-titlebar">
             <span><i class="fa-solid fa-floppy-disk me-2" aria-hidden="true" style="font-size: 12px;"></i> RaggieSoft StoreTrainer - Microsoft Internet Explorer</span>
             <div class="win-titlebar-buttons">
@@ -166,6 +183,7 @@ $pageTitle = "StoreTrainer | RaggieSoft Software";
                         <strong>tssetup100.exe</strong>
                         <p style="font-size: 10px; margin-top: 5px; color: #666;">(Includes Source Code & Redistributables)</p>
                         
+                        <!-- ARCHITECTURE: Dynamic CDN linking for the legacy executable -->
                         <a href="<?php echo $cdnBaseUrl; ?>/products/downloads/store-trainer/tssetup100.exe" class="win-button mt-3 fw-bold">
                             <i class="fa-solid fa-download me-1" aria-hidden="true"></i> Download Now
                         </a>

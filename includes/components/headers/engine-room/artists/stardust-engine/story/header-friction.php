@@ -3,8 +3,26 @@
 // Dedicated navigation for the "Friction Catastrophe" (1992)
 // Context: The "Cold War" Era.
 
+/**
+ * ARCHITECTURE & MAINTENANCE NOTES:
+ * 
+ * Component: Friction Catastrophe Story Header
+ * Purpose: Dedicated navigation for the 1992 "Friction" lore event, utilizing a "Cold War" aesthetic.
+ * 
+ * Strategy & Implementation:
+ * - Employs strict URL checking to trigger danger/warning states (`text-danger`) to fit the narrative theme.
+ * - The Dropdown serves as an "Evidence" locker, linking both to story assets and external discography.
+ * - Direct escape hatch to the main Timeline overview avoids trapping the user in the sub-story.
+ * 
+ * Maintenance Recommendations:
+ * - Maintain the `text-danger` utility classes to preserve the "classified/restricted" visual language.
+ * - If additional evidence pages are added, ensure `$isEvidence` logic is expanded to highlight the menu accurately.
+ */
+
+// Capture the current route for thematic danger-state highlighting
 $uri = $_SERVER['REQUEST_URI'] ?? '';
 $isOverview = ($uri === '/engine-room/artists/stardust-engine/story/friction');
+// Fuzzy match for any evidence-related paths
 $isEvidence = str_contains($uri, '/the-lost-title-track');
 ?>
 
@@ -21,6 +39,7 @@ $isEvidence = str_contains($uri, '/the-lost-title-track');
     
 
     
+  <!-- Evidence Locker: Thematically styled dropdown for classified story assets -->
   <wa-dropdown placement="bottom-start">
     <wa-button class="nav-link  <?php echo $isEvidence ? 'active fw-bold text-danger' : ''; ?>" slot="trigger" appearance="plain">
             <i class="fa-duotone fa-folder-magnifying-glass me-2"></i>Evidence

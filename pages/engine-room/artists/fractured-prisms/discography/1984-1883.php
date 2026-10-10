@@ -1,4 +1,19 @@
 <?php
+/**
+ * Fractured Prisms - 1883 Album Page
+ *
+ * This file displays the discography entry for the 1984 album "1883" by Fractured Prisms.
+ * It features album details, lore context, and integrates with the tracklist downloader component.
+ *
+ * Architecture Notes:
+ * - Uses the bespoke "Fractured Prisms" dark theme with custom classes (`bg-prism-dark`, `text-glow-prism`, `lore-card`).
+ * - Contains Bootstrap 5 responsive grid structures for layout formatting.
+ * - Pulls the album tracklist dynamically using `_tracklist-downloader.php`.
+ *
+ * Maintainer Note: Keep the gothic and tech typography consistent. When adding new studio 
+ * archives or lore items, follow the `lore-card` and `artifact-paper` layout structures.
+ */
+
 // pages/engine-room/artists/fractured-prisms/discography/1984-1883.php
 // Page data
 $pageTitle = "1883 (The Rock Opera) - Fractured Prisms";
@@ -6,6 +21,7 @@ $album_path_web = '/engine-room-records/artists/fractured-prisms/1984-1883';
 
 ?>
 
+<!-- ALBUM OVERVIEW WRAPPER -->
 <div class="container py-5 bg-prism-dark">
     
     <div class="row align-items-center mb-5">

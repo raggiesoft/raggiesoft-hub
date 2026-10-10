@@ -1,4 +1,16 @@
 <?php
+/**
+ * ARCHITECTURE: parsedown.php
+ * 
+ * Context: RaggieSoft Hub - 3rd Party Library.
+ * Narrative/Purpose: Parsedown is a Markdown parser in PHP. It is used across the RaggieSoft ecosystem 
+ * to render narrative content, lore files, and user-generated text into HTML.
+ * 
+ * Mechanics:
+ * - This is a MINIFIED/EXTERNAL 3rd-party file. 
+ * - Per system instructions, NO INLINE COMMENTS should be added to preserve the integrity of the external library.
+ * - Parses markdown into HTML arrays/strings using a fast, state-based parsing algorithm.
+ */
 
 #
 #

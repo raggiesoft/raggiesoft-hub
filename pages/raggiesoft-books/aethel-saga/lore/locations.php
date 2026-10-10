@@ -1,4 +1,26 @@
 <?php
+/**
+ * Aethel Lore: Locations & Geography
+ *
+ * ARCHITECTURE & CONTEXT:
+ * This page documents key geographical locations within the Aethel universe.
+ * Currently, it details "Sunstead" (the independent crossroads) and "The Twins' Hut"
+ * (the cramped sanctuary). The lore explicitly notes the cramped nature of the hut
+ * as a physical metaphor for the twins' celestial reality: two stars forced into a 
+ * singular, inescapable orbit.
+ *
+ * UI/UX ARCHITECTURE:
+ * - Utilizes the `.aethel-theme` and `.tome-container` for consistent styling.
+ * - Employs a staggered grid layout (`col-lg-5` / `col-lg-7`), alternating the 
+ *   image and text placement for visual rhythm as the user scrolls.
+ * - Uses `.cinzel-font` for primary headings to evoke a classic fantasy aesthetic.
+ *
+ * MAINTENANCE NOTES:
+ * - As new locations are generated (e.g., Shadowspire, The Crystal Wastes), add them 
+ *   using the established alternating `.row > .col-lg` card structure.
+ * - Ensure `$cdnBaseUrl` resolves the location images correctly.
+ */
+
 $pageTitle = "Lore: The Realms of Aethel";
 ?>
 

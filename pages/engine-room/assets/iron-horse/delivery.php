@@ -1,4 +1,16 @@
 <?php
+/**
+ * Lore: The First Ride (Delivery)
+ *
+ * This file presents the narrative account of the band receiving their customized tour bus,
+ * the "Iron Horse" (Unit 02), emphasizing its custom hydraulic lift for accessibility.
+ * It also includes a mocked "Competitor Intelligence Report" detailing the failure of a pop star's custom bus.
+ *
+ * Architecture Notes:
+ * - Structured as a storytelling page with standard Bootstrap card UI to present historical "archives".
+ * - The `card bg-black border-danger` segment creates a visually distinct in-universe "report" style.
+ * - Future edits should maintain the gritty, practical tone of the band's operational lore.
+ */
 // pages/engine-room/assets/iron-horse/delivery.php
 // The Aftermath of the Negotiation.
 // Location: Sainte-Claire Coachworks // Québec, Canada

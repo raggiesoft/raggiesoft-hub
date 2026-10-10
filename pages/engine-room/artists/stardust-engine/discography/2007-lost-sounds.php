@@ -1,5 +1,11 @@
 <?php
 // Page data
+/*
+ * ARCHITECTURE & LORE:
+ * Archival compilation page for "Lost Sounds" (2007).
+ * Utilizes standard album header and tracklist components.
+ * Features a custom "Track-by-Track Lore" list group highlighting key lost tracks.
+ */
 $pageTitle = "Lost Sounds (2007) - The Stardust Engine";
 $album_path_web = '/engine-room-records/artists/the-stardust-engine/2007-lost-sounds';
 
@@ -7,6 +13,7 @@ $album_path_web = '/engine-room-records/artists/the-stardust-engine/2007-lost-so
 
 <div class="container py-5">
     
+    <!-- INLINE: Neutral variant used for archival release header -->
     <div class="row align-items-center mb-5">
         <?php $props = [
             'path' => $album_path_web, 
@@ -34,6 +41,7 @@ $album_path_web = '/engine-room-records/artists/the-stardust-engine/2007-lost-so
 
     <?php include ROOT_PATH . '/includes/components/_tracklist-downloader.php'; ?>
 
+    <!-- INLINE: Track-by-Track Lore - Lists out detailed backstories for specific songs -->
     <div class="mt-5">
         <h3 class="h4 fw-bold text-uppercase text-muted mb-4 border-bottom pb-2">Track-by-Track Lore</h3>
 

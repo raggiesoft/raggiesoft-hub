@@ -1,4 +1,14 @@
 <?php
+/**
+ * Flight Log: Overview - Ad Astra
+ *
+ * This file acts as the chapter select screen for the Ad Astra narrative, listing the various mission phases.
+ *
+ * Architecture Notes:
+ * - Presents a chronological list of mission days (Ignition, Stabilization, Ship's Time, The Drift, The Drop).
+ * - Links to individual day logs, providing a central navigation point for the voyage narrative.
+ * - Future updates should add any new mission phases here to maintain a complete timeline.
+ */
 // pages/engine-room/artists/stardust-engine/story/ad-astra/voyage/overview.php
 // Context: The Chapter Select screen for the Ad Astra narrative.
 // UPDATED: Full Mission List (Days 1, 2, 3, 10, 21)

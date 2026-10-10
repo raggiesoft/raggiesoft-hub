@@ -1,5 +1,33 @@
 <?php
-// includes/components/footers/case-studies/footer-case-studies.php
+/**
+ * ARCHITECTURAL DOCBLOCK
+ * 
+ * File: raggiesoft-hub/includes/components/footers/case-studies/footer-case-studies.php
+ * Path: /includes/components/footers/case-studies/footer-case-studies.php
+ * 
+ * CORE RESPONSIBILITY:
+ * Reusable UI Component: Case Studies Footer.
+ * Renders the dedicated footer for the "RaggieSoft Archives" (Operational Case Studies) section.
+ * Provides distinct branding, quick links, and legal/licensing notices.
+ * 
+ * LORE CONTEXT:
+ * - Frames the case studies as professional DevOps/Architecture documentation.
+ * - Injects the "Konami" easter egg component to simulate an "Admin Root Access" terminal override.
+ * 
+ * UI/UX & STYLING ARCHITECTURE:
+ * - Employs a standard Bootstrap 5 footer layout (`.mt-auto`, `.bg-body-tertiary`, `.py-5`).
+ * - Uses responsive grid (`.row`, `.col-lg-5`, etc.) to organize brand info, links, and social icons.
+ * - Relies on FontAwesome (`fa-linkedin`, `fa-envelope`) for social connections.
+ * 
+ * DEPENDENCIES & INCLUSIONS:
+ * - Requires `$cdnBaseUrl` to load the RaggieSoft logo.
+ * - Includes `/includes/components/easter-eggs/konami.php` passing in a specific `$konami_config` array.
+ * - Relies on `ROOT_PATH` for the easter egg inclusion.
+ * 
+ * MAINTENANCE NOTES:
+ * - The Easter Egg config (`$konami_config`) is hardcoded here to provide a unique "Admin" flavor
+ *   different from the standard Konami modal. Do not overwrite `$konami_config` downstream.
+ */
 ?>
 <footer class="mt-auto bg-body-tertiary border-top py-5">
     <div class="container">

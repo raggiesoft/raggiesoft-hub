@@ -1,8 +1,16 @@
 <?php
+/**
+ * @file 2001-static-and-silence.php
+ * @description Artist Profile and Album page for Mirage - "Static & Silence".
+ * @context This page outlines the lore and context for the first major signing to Engine Room Records, highlighting the "Safe Harbor" trust structure for Julian and Maya.
+ * @architecture Uses a custom "industrial" theme via internal CSS to match the band's gritty, industrial metal aesthetic. It includes the shared tracklist downloader component at the bottom.
+ * @maintenance Keep the $album_path_web variable perfectly aligned with the CDN structure, as _tracklist-downloader.php relies entirely on it to fetch the JSON payload.
+ */
 // pages/engine-room/artists/mirage.php
 // Artist Profile: Mirage (The First Signing)
 // "We're going to build an engine, too."
 
+// INLINE: Define the global page title
 $pageTitle = "Mirage - Engine Room Records Roster";
 
 // --- CRITICAL CONFIGURATION ---
@@ -51,6 +59,7 @@ $album_path_web = '/engine-room-records/artists/mirage/2001-static-and-silence';
     }
 </style>
 
+<!-- INLINE: Main container for the Mirage profile page -->
 <div class="container-fluid p-0">
     
     <div class="industrial-header py-5">
@@ -193,6 +202,7 @@ $album_path_web = '/engine-room-records/artists/mirage/2001-static-and-silence';
                 </div>
             </div>
 
+            <!-- INLINE: Mount the dynamic tracklist downloader for the album -->
             <?php include ROOT_PATH . '/includes/components/_tracklist-downloader.php'; ?>
             
         </div>

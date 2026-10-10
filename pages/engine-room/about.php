@@ -1,4 +1,16 @@
 <?php
+/**
+ * @file about.php
+ * @brief The Manifesto: "The Fortress Built on a Kill Switch." Origin: The Friction Catastrophe (1992).
+ * 
+ * ARCHITECTURE & MAINTENANCE NOTES:
+ * - Domain: Engine Room Records -> About
+ * - Data Source: Includes a dynamic rendering block that fetches `ROOT_PATH . '/data/corporate-structure.json'` and includes `org-chart.php`.
+ * - Presentation: Uses skeuomorphic timeline connectors (`.timeline-connector`) for visual styling.
+ * - Philosophy: "Protection first, Profit second."
+ * - Integration: Maintain the external data inclusion logic. If `corporate-structure.json` schema changes, ensure rendering logic here and in `org-chart.php` is updated correspondingly.
+ * - DO NOT modify the fetching mechanisms or visual HTML structure.
+ */
 // pages/engine-room/about.php
 // The Manifesto: "The Fortress Built on a Kill Switch."
 // Origin: The Friction Catastrophe (1992).

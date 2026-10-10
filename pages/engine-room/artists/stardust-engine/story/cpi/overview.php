@@ -1,8 +1,35 @@
 <?php
+/**
+ * Stardust Engine - Lore/Story Template: CPI & The Forgers Overview
+ * 
+ * ARCHITECTURAL OVERVIEW:
+ * This template acts as an informational lore page documenting the band's origins at
+ * Commonwealth Polytechnic Institute (CPI) and their relationship with the "Ironheads" fanbase.
+ * 
+ * LAYOUT STRUCTURE:
+ * - Utilizes a standard Bootstrap 5 container.
+ * - Header Row: A simple centered title and lead paragraph.
+ * - Hero Image: A figure component displaying "The Crucible" stadium.
+ * - Narrative Sections: A single column (col-lg-10) containing sequentially arranged
+ *   headings and paragraphs documenting lore (The Class of '89, "Ignition", War Chest).
+ * - Callout Box: A styled Bootstrap alert emphasizing the marching band drill for "Ignition".
+ * 
+ * DEPENDENCIES:
+ * - Expects $cdnBaseUrl for resolving the stadium image path.
+ * - Utilizes FontAwesome (fa-drum) for the callout box.
+ * 
+ * MAINTENANCE NOTES:
+ * - This page does not currently utilize the narrative-stepper component, as it acts more
+ *   like an encyclopedia entry than a linear chapter.
+ * - If additional CPI lore is written (e.g., specific football games, dorm room formations),
+ *   consider linking them from this overview page as sub-articles.
+ */
+
 // Page data
 $pageTitle = "About CPI & The Forgers - The Stardust Engine";
 ?>
 
+<!-- BEGIN: Main Page Container -->
 <div class="container py-5">
     
     <!-- Page Header -->
@@ -15,7 +42,7 @@ $pageTitle = "About CPI & The Forgers - The Stardust Engine";
         </p>
     </div>
 
-    <!-- Hero Image: The Crucible -->
+    <!-- BEGIN: Hero Image -->
     <div class="text-center mb-5">
         <figure class="figure">
             <img src="<?php echo $cdnBaseUrl; ?>/engine-room-records/artists/the-stardust-engine/2016-live-at-the-crucible/album-art.jpg" 
@@ -26,8 +53,9 @@ $pageTitle = "About CPI & The Forgers - The Stardust Engine";
             </figcaption>
         </figure>
     </div>
+    <!-- END: Hero Image -->
 
-    <!-- Section 1: The Forger Identity -->
+    <!-- BEGIN: Main Narrative Content Column -->
     <div class="row justify-content-center">
         <div class="col-lg-10 mx-auto">
             
@@ -58,12 +86,14 @@ $pageTitle = "About CPI & The Forgers - The Stardust Engine";
                 In 1986, while still students, the band wrote and donated the industrial-rock anthem <strong>"Ignition (The Forger's Call)"</strong> to the university. 
             </p>
             
+            <!-- BEGIN: Highlight Alert Box -->
             <div class="alert alert-dark border-secondary bg-opacity-10 d-flex align-items-center mb-4" role="alert">
                 <i class="fa-duotone fa-drum text-secondary fs-2 me-3"></i>
                 <div class="small text-muted">
                     <strong>The Marching Drill:</strong> The song was designed for the marching band. The bridge features a relentless, shifting cadence that the student section mimics: they sway <strong class="text-primary">Left</strong>, then <strong class="text-primary">Right</strong>, then <strong class="text-primary">Left</strong>, then <strong class="text-primary">Right</strong>, shaking the entire stadium to its foundations.
                 </div>
             </div>
+            <!-- END: Highlight Alert Box -->
 
             <p class="text-muted mb-4">
                 This song was adopted by the football team as their sacred entrance music, creating an "Enter Sandman-style" tradition where the entire stadium erupts as the team takes the field. This act cemented the band's status as legends on campus, long before they had a record deal.
@@ -81,4 +111,6 @@ $pageTitle = "About CPI & The Forgers - The Stardust Engine";
 
         </div>
     </div>
+    <!-- END: Main Narrative Content Column -->
 </div>
+<!-- END: Main Page Container -->

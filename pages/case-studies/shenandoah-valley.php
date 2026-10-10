@@ -1,4 +1,24 @@
+<?php
+/**
+ * RaggieSoft Architecture - Page Component
+ * 
+ * File: pages/case-studies/shenandoah-valley.php
+ * Component: The Shenandoah Valley Gauntlet
+ * Type: Case Study
+ * 
+ * Description:
+ * A detailed case study comparing physical routing (I-81/I-64) to
+ * graceful degradation and failover protocols in system architecture.
+ *
+ * Maintenance Notes:
+ * - Contains multiple sections: Architecture, Stress Test, Failure, Recovery, Takeaway.
+ * - Uses alert components and distinct coloring for phases.
+ * - Purely static content component.
+ */
+?>
+<!-- MAIN CASE STUDY LAYOUT -->
 <div class="container py-5">
+    <!-- HERO TITLE HEADER -->
     <div class="border-bottom pb-2 mb-4 d-flex align-items-center">
         <i class="fa-duotone fa-route-interstate fa-3x text-primary me-3" aria-hidden="true"></i>
         <div>

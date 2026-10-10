@@ -1,4 +1,28 @@
 <?php
+/**
+ * RaggieSoft Family - Amanda & Elara
+ *
+ * ARCHITECTURE & CONTEXT:
+ * This page documents the system architecture for "Amanda" and "Elara", representing
+ * the Web Root and Router respectively. It details the unique "symbiosis" where 
+ * Amanda acts as the static, read-only file directory, and Elara acts as the dynamic,
+ * executable routing script.
+ * 
+ * This personifies the actual Elara CMS routing logic: protecting the underlying 
+ * physical paths by routing all traffic through a single entry point.
+ *
+ * UI/UX ARCHITECTURE:
+ * - Uses a custom color theme (`--family-amanda`) inherited from the global CSS.
+ * - Features a prominent card header layout, split evenly between imagery and lore stats.
+ * - Employs a stylized "theme-terminal" section to display the Nginx configuration,
+ *   demonstrating the "Security Through Obscurity" pattern in practice.
+ *
+ * MAINTENANCE NOTES:
+ * - The Nginx configuration block is hardcoded HTML representing the actual server config.
+ *   If the underlying server configuration changes, update this block to match.
+ * - Rely on `$cdnBaseUrl` for image rendering to maintain CDN compatibility.
+ */
+
 // pages/family/amanda-elara.php
 // Theme: RaggieSoft (Clean, Human, Green)
 ?>

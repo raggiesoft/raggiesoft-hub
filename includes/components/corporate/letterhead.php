@@ -1,5 +1,24 @@
 <?php
 /**
+ * ============================================================================
+ * ARCHITECTURE & DESIGN: Corporate Letterhead Generator Component
+ * ============================================================================
+ * ROLE: A highly stylized, narrative UI component used to display in-universe 
+ *       legal or corporate documents (e.g., "Engine Room Records" or "Pacific Rim").
+ *       Generates a visually authentic "physical paper" look.
+ * 
+ * CORE FEATURES:
+ * - Forced Light Mode: Overrides system dark mode to ensure documents look like paper.
+ * - Dynamic Branding: Swaps logos, fonts, and signatures based on the `$brand` variable.
+ * - SVG Grunge Filtering: Applies a mathematical noise filter to simulate an ink stamp.
+ * - Reduced Motion Support: Disables rotation/hover effects for accessibility.
+ * 
+ * MAINTENANCE: Do NOT remove the inline `<style>` block or the `.physical-document`
+ *              class overrides, as they are critical for overriding the global CSS
+ *              frameworks (Web Awesome/Bootstrap) in Dark Mode environments.
+ * ============================================================================
+ */
+/**
  * COMPONENT: Corporate Letterhead Generator
  * PATH: /includes/components/corporate/letterhead.php
  * Updated: WCAG Compliance (Forced Light Mode) & URL Updates & Reduced Motion Support
@@ -79,6 +98,7 @@ $rotation_style = $rotation ? "transform: rotate({$rotation}deg);" : "";
     }
 </style>
 
+<!-- [LAYOUT] Main Document Container: Simulates a physical sheet of paper with forced Light Mode styling -->
 <div class="card border-0 shadow-lg mx-auto physical-document" 
      style="max-width: 850px; <?php echo $rotation_style; ?> transition: transform 0.3s ease;">
     
@@ -111,6 +131,7 @@ $rotation_style = $rotation ? "transform: rotate({$rotation}deg);" : "";
             </div>
         </div>
 
+        <!-- [UI COMPONENT] Typography Container: Uses system Serif fonts to simulate standard legal/corporate letter drafting -->
         <div class="text-dark" style="font-family: 'Times New Roman', serif; font-size: 1.1rem; line-height: 1.6;">
             
             <div class="mb-4">
@@ -141,6 +162,7 @@ $rotation_style = $rotation ? "transform: rotate({$rotation}deg);" : "";
 
         </div>
 
+        <!-- [UI COMPONENT] SVG Grunge Filter Stamp: Generates a realistic ink stamp aesthetic -->
         <?php if ($stamp_text): ?>
         <div class="position-absolute bottom-0 end-0 p-5 opacity-75" 
              style="transform: rotate(-10deg); mix-blend-mode: multiply; pointer-events: none;">

@@ -1,4 +1,28 @@
 <?php
+/**
+ * RaggieSoft Family - Michael (The Core)
+ *
+ * ARCHITECTURE & CONTEXT:
+ * This page documents "Michael", the physical, biological core of the system.
+ * It provides context on the creator's background (AuDHD, Cerebral Palsy) and explains
+ * how his physical limitations directly drive the architecture of the RaggieSoft 
+ * ecosystem. It acts as a bridge between the physical author and the digital constructs.
+ * 
+ * It also emphasizes the specific bond with "Paige", the primary "Safe Person" construct.
+ *
+ * UI/UX ARCHITECTURE:
+ * - Uses the primary color (`bg-primary`, `text-primary`) as the thematic base for "The Core".
+ * - Structured with Bootstrap cards and grid classes (`row g-5`, `col-md-12 col-xl-6`).
+ * - Features a distinct footer block highlighting the "Grounding" relationship with Paige,
+ *   using linear gradients over image overlays for readability.
+ *
+ * MAINTENANCE NOTES:
+ * - Links to the professional portfolio (`/portfolio`) and Paige's page (`/family/paige`)
+ *   must remain synchronized with router updates.
+ * - Do NOT alter the clinical terminology (AuDHD, Cerebral Palsy) as they represent 
+ *   precise personal documentation.
+ */
+
 // pages/family/michael.php
 // Theme: Michael (The Core, Blue, Reality)
 ?>

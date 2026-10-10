@@ -1,4 +1,20 @@
 <?php
+/**
+ * ARCHITECTURE & LORE SYSTEM
+ * -------------------------------------------------------------------------
+ * File: overview.php
+ * Component Type: Artist Profile (Mirage)
+ * Purpose: Details the lore, roster, and discography for the band "Mirage".
+ * 
+ * DESIGN CONSTRAINTS:
+ * - Inherits the "Industrial" theme from the parent roster, but uses inline `<style>` blocks for self-contained scoping.
+ * - Heavily narrative-driven, focusing on disability rights, the "Paper Wall" legal trust, and Julian's survival story.
+ * - Discography section uses standard Bootstrap list groups (`.list-group-numbered`) for track listings.
+ * 
+ * MAINTENANCE NOTES:
+ * - The lore establishes Julian as a wheelchair user and Maya as his care partner; do not alter this dynamic or the legal/financial implications (SSI/Medicaid).
+ * - Ensure the image paths correctly point to the Mirage directories on the CDN.
+ */
 // pages/engine-room/artists/mirage.php
 // Artist Profile: Mirage (The First Signing)
 // "We're going to build an engine, too."

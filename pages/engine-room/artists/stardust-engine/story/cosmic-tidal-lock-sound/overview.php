@@ -1,4 +1,15 @@
 <?php
+/**
+ * @file overview.php
+ * @brief Lore Page: The Cosmic Tidal Lock Sound & 80s Cosmic Pop
+ * 
+ * ARCHITECTURE & MAINTENANCE NOTES:
+ * - Domain: Engine Room Records -> Stardust Engine -> Cosmic Tidal Lock Sound
+ * - SEO/Data: Contains JSON-LD schema markup (`@type: Article`) directly injected into the page rendering logic.
+ * - Content: Houses highly specific text blocks detailing "Suno Engineering Meta-Data" for AI music generation.
+ * - Integration: Any modifications to the schema MUST adhere strictly to valid JSON-LD structure to prevent SEO regression.
+ * - DO NOT alter the embedded JSON schema, existing metadata structure, or the core logic.
+ */
 // pages/engine-room/artists/stardust-engine/cosmic-tidal-lock-sound/overview.php
 // Lore Page: The Cosmic Tidal Lock Sound & 80s Cosmic Pop
 // Updated: Includes Article Schema and Suno Engineering Meta-Data

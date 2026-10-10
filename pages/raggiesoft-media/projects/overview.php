@@ -3,6 +3,23 @@
 // The Open Source Division Hub
 // Updated: Frutiger Aero / Dark Aero Image Backgrounds + Architect Portfolio Integration
 
+/**
+ * ARCHITECTURE & MAINTENANCE NOTES:
+ * 
+ * Component: Open Source Division Hub
+ * Purpose: The main landing page outlining active and legacy software projects developed by RaggieSoft Media.
+ * 
+ * Strategy & Implementation:
+ * - Implements a full-width `.aero-hero` section designed to integrate with the global stylesheet's Aero parameters.
+ * - Uses a standard card grid (`col-lg-6`) mapped to specific projects.
+ * - Incorporates distinct color coding per project (e.g., `bg-hud-blue`, `bg-hud-orange`, `bg-hud-green`) to visually segment the infrastructure ecosystem.
+ * 
+ * Maintenance Recommendations:
+ * - Keep project cards uniform in height (`h-100`) and ensure descriptions are relatively similar in length to prevent layout breakage.
+ * - The `hover-lift` class relies on global CSS transitions; do not override transforms inline on these cards.
+ */
+
+// Inform the router of the SEO title context
 $pageTitle = "Open Source Projects | RaggieSoft Media";
 ?>
 
@@ -143,6 +160,7 @@ $pageTitle = "Open Source Projects | RaggieSoft Media";
         </div>
     </div>
     
+    <!-- Global Licensing Disclaimer: Required for legal transparency regarding MIT and CC BY-SA terms -->
     <div class="row col-lg-10 mx-auto">
         <div class="col-12 text-center pt-4">
             <div class="p-3 rounded-4" style="background: rgba(0,0,0,0.02); border: 1px solid var(--raggie-glass-border); box-shadow: inset 0 2px 4px rgba(0,0,0,0.02);">

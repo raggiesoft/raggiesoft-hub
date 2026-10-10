@@ -1,9 +1,25 @@
 <?php
+/**
+ * Crimson Node - Trent Montgomery Profile
+ *
+ * This file displays the character profile and lore details for Trent Montgomery, 
+ * an antagonist within the Crimson Node narrative.
+ *
+ * Architecture Notes:
+ * - Follows standard Bootstrap 5 container layout with a breadcrumb navigation header.
+ * - Uses brand-specific inline colors to denote narrative status (e.g., text-danger for "exiled").
+ * - Character details are broken into thematic sections with custom borders and font styles.
+ *
+ * Maintainer Note: Changes to this character's narrative must align with the "Honey Chicken Incident" 
+ * lore. Ensure typography remains consistent with other Crimson Node character profiles.
+ */
+
 // pages/engine-room/artists/crimson-node/characters/piedmont/trent-montgomery.php
 
 $pageTitle = "Trent Montgomery - Crimson Node";
 ?>
 
+<!-- PROFILE CONTAINER -->
 <div class="container py-4">
     <!-- Breadcrumb -->
     <nav aria-label="breadcrumb" class="mb-4">

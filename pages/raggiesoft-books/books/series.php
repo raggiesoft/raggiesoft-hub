@@ -1,4 +1,28 @@
 <?php
+/**
+ * RaggieSoft Books - Series Overview (Table of Contents)
+ *
+ * ARCHITECTURE & CONTEXT:
+ * This script dynamically generates the Table of Contents for a specific book series.
+ * It extracts the `$seriesSlug` from the URL, fetches the corresponding `toc.json` 
+ * metadata file via the CDN, and parses it into a nested `$katie` array structure.
+ * 
+ * The system maps: Series -> Books -> Chapters -> Parts.
+ *
+ * UI/UX ARCHITECTURE:
+ * - Employs nested Bootstrap 5 grid systems to render the TOC cleanly on all devices.
+ * - Uses `.card` components for Book boundaries and `.list-group` for Chapter boundaries.
+ * - Integrates Web Awesome (`<wa-icon>`) for semantic iconography.
+ * - Employs `htmlspecialchars(html_entity_decode(...))` for safe rendering of titles 
+ *   that may contain typographically correct quotes or em-dashes from the JSON payload.
+ *
+ * MAINTENANCE NOTES:
+ * - The variable `$katie` is historically named after the legacy parsing script; it 
+ *   represents the master Table of Contents array. Do not rename without full refactor.
+ * - The system gracefully falls back to displaying a "No Chapters Found" state if the 
+ *   JSON request to the CDN fails.
+ */
+
 // pages/raggiesoft-books/books/series.php
 // Series Overview (Table of Contents)
 

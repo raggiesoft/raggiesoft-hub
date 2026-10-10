@@ -1,4 +1,21 @@
 <?php
+/**
+ * RaggieSoft Architecture - Page Component
+ * 
+ * File: pages/raggiesoft-books/aethel-saga/lore/characters.php
+ * Component: Lore: The Figures of Legend
+ * Type: Sub-Page / Lore Directory
+ * 
+ * Description:
+ * Displays character profiles for the Aethel Saga (Kaelan, Kaela, 
+ * Elder Elara, Seraphina, Malakor). Includes narrative descriptions
+ * and "Dev Notes" tying characters to system architecture (e.g. Elara Router).
+ *
+ * Maintenance Notes:
+ * - Uses the .aethel-theme class wrapper for inherited styles.
+ * - Relies on custom CSS variables like --aethel-rust and --aethel-gloom.
+ * - Ensure breadcrumb navigation matches actual folder structure if updated.
+ */
 $currentSite = 'aethel';
 $pageTitle = "Lore: The Figures of Legend";
 ?>

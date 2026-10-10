@@ -1,4 +1,26 @@
 <?php
+/**
+ * ============================================================================
+ * ARCHITECTURE & MAINTENANCE NOTES
+ * ============================================================================
+ * File: pages/engine-room/artists/stardust-engine/discography/2003-moon-2-mile-marker-98.php
+ * 
+ * 1. Lore Context:
+ *    - "Mile Marker 98 (Moon 2)" represents the high-friction, aggressive rock response 
+ *      to Ryan O'Connell's trauma following the "Crash of '90" (T-10 paralysis).
+ *    - It serves as the chaotic counterweight to its atmospheric sibling, Sanctuary (Zero-G).
+ * 
+ * 2. Component Architecture:
+ *    - Incorporates the `_album-art-header.php` component using the 'danger' variant 
+ *      to reflect the album's aggressive tone.
+ *    - Features a complex cross-linking lore UI block utilizing Web Awesome components 
+ *      (`<wa-card>`, `<wa-badge>`, `<wa-button>`) nested within Bootstrap grids.
+ * 
+ * 3. Maintenance Rule:
+ *    - DO NOT modify the HTML structure, Web Awesome component configurations, 
+ *      or the visual styling classes mapping to the lore.
+ * ============================================================================
+ */
 // pages/engine-room/artists/stardust-engine/discography/2003-moon-2-mile-marker-98.php
 $pageTitle = "Mile Marker 98 [Moon 2] - The Stardust Engine";
 $album_path_web = '/engine-room-records/artists/the-stardust-engine/2003-mile-marker-98';

@@ -1,4 +1,25 @@
 <?php
+/**
+ * ============================================================================
+ * ARCHITECTURAL MAINTENANCE BLOCK
+ * ============================================================================
+ * File: 08-the-offer-letter.php
+ * Component Type: Story / Lore HTML View (PHP Partial)
+ * 
+ * DESCRIPTION:
+ * Renders "Evidence Item #01-A: The 'Lowball' Term Sheet". The file simulates 
+ * a formal legal offer letter and includes a lore-specific image asset.
+ * 
+ * STRUCTURAL NOTES & CONSTRAINTS:
+ * - SKEUOMORPHIC UI: The "Offer Letter" section uses inline styles, forced light 
+ *   themes (`bg-white text-dark`), and serif fonts (`font-family: 'Times New Roman'`) 
+ *   to simulate a physical printed document. 
+ * - ABSOLUTE POSITIONING: Hand-drawn "Wait" note uses absolute positioning and 
+ *   a cursive font (`'Kalam'`). Do NOT alter the coordinate math or the DOM 
+ *   structure, as it relies on the parent's relative positioning.
+ * - IMAGE ASSETS: Loads `150-million-refusal.jpg` via `$cdnBaseUrl`.
+ * ============================================================================
+ */
 // pages/engine-room/artists/stardust-engine/story/nine-figure-refusal/the-offer-letter.php
 // EVIDENCE ITEM #01-A: The "Lowball" Term Sheet
 // UPDATED: Added Narrative Stepper & Character Manifest.

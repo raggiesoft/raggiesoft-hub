@@ -1,4 +1,20 @@
 <?php
+/**
+ * Stardust Strategic Assets - Overview
+ *
+ * This file renders the main overview page for "Stardust Strategic Assets, LLC".
+ * It serves as the gateway to the private holdings (The Fortress, Stardust Studios).
+ *
+ * Architecture Notes:
+ * - Employs a custom "Stealth" theme using localized CSS styles (hero-section, asset-card).
+ * - Layout uses Bootstrap 5 grid, leveraging `hero-section` for the main banner and cards for asset links.
+ * - Iconography provided by FontAwesome (fa-duotone, fa-solid).
+ *
+ * Maintainer Note: Keep the CSS scoped within the file or move to a centralized stylesheet 
+ * if used elsewhere. Ensure the grey/black color scheme is maintained to reflect the 
+ * "Industrial" stealth theme.
+ */
+
 // pages/engine-room/corporate/strategic-assets/overview.php
 // Entity: Stardust Strategic Assets, LLC
 // Context: The holding company for the "Private" assets.
@@ -34,6 +50,7 @@ $pageTitle = "Stardust Strategic Assets - Corporate Infrastructure";
 </style>
 
 <div class="hero-section text-center">
+    <!-- HERO BANNER SECTION -->
     <div class="container">
         <div class="mb-3">
             <i class="fa-duotone fa-chess-rook fa-4x text-secondary"></i>

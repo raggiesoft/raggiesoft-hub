@@ -1,4 +1,23 @@
 <?php
+/**
+ * ============================================================================
+ * ARCHITECTURE & DESIGN: RaggieSoft Books - Table of Contents Sidebar
+ * ============================================================================
+ * ROLE: A dynamic UI sidebar for reading digital books. It fetches a `toc.json`
+ *       manifest from the CDN and renders an interactive `<wa-tree>` table of
+ *       contents, automatically expanding the current chapter based on URL context.
+ * 
+ * CORE FEATURES:
+ * - Dynamic Manifest Routing: Parses `$request_uri` to determine the active book
+ *   series and fetches the exact JSON index.
+ * - Auto-Expansion Logic: Walks through the `toc.json` schema to compare URLs,
+ *   adding `expanded` or `selected` attributes to Web Awesome tree items.
+ * 
+ * MAINTENANCE: Do NOT modify the URL generation logic within the loops without 
+ *              simultaneously verifying Elara's narrative router in `lyra.php`.
+ *              The custom CSS overrides standard Web Awesome indentation styling.
+ * ============================================================================
+ */
 if (!function_exists('rs_slugify')) {
     function rs_slugify($string) {
         $slug = mb_strtolower(trim(preg_replace('/[^A-Za-z0-9-]+/u', '-', strip_tags($string)), '-'));
@@ -34,6 +53,7 @@ $books = $katie['books'] ?? $katie;
 $seriesTitle = $katie['series_title'] ?? $config['sequenceName'] ?? 'Narrative Table of Contents';
 ?>
 
+<!-- [LAYOUT] Main Sidebar Wrapper: Contains the Table of Contents tree -->
 <div class="sidebar-wrapper">
     <div class="mb-4 pb-3 border-bottom px-2">
         <h5 class="fw-bold mb-1 font-heading text-body-emphasis"><?php
@@ -41,6 +61,7 @@ $seriesTitle = $katie['series_title'] ?? $config['sequenceName'] ?? 'Narrative T
         <div class="small text-body-secondary text-uppercase tracking-wider">Table of Contents</div>
     </div>
     
+    <!-- [UI COMPONENT] Web Awesome Tree: Renders interactive, collapsible book chapters -->
     <div class="book-toc">
         <?php
  if (!empty($books) && is_array($books)): ?>

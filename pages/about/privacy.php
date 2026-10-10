@@ -1,4 +1,25 @@
+<?php
+/**
+ * RaggieSoft Architecture - Page Component
+ * 
+ * File: pages/about/privacy.php
+ * Component: Privacy Policy
+ * Type: Legal / Static Content
+ * 
+ * Description:
+ * Renders the site's Privacy Policy. Discusses data collection (minimal),
+ * analytics, server logs, Edge CDN (Cloudflare), and eCommerce logic.
+ *
+ * Maintenance Notes:
+ * - Purely static display.
+ * - Dynamic year generation using date("F Y") for "Last Updated".
+ * - Structured in standard Bootstrap 5 container/row/card format.
+ * - Ensure Fourthwall and Microsoft Bookings sections are updated if vendors change.
+ */
+?>
+<!-- MAIN LAYOUT WRAPPER -->
 <div class="container py-5">
+    <!-- CENTERED COLUMN FOR READABILITY -->
     <div class="row justify-content-center">
         <div class="col-lg-8">
             

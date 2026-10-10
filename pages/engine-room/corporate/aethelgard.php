@@ -1,13 +1,22 @@
 <?php
+/**
+ * @file aethelgard.php
+ * @description Aethelgard Holdings corporate profile page. Represents a mock corporate liquidation firm within the Engine Room universe.
+ * @context This page uses Bootstrap for layout and includes specific CSS for the "Aethelgard" branding (dark, industrial, precise).
+ * @architecture Follows a standard flat PHP template structure setting a $pageTitle and rendering HTML.
+ * @maintenance For styling changes, update the internal <style> block. The content is static HTML.
+ */
 // pages/engine-room/corporate/aethelgard.php
 // Entity Profile: Aethelgard Holdings
 // Function: The "Catch and Release" Liquidation Firm.
 // Context: "We strip the furniture to liberate the art."
 
+// INLINE: Define the page title for the global layout wrapper
 $pageTitle = "Aethelgard Holdings - Strategic Liquidation";
 ?>
 
 <style>
+    /* INLINE: Custom Aethelgard styling overrides */
     /* AETHELGARD BRANDING: Cold, Industrial, Precise */
     .aethel-header {
         background: linear-gradient(135deg, #0f1012 0%, #2b3035 100%);

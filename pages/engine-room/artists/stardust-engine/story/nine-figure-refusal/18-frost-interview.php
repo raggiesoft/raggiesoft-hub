@@ -5,6 +5,12 @@
 // Location: Floor 38 (The New Lobby Level).
 // UPDATED: Final Polish (WCAG, Visitor Protocol, Wide-Angle Image).
 
+/*
+ * ARCHITECTURE & LORE:
+ * The epilogue chapter. Jameson Frost seeks a job and finds Jessica Miller in charge.
+ * Demonstrates the structural turnover of the Omni-Global assets to Engine Room management.
+ * Features skeuomorphic federal forms (SEC, IRS, USPIS) using custom CSS and rotated stamps.
+ */
 $pageTitle = "The Interview - Epilogue";
 ?>
 
@@ -69,6 +75,7 @@ $pageTitle = "The Interview - Epilogue";
 
 <div class="container py-5">
     
+    <!-- INLINE: Page header establishing the epilogue timeframe (months after the initial conflict) -->
     <div class="row justify-content-center mb-5">
         <div class="col-lg-8 text-center">
             <span class="badge bg-info text-dark rounded-pill px-3 py-2 mb-3 text-uppercase letter-spacing-1 shadow-glow border border-info">
@@ -84,6 +91,7 @@ $pageTitle = "The Interview - Epilogue";
     </div>
 
     <div class="position-relative mt-2 mb-5">
+        <!-- INLINE: "The Triple Tap" - Displaying the three federal agency forms filed by Holly to freeze Omni-Global -->
         <div class="text-center mb-5">
             <h2 class="h4 text-body-emphasis text-uppercase fw-bold border-bottom border-secondary d-inline-block pb-2">
                 <i class="fa-solid fa-gavel me-2 text-warning"></i>The Triple Tap

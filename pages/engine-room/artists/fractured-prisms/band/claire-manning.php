@@ -1,10 +1,19 @@
 <?php
+/**
+ * @file claire-manning.php
+ * @description Lore profile page for Claire Manning, the lead vocalist and flautist of Fractured Prisms.
+ * @context Uses the custom "Prism" bootstrap theme elements (.bg-prism-dark, .text-glow-prism, etc.) for a gothic, early 80s synth-pop aesthetic.
+ * @architecture Static PHP/HTML page utilizing a standard layout wrapper with a $pageTitle definition.
+ * @maintenance To update the lore text, modify the HTML paragraphs directly. Ensure any image assets exist on the CDN.
+ */
 // pages/engine-room/artists/fractured-prisms/band/claire-manning.php
 // Lore Profile: Claire Manning (Vocals / Flute / The Anchor)
 
+// INLINE: Define the page title for the global layout wrapper
 $pageTitle = "Claire Manning - The Residents | Fractured Prisms";
 ?>
 
+<!-- INLINE: Main content container with the Prism dark theme background -->
 <div class="bg-prism-dark min-vh-100 py-5">
     <div class="container">
         

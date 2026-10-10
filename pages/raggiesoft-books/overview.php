@@ -1,4 +1,18 @@
 <?php
+/**
+ * ============================================================================
+ * ARCHITECTURE & OCEAN VIEW ARCHIVES:
+ * This is the primary landing hub for the Ocean View Archives literary imprint.
+ * It provides the directory for all narrative universes (Contemporary, KNOX, Aethel).
+ * 
+ * Future Maintenance:
+ * - Schema.org JSON-LD is embedded at the top for Publisher/Collection SEO indexing.
+ * - The styling block (.ova-hero, .ova-text-bronze) locally overrides global variables
+ *   to establish a distinct visual identity for the Archives.
+ * - The PHP include components (`includes/components/card.php`) are used to maintain
+ *   consistency across the project portals.
+ * ============================================================================
+ */
 // pages/raggiesoft-books/overview.php
 // The Main Landing Hub for Ocean View Archives
 
@@ -7,6 +21,7 @@ $pageTitle = "Ocean View Archives | RaggieSoft Media";
 // We establish a dedicated theme for the Archives to override the global Web Awesome Pro variables locally
 ?>
 
+<!-- ARCHITECTURE: Semantic Publisher metadata for Search Engine ingestion -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -29,6 +44,7 @@ $pageTitle = "Ocean View Archives | RaggieSoft Media";
 }
 </script>
 
+<!-- ARCHITECTURE: Localized CSS overrides to enforce the Ocean View Archives visual identity -->
 <style>
     /* --- OCEAN VIEW ARCHIVES: THEME OVERRIDES --- */
     .ova-hero {
@@ -115,6 +131,7 @@ $pageTitle = "Ocean View Archives | RaggieSoft Media";
                     ]
                 ];
                 // Note: href is '#' and variant is 'secondary' to indicate it is not yet active.
+                // ARCHITECTURE: Reusable card component for uniform directory listing
                 include ROOT_PATH . '/includes/components/card.php';
                 ?>
             </div>

@@ -1,4 +1,18 @@
 <?php
+/**
+ * ============================================================================
+ * ARCHITECTURE & CORPORATE LORE (FURNITURE PHILOSOPHY):
+ * This file details the economic and hygienic rationale behind leasing unfurnished
+ * units. It acts as an aggressive critique of the standard student-housing model,
+ * reinforcing the ethical stance of Stardust Properties.
+ * 
+ * Future Maintenance:
+ * - The UI uses Bootstrap 5 list-groups nested inside cards to create a visual
+ *   "receipt" or comparison ledger.
+ * - Semantic colors (danger for "The Industry Scam", success for "The Ironwood Way")
+ *   are critical for the psychological framing of the content.
+ * ============================================================================
+ */
 // pages/engine-room/corporate/stardust-blacksburg/documents/furniture-philosophy.php
 // Context: Explaining the economic and hygienic benefits of unfurnished units.
 // Theme: "Crucible" (Maroon & Orange).
@@ -19,6 +33,7 @@ $pageTitle = "The Unfurnished Advantage - Stardust Blacksburg";
 
     <div class="row g-5 mb-5 align-items-center">
         <div class="col-lg-6">
+            <!-- ARCHITECTURE: Negative framing of the standard industry model using 'danger' semantics -->
             <div class="card border-danger shadow-sm h-100">
                 <div class="card-header bg-danger text-white fw-bold text-uppercase">
                     <i class="fa-solid fa-calculator me-2"></i>The Industry Scam
@@ -81,6 +96,7 @@ $pageTitle = "The Unfurnished Advantage - Stardust Blacksburg";
 
     <div class="row justify-content-center mb-5">
         <div class="col-lg-10">
+            <!-- ARCHITECTURE: Hygiene Standard block emphasizing the clean-slate philosophy -->
             <div class="d-flex align-items-start p-4 border rounded bg-body-tertiary">
                 <div class="p-3 bg-white border rounded-circle me-4 shadow-sm text-primary">
                     <i class="fa-duotone fa-spray-can-sparkles fa-3x"></i>
@@ -103,6 +119,7 @@ $pageTitle = "The Unfurnished Advantage - Stardust Blacksburg";
 
     <div class="row justify-content-center">
         <div class="col-lg-8">
+            <!-- ARCHITECTURE: Practical checklist clarifying what is provided vs required -->
             <h5 class="text-uppercase fw-bold text-center mb-4">The "New Scholar" Starter Pack</h5>
             <div class="row g-3">
                 <div class="col-md-6">

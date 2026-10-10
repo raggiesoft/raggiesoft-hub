@@ -1,4 +1,21 @@
 <?php
+/**
+ * ARCHITECTURE & LORE SYSTEM
+ * -------------------------------------------------------------------------
+ * File: stardust-studios.php
+ * Component Type: Corporate Sub-Page (Lore)
+ * Purpose: Describes the primary headquarters and recording facility of the Trust.
+ * 
+ * DESIGN CONSTRAINTS:
+ * - Contains inline CSS for `.sector-card` hover effects, constrained by `@media (prefers-reduced-motion)`.
+ * - Uses `.floor-badge` for semantic level indicators (Level 1, Level 2).
+ * - Deeply integrated with narrative lore (e.g., "The Bridge", accessibility notes for Ryan).
+ * - Structured with Bootstrap `.card` elements in a `.row g-4` layout.
+ * 
+ * MAINTENANCE NOTES:
+ * - Any structural changes must respect the accessibility constraints outlined in the lore.
+ * - Custom CSS classes must remain scoped to prevent leaking to other pages.
+ */
 // pages/engine-room/corporate/strategic-assets/stardust-studios.php
 // Designation: Stardust Studios (The Warehouse)
 // Location: Blacksburg Industrial Park (South Main Corridor).

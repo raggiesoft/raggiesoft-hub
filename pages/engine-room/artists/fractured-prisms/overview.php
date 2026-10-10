@@ -1,4 +1,20 @@
 <?php
+/**
+ * ARCHITECTURE & LORE SYSTEM
+ * -------------------------------------------------------------------------
+ * File: overview.php
+ * Component Type: Band Homepage / Hub
+ * Purpose: Serves as the primary entry point for the "Fractured Prisms" narrative and discography.
+ * 
+ * DESIGN CONSTRAINTS:
+ * - Implements a JSON-driven carousel (`albums.json`) to dynamically render the discography.
+ * - Features custom CSS blocks to handle z-index fixes for the Bootstrap carousel and unique Facebook button styling.
+ * - Relies on custom theme variables (`bg-prism-dark`, `border-prism`, `.gothic-font`).
+ * 
+ * MAINTENANCE NOTES:
+ * - The `$jsonData` fetch is suppressed with `@` to prevent catastrophic UI failure if the CDN is unreachable.
+ * - Any changes to the JSON structure must be reflected in the flattening loop `$allAlbums`.
+ */
 // pages/engine-room/artists/fractured-prisms/overview.php
 // The Band's "Home" Page
 

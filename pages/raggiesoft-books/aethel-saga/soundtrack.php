@@ -1,5 +1,21 @@
 <?php
-// pages/raggiesoft-books/aethel-saga/soundtrack.php
+/**
+ * RaggieSoft Architecture - Page Component
+ * 
+ * File: pages/raggiesoft-books/aethel-saga/soundtrack.php
+ * Component: Aethel OST Store & Player
+ * Type: Audio Portfolio / eCommerce Gateway
+ * 
+ * Description:
+ * Showcases the "two cuts" of the Aethel soundtrack (1987 LP vs 2017 Box Set).
+ * Integrates dynamic tracklists via the `_tracklist-downloader.php` partial.
+ * Also includes a "Practical Magic" polaroid gallery using CSS transforms.
+ *
+ * Maintenance Notes:
+ * - Uses Bootstrap Nav-Tabs to toggle between the two album versions.
+ * - Relies on $album_path_web being re-assigned before including the tracklist component.
+ * - Check `store-button.php` parameters if changing merchandising links.
+ */
 // THE OST PAGE: "The Silver Gauntlet of Aethel"
 // Design: 1980s Cinematic / A Tale of Two Cuts
 

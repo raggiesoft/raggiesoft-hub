@@ -1,7 +1,23 @@
 <?php
-// includes/components/apps/cipher/logic.php
-// Stardust Cipher Logic Core v2.0
-// Supports variable difficulty tiers
+/**
+ * Stardust Engine - Cipher Logic Core
+ * 
+ * ARCHITECTURAL OVERVIEW:
+ * This script serves as the backend validation and scoring engine for the "Stardust Cipher"
+ * mini-game. It receives JSON payloads, validates the input against difficulty-specific
+ * regex patterns, and returns a Mastermind-style scoring result (Exact vs Value matches).
+ * 
+ * LOGIC & CONSTRAINTS:
+ * - Operates entirely via JSON POST requests (`php://input`).
+ * - Difficulty tiers dictate regex validation (`$validPattern`) and uniqueness rules (`$allowRepeats`).
+ * - The scoring engine is highly sensitive. It calculates "Exact Matches" (+) first, then 
+ *   calculates "Value Matches" (-) while avoiding double-counting previously used digits.
+ * - This file does NOT output HTML; it must remain a pure JSON endpoint.
+ * 
+ * File Info: includes/components/apps/cipher/logic.php
+ * Stardust Cipher Logic Core v2.0
+ * Supports variable difficulty tiers
+ */
 
 header('Content-Type: application/json');
 
@@ -67,6 +83,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $guessUsed = [false, false, false, false];
 
     // Find EXACT Matches (+)
+    // First pass: Only look for exact positional matches to prevent false positives later.
     for ($i = 0; $i < 4; $i++) {
         if ($guess[$i] === $secretCode[$i]) {
             $exactMatches++;
@@ -77,6 +94,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
 
     // Find VALUE Matches (-)
+    // Second pass: Look for digits that exist in the code but in the wrong spot, 
+    // ensuring we don't reuse digits already matched.
     for ($i = 0; $i < 4; $i++) {
         if (!$guessUsed[$i]) {
             for ($j = 0; $j < 4; $j++) {

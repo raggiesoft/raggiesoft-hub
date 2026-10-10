@@ -1,4 +1,26 @@
 <?php
+/**
+ * ============================================================================
+ * ARCHITECTURE & MAINTENANCE NOTES
+ * ============================================================================
+ * File: pages/engine-room/artists/crimson-node/characters/ccc/hailey-bouchard.php
+ * 
+ * 1. Lore Context:
+ *    - Hailey Bouchard ("The Creative Co-Processor") is a CCC Peer and identical twin to Heather.
+ *    - A Desktop Publishing major who acted as the UI/UX counterpart to Matt's raw backend logic.
+ *    - Tragically became a disconnected asset/collateral damage when Heather abruptly burned out
+ *      and left Matt on the CTS bus (the "Unhandled Exception").
+ * 
+ * 2. Component Architecture:
+ *    - Built using Bootstrap 5 grid classes (`row`, `col-lg-4`, `col-lg-8`).
+ *    - Employs utility classes for typography and layout (`display-4`, `shadow-sm`, `opacity-75`).
+ *    - Uses specific inline CSS custom variables (`--bs-indigo`).
+ * 
+ * 3. Maintenance Rule:
+ *    - DO NOT modify the structural HTML layout or the Bootstrap 5 styling classes.
+ *    - Maintain accuracy of the `$cdnBaseUrl` integration for images.
+ * ============================================================================
+ */
 // pages/engine-room/artists/crimson-node/ccc/hailey-bouchard.php
 // The Profile for Hailey Bouchard
 

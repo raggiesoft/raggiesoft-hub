@@ -1,4 +1,35 @@
 <?php
+/**
+ * ARCHITECTURAL DOCBLOCK
+ * 
+ * File: raggiesoft-hub/includes/components/easter-eggs/konami.php
+ * Path: /includes/components/easter-eggs/konami.php
+ * 
+ * CORE RESPONSIBILITY:
+ * Reusable UI Component: Konami Code Easter Egg Modal.
+ * Renders a hidden Web Awesome dialog (`<wa-dialog>`) that acts as a mock
+ * "Developer Access Terminal" when triggered (typically by a JS key sequence).
+ * 
+ * LORE CONTEXT:
+ * - Enhances the "Stardust Engine CMS" aesthetic with a hacker/terminal motif.
+ * 
+ * UI/UX & STYLING ARCHITECTURE:
+ * - Uses `<wa-dialog>` (Web Awesome) configured with `no-header` and `data-turbo-permanent="true"`.
+ * - Dynamically inherits theme colors (`$k_theme`) based on the active `$theme` variable
+ *   (e.g., 'ad-astra' = warning, 'crucible' = danger).
+ * - Utilizes inline CSS to aggressively override `<wa-dialog>` internal padding/margins
+ *   (`--body-spacing: 0 !important;`) to ensure edge-to-edge terminal styling.
+ * 
+ * DEPENDENCIES & INCLUSIONS:
+ * - Assumes a parent JavaScript controller listens for the Konami code and triggers `.show()`
+ *   on `#konamiModal`.
+ * - Includes a self-executing JavaScript block to automatically move the modal to `document.body`
+ *   to avoid z-index and overflow clipping issues in complex CSS grid layouts.
+ * 
+ * MAINTENANCE NOTES:
+ * - Do not remove the "Self-Inject Logic" `<script>`. Web Awesome dialogs must reside
+ *   at the top level of the DOM for their overlay backdrops to render correctly.
+ */
 // includes/components/easter-eggs/konami.php
 // Stardust Engine CMS
 

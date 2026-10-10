@@ -1,7 +1,24 @@
 
 
 <?php
+/**
+ * ============================================================================
+ * ARCHITECTURE & DESIGN: Family Mode Footer Supplement
+ * ============================================================================
+ * ROLE: Acts as a localized override/supplement for the default footer when 
+ *       users are within the "/family" directory. Specifically, it configures
+ *       and injects a unique "Konami Code" easter egg payload.
+ * 
+ * INTEGRATION: Called natively at the end of page renders when the router 
+ *              detects a family-scoped context.
+ * 
+ * MAINTENANCE: Ensure the `$konami_config` array structure exactly matches the
+ *              expected payload in `konami.php`. Changes to image paths should
+ *              rely on `$cdnBaseUrl`.
+ * ============================================================================
+ */
 // Custom "Family Mode" Konami Code
+// [LOGIC] Configure the narrative payload for the Konami code easter egg, specific to the Family hub
 $konami_config = [
     'title'      => 'Elara Diagnostic Mode',
     'icon'       => 'fa-duotone fa-microchip-ai',

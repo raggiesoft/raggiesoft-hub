@@ -1,4 +1,33 @@
 <?php
+/**
+ * Stardust Engine - Individual Member Template (Tyler Wright)
+ * 
+ * ARCHITECTURAL OVERVIEW:
+ * This file renders the specific bio and lore page for band member Tyler Wright.
+ * It is part of the "Engine Room" artist directory sub-section and details the
+ * in-universe backstory and character profile.
+ * 
+ * DATA & SCHEMA:
+ * - Generates Schema.org Person structured data linked to the parent MusicGroup
+ *   to provide semantically rich metadata for SEO.
+ * 
+ * LAYOUT STRUCTURE:
+ * - Employs a Bootstrap 5 grid layout (two-column: 8/4 split on large screens).
+ * - The primary column (col-lg-8) contains the narrative bio content, styled with
+ *   custom UI components (e.g., .text-glow-primary).
+ * - The secondary column (col-lg-4) utilizes a sticky aside pattern (.sticky-top)
+ *   to present a quick-facts "trading card" component via PHP inclusion.
+ * 
+ * DEPENDENCIES:
+ * - Requires $cdnBaseUrl for image asset resolution.
+ * - Relies on ROOT_PATH for including the generic card.php component.
+ * 
+ * MAINTENANCE NOTES:
+ * - Ensure any lore updates align with the broader Stardust Engine canon.
+ * - When modifying the card component include ($props array), verify that HTML strings
+ *   passed to 'description' are properly structured to avoid layout breaks.
+ */
+
 // pages/engine-room/artists/stardust-engine/band/tyler-wright.php
 // The "Power" and "The Human Metronome".
 // Context: The engine room's heartbeat.
@@ -23,12 +52,17 @@ $personSchema = [
 ];
 ?>
 
+<!-- BEGIN: Member Specific Schema.org Injection -->
 <script type="application/ld+json">
 <?php echo json_encode($personSchema, JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT); ?>
 </script>
+<!-- END: Member Specific Schema.org Injection -->
 
+<!-- BEGIN: Thematic Background FX -->
 <div class="starfield-container"><div class="starfield-twinkling"></div></div>
+<!-- END: Thematic Background FX -->
 
+<!-- BEGIN: Primary Content Container (Glassmorphism Layout) -->
 <div class="container py-5 glass-container position-relative z-1">
 
     <div class="row g-5">

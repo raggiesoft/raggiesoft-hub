@@ -1,4 +1,18 @@
 <?php 
+/**
+ * ARCHITECTURE: sidebar-book.php
+ * 
+ * Context: RaggieSoft Hub - Book Navigation Sidebar.
+ * Narrative/Purpose: This component is responsible for displaying a hierarchical navigation structure
+ * for a specific "book" entity. It parses structured JSON data containing books, chapters, parts, and scenes,
+ * rendering them into a collapsible accordion layout.
+ * 
+ * Mechanics:
+ * - Requires `nav-logic.php` for fetching and parsing the book structure.
+ * - Extracts navigation state variables (e.g., $currentChapId, $currentBookId) to control accordion expansion.
+ * - Uses Bootstrap 5 accordion components for interactive folding.
+ * - Highlights the currently active scene based on URL parameters.
+ */
 require_once __DIR__ . '/../../utils/nav-logic.php'; 
 
 $sourceUrl = $bookJsonUrl ?? ''; 
@@ -6,6 +20,7 @@ $navData = getBookNavigation($sourceUrl);
 extract($navData);
 ?>
 
+<!-- START: Book Navigation Wrapper -->
 <div class="pt-3">
     <?php if (!empty($bookData['title'])): ?>
     <h5 class="mb-3 pb-2 border-bottom border-secondary text-uppercase" style="font-family: 'Cinzel', serif;">
@@ -13,11 +28,13 @@ extract($navData);
     </h5>
     <?php endif; ?>
 
+    <!-- START: Collapsible Hierarchy Accordion -->
     <div class="accordion accordion-flush" id="bookAccordion">
         
         <?php if (!empty($bookData['structure'])): ?>
             <?php foreach ($bookData['structure'] as $book): ?>
                 
+                <!-- START: Book Section Wrapper -->
                 <div class="mb-4">
                     <h6 class="text-primary fw-bold mb-2 ps-2 border-start border-3 border-primary bg-light py-1">
                         <?php echo $book['title']; ?>
@@ -28,6 +45,7 @@ extract($navData);
                             // Expand if active
                             $isChapterActive = ($chapter['id'] === $currentChapId && $book['id'] === $currentBookId);
                         ?>
+                            <!-- START: Chapter Accordion Item -->
                             <div class="accordion-item bg-transparent border-0">
                                 <h2 class="accordion-header">
                                     <button class="accordion-button <?php echo $isChapterActive ? '' : 'collapsed'; ?> bg-transparent shadow-none py-2 px-2" 
@@ -44,6 +62,7 @@ extract($navData);
                                 <div id="collapse-<?php echo $book['id'] . '-' . $chapter['id']; ?>" 
                                      class="accordion-collapse collapse <?php echo $isChapterActive ? 'show' : ''; ?>" 
                                      data-bs-parent="#bookAccordion">
+                                    <!-- START: Chapter Content Body -->
                                     <div class="accordion-body p-0 ps-3 pt-1">
                                         <ul class="list-unstyled border-start border-secondary border- ps-2">
                                             

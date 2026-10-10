@@ -1,3 +1,23 @@
+<?php
+/**
+ * ============================================================================
+ * ARCHITECTURE & DESIGN: Engine Room Records Global Footer
+ * ============================================================================
+ * ROLE: The primary footer for the "Engine Room Records" narrative property.
+ *       Provides business licensing links, catalog navigation, and the core
+ *       marketing identity ("Loud. Raw. Real.") for the fictional imprint.
+ * 
+ * INTEGRATION: Injected via the router when the `engine-room` theme/site is 
+ *              active. Requires `$cdnBaseUrl` and optionally `$hq_location` 
+ *              to be set by the routing scope.
+ * 
+ * MAINTENANCE: Changes to the Grid Layout must account for tablet and mobile
+ *              stacking. The "No Submissions" alert is a critical piece of 
+ *              in-universe narrative identity—do not remove.
+ * ============================================================================
+ */
+?>
+<!-- [LAYOUT] Main Imprint Footer: 4-column responsive grid handling branding, business ops, and catalog links -->
 <footer class="mt-auto border-top border-secondary py-5">
     <div class="container">
         <div class="row gy-4">
@@ -16,6 +36,7 @@
                 </p>
             </div>
 
+            <!-- [UI COMPONENT] Business Operations Column: Direct links to DSP and legal contacts -->
             <div class="col-lg-3 col-md-6">
                 <h6 class="text-uppercase fw-bold border-bottom border-secondary-subtle pb-2 mb-3">Business & Licensing</h6>
                 <ul class="list-unstyled small mb-0">
@@ -75,6 +96,7 @@
                     <i class="fa-solid fa-envelope me-2"></i><a href="mailto:inquiries@engineroom-records.com" class="text-decoration-none text-body-secondary hover-text-primary">inquiries@engineroom-records.com</a>
                 </p>
                 
+                <!-- [UI COMPONENT] Narrative Security Alert: In-universe auto-rejection notice -->
                 <div class="alert alert-danger p-2 small border-danger shadow-sm text-start mb-0" role="alert">
                     <strong class="d-block mb-1"><i class="fa-solid fa-shield-xmark me-1"></i> No Submissions</strong>
                     Unsolicited material is deleted automatically by our servers.

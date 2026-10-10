@@ -1,4 +1,25 @@
 <?php
+/**
+ * Knox Lore: The Weave Database (Overview)
+ *
+ * ARCHITECTURE & CONTEXT:
+ * This page acts as the central hub for the "Project: KNOX" universe lore. It is presented 
+ * as "The Weave Database," a native-built archive detailing survival protocols against 
+ * the Axiom corporate occupation on Telsus Minor.
+ *
+ * UI/UX ARCHITECTURE:
+ * - Uses a prominent Hero section with a dark overlay to establish a gritty, survivalist tone.
+ * - Heavily utilizes `font-monospace` to simulate a hacked/native datapad interface.
+ * - Divides the lore into major categorical cards: Telsus Minor (The Planet), Port Telsus 
+ *   (The Corporate Enemy), and The Toy Box (Native Ordnance).
+ * - Implements a three-column footer acting as quick-links for Flora, Fauna, and Culture.
+ *
+ * MAINTENANCE NOTES:
+ * - The quick-links at the bottom (Flora, Fauna) currently point to `#`. Ensure these 
+ *   are updated to valid Civilopedia routes once the markdown files are generated.
+ * - `$heroImage` references `$cdnBaseUrl`. Verify asset availability.
+ */
+
 // pages/raggiesoft-books/knox/lore/overview.php
 // The Lore Hub: Central gateway to World, Tech, and Factions.
 // Theme: "Archive" - Clean, organized, but clearly written by the natives.

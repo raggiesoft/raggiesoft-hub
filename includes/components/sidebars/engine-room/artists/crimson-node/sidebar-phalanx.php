@@ -1,8 +1,26 @@
 <?php
-// includes/components/sidebars/sidebar-phalanx.php
+/**
+ * Crimson Node - The Phalanx Sidebar
+ * 
+ * ARCHITECTURAL OVERVIEW:
+ * This sidebar serves as the primary navigation for the core protagonist faction 
+ * ("The Phalanx") within the Crimson Node narrative. It provides links to individual
+ * character profiles (e.g., Matt Miller, Sarah Miller) and a main overview.
+ * 
+ * LOGIC & CONSTRAINTS:
+ * - Includes a custom helper function `is_active_phalanx()` to determine active state.
+ *   This function uses `str_contains` on the provided URI path fragment.
+ * - The `if (!function_exists('is_active_phalanx'))` guard is critical to prevent 
+ *   fatal redeclaration errors if this partial is included multiple times. Do NOT remove.
+ * - Relies on standard Bootstrap 5 `.list-group` components.
+ * - Iconography utilizes FontAwesome `fa-solid` classes. Ensure these remain consistent.
+ * 
+ * File Info: includes/components/sidebars/sidebar-phalanx.php
+ */
 $sidebar_uri = $_SERVER['REQUEST_URI'] ?? '/';
 
 // Helper function to easily check active states
+// Uses a guard to prevent fatal errors on multiple inclusions.
 if (!function_exists('is_active_phalanx')) {
     function is_active_phalanx($path, $current_uri) {
         return str_contains($current_uri, $path);
@@ -19,6 +37,11 @@ if (!function_exists('is_active_phalanx')) {
         <i slot="start" class="fa-solid fa-users"></i> Overview
     </a>
     
+    <!-- 
+      Character Navigation:
+      Uses the `is_active_phalanx()` helper to determine if the specific character path
+      is present in the current URI, dynamically applying the 'active' class.
+    -->
     <a href="/engine-room/artists/crimson-node/characters/family/matt-miller" class="list-group-item list-group-item-action <?php echo is_active_phalanx('/matt-miller', $sidebar_uri) ? 'active' : ''; ?>">
         <i slot="start" class="fa-solid fa-microchip"></i> Matt Miller
     </a>

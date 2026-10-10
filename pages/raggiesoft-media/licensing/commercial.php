@@ -1,4 +1,29 @@
 <?php
+/**
+ * Commercial Sync & IP Clearances Portal
+ *
+ * ARCHITECTURE & CONTEXT:
+ * This page outlines the commercial licensing policies for RaggieSoft Media and 
+ * Engine Room Records. It explicitly details the Non-Exclusive licensing model,
+ * explaining the legal rationale regarding generative AI audio and US Copyright 
+ * Office guidelines. 
+ * It lists the clearance categories (Film & TV, Interactive Media, Broadcast Ad) 
+ * and provides instructions for initiating a sync request via email.
+ *
+ * UI/UX ARCHITECTURE:
+ * - Built with Frutiger Aero / Dark Aero Glass aesthetic principles.
+ * - Utilizes custom CSS classes like `.hover-lift` for tactile interactions 
+ *   and `.aero-inner-warning` for distinct legal notices.
+ * - Leverages Web Awesome (`<wa-card>`, `<wa-button>`) for layout and calls-to-action.
+ * - Employs a grid system (`row`, `col-md-4`) to present clearance categories.
+ *
+ * MAINTENANCE NOTES:
+ * - If the U.S. Copyright Office guidelines regarding AI-generated content change,
+ *   the copy in "The Legal Framework" section must be updated accordingly.
+ * - Ensure the sync request email (`sync@raggiesoftmedia.com`) remains accurate.
+ * - Do NOT modify the Web Awesome component structures, as they tie into the global design.
+ */
+
 // pages/raggiesoft-media/licensing/commercial.php
 // Commercial Sync & IP Clearances.
 // Updated: Frutiger Aero / Dark Aero Glass Architecture

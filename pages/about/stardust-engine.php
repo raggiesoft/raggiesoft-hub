@@ -1,4 +1,29 @@
 <?php
+/**
+ * Project: The Stardust Engine - Mission Profile
+ *
+ * ARCHITECTURE & CONTEXT:
+ * This page serves as an overarching explanation of "The Stardust Engine" project.
+ * It explicitly breaks down the project into two layers:
+ * 1. The In-Universe Lore (the fictional 1980s synth-rock band fighting a corporate monolith).
+ * 2. The AI Collaboration Reality (the actual generative AI tools used to create the media).
+ * 
+ * It acts as a bridge between the immersive narrative and the technical portfolio of the creator.
+ *
+ * UI/UX ARCHITECTURE:
+ * - Employs an "ad-astra" specific theme (`$pageTheme = "ad-astra"`), triggering
+ *   custom global CSS for a space/sci-fi aesthetic (e.g., `Audiowide` font).
+ * - Utilizes custom CSS classes like `.glass-card` and `.starfield-container` for 
+ *   atmospheric, translucent layering over dynamic backgrounds.
+ * - Displays a "Crew Manifest" grid explicitly detailing the human director and AI 
+ *   tools (Gemini, Suno, DALL-E) as co-creators.
+ *
+ * MAINTENANCE NOTES:
+ * - Ensure `$customPageAssets` merges correctly with the global router to load the
+ *   required starfield texture.
+ * - If the AI toolchain changes, update the "Crew Manifest" cards accordingly.
+ */
+
 // pages/about/stardust-engine.php
 // "Mission Profile" - The Project Overview
 // Location: Global About Hub

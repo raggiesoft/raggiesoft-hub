@@ -1,4 +1,18 @@
 <?php
+/**
+ * ARCHITECTURE & MAINTENANCE (LEGACY)
+ *
+ * This file provides the primary sidebar navigation for the main Engine Room "Active Roster" (Artists) directory.
+ * 
+ * DESIGN INTENT:
+ * - Utilizes a `sticky-top` layout so the sidebar remains visible as the user scrolls through the roster.
+ * - Features immersive lore elements ("Unit Status" widget, Security Reminder) styled as a backend terminal to enhance the narrative that the user is browsing a corporate database.
+ * - Maintains a strict monospace typography theme (`font-monospace`) to align with the database aesthetic.
+ * 
+ * MAINTENANCE NOTES:
+ * - The "Unit Status" data is purely static HTML and does not reflect actual server or application health.
+ * - The `<style>` block at the bottom contains a small helper class (`w-20px`). This should ideally be moved to the main stylesheet to prevent duplicate class definitions if the sidebar is loaded alongside other components.
+ */
 // includes/components/sidebars/engine-room/artists/sidebar-artists.php
 // The Navigation Panel for the Artist Directory
 ?>
@@ -23,6 +37,7 @@
         </div>
     </div>
 
+    <!-- LEGACY IMMERSION: Faux status dashboard. The "ERR-XXX" codes refer to "Engine Room Records" artist designations. -->
     <!-- ACTIVE SLOTS WIDGET -->
     <div class="card rounded-0 border-secondary mb-4 bg-transparent shadow-sm">
         <div class="card-header bg-transparent text-body-emphasis fw-bold text-uppercase border-bottom border-secondary font-monospace small">
@@ -52,6 +67,7 @@
         </div>
     </div>
 
+    <!-- LEGACY LORE ELEMENT: A fictional security warning to maintain the corporate intranet illusion. -->
     <!-- SECURITY REMINDER -->
     <div class="alert alert-dark border-secondary bg-black text-white-50 p-3 font-monospace" style="font-size: 0.75rem;">
         <i class="fa-solid fa-lock text-primary mb-2 d-block fs-5"></i>

@@ -1,10 +1,24 @@
 <?php
+/**
+ * @file radio.php
+ * @description The Engine Room Radio aggregator and broadcast console.
+ * @context Compiles a master playlist from all artists' JSON catalogs, handles ISRC deduplication, and groups Rock Opera tracks.
+ * @architecture 
+ *  1. Parses the Master Catalog to build a roster.
+ *  2. Iterates through each artist's albums/tracks JSON.
+ *  3. Accumulates tracks, deduplicating by ISRC. Groups Rock Opera tracks sequentially.
+ *  4. Shuffles the independent tracks and Rock Opera groups.
+ *  5. Calculates broadcast duration and renders the UI.
+ *  6. Emits the playlist payload to the frontend JS player (Elara).
+ * @maintenance If the JSON schema for albums/tracks changes, update the parsing logic in section 2. Maintain the logic that keeps Rock Opera chunks together during the shuffle.
+ */
 // pages/radio.php
 // "Engine Room Radio" - Multi-Artist Broadcast Console
 // v10.0 - Schema.org & Track Length Integration
 
 $pageTitle = "Engine Room Radio - The Console";
 
+// INLINE: Initialize base paths and load the master catalog JSON
 // 1. CONFIGURATION
 if (!defined('ROOT_PATH')) define('ROOT_PATH', dirname(__DIR__)); 
 $cdn_root = $cdnBaseUrl . "/engine-room-records"; 
@@ -26,6 +40,7 @@ if (is_array($masterCatalog)) {
 
 $master_playlist = []; 
 
+// INLINE: Iterate through the roster to parse album data and build shuffle blocks
 // 2. AGGREGATOR LOGIC
 $seen_isrcs = []; // Initialize our deduplication tracker
 $shuffle_blocks = []; // NEW: Array to hold chunks of music for the shuffler
@@ -118,6 +133,7 @@ foreach ($rock_opera_sets as $set_id => $chunk) {
     }
 }
 
+// INLINE: Shuffle the independent tracks and glued Rock Opera groups, then flatten into a 1D playlist
 // 3. THE RADIO SHUFFLE (Rock Opera Aware)
 // Shuffle the blocks (Solo tracks and glued Rock Operas move around as discrete units)
 shuffle($shuffle_blocks);

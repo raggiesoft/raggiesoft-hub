@@ -1,4 +1,16 @@
 <?php
+/**
+ * ARCHITECTURE: header-knox.php
+ * 
+ * Context: RaggieSoft Books - Project: KNOX Navigation.
+ * Narrative/Purpose: Contextual navigation for the "Knox" universe. Adapts a stark, functional design theme
+ * to reflect the sci-fi/dystopian nature of the story, distinct from the high-fantasy Aethel Saga.
+ * 
+ * Mechanics:
+ * - Parses `$_SERVER['REQUEST_URI']` to set active states for chapters, lore, and characters.
+ * - Features a Web Awesome dropdown menu (`wa-dropdown`) for categorized lore navigation ("The Telsan Gap").
+ * - Uses semantic color coding (success vs. danger) within the dropdown to distinguish narrative elements (The Reality vs. The Threat).
+ */
 // includes/components/headers/raggiesoft-books/header-knox.php
 // Adapted from Engine Room Records template.
 // Context: Navigation for the specific book "Knox".
@@ -12,15 +24,18 @@ $isLore     = str_contains($uri, '/lore');
 $isChars    = str_contains($uri, '/characters');
 ?>
 
+<!-- START: Knox Navigation Container -->
 <div class="d-flex flex-column flex-md-row align-items-stretch align-items-md-center gap-2 ms-auto py-3 py-md-0 w-100 mobile-nav-menu">
 
   
+    <!-- START: Read Story Link -->
     <wa-button appearance="plain" href="/raggiesoft-books/knox/chapters" class="<?php echo $isChapters ? 'active' : ''; ?>">
         <i slot="start" class="fa-duotone fa-book-open-reader me-2"></i>Read the Story
     </wa-button>
   
 
   
+  <!-- START: Lore Dropdown Navigation -->
   <wa-dropdown placement="bottom-start">
     <wa-button class="nav-link  <?php echo ($isLore || $isChars) ? 'active' : ''; ?>" slot="trigger" appearance="plain">
       <i class="fa-duotone fa-planet-ringed me-2"></i>The Telsan Gap
@@ -48,6 +63,7 @@ $isChars    = str_contains($uri, '/characters');
 
 
   
+      <!-- START: Global Exit -->
       <wa-button appearance="plain" href="/">
         <i slot="start" class="fa-duotone fa-arrow-right-from-bracket me-2 text-body-secondary"></i><span class="text-body-secondary small">Exit to RaggieSoft</span>
       </wa-button>

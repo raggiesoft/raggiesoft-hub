@@ -1,4 +1,27 @@
 <?php
+/**
+ * ============================================================================
+ * ARCHITECTURE & MAINTENANCE NOTES
+ * ============================================================================
+ * File: pages/engine-room/artists/stardust-engine/discography/1996-escape-velocity-ad-astra.php
+ * 
+ * 1. Lore Context:
+ *    - Details the 1996 "Escape Velocity (Ad Astra)" EP, marking the start of the "Freedom Era."
+ *    - It's a 15-minute progressive rock suite acting as Cassidy O'Connell's visceral autobiography 
+ *      following the 'Friction' trial.
+ *    - Explores the "Trojan Horse" radio edit and the in-universe "U.S.S. Aethelgard" lore.
+ * 
+ * 2. Component Architecture:
+ *    - Relies heavily on shared components: `_album-art-header.php` (variant 'success') 
+ *      and `_tracklist-downloader.php`.
+ *    - Integrates Web Awesome components (`<wa-card>`, `<wa-badge>`, `<wa-button>`) styled 
+ *      for dark mode (`wa-theme-dark`, `data-bs-theme="dark"`).
+ * 
+ * 3. Maintenance Rule:
+ *    - DO NOT alter HTML structure, Bootstrap 5 classes, or Web Awesome configurations.
+ *    - Ensure data paths provided to included components remain strictly accurate.
+ * ============================================================================
+ */
 // Page data
 $pageTitle = "Escape Velocity (Ad Astra) EP (1996) - The Stardust Engine";
 $album_path_web = '/engine-room-records/artists/the-stardust-engine/1996-ad-astra-single';

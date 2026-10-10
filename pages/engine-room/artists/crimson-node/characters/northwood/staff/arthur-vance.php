@@ -1,4 +1,26 @@
 <?php
+/**
+ * ============================================================================
+ * ARCHITECTURE & MAINTENANCE NOTES
+ * ============================================================================
+ * File: pages/engine-room/artists/crimson-node/characters/northwood/staff/arthur-vance.php
+ * 
+ * 1. Lore Context:
+ *    - Arthur Vance ("Mr. Vance") is a retired paraprofessional aide at Northwood High School.
+ *    - He serves as "The Guardian" and the "clinical anchor" for Matt inside the school, 
+ *      protecting him from the isolating realities of the Northwood architecture.
+ *    - Known for physically shielding Matt's wheelchair from Courtney Evans after the Omni-Q betrayal.
+ * 
+ * 2. Component Architecture:
+ *    - Structured using Bootstrap 5 grids (`row`, `col-12`) and flex utilities (`d-flex`).
+ *    - Utilizes FontAwesome icons (`fa-school`, `fa-shield-check`).
+ *    - Includes custom typography styling and badge components.
+ * 
+ * 3. Maintenance Rule:
+ *    - DO NOT alter the core HTML structure or Bootstrap 5 utility classes.
+ *    - Ensure image paths via `$cdnBaseUrl` remain intact.
+ * ============================================================================
+ */
 // pages/engine-room/artists/crimson-node/characters/northwood/arthur-vance.php
 
 $pageTitle = "Arthur Vance - Crimson Node";

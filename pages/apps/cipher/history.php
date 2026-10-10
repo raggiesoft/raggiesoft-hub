@@ -1,3 +1,16 @@
+<?php
+/**
+ * Origins of the Cipher (History)
+ *
+ * This file provides the historical context and lore for the "Signal Decryptor" game,
+ * tracing its roots from the analog "Bulls and Cows" to the 1970s commercial board games,
+ * and finally to its current in-universe "Stardust Engine" iteration.
+ *
+ * Architecture Notes:
+ * - Purely presentational and static content, utilizing standard Bootstrap 5 cards and typography.
+ * - When expanding the lore, maintain the established timeline and the distinction between the physical game and the digital "Stardust Signal."
+ */
+?>
 <div class="container py-5">
     <div class="row justify-content-center">
         <div class="col-lg-8">

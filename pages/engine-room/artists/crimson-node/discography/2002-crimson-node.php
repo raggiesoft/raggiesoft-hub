@@ -1,4 +1,25 @@
 <?php
+/**
+ * ============================================================================
+ * ARCHITECTURE & MAINTENANCE NOTES
+ * ============================================================================
+ * File: pages/engine-room/artists/crimson-node/discography/2002-crimson-node.php
+ * 
+ * 1. Lore Context:
+ *    - Represents the self-titled 2002 debut album for Crimson Node.
+ *    - Key lore elements: "Rotating Vocalist" protocol, Kids House Garage Studio,
+ *      and signing by Engine Room Records CEO Holly O'Connell.
+ * 
+ * 2. Component Architecture:
+ *    - Utilizes shared partials: `_album-art-header.php` and `_tracklist-downloader.php`.
+ *    - The tracklist downloader depends on a `tracks.json` file specific to this album.
+ *    - Employs specific UI utility classes (`bg-hud-red`, `bg-hud-blue`, `border-glow`).
+ * 
+ * 3. Maintenance Rule:
+ *    - DO NOT alter the HTML layout, Bootstrap 5 classes, or custom styling classes.
+ *    - Ensure paths provided to included components remain accurate.
+ * ============================================================================
+ */
 // pages/engine-room/artists/crimson-node/discography/2002-crimson-node.php
 // Page data
 $pageTitle = "Crimson Node (2002) - Crimson Node";

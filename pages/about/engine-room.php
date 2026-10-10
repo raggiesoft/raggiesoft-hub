@@ -1,4 +1,28 @@
 <?php
+/**
+ * Engine Room Records - Headquarters
+ *
+ * ARCHITECTURE & CONTEXT:
+ * This page establishes the fictional corporate identity for "Engine Room Records",
+ * the organizing publisher metadata container for Michael Ragsdale's audio portfolios.
+ * It outlines the overarching philosophy (Industrial, Gritty, Unpolished) and lists 
+ * the current active roster (The Stardust Engine, Fractured Prisms).
+ * 
+ * Crucially, it includes a "Reality Check" block to explicitly disclose the fictional
+ * nature of the label, ensuring ethical transparency in the multimedia project.
+ *
+ * UI/UX ARCHITECTURE:
+ * - Employs a dark, industrial color palette (`bg-black`, `bg-dark`, `border-danger`).
+ * - Heavily utilizes `font-monospace` to simulate terminal/industrial aesthetics.
+ * - Includes a custom `.logo-invert` CSS hack to dynamically recolor the black logo 
+ *   asset to white via CSS filters (`invert(1) grayscale(100%) brightness(200%)`).
+ *
+ * MAINTENANCE NOTES:
+ * - Update the "Roster" list as new AI-generated bands/portfolios are deployed.
+ * - Verify `$cdnBaseUrl` is correctly resolving the logo image.
+ * - The Reality Check notification must remain prominent to prevent user confusion.
+ */
+
 // pages/about/engine-room.php
 // Theme: Industrial (Dark, Gritty, Red Accents)
 // Layout: Sidebar-Compatible (Contained Header)

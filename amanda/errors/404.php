@@ -1,4 +1,17 @@
 <?php
+/**
+ * ARCHITECTURE: 404.php
+ * 
+ * Context: Amanda/Stardust Engine - Error Handling.
+ * Narrative/Purpose: A heavily themed 404 Error page designed to immerse the user in the "Project: KNOX" / 
+ * "Stardust Engine" universe when a route is not found. It portrays the error as a "Signal Lost" event 
+ * within the narrative's sci-fi setting.
+ * 
+ * Mechanics:
+ * - Detects if it's being loaded standalone by Nginx or via the PHP router (`$is_standalone`).
+ * - Dynamically defines `ROOT_PATH` and bootstraps the standard header/footer if loaded independently.
+ * - Utilizes CSS terminal themes and glitch icons to reinforce the narrative aesthetic.
+ */
 // public/errors/404.php
 // Theme: Knox / Industrial / Glitch
 // Context: "Signal Lost"
@@ -27,6 +40,7 @@ if ($is_standalone) {
 
 <div class="starfield-container"><div class="starfield-twinkling"></div></div>
 
+<!-- START: 404 Error Main Container -->
 <div class="container py-5 glass-container d-flex flex-column justify-content-center min-vh-75">
     
     <div class="row justify-content-center text-center">
@@ -46,6 +60,7 @@ if ($is_standalone) {
                 <span class="text-danger">>></span> SIGNAL LOST
             </h2>
 
+            <!-- START: 404 Terminal Narrative Context -->
             <!-- The Narrative Context -->
             <div class="card terminal-card p-4 border-danger text-start mb-5 mx-auto" style="max-width: 600px;">
                 <div class="terminal-header text-danger">
@@ -62,6 +77,7 @@ if ($is_standalone) {
                 </div>
             </div>
 
+            <!-- START: 404 Safe Escape Actions -->
             <!-- The "Safe" Options -->
             <div class="d-flex justify-content-center gap-3 flex-wrap">
                 <a href="/" class="btn btn-outline-secondary rounded-pill px-4">

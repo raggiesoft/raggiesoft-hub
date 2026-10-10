@@ -1,5 +1,22 @@
 <?php
-// pages/raggiesoft-books/aethel-saga/overview.php
+/**
+ * RaggieSoft Architecture - Page Component
+ * 
+ * File: pages/raggiesoft-books/aethel-saga/overview.php
+ * Component: Aethel Saga Landing Page
+ * Type: Main Project Dashboard / Portal
+ * 
+ * Description:
+ * Acts as the primary entry point (aethelsaga.com equivalent).
+ * Features a cinematic 1980s fantasy aesthetic, linking out to books, 
+ * soundtracks, and lore sections.
+ *
+ * Maintenance Notes:
+ * - Backgrounds use linear-gradients overlaid on CDN poster images.
+ * - The "Four Eras" section acts as a table of contents, with grayscale 
+ *   classes indicating unreleased/locked content.
+ * - Global CSS classes (.cinzel-font, .letter-spacing-2) are required.
+ */
 // LANDING PAGE: aethelsaga.com
 // Design: 1980s Fantasy Cinema / Immersive
 

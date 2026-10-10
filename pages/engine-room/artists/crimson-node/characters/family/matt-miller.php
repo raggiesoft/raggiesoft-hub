@@ -1,3 +1,20 @@
+<?php
+/**
+ * Crimson Node - Matt Miller Profile
+ *
+ * This file renders the character biography for Matt Miller, Band Manager & Producer.
+ * It details his disability representation, technical workflow, and central role.
+ *
+ * Architecture Notes:
+ * - Designed as an HTML fragment to be included dynamically within a parent layout template.
+ * - Uses a two-column Bootstrap 5 layout (`col-lg-4` sidebar, `col-lg-8` main content).
+ * - Implements a red (`#dc3545`) accent color scheme to match his "Crimson Node" identity.
+ *
+ * Maintainer Note: This is an include fragment. Do not wrap in `<html>` or `<body>` tags. 
+ * Maintain the existing class structures for the Quick Stats card.
+ */
+?>
+<!-- PROFILE FRAGMENT -->
 <div class="row">
     <div class="col-12 mb-4">
         <h1 class="display-4 fw-bold" style="font-family: 'Impact', sans-serif; letter-spacing: 2px;">

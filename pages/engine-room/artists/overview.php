@@ -1,4 +1,20 @@
 <?php
+/**
+ * ARCHITECTURE & LORE SYSTEM
+ * -------------------------------------------------------------------------
+ * File: overview.php
+ * Component Type: Artist Index / Hub
+ * Purpose: Displays the complete roster of Engine Room Records artists (both active and inactive).
+ * 
+ * DESIGN CONSTRAINTS:
+ * - Uses an "Industrial" theme variant with heavy stenciled text (`.text-stenciled`) and sharp, borderless cards (`.card-industrial`).
+ * - Employs custom CSS for image containment (`.artist-img-box`) to ensure band logos are never cropped, regardless of aspect ratio.
+ * - Simulates hardware status LEDs (`.led-on`, `.led-off`, `.led-busy`) for narrative immersion.
+ * 
+ * MAINTENANCE NOTES:
+ * - Offline or "encrypted" bands must maintain the disabled button states (`disabled` attribute) to enforce the narrative rollout.
+ * - Ensure `$cdnBaseUrl` is defined globally, as it is required for all artist logos.
+ */
 // pages/engine-room/artists/overview.php
 // The Complete Roster.
 // Access: /engine-room/artists

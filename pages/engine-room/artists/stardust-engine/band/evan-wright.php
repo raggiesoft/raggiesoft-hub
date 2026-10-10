@@ -1,4 +1,25 @@
 <?php
+/**
+ * ============================================================================
+ * ARCHITECTURE & MAINTENANCE NOTES
+ * ============================================================================
+ * File: pages/engine-room/artists/stardust-engine/band/evan-wright.php
+ * 
+ * 1. Lore Context:
+ *    - Evan Wright acts as the "Texture" (bass/rhythm guitar) for The Stardust Engine.
+ *    - Alongside his twin Tyler, he forms the "Human Ramp"—the physical solution
+ *      devised to carry their paralyzed cousin Ryan O'Connell into inaccessible venues.
+ * 
+ * 2. Component Architecture:
+ *    - Dynamically builds a Schema.org `Person` JSON-LD object linked to the `MusicGroup`.
+ *    - UI relies heavily on Bootstrap 5 grids, custom cosmic UI components 
+ *      (`starfield-container`, `glass-container`), and the `card.php` component.
+ * 
+ * 3. Maintenance Rule:
+ *    - DO NOT alter the core HTML layout or the custom UI styling classes.
+ *    - Ensure the Schema.org JSON is properly escaped and rendered.
+ * ============================================================================
+ */
 // pages/engine-room/artists/stardust-engine/band/evan-wright.php
 // The "Texture" and "The Human Ramp".
 // Context: The steady hand of the rhythm section.

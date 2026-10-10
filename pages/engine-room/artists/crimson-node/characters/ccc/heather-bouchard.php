@@ -1,7 +1,15 @@
 <?php
+/**
+ * @file heather-bouchard.php
+ * @description Detailed character lore profile for Heather Bouchard (Crimson Node storyline).
+ * @context Outlines the character's vital role as a "Sensory Regulation System" during the CCC era, and the devastating impact of her sudden departure due to an "Unhandled Exception."
+ * @architecture Standalone PHP page designed to be loaded into the main layout. Defines $pageTitle and uses standard Bootstrap grid styling.
+ * @maintenance To update the lore text, modify the HTML paragraphs. Ensure image paths to the CDN remain accurate.
+ */
 // pages/engine-room/artists/crimson-node/ccc/heather-bouchard.php
 // The Profile for Heather Bouchard
 
+// INLINE: Define the global page title
 $pageTitle = "Heather Bouchard - Crimson Node";
 ?>
 
@@ -17,6 +25,7 @@ $pageTitle = "Heather Bouchard - Crimson Node";
     </div>
 
     <div class="row">
+        <!-- INLINE: Sidebar containing portrait and quick profile data -->
         <!-- Quick Stats Sidebar Area -->
         <div class="col-lg-4 mb-4 mb-lg-0">
             <!-- Portrait Image -->
@@ -37,6 +46,7 @@ $pageTitle = "Heather Bouchard - Crimson Node";
             </div>
         </div>
 
+        <!-- INLINE: Main biography sections detailing the character arc -->
         <!-- Main Biography Content -->
         <div class="col-lg-8">
             <div class="mb-5">

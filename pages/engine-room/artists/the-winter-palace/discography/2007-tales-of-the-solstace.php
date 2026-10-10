@@ -1,7 +1,16 @@
 <?php
+/**
+ * @file 2007-tales-of-the-solstace.php
+ * @description Dedicated page for the track/album "Tales of the Solstice" ("Upon This Winter's Night").
+ * @context Details the specific lore of why this track was so important to Julian Croft. Features a localized audio player script snippet. Uses the "ad-astra" page theme.
+ * @architecture Static PHP/HTML with localized JS function `playExternalTrack()` to interface with the global Stardust player.
+ * @maintenance If the global `window.stardustPlayer` API changes, the `playExternalTrack()` function will need to be updated to ensure the track still plays.
+ */
+// INLINE: Set page title and theme
 $pageTitle = "Tales of the Solstice - The Winter Palace";
 $pageTheme = "ad-astra"; 
 
+// INLINE: Define CDN asset paths for imagery and audio
 // ASSETS
 $hero_art = $cdnBaseUrl . '/engine-room-records/music/the-winter-palace/tales-of-the-solstice/julian-variant.jpg';
 $original_art = $cdnBaseUrl . '/engine-room-records/music/the-winter-palace/tales-of-the-solstice/album-art.jpg';
@@ -69,6 +78,7 @@ $audio_src = $cdnBaseUrl . '/engine-room-records/music/the-winter-palace/upon-th
     </div>
 </div>
 
+<!-- INLINE: Localized script to dispatch track data to the global player -->
 <script>
     function playExternalTrack() {
         // Hooks into the global stardust-player.js if available

@@ -3,6 +3,12 @@
 // LORE ARCHIVE: The Delaware Migration
 // Context: The day the family became legally invisible.
 
+/*
+ * ARCHITECTURE & LORE:
+ * Documents the 2015 restructuring of the O'Connell empire into Delaware LLCs for absolute anonymity.
+ * Highlights Holly O'Connell's role as the sole Registered Agent.
+ * Employs custom CSS for narrative cards, document boxes, and timestamp elements to enhance the "corporate thriller" aesthetic.
+ */
 $pageTitle = "The Delaware Migration (2015) - Engine Room History";
 ?>
 
@@ -59,6 +65,7 @@ $pageTitle = "The Delaware Migration (2015) - Engine Room History";
         </div>
     </div>
 
+    <!-- INLINE: Main narrative container spanning the bulk of the page -->
     <div class="row justify-content-center mb-5">
         <div class="col-lg-10">
             
@@ -154,6 +161,7 @@ $pageTitle = "The Delaware Migration (2015) - Engine Room History";
                         "And above it all, <strong>The O'Connell Family Revocable Trust</strong>. The sovereign entity that owns all the LLCs. No one outside this room will ever see this piece of paper."
                     </p>
 
+                    <!-- INLINE: Notary Protocol Execution highlight -->
                     <div class="row align-items-center bg-black text-white p-4 rounded-3 shadow-lg my-4 mx-1 border border-secondary border-opacity-50">
                         <div class="col-md-2 text-center mb-3 mb-md-0">
                             <i class="fa-duotone fa-stamp text-secondary fs-1"></i>

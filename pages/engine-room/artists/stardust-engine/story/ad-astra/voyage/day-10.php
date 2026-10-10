@@ -1,5 +1,27 @@
 <?php
-// pages/engine-room/artists/stardust-engine/story/ad-astra/voyage/day-10.php
+/**
+ * ============================================================================
+ * FILE: day-10.php
+ * PATH: /pages/engine-room/artists/stardust-engine/story/ad-astra/voyage/day-10.php
+ * MODULE: Stardust Engine - Ad Astra - Voyage Logs
+ * 
+ * DESCRIPTION:
+ * This file renders the Day 10 log entry for the Ad Astra voyage narrative.
+ * It documents the "Harmonic Velocity" phase, the Veil Nebula reveal, 
+ * and includes an Audio Log simulation component.
+ *
+ * ARCHITECTURAL NOTES:
+ * - Theme: Uses `.wa-theme-dark` with dark UI aesthetics.
+ * - Media: Includes a responsive hero image with embedded `.badge` tags.
+ * - Audio Player: The Audio Log card is structural HTML; functional JS would 
+ *   be bound externally via classes or ID if implemented.
+ * 
+ * MAINTENANCE INSTRUCTIONS:
+ * - Preserve the layout hierarchy (Header -> Hero Image -> Main Content / Sidebar).
+ * - Maintain Bootstrap utility classes for proper responsive behavior.
+ * - Narrative stepper variables should be updated if new story paths are added.
+ * ============================================================================
+ */
 // Log Entry: Day 10
 // Context: FTL Cruise / Zero-G / The Veil Nebula.
 
@@ -11,6 +33,7 @@ $pageTitle = "Day 10: Harmonic Velocity - Ad Astra Log";
 
 <div class="container py-5 glass-container">
     
+    <!-- BEGIN: Log Header -->
     <div class="d-flex justify-content-between align-items-center mb-5 border-bottom border-info pb-3">
         <div>
             <span class="badge bg-info text-dark font-monospace mb-2">LOG: DAY 10</span>
@@ -22,7 +45,9 @@ $pageTitle = "Day 10: Harmonic Velocity - Ad Astra Log";
             G-FORCE: 0.8
         </div>
     </div>
+    <!-- END: Log Header -->
 
+    <!-- BEGIN: Hero Image Card -->
     <wa-card class="card border-0 mb-5 overflow-hidden shadow-lg rounded-3 border-start border-info border-4 w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
         <div class="position-relative">
             <img src="<?php echo $cdnBaseUrl; ?>/stardust-engine/images/story/ad-astra/harmonic-velocity.jpg" 
@@ -35,9 +60,12 @@ $pageTitle = "Day 10: Harmonic Velocity - Ad Astra Log";
             </div>
         </div>
     </wa-card>
+    <!-- END: Hero Image Card -->
 
+    <!-- BEGIN: Main Layout -->
     <div class="row g-5">
         
+        <!-- BEGIN: Main Content Area -->
         <div class="col-lg-8">
             <div class="mb-5">
                 <p class="lead text-light">
@@ -57,6 +85,7 @@ $pageTitle = "Day 10: Harmonic Velocity - Ad Astra Log";
                 </p>
             </div>
 
+            <!-- BEGIN: Audio Log Card -->
             <wa-card class="card terminal-card mb-5 w-100" style="border-color: var(--astra-primary); --body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
                 <div slot="header" class=" border-bottom border-primary text-primary fw-bold font-monospace p-3" style="border-color: var(--astra-primary) !important;">
                     <i class="fa-duotone fa-stars me-2"></i>AUDIO LOG: "AD ASTRA" (PART III)
@@ -77,11 +106,15 @@ $pageTitle = "Day 10: Harmonic Velocity - Ad Astra Log";
                     </div>
                 </div>
             </wa-card>
+            <!-- END: Audio Log Card -->
 
         </div>
+        <!-- END: Main Content Area -->
 
+        <!-- BEGIN: Sidebar Layout -->
         <div class="col-lg-4">
             
+            <!-- BEGIN: Environmental Card -->
             <wa-card class="card glass-card mb-4 w-100" style="border-color: var(--astra-info); --body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
                 <div slot="header" class=" text-info fw-bold text-uppercase border-bottom border-secondary p-3" style="border-color: var(--astra-info) !important;">
                     <i class="fa-duotone fa-globe-stand me-2"></i>Environmental
@@ -95,7 +128,9 @@ $pageTitle = "Day 10: Harmonic Velocity - Ad Astra Log";
                     </ul>
                 </div>
             </wa-card>
+            <!-- END: Environmental Card -->
 
+            <!-- BEGIN: Crew Note Card -->
             <wa-card class="card bg-black border-secondary mb-4 w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
                 <div class="card-body">
                     <h6 class="text-secondary fw-bold text-uppercase mb-2">
@@ -106,11 +141,15 @@ $pageTitle = "Day 10: Harmonic Velocity - Ad Astra Log";
                     </p>
                 </div>
             </wa-card>
+            <!-- END: Crew Note Card -->
 
         </div>
+        <!-- END: Sidebar Layout -->
 
     </div>
+    <!-- END: Main Layout -->
 
+    <!-- BEGIN: Narrative Stepper Navigation -->
     <?php
         $nav = [
             'prev' => ['url' => '/engine-room/artists/stardust-engine/story/ad-astra/voyage/day-01', 'label' => 'Day 01: Ignition'],
@@ -119,6 +158,7 @@ $pageTitle = "Day 10: Harmonic Velocity - Ad Astra Log";
         ];
         include ROOT_PATH . '/includes/components/navigation/narrative-stepper.php';
     ?>
+    <!-- END: Narrative Stepper Navigation -->
 
 </div>
 </div> <!-- End dark theme wrap -->

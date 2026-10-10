@@ -1,5 +1,19 @@
 <?php
-// pages/raggiesoft-books/books/landing.php
+/**
+ * RaggieSoft Architecture - Page Component
+ * 
+ * File: pages/raggiesoft-books/books/landing.php
+ * Component: Series Landing Page
+ * Type: Portal / Entry Point
+ * 
+ * Description:
+ * Renders the landing page for a book series (e.g. Aethel Saga), displaying
+ * the cover image and series description extracted from the $katie TOC object.
+ *
+ * Maintenance Notes:
+ * - Relies on $katie, $cdnBaseUrl, and $seriesSlug injected from viewer.php.
+ * - Uses Web Awesome (wa-icon) web components.
+ */
 // Series Landing Page
 
 global $katie, $cdnBaseUrl, $seriesSlug;

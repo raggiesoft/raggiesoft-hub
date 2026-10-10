@@ -1,3 +1,17 @@
+<!--
+ * ARCHITECTURE & MAINTENANCE (LEGACY)
+ *
+ * This file implements the global, persistent "Sticky Player" for streaming audio across the Stardust Hub.
+ * 
+ * DESIGN INTENT:
+ * - Designed to sit at the bottom of the viewport (`fixed-bottom`).
+ * - Contains native `<audio>` element wrapped in a custom UI (play/pause, shuffle, repeat, lyrics modal).
+ * - Uses a self-executing JavaScript block to automatically inject itself (and its associated modal) into `document.body` if included inside a nested container, preventing z-index/clipping issues.
+ * 
+ * MAINTENANCE NOTES:
+ * - Relies heavily on external JS (likely `audio-player.js`) to bind events to the IDs (`#player-prev`, `#main-audio-element`, etc.). Changing IDs here will break the global audio engine.
+ * - `data-turbo-permanent="true"` is present to support Turbo/Turbolinks, ensuring playback continues uninterrupted during page navigation.
+ -->
 <div id="sticky-audio-player" 
      class="fixed-bottom border-top border-secondary-subtle p-3 shadow-lg d-none" 
      style="z-index: 1050; background-color: #050508 !important; color: #E0E0FF !important;" 
@@ -9,6 +23,7 @@
             
             <div class="col-12 col-md-5 mb-2 mb-md-0 d-flex align-items-center">
                 
+                <!-- LEGACY UI COMPONENT: Transport controls relying on FontAwesome/FontAwesome Duotone classes. -->
                 <div class="btn-group me-3">
                     <button type="button" class="btn btn-outline-light btn-sm" id="player-prev" aria-label="Previous Track">
                         <i class="fa-solid fa-backward-step" aria-hidden="true"></i>
@@ -73,6 +88,7 @@
     }
 </style>
 
+<!-- LEGACY MODAL: Native HTML5 dialog element used for displaying lyrics. Styling relies on custom CSS defined above. -->
 <dialog id="lyricsModal" data-turbo-permanent="true">
     <div class="w-100 h-100 d-flex flex-column" style="padding: 1.5rem; max-height: 85vh; overflow-y: auto;">
         
@@ -98,6 +114,7 @@
 </dialog>
 
 <script>
+    // LEGACY DOM MANIPULATION: Hoists the player and modal to the body level to escape stacking contexts and overflow hidden containers.
     // Self-Inject Logic
     (function() {
         const player = document.getElementById('sticky-audio-player');

@@ -1,4 +1,17 @@
 <?php
+/**
+ * ARCHITECTURE: chapter-02.php
+ * 
+ * Context: RaggieSoft Games - Pathfinder West (Strategy Guide).
+ * Narrative/Purpose: Contains the narrative prose and strategic gameplay notes for Chapter 2 of the 
+ * "Hail Mary" (Golden Ending) route in the Pathfinder West text adventure game. 
+ * 
+ * Mechanics:
+ * - Sets SEO metadata and page titles.
+ * - Wraps narrative text in semantic HTML5 (`<article>`, `<p>`) for Stardust Reader mode compatibility.
+ * - Includes a 'Strategy Guide Notes' block simulating an old GameFAQs-style walkthrough.
+ * - Integrates the `narrative-stepper.php` component for chronological pagination.
+ */
 // /pages/raggiesoft-games/pathfinder-west/strategy-guide/golden-ending/hail-mary-pasco/chapter-02.php
 
 $pageTitle = "Chapter 2: The Cipher | Pathfinder West";
@@ -7,12 +20,14 @@ $metaDescription = "Chapter 2 of the Pathfinder West strategy guide. The party d
 include_once $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php'; 
 ?>
 
+<!-- START: Strategy Guide Chapter Container -->
 <main class="container my-5 strategy-guide-chapter">
     <header class="mb-5 pb-3 border-bottom">
         <h1 class="display-4 fw-bold">Chapter 2: The Cipher</h1>
         <p class="text-muted fs-5">Saturday, April 1, 2006 — I-64 West into North Carolina</p>
     </header>
 
+    <!-- START: Chapter Narrative Prose -->
     <article class="narrative-prose fs-5 lh-lg">
         <p>The Hampton Roads Bridge-Tunnel was a parking lot. Roxy white-knuckled the steering wheel of the sedan, glaring at the glowing green digits on the dashboard clock. They had lost an hour to Tanya's Newport decoy, and the ghost bus was already miles ahead of them on I-64 West.</p>
 
@@ -46,6 +61,7 @@ include_once $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
     </article>
 
     <!-- STRATEGY GUIDE NOTES -->
+    <!-- START: Gameplay Strategy Notes -->
     <div class="card bg-dark text-light my-5 border-0 shadow">
         <div class="card-header bg-primary text-dark text-uppercase fw-bold tracking-wider">
             <i class="fa-solid fa-gamepad me-2"></i> Guide Notes
@@ -61,6 +77,7 @@ include_once $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
     </div>
 
     <?php 
+    // START: Pagination Configuration
     // SETUP THE NARRATIVE STEPPER
     $nav = [
         'prev' => [

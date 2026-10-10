@@ -1,5 +1,24 @@
 <?php
-// /pages/raggiesoft-games/pathfinder-west/strategy-guide/golden-ending/hail-mary-pasco/overview.php
+/**
+ * Pathfinder West Strategy Guide - Hail Mary Overview
+ * 
+ * ARCHITECTURAL OVERVIEW:
+ * This page serves as the Table of Contents/Overview for the "Pasco Hail Mary" 
+ * Golden Ending strategy guide in the Pathfinder West narrative section.
+ * 
+ * LORE CONTEXT:
+ * Details a high-stakes fictional journey across the United States within the 
+ * RaggieSoft Games universe.
+ * 
+ * LOGIC & CONSTRAINTS:
+ * - Includes standard `header.php` and `footer.php` for page layout.
+ * - Utilizes the `narrative-stepper.php` component at the bottom to generate 
+ *   Prev/Next navigation links.
+ * - Variables `$pageTitle` and `$metaDescription` must be defined before the header 
+ *   inclusion for proper SEO and `<title>` rendering.
+ * 
+ * File Info: /pages/raggiesoft-games/pathfinder-west/strategy-guide/golden-ending/hail-mary-pasco/overview.php
+ */
 
 $pageTitle = "Strategy Guide: The Pasco Hail Mary | Pathfinder West";
 $metaDescription = "The complete narrative strategy guide for achieving the Pasco Hail Mary Golden Ending in Pathfinder West.";
@@ -69,6 +88,8 @@ include_once $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
 
     <?php 
     // SETUP THE NARRATIVE STEPPER
+    // Defines the previous/next/overview links for the bottom pagination component.
+    // 'prev' is explicitly null here because this is the first page of the guide.
     $nav = [
         'prev' => null, // Overview is the beginning, so 'prev' is null
         'overview' => [

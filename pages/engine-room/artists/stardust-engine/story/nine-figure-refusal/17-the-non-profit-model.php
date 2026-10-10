@@ -1,4 +1,33 @@
 <?php
+/**
+ * Stardust Engine - Lore/Story Template: The Non-Profit Model
+ * 
+ * ARCHITECTURAL OVERVIEW:
+ * This template renders the chapter explaining the transition from Omni-Global's 
+ * exploitative "360 Deal" to Engine Room Records' "Logistics As A Service" model.
+ * It details the operational and cultural shift following the corporate bankruptcy.
+ * 
+ * LAYOUT STRUCTURE:
+ * - Uses a standard Bootstrap 5 container grid.
+ * - Comparison Component: A 50/50 split layout (col-md-6) comparing "The Omni Model"
+ *   to "The Engine Model" using contrasting colors (danger vs. success) and FontAwesome icons.
+ * - Corporate Letterhead Includes: Reuses the `/includes/components/corporate/letterhead.php` 
+ *   component twice to display in-universe memos from Holly O'Connell to the staff.
+ * - Service Menu: A 3-column grid (col-md-4) displaying the "A La Carte" infrastructure 
+ *   services using stylized cards with circular icons.
+ * - Narrative Stepper: Standard inclusion for sequential story navigation.
+ * 
+ * DEPENDENCIES:
+ * - Depends on `letterhead.php` for rendering the in-universe memos. Ensure variables 
+ *   like $letter_date, $letter_to, and $letter_body are correctly scoped before inclusion.
+ * - Relies on FontAwesome for extensive iconography (fa-skull-crossbones, fa-seedling, etc.).
+ * 
+ * MAINTENANCE NOTES:
+ * - Be careful not to leak PHP variable state between the two letterhead component inclusions.
+ *   Ensure all required variables are explicitly redefined before the second include.
+ * - Maintain the WCAG color contrast standards (using *-emphasis text colors against *-subtle backgrounds).
+ */
+
 // pages/engine-room/artists/stardust-engine/story/nine-figure-refusal/the-non-profit-model.php
 // The "Service Over Sovereignty" Pivot
 // UPDATED: Added Staff Retention Letter & WCAG Compliance
@@ -6,8 +35,10 @@
 $pageTitle = "The Non-Profit Model - Engine Room History";
 ?>
 
+<!-- BEGIN: Main Page Container -->
 <div class="container py-5">
     
+    <!-- BEGIN: Header Section -->
     <div class="row justify-content-center mb-5">
         <div class="col-lg-8 text-center">
             <span class="badge bg-primary-subtle text-primary-emphasis rounded-pill px-3 py-2 mb-3 text-uppercase letter-spacing-1 shadow-sm border border-primary-subtle">
@@ -21,7 +52,9 @@ $pageTitle = "The Non-Profit Model - Engine Room History";
             </p>
         </div>
     </div>
+    <!-- END: Header Section -->
 
+    <!-- BEGIN: Business Model Comparison -->
     <div class="row justify-content-center mb-5">
         <div class="col-lg-12">
             <div class="card border-0 shadow-lg overflow-hidden">
@@ -57,7 +90,9 @@ $pageTitle = "The Non-Profit Model - Engine Room History";
             </div>
         </div>
     </div>
+    <!-- END: Business Model Comparison -->
 
+    <!-- BEGIN: Philosophy & First Memo -->
     <div class="row justify-content-center mb-5">
         <div class="col-lg-10">
             <h3 class="h4 fw-bold text-body-emphasis border-bottom border-secondary pb-2 mb-4">
@@ -87,7 +122,9 @@ $pageTitle = "The Non-Profit Model - Engine Room History";
             ?>
         </div>
     </div>
+    <!-- END: Philosophy & First Memo -->
 
+    <!-- BEGIN: Human Capital & Second Memo -->
     <div class="row justify-content-center mb-5">
         <div class="col-lg-10">
             <h3 class="h4 fw-bold text-success border-bottom border-success pb-2 mb-4">
@@ -142,7 +179,9 @@ $pageTitle = "The Non-Profit Model - Engine Room History";
 
         </div>
     </div>
+    <!-- END: Human Capital & Second Memo -->
 
+    <!-- BEGIN: Service Menu Row -->
     <div class="row justify-content-center mb-5">
         <div class="col-lg-12">
             <h3 class="h4 fw-bold text-warning-emphasis border-bottom border-warning pb-2 mb-4">
@@ -200,7 +239,9 @@ $pageTitle = "The Non-Profit Model - Engine Room History";
             </div>
         </div>
     </div>
+    <!-- END: Service Menu Row -->
 
+    <!-- BEGIN: Conclusion Alert -->
     <div class="row justify-content-center">
         <div class="col-lg-10">
             <div class="alert alert-light bg-body-tertiary border-primary d-flex align-items-center shadow-lg" role="alert">
@@ -216,7 +257,9 @@ $pageTitle = "The Non-Profit Model - Engine Room History";
             </div>
         </div>
     </div>
+    <!-- END: Conclusion Alert -->
 
+    <!-- BEGIN: Narrative Stepper Component -->
     <?php
         // Narrative Stepper Configuration
         $nav = [
@@ -226,5 +269,7 @@ $pageTitle = "The Non-Profit Model - Engine Room History";
         ];
         include ROOT_PATH . '/includes/components/navigation/narrative-stepper.php';
     ?>
+    <!-- END: Narrative Stepper Component -->
 
 </div>
+<!-- END: Main Page Container -->

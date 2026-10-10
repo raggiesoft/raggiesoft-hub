@@ -1,4 +1,22 @@
 <?php
+/**
+ * ARCHITECTURE & LORE SYSTEM
+ * -------------------------------------------------------------------------
+ * File: sensory-scale.php
+ * Component Type: Lore / Narrative UI (Security SOP)
+ * Purpose: Defines and visually structures "The O'Connell Sensory Distress Scale."
+ * 
+ * DESIGN CONSTRAINTS:
+ * - Uses Bootstrap 5 cards with semantic color coding (success -> danger -> black).
+ * - Component structure depends on specific FontAwesome classes (`fa-solid`, `fa-duotone`).
+ * - Do NOT modify the `data-bs-theme="dark"` attribute on the Level 5 card, it is critical for styling.
+ * - Narrative-driven: References "Ironhead Security", "Omni-Global", and character behaviors.
+ * - This file acts as a pseudo-document from the internal universe of the Engine Room.
+ * 
+ * MAINTENANCE NOTES:
+ * - Any new levels or sub-levels must follow the existing card layout pattern.
+ * - If the layout breaks in future Bootstrap updates, check the margin/padding utility classes.
+ */
 // pages/story/lore/sensory-scale.php
 // LORE REFERENCE: The O'Connell Sensory Distress Scale (Levels 1-5)
 // Context: Standard Operating Procedures for Engine Room Staff & Security.

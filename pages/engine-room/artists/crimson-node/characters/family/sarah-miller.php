@@ -1,3 +1,13 @@
+<?php
+/**
+ * @file sarah-miller.php
+ * @description Character profile fragment for Sarah Miller (Crimson Node lore).
+ * @context This file is intended to be included dynamically within a larger layout. It contains the raw HTML for the "Sarah Miller" profile.
+ * @architecture HTML fragment utilizing Bootstrap grid and utility classes for a responsive profile layout.
+ * @maintenance Update HTML content directly for lore adjustments. Since it's a fragment, it does not define a $pageTitle or include header/footer wrappers.
+ */
+?>
+<!-- INLINE: Main container row for the Sarah Miller profile fragment -->
 <div class="row">
     <div class="col-12 mb-4">
         <h1 class="display-4 fw-bold" style="font-family: 'Impact', sans-serif; letter-spacing: 2px;">
@@ -7,6 +17,7 @@
         <hr class="mt-4 mb-0">
     </div>
 
+    <!-- INLINE: Sidebar containing portrait and quick profile data -->
     <!-- Quick Stats Sidebar Area -->
     <div class="col-lg-4 mb-4 mb-lg-0">
         <!-- Portrait Image -->
@@ -26,6 +37,7 @@
         </div>
     </div>
 
+    <!-- INLINE: Main biography sections detailing character lore -->
     <!-- Main Biography Content -->
     <div class="col-lg-8">
         <div class="mb-5">

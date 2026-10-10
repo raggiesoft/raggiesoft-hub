@@ -1,4 +1,33 @@
 <?php
+/**
+ * Stardust Engine - Lore/Story Template: The Noise Floor
+ * 
+ * ARCHITECTURAL OVERVIEW:
+ * This template renders Chapter 1 of the "Analog Heart" narrative arc. It focuses
+ * on Ryan O'Connell's sensory processing experiences in 1978 and establishes the
+ * foundational "System" dynamics of the band's family unit.
+ * 
+ * LAYOUT STRUCTURE:
+ * - Uses a centered Bootstrap 5 grid layout for reading readability (col-lg-8/col-lg-10).
+ * - Implements custom CSS classes (.sensory-hz, .narrative-card) in an inline <style> block
+ *   to visually represent auditory processing concepts.
+ * - Narrative content is broken into scenes ("01 High Fidelity", "02 Safe Harbor"),
+ *   wrapped in stylized .narrative-card components.
+ * - Utilizes specialized UI elements (progress bars in "Internal Mixing Console", 
+ *   terminal-style telemetry boxes) to convey neurodivergent sensory input visually.
+ * 
+ * DEPENDENCIES:
+ * - Uses FontAwesome for thematic iconography (fa-wave-pulse, fa-sliders-up).
+ * - Depends on the narrative-stepper.php component at the bottom for pagination
+ *   through the story arcs.
+ * 
+ * MAINTENANCE NOTES:
+ * - The inline <style> block is necessary here because these classes are highly specific
+ *   to this chapter's narrative devices. Do not extract to global CSS unless reused.
+ * - When updating text, maintain the 'Courier New' monospace formatting for sensory/technical callouts
+ *   as it is a core thematic element of Ryan's character.
+ */
+
 // pages/engine-room/artists/stardust-engine/story/analog-heart/the-noise-floor.php
 // Book 1: Analog Heart | Chapter 1: The Noise Floor
 // Context: 1978. Ryan's sensory processing and the formation of the "System".
@@ -6,6 +35,7 @@
 $pageTitle = "The Noise Floor (1978) - Engine Room History";
 ?>
 
+<!-- BEGIN: Page-Specific Thematic Styles -->
 <style>
     /* SENSORY HIGHLIGHT STYLES */
     .sensory-hz {
@@ -44,9 +74,12 @@ $pageTitle = "The Noise Floor (1978) - Engine Room History";
         text-transform: uppercase;
     }
 </style>
+<!-- END: Page-Specific Thematic Styles -->
 
+<!-- BEGIN: Main Story Container -->
 <div class="container py-5">
     
+    <!-- BEGIN: Story Header -->
     <div class="row justify-content-center mb-5">
         <div class="col-lg-8 text-center">
             <span class="badge bg-warning text-dark rounded-pill px-3 py-2 mb-3 text-uppercase letter-spacing-1 border border-warning shadow-sm">
@@ -60,7 +93,9 @@ $pageTitle = "The Noise Floor (1978) - Engine Room History";
             </p>
         </div>
     </div>
+    <!-- END: Story Header -->
 
+    <!-- BEGIN: Narrative Content Wrapper -->
     <div class="row justify-content-center mb-5">
         <div class="col-lg-10">
             
@@ -350,7 +385,9 @@ $pageTitle = "The Noise Floor (1978) - Engine Room History";
 
                 </div>
             </div>
+            <!-- END: Scene 02 (Safe Harbor) -->
 
+            <!-- BEGIN: Chapter Navigation Stepper -->
             <?php
                 // Setup Navigation Stepper for the Story Arc
                 $nav = [
@@ -360,7 +397,10 @@ $pageTitle = "The Noise Floor (1978) - Engine Room History";
                 ];
                 include ROOT_PATH . '/includes/components/navigation/narrative-stepper.php';
             ?>
+            <!-- END: Chapter Navigation Stepper -->
 
         </div>
     </div>
+    <!-- END: Narrative Content Wrapper -->
 </div>
+<!-- END: Main Story Container -->

@@ -1,12 +1,21 @@
 <?php
+/**
+ * @file 2016-live-at-the-crucible.php
+ * @description Lore and tracklist page for "Live at The Crucible (2016)".
+ * @context Documents the band's 30th-anniversary homecoming show, specifically detailing the lore behind their stadium anthem "Ignition".
+ * @architecture Static PHP page utilizing Bootstrap grid and styled cards. Generates a Schema.org MusicAlbum JSON-LD blob for SEO. Includes the tracklist downloader component.
+ * @maintenance To update the lore text or the simulated live transcript, modify the HTML paragraphs directly. Ensure the CDN paths for the album art remain accurate.
+ */
 // pages/engine-room/artists/stardust-engine/discography/2016-live-at-the-crucible.php
 // Context: The 2016 Homecoming / 30th Anniversary of Ignition
 // Theme: Stadium Red, Epic, Triumphant
 
+// INLINE: Define global layout parameters and initialize Schema data
 $pageTitle = "Live at The Crucible (2016) - The Stardust Engine";
 $album_path_web = '/engine-room-records/artists/the-stardust-engine/2016-live-at-the-crucible';
 $album_art = $album_path_web . '/album-art.jpg?v=' . time();
 
+// INLINE: Construct the SEO-friendly JSON-LD data for the live album
 $albumSchema = [
     "@context" => "https://schema.org",
     "@type" => "MusicAlbum",
@@ -116,6 +125,7 @@ $albumSchema = [
             </div>
         </div>
 
+        <!-- INLINE: Simulated live transcript showcasing the crowd interaction for 'Ignition' -->
         <div class="card border-secondary bg-dark text-light shadow-lg mt-5">
             <div class="card-header bg-black text-danger fw-bold text-center text-uppercase letter-spacing-1 p-3">
                 <i class="fa-solid fa-microphone-stand me-2"></i>Live Transcript: Track 01

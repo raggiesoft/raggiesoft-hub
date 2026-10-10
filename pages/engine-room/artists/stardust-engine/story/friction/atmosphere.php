@@ -1,4 +1,27 @@
 <?php
+/**
+ * ============================================================================
+ * ARCHITECTURE & MAINTENANCE NOTES
+ * ============================================================================
+ * File: pages/engine-room/artists/stardust-engine/story/friction/atmosphere.php
+ * 
+ * 1. Lore Context:
+ *    - EVIDENCE ITEM #94-B from the O'Connell v. Apex Records legal battle.
+ *    - Displays the lyrics for the "Atmosphere" demo, highlighting how Julian Vance 
+ *      misinterpreted the band's literal sci-fi/physics lyrics as sexual innuendo.
+ *    - Features in-universe "red pen" margin notes from Holly O'Connell.
+ * 
+ * 2. Component Architecture:
+ *    - Heavily relies on custom inline `<style>` definitions to render the 
+ *      "Typewriter/Studio Demo Sheet" UI (`.demo-sheet`, `.vance-highlight`, `.holly-note`).
+ *    - Integrates Web Awesome (`<wa-card>`) for exhibits and includes the 
+ *      `narrative-stepper.php` partial for sequential reading.
+ * 
+ * 3. Maintenance Rule:
+ *    - DO NOT alter the inline CSS blocks or their corresponding classes in the HTML.
+ *    - Ensure dark-mode overrides (`[data-bs-theme="dark"] .demo-sheet`) remain intact.
+ * ============================================================================
+ */
 // pages/engine-room/artists/stardust-engine/story/friction/atmosphere.php
 // EVIDENCE ITEM #94-B: The "Atmosphere" Demo
 // Context: The scientific lyrics that Julian Vance misinterpreted as sexual innuendo.

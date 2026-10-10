@@ -1,3 +1,16 @@
+<!--
+ * ARCHITECTURE & MAINTENANCE (LEGACY)
+ *
+ * This file provides a reusable disclaimer component injected into pages detailing "Live" album releases.
+ * 
+ * DESIGN INTENT:
+ * - Clarifies the dual-nature of the lore: presenting the in-universe narrative context alongside the meta-reality (AI generation via Suno, post-production in GarageBand).
+ * - Utilizes standard Bootstrap 5 alert styling (`alert-dark`, `border-warning`) to differentiate meta-text from pure narrative text.
+ * 
+ * MAINTENANCE NOTES:
+ * - This file contains no PHP logic, purely static HTML.
+ * - Included via `include` or `require` in album templates. Ensure it is placed within an appropriate container so the `.mt-5` top margin renders correctly.
+ -->
 <!-- /includes/components/_disclaimer-live-album.php -->
 <!-- A reusable disclaimer for all "Live" album pages -->
 
@@ -5,6 +18,7 @@
     <h4 class="alert-heading text-warning"><i class="fa-duotone fa-circle-info me-2"></i>A Note on "Live" Recordings</h4>
     
     <div class="row">
+        <!-- LEGACY LAYOUT: Two-column grid splitting narrative lore (left) and meta AI creation process (right). -->
         <div class="col-md-6 mb-3 mb-md-0">
             <strong>In-Universe Narrative:</strong>
             <p class="mb-0 small text-muted">

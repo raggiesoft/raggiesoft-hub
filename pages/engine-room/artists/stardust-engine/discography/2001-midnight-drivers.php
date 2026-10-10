@@ -1,6 +1,13 @@
 <?php
 // pages/engine-room/artists/stardust-engine/2001-midnight-drivers.php
 // Page data
+/*
+ * ARCHITECTURE & LORE:
+ * Represents the 2001 concept album "Midnight Drivers" by The Stardust Engine.
+ * Built around a shelved 1987 track.
+ * Employs standard album page layout utilizing the `_album-art-header.php`
+ * and `_tracklist-downloader.php` components.
+ */
 $pageTitle = "Midnight Drivers (2001) - The Stardust Engine";
 $album_path_web = '/engine-room-records/artists/the-stardust-engine/2001-midnight-drivers';
 
@@ -9,6 +16,7 @@ $album_path_web = '/engine-room-records/artists/the-stardust-engine/2001-midnigh
 <div class="container py-5">
     
     <div class="row align-items-center mb-5">
+        <!-- INLINE: Album Art Header Component Injection -->
         
         <?php $props = [
             'path' => $album_path_web, 
@@ -36,6 +44,7 @@ $album_path_web = '/engine-room-records/artists/the-stardust-engine/2001-midnigh
 
     <?php include ROOT_PATH . '/includes/components/_tracklist-downloader.php'; ?>
 
+    <!-- INLINE: Studio Archives Section detailing the 1987 anchor track and illusion elements -->
     <h3 class="h5 fw-bold text-uppercase text-muted mt-5 mb-3 border-bottom pb-2">
         <i class="fa-duotone fa-box-archive me-2"></i>Studio Archives
     </h3>

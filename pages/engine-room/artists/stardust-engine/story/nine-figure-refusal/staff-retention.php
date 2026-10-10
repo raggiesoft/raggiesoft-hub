@@ -4,11 +4,18 @@
 // Context: Holly hires the staff that Frost abandoned.
 // UPDATED: WCAG Compliance & Narrative Stepper.
 
+/*
+ * ARCHITECTURE & LORE:
+ * This page acts as Evidence Item #101, "The 'Bridge' Letter".
+ * It documents Holly O'Connell's move to hire the entire non-executive workforce of the bankrupt Omni-Global corporation.
+ * Utilizes the custom corporate letterhead component.
+ */
 $pageTitle = "The Retention Offer - Engine Room History";
 ?>
 
 <div class="container py-5">
     
+    <!-- INLINE: Page header defining the context of the personnel action and staff retention -->
     <div class="row justify-content-center mb-5">
         <div class="col-lg-8 text-center">
             <span class="badge bg-success-subtle text-success-emphasis rounded-pill px-3 py-2 mb-3 text-uppercase letter-spacing-1 border border-success-subtle">
@@ -26,6 +33,7 @@ $pageTitle = "The Retention Offer - Engine Room History";
     <div class="row justify-content-center mb-5">
         <div class="col-lg-10">
             
+            <!-- INLINE: Status Update Card - Contrasting the previous status under Omni-Global with the new status under the Jessica Miller Center -->
             <div class="card bg-body-tertiary border-secondary shadow-lg mb-5">
                 <div class="card-body p-4">
                     <h5 class="text-uppercase text-body-emphasis border-bottom border-secondary pb-3 mb-3">

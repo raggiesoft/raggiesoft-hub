@@ -1,4 +1,26 @@
 <?php
+/**
+ * ============================================================================
+ * ARCHITECTURE & MAINTENANCE NOTES
+ * ============================================================================
+ * File: pages/engine-room/artists/stardust-engine/discography/1992-friction.php
+ * 
+ * 1. Lore Context:
+ *    - Represents the permanently sealed, seized master recordings of "FRICTION" (1992).
+ *    - This is the fallout from the catastrophic "Dirty Mirror" incident and the 
+ *      resulting O'Connell v. Apex Records legal battle.
+ * 
+ * 2. Component Architecture:
+ *    - Generates Schema.org `MusicAlbum` JSON-LD with `creativeWorkStatus` strictly 
+ *      set to "Withdrawn" to accurately reflect its in-universe legal status.
+ *    - UI is completely custom, using Bootstrap 5 to simulate a heavily redacted 
+ *      "Seized Evidence" document (absolute overlays, blur filters, danger borders).
+ * 
+ * 3. Maintenance Rule:
+ *    - DO NOT inject standard album partials (`_tracklist-downloader.php`) here.
+ *    - Maintain the stark, industrial theme. DO NOT enable the `$pageTheme` space background.
+ * ============================================================================
+ */
 // pages/discography/1992-friction.php
 // Theme: Default (Stark/Dark) - NO Ad Astra space background
 // Context: "Unavailable For Legal Reasons" / Seized Evidence

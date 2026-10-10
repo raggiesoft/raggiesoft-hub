@@ -1,4 +1,21 @@
 <?php
+/**
+ * ARCHITECTURE & LORE SYSTEM
+ * -------------------------------------------------------------------------
+ * File: overview.php
+ * Component Type: Corporate Landing Page
+ * Purpose: Acts as the primary gateway for "The Engine Room" administrative hub.
+ * 
+ * DESIGN CONSTRAINTS:
+ * - Employs a 3-column Bootstrap grid for structural links (Structure, Liquidation, Leadership).
+ * - "The Vault" / "Internal Operations" section uses a dark mode card layout.
+ * - DO NOT remove FontAwesome duotone icons, as they define the visual hierarchy.
+ * - The `d-none d-lg-block` classes control responsive visibility of decorative icons.
+ * 
+ * MAINTENANCE NOTES:
+ * - Links to sub-sections (e.g., `/engine-room/corporate/aethelgard`) must align with routing configs.
+ * - The "SYSTEM_STATUS" block is purely aesthetic (narrative lore), not live data.
+ */
 // pages/engine-room/corporate/overview.php
 // Context: The Landing Page for the Family Office.
 // Theme: Corporate / Clean.

@@ -1,4 +1,26 @@
 <?php
+/**
+ * ============================================================================
+ * ARCHITECTURE & MAINTENANCE NOTES
+ * ============================================================================
+ * File: pages/engine-room/artists/stardust-engine/discography/2017-knox-ost.php
+ * 
+ * 1. Lore Context:
+ *    - The 2017 "Knox" Original Soundtrack represents the band's foray into film scoring.
+ *    - Explores the dual sci-fi sonic atmospheres of Port Telsus (The Axiom, industrial) 
+ *      and The Weave (organic, using the "2:22 Flute" leitmotif).
+ * 
+ * 2. Component Architecture:
+ *    - Uses `_album-art-header.php` with the 'axiom' variant (orange/industrial theme).
+ *    - IMPORTANT: `_tracklist-downloader.php` is intentionally commented out and replaced 
+ *      by a custom "Decrypting" Bootstrap alert UI, representing the in-universe data recovery.
+ *    - Includes placeholder variables for future DistroKid streaming DSP integration.
+ * 
+ * 3. Maintenance Rule:
+ *    - DO NOT uncomment the `_tracklist-downloader.php` or remove the "Decrypting" UI 
+ *      until the audio files are officially cleared and ready for the vault.
+ * ============================================================================
+ */
 // Page data
 $pageTitle = "Knox (Original Soundtrack) (2017) - The Stardust Engine";
 $album_path_web = '/engine-room-records/artists/the-stardust-engine/2017-knox-ost';

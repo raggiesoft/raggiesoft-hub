@@ -1,7 +1,23 @@
 <?php
-// --- Component: store-button.php ---
-// V2: DSP Streaming + Physical Merch Routing
-// Updated: Web Awesome Components
+/**
+ * RaggieSoft Hub - Universal Store Button Component
+ * 
+ * ARCHITECTURAL OVERVIEW:
+ * This component generates a complex, highly interactive "Buy/Stream" button cluster used 
+ * across the network (e.g., in discographies or artist profiles). It dynamically renders 
+ * links to digital streaming platforms (DSPs) and physical merchandise based on the `$storeProps` array.
+ * 
+ * LOGIC & CONSTRAINTS:
+ * - Depends on `$storeProps` being populated before inclusion. Keys map to platform IDs/URLs.
+ * - Heavy usage of Web Awesome (`<wa-button-group>`, `<wa-dropdown>`).
+ * - Contains a critical `<style>` block at the top that patches a known CSS issue with 
+ *   Web Awesome's `wa-button-group` and `wa-dropdown` z-indexing. Do NOT remove this style block.
+ * - The primary button defaults to Spotify, with a dropdown to select alternatives.
+ * 
+ * File Info: includes/components/store-button.php
+ * V2: DSP Streaming + Physical Merch Routing
+ * Updated: Web Awesome Components
+ */
 
 $type = $storeProps['type'] ?? 'album'; 
 $size = $storeProps['size'] ?? 'medium';
@@ -109,6 +125,10 @@ wa-button.dsp-youtube:hover::part(base) { background-color: #ff3333 !important; 
         </wa-button>
         
         <wa-dropdown placement="bottom-end">
+            <!-- 
+              Dropdown Trigger:
+              The toggle button opens the menu of alternative platforms.
+            -->
             <wa-button slot="trigger" size="<?php echo htmlspecialchars($size); ?>" class="toggle-store-btn px-2 <?php echo $platforms[$default]['class']; ?>">
                 <i class="fa-solid fa-chevron-down"></i>
             </wa-button>
@@ -119,6 +139,12 @@ wa-button.dsp-youtube:hover::part(base) { background-color: #ff3333 !important; 
                 </div>
                 <?php foreach ($platforms as $key => $data): ?>
                     <?php if (!empty($ids[$key])): ?>
+                        <!-- 
+                          Store Selector Item:
+                          The `data-*` attributes here are critical. They are read by an external 
+                          JavaScript file (likely a `store.js`) to dynamically update the main button
+                          when a user selects a new global default platform.
+                        -->
                         <wa-menu-item class="store-selector-link"
                            value="<?php echo $key; ?>"
                            data-platform="<?php echo $key; ?>"

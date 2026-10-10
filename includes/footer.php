@@ -3,7 +3,26 @@
 // v8.5 - Integrated Global Trademark Claims
 // Updated: Dynamic Location Logic
 
+/**
+ * ARCHITECTURE & MAINTENANCE NOTES:
+ * 
+ * Component: Global Master Footer
+ * Purpose: Houses the global legal band, trademark claims, audio player wrapper, and script injection at the end of the DOM.
+ * 
+ * Strategy & Implementation:
+ * - Dynamically fetches the primary "HQ Location" from the CDN's `locations.json` to reflect in the UI (if utilized by a child footer).
+ * - Injects the `sticky-player.php` and `stardust-player.js` globally, ensuring persistent audio playback across SPA navigations.
+ * - Manages user DSP (Digital Service Provider) preferences via `localStorage`, instantly swapping out "Listen on Spotify/Apple" 
+ *   buttons across the entire DOM without a page refresh.
+ * 
+ * Maintenance Recommendations:
+ * - The `initializeStorePreferences` function is critical. If the HTML structure of the DSP buttons changes, 
+ *   ensure the `.main-store-btn`, `.toggle-store-btn`, and associated dataset attributes remain intact.
+ * - The `elara:loaded` event listener must remain to re-bind the store selector buttons whenever the SPA replaces the `<main>` content block.
+ */
+
 // --- 1. DYNAMIC LOCATION LOGIC ---
+// Retrieves physical headquarters location from the CDN to populate footer address blocks dynamically
 $location_json_url = $cdnBaseUrl . '/portfolio/json/locations.json';
 $hq_location = 'Location Classified'; // Fallback in case of failure
 
@@ -22,6 +41,7 @@ if ($location_json !== false) {
 }
 
 // --- 2. RESOLVE VISUAL FOOTER ---
+// Determine which specific visual footer component to render based on page config or URI inheritance map
 if (isset($pageConfig['footer'])) {
     $footerFile = $pageConfig['footer'];
 } else {

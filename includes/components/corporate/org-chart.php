@@ -1,9 +1,35 @@
 <?php
 /**
- * REUSABLE COMPONENT: Org Chart (The Iceberg Model)
- * -------------------------------------------------
- * Renders a hierarchical tree structure for corporate lore.
- * Updated: Now supports 'description' field.
+ * ARCHITECTURAL DOCBLOCK
+ * 
+ * File: raggiesoft-hub/includes/components/corporate/org-chart.php
+ * Path: /includes/components/corporate/org-chart.php
+ * 
+ * CORE RESPONSIBILITY:
+ * Reusable UI Component: Org Chart (The Iceberg Model).
+ * Renders a dynamic, hierarchical tree structure for visualizing corporate lore,
+ * parsing a nested array/JSON node structure into a visually connected graph.
+ * 
+ * LORE CONTEXT:
+ * - Visually supports the "Iceberg Model" of the O'Connell Trust and Engine Room Records.
+ * 
+ * UI/UX & STYLING ARCHITECTURE:
+ * - Uses custom CSS (`.org-tree`, `.org-card`) heavily reliant on pseudo-elements 
+ *   (`::before`, `::after`) to dynamically draw the connector lines between nodes.
+ * - Supports arbitrary depth through the recursive `renderOrgNode()` function.
+ * - Adopts Bootstrap 5 utility classes for card styling, text truncation, and responsive layout.
+ * - Provides native Dark Mode support via `[data-bs-theme="dark"]` overrides.
+ * 
+ * DEPENDENCIES & INCLUSIONS:
+ * - Expects a global `$rootNode` array to be defined prior to inclusion.
+ * - Supports optional node keys: `title`, `role`, `meta`, `description`, `icon`, `link`, `color`.
+ * - Utilizes FontAwesome/Phosphor icons dynamically based on node data.
+ * 
+ * MAINTENANCE NOTES:
+ * - Modifying the `::before`/`::after` CSS for `.org-tree` is extremely fragile. 
+ *   Test any connector line changes across both single-child and multi-child node configurations.
+ * - Ensure `$rootNode` is fully validated before this component is included to prevent
+ *   infinite recursion loops on malformed tree data.
  */
 
 // Recursive function to render the tree

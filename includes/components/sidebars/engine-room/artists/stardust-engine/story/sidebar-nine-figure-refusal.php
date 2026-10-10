@@ -1,4 +1,18 @@
 <?php
+/**
+ * ARCHITECTURE & MAINTENANCE (LEGACY)
+ *
+ * This file provides the dedicated sidebar navigation for "The $150M Refusal" (Accidental Empire) saga.
+ * 
+ * DESIGN INTENT:
+ * - Employs a complex, data-driven navigation structure using nested arrays (`$chapters` -> `pages`).
+ * - Uses Web Awesome's `<wa-details>` component to create an accordion-style menu, which automatically opens (`open` attribute) if the current page falls within that chapter.
+ * - Simulates an active "Case File" interface with contextual status updates at the bottom.
+ * 
+ * MAINTENANCE NOTES:
+ * - The `isChapterActive` helper function is declared conditionally (`!function_exists`) to prevent fatal errors if this sidebar is included multiple times or alongside other files defining the same helper.
+ * - All URLs in the `$chapters` array must match the `$currentUri` exactly or via `str_contains` for the active states to trigger correctly.
+ */
 // includes/sidebars/artists/stardust-engine/story/sidebar-nine-figure-refusal.php
 // Dedicated navigation for the "Accidental Empire" Saga
 // UPDATED: Added "The Approach" to Chapter 1
@@ -14,6 +28,7 @@ if (!function_exists('isChapterActive')) {
     }
 }
 
+// LEGACY DATA STRUCTURE: Centralized routing definition. Adding new pages requires updating this array rather than hardcoding HTML.
 // Chapter Data Structure
 $chapters = [
     'ch1' => [
@@ -88,6 +103,7 @@ $chapters = [
     <?php foreach ($chapters as $id => $data): 
         $isActive = isChapterActive($data['pages'], $currentUri);
     ?>
+    <!-- LEGACY UI COMPONENT: Web Awesome disclosure widget used as an accordion. The `open` attribute is injected dynamically based on URL matching. -->
     <wa-details summary="<?php echo $data['title']; ?>" <?php echo $isActive ? 'open' : ''; ?> class="border-0 bg-transparent">
         <div class="d-flex flex-column gap-1 ps-2 pb-2">
             <?php foreach ($data['pages'] as $url => $linkData): 

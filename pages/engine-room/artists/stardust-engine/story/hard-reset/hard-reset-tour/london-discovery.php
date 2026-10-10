@@ -3,11 +3,18 @@
 // Lore Entry: The Signing of Origin.
 // Context: Camden Town, 1998. The "Safe Harbor" recognition.
 
+/*
+ * ARCHITECTURE & LORE:
+ * Lore entry chronicling the discovery and signing of the band "Origin" in London, 1998.
+ * Focuses on shared neurodivergence (autism/stimming signals) and the organic growth of the Engine Room Records roster.
+ * Layout uses standard Bootstrap cards and alerts to segment the narrative.
+ */
 $pageTitle = "The London Discovery - The Stardust Engine Lore";
 ?>
 
 <div class="container py-5">
     
+    <!-- INLINE: Main narrative header establishing the date, location, and historical significance -->
     <div class="row justify-content-center mb-5">
         <div class="col-lg-8 text-center">
             <span class="badge bg-warning text-dark rounded-pill px-3 py-2 shadow-sm mb-3 text-uppercase">
@@ -91,6 +98,7 @@ $pageTitle = "The London Discovery - The Stardust Engine Lore";
                 </div>
             </div>
 
+            <!-- INLINE: The "Mirror Image" alert highlights the crucial neurodivergent connection between the two bands -->
             <div class="alert alert-warning bg-warning bg-opacity-10 border-warning mt-5 shadow-sm" role="alert">
                 <div class="d-flex align-items-start">
                     <i class="fa-duotone fa-dna text-warning fs-2 me-3 mt-1"></i>

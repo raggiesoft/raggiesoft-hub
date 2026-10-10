@@ -1,13 +1,39 @@
 <?php
+/**
+ * Stardust Engine - Discography Template: 1995 The Warehouse Tapes
+ * 
+ * ARCHITECTURAL OVERVIEW:
+ * This template renders the album detail page for "The Warehouse Tapes" (1995 EP).
+ * It presents a mix of album metadata, lore context, and a visual tracklist.
+ * 
+ * LAYOUT STRUCTURE:
+ * - Uses Bootstrap 5 container and grid system.
+ * - Header Row: Displays the album artwork (via shared component) and introductory text.
+ * - Tracklist Downloader Component: Included to handle audio playback or downloading.
+ * - Liner Notes & Lore: A two-part section (Side A and Side B) displaying tracks
+ *   as stylized list-group items with in-universe descriptions.
+ * - Side B highlights the "Ad Astra" suite with a specialized, highly styled component.
+ * 
+ * DEPENDENCIES:
+ * - Expects $album_path_web to define the asset path for the album art and track data.
+ * - Relies on shared components (_album-art-header.php, _tracklist-downloader.php, button.php).
+ * - Utilizes FontAwesome for iconography and custom CSS (e.g., .text-glow-primary) from the global theme.
+ * 
+ * MAINTENANCE NOTES:
+ * - When modifying track descriptions, ensure consistency with established Stardust Engine lore.
+ * - The Side B (Ad Astra) section has inline styling for its background; be cautious when updating global themes.
+ */
+
 // Page data
 $pageTitle = "The Warehouse Tapes (1995) - The Stardust Engine";
 $album_path_web = '/engine-room-records/artists/the-stardust-engine/1995-the-warehouse-tapes';
 
-
 ?>
 
+<!-- BEGIN: Main Album Container -->
 <div class="container py-5">
     
+    <!-- BEGIN: Album Header & Intro -->
     <div class="row align-items-center mb-5">
         <?php $props = [
             'path' => $album_path_web, 
@@ -34,13 +60,19 @@ $album_path_web = '/engine-room-records/artists/the-stardust-engine/1995-the-war
         </div>
     </div>
 
+    <!-- END: Album Header & Intro -->
+
     <hr class="border-secondary opacity-25 mb-5">
 
+    <!-- BEGIN: Shared Tracklist & Audio Player Component -->
     <?php include ROOT_PATH . '/includes/components/_tracklist-downloader.php'; ?>
+    <!-- END: Shared Tracklist & Audio Player Component -->
 
+    <!-- BEGIN: Liner Notes & Lore Section -->
     <div class="mt-5">
         <h3 class="h4 fw-bold text-uppercase text-muted mb-4 border-bottom pb-2">Liner Notes & Lore</h3>
 
+        <!-- BEGIN: Side A Tracks -->
         <div class="d-flex align-items-center mb-3">
             <i class="fa-duotone fa-cassette-tape fs-3 text-secondary me-3"></i>
             <h4 class="h5 fw-bold text-secondary mb-0 text-uppercase">Side A: The Engine (Rage & Redemption)</h4>
@@ -96,7 +128,9 @@ $album_path_web = '/engine-room-records/artists/the-stardust-engine/1995-the-war
             </div>
 
         </div>
+        <!-- END: Side A Tracks -->
 
+        <!-- BEGIN: Side B (Ad Astra Suite Focus) -->
         <div class="d-flex align-items-center mb-3">
             <i class="fa-duotone fa-cassette-tape fs-3 text-warning me-3"></i>
             <h4 class="h5 fw-bold text-warning mb-0 text-uppercase">Side B: The Stardust (Ad Astra)</h4>

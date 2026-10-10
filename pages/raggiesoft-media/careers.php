@@ -1,4 +1,27 @@
 <?php
+/**
+ * RaggieSoft Careers & Anti-Fraud Notice
+ *
+ * ARCHITECTURE & CONTEXT:
+ * This page acts as an "SEO Honeypot" to intercept users searching for "RaggieSoft jobs" 
+ * or "RaggieSoft hiring". It explicitly states that RaggieSoft is a single-person entity 
+ * and warns users about fraudulent employment offers (scams).
+ * It includes an embedded JSON-LD Schema.org `FAQPage` block for search engines to 
+ * display definitive "Not Hiring" answers directly in search results.
+ *
+ * UI/UX ARCHITECTURE:
+ * - Employs a strong visual hierarchy using red accents (`bg-hud-red`, `aero-alert-danger`, 
+ *   `btn-aero-danger`) to communicate urgency and warning.
+ * - Glassmorphism effects apply via Aero Inner-Glass CSS rules.
+ * - Provides clear calls-to-action to report fraud to the FBI (IC3) and FTC.
+ *
+ * MAINTENANCE NOTES:
+ * - Do NOT remove the JSON-LD `<script type="application/ld+json">` block. It is critical 
+ *   for intercepting Google searches by scam victims.
+ * - Maintain the external links to ic3.gov and ftc.gov; check periodically for broken URLs.
+ * - Ensure the design remains sidebar-compatible as per global layout rules.
+ */
+
 // pages/raggiesoft-media/careers.php
 // The SEO Honeypot and Anti-Fraud Notice
 // Updated: Aero Glass Layout (Sidebar Compatible)

@@ -4,6 +4,12 @@
 // Context: The specific moment the deal died.
 // UPDATED: Visualized "Slide 14" and the specific violation of 'Ad Astra'.
 
+/*
+ * ARCHITECTURE & LORE:
+ * This page visualizes "Slide 14", the exact moment the corporate deal collapsed.
+ * It details the proposed dissection of the song "Escape Velocity (Ad Astra)" and Cassidy's subsequent autistic meltdown.
+ * Employs custom CSS for the slide visualization, including dark-mode adaptation.
+ */
 $pageTitle = "The Trigger: Slide 14 - Evidence Item #1";
 ?>
 
@@ -55,6 +61,7 @@ $pageTitle = "The Trigger: Slide 14 - Evidence Item #1";
 
 <div class="container py-5">
     
+    <!-- INLINE: Page header establishing the inciting incident that triggered the war -->
     <div class="row justify-content-center mb-5">
         <div class="col-lg-8 text-center">
             <span class="badge bg-danger-subtle text-danger-emphasis rounded-pill px-3 py-2 mb-3 text-uppercase letter-spacing-1 shadow-sm border border-danger-subtle">
@@ -98,6 +105,7 @@ $pageTitle = "The Trigger: Slide 14 - Evidence Item #1";
                 </div>
             </div>
 
+            <!-- INLINE: Visual recreation of Omni-Global's "Slide 14" which proposed mutilating Cassidy's masterpiece -->
             <div class="slide-container mb-5">
                 <div class="slide-header">
                     <h3 class="m-0 fw-bold text-uppercase">Asset Optimization: IP Efficiency</h3>

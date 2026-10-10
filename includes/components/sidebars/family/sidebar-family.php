@@ -1,6 +1,29 @@
 <?php
-// includes/components/sidebars/family/sidebar-family.php
-// Updated: Replaced FontAwesome icons with Atmospheric Headshots
+/**
+ * RaggieSoft Hub - Family Sidebar
+ * 
+ * ARCHITECTURAL OVERVIEW:
+ * This sidebar component is dedicated to the "Family" section of the RaggieSoft Hub.
+ * It displays hierarchical navigation linking to individual family member profiles,
+ * organized into categories (The Architect, The Sisters).
+ * 
+ * LORE / THEMATIC CONTEXT:
+ * "The Family" represents "Personified DevOps." The UI emphasizes this with specific
+ * atmospheric headshots and thematic styling, contrasting with the corporate / engine 
+ * sections.
+ * 
+ * CONSTRAINTS & MAINTENANCE:
+ * - This file mixes standard Bootstrap 5 elements (e.g., `.alert-info`) with Web Awesome
+ *   components (`<wa-button>`) and standard anchor tags (`<a>`).
+ * - Custom CSS variables (e.g., `--family-jenna`, `--family-harper`) are dynamically applied
+ *   based on the `$currentView` state. Ensure these variables remain defined in the global 
+ *   or component-level CSS.
+ * - Dynamic active states rely on `$currentView` matching specific strings (e.g., 'pages/family/jenna').
+ *   Do NOT modify this logic unless the routing structure fundamentally changes.
+ * 
+ * File Info: includes/components/sidebars/family/sidebar-family.php
+ * Updated: Replaced FontAwesome icons with Atmospheric Headshots
+ */
 ?>
 
 <div class="mb-4 text-center">
@@ -63,6 +86,12 @@
   
 
   
+    <!-- 
+      Dynamic Navigation Anchor Logic:
+      The class checks `$currentView` against the expected view path. If matched, it applies
+      'active fw-bold', otherwise 'link-body-emphasis'.
+      Inline styling applies specific CSS variables to color the link appropriately when active.
+    -->
     <a class="nav-link d-flex align-items-center <?php echo ($currentView === 'pages/family/jenna') ? 'active fw-bold' : 'link-body-emphasis'; ?>" 
        href="/family/jenna"
        style="<?php echo ($currentView === 'pages/family/jenna') ? 'color: var(--family-jenna);' : ''; ?>">

@@ -1,5 +1,13 @@
 <?php
+/**
+ * @file 1999-hard-reset-tour.php
+ * @description Lore and upcoming release page for the "Hard Reset Tour" live album.
+ * @context Details the grueling reality of the band's first massive tour, highlighting the clash between industry-standard luxury and their specific neurodivergent/accessibility needs.
+ * @architecture Static PHP/HTML page using Bootstrap grid to present narrative text alongside a sticky promotional card for the upcoming live album.
+ * @maintenance To update the lore text, modify the HTML paragraphs directly. Once the live album tracks are generated, update the "Upcoming Release" card to link to the active album page.
+ */
 // Page data
+// INLINE: Define page title and the CDN path for potential future tracklist inclusion
 $pageTitle = "The Hard Reset Tour (1997-1998) - Engine Room Records";
 $album_path_web = '/engine-room-records/artists/the-stardust-engine/1999-hard-reset-tour';
 
@@ -26,6 +34,7 @@ $album_path_web = '/engine-room-records/artists/the-stardust-engine/1999-hard-re
 
     <div class="row">
         <div class="col-md-8">
+            <!-- INLINE: Lore section detailing the accessibility failures of the tour bus -->
             <h2 class="h3 fw-bold text-uppercase text-primary mb-3">The "Standard" Disaster</h2>
             <p>
                 When The Stardust Engine announced the massive <em>Hard Reset</em> world tour, they were backed by the limitless capital of their new reality. Wanting to give her siblings and cousins the absolute best, manager Holly O'Connell rented the most expensive, luxurious, state-of-the-art rock star tour bus on the market. They booked a dense, relentless schedule, determined to prove they could tour like any "regular" stadium rock band.
@@ -46,6 +55,7 @@ $album_path_web = '/engine-room-records/artists/the-stardust-engine/1999-hard-re
                 </div>
             </div>
 
+            <!-- INLINE: Lore section explaining the foundation of the band's private LLC infrastructure -->
             <h2 class="h3 fw-bold text-uppercase text-success mb-3">The Aftermath & The Empire</h2>
             <p>
                 The brutal toll of the tour was a massive wake-up call for Holly. When the final show ended, she drew a permanent line in the sand. The hard lesson was learned: <strong>Industry standards do not apply to this family, and they will never try to act like a "regular" band again.</strong> 

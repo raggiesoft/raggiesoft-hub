@@ -1,4 +1,29 @@
 <?php
+/**
+ * ============================================================================
+ * ARCHITECTURE & MAINTENANCE NOTES
+ * ============================================================================
+ * File: pages/engine-room/artists/crimson-node/discography/overview.php
+ * 
+ * 1. Architecture Context:
+ *    - Serves as the master discography router and vault integration page for Crimson Node.
+ *    - Dynamically generates Schema.org JSON-LD for the "MusicGroup" and its "MusicAlbum"s.
+ * 
+ * 2. Data Processing:
+ *    - Fetches the `albums.json` manifest from the CDN.
+ *    - Iterates over "eras" and their respective "albums".
+ *    - Specifically checks for `dspExempt` (Vault Exclusive) and "CANCELED" (lore seized/evidence)
+ *      flags to modify visual display and Schema indexing.
+ * 
+ * 3. Component Architecture:
+ *    - Uses robust Bootstrap 5 grids, custom glass-morphism classes (`glass-card`),
+ *      and dynamic rendering of the `store-button.php` component.
+ * 
+ * 4. Maintenance Rule:
+ *    - DO NOT modify the HTML DOM structure, custom CSS classes, or the JSON parsing logic.
+ *    - The Schema.org block must strictly omit "CANCELED" albums.
+ * ============================================================================
+ */
 // pages/engine-room/artists/crimson-node/discography/overview.php
 // v4.1 - Crimson Node Discography Router (Dynamic Schema.org & Vault Integrations)
 

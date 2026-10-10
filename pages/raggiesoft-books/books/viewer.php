@@ -1,7 +1,20 @@
 <?php
 /**
- * RaggieSoft Books - Markdown Viewer
- * Renders the dynamically mapped Markdown files from the RaggieSoft Assets CDN.
+ * RaggieSoft Architecture - Page Component / Controller
+ * 
+ * File: pages/raggiesoft-books/books/viewer.php
+ * Component: Markdown Content Viewer (The Reader)
+ * Type: Dynamic Controller / Renderer
+ * 
+ * Description:
+ * Renders dynamically mapped Markdown files from the RaggieSoft Assets CDN.
+ * Also acts as a mini-controller intercepting specific paths (__SERIES_LANDING__, 
+ * __TOC__, __BOOK_TOC__) to serve specialized index UI templates.
+ * 
+ * Maintenance Notes:
+ * - Relies on StardustParsedown for Markdown-to-HTML conversion.
+ * - Manually parses basic YAML frontmatter.
+ * - Hydrates global "$katie" from toc.json for the sidebar/TOC.
  */
 
 // 1. Determine the path to the Markdown file on the CDN

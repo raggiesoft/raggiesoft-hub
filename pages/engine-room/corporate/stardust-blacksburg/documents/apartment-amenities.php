@@ -1,4 +1,18 @@
 <?php
+/**
+ * ============================================================================
+ * ARCHITECTURE & CORPORATE LORE (UNIT AMENITIES):
+ * This file outlines the technical and domestic specifications of the individual
+ * apartment units. It reinforces the "Scholar-Grade" baseline without upselling,
+ * focusing on utilitarian luxury (Gigabit ethernet, solid-core doors).
+ * 
+ * Future Maintenance:
+ * - The layout relies heavily on FontAwesome icons paired with Bootstrap 5 cards
+ *   and flexbox utility classes for a clean, scannable grid.
+ * - The tone should remain strictly functional—focusing on *why* the amenity exists
+ *   (e.g., solid doors for noise blocking) rather than just listing it.
+ * ============================================================================
+ */
 // pages/engine-room/corporate/stardust-blacksburg/documents/apartment-amenities.php
 // Context: The detailed spec sheet for INDIVIDUAL units.
 // Theme: Varsity / Functional Luxury.
@@ -25,6 +39,7 @@ $pageTitle = "Unit Specifications - Stardust Blacksburg";
             </h3>
         </div>
 
+        <!-- ARCHITECTURE: Domestic Infrastructure Grid (Laundry, Kitchen, Balcony) -->
         <div class="col-md-6 col-lg-4">
             <div class="card h-100 border-0 bg-body-tertiary shadow-sm">
                 <div class="card-body">
@@ -68,6 +83,7 @@ $pageTitle = "Unit Specifications - Stardust Blacksburg";
         </div>
 
         <div class="col-12 mt-4">
+            <!-- ARCHITECTURE: The Scholar's Edge - Technical and sensory accommodations -->
             <h3 class="h5 fw-bold text-uppercase border-bottom border-primary pb-2 mb-4">
                 <i class="fa-duotone fa-book-open-reader me-2 text-primary"></i>The Scholar's Edge
             </h3>
@@ -132,6 +148,7 @@ $pageTitle = "Unit Specifications - Stardust Blacksburg";
         
     </div>
 
+    <!-- ARCHITECTURE: Final disclaimer linking back to the Furniture Philosophy -->
     <div class="alert alert-light border border-secondary mt-5 text-center small">
         <span class="fw-bold text-uppercase text-muted">Note on Furnishings:</span> 
         <span class="text-muted">Unless otherwise noted in your specific lease addendum, units are leased <strong>unfurnished</strong> to allow you to build your own environment.</span>

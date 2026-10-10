@@ -1,4 +1,33 @@
 <?php
+/**
+ * ARCHITECTURAL DOCBLOCK
+ * 
+ * File: raggiesoft-hub/includes/components/footers/raggiesoft-books/footer-books.php
+ * Path: /includes/components/footers/raggiesoft-books/footer-books.php
+ * 
+ * CORE RESPONSIBILITY:
+ * Reusable UI Component: Ocean View Archives Footer (Books context).
+ * Renders the dedicated footer for the literary preservation imprint.
+ * 
+ * LORE CONTEXT:
+ * - Establishes "Ocean View Archives" as the publishing imprint of RaggieSoft Media.
+ * - Disclaims that it is not a traditional publishing house.
+ * 
+ * UI/UX & STYLING ARCHITECTURE:
+ * - Uses a custom color palette (`#0F4C5C` background, `#E3B27C` highlights) distinct from
+ *   the main RaggieSoft corporate theme.
+ * - Relies on Bootstrap 5 utility classes for layout, supplemented by inline styles.
+ * - Defines a custom `<style>` block for `.hover-white` link interactions.
+ * 
+ * DEPENDENCIES & INCLUSIONS:
+ * - None natively required within this partial. Assumes Bootstrap and FontAwesome are
+ *   loaded by the parent wrapper.
+ * 
+ * MAINTENANCE NOTES:
+ * - To update global literary links (e.g., Terms of Reading, Licensing), modify the lists here.
+ * - Ensure any custom CSS injected here does not leak globally and interfere with other
+ *   imprints or themes.
+ */
 // includes/components/footers/raggiesoft-books/footer-books.php
 // The dedicated footer for Ocean View Archives.
 ?>

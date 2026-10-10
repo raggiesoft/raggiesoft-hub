@@ -4,11 +4,18 @@
 // Context: Prague, Ministry of Culture. The "Elevator of Death."
 // UPDATED: Fully Adaptive WCAG Compliance.
 
+/*
+ * ARCHITECTURE & LORE:
+ * Lore entry detailing the physical and logistical accessibility challenges faced during the 1998 European Tour.
+ * Highlights the "Paternoster" elevator hazard in Prague and the specific accommodations required by the siblings.
+ * Uses hazard styling (danger alerts, skull icons) to convey the real danger posed by the lack of accessibility.
+ */
 $pageTitle = "The Paternoster Incident - The Stardust Engine Lore";
 ?>
 
 <div class="container py-5">
     
+    <!-- INLINE: Incident Header establishing the date and location of the accessibility failure -->
     <div class="row justify-content-center mb-5">
         <div class="col-lg-8 text-center">
             <span class="badge bg-primary text-white rounded-pill px-3 py-2 shadow-sm mb-3 text-uppercase">
@@ -87,6 +94,7 @@ $pageTitle = "The Paternoster Incident - The Stardust Engine Lore";
 
     <div class="row justify-content-center">
         <div class="col-lg-9">
+            <!-- INLINE: Clause 12 section detailing the strict, non-negotiable accommodations required for Ryan's care and their shared neurodivergent needs -->
             <div class="card bg-body-tertiary border-warning shadow-lg">
                 <div class="card-header bg-warning text-dark fw-bold">
                     <i class="fa-duotone fa-bed-front me-2"></i>The Rider: Clause 12 (Accommodation)

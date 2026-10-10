@@ -1,3 +1,19 @@
+<?php
+/**
+ * RaggieSoft Hub - 404 Not Found Page
+ * 
+ * ARCHITECTURAL OVERVIEW:
+ * A simple 404 error page displayed when a route cannot be matched. 
+ * This file is likely rendered within the context of a broader layout/router, 
+ * as it does not include `header.php` or `footer.php` directly.
+ * 
+ * LOGIC & CONSTRAINTS:
+ * - Uses Tailwind CSS utility classes (`max-w-3xl`, `text-5xl`, etc.) for styling.
+ * - Dynamically includes the central `button.php` component for the "Return Home" action.
+ * 
+ * File Info: errors/404.php
+ */
+?>
 <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center">
     <h1 class="text-5xl font-extrabold text-heading">404</h1>
     <p class="mt-4 text-2xl font-semibold text-body">
@@ -9,6 +25,7 @@
     <div class="mt-8">
       <?php
         // --- Use the button component ---
+        // Dynamically renders a styled Web Awesome button based on the $props array.
         $props = [
           'href' => '/',
           'text' => 'Return Home',

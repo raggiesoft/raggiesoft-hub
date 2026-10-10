@@ -1,4 +1,18 @@
 <?php
+/**
+ * ARCHITECTURE: api.php
+ * 
+ * Context: RaggieSoft Hub - Amanda Headless CMS API.
+ * Narrative/Purpose: Amanda ("The Headless CMS Gatekeeper") acts as the secure API bridge between the file-based 
+ * JSON data store and the frontend applications. It prevents unauthorized access, strips extensions to protect the 
+ * underlying file structure, and recursively searches for content.
+ * 
+ * Mechanics:
+ * - Direct human (browser) access is redirected to a 404 "Signal Lost" page.
+ * - API requests must provide a 'zone' (e.g., routes, settings) and a 'file' (slug).
+ * - Utilizes PHP's `RecursiveDirectoryIterator` to locate requested files within the permitted zone, regardless 
+ *   of subdirectory depth or case-sensitivity, returning the raw JSON.
+ */
 // amanda/api.php
 // The Headless CMS Gatekeeper (Recursive Edition v2)
 // Updated: Case-Insensitive Search & Auto-Extension Stripping

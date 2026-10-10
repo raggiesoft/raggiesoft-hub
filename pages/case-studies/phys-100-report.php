@@ -1,4 +1,18 @@
 <?php
+/**
+ * ============================================================================
+ * ARCHITECTURE & EXTERNAL API INTEGRATION:
+ * This file serves as a live signal simulation for the PHYS-100 case study.
+ * It demonstrates the integration of the NASA Exoplanet Archive via a custom
+ * data bridge to calculate interstellar communication latency.
+ * 
+ * Future Maintenance:
+ * - Ensure the `nasa-bridge.php` include path remains valid.
+ * - The `$alienTargets` array must provide 'round_trip_time', 'name', and 'distance_ly'.
+ * - The UI relies on Bootstrap 5 progress bars to visualize distance dynamically.
+ * ============================================================================
+ */
+// ARCHITECTURE: Engage the external API bridge to fetch live astronomical data
 include('includes/utils/nasa-bridge.php');
 $alienTargets = fetch_nasa_distance();
 $currentYear = date("Y");
@@ -10,6 +24,7 @@ $currentYear = date("Y");
     </div>
     <div class="list-group list-group-flush">
         <?php foreach($alienTargets as $target): ?>
+            <!-- ARCHITECTURE: Calculate real-time latency based on light-speed constraints -->
             <?php $replyYear = $currentYear + $target['round_trip_time']; ?>
             
             <div class="list-group-item">

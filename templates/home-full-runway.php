@@ -1,3 +1,24 @@
+<?php
+/**
+ * ARCHITECTURE & MAINTENANCE NOTES:
+ * 
+ * Component: Full Runway Template (Home)
+ * Purpose: Provides a full-bleed horizontal scrolling "runway" layout for the global network homepage.
+ * 
+ * Strategy & Implementation:
+ * - Divides content into thematic categories (Global Directory, Engine Room Roster, Active Lore).
+ * - Implements a highly reusable `horizontal-scroll-wrapper` populated by `scroll-card` containers.
+ * - Dynamically includes the standard `card.php` component, passing arrays of `$props` to construct the UI 
+ *   elements (images, titles, Web Awesome buttons) consistently.
+ * 
+ * Maintenance Recommendations:
+ * - When adding a new card to a runway, ensure it is wrapped in `<div class="scroll-card">`.
+ * - To invert colors (for specific brand identities like Engine Room), add the `theme-invert` class 
+ *   to the `scroll-card` wrapper.
+ * - Always maintain `$cdnBaseUrl` prefixes for image sources to guarantee resolution across different environments.
+ */
+?>
+<!-- Network Spokes: Main Runway Container -->
 <section id="network-spokes" class="py-5 bg-body text-body" aria-labelledby="spokes-title">
   <div class="container-fluid px-0"> <div class="mb-5">
         <div class="d-flex justify-content-between align-items-end mb-3 px-4 px-xxl-5">
@@ -27,6 +48,7 @@
             ?>
           </div>
 
+          <!-- Engine Room Card: Employs 'theme-invert' for brand-specific dark mode rendering -->
           <div class="scroll-card theme-invert">
             <?php
               $props = [

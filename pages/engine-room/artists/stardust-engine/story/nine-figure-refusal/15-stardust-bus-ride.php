@@ -5,6 +5,12 @@
 // Context: Investigative reporting on the Omni-Global scandal.
 // UPDATED: WCAG Compliance (Text Contrast Overrides) & Grainy Image Filter.
 
+/*
+ * ARCHITECTURE & LORE:
+ * The Zenith Report Archives. A faux-newspaper layout detailing the investigative journalism surrounding the Omni-Global scandal.
+ * Includes the "$350 Million Bus Ride" article, the leaked security footage, and Pacific Rim's official statement.
+ * Requires the shared zenith-theme.php stylesheet for its distinctive print-media aesthetic.
+ */
 $pageTitle = "The Zenith Report: The Bus Ride & The Leak";
 
 // INJECT THE SHARED STYLES HERE
@@ -14,6 +20,7 @@ include ROOT_PATH . '/includes/components/styles/zenith-theme.php';
 
 <div class="container py-5">
     
+    <!-- INLINE: Press Archive header to set the journalistic context -->
     <div class="row justify-content-center mb-5">
         <div class="col-lg-8 text-center">
             <span class="badge bg-secondary text-white rounded-pill px-3 py-2 mb-3 text-uppercase letter-spacing-1 shadow-glow">
@@ -28,6 +35,7 @@ include ROOT_PATH . '/includes/components/styles/zenith-theme.php';
         </div>
     </div>
 
+    <!-- INLINE: First Newspaper Article - The $350 Million Bus Ride (Visual Audit Bias) -->
     <div class="row justify-content-center mb-5" id="bus-ride">
         <div class="col-lg-11">
             <div class="card border-1 border-dark shadow-lg zenith-paper zenith-paper-1">

@@ -1,4 +1,21 @@
 <?php
+/**
+ * ============================================================================
+ * ARCHITECTURE & DESIGN: NASA Exoplanet API Bridge
+ * ============================================================================
+ * ROLE: Fetches live exoplanet data directly from the NASA/Caltech Exoplanet 
+ *       Archive (TAP sync). Used dynamically within the Stardust Engine and 
+ *       related sci-fi properties to root narratives in actual astrophysical data.
+ * 
+ * INTEGRATION: Uses a simple stream context wrapper to avoid cURL dependencies.
+ *              Results are converted on-the-fly from Parsecs to Light Years,
+ *              providing round-trip communication times for lore context.
+ * 
+ * MAINTENANCE: Ensure the TAP query syntax remains valid if Caltech updates their
+ *              database schemas (e.g., the `ps` table or `sy_dist` column). The 
+ *              timeout (3s) prevents the hub from stalling if NASA is offline.
+ * ============================================================================
+ */
 // includes/utils/nasa-bridge.php
 
 function fetch_nasa_distance() {
@@ -20,6 +37,7 @@ function fetch_nasa_distance() {
     $data = json_decode($json, true);
     
     // 4. Process & Convert (The Physics Part)
+    // [LOGIC] Convert astronomical Parsecs to Light Years and calculate signal latency
     $results = [];
     foreach ($data as $star) {
         $parsecs = floatval($star['sy_dist']);

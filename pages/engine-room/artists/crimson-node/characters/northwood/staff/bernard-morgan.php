@@ -1,6 +1,21 @@
 <?php
+/**
+ * Crimson Node - Bernard Morgan Profile
+ *
+ * This file renders the character biography for Bernard Morgan, Principal at 
+ * Northwood High School. It highlights his approachability and protective nature.
+ *
+ * Architecture Notes:
+ * - Designed as an HTML fragment to be included dynamically within a parent layout template.
+ * - Uses a two-column Bootstrap 5 layout (`col-lg-5` for the portrait card, `col-lg-7` for content).
+ * - Accented with an info/blue (`#0dcaf0`) color scheme to reflect his safe and supportive role.
+ *
+ * Maintainer Note: This is an include fragment. Do not wrap in `<html>` or `<body>` tags.
+ * The differing color accent (info) compared to other staff is intentional and should be preserved.
+ */
 // pages/engine-room/artists/crimson-node/characters/northwood/staff/bernard-morgan.php
 ?>
+<!-- PROFILE FRAGMENT -->
 <div class="container py-5">
     <div class="row mb-5">
         <div class="col-12 text-center">

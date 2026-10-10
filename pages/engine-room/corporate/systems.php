@@ -1,12 +1,21 @@
 <?php
+/**
+ * @file systems.php
+ * @description Mock terminal UI ("mPad" Interface) for the Chief Systems Architect within the Aethelgard Intranet.
+ * @context Simulates a real-time data dashboard using custom CSS and font-monospace for a retro-futuristic terminal look.
+ * @architecture Static HTML/PHP template defining an immersive UI experience. Uses Bootstrap grid for layout.
+ * @maintenance Keep the 'JetBrains Mono' or similar monospaced fonts active to preserve the terminal aesthetic. Data is static but styled to look live.
+ */
 // pages/engine-room/corporate/systems.php
 // The Digital Brain of Aethelgard Holdings.
 // Managed by: Justin Miller, Chief Systems Architect.
 
+// INLINE: Set page title for the intranet dashboard
 $pageTitle = "Systems Architecture - Aethelgard Intranet";
 ?>
 
 <style>
+    /* INLINE: Theme styling for the 'mPad' terminal interface */
     /* THEME: The "mPad" Interface (Clean, Data-Driven, High Contrast) */
     .system-console {
         background-color: #0f172a; /* Deep Slate */

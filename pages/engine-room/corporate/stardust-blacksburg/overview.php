@@ -1,4 +1,18 @@
 <?php
+/**
+ * ============================================================================
+ * ARCHITECTURE & CORPORATE LORE (STARDUST BLACKSBURG):
+ * This file serves as the landing page for "The Ironwood Collective," a fictional
+ * subsidized housing initiative within the Stardust Engine lore. It utilizes a 
+ * collegiate/varsity aesthetic (Maroon & Orange) to ground the corporate narrative.
+ * 
+ * Future Maintenance:
+ * - The hero section utilizes CSS gradient overlays and relies on `$cdnBaseUrl`.
+ * - The `.property-card` hover animations respect the `prefers-reduced-motion` 
+ *   accessibility media query. Do NOT remove this.
+ * - The UI uses standard Bootstrap 5 cards and alerts.
+ * ============================================================================
+ */
 // pages/engine-room/corporate/stardust-blacksburg/overview.php
 // Context: The "Ironhead" Residential Project & Property Management.
 // Theme: "Crucible" (Maroon & Orange).
@@ -7,6 +21,7 @@
 $pageTitle = "Stardust Blacksburg - The Ironwood Collective";
 ?>
 
+<!-- ARCHITECTURE: Localized theme overrides for Varsity aesthetic -->
 <style>
     /* PAGE-SPECIFIC OVERRIDES */
     /* We use the theme variables, but enforce specific "Varsity" styling */
@@ -47,6 +62,7 @@ $pageTitle = "Stardust Blacksburg - The Ironwood Collective";
     }
 </style>
 
+<!-- ARCHITECTURE: Immersive hero block establishing the corporate identity -->
 <div class="hero-section text-center">
     <div class="container">
         <div class="mb-3">

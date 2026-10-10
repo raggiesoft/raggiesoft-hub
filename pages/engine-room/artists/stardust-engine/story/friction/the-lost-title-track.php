@@ -4,6 +4,12 @@
 // Context: The depraved lyrics sheet produced by Julian Vance.
 // Note: Contains content warning for mature themes.
 
+/*
+ * ARCHITECTURE & LORE:
+ * This file serves as a secure/gated lore entry detailing the traumatic "Friction" lyrics incident.
+ * It contains a strict content warning gate before revealing the "Redacted File" content.
+ * Built with vanilla JS for the gate mechanism to ensure broad accessibility and no external dependencies.
+ */
 $pageTitle = "The Lost Title Track: Friction - Engine Room History";
 
 $articleSchema = [
@@ -62,6 +68,7 @@ $articleSchema = [
 
 <div class="container py-5">
 
+    <!-- INLINE: Content Gate - Requires explicit user interaction (unlockContent) to view restricted lore -->
     <div id="content-gate" class="row justify-content-center min-vh-50 align-items-center">
         <div class="col-lg-8">
             <div class="card border-danger shadow-lg">
@@ -87,6 +94,7 @@ $articleSchema = [
         </div>
     </div>
 
+    <!-- INLINE: Restricted Content - Hidden by default. Reveals the specific history of the redacted lyrics sheet -->
     <div id="restricted-content" class="d-none">
         
         <div class="text-center mb-5">

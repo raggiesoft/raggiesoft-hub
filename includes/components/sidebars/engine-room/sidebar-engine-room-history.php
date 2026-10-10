@@ -1,12 +1,34 @@
 <?php
-// includes/components/sidebars/engine-room/history/sidebar-history.php
-// The Navigation Panel for the Historical Archives
+/**
+ * Engine Room - History Sidebar
+ * 
+ * ARCHITECTURAL OVERVIEW:
+ * This sidebar provides navigation for the "Historical Archives" section of the Engine Room.
+ * It utilizes Web Awesome cards (`<wa-card>`) styled heavily with inline CSS variables 
+ * and custom utilities to create a "terminal/archive" aesthetic (monospace fonts, stark 
+ * black/danger colors).
+ * 
+ * LORE CONTEXT:
+ * Designed to look like a classified internal DSP (Department of Stardust Protection) directory.
+ * 
+ * CONSTRAINTS:
+ * - Do not alter the `<wa-card>` structure or its specific slot names (`slot="header"`).
+ * - Keep the custom inline style `.w-20px` at the bottom, as it ensures icon alignment.
+ * 
+ * File Info: includes/components/sidebars/engine-room/history/sidebar-history.php
+ * The Navigation Panel for the Historical Archives
+ */
 ?>
 
 <div class="sticky-top" style="top: 100px;">
     
     <!-- DIRECTORY NAVIGATION -->
     <div class="mb-4 w-100">
+        <!-- 
+          Web Awesome Card:
+          Custom CSS properties (--body-padding, --header-padding) are used to override
+          the default shadow DOM padding for a tighter fit.
+        -->
         <wa-card class="rounded-0 border-secondary shadow-sm w-100" style="--body-padding: 0; --header-padding: 0;">
             <div slot="header" class="bg-black text-white fw-bold text-uppercase border-bottom border-danger font-monospace small px-3 py-2">
                 <i class="fa-solid fa-folder-tree me-2"></i> Archive Directory

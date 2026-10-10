@@ -1,4 +1,18 @@
 <?php
+/**
+ * ARCHITECTURE: carousel.php
+ * 
+ * Context: RaggieSoft Hub - Shared UI Components.
+ * Narrative/Purpose: A sophisticated, narrative-aware "Cinema Mode" carousel primarily used for 
+ * artist discographies (e.g., The Stardust Engine). It blends real-world metadata (Store links, DSP availability) 
+ * with in-universe narrative elements (Vault Exclusives, Seized Evidence).
+ * 
+ * Mechanics:
+ * - Fetches JSON data over HTTP with a strict timeout (`stream_context_create`) to prevent page hangs.
+ * - Processes albums to calculate narrative states like `is_seized` and `dsp_exempt`.
+ * - Implements a CSS scroll-snap carousel (no heavy JS libraries) with a fallback vanilla JS scroll function.
+ * - Integrates the `store-button.php` component for complex multi-platform routing.
+ */
 // includes/components/carousel.php
 // v3.4 - "Cinema Mode" Layout with Storefront Routing & Vault Exclusive Logic
 
@@ -59,11 +73,13 @@ if ($discographyData) {
 if (!empty($carousel_albums)):
 ?>
 
+<!-- START: Cinema Carousel Outer Container -->
 <div class="position-relative shadow-lg rounded-4 mb-5 overflow-hidden" style="background: #0a0a0a; border: 1px solid rgba(255,255,255,0.1);">
     <div id="cinemaCarousel" class="d-flex overflow-auto w-100" style="scroll-snap-type: x mandatory; scroll-behavior: smooth; scrollbar-width: none; -ms-overflow-style: none;">
         <style>#cinemaCarousel::-webkit-scrollbar { display: none; }</style>
         
         <?php foreach ($carousel_albums as $index => $album): ?>
+            <!-- START: Carousel Slide Item -->
             <div class="w-100 flex-shrink-0 position-relative d-flex align-items-center" style="scroll-snap-align: start; min-height: 500px;">
                 
                 <!-- Blurred Background -->
@@ -152,6 +168,7 @@ if (!empty($carousel_albums)):
         <?php endforeach; ?>
     </div>
     
+    <!-- START: Carousel Manual Controls -->
     <!-- Navigation Buttons -->
     <div class="d-flex justify-content-between position-absolute w-100 px-3" style="top: 50%; left: 0; transform: translateY(-50%); pointer-events: none; z-index: 10;">
         <wa-button variant="neutral" appearance="filled" class="cinema-prev shadow-lg" onclick="window.scrollCinemaCarousel(-1)" style="pointer-events: auto; border: 2px solid rgba(255,255,255,0.2);" pill>

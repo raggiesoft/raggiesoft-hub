@@ -1,7 +1,21 @@
 <?php
+/**
+ * ARCHITECTURE: header-prisms.php
+ * 
+ * Context: Engine Room Records - Fractured Prisms Navigation.
+ * Narrative/Purpose: Provides primary navigation for the "Fractured Prisms" artist hub. 
+ * Allows users to traverse between the band's main page (The Square), lore, discography, 
+ * and specific character profiles ("The Residents").
+ * 
+ * Mechanics:
+ * - Implements Web Awesome `wa-button` and `wa-dropdown` components.
+ * - Uses Bootstrap flex classes for responsive layout.
+ * - Provides a clear exit path back to the parent label hub ("Engine Room HQ").
+ */
 // includes/components/headers/engine-room/artists/fractured-prisms/header-prisms.php
 // Dedicated navigation for the Fractured Prisms artist sub-site.
 ?>
+<!-- START: Fractured Prisms Navigation Container -->
 <div class="d-flex flex-column flex-md-row align-items-stretch align-items-md-center gap-2 ms-auto py-3 py-md-0 w-100 mobile-nav-menu">
   
   
@@ -23,6 +37,7 @@
   
 
   
+  <!-- START: Character/Residents Dropdown -->
   <wa-dropdown placement="bottom-start">
     <wa-button  href="#"    slot="trigger" appearance="plain">
         <i class="fa-duotone fa-ghost me-2"></i>The Residents
@@ -49,6 +64,7 @@
   
 
   
+      <!-- START: Exit to Engine Room HQ -->
       <wa-button appearance="plain" href="/engine-room" class="">
         <i slot="start" class="fa-solid fa-arrow-turn-up me-2"></i>Engine Room HQ
       </wa-button>

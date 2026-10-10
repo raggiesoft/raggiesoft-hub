@@ -1,3 +1,21 @@
+<?php
+/**
+ * ARCHITECTURE & MAINTENANCE NOTES:
+ * 
+ * Component: Basic Runway Skeleton Template
+ * Purpose: A starting snippet for creating new horizontal scrolling runways across the application.
+ * 
+ * Strategy & Implementation:
+ * - Provides the structural HTML classes (`horizontal-scroll-wrapper`, `d-flex justify-content-between`) 
+ *   necessary to hook into the global CSS layout for swipeable card rows.
+ * - Serves purely as a copy-paste boilerplate.
+ * 
+ * Maintenance Recommendations:
+ * - Do not include this file directly via PHP. It is meant to be copied and populated with `scroll-card` elements 
+ *   and `card.php` includes.
+ */
+?>
+<!-- Runway Wrapper: Maintain bottom margin to separate stacked runways -->
 <div class="mb-5">
     <div class="d-flex justify-content-between align-items-end mb-3 px-4 px-xxl-5">
         <h3 class="h5 fw-bold text-uppercase text-secondary mb-0">

@@ -1,4 +1,16 @@
 <?php
+/**
+ * Ad Astra - The Mission
+ *
+ * This file serves as the primary hub for the "Ad Astra" narrative arc.
+ * It outlines the "Magnum Opus" mission, including vessel details, duration,
+ * the entertainment log mapped to mission days, and the lore surrounding the unmade short film.
+ *
+ * Architecture Notes:
+ * - Structured with a hero section establishing the thematic context (The Magnum Opus).
+ * - Utilizes standard Shoelace/WebAwesome components (`wa-card`, `wa-badge`, `wa-button`) for UI consistency.
+ * - Future maintenance should ensure any new narrative arcs or related content link back here or maintain the established timeline.
+ */
 // pages/engine-room/artists/stardust-engine/story/ad-astra/overview.php
 // The Hub for the Ad Astra Narrative Arc
 // Context: The "Magnum Opus" mission.

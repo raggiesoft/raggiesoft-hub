@@ -1,6 +1,22 @@
 <?php
+/**
+ * ============================================================================
+ * ARCHITECTURE & LORE ENCYCLOPEDIA (CVTA ROUTE DATA):
+ * This file contains the structural timetable data for a specific transit route
+ * (Route 85) within the fictional Coastal Virginia Transit Authority (CVTA) network.
+ * 
+ * Future Maintenance:
+ * - The data structure ($routeMeta, $schedules) MUST perfectly match the expected
+ *   schema defined in `bus-timetable.php`.
+ * - Alerts can be simple strings (defaults to 'info') or arrays specifying 'type'
+ *   ('warning', 'stop') to trigger specific UI states.
+ * - This file does NOT render HTML directly; it includes a shared component to 
+ *   ensure all routes share an identical, accessible layout.
+ * ============================================================================
+ */
 // pages/raggiesoft-books/encyclopedia/bus-systems/cvta/routes/southside/route-85.php
 
+// ARCHITECTURE: Define metadata, detours, and transfer points for the transit schedule
 $routeMeta = [
     'id' => '85',
     'name' => 'Town Point Road',
@@ -115,6 +131,7 @@ $schedules = [
 </div>
 
 <?php
+// ARCHITECTURE: Delegate rendering to the shared CVTA timetable component
 // RENDER THE COMPONENT
 include ROOT_PATH . '/includes/components/bus-service/bus-timetable.php';
 ?>

@@ -1,6 +1,22 @@
 <?php
+/**
+ * ============================================================================
+ * ARCHITECTURE & DESIGN: Default Global Footer
+ * ============================================================================
+ * ROLE: The standard site-wide footer providing overarching navigation, brand 
+ *       identity, and standard disclaimers. 
+ * 
+ * INTEGRATION: This is the fallback footer injected by `includes/footer.php` 
+ *              if a specific route does not define a custom footer override.
+ * 
+ * MAINTENANCE: Structural changes here affect the vast majority of the site.
+ *              The included Konami Code easter egg at the bottom defines the 
+ *              global default payload ("System Admin Access").
+ * ============================================================================
+ */
 // includes/components/footers/footer-default.php
 ?>
+<!-- [LAYOUT] Main Global Footer: Standard corporate branding and global sitemap -->
 <footer class="mt-auto bg-body-tertiary border-top py-5">
     <div class="container">
         <div class="row gy-4">
@@ -28,6 +44,7 @@
                 </ul>
             </div>
 
+            <!-- [UI COMPONENT] Built With: Accessibility and technology stack transparency -->
             <div class="col-lg-2 col-md-6">
                 <h6 class="fw-bold mb-3">Built With</h6>
                 <ul class="nav flex-column small">
@@ -51,6 +68,7 @@
 </footer>
 
 <?php
+// [LOGIC] Global Konami Code Payload: Triggers "System Admin Access" popup
 // Different reward for the main site!
 $konami_config = [
     'title'      => 'System Admin Access',

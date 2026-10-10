@@ -5,6 +5,12 @@
 // Motivation: The "Tyler Email" Incident, The Merch Burn, & The Credentials.
 // UPDATED: WCAG Contrast Fixes & DRY Code Cleanup
 
+/*
+ * ARCHITECTURE & LORE:
+ * This is Evidence Item #02, detailing Holly's brutal counter-attack against Omni-Global's executives.
+ * Uses intensive custom CSS for dark-mode overrides and forced-dark zones to match the tense narrative.
+ * Features inline skeuomorphic elements (emails, legal documents).
+ */
 $pageTitle = "The Autopsy: Holly Takes Control - Evidence Item #02";
 ?>
 
@@ -91,6 +97,7 @@ $pageTitle = "The Autopsy: Holly Takes Control - Evidence Item #02";
 
 <div class="container py-5">
     
+    <!-- INLINE: Page header establishing the narrative tone and context for "The Autopsy" -->
     <div class="row justify-content-center mb-5">
         <div class="col-lg-8 text-center">
             <span class="badge bg-warning text-dark rounded-pill px-3 py-2 mb-3 text-uppercase letter-spacing-1 border border-warning">
@@ -203,6 +210,7 @@ $pageTitle = "The Autopsy: Holly Takes Control - Evidence Item #02";
                         </div>
                     </div>
                     
+                    <!-- INLINE: Credential Box detailing Holly's stealth connection to the management VLAN to hijack the presentation -->
                     <div class="credential-box p-3 my-4 shadow-sm text-body-secondary bg-body-tertiary border-start border-4 border-primary">
                         <p class="mb-0 fst-italic">
                             Holly didn't ask for a cable. She opened her network settings and selected <strong>"Join Other Network..."</strong>

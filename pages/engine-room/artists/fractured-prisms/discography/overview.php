@@ -1,11 +1,24 @@
 <?php
+/**
+ * @file overview.php
+ * @description The main discography landing page for Fractured Prisms.
+ * @context Fetches the band's JSON catalog from the CDN, decodes it into albums/eras, and dynamically renders the grid of releases.
+ * @architecture 
+ *  1. Fetches albums.json via @file_get_contents.
+ *  2. Constructs a Schema.org MusicGroup JSON-LD blob for SEO.
+ *  3. Loops through each era and its albums to output Bootstrap grid cards.
+ *  4. Injects DSP links via store-button.php if IDs are present.
+ * @maintenance If the CDN JSON structure for Fractured Prisms changes, update the parsing logic in the initial PHP block and the grid loop.
+ */
 // pages/engine-room/artists/fractured-prisms/discography/overview.php
 // v1.0 - Fractured Prisms Discography Archive
 
+// INLINE: Page title and base configuration for Schema generation
 $pageTitle = "Discography Overview - Fractured Prisms";
 $bandName = "Fractured Prisms";
 $baseUrl = "https://raggiesoft.com"; // Adjust to your actual production domain
 
+// INLINE: Retrieve the master album data for Fractured Prisms from the CDN
 // Fetch the albums.json file directly from the CDN
 $jsonUrl = $cdnBaseUrl . '/engine-room-records/artists/fractured-prisms/albums.json';
 $jsonData = @file_get_contents($jsonUrl);
@@ -34,6 +47,7 @@ if ($jsonData !== false) {
     }
 }
 
+// INLINE: Compile the SEO JSON-LD data
 // Construct the final MusicGroup Schema
 $musicGroupSchema = [
     "@context" => "https://schema.org",
@@ -43,6 +57,7 @@ $musicGroupSchema = [
 ];
 ?>
 
+<!-- INLINE: Output the Schema.org JSON-LD for search engines -->
 <script type="application/ld+json">
 <?php echo json_encode($musicGroupSchema, JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT); ?>
 </script>
@@ -58,6 +73,7 @@ $musicGroupSchema = [
         </p>
     </div>
 
+    <!-- INLINE: Iterate through each defined era in the band's timeline -->
     <?php foreach ($discographyLibrary as $eraKey => $eraData): ?>
         
         <?php if (empty($eraData['albums'])) continue; ?>

@@ -1,4 +1,34 @@
 <?php
+/**
+ * ARCHITECTURAL DOCBLOCK
+ * 
+ * File: raggiesoft-hub/includes/components/footers/engine-room/artists/fractured-prisms/footer-prisms.php
+ * Path: /includes/components/footers/engine-room/artists/fractured-prisms/footer-prisms.php
+ * 
+ * CORE RESPONSIBILITY:
+ * Reusable UI Component: Artist Footer (Fractured Prisms).
+ * Renders the dedicated footer for the "Fractured Prisms" artist section under Engine Room Records.
+ * 
+ * LORE CONTEXT:
+ * - Emphasizes the "modern rock landscape" and "Maryland sanctuary" narrative.
+ * - Links to specific in-universe locations like "The Square" and "The Residents."
+ * 
+ * UI/UX & STYLING ARCHITECTURE:
+ * - Relies heavily on CSS custom properties (`--bs-bg-prism`, `--font-tech`) inherited from
+ *   the global Fractured Prisms theme configuration.
+ * - Uses dynamic image blending techniques (`mix-blend-mode`, `filter: invert()`) within the
+ *   `<style>` block to adapt the band and label logos seamlessly to both light and dark modes.
+ * - Employs Bootstrap 5 grid classes for responsive layout.
+ * 
+ * DEPENDENCIES & INCLUSIONS:
+ * - Requires `$cdnBaseUrl` to load the `band-logo.jpg` and `engine-room-records-logo.png`.
+ * - Assumes the parent wrapper applies `[data-bs-theme]` to trigger the CSS overrides.
+ * 
+ * MAINTENANCE NOTES:
+ * - The inline CSS specifically targets `.engine-room-logo` and `.prism-footer-logo` based on
+ *   theme state. Do not convert these logos to hardcoded dark/light variants; rely on the CSS
+ *   filters for dynamic theme switching.
+ */
 // includes/components/footers/engine-room/artists/fractured-prisms/footer-prisms.php
 // The dedicated footer for Fractured Prisms
 ?>

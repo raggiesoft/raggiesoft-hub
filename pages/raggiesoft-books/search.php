@@ -1,4 +1,34 @@
 <?php
+/**
+ * Ocean View Archives - Deep Search
+ *
+ * ARCHITECTURE & CONTEXT:
+ * This script provides a global search functionality across the entire literary 
+ * archive. It reads a pre-compiled JSON index (`search-index.json`) representing 
+ * all books, chapters, and lore.
+ * 
+ * Logic Flow:
+ * 1. Checks local path for `search-index.json`.
+ * 2. Falls back to the CDN if local file is missing (using a stream context for timeout).
+ * 3. Iterates through the index, performing case-insensitive matching (`stripos`) on 
+ *    metadata fields (title, chapter, book) and body content.
+ * 4. Generates a highlighted text snippet (`preg_replace`) around the first match.
+ *
+ * UI/UX ARCHITECTURE:
+ * - Employs a clean, minimalist Google-style search interface.
+ * - Uses `.ova-serif` (Playfair Display) for thematic consistency with the Archives.
+ * - Features distinct empty states ("Enter a search term", "No records found") 
+ *   utilizing Web Awesome / FontAwesome iconography.
+ * - Result cards use a hover-lift effect and CSS variables (`--search-highlight-bg`) 
+ *   for highlighting matched text segments.
+ *
+ * MAINTENANCE NOTES:
+ * - The `search-index.json` must be regenerated whenever new Markdown chapters are pushed.
+ * - The `$cdnBaseUrl` fallback ensures production functionality if the local repo is missing.
+ * - Current snippet generation is limited to 150 characters around the first match to 
+ *   prevent memory/layout overflow.
+ */
+
 // pages/raggiesoft-books/search.php
 
 $query = isset($_GET['q']) ? trim($_GET['q']) : '';

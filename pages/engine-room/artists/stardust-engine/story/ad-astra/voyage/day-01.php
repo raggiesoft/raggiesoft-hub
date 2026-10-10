@@ -1,4 +1,14 @@
 <?php
+/**
+ * Day 01: Ignition - Ad Astra Log
+ *
+ * This file represents the first entry in the Ad Astra flight log, detailing the high-G atmospheric exit.
+ *
+ * Architecture Notes:
+ * - Integrates narrative text with thematic UI components like a mocked "Audio Log" player and "Sensory Data" readouts.
+ * - Uses the `narrative-stepper.php` component for sequential navigation through the flight log days.
+ * - When adding new content, ensure the narrative voice and data points align with the established lore.
+ */
 // pages/engine-room/artists/stardust-engine/story/ad-astra/voyage/day-01.php
 // Log Entry: Day 01
 // Context: The physical reality of leaving Earth.

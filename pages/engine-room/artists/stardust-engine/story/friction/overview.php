@@ -1,4 +1,26 @@
 <?php
+/**
+ * ============================================================================
+ * ARCHITECTURE & MAINTENANCE NOTES
+ * ============================================================================
+ * File: pages/engine-room/artists/stardust-engine/story/friction/overview.php
+ * 
+ * 1. Lore Context:
+ *    - The master narrative archive detailing the 1992 "Friction Catastrophe."
+ *    - Chronicles the entire timeline of the fatal photo shoot: Vance's assumption, 
+ *      the "Dirty Mirror" incident, and the final "Shot 12" demand that triggered 
+ *      Ryan's defensive breakdown.
+ * 
+ * 2. Component Architecture:
+ *    - Dynamically generates a Schema.org `Article` JSON-LD object for SEO indexing.
+ *    - UI relies on Bootstrap 5 grids acting as a foundation for Web Awesome 
+ *      components (`<wa-card>`, `<wa-badge>`, `<wa-button>`) to format the exhibits.
+ * 
+ * 3. Maintenance Rule:
+ *    - DO NOT alter the structural HTML grid or the Schema.org JSON logic.
+ *    - Maintain the precise in-universe dates (e.g., 1992) for narrative consistency.
+ * ============================================================================
+ */
 // pages/engine-room/artists/stardust-engine/story/friction/overview.php
 // The Friction Catastrophe Archive
 // Context: 1992. The "Cold War" turns hot.

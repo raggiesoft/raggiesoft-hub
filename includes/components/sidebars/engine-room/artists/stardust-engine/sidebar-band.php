@@ -1,3 +1,22 @@
+<?php
+/**
+ * ============================================================================
+ * ARCHITECTURE & DESIGN: Stardust Engine - The Band Sidebar
+ * ============================================================================
+ * ROLE: The central character navigation hub for the Stardust Engine lore. 
+ *       Provides direct links to individual band member profiles (the O'Connells 
+ *       and Wrights) and acts as an index for major historical story arcs.
+ * 
+ * INTEGRATION: Built entirely using Web Awesome (`<wa-button>`) to ensure
+ *              consistent touch targets and accessibility across the lore pages.
+ * 
+ * MAINTENANCE: Keep the character list synchronized if new members are added 
+ *              to the fictional roster. The "History & Lore" links must exactly
+ *              match the routing definitions in the Elara Router JSON config.
+ * ============================================================================
+ */
+?>
+<!-- [LAYOUT] Character Roster Navigation: Links to individual band member biographies -->
 <h5 class="pt-3 pb-2 mb-3 border-bottom">
     <i slot="start" class="fa-duotone fa-users"></i> The Band
 </h5>
@@ -34,6 +53,7 @@
   
 </div>
 
+<!-- [LAYOUT] Narrative Index: Cross-links to major story arcs and the full timeline -->
 <h6 class="pt-3 pb-2 mb-3 border-bottom mt-4">
     <i slot="start" class="fa-duotone fa-book-open"></i> History & Lore
 </h6>

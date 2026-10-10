@@ -1,3 +1,35 @@
+<?php
+/**
+ * ARCHITECTURAL DOCBLOCK
+ * 
+ * File: raggiesoft-hub/includes/components/modals/encyclopedia-modal.php
+ * Path: /includes/components/modals/encyclopedia-modal.php
+ * 
+ * CORE RESPONSIBILITY:
+ * Reusable UI Component: Encyclopedia Modal.
+ * Renders an empty Web Awesome `<wa-dialog>` scaffold designed to be populated 
+ * asynchronously via AJAX/JavaScript when a user clicks an in-universe lore term.
+ * 
+ * LORE CONTEXT:
+ * - Powers the interactive "Stardust Encyclopedia" feature across narrative pages.
+ * 
+ * UI/UX & STYLING ARCHITECTURE:
+ * - Employs `<wa-dialog>` for the modal container.
+ * - Includes a default `<wa-spinner>` loading state while content is fetched.
+ * - Features a dynamic "Open Full Entry" footer link for deep-diving into specific lore.
+ * 
+ * DEPENDENCIES & INCLUSIONS:
+ * - Relies entirely on an external JavaScript controller (`encyclopedia.js`) to fetch
+ *   content and inject it into `#encyclopedia-modal-body`.
+ * - Requires Web Awesome and FontAwesome.
+ * 
+ * MAINTENANCE NOTES:
+ * - Do not alter the IDs (`#encyclopedia-modal`, `#encyclopedia-modal-title`, 
+ *   `#encyclopedia-modal-body`, `#encyclopedia-modal-read-more`) without simultaneously
+ *   updating the `encyclopedia.js` controller.
+ * - This file is a static HTML partial executing within a PHP environment.
+ */
+?>
 <!-- Encyclopedia Modal -->
 <wa-dialog id="encyclopedia-modal" class="encyclopedia-modal" label="Stardust Encyclopedia" light-dismiss>
     <!-- Header override for custom themes -->

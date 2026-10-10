@@ -1,4 +1,22 @@
 <?php 
+/**
+ * RaggieSoft Hub - Book Viewer Header
+ * 
+ * ARCHITECTURAL OVERVIEW:
+ * This component serves as the navigation bar for the book reader interface (e.g., Aethel Saga).
+ * It dynamically generates navigation links (Prev, Next, Up) based on an external JSON index.
+ * 
+ * LOGIC & CONSTRAINTS:
+ * - Depends on `nav-logic.php` to fetch and parse the JSON book index.
+ * - Variables like `$bookJsonUrl` must be set in the parent scope (e.g., `index.php`) before
+ *   this file is included.
+ * - `extract($navData)` injects variables (`$prevLink`, `$nextLink`, `$upLink`) into the local scope.
+ *   Ensure `nav-logic.php` always returns these array keys to prevent undefined variable errors.
+ * - Uses Web Awesome `<wa-dropdown>` components for the navigation menus.
+ * 
+ * File Info: includes/components/headers/header-book.php
+ */
+
 // Load the logic
 require_once __DIR__ . '/../../utils/nav-logic.php'; 
 
@@ -39,6 +57,10 @@ extract($navData);
         <i slot="end" class="fa-solid fa-circle-caret-down ms-2 opacity-50" aria-hidden="true"></i>
     </wa-button>
     <wa-menu>
+      <!-- 
+        Dynamic Book Navigation:
+        These values are extracted from the `$navData` array returned by `getBookNavigation()`.
+      -->
       <wa-dropdown-item value="<?php echo $prevLink; ?>">
            <i class="fa-duotone fa-arrow-left me-2"></i>Back
         </wa-dropdown-item>

@@ -3,6 +3,26 @@
 // Reusable component for rendering transit schedules.
 // Expects: $routeMeta, $schedules
 
+/**
+ * ARCHITECTURE & MAINTENANCE NOTES:
+ * 
+ * Component: Universal Bus Transit Timetable
+ * Purpose: Renders complex transit schedules, service alerts, and transfer points from injected metadata and schedule arrays.
+ * 
+ * Strategy & Implementation:
+ * - Completely agnostic to specific transit routes; relies entirely on the structure of `$routeMeta` and `$schedules`.
+ * - Employs a custom `formatTransitTime` helper function to normalize and style raw time strings (AM/PM formatting).
+ * - Utilizes Bootstrap Nav Tabs to separate schedules by day (e.g., Weekday, Saturday, Sunday) if multiple exist.
+ * - Analyzes service alerts to determine the visual "severity level" (Info, Warning, Stop) and themes the component accordingly.
+ * 
+ * Maintenance Recommendations:
+ * - If the upstream `$schedules` array structure changes (e.g., adding a new direction other than 'inbound'/'outbound'), 
+ *   the rendering loop inside the tab content must be updated.
+ * - Ensure `formatTransitTime` remains resilient against malformed data (e.g., empty strings, nulls, invalid formats) 
+ *   as transit GTFS feeds can be notoriously dirty.
+ */
+
+// Helper to parse and stylize dirty transit time strings (AM/PM visual differentiation)
 if (!function_exists('formatTransitTime')) {
     function formatTransitTime($timeStr) {
         $timeStr = trim($timeStr);
@@ -42,6 +62,7 @@ if (!function_exists('formatTransitTime')) {
     <div class="row g-4 mb-5">
         <?php if (!empty($routeMeta['alerts'])): 
             // 1. Severity Scanner: Determine main card styling based on highest alert level
+            // Aggregates alert types to ensure the UI visually communicates the most critical issue
             $severityLevel = 1; // 1 = info, 2 = warning, 3 = stop
             $formattedAlerts = [];
             

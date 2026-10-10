@@ -3,6 +3,25 @@
 // Header: Ad Astra Mission Control
 // Theme: HUD / Sci-Fi / High Contrast
 // CONTEXT: The navigation HUD for the spaceship simulation.
+
+/**
+ * ARCHITECTURE & MAINTENANCE NOTES:
+ * 
+ * Component: Ad Astra Mission Control Header
+ * Purpose: Provides thematic navigation (HUD-style) for the "Ad Astra" story simulation.
+ * 
+ * Strategy & Implementation:
+ * - Extremely specific styling (`var(--astra-text)`) applied directly to Web Awesome components 
+ *   to enforce the high-contrast sci-fi aesthetic.
+ * - Relies heavily on FontAwesome solid icons (`fa-solid`) rather than duotone to emulate dashboard instrumentation.
+ * - Nested dropdown organizes the narrative flight logs into chronological phases.
+ * 
+ * Maintenance Recommendations:
+ * - Keep CSS variable overrides inline or scoped specifically to the `ad-astra` wrapper 
+ *   to prevent the HUD styling from bleeding into the global site.
+ * - When adding new flight log days, place them strictly within their respective Phase `<divs>` 
+ *   and verify the URL structure aligns with the physical file paths.
+ */
 ?>
 <div class="d-flex flex-column flex-md-row align-items-stretch align-items-md-center gap-2 ms-auto py-3 py-md-0 w-100 mobile-nav-menu">
   
@@ -13,12 +32,14 @@
   
 
   
+  <!-- Flight Logs Menu: Hardcoded HUD coloring overrides standard theme variables -->
   <wa-dropdown placement="bottom-start">
     <wa-button class="nav-link  text-uppercase" href="#"    style="color: var(--astra-text) !important;" slot="trigger" appearance="plain">
       <i class="fa-duotone fa-book-sparkles me-2"></i>Flight Logs
         <i slot="end" class="fa-solid fa-circle-caret-down ms-2 opacity-50" aria-hidden="true"></i>
     </wa-button>
     <wa-menu>
+      <!-- Phase I: Initial launch sequence logs -->
       <div class="px-3 py-2 small text-uppercase  fw-bold text-uppercase ">Phase I: Departure</div>
       <wa-dropdown-item value="/engine-room/artists/stardust-engine/story/ad-astra/voyage/day-01">
             <i class="fa-solid fa-shuttle-space me-2"></i>Day 01: Ignition

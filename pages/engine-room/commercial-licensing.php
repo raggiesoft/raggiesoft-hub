@@ -1,4 +1,19 @@
 <?php
+/**
+ * Engine Room Records - Commercial Licensing Portal
+ *
+ * This file outlines the B2B licensing policies and clearance categories for Engine Room Records.
+ * It serves as an informative intake page for commercial synchronization requests.
+ *
+ * Architecture Notes:
+ * - Purely static HTML/PHP presentation relying on Bootstrap 5 grid structures.
+ * - Uses specific warning colors (amber/yellow) to denote legal and business contexts.
+ * - Integrates FontAwesome iconography extensively to differentiate clearance tiers.
+ *
+ * Maintainer Note: Keep the transparency notice regarding non-exclusive licensing prominent. 
+ * Any changes to legal terms should be reflected here and reviewed for compliance.
+ */
+
 // pages/engine-room/commercial-licensing.php
 // The B2B / Legal wing of Engine Room Records.
 

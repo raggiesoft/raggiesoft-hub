@@ -1,4 +1,18 @@
 <?php 
+/**
+ * ARCHITECTURE: zenith-theme.php
+ * 
+ * Context: RaggieSoft Hub - Shared CSS Theme.
+ * Narrative/Purpose: Defines the "Zenith Report" visual identity. The Zenith Report is presented 
+ * as a newspaper/dossier-style layout. This theme provides adaptive styling, including a subtle 
+ * physical "tilt" effect to simulate paper, distinct serif typography for a journalistic feel, 
+ * and robust dark mode support to ensure readability across all environments.
+ * 
+ * Mechanics:
+ * - Outputs raw CSS within a `<style>` block to be included in the head or body.
+ * - Uses standard Bootstrap 5 data-bs-theme attributes for dark mode overrides.
+ * - Respects prefers-reduced-motion media query for accessibility.
+ */
 // includes/components/styles/zenith-theme.php 
 // Shared CSS for all Zenith Report pages
 ?>

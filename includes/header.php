@@ -3,7 +3,30 @@
 // v7.2.0 - RaggieSoft Production (SEO Schema Engine Active)
 // Updated: Added Animated Hamburger Menu & JSON-LD Structured Data
 
+/**
+ * ARCHITECTURE & MAINTENANCE NOTES:
+ * 
+ * Component: Global Master Header
+ * Purpose: The foundational HTML `<head>` and top navigation shell for all RaggieSoft applications.
+ * 
+ * Strategy & Implementation:
+ * - Employs extensive schema.org JSON-LD generation based on dynamic `$pageConfig` parameters to support SEO and 
+ *   narrative metadata (MusicGroup, MusicAlbum, CreativeWorkSequence).
+ * - Implements a robust "Loader" overlay that visually masks network latency and hydrates seamlessly into the 
+ *   Elara SPA (Single Page Application) lifecycle.
+ * - Handles theme resolution (`dark`, `light`, `corporate`, `ad-astra`) and dynamically builds the CSS queue 
+ *   to ensure Web Awesome and custom grid variables are loaded sequentially.
+ * 
+ * Maintenance Recommendations:
+ * - The Hamburger Menu animation is driven by a vanilla JS fallback integrated within the HTML. If Web Awesome 
+ *   introduces a native drawer component that matches our needs, this custom logic should be refactored.
+ * - Do NOT remove the `<script type="module" src="...webawesome.loader.js">` block; it is required for all `<wa-*>` 
+ *   components to function.
+ * - Be extremely cautious when modifying the JSON-LD schema blocks, as Google Search Console will reject malformed outputs.
+ */
+
 // 1. Resolve Context
+// Determine the current site identity and theme, falling back to 'raggiesoft' core defaults
 $site  = $currentSite ?? 'raggiesoft';
 $theme = $currentPageTheme ?? $site;
 
@@ -166,6 +189,7 @@ if (isset($customPageAssets) && is_array($customPageAssets)) {
     }
     
     // 3. LORE / STORY PAGES & SEQUENCES
+    // Builds structured narrative sequences allowing search engines to index serialized fictional chapters
     elseif (isset($pageConfig['schemaType']) && ($pageConfig['schemaType'] === 'CreativeWork' || $pageConfig['schemaType'] === 'CreativeWorkSequence')) {
          $schema = [
             "@context" => "https://schema.org",

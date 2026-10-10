@@ -3,10 +3,32 @@ ob_start();
 // RaggieSoft Elara Router v5.7
 // Fix v5.7: Added Recursive Route Discovery (Subfolders) & JSON Error Logging
 
+/**
+ * ARCHITECTURE & MAINTENANCE NOTES:
+ * 
+ * Component: Elara Router (Core Application Engine)
+ * Purpose: The central front-controller and routing engine for the RaggieSoft Hub.
+ * 
+ * Strategy & Implementation:
+ * - Uses a recursive JSON discovery system (scanning `data/routes/`) to build a master route table dynamically.
+ * - Implements a "DRY" inheritance model where a `common` config block cascades settings down to all sibling routes within a file.
+ * - Features "Smart Router Logic": If a route isn't explicitly defined, it attempts to resolve the view via filesystem 
+ *   auto-discovery (`pages/path/to/view.php`) or falls back to the dynamic narrative reader (`Katie.json`).
+ * - Injects the global Header, resolves Sidebar visibility, buffers the View content, and caps with the Global Footer.
+ * 
+ * Maintenance Recommendations:
+ * - Performance Note: The recursive `RecursiveDirectoryIterator` runs on every request. If route files grow significantly, 
+ *   consider implementing a cached (compiled) routing table in production.
+ * - Do NOT remove `ob_start()` and `ob_end_flush()`. They are necessary to prevent header already sent errors and allow 
+ *   for clean error handling.
+ * - Ensure the `elara-layout-wrapper` ID remains intact, as the client-side SPA (`elara-spa.js`) specifically targets 
+ *   this element for DOM replacement during PJAX navigations.
+ */
+
 define('ROOT_PATH', dirname(__DIR__));
 $request_uri = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
 
-// Normalize trailing slashes
+// Normalize trailing slashes to ensure consistent key matching against the JSON route table
 if (strlen($request_uri) > 1) {
     $request_uri = rtrim($request_uri, '/');
 }
@@ -184,6 +206,7 @@ if (!isset($pageConfig['view'])) {
 }
 
 // C. Sidebar Intelligence
+// Resolves structural layout: Determines if a sidebar should be rendered based on configuration maps or context
 if (isset($pageConfig['view'])) {
     $sidebarMap = $settings['sidebarMap'] ?? [];
     

@@ -1,9 +1,18 @@
 <?php
+/**
+ * @file overview.php
+ * @description The main landing page for "The Stardust Engine" artist profile.
+ * @context Serves as the central hub for the band, linking to their lore, discography, and official storefront. Includes the AI Transparency disclaimer.
+ * @architecture Standalone PHP page utilizing Bootstrap grid and custom CSS animations (.pulse-icon). Fetches the `albums.json` from the CDN to potentially populate dynamic elements.
+ * @maintenance The DSP links (Spotify, Apple, etc.) in the `store-button.php` include must be updated if the band's official URIs change. Keep the transparency notice prominent.
+ */
 // pages/engine-room/artists/stardust-engine/overview.php
 // The Band's "Home" Page
 
+// INLINE: Define the root URL path for the Stardust Engine sub-site
 $root = '/engine-room/artists/stardust-engine';
 
+// INLINE: Retrieve the master album data to dynamically generate carousels or grids
 // Fetch and decode the Albums JSON
 $jsonUrl = $cdnBaseUrl . '/engine-room-records/artists/the-stardust-engine/albums.json';
 $jsonData = @file_get_contents($jsonUrl); // @ suppresses warnings if the fetch fails
@@ -21,6 +30,7 @@ if ($eras) {
 }
 ?>
 
+<!-- INLINE: Hero section featuring the band's logo and aesthetic background -->
 <div class="border-bottom border-primary border-opacity-50" style="
     position: relative;
     background-image: linear-gradient(rgba(13, 6, 26, 0.7), rgba(13, 6, 26, 0.7)), 

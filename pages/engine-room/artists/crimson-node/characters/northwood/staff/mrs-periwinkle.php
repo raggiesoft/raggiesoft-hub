@@ -1,6 +1,21 @@
 <?php
+/**
+ * Crimson Node - Mrs. Periwinkle Profile
+ *
+ * This file renders the character biography for Mrs. Periwinkle, the Head Librarian 
+ * at Northwood High School. It details her strict academic domain and psychological warfare.
+ *
+ * Architecture Notes:
+ * - Designed as an HTML fragment to be included dynamically within a parent layout template.
+ * - Uses a two-column Bootstrap 5 layout (`col-lg-5` for the portrait card, `col-lg-7` for content).
+ * - Accented with a danger/red (`#dc3545`) color scheme matching her terror aesthetic.
+ *
+ * Maintainer Note: This is an include fragment. Do not wrap in `<html>` or `<body>` tags. 
+ * Keep the iconography (FontAwesome `fa-duotone`) and structure consistent with other staff pages.
+ */
 // pages/engine-room/artists/crimson-node/characters/northwood/mrs-periwinkle.php
 ?>
+<!-- PROFILE FRAGMENT -->
 <div class="container py-5">
     <div class="row mb-5">
         <div class="col-12 text-center">

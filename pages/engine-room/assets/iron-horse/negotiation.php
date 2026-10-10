@@ -1,4 +1,15 @@
 <?php
+/**
+ * Lore: The Sainte-Claire Protocol (Negotiation)
+ *
+ * This file details the origin story of "The Iron Horse," focusing on the band's negotiation
+ * with Sainte-Claire Coachworks. It highlights their practical approach and respect for the local culture (Québécois).
+ *
+ * Architecture Notes:
+ * - Uses a narrative format mixed with UI elements like `alert-success` and `card` to highlight key outcomes and "flash forwards".
+ * - Maintains continuity with the band's ethos of independence and prioritizing accessibility (the lift) over luxury (the jacuzzi).
+ * - When expanding on this lore, ensure the bilingual dialogue and characterizations remain consistent.
+ */
 // pages/engine-room/assets/iron-horse/negotiation.php
 // The Origin Story: Commissioning "The Iron Horse"
 // Location: Sainte-Claire Coachworks // Québec, Canada

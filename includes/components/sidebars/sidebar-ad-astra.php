@@ -1,8 +1,29 @@
+<?php
+/**
+ * Stardust Engine - Ad Astra Sidebar
+ * 
+ * ARCHITECTURAL OVERVIEW:
+ * This sidebar component is dedicated to the "Ad Astra" specific narrative section.
+ * It provides navigational links to the mission overview, the maiden voyage, and 
+ * related audio transmissions.
+ * 
+ * LORE CONTEXT:
+ * "Ad Astra" is a space-faring mission within the Stardust Engine lore. The terminology
+ * (Mission Control, Transmission) reflects this theme.
+ * 
+ * CONSTRAINTS & MAINTENANCE:
+ * - Utilizes Web Awesome (`<wa-button>`) for interactive navigation. Do not alter
+ *   the `appearance="plain"` or `slot="start"` attributes.
+ * - This file does not contain a PHP opening tag initially; this block is intentionally
+ *   self-contained at the top.
+ */
+?>
 <h5 class="pt-3 pb-2 mb-3 border-bottom text-info">
     <i slot="start" class="fa-duotone fa-rocket-launch"></i> Mission Control
 </h5>
 <div class="d-flex flex-column gap-1">
   
+    <!-- Core Mission Links -->
     <wa-button appearance="plain" href="/engine-room/artists/stardust-engine/lore/ad-astra" class="text-body w-100 text-start justify-content-start" style="text-align: left;">
       <i slot="start" class="fa-duotone fa-radar me-2"></i> Mission Overview
     </wa-button>

@@ -1,7 +1,15 @@
 <?php
+/**
+ * @file the-pelletier-twins.php
+ * @description Unified character profile for Elise & Elodie Pelletier (Crimson Node lore).
+ * @context Defines the lore for the "Honorary Flock" members, explaining their biological reality (conjoined twins) and their integration into the sanctuary.
+ * @architecture Full standalone page template using Bootstrap grid. It defines a $pageTitle.
+ * @maintenance Keep the lore consistent with the individual profiles. Update HTML content directly.
+ */
 // pages/engine-room/artists/crimson-node/band/the-pelletier-twins.php
 // The unified profile for the Honorary Flock members.
 
+// INLINE: Define page title for the global layout wrapper
 $pageTitle = "Elise & Elodie Pelletier - Crimson Node";
 ?>
 
@@ -17,6 +25,7 @@ $pageTitle = "Elise & Elodie Pelletier - Crimson Node";
     </div>
 
     <div class="row">
+        <!-- INLINE: Sidebar with portrait and individual data cards for each twin -->
         <!-- Quick Stats Sidebar Area -->
         <div class="col-lg-4 mb-4 mb-lg-0">
             <!-- Portrait Image -->
@@ -62,6 +71,7 @@ $pageTitle = "Elise & Elodie Pelletier - Crimson Node";
             </div>
         </div>
 
+        <!-- INLINE: Main biography sections detailing their shared lore and integration -->
         <!-- Main Biography Content -->
         <div class="col-lg-8">
             <div class="mb-5">

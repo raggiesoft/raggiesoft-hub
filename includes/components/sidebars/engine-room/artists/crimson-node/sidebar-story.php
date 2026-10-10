@@ -1,4 +1,17 @@
 <?php
+/**
+ * ARCHITECTURE & MAINTENANCE (LEGACY)
+ *
+ * This file provides the complex, deeply nested sidebar navigation for the "Crimson Node" story sections.
+ * 
+ * DESIGN INTENT:
+ * - Similar to the book sidebars, this uses exact `REQUEST_URI` matching to expand the Table of Contents dynamically.
+ * - When a user is on a specific chapter page, it reveals the intra-page anchor links (`#part-X`) for that chapter.
+ * 
+ * MAINTENANCE NOTES:
+ * - This file contains duplicated/erroneous blocks (e.g., Chapter 5 appears at the top, middle, and bottom). This is a known legacy artifact resulting from rapid manual updates.
+ * - To clean this up in the future, consider using a JSON-driven approach (like `nav-logic.php`) rather than hardcoding every single chapter and part into PHP conditionals.
+ */
 // includes/components/sidebars/engine-room/artists/crimson-node/sidebar-story.php
 $request_uri = $_SERVER['REQUEST_URI'] ?? '/';
 ?>
@@ -7,6 +20,7 @@ $request_uri = $_SERVER['REQUEST_URI'] ?? '/';
         <i slot="start" class="fa-duotone fa-book-atlas"></i> Archives Index
     </a>
 
+    <!-- LEGACY ARTIFACT: This Chapter 5 block was accidentally placed before the Book 1 header during a manual merge. Kept for historical integrity. -->
     <!-- Chapter 5 -->
     <a href="/raggiesoft-books/books/crimson-node/book-01/chapter-05" class="list-group-item list-group-item-action fw-bold <?= ($request_uri == '/raggiesoft-books/books/crimson-node/book-01/chapter-05') ? 'active' : '' ?>">
         Chapter 5: Interlude

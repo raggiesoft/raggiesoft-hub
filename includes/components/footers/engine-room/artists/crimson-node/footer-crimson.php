@@ -1,5 +1,36 @@
 <?php
-// includes/components/footers/engine-room/artists/crimson-node/footer-crimson.php
+/**
+ * ARCHITECTURAL DOCBLOCK
+ * 
+ * File: raggiesoft-hub/includes/components/footers/engine-room/artists/crimson-node/footer-crimson.php
+ * Path: /includes/components/footers/engine-room/artists/crimson-node/footer-crimson.php
+ * 
+ * CORE RESPONSIBILITY:
+ * Reusable UI Component: Artist Footer (Crimson Node).
+ * Renders the dedicated footer for the "Crimson Node" artist section under Engine Room Records.
+ * 
+ * LORE CONTEXT:
+ * - Highlights the collaborative 1980s pop/rock and synth-prog project engineered within
+ *   the "Albemarle County Kids House."
+ * - Injects a custom Konami easter egg tailored to "Matt" (a character/persona linked to the project).
+ * 
+ * UI/UX & STYLING ARCHITECTURE:
+ * - Utilizes a standard Bootstrap 5 footer layout (`.bg-body-tertiary`).
+ * - Employs FontAwesome icons (`fa-waveform-lines`, `fa-location-dot`) for thematic branding.
+ * - Uses responsive typography and spacing utilities to organize navigation, management, and
+ *   social media (Listen) links.
+ * 
+ * DEPENDENCIES & INCLUSIONS:
+ * - Includes the generic `/includes/components/easter-eggs/konami.php` component.
+ * - Overrides the default Konami config with a Crimson Node specific payload (`$konami_config`)
+ *   simulating a "Vanguard LogicPad" with bandwidth throttling logic.
+ * 
+ * MAINTENANCE NOTES:
+ * - The social media links ("Listen" column) currently use placeholder hashes (`#`) and a
+ *   "Coming Soon" title attribute. Update these when actual external DSP links are available.
+ * - The `$konami_config` is intentionally hardcoded to provide a unique response distinct from
+ *   the global site easter egg.
+ */
 ?>
 <footer class="mt-auto bg-body-tertiary border-top py-5">
     <div class="container">

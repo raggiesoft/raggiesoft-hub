@@ -1,4 +1,17 @@
 <?php
+/**
+ * ARCHITECTURE: header-story.php
+ * 
+ * Context: Engine Room Records - Crimson Node "Story Mode" Header.
+ * Narrative/Purpose: A specialized, distraction-free header used specifically when reading 
+ * Crimson Node narrative chapters. It acts like a media player or book reader, providing 
+ * 'Previous' and 'Next' chapter navigation instead of standard site navigation.
+ * 
+ * Mechanics:
+ * - Dynamically calculates `prevLink` and `nextLink` based on the current chapter URI.
+ * - Disables navigation buttons when at the beginning or end of the available story sequence.
+ * - Includes quick escapes back to the main Node or the Archives index.
+ */
 // includes/components/headers/engine-room/artists/crimson-node/header-story.php
 // Custom Header for The Archives (Story Mode)
 
@@ -28,6 +41,7 @@ if ($request_uri === '/engine-room/artists/crimson-node/story/chapter-01') {
 }
 ?>
 
+<!-- START: Story Mode Navigation Container -->
 <div class="d-flex flex-column flex-md-row align-items-stretch align-items-md-center gap-2 ms-auto py-3 py-md-0 w-100 mobile-nav-menu">
   
   
@@ -47,6 +61,7 @@ if ($request_uri === '/engine-room/artists/crimson-node/story/chapter-01') {
 
   <li class="nav-item border-start border-secondary mx-2 d-none d-md-block" style="height: 24px;">
 
+  <!-- START: Chapter Playback Controls -->
   <!-- Playback Controls -->
   
     <wa-button appearance="plain" href="<?= $prevLink ?>" class="<?= $prevDisabled ?>">">

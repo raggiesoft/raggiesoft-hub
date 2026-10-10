@@ -1,3 +1,28 @@
+<?php
+/**
+ * RaggieSoft - AI & The Creative Process (Transparency Disclaimer)
+ *
+ * ARCHITECTURE & CONTEXT:
+ * This page acts as the legally/ethically required disclosure detailing the collaborative 
+ * workflow between Michael (Human) and Generative AI (Gemini, Suno). 
+ * It breaks down the responsibilities into "The Writer", "The Co-Writer", and "The Studio" 
+ * to provide granular transparency into the creative process.
+ *
+ * UI/UX ARCHITECTURE:
+ * - This is an HTML partial injected into the global layout via Elara CMS.
+ * - Employs a three-column grid (`col-md-4`) utilizing Web Awesome (`<wa-card>`) components 
+ *   for structured, accessible visual hierarchy.
+ * - Uses distinct thematic colors (Success/Green for Human, Primary/Blue for Code, 
+ *   Warning/Yellow for Audio) to visually segregate responsibilities.
+ * - Includes a dedicated "Prompt Engineering" section detailing specific methodologies 
+ *   (e.g., phonetic spelling, avoiding copyrighted triggers) to establish legitimacy.
+ *
+ * MAINTENANCE NOTES:
+ * - Do NOT alter the Web Awesome `<wa-card>` structures or `slot="image"` bindings.
+ * - If the AI toolchain changes (e.g., switching from Suno to Udio), update the copy 
+ *   accordingly to maintain accurate transparency.
+ */
+?>
 <div class="container py-5">
     <div class="row justify-content-center">
         <div class="col-lg-12">

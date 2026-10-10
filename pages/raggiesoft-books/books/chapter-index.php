@@ -1,4 +1,26 @@
 <?php
+/**
+ * RaggieSoft Books - Single Chapter TOC (Mini-TOC)
+ *
+ * ARCHITECTURE & CONTEXT:
+ * This script provides a granular, focused view of a single chapter's "Parts" (scenes).
+ * It relies on global variables (`$katie`, `$bIndex`, `$cIndex`, `$seriesSlug`) populated
+ * by the upstream router/parser to extract exactly the slice of the JSON manifest 
+ * needed for this specific chapter.
+ *
+ * UI/UX ARCHITECTURE:
+ * - Employs a clean, minimalist layout to reduce cognitive load compared to the full 
+ *   Series TOC.
+ * - Uses Bootstrap 5 cards to containerize the part links.
+ * - Integrates Web Awesome (`<wa-icon name="file-lines">`) for distinct visual cues.
+ * - Features a prominent "Back to Book" button utilizing `$bookUrl` for easy navigation 
+ *   up the hierarchy.
+ *
+ * MAINTENANCE NOTES:
+ * - This file is entirely dependent on the global state set by the Elara router.
+ * - It strips `.md` extensions from file paths to generate clean SEO-friendly URLs.
+ */
+
 // pages/raggiesoft-books/books/chapter-index.php
 // Mini TOC for a single Chapter
 

@@ -1,4 +1,20 @@
 <?php
+/**
+ * ============================================================================
+ * ARCHITECTURE & AETHEL SAGA VIEWER:
+ * This file acts as the primary reading interface for individual scenes within the
+ * Aethel Saga. It intercepts the routed context, fetches the raw Markdown from the CDN,
+ * parses it into HTML, and provides previous/next navigation controls.
+ * 
+ * Future Maintenance:
+ * - `parseMarkdown()` is a custom, lightweight parser specifically tailored for
+ *   the simplified formatting used in these narrative files. Do NOT replace it with
+ *   a heavy library unless structural requirements change significantly.
+ * - Ensure the `$nav` logic correctly resolves Edge Cases (first chapter, last chapter).
+ * - The JavaScript at the bottom ensures the mobile TOC drawer functions correctly
+ *   within the Web Awesome UI framework.
+ * ============================================================================
+ */
 // 1. Determine Context from Router Config
 // $pageConfig['currentContext'] is passed from index.php
 $bookId = $pageConfig['currentContext'][0] ?? '';
@@ -8,6 +24,7 @@ $sceneId = $pageConfig['currentContext'][3] ?? '';
 
 // 2. Locate the Asset
 // URL: .../content/{book}/{chapter}/{part}/{scene}.md
+// ARCHITECTURE: Construct precise CDN path based on active routing context
 $mdUrl = $cdnBaseUrl . "/aethel/content/{$bookId}/{$chapId}/{$partId}/{$sceneId}.md";
 $rawMarkdown = @file_get_contents($mdUrl);
 
@@ -17,6 +34,7 @@ if ($rawMarkdown === false) {
 }
 
 // 3. Simple Markdown Parser
+// ARCHITECTURE: Lightweight, bespoke markdown parser optimized for narrative prose
 function parseMarkdown($text) {
     // Remove H1 headers (we handle title in PHP)
     $text = preg_replace('/^# (.*)$/m', '', $text); 
@@ -73,6 +91,7 @@ function cleanSlug($slug, $prefixToRemove) {
         <div class="d-flex justify-content-between mt-5 pt-4 border-top border-secondary">
              <?php 
                 require_once ROOT_PATH . '/includes/utils/nav-logic.php';
+                // ARCHITECTURE: Calculate adjacent nodes for pagination controls
                 $nav = getBookNavigation($pageConfig['bookJsonUrl']);
              ?>
              

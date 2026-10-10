@@ -1,12 +1,42 @@
 <?php
+/**
+ * Stardust Engine - Discography Template: 1997 Hard Reset
+ * 
+ * ARCHITECTURAL OVERVIEW:
+ * This template renders the album detail page for the double-album "Hard Reset" (1997).
+ * It features the album's dual nature (Disc 1: Rock, Disc 2: Ambient/Prog) and highlights
+ * key lore elements like the "$13.99 Retail War".
+ * 
+ * LAYOUT STRUCTURE:
+ * - Uses Bootstrap 5 container and grid system.
+ * - Header Row: Displays the album artwork (via shared component) and introductory text.
+ * - Tracklist Downloader Component: Included to handle audio playback or downloading.
+ * - Disc 1 & Disc 2 Liner Notes: Uses stylized list-group items to describe key tracks
+ *   and their narrative significance.
+ * - Lore Alert Box: A styled, prominent callout for the "$13.99 Retail War" story,
+ *   linking to a deeper lore page.
+ * 
+ * DEPENDENCIES:
+ * - Expects $album_path_web to define the asset path for the album art and track data.
+ * - Relies on shared components (_album-art-header.php, _tracklist-downloader.php).
+ * - Utilizes FontAwesome for iconography.
+ * 
+ * MAINTENANCE NOTES:
+ * - Maintain the distinction between the two discs' themes (Terrestrial vs. Twin Moons).
+ * - The Lore Alert Box at the bottom is a critical canonical link; ensure its URL
+ *   remains valid if the story sections are ever restructured.
+ */
+
 // Page data
 $pageTitle = "Hard Reset (1997) - The Stardust Engine";
 $album_path_web = '/engine-room-records/artists/the-stardust-engine/1997-hard-reset';
 
 ?>
 
+<!-- BEGIN: Main Album Container -->
 <div class="container py-5">
     
+    <!-- BEGIN: Album Header & Intro -->
     <div class="row align-items-center mb-5">
         
         <?php $props = [
@@ -31,11 +61,17 @@ $album_path_web = '/engine-room-records/artists/the-stardust-engine/1997-hard-re
         </div>
     </div>
 
+    <!-- END: Album Header & Intro -->
+
     <hr class="border-secondary opacity-25 mb-5">
 
+    <!-- BEGIN: Shared Tracklist & Audio Player Component -->
     <?php include ROOT_PATH . '/includes/components/_tracklist-downloader.php'; ?>
+    <!-- END: Shared Tracklist & Audio Player Component -->
 
+    <!-- BEGIN: Liner Notes & Lore Section -->
     <div class="mt-5">
+        <!-- BEGIN: Disc 1 Notes -->
         <h3 class="h4 fw-bold text-uppercase text-muted mb-4 border-bottom pb-2">Disc 1: Terrestrial Velocity</h3>
         
         <div class="list-group list-group-flush bg-transparent mb-5">
@@ -71,7 +107,9 @@ $album_path_web = '/engine-room-records/artists/the-stardust-engine/1997-hard-re
             </div>
 
         </div>
+        <!-- END: Disc 1 Notes -->
 
+        <!-- BEGIN: Disc 2 Notes -->
         <h3 class="h4 fw-bold text-uppercase text-muted mb-4 border-bottom pb-2">Disc 2: The Twin Moons</h3>
 
         <div class="list-group list-group-flush bg-transparent mb-5">
@@ -107,8 +145,11 @@ $album_path_web = '/engine-room-records/artists/the-stardust-engine/1997-hard-re
             </div>
 
         </div>
+        <!-- END: Disc 2 Notes -->
     </div>
+    <!-- END: Liner Notes & Lore Section -->
 
+    <!-- BEGIN: Lore Feature: Holly's $13.99 Retail War -->
    <div class="alert alert-dark border-success mt-5 shadow-sm">
         <div class="d-flex flex-column flex-md-row align-items-center align-items-md-start">
             <div class="me-md-4 mb-3 mb-md-0 text-center">
@@ -128,5 +169,7 @@ $album_path_web = '/engine-room-records/artists/the-stardust-engine/1997-hard-re
             </div>
         </div>
     </div>
+    <!-- END: Lore Feature: Holly's $13.99 Retail War -->
 
 </div>
+<!-- END: Main Album Container -->

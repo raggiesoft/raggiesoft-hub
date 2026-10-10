@@ -1,4 +1,20 @@
 <?php
+/**
+ * ARCHITECTURE & LORE SYSTEM
+ * -------------------------------------------------------------------------
+ * File: the-quiet-floor.php
+ * Component Type: Amenity Informational Page
+ * Purpose: Explains the rules, zones, and resources of "The Quiet Floor" (Level 40).
+ * 
+ * DESIGN CONSTRAINTS:
+ * - Built with a calming aesthetic using semantic Bootstrap classes (`bg-body-tertiary`, `shadow-sm`).
+ * - `.feature-icon` CSS class utilizes adaptive Bootstrap variables (`--bs-tertiary-bg`) to ensure contrast in both Light and Dark modes.
+ * - Iconography plays a major structural role in layout.
+ * 
+ * MAINTENANCE NOTES:
+ * - This page relies heavily on FontAwesome Pro Duotone icons (`fa-duotone`).
+ * - Preserve narrative elements, such as quotes from Jessica Miller and specific amenity details (e.g., "Chewelry", "Metronaps").
+ */
 // pages/engine-room/jessica-miller-center/the-quiet-floor.php
 // The Quiet Floor - Level 40 Sanctuary
 // Context: Public amenity guide for tenants of The Jessica Miller Center.

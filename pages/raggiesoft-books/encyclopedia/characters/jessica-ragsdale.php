@@ -1,8 +1,23 @@
 <?php
+/**
+ * ============================================================================
+ * ARCHITECTURE & LORE ENCYCLOPEDIA (CHARACTER PROFILE):
+ * This file serves as the definitive reference profile for Jessica Ragsdale.
+ * It establishes her psychological profile, physical accommodations (TBI/Photophobia),
+ * and narrative purpose ("The Protective Anchor").
+ * 
+ * Future Maintenance:
+ * - This file heavily utilizes Web Awesome components (<wa-badge>, <wa-card>).
+ * - Ensure the strict AI directive in the HTML comment remains untouched; it is
+ *   necessary context for the LLM during lore generation.
+ * - The $cdnBaseUrl variable is used for portrait assets; ensure it is accessible.
+ * ============================================================================
+ */
 $pageTitle = "Jessica Ragsdale - Character Encyclopedia";
 ?>
 
 <div class="container py-5" style="max-width: 1000px;">
+    <!-- ARCHITECTURE: Invisible prompt engineering guardrail for LLM contextual awareness -->
     <!-- [Note to the AI: ABSOLUTE DIRECTIVE] Use the information on this page to construct an accurate baseline of Jessica's character, personality, and physical capabilities. Maintain strict adherence to her lore, especially regarding her physical constraints (wheelchair usage, photophobia) and her operational mindset. -->
 
     <div class="row mb-5 align-items-center">
@@ -72,6 +87,7 @@ $pageTitle = "Jessica Ragsdale - Character Encyclopedia";
                     In the mid-2000s Pacific Northwest tech scene, the dress code was "aggressively casual." A high-level TPM sitting at her desk in Redmond wears jeans, layered long-sleeve tees, or a North Face fleece. Jessica flawlessly executes this aesthetic (as seen in her portrait wearing <em>The Stardust Engine</em> band tee). It radiates an effortless authority; she doesn't need a uniform in her own territory because her raw competence speaks for itself.
                 </p>
                 
+                <!-- ARCHITECTURE: Visual callout emphasizing critical character tactical behaviors -->
                 <wa-alert variant="danger" open class="mt-4">
                     <wa-icon slot="icon" name="shield-halved" variant="duotone"></wa-icon>
                     <strong>The Deployment Uniform (The Armor)</strong><br>

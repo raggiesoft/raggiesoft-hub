@@ -1,5 +1,19 @@
 <?php
-// /pages/raggiesoft-games/pathfinder-west/strategy-guide/golden-ending/hail-mary-pasco/chapter-1.php
+/**
+ * Pathfinder West Strategy Guide - Hail Mary Chapter 1
+ * 
+ * ARCHITECTURAL OVERVIEW:
+ * This page contains the narrative content and strategy notes for Chapter 1 of the 
+ * "Pasco Hail Mary" Golden Ending guide.
+ * 
+ * LOGIC & CONSTRAINTS:
+ * - Prose is wrapped in standard HTML5 `<article>` tags for semantic structure.
+ * - Relies on the `$cdnBaseUrl` global variable (defined in a parent config) to render 
+ *   images (e.g., album art). Do NOT remove the PHP echo blocks inside `<img>` `src` attributes.
+ * - Uses the `narrative-stepper.php` component at the bottom for pagination.
+ * 
+ * File Info: /pages/raggiesoft-games/pathfinder-west/strategy-guide/golden-ending/hail-mary-pasco/chapter-1.php
+ */
 
 $pageTitle = "Chapter 1: The False Start | Pathfinder West";
 $metaDescription = "Chapter 1 of the Pathfinder West strategy guide. Roxy, Allison, and Alanna discover Jason is missing and navigate the Newport decoy.";
@@ -74,6 +88,7 @@ include_once $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
 
     <?php 
     // SETUP THE NARRATIVE STEPPER
+    // Defines the pagination links at the bottom of the page.
     $nav = [
         
         'overview' => [

@@ -1,4 +1,24 @@
 <?php
+/**
+ * ============================================================================
+ * ARCHITECTURE & DESIGN: Licensing Sidebar (RaggieSoft Media)
+ * ============================================================================
+ * ROLE: Provides contextual sub-navigation for the RaggieSoft Media Licensing
+ *       portal. Allows users to switch between Commercial, Creative Commons, 
+ *       and Open Source architectural licensing.
+ * 
+ * CORE FEATURES:
+ * - Frutiger Aero Glass Navigation: Custom CSS providing pill-shaped links 
+ *   with color-coded hover states and glassy email contact blocks.
+ * - Integration with Web Awesome: Uses `<wa-button appearance="plain">` for
+ *   accessible navigation lists.
+ * 
+ * MAINTENANCE: Ensure the contact links (`mailto:`) reflect the active 
+ *              corporate structure. Do not remove the `data-bs-theme="dark"`
+ *              override logic in the CSS block, as it maintains contrast
+ *              for the glossy effects.
+ * ============================================================================
+ */
 // includes/components/sidebars/raggiesoft-media/licensing/sidebar-licensing.php
 // Contextual navigation for the Master Licensing portal.
 // Updated: Frutiger Aero Glass Navigation
@@ -63,6 +83,7 @@
     }
 </style>
 
+<!-- [LAYOUT] IP Portfolio Card: Navigation links to specific licensing domains -->
 <div class="card bg-hud-base border-0 shadow-sm mb-4">
     <div class="card-body p-3 p-xl-4">
         <h5 class="pb-2 mb-3 border-bottom border-secondary-subtle text-uppercase h6 fw-bold ">
@@ -93,6 +114,7 @@
     </div>
 </div>
 
+<!-- [LAYOUT] Direct Desks Container: Color-coded email contact blocks -->
 <div class="card border-0 bg-transparent">
     <div class="card-body p-0 p-xl-2">
         <h6 class="text-uppercase fw-bold text-body-secondary mb-3 small border-bottom border-secondary-subtle pb-2">

@@ -1,10 +1,19 @@
 <?php
+/**
+ * @file rhys-manning.php
+ * @description Lore profile page for Rhys Manning, the synthesist and programmer of Fractured Prisms.
+ * @context Uses the custom "Prism" bootstrap theme elements to match the band's aesthetic. Features a "Studio Logbook" artifact component.
+ * @architecture Static PHP/HTML page utilizing a standard layout wrapper with a $pageTitle definition.
+ * @maintenance To update the lore text or logbook entries, modify the HTML directly.
+ */
 // pages/engine-room/artists/fractured-prisms/band/rhys-manning.php
 // Lore Profile: Rhys Manning (Synthesizers / Programming / The Architect)
 
+// INLINE: Define the page title for the global layout wrapper
 $pageTitle = "Rhys Manning - The Residents | Fractured Prisms";
 ?>
 
+<!-- INLINE: Main content container with the Prism dark theme background -->
 <div class="bg-prism-dark min-vh-100 py-5">
     <div class="container">
         

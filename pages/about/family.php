@@ -1,9 +1,23 @@
 <?php
+/**
+ * ============================================================================
+ * ARCHITECTURE & LORE: THE SYSTEM ORIGINS:
+ * This file details the psychological and structural origins of the "Sisters" system,
+ * explaining the concept of "Personified DevOps" as an accessibility adaptation.
+ * 
+ * Future Maintenance:
+ * - The UI uses standard Bootstrap 5 timeline and grid layouts.
+ * - Visual elements rely on $cdnBaseUrl for image assets.
+ * - Ensure the narrative tone remains empathetic and clearly delineates between
+ *   real-world origins and the fictionalized infrastructure constructs.
+ * ============================================================================
+ */
 // pages/about/family.php
 // Theme: RaggieSoft (Clean, Human, Blue)
 // Context: The origin story of the "Sisters" system.
 ?>
 
+<!-- ARCHITECTURE: Thematic hero image with simulated timestamp overlay -->
 <div class="mb-5 position-relative">
     <img src="<?php echo $cdnBaseUrl; ?>/family/images/scenes/paige-michael-hug.jpg" 
          alt="Michael and Paige sharing a moment of calm" 
@@ -43,6 +57,7 @@
     <div class="row justify-content-center">
         <div class="col-lg-11">
             
+            <!-- ARCHITECTURE: Timeline of structural evolution -->
             <div class="mb-5">
                 <h3 class="fw-bold text-primary mb-4 border-bottom pb-2">
                     <i class="fa-duotone fa-hourglass-start me-2"></i>The Timeline
@@ -124,6 +139,7 @@
                     In the narrative, the "Server" is visualized as a physical home in Virginia Beach. Each sister occupies a room that corresponds to a directory in the Linux file system.
                 </p>
 
+                <!-- ARCHITECTURE: Mapping Linux directory structure to physical rooms -->
                 <div class="row g-4 mt-2">
                     <div class="col-md-6">
                         <div class="d-flex align-items-start p-3 border rounded hover-bg-light transition-all">

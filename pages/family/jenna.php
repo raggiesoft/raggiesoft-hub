@@ -1,7 +1,23 @@
 <?php
-// pages/family/jenna.php
+/**
+ * RaggieSoft Architecture - Page Component
+ * 
+ * File: pages/family/jenna.php
+ * Component: Jenna (Creative Chaos, Orange, Sync)
+ * Type: Character Profile / System Metaphor
+ * 
+ * Description:
+ * Renders the profile for "Jenna," representing the jenna-sync.sh script (Rclone/Git)
+ * and the Dev Twin / ADHD persona in the system's narrative.
+ *
+ * Maintenance Notes:
+ * - Uses Bootstrap 5 utility classes and custom inline styles for the orange theme.
+ * - Relies on global $cdnBaseUrl for image assets.
+ * - Custom terminal blinking cursor animation is embedded at the bottom.
+ */
 // Theme: Jenna (Creative Chaos, Orange, Sync)
 ?>
+<!-- MAIN PROFILE HEADER CARD: Hero image and intro -->
 <div class="card mb-5 border-0 shadow-sm overflow-hidden bg-body-tertiary">
     <div class="row g-0">
         <div class="col-lg-4 position-relative" style="min-height: 300px;">

@@ -1,4 +1,19 @@
 <?php
+/**
+ * The Fortress - Property Profile
+ *
+ * This file displays the internal property details for "The Fortress" (512 Progress St NE).
+ * It includes the current layout, structural blueprints, and a historical renovation log.
+ *
+ * Architecture Notes:
+ * - Custom CSS for the "Grey Man" theme, blueprint cards, and timeline (renovation-log).
+ * - Utilizes CSS motion control (`@media (prefers-reduced-motion)`) for accessibility.
+ * - Content is structured in Bootstrap 5 grids and tables.
+ *
+ * Maintainer Note: The timeline relies on specific custom classes (`renovation-log`, `renovation-item`).
+ * When adding new historical events, follow the established badge and heading structure.
+ */
+
 // pages/engine-room/corporate/stardust-blacksburg/the-fortress.php
 // Designation: PCC-01 (Primary Residence)
 // Context: 512 Progress St NE. The family home since 1985.
@@ -61,6 +76,7 @@ $pageTitle = "Property Profile: 512 Progress St NE (The Fortress)";
 
 <div class="container py-5">
     
+    <!-- HEADER AND METADATA -->
     <div class="row justify-content-center mb-5">
         <div class="col-lg-9">
             <div class="d-flex align-items-center mb-3">

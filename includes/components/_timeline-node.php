@@ -1,4 +1,35 @@
 <?php
+/**
+ * ARCHITECTURAL DOCBLOCK
+ * 
+ * File: raggiesoft-hub/includes/components/_timeline-node.php
+ * Path: /includes/components/_timeline-node.php
+ * 
+ * CORE RESPONSIBILITY:
+ * Reusable UI Component: Timeline Node.
+ * Dynamically builds vertically-aligned timeline cards for chronological narrative sections.
+ * Implements strict accessibility logic to ensure WCAG AA contrast compliance.
+ * 
+ * LORE CONTEXT:
+ * - Used heavily in history/lore sections (e.g., Engine Room Records history).
+ * 
+ * UI/UX & STYLING ARCHITECTURE:
+ * - Uses Bootstrap 5 cards and grid layout to structure the node.
+ * - Relies on pseudo-elements (implied by `.timeline-node`) or custom parent CSS for the
+ *   vertical connecting line, while managing its own `.node-marker` dot.
+ * - Supports alternating layouts via the `$props['reverse']` flexbox flag.
+ * 
+ * DEPENDENCIES & INCLUSIONS:
+ * - Expects a `$props` array containing: `color`, `reverse`, `year`, `title`, `subtitle`,
+ *   `content`, `image` (or `icon`), `btnUrl`, `btnText`, `btnIcon`.
+ * 
+ * MAINTENANCE NOTES:
+ * - Contrast Logic: Buttons dynamically switch between `btn-outline-*` and solid `btn-*` 
+ *   classes. Specifically, 'warning' and 'info' colors fail WCAG on light backgrounds
+ *   when used as outlines, so they are forced to solid buttons. Do not remove this check.
+ * - This component relies heavily on Web Awesome Pro contextual classes adapting to 
+ *   the `$cardBgClass` (`bg-body-tertiary`).
+ */
 // includes/components/_timeline-node.php
 // Dynamically builds timeline cards while ensuring strict WCAG AA contrast compliance.
 

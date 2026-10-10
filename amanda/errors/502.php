@@ -1,13 +1,29 @@
 <?php
-// public/errors/502.php
-// Theme: Knox / Industrial / Glitch
-// Context: "Bad Gateway" / Upstream Error
+/**
+ * Stardust Engine - 502 Bad Gateway Error Page
+ * 
+ * ARCHITECTURAL OVERVIEW:
+ * A custom error page designed to handle HTTP 502 (Bad Gateway) errors.
+ * Features dual-mode execution for both standalone server loads and internal routing.
+ * 
+ * LORE CONTEXT:
+ * Themed as "Network Glitch" or "Uplink Failed" for the Stardust universe.
+ * 
+ * LOGIC & CONSTRAINTS:
+ * - Standalone Mode (`$is_standalone`): Ensures the header and footer are loaded 
+ *   even if the main application router has failed to process the request.
+ * 
+ * File Info: public/errors/502.php
+ * Theme: Knox / Industrial / Glitch
+ * Context: "Bad Gateway" / Upstream Error
+ */
 
 // Detect if loaded directly by Nginx or via Router
+// If ROOT_PATH is missing, this was triggered by the server's ErrorDocument directive.
 $is_standalone = !defined('ROOT_PATH');
 
 if ($is_standalone) {
-    // Fix Path: Go up 2 levels from /public/errors/ to get to project root
+    // Fix Path: Go up 2 levels from /amanda/errors/ to get to project root
     define('ROOT_PATH', realpath(__DIR__ . '/../../'));
     
     // 2. Set Headers
@@ -17,10 +33,10 @@ if ($is_standalone) {
     $pageTitle = "502 Bad Gateway - The Stardust Engine";
     $pageTheme = "ad-astra"; 
     
-    // 4. Load Header
+    // 4. Load Header manually since the router didn't do it
     require_once ROOT_PATH . '/includes/header.php';
     
-    // 5. Open Wrapper
+    // 5. Open Wrapper to match the router's standard DOM structure
     echo '<div class="container-fluid flex-grow-1 d-flex"><div class="row flex-grow-1"><main id="main-content" class="col-12 p-0">';
 }
 ?>

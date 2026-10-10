@@ -1,4 +1,21 @@
 <?php
+/**
+ * ARCHITECTURE & LORE SYSTEM
+ * -------------------------------------------------------------------------
+ * File: overview.php
+ * Component Type: Corporate Sub-Hub / Informational Page
+ * Purpose: Serves as the landing page for "The Jessica Miller Center", showcasing Universal Design principles.
+ * 
+ * DESIGN CONSTRAINTS:
+ * - Implements adaptive styling for Light/Dark mode via standard Bootstrap 5 CSS variables (`var(--bs-body-color)`).
+ * - Enforces WCAG AAA Compliance (semantically). Includes `aria-hidden` on decorative icons and explicit `aria-label` on interactive elements.
+ * - Respects `prefers-reduced-motion` in CSS transitions.
+ * - Uses inline JavaScript telemetry to simulate live building environmental data based on Pacific Standard Time.
+ * 
+ * MAINTENANCE NOTES:
+ * - The JavaScript logic (`Building Telemetry Simulation`) dictates live UI updates; do not remove or alter the element IDs (`lighting-badge`, etc.).
+ * - Ensure `$cdnBaseUrl` is defined globally for images.
+ */
 // pages/engine-room/jessica-miller-center/overview.php
 // The Homepage for The Jessica Miller Center
 // Context: Universal Design Showcase.

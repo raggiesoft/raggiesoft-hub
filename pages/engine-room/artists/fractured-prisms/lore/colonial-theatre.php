@@ -1,4 +1,20 @@
 <?php
+/**
+ * ARCHITECTURE & LORE SYSTEM
+ * -------------------------------------------------------------------------
+ * File: colonial-theatre.php
+ * Component Type: Lore Archive
+ * Purpose: Details the fictional sanctuary of "The Colonial Theatre" for the Fractured Prisms band.
+ * 
+ * DESIGN CONSTRAINTS:
+ * - Uses semantic HTML5 (`<main>`, `<section>`) for structure.
+ * - Features a 2.5D parallax effect via inline CSS (`background-attachment: fixed`) on the hero.
+ * - Integrates specialized `.gothic-font` and `.text-glow-prism` custom classes inherited from the Fractured Prisms theme.
+ * 
+ * MAINTENANCE NOTES:
+ * - The transparency alert is critical real-world context clarifying the fictional nature of the Hagerstown setting.
+ * - Do NOT remove the strict accessibility lore constraints (e.g., the standing frame, elevator), as they are central to the characters' survival.
+ */
 // pages/engine-room/artists/fractured-prisms/lore/colonial-theatre.php
 // Lore Archive: The Colonial Theatre (Hagerstown, MD)
 

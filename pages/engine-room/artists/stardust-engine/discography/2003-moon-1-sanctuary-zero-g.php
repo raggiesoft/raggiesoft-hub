@@ -1,4 +1,24 @@
 <?php
+/**
+ * ============================================================================
+ * ARCHITECTURE & MAINTENANCE NOTES
+ * ============================================================================
+ * File: pages/engine-room/artists/stardust-engine/discography/2003-moon-1-sanctuary-zero-g.php
+ * 
+ * 1. Lore Context:
+ *    - "Sanctuary (Zero-G) [Moon 1]" is a mathematically precise atmospheric album 
+ *      showcasing Cassidy O'Connell's "Cosmic Tidal Lock Sound."
+ *    - It serves as the calm, atmospheric counterweight to the explosive "Mile Marker 98."
+ * 
+ * 2. Component Architecture:
+ *    - Implements the shared `_album-art-header.php` component utilizing the 'info' 
+ *      variant to convey a cool, stable visual tone.
+ *    - Includes standard Bootstrap 5 grids and the `_tracklist-downloader.php` partial.
+ * 
+ * 3. Maintenance Rule:
+ *    - DO NOT modify the HTML structure, Bootstrap 5 classes, or the 'info' variant flag.
+ * ============================================================================
+ */
 // pages/engine-room/artists/stardust-engine/discography/2003-moon-1-sanctuary-zero-g.php
 $pageTitle = "Sanctuary (Zero-G) [Moon 1] - The Stardust Engine";
 $album_path_web = '/engine-room-records/artists/the-stardust-engine/2003-sanctuary-zero-g';

@@ -1,4 +1,20 @@
 <?php
+/**
+ * Engine Room Records - Overview Hub
+ *
+ * This file serves as the main fan-centric landing page for the Engine Room Records collective.
+ * It dynamically fetches and displays the master catalog and roster data from the CDN JSON records.
+ *
+ * Architecture Notes:
+ * - Employs robust PHP error suppression (`@file_get_contents`) when fetching remote JSON data to handle CDN hiccups.
+ * - Utilizes custom CSS, tailored for both light and dark mode toggling (`[data-bs-theme="light"]`).
+ * - Includes structured schema.org JSON-LD data for SEO and organization identification.
+ * - Uses Web Components (`wa-card`, `wa-button`) and Bootstrap 5 utilities for layout.
+ *
+ * Maintainer Note: If adding new artists or albums, ensure the underlying CDN JSON structures
+ * (`master-catalog.json`, `albums.json`) conform to the expected format here, or this page will not display them.
+ */
+
 // pages/engine-room/overview.php
 // The Fan-Centric Hub of Engine Room Records.
 

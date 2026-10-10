@@ -1,4 +1,17 @@
 <?php
+/**
+ * ============================================================================
+ * ARCHITECTURE & CORPORATE LORE (TRANSIT & LOGISTICS):
+ * This file outlines the fictional transit integration for Stardust Blacksburg,
+ * connecting the housing units to the broader "Blue Ridge Transit" network.
+ * 
+ * Future Maintenance:
+ * - The transit map is currently a CSS placeholder (.transit-map-placeholder)
+ *   with a faux "Access Denied" overlay to build world immersion.
+ * - Bootstrap list-groups are used to simulate transit schedule summaries.
+ * - Ensure the localized CSS respects dark mode via `[data-bs-theme="dark"]`.
+ * ============================================================================
+ */
 // pages/engine-room/corporate/stardust-blacksburg/location.php
 // Context: Transit Integration (Blue Ridge Transit, RVT, Bluewater).
 // Theme: Varsity / Logistics.
@@ -7,6 +20,7 @@ $pageTitle = "Location & Transit - Stardust Blacksburg";
 ?>
 
 <style>
+    /* ARCHITECTURE: Thematic placeholder simulating an interactive GIS map */
     /* MAP PLACEHOLDER THEME */
     .transit-map-placeholder {
         background-color: #e9ecef;
@@ -59,6 +73,7 @@ $pageTitle = "Location & Transit - Stardust Blacksburg";
                 Your CPI ID is your fare. Our properties are clustered around the high-frequency corridors of the <strong>Blue Ridge Transit</strong> network, ensuring you never have to fight for a parking spot on campus.
             </p>
             
+            <!-- ARCHITECTURE: Transit route directory leveraging Bootstrap list-groups -->
             <div class="list-group shadow-sm mb-4">
                 
                 <div class="list-group-item bg-body-tertiary">

@@ -1,4 +1,27 @@
 <?php
+/**
+ * ============================================================================
+ * ARCHITECTURAL MAINTENANCE BLOCK
+ * ============================================================================
+ * File: 14-liquidation-auction.php
+ * Component Type: Story / Lore HTML View (PHP Partial)
+ * 
+ * DESCRIPTION:
+ * Renders the "Asset Liquidation" page for the "Nine Figure Refusal" arc. 
+ * Simulates a bankruptcy auction catalog for Omni-Global's assets.
+ * 
+ * STRUCTURAL NOTES & CONSTRAINTS:
+ * - ADAPTIVE THEME: The `<style>` block includes custom CSS for auction tags 
+ *   (`.auction-tag`) and sold stamps (`.sold-stamp`). It features precise dark mode 
+ *   overrides via `[data-bs-theme="dark"]` to ensure visual contrast of the red/green 
+ *   stamps against dark backgrounds.
+ * - ACCESSIBILITY: The `.lot-card` hover animations are wrapped in a 
+ *   `@media (prefers-reduced-motion: no-preference)` query. Do NOT remove this, 
+ *   as it is a strict WCAG compliance requirement for this page.
+ * - DOM HIERARCHY: Leverages complex FontAwesome layering (e.g., `fa-table-picnic`, 
+ *   opacity utilities) within Bootstrap grid rows.
+ * ============================================================================
+ */
 // pages/engine-room/artists/stardust-engine/story/nine-figure-refusal/liquidation-auction.php
 // The Yard Sale.
 // Context: Selling off the "Ego" to pay the "Unsecured Creditors."

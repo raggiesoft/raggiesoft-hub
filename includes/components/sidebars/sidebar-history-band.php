@@ -1,3 +1,22 @@
+<?php
+/**
+ * ============================================================================
+ * ARCHITECTURE & DESIGN: Stardust Engine Timeline Sidebar
+ * ============================================================================
+ * ROLE: Contextual navigation sidebar used specifically within the Stardust 
+ *       Engine "History/Timeline" lore pages. Allows quick jumping between 
+ *       eras via anchor links (`#origins`, etc.) and links to related lore.
+ * 
+ * INTEGRATION: Relies entirely on Web Awesome Web Components (`<wa-button>`) 
+ *              for semantic, accessible routing.
+ * 
+ * MAINTENANCE: Ensure the anchor links (`href="#..."`) match the actual IDs
+ *              defined in the parent timeline document. Keep the "Related Lore"
+ *              links updated if new narrative hubs are published.
+ * ============================================================================
+ */
+?>
+<!-- [LAYOUT] Timeline Anchor Links: Jump navigation for the historical timeline -->
 <h5 class="pt-3 pb-2 mb-3 border-bottom">
     <i slot="start" class="fa-duotone fa-timeline"></i> Timeline
 </h5>
@@ -39,6 +58,7 @@
   
 </div>
 
+<!-- [LAYOUT] Related Lore Links: Cross-linking to other narrative properties -->
 <h6 class="pt-3 pb-2 mb-3 border-bottom mt-4">Related Lore</h6>
 <div class="d-flex flex-column gap-1">
   

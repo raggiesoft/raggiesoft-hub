@@ -1,4 +1,25 @@
 <?php
+/**
+ * ============================================================================
+ * ARCHITECTURE & MAINTENANCE NOTES
+ * ============================================================================
+ * File: pages/engine-room/artists/stardust-engine/discography/1987-electric-color.php
+ * 
+ * 1. Lore Context:
+ *    - Details the 1987 debut album "Electric Color."
+ *    - The creation of the album reflects the "cold war" between the band's desire for 
+ *      raw rock energy and Apex Records' mandate for polished, commercial synth-pop.
+ * 
+ * 2. Component Architecture:
+ *    - Employs shared components: `_album-art-header.php` and `_tracklist-downloader.php`.
+ *    - The header variant is set to 'pact' (pink border), visually signifying Apex Records' 
+ *      contractual control over this era.
+ *    - Structured via standard Bootstrap 5 container, row, and alert grids.
+ * 
+ * 3. Maintenance Rule:
+ *    - DO NOT change the HTML layout, Bootstrap 5 classes, or the 'pact' variant designation.
+ * ============================================================================
+ */
 // pages/engine-room/artists/stardust-engine/1987-electric-color.php
 // Page data
 $pageTitle = "Electric Color (1987) - The Stardust Engine";

@@ -1,4 +1,19 @@
 <?php
+/**
+ * Stardust Blacksburg - Accessibility & Accommodations
+ *
+ * This file outlines the barrier-free living policies and structural accommodations 
+ * provided at Stardust Blacksburg. It emphasizes compliance with and exceeding of 
+ * ADA and Fair Housing Act standards.
+ *
+ * Architecture Notes:
+ * - Composed of Bootstrap 5 grid layouts, utilizing cards and lists for readability.
+ * - Iconography (FontAwesome) is heavily used to denote different types of accommodations.
+ * 
+ * Maintainer Note: When updating legal or ADA-related terminology, ensure the tone 
+ * remains supportive and compliant with current standards.
+ */
+
 // pages/engine-room/corporate/stardust-blacksburg/documents/accessibility.php
 // Context: ADA Policy, Reasonable Accommodations, and Live-In Aides.
 // Theme: "Crucible" (Maroon & Orange).
@@ -8,6 +23,7 @@ $pageTitle = "Accessibility & Accommodations - Stardust Blacksburg";
 
 <div class="container py-5">
     
+    <!-- PAGE HEADER -->
     <div class="row justify-content-center mb-5">
         <div class="col-lg-9 text-center">
             <h1 class="display-4 fw-bold text-uppercase text-body-emphasis mb-3">Barrier-Free Living</h1>

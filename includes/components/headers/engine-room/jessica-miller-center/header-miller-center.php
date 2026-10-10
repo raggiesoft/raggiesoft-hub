@@ -1,3 +1,21 @@
+<?php
+/**
+ * Engine Room - Jessica Miller Center Header
+ * 
+ * ARCHITECTURAL OVERVIEW:
+ * This component provides horizontal navigation specifically for the "Jessica Miller Center"
+ * sub-section within the Engine Room. 
+ * 
+ * LORE CONTEXT:
+ * The Jessica Miller Center is a fictional philanthropic entity. The navigation reflects this
+ * with links to accessibility features ("The Quiet Floor", "Universal Design").
+ * 
+ * CONSTRAINTS & MAINTENANCE:
+ * - Uses Web Awesome components (`<wa-button>`, `<wa-dropdown>`).
+ * - Contains static links. Ensure href values remain accurate to the routing structure.
+ * - This file does not contain a PHP opening tag initially; this block is self-contained.
+ */
+?>
 <div class="d-flex flex-column flex-md-row align-items-stretch align-items-md-center gap-2 ms-auto py-3 py-md-0 w-100 mobile-nav-menu">
     
     
@@ -18,6 +36,11 @@
             <i class="fa-duotone fa-wheelchair me-2"></i>The Standard
         <i slot="end" class="fa-solid fa-circle-caret-down ms-2 opacity-50" aria-hidden="true"></i>
         </wa-button>
+    <!-- 
+      Dropdown Menu:
+      Lists various accessibility features related to the fictional Miller Center.
+      Uses standard Bootstrap span tags for headers within the Web Awesome menu.
+    -->
     <wa-menu>
       <li><span class="dropdown-header text-uppercase small letter-spacing-1">Universal Design</span>
             <wa-dropdown-item value="#"><i class="fa-solid fa-eye-slash me-2 "></i>Low-Sensory Lighting</wa-dropdown-item>

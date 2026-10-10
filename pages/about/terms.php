@@ -1,3 +1,27 @@
+<?php
+/**
+ * RaggieSoft Global Terms of Service
+ *
+ * ARCHITECTURE & CONTEXT:
+ * This page serves as the legally binding Terms of Service for the RaggieSoft network.
+ * It outlines the dual-licensing structure (MIT for code, CC BY-SA 4.0 for creative media),
+ * delegates e-commerce and physical merchandise liability to Fourthwall (Merchant of Record),
+ * and provides standard "as is" warranty disclaimers and jurisdictional governance.
+ *
+ * UI/UX ARCHITECTURE:
+ * - This is an HTML partial designed to be injected into the global layout via the router.
+ * - Uses standard Bootstrap 5 container, row, and column structures to center content.
+ * - Employs custom styled callout blocks (`bg-body-tertiary border`) to highlight specific
+ *   clauses (Source Code, Creative Content, Fourthwall store policies).
+ * - Utilizes inline PHP to auto-update the "Last Updated" date based on current month/year.
+ *
+ * MAINTENANCE NOTES:
+ * - Ensure external links to the Fourthwall storefront policies (Terms, Returns, Support) 
+ *   remain accurate and active.
+ * - Do NOT alter the licensing clauses without consulting the respective licensing bodies 
+ *   (MIT/OSI and Creative Commons).
+ */
+?>
 <div class="container py-5">
     <div class="row justify-content-center">
         <div class="col-lg-8">

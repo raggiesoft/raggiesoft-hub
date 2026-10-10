@@ -1,4 +1,25 @@
 <?php
+/**
+ * ============================================================================
+ * ARCHITECTURAL MAINTENANCE BLOCK
+ * ============================================================================
+ * File: 01-overview.php
+ * Component Type: Story / Lore Index Page (PHP Partial)
+ * 
+ * DESCRIPTION:
+ * The primary index/table of contents for the "Nine Figure Refusal" story arc. 
+ * This file lists all chapters and sections in the narrative, structuring them 
+ * chronologically.
+ * 
+ * STRUCTURAL NOTES & CONSTRAINTS:
+ * - HTML STRUCTURE: Utilizes Bootstrap 5 cards and list groups (`.list-group-flush`) 
+ *   to create a clean, organized index.
+ * - ICONOGRAPHY: FontAwesome Duotone icons are heavily used in the left column 
+ *   of each list item. Maintain consistent sizing (`fa-2x`) and fixed-width containers.
+ * - DO NOT MODIFY: Links directly route to specific lore pages. Do not break these 
+ *   paths when adding new chapters.
+ * ============================================================================
+ */
 // pages/engine-room/artists/stardust-engine/story/nine-figure-refusal/overview.php
 // The Index Page for the "Nine Figure Refusal" Arc.
 // Acts as the landing page/table of contents for this specific story.

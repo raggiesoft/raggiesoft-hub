@@ -1,4 +1,19 @@
 <?php
+/**
+ * RaggieSoft Architecture - Page Component
+ * 
+ * File: pages/case-studies/overview.php
+ * Component: Case Study Dashboard
+ * Type: Index / Overview
+ * 
+ * Description:
+ * A repository dashboard listing incident reports and systems architecture analyses.
+ * Demonstrates the application of "Personified DevOps" to real-world scenarios.
+ *
+ * Maintenance Notes:
+ * - Static index mapping to individual case studies.
+ * - Uses Bootstrap grid and badge components for visual hierarchy.
+ */
 // pages/case-studies/index.php
 // The Case Study Dashboard
 

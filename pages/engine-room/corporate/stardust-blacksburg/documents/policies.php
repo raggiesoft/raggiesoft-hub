@@ -1,4 +1,21 @@
 <?php
+/**
+ * Stardust Blacksburg - Policies Document
+ *
+ * This file renders the "Household Protocols" section for the Stardust Blacksburg
+ * corporate sub-site. It defines strict policies surrounding roommate autonomy, 
+ * accessibility, and visitor rules. 
+ *
+ * Architecture Notes:
+ * - Built using Bootstrap 5 grid structures and utility classes.
+ * - Utilizes FontAwesome (fa-duotone, fa-solid) for iconography.
+ * - Structure consists of nested rows and columns, utilizing cards and alerts for emphasis.
+ * 
+ * Maintainer Note: When updating policies, ensure the strict formatting guidelines 
+ * and specific color classes (primary, danger, etc.) are maintained to align with 
+ * the "Crucible" (Maroon & Orange) theme.
+ */
+
 // pages/engine-room/corporate/stardust-blacksburg/policies.php
 // Context: Guest Rules, Roommate Authority, and Occupancy Standards.
 // Theme: "Crucible" (Maroon & Orange).
@@ -8,6 +25,7 @@ $pageTitle = "Household Protocols - Stardust Blacksburg";
 
 <div class="container py-5">
     
+    <!-- HEADER SECTION -->
     <div class="row justify-content-center mb-5">
         <div class="col-lg-9 text-center">
             <h1 class="display-4 fw-bold text-uppercase text-body-emphasis mb-3">The Household Protocol</h1>

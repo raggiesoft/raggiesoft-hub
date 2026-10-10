@@ -1,4 +1,24 @@
 <?php
+/**
+ * ============================================================================
+ * ARCHITECTURE & MAINTENANCE NOTES
+ * ============================================================================
+ * File: pages/engine-room/artists/crimson-node/characters/ccc/overview.php
+ * 
+ * 1. Lore Context:
+ *    - This page serves as the directory for the Charlottesville Community College (CCC) campus.
+ *    - Highlights key figures in "The CCC Quad" (Heather and Hailey Bouchard).
+ *    - Represents a critical off-site network of safe variables for Matt.
+ * 
+ * 2. Component Architecture:
+ *    - Utilizes Bootstrap 5 grids (`row`, `col-md-6`, `col-lg-4`) and Card components.
+ *    - Employs specific inline CSS variables for styling (`--bs-purple`, `--bs-indigo`).
+ * 
+ * 3. Maintenance Rule:
+ *    - DO NOT alter the HTML DOM structure, the Bootstrap 5 utility classes, or the custom CSS variables.
+ *    - Ensure paths provided for images and links remain accurate.
+ * ============================================================================
+ */
 // pages/engine-room/artists/crimson-node/characters/ccc/overview.php
 // CCC Campus Directory
 

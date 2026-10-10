@@ -1,9 +1,23 @@
 <?php
+/**
+ * ARCHITECTURE: accessibility.php
+ * 
+ * Context: RaggieSoft Hub - Policy & Accessibility.
+ * Narrative/Purpose: The public accessibility statement for RaggieSoft platforms. It outlines the 
+ * platform's commitment to native accessibility integration rather than relying on external overlays.
+ * 
+ * Mechanics:
+ * - Inherits the "Stardust Reader Theme" (if set in localStorage) or falls back to OS-level 
+ *   color scheme preferences (prefers-color-scheme).
+ * - Utilizes inline CSS variables to fluidly adapt the page colors without jarring flashes.
+ * - Communicates reliance on OS-level settings like 'prefers-reduced-motion'.
+ */
 // accessibility.php
 require_once __DIR__ . '/includes/header.php';
 ?>
 
 <style>
+/* START: Adaptive Theme Styles */
 /* Respect Stardust Reader Theme or Fallback to System Preference */
 :root {
     --page-bg: #ffffff;
@@ -65,6 +79,7 @@ body.theme-dark-sepia {
 </style>
 
 <script>
+// START: Stardust Theme Hydration
 // Apply Stardust Engine Reader settings if they exist
 document.addEventListener('DOMContentLoaded', () => {
     const savedTheme = localStorage.getItem('stardust-reader-theme') || 'auto';
@@ -74,11 +89,13 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 </script>
 
+<!-- START: Accessibility Content Container -->
 <main class="a11y-container">
     <div class="container" style="max-width: 800px; margin: 0 auto;">
         <h1 class="mb-4 fw-bold">Accessibility Statement</h1>
         <p class="lead mb-5">At RaggieSoft, we believe digital experiences should be accessible, comfortable, and safe for everyone.</p>
 
+        <!-- START: A11y Topic Card: Motion -->
         <div class="a11y-card">
             <h3 class="fw-bold mb-3"><i class="fa-solid fa-person-running me-2"></i> Native Accessibility & Motion</h3>
             <p>
@@ -96,6 +113,7 @@ document.addEventListener('DOMContentLoaded', () => {
             </p>
         </div>
 
+        <!-- START: A11y Topic Card: Color -->
         <div class="a11y-card">
             <h3 class="fw-bold mb-3"><i class="fa-solid fa-circle-half-stroke me-2"></i> Color & Contrast</h3>
             <p>
@@ -105,6 +123,7 @@ document.addEventListener('DOMContentLoaded', () => {
             </p>
         </div>
         
+        <!-- START: A11y Topic Card: Keyboard -->
         <div class="a11y-card">
             <h3 class="fw-bold mb-3"><i class="fa-solid fa-keyboard me-2"></i> Keyboard Navigation</h3>
             <p class="mb-0">

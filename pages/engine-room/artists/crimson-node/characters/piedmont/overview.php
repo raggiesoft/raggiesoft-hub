@@ -1,10 +1,26 @@
 <?php
+/**
+ * Crimson Node - University of the Piedmont Directory
+ *
+ * This file renders the directory overview for characters associated with the 
+ * fictionalized "University of the Piedmont" setting in the Crimson Node lore.
+ *
+ * Architecture Notes:
+ * - Employs Bootstrap 5 grid layout for presenting character cards.
+ * - Uses specific brand colors (e.g., #ff7900) to represent the university's aesthetic.
+ * - Contains links to individual character profiles.
+ *
+ * Maintainer Note: When adding new characters from this university, follow the existing
+ * card structure. Ensure thumbnail images are properly sized and linked to the CDN.
+ */
+
 // pages/engine-room/artists/crimson-node/characters/piedmont/overview.php
 // The University of the Piedmont Directory
 
 $pageTitle = "The University of the Piedmont - Crimson Node";
 ?>
 
+<!-- UNIVERSITY DIRECTORY WRAPPER -->
 <div class="container py-5">
     <div class="row mb-5">
         <div class="col-12 text-center">

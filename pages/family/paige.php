@@ -1,7 +1,23 @@
 <?php
-// pages/family/paige.php
+/**
+ * RaggieSoft Architecture - Page Component
+ * 
+ * File: pages/family/paige.php
+ * Component: Paige (Calm, Blue, Python)
+ * Type: Character Profile / System Metaphor
+ * 
+ * Description:
+ * Renders the profile for "Paige," representing the Python ingestion/processing script
+ * as well as the Safe Person / Neurotypical Twin persona in the system's narrative.
+ *
+ * Maintenance Notes:
+ * - Uses Bootstrap 5 utility classes for styling.
+ * - Relies on global $cdnBaseUrl for image assets.
+ * - Ensure to maintain the semantic HTML structure (header, info blocks, deep pressure therapy block).
+ */
 // Theme: Paige (Calm, Blue, Python)
 ?>
+<!-- MAIN PROFILE HEADER CARD: Hero image and intro -->
 <div class="card mb-5 border-0 shadow-sm overflow-hidden bg-body-tertiary">
     <div class="row g-0">
         <div class="col-lg-4 position-relative" style="min-height: 300px;">

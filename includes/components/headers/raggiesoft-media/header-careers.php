@@ -1,4 +1,17 @@
 <?php
+/**
+ * ARCHITECTURE: header-careers.php
+ * 
+ * Context: RaggieSoft Media - Careers Quarantine Header.
+ * Narrative/Purpose: This is a specialized, restrictive header designed specifically for the careers section 
+ * during an "Active Fraud Alert". It intentionally strips away normal global navigation to focus the user's 
+ * attention entirely on the security notice, acting as a functional "quarantine" zone.
+ * 
+ * Mechanics:
+ * - Employs a 'Frutiger Aero' inspired danger badge with glowing gradients.
+ * - Provides a clear, single-action 'glass' exit button to return to the main RaggieSoft Media portal.
+ * - Uses flexbox for responsive layout adjustments between mobile and desktop views.
+ */
 // includes/components/headers/raggiesoft-media/header-careers.php
 // The Quarantine Header - Explicitly removes global navigation to focus on the fraud alert.
 // Updated: Frutiger Aero Danger Glass
@@ -36,15 +49,18 @@
     }
 </style>
 
+<!-- START: Quarantine Header Container -->
 <div class="d-flex flex-column flex-md-row align-items-stretch align-items-md-center gap-2 ms-auto py-3 py-md-0 w-100 mobile-nav-menu">
   
   
+    <!-- START: Active Fraud Alert Indicator -->
     <span class="badge aero-badge-danger text-uppercase px-3 py-2 rounded-pill shadow-sm">
       <i class="fa-solid fa-circle-dot fa-fade me-2" aria-hidden="true"></i>Active Fraud Alert
     </span>
   
 
   
+    <!-- START: Quarantine Exit Action -->
     <wa-button appearance="plain" href="/raggiesoft-media" class="btn btn-glass-exit btn-sm rounded-pill px-3 py-1 fw-bold">
         <i slot="start" class="fa-duotone fa-arrow-right-from-bracket me-2" aria-hidden="true"></i>Exit to RaggieSoft Media
     </wa-button>

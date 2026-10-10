@@ -1,4 +1,32 @@
 <?php
+/**
+ * Stardust Engine - Lore/Story Template: Omni-Global Chapter 11
+ * 
+ * ARCHITECTURAL OVERVIEW:
+ * This template renders an in-universe news article detailing the fallout of the
+ * Omni-Global bankruptcy. It acts as a narrative bridge in the "Nine Figure Refusal" arc.
+ * 
+ * LAYOUT STRUCTURE:
+ * - Employs a custom "Zenith Report" visual theme, distinct from the main Engine Room styling,
+ *   to simulate reading a financial trade magazine.
+ * - Uses a standard Bootstrap container but overrides styles via the injected zenith-theme.php.
+ * - Article Layout: A two-column grid (col-lg-8 / col-lg-4). 
+ *   - The main column contains the journalistic narrative, broken down by thematic headers.
+ *   - The sidebar column displays mock financial data (stock ticker) and "related links".
+ * - Narrative Stepper: Included at the bottom to continue the story sequence.
+ * 
+ * DEPENDENCIES:
+ * - CRITICAL: Depends on `zenith-theme.php` to define the specific typography and colors 
+ *   (.zenith-body, .zenith-headline, etc.) required for the in-universe newspaper look.
+ * - Uses standard FontAwesome icons for the sidebar widgets.
+ * 
+ * MAINTENANCE NOTES:
+ * - When editing text within the article, maintain the journalistic, objective tone of 
+ *   the fictional reporter ("Sarah Jenkins").
+ * - Do not apply global Engine Room UI components (like glassmorphism) inside the 
+ *   .zenith-body wrapper, as it will break the immersion of the newspaper theme.
+ */
+
 // pages/engine-room/artists/stardust-engine/story/nine-figure-refusal/zenith-report/omni-global-chapter-11.php
 // THE FALLOUT: The Public News Report
 // Context: September 17, 2018. 48 Hours after "The Autopsy".
@@ -10,9 +38,13 @@ $pageTitle = "IMPLOSION: Omni-Global Files Chapter 11 - The Zenith Report";
 include ROOT_PATH . '/includes/components/styles/zenith-theme.php';
 ?>
 
+<!-- BEGIN: Zenith Theme Wrapper -->
 <div class="zenith-body min-vh-100 py-5">
+    
+    <!-- BEGIN: Newspaper Article Container -->
     <div class="container bg-body border shadow-sm p-4 p-md-5" style="max-width: 900px;">
         
+        <!-- BEGIN: Publication Masthead & Headline -->
         <div class="zenith-header text-center">
             <div class="zenith-logo">The Zenith Report</div>
             <div class="small fw-bold text-uppercase letter-spacing-2 mt-1">Global Business & Entertainment News</div>
@@ -28,8 +60,12 @@ include ROOT_PATH . '/includes/components/styles/zenith-theme.php';
                 Sept 17, 2018 | 08:45 AM EST
             </div>
         </div>
+        <!-- END: Publication Masthead & Headline -->
 
+        <!-- BEGIN: Article Layout Grid -->
         <div class="row">
+            
+            <!-- BEGIN: Main Article Content -->
             <div class="col-lg-8">
                 <p>
                     <span class="drop-cap">I</span>t took less than 48 hours for the "Titan of Century City" to be revealed as a paper tiger.
@@ -88,8 +124,12 @@ include ROOT_PATH . '/includes/components/styles/zenith-theme.php';
                     The <strong>Department of Justice</strong> has opened a preliminary inquiry into Omni-Global under the <strong>Americans with Disabilities Act (ADA)</strong>. Leaked internal emails suggest executives targeted the company specifically because they viewed a disabled owner as "weak."
                 </p>
             </div>
+            <!-- END: Main Article Content -->
 
+            <!-- BEGIN: Article Sidebar (Widgets) -->
             <div class="col-lg-4">
+                
+                <!-- BEGIN: Stock Ticker Widget -->
                 <div class="card border-danger shadow-sm mb-4">
                     <div class="card-header bg-danger text-white fw-bold text-uppercase">
                         <i class="fa-solid fa-chart-line-down me-2"></i>Market Watch
@@ -107,7 +147,9 @@ include ROOT_PATH . '/includes/components/styles/zenith-theme.php';
                         </p>
                     </div>
                 </div>
+                <!-- END: Stock Ticker Widget -->
 
+                <!-- BEGIN: Related Links Widget -->
                 <div class="card bg-light border-0 mb-4">
                     <div class="card-body">
                         <h6 class="fw-bold text-uppercase border-bottom border-dark pb-2 mb-3">Related Topics</h6>
@@ -118,16 +160,21 @@ include ROOT_PATH . '/includes/components/styles/zenith-theme.php';
                         </ul>
                     </div>
                 </div>
+                <!-- END: Related Links Widget -->
 
                 <div class="alert alert-light border-start border-4 border-info small text-muted">
                     <i class="fa-duotone fa-scale-balanced text-info me-2"></i>
                     <strong>Legal Definition:</strong> The "Q" added to a stock ticker symbol (e.g., OMGCQ) indicates the company has filed for bankruptcy proceedings.
                 </div>
             </div>
+            <!-- END: Article Sidebar (Widgets) -->
         </div>
+        <!-- END: Article Layout Grid -->
 
     </div>
+    <!-- END: Newspaper Article Container -->
 
+    <!-- BEGIN: Narrative Stepper Component -->
     <?php
         $nav = [
             'prev' => ['url' => '/engine-room/artists/stardust-engine/story/nine-figure-refusal/the-extraction', 'label' => 'The Extraction'],
@@ -136,5 +183,7 @@ include ROOT_PATH . '/includes/components/styles/zenith-theme.php';
         ];
         include ROOT_PATH . '/includes/components/navigation/narrative-stepper.php';
     ?>
+    <!-- END: Narrative Stepper Component -->
 
 </div>
+<!-- END: Zenith Theme Wrapper -->

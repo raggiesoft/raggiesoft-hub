@@ -1,4 +1,21 @@
 <?php
+/**
+ * ============================================================================
+ * ARCHITECTURE & DESIGN: JSON Asset Reader
+ * ============================================================================
+ * ROLE: Acts as the primary Data Layer Connector for the Elara Framework. 
+ *       Fetches, parses, and validates JSON data payloads from the RaggieSoft 
+ *       Asset CDN (Jessica), bypassing caches during development.
+ * 
+ * INTEGRATION: Relies on global CDN routing variables (`$cdn_root`, `$cdnBaseUrl`).
+ *              Provides data to UI components that need dynamic state or configuration
+ *              without relying on a local database (e.g., Portfolio projects, narratives).
+ * 
+ * MAINTENANCE: The stream context timeout is intentionally short (2 seconds) 
+ *              to enforce the "fail fast" methodology. Do not increase this timeout
+ *              without considering the cascading latency effect on the frontend.
+ * ============================================================================
+ */
 // includes/utils/json-reader.php
 // v1.0 - Data Layer Connector
 // Part of the RaggieSoft "Elara" Framework
@@ -25,7 +42,7 @@ function fetch_asset_json($path) {
     $url = "{$root}/{$cleanPath}?v=" . time();
     
     // 4. Define Stream Context
-    // Fail fast (2 seconds) if the asset server is unreachable, 
+    // [LOGIC LOGIC] Fail fast (2 seconds) if the asset server is unreachable, 
     // preventing the main site from hanging.
     $context = stream_context_create([
         'http' => [

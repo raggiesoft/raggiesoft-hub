@@ -1,4 +1,19 @@
 <?php
+/**
+ * ============================================================================
+ * ARCHITECTURE & PROFESSIONAL DASHBOARD:
+ * This file serves as the unified professional dashboard ("Aggressive Transparency")
+ * for Michael P. Ragsdale. It aggregates resume details, structural ecosystem data,
+ * and strict hiring parameters into a single view.
+ * 
+ * Future Maintenance:
+ * - Schema.org JSON-LD is embedded at the top for SEO/Recruiting discoverability.
+ * - The UI uses Bootstrap 5 utility classes and a custom 'Frutiger Aero' vs 'Dark Aero'
+ *   image swap for light/dark mode compatibility.
+ * - Do NOT remove the strict hiring parameters; they are functionally load-bearing
+ *   to filter out incompatible opportunities.
+ * ============================================================================
+ */
 // pages/about/michael-ragsdale/overview.php
 // The Unified Professional Dashboard
 // Accessed via: raggiesoft.com/about/michael-ragsdale
@@ -7,6 +22,7 @@
 global $cdn_root;
 ?>
 
+<!-- ARCHITECTURE: Structured ProfilePage JSON-LD for Search Engine Indexing -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -61,6 +77,7 @@ global $cdn_root;
 
     <div class="row align-items-center mb-5 pb-4 border-bottom border-secondary-subtle">
         <div class="col-lg-3 text-center text-lg-start mb-4 mb-lg-0">
+            <!-- ARCHITECTURE: Thematic light mode profile image -->
             <img src="<?php echo $cdnBaseUrl; ?>/raggiesoft-corporate/images/mragsdale-aero/mragsdale-frutiger-aero.jpg" 
                 alt="Michael P. Ragsdale" 
                 class="theme-img-light rounded-circle shadow-lg border border-4 border-white"
@@ -169,6 +186,7 @@ global $cdn_root;
             </div>
         </div>
 
+        <!-- ARCHITECTURE: Hiring Logistics Block - Strict operational parameters -->
         <div class="col-lg-5" id="hiring-logistics">
             <div class="card bg-hud-green border-0 shadow-lg h-100 position-relative overflow-hidden">
                 <div class="card-header bg-transparent border-bottom border-success border-opacity-25 p-4">

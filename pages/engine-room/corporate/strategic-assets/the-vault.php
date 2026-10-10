@@ -1,4 +1,21 @@
 <?php
+/**
+ * ARCHITECTURE & LORE SYSTEM
+ * -------------------------------------------------------------------------
+ * File: the-vault.php
+ * Component Type: Corporate Sub-Page (Lore)
+ * Purpose: Details the technical and narrative specifications of "The Vault" archive facility.
+ * 
+ * DESIGN CONSTRAINTS:
+ * - Implements a "Cold Storage" dark aesthetic via inline `<style>` overrides and `.vault-hero`.
+ * - Employs conditional motion CSS (`@media (prefers-reduced-motion)`) for hover effects on `.spec-card`.
+ * - Utilizes FontAwesome duotone icons for visual hierarchy.
+ * - The structure relies on semantic Bootstrap grid usage (`row g-4`).
+ * 
+ * MAINTENANCE NOTES:
+ * - Modifying the `.sun-ray-badge` requires checking the inline font-family (`Courier New`).
+ * - Ensure `$cdnBaseUrl` is defined for the hero background image.
+ */
 // pages/engine-room/corporate/strategic-assets/the-vault.php
 // Designation: The Engine Room Archives ("The Vault").
 // Location: Subterranean Level, Sector C (Beneath the Studio).

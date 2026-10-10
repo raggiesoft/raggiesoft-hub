@@ -4,6 +4,12 @@
 // Context: December 10, 1990. The origin of Ryan's paralysis.
 // UPDATED: Fully Adaptive WCAG Compliance (No forced dark backgrounds).
 
+/*
+ * ARCHITECTURE & LORE:
+ * Extremely critical lore entry detailing the December 1990 vehicle crash resulting in Ryan's T10 spinal cord injury.
+ * It strictly adheres to WCAG compliance (no forced dark backgrounds) to respect accessibility requirements, especially given the subject matter.
+ * It introduces "Protocol T-10" outlining the specific medical routines necessary for his survival.
+ */
 $pageTitle = "The Crash of '90 - The Stardust Engine Lore";
 ?>
 
@@ -23,6 +29,7 @@ $pageTitle = "The Crash of '90 - The Stardust Engine Lore";
         </div>
     </div>
 
+    <!-- INLINE: Official State Police Report formatting for the incident -->
     <div class="row justify-content-center mb-5">
         <div class="col-lg-10">
             <div class="card bg-body-tertiary border-danger shadow-lg">
@@ -109,6 +116,7 @@ $pageTitle = "The Crash of '90 - The Stardust Engine Lore";
 
     <hr class="border-secondary opacity-25 mb-5">
 
+    <!-- INLINE: Protocol T-10 Grid - Details the specific, non-negotiable medical care routines -->
     <div class="row">
         <div class="col-12 mb-4">
             <h2 class="h3 fw-bold text-warning text-uppercase border-bottom border-warning pb-2">

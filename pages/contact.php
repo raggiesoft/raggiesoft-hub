@@ -1,5 +1,22 @@
 <?php
-// pages/contact.php
+/**
+ * RaggieSoft Architecture - Page Component
+ * 
+ * File: pages/contact.php
+ * Component: The Global Contact Hub
+ * Type: Routing / Directory
+ * 
+ * Description:
+ * Serves as the central directory for contacting Michael Ragsdale,
+ * RaggieSoft Media, and Engine Room Records. Uses the immersive hero
+ * template with rotating background images.
+ *
+ * Maintenance Notes:
+ * - Includes JSON-LD structured data for SEO and FAQ definitions.
+ * - Employs "Brute Force Readability Armor" (CSS overrides) to ensure
+ *   legibility over dynamic background images regardless of dark/light mode.
+ * - Ensure URLs to Fourthwall and DSP portals are kept updated.
+ */
 // The Global Contact Hub
 // Updated to use the shared Immersive Hero template
 

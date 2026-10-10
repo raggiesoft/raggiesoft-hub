@@ -1,4 +1,15 @@
 <?php
+/**
+ * Strategic Assets Overview
+ *
+ * This file provides a high-level overview of the physical and operational assets owned by Engine Room Records,
+ * including their headquarters ("The Fortress"), logistics fleet ("The Iron Horse", "The Sovereign"), and musical equipment ("The Armory").
+ *
+ * Architecture Notes:
+ * - Employs custom CSS (`.asset-card`, `.spec-table`) alongside Bootstrap utilities for a distinct, industrial "dossier" aesthetic.
+ * - Structured into logical sections (Headquarters, Logistics, Armory) using a grid layout.
+ * - Future additions (e.g., new studio equipment or vehicles) should follow the existing `.asset-card` DOM structure to maintain design consistency.
+ */
 // pages/engine-room/assets/overview.php
 // The Hard Assets.
 // "We own the bus. We own the studio. We own the masters."

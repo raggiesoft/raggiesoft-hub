@@ -1,4 +1,27 @@
 <?php
+/**
+ * ============================================================================
+ * ARCHITECTURAL MAINTENANCE BLOCK
+ * ============================================================================
+ * File: 16-the-jessica-miller-center.php
+ * Component Type: Story / Lore HTML View (PHP Partial)
+ * 
+ * DESCRIPTION:
+ * Renders the lore page for "The Jessica Miller Center". It includes organizational 
+ * hierarchy cards, before-and-after floor comparisons, and a deeply styled 
+ * mock legal lease document.
+ * 
+ * STRUCTURAL NOTES & CONSTRAINTS:
+ * - LEGAL DOCUMENT MOCKUP: The `.legal-document` class in the `<style>` block 
+ *   forces a "Light Mode" (Physical Paper Look) regardless of system theme. 
+ *   This override is intentional and must remain intact to preserve the skeuomorphic 
+ *   aesthetic.
+ * - INLINE STYLES: Features inline styling for skeuomorphic signatures 
+ *   (e.g., `font-family: 'Mrs Saint Delafield', cursive;`). Do not strip these out.
+ * - IMAGE ASSETS: Loads `jessica-miller.jpg` via `$cdnBaseUrl`. Ensure the 
+ *   global PHP variable is available when rendering this file.
+ * ============================================================================
+ */
 // pages/engine-room/artists/stardust-engine/story/nine-figure-refusal/the-jessica-miller-center.php
 // The Re-Branding of the Omni-Global Leasehold
 // UPDATED: WCAG Color Corrections (Organizational Structure Card)

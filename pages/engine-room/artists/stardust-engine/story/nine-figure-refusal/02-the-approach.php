@@ -1,4 +1,27 @@
 <?php
+/**
+ * ============================================================================
+ * ARCHITECTURAL MAINTENANCE BLOCK
+ * ============================================================================
+ * File: 02-the-approach.php
+ * Component Type: Story / Lore HTML View (PHP Partial)
+ * 
+ * DESCRIPTION:
+ * Renders "Evidence Item #00: The Approach Vector" for the "Nine-Figure Refusal"
+ * storyline. It details the arrival of the Stardust Engine family in LA.
+ * 
+ * STRUCTURAL NOTES & CONSTRAINTS:
+ * - LORE-DRIVEN UI: Custom `<style>` block overrides Bootstrap themes (specifically 
+ *   dark mode) and defines specific narrative styles like `.wall-card` and 
+ *   `.timestamp`. Do NOT modify these styles as they dictate the "Evidence Log" 
+ *   and "Twin Wall" visual aesthetic.
+ * - STRUCTURAL INTEGRITY: The file heavily leverages Bootstrap 5 layout structures 
+ *   (Grids, Cards, Alerts) combined with FontAwesome icons. Maintain the exact 
+ *   DOM hierarchy for these elements.
+ * - NAVIGATION: Includes the `$nav` array configuration and the global narrative 
+ *   stepper component.
+ * ============================================================================
+ */
 // pages/engine-room/artists/stardust-engine/story/nine-figure-refusal/the-approach.php
 // EVIDENCE ITEM #00: The Arrival
 // Context: The family arrives in LA. The "Vacation" becomes a "Deployment".

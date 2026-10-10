@@ -1,4 +1,21 @@
 <?php
+/**
+ * ARCHITECTURE & LORE SYSTEM
+ * -------------------------------------------------------------------------
+ * File: acquisition-plan.php
+ * Component Type: Narrative Document / Legal Lore
+ * Purpose: Renders the fictional "Fulcrum Trap" bankruptcy document for Omni-Global Media.
+ * 
+ * DESIGN CONSTRAINTS:
+ * - Uses `font-monospace` extensively to simulate a legal/court document.
+ * - Structured as a large centered card mimicking a printed filing.
+ * - Embedded alerts (`alert-secondary`, `alert-success`) are used for emphasis and status.
+ * - Lore integration: Explains the "Poison Pill" strategy and Aethelgard Holdings' role.
+ * 
+ * MAINTENANCE NOTES:
+ * - Do NOT change the fictional amounts (e.g., $150,000,000.00) or case numbers without checking canon.
+ * - Ensure responsive padding (`py-5`, `p-5`) remains intact for readability on mobile.
+ */
 // pages/engine-room/corporate/acquisition-plan.php
 // The "Fulcrum Trap" document.
 // Proponent: Aethelgard Holdings (The Money) dba Engine Room Records (The Brand)
