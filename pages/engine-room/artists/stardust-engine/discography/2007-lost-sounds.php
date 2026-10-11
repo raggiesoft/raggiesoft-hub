@@ -45,57 +45,144 @@ $album_path_web = '/engine-room-records/artists/the-stardust-engine/2007-lost-so
     <div class="mt-5">
         <h3 class="h4 fw-bold text-uppercase text-muted mb-4 border-bottom pb-2">Track-by-Track Lore</h3>
 
-        <div class="list-group list-group-flush bg-transparent">
+        <wa-accordion>
             
-            <div class="list-group-item bg-transparent border-secondary text-muted py-3">
-                <div class="d-flex w-100 justify-content-between align-items-center mb-1">
-                    <strong class="text-primary fs-5">1. The Promise (1989 "Sermon" Demo)</strong>
-                    <span class="badge bg-danger">The Banned Track</span>
+            <wa-accordion-item>
+                <div slot="label" class="d-flex w-100 justify-content-between align-items-center m-0">
+                    <strong class="text-primary fs-5">1. The Stardust Engine (The Rejected Mix)</strong>
                 </div>
-                <p class="mb-0">
-                    The most famous "lost song" in the band's history. Apex demanded a "religious pop" song to compete with <strong>Cydele's</strong> upcoming <em>Sermon</em> album. When the <em>Sermon</em> video controversy broke (with its "burning crosses"), the label panicked and buried this demo deep in the vault.
+                <p class="text-muted mb-0">
+                    This alternate version of "The Stardust Engine" was one of the original demos shopped around to record companies when the band formed in 1986. Apex Records signed them but rejected this version, burying the final studio version as track 13 on 1987's <em>Electric Color</em>. The band famously despises Apex for what happened to them during the 1992 label dispute. For this vault release, they officially retitled this early cut "(The Rejected Mix)" instead of naming Apex Records directly, serving as a quiet nod to their lingering resentment.
                 </p>
-            </div>
+            </wa-accordion-item>
 
-            <div class="list-group-item bg-transparent border-secondary text-muted py-3">
-                <div class="mb-1"><strong class="fs-5">2. Atmosphere (1992 Demo)</strong></div>
-                <p class="mb-0">
-                    The "Lost Gem" from the canceled <em>Friction</em> sessions. The band wrote it about a literal space shuttle re-entry ("Here comes the friction / Feel the fire"), but the "rogue" executive Julian Vance misinterpreted it as a sexual metaphor. This is the raw, unpolished 1992 recording.
-                </p>
-            </div>
-
-            <div class="list-group-item bg-transparent border-secondary text-muted py-3">
-                <div class="mb-1"><strong class="fs-5">3. Midnight Drivers</strong></div>
-                <p class="mb-0">
-                    Cut from <em>Electric Color</em> (1987). A "darkwave" synth track that Apex rejected for being "too melancholic" and not a "Top 40" hit like "Light Up the Night." It remains a cult favorite for its moody, driving bassline.
-                </p>
-            </div>
-
-            <div class="list-group-item bg-transparent border-secondary text-muted py-3">
-                <div class="mb-1"><strong class="fs-5">4. I'll Be Your Home</strong></div>
-                <p class="mb-0">
-                    A beautiful, minimalist "Stardust" ballad sung by Cassidy. The studio dismissed it as "filler" and cut it to save runtime on the vinyl release, prioritizing the "epic duet" formula instead.
-                </p>
-            </div>
-
-            <div class="list-group-item bg-transparent border-secondary text-muted py-3">
-                <div class="mb-1"><strong class="fs-5">5. Harbor in the Storm</strong></div>
-                <p class="mb-0">
-                    The 6-minute epic rock ballad that lost the battle for a spot on the debut album. Apex chose "My Anchor Holds" instead because it was shorter and featured both vocalists. This track showcases Ryan's "Engine" power in a way the studio tried to suppress.
-                </p>
-            </div>
-            
-             <div class="list-group-item bg-transparent border-secondary text-muted py-3">
-                <div class="d-flex w-100 justify-content-between align-items-center mb-1">
-                    <strong class="text-warning fs-5">6. We Own the Night (Pre-1987 Demo)</strong>
-                    <span class="badge bg-secondary">The Lost Anthem</span>
+            <wa-accordion-item>
+                <div slot="label" class="d-flex w-100 justify-content-between align-items-center m-0">
+                    <strong class="text-primary fs-5">2. Midnight Drivers (Basement Demo)</strong>
                 </div>
-                <p class="mb-0">
-                    Written in 1986 as a potential entrance anthem for the CPI Forgers football team. The band ultimately submitted "Ignition" instead, but this raw, "Queen-style" chant song remains a fascinating glimpse into their early "stadium rock" ambitions.
+                <p class="text-muted mb-0">
+                    This is an early, raw basement recording of what would eventually become the title track of their 2001 retro-engineered album. Recorded in 1987 before the track was polished in the studio (which Apex Records ultimately deemed too dark and shelved), this gritty demo captures the isolating, moody energy the band originally envisioned before the label interference.
                 </p>
-            </div>
+            </wa-accordion-item>
 
-        </div>
+            <wa-accordion-item>
+                <div slot="label" class="d-flex w-100 justify-content-between align-items-center m-0">
+                    <strong class="text-primary fs-5">3. Radio Silence</strong>
+                </div>
+                <p class="text-muted mb-0">
+                    A 1986 deep cut demo that Apex Records threw out during the <em>Electric Color</em> selection process because it was deemed "too heavy on the synths and too light on the pop". It remained a fan-favorite myth among diehards who traded bootleg cassette tapes, finally getting an official release on this vault compilation.
+                </p>
+            </wa-accordion-item>
+
+            <wa-accordion-item>
+                <div slot="label" class="d-flex w-100 justify-content-between align-items-center m-0">
+                    <strong class="text-primary fs-5">4. Empty Arenas</strong>
+                </div>
+                <p class="text-muted mb-0">
+                    Recorded in 1990 shortly after Ryan's life-altering accident, this solemn, stripped-down track reflects the band's fear that they would never be able to play live again. It was ultimately deemed too depressing for the <em>Friction</em> era and was kept locked away. Its inclusion on <em>Lost Sounds</em> is a poignant reminder of the darkest period in the band's history.
+                </p>
+            </wa-accordion-item>
+
+            <wa-accordion-item>
+                <div slot="label" class="d-flex w-100 justify-content-between align-items-center m-0">
+                    <strong class="text-primary fs-5">5. The Contract</strong>
+                    <wa-badge variant="danger" class="ms-3">Vent Track</wa-badge>
+                </div>
+                <p class="text-muted mb-0">
+                    The legendary 1992 punk-rock vent track. Recorded entirely in secret during their bitter legal dispute with Apex Records, the band absolutely shreds their former label for their suffocating creative control. The sheer anger in Ryan's guitar work makes this a standout deep cut. It was never intended for public release, serving strictly as a therapeutic middle finger to the studio executives.
+                </p>
+            </wa-accordion-item>
+
+            <wa-accordion-item>
+                <div slot="label" class="d-flex w-100 justify-content-between align-items-center m-0">
+                    <strong class="text-primary fs-5">6. Neon Hearts (Acoustic Sketch)</strong>
+                </div>
+                <p class="text-muted mb-3">
+                    This is the raw, acoustic sketch of what would become their heavily manufactured 1989 hit, "Neon Hearts." Without the glossy, heavy studio synths imposed by Apex Records, this early draft reveals the song to be a surprisingly tender, intimate ballad rather than a club-ready pop anthem.
+                </p>
+                <div class="alert alert-info border-info-subtle text-info-emphasis mb-0 p-3">
+                    <i class="fa-solid fa-compact-disc me-2"></i><strong>Compare versions:</strong> 
+                    Hear the heavily-produced final studio version of this song on the 
+                    <a href="/engine-room/artists/stardust-engine/discography/1989-neon-hearts" class="alert-link fw-bold text-decoration-underline">Neon Hearts (1989)</a> 
+                    album page.
+                </div>
+            </wa-accordion-item>
+
+            <wa-accordion-item>
+                <div slot="label" class="d-flex w-100 justify-content-between align-items-center m-0">
+                    <strong class="text-primary fs-5">7. Zero-G Sanctuary</strong>
+                </div>
+                <p class="text-muted mb-0">
+                    An outtake from the 2003 <em>Sanctuary: Zero-G</em> sessions. While the band loved the atmospheric, floating vibe of the track, they felt it disrupted the pacing of the final album, which they wanted to keep more grounded in its rock elements. It remained a beloved studio jam in the vault until this compilation.
+                </p>
+            </wa-accordion-item>
+
+            <wa-accordion-item>
+                <div slot="label" class="d-flex w-100 justify-content-between align-items-center m-0">
+                    <strong class="text-primary fs-5">8. Steel and Synthetics</strong>
+                </div>
+                <p class="text-muted mb-0">
+                    Originally written during the 1997 <em>Hard Reset</em> sessions, it serves as a love letter to the band's dual identities—the "Steel" of rock and the "Synthetics" of electronic music. It was cut simply due to runtime constraints on the double album, but remains a fan favorite.
+                </p>
+            </wa-accordion-item>
+
+            <wa-accordion-item>
+                <div slot="label" class="d-flex w-100 justify-content-between align-items-center m-0">
+                    <strong class="text-primary fs-5">9. Our Own Frequency</strong>
+                    <wa-badge variant="success" class="ms-3">New Recording</wa-badge>
+                </div>
+                <p class="text-muted mb-0">
+                    A brand new track recorded specifically for the 2007 <em>Lost Sounds</em> compilation, intentionally designed to simulate the stripped-down, acoustic music Ryan and Cassidy were making together back in 1985 (before their cousins Evan and Tyler joined to form The Stardust Engine). After digging through years of painful, heavily-manufactured Apex Records history, they wanted to close the album by returning to their roots. Written and recorded in a single afternoon with just an acoustic guitar and a piano, "Our Own Frequency" is a triumphant, intimate declaration of their bond as brother and sister. It is the exact kind of acoustic scratch track they always wanted to make, completely free of label interference.
+                </p>
+            </wa-accordion-item>
+            <wa-accordion-item>
+                <div slot="label" class="d-flex w-100 justify-content-between align-items-center m-0">
+                    <strong class="text-primary fs-5">10. The Promise (Corporate Demo)</strong>
+                    <wa-badge variant="danger" class="ms-3">Banned</wa-badge>
+                </div>
+                <p class="text-muted mb-0">
+                    The exact sound Apex wanted: safe, sterile, and ready for a televangelist broadcast. Scrapped after the "Worship" video controversy.
+                </p>
+            </wa-accordion-item>
+
+            <wa-accordion-item>
+                <div slot="label" class="d-flex w-100 justify-content-between align-items-center m-0">
+                    <strong class="text-primary fs-5">11. The Promise (Sabotage Demo)</strong>
+                    <wa-badge variant="danger" class="ms-3">Banned</wa-badge>
+                </div>
+                <p class="text-muted mb-0">
+                    Ryan's malicious compliance. He played the synth-gospel track but snuck a blistering, unholy rock solo into the bridge, terrifying the executives.
+                </p>
+            </wa-accordion-item>
+
+            <wa-accordion-item>
+                <div slot="label" class="d-flex w-100 justify-content-between align-items-center m-0">
+                    <strong class="text-primary fs-5">12. Atmosphere (Warehouse Demo)</strong>
+                </div>
+                <p class="text-muted mb-0">
+                    The "Lost Gem" from the canceled 1992 Friction sessions. Julian Vance's misinterpretation of these literal space-shuttle lyrics caused the catastrophic contract fallout.
+                </p>
+            </wa-accordion-item>
+
+            <wa-accordion-item>
+                <div slot="label" class="d-flex w-100 justify-content-between align-items-center m-0">
+                    <strong class="text-primary fs-5">13. Sanctuary in the Storm</strong>
+                    <wa-badge variant="warning" class="ms-3">Unreleased</wa-badge>
+<p class="text-muted mb-0">
+    An epic 80s power ballad duet about finding love and safety after a difficult past. Features a male and female vocalist, a powerful piano intro, massive drums with gated reverb, and a soaring electric guitar solo. The song builds from gentle verses to a huge, heartfelt, and dramatic chorus. It is the signature song for John and Megan (characters the band created in 1986). It represents John finding a safe harbor with his wife Megan after suffering and finally breaking free from an abusive past relationship. It was put on their early demo cassette to shop around, but no studio wanted it.
+</p>
+            </wa-accordion-item>
+
+            <wa-accordion-item>
+                <div slot="label" class="d-flex w-100 justify-content-between align-items-center m-0">
+                    <strong class="text-primary fs-5">14. Not Her</strong>
+                    <wa-badge variant="warning" class="ms-3">Unreleased</wa-badge>
+<p class="text-muted mb-0">
+    A powerful, defiant 80s rock anthem and duet showing the protective bond between John and his fraternal twin sister, Erin. It captures the moment a predator starts making the wrong moves on Erin. John recognizes the predator's manipulative tactics because of his own past trauma and abuse, unleashing his analytical fury to shut it down. Erin's bridge is a fierce and assertive plea to escape, delivered with raw rock energy. The final chorus is their unified, protective roar—John declaring "Not Her, NEVER AGAIN!" to ensure his sister doesn't suffer what he did.
+</p>
+            </wa-accordion-item>
+
+        </wa-accordion>
     </div>
 
 </div>

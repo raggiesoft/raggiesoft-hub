@@ -71,4 +71,20 @@ $album_path_web = '/engine-room-records/artists/the-stardust-engine/1989-neon-he
         </div>
     </div>
 
+    <div class="alert alert-dark border-info mt-4">
+        <div class="d-flex">
+            <div class="me-3">
+                 <i class="fa-duotone fa-microphone-stand text-info fs-3"></i>
+            </div>
+            <div>
+                <h5 class="alert-heading h6 fw-bold text-info text-uppercase mb-1">The Acoustic Sketch</h5>
+                <p class="mb-0 small text-muted">
+                    Before Apex Records drowned the title track in heavy synth-pop gloss, "Neon Hearts" was originally written as a tender, intimate ballad by Ryan and Cassidy. You can hear this rare early version (just a brother and sister jamming with a piano and acoustic guitar) on the 
+                    <a href="/engine-room/artists/stardust-engine/discography/2007-lost-sounds" class="alert-link fw-bold text-decoration-underline text-info-emphasis">2007 Lost Sounds</a> 
+                    archival compilation.
+                </p>
+            </div>
+        </div>
+    </div>
+
 </div>

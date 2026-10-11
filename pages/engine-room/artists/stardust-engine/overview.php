@@ -186,67 +186,37 @@ if ($eras) {
     </div>
 </div>
 <div class="container py-5 border-bottom border-secondary border-opacity-25 position-relative" style="z-index: 1050;">
-    <div class="text-center mb-5">
-        <span class="badge bg-warning text-dark px-3 py-2 text-uppercase letter-spacing-1 shadow-glow mb-3 border border-warning">
-            <i class="fa-duotone fa-satellite-dish me-2 pulse-icon"></i>Upcoming 2026 Release
-        </span>
-        <h2 class="display-5 fw-bold text-uppercase text-body-emphasis mb-3" style="font-family: 'Impact', sans-serif;">
-            The Twin Moons Project
-        </h2>
-        <p class="lead text-body-secondary mx-auto" style="max-width: 800px;">
-            The next album from The Stardust Engine is an ambitious dual-release project arriving in 2026. Two distinct perspectives. Two gravitational pulls. One shared universe.
-        </p>
-    </div>
-
-    <div class="row g-5 justify-content-center">
+    <div class="row align-items-center justify-content-center g-5">
         
-        <div class="col-md-6 col-lg-5">
-            <a href="/engine-room/artists/stardust-engine/discography/2003-moon-1-sanctuary-zero-g" class="text-decoration-none">
-                <div class="card bg-transparent h-100 shadow-glow hover-lift w-100 overflow-hidden" style="border: 1px solid var(--wa-color-brand);">
-                    <div class="position-relative">
-                        <img src="<?php echo $cdnBaseUrl; ?>/engine-room-records/artists/the-stardust-engine/2003-sanctuary-zero-g/album-art.jpg" 
-                             class="w-100 border-bottom border-info" 
-                             alt="Sanctuary (Zero-G) Album Art - The Stardust Engine">
-                        <div class="position-absolute top-0 end-0 p-3">
-                            <wa-badge variant="brand" class="font-monospace">MOON 1</wa-badge>
-                        </div>
-                    </div>
-                    <div class="card-body p-4 text-center d-flex flex-column">
-                        <h3 class="h4 text-info fw-bold text-uppercase mb-1">Sanctuary (Zero-G)</h3>
-                        <p class="small text-body-secondary font-monospace mb-3">The Anchor // Cassidy O'Connell</p>
-                        <p class="text-body small mb-0">
-                            A zero-gravity atmospheric masterpiece showcasing the mathematically precise <strong>Cosmic Tidal Lock Sound&trade;</strong>. A sanctuary built on unwavering loyalty in the endless black.
-                        </p>
-                    </div>
-                </div>
+        <div class="col-md-5 col-lg-4 text-center">
+            <a href="/engine-room/artists/stardust-engine/discography/2007-lost-sounds" class="text-decoration-none">
+                <img src="<?php echo $cdnBaseUrl; ?>/engine-room-records/artists/the-stardust-engine/2007-lost-sounds/album-art.jpg" 
+                     class="img-fluid rounded shadow-lg border border-secondary hover-lift" 
+                     alt="Lost Sounds Album Art - The Stardust Engine"
+                     style="transition: transform 0.3s ease;">
             </a>
         </div>
-
-        <div class="col-md-6 col-lg-5">
-            <a href="/engine-room/artists/stardust-engine/discography/2003-moon-2-mile-marker-98" class="text-decoration-none">
-                <div class="card bg-transparent h-100 shadow-glow hover-lift w-100 overflow-hidden" style="border: 1px solid var(--wa-color-danger);">
-                    <div class="position-relative">
-                        <img src="<?php echo $cdnBaseUrl; ?>/engine-room-records/artists/the-stardust-engine/2003-mile-marker-98/album-art.jpg" 
-                             class="w-100 border-bottom border-danger" 
-                             alt="Mile Marker 98 Album Art - The Stardust Engine">
-                        <div class="position-absolute top-0 end-0 p-3">
-                            <wa-badge variant="danger" class="font-monospace">MOON 2</wa-badge>
-                        </div>
-                    </div>
-                    <div class="card-body p-4 text-center d-flex flex-column">
-                        <h3 class="h4 text-danger fw-bold text-uppercase mb-1">Mile Marker 98</h3>
-                        <p class="small text-body-secondary font-monospace mb-3">The Engine // Ryan O'Connell</p>
-                        <p class="text-body small mb-0">
-                            Blistering, distorted electric guitars and aggressive rock energy. A visceral, high-friction confrontation with the trauma of <a href="/engine-room/artists/stardust-engine/story/crash-of-90" class="text-info fw-bold text-decoration-none border-bottom border-info">The Crash of '90</a>.
-                        </p>
-                    </div>
-                </div>
+        
+        <div class="col-md-7 col-lg-6">
+            <span class="badge bg-primary text-light px-3 py-2 text-uppercase letter-spacing-1 shadow-glow mb-3 border border-primary">
+                <i class="fa-duotone fa-compact-disc me-2 pulse-icon"></i>New Archival Release
+            </span>
+            <h2 class="display-5 fw-bold text-uppercase text-body-emphasis mb-3" style="font-family: 'Impact', sans-serif;">
+                Lost Sounds
+            </h2>
+            <p class="lead text-body-secondary mb-3">
+                Dive into the forbidden vault of the Apex Records era. For decades, these legendary outtakes, raw basement demos, and canceled controversial tracks existed only as bootlegs traded among the diehard "Forger Nation."
+            </p>
+            <p class="text-body mb-4">
+                Now you can finally hear the music they weren't allowed to release—from the infamous banned demo of <em>"The Promise"</em> to the intimate acoustic sketch of their mega-hit <em>"Neon Hearts"</em> before the studio drowned it in synth-pop gloss.
+            </p>
+            <a href="/engine-room/artists/stardust-engine/discography/2007-lost-sounds" class="btn btn-primary btn-lg rounded-pill px-5 fw-bold shadow-glow hover-lift">
+                <i class="fa-solid fa-play me-2"></i>Explore the Album
             </a>
         </div>
-
+        
     </div>
 </div>
-
 
 <div class="container py-5">
     <div class="row g-4">

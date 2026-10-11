@@ -135,8 +135,11 @@
     "/engine-room/artists/stardust-engine/discography/2007-lost-sounds": {
         "view": "pages/engine-room/artists/stardust-engine/discography/2007-lost-sounds",
         "title": "Lost Sounds (2007) | The Stardust Engine",
+        "ogTitle": "Lost Sounds - The 2007 Archival Compilation",
+        "ogImage": "/engine-room-records/artists/the-stardust-engine/2007-lost-sounds/social-preview.jpg",
         "schemaType": "MusicAlbum",
         "albumFilter": "Lost Sounds",
+        "upc": "825324114864",
         "narrativeReleaseDate": "2007",
         "realReleaseDate": "2026-06-03"
     },
