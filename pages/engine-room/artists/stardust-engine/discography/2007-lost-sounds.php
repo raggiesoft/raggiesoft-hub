@@ -168,6 +168,7 @@ $album_path_web = '/engine-room-records/artists/the-stardust-engine/2007-lost-so
                 <div slot="label" class="d-flex w-100 justify-content-between align-items-center m-0">
                     <strong class="text-primary fs-5">13. Sanctuary in the Storm</strong>
                     <wa-badge variant="warning" class="ms-3">Unreleased</wa-badge>
+                </div>
 <p class="text-muted mb-0">
     An epic 80s power ballad duet about finding love and safety after a difficult past. Features a male and female vocalist, a powerful piano intro, massive drums with gated reverb, and a soaring electric guitar solo. The song builds from gentle verses to a huge, heartfelt, and dramatic chorus. It is the signature song for John and Megan (characters the band created in 1986). It represents John finding a safe harbor with his wife Megan after suffering and finally breaking free from an abusive past relationship. It was put on their early demo cassette to shop around, but no studio wanted it.
 </p>
@@ -177,6 +178,7 @@ $album_path_web = '/engine-room-records/artists/the-stardust-engine/2007-lost-so
                 <div slot="label" class="d-flex w-100 justify-content-between align-items-center m-0">
                     <strong class="text-primary fs-5">14. Not Her</strong>
                     <wa-badge variant="warning" class="ms-3">Unreleased</wa-badge>
+                </div>
 <p class="text-muted mb-0">
     A powerful, defiant 80s rock anthem and duet showing the protective bond between John and his fraternal twin sister, Erin. It captures the moment a predator starts making the wrong moves on Erin. John recognizes the predator's manipulative tactics because of his own past trauma and abuse, unleashing his analytical fury to shut it down. Erin's bridge is a fierce and assertive plea to escape, delivered with raw rock energy. The final chorus is their unified, protective roar—John declaring "Not Her, NEVER AGAIN!" to ensure his sister doesn't suffer what he did.
 </p>
