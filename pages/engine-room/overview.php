@@ -99,8 +99,7 @@ usort($latestAlbums, function($a, $b) {
 <style>
     /* FAN HUB STYLING */
     .engine-hero {
-        background: linear-gradient(to bottom, rgba(13, 17, 23, 0.8), rgba(13, 17, 23, 0.95)), 
-                    url('<?php echo $cdnBaseUrl; ?>/stardust-engine/images/studio-rack.jpg') center/cover;
+        /* background removed in favor of full-width img tag */ ?>/stardust-engine/images/studio-rack.jpg') center/cover;
         background-color: #0d1117; /* Fallback */
         border-bottom: 4px solid var(--bs-primary);
     }
@@ -175,15 +174,13 @@ usort($latestAlbums, function($a, $b) {
     }
 </style>
 
-<div class="engine-hero py-5 mb-5 shadow-lg text-white wa-theme-dark w-100" data-bs-theme="dark">
+<div class="engine-hero mb-5 shadow-lg text-white wa-theme-dark w-100" data-bs-theme="dark" style="background-color: #0d1117;">
+    <img src="<?php echo $cdnBaseUrl; ?>/engine-room-records/images/err-hero.jpg" 
+         alt="Engine Room Records - A cinematic ensemble cast across genres" 
+         class="w-100 object-fit-cover border-bottom border-primary" style="max-height: 60vh;">
+         
     <div class="container text-center py-5">
-        <img src="<?php echo $cdnBaseUrl; ?>/engine-room-records/images/err-hero.jpg" 
-             alt="Engine Room Records - A cinematic ensemble cast across genres" 
-             class="img-fluid rounded shadow-lg mb-4">
-             
-        <h1 class="display-3 fw-bold text-uppercase mb-3 brand-font" style="letter-spacing: 2px;">
-            Engine Room Records&trade;
-        </h1>
+        <h1 class="visually-hidden">Engine Room Records</h1>
         <p class="lead tech-font opacity-75 mb-4 mx-auto" style="max-width: 700px;">
             Loud. Raw. Real. An independent creative collective dedicated to narrative-driven rock, industrial soundscapes, and symphonic metal.
         </p>
