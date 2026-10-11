@@ -1,0 +1,22 @@
+{
+    "common": {
+        "site": "stardust-engine",
+        "theme": "crucible",
+        "showSidebar": true,
+        "sidebar": "sidebar-stories",
+        "siteName": "The Crucible",
+        "headerMenu": "engine-room/header-engine-room",
+        "footer": "engine-room/footer-engine-room",
+        "navbarBrandLogo": "/engine-room-records/images/logos/engine-room-records-logo.png",
+        "navbarBrandText": "<span class=\"d-none d-md-inline\">The </span>Crucible",
+        "navbarBrandLink": "/engine-room/artists/stardust-engine",
+        "ogImage": "/engine-room-records/artists/the-stardust-engine/2016-live-at-the-crucible/album-art.jpg",
+        "navbarBrandAlt": "Engine Room Records Official Seal",
+        "navbarBrandClass": "rounded-0 navbar-brand-corporate-img",
+        "isSequential": true
+    },
+    "/engine-room/artists/stardust-engine/story/crucible": {
+        "title": "The Crucible - Ignition (The Forger's Call)",
+        "ogDescription": "The origin of The Stomp, Ignition, and Jeremiah Vance's Ironhead Covenant for The Crucible."
+    }
+}

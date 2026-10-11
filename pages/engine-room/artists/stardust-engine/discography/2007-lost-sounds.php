@@ -51,18 +51,30 @@ $album_path_web = '/engine-room-records/artists/the-stardust-engine/2007-lost-so
                 <div slot="label" class="d-flex w-100 justify-content-between align-items-center m-0">
                     <strong class="text-primary fs-5">1. The Stardust Engine (The Rejected Mix)</strong>
                 </div>
-                <p class="text-muted mb-0">
+                <p class="text-muted mb-3">
                     This alternate version of "The Stardust Engine" was one of the original demos shopped around to record companies when the band formed in 1986. Apex Records signed them but rejected this version, burying the final studio version as track 13 on 1987's <em>Electric Color</em>. The band famously despises Apex for what happened to them during the 1992 label dispute. For this vault release, they officially retitled this early cut "(The Rejected Mix)" instead of naming Apex Records directly, serving as a quiet nod to their lingering resentment.
                 </p>
+                <div class="alert alert-info border-info-subtle text-info-emphasis mb-0 p-3">
+                    <i class="fa-solid fa-compact-disc me-2"></i><strong>Compare versions:</strong> 
+                    Hear the buried studio version of this song on the 
+                    <a href="/engine-room/artists/stardust-engine/discography/1987-electric-color" class="alert-link fw-bold text-decoration-underline">Electric Color (1987)</a> 
+                    album page.
+                </div>
             </wa-accordion-item>
 
             <wa-accordion-item>
                 <div slot="label" class="d-flex w-100 justify-content-between align-items-center m-0">
                     <strong class="text-primary fs-5">2. Midnight Drivers (Basement Demo)</strong>
                 </div>
-                <p class="text-muted mb-0">
+                <p class="text-muted mb-3">
                     This is an early, raw basement recording of what would eventually become the title track of their 2001 retro-engineered album. Recorded in 1987 before the track was polished in the studio (which Apex Records ultimately deemed too dark and shelved), this gritty demo captures the isolating, moody energy the band originally envisioned before the label interference.
                 </p>
+                <div class="alert alert-info border-info-subtle text-info-emphasis mb-0 p-3">
+                    <i class="fa-solid fa-compact-disc me-2"></i><strong>Compare versions:</strong> 
+                    Hear how this shelved track finally found its conceptual home on the 
+                    <a href="/engine-room/artists/stardust-engine/discography/2001-midnight-drivers" class="alert-link fw-bold text-decoration-underline">Midnight Drivers (2001)</a> 
+                    album page.
+                </div>
             </wa-accordion-item>
 
             <wa-accordion-item>
@@ -78,9 +90,15 @@ $album_path_web = '/engine-room-records/artists/the-stardust-engine/2007-lost-so
                 <div slot="label" class="d-flex w-100 justify-content-between align-items-center m-0">
                     <strong class="text-primary fs-5">4. Empty Arenas</strong>
                 </div>
-                <p class="text-muted mb-0">
+                <p class="text-muted mb-3">
                     Recorded in 1990 shortly after Ryan's life-altering accident, this solemn, stripped-down track reflects the band's fear that they would never be able to play live again. It was ultimately deemed too depressing for the <em>Friction</em> era and was kept locked away. Its inclusion on <em>Lost Sounds</em> is a poignant reminder of the darkest period in the band's history.
                 </p>
+                <div class="alert alert-info border-info-subtle text-info-emphasis mb-0 p-3">
+                    <i class="fa-solid fa-book-open-cover me-2"></i><strong>Historical Archive:</strong> 
+                    Read the detailed lore regarding the tragic event that inspired this song in 
+                    <a href="/engine-room/artists/stardust-engine/story/crash-of-90" class="alert-link fw-bold text-decoration-underline">The Crash of '90</a> 
+                    archive.
+                </div>
             </wa-accordion-item>
 
             <wa-accordion-item>
@@ -88,9 +106,15 @@ $album_path_web = '/engine-room-records/artists/the-stardust-engine/2007-lost-so
                     <strong class="text-primary fs-5">5. The Contract</strong>
                     <wa-badge variant="danger" class="ms-3">Vent Track</wa-badge>
                 </div>
-                <p class="text-muted mb-0">
+                <p class="text-muted mb-3">
                     The legendary 1992 punk-rock vent track. Recorded entirely in secret during their bitter legal dispute with Apex Records, the band absolutely shreds their former label for their suffocating creative control. The sheer anger in Ryan's guitar work makes this a standout deep cut. It was never intended for public release, serving strictly as a therapeutic middle finger to the studio executives.
                 </p>
+                <div class="alert alert-info border-info-subtle text-info-emphasis mb-0 p-3">
+                    <i class="fa-solid fa-book-open-cover me-2"></i><strong>Historical Archive:</strong> 
+                    Explore the full breakdown of the band's bitter legal and creative dispute with Apex Records in 
+                    <a href="/engine-room/artists/stardust-engine/story/friction" class="alert-link fw-bold text-decoration-underline">The Friction Catastrophe</a> 
+                    archive.
+                </div>
             </wa-accordion-item>
 
             <wa-accordion-item>
@@ -110,20 +134,32 @@ $album_path_web = '/engine-room-records/artists/the-stardust-engine/2007-lost-so
 
             <wa-accordion-item>
                 <div slot="label" class="d-flex w-100 justify-content-between align-items-center m-0">
-                    <strong class="text-primary fs-5">7. Zero-G Sanctuary</strong>
+                    <strong class="text-primary fs-5">7. Sanctuary: Zero G (Rough Mix)</strong>
                 </div>
-                <p class="text-muted mb-0">
+                <p class="text-muted mb-3">
                     An outtake from the 2003 <em>Sanctuary: Zero-G</em> sessions. While the band loved the atmospheric, floating vibe of the track, they felt it disrupted the pacing of the final album, which they wanted to keep more grounded in its rock elements. It remained a beloved studio jam in the vault until this compilation.
                 </p>
+                <div class="alert alert-info border-info-subtle text-info-emphasis mb-0 p-3">
+                    <i class="fa-solid fa-compact-disc me-2"></i><strong>Explore the Album:</strong> 
+                    Hear the final versions of the songs that made the cut on the 
+                    <a href="/engine-room/artists/stardust-engine/discography/2003-moon-1-sanctuary-zero-g" class="alert-link fw-bold text-decoration-underline">Sanctuary: Zero G (2003)</a> 
+                    album page.
+                </div>
             </wa-accordion-item>
 
             <wa-accordion-item>
                 <div slot="label" class="d-flex w-100 justify-content-between align-items-center m-0">
                     <strong class="text-primary fs-5">8. Steel and Synthetics</strong>
                 </div>
-                <p class="text-muted mb-0">
+                <p class="text-muted mb-3">
                     Originally written during the 1997 <em>Hard Reset</em> sessions, it serves as a love letter to the band's dual identities—the "Steel" of rock and the "Synthetics" of electronic music. It was cut simply due to runtime constraints on the double album, but remains a fan favorite.
                 </p>
+                <div class="alert alert-info border-info-subtle text-info-emphasis mb-0 p-3">
+                    <i class="fa-solid fa-compact-disc me-2"></i><strong>Explore the Album:</strong> 
+                    Hear the groundbreaking 1997 double album this track was cut from on the 
+                    <a href="/engine-room/artists/stardust-engine/discography/1997-hard-reset" class="alert-link fw-bold text-decoration-underline">Hard Reset (1997)</a> 
+                    album page.
+                </div>
             </wa-accordion-item>
 
             <wa-accordion-item>
@@ -132,7 +168,7 @@ $album_path_web = '/engine-room-records/artists/the-stardust-engine/2007-lost-so
                     <wa-badge variant="success" class="ms-3">New Recording</wa-badge>
                 </div>
                 <p class="text-muted mb-0">
-                    A brand new track recorded specifically for the 2007 <em>Lost Sounds</em> compilation, intentionally designed to simulate the stripped-down, acoustic music Ryan and Cassidy were making together back in 1985 (before their cousins Evan and Tyler joined to form The Stardust Engine). After digging through years of painful, heavily-manufactured Apex Records history, they wanted to close the album by returning to their roots. Written and recorded in a single afternoon with just an acoustic guitar and a piano, "Our Own Frequency" is a triumphant, intimate declaration of their bond as brother and sister. It is the exact kind of acoustic scratch track they always wanted to make, completely free of label interference.
+                    A brand new track recorded specifically for the 2007 <em>Lost Sounds</em> compilation, intentionally designed to simulate the stripped-down, acoustic music Ryan and Cassidy were making together back in 1985 (before their cousins Evan and Tyler joined to form The Stardust Engine). After digging through years of painful, heavily-manufactured Apex Records history, they wanted to return to their roots. Written and recorded in a single afternoon with just an acoustic guitar and a piano, "Our Own Frequency" is a triumphant, intimate declaration of their bond as brother and sister. It is the exact kind of acoustic scratch track they always wanted to make, completely free of label interference.
                 </p>
             </wa-accordion-item>
             <wa-accordion-item>
@@ -140,9 +176,15 @@ $album_path_web = '/engine-room-records/artists/the-stardust-engine/2007-lost-so
                     <strong class="text-primary fs-5">10. The Promise (Corporate Demo)</strong>
                     <wa-badge variant="danger" class="ms-3">Banned</wa-badge>
                 </div>
-                <p class="text-muted mb-0">
+                <p class="text-muted mb-3">
                     The exact sound Apex wanted: safe, sterile, and ready for a televangelist broadcast. Scrapped after the "Worship" video controversy.
                 </p>
+                <div class="alert alert-info border-info-subtle text-info-emphasis mb-0 p-3">
+                    <i class="fa-solid fa-compact-disc me-2"></i><strong>Compare versions:</strong> 
+                    Hear the heavily-produced pop version that ultimately made the record on the 
+                    <a href="/engine-room/artists/stardust-engine/discography/1989-neon-hearts" class="alert-link fw-bold text-decoration-underline">Neon Hearts (1989)</a> 
+                    album page.
+                </div>
             </wa-accordion-item>
 
             <wa-accordion-item>
@@ -150,18 +192,36 @@ $album_path_web = '/engine-room-records/artists/the-stardust-engine/2007-lost-so
                     <strong class="text-primary fs-5">11. The Promise (Sabotage Demo)</strong>
                     <wa-badge variant="danger" class="ms-3">Banned</wa-badge>
                 </div>
-                <p class="text-muted mb-0">
+                <p class="text-muted mb-3">
                     Ryan's malicious compliance. He played the synth-gospel track but snuck a blistering, unholy rock solo into the bridge, terrifying the executives.
                 </p>
+                <div class="alert alert-info border-info-subtle text-info-emphasis mb-0 p-3">
+                    <i class="fa-solid fa-compact-disc me-2"></i><strong>Compare versions:</strong> 
+                    Hear the sanitized version Apex Records ultimately forced onto the 
+                    <a href="/engine-room/artists/stardust-engine/discography/1989-neon-hearts" class="alert-link fw-bold text-decoration-underline">Neon Hearts (1989)</a> 
+                    album page.
+                </div>
             </wa-accordion-item>
 
             <wa-accordion-item>
                 <div slot="label" class="d-flex w-100 justify-content-between align-items-center m-0">
                     <strong class="text-primary fs-5">12. Atmosphere (Warehouse Demo)</strong>
                 </div>
-                <p class="text-muted mb-0">
+                <p class="text-muted mb-3">
                     The "Lost Gem" from the canceled 1992 Friction sessions. Julian Vance's misinterpretation of these literal space-shuttle lyrics caused the catastrophic contract fallout.
                 </p>
+                <div class="alert alert-info border-info-subtle text-info-emphasis mb-0 p-3">
+                    <i class="fa-solid fa-book-open-cover me-2"></i><strong>Historical Archive:</strong> 
+                    Read exactly how this song destroyed the band's relationship with Apex Records in 
+                    <a href="/engine-room/artists/stardust-engine/story/friction" class="alert-link fw-bold text-decoration-underline">The Friction Catastrophe</a> 
+                    archive.
+                    
+                    <hr class="border-info-subtle opacity-50 my-2">
+                    
+                    <i class="fa-solid fa-compact-disc me-2"></i><strong>Explore the Album:</strong> 
+                    Hear the massive, heavy industrial version of this song that the band eventually self-released on 
+                    <a href="/engine-room/artists/stardust-engine/discography/1995-the-warehouse-tapes" class="alert-link fw-bold text-decoration-underline">The Warehouse Tapes (1995)</a>.
+                </div>
             </wa-accordion-item>
 
             <wa-accordion-item>
@@ -179,9 +239,9 @@ $album_path_web = '/engine-room-records/artists/the-stardust-engine/2007-lost-so
                     <strong class="text-primary fs-5">14. Not Her</strong>
                     <wa-badge variant="warning" class="ms-3">Unreleased</wa-badge>
                 </div>
-<p class="text-muted mb-0">
-    A powerful, defiant 80s rock anthem and duet showing the protective bond between John and his fraternal twin sister, Erin. It captures the moment a predator starts making the wrong moves on Erin. John recognizes the predator's manipulative tactics because of his own past trauma and abuse, unleashing his analytical fury to shut it down. Erin's bridge is a fierce and assertive plea to escape, delivered with raw rock energy. The final chorus is their unified, protective roar—John declaring "Not Her, NEVER AGAIN!" to ensure his sister doesn't suffer what he did.
-</p>
+                <p class="text-muted mb-0">
+                    A powerful, defiant 80s rock anthem and duet showing the protective bond between John and his fraternal twin sister, Erin. It captures the moment a predator starts making the wrong moves on Erin. John recognizes the predator's manipulative tactics because of his own past trauma and abuse, unleashing his analytical fury to shut it down. Erin's bridge is a fierce and assertive plea to escape, delivered with raw rock energy. The final chorus is their unified, protective roar—John declaring "Not Her, NEVER AGAIN!" to ensure his sister doesn't suffer what he did.
+                </p>
             </wa-accordion-item>
 
         </wa-accordion>
