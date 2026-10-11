@@ -177,9 +177,9 @@ usort($latestAlbums, function($a, $b) {
 
 <div class="engine-hero py-5 mb-5 shadow-lg text-white wa-theme-dark w-100" data-bs-theme="dark">
     <div class="container text-center py-5">
-        <img src="<?php echo $cdnBaseUrl; ?>/engine-room-records/images/logos/engine-room-records-logo.png" 
-             alt="Engine Room Records" 
-             class="mb-4 logo-invert hero-logo">
+        <img src="<?php echo $cdnBaseUrl; ?>/engine-room-records/images/err-hero.jpg" 
+             alt="Engine Room Records - A cinematic ensemble cast across genres" 
+             class="img-fluid rounded shadow-lg mb-4">
              
         <h1 class="display-3 fw-bold text-uppercase mb-3 brand-font" style="letter-spacing: 2px;">
             Engine Room Records&trade;
