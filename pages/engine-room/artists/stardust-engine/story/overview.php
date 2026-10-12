@@ -165,7 +165,7 @@ $pageTitle = "The Lore - The Stardust Engine";
         <!-- Grid Item: Our Own Frequency -->
         <div class="col-12 col-md-6 col-lg-4 d-flex align-items-stretch">
             <wa-card class="h-100 border-primary shadow-sm hover-card bg-transparent w-100 p-0" style="--wa-panel-bg: transparent; --body-padding: 0;">
-                <img src="<?php echo $cdnBaseUrl; ?>/engine-room-records/artists/the-stardust-engine/2008-our-own-frequency/social-preview-base.jpg" class="img-fluid border-bottom" alt="Ryan and Cassidy in the studio"
+                <img src="<?php echo $cdnBaseUrl; ?>/engine-room-records/artists/the-stardust-engine/2008-our-own-frequency/album-art.jpg" class="img-fluid border-bottom" alt="Ryan and Cassidy in the studio"
                      style="filter: brightness(0.8);">
                 <div class="d-flex flex-column h-100 p-3">
                     <h3 class="h5 fw-bold text-primary">The Burnout Hiatus</h3>
