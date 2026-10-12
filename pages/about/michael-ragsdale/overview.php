@@ -56,7 +56,10 @@ global $cdn_root;
     "GitHub Copilot",
     "Suno AI Audio Generation",
     "E-Commerce Architecture (MoR)",
-    "DNS Routing & Virtual Hosting"
+    "DNS Routing & Virtual Hosting",
+    "Cloudflare R2 Object Storage",
+    "FFmpeg Media Transcoding",
+    "PHP GD Image Processing"
     ],
     "sameAs": [
         "https://store.raggiesoft.com"
@@ -115,7 +118,8 @@ global $cdn_root;
                 <span class="badge bg-secondary-subtle text-secondary-emphasis border border-secondary-subtle px-3 py-2 font-monospace fs-7">Vanilla JS (ES6+)</span>
                 <span class="badge bg-secondary-subtle text-secondary-emphasis border border-secondary-subtle px-3 py-2 font-monospace fs-7">Linux (Bash/Shell)</span>
                 <span class="badge bg-secondary-subtle text-secondary-emphasis border border-secondary-subtle px-3 py-2 font-monospace fs-7">DigitalOcean</span>
-                <span class="badge bg-secondary-subtle text-secondary-emphasis border border-secondary-subtle px-3 py-2 font-monospace fs-7">Cloudflare</span>
+                <span class="badge bg-secondary-subtle text-secondary-emphasis border border-secondary-subtle px-3 py-2 font-monospace fs-7">Cloudflare / R2</span>
+                <span class="badge bg-secondary-subtle text-secondary-emphasis border border-secondary-subtle px-3 py-2 font-monospace fs-7">FFmpeg</span>
                 
                 <span class="badge bg-info-subtle text-info-emphasis border border-info-subtle px-3 py-2 font-monospace fs-7"><i class="fa-solid fa-sparkles me-1"></i>Antigravity IDE (Gemini)</span>
                 <span class="badge bg-dark-subtle text-dark-emphasis border border-dark-subtle px-3 py-2 font-monospace fs-7"><i class="fa-brands fa-github me-1"></i>Copilot</span>
