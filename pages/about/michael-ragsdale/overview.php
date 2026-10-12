@@ -57,7 +57,7 @@ global $cdn_root;
     "Suno AI Audio Generation",
     "E-Commerce Architecture (MoR)",
     "DNS Routing & Virtual Hosting",
-    "Cloudflare R2 Object Storage",
+    "DigitalOcean Spaces (Object Storage)",
     "FFmpeg Media Transcoding",
     "PHP GD Image Processing"
     ],
@@ -117,8 +117,8 @@ global $cdn_root;
                 <span class="badge bg-secondary-subtle text-secondary-emphasis border border-secondary-subtle px-3 py-2 font-monospace fs-7">PHP 8.4 (MVC)</span>
                 <span class="badge bg-secondary-subtle text-secondary-emphasis border border-secondary-subtle px-3 py-2 font-monospace fs-7">Vanilla JS (ES6+)</span>
                 <span class="badge bg-secondary-subtle text-secondary-emphasis border border-secondary-subtle px-3 py-2 font-monospace fs-7">Linux (Bash/Shell)</span>
-                <span class="badge bg-secondary-subtle text-secondary-emphasis border border-secondary-subtle px-3 py-2 font-monospace fs-7">DigitalOcean</span>
-                <span class="badge bg-secondary-subtle text-secondary-emphasis border border-secondary-subtle px-3 py-2 font-monospace fs-7">Cloudflare / R2</span>
+                <span class="badge bg-secondary-subtle text-secondary-emphasis border border-secondary-subtle px-3 py-2 font-monospace fs-7">DigitalOcean Spaces</span>
+                <span class="badge bg-secondary-subtle text-secondary-emphasis border border-secondary-subtle px-3 py-2 font-monospace fs-7">Cloudflare</span>
                 <span class="badge bg-secondary-subtle text-secondary-emphasis border border-secondary-subtle px-3 py-2 font-monospace fs-7">FFmpeg</span>
                 
                 <span class="badge bg-info-subtle text-info-emphasis border border-info-subtle px-3 py-2 font-monospace fs-7"><i class="fa-solid fa-sparkles me-1"></i>Antigravity IDE (Gemini)</span>
