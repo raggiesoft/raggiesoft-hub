@@ -1,7 +1,15 @@
 {
     "common": {
-        "sidebar": "engine-room-stardust-engine",
-        "headerMenu": "engine-room-stardust-engine"
+        "site": "stardust-engine",
+        "brandFont": ["Audiowide", "sans-serif"],
+        "siteName": "The Stardust Engine",
+        "headerMenu": "engine-room/artists/stardust-engine/header-stardust",
+        "footer": "engine-room/artists/stardust-engine/footer-stardust",
+        "showSidebar": false,
+        "navbarBrandLogo": "/engine-room-records/artists/the-stardust-engine/band-logo.png",
+        "navbarBrandText": "<span class=\"navbar-brand-text\"><span class=\"d-none d-md-inline\">The </span>Stardust Engine</span>",
+        "navbarBrandLink": "/engine-room/artists/stardust-engine",
+        "ogImage": "/engine-room-records/artists/the-stardust-engine/social-preview.jpg"
     },
     "/engine-room/artists/stardust-engine/story/our-own-frequency": {
         "view": "pages/engine-room/artists/stardust-engine/story/our-own-frequency",
