@@ -143,6 +143,15 @@
         "narrativeReleaseDate": "2007",
         "realReleaseDate": "2026-06-03"
     },
+    "/engine-room/artists/stardust-engine/discography/2008-our-own-frequency": {
+        "view": "pages/engine-room/artists/stardust-engine/discography/2008-our-own-frequency",
+        "title": "Our Own Frequency (2008) | The Stardust Engine",
+        "ogTitle": "Our Own Frequency - The 2008 Album",
+        "ogImage": "/engine-room-records/artists/the-stardust-engine/2008-our-own-frequency/social-preview-base.jpg",
+        "schemaType": "MusicAlbum",
+        "albumFilter": "Our Own Frequency",
+        "narrativeReleaseDate": "2008"
+    },
     "/engine-room/artists/stardust-engine/discography/2015-re-ignition": {
         "view": "pages/engine-room/artists/stardust-engine/discography/2015-re-ignition",
         "title": "Re-Ignition (2015) | The Stardust Engine"

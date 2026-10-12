@@ -1,0 +1,13 @@
+{
+    "common": {
+        "sidebar": "engine-room-stardust-engine",
+        "headerMenu": "engine-room-stardust-engine"
+    },
+    "/engine-room/artists/stardust-engine/story/our-own-frequency": {
+        "view": "pages/engine-room/artists/stardust-engine/story/our-own-frequency",
+        "title": "Story: Our Own Frequency | The Stardust Engine",
+        "ogTitle": "The Burnout Hiatus - Our Own Frequency",
+        "ogImage": "/engine-room-records/artists/the-stardust-engine/2008-our-own-frequency/social-preview-base.jpg"
+    }
+}
+

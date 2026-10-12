@@ -90,9 +90,9 @@ $pageTitle = "The Crucible & Ignition - The Stardust Engine Lore";
                         <em>Chairman of the Board</em>, Commonwealth Polytechnic Institute
                     </p>
 
-                    <div class="mt-4 p-3 bg-warning bg-opacity-10 border border-warning rounded">
+                    <div class="mt-4 p-3 alert alert-warning shadow-sm rounded">
                         <p class="fw-bold mb-1"><i class="fa-duotone fa-paperclip me-2"></i>Statement of Intent (Attached to Contract)</p>
-                        <p class="mb-0 text-muted fst-italic">Handwritten note by Jeremiah Vance:</p>
+                        <p class="mb-0 opacity-75 fst-italic">Handwritten note by Jeremiah Vance:</p>
                         <blockquote class="blockquote fs-6 mt-2 mb-0">
                             "I am giving you this money so that no Forger ever has to pay to play. In return, I am asking you to keep our soul. This stadium is where boys are forged into men. It is a place of heat, pressure, and transformation. Don't you dare sell it to a bank. Don't you dare turn it into a country club. Keep it loud. Keep it hard. Keep it The Crucible."
                         </blockquote>

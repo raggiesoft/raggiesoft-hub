@@ -162,7 +162,24 @@ $pageTitle = "The Lore - The Stardust Engine";
                 </div>
             </wa-card>
         </div>
-
+        <!-- Grid Item: Our Own Frequency -->
+        <div class="col-12 col-md-6 col-lg-4 d-flex align-items-stretch">
+            <wa-card class="h-100 border-primary shadow-sm hover-card bg-transparent w-100 p-0" style="--wa-panel-bg: transparent; --body-padding: 0;">
+                <img src="<?php echo $cdnBaseUrl; ?>/engine-room-records/artists/the-stardust-engine/2008-our-own-frequency/social-preview-base.jpg" class="img-fluid border-bottom" alt="Ryan and Cassidy in the studio"
+                     style="filter: brightness(0.8);">
+                <div class="d-flex flex-column h-100 p-3">
+                    <h3 class="h5 fw-bold text-primary">The Burnout Hiatus</h3>
+                    <p class="card-text text-muted small">
+                        Pushed to the edge by industry pressure and exhaustion, Ryan and Cassidy retreated to the studio to record an intimate acoustic confession.
+                    </p>
+                    <div class="mt-auto pt-3">
+                        <wa-button variant="primary" outline href="/engine-room/artists/stardust-engine/story/our-own-frequency" class="w-100">
+                            <i slot="prefix" class="fa-duotone fa-guitar"></i>Read the Story
+                        </wa-button>
+                    </div>
+                </div>
+            </wa-card>
+        </div>
         <!-- Grid Item: CPI & The Forgers -->
         <div class="col-12 col-md-6 col-lg-4 d-flex align-items-stretch">
             <wa-card class="h-100 border-secondary shadow-sm hover-card bg-transparent w-100 p-0" style="--wa-panel-bg: transparent; --body-padding: 0;">

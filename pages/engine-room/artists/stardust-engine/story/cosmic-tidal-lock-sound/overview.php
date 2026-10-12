@@ -91,7 +91,7 @@ $articleSchema = [
                             This sound is exactly what the band <em>wanted</em> to do in 1987. However, Apex Records flatly refused, demanding safe, terrestrial dance-pop instead.
                         </p>
                         <p class="text-white-75 small mb-0">
-                            The distinct engineering technique was born out of absolute necessity following the 1992 "Friction Catastrophe." It was first fully realized and perfected by Cassidy on the track <strong>"Moon 1 (Tidal Lock)"</strong>. Because the sound is 100% Cassidy's vision and execution, tracks utilizing this specific profile feature her crystal-clear female vocals exclusively.
+                            The distinct engineering technique was born out of absolute necessity following the 1992 "Friction Catastrophe." It was first fully realized and perfected by Cassidy on the track <strong>"Moon 1 (Tidal Lock)"</strong>. While originally engineered around Cassidy's solo crystal-clear female vocals, the "Starfield Recalibration" era expanded the architecture to fully support a male and female duet, allowing both siblings to utilize the massive, zero-gravity atmospheric effect.
                         </p>
                     </div>
                     <div class="col-md-7 bg-dark bg-opacity-75 p-4 p-lg-5 d-flex flex-column justify-content-center">
@@ -114,7 +114,7 @@ $articleSchema = [
                 </div>
                 <div class="card-body p-4 p-lg-5 text-light">
                     <p class="mb-4 text-white-75">
-                        To accurately generate tracks within this specific sonic profile using Suno AI, the following Style Prompts must be used. Suno must rely entirely on the "female vocalist" tag to honor Cassidy's solo architecture.
+                        To accurately generate tracks within this specific sonic profile using Suno AI, the following Style Prompts must be used. Depending on the era, Suno must rely on the "female vocalist" tag (for Cassidy's solo architecture) or the "male and female duet" tag (for the Starfield Recalibration era).
                     </p>
 
                     <div class="list-group list-group-flush bg-transparent">
@@ -123,7 +123,7 @@ $articleSchema = [
                             <h5 class="text-success fw-bold mb-2">1. The Studio Master Prompt</h5>
                             <p class="small text-white-50 mb-2 fst-italic">Use this for generating the clean, original album tracks.</p>
                             <div class="bg-black border border-secondary rounded p-3 font-monospace small text-info">
-                                1980s synth-pop, mid-tempo space-rock, driving 4/4 gated drum beat, shimmering analog synthesizers, melodic fretless bassline, crystal clear female vocals, lush spatial reverb, celestial atmosphere
+                                1980s synth-pop, mid-tempo space-rock, driving 4/4 gated drum beat, shimmering analog synthesizers, melodic fretless bassline, [crystal clear female vocals | male and female duet], lush spatial reverb, celestial atmosphere
                             </div>
                         </div>
 
@@ -135,7 +135,7 @@ $articleSchema = [
                                 <li><strong>Lyrics Box Requirement:</strong> Top the lyrics with bracketed audio-environment tags like <code>[Live Crowd Cheering]</code> or <code>[Low Synth Drone Intro]</code>.</li>
                             </ul>
                             <div class="bg-black border border-secondary rounded p-3 font-monospace small text-info">
-                                1980s synth-pop, live stadium concert, massive crowd cheering, mid-tempo space-rock, driving 4/4 gated drum beat, shimmering analog synthesizers, melodic fretless bassline, crystal clear female vocals, lush spatial reverb, celestial atmosphere, echoing stadium acoustics
+                                1980s synth-pop, live stadium concert, massive crowd cheering, mid-tempo space-rock, driving 4/4 gated drum beat, shimmering analog synthesizers, melodic fretless bassline, [crystal clear female vocals | male and female duet], lush spatial reverb, celestial atmosphere, echoing stadium acoustics
                             </div>
                         </div>
 
@@ -147,7 +147,7 @@ $articleSchema = [
                                 <li><strong>Lyrics Box Requirement:</strong> Top the lyrics with bracketed hard-cues like <code>[Continuous Crowd Roar]</code>, <code>[Seamless Transition]</code>, and <code>[Immediate Synth Riff]</code>.</li>
                             </ul>
                             <div class="bg-black border border-secondary rounded p-3 font-monospace small text-info">
-                                1980s synth-pop, live stadium concert, massive crowd cheering, mid-tempo space-rock, driving 4/4 gated drum beat, shimmering analog synthesizers, melodic fretless bassline, crystal clear female vocals, lush spatial reverb, celestial atmosphere, echoing stadium acoustics, mid-concert energy, seamless transition, continuous flow, immediate start
+                                1980s synth-pop, live stadium concert, massive crowd cheering, mid-tempo space-rock, driving 4/4 gated drum beat, shimmering analog synthesizers, melodic fretless bassline, [crystal clear female vocals | male and female duet], lush spatial reverb, celestial atmosphere, echoing stadium acoustics, mid-concert energy, seamless transition, continuous flow, immediate start
                             </div>
                         </div>
 
