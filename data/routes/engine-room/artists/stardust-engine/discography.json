@@ -18,6 +18,7 @@
         "view": "pages/engine-room/artists/stardust-engine/discography/overview",
         "title": "Discography | The Stardust Engine",
         "ogTitle": "Discography - The Stardust Engine",
+        "ogImage": "/engine-room-records/artists/the-stardust-engine/discography-social-preview.jpg",
         "showSidebar": false
     },
     "/engine-room/artists/stardust-engine/discography/1987-electric-color": {
@@ -150,7 +151,9 @@
         "ogImage": "/engine-room-records/artists/the-stardust-engine/2008-our-own-frequency/social-preview.jpg",
         "schemaType": "MusicAlbum",
         "albumFilter": "Our Own Frequency",
-        "narrativeReleaseDate": "2008"
+        "upc": "700521288573",
+        "narrativeReleaseDate": "2008",
+        "realReleaseDate": "2026-10-16"
     },
     "/engine-room/artists/stardust-engine/discography/2015-re-ignition": {
         "view": "pages/engine-room/artists/stardust-engine/discography/2015-re-ignition",
