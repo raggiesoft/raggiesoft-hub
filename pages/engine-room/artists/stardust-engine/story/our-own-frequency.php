@@ -6,17 +6,15 @@ $pageTitle = "Story: Our Own Frequency - The Stardust Engine";
 <div class="container py-5">
     <div class="row justify-content-center">
         <div class="col-lg-8">
-            <nav aria-label="breadcrumb" class="mb-4">
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="/engine-room/artists/stardust-engine">The Stardust Engine</a></li>
-                    <li class="breadcrumb-item"><a href="/engine-room/artists/stardust-engine/story">Story</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Our Own Frequency</li>
-                </ol>
-            </nav>
+            <wa-breadcrumb class="mb-4">
+                <wa-breadcrumb-item href="/engine-room/artists/stardust-engine">The Stardust Engine</wa-breadcrumb-item>
+                <wa-breadcrumb-item href="/engine-room/artists/stardust-engine/story">Story</wa-breadcrumb-item>
+                <wa-breadcrumb-item>Our Own Frequency</wa-breadcrumb-item>
+            </wa-breadcrumb>
 
             <h1 class="display-4 fw-bold mb-4 font-heading">Our Own Frequency</h1>
             
-            <img src="<?= $cdnBaseUrl ?>/engine-room-records/artists/the-stardust-engine/2008-our-own-frequency/social-preview-base.jpg" class="img-fluid rounded shadow-sm mb-4" alt="Our Own Frequency">
+            <img src="<?= $cdnBaseUrl ?>/engine-room-records/artists/the-stardust-engine/2008-our-own-frequency/social-preview.jpg" class="img-fluid rounded shadow-sm mb-4" alt="Our Own Frequency">
 
             <div class="lead mb-4">
                 By 2008, the crushing weight of their success had taken its toll. Seeking an escape from the stadium rock lifestyle and endless tours, the entire band retreated to the studio to record something deeply intimate and purely for themselves.
@@ -50,12 +48,12 @@ $pageTitle = "Story: Our Own Frequency - The Stardust Engine";
                 The song brings these private acts of survival into the light, serving as both a confession of their extreme codependence and a fiercely protective anthem.
             </p>
 
-            <div class="alert alert-info border-info-subtle mt-5">
-                <i class="fa-solid fa-compact-disc me-2"></i><strong>Explore the Album:</strong> 
-                Listen to the intimate, stripped-down tracks on the 
-                <a href="/engine-room/artists/stardust-engine/discography/2008-our-own-frequency" class="alert-link fw-bold text-decoration-underline">Our Own Frequency (2008)</a> 
+            <wa-callout variant="brand" appearance="outlined" class="mt-5">
+                <wa-icon name="compact-disc" slot="icon"></wa-icon>
+                <strong>Explore the Album:</strong> Listen to the intimate, stripped-down tracks on the 
+                <a href="/engine-room/artists/stardust-engine/discography/2008-our-own-frequency" class="fw-bold text-decoration-underline">Our Own Frequency (2008)</a> 
                 discography page.
-            </div>
+            </wa-callout>
             
             <?php
             $nav = [
