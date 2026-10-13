@@ -4,8 +4,25 @@
  * ARCHITECTURE & DESIGN: Engine Room Records Global Footer
  * ============================================================================
  * ROLE: The primary footer for the "Engine Room Records" narrative property.
- *       Provides business licensing links, catalog navigation, and the core
- *       marketing identity ("Loud. Raw. Real.") for the fictional imprint.
+ *       Engine Room Records represents the musical heartbeat of the RaggieSoft
+ *       universe. Founded by Michael Ragsdale as an independent label within
+ *       RaggieSoft Media, the platform provides sanctuary for independent artists
+ *       reclaiming their masters, creating concept rock operas, and preserving
+ *       memories across four decades of storytelling.
+ * 
+ * POLICY & SECURITY (CLOSED-SYSTEM INFRASTRUCTURE):
+ *       Engine Room Records is an artistic closed system and does NOT sign any
+ *       outside artists—every artist on the roster is an AI Persona.
+ *       Any attempts to submit unsolicited material to Engine Room Records or
+ *       its associated addresses are automatically dropped and permanently deleted
+ *       without human review at the Microsoft Exchange Transport Rule level.
+ * 
+ * ACCESSIBILITY & WCAG COMPLIANCE:
+ *       The unsolicited submission disclaimer utilizes Web Awesome (<wa-callout>)
+ *       with an accent danger appearance to guarantee full WCAG AA/AAA color
+ *       contrast compliance across both Light ("The Day Shift") and Dark
+ *       ("The Night Shift / The Vault") themes, eliminating contrast failures
+ *       inherent in legacy Bootstrap alerts on dark backgrounds.
  * 
  * INTEGRATION: Injected via the router when the `engine-room` theme/site is 
  *              active. Requires `$cdnBaseUrl` and optionally `$hq_location` 
@@ -13,7 +30,7 @@
  * 
  * MAINTENANCE: Changes to the Grid Layout must account for tablet and mobile
  *              stacking. The "No Submissions" alert is a critical piece of 
- *              in-universe narrative identity—do not remove.
+ *              in-universe narrative identity and real-world security—do not remove.
  * ============================================================================
  */
 ?>
@@ -31,8 +48,8 @@
                 <div class="text-uppercase fw-bold fs-5" style="font-family: 'Courier New', monospace; letter-spacing: -1px;">
                     Loud. Raw. Real.
                 </div>
-                <p class="small  mt-2 mb-0">
-                    An independent music imprint operated entirely by RaggieSoft.
+                <p class="small text-body-secondary mt-2 mb-0">
+                    The musical heartbeat of the RaggieSoft universe. Founded by Michael Ragsdale within RaggieSoft Media as an independent sanctuary for concept rock operas and preserving memories across four decades of storytelling.
                 </p>
             </div>
 
@@ -96,11 +113,19 @@
                     <i class="fa-solid fa-envelope me-2"></i><a href="mailto:inquiries@engineroom-records.com" class="text-decoration-none text-body-secondary hover-text-primary">inquiries@engineroom-records.com</a>
                 </p>
                 
-                <!-- [UI COMPONENT] Narrative Security Alert: In-universe auto-rejection notice -->
-                <div class="alert alert-danger p-2 small border-danger shadow-sm text-start mb-0" role="alert">
-                    <strong class="d-block mb-1"><i class="fa-solid fa-shield-xmark me-1"></i> No Submissions</strong>
-                    Unsolicited material is deleted automatically by our servers.
-                </div>
+                <!-- 
+                    [UI COMPONENT] Closed-System & Narrative Security Disclaimer:
+                    Built with Web Awesome (<wa-callout>) to guarantee WCAG AA/AAA color contrast
+                    compliance in both light and dark themes. Discloses AI Persona roster 
+                    and Microsoft Exchange transport-level automated deletion of unsolicited work.
+                -->
+                <wa-callout variant="danger" appearance="accent" size="s" class="text-start shadow-sm mb-0">
+                    <wa-icon slot="icon" name="shield-xmark" variant="solid"></wa-icon>
+                    <strong class="d-block mb-1">Closed System &bull; No Submissions</strong>
+                    <div class="small">
+                        Engine Room Records does not sign artists—every artist on this label is an AI Persona. Any attempts to submit material are deleted unread at the Microsoft Exchange Transport level.
+                    </div>
+                </wa-callout>
             </div>
 
         </div>
