@@ -122,7 +122,14 @@ $isDarkTheme = (isset($currentPageTheme) && in_array($currentPageTheme, ['dark',
 <script>
 // 1. Wrap the Store UI logic into a reusable function
 function initializeStorePreferences() {
-    const savedPlatform = localStorage.getItem('preferredMusicStore');
+    const combinedUa = (navigator.userAgent || '') + ' ' + (navigator.platform || '');
+    const isAndroidOrChromeOs = /Android|CrOS/i.test(combinedUa);
+    const isAppleDevice = /Macintosh|MacIntel|MacPPC|Mac68K|iPhone|iPad|iPod/i.test(combinedUa);
+    const osDefault = isAndroidOrChromeOs ? 'youtube' : (isAppleDevice ? 'apple' : 'spotify');
+    const savedPlatform =
+        localStorage.getItem('user_preferred_dsp') ||
+        localStorage.getItem('preferredMusicStore') ||
+        osDefault;
     
     function updateButtonGroup(group, platformData) {
         const mainBtn = group.querySelector('.main-store-btn');
@@ -149,7 +156,9 @@ function initializeStorePreferences() {
 
     if (savedPlatform) {
         document.querySelectorAll('.dynamic-store-group').forEach(group => {
-            const targetLink = group.querySelector(`.store-selector-link[data-platform="${savedPlatform}"]`);
+            const targetLink =
+                group.querySelector(`.store-selector-link[data-platform="${savedPlatform}"]`) ||
+                group.querySelector('.store-selector-link');
             if (targetLink) updateButtonGroup(group, targetLink.dataset);
         });
     }
@@ -161,6 +170,7 @@ function initializeStorePreferences() {
         link.addEventListener('click', function(e) {
             const platform = this.dataset.platform;
             localStorage.setItem('preferredMusicStore', platform);
+            localStorage.setItem('user_preferred_dsp', platform);
             
             // Instantly visually swap all buttons on the page without needing a refresh
             document.querySelectorAll('.dynamic-store-group').forEach(group => {

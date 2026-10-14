@@ -60,7 +60,28 @@ $urls = [
     'youtube' => $type === 'artist' ? "https://music.youtube.com/channel/{$ids['youtube']}" : "https://music.youtube.com/playlist?list={$ids['youtube']}"
 ];
 
-$default = 'spotify'; 
+// Determine intelligent OS-aware initial default:
+// - Android & ChromeOS -> YouTube ('youtube')
+// - macOS, iOS, & iPadOS -> Apple Music ('apple')
+// - Windows, Linux, & other -> Spotify ('spotify')
+// Falls back gracefully to the first available platform if the OS default is empty on this release.
+$userAgent = $_SERVER['HTTP_USER_AGENT'] ?? '';
+if (preg_match('/Android|CrOS/i', $userAgent)) {
+    $osDefault = 'youtube';
+} elseif (preg_match('/Macintosh|Mac OS X|iPhone|iPad|iPod/i', $userAgent)) {
+    $osDefault = 'apple';
+} else {
+    $osDefault = 'spotify';
+}
+$default = !empty($ids[$osDefault]) ? $osDefault : 'spotify';
+if (empty($ids[$default])) {
+    foreach ($ids as $platformKey => $platformId) {
+        if (!empty($platformId)) {
+            $default = $platformKey;
+            break;
+        }
+    }
+}
 $hasMerch = !empty($physical['vinyl']) || !empty($physical['cd']) || !empty($physical['apparel']);
 ?>
 
