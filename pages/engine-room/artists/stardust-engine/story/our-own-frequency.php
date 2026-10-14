@@ -22,7 +22,7 @@ $pageTitle = "Story: Our Own Frequency - The Stardust Engine";
 
             <h2 class="h3 fw-bold mt-5 mb-3 font-heading text-primary">The Burnout</h2>
             <p>
-                After the massive ambition of the Twin Moons project in 2003, The Stardust Engine found themselves on a treadmill they couldn't turn off. Years of non-stop touring, media obligations, and the physical toll of Ryan's condition had pushed the band to the breaking point. The "Burnout Hiatus" wasn't a choice; it was a survival mechanism. They needed to stop before they shattered.
+                After the massive ambition of the <em>Twin Moons</em> project in 2003 and the immediate back-to-back recording and touring cycle of <em>Progress Street</em> in 2004, The Stardust Engine found themselves on a treadmill they couldn't turn off. Releasing three full studio albums in under two years alongside relentless media obligations and the physical toll of Ryan's condition finally pushed the band past the breaking point after <em>Progress Street</em> wrapped. The "Burnout Hiatus" wasn't a choice; it was a survival mechanism. They needed to stop before they shattered.
             </p>
             <p>
                 Instead of drifting apart during the hiatus, the tight-knit family group banded together. The O'Connell siblings (Ryan, Cassidy, and Holly) and their maternal cousins, identical twins Evan and Tyler Wright, completely locked themselves inside the recording studio. They stripped away the synthesizers, the massive drums, and the heavy electric guitars. They shut out the world and sat down as a family with just an acoustic guitar, a piano, and their voices.
