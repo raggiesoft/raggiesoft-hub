@@ -7,8 +7,7 @@
  *
  * 1. Lore Context:
  *    - Canonical historical archive for "The Crucible" (Commonwealth Polytechnic
- *      Institute's 65,000-seat concrete-and-steel football stadium in Blacksburg, VA,
- *      the in-universe counterpart to Virginia Tech's Lane Stadium).
+ *      Institute's 65,000-seat concrete-and-steel football stadium in Blacksburg, VA).
  *    - Documents five foundational pillars of Crucible lore:
  *      a) The 1995 "Ironhead Covenant": Alumnus Jeremiah "Ironhead" Vance's (Class of '52)
  *         $100,000,000 endowment mandating permanent naming rights ("The Crucible"),
@@ -24,7 +23,7 @@
  *         with Tyler Wright's recorded brake drum birthed "The Stomp".
  *      d) The October 8, 2004 Secret Fourth-Quarter Premiere of "Saturday Night Lights:
  *         The Crucible" during the Coal & Iron Border War against #6 Monongahela State
- *         University (MSU, in-universe WVU)—where CPI's diehard student section ("The
+ *         University (MSU Coalminers)—where CPI's diehard student section ("The
  *         Ironheads") birthed the "BAH! BAH! BAH!" brass fanfare singalong 48 hours before
  *         Progress Street dropped on Monday, October 10, 2004.
  *      e) The 2014-2015 CPI vs. Virginia Dominion University (VDU Monarchs / "Norfolk")
@@ -192,7 +191,7 @@ $pageTitle = "The Crucible & Ignition - The Stardust Engine Lore";
                                 <i class="fa-solid fa-fire-flame-simple me-2 text-danger"></i>Who Are "The Ironheads"?
                             </h3>
                             <p class="small text-body mb-2">
-                                Just as Duke Basketball has the <em>Cameron Crazies</em>, Commonwealth Polytechnic Institute Football has <strong>The Ironheads</strong>—the diehard, fanatical student vanguard packed shoulder-to-shoulder onto the cold galvanized metal bleachers of the North End Zone (<strong>The Anvil</strong>).
+                                Just as <strong>Buchanan University</strong> basketball is famous far and wide for <strong><em>The Pavilion Lunatics</em></strong> inside Buchanan Indoor Pavilion, Commonwealth Polytechnic Institute football is known across the nation for <strong>The Ironheads</strong>—the diehard, fanatical student vanguard packed shoulder-to-shoulder onto the cold galvanized metal bleachers of the North End Zone (<strong>The Anvil</strong>).
                             </p>
                             <p class="small text-body mb-0">
                                 Named in dual tribute to CPI's blue-collar metallurgy heritage and legendary benefactor <strong>Jeremiah "Ironhead" Vance (Class of '52)</strong>, The Ironheads wear painted maroon-and-orange steel-mill hard hats and overalls, refuse to sit down from kickoff to the final whistle, and treat acoustic decibel meters on the sidelines as a personal scoreboard.
@@ -243,7 +242,7 @@ $pageTitle = "The Crucible & Ignition - The Stardust Engine Lore";
                 For the first four bars, 65,000 fans froze as Cassidy's triumphant 1980s analog synthesizer brass fanfare and Tyler's drumline cadence rolled across the valley. Then Ryan and Cassidy's voices echoed from the giant speaker arrays above The Anvil—singing directly about <em>October '86</em>, <em>Progress Street</em>, and <em>"Sixty thousand standing in the maroon and orange sea / Waiting for the signal at CPI with me!"</em>
             </p>
             <p class="mb-0">
-                When <strong>The Ironheads</strong> realized they were hearing a brand-new, unreleased Stardust Engine stadium anthem written specifically for <em>them</em>, The Crucible detonated. Just as Boston Red Sox fans belt the horn hook of Neil Diamond's <em>"Sweet Caroline"</em> at Fenway Park, The Ironheads spontaneously locked onto Cassidy's three-note synthesizer brass fanfare at the end of every chorus line—roaring a deafening, stadium-shaking <strong><em>"BAH! BAH! BAH!"</em></strong> and chanting <strong><em>"SO GOOD! SO GOOD! SO GOOD!"</em></strong> between the verses. Riding the tidal wave of that fourth-quarter singalong, the Forgers defense stuffed Monongahela State's final drive to seal a <strong>19–13 victory</strong>. By Monday morning, when <em>Progress Street</em> officially dropped on October 10th, the fourth-quarter <em>"Saturday Night Lights"</em> singalong was already cemented as an unbreakable CPI game-day tradition—Turning <em>"Ignition"</em> into the pre-game war cry that starts the fire, and <em>"Saturday Night Lights: The Crucible"</em> into the fourth-quarter victory celebration that seals it.
+                When <strong>The Ironheads</strong> realized they were hearing a brand-new, unreleased Stardust Engine stadium anthem written specifically for <em>them</em>, The Crucible detonated. Just as <strong>Boston Beacons</strong> fans belt the eighth-inning horn hook of <em>"Sweet Evangeline"</em> at <strong>Back Bay Park</strong>, The Ironheads spontaneously locked onto Cassidy's three-note synthesizer brass fanfare at the end of every chorus line—roaring a deafening, stadium-shaking <strong><em>"BAH! BAH! BAH!"</em></strong> and chanting <strong><em>"SO GOOD! SO GOOD! SO GOOD!"</em></strong> between the verses. Riding the tidal wave of that fourth-quarter singalong, the Forgers defense stuffed Monongahela State's final drive to seal a <strong>19–13 victory</strong>. By Monday morning, when <em>Progress Street</em> officially dropped on October 10th, the fourth-quarter <em>"Saturday Night Lights"</em> singalong was already cemented as an unbreakable CPI game-day tradition—turning <em>"Ignition"</em> into the pre-game war cry that starts the fire, and <em>"Saturday Night Lights: The Crucible"</em> into the fourth-quarter victory celebration that seals it.
             </p>
         </div>
     </div>
@@ -295,7 +294,7 @@ $pageTitle = "The Crucible & Ignition - The Stardust Engine Lore";
                                 </div>
                             </div>
                             <p class="small text-body mb-2">
-                                <strong>The Hubris:</strong> On Saturday, September 27, 2014, CPI hosted VDU inside The Crucible for the very first time. Ranked <strong>#3 in the nation</strong> with a Heisman-candidate quarterback, CPI Athletics had scheduled unranked VDU as what everyone assumed would be effortless Homecoming "target practice." All week long, dorm doors across Bennett Hall and chalk murals on The Commonwealth Green depicted the CPI Forger's Hammer smashing the VDU Monarch's Crown under banners reading <em>"BEAT NORFOLK!"</em>
+                                <strong>The Hubris:</strong> On Saturday, September 27, 2014, CPI hosted VDU inside The Crucible for the very first time. Ranked <strong>#3 in the nation</strong> with a Gridiron Trophy-candidate quarterback, CPI Athletics had scheduled unranked VDU as what everyone assumed would be effortless Homecoming "target practice." All week long, dorm doors across Bennett Hall and chalk murals on The Commonwealth Green depicted the CPI Forger's Hammer smashing the VDU Monarch's Crown under banners reading <em>"BEAT NORFOLK!"</em>
                             </p>
                             <p class="small text-body mb-0">
                                 <strong>The Collapse:</strong> After CPI marched down the field on the opening drive only to push a chip-shot field goal wide left, VDU's unflashy, brute-force rushing attack systematically ground down the #3 Forgers. Eating the clock 4 and 5 yards at a time, VDU stunned the 60,000-strong crowd to lead <strong>7–0</strong> after the first quarter and <strong>24–0 at halftime</strong> (after recovering a CPI fumble inside the final minute of the half). Thousands of stunned fans streamed for the exits as the Marching Forgers took the field, and VDU poured it on in the second half to seal a historic <strong>38–0 shutout</strong> inside The Crucible.
