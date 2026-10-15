@@ -70,60 +70,153 @@ $nav = [
     <div class="row justify-content-center">
         <div class="col-lg-10">
 
-            <!-- [SECTION 1] Blue Ridge Transit & The New River Valley Spine -->
+            <!-- [SECTION 1] Blue Ridge Transit & The New River Valley Multi-Agency Grid -->
             <div class="mb-5">
                 <h2 class="h3 fw-bold border-bottom pb-2 mb-3" style="color: var(--cpi-maroon, #630031);">
-                    <i class="fa-duotone fa-route me-2"></i>1. Blue Ridge Transit (BRT) &amp; The PolyPass Grid
+                    <i class="fa-duotone fa-route me-2"></i>1. The New River Valley Transit Grid &amp; The PolyPass Ecosystem
                 </h2>
                 <p class="fs-5 text-body mb-3">
-                    In Blacksburg and Christiansburg, public transit is not an afterthought—it is the circulatory system of the entire university town. Operated by <strong>Blue Ridge Transit (BRT)</strong>, the network is powered by the <strong>PolyPass</strong>: every active CPI student and faculty ID card doubles as an unlimited, fare-free transit pass across BRT and its regional partner agencies.
+                    In Blacksburg, Christiansburg, Radford, Carroll County, and the Roanoke Valley, public transit is not an afterthought—it is the circulatory system of the entire region. Anchored by <strong>Blue Ridge Transit (BT / BRT)</strong>, the network is unified by the <strong>CPI PolyPass</strong>: every active CPI student and faculty ID card doubles as an unlimited, fare-free (`$0.00`) transit pass across <strong>four interconnected regional bus agencies</strong> (Blue Ridge Transit, Bluewater Transit, Roanoke Valley Transit, and Radford Transit).
                 </p>
                 <p class="text-body mb-4">
-                    BRT's workhorse fleet consists of 40-foot rigid and <strong>60-foot low-floor articulated transit buses</strong> manufactured by <strong>Prairie Coachworks</strong>, painted in the agency's signature <em>"Mountain Mist &amp; River Ribbon"</em> livery (Arctic Fleet White upper bodies, Appalachian Pine Green lower skirts, and dual sweeping ribbons of New River Slate-Teal and Mountain Mist Sky Blue arcing across the black rubber center accordion bellows).
+                    Blue Ridge Transit's workhorse fleet consists of 29-foot, 35-foot, and 40-foot rigid coaches alongside <strong>60-foot low-floor articulated transit buses</strong> manufactured by <strong>Prairie Coachworks</strong>, painted in the agency's signature <em>"Mountain Mist &amp; River Ribbon"</em> livery (Arctic Fleet White upper bodies, Appalachian Pine Green lower skirts, and dual sweeping ribbons of New River Slate-Teal and Mountain Mist Sky Blue arcing across the black rubber center accordion bellows, with the flip-out aluminum ADA wheelchair ramp always deployed from the <strong>front passenger boarding door</strong>).
                 </p>
 
-                <div class="row g-3">
-                    <div class="col-md-4">
+                <!-- 6-Card Regional Agency & Route Directory -->
+                <div class="row g-3 mb-4">
+                    <div class="col-md-6 col-lg-4">
                         <div class="card h-100 bg-body-tertiary border-0 shadow-sm">
                             <div class="card-body p-3">
                                 <div class="d-flex justify-content-between align-items-center mb-2">
-                                    <span class="badge bg-primary font-monospace">BRT ROUTE 1</span>
-                                    <span class="small text-body-secondary font-monospace">Every 15 Min</span>
+                                    <span class="badge bg-primary font-monospace">BT ROUTE 1</span>
+                                    <span class="small text-body-secondary font-monospace">Every 15 Min (60' Artics)</span>
                                 </div>
-                                <h3 class="h6 fw-bold mb-1">The Spine</h3>
+                                <h3 class="h6 fw-bold mb-1">The Spine (45 Min Full-Length)</h3>
                                 <p class="small text-body-secondary mb-0">
-                                    Runs continuously from the <strong>Christiansburg Transit Center at Falling Branch (Exit 118)</strong> through Uptown Mall, <strong>Pepper Plaza (Valu-Mart)</strong>, Downtown Blacksburg, and <strong>Progress Street NW</strong> to <strong>Commonwealth Mall</strong> (historically staging curbside beneath <strong>The Keystone Bridge</strong> outside <strong>Kincaid Hall</strong> prior to the opening of the dedicated <strong>CPI Transit Center</strong>).
+                                    Never short-turns: leaves <strong>Christiansburg Transit Center / Falling Branch (Exit 118)</strong>, follows <strong>US-11</strong> into downtown Christiansburg to <strong>Pepper Plaza Transit Center</strong> (next door to the <strong>Montgomery County Courthouse</strong>, across from <code>105 Pepper Street</code> &amp; Valu-Mart; 15 min), then follows <strong>South Main Street (Business US-460)</strong> and <strong>Progress Street NW</strong> into Blacksburg to <strong>Commonwealth Mall</strong> (2003–2015) or the <strong>CPI Transit Center</strong> (2016+; 30 min from Pepper Plaza).
                                 </p>
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-md-4">
+                    <div class="col-md-6 col-lg-4">
                         <div class="card h-100 bg-body-tertiary border-0 shadow-sm">
                             <div class="card-body p-3">
                                 <div class="d-flex justify-content-between align-items-center mb-2">
-                                    <span class="badge bg-danger font-monospace">BLUEWATER</span>
-                                    <span class="small text-body-secondary font-monospace">45' Coaches</span>
+                                    <span class="badge bg-info text-dark font-monospace">BT ROUTES 3 &amp; 8</span>
+                                    <span class="small text-body-secondary font-monospace">$1.00 / PolyPass $0</span>
                                 </div>
-                                <h3 class="h6 fw-bold mb-1">The Maroon Express</h3>
+                                <h3 class="h6 fw-bold mb-1">Pepper Plaza Branches</h3>
                                 <p class="small text-body-secondary mb-0">
-                                    Regional over-the-road coach line linking Carroll County and <strong>I-81 Exit 98 (NRVRC / Justin's Station)</strong> to <strong>Falling Branch (Exit 118)</strong> and CPI. Equipped with sawtooth bay boarding and mid-coach hydraulic ADA wheelchair lifts.
+                                    From <strong>Pepper Plaza Transit Center</strong>, <strong>Route 3 (The Radford Link)</strong> follows US-11 west across the New River to Radford's <strong>McConnell Transit Center</strong> (every 30 min Mon–Fri, 60 min Sat–Sun), while <strong>Route 8 (The Riner Run)</strong> follows SR-8 south to Riner (hourly Mon–Fri, 7 AM–6 PM; used by Jessica and Paige for OB/GYN appointments).
                                 </p>
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-md-4">
+                    <div class="col-md-6 col-lg-4">
                         <div class="card h-100 bg-body-tertiary border-0 shadow-sm">
                             <div class="card-body p-3">
                                 <div class="d-flex justify-content-between align-items-center mb-2">
-                                    <span class="badge bg-success font-monospace">BRT 3 / 8 / RVT</span>
-                                    <span class="small text-body-secondary font-monospace">Regional</span>
+                                    <span class="badge bg-danger font-monospace">BLUEWATER ("OTHER BT")</span>
+                                    <span class="small text-body-secondary font-monospace">$5 Express / $1 Local</span>
                                 </div>
-                                <h3 class="h6 fw-bold mb-1">Valley Connectors</h3>
+                                <h3 class="h6 fw-bold mb-1">The Maroon Express (90 Min)</h3>
                                 <p class="small text-body-secondary mb-0">
-                                    <strong>Route 3 (The Radford Link)</strong> and <strong>Route 8 (The Riner Run)</strong> branch off from Pepper Plaza, while <strong>Roanoke Valley Transit (RVT)</strong> connects CPI and Falling Branch directly to Campbell Court and Roanoke Regional Airport.
+                                    Pulses from <strong>Bluewater Transit Center</strong> (across from Bluewater High School in Bluewater, VA—hometown of Madison Elizabeth Scott; local <strong>Purple Line</strong> serves Galax CC hourly). Hourly 45' coaches run via <strong>Exit 14 P&amp;R</strong>, <strong>Max Meadows (Exit 84)</strong>, <strong>Dublin / NRVRC Justin's Station (Exit 98)</strong>, <strong>Falling Branch (Exit 118B)</strong>, and <strong>New River Mall (Christiansburg Mall)</strong> to CPI. Free with CPI PolyPass, Galax CC ID, or Carroll County Schools ID.
                                 </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100 bg-body-tertiary border-0 shadow-sm">
+                            <div class="card-body p-3">
+                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                    <span class="badge bg-success font-monospace">RVT EXPRESS &amp; RAIL</span>
+                                    <span class="small text-body-secondary font-monospace">$3 Express / $2 Local</span>
+                                </div>
+                                <h3 class="h6 fw-bold mb-1">Roanoke Express &amp; ARTS Thruway</h3>
+                                <p class="small text-body-secondary mb-0">
+                                    Links Roanoke's <strong>Third Street Station</strong> (Mon–Sat) to <strong>Falling Branch</strong>, <strong>New River Mall (Christiansburg Mall)</strong>, and <strong>CPI</strong>—offset 30 minutes from Bluewater's <em>Maroon Express</em> for <strong>30-minute combined express headways</strong>. On <strong>Oct 31, 2017</strong>, RVT launched the 7-day <strong>ARTS Train Connector</strong> meeting <strong>ARTS <em>Coastal Service / The Patriot</em></strong> (Northeast Regional) trains in Roanoke with guaranteed delayed-train holds.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100 bg-body-tertiary border-0 shadow-sm">
+                            <div class="card-body p-3">
+                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                    <span class="badge bg-secondary font-monospace">RADFORD TRANSIT</span>
+                                    <span class="small text-body-secondary font-monospace">29' Buses • $0.50 &rarr; $0</span>
+                                </div>
+                                <h3 class="h6 fw-bold mb-1">McConnell Hub &amp; School ID Rule</h3>
+                                <p class="small text-body-secondary mb-0">
+                                    Operates 29-foot buses from <strong>McConnell Transit Center</strong> (<code>$0.50</code> no-transfer fare pre-COVID; <strong>permanently 100% fare-free post-COVID</strong>). Free with CPI PolyPass, RU ID, Dublin CC ID, and Radford Public Schools ID (officially RHS only, though identical badge templates let middle and elementary kids ride free). Local routes (*Plumb Creek*, *Dublin CC*) run Mon–Fri; <strong>Radford Connector</strong> to CPI runs 7 days/week.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100 bg-body-tertiary border-0 shadow-sm">
+                            <div class="card-body p-3">
+                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                    <span class="badge bg-warning text-dark font-monospace">VALLEY FLYER</span>
+                                    <span class="small text-danger fw-bold font-monospace">NO POLYPASS ($15.99+)</span>
+                                </div>
+                                <h3 class="h6 fw-bold mb-1">D.C. Intercity Coach vs. 2003 MCI</h3>
+                                <p class="small text-body-secondary mb-0">
+                                    State-sponsored intercity coach to <strong>Washington, D.C. Union Station</strong> (`$49.99` to D.C.; `$15.99` local hop between CPI and Falling Branch; skips New River Mall &amp; downtown Roanoke; <strong>no PolyPass or Go-Card accepted</strong>). Contrast with the <strong>2003 Supplemental Commuter Coaches</strong> (45' MCI coaches running <code>Falling Branch &harr; New River Mall &harr; Commonwealth Mall</code> every 30 min, free with PolyPass).
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 4-Era Chronological Evolution Callout (Flash Pass -> CPI Transit Center -> ARTS Rail -> Blue Ridge Go-Card) -->
+                <div class="card bg-body-tertiary border-warning border-start border-5 shadow-sm">
+                    <div class="card-body p-4">
+                        <h3 class="h5 fw-bold mb-3" style="color: var(--cpi-maroon, #630031);">
+                            <i class="fa-duotone fa-timeline-arrow me-2 text-warning"></i>Chronological Evolution: From Flashing the PolyPass to the Blue Ridge Go-Card
+                        </h3>
+                        <div class="row g-3 small text-body">
+                            <div class="col-md-6">
+                                <div class="p-3 bg-body rounded border h-100">
+                                    <span class="badge bg-secondary font-monospace mb-1">ERA 1 // 2003–2015</span>
+                                    <h4 class="h6 fw-bold mb-1">Commonwealth Mall Curbside &amp; "Flash Pass" Boarding</h4>
+                                    <p class="mb-0 text-body-secondary">
+                                        Prior to 2016, all five bus agencies converged curbside along <strong>Commonwealth Mall</strong> beneath <strong>The Keystone Bridge</strong> outside <strong>Kincaid Hall</strong> (headsign: <code>1 COMMONWEALTH MALL</code>). There were no smart cards: CPI, Galax CC, Carroll County, RU, Dublin CC, and Radford students simply <strong>flashed their physical school ID cards</strong> to the bus operator at the front door.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="p-3 bg-body rounded border h-100">
+                                    <span class="badge bg-primary font-monospace mb-1">ERA 2 // 2016 &amp; OCT 31, 2017</span>
+                                    <h4 class="h6 fw-bold mb-1">CPI Transit Center &amp; ARTS Roanoke Rail Extension</h4>
+                                    <p class="mb-0 text-body-secondary">
+                                        In <strong>2016</strong>, the off-street multi-bay <strong>CPI Transit Center</strong> opened (`1 CPI TRANS CTR`), ending the Commonwealth Mall curbside bottleneck. On <strong>October 31, 2017</strong>, <strong>ARTS</strong> (<em>American Rail Transit Service</em>) extended its <strong><em>Coastal Service / The Patriot</em></strong> (Northeast Regional) train to Roanoke's <strong>Third Street Station</strong>, launching RVT's 7-day <em>Train Connector</em> Thruway service.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="p-3 bg-body rounded border h-100">
+                                    <span class="badge bg-success font-monospace mb-1">ERA 3 // POST-COVID (2020–2021+)</span>
+                                    <h4 class="h6 fw-bold mb-1">The Blue Ridge Go-Card, MagnaByte Express Mode, &amp; POP</h4>
+                                    <p class="mb-0 text-body-secondary">
+                                        Following the COVID-19 pandemic, Blue Ridge Transit, Bluewater Transit, and RVT retired visual ID flashing and launched the contactless <strong>Blue Ridge Go-Card</strong> (while Radford Transit went permanently 100% fare-free). Embedded directly into new <strong>CPI PolyPasses</strong>, Galax CC IDs, and Carroll County IDs—and supporting <strong>MagnaPhone / MagnaWatch Express Transit Mode</strong> (tap without waking) and open-loop bank cards—the Go-Card automates daily/30-day fare capping, upgrade pricing, and <strong>GPS + Tap-Off zone billing</strong> on the northbound <em>Maroon Express</em> (charging `$1.00` for local Exit 14 hops vs. `$5.00` interstate). One year later, BT installed rear-door validators on 40'/60' buses for all-door <strong>Proof of Payment (POP)</strong> boarding.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="p-3 bg-body rounded border h-100">
+                                    <span class="badge bg-info text-dark font-monospace mb-1">ERA 4 // FUTURE RAIL EXTENSION</span>
+                                    <h4 class="h6 fw-bold mb-1">ARTS Rail Reaches Christiansburg Transit Center</h4>
+                                    <p class="mb-0 text-body-secondary">
+                                        When <strong>ARTS</strong> extends passenger rail south from Roanoke toward Bristol, the <strong>Christiansburg Transit Center</strong> (with its multi-level VDOT garage, bus bays, and passenger rail station) is completed on the footprint of the <strong>Falling Branch Park &amp; Ride (Exit 118)</strong>. With trains stopping directly at Christiansburg Transit Center, RVT's special Thruway <em>Train Connector</em> is retired while regular Mon–Sat <em>Roanoke Express</em> service continues.
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
