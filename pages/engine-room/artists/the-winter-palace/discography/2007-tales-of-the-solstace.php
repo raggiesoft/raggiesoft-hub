@@ -26,7 +26,7 @@ $hero_art = $cdnBaseUrl . '/engine-room-records/artists/the-arctic-symphony-proj
                      alt="A figure in a wheelchair looking out a Gothic cathedral window toward the Northern Star.">
                 <div class="card-footer bg-transparent border-0 text-center pt-2">
                     <small class="font-monospace text-info opacity-75">
-                        <i class="fa-duotone fa-eye me-2"></i>Subjective Memory Render: Nov 1998
+                        <i class="fa-duotone fa-eye me-2"></i>Ewell, Virginia (Dec 1996) &amp; Williamsburg (Jan 2007)
                     </small>
                 </div>
             </div>
@@ -34,7 +34,7 @@ $hero_art = $cdnBaseUrl . '/engine-room-records/artists/the-arctic-symphony-proj
         
         <div class="col-md-7 ps-md-5 mt-4 mt-md-0">
             <span class="badge border border-secondary text-secondary rounded-pill mb-3 px-3">
-                <i class="fa-duotone fa-box-archive me-2"></i>Safe Harbor Catalog
+                <i class="fa-duotone fa-box-archive me-2"></i>Safe Harbor Catalog // 3-Disc Rock Opera
             </span>
             <h1 class="display-3 fw-bold text-light text-uppercase mb-1" style="font-family: 'Impact', sans-serif;">
                 Upon This Winter's Night
@@ -44,25 +44,30 @@ $hero_art = $cdnBaseUrl . '/engine-room-records/artists/the-arctic-symphony-proj
             </h2>
             
             <p class="lead text-white-50">
-                The song that built the shield. 
+                Two survivors. Ten years apart. One unyielding rescue beacon.
             </p>
             <p class="text-secondary">
-                Originally recorded in 1996 and remastered for the 2007 Engine Room archival edition, this track is canonized in Engine Room history as the "Sonic Armor" that saved <strong>Julian Croft</strong> (frontman of <strong>The Paper Wall</strong>). Julian lived next door to The Fortress, and his survival story was deeply intertwined with the O'Connell family.
+                Originally forged on December 11, 1996 in Ewell, Virginia, <em>&ldquo;Upon This Winter's Night&rdquo;</em> was recorded in a spare bedroom by eighteen-year-old twins <strong>Gabriel and Gwendolyn Rowlands</strong> and fourteen-year-old identical twins <strong>Maria and Clara Harrison</strong> when their non-verbal, autistic brother <strong>Julian &ldquo;Julep&rdquo; Rowlands</strong> was abducted by his estranged father. Built around Julian's wind-up Brahms <em>Wiegenlied</em> music box and Maria's silver glockenspiel, the track was hijacked across the Shenandoah FM broadcast repeaters by Richard Harrison—reaching Julian in a speeding car in West Virginia and giving him the strength to trigger a silent alarm at a gas station in Athens County, Ohio.
             </p>
             <p class="text-secondary">
-                When Holly learned that this out-of-print song was the specific frequency that grounded him during his escape from Seattle in 1998, she didn't just buy a copy—she bought the company. She acquired the bankrupt Solstice Records catalog to ensure the song that saved her friend would never be deleted.
+                When Vanguard Horizon signed the family band in December 1996, executive Elias Thorne locked their Cymraeg (<em>Ar Noson y Gaeaf Hon</em>), Québécois French (<em>En Cette Nuit d'Hiver</em>), and Trilingual (<em>The Family Mix</em>) recordings in the corporate vault, releasing only the English single in 1997. Years later, that 1997 recording became the &ldquo;Sonic Armor&rdquo; that grounded nineteen-year-old <strong>Matthew</strong> during his rescue from a cross-country abduction to Seattle. In January 2007, at The Crown &amp; Hound on Duke of Gloucester Street in Williamsburg, <strong>Samantha</strong> and <strong>Jyn</strong> handed the Vanguard Horizon masters back to Julian and his family—commissioning the 3-disc symphonic rock opera <strong>Tales from the Solstice</strong> to tell Matthew's story and finally liberating Julian's vaulted Trilingual <em>&ldquo;Family Mix&rdquo;</em> for the world.
             </p>
 
             <div class="card border-info bg-dark bg-opacity-50 mt-4 shadow-glow">
                 <div class="card-body p-4 d-flex flex-column flex-sm-row align-items-sm-center justify-content-between gap-3">
                     <div>
-                        <span class="badge bg-info text-dark font-monospace text-uppercase mb-1">The Listening Room</span>
+                        <span class="badge bg-info text-dark font-monospace text-uppercase mb-1">The Listening Room &amp; Ocean View Archives</span>
                         <h5 class="text-light fw-bold mb-1">Tales from the Solstice</h5>
-                        <div class="text-secondary small font-monospace">Stream "Upon This Winter's Night" &amp; read the complete lyrics</div>
+                        <div class="text-secondary small font-monospace">Stream the 3-disc rock opera or read the 5-Era novel of Julian Rowlands</div>
                     </div>
-                    <a href="https://music.raggiesoft.com/the-arctic-symphony-project/2007-tales-from-the-solstice" target="_blank" rel="noopener" class="btn btn-info rounded-pill px-4 py-2 fw-bold text-nowrap">
-                        <i class="fa-duotone fa-headphones me-2"></i>Listen Now
-                    </a>
+                    <div class="d-flex flex-wrap gap-2">
+                        <a href="https://music.raggiesoft.com/the-arctic-symphony-project/2007-tales-from-the-solstice" target="_blank" rel="noopener" class="btn btn-info rounded-pill px-4 py-2 fw-bold text-nowrap">
+                            <i class="fa-duotone fa-headphones me-2"></i>Listen Now
+                        </a>
+                        <a href="https://books.raggiesoft.com/books/julian" target="_blank" rel="noopener" class="btn btn-outline-light rounded-pill px-4 py-2 fw-bold text-nowrap">
+                            <i class="fa-duotone fa-books me-2"></i>Read the Novel
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>

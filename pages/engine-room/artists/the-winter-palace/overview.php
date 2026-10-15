@@ -52,22 +52,23 @@ $pageTheme = "ad-astra";
                 <div class="card-body">
                     <h5 class="fw-bold text-light mb-3">Artist Profile</h5>
                     <ul class="list-unstyled small text-secondary mb-0">
-                        <li class="mb-2"><strong>Genre:</strong> Symphonic Rock / Neoclassical</li>
-                        <li class="mb-2"><strong>Active:</strong> 1994–Present</li>
-                        <li class="mb-2"><strong>Origin:</strong> New York, NY</li>
-                        <li><strong>Key Sound:</strong> Heavy Cello, Distorted Guitars, Choral Vocals</li>
+                        <li class="mb-2"><strong>Genre:</strong> Symphonic Rock / Neoclassical Rock Opera</li>
+                        <li class="mb-2"><strong>Active:</strong> 1996–Present</li>
+                        <li class="mb-2"><strong>Origin:</strong> Ewell (Williamsburg), VA &amp; Llanfair PG, Anglesey, Wales</li>
+                        <li class="mb-2"><strong>Core Ensemble:</strong> Gabriel Rowlands, Gwendolyn Rowlands, Maria Harrison-Rowlands, Clara Harrison, Marcus, Sarah &amp; Julian &ldquo;Julep&rdquo; Rowlands</li>
+                        <li><strong>Key Sound:</strong> Heavy Cello, Distorted Guitars, Silver Glockenspiel, Trilingual Choir (Cymraeg / Québécois / English)</li>
                     </ul>
                 </div>
             </div>
 
             <div class="alert alert-dark border-start border-info border-4 bg-transparent">
-                <strong class="text-info">The Rescue:</strong><br>
+                <strong class="text-info">The Liberation of the Vault:</strong><br>
                 <span class="small text-muted">
-                    In 2003, the band's original label (Solstice Records) declared bankruptcy. Fearing their catalog would be locked in legal limbo or sold for scraps, Holly O'Connell intervened. She purchased everything—masters, copyrights, and existing contracts.
+                    Originally formed in December 1996 as <em>The Winter Palace</em> when Gabriel and Gwendolyn Rowlands and twins Maria and Clara Harrison turned their Ewell living room into a war room to broadcast <em>&ldquo;Upon This Winter's Night&rdquo;</em> across the Appalachian radio towers and bring fourteen-year-old Julian home from his abduction to Ohio.
                 </span>
                 <hr class="border-secondary opacity-25 my-2">
                 <span class="small text-muted">
-                    She did it to save <em>"Upon This Winter's Night"</em> for Julian Croft, and offered the ensemble a permanent home at The Fortress under their full banner, <strong>The Arctic Symphony Project</strong>.
+                    After Vanguard Horizon locked the family's Cymraeg, Québécois French, and Trilingual masters in a corporate vault in 1996, Samantha intervened a decade later—buying out Vanguard Horizon in 2007 to return the masters to the Rowlands family, liberate the Trilingual <em>&ldquo;Family Mix,&rdquo;</em> and commission the 3-disc rock opera <strong>Tales from the Solstice</strong> uniting Julian's beacon with Matthew's survival.
                 </span>
             </div>
         </div>
@@ -86,12 +87,12 @@ $pageTheme = "ad-astra";
                     </div>
                     <div class="col-md-8">
                         <div class="card-body">
-                            <h3 class="h5 fw-bold text-light">Tales from the Solstice</h3>
+                            <h3 class="h5 fw-bold text-light">Tales from the Solstice (3-Disc Rock Opera)</h3>
                             <p class="card-text text-secondary small">
-                                A cult classic of symphonic holiday rock blending heavy metal instrumentation with classical composition and winter atmospheric storytelling.
+                                A sweeping 3-disc symphonic holiday rock opera uniting Julian Rowlands' 1996 Appalachian rescue beacon with Matthew's cross-country abduction from Norfolk to Seattle and rescue by Jyn—culminating in the liberated 5-minute Trilingual &ldquo;Family Mix&rdquo; of <em>&ldquo;Upon This Winter's Night.&rdquo;</em>
                             </p>
                             <p class="card-text text-info small fst-italic">
-                                <i class="fa-duotone fa-star me-2"></i>Includes the Safe Harbor anthem "Upon This Winter's Night"
+                                <i class="fa-duotone fa-star me-2"></i>Includes both the US English Studio Master &amp; the Trilingual &ldquo;Family Mix&rdquo; (Cymraeg / Québécois / English)
                             </p>
                             
                             <div class="d-flex flex-wrap gap-2 align-items-center mt-3">
@@ -100,6 +101,9 @@ $pageTheme = "ad-astra";
                                 </a>
                                 <a href="/engine-room/artists/the-arctic-symphony-project/tales-of-the-solstice" class="btn btn-outline-info rounded-pill btn-sm px-4">
                                     <i class="fa-duotone fa-book-open-cover me-2"></i>Safe Harbor Lore
+                                </a>
+                                <a href="https://books.raggiesoft.com/books/julian" target="_blank" rel="noopener" class="btn btn-outline-light rounded-pill btn-sm px-4">
+                                    <i class="fa-duotone fa-books me-2"></i>Read Julian's Novel
                                 </a>
                             </div>
                         </div>
