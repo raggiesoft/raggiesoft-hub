@@ -37,8 +37,8 @@ $isArchives = (
 
 <div class="d-flex flex-column flex-md-row align-items-stretch align-items-md-center gap-2 ms-auto py-3 py-md-0 w-100 mobile-nav-menu">
 
-  <wa-button appearance="plain" href="/engine-room/radio" class="<?php echo $isRadio ? 'text-warning' : ''; ?>">
-    <i slot="start" class="fa-duotone fa-signal-stream"></i> Engine Room Radio
+  <wa-button appearance="plain" href="https://music.raggiesoft.com" class="text-warning fw-bold">
+    <i slot="start" class="fa-duotone fa-turntable"></i> The Listening Room
   </wa-button>
 
   <wa-dropdown placement="bottom-start">
@@ -47,26 +47,27 @@ $isArchives = (
         <i slot="end" class="fa-solid fa-circle-caret-down ms-2 opacity-50" aria-hidden="true"></i>
     </wa-button>
     <wa-menu>
-      <wa-dropdown-item value="/engine-room/artists">View Full Roster</wa-dropdown-item>
+      <wa-dropdown-item value="/engine-room/artists">View Full Roster (Lore Hub)</wa-dropdown-item>
+      <wa-dropdown-item value="https://music.raggiesoft.com/discography">Master Discography (Listening Room)</wa-dropdown-item>
     <wa-divider></wa-divider>
-    <div class="px-3 py-2 small text-uppercase text-primary fw-bold">Active Artists</div>
+    <div class="px-3 py-2 small text-uppercase text-primary fw-bold">Active Roster</div>
     <wa-dropdown-item value="/engine-room/artists/stardust-engine">
       <i slot="start" class="fa-solid fa-rocket-launch text-primary"></i> The Stardust Engine
+    </wa-dropdown-item>
+    <wa-dropdown-item value="/engine-room/artists/fractured-prisms">
+      <i slot="start" class="fa-solid fa-gem text-info"></i> Fractured Prisms
+    </wa-dropdown-item>
+    <wa-dropdown-item value="/engine-room/artists/the-paper-wall">
+      <i slot="start" class="fa-solid fa-book-open text-warning"></i> The Paper Wall
     </wa-dropdown-item>
     <wa-dropdown-item value="/engine-room/artists/crimson-node">
       <i slot="start" class="fa-solid fa-waveform-lines text-danger"></i> Crimson Node
     </wa-dropdown-item>
-    <wa-dropdown-item value="/engine-room/artists/fractured-prisms">
-      <i slot="start" class="fa-solid fa-gem "></i> Fractured Prisms
-    </wa-dropdown-item>
-    <wa-dropdown-item value="/engine-room/artists/the-paper-wall">
-      <i slot="start" class="fa-solid fa-waveform-lines text-danger"></i> The Paper Wall
-    </wa-dropdown-item>
-    <wa-dropdown-item value="/engine-room/artists/the-winter-palace">
-      <i slot="start" class="fa-solid fa-snowflake text-info"></i> The Winter Palace
-    </wa-dropdown-item>
     <wa-dropdown-item value="/raggiesoft-books/aethel-saga">
-      <i slot="start" class="fa-solid fa-sword text-warning"></i> Firelight
+      <i slot="start" class="fa-solid fa-palette text-success"></i> Mana Canvas
+    </wa-dropdown-item>
+    <wa-dropdown-item value="/engine-room/artists/the-arctic-symphony-project">
+      <i slot="start" class="fa-solid fa-snowflake text-info"></i> The Arctic Symphony Project
     </wa-dropdown-item>
     </wa-menu>
   </wa-dropdown>

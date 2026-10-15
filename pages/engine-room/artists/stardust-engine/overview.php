@@ -117,6 +117,10 @@ if ($eras) {
                 <div class="d-flex flex-column align-items-center align-items-lg-start">
                     
                     <div class="d-flex flex-wrap justify-content-center justify-content-lg-start gap-3">
+                        <a href="https://music.raggiesoft.com/the-stardust-engine" target="_blank" rel="noopener" class="btn btn-primary btn-lg shadow-sm px-4 fw-bold d-inline-flex align-items-center">
+                            <i class="fa-duotone fa-headphones me-2"></i>The Listening Room
+                        </a>
+
                         <?php
                             $storeProps = [
                                 'type' => 'artist', 
@@ -137,7 +141,7 @@ if ($eras) {
                         </a>
                     </div>
                     <p class="small text-muted mt-3 mb-0">
-                        <i class="fa-duotone fa-sliders-up me-1 text-secondary"></i> <strong>Pro Tip:</strong> Click the arrow next to the button to set your default streaming app.
+                        <i class="fa-duotone fa-sliders-up me-1 text-secondary"></i> <strong>Pro Tip:</strong> Click the arrow next to the streaming button to set your default app, or visit <a href="https://music.raggiesoft.com/the-stardust-engine" target="_blank" rel="noopener" class="text-info text-decoration-none fw-bold">music.raggiesoft.com</a> for full lyrics and liner notes.
                     </p>
                 </div>
             </div>

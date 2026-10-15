@@ -97,7 +97,7 @@ $pageTitle = "Artist Roster - Engine Room Records";
 
     <div class="row g-4 mb-5">
         
-        <!-- THE STARDUST ENGINE (ONLINE) -->
+        <!-- ERR-001: THE STARDUST ENGINE (ONLINE) -->
         <div class="col-xl-6 col-lg-12 d-flex align-items-stretch">
             <div class="card card-industrial w-100">
                 <div class="artist-img-box">
@@ -111,106 +111,137 @@ $pageTitle = "Artist Roster - Engine Room Records";
                     </div>
                     <h3 class="h4 fw-bold text-uppercase">The Stardust Engine</h3>
                     <p class="card-text small flex-grow-1">
-                        The founding artist. A family-owned progressive rock unit blending 80s synth-pop with industrial rock.
+                        The founding artist. A family-owned progressive rock unit blending 80s synth-pop with industrial and stadium rock.
                     </p>
-                    <a href="/engine-room/artists/stardust-engine" class="btn btn-outline-primary rounded-0 w-100 text-uppercase fw-bold mt-3 font-monospace">Access Archive</a>
+                    <div class="d-flex flex-wrap gap-2 mt-3">
+                        <a href="/engine-room/artists/stardust-engine" class="btn btn-outline-primary rounded-0 flex-grow-1 text-uppercase fw-bold font-monospace">
+                            <i class="fa-duotone fa-book-open-cover me-1"></i> Lore Archive
+                        </a>
+                        <a href="https://music.raggiesoft.com/the-stardust-engine" target="_blank" rel="noopener" class="btn btn-primary rounded-0 flex-grow-1 text-uppercase fw-bold font-monospace">
+                            <i class="fa-duotone fa-headphones me-1"></i> Listening Room
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
 
-        <!-- FRACTURED PRISMS (OFFLINE) -->
+        <!-- ERR-002: FRACTURED PRISMS (ONLINE) -->
         <div class="col-xl-6 col-lg-12 d-flex align-items-stretch">
             <div class="card card-industrial w-100">
-                <div class="artist-img-box bg-dark">
-                     <i class="fa-duotone fa-gem fa-5x text-secondary opacity-50"></i>
+                <div class="artist-img-box">
+                    <img src="<?php echo $cdnBaseUrl; ?>/engine-room-records/artists/fractured-prisms/band-logo.jpg" 
+                         alt="Fractured Prisms">
                 </div>
                 <div class="card-body d-flex flex-column p-4">
                     <div class="d-flex justify-content-between align-items-start mb-2">
                         <span class="badge badge-industrial">ERR-002</span>
-                        <span class="led led-busy" title="Processing"></span>
+                        <span class="led led-on" title="System Online"></span>
                     </div>
                     <h3 class="h4 fw-bold text-uppercase text-body-emphasis">Fractured Prisms</h3>
                     <p class="card-text small flex-grow-1">
-                        The First Signing (1998). Discovered in a Maryland vault. Known for "Kaleidoscope Sun" and the "Safe Harbor" flute melody.
+                        British Synth-Pop and gaslamp-lit rock operas from the Maryland sanctuary. Known for <em>Carnaby Street</em>, <em>1883</em>, and the "Safe Harbor" flute melody.
                     </p>
-                    <button class="btn btn-secondary rounded-0 w-100 text-uppercase fw-bold mt-3 font-monospace" disabled>
-                        <i class="fa-solid fa-lock me-2"></i>Decrypting Files...
-                    </button>
+                    <div class="d-flex flex-wrap gap-2 mt-3">
+                        <a href="/engine-room/artists/fractured-prisms" class="btn btn-outline-primary rounded-0 flex-grow-1 text-uppercase fw-bold font-monospace">
+                            <i class="fa-duotone fa-book-open-cover me-1"></i> Lore Archive
+                        </a>
+                        <a href="https://music.raggiesoft.com/fractured-prisms" target="_blank" rel="noopener" class="btn btn-primary rounded-0 flex-grow-1 text-uppercase fw-bold font-monospace">
+                            <i class="fa-duotone fa-headphones me-1"></i> Listening Room
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
 
-        <!-- THE PAPER WALL (OFFLINE) -->
+        <!-- ERR-003: THE PAPER WALL (ONLINE) -->
         <div class="col-xl-6 col-lg-12 d-flex align-items-stretch">
             <div class="card card-industrial w-100">
-                <div class="artist-img-box bg-dark">
-                    <i class="fa-duotone fa-waveform-lines fa-5x text-secondary opacity-50"></i>
+                <div class="artist-img-box">
+                    <img src="<?php echo $cdnBaseUrl; ?>/engine-room-records/artists/the-paper-wall/band-logo.jpg" 
+                         alt="The Paper Wall">
                 </div>
                 <div class="card-body d-flex flex-column p-4">
                     <div class="d-flex justify-content-between align-items-start mb-2">
                         <span class="badge badge-industrial">ERR-003</span>
-                        <span class="led led-off" title="Offline"></span>
+                        <span class="led led-on" title="System Online"></span>
                     </div>
                     <h3 class="h4 fw-bold text-uppercase text-body-emphasis">The Paper Wall</h3>
                     <p class="card-text small flex-grow-1">
-                        Alternative Rock / Post-Grunge. The architects of <em>Static & Silence</em>.
+                        Literary Rock Operas / Alternative Rock. Formed by Julian Croft and Maya Sterling, and the architects of <em>Static &amp; Silence</em>.
                     </p>
-                    <button class="btn btn-dark rounded-0 w-100 text-uppercase fw-bold mt-3 font-monospace border-secondary" disabled>
-                        <i class="fa-solid fa-ban me-2"></i>Restricted Access
-                    </button>
+                    <div class="d-flex flex-wrap gap-2 mt-3">
+                        <a href="/engine-room/artists/the-paper-wall" class="btn btn-outline-primary rounded-0 flex-grow-1 text-uppercase fw-bold font-monospace">
+                            <i class="fa-duotone fa-book-open-cover me-1"></i> Lore Archive
+                        </a>
+                        <a href="https://music.raggiesoft.com/the-paper-wall" target="_blank" rel="noopener" class="btn btn-primary rounded-0 flex-grow-1 text-uppercase fw-bold font-monospace">
+                            <i class="fa-duotone fa-headphones me-1"></i> Listening Room
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
 
-        <!-- FIRELIGHT (OFFLINE) -->
+        <!-- ERR-004: MANA CANVAS (ONLINE) -->
         <div class="col-xl-6 col-lg-12 d-flex align-items-stretch">
             <div class="card card-industrial w-100">
-                <div class="artist-img-box bg-black">
-                     <i class="fa-duotone fa-fire-flame-curved fa-5x text-secondary opacity-50"></i>
+                <div class="artist-img-box">
+                    <img src="<?php echo $cdnBaseUrl; ?>/engine-room-records/artists/mana-canvas/band-logo.jpg" 
+                         alt="Mana Canvas">
                 </div>
                 <div class="card-body d-flex flex-column p-4">
                     <div class="d-flex justify-content-between align-items-start mb-2">
                         <span class="badge badge-industrial">ERR-004</span>
-                        <span class="led led-off" title="Offline"></span>
+                        <span class="led led-on" title="System Online"></span>
                     </div>
-                    <h3 class="h4 fw-bold text-uppercase text-body-emphasis">Firelight</h3>
+                    <h3 class="h4 fw-bold text-uppercase text-body-emphasis">Mana Canvas</h3>
                     <p class="card-text small flex-grow-1">
-                        Symphonic Rock / Fantasy. The musical voice of the <em>Aethel Saga</em>. Soaring vocals, heavy synths, and narrative depth.
+                        Symphonic Fantasy Rock &amp; 16-bit Acoustic Alchemy. The musical voice of the <em>Aethel Saga</em>, featuring <em>Songs of the Untethered</em>.
                     </p>
-                    <button class="btn btn-dark rounded-0 w-100 text-uppercase fw-bold mt-3 font-monospace border-secondary" disabled>
-                        <i class="fa-solid fa-ban me-2"></i>Awaiting Transmission
-                    </button>
+                    <div class="d-flex flex-wrap gap-2 mt-3">
+                        <a href="/raggiesoft-books/aethel-saga" class="btn btn-outline-primary rounded-0 flex-grow-1 text-uppercase fw-bold font-monospace">
+                            <i class="fa-duotone fa-book-sparkles me-1"></i> Saga Lore
+                        </a>
+                        <a href="https://music.raggiesoft.com/mana-canvas" target="_blank" rel="noopener" class="btn btn-primary rounded-0 flex-grow-1 text-uppercase fw-bold font-monospace">
+                            <i class="fa-duotone fa-headphones me-1"></i> Listening Room
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
 
-        <!-- THE WINTER PALACE (OFFLINE) -->
+        <!-- ERR-005: THE ARCTIC SYMPHONY PROJECT (ONLINE) -->
         <div class="col-xl-6 col-lg-12 d-flex align-items-stretch">
-            <div class="card card-industrial w-100 opacity-75">
-                <div class="artist-img-box bg-body-tertiary">
-                    <i class="fa-duotone fa-snowflake fa-5x text-secondary opacity-50"></i>
+            <div class="card card-industrial w-100">
+                <div class="artist-img-box">
+                    <img src="<?php echo $cdnBaseUrl; ?>/engine-room-records/artists/the-arctic-symphony-project/band-logo.jpg" 
+                         alt="The Arctic Symphony Project">
                 </div>
                 <div class="card-body d-flex flex-column p-4">
                     <div class="d-flex justify-content-between align-items-start mb-2">
-                        <span class="badge badge-industrial text-secondary border-secondary">ERR-005</span>
-                        <span class="led led-off" title="Offline"></span>
+                        <span class="badge badge-industrial">ERR-005</span>
+                        <span class="led led-on" title="System Online"></span>
                     </div>
-                    <h3 class="h4 fw-bold text-uppercase text-secondary">The Winter Palace</h3>
-                    <p class="card-text small flex-grow-1 text-muted">
-                        Neoclassical / Atmospheric. Instrumental works and holiday arrangements. The quiet corner of the Engine Room.
+                    <h3 class="h4 fw-bold text-uppercase text-body-emphasis">The Arctic Symphony Project</h3>
+                    <p class="card-text small flex-grow-1">
+                        Holiday Symphonic Rock / Neoclassical Metal. Creators of <em>Tales from the Solstice</em> and the Safe Harbor anthem <em>"Upon This Winter's Night."</em>
                     </p>
-                    <button class="btn btn-dark rounded-0 w-100 text-uppercase fw-bold mt-3 font-monospace border-secondary opacity-50" disabled>
-                        <i class="fa-solid fa-snowflake me-2"></i>In Cold Storage
-                    </button>
+                    <div class="d-flex flex-wrap gap-2 mt-3">
+                        <a href="/engine-room/artists/the-arctic-symphony-project" class="btn btn-outline-primary rounded-0 flex-grow-1 text-uppercase fw-bold font-monospace">
+                            <i class="fa-duotone fa-book-open-cover me-1"></i> Lore Archive
+                        </a>
+                        <a href="https://music.raggiesoft.com/the-arctic-symphony-project" target="_blank" rel="noopener" class="btn btn-primary rounded-0 flex-grow-1 text-uppercase fw-bold font-monospace">
+                            <i class="fa-duotone fa-headphones me-1"></i> Listening Room
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
         
-        <!-- CRIMSON NODE (ONLINE) -->
+        <!-- ERR-006: CRIMSON NODE (ONLINE) -->
         <div class="col-xl-6 col-lg-12 d-flex align-items-stretch">
             <div class="card card-industrial w-100">
                 <div class="artist-img-box">
-                    <img src="<?php echo $cdnBaseUrl; ?>/engine-room-records/artists/crimson-node/2002-crimson-node/album-art.jpg" 
+                    <img src="<?php echo $cdnBaseUrl; ?>/engine-room-records/artists/crimson-node/band-logo.jpg" 
                          alt="Crimson Node">
                 </div>
                 <div class="card-body d-flex flex-column p-4">
@@ -222,7 +253,14 @@ $pageTitle = "Artist Roster - Engine Room Records";
                     <p class="card-text small flex-grow-1">
                         1980s progressive rock and stadium synth-pop. The unstoppable musical phalanx of the Miller and Brooks family operating out of the Kids House.
                     </p>
-                    <a href="/engine-room/artists/crimson-node" class="btn btn-outline-primary rounded-0 w-100 text-uppercase fw-bold mt-3 font-monospace">Access Archive</a>
+                    <div class="d-flex flex-wrap gap-2 mt-3">
+                        <a href="/engine-room/artists/crimson-node" class="btn btn-outline-primary rounded-0 flex-grow-1 text-uppercase fw-bold font-monospace">
+                            <i class="fa-duotone fa-book-open-cover me-1"></i> Lore Archive
+                        </a>
+                        <a href="https://music.raggiesoft.com/crimson-node" target="_blank" rel="noopener" class="btn btn-primary rounded-0 flex-grow-1 text-uppercase fw-bold font-monospace">
+                            <i class="fa-duotone fa-headphones me-1"></i> Listening Room
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>

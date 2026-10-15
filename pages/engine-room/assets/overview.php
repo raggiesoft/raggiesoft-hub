@@ -116,13 +116,13 @@ $pageTitle = "Strategic Assets - Engine Room Records";
                 <div class="col-md-6">
                     <div class="asset-card p-4">
                         <div class="badge bg-secondary mb-3">FLEET ID: SE-01</div>
-                        <h3 class="h5 fw-bold text-uppercase">2002 Prevost H3-45 "The Iron Horse"</h3>
+                        <h3 class="h5 fw-bold text-uppercase">2002 Sainte-Claire 45H3 "The Iron Horse"</h3>
                         <p class="small text-secondary">
                             The workhorse of the early 2000s tours. Customized for accessibility and heavy equipment transport.
                         </p>
                         <ul class="list-unstyled font-monospace small text-muted mt-3">
                             <li><i class="fa-solid fa-check text-success me-2"></i>Title: Clear (Paid Cash)</li>
-                            <li><i class="fa-solid fa-check text-success me-2"></i>Lift: BraunAbility UVL</li>
+                            <li><i class="fa-solid fa-check text-success me-2"></i>Lift: Commercial Under-Vehicle Hydraulic Lift</li>
                             <li><i class="fa-solid fa-id-card text-info me-2"></i>Primary Operator: Tyler Wright (Class A CDL)</li>
                         </ul>
                     </div>
@@ -131,7 +131,7 @@ $pageTitle = "Strategic Assets - Engine Room Records";
                 <div class="col-md-6">
                     <div class="asset-card p-4 border-danger">
                         <div class="badge bg-danger mb-3">FLEET ID: SE-02</div>
-                        <h3 class="h5 fw-bold text-uppercase">2019 Prevost H3-45 "The Sovereign"</h3>
+                        <h3 class="h5 fw-bold text-uppercase">2019 Sainte-Claire 45H3 "The Sovereign"</h3>
                         <p class="small text-secondary">
                             Current flagship. Features advanced suspension for spinal injury comfort and mobile recording suite.
                         </p>
@@ -167,15 +167,15 @@ $pageTitle = "Strategic Assets - Engine Room Records";
                         <div class="row mt-4 font-monospace small">
                             <div class="col-6">
                                 <ul class="list-unstyled text-muted">
-                                    <li class="mb-2"><strong>Shells:</strong> 9-Piece DW Collector's Series</li>
-                                    <li class="mb-2"><strong>Cymbals:</strong> 14-Piece Sabian Paragon</li>
-                                    <li class="mb-2"><strong>Electronics:</strong> Roland V-Drums Integration</li>
+                                    <li class="mb-2"><strong>Shells:</strong> 9-Piece Custom Maple Collector's Series</li>
+                                    <li class="mb-2"><strong>Cymbals:</strong> 14-Piece Hand-Hammered Paragon Array</li>
+                                    <li class="mb-2"><strong>Electronics:</strong> Custom Trigger &amp; Synth Integration</li>
                                 </ul>
                             </div>
                             <div class="col-6">
                                 <ul class="list-unstyled text-muted">
                                     <li class="mb-2"><strong>Hardware:</strong> 24k Gold Plated (Corrosion Resist)</li>
-                                    [cite_start]<li class="mb-2"><strong>Snare:</strong> The "Gated Reverb" Custom </li>
+                                    <li class="mb-2"><strong>Snare:</strong> The "Gated Reverb" Custom</li>
                                     <li class="mb-2"><strong>Status:</strong> Tour Ready</li>
                                 </ul>
                             </div>

@@ -11,11 +11,11 @@
 // "We're going to build an engine, too."
 
 // INLINE: Define the global page title
-$pageTitle = "Mirage - Engine Room Records Roster";
+$pageTitle = "Static & Silence - The Paper Wall | Engine Room Records";
 
 // --- CRITICAL CONFIGURATION ---
 // This variable tells _tracklist-downloader.php where to find tracks.json/album.json
-$album_path_web = '/engine-room-records/artists/mirage/2001-static-and-silence';
+$album_path_web = '/engine-room-records/artists/the-paper-wall/2001-static-and-silence-book-1';
 ?>
 
 <style>
@@ -59,15 +59,15 @@ $album_path_web = '/engine-room-records/artists/mirage/2001-static-and-silence';
     }
 </style>
 
-<!-- INLINE: Main container for the Mirage profile page -->
+<!-- INLINE: Main container for The Paper Wall profile page -->
 <div class="container-fluid p-0">
     
     <div class="industrial-header py-5">
         <div class="container py-5">
             <div class="row align-items-end">
                 <div class="col-lg-8">
-                    <span class="badge badge-industrial mb-3 p-2">ROSTER ID: ERR-002</span>
-                    <h1 class="display-1 fw-bold text-stenciled mb-0">MIRAGE</h1>
+                    <span class="badge badge-industrial mb-3 p-2">ROSTER ID: ERR-003</span>
+                    <h1 class="display-1 fw-bold text-stenciled mb-0">THE PAPER WALL</h1>
                     <p class="lead font-monospace opacity-75 mt-2">
                         <i class="fa-solid fa-location-dot me-2"></i>ORIGIN: BLACKSBURG, VA
                         <span class="mx-3">|</span>
@@ -96,7 +96,7 @@ $album_path_web = '/engine-room-records/artists/mirage/2001-static-and-silence';
                     </h2>
                     
                     <p class="lead">
-                        Mirage is not just a band; it is a survival mechanism. Formed by <strong>Julian Croft</strong> and <strong>Maya Sterling</strong>, the collective blends the scale of cinematic rock opera with the raw grit of industrial metal.
+                        <strong>The Paper Wall</strong> is not just a band; it is a survival mechanism. Formed by <strong>Julian Croft</strong> and <strong>Maya Sterling</strong>, the collective blends the scale of cinematic rock opera with the raw grit of industrial metal.
                     </p>
                     
                     <div class="card card-industrial mb-4">
@@ -105,7 +105,7 @@ $album_path_web = '/engine-room-records/artists/mirage/2001-static-and-silence';
                                 <i class="fa-solid fa-file-contract me-2"></i>The "Paper Wall"
                             </h5>
                             <p class="card-text small">
-                                Julian Croft ("Leo") and Maya Sterling ("Olivia") live as a married couple but remain legally single. [cite_start]Under current disability laws, marriage would strip Julian of his SSI and Medicaid—a death sentence for his care [cite: 14-16].
+                                Julian Croft ("Leo") and Maya Sterling ("Olivia") live as a married couple but remain legally single. Under current disability laws, marriage would strip Julian of his SSI and Medicaid—a death sentence for his care.
                             </p>
                             <p class="card-text small fw-bold mb-0">
                                 Engine Room Records does not just distribute their music. We fund the "Paper Wall" legal trust that protects their assets and independence.
@@ -149,7 +149,7 @@ $album_path_web = '/engine-room-records/artists/mirage/2001-static-and-silence';
                         </p>
                         
                         <p>
-                            Julian Croft was 19, attempting to restart his life after escaping his abuser. [cite_start]He rolled into the back of Newman Hall during a CPI Orientation event [cite: 55-57].
+                            Julian Croft was 19, attempting to restart his life after escaping his abuser. He rolled into the back of Newman Hall during a CPI Orientation event.
                         </p>
                         <p>
                             On stage, <strong>Ryan O'Connell</strong> was strapped into his chair, screaming <em>Ignition (The Forger's Call)</em>. Julian watched Ryan command 60,000 "Ironheads" without standing up.
@@ -170,10 +170,10 @@ $album_path_web = '/engine-room-records/artists/mirage/2001-static-and-silence';
                 
                 <div class="col-md-5">
                     <div class="position-relative shadow-lg border border-4 border-white">
-                        <img src="<?php echo $cdnBaseUrl; ?>/engine-room-records/artists/mirage/2001-static-and-silence/album-art.jpg" 
+                        <img src="<?php echo $cdnBaseUrl; ?>/engine-room-records/artists/the-paper-wall/2001-static-and-silence-book-1/album-art.jpg" 
                              class="img-fluid w-100" alt="Static & Silence Cover Art">
                         <div class="position-absolute bottom-0 start-0 bg-danger text-white px-3 py-1 fw-bold text-uppercase small">
-                            New Release (2001)
+                            2001 Release
                         </div>
                     </div>
                 </div>
@@ -181,11 +181,11 @@ $album_path_web = '/engine-room-records/artists/mirage/2001-static-and-silence';
                 <div class="col-md-7 ps-md-5 mt-4 mt-md-0">
                     <div class="d-flex justify-content-between align-items-start">
                         <div>
-                            <h2 class="display-4 fw-bold text-stenciled mb-2 text-body-emphasis">Static & Silence</h2>
+                            <h2 class="display-4 fw-bold text-stenciled mb-2 text-body-emphasis">Static &amp; Silence</h2>
                             <p class="lead opacity-75 mb-4">Released: 2001 // Rock Opera // Industrial</p>
                         </div>
                         <div class="text-end d-none d-lg-block">
-                             <span class="badge badge-industrial p-2">CATALOG: ERR-004</span>
+                             <span class="badge badge-industrial p-2">CATALOG: ERR-003</span>
                         </div>
                     </div>
                     
@@ -196,21 +196,21 @@ $album_path_web = '/engine-room-records/artists/mirage/2001-static-and-silence';
                     <div class="alert alert-dark border-secondary d-flex align-items-center" role="alert">
                         <i class="fa-duotone fa-info-circle fs-3 me-3"></i>
                         <div>
-                            <strong>Note for Listeners:</strong> This is a Double Album (2xCD). The player below will load both discs sequentially.
+                            <strong>Double Album Edition:</strong> Released as <em>Book 1: The Long Road West</em> and <em>Book 2: The Journey Home</em> in The Listening Room.
                         </div>
                     </div>
                 </div>
             </div>
 
-            <!-- INLINE: Mount the dynamic tracklist downloader for the album -->
+            <!-- INLINE: Mount the dynamic tracklist & Listening Room gateway for the album -->
             <?php include ROOT_PATH . '/includes/components/_tracklist-downloader.php'; ?>
             
         </div>
     </div>
 
     <div class="bg-body-tertiary py-4 text-center border-top border-secondary">
-        <a href="/engine-room" class="btn btn-link text-decoration-none text-uppercase fw-bold text-body">
-            <i class="fa-solid fa-arrow-left me-2"></i>Return to Roster
+        <a href="/engine-room/artists/the-paper-wall" class="btn btn-link text-decoration-none text-uppercase fw-bold text-body">
+            <i class="fa-solid fa-arrow-left me-2"></i>Return to The Paper Wall Profile
         </a>
     </div>
 

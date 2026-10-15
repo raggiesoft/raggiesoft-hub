@@ -50,8 +50,50 @@
   },
   "/engine-room/radio": {
     "view": "pages/engine-room/radio",
-    "title": "Engine Room Radio | Live Broadcast",
-    "ogDescription": "Live broadcast console playing the complete Engine Room Records catalog.",
+    "title": "The Listening Room Gateway | Engine Room Records",
+    "ogDescription": "Stream the complete Engine Room Records catalog and read official lyrics at The Listening Room (music.raggiesoft.com).",
     "showSidebar": false
+  },
+  "/engine-room/artists/the-paper-wall": {
+    "sidebar": "engine-room/artists/sidebar-artists",
+    "view": "pages/engine-room/artists/mirage/overview",
+    "title": "The Paper Wall | Engine Room Records Roster",
+    "ogDescription": "The official Engine Room Records lore archive for The Paper Wall, formed by Julian Croft and Maya Sterling."
+  },
+  "/engine-room/artists/mirage": {
+    "sidebar": "engine-room/artists/sidebar-artists",
+    "view": "pages/engine-room/artists/mirage/overview",
+    "title": "The Paper Wall | Engine Room Records Roster",
+    "ogDescription": "The official Engine Room Records lore archive for The Paper Wall, formed by Julian Croft and Maya Sterling."
+  },
+  "/engine-room/artists/the-paper-wall/discography/2001-static-and-silence": {
+    "sidebar": "engine-room/artists/sidebar-artists",
+    "view": "pages/engine-room/artists/mirage/2001-static-and-silence",
+    "title": "Static & Silence - The Paper Wall | Engine Room Records",
+    "ogDescription": "Official lore archive for Static & Silence (2001) by The Paper Wall."
+  },
+  "/engine-room/artists/the-arctic-symphony-project": {
+    "sidebar": "engine-room/artists/sidebar-artists",
+    "view": "pages/engine-room/artists/the-winter-palace/overview",
+    "title": "The Arctic Symphony Project | Engine Room Records Roster",
+    "ogDescription": "The official Engine Room Records lore archive for The Arctic Symphony Project (formerly archived under Solstice Records / The Winter Palace)."
+  },
+  "/engine-room/artists/the-winter-palace": {
+    "sidebar": "engine-room/artists/sidebar-artists",
+    "view": "pages/engine-room/artists/the-winter-palace/overview",
+    "title": "The Arctic Symphony Project | Engine Room Records Roster",
+    "ogDescription": "The official Engine Room Records lore archive for The Arctic Symphony Project."
+  },
+  "/engine-room/artists/the-arctic-symphony-project/tales-of-the-solstice": {
+    "sidebar": "engine-room/artists/sidebar-artists",
+    "view": "pages/engine-room/artists/the-winter-palace/discography/2007-tales-of-the-solstace",
+    "title": "Tales from the Solstice - The Arctic Symphony Project | Engine Room Records",
+    "ogDescription": "The lore behind 'Upon This Winter's Night' and Holly O'Connell's rescue of the Solstice Records catalog for Julian Croft."
+  },
+  "/engine-room/artists/the-winter-palace/tales-of-the-solstice": {
+    "sidebar": "engine-room/artists/sidebar-artists",
+    "view": "pages/engine-room/artists/the-winter-palace/discography/2007-tales-of-the-solstace",
+    "title": "Tales from the Solstice - The Arctic Symphony Project | Engine Room Records",
+    "ogDescription": "The lore behind 'Upon This Winter's Night' and Holly O'Connell's rescue of the Solstice Records catalog for Julian Croft."
   }
 }

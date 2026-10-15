@@ -32,7 +32,11 @@
 
   
     <wa-button appearance="plain" href="/engine-room/artists/fractured-prisms/discography">
-        <i slot="start" class="fa-duotone fa-compact-disc me-2"></i>Discography
+        <i slot="start" class="fa-duotone fa-compact-disc me-2"></i>Album Lore
+    </wa-button>
+
+    <wa-button appearance="plain" href="https://music.raggiesoft.com/fractured-prisms" class="text-warning fw-bold">
+        <i slot="start" class="fa-duotone fa-turntable me-2"></i>Listening Room
     </wa-button>
   
 

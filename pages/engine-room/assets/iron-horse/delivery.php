@@ -42,7 +42,7 @@ $pageTitle = "Lore: The First Ride";
                         There was no red ribbon. There was no press. Just the humming of the factory lights and the smell of ozone and welding flux.
                     </p>
                     <p>
-                        The "Iron Horse" (Unit 02) stood in the center of the bay. It was unpainted stainless steel—a massive, silver monolith. The twenty welders who had built it stood in a semi-circle, arms crossed, waiting.
+                        The "Iron Horse" (a custom Sainte-Claire 45H3) stood in the center of the bay—a massive forty-five-foot monolith finished in deep Obsidian Midnight lacquer and wrapped in sweeping Cosmic Nebula violet, cyan, and amber stardust graphics. The twenty welders and coachbuilders who had built it stood in a semi-circle, arms crossed, waiting.
                     </p>
                     <p>
                         Ryan O'Connell rolled onto the platform. The custom hydraulic system—over-engineered at Holly's insistence—hissed softly. He rose 60 inches into the air, the motion smooth and silent, and rolled into the main cabin.

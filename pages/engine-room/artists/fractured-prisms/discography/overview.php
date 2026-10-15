@@ -68,9 +68,12 @@ $musicGroupSchema = [
         <h1 class="display-3 fw-bold text-uppercase text-glow-prism gothic-font mb-3">
             The Archives
         </h1>
-        <p class="lead text-secondary mx-auto" style="max-width: 800px; font-family: var(--font-tech);">
+        <p class="lead text-secondary mx-auto mb-3" style="max-width: 800px; font-family: var(--font-tech);">
             The complete discography of Fractured Prisms, from the mechanical isolation of the Maryland sanctuary to their sprawling, gaslamp-lit rock operas.
         </p>
+        <a href="https://music.raggiesoft.com/fractured-prisms" target="_blank" rel="noopener" class="btn btn-primary rounded-0 px-4 fw-bold shadow-sm" style="font-family: var(--font-tech); text-transform: uppercase;">
+            <i class="fa-duotone fa-headphones me-2"></i>Stream &amp; Read Lyrics in The Listening Room
+        </a>
     </div>
 
     <!-- INLINE: Iterate through each defined era in the band's timeline -->
@@ -93,7 +96,13 @@ $musicGroupSchema = [
             </div>
 
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
-                <?php foreach ($eraData['albums'] as $album): ?>
+                <?php foreach ($eraData['albums'] as $album):
+                    $albumFolder = $album['folder'] ?? (!empty($album['url']) ? basename($album['url']) : '');
+                    $listeningRoomUrl = !empty($albumFolder)
+                        ? "https://music.raggiesoft.com/fractured-prisms/{$albumFolder}"
+                        : "https://music.raggiesoft.com/fractured-prisms";
+                    $hasHubLore = !empty($album['url']) && file_exists(ROOT_PATH . '/pages' . $album['url'] . '.php');
+                ?>
                     <div class="col">
                         <div class="card h-100 lore-card rounded-0 shadow-sm overflow-hidden border-top-0 border-end-0 border-bottom-0">
                             
@@ -113,9 +122,14 @@ $musicGroupSchema = [
                                 </p>
                                 
                                 <div class="mt-auto d-flex flex-column gap-2">
-                                    <a href="<?php echo htmlspecialchars($album['url']); ?>" class="btn btn-sm btn-outline-primary w-100 rounded-0" style="font-family: var(--font-tech); text-transform: uppercase;">
-                                        <i class="fa-duotone fa-compact-disc me-2"></i>Open Archive
+                                    <a href="<?php echo htmlspecialchars($listeningRoomUrl); ?>" target="_blank" rel="noopener" class="btn btn-sm btn-primary w-100 rounded-0" style="font-family: var(--font-tech); text-transform: uppercase;">
+                                        <i class="fa-duotone fa-headphones me-2"></i>Listening Room &amp; Lyrics
                                     </a>
+                                    <?php if ($hasHubLore): ?>
+                                        <a href="<?php echo htmlspecialchars($album['url']); ?>" class="btn btn-sm btn-outline-primary w-100 rounded-0" style="font-family: var(--font-tech); text-transform: uppercase;">
+                                            <i class="fa-duotone fa-book-open-cover me-2"></i>Studio Lore &amp; Liner Notes
+                                        </a>
+                                    <?php endif; ?>
 
                                     <?php 
                                     // DYNAMIC DSP BUTTONS

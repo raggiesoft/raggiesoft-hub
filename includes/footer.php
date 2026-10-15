@@ -102,18 +102,7 @@ $isDarkTheme = (isset($currentPageTheme) && in_array($currentPageTheme, ['dark',
 </footer>
 
 
-<div id="global-player-zone" class="fixed-bottom" style="z-index: 1050;">
-    
-    <?php include ROOT_PATH . '/includes/components/audio-player/sticky-player.php'; ?>
-    <?php include ROOT_PATH . '/includes/components/modals/encyclopedia-modal.php'; ?>
-
-    <script src="<?php echo $cdnBaseUrl; ?>/engine-room-records/js/stardust-player.js?v=<?php echo time(); ?>"></script>
-    
-    <script>
-        // Initialize global registry if not exists
-        window.STARDUST_PLAYLIST = window.STARDUST_PLAYLIST || [];
-    </script>
-</div>
+<?php include ROOT_PATH . '/includes/components/modals/encyclopedia-modal.php'; ?>
 
 
 <script src="<?php echo $cdnBaseUrl; ?>/common/js/piper-sullivan.js?v=<?php echo time(); ?>"></script>
@@ -188,11 +177,6 @@ document.addEventListener('DOMContentLoaded', initializeStorePreferences);
 document.addEventListener('elara:loaded', function() {
     // Re-bind the store selector buttons in the new DOM
     initializeStorePreferences();
-
-    // Re-bind the Stardust Engine tracklist buttons so music keeps playing
-    if (typeof bindTracklistButtons === 'function') {
-        bindTracklistButtons(); 
-    }
 
     // Ping Google Analytics to log the virtual pageview
     if (typeof gtag === 'function') {

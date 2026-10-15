@@ -83,10 +83,13 @@ $musicGroupSchema = [
         <h1 class="display-3 fw-bold text-uppercase text-glow-primary" style="font-family: 'Impact', sans-serif;">
             Discography
         </h1>
-        <p class="lead text-secondary mx-auto" style="max-width: 800px;">
+        <p class="lead text-secondary mx-auto mb-3" style="max-width: 800px;">
             The complete official history, from the studio-mandated pop of the 80s 
             to the independent rock anthems of their rebirth.
         </p>
+        <a href="https://music.raggiesoft.com/the-stardust-engine" target="_blank" rel="noopener" class="btn btn-primary rounded-pill px-4 fw-bold shadow-sm">
+            <i class="fa-duotone fa-headphones me-2"></i>Stream &amp; Read Lyrics in The Listening Room
+        </a>
     </div>
 
     <?php foreach ($discographyLibrary as $eraKey => $eraData): ?>
@@ -114,6 +117,11 @@ $musicGroupSchema = [
                     $dspExempt = $album['dspExempt'] ?? false;
                     $storeStandardUrl = $album['storeStandardUrl'] ?? '';
                     $storeAudiophileUrl = $album['storeAudiophileUrl'] ?? '';
+                    $albumFolder = $album['folder'] ?? (!empty($album['url']) ? basename($album['url']) : '');
+                    $listeningRoomUrl = !empty($albumFolder)
+                        ? "https://music.raggiesoft.com/the-stardust-engine/{$albumFolder}"
+                        : "https://music.raggiesoft.com/the-stardust-engine";
+                    $hasHubLore = !empty($album['url']) && file_exists(ROOT_PATH . '/pages' . $album['url'] . '.php');
                 ?>
                     <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-4">
                         <div class="card h-100 bg-transparent border-secondary glass-card shadow-sm overflow-hidden">
@@ -151,13 +159,21 @@ $musicGroupSchema = [
                                 </p>
                                 
                                 <div class="mt-auto d-flex flex-column gap-2">
-                                    <a href="<?php echo htmlspecialchars($album['url']); ?>" class="btn btn-sm <?php echo $isSeized ? 'btn-outline-danger' : 'btn-outline-primary'; ?> w-100 mb-1">
-                                        <?php if ($isSeized): ?>
-                                            <i class="fa-duotone fa-gavel me-2"></i>View Case File
-                                        <?php else: ?>
-                                            <i class="fa-duotone fa-compact-disc me-2"></i>View Album
-                                        <?php endif; ?>
-                                    </a>
+                                    <?php if (!$isSeized): ?>
+                                        <a href="<?php echo htmlspecialchars($listeningRoomUrl); ?>" target="_blank" rel="noopener" class="btn btn-sm btn-primary w-100">
+                                            <i class="fa-duotone fa-headphones me-2"></i>Listening Room &amp; Lyrics
+                                        </a>
+                                    <?php endif; ?>
+
+                                    <?php if ($hasHubLore): ?>
+                                        <a href="<?php echo htmlspecialchars($album['url']); ?>" class="btn btn-sm <?php echo $isSeized ? 'btn-outline-danger' : 'btn-outline-secondary'; ?> w-100 mb-1">
+                                            <?php if ($isSeized): ?>
+                                                <i class="fa-duotone fa-gavel me-2"></i>View Case File
+                                            <?php else: ?>
+                                                <i class="fa-duotone fa-book-open-cover me-2"></i>Studio Lore &amp; Liner Notes
+                                            <?php endif; ?>
+                                        </a>
+                                    <?php endif; ?>
 
                                     <?php if ($storeStandardUrl || $storeAudiophileUrl): ?>
                                         <div class="d-flex gap-2 w-100 mb-1">

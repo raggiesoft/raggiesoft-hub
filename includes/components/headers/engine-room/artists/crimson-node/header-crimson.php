@@ -39,7 +39,11 @@ $isLore = str_starts_with($request_uri, '/raggiesoft-books/books/crimson-node');
 
   
     <wa-button appearance="plain" href="/engine-room/artists/crimson-node/discography" class="<?php echo $isDisco ? 'active' : ''; ?>">
-        <i slot="start" class="fa-duotone fa-compact-disc me-2" aria-hidden="true"></i>Discography
+        <i slot="start" class="fa-duotone fa-compact-disc me-2" aria-hidden="true"></i>Album Lore
+    </wa-button>
+
+    <wa-button appearance="plain" href="https://music.raggiesoft.com/crimson-node" class="text-warning fw-bold">
+        <i slot="start" class="fa-duotone fa-turntable me-2" aria-hidden="true"></i>Listening Room
     </wa-button>
   
 
@@ -70,7 +74,7 @@ $isLore = str_starts_with($request_uri, '/raggiesoft-books/books/crimson-node');
 
 
   
-    <wa-button appearance="plain" href="/raggiesoft-books/books/crimson-node" class="<?php echo $isLore ? 'active' : ''; ?>">
+    <wa-button appearance="plain" href="https://books.raggiesoft.com/crimson-node" class="<?php echo $isLore ? 'active' : ''; ?>">
         <i slot="start" class="fa-duotone fa-book-atlas me-2" aria-hidden="true"></i>The Lore
     </wa-button>
   

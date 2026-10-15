@@ -118,6 +118,10 @@ if ($eras) {
 
                     <div class="d-flex flex-column align-items-center align-items-lg-start">
                         <div class="d-flex flex-wrap justify-content-center justify-content-lg-start gap-3">
+                            <a href="https://music.raggiesoft.com/fractured-prisms" target="_blank" rel="noopener" class="btn btn-primary btn-lg shadow-sm px-4 fw-bold d-inline-flex align-items-center font-monospace small">
+                                <i class="fa-duotone fa-headphones me-2"></i>The Listening Room
+                            </a>
+
                             <?php
                                 $storeProps = [
                                     'type' => 'artist', 
@@ -195,7 +199,13 @@ if ($eras) {
 
     <div id="discographyCarousel" class="carousel slide carousel-fade bg-prism-dark rounded shadow-sm border border-prism p-4" data-bs-ride="carousel">
         <div class="carousel-inner">
-            <?php foreach ($allAlbums as $index => $album): ?>
+            <?php foreach ($allAlbums as $index => $album):
+                $albumFolder = $album['folder'] ?? (!empty($album['url']) ? basename($album['url']) : '');
+                $listeningRoomUrl = !empty($albumFolder)
+                    ? "https://music.raggiesoft.com/fractured-prisms/{$albumFolder}"
+                    : "https://music.raggiesoft.com/fractured-prisms";
+                $hasHubLore = !empty($album['url']) && file_exists(ROOT_PATH . '/pages' . $album['url'] . '.php');
+            ?>
                 <div class="carousel-item <?php echo $index === 0 ? 'active' : ''; ?>">
                     <div class="row align-items-center justify-content-center">
                         <div class="col-sm-5 text-center mb-3 mb-sm-0">
@@ -207,9 +217,14 @@ if ($eras) {
                             <p class="text-muted mb-3 font-monospace small">Released: <?php echo htmlspecialchars($album['year']); ?> <?php echo isset($album['extra']) ? $album['extra'] : ''; ?></p>
                             
                             <div class="d-flex flex-wrap gap-2 justify-content-center justify-content-sm-start">
-                                <a href="<?php echo htmlspecialchars($album['url']); ?>" class="btn btn-outline-primary rounded-pill px-4 font-monospace small">
-                                    <i class="fa-duotone fa-compact-disc me-2"></i>Explore Record
+                                <a href="<?php echo htmlspecialchars($listeningRoomUrl); ?>" target="_blank" rel="noopener" class="btn btn-primary rounded-pill px-4 font-monospace small">
+                                    <i class="fa-duotone fa-headphones me-2"></i>Listen &amp; Lyrics
                                 </a>
+                                <?php if ($hasHubLore): ?>
+                                    <a href="<?php echo htmlspecialchars($album['url']); ?>" class="btn btn-outline-primary rounded-pill px-4 font-monospace small">
+                                        <i class="fa-duotone fa-book-open-cover me-2"></i>Studio Lore
+                                    </a>
+                                <?php endif; ?>
                                 
                                 <?php 
                                 $hasStores = !empty($album['spotifyId']) || !empty($album['appleId']) || !empty($album['amazonId']) || !empty($album['youtubeId']);

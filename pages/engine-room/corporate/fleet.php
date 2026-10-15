@@ -86,7 +86,7 @@ $pageTitle = "Fleet Command // T-Logistics";
                     <div class="row">
                         <div class="col-md-3 text-center border-end border-secondary">
                             <i class="fa-solid fa-bus fa-4x text-white mb-2"></i>
-                            <br><strong>SAINTE-CLAIRE H3-CUSTOM</strong>
+                            <br><strong>SAINTE-CLAIRE 45H3-CUSTOM</strong>
                             <br><span class="badge bg-success text-white rounded-0 mt-2">FLEET COMMAND</span>
                         </div>
                         <div class="col-md-9 ps-md-4">

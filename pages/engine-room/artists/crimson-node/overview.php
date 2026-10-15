@@ -115,8 +115,11 @@ if ($eras) {
                 <div class="d-flex flex-column align-items-center align-items-lg-start">
                     
                     <div class="d-flex flex-wrap justify-content-center justify-content-lg-start gap-3">
-                        <a href="/engine-room/artists/crimson-node/discography/2002-crimson-node" class="btn btn-primary btn-lg shadow-sm px-4 fw-bold d-inline-flex align-items-center border-glow">
-                            <i class="fa-duotone fa-compact-disc me-2"></i>Enter the Archives
+                        <a href="https://music.raggiesoft.com/crimson-node" target="_blank" rel="noopener" class="btn btn-primary btn-lg shadow-sm px-4 fw-bold d-inline-flex align-items-center border-glow">
+                            <i class="fa-duotone fa-headphones me-2"></i>The Listening Room
+                        </a>
+                        <a href="/engine-room/artists/crimson-node/discography/2002-crimson-node" class="btn btn-outline-primary btn-lg shadow-sm px-4 fw-bold d-inline-flex align-items-center">
+                            <i class="fa-duotone fa-book-open-cover me-2"></i>Studio Lore
                         </a>
                         
                         <?php
@@ -203,7 +206,13 @@ if ($eras) {
 
     <div id="discographyCarousel" class="carousel slide carousel-fade bg-body-tertiary rounded shadow-sm border border-secondary border-opacity-50 p-4" data-bs-ride="carousel">
         <div class="carousel-inner">
-            <?php foreach ($allAlbums as $index => $album): ?>
+            <?php foreach ($allAlbums as $index => $album):
+                $albumFolder = $album['folder'] ?? (!empty($album['url']) ? basename($album['url']) : '');
+                $listeningRoomUrl = !empty($albumFolder)
+                    ? "https://music.raggiesoft.com/crimson-node/{$albumFolder}"
+                    : "https://music.raggiesoft.com/crimson-node";
+                $hasHubLore = !empty($album['url']) && file_exists(ROOT_PATH . '/pages' . $album['url'] . '.php');
+            ?>
                 <div class="carousel-item <?php echo $index === 0 ? 'active' : ''; ?>">
                     <div class="row align-items-center justify-content-center">
                         <div class="col-sm-5 text-center mb-3 mb-sm-0">
@@ -215,9 +224,14 @@ if ($eras) {
                             <p class="text-muted mb-3">Released: <?php echo htmlspecialchars($album['year']); ?> <?php echo isset($album['extra']) ? $album['extra'] : ''; ?></p>
                             
                             <div class="d-flex flex-wrap gap-2 justify-content-center justify-content-sm-start">
-                                <a href="<?php echo htmlspecialchars($album['url']); ?>" class="btn btn-outline-primary rounded-pill px-4">
-                                    <i class="fa-duotone fa-compact-disc me-2"></i>Explore Vault
+                                <a href="<?php echo htmlspecialchars($listeningRoomUrl); ?>" target="_blank" rel="noopener" class="btn btn-primary rounded-pill px-4">
+                                    <i class="fa-duotone fa-headphones me-2"></i>Listen &amp; Lyrics
                                 </a>
+                                <?php if ($hasHubLore): ?>
+                                    <a href="<?php echo htmlspecialchars($album['url']); ?>" class="btn btn-outline-primary rounded-pill px-4">
+                                        <i class="fa-duotone fa-book-open-cover me-2"></i>Studio Lore
+                                    </a>
+                                <?php endif; ?>
                                 
                                 <?php 
                                 // Check if any DSP IDs exist for this specific album
@@ -277,7 +291,7 @@ if ($eras) {
                     <p class="text-secondary small">
                         Explore the architecture of the Kids House, the Trent Ejection, and the CCC Crash.
                     </p>
-                    <a href="/raggiesoft-books/books/crimson-node" class="btn btn-outline-danger mt-auto rounded-pill">Read History</a>
+                    <a href="https://books.raggiesoft.com/crimson-node" target="_blank" rel="noopener" class="btn btn-outline-danger mt-auto rounded-pill">Read History</a>
                 </div>
             </div>
         </div>

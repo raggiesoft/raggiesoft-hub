@@ -29,10 +29,13 @@
                 <i slot="start" class="fa-duotone fa-house-building me-2 w-20px text-center"></i> HQ Overview
             </a>
             <a href="/engine-room/artists" class="list-group-item list-group-item-action bg-transparent text-primary fw-bold">
-                <i slot="start" class="fa-duotone fa-users"></i> Active Roster
+                <i slot="start" class="fa-duotone fa-users me-2 w-20px text-center"></i> Active Roster
+            </a>
+            <a href="https://music.raggiesoft.com" target="_blank" rel="noopener" class="list-group-item list-group-item-action bg-transparent text-info">
+                <i slot="start" class="fa-duotone fa-headphones me-2 w-20px text-center"></i> The Listening Room
             </a>
             <a href="/engine-room/history" class="list-group-item list-group-item-action bg-transparent text-body">
-                <i slot="start" class="fa-duotone fa-clock-rotate-left"></i> Event Log
+                <i slot="start" class="fa-duotone fa-clock-rotate-left me-2 w-20px text-center"></i> Event Log
             </a>
         </div>
     </div>
@@ -44,25 +47,29 @@
             <i class="fa-solid fa-server me-2"></i>Unit Status
         </div>
         <div class="card-body p-3 font-monospace small">
-            <div class="d-flex justify-content-between align-items-center mb-2 pb-2 border-bottom border-secondary border-">
-                <span class="text-body-emphasis">ERR-001</span>
+            <div class="d-flex justify-content-between align-items-center mb-2 pb-2 border-bottom border-secondary">
+                <span class="text-body-emphasis" title="The Stardust Engine">ERR-001</span>
                 <span class="text-success"><i class="fa-solid fa-circle-check me-1 small"></i> Online</span>
             </div>
-            <div class="d-flex justify-content-between align-items-center mb-2 pb-2 border-bottom border-secondary border-">
-                <span class="text-body-emphasis">ERR-002</span>
-                <span class="text-warning"><i class="fa-solid fa-spinner fa-spin me-1 small"></i> Syncing</span>
+            <div class="d-flex justify-content-between align-items-center mb-2 pb-2 border-bottom border-secondary">
+                <span class="text-body-emphasis" title="Fractured Prisms">ERR-002</span>
+                <span class="text-success"><i class="fa-solid fa-circle-check me-1 small"></i> Online</span>
             </div>
-            <div class="d-flex justify-content-between align-items-center mb-2 pb-2 border-bottom border-secondary border-">
-                <span class="text-body-emphasis">ERR-003</span>
-                <span class=""><i class="fa-solid fa-circle-minus me-1 small"></i> Standby</span>
+            <div class="d-flex justify-content-between align-items-center mb-2 pb-2 border-bottom border-secondary">
+                <span class="text-body-emphasis" title="The Paper Wall">ERR-003</span>
+                <span class="text-success"><i class="fa-solid fa-circle-check me-1 small"></i> Online</span>
             </div>
-            <div class="d-flex justify-content-between align-items-center mb-2 pb-2 border-bottom border-secondary border-">
-                <span class="text-body-emphasis">ERR-004</span>
-                <span class=""><i class="fa-solid fa-circle-minus me-1 small"></i> Standby</span>
+            <div class="d-flex justify-content-between align-items-center mb-2 pb-2 border-bottom border-secondary">
+                <span class="text-body-emphasis" title="Mana Canvas">ERR-004</span>
+                <span class="text-success"><i class="fa-solid fa-circle-check me-1 small"></i> Online</span>
+            </div>
+            <div class="d-flex justify-content-between align-items-center mb-2 pb-2 border-bottom border-secondary">
+                <span class="text-body-emphasis" title="The Arctic Symphony Project">ERR-005</span>
+                <span class="text-success"><i class="fa-solid fa-circle-check me-1 small"></i> Online</span>
             </div>
             <div class="d-flex justify-content-between align-items-center">
-                <span class="text-body-emphasis">ERR-005</span>
-                <span class=""><i class="fa-solid fa-circle-minus me-1 small"></i> Standby</span>
+                <span class="text-body-emphasis" title="Crimson Node">ERR-006</span>
+                <span class="text-success"><i class="fa-solid fa-circle-check me-1 small"></i> Online</span>
             </div>
         </div>
     </div>
@@ -71,7 +78,7 @@
     <!-- SECURITY REMINDER -->
     <div class="alert alert-dark border-secondary bg-black text-white-50 p-3 font-monospace" style="font-size: 0.75rem;">
         <i class="fa-solid fa-lock text-primary mb-2 d-block fs-5"></i>
-        Access to proprietary audio files and narrative assets is restricted to authorized protocols. Unauthorized scraping is monitored.
+        Access to proprietary audio files and narrative assets is restricted to authorized protocols. Full-fidelity masters and lyrics are served via The Listening Room.
     </div>
 
 </div>

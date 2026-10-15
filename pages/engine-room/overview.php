@@ -61,6 +61,7 @@ foreach ($artistsMap as $slug => $persona) {
         if (count($allAlbums) > 0) {
             $latest = $allAlbums[0];
             $latest['artistPersona'] = $persona;
+            $latest['artistSlug'] = $slug;
             $latestAlbums[] = $latest;
         }
     }
@@ -90,7 +91,7 @@ usort($latestAlbums, function($a, $b) {
     {
       "@type": "CollectionPage",
       "name": "Engine Room Records Roster",
-      "description": "Directory of active musical projects including The Stardust Engine™, Fractured Prisms™, The Paper Wall™, and The Winter Palace™."
+      "description": "Directory of active musical projects including The Stardust Engine™, Fractured Prisms™, The Paper Wall™, Crimson Node™, Mana Canvas™, and The Arctic Symphony Project™."
     }
   ]
 }
@@ -184,9 +185,12 @@ usort($latestAlbums, function($a, $b) {
         <p class="lead tech-font opacity-75 mb-4 mx-auto" style="max-width: 700px;">
             Loud. Raw. Real. An independent creative collective dedicated to narrative-driven rock, industrial soundscapes, and symphonic metal.
         </p>
-        <div class="d-flex justify-content-center gap-3">
-            <a href="#latest-transmissions" class="btn btn-primary rounded-pill px-4 fw-bold text-uppercase tech-font">
-                <i class="fa-solid fa-play me-2" aria-hidden="true"></i>Latest Transmissions
+        <div class="d-flex flex-wrap justify-content-center gap-3">
+            <a href="https://music.raggiesoft.com" target="_blank" rel="noopener" class="btn btn-primary rounded-pill px-4 fw-bold text-uppercase tech-font shadow">
+                <i class="fa-duotone fa-headphones me-2" aria-hidden="true"></i>Enter The Listening Room
+            </a>
+            <a href="#latest-transmissions" class="btn btn-outline-info rounded-pill px-4 fw-bold text-uppercase tech-font">
+                <i class="fa-solid fa-compact-disc me-2" aria-hidden="true"></i>Latest Transmissions
             </a>
             <a href="#roster" class="btn btn-outline-light rounded-pill px-4 fw-bold text-uppercase tech-font">
                 <i class="fa-solid fa-users me-2" aria-hidden="true"></i>The Roster
@@ -218,6 +222,9 @@ usort($latestAlbums, function($a, $b) {
             <h2 class="h4 text-uppercase fw-bold mb-0 text-body-emphasis">
                 <i class="fa-duotone fa-satellite-dish me-2 text-primary"></i>Now Spinning
             </h2>
+            <a href="https://music.raggiesoft.com" target="_blank" rel="noopener" class="small text-primary text-decoration-none fw-bold font-monospace">
+                Full Catalog on music.raggiesoft.com <i class="fa-solid fa-arrow-up-right-from-square ms-1"></i>
+            </a>
         </div>
     </div>
 
@@ -228,7 +235,13 @@ usort($latestAlbums, function($a, $b) {
 
     
         <div class="row g-4 mb-5 justify-content-center">
-        <?php foreach ($latestAlbums as $album): ?>
+        <?php foreach ($latestAlbums as $album):
+            $albumFolder = $album['folder'] ?? (!empty($album['url']) ? basename($album['url']) : '');
+            $listeningRoomUrl = !empty($albumFolder)
+                ? "https://music.raggiesoft.com/{$album['artistSlug']}/{$albumFolder}"
+                : "https://music.raggiesoft.com/{$album['artistSlug']}";
+            $hasHubLore = !empty($album['url']) && file_exists(ROOT_PATH . '/pages' . $album['url'] . '.php');
+        ?>
         <div class="col-12 col-xl-6 d-flex align-items-stretch">
             <wa-card class="h-100 border border-secondary shadow-sm bg-transparent w-100 p-0 hover-card overflow-hidden" style="--wa-panel-bg: transparent; --body-padding: 0; --header-padding: 0;">
                 <div class="row g-0 h-100">
@@ -250,14 +263,13 @@ usort($latestAlbums, function($a, $b) {
                                 <?php echo htmlspecialchars($album['description'] ?? ''); ?>
                             </p>
                         </div>
-                        <div class="px-4 pb-4 mt-auto">
-                            <?php if (!empty($album['url'])): ?>
-                                <wa-button href="<?php echo htmlspecialchars($album['url']); ?>" variant="neutral" class="w-100 rounded-pill">
-                                    <i class="fa-duotone fa-compact-disc me-2" slot="prefix"></i> Explore Album
-                                </wa-button>
-                            <?php else: ?>
-                                <wa-button disabled variant="neutral" class="w-100 rounded-pill">
-                                    <i class="fa-solid fa-lock me-2" slot="prefix"></i> In the Vault
+                        <div class="px-4 pb-4 mt-auto d-flex flex-column gap-2">
+                            <wa-button href="<?php echo htmlspecialchars($listeningRoomUrl); ?>" target="_blank" variant="brand" class="w-100 rounded-pill">
+                                <i class="fa-duotone fa-headphones me-2" slot="prefix"></i> Listen &amp; Read Lyrics
+                            </wa-button>
+                            <?php if ($hasHubLore): ?>
+                                <wa-button href="<?php echo htmlspecialchars($album['url']); ?>" variant="neutral" appearance="outlined" class="w-100 rounded-pill">
+                                    <i class="fa-duotone fa-book-open-cover me-2" slot="prefix"></i> Studio Lore &amp; Liner Notes
                                 </wa-button>
                             <?php endif; ?>
                         </div>
@@ -273,84 +285,126 @@ usort($latestAlbums, function($a, $b) {
             <h2 class="h4 text-uppercase fw-bold mb-0 text-body-emphasis">
                 <i class="fa-duotone fa-users me-2 text-info"></i>The Collective
             </h2>
+            <a href="/engine-room/artists" class="small text-info text-decoration-none fw-bold font-monospace">
+                View Full Artist Directory <i class="fa-solid fa-arrow-right ms-1"></i>
+            </a>
         </div>
     </div>
 
     
     <div class="row g-4 mb-5">
 
-        
-        <div class="col-md-6 col-xl-3">
-            <a href="/engine-room/artists/stardust-engine" class="text-decoration-none">
-                <div class="card roster-card h-100 p-4 text-center">
-                    <div class="mb-3">
-                        <img src="<?php echo $cdnBaseUrl; ?>/engine-room-records/artists/the-stardust-engine/band-logo.png" 
-                             alt="The Stardust Engine" style="height: 60px; object-fit: contain;">
-                    </div>
-                    <h3 class="h6 fw-bold text-body-emphasis text-uppercase mb-2">The Stardust Engine&trade;</h3>
-                    <p class="text-body-secondary small mb-2 flex-grow-1">
-                        80s Synth-Pop / Progressive Rock. The founding family unit that built the fortress.
-                    </p>
-                    <span class="badge bg-success-subtle text-success-emphasis border border-success-subtle mt-auto mx-auto font-monospace"><i class="fa-solid fa-signal-stream me-1"></i> Live on DSPs</span>
+        <!-- ERR-001: The Stardust Engine -->
+        <div class="col-md-6 col-xl-4">
+            <div class="card roster-card h-100 p-4 text-center d-flex flex-column">
+                <div class="mb-3">
+                    <img src="<?php echo $cdnBaseUrl; ?>/engine-room-records/artists/the-stardust-engine/band-logo.png" 
+                         alt="The Stardust Engine" style="height: 80px; object-fit: contain;">
                 </div>
-            </a>
-        </div>
-        
-        <div class="col-md-6 col-xl-3">
-            <a href="/engine-room/artists/crimson-node" class="text-decoration-none">
-                <div class="card roster-card h-100 p-4 text-center">
-                    <div class="mb-3">
-                        <img src="<?php echo $cdnBaseUrl; ?>/engine-room-records/artists/crimson-node/2002-crimson-node/album-art.jpg" 
-                             alt="Crimson Node" style="height: 60px; object-fit: contain;">
-                    </div>
-                    <h3 class="h6 fw-bold text-body-emphasis text-uppercase mb-2">Crimson Node&trade;</h3>
-                    <p class="text-body-secondary small mb-2 flex-grow-1">
-                        1980s stadium synth-pop and heavy progressive rock fueled by the DevOps family phalanx.
-                    </p>
-                    <span class="badge bg-success-subtle text-success-emphasis border border-success-subtle mt-auto mx-auto font-monospace"><i class="fa-solid fa-signal-stream me-1"></i> Live on DSPs</span>
-                </div>
-            </a>
-        </div>
-
-        <div class="col-md-6 col-xl-3">
-            <a href="/engine-room/artists/fractured-prisms" class="text-decoration-none">
-                <div class="card roster-card h-100 p-4 text-center">
-                    <div class="mb-3">
-                        <img src="<?php echo $cdnBaseUrl; ?>/engine-room-records/artists/fractured-prisms/band-logo-colour.jpg" 
-                             alt="Fractured Prisms" style="height: 60px; object-fit: contain;">
-                    </div>
-                    <h3 class="h6 fw-bold text-body-emphasis text-uppercase mb-2">Fractured Prisms&trade;</h3>
-                    <p class="text-body-secondary small mb-2 flex-grow-1">
-                        British Synth-Pop and Retro-Engineered Soundscapes.
-                    </p>
-                    <span class="badge bg-success-subtle text-success-emphasis border border-success-subtle mt-auto mx-auto font-monospace"><i class="fa-solid fa-signal-stream me-1"></i> Live on DSPs</span>
-                </div>
-            </a>
-        </div>
-
-        <div class="col-md-6 col-xl-3">
-            <div class="card roster-card inactive h-100 p-4 text-center">
-                <div class="mb-3 d-flex align-items-center justify-content-center" style="height: 60px;">
-                    <i class="fa-duotone fa-waveform-lines fa-3x text-danger opacity-75"></i>
-                </div>
-                <h3 class="h6 fw-bold text-body-emphasis text-uppercase mb-2">The Paper Wall&trade;</h3>
-                <p class="text-body-secondary small mb-2 flex-grow-1">
-                    Narrative-driven Rock Operas. A cinematic exploration of trauma and survival.
+                <h3 class="h6 fw-bold text-body-emphasis text-uppercase mb-2">The Stardust Engine&trade;</h3>
+                <p class="text-body-secondary small mb-3 flex-grow-1">
+                    80s Synth-Pop / Progressive Rock. The founding family unit that built the fortress.
                 </p>
-                <span class="badge bg-secondary-subtle text-secondary-emphasis border border-secondary-subtle mt-auto mx-auto font-monospace"><i class="fa-solid fa-wrench me-1"></i> In Studio</span>
+                <div class="d-flex gap-2 justify-content-center mt-auto mb-2">
+                    <a href="/engine-room/artists/stardust-engine" class="btn btn-sm btn-outline-primary rounded-pill px-3 font-monospace">Lore Archive</a>
+                    <a href="https://music.raggiesoft.com/the-stardust-engine" target="_blank" rel="noopener" class="btn btn-sm btn-primary rounded-pill px-3 font-monospace"><i class="fa-duotone fa-headphones me-1"></i>Listen</a>
+                </div>
+                <span class="badge bg-success-subtle text-success-emphasis border border-success-subtle mx-auto font-monospace"><i class="fa-solid fa-signal-stream me-1"></i> Live on DSPs</span>
             </div>
         </div>
 
-        <div class="col-md-6 col-xl-3">
-            <div class="card roster-card inactive h-100 p-4 text-center">
-                <div class="mb-3 d-flex align-items-center justify-content-center" style="height: 60px;">
-                    <i class="fa-duotone fa-snowflake fa-3x text-info opacity-75"></i>
+        <!-- ERR-002: Fractured Prisms -->
+        <div class="col-md-6 col-xl-4">
+            <div class="card roster-card h-100 p-4 text-center d-flex flex-column">
+                <div class="mb-3">
+                    <img src="<?php echo $cdnBaseUrl; ?>/engine-room-records/artists/fractured-prisms/band-logo.jpg" 
+                         alt="Fractured Prisms" style="height: 80px; object-fit: contain;" class="rounded">
                 </div>
-                <h3 class="h6 fw-bold text-body-emphasis text-uppercase mb-2">The Winter Palace&trade;</h3>
-                <p class="text-body-secondary small mb-2 flex-grow-1">
-                    Holiday-themed Symphonic Rock. Sweeping string arrangements meet heavy distortion.
+                <h3 class="h6 fw-bold text-body-emphasis text-uppercase mb-2">Fractured Prisms&trade;</h3>
+                <p class="text-body-secondary small mb-3 flex-grow-1">
+                    British Synth-Pop and gaslamp-lit 1980s progressive rock operas from the Maryland sanctuary.
                 </p>
-                <span class="badge bg-secondary-subtle text-secondary-emphasis border border-secondary-subtle mt-auto mx-auto font-monospace"><i class="fa-solid fa-wrench me-1"></i> In Studio</span>
+                <div class="d-flex gap-2 justify-content-center mt-auto mb-2">
+                    <a href="/engine-room/artists/fractured-prisms" class="btn btn-sm btn-outline-primary rounded-pill px-3 font-monospace">Lore Archive</a>
+                    <a href="https://music.raggiesoft.com/fractured-prisms" target="_blank" rel="noopener" class="btn btn-sm btn-primary rounded-pill px-3 font-monospace"><i class="fa-duotone fa-headphones me-1"></i>Listen</a>
+                </div>
+                <span class="badge bg-success-subtle text-success-emphasis border border-success-subtle mx-auto font-monospace"><i class="fa-solid fa-signal-stream me-1"></i> Live on DSPs</span>
+            </div>
+        </div>
+
+        <!-- ERR-003: The Paper Wall -->
+        <div class="col-md-6 col-xl-4">
+            <div class="card roster-card h-100 p-4 text-center d-flex flex-column">
+                <div class="mb-3">
+                    <img src="<?php echo $cdnBaseUrl; ?>/engine-room-records/artists/the-paper-wall/band-logo.jpg" 
+                         alt="The Paper Wall" style="height: 80px; object-fit: contain;" class="rounded">
+                </div>
+                <h3 class="h6 fw-bold text-body-emphasis text-uppercase mb-2">The Paper Wall&trade;</h3>
+                <p class="text-body-secondary small mb-3 flex-grow-1">
+                    Narrative-driven Literary Rock Operas. The architects of <em>Static &amp; Silence</em> and the Safe Harbor trust.
+                </p>
+                <div class="d-flex gap-2 justify-content-center mt-auto mb-2">
+                    <a href="/engine-room/artists/the-paper-wall" class="btn btn-sm btn-outline-primary rounded-pill px-3 font-monospace">Lore Archive</a>
+                    <a href="https://music.raggiesoft.com/the-paper-wall" target="_blank" rel="noopener" class="btn btn-sm btn-primary rounded-pill px-3 font-monospace"><i class="fa-duotone fa-headphones me-1"></i>Listen</a>
+                </div>
+                <span class="badge bg-success-subtle text-success-emphasis border border-success-subtle mx-auto font-monospace"><i class="fa-solid fa-signal-stream me-1"></i> Live on DSPs</span>
+            </div>
+        </div>
+
+        <!-- ERR-004: Crimson Node -->
+        <div class="col-md-6 col-xl-4">
+            <div class="card roster-card h-100 p-4 text-center d-flex flex-column">
+                <div class="mb-3">
+                    <img src="<?php echo $cdnBaseUrl; ?>/engine-room-records/artists/crimson-node/band-logo.jpg" 
+                         alt="Crimson Node" style="height: 80px; object-fit: contain;" class="rounded">
+                </div>
+                <h3 class="h6 fw-bold text-body-emphasis text-uppercase mb-2">Crimson Node&trade;</h3>
+                <p class="text-body-secondary small mb-3 flex-grow-1">
+                    Stadium synth-pop and heavy progressive rock fueled by the Albemarle County DevOps family phalanx.
+                </p>
+                <div class="d-flex gap-2 justify-content-center mt-auto mb-2">
+                    <a href="/engine-room/artists/crimson-node" class="btn btn-sm btn-outline-primary rounded-pill px-3 font-monospace">Lore Archive</a>
+                    <a href="https://music.raggiesoft.com/crimson-node" target="_blank" rel="noopener" class="btn btn-sm btn-primary rounded-pill px-3 font-monospace"><i class="fa-duotone fa-headphones me-1"></i>Listen</a>
+                </div>
+                <span class="badge bg-success-subtle text-success-emphasis border border-success-subtle mx-auto font-monospace"><i class="fa-solid fa-signal-stream me-1"></i> Live on DSPs</span>
+            </div>
+        </div>
+
+        <!-- ERR-005: Mana Canvas -->
+        <div class="col-md-6 col-xl-4">
+            <div class="card roster-card h-100 p-4 text-center d-flex flex-column">
+                <div class="mb-3">
+                    <img src="<?php echo $cdnBaseUrl; ?>/engine-room-records/artists/mana-canvas/band-logo.jpg" 
+                         alt="Mana Canvas" style="height: 80px; object-fit: contain;" class="rounded">
+                </div>
+                <h3 class="h6 fw-bold text-body-emphasis text-uppercase mb-2">Mana Canvas&trade;</h3>
+                <p class="text-body-secondary small mb-3 flex-grow-1">
+                    Symphonic Fantasy Rock &amp; 16-bit Acoustic Alchemy. The musical voice of the <em>Aethel Saga</em>.
+                </p>
+                <div class="d-flex gap-2 justify-content-center mt-auto mb-2">
+                    <a href="/raggiesoft-books/aethel-saga" class="btn btn-sm btn-outline-primary rounded-pill px-3 font-monospace">Saga Lore</a>
+                    <a href="https://music.raggiesoft.com/mana-canvas" target="_blank" rel="noopener" class="btn btn-sm btn-primary rounded-pill px-3 font-monospace"><i class="fa-duotone fa-headphones me-1"></i>Listen</a>
+                </div>
+                <span class="badge bg-success-subtle text-success-emphasis border border-success-subtle mx-auto font-monospace"><i class="fa-solid fa-signal-stream me-1"></i> Live on DSPs</span>
+            </div>
+        </div>
+
+        <!-- ERR-006: The Arctic Symphony Project -->
+        <div class="col-md-6 col-xl-4">
+            <div class="card roster-card h-100 p-4 text-center d-flex flex-column">
+                <div class="mb-3">
+                    <img src="<?php echo $cdnBaseUrl; ?>/engine-room-records/artists/the-arctic-symphony-project/band-logo.jpg" 
+                         alt="The Arctic Symphony Project" style="height: 80px; object-fit: contain;" class="rounded">
+                </div>
+                <h3 class="h6 fw-bold text-body-emphasis text-uppercase mb-2">The Arctic Symphony Project&trade;</h3>
+                <p class="text-body-secondary small mb-3 flex-grow-1">
+                    Holiday Symphonic Rock &amp; Neoclassical Metal. Sweeping orchestral strings meet heavy distortion.
+                </p>
+                <div class="d-flex gap-2 justify-content-center mt-auto mb-2">
+                    <a href="/engine-room/artists/the-arctic-symphony-project" class="btn btn-sm btn-outline-primary rounded-pill px-3 font-monospace">Lore Archive</a>
+                    <a href="https://music.raggiesoft.com/the-arctic-symphony-project" target="_blank" rel="noopener" class="btn btn-sm btn-primary rounded-pill px-3 font-monospace"><i class="fa-duotone fa-headphones me-1"></i>Listen</a>
+                </div>
+                <span class="badge bg-success-subtle text-success-emphasis border border-success-subtle mx-auto font-monospace"><i class="fa-solid fa-signal-stream me-1"></i> Live on DSPs</span>
             </div>
         </div>
 

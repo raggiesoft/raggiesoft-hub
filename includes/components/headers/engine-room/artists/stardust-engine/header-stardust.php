@@ -38,13 +38,13 @@
 
   
     <wa-button appearance="plain" href="/engine-room/artists/stardust-engine/discography">
-        <i slot="start" class="fa-duotone fa-compact-disc me-2"></i>Discography
+        <i slot="start" class="fa-duotone fa-compact-disc me-2"></i>Album Lore
     </wa-button>
   
 
   
-    <wa-button appearance="plain" href="/engine-room/radio" class="text-warning">
-        <i slot="start" class="fa-duotone fa-signal-stream me-2"></i>Radio
+    <wa-button appearance="plain" href="https://music.raggiesoft.com/the-stardust-engine" class="text-warning fw-bold">
+        <i slot="start" class="fa-duotone fa-turntable me-2"></i>Listening Room
     </wa-button>
   
 

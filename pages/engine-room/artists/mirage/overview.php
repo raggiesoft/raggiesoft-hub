@@ -19,7 +19,7 @@
 // Artist Profile: Mirage (The First Signing)
 // "We're going to build an engine, too."
 
-$pageTitle = "Mirage - Engine Room Records Roster";
+$pageTitle = "The Paper Wall - Engine Room Records Roster";
 ?>
 
 <style>
@@ -69,8 +69,8 @@ $pageTitle = "Mirage - Engine Room Records Roster";
         <div class="container py-5">
             <div class="row align-items-end">
                 <div class="col-lg-8">
-                    <span class="badge badge-industrial mb-3 p-2">ROSTER ID: ERR-002</span>
-                    <h1 class="display-1 fw-bold text-stenciled mb-0">MIRAGE</h1>
+                    <span class="badge badge-industrial mb-3 p-2">ROSTER ID: ERR-003</span>
+                    <h1 class="display-1 fw-bold text-stenciled mb-0">THE PAPER WALL</h1>
                     <p class="lead font-monospace opacity-75 mt-2">
                         <i class="fa-solid fa-location-dot me-2"></i>ORIGIN: BLACKSBURG, VA
                         <span class="mx-3">|</span>
@@ -99,19 +99,19 @@ $pageTitle = "Mirage - Engine Room Records Roster";
                     </h2>
                     
                     <p class="lead">
-                        Mirage is not just a band; it is a survival mechanism. Formed by <strong>Julian Croft</strong> and <strong>Maya Sterling</strong>, the collective blends the scale of cinematic rock opera with the raw grit of industrial metal.
+                        <strong>The Paper Wall</strong> (originally formed under the working title <em>Mirage</em>) is not just a band; it is a survival mechanism. Formed by <strong>Julian Croft</strong> and <strong>Maya Sterling</strong>, the collective blends the scale of cinematic literary rock opera with the raw grit of industrial and alternative rock.
                     </p>
                     
                     <div class="card card-industrial mb-4">
                         <div class="card-body">
                             <h5 class="fw-bold text-danger text-uppercase mb-3">
-                                <i class="fa-solid fa-file-contract me-2"></i>The "Paper Wall"
+                                <i class="fa-solid fa-file-contract me-2"></i>The "Paper Wall" Legal Trust
                             </h5>
                             <p class="card-text small">
                                 Julian Croft (Lead Vocals) and Maya Sterling (Percussion) live as a married couple but remain legally single. Under current disability laws, marriage would strip Julian of his SSI and Medicaid—a death sentence for his care. 
                             </p>
                             <p class="card-text small fw-bold mb-0">
-                                Engine Room Records does not just distribute their music. We fund the "Paper Wall" legal trust that protects their assets and independence.
+                                Engine Room Records does not just distribute their music. We fund the "Paper Wall" legal trust that protects their assets and independence—and gave the band its permanent name.
                             </p>
                         </div>
                     </div>
@@ -178,22 +178,22 @@ $pageTitle = "Mirage - Engine Room Records Roster";
         <div class="container">
             <div class="row">
                 <div class="col-md-4 mb-4 mb-md-0">
-                    <img src="<?php echo $cdnBaseUrl; ?>/engine-room-records/artists/mirage/2001-static-and-silence/album-art.jpg" 
+                    <img src="<?php echo $cdnBaseUrl; ?>/engine-room-records/artists/the-paper-wall/2001-static-and-silence-book-1/album-art.jpg" 
                          class="img-fluid border border-secondary shadow-glow" alt="Static & Silence Art">
                     
-                    <div class="mt-4">
-                        <button class="btn btn-outline-light rounded-0 w-100 mb-2 text-uppercase">
-                            <i class="fa-solid fa-play me-2"></i>Stream Album
-                        </button>
-                        <button class="btn btn-danger rounded-0 w-100 text-uppercase fw-bold">
-                            <i class="fa-solid fa-cart-shopping me-2"></i>Buy Physical (2xCD)
-                        </button>
+                    <div class="mt-4 d-flex flex-column gap-2">
+                        <a href="https://music.raggiesoft.com/the-paper-wall" target="_blank" rel="noopener" class="btn btn-primary rounded-0 w-100 text-uppercase fw-bold font-monospace">
+                            <i class="fa-duotone fa-headphones me-2"></i>Open in The Listening Room
+                        </a>
+                        <a href="/engine-room/artists/the-paper-wall/discography/2001-static-and-silence" class="btn btn-outline-light rounded-0 w-100 text-uppercase font-monospace">
+                            <i class="fa-duotone fa-book-open-cover me-2"></i>Album Lore &amp; Archive
+                        </a>
                     </div>
                 </div>
                 
                 <div class="col-md-8 ps-md-5">
-                    <h2 class="display-4 fw-bold text-stenciled mb-2">Static & Silence</h2>
-                    <p class="lead text-white-50 mb-4">Released: 2001 // Rock Opera</p>
+                    <h2 class="display-4 fw-bold text-stenciled mb-2">Static &amp; Silence</h2>
+                    <p class="lead text-white-50 mb-4">Released: 2001 // 2-Volume Rock Opera (Book 1 &amp; Book 2)</p>
                     
                     <p class="mb-4">
                         A harrowing, autobiographical concept album detailing "Leo's" (Julian's) survival of abuse, his cross-country escape on a Greyhound bus, and his return to the "Safe Harbor."
@@ -201,7 +201,7 @@ $pageTitle = "Mirage - Engine Room Records Roster";
 
                     <div class="row g-4">
                         <div class="col-md-6">
-                            <h5 class="text-uppercase border-bottom border-secondary pb-2 mb-3">Disc 1: The Long Road West</h5>
+                            <h5 class="text-uppercase border-bottom border-secondary pb-2 mb-3">Book 1: The Long Road West</h5>
                             <ol class="list-group list-group-numbered list-group-flush">
                                 <li class="list-group-item bg-transparent text-white-50 border-secondary">Nineteen and Invincible</li>
                                 <li class="list-group-item bg-transparent text-white-50 border-secondary">A New Light</li>
@@ -212,10 +212,15 @@ $pageTitle = "Mirage - Engine Room Records Roster";
                                 <li class="list-group-item bg-transparent text-white-50 border-secondary">The Pasco Lock</li>
                                 <li class="list-group-item bg-transparent text-white-50 border-secondary">Shattered Voice, Silent Explosion</li>
                             </ol>
+                            <div class="mt-3">
+                                <a href="https://music.raggiesoft.com/the-paper-wall/2001-static-and-silence-book-1" target="_blank" rel="noopener" class="btn btn-sm btn-outline-info rounded-0 font-monospace">
+                                    <i class="fa-duotone fa-headphones me-1"></i> Book 1 Lyrics &amp; Stream
+                                </a>
+                            </div>
                         </div>
 
                         <div class="col-md-6">
-                            <h5 class="text-uppercase border-bottom border-secondary pb-2 mb-3">Disc 2: The Journey Home</h5>
+                            <h5 class="text-uppercase border-bottom border-secondary pb-2 mb-3">Book 2: The Journey Home</h5>
                             <ol class="list-group list-group-numbered list-group-flush">
                                 <li class="list-group-item bg-transparent text-white border-secondary fw-bold">
                                     <i class="fa-solid fa-star text-danger me-2 small"></i>Curbstone, 4 AM
@@ -228,6 +233,11 @@ $pageTitle = "Mirage - Engine Room Records Roster";
                                 <li class="list-group-item bg-transparent text-white-50 border-secondary">Sanctuary</li>
                                 <li class="list-group-item bg-transparent text-white-50 border-secondary">Haven City</li>
                             </ol>
+                            <div class="mt-3">
+                                <a href="https://music.raggiesoft.com/the-paper-wall/2001-static-and-silence-book-2" target="_blank" rel="noopener" class="btn btn-sm btn-outline-info rounded-0 font-monospace">
+                                    <i class="fa-duotone fa-headphones me-1"></i> Book 2 Lyrics &amp; Stream
+                                </a>
+                            </div>
                         </div>
                     </div>
 
@@ -237,7 +247,7 @@ $pageTitle = "Mirage - Engine Room Records Roster";
     </div>
 
     <div class="bg-body-tertiary py-4 text-center border-top border-secondary">
-        <a href="/engine-room" class="btn btn-link text-decoration-none text-uppercase fw-bold text-body">
+        <a href="/engine-room/artists" class="btn btn-link text-decoration-none text-uppercase fw-bold text-body">
             <i class="fa-solid fa-arrow-left me-2"></i>Return to Roster
         </a>
     </div>

@@ -33,7 +33,7 @@
 $pageTitle = "Ad Astra (Escape Velocity) - The Stardust Engine";
 
 // Pointing to the Single folder
-$album_path_web = '/engine-room-records/artists/the-stardust-engine/1995-ad-astra-single';
+$album_path_web = '/engine-room-records/artists/the-stardust-engine/1996-ad-astra-single';
 ?>
 
 <!-- BEGIN: Thematic Background Animation Layer -->
@@ -75,14 +75,15 @@ $album_path_web = '/engine-room-records/artists/the-stardust-engine/1995-ad-astr
                             <br><span class="text-info small fst-italic">"The moment the 'Engine' ignited and the 'Stardust' took over."</span>
                         </p>
 
-                        <button class="btn btn-primary btn-lg rounded-pill px-5 py-3 shadow-glow mb-3" 
-                                id="btn-launch-mission"
-                                style="font-family: 'Audiowide'; letter-spacing: 1px;">
-                            <i class="fa-duotone fa-rocket-launch me-2"></i> Launch Mission (15:33)
-                        </button>
+                        <a href="https://music.raggiesoft.com/the-stardust-engine/1996-ad-astra-single"
+                           target="_blank" rel="noopener"
+                           class="btn btn-primary btn-lg rounded-pill px-5 py-3 shadow-glow mb-3 text-decoration-none" 
+                           style="font-family: 'Audiowide'; letter-spacing: 1px;">
+                            <i class="fa-duotone fa-rocket-launch me-2"></i> Launch in The Listening Room
+                        </a>
                         
                         <div class="small text-white">
-                            <i class="fa-duotone fa-compact-disc me-2"></i>Full Single &bull; 4 Tracks
+                            <i class="fa-duotone fa-headphones me-2"></i>Stream &amp; Read Complete Lyrics &bull; 4 Movements
                         </div>
                         
                         <div class="mt-4">
@@ -163,7 +164,7 @@ $album_path_web = '/engine-room-records/artists/the-stardust-engine/1995-ad-astr
                 <div class="mt-5">
                     <?php $props = [
                         'text' => 'Back to The Warehouse Tapes', 
-                        'href' => '/discography/1995-the-warehouse-tapes', 
+                        'href' => '/engine-room/artists/stardust-engine/discography/1995-the-warehouse-tapes', 
                         'variant' => 'neutral', 
                         'icon' => 'fa-duotone fa-arrow-left', 
                         'iconPosition' => 'before'
@@ -176,9 +177,9 @@ $album_path_web = '/engine-room-records/artists/the-stardust-engine/1995-ad-astr
             
             <div class="card border-secondary bg-transparent mb-4" style="border-left-width: 4px !important;">
                 <div class="card-body">
-                    <div class="d-flex align-items-center mb-2" onclick="seekTo(0)" role="button">
-                        <span class="badge bg-secondary me-3"><i class="fa-duotone fa-play me-1"></i>00:00</span>
-                        <h4 class="text-secondary text-uppercase fw-bold mb-0 timestamp-link">Part I: The Cage</h4>
+                    <div class="d-flex align-items-center mb-2">
+                        <span class="badge bg-secondary me-3"><i class="fa-duotone fa-waveform me-1"></i>00:00</span>
+                        <h4 class="text-secondary text-uppercase fw-bold mb-0">Part I: The Cage</h4>
                     </div>
                     <div class="ps-5">
                         <p class="font-monospace text-white opacity-75 mb-0 small fst-italic">"The walls are cold, the air is thin..."</p>
@@ -191,9 +192,9 @@ $album_path_web = '/engine-room-records/artists/the-stardust-engine/1995-ad-astr
 
             <div class="card border-warning bg-transparent mb-4" style="border-left-width: 4px !important;">
                 <div class="card-body">
-                    <div class="d-flex align-items-center mb-2" onclick="seekTo(180)" role="button">
-                        <span class="badge bg-warning text-dark me-3"><i class="fa-duotone fa-play me-1"></i>03:00</span>
-                        <h4 class="text-warning text-uppercase fw-bold mb-0 timestamp-link">Part II: Ignition</h4>
+                    <div class="d-flex align-items-center mb-2">
+                        <span class="badge bg-warning text-dark me-3"><i class="fa-duotone fa-waveform me-1"></i>03:00</span>
+                        <h4 class="text-warning text-uppercase fw-bold mb-0">Part II: Ignition</h4>
                     </div>
                     <div class="ps-5">
                         <p class="font-monospace text-white opacity-75 mb-0 small fst-italic">"The sequencer starts. The Engine roars."</p>
@@ -206,9 +207,9 @@ $album_path_web = '/engine-room-records/artists/the-stardust-engine/1995-ad-astr
 
             <div class="card border-primary bg-transparent mb-4" style="border-left-width: 4px !important;">
                 <div class="card-body">
-                    <div class="d-flex align-items-center mb-2" onclick="seekTo(440)" role="button">
-                        <span class="badge bg-primary me-3"><i class="fa-duotone fa-play me-1"></i>07:20</span>
-                        <h4 class="text-primary text-uppercase fw-bold mb-0 timestamp-link">Part III: The Cosmos</h4>
+                    <div class="d-flex align-items-center mb-2">
+                        <span class="badge bg-primary me-3"><i class="fa-duotone fa-waveform me-1"></i>07:20</span>
+                        <h4 class="text-primary text-uppercase fw-bold mb-0">Part III: The Cosmos</h4>
                     </div>
                     <div class="ps-5">
                         <span class="badge bg-danger mb-2 small">DO NOT EDIT</span>
@@ -222,9 +223,9 @@ $album_path_web = '/engine-room-records/artists/the-stardust-engine/1995-ad-astr
 
             <div class="card border-success bg-transparent mb-4" style="border-left-width: 4px !important;">
                 <div class="card-body">
-                    <div class="d-flex align-items-center mb-2" onclick="seekTo(715)" role="button">
-                        <span class="badge bg-success me-3"><i class="fa-duotone fa-play me-1"></i>11:55</span>
-                        <h4 class="text-success text-uppercase fw-bold mb-0 timestamp-link">Part IV: Re-entry</h4>
+                    <div class="d-flex align-items-center mb-2">
+                        <span class="badge bg-success me-3"><i class="fa-duotone fa-waveform me-1"></i>11:55</span>
+                        <h4 class="text-success text-uppercase fw-bold mb-0">Part IV: Re-entry</h4>
                     </div>
                     <div class="ps-5">
                         <p class="font-monospace text-white opacity-75 mb-0 small fst-italic">"The walls are gone, the air is clear..."</p>
@@ -240,50 +241,3 @@ $album_path_web = '/engine-room-records/artists/the-stardust-engine/1995-ad-astr
     <!-- END: Suite Timeline Layout -->
 </div>
 <!-- END: Main Page Content Container -->
-
-<!-- BEGIN: Page-Specific Audio Player Integration Scripts -->
-<script>
-    // Wait for DOM
-    document.addEventListener('DOMContentLoaded', () => {
-        
-        // 1. Find the index of "Full Suite" in the playlist
-        let suiteIndex = 0;
-        if(typeof window.STARDUST_PLAYLIST !== 'undefined') {
-            window.STARDUST_PLAYLIST.forEach((track, index) => {
-                if(track.title.toLowerCase().includes('full suite')) {
-                    suiteIndex = index;
-                }
-            });
-        }
-
-        // 2. Bind the big Launch button
-        const launchBtn = document.getElementById('btn-launch-mission');
-        if(launchBtn) {
-            launchBtn.onclick = () => {
-                if(window.loadTrack) window.loadTrack(suiteIndex);
-            };
-        }
-
-        // 3. Global Seek Helper for timestamps
-        window.seekTo = function(seconds) {
-            if (typeof window.STARDUST_PLAYLIST === 'undefined') return;
-            const audio = document.getElementById('main-audio-element');
-            
-            // Check if we are currently playing the suite
-            const suiteSrc = window.STARDUST_PLAYLIST[suiteIndex].src;
-            const currentSrc = audio.getAttribute('src');
-
-            if (!currentSrc || !currentSrc.includes(suiteSrc)) {
-                window.loadTrack(suiteIndex, true);
-                audio.addEventListener('loadedmetadata', function onLoaded() {
-                    audio.currentTime = seconds;
-                    audio.removeEventListener('loadedmetadata', onLoaded);
-                }, { once: true });
-            } else {
-                audio.currentTime = seconds;
-                audio.play();
-            }
-        };
-    });
-</script>
-<!-- END: Page-Specific Audio Player Integration Scripts -->
