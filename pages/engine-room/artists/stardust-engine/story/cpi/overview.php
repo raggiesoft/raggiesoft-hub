@@ -92,13 +92,13 @@ $nav = [
                 </p>
             </div>
 
-            <!-- [SECTION 2] Campus Geography & Landmarks -->
+            <!-- [SECTION 2] Campus Geography & Landmarks (Official CPI Gazetteer) -->
             <div class="mb-5">
                 <h2 class="h3 fw-bold border-bottom pb-2 mb-3" style="color: var(--cpi-maroon, #630031);">
-                    <i class="fa-duotone fa-map-location-dot me-2"></i>Blacksburg &amp; Campus Geography
+                    <i class="fa-duotone fa-map-location-dot me-2"></i>Blacksburg &amp; CPI Campus Gazetteer
                 </h2>
                 <p class="text-body-secondary mb-4">
-                    Across RaggieSoft's literary and musical canon, the Town of Blacksburg and the CPI campus operate as a living, interconnected grid where characters from different eras and book series cross paths along the same streets, dormitories, and transit corridors:
+                    Built from locally quarried grey-and-pink dolomitic limestone known universally as <strong>Ironstone</strong>, the CPI campus and the Town of Blacksburg operate as a living, interconnected grid where characters across eras and book series cross paths along the same quadrangles, halls, and transit corridors:
                 </p>
 
                 <div class="row g-3">
@@ -106,10 +106,10 @@ $nav = [
                         <div class="card h-100 bg-body-tertiary border-0 shadow-sm">
                             <div class="card-body p-4">
                                 <h3 class="h6 fw-bold text-uppercase mb-2" style="color: var(--cpi-maroon, #630031);">
-                                    <i class="fa-solid fa-landmark me-2 text-warning"></i>The Commonwealth Green &amp; Alumni Mall
+                                    <i class="fa-solid fa-landmark me-2 text-warning"></i>Commonwealth Green, Preston Hall, &amp; Commonwealth Mall
                                 </h3>
                                 <p class="small text-body mb-0">
-                                    <strong>The Commonwealth Green</strong> is the vast central oval lawn at the heart of campus, ringed by neo-Gothic quarried limestone academic halls. Directly feeding the Green is <strong>Alumni Mall</strong>, the university's ceremonial boulevard and home to the primary on-campus <strong>CPI Transit Center</strong> where 60-foot <strong>Blue Ridge Transit (BRT)</strong> articulated buses stage every 15 minutes.
+                                    <strong>Commonwealth Green</strong> is the vast central oval lawn at the heart of campus, ringed by neo-Gothic <strong>Ironstone</strong> academic halls and anchored on its northern rim by <strong>Preston Hall</strong> (the towering administrative headquarters housing the President's Office, Bursar, and 3,000-seat Preston Auditorium). Feeding the Green from the east is <strong>Commonwealth Mall</strong>, spanned by the iconic Ironstone arches of <strong>The Keystone Bridge</strong> (linking <strong>Keystone Hall</strong> to <strong>Pendleton Memorial Library</strong>). Before the dedicated multi-bay <strong>CPI Transit Center</strong> was constructed, every <strong>Blue Ridge Transit (BRT)</strong> route staged bumper-to-bumper along the curb of Commonwealth Mall beneath The Keystone Bridge in an infamous, diesel-choked nightmare—the exact curbside gauntlet where Erin rescued her twin brother John in November 2004.
                                 </p>
                             </div>
                         </div>
@@ -119,10 +119,10 @@ $nav = [
                         <div class="card h-100 bg-body-tertiary border-0 shadow-sm">
                             <div class="card-body p-4">
                                 <h3 class="h6 fw-bold text-uppercase mb-2" style="color: var(--cpi-maroon, #630031);">
-                                    <i class="fa-solid fa-house-chimney-window me-2 text-warning"></i>Progress Street NW &amp; The Ironwood Collective
+                                    <i class="fa-solid fa-compass-drafting me-2 text-warning"></i>Kincaid Hall, Callahan Hall, &amp; The Engineering Quad
                                 </h3>
                                 <p class="small text-body mb-0">
-                                    Just north of the academic core runs <strong>Progress Street NW</strong>—where the O'Connell siblings and Wright twins rented an off-campus house from 1985 to 1989 and built <strong>The Stardust Engine</strong> in a two-car garage. In 2003, the family established <a href="/engine-room/corporate/stardust-blacksburg" class="fw-bold">Stardust Blacksburg, LLC (The Ironwood Collective)</a> along the BRT Route 1 corridor, pricing renovated student apartments 15% below market rate.
+                                    Along Commonwealth Mall sits <strong>Kincaid Hall</strong> (the bustling student union housing the Kincaid Ballroom, Kincaid Auditorium, and Second-Floor Lounge) and <strong>Callahan Hall</strong> (home to Services for Students with Disabilities / SSD). Directly northwest of Commonwealth Green rises the <strong>Engineering Quad</strong>—anchored by <strong>Faraday Hall</strong> (Electrical &amp; Systems Engineering), <strong>Joule Hall</strong> (Mechanical &amp; Materials Engineering), <strong>Kelvin Hall</strong> (Computer Science), and <strong>Archer Hall</strong> (General Lecture Hall)—while the Residential Quad is served by <strong>The Foundry</strong>, CPI's massive two-story rotunda dining hall.
                                 </p>
                             </div>
                         </div>
@@ -132,10 +132,10 @@ $nav = [
                         <div class="card h-100 bg-body-tertiary border-0 shadow-sm">
                             <div class="card-body p-4">
                                 <h3 class="h6 fw-bold text-uppercase mb-2" style="color: var(--cpi-maroon, #630031);">
-                                    <i class="fa-solid fa-building me-2 text-warning"></i>Bennett Hall &amp; Pepper Street
+                                    <i class="fa-solid fa-building me-2 text-warning"></i>Eleanor Bennett Commonwealth Hall ("The Old Lady") &amp; Pepper Street
                                 </h3>
                                 <p class="small text-body mb-0">
-                                    On campus, <strong>Bennett Hall (Suite 214)</strong> serves as the residential sanctuary for Jordan Shawn Kelly, Aubrie, and the Group of 8 in <em>The Aubrie Chronicles</em>. Off campus, the <strong>Pepper Street / Pepper Plaza</strong> corridor (anchored by <strong>Valu-Mart</strong> and the BRT Route 1/3/8 transfer hub) houses students like Paige, Freddie, and Jessica at <code>105 Pepper Street</code>.
+                                    On campus, <strong>Eleanor Bennett Commonwealth Hall</strong>—known universally as <strong>Bennett Hall</strong>, <em>"The Old Lady,"</em> or <em>"The Old Lady on the Hill"</em>—is a historic Ironstone residence hall whose <strong>Suite 214</strong> serves as the sanctuary for Jordan Shawn Kelly, Aubrie, and the Group of 8 in <em>The Aubrie Chronicles</em>. Off campus, <strong>Progress Street NW</strong> is home to The Stardust Engine's <a href="/engine-room/corporate/stardust-blacksburg" class="fw-bold">Ironwood Collective</a>, while the <strong>Pepper Street / Pepper Plaza</strong> corridor (anchored by <strong>Valu-Mart</strong>) houses Paige, Freddie, and Jessica at <code>105 Pepper Street</code>.
                                 </p>
                             </div>
                         </div>
@@ -145,10 +145,10 @@ $nav = [
                         <div class="card h-100 bg-body-tertiary border-0 shadow-sm">
                             <div class="card-body p-4">
                                 <h3 class="h6 fw-bold text-uppercase mb-2" style="color: var(--cpi-maroon, #630031);">
-                                    <i class="fa-solid fa-highway me-2 text-warning"></i>I-81 Exit 118 (Falling Branch) &amp; Exit 98 (NRVRC)
+                                    <i class="fa-solid fa-highway me-2 text-warning"></i>The Crucible, The Furnace, &amp; The I-81 Spine (Exits 118 &amp; 98)
                                 </h3>
                                 <p class="small text-body mb-0">
-                                    The university's regional reach extends down the I-81 spine: from the massive 8-level, 6,000-space <strong>Christiansburg Transit Center at Falling Branch (Exit 118)</strong> to the 566-acre <strong>New River Vocational Rehabilitation Center &amp; Justin's Station (Exit 98)</strong> in Pulaski County, linked directly to campus by the <em>Maroon Express</em> and BRT Route 1.
+                                    At the southern edge of campus stand <strong>The Crucible</strong> (65,000-seat football stadium) and <strong>The Furnace</strong> (10,000-seat basketball coliseum), both protected in perpetuity by the 1995 Ironhead Covenant. The university's reach extends down I-81 from the 8-level, 6,000-space <strong>Christiansburg Transit Center at Falling Branch (Exit 118)</strong> to the 566-acre <strong>New River Vocational Rehabilitation Center &amp; Justin's Station (Exit 98)</strong> in Pulaski County.
                                 </p>
                             </div>
                         </div>
@@ -216,9 +216,9 @@ $nav = [
                             <div class="card-body p-4 d-flex flex-column justify-content-between">
                                 <div>
                                     <span class="badge bg-warning text-dark font-monospace mb-2">CHAPTER 2</span>
-                                    <h3 class="h5 fw-bold">The Crucible &amp; The 1995 Ironhead Covenant</h3>
+                                    <h3 class="h5 fw-bold">The Crucible, The Furnace, &amp; The 1995 Ironhead Covenant</h3>
                                     <p class="small text-body-secondary mb-3">
-                                        Read the full legal text of alumnus Jeremiah "Ironhead" Vance's (Class of '52) <strong>$100,000,000 Deed of Gift</strong>—mandating permanent naming rights, the Acoustic Mandate, and the galvanized metal bleachers of <strong>The Anvil</strong>.
+                                        Read the full legal text of alumnus Jeremiah "Ironhead" Vance's (Class of '52) <strong>$100,000,000 Deed of Gift</strong>—mandating permanent naming rights for both <strong>The Crucible</strong> and <strong>The Furnace</strong>, the Acoustic Mandate, and the galvanized metal bleachers of <strong>The Anvil</strong>.
                                     </p>
                                 </div>
                                 <a href="/engine-room/artists/stardust-engine/story/crucible" class="btn btn-sm btn-outline-warning text-uppercase fw-bold align-self-start">

@@ -145,11 +145,11 @@ $album_path_web = '/engine-room-records/artists/the-paper-wall/2001-static-and-s
                         </div>
                         <p class="font-monospace small text-muted mb-4">
                             DATE: OCTOBER 2000<br>
-                            LOC: CPI CAMPUS / NEWMAN HALL
+                            LOC: CPI CAMPUS / KINCAID HALL
                         </p>
                         
                         <p>
-                            Julian Croft was 19, attempting to restart his life after escaping his abuser. He rolled into the back of Newman Hall during a CPI Orientation event.
+                            Julian Croft was 19, attempting to restart his life after escaping his abuser. He rolled into the back of Kincaid Hall during a CPI Orientation event.
                         </p>
                         <p>
                             On stage, <strong>Ryan O'Connell</strong> was strapped into his chair, screaming <em>Ignition (The Forger's Call)</em>. Julian watched Ryan command 60,000 "Ironheads" without standing up.

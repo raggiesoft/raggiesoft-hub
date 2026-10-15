@@ -11,8 +11,9 @@
  *      Transit interconnected universe archive.
  *    - Focuses specifically on the physical architecture of "The Crucible"
  *      (CPI's 65,000-seat stadium), "The Anvil" (North End Zone galvanized
- *      metal bleachers), and the August 15, 1995 "Ironhead Covenant" ($100M
- *      Deed of Gift by Jeremiah "Ironhead" Vance, Class of 1952).
+ *      metal bleachers), "The Furnace" (CPI's 10,000-seat vaulted concrete
+ *      basketball and convocation coliseum), and the August 15, 1995 "Ironhead
+ *      Covenant" ($100M Deed of Gift by Jeremiah "Ironhead" Vance, Class of 1952).
  *    - Detailed coverage of Stadium Anthems & The 1986 Redline (Chapter 3),
  *      Christiansburg Transit Center at Falling Branch & Game-Day Transit
  *      (Chapter 4), and Historic Rivalries / VDU Shutout War (Chapter 5) has
@@ -24,7 +25,7 @@
  *    - Includes `navigation/narrative-stepper.php` for sequential traversal.
  * ============================================================================
  */
-$pageTitle = "The Crucible & The 1995 Ironhead Covenant - CPI Lore";
+$pageTitle = "The Crucible, The Furnace, & The 1995 Ironhead Covenant - CPI Lore";
 
 // [NAVIGATION] Configure sequential Narrative Stepper for Chapter 2 of 5
 $nav = [
@@ -52,10 +53,10 @@ $nav = [
                 <i class="fa-duotone fa-stadium me-2"></i>Chapter 2 of 5 // Architectural &amp; Legal Archive
             </span>
             <h1 class="display-3 fw-bold text-uppercase text-body-emphasis mb-0" style="font-family: 'Impact', sans-serif;">
-                The Crucible &amp; The Ironhead Covenant
+                The Crucible, The Furnace, &amp; The Ironhead Covenant
             </h1>
             <p class="lead text-body-secondary font-monospace mt-2">
-                August 15, 1995 <span aria-hidden="true" class="mx-1 opacity-50">//</span><span class="visually-hidden">,</span> 65,000 Capacity <span aria-hidden="true" class="mx-1 opacity-50">//</span><span class="visually-hidden">,</span> "The Loudest House in College Sports"
+                August 15, 1995 <span aria-hidden="true" class="mx-1 opacity-50">//</span><span class="visually-hidden">,</span> 65,000 Stadium &amp; 10,000 Coliseum <span aria-hidden="true" class="mx-1 opacity-50">//</span><span class="visually-hidden">,</span> "The Loudest House in College Sports"
             </p>
         </div>
     </div>
@@ -64,10 +65,10 @@ $nav = [
     <div class="row justify-content-center mb-5">
         <div class="col-lg-10">
             <h2 class="h3 fw-bold border-bottom pb-2 mb-3" style="color: var(--cpi-maroon, #630031);">
-                <i class="fa-duotone fa-volume-high me-2"></i>Engineering a Seismic Bowl: Why They Call It "The Loudest House"
+                <i class="fa-duotone fa-volume-high me-2"></i>Engineering a Seismic Complex: The Crucible &amp; The Furnace
             </h2>
             <p class="fs-5 text-body mb-3">
-                Sportscasters and visiting coaches across the nation refer to <strong>The Crucible</strong> as <em>"The Loudest House in All of College Sports"</em>—and that reputation is not hyperbole. It is the result of deliberate, uncompromising acoustic and structural engineering tucked into a natural mountain amphitheater in Blacksburg, Virginia.
+                Sportscasters and visiting coaches across the nation refer to <strong>The Crucible</strong> (CPI's 65,000-seat football stadium) and its adjacent 10,000-seat vaulted concrete basketball arena, <strong>The Furnace</strong>, as <em>"The Loudest Complex in All of College Sports"</em>—and that reputation is not hyperbole. It is the result of deliberate, uncompromising acoustic and structural engineering tucked into a natural mountain amphitheater in Blacksburg, Virginia.
             </p>
 
             <div class="row g-3 my-2">
@@ -75,10 +76,10 @@ $nav = [
                     <div class="card h-100 bg-body-tertiary border-0 shadow-sm">
                         <div class="card-body p-4">
                             <h3 class="h6 fw-bold text-uppercase mb-2" style="color: var(--cpi-maroon, #630031);">
-                                <i class="fa-solid fa-mountain me-2 text-warning"></i>1. Vertical Bowl Geometry
+                                <i class="fa-solid fa-mountain me-2 text-warning"></i>1. Vertical Bowl &amp; Vault Geometry
                             </h3>
                             <p class="small text-body mb-0">
-                                Unlike sprawling, shallow suburban stadiums that allow crowd noise to dissipate into the sky, The Crucible's towering concrete East and West stands rise at an aggressive vertical pitch directly over the sidelines, reflecting sound waves downward onto the turf like a parabolic Dish.
+                                Unlike sprawling, shallow suburban stadiums that allow crowd noise to dissipate into the sky, The Crucible's towering concrete East and West stands rise at an aggressive vertical pitch directly over the sidelines, while next door <strong>The Furnace</strong> traps basketball crowd noise beneath a steeply raked, low-slung parabolic concrete barrel vault.
                             </p>
                         </div>
                     </div>
@@ -91,7 +92,7 @@ $nav = [
                                 <i class="fa-solid fa-ankh me-2 text-warning"></i>2. "The Anvil" (North End Zone)
                             </h3>
                             <p class="small text-body mb-0">
-                                The North End Zone—known universally as <strong>The Anvil</strong>—is constructed of unpadded, hollow-underneath galvanized steel bleachers housing 20,000 standing students (<strong>The Ironheads</strong>). When 40,000 winter boots strike those steel planks in unison, the bleachers act as a massive mechanical drumhead.
+                                The Crucible's North End Zone—known universally as <strong>The Anvil</strong>—is constructed of unpadded, hollow-underneath galvanized steel bleachers housing 20,000 standing students (<strong>The Ironheads</strong>). When 40,000 winter boots strike those steel planks in unison, the bleachers act as a massive mechanical drumhead.
                             </p>
                         </div>
                     </div>
@@ -104,7 +105,7 @@ $nav = [
                                 <i class="fa-solid fa-shield-halved me-2 text-warning"></i>3. Zero Luxury-Suite Dampening
                             </h3>
                             <p class="small text-body mb-0">
-                                When rival universities tore out lower-bowl student seating in the 1990s to install sound-absorbing glass luxury boxes and carpeted club lounges, CPI was legally forbidden from doing so by the <strong>1995 Ironhead Covenant</strong>—preserving raw concrete, exposed structural steel, and maximum decibel retention.
+                                When rival universities tore out lower-bowl student seating in the 1990s to install sound-absorbing glass luxury boxes and carpeted club lounges, CPI was legally forbidden from doing so in both <strong>The Crucible</strong> and <strong>The Furnace</strong> by the <strong>1995 Ironhead Covenant</strong>—preserving raw concrete, exposed structural steel, and maximum decibel retention.
                             </p>
                         </div>
                     </div>
@@ -130,7 +131,7 @@ $nav = [
                     <ul class="list-unstyled">
                         <li><strong>WHEREAS,</strong> the Donor is a proud alumnus of the University (Class of 1952) and wishes to secure the financial future of the University’s student-athletes; and</li>
                         <li><strong>WHEREAS,</strong> the Donor observes with disdain the encroaching trend of commercialization, corporate sponsorship, and the erosion of tradition within collegiate athletics; and</li>
-                        <li><strong>WHEREAS,</strong> the Donor wishes to ensure that the home of the Forgers remains a sanctuary of intimidation, noise, and iron-willed tradition for all time;</li>
+                        <li><strong>WHEREAS,</strong> the Donor wishes to ensure that the home of the Forgers—both on the autumn gridiron and on the winter hardwood—remains a sanctuary of intimidation, noise, and iron-willed tradition for all time;</li>
                     </ul>
                     <p><strong>NOW, THEREFORE,</strong> in consideration of the mutual covenants contained herein, the parties agree as follows:</p>
 
@@ -138,33 +139,33 @@ $nav = [
                     <p>The Donor hereby transfers to the University the sum of ONE HUNDRED MILLION DOLLARS ($100,000,000.00). This sum shall act as the principal corpus to fully endow the "Vance Forger Scholarship Fund," the income from which shall be used solely to provide full tuition, housing, and board for student-athletes of the University.</p>
 
                     <h6 class="fw-bold mt-4 text-decoration-underline">ARTICLE II: THE COVENANT (THE "IRONCLAD CLAUSE")</h6>
-                    <p>Acceptance of the funds described in Article I is strictly conditional upon the University’s perpetual adherence to the following restrictions regarding the football stadium currently known as "The Crucible" (hereinafter "The Facility"). These conditions run with the land and apply to the current structure and any future structure built to replace it.</p>
+                    <p>Acceptance of the funds described in Article I is strictly conditional upon the University’s perpetual adherence to the following restrictions regarding the outdoor football stadium currently known as "The Crucible" AND the adjacent indoor basketball and convocation coliseum currently known as "The Furnace" (hereinafter collectively referred to as "The Protected Facilities"). These conditions run with the land and apply to the current structures and any future structures built to replace them.</p>
 
                     <p class="fw-bold mt-3 mb-1">Section 2.1: Naming Rights in Perpetuity</p>
-                    <p class="mb-1">The name of The Facility shall remain, in perpetuity, "THE CRUCIBLE."</p>
+                    <p class="mb-1">The names of The Protected Facilities shall remain, in perpetuity, "THE CRUCIBLE" (for the football stadium) and "THE FURNACE" (for the basketball and convocation coliseum).</p>
                     <ul class="mb-3">
-                        <li>(a) No corporate, commercial, or individual name shall ever be appended, prefixed, or hyphenated with this name (e.g., "The Crucible at [Corporate Name]" is expressly prohibited).</li>
-                        <li>(b) The University agrees that the Facility is a place of transformation, not a billboard. The integrity of the name is absolute.</li>
+                        <li>(a) No corporate, commercial, or individual name shall ever be appended, prefixed, or hyphenated with either name (e.g., "The Crucible at [Corporate Name]" or "[Corporate Name] Arena at The Furnace" is expressly prohibited).</li>
+                        <li>(b) The University agrees that The Crucible and The Furnace are places of metallurgical transformation and competitive fire, not corporate billboards. The integrity of both names is absolute.</li>
                     </ul>
 
                     <p class="fw-bold mt-3 mb-1">Section 2.2: The Acoustic Mandate</p>
-                    <p class="mb-1">The Donor asserts that the defining characteristic of The Facility is its sonic hostility to opposing teams. Therefore:</p>
+                    <p class="mb-1">The Donor asserts that the defining characteristic of The Protected Facilities is their sonic hostility to opposing teams. Therefore:</p>
                     <ul class="mb-3">
-                        <li>(a) Any future renovations, expansions, or new construction must prioritize Acoustic Retention.</li>
-                        <li>(b) The architecture must "serve the roar." Verticality and noise-trapping engineering must take precedence over aesthetics or luxury seating.</li>
-                        <li>(c) The University is mandated to maintain the architectural conditions necessary to ensure The Facility remains the loudest collegiate stadium in the world.</li>
+                        <li>(a) Any future renovations, expansions, or new construction at either The Crucible or The Furnace must prioritize Acoustic Retention.</li>
+                        <li>(b) The architecture must "serve the roar." Verticality, vaulted concrete reflection, and noise-trapping engineering must take precedence over aesthetics or luxury seating.</li>
+                        <li>(c) The University is mandated to maintain the architectural conditions necessary to ensure The Crucible and The Furnace remain the loudest collegiate athletic venues in the world.</li>
                     </ul>
 
                     <p class="fw-bold mt-3 mb-1">Section 2.3: The Spirit of Iron</p>
-                    <p class="mb-1">The Facility must reflect the blue-collar, industrial roots of the "Forger" identity.</p>
+                    <p class="mb-1">The Protected Facilities must reflect the blue-collar, industrial roots of the "Forger" identity.</p>
                     <ul class="mb-3">
-                        <li>(a) The primary visual materials of the structure shall remain concrete and steel.</li>
-                        <li>(b) The "North End Zone" (The Anvil) shall remain general admission bleacher seating to foster the intensity of the student section. Comfort shall never supersede volume.</li>
+                        <li>(a) The primary visual materials of both structures shall remain concrete and steel.</li>
+                        <li>(b) In The Crucible, the "North End Zone" (The Anvil) shall remain general admission bleacher seating to foster the intensity of the student section. In The Furnace, lower-bowl courtside risers shall remain student-priority seating. Comfort shall never supersede volume.</li>
                     </ul>
 
                     <h6 class="fw-bold mt-4 text-decoration-underline">ARTICLE III: THE CLAWBACK PROVISION (PENALTY FOR BREACH)</h6>
                     <p>The University acknowledges that this Gift is a binding contract, not a suggestion.</p>
-                    <p>In the event that the University, its Board, or its Athletic Department violates any provision of Article II (specifically the renaming of the stadium or the destruction of its acoustic character):</p>
+                    <p>In the event that the University, its Board, or its Athletic Department violates any provision of Article II (specifically the renaming of either The Crucible or The Furnace, or the destruction of their acoustic character):</p>
                     <ol class="mb-3">
                         <li><strong>Immediate Revocation:</strong> The full principal amount of the Endowment ($100,000,000.00) shall immediately revert to the Donor or the Donor’s Estate.</li>
                         <li><strong>The Penalty:</strong> The University shall be liable to repay the principal PLUS Compound Interest calculated at the Federal Prime Rate plus two percent (2%), accruing from the date of this Agreement (August 15, 1995) to the date of the breach.</li>
@@ -180,7 +181,7 @@ $nav = [
                         <p class="fw-bold mb-1"><i class="fa-duotone fa-paperclip me-2"></i>Statement of Intent (Attached to Contract)</p>
                         <p class="mb-0 opacity-75 fst-italic">Handwritten note by Jeremiah Vance:</p>
                         <blockquote class="blockquote fs-6 mt-2 mb-0">
-                            "I am giving you this money so that no Forger ever has to pay to play. In return, I am asking you to keep our soul. This stadium is where boys are forged into men. It is a place of heat, pressure, and transformation. Don't you dare sell it to a bank. Don't you dare turn it into a country club. Keep it loud. Keep it hard. Keep it The Crucible."
+                            "I am giving you this money so that no Forger ever has to pay to play. In return, I am asking you to keep our soul. These venues are where young men and women are forged in steel and fire. They are places of heat, pressure, and transformation. Don't you dare sell them to a bank. Don't you dare turn them into a country club. Keep them loud. Keep them hard. Keep them The Crucible and The Furnace."
                         </blockquote>
                     </div>
                 </div>

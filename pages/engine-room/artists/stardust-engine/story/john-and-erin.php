@@ -18,8 +18,10 @@
  *    - Canon Note: The character "Megan" has been permanently retired from canon.
  *      John finds his "Sanctuary in the Storm" with his fraternal twin sister Erin
  *      after she reverses her power wheelchair down the front boarding door ramp of
- *      the Blue Ridge Transit low-floor bus at the CPI Transit Center in "Before the
- *      Distance", and John later rescues Erin from a predator in "Not Her".
+ *      the Blue Ridge Transit low-floor bus along the chaotic pre-Transit-Center
+ *      curbside bus lineup on Commonwealth Mall (beneath The Keystone Bridge) in
+ *      "Before the Distance", and John later rescues Erin from a predator outside
+ *      Kincaid Hall in "Not Her".
  *
  * 2. Cross-Universe Interconnectivity:
  *    - Because this narrative was published by The Stardust Engine inside the physical
@@ -29,7 +31,7 @@
  *    - When Jessica leaves Michael behind at Kent Station in November 2006 ("Jessica's
  *      Train Ride") and hears "Before the Distance" on her Quantum Zephyr media player,
  *      she realizes in horror that she and her brother are living out the exact story of
- *      John and Erin—except unlike Erin at the CPI Transit Center, Jessica let the steel
+ *      John and Erin—except unlike Erin along Commonwealth Mall, Jessica let the steel
  *      doors close without pulling her brother aboard.
  *    - Likewise, when "Thunder in the Rain" surfaces around Freddie and Paige, having
  *      read the liner notes makes them wonder why they have heard "Thunder in the Rain"
@@ -106,7 +108,7 @@ $pageTitle = "Before the Distance: The Story of John & Erin | The Stardust Engin
             </p>
 
             <p class="lead text-body-secondary mx-auto mb-4" style="max-width: 840px;">
-                Originally conceived by Ryan and Cassidy O'Connell in 1986 and published in the liner booklet of 2004's <em>Progress Street</em> (with its concluding vault chapters restored on 2007's <em>Lost Sounds</em>), the story of fraternal twins <strong class="text-body-emphasis">John and Erin</strong>—both of whom use heavy-duty motorized power wheelchairs to navigate the steep, hilly limestone campus of Commonwealth Polytechnic Institute (CPI)—is one of The Stardust Engine's most famous pieces of in-universe fiction, portrayed visually by Ryan and Cassidy themselves.
+                Originally conceived by Ryan and Cassidy O'Connell in 1986 and published in the liner booklet of 2004's <em>Progress Street</em> (with its concluding vault chapters restored on 2007's <em>Lost Sounds</em>), the story of fraternal twins <strong class="text-body-emphasis">John and Erin</strong>—both of whom use heavy-duty motorized power wheelchairs to navigate the steep, hilly Ironstone campus of Commonwealth Polytechnic Institute (CPI)—is one of The Stardust Engine's most famous pieces of in-universe fiction, portrayed visually by Ryan and Cassidy themselves.
             </p>
 
             <!-- Action Buttons using Web Awesome <wa-button> -->
@@ -131,7 +133,7 @@ $pageTitle = "Before the Distance: The Story of John & Erin | The Stardust Engin
 
             <div class="rounded-4 overflow-hidden border shadow-lg mx-auto mt-3" style="max-width: 920px;">
                 <img src="https://assets.raggiesoft.com/engine-room-records/playlists/john-and-erin/social-preview.jpg"
-                     alt="Before the Distance: The Story of John and Erin — Ryan and Cassidy O'Connell in motorized power wheelchairs holding hands at the front boarding door ramp of a Blue Ridge Transit low-floor bus at the CPI Transit Center"
+                     alt="Before the Distance: The Story of John and Erin — Ryan and Cassidy O'Connell in motorized power wheelchairs holding hands at the front boarding door ramp of a Blue Ridge Transit low-floor bus along Commonwealth Mall"
                      class="img-fluid w-100 d-block"
                      loading="eager">
             </div>
@@ -233,7 +235,7 @@ $pageTitle = "Before the Distance: The Story of John & Erin | The Stardust Engin
                     <section id="act-1" class="mb-4">
                         <div class="d-flex align-items-center justify-content-between flex-wrap gap-2 mb-3">
                             <h2 class="h3 fw-bold text-body-emphasis mb-0">
-                                I &amp; II. The Skip Button at the Mixer
+                                I &amp; II. The Skip Button at Kincaid Hall
                             </h2>
                             <div class="d-flex flex-wrap gap-2">
                                 <wa-badge variant="warning" appearance="filled-outlined">Track 3: Seconds Into Forever</wa-badge>
@@ -242,10 +244,10 @@ $pageTitle = "Before the Distance: The Story of John & Erin | The Stardust Engin
                         </div>
 
                         <p>
-                            Fraternal twins <strong class="text-body-emphasis">John and Erin</strong> (portrayed in the liner-note photography by <strong class="text-body-emphasis">Ryan and Cassidy O'Connell</strong>) grew up sharing an unspoken frequency. Because the Blacksburg plateau and the Commonwealth Polytechnic Institute (CPI) campus are carved into steep Appalachian hills, both John and Erin use heavy-duty motorized power wheelchairs to navigate the five-percent campus grades. Where Erin was instinctive, fierce, and fiercely protective, John was quiet, analytical, and gentle—a CPI systems engineering undergraduate who trusted people at face value and assumed that everyone operated by the same honest rules he did.
+                            Fraternal twins <strong class="text-body-emphasis">John and Erin</strong> (portrayed in the liner-note photography by <strong class="text-body-emphasis">Ryan and Cassidy O'Connell</strong>) grew up sharing an unspoken frequency. Because the Blacksburg plateau and the Commonwealth Polytechnic Institute (CPI) campus are carved into steep Appalachian hills—from the sweeping oval of <strong class="text-body-emphasis">Commonwealth Green</strong> up to <strong class="text-body-emphasis">Faraday Hall</strong> on the Engineering Quad—both John and Erin use heavy-duty motorized power wheelchairs to navigate the five-percent campus grades. Where Erin was instinctive, fierce, and fiercely protective, John was quiet, analytical, and gentle—a CPI systems engineering undergraduate who trusted people at face value and assumed that everyone operated by the same honest rules he did.
                         </p>
                         <p>
-                            In the autumn of their sophomore year in Blacksburg, Erin talked John into attending a Friday night campus speed-dating mixer in the Newman Hall Second-Floor Lounge. The rules were simple: each round lasted exactly three minutes. To time the rotations without a harsh buzzer, the student organizer had cued up a three-minute, 85-BPM romantic power ballad called <strong class="text-body-emphasis"><em>"Seconds Into Forever"</em></strong>—a gentle, shimmering song built around the promise that <em>"It only takes three minutes to believe!"</em>
+                            In the autumn of their sophomore year in Blacksburg, Erin talked John into attending a Friday night campus speed-dating mixer in the <strong class="text-body-emphasis">Kincaid Hall Second-Floor Lounge</strong>. The rules were simple: each round lasted exactly three minutes. To time the rotations without a harsh buzzer, the student organizer had cued up a three-minute, 85-BPM romantic power ballad called <strong class="text-body-emphasis"><em>"Seconds Into Forever"</em></strong>—a gentle, shimmering song built around the promise that <em>"It only takes three minutes to believe!"</em>
                         </p>
 
                         <div id="act-2" class="my-4">
@@ -270,20 +272,20 @@ $pageTitle = "Before the Distance: The Story of John & Erin | The Stardust Engin
 
                     <wa-divider class="my-4"></wa-divider>
 
-                    <!-- ACT III: THE CPI TRANSIT CENTER -->
+                    <!-- ACT III: COMMONWEALTH MALL (PRE-TRANSIT CENTER) -->
                     <section id="act-3" class="mb-4">
                         <div class="d-flex align-items-center justify-content-between flex-wrap gap-2 mb-3">
                             <h2 class="h3 fw-bold text-body-emphasis mb-0">
-                                III. The Executive Decision at the CPI Transit Center
+                                III. The Executive Decision on Commonwealth Mall
                             </h2>
                             <wa-badge variant="brand" appearance="filled-outlined">Track 8: Before the Distance</wa-badge>
                         </div>
 
                         <p>
-                            Once the trap closed, the isolation was surgical. Within weeks of that speed-dating mixer, Valerie moved into John's orbit and began systematically cutting every wire that connected him to safety. She made him feel guilty whenever he called Erin. She monitored his classes, degraded his confidence behind closed doors, and convinced him that her suffocating control was what adult romance required him to endure.
+                            Once the trap closed, the isolation was surgical. Within weeks of that speed-dating mixer, Valerie moved into John's orbit and began systematically cutting every wire that connected him to safety. She made him feel guilty whenever he called Erin. She monitored his classes at Faraday Hall, degraded his confidence behind closed doors, and convinced him that her suffocating control was what adult romance required him to endure.
                         </p>
                         <p>
-                            By late November, John was a ghost of himself. When Erin finally managed to arrange a brief meetup with him on a freezing, rain-slicked evening at the <strong class="text-body-emphasis">CPI Transit Center</strong> (Bay 1), John didn't arrive alone. Valerie stood right beside his power wheelchair under the concrete canopy, her fingers dug possessively into his wet rain-jacket sleeve, answering questions on his behalf while John stared at the wet pavement with his hand limp beside his joystick controller.
+                            By late November 2004, John was a ghost of himself. Back in 2004—years before the dedicated multi-bay <strong>CPI Transit Center</strong> was ever built—every <strong>Blue Ridge Transit</strong> bus on campus met in a chaotic, bumper-to-bumper curbside lineup along <strong class="text-body-emphasis">Commonwealth Mall</strong>, idling in a diesel-choked gauntlet between <strong class="text-body-emphasis">Kincaid Hall</strong>, <strong class="text-body-emphasis">Pendleton Library</strong>, and the vaulted Ironstone arches of <strong class="text-body-emphasis">The Keystone Bridge</strong>. When Erin finally managed to arrange a brief meetup with her brother on a freezing, rain-slicked evening beneath the stone arch of The Keystone Bridge, John didn't arrive alone. Valerie stood right beside his power wheelchair in the driving rain, her fingers dug possessively into his wet rain-jacket sleeve, answering questions on his behalf while John stared at the wet pavement with his hand limp beside his joystick controller.
                         </p>
 
                         <div class="my-4">
@@ -302,13 +304,13 @@ $pageTitle = "Before the Distance: The Story of John & Erin | The Stardust Engin
                         </div>
 
                         <p>
-                            A <strong class="text-body-emphasis">Blue Ridge Transit</strong> low-floor city bus hissed to a stop at the boarding curb, its amber LED headboard reflecting off the puddles as the front pneumatic suspension kneeled and the yellow-bordered aluminum ADA wheelchair ramp deployed from the front boarding door onto the concrete. Erin was supposed to roll onto that bus alone and ride back to her accessible apartment on Progress Street while John went home with Valerie.
+                            Through the chaotic wall of idling buses, hazards, and rushing umbrellas along Commonwealth Mall, a <strong class="text-body-emphasis">Blue Ridge Transit</strong> Route 1 low-floor city bus hissed to a stop at the boarding curb, its amber LED headboard reflecting off the puddles as the front pneumatic suspension kneeled and the yellow-bordered aluminum ADA wheelchair ramp deployed from the front boarding door onto the wet concrete. Erin was supposed to roll onto that bus alone and ride back to her accessible apartment on Progress Street while John went home with Valerie.
                         </p>
                         <p>
-                            Erin guided her power wheelchair up the front-door ramp into the forward securement bay and looked back through the rain-streaked glass of the open front doorway. Seeing the terror and quiet surrender in her twin brother's eyes as Valerie pivoted him toward the parking lot, Erin realized with sudden, chilling clarity that if she let those steel doors close—if she traded her courage for polite little lies and rode away while John stayed on that platform—the distance would swallow him whole.
+                            Erin guided her power wheelchair up the front-door ramp into the forward securement bay and looked back through the rain-streaked glass of the open front doorway. Seeing the terror and quiet surrender in her twin brother's eyes as Valerie pivoted him away from the curb toward the dark slope of Commonwealth Mall, Erin realized with sudden, chilling clarity that if she let those steel doors close—if she traded her courage for polite little lies and rode away while John stayed on that sidewalk—the distance would swallow him whole.
                         </p>
                         <p class="mb-0">
-                            As the hydraulic warning pump whined to raise the front ramp, <strong class="text-body-emphasis">Erin made an executive decision: John was coming with her.</strong> Calling out to the driver to hold the ramp, Erin pulled her joystick back, reversed her power wheelchair straight down the wet aluminum incline of the front boarding door onto the platform, and positioned her steel frame directly between Valerie and her brother. Reaching across their armrests to cover John's cold hand with her own, Erin told him to put his chair in gear. Breaking free of Valerie's grasp, John engaged his motors and rolled up the front ramp right behind his twin sister just as the aluminum ramp folded up and the steel doors hissed shut—leaving his furious abuser stranded on the platform.
+                            As the hydraulic warning pump whined to raise the front ramp, <strong class="text-body-emphasis">Erin made an executive decision: John was coming with her.</strong> Calling out to the driver to hold the ramp, Erin pulled her joystick back, reversed her power wheelchair straight down the wet aluminum incline of the front boarding door onto the Commonwealth Mall sidewalk, and positioned her steel frame directly between Valerie and her brother. Reaching across their armrests to cover John's cold hand with her own, Erin told him to put his chair in gear. Breaking free of Valerie's grasp, John engaged his motors and rolled up the front ramp right behind his twin sister just as the aluminum ramp folded up and the steel doors hissed shut—leaving his furious abuser stranded in the rain on Commonwealth Mall.
                         </p>
                     </section>
 
@@ -324,7 +326,7 @@ $pageTitle = "Before the Distance: The Story of John & Erin | The Stardust Engin
                         </div>
 
                         <p>
-                            Getting off the platform was only the physical extraction; surviving the aftermath required a sanctuary. Back inside the warmth of Erin's ground-floor accessible apartment on Progress Street NW—with their two power wheelchairs charging side by side in the hallway, John's buzzing flip phone powered off inside a ceramic cookie jar, and the deadbolt locked against the November storm—the psychological vault inside John's chest finally swung open.
+                            Getting off the Commonwealth Mall curb was only the physical extraction; surviving the aftermath required a sanctuary. Back inside the warmth of Erin's ground-floor accessible apartment on Progress Street NW—with their two power wheelchairs charging side by side in the hallway, John's buzzing flip phone powered off inside a ceramic cookie jar, and the deadbolt locked against the November storm—the psychological vault inside John's chest finally swung open.
                         </p>
 
                         <div class="my-4">
@@ -359,7 +361,7 @@ $pageTitle = "Before the Distance: The Story of John & Erin | The Stardust Engin
                         </div>
 
                         <p>
-                            The following spring, the twins' roles reversed. Outside the Newman Hall auditorium after an evening research symposium, a slick, practiced predator named Marcus cornered Erin's power wheelchair in a recessed limestone alcove—planting his boot on the base of the ramp to block her turning radius and deploying the exact same charming, isolating script that had once trapped John (<em>"A girl as brilliant as you shouldn't have to play caretaker just because you share a birthday..."</em>).
+                            The following spring, the twins' roles reversed. Outside the <strong class="text-body-emphasis">Kincaid Hall Auditorium</strong> after an evening research symposium, a slick, practiced predator named Marcus cornered Erin's power wheelchair in a recessed Ironstone alcove—planting his boot on the base of the ramp to block her turning radius and deploying the exact same charming, isolating script that had once trapped John (<em>"A girl as brilliant as you shouldn't have to play caretaker just because you share a birthday..."</em>).
                         </p>
 
                         <div class="my-4">
@@ -378,7 +380,7 @@ $pageTitle = "Before the Distance: The Story of John & Erin | The Stardust Engin
                         </div>
 
                         <p class="mb-0">
-                            Because John had walked through that fire and paid the cost, his analytical mind recognized the predator's routine in a fraction of a second. Thumb-shifting his power wheelchair into its highest outdoor climbing gear, John drove straight up the concrete incline and wedged two hundred and fifty pounds of rolling steel and battery torque directly between Marcus and Erin's chair. Dismantling Marcus's script to his face with surgical fury, John forced him to retreat into the rain—rescuing his twin sister just as she had rescued him at the CPI Transit Center.
+                            Because John had walked through that fire and paid the cost, his analytical mind recognized the predator's routine in a fraction of a second. Thumb-shifting his power wheelchair into its highest outdoor climbing gear, John drove straight up the concrete incline and wedged two hundred and fifty pounds of rolling steel and battery torque directly between Marcus and Erin's chair. Dismantling Marcus's script to his face with surgical fury, John forced him to retreat into the rain—rescuing his twin sister outside Kincaid Hall just as she had rescued him along Commonwealth Mall.
                         </p>
                     </section>
 
@@ -397,7 +399,7 @@ $pageTitle = "Before the Distance: The Story of John & Erin | The Stardust Engin
             </p>
 
             <div class="row g-4 mb-5">
-                <!-- Callout 1: Jessica's Train Ride (Kent Station vs. CPI Transit Center) -->
+                <!-- Callout 1: Jessica's Train Ride (Kent Station vs. Commonwealth Mall) -->
                 <div class="col-md-6">
                     <wa-card class="h-100 shadow-sm">
                         <div slot="header" class="d-flex align-items-center justify-content-between gap-2">
@@ -405,10 +407,10 @@ $pageTitle = "Before the Distance: The Story of John & Erin | The Stardust Engin
                             <wa-icon name="train-subway" family="duotone" class="text-primary fs-5"></wa-icon>
                         </div>
                         <h4 class="h5 fw-bold text-body-emphasis mb-2">
-                            Jessica's Train Ride: Kent Station vs. The CPI Transit Center
+                            Jessica's Train Ride: Kent Station vs. Commonwealth Mall
                         </h4>
                         <p class="text-body small mb-3">
-                            In November 2006, at <strong class="text-body-emphasis">Kent Station</strong> in Washington State, <strong class="text-body-emphasis">Jessica</strong> sees the frayed, exhausted shadow on her brother <strong class="text-body-emphasis">Michael's</strong> face as he stands on the platform beside his abuser, Delores. Unlike Erin at the CPI Transit Center, Jessica hesitates—boarding the commuter train to Seattle King Street Station alone and letting the pneumatic steel doors hiss shut without pulling Michael aboard.
+                            In November 2006, at <strong class="text-body-emphasis">Kent Station</strong> in Washington State, <strong class="text-body-emphasis">Jessica</strong> sees the frayed, exhausted shadow on her brother <strong class="text-body-emphasis">Michael's</strong> face as he stands on the platform beside his abuser, Delores. Unlike Erin along Commonwealth Mall, Jessica hesitates—boarding the commuter train to Seattle King Street Station alone and letting the pneumatic steel doors hiss shut without pulling Michael aboard.
                         </p>
                         <p class="text-body small mb-0">
                             Moments later, when <strong class="text-body-emphasis"><em>"Before the Distance"</em></strong> comes on shuffle on her pre-release <strong class="text-body-emphasis">Quantum Zephyr</strong> media player, Jessica remembers reading The Stardust Engine's story of <strong class="text-body-emphasis">John and Erin</strong>. Realizing in horror that she and Michael are living out the exact same story—except she failed to make Erin's executive decision before the doors closed—Jessica weeps openly in her wheelchair bay all the way to Seattle and immediately dispatches Andromeda to try to extract him.
@@ -427,7 +429,7 @@ $pageTitle = "Before the Distance: The Story of John & Erin | The Stardust Engin
                             Freddie &amp; Paige: The Warning Inside <em>"Thunder in the Rain"</em>
                         </h4>
                         <p class="text-body small mb-3">
-                            After seeing Ryan and Cassidy O'Connell perform live in Newman Hall during their CPI freshman orientation, <strong class="text-body-emphasis">Freddie</strong> and <strong class="text-body-emphasis">Paige</strong> devoured The Stardust Engine's discography and liner notes—including the published booklet story of how John met his abuser at a campus speed-dating event when the organizer accidentally skipped past <em>"Seconds Into Forever"</em> and played <strong class="text-body-emphasis"><em>"Thunder in the Rain"</em></strong> instead.
+                            After seeing Ryan and Cassidy O'Connell perform live in <strong class="text-body-emphasis">Kincaid Hall</strong> during their CPI freshman orientation, <strong class="text-body-emphasis">Freddie</strong> and <strong class="text-body-emphasis">Paige</strong> devoured The Stardust Engine's discography and liner notes—including the published booklet story of how John met his abuser at a Kincaid Hall speed-dating event when the organizer accidentally skipped past <em>"Seconds Into Forever"</em> and played <strong class="text-body-emphasis"><em>"Thunder in the Rain"</em></strong> instead.
                         </p>
                         <p class="text-body small mb-0">
                             When <em>"Thunder in the Rain"</em> later echoes across campus, Freddie and Paige find themselves wondering why they have heard that exact song before—before connecting the 150-BPM stadium anthem to the liner-note story of John's speed-dating ambush and recognizing how predators use chaos and noise to mask their approach.

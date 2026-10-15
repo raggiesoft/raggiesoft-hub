@@ -152,11 +152,11 @@ $pageTitle = "The Paper Wall - Engine Room Records Roster";
                         </div>
                         <p class="font-monospace small text-muted mb-4">
                             DATE: OCTOBER 2000<br>
-                            LOC: CPI CAMPUS / NEWMAN HALL
+                            LOC: CPI CAMPUS / KINCAID HALL
                         </p>
                         
                         <p>
-                            Julian Croft was 19, attempting to restart his life after escaping his abuser ("Vanessa"). He rolled into the back of Newman Hall during a CPI Orientation event, unsure if he belonged.
+                            Julian Croft was 19, attempting to restart his life after escaping his abuser ("Vanessa"). He rolled into the back of Kincaid Hall during a CPI Orientation event, unsure if he belonged.
                         </p>
                         <p>
                             On stage, <strong>Ryan O'Connell</strong>—The Stardust Engine's T10 paraplegic frontman—was strapped into his chair, sweating, screaming, and dominating the room with the band's anthem, <em>Ignition (The Forger's Call)</em>.

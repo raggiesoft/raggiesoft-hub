@@ -269,7 +269,7 @@ $pageTitle = "The Lore - The Stardust Engine";
                 <div class="d-flex flex-column h-100 p-3">
                     <h3 class="h5 fw-bold text-warning">The Story of John &amp; Erin</h3>
                     <p class="card-text text-muted small">
-                        Read the official five-song twin narrative published by The Stardust Engine across <em>Progress Street</em> and <em>Lost Sounds</em>—from a fatal speed-dating track skip to a rescue at the CPI Transit Center.
+                        Read the official five-song twin narrative published by The Stardust Engine across <em>Progress Street</em> and <em>Lost Sounds</em>—from a fatal speed-dating track skip at Kincaid Hall to a rainy rescue along Commonwealth Mall.
                     </p>
                     <div class="mt-auto pt-3">
                         <wa-button variant="warning" outline href="/engine-room/artists/stardust-engine/story/john-and-erin" class="w-100">

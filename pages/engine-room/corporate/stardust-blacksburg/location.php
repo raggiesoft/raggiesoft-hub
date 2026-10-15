@@ -54,7 +54,7 @@ $pageTitle = "Location & Transit - Stardust Blacksburg";
         <div class="col-lg-9 text-center">
             <h1 class="display-4 fw-bold text-uppercase text-body-emphasis mb-3">The 15-Minute Rule</h1>
             <p class="lead text-body-secondary">
-                Stardust Blacksburg properties are strategically located along the "Spine," ensuring you are never more than a 15-minute ride from Alumni Mall.
+                Stardust Blacksburg properties are strategically located along the "Spine," ensuring you are never more than a 15-minute ride from Commonwealth Mall.
             </p>
             <div class="d-inline-flex align-items-center bg-warning bg-opacity-10 border border-warning rounded-pill px-4 py-2 mt-2">
                 <i class="fa-solid fa-id-card text-warning me-2"></i>
@@ -82,7 +82,7 @@ $pageTitle = "Location & Transit - Stardust Blacksburg";
                         <span class="badge bg-secondary">Every 15 Min</span>
                     </div>
                     <p class="small text-muted mb-1">
-                        <strong>Corridor:</strong> <a href="/engine-room/artists/stardust-engine/story/crucible/falling-branch-transit" class="fw-bold">Christiansburg Transit Center (Falling Branch Exit 118)</a> <i class="fa-solid fa-arrow-right mx-1" style="font-size: 0.7em;"></i> Pepper Plaza <i class="fa-solid fa-arrow-right mx-1" style="font-size: 0.7em;"></i> Downtown <i class="fa-solid fa-arrow-right mx-1" style="font-size: 0.7em;"></i> Progress St NW <i class="fa-solid fa-arrow-right mx-1" style="font-size: 0.7em;"></i> Alumni Mall.
+                        <strong>Corridor:</strong> <a href="/engine-room/artists/stardust-engine/story/crucible/falling-branch-transit" class="fw-bold">Christiansburg Transit Center (Falling Branch Exit 118)</a> <i class="fa-solid fa-arrow-right mx-1" style="font-size: 0.7em;"></i> Pepper Plaza <i class="fa-solid fa-arrow-right mx-1" style="font-size: 0.7em;"></i> Downtown <i class="fa-solid fa-arrow-right mx-1" style="font-size: 0.7em;"></i> Progress St NW <i class="fa-solid fa-arrow-right mx-1" style="font-size: 0.7em;"></i> Commonwealth Mall.
                     </p>
                     <p class="small text-muted mb-0 fst-italic">
                         The heavy lifter. Anchored by VDOT's 8-level, 6,000-space intercept garage at Exit 118 (with WSDOT-style bus-only flyover ramps onto US-460). 60-foot Prairie Coachworks articulated buses deployed continuously during peak hours and Crucible game days.
@@ -183,7 +183,7 @@ $pageTitle = "Location & Transit - Stardust Blacksburg";
                 </div>
                 
                 <div class="position-absolute bottom-0 end-0 p-3 text-end opacity-50 d-none d-md-block">
-                    <span class="font-monospace small text-muted d-block">HUB: ALUMNI MALL</span>
+                    <span class="font-monospace small text-muted d-block">HUB: COMMONWEALTH MALL</span>
                     <span class="font-monospace small text-muted d-block">ZONE: BLUE RIDGE TRANSIT</span>
                 </div>
             </div>

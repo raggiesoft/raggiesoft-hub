@@ -92,7 +92,7 @@ $nav = [
                                 </div>
                                 <h3 class="h6 fw-bold mb-1">The Spine</h3>
                                 <p class="small text-body-secondary mb-0">
-                                    Runs continuously from the <strong>Christiansburg Transit Center at Falling Branch (Exit 118)</strong> through Uptown Mall, <strong>Pepper Plaza (Valu-Mart)</strong>, Downtown Blacksburg, and <strong>Progress Street NW</strong> to the <strong>CPI Transit Center on Alumni Mall</strong>.
+                                    Runs continuously from the <strong>Christiansburg Transit Center at Falling Branch (Exit 118)</strong> through Uptown Mall, <strong>Pepper Plaza (Valu-Mart)</strong>, Downtown Blacksburg, and <strong>Progress Street NW</strong> to <strong>Commonwealth Mall</strong> (historically staging curbside beneath <strong>The Keystone Bridge</strong> outside <strong>Kincaid Hall</strong> prior to the opening of the dedicated <strong>CPI Transit Center</strong>).
                                 </p>
                             </div>
                         </div>
