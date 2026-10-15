@@ -117,15 +117,15 @@ $pageTitle = "Before the Distance: The Story of John & Erin | The Stardust Engin
                     <wa-icon slot="end" name="arrow-up-right-from-square" family="classic" variant="solid"></wa-icon>
                 </wa-button>
 
-                <wa-button variant="neutral" appearance="filled-outlined" size="medium" href="/raggiesoft-books/books/erin">
+                <wa-button variant="neutral" appearance="filled-outlined" size="medium" href="https://books.raggiesoft.com/erin" target="_blank">
                     <wa-icon slot="start" name="book-open-reader" family="duotone"></wa-icon>
                     Read the Full Novel (Ocean View Archives)
+                    <wa-icon slot="end" name="arrow-up-right-from-square" family="classic" variant="solid"></wa-icon>
                 </wa-button>
 
-                <wa-button variant="neutral" appearance="outlined" size="medium" href="https://books.raggiesoft.com/erin" target="_blank">
+                <wa-button variant="neutral" appearance="outlined" size="medium" href="/raggiesoft-books/books">
                     <wa-icon slot="start" name="books" family="duotone"></wa-icon>
-                    Open in Book Library
-                    <wa-icon slot="end" name="arrow-up-right-from-square" family="classic" variant="solid"></wa-icon>
+                    Browse Contemporary Library
                 </wa-button>
             </div>
 
@@ -457,9 +457,10 @@ $pageTitle = "Before the Distance: The Story of John & Erin | The Stardust Engin
                                 Story Playlist
                                 <wa-icon slot="end" name="arrow-up-right-from-square" family="classic" variant="solid"></wa-icon>
                             </wa-button>
-                            <wa-button size="small" variant="neutral" appearance="filled-outlined" href="/raggiesoft-books/books/erin">
+                            <wa-button size="small" variant="neutral" appearance="filled-outlined" href="https://books.raggiesoft.com/erin" target="_blank">
                                 <wa-icon slot="start" name="book-open-reader" family="duotone"></wa-icon>
                                 Read Novel
+                                <wa-icon slot="end" name="arrow-up-right-from-square" family="classic" variant="solid"></wa-icon>
                             </wa-button>
                             <wa-button size="small" variant="neutral" appearance="outlined" href="/engine-room/artists/stardust-engine/discography/2004-progress-street">
                                 Progress Street (2004)

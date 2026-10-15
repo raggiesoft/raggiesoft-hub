@@ -265,8 +265,7 @@ $pageTitle = "The Lore - The Stardust Engine";
         <!-- Grid Item: Before the Distance: The Story of John & Erin -->
         <div class="col-12 col-md-6 col-lg-4 d-flex align-items-stretch">
             <wa-card class="h-100 border-warning shadow-sm hover-card bg-transparent w-100 p-0" style="--wa-panel-bg: transparent; --body-padding: 0;">
-                <img src="<?php echo $cdnBaseUrl; ?>/engine-room-records/artists/the-stardust-engine/2007-lost-sounds/album-art.jpg" class="img-fluid border-bottom" alt="Before the Distance: The Story of John & Erin Liner Booklet"
-                     style="filter: brightness(0.85);">
+                <img src="<?php echo $cdnBaseUrl; ?>/engine-room-records/playlists/john-and-erin/cover.jpg" class="img-fluid border-bottom" alt="Before the Distance: The Story of John & Erin — Ryan and Cassidy O'Connell in motorized power wheelchairs holding hands at the front boarding door ramp of a Blue Ridge Transit bus">
                 <div class="d-flex flex-column h-100 p-3">
                     <h3 class="h5 fw-bold text-warning">The Story of John &amp; Erin</h3>
                     <p class="card-text text-muted small">

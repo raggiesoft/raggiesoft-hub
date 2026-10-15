@@ -48,6 +48,7 @@ $heroImages = [
     $cdnBaseUrl . "/raggiesoft-books/images/library-hero/contemporary.jpg",
     $cdnBaseUrl . "/raggiesoft-books/images/library-hero/crimson-node.jpg",
     $cdnBaseUrl . "/raggiesoft-books/images/library-hero/dream-kingdom.jpg",
+    $cdnBaseUrl . "/raggiesoft-books/images/library-hero/erin.jpg",
     $cdnBaseUrl . "/raggiesoft-books/images/library-hero/fractured-prisms.jpg",
     $cdnBaseUrl . "/raggiesoft-books/images/library-hero/jack-sarah.jpg",
     $cdnBaseUrl . "/raggiesoft-books/images/library-hero/luna-leo.jpg",
