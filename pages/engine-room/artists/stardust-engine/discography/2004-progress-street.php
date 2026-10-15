@@ -7,7 +7,7 @@
  *
  * 1. Lore Context:
  *    - Main album lore and liner notes page for "Progress Street" (2004) by The Stardust Engine.
- *    - Recorded at the O'Connell family home on Progress Street NW in Blacksburg, Virginia,
+ *    - Recorded at the O'Connell family home on Progress Street NE in Blacksburg, Virginia,
  *      this album represents the full-blooded 1980s Album-Oriented Rock (AOR) and stadium
  *      synth-rock record that Apex Records never allowed the band to make in 1987.
  *    - Serves as the emotional capstone of the band's 2001-2004 creative sprint (three studio
@@ -46,7 +46,7 @@ $album_path_web = '/engine-room-records/artists/the-stardust-engine/2004-progres
         $props = [
             'path' => $album_path_web,
             'alt' => 'Progress Street Album Art - The Stardust Engine',
-            'variant' => 'axiom' // Warm amber border reflecting dusk streetlights on Progress Street NW
+            'variant' => 'axiom' // Warm amber border reflecting dusk streetlights on Progress Street NE
         ];
         include ROOT_PATH . '/includes/components/_album-art-header.php';
         ?>
@@ -59,7 +59,7 @@ $album_path_web = '/engine-room-records/artists/the-stardust-engine/2004-progres
                 The 2004 Blacksburg Homecoming &amp; Pre-Hiatus Finale
             </p>
             <p class="lead text-body">
-                Recorded at their family home on Progress Street NW in Blacksburg, Virginia, <em>Progress Street</em> is the unapologetic, full-blooded 1980s AOR and stadium synth-rock record that Apex Records never allowed The Stardust Engine to make in 1987.
+                Recorded at their family home on Progress Street NE in Blacksburg, Virginia, <em>Progress Street</em> is the unapologetic, full-blooded 1980s AOR and stadium synth-rock record that Apex Records never allowed The Stardust Engine to make in 1987.
             </p>
             <p class="text-muted">
                 Following the intense psychological weight of the 2003 <em>Twin Moons</em> project (<em>Sanctuary: Zero-G</em> and <em>Mile Marker 98</em>), Ryan, Cassidy, Holly, Evan, and Tyler retreated to where their story began. Trading conceptual space metaphors for warm upright pianos, Cassidy's cherished second-hand 1984 six-voice analog synthesizer, roaring stadium guitars, and thunderous gated-reverb drums, the album is a love letter to their collegiate roots at Commonwealth Polytechnic Institute (CPI) and the unbreakable family unit that survived every storm.
@@ -90,7 +90,7 @@ $album_path_web = '/engine-room-records/artists/the-stardust-engine/2004-progres
                     <wa-badge variant="brand" class="ms-3">Title Track</wa-badge>
                 </div>
                 <p class="text-muted mb-0">
-                    The triumphant 128 BPM 1980s AOR opener looking back to 1985 on Progress Street NW in Blacksburg—where Ryan, Cassidy, Evan, Tyler, and sixteen-year-old prodigy Holly forged their family unit. Driven by bright polyphonic analog synth-brass fanfares and a soaring brother-sister duet, the song sets the thesis of the entire record: before the stadium lights and label wars, their true power was built in a collegiate living room with cables taped across the hardwood floor.
+                    The triumphant 128 BPM 1980s AOR opener looking back to 1985 on Progress Street NE in Blacksburg—where Ryan, Cassidy, Evan, Tyler, and sixteen-year-old prodigy Holly forged their family unit. Driven by bright polyphonic analog synth-brass fanfares and a soaring brother-sister duet, the song sets the thesis of the entire record: before the stadium lights and label wars, their true power was built in a collegiate living room with cables taped across the hardwood floor.
                 </p>
             </wa-accordion-item>
 
@@ -159,7 +159,7 @@ $album_path_web = '/engine-room-records/artists/the-stardust-engine/2004-progres
                     <wa-badge variant="danger" class="ms-3">Stadium Classic</wa-badge>
                 </div>
                 <p class="text-muted mb-3">
-                    A roaring 130 BPM stadium rock companion to 1986's <em>"Ignition: The Forger's Call,"</em> celebrating the autumn night when a student contest turned a five-piece family band from Progress Street NW into the eternal Saturday night soundtrack of <strong>The Crucible</strong>—the loudest house in college sports.
+                    A roaring 130 BPM stadium rock companion to 1986's <em>"Ignition: The Forger's Call,"</em> celebrating the autumn night when a student contest turned a five-piece family band from Progress Street NE into the eternal Saturday night soundtrack of <strong>The Crucible</strong>—the loudest house in college sports.
                 </p>
                 <p class="text-muted mb-3">
                     <strong>The 1986 "$1.00 Perpetual Mutual Cross-License":</strong> When the CPI Student Government Association distributed the October 1986 anthem contest entry packet, it contained a buried boilerplate "Work Made for Hire" clause that would have signed away 100% of the band's master and publishing rights to the CPI Athletic Foundation. Sixteen-year-old prodigy <strong>Holly O'Connell</strong>—who was <strong>dual-enrolled at Blacksburg High School and CPI</strong>, taking afternoon undergraduate business and contract law electives on campus—redlined the agreement at the Progress Street kitchen table into a <strong>$1.00 Perpetual Mutual Cross-License</strong>. Under Holly's deal, CPI Athletics received a perpetual, royalty-free stadium and broadcast synchronization license to blast <em>"Ignition"</em> and future Stardust Engine anthems inside The Crucible, while CPI's Office of Trademarks &amp; Licensing granted the band (and any label they wholly owned) a perpetual, worldwide, royalty-free <strong>Co-Existence &amp; Artistic Reference License</strong> to sing and print <em>"CPI"</em>, <em>"Commonwealth Polytechnic Institute"</em>, <em>"The Forgers"</em>, and <em>"The Crucible"</em> across their commercial releases.
@@ -197,10 +197,10 @@ $album_path_web = '/engine-room-records/artists/the-stardust-engine/2004-progres
                     <wa-badge variant="brand" class="ms-3">John &amp; Erin: Part III • Cross-Universe Canon</wa-badge>
                 </div>
                 <p class="text-muted mb-3">
-                    A dramatic, mid-tempo 1980s pop-rock power anthem sung by Cassidy (<em>"When the steel doors close and the platform clears / You can hear the truth grinding in the gears..."</em>) that serves as the emotional turning point of The Stardust Engine's published story of fraternal twins <strong>John and Erin</strong>. After the woman John met during <em>"Thunder in the Rain"</em> at Kincaid Hall systematically isolates and breaks him down, Erin meets him on a rainy November evening in the chaotic pre-Transit-Center curbside bus lineup along <strong>Commonwealth Mall</strong> (beneath <strong>The Keystone Bridge</strong>) in Blacksburg. Seeing the hollowed-out shadow across her brother's face, <strong>Erin makes the executive decision that John is coming with her</strong>—reversing her power wheelchair down the front boarding door ramp of the Blue Ridge Transit bus and pulling him aboard right before the steel doors close (<em>"I'm turning around, I'm breaking the track / Whatever it costs me, I'm taking it back!"</em>), leaving his furious abuser stranded in the rain on Commonwealth Mall.
+                    A dramatic, mid-tempo 1980s pop-rock power anthem sung by Cassidy (<em>"When the steel doors close and the platform clears / You can hear the truth grinding in the gears..."</em>) that serves as the emotional turning point of The Stardust Engine's published story of fraternal twins <strong>John and Erin</strong>. After the woman John met during <em>"Thunder in the Rain"</em> at Kincaid Hall systematically isolates and breaks him down, she tries to force him onto a southbound Blue Ridge Transit bus in the chaotic curbside bus lineup along <strong>Commonwealth Mall</strong> (beneath <strong>The Keystone Bridge</strong>) in Blacksburg. Seeing the hollowed-out shadow across her brother's face, <strong>Erin makes the executive decision that John is coming home instead</strong>—driving her power wheelchair between John and the deployed front boarding door ramp on the sidewalk, locking a perimeter right before the steel doors close (<em>"I'm turning around, I'm breaking the track / Whatever it costs me, I'm taking it back!"</em>), and escorting her twin brother the two blocks down the sidewalk to their apartment on <strong>Progress Street NE</strong>.
                 </p>
                 <p class="text-muted mb-3">
-                    <strong>Cross-Universe Echo (<em>Jessica's Train Ride</em>, November 2006):</strong> In <em>The Rachel Narrative</em>, <strong>Jessica</strong> leaves her brother <strong>Michael</strong> behind on the platform at <strong>Kent Station</strong> with his abuser, Delores—doing the exact opposite of what Erin did along Commonwealth Mall. Moments later, when <em>"Before the Distance"</em> comes on shuffle on Jessica's pre-release <strong>Quantum Zephyr</strong> media player on the commuter train to Seattle King Street Station, she remembers reading The Stardust Engine's published story of John and Erin and realizes in horror that she and Michael are living out the exact same story—except she let the steel doors close without pulling her brother aboard.
+                    <strong>Cross-Universe Echo (<em>Jessica's Train Ride</em>, November 2006):</strong> In <em>The Rachel Narrative</em>, <strong>Jessica</strong> leaves her brother <strong>Michael</strong> behind on the platform at <strong>Kent Station</strong> with his abuser, Delores—doing the exact opposite of what Erin did along Commonwealth Mall. Moments later, when <em>"Before the Distance"</em> comes on shuffle on Jessica's pre-release <strong>Quantum Zephyr</strong> media player on the commuter train to Seattle King Street Station, she remembers reading The Stardust Engine's published story of John and Erin and realizes in horror that she and Michael are living out the exact same story—except she let the steel doors close without pulling her brother away.
                 </p>
                 <div class="alert alert-info border-info-subtle text-info-emphasis mb-0 p-3">
                     <i class="fa-solid fa-book-sparkles me-2"></i><strong>Read the Published Narrative:</strong>
@@ -243,7 +243,7 @@ $album_path_web = '/engine-room-records/artists/the-stardust-engine/2004-progres
                     <wa-badge variant="warning" class="ms-3">The Hiatus Sign-Off</wa-badge>
                 </div>
                 <p class="text-muted mb-0">
-                    The grand 88 BPM 1980s stadium power-ballad finale of <em>Progress Street</em>—written as the band's direct, heartfelt message to Forger Nation that they are signing off for a little while. Completely burned out after pouring everything they had into three full studio albums in under two years, Ryan, Cassidy, Holly, Evan, and Tyler use this closing anthem to reassure the world that they are not breaking up. As their custom 2004 Prairie Coachworks RLFD30 kneels at the curb on Progress Street NW and the five of them head inside, they promise their fans that, as a family, they are staying together—and that once they have rested and recharged, they will turn the switches back on and return with more music.
+                    The grand 88 BPM 1980s stadium power-ballad finale of <em>Progress Street</em>—written as the band's direct, heartfelt message to Forger Nation that they are signing off for a little while. Completely burned out after pouring everything they had into three full studio albums in under two years, Ryan, Cassidy, Holly, Evan, and Tyler use this closing anthem to reassure the world that they are not breaking up. As their custom 2004 Prairie Coachworks RLFD30 kneels at the curb on Progress Street NE and the five of them head inside, they promise their fans that, as a family, they are staying together—and that once they have rested and recharged, they will turn the switches back on and return with more music.
                 </p>
             </wa-accordion-item>
 

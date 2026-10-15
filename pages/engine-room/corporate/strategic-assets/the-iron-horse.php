@@ -244,7 +244,7 @@ $pageTitle = "The Iron Horse & Fleet Archive - Stardust Strategic Assets, LLC";
                     <img src="<?php echo $cdnBaseUrl; ?>/stardust-engine/images/fleet/2004-prairie-coachworks-rlfd30.jpg"
                          class="img-fluid w-100 object-fit-cover"
                          style="max-height: 540px;"
-                         alt="2004 Prairie Coachworks RLFD30 30-foot Restyled Low-Floor shuttle bus parked on Progress Street NW with open front doors, deployed aluminum low-floor ADA wheelchair ramp, Cosmic Nebula side wrap, and glowing amber LED destination signs reading PROGRESS STREET and THE STARDUST ENGINE.">
+                         alt="2004 Prairie Coachworks RLFD30 30-foot Restyled Low-Floor shuttle bus parked on Progress Street NE with open front doors, deployed aluminum low-floor ADA wheelchair ramp, Cosmic Nebula side wrap, and glowing amber LED destination signs reading PROGRESS STREET and THE STARDUST ENGINE.">
                 </div>
 
                 <div class="card-body p-4 p-lg-5">
@@ -254,7 +254,7 @@ $pageTitle = "The Iron Horse & Fleet Archive - Stardust Strategic Assets, LLC";
                                 The Low-Floor Blacksburg Cruiser (Kneeling Curb Ramp)
                             </h2>
                             <p class="text-body-secondary">
-                                While the 45-foot <em>Sainte-Claire 45H3</em> was built to cross continents, maneuvering a towering tri-axle highway liner down tight residential streets like <strong>Progress Street NW</strong> or through the campus turns of <strong>Commonwealth Polytechnic Institute (CPI)</strong>—and waiting several minutes to deploy a heavy 60-inch vertical hydraulic lift for a quick local trip—was impractical.
+                                While the 45-foot <em>Sainte-Claire 45H3</em> was built to cross continents, maneuvering a towering tri-axle highway liner down tight residential streets like <strong>Progress Street NE</strong> or through the campus turns of <strong>Commonwealth Polytechnic Institute (CPI)</strong>—and waiting several minutes to deploy a heavy 60-inch vertical hydraulic lift for a quick local trip—was impractical.
                             </p>
                             <p class="text-body-secondary">
                                 In early 2004, while recording their homecoming album <a href="/engine-room/artists/stardust-engine/discography/2004-progress-street" class="fw-bold">Progress Street</a>, The Stardust Engine became the very first <strong>launch customer</strong> for <strong>Prairie Coachworks'</strong> newly restyled 30-foot low-floor platform: the <strong>2004 RLFD30</strong> (Restyled Low-Floor Diesel, 30-Foot).
@@ -425,7 +425,7 @@ $pageTitle = "The Iron Horse & Fleet Archive - Stardust Strategic Assets, LLC";
                                 Following the <a href="/engine-room/artists/stardust-engine/story/crash-of-90" class="fw-bold">December 10, 1990 crash on Interstate 81</a> that left Ryan O'Connell with a complete T10 spinal cord injury, the family instituted an unbreakable operational rule: <strong>no hired commercial driver would ever hold their lives in their hands again.</strong>
                             </p>
                             <p class="text-body-secondary mb-0">
-                                Before taking delivery of heavy coaches, <strong>Holly O'Connell</strong>, <strong>Evan Wright</strong>, and <strong>Tyler Wright</strong> all completed commercial heavy-vehicle training and earned their <strong>Class A Commercial Driver's Licenses (CDL)</strong> with full <strong>Passenger (P)</strong> and <strong>Airbrake</strong> endorsements. Whether piloting the 45-foot <em>Sainte-Claire 45H3</em> across Canada or kneeling the 30-foot <em>Prairie Coachworks RLFD30</em> at the curb on Progress Street NW, a member of the family is always in the driver's seat.
+                                Before taking delivery of heavy coaches, <strong>Holly O'Connell</strong>, <strong>Evan Wright</strong>, and <strong>Tyler Wright</strong> all completed commercial heavy-vehicle training and earned their <strong>Class A Commercial Driver's Licenses (CDL)</strong> with full <strong>Passenger (P)</strong> and <strong>Airbrake</strong> endorsements. Whether piloting the 45-foot <em>Sainte-Claire 45H3</em> across Canada or kneeling the 30-foot <em>Prairie Coachworks RLFD30</em> at the curb on Progress Street NE, a member of the family is always in the driver's seat.
                             </p>
                         </div>
                         <div class="col-lg-4 mt-4 mt-lg-0">

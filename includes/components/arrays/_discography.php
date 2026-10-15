@@ -58,7 +58,7 @@ $discographyLibrary = [
     'err-planetarium' => [
         'label' => 'The Twin Moons & Progress Street',
         'heading' => '2003-2004: The Twin Moons Project & Blacksburg Homecoming',
-        'description' => 'An ambitious dual-release planetarium project confronting the trauma of The Crash of \'90, followed immediately by a nostalgic 2004 homecoming to Progress Street NW in Blacksburg.',
+        'description' => 'An ambitious dual-release planetarium project confronting the trauma of The Crash of \'90, followed immediately by a nostalgic 2004 homecoming to Progress Street NE in Blacksburg.',
         'albums' => [
             ['title' => 'Sanctuary (Zero-G)', 'year' => '2003', 'url' => '/engine-room/artists/stardust-engine/discography/2003-moon-1-sanctuary-zero-g', 'img' => $cdnBaseUrl . '/engine-room-records/artists/the-stardust-engine/2003-sanctuary-zero-g/album-art.jpg'],
             ['title' => 'Mile Marker 98', 'year' => '2003', 'url' => '/engine-room/artists/stardust-engine/discography/2003-moon-2-mile-marker-98', 'img' => $cdnBaseUrl . '/engine-room-records/artists/the-stardust-engine/2003-mile-marker-98/album-art.jpg'],

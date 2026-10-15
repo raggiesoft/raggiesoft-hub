@@ -17,11 +17,11 @@
  *      * Part V:   "Not Her" (Lost Sounds, Track 14)
  *    - Canon Note: The character "Megan" has been permanently retired from canon.
  *      John finds his "Sanctuary in the Storm" with his fraternal twin sister Erin
- *      after she reverses her power wheelchair down the front boarding door ramp of
- *      the Blue Ridge Transit low-floor bus along the chaotic pre-Transit-Center
- *      curbside bus lineup on Commonwealth Mall (beneath The Keystone Bridge) in
- *      "Before the Distance", and John later rescues Erin from a predator outside
- *      Kincaid Hall in "Not Her".
+ *      after she blocks the front boarding door ramp of Valerie's southbound Blue Ridge
+ *      Transit bus along the chaotic curbside bus lineup on Commonwealth Mall (beneath
+ *      The Keystone Bridge) in "Before the Distance", establishes a locked perimeter on
+ *      the sidewalk, and brings John the two blocks home to Progress Street NE. John later
+ *      rescues Erin from a predator outside Kincaid Hall in "Not Her".
  *
  * 2. Cross-Universe Interconnectivity:
  *    - Because this narrative was published by The Stardust Engine inside the physical
@@ -304,13 +304,13 @@ $pageTitle = "Before the Distance: The Story of John & Erin | The Stardust Engin
                         </div>
 
                         <p>
-                            Through the chaotic wall of idling buses, hazards, and rushing umbrellas along Commonwealth Mall, a <strong class="text-body-emphasis">Blue Ridge Transit</strong> Route 1 low-floor city bus hissed to a stop at the boarding curb, its amber LED headboard reflecting off the puddles as the front pneumatic suspension kneeled and the yellow-bordered aluminum ADA wheelchair ramp deployed from the front boarding door onto the wet concrete. Erin was supposed to roll onto that bus alone and ride back to her accessible apartment on Progress Street while John went home with Valerie.
+                            Through the chaotic wall of idling buses, hazards, and rushing umbrellas along Commonwealth Mall, a southbound <strong class="text-body-emphasis">Blue Ridge Transit</strong> Route 1 low-floor city bus (<span class="font-monospace">1 FALLING BRANCH</span>) hissed to a stop at the boarding curb, its amber LED headboard reflecting off the puddles as the front pneumatic suspension kneeled and the yellow-bordered aluminum ADA wheelchair ramp deployed from the front boarding door onto the wet concrete. Because John and Erin shared a ground-floor accessible apartment on <strong class="text-body-emphasis">Progress Street NE</strong>—just two blocks from Commonwealth Mall—they never needed a bus to get home. Instead, Valerie was insisting that John board the southbound bus with her to spend the weekend isolated at her off-campus apartment down the Route 1 corridor in Christiansburg.
                         </p>
                         <p>
-                            Erin guided her power wheelchair up the front-door ramp into the forward securement bay and looked back through the rain-streaked glass of the open front doorway. Seeing the terror and quiet surrender in her twin brother's eyes as Valerie pivoted him away from the curb toward the dark slope of Commonwealth Mall, Erin realized with sudden, chilling clarity that if she let those steel doors close—if she traded her courage for polite little lies and rode away while John stayed on that sidewalk—the distance would swallow him whole.
+                            Seeing the terror and quiet surrender in her twin brother's eyes as Valerie tried to guide his power wheelchair toward the deployed front-door ramp, Erin realized with sudden, chilling clarity that if she let John board that bus and let those steel doors close—if she traded her courage for polite little lies and rolled the two blocks home to Progress Street NE alone—the distance would swallow him whole.
                         </p>
                         <p class="mb-0">
-                            As the hydraulic warning pump whined to raise the front ramp, <strong class="text-body-emphasis">Erin made an executive decision: John was coming with her.</strong> Calling out to the driver to hold the ramp, Erin pulled her joystick back, reversed her power wheelchair straight down the wet aluminum incline of the front boarding door onto the Commonwealth Mall sidewalk, and positioned her steel frame directly between Valerie and her brother. Reaching across their armrests to cover John's cold hand with her own, Erin told him to put his chair in gear. Breaking free of Valerie's grasp, John engaged his motors and rolled up the front ramp right behind his twin sister just as the aluminum ramp folded up and the steel doors hissed shut—leaving his furious abuser stranded in the rain on Commonwealth Mall.
+                            As Valerie stepped onto the bottom edge of the aluminum ramp and ordered John to roll aboard, <strong class="text-body-emphasis">Erin made an executive decision: John was coming home instead.</strong> Driving her power wheelchair forward across the wet bricks of the Commonwealth Mall sidewalk, Erin wedged her heavy steel frame directly between John's chair and the front boarding ramp, locking her brakes and covering John's cold hand on his joystick with her own. Refusing to yield the sidewalk despite Valerie's furious demands that John get on the bus, Erin held a locked perimeter on the curb until John reversed his chair away from the ramp and the steel doors hissed shut without him—then escorted her twin brother side by side the two blocks down the sidewalk to the safety of their apartment on Progress Street NE.
                         </p>
                     </section>
 
@@ -326,7 +326,7 @@ $pageTitle = "Before the Distance: The Story of John & Erin | The Stardust Engin
                         </div>
 
                         <p>
-                            Getting off the Commonwealth Mall curb was only the physical extraction; surviving the aftermath required a sanctuary. Back inside the warmth of Erin's ground-floor accessible apartment on Progress Street NW—with their two power wheelchairs charging side by side in the hallway, John's buzzing flip phone powered off inside a ceramic cookie jar, and the deadbolt locked against the November storm—the psychological vault inside John's chest finally swung open.
+                            Getting off the Commonwealth Mall sidewalk was only the physical extraction; surviving the aftermath required a sanctuary. Two blocks away, inside the warmth of their ground-floor accessible apartment on <strong class="text-body-emphasis">Progress Street NE</strong>—with their two power wheelchairs charging side by side in the hallway, John's buzzing flip phone powered off inside a ceramic cookie jar, and the deadbolt locked against the November storm—the psychological vault inside John's chest finally swung open.
                         </p>
 
                         <div class="my-4">

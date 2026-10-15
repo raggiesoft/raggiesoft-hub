@@ -213,7 +213,7 @@ if ($eras) {
                 <i class="fa-solid fa-location-dot me-1"></i>1985 Origins &bull; 2004 Studio Release &bull; Blacksburg, VA
             </p>
             <p class="lead text-body-secondary mb-3">
-                A roaring eleven-track 1980s AOR and stadium synth-rock homecoming. Named after Progress Street NW in Blacksburg—where Ryan, Cassidy, Holly, Evan, and Tyler lived in an off-campus rental house while attending <strong>Commonwealth Polytechnic Institute (CPI)</strong>—this record celebrates the unbreakable family bond that carried them from a basement upright piano to sold-out arenas.
+                A roaring eleven-track 1980s AOR and stadium synth-rock homecoming. Named after Progress Street NE in Blacksburg—where Ryan, Cassidy, Holly, Evan, and Tyler lived in an off-campus rental house while attending <strong>Commonwealth Polytechnic Institute (CPI)</strong>—this record celebrates the unbreakable family bond that carried them from a basement upright piano to sold-out arenas.
             </p>
             <p class="text-body mb-4">
                 Featuring the Fourth Quarter stadium stomper <em>"Saturday Night Lights: The Crucible"</em> (cleared under Holly's legendary 1986 <strong>$1.00 Perpetual Mutual Cross-License</strong> with CPI), the full-band AOR resurrection of <em>"Empty Arenas,"</em> and their heartfelt pre-hiatus promise to Forger Nation, <em>"Last Bus Home: Lights Out on Progress Street."</em>

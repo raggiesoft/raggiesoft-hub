@@ -73,7 +73,7 @@ $nav = [
             </div>
 
             <p>
-                In October 1986, the O'Connell siblings and Wright twins (soon to be <strong>The Stardust Engine</strong>) entered a student-run contest to replace the traditional marching band fanfare that the CPI football team ran onto the field to. In their two-car garage on Progress Street NW, they recorded <strong>"Ignition (The Forger's Call)"</strong>—a heavy, pounding industrial-rock track anchored by drummer <a href="/engine-room/artists/stardust-engine/band/tyler-wright">Tyler Wright</a> striking a salvaged automobile brake drum with a sledgehammer (<em>TING... BOOM!</em>).
+                In October 1986, the O'Connell siblings and Wright twins (soon to be <strong>The Stardust Engine</strong>) entered a student-run contest to replace the traditional marching band fanfare that the CPI football team ran onto the field to. In their two-car garage on Progress Street NE, they recorded <strong>"Ignition (The Forger's Call)"</strong>—a heavy, pounding industrial-rock track anchored by drummer <a href="/engine-room/artists/stardust-engine/band/tyler-wright">Tyler Wright</a> striking a salvaged automobile brake drum with a sledgehammer (<em>TING... BOOM!</em>).
             </p>
 
             <!-- [CALLOUT] The 1986 Progress Street Redline -->

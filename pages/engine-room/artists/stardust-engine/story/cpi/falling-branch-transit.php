@@ -27,7 +27,7 @@
  *         Prices Fork Road, and the South Main Street (Business 460) trap.
  *      e) Cross-Universe Connections: Exit 98 (NRVRC / Justin's Station & the
  *         Wall of 20 on the Maroon Express), Pepper Street (Summer Session
- *         PolyPass loophole), and Progress Street NW (The Stardust Engine's
+ *         PolyPass loophole), and Progress Street NE (The Stardust Engine's
  *         2004 Prairie Coachworks RLFD30 private coach).
  * ============================================================================
  */
@@ -93,7 +93,7 @@ $nav = [
                                 </div>
                                 <h3 class="h6 fw-bold mb-1">The Spine (45 Min Full-Length)</h3>
                                 <p class="small text-body-secondary mb-0">
-                                    Never short-turns: leaves <strong>Christiansburg Transit Center / Falling Branch (Exit 118)</strong>, follows <strong>US-11</strong> into downtown Christiansburg to <strong>Pepper Plaza Transit Center</strong> (next door to the <strong>Montgomery County Courthouse</strong>, across from <code>105 Pepper Street</code> &amp; Valu-Mart; 15 min), then follows <strong>South Main Street (Business US-460)</strong> and <strong>Progress Street NW</strong> into Blacksburg to <strong>Commonwealth Mall</strong> (2003–2015) or the <strong>CPI Transit Center</strong> (2016+; 30 min from Pepper Plaza).
+                                    Never short-turns: leaves <strong>Christiansburg Transit Center / Falling Branch (Exit 118)</strong>, follows <strong>US-11</strong> into downtown Christiansburg to <strong>Pepper Plaza Transit Center</strong> (next door to the <strong>Montgomery County Courthouse</strong>, across from <code>105 Pepper Street</code> &amp; Valu-Mart; 15 min), then follows <strong>South Main Street (Business US-460)</strong> and <strong>Progress Street NE</strong> into Blacksburg to <strong>Commonwealth Mall</strong> (2003–2015) or the <strong>CPI Transit Center</strong> (2016+; 30 min from Pepper Plaza).
                                 </p>
                             </div>
                         </div>

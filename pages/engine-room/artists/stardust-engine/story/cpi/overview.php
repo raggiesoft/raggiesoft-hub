@@ -12,7 +12,7 @@
  *      Transit (BRT) archive.
  *    - Establishes CPI as a shared geographical and institutional anchor across
  *      multiple RaggieSoft narratives:
- *      a) The Stardust Engine (The Class of '89, Progress Street NW, Holly's
+ *      a) The Stardust Engine (The Class of '89, Progress Street NE, Holly's
  *         1985-1987 Dual Enrollment at Blacksburg High School & CPI, and the
  *         1993-1995 Forger Nation War Chest).
  *      b) The Aubrie Chronicles (Jordan Shawn Kelly, Aubrie, and the Group of 8
@@ -135,7 +135,7 @@ $nav = [
                                     <i class="fa-solid fa-building me-2 text-warning"></i>Eleanor Bennett Commonwealth Hall ("The Old Lady") &amp; Pepper Street
                                 </h3>
                                 <p class="small text-body mb-0">
-                                    On campus, <strong>Eleanor Bennett Commonwealth Hall</strong>—known universally as <strong>Bennett Hall</strong>, <em>"The Old Lady,"</em> or <em>"The Old Lady on the Hill"</em>—is a historic Ironstone residence hall whose <strong>Suite 214</strong> serves as the sanctuary for Jordan Shawn Kelly, Aubrie, and the Group of 8 in <em>The Aubrie Chronicles</em>. Off campus, <strong>Progress Street NW</strong> is home to The Stardust Engine's <a href="/engine-room/corporate/stardust-blacksburg" class="fw-bold">Ironwood Collective</a>, while the <strong>Pepper Street / Pepper Plaza</strong> corridor (anchored by <strong>Valu-Mart</strong>) houses Paige, Freddie, and Jessica at <code>105 Pepper Street</code>.
+                                    On campus, <strong>Eleanor Bennett Commonwealth Hall</strong>—known universally as <strong>Bennett Hall</strong>, <em>"The Old Lady,"</em> or <em>"The Old Lady on the Hill"</em>—is a historic Ironstone residence hall whose <strong>Suite 214</strong> serves as the sanctuary for Jordan Shawn Kelly, Aubrie, and the Group of 8 in <em>The Aubrie Chronicles</em>. Off campus, <strong>Progress Street NE</strong> is home to The Stardust Engine's <a href="/engine-room/corporate/stardust-blacksburg" class="fw-bold">Ironwood Collective</a>, while the <strong>Pepper Street / Pepper Plaza</strong> corridor (anchored by <strong>Valu-Mart</strong>) houses Paige, Freddie, and Jessica at <code>105 Pepper Street</code>.
                                 </p>
                             </div>
                         </div>
