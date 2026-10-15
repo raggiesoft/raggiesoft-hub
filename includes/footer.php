@@ -75,11 +75,11 @@ $isDarkTheme = (isset($currentPageTheme) && in_array($currentPageTheme, ['dark',
                             Code: <a href="/raggiesoft-media/licensing" class="text-decoration-none link-body-emphasis border-bottom">MIT</a>
                         </span>
                     </div>
-                    <div class="mt-2 text-body-secondary opacity-75" style="font-size: 0.85em;">
+                    <div class="mt-2 text-body-secondary" style="font-size: 0.85em;">
                         RaggieSoft&trade;, The Stardust Engine&trade;, and Engine Room Records&trade; are trademarks of Michael P. Ragsdale.
                     </div>
-                    <div class="mt-1 text-body-secondary opacity-75" style="font-size: 0.8em;">
-                        <strong>Fictitious Disclaimer:</strong> Unless explicitly marked as real-world portfolio credentials, all bands, characters, universities (including CPI), corporations (including OmniCorp, Apex Records, Prairie Coachworks, and Sainte-Claire), legal filings, and events depicted on this network are works of fiction. Any resemblance to actual persons, living or dead, institutions, or events is purely coincidental.
+                    <div class="mt-1 text-body-secondary" style="font-size: 0.8em;">
+                        <strong>Fictitious Disclaimer:</strong> Unless explicitly marked as real-world portfolio credentials, all bands, characters, universities (including Commonwealth Polytechnic Institute / CPI, The Forgers, The Ironheads, The Crucible, Virginia Dominion University / VDU, Piedmont Virginia University / PVU, and Monongahela State University / MSU), corporations (including OmniCorp, Apex Records, Prairie Coachworks, and Sainte-Claire), transit agencies (Blue Ridge Transit), legal filings, and events depicted on this network are works of fiction. Any resemblance to actual persons, living or dead, institutions, or events is purely coincidental.
                     </div>
                 </div>
                 <div class="col-lg-6 text-center text-lg-end small mt-2 mt-lg-0">
