@@ -34,7 +34,10 @@
   },
   "/engine-room/corporate/fleet": {
     "view": "pages/engine-room/corporate/fleet",
-    "title": "Fleet Command | Logistics"
+    "title": "Fleet Command | Logistics",
+    "ogTitle": "Fleet Command & Accessible Coach Roster | Engine Room Records",
+    "ogDescription": "Home of Serial #001 of the 2004 Prairie Coachworks RLFD30 (Launch Customer: The Stardust Engine) and the 2002 Sainte-Claire 45H3 ('The Iron Horse').",
+    "ogImage": "/stardust-engine/images/fleet/2004-prairie-coachworks-rlfd30.jpg"
   },
   "/engine-room/corporate/acquisition-plan": {
     "view": "pages/engine-room/corporate/acquisition-plan",
@@ -60,8 +63,9 @@
   "/engine-room/corporate/strategic-assets/the-iron-horse": {
     "view": "pages/engine-room/corporate/strategic-assets/the-iron-horse",
     "title": "The Iron Horse & Fleet Archive | Stardust Strategic Assets, LLC",
-    "ogDescription": "Technical specifications, Class A CDL driver roster, and 2004–2015 corporate holding history for the 2002 Sainte-Claire 45H3 and 2004 Prairie Coachworks RLFD30.",
-    "ogImage": "/stardust-engine/images/fleet/2002-sainte-claire-45h3-iron-horse.jpg"
+    "ogTitle": "The Fleet Archive: 2004 Prairie Coachworks RLFD30 (Launch Customer #001) & The Iron Horse",
+    "ogDescription": "Featuring the official 2004 Prairie Coachworks RLFD30 Launch Customer Press Release, the 2002 Sainte-Claire 45H3 ('The Iron Horse'), and the O'Connell Family Class A CDL Protocol.",
+    "ogImage": "/stardust-engine/images/fleet/2004-prairie-coachworks-rlfd30.jpg"
   },
   "/engine-room/assets": {
     "view": "pages/engine-room/assets/overview",
@@ -70,8 +74,9 @@
   "/engine-room/assets/iron-horse": {
     "view": "pages/engine-room/corporate/strategic-assets/the-iron-horse",
     "title": "The Iron Horse & Fleet Archive | Stardust Strategic Assets, LLC",
-    "ogDescription": "Technical specifications, Class A CDL driver roster, and 2004–2015 corporate holding history for the 2002 Sainte-Claire 45H3 and 2004 Prairie Coachworks RLFD30.",
-    "ogImage": "/stardust-engine/images/fleet/2002-sainte-claire-45h3-iron-horse.jpg"
+    "ogTitle": "The Fleet Archive: 2004 Prairie Coachworks RLFD30 (Launch Customer #001) & The Iron Horse",
+    "ogDescription": "Featuring the official 2004 Prairie Coachworks RLFD30 Launch Customer Press Release, the 2002 Sainte-Claire 45H3 ('The Iron Horse'), and the O'Connell Family Class A CDL Protocol.",
+    "ogImage": "/stardust-engine/images/fleet/2004-prairie-coachworks-rlfd30.jpg"
   },
   "/engine-room/assets/iron-horse/negotiation": {
     "view": "pages/engine-room/assets/iron-horse/negotiation",

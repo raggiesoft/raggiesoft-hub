@@ -104,8 +104,8 @@ $album_path_web = '/engine-room-records/artists/the-stardust-engine/2004-progres
                     A nocturnal 134 BPM highway rocker paying tribute to riding <strong>Blue Ridge Transit's Route 1</strong> along Main Street and Progress Street during their CPI student years—and celebrating the band becoming <strong>Prairie Coachworks'</strong> very first launch customer in 2004 with their own custom 30-foot <strong>RLFD30</strong> low-floor shuttle coach. Unlike their 45-foot 2002 Sainte-Claire 45H3 interstate tour bus (which requires a 60-inch vertical hydraulic lift), the compact RLFD30 kneels right to the Blacksburg curb and unfolds a simple front flip-out ADA ramp so Ryan can roll straight aboard with his family.
                 </p>
                 <div class="alert alert-info border-info-subtle text-info-emphasis mb-0 p-3">
-                    <i class="fa-solid fa-bus me-2"></i><strong>Explore the Fleet Archive:</strong>
-                    Inspect the technical specifications and CDL driver roster for both the 2002 Sainte-Claire 45H3 and the 2004 Prairie Coachworks RLFD30 in
+                    <i class="fa-solid fa-bus me-2"></i><strong>Explore the Fleet Archive &amp; Launch Press Release:</strong>
+                    Inspect the technical specifications, CDL driver roster, and the framed <a href="/engine-room/corporate/strategic-assets/the-iron-horse#prairie-press-release" class="alert-link fw-bold text-decoration-underline">May 18, 2004 Prairie Coachworks Launch Customer Press Release (Serial #001)</a> in
                     <a href="/engine-room/corporate/strategic-assets/the-iron-horse" class="alert-link fw-bold text-decoration-underline">The Iron Horse &amp; Fleet Archive</a>.
                 </div>
             </wa-accordion-item>

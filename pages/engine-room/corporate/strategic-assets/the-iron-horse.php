@@ -110,6 +110,9 @@ $pageTitle = "The Iron Horse & Fleet Archive - Stardust Strategic Assets, LLC";
                                 After the band signed off at the conclusion of 2004's <a href="/engine-room/artists/stardust-engine/discography/2004-progress-street" class="fw-bold">Progress Street</a> to recover from severe touring burnout, CEO <a href="/engine-room/artists/stardust-engine/band/holly-oconnell" class="fw-bold">Holly O'Connell</a> spent the 2004&ndash;2015 hiatus systematically unbundling the label into a fortress of specialized entities. Realizing that a single highway accident involving a 45,000-pound motorcoach could expose the band's master recordings to catastrophic litigation, Holly spun off the physical properties and heavy fleet into <strong>Stardust Strategic Assets, LLC</strong> (a subsidiary of <strong>Stardust Properties, LLC</strong>), completing the anonymous corporate web in the <a href="/engine-room/artists/stardust-engine/story/2015-delaware-migration" class="fw-bold">2015 Delaware Migration</a>.
                             </p>
                             <div class="d-flex flex-wrap gap-2">
+                                <a href="#prairie-press-release" class="btn btn-sm btn-warning text-dark text-uppercase fw-bold font-monospace">
+                                    <i class="fa-duotone fa-newspaper me-1"></i>2004 Prairie Coachworks Press Release (#001)
+                                </a>
                                 <a href="/engine-room/corporate/structure" class="btn btn-sm btn-outline-primary text-uppercase fw-bold font-monospace">
                                     <i class="fa-duotone fa-sitemap me-1"></i>View 2015 Corporate Structure Map
                                 </a>
@@ -261,7 +264,10 @@ $pageTitle = "The Iron Horse & Fleet Archive - Stardust Strategic Assets, LLC";
                             </p>
 
                             <div class="d-flex flex-wrap gap-2">
-                                <a href="/engine-room/artists/stardust-engine/discography/2004-progress-street" class="btn btn-warning text-dark fw-bold text-uppercase small">
+                                <a href="#prairie-press-release" class="btn btn-warning text-dark fw-bold text-uppercase small">
+                                    <i class="fa-duotone fa-newspaper me-2"></i>Read Prairie Coachworks Press Release (May 2004)
+                                </a>
+                                <a href="/engine-room/artists/stardust-engine/discography/2004-progress-street" class="btn btn-outline-warning fw-bold text-uppercase small">
                                     <i class="fa-duotone fa-compact-disc me-2"></i>View Progress Street (2004) Album Lore
                                 </a>
                             </div>
@@ -276,7 +282,7 @@ $pageTitle = "The Iron Horse & Fleet Archive - Stardust Strategic Assets, LLC";
                                     <tbody>
                                         <tr>
                                             <th>Manufacturer</th>
-                                            <td>Prairie Coachworks</td>
+                                            <td>Prairie Coachworks (Winnipeg, MB)</td>
                                         </tr>
                                         <tr>
                                             <th>Model / Platform</th>
@@ -284,7 +290,7 @@ $pageTitle = "The Iron Horse & Fleet Archive - Stardust Strategic Assets, LLC";
                                         </tr>
                                         <tr>
                                             <th>Production Note</th>
-                                            <td>Launch Customer #001 (2004)</td>
+                                            <td>Launch Customer // Serial #001</td>
                                         </tr>
                                         <tr>
                                             <th>Door Config</th>
@@ -311,6 +317,90 @@ $pageTitle = "The Iron Horse & Fleet Archive - Stardust Strategic Assets, LLC";
                             </div>
                         </div>
                     </div>
+
+                    <!-- =================================================================
+                         SUB-DOCUMENT: OFFICIAL PRAIRIE COACHWORKS PRESS RELEASE (MAY 2004)
+                         ================================================================= -->
+                    <div class="mt-5 pt-4 border-top border-secondary" id="prairie-press-release">
+                        <div class="d-flex flex-wrap justify-content-between align-items-center mb-3">
+                            <div>
+                                <span class="badge bg-warning text-dark font-monospace text-uppercase me-2">
+                                    <i class="fa-solid fa-stamp me-1"></i>Archival Artifact // Framed Onboard Unit #001
+                                </span>
+                                <span class="text-body-secondary small font-monospace">
+                                    DOC-ID: PCW-PR-2004-0518 // WINNIPEG, MB &amp; BLACKSBURG, VA
+                                </span>
+                            </div>
+                            <span class="badge bg-dark border border-warning text-warning font-monospace">
+                                LAUNCH CUSTOMER CERTIFICATE #001
+                            </span>
+                        </div>
+
+                        <p class="text-body-secondary small fst-italic mb-3">
+                            <strong>Archivist's Note:</strong> Of all the vehicles in the family fleet, the <strong>2004 Prairie Coachworks RLFD30</strong> holds a uniquely personal place in the band's heart. Because <strong>The Stardust Engine</strong> signed on as the official <strong>Launch Customer (Serial #001)</strong> for Prairie Coachworks' restyled 30-foot low-floor platform before the first municipal transit orders were even delivered, the manufacturer issued the following press release on Delivery Day. Ryan, Cassidy, Holly, Evan, and Tyler keep a framed copy mounted on the forward bulkhead just behind the driver's cockpit—and carry laminated copies in the glovebox to show fellow transit enthusiasts on the road.
+                        </p>
+
+                        <!-- Press Release Document Card -->
+                        <div class="card bg-body border-warning border-2 shadow-sm">
+                            <div class="card-header bg-warning bg-opacity-10 border-bottom border-warning py-3 px-4">
+                                <div class="d-flex flex-wrap justify-content-between align-items-center font-monospace small">
+                                    <strong class="text-uppercase text-warning-emphasis">
+                                        FOR IMMEDIATE RELEASE &mdash; MAY 18, 2004
+                                    </strong>
+                                    <span class="text-body-secondary">
+                                        PRAIRIE COACHWORKS, INC. // SPECIALTY &amp; EXECUTIVE TRANSIT DIVISION
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="card-body p-4 p-lg-5" style="font-family: 'Georgia', serif;">
+                                <h3 class="h4 fw-bold text-body-emphasis mb-2" style="font-family: 'Helvetica Neue', Arial, sans-serif;">
+                                    PRAIRIE COACHWORKS UNVEILS RESTYLED 2004 RLFD30 LOW-FLOOR PLATFORM; DELIVERS SERIAL #001 LAUNCH COACH TO INDEPENDENT ROCK ACT "THE STARDUST ENGINE"
+                                </h3>
+                                <p class="text-body-secondary fst-italic mb-4" style="font-family: 'Helvetica Neue', Arial, sans-serif;">
+                                    First-of-its-kind 30-foot Restyled Low-Floor Diesel (RLFD30) single-door executive coach pairs heavy-duty urban transit accessibility with custom acoustic touring architecture for Blacksburg, Virginia musicians.
+                                </p>
+
+                                <p class="text-body-secondary">
+                                    <strong>WINNIPEG, MB &amp; BLACKSBURG, VA (May 18, 2004)</strong> &mdash; <strong>Prairie Coachworks, Inc.</strong> today announced the official commercial launch and first customer delivery of its all-new <strong>2004 RLFD30 (Restyled Low-Floor Diesel, 30-Foot)</strong> heavy-duty coach platform. In an industry first, <strong>Serial #001</strong> of the restyled low-floor line has been delivered not to a metropolitan transit authority, but to Virginia-based independent rock band <strong>The Stardust Engine</strong> and their operating label, <strong>Engine Room Records, LLC</strong>, who serve as the global <strong>Launch Customer</strong> for the RLFD30 program.
+                                </p>
+
+                                <p class="text-body-secondary">
+                                    Engineered on Prairie Coachworks' newly restyled aerodynamic front and rear fiberglass masks with roof-integrated HVAC fairings, the 30-foot rigid monocoque chassis was developed for tight university corridors and historic downtown street grids where 40-foot and 60-foot coaches cannot easily maneuver. Working directly with Engine Room Records Chief Executive Officer <strong>Holly O'Connell</strong>, Prairie Coachworks' Specialty Vehicles Engineering Group created a bespoke <strong>Front-Door-Only Executive Configuration</strong>—deleting the standard rear exit door to form a continuous, studio-insulated acoustic lounge with flush-mounted frameless dark-tinted panoramic glass.
+                                </p>
+
+                                <p class="text-body-secondary">
+                                    At the core of Serial #001's mission is uncompromising, zero-delay accessibility for frontman and lead guitarist <strong>Ryan O'Connell</strong>, who has used a manual wheelchair since surviving a 1990 highway collision. By combining Prairie Coachworks' fast-acting pneumatic front-axle kneeling suspension with an integrated heavy-gauge aluminum flip-out ADA boarding ramp, the RLFD30 lowers its entrance threshold directly to the sidewalk curb—allowing O'Connell to roll from pavement to cabin unassisted in under five seconds.
+                                </p>
+
+                                <blockquote class="blockquote border-start border-warning border-4 ps-3 my-4 py-1 bg-body-tertiary rounded-end">
+                                    <p class="small text-body-emphasis mb-1">
+                                        "When Holly and Ryan O'Connell approached us with their specifications, they didn't ask for rock-star vanity—they asked for transit-grade reliability, structural integrity, and five-second curb autonomy on the streets of Blacksburg. Having a band of former Commonwealth Polytechnic Institute commuters christen Serial #001 of the RLFD30—complete with factory-programmed Luminator Horizon amber LED headsigns reading <code>PROGRESS STREET</code> and <code>THE STARDUST ENGINE</code>—is the proudest launch in our division's history."
+                                    </p>
+                                    <footer class="blockquote-footer small font-monospace mt-1 mb-0">
+                                        <strong>Marc-André Beaulieu</strong>, Vice President of Engineering &amp; Specialty Coaches, Prairie Coachworks, Inc.
+                                    </footer>
+                                </blockquote>
+
+                                <p class="text-body-secondary">
+                                    In another milestone for the Winnipeg delivery center, The Stardust Engine became the first private customer in Prairie Coachworks history to dispatch three of its own principals—CEO <strong>Holly O'Connell</strong>, bassist <strong>Evan Wright</strong>, and drummer <strong>Tyler Wright</strong>—all holding valid <strong>Class A Commercial Driver's Licenses (CDL)</strong> with full <strong>Passenger (P)</strong> and <strong>Airbrake</strong> endorsements, to personally execute the factory road-test inspection and pilot Serial #001 home to Montgomery County, Virginia.
+                                </p>
+
+                                <blockquote class="blockquote border-start border-info border-4 ps-3 my-4 py-1 bg-body-tertiary rounded-end">
+                                    <p class="small text-body-emphasis mb-1">
+                                        "In college, riding the low-floor campus buses down Main Street and Progress Street was how my sisters, my cousins, and I got our independence back after the crash. Being the launch customer for the 2004 RLFD30 means that wherever we pull up to the curb, the ramp flips out in five seconds and we're home. We're prouder of this 30-foot bus than any platinum plaque on the wall."
+                                    </p>
+                                    <footer class="blockquote-footer small font-monospace mt-1 mb-0">
+                                        <strong>Ryan O'Connell</strong>, Lead Vocalist &amp; Guitarist, The Stardust Engine
+                                    </footer>
+                                </blockquote>
+
+                                <div class="text-center font-monospace small text-body-secondary mt-4 pt-3 border-top border-secondary-subtle">
+                                    ### END RELEASE // PRAIRIE COACHWORKS ARCHIVE SERIAL #2004-RLFD30-001 ###
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
