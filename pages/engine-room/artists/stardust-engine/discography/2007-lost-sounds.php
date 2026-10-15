@@ -227,21 +227,31 @@ $album_path_web = '/engine-room-records/artists/the-stardust-engine/2007-lost-so
             <wa-accordion-item>
                 <div slot="label" class="d-flex w-100 justify-content-between align-items-center m-0">
                     <strong class="text-primary fs-5">13. Sanctuary in the Storm</strong>
-                    <wa-badge variant="warning" class="ms-3">Unreleased</wa-badge>
+                    <wa-badge variant="warning" class="ms-3">John &amp; Erin: Part IV • Unreleased</wa-badge>
                 </div>
-<p class="text-muted mb-0">
-    An epic 80s power ballad duet about finding love and safety after a difficult past. Features a male and female vocalist, a powerful piano intro, massive drums with gated reverb, and a soaring electric guitar solo. The song builds from gentle verses to a huge, heartfelt, and dramatic chorus. It is the signature song for John and Megan (characters the band created in 1986). It represents John finding a safe harbor with his wife Megan after suffering and finally breaking free from an abusive past relationship. It was put on their early demo cassette to shop around, but no studio wanted it.
-</p>
+                <p class="text-muted mb-3">
+                    An epic 1980s power ballad duet about finding unconditional safety and healing after surviving an abusive relationship. Featuring Ryan and Cassidy O'Connell on male and female lead vocals, a powerful piano intro, massive gated-reverb drums, and a soaring electric guitar solo, the song was originally written in 1986 as Part IV of the band's narrative arc of fraternal twins <strong>John and Erin</strong> (and shopped on their early demo cassette before Apex Records rejected it). Picking up directly after Erin physically pulls John onto the Blue Ridge Transit bus at the <strong>CPI Transit Center</strong> in <em>"Before the Distance"</em> (<em>Progress Street</em>, Track 8), <em>"Sanctuary in the Storm"</em> captures John healing from his trauma inside the safe harbor of his twin sister Erin's sanctuary.
+                </p>
+                <div class="alert alert-info border-info-subtle text-info-emphasis mb-0 p-3">
+                    <i class="fa-solid fa-book-sparkles me-2"></i><strong>Liner-Note Narrative:</strong>
+                    Read the complete five-song story of John and Erin across <em>Progress Street</em> and <em>Lost Sounds</em> in
+                    <a href="/engine-room/artists/stardust-engine/story/john-and-erin#act-4" class="alert-link fw-bold text-decoration-underline">Before the Distance: The Story of John &amp; Erin</a>.
+                </div>
             </wa-accordion-item>
 
             <wa-accordion-item>
                 <div slot="label" class="d-flex w-100 justify-content-between align-items-center m-0">
                     <strong class="text-primary fs-5">14. Not Her</strong>
-                    <wa-badge variant="warning" class="ms-3">Unreleased</wa-badge>
+                    <wa-badge variant="warning" class="ms-3">John &amp; Erin: Part V • Unreleased</wa-badge>
                 </div>
-                <p class="text-muted mb-0">
-                    A powerful, defiant 80s rock anthem and duet showing the protective bond between John and his fraternal twin sister, Erin. It captures the moment a predator starts making the wrong moves on Erin. John recognizes the predator's manipulative tactics because of his own past trauma and abuse, unleashing his analytical fury to shut it down. Erin's bridge is a fierce and assertive plea to escape, delivered with raw rock energy. The final chorus is their unified, protective roar—John declaring "Not Her, NEVER AGAIN!" to ensure his sister doesn't suffer what he did.
+                <p class="text-muted mb-3">
+                    A powerful, defiant 1980s rock anthem and duet serving as the fifth and final chapter of The Stardust Engine's published narrative arc of fraternal twins <strong>John and Erin</strong>. After Erin rescued John from his abuser at the CPI Transit Center (<em>"Before the Distance"</em>) and sheltered him through his recovery (<em>"Sanctuary in the Storm"</em>), a slick male predator (<em>"that easy charm, that practiced smile"</em>) corners Erin and tries to isolate her. When Erin signals her brother in the bridge (<em>"Brother, listen, something's wrong... Just take my hand, let's turn and run"</em>), John immediately recognizes the predator's manipulative playbook from his own past abuse and unleashes his analytical fury—roaring <em>"Not her. Not today. Not ever again!"</em> and rescuing Erin just as she rescued him.
                 </p>
+                <div class="alert alert-info border-info-subtle text-info-emphasis mb-0 p-3">
+                    <i class="fa-solid fa-book-sparkles me-2"></i><strong>Liner-Note Narrative:</strong>
+                    Read the finale of the twins' story in
+                    <a href="/engine-room/artists/stardust-engine/story/john-and-erin#act-5" class="alert-link fw-bold text-decoration-underline">Part V: The Circle Completed</a>.
+                </div>
             </wa-accordion-item>
 
         </wa-accordion>

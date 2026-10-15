@@ -262,6 +262,25 @@ $pageTitle = "The Lore - The Stardust Engine";
             </wa-card>
         </div>
 
+        <!-- Grid Item: Before the Distance: The Story of John & Erin -->
+        <div class="col-12 col-md-6 col-lg-4 d-flex align-items-stretch">
+            <wa-card class="h-100 border-warning shadow-sm hover-card bg-transparent w-100 p-0" style="--wa-panel-bg: transparent; --body-padding: 0;">
+                <img src="<?php echo $cdnBaseUrl; ?>/engine-room-records/artists/the-stardust-engine/2007-lost-sounds/album-art.jpg" class="img-fluid border-bottom" alt="Before the Distance: The Story of John & Erin Liner Booklet"
+                     style="filter: brightness(0.85);">
+                <div class="d-flex flex-column h-100 p-3">
+                    <h3 class="h5 fw-bold text-warning">The Story of John &amp; Erin</h3>
+                    <p class="card-text text-muted small">
+                        Read the official five-song twin narrative published by The Stardust Engine across <em>Progress Street</em> and <em>Lost Sounds</em>—from a fatal speed-dating track skip to a rescue at the CPI Transit Center.
+                    </p>
+                    <div class="mt-auto pt-3">
+                        <wa-button variant="warning" outline href="/engine-room/artists/stardust-engine/story/john-and-erin" class="w-100">
+                            <i slot="prefix" class="fa-duotone fa-book-sparkles"></i>Read Liner Booklet
+                        </wa-button>
+                    </div>
+                </div>
+            </wa-card>
+        </div>
+
         <!-- Grid Item: Complete Timeline -->
         <div class="col-12 col-md-6 col-lg-4 d-flex align-items-stretch">
             <wa-card class="h-100 border-secondary shadow-sm hover-card bg-transparent w-100 p-0" style="--wa-panel-bg: transparent; --body-padding: 0;">

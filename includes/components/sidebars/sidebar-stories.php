@@ -50,6 +50,11 @@ $storyLinks = [
         'url' => '/engine-room/corporate/strategic-assets/the-iron-horse',
         'icon' => 'fa-duotone fa-bus'
     ],
+    'john-and-erin' => [
+        'title' => 'Story of John & Erin',
+        'url' => '/engine-room/artists/stardust-engine/story/john-and-erin',
+        'icon' => 'fa-duotone fa-book-sparkles'
+    ],
     'delaware-migration' => [
         'title' => '2015 Delaware Migration',
         'url' => '/engine-room/artists/stardust-engine/story/2015-delaware-migration',

@@ -114,21 +114,32 @@ $album_path_web = '/engine-room-records/artists/the-stardust-engine/2004-progres
             <wa-accordion-item>
                 <div slot="label" class="d-flex w-100 justify-content-between align-items-center m-0">
                     <strong class="text-primary fs-5">3. Seconds Into Forever</strong>
+                    <wa-badge variant="neutral" class="ms-3">John &amp; Erin: Part I</wa-badge>
                 </div>
-                <p class="text-muted mb-0">
-                    A lush, romantic 85 BPM 1980s arena power ballad written around the concept of a three-minute campus speed-dating bell (<em>"One hundred eighty seconds on a ticking clock / It only takes three minutes to believe!"</em>). Features warm analog synthesizer pads, ringing clean electric guitar arpeggios, and massive gated-reverb snare drums.
+                <p class="text-muted mb-3">
+                    A lush, romantic 85 BPM 1980s arena power ballad written around the concept of a three-minute campus speed-dating bell (<em>"It only takes three minutes to believe!"</em>). Features warm analog synthesizer pads, ringing clean electric guitar arpeggios, and massive gated-reverb snare drums. In the official prose story published by Ryan and Cassidy O'Connell inside the <em>Progress Street</em> liner booklet, this is the song that was supposed to be played at the campus speed-dating mixer when fraternal twin <strong>John</strong> sat down across from a stranger—before the organizer accidentally hit the skip button and blasted Track 4 (<em>"Thunder in the Rain"</em>) instead.
                 </p>
+                <div class="alert alert-info border-info-subtle text-info-emphasis mb-0 p-3">
+                    <i class="fa-solid fa-book-sparkles me-2"></i><strong>Liner-Note Narrative:</strong>
+                    Read the complete five-song story of fraternal twins John and Erin in
+                    <a href="/engine-room/artists/stardust-engine/story/john-and-erin" class="alert-link fw-bold text-decoration-underline">Before the Distance: The Story of John &amp; Erin</a>.
+                </div>
             </wa-accordion-item>
 
             <!-- Track 4 -->
             <wa-accordion-item>
                 <div slot="label" class="d-flex w-100 justify-content-between align-items-center m-0">
                     <strong class="text-primary fs-5">4. Thunder in the Rain</strong>
-                    <wa-badge variant="warning" class="ms-3">Chart Smash</wa-badge>
+                    <wa-badge variant="warning" class="ms-3">John &amp; Erin: Part II</wa-badge>
                 </div>
-                <p class="text-muted mb-0">
-                    Opening with a deceptive ten-second cinematic analog blade-synth swell before exploding into a blistering 150 BPM C-minor stadium rocker with orchestral hits and a screaming tapping guitar solo. In campus lore, this track was famously blasted by accident during an unsanctioned student speed-dating event when the flustered organizer fat-fingered the AudioStar Sound System skip button right past <em>"Seconds Into Forever."</em>
+                <p class="text-muted mb-3">
+                    Opening with a deceptive ten-second cinematic analog blade-synth swell before exploding into a blistering 150 BPM C-minor stadium rocker with orchestral hits and a screaming tapping guitar solo. In the band's published story of <strong>John and Erin</strong>, the speed-dating organizer accidentally skips past <em>"Seconds Into Forever"</em> and blasts <em>"Thunder in the Rain"</em> right as John sits down across from a magnetic, high-voltage woman. Crucially, blinded by the 150 BPM adrenaline, <strong>John does not realize she is going to be his abuser</strong>—mistaking the roaring warning signs (<em>"The neon signs are flashing 'Danger' in red / But I'd rather be living than safe and dead"</em>) for romance. Across the RaggieSoft universe, having read this exact liner-note story is what makes <strong>Freddie and Paige</strong> wonder why they have heard <em>"Thunder in the Rain"</em> before when the track surfaces in their own lives.
                 </p>
+                <div class="alert alert-info border-info-subtle text-info-emphasis mb-0 p-3">
+                    <i class="fa-solid fa-book-sparkles me-2"></i><strong>Liner-Note Narrative:</strong>
+                    Explore how the speed-dating skip button sets the trap in
+                    <a href="/engine-room/artists/stardust-engine/story/john-and-erin#act-2" class="alert-link fw-bold text-decoration-underline">Part II: The Skip Button at the Mixer</a>.
+                </div>
             </wa-accordion-item>
 
             <!-- Track 5 -->
@@ -183,11 +194,19 @@ $album_path_web = '/engine-room-records/artists/the-stardust-engine/2004-progres
             <wa-accordion-item>
                 <div slot="label" class="d-flex w-100 justify-content-between align-items-center m-0">
                     <strong class="text-primary fs-5">8. Before the Distance</strong>
-                    <wa-badge variant="brand" class="ms-3">Cross-Universe Canon</wa-badge>
+                    <wa-badge variant="brand" class="ms-3">John &amp; Erin: Part III • Cross-Universe Canon</wa-badge>
                 </div>
-                <p class="text-muted mb-0">
-                    A dramatic, mid-tempo 1980s pop-rock power anthem (<em>"When the steel doors close and the platform clears / And the rain streaks down on the window glass..."</em>) about holding onto a promise across miles of steel and rain. In cross-universe RaggieSoft lore, this is the exact track playing in Jessica's headphones on her pre-release Quantum Zephyr media player during her devastating November 2006 commuter train ride from Kent to Seattle King Street Station.
+                <p class="text-muted mb-3">
+                    A dramatic, mid-tempo 1980s pop-rock power anthem sung by Cassidy (<em>"When the steel doors close and the platform clears / You can hear the truth grinding in the gears..."</em>) that serves as the emotional turning point of The Stardust Engine's published story of fraternal twins <strong>John and Erin</strong>. After the woman John met during <em>"Thunder in the Rain"</em> systematically isolates and breaks him down, Erin meets him at the <strong>CPI Transit Center</strong> in Blacksburg. Seeing the hollowed-out shadow across her brother's face, <strong>Erin makes the executive decision that John is coming with her</strong>—physically pulling him onto the Blue Ridge Transit bus right before the steel doors close (<em>"I'm turning around, I'm breaking the track / Whatever it costs me, I'm taking it back!"</em>) and leaving his furious abuser stranded on the platform.
                 </p>
+                <p class="text-muted mb-3">
+                    <strong>Cross-Universe Echo (<em>Jessica's Train Ride</em>, November 2006):</strong> In <em>The Rachel Narrative</em>, <strong>Jessica</strong> leaves her brother <strong>Michael</strong> behind on the platform at <strong>Kent Station</strong> with his abuser, Delores—doing the exact opposite of what Erin did at the CPI Transit Center. Moments later, when <em>"Before the Distance"</em> comes on shuffle on Jessica's pre-release <strong>Quantum Zephyr</strong> media player on the commuter train to Seattle King Street Station, she remembers reading The Stardust Engine's published story of John and Erin and realizes in horror that she and Michael are living out the exact same story—except she let the steel doors close without pulling her brother aboard.
+                </p>
+                <div class="alert alert-info border-info-subtle text-info-emphasis mb-0 p-3">
+                    <i class="fa-solid fa-book-sparkles me-2"></i><strong>Read the Published Narrative:</strong>
+                    Explore the CPI Transit Center rescue and how the story continues on 2007's <em>Lost Sounds</em> (<em>"Sanctuary in the Storm"</em> &amp; <em>"Not Her"</em>) in
+                    <a href="/engine-room/artists/stardust-engine/story/john-and-erin" class="alert-link fw-bold text-decoration-underline">Before the Distance: The Story of John &amp; Erin</a>.
+                </div>
             </wa-accordion-item>
 
             <!-- Track 9 -->

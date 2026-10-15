@@ -32,5 +32,14 @@
     "ogTitle": "The Fleet Archive: 2004 Prairie Coachworks RLFD30 (Launch Customer #001) & The Iron Horse",
     "ogDescription": "Featuring the official 2004 Prairie Coachworks RLFD30 Launch Customer Press Release, the 2002 Sainte-Claire 45H3 ('The Iron Horse'), and the O'Connell Family Class A CDL Protocol.",
     "ogImage": "/stardust-engine/images/fleet/2004-prairie-coachworks-rlfd30.jpg"
+  },
+  "/engine-room/artists/stardust-engine/story/john-and-erin": {
+    "view": "pages/engine-room/artists/stardust-engine/story/john-and-erin",
+    "showSidebar": true,
+    "sidebar": "sidebar-stories",
+    "title": "Before the Distance: The Story of John & Erin | The Stardust Engine",
+    "ogTitle": "Before the Distance: The Story of John & Erin (Official Liner-Note Narrative)",
+    "ogDescription": "Read the five-song fraternal twin narrative published by The Stardust Engine across Progress Street (2004) and Lost Sounds (2007)—and discover how it echoes across Jessica's Train Ride and Freddie & Paige.",
+    "ogImage": "/engine-room-records/artists/the-stardust-engine/2004-progress-street/social-preview.jpg"
   }
 }
