@@ -39,40 +39,39 @@ $discographyLibrary = [
     ],
     'freedom' => [
         'label' => 'The "Freedom" Era',
-        'heading' => '1995-2007: The "Freedom" Era',
+        'heading' => '1995-2001: The "Freedom" Era',
         'description' => 'After the contract was voided, the band retreated to "The Fortress"—a warehouse studio where they finally forged the industrial-rock sound they always heard in their heads.',
         'albums' => [
-            // READY
             ['title' => 'The Warehouse Tapes', 'year' => '1995', 'url' => '/engine-room/artists/stardust-engine/discography/1995-the-warehouse-tapes', 'img' => $cdnBaseUrl . '/engine-room-records/artists/the-stardust-engine/1995-the-warehouse-tapes/album-art.jpg'],
-            // READY (With Folder Override)
-            // 'folder' property is strictly required here because the URL slug does not match the physical asset directory
             [
                 'title' => 'Ad Astra (Single)', 
-                'year' => '1995', 
-                'url' => '/engine-room/artists/stardust-engine/discography/1995-the-warehouse-tapes/ad-astra',
-                'folder' => '1995-ad-astra-single',
-                'img' => $cdnBaseUrl . '/engine-room-records/artists/the-stardust-engine/1995-ad-astra-single/album-art.jpg'
+                'year' => '1996', 
+                'url' => '/engine-room/artists/stardust-engine/discography/1996-escape-velocity-ad-astra',
+                'folder' => '1996-ad-astra-single',
+                'img' => $cdnBaseUrl . '/engine-room-records/artists/the-stardust-engine/1996-ad-astra-single/album-art.jpg'
             ],
-            // NOT READY
-            // ['title' => 'Hard Reset', 'year' => '1997', 'url' => '/engine-room/artists/stardust-engine/discography/1997-hard-reset', 'img' => '...'],
+            ['title' => 'Hard Reset', 'year' => '1997', 'url' => '/engine-room/artists/stardust-engine/discography/1997-hard-reset', 'img' => $cdnBaseUrl . '/engine-room-records/artists/the-stardust-engine/1997-hard-reset/album-art.jpg'],
+            ['title' => 'Forger Nation War Chest', 'year' => '1997', 'url' => '/engine-room/artists/stardust-engine/discography/1997-forger-nation-war-chest', 'img' => $cdnBaseUrl . '/engine-room-records/artists/the-stardust-engine/1997-forger-nation-war-chest/album-art.jpg'],
+            ['title' => 'Midnight Drivers', 'year' => '2001', 'url' => '/engine-room/artists/stardust-engine/discography/2001-midnight-drivers', 'img' => $cdnBaseUrl . '/engine-room-records/artists/the-stardust-engine/2001-midnight-drivers/album-art.jpg'],
         ]
     ],
-    'reignition' => [
-        'label' => 'The "Re-Ignition" Era',
-        'heading' => '2015-2016: Homecoming',
-        'description' => 'Following an eight-year hiatus to focus on family, the band returned with a polished, powerful sound that reconciled their pop history with their rock identity.',
+    'err-planetarium' => [
+        'label' => 'The Twin Moons & Progress Street',
+        'heading' => '2003-2004: The Twin Moons Project & Blacksburg Homecoming',
+        'description' => 'An ambitious dual-release planetarium project confronting the trauma of The Crash of \'90, followed immediately by a nostalgic 2004 homecoming to Progress Street NW in Blacksburg.',
         'albums' => [
-            // NOT READY
-            // ['title' => 'Re-Ignition', 'year' => '2015', 'url' => '/engine-room/artists/stardust-engine/discography/2015-re-ignition', 'img' => '...'],
+            ['title' => 'Sanctuary (Zero-G)', 'year' => '2003', 'url' => '/engine-room/artists/stardust-engine/discography/2003-moon-1-sanctuary-zero-g', 'img' => $cdnBaseUrl . '/engine-room-records/artists/the-stardust-engine/2003-sanctuary-zero-g/album-art.jpg'],
+            ['title' => 'Mile Marker 98', 'year' => '2003', 'url' => '/engine-room/artists/stardust-engine/discography/2003-moon-2-mile-marker-98', 'img' => $cdnBaseUrl . '/engine-room-records/artists/the-stardust-engine/2003-mile-marker-98/album-art.jpg'],
+            ['title' => 'Progress Street', 'year' => '2004', 'url' => '/engine-room/artists/stardust-engine/discography/2004-progress-street', 'img' => $cdnBaseUrl . '/engine-room-records/artists/the-stardust-engine/2004-progress-street/album-art.jpg'],
         ]
     ],
-    'modern' => [
-        'label' => 'Modern Era & Soundtracks',
-        'heading' => '2017-Present: The Transmission',
-        'description' => 'The band no longer tours for profit. They operate as a musical collective, releasing atmospheric soundtracks and concept albums broadcast from the Engine Room.',
+    'burnout-hiatus' => [
+        'label' => 'The Burnout Hiatus',
+        'heading' => '2007-2008: The Burnout Hiatus & Archival Releases',
+        'description' => 'After releasing three full studio albums in under two years—culminating in 2004\'s Progress Street—exhaustion pushed the band into their "Burnout Hiatus" (2004-2014).',
         'albums' => [
-            // NOT READY
-            // ['title' => 'Knox (O.S.T.)', 'year' => '2017', 'url' => '/engine-room/artists/stardust-engine/discography/2017-knox-ost', 'img' => '...'],
+            ['title' => 'Lost Sounds', 'year' => '2007', 'url' => '/engine-room/artists/stardust-engine/discography/2007-lost-sounds', 'img' => $cdnBaseUrl . '/engine-room-records/artists/the-stardust-engine/2007-lost-sounds/album-art.jpg'],
+            ['title' => 'Our Own Frequency', 'year' => '2008', 'url' => '/engine-room/artists/stardust-engine/discography/2008-our-own-frequency', 'img' => $cdnBaseUrl . '/engine-room-records/artists/the-stardust-engine/2008-our-own-frequency/album-art.jpg'],
         ]
     ]
 ];

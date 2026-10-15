@@ -78,11 +78,22 @@
                         </div>
                     </div>
 
-                    <h4 class="fw-bold mt-5 mb-3">4. Disclaimer of Warranty</h4>
+                    <h4 class="fw-bold mt-5 mb-3">4. Work of Fiction &amp; Fictitious Entities Disclaimer</h4>
+                    <div class="d-flex gap-3 mb-4 p-4 rounded bg-body-tertiary border border-start border-5 border-warning">
+                        <div class="fs-2 text-warning"><i class="fa-solid fa-masks-theater"></i></div>
+                        <div>
+                            <h5 class="fw-bold mb-2">All Narrative Characters, Bands, Institutions &amp; Events Are Fictitious</h5>
+                            <p class="text-body mb-0">
+                                Unless explicitly identified as part of Michael P. Ragsdale’s real-world technical resume and engineering portfolio, all bands, characters, biographies, universities (including <strong>Commonwealth Polytechnic Institute / CPI</strong>, <strong>The Forgers</strong>, and <strong>The Crucible</strong>), corporations (including <strong>OmniCorp</strong>, <strong>Apex Records</strong>, <strong>Prairie Coachworks</strong>, and <strong>Sainte-Claire</strong>), transit agencies (<strong>Blue Ridge Transit</strong>), in-universe legal filings, trusts, and historical events depicted across the RaggieSoft network are works of creative fiction. Any resemblance to actual persons, living or dead, real-world businesses, academic institutions, or events is purely coincidental.
+                            </p>
+                        </div>
+                    </div>
+
+                    <h4 class="fw-bold mt-5 mb-3">5. Disclaimer of Warranty</h4>
                     <p class="text-uppercase small fw-bold text-muted">The "It works on my machine" Clause</p>
                     <p>This website and all content within are provided "as is" without warranty of any kind. While I strive for 99.9% uptime (thanks to Sarah's deployment scripts), I cannot guarantee that the site will be error-free or uninterrupted. I am not liable for any damages arising from your use of the code or information provided here.</p>
 
-                    <h4 class="fw-bold mt-5 mb-3">5. Governing Law</h4>
+                    <h4 class="fw-bold mt-5 mb-3">6. Governing Law</h4>
                     <p>These terms shall be governed by the laws of the <strong>Commonwealth of Virginia</strong> and the United States of America. Any disputes shall be resolved in the courts of Norfolk, Virginia.</p>
                     
                 </div>

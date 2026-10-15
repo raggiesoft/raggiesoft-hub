@@ -85,10 +85,19 @@ $isArchives = (
     <wa-dropdown-item value="/engine-room/about">
       <i slot="start" class="fa-solid fa-industry "></i> About The Fortress
     </wa-dropdown-item>
+    <wa-dropdown-item value="/engine-room/corporate/structure">
+      <i slot="start" class="fa-solid fa-sitemap text-info"></i> Corporate Structure (2015 Trust Map)
+    </wa-dropdown-item>
+    <wa-dropdown-item value="/engine-room/corporate/strategic-assets/the-iron-horse">
+      <i slot="start" class="fa-solid fa-bus text-warning"></i> The Iron Horse &amp; Fleet Archive
+    </wa-dropdown-item>
     <wa-divider></wa-divider>
     <div class="px-3 py-2 small text-uppercase  fw-bold">Declassified Case Files</div>
     <wa-dropdown-item value="/engine-room/artists/stardust-engine/story/friction">
       <i slot="start" class="fa-duotone fa-fire text-danger"></i> 1992: The Friction Scandal
+    </wa-dropdown-item>
+    <wa-dropdown-item value="/engine-room/artists/stardust-engine/story/2015-delaware-migration">
+      <i slot="start" class="fa-duotone fa-file-signature text-info"></i> 2015: The Delaware Migration
     </wa-dropdown-item>
     <wa-dropdown-item value="/engine-room/artists/stardust-engine/story/nine-figure-refusal">
       <i slot="start" class="fa-duotone fa-ban text-success"></i> 2018: The $150M Refusal

@@ -133,6 +133,16 @@
         "narrativeReleaseDate": "2003",
         "realReleaseDate": "2026-06-03"
     },
+    "/engine-room/artists/stardust-engine/discography/2004-progress-street": {
+        "view": "pages/engine-room/artists/stardust-engine/discography/2004-progress-street",
+        "title": "Progress Street (2004) | The Stardust Engine",
+        "ogTitle": "Progress Street - The 2004 Album",
+        "ogImage": "/engine-room-records/artists/the-stardust-engine/2004-progress-street/social-preview.jpg",
+        "schemaType": "MusicAlbum",
+        "albumFilter": "Progress Street",
+        "narrativeReleaseDate": "2004-10-15",
+        "realReleaseDate": "Upcoming"
+    },
     "/engine-room/artists/stardust-engine/discography/2007-lost-sounds": {
         "view": "pages/engine-room/artists/stardust-engine/discography/2007-lost-sounds",
         "title": "Lost Sounds (2007) | The Stardust Engine",

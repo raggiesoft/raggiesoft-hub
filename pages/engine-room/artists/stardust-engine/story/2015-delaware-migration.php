@@ -100,7 +100,10 @@ $pageTitle = "The Delaware Migration (2015) - Engine Room History";
                         Ryan frowned, locking the brakes on his chair. "Loud how? We don't do press. We haven't done an interview in eight years."
                     </p>
                     <p>
-                        "Paperwork is loud, Ry," Holly explained, leaning against the table. "Right now, Engine Room Records is a Virginia LLC. Stardust Properties is a Virginia LLC. If a reporter, or a rival executive, or a hostile litigator goes to the Virginia State Corporation Commission website and pays twenty dollars, they can see everything. They can pull the Articles of Organization. They see my name as the Registered Agent. They see our home address."
+                        "Paperwork is loud, Ry," Holly explained, leaning against the table. "From 1992 all the way through <em>Progress Street</em> in 2004, we ran almost our entire lives out of a single bucket: <strong>Engine Room Records, LLC</strong>. Back then, the master tapes, the Blacksburg studio, the tour buses, and the payroll were all sitting inside one Virginia company. When we signed off the road after <em>Last Bus Home</em> in late 2004 to recover from burnout, we spent the next eleven years quietly diversifying—spinning off <strong>Stardust Strategic Assets, LLC</strong> for the hard equipment and coaches, <strong>Artists First Management, LLC</strong> for touring liability, and <strong>Stardust Properties, LLC</strong> and <strong>Pacific Rim Properties, LLC</strong> for real estate."
+                    </p>
+                    <p>
+                        "Unbundling Engine Room Records into specialized LLCs between 2004 and 2015 kept our operations clean," Holly continued, "but right now, most of those entities are still registered in Virginia. If a reporter, or a rival executive, or a hostile litigator goes to the Virginia State Corporation Commission website and pays twenty dollars, they can see everything. They can pull the Articles of Organization. They see my name as the Registered Agent. They see our home address."
                     </p>
                     <p>
                         Holly pulled a marker out of her pocket and drew a large circle on the whiteboard. 
@@ -186,9 +189,28 @@ $pageTitle = "The Delaware Migration (2015) - Engine Room History";
                     <p>
                         She spun the dial on the safe, the heavy steel tumblers locking into place with a definitive, echoing <em>CLACK</em>.
                     </p>
-                    <p class="fst-italic text-body-emphasis fw-bold">
+                    <p class="fst-italic text-body-emphasis fw-bold mb-4">
                         "Let them think it. The iceberg is officially submerged."
                     </p>
+
+                    <div class="alert alert-dark border-info d-flex flex-column flex-md-row align-items-md-center justify-content-between gap-3 mb-0 p-4 rounded-3">
+                        <div>
+                            <h6 class="fw-bold text-info text-uppercase mb-1">
+                                <i class="fa-duotone fa-sitemap me-2"></i>Inspect the 2015 Corporate Architecture
+                            </h6>
+                            <p class="small text-body-secondary mb-0">
+                                View the interactive D3.js organizational map showing the complete 2004–2015 entity diversification under <strong>The O'Connell Family Revocable Trust</strong>.
+                            </p>
+                        </div>
+                        <div class="d-flex flex-wrap gap-2 flex-shrink-0">
+                            <a href="/engine-room/corporate/structure" class="btn btn-info btn-sm fw-bold text-uppercase">
+                                <i class="fa-solid fa-diagram-project me-2"></i>2015 Trust Map
+                            </a>
+                            <a href="/engine-room/corporate/strategic-assets/the-iron-horse" class="btn btn-outline-light btn-sm fw-bold text-uppercase">
+                                <i class="fa-solid fa-bus me-2"></i>Fleet Archive
+                            </a>
+                        </div>
+                    </div>
 
                 </div>
             </div>
@@ -199,7 +221,7 @@ $pageTitle = "The Delaware Migration (2015) - Engine Room History";
     <?php
         // Using the Narrative Stepper for continuity
         $nav = [
-            'prev' => ['url' => '/engine-room/artists/stardust-engine/story/friction', 'label' => 'The Friction Catastrophe'],
+            'prev' => ['url' => '/engine-room/artists/stardust-engine/discography/2004-progress-street', 'label' => '2004: Progress Street & Hiatus'],
             'overview' => ['url' => '/engine-room/artists/stardust-engine/story', 'label' => 'The Archives'],
             'next' => ['url' => '/engine-room/artists/stardust-engine/story/nine-figure-refusal', 'label' => 'The Nine Figure Refusal']
         ];

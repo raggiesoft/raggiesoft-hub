@@ -27,12 +27,12 @@
     "navbarBrandClass": "rounded-circle"
   },
   "sidebarMap": {
-    "/engine-room": "sidebar-engine-room",
+    "/engine-room": "engine-room/sidebar-engine-room-history",
     "/library": "sidebar-library",
     "/docs": "sidebar-docs"
   },
   "headerMap": {
-    "/engine-room": "header-engine-room",
+    "/engine-room": "engine-room/header-engine-room",
     "/oconnell-trust": "header-oconnell",
     "/admin": "header-admin"
   },

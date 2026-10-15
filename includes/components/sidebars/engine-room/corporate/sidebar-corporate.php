@@ -24,14 +24,22 @@
 <!-- [LAYOUT] Governance Card: Links to internal trust and leadership structures -->
 <div class="card border-0 shadow-sm mb-4">
     <div class="card-header bg-dark text-white fw-bold text-uppercase">
-        <i slot="start" class="fa-duotone fa-shield-check"></i> Governance
+        <i slot="start" class="fa-duotone fa-shield-check"></i> Governance &amp; Holdings
     </div>
     <div class="list-group list-group-flush small">
         <a href="/engine-room/corporate/structure" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
-            <span>The Trust Map</span>
+            <span>The Trust Map (2015)</span>
             <i slot="start" class="fa-solid fa-chevron-right "></i> </a>
         <a href="/engine-room/corporate/leadership" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
             <span>Executive Leadership</span>
+            <i slot="start" class="fa-solid fa-chevron-right "></i>
+        </a>
+        <a href="/engine-room/corporate/strategic-assets" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+            <span>Stardust Strategic Assets</span>
+            <i slot="start" class="fa-solid fa-chevron-right "></i>
+        </a>
+        <a href="/engine-room/corporate/strategic-assets/the-iron-horse" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+            <span>The Iron Horse &amp; Fleet Archive</span>
             <i slot="start" class="fa-solid fa-chevron-right "></i>
         </a>
     </div>
@@ -43,6 +51,11 @@
         <i slot="start" class="fa-duotone fa-box-archive"></i> Case Files
     </div>
     <div class="list-group list-group-flush small">
+        <a href="/engine-room/artists/stardust-engine/story/2015-delaware-migration" class="list-group-item list-group-item-action">
+            <div class="fw-bold">Filing 15-0812-DE</div>
+            <div class=" fst-italic">Re: The 2015 Delaware Migration</div>
+            <span class="badge bg-info text-dark mt-1">SEALED / ACTIVE</span>
+        </a>
         <a href="/engine-room/corporate/acquisition-plan" class="list-group-item list-group-item-action">
             <div class="fw-bold">Case 18-11492</div>
             <div class=" fst-italic">Re: Omni-Global Media</div>

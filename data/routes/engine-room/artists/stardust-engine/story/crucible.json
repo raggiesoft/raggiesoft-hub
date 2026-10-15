@@ -16,7 +16,13 @@
         "isSequential": true
     },
     "/engine-room/artists/stardust-engine/story/crucible": {
+        "view": "pages/engine-room/artists/stardust-engine/story/crucible",
         "title": "The Crucible - Ignition (The Forger's Call)",
         "ogDescription": "The origin of The Stomp, Ignition, and Jeremiah Vance's Ironhead Covenant for The Crucible."
+    },
+    "/engine-room/artists/stardust-engine/story/cpi": {
+        "view": "pages/engine-room/artists/stardust-engine/story/cpi/overview",
+        "title": "Commonwealth Polytechnic Institute (CPI) | Home of the Forgers",
+        "ogDescription": "Explore Commonwealth Polytechnic Institute (CPI) in Blacksburg, Virginia—where The Stardust Engine formed in 1985 and forged the soundtrack to The Crucible."
     }
 }

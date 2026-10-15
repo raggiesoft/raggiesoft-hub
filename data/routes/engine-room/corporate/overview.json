@@ -39,5 +39,58 @@
   "/engine-room/corporate/acquisition-plan": {
     "view": "pages/engine-room/corporate/acquisition-plan",
     "title": "Case 18-11492 | The Omni-Global Acquisition"
+  },
+  "/engine-room/corporate/strategic-assets": {
+    "view": "pages/engine-room/corporate/strategic-assets/overview",
+    "title": "Stardust Strategic Assets, LLC | Portfolio Overview",
+    "ogDescription": "Hard-asset holdings of the O'Connell Family Trust: The Fortress, Stardust Studios, The Vault, and The Iron Horse & Fleet Archive."
+  },
+  "/engine-room/corporate/strategic-assets/the-fortress": {
+    "view": "pages/engine-room/corporate/strategic-assets/the-fortress",
+    "title": "The Fortress | Engine Room Records HQ (Blacksburg, VA)"
+  },
+  "/engine-room/corporate/strategic-assets/stardust-studios": {
+    "view": "pages/engine-room/corporate/strategic-assets/stardust-studios",
+    "title": "Stardust Studios | Private Recording Complex"
+  },
+  "/engine-room/corporate/strategic-assets/the-vault": {
+    "view": "pages/engine-room/corporate/strategic-assets/the-vault",
+    "title": "The Vault | Master Tape & Archival Repository"
+  },
+  "/engine-room/corporate/strategic-assets/the-iron-horse": {
+    "view": "pages/engine-room/corporate/strategic-assets/the-iron-horse",
+    "title": "The Iron Horse & Fleet Archive | Stardust Strategic Assets, LLC",
+    "ogDescription": "Technical specifications, Class A CDL driver roster, and 2004–2015 corporate holding history for the 2002 Sainte-Claire 45H3 and 2004 Prairie Coachworks RLFD30.",
+    "ogImage": "/stardust-engine/images/fleet/2002-sainte-claire-45h3-iron-horse.jpg"
+  },
+  "/engine-room/assets": {
+    "view": "pages/engine-room/assets/overview",
+    "title": "Fixed Assets & Fleet | Engine Room Records"
+  },
+  "/engine-room/assets/iron-horse": {
+    "view": "pages/engine-room/corporate/strategic-assets/the-iron-horse",
+    "title": "The Iron Horse & Fleet Archive | Stardust Strategic Assets, LLC",
+    "ogDescription": "Technical specifications, Class A CDL driver roster, and 2004–2015 corporate holding history for the 2002 Sainte-Claire 45H3 and 2004 Prairie Coachworks RLFD30.",
+    "ogImage": "/stardust-engine/images/fleet/2002-sainte-claire-45h3-iron-horse.jpg"
+  },
+  "/engine-room/assets/iron-horse/negotiation": {
+    "view": "pages/engine-room/assets/iron-horse/negotiation",
+    "title": "The Sainte-Claire Negotiation (2001) | Fleet Archive"
+  },
+  "/engine-room/assets/iron-horse/delivery": {
+    "view": "pages/engine-room/assets/iron-horse/delivery",
+    "title": "The Delivery of The Iron Horse (2002) | Fleet Archive"
+  },
+  "/engine-room/corporate/pacific-rim": {
+    "view": "pages/engine-room/corporate/pacific-rim/overview",
+    "title": "Pacific Rim Properties, LLC | West Coast Portfolio"
+  },
+  "/pacific-rim": {
+    "view": "pages/engine-room/corporate/pacific-rim/overview",
+    "title": "Pacific Rim Properties, LLC | West Coast Portfolio"
+  },
+  "/engine-room/corporate/security/sensory-scale": {
+    "view": "pages/engine-room/corporate/security/sensory-scale",
+    "title": "Sensory Scale Protocol | Security & Accessibility"
   }
 }

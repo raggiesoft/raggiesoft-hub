@@ -122,6 +122,18 @@ $pageTitle = "The Crucible & Ignition - The Stardust Engine Lore";
             </div>
 
             <p>During the pauses where Ryan screams "IGNITION!" on the tape, the Piedmont fans had tried to aggressively boo. To drown them out, the CPI students spontaneously roared <strong>"IGNITION!"</strong> right back at the PA system. By the mid-1990s, the Athletic Director officially cemented the ritual by cutting the stadium lights right before the song begins, leaving opposing teams in the dark listening to 60,000 people cause a localized earthquake.</p>
+
+            <div class="card bg-body-tertiary shadow-sm my-4 border-start border-5 border-warning">
+                <div class="card-body p-4">
+                    <h4 class="h5 fw-bold mb-2"><i class="fa-duotone fa-file-signature me-2 text-warning"></i>The 1986 Progress Street Redline: How a 16-Year-Old Outsmarted University Counsel</h4>
+                    <p class="mb-2">
+                        When the CPI Student Government Association handed out the entry packet for the October 1986 anthem contest, the back of the standard release form contained a buried <strong>"Work Made for Hire"</strong> clause that would have transferred 100% of the winning song's master and publishing rights to the CPI Athletic Foundation. Sixteen-year-old child prodigy <a href="/engine-room/artists/stardust-engine/band/holly-oconnell" class="fw-bold">Holly O'Connell</a>—who had skipped grades to enroll at CPI and was already taking undergraduate contract law electives—refused to let her siblings and cousins sign it.
+                    </p>
+                    <p class="mb-0">
+                        Sitting at the Progress Street kitchen table with a red pen, Holly struck the Work-for-Hire clause and negotiated a <strong>$1.00 Perpetual Mutual Cross-License</strong> with CPI's Office of University Counsel. Under Holly's agreement, The Stardust Engine retained 100% of their master and publishing rights while granting CPI Athletics and the Marching Forgers a perpetual, royalty-free synchronization license to blast <em>"Ignition"</em> (and future Stardust Engine anthems) inside <strong>The Crucible</strong>. In exchange, CPI's Office of Trademarks &amp; Licensing granted the band (and any label they wholly owned) a perpetual, worldwide, royalty-free <strong>Co-Existence &amp; Artistic Reference License</strong> to sing and print <strong>CPI</strong>, <strong>Commonwealth Polytechnic Institute</strong>, <strong>The Forgers</strong>, and <strong>The Crucible</strong> in their songs and liner notes. Eighteen years later, in 2004, Holly pulled the 1986 contract from the Engine Room Records vault and delivered an early master of <em>"Saturday Night Lights: The Crucible"</em> (from the album <em>Progress Street</em>) for the Fourth Quarter stadium break—clearing the track in a single afternoon.
+                    </p>
+                </div>
+            </div>
         </div>
     </div>
     

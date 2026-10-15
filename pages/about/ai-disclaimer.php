@@ -139,6 +139,22 @@
                 </div>
             </wa-card>
 
+            <!-- Work of Fiction & Fictitious Entities Disclaimer -->
+            <wa-card class="w-100 shadow-sm mt-4 border-warning" style="--border-color: var(--wa-color-warning); background-color: var(--bs-tertiary-bg);">
+                <div class="p-4 p-lg-5">
+                    <div class="d-flex align-items-center mb-3">
+                        <i class="fa-solid fa-Scale-balanced fa-2x text-warning me-3" aria-hidden="true"></i>
+                        <div>
+                            <h4 class="fw-bold text-body-emphasis mb-0">Work of Fiction Disclaimer (All Persons, Bands &amp; Institutions Fictitious)</h4>
+                            <small class="text-body-secondary">Creative World-Building &amp; Narrative Lore</small>
+                        </div>
+                    </div>
+                    <p class="text-body-emphasis mb-0">
+                        Aside from Michael Ragsdale’s real-world software engineering and systems administration portfolio, everything presented across <strong>RaggieSoft.com</strong>, <strong>The Listening Room (music.raggiesoft.com)</strong>, and <strong>Ocean View Archives (books.raggiesoft.com)</strong> is a work of creative fiction. All bands (including <em>The Stardust Engine, Fractured Prisms, The Paper Wall, Crimson Node, Mana Canvas,</em> and <em>The Arctic Symphony Project</em>), characters, biographies, universities (including <strong>Commonwealth Polytechnic Institute / CPI</strong>, <strong>The Forgers</strong>, and <strong>The Crucible</strong>), corporations (including <strong>OmniCorp</strong>, <strong>Apex Records</strong>, <strong>Prairie Coachworks</strong>, and <strong>Sainte-Claire</strong>), transit agencies (<strong>Blue Ridge Transit</strong>), legal contracts, trusts, and historical timelines are fictitious. Any resemblance to actual persons (living or dead), real-world businesses, academic institutions, or historical events is purely coincidental.
+                    </p>
+                </div>
+            </wa-card>
+
         </div>
     </div>
 </div>

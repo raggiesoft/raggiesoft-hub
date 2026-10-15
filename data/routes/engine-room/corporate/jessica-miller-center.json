@@ -11,14 +11,23 @@
     "navbarBrandClass": "rounded-0 navbar-brand-corporate-img"
   },
   "/engine-room/jessica-miller-center": {
+    "view": "pages/engine-room/corporate/jessica-miller-center/overview",
+    "title": "The Jessica Miller Center - Home",
+    "navbarBrandLink": "/engine-room",
+    "showSidebar": false
+  },
+  "/engine-room/corporate/jessica-miller-center": {
+    "view": "pages/engine-room/corporate/jessica-miller-center/overview",
     "title": "The Jessica Miller Center - Home",
     "navbarBrandLink": "/engine-room",
     "showSidebar": false
   },
   "/engine-room/jessica-miller-center/the-quiet-floor": {
+    "view": "pages/engine-room/corporate/jessica-miller-center/the-quiet-floor",
     "title": "The Quiet Floor - Level 40 Sanctuary"
   },
   "/engine-room/jessica-miller-center/destination-dispatch-elevators": {
+    "view": "pages/engine-room/corporate/jessica-miller-center/destination-dispatch-elevators",
     "title": "Destination Dispatch Elevators"
   }
 }

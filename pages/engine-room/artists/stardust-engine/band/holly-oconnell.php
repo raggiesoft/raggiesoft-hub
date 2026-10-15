@@ -78,6 +78,14 @@ $personSchema = [
                 While still a student, she took on the role of the band's manager. Her official role was to act as the emotional peacemaker—famously pulling Ryan and Cassidy into a "three-way hug" when they argued over music, reminding them "You're both right. And you're both idiots."
             </p>
 
+            <h3 class="fw-bold mt-5 mb-3 text-white">The First Redline: The 1986 CPI Mutual Cross-License</h3>
+            <p class="text-white-75">
+                Holly's first legal masterstroke happened at the Progress Street kitchen table in October 1986, when she was just sixteen years old. When Ryan, Cassidy, Evan, and Tyler prepared to submit their cassette demo of <em>"Ignition (The Forger's Call)"</em> to the CPI Student Government Association's football anthem contest, sixteen-year-old Holly—already taking undergraduate business and contract law electives—read the fine print on the back of the entry form. Buried in Paragraph 4 was a standard boilerplate <strong>"Work Made for Hire"</strong> clause that would have permanently signed away 100% of the band's master and publishing rights to the CPI Athletic Foundation.
+            </p>
+            <p class="text-white-75">
+                Refusing to let her family lose their song, Holly took a red pen to the entry form and marched into the Office of University Counsel. She negotiated a historic <strong>$1.00 Perpetual Mutual Cross-License</strong>: The Stardust Engine kept 100% of their master and publishing rights while granting CPI Athletics and the Marching Forgers a perpetual, royalty-free stadium and broadcast synchronization license to play <em>"Ignition"</em> (and future Stardust Engine stadium anthems) inside <strong>The Crucible</strong>. In exchange, CPI's Office of Trademarks &amp; Licensing granted the band (and any label they wholly owned) a perpetual, worldwide, royalty-free <strong>Co-Existence &amp; Artistic Reference License</strong> to use the institutional marks <strong>CPI</strong>, <strong>Commonwealth Polytechnic Institute</strong>, <strong>The Forgers</strong>, and <strong>The Crucible</strong> across their songs, album titles, and liner notes—a clause Holly pulled from the vault eighteen years later in 2004 to clear <em>"Saturday Night Lights: The Crucible"</em> on <em>Progress Street</em> in a single afternoon.
+            </p>
+
             <h3 class="fw-bold mt-5 mb-3 text-white">The Crash of '90: "The Gatekeeper"</h3>
             <p class="text-white-75">
                 When Ryan was paralyzed in December 1990, Holly's role expanded from Business Manager to Medical Director. She holds <strong>Durable Power of Attorney</strong> for Ryan, giving her the legal authority to make medical decisions in an emergency. She carries signed, notarized HIPAA release forms in her briefcase at all times.
@@ -104,6 +112,16 @@ $personSchema = [
                     <hr class="border-light opacity-25 my-4">
                     <h5 class="text-white fw-bold mb-3"><i class="fa-solid fa-gavel me-2 text-primary"></i>Legal Armor (The Sword)</h5>
                     <div class="d-flex flex-wrap gap-2 mb-4">
+
+                        <wa-button size="small" pill appearance="outline" variant="warning" class="credential-btn m-1" 
+                                
+                                data-title="The $1.00 CPI Mutual Cross-License (1986)"
+                                data-desc="Perpetual Co-Existence, Trademark & Stadium Synchronization Cross-License with Commonwealth Polytechnic Institute."
+                                data-lore="Negotiated by a 16-year-old Holly at the Progress Street kitchen table. She struck a Work-for-Hire trap from the 1986 student anthem contest form, trading royalty-free stadium sync rights inside The Crucible for a perpetual worldwide license to sing 'CPI', 'The Forgers', and 'The Crucible'—clearing 2004's 'Saturday Night Lights: The Crucible' eighteen years in advance."
+                                data-color="warning"
+                                data-icon="fa-file-signature">
+                            <i class="fa-solid fa-file-signature me-1 text-warning"></i>CPI Cross-License ('86)
+                        </wa-button>
                         
                         <wa-button size="small" pill appearance="outline" variant="primary" class="credential-btn m-1" 
                                 

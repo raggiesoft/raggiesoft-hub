@@ -32,8 +32,8 @@ $pageTitle = "Discography Overview - The Stardust Engine";
 $bandName = "The Stardust Engine";
 $baseUrl = "https://raggiesoft.com"; // Adjust to your actual production domain
 
-// Fetch the albums.json file directly from the CDN
-$jsonUrl = $cdnBaseUrl . '/engine-room-records/artists/the-stardust-engine/albums.json';
+// Fetch the albums.json file directly from the CDN (with cache busting so new albums appear immediately)
+$jsonUrl = $cdnBaseUrl . '/engine-room-records/artists/the-stardust-engine/albums.json?v=' . time();
 $jsonData = @file_get_contents($jsonUrl);
 
 $discographyLibrary = [];

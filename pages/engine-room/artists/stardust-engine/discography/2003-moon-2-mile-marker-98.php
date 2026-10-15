@@ -75,4 +75,13 @@ $album_path_web = '/engine-room-records/artists/the-stardust-engine/2003-mile-ma
     <hr class="border-secondary opacity-25 mb-5">
 
     <?php include ROOT_PATH . '/includes/components/_tracklist-downloader.php'; ?>
+
+    <?php
+    $nav = [
+        'prev' => ['url' => '/engine-room/artists/stardust-engine/discography/2003-moon-1-sanctuary-zero-g', 'label' => 'Sanctuary: Zero-G (2003)'],
+        'overview' => ['url' => '/engine-room/artists/stardust-engine/discography', 'label' => 'Discography'],
+        'next' => ['url' => '/engine-room/artists/stardust-engine/discography/2004-progress-street', 'label' => 'Progress Street (2004)']
+    ];
+    include ROOT_PATH . '/includes/components/navigation/narrative-stepper.php';
+    ?>
 </div>

@@ -78,6 +78,9 @@ $isDarkTheme = (isset($currentPageTheme) && in_array($currentPageTheme, ['dark',
                     <div class="mt-2 text-body-secondary opacity-75" style="font-size: 0.85em;">
                         RaggieSoft&trade;, The Stardust Engine&trade;, and Engine Room Records&trade; are trademarks of Michael P. Ragsdale.
                     </div>
+                    <div class="mt-1 text-body-secondary opacity-75" style="font-size: 0.8em;">
+                        <strong>Fictitious Disclaimer:</strong> Unless explicitly marked as real-world portfolio credentials, all bands, characters, universities (including CPI), corporations (including OmniCorp, Apex Records, Prairie Coachworks, and Sainte-Claire), legal filings, and events depicted on this network are works of fiction. Any resemblance to actual persons, living or dead, institutions, or events is purely coincidental.
+                    </div>
                 </div>
                 <div class="col-lg-6 text-center text-lg-end small mt-2 mt-lg-0">
                     <a href="https://store.raggiesoft.com/" target="_blank" rel="noopener" class="text-decoration-none link-body-emphasis fw-bold me-3 hover-opacity">

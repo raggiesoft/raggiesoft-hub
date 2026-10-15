@@ -14,5 +14,10 @@
     "view": "pages/engine-room/corporate/stardust-blacksburg/overview",
     "title": "Student Living | The Ironwood Collective",
     "ogDescription": "Premium Student Housing for CPI. Managed by Alumni, for Future Alumni."
+  },
+  "/engine-room/corporate/stardust-blacksburg": {
+    "view": "pages/engine-room/corporate/stardust-blacksburg/overview",
+    "title": "Stardust Blacksburg, LLC | The Ironwood Collective",
+    "ogDescription": "Premium Student Housing for CPI. Managed by Alumni, for Future Alumni."
   }
 }

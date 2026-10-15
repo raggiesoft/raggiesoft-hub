@@ -70,7 +70,11 @@
   
   
   <wa-button appearance="plain" href="/engine-room/artists/stardust-engine/story/cpi" class="text-body w-100 text-start justify-content-start" style="text-align: left;">
-    <i slot="start" class="fa-duotone fa-school"></i> CPI & The Forgers
+    <i slot="start" class="fa-duotone fa-school"></i> CPI &amp; The Forgers
+  </wa-button>
+
+  <wa-button appearance="plain" href="/engine-room/artists/stardust-engine/story/crucible" class="text-body w-100 text-start justify-content-start" style="text-align: left;">
+    <i slot="start" class="fa-duotone fa-fire-flame-curved"></i> The Crucible &amp; Ignition
   </wa-button>
   
   
@@ -81,6 +85,18 @@
   
     <wa-button appearance="plain" href="/engine-room/artists/stardust-engine/story/friction" class="text-body w-100 text-start justify-content-start" style="text-align: left;">
       <i slot="start" class="fa-duotone fa-burst"></i> The Friction Scandal
+    </wa-button>
+
+    <wa-button appearance="plain" href="/engine-room/corporate/strategic-assets/the-iron-horse" class="text-body w-100 text-start justify-content-start" style="text-align: left;">
+      <i slot="start" class="fa-duotone fa-bus"></i> The Iron Horse &amp; Fleet
+    </wa-button>
+
+    <wa-button appearance="plain" href="/engine-room/artists/stardust-engine/story/2015-delaware-migration" class="text-body w-100 text-start justify-content-start" style="text-align: left;">
+      <i slot="start" class="fa-duotone fa-file-signature"></i> 2015 Delaware Migration
+    </wa-button>
+
+    <wa-button appearance="plain" href="/engine-room/corporate/structure" class="text-body w-100 text-start justify-content-start" style="text-align: left;">
+      <i slot="start" class="fa-duotone fa-sitemap"></i> 2015 Corporate Web
     </wa-button>
   
   

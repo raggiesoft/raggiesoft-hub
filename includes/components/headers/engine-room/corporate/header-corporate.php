@@ -46,11 +46,13 @@
     <wa-menu>
       <div class="px-3 py-2 small text-uppercase  fw-bold">Operating Companies</div>
         <wa-dropdown-item value="/engine-room"><i class="fa-solid fa-record-vinyl me-2 text-danger"></i>Engine Room Records</wa-dropdown-item>
+        <wa-dropdown-item value="/engine-room/corporate/strategic-assets"><i class="fa-solid fa-vault me-2 text-warning"></i>Stardust Strategic Assets</wa-dropdown-item>
         <wa-dropdown-item value="/engine-room/corporate/aethelgard"><i class="fa-solid fa-gavel me-2 "></i>Aethelgard Holdings</wa-dropdown-item>
-        <wa-dropdown-item value="/pacific-rim"><i class="fa-solid fa-city me-2 text-primary"></i>Pacific Rim Properties</wa-dropdown-item>
+        <wa-dropdown-item value="/engine-room/corporate/pacific-rim"><i class="fa-solid fa-city me-2 text-primary"></i>Pacific Rim Properties</wa-dropdown-item>
+        <wa-dropdown-item value="/engine-room/corporate/stardust-blacksburg"><i class="fa-solid fa-building-user me-2 text-info"></i>Stardust Blacksburg</wa-dropdown-item>
         <wa-divider></wa-divider>
         <div class="px-3 py-2 small text-uppercase  fw-bold">Philanthropy</div>
-        <wa-dropdown-item value="/engine-room/corporate/leadership"><i class="fa-solid fa-hand-holding-heart me-2 text-success"></i>Jessica Miller Center</wa-dropdown-item>
+        <wa-dropdown-item value="/engine-room/corporate/jessica-miller-center"><i class="fa-solid fa-hand-holding-heart me-2 text-success"></i>Jessica Miller Center</wa-dropdown-item>
     </wa-menu>
   </wa-dropdown>
 
@@ -64,7 +66,8 @@
     <wa-menu>
       <div class="px-3 py-2 small text-uppercase  fw-bold text-info">Internal Only</div>
         <wa-dropdown-item value="/engine-room/corporate/systems"><i class="fa-solid fa-terminal me-2"></i>Systems (Justin)</wa-dropdown-item>
-        <wa-dropdown-item value="/engine-room/corporate/fleet"><i class="fa-solid fa-bus me-2"></i>Fleet Command</wa-dropdown-item>
+        <wa-dropdown-item value="/engine-room/corporate/fleet"><i class="fa-solid fa-satellite-dish me-2"></i>Fleet Command (Telemetry)</wa-dropdown-item>
+        <wa-dropdown-item value="/engine-room/corporate/strategic-assets/the-iron-horse"><i class="fa-solid fa-bus me-2 text-warning"></i>The Iron Horse &amp; Fleet Archive</wa-dropdown-item>
     </wa-menu>
   </wa-dropdown>
 

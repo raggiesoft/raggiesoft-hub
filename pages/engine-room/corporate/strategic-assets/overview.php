@@ -111,6 +111,38 @@ $pageTitle = "Stardust Strategic Assets - Corporate Infrastructure";
             </a>
         </div>
 
+        <div class="col-md-6">
+            <a href="/engine-room/corporate/strategic-assets/the-vault" class="text-decoration-none">
+                <div class="card h-100 asset-card shadow-sm border-start-0 border-end-0 border-top-0 border-bottom-4 border-info">
+                    <div class="card-body p-5 text-center">
+                        <i class="fa-duotone fa-vault fa-3x text-info mb-3"></i>
+                        <h3 class="h4 fw-bold text-uppercase text-body-emphasis">The Vault</h3>
+                        <p class="text-body-secondary font-monospace small mb-0">ID: ARC-01 (Subterranean Cold Storage)</p>
+                        <hr class="my-3 opacity-25">
+                        <p class="card-text text-body-secondary">
+                            Climate-controlled Faraday archive beneath Stardust Studios housing 2-inch analog masters and the Sun-Ray Repatriation Catalog.
+                        </p>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <div class="col-md-6">
+            <a href="/engine-room/corporate/strategic-assets/the-iron-horse" class="text-decoration-none">
+                <div class="card h-100 asset-card shadow-sm border-start-0 border-end-0 border-top-0 border-bottom-4 border-primary">
+                    <div class="card-body p-5 text-center">
+                        <i class="fa-duotone fa-bus fa-3x text-primary mb-3"></i>
+                        <h3 class="h4 fw-bold text-uppercase text-body-emphasis">The Iron Horse &amp; Fleet Archive</h3>
+                        <p class="text-body-secondary font-monospace small mb-0">ID: FLT-01/02 (Heavy Touring &amp; Shuttle Division)</p>
+                        <hr class="my-3 opacity-25">
+                        <p class="card-text text-body-secondary">
+                            The 2002 Sainte-Claire 45H3 interstate cruiser (60" hydraulic lift) and the 2004 Prairie Coachworks RLFD30 low-floor shuttle coach.
+                        </p>
+                    </div>
+                </div>
+            </a>
+        </div>
+
     </div>
 
     <div class="alert bg-body-tertiary border border-secondary border-opacity-25 p-4 rounded-0 shadow-sm">

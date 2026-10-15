@@ -13,7 +13,23 @@
   },
 
   "/engine-room/artists/stardust-engine/story": {
+    "view": "pages/engine-room/artists/stardust-engine/story/overview",
     "title": "The Story of The Stardust Engine",
     "ogDescription": "Explore the epic narrative behind The Stardust Engine, from their rise in the 80s synth-rock scene to the corporate intrigue that shaped their journey."
+  },
+  "/engine-room/artists/stardust-engine/story/2015-delaware-migration": {
+    "view": "pages/engine-room/artists/stardust-engine/story/2015-delaware-migration",
+    "showSidebar": true,
+    "sidebar": "sidebar-stories",
+    "title": "The Delaware Migration (2015) | The Stardust Engine",
+    "ogDescription": "How Holly O'Connell spent the 2004–2015 post-Progress Street hiatus unbundling Engine Room Records, LLC into a multi-billion-dollar web of anonymous Delaware entities."
+  },
+  "/engine-room/artists/stardust-engine/story/tour-bus": {
+    "view": "pages/engine-room/corporate/strategic-assets/the-iron-horse",
+    "showSidebar": true,
+    "sidebar": "sidebar-stories",
+    "title": "The Iron Horse & Fleet Archive | The Stardust Engine",
+    "ogDescription": "Technical specifications, Class A CDL driver roster, and corporate provenance for the 2002 Sainte-Claire 45H3 and 2004 Prairie Coachworks RLFD30.",
+    "ogImage": "/stardust-engine/images/fleet/2002-sainte-claire-45h3-iron-horse.jpg"
   }
 }

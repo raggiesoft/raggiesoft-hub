@@ -188,6 +188,10 @@ $not_found = ($is_artist_view && empty($artist_tracks)) || ($is_track_view && em
             <strong><i class="fa-solid fa-circle-certificate me-1"></i> System Log:</strong> Displaying cryptographically indexed metadata ledger sheets for track asset resource: <code><?php echo htmlspecialchars($current_track_metadata['err_id']); ?></code>.
         </div>
 
+        <div class="p-3 bg-light border border-secondary rounded small mb-4 font-sans-serif">
+            <strong><i class="fa-solid fa-scale-balanced me-1"></i> Fictitious World-Building &amp; Narrative Lore Disclosure (Notice to DSP Reviewers):</strong> All band members (e.g., Ryan, Cassidy, and Holly O'Connell), in-universe corporate structures (e.g., "Engine Room Records, LLC", "Forger Nation Trust", "Apex Records", "OmniCorp", "Prairie Coachworks", "Sainte-Claire"), fictional universities and stadiums (e.g., "Commonwealth Polytechnic Institute / CPI", "The Forgers", "The Crucible"), in-universe legal contracts, and historical narrative dates (e.g., 1983&ndash;2017) referenced in track lyrics or website lore are <strong>100% works of creative fiction</strong>. Any resemblance to actual persons (living or dead), businesses, academic institutions, or events is purely coincidental. In the real world, <strong>Michael P. Ragsdale</strong> is the sole human creator, owner, and 100% rights-holder of this catalog.
+        </div>
+
         <div class="p-4 border border-secondary rounded bg-body shadow-sm">
             <?php
             require_once ROOT_PATH . '/includes/classes/stardust-parsedown.php';
@@ -207,14 +211,14 @@ $not_found = ($is_artist_view && empty($artist_tracks)) || ($is_track_view && em
 
     <?php else: ?>
         <!-- CORE INFORMATION METRICS BAR -->
-        <div class="row mb-5">
+        <div class="row mb-4">
             <div class="col-md-6">
                 <h3 class="h6 fw-bold text-uppercase border-bottom border-dark pb-2 mb-3">1. Primary Creator & Ownership</h3>
                 <ul class="list-unstyled small mb-0">
                     <li class="mb-1"><strong>Primary Artist / Creator:</strong> Michael P. Ragsdale</li>
                     <li class="mb-1"><strong>Project / Persona:</strong> <?php echo htmlspecialchars($artist_persona ?: 'Various Artists'); ?></li>
                     <li class="mb-1"><strong>Self-Publishing Alias:</strong> Engine Room Records (Sole Proprietorship)</li>
-                    <li class="mb-1"><strong>Official Web Domain:</strong> <a href="/engine-room" class="dsp-directory-link">engineroom-records.com</a></li>
+                    <li class="mb-1"><strong>Official Web Domain:</strong> <a href="/engine-room" class="dsp-directory-link">engineroom-records.com</a> &bull; <a href="https://music.raggiesoft.com" class="dsp-directory-link">music.raggiesoft.com</a></li>
                     <li class="mb-0"><strong>Primary Contact:</strong> <a href="mailto:dsp.operations@engineroom-records.com" class="dsp-directory-link">dsp.operations@engineroom-records.com</a></li>
                 </ul>
             </div>
@@ -229,10 +233,23 @@ $not_found = ($is_artist_view && empty($artist_tracks)) || ($is_track_view && em
             </div>
         </div>
 
+        <!-- FICTITIOUS LORE & ENTITIES DISCLOSURE FOR DSP COMPLIANCE VERIFIERS -->
+        <div class="mb-5">
+            <h3 class="h6 fw-bold text-uppercase border-bottom border-dark pb-2 mb-3">3. Work of Fiction &amp; Narrative Lore Disclosure (Notice to DSP Verifiers)</h3>
+            <div class="p-3 bg-light border border-secondary rounded small">
+                <p class="mb-2">
+                    <strong>Fictitious Personas, Institutions &amp; Lore:</strong> All band names (<em>The Stardust Engine, Fractured Prisms, The Paper Wall, Crimson Node, Mana Canvas, The Arctic Symphony Project, Firelight</em>), band members (e.g., Ryan, Cassidy, and Holly O'Connell), in-universe corporate structures (e.g., "Engine Room Records, LLC", "The Forger Nation Trust", "OmniCorp", "Apex Records", "Prairie Coachworks", "Sainte-Claire"), fictional universities and athletic venues (e.g., "Commonwealth Polytechnic Institute / CPI", "The Forgers", "The Crucible"), transit agencies ("Blue Ridge Transit"), in-universe legal filings, and historical backdate timelines (e.g., 1983&ndash;2017) depicted across this website and in song lyrics are <strong>entirely works of creative fiction</strong>. Any resemblance to actual persons (living or dead), real-world businesses, academic institutions, or events is purely coincidental.
+                </p>
+                <p class="mb-0">
+                    <strong>Real-World Legal Chain of Custody:</strong> While the fictional narrative lore describes "Engine Room Records, LLC" and fictional executives/attorneys as part of a multimedia story universe, in the real world <strong>Michael P. Ragsdale</strong> is the sole human creator, executive producer, and 100% independent rights-holder of all sound recordings, musical compositions, and metadata in this catalog.
+                </p>
+            </div>
+        </div>
+
         <?php if (!$is_artist_view): ?>
             <!-- LAYOUT C: MASTER DIRECTORY VIEW -->
             <div class="mb-4">
-                <h3 class="h6 fw-bold text-uppercase border-bottom border-dark pb-2 mb-3">3. Master Catalog Directory</h3>
+                <h3 class="h6 fw-bold text-uppercase border-bottom border-dark pb-2 mb-3">4. Master Catalog Directory</h3>
                 <p class="small text-muted mb-4">Please select the artist persona under review to access their specific ISRC records and chain of custody documentation.</p>
                 
                 <div class="row g-3">
@@ -258,7 +275,7 @@ $not_found = ($is_artist_view && empty($artist_tracks)) || ($is_track_view && em
             <!-- LAYOUT A: ARTIST TRACK TABLE VIEW -->
             <div class="mb-4">
                 <div class="d-flex justify-content-between align-items-end border-bottom border-dark pb-2 mb-3 flex-wrap gap-2">
-                    <h3 class="h6 fw-bold text-uppercase mb-0">3. Artist Profile & Direct Claim: <span class="text-primary"><?php echo htmlspecialchars($artist_persona); ?></span></h3>
+                    <h3 class="h6 fw-bold text-uppercase mb-0">4. Artist Profile & Direct Claim: <span class="text-primary"><?php echo htmlspecialchars($artist_persona); ?></span></h3>
                     <a href="/engine-room/dsp-verification" class="btn btn-sm btn-outline-dark font-monospace d-print-none"><i class="fa-solid fa-arrow-left me-1"></i> Back to Directory</a>
                 </div>
                 

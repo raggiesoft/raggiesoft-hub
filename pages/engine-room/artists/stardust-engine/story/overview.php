@@ -221,6 +221,47 @@ $pageTitle = "The Lore - The Stardust Engine";
             </wa-card>
         </div>
 
+        <!-- Grid Item: The Iron Horse & Fleet Archive -->
+        <div class="col-12 col-md-6 col-lg-4 d-flex align-items-stretch">
+            <wa-card class="h-100 border-info shadow-sm hover-card bg-transparent w-100 p-0" style="--wa-panel-bg: transparent; --body-padding: 0;">
+                <img src="<?php echo $cdnBaseUrl; ?>/stardust-engine/images/fleet/2002-sainte-claire-45h3-iron-horse.jpg" class="img-fluid border-bottom" alt="2002 Sainte-Claire 45H3 The Iron Horse luxury accessible tour bus"
+                     style="filter: brightness(0.85);">
+                <div class="d-flex flex-column h-100 p-3">
+                    <h3 class="h5 fw-bold text-info">The Iron Horse &amp; Fleet Archive</h3>
+                    <p class="card-text text-muted small">
+                        Explore the 45-foot 2002 <strong>Sainte-Claire 45H3</strong> interstate cruiser and the 30-foot 2004 <strong>Prairie Coachworks RLFD30</strong> campus shuttle—and why three members of the family hold Class A CDLs.
+                    </p>
+                    <div class="mt-auto pt-3">
+                        <wa-button variant="info" outline href="/engine-room/corporate/strategic-assets/the-iron-horse" class="w-100">
+                            <i slot="prefix" class="fa-duotone fa-bus"></i>Inspect Fleet Archive
+                        </wa-button>
+                    </div>
+                </div>
+            </wa-card>
+        </div>
+
+        <!-- Grid Item: The 2015 Delaware Migration -->
+        <div class="col-12 col-md-6 col-lg-4 d-flex align-items-stretch">
+            <wa-card class="h-100 border-success shadow-sm hover-card bg-transparent w-100 p-0" style="--wa-panel-bg: transparent; --body-padding: 0;">
+                <img src="<?php echo $cdnBaseUrl; ?>/engine-room-records/artists/the-stardust-engine/2004-progress-street/album-art.jpg" class="img-fluid border-bottom" alt="Progress Street and the 2004-2015 Corporate Diversification"
+                     style="filter: brightness(0.8);">
+                <div class="d-flex flex-column h-100 p-3">
+                    <h3 class="h5 fw-bold text-success">The 2015 Delaware Migration</h3>
+                    <p class="card-text text-muted small">
+                        After signing off on <em>Progress Street</em> in 2004, Holly O'Connell spent eleven years diversifying <strong>Engine Room Records, LLC</strong> into a $2.4B web of anonymous Delaware holdings.
+                    </p>
+                    <div class="mt-auto pt-3 d-flex flex-column gap-2">
+                        <wa-button variant="success" outline href="/engine-room/artists/stardust-engine/story/2015-delaware-migration" class="w-100">
+                            <i slot="prefix" class="fa-duotone fa-file-signature"></i>Read The Migration
+                        </wa-button>
+                        <wa-button variant="neutral" outline size="small" href="/engine-room/corporate/structure" class="w-100">
+                            <i slot="prefix" class="fa-duotone fa-sitemap"></i>View 2015 Trust Map
+                        </wa-button>
+                    </div>
+                </div>
+            </wa-card>
+        </div>
+
         <!-- Grid Item: Complete Timeline -->
         <div class="col-12 col-md-6 col-lg-4 d-flex align-items-stretch">
             <wa-card class="h-100 border-secondary shadow-sm hover-card bg-transparent w-100 p-0" style="--wa-panel-bg: transparent; --body-padding: 0;">
@@ -234,7 +275,7 @@ $pageTitle = "The Lore - The Stardust Engine";
                     <div class="mt-auto pt-3">
                         <?php $props = [
                             'text' => 'View Timeline', 
-                            'href' => '/band/band-history', 
+                            'href' => '/engine-room/artists/stardust-engine/band/history', 
                             'variant' => 'neutral',
                             'icon' => 'fa-duotone fa-clock-rotate-left',
                             'fullWidth' => true

@@ -30,6 +30,11 @@ $storyLinks = [
         'url' => '/engine-room/artists/stardust-engine/story/cpi',
         'icon' => 'fa-duotone fa-school'
     ],
+    'crucible' => [
+        'title' => 'The Crucible & Ignition',
+        'url' => '/engine-room/artists/stardust-engine/story/crucible',
+        'icon' => 'fa-duotone fa-fire-flame-curved'
+    ],
     'crash-of-90' => [
         'title' => 'The Crash of \'90',
         'url' => '/engine-room/artists/stardust-engine/story/crash-of-90',
@@ -40,6 +45,21 @@ $storyLinks = [
         'url' => '/engine-room/artists/stardust-engine/story/friction',
         'icon' => 'fa-duotone fa-fire'
     ],
+    'iron-horse' => [
+        'title' => 'The Iron Horse & Fleet',
+        'url' => '/engine-room/corporate/strategic-assets/the-iron-horse',
+        'icon' => 'fa-duotone fa-bus'
+    ],
+    'delaware-migration' => [
+        'title' => '2015 Delaware Migration',
+        'url' => '/engine-room/artists/stardust-engine/story/2015-delaware-migration',
+        'icon' => 'fa-duotone fa-file-signature'
+    ],
+    'corporate-structure' => [
+        'title' => '2015 Corporate Web',
+        'url' => '/engine-room/corporate/structure',
+        'icon' => 'fa-duotone fa-sitemap'
+    ],
     'refusal' => [
         'title' => 'The $150M Refusal',
         'url' => '/engine-room/artists/stardust-engine/story/nine-figure-refusal',
@@ -47,7 +67,7 @@ $storyLinks = [
     ],
     'ad-astra' => [
         'title' => 'Ad Astra: The Mission',
-        'url' => '/story/ad-astra',
+        'url' => '/engine-room/artists/stardust-engine/story/ad-astra',
         'icon' => 'fa-duotone fa-rocket-launch'
     ]
 ];

@@ -249,7 +249,7 @@ $album_path_web = '/engine-room-records/artists/the-stardust-engine/2007-lost-so
     
     <?php
     $nav = [
-        'prev' => ['url' => '/engine-room/artists/stardust-engine/discography/2003-moon-2-mile-marker-98', 'label' => 'Mile Marker 98 (2003)'],
+        'prev' => ['url' => '/engine-room/artists/stardust-engine/discography/2004-progress-street', 'label' => 'Progress Street (2004)'],
         'overview' => ['url' => '/engine-room/artists/stardust-engine/discography', 'label' => 'Discography'],
         'next' => ['url' => '/engine-room/artists/stardust-engine/discography/2008-our-own-frequency', 'label' => 'Our Own Frequency (2008)']
     ];

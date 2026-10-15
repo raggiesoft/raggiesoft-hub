@@ -14,7 +14,7 @@ $root = '/engine-room/artists/stardust-engine';
 
 // INLINE: Retrieve the master album data to dynamically generate carousels or grids
 // Fetch and decode the Albums JSON
-$jsonUrl = $cdnBaseUrl . '/engine-room-records/artists/the-stardust-engine/albums.json';
+$jsonUrl = $cdnBaseUrl . '/engine-room-records/artists/the-stardust-engine/albums.json?v=' . time();
 $jsonData = @file_get_contents($jsonUrl); // @ suppresses warnings if the fetch fails
 $eras = $jsonData ? json_decode($jsonData, true) : [];
 
