@@ -3,26 +3,46 @@
         "site": "stardust-engine",
         "theme": "crucible",
         "showSidebar": true,
-        "sidebar": "sidebar-stories",
-        "siteName": "The Crucible",
+        "sidebar": "engine-room/artists/stardust-engine/story/sidebar-crucible",
+        "siteName": "CPI & The Crucible",
         "headerMenu": "engine-room/header-engine-room",
         "footer": "engine-room/footer-engine-room",
         "navbarBrandLogo": "/engine-room-records/images/logos/engine-room-records-logo.png",
         "navbarBrandText": "<span class=\"d-none d-md-inline\">The </span>Crucible",
-        "navbarBrandLink": "/engine-room/artists/stardust-engine",
+        "navbarBrandLink": "/engine-room/artists/stardust-engine/story/cpi",
         "ogImage": "/engine-room-records/artists/the-stardust-engine/2016-live-at-the-crucible/album-art.jpg",
         "navbarBrandAlt": "Engine Room Records Official Seal",
         "navbarBrandClass": "rounded-0 navbar-brand-corporate-img",
         "isSequential": true
     },
-    "/engine-room/artists/stardust-engine/story/crucible": {
-        "view": "pages/engine-room/artists/stardust-engine/story/crucible",
-        "title": "The Crucible - Ignition (The Forger's Call)",
-        "ogDescription": "The origin of The Stomp, Ignition, and Jeremiah Vance's Ironhead Covenant for The Crucible."
-    },
     "/engine-room/artists/stardust-engine/story/cpi": {
         "view": "pages/engine-room/artists/stardust-engine/story/cpi/overview",
-        "title": "Commonwealth Polytechnic Institute (CPI) | Home of the Forgers",
-        "ogDescription": "Explore Commonwealth Polytechnic Institute (CPI) in Blacksburg, Virginia—where The Stardust Engine formed in 1985 and forged the soundtrack to The Crucible."
+        "title": "Commonwealth Polytechnic Institute (CPI) & The Forgers | Interconnected Lore Hub",
+        "ogTitle": "Commonwealth Polytechnic Institute (CPI) — Home of the Forgers & Ironheads",
+        "ogDescription": "Explore Commonwealth Polytechnic Institute (CPI) in Blacksburg, Virginia—campus geography, the Class of '89, Dual Enrollment, and cross-universe connections."
+    },
+    "/engine-room/artists/stardust-engine/story/crucible": {
+        "view": "pages/engine-room/artists/stardust-engine/story/crucible",
+        "title": "The Crucible & The 1995 Ironhead Covenant | CPI Lore",
+        "ogTitle": "The Crucible & Jeremiah Vance's $100M Ironhead Covenant (1995)",
+        "ogDescription": "Inside the 65,000-seat fortress of The Crucible, The Anvil student section bleachers, and the 1995 Deed of Gift that banned corporate naming rights forever."
+    },
+    "/engine-room/artists/stardust-engine/story/crucible/anthems-and-redline": {
+        "view": "pages/engine-room/artists/stardust-engine/story/cpi/anthems-and-redline",
+        "title": "Stadium Anthems & The 1986 Redline: Ignition & Saturday Night Lights | CPI Lore",
+        "ogTitle": "Ignition, The 1986 Redline, & The Oct 8, 2004 Secret Premiere of Saturday Night Lights",
+        "ogDescription": "How dual-enrolled 16-year-old Holly O'Connell negotiated the 1986 $1.00 Mutual Cross-License, how The Stomp was born in 1989, and how The Ironheads birthed the BAH! BAH! BAH! fourth-quarter tradition."
+    },
+    "/engine-room/artists/stardust-engine/story/crucible/falling-branch-transit": {
+        "view": "pages/engine-room/artists/stardust-engine/story/cpi/falling-branch-transit",
+        "title": "Christiansburg Transit Center at Falling Branch & The $150 Parking Paradox | CPI Lore",
+        "ogTitle": "Blue Ridge Transit, Falling Branch (6,000 Spaces), & The Great CPI Parking Paradox",
+        "ogDescription": "Why paying $150 to park beside The Crucible traps your car for 90 minutes while VDOT's 8-level, 6,000-space Christiansburg Transit Center and Blue Ridge Transit's 60-foot artics own Southgate Drive."
+    },
+    "/engine-room/artists/stardust-engine/story/crucible/rivalries": {
+        "view": "pages/engine-room/artists/stardust-engine/story/cpi/rivalries",
+        "title": "Blood Feuds of the Commonwealth: VPU, Monongahela State, & The VDU Shutout War | CPI Lore",
+        "ogTitle": "The Hammer vs. The Crown: CPI's Rivalries with VPU, MSU, and Virginia Dominion (VDU)",
+        "ogDescription": "From the 1989 Commonwealth Cup against VPU and the 2004 Coal & Iron War against #6 MSU to the 2014–2015 VDU Homecoming Shutout War (38–0 and 52–0)."
     }
 }

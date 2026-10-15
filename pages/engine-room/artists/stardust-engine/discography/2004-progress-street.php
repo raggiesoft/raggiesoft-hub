@@ -159,7 +159,7 @@ $album_path_web = '/engine-room-records/artists/the-stardust-engine/2004-progres
                 <div class="alert alert-info border-info-subtle text-info-emphasis mb-0 p-3">
                     <i class="fa-solid fa-fire-flame-curved me-2"></i><strong>Historical Archive:</strong>
                     Read the full story of the 1986 student contest, Holly's kitchen-table legal redline, and the October 8, 2004 secret fourth-quarter debut in
-                    <a href="/engine-room/artists/stardust-engine/story/crucible#saturday-night-lights-debut" class="alert-link fw-bold text-decoration-underline">The Crucible &amp; "Ignition" Archive</a>.
+                    <a href="/engine-room/artists/stardust-engine/story/crucible/anthems-and-redline#saturday-night-lights-debut" class="alert-link fw-bold text-decoration-underline">Chapter 3: Stadium Anthems &amp; The 1986 Redline</a>.
                 </div>
             </wa-accordion-item>
 
@@ -244,11 +244,14 @@ $album_path_web = '/engine-room-records/artists/the-stardust-engine/2004-progres
                         <i class="fa-duotone fa-bus text-warning fs-3"></i>
                     </div>
                     <div>
-                        <h5 class="alert-heading h6 fw-bold text-warning text-uppercase mb-1">Prairie Coachworks RLFD30 (Launch Customer)</h5>
+                        <h5 class="alert-heading h6 fw-bold text-warning text-uppercase mb-1">Prairie Coachworks RLFD30 &amp; Blue Ridge Transit</h5>
                         <p class="mb-3 small text-muted">
-                            Featured on the cover of <em>Progress Street</em> is the band's 2004 <strong>Prairie Coachworks RLFD30</strong>—making The Stardust Engine the very first launch customer for the restyled 30-foot low-floor coach. Engineered with a front-door-only executive layout, cosmic nebula wrap, and kneeling front ADA ramp, it is driven exclusively by CDL-licensed band members Holly O'Connell, Evan Wright, and Tyler Wright.
+                            Featured on the cover of <em>Progress Street</em> is the band's 2004 <strong>Prairie Coachworks RLFD30</strong>—making The Stardust Engine the very first launch customer for the restyled 30-foot low-floor coach. Meanwhile, Blue Ridge Transit's 60-foot Prairie Coachworks articulated fleet powers Route 1 ("The Spine") and the 6,000-space <strong>Christiansburg Transit Center at Falling Branch</strong>.
                         </p>
-                        <a href="/engine-room/corporate/strategic-assets/the-iron-horse" class="btn btn-sm btn-outline-warning text-uppercase fw-bold">Explore the Fleet Roster</a>
+                        <div class="d-flex flex-wrap gap-2">
+                            <a href="/engine-room/corporate/strategic-assets/the-iron-horse" class="btn btn-sm btn-outline-warning text-uppercase fw-bold">Explore the Fleet</a>
+                            <a href="/engine-room/artists/stardust-engine/story/crucible/falling-branch-transit" class="btn btn-sm btn-outline-light text-uppercase fw-bold">Falling Branch &amp; BRT Lore</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -263,9 +266,9 @@ $album_path_web = '/engine-room-records/artists/the-stardust-engine/2004-progres
                     <div>
                         <h5 class="alert-heading h6 fw-bold text-info text-uppercase mb-1">The 1986 Progress Street Redline</h5>
                         <p class="mb-3 small text-muted">
-                            How did The Stardust Engine legally clear CPI's institutional marks for Track 6? Sixteen-year-old Holly O'Connell redlined the 1986 student contest form into a perpetual $1.00 Mutual Cross-License—trading royalty-free stadium rights inside The Crucible for permanent artistic reference rights across the band's catalog.
+                            How did The Stardust Engine legally clear CPI's institutional marks for Track 6? Dual-enrolled 16-year-old Holly O'Connell redlined the 1986 student contest form into a perpetual $1.00 Mutual Cross-License—trading royalty-free stadium rights inside The Crucible for permanent artistic reference rights across the band's catalog.
                         </p>
-                        <a href="/engine-room/artists/stardust-engine/story/crucible" class="btn btn-sm btn-outline-info text-uppercase fw-bold">Read the 1986 Contract Lore</a>
+                        <a href="/engine-room/artists/stardust-engine/story/crucible/anthems-and-redline#progress-street-redline" class="btn btn-sm btn-outline-info text-uppercase fw-bold">Read the 1986 Contract Lore</a>
                     </div>
                 </div>
             </div>

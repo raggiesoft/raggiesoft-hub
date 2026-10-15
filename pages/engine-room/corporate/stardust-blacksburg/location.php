@@ -82,10 +82,10 @@ $pageTitle = "Location & Transit - Stardust Blacksburg";
                         <span class="badge bg-secondary">Every 15 Min</span>
                     </div>
                     <p class="small text-muted mb-1">
-                        <strong>Corridor:</strong> Falling Branch <i class="fa-solid fa-arrow-right mx-1" style="font-size: 0.7em;"></i> Pepper Plaza <i class="fa-solid fa-arrow-right mx-1" style="font-size: 0.7em;"></i> Downtown <i class="fa-solid fa-arrow-right mx-1" style="font-size: 0.7em;"></i> Alumni Mall.
+                        <strong>Corridor:</strong> <a href="/engine-room/artists/stardust-engine/story/crucible/falling-branch-transit" class="fw-bold">Christiansburg Transit Center (Falling Branch Exit 118)</a> <i class="fa-solid fa-arrow-right mx-1" style="font-size: 0.7em;"></i> Pepper Plaza <i class="fa-solid fa-arrow-right mx-1" style="font-size: 0.7em;"></i> Downtown <i class="fa-solid fa-arrow-right mx-1" style="font-size: 0.7em;"></i> Progress St NW <i class="fa-solid fa-arrow-right mx-1" style="font-size: 0.7em;"></i> Alumni Mall.
                     </p>
                     <p class="small text-muted mb-0 fst-italic">
-                        The heavy lifter. Direct access to Christiansburg shopping and the Uptown Mall. 60-foot articulated buses deployed during peak hours.
+                        The heavy lifter. Anchored by VDOT's 8-level, 6,000-space intercept garage at Exit 118 (with WSDOT-style bus-only flyover ramps onto US-460). 60-foot Prairie Coachworks articulated buses deployed continuously during peak hours and Crucible game days.
                     </p>
                 </div>
 
@@ -112,6 +112,15 @@ $pageTitle = "Location & Transit - Stardust Blacksburg";
                 </div>
 
             </div>
+
+            <div class="alert alert-warning border-warning-subtle shadow-sm d-flex align-items-center justify-content-between flex-wrap gap-2 p-3 mb-0">
+                <div class="small">
+                    <i class="fa-duotone fa-stadium me-2"></i><strong>Game-Day Transit Lore:</strong> Discover how VDOT's 6,000-space Christiansburg Transit Center and BRT's bus-only Southgate Drive corridor defeat the $150 stadium parking trap.
+                </div>
+                <a href="/engine-room/artists/stardust-engine/story/crucible/falling-branch-transit" class="btn btn-sm btn-warning text-dark fw-bold text-uppercase">
+                    Read Falling Branch Lore <i class="fa-solid fa-arrow-right ms-1"></i>
+                </a>
+            </div>
         </div>
 
         <div class="col-lg-5">
@@ -129,8 +138,8 @@ $pageTitle = "Location & Transit - Stardust Blacksburg";
                         <h6 class="fw-bold text-body-emphasis mb-0">The Maroon Express (Bluewater)</h6>
                     </div>
                     <p class="card-text small text-body-secondary">
-                        <strong>Route:</strong> Bluewater <i class="fa-solid fa-left-right mx-1"></i> CPI via Falling Branch.
-                        <br>Luxury coach service. A cultural phenomenon for students from Carroll County.
+                        <strong>Route:</strong> Bluewater / Carroll County <i class="fa-solid fa-left-right mx-1"></i> Exit 98 (Justin's Station) <i class="fa-solid fa-left-right mx-1"></i> <a href="/engine-room/artists/stardust-engine/story/crucible/falling-branch-transit">Falling Branch (Exit 118)</a> <i class="fa-solid fa-left-right mx-1"></i> CPI.
+                        <br>45-foot over-the-road coach service with mid-coach ADA lifts. A cultural phenomenon for commuters along the I-81 corridor.
                     </p>
                 </div>
             </div>
