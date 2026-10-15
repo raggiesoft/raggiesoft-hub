@@ -79,42 +79,102 @@ $pageTitle = "Fleet Command // T-Logistics";
 
             <div class="tui-window">
                 <div class="tui-header">
-                    <span>UNIT_01: "The Sovereign"</span>
-                    <span>STATUS: ACTIVE</span>
+                    <span>UNIT_01: "The Iron Horse" (2002 Sainte-Claire 45H3)</span>
+                    <span>STATUS: ACTIVE // INTERSTATE FLAGSHIP</span>
                 </div>
                 <div class="p-3 small">
-                    <div class="row">
-                        <div class="col-md-3 text-center border-end border-secondary">
-                            <i class="fa-solid fa-bus fa-4x text-white mb-2"></i>
-                            <br><strong>SAINTE-CLAIRE 45H3-CUSTOM</strong>
-                            <br><span class="badge bg-success text-white rounded-0 mt-2">FLEET COMMAND</span>
+                    <div class="row align-items-center">
+                        <div class="col-md-4 text-center border-end border-secondary mb-3 mb-md-0">
+                            <a href="/engine-room/corporate/strategic-assets/the-iron-horse">
+                                <img src="<?php echo $cdnBaseUrl; ?>/stardust-engine/images/fleet/2002-sainte-claire-45h3-iron-horse.jpg"
+                                     class="img-fluid border border-secondary mb-2"
+                                     alt="2002 Sainte-Claire 45H3 The Iron Horse luxury accessible tour bus">
+                            </a>
+                            <br><strong>2002 SAINTE-CLAIRE 45H3</strong>
+                            <br><span class="badge bg-info text-dark rounded-0 mt-1">INTERSTATE CRUISER (45 FT)</span>
                         </div>
-                        <div class="col-md-9 ps-md-4">
+                        <div class="col-md-8 ps-md-4">
                             <div class="row mb-2">
-                                <div class="col-3 text-secondary">CHASSIS:</div>
-                                <div class="col-9">Custom "Ground-Up" Commission (2018)</div>
+                                <div class="col-4 col-sm-3 text-secondary">CHASSIS:</div>
+                                <div class="col-8 col-sm-9">2002 Sainte-Claire 45H3 High-Deck Tri-Axle VIP (Sainte-Claire, QC)</div>
                             </div>
                             <div class="row mb-2">
-                                <div class="col-3 text-secondary">LOCATION:</div>
-                                <div class="col-9 text-warning">STARDUST STUDIOS (Blacksburg, VA)</div>
+                                <div class="col-4 col-sm-3 text-secondary">ADA SYSTEM:</div>
+                                <div class="col-8 col-sm-9 text-info">Mid-Ship 60" Vertical Hydraulic Cassette Platform Lift</div>
                             </div>
                             <div class="row mb-2">
-                                <div class="col-3 text-secondary">ODOMETER:</div>
-                                <div class="col-9">142,891 MI</div>
+                                <div class="col-4 col-sm-3 text-secondary">LOCATION:</div>
+                                <div class="col-8 col-sm-9 text-warning">STARDUST STUDIOS BAY 1 (Blacksburg, VA)</div>
                             </div>
                             <div class="row mb-2">
-                                <div class="col-3 text-secondary">SPECS:</div>
-                                <div class="col-9">
-                                    Twin-Generator (24kW) // Hydraulic Leveling // Secure Comms Array
+                                <div class="col-4 col-sm-3 text-secondary">CDL CREW:</div>
+                                <div class="col-8 col-sm-9">Tyler Wright, Evan Wright, Holly O'Connell (Class A CDL + P / Airbrake)</div>
+                            </div>
+                            <div class="row mb-2">
+                                <div class="col-4 col-sm-3 text-secondary">SPECS:</div>
+                                <div class="col-8 col-sm-9">
+                                    Twin-Generator (24kW) // Zero-Threshold 38" Corridor // Mobile Studio Lounge
                                 </div>
                             </div>
                             <hr class="border-secondary">
-                            <div class="row">
-                                <div class="col-12">
+                            <div class="d-flex flex-wrap justify-content-between align-items-center gap-2">
+                                <div>
                                     <span class="stat-ok">[SYSTEM OK]</span> Engine
                                     <span class="stat-ok ms-3">[SYSTEM OK]</span> HVAC
-                                    <span class="stat-ok ms-3">[SYSTEM OK]</span> Hydraulics
+                                    <span class="stat-ok ms-3">[SYSTEM OK]</span> 60" Hydraulic Lift
                                 </div>
+                                <a href="/engine-room/corporate/strategic-assets/the-iron-horse#sainte-claire-45h3" class="btn btn-sm btn-outline-info font-monospace">
+                                    [OPEN FULL DOSSIER]
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tui-window">
+                <div class="tui-header">
+                    <span>UNIT_02: "Progress Street Shuttle" (2004 Prairie Coachworks RLFD30)</span>
+                    <span>STATUS: ACTIVE // LAUNCH CUSTOMER #001</span>
+                </div>
+                <div class="p-3 small">
+                    <div class="row align-items-center">
+                        <div class="col-md-4 text-center border-end border-secondary mb-3 mb-md-0">
+                            <a href="/engine-room/corporate/strategic-assets/the-iron-horse#prairie-coachworks-rlfd30">
+                                <img src="<?php echo $cdnBaseUrl; ?>/stardust-engine/images/fleet/2004-prairie-coachworks-rlfd30.jpg"
+                                     class="img-fluid border border-secondary mb-2"
+                                     alt="2004 Prairie Coachworks RLFD30 30-foot low-floor shuttle coach">
+                            </a>
+                            <br><strong>2004 PRAIRIE COACHWORKS RLFD30</strong>
+                            <br><span class="badge bg-warning text-dark rounded-0 mt-1">LOW-FLOOR SHUTTLE (30 FT)</span>
+                        </div>
+                        <div class="col-md-8 ps-md-4">
+                            <div class="row mb-2">
+                                <div class="col-4 col-sm-3 text-secondary">CHASSIS:</div>
+                                <div class="col-8 col-sm-9">2004 Restyled Low-Floor Diesel 30-Foot (Front-Door-Only Executive Spec)</div>
+                            </div>
+                            <div class="row mb-2">
+                                <div class="col-4 col-sm-3 text-secondary">ADA SYSTEM:</div>
+                                <div class="col-8 col-sm-9 text-warning">Pneumatic Curb-Kneeling Air Suspension + 1:6 Flip-Out Front ADA Ramp</div>
+                            </div>
+                            <div class="row mb-2">
+                                <div class="col-4 col-sm-3 text-secondary">HEADSIGNS:</div>
+                                <div class="col-8 col-sm-9">Luminator Amber LED Matrix (PROGRESS STREET // THE STARDUST ENGINE)</div>
+                            </div>
+                            <div class="row mb-2">
+                                <div class="col-4 col-sm-3 text-secondary">LORE NOTE:</div>
+                                <div class="col-8 col-sm-9">Launch Customer #001 for Prairie Coachworks; featured on the 2004 <em>Progress Street</em> album cover.</div>
+                            </div>
+                            <hr class="border-secondary">
+                            <div class="d-flex flex-wrap justify-content-between align-items-center gap-2">
+                                <div>
+                                    <span class="stat-ok">[SYSTEM OK]</span> Cummins ISL
+                                    <span class="stat-ok ms-3">[SYSTEM OK]</span> Kneeling Airbags
+                                    <span class="stat-ok ms-3">[SYSTEM OK]</span> Front ADA Ramp
+                                </div>
+                                <a href="/engine-room/corporate/strategic-assets/the-iron-horse#prairie-coachworks-rlfd30" class="btn btn-sm btn-outline-warning font-monospace">
+                                    [OPEN FULL DOSSIER]
+                                </a>
                             </div>
                         </div>
                     </div>

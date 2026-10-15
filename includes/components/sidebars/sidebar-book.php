@@ -85,10 +85,10 @@ extract($navData);
                                                                            style="font-size: 0.85rem;">
                                                                             <?php echo $scene['title']; ?>
                                                                         </a>
-                                                                    
+                                                                    </li>
                                                                 <?php endforeach; ?>
-                                                            </div>
-                                                        
+                                                            </ul>
+                                                        </li>
 
                                                     <?php else: ?>
                                                         <?php 
@@ -102,13 +102,13 @@ extract($navData);
                                                                style="font-size: 0.9rem;">
                                                                 <?php echo $part['title']; ?>
                                                             </a>
-                                                        
+                                                        </li>
                                                     <?php endif; ?>
 
                                                 <?php endforeach; ?>
                                             <?php endif; ?>
                                             
-                                        </div>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>

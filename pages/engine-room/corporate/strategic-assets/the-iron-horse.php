@@ -140,7 +140,7 @@ $pageTitle = "The Iron Horse & Fleet Archive - Stardust Strategic Assets, LLC";
 
                 <!-- High-Resolution Vehicle Reference Image -->
                 <div class="bg-black text-center border-bottom border-secondary">
-                    <img src="<?php echo $cdnBaseUrl; ?>/engine-room-records/artists/the-stardust-engine/fleet/2002-sainte-claire-45h3-iron-horse.jpg"
+                    <img src="<?php echo $cdnBaseUrl; ?>/stardust-engine/images/fleet/2002-sainte-claire-45h3-iron-horse.jpg"
                          class="img-fluid w-100 object-fit-cover"
                          style="max-height: 540px;"
                          alt="2002 Sainte-Claire 45H3 'The Iron Horse' 45-foot tri-axle luxury tour bus in Obsidian Midnight with Cosmic Nebula side wrap, Rocket-and-Gear crest, and mid-ship vertical hydraulic wheelchair lift deployed to the pavement.">
@@ -238,7 +238,7 @@ $pageTitle = "The Iron Horse & Fleet Archive - Stardust Strategic Assets, LLC";
 
                 <!-- High-Resolution Vehicle Reference Image -->
                 <div class="bg-black text-center border-bottom border-secondary">
-                    <img src="<?php echo $cdnBaseUrl; ?>/engine-room-records/artists/the-stardust-engine/fleet/2004-prairie-coachworks-rlfd30.jpg"
+                    <img src="<?php echo $cdnBaseUrl; ?>/stardust-engine/images/fleet/2004-prairie-coachworks-rlfd30.jpg"
                          class="img-fluid w-100 object-fit-cover"
                          style="max-height: 540px;"
                          alt="2004 Prairie Coachworks RLFD30 30-foot Restyled Low-Floor shuttle bus parked on Progress Street NW with open front doors, deployed aluminum low-floor ADA wheelchair ramp, Cosmic Nebula side wrap, and glowing amber LED destination signs reading PROGRESS STREET and THE STARDUST ENGINE.">

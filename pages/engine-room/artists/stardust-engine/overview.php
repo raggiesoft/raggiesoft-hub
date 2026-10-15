@@ -189,36 +189,129 @@ if ($eras) {
         </div>
     </div>
 </div>
+<!-- INLINE: Featured Album Spotlight — Progress Street (2004) -->
 <div class="container py-5 border-bottom border-secondary border-opacity-25 position-relative" style="z-index: 1050;">
     <div class="row align-items-center justify-content-center g-5">
         
         <div class="col-md-5 col-lg-4 text-center">
-            <a href="/engine-room/artists/stardust-engine/discography/2007-lost-sounds" class="text-decoration-none">
-                <img src="<?php echo $cdnBaseUrl; ?>/engine-room-records/artists/the-stardust-engine/2007-lost-sounds/album-art.jpg" 
-                     class="img-fluid rounded shadow-lg border border-secondary hover-lift" 
-                     alt="Lost Sounds Album Art - The Stardust Engine"
+            <a href="/engine-room/artists/stardust-engine/discography/2004-progress-street" class="text-decoration-none">
+                <img src="<?php echo $cdnBaseUrl; ?>/engine-room-records/artists/the-stardust-engine/2004-progress-street/album-art.jpg" 
+                     class="img-fluid rounded shadow-lg border border-warning hover-lift" 
+                     alt="Progress Street Album Art - The Stardust Engine standing beside their 2004 Prairie Coachworks RLFD30 bus at dusk"
                      style="transition: transform 0.3s ease;">
             </a>
         </div>
         
         <div class="col-md-7 col-lg-6">
-            <span class="badge bg-primary text-light px-3 py-2 text-uppercase letter-spacing-1 shadow-glow mb-3 border border-primary">
-                <i class="fa-duotone fa-compact-disc me-2 pulse-icon"></i>New Archival Release
+            <span class="badge bg-warning text-dark px-3 py-2 text-uppercase letter-spacing-1 shadow-glow mb-3 border border-warning fw-bold">
+                <i class="fa-duotone fa-compact-disc me-2 pulse-icon"></i>Featured Album Spotlight
             </span>
-            <h2 class="display-5 fw-bold text-uppercase text-body-emphasis mb-3" style="font-family: 'Impact', sans-serif;">
-                Lost Sounds
+            <h2 class="display-5 fw-bold text-uppercase text-body-emphasis mb-2" style="font-family: 'Impact', sans-serif;">
+                Progress Street
             </h2>
+            <p class="text-warning font-monospace small text-uppercase mb-3">
+                <i class="fa-solid fa-location-dot me-1"></i>1985 Origins &bull; 2004 Studio Release &bull; Blacksburg, VA
+            </p>
             <p class="lead text-body-secondary mb-3">
-                Dive into the forbidden vault of the Apex Records era. For decades, these legendary outtakes, raw basement demos, and canceled controversial tracks existed only as bootlegs traded among the diehard "Forger Nation."
+                A roaring eleven-track 1980s AOR and stadium synth-rock homecoming. Named after Progress Street NW in Blacksburg—where Ryan, Cassidy, Holly, Evan, and Tyler lived in an off-campus rental house while attending <strong>Commonwealth Polytechnic Institute (CPI)</strong>—this record celebrates the unbreakable family bond that carried them from a basement upright piano to sold-out arenas.
             </p>
             <p class="text-body mb-4">
-                Now you can finally hear the music they weren't allowed to release—from the infamous banned demo of <em>"The Promise"</em> to the intimate acoustic sketch of their mega-hit <em>"Neon Hearts"</em> before the studio drowned it in synth-pop gloss.
+                Featuring the Fourth Quarter stadium stomper <em>"Saturday Night Lights: The Crucible"</em> (cleared under Holly's legendary 1986 <strong>$1.00 Perpetual Mutual Cross-License</strong> with CPI), the full-band AOR resurrection of <em>"Empty Arenas,"</em> and their heartfelt pre-hiatus promise to Forger Nation, <em>"Last Bus Home: Lights Out on Progress Street."</em>
             </p>
-            <a href="/engine-room/artists/stardust-engine/discography/2007-lost-sounds" class="btn btn-primary btn-lg rounded-pill px-5 fw-bold shadow-glow hover-lift">
-                <i class="fa-solid fa-play me-2"></i>Explore the Album
-            </a>
+            <div class="d-flex flex-wrap gap-3">
+                <a href="/engine-room/artists/stardust-engine/discography/2004-progress-street" class="btn btn-warning btn-lg rounded-pill px-4 fw-bold text-dark shadow-glow hover-lift">
+                    <i class="fa-solid fa-play me-2"></i>Explore Progress Street
+                </a>
+                <a href="https://music.raggiesoft.com/the-stardust-engine/progress-street-2004" target="_blank" rel="noopener" class="btn btn-outline-info btn-lg rounded-pill px-4 fw-bold hover-lift">
+                    <i class="fa-duotone fa-headphones me-2"></i>Stream &amp; Read Lyrics
+                </a>
+            </div>
         </div>
         
+    </div>
+</div>
+
+<!-- INLINE: The Stardust Fleet Section — Showcasing both custom accessible coaches and linking to the Fleet Roster -->
+<div class="container py-5 border-bottom border-secondary border-opacity-25 position-relative" style="z-index: 1050;">
+    <div class="text-center mb-5">
+        <span class="badge bg-info-subtle text-info-emphasis border border-info-subtle px-3 py-2 rounded-pill text-uppercase letter-spacing-1 mb-2">
+            <i class="fa-duotone fa-bus me-2"></i>Driven Exclusively by Family &bull; Class A CDL Certified
+        </span>
+        <h2 class="display-5 fw-bold text-uppercase text-body-emphasis mb-2" style="font-family: 'Impact', sans-serif;">
+            The Stardust Fleet: Rolling Sanctuary
+        </h2>
+        <p class="lead text-body-secondary mx-auto" style="max-width: 820px;">
+            For The Stardust Engine, accessibility and privacy are non-negotiable. Rather than leasing third-party tour buses or hiring outside drivers, <strong>Tyler Wright, Evan Wright, and Holly O'Connell</strong> all earned their <strong>Class A Commercial Driver's Licenses</strong> (with Passenger and Airbrake endorsements)—and the band commissioned two custom-engineered coaches built around Ryan's wheelchair.
+        </p>
+    </div>
+
+    <div class="row g-4 align-items-stretch">
+        <!-- Coach 1: 2002 Sainte-Claire 45H3 ("The Iron Horse") -->
+        <div class="col-lg-6 d-flex">
+            <div class="card bg-body-tertiary border-info border-opacity-50 shadow-sm w-100 overflow-hidden hover-lift d-flex flex-column">
+                <div class="position-relative">
+                    <a href="/engine-room/corporate/strategic-assets/the-iron-horse">
+                        <img src="<?php echo $cdnBaseUrl; ?>/stardust-engine/images/fleet/2002-sainte-claire-45h3-iron-horse.jpg" 
+                             class="img-fluid w-100 object-fit-cover border-bottom border-info border-opacity-25" 
+                             style="max-height: 280px;"
+                             alt="2002 Sainte-Claire 45H3 The Iron Horse 45-foot high-deck luxury tour bus with mid-ship hydraulic wheelchair lift deployed">
+                    </a>
+                    <span class="badge bg-dark bg-opacity-75 text-info border border-info position-absolute top-0 end-0 m-3 px-3 py-2 font-monospace">
+                        45-FT INTERSTATE FLAGSHIP
+                    </span>
+                </div>
+                <div class="card-body p-4 d-flex flex-column flex-grow-1">
+                    <div class="small text-info font-monospace text-uppercase mb-1">2002 Custom High-Deck Motorcoach &bull; Sainte-Claire, QC</div>
+                    <h3 class="h4 fw-bold text-body-emphasis mb-2">Sainte-Claire 45H3 (<em>"The Iron Horse"</em>)</h3>
+                    <p class="text-body-secondary small mb-3">
+                        Forged in Québec stainless steel with a bespoke Cosmic Nebula exterior wrap, <strong>The Iron Horse</strong> is the family's 54,000-lb coast-to-coast touring fortress. Engineered with a mid-ship <strong>60-inch vertical hydraulic cassette lift</strong>, zero-threshold 38-inch interior corridors, five private family berths, and an onboard acoustic isolation lounge.
+                    </p>
+                    <div class="mt-auto pt-2 d-flex flex-wrap gap-2">
+                        <a href="/engine-room/corporate/strategic-assets/the-iron-horse" class="btn btn-info btn-sm fw-bold text-uppercase text-dark">
+                            <i class="fa-solid fa-bus me-1"></i>View Fleet Roster &amp; Specs
+                        </a>
+                        <a href="/engine-room/assets/iron-horse/negotiation" class="btn btn-outline-secondary btn-sm text-uppercase">
+                            <i class="fa-solid fa-handshake me-1"></i>2001 Québec Deal
+                        </a>
+                        <a href="/engine-room/assets/iron-horse/delivery" class="btn btn-outline-secondary btn-sm text-uppercase">
+                            <i class="fa-solid fa-truck-ramp-box me-1"></i>2002 Delivery
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Coach 2: 2004 Prairie Coachworks RLFD30 ("Progress Street Shuttle") -->
+        <div class="col-lg-6 d-flex">
+            <div class="card bg-body-tertiary border-warning border-opacity-50 shadow-sm w-100 overflow-hidden hover-lift d-flex flex-column">
+                <div class="position-relative">
+                    <a href="/engine-room/corporate/strategic-assets/the-iron-horse">
+                        <img src="<?php echo $cdnBaseUrl; ?>/stardust-engine/images/fleet/2004-prairie-coachworks-rlfd30.jpg" 
+                             class="img-fluid w-100 object-fit-cover border-bottom border-warning border-opacity-25" 
+                             style="max-height: 280px;"
+                             alt="2004 Prairie Coachworks RLFD30 30-foot restyled low-floor shuttle bus with kneeling front ADA ramp and PROGRESS STREET amber LED sign">
+                    </a>
+                    <span class="badge bg-dark bg-opacity-75 text-warning border border-warning position-absolute top-0 end-0 m-3 px-3 py-2 font-monospace">
+                        30-FT LOW-FLOOR LAUNCH UNIT
+                    </span>
+                </div>
+                <div class="card-body p-4 d-flex flex-column flex-grow-1">
+                    <div class="small text-warning font-monospace text-uppercase mb-1">2004 Restyled Low-Floor Diesel &bull; Launch Customer</div>
+                    <h3 class="h4 fw-bold text-body-emphasis mb-2">Prairie Coachworks RLFD30 (<em>"Progress Street"</em>)</h3>
+                    <p class="text-body-secondary small mb-3">
+                        Immortalized on the cover of <em>Progress Street</em>, The Stardust Engine became <strong>Prairie Coachworks' very first launch customer</strong> for the restyled 30-foot low-floor coach. Built with a front-door-only executive layout and pneumatic kneeling suspension, it unfolds a simple <strong>1:6 front flip-out ADA ramp</strong> right onto the Blacksburg curb so Ryan can roll aboard in seconds.
+                    </p>
+                    <div class="mt-auto pt-2 d-flex flex-wrap gap-2">
+                        <a href="/engine-room/corporate/strategic-assets/the-iron-horse" class="btn btn-warning btn-sm fw-bold text-uppercase text-dark">
+                            <i class="fa-solid fa-bus me-1"></i>Explore the Fleet Archive
+                        </a>
+                        <a href="/engine-room/artists/stardust-engine/discography/2004-progress-street" class="btn btn-outline-secondary btn-sm text-uppercase">
+                            <i class="fa-solid fa-compact-disc me-1"></i>Progress Street Lore
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 

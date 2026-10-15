@@ -65,16 +65,16 @@
 </div>
 
 <!-- [UI COMPONENT] System Status HUD: Simulates a live infrastructure readout -->
-<div class="card border-info bg-light mb-4">
+<div class="card border-info bg-body-tertiary mb-4">
     <div class="card-body">
         <h6 class="card-title text-info fw-bold text-uppercase">
             <i slot="start" class="fa-duotone fa-signal-stream"></i> System Status
         </h6>
         <ul class="list-unstyled small mb-0 font-monospace">
-            <li class="mb-1 text-success"><i slot="start" class="fa-solid fa-check me-2"></i> TRUST_DB: ONLINE
-            <li class="mb-1 text-success"><i class="fa-solid fa-check me-2"></i>FLEET_GPS: ACTIVE
-            <li class="mb-0 text-success"><i class="fa-solid fa-check me-2"></i>AETHEL_BOT: IDLE
-        </div>
+            <li class="mb-1 text-success"><i slot="start" class="fa-solid fa-check me-2"></i> TRUST_DB: ONLINE</li>
+            <li class="mb-1 text-success"><i class="fa-solid fa-check me-2"></i>FLEET_GPS: ACTIVE</li>
+            <li class="mb-0 text-success"><i class="fa-solid fa-check me-2"></i>AETHEL_BOT: IDLE</li>
+        </ul>
         <a href="/engine-room/corporate/systems" class="btn btn-outline-info btn-sm w-100 mt-3">Access Console</a>
     </div>
 </div>
