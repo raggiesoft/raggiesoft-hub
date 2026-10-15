@@ -138,7 +138,7 @@ $nav = [
                                 </div>
                                 <h3 class="h6 fw-bold mb-1">Roanoke Express &amp; ARTS Thruway</h3>
                                 <p class="small text-body-secondary mb-0">
-                                    Links Roanoke's <strong>Third Street Station</strong> (Mon–Sat) to <strong>Falling Branch</strong>, <strong>New River Mall (Christiansburg Mall)</strong>, and <strong>CPI</strong>—offset 30 minutes from Bluewater's <em>Maroon Express</em> for <strong>30-minute combined express headways</strong>. On <strong>Oct 31, 2017</strong>, RVT launched the 7-day <strong>ARTS Train Connector</strong> meeting <strong>ARTS <em>Coastal Service / The Patriot</em></strong> (Northeast Regional) trains in Roanoke with guaranteed delayed-train holds.
+                                    Links Roanoke's <strong>Third Street Station</strong> (Mon–Sat) to <strong>Falling Branch</strong>, <strong>New River Mall (Christiansburg Mall)</strong>, and <strong>CPI</strong>—offset 30 minutes from Bluewater's <em>Maroon Express</em> for <strong>30-minute combined express headways</strong>. On <strong>Oct 31, 2017</strong>, RVT launched the 7-day <strong>ARTS Train Connector</strong> meeting <strong>ARTS <em>The Patriot</em></strong> trains in Roanoke with guaranteed delayed-train holds.
                                 </p>
                             </div>
                         </div>
@@ -196,7 +196,7 @@ $nav = [
                                     <span class="badge bg-primary font-monospace mb-1">ERA 2 // 2016 &amp; OCT 31, 2017</span>
                                     <h4 class="h6 fw-bold mb-1">CPI Transit Center &amp; ARTS Roanoke Rail Extension</h4>
                                     <p class="mb-0 text-body-secondary">
-                                        In <strong>2016</strong>, the off-street multi-bay <strong>CPI Transit Center</strong> opened (`1 CPI TRANS CTR`), ending the Commonwealth Mall curbside bottleneck. On <strong>October 31, 2017</strong>, <strong>ARTS</strong> (<em>American Rail Transit Service</em>) extended its <strong><em>Coastal Service / The Patriot</em></strong> (Northeast Regional) train to Roanoke's <strong>Third Street Station</strong>, launching RVT's 7-day <em>Train Connector</em> Thruway service.
+                                        In <strong>2016</strong>, the off-street multi-bay <strong>CPI Transit Center</strong> opened (`1 CPI TRANS CTR`), ending the Commonwealth Mall curbside bottleneck. On <strong>October 31, 2017</strong>, <strong>ARTS</strong> (<em>American Rail Transit Service</em>) extended its <strong><em>The Patriot</em></strong> train to Roanoke's <strong>Third Street Station</strong>, launching RVT's 7-day <em>Train Connector</em> Thruway service.
                                     </p>
                                 </div>
                             </div>
