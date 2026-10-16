@@ -41,3 +41,4 @@ if (!headers_sent()) {
     // Perform immediate client-side location replacement if headers were already flushed
     window.location.replace(<?php echo json_encode($redirectTarget, JSON_UNESCAPED_SLASHES); ?>);
 </script>
+
