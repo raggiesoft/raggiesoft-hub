@@ -44,7 +44,7 @@ $currentUri = $_SERVER['REQUEST_URI'];
       Checks if the current URI contains the specific path fragment (e.g., '/michael-ragsdale').
       If true, applies the Bootstrap 'active' class to highlight the link.
     -->
-    <a href="/about/michael-ragsdale" class="nav-link d-flex align-items-center <?php echo (str_contains($currentUri, '/michael-ragsdale')) ? 'active' : 'link-body-emphasis'; ?>">
+    <a href="https://michaelpragsdale.com" class="nav-link d-flex align-items-center <?php echo (str_contains($currentUri, '/michael-ragsdale')) ? 'active' : 'link-body-emphasis'; ?>">
         <i slot="start" class="fa-duotone fa-user-visor"></i> The Architect
     </a>
 

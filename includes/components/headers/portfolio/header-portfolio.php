@@ -27,13 +27,13 @@ $isHub = ($request_uri === '/about/michael-ragsdale');
 <div class="d-flex flex-wrap align-items-center gap-2 ms-auto" style="letter-spacing: 0.5px;">
   
   
-    <wa-button appearance="plain" href="/about/michael-ragsdale" class="<?php echo $isHub ? 'active' : ''; ?>">
+    <wa-button appearance="plain" href="https://michaelpragsdale.com" class="<?php echo $isHub ? 'active' : ''; ?>">
         <i slot="start" class="fa-duotone fa-house-user me-2"></i>Dashboard
     </wa-button>
   
 
   
-    <wa-button appearance="plain" href="/about/michael-ragsdale#hiring-logistics">
+    <wa-button appearance="plain" href="https://michaelpragsdale.com/#logistics">
         <i slot="start" class="fa-duotone fa-clipboard-check me-2"></i>Hiring Logistics
     </wa-button>
   

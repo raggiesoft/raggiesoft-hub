@@ -5,7 +5,7 @@
     "sidebar": "portfolio/sidebar-portfolio",
     "showSidebar": true,
     "navbarBrandText": "Michael P. Ragsdale",
-    "navbarBrandLink": "/about/michael-ragsdale",
+    "navbarBrandLink": "https://michaelpragsdale.com",
     "navbarBrandLogo": "/raggiesoft-corporate/images/mragsdale-aero/mragsdale-frutiger-aero.jpg",
     "navbarBrandLogoDark": "/raggiesoft-corporate/images/mragsdale-aero/mragsdale-dark-aero.jpg",
     "navbarBrandAlt": "Michael P. Ragsdale Logo",
@@ -16,9 +16,18 @@
     "site": "raggiesoft-corporate"
   },
   "/about/michael-ragsdale": {
-    "view": "pages/about/michael-ragsdale/overview",
-    "title": "Michael P. Ragsdale | Digital Architect",
-    "ogTitle": "Michael P. Ragsdale - Digital Architect",
-    "showSidebar": false
+    "redirect": "https://michaelpragsdale.com/"
+  },
+  "/about/michael-ragsdale/overview": {
+    "redirect": "https://michaelpragsdale.com/"
+  },
+  "/about/michael-ragsdale/overview.php": {
+    "redirect": "https://michaelpragsdale.com/"
+  },
+  "/about/michael-ragsdale/resume": {
+    "redirect": "https://michaelpragsdale.com/#career"
+  },
+  "/about/michael-ragsdale/contact": {
+    "redirect": "https://michaelpragsdale.com/#logistics"
   }
 }

@@ -92,7 +92,7 @@ $pageTitle = "Open Source Projects | RaggieSoft Media";
         </div>
 
         <div class="col-lg-6">
-            <a href="/about/michael-ragsdale" class="card bg-hud-green border-0 shadow-sm h-100 text-decoration-none hover-lift">
+            <a href="https://michaelpragsdale.com" class="card bg-hud-green border-0 shadow-sm h-100 text-decoration-none hover-lift">
                 <div class="card-body p-4 p-md-5">
                     <div class="d-flex align-items-center mb-3">
                         <i class="fa-duotone fa-user-tie fa-3x text-success me-4" aria-hidden="true" style="filter: drop-shadow(0 2px 4px rgba(56, 229, 77, 0.4));"></i>

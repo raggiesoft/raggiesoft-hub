@@ -216,7 +216,7 @@ $imagesJson = htmlspecialchars(json_encode($heroImages), ENT_QUOTES, 'UTF-8');
                             Recruiters looking for a <strong>Systems Architect</strong> or <strong>Full-Stack Developer</strong>.
                         </p>
                         <div class="d-grid mt-auto">
-                            <a href="/about/michael-ragsdale/contact" class="btn btn-danger btn-lg rounded-pill fw-bold shadow-glow force-text-light mb-3">
+                            <a href="https://michaelpragsdale.com/#logistics" class="btn btn-danger btn-lg rounded-pill fw-bold shadow-glow force-text-light mb-3">
                                 <i class="fa-duotone fa-id-card-clip me-2"></i>Access Hiring Hub
                             </a>
                             <a href="/raggiesoft-media/careers" class="btn btn-outline-danger btn-sm rounded-pill fw-bold force-text-light">

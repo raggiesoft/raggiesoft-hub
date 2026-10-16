@@ -193,7 +193,7 @@ $pageTitle = "RaggieSoft&trade; | The Central Hub";
                 Systems architecture, open-source development, and the professional portfolio of Michael P. Ragsdale.
             </p>
             <div class="d-flex flex-wrap gap-3 justify-content-center mt-auto">
-                <a href="/about/michael-ragsdale" class="btn btn-primary btn-lg rounded-0 fw-bold px-4 shadow-sm text-uppercase">
+                <a href="https://michaelpragsdale.com" class="btn btn-primary btn-lg rounded-0 fw-bold px-4 shadow-sm text-uppercase">
                     <i class="fa-duotone fa-user-visor me-2"></i> View Portfolio
                 </a>
                 <a href="/raggiesoft-media" class="btn btn-outline-light btn-lg rounded-0 fw-bold px-4 shadow-sm text-uppercase">
@@ -260,7 +260,7 @@ $pageTitle = "RaggieSoft&trade; | The Central Hub";
             'title' => 'Michael P. Ragsdale',
             'description' => 'Digital Portfolio & Resume. Full Stack Development and Systems Architecture.',
             'buttonProps' => [
-              'href' => '/about/michael-ragsdale',
+              'href' => 'https://michaelpragsdale.com',
               'text' => 'View Portfolio',
               'variant' => 'primary', 
               'icon' => 'fa-duotone fa-briefcase',

@@ -48,7 +48,7 @@ $customPageAssets = [
             </h1>
             <p class="lead text-info mb-0">Project: The Stardust Engine</p>
         </div>
-        <a href="/about/michael-ragsdale" class="btn btn-outline-secondary btn-sm rounded-pill">
+        <a href="https://michaelpragsdale.com" class="btn btn-outline-secondary btn-sm rounded-pill">
             <i class="fa-solid fa-arrow-left me-2"></i>Back to Portfolio Hub
         </a>
     </div>
@@ -88,7 +88,7 @@ $customPageAssets = [
                     <p>
                         It serves as a portfolio piece demonstrating how AI can be used not just to generate assets, but to build cohesive, emotionally resonant worlds.
                     </p>
-                    <a href="/about/michael-ragsdale/contact" class="btn btn-sm btn-outline-info mt-2">
+                    <a href="https://michaelpragsdale.com/#logistics" class="btn btn-sm btn-outline-info mt-2">
                         <i class="fa-duotone fa-id-card me-2"></i>Contact the Director
                     </a>
                 </div>

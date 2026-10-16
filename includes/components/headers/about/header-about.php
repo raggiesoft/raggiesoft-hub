@@ -61,7 +61,7 @@ $isProfiles   = (!$isGovernance && $uri !== '/about'); // If not governance and 
     </wa-button>
     <wa-menu>
       <div class="px-3 py-2 small text-uppercase  fw-bold text-uppercase">The Core</div>
-      <wa-dropdown-item value="/about/michael-ragsdale"><i class="fa-duotone fa-user-visor me-2"></i>The Architect (Portfolio)</wa-dropdown-item>
+      <wa-dropdown-item value="https://michaelpragsdale.com"><i class="fa-duotone fa-user-visor me-2"></i>The Architect (Portfolio)</wa-dropdown-item>
       <wa-dropdown-item value="/about/family"><i class="fa-duotone fa-people-group me-2"></i>The Family (DevOps)</wa-dropdown-item>
       
       <wa-divider></wa-divider>

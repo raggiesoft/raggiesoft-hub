@@ -44,8 +44,8 @@ $isOverview = ($request_uri === '/case-studies');
         <i slot="end" class="fa-solid fa-circle-caret-down ms-2 opacity-50" aria-hidden="true"></i>
     </wa-button>
     <wa-menu>
-      <wa-dropdown-item value="/about/michael-ragsdale"><i class="fa-duotone fa-id-card me-2"></i>Overview</wa-dropdown-item>
-      <wa-dropdown-item value="/about/michael-ragsdale/resume"><i class="fa-duotone fa-file-user me-2"></i>Resume / CV</wa-dropdown-item>
+      <wa-dropdown-item value="https://michaelpragsdale.com"><i class="fa-duotone fa-id-card me-2"></i>Overview</wa-dropdown-item>
+      <wa-dropdown-item value="https://michaelpragsdale.com/#career"><i class="fa-duotone fa-file-user me-2"></i>Resume / CV</wa-dropdown-item>
       <wa-divider></wa-divider>
       <wa-dropdown-item value="/contact"><i class="fa-duotone fa-envelope-open me-2"></i>Contact</wa-dropdown-item>
     </wa-menu>

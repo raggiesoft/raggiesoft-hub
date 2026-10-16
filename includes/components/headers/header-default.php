@@ -49,7 +49,7 @@ $isContact = ($request_uri === '/contact');
         <i slot="end" class="fa-solid fa-circle-caret-down ms-2 opacity-50" aria-hidden="true"></i>
     </wa-button>
     <wa-menu>
-    <wa-dropdown-item value="/about/michael-ragsdale">
+    <wa-dropdown-item value="https://michaelpragsdale.com">
       <i slot="start" class="fa-duotone fa-user-gear"></i> Skills & Profile
     </wa-dropdown-item>
     <wa-divider></wa-divider>

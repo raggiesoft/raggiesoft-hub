@@ -70,7 +70,7 @@ $pageTitle = "RaggieSoft Media | IP & Asset Management";
             <a href="/raggiesoft-media/projects" class="btn btn-glass rounded-pill fw-bold text-uppercase px-4 me-md-3 mb-3 mb-md-0 shadow-sm">
                 Open Source Projects <i class="fa-solid fa-code ms-2" aria-hidden="true"></i>
             </a>
-            <a href="/about/michael-ragsdale" class="btn btn-glass rounded-pill fw-bold text-uppercase px-4 shadow-sm border-opacity-50">
+            <a href="https://michaelpragsdale.com" class="btn btn-glass rounded-pill fw-bold text-uppercase px-4 shadow-sm border-opacity-50">
                 Architect Portfolio <i class="fa-solid fa-user-tie ms-2" aria-hidden="true"></i>
             </a>
         </div>
@@ -161,7 +161,7 @@ $pageTitle = "RaggieSoft Media | IP & Asset Management";
                             <p class="text-secondary mb-0">Review qualifications, logistics, and schedule a screening interview.</p>
                         </div>
                     </div>
-                    <a href="/about/michael-ragsdale" class="btn btn-primary rounded-pill px-4 py-3 fw-bold shadow-sm text-uppercase text-nowrap">
+                    <a href="https://michaelpragsdale.com" class="btn btn-primary rounded-pill px-4 py-3 fw-bold shadow-sm text-uppercase text-nowrap">
                         View Professional Portfolio <i class="fa-solid fa-arrow-right ms-2"></i>
                     </a>
                 </div>

@@ -64,7 +64,7 @@ $isPortfolio = (str_starts_with($request_uri, '/about/michael-ragsdale'));
     </wa-menu>
   </wa-dropdown>
 
-  <wa-button href="/about/michael-ragsdale" pill
+  <wa-button href="https://michaelpragsdale.com" pill
     variant="<?php echo $isPortfolio ? 'success' : 'neutral'; ?>" 
     appearance="<?php echo $isPortfolio ? 'filled-outlined' : 'plain'; ?>"
     class="me-3">

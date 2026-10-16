@@ -16,7 +16,7 @@
  */
 // includes/components/sidebars/portfolio/sidebar-portfolio.php
 // The main navigation sidebar for the professional portfolio.
-$root = '/about/michael-ragsdale';
+$root = 'https://michaelpragsdale.com';
 ?>
 
 <!-- [LAYOUT] Professional Identity Block: Contains headshot and primary title -->
