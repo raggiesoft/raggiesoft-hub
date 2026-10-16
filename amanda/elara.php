@@ -233,6 +233,14 @@ if (isset($pageConfig['view'])) {
 // --- 4. RENDER ---
 $config = array_merge($defaults, $pageConfig);
 
+// Intercept routes configured with a canonical external/cross-subdomain 301 redirect
+// (e.g., streamable discography routes consolidated into https://music.raggiesoft.com)
+if (!empty($config['redirect'])) {
+    header('Location: ' . $config['redirect'], true, 301);
+    ob_end_flush();
+    exit;
+}
+
 // Apply Global Site/Theme Overrides from settings-dialog.php
 if (!empty($_COOKIE['elara_site_override'])) {
     $config['site'] = htmlspecialchars($_COOKIE['elara_site_override']);

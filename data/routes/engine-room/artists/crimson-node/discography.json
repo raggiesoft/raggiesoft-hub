@@ -7,6 +7,7 @@
         "footer": "engine-room/artists/crimson-node/footer-crimson",
         "showSidebar": false,
         "navbarBrandLogo": "/engine-room-records/artists/crimson-node/2002-crimson-node/album-art.jpg",
+        "navbarBrandAlt": "Crimson Node Official Emblem",
         "navbarBrandText": "Crimson Node",
         "navbarBrandLink": "/engine-room/artists/crimson-node",
         "ogImage": "/engine-room-records/artists/crimson-node/2002-crimson-node/album-art.jpg"
@@ -18,14 +19,8 @@
         "showSidebar": false
     },
     "/engine-room/artists/crimson-node/discography/2002-crimson-node": {
-        "view": "pages/engine-room/artists/crimson-node/discography/2002-crimson-node",
-        "title": "Crimson Node (2002) | Crimson Node",
-        "ogTitle": "Crimson Node - The 2002 Debut Album",
-        "ogImage": "/engine-room-records/artists/crimson-node/2002-crimson-node/album-art.jpg",
-        "schemaType": "MusicAlbum",
-        "albumFilter": "Crimson Node",
-        "narrativeReleaseDate": "2000",
-        "realReleaseDate": "2026-09-07",
-        "showSidebar": false
+        "view": "pages/engine-room/discography-redirect-template",
+        "redirect": "https://music.raggiesoft.com/crimson-node/2002-crimson-node",
+        "title": "Crimson Node (2002) | Crimson Node"
     }
 }

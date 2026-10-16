@@ -10,6 +10,7 @@
         "footer": "engine-room/artists/stardust-engine/footer-stardust",
         "showSidebar": false,
         "navbarBrandLogo": "/engine-room-records/artists/the-stardust-engine/band-logo.png",
+        "navbarBrandAlt": "The Stardust Engine Official Crest",
         "navbarBrandText": "<span class=\"navbar-brand-text\"><span class=\"d-none d-md-inline\">The </span>Stardust Engine</span>",
         "navbarBrandLink": "/engine-room/artists/stardust-engine",
         "ogImage": "/engine-room-records/artists/the-stardust-engine/social-preview.jpg"
@@ -22,36 +23,19 @@
         "showSidebar": false
     },
     "/engine-room/artists/stardust-engine/discography/1987-electric-color": {
-        "view": "pages/engine-room/artists/stardust-engine/discography/1987-electric-color",
-        "title": "Electric Color (1987) | The Stardust Engine",
-        "ogTitle": "Electric Color - The 1987 Debut Album",
-        "ogImage": "/engine-room-records/artists/the-stardust-engine/1987-electric-color/social-preview.jpg",
-        "schemaType": "MusicAlbum",
-        "albumFilter": "Electric Color",
-        "upc": "825628586596",
-        "narrativeReleaseDate": "1987",
-        "realReleaseDate": "2026-03-29"
+        "view": "pages/engine-room/discography-redirect-template",
+        "redirect": "https://music.raggiesoft.com/the-stardust-engine/1987-electric-color",
+        "title": "Electric Color (1987) | The Stardust Engine"
     },
     "/engine-room/artists/stardust-engine/discography/1989-neon-hearts": {
-        "view": "pages/engine-room/artists/stardust-engine/discography/1989-neon-hearts",
-        "title": "Neon Hearts (1989) | The Stardust Engine",
-        "ogTitle": "Neon Hearts - The 1989 Album",
-        "ogImage": "/engine-room-records/artists/the-stardust-engine/1989-neon-hearts/social-preview.jpg",
-        "schemaType": "MusicAlbum",
-        "albumFilter": "Neon Hearts",
-        "upc": "825626667310",
-        "narrativeReleaseDate": "1989",
-        "realReleaseDate": "2026-03-31"
+        "view": "pages/engine-room/discography-redirect-template",
+        "redirect": "https://music.raggiesoft.com/the-stardust-engine/1989-neon-hearts",
+        "title": "Neon Hearts (1989) | The Stardust Engine"
     },
     "/engine-room/artists/stardust-engine/discography/1990-live-in-chicago": {
-        "view": "pages/engine-room/artists/stardust-engine/discography/1990-live-in-chicago",
-        "title": "Live in Chicago (1990) | The Stardust Engine",
-        "ogTitle": "Live in Chicago - 1990 Tour EP",
-        "ogImage": "/engine-room-records/artists/the-stardust-engine/1990-live-in-chicago/social-preview.jpg",
-        "schemaType": "MusicAlbum",
-        "albumFilter": "The Stardust Engine: Live in Chicago",
-        "narrativeReleaseDate": "1990",
-        "realReleaseDate": "2026-04-01"
+        "view": "pages/engine-room/discography-redirect-template",
+        "redirect": "https://music.raggiesoft.com/the-stardust-engine/1990-live-in-chicago",
+        "title": "Live in Chicago (1990) | The Stardust Engine"
     },
     "/engine-room/artists/stardust-engine/discography/1992-friction": {
         "view": "pages/engine-room/artists/stardust-engine/discography/1992-friction",
@@ -59,114 +43,73 @@
         "ogTitle": "CASE 94-CIV-404: Seized Assets - Friction"
     },
     "/engine-room/artists/stardust-engine/discography/1995-the-warehouse-tapes": {
-        "view": "pages/engine-room/artists/stardust-engine/discography/1995-the-warehouse-tapes",
-        "title": "The Warehouse Tapes (1995) | The Stardust Engine",
-        "ogTitle": "The Warehouse Tapes - 1995 EP",
-        "ogImage": "/engine-room-records/artists/the-stardust-engine/1995-the-warehouse-tapes/social-preview.jpg",
-        "schemaType": "MusicAlbum",
-        "albumFilter": "The Warehouse Tapes",
-        "upc": "825626429581",
-        "narrativeReleaseDate": "1995",
-        "realReleaseDate": "2026-04-02"
+        "view": "pages/engine-room/discography-redirect-template",
+        "redirect": "https://music.raggiesoft.com/the-stardust-engine/1995-the-warehouse-tapes",
+        "title": "The Warehouse Tapes (1995) | The Stardust Engine"
+    },
+    "/engine-room/artists/stardust-engine/discography/1995-the-warehouse-tapes/ad-astra": {
+        "view": "pages/engine-room/discography-redirect-template",
+        "redirect": "https://music.raggiesoft.com/the-stardust-engine/1996-ad-astra-single",
+        "title": "Escape Velocity (Ad Astra) | The Stardust Engine"
     },
     "/engine-room/artists/stardust-engine/discography/1996-escape-velocity-ad-astra": {
-        "view": "pages/engine-room/artists/stardust-engine/discography/1996-escape-velocity-ad-astra",
-        "title": "Escape Velocity (Ad Astra) | Deep Dive",
-        "ogTitle": "Ad Astra - The Progressive Rock Epic",
-        "ogImage": "/engine-room-records/artists/the-stardust-engine/1996-ad-astra-single/social-preview.jpg",
-        "schemaType": "MusicAlbum",
-        "albumFilter": "Escape Velocity (Ad Astra)",
-        "upc": "825486804399",
-        "narrativeReleaseDate": "1996",
-        "realReleaseDate": "2026-04-03"
+        "view": "pages/engine-room/discography-redirect-template",
+        "redirect": "https://music.raggiesoft.com/the-stardust-engine/1996-ad-astra-single",
+        "title": "Escape Velocity (Ad Astra) | The Stardust Engine"
     },
     "/engine-room/artists/stardust-engine/discography/1997-hard-reset": {
-        "view": "pages/engine-room/artists/stardust-engine/discography/1997-hard-reset",
-        "title": "Hard Reset (1997) | The Stardust Engine",
-        "ogTitle": "Hard Reset - The 1997 Album",
-        "ogImage": "/engine-room-records/artists/the-stardust-engine/1997-hard-reset/social-preview.jpg",
-        "schemaType": "MusicAlbum",
-        "albumFilter": "Hard Reset",
-        "upc": "825486792528",
-        "narrativeReleaseDate": "1997-11-18",
-        "realReleaseDate": "2026-04-05"
+        "view": "pages/engine-room/discography-redirect-template",
+        "redirect": "https://music.raggiesoft.com/the-stardust-engine/1997-hard-reset",
+        "title": "Hard Reset (1997) | The Stardust Engine"
     },
     "/engine-room/artists/stardust-engine/discography/1997-forger-nation-war-chest": {
-        "view": "pages/engine-room/artists/stardust-engine/discography/1997-forger-nation-war-chest",
-        "title": "Forger Nation War Chest (1997) | The Stardust Engine",
-        "ogTitle": "Forger Nation War Chest - The 1997 Album",
-        "ogImage": "/engine-room-records/artists/the-stardust-engine/1997-forger-nation-war-chest/social-preview.jpg",
-        "schemaType": "MusicAlbum",
-        "albumFilter": "Forger Nation War Chest",
-        "upc": "825417256518",
-        "narrativeReleaseDate": "1997",
-        "realReleaseDate": "2026-06-03"
+        "view": "pages/engine-room/discography-redirect-template",
+        "redirect": "https://music.raggiesoft.com/the-stardust-engine/1997-forger-nation-war-chest",
+        "title": "Forger Nation War Chest (1997) | The Stardust Engine"
+    },
+    "/engine-room/artists/stardust-engine/discography/1999-hard-reset-tour": {
+        "view": "pages/engine-room/discography-redirect-template",
+        "redirect": "https://music.raggiesoft.com/the-stardust-engine/1999-hard-reset-tour",
+        "title": "Live: The Hard Reset Tour (1999) | The Stardust Engine"
     },
     "/engine-room/artists/stardust-engine/discography/2001-midnight-drivers": {
-        "view": "pages/engine-room/artists/stardust-engine/discography/2001-midnight-drivers",
-        "title": "Midnight Drivers (2001) | The Stardust Engine",
-        "ogTitle": "Midnight Drivers - The 2001 Album",
-        "ogImage": "/engine-room-records/artists/the-stardust-engine/2001-midnight-drivers/social-preview.jpg",
-        "schemaType": "MusicAlbum",
-        "albumFilter": "Midnight Drivers",
-        "upc": "825324114857",
-        "narrativeReleaseDate": "2001",
-        "realReleaseDate": "2026-05-01"
+        "view": "pages/engine-room/discography-redirect-template",
+        "redirect": "https://music.raggiesoft.com/the-stardust-engine/2001-midnight-drivers",
+        "title": "Midnight Drivers (2001) | The Stardust Engine"
     },
     "/engine-room/artists/stardust-engine/discography/2003-moon-1-sanctuary-zero-g": {
-        "view": "pages/engine-room/artists/stardust-engine/discography/2003-moon-1-sanctuary-zero-g",
-        "title": "Moon 1: Sanctuary Zero G (2003) | The Stardust Engine",
-        "ogTitle": "Moon 1: Sanctuary Zero G - The 2003 Album",
-        "ogImage": "/engine-room-records/artists/the-stardust-engine/2003-sanctuary-zero-g/social-preview.jpg",
-        "schemaType": "MusicAlbum",
-        "albumFilter": "Moon 1: Sanctuary Zero G",
-        "narrativeReleaseDate": "2003",
-        "realReleaseDate": "2026-06-03"
+        "view": "pages/engine-room/discography-redirect-template",
+        "redirect": "https://music.raggiesoft.com/the-stardust-engine/2003-sanctuary-zero-g",
+        "title": "Moon 1: Sanctuary Zero G (2003) | The Stardust Engine"
     },
     "/engine-room/artists/stardust-engine/discography/2003-moon-2-mile-marker-98": {
-        "view": "pages/engine-room/artists/stardust-engine/discography/2003-moon-2-mile-marker-98",
-        "title": "Moon 2: Mile Marker 98 (2003) | The Stardust Engine",
-        "ogTitle": "Moon 2: Mile Marker 98 - The 2003 Album",
-        "ogImage": "/engine-room-records/artists/the-stardust-engine/2003-mile-marker-98/social-preview.jpg",
-        "schemaType": "MusicAlbum",
-        "albumFilter": "Moon 2: Mile Marker 98",
-        "narrativeReleaseDate": "2003",
-        "realReleaseDate": "2026-06-03"
+        "view": "pages/engine-room/discography-redirect-template",
+        "redirect": "https://music.raggiesoft.com/the-stardust-engine/2003-mile-marker-98",
+        "title": "Moon 2: Mile Marker 98 (2003) | The Stardust Engine"
+    },
+    "/engine-room/artists/stardust-engine/discography/2003-mile-marker-98": {
+        "view": "pages/engine-room/discography-redirect-template",
+        "redirect": "https://music.raggiesoft.com/the-stardust-engine/2003-mile-marker-98",
+        "title": "Moon 2: Mile Marker 98 (2003) | The Stardust Engine"
     },
     "/engine-room/artists/stardust-engine/discography/2004-progress-street": {
-        "view": "pages/engine-room/artists/stardust-engine/discography/2004-progress-street",
-        "title": "Progress Street (2004) | The Stardust Engine",
-        "ogTitle": "Progress Street - The 2004 Album",
-        "ogImage": "/engine-room-records/artists/the-stardust-engine/2004-progress-street/social-preview.jpg",
-        "schemaType": "MusicAlbum",
-        "albumFilter": "Progress Street",
-        "narrativeReleaseDate": "2004-10-15",
-        "realReleaseDate": "Upcoming"
+        "view": "pages/engine-room/discography-redirect-template",
+        "redirect": "https://music.raggiesoft.com/the-stardust-engine/2004-progress-street",
+        "title": "Progress Street (2004) | The Stardust Engine"
     },
     "/engine-room/artists/stardust-engine/discography/2007-lost-sounds": {
-        "view": "pages/engine-room/artists/stardust-engine/discography/2007-lost-sounds",
-        "title": "Lost Sounds (2007) | The Stardust Engine",
-        "ogTitle": "Lost Sounds - The 2007 Archival Compilation",
-        "ogImage": "/engine-room-records/artists/the-stardust-engine/2007-lost-sounds/social-preview.jpg",
-        "schemaType": "MusicAlbum",
-        "albumFilter": "Lost Sounds",
-        "upc": "825324114864",
-        "narrativeReleaseDate": "2007",
-        "realReleaseDate": "2026-06-03"
+        "view": "pages/engine-room/discography-redirect-template",
+        "redirect": "https://music.raggiesoft.com/the-stardust-engine/2007-lost-sounds",
+        "title": "Lost Sounds (2007) | The Stardust Engine"
     },
     "/engine-room/artists/stardust-engine/discography/2008-our-own-frequency": {
-        "view": "pages/engine-room/artists/stardust-engine/discography/2008-our-own-frequency",
-        "title": "Our Own Frequency (2008) | The Stardust Engine",
-        "ogTitle": "Our Own Frequency - The 2008 Album",
-        "ogImage": "/engine-room-records/artists/the-stardust-engine/2008-our-own-frequency/social-preview.jpg",
-        "schemaType": "MusicAlbum",
-        "albumFilter": "Our Own Frequency",
-        "upc": "700521288573",
-        "narrativeReleaseDate": "2008",
-        "realReleaseDate": "2026-10-16"
+        "view": "pages/engine-room/discography-redirect-template",
+        "redirect": "https://music.raggiesoft.com/the-stardust-engine/2008-our-own-frequency",
+        "title": "Our Own Frequency (2008) | The Stardust Engine"
     },
     "/engine-room/artists/stardust-engine/discography/2015-re-ignition": {
-        "view": "pages/engine-room/artists/stardust-engine/discography/2015-re-ignition",
+        "view": "pages/engine-room/discography-redirect-template",
+        "redirect": "https://music.raggiesoft.com/the-stardust-engine",
         "title": "Re-Ignition (2015) | The Stardust Engine"
     },
     "/engine-room/artists/stardust-engine/discography/2016-live-at-the-crucible": {

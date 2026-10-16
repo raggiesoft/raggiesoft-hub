@@ -68,7 +68,8 @@
   },
   "/engine-room/artists/the-paper-wall/discography/2001-static-and-silence": {
     "sidebar": "engine-room/artists/sidebar-artists",
-    "view": "pages/engine-room/artists/mirage/2001-static-and-silence",
+    "view": "pages/engine-room/discography-redirect-template",
+    "redirect": "https://music.raggiesoft.com/the-paper-wall/2001-static-and-silence-book-1",
     "title": "Static & Silence - The Paper Wall | Engine Room Records",
     "ogDescription": "Official lore archive for Static & Silence (2001) by The Paper Wall."
   },
@@ -86,13 +87,15 @@
   },
   "/engine-room/artists/the-arctic-symphony-project/tales-of-the-solstice": {
     "sidebar": "engine-room/artists/sidebar-artists",
-    "view": "pages/engine-room/artists/the-winter-palace/discography/2007-tales-of-the-solstace",
+    "view": "pages/engine-room/discography-redirect-template",
+    "redirect": "https://music.raggiesoft.com/the-arctic-symphony-project/2007-tales-from-the-solstice",
     "title": "Tales from the Solstice - The Arctic Symphony Project | Engine Room Records",
     "ogDescription": "The lore behind 'Upon This Winter's Night' and Holly O'Connell's rescue of the Solstice Records catalog for Julian Croft."
   },
   "/engine-room/artists/the-winter-palace/tales-of-the-solstice": {
     "sidebar": "engine-room/artists/sidebar-artists",
-    "view": "pages/engine-room/artists/the-winter-palace/discography/2007-tales-of-the-solstace",
+    "view": "pages/engine-room/discography-redirect-template",
+    "redirect": "https://music.raggiesoft.com/the-arctic-symphony-project/2007-tales-from-the-solstice",
     "title": "Tales from the Solstice - The Arctic Symphony Project | Engine Room Records",
     "ogDescription": "The lore behind 'Upon This Winter's Night' and Holly O'Connell's rescue of the Solstice Records catalog for Julian Croft."
   }
