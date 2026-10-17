@@ -220,7 +220,7 @@ $pageTitle = "The Cosmic Tidal Lock Sound™ vs. 80s Cosmic Pop";
                                     </div>
                                     <h4 class="h5 text-white fw-bold">Starfield Calibration</h4>
                                     <p class="small text-white-75 flex-grow-1">
-                                        Released during the Burnout Hiatus on the 25th Anniversary of <em>Ignition</em> debuting at The Crucible—re-engineering 14 foundational songs (1987–2001) into the Cosmic Tidal Lock Sound&trade;.
+                                        Released during the Burnout Hiatus on the 25th Anniversary of <em>Ignition</em> debuting at The Crucible—re-engineering 14 foundational songs (1987–2001) into the Cosmic Tidal Lock Sound&trade;, with lyrics tweaked both to celebrate freedom from Apex Records and to use open, sustained vowels that bloom in zero-gravity reverb.
                                     </p>
                                     <div class="mt-auto pt-2">
                                         <wa-button variant="warning" appearance="accent" size="small" href="https://music.raggiesoft.com/the-stardust-engine/2011-starfield-calibration" target="_blank" class="w-100">
@@ -260,13 +260,15 @@ $pageTitle = "The Cosmic Tidal Lock Sound™ vs. 80s Cosmic Pop";
 
                         <div class="border-bottom border-secondary pb-4">
                             <div class="d-flex align-items-center justify-content-between flex-wrap gap-2 mb-2">
-                                <h5 class="text-warning fw-bold mb-0">2. The <em>Starfield Calibration</em> Cover Protocol (Re-Engineering Existing Songs in Suno v6)</h5>
+                                <h5 class="text-warning fw-bold mb-0">2. The <em>Starfield Calibration</em> Cover &amp; Lyrical Calibration Protocol (Suno v6)</h5>
                                 <wa-copy-button from="prompt-cover-protocol" copy-label="Copy Cover Style Prompt" success-label="Copied!"></wa-copy-button>
                             </div>
                             <p class="small text-white-75 mb-2">
-                                Discovered by Michael P. Ragsdale while producing <a href="https://music.raggiesoft.com/the-stardust-engine/2011-starfield-calibration" target="_blank" rel="noopener" class="text-warning fw-bold"><em>Starfield Calibration (2011)</em></a> in Suno v6: when transposing an existing terrestrial rock, pop, or AOR song into Zero-G using Suno's <strong>Cover</strong> feature, you do <strong>not</strong> need to combine the original song's style prompt with the Cosmic Tidal Lock Sound&trade; prompt!
+                                Discovered by Michael P. Ragsdale while producing <a href="https://music.raggiesoft.com/the-stardust-engine/2011-starfield-calibration" target="_blank" rel="noopener" class="text-warning fw-bold"><em>Starfield Calibration (2011)</em></a> in Suno v6: when transposing an existing terrestrial rock, pop, or AOR song into Zero-G using Suno's <strong>Cover</strong> feature, you do <strong>not</strong> need to combine the original song's style prompt with the Cosmic Tidal Lock Sound&trade; prompt! Furthermore, the lyrics across <em>Starfield Calibration</em> were intentionally tweaked for two reasons:
                             </p>
                             <ul class="small text-white-75 mb-3">
+                                <li><strong>Reason 1 — Celebrating Freedom from Apex Records (1987 Captivity &rarr; 2011 Orbital Freedom):</strong> Songs originally written under Apex Records' artificial "Plastic Sky" or on exhausting highway tours were updated from the perspective of nineteen years of independence, turning early cries of claustrophobia into retrospective celebrations of zero-gravity peace.</li>
+                                <li><strong>Reason 2 — Acoustic &amp; Phonetic Vowel Extension for Zero-Gravity Reverb:</strong> The original terrestrial rock versions used clipped, percussive consonants to cut through distorted guitars and 130+ BPM arena drums. For <em>The Cosmic Tidal Lock Sound&trade;</em> (~100–118 BPM with wide spatial reverb and fretless bass), lines were tweaked to favor <strong>open, sustained vowels and liquid consonants</strong> (<em>"gliding," "velvet," "alignment," "starlight," "zero-G," "tidal lock," "sanctuary"</em>) so the vocals hold long, shimmering legato notes that bloom inside the planetarium reverb tail.</li>
                                 <li><strong>Cover Audio Influence:</strong> Set to <code>74%</code> (the exact sweet spot where Suno v6 locks onto the baseline melody, chord progressions, and vocal hooks—including call-and-response interplay—from the original audio, while giving the style engine room to rebuild the arrangement in Zero-G).</li>
                                 <li><strong>Style of Music Box:</strong> Include <strong>only</strong> the new Cosmic Tidal Lock Sound&trade; styles (do not paste the old terrestrial guitar/arena styles).</li>
                                 <li><strong>Exclude Styles (Negative Prompt):</strong> Explicitly strip away the original terrestrial instrumentation so Suno replaces it with phase-array synthesizers and fretless bass:
