@@ -3,19 +3,20 @@
  * RaggieSoft Architecture - Page Component
  * 
  * File: pages/family/paige.php
- * Component: Paige (Calm, Blue, Python)
+ * Component: Paige (Calm, Blue, PHP 8.5)
  * Type: Character Profile / System Metaphor
  * 
  * Description:
- * Renders the profile for "Paige," representing the Python ingestion/processing script
- * as well as the Safe Person / Neurotypical Twin persona in the system's narrative.
+ * Renders the profile for "Paige," representing the `raggiesoft-deployment-tools/paige.php`
+ * narrative publisher and full-text search indexer as well as the Safe Person /
+ * Neurotypical Twin persona in the system's narrative.
  *
  * Maintenance Notes:
  * - Uses Bootstrap 5 utility classes for styling.
  * - Relies on global $cdnBaseUrl for image assets.
  * - Ensure to maintain the semantic HTML structure (header, info blocks, deep pressure therapy block).
  */
-// Theme: Paige (Calm, Blue, Python)
+// Theme: Paige (Calm, Blue, PHP 8.5)
 ?>
 <!-- MAIN PROFILE HEADER CARD: Hero image and intro -->
 <wa-card class="card mb-5 border-0 shadow-sm overflow-hidden bg-body-tertiary w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
@@ -32,10 +33,10 @@
             <div class="card-body p-4 p-lg-5">
                 <div class="d-flex align-items-center mb-3">
                     <wa-badge variant="brand" appearance="accent" class="me-2">
-                        <i class="fa-duotone fa-file-code me-2"></i>_workspace/paige.py
+                        <i class="fa-duotone fa-file-code me-2"></i>raggiesoft-deployment-tools/paige.php
                     </wa-badge>
                     <wa-badge variant="brand" appearance="outlined" class="text-info">
-                        Python 3.11
+                        PHP 8.5
                     </wa-badge>
                 </div>
                 
@@ -56,17 +57,18 @@
     <div class="col-md-12 col-xl-6">
         <div class="p-4 h-100 rounded-3 border bg-body-tertiary">
             <h3 class="border-bottom pb-3 mb-4 text-info-emphasis"><i class="fa-duotone fa-scroll me-2"></i>The Editor</h3>
-            <p>Technically, Paige is a complex Python script living in the <code>_workspace</code> directory. She acts as the "Gatekeeper of the Narrative," ensuring that raw creative output is structured correctly before publication.</p>
+            <p>Technically, Paige is the primary PHP 8.5 narrative publisher and search indexer living in the standardized <code>raggiesoft-deployment-tools</code> directory alongside Jenna, Harper, and Sarah. She acts as the "Gatekeeper of the Narrative," ensuring that raw creative manuscripts are structured, routed, and indexed cleanly before publication.</p>
             
             <h5 class="fw-bold mt-4 mb-3 text-body">Core Functions</h5>
             <ul class="list-group list-group-flush bg-transparent mb-4">
-                <li class="list-group-item bg-transparent px-0"><i class="fa-duotone fa-check-circle text-success me-2"></i><strong>Ingestion:</strong> Reads raw <code>.docx</code> manuscripts from the cloud.</li>
-                <li class="list-group-item bg-transparent px-0"><i class="fa-duotone fa-check-circle text-success me-2"></i><strong>Parsing:</strong> Converts proprietary formatting into clean, structured JSON.</li>
-                <li class="list-group-item bg-transparent px-0"><i class="fa-duotone fa-check-circle text-success me-2"></i><strong>Validation:</strong> Checks for narrative consistency and broken references before build.</li>
+                <li class="list-group-item bg-transparent px-0"><i class="fa-duotone fa-check-circle text-success me-2"></i><strong>Manuscript Sync:</strong> Reads raw Markdown eras (<code>e*</code>), chapters (<code>c*</code>), and scenes (<code>s*.md</code>) while preserving compiled <code>.epub</code> and <code>.pdf</code> deliverables.</li>
+                <li class="list-group-item bg-transparent px-0"><i class="fa-duotone fa-check-circle text-success me-2"></i><strong>Dual Route Mapping:</strong> Generates structured route manifests and <code>toc.json</code> trees for both the RaggieSoft Hub and Ocean View Archives (<code>books.raggiesoft.com</code>).</li>
+                <li class="list-group-item bg-transparent px-0"><i class="fa-duotone fa-check-circle text-success me-2"></i><strong>Full-Text Indexing:</strong> Compiles all 3,185+ narrative scenes into <code>search-index.json</code> and <code>catalog.json</code> with trauma-informed console feedback.</li>
             </ul>
             <div class="bg-dark text-secondary p-3 rounded font-monospace small shadow-sm mb-4">
-                <span class="text-secondary"># Example Usage</span><br>
-                <span class="text-success">michael@dev:~$</span> python3 _workspace/paige.py --ingest "books/aethel/aethel.docx"
+                <span class="text-secondary"># Publish Library &amp; Deep Pressure Protocol</span><br>
+                <span class="text-success">michael@dev:~$</span> php raggiesoft-deployment-tools/paige.php --book="aethel"<br>
+                <span class="text-success">michael@dev:~$</span> php raggiesoft-deployment-tools/paige.php --grounding
             </div>
 
             <div class="mt-4 p-3 bg-white border rounded shadow-sm">

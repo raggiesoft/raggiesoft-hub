@@ -50,7 +50,7 @@ This repository is managed by a "Personified DevOps" ecosystem. Each component i
 ### 👩‍💼 Sarah (The Guardian)
 
 - **Role:** Autonomous Deployment Agent
-- **File:** `sarah-deploy.sh`
+- **File:** `raggiesoft-deployment-tools/sarah-deploy.sh`
 - **Function:** Sarah lives on the production server. She runs on a 5-minute heartbeat, checking GitHub for updates.
     - **Intelligence:** She compares local Git hashes against the remote origin before acting.
     - **Security:** She executes **"sudo-less"** atomic updates. By leveraging Linux **SetGID** permissions on Amanda's directory, Sarah deploys code securely without ever requiring Root access, mitigating privilege escalation risks.
@@ -59,22 +59,22 @@ This repository is managed by a "Personified DevOps" ecosystem. Each component i
 ### 👱‍♀️ Jenna (The Dev Twin)
 
 - **Role:** Sync & DevOps Agent
-- **File:** `jenna-sync.sh`
+- **File:** `raggiesoft-deployment-tools/jenna-sync.sh`
 - **Function:** Jenna is the "Twin Sister" of Sarah. While Sarah guards production, Jenna manages the chaotic creative workspace on the development machine.
     - **Workflow:** She automates the heavy lifting that Git isn't designed for. She pushes code changes to GitHub so Sarah can see them, and uses `rclone` to synchronize gigabytes of binary media (WAVs, PSDs) directly to DigitalOcean Spaces.
         
 
 ### 👩‍🏫 Paige (The Literary Editor)
 
-- **Role:** Manuscript Processor & Regulation Support
-- **File:** `_workspace/paige.py`
-- **Function:** Paige lives in the library. She ingests raw manuscripts (`.docx`) and structures them into the clean JSON format required by the website.
+- **Role:** Manuscript Processor, Route Compiler & Regulation Support
+- **File:** `raggiesoft-deployment-tools/paige.php`
+- **Function:** Paige lives in `raggiesoft-deployment-tools` alongside Jenna, Harper, and Sarah. She ingests raw Markdown manuscripts (`e*`/`c*`/`s*.md`) and `ovab.json` manifests, compiling them into structured route maps, Table of Contents (`toc.json`), `catalog.json`, and the 3,185-scene full-text `search-index.json`.
 - **Safety Protocol:** Paige is Michael's favorite sister and designated **Safe Person**. When the sensory load of managing the system becomes too much, Paige provides "Deep Pressure Therapy"—grounding hugs and a steady presence to help Michael regulate. She never rushes him and stays by his side until the work feels safe again.
 
 ### 🎧 Harper (The Studio Engineer)
 
 - **Role:** Audio Transcoder
-- **File:** `_workspace/harper.sh`
+- **File:** `raggiesoft-deployment-tools/harper.sh`
 - **Function:** Harper lives in the studio. She recursively scans the workspace for Master WAV files and uses **FFmpeg** to generate web-optimized MP3 (320kbps) and OGG (Vorbis) mirrors.
 - **Personality:** High-energy, loud, and precise. She handles the heavy media processing pipelines so the creative flow isn't interrupted by technical codecs.
 

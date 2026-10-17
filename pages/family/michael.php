@@ -96,7 +96,7 @@
                 </div>
             </div>
 
-            <wa-button variant="brand" appearance="outlined" size="small" href="/portfolio" class="mt-3 w-100">
+            <wa-button variant="brand" appearance="outlined" size="small" href="https://michaelpragsdale.com" class="mt-3 w-100">
                 <i slot="start" class="fa-duotone fa-briefcase"></i>View Professional Portfolio
             </wa-button>
         </div>

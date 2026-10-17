@@ -31,7 +31,7 @@
             <div class="card-body p-4 p-lg-5">
                 <div class="d-flex align-items-center mb-3">
                     <wa-badge variant="neutral" appearance="accent" class="me-2" style="background-color: #6610f2;">
-                        <i class="fa-duotone fa-file-audio me-2"></i>_workspace/harper.sh
+                        <i class="fa-duotone fa-file-audio me-2"></i>raggiesoft-deployment-tools/harper.sh
                     </wa-badge>
                     <wa-badge variant="neutral" appearance="outlined" style="border-color: var(--family-harper) !important; color: var(--family-harper) !important;">
                         FFmpeg / Real-ESRGAN / 7-Zip

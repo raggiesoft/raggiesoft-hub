@@ -70,7 +70,7 @@ $css_load_queue = [
     $path_theme_base . '/header.css',   
     $path_theme_base . '/footer.css',   
     $path_theme_base . '/safety-net.css',
-    $cdn_root . "/common/css/raggiesoft-network.css?v=20261017h"
+    $cdn_root . "/common/css/raggiesoft-network.css?v=20261017j"
 ];
 
 // 5. Critical Images
@@ -266,7 +266,7 @@ if (isset($customPageAssets) && is_array($customPageAssets)) {
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,700;1,400&family=M+PLUS+Rounded+1c:wght@400;700&family=Titillium+Web:wght@400;700&display=swap" rel="stylesheet">
 
 <script src="<?php echo $cdnBaseUrl; ?>/common/js/elara-spa.js?v=<?php echo time(); ?>" defer></script>
-    <script src="<?php echo $cdnBaseUrl; ?>/common/js/raggiesoft-network.js?v=20261017h" defer></script>    
+    <script src="<?php echo $cdnBaseUrl; ?>/common/js/raggiesoft-network.js?v=20261017j" defer></script>    
     <style>
         .brand-font { font-family: <?php echo $brand_font_css; ?> !important; }
         
@@ -568,7 +568,6 @@ if (isset($customPageAssets) && is_array($customPageAssets)) {
           <li><a href="https://books.raggiesoft.com">📚 Books</a></li>
           <li><a href="https://stardust.raggiesoft.com">🚀 Stardust</a></li>
           <li><a href="https://engineroom.raggiesoft.com">⚙️ Engine Room</a></li>
-          <li><a href="https://lore.raggiesoft.com">🏛️ Lore</a></li>
           <li><a href="https://corporate.raggiesoft.com">🏢 Corporate</a></li>
           <li><a href="https://storetrainer.raggiesoft.com">💾 StoreTrainer</a></li>
           <li><a href="https://michaelpragsdale.com">👔 Michael P. Ragsdale</a></li>

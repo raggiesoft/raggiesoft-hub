@@ -346,29 +346,17 @@ $pageTitle = "RaggieSoft™ | The Central Hub";
 
     <?php
       /**
-       * Consolidated Network Constellations Directory
-       * Mirrors the top-level RaggieSoft Network Menu + The DevOps Family,
-       * displaying each property's official 16:9 OpenGraph (`og:image`) artwork inside
+       * Global Subdomain Constellations Directory (Strictly 5 Core Pillars)
+       * 1. Ocean View Archives (books.raggiesoft.com)
+       * 2. Engine Room Records (engineroom.raggiesoft.com + Listening Room + Stardust Engine)
+       * 3. RaggieSoft Media (corporate.raggiesoft.com)
+       * 4. Michael P. Ragsdale (michaelpragsdale.com Executive Dossier)
+       * 5. The DevOps Family (/family — Paige, Jessica, Harper, Jenna, Sarah, Amanda & Elara)
+       *
+       * Every card displays its official 16:9 OpenGraph (`og:image`) or hero artwork inside
        * a standard Web Awesome `<wa-card with-media with-footer>` component.
        */
       $constellations = [
-        [
-          'imgSrc' => $cdnBaseUrl . '/stardust-engine/images/stardust-engine-hero.jpg',
-          'imgAlt' => 'RaggieSoft Nebulae Observatory 16:9 OpenGraph Preview',
-          'fallbackText' => 'Nebulae Observatory',
-          'aspectRatio' => '16:9',
-          'badge' => 'Vanilla TS • Interactive Map',
-          'title' => 'Nebulae Observatory',
-          'description' => 'Interactive 9-constellation topology mapping every subdomain, tech stack, and decoupled vault at nebulae.raggiesoft.com.',
-          'buttonProps' => [
-            'href' => 'https://nebulae.raggiesoft.com/',
-            'text' => 'Explore Nebulae',
-            'variant' => 'brand',
-            'icon' => 'fa-duotone fa-galaxy',
-            'iconPosition' => 'before',
-            'fullWidth' => true
-          ]
-        ],
         [
           'imgSrc' => $cdnBaseUrl . '/raggiesoft-books/images/og/library-og.jpg',
           'imgAlt' => 'Ocean View Archives Book Reader 16:9 OpenGraph Preview',
@@ -422,23 +410,6 @@ $pageTitle = "RaggieSoft™ | The Central Hub";
           ]
         ],
         [
-          'imgSrc' => $cdnBaseUrl . '/raggiesoft-lore/images/og/default-og.jpg',
-          'imgAlt' => 'RaggieSoft Lore Encyclopedia 16:9 OpenGraph Preview',
-          'fallbackText' => 'Lore Encyclopedia',
-          'aspectRatio' => '16:9',
-          'badge' => 'Next.js 16 • React 19 • Tailwind v4',
-          'title' => 'Lore Encyclopedia',
-          'description' => 'Cross-referenced narrative encyclopedia indexing characters, universities (CPI), transit agencies, and timelines at lore.raggiesoft.com.',
-          'buttonProps' => [
-            'href' => 'https://lore.raggiesoft.com/',
-            'text' => 'Browse Encyclopedia',
-            'variant' => 'brand',
-            'icon' => 'fa-duotone fa-scroll-old',
-            'iconPosition' => 'before',
-            'fullWidth' => true
-          ]
-        ],
-        [
           'imgSrc' => $cdnBaseUrl . '/raggiesoft-corporate/images/og/raggiesoft-corporate-og.jpg',
           'imgAlt' => 'RaggieSoft Media Corporate Hub 16:9 OpenGraph Preview',
           'fallbackText' => 'RaggieSoft Media',
@@ -456,23 +427,6 @@ $pageTitle = "RaggieSoft™ | The Central Hub";
           ]
         ],
         [
-          'imgSrc' => $cdnBaseUrl . '/raggiesoft-corporate/images/projects/code-architecture-dark-aero.jpg',
-          'imgAlt' => 'RaggieSoft StoreTrainer 16:9 OpenGraph Preview',
-          'fallbackText' => 'StoreTrainer',
-          'aspectRatio' => '16:9',
-          'badge' => 'VB6 • .NET • NSIS Win32 Utility',
-          'title' => 'RaggieSoft StoreTrainer',
-          'description' => 'Hand-written Win32 desktop utility built in Windows 2000 SP4 to index and launch PC games alongside their trainers and CLI switches (Win95–Win11).',
-          'buttonProps' => [
-            'href' => 'https://storetrainer.raggiesoft.com/',
-            'text' => 'View StoreTrainer',
-            'variant' => 'brand',
-            'icon' => 'fa-duotone fa-floppy-disk',
-            'iconPosition' => 'before',
-            'fullWidth' => true
-          ]
-        ],
-        [
           'imgSrc' => 'https://michaelpragsdale.com/og-image.jpg',
           'imgAlt' => 'Michael P. Ragsdale Executive Portfolio 16:9 OpenGraph Preview',
           'fallbackText' => 'Michael P. Ragsdale',
@@ -482,7 +436,7 @@ $pageTitle = "RaggieSoft™ | The Central Hub";
           'description' => 'Executive Systems Architect & Section 508 Compliance Engineer portfolio, multi-stack architecture matrix, and technical dossier at michaelpragsdale.com.',
           'buttonProps' => [
             'href' => 'https://michaelpragsdale.com',
-            'text' => 'View Portfolio',
+            'text' => 'View Dossier',
             'variant' => 'brand',
             'icon' => 'fa-duotone fa-briefcase',
             'iconPosition' => 'before',
@@ -490,18 +444,18 @@ $pageTitle = "RaggieSoft™ | The Central Hub";
           ]
         ],
         [
-          'imgSrc' => $cdnBaseUrl . '/family/images/wide-angle/amanda-elara-atmospheric-wide-angle.jpg',
-          'imgAlt' => 'The RaggieSoft DevOps Family 16:9 Preview',
+          'imgSrc' => $cdnBaseUrl . '/family/images/scenes/paige-michael-hug.jpg',
+          'imgAlt' => 'Paige comforting Michael — The RaggieSoft DevOps Family',
           'fallbackText' => 'The DevOps Family',
           'aspectRatio' => '16:9',
           'badge' => 'PHP 8.5 • Bash • Rclone CI/CD',
           'title' => 'The DevOps Family',
-          'description' => 'Our "Personified DevOps" engineering ecosystem—where Amanda, Elara, Jenna, Sarah, and Harper automate routing, builds, and CDN deployments.',
+          'description' => 'Our "Personified DevOps" build team—where Paige (paige.php, Literary Editor & Safe Person), Jessica (jessica.raggiesoft.com), Harper (harper.sh), Jenna (jenna-sync.sh), Sarah (sarah-deploy.sh), and Amanda & Elara power our entire pipeline.',
           'buttonProps' => [
             'href' => '/family',
-            'text' => 'Meet the Bots',
+            'text' => 'Meet the Family',
             'variant' => 'brand',
-            'icon' => 'fa-duotone fa-microchip-ai',
+            'icon' => 'fa-duotone fa-heart-pulse',
             'iconPosition' => 'before',
             'fullWidth' => true
           ]
@@ -509,9 +463,9 @@ $pageTitle = "RaggieSoft™ | The Central Hub";
       ];
     ?>
 
-    <div class="row constellation-grid-row">
+    <div class="row constellation-grid-row justify-content-center">
       <?php foreach ($constellations as $cardProps): ?>
-        <div class="col-12 col-md-6 col-lg-4 col-xl-3-constellation d-flex">
+        <div class="col-12 col-md-6 col-lg-4 d-flex">
           <?php
             $props = $cardProps;
             include __DIR__ . '/../includes/components/card.php';

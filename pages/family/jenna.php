@@ -32,7 +32,7 @@
             <div class="card-body p-4 p-lg-5">
                 <div class="d-flex align-items-center mb-3">
                     <wa-badge variant="neutral" appearance="accent" class="me-2" style="background-color: #fd7e14;">
-                        <i class="fa-duotone fa-rotate me-2"></i>jenna-sync.sh
+                        <i class="fa-duotone fa-rotate me-2"></i>raggiesoft-deployment-tools/jenna-sync.sh
                     </wa-badge>
                     <wa-badge variant="warning" appearance="outlined" class="text-warning-emphasis">
                         Rclone / Git
@@ -56,7 +56,7 @@
     <div class="col-md-12 col-xl-6">
         <div class="p-4 h-100 rounded-3 border bg-body-tertiary">
             <h3 class="border-bottom pb-3 mb-4" style="color: #fd7e14;"><i class="fa-duotone fa-cloud-arrow-up me-2"></i>The Sync Engine</h3>
-            <p>While Sarah manages the code, Jenna manages the <strong>Assets</strong>. She lives in the chaotic <code>_workspace</code> directory on the development machine.</p>
+            <p>While Sarah manages the code, Jenna manages the <strong>Assets</strong>. She lives in the standardized <code>raggiesoft-deployment-tools</code> directory on the development machine.</p>
             
             <h5 class="fw-bold mt-4 mb-3 text-body">Hybrid Workflow</h5>
             <p>Jenna solves the "Large File" problem by splitting the project into two streams:</p>

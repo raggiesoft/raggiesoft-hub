@@ -31,7 +31,7 @@
 ?>
 
 <div class="position-relative p-5 text-center bg-dark border-bottom shadow-sm" 
-     style="background-image: url($cdnBaseUrl . '/family/images/scenes/paige-michael-hug.jpg'); background-size: cover; background-position: center 30%; min-height: 60vh;">
+     style="background-image: url('<?php echo $cdnBaseUrl; ?>/family/images/scenes/paige-michael-hug.jpg'); background-size: cover; background-position: center 30%; min-height: 60vh;">
     
     <div class="position-absolute top-0 start-0 w-100 h-100 bg-black opacity-75"></div>
     
