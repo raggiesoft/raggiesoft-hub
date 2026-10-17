@@ -235,6 +235,36 @@ $overviewUrl = dirname($request_uri, 3); // Backs out of /b001/c001/p001
                         <?php endif; ?>
                     </div>
                 <?php endif; ?>
+
+                <?php if (!empty($frontmatter['audio'])):
+                    // Parse background audio path ("{artistSlug}/{albumSlug}/web-mp3/{filenameNoExt}.mp3")
+                    // and construct direct deep-links to The Listening Room (music.raggiesoft.com).
+                    $rawAudioPath = trim($frontmatter['audio'], '/');
+                    $audioParts = explode('/', $rawAudioPath);
+                    $artistSlug = $audioParts[0] ?? '';
+                    $albumSlug = $audioParts[1] ?? '';
+                    $filenameNoExt = pathinfo(end($audioParts), PATHINFO_FILENAME);
+
+                    $listeningRoomTrackUrl = 'https://music.raggiesoft.com/' . rawurlencode($artistSlug) . '/' . rawurlencode($albumSlug) . '/?track=' . rawurlencode($filenameNoExt);
+                    $listeningRoomAlbumUrl = 'https://music.raggiesoft.com/' . rawurlencode($artistSlug) . '/' . rawurlencode($albumSlug) . '/';
+
+                    $audioTitleDisplay = ucwords(str_replace('-', ' ', preg_replace('/^\d+-\d+-/', '', $filenameNoExt)));
+                    $albumDisplay = ucwords(str_replace('-', ' ', preg_replace('/^\d{4}-/', '', $albumSlug)));
+                    $artistDisplay = ucwords(str_replace('-', ' ', $artistSlug));
+                ?>
+                    <div class="mt-3 pt-3 border-top border-secondary-subtle d-flex flex-wrap justify-content-center align-items-center gap-2 small">
+                        <span class="text-body-secondary fw-semibold">
+                            <wa-icon name="music" class="me-1"></wa-icon> Background Audio:
+                        </span>
+                        <a href="<?php echo htmlspecialchars($listeningRoomTrackUrl); ?>" target="_blank" rel="noopener noreferrer" class="fw-bold text-decoration-underline">
+                            <?php echo htmlspecialchars($audioTitleDisplay); ?>
+                        </a>
+                        <span class="text-body-secondary">&bull;</span>
+                        <a href="<?php echo htmlspecialchars($listeningRoomAlbumUrl); ?>" target="_blank" rel="noopener noreferrer" class="fst-italic text-decoration-underline">
+                            <?php echo htmlspecialchars($albumDisplay); ?> (<?php echo htmlspecialchars($artistDisplay); ?>)
+                        </a>
+                    </div>
+                <?php endif; ?>
             </div>
 
             <!-- Parsedown Content -->
