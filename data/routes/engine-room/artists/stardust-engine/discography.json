@@ -79,8 +79,8 @@
     },
     "/engine-room/artists/stardust-engine/discography/2003-starfield-calibration": {
         "view": "pages/engine-room/discography-redirect-template",
-        "redirect": "https://music.raggiesoft.com/the-stardust-engine/2003-starfield-calibration",
-        "title": "Starfield Calibration (2003) | The Stardust Engine"
+        "redirect": "https://music.raggiesoft.com/the-stardust-engine/2011-starfield-calibration",
+        "title": "Starfield Calibration (2011) | The Stardust Engine"
     },
     "/engine-room/artists/stardust-engine/discography/2003-moon-1-sanctuary-zero-g": {
         "view": "pages/engine-room/discography-redirect-template",
@@ -111,6 +111,11 @@
         "view": "pages/engine-room/discography-redirect-template",
         "redirect": "https://music.raggiesoft.com/the-stardust-engine/2008-our-own-frequency",
         "title": "Our Own Frequency (2008) | The Stardust Engine"
+    },
+    "/engine-room/artists/stardust-engine/discography/2011-starfield-calibration": {
+        "view": "pages/engine-room/discography-redirect-template",
+        "redirect": "https://music.raggiesoft.com/the-stardust-engine/2011-starfield-calibration",
+        "title": "Starfield Calibration (2011) | The Stardust Engine"
     },
     "/engine-room/artists/stardust-engine/discography/2015-re-ignition": {
         "view": "pages/engine-room/discography-redirect-template",
