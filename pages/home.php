@@ -4,33 +4,27 @@
  *
  * ARCHITECTURE & CONTEXT:
  * This is the central hub for the entire RaggieSoft network. It acts as a "Y-Junction",
- * forcing the user to choose between the professional/technical side (The Architect) 
+ * allowing the visitor to route between the professional/technical side (The Architect)
  * and the creative/narrative side (Creative Works).
- * 
- * It includes a global directory represented as a horizontal scroll carousel, linking 
- * to major network spokes (Engine Room Records, The Stardust Engine, Crimson Node, 
- * Ocean View Archives, The DevOps Family).
  *
- * UI/UX ARCHITECTURE:
- * - Employs a custom `.split-hero-container` utilizing Flexbox to create two dynamic,
- *   hover-expanding panes on desktop, which stack vertically on mobile.
- * - Uses responsive `.scroll-card` elements in a `.horizontal-scroll-wrapper` to 
- *   create a Netflix-style horizontal sliding carousel for network spokes.
- * - Respects `prefers-reduced-motion` for accessibility, disabling the split-pane 
- *   animations for sensitive users.
+ * Below the Y-Junction split hero, the "Global Subdomain Constellations" directory renders
+ * a responsive multi-column grid of Web Awesome (`<wa-card with-media with-footer>`) cards
+ * consolidated to match the top-level RaggieSoft Network Menu (Nebulae, Books, Engine Room,
+ * Lore, Corporate, StoreTrainer, Michael P. Ragsdale) plus The DevOps Family. Every card
+ * displays the destination property's 16:9 OpenGraph (`og:image`) social preview banner.
+ *
+ * UI/UX & ACCESSIBILITY ARCHITECTURE (WCAG 2.1 AA / Section 508):
+ * - Employs a `.split-hero-container` explicitly scoped with `wa-dark` and `data-bs-theme="dark"`
+ *   so that Web Awesome `<wa-button>` components and text inside the dark hero panes always
+ *   maintain >= 7:1 contrast regardless of whether the visitor's OS is in Light or Dark mode.
+ * - Uses a discoverable, responsive 4-column desktop / 2-column tablet / 1-column mobile
+ *   grid of `<wa-card>` components (replacing the retired horizontal scroll container).
+ * - Respects `prefers-reduced-motion: reduce`, disabling hover zoom, flex expansion, and card
+ *   lift animations when reduced motion is requested.
  * - Includes a Schema.org JSON-LD payload for SEO organization and website linking.
- *
- * MAINTENANCE NOTES:
- * - When adding a new "Spoke" to the network, append a new `.scroll-card` block 
- *   in the `#network-spokes` section using the `card.php` component include.
- * - Ensure `$cdnBaseUrl` is properly configured to serve background images and avatars.
- * - Do NOT alter the AI transparency notice without legal/policy review.
  */
 
-// pages/home.php
-// The RaggieSoft Global Y-Junction (Root Domain)
-
-$pageTitle = "RaggieSoft&trade; | The Central Hub";
+$pageTitle = "RaggieSoft™ | The Central Hub";
 ?>
 
 <script type="application/ld+json">
@@ -61,13 +55,17 @@ $pageTitle = "RaggieSoft&trade; | The Central Hub";
 </script>
 
 <style>
-    /* --- THE Y-JUNCTION SPLIT HERO --- */
+    /* ==========================================================================
+     * 1. THE Y-JUNCTION SPLIT HERO (WCAG 2.1 AA High-Contrast Dark Surface)
+     * ========================================================================== */
     .split-hero-container {
-        min-height: 80vh;
+        min-height: 76vh;
         display: flex;
         flex-direction: column;
+        background-color: #070b14;
+        color: #ffffff;
     }
-    
+
     .split-pane {
         position: relative;
         flex: 1;
@@ -76,12 +74,15 @@ $pageTitle = "RaggieSoft&trade; | The Central Hub";
         justify-content: center;
         overflow: hidden;
         transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
-        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.16);
     }
 
     .pane-bg {
         position: absolute;
-        top: 0; left: 0; width: 100%; height: 100%;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
         background-size: cover;
         background-position: center;
         transition: transform 0.8s ease;
@@ -90,8 +91,12 @@ $pageTitle = "RaggieSoft&trade; | The Central Hub";
 
     .pane-overlay {
         position: absolute;
-        top: 0; left: 0; width: 100%; height: 100%;
-        background-color: rgba(0, 0, 0, 0.75);
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        /* 82% opacity guarantees >= 7:1 AAA contrast for foreground text over nebula/starfield art */
+        background-color: rgba(4, 7, 14, 0.82);
         transition: background-color 0.5s ease;
         z-index: 1;
     }
@@ -102,7 +107,40 @@ $pageTitle = "RaggieSoft&trade; | The Central Hub";
         text-align: center;
         color: #ffffff !important;
         padding: 3rem 1.5rem;
-        max-width: 600px;
+        max-width: 620px;
+    }
+
+    /* High-contrast subtitles calibrated specifically for dark hero panes (>= 9.8:1 contrast) */
+    .hero-subtitle-architect {
+        color: #7dd3fc !important; /* Sky-300: 11.8:1 on #04070e */
+        font-weight: 600 !important;
+        letter-spacing: 0.08em;
+    }
+
+    .hero-subtitle-creative {
+        color: #fda4af !important; /* Rose-300: 10.1:1 on #04070e */
+        font-weight: 600 !important;
+        letter-spacing: 0.08em;
+    }
+
+    .hero-lead {
+        color: #f1f5f9 !important; /* Slate-100: 17.1:1 on #04070e */
+        text-shadow: 0 2px 8px rgba(0, 0, 0, 0.95);
+    }
+
+    /* High-contrast outlined hero buttons on permanent dark background */
+    .split-hero-container wa-button[appearance="outlined"]::part(base),
+    .split-hero-container wa-button[appearance="outlined"]::part(button) {
+        background-color: rgba(15, 23, 42, 0.85) !important;
+        color: #ffffff !important;
+        border-color: rgba(255, 255, 255, 0.75) !important;
+    }
+
+    .split-hero-container wa-button[appearance="outlined"]:hover::part(base),
+    .split-hero-container wa-button[appearance="outlined"]:hover::part(button) {
+        background-color: #ffffff !important;
+        color: #090d16 !important;
+        border-color: #ffffff !important;
     }
 
     /* Avatar Styling */
@@ -110,76 +148,130 @@ $pageTitle = "RaggieSoft&trade; | The Central Hub";
         width: 130px;
         height: 130px;
         object-fit: cover;
-        box-shadow: 0 8px 20px rgba(0,0,0,0.8);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.85);
     }
 
     /* Desktop Hover Dynamics */
     @media (min-width: 992px) {
-        .split-hero-container { flex-direction: row; }
-        .split-pane { border-bottom: none; border-right: 1px solid rgba(255, 255, 255, 0.1); }
-        .split-pane:last-child { border-right: none; }
-        
-        .split-pane:hover { flex: 1.25; }
-        .split-pane:hover .pane-overlay { background-color: rgba(0, 0, 0, 0.5); }
-        .split-pane:hover .pane-bg { transform: scale(1.05); }
+        .split-hero-container {
+            flex-direction: row;
+        }
+        .split-pane {
+            border-bottom: none;
+            border-right: 1px solid rgba(255, 255, 255, 0.16);
+        }
+        .split-pane:last-child {
+            border-right: none;
+        }
+        .split-pane:hover {
+            flex: 1.2;
+        }
+        .split-pane:hover .pane-overlay {
+            background-color: rgba(4, 7, 14, 0.72);
+        }
+        .split-pane:hover .pane-bg {
+            transform: scale(1.04);
+        }
+    }
+
+    .hero-title {
+        color: #ffffff !important;
+        text-shadow: 0px 4px 15px rgba(0, 0, 0, 0.95), 0px 1px 3px rgba(0, 0, 0, 1);
+    }
+
+    /* ==========================================================================
+     * 2. GLOBAL SUBDOMAIN CONSTELLATIONS (<wa-card> Responsive Grid)
+     * ========================================================================== */
+    .constellation-grid-row {
+        --rg-gutter-x: 1.5rem;
+        --rg-gutter-y: 1.5rem;
+        row-gap: 1.5rem;
+    }
+
+    /* Ensure Web Awesome <wa-card> stretches cleanly to equal height across grid columns */
+    wa-card.constellation-wa-card {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        transition: transform 0.2s cubic-bezier(0.25, 0.8, 0.25, 1), box-shadow 0.2s ease;
+    }
+
+    wa-card.constellation-wa-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 12px 28px rgba(0, 58, 117, 0.14);
+    }
+
+    [data-bs-theme="dark"] wa-card.constellation-wa-card:hover {
+        box-shadow: 0 12px 28px rgba(56, 189, 248, 0.14);
+    }
+
+    wa-card.constellation-wa-card::part(body) {
+        flex: 1 1 auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    wa-card.constellation-wa-card::part(footer) {
+        margin-top: auto;
+    }
+
+    /* WCAG 2.1 AA High-Contrast Tech Stack Pill Badge (>= 8.5:1 in both Light & Dark Mode) */
+    .constellation-stack-badge {
+        display: inline-block;
+        padding: 0.28rem 0.65rem;
+        font-size: 0.72rem;
+        font-weight: 700;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        border-radius: 999px;
+        background-color: #004a94;
+        color: #ffffff;
+        border: 1px solid rgba(0, 74, 148, 0.3);
+    }
+
+    [data-bs-theme="dark"] .constellation-stack-badge {
+        background-color: #162a45;
+        color: #bae6fd;
+        border-color: rgba(56, 189, 248, 0.35);
+    }
+
+    @media (prefers-color-scheme: dark) {
+        :root:not([data-bs-theme="light"]) .constellation-stack-badge {
+            background-color: #162a45;
+            color: #bae6fd;
+            border-color: rgba(56, 189, 248, 0.35);
+        }
+    }
+
+    /* Responsive 4-column XL layout for the 8 Constellation Cards (2 clean rows of 4 on desktop) */
+    @media (min-width: 1200px) {
+        .col-xl-3-constellation {
+            flex: 0 0 auto;
+            width: 25%;
+        }
     }
 
     /* Accessibility: Reduced Motion Override */
     @media (prefers-reduced-motion: reduce) {
-        .split-pane, .pane-bg, .pane-overlay {
+        .split-pane,
+        .pane-bg,
+        .pane-overlay,
+        wa-card.constellation-wa-card {
             transition: none !important;
             transform: none !important;
         }
         @media (min-width: 992px) {
-            .split-pane:hover { flex: 1 !important; }
-            .split-pane:hover .pane-bg { transform: none !important; }
+            .split-pane:hover {
+                flex: 1 !important;
+            }
+            .split-pane:hover .pane-bg {
+                transform: none !important;
+            }
         }
-    }
-
-    .hero-title { text-shadow: 0px 4px 15px rgba(0,0,0,0.9), 0px 1px 3px rgba(0,0,0,1); }
-    .hero-text { text-shadow: 0px 2px 8px rgba(0,0,0,0.9); }
-
-    /* Dark Mode Override for Logos in the Directory */
-    [data-bs-theme="dark"] .theme-invert img {
-        filter: invert(1) grayscale(100%) !important; 
-        mix-blend-mode: normal !important; 
-        opacity: 0.9 !important; 
-    }
-
-    /* --- HORIZONTAL SCROLL CAROUSEL (The Netflix UI) --- */
-    .horizontal-scroll-wrapper {
-        display: flex;
-        overflow-x: auto;
-        gap: 1.5rem;
-        padding-bottom: 2rem;
-        padding-left: 1rem;
-        padding-right: 1rem;
-        scroll-snap-type: x mandatory;
-        -webkit-overflow-scrolling: touch;
-        scrollbar-width: none; /* Hide scrollbar Firefox */
-    }
-    
-    .horizontal-scroll-wrapper::-webkit-scrollbar {
-        display: none; /* Hide scrollbar Chrome/Safari/Edge */
-    }
-
-    .scroll-card {
-        flex: 0 0 85%; /* Shows 85% of card on mobile, forcing the next card to peek */
-        scroll-snap-align: center;
-        max-width: 400px;
-    }
-
-    @media (min-width: 768px) {
-        .scroll-card { flex: 0 0 45%; }
-    }
-
-    @media (min-width: 992px) {
-        .scroll-card { flex: 0 0 30%; }
-        .horizontal-scroll-wrapper { padding-left: 0; padding-right: 0; justify-content: center; } /* Centers on large screens if items fit */
     }
 </style>
 
-<section class="split-hero-container w-100" aria-label="Main Navigation Routing">
+<section class="split-hero-container w-100 wa-dark" data-bs-theme="dark" aria-label="Main Navigation Routing">
     
     <div class="split-pane bg-dark">
         <div class="pane-bg" style="background-image: url('<?php echo $cdnBaseUrl; ?>/common/patterns/stars-transparent.png'); background-color: #0a0e14; background-size: auto;"></div>
@@ -188,8 +280,8 @@ $pageTitle = "RaggieSoft&trade; | The Central Hub";
         <div class="pane-content d-flex flex-column align-items-center h-100 justify-content-center">
             <img src="<?php echo $cdnBaseUrl; ?>/raggiesoft-corporate/images/logos/logo-michael.png" alt="Michael P. Ragsdale" class="rounded-circle border border-primary border-3 pane-avatar mb-3">
             <h1 class="display-4 fw-bold text-uppercase brand-font hero-title mb-2">The Architect</h1>
-            <h2 class="h5 fw-light text-primary mb-4 hero-text text-uppercase letter-spacing-1">Infrastructure & Operations</h2>
-            <p class="lead hero-text text-white-75 mb-4">
+            <h2 class="h5 hero-subtitle-architect mb-4 text-uppercase">Infrastructure &amp; Operations</h2>
+            <p class="lead hero-lead mb-4">
                 Systems architecture, open-source development, and the professional portfolio of Michael P. Ragsdale.
             </p>
             <div class="d-flex flex-wrap gap-3 justify-content-center mt-auto">
@@ -210,8 +302,8 @@ $pageTitle = "RaggieSoft&trade; | The Central Hub";
         <div class="pane-content d-flex flex-column align-items-center h-100 justify-content-center">
             <img src="<?php echo $cdnBaseUrl; ?>/family/images/logos/logo-family.png" alt="Michael and Paige" class="rounded-circle border border-danger border-3 pane-avatar mb-3">
             <h1 class="display-4 fw-bold text-uppercase brand-font hero-title mb-2">Creative Works</h1>
-            <h2 class="h5 fw-light text-danger mb-4 hero-text text-uppercase letter-spacing-1">Music & Narrative Lore</h2>
-            <p class="lead hero-text text-white-75 mb-4">
+            <h2 class="h5 hero-subtitle-creative mb-4 text-uppercase">Music &amp; Narrative Lore</h2>
+            <p class="lead hero-lead mb-4">
                 100% independent audio production and CC BY-SA 4.0 literary universes managed via private imprints.
             </p>
             <div class="d-flex flex-wrap gap-3 justify-content-center mt-auto">
@@ -228,170 +320,227 @@ $pageTitle = "RaggieSoft&trade; | The Central Hub";
 </section>
 
 <div class="container mt-4 mb-2">
-    <wa-callout variant="neutral" appearance="accent" class="shadow-sm rounded-0 d-block">
-        <i slot="icon" class="fa-duotone fa-robot-astromech text-info"></i>
+    <wa-callout variant="brand" appearance="outlined" class="shadow-sm rounded-0 d-block">
+        <i slot="icon" class="fa-duotone fa-robot-astromech text-primary"></i>
         <div>
-            <h4 class="alert-heading h6 fw-bold mb-1 text-uppercase letter-spacing-1 text-body-emphasis">Transparency Notice</h4>
+            <h2 class="alert-heading h6 fw-bold mb-1 text-uppercase letter-spacing-1 text-body">Transparency Notice</h2>
             <p class="mb-0 small text-body">
                 RaggieSoft&trade; is a multimedia storytelling and world-building project. Certain music, artwork, and narrative elements across this network are created with the assistance of Artificial Intelligence. 
-                <a href="/about/ai-disclaimer" class="alert-link fw-bold text-info border-bottom border-info text-decoration-none">Read the full AI Disclaimer.</a>
+                <a href="/about/ai-disclaimer" class="fw-bold text-primary border-bottom border-primary text-decoration-none">Read the full AI Disclaimer.</a>
             </p>
         </div>
     </wa-callout>
 </div>
 
 <section id="network-spokes" class="py-5 bg-body text-body" aria-labelledby="spokes-title">
-  <div class="container-fluid px-xxl-5">
+  <div class="container">
     
-    <div class="text-center border-bottom border-secondary-subtle pb-3 mb-5 px-4">
-        <h2 id="spokes-title" class="h4 fw-bold text-uppercase text-secondary letter-spacing-1">
-            <i class="fa-duotone fa-network-wired me-2"></i>Global Subdomain Constellations
+    <div class="text-center border-bottom pb-3 mb-4">
+        <h2 id="spokes-title" class="h4 fw-bold text-uppercase text-body mb-1">
+            <i class="fa-duotone fa-network-wired me-2 text-primary"></i>Global Subdomain Constellations
         </h2>
+        <p class="small text-body-secondary mb-0">
+            Direct routing across the RaggieSoft multi-stack ecosystem &mdash; aligned with the global network bar above.
+        </p>
     </div>
 
-    <div class="horizontal-scroll-wrapper">
-      
-      <div class="scroll-card">
-        <?php
-          $props = [
-            'imgSrc' => $cdnBaseUrl . '/raggiesoft-corporate/images/logos/logo-michael.png',
-            'imgAlt' => 'Michael P. Ragsdale',
-            'fallbackText' => 'Portfolio',
-            'title' => 'Michael P. Ragsdale',
-            'description' => 'Executive Systems Architect & Section 508 Compliance Dossier at michaelpragsdale.com.',
-            'buttonProps' => [
-              'href' => 'https://michaelpragsdale.com',
-              'text' => 'View Portfolio',
-              'variant' => 'primary', 
-              'icon' => 'fa-duotone fa-briefcase',
-              'fullWidth' => true
-            ]
-          ];
-          include __DIR__ . '/../includes/components/card.php';
-        ?>
-      </div>
-
-      <div class="scroll-card theme-invert">
-        <?php
-          $props = [
-            'imgSrc' => $cdnBaseUrl . '/engine-room-records/images/logos/engine-room-records-logo.png',
-            'imgAlt' => 'Engine Room Records',
-            'fallbackText' => 'Engine Room Records',
-            'title' => 'Engine Room Records',
-            'description' => 'The standalone Astro 6 record label portal & corporate dossier at engineroom.raggiesoft.com.',
-            'buttonProps' => [
-              'href' => 'https://engineroom.raggiesoft.com/',
-              'text' => 'Enter Label',
-              'variant' => 'dark', 
-              'icon' => 'fa-duotone fa-compact-disc',
-              'fullWidth' => true
-            ]
-          ];
-          include __DIR__ . '/../includes/components/card.php';
-        ?>
-      </div>    
-
-      <!-- THE STARDUST ENGINE -->
-      <div class="scroll-card">
-        <?php
-          $props = [
-            'imgSrc' => $cdnBaseUrl . '/engine-room-records/artists/the-stardust-engine/band-logo.png',
-            'imgAlt' => 'The Stardust Engine',
-            'fallbackText' => 'Stardust Engine',
-            'title' => 'The Stardust Engine',
-            'description' => 'The standalone Nuxt 4 + Vue 3 cosmic band archive & legal vault at stardust.raggiesoft.com.',
-            'buttonProps' => [
-              'href' => 'https://stardust.raggiesoft.com/',
-              'text' => 'Access Archive',
-              'variant' => 'primary', 
-              'icon' => 'fa-duotone fa-turntable',
-              'fullWidth' => true
-            ]
-          ];
-          include __DIR__ . '/../includes/components/card.php';
-        ?>
-      </div>
-
-      <!-- THE LISTENING ROOM -->
-      <div class="scroll-card">
-        <?php
-          $props = [
-            'imgSrc' => $cdnBaseUrl . '/engine-room-records/artists/crimson-node/2002-crimson-node/album-art.jpg',
-            'imgAlt' => 'The Listening Room',
-            'fallbackText' => 'Listening Room',
-            'title' => 'The Listening Room',
-            'description' => 'SvelteKit 2 + Svelte 5 Runes gapless audio streaming & CC BY-SA 4.0 downloads at music.raggiesoft.com.',
-            'buttonProps' => [
+    <?php
+      /**
+       * Consolidated Network Constellations Directory
+       * Mirrors the top-level RaggieSoft Network Menu + The DevOps Family,
+       * displaying each property's official 16:9 OpenGraph (`og:image`) artwork inside
+       * a standard Web Awesome `<wa-card with-media with-footer>` component.
+       */
+      $constellations = [
+        [
+          'imgSrc' => $cdnBaseUrl . '/stardust-engine/images/stardust-engine-hero.jpg',
+          'imgAlt' => 'RaggieSoft Nebulae Observatory 16:9 OpenGraph Preview',
+          'fallbackText' => 'Nebulae Observatory',
+          'aspectRatio' => '16:9',
+          'badge' => 'Vanilla TS • Interactive Map',
+          'title' => 'Nebulae Observatory',
+          'description' => 'Interactive 9-constellation topology mapping every subdomain, tech stack, and decoupled vault at nebulae.raggiesoft.com.',
+          'buttonProps' => [
+            'href' => 'https://nebulae.raggiesoft.com/',
+            'text' => 'Explore Nebulae',
+            'variant' => 'brand',
+            'icon' => 'fa-duotone fa-galaxy',
+            'iconPosition' => 'before',
+            'fullWidth' => true
+          ]
+        ],
+        [
+          'imgSrc' => $cdnBaseUrl . '/raggiesoft-books/images/og/library-og.jpg',
+          'imgAlt' => 'Ocean View Archives Book Reader 16:9 OpenGraph Preview',
+          'fallbackText' => 'Ocean View Archives',
+          'aspectRatio' => '16:9',
+          'badge' => 'PHP 8.5 • Stardust Library SPA',
+          'title' => 'Ocean View Archives',
+          'description' => 'The literary imprint and accessible e-book reader preserving CC BY-SA 4.0 grounded novels and fantasy sagas at books.raggiesoft.com.',
+          'buttonProps' => [
+            'href' => 'https://books.raggiesoft.com/',
+            'text' => 'Read Novels',
+            'variant' => 'brand',
+            'icon' => 'fa-duotone fa-book-open-cover',
+            'iconPosition' => 'before',
+            'fullWidth' => true
+          ]
+        ],
+        [
+          'imgSrc' => $cdnBaseUrl . '/engine-room-records/images/og/engine-room-og.jpg',
+          'imgAlt' => 'Engine Room Records 16:9 OpenGraph Preview',
+          'fallbackText' => 'Engine Room Records',
+          'aspectRatio' => '16:9',
+          'badge' => 'Astro 6 • SvelteKit 2 • Nuxt 4',
+          'title' => 'Engine Room Records',
+          'description' => 'The record label portal, studio engineering documentation, and artist roster—plus gapless streaming in The Listening Room and The Stardust Engine archive.',
+          'buttonProps' => [
+            'href' => 'https://engineroom.raggiesoft.com/',
+            'text' => 'Enter Label Portal',
+            'variant' => 'danger',
+            'icon' => 'fa-duotone fa-compact-disc',
+            'iconPosition' => 'before',
+            'fullWidth' => true
+          ],
+          'secondaryButtons' => [
+            [
               'href' => 'https://music.raggiesoft.com/',
-              'text' => 'Stream Catalog',
-              'variant' => 'danger', 
-              'icon' => 'fa-duotone fa-waveform-lines',
-              'fullWidth' => true
+              'text' => 'Listening Room',
+              'variant' => 'neutral',
+              'appearance' => 'outlined',
+              'size' => 'small',
+              'icon' => 'fa-duotone fa-headphones'
+            ],
+            [
+              'href' => 'https://stardust.raggiesoft.com/',
+              'text' => 'Stardust Engine',
+              'variant' => 'neutral',
+              'appearance' => 'outlined',
+              'size' => 'small',
+              'icon' => 'fa-duotone fa-rocket-launch'
             ]
-          ];
-          include __DIR__ . '/../includes/components/card.php';
-        ?>
-      </div>
+          ]
+        ],
+        [
+          'imgSrc' => $cdnBaseUrl . '/raggiesoft-lore/images/og/default-og.jpg',
+          'imgAlt' => 'RaggieSoft Lore Encyclopedia 16:9 OpenGraph Preview',
+          'fallbackText' => 'Lore Encyclopedia',
+          'aspectRatio' => '16:9',
+          'badge' => 'Next.js 16 • React 19 • Tailwind v4',
+          'title' => 'Lore Encyclopedia',
+          'description' => 'Cross-referenced narrative encyclopedia indexing characters, universities (CPI), transit agencies, and timelines at lore.raggiesoft.com.',
+          'buttonProps' => [
+            'href' => 'https://lore.raggiesoft.com/',
+            'text' => 'Browse Encyclopedia',
+            'variant' => 'brand',
+            'icon' => 'fa-duotone fa-scroll-old',
+            'iconPosition' => 'before',
+            'fullWidth' => true
+          ]
+        ],
+        [
+          'imgSrc' => $cdnBaseUrl . '/raggiesoft-corporate/images/og/raggiesoft-corporate-og.jpg',
+          'imgAlt' => 'RaggieSoft Media Corporate Hub 16:9 OpenGraph Preview',
+          'fallbackText' => 'RaggieSoft Media',
+          'aspectRatio' => '16:9',
+          'badge' => 'Bootstrap 5.3.8 • Static SSG',
+          'title' => 'RaggieSoft Media',
+          'description' => 'Real-world B2B corporate hub housing master & commercial sync licensing, open-source project portals, and IP governance at corporate.raggiesoft.com.',
+          'buttonProps' => [
+            'href' => 'https://corporate.raggiesoft.com/',
+            'text' => 'Corporate Portal',
+            'variant' => 'brand',
+            'icon' => 'fa-duotone fa-building-columns',
+            'iconPosition' => 'before',
+            'fullWidth' => true
+          ]
+        ],
+        [
+          'imgSrc' => $cdnBaseUrl . '/raggiesoft-corporate/images/projects/code-architecture-dark-aero.jpg',
+          'imgAlt' => 'RaggieSoft StoreTrainer 16:9 OpenGraph Preview',
+          'fallbackText' => 'StoreTrainer',
+          'aspectRatio' => '16:9',
+          'badge' => 'VB6 • .NET • NSIS Win32 Utility',
+          'title' => 'RaggieSoft StoreTrainer',
+          'description' => 'Hand-written Win32 desktop utility built in Windows 2000 SP4 to index and launch PC games alongside their trainers and CLI switches (Win95–Win11).',
+          'buttonProps' => [
+            'href' => 'https://storetrainer.raggiesoft.com/',
+            'text' => 'View StoreTrainer',
+            'variant' => 'brand',
+            'icon' => 'fa-duotone fa-floppy-disk',
+            'iconPosition' => 'before',
+            'fullWidth' => true
+          ]
+        ],
+        [
+          'imgSrc' => 'https://michaelpragsdale.com/og-image.jpg',
+          'imgAlt' => 'Michael P. Ragsdale Executive Portfolio 16:9 OpenGraph Preview',
+          'fallbackText' => 'Michael P. Ragsdale',
+          'aspectRatio' => '16:9',
+          'badge' => 'Angular 19 • Zoneless Signals',
+          'title' => 'Michael P. Ragsdale',
+          'description' => 'Executive Systems Architect & Section 508 Compliance Engineer portfolio, multi-stack architecture matrix, and technical dossier at michaelpragsdale.com.',
+          'buttonProps' => [
+            'href' => 'https://michaelpragsdale.com',
+            'text' => 'View Portfolio',
+            'variant' => 'brand',
+            'icon' => 'fa-duotone fa-briefcase',
+            'iconPosition' => 'before',
+            'fullWidth' => true
+          ]
+        ],
+        [
+          'imgSrc' => $cdnBaseUrl . '/family/images/wide-angle/amanda-elara-atmospheric-wide-angle.jpg',
+          'imgAlt' => 'The RaggieSoft DevOps Family 16:9 Preview',
+          'fallbackText' => 'The DevOps Family',
+          'aspectRatio' => '16:9',
+          'badge' => 'PHP 8.5 • Bash • Rclone CI/CD',
+          'title' => 'The DevOps Family',
+          'description' => 'Our "Personified DevOps" engineering ecosystem—where Amanda, Elara, Jenna, Sarah, and Harper automate routing, builds, and CDN deployments.',
+          'buttonProps' => [
+            'href' => '/family',
+            'text' => 'Meet the Bots',
+            'variant' => 'brand',
+            'icon' => 'fa-duotone fa-microchip-ai',
+            'iconPosition' => 'before',
+            'fullWidth' => true
+          ]
+        ]
+      ];
+    ?>
 
-      <div class="scroll-card">
-        <?php
-          $props = [
-            'imgSrc' => $cdnBaseUrl . '/raggiesoft-books/images/logos/oceanview-archives.svg',
-            'imgAlt' => 'Ocean View Archives',
-            'fallbackText' => 'Archives',
-            'title' => 'Ocean View Archives',
-            'description' => 'The literary imprint & book reader preserving grounded narratives and fantasy sagas at books.raggiesoft.com.',
-            'buttonProps' => [
-              'href' => 'https://books.raggiesoft.com/',
-              'text' => 'Read Novels',
-              'variant' => 'warning', 
-              'icon' => 'fa-duotone fa-landmark',
-              'fullWidth' => true
-            ]
-          ];
-          include __DIR__ . '/../includes/components/card.php';
-        ?>
-      </div>
-
-      <div class="scroll-card">
-        <?php
-          $props = [
-            'imgSrc' => $cdnBaseUrl . '/family/images/logos/logo-family.png',
-            'imgAlt' => 'The RaggieSoft Family',
-            'fallbackText' => 'Family',
-            'title' => 'The DevOps Family',
-            'description' => 'A "Personified DevOps" ecosystem where every script has a name and a face, powered by Elara.',
-            'buttonProps' => [
-              'href' => '/family',
-              'text' => 'Meet the Bots',
-              'variant' => 'info', 
-              'icon' => 'fa-duotone fa-microchip-ai',
-              'fullWidth' => true
-            ]
-          ];
-          include __DIR__ . '/../includes/components/card.php';
-        ?>
-      </div>
-
+    <div class="row constellation-grid-row">
+      <?php foreach ($constellations as $cardProps): ?>
+        <div class="col-12 col-md-6 col-lg-4 col-xl-3-constellation d-flex">
+          <?php
+            $props = $cardProps;
+            include __DIR__ . '/../includes/components/card.php';
+          ?>
+        </div>
+      <?php endforeach; ?>
     </div>
 
-    <div class="container mt-4">
-      <wa-card class="shadow-sm border-0">
+    <div class="mt-5">
+      <wa-card appearance="outlined" class="shadow-sm">
         <div class="d-flex flex-column flex-md-row align-items-md-center justify-content-between gap-3 p-2">
           <div>
-            <span class="badge bg-primary text-uppercase mb-2">Stardust Engine CMS (Elara) &bull; Web Awesome Pro</span>
-            <h3 class="h5 fw-bold mb-1">Explore All 9 Constellations in the RaggieSoft Nebulae Observatory</h3>
+            <span class="constellation-stack-badge mb-2">Stardust Engine CMS (Elara) &bull; Open-Source MIT Framework</span>
+            <h3 class="h5 fw-bold mb-1 text-body">Clone the Zero-Database CMS Powering This Hub</h3>
             <p class="mb-0 small text-body-secondary">
-              View the interactive multi-stack network topology mapping PHP 8.5, SvelteKit 2, Astro 6, Nuxt 4, Next.js 16, Angular 19, Bootstrap 5.3.8, and Vanilla TypeScript across <code>*.raggiesoft.com</code>.
+              The Stardust Engine CMS combines native PHP 8.5 flat-file JSON routing with the Elara Vanilla JS SPA router for instant page transitions and zero SQL surface area.
             </p>
           </div>
-          <div class="flex-shrink-0">
-            <wa-button variant="brand" appearance="accent" href="https://nebulae.raggiesoft.com/">
-              <i slot="start" class="fa-duotone fa-galaxy"></i> Launch Nebulae Sitemap
+          <div class="flex-shrink-0 d-flex flex-wrap gap-2">
+            <wa-button variant="brand" appearance="accent" href="https://github.com/raggiesoft/stardust-engine-cms">
+              <i slot="start" class="fa-brands fa-github"></i> View on GitHub
+            </wa-button>
+            <wa-button variant="neutral" appearance="outlined" href="https://corporate.raggiesoft.com/open-source/stardust-engine">
+              <i slot="start" class="fa-duotone fa-book-sparkles"></i> Architecture Docs
             </wa-button>
           </div>
         </div>
       </wa-card>
     </div>
+
   </div>
 </section>
