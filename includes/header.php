@@ -69,7 +69,8 @@ $css_load_queue = [
     $path_theme_base . '/extras.css',   
     $path_theme_base . '/header.css',   
     $path_theme_base . '/footer.css',   
-    $path_theme_base . '/safety-net.css'
+    $path_theme_base . '/safety-net.css',
+    $cdn_root . "/common/css/raggiesoft-network.css"
 ];
 
 // 5. Critical Images
@@ -556,6 +557,24 @@ if (isset($customPageAssets) && is_array($customPageAssets)) {
     })();
     </script>
     
+    <nav class="rs-network-bar" aria-label="RaggieSoft Ecosystem Network">
+      <div class="rs-network-bar-inner">
+        <span class="rs-network-label">✦ RaggieSoft Network:</span>
+        <ul class="rs-network-links">
+          <li><a href="https://raggiesoft.com" aria-current="page" class="is-active">🌐 Hub</a></li>
+          <li><a href="https://nebulae.raggiesoft.com">🌌 Nebulae</a></li>
+          <li><a href="https://music.raggiesoft.com">🎧 Music</a></li>
+          <li><a href="https://books.raggiesoft.com">📚 Books</a></li>
+          <li><a href="https://stardust.raggiesoft.com">🚀 Stardust</a></li>
+          <li><a href="https://engineroom.raggiesoft.com">⚙️ Engine Room</a></li>
+          <li><a href="https://lore.raggiesoft.com">🏛️ Lore</a></li>
+          <li><a href="https://corporate.raggiesoft.com">🏢 Corporate</a></li>
+          <li><a href="https://storetrainer.raggiesoft.com">💾 StoreTrainer</a></li>
+          <li><a href="https://michaelpragsdale.com">👔 Michael P. Ragsdale</a></li>
+        </ul>
+      </div>
+    </nav>
+
     <header>
       <nav class="navbar navbar-expand-md sticky-top border-bottom border-primary border-opacity-50 bg-body">
         <div class="container-fluid d-flex flex-wrap justify-content-between align-items-center">
