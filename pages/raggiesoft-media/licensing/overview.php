@@ -200,6 +200,84 @@ $pageTitle = "Master Licensing Portal | RaggieSoft Media";
     </div>
 </wa-card>
 
+<!-- [AUDIO TRI-LICENSE FRAMEWORK & ZERO CONTENT-ID AMBUSH POLICY] -->
+<wa-card id="tri-license-audio" class="bg-hud-base w-100 shadow-sm mb-5 p-2" style="--border-color: var(--raggie-glass-border);">
+    <div class="p-4 p-lg-5">
+        <div class="d-flex flex-wrap align-items-center justify-content-between gap-2 mb-3 border-bottom border-secondary-subtle pb-3">
+            <div>
+                <h2 class="h4 fw-bold mb-1 text-uppercase text-glow-primary">
+                    <i class="fa-duotone fa-compact-disc me-2 text-warning" aria-hidden="true"></i>Engine Room Records&trade; Audio Tri-License Model
+                </h2>
+                <span class="font-monospace small text-body-secondary">CC BY-SA 4.0 &bull; Standard DSP Consumer License &bull; Direct Commercial Non-Exclusive Sync</span>
+            </div>
+            <wa-badge variant="success" appearance="accent" pill class="font-monospace">
+                <i slot="start" class="fa-solid fa-shield-check" aria-hidden="true"></i>ZERO CONTENT-ID AMBUSH GUARANTEE
+            </wa-badge>
+        </div>
+
+        <p class="text-body-secondary small mb-4">
+            Every musical recording released by <strong>Engine Room Records&trade;</strong> (including <em>The Stardust Engine</em>, <em>Fractured Prisms</em>, <em>The Paper Wall</em>, <em>Crimson Node</em>, <em>Mana Canvas</em>, and <em>The Arctic Symphony Project</em>) is <strong>tri-licensed</strong> so listeners, independent video creators, and commercial studios each have a frictionless legal pathway:
+        </p>
+
+        <div class="row g-4 mb-4">
+            <!-- Prong 1: CC BY-SA 4.0 -->
+            <div class="col-md-4">
+                <div class="p-3 rounded-3 h-100 border border-warning border-opacity-50" style="background: rgba(255, 179, 0, 0.06);">
+                    <div class="text-uppercase small fw-bold text-warning mb-2">
+                        <i class="fa-brands fa-creative-commons me-2" aria-hidden="true"></i>1. CC BY-SA 4.0 (Open Culture)
+                    </div>
+                    <p class="small text-body-secondary mb-0">
+                        Use, share, remix, and feature our music in independent YouTube videos, Twitch streams, podcasts, and community projects for free—simply credit the artist &amp; <em>Engine Room Records / RaggieSoft Media</em> and share adaptations under <strong>CC BY-SA 4.0</strong>.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Prong 2: Standard DSP License -->
+            <div class="col-md-4">
+                <div class="p-3 rounded-3 h-100 border border-info border-opacity-50" style="background: rgba(0, 195, 255, 0.06);">
+                    <div class="text-uppercase small fw-bold text-info mb-2">
+                        <i class="fa-solid fa-headphones me-2" aria-hidden="true"></i>2. Standard DSP License
+                    </div>
+                    <p class="small text-body-secondary mb-0">
+                        Stream and enjoy the official masters across global Digital Service Providers (Apple Music, Spotify, YouTube Music, Amazon Music, TIDAL, Pandora, and Qobuz) or gratis via <a href="https://music.raggiesoft.com" target="_blank" rel="noopener" class="text-info fw-bold">The Listening Room</a> under standard consumer streaming terms.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Prong 3: Commercial Non-Exclusive License -->
+            <div class="col-md-4">
+                <div class="p-3 rounded-3 h-100 border border-success border-opacity-50" style="background: rgba(25, 135, 84, 0.08);">
+                    <div class="text-uppercase small fw-bold text-success mb-2">
+                        <i class="fa-solid fa-file-contract me-2" aria-hidden="true"></i>3. Commercial Non-Exclusive
+                    </div>
+                    <p class="small text-body-secondary mb-0">
+                        Need to synchronize our music into a proprietary film, commercial broadcast, or closed-source video game <strong>without</strong> CC BY-SA 4.0 <em>ShareAlike</em> copyleft obligations? Obtain a direct <strong>Commercial Non-Exclusive Sync License</strong> from RaggieSoft Media.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Zero Content-ID Ambush Callout -->
+        <div class="p-3 p-lg-4 rounded-3 border border-success border-opacity-50" style="background: rgba(25, 135, 84, 0.06);">
+            <div class="d-flex flex-column flex-md-row align-items-md-center justify-content-between gap-3">
+                <div>
+                    <div class="text-uppercase small fw-bold text-success mb-1">
+                        <i class="fa-solid fa-ban me-2" aria-hidden="true"></i>Why We Never Opt Into YouTube Content ID or Meta Rights Manager ("Social Media Pack")
+                    </div>
+                    <p class="small text-body-secondary mb-0">
+                        Automated audio-fingerprinting bots (such as DistroKid's <em>Social Media Pack</em>, YouTube Content ID, and Meta Rights Manager) cannot read Creative Commons attributions or verify direct commercial sync licenses—they blindly demonetize and claim every video that matches a waveform. Because our catalog is tri-licensed, <strong>RaggieSoft Media strictly opts out of automated Content ID / Rights Manager monetization</strong> so creators using our music under <strong>CC BY-SA 4.0</strong> or a <strong>Commercial Non-Exclusive License</strong> are never ambushed by automated copyright claims.
+                    </p>
+                </div>
+                <div class="flex-shrink-0">
+                    <wa-button href="/raggiesoft-media/licensing/commercial" variant="brand" appearance="accent" size="small" class="fw-bold text-uppercase shadow">
+                        <i slot="start" class="fa-duotone fa-briefcase" aria-hidden="true"></i>Request Commercial License
+                    </wa-button>
+                </div>
+            </div>
+        </div>
+    </div>
+</wa-card>
+
 <wa-card class="bg-hud-base w-100 shadow-sm mb-5 p-2" style="--border-color: transparent;">
     <div class="p-4 p-lg-5 text-center text-md-start d-md-flex align-items-center justify-content-between">
         <div class="mb-4 mb-md-0 me-md-4">

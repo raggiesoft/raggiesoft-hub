@@ -83,7 +83,7 @@ if (isset($customPageAssets) && is_array($customPageAssets)) {
 }
 ?>
 <!doctype html>
-<html lang="en" class="h-100 <?php echo $force_dark_mode ? 'wa-theme-dark' : ''; ?>" data-fa-kit-code="ec060982d4" <?php echo $force_dark_mode ? 'data-bs-theme="dark"' : ''; ?>>
+<html lang="en" class="h-100 <?php echo $force_dark_mode ? 'wa-dark wa-theme-dark' : ''; ?>" data-fa-kit-code="ec060982d4" <?php echo $force_dark_mode ? 'data-bs-theme="dark"' : ''; ?>>
   <head>
     
     <?php 
@@ -377,9 +377,9 @@ if (isset($customPageAssets) && is_array($customPageAssets)) {
                 document.documentElement.setAttribute('data-bs-theme', theme);
                 document.documentElement.setAttribute('data-theme', theme);
                 if (theme === 'dark') {
-                    document.documentElement.classList.add('wa-theme-dark');
+                    document.documentElement.classList.add('wa-dark', 'wa-theme-dark');
                 } else {
-                    document.documentElement.classList.remove('wa-theme-dark');
+                    document.documentElement.classList.remove('wa-dark', 'wa-theme-dark');
                 }
             }
         };

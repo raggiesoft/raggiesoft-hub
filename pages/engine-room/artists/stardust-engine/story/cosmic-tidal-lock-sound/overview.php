@@ -41,7 +41,7 @@
 $pageTitle = "The Cosmic Tidal Lock Sound™ vs. 80s Cosmic Pop | Trademark & Sonic Architecture Explainer";
 ?>
 
-<div class="wa-theme-dark w-100" data-bs-theme="dark">
+<div class="wa-dark wa-theme-dark w-100" data-bs-theme="dark">
 <div class="starfield-container"><div class="starfield-twinkling"></div></div>
 
 <div class="container py-5 glass-container position-relative z-1">
@@ -316,9 +316,9 @@ $pageTitle = "The Cosmic Tidal Lock Sound™ vs. 80s Cosmic Pop | Trademark & So
                         </div>
                     </div>
                     
-                    <wa-callout variant="warning" appearance="filled-outlined" class="my-4">
-                        <i slot="icon" class="fa-duotone fa-book-atlas"></i>
-                        <strong>Lore Note:</strong> This track is unabashedly Cassidy’s favorite song on <a href="https://music.raggiesoft.com/the-stardust-engine/1997-hard-reset" target="_blank" rel="noopener" class="text-warning fw-bold text-decoration-underline"><em>Hard Reset</em></a>. It is a brilliant execution of pure, driving 1980s synth-pop, transposed entirely into the deep cosmos. Had Apex Records allowed them to write music this imaginative in 1987, this would have easily been the lead single on their debut. Lyrically, it uses the astrophysical concept of a "tidal lock"—where a moon is gravitationally bound to always show the exact same face to its planet—as a gorgeous metaphor for unwavering loyalty.
+                    <wa-callout variant="warning" appearance="filled-outlined" class="my-4" style="--background-color: #1c1604; --border-color: #FFD700; --color: #FFFFFF; background-color: #1c1604; color: #FFFFFF;">
+                        <i slot="icon" class="fa-duotone fa-book-atlas" style="color: #FFD700;"></i>
+                        <strong class="text-warning">Lore Note:</strong> <span class="text-white">This track is unabashedly Cassidy’s favorite song on <a href="https://music.raggiesoft.com/the-stardust-engine/1997-hard-reset" target="_blank" rel="noopener" class="text-warning fw-bold text-decoration-underline"><em>Hard Reset</em></a>. It is a brilliant execution of pure, driving 1980s synth-pop, transposed entirely into the deep cosmos. Had Apex Records allowed them to write music this imaginative in 1987, this would have easily been the lead single on their debut. Lyrically, it uses the astrophysical concept of a "tidal lock"—where a moon is gravitationally bound to always show the exact same face to its planet—as a gorgeous metaphor for unwavering loyalty.</span>
                     </wa-callout>
 
                     <wa-divider class="my-5"></wa-divider>
@@ -432,7 +432,7 @@ $pageTitle = "The Cosmic Tidal Lock Sound™ vs. 80s Cosmic Pop | Trademark & So
 </div>
 </div>
 
-<!-- [STYLE] Web Awesome Card Equal-Height Flex Overrides (per llms-stardust-engine-cms.txt) -->
+<!-- [STYLE] Web Awesome Card Equal-Height & WCAG 2.1 AAA Void Contrast Overrides -->
 <style>
     wa-card.hover-card::part(base) {
         height: 100%;
@@ -443,5 +443,41 @@ $pageTitle = "The Cosmic Tidal Lock Sound™ vs. 80s Cosmic Pop | Trademark & So
         flex: 1 1 auto;
         display: flex;
         flex-direction: column;
+    }
+    wa-callout[variant="warning"],
+    wa-callout[variant="warning"]::part(base) {
+        --wa-color-warning-fill-quiet: #1c1604 !important;
+        --wa-color-warning-border-quiet: #FFD700 !important;
+        --wa-color-warning-on-quiet: #FFFFFF !important;
+        background-color: #1c1604 !important;
+        border-color: #FFD700 !important;
+        color: #FFFFFF !important;
+    }
+    wa-callout[variant="warning"]::part(message) {
+        color: #FFFFFF !important;
+    }
+    wa-callout[variant="warning"]::part(icon) {
+        color: #FFD700 !important;
+    }
+    wa-button[variant="neutral"][appearance="outlined"]::part(base) {
+        color: #FFFFFF !important;
+        border-color: #B0B0C0 !important;
+        background-color: rgba(255, 255, 255, 0.04) !important;
+    }
+    wa-button[variant="neutral"][appearance="outlined"]:hover::part(base) {
+        color: #050508 !important;
+        background-color: #00FFFF !important;
+        border-color: #00FFFF !important;
+    }
+    .text-info { color: #00FFFF !important; }
+    .text-warning { color: #FFD700 !important; }
+    .text-success { color: #00FF9D !important; }
+    .text-primary { color: #B87CFF !important; }
+    code {
+        background-color: #121222 !important;
+        color: #00FFFF !important;
+        border: 1px solid #3A3A58;
+        padding: 0.12rem 0.4rem;
+        border-radius: 0.25rem;
     }
 </style>
