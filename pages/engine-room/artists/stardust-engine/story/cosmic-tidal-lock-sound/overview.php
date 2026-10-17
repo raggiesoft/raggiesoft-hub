@@ -162,7 +162,7 @@ $pageTitle = "The Cosmic Tidal Lock Sound™ vs. 80s Cosmic Pop | Trademark & So
                             </div>
                             <h3 class="h5 text-white fw-bold mb-1">The Cosmic Tidal Lock Sound&trade; (20-Track Master Evolution)</h3>
                             <p class="small text-white-75 mb-0">
-                                Stream the complete 20-song sonic arc curated by <strong>Cassidy O'Connell</strong>: opening with the catalyst track <em>"Moon 1 (Tidal Lock)"</em> (1997), flashing back to the 1986 Apex-rejected prototype <em>"Terminal Velvet"</em> (released on 2001's <em>Midnight Drivers</em>), ascending through the three-part <em>Apoapsis Suite</em> and Cassidy's 15-minute autobiographical resume centerpiece <em>"Escape Velocity (Ad Astra)"</em>, and culminating in all 14 tracks of <em>Starfield Calibration</em> (2011).
+                                Stream the complete 20-song sonic arc curated by <strong>Cassidy O'Connell</strong> (anchored by her brother and safe person <strong>Ryan O'Connell</strong>): opening with the 1997 catalyst track <em>"Moon 1 (Tidal Lock)"</em>, visiting 2001's <em>"Terminal Velvet"</em> (created in 2001 for <em>Midnight Drivers</em> to thematically represent a 1986 song Apex Records would have left on the cutting-room floor—before Cassidy had named the style), ascending through the three-part <em>Apoapsis Suite</em> and Cassidy's 15-minute autobiographical resume centerpiece <em>"Escape Velocity (Ad Astra)"</em>, and culminating in all 14 tracks of <em>Starfield Calibration</em> (2011).
                             </p>
                         </div>
                         <div class="flex-shrink-0">
