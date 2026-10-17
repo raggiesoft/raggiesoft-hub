@@ -70,7 +70,7 @@
             <div class="col-md-6 text-center text-md-start small text-body-secondary">
                 <p class="mb-1">&copy; <?php echo date("Y"); ?> Michael Ragsdale.</p>
                 <p class="mb-0">
-                    <a href="/raggiesoft-media/licensing" class="text-reset text-decoration-none border-bottom">CC BY-SA 4.0</a>
+                    <a href="https://corporate.raggiesoft.com/licensing" class="text-reset text-decoration-none border-bottom">CC BY-SA 4.0</a>
                 </p>
             </div>
             <div class="col-md-6 text-center text-md-end small text-body-secondary mt-3 mt-md-0">

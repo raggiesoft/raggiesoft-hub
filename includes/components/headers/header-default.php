@@ -56,59 +56,59 @@ $isContact     = str_starts_with($request_uri, '/contact');
     </wa-dropdown-item>
   </wa-dropdown>
 
-  <!-- Creative Works Dropdown: Links to Music, Literature, and Strategy Guides -->
+  <!-- Creative Works Dropdown: Links directly to Music, Literature, and Lore Subdomains -->
   <wa-dropdown placement="bottom-start">
     <wa-button slot="trigger" appearance="plain" with-caret class="<?php echo $isCreative ? 'text-primary fw-bold' : 'text-body-secondary'; ?>">
       <i slot="start" class="fa-duotone fa-layer-group"></i> Creative Works
     </wa-button>
     <div class="px-3 py-2 small text-uppercase fw-bold text-body-secondary">Multimedia &amp; Audio</div>
-    <wa-dropdown-item value="/engine-room">
+    <wa-dropdown-item value="https://engineroom.raggiesoft.com/">
       <i slot="icon" class="fa-solid fa-industry text-danger"></i> Engine Room Records HQ
     </wa-dropdown-item>
-    <wa-dropdown-item value="/engine-room/artists/stardust-engine">
+    <wa-dropdown-item value="https://stardust.raggiesoft.com/">
       <i slot="icon" class="fa-duotone fa-rocket-launch text-primary"></i> The Stardust Engine
     </wa-dropdown-item>
-    <wa-dropdown-item value="https://music.raggiesoft.com">
+    <wa-dropdown-item value="https://music.raggiesoft.com/">
       <i slot="icon" class="fa-duotone fa-turntable text-warning"></i> The Listening Room
     </wa-dropdown-item>
     <wa-divider></wa-divider>
-    <div class="px-3 py-2 small text-uppercase fw-bold text-body-secondary">Literature (Ocean View Archives)</div>
-    <wa-dropdown-item value="/raggiesoft-books">
-      <i slot="icon" class="fa-duotone fa-landmark text-info"></i> Ocean View Archives Hub
+    <div class="px-3 py-2 small text-uppercase fw-bold text-body-secondary">Literature &amp; Lore</div>
+    <wa-dropdown-item value="https://books.raggiesoft.com/">
+      <i slot="icon" class="fa-duotone fa-landmark text-info"></i> Ocean View Archives (Book Reader)
     </wa-dropdown-item>
-    <wa-dropdown-item value="/raggiesoft-books/aethel-saga">
-      <i slot="icon" class="fa-duotone fa-sword text-warning"></i> The Silver Gauntlet of Aethel
+    <wa-dropdown-item value="https://lore.raggiesoft.com/">
+      <i slot="icon" class="fa-duotone fa-book-atlas text-warning"></i> RaggieSoft Lore Encyclopedia
     </wa-dropdown-item>
-    <wa-dropdown-item value="/raggiesoft-books/knox">
-      <i slot="icon" class="fa-duotone fa-leaf text-success"></i> Project: KNOX
+    <wa-dropdown-item value="https://nebulae.raggiesoft.com/">
+      <i slot="icon" class="fa-duotone fa-galaxy text-primary"></i> RaggieSoft Nebulae Observatory
     </wa-dropdown-item>
   </wa-dropdown>
 
-  <!-- RaggieSoft Media Dropdown: B2B Licensing and Open Source Architecture -->
+  <!-- RaggieSoft Media Dropdown: B2B Licensing and Open Source Architecture on corporate.raggiesoft.com -->
   <wa-dropdown placement="bottom-start">
     <wa-button slot="trigger" appearance="plain" with-caret class="<?php echo $isMedia ? 'text-primary fw-bold' : 'text-body-secondary'; ?>">
       <i slot="start" class="fa-duotone fa-building"></i> RaggieSoft Media
     </wa-button>
     <div class="px-3 py-2 small text-uppercase fw-bold text-body-secondary">B2B Operations</div>
-    <wa-dropdown-item value="/raggiesoft-media">
+    <wa-dropdown-item value="https://corporate.raggiesoft.com/">
       <i slot="icon" class="fa-duotone fa-network-wired text-primary"></i> Corporate Hub
     </wa-dropdown-item>
-    <wa-dropdown-item value="/raggiesoft-media/licensing">
+    <wa-dropdown-item value="https://corporate.raggiesoft.com/licensing">
       <i slot="icon" class="fa-duotone fa-scale-balanced text-warning"></i> Master Licensing
     </wa-dropdown-item>
-    <wa-dropdown-item value="/raggiesoft-media/licensing/commercial">
+    <wa-dropdown-item value="https://corporate.raggiesoft.com/licensing/commercial">
       <i slot="icon" class="fa-solid fa-briefcase text-success"></i> Commercial Portal
     </wa-dropdown-item>
     <wa-divider></wa-divider>
     <div class="px-3 py-2 small text-uppercase fw-bold text-body-secondary">Infrastructure &amp; Software</div>
-    <wa-dropdown-item value="/raggiesoft-media/projects">
+    <wa-dropdown-item value="https://corporate.raggiesoft.com/projects">
       <i slot="icon" class="fa-duotone fa-boxes-stacked text-info"></i> Open Source Projects Hub
     </wa-dropdown-item>
-    <wa-dropdown-item value="/raggiesoft-media/projects/stardust-engine-cms">
+    <wa-dropdown-item value="https://corporate.raggiesoft.com/projects/stardust-engine-cms">
       <i slot="icon" class="fa-brands fa-osi text-primary"></i> Stardust Engine CMS (Elara)
     </wa-dropdown-item>
-    <wa-dropdown-item value="/raggiesoft-media/projects/storetrainer">
-      <i slot="icon" class="fa-duotone fa-graduation-cap text-warning"></i> StoreTrainer LMS
+    <wa-dropdown-item value="https://storetrainer.raggiesoft.com/">
+      <i slot="icon" class="fa-duotone fa-floppy-disk text-warning"></i> RaggieSoft StoreTrainer
     </wa-dropdown-item>
   </wa-dropdown>
 
@@ -121,3 +121,4 @@ $isContact     = str_starts_with($request_uri, '/contact');
   </wa-button>
 
 </div>
+

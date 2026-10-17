@@ -70,10 +70,10 @@ $root = 'https://michaelpragsdale.com';
 </h6>
 
 <div class="d-flex flex-column gap-1 mb-4">
-    <wa-button appearance="plain" href="/engine-room" class="text-body w-100 text-start justify-content-start" style="text-align: left;">
+    <wa-button appearance="plain" href="https://engineroom.raggiesoft.com/" class="text-body w-100 text-start justify-content-start" style="text-align: left;">
         <i slot="start" class="fa-solid fa-industry"></i> Engine Room HQ
     </wa-button>
-    <wa-button appearance="plain" href="/engine-room/artists/stardust-engine" class="text-body w-100 text-start justify-content-start" style="text-align: left;">
+    <wa-button appearance="plain" href="https://stardust.raggiesoft.com/" class="text-body w-100 text-start justify-content-start" style="text-align: left;">
         <i slot="start" class="fa-solid fa-rocket-launch"></i> The Stardust Engine
     </wa-button>
 </div>

@@ -39,7 +39,7 @@ $isArchitect = str_starts_with($request_uri, '/about/michael-ragsdale');
     </wa-dropdown-item>
   </wa-dropdown>
 
-  <wa-button appearance="plain" href="/engine-room">
+  <wa-button appearance="plain" href="https://engineroom.raggiesoft.com/">
     <i slot="start" class="fa-solid fa-industry me-2" aria-hidden="true"></i>Engine Room
   </wa-button>
 

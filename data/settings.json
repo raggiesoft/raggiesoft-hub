@@ -27,18 +27,13 @@
     "navbarBrandClass": "rounded-circle"
   },
   "sidebarMap": {
-    "/engine-room": "engine-room/sidebar-engine-room-history",
     "/library": "sidebar-library",
     "/docs": "sidebar-docs"
   },
   "headerMap": {
-    "/engine-room": "engine-room/header-engine-room",
-    "/oconnell-trust": "header-oconnell",
     "/admin": "header-admin"
   },
   "footerMap": {
-    "/": "footer-default",
-    "/oconnell-trust": "footer-trust",
-    "/engine-room": "engine-room/footer-engine-room"
+    "/": "footer-default"
   }
 }

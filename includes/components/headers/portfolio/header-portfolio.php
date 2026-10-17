@@ -46,7 +46,7 @@ $isHub = ($request_uri === '/about/michael-ragsdale');
   
 
   
-      <wa-button appearance="plain" href="/raggiesoft-media" class=" hover-opacity">
+      <wa-button appearance="plain" href="https://corporate.raggiesoft.com/" class=" hover-opacity">
         <i slot="start" class="fa-duotone fa-arrow-right-from-bracket me-2"></i><span class="small">RaggieSoft Media</span>
       </wa-button>
   

@@ -196,7 +196,7 @@ $pageTitle = "RaggieSoft&trade; | The Central Hub";
                 <wa-button variant="brand" appearance="accent" size="large" href="https://michaelpragsdale.com" class="rounded-0 fw-bold px-4 shadow-sm text-uppercase">
                     <i slot="start" class="fa-duotone fa-user-visor"></i> View Portfolio
                 </wa-button>
-                <wa-button variant="neutral" appearance="outlined" size="large" href="/raggiesoft-media" class="rounded-0 fw-bold px-4 shadow-sm text-uppercase">
+                <wa-button variant="neutral" appearance="outlined" size="large" href="https://corporate.raggiesoft.com/" class="rounded-0 fw-bold px-4 shadow-sm text-uppercase">
                     <i slot="start" class="fa-solid fa-building"></i> RaggieSoft Media
                 </wa-button>
             </div>
@@ -215,10 +215,10 @@ $pageTitle = "RaggieSoft&trade; | The Central Hub";
                 100% independent audio production and CC BY-SA 4.0 literary universes managed via private imprints.
             </p>
             <div class="d-flex flex-wrap gap-3 justify-content-center mt-auto">
-                <wa-button variant="danger" appearance="accent" size="large" href="/engine-room" class="rounded-0 fw-bold px-4 shadow-sm text-uppercase">
+                <wa-button variant="danger" appearance="accent" size="large" href="https://engineroom.raggiesoft.com/" class="rounded-0 fw-bold px-4 shadow-sm text-uppercase">
                     <i slot="start" class="fa-solid fa-compact-disc"></i> Engine Room Records
                 </wa-button>
-                <wa-button variant="neutral" appearance="outlined" size="large" href="/raggiesoft-books" class="rounded-0 fw-bold px-4 shadow-sm text-uppercase">
+                <wa-button variant="neutral" appearance="outlined" size="large" href="https://books.raggiesoft.com/" class="rounded-0 fw-bold px-4 shadow-sm text-uppercase">
                     <i slot="start" class="fa-solid fa-landmark"></i> Ocean View Archives
                 </wa-button>
             </div>
@@ -245,7 +245,7 @@ $pageTitle = "RaggieSoft&trade; | The Central Hub";
     
     <div class="text-center border-bottom border-secondary-subtle pb-3 mb-5 px-4">
         <h2 id="spokes-title" class="h4 fw-bold text-uppercase text-secondary letter-spacing-1">
-            <i class="fa-duotone fa-network-wired me-2"></i>Global Directory
+            <i class="fa-duotone fa-network-wired me-2"></i>Global Subdomain Constellations
         </h2>
     </div>
 
@@ -258,7 +258,7 @@ $pageTitle = "RaggieSoft&trade; | The Central Hub";
             'imgAlt' => 'Michael P. Ragsdale',
             'fallbackText' => 'Portfolio',
             'title' => 'Michael P. Ragsdale',
-            'description' => 'Digital Portfolio & Resume. Full Stack Development and Systems Architecture.',
+            'description' => 'Executive Systems Architect & Section 508 Compliance Dossier at michaelpragsdale.com.',
             'buttonProps' => [
               'href' => 'https://michaelpragsdale.com',
               'text' => 'View Portfolio',
@@ -278,9 +278,9 @@ $pageTitle = "RaggieSoft&trade; | The Central Hub";
             'imgAlt' => 'Engine Room Records',
             'fallbackText' => 'Engine Room Records',
             'title' => 'Engine Room Records',
-            'description' => 'The independent record label managing The Stardust Engine and active musical catalogs.',
+            'description' => 'The standalone Astro 6 record label portal & corporate dossier at engineroom.raggiesoft.com.',
             'buttonProps' => [
-              'href' => '/engine-room',
+              'href' => 'https://engineroom.raggiesoft.com/',
               'text' => 'Enter Label',
               'variant' => 'dark', 
               'icon' => 'fa-duotone fa-compact-disc',
@@ -299,9 +299,9 @@ $pageTitle = "RaggieSoft&trade; | The Central Hub";
             'imgAlt' => 'The Stardust Engine',
             'fallbackText' => 'Stardust Engine',
             'title' => 'The Stardust Engine',
-            'description' => 'The founding artist. A family-owned progressive rock unit blending 80s synth-pop with industrial rock.',
+            'description' => 'The standalone Nuxt 4 + Vue 3 cosmic band archive & legal vault at stardust.raggiesoft.com.',
             'buttonProps' => [
-              'href' => '/engine-room/artists/stardust-engine',
+              'href' => 'https://stardust.raggiesoft.com/',
               'text' => 'Access Archive',
               'variant' => 'primary', 
               'icon' => 'fa-duotone fa-turntable',
@@ -312,18 +312,18 @@ $pageTitle = "RaggieSoft&trade; | The Central Hub";
         ?>
       </div>
 
-      <!-- NEW: CRIMSON NODE -->
+      <!-- THE LISTENING ROOM -->
       <div class="scroll-card">
         <?php
           $props = [
             'imgSrc' => $cdnBaseUrl . '/engine-room-records/artists/crimson-node/2002-crimson-node/album-art.jpg',
-            'imgAlt' => 'Crimson Node',
-            'fallbackText' => 'Crimson Node',
-            'title' => 'Crimson Node',
-            'description' => '1980s progressive rock and stadium synth-pop. The unstoppable musical phalanx of the Miller and Brooks family.',
+            'imgAlt' => 'The Listening Room',
+            'fallbackText' => 'Listening Room',
+            'title' => 'The Listening Room',
+            'description' => 'SvelteKit 2 + Svelte 5 Runes gapless audio streaming & CC BY-SA 4.0 downloads at music.raggiesoft.com.',
             'buttonProps' => [
-              'href' => '/engine-room/artists/crimson-node',
-              'text' => 'Access Archive',
+              'href' => 'https://music.raggiesoft.com/',
+              'text' => 'Stream Catalog',
               'variant' => 'danger', 
               'icon' => 'fa-duotone fa-waveform-lines',
               'fullWidth' => true
@@ -340,10 +340,10 @@ $pageTitle = "RaggieSoft&trade; | The Central Hub";
             'imgAlt' => 'Ocean View Archives',
             'fallbackText' => 'Archives',
             'title' => 'Ocean View Archives',
-            'description' => 'The literary imprint preserving grounded narratives, sci-fi lore, and fantasy sagas.',
+            'description' => 'The literary imprint & book reader preserving grounded narratives and fantasy sagas at books.raggiesoft.com.',
             'buttonProps' => [
-              'href' => '/raggiesoft-books',
-              'text' => 'Explore Lore',
+              'href' => 'https://books.raggiesoft.com/',
+              'text' => 'Read Novels',
               'variant' => 'warning', 
               'icon' => 'fa-duotone fa-landmark',
               'fullWidth' => true
@@ -353,14 +353,14 @@ $pageTitle = "RaggieSoft&trade; | The Central Hub";
         ?>
       </div>
 
-       <div class="scroll-card">
+      <div class="scroll-card">
         <?php
           $props = [
             'imgSrc' => $cdnBaseUrl . '/family/images/logos/logo-family.png',
             'imgAlt' => 'The RaggieSoft Family',
             'fallbackText' => 'Family',
             'title' => 'The DevOps Family',
-            'description' => 'A "Personified DevOps" ecosystem where every script has a name and a face.',
+            'description' => 'A "Personified DevOps" ecosystem where every script has a name and a face, powered by Elara.',
             'buttonProps' => [
               'href' => '/family',
               'text' => 'Meet the Bots',
@@ -373,6 +373,25 @@ $pageTitle = "RaggieSoft&trade; | The Central Hub";
         ?>
       </div>
 
+    </div>
+
+    <div class="container mt-4">
+      <wa-card class="shadow-sm border-0">
+        <div class="d-flex flex-column flex-md-row align-items-md-center justify-content-between gap-3 p-2">
+          <div>
+            <span class="badge bg-primary text-uppercase mb-2">Stardust Engine CMS (Elara) &bull; Web Awesome Pro</span>
+            <h3 class="h5 fw-bold mb-1">Explore All 9 Constellations in the RaggieSoft Nebulae Observatory</h3>
+            <p class="mb-0 small text-body-secondary">
+              View the interactive multi-stack network topology mapping PHP 8.5, SvelteKit 2, Astro 6, Nuxt 4, Next.js 16, Angular 19, Bootstrap 5.3.8, and Vanilla TypeScript across <code>*.raggiesoft.com</code>.
+            </p>
+          </div>
+          <div class="flex-shrink-0">
+            <wa-button variant="brand" appearance="accent" href="https://nebulae.raggiesoft.com/">
+              <i slot="start" class="fa-duotone fa-galaxy"></i> Launch Nebulae Sitemap
+            </wa-button>
+          </div>
+        </div>
+      </wa-card>
     </div>
   </div>
 </section>

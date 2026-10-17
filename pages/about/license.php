@@ -38,7 +38,7 @@ $pageTitle = "Licensing Portal Moved | RaggieSoft";
             <wa-card class="card border-warning bg-warning-subtle shadow-sm mb-4 w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
                 <div class="card-body p-4 p-md-5">
                     <h2 class="h4 fw-bold text-warning-emphasis mb-3">Please update your bookmarks.</h2>
-                    <wa-button variant="warning" appearance="accent" size="large" pill href="/raggiesoft-media/licensing" class="px-5 fw-bold shadow-sm text-dark text-uppercase" style="letter-spacing: 1px;">
+                    <wa-button variant="warning" appearance="accent" size="large" pill href="https://corporate.raggiesoft.com/licensing" class="px-5 fw-bold shadow-sm text-dark text-uppercase" style="letter-spacing: 1px;">
                         Go to the New Licensing Portal <i slot="end" class="fa-solid fa-arrow-right" aria-hidden="true"></i>
                     </wa-button>
                 </div>

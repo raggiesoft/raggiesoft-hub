@@ -38,7 +38,8 @@ if (empty($entry) || preg_match('/\.\./', $entry)) {
 
 // Find the lore file. We support nested paths if hyphens are used or explicitly passed
 // E.g., characters/ashley-raybourn
-$filePath = realpath(ROOT_PATH . '/../raggiesoft-assets/raggiesoft-books/encyclopedia/' . $entry . '.md');
+$filePath = realpath(ROOT_PATH . '/../raggiesoft-assets/raggiesoft-books/encyclopedia/' . $entry . '.md')
+    ?: realpath(ROOT_PATH . '/../../raggiesoft-assets/raggiesoft-books/encyclopedia/' . $entry . '.md');
 
 if (!$filePath || !file_exists($filePath)) {
     http_response_code(404);

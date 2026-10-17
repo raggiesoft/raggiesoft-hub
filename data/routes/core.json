@@ -20,10 +20,5 @@
   "/api/lore": {
     "view": "pages/api/lore-fetcher",
     "isApi": true
-  },
-  "/encyclopedia/view": {
-    "view": "pages/encyclopedia/viewer",
-    "title": "Stardust Lore Encyclopedia",
-    "showSidebar": false
   }
 }

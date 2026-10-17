@@ -64,7 +64,7 @@ $currentUri = $_SERVER['REQUEST_URI'];
 </h6>
 
 <div class="d-flex flex-column gap-1">
-    <wa-button appearance="<?= str_contains($currentUri, '/license') ? 'filled-outlined' : 'plain' ?>" variant="<?= str_contains($currentUri, '/license') ? 'brand' : 'neutral' ?>" href="/raggiesoft-media/licensing" class="w-100 text-start justify-content-start" style="text-align: left;">
+    <wa-button appearance="<?= str_contains($currentUri, '/license') ? 'filled-outlined' : 'plain' ?>" variant="<?= str_contains($currentUri, '/license') ? 'brand' : 'neutral' ?>" href="https://corporate.raggiesoft.com/licensing" class="w-100 text-start justify-content-start" style="text-align: left;">
         <i slot="start" class="fa-duotone fa-scale-balanced"></i> Licenses (MIT/CC)
     </wa-button>
     <wa-button appearance="<?= str_contains($currentUri, '/privacy') ? 'filled-outlined' : 'plain' ?>" variant="<?= str_contains($currentUri, '/privacy') ? 'brand' : 'neutral' ?>" href="/about/privacy" class="w-100 text-start justify-content-start" style="text-align: left;">

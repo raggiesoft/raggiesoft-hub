@@ -24,7 +24,7 @@
     "sidebar": "about/sidebar-about",
     "showSidebar": true,
     "navbarBrandText": "<span class=\"d-none d-md-inline\">The </span>Stardust Engine",
-    "navbarBrandLink": "/engine-room/artists/stardust-engine",
+    "navbarBrandLink": "https://stardust.raggiesoft.com/",
     "navbarBrandLogo": "/engine-room-records/artists/the-stardust-engine/band-logo.png",
     "navbarBrandAlt": "The Stardust Engine Retro Logo",
     "brandFont": ["Audiowide", "sans-serif"]
@@ -40,7 +40,7 @@
     "showSidebar": true,
     "navbarBrandLogo": "/engine-room-records/images/logos/engine-room-records-logo.png",
     "navbarBrandText": "Engine Room<span class=\"d-none d-md-inline\"> Records</span>",
-    "navbarBrandLink": "/engine-room",
+    "navbarBrandLink": "https://engineroom.raggiesoft.com/",
     "navbarBrandAlt": "Engine Room Records Official Seal",
     "navbarBrandClass": "rounded-0 navbar-brand-corporate-img"
   },
@@ -83,13 +83,13 @@
     "sidebar": "about/sidebar-about",
     "showSidebar": true,
     "navbarBrandText": "The Silver Gauntlet",
-    "navbarBrandLink": "/raggiesoft-books/aethel-saga",
+    "navbarBrandLink": "https://books.raggiesoft.com/read/the-silver-gauntlet-of-aethel",
     "navbarBrandLogo": "/aethel/images/logos/silver-gauntlet-of-aethel-logo.png",
     "navbarBrandAlt": "Silver Gauntlet of Aethel Logo",
     "brandFont": ["Cinzel", "serif"]
   },
   "/about/license": {
-    "redirect": "/raggiesoft-media/licensing"
+    "redirect": "https://corporate.raggiesoft.com/licensing"
   },
   "/about/privacy": {
     "view": "pages/about/privacy",

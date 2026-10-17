@@ -120,7 +120,7 @@
             </wa-card>
 
             <div class="text-center pt-4">
-                <wa-button variant="warning" appearance="outlined" size="large" href="/raggiesoft-books/aethel-saga" class="rounded-0 px-5 py-3 border-2 cinzel-font fw-bold hover-warning">
+                <wa-button variant="warning" appearance="outlined" size="large" href="https://books.raggiesoft.com/read/the-silver-gauntlet-of-aethel" class="rounded-0 px-5 py-3 border-2 cinzel-font fw-bold hover-warning">
                     <i slot="start" class="fa-duotone fa-book-open-reader"></i>Open The Tome
                 </wa-button>
                 <div class="mt-3">

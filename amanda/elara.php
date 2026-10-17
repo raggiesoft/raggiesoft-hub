@@ -33,6 +33,70 @@ if (strlen($request_uri) > 1) {
     $request_uri = rtrim($request_uri, '/');
 }
 
+// --- 0. SUBDOMAIN SPIN-OFF 301 REDIRECTS (StoreTrainer, Corporate, Books, Lore, Engine Room & Stardust Engine) ---
+if (strpos($request_uri, '/products/storetrainer') === 0) {
+    header('Location: https://storetrainer.raggiesoft.com/', true, 301);
+    exit;
+}
+if (strpos($request_uri, '/raggiesoft-media') === 0) {
+    $sub = ltrim(substr($request_uri, strlen('/raggiesoft-media')), '/');
+    header('Location: https://corporate.raggiesoft.com/' . $sub, true, 301);
+    exit;
+}
+if (strpos($request_uri, '/raggiesoft-books') === 0) {
+    if (strpos($request_uri, '/raggiesoft-books/stardust-engine') === 0) {
+        header('Location: https://books.raggiesoft.com/read/stardust-engine', true, 301);
+        exit;
+    }
+    if (strpos($request_uri, '/raggiesoft-books/aethel-saga') === 0) {
+        header('Location: https://books.raggiesoft.com/read/the-silver-gauntlet-of-aethel', true, 301);
+        exit;
+    }
+    if (strpos($request_uri, '/raggiesoft-books/ocean-view-archives') === 0) {
+        header('Location: https://books.raggiesoft.com/read/the-ocean-view-archives', true, 301);
+        exit;
+    }
+    header('Location: https://books.raggiesoft.com/', true, 301);
+    exit;
+}
+if (strpos($request_uri, '/encyclopedia') === 0) {
+    header('Location: https://lore.raggiesoft.com/', true, 301);
+    exit;
+}
+if (strpos($request_uri, '/oconnell-trust') === 0) {
+    $sub = ltrim(substr($request_uri, strlen('/oconnell-trust')), '/');
+    header('Location: https://engineroom.raggiesoft.com/oconnell-trust' . ($sub !== '' ? '/' . $sub : ''), true, 301);
+    exit;
+}
+if (strpos($request_uri, '/stardust-blacksburg') === 0) {
+    header('Location: https://engineroom.raggiesoft.com/stardust-blacksburg', true, 301);
+    exit;
+}
+if (strpos($request_uri, '/pacific-rim') === 0) {
+    header('Location: https://engineroom.raggiesoft.com/pacific-rim', true, 301);
+    exit;
+}
+if (strpos($request_uri, '/engine-room') === 0) {
+    if (preg_match('#^/engine-room/artists/(?:the-)?stardust-engine(?:/(.*))?$#', $request_uri, $m)) {
+        $sub = isset($m[1]) && $m[1] !== '' ? ltrim($m[1], '/') : '';
+        header('Location: https://stardust.raggiesoft.com/' . $sub, true, 301);
+        exit;
+    }
+    if (preg_match('#^/engine-room/records/stardust-engine(?:/(.*))?$#', $request_uri, $m)) {
+        $sub = isset($m[1]) && $m[1] !== '' ? '/' . ltrim($m[1], '/') : '';
+        header('Location: https://stardust.raggiesoft.com/records/stardust-engine' . $sub, true, 301);
+        exit;
+    }
+    if ($request_uri === '/engine-room/licensing') {
+        header('Location: https://engineroom.raggiesoft.com/commercial-licensing', true, 301);
+        exit;
+    }
+    $sub = ltrim(substr($request_uri, strlen('/engine-room')), '/');
+    header('Location: https://engineroom.raggiesoft.com/' . $sub, true, 301);
+    exit;
+}
+
+
 // --- 1. LOAD GLOBAL SETTINGS ---
 $settingsFile = ROOT_PATH . '/data/settings.json';
 

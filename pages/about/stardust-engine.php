@@ -68,7 +68,7 @@ $customPageAssets = [
                     <p>
                         The narrative follows their struggle against the corporate monolith <strong>Apex Records</strong>, their retreat to the "Fortress," and their eventual broadcast from <strong>Port Telsus</strong>.
                     </p>
-                    <wa-button variant="warning" appearance="outlined" size="small" href="/engine-room/artists/stardust-engine/band" class="mt-2">
+                    <wa-button variant="warning" appearance="outlined" size="small" href="https://stardust.raggiesoft.com/band" class="mt-2">
                         <i slot="start" class="fa-duotone fa-book-open"></i>Enter The Archive
                     </wa-button>
                 </div>

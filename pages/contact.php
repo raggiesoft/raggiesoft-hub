@@ -188,7 +188,7 @@ $imagesJson = htmlspecialchars(json_encode($heroImages), ENT_QUOTES, 'UTF-8');
                             For <strong>Digital Service Providers</strong> (Spotify, Apple, Amazon) and artist profile verification support.
                         </p>
                         <div class="d-grid mt-auto">
-                            <wa-button variant="success" appearance="accent" size="large" pill href="/engine-room/dsp-verification" class="fw-bold shadow-glow force-text-light">
+                            <wa-button variant="success" appearance="accent" size="large" pill href="https://engineroom.raggiesoft.com/dsp-verification" class="fw-bold shadow-glow force-text-light">
                                 <i slot="start" class="fa-solid fa-shield-check"></i>Access DSP Portal
                             </wa-button>
                         </div>
@@ -219,7 +219,7 @@ $imagesJson = htmlspecialchars(json_encode($heroImages), ENT_QUOTES, 'UTF-8');
                             <wa-button variant="danger" appearance="accent" size="large" pill href="https://michaelpragsdale.com/#logistics" class="fw-bold shadow-glow force-text-light mb-3">
                                 <i slot="start" class="fa-duotone fa-id-card-clip"></i>Access Hiring Hub
                             </wa-button>
-                            <wa-button variant="danger" appearance="outlined" size="small" pill href="/raggiesoft-media/careers" class="fw-bold force-text-light">
+                            <wa-button variant="danger" appearance="outlined" size="small" pill href="https://corporate.raggiesoft.com/careers" class="fw-bold force-text-light">
                                 <i slot="start" class="fa-solid fa-shield-exclamation"></i> Job Scam Warning
                             </wa-button>
                         </div>
@@ -238,10 +238,10 @@ $imagesJson = htmlspecialchars(json_encode($heroImages), ENT_QUOTES, 'UTF-8');
                             Looking to clear a master recording for film, television, gaming, or commercial broadcast?
                         </p>
                         <div class="d-grid mt-auto">
-                            <wa-button variant="warning" appearance="accent" size="large" pill href="/raggiesoft-media/licensing/commercial" class="fw-bold shadow-glow text-dark mb-3">
+                            <wa-button variant="warning" appearance="accent" size="large" pill href="https://corporate.raggiesoft.com/licensing/commercial" class="fw-bold shadow-glow text-dark mb-3">
                                 <i slot="start" class="fa-solid fa-file-contract"></i>Commercial Portal
                             </wa-button>
-                            <wa-button variant="warning" appearance="outlined" size="small" pill href="/raggiesoft-media/licensing" class="fw-bold force-text-light">
+                            <wa-button variant="warning" appearance="outlined" size="small" pill href="https://corporate.raggiesoft.com/licensing" class="fw-bold force-text-light">
                                 <i slot="start" class="fa-solid fa-scale-balanced"></i> General Rights Info
                             </wa-button>
                         </div>
