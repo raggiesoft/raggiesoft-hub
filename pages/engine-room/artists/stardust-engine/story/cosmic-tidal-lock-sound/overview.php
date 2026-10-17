@@ -38,7 +38,7 @@
  */
 
 // [METADATA] Page title fallback (canonical title and Article JSON-LD schema are injected by elara.php & includes/header.php via cosmic-tidal-lock-sound.json)
-$pageTitle = "The Cosmic Tidal Lock Sound™ vs. 80s Cosmic Pop | Trademark & Sonic Architecture Explainer";
+$pageTitle = "The Cosmic Tidal Lock Sound™ vs. 80s Cosmic Pop";
 ?>
 
 <div class="wa-dark wa-theme-dark w-100" data-bs-theme="dark">
