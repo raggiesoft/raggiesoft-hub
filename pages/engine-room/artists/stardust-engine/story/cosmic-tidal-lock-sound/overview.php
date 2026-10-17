@@ -149,10 +149,29 @@ $pageTitle = "The Cosmic Tidal Lock Sound™ vs. 80s Cosmic Pop | Trademark & So
         <!-- [SECTION 3] The Three Cornerstone Releases in The Listening Room -->
         <div class="col-lg-10">
             <wa-card with-header class="glass-card border-warning overflow-hidden shadow-lg w-100" style="--header-padding: 0; --body-padding: 0; --wa-panel-bg: rgba(13, 17, 23, 0.85);">
-                <div slot="header" class="bg-warning bg-opacity-10 border-bottom border-warning text-warning fw-bold text-uppercase letter-spacing-1 p-3 w-100">
-                    <i class="fa-duotone fa-turntable me-2"></i>2. Official Releases Engineered in The Cosmic Tidal Lock Sound&trade;
+                <div slot="header" class="bg-warning bg-opacity-10 border-bottom border-warning text-warning fw-bold text-uppercase letter-spacing-1 p-3 d-flex align-items-center justify-content-between flex-wrap gap-2 w-100">
+                    <span><i class="fa-duotone fa-turntable me-2"></i>2. Official Releases &amp; Curated Playlist in The Listening Room</span>
+                    <wa-badge variant="warning" appearance="accent" pill class="font-monospace">20-TRACK CURATED SUITE</wa-badge>
                 </div>
                 <div class="p-4 p-lg-5">
+                    <!-- Featured 20-Track Official Curated Playlist Banner -->
+                    <div class="bg-black bg-opacity-75 border border-warning rounded-3 p-4 mb-4 d-flex flex-column flex-lg-row align-items-lg-center justify-content-between gap-3">
+                        <div>
+                            <div class="small font-monospace text-warning text-uppercase fw-bold mb-1">
+                                <i class="fa-solid fa-list-music me-1"></i>Official Curated Playlist &bull; The Listening Room
+                            </div>
+                            <h3 class="h5 text-white fw-bold mb-1">The Cosmic Tidal Lock Sound&trade; (20-Track Master Evolution)</h3>
+                            <p class="small text-white-75 mb-0">
+                                Stream the complete 20-song sonic arc curated by <strong>Cassidy O'Connell</strong>: opening with the catalyst track <em>"Moon 1 (Tidal Lock)"</em> (1997), flashing back to the 1986 Apex-rejected prototype <em>"Terminal Velvet"</em> (released on 2001's <em>Midnight Drivers</em>), ascending through the three-part <em>Apoapsis Suite</em> and Cassidy's 15-minute autobiographical resume centerpiece <em>"Escape Velocity (Ad Astra)"</em>, and culminating in all 14 tracks of <em>Starfield Calibration</em> (2011).
+                            </p>
+                        </div>
+                        <div class="flex-shrink-0">
+                            <wa-button variant="warning" appearance="accent" size="medium" href="https://music.raggiesoft.com/playlists/cosmic-tidal-lock-sound" target="_blank">
+                                <i slot="start" class="fa-solid fa-circle-play"></i>Launch 20-Track Playlist
+                            </wa-button>
+                        </div>
+                    </div>
+
                     <div class="row g-4">
                         <div class="col-md-4 d-flex align-items-stretch">
                             <wa-card class="border-secondary w-100 h-100 hover-card" style="--body-padding: 1.25rem; --wa-panel-bg: rgba(0, 0, 0, 0.55);">
