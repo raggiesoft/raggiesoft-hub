@@ -1,95 +1,87 @@
 <?php
 /**
- * Crimson Node - Northwood High Sidebar
- * 
+ * ============================================================================
+ * Crimson Node - Northwood High Sidebar (Web Awesome v3.13.0)
+ * ============================================================================
+ * File: includes/components/sidebars/engine-room/artists/crimson-node/sidebar-northwood.php
+ *
  * ARCHITECTURAL OVERVIEW:
- * This sidebar component manages navigation for the "Northwood High" narrative section
- * within the Crimson Node universe. It features a complex UI structure using a 
- * Bootstrap 5 Accordion to categorize characters into "Students" and "Staff".
- * A supplementary card linking back to "The Phalanx" is also included.
- * 
- * LOGIC & CONSTRAINTS:
- * - Uses `strpos` on `$_SERVER['REQUEST_URI']` to determine which accordion section
- *   (Students vs Staff) should default to "open" on page load.
- * - Relies strictly on standard Bootstrap 5 `.accordion` classes.
- * - Care must be taken not to alter the `data-bs-*` attributes (`data-bs-toggle`, `data-bs-target`, etc.)
- *   as they are critical for the accordion's JavaScript functionality.
- * 
- * File Info: includes/components/sidebars/engine-room/artists/crimson-node/sidebar-northwood.php
+ * Sidebar component managing navigation for the "Northwood High" narrative
+ * section within the Crimson Node universe. Uses Web Awesome v3.13.0 `<wa-card>`,
+ * `<wa-details>`, and `<wa-button>` components to categorize characters into
+ * "Students" and "Staff & Administration".
+ * ============================================================================
  */
-$request_uri = $_SERVER['REQUEST_URI'] ?? '/';
+$request_uri = rtrim(parse_url($_SERVER['REQUEST_URI'] ?? '/', PHP_URL_PATH) ?: '/', '/');
 
-// Determine which accordion should be open based on the URL path.
-$isStudentActive = strpos($request_uri, '/students/') !== false;
-$isStaffActive = strpos($request_uri, '/staff/') !== false;
+$isStudentActive = str_contains($request_uri, '/students/');
+$isStaffActive   = str_contains($request_uri, '/staff/');
 ?>
 
-<div class="card border-0 shadow-sm mb-4">
-    <div class="card-header bg-dark text-white fw-bold text-uppercase" style="letter-spacing: 1px;">
-        <a href="/engine-room/artists/crimson-node/characters/northwood" class="text-white text-decoration-none d-block">
-            <i slot="start" class="fa-solid fa-arrow-left"></i> Northwood High
+<wa-card class="border-0 shadow-sm mb-4">
+    <div slot="header" class="fw-bold text-uppercase small" style="letter-spacing: 1px;">
+        <a href="/engine-room/artists/crimson-node/characters/northwood" class="text-body-emphasis text-decoration-none d-block">
+            <i class="fa-solid fa-arrow-left me-2 text-warning"></i>Northwood High
         </a>
     </div>
 
-    <div class="accordion accordion-flush" id="northwoodAccordion">
-        
-        <!-- Students Section -->
-        <div class="accordion-item border-0 border-bottom">
-            <h2 class="accordion-header" id="headingStudents">
-                <!-- 
-                  Accordion Button State:
-                  Uses `$isStudentActive` to remove the 'collapsed' class and set `aria-expanded="true"`
-                  if the student section should be open.
-                -->
-                <button class="accordion-button <?= $isStudentActive ? '' : 'collapsed' ?> bg-body-tertiary fw-bold text-uppercase " type="button" data-bs-toggle="collapse" data-bs-target="#collapseStudents" aria-expanded="<?= $isStudentActive ? 'true' : 'false' ?>" aria-controls="collapseStudents" style="font-size: 0.85rem; letter-spacing: 1px;">
-                    Students
-                </button>
-            </h2>
-            <!-- 
-              Accordion Body State:
-              Uses `$isStudentActive` to add the 'show' class to keep the accordion body visible.
-            -->
-            <div id="collapseStudents" class="accordion-collapse collapse <?= $isStudentActive ? 'show' : '' ?>" aria-labelledby="headingStudents" data-bs-parent="#northwoodAccordion">
-                <div class="list-group list-group-flush">
-                    <a href="/engine-room/artists/crimson-node/characters/northwood/students/courtney-evans" class="list-group-item list-group-item-action <?= ($request_uri == '/engine-room/artists/crimson-node/characters/northwood/students/courtney-evans') ? 'active' : '' ?>">
-                        Courtney Evans
-                    </a>
-                </div>
+    <div class="d-flex flex-column gap-2">
+        <wa-button appearance="<?= ($request_uri === '/engine-room/artists/crimson-node/characters/northwood') ? 'filled-outlined' : 'plain' ?>"
+                   variant="<?= ($request_uri === '/engine-room/artists/crimson-node/characters/northwood') ? 'brand' : 'neutral' ?>"
+                   href="/engine-room/artists/crimson-node/characters/northwood"
+                   class="w-100 text-start justify-content-start">
+            <i slot="start" class="fa-duotone fa-school"></i>Directory Overview
+        </wa-button>
+
+        <wa-details summary="Students" <?= ($isStudentActive || !$isStaffActive) ? 'open' : '' ?>>
+            <div class="d-flex flex-column gap-1">
+                <wa-button appearance="<?= ($request_uri === '/engine-room/artists/crimson-node/characters/northwood/students/courtney-evans') ? 'filled-outlined' : 'plain' ?>"
+                           variant="<?= ($request_uri === '/engine-room/artists/crimson-node/characters/northwood/students/courtney-evans') ? 'brand' : 'neutral' ?>"
+                           href="/engine-room/artists/crimson-node/characters/northwood/students/courtney-evans"
+                           class="w-100 text-start justify-content-start">
+                    <i slot="start" class="fa-duotone fa-user"></i>Courtney Evans
+                </wa-button>
             </div>
-        </div>
+        </wa-details>
 
-        <!-- Staff Section -->
-        <div class="accordion-item border-0">
-            <h2 class="accordion-header" id="headingStaff">
-                <button class="accordion-button <?= $isStaffActive ? '' : 'collapsed' ?> bg-body-tertiary fw-bold text-uppercase " type="button" data-bs-toggle="collapse" data-bs-target="#collapseStaff" aria-expanded="<?= $isStaffActive ? 'true' : 'false' ?>" aria-controls="collapseStaff" style="font-size: 0.85rem; letter-spacing: 1px;">
-                    Staff & Administration
-                </button>
-            </h2>
-            <div id="collapseStaff" class="accordion-collapse collapse <?= $isStaffActive ? 'show' : '' ?>" aria-labelledby="headingStaff" data-bs-parent="#northwoodAccordion">
-                <div class="list-group list-group-flush">
-                    <a href="/engine-room/artists/crimson-node/characters/northwood/staff/arthur-vance" class="list-group-item list-group-item-action <?= ($request_uri == '/engine-room/artists/crimson-node/characters/northwood/staff/arthur-vance') ? 'active' : '' ?>">
-                        Arthur Vance
-                    </a>
-                    <a href="/engine-room/artists/crimson-node/characters/northwood/staff/mrs-demarco" class="list-group-item list-group-item-action <?= ($request_uri == '/engine-room/artists/crimson-node/characters/northwood/staff/mrs-demarco') ? 'active' : '' ?>">
-                        Mrs. DeMarco
-                    </a>
-                    <a href="/engine-room/artists/crimson-node/characters/northwood/staff/mrs-periwinkle" class="list-group-item list-group-item-action <?= ($request_uri == '/engine-room/artists/crimson-node/characters/northwood/staff/mrs-periwinkle') ? 'active' : '' ?>">
-                        Mrs. Periwinkle
-                    </a>
-                </div>
+        <wa-details summary="Staff &amp; Administration" <?= $isStaffActive ? 'open' : '' ?>>
+            <div class="d-flex flex-column gap-1">
+                <wa-button appearance="<?= ($request_uri === '/engine-room/artists/crimson-node/characters/northwood/staff/arthur-vance') ? 'filled-outlined' : 'plain' ?>"
+                           variant="<?= ($request_uri === '/engine-room/artists/crimson-node/characters/northwood/staff/arthur-vance') ? 'brand' : 'neutral' ?>"
+                           href="/engine-room/artists/crimson-node/characters/northwood/staff/arthur-vance"
+                           class="w-100 text-start justify-content-start">
+                    <i slot="start" class="fa-duotone fa-user-tie"></i>Arthur Vance
+                </wa-button>
+                <wa-button appearance="<?= ($request_uri === '/engine-room/artists/crimson-node/characters/northwood/staff/mrs-demarco') ? 'filled-outlined' : 'plain' ?>"
+                           variant="<?= ($request_uri === '/engine-room/artists/crimson-node/characters/northwood/staff/mrs-demarco') ? 'brand' : 'neutral' ?>"
+                           href="/engine-room/artists/crimson-node/characters/northwood/staff/mrs-demarco"
+                           class="w-100 text-start justify-content-start">
+                    <i slot="start" class="fa-duotone fa-chalkboard-user"></i>Mrs. DeMarco
+                </wa-button>
+                <wa-button appearance="<?= ($request_uri === '/engine-room/artists/crimson-node/characters/northwood/staff/mrs-periwinkle') ? 'filled-outlined' : 'plain' ?>"
+                           variant="<?= ($request_uri === '/engine-room/artists/crimson-node/characters/northwood/staff/mrs-periwinkle') ? 'brand' : 'neutral' ?>"
+                           href="/engine-room/artists/crimson-node/characters/northwood/staff/mrs-periwinkle"
+                           class="w-100 text-start justify-content-start">
+                    <i slot="start" class="fa-duotone fa-chalkboard-user"></i>Mrs. Periwinkle
+                </wa-button>
             </div>
-        </div>
+        </wa-details>
+    </div>
+</wa-card>
 
+<wa-card class="border-0 shadow-sm">
+    <div slot="header" class="fw-bold text-uppercase small text-danger" style="letter-spacing: 1px;">
+        <i class="fa-duotone fa-shield-halved me-2"></i>Character Factions
     </div>
-</div>
-
-<div class="card border-0 shadow-sm">
-    <div class="card-header bg-danger text-white fw-bold text-uppercase" style="letter-spacing: 1px;">
-        The Phalanx
+    <div class="d-flex flex-column gap-1">
+        <wa-button appearance="plain" variant="neutral" href="/engine-room/artists/crimson-node/characters/family" class="w-100 text-start justify-content-start">
+            <i slot="start" class="fa-duotone fa-shield-halved text-danger"></i>The Phalanx Directory
+        </wa-button>
+        <wa-button appearance="plain" variant="neutral" href="/engine-room/artists/crimson-node/characters/ccc" class="w-100 text-start justify-content-start">
+            <i slot="start" class="fa-duotone fa-graduation-cap text-info"></i>CCC Campus
+        </wa-button>
+        <wa-button appearance="plain" variant="neutral" href="/engine-room/artists/crimson-node/characters/piedmont" class="w-100 text-start justify-content-start">
+            <i slot="start" class="fa-duotone fa-building-columns text-primary"></i>University of the Piedmont
+        </wa-button>
     </div>
-    <div class="list-group list-group-flush">
-        <a href="/engine-room/artists/crimson-node/characters/family" class="list-group-item list-group-item-action">
-            View Family Directory
-        </a>
-    </div>
-</div>
+</wa-card>

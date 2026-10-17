@@ -54,12 +54,12 @@ $pageTitle = "Stardust Studios - Global HQ & Production";
     <div class="row justify-content-center mb-5">
         <div class="col-lg-10">
             <div class="d-flex align-items-center mb-3">
-                <span class="badge bg-secondary text-white border border-secondary-subtle rounded-pill px-3 py-2 me-3">
+                <wa-badge variant="neutral" appearance="filled-outlined" pill class="px-3 py-2 me-3">
                     <i class="fa-solid fa-warehouse me-2"></i>Global HQ
-                </span>
-                <span class="badge bg-danger text-white border border-danger-subtle rounded-pill px-3 py-2">
+                </wa-badge>
+                <wa-badge variant="danger" appearance="filled-outlined" pill class="px-3 py-2">
                     <i class="fa-solid fa-lock me-2"></i>PRIVATE FACILITY
-                </span>
+                </wa-badge>
             </div>
             <h1 class="display-4 fw-bold text-uppercase text-body-emphasis mb-2">Stardust Studios</h1>
             <p class="lead text-body-secondary font-monospace">
@@ -70,7 +70,7 @@ $pageTitle = "Stardust Studios - Global HQ & Production";
                 Located in the quiet rear sector of the <strong>Blacksburg Industrial Park</strong>, this 12,000 sq. ft. facility serves as the nerve center for the <strong>O'Connell Family Trust</strong> and the primary rehearsal hangar for the <strong>Artists First Management</strong> roster.
             </p>
             
-            <div class="alert alert-warning border-warning d-inline-block text-start shadow-sm mt-3" role="alert">
+            <wa-callout variant="warning" appearance="accent" class="d-inline-block text-start shadow-sm mt-3 d-block">
                 <div class="d-flex">
                     <i class="fa-solid fa-hand-palm fa-2x me-3 mt-1"></i>
                     <div>
@@ -80,7 +80,7 @@ $pageTitle = "Stardust Studios - Global HQ & Production";
                         </p>
                     </div>
                 </div>
-            </div>
+            </wa-callout>
         </div>
     </div>
 
@@ -91,7 +91,7 @@ $pageTitle = "Stardust Studios - Global HQ & Production";
 
     <div class="row g-4 mb-5">
         <div class="col-lg-6">
-            <div class="card h-100 bg-body-tertiary border-secondary-subtle sector-card shadow-sm">
+            <wa-card class="card h-100 bg-body-tertiary border-secondary-subtle sector-card shadow-sm w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
                 <div class="card-body p-4">
                     <div class="d-flex justify-content-between align-items-start mb-3">
                         <div class="p-3 bg-body-secondary rounded-circle">
@@ -109,11 +109,11 @@ $pageTitle = "Stardust Studios - Global HQ & Production";
                         <li><i class="fa-solid fa-check text-primary me-2"></i><strong>The Vault:</strong> Fireproof storage for master tapes and deeds.</li>
                     </ul>
                 </div>
-            </div>
+            </wa-card>
         </div>
 
         <div class="col-lg-6">
-            <div class="card h-100 bg-body-tertiary border-secondary-subtle sector-card shadow-sm">
+            <wa-card class="card h-100 bg-body-tertiary border-secondary-subtle sector-card shadow-sm w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
                 <div class="card-body p-4">
                     <div class="d-flex justify-content-between align-items-start mb-3">
                         <div class="p-3 bg-body-secondary rounded-circle">
@@ -130,7 +130,7 @@ $pageTitle = "Stardust Studios - Global HQ & Production";
                         <li><i class="fa-solid fa-check text-warning me-2"></i><strong>Power:</strong> 3-Phase industrial mains with battery backup.</li>
                     </ul>
                 </div>
-            </div>
+            </wa-card>
         </div>
     </div>
 
@@ -139,7 +139,7 @@ $pageTitle = "Stardust Studios - Global HQ & Production";
         <h3 class="h5 text-uppercase text-body-emphasis mb-0">The Loft (Restricted)</h3>
     </div>
 
-    <div class="card border-danger border-opacity-50 shadow-sm overflow-hidden mb-5">
+    <wa-card class="card border-danger border-opacity-50 shadow-sm overflow-hidden mb-5 w-100" style="--body-padding: 0; --header-padding: 0;">
         <div class="row g-0">
             <div class="col-md-4 bg-body-secondary d-flex align-items-center justify-content-center p-5">
                 <div class="text-center">
@@ -195,12 +195,12 @@ $pageTitle = "Stardust Studios - Global HQ & Production";
 
             </div>
         </div>
-    </div>
+    </wa-card>
 
     <div class="row justify-content-center">
         <div class="col-lg-10">
-            <div class="alert alert-secondary d-flex align-items-center p-4 rounded shadow-sm border-0 bg-body-secondary text-body-emphasis">
-                <i class="fa-duotone fa-cctv fa-3x me-4 text-secondary"></i>
+            <wa-callout variant="neutral" appearance="accent" class="p-4 rounded shadow-sm d-block">
+                <i slot="icon" class="fa-duotone fa-cctv fa-3x text-secondary"></i>
                 <div>
                     <h5 class="fw-bold text-uppercase mb-1">Perimeter Security</h5>
                     <p class="mb-0 small opacity-75">
@@ -208,7 +208,7 @@ $pageTitle = "Stardust Studios - Global HQ & Production";
                         <strong>Note to Solicitors:</strong> This facility is monitored by a closed-circuit system. Uninvited entry attempts will be prosecuted by Aethelgard Holdings.
                     </p>
                 </div>
-            </div>
+            </wa-callout>
         </div>
     </div>
 

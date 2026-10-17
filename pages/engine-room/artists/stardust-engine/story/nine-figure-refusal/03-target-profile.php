@@ -81,7 +81,7 @@ $pageTitle = "Confidential Brief: Project GOLDEN GOOSE - Omni-Global";
                 <small class="text-body-secondary">Mergers & Acquisitions Division // North America</small>
             </div>
             <div class="col-md-4 text-md-end">
-                <div class="badge bg-danger text-uppercase px-3 py-2">Internal Use Only</div>
+                <wa-badge variant="danger" appearance="accent" class="text-uppercase px-3 py-2">Internal Use Only</wa-badge>
                 <div class="small font-monospace mt-2 text-body-secondary">ID: M&A-2018-ERR-001</div>
             </div>
         </div>
@@ -95,11 +95,11 @@ $pageTitle = "Confidential Brief: Project GOLDEN GOOSE - Omni-Global";
                         <div class="col-md-4 fw-bold text-body-secondary text-uppercase">Algorithmic Output:</div>
                         <div class="col-md-8">
                             <span class="display-6 fw-bold text-success">$505,400,000</span>
-                            <span class="badge bg-warning text-dark ms-2 align-middle">FLAGGED FOR REVIEW</span>
+                            <wa-badge variant="warning" appearance="accent" class="ms-2 align-middle">FLAGGED FOR REVIEW</wa-badge>
                         </div>
                     </div>
 
-                    <div class="alert alert-secondary border border-secondary small">
+                    <wa-callout variant="neutral" appearance="accent" class="border small d-block">
                         <h6 class="fw-bold text-uppercase mb-2"><i class="fa-solid fa-robot me-2 text-primary"></i>Methodology (The "Black Box"):</h6>
                         <p class="mb-2">
                             The <strong>Omni-Scout™ Algorithm</strong> scraped public metadata from streaming platforms and global tour manifests.
@@ -107,7 +107,7 @@ $pageTitle = "Confidential Brief: Project GOLDEN GOOSE - Omni-Global";
                         <p class="mb-0">
                             <strong>The Anomaly:</strong> The target shows 30 years of catalog activity with <span class="text-danger fw-bold">zero visible "Label Share" deductions</span>. The algorithm mistakenly assumes the Artist retains 100% of Net Revenue.
                         </p>
-                    </div>
+                    </wa-callout>
                 </div>
             </div>
 
@@ -122,9 +122,9 @@ $pageTitle = "Confidential Brief: Project GOLDEN GOOSE - Omni-Global";
                     <p class="small text-body-secondary mb-2">
                         <strong>Jameson Frost</strong> has flagged the $500M figure as "Absurd."
                     </p>
-                    <div class="alert alert-light border border-warning small shadow-sm text-dark">
+                    <wa-callout variant="warning" appearance="accent" class="border small shadow-sm d-block">
                         <strong>Hypothesis:</strong> "If they show up in a rented limo, we offer $300M. If they show up in a taxi, we offer $150M. The algorithm doesn't know how to read shoes."
-                    </div>
+                    </wa-callout>
                 </div>
             </div>
         </div>
@@ -140,7 +140,7 @@ $pageTitle = "Confidential Brief: Project GOLDEN GOOSE - Omni-Global";
                             <i class="fa-duotone fa-compact-disc fa-4x text-secondary mb-3"></i>
                             <h5 class="fw-bold text-primary">Escape Velocity</h5>
                             <small class="text-muted">(aka "Ad Astra")</small>
-                            <div class="mt-2 badge bg-secondary">1995 Master</div>
+                            <wa-badge variant="neutral" appearance="accent" class="mt-2">1995 Master</wa-badge>
                         </div>
                         <div class="col-md-9 ps-md-4">
                             <h6 class="fw-bold text-uppercase text-danger mb-2">The "Efficiency" Opportunity</h6>
@@ -209,7 +209,7 @@ $pageTitle = "Confidential Brief: Project GOLDEN GOOSE - Omni-Global";
                                 <td class="fw-bold text-body-emphasis">Holly O'Connell</td>
                                 <td>CEO / Legal</td>
                                 <td>
-                                    <span class="badge bg-danger mb-1">THE OBSTACLE</span><br>
+                                    <wa-badge variant="danger" appearance="accent" class="mb-1">THE OBSTACLE</wa-badge><br>
                                     Public records show zero debt. Frost believes she is a "Paper Tiger" hiding insolvency behind creative accounting.
                                 </td>
                             </tr>
@@ -217,7 +217,7 @@ $pageTitle = "Confidential Brief: Project GOLDEN GOOSE - Omni-Global";
                                 <td class="fw-bold text-body-emphasis">Ryan O'Connell</td>
                                 <td>Founder / Creative</td>
                                 <td>
-                                    <span class="badge bg-secondary mb-1">THE WILDCARD</span><br>
+                                    <wa-badge variant="neutral" appearance="accent" class="mb-1">THE WILDCARD</wa-badge><br>
                                     Wheelchair user. Likely risk-averse due to medical costs. <strong>Primary Target for Lowball Offer.</strong>
                                 </td>
                             </tr>
@@ -225,7 +225,7 @@ $pageTitle = "Confidential Brief: Project GOLDEN GOOSE - Omni-Global";
                                 <td class="fw-bold text-body-emphasis">Tyler & Evan Wright</td>
                                 <td>The "Muscle"</td>
                                 <td>
-                                    <span class="badge bg-success mb-1">THE WEAK LINK</span><br>
+                                    <wa-badge variant="success" appearance="accent" class="mb-1">THE WEAK LINK</wa-badge><br>
                                     Likely susceptible to a "lump sum" buyout to escape the grind.
                                 </td>
                             </tr>
@@ -233,7 +233,7 @@ $pageTitle = "Confidential Brief: Project GOLDEN GOOSE - Omni-Global";
                                 <td class="fw-bold text-body-emphasis text-opacity-50">Cassidy O'Connell</td>
                                 <td>Operations / Member</td>
                                 <td>
-                                    <span class="badge bg-secondary bg-opacity-50 text-body-tertiary mb-1">IRRELEVANT</span><br>
+                                    <wa-badge variant="neutral" appearance="filled" class="text-body-tertiary mb-1">IRRELEVANT</wa-badge><br>
                                     <span class="fst-italic opacity-75">"Just the singer."</span> No business footprint. Likely trails the brothers' lead. <strong>Strategy: Ignore.</strong>
                                 </td>
                             </tr>

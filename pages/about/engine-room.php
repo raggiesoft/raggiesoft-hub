@@ -37,7 +37,7 @@ $pageTitle = "About Engine Room Records";
     }
 </style>
 
-<div class="card bg-black text-white border-danger mb-5 shadow-sm overflow-hidden">
+<wa-card class="card bg-black text-white border-danger mb-5 shadow-sm overflow-hidden w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
     <div class="card-body p-5 text-center">
         <img src="<?php echo $cdnBaseUrl; ?>/engine-room-records/images/logos/engine-room-records-logo.png" 
              alt="Engine Room Records" 
@@ -56,7 +56,7 @@ $pageTitle = "About Engine Room Records";
             </p>
         </div>
     </div>
-</div>
+</wa-card>
 
 <div class="row justify-content-center">
     <div class="col-lg-11">
@@ -77,19 +77,19 @@ $pageTitle = "About Engine Room Records";
         <!-- Philosophy and Roster Cards -->
         <div class="row g-4 mb-5">
             <div class="col-md-6">
-                <div class="card h-100 bg-dark text-white border-danger shadow-sm">
-                    <div class="card-body d-flex flex-column justify-content-center">
+                <wa-card class="card h-100 bg-dark text-white border-danger shadow-sm w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
+                    <div class="card-body d-flex flex-column justify-content-center p-4">
                         <h3 class="h5 fw-bold text-danger mb-3 font-monospace"><i class="fa-solid fa-gavel me-2" aria-hidden="true"></i>The Philosophy</h3>
                         <p class="small text-white-50 mb-0 fst-italic">
                             "If it doesn't sound like it was recorded inside a running turbine, we don't want it."
                         </p>
                         <p class="small text-secondary mt-2 mb-0 text-end">- The Founder</p>
                     </div>
-                </div>
+                </wa-card>
             </div>
             <div class="col-md-6">
-                <div class="card h-100 bg-dark text-white border-secondary shadow-sm">
-                    <div class="card-body">
+                <wa-card class="card h-100 bg-dark text-white border-secondary shadow-sm w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
+                    <div class="card-body p-4">
                         <h3 class="h5 fw-bold text-white mb-3 font-monospace"><i class="fa-solid fa-users me-2" aria-hidden="true"></i>The Roster</h3>
                         <ul class="list-unstyled small text-white-50 mb-0">
                             <li class="mb-2"><i class="fa-solid fa-bolt text-warning me-2" aria-hidden="true"></i>The Stardust Engine</li>
@@ -97,12 +97,12 @@ $pageTitle = "About Engine Room Records";
                             <li class="text-muted"><i class="fa-solid fa-lock text-secondary me-2" aria-hidden="true"></i>[ Next Entry Pending ]</li>
                         </ul>
                     </div>
-                </div>
+                </wa-card>
             </div>
         </div>
 
         <!-- REALITY CHECK NOTIFICATION -->
-        <div class="card border-secondary bg-body-tertiary mb-5 shadow-sm shadow-sm">
+        <wa-card class="card border-secondary bg-body-tertiary mb-5 shadow-sm shadow-sm w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
             <div class="card-body d-flex align-items-start p-4">
                 <i class="fa-solid fa-circle-info text-danger fs-4 me-3 mt-1" aria-hidden="true"></i>
                 <div>
@@ -112,13 +112,13 @@ $pageTitle = "About Engine Room Records";
                     </p>
                 </div>
             </div>
-        </div>
+        </wa-card>
 
         <!-- RETURN LINK CONTAINER -->
         <div class="text-center border-top border-secondary border-opacity-25 pt-4">
-            <a href="/engine-room" class="btn btn-outline-danger font-monospace text-uppercase fw-bold rounded-0 px-4">
-                <i class="fa-solid fa-chevron-left me-2" aria-hidden="true"></i>Return to HQ
-            </a>
+            <wa-button variant="danger" appearance="outlined" href="/engine-room" class="font-monospace text-uppercase fw-bold rounded-0 px-4">
+                <i slot="start" class="fa-solid fa-chevron-left" aria-hidden="true"></i>Return to HQ
+            </wa-button>
         </div>
 
     </div>

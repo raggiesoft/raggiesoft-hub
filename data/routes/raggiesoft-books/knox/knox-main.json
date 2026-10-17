@@ -20,21 +20,15 @@
     "showSidebar": false
   },
 
-  "/raggiesoft-books/knox/chapters": {
-    "view": "pages/raggiesoft-books/knox/chapters",
-    "title": "Mission Logs | Knox",
-    "ogTitle": "Read the Story: The Six-Day Run"
-  },
-
   "/raggiesoft-books/knox/lore": {
     "view": "pages/raggiesoft-books/knox/lore/overview",
     "title": "World Data | Telsus Minor",
     "ogTitle": "The Green Hell: World Database"
   },
 
-  "/raggiesoft-books/knox/characters": {
-    "view": "pages/raggiesoft-books/knox/characters",
-    "title": "Operatives | Knox",
-    "ogTitle": "The Ghosts of Aerie-Hold"
+  "/raggiesoft-books/knox/lore/toys": {
+    "view": "pages/raggiesoft-books/knox/lore/toys/overview",
+    "title": "Commercial Merchandising Archive (Action Figures) | Knox",
+    "ogTitle": "K.N.O.X. Action Figure Line vs. Ground Reality"
   }
 }

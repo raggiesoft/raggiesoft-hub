@@ -53,9 +53,9 @@ $pageTitle = "The Delaware Migration (2015) - Engine Room History";
     
     <div class="row justify-content-center mb-5">
         <div class="col-lg-8 text-center">
-            <span class="badge bg-success-subtle text-success-emphasis rounded-pill px-3 py-2 mb-3 text-uppercase letter-spacing-1 border border-success-subtle shadow-sm">
+            <wa-badge variant="success" appearance="filled-outlined" pill class="text-success-emphasis px-3 py-2 mb-3 text-uppercase letter-spacing-1 shadow-sm">
                 <i class="fa-duotone fa-file-signature me-2"></i>Corporate Restructuring
-            </span>
+            </wa-badge>
             <h1 class="display-4 fw-bold text-body-emphasis mb-2 text-uppercase" style="font-family: 'Impact', sans-serif;">
                 The Delaware Migration
             </h1>
@@ -69,7 +69,7 @@ $pageTitle = "The Delaware Migration (2015) - Engine Room History";
     <div class="row justify-content-center mb-5">
         <div class="col-lg-10">
             
-            <div class="card border-0 narrative-card mb-5">
+            <wa-card class="card border-0 narrative-card mb-5 w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
                 <div class="card-body p-4 p-md-5 text-body-secondary fs-5" style="line-height: 1.7;">
                     
                     <span class="timestamp">August 12, 2015 // 21:00 EST // "The Bridge", Stardust Studios</span>
@@ -100,7 +100,7 @@ $pageTitle = "The Delaware Migration (2015) - Engine Room History";
                         Ryan frowned, locking the brakes on his chair. "Loud how? We don't do press. We haven't done an interview in eight years."
                     </p>
                     <p>
-                        "Paperwork is loud, Ry," Holly explained, leaning against the table. "From 1992 all the way through <em>Progress Street</em> in 2004, we ran almost our entire lives out of a single bucket: <strong>Engine Room Records, LLC</strong>. Back then, the master tapes, the Blacksburg studio, the tour buses, and the payroll were all sitting inside one Virginia company. When we signed off the road after <em>Last Bus Home</em> in late 2004 to recover from burnout, we spent the next eleven years quietly diversifying—spinning off <strong>Stardust Strategic Assets, LLC</strong> for the hard equipment and coaches, <strong>Artists First Management, LLC</strong> for touring liability, and <strong>Stardust Properties, LLC</strong> and <strong>Pacific Rim Properties, LLC</strong> for real estate."
+                        "Paperwork is loud, Ry," Holly explained, leaning against the table. "Back in 1997 during <em>Hard Reset</em>—right after the <em>'$13.99 War'</em> and Cassidy's lottery win—I realized our money and our masters had to be siloed and diversified so a single lawsuit could never touch the family. While we were still recording and touring through <em>Progress Street</em> in 2004, I kept our core capital parked in Treasury ladders while running day-to-day music operations out of <strong>Engine Room Records, LLC</strong>. The moment we signed off the road after <em>Last Bus Home</em> in late 2004 to recover from burnout, I spent the next eleven years executing that 1997 blueprint—spinning off <strong>Stardust Strategic Assets, LLC</strong> for the hard equipment and coaches, <strong>Artists First Management, LLC</strong> for touring liability, and <strong>Stardust Properties, LLC</strong> and <strong>Pacific Rim Properties, LLC</strong> for real estate."
                     </p>
                     <p>
                         "Unbundling Engine Room Records into specialized LLCs between 2004 and 2015 kept our operations clean," Holly continued, "but right now, most of those entities are still registered in Virginia. If a reporter, or a rival executive, or a hostile litigator goes to the Virginia State Corporation Commission website and pays twenty dollars, they can see everything. They can pull the Articles of Organization. They see my name as the Registered Agent. They see our home address."
@@ -193,7 +193,7 @@ $pageTitle = "The Delaware Migration (2015) - Engine Room History";
                         "Let them think it. The iceberg is officially submerged."
                     </p>
 
-                    <div class="alert alert-dark border-info d-flex flex-column flex-md-row align-items-md-center justify-content-between gap-3 mb-0 p-4 rounded-3">
+                    <wa-callout variant="brand" appearance="accent" class="flex-column flex-md-row align-items-md-center justify-content-between gap-3 mb-0 p-4 rounded-3 d-block">
                         <div>
                             <h6 class="fw-bold text-info text-uppercase mb-1">
                                 <i class="fa-duotone fa-sitemap me-2"></i>Inspect the 2015 Corporate Architecture
@@ -203,17 +203,17 @@ $pageTitle = "The Delaware Migration (2015) - Engine Room History";
                             </p>
                         </div>
                         <div class="d-flex flex-wrap gap-2 flex-shrink-0">
-                            <a href="/engine-room/corporate/structure" class="btn btn-info btn-sm fw-bold text-uppercase">
-                                <i class="fa-solid fa-diagram-project me-2"></i>2015 Trust Map
-                            </a>
-                            <a href="/engine-room/corporate/strategic-assets/the-iron-horse" class="btn btn-outline-light btn-sm fw-bold text-uppercase">
-                                <i class="fa-solid fa-bus me-2"></i>Fleet Archive
-                            </a>
+                            <wa-button variant="brand" appearance="accent" size="small" href="/engine-room/corporate/structure" class="fw-bold text-uppercase">
+                                <i slot="start" class="fa-solid fa-diagram-project"></i>2015 Trust Map
+                            </wa-button>
+                            <wa-button variant="neutral" appearance="outlined" size="small" href="/engine-room/corporate/strategic-assets/the-iron-horse" class="fw-bold text-uppercase">
+                                <i slot="start" class="fa-solid fa-bus"></i>Fleet Archive
+                            </wa-button>
                         </div>
-                    </div>
+                    </wa-callout>
 
                 </div>
-            </div>
+            </wa-card>
 
         </div>
     </div>

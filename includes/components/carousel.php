@@ -107,7 +107,7 @@ if (!empty($carousel_albums)):
 
                             <?php if ($album['dsp_exempt'] && !$album['is_seized']): ?>
                                 <div class="position-absolute top-0 end-0 mt-3 me-3" style="z-index: 4;">
-                                    <span class="badge bg-warning text-dark shadow-sm border border-dark px-2 py-1"><i class="fa-solid fa-vault me-1"></i> Vault Exclusive</span>
+                                    <wa-badge variant="warning" appearance="accent" class="shadow-sm"><i class="fa-solid fa-vault me-1"></i> Vault Exclusive</wa-badge>
                                 </div>
                             <?php endif; ?>
 
@@ -125,16 +125,16 @@ if (!empty($carousel_albums)):
                                 <?php echo htmlspecialchars($album['title']); ?>
                             </h2>
                             <div class="d-flex flex-wrap gap-2 justify-content-center justify-content-md-start mb-4">
-                                <span class="badge bg-black bg-opacity-50 border border-secondary border-opacity-25 fs-6 fw-normal px-3 py-2 text-white" style="backdrop-filter: blur(5px);">
+                                <wa-badge variant="neutral" appearance="filled-outlined" class="fs-6 fw-normal px-3 py-2">
                                     <i class="fa-solid fa-compact-disc text-info me-2"></i><?php echo htmlspecialchars($album['genre']); ?>
-                                </span>
-                                <span class="badge bg-black bg-opacity-50 border border-secondary border-opacity-25 fs-6 fw-normal px-3 py-2 text-white" style="backdrop-filter: blur(5px);">
+                                </wa-badge>
+                                <wa-badge variant="neutral" appearance="filled-outlined" class="fs-6 fw-normal px-3 py-2">
                                     <i class="fa-regular fa-clock text-warning me-2"></i>Narrative: <?php echo htmlspecialchars($album['year']); ?>
-                                </span>
+                                </wa-badge>
                                 <?php if (!empty($album['realRelease'])): ?>
-                                <span class="badge bg-black bg-opacity-50 border border-secondary border-opacity-25 fs-6 fw-normal px-3 py-2 text-white" style="backdrop-filter: blur(5px);">
+                                <wa-badge variant="neutral" appearance="filled-outlined" class="fs-6 fw-normal px-3 py-2">
                                     <i class="fa-solid fa-calendar-check text-success me-2"></i>World: <?php echo htmlspecialchars($album['realRelease']); ?>
-                                </span>
+                                </wa-badge>
                                 <?php endif; ?>
                             </div>
                             
@@ -244,8 +244,8 @@ if (!empty($carousel_albums)):
 </script>
 
 <?php else: ?>
-    <div class="alert alert-warning text-center">
-        <i class="fa-duotone fa-triangle-exclamation me-2"></i> 
+    <wa-callout variant="warning" appearance="accent" class="text-center">
+        <i slot="icon" class="fa-duotone fa-triangle-exclamation"></i> 
         Unable to load discography data.
-    </div>
+    </wa-callout>
 <?php endif; ?>

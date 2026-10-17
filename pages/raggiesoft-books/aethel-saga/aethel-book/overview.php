@@ -37,10 +37,10 @@ require_once ROOT_PATH . '/includes/utils/nav-logic.php';
         </div>
 
         <?php if (empty($bookData['structure'])): ?>
-            <div class="alert alert-danger text-center">
-                <i class="fa-duotone fa-book-dead me-2"></i>
+            <wa-callout variant="danger" appearance="accent" class="text-center d-block">
+                <i slot="icon" class="fa-duotone fa-book-dead"></i>
                 The archives appear to be empty. (Unable to load Book Data)
-            </div>
+            </wa-callout>
         <?php else: ?>
 
             <div class="row justify-content-center">
@@ -58,7 +58,7 @@ require_once ROOT_PATH . '/includes/utils/nav-logic.php';
                             </div>
 
                             <?php foreach ($book['parts'] as $part): ?>
-                                <div class="card bg-transparent border-secondary mb-4 shadow-sm" style="border-color: rgba(139, 69, 19, 0.3) !important;">
+                                <wa-card class="card bg-transparent border-secondary mb-4 shadow-sm w-100" style="border-color: rgba(139, 69, 19, 0.3) !important; --body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
                                     
                                     <!-- ARCHITECTURE: Render Part headers (e.g., Part I, Part II) -->
                                     <div class="card-header bg-transparent border-secondary border-opacity-25 text-center py-3" 
@@ -86,7 +86,7 @@ require_once ROOT_PATH . '/includes/utils/nav-logic.php';
                                         </div>
                                     </div>
 
-                                </div>
+                                </wa-card>
                             <?php endforeach; ?>
 
                         </div>
@@ -98,15 +98,15 @@ require_once ROOT_PATH . '/includes/utils/nav-logic.php';
         <?php endif; ?>
 
         <div class="text-center mt-5 pt-4 border-top border-secondary border-opacity-25">
-            <a href="/raggiesoft-books/aethel-saga" class="btn btn-outline-secondary">
-                <i class="fa-duotone fa-arrow-left me-2"></i>Return to Aethel Home
-            </a>
-            <a href="/raggiesoft-books/aethel-saga/lore/characters" class="btn btn-outline-info ms-2">
-                <i class="fa-duotone fa-users-crown me-2"></i>Characters
-            </a>
-            <a href="/raggiesoft-books/aethel-saga/lore/locations" class="btn btn-outline-success ms-2">
-                <i class="fa-duotone fa-map-location-dot me-2"></i>Locations
-            </a>
+            <wa-button variant="neutral" appearance="outlined" href="/raggiesoft-books/aethel-saga">
+                <i slot="start" class="fa-duotone fa-arrow-left"></i>Return to Aethel Home
+            </wa-button>
+            <wa-button variant="brand" appearance="outlined" href="/raggiesoft-books/aethel-saga/lore/characters" class="ms-2">
+                <i slot="start" class="fa-duotone fa-users-crown"></i>Characters
+            </wa-button>
+            <wa-button variant="success" appearance="outlined" href="/raggiesoft-books/aethel-saga/lore/locations" class="ms-2">
+                <i slot="start" class="fa-duotone fa-map-location-dot"></i>Locations
+            </wa-button>
         </div>
 
     </div>

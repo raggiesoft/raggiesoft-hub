@@ -76,15 +76,15 @@ $pageTitle = "The Iron Horse & Fleet Archive - Stardust Strategic Assets, LLC";
     <div class="row justify-content-center mb-5">
         <div class="col-lg-10">
             <div class="d-flex flex-wrap align-items-center gap-2 mb-3">
-                <span class="badge bg-secondary text-white border border-secondary-subtle rounded-pill px-3 py-2">
+                <wa-badge variant="neutral" appearance="filled-outlined" pill class="px-3 py-2">
                     <i class="fa-duotone fa-chess-rook me-2"></i>Stardust Strategic Assets, LLC
-                </span>
-                <span class="badge bg-info text-dark border border-info-subtle rounded-pill px-3 py-2">
+                </wa-badge>
+                <wa-badge variant="brand" appearance="filled-outlined" pill class="px-3 py-2">
                     <i class="fa-duotone fa-bus me-2"></i>Heavy Touring &amp; Shuttle Division
-                </span>
-                <span class="badge bg-success text-white rounded-pill px-3 py-2">
+                </wa-badge>
+                <wa-badge variant="success" appearance="accent" pill class="px-3 py-2">
                     <i class="fa-solid fa-check-double me-2"></i>Titles Clear // 100% Debt-Free
-                </span>
+                </wa-badge>
             </div>
 
             <h1 class="display-4 fw-bold text-uppercase text-body-emphasis mb-2" style="font-family: 'Impact', sans-serif;">
@@ -95,7 +95,7 @@ $pageTitle = "The Iron Horse & Fleet Archive - Stardust Strategic Assets, LLC";
             </p>
 
             <!-- Corporate Provenance Alert (2004-2015 Restructuring Lore) -->
-            <div class="card border-primary border-start border-4 bg-body-tertiary shadow-sm">
+            <wa-card class="card border-primary border-start border-4 bg-body-tertiary shadow-sm w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
                 <div class="card-body p-4">
                     <div class="d-flex align-items-start">
                         <i class="fa-duotone fa-sitemap text-primary fs-2 me-3 mt-1"></i>
@@ -110,20 +110,20 @@ $pageTitle = "The Iron Horse & Fleet Archive - Stardust Strategic Assets, LLC";
                                 After the band signed off at the conclusion of 2004's <a href="/engine-room/artists/stardust-engine/discography/2004-progress-street" class="fw-bold">Progress Street</a> to recover from severe touring burnout, CEO <a href="/engine-room/artists/stardust-engine/band/holly-oconnell" class="fw-bold">Holly O'Connell</a> spent the 2004&ndash;2015 hiatus systematically unbundling the label into a fortress of specialized entities. Realizing that a single highway accident involving a 45,000-pound motorcoach could expose the band's master recordings to catastrophic litigation, Holly spun off the physical properties and heavy fleet into <strong>Stardust Strategic Assets, LLC</strong> (a subsidiary of <strong>Stardust Properties, LLC</strong>), completing the anonymous corporate web in the <a href="/engine-room/artists/stardust-engine/story/2015-delaware-migration" class="fw-bold">2015 Delaware Migration</a>.
                             </p>
                             <div class="d-flex flex-wrap gap-2">
-                                <a href="#prairie-press-release" class="btn btn-sm btn-warning text-dark text-uppercase fw-bold font-monospace">
-                                    <i class="fa-duotone fa-newspaper me-1"></i>2004 Prairie Coachworks Press Release (#001)
-                                </a>
-                                <a href="/engine-room/corporate/structure" class="btn btn-sm btn-outline-primary text-uppercase fw-bold font-monospace">
-                                    <i class="fa-duotone fa-sitemap me-1"></i>View 2015 Corporate Structure Map
-                                </a>
-                                <a href="/engine-room/corporate/strategic-assets" class="btn btn-sm btn-outline-secondary text-uppercase fw-bold font-monospace">
-                                    <i class="fa-duotone fa-chess-rook me-1"></i>Stardust Strategic Assets HQ
-                                </a>
+                                <wa-button variant="warning" appearance="accent" size="small" href="#prairie-press-release" class="text-dark text-uppercase fw-bold font-monospace">
+                                    <i slot="start" class="fa-duotone fa-newspaper"></i>2004 Prairie Coachworks Press Release (#001)
+                                </wa-button>
+                                <wa-button variant="brand" appearance="outlined" size="small" href="/engine-room/corporate/structure" class="text-uppercase fw-bold font-monospace">
+                                    <i slot="start" class="fa-duotone fa-sitemap"></i>View 2015 Corporate Structure Map
+                                </wa-button>
+                                <wa-button variant="neutral" appearance="outlined" size="small" href="/engine-room/corporate/strategic-assets" class="text-uppercase fw-bold font-monospace">
+                                    <i slot="start" class="fa-duotone fa-chess-rook"></i>Stardust Strategic Assets HQ
+                                </wa-button>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
+            </wa-card>
         </div>
     </div>
 
@@ -132,10 +132,10 @@ $pageTitle = "The Iron Horse & Fleet Archive - Stardust Strategic Assets, LLC";
          ===================================================================== -->
     <div class="row justify-content-center mb-5" id="sainte-claire-45h3">
         <div class="col-lg-10">
-            <div class="card fleet-card shadow-lg overflow-hidden border-top border-4 border-info">
+            <wa-card class="card fleet-card shadow-lg overflow-hidden border-top border-4 border-info w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
                 <div class="card-header bg-dark text-white d-flex flex-wrap justify-content-between align-items-center py-3 px-4">
                     <div>
-                        <span class="badge bg-info text-dark font-monospace me-2">INTERSTATE FLAGSHIP</span>
+                        <wa-badge variant="brand" appearance="accent" class="font-monospace me-2">INTERSTATE FLAGSHIP</wa-badge>
                         <strong class="text-uppercase letter-spacing-1">2002 Sainte-Claire 45H3 &mdash; "The Iron Horse"</strong>
                     </div>
                     <span class="font-monospace small text-info">ORIGIN: SAINTE-CLAIRE, QU&Eacute;BEC</span>
@@ -167,12 +167,12 @@ $pageTitle = "The Iron Horse & Fleet Archive - Stardust Strategic Assets, LLC";
 
                             <!-- Links to the 2002 Sainte-Claire Lore Chapters -->
                             <div class="d-flex flex-wrap gap-2">
-                                <a href="/engine-room/assets/iron-horse/negotiation" class="btn btn-info text-dark fw-bold text-uppercase small">
-                                    <i class="fa-duotone fa-handshake me-2"></i>Part I: The Sainte-Claire Protocol (Mar 2002)
-                                </a>
-                                <a href="/engine-room/assets/iron-horse/delivery" class="btn btn-outline-info fw-bold text-uppercase small">
-                                    <i class="fa-duotone fa-elevator me-2"></i>Part II: The First Lift &amp; Delivery (Jun 2002)
-                                </a>
+                                <wa-button variant="brand" appearance="accent" href="/engine-room/assets/iron-horse/negotiation" class="text-dark fw-bold text-uppercase small">
+                                    <i slot="start" class="fa-duotone fa-handshake"></i>Part I: The Sainte-Claire Protocol (Mar 2002)
+                                </wa-button>
+                                <wa-button variant="brand" appearance="outlined" href="/engine-room/assets/iron-horse/delivery" class="fw-bold text-uppercase small">
+                                    <i slot="start" class="fa-duotone fa-elevator"></i>Part II: The First Lift &amp; Delivery (Jun 2002)
+                                </wa-button>
                             </div>
                         </div>
 
@@ -221,7 +221,7 @@ $pageTitle = "The Iron Horse & Fleet Archive - Stardust Strategic Assets, LLC";
                         </div>
                     </div>
                 </div>
-            </div>
+            </wa-card>
         </div>
     </div>
 
@@ -230,10 +230,10 @@ $pageTitle = "The Iron Horse & Fleet Archive - Stardust Strategic Assets, LLC";
          ===================================================================== -->
     <div class="row justify-content-center mb-5" id="prairie-coachworks-rlfd30">
         <div class="col-lg-10">
-            <div class="card fleet-card shadow-lg overflow-hidden border-top border-4 border-warning">
+            <wa-card class="card fleet-card shadow-lg overflow-hidden border-top border-4 border-warning w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
                 <div class="card-header bg-dark text-white d-flex flex-wrap justify-content-between align-items-center py-3 px-4">
                     <div>
-                        <span class="badge bg-warning text-dark font-monospace me-2">2004 LAUNCH CUSTOMER</span>
+                        <wa-badge variant="warning" appearance="accent" class="font-monospace me-2">2004 LAUNCH CUSTOMER</wa-badge>
                         <strong class="text-uppercase letter-spacing-1">2004 Prairie Coachworks RLFD30 &mdash; "Progress Street Shuttle"</strong>
                     </div>
                     <span class="font-monospace small text-warning">HEADSIGN: PROGRESS STREET // THE STARDUST ENGINE</span>
@@ -264,12 +264,12 @@ $pageTitle = "The Iron Horse & Fleet Archive - Stardust Strategic Assets, LLC";
                             </p>
 
                             <div class="d-flex flex-wrap gap-2">
-                                <a href="#prairie-press-release" class="btn btn-warning text-dark fw-bold text-uppercase small">
-                                    <i class="fa-duotone fa-newspaper me-2"></i>Read Prairie Coachworks Press Release (May 2004)
-                                </a>
-                                <a href="/engine-room/artists/stardust-engine/discography/2004-progress-street" class="btn btn-outline-warning fw-bold text-uppercase small">
-                                    <i class="fa-duotone fa-compact-disc me-2"></i>View Progress Street (2004) Album Lore
-                                </a>
+                                <wa-button variant="warning" appearance="accent" href="#prairie-press-release" class="text-dark fw-bold text-uppercase small">
+                                    <i slot="start" class="fa-duotone fa-newspaper"></i>Read Prairie Coachworks Press Release (May 2004)
+                                </wa-button>
+                                <wa-button variant="warning" appearance="outlined" href="/engine-room/artists/stardust-engine/discography/2004-progress-street" class="fw-bold text-uppercase small">
+                                    <i slot="start" class="fa-duotone fa-compact-disc"></i>View Progress Street (2004) Album Lore
+                                </wa-button>
                             </div>
                         </div>
 
@@ -324,16 +324,16 @@ $pageTitle = "The Iron Horse & Fleet Archive - Stardust Strategic Assets, LLC";
                     <div class="mt-5 pt-4 border-top border-secondary" id="prairie-press-release">
                         <div class="d-flex flex-wrap justify-content-between align-items-center mb-3">
                             <div>
-                                <span class="badge bg-warning text-dark font-monospace text-uppercase me-2">
+                                <wa-badge variant="warning" appearance="accent" class="font-monospace text-uppercase me-2">
                                     <i class="fa-solid fa-stamp me-1"></i>Archival Artifact // Framed Onboard Unit #001
-                                </span>
+                                </wa-badge>
                                 <span class="text-body-secondary small font-monospace">
                                     DOC-ID: PCW-PR-2004-0518 // WINNIPEG, MB &amp; BLACKSBURG, VA
                                 </span>
                             </div>
-                            <span class="badge bg-dark border border-warning text-warning font-monospace">
+                            <wa-badge variant="warning" appearance="outlined" class="text-warning font-monospace">
                                 LAUNCH CUSTOMER CERTIFICATE #001
-                            </span>
+                            </wa-badge>
                         </div>
 
                         <p class="text-body-secondary small fst-italic mb-3">
@@ -341,7 +341,7 @@ $pageTitle = "The Iron Horse & Fleet Archive - Stardust Strategic Assets, LLC";
                         </p>
 
                         <!-- Press Release Document Card -->
-                        <div class="card bg-body border-warning border-2 shadow-sm">
+                        <wa-card class="card bg-body border-warning border-2 shadow-sm w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
                             <div class="card-header bg-warning bg-opacity-10 border-bottom border-warning py-3 px-4">
                                 <div class="d-flex flex-wrap justify-content-between align-items-center font-monospace small">
                                     <strong class="text-uppercase text-warning-emphasis">
@@ -398,11 +398,11 @@ $pageTitle = "The Iron Horse & Fleet Archive - Stardust Strategic Assets, LLC";
                                     ### END RELEASE // PRAIRIE COACHWORKS ARCHIVE SERIAL #2004-RLFD30-001 ###
                                 </div>
                             </div>
-                        </div>
+                        </wa-card>
                     </div>
 
                 </div>
-            </div>
+            </wa-card>
         </div>
     </div>
 
@@ -411,13 +411,13 @@ $pageTitle = "The Iron Horse & Fleet Archive - Stardust Strategic Assets, LLC";
          ===================================================================== -->
     <div class="row justify-content-center mb-5">
         <div class="col-lg-10">
-            <div class="card bg-body-tertiary border-danger border-start border-4 shadow-sm">
+            <wa-card class="card bg-body-tertiary border-danger border-start border-4 shadow-sm w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
                 <div class="card-body p-4 p-lg-5">
                     <div class="row align-items-center">
                         <div class="col-lg-8">
-                            <span class="badge bg-danger text-white text-uppercase font-monospace mb-2">
+                            <wa-badge variant="danger" appearance="accent" class="text-uppercase font-monospace mb-2">
                                 <i class="fa-solid fa-id-card me-1"></i>Post-1990 Security &amp; Safety Mandate
-                            </span>
+                            </wa-badge>
                             <h3 class="h4 fw-bold text-uppercase text-body-emphasis mb-3">
                                 The CDL Protocol: Why No Outsider Ever Drives the Bus
                             </h3>
@@ -448,7 +448,7 @@ $pageTitle = "The Iron Horse & Fleet Archive - Stardust Strategic Assets, LLC";
                         </div>
                     </div>
                 </div>
-            </div>
+            </wa-card>
         </div>
     </div>
 
@@ -467,12 +467,12 @@ $pageTitle = "The Iron Horse & Fleet Archive - Stardust Strategic Assets, LLC";
                     </p>
                 </div>
                 <div class="d-flex gap-2">
-                    <a href="/engine-room/corporate/fleet" class="btn btn-info text-dark fw-bold text-uppercase font-monospace small">
-                        <i class="fa-solid fa-satellite-dish me-2"></i>Launch Fleet Command TUI
-                    </a>
-                    <a href="/engine-room/corporate/structure" class="btn btn-outline-light text-uppercase font-monospace small">
-                        <i class="fa-duotone fa-sitemap me-2"></i>Return to Org Chart
-                    </a>
+                    <wa-button variant="brand" appearance="accent" href="/engine-room/corporate/fleet" class="text-dark fw-bold text-uppercase font-monospace small">
+                        <i slot="start" class="fa-solid fa-satellite-dish"></i>Launch Fleet Command TUI
+                    </wa-button>
+                    <wa-button variant="neutral" appearance="outlined" href="/engine-room/corporate/structure" class="text-uppercase font-monospace small">
+                        <i slot="start" class="fa-duotone fa-sitemap"></i>Return to Org Chart
+                    </wa-button>
                 </div>
             </div>
         </div>

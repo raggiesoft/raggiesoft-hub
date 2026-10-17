@@ -73,7 +73,7 @@ $pageTitle = "Welcome to The Ironwood Collective";
             </div>
 
             <!-- ARCHITECTURE: Amenity summary highlighting the "Scholar-Grade" infrastructure -->
-            <div class="card bg-light border-0 mb-5 shadow-sm">
+            <wa-card class="card bg-light border-0 mb-5 shadow-sm w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
                 <div class="card-body p-4">
                     <h5 class="text-primary fw-bold text-uppercase mb-3">
                         <i class="fa-solid fa-server me-2"></i>Your Academic Advantage
@@ -93,7 +93,7 @@ $pageTitle = "Welcome to The Ironwood Collective";
                         </li>
                     </ul>
                 </div>
-            </div>
+            </wa-card>
 
             <div class="mb-5">
                 <!-- ARCHITECTURE: Strict covenant enforcement block. The core lore differentiator. -->
@@ -124,10 +124,10 @@ $pageTitle = "Welcome to The Ironwood Collective";
                     </div>
                 </div>
                 
-                <div class="alert alert-secondary mt-3 small">
-                    <i class="fa-solid fa-circle-exclamation me-2"></i>
+                <wa-callout variant="neutral" appearance="accent" class="mt-3 small d-block">
+                    <i slot="icon" class="fa-solid fa-circle-exclamation"></i>
                     <strong>Lease Enforcement:</strong> Please be advised that violations of these covenants are considered a material breach of lease and are grounds for immediate termination. We protect the quiet of our community fiercely.
-                </div>
+                </wa-callout>
             </div>
 
             <div class="mb-5">

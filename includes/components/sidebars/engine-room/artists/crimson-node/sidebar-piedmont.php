@@ -1,39 +1,53 @@
 <?php
 /**
- * ARCHITECTURE & MAINTENANCE (LEGACY)
+ * ============================================================================
+ * Crimson Node - Piedmont Directory Sidebar (Web Awesome v3.13.0)
+ * ============================================================================
+ * File: includes/components/sidebars/engine-room/artists/crimson-node/sidebar-piedmont.php
  *
- * This file provides the specialized sidebar for the "Piedmont" character subset within the Crimson Node lore.
- * 
- * DESIGN INTENT:
- * - Uses contrasting Bootstrap cards (Dark vs. Danger headers) to visually separate "Piedmont Directory" characters from the antagonistic "The Phalanx" family tree.
- * - Implements simple active state checking based on a presumed `$currentPath` variable.
- * 
- * MAINTENANCE NOTES:
- * - `$currentPath` is NOT defined within this file. It relies on the parent template establishing this variable before including the sidebar. This is a potential source of undefined variable warnings.
- * - Extremely minimal right now; designed to expand as more character profiles are added to these factions.
+ * ARCHITECTURAL OVERVIEW:
+ * Specialized sidebar for the "University of the Piedmont" character subset
+ * within the Crimson Node lore, built with Web Awesome v3.13.0 `<wa-card>` and
+ * `<wa-button>` components.
+ * ============================================================================
  */
-// sidebar-piedmont.php
+$currentPath = rtrim(parse_url($_SERVER['REQUEST_URI'] ?? '', PHP_URL_PATH) ?: '', '/');
 ?>
-<!-- LEGACY LAYOUT: Primary faction grouping card. Uses standard dark header styling. -->
-<div class="card border-0 shadow-sm mb-4">
-    <div class="card-header bg-dark text-white fw-bold text-uppercase" style="letter-spacing: 1px;">
-        <a href="/engine-room/artists/crimson-node/characters/piedmont" class="text-white text-decoration-none d-block">
-            <i slot="start" class="fa-solid fa-arrow-left"></i> Piedmont Directory
+<wa-card class="border-0 shadow-sm mb-4">
+    <div slot="header" class="fw-bold text-uppercase small" style="letter-spacing: 1px;">
+        <a href="/engine-room/artists/crimson-node/characters/piedmont" class="text-body-emphasis text-decoration-none d-block">
+            <i class="fa-solid fa-arrow-left me-2 text-primary"></i>Piedmont Directory
         </a>
     </div>
-    <div class="list-group list-group-flush">
-        <a href="/engine-room/artists/crimson-node/characters/piedmont/trent-montgomery" class="list-group-item list-group-item-action <?= ($currentPath == '/engine-room/artists/crimson-node/characters/piedmont/trent-montgomery') ? 'active' : '' ?>">
-            Trent Montgomery
-        </a>
+    <div class="d-flex flex-column gap-1">
+        <wa-button appearance="<?= ($currentPath === '/engine-room/artists/crimson-node/characters/piedmont') ? 'filled-outlined' : 'plain' ?>"
+                   variant="<?= ($currentPath === '/engine-room/artists/crimson-node/characters/piedmont') ? 'brand' : 'neutral' ?>"
+                   href="/engine-room/artists/crimson-node/characters/piedmont"
+                   class="w-100 text-start justify-content-start">
+            <i slot="start" class="fa-duotone fa-building-columns"></i>Campus Overview
+        </wa-button>
+        <wa-button appearance="<?= ($currentPath === '/engine-room/artists/crimson-node/characters/piedmont/trent-montgomery') ? 'filled-outlined' : 'plain' ?>"
+                   variant="<?= ($currentPath === '/engine-room/artists/crimson-node/characters/piedmont/trent-montgomery') ? 'brand' : 'neutral' ?>"
+                   href="/engine-room/artists/crimson-node/characters/piedmont/trent-montgomery"
+                   class="w-100 text-start justify-content-start">
+            <i slot="start" class="fa-duotone fa-user-Secret"></i>Trent Montgomery
+        </wa-button>
     </div>
-</div>
-<div class="card border-0 shadow-sm">
-    <div class="card-header bg-danger text-white fw-bold text-uppercase" style="letter-spacing: 1px;">
-        The Phalanx
+</wa-card>
+
+<wa-card class="border-0 shadow-sm">
+    <div slot="header" class="fw-bold text-uppercase small text-danger" style="letter-spacing: 1px;">
+        <i class="fa-duotone fa-shield-halved me-2"></i>Character Factions
     </div>
-    <div class="list-group list-group-flush">
-        <a href="/engine-room/artists/crimson-node/characters/family" class="list-group-item list-group-item-action">
-            View Family Directory
-        </a>
+    <div class="d-flex flex-column gap-1">
+        <wa-button appearance="plain" variant="neutral" href="/engine-room/artists/crimson-node/characters/family" class="w-100 text-start justify-content-start">
+            <i slot="start" class="fa-duotone fa-shield-halved text-danger"></i>The Phalanx Directory
+        </wa-button>
+        <wa-button appearance="plain" variant="neutral" href="/engine-room/artists/crimson-node/characters/ccc" class="w-100 text-start justify-content-start">
+            <i slot="start" class="fa-duotone fa-graduation-cap text-info"></i>CCC Campus
+        </wa-button>
+        <wa-button appearance="plain" variant="neutral" href="/engine-room/artists/crimson-node/characters/northwood" class="w-100 text-start justify-content-start">
+            <i slot="start" class="fa-duotone fa-school text-warning"></i>Northwood High
+        </wa-button>
     </div>
-</div>
+</wa-card>

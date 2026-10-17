@@ -28,8 +28,8 @@
     </div>
 
     <div class="fs-5">
-        <div class="card bg-primary text-light border-0 mb-4">
-            <div class="card-body">
+        <wa-card class="card bg-primary text-light border-0 mb-4 w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
+            <div class="card-body p-4">
                 <div class="row">
                     <div class="col-md-4 mb-2 mb-md-0">
                         <i class="fa-duotone fa-bullseye-pointer me-2" aria-hidden="true"></i>
@@ -45,7 +45,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </wa-card>
 
         <p class="lead mb-4">In software architecture, we often discuss <strong>Graceful Degradation</strong>—how a system behaves when a critical component fails. Does it crash the entire server, or does it switch to a "Safe Mode" to preserve core functionality? This case study examines a real-world application of this principle during a 30-mile stress test.</p>
         
@@ -72,13 +72,13 @@
         </h2>
         <p>At Exit 221, the road splits. We committed to the lane marked <strong>I-64 EAST - Richmond</strong>.</p>
         
-        <div class="alert alert-danger border-danger d-flex align-items-start" role="alert">
-            <i class="fa-duotone fa-shield-xmark fa-2x me-3 mt-1" aria-hidden="true"></i>
+        <wa-callout variant="danger" appearance="accent" class="d-block">
+            <i slot="icon" class="fa-duotone fa-shield-xmark" aria-hidden="true"></i>
             <div>
                 <h3 class="h4 alert-heading">System Error: Permissions Bypassed</h3>
                 <p class="mb-0">Despite previous informed consent, the visual input of the "I-64 East" signifier triggered a fatal conflict. To Jordan's memory, I-64 equals Abuse. The logic centers (User Space) were instantly locked out. The <strong>Survival Instinct seized Root Access</strong>, overriding all logic with a single command: <em>FIGHT OR FLIGHT.</em></p>
             </div>
-        </div>
+        </wa-callout>
 
         <h2 class="fw-bold mt-5 text-success">
             <i class="fa-duotone fa-kit-medical me-2" aria-hidden="true"></i>4. Disaster Recovery: The Fishersville Protocol
@@ -87,17 +87,17 @@
 
         <div class="row mt-4">
             <div class="col-md-6">
-                <div class="card h-100 border-warning bg-warning bg-opacity-10">
-                    <div class="card-body">
+                <wa-card class="card h-100 border-warning bg-warning bg-opacity-10 w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
+                    <div class="card-body p-4">
                         <h4 class="h5 card-title"><i class="fa-duotone fa-brake-warning me-2" aria-hidden="true"></i>Phase A: The Hard Exit</h4>
                         <p class="card-text">Utilized <strong>Exit 91 (Fishersville)</strong>. Bypassed signal latency by taking the immediate right onto SR-608 into <strong>McDonald's</strong>.</p>
                         <p class="card-text small text-muted"><strong>Result:</strong> Sensory input halted. Passive Monitoring Agents engaged deep-pressure protocols.</p>
                     </div>
-                </div>
+                </wa-card>
             </div>
             <div class="col-md-6 mt-3 mt-md-0">
-                <div class="card h-100 border-success bg-success bg-opacity-10">
-                    <div class="card-body">
+                <wa-card class="card h-100 border-success bg-success bg-opacity-10 w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
+                    <div class="card-body p-4">
                         <h4 class="h5 card-title"><i class="fa-duotone fa-mountain-sun me-2" aria-hidden="true"></i>Phase B: Redundant Routing</h4>
                         <p class="card-text">Implemented complex workaround to avoid re-entering the corrupted network (I-64):</p>
                         <ul class="small mb-0">
@@ -106,7 +106,7 @@
                             <li>Blue Ridge Parkway (Scenic Interface)</li>
                         </ul>
                     </div>
-                </div>
+                </wa-card>
             </div>
         </div>
 

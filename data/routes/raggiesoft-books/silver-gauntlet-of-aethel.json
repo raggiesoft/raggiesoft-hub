@@ -4,8 +4,8 @@
     "project-slug": "aethel",
     "siteName": "The Silver Gauntlet of Aethel",
     "ogTitle": "The Silver Gauntlet of Aethel - Official Saga",
-    "ogDescription": "An epic 80s fantasy adventure spanning four eras. Read the saga and listen to the official soundtrack by Firelight.",
-    "ogImage": "/engine-room/artists/firelight/2025-silver-gauntlet-of-aethel/album-art.jpg",
+    "ogDescription": "An epic 80s fantasy adventure spanning four eras. Read the saga and listen to the official soundtrack by Mana Canvas.",
+    "ogImage": "/engine-room-records/artists/mana-canvas/social-preview.jpg",
     "headerMenu": "raggiesoft-books/header-aethel",
     "footer": "raggiesoft-books/footer-aethel",
     "showSidebar": false,
@@ -19,6 +19,11 @@
     "view": "pages/raggiesoft-books/aethel-saga/overview",
     "title": "The Silver Gauntlet of Aethel | Saga Overview",
     "transparentHeader": true
+  },
+  "/raggiesoft-books/aethel-saga/lore": {
+    "view": "pages/raggiesoft-books/aethel-saga/lore/overview",
+    "title": "World Lore & Codex | The Silver Gauntlet of Aethel",
+    "ogTitle": "The Codex of Aethel - World Lore"
   },
   "/raggiesoft-books/aethel-saga/lore/characters": {
     "view": "pages/raggiesoft-books/aethel-saga/lore/characters",
@@ -37,7 +42,12 @@
   "/raggiesoft-books/aethel-saga/soundtrack": {
     "view": "pages/raggiesoft-books/aethel-saga/soundtrack",
     "title": "Original Soundtrack | The Silver Gauntlet of Aethel",
-    "ogTitle": "The Silver Gauntlet of Aethel OST - Firelight",
+    "ogTitle": "The Silver Gauntlet of Aethel OST - Mana Canvas",
     "ogDescription": "Listen to the original orchestral rock score composed for the saga."
+  },
+  "/raggiesoft-books/aethel-saga/lore/soundtrack/the-tyrants-throne": {
+    "view": "pages/raggiesoft-books/aethel-saga/lore/soundtrack/the-tyrants-throne",
+    "title": "The Tyrant's Throne (OST Lore) | The Silver Gauntlet of Aethel",
+    "ogTitle": "The Tyrant's Throne - Soundtrack Lore Breakdown"
   }
 }

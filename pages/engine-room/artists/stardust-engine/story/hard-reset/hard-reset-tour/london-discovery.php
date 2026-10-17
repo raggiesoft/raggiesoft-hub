@@ -17,9 +17,9 @@ $pageTitle = "The London Discovery - The Stardust Engine Lore";
     <!-- INLINE: Main narrative header establishing the date, location, and historical significance -->
     <div class="row justify-content-center mb-5">
         <div class="col-lg-8 text-center">
-            <span class="badge bg-warning text-dark rounded-pill px-3 py-2 shadow-sm mb-3 text-uppercase">
+            <wa-badge variant="warning" appearance="accent" pill class="px-3 py-2 shadow-sm mb-3 text-uppercase">
                 <i class="fa-duotone fa-handshake me-2"></i>Engine Room Records History
-            </span>
+            </wa-badge>
             <h1 class="display-3 fw-bold text-uppercase text-body-emphasis mb-0" style="font-family: 'Impact', sans-serif;">
                 The Discovery
             </h1>
@@ -32,8 +32,8 @@ $pageTitle = "The London Discovery - The Stardust Engine Lore";
     <div class="row justify-content-center mb-5">
         <div class="col-lg-9">
             
-            <div class="card border-0 shadow-sm bg-body-tertiary p-4 mb-5">
-                <div class="card-body">
+            <wa-card class="card border-0 shadow-sm bg-body-tertiary p-4 mb-5 w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
+                <div class="card-body p-4">
                     <h3 class="h5 fw-bold text-body-emphasis border-bottom pb-2 mb-3">The Wake in the Bar</h3>
                     <p class="text-body-secondary">
                         It was sheer chance. Ryan O'Connell and Evan Wright had ducked into the basement club just to escape the London rain.
@@ -42,17 +42,17 @@ $pageTitle = "The London Discovery - The Stardust Engine Lore";
                         On stage, it wasn't a reunion; it was a ghost story. <strong>Origin</strong> had once been a massive six-piece art-rock orchestra. Now, only two remained: the singer and the flautist. Brother and sister.
                     </p>
                     
-                    <div class="alert alert-primary bg-primary bg-opacity-10 border-primary d-flex align-items-center mt-4">
-                        <i class="fa-duotone fa-music text-primary fs-3 me-3"></i>
+                    <wa-callout variant="brand" appearance="accent" class="mt-4 d-block">
+                        <i slot="icon" class="fa-duotone fa-music text-primary"></i>
                         <div>
                             <strong class="text-primary-emphasis d-block">The Signal</strong> 
                             <span class="text-body-secondary small">The flautist stepped up to the mic and played seven notes. Ryan froze. It was the "Safe Harbor" melody—the exact tune Cassidy used to hum to him over the phone during his paralysis rehab in 1991.</span>
                         </div>
-                    </div>
+                    </wa-callout>
                 </div>
-            </div>
+            </wa-card>
 
-            <div class="card bg-body-tertiary border-info p-4 mb-5 shadow-lg">
+            <wa-card class="card bg-body-tertiary border-info p-4 mb-5 shadow-lg w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
                 <div class="row align-items-center">
                     <div class="col-md-8">
                         <h4 class="text-info fw-bold text-uppercase mb-2">The Phone Call</h4>
@@ -64,7 +64,7 @@ $pageTitle = "The London Discovery - The Stardust Engine Lore";
                         <i class="fa-duotone fa-mobile-signal fa-4x text-info opacity-25"></i>
                     </div>
                 </div>
-            </div>
+            </wa-card>
 
             <h3 class="h4 fw-bold text-body-emphasis mb-4">The Approach: "The Common Language"</h3>
             <p class="text-body-secondary fs-5 mb-4">
@@ -73,8 +73,8 @@ $pageTitle = "The London Discovery - The Stardust Engine Lore";
             
             <div class="row g-4">
                 <div class="col-md-6">
-                    <div class="card h-100 bg-body-secondary border-0">
-                        <div class="card-body">
+                    <wa-card class="card h-100 bg-body-secondary border-0 w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
+                        <div class="card-body p-4">
                             <h5 class="text-body-emphasis fw-bold"><i class="fa-duotone fa-glass-water me-2"></i>The Order</h5>
                             <p class="small text-body-secondary mb-0">
                                 Holly walked up to the band's table. "Five pints of Cola. And a round of chips."
@@ -82,11 +82,11 @@ $pageTitle = "The London Discovery - The Stardust Engine Lore";
                                 The lead singer stared at the sodas, then at her. "Are you taking the mickey?" He assumed she was mocking them.
                             </p>
                         </div>
-                    </div>
+                    </wa-card>
                 </div>
                 <div class="col-md-6">
-                    <div class="card h-100 bg-body-secondary border-0">
-                        <div class="card-body">
+                    <wa-card class="card h-100 bg-body-secondary border-0 w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
+                        <div class="card-body p-4">
                             <h5 class="text-body-emphasis fw-bold"><i class="fa-duotone fa-hand-heart me-2"></i>The Truth</h5>
                             <p class="small text-body-secondary mb-0">
                                 "We don't drink," Holly said simply. "We're a dry tour."
@@ -94,12 +94,12 @@ $pageTitle = "The London Discovery - The Stardust Engine Lore";
                                 The singer's defensiveness vanished. He looked at his sister. "Neither do we. Not after what the London scene did to the rest of us."
                             </p>
                         </div>
-                    </div>
+                    </wa-card>
                 </div>
             </div>
 
             <!-- INLINE: The "Mirror Image" alert highlights the crucial neurodivergent connection between the two bands -->
-            <div class="alert alert-warning bg-warning bg-opacity-10 border-warning mt-5 shadow-sm" role="alert">
+            <wa-callout variant="warning" appearance="accent" class="mt-5 shadow-sm d-block">
                 <div class="d-flex align-items-start">
                     <i class="fa-duotone fa-dna text-warning fs-2 me-3 mt-1"></i>
                     <div>
@@ -112,7 +112,7 @@ $pageTitle = "The London Discovery - The Stardust Engine Lore";
                         </p>
                     </div>
                 </div>
-            </div>
+            </wa-callout>
 
         </div>
     </div>
@@ -120,7 +120,7 @@ $pageTitle = "The London Discovery - The Stardust Engine Lore";
     <div class="row justify-content-center">
         <div class="col-lg-8 text-center">
             <h3 class="h5 text-uppercase text-body-secondary fw-bold mb-3">The Deal</h3>
-            <div class="card bg-body-tertiary shadow-lg transform-rotate-1 p-4" style="font-family: 'Caveat', cursive;">
+            <wa-card class="card bg-body-tertiary shadow-lg transform-rotate-1 p-4 w-100" style="font-family: 'Caveat', cursive; --body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
                 <p class="fs-3 text-body-emphasis mb-2">The "Napkin" Deal</p>
                 <ul class="list-unstyled fs-5 text-body-secondary text-start mx-auto" style="max-width: 400px;">
                     <li class="mb-2">1. You un-retire.</li>
@@ -131,7 +131,7 @@ $pageTitle = "The London Discovery - The Stardust Engine Lore";
                 <div class="mt-3 border-top pt-2">
                     <span class="text-primary">Signed: H. O'Connell / Origin</span>
                 </div>
-            </div>
+            </wa-card>
             <p class="small text-body-secondary mt-4">
                 The singer laughed. <strong>"Luv, we live in Williamsport, Maryland. Just down the I-81."</strong>
                 <br>They were at The Fortress three weeks later.
@@ -141,12 +141,12 @@ $pageTitle = "The London Discovery - The Stardust Engine Lore";
 
     <div class="row mt-5">
         <div class="col-12 text-center">
-            <a href="/engine-room/artists/stardust-engine/story/hard-reset-tour/paternoster-incident" class="btn btn-outline-secondary rounded-pill px-4">
-                <i class="fa-duotone fa-backward me-2"></i>Back to Prague
-            </a>
-            <a href="/engine-room/artists/stardust-engine/band/history" class="btn btn-outline-primary rounded-pill px-4 ms-2">
-                <i class="fa-duotone fa-timeline me-2"></i>Return to Timeline
-            </a>
+            <wa-button variant="neutral" appearance="outlined" pill href="/engine-room/artists/stardust-engine/story/hard-reset-tour/paternoster-incident" class="px-4">
+                <i slot="start" class="fa-duotone fa-backward"></i>Back to Prague
+            </wa-button>
+            <wa-button variant="brand" appearance="outlined" pill href="/engine-room/artists/stardust-engine/band/history" class="px-4 ms-2">
+                <i slot="start" class="fa-duotone fa-timeline"></i>Return to Timeline
+            </wa-button>
         </div>
     </div>
 

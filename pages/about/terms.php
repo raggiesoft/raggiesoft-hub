@@ -31,7 +31,7 @@
                 <p class="text-muted">Last Updated: <?php echo date("F Y"); ?></p>
             </div>
 
-            <div class="card shadow-sm border-0 mb-4">
+            <wa-card class="card shadow-sm border-0 mb-4 w-100" style="--body-padding: 0; --header-padding: 0;">
                 <div class="card-body p-4 p-lg-5">
                     
                     <h4 class="fw-bold mb-3">1. Acceptance of Terms</h4>
@@ -71,9 +71,9 @@
                                 While the storefront operates on my subdomain and features my designs, the transaction, fulfillment, and customer support for those goods are managed entirely by Fourthwall. RaggieSoft assumes no liability for shipping delays, lost packages, or manufacturing defects.
                             </p>
                             <div class="d-flex flex-wrap gap-2">
-                                <a href="https://store.raggiesoft.com/pages/terms-of-service" class="btn btn-sm btn-outline-primary">Terms of Service</a>
-                                <a href="https://store.raggiesoft.com/pages/returns-faq" class="btn btn-sm btn-outline-primary">Returns & FAQ</a>
-                                <a href="https://store.raggiesoft.com/contact" class="btn btn-sm btn-outline-primary">Store Support</a>
+                                <wa-button variant="brand" appearance="outlined" size="small" href="https://store.raggiesoft.com/pages/terms-of-service">Terms of Service</wa-button>
+                                <wa-button variant="brand" appearance="outlined" size="small" href="https://store.raggiesoft.com/pages/returns-faq">Returns & FAQ</wa-button>
+                                <wa-button variant="brand" appearance="outlined" size="small" href="https://store.raggiesoft.com/contact">Store Support</wa-button>
                             </div>
                         </div>
                     </div>
@@ -97,7 +97,7 @@
                     <p>These terms shall be governed by the laws of the <strong>Commonwealth of Virginia</strong> and the United States of America. Any disputes shall be resolved in the courts of Norfolk, Virginia.</p>
                     
                 </div>
-            </div>
+            </wa-card>
 
         </div>
     </div>

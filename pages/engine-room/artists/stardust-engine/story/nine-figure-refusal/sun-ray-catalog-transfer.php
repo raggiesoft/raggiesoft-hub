@@ -67,9 +67,9 @@ $pageTitle = "Lot 200: The Sun-Ray Repatriation";
     <!-- BEGIN: Header Section -->
     <div class="row justify-content-center mb-5">
         <div class="col-lg-8 text-center">
-            <span class="badge bg-success-subtle text-success-emphasis rounded-pill px-3 py-2 mb-3 text-uppercase letter-spacing-1 border border-success-subtle">
+            <wa-badge variant="success" appearance="filled-outlined" pill class="text-success-emphasis px-3 py-2 mb-3 text-uppercase letter-spacing-1">
                 <i class="fa-duotone fa-file-signature me-2"></i>Final Disposition
-            </span>
+            </wa-badge>
             <h1 class="display-4 fw-bold text-body-emphasis mb-2" style="font-family: 'Impact', sans-serif;">
                 LOT 200: THE JOURNEY
             </h1>
@@ -83,7 +83,7 @@ $pageTitle = "Lot 200: The Sun-Ray Repatriation";
     <!-- BEGIN: Chain of Title Diagram -->
     <div class="row justify-content-center mb-5">
         <div class="col-lg-10">
-            <div class="card bg-body-tertiary border-secondary shadow-lg">
+            <wa-card class="card bg-body-tertiary border-secondary shadow-lg w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
                 <div class="card-body p-5">
                     <h5 class="text-uppercase text-body-emphasis border-bottom border-secondary pb-3 mb-4">
                         <i class="fa-solid fa-route me-2"></i>Chain of Title (2018-2019)
@@ -115,7 +115,7 @@ $pageTitle = "Lot 200: The Sun-Ray Repatriation";
                         <div class="flex-grow-1 border-start border-4 border-primary ps-4 py-2 bg-primary-subtle rounded-end">
                             <h6 class="fw-bold text-primary-emphasis mb-0">2. Aethelgard Holdings (Secured Creditor)</h6>
                             <p class="small text-primary-emphasis mb-0">
-                                <span class="badge bg-primary text-white me-2">CREDIT BID</span>
+                                <wa-badge variant="brand" appearance="accent" class="me-2">CREDIT BID</wa-badge>
                                 Acquired Lot 200 via §363(k) using acquired debt.
                             </p>
                         </div>
@@ -145,7 +145,7 @@ $pageTitle = "Lot 200: The Sun-Ray Repatriation";
                     </div>
 
                 </div>
-            </div>
+            </wa-card>
         </div>
     </div>
     <!-- END: Chain of Title Diagram -->
@@ -153,7 +153,7 @@ $pageTitle = "Lot 200: The Sun-Ray Repatriation";
     <!-- BEGIN: Physical Invoice Simulation -->
     <div class="row justify-content-center">
         <div class="col-lg-8">
-            <div class="card border-0 shadow-lg physical-invoice" style="font-family: 'Courier New', monospace;">
+            <wa-card class="card border-0 shadow-lg physical-invoice w-100" style="font-family: 'Courier New', monospace; --body-padding: 0; --header-padding: 0;">
                 <div class="card-body p-5 position-relative">
                     
                     <div class="row mb-4 border-bottom border-dark pb-3">
@@ -206,7 +206,7 @@ $pageTitle = "Lot 200: The Sun-Ray Repatriation";
                     </div>
 
                 </div>
-            </div>
+            </wa-card>
         </div>
     </div>
     <!-- END: Physical Invoice Simulation -->

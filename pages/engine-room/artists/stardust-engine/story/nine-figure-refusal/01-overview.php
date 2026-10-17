@@ -32,9 +32,9 @@ $pageTitle = "Case File: OGM-2018 (The $150M Refusal)";
     
     <div class="row justify-content-center mb-5">
         <div class="col-lg-8 text-center">
-            <span class="badge bg-danger rounded-pill px-3 py-2 mb-3 text-uppercase letter-spacing-1 shadow-sm">
+            <wa-badge variant="danger" appearance="accent" pill class="px-3 py-2 mb-3 text-uppercase letter-spacing-1 shadow-sm">
                 <i class="fa-duotone fa-folder-open me-2"></i>Case File: OGM-2018
-            </span>
+            </wa-badge>
             <h1 class="display-4 fw-bold text-body-emphasis mb-2" style="font-family: 'Impact', sans-serif;">
                 THE NINE FIGURE REFUSAL
             </h1>
@@ -47,7 +47,7 @@ $pageTitle = "Case File: OGM-2018 (The $150M Refusal)";
     <div class="row justify-content-center">
         <div class="col-lg-10">
             
-            <div class="card mb-4 border-0 shadow-sm">
+            <wa-card class="card mb-4 border-0 shadow-sm w-100" style="--body-padding: 0; --header-padding: 0;">
                 <div class="card-header bg-body-tertiary border-bottom border-secondary py-3">
                     <h5 class="mb-0 text-body-emphasis fw-bold text-uppercase"><i class="fa-solid fa-chess-pawn me-2 text-secondary"></i>Chapter 1: The Setup</h5>
                 </div>
@@ -93,9 +93,9 @@ $pageTitle = "Case File: OGM-2018 (The $150M Refusal)";
                         <i class="fa-solid fa-chevron-right ms-auto text-body-tertiary"></i>
                     </a>
                 </div>
-            </div>
+            </wa-card>
 
-            <div class="card mb-4 border-0 shadow-sm">
+            <wa-card class="card mb-4 border-0 shadow-sm w-100" style="--body-padding: 0; --header-padding: 0;">
                 <div class="card-header bg-body-tertiary border-bottom border-secondary py-3">
                     <h5 class="mb-0 text-body-emphasis fw-bold text-uppercase"><i class="fa-solid fa-chess-knight me-2 text-secondary"></i>Chapter 2: The Trap</h5>
                 </div>
@@ -141,9 +141,9 @@ $pageTitle = "Case File: OGM-2018 (The $150M Refusal)";
                         <i class="fa-solid fa-chevron-right ms-auto text-body-tertiary"></i>
                     </a>
                 </div>
-            </div>
+            </wa-card>
 
-            <div class="card mb-4 border-0 shadow-sm">
+            <wa-card class="card mb-4 border-0 shadow-sm w-100" style="--body-padding: 0; --header-padding: 0;">
                 <div class="card-header bg-body-tertiary border-bottom border-secondary py-3">
                     <h5 class="mb-0 text-body-emphasis fw-bold text-uppercase"><i class="fa-solid fa-chess-queen me-2 text-secondary"></i>Chapter 3: The Event</h5>
                 </div>
@@ -179,9 +179,9 @@ $pageTitle = "Case File: OGM-2018 (The $150M Refusal)";
                         <i class="fa-solid fa-chevron-right ms-auto text-body-tertiary"></i>
                     </a>
                 </div>
-            </div>
+            </wa-card>
 
-            <div class="card mb-4 border-0 shadow-sm">
+            <wa-card class="card mb-4 border-0 shadow-sm w-100" style="--body-padding: 0; --header-padding: 0;">
                 <div class="card-header bg-body-tertiary border-bottom border-secondary py-3">
                     <h5 class="mb-0 text-body-emphasis fw-bold text-uppercase"><i class="fa-solid fa-chess-king me-2 text-secondary"></i>Chapter 4: The Fallout</h5>
                 </div>
@@ -217,9 +217,9 @@ $pageTitle = "Case File: OGM-2018 (The $150M Refusal)";
                         <i class="fa-solid fa-chevron-right ms-auto text-body-tertiary"></i>
                     </a>
                 </div>
-            </div>
+            </wa-card>
 
-            <div class="card mb-4 border-0 shadow-sm">
+            <wa-card class="card mb-4 border-0 shadow-sm w-100" style="--body-padding: 0; --header-padding: 0;">
                 <div class="card-header bg-body-tertiary border-bottom border-secondary py-3">
                     <h5 class="mb-0 text-body-emphasis fw-bold text-uppercase"><i class="fa-solid fa-chess-rook me-2 text-secondary"></i>Chapter 5: The Legacy</h5>
                 </div>
@@ -245,9 +245,9 @@ $pageTitle = "Case File: OGM-2018 (The $150M Refusal)";
                         <i class="fa-solid fa-chevron-right ms-auto text-body-tertiary"></i>
                     </a>
                 </div>
-            </div>
+            </wa-card>
 
-            <div class="card mb-4 border-0 shadow-sm">
+            <wa-card class="card mb-4 border-0 shadow-sm w-100" style="--body-padding: 0; --header-padding: 0;">
                 <div class="card-header bg-body-tertiary border-bottom border-secondary py-3">
                     <h5 class="mb-0 text-body-emphasis fw-bold text-uppercase"><i class="fa-solid fa-book-bookmark me-2 text-secondary"></i>Epilogue</h5>
                 </div>
@@ -263,23 +263,23 @@ $pageTitle = "Case File: OGM-2018 (The $150M Refusal)";
                         <i class="fa-solid fa-chevron-right ms-auto text-body-tertiary"></i>
                     </a>
                 </div>
-            </div>
+            </wa-card>
 
         </div>
     </div>
 
     <div class="row mt-5 pt-4 border-top border-secondary border-opacity-25 align-items-center">
         <div class="col-4">
-            <a href="/engine-room/history" class="btn btn-outline-secondary rounded-pill">
-                <i class="fa-solid fa-arrow-left me-2"></i>History Hub
-            </a>
+            <wa-button variant="neutral" appearance="outlined" pill href="/engine-room/history">
+                <i slot="start" class="fa-solid fa-arrow-left"></i>History Hub
+            </wa-button>
         </div>
         <div class="col-4 text-center">
             </div>
         <div class="col-4 text-end">
-            <a href="/engine-room/artists/stardust-engine/story/nine-figure-refusal/the-approach" class="btn btn-primary rounded-pill shadow-sm px-4">
-                Begin Case File <i class="fa-solid fa-arrow-right ms-2"></i>
-            </a>
+            <wa-button variant="brand" appearance="accent" pill href="/engine-room/artists/stardust-engine/story/nine-figure-refusal/the-approach" class="shadow-sm px-4">
+                Begin Case File <i slot="end" class="fa-solid fa-arrow-right"></i>
+            </wa-button>
         </div>
     </div>
 

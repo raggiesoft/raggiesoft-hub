@@ -16,7 +16,7 @@
 // pages/family/harper.php
 // Theme: Harper (High Energy, Purple, Studio)
 ?>
-<div class="card mb-5 border-0 shadow-sm overflow-hidden bg-body-tertiary">
+<wa-card class="card mb-5 border-0 shadow-sm overflow-hidden bg-body-tertiary w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
     <div class="row g-0">
         <!-- ARCHITECTURE: Persona image wrapper with thematic purple overlay -->
         <div class="col-lg-4 position-relative" style="min-height: 300px;">
@@ -30,12 +30,12 @@
         <div class="col-lg-8 d-flex align-items-center">
             <div class="card-body p-4 p-lg-5">
                 <div class="d-flex align-items-center mb-3">
-                    <span class="badge me-2 text-white" style="background-color: #6610f2;">
+                    <wa-badge variant="neutral" appearance="accent" class="me-2" style="background-color: #6610f2;">
                         <i class="fa-duotone fa-file-audio me-2"></i>_workspace/harper.sh
-                    </span>
-                    <span class="badge border bg-transparent" style="border-color: var(--family-harper) !important; color: var(--family-harper) !important;">
+                    </wa-badge>
+                    <wa-badge variant="neutral" appearance="outlined" style="border-color: var(--family-harper) !important; color: var(--family-harper) !important;">
                         FFmpeg / Real-ESRGAN / 7-Zip
-                    </span>
+                    </wa-badge>
                 </div>
                 
                 <h1 class="display-4 fw-bold mb-2 text-body">Harper</h1>
@@ -61,11 +61,11 @@
                     <div class="mt-2 pt-2 border-top border-light">
                         <div class="d-flex justify-content-between mb-1">
                             <span class="small text-muted">Neurotype:</span>
-                            <span class="badge text-white border" style="background-color: #6610f2; border-color: #6610f2 !important;">Sensory Seeker (SPD)</span>
+                            <wa-badge variant="neutral" appearance="accent" style="background-color: #6610f2; border-color: #6610f2 !important;">Sensory Seeker (SPD)</wa-badge>
                         </div>
                         <div class="d-flex justify-content-between">
                             <span class="small text-muted">Mobility:</span>
-                            <span class="badge bg-light text-dark border">Ambulatory Wheelchair User</span>
+                            <wa-badge variant="neutral" appearance="accent">Ambulatory Wheelchair User</wa-badge>
                         </div>
                     </div>
                 </div>
@@ -73,7 +73,7 @@
             </div>
         </div>
     </div>
-</div>
+</wa-card>
 
 <div class="row g-5 mb-5">
     <div class="col-md-12 col-xl-6">
@@ -109,11 +109,11 @@
 <div class="row">
     <div class="col-12">
         <!-- ARCHITECTURE: Mock terminal UI representing Harper's processing logs -->
-        <div class="card shadow-lg font-monospace" style="background-color: #0d1117; color: #c9d1d9; border: 1px solid var(--family-harper);">
-            <div class="card-header fw-bold d-flex justify-content-between align-items-center" 
+        <wa-card class="card shadow-lg font-monospace w-100" style="background-color: #0d1117; color: #c9d1d9; border: 1px solid var(--family-harper); --body-padding: 0; --header-padding: 0;">
+            <div class="card-header fw-bold d-flex justify-content-between align-items-center p-3" 
                  style="background-color: rgba(102, 16, 242, 0.15); border-bottom: 1px solid var(--family-harper); color: #d0bfff;">
                 <span><i class="fa-duotone fa-sliders-up me-2"></i>harper.sh --rebuild</span>
-                <span class="badge text-white" style="background-color: #6610f2;">PROCESSING</span>
+                <wa-badge variant="neutral" appearance="accent" style="background-color: #6610f2;">PROCESSING</wa-badge>
             </div>
             <div class="card-body p-4">
                 <div style="opacity: 1;">
@@ -141,7 +141,7 @@
                     </p>
                 </div>
             </div>
-        </div>
+        </wa-card>
     </div>
 </div>
 

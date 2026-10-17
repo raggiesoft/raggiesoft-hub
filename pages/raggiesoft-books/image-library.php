@@ -104,7 +104,7 @@ $images = [
                 Next <wa-icon slot="end" name="chevron-right"></wa-icon>
             </wa-button>
         </div>
-        <wa-button variant="primary" onclick="closeImageModal()">Close</wa-button>
+        <wa-button variant="brand" onclick="closeImageModal()">Close</wa-button>
     </div>
 </wa-dialog>
 

@@ -41,9 +41,9 @@ $pageTitle = "The Non-Profit Model - Engine Room History";
     <!-- BEGIN: Header Section -->
     <div class="row justify-content-center mb-5">
         <div class="col-lg-8 text-center">
-            <span class="badge bg-primary-subtle text-primary-emphasis rounded-pill px-3 py-2 mb-3 text-uppercase letter-spacing-1 shadow-sm border border-primary-subtle">
+            <wa-badge variant="brand" appearance="filled-outlined" pill class="text-primary-emphasis px-3 py-2 mb-3 text-uppercase letter-spacing-1 shadow-sm">
                 <i class="fa-duotone fa-hand-holding-box me-2"></i>Operational Pivot: Feb 2019
-            </span>
+            </wa-badge>
             <h1 class="display-4 fw-bold text-body-emphasis mb-2 text-uppercase" style="font-family: 'Impact', sans-serif;">
                 The "Zero Extraction" Model
             </h1>
@@ -57,7 +57,7 @@ $pageTitle = "The Non-Profit Model - Engine Room History";
     <!-- BEGIN: Business Model Comparison -->
     <div class="row justify-content-center mb-5">
         <div class="col-lg-12">
-            <div class="card border-0 shadow-lg overflow-hidden">
+            <wa-card class="card border-0 shadow-lg overflow-hidden w-100" style="--body-padding: 0; --header-padding: 0;">
                 <div class="row g-0">
                     
                     <div class="col-md-6 bg-body-tertiary border-end border-secondary-subtle">
@@ -87,7 +87,7 @@ $pageTitle = "The Non-Profit Model - Engine Room History";
                     </div>
 
                 </div>
-            </div>
+            </wa-card>
         </div>
     </div>
     <!-- END: Business Model Comparison -->
@@ -170,12 +170,12 @@ $pageTitle = "The Non-Profit Model - Engine Room History";
             include ROOT_PATH . '/includes/components/corporate/letterhead.php'; 
             ?>
             
-            <div class="alert alert-success bg-success-subtle border-success mt-4 d-flex align-items-center">
-                <i class="fa-solid fa-users-medical fs-2 me-4 text-success-emphasis"></i>
+            <wa-callout variant="success" appearance="accent" class="mt-4 d-block">
+                <i slot="icon" class="fa-solid fa-users-medical text-success-emphasis"></i>
                 <div class="text-success-emphasis">
                     <strong>The Result:</strong> Of the 142 eligible employees (support staff, logistics, IT, janitorial), <strong>138 accepted the offer</strong>. The only four who declined were mid-level managers who refused to report to a 20-year-old Executive Director (Jessica Miller).
                 </div>
-            </div>
+            </wa-callout>
 
         </div>
     </div>
@@ -193,48 +193,48 @@ $pageTitle = "The Non-Profit Model - Engine Room History";
 
             <div class="row g-4">
                 <div class="col-md-4">
-                    <div class="card bg-body-tertiary border-0 h-100 shadow-sm">
+                    <wa-card class="card bg-body-tertiary border-0 h-100 shadow-sm w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
                         <div class="card-body text-center p-4">
                             <div class="rounded-circle bg-primary bg-opacity-10 mx-auto mb-3 d-flex align-items-center justify-content-center" style="width: 64px; height: 64px;">
                                 <i class="fa-duotone fa-truck-container fa-2x text-primary"></i>
                             </div>
                             <h5 class="fw-bold text-body-emphasis">Physical Distribution</h5>
                             <p class="small text-body-secondary mb-3">Warehousing and shipping for vinyl/merch.</p>
-                            <div class="badge bg-body-secondary text-primary border border-primary font-monospace p-2">
+                            <wa-badge variant="brand" appearance="outlined" class="text-primary font-monospace p-2">
                                 COST + 5%
-                            </div>
+                            </wa-badge>
                         </div>
-                    </div>
+                    </wa-card>
                 </div>
 
                 <div class="col-md-4">
-                    <div class="card bg-body-tertiary border-0 h-100 shadow-sm">
+                    <wa-card class="card bg-body-tertiary border-0 h-100 shadow-sm w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
                         <div class="card-body text-center p-4">
                             <div class="rounded-circle bg-success bg-opacity-10 mx-auto mb-3 d-flex align-items-center justify-content-center" style="width: 64px; height: 64px;">
                                 <i class="fa-duotone fa-scale-balanced fa-2x text-success"></i>
                             </div>
                             <h5 class="fw-bold text-body-emphasis">Legal Defense Fund</h5>
                             <p class="small text-body-secondary mb-3">Copyright protection and contract review.</p>
-                            <div class="badge bg-body-secondary text-success border border-success font-monospace p-2 text-uppercase">
+                            <wa-badge variant="success" appearance="outlined" class="text-success font-monospace p-2 text-uppercase">
                                 Pro Bono
-                            </div>
+                            </wa-badge>
                         </div>
-                    </div>
+                    </wa-card>
                 </div>
 
                 <div class="col-md-4">
-                    <div class="card bg-body-tertiary border-0 h-100 shadow-sm">
+                    <wa-card class="card bg-body-tertiary border-0 h-100 shadow-sm w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
                         <div class="card-body text-center p-4">
                             <div class="rounded-circle bg-warning bg-opacity-10 mx-auto mb-3 d-flex align-items-center justify-content-center" style="width: 64px; height: 64px;">
                                 <i class="fa-duotone fa-server fa-2x text-warning-emphasis"></i>
                             </div>
                             <h5 class="fw-bold text-body-emphasis">Digital Payouts</h5>
                             <p class="small text-body-secondary mb-3">Direct-to-bank royalty collection (No holding).</p>
-                            <div class="badge bg-body-secondary text-warning-emphasis border border-warning font-monospace p-2 text-uppercase">
+                            <wa-badge variant="warning" appearance="outlined" class="text-warning-emphasis font-monospace p-2 text-uppercase">
                                 0% Fee
-                            </div>
+                            </wa-badge>
                         </div>
-                    </div>
+                    </wa-card>
                 </div>
             </div>
         </div>
@@ -244,8 +244,8 @@ $pageTitle = "The Non-Profit Model - Engine Room History";
     <!-- BEGIN: Conclusion Alert -->
     <div class="row justify-content-center">
         <div class="col-lg-10">
-            <div class="alert alert-light bg-body-tertiary border-primary d-flex align-items-center shadow-lg" role="alert">
-                <i class="fa-duotone fa-face-smile-wink text-primary fs-1 me-4"></i>
+            <wa-callout variant="brand" appearance="accent" class="shadow-lg d-block">
+                <i slot="icon" class="fa-duotone fa-face-smile-wink text-primary"></i>
                 <div>
                     <h5 class="alert-heading text-body-emphasis fw-bold">The Irony of Success</h5>
                     <p class="mb-0 text-body-secondary">
@@ -254,7 +254,7 @@ $pageTitle = "The Non-Profit Model - Engine Room History";
                         Independent artists flocked to the "Jessica Miller Center" in the thousands because it was the only major infrastructure that didn't ask them to sell their souls. Holly proved that <strong>trust scales better than fear.</strong>
                     </p>
                 </div>
-            </div>
+            </wa-callout>
         </div>
     </div>
     <!-- END: Conclusion Alert -->

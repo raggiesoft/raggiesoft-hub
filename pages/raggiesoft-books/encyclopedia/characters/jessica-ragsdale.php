@@ -25,7 +25,7 @@ $pageTitle = "Jessica Ragsdale - Character Encyclopedia";
             <h1 class="display-4 fw-bold mb-3">Jessica Ragsdale</h1>
             <h4 class="text-muted mb-4">Senior Technical Program Manager, Quantum Corporation</h4>
             <div class="d-flex flex-wrap gap-2 mb-4">
-                <wa-badge variant="primary">The Pack</wa-badge>
+                <wa-badge variant="brand">The Pack</wa-badge>
                 <wa-badge variant="neutral">Seattle / Redmond</wa-badge>
                 <wa-badge variant="danger">Tactical Logistics</wa-badge>
             </div>
@@ -88,11 +88,11 @@ $pageTitle = "Jessica Ragsdale - Character Encyclopedia";
                 </p>
                 
                 <!-- ARCHITECTURE: Visual callout emphasizing critical character tactical behaviors -->
-                <wa-alert variant="danger" open class="mt-4">
+                <wa-callout variant="danger" appearance="accent" class="mt-4">
                     <wa-icon slot="icon" name="shield-halved" variant="duotone"></wa-icon>
                     <strong>The Deployment Uniform (The Armor)</strong><br>
                     Jessica strictly reserves her branded, structured Quantum polo shirt (complete with her name and title embroidered) for hostile field deployments. She consciously uses it to switch into an operational mindset. When extracting her brother from an abuser, she uses the polo as "corporate armor." By showing up in her official uniform, she refuses to engage in an emotional domestic dispute; instead, she becomes an immovable corporate entity executing a logistical extraction, completely short-circuiting the abuser's manipulative playbook.
-                </wa-alert>
+                </wa-callout>
             </div>
             <div class="col-md-4 text-center d-none d-md-block">
                 <div class="p-4 bg-light rounded-3 h-100 d-flex flex-column justify-content-center align-items-center">

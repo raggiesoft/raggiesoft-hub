@@ -17,9 +17,9 @@ $pageTitle = "The $13.99 War - The Stardust Engine";
     <!-- INLINE: Page header defining the historical archive setting -->
     <div class="row justify-content-center mb-5">
         <div class="col-lg-8 text-center">
-            <span class="badge bg-danger-subtle text-danger-emphasis rounded-pill px-3 py-2 mb-3 text-uppercase letter-spacing-1 shadow-sm border border-danger-subtle">
+            <wa-badge variant="danger" appearance="filled-outlined" pill class="text-danger-emphasis px-3 py-2 mb-3 text-uppercase letter-spacing-1 shadow-sm">
                 <i class="fa-duotone fa-gavel me-2"></i>Historical Archive: Summer 1997
-            </span>
+            </wa-badge>
             <h1 class="display-4 fw-bold text-body-emphasis mb-2 text-uppercase" style="font-family: 'Impact', sans-serif;">
                 The $13.99 War
             </h1>
@@ -32,7 +32,7 @@ $pageTitle = "The $13.99 War - The Stardust Engine";
     <div class="row justify-content-center mb-5">
         <div class="col-lg-10">
             
-            <div class="card border-0 shadow-lg bg-body-tertiary mb-5">
+            <wa-card class="card border-0 shadow-lg bg-body-tertiary mb-5 w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
                 <div class="card-header bg-body-secondary border-bottom border-secondary py-3">
                     <h2 class="h5 text-body-emphasis fw-bold text-uppercase mb-0 letter-spacing-2">
                         <i class="fa-duotone fa-tags me-2"></i>Phase 1: The Kitchen Table Consensus
@@ -51,12 +51,12 @@ $pageTitle = "The $13.99 War - The Stardust Engine";
                     <p>
                         But Engine Room Records, LLC was not a normal label. 
                     </p>
-                    <div class="alert alert-success bg-success-subtle border-success border-start border-4 shadow-sm my-4 text-body-emphasis">
+                    <wa-callout variant="success" appearance="accent" class="shadow-sm my-4 d-block">
                         <h6 class="fw-bold text-uppercase mb-2"><i class="fa-solid fa-calculator me-2"></i>The Treasury Subsidy</h6>
                         <p class="mb-0 small">
                             Acting as the band's manager and newly certified Enrolled Agent, 28-year-old Holly O'Connell ran the numbers at the kitchen table. The family's $2.04 Billion lottery payout from 1996 was safely parked in U.S. Treasury Bonds, generating roughly $37 Million a year in risk-free interest. Holly realized that dedicating just a tiny fraction of one month's interest yield could entirely subsidize the physical pressing costs of the album. <strong>At $13.99, it wouldn't just be cheap—it would be pure profit.</strong>
                         </p>
-                    </div>
+                    </wa-callout>
                     <p>
                         The family took a vote. It was unanimous. Engine Room Records sent the sell-sheets to major retailers. Pre-orders absolutely exploded. Retailers began clearing out massive end-cap displays. 
                     </p>
@@ -64,17 +64,17 @@ $pageTitle = "The $13.99 War - The Stardust Engine";
                         And the music industry went into total panic.
                     </p>
                 </div>
-            </div>
+            </wa-card>
 
             <!-- INLINE: Key lore component explaining the MAP Cartel bypass -->
-            <div class="alert alert-dark border-start border-4 border-info bg-body-tertiary shadow-sm my-4 text-body-emphasis">
+            <wa-callout variant="brand" appearance="accent" class="shadow-sm my-4 d-block">
                 <h6 class="fw-bold text-uppercase mb-2 text-info"><i class="fa-solid fa-truck-fast me-2"></i>Bypassing the MAP Cartel</h6>
                 <p class="mb-0 small">
                     In 1997, the major labels controlled retail prices through strict MAP (Minimum Advertised Price) policies, threatening to pull cooperative advertising funds from any national retail chain or specialty record store that discounted CDs. Because Engine Room Records&trade; funded its own marketing via the Trust, Holly bypassed the traditional distributors entirely. She sold directly to the massive big-box retailers, offering them an unprecedented wholesale margin on the condition they place <em>Hard Reset</em> on their front end-caps for exactly $13.99. She broke the supply chain.
                 </p>
-            </div>
+            </wa-callout>
 
-            <div class="card bg-black text-white border-danger border-2 shadow-lg mb-5">
+            <wa-card class="card bg-black text-white border-danger border-2 shadow-lg mb-5 w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
                 <div class="card-body p-5">
                     <div class="d-flex align-items-center mb-4 border-bottom border-danger pb-3">
                         <i class="fa-solid fa-building-columns fa-3x text-danger me-4"></i>
@@ -128,9 +128,9 @@ $pageTitle = "The $13.99 War - The Stardust Engine";
                         The cartel's strategy was simple: bury the startup label in discovery. They assumed Engine Room Records would have to hire expensive outside counsel, file for an extension, and ultimately delay the album's release until the holiday season, bleeding them dry in legal fees.
                     </p>
                 </div>
-            </div>
+            </wa-card>
 
-            <div class="card border-0 shadow-lg bg-body-tertiary mb-4">
+            <wa-card class="card border-0 shadow-lg bg-body-tertiary mb-4 w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
                 <div class="card-header bg-body-secondary border-bottom border-secondary py-3">
                     <h2 class="h5 text-body-emphasis fw-bold text-uppercase mb-0 letter-spacing-2">
                         <i class="fa-duotone fa-scale-balanced me-2"></i>Phase 3: The Pro Se Defense
@@ -147,7 +147,7 @@ $pageTitle = "The $13.99 War - The Stardust Engine";
                         Within 48 hours of the injunction being filed, Engine Room Records did not request an extension. They did not hire outside counsel. Instead, 28-year-old Holly O'Connell walked into the federal courthouse in Norfolk and filed a response brief <em>pro se</em> (representing her own LLC as General Counsel).
                     </p>
 
-                    <div class="card bg-body border-primary mb-4 shadow-sm">
+                    <wa-card class="card bg-body border-primary mb-4 shadow-sm w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
                         <div class="card-body font-monospace small text-body-emphasis p-4">
                             <h6 class="fw-bold text-uppercase border-bottom pb-2 mb-3 text-primary">Excerpt: Defendant's Motion to Dismiss Injunction</h6>
                             <p>
@@ -169,7 +169,7 @@ $pageTitle = "The $13.99 War - The Stardust Engine";
                                 The Defendant is not engaged in predatory pricing; the Defendant simply possesses a vastly superior capital structure to the Plaintiffs. The Sherman Antitrust Act was designed to protect consumers from monopolies, not to protect inefficient, debt-leveraged corporations from superior business models.
                             </p>
                         </div>
-                    </div>
+                    </wa-card>
 
                     <p>
                         The judge read the brief, looked at the certified Treasury yields proving Engine Room was backed by billions in federal bonds, and summarily threw the injunction out of court. 
@@ -181,9 +181,9 @@ $pageTitle = "The $13.99 War - The Stardust Engine";
                         On release day, <em>Hard Reset</em> hit the shelves at $13.99. It decimated the charts, proving once and for all that The Stardust Engine was entirely, terrifyingly unstoppable.
                     </p>
                 </div>
-            </div>
+            </wa-card>
 
-            <div class="card border-0 shadow-lg bg-body-tertiary mb-4">
+            <wa-card class="card border-0 shadow-lg bg-body-tertiary mb-4 w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
                 <div class="card-header bg-body-secondary border-bottom border-secondary py-3">
                     <h2 class="h5 text-body-emphasis fw-bold text-uppercase mb-0 letter-spacing-2">
                         <i class="fa-duotone fa-truck-container me-2"></i>Phase 4: The Kitchen-Table Dispatch
@@ -196,12 +196,12 @@ $pageTitle = "The $13.99 War - The Stardust Engine";
                     <p>
                         They assumed that without a distributor, the physical albums would sit rotting on the factory floor. They assumed Holly was trapped because she didn't own a warehouse, a loading dock, or a single delivery truck. Engine Room Records was still just a residential house on Progress Street. 
                     </p>
-                    <div class="alert alert-dark border-start border-4 border-warning bg-black text-white p-4 shadow-sm my-4">
+                    <wa-callout variant="warning" appearance="accent" class="p-4 shadow-sm my-4 d-block">
                         <h6 class="text-warning fw-bold text-uppercase mb-2"><i class="fa-solid fa-route me-2"></i>The LTL Freight Hack</h6>
                         <p class="small text-white-75 mb-0">
                             Holly realized she didn't need <em>music</em> distributors. She just needed trucks. Using the Trust's capital, she picked up the phone and started booking standard LTL (Less-Than-Truckload) commercial freight carriers—the independent, blue-collar haulers who usually moved auto parts and refrigerated goods. Commercial freight dispatchers didn't care about Apex Records or music industry politics; they just cared about a cleared check and a Bill of Lading.
                         </p>
-                    </div>
+                    </wa-callout>
                     <p>
                         For three sleepless weeks, the dining room table became a chaotic dispatch center. Holly, Ryan, and Evan manually routed hundreds of independent 18-wheelers from the manufacturing plants directly to the receiving docks of the national big-box retailers.
                     </p>
@@ -209,7 +209,7 @@ $pageTitle = "The $13.99 War - The Stardust Engine";
                         The albums hit the shelves exactly on time, and the cartel's embargo was shattered. But the family barely survived the logistical nightmare. It was the grueling, desperate reality of the "Kitchen-Table Dispatch" that taught Holly her most valuable lesson: <span class="fst-italic text-danger">Never rely on third-party infrastructure again. Next time, we buy the warehouse. We buy the trucks.</span> This moment became the direct catalyst for the creation of Stardust Logistics and the Fleet Command network.
                     </p>
                 </div>
-            </div>
+            </wa-card>
             
 
         </div>

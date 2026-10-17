@@ -18,9 +18,9 @@ $pageTitle = "The Paternoster Incident - The Stardust Engine Lore";
     <!-- INLINE: Incident Header establishing the date and location of the accessibility failure -->
     <div class="row justify-content-center mb-5">
         <div class="col-lg-8 text-center">
-            <span class="badge bg-primary text-white rounded-pill px-3 py-2 shadow-sm mb-3 text-uppercase">
+            <wa-badge variant="brand" appearance="accent" pill class="px-3 py-2 shadow-sm mb-3 text-uppercase">
                 <i class="fa-duotone fa-passport me-2"></i>Tour Diary: Europe '98
-            </span>
+            </wa-badge>
             <h1 class="display-3 fw-bold text-uppercase text-body-emphasis mb-0" style="font-family: 'Impact', sans-serif;">
                 The Paternoster
             </h1>
@@ -33,10 +33,10 @@ $pageTitle = "The Paternoster Incident - The Stardust Engine Lore";
     <div class="row justify-content-center mb-5">
         <div class="col-lg-8">
             
-            <div class="card bg-body-tertiary border-secondary shadow-lg mb-5">
-                <div class="card-header bg-body-secondary border-bottom border-secondary text-body-emphasis fw-bold text-uppercase d-flex justify-content-between align-items-center">
+            <wa-card class="card bg-body-tertiary border-secondary shadow-lg mb-5 w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
+                <div class="card-header bg-body-secondary border-bottom border-secondary text-body-emphasis fw-bold text-uppercase d-flex justify-content-between align-items-center p-3">
                     <span><i class="fa-duotone fa-gears me-2 text-warning"></i>The Machine That Never Stops</span>
-                    <span class="badge bg-danger text-white">HAZARD</span>
+                    <wa-badge variant="danger" appearance="accent">HAZARD</wa-badge>
                 </div>
                 <div class="card-body p-4">
                     <p class="text-body-secondary">
@@ -59,9 +59,9 @@ $pageTitle = "The Paternoster Incident - The Stardust Engine Lore";
                         Ryan sat in his chair, staring at it. "It's a meat grinder," Evan said, standing protectively between Ryan and the open shaft.
                     </p>
                 </div>
-            </div>
+            </wa-card>
 
-            <div class="alert alert-danger border-danger d-flex align-items-start mb-5 shadow-sm">
+            <wa-callout variant="danger" appearance="accent" class="mb-5 shadow-sm d-block">
                 <div class="me-3">
                     <i class="fa-duotone fa-skull-crossbones text-danger fs-2"></i>
                 </div>
@@ -74,7 +74,7 @@ $pageTitle = "The Paternoster Incident - The Stardust Engine Lore";
                         Ryan famously told the promoter: "I'm not rolling my life into a moving coffin."
                     </p>
                 </div>
-            </div>
+            </wa-callout>
 
             <h3 class="h4 fw-bold text-body-emphasis mb-3">The Solution: "Freight Dog" Protocol</h3>
             <p class="text-body-secondary mb-4">
@@ -95,8 +95,8 @@ $pageTitle = "The Paternoster Incident - The Stardust Engine Lore";
     <div class="row justify-content-center">
         <div class="col-lg-9">
             <!-- INLINE: Clause 12 section detailing the strict, non-negotiable accommodations required for Ryan's care and their shared neurodivergent needs -->
-            <div class="card bg-body-tertiary border-warning shadow-lg">
-                <div class="card-header bg-warning text-dark fw-bold">
+            <wa-card class="card bg-body-tertiary border-warning shadow-lg w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
+                <div class="card-header bg-warning text-dark fw-bold p-3">
                     <i class="fa-duotone fa-bed-front me-2"></i>The Rider: Clause 12 (Accommodation)
                 </div>
                 <div class="card-body p-4">
@@ -119,18 +119,18 @@ $pageTitle = "The Paternoster Incident - The Stardust Engine Lore";
                         "We don't need space. We need each other." — Cassidy O'Connell, 1998
                     </p>
                 </div>
-            </div>
+            </wa-card>
         </div>
     </div>
 
     <div class="row mt-5">
         <div class="col-12 text-center">
-            <a href="/engine-room/artists/stardust-engine/discography/1997-hard-reset" class="btn btn-outline-primary rounded-pill px-4">
-                <i class="fa-duotone fa-compact-disc me-2"></i>Back to Hard Reset
-            </a>
-            <a href="/engine-room/artists/stardust-engine/story/hard-reset-tour/london-discovery" class="btn btn-outline-success rounded-pill px-4 ms-2">
-                <i class="fa-duotone fa-forward me-2"></i>Next: The London Discovery
-            </a>
+            <wa-button variant="brand" appearance="outlined" pill href="/engine-room/artists/stardust-engine/discography/1997-hard-reset" class="px-4">
+                <i slot="start" class="fa-duotone fa-compact-disc"></i>Back to Hard Reset
+            </wa-button>
+            <wa-button variant="success" appearance="outlined" pill href="/engine-room/artists/stardust-engine/story/hard-reset-tour/london-discovery" class="px-4 ms-2">
+                <i slot="start" class="fa-duotone fa-forward"></i>Next: The London Discovery
+            </wa-button>
         </div>
     </div>
 

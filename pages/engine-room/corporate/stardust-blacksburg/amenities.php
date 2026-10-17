@@ -114,7 +114,7 @@ $pageTitle = "Amenities - The Ironwood Standard";
         </div>
 
         <div class="col-md-6 mb-4">
-            <div class="card h-100 border-0 shadow-sm bg-body-tertiary">
+            <wa-card class="card h-100 border-0 shadow-sm bg-body-tertiary w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
                 <div class="card-body p-4">
                     <div class="d-flex align-items-center mb-3">
                         <i class="fa-duotone fa-book-open-reader fa-2x text-primary me-3"></i>
@@ -124,11 +124,11 @@ $pageTitle = "Amenities - The Ironwood Standard";
                         Every complex features a secure, access-controlled study lounge with commercial printers, whiteboard walls, and free coffee during Finals Week. It's like the library, but you can wear your pajamas.
                     </p>
                 </div>
-            </div>
+            </wa-card>
         </div>
 
         <div class="col-md-6 mb-4">
-            <div class="card h-100 border-0 shadow-sm bg-body-tertiary">
+            <wa-card class="card h-100 border-0 shadow-sm bg-body-tertiary w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
                 <div class="card-body p-4">
                     <div class="d-flex align-items-center mb-3">
                         <i class="fa-duotone fa-wrench fa-2x text-primary me-3"></i>
@@ -138,7 +138,7 @@ $pageTitle = "Amenities - The Ironwood Standard";
                         We are locally owned. If something breaks, we fix it within 24 hours. Emergency HVAC or plumbing issues are addressed immediately, 24/7/365. No absentee landlords.
                     </p>
                 </div>
-            </div>
+            </wa-card>
         </div>
     </div>
 
@@ -150,7 +150,7 @@ $pageTitle = "Amenities - The Ironwood Standard";
         </div>
         
         <div class="col-lg-6 mb-4">
-            <div class="alert alert-light border border-secondary shadow-sm h-100">
+            <wa-callout variant="neutral" appearance="accent" class="border shadow-sm h-100 d-block">
                 <div class="d-flex">
                     <i class="fa-solid fa-ban-smoking fa-2x text-danger me-3 mt-1"></i>
                     <div>
@@ -160,11 +160,11 @@ $pageTitle = "Amenities - The Ironwood Standard";
                         </p>
                     </div>
                 </div>
-            </div>
+            </wa-callout>
         </div>
 
         <div class="col-lg-6 mb-4">
-            <div class="alert alert-light border border-secondary shadow-sm h-100">
+            <wa-callout variant="neutral" appearance="accent" class="border shadow-sm h-100 d-block">
                 <div class="d-flex">
                     <i class="fa-solid fa-glass-citrus-empty fa-2x text-danger me-3 mt-1"></i>
                     <div>
@@ -174,15 +174,15 @@ $pageTitle = "Amenities - The Ironwood Standard";
                         </p>
                     </div>
                 </div>
-            </div>
+            </wa-callout>
         </div>
     </div>
 
-    <div class="alert alert-secondary d-flex align-items-center p-3 small shadow-sm">
-        <i class="fa-solid fa-circle-info me-3 text-secondary fs-4"></i>
+    <wa-callout variant="neutral" appearance="accent" class="p-3 small shadow-sm d-block">
+        <i slot="icon" class="fa-solid fa-circle-info text-secondary"></i>
         <div>
             <strong>Applicant Note:</strong> We do not offer "Party Packages." Stardust Blacksburg strictly enforces a "Scholar First" lease agreement. Violations of the Alcohol or Smoking covenants are grounds for immediate lease termination. We protect the quiet.
         </div>
-    </div>
+    </wa-callout>
 
 </div>

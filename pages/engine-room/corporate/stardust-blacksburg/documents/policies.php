@@ -67,22 +67,22 @@ $pageTitle = "Household Protocols - Stardust Blacksburg";
         </div>
 
         <div class="col-lg-6">
-            <div class="alert alert-primary border-primary d-flex align-items-center shadow-sm h-100">
-                <i class="fa-solid fa-wheelchair-move fa-3x text-primary me-4"></i>
+            <wa-callout variant="brand" appearance="accent" class="shadow-sm h-100 d-block">
+                <i slot="icon" class="fa-solid fa-wheelchair-move fa-3x text-primary"></i>
                 <div>
                     <h5 class="alert-heading fw-bold text-uppercase small">Accessibility & Caregivers</h5>
                     <p class="small mb-0 text-body-secondary">
                         Residents requiring live-in assistance (medical or familial) face no bureaucratic hurdles here. Because you control the entire unit, your caregiver is not an "Unauthorized Guest"—they are a member of your household.
                     </p>
                 </div>
-            </div>
+            </wa-callout>
         </div>
     </div>
 
     <div class="row justify-content-center mb-5">
         <div class="col-lg-10">
-            <div class="card border-danger shadow-sm">
-                <div class="card-header bg-danger text-white text-uppercase fw-bold">
+            <wa-card class="card border-danger shadow-sm w-100" style="--body-padding: 0; --header-padding: 0;">
+                <div class="card-header bg-danger text-white text-uppercase fw-bold p-3">
                     <i class="fa-solid fa-user-clock me-2"></i>Strict Visitor Protocol
                 </div>
                 <div class="card-body p-4">
@@ -139,10 +139,10 @@ $pageTitle = "Household Protocols - Stardust Blacksburg";
 
                     </div>
                 </div>
-                <div class="card-footer bg-light border-top text-muted small fst-italic text-center">
+                <div class="card-footer bg-light border-top text-muted small fst-italic text-center p-3">
                     "We lease to you, not your significant other. Renters pay for the right to a quiet home."
                 </div>
-            </div>
+            </wa-card>
         </div>
     </div>
 

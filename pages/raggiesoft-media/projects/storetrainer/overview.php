@@ -79,9 +79,9 @@ $pageTitle = "StoreTrainer Archive | RaggieSoft Media";
     <div class="container py-4">
         <div class="row align-items-center">
             <div class="col-md-8">
-                <span class="badge border border-warning rounded-pill font-monospace text-uppercase shadow-sm py-2 px-3 text-warning fw-bold mb-3" style="background: rgba(255, 179, 0, 0.1);">
+                <wa-badge variant="warning" appearance="accent" pill class="font-monospace text-uppercase shadow-sm py-2 px-3 text-warning fw-bold mb-3" style="background: rgba(255, 179, 0, 0.1);">
                     <i class="fa-solid fa-box-archive me-1" aria-hidden="true"></i> Verified Legacy Software
-                </span>
+                </wa-badge>
                 <h1 class="display-4 fw-bold text-uppercase mb-2 brand-font" style="text-shadow: 0 0 15px rgba(255,179,0,0.5);">
                     StoreTrainer
                 </h1>
@@ -168,7 +168,7 @@ End If</code></pre>
 
         <div class="col-lg-4">
             
-            <div class="card bg-body-tertiary border-secondary-subtle shadow-sm mb-4">
+            <wa-card class="card bg-body-tertiary border-secondary-subtle shadow-sm mb-4 w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
                 <div class="card-body p-4">
                     <h3 class="h6 fw-bold text-uppercase mb-3 text-secondary">Tech Specs</h3>
                     
@@ -191,12 +191,12 @@ End If</code></pre>
                         </li>
                     </ul>
                 </div>
-            </div>
+            </wa-card>
 
             <div class="d-grid gap-3">
-                <a href="https://raggiesoft.com/products/storetrainer/" target="_blank" rel="noopener noreferrer" class="btn btn-warning py-3 fw-bold text-uppercase shadow-sm text-dark">
-                    <i class="fa-solid fa-download me-2" aria-hidden="true"></i> Download Archive
-                </a>
+                <wa-button variant="warning" appearance="accent" href="https://raggiesoft.com/products/storetrainer/" target="_blank" rel="noopener noreferrer" class="py-3 fw-bold text-uppercase shadow-sm text-dark">
+                    <i slot="start" class="fa-solid fa-download" aria-hidden="true"></i> Download Archive
+                </wa-button>
             </div>
 
         </div>

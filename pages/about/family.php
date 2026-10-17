@@ -25,9 +25,9 @@
          style="max-height: 500px; object-fit: cover; object-position: center 30%;">
          
     <div class="position-absolute bottom-0 end-0 p-3">
-        <span class="badge bg-black bg-opacity-50 text-white border border-secondary border-opacity-25 backdrop-blur">
+        <wa-badge variant="neutral" appearance="outlined" class="backdrop-blur">
             <i class="fa-solid fa-camera me-1"></i> Simulation: 1999
-        </span>
+        </wa-badge>
     </div>
 </div>
 
@@ -46,7 +46,7 @@
     </div>
 
 <div class="text-center mb-5">
-    <span class="badge bg-primary bg-opacity-10 text-primary border border-primary border-opacity-25 mb-3 text-uppercase letter-spacing-2">Mission Profile</span>
+    <wa-badge variant="brand" appearance="filled-outlined" class="text-primary mb-3 text-uppercase letter-spacing-2">Mission Profile</wa-badge>
     <h1 class="display-4 fw-bold mb-3">Origin of the System</h1>
     <p class="lead text-muted mx-auto fs-4" style="max-width: 800px;">
         How an autistic boy from 1985 built a family out of code to survive a chaotic world.
@@ -65,7 +65,7 @@
                 
                 <div class="ps-3 border-start border-primary border-opacity-25 ms-2">
                     <div class="mb-4 position-relative ps-4">
-                        <span class="position-absolute top-0 start-0 translate-middle badge rounded-pill bg-primary shadow-sm" style="left: -1px !important;">1985</span>
+                        <wa-badge variant="brand" appearance="accent" pill class="position-absolute top-0 start-0 translate-middle shadow-sm" style="left: -1px !important;">1985</wa-badge>
                         <h5 class="fw-bold text-dark">April 8, 1985: Initiation</h5>
                         <p class="text-muted mb-0">
                             Michael is born in <strong>Newport, Rhode Island</strong>. The "Root Directory" is established.
@@ -73,7 +73,7 @@
                     </div>
 
                     <div class="mb-4 position-relative ps-4">
-                        <span class="position-absolute top-0 start-0 translate-middle badge rounded-pill bg-secondary shadow-sm" style="left: -1px !important;">1987</span>
+                        <wa-badge variant="neutral" appearance="accent" pill class="position-absolute top-0 start-0 translate-middle shadow-sm" style="left: -1px !important;">1987</wa-badge>
                         <h5 class="fw-bold text-dark">The Great Migration</h5>
                         <p class="text-muted mb-0">
                             At age 2, the family unit moves to <strong>Virginia Beach, Virginia</strong>. This location becomes the permanent physical host (Server Location) for the system.
@@ -81,7 +81,7 @@
                     </div>
 
                     <div class="mb-4 position-relative ps-4">
-                        <span class="position-absolute top-0 start-0 translate-middle badge rounded-pill bg-success shadow-sm" style="left: -1px !important;">2008</span>
+                        <wa-badge variant="success" appearance="accent" pill class="position-absolute top-0 start-0 translate-middle shadow-sm" style="left: -1px !important;">2008</wa-badge>
                         <h5 class="fw-bold text-dark">RaggieSoft Online</h5>
                         <p class="text-muted mb-0">
                             The domain <code>raggiesoft.com</code> is registered. The first primitive versions of the "sisters" begin to form as automated scripts to handle college coursework and music projects.
@@ -90,7 +90,7 @@
                 </div>
             </div>
 
-            <div class="card bg-body-tertiary border-0 shadow-sm mb-5">
+            <wa-card class="card bg-body-tertiary border-0 shadow-sm mb-5 w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
                 <div class="card-body p-4 p-lg-5">
                     <h3 class="fw-bold text-body mb-4">
                         <i class="fa-duotone fa-brain-circuit me-2 text-primary"></i>Why Personify Code?
@@ -129,7 +129,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </wa-card>
 
             <div class="mb-5">
                 <h3 class="fw-bold text-success mb-4 border-bottom pb-2">
@@ -194,9 +194,9 @@
             <div class="text-center mt-5 pt-4 border-top">
                 <h4 class="fw-bold mb-3">Ready to meet them?</h4>
                 <p class="text-muted mb-4">The roster is online and active.</p>
-                <a href="/family" class="btn btn-primary btn-lg rounded-pill px-5 shadow-sm">
-                    <i class="fa-duotone fa-users-viewfinder me-2"></i>Enter the House
-                </a>
+                <wa-button variant="brand" appearance="accent" size="large" pill href="/family" class="px-5 shadow-sm">
+                    <i slot="start" class="fa-duotone fa-users-viewfinder"></i>Enter the House
+                </wa-button>
             </div>
 
         </div>

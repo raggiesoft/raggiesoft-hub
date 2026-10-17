@@ -79,8 +79,8 @@ $pageTitle = "Systems Architecture - Aethelgard Intranet";
                 <small class="font-monospace">USER: J_MILLER [ADMIN] | UPTIME: 412 DAYS</small>
             </div>
             <div class="col-md-6 text-end">
-                <span class="badge bg-secondary font-monospace"><i class="fa-solid fa-satellite-dish me-2"></i>LINK: J_MILLER_CENTER_MAIN</span>
-                <span class="badge bg-success font-monospace ms-2"><i class="fa-solid fa-lock me-2"></i>SECURE</span>
+                <wa-badge variant="neutral" appearance="accent" class="font-monospace"><i class="fa-solid fa-satellite-dish me-2"></i>LINK: J_MILLER_CENTER_MAIN</wa-badge>
+                <wa-badge variant="success" appearance="accent" class="font-monospace ms-2"><i class="fa-solid fa-lock me-2"></i>SECURE</wa-badge>
             </div>
         </div>
 

@@ -82,9 +82,9 @@ $pageTitle = "The Noise Floor (1978) - Engine Room History";
     <!-- BEGIN: Story Header -->
     <div class="row justify-content-center mb-5">
         <div class="col-lg-8 text-center">
-            <span class="badge bg-warning text-dark rounded-pill px-3 py-2 mb-3 text-uppercase letter-spacing-1 border border-warning shadow-sm">
+            <wa-badge variant="warning" appearance="accent" pill class="px-3 py-2 mb-3 text-uppercase letter-spacing-1 shadow-sm">
                 <i class="fa-duotone fa-cassette-tape me-2"></i>Archive: Book 1 - Analog Heart
-            </span>
+            </wa-badge>
             <h1 class="display-4 fw-bold text-body-emphasis mb-2 text-uppercase" style="font-family: 'Impact', sans-serif;">
                 The Noise Floor
             </h1>
@@ -104,7 +104,7 @@ $pageTitle = "The Noise Floor (1978) - Engine Room History";
                 <h3 class="text-uppercase mb-0 text-body-emphasis letter-spacing-2">High Fidelity</h3>
             </div>
 
-            <div class="card border-0 shadow-lg narrative-card mb-5">
+            <wa-card class="card border-0 shadow-lg narrative-card mb-5 w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
                 <div class="card-body p-4 p-md-5 text-body-secondary">
                     
                     <span class="timestamp">September 5, 1978 // Blacksburg High School</span>
@@ -189,11 +189,11 @@ $pageTitle = "The Noise Floor (1978) - Engine Room History";
                         He closed his eyes tight, right there in the middle of the hallway traffic. He imagined a mixing board in his mind. It was a trick he had taught himself over the summer.
                     </p>
 
-                    <div class="card bg-black text-white border-secondary my-4 font-monospace small shadow-sm">
-                        <div class="card-header bg-dark border-secondary">
+                    <wa-card class="card bg-black text-white border-secondary my-4 font-monospace small shadow-sm w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
+                        <div class="card-header bg-dark border-secondary p-3">
                             <i class="fa-duotone fa-sliders-up me-2"></i>INTERNAL MIXING CONSOLE
                         </div>
-                        <div class="card-body">
+                        <div class="card-body p-4">
                             <div class="row mb-2">
                                 <div class="col-4 text-white-50">FADER 1: VOICES</div>
                                 <div class="col-8">
@@ -222,7 +222,7 @@ $pageTitle = "The Noise Floor (1978) - Engine Room History";
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </wa-card>
 
                     <p>
                         He focused on the ventilation system. The deep, steady drone of the massive HVAC fans on the roof. It was a constant B-flat. A steady, unwavering note.
@@ -253,14 +253,14 @@ $pageTitle = "The Noise Floor (1978) - Engine Room History";
                     </p>
 
                 </div>
-            </div>
+            </wa-card>
 
             <div class="d-flex align-items-center mb-4 mt-5">
                 <span class="display-6 fw-bold text-body-secondary me-3">02</span>
                 <h3 class="text-uppercase mb-0 text-body-emphasis letter-spacing-2">Safe Harbor</h3>
             </div>
 
-            <div class="card border-0 shadow-lg narrative-card mb-5">
+            <wa-card class="card border-0 shadow-lg narrative-card mb-5 w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
                 <div class="card-body p-4 p-md-5 text-body-secondary">
                     
                     <span class="timestamp">September 5, 1978 // 3:45 PM // The O'Connell Driveway</span>
@@ -378,13 +378,13 @@ $pageTitle = "The Noise Floor (1978) - Engine Room History";
                         "Yeah," Ryan closed his eyes, his breathing finally syncing with the tempo of the orchestra. "I'm home."
                     </p>
                     
-                    <div class="alert alert-info border-info mt-4 mb-0 bg-info-subtle text-info-emphasis">
-                        <i class="fa-solid fa-circle-info me-2"></i>
+                    <wa-callout variant="brand" appearance="accent" class="mt-4 mb-0 d-block">
+                        <i slot="icon" class="fa-solid fa-circle-info"></i>
                         For the next twenty minutes, nobody moved. They didn't speak. They just lay in the "Pile," listening to the fictional space opera, letting the frequency of the house reset their nervous systems. This was the prototype. Years later, when the world tried to crush them with contracts, lawsuits, and steering wheels, they would always return to this formation.
-                    </div>
+                    </wa-callout>
 
                 </div>
-            </div>
+            </wa-card>
             <!-- END: Scene 02 (Safe Harbor) -->
 
             <!-- BEGIN: Chapter Navigation Stepper -->

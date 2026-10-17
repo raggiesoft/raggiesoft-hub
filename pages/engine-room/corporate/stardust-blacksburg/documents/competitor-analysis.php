@@ -27,12 +27,12 @@ $pageTitle = "Competitor Intel: The Anti-Stardust Strategy";
     <!-- CONFIDENTIAL MEMO HEADER -->
     <div class="row justify-content-center mb-5">
         <div class="col-lg-10">
-            <div class="alert alert-dark border-0 shadow-sm p-4 font-monospace small">
+            <wa-callout variant="neutral" appearance="accent" class="shadow-sm p-4 font-monospace small d-block">
                 <strong class="text-uppercase text-danger">CONFIDENTIAL // INTERNAL USE ONLY</strong><br>
                 <strong>TO:</strong> Regional Leasing Directors (Mid-Atlantic)<br>
                 <strong>FROM:</strong> Corporate Strategy (Apex Global)<br>
                 <strong>RE:</strong> Countering "Stardust Blacksburg" (The Ironwood Collective)
-            </div>
+            </wa-callout>
             <h2 class="fw-bold text-uppercase mt-4">The "Stardust" Problem</h2>
             <p class="lead text-body-secondary">
                 We are consistently losing the "Tier 1" demographic (Engineering, Arch, Pre-Med) to Stardust Properties. Their waiting list is currently 14 months long. We cannot compete on price or infrastructure. We must pivot our marketing to exploit their strictness.
@@ -43,11 +43,11 @@ $pageTitle = "Competitor Intel: The Anti-Stardust Strategy";
     <div class="row g-5">
         
         <div class="col-lg-6">
-            <div class="card h-100 border-success shadow-sm">
-                <div class="card-header bg-success text-white fw-bold text-uppercase">
+            <wa-card class="card h-100 border-success shadow-sm w-100" style="--body-padding: 0; --header-padding: 0;">
+                <div class="card-header bg-success text-white fw-bold text-uppercase p-3">
                     Strategy 1: "Don't Live in a Library"
                 </div>
-                <div class="card-body">
+                <div class="card-body p-4">
                     <h5 class="fw-bold">The Angle:</h5>
                     <p class="text-muted small">
                         Stardust is "Dry" and "Smoke-Free." They have strict guest curfews (11:59 PM). We need to paint this as <strong>tyranny</strong>.
@@ -66,15 +66,15 @@ $pageTitle = "Competitor Intel: The Anti-Stardust Strategy";
                         </li>
                     </ul>
                 </div>
-            </div>
+            </wa-card>
         </div>
 
         <div class="col-lg-6">
-            <div class="card h-100 border-warning shadow-sm">
-                <div class="card-header bg-warning text-dark fw-bold text-uppercase">
+            <wa-card class="card h-100 border-warning shadow-sm w-100" style="--body-padding: 0; --header-padding: 0;">
+                <div class="card-header bg-warning text-dark fw-bold text-uppercase p-3">
                     Strategy 2: The Path of Least Resistance
                 </div>
-                <div class="card-body">
+                <div class="card-body p-4">
                     <h5 class="fw-bold">The Angle:</h5>
                     <p class="text-muted small">
                         Stardust requires you to find your own roommates and sign a Joint & Several lease. That requires effort and responsibility. We sell <strong>laziness</strong>.
@@ -93,11 +93,11 @@ $pageTitle = "Competitor Intel: The Anti-Stardust Strategy";
                         </li>
                     </ul>
                 </div>
-            </div>
+            </wa-card>
         </div>
 
         <div class="col-lg-12">
-            <div class="alert alert-secondary border-start border-4 border-danger shadow-sm">
+            <wa-callout variant="danger" appearance="accent" class="shadow-sm d-block">
                 <h5 class="text-danger fw-bold text-uppercase mb-2">Strategy 3: The "Eviction" Pipeline</h5>
                 <p class="mb-2">
                     Stardust has a zero-tolerance eviction policy for smoking and noise. This is a steady stream of desperate customers.
@@ -105,7 +105,7 @@ $pageTitle = "Competitor Intel: The Anti-Stardust Strategy";
                 <p class="mb-0 small text-muted fst-italic">
                     <strong>Tactic:</strong> Place targeted "Need Housing ASAP?" ads geo-fenced directly around Stardust properties. When Stardust kicks a student out for smoking on Tuesday, we want them signing a lease with us on Wednesday. We are the "Second Chance" (and we charge a premium for it).
                 </p>
-            </div>
+            </wa-callout>
         </div>
 
     </div>

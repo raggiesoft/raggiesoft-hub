@@ -18,7 +18,7 @@
 // Theme: Jessica (Stability, Green, Production)
 ?>
 <!-- MAIN PROFILE HEADER CARD: Hero image and intro -->
-<div class="card mb-5 border-0 shadow-sm overflow-hidden bg-body-tertiary">
+<wa-card class="card mb-5 border-0 shadow-sm overflow-hidden bg-body-tertiary w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
     <div class="row g-0">
         <div class="col-lg-4 position-relative" style="min-height: 300px;">
             <img src="<?php echo $cdnBaseUrl; ?>/family/images/atmospheric/jessica.jpg" 
@@ -31,12 +31,12 @@
         <div class="col-lg-8 d-flex align-items-center">
             <div class="card-body p-4 p-lg-5">
                 <div class="d-flex align-items-center mb-3">
-                    <span class="badge text-bg-success me-2">
+                    <wa-badge variant="success" appearance="accent" class="me-2">
                         <i class="fa-duotone fa-server me-2"></i>jessica.raggiesoft.com
-                    </span>
-                    <span class="badge border border-success text-success bg-transparent">
+                    </wa-badge>
+                    <wa-badge variant="success" appearance="outlined" class="text-success">
                         Ubuntu 22.04 LTS
-                    </span>
+                    </wa-badge>
                 </div>
                 
                 <h1 class="display-4 fw-bold mb-2 text-body">Jessica</h1>
@@ -50,7 +50,7 @@
             </div>
         </div>
     </div>
-</div>
+</wa-card>
 
 <div class="row g-5 mb-5">
     <div class="col-md-12 col-xl-6">
@@ -81,7 +81,7 @@
                 </div>
                 <div class="d-flex justify-content-between">
                     <span class="small text-muted">Neurotype:</span>
-                    <span class="badge bg-success bg-opacity-10 text-success border border-success border-opacity-25">Neurotypical</span>
+                    <wa-badge variant="success" appearance="filled-outlined" class="text-success">Neurotypical</wa-badge>
                 </div>
             </div>
 
@@ -104,10 +104,10 @@
 
 <div class="row">
     <div class="col-12">
-        <div class="card theme-terminal shadow-lg font-monospace">
-            <div class="card-header fw-bold d-flex justify-content-between align-items-center">
+        <wa-card class="card theme-terminal shadow-lg font-monospace w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
+            <div class="card-header fw-bold d-flex justify-content-between align-items-center p-3">
                 <span><i class="fa-duotone fa-laptop-code me-2"></i>michael@jessica: ~</span>
-                <span class="badge text-bg-success">ONLINE</span>
+                <wa-badge variant="success" appearance="accent">ONLINE</wa-badge>
             </div>
             <div class="card-body p-4">
                 <div>
@@ -129,7 +129,7 @@
                     <p class="mb-0 mt-3"><span class="text-success">michael@jessica:~$</span> <span class="blink-cursor">_</span></p>
                 </div>
             </div>
-        </div>
+        </wa-card>
     </div>
 </div>
 

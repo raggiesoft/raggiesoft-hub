@@ -23,27 +23,27 @@
             
             <div class="col-12 col-md-5 mb-2 mb-md-0 d-flex align-items-center">
                 
-                <!-- LEGACY UI COMPONENT: Transport controls relying on FontAwesome/FontAwesome Duotone classes. -->
-                <div class="btn-group me-3">
-                    <button type="button" class="btn btn-outline-light btn-sm" id="player-prev" aria-label="Previous Track">
+                <!-- WEB AWESOME UI COMPONENT: Transport controls using <wa-button-group> and <wa-button>. -->
+                <wa-button-group label="Transport Controls" class="me-3">
+                    <wa-button variant="neutral" appearance="outlined" size="small" id="player-prev" aria-label="Previous Track">
                         <i class="fa-solid fa-backward-step" aria-hidden="true"></i>
-                    </button>
-                    <button type="button" class="btn btn-outline-light btn-sm" id="player-next" aria-label="Next Track">
+                    </wa-button>
+                    <wa-button variant="neutral" appearance="outlined" size="small" id="player-next" aria-label="Next Track">
                         <i class="fa-solid fa-forward-step" aria-hidden="true"></i>
-                    </button>
+                    </wa-button>
                     
-                    <button type="button" class="btn btn-outline-light btn-sm" id="player-repeat" aria-label="Toggle Repeat Mode">
+                    <wa-button variant="neutral" appearance="outlined" size="small" id="player-repeat" aria-label="Toggle Repeat Mode">
                         <i class="fa-duotone fa-repeat" aria-hidden="true"></i>
-                    </button>
+                    </wa-button>
 
-                    <button type="button" class="btn btn-outline-light btn-sm" id="player-shuffle" aria-label="Toggle Shuffle">
+                    <wa-button variant="neutral" appearance="outlined" size="small" id="player-shuffle" aria-label="Toggle Shuffle">
                         <i class="fa-duotone fa-shuffle" aria-hidden="true"></i>
-                    </button>
+                    </wa-button>
 
-                    <button type="button" class="btn btn-outline-info btn-sm" id="player-lyrics" aria-label="View Lyrics and Lore">
+                    <wa-button variant="brand" appearance="outlined" size="small" id="player-lyrics" aria-label="View Lyrics and Lore">
                         <i class="fa-duotone fa-book-open" aria-hidden="true"></i>
-                    </button>
-                </div>
+                    </wa-button>
+                </wa-button-group>
                 
                 <img id="player-album-art" src="" alt="" class="rounded shadow-sm me-3 border border-secondary" style="height: 40px; width: 40px; object-fit: cover;">
                 
@@ -61,9 +61,9 @@
             </div>
 
             <div class="col-2 col-md-1 text-end">
-                <button type="button" class="btn btn-sm btn-outline-light rounded-circle" id="btn-close-player" aria-label="Close Player">
+                <wa-button variant="neutral" appearance="outlined" size="small" pill id="btn-close-player" aria-label="Close Player">
                     <i class="fa-duotone fa-xmark" aria-hidden="true"></i>
-                </button>
+                </wa-button>
             </div>
         </div>
     </div>
@@ -105,7 +105,7 @@
         <div id="lyricsContent" class="font-monospace small flex-grow-1" style="opacity: 0.85;"></div>
         
         <div class="mt-4 pt-3 border-top border-secondary text-end">
-            <wa-button variant="primary" onclick="document.getElementById('lyricsModal').close()">
+            <wa-button variant="brand" appearance="accent" onclick="document.getElementById('lyricsModal').close()">
                 Close Archive
             </wa-button>
         </div>

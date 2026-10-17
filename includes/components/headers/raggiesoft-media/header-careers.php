@@ -1,69 +1,27 @@
 <?php
 /**
- * ARCHITECTURE: header-careers.php
- * 
+ * ============================================================================
+ * ARCHITECTURE: header-careers.php (Web Awesome v3.13.0)
+ * ============================================================================
  * Context: RaggieSoft Media - Careers Quarantine Header.
- * Narrative/Purpose: This is a specialized, restrictive header designed specifically for the careers section 
- * during an "Active Fraud Alert". It intentionally strips away normal global navigation to focus the user's 
- * attention entirely on the security notice, acting as a functional "quarantine" zone.
- * 
- * Mechanics:
- * - Employs a 'Frutiger Aero' inspired danger badge with glowing gradients.
- * - Provides a clear, single-action 'glass' exit button to return to the main RaggieSoft Media portal.
- * - Uses flexbox for responsive layout adjustments between mobile and desktop views.
+ * Narrative/Purpose: Specialized, restrictive header designed specifically for
+ * the careers section during an "Active Fraud Alert". Strips away normal global
+ * navigation to focus the user's attention on the security notice.
+ * ============================================================================
  */
-// includes/components/headers/raggiesoft-media/header-careers.php
-// The Quarantine Header - Explicitly removes global navigation to focus on the fraud alert.
-// Updated: Frutiger Aero Danger Glass
 ?>
-
-<style>
-    /* Glowing Danger Badge */
-    .aero-badge-danger {
-        background: linear-gradient(135deg, #dc3545 0%, #b02a37 100%);
-        border: 1px solid #ff6b7a;
-        box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 0 12px rgba(220, 53, 69, 0.4);
-        color: #fff;
-        text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
-    }
-    [data-bs-theme="dark"] .aero-badge-danger {
-        background: linear-gradient(135deg, #ff4d5e 0%, #dc3545 100%);
-        box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.6), 0 0 15px rgba(220, 53, 69, 0.6);
-        color: #000;
-        text-shadow: 0 1px 1px rgba(255, 255, 255, 0.5);
-    }
-
-    /* Glass Exit Button */
-    .btn-glass-exit {
-        background: rgba(108, 117, 125, 0.1);
-        border: 1px solid rgba(108, 117, 125, 0.3);
-        color: var(--bs-secondary) !important;
-        backdrop-filter: blur(4px);
-        transition: all 0.2s ease;
-    }
-    .btn-glass-exit:hover {
-        background: rgba(108, 117, 125, 0.2);
-        color: var(--bs-body-color) !important;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), inset 0 1px 0 rgba(255, 255, 255, 0.2);
-        transform: translateY(-1px);
-    }
-</style>
 
 <!-- START: Quarantine Header Container -->
 <div class="d-flex flex-column flex-md-row align-items-stretch align-items-md-center gap-2 ms-auto py-3 py-md-0 w-100 mobile-nav-menu">
-  
-  
-    <!-- START: Active Fraud Alert Indicator -->
-    <span class="badge aero-badge-danger text-uppercase px-3 py-2 rounded-pill shadow-sm">
-      <i class="fa-solid fa-circle-dot fa-fade me-2" aria-hidden="true"></i>Active Fraud Alert
-    </span>
-  
 
-  
-    <!-- START: Quarantine Exit Action -->
-    <wa-button appearance="plain" href="/raggiesoft-media" class="btn btn-glass-exit btn-sm rounded-pill px-3 py-1 fw-bold">
-        <i slot="start" class="fa-duotone fa-arrow-right-from-bracket me-2" aria-hidden="true"></i>Exit to RaggieSoft Media
-    </wa-button>
-  
+  <!-- START: Active Fraud Alert Indicator -->
+  <wa-badge variant="danger" appearance="accent" pill class="text-uppercase px-3 py-2 shadow-sm">
+    <i class="fa-solid fa-circle-dot fa-fade me-2" aria-hidden="true"></i>Active Fraud Alert
+  </wa-badge>
+
+  <!-- START: Quarantine Exit Action -->
+  <wa-button appearance="outlined" variant="neutral" size="small" pill href="/raggiesoft-media" class="fw-bold">
+    <i slot="start" class="fa-duotone fa-arrow-right-from-bracket me-2" aria-hidden="true"></i>Exit to RaggieSoft Media
+  </wa-button>
 
 </div>

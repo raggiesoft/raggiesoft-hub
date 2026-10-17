@@ -61,20 +61,20 @@ $pageTitle = "The Lore - The Stardust Engine";
                              style="background: linear-gradient(90deg, transparent 50%, #0d1117 100%); opacity: 0.8;"></div>
                     </div>
                     <div class="col-lg-5 d-flex align-items-center" style="background-color: #0d1117;">
-                        <div class="card-body p-4 p-lg-5 position-relative z-1">
-                            <wa-badge variant="info" class="mb-3 shadow-glow">
+                        <div class="p-4 p-lg-5 position-relative z-1">
+                            <wa-badge variant="brand" appearance="accent" class="mb-3 shadow-glow">
                                 <i class="fa-duotone fa-star me-2"></i>Band Favorite
                             </wa-badge>
                             <h2 class="display-5 fw-bold text-uppercase text-light mb-2" style="font-family: 'Audiowide', sans-serif;">
                                 Ad Astra
                             </h2>
                             <h3 class="h5 text-info font-monospace text-uppercase mb-4">The Maiden Voyage</h3>
-                            <p class="card-text text-secondary mb-4">
+                            <p class="text-secondary mb-4">
                                 The definitive account of the star-cruiser <em>Aethelgard</em>. 
                                 Read the in-universe narrative of the "Concert at the Edge of the World," presented as an excerpt from the band's official history book.
                             </p>
-                            <wa-button variant="info" outline size="large" href="/engine-room/artists/stardust-engine/story/ad-astra" class="rounded-pill px-4 shadow-glow">
-                                <i slot="prefix" class="fa-duotone fa-rocket-launch"></i>Open Mission Log
+                            <wa-button variant="brand" appearance="outlined" size="large" pill href="/engine-room/artists/stardust-engine/story/ad-astra" class="px-4 shadow-glow">
+                                <i slot="start" class="fa-duotone fa-rocket-launch"></i>Open Mission Log
                             </wa-button>
                         </div>
                     </div>
@@ -94,12 +94,12 @@ $pageTitle = "The Lore - The Stardust Engine";
                      style="filter: brightness(0.8);">
                 <div class="d-flex flex-column h-100 p-3">
                     <h3 class="h5 fw-bold text-danger">The Crash of '90</h3>
-                    <p class="card-text text-muted small">
+                    <p class="text-body-secondary small">
                         December 14, 1990. The night on I-81 that changed everything. Read the accident report and learn how the "Family Unit" adapted to Ryan's injury to keep the engine running.
                     </p>
                     <div class="mt-auto pt-3">
-                        <wa-button variant="danger" outline href="/engine-room/artists/stardust-engine/story/crash-of-90" class="w-100">
-                            <i slot="prefix" class="fa-duotone fa-file-medical-alt"></i>View Archive
+                        <wa-button variant="danger" appearance="outlined" href="/engine-room/artists/stardust-engine/story/crash-of-90" class="w-100">
+                            <i slot="start" class="fa-duotone fa-file-medical-alt"></i>View Archive
                         </wa-button>
                     </div>
                 </div>
@@ -128,17 +128,13 @@ $pageTitle = "The Lore - The Stardust Engine";
 
                 <div class="d-flex flex-column h-100 p-3">
                     <h3 class="h5 fw-bold text-primary">The Friction Catastrophe</h3>
-                    <p class="card-text text-muted small">
+                    <p class="text-body-secondary small">
                         The defining moment in the band's history. How a "fatal assumption" by a record executive and a disastrous photo shoot in 1992 led to the band's explosive departure from Apex Records.
                     </p>
                     <div class="mt-auto pt-3">
-                        <?php $props = [
-                            'text' => 'Read The Full Story', 
-                            'href' => '/engine-room/artists/stardust-engine/story/friction',
-                            'variant' => 'primary',
-                            'icon' => 'fa-duotone fa-book-open-cover',
-                            'fullWidth' => true
-                        ]; include ROOT_PATH . '/includes/components/button.php'; ?>
+                        <wa-button variant="brand" appearance="outlined" href="/engine-room/artists/stardust-engine/story/friction" class="w-100">
+                            <i slot="start" class="fa-duotone fa-book-open-cover"></i>Read The Full Story
+                        </wa-button>
                     </div>
                 </div>
             </wa-card>
@@ -151,17 +147,78 @@ $pageTitle = "The Lore - The Stardust Engine";
                      style="filter: brightness(0.8);">
                 <div class="d-flex flex-column h-100 p-3">
                     <h3 class="h5 fw-bold text-warning">The $150M Refusal</h3>
-                    <p class="card-text text-muted small">
+                    <p class="text-body-secondary small">
                         The day they said no. Discover how Cassidy O'Connell's meltdown in a corporate boardroom saved <em>Ad Astra</em> from being butchered by an algorithm.
                     </p>
                     <div class="mt-auto pt-3">
-                        <wa-button variant="warning" outline href="/engine-room/artists/stardust-engine/story/nine-figure-refusal" class="w-100">
-                            <i slot="prefix" class="fa-duotone fa-shield-halved"></i>Read The Minutes
+                        <wa-button variant="warning" appearance="outlined" href="/engine-room/artists/stardust-engine/story/nine-figure-refusal" class="w-100">
+                            <i slot="start" class="fa-duotone fa-shield-halved"></i>Read The Minutes
                         </wa-button>
                     </div>
                 </div>
             </wa-card>
         </div>
+
+        <!-- Grid Item: The Noise Floor -->
+        <div class="col-12 col-md-6 col-lg-4 d-flex align-items-stretch">
+            <wa-card class="h-100 border-info shadow-sm hover-card bg-transparent w-100 p-0" style="--wa-panel-bg: transparent; --body-padding: 0;">
+                <img src="<?php echo $cdnBaseUrl; ?>/engine-room-records/artists/the-stardust-engine/1987-the-warehouse-tapes/album-art.jpg" class="img-fluid border-bottom" alt="The Noise Floor — Sensory Sanctuary & Accommodations"
+                     style="filter: brightness(0.85);">
+                <div class="d-flex flex-column h-100 p-3">
+                    <h3 class="h5 fw-bold text-info">The Noise Floor (1985&ndash;1992)</h3>
+                    <p class="text-body-secondary small">
+                        How the family engineered sensory sanctuary on tour for Cassidy and Ryan—and how Apex Records systematically dismantled their accommodations.
+                    </p>
+                    <div class="mt-auto pt-3">
+                        <wa-button variant="brand" appearance="outlined" href="/engine-room/artists/stardust-engine/story/the-noise-floor" class="w-100">
+                            <i slot="start" class="fa-duotone fa-headphones"></i>Read Case File
+                        </wa-button>
+                    </div>
+                </div>
+            </wa-card>
+        </div>
+
+        <!-- Grid Item: The $13.99 War -->
+        <div class="col-12 col-md-6 col-lg-4 d-flex align-items-stretch">
+            <wa-card class="h-100 border-success shadow-sm hover-card bg-transparent w-100 p-0" style="--wa-panel-bg: transparent; --body-padding: 0;">
+                <img src="<?php echo $cdnBaseUrl; ?>/engine-room-records/artists/the-stardust-engine/1995-hard-reset/album-art.jpg" class="img-fluid border-bottom" alt="The $13.99 War — Engine Room Records Direct Distribution"
+                     style="filter: brightness(0.85);">
+                <div class="d-flex flex-column h-100 p-3">
+                    <h3 class="h5 fw-bold text-success">The $13.99 War (1992&ndash;1994)</h3>
+                    <p class="text-body-secondary small">
+                        When major-label distributors blacklisted Engine Room Records after the <em>Friction</em> walkout, Holly O'Connell bypassed the cartel and undercut the entire industry at $13.99.
+                    </p>
+                    <div class="mt-auto pt-3">
+                        <wa-button variant="success" appearance="outlined" href="/engine-room/artists/stardust-engine/story/the-13-99-war" class="w-100">
+                            <i slot="start" class="fa-duotone fa-compact-disc"></i>Read Economic File
+                        </wa-button>
+                    </div>
+                </div>
+            </wa-card>
+        </div>
+
+        <!-- Grid Item: The London Discovery & Paternoster Incident -->
+        <div class="col-12 col-md-6 col-lg-4 d-flex align-items-stretch">
+            <wa-card class="h-100 border-warning shadow-sm hover-card bg-transparent w-100 p-0" style="--wa-panel-bg: transparent; --body-padding: 0;">
+                <img src="<?php echo $cdnBaseUrl; ?>/engine-room-records/artists/fractured-prisms/1983-carnaby-street/album-art.jpg" class="img-fluid border-bottom" alt="London Chronicles — Fractured Prisms & The Paternoster Incident"
+                     style="filter: brightness(0.85);">
+                <div class="d-flex flex-column h-100 p-3">
+                    <h3 class="h5 fw-bold text-warning">The London Chronicles (1989 &amp; 1994)</h3>
+                    <p class="text-body-secondary small">
+                        From Ryan and Cassidy discovering Claire and Rhys Manning in Soho (1989) to Holly O'Connell seizing Apex UK's master vault in Paternoster Square (1994).
+                    </p>
+                    <div class="mt-auto pt-3 d-flex flex-column gap-2">
+                        <wa-button variant="warning" appearance="outlined" href="/engine-room/artists/stardust-engine/story/the-london-discovery" class="w-100">
+                            <i slot="start" class="fa-duotone fa-compass"></i>1989: The London Discovery
+                        </wa-button>
+                        <wa-button variant="neutral" appearance="outlined" size="small" href="/engine-room/artists/stardust-engine/story/the-paternoster-incident" class="w-100">
+                            <i slot="start" class="fa-duotone fa-gavel"></i>1994: Paternoster Incident
+                        </wa-button>
+                    </div>
+                </div>
+            </wa-card>
+        </div>
+
         <!-- Grid Item: Our Own Frequency -->
         <div class="col-12 col-md-6 col-lg-4 d-flex align-items-stretch">
             <wa-card class="h-100 border-primary shadow-sm hover-card bg-transparent w-100 p-0" style="--wa-panel-bg: transparent; --body-padding: 0;">
@@ -169,34 +226,31 @@ $pageTitle = "The Lore - The Stardust Engine";
                      style="filter: brightness(0.8);">
                 <div class="d-flex flex-column h-100 p-3">
                     <h3 class="h5 fw-bold text-primary">The Burnout Hiatus</h3>
-                    <p class="card-text text-muted small">
+                    <p class="text-body-secondary small">
                         Pushed to the edge by industry pressure and exhaustion, Ryan and Cassidy retreated to the studio to record an intimate acoustic confession.
                     </p>
                     <div class="mt-auto pt-3">
-                        <wa-button variant="primary" outline href="/engine-room/artists/stardust-engine/story/our-own-frequency" class="w-100">
-                            <i slot="prefix" class="fa-duotone fa-guitar"></i>Read the Story
+                        <wa-button variant="brand" appearance="outlined" href="/engine-room/artists/stardust-engine/story/our-own-frequency" class="w-100">
+                            <i slot="start" class="fa-duotone fa-guitar"></i>Read the Story
                         </wa-button>
                     </div>
                 </div>
             </wa-card>
         </div>
+
         <!-- Grid Item: CPI & The Forgers -->
         <div class="col-12 col-md-6 col-lg-4 d-flex align-items-stretch">
             <wa-card class="h-100 border-secondary shadow-sm hover-card bg-transparent w-100 p-0" style="--wa-panel-bg: transparent; --body-padding: 0;">
                 <img src="<?php echo $cdnBaseUrl; ?>/engine-room-records/artists/the-stardust-engine/2016-live-at-the-crucible/album-art.jpg" class="img-fluid border-bottom" alt="The Crucible Stadium at night">
                 <div class="d-flex flex-column h-100 p-3">
-                    <h3 class="h5 fw-bold text-light">CPI & The Forgers</h3>
-                    <p class="card-text text-muted small">
+                    <h3 class="h5 fw-bold text-light">CPI &amp; The Forgers</h3>
+                    <p class="text-body-secondary small">
                         Before they were rock stars, they were "Ironheads." Discover the band's origins at Commonwealth Polytechnic Institute and the story behind their sacred anthem, "Ignition."
                     </p>
                     <div class="mt-auto pt-3">
-                        <?php $props = [
-                            'text' => 'Enter The Crucible', 
-                            'href' => '/engine-room/artists/stardust-engine/story/crucible', 
-                            'variant' => 'neutral',
-                            'icon' => 'fa-duotone fa-school',
-                            'fullWidth' => true
-                        ]; include ROOT_PATH . '/includes/components/button.php'; ?>
+                        <wa-button variant="neutral" appearance="outlined" href="/engine-room/artists/stardust-engine/story/crucible" class="w-100">
+                            <i slot="start" class="fa-duotone fa-school"></i>Enter The Crucible
+                        </wa-button>
                     </div>
                 </div>
             </wa-card>
@@ -209,12 +263,12 @@ $pageTitle = "The Lore - The Stardust Engine";
                      style="filter: brightness(0.8);">
                 <div class="d-flex flex-column h-100 p-3">
                     <h3 class="h5 fw-bold text-info">KNOX</h3>
-                    <p class="card-text text-muted small">
+                    <p class="text-body-secondary small">
                         The Stardust Engine writes a narrative story, and composes the music for it.
                     </p>
                     <div class="mt-auto pt-3">
-                        <wa-button variant="info" outline href="/raggiesoft-books/knox" class="w-100">
-                            <i slot="prefix" class="fa-duotone fa-book-open"></i>Read The Story
+                        <wa-button variant="brand" appearance="outlined" href="/raggiesoft-books/knox" class="w-100">
+                            <i slot="start" class="fa-duotone fa-book-open"></i>Read The Story
                         </wa-button>
                     </div>
                 </div>
@@ -228,12 +282,12 @@ $pageTitle = "The Lore - The Stardust Engine";
                      style="filter: brightness(0.85);">
                 <div class="d-flex flex-column h-100 p-3">
                     <h3 class="h5 fw-bold text-info">The Iron Horse &amp; Fleet Archive</h3>
-                    <p class="card-text text-muted small">
+                    <p class="text-body-secondary small">
                         Explore the 45-foot 2002 <strong>Sainte-Claire 45H3</strong> interstate cruiser and the 30-foot 2004 <strong>Prairie Coachworks RLFD30</strong> campus shuttle—and why three members of the family hold Class A CDLs.
                     </p>
                     <div class="mt-auto pt-3">
-                        <wa-button variant="info" outline href="/engine-room/corporate/strategic-assets/the-iron-horse" class="w-100">
-                            <i slot="prefix" class="fa-duotone fa-bus"></i>Inspect Fleet Archive
+                        <wa-button variant="brand" appearance="outlined" href="/engine-room/corporate/strategic-assets/the-iron-horse" class="w-100">
+                            <i slot="start" class="fa-duotone fa-bus"></i>Inspect Fleet Archive
                         </wa-button>
                     </div>
                 </div>
@@ -247,15 +301,15 @@ $pageTitle = "The Lore - The Stardust Engine";
                      style="filter: brightness(0.8);">
                 <div class="d-flex flex-column h-100 p-3">
                     <h3 class="h5 fw-bold text-success">The 2015 Delaware Migration</h3>
-                    <p class="card-text text-muted small">
+                    <p class="text-body-secondary small">
                         After signing off on <em>Progress Street</em> in 2004, Holly O'Connell spent eleven years diversifying <strong>Engine Room Records, LLC</strong> into a $2.4B web of anonymous Delaware holdings.
                     </p>
                     <div class="mt-auto pt-3 d-flex flex-column gap-2">
-                        <wa-button variant="success" outline href="/engine-room/artists/stardust-engine/story/2015-delaware-migration" class="w-100">
-                            <i slot="prefix" class="fa-duotone fa-file-signature"></i>Read The Migration
+                        <wa-button variant="success" appearance="outlined" href="/engine-room/artists/stardust-engine/story/2015-delaware-migration" class="w-100">
+                            <i slot="start" class="fa-duotone fa-file-signature"></i>Read The Migration
                         </wa-button>
-                        <wa-button variant="neutral" outline size="small" href="/engine-room/corporate/structure" class="w-100">
-                            <i slot="prefix" class="fa-duotone fa-sitemap"></i>View 2015 Trust Map
+                        <wa-button variant="neutral" appearance="outlined" size="small" href="/engine-room/corporate/structure" class="w-100">
+                            <i slot="start" class="fa-duotone fa-sitemap"></i>View 2015 Trust Map
                         </wa-button>
                     </div>
                 </div>
@@ -268,12 +322,31 @@ $pageTitle = "The Lore - The Stardust Engine";
                 <img src="<?php echo $cdnBaseUrl; ?>/engine-room-records/playlists/john-and-erin/cover.jpg" class="img-fluid border-bottom" alt="Before the Distance: The Story of John & Erin — Ryan and Cassidy O'Connell in motorized power wheelchairs holding hands at the front boarding door ramp of a Blue Ridge Transit bus">
                 <div class="d-flex flex-column h-100 p-3">
                     <h3 class="h5 fw-bold text-warning">The Story of John &amp; Erin</h3>
-                    <p class="card-text text-muted small">
+                    <p class="text-body-secondary small">
                         Read the official five-song twin narrative published by The Stardust Engine across <em>Progress Street</em> and <em>Lost Sounds</em>—from a fatal speed-dating track skip at Kincaid Hall to a rainy rescue along Commonwealth Mall.
                     </p>
                     <div class="mt-auto pt-3">
-                        <wa-button variant="warning" outline href="/engine-room/artists/stardust-engine/story/john-and-erin" class="w-100">
-                            <i slot="prefix" class="fa-duotone fa-book-sparkles"></i>Read Liner Booklet
+                        <wa-button variant="warning" appearance="outlined" href="/engine-room/artists/stardust-engine/story/john-and-erin" class="w-100">
+                            <i slot="start" class="fa-duotone fa-book-sparkles"></i>Read Liner Booklet
+                        </wa-button>
+                    </div>
+                </div>
+            </wa-card>
+        </div>
+
+        <!-- Grid Item: The Cosmic Tidal Lock Sound™ -->
+        <div class="col-12 col-md-6 col-lg-4 d-flex align-items-stretch">
+            <wa-card class="h-100 border-info shadow-sm hover-card bg-transparent w-100 p-0" style="--wa-panel-bg: transparent; --body-padding: 0;">
+                <img src="<?php echo $cdnBaseUrl; ?>/engine-room-records/artists/the-stardust-engine/2003-sanctuary-zero-g/album-art.jpg" class="img-fluid border-bottom" alt="The Cosmic Tidal Lock Sound™ — Zero-Gravity Synth-Pop Architecture"
+                     style="filter: brightness(0.85);">
+                <div class="d-flex flex-column h-100 p-3">
+                    <h3 class="h5 fw-bold text-info">The Cosmic Tidal Lock Sound&trade;</h3>
+                    <p class="text-body-secondary small">
+                        Discover Cassidy O'Connell's zero-gravity phase-array synthesizer architecture, our open-culture trademark guide (<strong>Cosmic Tidal Lock Sound&trade;</strong> vs. the public genre <strong>80s Cosmic Pop</strong>), and the Suno v6 engineering protocol.
+                    </p>
+                    <div class="mt-auto pt-3">
+                        <wa-button variant="brand" appearance="outlined" href="/engine-room/artists/stardust-engine/story/cosmic-tidal-lock-sound" class="w-100">
+                            <i slot="start" class="fa-duotone fa-satellite"></i>Read Sonic Explainer
                         </wa-button>
                     </div>
                 </div>
@@ -287,17 +360,13 @@ $pageTitle = "The Lore - The Stardust Engine";
                      style="filter: brightness(0.8);">
                 <div class="d-flex flex-column h-100 p-3">
                     <h3 class="h5 fw-bold text-secondary">Complete Timeline</h3>
-                    <p class="card-text text-muted small">
+                    <p class="text-body-secondary small">
                         From the dorm rooms of 1985 to the reunion tour of 2015. A chronological look at every album, tour, and major event in the band's 30-year history.
                     </p>
                     <div class="mt-auto pt-3">
-                        <?php $props = [
-                            'text' => 'View Timeline', 
-                            'href' => '/engine-room/artists/stardust-engine/band/history', 
-                            'variant' => 'neutral',
-                            'icon' => 'fa-duotone fa-clock-rotate-left',
-                            'fullWidth' => true
-                        ]; include ROOT_PATH . '/includes/components/button.php'; ?>
+                        <wa-button variant="neutral" appearance="outlined" href="/engine-room/artists/stardust-engine/band/history" class="w-100">
+                            <i slot="start" class="fa-duotone fa-clock-rotate-left"></i>View Timeline
+                        </wa-button>
                     </div>
                 </div>
             </wa-card>

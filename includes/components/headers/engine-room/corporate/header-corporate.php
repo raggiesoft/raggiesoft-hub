@@ -1,81 +1,77 @@
 <?php
 /**
- * Engine Room - Corporate Intranet Header
- * 
- * ARCHITECTURAL OVERVIEW:
- * This component provides horizontal navigation for the "Corporate" intranet section of the 
- * Engine Room. It simulates an internal company portal with dropdowns for Entities and Ops.
- * 
- * LORE CONTEXT:
- * Part of the broader RaggieSoft fictional universe, linking out to other "Operating Companies"
- * and internal operations.
- * 
+ * ============================================================================
+ * Engine Room - Corporate Intranet Header (Web Awesome v3.13.0)
+ * ============================================================================
+ * File: includes/components/headers/engine-room/corporate/header-corporate.php
+ * Context: The Corporate Intranet Navigation for O'Connell Family Trust,
+ *          Aethelgard Holdings, Engine Room Records, and Operating Companies.
+ *
  * LOGIC & CONSTRAINTS:
- * - Built using Web Awesome components (`<wa-button>`, `<wa-dropdown>`).
- * - Contains static links to other parts of the site; does NOT implement dynamic active state 
- *   logic out-of-the-box in this snippet.
- * 
- * File Info: includes/components/headers/engine-room/corporate/header.php
- * Context: The Corporate Intranet Navigation.
+ * - Built using strict Web Awesome v3.13.0 components (`<wa-button>`,
+ *   `<wa-dropdown>`, `<wa-dropdown-item>`, `<wa-divider>`).
+ * - Links directly to all wired corporate, real estate, and fleet routes.
+ * ============================================================================
  */
 ?>
 <div class="d-flex flex-column flex-md-row align-items-stretch align-items-md-center gap-2 ms-auto py-3 py-md-0 w-100 mobile-nav-menu">
-  
-  
-    <wa-button appearance="plain" href="/engine-room/corporate">
-        <i slot="start" class="fa-duotone fa-building-columns me-2"></i>Dashboard
-    </wa-button>
-  
 
-  
-    <wa-button appearance="plain" href="/engine-room/corporate/structure">
-        <i slot="start" class="fa-duotone fa-sitemap me-2"></i>Structure
-    </wa-button>
-  
+  <wa-button appearance="plain" href="/engine-room/corporate">
+    <i slot="start" class="fa-duotone fa-building-columns me-2"></i>Dashboard
+  </wa-button>
 
-  
+  <wa-button appearance="plain" href="/engine-room/corporate/structure">
+    <i slot="start" class="fa-duotone fa-sitemap me-2"></i>Structure
+  </wa-button>
+
   <wa-dropdown placement="bottom-start">
-    <!-- 
-      Dropdown Trigger:
-      Web Awesome requires `slot="trigger"` to map this button to the `<wa-menu>` below.
-    -->
-    <wa-button  href="#"    slot="trigger" appearance="plain">
-        <i class="fa-duotone fa-briefcase me-2"></i>Entities
-        <i slot="end" class="fa-solid fa-circle-caret-down ms-2 opacity-50" aria-hidden="true"></i>
+    <wa-button slot="trigger" appearance="plain" with-caret>
+      <i slot="start" class="fa-duotone fa-briefcase me-2"></i>Entities
     </wa-button>
-    <wa-menu>
-      <div class="px-3 py-2 small text-uppercase  fw-bold">Operating Companies</div>
-        <wa-dropdown-item value="/engine-room"><i class="fa-solid fa-record-vinyl me-2 text-danger"></i>Engine Room Records</wa-dropdown-item>
-        <wa-dropdown-item value="/engine-room/corporate/strategic-assets"><i class="fa-solid fa-vault me-2 text-warning"></i>Stardust Strategic Assets</wa-dropdown-item>
-        <wa-dropdown-item value="/engine-room/corporate/aethelgard"><i class="fa-solid fa-gavel me-2 "></i>Aethelgard Holdings</wa-dropdown-item>
-        <wa-dropdown-item value="/engine-room/corporate/pacific-rim"><i class="fa-solid fa-city me-2 text-primary"></i>Pacific Rim Properties</wa-dropdown-item>
-        <wa-dropdown-item value="/engine-room/corporate/stardust-blacksburg"><i class="fa-solid fa-building-user me-2 text-info"></i>Stardust Blacksburg</wa-dropdown-item>
-        <wa-divider></wa-divider>
-        <div class="px-3 py-2 small text-uppercase  fw-bold">Philanthropy</div>
-        <wa-dropdown-item value="/engine-room/corporate/jessica-miller-center"><i class="fa-solid fa-hand-holding-heart me-2 text-success"></i>Jessica Miller Center</wa-dropdown-item>
-    </wa-menu>
+    <div class="px-3 py-2 small text-uppercase fw-bold text-body-secondary">Trust &amp; Operating Companies</div>
+    <wa-dropdown-item value="/oconnell-trust">
+      <i slot="icon" class="fa-solid fa-shield-halved text-primary"></i>O'Connell Family Trust
+    </wa-dropdown-item>
+    <wa-dropdown-item value="/engine-room">
+      <i slot="icon" class="fa-solid fa-record-vinyl text-danger"></i>Engine Room Records
+    </wa-dropdown-item>
+    <wa-dropdown-item value="/engine-room/corporate/strategic-assets">
+      <i slot="icon" class="fa-solid fa-vault text-warning"></i>Stardust Strategic Assets
+    </wa-dropdown-item>
+    <wa-dropdown-item value="/engine-room/corporate/aethelgard">
+      <i slot="icon" class="fa-solid fa-gavel text-secondary"></i>Aethelgard Holdings
+    </wa-dropdown-item>
+    <wa-dropdown-item value="/engine-room/corporate/pacific-rim">
+      <i slot="icon" class="fa-solid fa-city text-primary"></i>Pacific Rim Properties
+    </wa-dropdown-item>
+    <wa-dropdown-item value="/engine-room/corporate/stardust-blacksburg">
+      <i slot="icon" class="fa-solid fa-building-user text-info"></i>Stardust Blacksburg (Ironwood)
+    </wa-dropdown-item>
+    <wa-divider></wa-divider>
+    <div class="px-3 py-2 small text-uppercase fw-bold text-body-secondary">Philanthropy</div>
+    <wa-dropdown-item value="/engine-room/corporate/jessica-miller-center">
+      <i slot="icon" class="fa-solid fa-hand-holding-heart text-success"></i>Jessica Miller Center
+    </wa-dropdown-item>
   </wa-dropdown>
 
-
-  
   <wa-dropdown placement="bottom-start">
-    <wa-button  href="#"    slot="trigger" appearance="plain">
-        <i class="fa-duotone fa-server me-2"></i>Ops
-        <i slot="end" class="fa-solid fa-circle-caret-down ms-2 opacity-50" aria-hidden="true"></i>
+    <wa-button slot="trigger" appearance="plain" with-caret>
+      <i slot="start" class="fa-duotone fa-server me-2"></i>Ops
     </wa-button>
-    <wa-menu>
-      <div class="px-3 py-2 small text-uppercase  fw-bold text-info">Internal Only</div>
-        <wa-dropdown-item value="/engine-room/corporate/systems"><i class="fa-solid fa-terminal me-2"></i>Systems (Justin)</wa-dropdown-item>
-        <wa-dropdown-item value="/engine-room/corporate/fleet"><i class="fa-solid fa-satellite-dish me-2"></i>Fleet Command (Telemetry)</wa-dropdown-item>
-        <wa-dropdown-item value="/engine-room/corporate/strategic-assets/the-iron-horse"><i class="fa-solid fa-bus me-2 text-warning"></i>The Iron Horse &amp; Fleet Archive</wa-dropdown-item>
-    </wa-menu>
+    <div class="px-3 py-2 small text-uppercase fw-bold text-info">Internal Operations</div>
+    <wa-dropdown-item value="/engine-room/corporate/systems">
+      <i slot="icon" class="fa-solid fa-terminal"></i>Systems (Justin)
+    </wa-dropdown-item>
+    <wa-dropdown-item value="/engine-room/corporate/fleet">
+      <i slot="icon" class="fa-solid fa-satellite-dish"></i>Fleet Command (Telemetry)
+    </wa-dropdown-item>
+    <wa-dropdown-item value="/engine-room/corporate/strategic-assets/the-iron-horse">
+      <i slot="icon" class="fa-solid fa-bus text-warning"></i>The Iron Horse &amp; Fleet Archive
+    </wa-dropdown-item>
   </wa-dropdown>
 
-
-  
-    <wa-button appearance="plain" href="/engine-room" class="text-dark">
-        Exit to Public Site <i slot="start" class="fa-solid fa-arrow-right-from-bracket ms-2"></i>
-    </wa-button>
-  
+  <wa-button appearance="plain" href="/engine-room" class="text-body-secondary">
+    <i slot="start" class="fa-solid fa-arrow-right-from-bracket me-2"></i>Exit to Public Site
+  </wa-button>
 
 </div>

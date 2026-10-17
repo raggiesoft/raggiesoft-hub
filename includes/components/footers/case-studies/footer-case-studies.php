@@ -51,6 +51,7 @@
                     <li class="nav-item mb-2"><a href="/case-studies" class="nav-link p-0 text-body-secondary">Overview</a></li>
                     <li class="nav-item mb-2"><a href="/case-studies/cascade-protocol" class="nav-link p-0 text-body-secondary">Cascade Protocol</a></li>
                     <li class="nav-item mb-2"><a href="/case-studies/shenandoah-valley" class="nav-link p-0 text-body-secondary">Shenandoah Gauntlet</a></li>
+                    <li class="nav-item mb-2"><a href="/case-studies/silent-exhaustion" class="nav-link p-0 text-body-secondary">Silent Exhaustion</a></li>
                 </ul>
             </div>
 
@@ -68,8 +69,8 @@
         <div class="row align-items-center">
             <div class="col-md-6 text-center text-md-start small text-body-secondary">
                 <p class="mb-1">&copy; <?php echo date("Y"); ?> Michael Ragsdale.</p>
-                <p class="mb-0  ">
-                    <a href="/about/license" class="text-reset text-decoration-none border-bottom">CC BY-SA 4.0</a>
+                <p class="mb-0">
+                    <a href="/raggiesoft-media/licensing" class="text-reset text-decoration-none border-bottom">CC BY-SA 4.0</a>
                 </p>
             </div>
             <div class="col-md-6 text-center text-md-end small text-body-secondary mt-3 mt-md-0">

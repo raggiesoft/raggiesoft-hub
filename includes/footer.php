@@ -76,7 +76,7 @@ $isDarkTheme = (isset($currentPageTheme) && in_array($currentPageTheme, ['dark',
                         </span>
                     </div>
                     <div class="mt-2 text-body-secondary" style="font-size: 0.85em;">
-                        RaggieSoft&trade;, The Stardust Engine&trade;, and Engine Room Records&trade; are trademarks of Michael P. Ragsdale.
+                        RaggieSoft&trade;, The Stardust Engine&trade;, Engine Room Records&trade;, and The Cosmic Tidal Lock Sound&trade; are trademarks of Michael P. Ragsdale.
                     </div>
                     <div class="mt-1 text-body-secondary" style="font-size: 0.8em;">
                         <strong>Fictitious Disclaimer:</strong> Unless explicitly marked as real-world portfolio credentials, all bands, characters, universities (including Commonwealth Polytechnic Institute / CPI, The Forgers, The Ironheads, The Crucible, Virginia Dominion University / VDU, Piedmont Virginia University / PVU, and Monongahela State University / MSU), corporations (including OmniCorp, Apex Records, Prairie Coachworks, and Sainte-Claire), transit agencies (Blue Ridge Transit), legal filings, and events depicted on this network are works of fiction. Any resemblance to actual persons, living or dead, institutions, or events is purely coincidental.

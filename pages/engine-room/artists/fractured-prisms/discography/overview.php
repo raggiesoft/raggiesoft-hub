@@ -71,9 +71,9 @@ $musicGroupSchema = [
         <p class="lead text-secondary mx-auto mb-3" style="max-width: 800px; font-family: var(--font-tech);">
             The complete discography of Fractured Prisms, from the mechanical isolation of the Maryland sanctuary to their sprawling, gaslamp-lit rock operas.
         </p>
-        <a href="https://music.raggiesoft.com/fractured-prisms" target="_blank" rel="noopener" class="btn btn-primary rounded-0 px-4 fw-bold shadow-sm" style="font-family: var(--font-tech); text-transform: uppercase;">
-            <i class="fa-duotone fa-headphones me-2"></i>Stream &amp; Read Lyrics in The Listening Room
-        </a>
+        <wa-button variant="brand" appearance="accent" href="https://music.raggiesoft.com/fractured-prisms" target="_blank" rel="noopener" class="rounded-0 px-4 fw-bold shadow-sm" style="font-family: var(--font-tech); text-transform: uppercase;">
+            <i slot="start" class="fa-duotone fa-headphones"></i>Stream &amp; Read Lyrics in The Listening Room
+        </wa-button>
     </div>
 
     <!-- INLINE: Iterate through each defined era in the band's timeline -->
@@ -104,7 +104,7 @@ $musicGroupSchema = [
                     $hasHubLore = !empty($album['url']) && file_exists(ROOT_PATH . '/pages' . $album['url'] . '.php');
                 ?>
                     <div class="col">
-                        <div class="card h-100 lore-card rounded-0 shadow-sm overflow-hidden border-top-0 border-end-0 border-bottom-0">
+                        <wa-card class="card h-100 lore-card rounded-0 shadow-sm overflow-hidden border-top-0 border-end-0 border-bottom-0 w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
                             
                             <div class="position-relative">
                                 <img src="<?php echo htmlspecialchars($album['img'] ?? $cdnBaseUrl . '/common/images/defaults/vinyl-placeholder.jpg'); ?>" 
@@ -113,7 +113,7 @@ $musicGroupSchema = [
                                      style="aspect-ratio: 1/1; object-fit: cover;">
                             </div>
 
-                            <div class="card-body d-flex flex-column">
+                            <div class="card-body d-flex flex-column p-4">
                                 <h5 class="card-title fw-bold mb-1 gothic-font" style="color: var(--bs-body-color);">
                                     <?php echo htmlspecialchars($album['title']); ?>
                                 </h5>
@@ -151,7 +151,7 @@ $musicGroupSchema = [
                                     ?>
                                 </div>
                             </div>
-                        </div>
+                        </wa-card>
                     </div>
                 <?php endforeach; ?>
             </div>

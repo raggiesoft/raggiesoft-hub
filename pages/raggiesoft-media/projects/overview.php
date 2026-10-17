@@ -49,89 +49,97 @@ $pageTitle = "Open Source Projects | RaggieSoft Media";
     <div class="row g-4 mb-5">
         
         <div class="col-lg-6">
-            <a href="/raggiesoft-media/projects/stardust-engine-cms" class="card bg-hud-blue border-0 shadow-sm h-100 text-decoration-none hover-lift">
-                <div class="card-body p-4 p-md-5">
-                    <div class="d-flex align-items-center mb-3">
-                        <i class="fa-duotone fa-rocket-launch fa-3x text-primary me-4" aria-hidden="true" style="filter: drop-shadow(0 2px 4px rgba(0,130,230,0.4));"></i>
-                        <div>
-                            <h3 class="h5 fw-bold text-body-emphasis mb-1">Stardust Engine CMS</h3>
-                            <p class="small text-primary font-monospace mb-0 text-uppercase tracking-wider">Active Framework</p>
+            <a href="/raggiesoft-media/projects/stardust-engine-cms" class="text-decoration-none d-block h-100">
+                <wa-card class="card bg-hud-blue border-0 shadow-sm h-100 w-100 hover-lift" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
+                    <div class="card-body p-4 p-md-5">
+                        <div class="d-flex align-items-center mb-3">
+                            <i class="fa-duotone fa-rocket-launch fa-3x text-primary me-4" aria-hidden="true" style="filter: drop-shadow(0 2px 4px rgba(0,130,230,0.4));"></i>
+                            <div>
+                                <h3 class="h5 fw-bold text-body-emphasis mb-1">Stardust Engine CMS</h3>
+                                <p class="small text-primary font-monospace mb-0 text-uppercase tracking-wider">Active Framework</p>
+                            </div>
+                        </div>
+                        <p class="text-body-secondary mb-4">
+                            The flagship, file-based PHP MVC framework powering the entire RaggieSoft network. Features the "Elara" Vanilla JS SPA Router, dynamic structured data, and native dark mode logic.
+                        </p>
+                        <div class="d-flex flex-wrap gap-2 mt-auto">
+                            <wa-badge variant="brand" appearance="filled-outlined" class="text-primary-emphasis">PHP 8.4</wa-badge>
+                            <wa-badge variant="neutral" appearance="filled-outlined" class="text-secondary-emphasis">Vanilla JS</wa-badge>
+                            <wa-badge variant="neutral" appearance="filled-outlined" class="text-secondary-emphasis">JSON Shards</wa-badge>
                         </div>
                     </div>
-                    <p class="text-body-secondary mb-4">
-                        The flagship, file-based PHP MVC framework powering the entire RaggieSoft network. Features the "Elara" Vanilla JS SPA Router, dynamic structured data, and native dark mode logic.
-                    </p>
-                    <div class="d-flex flex-wrap gap-2 mt-auto">
-                        <span class="badge bg-primary-subtle text-primary-emphasis border border-primary-subtle">PHP 8.4</span>
-                        <span class="badge bg-secondary-subtle text-secondary-emphasis border border-secondary-subtle">Vanilla JS</span>
-                        <span class="badge bg-secondary-subtle text-secondary-emphasis border border-secondary-subtle">JSON Shards</span>
-                    </div>
-                </div>
+                </wa-card>
             </a>
         </div>
 
         <div class="col-lg-6">
-            <a href="#" class="card bg-hud-orange border-0 shadow-sm h-100 text-decoration-none hover-lift">
-                <div class="card-body p-4 p-md-5">
-                    <div class="d-flex align-items-center mb-3">
-                        <i class="fa-duotone fa-books fa-3x text-warning me-4" aria-hidden="true" style="filter: drop-shadow(0 2px 4px rgba(255,179,0,0.4));"></i>
-                        <div>
-                            <h3 class="h5 fw-bold text-body-emphasis mb-1">RaggieSoft Books Engine</h3>
-                            <p class="small text-warning font-monospace mb-0 text-uppercase tracking-wider">In Development</p>
+            <a href="/raggiesoft-books" class="text-decoration-none d-block h-100">
+                <wa-card class="card bg-hud-orange border-0 shadow-sm h-100 w-100 hover-lift" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
+                    <div class="card-body p-4 p-md-5">
+                        <div class="d-flex align-items-center mb-3">
+                            <i class="fa-duotone fa-books fa-3x text-warning me-4" aria-hidden="true" style="filter: drop-shadow(0 2px 4px rgba(255,179,0,0.4));"></i>
+                            <div>
+                                <h3 class="h5 fw-bold text-body-emphasis mb-1">RaggieSoft Books Engine</h3>
+                                <p class="small text-warning font-monospace mb-0 text-uppercase tracking-wider">In Development</p>
+                            </div>
+                        </div>
+                        <p class="text-body-secondary mb-4">
+                            A dedicated, accessible reading environment designed to ingest structured JSON manuscript data and render customizable, user-friendly reading experiences.
+                        </p>
+                        <div class="d-flex flex-wrap gap-2 mt-auto">
+                            <wa-badge variant="warning" appearance="filled-outlined" class="text-warning-emphasis">WCAG 2.1 AA</wa-badge>
+                            <wa-badge variant="neutral" appearance="filled-outlined" class="text-secondary-emphasis">Python Ingestion</wa-badge>
                         </div>
                     </div>
-                    <p class="text-body-secondary mb-4">
-                        A dedicated, accessible reading environment designed to ingest structured JSON manuscript data and render customizable, user-friendly reading experiences.
-                    </p>
-                    <div class="d-flex flex-wrap gap-2 mt-auto">
-                        <span class="badge bg-warning-subtle text-warning-emphasis border border-warning-subtle">WCAG 2.1 AA</span>
-                        <span class="badge bg-secondary-subtle text-secondary-emphasis border border-secondary-subtle">Python Ingestion</span>
-                    </div>
-                </div>
+                </wa-card>
             </a>
         </div>
 
         <div class="col-lg-6">
-            <a href="https://michaelpragsdale.com" class="card bg-hud-green border-0 shadow-sm h-100 text-decoration-none hover-lift">
-                <div class="card-body p-4 p-md-5">
-                    <div class="d-flex align-items-center mb-3">
-                        <i class="fa-duotone fa-user-tie fa-3x text-success me-4" aria-hidden="true" style="filter: drop-shadow(0 2px 4px rgba(56, 229, 77, 0.4));"></i>
-                        <div>
-                            <h3 class="h5 fw-bold text-body-emphasis mb-1">Architect Portfolio</h3>
-                            <p class="small text-success font-monospace mb-0 text-uppercase tracking-wider">Professional Dashboard</p>
+            <a href="https://michaelpragsdale.com" class="text-decoration-none d-block h-100">
+                <wa-card class="card bg-hud-green border-0 shadow-sm h-100 w-100 hover-lift" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
+                    <div class="card-body p-4 p-md-5">
+                        <div class="d-flex align-items-center mb-3">
+                            <i class="fa-duotone fa-user-tie fa-3x text-success me-4" aria-hidden="true" style="filter: drop-shadow(0 2px 4px rgba(56, 229, 77, 0.4));"></i>
+                            <div>
+                                <h3 class="h5 fw-bold text-body-emphasis mb-1">Architect Portfolio</h3>
+                                <p class="small text-success font-monospace mb-0 text-uppercase tracking-wider">Professional Dashboard</p>
+                            </div>
+                        </div>
+                        <p class="text-body-secondary mb-4">
+                            The interactive, JSON-driven professional dashboard detailing systems architecture, full-stack experience, and automated hiring logistics for Michael Ragsdale.
+                        </p>
+                        <div class="d-flex flex-wrap gap-2 mt-auto">
+                            <wa-badge variant="success" appearance="filled-outlined" class="text-success-emphasis">Resume</wa-badge>
+                            <wa-badge variant="neutral" appearance="filled-outlined" class="text-secondary-emphasis">ATS Optimized</wa-badge>
+                            <wa-badge variant="neutral" appearance="filled-outlined" class="text-secondary-emphasis">Logistics</wa-badge>
                         </div>
                     </div>
-                    <p class="text-body-secondary mb-4">
-                        The interactive, JSON-driven professional dashboard detailing systems architecture, full-stack experience, and automated hiring logistics for Michael Ragsdale.
-                    </p>
-                    <div class="d-flex flex-wrap gap-2 mt-auto">
-                        <span class="badge bg-success-subtle text-success-emphasis border border-success-subtle">Resume</span>
-                        <span class="badge bg-secondary-subtle text-secondary-emphasis border border-secondary-subtle">ATS Optimized</span>
-                        <span class="badge bg-secondary-subtle text-secondary-emphasis border border-secondary-subtle">Logistics</span>
-                    </div>
-                </div>
+                </wa-card>
             </a>
         </div>
 
         <div class="col-lg-6">
-            <a href="/raggiesoft-media/projects/storetrainer" class="card bg-hud-base border-0 shadow-sm h-100 text-decoration-none hover-lift">
-                <div class="card-body p-4 p-md-5 d-flex flex-column">
-                    <div class="d-flex align-items-center mb-3">
-                        <i class="fa-duotone fa-floppy-disk fa-3x text-secondary me-4" aria-hidden="true"></i>
-                        <div>
-                            <h3 class="h5 fw-bold text-body-emphasis mb-1">StoreTrainer</h3>
-                            <p class="small text-secondary font-monospace mb-0 text-uppercase tracking-wider">Legacy / Active</p>
+            <a href="/raggiesoft-media/projects/storetrainer" class="text-decoration-none d-block h-100">
+                <wa-card class="card bg-hud-base border-0 shadow-sm h-100 w-100 hover-lift" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
+                    <div class="card-body p-4 p-md-5 d-flex flex-column">
+                        <div class="d-flex align-items-center mb-3">
+                            <i class="fa-duotone fa-floppy-disk fa-3x text-secondary me-4" aria-hidden="true"></i>
+                            <div>
+                                <h3 class="h5 fw-bold text-body-emphasis mb-1">StoreTrainer</h3>
+                                <p class="small text-secondary font-monospace mb-0 text-uppercase tracking-wider">Legacy / Active</p>
+                            </div>
+                        </div>
+                        <p class="text-body-secondary mb-4">
+                            A Windows utility from the 9x era built in Visual Basic 6.0 that orchestrates complex launch sequences for video game memory trainers. It generates custom <code>.STF</code> (INI-formatted) shortcuts to manage execution orders and working directories.
+                        </p>
+                        <div class="d-flex flex-wrap gap-2 mt-auto">
+                            <wa-badge variant="neutral" appearance="filled-outlined" class="text-secondary-emphasis">VB6</wa-badge>
+                            <wa-badge variant="neutral" appearance="filled-outlined" class="text-secondary-emphasis">Win32 API</wa-badge>
+                            <wa-badge variant="neutral" appearance="filled-outlined" class="text-secondary-emphasis">.STF / INI Parser</wa-badge>
                         </div>
                     </div>
-                    <p class="text-body-secondary mb-4">
-                        A Windows utility from the 9x era built in Visual Basic 6.0 that orchestrates complex launch sequences for video game memory trainers. It generates custom <code>.STF</code> (INI-formatted) shortcuts to manage execution orders and working directories.
-                    </p>
-                    <div class="d-flex flex-wrap gap-2 mt-auto">
-                        <span class="badge bg-secondary-subtle text-secondary-emphasis border border-secondary-subtle">VB6</span>
-                        <span class="badge bg-secondary-subtle text-secondary-emphasis border border-secondary-subtle">Win32 API</span>
-                        <span class="badge bg-secondary-subtle text-secondary-emphasis border border-secondary-subtle">.STF / INI Parser</span>
-                    </div>
-                </div>
+                </wa-card>
             </a>
         </div>
         
@@ -139,7 +147,7 @@ $pageTitle = "Open Source Projects | RaggieSoft Media";
 
     <div class="row mb-5">
         <div class="col-12">
-            <div class="card bg-hud-blue border-0 shadow-sm">
+            <wa-card class="card bg-hud-blue border-0 shadow-sm w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
                 <div class="card-body p-4 p-md-5">
                     <div class="d-flex flex-column flex-md-row align-items-center justify-content-between">
                         <div class="mb-4 mb-md-0 text-center text-md-start">
@@ -147,16 +155,16 @@ $pageTitle = "Open Source Projects | RaggieSoft Media";
                             <p class="text-secondary mb-0">The Stardust Engine CMS and supporting infrastructure are available for review.</p>
                         </div>
                         <div class="d-flex gap-3">
-                            <a href="/raggiesoft-media/projects/stardust-engine-cms" class="btn btn-primary rounded-pill fw-bold px-4 shadow-sm transition-all">
-                                Read the Docs <i class="fa-solid fa-arrow-right ms-2" aria-hidden="true"></i>
-                            </a>
-                            <a href="https://github.com/raggiesoft" target="_blank" rel="noopener noreferrer" class="btn btn-glass-github rounded-pill fw-bold px-4 transition-all">
-                                <i class="fa-brands fa-github me-2" aria-hidden="true"></i> GitHub
-                            </a>
+                            <wa-button variant="brand" appearance="accent" pill href="/raggiesoft-media/projects/stardust-engine-cms" class="fw-bold px-4 shadow-sm transition-all">
+                                Read the Docs <i slot="end" class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                            </wa-button>
+                            <wa-button variant="neutral" appearance="outlined" pill href="https://github.com/raggiesoft" target="_blank" rel="noopener noreferrer" class="btn-glass-github fw-bold px-4 transition-all">
+                                <i slot="start" class="fa-brands fa-github" aria-hidden="true"></i> GitHub
+                            </wa-button>
                         </div>
                     </div>
                 </div>
-            </div>
+            </wa-card>
         </div>
     </div>
     

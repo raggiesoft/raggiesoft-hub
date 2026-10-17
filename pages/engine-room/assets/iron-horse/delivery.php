@@ -23,7 +23,7 @@ $pageTitle = "Lore: The First Ride";
     
     <div class="row justify-content-center mb-5">
         <div class="col-lg-8 text-center">
-            <span class="badge bg-success text-white border border-white mb-2">DELIVERY DATE: JUNE 2002</span>
+            <wa-badge variant="success" appearance="accent" class="mb-2">DELIVERY DATE: JUNE 2002</wa-badge>
             <h1 class="display-4 fw-bold text-body-emphasis">The First Lift</h1>
             <p class="lead text-body-secondary fst-italic">
                 The day the world opened up.
@@ -34,7 +34,7 @@ $pageTitle = "Lore: The First Ride";
     <div class="row justify-content-center">
         <div class="col-lg-10">
             
-            <div class="card border-0 shadow-lg mb-5 bg-body-tertiary">
+            <wa-card class="card border-0 shadow-lg mb-5 bg-body-tertiary w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
                 <div class="card-body p-5">
                     <h5 class="text-uppercase text-body-secondary letter-spacing-2 mb-4">Delivery Bay 1</h5>
                     
@@ -58,12 +58,12 @@ $pageTitle = "Lore: The First Ride";
                         The applause from the crew was deafening. They weren't clapping for a client; they were clapping for one of their own.
                     </p>
                 </div>
-            </div>
+            </wa-card>
 
-            <div class="card bg-black text-white border-danger shadow">
-                <div class="card-header bg-danger text-white fw-bold text-uppercase d-flex justify-content-between align-items-center">
+            <wa-card class="card bg-black text-white border-danger shadow w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
+                <div class="card-header bg-danger text-white fw-bold text-uppercase d-flex justify-content-between align-items-center p-3">
                     <span><i class="fa-solid fa-file-contract me-2"></i>Competitor Intelligence Report</span>
-                    <span class="badge bg-black text-danger border border-danger">CONFIDENTIAL</span>
+                    <wa-badge variant="danger" appearance="outlined" class="text-danger">CONFIDENTIAL</wa-badge>
                 </div>
                 <div class="card-body p-4 font-monospace small">
                     <p class="mb-2"><strong>SUBJECT:</strong> The "Pop Star" Order (Ref: 2002-CANCELLED)</p>
@@ -79,7 +79,7 @@ $pageTitle = "Lore: The First Ride";
                         <li class="mb-0 text-danger fw-bold">>> RESULT: Bus scrapped. Tour cancelled.</li>
                     </ul>
                 </div>
-            </div>
+            </wa-card>
 
         </div>
     </div>

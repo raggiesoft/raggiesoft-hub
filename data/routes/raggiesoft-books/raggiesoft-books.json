@@ -34,6 +34,45 @@
     "title": "Image Library | Ocean View Archives",
     "ogTitle": "Image Library - RaggieSoft Books"
   },
+  "/raggiesoft-books/encyclopedia/sensory-scale": {
+    "view": "pages/raggiesoft-books/encyclopedia/sensory-scale",
+    "title": "The Sensory Scale Protocol | Ocean View Archives",
+    "ogTitle": "The Sensory Scale Protocol - Neurodivergent Worldbuilding Reference",
+    "ogDescription": "Understanding the 1-to-10 sensory overload scale used across Ocean View Archives and Engine Room Records narratives."
+  },
+  "/raggiesoft-books/sensory-scale": {
+    "view": "pages/raggiesoft-books/encyclopedia/sensory-scale",
+    "title": "The Sensory Scale Protocol | Ocean View Archives",
+    "ogTitle": "The Sensory Scale Protocol - Neurodivergent Worldbuilding Reference",
+    "ogDescription": "Understanding the 1-to-10 sensory overload scale used across Ocean View Archives and Engine Room Records narratives."
+  },
+  "/raggiesoft-books/encyclopedia/bus-systems/cvta/routes/southside/route-85": {
+    "view": "pages/raggiesoft-books/encyclopedia/bus-systems/cvta/routes/southside/route-85",
+    "title": "Route 85 Transit Schedule & Lore | Ocean View Archives",
+    "ogTitle": "Route 85 Transit Lore - Ocean View Archives",
+    "ogDescription": "Official timetable and narrative context for the Route 85 commuter corridor."
+  },
+  "/raggiesoft-books/route-85": {
+    "view": "pages/raggiesoft-books/encyclopedia/bus-systems/cvta/routes/southside/route-85",
+    "title": "Route 85 Transit Schedule & Lore | Ocean View Archives",
+    "ogTitle": "Route 85 Transit Lore - Ocean View Archives",
+    "ogDescription": "Official timetable and narrative context for the Route 85 commuter corridor."
+  },
+  "/raggiesoft-books/encyclopedia/characters/jessica-ragsdale": {
+    "view": "pages/raggiesoft-books/encyclopedia/characters/jessica-ragsdale",
+    "title": "Jessica Ragsdale | Ocean View Archives",
+    "ogTitle": "Jessica Ragsdale - Character & Narrative Overview"
+  },
+  "/raggiesoft-books/jessica-ragsdale": {
+    "view": "pages/raggiesoft-books/encyclopedia/characters/jessica-ragsdale",
+    "title": "Jessica Ragsdale | Ocean View Archives",
+    "ogTitle": "Jessica Ragsdale - Character & Narrative Overview"
+  },
+  "/raggiesoft-books/sarah": {
+    "view": "pages/raggiesoft-books/sarah/overview",
+    "title": "Sarah Miller | Ocean View Archives",
+    "ogTitle": "Sarah Miller - Narrative Overview"
+  },
   "/raggiesoft-books/search": {
     "view": "pages/raggiesoft-books/search",
     "title": "Deep Search | Ocean View Archives",

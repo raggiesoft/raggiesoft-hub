@@ -2,22 +2,34 @@
     "common": {
         "site": "stardust-engine",
         "theme": "ad-astra",
-        "showSidebar": true,
+        "schemaType": "CreativeWork",
+        "showSidebar": false,
+        "sidebar": "sidebar-stories",
         "brandFont": [
             "Audiowide",
             "sans-serif"
         ],
+        "headerMenu": "engine-room/artists/stardust-engine/header-stardust",
+        "footer": "engine-room/artists/stardust-engine/footer-stardust",
         "siteName": "The Cosmic Tidal Lock Sound\u2122",
         "navbarBrandLogo": "/engine-room-records/artists/the-stardust-engine/band-logo.png",
         "navbarBrandText": "<span class=\"text-uppercase\">Tidal Lock</span><span class=\"d-none d-md-inline\"> Sound&trade;</span>",
-        "navbarBrandLink": "/engine-room/artists/stardust-engine/cosmic-tidal-lock-sound",
-        "ogImage": "/stardust-engine/images/band-members/cassidy.jpg",
-        "isSequential": true
+        "navbarBrandLink": "/engine-room/artists/stardust-engine/story/cosmic-tidal-lock-sound",
+        "ogImage": "/engine-room-records/artists/the-stardust-engine/2003-sanctuary-zero-g/social-preview.jpg",
+        "isSequential": false
     },
     "/engine-room/artists/stardust-engine/story/cosmic-tidal-lock-sound": {
         "view": "pages/engine-room/artists/stardust-engine/story/cosmic-tidal-lock-sound/overview",
-        "title": "The Cosmic Tidal Lock Sound - The Stardust Engine",
-        "ogDescription": "The sonic architecture of absolute independence. Discover the heavily guarded trademark and engineering genius developed exclusively by Cassidy O'Connell.",
-        "showSidebar": true
+        "title": "The Cosmic Tidal Lock Sound™ vs. 80s Cosmic Pop | Trademark & Sonic Architecture Explainer",
+        "ogTitle": "The Cosmic Tidal Lock Sound™ vs. 80s Cosmic Pop (Open-Culture Trademark & Sonic Architecture Guide)",
+        "ogDescription": "Official explainer for Michael P. Ragsdale's 'The Cosmic Tidal Lock Sound™' trademark, why '80s Cosmic Pop' is the open generic genre name free for everyone to use, and the Suno v6 74% Audio Influence engineering protocol.",
+        "showSidebar": false
+    },
+    "/engine-room/artists/stardust-engine/cosmic-tidal-lock-sound": {
+        "view": "pages/engine-room/artists/stardust-engine/story/cosmic-tidal-lock-sound/overview",
+        "title": "The Cosmic Tidal Lock Sound™ vs. 80s Cosmic Pop | Trademark & Sonic Architecture Explainer",
+        "ogTitle": "The Cosmic Tidal Lock Sound™ vs. 80s Cosmic Pop (Open-Culture Trademark & Sonic Architecture Guide)",
+        "ogDescription": "Official explainer for Michael P. Ragsdale's 'The Cosmic Tidal Lock Sound™' trademark, why '80s Cosmic Pop' is the open generic genre name free for everyone to use, and the Suno v6 74% Audio Influence engineering protocol.",
+        "showSidebar": false
     }
 }

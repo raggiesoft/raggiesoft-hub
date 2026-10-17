@@ -1,0 +1,25 @@
+{
+  "common": {
+    "site": "raggiesoft-corporate",
+    "showSidebar": false,
+    "siteName": "Pathfinder West Strategy Guide",
+    "navbarBrandText": "Pathfinder West <span class=\"fw-light\">Strategy Guide</span>",
+    "navbarBrandLink": "/raggiesoft-games/pathfinder-west/strategy-guide/golden-ending/hail-mary"
+  },
+  "/raggiesoft-games/pathfinder-west/strategy-guide/golden-ending/hail-mary": {
+    "view": "pages/raggiesoft-games/pathfinder-west/strategy-guide/golden-ending/hail-mary/overview",
+    "title": "Strategy Guide: The Pasco Hail Mary | Pathfinder West",
+    "ogDescription": "The complete narrative strategy guide for achieving the Pasco Hail Mary Golden Ending in Pathfinder West."
+  },
+  "/raggiesoft-games/pathfinder-west/strategy-guide/golden-ending/hail-mary/chapter-01": {
+    "view": "pages/raggiesoft-games/pathfinder-west/strategy-guide/golden-ending/hail-mary/chapter-01",
+    "title": "Chapter 1: The False Start | Pathfinder West Strategy Guide",
+    "ogDescription": "Chapter 1 of the Pathfinder West strategy guide. Roxy, Allison, and Alanna discover Jason is missing and navigate the Newport decoy."
+  },
+  "/raggiesoft-games/pathfinder-west/strategy-guide/golden-ending/hail-mary/chapter-02": {
+    "view": "pages/raggiesoft-games/pathfinder-west/strategy-guide/golden-ending/hail-mary/chapter-02",
+    "title": "Chapter 2: The Cipher | Pathfinder West Strategy Guide",
+    "ogDescription": "Chapter 2 of the Pathfinder West strategy guide. The party decodes the Static & Silence CD and executes the I-85 Southern Cut."
+  }
+}
+

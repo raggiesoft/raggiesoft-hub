@@ -1,35 +1,32 @@
 <?php
 /**
- * Engine Room - Main Navigation Header
- * 
+ * ============================================================================
+ * Engine Room Records - Main Navigation Header (Web Awesome v3.13.0)
+ * ============================================================================
+ * File: includes/components/headers/engine-room/header-engine-room.php
+ *
  * ARCHITECTURAL OVERVIEW:
- * This is the primary navigation component for the "Engine Room Records" section.
- * It serves as a central hub linking to active artists, historical archives, and corporate operations.
- * 
- * LORE CONTEXT:
- * The "Official Imprint Navigation" blending fan-centric content (roster, radio) with 
- * corporate elements (B2B licensing, verification desks).
- * 
+ * Primary navigation component for the "Engine Room Records" imprint.
+ * Connects active roster artists, historical archives, corporate trust entities,
+ * and B2B licensing/DSP verification portals.
+ *
  * LOGIC & CONSTRAINTS:
- * - Complex active state logic: Evaluates `$_SERVER['REQUEST_URI']` using `str_starts_with` 
- *   and `str_contains` to dynamically color-highlight dropdown triggers (`$isRoster`, `$isArchives`, etc.).
- * - Heavy usage of Web Awesome (`<wa-dropdown>`, `<wa-menu>`, `<wa-dropdown-item>`) mixed 
- *   with Bootstrap flexbox classes.
- * - The Media Contacts section uses `data-u`, `data-d`, `data-t` attributes on `.elara-secure-mail` 
- *   elements. This is likely tied to a JavaScript obfuscator for email addresses. Do NOT modify these attributes.
- * 
- * File Info: includes/components/headers/engine-room/header-engine-room.php
- * The Official Imprint Navigation. 
- * Fan-Centric Focus with Corporate Routing to RaggieSoft Media.
+ * - Evaluates `$_SERVER['REQUEST_URI']` to highlight active dropdown triggers.
+ * - Uses strict Web Awesome v3.13.0 `<wa-dropdown>`, `<wa-dropdown-item>`,
+ *   and `<wa-divider>` directly without legacy `<wa-menu>` wrappers.
+ * - Preserves `.elara-secure-mail` obfuscation data attributes (`data-u`,
+ *   `data-d`, `data-t`) for `elara-spa.js`.
+ * ============================================================================
  */
 
 // 1. Determine Active States
-$uri = $_SERVER['REQUEST_URI'] ?? '';
+$uri = parse_url($_SERVER['REQUEST_URI'] ?? '', PHP_URL_PATH) ?: '';
 
 $isRoster = str_starts_with($uri, '/engine-room/artists');
-$isRadio = str_contains($uri, '/radio');
+$isRadio  = str_contains($uri, '/radio');
 $isArchives = (
-    str_starts_with($uri, '/engine-room/history') || 
+    str_starts_with($uri, '/engine-room/history') ||
+    str_starts_with($uri, '/engine-room/about') ||
     str_contains($uri, '/corporate') ||
     str_contains($uri, '/story')
 );
@@ -41,103 +38,102 @@ $isArchives = (
     <i slot="start" class="fa-duotone fa-turntable"></i> The Listening Room
   </wa-button>
 
+  <!-- Active Roster Dropdown -->
   <wa-dropdown placement="bottom-start">
-    <wa-button slot="trigger" appearance="plain" with-caret class="<?php echo $isRoster ? 'text-primary' : ''; ?>">
+    <wa-button slot="trigger" appearance="plain" with-caret class="<?php echo $isRoster ? 'text-primary fw-bold' : ''; ?>">
       <i slot="start" class="fa-duotone fa-compact-disc"></i> The Roster
-        <i slot="end" class="fa-solid fa-circle-caret-down ms-2 opacity-50" aria-hidden="true"></i>
     </wa-button>
-    <wa-menu>
-      <wa-dropdown-item value="/engine-room/artists">View Full Roster (Lore Hub)</wa-dropdown-item>
-      <wa-dropdown-item value="https://music.raggiesoft.com/discography">Master Discography (Listening Room)</wa-dropdown-item>
+    <wa-dropdown-item value="/engine-room/artists">
+      <i slot="icon" class="fa-duotone fa-users-viewfinder text-primary"></i> View Full Roster (Lore Hub)
+    </wa-dropdown-item>
+    <wa-dropdown-item value="https://music.raggiesoft.com/discography">
+      <i slot="icon" class="fa-duotone fa-record-vinyl text-warning"></i> Master Discography (Listening Room)
+    </wa-dropdown-item>
     <wa-divider></wa-divider>
     <div class="px-3 py-2 small text-uppercase text-primary fw-bold">Active Roster</div>
     <wa-dropdown-item value="/engine-room/artists/stardust-engine">
-      <i slot="start" class="fa-solid fa-rocket-launch text-primary"></i> The Stardust Engine
+      <i slot="icon" class="fa-solid fa-rocket-launch text-primary"></i> The Stardust Engine
     </wa-dropdown-item>
     <wa-dropdown-item value="/engine-room/artists/fractured-prisms">
-      <i slot="start" class="fa-solid fa-gem text-info"></i> Fractured Prisms
+      <i slot="icon" class="fa-solid fa-gem text-info"></i> Fractured Prisms
     </wa-dropdown-item>
     <wa-dropdown-item value="/engine-room/artists/the-paper-wall">
-      <i slot="start" class="fa-solid fa-book-open text-warning"></i> The Paper Wall
+      <i slot="icon" class="fa-solid fa-book-open text-warning"></i> The Paper Wall
     </wa-dropdown-item>
     <wa-dropdown-item value="/engine-room/artists/crimson-node">
-      <i slot="start" class="fa-solid fa-waveform-lines text-danger"></i> Crimson Node
+      <i slot="icon" class="fa-solid fa-waveform-lines text-danger"></i> Crimson Node
     </wa-dropdown-item>
     <wa-dropdown-item value="/raggiesoft-books/aethel-saga">
-      <i slot="start" class="fa-solid fa-palette text-success"></i> Mana Canvas
+      <i slot="icon" class="fa-solid fa-palette text-success"></i> Mana Canvas
     </wa-dropdown-item>
     <wa-dropdown-item value="/engine-room/artists/the-arctic-symphony-project">
-      <i slot="start" class="fa-solid fa-snowflake text-info"></i> The Arctic Symphony Project
+      <i slot="icon" class="fa-solid fa-snowflake text-info"></i> The Arctic Symphony Project
     </wa-dropdown-item>
-    </wa-menu>
   </wa-dropdown>
 
+  <!-- Archives & Corporate Lore Dropdown -->
   <wa-dropdown placement="bottom-start">
-    <wa-button slot="trigger" appearance="plain" with-caret class="<?php echo $isArchives ? 'text-primary' : ''; ?>">
+    <wa-button slot="trigger" appearance="plain" with-caret class="<?php echo $isArchives ? 'text-primary fw-bold' : ''; ?>">
       <i slot="start" class="fa-duotone fa-box-archive"></i> The Archives
-        <i slot="end" class="fa-solid fa-circle-caret-down ms-2 opacity-50" aria-hidden="true"></i>
     </wa-button>
-    <wa-menu>
-      <div class="px-3 py-2 small text-uppercase  fw-bold">Company History</div>
+    <div class="px-3 py-2 small text-uppercase fw-bold text-body-secondary">Company History</div>
     <wa-dropdown-item value="/engine-room/history">
-      <i slot="start" class="fa-solid fa-clock-rotate-left "></i> Full Timeline
+      <i slot="icon" class="fa-solid fa-clock-rotate-left"></i> Full Timeline
     </wa-dropdown-item>
     <wa-dropdown-item value="/engine-room/about">
-      <i slot="start" class="fa-solid fa-industry "></i> About The Fortress
+      <i slot="icon" class="fa-solid fa-industry"></i> About The Fortress
     </wa-dropdown-item>
     <wa-dropdown-item value="/engine-room/corporate/structure">
-      <i slot="start" class="fa-solid fa-sitemap text-info"></i> Corporate Structure (2015 Trust Map)
+      <i slot="icon" class="fa-solid fa-sitemap text-info"></i> Corporate Structure (2015 Trust Map)
+    </wa-dropdown-item>
+    <wa-dropdown-item value="/engine-room/corporate/stardust-blacksburg">
+      <i slot="icon" class="fa-solid fa-building-user text-primary"></i> Stardust Blacksburg (Ironwood)
     </wa-dropdown-item>
     <wa-dropdown-item value="/engine-room/corporate/strategic-assets/the-iron-horse">
-      <i slot="start" class="fa-solid fa-bus text-warning"></i> The Iron Horse &amp; Fleet Archive
+      <i slot="icon" class="fa-solid fa-bus text-warning"></i> The Iron Horse &amp; Fleet Archive
     </wa-dropdown-item>
     <wa-divider></wa-divider>
-    <div class="px-3 py-2 small text-uppercase  fw-bold">Declassified Case Files</div>
+    <div class="px-3 py-2 small text-uppercase fw-bold text-body-secondary">Declassified Case Files</div>
     <wa-dropdown-item value="/engine-room/artists/stardust-engine/story/friction">
-      <i slot="start" class="fa-duotone fa-fire text-danger"></i> 1992: The Friction Scandal
+      <i slot="icon" class="fa-duotone fa-fire text-danger"></i> 1992: The Friction Scandal
+    </wa-dropdown-item>
+    <wa-dropdown-item value="/engine-room/artists/stardust-engine/story/cosmic-tidal-lock-sound">
+      <i slot="icon" class="fa-duotone fa-satellite text-info"></i> 2011: Cosmic Tidal Lock Sound&trade;
     </wa-dropdown-item>
     <wa-dropdown-item value="/engine-room/artists/stardust-engine/story/2015-delaware-migration">
-      <i slot="start" class="fa-duotone fa-file-signature text-info"></i> 2015: The Delaware Migration
+      <i slot="icon" class="fa-duotone fa-file-signature text-primary"></i> 2015: The Delaware Migration
     </wa-dropdown-item>
     <wa-dropdown-item value="/engine-room/artists/stardust-engine/story/nine-figure-refusal">
-      <i slot="start" class="fa-duotone fa-ban text-success"></i> 2018: The $150M Refusal
+      <i slot="icon" class="fa-duotone fa-ban text-success"></i> 2018: The $150M Refusal
     </wa-dropdown-item>
-    </wa-menu>
   </wa-dropdown>
 
+  <!-- Industry & B2B Dropdown -->
   <wa-dropdown placement="bottom-end">
     <wa-button slot="trigger" appearance="plain" with-caret class="text-body-secondary">
       <i slot="start" class="fa-duotone fa-briefcase"></i> Industry
-        <i slot="end" class="fa-solid fa-circle-caret-down ms-2 opacity-50" aria-hidden="true"></i>
     </wa-button>
-    <wa-menu>
-      <div class="px-3 py-2 small text-uppercase  fw-bold">B2B Operations</div>
+    <div class="px-3 py-2 small text-uppercase fw-bold text-body-secondary">B2B Operations</div>
     <wa-dropdown-item value="/raggiesoft-media/licensing">
-      <i slot="start" class="fa-solid fa-handshake text-primary"></i> Master Licensing Portal
+      <i slot="icon" class="fa-solid fa-handshake text-primary"></i> Master Licensing Portal
     </wa-dropdown-item>
     <wa-dropdown-item value="/engine-room/dsp-verification">
-      <i slot="start" class="fa-solid fa-shield-check text-success"></i> DSP Verification Desk
+      <i slot="icon" class="fa-solid fa-shield-check text-success"></i> DSP Verification Desk
     </wa-dropdown-item>
     <wa-divider></wa-divider>
-    <div class="px-3 py-2 small text-uppercase  fw-bold">Media Contacts</div>
-    <!-- 
-      Obfuscated Email Links:
-      The `.elara-secure-mail` class and `data-` attributes are used by an external
-      JavaScript function to construct `mailto:` links dynamically, preventing spam harvesters.
-    -->
+    <div class="px-3 py-2 small text-uppercase fw-bold text-body-secondary">Media Contacts</div>
     <wa-dropdown-item class="elara-secure-mail font-monospace" value="#" data-u="sync" data-d="raggiesoftmedia" data-t="com">
-      <i slot="start" class="fa-solid fa-file-audio text-warning"></i> sync@raggiesoftmedia.com
+      <i slot="icon" class="fa-solid fa-file-audio text-warning"></i> sync@raggiesoftmedia.com
     </wa-dropdown-item>
     <wa-dropdown-item class="elara-secure-mail font-monospace" value="#" data-u="ops" data-d="raggiesoftmedia" data-t="com">
-      <i slot="start" class="fa-solid fa-envelope "></i> ops@raggiesoftmedia.com
+      <i slot="icon" class="fa-solid fa-envelope"></i> ops@raggiesoftmedia.com
     </wa-dropdown-item>
-    </wa-menu>
   </wa-dropdown>
 
-  <div class="ms-2 ps-2 border-start border-secondary border-">
-      <wa-button appearance="plain" variant="neutral" href="/" class="text-body-secondary">
-        <i slot="start" class="fa-duotone fa-arrow-right-from-bracket"></i> Exit to RaggieSoft
-      </wa-button>
+  <div class="ms-2 ps-2 border-start border-secondary">
+    <wa-button appearance="plain" variant="neutral" href="/" class="text-body-secondary">
+      <i slot="start" class="fa-duotone fa-arrow-right-from-bracket"></i> Exit to RaggieSoft
+    </wa-button>
   </div>
 
 </div>

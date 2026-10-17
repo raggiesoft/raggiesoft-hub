@@ -109,7 +109,7 @@ $pageTitle = "Careers and Jobs at RaggieSoft | Scam Warning";
     
     <div class="row mb-4">
         <div class="col-12">
-            <div class="card bg-hud-red border-0 p-4 p-md-5 shadow-sm">
+            <wa-card class="card bg-hud-red border-0 p-4 p-md-5 shadow-sm w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
                 
                 <div class="d-flex align-items-center mb-4 border-bottom border-danger border-opacity-25 pb-3">
                     <i class="fa-duotone fa-shield-exclamation fa-3x text-danger me-3" aria-hidden="true" style="filter: drop-shadow(0 2px 4px rgba(220,53,69,0.4));"></i>
@@ -149,28 +149,28 @@ $pageTitle = "Careers and Jobs at RaggieSoft | Scam Warning";
                 </p>
 
                 <div class="d-flex flex-wrap gap-3 mt-2 border-top border-secondary-subtle pt-4">
-                    <a href="https://www.ic3.gov/" target="_blank" rel="noopener noreferrer" class="btn btn-aero-danger rounded-pill px-4 fw-bold">
-                        <i class="fa-solid fa-building-columns me-2" aria-hidden="true"></i>Report to FBI (IC3) <i class="fa-solid fa-arrow-up-right-from-square ms-1" style="font-size: 0.8em;" aria-hidden="true"></i>
-                    </a>
-                    <a href="https://reportfraud.ftc.gov/" target="_blank" rel="noopener noreferrer" class="btn btn-aero-outline-danger rounded-pill px-4 fw-bold">
-                        <i class="fa-solid fa-scale-balanced me-2" aria-hidden="true"></i>Report to FTC <i class="fa-solid fa-arrow-up-right-from-square ms-1" style="font-size: 0.8em;" aria-hidden="true"></i>
-                    </a>
+                    <wa-button variant="danger" appearance="accent" pill href="https://www.ic3.gov/" target="_blank" rel="noopener noreferrer" class="btn-aero-danger px-4 fw-bold">
+                        <i slot="start" class="fa-solid fa-building-columns" aria-hidden="true"></i>Report to FBI (IC3) <i slot="end" class="fa-solid fa-arrow-up-right-from-square" style="font-size: 0.8em;" aria-hidden="true"></i>
+                    </wa-button>
+                    <wa-button variant="danger" appearance="accent" pill href="https://reportfraud.ftc.gov/" target="_blank" rel="noopener noreferrer" class="btn-aero-outline-danger px-4 fw-bold">
+                        <i slot="start" class="fa-solid fa-scale-balanced" aria-hidden="true"></i>Report to FTC <i slot="end" class="fa-solid fa-arrow-up-right-from-square" style="font-size: 0.8em;" aria-hidden="true"></i>
+                    </wa-button>
                 </div>
 
-            </div>
+            </wa-card>
         </div>
     </div>
 
     <div class="row mt-2">
         <div class="col-12">
-            <div class="card bg-hud-base border-0 p-4 text-center shadow-sm">
+            <wa-card class="card bg-hud-base border-0 p-4 text-center shadow-sm w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
                 <h3 class="h6 text-uppercase fw-bold text-secondary mb-3">Automated System Query Responses</h3>
                 <p class="small text-body-secondary font-monospace mb-0">
                     Q: Is RaggieSoft hiring? A: No. RaggieSoft is a single-person entity.<br>
                     Q: Does RaggieSoft have remote data entry jobs? A: No.<br>
                     Q: How do I verify a job offer from RaggieSoft? A: All job offers claiming to be from RaggieSoft are fraudulent.
                 </p>
-            </div>
+            </wa-card>
         </div>
     </div>
 

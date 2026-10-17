@@ -69,7 +69,7 @@ $pageTitle = "The Paper Wall - Engine Room Records Roster";
         <div class="container py-5">
             <div class="row align-items-end">
                 <div class="col-lg-8">
-                    <span class="badge badge-industrial mb-3 p-2">ROSTER ID: ERR-003</span>
+                    <wa-badge variant="neutral" appearance="accent" class="badge-industrial mb-3 p-2">ROSTER ID: ERR-003</wa-badge>
                     <h1 class="display-1 fw-bold text-stenciled mb-0">THE PAPER WALL</h1>
                     <p class="lead font-monospace opacity-75 mt-2">
                         <i class="fa-solid fa-location-dot me-2"></i>ORIGIN: BLACKSBURG, VA
@@ -102,8 +102,8 @@ $pageTitle = "The Paper Wall - Engine Room Records Roster";
                         <strong>The Paper Wall</strong> (originally formed under the working title <em>Mirage</em>) is not just a band; it is a survival mechanism. Formed by <strong>Julian Croft</strong> and <strong>Maya Sterling</strong>, the collective blends the scale of cinematic literary rock opera with the raw grit of industrial and alternative rock.
                     </p>
                     
-                    <div class="card card-industrial mb-4">
-                        <div class="card-body">
+                    <wa-card class="card card-industrial mb-4 w-100" style="--body-padding: 0; --header-padding: 0;">
+                        <div class="card-body p-4">
                             <h5 class="fw-bold text-danger text-uppercase mb-3">
                                 <i class="fa-solid fa-file-contract me-2"></i>The "Paper Wall" Legal Trust
                             </h5>
@@ -114,7 +114,7 @@ $pageTitle = "The Paper Wall - Engine Room Records Roster";
                                 Engine Room Records does not just distribute their music. We fund the "Paper Wall" legal trust that protects their assets and independence—and gave the band its permanent name.
                             </p>
                         </div>
-                    </div>
+                    </wa-card>
 
                     <h3 class="h5 fw-bold text-uppercase mt-5 mb-3">The "Safe Harbor" Lineup</h3>
                     <ul class="list-group rounded-0">
@@ -182,12 +182,12 @@ $pageTitle = "The Paper Wall - Engine Room Records Roster";
                          class="img-fluid border border-secondary shadow-glow" alt="Static & Silence Art">
                     
                     <div class="mt-4 d-flex flex-column gap-2">
-                        <a href="https://music.raggiesoft.com/the-paper-wall" target="_blank" rel="noopener" class="btn btn-primary rounded-0 w-100 text-uppercase fw-bold font-monospace">
-                            <i class="fa-duotone fa-headphones me-2"></i>Open in The Listening Room
-                        </a>
-                        <a href="/engine-room/artists/the-paper-wall/discography/2001-static-and-silence" class="btn btn-outline-light rounded-0 w-100 text-uppercase font-monospace">
-                            <i class="fa-duotone fa-book-open-cover me-2"></i>Album Lore &amp; Archive
-                        </a>
+                        <wa-button variant="brand" appearance="accent" href="https://music.raggiesoft.com/the-paper-wall" target="_blank" rel="noopener" class="rounded-0 w-100 text-uppercase fw-bold font-monospace">
+                            <i slot="start" class="fa-duotone fa-headphones"></i>Open in The Listening Room
+                        </wa-button>
+                        <wa-button variant="neutral" appearance="outlined" href="/engine-room/artists/the-paper-wall/discography/2001-static-and-silence" class="rounded-0 w-100 text-uppercase font-monospace">
+                            <i slot="start" class="fa-duotone fa-book-open-cover"></i>Album Lore &amp; Archive
+                        </wa-button>
                     </div>
                 </div>
                 
@@ -213,9 +213,9 @@ $pageTitle = "The Paper Wall - Engine Room Records Roster";
                                 <li class="list-group-item bg-transparent text-white-50 border-secondary">Shattered Voice, Silent Explosion</li>
                             </ol>
                             <div class="mt-3">
-                                <a href="https://music.raggiesoft.com/the-paper-wall/2001-static-and-silence-book-1" target="_blank" rel="noopener" class="btn btn-sm btn-outline-info rounded-0 font-monospace">
-                                    <i class="fa-duotone fa-headphones me-1"></i> Book 1 Lyrics &amp; Stream
-                                </a>
+                                <wa-button variant="brand" appearance="outlined" size="small" href="https://music.raggiesoft.com/the-paper-wall/2001-static-and-silence-book-1" target="_blank" rel="noopener" class="rounded-0 font-monospace">
+                                    <i slot="start" class="fa-duotone fa-headphones"></i> Book 1 Lyrics &amp; Stream
+                                </wa-button>
                             </div>
                         </div>
 
@@ -234,9 +234,9 @@ $pageTitle = "The Paper Wall - Engine Room Records Roster";
                                 <li class="list-group-item bg-transparent text-white-50 border-secondary">Haven City</li>
                             </ol>
                             <div class="mt-3">
-                                <a href="https://music.raggiesoft.com/the-paper-wall/2001-static-and-silence-book-2" target="_blank" rel="noopener" class="btn btn-sm btn-outline-info rounded-0 font-monospace">
-                                    <i class="fa-duotone fa-headphones me-1"></i> Book 2 Lyrics &amp; Stream
-                                </a>
+                                <wa-button variant="brand" appearance="outlined" size="small" href="https://music.raggiesoft.com/the-paper-wall/2001-static-and-silence-book-2" target="_blank" rel="noopener" class="rounded-0 font-monospace">
+                                    <i slot="start" class="fa-duotone fa-headphones"></i> Book 2 Lyrics &amp; Stream
+                                </wa-button>
                             </div>
                         </div>
                     </div>
@@ -247,9 +247,9 @@ $pageTitle = "The Paper Wall - Engine Room Records Roster";
     </div>
 
     <div class="bg-body-tertiary py-4 text-center border-top border-secondary">
-        <a href="/engine-room/artists" class="btn btn-link text-decoration-none text-uppercase fw-bold text-body">
-            <i class="fa-solid fa-arrow-left me-2"></i>Return to Roster
-        </a>
+        <wa-button variant="neutral" appearance="plain" href="/engine-room/artists" class="text-uppercase fw-bold text-body">
+            <i slot="start" class="fa-solid fa-arrow-left"></i>Return to Roster
+        </wa-button>
     </div>
 
 </div>

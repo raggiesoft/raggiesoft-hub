@@ -73,8 +73,8 @@ if ($eras) {
 </div>
 
 <div class="container mt-4 mb-2">
-    <div class="alert alert-secondary border-secondary shadow-sm d-flex align-items-center" role="alert">
-        <i class="fa-duotone fa-robot-astromech fa-3x me-3 text-info d-none d-md-block"></i>
+    <wa-callout variant="neutral" appearance="accent" class="shadow-sm d-block">
+        <i slot="icon" class="fa-duotone fa-robot-astromech fa-3x text-info d-none d-md-block"></i>
         <div>
             <h4 class="alert-heading h6 fw-bold mb-1 text-uppercase letter-spacing-1"><i class="fa-duotone fa-robot-astromech me-2 text-info d-inline-block d-md-none"></i>Transparency & Timeline Notice</h4>
             <p class="mb-2 small text-body-secondary border-bottom border-secondary-subtle pb-2">
@@ -85,7 +85,7 @@ if ($eras) {
                 <a href="/about/ai-disclaimer" class="alert-link fw-bold text-info border-bottom border-info text-decoration-none ms-1">Read the full AI Disclaimer.</a>
             </p>
         </div>
-    </div>
+    </wa-callout>
 </div>
 
 <div class="container py-5 border-bottom border-secondary border-opacity-25 position-relative" style="z-index: 1050;">
@@ -100,9 +100,9 @@ if ($eras) {
             </div>
 
             <div class="col-lg-6 p-4 p-md-5 text-center text-lg-start">
-                <span class="badge bg-success-subtle text-success-emphasis mb-3 px-3 py-2 text-uppercase letter-spacing-1" style="border: 1px solid var(--bs-success-border-subtle);">
+                <wa-badge variant="success" appearance="filled" class="text-success-emphasis mb-3 px-3 py-2 text-uppercase letter-spacing-1" style="border: 1px solid var(--bs-success-border-subtle);">
                     <i class="fa-solid fa-satellite-dish me-2 pulse-icon"></i>Now Streaming
-                </span>
+                </wa-badge>
                 <h2 class="display-5 fw-bold text-uppercase mb-3 brand-font">The Sessions Are Live</h2>
                 <p class="lead text-body-secondary mb-4">
                     The 15-track debut album has officially cleared the global distribution network. Featuring the massive stadium synth-prog of "The Flight Path" and the relentless energy of "Quality of Service."
@@ -115,12 +115,12 @@ if ($eras) {
                 <div class="d-flex flex-column align-items-center align-items-lg-start">
                     
                     <div class="d-flex flex-wrap justify-content-center justify-content-lg-start gap-3">
-                        <a href="https://music.raggiesoft.com/crimson-node" target="_blank" rel="noopener" class="btn btn-primary btn-lg shadow-sm px-4 fw-bold d-inline-flex align-items-center border-glow">
-                            <i class="fa-duotone fa-headphones me-2"></i>The Listening Room
-                        </a>
-                        <a href="/engine-room/artists/crimson-node/discography/2002-crimson-node" class="btn btn-outline-primary btn-lg shadow-sm px-4 fw-bold d-inline-flex align-items-center">
-                            <i class="fa-duotone fa-book-open-cover me-2"></i>Studio Lore
-                        </a>
+                        <wa-button variant="brand" appearance="accent" size="large" href="https://music.raggiesoft.com/crimson-node" target="_blank" rel="noopener" class="shadow-sm px-4 fw-bold d-inline-flex align-items-center border-glow">
+                            <i slot="start" class="fa-duotone fa-headphones"></i>The Listening Room
+                        </wa-button>
+                        <wa-button variant="brand" appearance="outlined" size="large" href="/engine-room/artists/crimson-node/discography/2002-crimson-node" class="shadow-sm px-4 fw-bold d-inline-flex align-items-center">
+                            <i slot="start" class="fa-duotone fa-book-open-cover"></i>Studio Lore
+                        </wa-button>
                         
                         <?php
                             // The DSP buttons component natively checks for valid IDs
@@ -156,7 +156,7 @@ if ($eras) {
         
         <!-- Card 1: The Manager -->
         <div class="col-md-6 col-lg-5">
-            <div class="card bg-hud-red h-100 border-primary shadow-glow hover-lift overflow-hidden">
+            <wa-card class="card bg-hud-red h-100 border-primary shadow-glow hover-lift overflow-hidden w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
                 <div class="card-body p-4 text-center d-flex flex-column">
                     <div class="mb-3"><i class="fa-duotone fa-laptop-code fa-3x opacity-75"></i></div>
                     
@@ -171,12 +171,12 @@ if ($eras) {
                         Functionally non-verbal and operating from a manual wheelchair, Matt acts as the band's brilliant, systems-oriented producer. From his Tactile Command Rig, he oversees the digital track routing and manages the band's entire operation without speaking a single word.
                     </p>
                 </div>
-            </div>
+            </wa-card>
         </div>
 
         <!-- Card 2: The Rotating Vocalist -->
         <div class="col-md-6 col-lg-5">
-            <div class="card bg-hud-blue h-100 border-info shadow-glow hover-lift overflow-hidden">
+            <wa-card class="card bg-hud-blue h-100 border-info shadow-glow hover-lift overflow-hidden w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
                 <div class="card-body p-4 text-center d-flex flex-column">
                     <div class="mb-3"><i class="fa-duotone fa-microphone-stand fa-3x opacity-75"></i></div>
                     
@@ -191,7 +191,7 @@ if ($eras) {
                         The band rejects the concept of a single lead singer. Instead, the women of the Albemarle compound seamlessly rotate through the vocal booth, trading powerhouse stadium belts, aggressive punk energy, and melodic power-ballads to match the emotional weight of each track.
                     </p>
                 </div>
-            </div>
+            </wa-card>
         </div>
 
     </div>
@@ -272,7 +272,7 @@ if ($eras) {
 <div class="container py-5">
     <div class="row g-4">
         <div class="col-lg-4">
-            <div class="card h-100 border-secondary bg-transparent hover-lift">
+            <wa-card class="card h-100 border-secondary bg-transparent hover-lift w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
                 <div class="card-body d-flex flex-column text-center p-4">
                     <div class="mb-3 text-primary"><i class="fa-duotone fa-users fa-3x"></i></div>
                     <h3 class="fw-bold text-primary brand-font">The Phalanx</h3>
@@ -281,22 +281,22 @@ if ($eras) {
                     </p>
                     <a href="<?php echo $root; ?>/characters/family" class="btn btn-outline-primary mt-auto rounded-pill">View Roster</a>
                 </div>
-            </div>
+            </wa-card>
         </div>
         <div class="col-lg-4">
-            <div class="card h-100 border-secondary bg-transparent hover-lift">
+            <wa-card class="card h-100 border-secondary bg-transparent hover-lift w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
                 <div class="card-body d-flex flex-column text-center p-4">
                     <div class="mb-3 text-danger"><i class="fa-duotone fa-book-atlas fa-3x"></i></div>
                     <h3 class="fw-bold text-danger brand-font">The Lore</h3>
                     <p class="text-secondary small">
                         Explore the architecture of the Kids House, the Trent Ejection, and the CCC Crash.
                     </p>
-                    <a href="https://books.raggiesoft.com/crimson-node" target="_blank" rel="noopener" class="btn btn-outline-danger mt-auto rounded-pill">Read History</a>
+                    <wa-button variant="danger" appearance="outlined" pill href="https://books.raggiesoft.com/crimson-node" target="_blank" rel="noopener" class="mt-auto">Read History</wa-button>
                 </div>
-            </div>
+            </wa-card>
         </div>
         <div class="col-lg-4">
-            <div class="card h-100 border-secondary bg-transparent hover-lift">
+            <wa-card class="card h-100 border-secondary bg-transparent hover-lift w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
                 <div class="card-body d-flex flex-column text-center p-4">
                     <div class="mb-3 text-info"><i class="fa-duotone fa-compact-disc fa-3x"></i></div>
                     <h3 class="fw-bold text-info brand-font">The Discography</h3>
@@ -305,7 +305,7 @@ if ($eras) {
                     </p>
                     <a href="<?php echo $root; ?>/discography" class="btn btn-outline-info mt-auto rounded-pill">View Albums</a>
                 </div>
-            </div>
+            </wa-card>
         </div>
     </div>
 </div>

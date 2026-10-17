@@ -36,7 +36,7 @@ $pageTitle = "Day 10: Harmonic Velocity - Ad Astra Log";
     <!-- BEGIN: Log Header -->
     <div class="d-flex justify-content-between align-items-center mb-5 border-bottom border-info pb-3">
         <div>
-            <span class="badge bg-info text-dark font-monospace mb-2">LOG: DAY 10</span>
+            <wa-badge variant="brand" appearance="accent" class="font-monospace mb-2">LOG: DAY 10</wa-badge>
             <h1 class="display-4 fw-bold text-uppercase text-light mb-0" style="font-family: 'Audiowide';">Harmonic Velocity</h1>
         </div>
         <div class="text-end text-white-50 font-monospace small">
@@ -56,7 +56,7 @@ $pageTitle = "Day 10: Harmonic Velocity - Ad Astra Log";
             
             <div class="position-absolute bottom-0 start-0 w-100 p-3 bg-black bg-opacity-75 d-flex justify-content-between align-items-center">
                 <span class="text-info font-monospace small"><i class="fa-duotone fa-camera me-2"></i>CAM_1B: BLAST SHIELDS RETRACTED</span>
-                <span class="badge bg-black border border-info text-info rounded-0">LIVE FEED</span>
+                <wa-badge variant="brand" appearance="outlined" class="text-info rounded-0">LIVE FEED</wa-badge>
             </div>
         </div>
     </wa-card>
@@ -90,9 +90,9 @@ $pageTitle = "Day 10: Harmonic Velocity - Ad Astra Log";
                 <div slot="header" class=" border-bottom border-primary text-primary fw-bold font-monospace p-3" style="border-color: var(--astra-primary) !important;">
                     <i class="fa-duotone fa-stars me-2"></i>AUDIO LOG: "AD ASTRA" (PART III)
                 </div>
-                <div class="card-body">
+                <div class="card-body p-4">
                     <div class="d-flex align-items-center">
-                        <button class="btn btn-outline-primary rounded-circle me-3"><i class="fa-solid fa-play"></i></button>
+                        <wa-button variant="brand" appearance="outlined" class="rounded-circle me-3"><i class="fa-solid fa-play"></i></wa-button>
                         <div class="flex-grow-1">
                             <div class="progress" style="height: 4px; background-color: #333;">
                                 <div class="progress-bar bg-primary" role="progressbar" style="width: 75%"></div>
@@ -119,7 +119,7 @@ $pageTitle = "Day 10: Harmonic Velocity - Ad Astra Log";
                 <div slot="header" class=" text-info fw-bold text-uppercase border-bottom border-secondary p-3" style="border-color: var(--astra-info) !important;">
                     <i class="fa-duotone fa-globe-stand me-2"></i>Environmental
                 </div>
-                <div class="card-body text-white-50 small">
+                <div class="card-body text-white-50 small p-4">
                     <ul class="list-unstyled mb-0 font-monospace">
                         <li class="mb-2">> <strong>Location:</strong> Cygnus Loop</li>
                         <li class="mb-2">> <strong>Shields:</strong> <span class="text-danger">OPEN</span></li>
@@ -132,7 +132,7 @@ $pageTitle = "Day 10: Harmonic Velocity - Ad Astra Log";
 
             <!-- BEGIN: Crew Note Card -->
             <wa-card class="card bg-black border-secondary mb-4 w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
-                <div class="card-body">
+                <div class="card-body p-4">
                     <h6 class="text-secondary fw-bold text-uppercase mb-2">
                         <i class="fa-duotone fa-message-code me-2"></i>Crew Note
                     </h6>

@@ -36,7 +36,7 @@ $pageTitle = "Day 03: Ship's Time - Ad Astra Log";
     <!-- BEGIN: Log Header -->
     <div class="d-flex justify-content-between align-items-center mb-5 border-bottom border-light pb-3" style="border-color: var(--astra-text) !important;">
         <div>
-            <span class="badge bg-light text-dark font-monospace mb-2">LOG: DAY 03</span>
+            <wa-badge variant="neutral" appearance="accent" class="font-monospace mb-2">LOG: DAY 03</wa-badge>
             <h1 class="display-4 fw-bold text-uppercase text-light mb-0" style="font-family: 'Audiowide';">Ship's Time</h1>
         </div>
         <div class="text-end text-white-50 font-monospace small">
@@ -70,7 +70,7 @@ $pageTitle = "Day 03: Ship's Time - Ad Astra Log";
                     <div slot="header" class=" border-bottom border-secondary text-secondary fw-bold font-monospace p-3">
                         <i class="fa-duotone fa-bed-bunk me-2"></i>BERTHING MANIFEST
                     </div>
-                    <div class="card-body">
+                    <div class="card-body p-4">
                         <ul class="list-group list-group-flush bg-transparent">
                             <li class="list-group-item bg-transparent text-white-50 border-bottom border-secondary border-opacity-25">
                                 <strong class="text-light d-block text-uppercase mb-1">Primary Berthing (King Module)</strong>
@@ -110,7 +110,7 @@ $pageTitle = "Day 03: Ship's Time - Ad Astra Log";
                 <div slot="header" class=" text-light fw-bold text-uppercase border-bottom border-secondary p-3">
                     <i class="fa-duotone fa-clock me-2"></i>Cycle Status
                 </div>
-                <div class="card-body text-white-50 small">
+                <div class="card-body text-white-50 small p-4">
                     <div class="d-flex align-items-center mb-3">
                         <i class="fa-solid fa-moon fa-2x text-primary me-3"></i>
                         <div>
@@ -130,7 +130,7 @@ $pageTitle = "Day 03: Ship's Time - Ad Astra Log";
 
             <!-- BEGIN: Personal Log Card -->
             <wa-card class="card bg-black border-secondary mb-4 w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
-                <div class="card-body">
+                <div class="card-body p-4">
                     <h6 class="text-secondary fw-bold text-uppercase mb-2">
                         <i class="fa-duotone fa-mug-hot me-2"></i>Personal Log
                     </h6>

@@ -38,112 +38,112 @@ $pageTitle = "The Phalanx - Crimson Node";
     <div class="row g-4">
         <!-- Matt Miller -->
         <div class="col-md-6 col-lg-4">
-            <div class="card h-100 border-0 shadow-sm" style="border-top: 5px solid #dc3545;">
+            <wa-card class="card h-100 border-0 shadow-sm w-100" style="border-top: 5px solid #dc3545; --body-padding: 0; --header-padding: 0;">
                 <a href="<?php echo $cdnBaseUrl; ?>/shiloh/images/characters/family/miller/david/matt-miller.jpg" target="_blank">
                     <img src="<?php echo $cdnBaseUrl; ?>/shiloh/images/thumbnails/family/miller/david/matt-miller-thumb.jpg" class="card-img-top rounded-0" alt="Portrait of Matt Miller" style="aspect-ratio: 1/1; object-fit: cover; object-position: center top;">
                 </a>
-                <div class="card-body">
+                <div class="card-body p-4">
                     <h4 class="card-title fw-bold">Matt Miller</h4>
                     <h6 class="card-subtitle mb-3 text-danger">The Crimson Node / Manager</h6>
                     <p class="card-text text-muted">The brilliant, systems-oriented architect of the band. Operating from his Tactile Command Rig, he is the core around which the entire compound orbits.</p>
-                    <a href="/engine-room/artists/crimson-node/characters/family/matt-miller" class="btn btn-outline-danger btn-sm">View Profile</a>
+                    <wa-button variant="danger" appearance="outlined" size="small" href="/engine-room/artists/crimson-node/characters/family/matt-miller">View Profile</wa-button>
                 </div>
-            </div>
+            </wa-card>
         </div>
 
         <!-- Sarah Miller -->
         <div class="col-md-6 col-lg-4">
-            <div class="card h-100 border-0 shadow-sm" style="border-top: 5px solid #0d6efd;">
+            <wa-card class="card h-100 border-0 shadow-sm w-100" style="border-top: 5px solid #0d6efd; --body-padding: 0; --header-padding: 0;">
                 <a href="<?php echo $cdnBaseUrl; ?>/shiloh/images/characters/family/miller/david/sarah-miller.jpg" target="_blank">
                     <img src="<?php echo $cdnBaseUrl; ?>/shiloh/images/thumbnails/family/miller/david/sarah-miller-thumb.jpg" class="card-img-top rounded-0" alt="Portrait of Sarah Miller" style="aspect-ratio: 1/1; object-fit: cover; object-position: center top;">
                 </a>
-                <div class="card-body">
+                <div class="card-body p-4">
                     <h4 class="card-title fw-bold">Sarah Miller</h4>
                     <h6 class="card-subtitle mb-3 text-primary">Co-Manager / Primary Protector</h6>
                     <p class="card-text text-muted">Standing 6'4", the "Charge Nurse" provides the absolute structural baseline for the family's joint-and-several medical and security architecture.</p>
-                    <a href="/engine-room/artists/crimson-node/characters/family/sarah-miller" class="btn btn-outline-primary btn-sm">View Profile</a>
+                    <wa-button variant="brand" appearance="outlined" size="small" href="/engine-room/artists/crimson-node/characters/family/sarah-miller">View Profile</wa-button>
                 </div>
-            </div>
+            </wa-card>
         </div>
 
         <!-- Shiloh Brooks -->
         <div class="col-md-6 col-lg-4">
-            <div class="card h-100 border-0 shadow-sm" style="border-top: 5px solid #0d6efd;">
+            <wa-card class="card h-100 border-0 shadow-sm w-100" style="border-top: 5px solid #0d6efd; --body-padding: 0; --header-padding: 0;">
                 <a href="<?php echo $cdnBaseUrl; ?>/shiloh/images/characters/family/brooks/casper/shiloh-brooks.jpg" target="_blank">
                     <img src="<?php echo $cdnBaseUrl; ?>/shiloh/images/thumbnails/family/brooks/casper/shiloh-brooks-thumb.jpg" class="card-img-top rounded-0" alt="Portrait of Shiloh Brooks" style="aspect-ratio: 1/1; object-fit: cover; object-position: center top;">
                 </a>
-                <div class="card-body">
+                <div class="card-body p-4">
                     <h4 class="card-title fw-bold">Shiloh Brooks</h4>
                     <h6 class="card-subtitle mb-3 text-primary">Rhythm Guitar / Player Two</h6>
                     <p class="card-text text-muted">Matt's 24/7 companion and trusted clinical technician. She anchors the band's rhythm section right next to his manual wheelchair.</p>
-                    <a href="/engine-room/artists/crimson-node/characters/family/shiloh-brooks" class="btn btn-outline-primary btn-sm">View Profile</a>
+                    <wa-button variant="brand" appearance="outlined" size="small" href="/engine-room/artists/crimson-node/characters/family/shiloh-brooks">View Profile</wa-button>
                 </div>
-            </div>
+            </wa-card>
         </div>
 
         <!-- Emily Miller -->
         <div class="col-md-6 col-lg-4">
-            <div class="card h-100 border-0 shadow-sm" style="border-top: 5px solid #ffc107;">
+            <wa-card class="card h-100 border-0 shadow-sm w-100" style="border-top: 5px solid #ffc107; --body-padding: 0; --header-padding: 0;">
                 <a href="<?php echo $cdnBaseUrl; ?>/shiloh/images/characters/family/miller/peter/emily-miller.jpg" target="_blank">
                     <img src="<?php echo $cdnBaseUrl; ?>/shiloh/images/thumbnails/family/miller/peter/emily-miller-thumb.jpg" class="card-img-top rounded-0" alt="Portrait of Emily Miller" style="aspect-ratio: 1/1; object-fit: cover; object-position: center top;">
                 </a>
-                <div class="card-body">
+                <div class="card-body p-4">
                     <h4 class="card-title fw-bold">Emily Miller</h4>
                     <h6 class="card-subtitle mb-3 text-warning">Lead Vocals / The Operator</h6>
                     <p class="card-text text-muted">A disciplined Navy brat who flawlessly executes military-style clinical transfers and delivers powerhouse 1980s arena-rock lead vocals.</p>
-                    <a href="/engine-room/artists/crimson-node/characters/family/emily-miller" class="btn btn-outline-warning btn-sm text-body-emphasis">View Profile</a>
+                    <wa-button variant="warning" appearance="outlined" size="small" href="/engine-room/artists/crimson-node/characters/family/emily-miller" class="text-body-emphasis">View Profile</wa-button>
                 </div>
-            </div>
+            </wa-card>
         </div>
 
         <!-- Jessica Brooks -->
         <div class="col-md-6 col-lg-4">
-            <div class="card h-100 border-0 shadow-sm" style="border-top: 5px solid #0dcaf0;">
+            <wa-card class="card h-100 border-0 shadow-sm w-100" style="border-top: 5px solid #0dcaf0; --body-padding: 0; --header-padding: 0;">
                 <a href="<?php echo $cdnBaseUrl; ?>/shiloh/images/characters/family/brooks/casper/jessica-brooks.jpg" target="_blank">
                     <img src="<?php echo $cdnBaseUrl; ?>/shiloh/images/thumbnails/family/brooks/casper/jessica-brooks-thumb.jpg" class="card-img-top rounded-0" alt="Portrait of Jessica Brooks" style="aspect-ratio: 1/1; object-fit: cover; object-position: center top;">
                 </a>
-                <div class="card-body">
+                <div class="card-body p-4">
                     <h4 class="card-title fw-bold">Jessica Brooks</h4>
                     <h6 class="card-subtitle mb-3 text-info">Bass & Synths / The Agent of Chaos</h6>
                     <p class="card-text text-muted">The unfiltered in-house SysAdmin. She commands the analog synthesizers and ruthlessly routes the compound's network to guarantee Matt absolute QoS.</p>
-                    <a href="/engine-room/artists/crimson-node/characters/family/jessica-brooks" class="btn btn-outline-info btn-sm text-body-emphasis">View Profile</a>
+                    <wa-button variant="brand" appearance="outlined" size="small" href="/engine-room/artists/crimson-node/characters/family/jessica-brooks" class="text-body-emphasis">View Profile</wa-button>
                 </div>
-            </div>
+            </wa-card>
         </div>
 
         <!-- Rachel Miller -->
         <div class="col-md-6 col-lg-4">
-            <div class="card h-100 border-0 shadow-sm" style="border-top: 5px solid #198754;">
+            <wa-card class="card h-100 border-0 shadow-sm w-100" style="border-top: 5px solid #198754; --body-padding: 0; --header-padding: 0;">
                 <a href="<?php echo $cdnBaseUrl; ?>/shiloh/images/characters/family/miller/peter/rachel-miller.jpg" target="_blank">
                     <img src="<?php echo $cdnBaseUrl; ?>/shiloh/images/thumbnails/family/miller/peter/rachel-miller-thumb.jpg" class="card-img-top rounded-0" alt="Portrait of Rachel Miller" style="aspect-ratio: 1/1; object-fit: cover; object-position: center top;">
                 </a>
-                <div class="card-body">
+                <div class="card-body p-4">
                     <h4 class="card-title fw-bold">Rachel Miller</h4>
                     <h6 class="card-subtitle mb-3 text-success">Drums / The Naval Artillery</h6>
                     <p class="card-text text-muted">Armed with a refined, highly articulate sailor mouth, she unleashes mathematically flawless artillery strikes on the acoustic drum kit.</p>
-                    <a href="/engine-room/artists/crimson-node/characters/family/rachel-miller" class="btn btn-outline-success btn-sm">View Profile</a>
+                    <wa-button variant="success" appearance="outlined" size="small" href="/engine-room/artists/crimson-node/characters/family/rachel-miller">View Profile</wa-button>
                 </div>
-            </div>
+            </wa-card>
         </div>
 
         <!-- Chloe Brooks -->
         <div class="col-md-6 col-lg-4">
-            <div class="card h-100 border-0 shadow-sm" style="border-top: 5px solid #6c757d;">
+            <wa-card class="card h-100 border-0 shadow-sm w-100" style="border-top: 5px solid #6c757d; --body-padding: 0; --header-padding: 0;">
                 <a href="<?php echo $cdnBaseUrl; ?>/shiloh/images/characters/family/brooks/casper/chloe-brooks.jpg" target="_blank">
                     <img src="<?php echo $cdnBaseUrl; ?>/shiloh/images/thumbnails/family/brooks/casper/chloe-brooks-thumb.jpg" class="card-img-top rounded-0" alt="Portrait of Chloe Brooks" style="aspect-ratio: 1/1; object-fit: cover; object-position: center top;">
                 </a>
-                <div class="card-body">
+                <div class="card-body p-4">
                     <h4 class="card-title fw-bold">Chloe Brooks</h4>
                     <h6 class="card-subtitle mb-3 text-secondary">Conservatory Flute / The Strategist</h6>
                     <p class="card-text text-muted">The academic anchor with absolute unbothered energy. She elevates the band's progressive sound with her premium classical woodwind training.</p>
-                    <a href="/engine-room/artists/crimson-node/characters/family/chloe-brooks" class="btn btn-outline-secondary btn-sm">View Profile</a>
+                    <wa-button variant="neutral" appearance="outlined" size="small" href="/engine-room/artists/crimson-node/characters/family/chloe-brooks">View Profile</wa-button>
                 </div>
-            </div>
+            </wa-card>
         </div>
 
         <!-- Elise & Elodie Pelletier (Double Width) -->
         <div class="col-lg-8">
-            <div class="card h-100 border-0 shadow-sm overflow-hidden" style="border-top: 5px solid #212529;">
+            <wa-card class="card h-100 border-0 shadow-sm overflow-hidden w-100" style="border-top: 5px solid #212529; --body-padding: 0; --header-padding: 0;">
                 <div class="row g-0 h-100">
                     <div class="col-md-5 col-lg-4">
                         <a href="<?php echo $cdnBaseUrl; ?>/shiloh/images/characters/ccc/pelletier/elise-elodie-pelletier.jpg" target="_blank" class="d-block h-100">
@@ -151,7 +151,7 @@ $pageTitle = "The Phalanx - Crimson Node";
                         </a>
                     </div>
                     <div class="col-md-7 col-lg-8">
-                        <div class="card-body h-100 d-flex flex-column justify-content-center">
+                        <div class="card-body h-100 d-flex flex-column justify-content-center p-4">
                     <h4 class="card-title fw-bold mb-1">Elise & Elodie Pelletier</h4>
                     <h6 class="card-subtitle mb-4 text-body-emphasis">Guest Vocals / Honorary Flock / Life Partners</h6>
                     
@@ -165,12 +165,12 @@ $pageTitle = "The Phalanx - Crimson Node";
                     </div>
 
                     <div class="mt-4">
-                        <a href="/engine-room/artists/crimson-node/characters/family/the-pelletier-twins" class="btn btn-outline-secondary btn-sm">View Unified Profile</a>
+                        <wa-button variant="neutral" appearance="outlined" size="small" href="/engine-room/artists/crimson-node/characters/family/the-pelletier-twins">View Unified Profile</wa-button>
                     </div>
                         </div>
                     </div>
                 </div>
-            </div>
+            </wa-card>
         </div>
 
     </div>

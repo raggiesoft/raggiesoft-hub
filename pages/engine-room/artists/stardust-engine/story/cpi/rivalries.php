@@ -47,9 +47,9 @@ $nav = [
     <!-- [HERO HEADER] Chapter 5 Title & Subtitle -->
     <div class="row justify-content-center mb-5">
         <div class="col-lg-9 text-center">
-            <span class="badge bg-primary text-white rounded-pill px-3 py-2 shadow-sm mb-3 text-uppercase fw-bold">
+            <wa-badge variant="brand" appearance="accent" pill class="px-3 py-2 shadow-sm mb-3 text-uppercase fw-bold">
                 <i class="fa-duotone fa-helmet-battle me-2"></i>Chapter 5 of 5 // Athletic Rivalries Archive
-            </span>
+            </wa-badge>
             <h1 class="display-3 fw-bold text-uppercase text-body-emphasis mb-0" style="font-family: 'Impact', sans-serif;">
                 Blood Feuds of the Commonwealth
             </h1>
@@ -74,10 +74,10 @@ $nav = [
                 <div class="row g-3">
                     <!-- Rivalry 1: VPU -->
                     <div class="col-md-4">
-                        <div class="card h-100 bg-body-tertiary shadow-sm border-top border-4 border-secondary">
+                        <wa-card class="card h-100 bg-body-tertiary shadow-sm border-top border-4 border-secondary w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
                             <div class="card-body p-4">
                                 <div class="d-flex justify-content-between align-items-center mb-2">
-                                    <span class="badge bg-secondary font-monospace">THE OLD GUARD</span>
+                                    <wa-badge variant="neutral" appearance="accent" class="font-monospace">THE OLD GUARD</wa-badge>
                                     <span class="small text-muted font-monospace">EST. 1895</span>
                                 </div>
                                 <h3 class="h5 fw-bold mb-1">Virginia Piedmont Univ. (VPU)</h3>
@@ -86,15 +86,15 @@ $nav = [
                                     Blue-collar Appalachian engineering versus Charlottesville patrician tradition. During a freezing November 1989 clash against VPU, students stomping heavy winter boots on <strong>The Anvil's</strong> steel bleachers birthed <strong>"The Stomp"</strong> and the deafening <strong>"IGNITION!"</strong> crowd chant.
                                 </p>
                             </div>
-                        </div>
+                        </wa-card>
                     </div>
 
                     <!-- Rivalry 2: MSU -->
                     <div class="col-md-4">
-                        <div class="card h-100 bg-body-tertiary shadow-sm border-top border-4 border-warning">
+                        <wa-card class="card h-100 bg-body-tertiary shadow-sm border-top border-4 border-warning w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
                             <div class="card-body p-4">
                                 <div class="d-flex justify-content-between align-items-center mb-2">
-                                    <span class="badge bg-warning text-dark font-monospace">BORDER WAR</span>
+                                    <wa-badge variant="warning" appearance="accent" class="font-monospace">BORDER WAR</wa-badge>
                                     <span class="small text-muted font-monospace">BLACK ANVIL</span>
                                 </div>
                                 <h3 class="h5 fw-bold mb-1">Monongahela State (MSU)</h3>
@@ -103,15 +103,15 @@ $nav = [
                                     <strong>"The Coal &amp; Iron War."</strong> A bruising Appalachian border blood feud. On <strong>Saturday, October 8, 2004</strong>, CPI upset <strong>#6 MSU (19–13)</strong> on the night <a href="/engine-room/artists/stardust-engine/story/crucible/anthems-and-redline#saturday-night-lights-debut"><em>"Saturday Night Lights: The Crucible"</em></a> secretly premiered at the start of the 4th quarter.
                                 </p>
                             </div>
-                        </div>
+                        </wa-card>
                     </div>
 
                     <!-- Rivalry 3: VDU -->
                     <div class="col-md-4">
-                        <div class="card h-100 bg-body-tertiary shadow-sm border-top border-4 border-danger">
+                        <wa-card class="card h-100 bg-body-tertiary shadow-sm border-top border-4 border-danger w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
                             <div class="card-body p-4">
                                 <div class="d-flex justify-content-between align-items-center mb-2">
-                                    <span class="badge bg-danger text-white font-monospace">THE BLOOD FEUD</span>
+                                    <wa-badge variant="danger" appearance="accent" class="font-monospace">THE BLOOD FEUD</wa-badge>
                                     <span class="small text-muted font-monospace">2014 – 2015</span>
                                 </div>
                                 <h3 class="h5 fw-bold mb-1">Virginia Dominion (VDU)</h3>
@@ -120,7 +120,7 @@ $nav = [
                                     <strong>"The Hammer vs. The Crown."</strong> Back-to-back Homecoming shutouts in 2014 (<code>38–0 VDU</code>) and 2015 (<code>52–0 CPI</code>) turned the upstart Monarchs from Hampton Roads into a personal blood feud that eclipsed the century-old VPU series.
                                 </p>
                             </div>
-                        </div>
+                        </wa-card>
                     </div>
                 </div>
             </div>
@@ -132,7 +132,7 @@ $nav = [
                         <h2 class="h3 fw-bold mb-0" style="color: var(--cpi-maroon, #630031);">
                             <i class="fa-duotone fa-helmet-battle me-2"></i>2. The Hammer vs. The Crown: The 2014–2015 VDU Homecoming Shutout War
                         </h2>
-                        <span class="badge bg-danger text-white font-monospace">2014 – 2015 ARCHIVE</span>
+                        <wa-badge variant="danger" appearance="accent" class="font-monospace">2014 – 2015 ARCHIVE</wa-badge>
                     </div>
                     <p class="lead mt-2 mb-0">
                         How back-to-back Homecoming shutouts turned <strong>Virginia Dominion University ("Norfolk")</strong> into the most combustible rivalry in Commonwealth sports history.
@@ -146,10 +146,10 @@ $nav = [
                 <div class="row g-4 my-3">
                     <!-- Act I: 2014 CPI Homecoming -->
                     <div class="col-md-6">
-                        <div class="card h-100 bg-body-tertiary shadow-sm border-danger border-2">
-                            <div class="card-header bg-danger text-white fw-bold d-flex justify-content-between align-items-center">
+                        <wa-card class="card h-100 bg-body-tertiary shadow-sm border-danger border-2 w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
+                            <div class="card-header bg-danger text-white fw-bold d-flex justify-content-between align-items-center p-3">
                                 <span><i class="fa-solid fa-crown me-2"></i>Act I: "The Homecoming Humiliation"</span>
-                                <span class="badge bg-dark font-monospace">SEPT 27, 2014</span>
+                                <wa-badge variant="neutral" appearance="accent" class="font-monospace">SEPT 27, 2014</wa-badge>
                             </div>
                             <div class="card-body p-4">
                                 <div class="d-flex justify-content-between align-items-center bg-body p-3 rounded border mb-3 font-monospace">
@@ -158,7 +158,7 @@ $nav = [
                                         <div class="fw-bold fs-5">VDU Monarchs</div>
                                     </div>
                                     <div class="text-end">
-                                        <span class="badge bg-danger fs-5 px-3 py-2">38</span>
+                                        <wa-badge variant="danger" appearance="accent" class="fs-5 px-3 py-2">38</wa-badge>
                                     </div>
                                 </div>
                                 <div class="d-flex justify-content-between align-items-center bg-body p-3 rounded border mb-3 font-monospace">
@@ -167,7 +167,7 @@ $nav = [
                                         <div class="fw-bold fs-5">CPI Forgers</div>
                                     </div>
                                     <div class="text-end">
-                                        <span class="badge bg-secondary fs-5 px-3 py-2">0</span>
+                                        <wa-badge variant="neutral" appearance="accent" class="fs-5 px-3 py-2">0</wa-badge>
                                     </div>
                                 </div>
                                 <p class="small text-body mb-2">
@@ -177,15 +177,15 @@ $nav = [
                                     <strong>The Collapse:</strong> After CPI marched down the field on the opening drive only to push a chip-shot field goal wide left, VDU's unflashy, brute-force rushing attack systematically ground down the #3 Forgers. Eating the clock 4 and 5 yards at a time, VDU stunned the 65,000-strong crowd to lead <strong>7–0</strong> after the first quarter and <strong>24–0 at halftime</strong> (after recovering a CPI fumble inside the final minute of the half). Thousands of stunned fans streamed for the exits as the Marching Forgers took the field, and VDU poured it on in the second half to seal a historic <strong>38–0 shutout</strong> inside The Crucible.
                                 </p>
                             </div>
-                        </div>
+                        </wa-card>
                     </div>
 
                     <!-- Act II: 2015 VDU Homecoming -->
                     <div class="col-md-6">
-                        <div class="card h-100 bg-body-tertiary shadow-sm border-warning border-2">
-                            <div class="card-header fw-bold d-flex justify-content-between align-items-center" style="background-color: var(--cpi-maroon, #630031); color: #fff;">
+                        <wa-card class="card h-100 bg-body-tertiary shadow-sm border-warning border-2 w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
+                            <div class="card-header fw-bold d-flex justify-content-between align-items-center p-3" style="background-color: var(--cpi-maroon, #630031); color: #fff;">
                                 <span><i class="fa-solid fa-hammer me-2 text-warning"></i>Act II: "The Norfolk Reckoning"</span>
-                                <span class="badge bg-warning text-dark font-monospace">OCT 2015</span>
+                                <wa-badge variant="warning" appearance="accent" class="font-monospace">OCT 2015</wa-badge>
                             </div>
                             <div class="card-body p-4">
                                 <div class="d-flex justify-content-between align-items-center bg-body p-3 rounded border mb-3 font-monospace">
@@ -194,7 +194,7 @@ $nav = [
                                         <div class="fw-bold fs-5">CPI Forgers</div>
                                     </div>
                                     <div class="text-end">
-                                        <span class="badge bg-success fs-5 px-3 py-2">52</span>
+                                        <wa-badge variant="success" appearance="accent" class="fs-5 px-3 py-2">52</wa-badge>
                                     </div>
                                 </div>
                                 <div class="d-flex justify-content-between align-items-center bg-body p-3 rounded border mb-3 font-monospace">
@@ -203,7 +203,7 @@ $nav = [
                                         <div class="fw-bold fs-5">VDU Monarchs</div>
                                     </div>
                                     <div class="text-end">
-                                        <span class="badge bg-secondary fs-5 px-3 py-2">0</span>
+                                        <wa-badge variant="neutral" appearance="accent" class="fs-5 px-3 py-2">0</wa-badge>
                                     </div>
                                 </div>
                                 <p class="small text-body mb-2">
@@ -213,19 +213,19 @@ $nav = [
                                     <strong>The Receipts:</strong> CPI's players and coaching staff had spent 365 days staring at the <code>0–38</code> scoreboard stenciled onto every weight-room mirror in Blacksburg. Refusing to take their foot off the gas for sixty minutes, the Forgers walked into VDU's Homecoming party in Norfolk and delivered a merciless, retaliatory <strong>52–0 shutout blowout</strong>—refusing to kick field goals, keeping their starting defense on the field until the final whistle to preserve the goose egg, and handing VDU an even larger Homecoming shutout humiliation on their own turf.
                                 </p>
                             </div>
-                        </div>
+                        </wa-card>
                     </div>
                 </div>
 
                 <!-- Cross-Universe Narrative Connection: The Aubrie Chronicles & Live at The Crucible (2016) -->
-                <div class="alert alert-info border-info-subtle text-info-emphasis shadow-sm mt-3 mb-0 p-4">
+                <wa-callout variant="brand" appearance="accent" class="shadow-sm mt-3 mb-0 p-4 d-block">
                     <h3 class="h6 fw-bold text-uppercase mb-2">
                         <i class="fa-duotone fa-book-sparkles me-2"></i>Cross-Universe Narrative Connection: <em>The Aubrie Chronicles</em> &amp; Reclaiming The Crucible (2016)
                     </h3>
                     <p class="small mb-0">
                         In RaggieSoft's literary canon (<em>The Aubrie Chronicles</em>), the <strong>September 27, 2014 Homecoming Humiliation (38–0)</strong> was the traumatic freshman-year game where Jordan Shawn Kelly—watching his new Blacksburg sanctuary get dismantled by the team from his abusive mother's Hampton Roads backyard—suffered a devastating halftime meltdown and fled back to Bennett Hall Suite 214 with the Group of 8. Jordan did not set foot inside The Crucible again for nearly two years—until <strong>Saturday, May 21, 2016</strong>, when <strong>The Stardust Engine</strong> returned home to Blacksburg to film and record <strong><em>Live at The Crucible</em></strong>, overwriting the ghost of the <code>38–0</code> scoreboard beneath a tidal wave of 65,000 fans singing <em>"Electric Color"</em> in unison.
                     </p>
-                </div>
+                </wa-callout>
             </div>
 
             <!-- [NAVIGATION] Sequential Chapter Stepper -->

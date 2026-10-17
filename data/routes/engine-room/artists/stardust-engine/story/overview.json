@@ -17,6 +17,62 @@
     "title": "The Story of The Stardust Engine",
     "ogDescription": "Explore the epic narrative behind The Stardust Engine, from their rise in the 80s synth-rock scene to the corporate intrigue that shaped their journey."
   },
+  "/engine-room/artists/stardust-engine/story/analogue-heart/the-noise-floor": {
+    "view": "pages/engine-room/artists/stardust-engine/story/analogue-heart/the-noise-floor",
+    "showSidebar": true,
+    "sidebar": "sidebar-stories",
+    "title": "The Noise Floor (1987) | The Stardust Engine",
+    "ogDescription": "How The Stardust Engine used acoustic shielding and analog tape saturation during the 1987 Analogue Heart sessions to protect Ryan O'Connell from sensory overload."
+  },
+  "/engine-room/artists/stardust-engine/story/hard-reset/the-album/the-1399-war": {
+    "view": "pages/engine-room/artists/stardust-engine/story/hard-reset/the-album/the-1399-war",
+    "showSidebar": true,
+    "sidebar": "sidebar-stories",
+    "title": "The $13.99 War (1997) | The Stardust Engine",
+    "ogDescription": "How Holly O'Connell defied 1990s major-label CD price-fixing by stamping $13.99 directly into the spine artwork of Hard Reset (1997)."
+  },
+  "/engine-room/artists/stardust-engine/story/the-1399-war": {
+    "view": "pages/engine-room/artists/stardust-engine/story/hard-reset/the-album/the-1399-war",
+    "showSidebar": true,
+    "sidebar": "sidebar-stories",
+    "title": "The $13.99 War (1997) | The Stardust Engine",
+    "ogDescription": "How Holly O'Connell defied 1990s major-label CD price-fixing by stamping $13.99 directly into the spine artwork of Hard Reset (1997)."
+  },
+  "/engine-room/artists/stardust-engine/story/hard-reset/hard-reset-tour/london-discovery": {
+    "view": "pages/engine-room/artists/stardust-engine/story/hard-reset/hard-reset-tour/london-discovery",
+    "showSidebar": true,
+    "sidebar": "sidebar-stories",
+    "title": "The London Discovery (1999) | The Stardust Engine",
+    "ogDescription": "How Holly O'Connell uncovered the decaying Carnaby Street archives and rescued the master tapes of Fractured Prisms during the 1999 European tour."
+  },
+  "/engine-room/artists/stardust-engine/story/hard-reset-tour/london-discovery": {
+    "view": "pages/engine-room/artists/stardust-engine/story/hard-reset/hard-reset-tour/london-discovery",
+    "showSidebar": true,
+    "sidebar": "sidebar-stories",
+    "title": "The London Discovery (1999) | The Stardust Engine",
+    "ogDescription": "How Holly O'Connell uncovered the decaying Carnaby Street archives and rescued the master tapes of Fractured Prisms during the 1999 European tour."
+  },
+  "/engine-room/history/london-discovery": {
+    "view": "pages/engine-room/artists/stardust-engine/story/hard-reset/hard-reset-tour/london-discovery",
+    "showSidebar": true,
+    "sidebar": "sidebar-stories",
+    "title": "The London Discovery (1999) | Engine Room Records",
+    "ogDescription": "How Holly O'Connell uncovered the decaying Carnaby Street archives and rescued the master tapes of Fractured Prisms during the 1999 European tour."
+  },
+  "/engine-room/artists/stardust-engine/story/hard-reset/hard-reset-tour/paternoster-incident": {
+    "view": "pages/engine-room/artists/stardust-engine/story/hard-reset/hard-reset-tour/paternoster-incident",
+    "showSidebar": true,
+    "sidebar": "sidebar-stories",
+    "title": "The Paternoster Incident (1999) | The Stardust Engine",
+    "ogDescription": "The harrowing 1999 European tour accessibility crisis involving a historic paternoster elevator that reshaped Engine Room Records' international touring riders."
+  },
+  "/engine-room/artists/stardust-engine/story/hard-reset-tour/paternoster-incident": {
+    "view": "pages/engine-room/artists/stardust-engine/story/hard-reset/hard-reset-tour/paternoster-incident",
+    "showSidebar": true,
+    "sidebar": "sidebar-stories",
+    "title": "The Paternoster Incident (1999) | The Stardust Engine",
+    "ogDescription": "The harrowing 1999 European tour accessibility crisis involving a historic paternoster elevator that reshaped Engine Room Records' international touring riders."
+  },
   "/engine-room/artists/stardust-engine/story/2015-delaware-migration": {
     "view": "pages/engine-room/artists/stardust-engine/story/2015-delaware-migration",
     "showSidebar": true,

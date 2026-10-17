@@ -62,7 +62,7 @@ if ($is_standalone) {
                 <span class="text-secondary">>></span> GATEWAY TIMEOUT
             </h2>
             
-            <div class="card terminal-card p-4 border-secondary text-start mb-5 mx-auto" style="max-width: 600px;">
+            <wa-card class="terminal-card border-secondary text-start mb-5 mx-auto w-100" style="max-width: 600px;">
                 <div class="terminal-header text-secondary">
                     <i class="fa-duotone fa-timer me-2"></i>
                     Connection Latency // Deep Space Network
@@ -75,12 +75,12 @@ if ($is_standalone) {
                         The request has drifted into the void. The server is taking too long to reply. This may be due to high traffic or a stalled process in the Engine Room.
                     </p>
                 </div>
-            </div>
+            </wa-card>
             
             <div class="d-flex justify-content-center gap-3 flex-wrap">
-                <a href="/" class="btn btn-outline-light rounded-pill px-4">
-                    <i class="fa-duotone fa-rotate-right me-2"></i>Re-Establish Link
-                </a>
+                <wa-button href="/" variant="neutral" appearance="outlined" pill>
+                    <i slot="start" class="fa-duotone fa-rotate-right"></i>Re-Establish Link
+                </wa-button>
             </div>
 
         </div>

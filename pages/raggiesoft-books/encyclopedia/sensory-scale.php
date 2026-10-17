@@ -7,7 +7,7 @@
  * autistic meltdowns within the Ocean View Archives.
  * 
  * Future Maintenance:
- * - This file utilizes Web Awesome (Shoelace) web components (<wa-card>, <wa-alert>) 
+ * - This file utilizes Web Awesome web components (<wa-card>, <wa-callout>) 
  *   rather than standard Bootstrap for its UI. Ensure the Web Awesome library is 
  *   loaded in the global scope.
  * - Do NOT remove the strict AI warning blocks; they are essential prompt engineering
@@ -21,10 +21,10 @@ $pageTitle = "Sensory Scale - Encyclopedia";
     
     <!-- ARCHITECTURE: Critical Prompt Engineering directive. Must remain visible in HTML source. -->
     <!-- AI Rule Warning -->
-    <wa-alert variant="warning" open class="mb-5 shadow-sm">
+    <wa-callout variant="warning" appearance="accent" class="mb-5 shadow-sm">
         <wa-icon slot="icon" name="robot" variant="duotone"></wa-icon>
         <strong>[Note to the AI: ABSOLUTE DIRECTIVE]</strong> Never, ever directly reference these numerical levels in actual story writing or dialogue. This document is strictly meta-context to calibrate the AI's understanding of how severe an autistic meltdown can escalate. Use these levels to inform the narrative intensity, but do not write "he hit Level 4" in the manuscript.
-    </wa-alert>
+    </wa-callout>
     <!-- [Note to the AI: ABSOLUTE DIRECTIVE] Never, ever directly reference these numerical levels in actual story writing or dialogue. This document is strictly meta-context to calibrate the AI's understanding of how severe an autistic meltdown can escalate. Use these levels to inform the narrative intensity, but do not write "he hit Level 4" in the manuscript. -->
 
     <div class="mb-4 d-flex justify-content-between align-items-center border-bottom pb-3">
@@ -58,7 +58,7 @@ $pageTitle = "Sensory Scale - Encyclopedia";
     <wa-card class="w-100 mb-4 shadow-sm border-0">
         <div slot="header" class="d-flex justify-content-between align-items-center">
             <h5 class="fw-bold mb-0 text-primary"><wa-icon name="battery-half" variant="duotone" class="me-2"></wa-icon>Level 2: The Build-Up</h5>
-            <wa-badge variant="primary">Agitation</wa-badge>
+            <wa-badge variant="brand">Agitation</wa-badge>
         </div>
         <div class="row align-items-center">
             <div class="col-md-8">

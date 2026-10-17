@@ -26,7 +26,7 @@
 // pages/family/amanda-elara.php
 // Theme: RaggieSoft (Clean, Human, Green)
 ?>
-<div class="card mb-5 border-0 shadow-sm overflow-hidden bg-body-tertiary">
+<wa-card class="card mb-5 border-0 shadow-sm overflow-hidden bg-body-tertiary w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
     <div class="row g-0">
         <div class="col-lg-4 position-relative" style="min-height: 300px;">
             <img src="<?php echo $cdnBaseUrl; ?>/family/images/atmospheric/amanda-elara.jpg" 
@@ -39,12 +39,12 @@
         <div class="col-lg-8 d-flex align-items-center">
             <div class="card-body p-4 p-lg-5">
                 <div class="d-flex align-items-center mb-3">
-                    <span class="badge text-white me-2" style="background-color: var(--family-amanda);">
+                    <wa-badge variant="neutral" appearance="accent" class="me-2" style="background-color: var(--family-amanda);">
                         <i class="fa-duotone fa-route me-2"></i>amanda/elara.php
-                    </span>
-                    <span class="badge border bg-transparent" style="border-color: var(--family-amanda) !important; color: var(--family-amanda) !important;">
+                    </wa-badge>
+                    <wa-badge variant="neutral" appearance="outlined" style="border-color: var(--family-amanda) !important; color: var(--family-amanda) !important;">
                         Web Root & Router
-                    </span>
+                    </wa-badge>
                 </div>
                 
                 <h1 class="display-4 fw-bold mb-2 text-body">Amanda & Elara</h1>
@@ -70,11 +70,11 @@
                     <div class="mt-2 pt-2 border-top border-light">
                         <div class="d-flex justify-content-between mb-1">
                             <span class="small text-muted">Amanda:</span>
-                            <span class="badge bg-secondary bg-opacity-10 text-dark border">Non-Speaking (Apraxia)</span>
+                            <wa-badge variant="neutral" appearance="filled-outlined">Non-Speaking (Apraxia)</wa-badge>
                         </div>
                         <div class="d-flex justify-content-between">
                             <span class="small text-muted">Elara:</span>
-                            <span class="badge bg-secondary bg-opacity-10 text-dark border">Hyperlexic</span>
+                            <wa-badge variant="neutral" appearance="filled-outlined">Hyperlexic</wa-badge>
                         </div>
                     </div>
                 </div>
@@ -82,7 +82,7 @@
             </div>
         </div>
     </div>
-</div>
+</wa-card>
 
 <div class="row g-5 mb-5">
     <div class="col-md-12 col-xl-6">
@@ -117,11 +117,11 @@
 
 <div class="row">
     <div class="col-12">
-        <div class="card shadow-lg font-monospace theme-terminal" style="border-color: var(--family-amanda) !important;">
-            <div class="card-header fw-bold d-flex justify-content-between align-items-center" 
+        <wa-card class="card shadow-lg font-monospace theme-terminal w-100" style="border-color: var(--family-amanda) !important; --body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
+            <div class="card-header fw-bold d-flex justify-content-between align-items-center p-3" 
                  style="background-color: rgba(32, 201, 151, 0.15); border-bottom: 1px solid var(--family-amanda); color: var(--family-amanda);">
                 <span><i class="fa-duotone fa-shield-keyhole me-2"></i>/etc/nginx/sites-available/raggiesoft</span>
-                <span class="badge text-dark" style="background-color: var(--family-amanda);">SECURE</span>
+                <wa-badge variant="neutral" appearance="accent" style="background-color: var(--family-amanda);">SECURE</wa-badge>
             </div>
             <div class="card-body p-4">
                 <div style="opacity: 1;">
@@ -153,6 +153,6 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </wa-card>
     </div>
 </div>

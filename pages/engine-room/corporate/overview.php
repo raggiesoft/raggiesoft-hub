@@ -42,8 +42,8 @@ $pageTitle = "Corporate Gateway - The O'Connell Family Trust";
     <div class="row g-4 mb-5">
         
         <div class="col-md-4">
-            <div class="card h-100 border-primary border-top-4 shadow-sm">
-                <div class="card-body">
+            <wa-card class="card h-100 border-primary border-top-4 shadow-sm w-100" style="--body-padding: 0; --header-padding: 0;">
+                <div class="card-body p-4">
                     <div class="mb-3 text-primary">
                         <i class="fa-duotone fa-sitemap fa-2x"></i>
                     </div>
@@ -51,14 +51,14 @@ $pageTitle = "Corporate Gateway - The O'Connell Family Trust";
                     <p class="card-text text-muted small">
                         The "Iceberg" Model. How we compartmentalize liability and protect the family's core assets from external threats.
                     </p>
-                    <a href="/engine-room/corporate/structure" class="btn btn-outline-primary btn-sm stretched-link">View Architecture</a>
+                    <wa-button variant="brand" appearance="outlined" size="small" href="/engine-room/corporate/structure" class="stretched-link">View Architecture</wa-button>
                 </div>
-            </div>
+            </wa-card>
         </div>
 
         <div class="col-md-4">
-            <div class="card h-100 border-danger border-top-4 shadow-sm">
-                <div class="card-body">
+            <wa-card class="card h-100 border-danger border-top-4 shadow-sm w-100" style="--body-padding: 0; --header-padding: 0;">
+                <div class="card-body p-4">
                     <div class="mb-3 text-danger">
                         <i class="fa-duotone fa-gavel fa-2x"></i>
                     </div>
@@ -66,14 +66,14 @@ $pageTitle = "Corporate Gateway - The O'Connell Family Trust";
                     <p class="card-text text-muted small">
                         <strong>Aethelgard Holdings.</strong> Our strategic acquisition arm. We acquire distressed companies to liberate their assets.
                     </p>
-                    <a href="/engine-room/corporate/aethelgard" class="btn btn-outline-danger btn-sm stretched-link">Review Strategy</a>
+                    <wa-button variant="danger" appearance="outlined" size="small" href="/engine-room/corporate/aethelgard" class="stretched-link">Review Strategy</wa-button>
                 </div>
-            </div>
+            </wa-card>
         </div>
 
         <div class="col-md-4">
-            <div class="card h-100 border-success border-top-4 shadow-sm">
-                <div class="card-body">
+            <wa-card class="card h-100 border-success border-top-4 shadow-sm w-100" style="--body-padding: 0; --header-padding: 0;">
+                <div class="card-body p-4">
                     <div class="mb-3 text-success">
                         <i class="fa-duotone fa-users-viewfinder fa-2x"></i>
                     </div>
@@ -81,14 +81,14 @@ $pageTitle = "Corporate Gateway - The O'Connell Family Trust";
                     <p class="card-text text-muted small">
                         <strong>The Miller Unit.</strong> Meet the Directors of the Jessica Miller Center and the architects of our daily operations.
                     </p>
-                    <a href="/engine-room/corporate/leadership" class="btn btn-outline-success btn-sm stretched-link">Meet the Directors</a>
+                    <wa-button variant="success" appearance="outlined" size="small" href="/engine-room/corporate/leadership" class="stretched-link">Meet the Directors</wa-button>
                 </div>
-            </div>
+            </wa-card>
         </div>
 
     </div>
 
-    <div class="card bg-dark text-white shadow-lg mb-5 overflow-hidden">
+    <wa-card class="card bg-dark text-white shadow-lg mb-5 overflow-hidden w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
         <div class="row g-0">
             <div class="col-md-8 p-5">
                 <h3 class="fw-bold text-info mb-3">
@@ -99,12 +99,12 @@ $pageTitle = "Corporate Gateway - The O'Connell Family Trust";
                     <br><small class="text-info">*Restricted to Level 5 Clearance (Justin Miller).</small>
                 </p>
                 <div class="d-flex gap-3 mt-4">
-                    <a href="/engine-room/corporate/systems" class="btn btn-info fw-bold">
-                        <i class="fa-solid fa-terminal me-2"></i>Systems Console
-                    </a>
-                    <a href="/engine-room/corporate/fleet" class="btn btn-outline-light">
-                        <i class="fa-solid fa-bus me-2"></i>Fleet Command
-                    </a>
+                    <wa-button variant="brand" appearance="accent" href="/engine-room/corporate/systems" class="fw-bold">
+                        <i slot="start" class="fa-solid fa-terminal"></i>Systems Console
+                    </wa-button>
+                    <wa-button variant="neutral" appearance="outlined" href="/engine-room/corporate/fleet">
+                        <i slot="start" class="fa-solid fa-bus"></i>Fleet Command
+                    </wa-button>
                 </div>
             </div>
             <div class="col-md-4 bg-black d-flex align-items-center justify-content-center p-4">
@@ -116,7 +116,7 @@ $pageTitle = "Corporate Gateway - The O'Connell Family Trust";
                 </div>
             </div>
         </div>
-    </div>
+    </wa-card>
 
     <div class="text-center text-muted small fst-italic">
         <p>"Money is just the fuel. The music is the destination." — Cassidy O'Connell</p>

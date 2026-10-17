@@ -58,7 +58,7 @@
                 <h6 class="text-uppercase fw-bold border-bottom border-secondary-subtle pb-2 mb-3">Business & Licensing</h6>
                 <ul class="list-unstyled small mb-0">
                     <li class="mb-2">
-                        <a href="/engine-room/commercial-licensing" class="text-decoration-none text-body-secondary hover-text-primary">
+                        <a href="/raggiesoft-media/licensing/commercial" class="text-decoration-none text-body-secondary hover-text-primary">
                             <i class="fa-solid fa-handshake me-2 text-primary "></i>Commercial Portal
                         </a>
                     </li>
@@ -119,7 +119,7 @@
                     compliance in both light and dark themes. Discloses AI Persona roster 
                     and Microsoft Exchange transport-level automated deletion of unsolicited work.
                 -->
-                <wa-callout variant="danger" appearance="accent" size="s" class="text-start shadow-sm mb-0">
+                <wa-callout variant="danger" appearance="accent" size="small" class="text-start shadow-sm mb-0">
                     <wa-icon slot="icon" name="shield-xmark" variant="solid"></wa-icon>
                     <strong class="d-block mb-1">Closed System &bull; No Submissions</strong>
                     <div class="small">

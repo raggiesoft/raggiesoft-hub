@@ -162,14 +162,14 @@ $imagesJson = htmlspecialchars(json_encode($heroImages), ENT_QUOTES, 'UTF-8');
                     The grounded, real-world archives of RaggieSoft Media.
                 </p>
                 <div class="mt-4">
-                    <a href="/raggiesoft-books/image-library" class="btn btn-outline-light px-4 py-2 fw-bold" style="border-radius: 50px;">
-                        <i class="ph-fill ph-images"></i> View Image Library
-                    </a>
+                    <wa-button href="/raggiesoft-books/image-library" variant="neutral" appearance="outlined" pill class="fw-bold">
+                        <i slot="start" class="ph-fill ph-images"></i> View Image Library
+                    </wa-button>
                 </div>
                 <div class="mt-4">
-                    <form action="/raggiesoft-books/search" method="GET" class="d-flex bg-white rounded-pill overflow-hidden mx-auto shadow-sm" style="max-width: 500px;">
+                    <form action="/raggiesoft-books/search" method="GET" class="d-flex align-items-center bg-white rounded-pill overflow-hidden mx-auto shadow-sm" style="max-width: 500px;">
                         <input type="text" name="q" class="form-control border-0 px-4 py-2" placeholder="Search characters, quotes, or lore..." style="box-shadow: none; outline: none; background: transparent;">
-                        <button type="submit" class="btn btn-primary px-4 fw-bold m-1 rounded-pill">Search</button>
+                        <wa-button type="submit" variant="brand" appearance="accent" pill class="fw-bold m-1">Search</wa-button>
                     </form>
                 </div>
             </div>
@@ -233,7 +233,7 @@ $imagesJson = htmlspecialchars(json_encode($heroImages), ENT_QUOTES, 'UTF-8');
                     'buttonProps' => [
                         'href' => 'https://books.raggiesoft.com/' . $slug,
                         'text' => 'Read Series',
-                        'variant' => 'primary', 
+                        'variant' => 'brand', 
                         'icon' => 'fa-duotone fa-book-open-cover',
                         'fullWidth' => true
                     ]
@@ -246,6 +246,7 @@ $imagesJson = htmlspecialchars(json_encode($heroImages), ENT_QUOTES, 'UTF-8');
         endif;
         ?>
     </div>
-</div> <!-- End content-wrapper -->
+        </div> <!-- End container -->
+    </div> <!-- End content-wrapper -->
 </div> <!-- End immersive-container -->
 <script src="<?php echo $cdnBaseUrl; ?>/common/js/hero-image.js"></script>

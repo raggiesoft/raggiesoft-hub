@@ -69,8 +69,8 @@ $personSchema = [
                 She famously refused to speak to *any* press for three years (1992-1995), communicating only through her lyrics on *The Warehouse Tapes*. Songs like "The Cage" and "Ad Astra" are her direct response to the trauma: a declaration that she would rather flee to the stars than sell her soul on Earth.
             </p>
 
-            <div class="card bg-dark bg-opacity-75 border-success shadow-lg mt-5 overflow-hidden">
-                <div class="card-header bg-success bg-opacity-25 text-white fw-bold border-bottom border-success">
+            <wa-card class="card bg-dark bg-opacity-75 border-success shadow-lg mt-5 overflow-hidden w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
+                <div class="card-header bg-success bg-opacity-25 text-white fw-bold border-bottom border-success p-3">
                     <i class="fa-duotone fa-ticket me-2"></i>CONFIDENTIAL: The "American Dream" (1996)
                 </div>
                 <div class="card-body p-4">
@@ -85,7 +85,7 @@ $personSchema = [
                         She didn't scream. She walked into the kitchen, handed the ticket to her sister Holly, and said, "Build us a fortress so we never have to be hurt again." The jackpot was <strong>$2.04 Billion</strong>.
                     </p>
                 </div>
-            </div>
+            </wa-card>
 
         </div>
 

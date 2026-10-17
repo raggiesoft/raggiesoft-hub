@@ -53,7 +53,7 @@ $crucibleChapters = [
 
 <!-- [LAYOUT] Primary CPI & Crucible Archive Navigation -->
 <h5 class="pt-3 pb-2 mb-3 border-bottom text-uppercase letter-spacing-1" style="color: var(--cpi-orange, #CF4420);">
-    <i slot="start" class="fa-duotone fa-stadium me-1"></i> CPI &amp; Crucible Archive
+    <i class="fa-duotone fa-stadium me-2" aria-hidden="true"></i>CPI &amp; Crucible Archive
 </h5>
 
 <div class="d-flex flex-column gap-1">
@@ -61,10 +61,9 @@ $crucibleChapters = [
         // Exact path match so `/story/crucible` does not falsely highlight on subpages
         $isActive = ($currentPath === $url);
     ?>
-        <a class="nav-link py-2 px-2 rounded <?php echo $isActive ? 'active fw-bold text-warning bg-body-tertiary border-start border-3 border-warning' : 'link-secondary'; ?>"
-           href="<?php echo htmlspecialchars($url); ?>">
-            <i class="<?php echo htmlspecialchars($item['icon']); ?> me-2"></i><?php echo htmlspecialchars($item['label']); ?>
-        </a>
+        <wa-button appearance="<?php echo $isActive ? 'filled-outlined' : 'plain'; ?>" variant="<?php echo $isActive ? 'warning' : 'neutral'; ?>" href="<?php echo htmlspecialchars($url); ?>" class="w-100 text-start justify-content-start" style="text-align: left;">
+            <i slot="start" class="<?php echo htmlspecialchars($item['icon']); ?>"></i> <?php echo htmlspecialchars($item['label']); ?>
+        </wa-button>
     <?php endforeach; ?>
 </div>
 
@@ -74,40 +73,41 @@ $crucibleChapters = [
 </h6>
 
 <div class="d-flex flex-column gap-1">
+    <wa-button appearance="plain" href="/engine-room/artists/stardust-engine/discography/2011-starfield-calibration" class="text-body w-100 text-start justify-content-start" style="text-align: left;">
+        <i slot="start" class="fa-duotone fa-satellite"></i> 2011: Starfield Calibration
+    </wa-button>
+
     <wa-button appearance="plain" href="/engine-room/artists/stardust-engine/discography/2004-progress-street" class="text-body w-100 text-start justify-content-start" style="text-align: left;">
-        <i slot="start" class="fa-duotone fa-compact-disc me-2"></i> 2004: Progress Street
+        <i slot="start" class="fa-duotone fa-compact-disc"></i> 2004: Progress Street
     </wa-button>
 
     <wa-button appearance="plain" href="/engine-room/artists/stardust-engine/discography/2003-mile-marker-98" class="text-body w-100 text-start justify-content-start" style="text-align: left;">
-        <i slot="start" class="fa-duotone fa-road me-2"></i> 2003: Mile Marker 98
+        <i slot="start" class="fa-duotone fa-road"></i> 2003: Mile Marker 98
     </wa-button>
 
     <wa-button appearance="plain" href="/engine-room/artists/stardust-engine/discography/1997-forger-nation-war-chest" class="text-body w-100 text-start justify-content-start" style="text-align: left;">
-        <i slot="start" class="fa-duotone fa-box-archive me-2"></i> 1997: Forger War Chest
+        <i slot="start" class="fa-duotone fa-box-archive"></i> 1997: Forger War Chest
     </wa-button>
 
     <wa-button appearance="plain" href="/engine-room/corporate/stardust-blacksburg" class="text-body w-100 text-start justify-content-start" style="text-align: left;">
-        <i slot="start" class="fa-duotone fa-building-columns me-2"></i> The Ironwood Collective
+        <i slot="start" class="fa-duotone fa-building-columns"></i> The Ironwood Collective
     </wa-button>
 
     <wa-button appearance="plain" href="/engine-room/corporate/stardust-blacksburg/location" class="text-body w-100 text-start justify-content-start" style="text-align: left;">
-        <i slot="start" class="fa-duotone fa-route me-2"></i> BRT Route 1 ("The Spine")
+        <i slot="start" class="fa-duotone fa-route"></i> BRT Route 1 ("The Spine")
     </wa-button>
 </div>
 
 <!-- [UI COMPONENT] Environmental Storytelling: VDOT / BRT Game-Day Advisory -->
-<div class="mt-4 p-3 bg-body-tertiary border border-warning rounded">
-    <h6 class="text-warning text-uppercase small fw-bold mb-1 font-monospace">
-        <i class="fa-solid fa-triangle-exclamation me-1"></i> VDOT / BRT Advisory
-    </h6>
-    <p class="small text-body-secondary mb-0" style="font-size: 0.8rem;">
-        <strong>Exit 118 (Christiansburg Transit Center):</strong> 6,000-space garage &amp; Crucible Shuttle are <strong>FREE</strong> on game days. Southgate Drive is strictly restricted to <strong>Blue Ridge Transit</strong> articulated coaches after <code>0:00</code>.
-    </p>
-</div>
+<wa-callout variant="warning" appearance="accent" size="small" class="mt-4">
+    <i slot="icon" class="fa-solid fa-triangle-exclamation"></i>
+    <strong class="d-block text-uppercase mb-1 font-monospace">VDOT / BRT Advisory</strong>
+    <strong>Exit 118 (Christiansburg Transit Center):</strong> 6,000-space garage &amp; Crucible Shuttle are <strong>FREE</strong> on game days. Southgate Drive is strictly restricted to <strong>Blue Ridge Transit</strong> articulated coaches after <code>0:00</code>.
+</wa-callout>
 
 <div class="mt-auto pt-4 border-top">
-    <a href="/engine-room/artists/stardust-engine/story" class="nav-link link-secondary">
-        <i class="fa-duotone fa-arrow-left me-2"></i> Back to Full Lore Hub
-    </a>
+    <wa-button appearance="plain" href="/engine-room/artists/stardust-engine/story" class="w-100 text-start justify-content-start" style="text-align: left;">
+        <i slot="start" class="fa-duotone fa-arrow-left"></i> Back to Full Lore Hub
+    </wa-button>
 </div>
 

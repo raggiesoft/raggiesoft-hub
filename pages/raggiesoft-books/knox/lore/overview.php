@@ -46,8 +46,8 @@ $heroImage = $cdnBaseUrl . "/knox/images/aerie-hold-atmospheric.jpg";
         <div class="row g-4 mb-4">
             
             <div class="col-lg-6">
-                <div class="card h-100 border-success shadow-sm">
-                    <div class="card-body">
+                <wa-card class="card h-100 border-success shadow-sm w-100" style="--body-padding: 0; --header-padding: 0;">
+                    <div class="card-body p-4">
                         <div class="d-flex align-items-center mb-3">
                             <div class="rounded-circle bg-success bg-opacity-10 p-3 me-3">
                                 <i class="fa-duotone fa-globe-stand fa-2x text-success"></i>
@@ -62,16 +62,16 @@ $heroImage = $cdnBaseUrl . "/knox/images/aerie-hold-atmospheric.jpg";
                             <li><i class="fa-solid fa-arrow-down me-2 text-warning"></i>The Jungle Floor (-3km)</li>
                             <li><i class="fa-solid fa-skull me-2 text-danger"></i>The Blight Zone</li>
                         </ul>
-                        <a href="/raggiesoft-books/knox/lore/telsus-minor/" class="btn btn-outline-success w-100 rounded-0">
+                        <wa-button variant="success" appearance="outlined" href="/raggiesoft-books/knox/lore/telsus-minor/" class="w-100 rounded-0">
                             Explore the Planet
-                        </a>
+                        </wa-button>
                     </div>
-                </div>
+                </wa-card>
             </div>
 
             <div class="col-lg-6">
-                <div class="card h-100 border-danger shadow-sm">
-                    <div class="card-body">
+                <wa-card class="card h-100 border-danger shadow-sm w-100" style="--body-padding: 0; --header-padding: 0;">
+                    <div class="card-body p-4">
                         <div class="d-flex align-items-center mb-3">
                             <div class="rounded-circle bg-danger bg-opacity-10 p-3 me-3">
                                 <i class="fa-duotone fa-industry-windows fa-2x text-danger"></i>
@@ -81,21 +81,21 @@ $heroImage = $cdnBaseUrl . "/knox/images/aerie-hold-atmospheric.jpg";
                         <p class="card-text text-body-secondary small">
                             The "Civilized Wound." A 16-kilometer-high plateau occupied by the Axiom Corporation. It smells of ozone, rot, and oppression.
                         </p>
-                        <div class="alert alert-danger p-2 small font-monospace rounded-0 mb-4">
-                            <i class="fa-solid fa-triangle-exclamation me-2"></i>Status: HOSTILE TERRITORY
-                        </div>
-                        <a href="/raggiesoft-books/knox/lore/telsus-minor/port-telsus" class="btn btn-outline-danger w-100 rounded-0">
+                        <wa-callout variant="danger" appearance="accent" class="p-2 small font-monospace rounded-0 mb-4 d-block">
+                            <i slot="icon" class="fa-solid fa-triangle-exclamation"></i>Status: HOSTILE TERRITORY
+                        </wa-callout>
+                        <wa-button variant="danger" appearance="outlined" href="/raggiesoft-books/knox/lore/telsus-minor/port-telsus" class="w-100 rounded-0">
                             Analyze the Threat
-                        </a>
+                        </wa-button>
                     </div>
-                </div>
+                </wa-card>
             </div>
         </div>
 
         <div class="row g-4">
             
             <div class="col-12">
-                <div class="card border-primary shadow-lg overflow-hidden">
+                <wa-card class="card border-primary shadow-lg overflow-hidden w-100" style="--body-padding: 0; --header-padding: 0;">
                     <div class="row g-0">
                         <div class="col-md-4 bg-glass-dark d-flex align-items-center justify-content-center p-4">
                             <i class="fa-duotone fa-toolbox fa-5x text-primary opacity-75"></i>
@@ -118,13 +118,13 @@ $heroImage = $cdnBaseUrl . "/knox/images/aerie-hold-atmospheric.jpg";
                                     <span class="skill-pill border-secondary">Stalker's Call</span>
                                     <span class="skill-pill border-secondary">Bio-Scrambler</span>
                                 </div>
-                                <a href="/raggiesoft-books/knox/lore/toys/" class="btn btn-primary w-100 rounded-0">
+                                <wa-button variant="brand" appearance="accent" href="/raggiesoft-books/knox/lore/toys/" class="w-100 rounded-0">
                                     Open the Arsenal
-                                </a>
+                                </wa-button>
                             </div>
                         </div>
                     </div>
-                </div>
+                </wa-card>
             </div>
 
         </div>

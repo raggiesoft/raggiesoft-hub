@@ -42,9 +42,9 @@ $pageTitle = "The Quiet Floor - Level 40 Sanctuary";
     
     <div class="row justify-content-center mb-5">
         <div class="col-lg-8 text-center">
-            <span class="badge bg-body-secondary text-body-emphasis rounded-pill px-3 py-2 mb-3 text-uppercase letter-spacing-1 border">
+            <wa-badge variant="neutral" appearance="outlined" pill class="text-body-emphasis px-3 py-2 mb-3 text-uppercase letter-spacing-1">
                 <i class="fa-solid fa-universal-access me-2"></i>Building-Wide Amenity
-            </span>
+            </wa-badge>
             <h1 class="display-4 fw-light text-body-emphasis mb-2" style="font-family: 'Helvetica Neue', sans-serif;">
                 The Quiet Floor
             </h1>
@@ -59,7 +59,7 @@ $pageTitle = "The Quiet Floor - Level 40 Sanctuary";
 
     <div class="row justify-content-center mb-5">
         <div class="col-lg-10">
-            <div class="card shadow border-0 bg-body-tertiary">
+            <wa-card class="card shadow border-0 bg-body-tertiary w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
                 <div class="card-body p-5 text-center">
                     <i class="fa-duotone fa-ear-muffs fa-3x text-info mb-4"></i>
                     <h3 class="h4 text-body-emphasis fw-light mb-4">"The world is loud. This floor is not."</h3>
@@ -72,14 +72,14 @@ $pageTitle = "The Quiet Floor - Level 40 Sanctuary";
                         <span><i class="fa-solid fa-ban text-danger me-2"></i>No Shoes</span>
                     </div>
                 </div>
-            </div>
+            </wa-card>
         </div>
     </div>
 
     <div class="row g-4 mb-5">
         
         <div class="col-md-6 col-lg-4">
-            <div class="card h-100 border shadow-sm">
+            <wa-card class="card h-100 border shadow-sm w-100" style="--body-padding: 0; --header-padding: 0;">
                 <div class="card-body p-4">
                     <div class="feature-icon">
                         <i class="fa-duotone fa-moon-stars fa-2x text-body-emphasis"></i>
@@ -92,11 +92,11 @@ $pageTitle = "The Quiet Floor - Level 40 Sanctuary";
                         <li><i class="fa-solid fa-check text-success me-2"></i><strong>Weighted Blankets:</strong> 15lb, 20lb, and 25lb options available (sanitized daily).</li>
                     </ul>
                 </div>
-            </div>
+            </wa-card>
         </div>
 
         <div class="col-md-6 col-lg-4">
-            <div class="card h-100 border shadow-sm">
+            <wa-card class="card h-100 border shadow-sm w-100" style="--body-padding: 0; --header-padding: 0;">
                 <div class="card-body p-4">
                     <div class="feature-icon">
                         <i class="fa-duotone fa-hands-holding-circle fa-2x text-primary"></i>
@@ -109,11 +109,11 @@ $pageTitle = "The Quiet Floor - Level 40 Sanctuary";
                         <li><i class="fa-solid fa-check text-success me-2"></i><strong>Rocking Chairs:</strong> Heavy-duty, silent-glide rockers for vestibular soothing.</li>
                     </ul>
                 </div>
-            </div>
+            </wa-card>
         </div>
 
         <div class="col-md-6 col-lg-4">
-            <div class="card h-100 border-success bg-success-subtle">
+            <wa-card class="card h-100 border-success bg-success-subtle w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
                 <div class="card-body p-4 position-relative overflow-hidden">
                     
                     <div class="position-absolute top-0 end-0 p-2 text-success-emphasis opacity-75 small fw-bold text-uppercase">
@@ -136,14 +136,14 @@ $pageTitle = "The Quiet Floor - Level 40 Sanctuary";
                         <li><i class="fa-solid fa-check text-success me-2"></i><strong>Spatial Audio:</strong> 360° generative ambient soundscapes.</li>
                     </ul>
                 </div>
-            </div>
+            </wa-card>
         </div>
 
     </div>
 
     <div class="row justify-content-center mb-5">
         <div class="col-lg-10">
-            <div class="card border shadow-sm overflow-hidden">
+            <wa-card class="card border shadow-sm overflow-hidden w-100" style="--body-padding: 0; --header-padding: 0;">
                 <div class="row g-0 align-items-center">
                     <div class="col-md-4 bg-body-tertiary p-4 text-center border-end">
                         <i class="fa-duotone fa-cubes-stacked fa-4x text-secondary mb-3"></i>
@@ -154,23 +154,23 @@ $pageTitle = "The Quiet Floor - Level 40 Sanctuary";
                         
                         <h6 class="text-success text-uppercase small letter-spacing-1 mb-2">Loaner Gear (Sanitized Daily)</h6>
                         <div class="d-flex flex-wrap gap-2 mb-4">
-                            <span class="badge bg-secondary-subtle text-secondary-emphasis border border-secondary-subtle">Noise-Canceling Headphones</span>
-                            <span class="badge bg-secondary-subtle text-secondary-emphasis border border-secondary-subtle">Weighted Lap Pads</span>
-                            <span class="badge bg-secondary-subtle text-secondary-emphasis border border-secondary-subtle">Mechanical Fidget Cubes</span>
-                            <span class="badge bg-secondary-subtle text-secondary-emphasis border border-secondary-subtle">Liquid Motion Bubblers</span>
+                            <wa-badge variant="neutral" appearance="filled-outlined" class="text-secondary-emphasis">Noise-Canceling Headphones</wa-badge>
+                            <wa-badge variant="neutral" appearance="filled-outlined" class="text-secondary-emphasis">Weighted Lap Pads</wa-badge>
+                            <wa-badge variant="neutral" appearance="filled-outlined" class="text-secondary-emphasis">Mechanical Fidget Cubes</wa-badge>
+                            <wa-badge variant="neutral" appearance="filled-outlined" class="text-secondary-emphasis">Liquid Motion Bubblers</wa-badge>
                         </div>
 
                         <h6 class="text-warning-emphasis text-uppercase small letter-spacing-1 mb-2">Complimentary (Yours to Keep)</h6>
                         <div class="d-flex flex-wrap gap-2">
-                            <span class="badge bg-warning-subtle text-warning-emphasis border border-warning-subtle">Chewelry (Food-Grade Silicone)</span>
-                            <span class="badge bg-warning-subtle text-warning-emphasis border border-warning-subtle">Textured Tangles</span>
-                            <span class="badge bg-warning-subtle text-warning-emphasis border border-warning-subtle">Aromatherapy Inhalers</span>
-                            <span class="badge bg-warning-subtle text-warning-emphasis border border-warning-subtle">High-Fidelity Earplugs</span>
+                            <wa-badge variant="warning" appearance="filled-outlined" class="text-warning-emphasis">Chewelry (Food-Grade Silicone)</wa-badge>
+                            <wa-badge variant="warning" appearance="filled-outlined" class="text-warning-emphasis">Textured Tangles</wa-badge>
+                            <wa-badge variant="warning" appearance="filled-outlined" class="text-warning-emphasis">Aromatherapy Inhalers</wa-badge>
+                            <wa-badge variant="warning" appearance="filled-outlined" class="text-warning-emphasis">High-Fidelity Earplugs</wa-badge>
                         </div>
 
                     </div>
                 </div>
-            </div>
+            </wa-card>
         </div>
     </div>
 

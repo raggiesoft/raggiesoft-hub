@@ -1,72 +1,55 @@
 <?php
 /**
+ * ============================================================================
  * ARCHITECTURE: header-knox.php
- * 
+ * ============================================================================
  * Context: RaggieSoft Books - Project: KNOX Navigation.
- * Narrative/Purpose: Contextual navigation for the "Knox" universe. Adapts a stark, functional design theme
- * to reflect the sci-fi/dystopian nature of the story, distinct from the high-fantasy Aethel Saga.
- * 
- * Mechanics:
- * - Parses `$_SERVER['REQUEST_URI']` to set active states for chapters, lore, and characters.
- * - Features a Web Awesome dropdown menu (`wa-dropdown`) for categorized lore navigation ("The Telsan Gap").
- * - Uses semantic color coding (success vs. danger) within the dropdown to distinguish narrative elements (The Reality vs. The Threat).
+ * Narrative/Purpose: Contextual navigation for the "K.N.O.X." universe.
+ *
+ * TECHNICAL NOTES:
+ * - Built strictly with Web Awesome v3.13.0 (<wa-button>, <wa-dropdown>,
+ *   <wa-dropdown-item>, <wa-divider>) per llms-webawesome.txt.
+ * - Uses direct <wa-dropdown-item> children inside <wa-dropdown>.
+ * ============================================================================
  */
-// includes/components/headers/raggiesoft-books/header-knox.php
-// Adapted from Engine Room Records template.
-// Context: Navigation for the specific book "Knox".
-// Theme: Stark, Functional, Adaptive Colors.
 
 $uri = $_SERVER['REQUEST_URI'] ?? '';
 
-// Determine active states
-$isChapters = str_contains($uri, '/chapters');
-$isLore     = str_contains($uri, '/lore');
-$isChars    = str_contains($uri, '/characters');
+$isChapters = str_contains($uri, '/books/knox');
+$isLore     = str_contains($uri, '/knox/lore');
 ?>
 
 <!-- START: Knox Navigation Container -->
 <div class="d-flex flex-column flex-md-row align-items-stretch align-items-md-center gap-2 ms-auto py-3 py-md-0 w-100 mobile-nav-menu">
 
-  
+    <!-- START: Dossier Overview Link -->
+    <wa-button appearance="plain" href="/raggiesoft-books/knox">
+        <i slot="start" class="fa-duotone fa-crosshairs" aria-hidden="true"></i>Dossier
+    </wa-button>
+
     <!-- START: Read Story Link -->
-    <wa-button appearance="plain" href="/raggiesoft-books/knox/chapters" class="<?php echo $isChapters ? 'active' : ''; ?>">
-        <i slot="start" class="fa-duotone fa-book-open-reader me-2"></i>Read the Story
+    <wa-button appearance="plain" href="/raggiesoft-books/books/knox" class="<?php echo $isChapters ? 'active' : ''; ?>">
+        <i slot="start" class="fa-duotone fa-book-open-reader" aria-hidden="true"></i>Read the Story
     </wa-button>
-  
 
-  
-  <!-- START: Lore Dropdown Navigation -->
-  <wa-dropdown placement="bottom-start">
-    <wa-button class="nav-link  <?php echo ($isLore || $isChars) ? 'active' : ''; ?>" slot="trigger" appearance="plain">
-      <i class="fa-duotone fa-planet-ringed me-2"></i>The Telsan Gap
-     <i slot="end" class="fa-solid fa-circle-caret-down ms-2 opacity-50" aria-hidden="true"></i>
+    <!-- START: Lore Dropdown Navigation -->
+    <wa-dropdown placement="bottom-start">
+        <wa-button class="<?php echo $isLore ? 'active' : ''; ?>" slot="trigger" appearance="plain" with-caret>
+            <i slot="start" class="fa-duotone fa-planet-ringed" aria-hidden="true"></i>The Telsan Gap
+        </wa-button>
+        <wa-dropdown-item value="/raggiesoft-books/knox/lore">
+            <i slot="icon" class="fa-solid fa-earth-americas text-success"></i>World Data: Telsus Minor
+        </wa-dropdown-item>
+        <wa-divider></wa-divider>
+        <wa-dropdown-item value="/raggiesoft-books/knox/lore/toys">
+            <i slot="icon" class="fa-solid fa-box-dollar text-danger"></i>Merchandising vs. Reality
+        </wa-dropdown-item>
+    </wa-dropdown>
+
+    <!-- START: Global Exit -->
+    <wa-button appearance="plain" href="/raggiesoft-books">
+        <i slot="start" class="fa-duotone fa-arrow-right-from-bracket text-body-secondary" aria-hidden="true"></i>
+        <span class="text-body-secondary small">Ocean View Archives</span>
     </wa-button>
-    <wa-menu>
-      <div class="px-3 py-2 small text-uppercase  fw-bold text-uppercase text-success fw-bold">The Reality</div>
-      <wa-dropdown-item value="/raggiesoft-books/knox/characters">
-            <i class="fa-solid fa-users me-2 text-body-secondary"></i>The Twins & Pip
-          </wa-dropdown-item>
-      <wa-dropdown-item value="/raggiesoft-books/knox/lore/aerie-hold">
-            <i class="fa-solid fa-tree me-2 text-body-secondary"></i>Aerie-Hold
-          </wa-dropdown-item>
-
-      <wa-divider></wa-divider>
-      <div class="px-3 py-2 small text-uppercase  fw-bold text-uppercase text-danger fw-bold">The Threat</div>
-      <wa-dropdown-item value="/raggiesoft-books/knox/lore/axiom-corp">
-            <i class="fa-solid fa-building me-2 text-danger"></i>The Axiom
-          </wa-dropdown-item>
-      <wa-dropdown-item value="/raggiesoft-books/knox/lore/port-telsus">
-            <i class="fa-solid fa-industry-windows me-2 text-danger"></i>Port Telsus
-          </wa-dropdown-item>
-    </wa-menu>
-  </wa-dropdown>
-
-
-  
-      <!-- START: Global Exit -->
-      <wa-button appearance="plain" href="/">
-        <i slot="start" class="fa-duotone fa-arrow-right-from-bracket me-2 text-body-secondary"></i><span class="text-body-secondary small">Exit to RaggieSoft</span>
-      </wa-button>
-  
 
 </div>

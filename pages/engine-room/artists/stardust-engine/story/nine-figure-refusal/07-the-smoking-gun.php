@@ -110,9 +110,9 @@ $pageTitle = "Evidence #00-C: The Smoking Gun - Engine Room History";
     
     <div class="row justify-content-center mb-5">
         <div class="col-lg-8 text-center">
-            <span class="badge bg-danger rounded-pill px-3 py-2 mb-3 text-uppercase letter-spacing-1 shadow-sm">
+            <wa-badge variant="danger" appearance="accent" pill class="px-3 py-2 mb-3 text-uppercase letter-spacing-1 shadow-sm">
                 <i class="fa-duotone fa-envelope-open-dollar me-2"></i>Evidence Item #00-C
-            </span>
+            </wa-badge>
             <h1 class="display-4 fw-bold text-body-emphasis mb-2 text-uppercase" style="font-family: 'Impact', sans-serif;">
                 The $0.50 Insult
             </h1>
@@ -207,7 +207,7 @@ $pageTitle = "Evidence #00-C: The Smoking Gun - Engine Room History";
 
     <div class="row justify-content-center">
         <div class="col-lg-10">
-            <div class="card bg-body-tertiary border-danger shadow-sm">
+            <wa-card class="card bg-body-tertiary border-danger shadow-sm w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
                 <div class="card-body p-4">
                     <div class="d-flex align-items-center mb-3">
                         <div class="bg-danger text-white rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 48px; height: 48px; min-width: 48px;">
@@ -236,12 +236,12 @@ $pageTitle = "Evidence #00-C: The Smoking Gun - Engine Room History";
                         </div>
                     </div>
 
-                    <div class="alert alert-danger bg-danger-subtle border-danger mt-3 mb-0">
-                        <i class="fa-solid fa-gavel me-2"></i>
+                    <wa-callout variant="danger" appearance="accent" class="mt-3 mb-0 d-block">
+                        <i slot="icon" class="fa-solid fa-gavel"></i>
                         <strong>The Result:</strong> Because the document contained financial lies *and* was sent via USPS, it triggered <strong>18 U.S.C. § 1341 (Mail Fraud)</strong>. This single envelope gave Holly federal jurisdiction.
-                    </div>
+                    </wa-callout>
 
-                    <div class="alert alert-dark border-start border-4 border-light bg-black text-white p-4 mt-4 shadow-sm">
+                    <wa-callout variant="neutral" appearance="accent" class="p-4 mt-4 shadow-sm d-block">
                         <div class="d-flex align-items-start">
                             <i class="fa-duotone fa-handcuffs text-danger fs-2 me-3 mt-1"></i>
                             <div>
@@ -254,10 +254,10 @@ $pageTitle = "Evidence #00-C: The Smoking Gun - Engine Room History";
                                 </p>
                             </div>
                         </div>
-                    </div>
+                    </wa-callout>
 
                 </div>
-            </div>
+            </wa-card>
         </div>
     </div>
     

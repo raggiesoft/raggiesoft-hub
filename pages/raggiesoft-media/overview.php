@@ -64,15 +64,15 @@ $pageTitle = "RaggieSoft Media | IP & Asset Management";
         </p>
         
         <div class="d-flex flex-column flex-md-row justify-content-center align-items-center">
-            <a href="/raggiesoft-media/licensing/commercial" class="btn btn-primary rounded-pill fw-bold text-uppercase px-4 me-md-3 mb-3 mb-md-0 shadow-sm">
-                Commercial Sync Portal <i class="fa-solid fa-arrow-right ms-2" aria-hidden="true"></i>
-            </a>
-            <a href="/raggiesoft-media/projects" class="btn btn-glass rounded-pill fw-bold text-uppercase px-4 me-md-3 mb-3 mb-md-0 shadow-sm">
-                Open Source Projects <i class="fa-solid fa-code ms-2" aria-hidden="true"></i>
-            </a>
-            <a href="https://michaelpragsdale.com" class="btn btn-glass rounded-pill fw-bold text-uppercase px-4 shadow-sm border-opacity-50">
-                Architect Portfolio <i class="fa-solid fa-user-tie ms-2" aria-hidden="true"></i>
-            </a>
+            <wa-button variant="brand" appearance="accent" pill href="/raggiesoft-media/licensing/commercial" class="fw-bold text-uppercase px-4 me-md-3 mb-3 mb-md-0 shadow-sm">
+                Commercial Sync Portal <i slot="end" class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+            </wa-button>
+            <wa-button variant="neutral" appearance="accent" pill href="/raggiesoft-media/projects" class="btn-glass fw-bold text-uppercase px-4 me-md-3 mb-3 mb-md-0 shadow-sm">
+                Open Source Projects <i slot="end" class="fa-solid fa-code" aria-hidden="true"></i>
+            </wa-button>
+            <wa-button variant="neutral" appearance="accent" pill href="https://michaelpragsdale.com" class="btn-glass fw-bold text-uppercase px-4 shadow-sm border-opacity-50">
+                Architect Portfolio <i slot="end" class="fa-solid fa-user-tie" aria-hidden="true"></i>
+            </wa-button>
         </div>
     </div>
 </div>
@@ -86,65 +86,71 @@ $pageTitle = "RaggieSoft Media | IP & Asset Management";
         </div>
         
         <div class="col-lg-4 mb-4 mb-lg-0">
-            <a href="/engine-room" class="card bg-hud-base border-0 h-100 shadow-sm hover-lift text-decoration-none">
-                <div class="aero-card-img-container">
-                    <img src="<?php echo $cdnBaseUrl; ?>/stardust-engine/images/studio-rack.jpg" alt="Engine Room Records Studio Equipment">
-                    <div class="aero-card-img-overlay"></div>
-                    <i class="fa-solid fa-record-vinyl position-absolute bottom-0 start-0 m-3 text-white fs-4" style="filter: drop-shadow(0 2px 4px rgba(0,0,0,0.8));"></i>
-                </div>
-                <div class="card-body p-4">
-                    <h3 class="h5 fw-bold text-body-emphasis mb-2">Engine Room Records</h3>
-                    <p class="small text-secondary mb-0">
-                        The independent label managing the distribution, royalties, and narrative lore of our generative AI music portfolio. Features an active catalog and automated DSP integration.
-                    </p>
-                </div>
+            <a href="/engine-room" class="text-decoration-none d-block h-100">
+                <wa-card class="card bg-hud-base border-0 h-100 w-100 shadow-sm hover-lift" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
+                    <div class="aero-card-img-container">
+                        <img src="<?php echo $cdnBaseUrl; ?>/stardust-engine/images/studio-rack.jpg" alt="Engine Room Records Studio Equipment">
+                        <div class="aero-card-img-overlay"></div>
+                        <i class="fa-solid fa-record-vinyl position-absolute bottom-0 start-0 m-3 text-white fs-4" style="filter: drop-shadow(0 2px 4px rgba(0,0,0,0.8));"></i>
+                    </div>
+                    <div class="card-body p-4">
+                        <h3 class="h5 fw-bold text-body-emphasis mb-2">Engine Room Records</h3>
+                        <p class="small text-secondary mb-0">
+                            The independent label managing the distribution, royalties, and narrative lore of our generative AI music portfolio. Features an active catalog and automated DSP integration.
+                        </p>
+                    </div>
+                </wa-card>
             </a>
         </div>
 
         <div class="col-lg-4 mb-4 mb-lg-0">
-            <a href="/raggiesoft-media/projects/stardust-engine-cms" class="card bg-hud-base border-0 h-100 shadow-sm hover-lift text-decoration-none">
-                <div class="aero-card-img-container">
-                    <img src="<?php echo $cdnBaseUrl; ?>/raggiesoft-corporate/images/projects/code-architecture-frutiger-aero.jpg" 
-                        alt="Elara CMS Code Architecture" 
-                        class="theme-img-light">
-                        
-                    <img src="<?php echo $cdnBaseUrl; ?>/raggiesoft-corporate/images/projects/code-architecture-dark-aero.jpg" 
-                        alt="Elara CMS Code Architecture" 
-                        class="theme-img-dark">
-                        
-                    <div class="aero-card-img-overlay"></div>
-                    <i class="fa-solid fa-microchip position-absolute bottom-0 start-0 m-3 text-white fs-4" style="filter: drop-shadow(0 2px 4px rgba(0,0,0,0.8));"></i>
-                </div>
-                <div class="card-body p-4">
-                    <h3 class="h5 fw-bold text-body-emphasis mb-2">Stardust Engine CMS</h3>
-                    <p class="small text-secondary mb-0">
-                        The open-source (MIT) infrastructure division. We design lightweight, high-performance PHP frameworks and Vanilla JS SPA routers (like Elara) to replace bloated legacy systems.
-                    </p>
-                </div>
+            <a href="/raggiesoft-media/projects/stardust-engine-cms" class="text-decoration-none d-block h-100">
+                <wa-card class="card bg-hud-base border-0 h-100 w-100 shadow-sm hover-lift" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
+                    <div class="aero-card-img-container">
+                        <img src="<?php echo $cdnBaseUrl; ?>/raggiesoft-corporate/images/projects/code-architecture-frutiger-aero.jpg" 
+                            alt="Elara CMS Code Architecture" 
+                            class="theme-img-light">
+                            
+                        <img src="<?php echo $cdnBaseUrl; ?>/raggiesoft-corporate/images/projects/code-architecture-dark-aero.jpg" 
+                            alt="Elara CMS Code Architecture" 
+                            class="theme-img-dark">
+                            
+                        <div class="aero-card-img-overlay"></div>
+                        <i class="fa-solid fa-microchip position-absolute bottom-0 start-0 m-3 text-white fs-4" style="filter: drop-shadow(0 2px 4px rgba(0,0,0,0.8));"></i>
+                    </div>
+                    <div class="card-body p-4">
+                        <h3 class="h5 fw-bold text-body-emphasis mb-2">Stardust Engine CMS</h3>
+                        <p class="small text-secondary mb-0">
+                            The open-source (MIT) infrastructure division. We design lightweight, high-performance PHP frameworks and Vanilla JS SPA routers (like Elara) to replace bloated legacy systems.
+                        </p>
+                    </div>
+                </wa-card>
             </a>
         </div>
 
         <div class="col-lg-4">
-            <a href="/raggiesoft-books" class="card bg-hud-base border-0 h-100 shadow-sm hover-lift text-decoration-none">
-                <div class="aero-card-img-container">
-                    <img src="<?php echo $cdnBaseUrl; ?>/raggiesoft-corporate/images/projects/ocean-vault-light.jpg" 
-                        alt="Ocean View Archives Light Mode" 
-                        class="theme-img-light">
+            <a href="/raggiesoft-books" class="text-decoration-none d-block h-100">
+                <wa-card class="card bg-hud-base border-0 h-100 w-100 shadow-sm hover-lift" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
+                    <div class="aero-card-img-container">
+                        <img src="<?php echo $cdnBaseUrl; ?>/raggiesoft-corporate/images/projects/ocean-vault-light.jpg" 
+                            alt="Ocean View Archives Light Mode" 
+                            class="theme-img-light">
+                            
+                        <img src="<?php echo $cdnBaseUrl; ?>/raggiesoft-corporate/images/projects/ocean-vault-dark.jpg" 
+                            alt="Ocean View Archives Dark Mode" 
+                            class="theme-img-dark">
+                            
+                        <div class="aero-card-img-overlay"></div>
                         
-                    <img src="<?php echo $cdnBaseUrl; ?>/raggiesoft-corporate/images/projects/ocean-vault-dark.jpg" 
-                        alt="Ocean View Archives Dark Mode" 
-                        class="theme-img-dark">
-                        
-                    <div class="aero-card-img-overlay"></div>
-                    
-                    <i class="fa-solid fa-vault position-absolute bottom-0 start-0 m-3 text-white fs-4" style="filter: drop-shadow(0 2px 4px rgba(0,0,0,0.8));"></i>
-                </div>
-                <div class="card-body p-4">
-                    <h3 class="h5 fw-bold text-body-emphasis mb-2">Ocean View Archives</h3>
-                    <p class="small text-secondary mb-0">
-                        The narrative rights management division. Responsible for the CC BY-SA 4.0 licensing of all creative fiction, universe bibles, and story assets within the RaggieSoft ecosystem.
-                    </p>
-                </div>
+                        <i class="fa-solid fa-vault position-absolute bottom-0 start-0 m-3 text-white fs-4" style="filter: drop-shadow(0 2px 4px rgba(0,0,0,0.8));"></i>
+                    </div>
+                    <div class="card-body p-4">
+                        <h3 class="h5 fw-bold text-body-emphasis mb-2">Ocean View Archives</h3>
+                        <p class="small text-secondary mb-0">
+                            The narrative rights management division. Responsible for the CC BY-SA 4.0 licensing of all creative fiction, universe bibles, and story assets within the RaggieSoft ecosystem.
+                        </p>
+                    </div>
+                </wa-card>
             </a>
         </div>
     </div>
@@ -152,7 +158,7 @@ $pageTitle = "RaggieSoft Media | IP & Asset Management";
     <!-- START: Architect Hiring CTA -->
     <div class="row mb-5">
         <div class="col-12">
-            <div class="card bg-hud-blue border-0 shadow-sm hover-lift">
+            <wa-card class="card bg-hud-blue border-0 shadow-sm hover-lift w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
                 <div class="card-body p-4 p-md-5 d-flex flex-column flex-md-row align-items-center justify-content-between">
                     <div class="d-flex align-items-center mb-4 mb-md-0">
                         <img src="<?php echo $cdnBaseUrl; ?>/raggiesoft-corporate/images/logos/logo-michael.png" alt="Michael Ragsdale" class="rounded-circle border border-2 border-primary shadow-sm me-4" style="width: 80px; height: 80px; object-fit: cover;">
@@ -161,18 +167,18 @@ $pageTitle = "RaggieSoft Media | IP & Asset Management";
                             <p class="text-secondary mb-0">Review qualifications, logistics, and schedule a screening interview.</p>
                         </div>
                     </div>
-                    <a href="https://michaelpragsdale.com" class="btn btn-primary rounded-pill px-4 py-3 fw-bold shadow-sm text-uppercase text-nowrap">
-                        View Professional Portfolio <i class="fa-solid fa-arrow-right ms-2"></i>
-                    </a>
+                    <wa-button variant="brand" appearance="accent" pill href="https://michaelpragsdale.com" class="px-4 py-3 fw-bold shadow-sm text-uppercase text-nowrap">
+                        View Professional Portfolio <i slot="end" class="fa-solid fa-arrow-right"></i>
+                    </wa-button>
                 </div>
-            </div>
+            </wa-card>
         </div>
     </div>
 
     <!-- START: Corporate Directory Footer -->
     <div class="row">
         <div class="col-12">
-            <div class="card bg-hud-base border-0 p-4 p-md-5 shadow-sm">
+            <wa-card class="card bg-hud-base border-0 p-4 p-md-5 shadow-sm w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
                 <h2 class="h5 mb-4 text-primary fw-bold text-uppercase border-bottom border-secondary-subtle pb-3">
                     <i class="fa-solid fa-address-book me-2" aria-hidden="true"></i>Corporate Directory & Direct Access
                 </h2>
@@ -201,7 +207,7 @@ $pageTitle = "RaggieSoft Media | IP & Asset Management";
                     </div>
                     
                 </div>
-            </div>
+            </wa-card>
         </div>
     </div>
 

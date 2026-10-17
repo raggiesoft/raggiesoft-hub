@@ -12,7 +12,7 @@
  * Also includes a "Practical Magic" polaroid gallery using CSS transforms.
  *
  * Maintenance Notes:
- * - Uses Bootstrap Nav-Tabs to toggle between the two album versions.
+ * - Uses Web Awesome v3.13.0 <wa-tab-group> to toggle between the two album versions.
  * - Relies on $album_path_web being re-assigned before including the tracklist component.
  * - Check `store-button.php` parameters if changing merchandising links.
  */
@@ -35,27 +35,16 @@ $art_2017 = $cdnBaseUrl . '/engine-room-records/artists/firelight/2025-silver-ga
 ?>
 
 <style>
-    .nav-tabs-aethel .nav-link {
-        color: rgba(255,255,255,0.5);
+    .aethel-tab-group::part(tabs) {
+        justify-content: center;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+        margin-bottom: 2.5rem;
+    }
+    .aethel-tab-group wa-tab {
         font-family: 'Cinzel', serif;
         text-transform: uppercase;
         letter-spacing: 1px;
-        border: none;
-        border-bottom: 3px solid transparent;
-        border-radius: 0;
         font-size: 1.2rem;
-        padding: 1rem 2rem;
-        transition: all 0.3s ease;
-    }
-    .nav-tabs-aethel .nav-link:hover {
-        color: var(--bs-warning);
-        border-bottom-color: rgba(255, 193, 7, 0.3);
-    }
-    .nav-tabs-aethel .nav-link.active {
-        color: var(--bs-warning);
-        background-color: transparent;
-        border-bottom-color: var(--bs-warning);
-        font-weight: bold;
     }
     
     .polaroid {
@@ -82,9 +71,9 @@ $art_2017 = $cdnBaseUrl . '/engine-room-records/artists/firelight/2025-silver-ga
         <div class="row justify-content-center">
             <div class="col-lg-10">
                 <div class="mb-3">
-                    <span class="badge bg-black border border-warning text-warning rounded-pill px-3 py-2 text-uppercase letter-spacing-2 shadow-lg">
+                    <wa-badge variant="warning" appearance="outlined" pill class="px-3 py-2 text-uppercase letter-spacing-2 shadow-lg">
                         <i class="fa-duotone fa-film-canister me-2"></i>Original Motion Picture Soundtracks
-                    </span>
+                    </wa-badge>
                 </div>
                 
                 <h1 class="display-3 fw-bold text-white mb-2 cinzel-font text-shadow-lg">
@@ -113,33 +102,23 @@ $art_2017 = $cdnBaseUrl . '/engine-room-records/artists/firelight/2025-silver-ga
             </div>
         </div>
 
-        <ul class="nav nav-tabs nav-tabs-aethel justify-content-center mb-5 border-bottom border-secondary" id="soundtrackTabs" role="tablist">
-            <li class="nav-item" role="presentation">
-                <button class="nav-link active" id="cut-1987-tab" data-bs-toggle="tab" data-bs-target="#cut-1987" type="button" role="tab" aria-controls="cut-1987" aria-selected="true">
-                    1987 Theatrical LP
-                </button>
-            </li>
-            <li class="nav-item" role="presentation">
-                <button class="nav-link" id="cut-2017-tab" data-bs-toggle="tab" data-bs-target="#cut-2017" type="button" role="tab" aria-controls="cut-2017" aria-selected="false">
-                    2017 Leviathan Box Set
-                </button>
-            </li>
-        </ul>
+        <wa-tab-group class="aethel-tab-group">
+            <wa-tab slot="nav" panel="cut-1987">1987 Theatrical LP</wa-tab>
+            <wa-tab slot="nav" panel="cut-2017">2017 Leviathan Box Set</wa-tab>
 
-        <div class="tab-content" id="soundtrackTabsContent">
-            
-            <div class="tab-pane fade show active" id="cut-1987" role="tabpanel" aria-labelledby="cut-1987-tab">
-                <div class="row">
+            <wa-tab-panel name="cut-1987">
+                <div class="row pt-4">
                     <div class="col-lg-4 mb-5 mb-lg-0">
                         <div class="sticky-top" style="top: 100px; z-index: 1;">
                             <img src="<?php echo $art_1987; ?>" alt="1987 Soundtrack Cover" class="img-fluid rounded shadow-lg border border-secondary w-100 mb-4" style="filter: sepia(20%) contrast(1.1);">
                             
-                            <div class="alert alert-dark bg-danger-subtle border-danger text-danger-emphasis mb-4">
-                                <h5 class="fw-bold cinzel-font mb-2"><i class="fa-solid fa-scissors me-2"></i>Studio Sabotage</h5>
+                            <wa-callout variant="danger" appearance="accent" class="mb-4 d-block">
+                                <i slot="icon" class="fa-solid fa-scissors"></i>
+                                <h5 class="fw-bold cinzel-font mb-2">Studio Sabotage</h5>
                                 <p class="small mb-0">
                                     Truncated to fit a single 12" vinyl. The studio deleted the Endless Ocean and the Scouring of Sunstead entirely, forcing a "happily ever after" ending and splicing a generic pop ballad into the credits.
                                 </p>
-                            </div>
+                            </wa-callout>
 
                             <div class="text-center">
                                 <?php 
@@ -161,7 +140,7 @@ $art_2017 = $cdnBaseUrl . '/engine-room-records/artists/firelight/2025-silver-ga
                                 <h3 class="cinzel-font text-white mb-1">Tracklist (1987)</h3>
                                 <span class="text-secondary small text-uppercase letter-spacing-1">The Studio Cut</span>
                             </div>
-                            <span class="badge bg-danger text-white">40 Min Runtime</span>
+                            <wa-badge variant="danger" appearance="accent">40 Min Runtime</wa-badge>
                         </div>
                         <?php 
                             $album_path_web = $path_1987; 
@@ -169,10 +148,10 @@ $art_2017 = $cdnBaseUrl . '/engine-room-records/artists/firelight/2025-silver-ga
                         ?>
                     </div>
                 </div>
-            </div>
+            </wa-tab-panel>
 
-            <div class="tab-pane fade" id="cut-2017" role="tabpanel" aria-labelledby="cut-2017-tab">
-                <div class="row">
+            <wa-tab-panel name="cut-2017">
+                <div class="row pt-4">
                     <div class="col-lg-4 mb-5 mb-lg-0">
                         <div class="sticky-top" style="top: 100px; z-index: 1;">
                             <div class="position-relative mb-4">
@@ -180,12 +159,13 @@ $art_2017 = $cdnBaseUrl . '/engine-room-records/artists/firelight/2025-silver-ga
                                 <div class="position-absolute top-0 start-0 w-100 h-100 rounded" style="background: linear-gradient(135deg, rgba(212,175,55,0.2) 0%, rgba(255,255,255,0) 50%); pointer-events: none;"></div>
                             </div>
                             
-                            <div class="alert alert-dark bg-body-tertiary border-warning text-body-secondary mb-4">
-                                <h5 class="fw-bold cinzel-font text-warning mb-2"><i class="fa-solid fa-gem me-2"></i>The Restoration</h5>
+                            <wa-callout variant="warning" appearance="accent" class="mb-4 d-block">
+                                <i slot="icon" class="fa-solid fa-gem"></i>
+                                <h5 class="fw-bold cinzel-font text-warning mb-2">The Restoration</h5>
                                 <p class="small mb-0">
                                     The definitive 3-disc continuous experience. Every atmospheric synth build, every nautical rock anthem, and the brutal, acoustic epilogue have been fully restored.
                                 </p>
-                            </div>
+                            </wa-callout>
 
                             <div class="text-center">
                                 <?php 
@@ -207,7 +187,7 @@ $art_2017 = $cdnBaseUrl . '/engine-room-records/artists/firelight/2025-silver-ga
                                 <h3 class="cinzel-font text-warning mb-1">Tracklist (2017)</h3>
                                 <span class="text-secondary small text-uppercase letter-spacing-1">The 3-Disc Leviathan Cut</span>
                             </div>
-                            <span class="badge bg-warning text-dark fw-bold">35 Tracks</span>
+                            <wa-badge variant="warning" appearance="accent" class="fw-bold">35 Tracks</wa-badge>
                         </div>
                         <?php 
                             $album_path_web = $path_2017; 
@@ -215,9 +195,8 @@ $art_2017 = $cdnBaseUrl . '/engine-room-records/artists/firelight/2025-silver-ga
                         ?>
                     </div>
                 </div>
-            </div>
-
-        </div>
+            </wa-tab-panel>
+        </wa-tab-group>
 
     </div>
 </div>
@@ -231,9 +210,9 @@ $art_2017 = $cdnBaseUrl . '/engine-room-records/artists/firelight/2025-silver-ga
                 <p class="lead text-body-secondary">
                     Before CGI, weight mattered. Explore the unearthed polaroids from the 1986 creature shop, miniature stages, and the sweltering heat of the Iron Heart sets.
                 </p>
-                <a href="https://merch.aethelsaga.com/shirts/1986-creature-shop" target="_blank" class="btn btn-outline-dark rounded-pill mt-2 fw-bold">
-                    <i class="fa-solid fa-shirt me-2 text-primary"></i>Get the '86 Crew Tee
-                </a>
+                <wa-button href="https://merch.aethelsaga.com/shirts/1986-creature-shop" target="_blank" variant="neutral" appearance="outlined" pill class="mt-2 fw-bold">
+                    <i slot="start" class="fa-solid fa-shirt text-primary"></i>Get the '86 Crew Tee
+                </wa-button>
             </div>
         </div>
 

@@ -24,8 +24,8 @@
         <a href="<?php echo $cdnBaseUrl; ?>/shiloh/images/characters/family/miller/david/sarah-miller.jpg" target="_blank" class="d-block mb-4">
             <img src="<?php echo $cdnBaseUrl; ?>/shiloh/images/thumbnails/family/miller/david/sarah-miller-thumb.jpg" alt="Portrait of Sarah Miller" class="img-fluid rounded shadow-sm  w-100">
         </a>
-        <div class="card border-0 shadow-sm" style="border-top: 5px solid #0d6efd;">
-            <div class="card-body bg-body-tertiary">
+        <wa-card class="card border-0 shadow-sm w-100" style="border-top: 5px solid #0d6efd; --body-padding: 0; --header-padding: 0;">
+            <div class="card-body bg-body-tertiary p-4">
                 <h5 class="fw-bold mb-3 text-uppercase border-bottom pb-2">Profile Data</h5>
                 <ul class="list-unstyled mb-0" style="line-height: 1.8;">
                     <li><strong>Birthdate:</strong> May 2, 1978</li>
@@ -34,7 +34,7 @@
                     <li><strong>Role:</strong> Primary Protector / Legal Guardian</li>
                 </ul>
             </div>
-        </div>
+        </wa-card>
     </div>
 
     <!-- INLINE: Main biography sections detailing character lore -->

@@ -34,11 +34,11 @@ $pageTitle = "The Unfurnished Advantage - Stardust Blacksburg";
     <div class="row g-5 mb-5 align-items-center">
         <div class="col-lg-6">
             <!-- ARCHITECTURE: Negative framing of the standard industry model using 'danger' semantics -->
-            <div class="card border-danger shadow-sm h-100">
-                <div class="card-header bg-danger text-white fw-bold text-uppercase">
+            <wa-card class="card border-danger shadow-sm h-100 w-100" style="--body-padding: 0; --header-padding: 0;">
+                <div class="card-header bg-danger text-white fw-bold text-uppercase p-3">
                     <i class="fa-solid fa-calculator me-2"></i>The Industry Scam
                 </div>
-                <div class="card-body">
+                <div class="card-body p-4">
                     <p class="card-text text-body-secondary">
                         Corporate "Mega-Complexes" charge a premium for furnished units. Let's look at the real cost over a standard 4-year degree.
                     </p>
@@ -60,15 +60,15 @@ $pageTitle = "The Unfurnished Advantage - Stardust Blacksburg";
                         <strong>The Reality:</strong> You just paid $7,200 to rent a vinyl couch and a used twin mattress worth maybe $800. And you don't even get to keep it.
                     </p>
                 </div>
-            </div>
+            </wa-card>
         </div>
 
         <div class="col-lg-6">
-            <div class="card border-success shadow-sm h-100">
-                <div class="card-header bg-success text-white fw-bold text-uppercase">
+            <wa-card class="card border-success shadow-sm h-100 w-100" style="--body-padding: 0; --header-padding: 0;">
+                <div class="card-header bg-success text-white fw-bold text-uppercase p-3">
                     <i class="fa-solid fa-piggy-bank me-2"></i>The Ironwood Way
                 </div>
-                <div class="card-body">
+                <div class="card-body p-4">
                     <p class="card-text text-body-secondary">
                         We charge you $0 for furniture. You bring your own.
                     </p>
@@ -90,7 +90,7 @@ $pageTitle = "The Unfurnished Advantage - Stardust Blacksburg";
                         <strong>The Reality:</strong> You save thousands of dollars, you sleep on a <em>new</em> mattress that you chose, and when you graduate, you sell the furniture or take it with you.
                     </p>
                 </div>
-            </div>
+            </wa-card>
         </div>
     </div>
 

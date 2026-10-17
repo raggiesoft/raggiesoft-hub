@@ -17,14 +17,12 @@
 
 $pageTitle = "Chapter 1: The False Start | Pathfinder West";
 $metaDescription = "Chapter 1 of the Pathfinder West strategy guide. Roxy, Allison, and Alanna discover Jason is missing and navigate the Newport decoy.";
-
-include_once $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php'; 
 ?>
 
-<main class="container my-5 strategy-guide-chapter">
-    <header class="mb-5 pb-3 border-bottom">
+<div class="container my-5 strategy-guide-chapter">
+    <header class="mb-5 pb-3 border-bottom border-secondary-subtle">
         <h1 class="display-4 fw-bold">Chapter 1: The False Start</h1>
-        <p class="text-muted fs-5">Saturday, April 1, 2006 — Virginia Beach to Island 1</p>
+        <p class="text-body-secondary fs-5">Saturday, April 1, 2006 — Virginia Beach to Island 1</p>
     </header>
 
     <article class="narrative-prose fs-5 lh-lg">
@@ -40,16 +38,16 @@ include_once $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
 
         <p>"Rhody?" Roxy yelled down the hallway, her thick New England accent clipping her words. "Why the hell are they goin' to Rhody?"</p>
 
-        <p>In the bedroom, Alanna and Allison were searching the nightstands. Sitting on the dresser was a double-disc CD set: <em>Static & Silence</em> by The Paper Wall.</p>
+        <p>In the bedroom, Alanna and Allison were searching the nightstands. Sitting on the dresser was a double-disc CD set: <em>Static &amp; Silence</em> by The Paper Wall.</p>
 
         <div class="row my-4">
             <div class="col-md-6 text-center">
                 <img src="<?php echo $cdnBaseUrl; ?>/engine-room-records/artists/the-paper-wall/2001-static-and-silence-book-1/album-art.jpg" alt="Static & Silence Book 1" class="img-fluid rounded shadow-sm">
-                <p class="text-muted small mt-2">Book 1: The Long Road West</p>
+                <p class="text-body-secondary small mt-2">Book 1: The Long Road West</p>
             </div>
             <div class="col-md-6 text-center">
                 <img src="<?php echo $cdnBaseUrl; ?>/engine-room-records/artists/the-paper-wall/2001-static-and-silence-book-2/album-art.jpg" alt="Static & Silence Book 2" class="img-fluid rounded shadow-sm">
-                <p class="text-muted small mt-2">Book 2: The Journey Home</p>
+                <p class="text-body-secondary small mt-2">Book 2: The Journey Home</p>
             </div>
         </div>
 
@@ -73,26 +71,26 @@ include_once $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
     </article>
 
     <!-- STRATEGY GUIDE NOTES -->
-    <div class="card bg-dark text-light my-5 border-0 shadow">
-        <div class="card-header bg-primary text-dark text-uppercase fw-bold tracking-wider">
+    <wa-card class="my-5 shadow-sm">
+        <div slot="header" class="text-primary text-uppercase fw-bold tracking-wider">
             <i class="fa-solid fa-gamepad me-2"></i> Guide Notes
         </div>
-        <div class="card-body">
-            <ul class="mb-0 lh-lg">
-                <li><strong>The Audio Cipher:</strong> If you do not pick up <em>Static & Silence</em> here (where it is completely free), you may buy it at a truck stop later for a costly $25.</li>
-                <li><strong>The Mystery Track:</strong> If you examine the CD case, you might notice that track 15, "A Night in Kent", is circled. I wonder why that specific song is highlighted? Could it mean something?</li>
-                <li><strong>The Island 1 Turnaround:</strong> By choosing to stop and turn around at Island 1, the girls successfully avoid paying the punishing $5 return trip toll that triggers if you cross the entire span to the Eastern Shore.</li>
-            </ul>
-        </div>
-    </div>
+        <ul class="mb-0 lh-lg">
+            <li><strong>The Audio Cipher:</strong> If you do not pick up <em>Static &amp; Silence</em> here (where it is completely free), you may buy it at a truck stop later for a costly $25.</li>
+            <li><strong>The Mystery Track:</strong> If you examine the CD case, you might notice that track 15, "A Night in Kent", is circled. I wonder why that specific song is highlighted? Could it mean something?</li>
+            <li><strong>The Island 1 Turnaround:</strong> By choosing to stop and turn around at Island 1, the girls successfully avoid paying the punishing $5 return trip toll that triggers if you cross the entire span to the Eastern Shore.</li>
+        </ul>
+    </wa-card>
 
     <?php 
     // SETUP THE NARRATIVE STEPPER
-    // Defines the pagination links at the bottom of the page.
     $nav = [
-        
+        'prev' => [
+            'url' => '/raggiesoft-games/pathfinder-west/strategy-guide/golden-ending/hail-mary',
+            'label' => 'Guide Overview'
+        ],
         'overview' => [
-            'url' => '/raggiesoft-games/pathfinder-west/strategy-guide/golden-ending/hail-mary/', 
+            'url' => '/raggiesoft-games/pathfinder-west/strategy-guide/golden-ending/hail-mary', 
             'label' => 'Table of Contents'
         ],
         'next' => [
@@ -100,10 +98,6 @@ include_once $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
             'label' => 'Chapter 2: The Cipher'
         ]
     ];
-    include $_SERVER['DOCUMENT_ROOT'] . '/includes/components/navigation/narrative-stepper.php'; 
+    include ROOT_PATH . '/includes/components/navigation/narrative-stepper.php'; 
     ?>
-</main>
-
-<?php 
-include_once $_SERVER['DOCUMENT_ROOT'] . '/includes/footer.php'; 
-?>
+</div>

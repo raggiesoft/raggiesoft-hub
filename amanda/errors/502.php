@@ -59,7 +59,7 @@ if ($is_standalone) {
                 <span class="text-warning">>></span> BAD GATEWAY
             </h2>
             
-            <div class="card terminal-card p-4 border-warning text-start mb-5 mx-auto" style="max-width: 600px;">
+            <wa-card class="terminal-card border-warning text-start mb-5 mx-auto w-100" style="max-width: 600px;">
                 <div class="terminal-header text-warning">
                     <i class="fa-duotone fa-triangle-exclamation me-2"></i>
                     Network Error // Relay Station Alpha
@@ -72,15 +72,15 @@ if ($is_standalone) {
                         This usually indicates a temporary glitch in the sub-space network. The signal is garbled. Please try refreshing your connection.
                     </p>
                 </div>
-            </div>
+            </wa-card>
             
             <div class="d-flex justify-content-center gap-3 flex-wrap">
-                <a href="/" class="btn btn-outline-light rounded-pill px-4">
-                    <i class="fa-duotone fa-rotate-right me-2"></i>Retry Uplink
-                </a>
-                <a href="/contact" class="btn btn-warning rounded-pill px-4 shadow-glow text-dark">
-                    <i class="fa-duotone fa-envelope me-2"></i>Contact Flight Control
-                </a>
+                <wa-button href="/" variant="neutral" appearance="outlined" pill>
+                    <i slot="start" class="fa-duotone fa-rotate-right"></i>Retry Uplink
+                </wa-button>
+                <wa-button href="/contact" variant="warning" appearance="accent" pill class="shadow-glow">
+                    <i slot="start" class="fa-duotone fa-envelope"></i>Contact Flight Control
+                </wa-button>
             </div>
 
         </div>

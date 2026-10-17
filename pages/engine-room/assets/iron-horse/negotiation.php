@@ -22,7 +22,7 @@ $pageTitle = "Lore: The Sainte-Claire Protocol (2002)";
     
     <div class="row justify-content-center mb-5">
         <div class="col-lg-8 text-center">
-            <span class="badge bg-warning text-dark mb-2 border border-dark">ARCHIVE: 2002</span>
+            <wa-badge variant="warning" appearance="accent" class="mb-2">ARCHIVE: 2002</wa-badge>
             <h1 class="display-4 fw-bold text-body-emphasis">The Sainte-Claire Protocol</h1>
             <p class="lead text-body-secondary fst-italic">
                 The day the "Ironhead" reputation was forged in steel and perfect Québécois.
@@ -33,7 +33,7 @@ $pageTitle = "Lore: The Sainte-Claire Protocol (2002)";
     <div class="row justify-content-center">
         <div class="col-lg-9">
             
-            <div class="card mb-4 border-0 shadow-sm bg-body-tertiary">
+            <wa-card class="card mb-4 border-0 shadow-sm bg-body-tertiary w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
                 <div class="card-body p-4">
                     <p class="mb-3 font-monospace text-body-secondary small">
                         <strong>LOCATION:</strong> Executive Sales Office, Sainte-Claire Coachworks.<br>
@@ -70,17 +70,17 @@ $pageTitle = "Lore: The Sainte-Claire Protocol (2002)";
                         "I don't need a party bus, Michel. I need a chassis that won't twist when I put a 400-pound industrial lift in the side door. I need steel."
                     </p>
                 </div>
-            </div>
+            </wa-card>
 
-            <div class="alert alert-success border-success-subtle d-flex align-items-center shadow-sm">
-                <i class="fa-solid fa-handshake-simple me-3 fs-3 text-success"></i>
+            <wa-callout variant="success" appearance="accent" class="shadow-sm d-block">
+                <i slot="icon" class="fa-solid fa-handshake-simple text-success"></i>
                 <div>
                     <strong>The Outcome:</strong> Michel canceled the Pop Star's order that afternoon citing "irreconcilable engineering differences." He moved the O'Connell "Iron Horse" to Bay 1 immediately.
                 </div>
-            </div>
+            </wa-callout>
 
-            <div class="card bg-black text-white border-info mt-5 shadow">
-                <div class="card-header bg-info text-dark fw-bold text-uppercase">
+            <wa-card class="card bg-black text-white border-info mt-5 shadow w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
+                <div class="card-header bg-info text-dark fw-bold text-uppercase p-3">
                     <i class="fa-solid fa-forward me-2"></i>Flash Forward: 2018
                 </div>
                 <div class="card-body p-4">
@@ -91,7 +91,7 @@ $pageTitle = "Lore: The Sainte-Claire Protocol (2002)";
                         The floor crew remembered the American band that ate smoked meat with them in the breakroom and spoke their language. They started cutting the steel before the contract was even signed.
                     </p>
                 </div>
-            </div>
+            </wa-card>
 
         </div>
     </div>

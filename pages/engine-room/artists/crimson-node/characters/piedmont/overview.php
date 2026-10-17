@@ -36,17 +36,17 @@ $pageTitle = "The University of the Piedmont - Crimson Node";
     <div class="row g-4 justify-content-center">
         <!-- Trent Montgomery -->
         <div class="col-md-6 col-lg-4">
-            <div class="card h-100 border-0 shadow-sm" style="border-top: 5px solid #ff7900;">
+            <wa-card class="card h-100 border-0 shadow-sm w-100" style="border-top: 5px solid #ff7900; --body-padding: 0; --header-padding: 0;">
                 <a href="<?php echo $cdnBaseUrl; ?>/shiloh/images/characters/piedmont/trent-montgomery.jpg" target="_blank">
                     <img src="<?php echo $cdnBaseUrl; ?>/shiloh/images/thumbnails/piedmont/trent-montgomery-thumb.jpg" class="card-img-top rounded-0" alt="Portrait of Trent Montgomery" style="aspect-ratio: 1/1; object-fit: cover; object-position: center top;">
                 </a>
-                <div class="card-body">
+                <div class="card-body p-4">
                     <h4 class="card-title fw-bold">Trent Montgomery</h4>
                     <h6 class="card-subtitle mb-3 text-uppercase fw-bold" style="color: #ff7900;">The Lacrosse Bro</h6>
                     <p class="card-text text-muted">A hyper-insecure lacrosse player desperate for status at The University of the Piedmont. His false dominance met its end at the hands of the Brooks sisters.</p>
-                    <a href="/engine-room/artists/crimson-node/characters/piedmont/trent-montgomery" class="btn btn-outline-secondary btn-sm">View Profile</a>
+                    <wa-button variant="neutral" appearance="outlined" size="small" href="/engine-room/artists/crimson-node/characters/piedmont/trent-montgomery">View Profile</wa-button>
                 </div>
-            </div>
+            </wa-card>
         </div>
     </div>
 </div>

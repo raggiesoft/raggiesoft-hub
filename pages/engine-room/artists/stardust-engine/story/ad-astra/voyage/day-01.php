@@ -23,7 +23,7 @@ $pageTitle = "Day 01: Ignition - Ad Astra Log";
     
     <div class="d-flex justify-content-between align-items-center mb-5 border-bottom border-warning pb-3">
         <div>
-            <span class="badge bg-warning text-dark font-monospace mb-2">LOG: DAY 01</span>
+            <wa-badge variant="warning" appearance="accent" class="font-monospace mb-2">LOG: DAY 01</wa-badge>
             <h1 class="display-4 fw-bold text-uppercase text-light mb-0" style="font-family: 'Audiowide';">Ignition</h1>
         </div>
         <div class="text-end text-white-50 font-monospace small">
@@ -61,9 +61,9 @@ $pageTitle = "Day 01: Ignition - Ad Astra Log";
                 <div slot="header" class=" border-bottom border-success text-success fw-bold font-monospace p-3">
                     <i class="fa-duotone fa-waveform-lines me-2"></i>AUDIO LOG: "IGNITION" (LIVE)
                 </div>
-                <div class="card-body">
+                <div class="card-body p-4">
                     <div class="d-flex align-items-center">
-                        <button class="btn btn-outline-success rounded-circle me-3"><i class="fa-solid fa-play"></i></button>
+                        <wa-button variant="success" appearance="outlined" class="rounded-circle me-3"><i class="fa-solid fa-play"></i></wa-button>
                         <div class="flex-grow-1">
                             <div class="progress" style="height: 4px; background-color: #333;">
                                 <div class="progress-bar bg-success" role="progressbar" style="width: 35%"></div>
@@ -86,7 +86,7 @@ $pageTitle = "Day 01: Ignition - Ad Astra Log";
                 <div slot="header" class=" text-warning fw-bold text-uppercase border-bottom border-secondary p-3">
                     <i class="fa-duotone fa-sensor-on me-2"></i>Sensory Data
                 </div>
-                <div class="card-body text-white-50 small">
+                <div class="card-body text-white-50 small p-4">
                     <ul class="list-unstyled mb-0 font-monospace">
                         <li class="mb-2">> <strong>Vibration:</strong> 40Hz (Constant)</li>
                         <li class="mb-2">> <strong>Visuals:</strong> Amber Emergency Strobes</li>
@@ -97,7 +97,7 @@ $pageTitle = "Day 01: Ignition - Ad Astra Log";
             </wa-card>
 
             <wa-card class="card bg-black border-danger mb-4 w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
-                <div class="card-body">
+                <div class="card-body p-4">
                     <h6 class="text-danger fw-bold text-uppercase mb-2">
                         <i class="fa-duotone fa-triangle-exclamation me-2"></i>Safety Protocol
                     </h6>

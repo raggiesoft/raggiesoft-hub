@@ -49,6 +49,6 @@
         <a href="#" id="encyclopedia-modal-read-more" class="text-decoration-none small fw-bold">
             Open Full Entry <i class="fa-solid fa-arrow-right-long ms-1"></i>
         </a>
-        <wa-button variant="brand" outline class="close-encyclopedia-btn">Close</wa-button>
+        <wa-button variant="brand" appearance="outlined" class="close-encyclopedia-btn">Close</wa-button>
     </div>
 </wa-dialog>

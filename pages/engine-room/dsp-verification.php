@@ -167,11 +167,11 @@ $not_found = ($is_artist_view && empty($artist_tracks)) || ($is_track_view && em
     </div>
 
     <?php if ($not_found): ?>
-        <div class="alert alert-danger border-danger border-2 p-4 font-sans-serif">
+        <wa-callout variant="danger" appearance="accent" class="p-4 font-sans-serif d-block">
             <h4 class="alert-heading fw-bold"><i class="fa-solid fa-triangle-exclamation me-2"></i>Verification Tracking Error</h4>
             <p class="mb-0">The requested asset footprint parameter map could not be verified within the master registry index.</p>
-        </div>
-        <a href="/engine-room/dsp-verification" class="btn btn-outline-dark mt-3 d-print-none">Return to Master Catalog</a>
+        </wa-callout>
+        <wa-button variant="neutral" appearance="outlined" href="/engine-room/dsp-verification" class="mt-3 d-print-none">Return to Master Catalog</wa-button>
     
     <?php elseif ($is_track_view): ?>
         <!-- LAYOUT B: STANDALONE TRACK AFFIDAVIT VIEW -->
@@ -179,14 +179,14 @@ $not_found = ($is_artist_view && empty($artist_tracks)) || ($is_track_view && em
             <a href="?artist=<?php echo urlencode($requested_artist_slug); ?>" class="btn btn-sm btn-outline-dark font-monospace">
                 <i class="fa-solid fa-arrow-left me-1"></i> Return to Table View
             </a>
-            <button onclick="window.print();" class="btn btn-sm btn-dark font-monospace">
-                <i class="fa-solid fa-print me-1"></i> Export Affidavit (PDF)
-            </button>
+            <wa-button variant="neutral" appearance="accent" size="small" onclick="window.print();" class="font-monospace">
+                <i slot="start" class="fa-solid fa-print"></i> Export Affidavit (PDF)
+            </wa-button>
         </div>
 
-        <div class="alert alert-info border-info p-3 small mb-4 shadow-sm font-sans-serif">
+        <wa-callout variant="brand" appearance="accent" class="p-3 small mb-4 shadow-sm font-sans-serif d-block">
             <strong><i class="fa-solid fa-circle-certificate me-1"></i> System Log:</strong> Displaying cryptographically indexed metadata ledger sheets for track asset resource: <code><?php echo htmlspecialchars($current_track_metadata['err_id']); ?></code>.
-        </div>
+        </wa-callout>
 
         <div class="p-3 bg-light border border-secondary rounded small mb-4 font-sans-serif">
             <strong><i class="fa-solid fa-scale-balanced me-1"></i> Fictitious World-Building &amp; Narrative Lore Disclosure (Notice to DSP Reviewers):</strong> All band members (e.g., Ryan, Cassidy, and Holly O'Connell), in-universe corporate structures (e.g., "Engine Room Records, LLC", "Forger Nation Trust", "Apex Records", "OmniCorp", "Prairie Coachworks", "Sainte-Claire"), fictional universities and stadiums (e.g., "Commonwealth Polytechnic Institute / CPI", "The Forgers", "The Crucible"), in-universe legal contracts, and historical narrative dates (e.g., 1983&ndash;2017) referenced in track lyrics or website lore are <strong>100% works of creative fiction</strong>. Any resemblance to actual persons (living or dead), businesses, academic institutions, or events is purely coincidental. In the real world, <strong>Michael P. Ragsdale</strong> is the sole human creator, owner, and 100% rights-holder of this catalog.
@@ -204,7 +204,7 @@ $not_found = ($is_artist_view && empty($artist_tracks)) || ($is_track_view && em
             if ($md_content !== false) {
                 echo $parsedown->text($md_content);
             } else {
-                echo '<div class="alert alert-danger font-sans-serif m-0"><i class="fa-solid fa-file-circle-exclamation me-2"></i><strong>Audit Trace Failed:</strong> Secure asset description block could not be pulled from target server location.</div>';
+                echo '<wa-callout variant="danger" appearance="accent" class="font-sans-serif m-0 d-block"><i slot="icon" class="fa-solid fa-file-circle-exclamation"></i><strong>Audit Trace Failed:</strong> Secure asset description block could not be pulled from target server location.</wa-callout>';
             }
             ?>
         </div>
@@ -265,7 +265,7 @@ $not_found = ($is_artist_view && empty($artist_tracks)) || ($is_track_view && em
                         <?php endforeach; ?>
                     <?php else: ?>
                         <div class="col-12">
-                            <div class="alert alert-secondary small"><i class="fa-solid fa-spinner fa-spin me-2"></i>Awaiting Master Catalog Sync...</div>
+                            <wa-callout variant="neutral" appearance="accent" class="small d-block"><i slot="icon" class="fa-solid fa-spinner fa-spin"></i>Awaiting Master Catalog Sync...</wa-callout>
                         </div>
                     <?php endif; ?>
                 </div>
@@ -276,12 +276,12 @@ $not_found = ($is_artist_view && empty($artist_tracks)) || ($is_track_view && em
             <div class="mb-4">
                 <div class="d-flex justify-content-between align-items-end border-bottom border-dark pb-2 mb-3 flex-wrap gap-2">
                     <h3 class="h6 fw-bold text-uppercase mb-0">4. Artist Profile & Direct Claim: <span class="text-primary"><?php echo htmlspecialchars($artist_persona); ?></span></h3>
-                    <a href="/engine-room/dsp-verification" class="btn btn-sm btn-outline-dark font-monospace d-print-none"><i class="fa-solid fa-arrow-left me-1"></i> Back to Directory</a>
+                    <wa-button variant="neutral" appearance="outlined" size="small" href="/engine-room/dsp-verification" class="font-monospace d-print-none"><i slot="start" class="fa-solid fa-arrow-left"></i> Back to Directory</wa-button>
                 </div>
                 
-                <div class="alert alert-info border-info p-3 small mb-4 shadow-sm">
+                <wa-callout variant="brand" appearance="accent" class="p-3 small mb-4 shadow-sm d-block">
                     <strong><i class="fa-solid fa-circle-info me-1"></i> Notice to DSP Reviewers:</strong> I, Michael P. Ragsdale, am the 100% independent solo artist behind the project <strong><?php echo htmlspecialchars($artist_persona); ?></strong>. "Engine Room Records" is NOT a third-party record label; it is strictly my personal self-publishing alias used for DistroKid metadata. I am claiming my own artist profile.
-                </div>
+                </wa-callout>
 
                 <div class="table-responsive">
                     <table class="table table-bordered table-striped dsp-table align-middle">
@@ -308,9 +308,9 @@ $not_found = ($is_artist_view && empty($artist_tracks)) || ($is_track_view && em
                                         <?php if (!empty($track['isrc']) && $track['isrc'] !== 'null'): ?>
                                             <?php echo htmlspecialchars($track['isrc']); ?>
                                         <?php elseif ($is_vault): ?>
-                                            <span class="badge bg-secondary text-light border border-dark"><i class="fa-solid fa-lock me-1"></i>Vault Archive</span>
+                                            <wa-badge variant="neutral" appearance="accent"><i class="fa-solid fa-lock me-1"></i>Vault Archive</wa-badge>
                                         <?php else: ?>
-                                            <span class="badge bg-warning text-dark border border-dark">Pending</span>
+                                            <wa-badge variant="warning" appearance="accent">Pending</wa-badge>
                                         <?php endif; ?>
                                     </td>
                                     <td>

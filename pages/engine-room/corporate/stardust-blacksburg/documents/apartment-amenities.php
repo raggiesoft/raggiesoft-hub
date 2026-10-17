@@ -41,8 +41,8 @@ $pageTitle = "Unit Specifications - Stardust Blacksburg";
 
         <!-- ARCHITECTURE: Domestic Infrastructure Grid (Laundry, Kitchen, Balcony) -->
         <div class="col-md-6 col-lg-4">
-            <div class="card h-100 border-0 bg-body-tertiary shadow-sm">
-                <div class="card-body">
+            <wa-card class="card h-100 border-0 bg-body-tertiary shadow-sm w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
+                <div class="card-body p-4">
                     <div class="d-flex align-items-center mb-3">
                         <i class="fa-solid fa-jug-detergent fa-2x text-primary me-3"></i>
                         <h6 class="fw-bold text-uppercase mb-0">In-Unit Laundry</h6>
@@ -51,12 +51,12 @@ $pageTitle = "Unit Specifications - Stardust Blacksburg";
                         <strong>Full-Size GE Profile™ Washer & Dryer.</strong> No coin-ops. No hauling baskets down the stairs. Do your laundry while you study.
                     </p>
                 </div>
-            </div>
+            </wa-card>
         </div>
 
         <div class="col-md-6 col-lg-4">
-            <div class="card h-100 border-0 bg-body-tertiary shadow-sm">
-                <div class="card-body">
+            <wa-card class="card h-100 border-0 bg-body-tertiary shadow-sm w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
+                <div class="card-body p-4">
                     <div class="d-flex align-items-center mb-3">
                         <i class="fa-solid fa-sink fa-2x text-primary me-3"></i>
                         <h6 class="fw-bold text-uppercase mb-0">Chef's Kitchen</h6>
@@ -65,12 +65,12 @@ $pageTitle = "Unit Specifications - Stardust Blacksburg";
                         Full-size dishwasher, garbage disposal, and 30-inch glass-top range. Granite countertops are standard because they are durable and easy to clean.
                     </p>
                 </div>
-            </div>
+            </wa-card>
         </div>
 
         <div class="col-md-6 col-lg-4">
-            <div class="card h-100 border-0 bg-body-tertiary shadow-sm">
-                <div class="card-body">
+            <wa-card class="card h-100 border-0 bg-body-tertiary shadow-sm w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
+                <div class="card-body p-4">
                     <div class="d-flex align-items-center mb-3">
                         <i class="fa-solid fa-sun-plant-wilt fa-2x text-primary me-3"></i>
                         <h6 class="fw-bold text-uppercase mb-0">Private Outdoor Space</h6>
@@ -79,7 +79,7 @@ $pageTitle = "Unit Specifications - Stardust Blacksburg";
                         Every unit features a dedicated concrete balcony or ground-floor patio. Perfect for a caffeine break or reading in natural light.
                     </p>
                 </div>
-            </div>
+            </wa-card>
         </div>
 
         <div class="col-12 mt-4">
@@ -149,9 +149,9 @@ $pageTitle = "Unit Specifications - Stardust Blacksburg";
     </div>
 
     <!-- ARCHITECTURE: Final disclaimer linking back to the Furniture Philosophy -->
-    <div class="alert alert-light border border-secondary mt-5 text-center small">
+    <wa-callout variant="neutral" appearance="accent" class="border mt-5 text-center small d-block">
         <span class="fw-bold text-uppercase text-muted">Note on Furnishings:</span> 
         <span class="text-muted">Unless otherwise noted in your specific lease addendum, units are leased <strong>unfurnished</strong> to allow you to build your own environment.</span>
-    </div>
+    </wa-callout>
 
 </div>

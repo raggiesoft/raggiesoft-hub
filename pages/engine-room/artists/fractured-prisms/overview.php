@@ -61,8 +61,8 @@ if ($eras) {
 </div>
 
 <div class="container mt-4 mb-2">
-    <div class="alert bg-prism-dark border-secondary shadow-sm d-flex align-items-center" role="alert">
-        <i class="fa-duotone fa-robot-astromech fa-3x me-3 text-secondary d-none d-md-block"></i>
+    <wa-callout variant="neutral" appearance="accent" class="shadow-sm d-block">
+        <i slot="icon" class="fa-duotone fa-robot-astromech fa-3x text-secondary d-none d-md-block"></i>
         <div>
             <h4 class="alert-heading h6 fw-bold mb-1 text-uppercase letter-spacing-1 text-body"><i class="fa-duotone fa-robot-astromech me-2 text-secondary d-inline-block d-md-none"></i>Transparency & Timeline Notice</h4>
             <p class="mb-2 small text-muted border-bottom border-secondary pb-2">
@@ -73,7 +73,7 @@ if ($eras) {
                 <a href="/about/ai-disclaimer" class="alert-link fw-bold text-primary border-bottom border-primary text-decoration-none ms-1">Read the full AI Disclaimer.</a>
             </p>
         </div>
-    </div>
+    </wa-callout>
 </div>
 
 <div class="container py-5 border-bottom border-secondary border-opacity-25 position-relative" style="z-index: 1050;">
@@ -89,9 +89,9 @@ if ($eras) {
 
             <div class="col-lg-6 p-4 p-md-5 d-flex flex-column justify-content-center text-center text-lg-start bg-prism-dark text-body">
                 <div>
-                    <span class="badge border border-prism text-primary mb-3 px-3 py-2 text-uppercase font-monospace">
+                    <wa-badge variant="brand" appearance="accent" class="text-primary mb-3 px-3 py-2 text-uppercase font-monospace">
                         <i class="fa-solid fa-satellite-dish me-2 pulse-icon"></i>Now Streaming
-                    </span>
+                    </wa-badge>
                     <h2 class="display-5 fw-bold text-uppercase mb-3 gothic-font">The Gates Are Open</h2>
                     <p class="lead text-muted mb-4 font-monospace small">
                         The complete, uncompromised discography of Fractured Prisms has officially cleared the global distribution network. Step into the gaslamp fog and experience the 100-year echo.
@@ -118,9 +118,9 @@ if ($eras) {
 
                     <div class="d-flex flex-column align-items-center align-items-lg-start">
                         <div class="d-flex flex-wrap justify-content-center justify-content-lg-start gap-3">
-                            <a href="https://music.raggiesoft.com/fractured-prisms" target="_blank" rel="noopener" class="btn btn-primary btn-lg shadow-sm px-4 fw-bold d-inline-flex align-items-center font-monospace small">
-                                <i class="fa-duotone fa-headphones me-2"></i>The Listening Room
-                            </a>
+                            <wa-button variant="brand" appearance="accent" size="large" href="https://music.raggiesoft.com/fractured-prisms" target="_blank" rel="noopener" class="shadow-sm px-4 fw-bold d-inline-flex align-items-center font-monospace small">
+                                <i slot="start" class="fa-duotone fa-headphones"></i>The Listening Room
+                            </wa-button>
 
                             <?php
                                 $storeProps = [
@@ -134,12 +134,12 @@ if ($eras) {
                                 include ROOT_PATH . '/includes/components/store-button.php';
                             ?>
 
-                            <a href="https://facebook.com/The.Fractured.Prisms" target="_blank" class="btn btn-facebook btn-lg shadow-sm px-4 fw-bold d-inline-flex align-items-center font-monospace small">
+                            <wa-button variant="neutral" appearance="accent" size="large" href="https://facebook.com/The.Fractured.Prisms" target="_blank" class="btn-facebook shadow-sm px-4 fw-bold d-inline-flex align-items-center font-monospace small">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="me-2" viewBox="0 0 16 16">
                                     <path d="M16 8.049c0-4.446-3.58-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
                                 </svg>
                                 Join the Square
-                            </a>
+                            </wa-button>
                         </div>
                     </div>
                 </div>
@@ -151,9 +151,9 @@ if ($eras) {
 
 <div class="container py-5 border-bottom border-secondary border-opacity-25 position-relative" style="z-index: 1050;">
     <div class="text-center mb-5">
-        <span class="badge bg-transparent border border-secondary text-muted px-3 py-2 text-uppercase font-monospace mb-3">
+        <wa-badge variant="neutral" appearance="outlined" class="text-muted px-3 py-2 text-uppercase font-monospace mb-3">
             <i class="fa-duotone fa-landmark me-2"></i>Historical Archives
-        </span>
+        </wa-badge>
         <h2 class="display-5 fw-bold text-uppercase text-body mb-3 gothic-font text-glow-prism">
             The 1985 Phenomenon
         </h2>
@@ -165,7 +165,7 @@ if ($eras) {
     <div class="row g-5 justify-content-center">
         
         <div class="col-md-6 col-lg-5">
-            <div class="card h-100 border-secondary bg-prism-dark hover-lift overflow-hidden">
+            <wa-card class="card h-100 border-secondary bg-prism-dark hover-lift overflow-hidden w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
                 <div class="card-body p-4 text-center d-flex flex-column border-top border-prism">
                     <h3 class="h4 text-primary fw-bold text-uppercase mb-1 gothic-font">1883 (The Rock Opera)</h3>
                     <p class="small text-muted font-monospace mb-3">Released: 1984 // 2-Disc Concept Album</p>
@@ -173,11 +173,11 @@ if ($eras) {
                         Following the massive success of <em>Carnaby Street</em>, Rhys and Claire plunged fully into their psychological sanctuary. The result was a sprawling, 2-disc rock opera set entirely within the gaslamp-lit halls of the Victorian-era Hollow Square, bringing the rest of their deceased family "back to life" through complex synthesiser arrangements.
                     </p>
                 </div>
-            </div>
+            </wa-card>
         </div>
 
         <div class="col-md-6 col-lg-5">
-            <div class="card h-100 border-secondary bg-prism-dark hover-lift overflow-hidden">
+            <wa-card class="card h-100 border-secondary bg-prism-dark hover-lift overflow-hidden w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
                 <div class="card-body p-4 text-center d-flex flex-column border-top border-prism">
                     <h3 class="h4 text-primary fw-bold text-uppercase mb-1 gothic-font">Live at Independence Stadium</h3>
                     <p class="small text-muted font-monospace mb-3">Philadelphia, PA // 1985</p>
@@ -185,7 +185,7 @@ if ($eras) {
                         Their very first live performance was not in a pub or a theater, but a sold-out, 90,000-seat stadium. With no opening act, they rented the venue directly. The concert was a masterclass in controlled sensory environments, allowing Claire to perform safely while delivering a legendary, once-in-a-lifetime physical manifestation of their studio sound.
                     </p>
                 </div>
-            </div>
+            </wa-card>
         </div>
 
     </div>
@@ -263,7 +263,7 @@ if ($eras) {
 <div class="container py-5">
     <div class="row g-4">
         <div class="col-lg-4">
-            <div class="card h-100 border-secondary bg-transparent hover-lift">
+            <wa-card class="card h-100 border-secondary bg-transparent hover-lift w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
                 <div class="card-body d-flex flex-column text-center p-4">
                     <div class="mb-3 text-secondary"><i class="fa-duotone fa-ghost fa-3x"></i></div>
                     <h3 class="fw-bold text-primary gothic-font">The Residents</h3>
@@ -272,10 +272,10 @@ if ($eras) {
                     </p>
                     <a href="<?php echo $root; ?>/band" class="btn btn-outline-primary mt-auto rounded-pill font-monospace small">View Bios</a>
                 </div>
-            </div>
+            </wa-card>
         </div>
         <div class="col-lg-4">
-            <div class="card h-100 border-secondary bg-transparent hover-lift">
+            <wa-card class="card h-100 border-secondary bg-transparent hover-lift w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
                 <div class="card-body d-flex flex-column text-center p-4">
                     <div class="mb-3 text-secondary"><i class="fa-duotone fa-book-journal-whills fa-3x"></i></div>
                     <h3 class="fw-bold text-primary gothic-font">The Lore</h3>
@@ -284,10 +284,10 @@ if ($eras) {
                     </p>
                     <a href="<?php echo $root; ?>/story" class="btn btn-outline-primary mt-auto rounded-pill font-monospace small">Read History</a>
                 </div>
-            </div>
+            </wa-card>
         </div>
         <div class="col-lg-4">
-            <div class="card h-100 border-secondary bg-transparent hover-lift">
+            <wa-card class="card h-100 border-secondary bg-transparent hover-lift w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
                 <div class="card-body d-flex flex-column text-center p-4">
                     <div class="mb-3 text-secondary"><i class="fa-duotone fa-compact-disc fa-3x"></i></div>
                     <h3 class="fw-bold text-primary gothic-font">The Discography</h3>
@@ -296,7 +296,7 @@ if ($eras) {
                     </p>
                     <a href="<?php echo $root; ?>/discography" class="btn btn-outline-primary mt-auto rounded-pill font-monospace small">View Albums</a>
                 </div>
-            </div>
+            </wa-card>
         </div>
     </div>
 </div>

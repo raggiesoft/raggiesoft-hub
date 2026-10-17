@@ -27,8 +27,8 @@ $pageTitle = "Plan of Reorganization: The Aethelgard Proposal";
     <div class="row justify-content-center">
         <div class="col-lg-10">
             
-            <div class="card border-success border-3 shadow-lg">
-                <div class="card-header bg-success text-white fw-bold text-uppercase d-flex justify-content-between align-items-center">
+            <wa-card class="card border-success border-3 shadow-lg w-100" style="--body-padding: 0; --header-padding: 0;">
+                <div class="card-header bg-success text-white fw-bold text-uppercase d-flex justify-content-between align-items-center p-3">
                     <span><i class="fa-solid fa-gavel me-2"></i>U.S. Bankruptcy Court // District of Delaware</span>
                     <span class="font-monospace">Case No. 18-11492 (OMG)</span>
                 </div>
@@ -50,9 +50,9 @@ $pageTitle = "Plan of Reorganization: The Aethelgard Proposal";
                             <p>
                                 The Proponent asserts that the Debtor's primary assets (Legacy Master Recordings) are effectively "toxic" due to Gross Reputational Negligence following the "Visual Audit" scandal exposed by <em>The Zenith Report</em>.
                             </p>
-                            <div class="alert alert-secondary border-0 p-3 small text-muted fst-italic">
+                            <wa-callout variant="neutral" appearance="accent" class="p-3 small fst-italic d-block">
                                 <strong>The "Poison Pill" Logic:</strong> If the Lenders attempt to auction these assets to a third party (e.g., Private Equity), the O'Connell Family Trust will immediately file a <strong>$500 Million Class-Action Discrimination Suit</strong>. This litigation will freeze the assets for 5-10 years, rendering them unsellable.
-                            </div>
+                            </wa-callout>
                         </div>
                     </div>
 
@@ -84,20 +84,20 @@ $pageTitle = "Plan of Reorganization: The Aethelgard Proposal";
                     <div class="bg-light border border-secondary p-4 mt-4 text-center">
                         <h6 class="text-uppercase fw-bold text-muted mb-3">Proof of Funds (Escrow)</h6>
                         <div class="display-4 fw-bold text-dark mb-2">$150,000,000.00</div>
-                        <span class="badge bg-success text-uppercase">Verified: Wire Transfer Complete</span>
+                        <wa-badge variant="success" appearance="accent" class="text-uppercase">Verified: Wire Transfer Complete</wa-badge>
                         <div class="small text-muted mt-2">Source: Aethelgard Holdings, LLC (Family Office)</div>
                     </div>
 
-                    <div class="alert alert-success border-success mt-4 d-flex align-items-center">
-                        <i class="fa-solid fa-check-circle fa-2x me-3"></i>
+                    <wa-callout variant="success" appearance="accent" class="mt-4 d-block">
+                        <i slot="icon" class="fa-solid fa-check-circle"></i>
                         <div>
                             <strong>STATUS: CONFIRMED.</strong><br>
                             The Official Committee of Unsecured Creditors has withdrawn its objection. The Plan is approved.
                         </div>
-                    </div>
+                    </wa-callout>
 
                 </div>
-            </div>
+            </wa-card>
 
         </div>
     </div>

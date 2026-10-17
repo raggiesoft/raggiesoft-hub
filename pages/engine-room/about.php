@@ -62,7 +62,7 @@ $pageTitle = "About Engine Room Records - The Fortress";
 
     <div class="row justify-content-center mb-5">
         <div class="col-lg-10">
-            <div class="card border-0 shadow-lg overflow-hidden">
+            <wa-card class="card border-0 shadow-lg overflow-hidden w-100" style="--body-padding: 0; --header-padding: 0;">
                 <div class="row g-0">
                     <div class="col-md-5 bg-black d-flex align-items-center justify-content-center p-5">
                         <div class="text-center">
@@ -96,13 +96,13 @@ $pageTitle = "About Engine Room Records - The Fortress";
                         </div>
                     </div>
                 </div>
-            </div>
+            </wa-card>
         </div>
     </div>
 
     <div class="row justify-content-center mb-5">
         <div class="col-lg-10">
-            <div class="card border-0 shadow-lg overflow-hidden">
+            <wa-card class="card border-0 shadow-lg overflow-hidden w-100" style="--body-padding: 0; --header-padding: 0;">
                 <div class="row g-0">
                     <div class="col-md-5 bg-black d-flex align-items-center justify-content-center p-5 border-end border-secondary border-opacity-25">
                         <div class="text-center">
@@ -127,7 +127,7 @@ $pageTitle = "About Engine Room Records - The Fortress";
                         </div>
                     </div>
                 </div>
-            </div>
+            </wa-card>
         </div>
     </div>
 
@@ -146,11 +146,11 @@ $pageTitle = "About Engine Room Records - The Fortress";
 
     <div class="row justify-content-center mb-5">
         <div class="col-lg-12">
-            <div class="card bg-dark border-secondary shadow-lg">
+            <wa-card class="card bg-dark border-secondary shadow-lg w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
                 <div class="card-header bg-black border-bottom border-secondary py-3">
                     <div class="d-flex align-items-center justify-content-between">
                         <h5 class="mb-0 text-white text-uppercase"><i class="fa-duotone fa-sitemap me-2 text-primary"></i>The Infrastructure</h5>
-                        <span class="badge bg-primary bg-opacity-25 text-primary border border-primary">Updated: 2025</span>
+                        <wa-badge variant="brand" appearance="filled-outlined" class="text-primary">Updated: 2025</wa-badge>
                     </div>
                 </div>
                 <div class="card-body bg-gradient-dark p-4">
@@ -170,7 +170,7 @@ $pageTitle = "About Engine Room Records - The Fortress";
                     }
                     ?>
                 </div>
-            </div>
+            </wa-card>
         </div>
     </div>
     

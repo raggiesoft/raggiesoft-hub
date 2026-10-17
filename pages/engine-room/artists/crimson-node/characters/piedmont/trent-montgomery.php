@@ -44,9 +44,9 @@ $pageTitle = "Trent Montgomery - Crimson Node";
                     <h1 class="display-5 fw-bold mb-1" style="font-family: 'Impact', sans-serif; letter-spacing: 1px;">TRENT <span class="text-secondary">MONTGOMERY</span></h1>
                     <h5 class="text-uppercase fw-bold mb-2" style="color: #ff7900; letter-spacing: 2px;">The Lacrosse Bro</h5>
                     <div class="d-flex flex-wrap gap-2 mb-0">
-                        <span class="badge bg-dark text-white rounded-pill px-3 py-2"><i class="fa-solid fa-cake-candles me-1"></i> 1977 (Approx)</span>
-                        <span class="badge bg-dark text-white rounded-pill px-3 py-2"><i class="fa-solid fa-building-columns me-1"></i> The University of the Piedmont</span>
-                        <span class="badge border border-danger text-danger bg-transparent rounded-pill px-3 py-2 fw-bold"><i class="fa-solid fa-ban me-1"></i> EXILED</span>
+                        <wa-badge variant="neutral" appearance="accent" pill class="px-3 py-2"><i class="fa-solid fa-cake-candles me-1"></i> 1977 (Approx)</wa-badge>
+                        <wa-badge variant="neutral" appearance="accent" pill class="px-3 py-2"><i class="fa-solid fa-building-columns me-1"></i> The University of the Piedmont</wa-badge>
+                        <wa-badge variant="danger" appearance="outlined" pill class="text-danger px-3 py-2 fw-bold"><i class="fa-solid fa-ban me-1"></i> EXILED</wa-badge>
                     </div>
                 </div>
             </div>

@@ -24,7 +24,7 @@
                 </p>
             </div>
 
-            <div class="card shadow-sm mb-4 border-0 bg-body-tertiary">
+            <wa-card class="card shadow-sm mb-4 border-0 bg-body-tertiary w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
                 <div class="card-body p-4">
                     <div class="d-flex align-items-center mb-3">
                         <div class="bg-primary-subtle text-primary rounded-circle p-3 me-3">
@@ -49,9 +49,9 @@
                         <em>*This mechanics engine is public domain and has been used for cognitive training for over a century.</em>
                     </p>
                 </div>
-            </div>
+            </wa-card>
 
-            <div class="card shadow-sm mb-4 border-0 bg-body-tertiary">
+            <wa-card class="card shadow-sm mb-4 border-0 bg-body-tertiary w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
                 <div class="card-body p-4">
                     <div class="d-flex align-items-center mb-3">
                         <div class="bg-warning-subtle text-warning-emphasis rounded-circle p-3 me-3">
@@ -69,10 +69,10 @@
                         It was eventually picked up by <em>Invicta Plastics</em> and became a global phenomenon, selling over 50 million copies. The iconic image of a "mysterious agent" on the box cemented the game's connection to espionage and code-breaking.
                     </p>
                 </div>
-            </div>
+            </wa-card>
 
-            <div class="card shadow-sm mb-4 border-primary">
-                <div class="card-header bg-primary text-white">
+            <wa-card class="card shadow-sm mb-4 border-primary w-100" style="--body-padding: 0; --header-padding: 0;">
+                <div class="card-header bg-primary text-white p-3">
                     <i class="fa-duotone fa-laptop-code me-2"></i>Current Iteration
                 </div>
                 <div class="card-body p-4 bg-body-tertiary">
@@ -89,12 +89,12 @@
                         Built on the Stardust Engine, it features WCAG-compliant high-contrast modes, stealth protocols for secure play, and "Event Horizon" difficulty tiers that go far beyond the limitations of the original physical board game.
                     </p>
                 </div>
-            </div>
+            </wa-card>
 
             <div class="d-grid gap-2">
-                <a href="/apps/cipher" class="btn btn-outline-primary btn-lg">
-                    <i class="fa-duotone fa-arrow-left me-2"></i>Return to Decryptor
-                </a>
+                <wa-button variant="brand" appearance="outlined" size="large" href="/apps/cipher">
+                    <i slot="start" class="fa-duotone fa-arrow-left"></i>Return to Decryptor
+                </wa-button>
             </div>
 
         </div>

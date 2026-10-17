@@ -42,7 +42,7 @@ $customPageAssets = [
                 </p>
             </div>
 
-            <div class="card glass-card border-0 shadow-lg">
+            <wa-card class="card glass-card border-0 shadow-lg w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
                 <div class="card-body p-5 text-center">
                     
                     <div class="mb-4">
@@ -60,12 +60,11 @@ $customPageAssets = [
                         AI collaboration, or web development, please use the primary secure channel below.
                     </p>
 
-                    <a href="https://www.linkedin.com/in/michael-ragsdale-raggiesoft/" 
-                       target="_blank" 
-                       class="btn btn-lg btn-outline-info rounded-pill px-5 py-3 w-100 shadow-glow mb-3">
-                        <i class="fa-brands fa-linkedin me-2 fs-4 align-middle"></i>
+                    <wa-button variant="brand" appearance="outlined" size="large" pill href="https://www.linkedin.com/in/michael-ragsdale-raggiesoft/" 
+                       target="_blank" class="px-5 py-3 w-100 shadow-glow mb-3">
+                        <i slot="start" class="fa-brands fa-linkedin fs-4 align-middle"></i>
                         <span class="align-middle">Open Hailing Frequencies</span>
-                    </a>
+                    </wa-button>
                     
                     <p class="small text-muted font-monospace mt-3">
                         <i class="fa-duotone fa-lock me-1"></i> CONNECTION SECURE (HTTPS)
@@ -83,7 +82,7 @@ $customPageAssets = [
                         </div>
                     </div>
                 </div>
-            </div>
+            </wa-card>
 
         </div>
     </div>

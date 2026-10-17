@@ -37,53 +37,46 @@ $currentUri = $_SERVER['REQUEST_URI'];
   <span>Network Entities</span>
 </h6>
 
-<nav class="nav flex-column nav-pills small gap-1 mb-4">
-    
-    <!-- 
-      Active State Logic:
-      Checks if the current URI contains the specific path fragment (e.g., '/michael-ragsdale').
-      If true, applies the Bootstrap 'active' class to highlight the link.
-    -->
-    <a href="https://michaelpragsdale.com" class="nav-link d-flex align-items-center <?php echo (str_contains($currentUri, '/michael-ragsdale')) ? 'active' : 'link-body-emphasis'; ?>">
+<div class="d-flex flex-column gap-1 mb-4">
+    <wa-button appearance="<?= str_contains($currentUri, '/michael-ragsdale') ? 'filled-outlined' : 'plain' ?>" variant="<?= str_contains($currentUri, '/michael-ragsdale') ? 'brand' : 'neutral' ?>" href="https://michaelpragsdale.com" class="w-100 text-start justify-content-start" style="text-align: left;">
         <i slot="start" class="fa-duotone fa-user-visor"></i> The Architect
-    </a>
+    </wa-button>
 
-    <a href="/about/family" class="nav-link d-flex align-items-center <?php echo (str_contains($currentUri, '/family')) ? 'active' : 'link-body-emphasis'; ?>">
+    <wa-button appearance="<?= str_contains($currentUri, '/family') ? 'filled-outlined' : 'plain' ?>" variant="<?= str_contains($currentUri, '/family') ? 'brand' : 'neutral' ?>" href="/about/family" class="w-100 text-start justify-content-start" style="text-align: left;">
         <i slot="start" class="fa-duotone fa-people-group"></i> The Family
-    </a>
+    </wa-button>
 
-    <a href="/about/engine-room" class="nav-link d-flex align-items-center <?php echo (str_contains($currentUri, '/engine-room')) ? 'active' : 'link-body-emphasis'; ?>">
+    <wa-button appearance="<?= str_contains($currentUri, '/engine-room') ? 'filled-outlined' : 'plain' ?>" variant="<?= str_contains($currentUri, '/engine-room') ? 'brand' : 'neutral' ?>" href="/about/engine-room" class="w-100 text-start justify-content-start" style="text-align: left;">
         <i slot="start" class="fa-solid fa-industry"></i> Engine Room Records
-    </a>
+    </wa-button>
 
-    <a href="/about/stardust-engine" class="nav-link d-flex align-items-center <?php echo (str_contains($currentUri, '/stardust-engine')) ? 'active' : 'link-body-emphasis'; ?>">
+    <wa-button appearance="<?= str_contains($currentUri, '/stardust-engine') ? 'filled-outlined' : 'plain' ?>" variant="<?= str_contains($currentUri, '/stardust-engine') ? 'brand' : 'neutral' ?>" href="/about/stardust-engine" class="w-100 text-start justify-content-start" style="text-align: left;">
         <i slot="start" class="fa-duotone fa-rocket-launch"></i> The Stardust Engine
-    </a>
+    </wa-button>
     
-    <a href="/about/aethel" class="nav-link d-flex align-items-center <?php echo (str_contains($currentUri, '/aethel')) ? 'active' : 'link-body-emphasis'; ?>">
+    <wa-button appearance="<?= str_contains($currentUri, '/aethel') ? 'filled-outlined' : 'plain' ?>" variant="<?= str_contains($currentUri, '/aethel') ? 'brand' : 'neutral' ?>" href="/about/aethel" class="w-100 text-start justify-content-start" style="text-align: left;">
         <i slot="start" class="fa-duotone fa-sword"></i> Aethel Saga
-    </a>
+    </wa-button>
+</div>
 
-</nav>
-
-<h6 class="sidebar-heading d-flex justify-content-between align-items-center px-2 mb-2  text-uppercase" style="font-size: 0.75rem; letter-spacing: 1px;">
+<h6 class="sidebar-heading d-flex justify-content-between align-items-center px-2 mb-2 text-uppercase" style="font-size: 0.75rem; letter-spacing: 1px;">
   <span>Governance</span>
 </h6>
 
-<nav class="nav flex-column nav-pills small gap-1">
-    <a href="/raggiesoft-media/licensing" class="nav-link d-flex align-items-center <?php echo (str_contains($currentUri, '/license')) ? 'active' : 'link-body-emphasis'; ?>">
+<div class="d-flex flex-column gap-1">
+    <wa-button appearance="<?= str_contains($currentUri, '/license') ? 'filled-outlined' : 'plain' ?>" variant="<?= str_contains($currentUri, '/license') ? 'brand' : 'neutral' ?>" href="/raggiesoft-media/licensing" class="w-100 text-start justify-content-start" style="text-align: left;">
         <i slot="start" class="fa-duotone fa-scale-balanced"></i> Licenses (MIT/CC)
-    </a>
-    <a href="/about/privacy" class="nav-link d-flex align-items-center <?php echo (str_contains($currentUri, '/privacy')) ? 'active' : 'link-body-emphasis'; ?>">
+    </wa-button>
+    <wa-button appearance="<?= str_contains($currentUri, '/privacy') ? 'filled-outlined' : 'plain' ?>" variant="<?= str_contains($currentUri, '/privacy') ? 'brand' : 'neutral' ?>" href="/about/privacy" class="w-100 text-start justify-content-start" style="text-align: left;">
         <i slot="start" class="fa-duotone fa-user-shield"></i> Privacy Policy
-    </a>
-    <a href="/about/terms" class="nav-link d-flex align-items-center <?php echo (str_contains($currentUri, '/terms')) ? 'active' : 'link-body-emphasis'; ?>">
+    </wa-button>
+    <wa-button appearance="<?= str_contains($currentUri, '/terms') ? 'filled-outlined' : 'plain' ?>" variant="<?= str_contains($currentUri, '/terms') ? 'brand' : 'neutral' ?>" href="/about/terms" class="w-100 text-start justify-content-start" style="text-align: left;">
         <i slot="start" class="fa-duotone fa-scroll-old"></i> Terms of Service
-    </a>
-    <a href="/about/ai-disclaimer" class="nav-link d-flex align-items-center <?php echo (str_contains($currentUri, '/ai-disclaimer')) ? 'active' : 'link-body-emphasis'; ?>">
+    </wa-button>
+    <wa-button appearance="<?= str_contains($currentUri, '/ai-disclaimer') ? 'filled-outlined' : 'plain' ?>" variant="<?= str_contains($currentUri, '/ai-disclaimer') ? 'brand' : 'neutral' ?>" href="/about/ai-disclaimer" class="w-100 text-start justify-content-start" style="text-align: left;">
         <i slot="start" class="fa-duotone fa-robot"></i> AI Disclaimer
-    </a>
-</nav>
+    </wa-button>
+</div>
 
 <hr class="my-4 ">
 

@@ -52,10 +52,11 @@
             <div class="col-lg-3 col-md-4 text-center text-md-start">
                 <h6 class="text-uppercase fw-bold mb-3" style="color: #E699FF; letter-spacing: 1px;">Terminal / Audio</h6>
                 <ul class="list-unstyled small mb-0 d-flex flex-column gap-2">
-                    <li><a href="/engine-room/artists/stardust-engine/discography/1987-electric-color" class="text-decoration-none text-white-50 hover-neon-blue">Electric Color</a></li>
-                    <li><a href="/engine-room/artists/stardust-engine/discography/1989-neon-hearts" class="text-decoration-none text-white-50 hover-neon-blue">Neon Hearts</a></li>
-                    <li><a href="/engine-room/artists/stardust-engine/discography/1997-hard-reset" class="text-decoration-none text-white-50 hover-neon-blue">Hard Reset</a></li>
-                    <li class="mt-2 pt-2 border-top border-secondary border-">
+                    <li><a href="/engine-room/artists/stardust-engine/discography/1987-electric-color" class="text-decoration-none text-white-50 hover-neon-blue">Electric Color (1987)</a></li>
+                    <li><a href="/engine-room/artists/stardust-engine/discography/1989-neon-hearts" class="text-decoration-none text-white-50 hover-neon-blue">Neon Hearts (1989)</a></li>
+                    <li><a href="/engine-room/artists/stardust-engine/discography/1997-hard-reset" class="text-decoration-none text-white-50 hover-neon-blue">Hard Reset (1997)</a></li>
+                    <li><a href="/engine-room/artists/stardust-engine/discography/2011-starfield-calibration" class="text-decoration-none text-white-50 hover-neon-blue">Starfield Calibration (2011)</a></li>
+                    <li class="mt-2 pt-2 border-top border-secondary">
                         <a href="/engine-room/artists/stardust-engine/discography" class="text-decoration-none text-white fw-bold hover-neon-purple">
                             View Full Catalog <i class="fa-solid fa-arrow-right ms-1"></i>
                         </a>
@@ -70,6 +71,7 @@
                     <li><a href="/engine-room/artists/stardust-engine/band" class="text-decoration-none text-white-50 hover-neon-blue">Band Member Roster</a></li>
                     <li><a href="/engine-room/artists/stardust-engine/band/history" class="text-decoration-none text-white-50 hover-neon-blue">History of the Band</a></li>
                     <li><a href="/engine-room/artists/stardust-engine/story" class="text-decoration-none text-white-50 hover-neon-blue">The Band's Stories</a></li>
+                    <li><a href="/engine-room/artists/stardust-engine/story/cosmic-tidal-lock-sound" class="text-decoration-none text-white-50 hover-neon-blue">Cosmic Tidal Lock Sound&trade;</a></li>
                 </ul>
             </div>
 

@@ -63,7 +63,7 @@ $pageTitle = "Pacific Rim Properties - Commercial Real Estate";
         <div class="position-absolute top-50 start-50 translate-middle text-center bg-white bg-opacity-90 p-5 shadow-sm" style="min-width: 60%;">
             <h1 class="display-5 fw-bold text-uppercase text-secondary mb-3">Pacific Rim Properties</h1>
             <p class="lead text-muted mb-4">Century City's Premier Commercial Management.</p>
-            <a href="/pacific-rim/tenant-portal" class="btn pac-btn px-4 py-2">Access Tenant Portal</a>
+            <wa-button variant="neutral" appearance="accent" href="/pacific-rim/tenant-portal" class="pac-btn px-4 py-2">Access Tenant Portal</wa-button>
         </div>
     </div>
 
@@ -75,12 +75,12 @@ $pageTitle = "Pacific Rim Properties - Commercial Real Estate";
                 <p class="text-muted">
                     Pacific Rim Properties, LLC is a privately held real estate investment firm based in Los Angeles. We specialize in Class-A office towers and provide white-glove management services. While our ownership is based in Virginia, our dedicated Los Angeles staff ensures daily operational excellence from our headquarters on the 3rd Floor.
                 </p>
-                <div class="alert alert-light border shadow-sm mt-4 text-start d-inline-block">
+                <wa-callout variant="neutral" appearance="accent" class="border shadow-sm mt-4 text-start d-inline-block d-block">
                     <small class="fw-bold text-uppercase text-muted"><i class="fa-solid fa-circle-info me-2"></i>Management Update (2018)</small>
                     <p class="mb-0 small text-muted">
                         Please note: All accounts receivable are now managed by <strong>Aethelgard Holdings</strong>. Late payments are subject to immediate legal review.
                     </p>
-                </div>
+                </wa-callout>
             </div>
         </div>
 
@@ -89,9 +89,9 @@ $pageTitle = "Pacific Rim Properties - Commercial Real Estate";
         <div class="row g-4">
             
             <div class="col-md-4">
-                <div class="card property-card h-100">
+                <wa-card class="card property-card h-100 w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
                     <img src="<?php echo $cdnBaseUrl; ?>/stardust-engine/images/corporate/omni-building.jpg" class="card-img-top" alt="The Omni Tower">
-                    <div class="card-body">
+                    <div class="card-body p-4">
                         <h5 class="card-title fw-bold" style="color: #003366;">1999 Avenue of the Stars</h5>
                         <p class="card-text text-muted small">Los Angeles, CA (Century City)</p>
                         <ul class="list-unstyled small text-secondary mb-3">
@@ -100,16 +100,16 @@ $pageTitle = "Pacific Rim Properties - Commercial Real Estate";
                             <li><strong>Anchor Tenant:</strong> Omni-Global Media, Inc.</li>
                         </ul>
                         <div class="d-grid">
-                            <span class="badge bg-danger rounded-0 text-uppercase">Account Delinquent</span>
+                            <wa-badge variant="danger" appearance="accent" class="rounded-0 text-uppercase">Account Delinquent</wa-badge>
                         </div>
                     </div>
-                </div>
+                </wa-card>
             </div>
 
             <div class="col-md-4">
-                <div class="card property-card h-100">
+                <wa-card class="card property-card h-100 w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
                     <img src="<?php echo $cdnBaseUrl; ?>/stardust-engine/images/corporate/blacksburg-housing.jpg" class="card-img-top" alt="CPI Student Housing">
-                    <div class="card-body">
+                    <div class="card-body p-4">
                         <h5 class="card-title fw-bold" style="color: #003366;">The Ironwood Collective</h5>
                         <p class="card-text text-muted small">Blacksburg, VA</p>
                         <ul class="list-unstyled small text-secondary mb-3">
@@ -118,16 +118,16 @@ $pageTitle = "Pacific Rim Properties - Commercial Real Estate";
                             <li><strong>Status:</strong> 100% Occupied (CPI Students)</li>
                         </ul>
                         <div class="d-grid">
-                            <span class="badge bg-success rounded-0 text-uppercase">Good Standing</span>
+                            <wa-badge variant="success" appearance="accent" class="rounded-0 text-uppercase">Good Standing</wa-badge>
                         </div>
                     </div>
-                </div>
+                </wa-card>
             </div>
 
             <div class="col-md-4">
-                <div class="card property-card h-100">
+                <wa-card class="card property-card h-100 w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
                     <img src="<?php echo $cdnBaseUrl; ?>/stardust-engine/images/corporate/la-warehouse.jpg" class="card-img-top" alt="Warehouse Conversion">
-                    <div class="card-body">
+                    <div class="card-body p-4">
                         <h5 class="card-title fw-bold" style="color: #003366;">The Arts District Terminal</h5>
                         <p class="card-text text-muted small">Los Angeles, CA</p>
                         <ul class="list-unstyled small text-secondary mb-3">
@@ -136,10 +136,10 @@ $pageTitle = "Pacific Rim Properties - Commercial Real Estate";
                             <li><strong>Tenant:</strong> Stardust Studios (Private)</li>
                         </ul>
                         <div class="d-grid">
-                            <span class="badge bg-secondary rounded-0 text-uppercase">Owner Occupied</span>
+                            <wa-badge variant="neutral" appearance="accent" class="rounded-0 text-uppercase">Owner Occupied</wa-badge>
                         </div>
                     </div>
-                </div>
+                </wa-card>
             </div>
 
         </div>

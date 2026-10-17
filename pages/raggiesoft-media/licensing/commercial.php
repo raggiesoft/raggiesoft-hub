@@ -166,7 +166,7 @@ $pageTitle = "Commercial Licensing | RaggieSoft Media";
                 </div>
 
                 <div class="text-md-end mt-4">
-                    <wa-button href="mailto:sync@raggiesoftmedia.com" variant="primary" class="fw-bold text-uppercase shadow transition-all">
+                    <wa-button href="mailto:sync@raggiesoftmedia.com" variant="brand" appearance="accent" class="fw-bold text-uppercase shadow transition-all">
                         Initiate Request <i slot="end" class="fa-solid fa-arrow-right"></i>
                     </wa-button>
                 </div>

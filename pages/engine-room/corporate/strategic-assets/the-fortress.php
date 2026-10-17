@@ -80,9 +80,9 @@ $pageTitle = "Property Profile: 512 Progress St NE (The Fortress)";
     <div class="row justify-content-center mb-5">
         <div class="col-lg-9">
             <div class="d-flex align-items-center mb-3">
-                <span class="badge bg-secondary text-white border border-white rounded-pill px-3 py-2 me-3">
+                <wa-badge variant="neutral" appearance="accent" pill class="px-3 py-2 me-3">
                     <i class="fa-solid fa-house-chimney me-2"></i>Private Residence
-                </span>
+                </wa-badge>
                 <span class="font-monospace text-muted small">Zone R-5</span>
             </div>
             <h1 class="display-4 fw-bold text-uppercase mb-2">The Fortress</h1>
@@ -95,7 +95,7 @@ $pageTitle = "Property Profile: 512 Progress St NE (The Fortress)";
 
     <div class="row justify-content-center mb-5">
         <div class="col-lg-10">
-            <div class="card shadow-lg border-0 overflow-hidden">
+            <wa-card class="card shadow-lg border-0 overflow-hidden w-100" style="--body-padding: 0; --header-padding: 0;">
                 <div class="card-header bg-black text-white border-bottom border-secondary py-3">
                     <h5 class="fw-bold text-uppercase mb-0"><i class="fa-duotone fa-ruler-combined me-2 text-warning"></i>Current Layout (2013 Refit)</h5>
                 </div>
@@ -139,7 +139,7 @@ $pageTitle = "Property Profile: 512 Progress St NE (The Fortress)";
                         </table>
                     </div>
                 </div>
-            </div>
+            </wa-card>
         </div>
     </div>
 
@@ -147,7 +147,7 @@ $pageTitle = "Property Profile: 512 Progress St NE (The Fortress)";
         <div class="col-lg-10">
             <div class="row g-4">
                 <div class="col-md-6">
-                    <div class="card h-100 blueprint-card shadow-sm">
+                    <wa-card class="card h-100 blueprint-card shadow-sm w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
                         <div class="card-body p-4">
                             <div class="d-flex align-items-center mb-3">
                                 <div class="icon-box me-3"><i class="fa-solid fa-elevator"></i></div>
@@ -159,10 +159,10 @@ $pageTitle = "Property Profile: 512 Progress St NE (The Fortress)";
                                 <br><strong>Safety:</strong> Buttons configured as "Constant Pressure" (Dead Man) switches per residential code.
                             </p>
                         </div>
-                    </div>
+                    </wa-card>
                 </div>
                 <div class="col-md-6">
-                    <div class="card h-100 blueprint-card shadow-sm">
+                    <wa-card class="card h-100 blueprint-card shadow-sm w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
                         <div class="card-body p-4">
                             <div class="d-flex align-items-center mb-3">
                                 <div class="icon-box me-3"><i class="fa-solid fa-wheelchair"></i></div>
@@ -173,7 +173,7 @@ $pageTitle = "Property Profile: 512 Progress St NE (The Fortress)";
                                 <br><strong>Stealth:</strong> Hidden from street view by mature holly bushes. 1:12 gradient.
                             </p>
                         </div>
-                    </div>
+                    </wa-card>
                 </div>
             </div>
         </div>
@@ -185,7 +185,7 @@ $pageTitle = "Property Profile: 512 Progress St NE (The Fortress)";
             <div class="renovation-log">
                 
                 <div class="renovation-item">
-                    <span class="badge bg-secondary mb-2">1985</span>
+                    <wa-badge variant="neutral" appearance="accent" class="mb-2">1985</wa-badge>
                     <h6 class="fw-bold">The Rental Era</h6>
                     <p class="small text-muted mb-0">
                         Rented from maternal aunt for $1/yr. Standard 3-bedroom configuration. Ryan occupies 2nd Floor bedroom.
@@ -193,7 +193,7 @@ $pageTitle = "Property Profile: 512 Progress St NE (The Fortress)";
                 </div>
 
                 <div class="renovation-item">
-                    <span class="badge bg-warning text-dark mb-2">1990</span>
+                    <wa-badge variant="warning" appearance="accent" class="mb-2">1990</wa-badge>
                     <h6 class="fw-bold">The Crash Retrofit</h6>
                     <p class="small text-muted mb-0">
                         Emergency install of exterior metal ramp. Ryan relocated to 1st Floor Parlor. Cassidy moves in as "Bed Rail."
@@ -201,7 +201,7 @@ $pageTitle = "Property Profile: 512 Progress St NE (The Fortress)";
                 </div>
 
                 <div class="renovation-item">
-                    <span class="badge bg-success mb-2">1996</span>
+                    <wa-badge variant="success" appearance="accent" class="mb-2">1996</wa-badge>
                     <h6 class="fw-bold">Acquisition & Gut Renovation</h6>
                     <p class="small text-muted mb-0">
                         Holly purchases property. Interior gutted. First hydraulic elevator installed. Custom exterior ramp built.
@@ -209,7 +209,7 @@ $pageTitle = "Property Profile: 512 Progress St NE (The Fortress)";
                 </div>
 
                 <div class="renovation-item">
-                    <span class="badge bg-primary mb-2">2013</span>
+                    <wa-badge variant="brand" appearance="accent" class="mb-2">2013</wa-badge>
                     <h6 class="fw-bold">The "Industrial" Split</h6>
                     <p class="small text-muted mb-0">
                         Commercial operations moved to Warehouse. House optimized for living only. Elevator upgraded to modern automatic system. Holly's office converted to King Bedroom.

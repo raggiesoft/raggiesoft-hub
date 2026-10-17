@@ -83,7 +83,7 @@ $pageTitle = "Lore: The Figures of Legend";
 
         <hr class="my-5" style="border-color: var(--aethel-rust);">
 
-        <div class="card bg-transparent border border-danger mb-5">
+        <wa-card class="card bg-transparent border border-danger mb-5 w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
             <div class="card-body p-4">
                 <h2 class="h3 text-danger mb-3" style="font-family: 'Cinzel', serif;">Seraphina</h2>
                 <h5 class="text-muted fst-italic mb-3">"The Almost-Queen"</h5>
@@ -91,7 +91,7 @@ $pageTitle = "Lore: The Figures of Legend";
                     Before the Gloom fell, Seraphina was Kaelan's betrothed. She represented the "normal" life he thought he wanted. Malakor corrupted her with promises of eternal beauty and order—things a dying village could never provide. She now serves as Malakor's voice, trying to lure Kaelan into surrendering his power willingly.
                 </p>
             </div>
-        </div>
+        </wa-card>
 
         <div class="mb-5">
             <h3 class="text-uppercase" style="color: var(--aethel-gloom);">Lord Malakor</h3>

@@ -27,99 +27,65 @@ include_once ROOT_PATH . '/includes/components/arrays/_discography.php';
 $current_req = $_SERVER['REQUEST_URI'];
 ?>
 
-<nav class="nav flex-column mb-4">
-    <div class="accordion accordion-flush" id="discographyAccordion">
+<nav class="d-flex flex-column gap-2 mb-4" aria-label="Discography Eras">
+    <?php 
+    // SAFETY: Check if the variable exists from the include
+    $library = $discographyLibrary ?? [];
+    
+    $eraIndex = 0;
+    foreach ($library as $eraKey => $eraData): 
+        $eraIndex++;
         
-        <?php 
-        // SAFETY: Check if the variable exists from the include
-        $library = $discographyLibrary ?? [];
+        $eraTitle = $eraData['label']; 
+        $albums   = $eraData['albums'];
         
-        $eraIndex = 0;
-        foreach ($library as $eraKey => $eraData): 
-            $eraIndex++;
-            
-            // EXTRACT V2.0 DATA
-            // The sidebar loop was breaking because it didn't know about the new structure
-            $eraTitle = $eraData['label']; 
-            $albums   = $eraData['albums'];
-            
-            // Skip eras with no albums (like Modern Era currently)
-            if (empty($albums)) continue;
+        // Skip eras with no albums
+        if (empty($albums)) continue;
 
-            // Generate IDs
-            $collapseId = 'collapse-era-' . $eraIndex;
-            $headingId  = 'heading-era-' . $eraIndex;
-            
-            // Determine Open State
-            $isOpen = false;
-            foreach ($albums as $album) {
-                // Check if current URL matches this album URL
-                if (str_contains($current_req, $album['url'])) {
-                    $isOpen = true;
-                    break;
-                }
-            }
-            
-            // Default open the first one if on root discography page
-            if ($current_req === '/discography' && $eraIndex === 1) {
+        // Determine Open State
+        $isOpen = false;
+        foreach ($albums as $album) {
+            $albumSlug = basename($album['url']);
+            if (!empty($albumSlug) && str_contains($current_req, $albumSlug)) {
                 $isOpen = true;
+                break;
             }
-        ?>
-
-            <div class="accordion-item bg-transparent border-0">
-                <h2 class="accordion-header" id="<?php echo $headingId; ?>">
-                    <!-- 
-                      Accordion Button:
-                      Applies the 'collapsed' class dynamically if this era is not active.
-                      `data-bs-target` links to the generated `$collapseId` to toggle visibility.
-                    -->
-                    <button class="accordion-button bg-transparent shadow-none p-2  fw-bold <?php echo $isOpen ? '' : 'collapsed'; ?>" 
-                            type="button" 
-                            data-bs-toggle="collapse" 
-                            data-bs-target="#<?php echo $collapseId; ?>" 
-                            aria-expanded="<?php echo $isOpen ? 'true' : 'false'; ?>" 
-                            aria-controls="<?php echo $collapseId; ?>">
-                        <?php 
-                            // Flavor Icons based on Era Key
-                            if ($eraKey === 'apex') echo '<i slot="start" class="fa-duotone fa-building"></i> ';
-                            elseif ($eraKey === 'freedom') echo '<i slot="start" class="fa-duotone fa-warehouse me-2"></i> ';
-                            elseif ($eraKey === 'reignition') echo '<i class="fa-duotone fa-fire-burner me-2"></i>';
-                            else echo '<i class="fa-duotone fa-compact-disc me-2"></i>';
-                        ?>
-                        <?php echo $eraTitle; ?>
-                    </button>
-                </h2>
-                
-                <div id="<?php echo $collapseId; ?>" 
-                     class="accordion-collapse collapse <?php echo $isOpen ? 'show' : ''; ?>" 
-                     aria-labelledby="<?php echo $headingId; ?>" 
-                     data-bs-parent="#discographyAccordion">
-                    
-                    <div class="accordion-body p-0 ps-3">
-                        <div class="d-flex flex-column gap-1">
-                            
-                            <?php foreach ($albums as $album): 
-                                $isActive = ($current_req === $album['url']);
-                                $title = $album['title'];
-                                $year = $album['year'];
-                                $url = $album['url'];
-                                $extra = $album['extra'] ?? ''; 
-                            ?>
-                                
-                                    <a class="nav-link link-secondary py-1 <?php echo $isActive ? 'active fw-bold text-light' : ''; ?>" 
-                                       href="<?php echo $url; ?>">
-                                        <small><?php echo $title; ?> (<?php echo $year; ?>)</small>
-                                        <?php echo $extra; ?>
-                                    </a>
-                                
-                            <?php endforeach; ?>
-
-                        </div>
-                    </div>
-                </div>
+        }
+        
+        // Default open the first one if on root discography page
+        if ((str_ends_with(rtrim($current_req, '/'), '/discography')) && $eraIndex === 1) {
+            $isOpen = true;
+        }
+    ?>
+        <wa-details appearance="plain" <?php echo $isOpen ? 'open' : ''; ?> class="border-bottom border-secondary-subtle pb-1">
+            <span slot="summary" class="fw-bold small text-uppercase">
+                <?php 
+                    if ($eraKey === 'apex') echo '<i class="fa-duotone fa-building me-2"></i>';
+                    elseif ($eraKey === 'freedom') echo '<i class="fa-duotone fa-warehouse me-2"></i>';
+                    elseif ($eraKey === 'err-planetarium') echo '<i class="fa-duotone fa-planet-ringed me-2"></i>';
+                    elseif ($eraKey === 'burnout-hiatus') echo '<i class="fa-duotone fa-satellite me-2"></i>';
+                    elseif ($eraKey === 'reignition') echo '<i class="fa-duotone fa-fire-burner me-2"></i>';
+                    else echo '<i class="fa-duotone fa-compact-disc me-2"></i>';
+                ?>
+                <?php echo htmlspecialchars($eraTitle); ?>
+            </span>
+            <div class="d-flex flex-column gap-1 ps-2 pt-1">
+                <?php foreach ($albums as $album): 
+                    $albumSlug = basename($album['url']);
+                    $isActive = (!empty($albumSlug) && str_contains($current_req, $albumSlug));
+                    $title = $album['title'];
+                    $year = $album['year'];
+                    // Route to internal lore page if viewing inside raggiesoft-hub
+                    $url = str_starts_with($album['url'], 'https://music.raggiesoft.com/the-stardust-engine/')
+                        ? '/engine-room/artists/stardust-engine/discography/' . $albumSlug
+                        : $album['url'];
+                    $extra = $album['extra'] ?? ''; 
+                ?>
+                    <wa-button appearance="<?php echo $isActive ? 'filled-outlined' : 'plain'; ?>" variant="<?php echo $isActive ? 'brand' : 'neutral'; ?>" size="small" href="<?php echo htmlspecialchars($url); ?>" class="w-100 text-start justify-content-start" style="text-align: left;">
+                        <?php echo htmlspecialchars($title); ?> (<?php echo htmlspecialchars($year); ?>) <?php echo $extra; ?>
+                    </wa-button>
+                <?php endforeach; ?>
             </div>
-
-        <?php endforeach; ?>
-
-    </div>
+        </wa-details>
+    <?php endforeach; ?>
 </nav>

@@ -50,8 +50,8 @@ $pageTitle = "Arthur Vance - Crimson Node";
                     <h1 class="display-5 fw-bold mb-1" style="font-family: 'Impact', sans-serif; letter-spacing: 1px;">ARTHUR <span class="text-secondary">VANCE</span></h1>
                     <h5 class="text-uppercase fw-bold mb-2 text-success" style="letter-spacing: 2px;">The Guardian</h5>
                     <div class="d-flex flex-wrap gap-2 mb-0">
-                        <span class="badge bg-dark text-white rounded-pill px-3 py-2"><i class="fa-solid fa-school me-1"></i> Northwood High School</span>
-                        <span class="badge border border-success text-success bg-transparent rounded-pill px-3 py-2 fw-bold"><i class="fa-solid fa-shield-check me-1"></i> PARAPROFESSIONAL AIDE</span>
+                        <wa-badge variant="neutral" appearance="accent" pill class="px-3 py-2"><i class="fa-solid fa-school me-1"></i> Northwood High School</wa-badge>
+                        <wa-badge variant="success" appearance="outlined" pill class="text-success px-3 py-2 fw-bold"><i class="fa-solid fa-shield-check me-1"></i> PARAPROFESSIONAL AIDE</wa-badge>
                     </div>
                 </div>
             </div>

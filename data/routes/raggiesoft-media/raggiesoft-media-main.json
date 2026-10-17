@@ -52,5 +52,17 @@
     "ogDescription": "Official documentation and repository for The Stardust Engine CMS and the Elara SPA router.",
     "showSidebar": true,
     "sidebar": "raggiesoft-media/projects/stardust-engine-cms/sidebar-docs"
+  },
+  "/raggiesoft-media/projects/storetrainer": {
+    "view": "pages/raggiesoft-media/projects/storetrainer/overview",
+    "title": "StoreTrainer POS Simulation | RaggieSoft Media",
+    "ogDescription": "Accessible retail Point-of-Sale (POS) training simulation software built for vocational rehabilitation and neurodivergent job seekers.",
+    "showSidebar": false
+  },
+  "/products/storetrainer": {
+    "view": "pages/products/storetrainer/overview",
+    "title": "StoreTrainer POS Simulation | RaggieSoft Products",
+    "ogDescription": "Accessible retail Point-of-Sale (POS) training simulation software built for vocational rehabilitation and neurodivergent job seekers.",
+    "showSidebar": false
   }
 }

@@ -85,9 +85,9 @@ $musicGroupSchema = [
         <p class="lead text-secondary mx-auto mb-3" style="max-width: 800px;">
             The complete archival history of the band, from the raw garage sessions in Albemarle County to the heavy analog production of Engine Room Records.
         </p>
-        <a href="https://music.raggiesoft.com/crimson-node" target="_blank" rel="noopener" class="btn btn-primary rounded-pill px-4 fw-bold shadow-sm">
-            <i class="fa-duotone fa-headphones me-2"></i>Stream &amp; Read Lyrics in The Listening Room
-        </a>
+        <wa-button variant="brand" appearance="accent" pill href="https://music.raggiesoft.com/crimson-node" target="_blank" rel="noopener" class="px-4 fw-bold shadow-sm">
+            <i slot="start" class="fa-duotone fa-headphones"></i>Stream &amp; Read Lyrics in The Listening Room
+        </wa-button>
     </div>
 
     <?php foreach ($discographyLibrary as $eraKey => $eraData): ?>
@@ -122,7 +122,7 @@ $musicGroupSchema = [
                     $hasHubLore = !empty($album['url']) && file_exists(ROOT_PATH . '/pages' . $album['url'] . '.php');
                 ?>
                     <div class="col">
-                        <div class="card h-100 bg-transparent border-secondary glass-card shadow-glow overflow-hidden hover-lift border-glow">
+                        <wa-card class="card h-100 bg-transparent border-secondary glass-card shadow-glow overflow-hidden hover-lift border-glow w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
                             <div class="position-relative">
                                 
                                 <?php if ($isSeized): ?>
@@ -137,7 +137,7 @@ $musicGroupSchema = [
 
                                 <?php if ($dspExempt && !$isSeized): ?>
                                     <div class="position-absolute top-0 end-0 m-2" style="z-index: 3;">
-                                        <span class="badge bg-warning text-dark shadow-sm border border-dark"><i class="fa-solid fa-vault me-1"></i> Vault Exclusive</span>
+                                        <wa-badge variant="warning" appearance="accent" class="shadow-sm"><i class="fa-solid fa-vault me-1"></i> Vault Exclusive</wa-badge>
                                     </div>
                                 <?php endif; ?>
 
@@ -148,7 +148,7 @@ $musicGroupSchema = [
                                 
                             </div>
 
-                            <div class="card-body d-flex flex-column bg-body-tertiary">
+                            <div class="card-body d-flex flex-column bg-body-tertiary p-4">
                                 <h5 class="card-title text-body fw-bold mb-1 brand-font">
                                     <?php echo htmlspecialchars($album['title']); ?>
                                 </h5>
@@ -210,7 +210,7 @@ $musicGroupSchema = [
                                     ?>
                                 </div>
                             </div>
-                        </div>
+                        </wa-card>
                     </div>
                 <?php endforeach; ?>
             </div>

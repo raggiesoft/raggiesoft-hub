@@ -82,7 +82,7 @@ $articleSchema = [
                         </div>
                     </div>
                     <div class="col-md-5 d-flex align-items-center bg-body-tertiary">
-                        <div class="card-body p-4">
+                        <div class="p-4">
                             <h3 class="h5 text-body-emphasis fw-bold border-bottom border-secondary pb-2 mb-3">
                                 The "Toon Brigade" Incident
                             </h3>
@@ -93,9 +93,9 @@ $articleSchema = [
                                 When executive <strong>Julian Vance</strong> walked in, the reality of his incompetence crashed down immediately. Vance had no idea Ryan O'Connell was paralyzed. Seeing the frontman in a wheelchair shattered his manufactured vision instantly, but the true catastrophe was still to come when Vance demanded they set up for "Shot 12."
                             </p>
                         </div>
-                    </wa-card>
+                    </div>
                 </div>
-            </div>
+            </wa-card>
             
             <h2 class="h3 fw-bold border-bottom border-secondary pb-2 mb-4">
                 1. The "Two Frictions" Theory
@@ -115,17 +115,17 @@ $articleSchema = [
             <div class="row g-4 mb-5">
                 
                 <div class="col-md-4">
-                    <wa-card class="h-100 border-danger bg-body-tertiary shadow-sm">
+                    <wa-card class="h-100 w-100 border-danger bg-body-tertiary shadow-sm" style="--header-padding: 0; --body-padding: 0;">
                         <div slot="header" class="bg-danger bg-opacity-10 text-danger-emphasis fw-bold p-3 border-bottom border-danger">
                             <i class="fa-duotone fa-image-polaroid me-2"></i>The Fatal Assumption
                         </div>
                         <img src="<?php echo $promo_1989; ?>" 
-                            class="card-img-top p-0 border-bottom border-danger" 
+                            class="w-100 p-0 border-bottom border-danger" 
                             style="aspect-ratio: 1/1; object-fit: cover;"
                             alt="1989 Promo Photo of Ryan and Cassidy smiling together.">
                         <div class="p-3">
                             <h6 class="fw-bold">Exhibit A: The '89 Promo</h6>
-                            <p class="card-text small text-body-secondary">
+                            <p class="small text-body-secondary mb-0">
                                 Vance based his entire campaign on this 1989 press photo—taken before Ryan's accident. Vance assumed the band's dynamic was a stage act, and that Ryan and Cassidy were a married couple.
                             </p>
                         </div>
@@ -133,19 +133,19 @@ $articleSchema = [
                 </div>
 
                 <div class="col-md-4">
-                    <wa-card class="h-100 border-info bg-body-tertiary shadow-sm">
+                    <wa-card class="h-100 w-100 border-info bg-body-tertiary shadow-sm" style="--header-padding: 0; --body-padding: 0;">
                         <div slot="header" class="bg-info bg-opacity-10 text-info-emphasis fw-bold p-3 border-bottom border-info">
                             <i class="fa-duotone fa-shuttle-space me-2"></i>The Band's Vision
                         </div>
                         <div class="position-relative">
                             <img src="<?php echo $intended_art; ?>" 
-                                class="card-img-top p-0 bg-white border-bottom border-info" 
+                                class="w-100 p-0 bg-white border-bottom border-info" 
                                 style="aspect-ratio: 1/1; object-fit: cover;"
                                 alt="Cassidy's drawing of a space shuttle re-entering atmosphere with a trail of fire.">
                         </div>
                         <div class="p-3">
                             <h6 class="fw-bold">Exhibit B: Re-Entry Heat</h6>
-                            <p class="card-text small text-body-secondary">
+                            <p class="small text-body-secondary mb-0">
                                 When Vance pitched the title <em>Friction</em>, the band thought they were finally making a sci-fi record. Cassidy drew this concept art depicting the thermal friction of a shuttle hull re-entering the atmosphere.
                             </p>
                         </div>
@@ -153,20 +153,20 @@ $articleSchema = [
                 </div>
 
                 <div class="col-md-4">
-                    <wa-card class="h-100 border-danger bg-body-tertiary shadow-sm">
+                    <wa-card class="h-100 w-100 border-danger bg-body-tertiary shadow-sm" style="--header-padding: 0; --body-padding: 0;">
                         <div slot="header" class="bg-danger text-white fw-bold p-3 border-bottom border-danger">
                             <i class="fa-duotone fa-bolt me-2"></i>The Breaking Point
                         </div>
                         <img src="<?php echo $cdnBaseUrl; ?>/stardust-engine/images/story/shattered-lens.jpg" 
-                            class="card-img-top p-0 border-bottom border-danger" 
+                            class="w-100 p-0 border-bottom border-danger" 
                             style="aspect-ratio: 1/1; object-fit: cover;"
                             alt="A shattered camera lens on a dark warehouse floor illuminated by red emergency lights.">
                         <div class="p-3">
                             <h6 class="fw-bold text-body-emphasis">"Shot 12"</h6>
-                            <p class="card-text small text-body-secondary">
+                            <p class="small text-body-secondary">
                                 Disgusted by the wheelchair and rejecting Cassidy's artwork as "childish," Vance attempted to force his original plan. He ordered the photographer to set up "Shot 12"—a demand for Ryan and Cassidy to simulate a highly explicit, sexual act on camera.
                             </p>
-                            <p class="card-text small text-body-secondary fw-bold border-start border-danger ps-2 mb-0">
+                            <p class="small text-body-secondary fw-bold border-start border-danger ps-2 mb-0">
                                 Ryan's response shattered the warehouse: <em>"SHE'S MY SISTER!"</em>
                             </p>
                         </div>
@@ -183,32 +183,35 @@ $articleSchema = [
 
             <div class="row g-4 mb-5">
                 <div class="col-md-6">
-                    <wa-card class="border-danger h-100 shadow-sm bg-body-tertiary">
+                    <wa-card class="border-danger h-100 w-100 shadow-sm bg-body-tertiary">
                         <div class="d-flex flex-column h-100">
                             <h4 class="h5 fw-bold text-danger mb-2">
                                 <i class="fa-solid fa-file-circle-xmark me-2"></i>"Friction" (Title Track)
                             </h4>
-                            <p class="card-text text-body-secondary small mb-4">
+                            <p class="text-body-secondary small mb-4">
                                 <strong>STATUS: PERMANENTLY REDACTED.</strong><br>
                                 Because Vance weaponized the lyrics against the siblings, the band made a unified decision: the audio and sheet music for the title track will <em>never</em> be published, performed, or rendered in any capacity. The song died in that warehouse.
                             </p>
-                            <wa-button variant="danger" outline href="/engine-room/artists/stardust-engine/story/friction/the-lost-title-track" class="w-100 mt-auto fw-bold">
-                                <i class="fa-solid fa-lock me-2"></i>Read the Archival File
+                            <wa-button variant="danger" appearance="outlined" href="/engine-room/artists/stardust-engine/story/friction/the-lost-title-track" class="w-100 mt-auto fw-bold">
+                                <i slot="start" class="fa-solid fa-lock"></i>Read the Archival File
                             </wa-button>
                         </div>
                     </wa-card>
                 </div>
 
                 <div class="col-md-6">
-                    <wa-card class="border-info h-100 shadow-sm bg-body-tertiary">
+                    <wa-card class="border-info h-100 w-100 shadow-sm bg-body-tertiary">
                         <div class="d-flex flex-column h-100">
                             <h4 class="h5 fw-bold text-info-emphasis mb-2">
-                                <i class="fa-duotone fa-cloud-showers-heavy me-2"></i>"Atmosphere" (Demo)
+                                <i class="fa-duotone fa-cloud-showers-heavy me-2"></i>"Atmosphere" (1992 Rough Demo &rarr; 2011 Final Master)
                             </h4>
-                            <p class="card-text text-body-secondary small mb-4">
-                                <strong>STATUS: RESCUED.</strong><br>
-                                The thematic B-side to "Friction," exploring the cooling relief of breaking through the clouds. Because Vance never heard this lush, cinematic ballad, it remained untainted and was eventually released exactly as-is on <em>The Warehouse Tapes</em> in 1995.
+                            <p class="text-body-secondary small mb-4">
+                                <strong>STATUS: RESCUED &amp; FINALIZED IN 2011.</strong><br>
+                                Originally tracked in September 1992 for <em>Friction</em>, the early rough cut of "Atmosphere" sounded like an early-1990s song recorded under label pressure, and the band was never happy with it. While that rough demo surfaced as an archival curiosity on 1996's <em>Ad Astra</em> single and 2007's <em>Lost Sounds</em>, the band finally recorded the <strong>definitive, finalized version</strong> on 2011's <em>Starfield Calibration</em>—using <strong>The Cosmic Tidal Lock Sound&trade;</strong> to bring the song back to the 1980s sound they loved so much.
                             </p>
+                            <wa-button variant="brand" appearance="outlined" href="/engine-room/artists/stardust-engine/story/friction/atmosphere" class="w-100 mt-auto fw-bold">
+                                <i slot="start" class="fa-duotone fa-file-audio"></i>Examine Evidence #94-B
+                            </wa-button>
                         </div>
                     </wa-card>
                 </div>
@@ -217,12 +220,13 @@ $articleSchema = [
             <h2 class="h3 fw-bold border-bottom border-secondary pb-2 mb-3 mt-5">
                 3. The Aftermath
             </h2>
-            <div class="alert alert-dark border-primary mt-4 text-body-emphasis shadow-sm" role="alert">
-                <h4 class="alert-heading text-primary"><i class="fa-duotone fa-flag me-2"></i>The Rebirth</h4>
-                <p>
+            <wa-callout variant="brand" appearance="accent" class="mt-4 shadow-sm">
+                <i slot="icon" class="fa-duotone fa-flag fs-4"></i>
+                <h4 class="h5 fw-bold text-primary mb-2">The Rebirth</h4>
+                <p class="mb-0">
                     <strong>Friction</strong> was canceled immediately following the altercation. Armed with the threat of exposing Vance's negligence and exploitation, Holly O'Connell forced Apex Records to void their contract. The band was free. Holly founded <strong>Engine Room Records</strong>, and the band, fueled by the trauma and rage, retreated to their Blacksburg warehouse to record their true debut: 1995's legendary <strong>The Warehouse Tapes.</strong>
                 </p>
-            </div>
+            </wa-callout>
 
         </div>
     </div>

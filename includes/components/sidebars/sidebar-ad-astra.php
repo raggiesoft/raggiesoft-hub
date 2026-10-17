@@ -1,62 +1,51 @@
 <?php
 /**
+ * ============================================================================
  * Stardust Engine - Ad Astra Sidebar
- * 
+ * ============================================================================
+ * File: raggiesoft-hub/includes/components/sidebars/sidebar-ad-astra.php
+ *
  * ARCHITECTURAL OVERVIEW:
- * This sidebar component is dedicated to the "Ad Astra" specific narrative section.
- * It provides navigational links to the mission overview, the maiden voyage, and 
- * related audio transmissions.
- * 
- * LORE CONTEXT:
- * "Ad Astra" is a space-faring mission within the Stardust Engine lore. The terminology
- * (Mission Control, Transmission) reflects this theme.
- * 
- * CONSTRAINTS & MAINTENANCE:
- * - Utilizes Web Awesome (`<wa-button>`) for interactive navigation. Do not alter
- *   the `appearance="plain"` or `slot="start"` attributes.
- * - This file does not contain a PHP opening tag initially; this block is intentionally
- *   self-contained at the top.
+ * Dedicated sidebar component for the "Ad Astra" narrative section, linking to
+ * the mission overview, maiden voyage, Cosmic Tidal Lock Sound™, and related
+ * audio transmissions.
+ * ============================================================================
  */
 ?>
 <h5 class="pt-3 pb-2 mb-3 border-bottom text-info">
-    <i slot="start" class="fa-duotone fa-rocket-launch"></i> Mission Control
+    <i class="fa-duotone fa-rocket-launch me-2" aria-hidden="true"></i>Mission Control
 </h5>
 <div class="d-flex flex-column gap-1">
-  
-    <!-- Core Mission Links -->
-    <wa-button appearance="plain" href="/engine-room/artists/stardust-engine/lore/ad-astra" class="text-body w-100 text-start justify-content-start" style="text-align: left;">
-      <i slot="start" class="fa-duotone fa-radar me-2"></i> Mission Overview
+    <wa-button appearance="plain" variant="neutral" size="small" href="/engine-room/artists/stardust-engine/story/ad-astra" class="w-100 text-start justify-content-start" style="text-align: left;">
+        <i slot="start" class="fa-duotone fa-radar" aria-hidden="true"></i>Mission Overview
     </wa-button>
-  
-  
-    <wa-button appearance="plain" href="/engine-room/artists/stardust-engine/lore/ad-astra/voyage" class="text-body w-100 text-start justify-content-start" style="text-align: left;">
-      <i slot="start" class="fa-duotone fa-book-sparkles"></i> The Maiden Voyage
+
+    <wa-button appearance="plain" variant="neutral" size="small" href="/engine-room/artists/stardust-engine/story/ad-astra/the-voyage" class="w-100 text-start justify-content-start" style="text-align: left;">
+        <i slot="start" class="fa-duotone fa-book-sparkles" aria-hidden="true"></i>The Maiden Voyage
     </wa-button>
-  
-  
-    <wa-button appearance="plain" href="/engine-room/artists/stardust-engine/discography/1995-the-warehouse-tapes/ad-astra" class="text-body w-100 text-start justify-content-start" style="text-align: left;">
-      <i slot="start" class="fa-duotone fa-play-circle"></i> The Transmission (Audio)
+
+    <wa-button appearance="plain" variant="neutral" size="small" href="/engine-room/artists/stardust-engine/story/cosmic-tidal-lock-sound" class="w-100 text-start justify-content-start" style="text-align: left;">
+        <i slot="start" class="fa-duotone fa-satellite" aria-hidden="true"></i>Cosmic Tidal Lock Sound™
     </wa-button>
-  
+
+    <wa-button appearance="plain" variant="neutral" size="small" href="https://music.raggiesoft.com/the-stardust-engine/1995-ad-astra" class="w-100 text-start justify-content-start" style="text-align: left;">
+        <i slot="start" class="fa-duotone fa-play-circle" aria-hidden="true"></i>Stream Ad Astra (1995)
+    </wa-button>
 </div>
 
-<h6 class="pt-3 pb-2 mb-3 border-bottom mt-4 ">
-    <i slot="start" class="fa-duotone fa-database"></i> Related Archives
+<h6 class="pt-3 pb-2 mb-3 border-bottom mt-4">
+    <i class="fa-duotone fa-database me-2" aria-hidden="true"></i>Related Archives
 </h6>
 <div class="d-flex flex-column gap-1">
-  
-    <wa-button appearance="plain" href="/engine-room/artists/stardust-engine/discography/1995-the-warehouse-tapes" class="text-body w-100 text-start justify-content-start" style="text-align: left;">
-      <i slot="start" class="fa-duotone fa-compact-disc me-2"></i> The Warehouse Tapes
+    <wa-button appearance="plain" variant="neutral" size="small" href="https://music.raggiesoft.com/the-stardust-engine/2011-starfield-calibration" class="w-100 text-start justify-content-start" style="text-align: left;">
+        <i slot="start" class="fa-duotone fa-compact-disc" aria-hidden="true"></i>Starfield Calibration (2011)
     </wa-button>
-  
-  
-    <wa-button appearance="plain" href="/engine-room/artists/stardust-engine/lore/nine-figure-refusal" class="text-body w-100 text-start justify-content-start" style="text-align: left;">
-      <i slot="start" class="fa-duotone fa-file-invoice-dollar"></i> The Refusal
+
+    <wa-button appearance="plain" variant="neutral" size="small" href="/engine-room/artists/stardust-engine/story/nine-figure-refusal" class="w-100 text-start justify-content-start" style="text-align: left;">
+        <i slot="start" class="fa-duotone fa-file-invoice-dollar" aria-hidden="true"></i>The $150M Refusal
     </wa-button>
-  
-  
-    <wa-button appearance="plain" href="/engine-room/artists/stardust-engine/lore" class="text-body w-100 text-start justify-content-start" style="text-align: left;">
-      <i slot="start" class="fa-duotone fa-chevron-left"></i> Return to Lore
+
+    <wa-button appearance="plain" variant="neutral" size="small" href="/engine-room/artists/stardust-engine/story" class="w-100 text-start justify-content-start" style="text-align: left;">
+        <i slot="start" class="fa-duotone fa-chevron-left" aria-hidden="true"></i>Return to Story Hub
     </wa-button>
-  
 </div>

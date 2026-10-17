@@ -29,7 +29,7 @@ $pageTitle = "Northwood High - Crimson Node";
     <!-- Northwood Details Alert -->
     <div class="row mb-5 justify-content-center">
         <div class="col-lg-10">
-            <div class="alert alert-secondary border-0 shadow-sm rounded-3">
+            <wa-callout variant="neutral" appearance="accent" class="shadow-sm rounded-3 d-block">
                 <div class="row align-items-center">
                     <div class="col-md-8">
                         <h5 class="fw-bold text-body-emphasis"><i class="fa-solid fa-school me-2"></i>The Architecture of Isolation</h5>
@@ -45,7 +45,7 @@ $pageTitle = "Northwood High - Crimson Node";
                         <span class="d-block fw-bold text-body-emphasis">Fall 1999 &ndash; Spring 2003</span>
                     </div>
                 </div>
-            </div>
+            </wa-callout>
         </div>
     </div>
 
@@ -55,78 +55,78 @@ $pageTitle = "Northwood High - Crimson Node";
         
         <!-- Courtney Evans -->
         <div class="col-md-6 col-lg-4">
-            <div class="card h-100 border-0 shadow-sm" style="border-top: 5px solid #dc3545;">
+            <wa-card class="card h-100 border-0 shadow-sm w-100" style="border-top: 5px solid #dc3545; --body-padding: 0; --header-padding: 0;">
                 <a href="<?php echo $cdnBaseUrl; ?>/shiloh/images/characters/northwood/courtney-evans.jpg" target="_blank">
                     <img src="<?php echo $cdnBaseUrl; ?>/shiloh/images/thumbnails/northwood/courtney-evans-thumb.jpg" class="card-img-top rounded-0" alt="Courtney Evans" style="aspect-ratio: 1/1; object-fit: cover; object-position: center top;">
                 </a>
-                <div class="card-body">
+                <div class="card-body p-4">
                     <h4 class="card-title fw-bold">Courtney Evans</h4>
                     <h6 class="card-subtitle mb-3 text-danger text-uppercase fw-bold">The Illusion</h6>
                     <p class="card-text text-muted">Matt's first high school girlfriend. Enamored with the curated "School Matt," but utterly unwilling to accept the clinical reality of his survival requirements.</p>
-                    <a href="/engine-room/artists/crimson-node/characters/northwood/students/courtney-evans" class="btn btn-outline-secondary btn-sm">View Profile</a>
+                    <wa-button variant="neutral" appearance="outlined" size="small" href="/engine-room/artists/crimson-node/characters/northwood/students/courtney-evans">View Profile</wa-button>
                 </div>
-            </div>
+            </wa-card>
         </div>
 
         
         <!-- Arthur Vance -->
         <div class="col-md-6 col-lg-4">
-            <div class="card h-100 border-0 shadow-sm" style="border-top: 5px solid #198754;">
+            <wa-card class="card h-100 border-0 shadow-sm w-100" style="border-top: 5px solid #198754; --body-padding: 0; --header-padding: 0;">
                 <a href="<?php echo $cdnBaseUrl; ?>/shiloh/images/characters/northwood/arthur-vance.jpg" target="_blank">
                     <img src="<?php echo $cdnBaseUrl; ?>/shiloh/images/thumbnails/northwood/arthur-vance-thumb.jpg" class="card-img-top rounded-0" alt="Arthur Vance" style="aspect-ratio: 1/1; object-fit: cover; object-position: center top;">
                 </a>
-                <div class="card-body">
+                <div class="card-body p-4">
                     <h4 class="card-title fw-bold">Arthur Vance</h4>
                     <h6 class="card-subtitle mb-3 text-success text-uppercase fw-bold">The Guardian</h6>
                     <p class="card-text text-muted">Matt's deeply lovable, fiercely protective one-on-one paraprofessional aide who serves as the clinical anchor inside the high school bubble.</p>
-                    <a href="/engine-room/artists/crimson-node/characters/northwood/staff/arthur-vance" class="btn btn-outline-secondary btn-sm">View Profile</a>
+                    <wa-button variant="neutral" appearance="outlined" size="small" href="/engine-room/artists/crimson-node/characters/northwood/staff/arthur-vance">View Profile</wa-button>
                 </div>
-            </div>
+            </wa-card>
         </div>
 
         <!-- Mrs. DeMarco -->
         <div class="col-md-6 col-lg-4">
-            <div class="card h-100 border-0 shadow-sm" style="border-top: 5px solid #ffc107;">
+            <wa-card class="card h-100 border-0 shadow-sm w-100" style="border-top: 5px solid #ffc107; --body-padding: 0; --header-padding: 0;">
                 <a href="<?php echo $cdnBaseUrl; ?>/shiloh/images/characters/northwood/mrs-demarco.jpg" target="_blank">
                     <img src="<?php echo $cdnBaseUrl; ?>/shiloh/images/characters/northwood/mrs-demarco.jpg" class="card-img-top rounded-0" alt="Mrs. DeMarco" style="aspect-ratio: 1/1; object-fit: cover; object-position: center top;">
                 </a>
-                <div class="card-body">
+                <div class="card-body p-4">
                     <h4 class="card-title fw-bold">Mrs. DeMarco</h4>
                     <h6 class="card-subtitle mb-3 text-warning text-uppercase fw-bold">The Culinary Warden</h6>
                     <p class="card-text text-muted">The undisputed ruler of the Commons. She operates the "Shadow Law" justice system, trading physical labor (Trash Duty) for clean administrative records.</p>
-                    <a href="/engine-room/artists/crimson-node/characters/northwood/staff/mrs-demarco" class="btn btn-outline-secondary btn-sm">View Profile</a>
+                    <wa-button variant="neutral" appearance="outlined" size="small" href="/engine-room/artists/crimson-node/characters/northwood/staff/mrs-demarco">View Profile</wa-button>
                 </div>
-            </div>
+            </wa-card>
         </div>
 
         <!-- Mrs. Periwinkle -->
         <div class="col-md-6 col-lg-4">
-            <div class="card h-100 border-0 shadow-sm" style="border-top: 5px solid #6c757d;">
+            <wa-card class="card h-100 border-0 shadow-sm w-100" style="border-top: 5px solid #6c757d; --body-padding: 0; --header-padding: 0;">
                 <a href="<?php echo $cdnBaseUrl; ?>/shiloh/images/characters/northwood/mrs-periwinkle.jpg" target="_blank">
                     <img src="<?php echo $cdnBaseUrl; ?>/shiloh/images/characters/northwood/mrs-periwinkle.jpg" class="card-img-top rounded-0" alt="Mrs. Periwinkle" style="aspect-ratio: 1/1; object-fit: cover; object-position: center top;">
                 </a>
-                <div class="card-body">
+                <div class="card-body p-4">
                     <h4 class="card-title fw-bold">Mrs. Periwinkle</h4>
                     <h6 class="card-subtitle mb-3 text-secondary text-uppercase fw-bold">The Dewey Decimal Terror</h6>
                     <p class="card-text text-muted">The Head Librarian who executes uncompromising psychological warfare. Her punishment—endless library categorization in absolute silence.</p>
-                    <a href="/engine-room/artists/crimson-node/characters/northwood/staff/mrs-periwinkle" class="btn btn-outline-secondary btn-sm">View Profile</a>
+                    <wa-button variant="neutral" appearance="outlined" size="small" href="/engine-room/artists/crimson-node/characters/northwood/staff/mrs-periwinkle">View Profile</wa-button>
                 </div>
-            </div>
+            </wa-card>
         </div>
 
         <!-- Bernard Morgan -->
         <div class="col-md-6 col-lg-4">
-            <div class="card h-100 border-0 shadow-sm" style="border-top: 5px solid #0dcaf0;">
+            <wa-card class="card h-100 border-0 shadow-sm w-100" style="border-top: 5px solid #0dcaf0; --body-padding: 0; --header-padding: 0;">
                 <a href="<?php echo $cdnBaseUrl; ?>/shiloh/images/characters/northwood/bernard-morgan.jpg" target="_blank">
                     <img src="<?php echo $cdnBaseUrl; ?>/shiloh/images/characters/northwood/bernard-morgan.jpg" class="card-img-top rounded-0" alt="Bernard Morgan" style="aspect-ratio: 1/1; object-fit: cover; object-position: center top;">
                 </a>
-                <div class="card-body">
+                <div class="card-body p-4">
                     <h4 class="card-title fw-bold">Bernard Morgan</h4>
                     <h6 class="card-subtitle mb-3 text-info text-uppercase fw-bold">The Principal</h6>
                     <p class="card-text text-muted">An approachable and perceptive administrator who insists on first names and prioritizes student well-being above administrative bureaucracy.</p>
-                    <a href="/engine-room/artists/crimson-node/characters/northwood/staff/bernard-morgan" class="btn btn-outline-secondary btn-sm">View Profile</a>
+                    <wa-button variant="neutral" appearance="outlined" size="small" href="/engine-room/artists/crimson-node/characters/northwood/staff/bernard-morgan">View Profile</wa-button>
                 </div>
-            </div>
+            </wa-card>
         </div>
 
     </div>

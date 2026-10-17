@@ -34,7 +34,7 @@ $discographyLibrary = [
             // READY
             ['title' => 'Live in Chicago', 'year' => '1990', 'url' => 'https://music.raggiesoft.com/the-stardust-engine/1990-live-in-chicago', 'img' => $cdnBaseUrl . '/engine-room-records/artists/the-stardust-engine/1990-live-in-chicago/album-art.jpg'],
             // CANCELED
-            ['title' => 'Friction', 'year' => '1992', 'url' => '/engine-room/artists/stardust-engine/discography/1992-friction', 'extra' => '<span class="badge bg-danger ms-2" style="font-size: 0.6em;">CANCELED</span>', 'img' => $cdnBaseUrl . '/engine-room-records/artists/the-stardust-engine/1992-friction/album-art.jpg'],
+            ['title' => 'Friction', 'year' => '1992', 'url' => '/engine-room/artists/stardust-engine/discography/1992-friction', 'extra' => '<wa-badge variant="danger" class="ms-2" style="font-size: 0.65em;">CANCELED</wa-badge>', 'img' => $cdnBaseUrl . '/engine-room-records/artists/the-stardust-engine/1992-friction/album-art.jpg'],
         ]
     ],
     'freedom' => [
@@ -58,7 +58,7 @@ $discographyLibrary = [
     'err-planetarium' => [
         'label' => 'The Twin Moons & Progress Street',
         'heading' => '2003-2004: The Twin Moons Project & Blacksburg Homecoming',
-        'description' => 'An ambitious dual-release planetarium project confronting the trauma of The Crash of \'90, followed immediately by a nostalgic 2004 homecoming to Progress Street NE in Blacksburg.',
+        'description' => 'An ambitious dual-release planetarium project confronting the trauma of The Crash of \'90, followed immediately by a nostalgic 2004 homecoming to Progress Street NW in Blacksburg.',
         'albums' => [
             ['title' => 'Sanctuary (Zero-G)', 'year' => '2003', 'url' => 'https://music.raggiesoft.com/the-stardust-engine/2003-sanctuary-zero-g', 'img' => $cdnBaseUrl . '/engine-room-records/artists/the-stardust-engine/2003-sanctuary-zero-g/album-art.jpg'],
             ['title' => 'Mile Marker 98', 'year' => '2003', 'url' => 'https://music.raggiesoft.com/the-stardust-engine/2003-mile-marker-98', 'img' => $cdnBaseUrl . '/engine-room-records/artists/the-stardust-engine/2003-mile-marker-98/album-art.jpg'],
@@ -67,11 +67,21 @@ $discographyLibrary = [
     ],
     'burnout-hiatus' => [
         'label' => 'The Burnout Hiatus',
-        'heading' => '2007-2008: The Burnout Hiatus & Archival Releases',
-        'description' => 'After releasing three full studio albums in under two years—culminating in 2004\'s Progress Street—exhaustion pushed the band into their "Burnout Hiatus" (2004-2014).',
+        'heading' => '2007-2011: The Burnout Hiatus & Archival Releases',
+        'description' => 'After releasing three full studio albums in under two years—culminating in 2004\'s Progress Street—exhaustion pushed the band into their "Burnout Hiatus" (2004-2014), punctuated by three special archival and anniversary releases.',
         'albums' => [
             ['title' => 'Lost Sounds', 'year' => '2007', 'url' => 'https://music.raggiesoft.com/the-stardust-engine/2007-lost-sounds', 'img' => $cdnBaseUrl . '/engine-room-records/artists/the-stardust-engine/2007-lost-sounds/album-art.jpg'],
             ['title' => 'Our Own Frequency', 'year' => '2008', 'url' => 'https://music.raggiesoft.com/the-stardust-engine/2008-our-own-frequency', 'img' => $cdnBaseUrl . '/engine-room-records/artists/the-stardust-engine/2008-our-own-frequency/album-art.jpg'],
+            ['title' => 'Starfield Calibration', 'year' => '2011', 'url' => 'https://music.raggiesoft.com/the-stardust-engine/2011-starfield-calibration', 'extra' => '<wa-badge variant="brand" class="ms-2" style="font-size: 0.65em;">25TH ANNIV.</wa-badge>', 'img' => $cdnBaseUrl . '/engine-room-records/artists/the-stardust-engine/2011-starfield-calibration/album-art.jpg'],
+        ]
+    ],
+    'reignition' => [
+        'label' => 'The Reignition Era',
+        'heading' => '2015-2016: The Reignition Era',
+        'description' => 'Following the 2015 Delaware corporate reorganization and the ten-year Burnout Hiatus, the five family members returned to the studio and the stage on their own sovereign terms.',
+        'albums' => [
+            ['title' => 'Reignition', 'year' => '2015', 'url' => 'https://music.raggiesoft.com/the-stardust-engine/2015-reignition', 'img' => $cdnBaseUrl . '/engine-room-records/artists/the-stardust-engine/2015-reignition/album-art.jpg'],
+            ['title' => 'Live at The Crucible', 'year' => '2016', 'url' => 'https://music.raggiesoft.com/the-stardust-engine/2016-live-at-the-crucible', 'img' => $cdnBaseUrl . '/engine-room-records/artists/the-stardust-engine/2016-live-at-the-crucible/album-art.jpg'],
         ]
     ]
 ];

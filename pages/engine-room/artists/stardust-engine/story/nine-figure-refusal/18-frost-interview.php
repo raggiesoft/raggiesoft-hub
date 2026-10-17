@@ -78,9 +78,9 @@ $pageTitle = "The Interview - Epilogue";
     <!-- INLINE: Page header establishing the epilogue timeframe (months after the initial conflict) -->
     <div class="row justify-content-center mb-5">
         <div class="col-lg-8 text-center">
-            <span class="badge bg-info text-dark rounded-pill px-3 py-2 mb-3 text-uppercase letter-spacing-1 shadow-glow border border-info">
+            <wa-badge variant="brand" appearance="accent" pill class="px-3 py-2 mb-3 text-uppercase letter-spacing-1 shadow-glow">
                 <i class="fa-duotone fa-user-clock me-2"></i>Epilogue: February 14, 2019
-            </span>
+            </wa-badge>
             <h1 class="display-4 fw-bold text-body-emphasis mb-2 text-uppercase" style="font-family: 'Impact', sans-serif;">
                 The Interview: The "Cultural Fit" Assessment
             </h1>
@@ -217,7 +217,7 @@ $pageTitle = "The Interview - Epilogue";
     <div class="row justify-content-center mb-5">
         <div class="col-lg-10">
             
-            <div class="card border-0 shadow-lg bg-body-tertiary">
+            <wa-card class="card border-0 shadow-lg bg-body-tertiary w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
                 <div class="card-body p-5 font-serif text-body-secondary">
                     
                     <h5 class="text-uppercase text-body-secondary fw-bold mb-4 border-bottom pb-2">
@@ -343,15 +343,15 @@ $pageTitle = "The Interview - Epilogue";
                         Frost followed him into the office. It was modest. Functional. But the view of the Hollywood Hills was just as majestic as he remembered.
                     </p>
 
-                    <div class="card border-0 shadow-lg mb-5 bg-black overflow-hidden">
+                    <wa-card class="card border-0 shadow-lg mb-5 bg-black overflow-hidden w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
                         <img src="<?php echo $cdnBaseUrl; ?>/engine-room-records/images/omni-global/frost-interview.jpg" 
                              class="card-img-top" 
                              alt="Wide angle photograph of Jessica Miller in her wheelchair behind a desk eating a taco, alongside her twin brother Justin holding a tablet. Jameson Frost sits in a chair far across the room, looking terrified. The Hollywood Hills are visible through floor-to-ceiling windows."
                              style="object-fit: cover;">
-                        <div class="card-footer bg-dark text-white-50 fst-italic small text-center">
+                        <div class="card-footer bg-dark text-white-50 fst-italic small text-center p-3">
                             The Cultural Fit Assessment. Floor 38 overlooking the Hollywood Hills. Note the distance between the applicant and the Executive Director.
                         </div>
-                    </div>
+                    </wa-card>
 
                     <p>
                         Sitting behind the desk was a girl. A heavy-set girl with curly hair and thick glasses. She was wearing blue jeans and a black t-shirt with the logo <strong class="text-uppercase">The Stardust Engine</strong> emblazoned on the front. On her feet were comfortable, worn sneakers—not the pinched heels he used to mandate for female staff.
@@ -477,12 +477,12 @@ $pageTitle = "The Interview - Epilogue";
                         Justin stepped forward. He turned his tablet screen toward Frost. It wasn't a job offer. It was a calendar.
                     </p>
 
-                    <div class="alert alert-dark border-start border-4 border-danger bg-black text-white p-4 my-4 shadow-sm">
-                        <i class="fa-solid fa-calendar-xmark me-2 text-danger"></i>
+                    <wa-callout variant="danger" appearance="accent" class="p-4 my-4 shadow-sm d-block">
+                        <i slot="icon" class="fa-solid fa-calendar-xmark text-danger"></i>
                         <span class="font-monospace fw-bold text-uppercase" style="letter-spacing: 2px;">
                             "We. Do. Not. Hire. Employees. Who. Are. About. To. Go. To. Federal. Prison."
                         </span>
-                    </div>
+                    </wa-callout>
 
                     <p>
                         The silence in the room was absolute.
@@ -513,7 +513,7 @@ $pageTitle = "The Interview - Epilogue";
                     </p>
 
                 </div>
-            </div>
+            </wa-card>
 
         </div>
     </div>

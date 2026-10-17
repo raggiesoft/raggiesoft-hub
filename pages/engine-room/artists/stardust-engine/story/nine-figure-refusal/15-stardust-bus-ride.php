@@ -23,9 +23,9 @@ include ROOT_PATH . '/includes/components/styles/zenith-theme.php';
     <!-- INLINE: Press Archive header to set the journalistic context -->
     <div class="row justify-content-center mb-5">
         <div class="col-lg-8 text-center">
-            <span class="badge bg-secondary text-white rounded-pill px-3 py-2 mb-3 text-uppercase letter-spacing-1 shadow-glow">
+            <wa-badge variant="neutral" appearance="accent" pill class="px-3 py-2 mb-3 text-uppercase letter-spacing-1 shadow-glow">
                 <i class="fa-duotone fa-newspaper me-2"></i>Press Archive
-            </span>
+            </wa-badge>
             <h1 class="display-4 fw-bold text-body-emphasis mb-2" style="font-family: 'Impact', sans-serif;">
                 The Public Record
             </h1>
@@ -110,7 +110,7 @@ include ROOT_PATH . '/includes/components/styles/zenith-theme.php';
                                 <small class="text-muted d-block mt-1 text-uppercase fw-bold">Trading Halted</small>
                             </div>
 
-                            <div class="card bg-white border-0 p-3 mb-4">
+                            <wa-card class="card bg-white border-0 p-3 mb-4 w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
                                 <h6 class="fw-bold small text-uppercase mb-2 text-black">Transit Log</h6>
                                 <ul class="list-unstyled small font-monospace text-black mb-0">
                                     <li class="mb-1"><strong>Route:</strong> Civic-Rapid 720</li>
@@ -118,7 +118,7 @@ include ROOT_PATH . '/includes/components/styles/zenith-theme.php';
                                     <li class="mb-1"><strong>Fare:</strong> $1.75</li>
                                     <li class="text-danger fw-bold mt-2">Cost to Omni: $350,000,000</li>
                                 </ul>
-                            </div>
+                            </wa-card>
                         </div>
 
                     </div>
@@ -225,7 +225,7 @@ include ROOT_PATH . '/includes/components/styles/zenith-theme.php';
 
     <div class="row justify-content-center mb-5" id="press-release">
         <div class="col-lg-10">
-            <div class="card border-0 shadow-lg zenith-paper-3">
+            <wa-card class="card border-0 shadow-lg zenith-paper-3 w-100" style="--body-padding: 0; --header-padding: 0;">
                 <div class="card-body p-5">
                     <?php
                     // CONFIGURATION FOR LETTERHEAD
@@ -264,7 +264,7 @@ include ROOT_PATH . '/includes/components/styles/zenith-theme.php';
                     include ROOT_PATH . '/includes/components/corporate/letterhead.php';
                     ?>
                 </div>
-            </div>
+            </wa-card>
         </div>
     </div>
 

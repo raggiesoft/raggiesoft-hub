@@ -28,17 +28,17 @@
         <p class="lead text-body-secondary font-monospace">
             <?php echo htmlspecialchars($systemMeta['subtitle'] ?? 'Fare Information'); ?>
         </p>
-        <div class="badge bg-secondary-subtle text-secondary-emphasis border border-secondary-subtle rounded-pill px-3 py-2 mt-2 font-monospace">
+        <wa-badge variant="neutral" appearance="filled-outlined" pill class="px-3 py-2 mt-2 font-monospace">
             <i class="fa-duotone fa-calendar-check me-2"></i><?php echo htmlspecialchars($systemMeta['effective_date'] ?? 'Current'); ?>
-        </div>
+        </wa-badge>
     </div>
 
     <?php if (!empty($systemMeta['perk_banner'])): ?>
     <!-- START: Perk Banner Section -->
     <div class="row justify-content-center mb-5">
         <div class="col-lg-10">
-            <div class="card border-0 shadow-lg" style="background: linear-gradient(135deg, #630031 0%, #1a050d 100%); border-left: 5px solid #ffc107 !important;">
-                <div class="card-body p-4 p-md-5 d-flex align-items-center">
+            <wa-card class="border-0 shadow-lg" style="--wa-panel-background-color: #3a001c; border-left: 5px solid #ffc107 !important;">
+                <div class="p-2 p-md-3 d-flex align-items-center">
                     <i class="fa-solid fa-id-card fa-3x text-warning me-4 d-none d-md-block"></i>
                     <div>
                         <h3 class="h5 fw-bold text-warning text-uppercase mb-2">
@@ -49,7 +49,7 @@
                         </p>
                     </div>
                 </div>
-            </div>
+            </wa-card>
         </div>
     </div>
     <?php endif; ?>
@@ -57,22 +57,22 @@
     <!-- START: Fares Table/List Section -->
     <div class="row justify-content-center mb-5">
         <div class="col-lg-10">
-            <div class="card bg-body-tertiary border-secondary shadow-sm">
-                <div class="card-header bg-dark text-white fw-bold text-uppercase d-flex justify-content-between align-items-center py-3">
+            <wa-card class="shadow-sm">
+                <div slot="header" class="fw-bold text-uppercase d-flex justify-content-between align-items-center w-100">
                     <span><i class="fa-duotone fa-coins me-2 text-warning"></i>Standard Fares</span>
                 </div>
                 
                 <?php if (($fares['type'] ?? 'flat') === 'flat'): ?>
-                    <ul class="list-group list-group-flush bg-transparent font-monospace">
+                    <div class="d-flex flex-column font-monospace">
                         <?php foreach($fares['rates'] as $passenger => $price): ?>
-                            <li class="list-group-item bg-transparent d-flex justify-content-between align-items-center py-3">
+                            <div class="d-flex justify-content-between align-items-center py-3 border-bottom border-secondary-subtle">
                                 <span class="text-body-emphasis fw-bold text-uppercase"><?php echo htmlspecialchars($passenger); ?></span>
-                                <span class="badge bg-success-subtle text-success-emphasis border border-success-subtle fs-6 rounded-pill px-3">
+                                <wa-badge variant="success" appearance="filled-outlined" pill class="fs-6 px-3">
                                     <?php echo htmlspecialchars($price); ?>
-                                </span>
-                            </li>
+                                </wa-badge>
+                            </div>
                         <?php endforeach; ?>
-                    </ul>
+                    </div>
                 <?php elseif (($fares['type'] ?? '') === 'comparison'): ?>
                     <div class="table-responsive">
                         <table class="table table-striped table-hover align-middle mb-0 font-monospace">
@@ -99,13 +99,13 @@
                         </table>
                     </div>
                 <?php endif; ?>
-            </div>
+            </wa-card>
             
             <?php if (!empty($systemMeta['fare_media'])): ?>
-                <div class="alert alert-secondary mt-3 small text-body-secondary d-flex align-items-center">
-                    <i class="fa-solid fa-circle-info me-2 text-secondary"></i>
+                <wa-callout variant="neutral" appearance="filled-outlined" class="mt-3 small">
+                    <i slot="icon" class="fa-solid fa-circle-info"></i>
                     <?php echo htmlspecialchars($systemMeta['fare_media']); ?>
-                </div>
+                </wa-callout>
             <?php endif; ?>
         </div>
     </div>
@@ -115,40 +115,40 @@
         
         <?php if (!empty($fareProducts)): ?>
         <div class="col-lg-5">
-            <div class="card h-100 border-0 bg-body-tertiary shadow-sm">
-                <div class="card-header bg-transparent border-bottom border-secondary-subtle py-3">
+            <wa-card class="h-100 shadow-sm">
+                <div slot="header">
                     <h5 class="fw-bold text-body-emphasis text-uppercase mb-0">
                         <i class="fa-duotone <?php echo htmlspecialchars($fareProducts['icon'] ?? 'fa-ticket'); ?> me-2 text-primary"></i>
                         <?php echo htmlspecialchars($fareProducts['title']); ?>
                     </h5>
                 </div>
-                <div class="card-body p-4">
+                <div>
                     <p class="small text-body-secondary mb-4"><?php echo htmlspecialchars($fareProducts['description']); ?></p>
-                    <ul class="list-group list-group-flush rounded border border-secondary-subtle font-monospace small">
+                    <div class="d-flex flex-column rounded border border-secondary-subtle font-monospace small p-3 gap-2">
                         <?php foreach($fareProducts['caps'] as $passName => $passPrice): ?>
-                            <li class="list-group-item d-flex justify-content-between align-items-center bg-body">
+                            <div class="d-flex justify-content-between align-items-center py-1 border-bottom border-secondary-subtle">
                                 <span class="text-body-emphasis"><?php echo htmlspecialchars($passName); ?></span>
                                 <span class="fw-bold text-primary"><?php echo htmlspecialchars($passPrice); ?></span>
-                            </li>
+                            </div>
                         <?php endforeach; ?>
-                    </ul>
+                    </div>
                 </div>
-            </div>
+            </wa-card>
         </div>
         <?php endif; ?>
 
         <?php if (!empty($transferPolicy)): ?>
         <div class="col-lg-5">
-            <div class="card h-100 border-warning shadow-sm">
-                <div class="card-header bg-warning bg-opacity-10 border-bottom border-warning text-warning-emphasis fw-bold text-uppercase py-3 d-flex justify-content-between align-items-center">
+            <wa-card class="h-100 border-warning shadow-sm">
+                <div slot="header" class="text-warning-emphasis fw-bold text-uppercase d-flex justify-content-between align-items-center w-100">
                     <span><i class="fa-duotone fa-shuffle me-2"></i><?php echo htmlspecialchars($transferPolicy['title']); ?></span>
                     <?php if(!empty($transferPolicy['cost'])): ?>
-                        <span class="badge bg-warning text-dark"><?php echo htmlspecialchars($transferPolicy['cost']); ?></span>
+                        <wa-badge variant="warning" appearance="accent"><?php echo htmlspecialchars($transferPolicy['cost']); ?></wa-badge>
                     <?php endif; ?>
                 </div>
-                <div class="card-body p-4 bg-body">
+                <div>
                     <?php if(!empty($transferPolicy['mode'])): ?>
-                        <span class="badge bg-dark text-white mb-3 font-monospace"><?php echo htmlspecialchars($transferPolicy['mode']); ?></span>
+                        <wa-badge variant="neutral" appearance="accent" class="mb-3 font-monospace"><?php echo htmlspecialchars($transferPolicy['mode']); ?></wa-badge>
                     <?php endif; ?>
                     
                     <ul class="list-unstyled small text-body-secondary mb-0" style="line-height: 1.6;">
@@ -160,7 +160,7 @@
                         <?php endforeach; ?>
                     </ul>
                 </div>
-            </div>
+            </wa-card>
         </div>
         <?php endif; ?>
 

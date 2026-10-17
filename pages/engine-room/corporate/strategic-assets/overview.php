@@ -81,7 +81,7 @@ $pageTitle = "Stardust Strategic Assets - Corporate Infrastructure";
         
         <div class="col-md-6">
             <a href="/engine-room/corporate/strategic-assets/the-fortress" class="text-decoration-none">
-                <div class="card h-100 asset-card shadow-sm border-start-0 border-end-0 border-top-0 border-bottom-4 border-secondary">
+                <wa-card class="card h-100 asset-card shadow-sm border-start-0 border-end-0 border-top-0 border-bottom-4 border-secondary w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
                     <div class="card-body p-5 text-center">
                         <i class="fa-duotone fa-house-chimney fa-3x text-body-emphasis mb-3"></i>
                         <h3 class="h4 fw-bold text-uppercase text-body-emphasis">The Fortress</h3>
@@ -91,13 +91,13 @@ $pageTitle = "Stardust Strategic Assets - Corporate Infrastructure";
                             512 Progress St NE. The private residence and historical point of origin. Maintained as a secure sanctuary.
                         </p>
                     </div>
-                </div>
+                </wa-card>
             </a>
         </div>
 
         <div class="col-md-6">
             <a href="/engine-room/corporate/strategic-assets/stardust-studios" class="text-decoration-none">
-                <div class="card h-100 asset-card shadow-sm border-start-0 border-end-0 border-top-0 border-bottom-4 border-warning">
+                <wa-card class="card h-100 asset-card shadow-sm border-start-0 border-end-0 border-top-0 border-bottom-4 border-warning w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
                     <div class="card-body p-5 text-center">
                         <i class="fa-duotone fa-warehouse fa-3x text-warning mb-3"></i>
                         <h3 class="h4 fw-bold text-uppercase text-body-emphasis">Stardust Studios</h3>
@@ -107,13 +107,13 @@ $pageTitle = "Stardust Strategic Assets - Corporate Infrastructure";
                             Falling Branch Industrial Park. The Global Headquarters, Production Facility, and Secure Archives.
                         </p>
                     </div>
-                </div>
+                </wa-card>
             </a>
         </div>
 
         <div class="col-md-6">
             <a href="/engine-room/corporate/strategic-assets/the-vault" class="text-decoration-none">
-                <div class="card h-100 asset-card shadow-sm border-start-0 border-end-0 border-top-0 border-bottom-4 border-info">
+                <wa-card class="card h-100 asset-card shadow-sm border-start-0 border-end-0 border-top-0 border-bottom-4 border-info w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
                     <div class="card-body p-5 text-center">
                         <i class="fa-duotone fa-vault fa-3x text-info mb-3"></i>
                         <h3 class="h4 fw-bold text-uppercase text-body-emphasis">The Vault</h3>
@@ -123,13 +123,13 @@ $pageTitle = "Stardust Strategic Assets - Corporate Infrastructure";
                             Climate-controlled Faraday archive beneath Stardust Studios housing 2-inch analog masters and the Sun-Ray Repatriation Catalog.
                         </p>
                     </div>
-                </div>
+                </wa-card>
             </a>
         </div>
 
         <div class="col-md-6">
             <a href="/engine-room/corporate/strategic-assets/the-iron-horse" class="text-decoration-none">
-                <div class="card h-100 asset-card shadow-sm border-start-0 border-end-0 border-top-0 border-bottom-4 border-primary">
+                <wa-card class="card h-100 asset-card shadow-sm border-start-0 border-end-0 border-top-0 border-bottom-4 border-primary w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
                     <div class="card-body p-5 text-center">
                         <i class="fa-duotone fa-bus fa-3x text-primary mb-3"></i>
                         <h3 class="h4 fw-bold text-uppercase text-body-emphasis">The Iron Horse &amp; Fleet Archive</h3>
@@ -139,13 +139,13 @@ $pageTitle = "Stardust Strategic Assets - Corporate Infrastructure";
                             The 2002 Sainte-Claire 45H3 interstate cruiser (60" hydraulic lift) and the 2004 Prairie Coachworks RLFD30 low-floor shuttle coach.
                         </p>
                     </div>
-                </div>
+                </wa-card>
             </a>
         </div>
 
     </div>
 
-    <div class="alert bg-body-tertiary border border-secondary border-opacity-25 p-4 rounded-0 shadow-sm">
+    <wa-callout variant="neutral" appearance="accent" class="border p-4 rounded-0 shadow-sm d-block">
         <div class="d-flex align-items-center">
             <i class="fa-solid fa-lock text-secondary fs-3 me-3 opacity-50"></i>
             <div>
@@ -156,6 +156,6 @@ $pageTitle = "Stardust Strategic Assets - Corporate Infrastructure";
                 </p>
             </div>
         </div>
-    </div>
+    </wa-callout>
 
 </div>

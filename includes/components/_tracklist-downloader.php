@@ -168,7 +168,7 @@ $has_active_streams = !empty($stream_spotify_id) || !empty($stream_apple_id) || 
                     <i class="fa-solid fa-timeline me-2 text-info"></i> <strong>Narrative Era:</strong> <wa-badge variant="brand" class="ms-1"><?php echo htmlspecialchars($narrative_year); ?></wa-badge>
                 </div>
                 <div class="text-body fs-6">
-                    <i class="fa-solid fa-record-vinyl me-2 text-warning"></i> <strong>Format:</strong> <wa-badge variant="warning" appearance="outline" class="ms-1"><?php echo htmlspecialchars($friendly_production); ?></wa-badge>
+                    <i class="fa-solid fa-record-vinyl me-2 text-warning"></i> <strong>Format:</strong> <wa-badge variant="warning" appearance="outlined" class="ms-1"><?php echo htmlspecialchars($friendly_production); ?></wa-badge>
                 </div>
             </div>
             
@@ -177,7 +177,7 @@ $has_active_streams = !empty($stream_spotify_id) || !empty($stream_apple_id) || 
                     <i class="fa-solid fa-calendar-check me-2 text-success"></i> <strong>DSP Release:</strong> <wa-badge variant="success" class="ms-1"><?php echo htmlspecialchars($real_release_date); ?></wa-badge>
                 </div>
                 <div class="text-body fs-6">
-                    <i class="fa-solid fa-music me-2 text-primary"></i> <strong>Length:</strong> <wa-badge variant="primary" class="ms-1 me-2"><?php echo htmlspecialchars($friendly_release); ?></wa-badge>
+                    <i class="fa-solid fa-music me-2 text-primary"></i> <strong>Length:</strong> <wa-badge variant="brand" class="ms-1 me-2"><?php echo htmlspecialchars($friendly_release); ?></wa-badge>
                     <?php if ($album_upc): ?>
                         <wa-badge variant="neutral" title="Universal Product Code">UPC: <?php echo htmlspecialchars($album_upc); ?></wa-badge>
                     <?php endif; ?>
@@ -220,16 +220,17 @@ $has_active_streams = !empty($stream_spotify_id) || !empty($stream_apple_id) || 
         </p>
 
         <?php if ($dsp_exempt): ?>
-            <wa-alert variant="warning" open class="mb-4">
-                <i class="fa-solid fa-triangle-exclamation me-2"></i><strong>VAULT EXCLUSIVE:</strong> <?php echo htmlspecialchars($dsp_notice); ?>
-            </wa-alert>
+            <wa-callout variant="warning" appearance="accent" class="mb-4">
+                <i slot="icon" class="fa-solid fa-triangle-exclamation"></i>
+                <strong>VAULT EXCLUSIVE:</strong> <?php echo htmlspecialchars($dsp_notice); ?>
+            </wa-callout>
         <?php endif; ?>
 
         <div class="d-flex flex-wrap align-items-center gap-3">
-            <a href="<?php echo htmlspecialchars($listening_room_album_url); ?>" class="btn btn-primary btn-lg rounded-pill px-4 fw-bold shadow-sm d-inline-flex align-items-center">
-                <i class="fa-duotone fa-turntable me-2"></i>Explore Tracklist &amp; Lyrics in The Listening Room
-                <i class="fa-solid fa-arrow-up-right-from-square ms-2 small opacity-75"></i>
-            </a>
+            <wa-button href="<?php echo htmlspecialchars($listening_room_album_url); ?>" variant="brand" size="large" pill class="fw-bold shadow-sm">
+                <i slot="start" class="fa-duotone fa-turntable"></i>Explore Tracklist &amp; Lyrics in The Listening Room
+                <i slot="end" class="fa-solid fa-arrow-up-right-from-square small opacity-75"></i>
+            </wa-button>
 
             <?php if (!$dsp_exempt && $has_active_streams): ?>
                 <div class="d-inline-block">
@@ -247,9 +248,9 @@ $has_active_streams = !empty($stream_spotify_id) || !empty($stream_apple_id) || 
                 </div>
             <?php endif; ?>
 
-            <a href="<?php echo htmlspecialchars($listening_room_artist_url); ?>" class="btn btn-outline-secondary rounded-pill px-4 fw-bold d-inline-flex align-items-center">
-                <i class="fa-duotone fa-compact-disc me-2"></i>Full Artist Catalog
-            </a>
+            <wa-button href="<?php echo htmlspecialchars($listening_room_artist_url); ?>" variant="neutral" appearance="outlined" size="large" pill class="fw-bold">
+                <i slot="start" class="fa-duotone fa-compact-disc"></i>Full Artist Catalog
+            </wa-button>
         </div>
 
         <?php if (!empty($store_standard_url) || !empty($store_audiophile_url)): ?>
@@ -260,13 +261,13 @@ $has_active_streams = !empty($stream_spotify_id) || !empty($stream_apple_id) || 
                 </span>
                 <div class="d-flex gap-2 flex-wrap">
                     <?php if (!empty($store_standard_url)): ?>
-                        <wa-button href="<?php echo htmlspecialchars($store_standard_url); ?>" variant="brand" appearance="outline" size="small" target="_blank">
-                            <i slot="start" class="fa-solid fa-compact-disc me-2"></i>Standard Archive (V0 MP3/OGG)
+                        <wa-button href="<?php echo htmlspecialchars($store_standard_url); ?>" variant="brand" appearance="outlined" size="small" target="_blank">
+                            <i slot="start" class="fa-solid fa-compact-disc"></i>Standard Archive (V0 MP3/OGG)
                         </wa-button>
                     <?php endif; ?>
                     <?php if (!empty($store_audiophile_url)): ?>
-                        <wa-button href="<?php echo htmlspecialchars($store_audiophile_url); ?>" variant="warning" appearance="outline" size="small" target="_blank">
-                            <i slot="start" class="fa-solid fa-waveform-lines me-2"></i>Audiophile Vault (FLAC/WAV)
+                        <wa-button href="<?php echo htmlspecialchars($store_audiophile_url); ?>" variant="warning" appearance="outlined" size="small" target="_blank">
+                            <i slot="start" class="fa-solid fa-waveform-lines"></i>Audiophile Vault (FLAC/WAV)
                         </wa-button>
                     <?php endif; ?>
                 </div>

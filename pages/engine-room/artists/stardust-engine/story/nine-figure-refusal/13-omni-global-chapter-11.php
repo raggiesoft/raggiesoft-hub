@@ -130,11 +130,11 @@ include ROOT_PATH . '/includes/components/styles/zenith-theme.php';
             <div class="col-lg-4">
                 
                 <!-- BEGIN: Stock Ticker Widget -->
-                <div class="card border-danger shadow-sm mb-4">
-                    <div class="card-header bg-danger text-white fw-bold text-uppercase">
+                <wa-card class="card border-danger shadow-sm mb-4 w-100" style="--body-padding: 0; --header-padding: 0;">
+                    <div class="card-header bg-danger text-white fw-bold text-uppercase p-3">
                         <i class="fa-solid fa-chart-line-down me-2"></i>Market Watch
                     </div>
-                    <div class="card-body font-monospace text-center">
+                    <div class="card-body font-monospace text-center p-4">
                         <h6 class="text-muted">OMGCQ (Pink Sheets)</h6>
                         <div class="display-4 fw-bold stock-ticker-down text-danger">
                             $0.12
@@ -143,15 +143,15 @@ include ROOT_PATH . '/includes/components/styles/zenith-theme.php';
                             <i class="fa-solid fa-arrow-down"></i> -99.2% (Today)
                         </div>
                         <p class="small text-muted border-top pt-2">
-                            <span class="badge bg-warning text-dark">BANKRUPTCY PROCEEDING</span>
+                            <wa-badge variant="warning" appearance="accent">BANKRUPTCY PROCEEDING</wa-badge>
                         </p>
                     </div>
-                </div>
+                </wa-card>
                 <!-- END: Stock Ticker Widget -->
 
                 <!-- BEGIN: Related Links Widget -->
-                <div class="card bg-light border-0 mb-4">
-                    <div class="card-body">
+                <wa-card class="card bg-light border-0 mb-4 w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
+                    <div class="card-body p-4">
                         <h6 class="fw-bold text-uppercase border-bottom border-dark pb-2 mb-3">Related Topics</h6>
                         <ul class="list-unstyled small">
                             <li class="mb-2"><a href="/engine-room/artists/stardust-engine/story/nine-figure-refusal/zenith-report/stardust-bus-ride" class="text-decoration-none text-dark fw-bold">>> The $350 Million Bus Ride</a></li>
@@ -159,13 +159,13 @@ include ROOT_PATH . '/includes/components/styles/zenith-theme.php';
                             <li class="mb-2"><a href="#" class="text-decoration-none text-dark fw-bold">>> California Eviction Law</a></li>
                         </ul>
                     </div>
-                </div>
+                </wa-card>
                 <!-- END: Related Links Widget -->
 
-                <div class="alert alert-light border-start border-4 border-info small text-muted">
-                    <i class="fa-duotone fa-scale-balanced text-info me-2"></i>
+                <wa-callout variant="brand" appearance="accent" class="small d-block">
+                    <i slot="icon" class="fa-duotone fa-scale-balanced text-info"></i>
                     <strong>Legal Definition:</strong> The "Q" added to a stock ticker symbol (e.g., OMGCQ) indicates the company has filed for bankruptcy proceedings.
-                </div>
+                </wa-callout>
             </div>
             <!-- END: Article Sidebar (Widgets) -->
         </div>

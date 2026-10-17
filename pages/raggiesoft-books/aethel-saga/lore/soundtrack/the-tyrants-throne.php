@@ -82,9 +82,9 @@ $poster_bg = $cdnBaseUrl . '/aethel/images/aethel-hero.jpg';
                 background-position: center top;">
         
         <div class="container position-relative z-1">
-            <span class="badge bg-transparent border border-warning text-warning rounded-pill px-3 py-2 text-uppercase letter-spacing-2 mb-3">
+            <wa-badge variant="warning" appearance="outlined" pill class="text-warning px-3 py-2 text-uppercase letter-spacing-2 mb-3">
                 <i class="fa-duotone fa-compact-disc me-2"></i>Track 6 // The Leviathan Cut
-            </span>
+            </wa-badge>
             <h1 class="display-3 fw-bold text-white mb-2 cinzel-font text-shadow-lg">
                 The Tyrant's Throne
             </h1>
@@ -102,11 +102,11 @@ $poster_bg = $cdnBaseUrl . '/aethel/images/aethel-hero.jpg';
         <!-- AUDIO PLAYER PLACEHOLDER -->
         <div class="row justify-content-center mb-5">
             <div class="col-lg-8">
-                <div class="card bg-dark border-secondary shadow-lg">
+                <wa-card class="card bg-dark border-secondary shadow-lg w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
                     <div class="card-body p-4 d-flex align-items-center">
-                        <button class="btn btn-warning rounded-circle p-3 me-4 shadow-glow">
+                        <wa-button variant="warning" appearance="accent" class="rounded-circle p-3 me-4 shadow-glow">
                             <i class="fa-solid fa-play fa-2x text-dark ps-1"></i>
-                        </button>
+                        </wa-button>
                         <div class="flex-grow-1">
                             <h5 class="text-light fw-bold mb-0 cinzel-font">The Tyrant's Throne (O.S.T.)</h5>
                             <div class="text-secondary small font-monospace">Jareth Blade &bull; Engine Room Records</div>
@@ -115,14 +115,14 @@ $poster_bg = $cdnBaseUrl . '/aethel/images/aethel-hero.jpg';
                             </div>
                         </div>
                     </div>
-                </div>
+                </wa-card>
             </div>
         </div>
 
         <!-- DIRECTOR'S COMMENTARY -->
         <div class="row justify-content-center mb-5">
             <div class="col-lg-10">
-                <div class="alert alert-dark bg-body-tertiary border-start border-4 border-warning shadow-sm p-4">
+                <wa-callout variant="warning" appearance="accent" class="shadow-sm p-4 d-block">
                     <h5 class="alert-heading text-warning cinzel-font fw-bold mb-3">
                         <i class="fa-duotone fa-clapperboard-play me-2"></i>Director's Notes: The Ratigan Homage
                     </h5>
@@ -132,7 +132,7 @@ $poster_bg = $cdnBaseUrl . '/aethel/images/aethel-hero.jpg';
                     <p class="text-body-secondary mb-0">
                         The film version contains one of the most famous comedic breaks in fantasy cinema. Paying direct homage to Professor Ratigan in <em>The Great Mouse Detective</em>, Malakor's grand musical number is completely derailed when an ignorant minion uses the "C-Word" (Chaos). The resulting meltdown perfectly highlights the villain's fragile, egotistical obsession with control.
                     </p>
-                </div>
+                </wa-callout>
             </div>
         </div>
 
@@ -323,9 +323,9 @@ $poster_bg = $cdnBaseUrl . '/aethel/images/aethel-hero.jpg';
         </div>
 
         <div class="text-center mt-5 pt-4 border-top border-secondary opacity-75">
-            <a href="/raggiesoft-books/aethel-saga/soundtrack" class="btn btn-outline-secondary rounded-pill px-4">
-                <i class="fa-duotone fa-arrow-left me-2"></i>Back to Soundtrack
-            </a>
+            <wa-button variant="neutral" appearance="outlined" pill href="/raggiesoft-books/aethel-saga/soundtrack" class="px-4">
+                <i slot="start" class="fa-duotone fa-arrow-left"></i>Back to Soundtrack
+            </wa-button>
         </div>
 
     </div>

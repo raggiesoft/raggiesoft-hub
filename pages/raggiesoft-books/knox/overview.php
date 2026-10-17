@@ -34,12 +34,12 @@ $heroImage = $cdnBaseUrl . "/knox/images/aerie-hold-atmospheric.jpg";
                     <span class="text-danger">K</span>INETIC. <span class="text-danger">N</span>ULL. <span class="text-danger">O</span>PERATIVE: <span class="text-danger">X</span>.
                 </p>
                 <div class="d-flex flex-wrap gap-3">
-                    <a href="/raggiesoft-books/knox/chapters/book-1/chapter-1" class="btn btn-danger btn-lg rounded-0 px-4">
-                        <i class="fa-duotone fa-book-open me-2"></i>Start Reading
-                    </a>
-                    <a href="#dossier" class="btn btn-outline-light btn-lg rounded-0 px-4">
+                    <wa-button variant="danger" appearance="accent" size="large" href="/raggiesoft-books/knox/chapters/book-1/chapter-1" class="rounded-0 px-4">
+                        <i slot="start" class="fa-duotone fa-book-open"></i>Start Reading
+                    </wa-button>
+                    <wa-button variant="neutral" appearance="outlined" size="large" href="#dossier" class="rounded-0 px-4">
                         View Dossier
-                    </a>
+                    </wa-button>
                 </div>
             </div>
         </div>
@@ -67,13 +67,13 @@ $heroImage = $cdnBaseUrl . "/knox/images/aerie-hold-atmospheric.jpg";
         </div>
 
         <div class="col-lg-5">
-            <div class="card border-danger shadow-lg rounded-0">
-                <div class="card-header bg-danger text-white text-uppercase fw-bold rounded-0 d-flex justify-content-between align-items-center">
+            <wa-card class="card border-danger shadow-lg rounded-0 w-100" style="--body-padding: 0; --header-padding: 0;">
+                <div class="card-header bg-danger text-white text-uppercase fw-bold rounded-0 d-flex justify-content-between align-items-center p-3">
                     <span><i class="fa-solid fa-shield-exclamation me-2"></i>Threat Profile</span>
-                    <span class="badge bg-black text-danger border border-danger">ALPHA-PRIME</span>
+                    <wa-badge variant="danger" appearance="outlined" class="text-danger">ALPHA-PRIME</wa-badge>
                 </div>
                 
-                <div class="card-body" id="axiom-profile">
+                <div class="card-body p-4" id="axiom-profile">
                     <h5 class="card-title text-danger font-monospace">SUBJECT: K.N.O.X.</h5>
                     <ul class="list-unstyled small font-monospace text-body-secondary mb-3">
                         <li><strong>Designation:</strong> Kinetic Null Operative: X</li>
@@ -82,13 +82,13 @@ $heroImage = $cdnBaseUrl . "/knox/images/aerie-hold-atmospheric.jpg";
                         <li><strong>Distinguishing Marks:</strong> Extensive combat scarring (Assumed)</li>
                         <li><strong>Origin:</strong> Republic Special Forces (Assumed)</li>
                     </ul>
-                    <div class="alert alert-danger d-flex align-items-center p-2 small mb-0 rounded-0" role="alert">
-                        <i class="fa-solid fa-triangle-exclamation me-2"></i>
+                    <wa-callout variant="danger" appearance="accent" class="p-2 small mb-0 rounded-0 d-block">
+                        <i slot="icon" class="fa-solid fa-triangle-exclamation"></i>
                         <div><strong>Warning:</strong> Target utilizes military-grade ordnance. Do not engage alone.</div>
-                    </div>
+                    </wa-callout>
                 </div>
 
-                <div class="card-body d-none" id="reality-profile">
+                <div class="card-body d-none p-4" id="reality-profile">
                     <h5 class="card-title text-success font-monospace">REALITY: THE ROSTOVA TWINS</h5>
                     <ul class="list-unstyled small font-monospace text-body mb-3">
                         <li><strong>Operative A:</strong> Anya (1.5m / 4'11")</li>
@@ -97,18 +97,18 @@ $heroImage = $cdnBaseUrl . "/knox/images/aerie-hold-atmospheric.jpg";
                         <li><strong>Origin:</strong> Aerie-Hold (Native)</li>
                         <li><strong>Status:</strong> GHOSTS (Unidentified)</li>
                     </ul>
-                    <div class="alert alert-success d-flex align-items-center p-2 small mb-0 rounded-0" role="alert">
-                        <i class="fa-solid fa-leaf me-2"></i>
+                    <wa-callout variant="success" appearance="accent" class="p-2 small mb-0 rounded-0 d-block">
+                        <i slot="icon" class="fa-solid fa-leaf"></i>
                         <div><strong>Note:</strong> Target utilizes chemistry and environment. You will not see them coming.</div>
-                    </div>
+                    </wa-callout>
                 </div>
                 
-                <div class="card-footer bg-body-tertiary border-secondary-subtle text-center">
-                    <button class="btn btn-sm btn-outline-danger rounded-0 w-100" onclick="toggleProfile()">
-                        <i class="fa-duotone fa-key me-2"></i>Decryption Key: ROOK
-                    </button>
+                <div class="card-footer bg-body-tertiary border-secondary-subtle text-center p-3">
+                    <wa-button variant="danger" appearance="outlined" size="small" class="rounded-0 w-100" onclick="toggleProfile()">
+                        <i slot="start" class="fa-duotone fa-key"></i>Decryption Key: ROOK
+                    </wa-button>
                 </div>
-            </div>
+            </wa-card>
         </div>
     </div>
 </div>
@@ -157,8 +157,8 @@ $heroImage = $cdnBaseUrl . "/knox/images/aerie-hold-atmospheric.jpg";
     <div class="row g-4">
         
         <div class="col-md-4">
-            <div class="card h-100 border-success shadow-sm">
-                <div class="card-body text-center bg-body">
+            <wa-card class="card h-100 border-success shadow-sm w-100" style="--body-padding: 0; --header-padding: 0;">
+                <div class="card-body text-center bg-body p-4">
                     <div class="mb-4">
                         <div class="rounded-circle bg-success bg-opacity-10 d-inline-flex align-items-center justify-content-center border border-success" style="width: 100px; height: 100px;">
                             <i class="fa-duotone fa-leaf fa-3x text-success"></i>
@@ -171,12 +171,12 @@ $heroImage = $cdnBaseUrl . "/knox/images/aerie-hold-atmospheric.jpg";
                         She doesn't fight; she vanishes. The master of fieldcraft who turns the jungle itself into a weapon.
                     </p>
                 </div>
-            </div>
+            </wa-card>
         </div>
 
         <div class="col-md-4">
-            <div class="card h-100 border-success shadow-sm">
-                <div class="card-body text-center bg-body">
+            <wa-card class="card h-100 border-success shadow-sm w-100" style="--body-padding: 0; --header-padding: 0;">
+                <div class="card-body text-center bg-body p-4">
                     <div class="mb-4">
                         <div class="rounded-circle bg-success bg-opacity-10 d-inline-flex align-items-center justify-content-center border border-success" style="width: 100px; height: 100px;">
                             <i class="fa-duotone fa-flask-round-potion fa-3x text-success"></i>
@@ -189,15 +189,15 @@ $heroImage = $cdnBaseUrl . "/knox/images/aerie-hold-atmospheric.jpg";
                         He builds the 'toys' that make the big booms. Chemistry, fabrication, and the voice of reason.
                     </p>
                 </div>
-            </div>
+            </wa-card>
         </div>
 
         <div class="col-md-4">
-            <div class="card h-100 border-secondary bg-black overflow-hidden position-relative flicker-container">
+            <wa-card class="card h-100 border-secondary bg-black overflow-hidden position-relative flicker-container w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
                 
                 <div class="static-overlay"></div>
 
-                <div class="card-body text-center d-flex flex-column justify-content-center position-relative z-1">
+                <div class="card-body text-center d-flex flex-column justify-content-center position-relative z-1 p-4">
                     <div class="mb-4">
                         <div class="rounded-circle bg-transparent d-inline-flex align-items-center justify-content-center border border-secondary" style="width: 100px; height: 100px;">
                             <i class="fa-solid fa-chess-rook fa-3x text-secondary opacity-50"></i>
@@ -219,12 +219,12 @@ $heroImage = $cdnBaseUrl . "/knox/images/aerie-hold-atmospheric.jpg";
                     </p>
                 </div>
                 
-                <div class="card-footer bg-transparent border-top border-secondary border-opacity-25 text-center position-relative z-1">
+                <div class="card-footer bg-transparent border-top border-secondary border-opacity-25 text-center position-relative z-1 p-3">
                     <small class="text-danger font-monospace" style="font-size: 0.7rem;">
                         > ENCRYPTION KEY ROTATING...
                     </small>
                 </div>
-            </div>
+            </wa-card>
         </div>
 
     </div>

@@ -28,7 +28,7 @@
                 <p class="text-muted">Last Updated: <?php echo date("F Y"); ?></p>
             </div>
 
-            <div class="card shadow-sm border-0 mb-4">
+            <wa-card class="card shadow-sm border-0 mb-4 w-100" style="--body-padding: 0; --header-padding: 0;">
                 <div class="card-body p-4 p-lg-5">
                     
                     <h2 class="h4 fw-bold mb-3">1. Introduction</h2>
@@ -56,7 +56,7 @@
                         <p class="text-body fw-bold mb-3">
                             I receive basic order summaries to monitor store performance, but I do not collect, process, or store your credit card data or payment information on my server.
                         </p>
-                        <a href="https://store.raggiesoft.com/pages/privacy-policy" class="btn btn-sm btn-outline-primary">Read Fourthwall's Privacy Policy</a>
+                        <wa-button variant="brand" appearance="outlined" size="small" href="https://store.raggiesoft.com/pages/privacy-policy">Read Fourthwall's Privacy Policy</wa-button>
                     </div>
 
                     <h2 class="h4 fw-bold mt-5 mb-3">3. Third-Party Links</h2>
@@ -66,7 +66,7 @@
                     <p class="mb-0">If you have questions about this policy, please reach out via the contact methods listed on my <a href="/contact">Contact Page</a>.</p>
 
                 </div>
-            </div>
+            </wa-card>
 
         </div>
     </div>

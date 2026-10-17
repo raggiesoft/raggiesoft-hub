@@ -1,6 +1,20 @@
 {
-  "path": "/raggiesoft-books/character-profile",
-  "view": "pages/raggiesoft-books/character-profile",
-  "title": "Character Directory - RaggieSoft Books",
-  "showSidebar": true
+  "common": {
+    "site": "raggiesoft-books",
+    "theme": "raggiesoft-books",
+    "siteName": "Ocean View Archives",
+    "headerMenu": "raggiesoft-books/header-books",
+    "footer": "raggiesoft-books/footer-books",
+    "showSidebar": true,
+    "sidebar": "raggiesoft-books/sidebar-book",
+    "navbarBrandLogo": "/raggiesoft-books/images/logos/oceanview-archives.svg",
+    "navbarBrandText": "<span class=\"ova-serif fw-bold\" style=\"color: #E3B27C;\">Ocean View Archives</span>",
+    "navbarBrandLink": "/raggiesoft-books"
+  },
+  "/raggiesoft-books/character-profile": {
+    "view": "pages/raggiesoft-books/character-profile",
+    "title": "Character Profile | Ocean View Archives",
+    "showSidebar": true,
+    "sidebar": "raggiesoft-books/sidebar-book"
+  }
 }

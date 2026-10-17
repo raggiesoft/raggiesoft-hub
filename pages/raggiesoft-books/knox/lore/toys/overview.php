@@ -67,12 +67,12 @@ $heroImage = "/raggiesoft-assets/knox/images/macro-circuit-green.jpg"; // Placeh
         <div class="row g-4">
 
             <div class="col-md-6 col-lg-4">
-                <div class="card h-100 shadow-sm border-secondary">
-                    <div class="card-header bg-body border-bottom border-secondary d-flex justify-content-between align-items-center">
+                <wa-card class="card h-100 shadow-sm border-secondary w-100" style="--body-padding: 0; --header-padding: 0;">
+                    <div class="card-header bg-body border-bottom border-secondary d-flex justify-content-between align-items-center p-3">
                         <span class="font-monospace text-uppercase fw-bold">The Flea</span>
                         <i class="fa-duotone fa-microchip text-secondary"></i>
                     </div>
-                    <div class="card-body">
+                    <div class="card-body p-4">
                         <span class="skill-pill border-danger text-danger mb-3">KINETIC / SABOTAGE</span>
                         <p class="card-text small text-body-secondary">
                             A small limpet mine with a chemical timer. Designed to attach magnetically to engine housings.
@@ -82,19 +82,19 @@ $heroImage = "/raggiesoft-assets/knox/images/macro-circuit-green.jpg"; // Placeh
                             <strong>Effect:</strong> Detonates with a sharp <em>crack</em>, shattering delicate repulsor fins. Causes vehicles to crash due to "mechanical failure."
                         </p>
                     </div>
-                    <div class="card-footer bg-transparent border-top-0">
-                        <a href="#" class="btn btn-sm btn-outline-secondary w-100 rounded-0 disabled" aria-disabled="true">Schematic Offline</a>
+                    <div class="card-footer bg-transparent border-top-0 p-3">
+                        <wa-button variant="neutral" appearance="outlined" size="small" href="#" class="w-100 rounded-0 disabled" aria-disabled="true">Schematic Offline</wa-button>
                     </div>
-                </div>
+                </wa-card>
             </div>
 
             <div class="col-md-6 col-lg-4">
-                <div class="card h-100 shadow-sm border-danger">
-                    <div class="card-header bg-body border-bottom border-danger d-flex justify-content-between align-items-center">
+                <wa-card class="card h-100 shadow-sm border-danger w-100" style="--body-padding: 0; --header-padding: 0;">
+                    <div class="card-header bg-body border-bottom border-danger d-flex justify-content-between align-items-center p-3">
                         <span class="font-monospace text-uppercase fw-bold text-danger">Methane Catalyst</span>
                         <i class="fa-duotone fa-fire text-danger"></i>
                     </div>
-                    <div class="card-body">
+                    <div class="card-body p-4">
                         <span class="skill-pill border-danger text-danger mb-3">HIGH YIELD / AREA DENIAL</span>
                         <p class="card-text small text-body-secondary">
                             A canister that bonds with ambient swamp methane to create a hyper-volatile fuel-air explosive.
@@ -104,19 +104,19 @@ $heroImage = "/raggiesoft-assets/knox/images/macro-circuit-green.jpg"; // Placeh
                             <strong>Effect:</strong> Turns a foggy ravine into a thermobaric bomb. Vaporizes convoys. Leaves no bomb fragments, only gas residue.
                         </p>
                     </div>
-                    <div class="card-footer bg-transparent border-top-0">
-                        <a href="#" class="btn btn-sm btn-outline-danger w-100 rounded-0 disabled" aria-disabled="true">Restricted Data</a>
+                    <div class="card-footer bg-transparent border-top-0 p-3">
+                        <wa-button variant="danger" appearance="outlined" size="small" href="#" class="w-100 rounded-0 disabled" aria-disabled="true">Restricted Data</wa-button>
                     </div>
-                </div>
+                </wa-card>
             </div>
 
             <div class="col-md-6 col-lg-4">
-                <div class="card h-100 shadow-sm border-success">
-                    <div class="card-header bg-body border-bottom border-success d-flex justify-content-between align-items-center">
+                <wa-card class="card h-100 shadow-sm border-success w-100" style="--body-padding: 0; --header-padding: 0;">
+                    <div class="card-header bg-body border-bottom border-success d-flex justify-content-between align-items-center p-3">
                         <span class="font-monospace text-uppercase fw-bold text-success">The Goo-Pot</span>
                         <i class="fa-duotone fa-flask text-success"></i>
                     </div>
-                    <div class="card-body">
+                    <div class="card-body p-4">
                         <span class="skill-pill border-success text-success mb-3">CHEMICAL / NON-LETHAL</span>
                         <p class="card-text small text-body-secondary">
                             Expanding resin bomb derived from tree sap and accelerants.
@@ -126,19 +126,19 @@ $heroImage = "/raggiesoft-assets/knox/images/macro-circuit-green.jpg"; // Placeh
                             <strong>Effect:</strong> Gums up powered armor joints and filter masks. Panic-inducing but harmless. Ideal for non-violent takedowns.
                         </p>
                     </div>
-                    <div class="card-footer bg-transparent border-top-0">
-                        <a href="#" class="btn btn-sm btn-outline-success w-100 rounded-0 disabled" aria-disabled="true">Coming Soon</a>
+                    <div class="card-footer bg-transparent border-top-0 p-3">
+                        <wa-button variant="success" appearance="outlined" size="small" href="#" class="w-100 rounded-0 disabled" aria-disabled="true">Coming Soon</wa-button>
                     </div>
-                </div>
+                </wa-card>
             </div>
 
             <div class="col-md-6 col-lg-4">
-                <div class="card h-100 shadow-sm border-primary">
-                    <div class="card-header bg-body border-bottom border-primary d-flex justify-content-between align-items-center">
+                <wa-card class="card h-100 shadow-sm border-primary w-100" style="--body-padding: 0; --header-padding: 0;">
+                    <div class="card-header bg-body border-bottom border-primary d-flex justify-content-between align-items-center p-3">
                         <span class="font-monospace text-uppercase fw-bold text-primary">Stalker's Call</span>
                         <i class="fa-duotone fa-waveform-lines text-primary"></i>
                     </div>
-                    <div class="card-body">
+                    <div class="card-body p-4">
                         <span class="skill-pill border-primary text-primary mb-3">PSYCH / AUDIO</span>
                         <p class="card-text small text-body-secondary">
                             A reprogrammed acoustic emitter playing the hunting scream of a Grave Stalker.
@@ -148,19 +148,19 @@ $heroImage = "/raggiesoft-assets/knox/images/macro-circuit-green.jpg"; // Placeh
                             <strong>Effect:</strong> Terror. Causes patrols to waste ammunition firing at shadows. Useful for area clearance without engagement.
                         </p>
                     </div>
-                    <div class="card-footer bg-transparent border-top-0">
-                        <a href="#" class="btn btn-sm btn-outline-primary w-100 rounded-0 disabled" aria-disabled="true">Audio File Corrupted</a>
+                    <div class="card-footer bg-transparent border-top-0 p-3">
+                        <wa-button variant="brand" appearance="outlined" size="small" href="#" class="w-100 rounded-0 disabled" aria-disabled="true">Audio File Corrupted</wa-button>
                     </div>
-                </div>
+                </wa-card>
             </div>
 
             <div class="col-md-6 col-lg-4">
-                <div class="card h-100 shadow-sm border-warning">
-                    <div class="card-header bg-body border-bottom border-warning d-flex justify-content-between align-items-center">
+                <wa-card class="card h-100 shadow-sm border-warning w-100" style="--body-padding: 0; --header-padding: 0;">
+                    <div class="card-header bg-body border-bottom border-warning d-flex justify-content-between align-items-center p-3">
                         <span class="font-monospace text-uppercase fw-bold text-warning">The Leech</span>
                         <i class="fa-duotone fa-battery-slash text-warning"></i>
                     </div>
-                    <div class="card-body">
+                    <div class="card-body p-4">
                         <span class="skill-pill border-warning text-warning mb-3">ELECTRONIC / DRAIN</span>
                         <p class="card-text small text-body-secondary">
                             A parasitic power shunt mimicking a battery fault.
@@ -170,22 +170,22 @@ $heroImage = "/raggiesoft-assets/knox/images/macro-circuit-green.jpg"; // Placeh
                             <strong>Effect:</strong> Silently drains power cells in equipment or perimeter fences. Looks like standard equipment failure.
                         </p>
                     </div>
-                    <div class="card-footer bg-transparent border-top-0">
+                    <div class="card-footer bg-transparent border-top-0 p-3">
                         <div class="d-flex justify-content-between align-items-center">
                             <span class="small text-muted font-monospace">Designer: Pip</span>
-                            <a href="#" class="btn btn-sm btn-outline-warning rounded-0 disabled" aria-disabled="true">Protoype</a>
+                            <wa-button variant="warning" appearance="outlined" size="small" href="#" class="rounded-0 disabled" aria-disabled="true">Protoype</wa-button>
                         </div>
                     </div>
-                </div>
+                </wa-card>
             </div>
 
             <div class="col-md-6 col-lg-4">
-                <div class="card h-100 shadow-sm border-secondary">
-                    <div class="card-header bg-body border-bottom border-secondary d-flex justify-content-between align-items-center">
+                <wa-card class="card h-100 shadow-sm border-secondary w-100" style="--body-padding: 0; --header-padding: 0;">
+                    <div class="card-header bg-body border-bottom border-secondary d-flex justify-content-between align-items-center p-3">
                         <span class="font-monospace text-uppercase fw-bold">Bio-Scrambler</span>
                         <i class="fa-duotone fa-radar text-secondary"></i>
                     </div>
-                    <div class="card-body">
+                    <div class="card-body p-4">
                         <span class="skill-pill border-secondary text-secondary mb-3">ECM / STEALTH</span>
                         <p class="card-text small text-body-secondary">
                             Emits frequencies that flood bio-scanners with nonsensical data.
@@ -195,10 +195,10 @@ $heroImage = "/raggiesoft-assets/knox/images/macro-circuit-green.jpg"; // Placeh
                             <strong>Effect:</strong> Masks the presence of Glimmer Moss (or people) from Axiom sensors. Essential for smuggling.
                         </p>
                     </div>
-                    <div class="card-footer bg-transparent border-top-0">
-                        <a href="#" class="btn btn-sm btn-outline-secondary w-100 rounded-0 disabled" aria-disabled="true">Encrypted</a>
+                    <div class="card-footer bg-transparent border-top-0 p-3">
+                        <wa-button variant="neutral" appearance="outlined" size="small" href="#" class="w-100 rounded-0 disabled" aria-disabled="true">Encrypted</wa-button>
                     </div>
-                </div>
+                </wa-card>
             </div>
 
         </div>

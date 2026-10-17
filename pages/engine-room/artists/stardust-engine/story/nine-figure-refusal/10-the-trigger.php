@@ -64,9 +64,9 @@ $pageTitle = "The Trigger: Slide 14 - Evidence Item #1";
     <!-- INLINE: Page header establishing the inciting incident that triggered the war -->
     <div class="row justify-content-center mb-5">
         <div class="col-lg-8 text-center">
-            <span class="badge bg-danger-subtle text-danger-emphasis rounded-pill px-3 py-2 mb-3 text-uppercase letter-spacing-1 shadow-sm border border-danger-subtle">
+            <wa-badge variant="danger" appearance="filled-outlined" pill class="text-danger-emphasis px-3 py-2 mb-3 text-uppercase letter-spacing-1 shadow-sm">
                 <i class="fa-duotone fa-bolt me-2"></i>The Inciting Incident
-            </span>
+            </wa-badge>
             <h1 class="display-4 fw-bold text-body-emphasis mb-2 text-uppercase" style="font-family: 'Impact', sans-serif;">
                 The Trigger: Slide 14
             </h1>
@@ -79,7 +79,7 @@ $pageTitle = "The Trigger: Slide 14 - Evidence Item #1";
     <div class="row justify-content-center mb-5">
         <div class="col-lg-10">
             
-            <div class="card bg-body-tertiary border-secondary shadow-lg overflow-hidden mb-5">
+            <wa-card class="card bg-body-tertiary border-secondary shadow-lg overflow-hidden mb-5 w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
                 <div class="card-body p-4 p-md-5">
                     <p class="lead text-body-emphasis">
                         At 10:14 AM, Jameson Frost clicked the remote. The screen flickered.
@@ -103,7 +103,7 @@ $pageTitle = "The Trigger: Slide 14 - Evidence Item #1";
                         "We fixed it," Frost said. "We cut the fat."
                     </p>
                 </div>
-            </div>
+            </wa-card>
 
             <!-- INLINE: Visual recreation of Omni-Global's "Slide 14" which proposed mutilating Cassidy's masterpiece -->
             <div class="slide-container mb-5">
@@ -119,7 +119,7 @@ $pageTitle = "The Trigger: Slide 14 - Evidence Item #1";
                             <h5 class="text-uppercase text-black small fw-bold mb-3 border-bottom pb-1">Current State (Legacy)</h5>
                             <ul class="list-unstyled text-danger">
                                 <li class="mb-3">
-                                    <i class="fa-solid fa-xmark me-2"></i><strong>Runtime:</strong> 15:33 <span class="badge bg-danger ms-2">NON-VIABLE</span>
+                                    <i class="fa-solid fa-xmark me-2"></i><strong>Runtime:</strong> 15:33 <wa-badge variant="danger" appearance="accent" class="ms-2">NON-VIABLE</wa-badge>
                                 </li>
                                 <li class="mb-3">
                                     <i class="fa-solid fa-xmark me-2"></i><strong>Structure:</strong> Complex "Prog" Arrangement
@@ -153,7 +153,7 @@ $pageTitle = "The Trigger: Slide 14 - Evidence Item #1";
                 <img src="<?php echo $cdnBaseUrl; ?>/engine-room-records/images/logos/engine-room-records-logo.png" class="slide-watermark" style="filter: grayscale(100%); mix-blend-mode: multiply;">
             </div>
 
-            <div class="card bg-black text-white border-danger border-2 shadow-lg">
+            <wa-card class="card bg-black text-white border-danger border-2 shadow-lg w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
                 <div class="card-body p-5">
                     <div class="row align-items-center">
                         <div class="col-md-2 text-center">
@@ -203,7 +203,7 @@ $pageTitle = "The Trigger: Slide 14 - Evidence Item #1";
                 <div class="card-footer bg-danger text-white text-center fw-bold text-uppercase py-2">
                     Negotiation Status: TERMINATED WITH EXTREME PREJUDICE
                 </div>
-            </div>
+            </wa-card>
 
         </div>
     </div>

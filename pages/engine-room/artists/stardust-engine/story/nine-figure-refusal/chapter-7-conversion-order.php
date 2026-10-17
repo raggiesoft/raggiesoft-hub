@@ -67,9 +67,9 @@ $pageTitle = "Order Converting Case to Chapter 7 - Case 18-11492";
     
     <div class="row justify-content-center mb-5">
         <div class="col-lg-8 text-center">
-            <span class="badge bg-danger-subtle text-danger-emphasis rounded-pill px-3 py-2 mb-3 text-uppercase letter-spacing-1 border border-danger-subtle">
+            <wa-badge variant="danger" appearance="filled-outlined" pill class="text-danger-emphasis px-3 py-2 mb-3 text-uppercase letter-spacing-1">
                 <i class="fa-duotone fa-gavel me-2"></i>Final Judgment
-            </span>
+            </wa-badge>
             <h1 class="display-4 fw-bold text-body-emphasis text-uppercase mb-2" style="font-family: 'Impact', sans-serif;">
                 The Death Warrant
             </h1>
@@ -82,7 +82,7 @@ $pageTitle = "Order Converting Case to Chapter 7 - Case 18-11492";
     <div class="row justify-content-center">
         <div class="col-lg-10">
             
-            <div class="card border-0 court-document force-light-mode p-5 mx-auto" style="max-width: 900px;">
+            <wa-card class="card border-0 court-document force-light-mode p-5 mx-auto w-100" style="max-width: 900px; --body-padding: 0; --header-padding: 0;">
                 
                 <div class="text-center fw-bold mb-4">
                     UNITED STATES BANKRUPTCY COURT<br>
@@ -150,22 +150,22 @@ $pageTitle = "Order Converting Case to Chapter 7 - Case 18-11492";
                     </div>
                 </div>
 
-            </div>
+            </wa-card>
 
         </div>
     </div>
 
     <div class="row justify-content-center mt-5">
         <div class="col-lg-8">
-            <div class="alert alert-dark bg-body-tertiary border-secondary text-body-secondary d-flex align-items-center shadow-sm">
-                <i class="fa-solid fa-skull-crossbones fs-2 me-4"></i>
+            <wa-callout variant="neutral" appearance="accent" class="shadow-sm d-block">
+                <i slot="icon" class="fa-solid fa-skull-crossbones"></i>
                 <div>
                     <h5 class="alert-heading fw-bold">The End of the Line</h5>
                     <p class="mb-0 small">
                         At the moment this order was signed (Dec 14, 2018), Omni-Global Media Corp ceased to exist as an operating business. The Trustee arrived at the offices within 4 hours to change the locks. The "Liquidation Auction" (Lot 200) followed shortly after.
                     </p>
                 </div>
-            </div>
+            </wa-callout>
         </div>
     </div>
 

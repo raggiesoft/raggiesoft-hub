@@ -130,9 +130,9 @@ $pageTitle = "The 'Bus Memo' - Evidence Item #44-B";
     
     <div class="row justify-content-center mb-5">
         <div class="col-lg-8 text-center">
-            <span class="badge bg-warning text-dark rounded-pill px-3 py-2 mb-3 text-uppercase letter-spacing-1 border border-warning">
+            <wa-badge variant="warning" appearance="accent" pill class="px-3 py-2 mb-3 text-uppercase letter-spacing-1">
                 <i class="fa-duotone fa-gavel me-2"></i>Plaintiff's Exhibit A
-            </span>
+            </wa-badge>
             <h1 class="display-4 fw-bold text-body-emphasis mb-2" style="font-family: 'Impact', sans-serif;">
                 THE "BUS MEMO"
             </h1>
@@ -144,7 +144,7 @@ $pageTitle = "The 'Bus Memo' - Evidence Item #44-B";
 
     <div class="row justify-content-center mb-5">
         <div class="col-lg-10">
-            <div class="card border-0 shadow-lg position-relative bg-body-tertiary" style="transform: rotate(1deg);">
+            <wa-card class="card border-0 shadow-lg position-relative bg-body-tertiary w-100" style="transform: rotate(1deg); --body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
                 
                 <div class="position-absolute top-0 end-0 p-4 opacity-25">
                     <div class="border border-4 border-danger text-danger p-2 fw-bold text-uppercase fs-2" 
@@ -209,7 +209,7 @@ $pageTitle = "The 'Bus Memo' - Evidence Item #44-B";
                     </div>
                     <div class="position-absolute bg-danger rounded-circle shadow-sm" style="width: 12px; height: 12px; top: -5px; left: 50%; transform: translateX(-50%); border: 1px solid rgba(0,0,0,0.2);"></div>
                 </div>
-            </div>
+            </wa-card>
         </div>
     </div>
 
@@ -221,8 +221,8 @@ $pageTitle = "The 'Bus Memo' - Evidence Item #44-B";
             
             <div class="row g-4">
                 <div class="col-12">
-                    <div class="card h-100 border-info-subtle bg-info-subtle">
-                        <div class="card-body">
+                    <wa-card class="card h-100 border-info-subtle bg-info-subtle w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
+                        <div class="card-body p-4">
                             <h5 class="fw-bold text-info-emphasis"><i class="fa-solid fa-bus me-2"></i>Context: Why the City Bus?</h5>
                             <p class="card-text text-body-secondary">
                                 Frost saw "poverty." He missed the logistics.
@@ -231,37 +231,37 @@ $pageTitle = "The 'Bus Memo' - Evidence Item #44-B";
                                 Ryan O'Connell uses a rigid-frame manual wheelchair. Transferring into a hired sedan requires disassembling the chair (wheels off), transferring the body, and reassembling it upon arrival. <strong class="text-info-emphasis">City buses have a deployable ramp.</strong> Ryan could roll on and roll off without assistance. It wasn't about money; it was about <strong>autonomy</strong>.
                             </p>
                         </div>
-                    </div>
+                    </wa-card>
                 </div>
 
                 <div class="col-md-6">
-                    <div class="card h-100 bg-body-tertiary border-secondary shadow-sm">
-                        <div class="card-body">
+                    <wa-card class="card h-100 bg-body-tertiary border-secondary shadow-sm w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
+                        <div class="card-body p-4">
                             <h5 class="fw-bold text-danger"><i class="fa-solid fa-1 me-2"></i>Predatory Intent</h5>
                             <p class="text-body-secondary small mb-0">
                                 In contract law, "hardball" is legal. However, proving that an offer was lowered specifically because a target belonged to a <strong>Protected Class</strong> (disability) moves the case from Contract Law to <strong>Civil Rights Law</strong>.
                             </p>
                         </div>
-                    </div>
+                    </wa-card>
                 </div>
                 <div class="col-md-6">
-                    <div class="card h-100 bg-body-tertiary border-secondary shadow-sm">
-                        <div class="card-body">
+                    <wa-card class="card h-100 bg-body-tertiary border-secondary shadow-sm w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
+                        <div class="card-body p-4">
                             <h5 class="fw-bold text-danger"><i class="fa-solid fa-2 me-2"></i>The "Malice" Multiplier</h5>
                             <p class="text-body-secondary small mb-0">
                                 The phrase "charity case" and the mockery of their attire proved <strong>Malice</strong>. This allowed Holly to seek <strong>Punitive Damages</strong> (designed to punish), which can be 3x to 9x the actual damages.
                             </p>
                         </div>
-                    </div>
+                    </wa-card>
                 </div>
             </div>
 
-            <div class="alert alert-dark border-start border-success border-4 mt-4 bg-body-tertiary text-body-emphasis">
+            <wa-callout variant="success" appearance="accent" class="mt-4 d-block">
                 <h5 class="alert-heading text-success fw-bold">The Checkmate</h5>
                 <p class="mb-0">
                     When Holly presented this email to the Creditor Committee, the Senior Lenders realized they were defending a hate crime, not a business deal. They voted to remove the Board immediately to stop Holly from showing this document to a jury.
                 </p>
-            </div>
+            </wa-callout>
         </div>
     </div>
 

@@ -71,26 +71,26 @@ $articleSchema = [
     <!-- INLINE: Content Gate - Requires explicit user interaction (unlockContent) to view restricted lore -->
     <div id="content-gate" class="row justify-content-center min-vh-50 align-items-center">
         <div class="col-lg-8">
-            <div class="card border-danger shadow-lg">
-                <div class="card-header bg-danger text-white fw-bold text-uppercase">
+            <wa-card class="border-danger shadow-lg w-100" style="--header-padding: 0;">
+                <div slot="header" class="bg-danger text-white fw-bold text-uppercase p-3 rounded-top">
                     <i class="fa-duotone fa-triangle-exclamation me-2"></i>Content Warning
                 </div>
-                <div class="p-5 text-center">
+                <div class="p-4 p-md-5 text-center">
                     <h2 class="h3 fw-bold text-danger mb-4">Restricted Archival File</h2>
                     <p class="lead mb-4 text-body-secondary">
                         This historical archive discusses the conceptual origins of the song "Friction," including 
                         <strong>deliberate corporate exploitation and severe psychological distress</strong>.
                     </p>
                     <div class="d-grid gap-3 d-md-flex justify-content-center">
-                        <wa-button variant="neutral" outline size="large" href="/engine-room/artists/stardust-engine/story/friction/">
-                            <i class="fa-duotone fa-arrow-left me-2"></i>Return to Overview
+                        <wa-button variant="neutral" appearance="outlined" size="large" href="/engine-room/artists/stardust-engine/story/friction">
+                            <i class="fa-duotone fa-arrow-left" slot="start"></i>Return to Overview
                         </wa-button>
-                        <wa-button variant="danger" size="large" onclick="unlockContent()">
-                            <i class="fa-duotone fa-eye me-2"></i>I Understand & Wish to Proceed
+                        <wa-button variant="danger" appearance="accent" size="large" onclick="unlockContent()">
+                            <i class="fa-duotone fa-eye" slot="start"></i>I Understand &amp; Wish to Proceed
                         </wa-button>
                     </div>
                 </div>
-            </div>
+            </wa-card>
         </div>
     </div>
 
@@ -98,7 +98,7 @@ $articleSchema = [
     <div id="restricted-content" class="d-none">
         
         <div class="text-center mb-5">
-            <wa-badge variant="danger" class="rounded-pill shadow-sm mb-3 text-uppercase letter-spacing-1" style="--wa-badge-padding: 0.5rem 1rem;">
+            <wa-badge variant="danger" pill class="shadow-sm mb-3 text-uppercase letter-spacing-1" style="--wa-badge-padding: 0.5rem 1rem;">
                 <i class="fa-solid fa-file-circle-xmark me-2"></i>Evidence Item #94-B
             </wa-badge>
             <h1 class="display-3 fw-bold text-uppercase text-danger" style="font-family: 'Impact', sans-serif;">
@@ -157,20 +157,20 @@ $articleSchema = [
                             Because the lyrics to "Friction" were engineered as an act of profound psychological violence and exploitation against the siblings, Engine Room Records established an absolute, zero-tolerance protocol regarding the track.
                         </p>
 
-                        <wa-alert variant="danger" open class="mt-4 border-start border-4 border-danger rounded-0" style="--wa-panel-border-width: 0;">
+                        <wa-callout variant="danger" appearance="accent" class="mt-4">
                             <i slot="icon" class="fa-solid fa-lock fs-4"></i>
                             <h4 class="fw-bold text-uppercase mb-2">The Vault Directive</h4>
                             <p class="mb-0">
                                 The lyrics, sheet music, and any associated audio for the song <em>"Friction"</em> will <strong>never be rendered, published, or performed</strong> in any capacity. The song died the day the band walked out of that warehouse, ensuring Vance's depravity would never define their legacy.
                             </p>
-                        </wa-alert>
+                        </wa-callout>
 
                     </div>
                 </wa-card>
 
                 <div class="text-center mt-5">
-                    <wa-button variant="neutral" outline href="/engine-room/artists/stardust-engine/story/friction/" class="rounded-pill">
-                        <i class="fa-duotone fa-arrow-left me-2"></i>Back to The Catastrophe
+                    <wa-button variant="neutral" appearance="outlined" pill href="/engine-room/artists/stardust-engine/story/friction">
+                        <i class="fa-duotone fa-arrow-left" slot="start"></i>Back to The Catastrophe
                     </wa-button>
                 </div>
 

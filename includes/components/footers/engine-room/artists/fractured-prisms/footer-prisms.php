@@ -1,36 +1,15 @@
 <?php
 /**
- * ARCHITECTURAL DOCBLOCK
- * 
+ * ============================================================================
+ * ARCHITECTURAL DOCBLOCK: Fractured Prisms Footer
+ * ============================================================================
  * File: raggiesoft-hub/includes/components/footers/engine-room/artists/fractured-prisms/footer-prisms.php
- * Path: /includes/components/footers/engine-room/artists/fractured-prisms/footer-prisms.php
- * 
+ *
  * CORE RESPONSIBILITY:
- * Reusable UI Component: Artist Footer (Fractured Prisms).
- * Renders the dedicated footer for the "Fractured Prisms" artist section under Engine Room Records.
- * 
- * LORE CONTEXT:
- * - Emphasizes the "modern rock landscape" and "Maryland sanctuary" narrative.
- * - Links to specific in-universe locations like "The Square" and "The Residents."
- * 
- * UI/UX & STYLING ARCHITECTURE:
- * - Relies heavily on CSS custom properties (`--bs-bg-prism`, `--font-tech`) inherited from
- *   the global Fractured Prisms theme configuration.
- * - Uses dynamic image blending techniques (`mix-blend-mode`, `filter: invert()`) within the
- *   `<style>` block to adapt the band and label logos seamlessly to both light and dark modes.
- * - Employs Bootstrap 5 grid classes for responsive layout.
- * 
- * DEPENDENCIES & INCLUSIONS:
- * - Requires `$cdnBaseUrl` to load the `band-logo.jpg` and `engine-room-records-logo.png`.
- * - Assumes the parent wrapper applies `[data-bs-theme]` to trigger the CSS overrides.
- * 
- * MAINTENANCE NOTES:
- * - The inline CSS specifically targets `.engine-room-logo` and `.prism-footer-logo` based on
- *   theme state. Do not convert these logos to hardcoded dark/light variants; rely on the CSS
- *   filters for dynamic theme switching.
+ * Renders the dedicated footer for the "Fractured Prisms" artist section under
+ * Engine Room Records, linking to all valid discography, lore, and personnel routes.
+ * ============================================================================
  */
-// includes/components/footers/engine-room/artists/fractured-prisms/footer-prisms.php
-// The dedicated footer for Fractured Prisms
 ?>
 <footer class="py-5 border-top border-prism" style="background-color: var(--bs-bg-prism); transition: all var(--transition-speed) ease-in-out;">
     <div class="container">
@@ -44,18 +23,18 @@
                          style="max-height: 80px;">
                 </a>
                 <p class="small pe-lg-4" style="line-height: 1.6; color: var(--bs-body-color); font-family: var(--font-tech);">
-                    Architects of the modern rock landscape. Progressive concepts and atmospheric pop born from the isolation of the Maryland sanctuary.
+                    Architects of the progressive art-rock landscape. Atmospheric synth-rock and classical flute born from the Fragile Fortress.
                 </p>
             </div>
 
             <div class="col-lg-3 col-md-4 text-center text-md-start">
-                <h6 class="text-uppercase fw-bold mb-3 gothic-font" style="color: var(--bs-primary); letter-spacing: 1px;">The Archives</h6>
+                <h6 class="text-uppercase fw-bold mb-3 gothic-font" style="color: var(--bs-primary); letter-spacing: 1px;">The Catalog</h6>
                 <ul class="list-unstyled small mb-0 d-flex flex-column gap-2" style="font-family: var(--font-tech);">
-                    <li><a href="/engine-room/artists/fractured-prisms/discography/1983-carnaby-street" class="text-decoration-none prism-footer-link">Carnaby Street (1983)</a></li>
-                    <li><a href="/engine-room/artists/fractured-prisms/discography/1984-1883" class="text-decoration-none prism-footer-link">1883 (The Rock Opera)</a></li>
-                    <li class="mt-2 pt-2 border-top border-prism border-">
+                    <li><a href="https://music.raggiesoft.com/fractured-prisms/1983-carnaby-street" class="text-decoration-none prism-footer-link">Carnaby Street (1983)</a></li>
+                    <li><a href="https://music.raggiesoft.com/fractured-prisms/1985-live-at-independence-stadium" class="text-decoration-none prism-footer-link">Live at Independence Stadium (1985)</a></li>
+                    <li class="mt-2 pt-2 border-top border-prism">
                         <a href="/engine-room/artists/fractured-prisms/discography" class="text-decoration-none fw-bold prism-footer-link-active">
-                            View Full Catalog <i class="fa-solid fa-arrow-right ms-1"></i>
+                            View Album Lore <i class="fa-solid fa-arrow-right ms-1" aria-hidden="true"></i>
                         </a>
                     </li>
                 </ul>
@@ -64,9 +43,11 @@
             <div class="col-lg-2 col-md-4 text-center text-md-start">
                 <h6 class="text-uppercase fw-bold mb-3 gothic-font" style="color: var(--bs-primary); letter-spacing: 1px;">The Sanctuary</h6>
                 <ul class="list-unstyled small mb-0 d-flex flex-column gap-2" style="font-family: var(--font-tech);">
-                    <li><a href="/engine-room/artists/fractured-prisms/square" class="text-decoration-none prism-footer-link">The Square</a></li>
-                    <li><a href="/engine-room/artists/fractured-prisms/lore" class="text-decoration-none prism-footer-link">Lore Archives</a></li>
-                    <li><a href="/engine-room/artists/fractured-prisms/residents" class="text-decoration-none prism-footer-link">The Residents</a></li>
+                    <li><a href="/engine-room/artists/fractured-prisms" class="text-decoration-none prism-footer-link">The Square</a></li>
+                    <li><a href="/engine-room/artists/fractured-prisms/story/the-hollow-square" class="text-decoration-none prism-footer-link">The Hollow Square</a></li>
+                    <li><a href="/engine-room/artists/fractured-prisms/story/1985-american-shores-tour" class="text-decoration-none prism-footer-link">1985 American Tour</a></li>
+                    <li><a href="/engine-room/artists/fractured-prisms/lore/colonial-theatre" class="text-decoration-none prism-footer-link">Colonial Theatre (1985)</a></li>
+                    <li><a href="/engine-room/artists/fractured-prisms/band/claire-manning" class="text-decoration-none prism-footer-link">Claire &amp; Rhys Manning</a></li>
                 </ul>
             </div>
 
@@ -79,7 +60,7 @@
                         style="height: 35px; opacity: 0.7; transition: opacity var(--transition-speed) ease, filter var(--transition-speed) ease;">
                 </a>
                 <p class="small mb-0 mt-2" style="color: var(--bs-secondary); font-family: var(--font-tech);">
-                    Fractured Prisms is an independent project published exclusively via Engine Room Records.
+                    Master tapes rescued in the 1999 London Discovery and published exclusively via Engine Room Records.
                 </p>
             </div>
 
@@ -88,7 +69,6 @@
 </footer>
 
 <style>
-    /* Fractured Prisms Footer Specifics */
     .prism-footer-link {
         color: var(--bs-secondary);
         transition: color var(--transition-speed) ease;
@@ -104,16 +84,12 @@
     .prism-footer-link-active:hover {
         color: var(--bs-primary);
     }
-    
-    /* Auto-inverts the Engine Room Records logo based on theme */
     [data-bs-theme="dark"] .engine-room-logo {
         filter: invert(1) grayscale(100%) brightness(100%);
     }
     [data-bs-theme="light"] .engine-room-logo {
         filter: invert(0) grayscale(100%) brightness(20%);
     }
-    
-    /* Blend the band logo depending on mode */
     [data-bs-theme="dark"] .prism-footer-logo {
         mix-blend-mode: screen;
     }

@@ -22,9 +22,9 @@ $pageTitle = "Sarah: The Architecture of a Safe Space";
     
     <div class="row justify-content-center mb-5">
         <div class="col-lg-8 text-center">
-            <span class="badge bg-primary rounded-pill px-3 py-2 mb-3 text-uppercase letter-spacing-1 shadow-sm">
+            <wa-badge variant="brand" appearance="accent" pill class="px-3 py-2 mb-3 text-uppercase letter-spacing-1 shadow-sm">
                 <i class="fa-duotone fa-book-open-cover me-2"></i>Story Arc: Fall 2007
-            </span>
+            </wa-badge>
             <h1 class="display-4 fw-bold text-body-emphasis mb-2" style="font-family: 'Impact', sans-serif;">
                 THE ARCHITECTURE OF A SAFE SPACE
             </h1>
@@ -38,7 +38,7 @@ $pageTitle = "Sarah: The Architecture of a Safe Space";
         <div class="col-lg-10">
             
             <!-- ARCHITECTURE: Thematic grouping of narrative Acts into Chapters -->
-            <div class="card mb-4 border-0 shadow-sm">
+            <wa-card class="card mb-4 border-0 shadow-sm w-100" style="--body-padding: 0; --header-padding: 0;">
                 <div class="card-header bg-body-tertiary border-bottom border-secondary py-3">
                     <h5 class="mb-0 text-body-emphasis fw-bold text-uppercase"><i class="fa-solid fa-shield-halved me-2 text-secondary"></i>Chapter 1: The Breach</h5>
                 </div>
@@ -64,9 +64,9 @@ $pageTitle = "Sarah: The Architecture of a Safe Space";
                         <i class="fa-solid fa-chevron-right ms-auto text-body-tertiary"></i>
                     </a>
                 </div>
-            </div>
+            </wa-card>
 
-            <div class="card mb-4 border-0 shadow-sm">
+            <wa-card class="card mb-4 border-0 shadow-sm w-100" style="--body-padding: 0; --header-padding: 0;">
                 <div class="card-header bg-body-tertiary border-bottom border-secondary py-3">
                     <h5 class="mb-0 text-body-emphasis fw-bold text-uppercase"><i class="fa-solid fa-map-location-dot me-2 text-secondary"></i>Chapter 2: The Logistics of Trust</h5>
                 </div>
@@ -92,9 +92,9 @@ $pageTitle = "Sarah: The Architecture of a Safe Space";
                         <i class="fa-solid fa-chevron-right ms-auto text-body-tertiary"></i>
                     </a>
                 </div>
-            </div>
+            </wa-card>
 
-            <div class="card mb-4 border-0 shadow-sm">
+            <wa-card class="card mb-4 border-0 shadow-sm w-100" style="--body-padding: 0; --header-padding: 0;">
                 <div class="card-header bg-body-tertiary border-bottom border-secondary py-3">
                     <h5 class="mb-0 text-body-emphasis fw-bold text-uppercase"><i class="fa-solid fa-expand-arrows me-2 text-secondary"></i>Chapter 3: Expanding the Perimeter</h5>
                 </div>
@@ -120,9 +120,9 @@ $pageTitle = "Sarah: The Architecture of a Safe Space";
                         <i class="fa-solid fa-chevron-right ms-auto text-body-tertiary"></i>
                     </a>
                 </div>
-            </div>
+            </wa-card>
 
-            <div class="card mb-4 border-0 shadow-sm">
+            <wa-card class="card mb-4 border-0 shadow-sm w-100" style="--body-padding: 0; --header-padding: 0;">
                 <div class="card-header bg-body-tertiary border-bottom border-secondary py-3">
                     <h5 class="mb-0 text-body-emphasis fw-bold text-uppercase"><i class="fa-solid fa-anchor me-2 text-secondary"></i>Chapter 4: The Anchor</h5>
                 </div>
@@ -158,7 +158,7 @@ $pageTitle = "Sarah: The Architecture of a Safe Space";
                         <i class="fa-solid fa-chevron-right ms-auto text-body-tertiary"></i>
                     </a>
                 </div>
-            </div>
+            </wa-card>
 
         </div>
     </div>

@@ -148,13 +148,57 @@ $pageTitle = "Master Licensing Portal | RaggieSoft Media";
                     <li class="mb-2"><i class="fa-solid fa-circle-exclamation text-warning me-2" aria-hidden="true"></i><strong>ShareAlike:</strong> Derivative works must use the same license.</li>
                 </ul>
                 <wa-button href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" variant="warning" size="small" class="mt-auto fw-bold">
-                    <i class="fa-solid fa-external-link me-2" aria-hidden="true"></i>View CC BY-SA 4.0 Deed
+                    <i slot="start" class="fa-solid fa-external-link" aria-hidden="true"></i>View CC BY-SA 4.0 Deed
                 </wa-button>
             </div>
         </wa-card>
     </div>
 
 </div>
+
+<wa-card id="trademarks" class="bg-hud-base w-100 shadow-sm mb-5 p-2" style="--border-color: var(--raggie-glass-border);">
+    <div class="p-4 p-lg-5">
+        <div class="d-flex flex-wrap align-items-center justify-content-between gap-2 mb-3 border-bottom border-secondary-subtle pb-3">
+            <div>
+                <h2 class="h4 fw-bold mb-1 text-uppercase text-glow-primary">
+                    <i class="fa-duotone fa-satellite me-2 text-info" aria-hidden="true"></i>Trademarks &amp; Sonic Nomenclature
+                </h2>
+                <span class="font-monospace small text-body-secondary">Proprietary Brand Identifiers (&trade;) vs. Open Generic Genre Terms</span>
+            </div>
+            <wa-badge variant="brand" appearance="accent" pill class="font-monospace">MICHAEL P. RAGSDALE / RAGGIESOFT MEDIA</wa-badge>
+        </div>
+        <p class="text-body-secondary small mb-4">
+            While RaggieSoft Media's code is MIT-licensed and our narrative lore is shared under CC BY-SA 4.0, <strong>trademarks</strong> are maintained separately to distinguish official <strong>Michael P. Ragsdale / RaggieSoft Media / Engine Room Records&trade;</strong> releases from third-party works. We pair our audio trademark with an open, generic genre term that anyone in the community is free to use:
+        </p>
+        <div class="row g-4 mb-4">
+            <div class="col-md-6">
+                <div class="p-3 rounded-3 h-100 border border-warning border-opacity-50" style="background: rgba(255, 179, 0, 0.06);">
+                    <div class="text-uppercase small fw-bold text-warning mb-2">
+                        <i class="fa-solid fa-shield-halved me-2" aria-hidden="true"></i>Proprietary Trademark: "The Cosmic Tidal Lock Sound&trade;"
+                    </div>
+                    <p class="small text-body-secondary mb-0">
+                        <strong>The Cosmic Tidal Lock Sound&trade;</strong> (and <strong>Cosmic Tidal Lock Sound&trade;</strong>) is a common-law trademark claimed by <strong>Michael P. Ragsdale</strong> (d/b/a <strong>RaggieSoft Media</strong> and <strong>Engine Room Records&trade;</strong>) to identify official RaggieSoft audio releases engineered using our zero-gravity synth-pop production profile (such as <em>Hard Reset</em>, <em>Moon 1: Sanctuary (Zero-G)</em>, and <em>Starfield Calibration</em>).
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="p-3 rounded-3 h-100 border border-success border-opacity-50" style="background: rgba(25, 135, 84, 0.08);">
+                    <div class="text-uppercase small fw-bold text-success mb-2">
+                        <i class="fa-solid fa-check-circle me-2" aria-hidden="true"></i>Open Generic Genre Name: "80s Cosmic Pop"
+                    </div>
+                    <p class="small text-body-secondary mb-0">
+                        <strong>80s Cosmic Pop</strong> (as well as descriptive phrases like <em>"Zero-G Synth-Pop"</em> or <em>"Cosmic Synth-Rock"</em>) is the <strong>generic, open genre name</strong> that Michael P. Ragsdale explicitly welcomes and encourages fellow musicians, prompt engineers, playlist curators, and fans to use freely for their own tracks and projects without restriction.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="text-center text-md-end">
+            <wa-button href="/engine-room/artists/stardust-engine/story/cosmic-tidal-lock-sound" variant="brand" appearance="accent" size="small" class="fw-bold text-uppercase">
+                <i slot="start" class="fa-duotone fa-book-atlas" aria-hidden="true"></i>Read Full Cosmic Tidal Lock Sound&trade; Explainer &amp; Suno Guide
+            </wa-button>
+        </div>
+    </div>
+</wa-card>
 
 <wa-card class="bg-hud-base w-100 shadow-sm mb-5 p-2" style="--border-color: transparent;">
     <div class="p-4 p-lg-5 text-center text-md-start d-md-flex align-items-center justify-content-between">
@@ -165,12 +209,9 @@ $pageTitle = "Master Licensing Portal | RaggieSoft Media";
             </p>
         </div>
         <div class="flex-shrink-0 mt-3 mt-md-0">
-            <wa-button href="/raggiesoft-media/licensing/commercial" variant="primary" class="fw-bold text-uppercase shadow">
-                <i class="fa-duotone fa-briefcase me-2" aria-hidden="true"></i>Commercial Portal
+            <wa-button href="/raggiesoft-media/licensing/commercial" variant="brand" appearance="accent" class="fw-bold text-uppercase shadow">
+                <i slot="start" class="fa-duotone fa-briefcase" aria-hidden="true"></i>Commercial Portal
             </wa-button>
         </div>
     </div>
 </wa-card>
-
-
-</div>

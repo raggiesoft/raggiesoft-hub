@@ -17,9 +17,9 @@ $pageTitle = "The Crash of '90 - The Stardust Engine Lore";
     
     <div class="row justify-content-center mb-5">
         <div class="col-lg-8 text-center">
-            <span class="badge bg-danger text-white rounded-pill px-3 py-2 shadow-sm mb-3">
+            <wa-badge variant="danger" appearance="accent" pill class="px-3 py-2 shadow-sm mb-3">
                 <i class="fa-duotone fa-car-crash me-2"></i>Historical Archive
-            </span>
+            </wa-badge>
             <h1 class="display-3 fw-bold text-uppercase text-body-emphasis mb-0" style="font-family: 'Impact', sans-serif;">
                 The Crash of '90
             </h1>
@@ -32,12 +32,12 @@ $pageTitle = "The Crash of '90 - The Stardust Engine Lore";
     <!-- INLINE: Official State Police Report formatting for the incident -->
     <div class="row justify-content-center mb-5">
         <div class="col-lg-10">
-            <div class="card bg-body-tertiary border-danger shadow-lg">
-                <div class="card-header bg-danger bg-opacity-10 text-danger-emphasis border-bottom border-danger fw-bold d-flex justify-content-between align-items-center">
+            <wa-card class="bg-body-tertiary border-danger shadow-lg w-100" style="--header-padding: 0;">
+                <div slot="header" class="bg-danger bg-opacity-10 text-danger-emphasis border-bottom border-danger fw-bold d-flex justify-content-between align-items-center p-3">
                     <span><i class="fa-duotone fa-file-medical-alt me-2 text-danger"></i>Virginia State Police <span aria-hidden="true" class="mx-1 opacity-50">//</span><span class="visually-hidden">,</span> Report #90-81-114</span>
                     <wa-badge variant="danger">CRITICAL</wa-badge>
                 </div>
-                <div class="card-body font-monospace small text-body-secondary p-4">
+                <div class="font-monospace small text-body-secondary p-2">
                     <div class="row mb-3 opacity-75">
                         <div class="col-md-4">DATE: Dec 10, 1990</div>
                         <div class="col-md-4">TIME: 23:42 EST</div>
@@ -45,13 +45,13 @@ $pageTitle = "The Crash of '90 - The Stardust Engine Lore";
                     </div>
                     <hr class="border-danger opacity-25">
                     <div class="text-body-secondary">
-                        <p class="mb-2"><strong class="text-body-emphasis">CONDITIONS:</strong> Heavy Snow, Visibility < 50ft. Road surface iced. Winter Weather Ban pending.</p>
+                        <p class="mb-2"><strong class="text-body-emphasis">CONDITIONS:</strong> Heavy Snow, Visibility &lt; 50ft. Road surface iced. Winter Weather Ban pending.</p>
                         <p class="mb-2"><strong class="text-body-emphasis">VEHICLE 1 (Victim):</strong> 1988 Holt Freighter Van (Touring Vehicle). Traveling North at approx 40 MPH in right lane. Hazard lights active.</p>
                         <p class="mb-2"><strong class="text-body-emphasis">VEHICLE 2 (At Fault):</strong> Commercial Sedan. Traveling North at est. 70-75 MPH (speed calculated via crush depth analysis and debris field vectoring). Driver lost control attempting to pass, clipping Vehicle 1's rear quarter panel.</p>
                         <p class="mb-0"><strong class="text-body-emphasis">OUTCOME:</strong> Vehicle 1 spun off roadway, rolling twice into the embankment. Driver (R. O'Connell) pinned and required hydraulic extrication (Jaws of Life). Four passengers sustained minor injuries. Driver airlifted to Star City General Hospital.</p>
                     </div>
                 </div>
-            </div>
+            </wa-card>
         </div>
     </div>
 
@@ -71,20 +71,20 @@ $pageTitle = "The Crash of '90 - The Stardust Engine Lore";
 
     <div class="row justify-content-center mb-5">
         <div class="col-lg-9">
-            <wa-card class="bg-body border-info shadow-sm w-100 p-0 overflow-hidden">
+            <wa-card class="bg-body border-info shadow-sm w-100 p-0 overflow-hidden" style="--body-padding: 0;">
                 <div class="d-flex flex-column flex-md-row align-items-center">
                     <img src="<?php echo $cdnBaseUrl; ?>/engine-room-records/artists/the-stardust-engine/2003-mile-marker-98/album-art.jpg" 
                         alt="Mile Marker 98 Album Art" 
                         class="img-fluid border-end border-info" 
                         style="max-width: 200px; aspect-ratio: 1/1; object-fit: cover;">
                     <div class="p-4">
-                        <wa-badge variant="info" class="mb-2">Discography Link</wa-badge>
+                        <wa-badge variant="brand" class="mb-2">Discography Link</wa-badge>
                         <h4 class="fw-bold mb-2 text-body-emphasis">Mile Marker 98</h4>
                         <p class="text-body-secondary small mb-3">
                             Years later, Ryan would process the trauma of this night through his music. The critically acclaimed concept album <em>Mile Marker 98</em> reimagines the violent highway crash as a tragic malfunction aboard a spacecraft drifting through the vast cosmos.
                         </p>
-                        <wa-button variant="info" outline href="/engine-room/artists/stardust-engine/discography/2003-moon-2-mile-marker-98">
-                            <i class="fa-duotone fa-compact-disc me-2"></i>Explore the Album
+                        <wa-button variant="brand" appearance="outlined" href="/engine-room/artists/stardust-engine/discography/2003-moon-2-mile-marker-98">
+                            <i slot="start" class="fa-duotone fa-compact-disc"></i>Explore the Album
                         </wa-button>
                     </div>
                 </div>
@@ -94,13 +94,13 @@ $pageTitle = "The Crash of '90 - The Stardust Engine Lore";
 
     <div class="row justify-content-center mb-5">
         <div class="col-lg-8">
-            <wa-card class="bg-body border-secondary shadow-lg transform-rotate-1 p-0">
-                <img src="<?php echo $cdnBaseUrl; ?>/stardust-engine/images/story/crash-of-1990.jpg" 
-                    class="card-img-top border border-secondary" 
+            <wa-card class="bg-body border-secondary shadow-lg transform-rotate-1 p-0 w-100">
+                <img slot="media" src="<?php echo $cdnBaseUrl; ?>/stardust-engine/images/story/crash-of-1990.jpg" 
+                    class="w-100 border-bottom border-secondary" 
                     alt="Ryan O'Connell in his wheelchair at Star City General Hospital, surrounded by Cassidy, Holly, and the Wright twins. December 18, 1990."
                     style="filter: sepia(20%) contrast(1.1);">
                     
-                <div class="text-center p-3">
+                <div class="text-center p-2">
                     <p class="font-monospace text-danger small fw-bold mb-1" style="font-family: 'Courier New', monospace; letter-spacing: 1px;">
                         DEC 18 '90 <span aria-hidden="true" class="mx-1 opacity-50">//</span><span class="visually-hidden">,</span> STAR CITY GENERAL
                     </p>
@@ -133,10 +133,10 @@ $pageTitle = "The Crash of '90 - The Stardust Engine Lore";
                     <i class="fa-duotone fa-clock me-2 text-primary"></i>The "Iron Dome" (Morning Routine)
                 </div>
                 <div class="p-3">
-                    <p class="card-text text-body-secondary small">
+                    <p class="text-body-secondary small">
                         Spontaneity died on I-81. Ryan requires 60 minutes every morning for a strict <strong>Bowel Program</strong>. Because his body can no longer regulate this automatically, it must be manually triggered on a strict schedule to prevent accidents.
                     </p>
-                    <p class="card-text text-body-secondary small mb-0">
+                    <p class="text-body-secondary small mb-0">
                         <strong>Holly's Role:</strong> She enforces the "Iron Dome." No interviews, no load-ins, no visitors before 10:00 AM. The tour bus does not move during this hour.
                     </p>
                 </div>
@@ -149,10 +149,10 @@ $pageTitle = "The Crash of '90 - The Stardust Engine Lore";
                     <i class="fa-duotone fa-glass-water me-2 text-info"></i>The 4-Hour Clock (Hydration)
                 </div>
                 <div class="p-3">
-                    <p class="card-text text-body-secondary small">
+                    <p class="text-body-secondary small">
                         Ryan manages his bladder via Intermittent Catheterization (IC) every 4 hours. If he waits too long, he risks kidney damage or <strong>Autonomic Dysreflexia</strong> (a life-threatening blood pressure spike).
                     </p>
-                    <p class="card-text text-body-secondary small mb-0">
+                    <p class="text-body-secondary small mb-0">
                         <strong>The Logic:</strong> He constantly calculates water intake vs. showtime. On the 1990s tour buses, this meant relying on discreet urinals in his bunk, often assisted by Cassidy or Holly when his hands were too tired from playing.
                     </p>
                 </div>
@@ -165,10 +165,10 @@ $pageTitle = "The Crash of '90 - The Stardust Engine Lore";
                     <i class="fa-duotone fa-loveseat me-2 text-warning"></i>The Pressure Clock
                 </div>
                 <div class="p-3">
-                    <p class="card-text text-body-secondary small">
-                        If Ryan sits still for >2 hours, skin tissue dies (pressure sores). He must perform a "weight shift" (lifting himself off the seat) every 15 minutes.
+                    <p class="text-body-secondary small">
+                        If Ryan sits still for &gt;2 hours, skin tissue dies (pressure sores). He must perform a "weight shift" (lifting himself off the seat) every 15 minutes.
                     </p>
-                    <p class="card-text text-body-secondary small mb-0">
+                    <p class="text-body-secondary small mb-0">
                         <strong>Cassidy's Role:</strong> She is his "Spotter." During interviews or studio sessions, she watches the clock. A subtle tap on his shoulder is their code: <em>"Lift."</em> She also handles the nightly skin checks, looking for red spots that Ryan cannot feel or see.
                     </p>
                 </div>
@@ -181,10 +181,10 @@ $pageTitle = "The Crash of '90 - The Stardust Engine Lore";
                     <i class="fa-duotone fa-stairs me-2 text-danger"></i>The "Freight Dog" Reality
                 </div>
                 <div class="p-3">
-                    <p class="card-text text-body-secondary small">
+                    <p class="text-body-secondary small">
                         The ADA passed in 1990, but venues in 1991 didn't care. Stages were inaccessible. Ryan often entered venues through loading docks and freight elevators, hauled up alongside the gear.
                     </p>
-                    <p class="card-text text-body-secondary small mb-0">
+                    <p class="text-body-secondary small mb-0">
                         <strong>The Twins' Role:</strong> Evan and Tyler developed a synchronized two-man lift to carry Ryan and his chair up fire escapes and narrow stairwells. They became his legs.
                     </p>
                 </div>
@@ -195,11 +195,11 @@ $pageTitle = "The Crash of '90 - The Stardust Engine Lore";
 
     <div class="row mt-5">
         <div class="col-12 text-center">
-            <wa-button variant="neutral" outline href="/engine-room/artists/stardust-engine/band/ryan-oconnell" class="rounded-pill px-4 mb-3 mb-md-0">
-                <i class="fa-duotone fa-user me-2"></i>Return to Ryan's Bio
+            <wa-button variant="neutral" appearance="outlined" pill href="/engine-room/artists/stardust-engine/band/ryan-oconnell" class="mb-3 mb-md-0">
+                <i slot="start" class="fa-duotone fa-user"></i>Return to Ryan's Bio
             </wa-button>
-            <wa-button variant="danger" outline href="/engine-room/artists/stardust-engine/story/friction" class="rounded-pill px-4 ms-md-3">
-                <i class="fa-duotone fa-forward me-2"></i>Next: The Friction Scandal (1992)
+            <wa-button variant="danger" appearance="outlined" pill href="/engine-room/artists/stardust-engine/story/friction" class="ms-md-3">
+                <i slot="start" class="fa-duotone fa-forward"></i>Next: The Friction Scandal (1992)
             </wa-button>
         </div>
     </div>

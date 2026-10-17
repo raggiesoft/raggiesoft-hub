@@ -87,7 +87,7 @@ $groupSchema = [
 
     <div class="row justify-content-center mb-5">
         <div class="col-lg-10">
-            <div class="card glass-card border-secondary p-2 shadow-lg">
+            <wa-card class="card glass-card border-secondary p-2 shadow-lg w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
                 <img src="<?php echo $cdnBaseUrl; ?>/stardust-engine/images/band-members/family-portraits/artist-header-all.jpg" 
                      class="img-fluid rounded border border-secondary border-opacity-50" 
                      alt="The full Stardust Engine family in the studio: Evan, Cassidy, Ryan, Holly, and Tyler.">
@@ -96,7 +96,7 @@ $groupSchema = [
                         <i class="fa-solid fa-users me-2"></i><strong>The Family Unit (1997):</strong> Evan Wright, Cassidy O'Connell, Ryan O'Connell, Holly O'Connell, and Tyler Wright inside The Fortress.
                     </p>
                 </div>
-            </div>
+            </wa-card>
         </div>
     </div>
 
@@ -104,19 +104,19 @@ $groupSchema = [
 
     <div class="row justify-content-center mb-5">
         <div class="col-lg-8">
-            <div class="alert alert-dark border-info bg-opacity-25 d-flex align-items-center">
-                <i class="fa-duotone fa-camera-retro text-info fs-2 me-3"></i>
+            <wa-callout variant="brand" appearance="accent" class="d-block">
+                <i slot="icon" class="fa-duotone fa-camera-retro text-info"></i>
                 <div class="small text-info-emphasis">
                     <strong>Archival Note:</strong> The following portraits are from the <strong>1997 "Hard Reset" Press Kit</strong>. These photos marked the band's return to the public eye as independent artists. Note the "Professional" styling—a deliberate choice by Holly O'Connell to prove to distributors that Engine Room Records was a stable business, despite their "Wilderness Years."
                 </div>
-            </div>
+            </wa-callout>
         </div>
     </div>
 
     <div class="row g-5 justify-content-center">
 
         <div class="col-lg-10">
-            <div class="card glass-card border-secondary overflow-hidden">
+            <wa-card class="card glass-card border-secondary overflow-hidden w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
                 <div class="row g-0 align-items-center">
                     <div class="col-md-4 position-relative">
                         <img src="<?php echo $cdnBaseUrl; ?>/stardust-engine/images/band-members/ryan.jpg" 
@@ -148,11 +148,11 @@ $groupSchema = [
                         </div>
                     </div>
                 </div>
-            </div>
+            </wa-card>
         </div>
 
         <div class="col-lg-10">
-            <div class="card glass-card border-secondary overflow-hidden">
+            <wa-card class="card glass-card border-secondary overflow-hidden w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
                 <div class="row g-0 align-items-center">
                     <div class="col-md-4">
                         <img src="<?php echo $cdnBaseUrl; ?>/stardust-engine/images/band-members/cassidy.jpg" 
@@ -181,11 +181,11 @@ $groupSchema = [
                         </div>
                     </div>
                 </div>
-            </div>
+            </wa-card>
         </div>
 
         <div class="col-lg-10">
-            <div class="card glass-card border-secondary overflow-hidden">
+            <wa-card class="card glass-card border-secondary overflow-hidden w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
                 <div class="row g-0 align-items-center">
                     <div class="col-md-4">
                         <img src="<?php echo $cdnBaseUrl; ?>/stardust-engine/images/band-members/holly.jpg" 
@@ -214,11 +214,11 @@ $groupSchema = [
                         </div>
                     </div>
                 </div>
-            </div>
+            </wa-card>
         </div>
 
         <div class="col-lg-10">
-            <div class="card glass-card border-secondary overflow-hidden">
+            <wa-card class="card glass-card border-secondary overflow-hidden w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
                 <div class="row g-0 align-items-center">
                     <div class="col-md-4">
                         <img src="<?php echo $cdnBaseUrl; ?>/stardust-engine/images/band-members/evan.jpg" 
@@ -247,11 +247,11 @@ $groupSchema = [
                         </div>
                     </div>
                 </div>
-            </div>
+            </wa-card>
         </div>
 
         <div class="col-lg-10">
-            <div class="card glass-card border-secondary overflow-hidden">
+            <wa-card class="card glass-card border-secondary overflow-hidden w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
                 <div class="row g-0 align-items-center">
                     <div class="col-md-4">
                         <img src="<?php echo $cdnBaseUrl; ?>/stardust-engine/images/band-members/tyler.jpg" 
@@ -280,7 +280,7 @@ $groupSchema = [
                         </div>
                     </div>
                 </div>
-            </div>
+            </wa-card>
         </div>
 
     </div> </div>

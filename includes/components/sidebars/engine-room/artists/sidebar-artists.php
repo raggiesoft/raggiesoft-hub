@@ -1,92 +1,79 @@
 <?php
 /**
- * ARCHITECTURE & MAINTENANCE (LEGACY)
+ * ============================================================================
+ * Engine Room Records - Active Roster Sidebar (Web Awesome v3.13.0)
+ * ============================================================================
+ * File: includes/components/sidebars/engine-room/artists/sidebar-artists.php
  *
- * This file provides the primary sidebar navigation for the main Engine Room "Active Roster" (Artists) directory.
- * 
- * DESIGN INTENT:
- * - Utilizes a `sticky-top` layout so the sidebar remains visible as the user scrolls through the roster.
- * - Features immersive lore elements ("Unit Status" widget, Security Reminder) styled as a backend terminal to enhance the narrative that the user is browsing a corporate database.
- * - Maintains a strict monospace typography theme (`font-monospace`) to align with the database aesthetic.
- * 
- * MAINTENANCE NOTES:
- * - The "Unit Status" data is purely static HTML and does not reflect actual server or application health.
- * - The `<style>` block at the bottom contains a small helper class (`w-20px`). This should ideally be moved to the main stylesheet to prevent duplicate class definitions if the sidebar is loaded alongside other components.
+ * ARCHITECTURAL OVERVIEW:
+ * Primary sidebar navigation for the main Engine Room "Active Roster" (Artists)
+ * directory. Features a `sticky-top` layout, system directory links, an
+ * interactive Unit Status roster widget (`ERR-001` through `ERR-006`), and a
+ * `<wa-callout>` security notice.
+ * ============================================================================
  */
-// includes/components/sidebars/engine-room/artists/sidebar-artists.php
-// The Navigation Panel for the Artist Directory
 ?>
 
 <div class="sticky-top" style="top: 100px;">
-    
-    <!-- DIRECTORY NAVIGATION -->
-    <div class="card rounded-0 border-secondary mb-4 bg-body-tertiary shadow-sm">
-        <div class="card-header bg-dark text-white fw-bold text-uppercase border-bottom border-primary font-monospace small">
-            <i slot="start" class="fa-solid fa-folder-tree"></i> System Directory
-        </div>
-        <div class="list-group list-group-flush font-monospace small">
-            <a href="/engine-room" class="list-group-item list-group-item-action bg-transparent text-body">
-                <i slot="start" class="fa-duotone fa-house-building me-2 w-20px text-center"></i> HQ Overview
-            </a>
-            <a href="/engine-room/artists" class="list-group-item list-group-item-action bg-transparent text-primary fw-bold">
-                <i slot="start" class="fa-duotone fa-users me-2 w-20px text-center"></i> Active Roster
-            </a>
-            <a href="https://music.raggiesoft.com" target="_blank" rel="noopener" class="list-group-item list-group-item-action bg-transparent text-info">
-                <i slot="start" class="fa-duotone fa-headphones me-2 w-20px text-center"></i> The Listening Room
-            </a>
-            <a href="/engine-room/history" class="list-group-item list-group-item-action bg-transparent text-body">
-                <i slot="start" class="fa-duotone fa-clock-rotate-left me-2 w-20px text-center"></i> Event Log
-            </a>
-        </div>
-    </div>
 
-    <!-- LEGACY IMMERSION: Faux status dashboard. The "ERR-XXX" codes refer to "Engine Room Records" artist designations. -->
-    <!-- ACTIVE SLOTS WIDGET -->
-    <div class="card rounded-0 border-secondary mb-4 bg-transparent shadow-sm">
-        <div class="card-header bg-transparent text-body-emphasis fw-bold text-uppercase border-bottom border-secondary font-monospace small">
-            <i class="fa-solid fa-server me-2"></i>Unit Status
+    <!-- DIRECTORY NAVIGATION -->
+    <wa-card class="border-secondary mb-4 shadow-sm">
+        <div slot="header" class="fw-bold text-uppercase font-monospace small">
+            <i class="fa-solid fa-folder-tree me-2 text-primary"></i> System Directory
         </div>
-        <div class="card-body p-3 font-monospace small">
+        <div class="d-flex flex-column gap-1 font-monospace small">
+            <wa-button appearance="plain" href="/engine-room" class="w-100 text-start justify-content-start">
+                <i slot="start" class="fa-duotone fa-house-building"></i> HQ Overview
+            </wa-button>
+            <wa-button appearance="filled-outlined" variant="brand" href="/engine-room/artists" class="w-100 text-start justify-content-start fw-bold">
+                <i slot="start" class="fa-duotone fa-users"></i> Active Roster
+            </wa-button>
+            <wa-button appearance="plain" href="https://music.raggiesoft.com" target="_blank" class="w-100 text-start justify-content-start text-info">
+                <i slot="start" class="fa-duotone fa-headphones"></i> The Listening Room
+            </wa-button>
+            <wa-button appearance="plain" href="/engine-room/history" class="w-100 text-start justify-content-start">
+                <i slot="start" class="fa-duotone fa-clock-rotate-left"></i> Event Log
+            </wa-button>
+        </div>
+    </wa-card>
+
+    <!-- ACTIVE SLOTS WIDGET -->
+    <wa-card class="border-secondary mb-4 shadow-sm">
+        <div slot="header" class="fw-bold text-uppercase font-monospace small">
+            <i class="fa-solid fa-server me-2 text-info"></i> Unit Status
+        </div>
+        <div class="font-monospace small">
             <div class="d-flex justify-content-between align-items-center mb-2 pb-2 border-bottom border-secondary">
-                <span class="text-body-emphasis" title="The Stardust Engine">ERR-001</span>
-                <span class="text-success"><i class="fa-solid fa-circle-check me-1 small"></i> Online</span>
+                <a href="/engine-room/artists/stardust-engine" class="text-body-emphasis text-decoration-none" title="The Stardust Engine">ERR-001 // Stardust</a>
+                <wa-badge variant="success" appearance="filled-outlined" pill>Online</wa-badge>
             </div>
             <div class="d-flex justify-content-between align-items-center mb-2 pb-2 border-bottom border-secondary">
-                <span class="text-body-emphasis" title="Fractured Prisms">ERR-002</span>
-                <span class="text-success"><i class="fa-solid fa-circle-check me-1 small"></i> Online</span>
+                <a href="/engine-room/artists/fractured-prisms" class="text-body-emphasis text-decoration-none" title="Fractured Prisms">ERR-002 // Prisms</a>
+                <wa-badge variant="success" appearance="filled-outlined" pill>Online</wa-badge>
             </div>
             <div class="d-flex justify-content-between align-items-center mb-2 pb-2 border-bottom border-secondary">
-                <span class="text-body-emphasis" title="The Paper Wall">ERR-003</span>
-                <span class="text-success"><i class="fa-solid fa-circle-check me-1 small"></i> Online</span>
+                <a href="/engine-room/artists/the-paper-wall" class="text-body-emphasis text-decoration-none" title="The Paper Wall">ERR-003 // Paper Wall</a>
+                <wa-badge variant="success" appearance="filled-outlined" pill>Online</wa-badge>
             </div>
             <div class="d-flex justify-content-between align-items-center mb-2 pb-2 border-bottom border-secondary">
-                <span class="text-body-emphasis" title="Mana Canvas">ERR-004</span>
-                <span class="text-success"><i class="fa-solid fa-circle-check me-1 small"></i> Online</span>
+                <a href="/raggiesoft-books/aethel-saga" class="text-body-emphasis text-decoration-none" title="Mana Canvas">ERR-004 // Mana Canvas</a>
+                <wa-badge variant="success" appearance="filled-outlined" pill>Online</wa-badge>
             </div>
             <div class="d-flex justify-content-between align-items-center mb-2 pb-2 border-bottom border-secondary">
-                <span class="text-body-emphasis" title="The Arctic Symphony Project">ERR-005</span>
-                <span class="text-success"><i class="fa-solid fa-circle-check me-1 small"></i> Online</span>
+                <a href="/engine-room/artists/the-arctic-symphony-project" class="text-body-emphasis text-decoration-none" title="The Arctic Symphony Project">ERR-005 // Arctic</a>
+                <wa-badge variant="success" appearance="filled-outlined" pill>Online</wa-badge>
             </div>
             <div class="d-flex justify-content-between align-items-center">
-                <span class="text-body-emphasis" title="Crimson Node">ERR-006</span>
-                <span class="text-success"><i class="fa-solid fa-circle-check me-1 small"></i> Online</span>
+                <a href="/engine-room/artists/crimson-node" class="text-body-emphasis text-decoration-none" title="Crimson Node">ERR-006 // Crimson</a>
+                <wa-badge variant="success" appearance="filled-outlined" pill>Online</wa-badge>
             </div>
         </div>
-    </div>
+    </wa-card>
 
-    <!-- LEGACY LORE ELEMENT: A fictional security warning to maintain the corporate intranet illusion. -->
     <!-- SECURITY REMINDER -->
-    <div class="alert alert-dark border-secondary bg-black text-white-50 p-3 font-monospace" style="font-size: 0.75rem;">
-        <i class="fa-solid fa-lock text-primary mb-2 d-block fs-5"></i>
+    <wa-callout variant="neutral" appearance="outlined" size="small" class="font-monospace" style="font-size: 0.75rem;">
+        <i slot="icon" class="fa-solid fa-lock text-primary"></i>
         Access to proprietary audio files and narrative assets is restricted to authorized protocols. Full-fidelity masters and lyrics are served via The Listening Room.
-    </div>
+    </wa-callout>
 
 </div>
-
-<style>
-    /* Helper for icon alignment in the sidebar */
-    .w-20px {
-        width: 20px;
-        display: inline-block;
-    }
-</style>

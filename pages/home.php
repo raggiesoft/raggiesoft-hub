@@ -193,12 +193,12 @@ $pageTitle = "RaggieSoft&trade; | The Central Hub";
                 Systems architecture, open-source development, and the professional portfolio of Michael P. Ragsdale.
             </p>
             <div class="d-flex flex-wrap gap-3 justify-content-center mt-auto">
-                <a href="https://michaelpragsdale.com" class="btn btn-primary btn-lg rounded-0 fw-bold px-4 shadow-sm text-uppercase">
-                    <i class="fa-duotone fa-user-visor me-2"></i> View Portfolio
-                </a>
-                <a href="/raggiesoft-media" class="btn btn-outline-light btn-lg rounded-0 fw-bold px-4 shadow-sm text-uppercase">
-                    <i class="fa-solid fa-building me-2"></i> RaggieSoft Media
-                </a>
+                <wa-button variant="brand" appearance="accent" size="large" href="https://michaelpragsdale.com" class="rounded-0 fw-bold px-4 shadow-sm text-uppercase">
+                    <i slot="start" class="fa-duotone fa-user-visor"></i> View Portfolio
+                </wa-button>
+                <wa-button variant="neutral" appearance="outlined" size="large" href="/raggiesoft-media" class="rounded-0 fw-bold px-4 shadow-sm text-uppercase">
+                    <i slot="start" class="fa-solid fa-building"></i> RaggieSoft Media
+                </wa-button>
             </div>
         </div>
     </div>
@@ -215,12 +215,12 @@ $pageTitle = "RaggieSoft&trade; | The Central Hub";
                 100% independent audio production and CC BY-SA 4.0 literary universes managed via private imprints.
             </p>
             <div class="d-flex flex-wrap gap-3 justify-content-center mt-auto">
-                <a href="/engine-room" class="btn btn-danger btn-lg rounded-0 fw-bold px-4 shadow-sm text-uppercase">
-                    <i class="fa-solid fa-compact-disc me-2"></i> Engine Room Records
-                </a>
-                <a href="/raggiesoft-books" class="btn btn-outline-light btn-lg rounded-0 fw-bold px-4 shadow-sm text-uppercase">
-                    <i class="fa-solid fa-landmark me-2"></i> Ocean View Archives
-                </a>
+                <wa-button variant="danger" appearance="accent" size="large" href="/engine-room" class="rounded-0 fw-bold px-4 shadow-sm text-uppercase">
+                    <i slot="start" class="fa-solid fa-compact-disc"></i> Engine Room Records
+                </wa-button>
+                <wa-button variant="neutral" appearance="outlined" size="large" href="/raggiesoft-books" class="rounded-0 fw-bold px-4 shadow-sm text-uppercase">
+                    <i slot="start" class="fa-solid fa-landmark"></i> Ocean View Archives
+                </wa-button>
             </div>
         </div>
     </div>
@@ -228,8 +228,8 @@ $pageTitle = "RaggieSoft&trade; | The Central Hub";
 </section>
 
 <div class="container mt-4 mb-2">
-    <div class="alert alert-secondary border-secondary shadow-sm d-flex align-items-center rounded-0" role="alert">
-        <i class="fa-duotone fa-robot-astromech fa-2x me-3 text-info"></i>
+    <wa-callout variant="neutral" appearance="accent" class="shadow-sm rounded-0 d-block">
+        <i slot="icon" class="fa-duotone fa-robot-astromech text-info"></i>
         <div>
             <h4 class="alert-heading h6 fw-bold mb-1 text-uppercase letter-spacing-1 text-body-emphasis">Transparency Notice</h4>
             <p class="mb-0 small text-body">
@@ -237,7 +237,7 @@ $pageTitle = "RaggieSoft&trade; | The Central Hub";
                 <a href="/about/ai-disclaimer" class="alert-link fw-bold text-info border-bottom border-info text-decoration-none">Read the full AI Disclaimer.</a>
             </p>
         </div>
-    </div>
+    </wa-callout>
 </div>
 
 <section id="network-spokes" class="py-5 bg-body text-body" aria-labelledby="spokes-title">

@@ -60,7 +60,7 @@ if ($is_standalone) {
                 <span class="text-info">>></span> SYSTEM MAINTENANCE
             </h2>
             
-            <div class="card terminal-card p-4 border-info text-start mb-5 mx-auto" style="max-width: 600px;">
+            <wa-card class="terminal-card border-info text-start mb-5 mx-auto w-100" style="max-width: 600px;">
                 <div class="terminal-header text-info">
                     <i class="fa-duotone fa-wrench me-2"></i>
                     Engineering Log // The Fortress
@@ -73,12 +73,12 @@ if ($is_standalone) {
                         Our engineers are calibrating the main transmitter. We will be back on the air shortly. Please standby.
                     </p>
                 </div>
-            </div>
+            </wa-card>
             
             <div class="d-flex justify-content-center gap-3 flex-wrap">
-                <a href="/" class="btn btn-outline-light rounded-pill px-4">
-                    <i class="fa-duotone fa-rotate-right me-2"></i>Retry Connection
-                </a>
+                <wa-button href="/" variant="neutral" appearance="outlined" pill>
+                    <i slot="start" class="fa-duotone fa-rotate-right"></i>Retry Connection
+                </wa-button>
             </div>
 
         </div>

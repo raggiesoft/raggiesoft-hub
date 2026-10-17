@@ -67,14 +67,14 @@
                 </div>
             </div>
 
-            <!-- LEGACY NAVIGATION: Links point to fictional "Exhibits" which are actually other lore pages within the Engine Room hierarchy. -->
+            <!-- [NAVIGATION] Links point to fictional "Exhibits" which are lore pages within the Engine Room hierarchy. -->
             <div class="col-md-4 text-center">
                 <h6 class="fw-bold text-uppercase border-bottom border-dark d-inline-block pb-1 mb-3">
                     Related Exhibits
                 </h6>
                 <ul class="list-unstyled">
                     <li class="mb-2">
-                        <a href="/engine-room/history/friction" class="text-decoration-none text-danger hover-underline">
+                        <a href="/engine-room/artists/stardust-engine/story/friction" class="text-decoration-none text-danger hover-underline">
                             <i class="fa-solid fa-file-contract me-2"></i>Exhibit A: The Friction Catastrophe
                         </a>
                     </li>
@@ -84,10 +84,10 @@
                         </a>
                     </li>
                     <li class="mb-2">
-                        <span class=" text-decoration-line-through">
+                        <span class="text-decoration-line-through">
                             <i class="fa-solid fa-user-secret me-2"></i>Witness Testimony: A. Wright
                         </span> 
-                        <span class="badge bg-secondary ms-1">REDACTED</span>
+                        <wa-badge variant="neutral" class="ms-1">REDACTED</wa-badge>
                     </li>
                 </ul>
             </div>

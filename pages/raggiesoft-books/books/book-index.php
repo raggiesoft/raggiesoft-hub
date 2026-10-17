@@ -37,8 +37,8 @@ $tocUrl = '/raggiesoft-books/books/' . $seriesSlug . '/toc';
 
     <div class="row justify-content-center">
         <div class="col-md-10 col-lg-8">
-            <div class="card bg-body-tertiary border-0 shadow-sm mb-4">
-                <div class="card-body">
+            <wa-card class="card bg-body-tertiary border-0 shadow-sm mb-4 w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
+                <div class="card-body p-4">
                     <div class="list-group list-group-flush bg-transparent">
                         <?php if (!empty($chapters)): ?>
                             <?php foreach ($chapters as $cIndex => $chapter): ?>
@@ -58,7 +58,7 @@ $tocUrl = '/raggiesoft-books/books/' . $seriesSlug . '/toc';
                         <?php endif; ?>
                     </div>
                 </div>
-            </div>
+            </wa-card>
             
             <div class="text-center mt-4">
                 <a href="<?php echo htmlspecialchars($tocUrl); ?>" class="btn btn-outline-secondary">

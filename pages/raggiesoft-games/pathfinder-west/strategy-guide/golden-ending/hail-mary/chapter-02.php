@@ -16,15 +16,13 @@
 
 $pageTitle = "Chapter 2: The Cipher | Pathfinder West";
 $metaDescription = "Chapter 2 of the Pathfinder West strategy guide. The party decodes the Static & Silence CD and executes the I-85 Southern Cut.";
-
-include_once $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php'; 
 ?>
 
 <!-- START: Strategy Guide Chapter Container -->
-<main class="container my-5 strategy-guide-chapter">
-    <header class="mb-5 pb-3 border-bottom">
+<div class="container my-5 strategy-guide-chapter">
+    <header class="mb-5 pb-3 border-bottom border-secondary-subtle">
         <h1 class="display-4 fw-bold">Chapter 2: The Cipher</h1>
-        <p class="text-muted fs-5">Saturday, April 1, 2006 — I-64 West into North Carolina</p>
+        <p class="text-body-secondary fs-5">Saturday, April 1, 2006 — I-64 West into North Carolina</p>
     </header>
 
     <!-- START: Chapter Narrative Prose -->
@@ -62,19 +60,17 @@ include_once $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
 
     <!-- STRATEGY GUIDE NOTES -->
     <!-- START: Gameplay Strategy Notes -->
-    <div class="card bg-dark text-light my-5 border-0 shadow">
-        <div class="card-header bg-primary text-dark text-uppercase fw-bold tracking-wider">
+    <wa-card class="my-5 shadow-sm">
+        <div slot="header" class="text-primary text-uppercase fw-bold tracking-wider">
             <i class="fa-solid fa-gamepad me-2"></i> Guide Notes
         </div>
-        <div class="card-body">
-            <ul class="mb-0 lh-lg">
-                <li><strong>The Exit 190 Skip:</strong> Decoding the album while driving is a massive tactical advantage. Because <em>Nashville</em> confirms the bus is heading toward Tennessee, you can skip the 30-minute time penalty of investigating the Richmond terminal. Selecting Exit 190 onto I-95 South allows you to bypass the Blue Ridge Mountains entirely.</li>
-                <li><strong>The Sequential Lock:</strong> You must listen to <em>Book 1</em> before <em>Book 2</em>. <em>A Night in Kent</em> locks the destination, but hearing <em>Curbstone, 4 AM</em> provides the narrative urgency. If you try to skip straight to Disc 2 without the narrative context, the music will fail to unlock the destination marker on your map.</li>
-                <li><strong>The Weight Penalty:</strong> Notice the fuel gauge dropping! The "Full Band" party composition (Roxy, Allison, and Alanna) adds significant weight to a standard 2004 sedan. Your fuel efficiency takes a 10-15% hit, forcing an earlier gas stop in North Carolina.</li>
-                <li><strong>The Radar Dilemma:</strong> Keep your speed slider in check on I-85 South. Radar detectors cannot be purchased or used until you cross the state line into North Carolina. Once unlocked, you must weigh the high financial cost of the item against the massive reduction in the police encounter RNG for the rest of the game.</li>
-            </ul>
-        </div>
-    </div>
+        <ul class="mb-0 lh-lg">
+            <li><strong>The Exit 190 Skip:</strong> Decoding the album while driving is a massive tactical advantage. Because <em>Nashville</em> confirms the bus is heading toward Tennessee, you can skip the 30-minute time penalty of investigating the Richmond terminal. Selecting Exit 190 onto I-95 South allows you to bypass the Blue Ridge Mountains entirely.</li>
+            <li><strong>The Sequential Lock:</strong> You must listen to <em>Book 1</em> before <em>Book 2</em>. <em>A Night in Kent</em> locks the destination, but hearing <em>Curbstone, 4 AM</em> provides the narrative urgency. If you try to skip straight to Disc 2 without the narrative context, the music will fail to unlock the destination marker on your map.</li>
+            <li><strong>The Weight Penalty:</strong> Notice the fuel gauge dropping! The "Full Band" party composition (Roxy, Allison, and Alanna) adds significant weight to a standard 2004 sedan. Your fuel efficiency takes a 10-15% hit, forcing an earlier gas stop in North Carolina.</li>
+            <li><strong>The Radar Dilemma:</strong> Keep your speed slider in check on I-85 South. Radar detectors cannot be purchased or used until you cross the state line into North Carolina. Once unlocked, you must weigh the high financial cost of the item against the massive reduction in the police encounter RNG for the rest of the game.</li>
+        </ul>
+    </wa-card>
 
     <?php 
     // START: Pagination Configuration
@@ -85,18 +81,11 @@ include_once $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
             'label' => 'Chapter 1: The False Start'
         ],
         'overview' => [
-            'url' => '/raggiesoft-games/pathfinder-west/strategy-guide/golden-ending/hail-mary/', 
+            'url' => '/raggiesoft-games/pathfinder-west/strategy-guide/golden-ending/hail-mary', 
             'label' => 'Table of Contents'
         ],
-        'next' => [
-            'url' => '/raggiesoft-games/pathfinder-west/strategy-guide/golden-ending/hail-mary/chapter-03', 
-            'label' => 'Chapter 3: The Engine\'s Toll'
-        ]
+        'next' => null
     ];
-    include $_SERVER['DOCUMENT_ROOT'] . '/includes/components/navigation/narrative-stepper.php'; 
+    include ROOT_PATH . '/includes/components/navigation/narrative-stepper.php'; 
     ?>
-</main>
-
-<?php 
-include_once $_SERVER['DOCUMENT_ROOT'] . '/includes/footer.php'; 
-?>
+</div>

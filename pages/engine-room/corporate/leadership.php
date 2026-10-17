@@ -99,22 +99,22 @@ $pageTitle = "Executive Leadership - The Jessica Miller Center";
                              class="img-fluid rounded-3 shadow-lg position-relative z-1 border border-secondary"
                              alt="Jessica and Justin Miller together">
                         <div class="position-absolute bottom-0 end-0 z-2 p-2">
-                            <span class="badge bg-black bg-opacity-75 font-monospace small">THE MILLER UNIT</span>
+                            <wa-badge variant="neutral" appearance="filled" class="font-monospace small">THE MILLER UNIT</wa-badge>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-7 order-lg-1">
                     <h2 class="h3 fw-bold text-uppercase mb-3">The "Miller Unit"</h2>
                     
-                    <div class="alert alert-dark border-info d-flex align-items-start mb-4">
-                        <i class="fa-solid fa-link text-info fs-3 me-3 mt-1"></i>
+                    <wa-callout variant="brand" appearance="accent" class="mb-4 d-block">
+                        <i slot="icon" class="fa-solid fa-link text-info"></i>
                         <div>
                             <h5 class="alert-heading h6 fw-bold text-info text-uppercase mb-1">Operational Mandate: Zero Separation</h5>
                             <p class="small text-muted mb-0">
                                 The Co-Directors operate under a strict <strong>Single-Unit Protocol</strong>. They do not hold separate meetings. They do not travel in separate vehicles. They share a single office suite.
                             </p>
                         </div>
-                    </div>
+                    </wa-callout>
 
                     <p class="text-secondary">
                         Born seven minutes apart, Jessica and Justin Miller function as a single executive organism. This proximity is not a preference; it is a neurological requirement for their optimal performance.
@@ -133,7 +133,7 @@ $pageTitle = "Executive Leadership - The Jessica Miller Center";
         <div class="row g-5">
             
             <div class="col-lg-6">
-                <div class="card twin-card shadow-sm bg-body-tertiary">
+                <wa-card class="card twin-card shadow-sm bg-body-tertiary w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
                     <img src="<?php echo $cdnBaseUrl; ?>/stardust-engine/images/corporate/jessica-miller.jpg" 
                          class="img-executive" 
                          style="border-color: #198754;"
@@ -154,11 +154,11 @@ $pageTitle = "Executive Leadership - The Jessica Miller Center";
                             <li class="mb-2"><i class="fa-solid fa-brain me-2 text-success"></i><strong>Role:</strong> The "Safe Person" (Interpreter)</li>
                         </ul>
                     </div>
-                </div>
+                </wa-card>
             </div>
 
             <div class="col-lg-6">
-                <div class="card twin-card shadow-sm bg-body-tertiary">
+                <wa-card class="card twin-card shadow-sm bg-body-tertiary w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
                     <img src="<?php echo $cdnBaseUrl; ?>/stardust-engine/images/corporate/justin-server-rom.jpg" 
                          class="img-executive" 
                          style="border-color: #0dcaf0;"
@@ -179,7 +179,7 @@ $pageTitle = "Executive Leadership - The Jessica Miller Center";
                             <li class="mb-2"><i class="fa-solid fa-anchor me-2 text-info"></i><strong>Role:</strong> The "Anchor" (Grounding)</li>
                         </ul>
                     </div>
-                </div>
+                </wa-card>
             </div>
 
         </div>

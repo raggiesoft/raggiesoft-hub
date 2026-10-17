@@ -44,7 +44,7 @@
 
     <div slot="footer">
         <wa-button variant="neutral" class="close-settings-btn">Close</wa-button>
-        <wa-button variant="brand" outline class="reset-settings-btn">Reset to Default</wa-button>
+        <wa-button variant="brand" appearance="outlined" class="reset-settings-btn">Reset to Default</wa-button>
     </div>
 </wa-dialog>
 

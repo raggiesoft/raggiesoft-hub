@@ -24,12 +24,12 @@
         </div>
     </div>
 
-    <div class="card shadow-sm border-0 bg-body-tertiary mb-5">
-        <div class="card-header bg-dark text-white d-flex align-items-center">
+    <wa-card class="card shadow-sm border-0 bg-body-tertiary mb-5 w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
+        <div class="card-header bg-dark text-white d-flex align-items-center p-3">
             <i class="fa-duotone fa-sliders-up me-2"></i>
             <strong class="text-uppercase">Mission Configuration</strong>
         </div>
-        <div class="card-body">
+        <div class="card-body p-4">
             <form id="configForm">
                 <div class="row g-4">
                     <div class="col-12 col-lg-8 border-end-lg">
@@ -87,18 +87,18 @@
                 </div>
             </form>
         </div>
-    </div>
+    </wa-card>
 
     <div class="row g-5">
         <div class="col-md-5">
-            <div class="card shadow-sm border-0 bg-body-tertiary">
-                <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center">
+            <wa-card class="card shadow-sm border-0 bg-body-tertiary w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
+                <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center p-3">
                     <h5 class="mb-0">
                         <i class="fa-duotone fa-gamepad-modern me-2"></i>Controls
                     </h5>
-                    <span class="badge bg-white text-primary" id="rulesBadge">1-5 • Unique</span>
+                    <wa-badge variant="brand" appearance="accent" class="text-primary" id="rulesBadge">1-5 • Unique</wa-badge>
                 </div>
-                <div class="card-body">
+                <div class="card-body p-4">
                     <form id="cipherForm">
                         
                         <div class="mb-4">
@@ -113,9 +113,9 @@
                                        pattern="[0-9]*"
                                        required 
                                        autocomplete="off">
-                                <button class="btn btn-outline-secondary" type="button" id="toggleSecretVisibility">
+                                <wa-button variant="neutral" appearance="outlined" type="button" id="toggleSecretVisibility">
                                     <i class="fa-duotone fa-eye" id="eyeIcon"></i>
-                                </button>
+                                </wa-button>
                             </div>
                             <div class="form-text text-body-secondary" id="secretHint">Enter 4 unique digits (1-5).</div>
                         </div>
@@ -136,12 +136,12 @@
                         </div>
 
                         <div class="d-grid gap-2">
-                            <button type="submit" class="btn btn-primary btn-lg">
-                                <i class="fa-duotone fa-magnifying-glass me-2"></i>Analyze Signal
-                            </button>
-                            <button type="button" id="resetBtn" class="btn btn-outline-secondary">
-                                <i class="fa-duotone fa-rotate-left me-2"></i>Reset Transmission
-                            </button>
+                            <wa-button variant="brand" appearance="accent" size="large" type="submit">
+                                <i slot="start" class="fa-duotone fa-magnifying-glass"></i>Analyze Signal
+                            </wa-button>
+                            <wa-button variant="neutral" appearance="outlined" type="button" id="resetBtn">
+                                <i slot="start" class="fa-duotone fa-rotate-left"></i>Reset Transmission
+                            </wa-button>
                         </div>
                         
                         <div class="d-flex justify-content-center gap-3 mt-3">
@@ -156,27 +156,27 @@
 
                     </form>
                 </div>
-            </div>
+            </wa-card>
         </div>
 
         <div class="col-md-7">
-            <div id="resultBox" class="alert alert-dark text-center py-4 d-none mb-4 border-2">
+            <wa-callout variant="neutral" appearance="accent" id="resultBox" class="text-center py-4 d-none mb-4 d-block">
                 <h6 class="text-uppercase text-body-secondary letter-spacing-1 mb-3">Decryption Result</h6>
                 <div class="display-1 fw-bold text-body-emphasis" id="resultSymbols" style="letter-spacing: 0.2em;">
                     </div>
-            </div>
+            </wa-callout>
 
-            <div id="explanationBox" class="card border-primary d-none">
-                <div class="card-header bg-primary text-white">
+            <wa-card id="explanationBox" class="card border-primary d-none w-100" style="--body-padding: 0; --header-padding: 0;">
+                <div class="card-header bg-primary text-white p-3">
                     <strong class="small text-uppercase">
                         <i class="fa-duotone fa-microchip me-2"></i>Logic Analysis Log
                     </strong>
                 </div>
-                <div class="card-body bg-body-tertiary">
+                <div class="card-body bg-body-tertiary p-4">
                     <ul id="logList" class="list-group list-group-flush bg-transparent">
                         </ul>
                 </div>
-            </div>
+            </wa-card>
 
             <div id="placeholderState" class="text-center text-body-secondary py-5">
                 <i class="fa-duotone fa-shield-keyhole fa-4x opacity-50 mb-3"></i>

@@ -49,9 +49,9 @@ $pageTitle = "Commercial Licensing | Engine Room Records";
         <p class="lead tech-font opacity-75 mb-4">
             Non-exclusive synchronization clearances.
         </p>
-        <span class="badge bg-warning text-dark text-uppercase px-3 py-2 fs-6 border border-dark shadow-sm">
+        <wa-badge variant="warning" appearance="accent" class="text-uppercase px-3 py-2 fs-6 shadow-sm">
             <i class="fa-solid fa-briefcase me-2" aria-hidden="true"></i>B2B Operations Portal
-        </span>
+        </wa-badge>
     </div>
 </div>
 
@@ -71,8 +71,8 @@ $pageTitle = "Commercial Licensing | Engine Room Records";
     <!-- TRANSPARENCY NOTICE -->
     <div class="row mb-5">
         <div class="col-lg-10 mx-auto">
-            <div class="card border-warning bg-body-tertiary shadow-sm">
-                <div class="card-header bg-warning bg-opacity-10 text-warning-emphasis fw-bold text-uppercase border-bottom border-warning">
+            <wa-card class="card border-warning bg-body-tertiary shadow-sm w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
+                <div class="card-header bg-warning bg-opacity-10 text-warning-emphasis fw-bold text-uppercase border-bottom border-warning p-3">
                     <i class="fa-solid fa-scale-unbalanced me-2" aria-hidden="true"></i>Transparency Notice: Non-Exclusive Licensing Only
                 </div>
                 <div class="card-body p-4 text-body-emphasis">
@@ -83,7 +83,7 @@ $pageTitle = "Commercial Licensing | Engine Room Records";
                         <strong>The Reality Check:</strong> Because our audio production workflow integrates commercial generative AI tools, current U.S. Copyright Office guidelines do not grant traditional copyright protection to the synthesized audio waveforms (the Masters). While we own 100% of the underlying composition, lyrics, and narrative lore, we cannot legally guarantee or enforce the absolute exclusivity of the generated sound recording. To protect our clients and avoid an ambiguous legal tightrope, we only offer flat-fee, non-exclusive synchronization licenses. <em>We will never sell you a promise we cannot legally enforce.</em>
                     </p>
                 </div>
-            </div>
+            </wa-card>
         </div>
     </div>
 
@@ -92,38 +92,38 @@ $pageTitle = "Commercial Licensing | Engine Room Records";
         
         <!-- Film & Television -->
         <div class="col-md-4">
-            <div class="card studio-card licensing-card h-100 p-4 text-center">
+            <wa-card class="card studio-card licensing-card h-100 p-4 text-center w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
                 <i class="fa-duotone fa-film fa-3x text-secondary mb-3" aria-hidden="true"></i>
                 <h3 class="h6 fw-bold text-uppercase mb-2">Film & Television</h3>
                 <p class="tech-font text-warning mb-3 small">Sync Clearance</p>
                 <p class="text-body-secondary small mb-0">
                     Clearances for theatrical releases, streaming platform original content (Netflix, Hulu, Amazon), and traditional network television broadcasts.
                 </p>
-            </div>
+            </wa-card>
         </div>
 
         <!-- Interactive & Gaming -->
         <div class="col-md-4">
-            <div class="card studio-card licensing-card h-100 p-4 text-center">
+            <wa-card class="card studio-card licensing-card h-100 p-4 text-center w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
                 <i class="fa-duotone fa-gamepad-modern fa-3x text-secondary mb-3" aria-hidden="true"></i>
                 <h3 class="h6 fw-bold text-uppercase mb-2">Interactive Media</h3>
                 <p class="tech-font text-warning mb-3 small">In-Engine Audio</p>
                 <p class="text-body-secondary small mb-0">
                     Licensing for AAA video games, independent interactive projects, immersive VR/AR experiences, and digital application environments.
                 </p>
-            </div>
+            </wa-card>
         </div>
 
         <!-- Broadcast Advertising -->
         <div class="col-md-4">
-            <div class="card studio-card licensing-card h-100 p-4 text-center">
+            <wa-card class="card studio-card licensing-card h-100 p-4 text-center w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
                 <i class="fa-duotone fa-tower-broadcast fa-3x text-secondary mb-3" aria-hidden="true"></i>
                 <h3 class="h6 fw-bold text-uppercase mb-2">Commercial / Ad</h3>
                 <p class="tech-font text-warning mb-3 small">Global Broadcast</p>
                 <p class="text-body-secondary small mb-0">
                     Audio rights for regional, national, or global advertising campaigns across terrestrial television, radio, and digital social channels.
                 </p>
-            </div>
+            </wa-card>
         </div>
 
     </div>
@@ -157,9 +157,9 @@ $pageTitle = "Commercial Licensing | Engine Room Records";
                 </ul>
 
                 <div class="text-end">
-                    <a href="mailto:licensing@engineroom-records.com" class="btn btn-warning fw-bold text-uppercase rounded-0 tech-font">
-                        Initiate Request <i class="fa-solid fa-envelope-open-text ms-2" aria-hidden="true"></i>
-                    </a>
+                    <wa-button variant="warning" appearance="accent" href="mailto:licensing@engineroom-records.com" class="fw-bold text-uppercase rounded-0 tech-font">
+                        Initiate Request <i slot="end" class="fa-solid fa-envelope-open-text" aria-hidden="true"></i>
+                    </wa-button>
                 </div>
             </div>
         </div>

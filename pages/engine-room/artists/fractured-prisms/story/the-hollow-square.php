@@ -82,9 +82,9 @@ $pageTitle = "The Hollow Square - Fractured Prisms Lore";
         
         <div class="row justify-content-center mb-5">
             <div class="col-lg-8 text-center">
-                <span class="badge bg-transparent border border-secondary text-white-50 rounded-pill px-3 py-2 mb-3 text-uppercase letter-spacing-1">
+                <wa-badge variant="neutral" appearance="outlined" pill class="text-white-50 px-3 py-2 mb-3 text-uppercase letter-spacing-1">
                     <i class="fa-duotone fa-book-journal-whills me-2"></i>Historical Archive
-                </span>
+                </wa-badge>
                 <h1 class="display-3 fw-bold text-glow-prism gothic-font mb-3">
                     The Hollow Square
                 </h1>
@@ -96,7 +96,7 @@ $pageTitle = "The Hollow Square - Fractured Prisms Lore";
 
         <div class="row justify-content-center mb-5">
             <div class="col-lg-10">
-                <div class="card border-0 bg-transparent">
+                <wa-card class="card border-0 bg-transparent w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
                     <div class="row g-0 align-items-center">
                         <div class="col-md-5">
                             <div class="polaroid-prism">
@@ -128,7 +128,7 @@ $pageTitle = "The Hollow Square - Fractured Prisms Lore";
                             </ul>
                         </div>
                     </div>
-                </div>
+                </wa-card>
             </div>
         </div>
 
@@ -205,7 +205,7 @@ $pageTitle = "The Hollow Square - Fractured Prisms Lore";
                     </div>
                 </div>
 
-                <div class="alert bg-dark border-secondary border-opacity-50 p-4 shadow-sm">
+                <wa-callout variant="neutral" appearance="accent" class="p-4 shadow-sm d-block">
                     <div class="d-flex align-items-center">
                         <i class="fa-duotone fa-flute text-white opacity-50 fa-3x me-4"></i>
                         <div>
@@ -215,16 +215,16 @@ $pageTitle = "The Hollow Square - Fractured Prisms Lore";
                             </p>
                         </div>
                     </div>
-                </div>
+                </wa-callout>
 
             </div>
         </div>
 
         <div class="row mt-5 pt-4 border-top border-prism">
             <div class="col-12 text-center">
-                <a href="/engine-room/artists/fractured-prisms" class="btn btn-outline-light rounded-pill px-4 font-monospace small text-uppercase">
-                    <i class="fa-duotone fa-arrow-left me-2"></i>Return to The Square
-                </a>
+                <wa-button variant="neutral" appearance="outlined" pill href="/engine-room/artists/fractured-prisms" class="px-4 font-monospace small text-uppercase">
+                    <i slot="start" class="fa-duotone fa-arrow-left"></i>Return to The Square
+                </wa-button>
             </div>
         </div>
 

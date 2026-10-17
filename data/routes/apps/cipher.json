@@ -1,7 +1,21 @@
 {
+  "common": {
+    "site": "stardust-engine",
+    "showSidebar": false
+  },
   "/apps/cipher": {
     "view": "pages/apps/cipher/overview",
     "title": "Signal Decryptor | The Stardust Engine",
+    "showSidebar": false
+  },
+  "/apps/cipher/history": {
+    "view": "pages/apps/cipher/history",
+    "title": "Cryptographic History | Signal Decryptor",
+    "showSidebar": false
+  },
+  "/apps/cipher/rules": {
+    "view": "pages/apps/cipher/rules",
+    "title": "Rules & Specifications | Signal Decryptor",
     "showSidebar": false
   }
 }

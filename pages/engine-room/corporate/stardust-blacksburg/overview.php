@@ -73,12 +73,12 @@ $pageTitle = "Stardust Blacksburg - The Ironwood Collective";
             "We don't just rent apartments. We build future alumni."
         </p>
         <div class="mt-4 d-flex justify-content-center gap-3">
-            <span class="badge bg-warning text-dark border border-white fw-bold px-3 py-2">
+            <wa-badge variant="warning" appearance="accent" class="fw-bold px-3 py-2">
                 <i class="fa-solid fa-clipboard-check me-2"></i>WAITLIST OPEN: CLASS OF '26
-            </span>
-            <span class="badge bg-transparent border border-warning text-warning fw-bold px-3 py-2">
+            </wa-badge>
+            <wa-badge variant="warning" appearance="outlined" class="text-warning fw-bold px-3 py-2">
                 <i class="fa-solid fa-user-graduate me-2"></i>ALUMNI OWNED & OPERATED
-            </span>
+            </wa-badge>
         </div>
     </div>
 </div>
@@ -101,7 +101,7 @@ $pageTitle = "Stardust Blacksburg - The Ironwood Collective";
     <div class="row g-4 mb-5">
         
         <div class="col-md-4">
-            <div class="card h-100 stat-card shadow-sm">
+            <wa-card class="card h-100 stat-card shadow-sm w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
                 <div class="card-body text-center p-4">
                     <i class="fa-duotone fa-wifi fa-3x text-primary mb-3"></i>
                     <h5 class="fw-bold text-uppercase">Fiber Internet</h5>
@@ -109,11 +109,11 @@ $pageTitle = "Stardust Blacksburg - The Ironwood Collective";
                         Included in rent. Because we know you're compiling code at 3 AM.
                     </p>
                 </div>
-            </div>
+            </wa-card>
         </div>
 
         <div class="col-md-4">
-            <div class="card h-100 stat-card shadow-sm">
+            <wa-card class="card h-100 stat-card shadow-sm w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
                 <div class="card-body text-center p-4">
                     <i class="fa-duotone fa-bus fa-3x text-primary mb-3"></i>
                     <h5 class="fw-bold text-uppercase">PolyPass Integrated</h5>
@@ -121,11 +121,11 @@ $pageTitle = "Stardust Blacksburg - The Ironwood Collective";
                         Every property is located on a <strong>Blue Ridge Transit</strong> route or within walking distance of the Quad. Your CPI ID is your fare. No car required.
                     </p>
                 </div>
-            </div>
+            </wa-card>
         </div>
 
         <div class="col-md-4">
-            <div class="card h-100 stat-card shadow-sm">
+            <wa-card class="card h-100 stat-card shadow-sm w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
                 <div class="card-body text-center p-4">
                     <i class="fa-duotone fa-shield-cat fa-3x text-primary mb-3"></i>
                     <h5 class="fw-bold text-uppercase">Quiet Hours</h5>
@@ -133,12 +133,12 @@ $pageTitle = "Stardust Blacksburg - The Ironwood Collective";
                         Strictly enforced during Finals Week. We protect your GPA as fiercely as we protect the building.
                     </p>
                 </div>
-            </div>
+            </wa-card>
         </div>
 
     </div>
 
-    <div class="alert bg-body-tertiary border border-primary border-opacity-25 p-4 rounded-0 shadow-sm">
+    <wa-callout variant="brand" appearance="accent" class="border p-4 rounded-0 shadow-sm d-block">
         <div class="row align-items-center">
             <div class="col-md-1 text-center">
                 <i class="fa-solid fa-scale-balanced fa-2x text-primary opacity-50"></i>
@@ -150,6 +150,6 @@ $pageTitle = "Stardust Blacksburg - The Ironwood Collective";
                 </p>
             </div>
         </div>
-    </div>
+    </wa-callout>
 
 </div>

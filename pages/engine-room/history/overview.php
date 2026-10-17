@@ -40,7 +40,7 @@ $base_path = $cdnBaseUrl . "/engine-room-records/artists";
                 <h5 class="mb-0 text-uppercase font-monospace text-info">
                     <i class="fa-duotone fa-server me-2" aria-hidden="true"></i>Real-World Infrastructure
                 </h5>
-                <span class="badge bg-secondary font-monospace">EST. 2026</span>
+                <wa-badge variant="neutral" appearance="accent" class="font-monospace">EST. 2026</wa-badge>
             </div>
             <div class="p-4 p-md-5">
                 <div class="row align-items-center">
@@ -49,17 +49,17 @@ $base_path = $cdnBaseUrl . "/engine-room-records/artists";
                         <p class="text-body-secondary">
                             In the real world, <strong>Engine Room Records</strong> is a digital portfolio and publishing entity created by Michael P. Ragsdale. Launched in 2026, it serves as the organizational hub for a massive, multi-band generative music project. 
                         </p>
-                        <div class="alert alert-info border-info mb-4">
+                        <wa-callout variant="brand" appearance="accent" class="mb-4 d-block">
                             <strong><i class="fa-solid fa-timeline me-2" aria-hidden="true"></i>Timeline Notice:</strong> While the narrative lore spans decades (e.g., 1983, 1992, 1997), <strong>all music across this entire catalog was produced in 2025 and 2026</strong>, and officially distributed to streaming platforms via DistroKid in 2026.
-                        </div>
+                        </wa-callout>
                         <ul class="text-body-secondary mb-4">
                             <li class="mb-2"><strong>Audio Generation:</strong> All instrumentation, synthetic vocals, and musical compositions are generated utilizing a commercial-tier <span class="text-warning">Suno Premium</span> license.</li>
                             <li class="mb-2"><strong>Lore & Lyrics:</strong> The overarching narrative, fictional corporate structures, and original lyrics are human-directed, with <span class="text-info">Gemini</span> acting as a co-producer for style refinement and worldbuilding organization.</li>
                             <li><strong>Distribution:</strong> The catalog is distributed to global streaming platforms (Spotify, Apple Music, etc.) while remaining freely available on this platform under a <strong>CC BY-SA 4.0</strong> license.</li>
                         </ul>
-                        <a href="/about/ai-disclaimer" class="btn btn-outline-info btn-sm text-uppercase fw-bold font-monospace">
-                            <i class="fa-duotone fa-robot-astromech me-2" aria-hidden="true"></i>Read Full AI Disclaimer
-                        </a>
+                        <wa-button variant="brand" appearance="outlined" size="small" href="/about/ai-disclaimer" class="text-uppercase fw-bold font-monospace">
+                            <i slot="start" class="fa-duotone fa-robot-astromech" aria-hidden="true"></i>Read Full AI Disclaimer
+                        </wa-button>
                     </div>
                     <div class="col-md-4 text-center mt-4 mt-md-0">
                         <i class="fa-duotone fa-microchip fa-5x text-secondary opacity-50" aria-hidden="true"></i>
@@ -318,9 +318,9 @@ $base_path = $cdnBaseUrl . "/engine-room-records/artists";
             ?>
 
             <!-- 15. Awaiting Transmission -->
-            <div class="alert alert-dark border-secondary border-opacity-50 text-center shadow-sm" role="alert">
+            <wa-callout variant="neutral" appearance="accent" class="text-center shadow-sm d-block">
                 <em class="text-body-secondary"><i class="fa-duotone fa-satellite-dish me-2" aria-hidden="true"></i>[ Awaiting the next transmission from the Archives... ]</em>
-            </div>
+            </wa-callout>
 
         </div>
     </div>

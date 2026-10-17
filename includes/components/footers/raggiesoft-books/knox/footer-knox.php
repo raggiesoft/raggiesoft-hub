@@ -33,7 +33,7 @@
             <div class="col-md-4 text-center">
                 <ul class="list-unstyled mb-0" style="font-family: 'Courier New', monospace;">
                     <li class="mb-2">
-                        <a href="/raggiesoft-books/knox/chapters" class="text-decoration-none text-body hover-underline">
+                        <a href="/raggiesoft-books/books/knox" class="text-decoration-none text-body hover-underline">
                             > START READING
                         </a>
                     </li>
@@ -43,8 +43,8 @@
                         </a>
                     </li>
                     <li class="mb-0">
-                        <a href="/raggiesoft-books/knox/characters" class="text-decoration-none text-body hover-underline">
-                            > OPERATIVES
+                        <a href="/raggiesoft-books/knox/lore/toys" class="text-decoration-none text-body hover-underline">
+                            > OPERATIVES &amp; GEAR
                         </a>
                     </li>
                 </ul>

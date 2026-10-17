@@ -65,9 +65,9 @@ $pageTitle = "The Approach Vector - Evidence Item #00";
     
     <div class="row justify-content-center mb-5">
         <div class="col-lg-8 text-center">
-            <span class="badge bg-secondary-subtle text-secondary-emphasis rounded-pill px-3 py-2 mb-3 text-uppercase letter-spacing-1 border border-secondary-subtle">
+            <wa-badge variant="neutral" appearance="filled-outlined" pill class="text-secondary-emphasis px-3 py-2 mb-3 text-uppercase letter-spacing-1">
                 <i class="fa-duotone fa-plane-arrival me-2"></i>Mission Log
-            </span>
+            </wa-badge>
             <h1 class="display-4 fw-bold text-body-emphasis mb-2" style="font-family: 'Impact', sans-serif;">
                 THE APPROACH VECTOR
             </h1>
@@ -85,7 +85,7 @@ $pageTitle = "The Approach Vector - Evidence Item #00";
                 <h3 class="text-uppercase mb-0 text-body-emphasis letter-spacing-2">Arrival in the Valley</h3>
             </div>
 
-            <div class="card border-0 shadow-lg bg-body-tertiary narrative-card mb-5">
+            <wa-card class="card border-0 shadow-lg bg-body-tertiary narrative-card mb-5 w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
                 <div class="card-body p-5 text-body-secondary">
                     
                     <span class="timestamp">Sep 13, 2018 // 08:30 AM PST // Valley Regional Airport (BUR)</span>
@@ -113,7 +113,7 @@ $pageTitle = "The Approach Vector - Evidence Item #00";
                         "I don't care about the $150 million offer. I care about the disrespect. We are going to walk into his office, look him in the eye, and make him give me two quarters."
                     </p>
 
-                    <div class="alert alert-dark border-start border-4 border-warning bg-body-secondary py-3 my-4 small">
+                    <wa-callout variant="warning" appearance="accent" class="py-3 my-4 small d-block">
                         <div class="d-flex align-items-center">
                             <i class="fa-solid fa-file-invoice-dollar text-warning fs-3 me-3"></i>
                             <div>
@@ -123,7 +123,7 @@ $pageTitle = "The Approach Vector - Evidence Item #00";
                                 <strong>Target Recovery:</strong> <span class="text-danger fw-bold">$0.50</span>
                             </div>
                         </div>
-                    </div>
+                    </wa-callout>
 
                     <p>
                         In the window seat (1A), Ryan O'Connell looked out at the sun-bleached tarmac. For him, the First Class ticket wasn't a luxury; it was a medical necessity. The extra legroom allowed him to manage the spasms in his paralyzed legs during the five-hour flight from Atlanta.
@@ -138,9 +138,9 @@ $pageTitle = "The Approach Vector - Evidence Item #00";
                         "Not until we get the quarters," Ryan replied.
                     </p>
                 </div>
-            </div>
+            </wa-card>
 
-            <div class="card wall-card shadow-lg mb-5">
+            <wa-card class="card wall-card shadow-lg mb-5 w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
                 <div class="card-body p-5">
                     <h5 class="text-primary fw-bold text-uppercase mb-4">The Tarmac</h5>
                     
@@ -157,22 +157,22 @@ $pageTitle = "The Approach Vector - Evidence Item #00";
                         Ryan grabbed the water bottle from the side pouch of his chair without breaking his pushing rhythm. "Way ahead of you."
                     </p>
                     
-                    <div class="alert alert-dark border-start border-4 border-info bg-body-secondary py-3 my-4">
+                    <wa-callout variant="brand" appearance="accent" class="py-3 my-4 d-block">
                         <div class="d-flex align-items-center">
                             <i class="fa-duotone fa-wheelchair-move text-info fs-3 me-3"></i>
                             <div class="small text-body-emphasis fst-italic">
                                 <strong>Formation Protocol:</strong> Cassidy moved to his right. She didn't walk beside him; she walked with him. Her left hand rested firmly on the push-handle of his wheelchair. She didn't push him—Ryan didn't need pushing—but she used the sturdy, carbon-fiber frame as a rolling walker. It was a symbiotic machine.
                             </div>
                         </div>
-                    </div>
+                    </wa-callout>
 
                     <p>
                         They moved as a phalanx through the outdoor baggage claim. Tyler and Evan flanked the group, grabbing the five Titan Cases containing their "tourist gear" (and the suits for tomorrow) from the carousel.
                     </p>
                 </div>
-            </div>
+            </wa-card>
 
-            <div class="card wall-card shadow-lg mb-5">
+            <wa-card class="card wall-card shadow-lg mb-5 w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
                 <div class="card-body p-5">
                     <div class="d-flex align-items-center mb-4">
                         <i class="fa-duotone fa-hand-palm text-danger fs-2 me-3"></i>
@@ -237,14 +237,14 @@ $pageTitle = "The Approach Vector - Evidence Item #00";
                         The family walked away, leaving the confused driver on the curb. They headed straight for the train station.
                     </p>
                 </div>
-            </div>
+            </wa-card>
 
             <div class="d-flex align-items-center mb-4 mt-5">
                 <span class="display-6 fw-bold text-body-secondary me-3">02</span>
                 <h3 class="text-uppercase mb-0 text-body-emphasis letter-spacing-2">The High Ground</h3>
             </div>
 
-            <div class="card border-0 shadow-lg narrative-card mb-5">
+            <wa-card class="card border-0 shadow-lg narrative-card mb-5 w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
                 <div class="card-body p-5 text-body-secondary">
                     
                     <span class="timestamp">Sep 13, 2018 // 10:45 AM PST // The Metropolitan Suites</span>
@@ -302,9 +302,9 @@ $pageTitle = "The Approach Vector - Evidence Item #00";
                     </p>
 
                 </div>
-            </div>
+            </wa-card>
 
-            <div class="card border-0 shadow-lg narrative-card mb-5">
+            <wa-card class="card border-0 shadow-lg narrative-card mb-5 w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
                 <div class="card-body p-5 text-body-secondary">
                     
                     <span class="timestamp">Sep 14, 2018 // 09:00 AM PST // 2000 Avenue of the Stars</span>
@@ -371,11 +371,11 @@ $pageTitle = "The Approach Vector - Evidence Item #00";
                         "Elevator C is priority-locked for you," Alvarez said, stepping aside and holding his arm out to clear the path. "Have a good morning, folks."
                     </p>
                     
-                    <div class="alert alert-secondary border-0 small fst-italic my-3">
-                        <i class="fa-solid fa-elevator me-2"></i><strong>Security Note:</strong> The elevator button panel skipped "2" entirely. The "Phantom Second Floor" was a mechanical mezzanine, accessible only via freight elevators in the rear corridor. 
+                    <wa-callout variant="neutral" appearance="accent" class="small fst-italic my-3 d-block">
+                        <i slot="icon" class="fa-solid fa-elevator"></i><strong>Security Note:</strong> The elevator button panel skipped "2" entirely. The "Phantom Second Floor" was a mechanical mezzanine, accessible only via freight elevators in the rear corridor. 
                         <br><br>
                         Holly's RFID badge unlocked the hidden service menu. If she wanted to, she could take her family into the guts of the building. Instead, she pressed <strong>3</strong>.
-                    </div>
+                    </wa-callout>
 
                     <hr class="border-secondary opacity-25 my-4">
 
@@ -406,9 +406,9 @@ $pageTitle = "The Approach Vector - Evidence Item #00";
                     </p>
 
                 </div>
-            </div>
+            </wa-card>
 
-            <div class="card border-danger shadow-lg mb-5">
+            <wa-card class="card border-danger shadow-lg mb-5 w-100" style="--body-padding: 0; --header-padding: 0;">
                 <div class="card-body p-5">
                     
                     <h3 class="h4 fw-bold text-uppercase mb-4 text-secondary">The Lobby</h3>
@@ -506,7 +506,7 @@ $pageTitle = "The Approach Vector - Evidence Item #00";
                     </p>
 
                 </div>
-            </div>
+            </wa-card>
 
             <?php
                 // NARRATIVE STEPPER

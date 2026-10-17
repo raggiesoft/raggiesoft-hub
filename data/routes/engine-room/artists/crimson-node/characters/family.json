@@ -59,5 +59,15 @@
     "view": "pages/engine-room/artists/crimson-node/characters/family/the-pelletier-twins",
     "title": "Elise & Elodie Pelletier | Crimson Node",
     "ogTitle": "Elise & Elodie Pelletier - The Safe Variables"
+  },
+  "/engine-room/artists/crimson-node/characters/family/elise-pelletier": {
+    "view": "pages/engine-room/artists/crimson-node/characters/family/elise-pelletier",
+    "title": "Elise Pelletier | Crimson Node",
+    "ogTitle": "Elise Pelletier - The Safe Variable"
+  },
+  "/engine-room/artists/crimson-node/characters/family/elodie-pelletier": {
+    "view": "pages/engine-room/artists/crimson-node/characters/family/elodie-pelletier",
+    "title": "Elodie Pelletier | Crimson Node",
+    "ogTitle": "Elodie Pelletier - The Safe Variable"
   }
 }

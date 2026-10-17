@@ -1,62 +1,43 @@
 <?php
 /**
+ * ============================================================================
  * RaggieSoft Hub - Default Sidebar Navigation
- * 
+ * ============================================================================
+ * File: raggiesoft-hub/includes/components/sidebars/sidebar-default.php
+ *
  * ARCHITECTURAL OVERVIEW:
- * This is a standard HTML partial used to render the default navigation sidebar across
- * the hub. It utilizes Web Awesome (<wa-button>) components for interactive navigation 
- * buttons, providing a consistent UI feel aligned with the broader application.
- * 
- * CONSTRAINTS & MAINTENANCE:
- * - Do NOT alter the Web Awesome `<wa-button>` tags or attributes (`appearance="plain"`, etc.)
- *   as these are necessary for the hub's custom design system.
- * - Iconography is powered by FontAwesome (via `fa-duotone` classes). When updating, 
- *   ensure the `slot="start"` attribute remains intact for proper component slotting.
- * - This file does not contain a PHP opening tag initially; this block is intentionally
- *   self-contained at the top.
+ * Standard HTML partial used to render the default navigation sidebar across
+ * the hub using Web Awesome v3.13.0 (<wa-button>) components.
+ * ============================================================================
  */
 ?>
 <h5 class="pt-3 pb-2 mb-3 border-bottom">Navigation</h5>
 <div class="d-flex flex-column gap-1">
-  
-    <!-- Primary Navigation: Home -->
-    <wa-button appearance="plain" href="/" class="text-body w-100 text-start justify-content-start" style="text-align: left;">
-      <i slot="start" class="fa-duotone fa-home"></i> Home
+    <wa-button appearance="plain" variant="neutral" size="small" href="/" class="w-100 text-start justify-content-start" style="text-align: left;">
+        <i slot="start" class="fa-duotone fa-home" aria-hidden="true"></i>Home
     </wa-button>
-  
-  
-  
-    <!-- Stardust Engine Section: Discography & Band -->
-    <wa-button appearance="plain" href="/engine-room/artists/stardust-engine/discography" class="text-body w-100 text-start justify-content-start" style="text-align: left;">
-      <i slot="start" class="fa-duotone fa-record-vinyl"></i> Discography
-    </wa-button>
-  
-  
-    <wa-button appearance="plain" href="/engine-room/artists/stardust-engine/band" class="text-body w-100 text-start justify-content-start" style="text-align: left;">
-      <i slot="start" class="fa-duotone fa-users"></i> The Band
-    </wa-button>
-  
-  
-    <!-- Stardust Engine Section: Lore -->
-    <wa-button appearance="plain" href="/engine-room/artists/stardust-engine/lore/" class="text-body w-100 text-start justify-content-start" style="text-align: left;">
-      <i slot="start" class="fa-duotone fa-book-atlas"></i> The Lore
-    </wa-button>
-  
 
-  
-    <!-- Stardust Engine Section: Info Links -->
-    <wa-button appearance="plain" href="/engine-room/artists/stardust-engine/about" class="text-body w-100 text-start justify-content-start" style="text-align: left;">
-      <i slot="start" class="fa-duotone fa-circle-info"></i> About
+    <wa-button appearance="plain" variant="neutral" size="small" href="/engine-room/artists/stardust-engine/discography" class="w-100 text-start justify-content-start" style="text-align: left;">
+        <i slot="start" class="fa-duotone fa-record-vinyl" aria-hidden="true"></i>Discography
     </wa-button>
-  
-  
-    <wa-button appearance="plain" href="/engine-room/artists/stardust-engine/contact" class="text-body w-100 text-start justify-content-start" style="text-align: left;">
-      <i slot="start" class="fa-duotone fa-paper-plane"></i> Contact
+
+    <wa-button appearance="plain" variant="neutral" size="small" href="/engine-room/artists/stardust-engine/band" class="w-100 text-start justify-content-start" style="text-align: left;">
+        <i slot="start" class="fa-duotone fa-users" aria-hidden="true"></i>The Band
     </wa-button>
-  
-  
-    <wa-button appearance="plain" href="/engine-room/artists/stardust-engine/license" class="text-body w-100 text-start justify-content-start" style="text-align: left;">
-       <i slot="start" class="fa-duotone fa-file-contract"></i> License
+
+    <wa-button appearance="plain" variant="neutral" size="small" href="/engine-room/artists/stardust-engine/story" class="w-100 text-start justify-content-start" style="text-align: left;">
+        <i slot="start" class="fa-duotone fa-book-atlas" aria-hidden="true"></i>The Lore
     </wa-button>
-  
+
+    <wa-button appearance="plain" variant="neutral" size="small" href="/engine-room/artists/stardust-engine/about" class="w-100 text-start justify-content-start" style="text-align: left;">
+        <i slot="start" class="fa-duotone fa-circle-info" aria-hidden="true"></i>About
+    </wa-button>
+
+    <wa-button appearance="plain" variant="neutral" size="small" href="/engine-room/artists/stardust-engine/contact" class="w-100 text-start justify-content-start" style="text-align: left;">
+        <i slot="start" class="fa-duotone fa-paper-plane" aria-hidden="true"></i>Contact
+    </wa-button>
+
+    <wa-button appearance="plain" variant="neutral" size="small" href="/engine-room/artists/stardust-engine/license" class="w-100 text-start justify-content-start" style="text-align: left;">
+        <i slot="start" class="fa-duotone fa-file-contract" aria-hidden="true"></i>License
+    </wa-button>
 </div>

@@ -36,7 +36,7 @@ $pageTitle = "Day 02: Stabilization - Ad Astra Log";
     <!-- BEGIN: Log Header -->
     <div class="d-flex justify-content-between align-items-center mb-5 border-bottom border-success pb-3">
         <div>
-            <span class="badge bg-success text-dark font-monospace mb-2">LOG: DAY 02</span>
+            <wa-badge variant="success" appearance="accent" class="font-monospace mb-2">LOG: DAY 02</wa-badge>
             <h1 class="display-4 fw-bold text-uppercase text-light mb-0" style="font-family: 'Audiowide';">Stabilization</h1>
         </div>
         <div class="text-end text-white-50 font-monospace small">
@@ -68,7 +68,7 @@ $pageTitle = "Day 02: Stabilization - Ad Astra Log";
                     <div slot="header" class=" border-bottom border-success text-success fw-bold font-monospace p-3">
                         <i class="fa-duotone fa-earth-americas me-2"></i>VISUAL LOG: THE BLUE MARBLE
                     </div>
-                    <div class="card-body">
+                    <div class="card-body p-4">
                         <p class="card-text text-light">
                             Tyler opened the viewports in the mess hall at 0800.
                         </p>
@@ -94,7 +94,7 @@ $pageTitle = "Day 02: Stabilization - Ad Astra Log";
                 <div slot="header" class=" text-success fw-bold text-uppercase border-bottom border-secondary p-3">
                     <i class="fa-duotone fa-notes-medical me-2"></i>Medical Status
                 </div>
-                <div class="card-body text-white-50 small">
+                <div class="card-body text-white-50 small p-4">
                     <ul class="list-unstyled mb-0 font-monospace">
                         <li class="mb-2">> <strong>Crew Stress:</strong> Elevated</li>
                         <li class="mb-2">> <strong>Hydration:</strong> Mandatory Protocol Active</li>
@@ -107,7 +107,7 @@ $pageTitle = "Day 02: Stabilization - Ad Astra Log";
 
             <!-- BEGIN: Galley Note Card -->
             <wa-card class="card bg-black border-secondary mb-4 w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
-                <div class="card-body">
+                <div class="card-body p-4">
                     <h6 class="text-secondary fw-bold text-uppercase mb-2">
                         <i class="fa-duotone fa-coffee-pot me-2"></i>Galley Note
                     </h6>

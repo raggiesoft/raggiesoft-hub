@@ -67,9 +67,9 @@ $pageTitle = "Forensic Audit: Omni-Global Media - Engine Room History";
     
     <div class="row justify-content-center mb-5">
         <div class="col-lg-8 text-center">
-            <span class="badge bg-primary-subtle text-primary-emphasis rounded-pill px-3 py-2 mb-3 text-uppercase letter-spacing-1 shadow-sm border border-primary-subtle">
+            <wa-badge variant="brand" appearance="filled-outlined" pill class="text-primary-emphasis px-3 py-2 mb-3 text-uppercase letter-spacing-1 shadow-sm">
                 <i class="fa-duotone fa-magnifying-glass-dollar me-2"></i>Evidence Item #00-B
-            </span>
+            </wa-badge>
             <h1 class="display-4 fw-bold text-body-emphasis mb-2 text-uppercase" style="font-family: 'Impact', sans-serif;">
                 Holly's Homework
             </h1>
@@ -98,7 +98,7 @@ $pageTitle = "Forensic Audit: Omni-Global Media - Engine Room History";
                 </div>
             </div>
 
-            <div class="card bg-body-tertiary shadow-lg border-0 overflow-hidden mb-5">
+            <wa-card class="card bg-body-tertiary shadow-lg border-0 overflow-hidden mb-5 w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
                 
                 <div class="card-header bg-body-tertiary border-bottom border-secondary py-4">
                     <div class="row align-items-end">
@@ -168,7 +168,7 @@ $pageTitle = "Forensic Audit: Omni-Global Media - Engine Room History";
                         </table>
                     </div>
                 </div>
-            </div>
+            </wa-card>
         </div>
     </div>
             

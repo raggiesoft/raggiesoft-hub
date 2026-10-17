@@ -15,7 +15,7 @@
 // pages/family/sarah.php
 // Theme: Sarah (Guardian, Yellow, Bash)
 ?>
-<div class="card mb-5 border-0 shadow-sm overflow-hidden bg-body-tertiary">
+<wa-card class="card mb-5 border-0 shadow-sm overflow-hidden bg-body-tertiary w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
     <div class="row g-0">
         <!-- ARCHITECTURE: Persona image wrapper with thematic overlay -->
         <div class="col-lg-4 position-relative" style="min-height: 300px;">
@@ -29,12 +29,12 @@
         <div class="col-lg-8 d-flex align-items-center">
             <div class="card-body p-4 p-lg-5">
                 <div class="d-flex align-items-center mb-3">
-                    <span class="badge text-bg-warning me-2">
+                    <wa-badge variant="warning" appearance="accent" class="me-2">
                         <i class="fa-duotone fa-shield-check me-2"></i>sarah-deploy.sh
-                    </span>
-                    <span class="badge border border-warning text-warning bg-transparent">
+                    </wa-badge>
+                    <wa-badge variant="warning" appearance="outlined" class="text-warning">
                         Bash / Cron
-                    </span>
+                    </wa-badge>
                 </div>
                 
                 <h1 class="display-4 fw-bold mb-2 text-body">Sarah</h1>
@@ -48,7 +48,7 @@
             </div>
         </div>
     </div>
-</div>
+</wa-card>
 
 <div class="row g-5 mb-5">
     <div class="col-md-12 col-xl-6">
@@ -83,7 +83,7 @@
                 </div>
                 <div class="d-flex justify-content-between align-items-center">
                     <span class="small text-muted">Neurotype:</span>
-                    <span class="badge bg-warning bg-opacity-10 text-dark border border-warning">OCD (Check/Verify)</span>
+                    <wa-badge variant="warning" appearance="filled-outlined">OCD (Check/Verify)</wa-badge>
                 </div>
             </div>
 
@@ -107,11 +107,11 @@
 <div class="row">
     <div class="col-12">
         <!-- ARCHITECTURE: Mock terminal UI representing Sarah's log output -->
-        <div class="card shadow-lg font-monospace" style="background-color: #0d1117; color: #c9d1d9; border: 1px solid #d29922;">
-            <div class="card-header fw-bold d-flex justify-content-between align-items-center" 
+        <wa-card class="card shadow-lg font-monospace w-100" style="background-color: #0d1117; color: #c9d1d9; border: 1px solid #d29922; --body-padding: 0; --header-padding: 0;">
+            <div class="card-header fw-bold d-flex justify-content-between align-items-center p-3" 
                  style="background-color: rgba(210, 153, 34, 0.15); border-bottom: 1px solid #d29922; color: #f1e05a;">
                 <span><i class="fa-duotone fa-list-check me-2"></i>/var/log/sarah-deploy.log</span>
-                <span class="badge text-bg-warning">WATCHING</span>
+                <wa-badge variant="warning" appearance="accent">WATCHING</wa-badge>
             </div>
             <div class="card-body p-4">
                 <div style="opacity: 1;">
@@ -148,7 +148,7 @@
                     <p class="mb-0 mt-3"><span style="color: #f1e05a;">sarah@guard:~$</span> <span class="blink-cursor">_</span></p>
                 </div>
             </div>
-        </div>
+        </wa-card>
     </div>
 </div>
 

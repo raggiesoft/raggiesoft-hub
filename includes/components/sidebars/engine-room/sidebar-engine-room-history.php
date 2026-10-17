@@ -1,83 +1,71 @@
 <?php
 /**
- * Engine Room - History Sidebar
- * 
+ * ============================================================================
+ * Engine Room - History Sidebar (Web Awesome v3.13.0)
+ * ============================================================================
+ * File: includes/components/sidebars/engine-room/sidebar-engine-room-history.php
+ *
  * ARCHITECTURAL OVERVIEW:
- * This sidebar provides navigation for the "Historical Archives" section of the Engine Room.
- * It utilizes Web Awesome cards (`<wa-card>`) styled heavily with inline CSS variables 
- * and custom utilities to create a "terminal/archive" aesthetic (monospace fonts, stark 
- * black/danger colors).
- * 
- * LORE CONTEXT:
- * Designed to look like a classified internal DSP (Department of Stardust Protection) directory.
- * 
- * CONSTRAINTS:
- * - Do not alter the `<wa-card>` structure or its specific slot names (`slot="header"`).
- * - Keep the custom inline style `.w-20px` at the bottom, as it ensures icon alignment.
- * 
- * File Info: includes/components/sidebars/engine-room/history/sidebar-history.php
- * The Navigation Panel for the Historical Archives
+ * Provides navigation for the "Historical Archives" section of Engine Room
+ * Records using Web Awesome v3.13.0 `<wa-card>`, `<wa-button>`, and `<wa-callout>`.
+ * ============================================================================
  */
 ?>
 
 <div class="sticky-top" style="top: 100px;">
-    
+
     <!-- DIRECTORY NAVIGATION -->
     <div class="mb-4 w-100">
-        <!-- 
-          Web Awesome Card:
-          Custom CSS properties (--body-padding, --header-padding) are used to override
-          the default shadow DOM padding for a tighter fit.
-        -->
-        <wa-card class="rounded-0 border-secondary shadow-sm w-100" style="--body-padding: 0; --header-padding: 0;">
-            <div slot="header" class="bg-black text-white fw-bold text-uppercase border-bottom border-danger font-monospace small px-3 py-2">
-                <i class="fa-solid fa-folder-tree me-2"></i> Archive Directory
+        <wa-card class="border-secondary shadow-sm w-100">
+            <div slot="header" class="fw-bold text-uppercase font-monospace small">
+                <i class="fa-solid fa-folder-tree me-2 text-danger"></i> Archive Directory
             </div>
-            <div class="list-group list-group-flush font-monospace small">
-                <a href="/engine-room" class="list-group-item list-group-item-action bg-transparent text-body-secondary">
-                    <i class="fa-duotone fa-house-building me-2 w-20px text-center" aria-hidden="true"></i> HQ Overview
-                </a>
-                <a href="/engine-room/history" class="list-group-item list-group-item-action bg-transparent text-danger fw-bold" aria-current="page">
-                    <i class="fa-duotone fa-list-timeline me-2 w-20px text-center"></i> Full Timeline
-                </a>
+            <div class="d-flex flex-column gap-1 font-monospace small">
+                <wa-button appearance="plain" href="/engine-room" class="w-100 text-start justify-content-start">
+                    <i slot="start" class="fa-duotone fa-house-building" aria-hidden="true"></i> HQ Overview
+                </wa-button>
+                <wa-button appearance="plain" href="/engine-room/about" class="w-100 text-start justify-content-start">
+                    <i slot="start" class="fa-duotone fa-industry" aria-hidden="true"></i> About The Fortress
+                </wa-button>
+                <wa-button appearance="filled-outlined" variant="danger" href="/engine-room/history" class="w-100 text-start justify-content-start fw-bold">
+                    <i slot="start" class="fa-duotone fa-list-timeline"></i> Full Timeline
+                </wa-button>
             </div>
         </wa-card>
     </div>
 
     <!-- DECLASSIFIED CASE FILES -->
     <div class="mb-4 w-100">
-        <wa-card class="rounded-0 border-secondary shadow-sm w-100" style="--body-padding: 0; --header-padding: 0;">
-            <div slot="header" class="bg-black text-white fw-bold text-uppercase border-bottom border-secondary font-monospace small px-3 py-2">
-                <i class="fa-solid fa-folder-open me-2"></i> Case Files
+        <wa-card class="border-secondary shadow-sm w-100">
+            <div slot="header" class="fw-bold text-uppercase font-monospace small">
+                <i class="fa-solid fa-folder-open me-2 text-warning"></i> Case Files
             </div>
-            <div class="list-group list-group-flush font-monospace small">
-                <a href="/engine-room/artists/stardust-engine/story/crash-of-90" class="list-group-item list-group-item-action bg-transparent text-body-secondary">
-                    <i class="fa-duotone fa-car-crash me-2 w-20px text-center text-warning" aria-hidden="true"></i> 1990: The Crash
-                </a>
-                <a href="/engine-room/artists/stardust-engine/story/friction" class="list-group-item list-group-item-action bg-transparent text-body-secondary">
-                    <i class="fa-duotone fa-fire me-2 w-20px text-center"></i> 1992: Friction
-                </a>
-                <a href="/engine-room/artists/stardust-engine/story/nine-figure-refusal" class="list-group-item list-group-item-action bg-transparent text-body-secondary">
-                    <i class="fa-duotone fa-gavel me-2 w-20px text-center"></i> 2018: The Refusal
-                </a>
+            <div class="d-flex flex-column gap-1 font-monospace small">
+                <wa-button appearance="plain" href="/engine-room/artists/stardust-engine/story/crash-of-90" class="w-100 text-start justify-content-start">
+                    <i slot="start" class="fa-duotone fa-car-crash text-warning" aria-hidden="true"></i> 1990: The Crash
+                </wa-button>
+                <wa-button appearance="plain" href="/engine-room/artists/stardust-engine/story/friction" class="w-100 text-start justify-content-start">
+                    <i slot="start" class="fa-duotone fa-fire text-danger"></i> 1992: Friction
+                </wa-button>
+                <wa-button appearance="plain" href="/engine-room/artists/stardust-engine/story/cosmic-tidal-lock-sound" class="w-100 text-start justify-content-start">
+                    <i slot="start" class="fa-duotone fa-satellite text-info"></i> 2011: Tidal Lock Sound&trade;
+                </wa-button>
+                <wa-button appearance="plain" href="/engine-room/artists/stardust-engine/story/2015-delaware-migration" class="w-100 text-start justify-content-start">
+                    <i slot="start" class="fa-duotone fa-file-signature text-primary"></i> 2015: Delaware Migration
+                </wa-button>
+                <wa-button appearance="plain" href="/engine-room/artists/stardust-engine/story/nine-figure-refusal" class="w-100 text-start justify-content-start">
+                    <i slot="start" class="fa-duotone fa-gavel text-success"></i> 2018: The Refusal
+                </wa-button>
             </div>
         </wa-card>
     </div>
 
     <!-- SECURITY REMINDER -->
     <div class="w-100">
-        <div class="alert bg-black border-secondary text-white-50 p-3 font-monospace shadow-sm" style="font-size: 0.75rem;">
-            <i class="fa-solid fa-shield-halved text-danger mb-2 d-block fs-5" aria-hidden="true"></i>
+        <wa-callout variant="danger" appearance="outlined" size="small" class="font-monospace shadow-sm" style="font-size: 0.75rem;">
+            <i slot="icon" class="fa-solid fa-shield-halved text-danger" aria-hidden="true"></i>
             Historical records and case files are maintained for internal reference and DSP compliance. Access to these documents is logged.
-        </div>
+        </wa-callout>
     </div>
 
 </div>
-
-<style>
-    /* Helper for icon alignment in the sidebar */
-    .w-20px {
-        width: 20px;
-        display: inline-block;
-    }
-</style>

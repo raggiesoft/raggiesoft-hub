@@ -46,8 +46,8 @@ $pageTitle = "Lore: The Archives of Aethel";
         <div class="row g-4 mb-5">
             <div class="col-md-6">
                 <a href="/library/aethel/lore/characters" class="text-decoration-none">
-                    <div class="card h-100 bg-transparent border-secondary shadow-sm hover-bg-light transition-all">
-                        <div class="card-body d-flex align-items-center">
+                    <wa-card class="card h-100 bg-transparent border-secondary shadow-sm hover-bg-light transition-all w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
+                        <div class="card-body d-flex align-items-center p-4">
                             <div class="me-3 text-warning"><i class="fa-duotone fa-users-crown fa-2x"></i></div>
                             <div>
                                 <h5 class="card-title text-dark fw-bold mb-1" style="font-family: 'Cinzel', serif;">Figures of Legend</h5>
@@ -55,7 +55,7 @@ $pageTitle = "Lore: The Archives of Aethel";
                             </div>
                             <div class="ms-auto text-secondary"><i class="fa-solid fa-chevron-right"></i></div>
                         </div>
-                    </div>
+                    </wa-card>
                 </a>
             </div>
             </div>
@@ -102,15 +102,15 @@ $pageTitle = "Lore: The Archives of Aethel";
                 </div>
             </div>
 
-            <div class="alert alert-dark d-flex align-items-start p-4 border-0" role="alert" style="background-color: #2E003E; color: #E0D0E0; box-shadow: 0 4px 15px rgba(46, 0, 62, 0.4);">
-                <i class="fa-duotone fa-eclipse fa-3x me-4 mt-1" style="color: var(--bs-info);"></i>
+            <wa-callout variant="neutral" appearance="accent" class="p-4 d-block" style="background-color: #2E003E; color: #E0D0E0; box-shadow: 0 4px 15px rgba(46, 0, 62, 0.4);">
+                <i slot="icon" class="fa-duotone fa-eclipse fa-3x" style="color: var(--bs-info);"></i>
                 <div>
                     <h4 class="alert-heading text-white border-bottom border-secondary pb-2 mb-2" style="font-family: 'Cinzel', serif;">The Eclipse Ritual</h4>
                     <p class="mb-0 fs-6 opacity-75">
                         Lord Malakor knows the truth. He does not seek to kill the heroes; he seeks to <strong>capture</strong> them. By placing both physical avatars into the Shadow's Heart engine simultaneously, he can drain their celestial essence, extinguishing the stars in the sky and replacing them with his own artificial, eternal Order.
                     </p>
                 </div>
-            </div>
+            </wa-callout>
         </article>
 
     </div>

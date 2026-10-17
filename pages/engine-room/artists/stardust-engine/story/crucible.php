@@ -49,9 +49,9 @@ $nav = [
     <!-- [HERO HEADER] Chapter 2 Title & Subtitle -->
     <div class="row justify-content-center mb-5">
         <div class="col-lg-9 text-center">
-            <span class="badge bg-danger text-white rounded-pill px-3 py-2 shadow-sm mb-3 text-uppercase fw-bold">
+            <wa-badge variant="danger" appearance="accent" pill class="px-3 py-2 shadow-sm mb-3 text-uppercase fw-bold">
                 <i class="fa-duotone fa-stadium me-2"></i>Chapter 2 of 5 // Architectural &amp; Legal Archive
-            </span>
+            </wa-badge>
             <h1 class="display-3 fw-bold text-uppercase text-body-emphasis mb-0" style="font-family: 'Impact', sans-serif;">
                 The Crucible, The Furnace, &amp; The Ironhead Covenant
             </h1>
@@ -73,7 +73,7 @@ $nav = [
 
             <div class="row g-3 my-2">
                 <div class="col-md-4">
-                    <div class="card h-100 bg-body-tertiary border-0 shadow-sm">
+                    <wa-card class="card h-100 bg-body-tertiary border-0 shadow-sm w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
                         <div class="card-body p-4">
                             <h3 class="h6 fw-bold text-uppercase mb-2" style="color: var(--cpi-maroon, #630031);">
                                 <i class="fa-solid fa-mountain me-2 text-warning"></i>1. Vertical Bowl &amp; Vault Geometry
@@ -82,11 +82,11 @@ $nav = [
                                 Unlike sprawling, shallow suburban stadiums that allow crowd noise to dissipate into the sky, The Crucible's towering concrete East and West stands rise at an aggressive vertical pitch directly over the sidelines, while next door <strong>The Furnace</strong> traps basketball crowd noise beneath a steeply raked, low-slung parabolic concrete barrel vault.
                             </p>
                         </div>
-                    </div>
+                    </wa-card>
                 </div>
 
                 <div class="col-md-4">
-                    <div class="card h-100 bg-body-tertiary border-0 shadow-sm">
+                    <wa-card class="card h-100 bg-body-tertiary border-0 shadow-sm w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
                         <div class="card-body p-4">
                             <h3 class="h6 fw-bold text-uppercase mb-2" style="color: var(--cpi-maroon, #630031);">
                                 <i class="fa-solid fa-ankh me-2 text-warning"></i>2. "The Anvil" (North End Zone)
@@ -95,11 +95,11 @@ $nav = [
                                 The Crucible's North End Zone—known universally as <strong>The Anvil</strong>—is constructed of unpadded, hollow-underneath galvanized steel bleachers housing 20,000 standing students (<strong>The Ironheads</strong>). When 40,000 winter boots strike those steel planks in unison, the bleachers act as a massive mechanical drumhead.
                             </p>
                         </div>
-                    </div>
+                    </wa-card>
                 </div>
 
                 <div class="col-md-4">
-                    <div class="card h-100 bg-body-tertiary border-0 shadow-sm">
+                    <wa-card class="card h-100 bg-body-tertiary border-0 shadow-sm w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
                         <div class="card-body p-4">
                             <h3 class="h6 fw-bold text-uppercase mb-2" style="color: var(--cpi-maroon, #630031);">
                                 <i class="fa-solid fa-shield-halved me-2 text-warning"></i>3. Zero Luxury-Suite Dampening
@@ -108,7 +108,7 @@ $nav = [
                                 When rival universities tore out lower-bowl student seating in the 1990s to install sound-absorbing glass luxury boxes and carpeted club lounges, CPI was legally forbidden from doing so in both <strong>The Crucible</strong> and <strong>The Furnace</strong> by the <strong>1995 Ironhead Covenant</strong>—preserving raw concrete, exposed structural steel, and maximum decibel retention.
                             </p>
                         </div>
-                    </div>
+                    </wa-card>
                 </div>
             </div>
         </div>
@@ -117,8 +117,8 @@ $nav = [
     <!-- [SECTION 2] INLINE: The August 15, 1995 Deed of Gift (The Ironhead Covenant) -->
     <div class="row justify-content-center mb-5">
         <div class="col-lg-10">
-            <div class="card bg-body-tertiary shadow-lg" style="border: 2px solid var(--cpi-maroon, #630031);">
-                <div class="card-header border-bottom fw-bold d-flex justify-content-between align-items-center" style="background-color: var(--cpi-maroon, #630031); color: var(--cpi-orange, #CF4420);">
+            <wa-card class="card bg-body-tertiary shadow-lg w-100" style="border: 2px solid var(--cpi-maroon, #630031); --body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
+                <div class="card-header border-bottom fw-bold d-flex justify-content-between align-items-center p-3" style="background-color: var(--cpi-maroon, #630031); color: var(--cpi-orange, #CF4420);">
                     <span><i class="fa-duotone fa-file-contract me-2 text-warning"></i>The Ironhead Covenant (August 15, 1995)</span>
                     <wa-badge variant="warning">LEGAL RECORD</wa-badge>
                 </div>
@@ -177,15 +177,15 @@ $nav = [
                         <em>Chairman of the Board</em>, Commonwealth Polytechnic Institute
                     </p>
 
-                    <div class="mt-4 p-3 alert alert-warning shadow-sm rounded">
+                    <wa-callout variant="warning" appearance="accent" class="mt-4 p-3 shadow-sm rounded d-block">
                         <p class="fw-bold mb-1"><i class="fa-duotone fa-paperclip me-2"></i>Statement of Intent (Attached to Contract)</p>
                         <p class="mb-0 opacity-75 fst-italic">Handwritten note by Jeremiah Vance:</p>
                         <blockquote class="blockquote fs-6 mt-2 mb-0">
                             "I am giving you this money so that no Forger ever has to pay to play. In return, I am asking you to keep our soul. These venues are where young men and women are forged in steel and fire. They are places of heat, pressure, and transformation. Don't you dare sell them to a bank. Don't you dare turn them into a country club. Keep them loud. Keep them hard. Keep them The Crucible and The Furnace."
                         </blockquote>
-                    </div>
+                    </wa-callout>
                 </div>
-            </div>
+            </wa-card>
         </div>
     </div>
 
@@ -199,56 +199,56 @@ $nav = [
             <div class="row g-3">
                 <!-- Jump Card to Chapter 3: Anthems & Redline -->
                 <div class="col-md-4" id="saturday-night-lights-debut">
-                    <div class="card h-100 bg-body-tertiary shadow-sm border-start border-4 border-danger">
+                    <wa-card class="card h-100 bg-body-tertiary shadow-sm border-start border-4 border-danger w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
                         <div class="card-body p-4 d-flex flex-column justify-content-between">
                             <div>
-                                <span class="badge bg-danger text-white font-monospace mb-2">CHAPTER 3</span>
+                                <wa-badge variant="danger" appearance="accent" class="font-monospace mb-2">CHAPTER 3</wa-badge>
                                 <h3 class="h6 fw-bold text-uppercase">Anthems, The 1986 Redline, &amp; "BAH! BAH! BAH!"</h3>
                                 <p class="small text-body-secondary mb-3">
                                     Holly's 1986 <strong>$1.00 Mutual Cross-License</strong>, the 1989 birth of <em>"The Stomp"</em> during <em>"Ignition,"</em> and the October 8, 2004 secret 4th-quarter premiere of <em>"Saturday Night Lights: The Crucible."</em>
                                 </p>
                             </div>
-                            <a href="/engine-room/artists/stardust-engine/story/crucible/anthems-and-redline" class="btn btn-sm btn-outline-danger text-uppercase fw-bold align-self-start">
-                                Open Chapter 3 <i class="fa-solid fa-arrow-right ms-1"></i>
-                            </a>
+                            <wa-button variant="danger" appearance="outlined" size="small" href="/engine-room/artists/stardust-engine/story/crucible/anthems-and-redline" class="text-uppercase fw-bold align-self-start">
+                                Open Chapter 3 <i slot="end" class="fa-solid fa-arrow-right"></i>
+                            </wa-button>
                         </div>
-                    </div>
+                    </wa-card>
                 </div>
 
                 <!-- Jump Card to Chapter 4: Falling Branch & Game-Day Transit -->
                 <div class="col-md-4" id="falling-branch-transit">
-                    <div class="card h-100 bg-body-tertiary shadow-sm border-start border-4 border-info">
+                    <wa-card class="card h-100 bg-body-tertiary shadow-sm border-start border-4 border-info w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
                         <div class="card-body p-4 d-flex flex-column justify-content-between">
                             <div>
-                                <span class="badge bg-info text-dark font-monospace mb-2">CHAPTER 4</span>
+                                <wa-badge variant="brand" appearance="accent" class="font-monospace mb-2">CHAPTER 4</wa-badge>
                                 <h3 class="h6 fw-bold text-uppercase">Falling Branch &amp; The $150 Parking Paradox</h3>
                                 <p class="small text-body-secondary mb-3">
                                     Inside VDOT's <strong>8-level, 6,000-space Christiansburg Transit Center</strong>, WSDOT-style bus-only flyovers to US-460, State Police priority on Southgate Drive, and the $150 parking trap.
                                 </p>
                             </div>
-                            <a href="/engine-room/artists/stardust-engine/story/crucible/falling-branch-transit" class="btn btn-sm btn-outline-info text-uppercase fw-bold align-self-start">
-                                Open Chapter 4 <i class="fa-solid fa-arrow-right ms-1"></i>
-                            </a>
+                            <wa-button variant="brand" appearance="outlined" size="small" href="/engine-room/artists/stardust-engine/story/crucible/falling-branch-transit" class="text-uppercase fw-bold align-self-start">
+                                Open Chapter 4 <i slot="end" class="fa-solid fa-arrow-right"></i>
+                            </wa-button>
                         </div>
-                    </div>
+                    </wa-card>
                 </div>
 
                 <!-- Jump Card to Chapter 5: Rivalries & VDU Shutout War -->
                 <div class="col-md-4" id="vdu-rivalry">
-                    <div class="card h-100 bg-body-tertiary shadow-sm border-start border-4 border-primary">
+                    <wa-card class="card h-100 bg-body-tertiary shadow-sm border-start border-4 border-primary w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
                         <div class="card-body p-4 d-flex flex-column justify-content-between">
                             <div>
-                                <span class="badge bg-primary text-white font-monospace mb-2">CHAPTER 5</span>
+                                <wa-badge variant="brand" appearance="accent" class="font-monospace mb-2">CHAPTER 5</wa-badge>
                                 <h3 class="h6 fw-bold text-uppercase">Rivalries &amp; The VDU Homecoming Shutout War</h3>
                                 <p class="small text-body-secondary mb-3">
                                     The <em>Commonwealth Cup</em> (VPU), the <em>Coal &amp; Iron Border War</em> (MSU), and the 2014–2015 <strong>Virginia Dominion University (VDU)</strong> Homecoming Shutout War (<code>38–0</code> and <code>52–0</code>).
                                 </p>
                             </div>
-                            <a href="/engine-room/artists/stardust-engine/story/crucible/rivalries" class="btn btn-sm btn-outline-primary text-uppercase fw-bold align-self-start">
-                                Open Chapter 5 <i class="fa-solid fa-arrow-right ms-1"></i>
-                            </a>
+                            <wa-button variant="brand" appearance="outlined" size="small" href="/engine-room/artists/stardust-engine/story/crucible/rivalries" class="text-uppercase fw-bold align-self-start">
+                                Open Chapter 5 <i slot="end" class="fa-solid fa-arrow-right"></i>
+                            </wa-button>
                         </div>
-                    </div>
+                    </wa-card>
                 </div>
             </div>
 

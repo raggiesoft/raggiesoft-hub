@@ -35,14 +35,14 @@ $pageTitle = "Accessibility & Accommodations - Stardust Blacksburg";
 
     <div class="row justify-content-center mb-5">
         <div class="col-lg-10">
-            <div class="card border-primary shadow-sm">
+            <wa-card class="card border-primary shadow-sm w-100" style="--body-padding: 0; --header-padding: 0;">
                 <div class="card-body p-4">
                     <h4 class="fw-bold text-primary mb-3"><i class="fa-solid fa-universal-access me-2"></i>Our Commitment</h4>
                     <p class="card-text text-body-secondary">
                         We do not just meet the federal minimums of the <strong>Fair Housing Act</strong> and the <strong>Americans with Disabilities Act (ADA)</strong>. We aim to exceed them. If a policy, physical barrier, or rule prevents you from full enjoyment of your home, we will modify it.
                     </p>
                 </div>
-            </div>
+            </wa-card>
         </div>
     </div>
 
@@ -55,8 +55,8 @@ $pageTitle = "Accessibility & Accommodations - Stardust Blacksburg";
             <div class="row g-4">
                 
                 <div class="col-md-6">
-                    <div class="card h-100 bg-body-tertiary border-0">
-                        <div class="card-body">
+                    <wa-card class="card h-100 bg-body-tertiary border-0 w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
+                        <div class="card-body p-4">
                             <h6 class="fw-bold text-uppercase mb-2">Live-In Aides & Caregivers</h6>
                             <p class="small text-muted mb-3">
                                 Residents requiring a live-in aide for medical, physical, or mental health support are entitled to that support without bureaucratic hurdles.
@@ -73,12 +73,12 @@ $pageTitle = "Accessibility & Accommodations - Stardust Blacksburg";
                                 </li>
                             </ul>
                         </div>
-                    </div>
+                    </wa-card>
                 </div>
 
                 <div class="col-md-6">
-                    <div class="card h-100 bg-body-tertiary border-0">
-                        <div class="card-body">
+                    <wa-card class="card h-100 bg-body-tertiary border-0 w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
+                        <div class="card-body p-4">
                             <h6 class="fw-bold text-uppercase mb-2">Service & Support Animals</h6>
                             <p class="small text-muted mb-3">
                                 Your service animal is not a "pet." They are working professionals.
@@ -95,7 +95,7 @@ $pageTitle = "Accessibility & Accommodations - Stardust Blacksburg";
                                 </li>
                             </ul>
                         </div>
-                    </div>
+                    </wa-card>
                 </div>
 
             </div>
@@ -135,15 +135,15 @@ $pageTitle = "Accessibility & Accommodations - Stardust Blacksburg";
         </div>
 
         <div class="col-12 mt-4">
-            <div class="alert alert-secondary d-flex align-items-center">
-                <i class="fa-solid fa-envelope-open-text fa-2x me-3"></i>
+            <wa-callout variant="neutral" appearance="accent" class="d-block">
+                <i slot="icon" class="fa-solid fa-envelope-open-text"></i>
                 <div>
                     <h6 class="fw-bold text-uppercase mb-1">Requesting an Accommodation</h6>
                     <p class="small mb-0">
                         We process requests expediently. You do not need to fill out complex forms. Simply visit the leasing office. We are here to say "Yes."
                     </p>
                 </div>
-            </div>
+            </wa-callout>
         </div>
 
     </div>

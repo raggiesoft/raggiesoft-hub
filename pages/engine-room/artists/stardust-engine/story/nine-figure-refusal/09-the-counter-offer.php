@@ -18,9 +18,9 @@ $pageTitle = "The Counter-Offer (Sept 14, 2018) - Engine Room History";
     <!-- INLINE: Page header framing the counter-offer as a "Kill Switch" -->
     <div class="row justify-content-center mb-5">
         <div class="col-lg-8 text-center">
-            <span class="badge bg-warning-subtle text-warning-emphasis rounded-pill px-3 py-2 mb-3 text-uppercase letter-spacing-1 shadow-sm border border-warning-subtle">
+            <wa-badge variant="warning" appearance="filled-outlined" pill class="text-warning-emphasis px-3 py-2 mb-3 text-uppercase letter-spacing-1 shadow-sm">
                 <i class="fa-duotone fa-envelope-open-text me-2"></i>Evidence Item #45-C
-            </span>
+            </wa-badge>
             <h1 class="display-4 fw-bold text-body-emphasis mb-2 text-uppercase" style="font-family: 'Impact', sans-serif;">
                 The "Kill Switch"
             </h1>
@@ -34,7 +34,7 @@ $pageTitle = "The Counter-Offer (Sept 14, 2018) - Engine Room History";
         <div class="col-lg-10">
             
             <!-- INLINE: Narrative context block explaining Holly's "Army of One" bluff -->
-            <div class="card bg-body-tertiary border-start border-4 border-warning shadow-lg mb-5">
+            <wa-card class="card bg-body-tertiary border-start border-4 border-warning shadow-lg mb-5 w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
                 <div class="card-body p-4">
                     <h5 class="text-warning-emphasis fw-bold text-uppercase mb-3"><i class="fa-solid fa-circle-info me-2"></i>Narrative Context</h5>
                     <p class="text-body-secondary mb-3 small">
@@ -49,7 +49,7 @@ $pageTitle = "The Counter-Offer (Sept 14, 2018) - Engine Room History";
                         </p>
                     </div>
                 </div>
-            </div>
+            </wa-card>
 
             <?php 
                 /**
@@ -100,24 +100,24 @@ $pageTitle = "The Counter-Offer (Sept 14, 2018) - Engine Room History";
 
             <div class="row mt-5 g-4">
                 <div class="col-md-6">
-                    <div class="card bg-danger-subtle border-danger h-100">
-                        <div class="card-body">
+                    <wa-card class="card bg-danger-subtle border-danger h-100 w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
+                        <div class="card-body p-4">
                             <h5 class="fw-bold text-danger-emphasis text-uppercase"><i class="fa-solid fa-xmark me-2"></i>The Rejection</h5>
                             <p class="small text-body-secondary mb-0">
                                 At 10:15 AM, Jameson Frost reportedly laughed at the letter, crumbled up a physical copy, and told his assistant to "tell the girl to go back to school." He did not withdraw the bid.
                             </p>
                         </div>
-                    </div>
+                    </wa-card>
                 </div>
                 <div class="col-md-6">
-                    <div class="card bg-success-subtle border-success h-100">
-                        <div class="card-body">
+                    <wa-card class="card bg-success-subtle border-success h-100 w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
+                        <div class="card-body p-4">
                             <h5 class="fw-bold text-success-emphasis text-uppercase"><i class="fa-solid fa-check me-2"></i>The Consequence</h5>
                             <p class="small text-body-secondary mb-0">
                                 At 5:01 PM, Holly O'Connell uploaded the <em>Forensic Audit</em> to the SEC's whistleblower portal. By market open on Sept 15, Omni-Global stock had lost 94% of its value.
                             </p>
                         </div>
-                    </div>
+                    </wa-card>
                 </div>
             </div>
 

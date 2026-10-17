@@ -79,10 +79,25 @@
         "ogDescription": "The Zenith Report on the fallout from the failed acquisition.",
         "view": "pages/engine-room/artists/stardust-engine/story/nine-figure-refusal/13-omni-global-chapter-11"
     },
+    "/engine-room/artists/stardust-engine/story/nine-figure-refusal/chapter-7-conversion-order": {
+        "title": "Bankruptcy Court Exhibit: Chapter 7 Conversion Order",
+        "ogDescription": "Official U.S. Bankruptcy Court order converting Omni-Global Media Corp. from Chapter 11 reorganization to Chapter 7 liquidation.",
+        "view": "pages/engine-room/artists/stardust-engine/story/nine-figure-refusal/chapter-7-conversion-order"
+    },
     "/engine-room/artists/stardust-engine/story/nine-figure-refusal/liquidation-auction": {
         "title": "Asset Liquidation: Case 18-11492",
         "ogDescription": "The yard sale. Selling the corporate ego to pay the creditors.",
         "view": "pages/engine-room/artists/stardust-engine/story/nine-figure-refusal/14-liquidation-auction"
+    },
+    "/engine-room/artists/stardust-engine/story/nine-figure-refusal/sun-ray-catalog-transfer": {
+        "title": "Exhibit: Sun-Ray Master Catalog Transfer Deed",
+        "ogDescription": "The bankruptcy court transfer of the historic Sun-Ray master catalog to Engine Room Records.",
+        "view": "pages/engine-room/artists/stardust-engine/story/nine-figure-refusal/sun-ray-catalog-transfer"
+    },
+    "/engine-room/artists/stardust-engine/story/nine-figure-refusal/staff-retention": {
+        "title": "Internal Directive: Omni-Global Staff Retention Protocol",
+        "ogDescription": "Holly O'Connell's directive retaining rank-and-file Omni-Global engineers, archivists, and building staff with full pensions.",
+        "view": "pages/engine-room/artists/stardust-engine/story/nine-figure-refusal/staff-retention"
     },
     "/engine-room/artists/stardust-engine/story/nine-figure-refusal/zenith-report/stardust-bus-ride": {
         "title": "The $350 Million Bus Ride That Changed Everything",

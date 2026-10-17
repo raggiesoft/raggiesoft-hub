@@ -63,7 +63,7 @@ $id_youtube = "";
 
     <?php // include ROOT_PATH . '/includes/components/_tracklist-downloader.php'; ?>
 
-    <div class="alert alert-dark border-info bg-opacity-10 py-4">
+    <wa-callout variant="brand" appearance="accent" class="py-4 d-block">
         <div class="d-flex align-items-center">
             <div class="me-4">
                  <i class="fa-duotone fa-wave-pulse text-info fa-3x"></i>
@@ -78,7 +78,7 @@ $id_youtube = "";
                 </p>
             </div>
         </div>
-    </div>
+    </wa-callout>
 
     <div class="row mt-5">
         <div class="col-md-6">

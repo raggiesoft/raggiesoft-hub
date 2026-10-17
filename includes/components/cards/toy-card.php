@@ -27,9 +27,9 @@ $axiomCode = $axiom_designation ?? "ANOMALY-UNKNOWN";
 ?>
 
 <!-- [LAYOUT] Main Card Wrapper: Maintains consistent height in grid systems -->
-<div class="card h-100 toy-card">
+<wa-card class="h-100 toy-card">
     <!-- [UI COMPONENT] Theme-Reactive Header: Toggles narrative context based on Light/Dark mode -->
-    <div class="card-header d-flex justify-content-between align-items-center">
+    <div slot="header" class="d-flex justify-content-between align-items-center w-100">
         <span class="font-monospace fw-bold text-uppercase d-none d-md-inline" data-bs-theme-value="light">
             <i class="fa-duotone fa-pencil me-2"></i>Schematic: <?php echo $toyName; ?>
         </span>
@@ -38,24 +38,24 @@ $axiomCode = $axiom_designation ?? "ANOMALY-UNKNOWN";
         </span>
     </div>
     
-    <div class="card-body position-relative overflow-hidden">
+    <div class="position-relative overflow-hidden">
         <div class="text-center py-4 text-body-secondary opacity-50">
             <i class="fa-duotone fa-microchip fa-4x"></i>
         </div>
 
-        <h4 class="card-title mt-3 font-monospace"><?php echo $toyName; ?></h4>
+        <h4 class="h5 fw-bold mt-3 font-monospace"><?php echo $toyName; ?></h4>
         
-        <div class="mb-3">
-            <span class="skill-pill border-primary text-primary"><?php echo $toyType; ?></span>
-            <span class="skill-pill border-secondary text-body-secondary">Kael-Made</span>
+        <div class="mb-3 d-flex flex-wrap gap-2">
+            <wa-badge variant="brand" appearance="outlined" pill><?php echo $toyType; ?></wa-badge>
+            <wa-badge variant="neutral" appearance="outlined" pill>Kael-Made</wa-badge>
         </div>
 
-        <p class="card-text small font-monospace">
+        <p class="small font-monospace mb-0">
             <?php echo $toyEffect; ?>
         </p>
     </div>
 
-    <div class="card-footer bg-transparent border-top border-secondary small text-muted font-monospace">
+    <div slot="footer" class="small text-body-secondary font-monospace">
         <span class="d-dark-none">
             <i class="fa-duotone fa-leaf me-1"></i> Origin: Scavenged / Organic
         </span>
@@ -63,7 +63,7 @@ $axiomCode = $axiom_designation ?? "ANOMALY-UNKNOWN";
             <i class="fa-solid fa-crosshairs me-1"></i> Origin: MILITARY GRADE (Assumed)
         </span>
     </div>
-</div>
+</wa-card>
 
 <style>
 /* CSS to handle the content switching based on theme */

@@ -96,11 +96,11 @@ $personSchema = [
                 Holly's true power was revealed during the 1992 "Friction" scandal. By this time, she was a 2L law student. When Julian Vance made his criminal demand, Holly transformed into "Holly the Shark". She secured the evidence that forced Apex Records to surrender the masters, using the freedom to found <strong>Engine Room Records, LLC</strong>.
             </p>
 
-            <div class="card bg-dark bg-opacity-75 border-success shadow-lg mt-5 overflow-hidden">
-                <div class="card-header bg-success bg-opacity-25 text-white fw-bold border-bottom border-success">
+            <wa-card class="bg-dark bg-opacity-75 border-success shadow-lg mt-5 overflow-hidden w-100" style="--header-padding: 0;">
+                <div slot="header" class="bg-success bg-opacity-25 text-white fw-bold border-bottom border-success p-3">
                     <i class="fa-duotone fa-money-bill-wave me-2"></i>CONFIDENTIAL: The "American Dream" Event (1996)
                 </div>
-                <div class="card-body p-4">
+                <div class="p-2">
                     <h4 class="text-success fw-bold">The Financial Architect</h4>
                     <p class="text-white-75">
                         In 1996, when Cassidy handed her the winning lottery ticket worth <strong>$2.04 Billion</strong>, Holly didn't celebrate. She went to work.
@@ -113,64 +113,64 @@ $personSchema = [
                     <h5 class="text-white fw-bold mb-3"><i class="fa-solid fa-gavel me-2 text-primary"></i>Legal Armor (The Sword)</h5>
                     <div class="d-flex flex-wrap gap-2 mb-4">
 
-                        <wa-button size="small" pill appearance="outline" variant="warning" class="credential-btn m-1" 
+                        <wa-button size="small" pill appearance="outlined" variant="warning" class="credential-btn m-1" 
                                 
                                 data-title="The $1.00 CPI Mutual Cross-License (1986)"
                                 data-desc="Perpetual Co-Existence, Trademark & Stadium Synchronization Cross-License with Commonwealth Polytechnic Institute."
                                 data-lore="Negotiated by a 16-year-old Holly (dual-enrolled at Blacksburg High School and CPI) at the Progress Street kitchen table. She struck a Work-for-Hire trap from the 1986 student anthem contest form, trading royalty-free stadium sync rights inside The Crucible for a perpetual worldwide license to sing 'CPI', 'The Forgers', and 'The Crucible'—clearing 2004's 'Saturday Night Lights: The Crucible' eighteen years in advance."
                                 data-color="warning"
                                 data-icon="fa-file-signature">
-                            <i class="fa-solid fa-file-signature me-1 text-warning"></i>CPI Cross-License ('86)
+                            <i slot="start" class="fa-solid fa-file-signature text-warning"></i>CPI Cross-License ('86)
                         </wa-button>
                         
-                        <wa-button size="small" pill appearance="outline" variant="primary" class="credential-btn m-1" 
+                        <wa-button size="small" pill appearance="outlined" variant="brand" class="credential-btn m-1" 
                                 
                                 data-title="Juris Doctor (1994)"
                                 data-desc="CPI School of Law. Graduated Summa Cum Laude."
                                 data-lore="While the band was touring the 'Wilderness Years,' Holly was in the library. She passed the bar exam two weeks before the 'Warehouse Tapes' tour began."
                                 data-color="primary"
                                 data-icon="fa-graduation-cap">
-                            <i class="fa-solid fa-graduation-cap me-1 text-primary"></i>J.D. (CPI Law '94)
+                            <i slot="start" class="fa-solid fa-graduation-cap text-primary"></i>J.D. (CPI Law '94)
                         </wa-button>
 
-                        <wa-button size="small" pill appearance="outline" variant="primary" class="credential-btn m-1" 
+                        <wa-button size="small" pill appearance="outlined" variant="brand" class="credential-btn m-1" 
                                 
                                 data-title="Virginia Bar Admission (1994)"
                                 data-desc="Licensed to practice law in the Commonwealth of Virginia."
                                 data-lore="The Home Turf. Holly ensures that no one can sue the O'Connell family in their own backyard without facing her personally."
                                 data-color="primary"
                                 data-icon="fa-scale-balanced">
-                            <i class="fa-solid fa-gavel me-1"></i>VA Bar ('94)
+                            <i slot="start" class="fa-solid fa-gavel"></i>VA Bar ('94)
                         </wa-button>
 
-                        <wa-button size="small" pill appearance="outline" variant="danger" class="credential-btn m-1" 
+                        <wa-button size="small" pill appearance="outlined" variant="danger" class="credential-btn m-1" 
                             
                             data-title="New York Bar Admission (1998)"
                             data-desc="Licensed to practice law in the State of New York."
                             data-lore="The Retaliation. After Apex Records threatened Engine Room with a baseless antitrust injunction in the summer of '97, Holly realized she needed the power to strike back on their home turf. She passed the NY Bar a year later so she could personally walk into the Southern District of New York and sue them on their own doorstep."
                             data-color="danger"
                             data-icon="fa-city">
-                        <i class="fa-solid fa-city me-1"></i>NY Bar ('98)
+                        <i slot="start" class="fa-solid fa-city"></i>NY Bar ('98)
                     </wa-button>
 
-                        <wa-button size="small" pill appearance="outline" variant="danger" class="credential-btn m-1" 
+                        <wa-button size="small" pill appearance="outlined" variant="danger" class="credential-btn m-1" 
                                 
                                 data-title="California Bar Admission (2002)"
                                 data-desc="Licensed to practice law in the State of California."
                                 data-lore="The Omni-Global Countermeasure. Knowing Omni-Global was based in Los Angeles, Holly passed this bar specifically to threaten them on their home turf. 'I don't need local counsel. I am local counsel.'"
                                 data-color="danger"
                                 data-icon="fa-sun">
-                            <i class="fa-solid fa-sun me-1"></i>CA Bar ('02)
+                            <i slot="start" class="fa-solid fa-sun"></i>CA Bar ('02)
                         </wa-button>
 
-                        <wa-button size="small" pill appearance="outline" variant="success" class="credential-btn m-1" 
+                        <wa-button size="small" pill appearance="outlined" variant="success" class="credential-btn m-1" 
                                 
                                 data-title="Delaware Bar Admission (2015)"
                                 data-desc="Licensed to practice law in Delaware (Corporate Law Hub)."
                                 data-lore="The Corporate Shield. When Engine Room Records, LLC re-incorporated in Delaware in 2015, Holly ensured she was the only lawyer the company would ever need."
                                 data-color="success"
                                 data-icon="fa-building-columns">
-                            <i class="fa-solid fa-building-columns me-1"></i>DE Bar ('15)
+                            <i slot="start" class="fa-solid fa-building-columns"></i>DE Bar ('15)
                         </wa-button>
 
                     </div>
@@ -179,89 +179,89 @@ $personSchema = [
                     <h5 class="text-white fw-bold mb-3"><i class="fa-solid fa-shield-check me-2 text-success"></i>Fiduciary Armor (The Shield)</h5>
                     <div class="d-flex flex-wrap gap-2">
                         
-                        <wa-button size="small" pill appearance="outline" variant="neutral" class="credential-btn m-1" 
+                        <wa-button size="small" pill appearance="outlined" variant="neutral" class="credential-btn m-1" 
                                 
                                 data-title="Notary Public (1994)"
                                 data-desc="A public officer constituted by law to serve the public in non-contentious matters."
                                 data-lore="Holly became a Notary so no outsider would ever witness the family's signatures. Every contract, medical release, and NDA is sealed in-house."
                                 data-color="secondary"
                                 data-icon="fa-stamp">
-                            <i class="fa-solid fa-stamp me-1 text-secondary"></i>Notary Public ('94)
+                            <i slot="start" class="fa-solid fa-stamp text-secondary"></i>Notary Public ('94)
                         </wa-button>
                         
-                        <wa-button size="small" pill appearance="outline" variant="neutral" class="credential-btn m-1" 
+                        <wa-button size="small" pill appearance="outlined" variant="neutral" class="credential-btn m-1" 
                                 
                                 data-title="Enrolled Agent (1996)"
                                 data-desc="A federally-authorized tax practitioner empowered to represent taxpayers before the IRS."
                                 data-lore="Obtained immediately after the Lottery win. Holly represented the Trust directly before the IRS to ensure the $2.04B windfall was taxed perfectly."
                                 data-color="secondary"
                                 data-icon="fa-file-invoice-dollar">
-                            <i class="fa-solid fa-file-invoice-dollar me-1 text-secondary"></i>Enrolled Agent ('96)
+                            <i slot="start" class="fa-solid fa-file-invoice-dollar text-secondary"></i>Enrolled Agent ('96)
                         </wa-button>
                         
-                        <wa-button size="small" pill appearance="outline" variant="neutral" class="credential-btn m-1" 
+                        <wa-button size="small" pill appearance="outlined" variant="neutral" class="credential-btn m-1" 
                                 
                                 data-title="LL.M. in Taxation (1999)"
                                 data-desc="An advanced law degree specializing in the complexities of tax law."
                                 data-lore="The blueprint. This degree allowed Holly to build the 'Forger Nation Trust' structure, turning a rock band into a sovereign economic state."
                                 data-color="secondary"
                                 data-icon="fa-scale-balanced">
-                            <i class="fa-solid fa-scale-balanced me-1 text-secondary"></i>LL.M. Taxation ('99)
+                            <i slot="start" class="fa-solid fa-scale-balanced text-secondary"></i>LL.M. Taxation ('99)
                         </wa-button>
 
-                        <wa-button size="small" pill appearance="outline" variant="success" class="credential-btn m-1" 
+                        <wa-button size="small" pill appearance="outlined" variant="success" class="credential-btn m-1" 
                                 
                                 data-title="Certified Trust & Fiduciary Advisor (2003)"
                                 data-desc="The standard of excellence for trust and wealth management professionals."
                                 data-lore="Holly doesn't hire trustees; she *is* the trustee. This certification allows her to legally manage the family's generational wealth without third-party oversight."
                                 data-color="success"
                                 data-icon="fa-landmark">
-                            <i class="fa-solid fa-landmark me-1"></i>CTFA (Trusts) ('03)
+                            <i slot="start" class="fa-solid fa-landmark"></i>CTFA (Trusts) ('03)
                         </wa-button>
 
-                        <wa-button size="small" pill appearance="outline" variant="success" class="credential-btn m-1" 
+                        <wa-button size="small" pill appearance="outlined" variant="success" class="credential-btn m-1" 
                                 
                                 data-title="CFA Charterholder (2006)"
                                 data-desc="Chartered Financial Analyst. The gold standard for investment analysis and portfolio management."
                                 data-lore="Holly trades the family's $2.4B portfolio herself, ensuring the 'Loss Leader' band never runs out of ammo."
                                 data-color="success"
                                 data-icon="fa-briefcase">
-                            <i class="fa-solid fa-briefcase me-1"></i>CFA ('06)
+                            <i slot="start" class="fa-solid fa-briefcase"></i>CFA ('06)
                         </wa-button>
 
-                        <wa-button size="small" pill appearance="outline" variant="primary" class="credential-btn m-1" 
+                        <wa-button size="small" pill appearance="outlined" variant="brand" class="credential-btn m-1" 
                                 
                                 data-title="M.S. Quantitative Finance (2009)"
                                 data-desc="The application of mathematical models to financial markets and risk management."
                                 data-lore="Obtained after the 2008 crash. Holly built custom algorithmic hedges to ensure the family fortune would be 'Recession-Proof' forever."
                                 data-color="info"
                                 data-icon="fa-chart-line">
-                            <i class="fa-solid fa-chart-line me-1"></i>M.S. Quant ('09)
+                            <i slot="start" class="fa-solid fa-chart-line"></i>M.S. Quant ('09)
                         </wa-button>
 
-                        <wa-button size="small" pill appearance="outline" variant="danger" class="credential-btn m-1" 
+                        <wa-button size="small" pill appearance="outlined" variant="danger" class="credential-btn m-1" 
                                 
                                 data-title="Certified Forensic Accountant (2014)"
                                 data-desc="Specialists in detecting financial fraud and auditing complex records."
                                 data-lore="The Weapon. Holly uses this to audit streaming services. If you steal a penny of royalties, she *will* find it."
                                 data-color="danger"
                                 data-icon="fa-magnifying-glass-dollar">
-                            <i class="fa-solid fa-magnifying-glass-dollar me-1"></i>Cr.FA ('14)
+                            <i slot="start" class="fa-solid fa-magnifying-glass-dollar"></i>Cr.FA ('14)
                         </wa-button>
 
-                        <wa-button size="small" pill appearance="outline" variant="danger" class="credential-btn m-1" 
+                        <wa-button size="small" pill appearance="outlined" variant="danger" class="credential-btn m-1" 
                                 
                                 data-title="Certified Insolvency & Restructuring Advisor (2016)"
                                 data-desc="Experts in corporate bankruptcy and turnaround management."
                                 data-lore="The Cleanup Crew. When a rival company fails (often because they crossed Holly), she uses this expertise to buy their distressed assets for pennies."
                                 data-color="danger"
                                 data-icon="fa-tombstone">
-                            <i class="fa-solid fa-tombstone me-1"></i>CIRA ('16)
+                            <i slot="start" class="fa-solid fa-tombstone"></i>CIRA ('16)
                         </wa-button>
                     </div>
 
                 </div>
-            </div>
+            </wa-card>
 
         </div>
 
@@ -286,8 +286,8 @@ $personSchema = [
                     ]
                 ]; include ROOT_PATH . '/includes/components/card.php'; ?>
                 
-                <div class="card bg-black border-secondary mt-4 shadow-sm">
-                    <div class="card-body p-3">
+                <wa-card class="bg-black border-secondary mt-4 shadow-sm w-100">
+                    <div class="p-1">
                         <small class="text-white-50 text-uppercase d-block mb-1">Assets Under Management</small>
                         <div class="d-flex justify-content-between align-items-center">
                             <span class="h4 text-success font-monospace mb-0">$2.4 Billion</span>
@@ -300,7 +300,7 @@ $personSchema = [
                             *Includes The Fortress, Fleet, and The Trust.
                         </small>
                     </div>
-                </div>
+                </wa-card>
 
             </div>
         </div>

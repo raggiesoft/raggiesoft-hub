@@ -93,9 +93,9 @@ $pageTitle = "Asset Disposal: Omni-Global Liquidation - Case 18-11492";
     
     <div class="row justify-content-center mb-5">
         <div class="col-lg-8 text-center">
-            <span class="badge bg-secondary-subtle text-secondary-emphasis rounded-pill px-3 py-2 mb-3 text-uppercase letter-spacing-1 border border-secondary-subtle">
+            <wa-badge variant="neutral" appearance="filled-outlined" pill class="text-secondary-emphasis px-3 py-2 mb-3 text-uppercase letter-spacing-1">
                 <i class="fa-duotone fa-gavel me-2"></i>U.S. Bankruptcy Court (Delaware)
-            </span>
+            </wa-badge>
             <h1 class="display-4 fw-bold text-body-emphasis text-uppercase mb-2" style="font-family: 'Impact', sans-serif;">
                 Asset Liquidation
             </h1>
@@ -108,14 +108,14 @@ $pageTitle = "Asset Disposal: Omni-Global Liquidation - Case 18-11492";
     <div class="row justify-content-center">
         <div class="col-lg-10">
             
-            <div class="alert alert-dark bg-body-tertiary border-secondary d-flex align-items-center mb-5 shadow-sm text-body-secondary">
-                <i class="fa-duotone fa-dumpster-fire fs-2 me-4 text-danger"></i>
+            <wa-callout variant="neutral" appearance="accent" class="mb-5 shadow-sm d-block">
+                <i slot="icon" class="fa-duotone fa-dumpster-fire text-danger"></i>
                 <div class="small">
                     <strong>Financial Note:</strong> While Aethelgard Holdings acquired the <em>Secured Debt</em> (controlling the copyrights), the <em>Physical Assets</em> (furniture, art, vehicles) were auctioned to satisfy unsecured creditors (e.g., the catering company Frost never paid).
                 </div>
-            </div>
+            </wa-callout>
 
-            <div class="card bg-body-tertiary border-secondary shadow-lg mb-4 lot-card">
+            <wa-card class="card bg-body-tertiary border-secondary shadow-lg mb-4 lot-card w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
                 <div class="card-body p-4">
                     <div class="row align-items-center">
                         <div class="col-md-2 text-center">
@@ -139,9 +139,9 @@ $pageTitle = "Asset Disposal: Omni-Global Liquidation - Case 18-11492";
                         </div>
                     </div>
                 </div>
-            </div>
+            </wa-card>
 
-            <div class="card bg-body-tertiary border-secondary shadow-lg mb-4 lot-card">
+            <wa-card class="card bg-body-tertiary border-secondary shadow-lg mb-4 lot-card w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
                 <div class="card-body p-4">
                     <div class="row align-items-center">
                         <div class="col-md-2 text-center">
@@ -164,9 +164,9 @@ $pageTitle = "Asset Disposal: Omni-Global Liquidation - Case 18-11492";
                         </div>
                     </div>
                 </div>
-            </div>
+            </wa-card>
 
-            <div class="card bg-body-tertiary border-secondary shadow-lg mb-4 lot-card">
+            <wa-card class="card bg-body-tertiary border-secondary shadow-lg mb-4 lot-card w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
                 <div class="card-body p-4">
                     <div class="row align-items-center">
                         <div class="col-md-2 text-center">
@@ -189,9 +189,9 @@ $pageTitle = "Asset Disposal: Omni-Global Liquidation - Case 18-11492";
                         </div>
                     </div>
                 </div>
-            </div>
+            </wa-card>
 
-            <div class="card bg-black border-success shadow-lg mb-4 lot-card position-relative overflow-hidden">
+            <wa-card class="card bg-black border-success shadow-lg mb-4 lot-card position-relative overflow-hidden w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
                 <div class="position-absolute top-0 end-0 p-2">
                     <i class="fa-duotone fa-lock-keyhole fa-5x text-success opacity-10"></i>
                 </div>
@@ -211,9 +211,9 @@ $pageTitle = "Asset Disposal: Omni-Global Liquidation - Case 18-11492";
                             </p>
                         </div>
                         <div class="col-md-3 text-center position-relative">
-                            <div class="badge bg-danger text-uppercase px-3 py-2 shadow-sm mb-2" style="font-size: 0.9rem;">
+                            <wa-badge variant="danger" appearance="accent" class="text-uppercase px-3 py-2 shadow-sm mb-2" style="font-size: 0.9rem;">
                                 WITHDRAWN
-                            </div>
+                            </wa-badge>
                             <p class="tiny text-white-50 mb-0 line-height-sm">
                                 Acquired via Credit Bid<br>
                                 <strong>Aethelgard Holdings, LLC</strong>
@@ -221,15 +221,15 @@ $pageTitle = "Asset Disposal: Omni-Global Liquidation - Case 18-11492";
                         </div>
                     </div>
                     
-                    <div class="alert alert-success bg-opacity-10 border-0 mt-3 mb-0 p-2 small font-monospace text-light">
-                        <i class="fa-solid fa-check me-2"></i><strong>Outcome:</strong> Assets transferred to the "Engine Room Archives" for immediate repatriation.
+                    <wa-callout variant="success" appearance="accent" class="mt-3 mb-0 p-2 small font-monospace d-block">
+                        <i slot="icon" class="fa-solid fa-check"></i><strong>Outcome:</strong> Assets transferred to the "Engine Room Archives" for immediate repatriation.
                         <br>
                         <span class="opacity-75 ms-4">>> Masters sold back to original artists for <strong>$1.00 USD</strong> (legal consideration).</span>
                         <br>
                         <span class="opacity-75 ms-4 text-warning">>> Exception: Disputed estates held in escrow pending mediation.</span>
-                    </div>
+                    </wa-callout>
                 </div>
-            </div>
+            </wa-card>
 
             <?php
                 $nav = [

@@ -104,7 +104,6 @@ $cardBackground = $cdnBaseUrl . '/stardust-engine/images/story/ad-astra/ad-astra
                     </div>
 
                 </div>
-                </div>
             </wa-card>
         </div>
     </div>
@@ -119,7 +118,7 @@ $cardBackground = $cdnBaseUrl . '/stardust-engine/images/story/ad-astra/ad-astra
                     </div>
                     <div class="col-md-7 d-flex align-items-center">
                         <div class="p-4 p-lg-5">
-                            <wa-badge variant="warning" class="mb-3 text-dark font-monospace shadow-glow">
+                            <wa-badge variant="warning" appearance="filled" class="mb-3 font-monospace shadow-glow">
                                 <i class="fa-duotone fa-film me-2"></i>THE UNMADE SHORT FILM
                             </wa-badge>
                             <h3 class="h4 text-light fw-bold text-uppercase mb-3" style="font-family: 'Audiowide', sans-serif;">A Cinematic Vision</h3>
@@ -145,7 +144,7 @@ $cardBackground = $cdnBaseUrl . '/stardust-engine/images/story/ad-astra/ad-astra
                 </div>
                 <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark bg-opacity-75"></div>
                 
-                <div class="card-body p-5 position-relative z-1 d-flex flex-column justify-content-center text-center">
+                <div class="p-5 position-relative z-1 d-flex flex-column justify-content-center text-center">
                     <div class="mb-3">
                          <i class="fa-duotone fa-book-sparkles text-info display-4"></i>
                     </div>
@@ -154,8 +153,8 @@ $cardBackground = $cdnBaseUrl . '/stardust-engine/images/story/ad-astra/ad-astra
                         Read the official narrative of the "Concert at the Edge of the World." 
                         Experience the launch, the nebula, and the crash landing.
                     </p>
-                    <wa-button variant="info" outline href="/engine-room/artists/stardust-engine/story/ad-astra/voyage" class="rounded-pill w-100">
-                        <i class="fa-duotone fa-book-open me-2"></i>Open Flight Log
+                    <wa-button variant="brand" appearance="outlined" pill href="/engine-room/artists/stardust-engine/story/ad-astra/voyage" class="w-100">
+                        <i slot="start" class="fa-duotone fa-book-open"></i>Open Flight Log
                     </wa-button>
                 </div>
             </wa-card>
@@ -168,7 +167,7 @@ $cardBackground = $cdnBaseUrl . '/stardust-engine/images/story/ad-astra/ad-astra
                 </div>
                 <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark bg-opacity-75"></div>
                 
-                <div class="card-body p-5 position-relative z-1 d-flex flex-column justify-content-center text-center">
+                <div class="p-5 position-relative z-1 d-flex flex-column justify-content-center text-center">
                     <div class="mb-3">
                         <i class="fa-duotone fa-rocket-launch text-warning display-4"></i>
                     </div>
@@ -177,8 +176,8 @@ $cardBackground = $cdnBaseUrl . '/stardust-engine/images/story/ad-astra/ad-astra
                         Listen to the 15-minute progressive rock suite.
                         Four movements. One journey.
                     </p>
-                    <wa-button variant="warning" outline href="/engine-room/artists/stardust-engine/discography/1996-escape-velocity-ad-astra" class="rounded-pill w-100">
-                        <i class="fa-duotone fa-play me-2"></i>Listen Now
+                    <wa-button variant="warning" appearance="outlined" pill href="/engine-room/artists/stardust-engine/discography/1996-escape-velocity-ad-astra" class="w-100">
+                        <i slot="start" class="fa-duotone fa-play"></i>Listen Now
                     </wa-button>
                 </div>
             </wa-card>

@@ -1,58 +1,61 @@
 <?php
 /**
- * ARCHITECTURE & MAINTENANCE NOTES:
- * 
- * Component: Family Sub-Network Header
- * Purpose: Provides localized navigation specific to the "Family" or construct personas.
- * 
+ * ============================================================================
+ * ARCHITECTURE & MAINTENANCE NOTES: Family Sub-Network Header
+ * ============================================================================
+ * File: includes/components/headers/family/header-family.php
+ * Purpose: Localized navigation specific to "The Family" (Personified DevOps)
+ *          personas.
+ *
  * Strategy & Implementation:
- * - Adheres to a lightweight structure, directly exposing dropdowns and localized links 
- *   using Web Awesome elements.
- * - The `$request_uri` is captured to allow future expansion of active-state mapping.
- * - Relies on flexbox utilities (`d-flex`, `flex-column`, `flex-md-row`) to construct a 
- *   responsive mobile and desktop navigation experience.
- * 
- * Maintenance Recommendations:
- * - If new AI constructs or personas are introduced, append them within the `<wa-menu>` 
- *   structure following the existing visual hierarchy and icon usage.
- * - Ensure the `mobile-nav-menu` class behavior remains robust across different viewport 
- *   sizes if structural changes are made.
+ * - Uses strict Web Awesome v3.13.0 `<wa-dropdown>` without legacy `<wa-menu>`.
+ * ============================================================================
  */
 
-// Capture URI for future active state tracking or localized routing overrides
-$request_uri = $_SERVER['REQUEST_URI'] ?? '/';
+$request_uri = parse_url($_SERVER['REQUEST_URI'] ?? '/', PHP_URL_PATH) ?: '/';
 ?>
 <div class="d-flex flex-column flex-md-row align-items-stretch align-items-md-center gap-2 ms-auto py-3 py-md-0 w-100 mobile-nav-menu">
-  
-    <wa-button appearance="plain" href="https://michaelpragsdale.com">
-        <i slot="start" class="fa-duotone fa-briefcase me-2"aria-hidden="true"></i>Digital Portfolio &amp; Resume
-    </wa-button>
-  
-  
+
+  <wa-button appearance="plain" href="/family" class="<?php echo ($request_uri === '/family') ? 'text-primary fw-bold' : ''; ?>">
+    <i slot="start" class="fa-duotone fa-house-user me-2" aria-hidden="true"></i>Family Hub
+  </wa-button>
+
+  <wa-button appearance="plain" href="https://michaelpragsdale.com">
+    <i slot="start" class="fa-duotone fa-briefcase me-2" aria-hidden="true"></i>Digital Portfolio &amp; Resume
+  </wa-button>
+
   <wa-dropdown placement="bottom-start">
-    <wa-button class="text-primary" href="#"    slot="trigger" appearance="plain">
-        <i class="fa-duotone fa-users me-2"aria-hidden="true"></i>Meet the Family
-        <i slot="end" class="fa-solid fa-circle-caret-down ms-2 opacity-50" aria-hidden="true"></i>
+    <wa-button class="text-primary" slot="trigger" appearance="plain" with-caret>
+      <i slot="start" class="fa-duotone fa-users me-2" aria-hidden="true"></i>Meet the Family
     </wa-button>
-    <wa-menu>
-      <!-- Categorized Menu: Separates human architect from digital constructs -->
-      <div class="px-3 py-2 small text-uppercase  fw-bold">The Human</div>
-        <wa-dropdown-item value="/family/michael">Michael (Architect)</wa-dropdown-item>
-        <wa-divider></wa-divider>
-        <div class="px-3 py-2 small text-uppercase  fw-bold">The Constructs</div>
-        <wa-dropdown-item value="/family/paige"><i class="fa-duotone fa-heart text-info me-2"aria-hidden="true"></i>Paige</wa-dropdown-item>
-        <wa-dropdown-item value="/family/jessica"><i class="fa-duotone fa-server text-success me-2"aria-hidden="true"></i>Jessica</wa-dropdown-item>
-        <wa-dropdown-item value="/family/sarah"><i class="fa-duotone fa-shield text-warning me-2"aria-hidden="true"></i>Sarah</wa-dropdown-item>
-        <wa-dropdown-item value="/family/jenna"><i class="fa-duotone fa-code text-warning me-2"aria-hidden="true"></i>Jenna</wa-dropdown-item>
-        <wa-dropdown-item value="/family/harper"><i class="fa-duotone fa-music text-primary me-2"aria-hidden="true"></i>Harper</wa-dropdown-item>
-        <wa-dropdown-item value="/family/amanda-elara"><i class="fa-duotone fa-route text-success me-2"aria-hidden="true"></i>Amanda & Elara</wa-dropdown-item>
-    </wa-menu>
+    <div class="px-3 py-2 small text-uppercase fw-bold text-body-secondary">The Human</div>
+    <wa-dropdown-item value="/family/michael">
+      <i slot="icon" class="fa-duotone fa-user-visor text-primary" aria-hidden="true"></i>Michael (Architect)
+    </wa-dropdown-item>
+    <wa-divider></wa-divider>
+    <div class="px-3 py-2 small text-uppercase fw-bold text-body-secondary">The Constructs</div>
+    <wa-dropdown-item value="/family/paige">
+      <i slot="icon" class="fa-duotone fa-heart text-info" aria-hidden="true"></i>Paige
+    </wa-dropdown-item>
+    <wa-dropdown-item value="/family/jessica">
+      <i slot="icon" class="fa-duotone fa-server text-success" aria-hidden="true"></i>Jessica
+    </wa-dropdown-item>
+    <wa-dropdown-item value="/family/sarah">
+      <i slot="icon" class="fa-duotone fa-shield text-warning" aria-hidden="true"></i>Sarah
+    </wa-dropdown-item>
+    <wa-dropdown-item value="/family/jenna">
+      <i slot="icon" class="fa-duotone fa-code text-warning" aria-hidden="true"></i>Jenna
+    </wa-dropdown-item>
+    <wa-dropdown-item value="/family/harper">
+      <i slot="icon" class="fa-duotone fa-music text-primary" aria-hidden="true"></i>Harper
+    </wa-dropdown-item>
+    <wa-dropdown-item value="/family/amanda-elara">
+      <i slot="icon" class="fa-duotone fa-route text-success" aria-hidden="true"></i>Amanda &amp; Elara
+    </wa-dropdown-item>
   </wa-dropdown>
 
+  <wa-button appearance="plain" href="/">
+    <i slot="start" class="fa-duotone fa-arrow-right-from-bracket me-2" aria-hidden="true"></i><span class="small">Exit to RaggieSoft</span>
+  </wa-button>
 
-  
-      <wa-button appearance="plain" href="/">
-        <i slot="start" class="fa-duotone fa-arrow-right-from-bracket me-2 "aria-hidden="true"></i><span class=" small">Exit to RaggieSoft</span>
-      </wa-button>
-  
 </div>

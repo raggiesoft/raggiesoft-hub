@@ -136,9 +136,9 @@ if (!empty($query)) {
                            placeholder="Search characters, quotes, or lore..." 
                            value="<?php echo htmlspecialchars($query); ?>" 
                            style="box-shadow: none; outline: none; font-size: 1.1rem;">
-                    <button type="submit" class="btn btn-primary px-4 fw-bold">
+                    <wa-button variant="brand" appearance="accent" type="submit" class="px-4 fw-bold">
                         Search
-                    </button>
+                    </wa-button>
                 </form>
             </div>
 

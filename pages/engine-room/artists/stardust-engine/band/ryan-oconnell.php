@@ -70,12 +70,12 @@ $personSchema = [
                 As the oldest sibling (Age 23 in 1987), Ryan is the band's protective "Engine" and the voice of its raw rock energy. He famously delayed his own college entry so the entire "family" (his siblings and cousins) could enter CPI's Class of '89 together.
             </p>
             
-            <div class="alert alert-dark border-warning bg-opacity-25 d-flex align-items-center" role="alert">
-                <i class="fa-duotone fa-engine-warning text-warning fs-2 me-3"></i>
+            <wa-callout variant="warning" appearance="accent" class="d-block">
+                <i slot="icon" class="fa-duotone fa-engine-warning text-warning"></i>
                 <div class="small text-white-75">
                     <strong>Archivist Note:</strong> Ryan hated the polish of the studio. He famously told producers that to find the real sound—the engine's hum—you couldn't float on the surface. You had to go <strong class="text-warning text-uppercase">Down</strong>. Deep <strong class="text-warning text-uppercase">Down</strong>.
                 </div>
-            </div>
+            </wa-callout>
 
             <h3 class="fw-bold mt-5 mb-3 text-white">The Crash of '90</h3>
             <p class="text-white-75">

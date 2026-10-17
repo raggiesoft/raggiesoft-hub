@@ -1,121 +1,122 @@
 <?php
-// includes/components/headers/header-default.php
-// UPDATED: Main RaggieSoft Network Header (Web Awesome Edition)
-// Serves as the global navigation for the root domain
-
 /**
- * ARCHITECTURE & MAINTENANCE NOTES:
- * 
- * Component: Main Network Header
- * Purpose: Serves as the primary global navigation mechanism across the root domain.
- * 
+ * ============================================================================
+ * ARCHITECTURE & MAINTENANCE NOTES: Main Network Header
+ * ============================================================================
+ * File: includes/components/headers/header-default.php
+ * Purpose: Serves as the primary global navigation mechanism across the root
+ *          RaggieSoft Hub domain (raggiesoft.com).
+ *
  * Strategy & Implementation:
- * - Utilizes early URL evaluation mapping the current `$request_uri` to specific active 
- *   state flags.
- * - Adopts a data-preparation approach where view logic strictly consumes pre-computed 
- *   booleans ($isHome, $isArchitect, $isCreative, etc.).
- * - Integrates Web Awesome components to manage responsive behaviors and complex UI 
- *   interactions (dropdowns, menus) declaratively.
- * 
- * Maintenance Recommendations:
- * - Route conditions (e.g., `str_starts_with`) should remain at the top-level block 
- *   to ensure a clean separation of concerns and avoid inline PHP conditional spaghetti.
- * - Verify Web Awesome icon classes (e.g., `fa-duotone`) and slots remain compatible 
- *   when upgrading FontAwesome or the Web Awesome framework.
+ * - Utilizes early URL evaluation mapping the current `$request_uri` to specific
+ *   active state flags (`$isHome`, `$isArchitect`, `$isCreative`, `$isMedia`,
+ *   `$isCaseStudies`, `$isAbout`, `$isContact`).
+ * - Built with strict Web Awesome v3.13.0 components (`<wa-button>`, `<wa-dropdown>`,
+ *   `<wa-dropdown-item>`, `<wa-divider>`). Note that in Web Awesome v3.13.0,
+ *   `<wa-dropdown-item>` and `<wa-divider>` are direct children of `<wa-dropdown>`.
+ * - Uses `slot="start"` for leading icons on `<wa-button>` and `<wa-dropdown-item>`.
+ * ============================================================================
  */
 
 // 1. Determine Active States
-// Extract the URI safely to map against defined architectural routes
-$request_uri = $_SERVER['REQUEST_URI'] ?? '/';
-// Evaluate primary root entry point
-$isHome = ($request_uri === '/');
-$isArchitect = (str_starts_with($request_uri, '/about/michael-ragsdale') || str_starts_with($request_uri, '/portfolio'));
-$isCreative = (str_starts_with($request_uri, '/raggiesoft-books') || str_starts_with($request_uri, '/engine-room'));
-$isMedia = str_starts_with($request_uri, '/raggiesoft-media');
-$isAbout = ($request_uri === '/about');
-$isContact = ($request_uri === '/contact');
+$request_uri = parse_url($_SERVER['REQUEST_URI'] ?? '/', PHP_URL_PATH) ?: '/';
+
+$isHome        = ($request_uri === '/');
+$isArchitect   = (str_starts_with($request_uri, '/about/michael-ragsdale') || str_starts_with($request_uri, '/portfolio') || str_starts_with($request_uri, '/family'));
+$isCreative    = (str_starts_with($request_uri, '/raggiesoft-books') || str_starts_with($request_uri, '/engine-room') || str_starts_with($request_uri, '/raggiesoft-games'));
+$isMedia       = (str_starts_with($request_uri, '/raggiesoft-media') || str_starts_with($request_uri, '/products'));
+$isCaseStudies = str_starts_with($request_uri, '/case-studies');
+$isAbout       = str_starts_with($request_uri, '/about') && !$isArchitect;
+$isContact     = str_starts_with($request_uri, '/contact');
 ?>
 
 <div class="d-flex flex-column flex-md-row align-items-stretch align-items-md-center gap-2 ms-auto py-3 py-md-0 w-100 mobile-nav-menu">
-  
-  <wa-button appearance="plain" href="/" class="<?php echo $isHome ? 'text-primary' : 'text-body-secondary'; ?>">
+
+  <wa-button appearance="plain" href="/" class="<?php echo $isHome ? 'text-primary fw-bold' : 'text-body-secondary'; ?>">
     <i slot="start" class="fa-duotone fa-house"></i> Home
   </wa-button>
 
-  <!-- Architect Section Dropdown: Aggregates personal portfolio and skills content -->
+  <!-- Architect Section Dropdown: Aggregates personal portfolio, DevOps family, and case studies -->
   <wa-dropdown placement="bottom-start">
-    <wa-button slot="trigger" appearance="plain" with-caret class="<?php echo $isArchitect ? 'text-primary' : 'text-body-secondary'; ?>">
+    <wa-button slot="trigger" appearance="plain" with-caret class="<?php echo ($isArchitect || $isCaseStudies) ? 'text-primary fw-bold' : 'text-body-secondary'; ?>">
       <i slot="start" class="fa-duotone fa-user-visor"></i> The Architect
-        <i slot="end" class="fa-solid fa-circle-caret-down ms-2 opacity-50" aria-hidden="true"></i>
     </wa-button>
-    <wa-menu>
     <wa-dropdown-item value="https://michaelpragsdale.com">
-      <i slot="start" class="fa-duotone fa-user-gear"></i> Skills & Profile
+      <i slot="icon" class="fa-duotone fa-user-gear text-primary"></i> Executive Portfolio &amp; CV
+    </wa-dropdown-item>
+    <wa-dropdown-item value="/family">
+      <i slot="icon" class="fa-duotone fa-people-group text-info"></i> The RaggieSoft Family (DevOps)
+    </wa-dropdown-item>
+    <wa-dropdown-item value="/case-studies">
+      <i slot="icon" class="fa-duotone fa-file-magnifying-glass text-warning"></i> Operational Case Studies
     </wa-dropdown-item>
     <wa-divider></wa-divider>
     <wa-dropdown-item value="/contact">
-      <i slot="start" class="fa-duotone fa-address-card"></i> Contact Card
+      <i slot="icon" class="fa-duotone fa-address-card"></i> Contact Card
     </wa-dropdown-item>
-    </wa-menu>
   </wa-dropdown>
 
+  <!-- Creative Works Dropdown: Links to Music, Literature, and Strategy Guides -->
   <wa-dropdown placement="bottom-start">
-    <wa-button slot="trigger" appearance="plain" with-caret class="<?php echo $isCreative ? 'text-primary' : 'text-body-secondary'; ?>">
+    <wa-button slot="trigger" appearance="plain" with-caret class="<?php echo $isCreative ? 'text-primary fw-bold' : 'text-body-secondary'; ?>">
       <i slot="start" class="fa-duotone fa-layer-group"></i> Creative Works
-        <i slot="end" class="fa-solid fa-circle-caret-down ms-2 opacity-50" aria-hidden="true"></i>
     </wa-button>
-    <wa-menu>
-      <div class="px-3 py-2 small text-uppercase fw-bold ">Multimedia</div>
+    <div class="px-3 py-2 small text-uppercase fw-bold text-body-secondary">Multimedia &amp; Audio</div>
+    <wa-dropdown-item value="/engine-room">
+      <i slot="icon" class="fa-solid fa-industry text-danger"></i> Engine Room Records HQ
+    </wa-dropdown-item>
     <wa-dropdown-item value="/engine-room/artists/stardust-engine">
-      <i slot="start" class="fa-duotone fa-rocket-launch text-primary"></i> The Stardust Engine
+      <i slot="icon" class="fa-duotone fa-rocket-launch text-primary"></i> The Stardust Engine
     </wa-dropdown-item>
     <wa-dropdown-item value="https://music.raggiesoft.com">
-      <i slot="start" class="fa-duotone fa-turntable text-warning"></i> The Listening Room
+      <i slot="icon" class="fa-duotone fa-turntable text-warning"></i> The Listening Room
     </wa-dropdown-item>
     <wa-divider></wa-divider>
-    <div class="px-3 py-2 small text-uppercase fw-bold ">Literature</div>
+    <div class="px-3 py-2 small text-uppercase fw-bold text-body-secondary">Literature (Ocean View Archives)</div>
+    <wa-dropdown-item value="/raggiesoft-books">
+      <i slot="icon" class="fa-duotone fa-landmark text-info"></i> Ocean View Archives Hub
+    </wa-dropdown-item>
     <wa-dropdown-item value="/raggiesoft-books/aethel-saga">
-      <i slot="start" class="fa-duotone fa-sword text-warning"></i> The Silver Gauntlet of Aethel
+      <i slot="icon" class="fa-duotone fa-sword text-warning"></i> The Silver Gauntlet of Aethel
     </wa-dropdown-item>
     <wa-dropdown-item value="/raggiesoft-books/knox">
-      <i slot="start" class="fa-duotone fa-leaf text-success"></i> Project: KNOX
+      <i slot="icon" class="fa-duotone fa-leaf text-success"></i> Project: KNOX
     </wa-dropdown-item>
-    <wa-divider></wa-divider>
-    <wa-dropdown-item value="/engine-room">
-      <i slot="start" class="fa-solid fa-industry "></i> Engine Room Records
-    </wa-dropdown-item>
-    </wa-menu>
   </wa-dropdown>
 
+  <!-- RaggieSoft Media Dropdown: B2B Licensing and Open Source Architecture -->
   <wa-dropdown placement="bottom-start">
-    <wa-button slot="trigger" appearance="plain" with-caret class="<?php echo $isMedia ? 'text-primary' : 'text-body-secondary'; ?>">
+    <wa-button slot="trigger" appearance="plain" with-caret class="<?php echo $isMedia ? 'text-primary fw-bold' : 'text-body-secondary'; ?>">
       <i slot="start" class="fa-duotone fa-building"></i> RaggieSoft Media
-        <i slot="end" class="fa-solid fa-circle-caret-down ms-2 opacity-50" aria-hidden="true"></i>
     </wa-button>
-    <wa-menu>
-      <div class="px-3 py-2 small text-uppercase fw-bold ">B2B Operations</div>
+    <div class="px-3 py-2 small text-uppercase fw-bold text-body-secondary">B2B Operations</div>
     <wa-dropdown-item value="/raggiesoft-media">
-      <i slot="start" class="fa-duotone fa-network-wired text-primary"></i> Corporate Hub
+      <i slot="icon" class="fa-duotone fa-network-wired text-primary"></i> Corporate Hub
     </wa-dropdown-item>
     <wa-dropdown-item value="/raggiesoft-media/licensing">
-      <i slot="start" class="fa-duotone fa-scale-balanced text-warning"></i> Master Licensing
+      <i slot="icon" class="fa-duotone fa-scale-balanced text-warning"></i> Master Licensing
     </wa-dropdown-item>
     <wa-dropdown-item value="/raggiesoft-media/licensing/commercial">
-      <i slot="start" class="fa-solid fa-briefcase "></i> Commercial Portal
+      <i slot="icon" class="fa-solid fa-briefcase text-success"></i> Commercial Portal
     </wa-dropdown-item>
     <wa-divider></wa-divider>
-    <div class="px-3 py-2 small text-uppercase fw-bold ">Infrastructure</div>
-    <wa-dropdown-item value="/raggiesoft-media/projects/elara">
-      <i slot="start" class="fa-brands fa-osi text-info"></i> Open Source (Elara)
+    <div class="px-3 py-2 small text-uppercase fw-bold text-body-secondary">Infrastructure &amp; Software</div>
+    <wa-dropdown-item value="/raggiesoft-media/projects">
+      <i slot="icon" class="fa-duotone fa-boxes-stacked text-info"></i> Open Source Projects Hub
     </wa-dropdown-item>
-    </wa-menu>
+    <wa-dropdown-item value="/raggiesoft-media/projects/stardust-engine-cms">
+      <i slot="icon" class="fa-brands fa-osi text-primary"></i> Stardust Engine CMS (Elara)
+    </wa-dropdown-item>
+    <wa-dropdown-item value="/raggiesoft-media/projects/storetrainer">
+      <i slot="icon" class="fa-duotone fa-graduation-cap text-warning"></i> StoreTrainer LMS
+    </wa-dropdown-item>
   </wa-dropdown>
 
-  <wa-button appearance="plain" href="/about" class="<?php echo $isAbout ? 'text-primary' : 'text-body-secondary'; ?>">
+  <wa-button appearance="plain" href="/about" class="<?php echo $isAbout ? 'text-primary fw-bold' : 'text-body-secondary'; ?>">
     <i slot="start" class="fa-duotone fa-circle-info"></i> Mission Profile
   </wa-button>
 
-  <wa-button appearance="plain" href="/contact" class="<?php echo $isContact ? 'text-primary' : 'text-body-secondary'; ?>">
+  <wa-button appearance="plain" href="/contact" class="<?php echo $isContact ? 'text-primary fw-bold' : 'text-body-secondary'; ?>">
     <i slot="start" class="fa-duotone fa-envelope-open"></i> Contact
   </wa-button>
 

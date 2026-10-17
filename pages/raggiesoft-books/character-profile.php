@@ -63,9 +63,9 @@ if ($is_directory):
         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 mb-5">
             <?php foreach ($chars as $c): ?>
                 <div class="col">
-                    <a href="/raggiesoft-books/characters/<?php echo urlencode($c['character_id']); ?>" class="text-decoration-none">
-                        <div class="card h-100 shadow-sm character-card">
-                            <div class="card-body d-flex align-items-center">
+                    <a href="/raggiesoft-books/characters/<?php echo urlencode($c['character_id']); ?>" class="text-decoration-none d-block h-100">
+                        <wa-card class="h-100 w-100 shadow-sm character-card">
+                            <div class="d-flex align-items-center">
                                 <wa-avatar 
                                     image="<?php echo htmlspecialchars($cdnBaseUrl . '/' . ($c['image_path'] ?? 'common/images/placeholder.jpg')); ?>" 
                                     label="<?php echo htmlspecialchars($c['name']); ?>"
@@ -74,11 +74,11 @@ if ($is_directory):
                                     style="--size: 4rem;">
                                 </wa-avatar>
                                 <div>
-                                    <h5 class="card-title mb-1 text-light"><?php echo htmlspecialchars($c['name']); ?></h5>
-                                    <p class="card-text small text-body-muted mb-0"><?php echo htmlspecialchars($c['subtitle'] ?? ''); ?></p>
+                                    <h5 class="mb-1 text-body-emphasis fw-bold"><?php echo htmlspecialchars($c['name']); ?></h5>
+                                    <p class="small text-body-secondary mb-0"><?php echo htmlspecialchars($c['subtitle'] ?? ''); ?></p>
                                 </div>
                             </div>
-                        </div>
+                        </wa-card>
                     </a>
                 </div>
             <?php endforeach; ?>
@@ -113,17 +113,19 @@ else:
             $title = htmlspecialchars($matches[1]);
             $desc = htmlspecialchars($matches[2]);
             $color = htmlspecialchars($matches[3]);
+            $waVariantMap = ['primary' => 'brand', 'info' => 'brand', 'secondary' => 'neutral', 'dark' => 'neutral'];
+            $waColor = $waVariantMap[$color] ?? $color;
             $icon = 'fa-circle-info';
             
-            return '<wa-button size="small" pill appearance="outline" variant="' . $color . '" class="credential-btn m-1" ' .
-                   'data-title="' . $title . '" data-desc="' . $desc . '" variant="' . $color . '" data-icon="' . $icon . '">' .
+            return '<wa-button size="small" pill appearance="outlined" variant="' . $waColor . '" class="credential-btn m-1" ' .
+                   'data-title="' . $title . '" data-desc="' . $desc . '" data-icon="' . $icon . '">' .
                    $title . 
                    '</wa-button>';
         }, $rawMd);
         
         $mdContent = $Parsedown->text(trim($rawMd));
     } else {
-        $mdContent = "<div class='alert alert-danger'>Markdown biography file missing for this character.</div>";
+        $mdContent = "<wa-callout variant='danger' appearance='accent'>Markdown biography file missing for this character.</wa-callout>";
     }
 ?>
 <div class="container py-4">
@@ -136,24 +138,22 @@ else:
     </div>
 
     <?php if ($isReal): ?>
-        <div class="alert alert-warning d-flex align-items-center mb-4">
-            <i class="fa-duotone fa-triangle-exclamation fa-2x me-3"></i>
-            <div>
-                <strong>Author Note:</strong> This is a real-life person directory entry, restricted for author/AI reference. It is not publicly indexed on the fictional website.
-            </div>
-        </div>
+        <wa-callout variant="warning" appearance="accent" class="mb-4">
+            <i slot="icon" class="fa-duotone fa-triangle-exclamation fa-lg"></i>
+            <strong>Author Note:</strong> This is a real-life person directory entry, restricted for author/AI reference. It is not publicly indexed on the fictional website.
+        </wa-callout>
     <?php endif; ?>
 
     <div class="row">
         <!-- Sidebar Profile Card -->
         <div class="col-12 col-md-4 mb-4">
-            <div class="card shadow-sm border-0 sticky-top" style="top: 20px;">
-                <img src="<?php echo htmlspecialchars($imagePath); ?>" class="card-img-top" alt="<?php echo htmlspecialchars($fullName); ?>">
-                <div class="card-body">
-                    <h3 class="card-title fw-bold text-light mb-1"><?php echo htmlspecialchars($fullName); ?></h3>
+            <wa-card class="shadow-sm border-0 sticky-top w-100" style="top: 20px;">
+                <img slot="media" src="<?php echo htmlspecialchars($imagePath); ?>" class="w-100" alt="<?php echo htmlspecialchars($fullName); ?>">
+                <div class="p-1">
+                    <h3 class="fw-bold text-body-emphasis mb-1"><?php echo htmlspecialchars($fullName); ?></h3>
                     <p class="text-primary fw-bold mb-0"><?php echo htmlspecialchars($config['subtitle'] ?? ''); ?></p>
                 </div>
-            </div>
+            </wa-card>
         </div>
         
         <!-- Main Content -->

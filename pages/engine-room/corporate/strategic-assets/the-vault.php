@@ -71,15 +71,15 @@ $pageTitle = "The Vault - Master Archives";
             "The memory of the music is fragile. We built a fortress to protect it."
         </p>
         <div class="mt-4">
-            <span class="badge bg-secondary text-white border border-secondary fw-bold px-3 py-2 m-1">
+            <wa-badge variant="neutral" appearance="accent" class="fw-bold px-3 py-2 m-1">
                 <i class="fa-solid fa-calendar-check me-2"></i>EST. 2013
-            </span>
-            <span class="badge bg-danger text-white border border-danger fw-bold px-3 py-2 m-1">
+            </wa-badge>
+            <wa-badge variant="danger" appearance="accent" class="fw-bold px-3 py-2 m-1">
                 <i class="fa-solid fa-lock me-2"></i>ACCESS RESTRICTED
-            </span>
-            <span class="badge bg-transparent border border-info text-info fw-bold px-3 py-2 m-1">
+            </wa-badge>
+            <wa-badge variant="brand" appearance="outlined" class="text-info fw-bold px-3 py-2 m-1">
                 <i class="fa-solid fa-temperature-arrow-down me-2"></i>CLIMATE CONTROLLED
-            </span>
+            </wa-badge>
         </div>
     </div>
 </div>
@@ -92,7 +92,7 @@ $pageTitle = "The Vault - Master Archives";
                 <i class="fa-duotone fa-layer-group me-2 text-primary"></i>The Collections
             </h3>
             
-            <div class="card mb-4 border-0 shadow-sm bg-body-tertiary">
+            <wa-card class="card mb-4 border-0 shadow-sm bg-body-tertiary w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
                 <div class="card-body p-4">
                     <div class="d-flex align-items-center mb-2">
                         <i class="fa-solid fa-star text-warning me-3 fs-3"></i>
@@ -102,18 +102,18 @@ $pageTitle = "The Vault - Master Archives";
                         The complete analog master reels (2-inch tape) for every album recorded by <em>The Stardust Engine</em>, <em>Mirage</em>, and <em>Origin</em>. Includes multitrack sessions, mix-downs, and unreleased demos dating back to <strong>1984</strong> (The Formation Era).
                     </p>
                 </div>
-            </div>
+            </wa-card>
 
-            <div class="card mb-4 border-0 shadow-sm bg-body-tertiary border-start border-4 border-success">
+            <wa-card class="card mb-4 border-0 shadow-sm bg-body-tertiary border-start border-4 border-success w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
                 <div class="card-body p-4">
                     <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-center mb-3">
                         <div class="d-flex align-items-center mb-2 mb-md-0">
                             <i class="fa-solid fa-hands-holding-circle text-success me-3 fs-3"></i>
                             <h5 class="fw-bold text-body-emphasis mb-0">Collection B: The Sun-Ray Repatriation</h5>
                         </div>
-                        <span class="sun-ray-badge badge bg-success-subtle text-success-emphasis border border-success-subtle">
+                        <wa-badge variant="success" appearance="filled-outlined" class="sun-ray-badge text-success-emphasis">
                             STATUS: SAFE HARBOR
-                        </span>
+                        </wa-badge>
                     </div>
                     <div class="ms-md-5">
                         <p class="text-body-secondary mb-3">
@@ -127,7 +127,7 @@ $pageTitle = "The Vault - Master Archives";
                         </div>
                     </div>
                 </div>
-            </div>
+            </wa-card>
 
         </div>
     </div>
@@ -140,8 +140,8 @@ $pageTitle = "The Vault - Master Archives";
         </div>
 
         <div class="col-md-6 col-lg-4">
-            <div class="card h-100 bg-body-tertiary spec-card shadow-sm">
-                <div class="card-body">
+            <wa-card class="card h-100 bg-body-tertiary spec-card shadow-sm w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
+                <div class="card-body p-4">
                     <h6 class="fw-bold text-uppercase text-info mb-2">
                         <i class="fa-solid fa-snowflake me-2"></i>Cold Storage
                     </h6>
@@ -151,12 +151,12 @@ $pageTitle = "The Vault - Master Archives";
                         This specific micro-climate prevents "Sticky Shed Syndrome" (binder hydrolysis), ensuring analog tapes from the 80s and 90s remain playable for decades.
                     </p>
                 </div>
-            </div>
+            </wa-card>
         </div>
 
         <div class="col-md-6 col-lg-4">
-            <div class="card h-100 bg-body-tertiary spec-card shadow-sm">
-                <div class="card-body">
+            <wa-card class="card h-100 bg-body-tertiary spec-card shadow-sm w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
+                <div class="card-body p-4">
                     <h6 class="fw-bold text-uppercase text-danger mb-2">
                         <i class="fa-solid fa-fire-extinguisher me-2"></i>Fire Suppression
                     </h6>
@@ -165,12 +165,12 @@ $pageTitle = "The Vault - Master Archives";
                         Traditional water sprinklers destroy tape. In the event of a thermal anomaly, the room is flooded with inert gas that extinguishes fire instantly without damaging the magnetic media.
                     </p>
                 </div>
-            </div>
+            </wa-card>
         </div>
 
         <div class="col-md-6 col-lg-4">
-            <div class="card h-100 bg-body-tertiary spec-card shadow-sm">
-                <div class="card-body">
+            <wa-card class="card h-100 bg-body-tertiary spec-card shadow-sm w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
+                <div class="card-body p-4">
                     <h6 class="fw-bold text-uppercase text-body-emphasis mb-2">
                         <i class="fa-solid fa-magnet me-2"></i>Faraday Shielding
                     </h6>
@@ -179,13 +179,13 @@ $pageTitle = "The Vault - Master Archives";
                         The vault walls are lined with copper mesh to create a Faraday Cage, protecting the magnetic integrity of the tapes from solar flares or electromagnetic pulses (EMP).
                     </p>
                 </div>
-            </div>
+            </wa-card>
         </div>
     </div>
 
     <div class="row justify-content-center">
         <div class="col-lg-10">
-            <div class="card bg-dark text-white border-secondary shadow-lg">
+            <wa-card class="card bg-dark text-white border-secondary shadow-lg w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
                 <div class="card-body p-4 p-md-5">
                     <div class="d-flex flex-column flex-md-row align-items-center">
                         <div class="flex-shrink-0 mb-3 mb-md-0 me-md-4 text-center">
@@ -207,7 +207,7 @@ $pageTitle = "The Vault - Master Archives";
                         </div>
                     </div>
                 </div>
-            </div>
+            </wa-card>
         </div>
     </div>
 

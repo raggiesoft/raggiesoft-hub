@@ -34,8 +34,8 @@ $pageTitle = "Elise & Elodie Pelletier - Crimson Node";
         </a>
 
             <!-- Elodie's Card (Left Side) -->
-            <div class="card border-0 shadow-sm mb-4" style="border-top: 5px solid var(--bs-primary);">
-                <div class="card-body bg-body-tertiary">
+            <wa-card class="card border-0 shadow-sm mb-4 w-100" style="border-top: 5px solid var(--bs-primary); --body-padding: 0; --header-padding: 0;">
+                <div class="card-body bg-body-tertiary p-4">
                     <h5 class="fw-bold mb-3 text-uppercase border-bottom pb-2">Elodie Pelletier (Left Side)</h5>
                     <ul class="list-unstyled mb-0 small" style="line-height: 1.8;">
                         <li><strong>Compound Role:</strong> The Husky Diplomat</li>
@@ -43,11 +43,11 @@ $pageTitle = "Elise & Elodie Pelletier - Crimson Node";
                         <li><strong>Tactical Specialty:</strong> Cross-species debates</li>
                     </ul>
                 </div>
-            </div>
+            </wa-card>
 
             <!-- Elise's Card (Right Side) -->
-            <div class="card border-0 shadow-sm mb-4" style="border-top: 5px solid var(--bs-info);">
-                <div class="card-body bg-body-tertiary">
+            <wa-card class="card border-0 shadow-sm mb-4 w-100" style="border-top: 5px solid var(--bs-info); --body-padding: 0; --header-padding: 0;">
+                <div class="card-body bg-body-tertiary p-4">
                     <h5 class="fw-bold mb-3 text-uppercase border-bottom pb-2">Elise Pelletier (Right Side)</h5>
                     <ul class="list-unstyled mb-0 small" style="line-height: 1.8;">
                         <li><strong>Compound Role:</strong> The Safe Variable</li>
@@ -55,11 +55,11 @@ $pageTitle = "Elise & Elodie Pelletier - Crimson Node";
                         <li><strong>Tactical Specialty:</strong> Holding space without pity</li>
                     </ul>
                 </div>
-            </div>
+            </wa-card>
 
             <!-- Anatomical Reality Card -->
-            <div class="card border-0 shadow-sm" style="border-top: 5px solid var(--bs-secondary);">
-                <div class="card-body bg-body-tertiary">
+            <wa-card class="card border-0 shadow-sm w-100" style="border-top: 5px solid var(--bs-secondary); --body-padding: 0; --header-padding: 0;">
+                <div class="card-body bg-body-tertiary p-4">
                     <h5 class="fw-bold mb-3 text-uppercase border-bottom pb-2">Anatomical Reality</h5>
                     <ul class="list-unstyled mb-0 small" style="line-height: 1.8;">
                         <li><strong>Classification:</strong> Parapagus Tetrapus</li>
@@ -68,7 +68,7 @@ $pageTitle = "Elise & Elodie Pelletier - Crimson Node";
                         <li><strong>The Denim Dilemma:</strong> Requires custom tailoring to reconstruct for four legs</li>
                     </ul>
                 </div>
-            </div>
+            </wa-card>
         </div>
 
         <!-- INLINE: Main biography sections detailing their shared lore and integration -->

@@ -1,7 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://raggiesoft.com/oconnell-trust</loc>
+  </url>
+  <url>
     <loc>https://raggiesoft.com/oconnell-trust/structure</loc>
+  </url>
+  <url>
+    <loc>https://raggiesoft.com/raggiesoft-games/pathfinder-west/strategy-guide/golden-ending/hail-mary</loc>
+  </url>
+  <url>
+    <loc>https://raggiesoft.com/raggiesoft-games/pathfinder-west/strategy-guide/golden-ending/hail-mary/chapter-01</loc>
+  </url>
+  <url>
+    <loc>https://raggiesoft.com/raggiesoft-games/pathfinder-west/strategy-guide/golden-ending/hail-mary/chapter-02</loc>
   </url>
   <url>
     <loc>https://raggiesoft.com/raggiesoft-media</loc>
@@ -20,6 +32,12 @@
   </url>
   <url>
     <loc>https://raggiesoft.com/raggiesoft-media/projects/stardust-engine-cms</loc>
+  </url>
+  <url>
+    <loc>https://raggiesoft.com/raggiesoft-media/projects/storetrainer</loc>
+  </url>
+  <url>
+    <loc>https://raggiesoft.com/products/storetrainer</loc>
   </url>
   <url>
     <loc>https://raggiesoft.com/family</loc>
@@ -56,6 +74,9 @@
   </url>
   <url>
     <loc>https://raggiesoft.com/encyclopedia/view</loc>
+  </url>
+  <url>
+    <loc>https://raggiesoft.com/raggiesoft-books/character-profile</loc>
   </url>
   <url>
     <loc>https://raggiesoft.com/raggiesoft-books/books/jessica</loc>
@@ -16351,6 +16372,9 @@
     <loc>https://raggiesoft.com/raggiesoft-books/aethel-saga</loc>
   </url>
   <url>
+    <loc>https://raggiesoft.com/raggiesoft-books/aethel-saga/lore</loc>
+  </url>
+  <url>
     <loc>https://raggiesoft.com/raggiesoft-books/aethel-saga/lore/characters</loc>
   </url>
   <url>
@@ -16358,6 +16382,9 @@
   </url>
   <url>
     <loc>https://raggiesoft.com/raggiesoft-books/aethel-saga/soundtrack</loc>
+  </url>
+  <url>
+    <loc>https://raggiesoft.com/raggiesoft-books/aethel-saga/lore/soundtrack/the-tyrants-throne</loc>
   </url>
   <url>
     <loc>https://raggiesoft.com/raggiesoft-books</loc>
@@ -16372,16 +16399,34 @@
     <loc>https://raggiesoft.com/raggiesoft-books/image-library</loc>
   </url>
   <url>
-    <loc>https://raggiesoft.com/raggiesoft-books/search</loc>
+    <loc>https://raggiesoft.com/raggiesoft-books/encyclopedia/sensory-scale</loc>
   </url>
   <url>
-    <loc>https://raggiesoft.com/raggiesoft-books/knox/chapters</loc>
+    <loc>https://raggiesoft.com/raggiesoft-books/sensory-scale</loc>
+  </url>
+  <url>
+    <loc>https://raggiesoft.com/raggiesoft-books/encyclopedia/bus-systems/cvta/routes/southside/route-85</loc>
+  </url>
+  <url>
+    <loc>https://raggiesoft.com/raggiesoft-books/route-85</loc>
+  </url>
+  <url>
+    <loc>https://raggiesoft.com/raggiesoft-books/encyclopedia/characters/jessica-ragsdale</loc>
+  </url>
+  <url>
+    <loc>https://raggiesoft.com/raggiesoft-books/jessica-ragsdale</loc>
+  </url>
+  <url>
+    <loc>https://raggiesoft.com/raggiesoft-books/sarah</loc>
+  </url>
+  <url>
+    <loc>https://raggiesoft.com/raggiesoft-books/search</loc>
   </url>
   <url>
     <loc>https://raggiesoft.com/raggiesoft-books/knox/lore</loc>
   </url>
   <url>
-    <loc>https://raggiesoft.com/raggiesoft-books/knox/characters</loc>
+    <loc>https://raggiesoft.com/raggiesoft-books/knox/lore/toys</loc>
   </url>
   <url>
     <loc>https://raggiesoft.com/raggiesoft-books/books/kelly/b001/c001/p001</loc>
@@ -16594,10 +16639,19 @@
     <loc>https://raggiesoft.com/case-studies/shenandoah-valley</loc>
   </url>
   <url>
-    <loc>https://raggiesoft.com/engine-room/jessica-miller-center</loc>
+    <loc>https://raggiesoft.com/case-studies/phys-100-report</loc>
   </url>
   <url>
     <loc>https://raggiesoft.com/engine-room/corporate/jessica-miller-center</loc>
+  </url>
+  <url>
+    <loc>https://raggiesoft.com/engine-room/corporate/jessica-miller-center/the-quiet-floor</loc>
+  </url>
+  <url>
+    <loc>https://raggiesoft.com/engine-room/corporate/jessica-miller-center/destination-dispatch-elevators</loc>
+  </url>
+  <url>
+    <loc>https://raggiesoft.com/engine-room/jessica-miller-center</loc>
   </url>
   <url>
     <loc>https://raggiesoft.com/engine-room/jessica-miller-center/the-quiet-floor</loc>
@@ -16663,13 +16717,70 @@
     <loc>https://raggiesoft.com/engine-room/corporate/security/sensory-scale</loc>
   </url>
   <url>
-    <loc>https://raggiesoft.com/stardust-blacksburg</loc>
-  </url>
-  <url>
     <loc>https://raggiesoft.com/engine-room/corporate/stardust-blacksburg</loc>
   </url>
   <url>
+    <loc>https://raggiesoft.com/engine-room/corporate/stardust-blacksburg/amenities</loc>
+  </url>
+  <url>
+    <loc>https://raggiesoft.com/engine-room/corporate/stardust-blacksburg/leasing</loc>
+  </url>
+  <url>
+    <loc>https://raggiesoft.com/engine-room/corporate/stardust-blacksburg/location</loc>
+  </url>
+  <url>
+    <loc>https://raggiesoft.com/engine-room/corporate/stardust-blacksburg/documents/welcome-letter</loc>
+  </url>
+  <url>
+    <loc>https://raggiesoft.com/engine-room/corporate/stardust-blacksburg/documents/accessibility</loc>
+  </url>
+  <url>
+    <loc>https://raggiesoft.com/engine-room/corporate/stardust-blacksburg/documents/apartment-amenities</loc>
+  </url>
+  <url>
+    <loc>https://raggiesoft.com/engine-room/corporate/stardust-blacksburg/documents/furniture-philosophy</loc>
+  </url>
+  <url>
+    <loc>https://raggiesoft.com/engine-room/corporate/stardust-blacksburg/documents/policies</loc>
+  </url>
+  <url>
+    <loc>https://raggiesoft.com/engine-room/corporate/stardust-blacksburg/documents/competitor-analysis</loc>
+  </url>
+  <url>
+    <loc>https://raggiesoft.com/stardust-blacksburg</loc>
+  </url>
+  <url>
+    <loc>https://raggiesoft.com/stardust-blacksburg/amenities</loc>
+  </url>
+  <url>
+    <loc>https://raggiesoft.com/stardust-blacksburg/leasing</loc>
+  </url>
+  <url>
+    <loc>https://raggiesoft.com/stardust-blacksburg/location</loc>
+  </url>
+  <url>
+    <loc>https://raggiesoft.com/stardust-blacksburg/documents/welcome-letter</loc>
+  </url>
+  <url>
+    <loc>https://raggiesoft.com/stardust-blacksburg/documents/accessibility</loc>
+  </url>
+  <url>
+    <loc>https://raggiesoft.com/stardust-blacksburg/documents/apartment-amenities</loc>
+  </url>
+  <url>
+    <loc>https://raggiesoft.com/stardust-blacksburg/documents/furniture-philosophy</loc>
+  </url>
+  <url>
+    <loc>https://raggiesoft.com/stardust-blacksburg/documents/policies</loc>
+  </url>
+  <url>
+    <loc>https://raggiesoft.com/stardust-blacksburg/documents/competitor-analysis</loc>
+  </url>
+  <url>
     <loc>https://raggiesoft.com/engine-room</loc>
+  </url>
+  <url>
+    <loc>https://raggiesoft.com/engine-room/about</loc>
   </url>
   <url>
     <loc>https://raggiesoft.com/engine-room/artists</loc>
@@ -16708,13 +16819,25 @@
     <loc>https://raggiesoft.com/engine-room/artists/fractured-prisms/lore/colonial-theatre</loc>
   </url>
   <url>
+    <loc>https://raggiesoft.com/engine-room/artists/fractured-prisms/colonial-theatre</loc>
+  </url>
+  <url>
     <loc>https://raggiesoft.com/engine-room/artists/fractured-prisms/band</loc>
+  </url>
+  <url>
+    <loc>https://raggiesoft.com/engine-room/artists/fractured-prisms/band/claire-manning</loc>
+  </url>
+  <url>
+    <loc>https://raggiesoft.com/engine-room/artists/fractured-prisms/band/rhys-manning</loc>
   </url>
   <url>
     <loc>https://raggiesoft.com/engine-room/artists/fractured-prisms/story</loc>
   </url>
   <url>
-    <loc>https://raggiesoft.com/engine-room/artists/fractured-prisms/band/the-missing-four</loc>
+    <loc>https://raggiesoft.com/engine-room/artists/fractured-prisms/story/the-hollow-square</loc>
+  </url>
+  <url>
+    <loc>https://raggiesoft.com/engine-room/artists/fractured-prisms/story/1985-american-shores-tour</loc>
   </url>
   <url>
     <loc>https://raggiesoft.com/engine-room/artists/crimson-node/discography</loc>
@@ -16754,6 +16877,12 @@
   </url>
   <url>
     <loc>https://raggiesoft.com/engine-room/artists/crimson-node/characters/family/the-pelletier-twins</loc>
+  </url>
+  <url>
+    <loc>https://raggiesoft.com/engine-room/artists/crimson-node/characters/family/elise-pelletier</loc>
+  </url>
+  <url>
+    <loc>https://raggiesoft.com/engine-room/artists/crimson-node/characters/family/elodie-pelletier</loc>
   </url>
   <url>
     <loc>https://raggiesoft.com/engine-room/artists/crimson-node/characters/ccc/heather-bouchard</loc>
@@ -16802,6 +16931,15 @@
   </url>
   <url>
     <loc>https://raggiesoft.com/engine-room/artists/stardust-engine</loc>
+  </url>
+  <url>
+    <loc>https://raggiesoft.com/engine-room/artists/stardust-engine/about</loc>
+  </url>
+  <url>
+    <loc>https://raggiesoft.com/engine-room/artists/stardust-engine/contact</loc>
+  </url>
+  <url>
+    <loc>https://raggiesoft.com/engine-room/artists/stardust-engine/license</loc>
   </url>
   <url>
     <loc>https://raggiesoft.com/engine-room/artists/stardust-engine/band</loc>
@@ -16876,7 +17014,16 @@
     <loc>https://raggiesoft.com/engine-room/artists/stardust-engine/story/nine-figure-refusal/zenith-report/omni-global-chapter-11</loc>
   </url>
   <url>
+    <loc>https://raggiesoft.com/engine-room/artists/stardust-engine/story/nine-figure-refusal/chapter-7-conversion-order</loc>
+  </url>
+  <url>
     <loc>https://raggiesoft.com/engine-room/artists/stardust-engine/story/nine-figure-refusal/liquidation-auction</loc>
+  </url>
+  <url>
+    <loc>https://raggiesoft.com/engine-room/artists/stardust-engine/story/nine-figure-refusal/sun-ray-catalog-transfer</loc>
+  </url>
+  <url>
+    <loc>https://raggiesoft.com/engine-room/artists/stardust-engine/story/nine-figure-refusal/staff-retention</loc>
   </url>
   <url>
     <loc>https://raggiesoft.com/engine-room/artists/stardust-engine/story/nine-figure-refusal/zenith-report/stardust-bus-ride</loc>
@@ -16892,6 +17039,9 @@
   </url>
   <url>
     <loc>https://raggiesoft.com/engine-room/artists/stardust-engine/story/cosmic-tidal-lock-sound</loc>
+  </url>
+  <url>
+    <loc>https://raggiesoft.com/engine-room/artists/stardust-engine/cosmic-tidal-lock-sound</loc>
   </url>
   <url>
     <loc>https://raggiesoft.com/engine-room/artists/stardust-engine/story/cpi</loc>
@@ -16912,6 +17062,30 @@
     <loc>https://raggiesoft.com/engine-room/artists/stardust-engine/story</loc>
   </url>
   <url>
+    <loc>https://raggiesoft.com/engine-room/artists/stardust-engine/story/analogue-heart/the-noise-floor</loc>
+  </url>
+  <url>
+    <loc>https://raggiesoft.com/engine-room/artists/stardust-engine/story/hard-reset/the-album/the-1399-war</loc>
+  </url>
+  <url>
+    <loc>https://raggiesoft.com/engine-room/artists/stardust-engine/story/the-1399-war</loc>
+  </url>
+  <url>
+    <loc>https://raggiesoft.com/engine-room/artists/stardust-engine/story/hard-reset/hard-reset-tour/london-discovery</loc>
+  </url>
+  <url>
+    <loc>https://raggiesoft.com/engine-room/artists/stardust-engine/story/hard-reset-tour/london-discovery</loc>
+  </url>
+  <url>
+    <loc>https://raggiesoft.com/engine-room/history/london-discovery</loc>
+  </url>
+  <url>
+    <loc>https://raggiesoft.com/engine-room/artists/stardust-engine/story/hard-reset/hard-reset-tour/paternoster-incident</loc>
+  </url>
+  <url>
+    <loc>https://raggiesoft.com/engine-room/artists/stardust-engine/story/hard-reset-tour/paternoster-incident</loc>
+  </url>
+  <url>
     <loc>https://raggiesoft.com/engine-room/artists/stardust-engine/story/2015-delaware-migration</loc>
   </url>
   <url>
@@ -16925,6 +17099,9 @@
   </url>
   <url>
     <loc>https://raggiesoft.com/engine-room/artists/stardust-engine/story/crash-of-90</loc>
+  </url>
+  <url>
+    <loc>https://raggiesoft.com/engine-room/artists/stardust-engine/story/crash-of-1990</loc>
   </url>
   <url>
     <loc>https://raggiesoft.com/engine-room/artists/stardust-engine/story/ad-astra</loc>
@@ -16973,5 +17150,11 @@
   </url>
   <url>
     <loc>https://raggiesoft.com/apps/cipher</loc>
+  </url>
+  <url>
+    <loc>https://raggiesoft.com/apps/cipher/history</loc>
+  </url>
+  <url>
+    <loc>https://raggiesoft.com/apps/cipher/rules</loc>
   </url>
 </urlset>

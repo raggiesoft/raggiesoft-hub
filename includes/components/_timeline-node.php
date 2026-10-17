@@ -41,15 +41,15 @@ $reverseClass = !empty($props['reverse']) ? 'flex-lg-row-reverse' : '';
 $cardBgClass = 'bg-body-tertiary';
 $contentClass = 'text-body-secondary';
 
-// 2. WCAG Button Contrast Logic
-// Automatically shifts button styles to pass AA contrast ratios (4.5:1) based on the card background.
-$btnClass = 'btn-outline-' . $color;
+// 2. Map Bootstrap color to Web Awesome 3.13.0 variant
+$waVariant = 'neutral';
+if (in_array($color, ['primary', 'info', 'brand'])) $waVariant = 'brand';
+elseif ($color === 'success') $waVariant = 'success';
+elseif ($color === 'warning') $waVariant = 'warning';
+elseif ($color === 'danger') $waVariant = 'danger';
 
 // On tertiary (adapting) backgrounds, 'warning' and 'info' outlines fail WCAG on light mode.
-// Swapping them to solid buttons ensures Web Awesome Pro automatically applies the correct contrast text color.
-if ($color === 'warning' || $color === 'info') {
-    $btnClass = 'btn-' . $color; 
-}
+$waAppearance = ($color === 'warning' || $color === 'info') ? 'accent' : 'outlined';
 ?>
 
 <div class="timeline-node mb-5 position-relative">
@@ -65,8 +65,8 @@ if ($color === 'warning' || $color === 'info') {
     </p>
 
     <!-- The Card -->
-    <div class="card border-secondary <?php echo $cardBgClass; ?> shadow-sm">
-        <div class="card-body p-4 p-md-5">
+    <wa-card class="border-secondary <?php echo $cardBgClass; ?> shadow-sm w-100">
+        <div class="p-3 p-md-4">
             <div class="row align-items-center <?php echo $reverseClass; ?>">
                 
                 <!-- Visual Anchor (Image or Icon) -->
@@ -85,13 +85,13 @@ if ($color === 'warning' || $color === 'info') {
                     </div>
                     
                     <?php if (!empty($props['btnUrl'])): ?>
-                    <a href="<?php echo htmlspecialchars($props['btnUrl']); ?>" class="btn <?php echo $btnClass; ?> btn-sm text-uppercase fw-bold font-monospace mt-4">
-                        <i class="<?php echo htmlspecialchars($props['btnIcon']); ?> me-2" aria-hidden="true"></i><?php echo htmlspecialchars($props['btnText']); ?>
-                    </a>
+                    <wa-button href="<?php echo htmlspecialchars($props['btnUrl']); ?>" variant="<?php echo $waVariant; ?>" appearance="<?php echo $waAppearance; ?>" size="small" class="text-uppercase fw-bold font-monospace mt-4">
+                        <i slot="start" class="<?php echo htmlspecialchars($props['btnIcon']); ?>" aria-hidden="true"></i><?php echo htmlspecialchars($props['btnText']); ?>
+                    </wa-button>
                     <?php endif; ?>
                 </div>
 
             </div>
         </div>
-    </div>
+    </wa-card>
 </div>

@@ -65,11 +65,11 @@ $seriesTitle = $katie['series_title'] ?? 'Series Overview';
                         $bookTitle = $book['book_title'] ?? 'Book ' . ($bIndex + 1); 
                         $chapters = $book['chapters'] ?? [];
                     ?>
-                    <div class="card bg-body-tertiary border-0 shadow-sm mb-4">
+                    <wa-card class="card bg-body-tertiary border-0 shadow-sm mb-4 w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
                         <div class="card-header bg-transparent border-bottom-0 pt-4 pb-0">
                             <h3 class="h4 fw-bold text-body-emphasis mb-0"><?php echo htmlspecialchars(html_entity_decode($bookTitle, ENT_QUOTES, 'UTF-8')); ?></h3>
                         </div>
-                        <div class="card-body">
+                        <div class="card-body p-4">
                             <div class="list-group list-group-flush bg-transparent">
                                 <?php foreach ($chapters as $cIndex => $chapter): ?>
                                     <?php 
@@ -98,7 +98,7 @@ $seriesTitle = $katie['series_title'] ?? 'Series Overview';
                                 <?php endforeach; ?>
                             </div>
                         </div>
-                    </div>
+                    </wa-card>
                 <?php endforeach; ?>
             <?php else: ?>
                 <div class="text-center py-5">

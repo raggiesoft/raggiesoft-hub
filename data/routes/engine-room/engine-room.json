@@ -21,6 +21,11 @@
     "ogDescription": "The official home of Engine Room Records. An independent music label forging loud, raw, and real audio. Discover our artists, catalog, and latest releases.",
     "showSidebar": false
   },
+  "/engine-room/about": {
+    "view": "pages/engine-room/about",
+    "title": "About Engine Room Records | Independent Label & Mission",
+    "ogDescription": "Learn how Engine Room Records was founded in Blacksburg, Virginia in 1992 to guarantee 100% master ownership and barrier-free sanctuary for artists."
+  },
   "/engine-room/artists": {
     "sidebar": "engine-room/artists/sidebar-artists",
     "view": "pages/engine-room/artists/overview",

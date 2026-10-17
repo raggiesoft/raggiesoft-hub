@@ -52,11 +52,11 @@ $customPageAssets = [
     <div class="row g-5 mb-5">
         
         <div class="col-lg-6">
-            <div class="card glass-card h-100 border-secondary">
+            <wa-card class="card glass-card h-100 border-secondary w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
                 <div class="card-header bg-transparent border-secondary text-warning fw-bold text-uppercase py-3">
                     <i class="fa-duotone fa-planet-ringed me-2"></i> Layer 1: The Universe
                 </div>
-                <div class="card-body text-light">
+                <div class="card-body text-light p-4">
                     <h3 class="h4 text-light mb-3" style="font-family: 'Audiowide', cursive;">In-Universe Archive</h3>
                     <p>
                         You are currently viewing the official data archive of <strong>The Stardust Engine</strong>, a synth-rock band originating from the Class of '89 at CPI.
@@ -64,19 +64,19 @@ $customPageAssets = [
                     <p>
                         The narrative follows their struggle against the corporate monolith <strong>Apex Records</strong>, their retreat to the "Fortress," and their eventual broadcast from <strong>Port Telsus</strong>, a space station orbiting Telsus Minor.
                     </p>
-                    <a href="/engine-room/artists/stardust-engine/band/" class="btn btn-sm btn-outline-warning mt-2">
-                        <i class="fa-duotone fa-book-open me-2"></i>Read the History
-                    </a>
+                    <wa-button variant="warning" appearance="outlined" size="small" href="/engine-room/artists/stardust-engine/band/" class="mt-2">
+                        <i slot="start" class="fa-duotone fa-book-open"></i>Read the History
+                    </wa-button>
                 </div>
-            </div>
+            </wa-card>
         </div>
 
         <div class="col-lg-6">
-            <div class="card glass-card h-100 border-info shadow-glow">
+            <wa-card class="card glass-card h-100 border-info shadow-glow w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
                 <div class="card-header bg-transparent border-info text-info fw-bold text-uppercase py-3">
                     <i class="fa-duotone fa-code-branch me-2"></i> Layer 2: The Project
                 </div>
-                <div class="card-body text-light">
+                <div class="card-body text-light p-4">
                     <h3 class="h4 text-light mb-3" style="font-family: 'Audiowide', cursive;">AI Collaboration</h3>
                     <p>
                         In reality, this entire universe—the music, the art, the code, and the history—was generated in 2025 as a collaboration between a human director and a suite of generative AI tools.
@@ -84,11 +84,11 @@ $customPageAssets = [
                     <p>
                         It serves as a portfolio piece demonstrating how AI can be used not just to generate assets, but to build cohesive, emotionally resonant worlds.
                     </p>
-                    <a href="/engine-room/artists/stardust-engine/contact" class="btn btn-sm btn-outline-info mt-2">
-                        <i class="fa-duotone fa-id-card me-2"></i>Contact the Director
-                    </a>
+                    <wa-button variant="brand" appearance="outlined" size="small" href="/engine-room/artists/stardust-engine/contact" class="mt-2">
+                        <i slot="start" class="fa-duotone fa-id-card"></i>Contact the Director
+                    </wa-button>
                 </div>
-            </div>
+            </wa-card>
         </div>
 
     </div>
@@ -101,55 +101,55 @@ $customPageAssets = [
         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
             
             <div class="col">
-                <div class="card glass-card h-100 text-center p-4 border-info border-opacity-50">
+                <wa-card class="card glass-card h-100 text-center p-4 border-info border-opacity-50 w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
                     <div class="mb-3">
                         <i class="fa-duotone fa-user-astronaut fa-5x text-info"></i>
                     </div>
                     <h4 class="h5 text-light fw-bold">Michael Ragsdale</h4>
-                    <div class="badge bg-info text-dark mb-2">FLIGHT DIRECTOR</div>
+                    <wa-badge variant="brand" appearance="accent" class="mb-2">FLIGHT DIRECTOR</wa-badge>
                     <p class="small mb-0">
                         Concept, Direction, Coding, & Curation. The human element that guides the machine.
                     </p>
-                </div>
+                </wa-card>
             </div>
 
             <div class="col">
-                <div class="card glass-card h-100 text-center p-4 border-secondary">
+                <wa-card class="card glass-card h-100 text-center p-4 border-secondary w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
                     <div class="mb-3">
                         <i class="fa-duotone fa-brain-circuit fa-5x text-primary"></i>
                     </div>
                     <h4 class="h5 text-light fw-bold">Google Gemini</h4>
-                    <div class="badge bg-primary mb-2">NAV & VISUALS</div>
+                    <wa-badge variant="brand" appearance="accent" class="mb-2">NAV & VISUALS</wa-badge>
                     <p class="small mb-0">
                         Lore Generation, Code Assistance, and Historical Photography (via Nano Banana).
                     </p>
-                </div>
+                </wa-card>
             </div>
 
             <div class="col">
-                <div class="card glass-card h-100 text-center p-4 border-secondary">
+                <wa-card class="card glass-card h-100 text-center p-4 border-secondary w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
                     <div class="mb-3">
                         <i class="fa-duotone fa-waveform-lines fa-5x text-warning"></i>
                     </div>
                     <h4 class="h5 text-light fw-bold">Suno AI</h4>
-                    <div class="badge bg-warning text-dark mb-2">ENGINE CORE</div>
+                    <wa-badge variant="warning" appearance="accent" class="mb-2">ENGINE CORE</wa-badge>
                     <p class="small mb-0">
                         Audio Synthesis, Composition, and Vocal Performance.
                     </p>
-                </div>
+                </wa-card>
             </div>
 
             <div class="col">
-                <div class="card glass-card h-100 text-center p-4 border-secondary">
+                <wa-card class="card glass-card h-100 text-center p-4 border-secondary w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
                     <div class="mb-3">
                         <i class="fa-duotone fa-palette fa-5x text-danger"></i>
                     </div>
                     <h4 class="h5 text-light fw-bold">DALL-E 3</h4>
-                    <div class="badge bg-danger mb-2">ART DEPT</div>
+                    <wa-badge variant="danger" appearance="accent" class="mb-2">ART DEPT</wa-badge>
                     <p class="small mb-0">
                         Album Artwork, Conceptual Design, and Atmospheric Visuals.
                     </p>
-                </div>
+                </wa-card>
             </div>
 
         </div>

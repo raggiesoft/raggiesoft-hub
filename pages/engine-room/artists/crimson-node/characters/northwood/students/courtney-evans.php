@@ -38,10 +38,10 @@ $pageTitle = "Courtney Evans - Crimson Node";
                     <h1 class="display-5 fw-bold mb-1" style="font-family: 'Impact', sans-serif; letter-spacing: 1px;">COURTNEY <span class="text-secondary">EVANS</span></h1>
                     <h5 class="text-uppercase text-danger fw-bold mb-2" style="letter-spacing: 2px;">The Ex-Girlfriend</h5>
                     <div class="d-flex flex-wrap gap-2 mb-0">
-                        <span class="badge bg-dark text-white rounded-pill px-3 py-2"><i class="fa-solid fa-cake-candles me-1"></i> July 23, 1981</span>
-                        <span class="badge bg-dark text-white rounded-pill px-3 py-2"><i class="fa-solid fa-ruler-vertical me-1"></i> 5'3"</span>
-                        <span class="badge bg-dark text-white rounded-pill px-3 py-2"><i class="fa-solid fa-school me-1"></i> Northwood High (1999)</span>
-                        <span class="badge border border-danger text-danger bg-transparent rounded-pill px-3 py-2 fw-bold"><i class="fa-solid fa-ban me-1"></i> EXILED</span>
+                        <wa-badge variant="neutral" appearance="accent" pill class="px-3 py-2"><i class="fa-solid fa-cake-candles me-1"></i> July 23, 1981</wa-badge>
+                        <wa-badge variant="neutral" appearance="accent" pill class="px-3 py-2"><i class="fa-solid fa-ruler-vertical me-1"></i> 5'3"</wa-badge>
+                        <wa-badge variant="neutral" appearance="accent" pill class="px-3 py-2"><i class="fa-solid fa-school me-1"></i> Northwood High (1999)</wa-badge>
+                        <wa-badge variant="danger" appearance="outlined" pill class="text-danger px-3 py-2 fw-bold"><i class="fa-solid fa-ban me-1"></i> EXILED</wa-badge>
                     </div>
                 </div>
             </div>
@@ -81,12 +81,12 @@ $pageTitle = "Courtney Evans - Crimson Node";
                 </p>
             </div>
 
-            <div class="alert alert-secondary mt-5 rounded-3 border-0">
+            <wa-callout variant="neutral" appearance="accent" class="mt-5 rounded-3 d-block">
                 <h6 class="alert-heading fw-bold mb-2"><i class="fa-duotone fa-cassette-tape me-2"></i>Lore Notes</h6>
                 <p class="small mb-0">
                     The pop-culture landscape of Courtney's era heavily features <em>The Paradigm</em> (the highly anticipated late-90s cyber-dystopian action movie) and <em>The Final Note</em> (a massive 1997-era historical romance blockbuster, the poster for which hangs prominently above Courtney's beige computer monitor). The communication vector for the betrayal was <em>Omni-Q</em>, the primary desktop instant messaging client used by teenagers in 1999.
                 </p>
-            </div>
+            </wa-callout>
 
         </div>
     </div>

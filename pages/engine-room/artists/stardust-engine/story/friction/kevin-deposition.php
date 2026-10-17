@@ -107,9 +107,9 @@ $pageTitle = "Evidence #94-C: The Mitchell Deposition - The Stardust Engine Lore
 
     <div class="row mb-5">
         <div class="col-lg-8 mx-auto text-center">
-            <span class="badge bg-danger-subtle text-danger-emphasis rounded-pill px-3 py-2 shadow-sm mb-3 border border-danger-subtle text-uppercase letter-spacing-1">
+            <wa-badge variant="danger" appearance="filled-outlined" pill class="text-danger-emphasis px-3 py-2 shadow-sm mb-3 text-uppercase letter-spacing-1">
                 <i class="fa-duotone fa-gavel me-2"></i>Evidence Item #94-C
-            </span>
+            </wa-badge>
             <h1 class="display-4 fw-bold text-uppercase text-body-emphasis mb-0" style="font-family: 'Impact', sans-serif;">
                 The Mitchell Deposition
             </h1>
@@ -252,8 +252,8 @@ $pageTitle = "Evidence #94-C: The Mitchell Deposition - The Stardust Engine Lore
 
             <div class="row mt-5">
                 <div class="col-12">
-                    <div class="alert alert-dark bg-black border-success border-2 shadow-lg d-flex align-items-center p-4">
-                        <i class="fa-duotone fa-flag-checkered fs-1 text-success me-4"></i>
+                    <wa-callout variant="success" appearance="accent" class="shadow-lg p-4 d-block">
+                        <i slot="icon" class="fa-duotone fa-flag-checkered text-success"></i>
                         <div>
                             <h4 class="text-success text-uppercase fw-bold mb-2">The Fallout</h4>
                             <p class="text-white-75 small mb-0">
@@ -262,7 +262,7 @@ $pageTitle = "Evidence #94-C: The Mitchell Deposition - The Stardust Engine Lore
                                 They voided the contract, surrendered the master tapes, and paid an undisclosed sum in punitive damages just to keep Kevin Mitchell off the witness stand. The band was free, and Holly O'Connell used the settlement money to found Engine Room Records.
                             </p>
                         </div>
-                    </div>
+                    </wa-callout>
                 </div>
             </div>
 

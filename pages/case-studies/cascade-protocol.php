@@ -33,11 +33,11 @@ $pageTitle = "Case Study: The Cascade Protocol";
     <div class="fs-5">
         
         <!-- ARCHITECTURE: Incident Report UI mimicking an operational system failure log -->
-        <div class="card border-danger mb-4 shadow-sm">
-            <div class="card-header border-danger bg-danger bg-opacity-10 fw-bold text-uppercase text-danger">
+        <wa-card class="card border-danger mb-4 shadow-sm w-100" style="--body-padding: 0; --header-padding: 0;">
+            <div class="card-header border-danger bg-danger bg-opacity-10 fw-bold text-uppercase text-danger p-3">
                 <i class="fa-duotone fa-file-waveform me-2"></i>Incident Report
             </div>
-            <div class="card-body">
+            <div class="card-body p-4">
                 <div class="row">
                     <div class="col-md-6 mb-3 mb-md-0">
                         <ul class="list-unstyled mb-0">
@@ -73,7 +73,7 @@ $pageTitle = "Case Study: The Cascade Protocol";
                     </div>
                 </div>
             </div>
-        </div>
+        </wa-card>
 
         <p class="lead mb-4">
             A breakdown of a <strong>Catastrophic Sensory Failure</strong> and the manual override protocols executed to restore system stability.
@@ -85,11 +85,11 @@ $pageTitle = "Case Study: The Cascade Protocol";
         <p>
             At <strong>16:30 PST</strong>, the subject (Michael) was moved into the primary recovery zone (Room 412). The environment was presumed secure. However, a localized vulnerability—an open window curtain—allowed for the ingestion of <strong>Malicious Data</strong>.
         </p>
-        <div class="alert alert-light border-secondary border-start border-4">
+        <wa-callout variant="neutral" appearance="accent" class="d-block">
             <p class="mb-0 small fst-italic text-body-secondary">
                 "Directly across Stewart Street... a massive silver bus was idling. The logo on the side was unmistakable: Pathfinder... The 'Overwrite Protocol' failed. The 'Good Data' from the aquarium vanished instantly."
             </p>
-        </div>
+        </wa-callout>
         <p>
             This visual input acted as a <strong>Rootkit Exploit</strong>, bypassing logical defenses and triggering an immediate, involuntary hardware response (The Scream). The subject's operating system (Cognitive Control) crashed, reverting to kernel-level panic protocols.
         </p>
@@ -103,24 +103,24 @@ $pageTitle = "Case Study: The Cascade Protocol";
         <div class="row g-4 mb-4">
             <!-- ARCHITECTURE: Mapping interpersonal support to technical redundancies -->
             <div class="col-md-6">
-                <div class="card h-100 border-0 bg-body-tertiary">
-                    <div class="card-body">
+                <wa-card class="card h-100 border-0 bg-body-tertiary w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
+                    <div class="card-body p-4">
                         <h5 class="fw-bold text-info"><i class="fa-duotone fa-anchor me-2"></i>The Ground Wire (Paige)</h5>
                         <p class="card-text small">
                             Paige applied <strong>Deep Pressure Therapy</strong>, acting as a physical "ground" for the electrical storm in the subject's nervous system. By maximizing surface area contact, she provided a static reference point for the crashing sensors.
                         </p>
                     </div>
-                </div>
+                </wa-card>
             </div>
             <div class="col-md-6">
-                <div class="card h-100 border-0 bg-body-tertiary">
-                    <div class="card-body">
+                <wa-card class="card h-100 border-0 bg-body-tertiary w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
+                    <div class="card-body p-4">
                         <h5 class="fw-bold text-success"><i class="fa-duotone fa-shield-halved me-2"></i>The Firewall (Jessica)</h5>
                         <p class="card-text small">
                             Jessica secured the perimeter ("Shield"), managed the environment, and blocked external inputs. She reinforced the "Unit" boundary, declaring the hostile entity (Vanessa/The Bus) "Deleted" from the local network.
                         </p>
                     </div>
-                </div>
+                </wa-card>
             </div>
         </div>
 

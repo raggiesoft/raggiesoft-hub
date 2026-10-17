@@ -39,7 +39,7 @@ $pageTitle = "Lore: The Realms of Aethel";
         <div class="row g-5 mb-5">
             <!-- Sunstead -->
             <div class="col-md-12">
-                <div class="card bg-transparent border-0">
+                <wa-card class="card bg-transparent border-0 w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
                     <div class="card-body p-0">
                         <div class="row">
                             <div class="col-lg-5 mb-4 mb-lg-0">
@@ -57,7 +57,7 @@ $pageTitle = "Lore: The Realms of Aethel";
                             </div>
                         </div>
                     </div>
-                </div>
+                </wa-card>
             </div>
         </div>
 
@@ -66,7 +66,7 @@ $pageTitle = "Lore: The Realms of Aethel";
         <div class="row g-5 mb-5">
             <!-- The Twins' Hut -->
             <div class="col-md-12">
-                <div class="card bg-transparent border border-warning border-opacity-50">
+                <wa-card class="card bg-transparent border border-warning border-opacity-50 w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
                     <div class="card-body p-5">
                         <div class="row align-items-center">
                             <div class="col-lg-7 mb-4 mb-lg-0">
@@ -84,7 +84,7 @@ $pageTitle = "Lore: The Realms of Aethel";
                             </div>
                         </div>
                     </div>
-                </div>
+                </wa-card>
             </div>
         </div>
 

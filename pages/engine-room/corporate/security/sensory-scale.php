@@ -44,12 +44,12 @@ $pageTitle = "Lore: Sensory Distress Protocols - Ironhead Security";
 
     <div class="row justify-content-center mb-4">
         <div class="col-lg-10">
-            <div class="card h-100 border-success-subtle shadow-sm">
+            <wa-card class="card h-100 border-success-subtle shadow-sm w-100" style="--body-padding: 0; --header-padding: 0;">
                 <div class="card-header bg-success-subtle text-success-emphasis border-bottom border-success-subtle py-3 d-flex justify-content-between align-items-center">
                     <h5 class="fw-bold text-uppercase mb-0">
                         <i class="fa-duotone fa-signal-stream me-2"></i>Level 1: The Rumble
                     </h5>
-                    <span class="badge bg-success text-white">Stable / Monitor</span>
+                    <wa-badge variant="success" appearance="accent">Stable / Monitor</wa-badge>
                 </div>
                 <div class="card-body p-4">
                     <div class="row align-items-center">
@@ -70,18 +70,18 @@ $pageTitle = "Lore: Sensory Distress Protocols - Ironhead Security";
                         </div>
                     </div>
                 </div>
-            </div>
+            </wa-card>
         </div>
     </div>
 
     <div class="row justify-content-center mb-4">
         <div class="col-lg-10">
-            <div class="card h-100 border-info-subtle shadow-sm">
+            <wa-card class="card h-100 border-info-subtle shadow-sm w-100" style="--body-padding: 0; --header-padding: 0;">
                 <div class="card-header bg-info-subtle text-info-emphasis border-bottom border-info-subtle py-3 d-flex justify-content-between align-items-center">
                     <h5 class="fw-bold text-uppercase mb-0">
                         <i class="fa-duotone fa-triangle-exclamation me-2"></i>Level 2: The Glitch
                     </h5>
-                    <span class="badge bg-info text-dark">Input Lag</span>
+                    <wa-badge variant="brand" appearance="accent">Input Lag</wa-badge>
                 </div>
                 <div class="card-body p-4">
                     <div class="row align-items-center">
@@ -102,18 +102,18 @@ $pageTitle = "Lore: Sensory Distress Protocols - Ironhead Security";
                         </div>
                     </div>
                 </div>
-            </div>
+            </wa-card>
         </div>
     </div>
 
     <div class="row justify-content-center mb-4">
         <div class="col-lg-10">
-            <div class="card h-100 border-warning-subtle shadow-sm">
+            <wa-card class="card h-100 border-warning-subtle shadow-sm w-100" style="--body-padding: 0; --header-padding: 0;">
                 <div class="card-header bg-warning-subtle text-warning-emphasis border-bottom border-warning-subtle py-3 d-flex justify-content-between align-items-center">
                     <h5 class="fw-bold text-uppercase mb-0">
                         <i class="fa-duotone fa-power-off me-2"></i>Level 3: The Shutdown
                     </h5>
-                    <span class="badge bg-warning text-dark">Safe Mode</span>
+                    <wa-badge variant="warning" appearance="accent">Safe Mode</wa-badge>
                 </div>
                 <div class="card-body p-4">
                     <div class="row align-items-center">
@@ -134,18 +134,18 @@ $pageTitle = "Lore: Sensory Distress Protocols - Ironhead Security";
                         </div>
                     </div>
                 </div>
-            </div>
+            </wa-card>
         </div>
     </div>
 
     <div class="row justify-content-center mb-4">
         <div class="col-lg-10">
-            <div class="card h-100 border-danger-subtle shadow-sm">
+            <wa-card class="card h-100 border-danger-subtle shadow-sm w-100" style="--body-padding: 0; --header-padding: 0;">
                 <div class="card-header bg-danger-subtle text-danger-emphasis border-bottom border-danger-subtle py-3 d-flex justify-content-between align-items-center">
                     <h5 class="fw-bold text-uppercase mb-0">
                         <i class="fa-duotone fa-burst me-2"></i>Level 4: The Meltdown
                     </h5>
-                    <span class="badge bg-danger text-white">System Purge</span>
+                    <wa-badge variant="danger" appearance="accent">System Purge</wa-badge>
                 </div>
                 <div class="card-body p-4">
                     <div class="row align-items-center">
@@ -166,18 +166,18 @@ $pageTitle = "Lore: Sensory Distress Protocols - Ironhead Security";
                         </div>
                     </div>
                 </div>
-            </div>
+            </wa-card>
         </div>
     </div>
 
     <div class="row justify-content-center mb-5">
         <div class="col-lg-10">
-            <div class="card border-danger border-3 shadow-lg overflow-hidden" data-bs-theme="dark">
+            <wa-card class="card border-danger border-3 shadow-lg overflow-hidden w-100" data-bs-theme="dark" style="--body-padding: 0; --header-padding: 0;">
                 <div class="card-header bg-danger text-white py-3 d-flex justify-content-between align-items-center">
                     <h5 class="fw-bold text-uppercase mb-0 text-shadow-black">
                         <i class="fa-duotone fa-radiation me-2"></i>Level 5: The Collapse
                     </h5>
-                    <span class="badge bg-black text-danger border border-danger">CODE CARRY</span>
+                    <wa-badge variant="danger" appearance="outlined" class="text-danger">CODE CARRY</wa-badge>
                 </div>
                 <div class="card-body bg-black p-5 position-relative">
                     
@@ -215,20 +215,20 @@ $pageTitle = "Lore: Sensory Distress Protocols - Ironhead Security";
                                     <strong>Severity:</strong> <span class="text-danger fw-bold">MAXIMUM</span> (Worst Recorded)<br>
                                     <strong>Outcome:</strong> Full extraction via "Ironhead Wall."
                                 </p>
-                                <a href="/engine-room/history/nine-figure-refusal/the-trigger" class="btn btn-outline-danger btn-sm w-100 mt-1">View Incident Report</a>
+                                <wa-button variant="danger" appearance="outlined" size="small" href="/engine-room/history/nine-figure-refusal/the-trigger" class="w-100 mt-1">View Incident Report</wa-button>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
+            </wa-card>
         </div>
     </div>
 
     <div class="row justify-content-center border-top border-secondary-subtle pt-5">
         <div class="col-lg-8 text-center">
-            <a href="/engine-room/artists/stardust-engine/lore" class="btn btn-outline-secondary rounded-pill px-4">
-                <i class="fa-solid fa-book-open me-2"></i>Return to Lore Index
-            </a>
+            <wa-button variant="neutral" appearance="outlined" pill href="/engine-room/artists/stardust-engine/lore" class="px-4">
+                <i slot="start" class="fa-solid fa-book-open"></i>Return to Lore Index
+            </wa-button>
         </div>
     </div>
 

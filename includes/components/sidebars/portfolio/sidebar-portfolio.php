@@ -33,34 +33,34 @@ $root = 'https://michaelpragsdale.com';
 
 <hr class="my-3">
 
-<!-- [UI COMPONENT] Primary Navigation: Standard bootstrap pills for portfolio sections -->
-<nav class="nav flex-column nav-pills small gap-1">
-    <a href="<?php echo $root; ?>" class="nav-link link-body-emphasis">
+<!-- [UI COMPONENT] Primary Navigation: Web Awesome buttons for portfolio sections -->
+<div class="d-flex flex-column gap-1">
+    <wa-button appearance="plain" href="<?php echo $root; ?>" class="text-body w-100 text-start justify-content-start" style="text-align: left;">
         <i slot="start" class="fa-duotone fa-house"></i> Home Lobby
-    </a>
+    </wa-button>
     
-    <a href="<?php echo $root; ?>/profile" class="nav-link link-body-emphasis">
+    <wa-button appearance="plain" href="<?php echo $root; ?>/profile" class="text-body w-100 text-start justify-content-start" style="text-align: left;">
         <i slot="start" class="fa-duotone fa-layer-group"></i> Professional Profile
-    </a>
+    </wa-button>
 
-    <a href="<?php echo $root; ?>/resume" class="nav-link link-body-emphasis">
-        <i slot="start" class="fa-duotone fa-file-user"></i> Resume & Skills
-    </a>
-    <a href="<?php echo $root; ?>/education" class="nav-link link-body-emphasis">
+    <wa-button appearance="plain" href="<?php echo $root; ?>/resume" class="text-body w-100 text-start justify-content-start" style="text-align: left;">
+        <i slot="start" class="fa-duotone fa-file-user"></i> Resume &amp; Skills
+    </wa-button>
+    <wa-button appearance="plain" href="<?php echo $root; ?>/education" class="text-body w-100 text-start justify-content-start" style="text-align: left;">
         <i slot="start" class="fa-duotone fa-graduation-cap"></i> Education
-    </a>
+    </wa-button>
     
-    <a href="/family" class="nav-link link-body-emphasis">
+    <wa-button appearance="plain" href="/family" class="text-body w-100 text-start justify-content-start" style="text-align: left;">
         <i slot="start" class="fa-duotone fa-people-group"></i> The RaggieSoft Family
-    </a>
+    </wa-button>
     
-    <a href="<?php echo $root; ?>/location" class="nav-link link-body-emphasis">
-        <i slot="start" class="fa-duotone fa-map-location-dot"></i> Location & Logistics
-    </a>
-    <a href="<?php echo $root; ?>/contact" class="nav-link link-body-emphasis">
+    <wa-button appearance="plain" href="<?php echo $root; ?>/location" class="text-body w-100 text-start justify-content-start" style="text-align: left;">
+        <i slot="start" class="fa-duotone fa-map-location-dot"></i> Location &amp; Logistics
+    </wa-button>
+    <wa-button appearance="plain" href="<?php echo $root; ?>/contact" class="text-body w-100 text-start justify-content-start" style="text-align: left;">
         <i slot="start" class="fa-duotone fa-clipboard-check"></i> Hiring Inquiries
-    </a>
-</nav>
+    </wa-button>
+</div>
 
 <hr class="my-4">
 
@@ -69,14 +69,14 @@ $root = 'https://michaelpragsdale.com';
   <span>The Engine Room</span>
 </h6>
 
-<nav class="nav flex-column nav-pills small gap-1 mb-4">
-    <a href="/engine-room" class="nav-link link-body-emphasis">
+<div class="d-flex flex-column gap-1 mb-4">
+    <wa-button appearance="plain" href="/engine-room" class="text-body w-100 text-start justify-content-start" style="text-align: left;">
         <i slot="start" class="fa-solid fa-industry"></i> Engine Room HQ
-    </a>
-    <a href="/engine-room/artists/stardust-engine" class="nav-link link-body-emphasis">
+    </wa-button>
+    <wa-button appearance="plain" href="/engine-room/artists/stardust-engine" class="text-body w-100 text-start justify-content-start" style="text-align: left;">
         <i slot="start" class="fa-solid fa-rocket-launch"></i> The Stardust Engine
-    </a>
-</nav>
+    </wa-button>
+</div>
 
 <div class="small text-center  mt-auto pt-3 border-top">
     <p class="mb-1">&copy; <?php echo date("Y"); ?> Michael P. Ragsdale.</p>

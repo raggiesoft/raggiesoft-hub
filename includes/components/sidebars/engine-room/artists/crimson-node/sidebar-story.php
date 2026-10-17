@@ -15,165 +15,38 @@
 // includes/components/sidebars/engine-room/artists/crimson-node/sidebar-story.php
 $request_uri = $_SERVER['REQUEST_URI'] ?? '/';
 ?>
-<div class="list-group list-group-flush border-bottom mb-4">
-    <a href="/engine-room/artists/crimson-node/story" class="list-group-item list-group-item-action <?= ($request_uri == '/engine-room/artists/crimson-node/story') ? 'active' : '' ?>">
+<div class="d-flex flex-column gap-1 border-bottom pb-3 mb-3">
+    <wa-button appearance="<?= ($request_uri == '/raggiesoft-books/books/crimson-node') ? 'filled-outlined' : 'plain' ?>" variant="<?= ($request_uri == '/raggiesoft-books/books/crimson-node') ? 'brand' : 'neutral' ?>" href="/raggiesoft-books/books/crimson-node" class="w-100 text-start justify-content-start" style="text-align: left;">
         <i slot="start" class="fa-duotone fa-book-atlas"></i> Archives Index
-    </a>
-
-    <!-- LEGACY ARTIFACT: This Chapter 5 block was accidentally placed before the Book 1 header during a manual merge. Kept for historical integrity. -->
-    <!-- Chapter 5 -->
-    <a href="/raggiesoft-books/books/crimson-node/book-01/chapter-05" class="list-group-item list-group-item-action fw-bold <?= ($request_uri == '/raggiesoft-books/books/crimson-node/book-01/chapter-05') ? 'active' : '' ?>">
-        Chapter 5: Interlude
-    </a>
-    <?php if ($request_uri == '/raggiesoft-books/books/crimson-node/book-01/chapter-05'): ?>
-        <a href="#part-1" class="list-group-item list-group-item-action ps-4 py-2 border-0 " style="font-size: 0.9em; background-color: rgba(0,0,0,0.02);">
-            <i slot="start" class="fa-solid fa-angle-right"></i> Part 1: The New Hierarchy
-        </a>
-        <a href="#part-2" class="list-group-item list-group-item-action ps-4 py-2 border-0 " style="font-size: 0.9em; background-color: rgba(0,0,0,0.02);">
-            <i slot="start" class="fa-solid fa-angle-right"></i> Part 2: The Empathy Drill
-        </a>
-        <a href="#part-3" class="list-group-item list-group-item-action ps-4 py-2 border-0 " style="font-size: 0.9em; background-color: rgba(0,0,0,0.02);">
-            <i slot="start" class="fa-solid fa-angle-right"></i> Part 3: The Ghost Letter
-        </a>
-        <a href="#part-4" class="list-group-item list-group-item-action ps-4 py-2 border-0 " style="font-size: 0.9em; background-color: rgba(0,0,0,0.02);">
-            <i slot="start" class="fa-solid fa-angle-right"></i> Part 4: The Empty Frame
-        </a>
-        <a href="#part-5" class="list-group-item list-group-item-action ps-4 py-2 border-0 " style="font-size: 0.9em; background-color: rgba(0,0,0,0.02);">
-            <i slot="start" class="fa-solid fa-angle-right"></i> Part 5: The Thunderstorm
-        </a>
-    <?php endif; ?>
+    </wa-button>
 </div>
 
-<h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1  text-uppercase">
+<h6 class="sidebar-heading d-flex justify-content-between align-items-center px-2 mt-3 mb-2 text-uppercase">
     <span>Book 1: The Illusion</span>
 </h6>
-<div class="list-group list-group-flush">
+<div class="d-flex flex-column gap-1">
     <!-- Chapter 1 -->
-    <a href="/engine-room/artists/crimson-node/story/book-1/chapter-01" class="list-group-item list-group-item-action fw-bold <?= ($request_uri == '/engine-room/artists/crimson-node/story/book-1/chapter-01') ? 'active' : '' ?>">
+    <wa-button appearance="<?= str_contains($request_uri, 'chapter-01') ? 'filled-outlined' : 'plain' ?>" variant="<?= str_contains($request_uri, 'chapter-01') ? 'brand' : 'neutral' ?>" href="/raggiesoft-books/books/crimson-node/book-1-the-illusion/chapter-1-the-approach/part-1-anomalies" class="w-100 text-start justify-content-start fw-bold" style="text-align: left;">
         Chapter 1: The Approach
-    </a>
-    <?php if ($request_uri == '/engine-room/artists/crimson-node/story/book-1/chapter-01'): ?>
-        <a href="#part-1" class="list-group-item list-group-item-action ps-4 py-2 border-0 " style="font-size: 0.9em; background-color: rgba(0,0,0,0.02);">
-            <i slot="start" class="fa-solid fa-angle-right"></i> Part 1: Anomalies
-        </a>
-    <?php endif; ?>
+    </wa-button>
 
     <!-- Chapter 2 -->
-    <a href="/engine-room/artists/crimson-node/story/book-1/chapter-02" class="list-group-item list-group-item-action fw-bold <?= ($request_uri == '/engine-room/artists/crimson-node/story/book-1/chapter-02') ? 'active' : '' ?>">
+    <wa-button appearance="<?= str_contains($request_uri, 'chapter-02') ? 'filled-outlined' : 'plain' ?>" variant="<?= str_contains($request_uri, 'chapter-02') ? 'brand' : 'neutral' ?>" href="/raggiesoft-books/books/crimson-node/book-1-the-illusion/chapter-2-the-core-ecosystem/part-1-the-commons" class="w-100 text-start justify-content-start fw-bold" style="text-align: left;">
         Chapter 2: The Core Ecosystem
-    </a>
-    <?php if ($request_uri == '/engine-room/artists/crimson-node/story/book-1/chapter-02'): ?>
-        <a href="#part-1" class="list-group-item list-group-item-action ps-4 py-2 border-0 " style="font-size: 0.9em; background-color: rgba(0,0,0,0.02);">
-            <i slot="start" class="fa-solid fa-angle-right"></i> Part 1: The Commons
-        </a>
-        <a href="#part-2" class="list-group-item list-group-item-action ps-4 py-2 border-0 " style="font-size: 0.9em; background-color: rgba(0,0,0,0.02);">
-            <i slot="start" class="fa-solid fa-angle-right"></i> Part 2: 6th Period Lunch
-        </a>
-        <a href="#part-3" class="list-group-item list-group-item-action ps-4 py-2 border-0 " style="font-size: 0.9em; background-color: rgba(0,0,0,0.02);">
-            <i slot="start" class="fa-solid fa-angle-right"></i> Part 3: The Omni-Q Incident
-        </a>
-        <a href="#part-4" class="list-group-item list-group-item-action ps-4 py-2 border-0 " style="font-size: 0.9em; background-color: rgba(0,0,0,0.02);">
-            <i slot="start" class="fa-solid fa-angle-right"></i> Part 4: The Fallout
-        </a>
-    <?php endif; ?>
+    </wa-button>
 
     <!-- Chapter 3 -->
-    <a href="/engine-room/artists/crimson-node/story/book-1/chapter-03" class="list-group-item list-group-item-action fw-bold <?= ($request_uri == '/engine-room/artists/crimson-node/story/book-1/chapter-03') ? 'active' : '' ?>">
+    <wa-button appearance="<?= str_contains($request_uri, 'chapter-03') ? 'filled-outlined' : 'plain' ?>" variant="<?= str_contains($request_uri, 'chapter-03') ? 'brand' : 'neutral' ?>" href="/raggiesoft-books/books/crimson-node/book-1-the-illusion/chapter-3-the-triple-birthday/part-1-the-morning-routine" class="w-100 text-start justify-content-start fw-bold" style="text-align: left;">
         Chapter 3: The Triple Birthday
-    </a>
-    <?php if ($request_uri == '/engine-room/artists/crimson-node/story/book-1/chapter-03'): ?>
-        <a href="#part-1" class="list-group-item list-group-item-action ps-4 py-2 border-0 " style="font-size: 0.9em; background-color: rgba(0,0,0,0.02);">
-            <i slot="start" class="fa-solid fa-angle-right"></i> Part 1: The Morning Routine
-        </a>
-        <a href="#part-2" class="list-group-item list-group-item-action ps-4 py-2 border-0 " style="font-size: 0.9em; background-color: rgba(0,0,0,0.02);">
-            <i slot="start" class="fa-solid fa-angle-right"></i> Part 2: The Breakfast Spread
-        </a>
-        <a href="#part-3" class="list-group-item list-group-item-action ps-4 py-2 border-0 " style="font-size: 0.9em; background-color: rgba(0,0,0,0.02);">
-            <i slot="start" class="fa-solid fa-angle-right"></i> Part 3: The Stadium Seating
-        </a>
-        <a href="#part-4" class="list-group-item list-group-item-action ps-4 py-2 border-0 " style="font-size: 0.9em; background-color: rgba(0,0,0,0.02);">
-            <i slot="start" class="fa-solid fa-angle-right"></i> Part 4: The Majesty Express
-        </a>
-        <a href="#part-5" class="list-group-item list-group-item-action ps-4 py-2 border-0 " style="font-size: 0.9em; background-color: rgba(0,0,0,0.02);">
-            <i slot="start" class="fa-solid fa-angle-right"></i> Part 5: The Simulation
-        </a>
-        <a href="#part-6" class="list-group-item list-group-item-action ps-4 py-2 border-0 " style="font-size: 0.9em; background-color: rgba(0,0,0,0.02);">
-            <i slot="start" class="fa-solid fa-angle-right"></i> Part 6: Player Two
-        </a>
-        <a href="#part-7" class="list-group-item list-group-item-action ps-4 py-2 border-0 " style="font-size: 0.9em; background-color: rgba(0,0,0,0.02);">
-            <i slot="start" class="fa-solid fa-angle-right"></i> Part 7: The Legal Baseline
-        </a>
-        <a href="#part-8" class="list-group-item list-group-item-action ps-4 py-2 border-0 " style="font-size: 0.9em; background-color: rgba(0,0,0,0.02);">
-            <i slot="start" class="fa-solid fa-angle-right"></i> Part 8: The Triad
-        </a>
-    <?php endif; ?>
+    </wa-button>
 
     <!-- Chapter 4 -->
-    <a href="/engine-room/artists/crimson-node/story/book-1/chapter-04" class="list-group-item list-group-item-action fw-bold <?= ($request_uri == '/engine-room/artists/crimson-node/story/book-1/chapter-04') ? 'active' : '' ?>">
+    <wa-button appearance="<?= str_contains($request_uri, 'chapter-04') ? 'filled-outlined' : 'plain' ?>" variant="<?= str_contains($request_uri, 'chapter-04') ? 'brand' : 'neutral' ?>" href="/raggiesoft-books/books/crimson-node/book-1-the-illusion/chapter-4-the-failed-apology/part-1-the-band-room-hallway" class="w-100 text-start justify-content-start fw-bold" style="text-align: left;">
         Chapter 4: The Failed Apology
-    </a>
-    <?php if ($request_uri == '/engine-room/artists/crimson-node/story/book-1/chapter-04'): ?>
-        <a href="#part-1" class="list-group-item list-group-item-action ps-4 py-2 border-0 " style="font-size: 0.9em; background-color: rgba(0,0,0,0.02);">
-            <i slot="start" class="fa-solid fa-angle-right"></i> Part 1: The Band Room Hallway
-        </a>
-        <a href="#part-2" class="list-group-item list-group-item-action ps-4 py-2 border-0 " style="font-size: 0.9em; background-color: rgba(0,0,0,0.02);">
-            <i slot="start" class="fa-solid fa-angle-right"></i> Part 2: The Principal's Office
-        </a>
-        <a href="#part-3" class="list-group-item list-group-item-action ps-4 py-2 border-0 " style="font-size: 0.9em; background-color: rgba(0,0,0,0.02);">
-            <i slot="start" class="fa-solid fa-angle-right"></i> Part 3: Interlude - The Phone Call
-        </a>
-        <a href="#part-4" class="list-group-item list-group-item-action ps-4 py-2 border-0 " style="font-size: 0.9em; background-color: rgba(0,0,0,0.02);">
-            <i slot="start" class="fa-solid fa-angle-right"></i> Part 4: The Rumor Mill
-        </a>
-        <a href="#part-5" class="list-group-item list-group-item-action ps-4 py-2 border-0 " style="font-size: 0.9em; background-color: rgba(0,0,0,0.02);">
-            <i slot="start" class="fa-solid fa-angle-right"></i> Part 5: The ISS Trailer
-        </a>
-        <a href="#part-6" class="list-group-item list-group-item-action ps-4 py-2 border-0 " style="font-size: 0.9em; background-color: rgba(0,0,0,0.02);">
-            <i slot="start" class="fa-solid fa-angle-right"></i> Part 6: The Charlottesville Plan
-        </a>
-    <?php endif; ?>
+    </wa-button>
 
     <!-- Chapter 5 -->
-    <a href="/raggiesoft-books/books/crimson-node/book-01/chapter-05" class="list-group-item list-group-item-action fw-bold <?= ($request_uri == '/raggiesoft-books/books/crimson-node/book-01/chapter-05') ? 'active' : '' ?>">
+    <wa-button appearance="<?= str_contains($request_uri, 'chapter-05') ? 'filled-outlined' : 'plain' ?>" variant="<?= str_contains($request_uri, 'chapter-05') ? 'brand' : 'neutral' ?>" href="/raggiesoft-books/books/crimson-node/book-1-the-illusion/chapter-5-interlude/part-1-the-new-hierarchy" class="w-100 text-start justify-content-start fw-bold" style="text-align: left;">
         Chapter 5: Interlude
-    </a>
-    <?php if ($request_uri == '/raggiesoft-books/books/crimson-node/book-01/chapter-05'): ?>
-        <a href="#part-1" class="list-group-item list-group-item-action ps-4 py-2 border-0 " style="font-size: 0.9em; background-color: rgba(0,0,0,0.02);">
-            <i slot="start" class="fa-solid fa-angle-right"></i> Part 1: The New Hierarchy
-        </a>
-        <a href="#part-2" class="list-group-item list-group-item-action ps-4 py-2 border-0 " style="font-size: 0.9em; background-color: rgba(0,0,0,0.02);">
-            <i slot="start" class="fa-solid fa-angle-right"></i> Part 2: The Empathy Drill
-        </a>
-        <a href="#part-3" class="list-group-item list-group-item-action ps-4 py-2 border-0 " style="font-size: 0.9em; background-color: rgba(0,0,0,0.02);">
-            <i slot="start" class="fa-solid fa-angle-right"></i> Part 3: The Ghost Letter
-        </a>
-        <a href="#part-4" class="list-group-item list-group-item-action ps-4 py-2 border-0 " style="font-size: 0.9em; background-color: rgba(0,0,0,0.02);">
-            <i slot="start" class="fa-solid fa-angle-right"></i> Part 4: The Empty Frame
-        </a>
-        <a href="#part-5" class="list-group-item list-group-item-action ps-4 py-2 border-0 " style="font-size: 0.9em; background-color: rgba(0,0,0,0.02);">
-            <i slot="start" class="fa-solid fa-angle-right"></i> Part 5: The Thunderstorm
-        </a>
-    <?php endif; ?>
-
-    <!-- Chapter 5 -->
-    <a href="/raggiesoft-books/books/crimson-node/book-01/chapter-05" class="list-group-item list-group-item-action fw-bold <?= ($request_uri == '/raggiesoft-books/books/crimson-node/book-01/chapter-05') ? 'active' : '' ?>">
-        Chapter 5: Interlude
-    </a>
-    <?php if ($request_uri == '/raggiesoft-books/books/crimson-node/book-01/chapter-05'): ?>
-        <a href="#part-1" class="list-group-item list-group-item-action ps-4 py-2 border-0 " style="font-size: 0.9em; background-color: rgba(0,0,0,0.02);">
-            <i slot="start" class="fa-solid fa-angle-right"></i> Part 1: The New Hierarchy
-        </a>
-        <a href="#part-2" class="list-group-item list-group-item-action ps-4 py-2 border-0 " style="font-size: 0.9em; background-color: rgba(0,0,0,0.02);">
-            <i slot="start" class="fa-solid fa-angle-right"></i> Part 2: The Empathy Drill
-        </a>
-        <a href="#part-3" class="list-group-item list-group-item-action ps-4 py-2 border-0 " style="font-size: 0.9em; background-color: rgba(0,0,0,0.02);">
-            <i slot="start" class="fa-solid fa-angle-right"></i> Part 3: The Ghost Letter
-        </a>
-        <a href="#part-4" class="list-group-item list-group-item-action ps-4 py-2 border-0 " style="font-size: 0.9em; background-color: rgba(0,0,0,0.02);">
-            <i slot="start" class="fa-solid fa-angle-right"></i> Part 4: The Empty Frame
-        </a>
-        <a href="#part-5" class="list-group-item list-group-item-action ps-4 py-2 border-0 " style="font-size: 0.9em; background-color: rgba(0,0,0,0.02);">
-            <i slot="start" class="fa-solid fa-angle-right"></i> Part 5: The Thunderstorm
-        </a>
-    <?php endif; ?>
+    </wa-button>
 </div>

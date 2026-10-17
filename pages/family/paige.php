@@ -18,7 +18,7 @@
 // Theme: Paige (Calm, Blue, Python)
 ?>
 <!-- MAIN PROFILE HEADER CARD: Hero image and intro -->
-<div class="card mb-5 border-0 shadow-sm overflow-hidden bg-body-tertiary">
+<wa-card class="card mb-5 border-0 shadow-sm overflow-hidden bg-body-tertiary w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
     <div class="row g-0">
         <div class="col-lg-4 position-relative" style="min-height: 300px;">
             <img src="<?php echo $cdnBaseUrl; ?>/family/images/atmospheric/paige.jpg" 
@@ -31,12 +31,12 @@
         <div class="col-lg-8 d-flex align-items-center">
             <div class="card-body p-4 p-lg-5">
                 <div class="d-flex align-items-center mb-3">
-                    <span class="badge bg-info text-dark me-2">
+                    <wa-badge variant="brand" appearance="accent" class="me-2">
                         <i class="fa-duotone fa-file-code me-2"></i>_workspace/paige.py
-                    </span>
-                    <span class="badge border border-info text-info bg-transparent">
+                    </wa-badge>
+                    <wa-badge variant="brand" appearance="outlined" class="text-info">
                         Python 3.11
-                    </span>
+                    </wa-badge>
                 </div>
                 
                 <h1 class="display-4 fw-bold mb-2 text-body">Paige</h1>
@@ -50,7 +50,7 @@
             </div>
         </div>
     </div>
-</div>
+</wa-card>
 
 <div class="row g-5 mb-5">
     <div class="col-md-12 col-xl-6">
@@ -81,7 +81,7 @@
                 </div>
                 <div class="d-flex justify-content-between">
                     <span class="small text-muted">Neurotype:</span>
-                    <span class="badge bg-info bg-opacity-10 text-info border border-info border-opacity-25">Neurotypical</span>
+                    <wa-badge variant="brand" appearance="filled-outlined" class="text-info">Neurotypical</wa-badge>
                 </div>
             </div>
         </div>
@@ -103,7 +103,7 @@
 
 <div class="row">
     <div class="col-12">
-        <div class="card overflow-hidden shadow-lg border-info mb-4">
+        <wa-card class="card overflow-hidden shadow-lg border-info mb-4 w-100" style="--body-padding: 0; --header-padding: 0;">
             <div class="row g-0">
                 <div class="col-lg-7 position-relative" style="min-height: 400px;">
                     <img src="<?php echo $cdnBaseUrl; ?>/family/images/scenes/paige-deep-pressure-therapy.jpg" 
@@ -114,7 +114,7 @@
                 </div>
                 <div class="col-lg-5 d-flex align-items-center bg-info bg-opacity-10 text-body">
                     <div class="p-5">
-                        <span class="badge bg-info text-dark mb-2">Sensory Regulation</span>
+                        <wa-badge variant="brand" appearance="accent" class="mb-2">Sensory Regulation</wa-badge>
                         <h2 class="fw-bold mb-3">Deep Pressure Therapy</h2>
                         <p class="fs-5 mb-4">"When the noise gets too loud, she holds the world still."</p>
                         <p>For an autistic individual, <strong>Deep Pressure Therapy</strong> (the sensation of firm, heavy weight) is a critical tool for calming a dysregulated nervous system.</p>
@@ -122,6 +122,6 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </wa-card>
     </div>
 </div>

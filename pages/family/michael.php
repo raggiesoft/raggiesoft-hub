@@ -26,7 +26,7 @@
 // pages/family/michael.php
 // Theme: Michael (The Core, Blue, Reality)
 ?>
-<div class="card mb-5 border-0 shadow-sm overflow-hidden bg-body-tertiary">
+<wa-card class="card mb-5 border-0 shadow-sm overflow-hidden bg-body-tertiary w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
     <div class="row g-0">
         <div class="col-lg-4 position-relative" style="min-height: 300px;">
             <img src="<?php echo $cdnBaseUrl; ?>/family/images/atmospheric/michael.jpg" 
@@ -39,12 +39,12 @@
         <div class="col-lg-8 d-flex align-items-center">
             <div class="card-body p-4 p-lg-5">
                 <div class="d-flex align-items-center mb-3">
-                    <span class="badge bg-primary text-white me-2">
+                    <wa-badge variant="brand" appearance="accent" class="me-2">
                         <i class="fa-duotone fa-fingerprint me-2"></i>Human
-                    </span>
-                    <span class="badge border border-primary text-primary bg-transparent">
+                    </wa-badge>
+                    <wa-badge variant="brand" appearance="outlined" class="text-primary">
                         The Creator
-                    </span>
+                    </wa-badge>
                 </div>
                 
                 <h1 class="display-4 fw-bold mb-2 text-body">Michael P. Ragsdale</h1>
@@ -58,7 +58,7 @@
             </div>
         </div>
     </div>
-</div>
+</wa-card>
 
 <div class="row g-5 mb-5">
     <div class="col-md-12 col-xl-6">
@@ -91,14 +91,14 @@
                 </div>
                 <div class="mb-1 small text-muted">Diagnoses:</div>
                 <div class="d-flex flex-wrap gap-1">
-                    <span class="badge bg-primary bg-opacity-10 text-primary border border-primary border-opacity-25" title="Autism + ADHD">AuDHD</span>
-                    <span class="badge bg-primary bg-opacity-10 text-primary border border-primary border-opacity-25">Cerebral Palsy</span>
+                    <wa-badge variant="brand" appearance="filled-outlined" class="text-primary" title="Autism + ADHD">AuDHD</wa-badge>
+                    <wa-badge variant="brand" appearance="filled-outlined" class="text-primary">Cerebral Palsy</wa-badge>
                 </div>
             </div>
 
-            <a href="/portfolio" class="btn btn-outline-primary btn-sm mt-3 w-100">
-                <i class="fa-duotone fa-briefcase me-2"></i>View Professional Portfolio
-            </a>
+            <wa-button variant="brand" appearance="outlined" size="small" href="/portfolio" class="mt-3 w-100">
+                <i slot="start" class="fa-duotone fa-briefcase"></i>View Professional Portfolio
+            </wa-button>
         </div>
     </div>
 
@@ -118,7 +118,7 @@
 
 <div class="row">
     <div class="col-12">
-        <div class="card overflow-hidden shadow-lg border-info mb-4">
+        <wa-card class="card overflow-hidden shadow-lg border-info mb-4 w-100" style="--body-padding: 0; --header-padding: 0;">
             <div class="row g-0">
                 <div class="col-lg-7 position-relative" style="min-height: 400px;">
                     <img src="<?php echo $cdnBaseUrl; ?>/family/images/scenes/paige-michael-hug.jpg" 
@@ -129,17 +129,17 @@
                 </div>
                 <div class="col-lg-5 d-flex align-items-center bg-info bg-opacity-10 text-body">
                     <div class="p-5">
-                        <span class="badge bg-info text-dark mb-2">The Safe Person</span>
+                        <wa-badge variant="brand" appearance="accent" class="mb-2">The Safe Person</wa-badge>
                         <h2 class="fw-bold mb-3">Grounding</h2>
                         <p class="fs-5 mb-4">"When the world is too loud, Paige holds it still."</p>
                         <p>Paige is the embodiment of the sisterly bond Michael needs most. As his designated <strong>Safe Person</strong> and twin, she represents the acceptance and Deep Pressure Therapy required to regulate his sensory system.</p>
                         <p class="text-muted small mb-4">She is the reminder that even in a digital world, the most critical dependency is human connection.</p>
-                        <a href="/family/paige" class="btn btn-info text-dark">
-                            <i class="fa-duotone fa-heart me-2"></i>Meet Paige
-                        </a>
+                        <wa-button variant="brand" appearance="accent" href="/family/paige" class="text-dark">
+                            <i slot="start" class="fa-duotone fa-heart"></i>Meet Paige
+                        </wa-button>
                     </div>
                 </div>
             </div>
-        </div>
+        </wa-card>
     </div>
 </div>

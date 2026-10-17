@@ -84,61 +84,56 @@
 </style>
 
 <!-- [LAYOUT] IP Portfolio Card: Navigation links to specific licensing domains -->
-<div class="card bg-hud-base border-0 shadow-sm mb-4">
-    <div class="card-body p-3 p-xl-4">
-        <h5 class="pb-2 mb-3 border-bottom border-secondary-subtle text-uppercase h6 fw-bold ">
-            <i slot="start" class="fa-solid fa-folder-tree"></i> IP Portfolio
+<wa-card class="bg-hud-base border-0 shadow-sm mb-4 w-100">
+    <div class="p-1 p-xl-2">
+        <h5 class="pb-2 mb-3 border-bottom border-secondary-subtle text-uppercase h6 fw-bold">
+            <i class="fa-solid fa-folder-tree me-2" aria-hidden="true"></i>IP Portfolio
         </h5>
         <div class="d-flex flex-column gap-1">
-            
-                <wa-button appearance="plain" href="/raggiesoft-media/licensing" class="text-body w-100 text-start justify-content-start" style="text-align: left;">
-                    <i slot="start" class="fa-duotone fa-house fa-fw me-2 " aria-hidden="true"></i> Licensing Overview
-                </wa-button>
-            
-            
-                <wa-button appearance="plain" href="/raggiesoft-media/licensing/commercial" class="text-body w-100 text-start justify-content-start" style="text-align: left;">
-                    <i slot="start" class="fa-duotone fa-briefcase fa-fw"></i> Commercial Sync
-                </wa-button>
-            
-            
-                <wa-button appearance="plain" href="/raggiesoft-media/licensing#cc-by-sa" class="text-body w-100 text-start justify-content-start" style="text-align: left;">
-                    <i slot="start" class="fa-brands fa-creative-commons fa-fw"></i> Creative Commons
-                </wa-button>
-            
-            
-                <wa-button appearance="plain" href="/raggiesoft-media/projects/elara" class="text-body w-100 text-start justify-content-start" style="text-align: left;">
-                    <i slot="start" class="fa-brands fa-github fa-fw"></i> MIT Architecture
-                </wa-button>
-            
+            <wa-button appearance="plain" href="/raggiesoft-media/licensing" class="text-body w-100 text-start justify-content-start" style="text-align: left;">
+                <i slot="start" class="fa-duotone fa-house fa-fw" aria-hidden="true"></i> Licensing Overview
+            </wa-button>
+
+            <wa-button appearance="plain" href="/raggiesoft-media/licensing/commercial" class="text-body w-100 text-start justify-content-start" style="text-align: left;">
+                <i slot="start" class="fa-duotone fa-briefcase fa-fw" aria-hidden="true"></i> Commercial Sync
+            </wa-button>
+
+            <wa-button appearance="plain" href="/raggiesoft-media/licensing#cc-by-sa" class="text-body w-100 text-start justify-content-start" style="text-align: left;">
+                <i slot="start" class="fa-brands fa-creative-commons fa-fw" aria-hidden="true"></i> Creative Commons
+            </wa-button>
+
+            <wa-button appearance="plain" href="/raggiesoft-media/projects/stardust-engine-cms" class="text-body w-100 text-start justify-content-start" style="text-align: left;">
+                <i slot="start" class="fa-brands fa-github fa-fw" aria-hidden="true"></i> MIT Architecture
+            </wa-button>
+
+            <wa-button appearance="plain" href="/engine-room/artists/stardust-engine/story/cosmic-tidal-lock-sound" class="text-body w-100 text-start justify-content-start" style="text-align: left;">
+                <i slot="start" class="fa-duotone fa-satellite fa-fw" aria-hidden="true"></i> Tidal Lock Sound&trade;
+            </wa-button>
         </div>
     </div>
-</div>
+</wa-card>
 
 <!-- [LAYOUT] Direct Desks Container: Color-coded email contact blocks -->
-<div class="card border-0 bg-transparent">
-    <div class="card-body p-0 p-xl-2">
+<wa-card appearance="plain" class="border-0 bg-transparent w-100">
+    <div class="p-0 p-xl-1">
         <h6 class="text-uppercase fw-bold text-body-secondary mb-3 small border-bottom border-secondary-subtle pb-2">
-            <i slot="start" class="fa-solid fa-envelope"></i> Direct Desks
+            <i class="fa-solid fa-envelope me-2" aria-hidden="true"></i>Direct Desks
         </h6>
         <div class="d-flex flex-column gap-1">
-            
-                <a class="aero-mail-link link-secondary font-monospace text-break" href="mailto:sync@raggiesoftmedia.com">
-                    <span class="d-block text-primary small fw-bold mb-1">SYNC DESK</span>
-                    sync@raggiesoftmedia.com
-                </a>
-            
-            
-                <a class="aero-mail-link link-secondary font-monospace text-break" href="mailto:licensing@raggiesoftmedia.com">
-                    <span class="d-block text-warning small fw-bold mb-1">RIGHTS DESK</span>
-                    licensing@raggiesoftmedia.com
-                </a>
-            
-            
-                <a class="aero-mail-link link-secondary font-monospace text-break" href="mailto:ops@raggiesoftmedia.com">
-                    <span class="d-block text-info small fw-bold mb-1">INFRASTRUCTURE</span>
-                    ops@raggiesoftmedia.com
-                </a>
-            
+            <a class="aero-mail-link link-secondary font-monospace text-break" href="mailto:sync@raggiesoftmedia.com">
+                <span class="d-block text-primary small fw-bold mb-1">SYNC DESK</span>
+                sync@raggiesoftmedia.com
+            </a>
+
+            <a class="aero-mail-link link-secondary font-monospace text-break" href="mailto:licensing@raggiesoftmedia.com">
+                <span class="d-block text-warning small fw-bold mb-1">RIGHTS DESK</span>
+                licensing@raggiesoftmedia.com
+            </a>
+
+            <a class="aero-mail-link link-secondary font-monospace text-break" href="mailto:ops@raggiesoftmedia.com">
+                <span class="d-block text-info small fw-bold mb-1">INFRASTRUCTURE</span>
+                ops@raggiesoftmedia.com
+            </a>
         </div>
     </div>
-</div>
+</wa-card>

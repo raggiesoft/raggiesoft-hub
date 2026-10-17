@@ -35,9 +35,9 @@ $pageTitle = "The Colonial Theatre | Fractured Prisms Archives";
     <div class="position-absolute top-0 start-0 w-100 h-100 bg-prism-dark" style="opacity: 0.85; z-index: 1;"></div>
     
     <div class="container text-center position-relative" style="z-index: 2;">
-        <span class="badge border border-prism text-primary mb-3 px-3 py-2 text-uppercase font-monospace" style="letter-spacing: 2px;">
+        <wa-badge variant="brand" appearance="accent" class="text-primary mb-3 px-3 py-2 text-uppercase font-monospace" style="letter-spacing: 2px;">
             <i class="fa-duotone fa-ticket me-2" aria-hidden="true"></i>The Sanctuary
-        </span>
+        </wa-badge>
         <h1 class="display-2 text-uppercase text-glow-prism gothic-font" style="letter-spacing: 4px;">
             The Colonial Theatre
         </h1>
@@ -48,8 +48,8 @@ $pageTitle = "The Colonial Theatre | Fractured Prisms Archives";
 </div>
 
 <div class="container mt-4 mb-5">
-    <div class="alert bg-prism-dark border-secondary shadow-sm d-flex align-items-center" role="alert">
-        <i class="fa-duotone fa-map-location-dot fa-3x me-3 text-secondary d-none d-md-block" aria-hidden="true"></i>
+    <wa-callout variant="neutral" appearance="accent" class="shadow-sm d-block">
+        <i slot="icon" class="fa-duotone fa-map-location-dot fa-3x text-secondary d-none d-md-block" aria-hidden="true"></i>
         <div>
             <h4 class="alert-heading h6 fw-bold mb-1 text-uppercase letter-spacing-1 text-body">
                 <i class="fa-duotone fa-map-location-dot me-2 text-secondary d-inline-block d-md-none" aria-hidden="true"></i>Transparency Notice
@@ -58,7 +58,7 @@ $pageTitle = "The Colonial Theatre | Fractured Prisms Archives";
                 <strong>Fictional Location:</strong> The Colonial Theatre, as described within this archive, is a fictional setting existing entirely within the <em>Fractured Prisms</em> narrative universe. While it references the real-world geography of Hagerstown, Maryland, the events, architectural modifications, and subterranean vault described below are works of fiction designed to explore the band's immersive lore.
             </p>
         </div>
-    </div>
+    </wa-callout>
 </div>
 
 <main class="container pb-5">
@@ -96,31 +96,31 @@ $pageTitle = "The Colonial Theatre | Fractured Prisms Archives";
 
         <div class="row g-4">
             <div class="col-md-4">
-                <div class="card h-100 lore-card rounded-0 p-4">
+                <wa-card class="card h-100 lore-card rounded-0 p-4 w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
                     <i class="fa-duotone fa-ramp-loading fa-3x text-secondary mb-3" aria-hidden="true"></i>
                     <h3 class="h5 fw-bold text-primary gothic-font">The Auditorium Slope</h3>
                     <p class="small text-body mb-0">
                         The entire theater floor was ripped out and re-engineered into a gradual, imperceptible slope. All stairs were eradicated, creating flawless, seamless accessibility for public wheelchair users while maintaining the illusion of a traditional tiered theatre.
                     </p>
-                </div>
+                </wa-card>
             </div>
             <div class="col-md-4">
-                <div class="card h-100 lore-card rounded-0 p-4">
+                <wa-card class="card h-100 lore-card rounded-0 p-4 w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
                     <i class="fa-duotone fa-elevator fa-3x text-secondary mb-3" aria-hidden="true"></i>
                     <h3 class="h5 fw-bold text-primary gothic-font">The "Birdcage" Elevator</h3>
                     <p class="small text-body mb-0">
                         Hidden behind the grand lobby staircase is a vintage mahogany and wrought-iron elevator. Secretly powered by state-of-the-art 1984 commercial hydraulics, it utilizes infrared safety sensors and laser-leveled magnetic locking so Claire's wheelchair never catches on a lip.
                     </p>
-                </div>
+                </wa-card>
             </div>
             <div class="col-md-4">
-                <div class="card h-100 lore-card rounded-0 p-4">
+                <wa-card class="card h-100 lore-card rounded-0 p-4 w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
                     <i class="fa-duotone fa-bed fa-3x text-secondary mb-3" aria-hidden="true"></i>
                     <h3 class="h5 fw-bold text-primary gothic-font">The Subterranean Vault</h3>
                     <p class="small text-body mb-0">
                         A lead-insulated, doorless vault built deep in the basement. It features a roll-in wet room, a kitchenette, and a bed built to the exact height of Claire's chair for zero-gravity transfers, allowing the siblings to completely isolate themselves from the outside world.
                     </p>
-                </div>
+                </wa-card>
             </div>
         </div>
     </section>
@@ -133,16 +133,16 @@ $pageTitle = "The Colonial Theatre | Fractured Prisms Archives";
                     The theatre enforces Her Majesty's English and strictly authentic British cuisine. To the locals in Hagerstown, it is the peak of British culture. To Rhys and Claire, it is a brilliant decoy, feeding the obsessive fans' illusion that the band is hiding somewhere in London.
                 </p>
                 
-                <div class="alert alert-danger border-danger bg-transparent rounded-0 d-inline-block text-start">
+                <wa-callout variant="danger" appearance="accent" class="rounded-0 d-inline-block text-start d-block">
                     <h4 class="h6 fw-bold text-uppercase mb-1"><i class="fa-solid fa-triangle-exclamation me-2" aria-hidden="true"></i>Strict Medical Policy</h4>
                     <p class="small mb-0 opacity-75">
                         <strong>NO ALCOHOL IS SERVED ON THESE PREMISES.</strong> Both Resident Directors take specialized medication that, when mixed with alcohol, induces severe respiratory distress. This is a dry venue. No exceptions.
                     </p>
-                </div>
+                </wa-callout>
             </div>
             
             <div class="col-lg-6 offset-lg-1">
-                <div class="card bg-transparent border-secondary">
+                <wa-card class="card bg-transparent border-secondary w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
                     <div class="card-header border-bottom border-secondary bg-transparent py-3">
                         <h3 class="h6 fw-bold text-uppercase text-secondary mb-0 text-center" style="letter-spacing: 2px;">Interval Menu</h3>
                     </div>
@@ -165,15 +165,15 @@ $pageTitle = "The Colonial Theatre | Fractured Prisms Archives";
                             </li>
                         </ul>
                     </div>
-                </div>
+                </wa-card>
             </div>
         </div>
     </section>
 
     <section class="row justify-content-center" aria-labelledby="heading-archivist">
         <div class="col-lg-10">
-            <div class="card bg-transparent border-prism border-start-0 border-end-0 rounded-0 py-4">
-                <div class="card-body">
+            <wa-card class="card bg-transparent border-prism border-start-0 border-end-0 rounded-0 py-4 w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
+                <div class="card-body p-4">
                     <div class="d-flex align-items-center mb-4">
                         <i class="fa-duotone fa-folder-open fs-2 text-primary me-3" aria-hidden="true"></i>
                         <div>
@@ -196,7 +196,7 @@ $pageTitle = "The Colonial Theatre | Fractured Prisms Archives";
                         </p>
                     </div>
                 </div>
-            </div>
+            </wa-card>
         </div>
     </section>
 

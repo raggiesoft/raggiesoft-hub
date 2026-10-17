@@ -38,38 +38,38 @@ $overview = $nav['overview'] ?? ['url' => '/engine-room/history', 'label' => 'Hi
     
     <div class="col-4">
         <?php if ($prev): ?>
-            <a href="<?php echo $prev['url']; ?>" class="btn btn-outline-secondary rounded-pill">
-                <i class="fa-solid fa-arrow-left me-2"></i>
-                <span class="d-none d-md-inline"><?php echo $prev['label']; ?></span>
+            <wa-button href="<?php echo htmlspecialchars($prev['url']); ?>" appearance="outlined" variant="neutral" pill>
+                <i slot="start" class="fa-solid fa-arrow-left"></i>
+                <span class="d-none d-md-inline"><?php echo htmlspecialchars($prev['label']); ?></span>
                 <span class="d-md-none">Back</span>
-            </a>
+            </wa-button>
         <?php else: ?>
-            <span class="btn btn-outline-secondary rounded-pill disabled opacity-0">
-                <i class="fa-solid fa-arrow-left me-2"></i>Placeholder
-            </span>
+            <wa-button appearance="outlined" variant="neutral" pill disabled class="opacity-0">
+                <i slot="start" class="fa-solid fa-arrow-left"></i>Placeholder
+            </wa-button>
         <?php endif; ?>
     </div>
 
     <!-- [UI COMPONENT] Overview Hub Button: Central anchor back to the main directory -->
     <div class="col-4 text-center">
-        <a href="<?php echo $overview['url']; ?>" class="btn btn-outline-primary rounded-pill">
-            <i class="fa-duotone fa-list-tree me-2"></i>
-            <span class="d-none d-md-inline"><?php echo $overview['label']; ?></span>
+        <wa-button href="<?php echo htmlspecialchars($overview['url']); ?>" appearance="outlined" variant="brand" pill>
+            <i slot="start" class="fa-duotone fa-list-tree"></i>
+            <span class="d-none d-md-inline"><?php echo htmlspecialchars($overview['label']); ?></span>
             <span class="d-md-none">Hub</span>
-        </a>
+        </wa-button>
     </div>
 
     <div class="col-4 text-end">
         <?php if ($next): ?>
-            <a href="<?php echo $next['url']; ?>" class="btn btn-primary rounded-pill shadow-sm">
-                <span class="d-none d-md-inline"><?php echo $next['label']; ?></span>
+            <wa-button href="<?php echo htmlspecialchars($next['url']); ?>" appearance="accent" variant="brand" pill class="shadow-sm">
+                <span class="d-none d-md-inline"><?php echo htmlspecialchars($next['label']); ?></span>
                 <span class="d-md-none">Next</span>
-                <i class="fa-solid fa-arrow-right ms-2"></i>
-            </a>
+                <i slot="end" class="fa-solid fa-arrow-right"></i>
+            </wa-button>
         <?php else: ?>
-            <a href="<?php echo $overview['url']; ?>" class="btn btn-outline-light rounded-pill disabled" aria-disabled="true">
-                End <i class="fa-solid fa-stop ms-2"></i>
-            </a>
+            <wa-button href="<?php echo htmlspecialchars($overview['url']); ?>" appearance="outlined" variant="neutral" pill disabled>
+                End <i slot="end" class="fa-solid fa-stop"></i>
+            </wa-button>
         <?php endif; ?>
     </div>
 

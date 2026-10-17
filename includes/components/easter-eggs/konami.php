@@ -75,16 +75,17 @@ if (isset($theme)) {
                 <span class="small opacity-75">Just kidding. But you did find a secret!</span>
             </p>
             
-            <div class="alert alert-secondary small text-start font-monospace mb-0 border border-secondary-subtle">
+            <wa-callout variant="neutral" appearance="filled-outlined" class="small text-start font-monospace mb-0">
+                <i slot="icon" class="fa-duotone fa-terminal"></i>
                 > INITIALIZING STARDUST ENGINE...<br>
                 > BYPASSING MAINFRAME SECURITY...<br>
                 > ACCESS GRANTED.<br>
                 > WELCOME, ADMIN.
-            </div>
+            </wa-callout>
         </div>
         
         <div class="mt-4 pt-3 border-top border-secondary text-end">
-            <wa-button variant="primary" onclick="document.getElementById('konamiModal').hide()">
+            <wa-button variant="brand" appearance="accent" onclick="document.getElementById('konamiModal').hide()">
                 Close Terminal
             </wa-button>
         </div>

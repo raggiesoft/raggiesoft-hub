@@ -69,15 +69,15 @@ $pageTitle = "Leasing Philosophy - Stardust Blacksburg";
             <p class="text-body-secondary">
                 When you sign a lease with us, you are renting the entire apartment (204, 205, etc.). You choose your roommates. You split the rent however you see fit. You are responsible for the collective space.
             </p>
-            <div class="alert alert-light border-start border-4 border-primary shadow-sm">
+            <wa-callout variant="brand" appearance="accent" class="shadow-sm d-block">
                 <small class="d-block text-muted text-uppercase fw-bold mb-1">The Result:</small>
                 <span class="fst-italic text-primary">"Forgers take care of Forgers."</span> We empower you to build your own household, saving you thousands of dollars per semester compared to corporate dorms.
-            </div>
+            </wa-callout>
         </div>
 
         <div class="col-lg-6">
-            <div class="card shadow border-0">
-                <div class="card-header bg-dark text-white text-center text-uppercase fw-bold">
+            <wa-card class="card shadow border-0 w-100" style="--body-padding: 0; --header-padding: 0;">
+                <div class="card-header bg-dark text-white text-center text-uppercase fw-bold p-3">
                     The Math: "Ironwood" vs. "The Mega-Complex"
                 </div>
                 <!-- ARCHITECTURE: Responsive comparison table detailing the fictional economic model -->
@@ -119,7 +119,7 @@ $pageTitle = "Leasing Philosophy - Stardust Blacksburg";
                         </tbody>
                     </table>
                 </div>
-            </div>
+            </wa-card>
             <p class="text-center mt-2 small text-muted fst-italic">
                 *Figures based on 2024 Market Analysis of Blacksburg off-campus housing.
             </p>
@@ -128,7 +128,7 @@ $pageTitle = "Leasing Philosophy - Stardust Blacksburg";
 
     <div class="row justify-content-center mb-5">
         <div class="col-lg-10">
-            <div class="card bg-body-tertiary border-0 p-4 shadow-sm">
+            <wa-card class="card bg-body-tertiary border-0 p-4 shadow-sm w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
                 <div class="d-flex align-items-start">
                     <i class="fa-duotone fa-scale-balanced fa-3x text-secondary me-4 mt-1"></i>
                     <div>
@@ -146,7 +146,7 @@ $pageTitle = "Leasing Philosophy - Stardust Blacksburg";
                         </ul>
                     </div>
                 </div>
-            </div>
+            </wa-card>
         </div>
     </div>
 

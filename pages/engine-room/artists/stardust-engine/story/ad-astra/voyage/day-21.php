@@ -25,7 +25,7 @@ $pageTitle = "Day 21: The Drop - Ad Astra Log";
     
     <div class="d-flex justify-content-between align-items-center mb-5 border-bottom border-danger pb-3">
         <div>
-            <span class="badge bg-danger text-white font-monospace mb-2">LOG: DAY 21</span>
+            <wa-badge variant="danger" appearance="accent" class="font-monospace mb-2">LOG: DAY 21</wa-badge>
             <h1 class="display-4 fw-bold text-uppercase text-light mb-0" style="font-family: 'Audiowide';">The Drop</h1>
         </div>
         <div class="text-end text-white-50 font-monospace small">
@@ -43,7 +43,7 @@ $pageTitle = "Day 21: The Drop - Ad Astra Log";
             
             <div class="position-absolute bottom-0 start-0 w-100 p-3 bg-black bg-opacity-75 d-flex justify-content-between align-items-center">
                 <span class="text-danger font-monospace small"><i class="fa-duotone fa-triangle-exclamation me-2"></i>CAM_4C: HULL VIBRATION CRITICAL</span>
-                <span class="badge bg-danger border border-white text-white rounded-0 blink-animation text-uppercase">Alert</span>
+                <wa-badge variant="danger" appearance="accent" class="rounded-0 blink-animation text-uppercase">Alert</wa-badge>
             </div>
         </div>
     </wa-card>
@@ -73,9 +73,9 @@ $pageTitle = "Day 21: The Drop - Ad Astra Log";
                 <div slot="header" class=" border-bottom border-danger text-danger fw-bold font-monospace p-3" style="border-color: var(--astra-danger) !important;">
                     <i class="fa-duotone fa-radiation me-2"></i>AUDIO LOG: "HARD RESET"
                 </div>
-                <div class="card-body">
+                <div class="card-body p-4">
                     <div class="d-flex align-items-center">
-                        <button class="btn btn-outline-danger rounded-circle me-3"><i class="fa-solid fa-play"></i></button>
+                        <wa-button variant="danger" appearance="outlined" class="rounded-circle me-3"><i class="fa-solid fa-play"></i></wa-button>
                         <div class="flex-grow-1">
                             <div class="progress" style="height: 4px; background-color: #333;">
                                 <div class="progress-bar bg-danger" role="progressbar" style="width: 100%"></div>
@@ -98,7 +98,7 @@ $pageTitle = "Day 21: The Drop - Ad Astra Log";
                 <div slot="header" class=" text-danger fw-bold text-uppercase border-bottom border-secondary p-3" style="border-color: var(--astra-danger) !important;">
                     <i class="fa-duotone fa-temperature-arrow-up me-2"></i>Critical Telemetry
                 </div>
-                <div class="card-body text-white-50 small">
+                <div class="card-body text-white-50 small p-4">
                     <ul class="list-unstyled mb-0 font-monospace">
                         <li class="mb-2">> <strong>Deceleration:</strong> 2.5 G</li>
                         <li class="mb-2">> <strong>Hull Integrity:</strong> 64% (Dropping)</li>
@@ -109,7 +109,7 @@ $pageTitle = "Day 21: The Drop - Ad Astra Log";
             </wa-card>
 
             <wa-card class="card bg-black border-secondary mb-4 w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
-                <div class="card-body">
+                <div class="card-body p-4">
                     <h6 class="text-secondary fw-bold text-uppercase mb-2">
                         <i class="fa-duotone fa-file-check me-2"></i>Post-Flight Note
                     </h6>

@@ -98,8 +98,8 @@ $historySchema = [
         <h2 class="text-warning border-bottom border-warning pb-2 mb-4">
             1992: The "Friction" Catastrophe
         </h2>
-        <div class="card border-warning bg-transparent">
-            <div class="card-body">
+        <wa-card class="card border-warning bg-transparent w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
+            <div class="card-body p-4">
                 <h3 class="h5 fw-bold text-warning">The Day The Contract Ended</h3>
                 <p class="text-white-75">
                     In 1992, an Apex executive attempted to exploit the sibling bond between Ryan and Cassidy for a sexualized marketing campaign. The resulting confrontation—the "Dirty Mirror" incident—ended with Holly O'Connell (then a law student) forcing the label to void the contract.
@@ -108,15 +108,15 @@ $historySchema = [
                     The band was free, but they were blacklisted and broke. This marked the beginning of "The Wilderness Years."
                 </p>
             </div>
-        </div>
+        </wa-card>
     </section>
 
     <section id="lottery" class="mb-5">
         <h2 class="text-success border-bottom border-success pb-2 mb-4">
             1996: The "American Dream" Event
         </h2>
-        <div class="alert alert-dark bg-opacity-25 border-success d-flex align-items-start">
-            <i class="fa-duotone fa-ticket text-success fs-1 me-4"></i>
+        <wa-callout variant="success" appearance="accent" class="d-block">
+            <i slot="icon" class="fa-duotone fa-ticket text-success"></i>
             <div>
                 <h4 class="h5 fw-bold text-success">Daleville, VA (The Gas Station)</h4>
                 <p class="text-white-75">
@@ -132,7 +132,7 @@ $historySchema = [
                     Jackpot Total: $2.04 Billion.
                 </p>
             </div>
-        </div>
+        </wa-callout>
     </section>
 
     <section id="fortress" class="mb-5">

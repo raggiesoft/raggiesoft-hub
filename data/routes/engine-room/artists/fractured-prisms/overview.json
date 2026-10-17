@@ -1,28 +1,30 @@
 {
   "common": {
     "site": "fractured-prisms",
-    "brandFont": [
-      "Playfair Display",
-      "serif"
-    ],
+    "showSidebar": true,
+    "sidebar": "engine-room/artists/fractured-prisms/sidebar-prisms",
     "siteName": "Fractured Prisms",
     "headerMenu": "engine-room/artists/fractured-prisms/header-prisms",
     "footer": "engine-room/artists/fractured-prisms/footer-prisms",
-    "showSidebar": false,
     "navbarBrandLogo": "/engine-room-records/artists/fractured-prisms/band-logo.jpg",
-    "navbarBrandText": "Fractured Prisms",
+    "navbarBrandText": "Fractured<span class=\"d-none d-md-inline\"> Prisms</span>",
     "navbarBrandLink": "/engine-room/artists/fractured-prisms",
-    "ogImage": "/engine-room-records/artists/fractured-prisms/1983-carnaby-street/album-art.jpg"
+    "ogImage": "/engine-room-records/artists/fractured-prisms/social-preview.jpg"
   },
-
   "/engine-room/artists/fractured-prisms": {
     "view": "pages/engine-room/artists/fractured-prisms/overview",
-    "title": "Fractured Prisms",
-    "ogTitle": "Fractured Prisms"
+    "title": "Fractured Prisms | Engine Room Records Archive",
+    "ogDescription": "The official archive of the 80s progressive pop duo Fractured Prisms. Rescued from the Carnaby Street vaults via the 1999 London Discovery.",
+    "showSidebar": false
   },
   "/engine-room/artists/fractured-prisms/lore/colonial-theatre": {
     "view": "pages/engine-room/artists/fractured-prisms/lore/colonial-theatre",
-    "title": "Colonial Theatre | Fractured Prisms",
-    "ogTitle": "Colonial Theatre | Fractured Prisms"
+    "title": "Incident Report: The Colonial Theatre (1985) | Fractured Prisms",
+    "ogDescription": "How a historic venue accessibility failure in Phoenixville, PA sparked Rhys Manning's legendary stage confrontation."
+  },
+  "/engine-room/artists/fractured-prisms/colonial-theatre": {
+    "view": "pages/engine-room/artists/fractured-prisms/lore/colonial-theatre",
+    "title": "Incident Report: The Colonial Theatre (1985) | Fractured Prisms",
+    "ogDescription": "How a historic venue accessibility failure in Phoenixville, PA sparked Rhys Manning's legendary stage confrontation."
   }
 }

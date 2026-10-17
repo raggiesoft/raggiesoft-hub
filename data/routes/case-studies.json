@@ -6,29 +6,30 @@
     "siteName": "RaggieSoft Operational Archives",
     "headerMenu": "case-studies/header-case-studies",
     "footer": "case-studies/footer-case-studies",
-    
     "navbarBrandLogo": "/raggiesoft-corporate/images/logo/raggiesoft-logo.png",
     "navbarBrandText": "RaggieSoft <span class=\"d-none d-md-inline\">Archives</span>",
     "navbarBrandLink": "/case-studies",
     "navbarBrandAlt": "RaggieSoft Case Studies",
     "navbarBrandClass": "rounded-0 navbar-brand-corporate-img"
   },
-
   "/case-studies": {
     "view": "pages/case-studies/overview",
     "title": "Case Studies: Operational Overview",
     "ogDescription": "A repository of incident reports, logistical audits, and systems architecture analyses detailing Personified DevOps."
   },
-
   "/case-studies/cascade-protocol": {
     "view": "pages/case-studies/cascade-protocol",
     "title": "Case Study: The Cascade Protocol",
     "ogDescription": "A forensic breakdown of a Level 5 Sensory Meltdown and the manual override protocols used to stabilize the system."
   },
-
   "/case-studies/shenandoah-valley": {
     "view": "pages/case-studies/shenandoah-valley",
     "title": "Case Study: The Shenandoah Valley Gauntlet",
     "ogDescription": "An analysis of adaptive routing, legacy code constraints, and 'Graceful Degradation' in real-world logistics."
+  },
+  "/case-studies/phys-100-report": {
+    "view": "pages/case-studies/phys-100-report",
+    "title": "Case Study: PHYS 100 Technical Lab Report",
+    "ogDescription": "Complete physics laboratory analysis and accessible data presentation report for PHYS 100."
   }
 }

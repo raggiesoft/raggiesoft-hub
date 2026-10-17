@@ -87,9 +87,9 @@ $musicGroupSchema = [
             The complete official history, from the studio-mandated pop of the 80s 
             to the independent rock anthems of their rebirth.
         </p>
-        <a href="https://music.raggiesoft.com/the-stardust-engine" target="_blank" rel="noopener" class="btn btn-primary rounded-pill px-4 fw-bold shadow-sm">
-            <i class="fa-duotone fa-headphones me-2"></i>Stream &amp; Read Lyrics in The Listening Room
-        </a>
+        <wa-button href="https://music.raggiesoft.com/the-stardust-engine" target="_blank" rel="noopener" variant="brand" pill class="px-4 fw-bold shadow-sm">
+            <i slot="start" class="fa-duotone fa-headphones"></i>Stream &amp; Read Lyrics in The Listening Room
+        </wa-button>
     </div>
 
     <?php foreach ($discographyLibrary as $eraKey => $eraData): ?>
@@ -104,7 +104,7 @@ $musicGroupSchema = [
             
             <div class="row mb-4">
                 <div class="col-lg-8">
-                    <p class="fs-5 text-muted">
+                    <p class="fs-5 text-body-secondary">
                         <?php echo htmlspecialchars($eraData['description']); ?>
                     </p>
                 </div>
@@ -124,8 +124,8 @@ $musicGroupSchema = [
                     $hasHubLore = !empty($album['url']) && file_exists(ROOT_PATH . '/pages' . $album['url'] . '.php');
                 ?>
                     <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-4">
-                        <div class="card h-100 bg-transparent border-secondary glass-card shadow-sm overflow-hidden">
-                            <div class="position-relative">
+                        <wa-card class="h-100 bg-transparent border-secondary glass-card shadow-sm overflow-hidden d-flex flex-column">
+                            <div slot="media" class="position-relative">
                                 
                                 <?php if ($isSeized): ?>
                                     <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center" 
@@ -139,53 +139,53 @@ $musicGroupSchema = [
 
                                 <?php if ($dspExempt && !$isSeized): ?>
                                     <div class="position-absolute top-0 end-0 m-2" style="z-index: 3;">
-                                        <span class="badge bg-warning text-dark shadow-sm border border-dark"><i class="fa-solid fa-vault me-1"></i> Vault Exclusive</span>
+                                        <wa-badge variant="warning" class="shadow-sm"><i class="fa-solid fa-vault me-1"></i> Vault Exclusive</wa-badge>
                                     </div>
                                 <?php endif; ?>
 
                                 <img src="<?php echo htmlspecialchars($album['img'] ?? $cdnBaseUrl . '/common/images/defaults/vinyl-placeholder.jpg'); ?>" 
-                                     class="card-img-top border-bottom border-secondary" 
+                                     class="w-100 border-bottom border-secondary" 
                                      alt="<?php echo htmlspecialchars($album['title']); ?>"
                                      style="aspect-ratio: 1/1; object-fit: cover; <?php echo $isSeized ? 'filter: blur(5px) grayscale(100%);' : ''; ?>">
                                 
                             </div>
 
-                            <div class="card-body d-flex flex-column">
-                                <h5 class="card-title text-body fw-bold mb-1">
+                            <div class="d-flex flex-column h-100">
+                                <h5 class="text-body fw-bold mb-1">
                                     <?php echo htmlspecialchars($album['title']); ?>
                                 </h5>
-                                <p class="card-text small text-muted mb-3">
+                                <p class="small text-body-secondary mb-3">
                                     Released: <?php echo htmlspecialchars($album['year']); ?>
                                 </p>
                                 
                                 <div class="mt-auto d-flex flex-column gap-2">
                                     <?php if (!$isSeized): ?>
-                                        <a href="<?php echo htmlspecialchars($listeningRoomUrl); ?>" target="_blank" rel="noopener" class="btn btn-sm btn-primary w-100">
-                                            <i class="fa-duotone fa-headphones me-2"></i>Listening Room &amp; Lyrics
-                                        </a>
+                                        <wa-button href="<?php echo htmlspecialchars($listeningRoomUrl); ?>" target="_blank" rel="noopener" variant="brand" size="small" class="w-100">
+                                            <i slot="start" class="fa-duotone fa-headphones"></i>Listening Room &amp; Lyrics
+                                        </wa-button>
                                     <?php endif; ?>
 
                                     <?php if ($hasHubLore): ?>
-                                        <a href="<?php echo htmlspecialchars($album['url']); ?>" class="btn btn-sm <?php echo $isSeized ? 'btn-outline-danger' : 'btn-outline-secondary'; ?> w-100 mb-1">
+                                        <wa-button href="<?php echo htmlspecialchars($album['url']); ?>" variant="<?php echo $isSeized ? 'danger' : 'neutral'; ?>" appearance="outlined" size="small" class="w-100 mb-1">
                                             <?php if ($isSeized): ?>
-                                                <i class="fa-duotone fa-gavel me-2"></i>View Case File
+                                                <i slot="start" class="fa-duotone fa-gavel"></i>View Case File
                                             <?php else: ?>
-                                                <i class="fa-duotone fa-book-open-cover me-2"></i>Studio Lore &amp; Liner Notes
+                                                <i slot="start" class="fa-duotone fa-book-open-cover"></i>Studio Lore &amp; Liner Notes
                                             <?php endif; ?>
-                                        </a>
+                                        </wa-button>
                                     <?php endif; ?>
 
                                     <?php if ($storeStandardUrl || $storeAudiophileUrl): ?>
                                         <div class="d-flex gap-2 w-100 mb-1">
                                             <?php if ($storeStandardUrl): ?>
-                                                <a href="<?php echo htmlspecialchars($storeStandardUrl); ?>" target="_blank" class="btn btn-sm btn-info flex-grow-1" title="Standard Digital Archive">
-                                                    <i class="fa-solid fa-bag-shopping me-1"></i> Standard
-                                                </a>
+                                                <wa-button href="<?php echo htmlspecialchars($storeStandardUrl); ?>" target="_blank" variant="brand" appearance="filled-outlined" size="small" class="flex-grow-1" title="Standard Digital Archive">
+                                                    <i slot="start" class="fa-solid fa-bag-shopping"></i> Standard
+                                                </wa-button>
                                             <?php endif; ?>
                                             <?php if ($storeAudiophileUrl): ?>
-                                                <a href="<?php echo htmlspecialchars($storeAudiophileUrl); ?>" target="_blank" class="btn btn-sm btn-warning flex-grow-1" title="Audiophile Master Vault">
-                                                    <i class="fa-solid fa-waveform-lines me-1"></i> WAV
-                                                </a>
+                                                <wa-button href="<?php echo htmlspecialchars($storeAudiophileUrl); ?>" target="_blank" variant="warning" appearance="filled-outlined" size="small" class="flex-grow-1" title="Audiophile Master Vault">
+                                                    <i slot="start" class="fa-solid fa-waveform-lines"></i> WAV
+                                                </wa-button>
                                             <?php endif; ?>
                                         </div>
                                     <?php endif; ?>
@@ -212,7 +212,7 @@ $musicGroupSchema = [
                                     ?>
                                 </div>
                             </div>
-                        </div>
+                        </wa-card>
                     </div>
                 <?php endforeach; ?>
             </div>

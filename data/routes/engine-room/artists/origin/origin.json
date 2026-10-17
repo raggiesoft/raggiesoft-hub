@@ -1,21 +1,23 @@
 {
   "common": {
-    "site": "engine-room-records",
+    "site": "fractured-prisms",
     "showSidebar": true,
-    "sidebar": "engine-room/artists/origin/sidebar-origin",
-    "siteName": "Engine Room: Origin",
-    "headerMenu": "engine-room/header-engine-room",
-    "footer": "engine-room/footer-engine-room",
-    "navbarBrandLogo": "/engine-room-records/images/logos/engine-room-records-logo.png",
-    "navbarBrandText": "Origin <span class=\"text-muted small\">// Archive</span>"
+    "sidebar": "engine-room/artists/fractured-prisms/sidebar-prisms",
+    "siteName": "Fractured Prisms (Formerly Origin)",
+    "headerMenu": "engine-room/artists/fractured-prisms/header-prisms",
+    "footer": "engine-room/artists/fractured-prisms/footer-prisms",
+    "navbarBrandLogo": "/engine-room-records/artists/fractured-prisms/band-logo.jpg",
+    "navbarBrandText": "Fractured<span class=\"d-none d-md-inline\"> Prisms</span>",
+    "navbarBrandLink": "/engine-room/artists/fractured-prisms"
   },
   "/engine-room/artists/origin": {
-    "view": "pages/engine-room/artists/origin/overview",
-    "title": "Origin - Artist Profile",
-    "ogDescription": "The profile of 80s Art Rock band Origin."
+    "view": "pages/engine-room/artists/fractured-prisms/overview",
+    "title": "Fractured Prisms | Engine Room Records Archive",
+    "ogDescription": "The official archive of the 80s progressive art-rock duo Fractured Prisms.",
+    "showSidebar": false
   },
   "/engine-room/artists/origin/discography": {
-    "view": "pages/engine-room/artists/origin/discography",
-    "title": "Origin - Discography"
+    "view": "pages/engine-room/artists/fractured-prisms/discography/overview",
+    "title": "Discography | Fractured Prisms"
   }
 }

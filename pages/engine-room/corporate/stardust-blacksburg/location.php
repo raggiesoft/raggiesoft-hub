@@ -79,7 +79,7 @@ $pageTitle = "Location & Transit - Stardust Blacksburg";
                 <div class="list-group-item bg-body-tertiary">
                     <div class="d-flex justify-content-between align-items-center mb-2">
                         <strong class="text-primary"><i class="fa-solid fa-route me-2"></i>Route 1: The Spine</strong>
-                        <span class="badge bg-secondary">Every 15 Min</span>
+                        <wa-badge variant="neutral" appearance="accent">Every 15 Min</wa-badge>
                     </div>
                     <p class="small text-muted mb-1">
                         <strong>Corridor:</strong> <a href="/engine-room/artists/stardust-engine/story/crucible/falling-branch-transit" class="fw-bold">Christiansburg Transit Center (Falling Branch Exit 118)</a> <i class="fa-solid fa-arrow-right mx-1" style="font-size: 0.7em;"></i> Pepper Plaza <i class="fa-solid fa-arrow-right mx-1" style="font-size: 0.7em;"></i> Downtown <i class="fa-solid fa-arrow-right mx-1" style="font-size: 0.7em;"></i> Progress St NW <i class="fa-solid fa-arrow-right mx-1" style="font-size: 0.7em;"></i> Commonwealth Mall.
@@ -92,7 +92,7 @@ $pageTitle = "Location & Transit - Stardust Blacksburg";
                 <div class="list-group-item bg-body-tertiary">
                     <div class="d-flex justify-content-between align-items-center mb-2">
                         <strong class="text-success"><i class="fa-solid fa-route me-2"></i>Route 3: The Radford Link</strong>
-                        <span class="badge bg-secondary">Every 30 Min</span>
+                        <wa-badge variant="neutral" appearance="accent">Every 30 Min</wa-badge>
                     </div>
                     <p class="small text-muted mb-0">
                         <strong>Corridor:</strong> Pepper Plaza <i class="fa-solid fa-arrow-right mx-1" style="font-size: 0.7em;"></i> McConnell Transit Center (Radford Univ).
@@ -103,7 +103,7 @@ $pageTitle = "Location & Transit - Stardust Blacksburg";
                 <div class="list-group-item bg-body-tertiary">
                     <div class="d-flex justify-content-between align-items-center mb-2">
                         <strong class="text-warning text-dark-emphasis"><i class="fa-solid fa-route me-2"></i>Route 8: The Riner Run</strong>
-                        <span class="badge bg-secondary">Hourly</span>
+                        <wa-badge variant="neutral" appearance="accent">Hourly</wa-badge>
                     </div>
                     <p class="small text-muted mb-0">
                         <strong>Corridor:</strong> Pepper Plaza <i class="fa-solid fa-arrow-right mx-1" style="font-size: 0.7em;"></i> Riner.
@@ -113,14 +113,14 @@ $pageTitle = "Location & Transit - Stardust Blacksburg";
 
             </div>
 
-            <div class="alert alert-warning border-warning-subtle shadow-sm d-flex align-items-center justify-content-between flex-wrap gap-2 p-3 mb-0">
+            <wa-callout variant="warning" appearance="accent" class="shadow-sm justify-content-between flex-wrap gap-2 p-3 mb-0 d-block">
                 <div class="small">
                     <i class="fa-duotone fa-stadium me-2"></i><strong>Game-Day Transit Lore:</strong> Discover how VDOT's 6,000-space Christiansburg Transit Center and BRT's bus-only Southgate Drive corridor defeat the $150 stadium parking trap.
                 </div>
-                <a href="/engine-room/artists/stardust-engine/story/crucible/falling-branch-transit" class="btn btn-sm btn-warning text-dark fw-bold text-uppercase">
-                    Read Falling Branch Lore <i class="fa-solid fa-arrow-right ms-1"></i>
-                </a>
-            </div>
+                <wa-button variant="warning" appearance="accent" size="small" href="/engine-room/artists/stardust-engine/story/crucible/falling-branch-transit" class="text-dark fw-bold text-uppercase">
+                    Read Falling Branch Lore <i slot="end" class="fa-solid fa-arrow-right"></i>
+                </wa-button>
+            </wa-callout>
         </div>
 
         <div class="col-lg-5">
@@ -131,7 +131,7 @@ $pageTitle = "Location & Transit - Stardust Blacksburg";
                 Need to leave the bubble? The <strong>PolyPass</strong> works on regional partners too.
             </p>
 
-            <div class="card border-0 bg-body-tertiary shadow-sm mb-3">
+            <wa-card class="card border-0 bg-body-tertiary shadow-sm mb-3 w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
                 <div class="card-body p-3">
                     <div class="d-flex align-items-center mb-2">
                         <span class="transit-badge text-danger border border-danger px-2 rounded me-2">BT</span>
@@ -142,9 +142,9 @@ $pageTitle = "Location & Transit - Stardust Blacksburg";
                         <br>45-foot over-the-road coach service with mid-coach ADA lifts. A cultural phenomenon for commuters along the I-81 corridor.
                     </p>
                 </div>
-            </div>
+            </wa-card>
 
-            <div class="card border-0 bg-body-tertiary shadow-sm mb-3">
+            <wa-card class="card border-0 bg-body-tertiary shadow-sm mb-3 w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
                 <div class="card-body p-3">
                     <div class="d-flex align-items-center mb-2">
                         <span class="transit-badge text-success border border-success px-2 rounded me-2">RVT</span>
@@ -155,9 +155,9 @@ $pageTitle = "Location & Transit - Stardust Blacksburg";
                         <br>Direct connection to the airport and downtown Roanoke internships.
                     </p>
                 </div>
-            </div>
+            </wa-card>
 
-            <div class="card border-0 bg-dark text-white shadow-sm mt-4">
+            <wa-card class="card border-0 bg-dark text-white shadow-sm mt-4 w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
                 <div class="card-body p-3 text-center">
                     <i class="fa-duotone fa-bicycle fa-2x mb-2 text-warning"></i>
                     <h6 class="fw-bold text-uppercase mb-1">Active Commute</h6>
@@ -165,7 +165,7 @@ $pageTitle = "Location & Transit - Stardust Blacksburg";
                         Direct spur access to the <strong>Huckleberry Trail</strong>. Bike to class in 20 minutes, traffic-free.
                     </p>
                 </div>
-            </div>
+            </wa-card>
         </div>
 
     </div>
@@ -179,7 +179,7 @@ $pageTitle = "Location & Transit - Stardust Blacksburg";
                     <p class="small text-muted font-monospace">
                         [RESIDENT LOGIN REQUIRED FOR REAL-TIME TRACKING]
                     </p>
-                    <span class="badge bg-danger">PUBLIC ACCESS DENIED</span>
+                    <wa-badge variant="danger" appearance="accent">PUBLIC ACCESS DENIED</wa-badge>
                 </div>
                 
                 <div class="position-absolute bottom-0 end-0 p-3 text-end opacity-50 d-none d-md-block">

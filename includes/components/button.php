@@ -33,8 +33,8 @@ if ($variantRaw === 'success') $waVariant = 'success';
 
 $iconHtml = '';
 if ($icon) {
-    // Determine the correct Web Awesome slot ('prefix' or 'suffix') based on requested position.
-    $slot = ($iconPosition === 'before') ? 'prefix' : 'suffix';
+    // Determine the correct Web Awesome 3.13.0 slot ('start' or 'end') based on requested position.
+    $slot = ($iconPosition === 'before') ? 'start' : 'end';
     $iconHtml = "<i slot=\"{$slot}\" class=\"" . htmlspecialchars($icon) . "\"></i>";
 }
 

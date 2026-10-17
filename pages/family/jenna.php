@@ -18,7 +18,7 @@
 // Theme: Jenna (Creative Chaos, Orange, Sync)
 ?>
 <!-- MAIN PROFILE HEADER CARD: Hero image and intro -->
-<div class="card mb-5 border-0 shadow-sm overflow-hidden bg-body-tertiary">
+<wa-card class="card mb-5 border-0 shadow-sm overflow-hidden bg-body-tertiary w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
     <div class="row g-0">
         <div class="col-lg-4 position-relative" style="min-height: 300px;">
             <img src="<?php echo $cdnBaseUrl; ?>/family/images/atmospheric/jenna.jpg" 
@@ -31,12 +31,12 @@
         <div class="col-lg-8 d-flex align-items-center">
             <div class="card-body p-4 p-lg-5">
                 <div class="d-flex align-items-center mb-3">
-                    <span class="badge me-2 text-dark" style="background-color: #fd7e14;">
+                    <wa-badge variant="neutral" appearance="accent" class="me-2" style="background-color: #fd7e14;">
                         <i class="fa-duotone fa-rotate me-2"></i>jenna-sync.sh
-                    </span>
-                    <span class="badge border border-warning text-warning-emphasis bg-transparent">
+                    </wa-badge>
+                    <wa-badge variant="warning" appearance="outlined" class="text-warning-emphasis">
                         Rclone / Git
-                    </span>
+                    </wa-badge>
                 </div>
                 
                 <h1 class="display-4 fw-bold mb-2 text-body">Jenna</h1>
@@ -50,7 +50,7 @@
             </div>
         </div>
     </div>
-</div>
+</wa-card>
 
 <div class="row g-5 mb-5">
     <div class="col-md-12 col-xl-6">
@@ -81,7 +81,7 @@
                 </div>
                 <div class="d-flex justify-content-between align-items-center">
                     <span class="small text-muted">Neurotype:</span>
-                    <span class="badge text-dark border" style="background-color: #ffe5d0; border-color: #fd7e14 !important;">ADHD (Hyperactive)</span>
+                    <wa-badge variant="neutral" appearance="accent" style="background-color: #ffe5d0; border-color: #fd7e14 !important;">ADHD (Hyperactive)</wa-badge>
                 </div>
             </div>
 
@@ -100,11 +100,11 @@
 
 <div class="row">
     <div class="col-12">
-        <div class="card shadow-lg font-monospace" style="background-color: #0d1117; color: #c9d1d9; border: 1px solid #fd7e14;">
-            <div class="card-header fw-bold d-flex justify-content-between align-items-center" 
+        <wa-card class="card shadow-lg font-monospace w-100" style="background-color: #0d1117; color: #c9d1d9; border: 1px solid #fd7e14; --body-padding: 0; --header-padding: 0;">
+            <div class="card-header fw-bold d-flex justify-content-between align-items-center p-3" 
                  style="background-color: rgba(253, 126, 20, 0.15); border-bottom: 1px solid #fd7e14; color: #fd7e14;">
                 <span><i class="fa-duotone fa-arrows-rotate me-2"></i>jenna-sync.sh --push</span>
-                <span class="badge text-dark" style="background-color: #fd7e14;">RUNNING</span>
+                <wa-badge variant="neutral" appearance="accent" style="background-color: #fd7e14;">RUNNING</wa-badge>
             </div>
             <div class="card-body p-4">
                 <div style="opacity: 1;">
@@ -134,7 +134,7 @@
                     </p>
                 </div>
             </div>
-        </div>
+        </wa-card>
     </div>
 </div>
 

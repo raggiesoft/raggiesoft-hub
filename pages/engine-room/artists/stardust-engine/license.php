@@ -28,13 +28,13 @@ $pageTitle = "License Information - The Stardust Engine";
         <!-- INLINE: Section detailing the Creative Commons license for narrative and lore -->
         <!-- 1. Creative Content (CC BY-SA 4.0) -->
         <div class="col-md-6">
-            <div class="card h-100 border-warning bg-transparent">
-                <div class="card-header bg-warning-subtle border-warning">
+            <wa-card class="card h-100 border-warning bg-transparent w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
+                <div class="card-header bg-warning-subtle border-warning p-3">
                     <h2 class="h4 mb-0 text-warning-emphasis">
                         <i class="fa-brands fa-creative-commons me-2"></i>Creative Content
                     </h2>
                 </div>
-                <div class="card-body">
+                <div class="card-body p-4">
                     <h5 class="card-title text-muted">CC BY-SA 4.0</h5>
                     <p class="card-text text-muted">
                         All narrative content, lore, characters, music, and artwork associated with <strong>The Stardust Engine</strong> are licensed under the <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer" class="link-warning">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
@@ -48,22 +48,22 @@ $pageTitle = "License Information - The Stardust Engine";
                         <li><strong>ShareAlike:</strong> If you remix, transform, or build upon the material, you must distribute your contributions under the same license as the original.</li>
                     </ul>
                 </div>
-                <div class="card-footer bg-transparent border-warning text-center">
-                    <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" class="btn btn-outline-warning btn-sm">View Full License</a>
+                <div class="card-footer bg-transparent border-warning text-center p-3">
+                    <wa-button variant="warning" appearance="outlined" size="small" href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">View Full License</wa-button>
                 </div>
-            </div>
+            </wa-card>
         </div>
 
         <!-- INLINE: Section detailing the MIT open-source license for the codebase -->
         <!-- 2. Source Code (MIT) -->
         <div class="col-md-6">
-            <div class="card h-100 border-primary bg-transparent">
-                <div class="card-header bg-primary-subtle border-primary">
+            <wa-card class="card h-100 border-primary bg-transparent w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
+                <div class="card-header bg-primary-subtle border-primary p-3">
                     <h2 class="h4 mb-0 text-primary-emphasis">
                         <i class="fa-brands fa-github me-2"></i>Source Code
                     </h2>
                 </div>
-                <div class="card-body">
+                <div class="card-body p-4">
                     <h5 class="card-title text-muted">The MIT License</h5>
                     <p class="card-text text-muted">
                         The underlying source code that powers this website (PHP, HTML, CSS, JS) is licensed under the <a href="https://opensource.org/licenses/MIT" target="_blank" rel="noopener noreferrer" class="link-primary">MIT License</a>.
@@ -86,10 +86,10 @@ $pageTitle = "License Information - The Stardust Engine";
                         </a>
                     </div>
                 </div>
-                <div class="card-footer bg-transparent border-primary text-center">
-                    <a href="https://opensource.org/licenses/MIT" target="_blank" class="btn btn-outline-primary btn-sm">View Full License</a>
+                <div class="card-footer bg-transparent border-primary text-center p-3">
+                    <wa-button variant="brand" appearance="outlined" size="small" href="https://opensource.org/licenses/MIT" target="_blank">View Full License</wa-button>
                 </div>
-            </div>
+            </wa-card>
         </div>
 
     </div>
@@ -97,15 +97,15 @@ $pageTitle = "License Information - The Stardust Engine";
     <!-- Attribution Notice -->
     <div class="row mt-5">
         <div class="col-12">
-            <div class="alert alert-dark border-secondary d-flex align-items-center">
-                <i class="fa-solid fa-circle-info fs-3 text-info me-3"></i>
+            <wa-callout variant="neutral" appearance="accent" class="d-block">
+                <i slot="icon" class="fa-solid fa-circle-info text-info"></i>
                 <div>
                     <h5 class="alert-heading h6 fw-bold text-info">A Note on AI Collaboration</h5>
                     <p class="mb-0 small text-muted">
                         This project is a collaboration between human creativity and generative AI. While the concepts, direction, and code architecture are human-led (Michael Ragsdale), assets such as artwork (DALL-E 3), music (Suno), and lore expansion (Gemini) were created with the assistance of AI tools. The licensing above applies to the final output presented here.
                     </p>
                 </div>
-            </div>
+            </wa-callout>
         </div>
     </div>
 

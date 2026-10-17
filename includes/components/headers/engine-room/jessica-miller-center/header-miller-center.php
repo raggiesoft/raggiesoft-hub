@@ -1,70 +1,51 @@
 <?php
 /**
- * Engine Room - Jessica Miller Center Header
- * 
- * ARCHITECTURAL OVERVIEW:
- * This component provides horizontal navigation specifically for the "Jessica Miller Center"
- * sub-section within the Engine Room. 
- * 
- * LORE CONTEXT:
- * The Jessica Miller Center is a fictional philanthropic entity. The navigation reflects this
- * with links to accessibility features ("The Quiet Floor", "Universal Design").
- * 
- * CONSTRAINTS & MAINTENANCE:
- * - Uses Web Awesome components (`<wa-button>`, `<wa-dropdown>`).
- * - Contains static links. Ensure href values remain accurate to the routing structure.
- * - This file does not contain a PHP opening tag initially; this block is self-contained.
+ * ============================================================================
+ * Engine Room - Jessica Miller Center Header (Web Awesome v3.13.0)
+ * ============================================================================
+ * File: includes/components/headers/engine-room/jessica-miller-center/header-miller-center.php
+ * Purpose: Horizontal navigation specifically for the "Jessica Miller Center"
+ *          philanthropic and universal design sub-section.
+ * ============================================================================
  */
 ?>
 <div class="d-flex flex-column flex-md-row align-items-stretch align-items-md-center gap-2 ms-auto py-3 py-md-0 w-100 mobile-nav-menu">
-    
-    
-        <wa-button appearance="plain" href="/engine-room/jessica-miller-center">
-            <i slot="start" class="fa-duotone fa-building-columns me-2"></i>Overview
-        </wa-button>
-    
-    
-    
-        <wa-button appearance="plain" href="/engine-room/jessica-miller-center/the-quiet-floor">
-            <i slot="start" class="fa-duotone fa-ear-muffs me-2"></i>The Quiet Floor
-        </wa-button>
-    
-    
-    
+
+  <wa-button appearance="plain" href="/engine-room/jessica-miller-center">
+    <i slot="start" class="fa-duotone fa-building-columns me-2"></i>Overview
+  </wa-button>
+
+  <wa-button appearance="plain" href="/engine-room/jessica-miller-center/the-quiet-floor">
+    <i slot="start" class="fa-duotone fa-ear-muffs me-2"></i>The Quiet Floor
+  </wa-button>
+
   <wa-dropdown placement="bottom-start">
-    <wa-button  href="#"    slot="trigger" appearance="plain">
-            <i class="fa-duotone fa-wheelchair me-2"></i>The Standard
-        <i slot="end" class="fa-solid fa-circle-caret-down ms-2 opacity-50" aria-hidden="true"></i>
-        </wa-button>
-    <!-- 
-      Dropdown Menu:
-      Lists various accessibility features related to the fictional Miller Center.
-      Uses standard Bootstrap span tags for headers within the Web Awesome menu.
-    -->
-    <wa-menu>
-      <li><span class="dropdown-header text-uppercase small letter-spacing-1">Universal Design</span>
-            <wa-dropdown-item value="#"><i class="fa-solid fa-eye-slash me-2 "></i>Low-Sensory Lighting</wa-dropdown-item>
-            <wa-dropdown-item value="#"><i class="fa-solid fa-volume-xmark me-2 "></i>Acoustic Zoning</wa-dropdown-item>
-            <wa-dropdown-item value="/engine-room/jessica-miller-center/destination-dispatch-elevators">
-                    <i class="fa-solid fa-elevator me-2 "></i>Destination Dispatch
-                </wa-dropdown-item>
-            <wa-divider></wa-divider>
-            <wa-dropdown-item value="#"><i class="fa-solid fa-book-open me-2 text-primary"></i>Research Library</wa-dropdown-item>
-    </wa-menu>
+    <wa-button slot="trigger" appearance="plain" with-caret>
+      <i slot="start" class="fa-duotone fa-wheelchair me-2"></i>The Standard
+    </wa-button>
+    <div class="px-3 py-2 small text-uppercase fw-bold text-body-secondary">Universal Design</div>
+    <wa-dropdown-item value="/engine-room/jessica-miller-center/the-quiet-floor">
+      <i slot="icon" class="fa-solid fa-volume-xmark text-info"></i>Acoustic Zoning &amp; Quiet Floor
+    </wa-dropdown-item>
+    <wa-dropdown-item value="/engine-room/jessica-miller-center/destination-dispatch-elevators">
+      <i slot="icon" class="fa-solid fa-elevator text-primary"></i>Destination Dispatch Elevators
+    </wa-dropdown-item>
+    <wa-divider></wa-divider>
+    <div class="px-3 py-2 small text-uppercase fw-bold text-body-secondary">Origin Case File</div>
+    <wa-dropdown-item value="/engine-room/artists/stardust-engine/story/nine-figure-refusal/the-jessica-miller-center">
+      <i slot="icon" class="fa-solid fa-book-open text-success"></i>The Acquisition Archive
+    </wa-dropdown-item>
+    <wa-dropdown-item value="/engine-room/artists/stardust-engine/story/nine-figure-refusal/the-non-profit-model">
+      <i slot="icon" class="fa-solid fa-hand-holding-heart text-warning"></i>The Non-Profit Model
+    </wa-dropdown-item>
   </wa-dropdown>
 
-    
-    
-        <wa-button appearance="plain" href="#">
-            <i slot="start" class="fa-duotone fa-id-card me-2"></i>Tenant Portal
-        </wa-button>
-    
-    
+  <wa-button appearance="plain" href="/engine-room/corporate">
+    <i slot="start" class="fa-duotone fa-sitemap me-2"></i>Corporate Portal
+  </wa-button>
 
-    
-        <wa-button appearance="plain" href="/engine-room" class="">
-            <i slot="start" class="fa-solid fa-arrow-turn-up me-2"></i>Engine Room HQ
-        </wa-button>
-    
+  <wa-button appearance="plain" href="/engine-room">
+    <i slot="start" class="fa-solid fa-arrow-turn-up me-2"></i>Engine Room HQ
+  </wa-button>
 
 </div>

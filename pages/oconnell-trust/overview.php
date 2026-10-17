@@ -77,12 +77,12 @@
                 </p>
                 
                 <div class="mt-5 d-flex justify-content-center gap-3">
-                    <a href="/oconnell-trust/structure" class="btn btn-outline-secondary rounded-0 px-4 py-2 text-uppercase letter-spacing-1 small">
+                    <wa-button variant="neutral" appearance="outlined" href="/oconnell-trust/structure" class="rounded-0 px-4 py-2 text-uppercase letter-spacing-1 small">
                         Governance Structure
-                    </a>
-                    <a href="#portfolio" class="btn btn-primary rounded-0 px-4 py-2 text-uppercase letter-spacing-1 small">
+                    </wa-button>
+                    <wa-button variant="brand" appearance="accent" href="#portfolio" class="rounded-0 px-4 py-2 text-uppercase letter-spacing-1 small">
                         View Portfolio
-                    </a>
+                    </wa-button>
                 </div>
             </div>
         </div>
@@ -161,9 +161,9 @@
                 </p>
             </div>
             <div class="col-md-3 text-center text-md-end mt-3 mt-md-0">
-                <a href="/engine-room/corporate/jessica-miller-center" class="btn btn-outline-success rounded-pill px-4">
+                <wa-button variant="success" appearance="outlined" pill href="/engine-room/corporate/jessica-miller-center" class="px-4">
                     Learn More
-                </a>
+                </wa-button>
             </div>
         </div>
     </div>

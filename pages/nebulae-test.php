@@ -25,7 +25,7 @@
         </p>
         
         <!-- START: Infrastructure Status Report -->
-        <div class="alert alert-info border-0 shadow-sm mt-4">
+        <wa-callout variant="brand" appearance="accent" class="shadow-sm mt-4 d-block">
             <h4 class="alert-heading fw-bold">System Status:</h4>
             <ul class="mb-0 mt-2">
                 <li><strong>Environment:</strong> Ubuntu 26.04 LTS</li>
@@ -33,7 +33,7 @@
                 <li><strong>Security:</strong> Cloudflare Strict SSL Enforced</li>
                 <li><strong>Deployment:</strong> Synced autonomously by Sarah</li>
             </ul>
-        </div>
+        </wa-callout>
         
         <p class="mt-4 text-muted fs-6">
             You are officially cleared to destroy the old Droplet. Welcome to your new home!

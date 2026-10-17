@@ -29,7 +29,7 @@ $mdUrl = $cdnBaseUrl . "/aethel/content/{$bookId}/{$chapId}/{$partId}/{$sceneId}
 $rawMarkdown = @file_get_contents($mdUrl);
 
 if ($rawMarkdown === false) {
-    echo "<div class='container py-5'><div class='alert alert-danger'>Error: The scroll for this scene is missing.<br><small class='text-muted'>$mdUrl</small></div></div>";
+    echo "<div class='container py-5'><wa-callout variant='danger' appearance='accent' class='d-block'>Error: The scroll for this scene is missing.<br><small class='text-muted'>$mdUrl</small></wa-callout></div>";
     return;
 }
 

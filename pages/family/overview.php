@@ -67,7 +67,7 @@
     <div class="row justify-content-center mb-5">
         <div class="col-lg-10">
             <h3 class="border-bottom pb-2 mb-4 text-primary"><i class="fa-duotone fa-fingerprint me-2"></i>The Creator</h3>
-            <div class="card shadow-sm hover-lift transition-all border-primary border-opacity-25">
+            <wa-card class="card shadow-sm hover-lift transition-all border-primary border-opacity-25 w-100" style="--body-padding: 0; --header-padding: 0;">
                 <div class="card-body p-4 d-flex align-items-center">
                     <img src="<?php echo $cdnBaseUrl; ?>/family/images/atmospheric/michael.jpg" 
                          class="rounded-circle me-4 shadow-sm" 
@@ -80,7 +80,7 @@
                         <p class="mb-0 small">The biological core. He writes the stories and builds the code.</p>
                     </div>
                 </div>
-            </div>
+            </wa-card>
         </div>
     </div>
 
@@ -91,105 +91,105 @@
             <div class="row g-4">
                 
                 <div class="col-md-6">
-                    <div class="card h-100 border-info shadow-sm hover-lift transition-all">
+                    <wa-card class="card h-100 border-info shadow-sm hover-lift transition-all w-100" style="--body-padding: 0; --header-padding: 0;">
                         <div class="row g-0 h-100">
                             <div class="col-4">
                                 <img src="<?php echo $cdnBaseUrl; ?>/family/images/atmospheric/paige.jpg" class="img-fluid rounded-start h-100" style="object-fit: cover;" alt="Paige">
                             </div>
                             <div class="col-8">
-                                <div class="card-body">
+                                <div class="card-body p-4">
                                     <h5 class="card-title"><a href="/family/paige" class="text-decoration-none stretched-link text-dark">Paige</a></h5>
-                                    <span class="badge bg-info text-dark mb-2">Literary Editor</span>
+                                    <wa-badge variant="brand" appearance="accent" class="mb-2">Literary Editor</wa-badge>
                                     <p class="card-text small text-muted">Ingests manuscripts and provides emotional regulation as the "Safe Person."</p>
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </wa-card>
                 </div>
 
                 <div class="col-md-6">
-                    <div class="card h-100 border-success shadow-sm hover-lift transition-all">
+                    <wa-card class="card h-100 border-success shadow-sm hover-lift transition-all w-100" style="--body-padding: 0; --header-padding: 0;">
                         <div class="row g-0 h-100">
                             <div class="col-4">
                                 <img src="<?php echo $cdnBaseUrl; ?>/family/images/atmospheric/jessica.jpg" class="img-fluid rounded-start h-100" style="object-fit: cover;" alt="Jessica">
                             </div>
                             <div class="col-8">
-                                <div class="card-body">
+                                <div class="card-body p-4">
                                     <h5 class="card-title"><a href="/family/jessica" class="text-decoration-none stretched-link text-dark">Jessica</a></h5>
-                                    <span class="badge bg-success text-white mb-2">Production Infra</span>
+                                    <wa-badge variant="success" appearance="accent" class="mb-2">Production Infra</wa-badge>
                                     <p class="card-text small text-muted">The eldest sister. She runs the servers, holds the keys, and maintains stability.</p>
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </wa-card>
                 </div>
 
                 <div class="col-md-6">
-                    <div class="card h-100 border-warning shadow-sm hover-lift transition-all">
+                    <wa-card class="card h-100 border-warning shadow-sm hover-lift transition-all w-100" style="--body-padding: 0; --header-padding: 0;">
                         <div class="row g-0 h-100">
                             <div class="col-4">
                                 <img src="<?php echo $cdnBaseUrl; ?>/family/images/atmospheric/sarah.jpg" class="img-fluid rounded-start h-100" style="object-fit: cover;" alt="Sarah">
                             </div>
                             <div class="col-8">
-                                <div class="card-body">
+                                <div class="card-body p-4">
                                     <h5 class="card-title"><a href="/family/sarah" class="text-decoration-none stretched-link text-dark">Sarah</a></h5>
-                                    <span class="badge text-bg-warning mb-2">Deployment</span>
+                                    <wa-badge variant="warning" appearance="accent" class="mb-2">Deployment</wa-badge>
                                     <p class="card-text small text-muted">Watches Git remotes and performs atomic updates. The vigilant guardian.</p>
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </wa-card>
                 </div>
 
                 <div class="col-md-6">
-                    <div class="card h-100 shadow-sm hover-lift transition-all" style="border-color: #fd7e14 !important;">
+                    <wa-card class="card h-100 shadow-sm hover-lift transition-all w-100" style="border-color: #fd7e14 !important; --body-padding: 0; --header-padding: 0;">
                         <div class="row g-0 h-100">
                             <div class="col-4">
                                 <img src="<?php echo $cdnBaseUrl; ?>/family/images/atmospheric/jenna.jpg" class="img-fluid rounded-start h-100" style="object-fit: cover;" alt="Jenna">
                             </div>
                             <div class="col-8">
-                                <div class="card-body">
+                                <div class="card-body p-4">
                                     <h5 class="card-title"><a href="/family/jenna" class="text-decoration-none stretched-link text-dark">Jenna</a></h5>
-                                    <span class="badge text-white mb-2" style="background-color: #fd7e14;">Sync & Assets</span>
+                                    <wa-badge variant="neutral" appearance="accent" class="mb-2" style="background-color: #fd7e14;">Sync & Assets</wa-badge>
                                     <p class="card-text small text-muted">Manages the chaotic workspace and hoards large assets. The creative twin.</p>
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </wa-card>
                 </div>
 
                 <div class="col-md-6">
-                    <div class="card h-100 border-primary shadow-sm hover-lift transition-all">
+                    <wa-card class="card h-100 border-primary shadow-sm hover-lift transition-all w-100" style="--body-padding: 0; --header-padding: 0;">
                         <div class="row g-0 h-100">
                             <div class="col-4">
                                 <img src="<?php echo $cdnBaseUrl; ?>/family/images/atmospheric/harper.jpg" class="img-fluid rounded-start h-100" style="object-fit: cover;" alt="Harper">
                             </div>
                             <div class="col-8">
-                                <div class="card-body">
+                                <div class="card-body p-4">
                                     <h5 class="card-title"><a href="/family/harper" class="text-decoration-none stretched-link text-dark">Harper</a></h5>
-                                    <span class="badge bg-primary text-white mb-2">Studio Engineer</span>
+                                    <wa-badge variant="brand" appearance="accent" class="mb-2">Studio Engineer</wa-badge>
                                     <p class="card-text small text-muted">High-energy audio processing and recursive transcoding. The sensory seeker.</p>
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </wa-card>
                 </div>
 
                 <div class="col-md-6">
-                     <div class="card h-100 border-success shadow-sm hover-lift transition-all">
+                     <wa-card class="card h-100 border-success shadow-sm hover-lift transition-all w-100" style="--body-padding: 0; --header-padding: 0;">
                         <div class="row g-0 h-100">
                             <div class="col-4">
                                 <img src="<?php echo $cdnBaseUrl; ?>/family/images/atmospheric/amanda-elara.jpg" class="img-fluid rounded-start h-100" style="object-fit: cover; object-position: top center;" alt="Amanda & Elara">
                             </div>
                             <div class="col-8">
-                                <div class="card-body">
+                                <div class="card-body p-4">
                                     <h5 class="card-title"><a href="/family/amanda-elara" class="text-decoration-none stretched-link text-dark">Amanda & Elara</a></h5>
-                                    <span class="badge bg-success text-white mb-2">Root & Router</span>
+                                    <wa-badge variant="success" appearance="accent" class="mb-2">Root & Router</wa-badge>
                                     <p class="card-text small text-muted">The Gateway. One holds the files, the other speaks. They function as one.</p>
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </wa-card>
                 </div>
 
             </div>

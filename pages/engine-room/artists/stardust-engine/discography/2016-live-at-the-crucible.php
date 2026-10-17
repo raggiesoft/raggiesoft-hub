@@ -49,9 +49,9 @@ $albumSchema = [
                  class="img-fluid rounded shadow-lg border border-danger border-3" 
                  alt="Live at The Crucible Album Art">
             <div class="position-absolute bottom-0 end-0 m-3">
-                 <span class="badge bg-danger text-white shadow fs-6 border border-white">
+                 <wa-badge variant="danger" appearance="accent" class="shadow fs-6">
                     <i class="fa-solid fa-fire-flame-curved me-2"></i>SOLD OUT
-                 </span>
+                 </wa-badge>
             </div>
         </div>
 
@@ -77,9 +77,9 @@ $albumSchema = [
 
     <div class="mt-5">
         <div class="text-center mb-5">
-            <span class="badge bg-danger-subtle text-danger-emphasis rounded-pill px-3 py-2 shadow-sm mb-3 border border-danger-subtle text-uppercase letter-spacing-1">
+            <wa-badge variant="danger" appearance="filled-outlined" pill class="text-danger-emphasis px-3 py-2 shadow-sm mb-3 text-uppercase letter-spacing-1">
                 <i class="fa-solid fa-football-helmet me-2"></i>Stadium Lore
-            </span>
+            </wa-badge>
             <h2 class="display-5 fw-bold text-uppercase text-body-emphasis" style="font-family: 'Impact', sans-serif;">
                 Ignition (The Forger's Call)
             </h2>
@@ -90,11 +90,11 @@ $albumSchema = [
 
         <div class="row g-5">
             <div class="col-lg-6">
-                <div class="card border-danger bg-body-tertiary shadow-sm h-100">
-                    <div class="card-header bg-danger bg-opacity-10 text-danger-emphasis fw-bold text-uppercase">
+                <wa-card class="card border-danger bg-body-tertiary shadow-sm h-100 w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
+                    <div class="card-header bg-danger bg-opacity-10 text-danger-emphasis fw-bold text-uppercase p-3">
                         <i class="fa-duotone fa-file-music me-2"></i>The 1986 Contest
                     </div>
-                    <div class="card-body">
+                    <div class="card-body p-4">
                         <p class="card-text text-body-secondary">
                             In 1986, long before they had a record deal, the five members of The Stardust Engine entered a student contest to replace the dated, traditional marching band song used for the CPI football team's field entrance.
                         </p>
@@ -105,15 +105,15 @@ $albumSchema = [
                             ARCHIVAL NOTE: This 2016 live album is the ONE and ONLY place you can find a commercially released recording of this track. Otherwise, you must physically attend a Saturday home game at The Crucible to hear it.
                         </p>
                     </div>
-                </div>
+                </wa-card>
             </div>
 
             <div class="col-lg-6">
-                <div class="card border-warning bg-body-tertiary shadow-sm h-100">
-                    <div class="card-header bg-warning bg-opacity-10 text-warning-emphasis fw-bold text-uppercase">
+                <wa-card class="card border-warning bg-body-tertiary shadow-sm h-100 w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
+                    <div class="card-header bg-warning bg-opacity-10 text-warning-emphasis fw-bold text-uppercase p-3">
                         <i class="fa-duotone fa-shoe-prints me-2"></i>The Stomp
                     </div>
-                    <div class="card-body">
+                    <div class="card-body p-4">
                         <p class="card-text text-body-secondary">
                             <em>The Stomp</em> was never part of the original 1986 sheet music. It started organically in the student section (specifically among the engineering students in the endzone) who began rhythmically stomping their feet on the concrete bleachers to keep time during the song's slow, building intro.
                         </p>
@@ -121,12 +121,12 @@ $albumSchema = [
                             Over the decades, it blossomed into a terrifying 60,000-person synchronized ritual. Today, "The Stomp" is so loud and aggressive that it registers on the geology department's local seismographs. You cannot imagine the song without it.
                         </p>
                     </div>
-                </div>
+                </wa-card>
             </div>
         </div>
 
         <!-- INLINE: Simulated live transcript showcasing the crowd interaction for 'Ignition' -->
-        <div class="card border-secondary bg-dark text-light shadow-lg mt-5">
+        <wa-card class="card border-secondary bg-dark text-light shadow-lg mt-5 w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
             <div class="card-header bg-black text-danger fw-bold text-center text-uppercase letter-spacing-1 p-3">
                 <i class="fa-solid fa-microphone-stand me-2"></i>Live Transcript: Track 01
             </div>
@@ -207,9 +207,9 @@ $albumSchema = [
 
                 </div>
             </div>
-        </div>
+        </wa-card>
 
-        <div class="card border-success bg-dark shadow-sm mt-5">
+        <wa-card class="card border-success bg-dark shadow-sm mt-5 w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
             <div class="card-header bg-success bg-opacity-10 border-success text-success fw-bold text-uppercase letter-spacing-1 p-3 d-flex align-items-center">
                 <i class="fa-duotone fa-sliders-simple me-2"></i>Archivist Note: The Suno Engineering Guide
             </div>
@@ -221,7 +221,7 @@ $albumSchema = [
                     Massive Stadium Rock, Live Industrial Metal, Spoken Word Intro, Heavy Guitar Riff, Thundering Stadium Drums, Rhythmic Foot Stomping, Heavy Percussive Stomp, Call and Response, 60,000 Person Crowd Chant, Arena Ambience, Wall of Sound, Huge Concrete Reverb, Thunderous Low-End, Gravelly Male Vocal, Epic, Aggressive, Cathartic
                 </div>
             </div>
-        </div>
+        </wa-card>
 
     </div>
 </div>

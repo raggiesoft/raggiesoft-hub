@@ -76,58 +76,51 @@
     }
 </style>
 
-<!-- LEGACY LAYOUT: Primary documentation links container wrapped in a Web Awesome compatible Card structure. -->
-<div class="card bg-hud-base border-0 shadow-sm mb-4">
-    <div class="card-body p-3 p-xl-4">
-        <h5 class="pb-2 mb-3 border-bottom border-secondary-subtle text-uppercase h6 fw-bold ">
-            <i slot="start" class="fa-solid fa-book-open"></i> Documentation
+<!-- [LAYOUT] Primary documentation links container wrapped in a Web Awesome <wa-card> structure. -->
+<wa-card class="bg-hud-base border-0 shadow-sm mb-4 w-100">
+    <div class="p-1 p-xl-2">
+        <h5 class="pb-2 mb-3 border-bottom border-secondary-subtle text-uppercase h6 fw-bold">
+            <i class="fa-solid fa-book-open me-2" aria-hidden="true"></i>Documentation
         </h5>
         <div class="d-flex flex-column gap-1">
-            
-                <wa-button appearance="plain" href="/raggiesoft-media/projects/stardust-engine-cms" class="text-body w-100 text-start justify-content-start" style="text-align: left;">
-                    <i slot="start" class="fa-duotone fa-rocket-launch fa-fw me-2 text-primary" aria-hidden="true"></i> Overview
-                </wa-button>
-            
-            
-                <wa-button appearance="plain" href="/raggiesoft-media/projects/stardust-engine-cms/elara" class="text-body w-100 text-start justify-content-start" style="text-align: left;">
-                    <i slot="start" class="fa-brands fa-js fa-fw"></i> Elara SPA Router
-                </wa-button>
-            
-            
-                <wa-button appearance="plain" href="/raggiesoft-media/projects/stardust-engine-cms/configuration" class="text-body w-100 text-start justify-content-start" style="text-align: left;">
-                    <i slot="start" class="fa-solid fa-brackets-curly fa-fw"></i> JSON Routing
-                </wa-button>
-            
-            
-                <wa-button appearance="plain" href="/raggiesoft-media/projects/stardust-engine-cms/deployment" class="text-body w-100 text-start justify-content-start" style="text-align: left;">
-                    <i slot="start" class="fa-solid fa-terminal fa-fw"></i> Deploy: Jenna & Sarah
-                </wa-button>
-            
+            <wa-button appearance="plain" href="/raggiesoft-media/projects/stardust-engine-cms" class="text-body w-100 text-start justify-content-start" style="text-align: left;">
+                <i slot="start" class="fa-duotone fa-rocket-launch fa-fw text-primary" aria-hidden="true"></i> Overview
+            </wa-button>
+
+            <wa-button appearance="plain" href="/raggiesoft-media/projects/stardust-engine-cms/elara" class="text-body w-100 text-start justify-content-start" style="text-align: left;">
+                <i slot="start" class="fa-brands fa-js fa-fw" aria-hidden="true"></i> Elara SPA Router
+            </wa-button>
+
+            <wa-button appearance="plain" href="/raggiesoft-media/projects/stardust-engine-cms/configuration" class="text-body w-100 text-start justify-content-start" style="text-align: left;">
+                <i slot="start" class="fa-solid fa-brackets-curly fa-fw" aria-hidden="true"></i> JSON Routing
+            </wa-button>
+
+            <wa-button appearance="plain" href="/raggiesoft-media/projects/stardust-engine-cms/deployment" class="text-body w-100 text-start justify-content-start" style="text-align: left;">
+                <i slot="start" class="fa-solid fa-terminal fa-fw" aria-hidden="true"></i> Deploy: Jenna &amp; Sarah
+            </wa-button>
         </div>
     </div>
-</div>
+</wa-card>
 
-<div class="card border-0 bg-transparent">
-    <div class="card-body p-0 p-xl-2">
+<wa-card appearance="plain" class="border-0 bg-transparent w-100">
+    <div class="p-0 p-xl-1">
         <h6 class="text-uppercase fw-bold text-body-secondary mb-3 small border-bottom border-secondary-subtle pb-2">
-            <i slot="start" class="fa-brands fa-github"></i> Repository Links
+            <i class="fa-brands fa-github me-2" aria-hidden="true"></i>Repository Links
         </h6>
         <div class="d-flex flex-column gap-1">
-            
-                <a class="aero-external-link link-secondary fw-bold" href="https://github.com/raggiesoft/stardust-engine-cms" target="_blank" rel="noopener noreferrer">
-                    <span class="d-flex align-items-center justify-content-between">
-                        <span><i slot="start" class="fa-solid fa-code-branch me-2 " aria-hidden="true"></i> Source Code</span>
-                        <i class="fa-solid fa-arrow-up-right-from-square small " aria-hidden="true"></i>
-                    </span>
-                </a>
-            
-            
-                <a class="aero-external-link link-secondary fw-bold" href="https://github.com/raggiesoft/stardust-engine-cms/issues" target="_blank" rel="noopener noreferrer">
-                    <span class="d-flex align-items-center justify-content-between">
-                        <span><i slot="start" class="fa-solid fa-bug"></i> Report an Issue</span>
-                        <i slot="start" class="fa-solid fa-arrow-up-right-from-square small " aria-hidden="true"></i> </span>
-                </a>
-            
+            <a class="aero-external-link link-secondary fw-bold" href="https://github.com/raggiesoft/stardust-engine-cms" target="_blank" rel="noopener noreferrer">
+                <span class="d-flex align-items-center justify-content-between">
+                    <span><i class="fa-solid fa-code-branch me-2" aria-hidden="true"></i>Source Code</span>
+                    <i class="fa-solid fa-arrow-up-right-from-square small" aria-hidden="true"></i>
+                </span>
+            </a>
+
+            <a class="aero-external-link link-secondary fw-bold" href="https://github.com/raggiesoft/stardust-engine-cms/issues" target="_blank" rel="noopener noreferrer">
+                <span class="d-flex align-items-center justify-content-between">
+                    <span><i class="fa-solid fa-bug me-2" aria-hidden="true"></i>Report an Issue</span>
+                    <i class="fa-solid fa-arrow-up-right-from-square small" aria-hidden="true"></i>
+                </span>
+            </a>
         </div>
     </div>
-</div>
+</wa-card>

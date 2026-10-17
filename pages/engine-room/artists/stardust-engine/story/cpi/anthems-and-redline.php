@@ -50,9 +50,9 @@ $nav = [
     <!-- [HERO HEADER] Chapter 3 Title & Subtitle -->
     <div class="row justify-content-center mb-5">
         <div class="col-lg-9 text-center">
-            <span class="badge bg-warning text-dark rounded-pill px-3 py-2 shadow-sm mb-3 text-uppercase fw-bold">
+            <wa-badge variant="warning" appearance="accent" pill class="px-3 py-2 shadow-sm mb-3 text-uppercase fw-bold">
                 <i class="fa-duotone fa-bullhorn me-2"></i>Chapter 3 of 5 // Music &amp; Contract Lore
-            </span>
+            </wa-badge>
             <h1 class="display-3 fw-bold text-uppercase text-body-emphasis mb-0" style="font-family: 'Impact', sans-serif;">
                 Stadium Anthems &amp; The 1986 Redline
             </h1>
@@ -73,11 +73,11 @@ $nav = [
             </div>
 
             <p>
-                In October 1986, the O'Connell siblings and Wright twins (soon to be <strong>The Stardust Engine</strong>) entered a student-run contest to replace the traditional marching band fanfare that the CPI football team ran onto the field to. In their two-car garage on Progress Street NE, they recorded <strong>"Ignition (The Forger's Call)"</strong>—a heavy, pounding industrial-rock track anchored by drummer <a href="/engine-room/artists/stardust-engine/band/tyler-wright">Tyler Wright</a> striking a salvaged automobile brake drum with a sledgehammer (<em>TING... BOOM!</em>).
+                In October 1986, the O'Connell siblings and Wright twins (soon to be <strong>The Stardust Engine</strong>) entered a student-run contest to replace the traditional marching band fanfare that the CPI football team ran onto the field to. In their two-car garage on Progress Street NE, they recorded <strong>"Ignition (The Forger's Call)"</strong>—a heavy, pounding industrial-rock track anchored by drummer <a href="/engine-room/artists/stardust-engine/band/tyler-wright">Tyler Wright</a> striking a salvaged automobile brake drum with a sledgehammer (<em>TING... BOOM!</em>). On <strong>Saturday, October 18, 1986</strong>, the raw garage cassette made its thunderous pre-game debut over the PA system inside <strong>The Crucible</strong>—launching a Saturday night tradition that has shaken the Blacksburg valley ever since.
             </p>
 
             <!-- [CALLOUT] The 1986 Progress Street Redline -->
-            <div class="card bg-body-tertiary shadow-sm my-4 border-start border-5 border-warning" id="progress-street-redline">
+            <wa-card class="card bg-body-tertiary shadow-sm my-4 border-start border-5 border-warning w-100" id="progress-street-redline" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
                 <div class="card-body p-4">
                     <h3 class="h5 fw-bold mb-2">
                         <i class="fa-duotone fa-file-signature me-2 text-warning"></i>The 1986 Progress Street Redline: How a Dual-Enrolled 16-Year-Old Outsmarted University Counsel
@@ -86,13 +86,13 @@ $nav = [
                         When the CPI Student Government Association handed out the entry packet for the October 1986 anthem contest, the back of the standard release form contained a buried <strong>"Work Made for Hire"</strong> clause that would have transferred 100% of the winning song's master and publishing rights to the CPI Athletic Foundation. Sixteen-year-old prodigy <a href="/engine-room/artists/stardust-engine/band/holly-oconnell" class="fw-bold">Holly O'Connell</a>—who was <strong>dual-enrolled</strong> at <strong>Blacksburg High School</strong> and <strong>CPI</strong>, riding Blue Ridge Transit Route 1 to campus every afternoon to take undergraduate business and contract law electives—refused to let her siblings and cousins sign it.
                     </p>
                     <p class="mb-0">
-                        Sitting at the Progress Street kitchen table with a red pen, Holly struck the Work-for-Hire clause and negotiated a <strong>$1.00 Perpetual Mutual Cross-License</strong> with CPI's Office of University Counsel. Under Holly's agreement, The Stardust Engine retained 100% of their master and publishing rights while granting CPI Athletics and the Marching Forgers a perpetual, royalty-free synchronization license to blast <em>"Ignition"</em> (and future Stardust Engine anthems) inside <strong>The Crucible</strong>. In exchange, CPI's Office of Trademarks &amp; Licensing granted the band (and any label they wholly owned) a perpetual, worldwide, royalty-free <strong>Co-Existence &amp; Artistic Reference License</strong> to sing and print <strong>CPI</strong>, <strong>Commonwealth Polytechnic Institute</strong>, <strong>The Forgers</strong>, and <strong>The Crucible</strong> in their songs and liner notes. Eighteen years later, in October 2004, Holly pulled that exact 1986 contract from the Engine Room Records vault to stage the most famous secret song premiere in college football history.
+                        Sitting at the Progress Street kitchen table with a red pen days before the <strong>October 18, 1986</strong> stadium debut, Holly struck the Work-for-Hire clause and negotiated a <strong>$1.00 Perpetual Mutual Cross-License</strong> with CPI's Office of University Counsel. Under Holly's agreement, The Stardust Engine retained 100% of their master and publishing rights while granting CPI Athletics and the Marching Forgers a perpetual, royalty-free synchronization license to blast <em>"Ignition"</em> (and future Stardust Engine anthems) inside <strong>The Crucible</strong>. In exchange, CPI's Office of Trademarks &amp; Licensing granted the band (and any label they wholly owned) a perpetual, worldwide, royalty-free <strong>Co-Existence &amp; Artistic Reference License</strong> to sing and print <strong>CPI</strong>, <strong>Commonwealth Polytechnic Institute</strong>, <strong>The Forgers</strong>, and <strong>The Crucible</strong> in their songs and liner notes. Eighteen years later, in October 2004, Holly pulled that exact 1986 contract from the Engine Room Records vault to stage the most famous secret song premiere in college football history—and on <strong>October 18, 2011</strong>, the band celebrated the exact <strong>25th Anniversary</strong> of <em>"Ignition"</em> debuting inside The Crucible by releasing their Burnout Hiatus retrospective, <a href="/engine-room/artists/stardust-engine/discography/2011-starfield-calibration" class="fw-bold"><em>Starfield Calibration</em></a>.
                     </p>
                 </div>
-            </div>
+            </wa-card>
 
             <!-- [CALLOUT] The 1989 Rivalry Game & The Marching Drill -->
-            <div class="alert alert-secondary shadow-sm my-4 border-start border-5 border-secondary">
+            <wa-callout variant="neutral" appearance="accent" class="shadow-sm my-4 d-block">
                 <h3 class="alert-heading h5 fw-bold"><i class="fa-duotone fa-bolt me-2"></i>The 1989 Rivalry Game (Virginia Piedmont University) &amp; "The Stomp"</h3>
                 <p class="mb-2">
                     What makes the tradition legendary is that its most terrifying element didn't exist when the band submitted their raw cassette in 1986. The rhythmic <strong>"Stomp"</strong> and the deafening crowd chants of <strong>"IGNITION!"</strong> evolved completely organically during a freezing November 1989 night game against traditional state rivals <strong>Virginia Piedmont University (VPU)</strong>. Trying to stay warm and get rowdy, students packed into the North End Zone (<strong>The Anvil</strong>) started stomping their heavy winter boots on the galvanized metal bleachers in perfect time with Tyler’s recorded brake drum: <em>TING... BOOM!</em>
@@ -101,7 +101,7 @@ $nav = [
                 <p class="mb-0">
                     Because it was heavy boots on hollow steel bleachers, it echoed across the valley like cannon fire. During the pauses where Ryan screams <em>"IGNITION!"</em> on the tape, visiting VPU fans tried to boo—so 20,000 CPI students spontaneously roared <strong>"IGNITION!"</strong> right back at the PA system while mimicking the <strong>Marching Forgers'</strong> bridge cadence (swaying <strong>Left, Right, Left, Right</strong> in unison). By the mid-1990s, the Athletic Director cemented the ritual by cutting the stadium lights to pitch black right before the tape rolls, leaving opposing teams in the dark listening to 65,000 people register on the campus seismographs.
                 </p>
-            </div>
+            </wa-callout>
         </div>
     </div>
 
@@ -113,7 +113,7 @@ $nav = [
                     <h2 class="fw-bold mb-0" style="color: var(--cpi-maroon, #630031);">
                         <i class="fa-duotone fa-bullhorn me-2"></i>2. "BAH! BAH! BAH!": The Ironheads &amp; The October 8, 2004 Secret Premiere
                     </h2>
-                    <span class="badge bg-warning text-dark font-monospace">OCT 8, 2004 — 4TH QUARTER</span>
+                    <wa-badge variant="warning" appearance="accent" class="font-monospace">OCT 8, 2004 — 4TH QUARTER</wa-badge>
                 </div>
                 <p class="lead mt-2 mb-0">
                     How Holly O'Connell ambushed 65,000 fans during the <strong>Coal &amp; Iron Border War</strong> against <strong>#6 Monongahela State</strong>—48 hours before <em>Progress Street</em> hit record stores.
@@ -122,7 +122,7 @@ $nav = [
 
             <div class="row g-4 align-items-stretch mb-4">
                 <div class="col-lg-5">
-                    <div class="card h-100 bg-body-tertiary shadow-sm border-start border-5 border-danger">
+                    <wa-card class="card h-100 bg-body-tertiary shadow-sm border-start border-5 border-danger w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
                         <div class="card-body p-4">
                             <h3 class="h5 fw-bold text-uppercase mb-2" style="color: var(--cpi-maroon, #630031);">
                                 <i class="fa-solid fa-fire-flame-simple me-2 text-danger"></i>Who Are "The Ironheads"?
@@ -134,14 +134,14 @@ $nav = [
                                 Named in dual tribute to CPI's blue-collar metallurgy heritage and legendary benefactor <strong>Jeremiah "Ironhead" Vance (Class of '52)</strong>, The Ironheads wear painted maroon-and-orange steel-mill hard hats and overalls, refuse to sit down from kickoff to the final whistle, and treat acoustic decibel meters on the sidelines as a personal scoreboard.
                             </p>
                         </div>
-                    </div>
+                    </wa-card>
                 </div>
 
                 <div class="col-lg-7">
-                    <div class="card h-100 bg-body-tertiary shadow-sm border-warning border-2">
-                        <div class="card-header fw-bold d-flex justify-content-between align-items-center" style="background-color: var(--cpi-maroon, #630031); color: #fff;">
+                    <wa-card class="card h-100 bg-body-tertiary shadow-sm border-warning border-2 w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
+                        <div class="card-header fw-bold d-flex justify-content-between align-items-center p-3" style="background-color: var(--cpi-maroon, #630031); color: #fff;">
                             <span><i class="fa-solid fa-trophy me-2 text-warning"></i>The Black Anvil Trophy ("The Coal &amp; Iron War")</span>
-                            <span class="badge bg-warning text-dark font-monospace">OCT 8, 2004</span>
+                            <wa-badge variant="warning" appearance="accent" class="font-monospace">OCT 8, 2004</wa-badge>
                         </div>
                         <div class="card-body p-4">
                             <div class="row g-2 mb-3 font-monospace">
@@ -151,7 +151,7 @@ $nav = [
                                             <div class="small text-muted" style="font-size: 0.7rem;">VISITOR (#6 IN NATION)</div>
                                             <div class="fw-bold">MSU Coalminers</div>
                                         </div>
-                                        <span class="badge bg-secondary fs-6">13</span>
+                                        <wa-badge variant="neutral" appearance="accent" class="fs-6">13</wa-badge>
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
@@ -160,7 +160,7 @@ $nav = [
                                             <div class="small text-muted" style="font-size: 0.7rem;">HOME (THE CRUCIBLE)</div>
                                             <div class="fw-bold">CPI Forgers</div>
                                         </div>
-                                        <span class="badge bg-success fs-6">19</span>
+                                        <wa-badge variant="success" appearance="accent" class="fs-6">19</wa-badge>
                                     </div>
                                 </div>
                             </div>
@@ -168,7 +168,7 @@ $nav = [
                                 <strong>The Stage:</strong> The Stardust Engine's homecoming album <a href="/engine-room/artists/stardust-engine/discography/2004-progress-street" class="fw-bold"><em>Progress Street</em></a> was scheduled for release on <strong>Monday, October 10, 2004</strong>. Two nights earlier—on <strong>Saturday, October 8, 2004</strong>—CPI hosted fierce Appalachian border rival <strong>#6 Monongahela State University (MSU)</strong> inside The Crucible. Behind closed doors, <a href="/engine-room/artists/stardust-engine/band/holly-oconnell" class="fw-bold">Holly O'Connell</a> had already executed a confidential addendum under her 1986 <em>$1.00 Perpetual Mutual Cross-License</em> with the CPI Athletic Director. Only three people in Blacksburg knew what was on the unmarked gold master CD-R hand-delivered to the press-box audio booth before kickoff.
                             </p>
                         </div>
-                    </div>
+                    </wa-card>
                 </div>
             </div>
 

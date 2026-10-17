@@ -75,9 +75,9 @@ $pageTitle = "1985 American Shores Tour Archive - Fractured Prisms Lore";
         
         <div class="row justify-content-center mb-5">
             <div class="col-lg-8 text-center">
-                <span class="badge bg-transparent border border-secondary text-white-50 rounded-pill px-3 py-2 mb-3 text-uppercase letter-spacing-1">
+                <wa-badge variant="neutral" appearance="outlined" pill class="text-white-50 px-3 py-2 mb-3 text-uppercase letter-spacing-1">
                     <i class="fa-duotone fa-file-contract me-2"></i>Recovered Archive: Item 85-C
-                </span>
+                </wa-badge>
                 <h1 class="display-4 fw-bold text-glow-prism gothic-font mb-3">
                     The Independence Stadium Manifesto
                 </h1>
@@ -136,7 +136,7 @@ $pageTitle = "1985 American Shores Tour Archive - Fractured Prisms Lore";
                     </div>
                 </div>
 
-                <div class="alert bg-black border border-prism p-4 shadow-lg">
+                <wa-callout variant="neutral" appearance="accent" class="border p-4 shadow-lg d-block">
                     <div class="d-flex align-items-center mb-4 border-bottom border-secondary pb-3">
                         <i class="fa-duotone fa-sliders-up fs-2 text-secondary me-3"></i>
                         <div>
@@ -153,16 +153,16 @@ $pageTitle = "1985 American Shores Tour Archive - Fractured Prisms Lore";
                         <li class="mb-2"><strong class="text-primary">1:05 [The Reverence]:</strong> Rhys sings the first line. The 90,000-seat stadium instantly drops into a pin-drop, reverent silence, acknowledging the profound memorial weight of the song. Claire joins him, and the siblings trade lines in the dark.</li>
                         <li><strong class="text-primary">5:24 [The Secure Decay]:</strong> Final note. Complete stage blackout. House lights do not come up until Claire has securely returned Gwen's flute to its reinforced case.</li>
                     </ul>
-                </div>
+                </wa-callout>
 
             </div>
         </div>
 
         <div class="row mt-5 pt-4 border-top border-prism">
             <div class="col-12 text-center">
-                <a href="/engine-room/artists/fractured-prisms/story" class="btn btn-outline-light rounded-pill px-4 font-monospace small text-uppercase">
-                    <i class="fa-duotone fa-arrow-left me-2"></i>Return to The Lore
-                </a>
+                <wa-button variant="neutral" appearance="outlined" pill href="/engine-room/artists/fractured-prisms/story" class="px-4 font-monospace small text-uppercase">
+                    <i slot="start" class="fa-duotone fa-arrow-left"></i>Return to The Lore
+                </wa-button>
             </div>
         </div>
 

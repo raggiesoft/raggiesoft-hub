@@ -31,9 +31,9 @@ $pageTitle = "The $150M Offer Letter - Evidence Item #01-A";
     
     <div class="row justify-content-center mb-5">
         <div class="col-lg-8 text-center">
-            <span class="badge bg-secondary-subtle text-secondary-emphasis rounded-pill px-3 py-2 mb-3 text-uppercase letter-spacing-1 shadow-sm border border-secondary-subtle">
+            <wa-badge variant="neutral" appearance="filled-outlined" pill class="text-secondary-emphasis px-3 py-2 mb-3 text-uppercase letter-spacing-1 shadow-sm">
                 <i class="fa-duotone fa-file-invoice-dollar me-2"></i>Exhibit B: The Term Sheet
-            </span>
+            </wa-badge>
             <h1 class="display-4 fw-bold text-body-emphasis mb-2" style="font-family: 'Impact', sans-serif;">
                 THE $150,000,000 LIE
             </h1>
@@ -45,7 +45,7 @@ $pageTitle = "The $150M Offer Letter - Evidence Item #01-A";
 
     <div class="row justify-content-center mb-5">
         <div class="col-lg-10">
-            <div class="card bg-body-tertiary border-secondary shadow-lg overflow-hidden">
+            <wa-card class="card bg-body-tertiary border-secondary shadow-lg overflow-hidden w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
                 <div class="row g-0">
                     <div class="col-lg-6 position-relative min-vh-25">
                          <img src="<?php echo $cdnBaseUrl; ?>/engine-room-records/images/omni-global/150-million-refusal.jpg" 
@@ -82,13 +82,13 @@ $pageTitle = "The $150M Offer Letter - Evidence Item #01-A";
                         </div>
                     </div>
                 </div>
-            </div>
+            </wa-card>
         </div>
     </div>
 
     <div class="row justify-content-center mb-5">
         <div class="col-lg-10">
-            <div class="card border-0 shadow-lg bg-white text-dark position-relative" style="min-height: 800px;">
+            <wa-card class="card border-0 shadow-lg bg-white text-dark position-relative w-100" style="min-height: 800px; --body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
                 
                 <div class="card-header bg-white border-bottom border-2 border-dark py-4">
                     <div class="d-flex justify-content-between align-items-center">
@@ -164,7 +164,7 @@ $pageTitle = "The $150M Offer Letter - Evidence Item #01-A";
                     <i class="fa-solid fa-file-contract fa-10x text-dark"></i>
                 </div>
 
-            </div>
+            </wa-card>
         </div>
     </div>
     

@@ -36,9 +36,9 @@
                 <p class=" small fst-italic" style="max-width: 400px; font-family: 'Georgia', serif;">
                     "Two twins. One broken world. And a debt that must be paid in fire."
                 </p>
-                <div class="mt-4">
-                    <span class="badge bg-dark border border-secondary  me-2">Fantasy Adventure</span>
-                    <span class="badge bg-dark border border-secondary ">Est. 1989 (In Spirit)</span>
+                <div class="mt-4 d-flex gap-2 flex-wrap">
+                    <wa-badge variant="neutral" appearance="outlined">Fantasy Adventure</wa-badge>
+                    <wa-badge variant="neutral" appearance="outlined">Est. 1989 (In Spirit)</wa-badge>
                 </div>
             </div>
 

@@ -153,59 +153,53 @@ wa-button.dsp-youtube:hover::part(base) { background-color: #ff3333 !important; 
             <wa-button slot="trigger" size="<?php echo htmlspecialchars($size); ?>" class="toggle-store-btn px-2 <?php echo $platforms[$default]['class']; ?>">
                 <i class="fa-solid fa-chevron-down"></i>
             </wa-button>
-            <wa-menu class="bg-body rounded-3 shadow-lg border border-secondary border-opacity-25" style="--wa-panel-background-color: inherit; padding: 0; overflow: hidden;">
-                <div class="px-3 py-2 bg-body-tertiary border-bottom border-secondary-subtle mb-2">
-                    <span class="d-block fw-bold text-primary mb-1"><i class="fa-solid fa-memory me-1"></i> Set Global Default</span>
-                    <span class="d-block small text-body-secondary lh-sm" style="font-size: 0.8em;">Select your preferred app. We will remember it for all future albums.</span>
-                </div>
-                <?php foreach ($platforms as $key => $data): ?>
-                    <?php if (!empty($ids[$key])): ?>
-                        <!-- 
-                          Store Selector Item:
-                          The `data-*` attributes here are critical. They are read by an external 
-                          JavaScript file (likely a `store.js`) to dynamically update the main button
-                          when a user selects a new global default platform.
-                        -->
-                        <wa-menu-item class="store-selector-link"
-                           value="<?php echo $key; ?>"
-                           data-platform="<?php echo $key; ?>"
-                           data-class="<?php echo $data['class']; ?>"
-                           data-icon="<?php echo $data['icon']; ?>"
-                           data-name="<?php echo $data['text']; ?>"
-                           data-url="<?php echo $urls[$key]; ?>">
-                            <i slot="prefix" class="<?php echo $data['icon']; ?> text-<?php echo $data['class']; ?>"></i> 
-                            <a href="<?php echo $urls[$key]; ?>" target="_blank" class="text-decoration-none text-body fw-bold stretched-link">
-                                <?php echo $data['text']; ?>
-                            </a>
-                        </wa-menu-item>
-                    <?php endif; ?>
-                <?php endforeach; ?>
-            </wa-menu>
+            <div class="px-3 py-2 bg-body-tertiary border-bottom border-secondary-subtle mb-1" style="max-width: 240px;">
+                <span class="d-block fw-bold text-primary mb-1"><i class="fa-solid fa-memory me-1"></i> Set Global Default</span>
+                <span class="d-block small text-body-secondary lh-sm" style="font-size: 0.8em;">Select your preferred app. We will remember it for all future albums.</span>
+            </div>
+            <?php foreach ($platforms as $key => $data): ?>
+                <?php if (!empty($ids[$key])): ?>
+                    <!-- 
+                      Store Selector Item:
+                      The `data-*` attributes here are critical. They are read by `initializeStorePreferences()`
+                      in `includes/footer.php` to dynamically update the main button when a user selects a new default platform.
+                    -->
+                    <wa-dropdown-item class="store-selector-link position-relative"
+                       value="<?php echo $key; ?>"
+                       data-platform="<?php echo $key; ?>"
+                       data-class="<?php echo $data['class']; ?>"
+                       data-icon="<?php echo $data['icon']; ?>"
+                       data-name="<?php echo $data['text']; ?>"
+                       data-url="<?php echo $urls[$key]; ?>">
+                        <i slot="icon" class="<?php echo $data['icon']; ?> text-<?php echo $data['class']; ?>"></i> 
+                        <a href="<?php echo $urls[$key]; ?>" target="_blank" class="text-decoration-none text-body fw-bold stretched-link">
+                            <?php echo $data['text']; ?>
+                        </a>
+                    </wa-dropdown-item>
+                <?php endif; ?>
+            <?php endforeach; ?>
         </wa-dropdown>
     </wa-button-group>
 
     <?php if ($hasMerch): ?>
     <wa-dropdown placement="bottom-end">
-        <wa-button slot="trigger" size="<?php echo htmlspecialchars($size); ?>" variant="warning" appearance="outlined" class="fw-bold">
+        <wa-button slot="trigger" size="<?php echo htmlspecialchars($size); ?>" variant="warning" appearance="outlined" class="fw-bold" with-caret>
             <i slot="start" class="fa-solid fa-cart-shopping"></i> Buy Physical
-            <i slot="suffix" class="fa-solid fa-chevron-down ms-2"></i>
         </wa-button>
-        <wa-menu class="bg-body rounded-3 shadow-lg border border-secondary border-opacity-25" style="--wa-panel-background-color: inherit; padding: 0; overflow: hidden;">
-            <div class="px-3 py-2 bg-body-tertiary border-bottom border-warning-subtle mb-2">
-                <span class="d-block fw-bold text-warning-emphasis mb-1"><i class="fa-solid fa-box-open me-1"></i> Official Merchandise</span>
-                <span class="d-block small text-body-secondary lh-sm" style="font-size: 0.8em;">Orders fulfilled via our on-demand partners.</span>
-            </div>
-            <?php foreach ($physical as $key => $url): ?>
-                <?php if (!empty($url)): ?>
-                    <wa-menu-item>
-                        <i slot="prefix" class="<?php echo $merchConfig[$key]['icon']; ?> text-<?php echo $merchConfig[$key]['color']; ?>"></i> 
-                        <a href="<?php echo htmlspecialchars($url); ?>" target="_blank" class="text-decoration-none text-body fw-bold stretched-link">
-                            <?php echo $merchConfig[$key]['text']; ?>
-                        </a>
-                    </wa-menu-item>
-                <?php endif; ?>
-            <?php endforeach; ?>
-        </wa-menu>
+        <div class="px-3 py-2 bg-body-tertiary border-bottom border-warning-subtle mb-1" style="max-width: 240px;">
+            <span class="d-block fw-bold text-warning-emphasis mb-1"><i class="fa-solid fa-box-open me-1"></i> Official Merchandise</span>
+            <span class="d-block small text-body-secondary lh-sm" style="font-size: 0.8em;">Orders fulfilled via our on-demand partners.</span>
+        </div>
+        <?php foreach ($physical as $key => $url): ?>
+            <?php if (!empty($url)): ?>
+                <wa-dropdown-item class="position-relative">
+                    <i slot="icon" class="<?php echo $merchConfig[$key]['icon']; ?> text-<?php echo $merchConfig[$key]['color']; ?>"></i> 
+                    <a href="<?php echo htmlspecialchars($url); ?>" target="_blank" class="text-decoration-none text-body fw-bold stretched-link">
+                        <?php echo $merchConfig[$key]['text']; ?>
+                    </a>
+                </wa-dropdown-item>
+            <?php endif; ?>
+        <?php endforeach; ?>
     </wa-dropdown>
     <?php endif; ?>
 

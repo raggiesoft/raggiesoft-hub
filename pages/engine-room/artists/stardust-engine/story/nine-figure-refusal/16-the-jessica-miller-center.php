@@ -51,9 +51,9 @@ $pageTitle = "The Jessica Miller Center - Engine Room History";
     
     <div class="row justify-content-center mb-5">
         <div class="col-lg-8 text-center">
-            <span class="badge bg-success-subtle text-success-emphasis rounded-pill px-3 py-2 mb-3 text-uppercase letter-spacing-1 shadow-sm border border-success-subtle">
+            <wa-badge variant="success" appearance="filled-outlined" pill class="text-success-emphasis px-3 py-2 mb-3 text-uppercase letter-spacing-1 shadow-sm">
                 <i class="fa-duotone fa-building me-2"></i>HQ Status: Active Leasehold (2019-2029)
-            </span>
+            </wa-badge>
             <h1 class="display-4 fw-bold text-body-emphasis mb-2 text-uppercase" style="font-family: 'Impact', sans-serif;">
                 The Jessica Miller Center
             </h1>
@@ -65,7 +65,7 @@ $pageTitle = "The Jessica Miller Center - Engine Room History";
 
     <div class="row justify-content-center mb-5">
         <div class="col-lg-10">
-            <div class="card bg-body-tertiary border-secondary shadow-lg">
+            <wa-card class="card bg-body-tertiary border-secondary shadow-lg w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
                 <div class="card-body p-4">
                     <div class="row align-items-center">
                         <div class="col-md-4 text-center border-end border-secondary-subtle">
@@ -93,23 +93,23 @@ $pageTitle = "The Jessica Miller Center - Engine Room History";
                                     <strong>Subsidiary Entity:</strong> The Jessica Miller Center, LLC (California)<br>
                                     <span class="text-success ms-3">↳ Executive Director: Jessica Miller (Los Angeles, CA)</span>
                                 </p>
-                                <div class="alert alert-success bg-success-subtle border-success mt-3 mb-0 p-2 d-flex align-items-center text-success-emphasis">
-                                    <i class="fa-solid fa-check-circle me-3 fs-4"></i>
+                                <wa-callout variant="success" appearance="accent" class="mt-3 mb-0 p-2 d-block">
+                                    <i slot="icon" class="fa-solid fa-check-circle"></i>
                                     <div>
                                         <strong>The Promotion:</strong> Formerly an unpaid intern (2018), Jessica was appointed Executive Director in Feb 2019. She manages day-to-day logistics for the West Coast hub, reporting directly to Holly O'Connell.
                                     </div>
-                                </div>
+                                </wa-callout>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
+            </wa-card>
         </div>
     </div>
 
     <div class="row justify-content-center mb-5">
         <div class="col-lg-12">
-            <div class="card bg-black border-secondary overflow-hidden">
+            <wa-card class="card bg-black border-secondary overflow-hidden w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
                 <div class="row g-0">
                     
                     <div class="col-md-6 border-end border-secondary position-relative">
@@ -145,7 +145,7 @@ $pageTitle = "The Jessica Miller Center - Engine Room History";
                     </div>
 
                 </div>
-            </div>
+            </wa-card>
         </div>
     </div>
 
@@ -153,11 +153,11 @@ $pageTitle = "The Jessica Miller Center - Engine Room History";
         <div class="col-lg-10">
             
             <div class="d-flex align-items-center mb-3">
-                <span class="badge bg-primary me-2">EVIDENCE #14-L</span>
+                <wa-badge variant="brand" appearance="accent" class="me-2">EVIDENCE #14-L</wa-badge>
                 <h3 class="h5 text-body-emphasis text-uppercase mb-0">The Legal Framework</h3>
             </div>
 
-            <div class="card legal-document rounded-0">
+            <wa-card class="card legal-document rounded-0 w-100" style="--body-padding: 0; --header-padding: 0;">
                 <div class="card-body p-5">
                     
                     <div class="text-center border-bottom border-dark pb-4 mb-5">
@@ -287,13 +287,13 @@ $pageTitle = "The Jessica Miller Center - Engine Room History";
                     <i class="fa-solid fa-scale-balanced me-1"></i> <strong>Compliance Note:</strong> This lease is structured as an "Arm's Length Transaction" in accordance with IRS Section 482. Rent is set at verified Fair Market Value to avoid self-dealing penalties.
                 </div>
 
-            </div>
+            </wa-card>
         </div>
     </div>
 
     <div class="row justify-content-center mb-5">
         <div class="col-lg-8">
-            <div class="card bg-warning text-dark border-0 shadow-lg text-center p-5">
+            <wa-card class="card bg-warning text-dark border-0 shadow-lg text-center p-5 w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
                 <i class="fa-duotone fa-plaque fa-3x mb-3 opacity-50"></i>
                 <h3 class="font-serif fw-bold text-uppercase mb-4" style="letter-spacing: 2px;">Lobby Dedication</h3>
                 <p class="lead fst-italic mb-4">
@@ -304,14 +304,14 @@ $pageTitle = "The Jessica Miller Center - Engine Room History";
                     Holly O'Connell, CEO<br>
                     <span class="text-body-secondary" style="font-size: 0.8em;">February 14, 2019</span>
                 </p>
-            </div>
+            </wa-card>
         </div>
     </div>
 
     <div class="row justify-content-center mb-5">
         <div class="col-lg-10">
-            <div class="alert alert-dark bg-body-tertiary border-primary d-flex align-items-center" role="alert">
-                <i class="fa-duotone fa-circle-info text-primary fs-2 me-3"></i>
+            <wa-callout variant="brand" appearance="accent" class="d-block">
+                <i slot="icon" class="fa-duotone fa-circle-info text-primary"></i>
                 <div>
                     <h5 class="alert-heading text-primary fw-bold">The Floor Plan Redistribution</h5>
                     <p class="mb-2 small text-body-secondary">
@@ -323,7 +323,7 @@ $pageTitle = "The Jessica Miller Center - Engine Room History";
                         <li><strong>Floor 40 (The Quiet Floor):</strong> Formerly the CEO Penthouse. Now a sensory-deprivation zone <strong>open to all building tenants</strong>.</li>
                     </ul>
                 </div>
-            </div>
+            </wa-callout>
         </div>
     </div>
 

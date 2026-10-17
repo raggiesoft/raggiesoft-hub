@@ -91,7 +91,7 @@ $pageTitle = "Fleet Command // T-Logistics";
                                      alt="2002 Sainte-Claire 45H3 The Iron Horse luxury accessible tour bus">
                             </a>
                             <br><strong>2002 SAINTE-CLAIRE 45H3</strong>
-                            <br><span class="badge bg-info text-dark rounded-0 mt-1">INTERSTATE CRUISER (45 FT)</span>
+                            <br><wa-badge variant="brand" appearance="accent" class="rounded-0 mt-1">INTERSTATE CRUISER (45 FT)</wa-badge>
                         </div>
                         <div class="col-md-8 ps-md-4">
                             <div class="row mb-2">
@@ -123,9 +123,9 @@ $pageTitle = "Fleet Command // T-Logistics";
                                     <span class="stat-ok ms-3">[SYSTEM OK]</span> HVAC
                                     <span class="stat-ok ms-3">[SYSTEM OK]</span> 60" Hydraulic Lift
                                 </div>
-                                <a href="/engine-room/corporate/strategic-assets/the-iron-horse#sainte-claire-45h3" class="btn btn-sm btn-outline-info font-monospace">
+                                <wa-button variant="brand" appearance="outlined" size="small" href="/engine-room/corporate/strategic-assets/the-iron-horse#sainte-claire-45h3" class="font-monospace">
                                     [OPEN FULL DOSSIER]
-                                </a>
+                                </wa-button>
                             </div>
                         </div>
                     </div>
@@ -146,7 +146,7 @@ $pageTitle = "Fleet Command // T-Logistics";
                                      alt="2004 Prairie Coachworks RLFD30 30-foot low-floor shuttle coach">
                             </a>
                             <br><strong>2004 PRAIRIE COACHWORKS RLFD30</strong>
-                            <br><span class="badge bg-warning text-dark rounded-0 mt-1">LOW-FLOOR SHUTTLE (30 FT)</span>
+                            <br><wa-badge variant="warning" appearance="accent" class="rounded-0 mt-1">LOW-FLOOR SHUTTLE (30 FT)</wa-badge>
                         </div>
                         <div class="col-md-8 ps-md-4">
                             <div class="row mb-2">
@@ -172,9 +172,9 @@ $pageTitle = "Fleet Command // T-Logistics";
                                     <span class="stat-ok ms-3">[SYSTEM OK]</span> Kneeling Airbags
                                     <span class="stat-ok ms-3">[SYSTEM OK]</span> Front ADA Ramp
                                 </div>
-                                <a href="/engine-room/corporate/strategic-assets/the-iron-horse#prairie-coachworks-rlfd30" class="btn btn-sm btn-outline-warning font-monospace">
+                                <wa-button variant="warning" appearance="outlined" size="small" href="/engine-room/corporate/strategic-assets/the-iron-horse#prairie-coachworks-rlfd30" class="font-monospace">
                                     [OPEN FULL DOSSIER]
-                                </a>
+                                </wa-button>
                             </div>
                         </div>
                     </div>
@@ -191,7 +191,7 @@ $pageTitle = "Fleet Command // T-Logistics";
                         <div class="col-md-3 text-center border-end border-secondary">
                             <i class="fa-solid fa-van-shuttle fa-4x text-white mb-2"></i>
                             <br><strong>CUSTOM LWB TRANSPORT</strong>
-                            <br><span class="badge bg-secondary rounded-0 mt-2 text-white">TACTICAL</span>
+                            <br><wa-badge variant="neutral" appearance="accent" class="rounded-0 mt-2">TACTICAL</wa-badge>
                         </div>
                         <div class="col-md-9 ps-md-4">
                             <div class="row mb-2">
@@ -202,10 +202,10 @@ $pageTitle = "Fleet Command // T-Logistics";
                                 <div class="col-3 text-secondary">ROLE:</div>
                                 <div class="col-9">Short-Range Extraction // Medical Support</div>
                             </div>
-                            <div class="alert alert-dark border-secondary p-2 mb-0 mt-3">
-                                <i class="fa-solid fa-triangle-exclamation text-warning me-2"></i>
+                            <wa-callout variant="neutral" appearance="accent" class="p-2 mb-0 mt-3 d-block">
+                                <i slot="icon" class="fa-solid fa-triangle-exclamation text-warning"></i>
                                 <strong>PROTOCOL NOTE:</strong> This vehicle is the only approved "Light Transport" for Ryan O'Connell.
-                            </div>
+                            </wa-callout>
                         </div>
                     </div>
                 </div>

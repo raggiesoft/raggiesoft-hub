@@ -62,7 +62,7 @@ if ($is_standalone) {
 
             <!-- START: 404 Terminal Narrative Context -->
             <!-- The Narrative Context -->
-            <div class="card terminal-card p-4 border-danger text-start mb-5 mx-auto" style="max-width: 600px;">
+            <wa-card class="terminal-card border-danger text-start mb-5 mx-auto w-100" style="max-width: 600px;">
                 <div class="terminal-header text-danger">
                     <i class="fa-duotone fa-triangle-exclamation me-2"></i>
                     System Alert // Uplink Failed
@@ -75,17 +75,17 @@ if ($is_standalone) {
                         This could be a result of Axiom censorship, a corrupted navigation buffer, or the page you are looking for has simply drifted into the Weave.
                     </p>
                 </div>
-            </div>
+            </wa-card>
 
             <!-- START: 404 Safe Escape Actions -->
             <!-- The "Safe" Options -->
             <div class="d-flex justify-content-center gap-3 flex-wrap">
-                <a href="/" class="btn btn-outline-secondary rounded-pill px-4">
-                    <i class="fa-duotone fa-radar me-2"></i>Return to Base
-                </a>
-                <a href="/discography" class="btn btn-danger rounded-pill px-4 shadow-glow">
-                    <i class="fa-duotone fa-compact-disc me-2"></i>Access Audio Archives
-                </a>
+                <wa-button href="/" variant="neutral" appearance="outlined" pill>
+                    <i slot="start" class="fa-duotone fa-radar"></i>Return to Base
+                </wa-button>
+                <wa-button href="/engine-room/artists/stardust-engine/discography" variant="danger" appearance="accent" pill class="shadow-glow">
+                    <i slot="start" class="fa-duotone fa-compact-disc"></i>Access Audio Archives
+                </wa-button>
             </div>
 
         </div>

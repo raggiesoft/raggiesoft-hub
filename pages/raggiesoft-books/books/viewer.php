@@ -89,11 +89,11 @@ $mdContent = @file_get_contents($mdUrl);
 
 if ($mdContent === false) {
     echo '<div class="container my-5">';
-    echo '<wa-alert variant="danger" open>';
+    echo '<wa-callout variant="danger" appearance="accent">';
     echo '  <wa-icon slot="icon" name="exclamation-triangle"></wa-icon>';
     echo '  <strong>Error Loading Content</strong><br>';
     echo '  The requested chapter could not be found or loaded from the asset server.';
-    echo '</wa-alert>';
+    echo '</wa-callout>';
     echo '</div>';
     return;
 }
@@ -156,9 +156,11 @@ if (count($pathParts) >= 2) {
         $bookNum = (int)$m[1];
         if (!empty($katie) && isset($katie['books'])) {
             foreach ($katie['books'] as $book) {
-                if (isset($book['book_num']) && $book['book_num'] == $bookNum) {
-                    $sequenceName = $book['book_title'];
-                    break;
+                if (isset($book['book_num']) && $book['book_num']) {
+                    if ($book['book_num'] == $bookNum) {
+                        $sequenceName = $book['book_title'];
+                        break;
+                    }
                 }
             }
         }
@@ -187,7 +189,7 @@ $overviewUrl = dirname($request_uri, 3); // Backs out of /b001/c001/p001
             </wa-breadcrumb>
         </div>
         <wa-button id="open-settings-btn" size="small" variant="neutral" pill>
-            <wa-icon name="gear" slot="prefix"></wa-icon>
+            <wa-icon name="gear" slot="start"></wa-icon>
             Settings
         </wa-button>
     </div>
@@ -245,20 +247,20 @@ $overviewUrl = dirname($request_uri, 3); // Backs out of /b001/c001/p001
         <div>
             <?php if ($prevUrl): ?>
                 <wa-button href="<?php echo htmlspecialchars($prevUrl); ?>" variant="neutral">
-                    <wa-icon name="arrow-left" slot="prefix"></wa-icon>
+                    <wa-icon name="arrow-left" slot="start"></wa-icon>
                     Previous Part
                 </wa-button>
             <?php else: ?>
                 <wa-button disabled variant="neutral">
-                    <wa-icon name="arrow-left" slot="prefix"></wa-icon>
+                    <wa-icon name="arrow-left" slot="start"></wa-icon>
                     Previous Part
                 </wa-button>
             <?php endif; ?>
         </div>
         
         <div class="text-center d-none d-sm-block">
-            <wa-button href="<?php echo htmlspecialchars($overviewUrl); ?>" variant="text" size="small" class="text-body-secondary">
-                <wa-icon name="list" slot="prefix"></wa-icon>
+            <wa-button href="<?php echo htmlspecialchars($overviewUrl); ?>" variant="neutral" appearance="plain" size="small" class="text-body-secondary">
+                <wa-icon name="list" slot="start"></wa-icon>
                 Index
             </wa-button>
         </div>
@@ -269,7 +271,7 @@ $overviewUrl = dirname($request_uri, 3); // Backs out of /b001/c001/p001
             ?>
                 <wa-button href="<?php echo htmlspecialchars($nextUrl); ?>" variant="brand">
                     <?php echo htmlspecialchars($nextText); ?>
-                    <wa-icon name="arrow-right" slot="suffix"></wa-icon>
+                    <wa-icon name="arrow-right" slot="end"></wa-icon>
                 </wa-button>
             <?php else: ?>
                 <wa-button disabled variant="brand">
@@ -282,11 +284,9 @@ $overviewUrl = dirname($request_uri, 3); // Backs out of /b001/c001/p001
 
 <!-- Mobile TOC Toggle FAB -->
 <div class="position-fixed bottom-0 end-0 p-3 mb-4 d-md-none" style="z-index: 1040;">
-    <button id="mobile-toc-toggle-btn" class="btn btn-primary rounded-circle shadow-lg d-flex justify-content-center align-items-center" 
-            type="button" 
-            style="width: 60px; height: 60px; transition: transform 0.2s; background-color: var(--bs-primary); border: none;">
-        <wa-icon name="list" style="font-size: 1.5rem; color: white;"></wa-icon>
-    </button>
+    <wa-button id="mobile-toc-toggle-btn" variant="brand" appearance="accent" pill class="shadow-lg" style="width: 60px; height: 60px;">
+        <wa-icon name="list" style="font-size: 1.5rem;"></wa-icon>
+    </wa-button>
 </div>
 
 

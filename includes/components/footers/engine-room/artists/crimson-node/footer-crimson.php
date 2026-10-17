@@ -53,8 +53,8 @@
                 <h6 class="fw-bold mb-3 text-uppercase brand-font">Navigation</h6>
                 <ul class="nav flex-column small">
                     <li class="nav-item mb-2"><a href="/engine-room/artists/crimson-node/discography" class="nav-link p-0 text-body-secondary">Discography</a></li>
-                    <li class="nav-item mb-2"><a href="/engine-room/artists/crimson-node/family" class="nav-link p-0 text-body-secondary">The Phalanx</a></li>
-                    <li class="nav-item mb-2"><a href="/engine-room/artists/crimson-node/story" class="nav-link p-0 text-body-secondary">The Lore</a></li>
+                    <li class="nav-item mb-2"><a href="/engine-room/artists/crimson-node/characters/family" class="nav-link p-0 text-body-secondary">The Phalanx</a></li>
+                    <li class="nav-item mb-2"><a href="/raggiesoft-books/books/crimson-node" class="nav-link p-0 text-body-secondary">The Lore</a></li>
                 </ul>
             </div>
 

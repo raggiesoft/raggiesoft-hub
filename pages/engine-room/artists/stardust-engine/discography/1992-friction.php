@@ -71,7 +71,7 @@ $albumSchema = [
                 </p>
             </div>
 
-            <div class="card bg-dark border-danger shadow-lg mb-5 position-relative overflow-hidden">
+            <wa-card class="card bg-dark border-danger shadow-lg mb-5 position-relative overflow-hidden w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
                 
                 <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center" 
                      style="z-index: 2; background: rgba(0,0,0,0.6); pointer-events: none;">
@@ -102,15 +102,15 @@ $albumSchema = [
                         </div>
                     </div>
                 </div>
-            </div>
+            </wa-card>
 
             <div class="text-center">
                 <p class="text-secondary mb-4">
                     To understand why this album was destroyed, review the unsealed court transcripts.
                 </p>
-                <a href="/engine-room/artists/stardust-engine/story/friction" class="btn btn-outline-danger rounded-pill px-5 py-3 shadow-glow">
-                    <i class="fa-duotone fa-file-contract me-2"></i>Open Case File
-                </a>
+                <wa-button variant="danger" appearance="outlined" pill href="/engine-room/artists/stardust-engine/story/friction" class="px-5 py-3 shadow-glow">
+                    <i slot="start" class="fa-duotone fa-file-contract"></i>Open Case File
+                </wa-button>
             </div>
 
         </div>

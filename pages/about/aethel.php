@@ -43,8 +43,8 @@
             Of Aethel
         </p>
         <div class="d-flex justify-content-center gap-3">
-            <span class="badge bg-transparent border border-secondary text-secondary rounded-0 px-3 py-2 text-uppercase letter-spacing-2">Est. 1989 (In Spirit)</span>
-            <span class="badge bg-transparent border border-warning text-warning rounded-0 px-3 py-2 text-uppercase letter-spacing-2">High Fantasy</span>
+            <wa-badge variant="neutral" appearance="outlined" class="text-secondary rounded-0 px-3 py-2 text-uppercase letter-spacing-2">Est. 1989 (In Spirit)</wa-badge>
+            <wa-badge variant="warning" appearance="outlined" class="text-warning rounded-0 px-3 py-2 text-uppercase letter-spacing-2">High Fantasy</wa-badge>
         </div>
     </div>
 </div>
@@ -66,7 +66,7 @@
             <div class="row g-4 mb-5">
                 
                 <div class="col-md-6">
-                    <div class="card h-100 bg-black border border-secondary text-white shadow-sm">
+                    <wa-card class="card h-100 bg-black border border-secondary text-white shadow-sm w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
                         <div class="card-body p-4 text-center">
                             <div class="mb-3 text-warning fs-1">
                                 <i class="fa-duotone fa-people-arrows"></i>
@@ -76,11 +76,11 @@
                                 <strong>Kaelan & Kaela.</strong> Separated by fate, bound by blood. They represent the duality of the world—Steel and Spirit. Their journey is not just to save the world, but to find each other again.
                             </p>
                         </div>
-                    </div>
+                    </wa-card>
                 </div>
 
                 <div class="col-md-6">
-                    <div class="card h-100 bg-black border border-secondary text-white shadow-sm">
+                    <wa-card class="card h-100 bg-black border border-secondary text-white shadow-sm w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
                         <div class="card-body p-4 text-center">
                             <div class="mb-3 text-warning fs-1">
                                 <i class="fa-duotone fa-hand-holding-magic"></i>
@@ -90,12 +90,12 @@
                                 An ancient relic of the <strong>Iron Era</strong>. It grants the wielder immense power over the physical world, but it feeds on the user's memories. To use it is to forget why you fight.
                             </p>
                         </div>
-                    </div>
+                    </wa-card>
                 </div>
 
             </div>
 
-            <div class="card bg-body-tertiary border-0 border-start border-4 border-warning shadow-sm mb-5">
+            <wa-card class="card bg-body-tertiary border-0 border-start border-4 border-warning shadow-sm mb-5 w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
                 <div class="card-body p-4 p-lg-5">
                     <div class="row align-items-center">
                         <div class="col-lg-8">
@@ -113,16 +113,16 @@
                                  width="120" 
                                  alt="Michael Ragsdale">
                             <p class="small text-uppercase fw-bold text-warning mt-2 letter-spacing-2">Michael Ragsdale</p>
-                            <span class="badge bg-dark text-secondary border border-secondary">Lorekeeper</span>
+                            <wa-badge variant="neutral" appearance="outlined" class="text-secondary">Lorekeeper</wa-badge>
                         </div>
                     </div>
                 </div>
-            </div>
+            </wa-card>
 
             <div class="text-center pt-4">
-                <a href="/raggiesoft-books/aethel-saga" class="btn btn-outline-dark btn-lg rounded-0 px-5 py-3 border-2 cinzel-font fw-bold hover-warning">
-                    <i class="fa-duotone fa-book-open-reader me-2"></i>Open The Tome
-                </a>
+                <wa-button variant="warning" appearance="outlined" size="large" href="/raggiesoft-books/aethel-saga" class="rounded-0 px-5 py-3 border-2 cinzel-font fw-bold hover-warning">
+                    <i slot="start" class="fa-duotone fa-book-open-reader"></i>Open The Tome
+                </wa-button>
                 <div class="mt-3">
                     <a href="/about/license" class="small text-muted text-decoration-none">
                         Content licensed under CC BY-SA 4.0

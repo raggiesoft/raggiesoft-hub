@@ -37,8 +37,8 @@
         <a href="<?php echo $cdnBaseUrl; ?>/shiloh/images/family/elise-pelletier.jpg" target="_blank" class="d-block mb-4">
             <img src="<?php echo $cdnBaseUrl; ?>/shiloh/images/family/elise-pelletier-thumb.jpg" alt="Portrait of Elise Pelletier" class="img-fluid rounded shadow-sm  w-100">
         </a>
-        <div class="card border-0 shadow-sm" style="border-top: 5px solid #212529;">
-            <div class="card-body bg-body-tertiary">
+        <wa-card class="card border-0 shadow-sm w-100" style="border-top: 5px solid #212529; --body-padding: 0; --header-padding: 0;">
+            <div class="card-body bg-body-tertiary p-4">
                 <h5 class="fw-bold mb-3 text-uppercase border-bottom pb-2">Profile Data</h5>
                 <ul class="list-unstyled mb-0" style="line-height: 1.8;">
                     <li><strong>Band Role:</strong> Guest Vocals</li>
@@ -47,7 +47,7 @@
                     <li><strong>Tactical Specialty:</strong> Holding space without pity</li>
                 </ul>
             </div>
-        </div>
+        </wa-card>
     </div>
 
     <!-- Main Biography Content -->

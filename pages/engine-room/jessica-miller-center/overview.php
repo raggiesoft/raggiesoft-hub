@@ -58,9 +58,9 @@ $pageTitle = "The Jessica Miller Center - Universal Design & Workplace Equity";
     <div class="container">
         <div class="row align-items-center py-4">
             <div class="col-lg-7">
-                <span class="badge bg-success-subtle text-success-emphasis border border-success-subtle rounded-pill px-3 py-2 mb-3 text-uppercase letter-spacing-1">
+                <wa-badge variant="success" appearance="filled-outlined" pill class="text-success-emphasis px-3 py-2 mb-3 text-uppercase letter-spacing-1">
                     <i class="fa-solid fa-check me-2" aria-hidden="true"></i>Est. 2019
-                </span>
+                </wa-badge>
                 
                 <h1 class="display-4 fw-bold text-body-emphasis mb-3 font-serif">
                     Work without friction.
@@ -71,12 +71,12 @@ $pageTitle = "The Jessica Miller Center - Universal Design & Workplace Equity";
                 </p>
                 
                 <div class="d-flex gap-3 flex-wrap">
-                    <a href="/engine-room/jessica-miller-center/the-quiet-floor" class="btn btn-success rounded-pill px-4" aria-label="Visit the Quiet Floor Information Page">
-                        <i class="fa-duotone fa-ear-muffs me-2" aria-hidden="true"></i>Visit The Quiet Floor
-                    </a>
-                    <a href="#mission" class="btn btn-outline-secondary rounded-pill px-4">
+                    <wa-button variant="success" appearance="accent" pill href="/engine-room/jessica-miller-center/the-quiet-floor" class="px-4" aria-label="Visit the Quiet Floor Information Page">
+                        <i slot="start" class="fa-duotone fa-ear-muffs" aria-hidden="true"></i>Visit The Quiet Floor
+                    </wa-button>
+                    <wa-button variant="neutral" appearance="outlined" pill href="#mission" class="px-4">
                         Our Mission
-                    </a>
+                    </wa-button>
                 </div>
             </div>
             <div class="col-lg-5 d-none d-lg-block text-center" aria-hidden="true">
@@ -90,7 +90,7 @@ $pageTitle = "The Jessica Miller Center - Universal Design & Workplace Equity";
 
     <div class="row justify-content-center mb-5">
         <div class="col-lg-10">
-            <div class="card shadow-sm overflow-hidden border-0 bg-body-tertiary">
+            <wa-card class="card shadow-sm overflow-hidden border-0 bg-body-tertiary w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
                 <div class="row g-0">
                     <div class="col-md-4 position-relative">
                         <img src="<?php echo $cdnBaseUrl; ?>/stardust-engine/images/corporate/jessica-miller.jpg" 
@@ -118,7 +118,7 @@ $pageTitle = "The Jessica Miller Center - Universal Design & Workplace Equity";
                         </div>
                     </div>
                 </div>
-            </div>
+            </wa-card>
         </div>
     </div>
 
@@ -127,8 +127,8 @@ $pageTitle = "The Jessica Miller Center - Universal Design & Workplace Equity";
             <h2 class="h3 fw-bold text-uppercase letter-spacing-1 text-body-emphasis">Our Core Pillars</h2>
         </div>
         <div class="col-md-4">
-            <div class="card h-100 p-4 shadow-sm border">
-                <div class="card-body">
+            <wa-card class="card h-100 p-4 shadow-sm border w-100" style="--body-padding: 0; --header-padding: 0;">
+                <div class="card-body p-4">
                     <div class="icon-box bg-primary-subtle text-primary-emphasis">
                         <i class="fa-duotone fa-eye-slash fa-2x" aria-hidden="true"></i>
                     </div>
@@ -137,11 +137,11 @@ $pageTitle = "The Jessica Miller Center - Universal Design & Workplace Equity";
                         Lighting, sound, and texture are not aesthetic choices—they are access issues. We maintain strict "Low-Sensory" zones across all three floors.
                     </p>
                 </div>
-            </div>
+            </wa-card>
         </div>
         <div class="col-md-4">
-            <div class="card h-100 p-4 shadow-sm border">
-                <div class="card-body">
+            <wa-card class="card h-100 p-4 shadow-sm border w-100" style="--body-padding: 0; --header-padding: 0;">
+                <div class="card-body p-4">
                     <div class="icon-box bg-success-subtle text-success-emphasis">
                         <i class="fa-duotone fa-wheelchair-move fa-2x" aria-hidden="true"></i>
                     </div>
@@ -150,11 +150,11 @@ $pageTitle = "The Jessica Miller Center - Universal Design & Workplace Equity";
                         From "Sit/Stand/Wheel" desks to automated doors, our goal is simple: You should never have to ask for help to enter a room.
                     </p>
                 </div>
-            </div>
+            </wa-card>
         </div>
         <div class="col-md-4">
-            <div class="card h-100 p-4 shadow-sm border">
-                <div class="card-body">
+            <wa-card class="card h-100 p-4 shadow-sm border w-100" style="--body-padding: 0; --header-padding: 0;">
+                <div class="card-body p-4">
                     <div class="icon-box bg-warning-subtle text-warning-emphasis">
                         <i class="fa-duotone fa-users-medical fa-2x" aria-hidden="true"></i>
                     </div>
@@ -163,13 +163,13 @@ $pageTitle = "The Jessica Miller Center - Universal Design & Workplace Equity";
                         We normalize flexible hours, asynchronous communication, and the right to disconnect. Burnout is a system failure, not a personal one.
                     </p>
                 </div>
-            </div>
+            </wa-card>
         </div>
     </div>
 
     <div class="row justify-content-center mb-5">
         <div class="col-lg-12">
-            <div class="card border-info shadow overflow-hidden">
+            <wa-card class="card border-info shadow overflow-hidden w-100" style="--body-padding: 0; --header-padding: 0;">
                 <div class="row g-0 align-items-center">
                     <div class="col-md-8 p-5">
                         <h2 class="h4 text-info fw-bold text-uppercase mb-3">
@@ -179,21 +179,21 @@ $pageTitle = "The Jessica Miller Center - Universal Design & Workplace Equity";
                             We have replaced standard elevator banks with intelligent, group-based dispatching. 
                             Features include <strong>Badge-Based Home Floor</strong> assignment and a discreet <strong>ADA Mode</strong> for extended dwell times and audio guidance.
                         </p>
-                        <a href="/engine-room/jessica-miller-center/destination-dispatch-elevators" class="btn btn-outline-info rounded-pill px-4">
+                        <wa-button variant="brand" appearance="outlined" pill href="/engine-room/jessica-miller-center/destination-dispatch-elevators" class="px-4">
                             View User Guide
-                        </a>
+                        </wa-button>
                     </div>
                     <div class="col-md-4 bg-body-tertiary text-center p-5 d-none d-md-block" aria-hidden="true">
                         <i class="fa-duotone fa-signs-post fa-5x text-info opacity-50"></i>
                     </div>
                 </div>
-            </div>
+            </wa-card>
         </div>
     </div>
 
     <div class="row justify-content-center mb-5">
         <div class="col-lg-12">
-            <div class="card border shadow-sm overflow-hidden">
+            <wa-card class="card border shadow-sm overflow-hidden w-100" style="--body-padding: 0; --header-padding: 0;">
                 <div class="row g-0">
                     <div class="col-md-7 p-5">
                         <h2 class="h4 text-uppercase letter-spacing-2 mb-4 text-body-emphasis">Campus Overview</h2>
@@ -233,7 +233,7 @@ $pageTitle = "The Jessica Miller Center - Universal Design & Workplace Equity";
                         
                         <div class="d-flex justify-content-between align-items-center mb-2">
                             <span class="text-body-emphasis"><i class="fa-solid fa-sun me-2 text-warning" aria-hidden="true"></i>Circadian Lighting</span>
-                            <span class="badge bg-warning text-dark" id="lighting-badge">4500K (Daylight)</span>
+                            <wa-badge variant="warning" appearance="accent" id="lighting-badge">4500K (Daylight)</wa-badge>
                         </div>
                         <div class="progress mb-3 bg-secondary-subtle" style="height: 4px;" role="progressbar" aria-label="Current Lighting Color Temperature">
                             <div class="progress-bar bg-warning" id="lighting-progress" style="width: 70%"></div>
@@ -241,19 +241,19 @@ $pageTitle = "The Jessica Miller Center - Universal Design & Workplace Equity";
 
                         <div class="d-flex justify-content-between align-items-center mb-2">
                             <span class="text-body-emphasis"><i class="fa-solid fa-volume-xmark me-2 text-success" aria-hidden="true"></i>Ambient Noise</span>
-                            <span class="badge bg-success" id="noise-badge">32dB (Library)</span>
+                            <wa-badge variant="success" appearance="accent" id="noise-badge">32dB (Library)</wa-badge>
                         </div>
                         <div class="progress mb-3 bg-secondary-subtle" style="height: 4px;" role="progressbar" aria-label="Current Ambient Noise Level">
                             <div class="progress-bar bg-success" id="noise-progress" style="width: 20%"></div>
                         </div>
 
-                        <div class="alert alert-secondary mt-3 mb-0 py-2 px-3 small" id="status-alert">
-                            <i class="fa-solid fa-circle-info text-info-emphasis me-2" aria-hidden="true"></i>
+                        <wa-callout variant="neutral" appearance="accent" class="mt-3 mb-0 py-2 px-3 small d-block" id="status-alert">
+                            <i slot="icon" class="fa-solid fa-circle-info text-info-emphasis" aria-hidden="true"></i>
                             <span id="quiet-hour-text">Next "Quiet Hour" begins at <strong>2:00 PM PST</strong>.</span>
-                        </div>
+                        </wa-callout>
                     </div>
                 </div>
-            </div>
+            </wa-card>
         </div>
     </div>
 </div>

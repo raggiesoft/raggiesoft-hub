@@ -29,15 +29,15 @@ extract($navData);
     <?php endif; ?>
 
     <!-- START: Collapsible Hierarchy Accordion -->
-    <div class="accordion accordion-flush" id="bookAccordion">
+    <div class="d-flex flex-column gap-2" id="bookAccordion">
         
         <?php if (!empty($bookData['structure'])): ?>
             <?php foreach ($bookData['structure'] as $book): ?>
                 
                 <!-- START: Book Section Wrapper -->
-                <div class="mb-4">
-                    <h6 class="text-primary fw-bold mb-2 ps-2 border-start border-3 border-primary bg-light py-1">
-                        <?php echo $book['title']; ?>
+                <div class="mb-3">
+                    <h6 class="text-primary fw-bold mb-2 ps-2 border-start border-3 border-primary bg-body-tertiary py-1">
+                        <?php echo htmlspecialchars($book['title']); ?>
                     </h6>
                     
                     <?php if (!empty($book['chapters'])): ?>
@@ -45,73 +45,55 @@ extract($navData);
                             // Expand if active
                             $isChapterActive = ($chapter['id'] === $currentChapId && $book['id'] === $currentBookId);
                         ?>
-                            <!-- START: Chapter Accordion Item -->
-                            <div class="accordion-item bg-transparent border-0">
-                                <h2 class="accordion-header">
-                                    <button class="accordion-button <?php echo $isChapterActive ? '' : 'collapsed'; ?> bg-transparent shadow-none py-2 px-2" 
-                                            type="button" 
-                                            data-bs-toggle="collapse" 
-                                            data-bs-target="#collapse-<?php echo $book['id'] . '-' . $chapter['id']; ?>" 
-                                            aria-expanded="<?php echo $isChapterActive ? 'true' : 'false'; ?>">
-                                        <span class="small fw-bold text-uppercase" style="letter-spacing: 0.5px; color: var(--bs-body-color);">
-                                            <?php echo str_replace("Chapter ", "", $chapter['title']); ?>
-                                        </span>
-                                    </button>
-                                </h2>
+                            <!-- START: Chapter Details Item -->
+                            <wa-details appearance="plain" <?php echo $isChapterActive ? 'open' : ''; ?> class="mb-1">
+                                <span slot="summary" class="small fw-bold text-uppercase" style="letter-spacing: 0.5px; color: var(--bs-body-color);">
+                                    <?php echo htmlspecialchars(str_replace("Chapter ", "", $chapter['title'])); ?>
+                                </span>
                                 
-                                <div id="collapse-<?php echo $book['id'] . '-' . $chapter['id']; ?>" 
-                                     class="accordion-collapse collapse <?php echo $isChapterActive ? 'show' : ''; ?>" 
-                                     data-bs-parent="#bookAccordion">
-                                    <!-- START: Chapter Content Body -->
-                                    <div class="accordion-body p-0 ps-3 pt-1">
-                                        <ul class="list-unstyled border-start border-secondary border- ps-2">
-                                            
-                                            <?php if (!empty($chapter['parts'])): ?>
-                                                <?php foreach ($chapter['parts'] as $part): ?>
-                                                    
-                                                    <?php if (count($part['scenes']) > 1): ?>
-                                                        <li class="mb-2 mt-2">
-                                                            <div class=" small fw-bold text-uppercase ps-2 mb-1" style="font-size: 0.75rem;">
-                                                                <?php echo $part['title']; ?>
-                                                            </div>
-                                                            <ul class="list-unstyled ps-3 border-start border-secondary border-opacity-10">
-                                                                <?php foreach ($part['scenes'] as $scene): 
-                                                                    $isSceneActive = ($scene['id'] === $currentSceneId && $part['id'] === $currentPartId);
-                                                                    $sceneUrl = "{$bookData['base_path']}/{$book['id']}/{$chapter['id']}/{$part['id']}/{$scene['id']}";
-                                                                ?>
-                                                                    <li class="mb-1">
-                                                                        <a href="<?php echo $sceneUrl; ?>" 
-                                                                           class="text-decoration-none d-block py-1 px-2 rounded-1 <?php echo $isSceneActive ? 'bg-primary text-white' : 'text-body-secondary hover-bg-light'; ?>"
-                                                                           style="font-size: 0.85rem;">
-                                                                            <?php echo $scene['title']; ?>
-                                                                        </a>
-                                                                    </li>
-                                                                <?php endforeach; ?>
-                                                            </ul>
-                                                        </li>
+                                <!-- START: Chapter Content Body -->
+                                <div class="ps-2 pt-1">
+                                    <ul class="list-unstyled border-start border-secondary ps-2 mb-0">
+                                        
+                                        <?php if (!empty($chapter['parts'])): ?>
+                                            <?php foreach ($chapter['parts'] as $part): ?>
+                                                
+                                                <?php if (count($part['scenes']) > 1): ?>
+                                                    <li class="mb-2 mt-2">
+                                                        <div class="small fw-bold text-uppercase ps-2 mb-1" style="font-size: 0.75rem;">
+                                                            <?php echo htmlspecialchars($part['title']); ?>
+                                                        </div>
+                                                        <div class="d-flex flex-column gap-1 ps-2 border-start border-secondary border-opacity-10">
+                                                            <?php foreach ($part['scenes'] as $scene): 
+                                                                $isSceneActive = ($scene['id'] === $currentSceneId && $part['id'] === $currentPartId);
+                                                                $sceneUrl = "{$bookData['base_path']}/{$book['id']}/{$chapter['id']}/{$part['id']}/{$scene['id']}";
+                                                            ?>
+                                                                <wa-button appearance="<?php echo $isSceneActive ? 'filled-outlined' : 'plain'; ?>" variant="<?php echo $isSceneActive ? 'brand' : 'neutral'; ?>" size="small" href="<?php echo htmlspecialchars($sceneUrl); ?>" class="w-100 text-start justify-content-start" style="text-align: left;">
+                                                                    <?php echo htmlspecialchars($scene['title']); ?>
+                                                                </wa-button>
+                                                            <?php endforeach; ?>
+                                                        </div>
+                                                    </li>
 
-                                                    <?php else: ?>
-                                                        <?php 
-                                                            $scene = $part['scenes'][0];
-                                                            $isSceneActive = ($scene['id'] === $currentSceneId && $part['id'] === $currentPartId);
-                                                            $sceneUrl = "{$bookData['base_path']}/{$book['id']}/{$chapter['id']}/{$part['id']}/{$scene['id']}";
-                                                        ?>
-                                                        <li class="mb-1">
-                                                            <a href="<?php echo $sceneUrl; ?>" 
-                                                               class="text-decoration-none d-block py-1 px-2 rounded-1 <?php echo $isSceneActive ? 'bg-primary text-white' : 'text-body-secondary hover-bg-light'; ?>"
-                                                               style="font-size: 0.9rem;">
-                                                                <?php echo $part['title']; ?>
-                                                            </a>
-                                                        </li>
-                                                    <?php endif; ?>
+                                                <?php else: ?>
+                                                    <?php 
+                                                        $scene = $part['scenes'][0];
+                                                        $isSceneActive = ($scene['id'] === $currentSceneId && $part['id'] === $currentPartId);
+                                                        $sceneUrl = "{$bookData['base_path']}/{$book['id']}/{$chapter['id']}/{$part['id']}/{$scene['id']}";
+                                                    ?>
+                                                    <li class="mb-1">
+                                                        <wa-button appearance="<?php echo $isSceneActive ? 'filled-outlined' : 'plain'; ?>" variant="<?php echo $isSceneActive ? 'brand' : 'neutral'; ?>" size="small" href="<?php echo htmlspecialchars($sceneUrl); ?>" class="w-100 text-start justify-content-start" style="text-align: left;">
+                                                            <?php echo htmlspecialchars($part['title']); ?>
+                                                        </wa-button>
+                                                    </li>
+                                                <?php endif; ?>
 
-                                                <?php endforeach; ?>
-                                            <?php endif; ?>
-                                            
-                                        </ul>
-                                    </div>
+                                            <?php endforeach; ?>
+                                        <?php endif; ?>
+                                        
+                                    </ul>
                                 </div>
-                            </div>
+                            </wa-details>
                         <?php endforeach; ?>
                     <?php endif; ?>
                 </div>

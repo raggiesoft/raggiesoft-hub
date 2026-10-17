@@ -29,9 +29,9 @@ $pageTitle = "Flight Log: Overview - Ad Astra";
              style="opacity: 0.5; background: linear-gradient(to bottom, transparent 0%, #050508 100%);"></div>
     </div>
     <div class="container position-relative text-center z-1 fade-in-up">
-        <span class="badge bg-black border border-warning text-warning rounded-pill px-3 py-2 shadow-glow mb-4">
+        <wa-badge variant="warning" appearance="outlined" pill class="text-warning px-3 py-2 shadow-glow mb-4">
             <i class="fa-duotone fa-book-sparkles me-2"></i>Mission Archive
-        </span>
+        </wa-badge>
         <h1 class="display-1 fw-bold text-uppercase text-light mb-2" style="font-family: 'Audiowide', sans-serif;">
             Flight Log
         </h1>
@@ -118,9 +118,9 @@ $pageTitle = "Flight Log: Overview - Ad Astra";
             </wa-card>
 
             <div class="text-center">
-                <a href="/engine-room/artists/stardust-engine/story/ad-astra" class="btn btn-outline-secondary rounded-pill text-uppercase font-monospace small">
-                    <i class="fa-solid fa-arrow-left me-2"></i>Back to Mission Control
-                </a>
+                <wa-button variant="neutral" appearance="outlined" pill href="/engine-room/artists/stardust-engine/story/ad-astra" class="text-uppercase font-monospace small">
+                    <i slot="start" class="fa-solid fa-arrow-left"></i>Back to Mission Control
+                </wa-button>
             </div>
 
         </div>

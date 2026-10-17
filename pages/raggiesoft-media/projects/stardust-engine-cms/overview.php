@@ -86,17 +86,17 @@ $pageTitle = "The Stardust Engine CMS | Open Source";
 
     <div class="row mb-5">
         <div class="col-12">
-            <div class="card bg-hud-blue border-0 shadow-sm p-4 p-md-5 overflow-hidden position-relative">
+            <wa-card class="card bg-hud-blue border-0 shadow-sm p-4 p-md-5 overflow-hidden position-relative w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
                 <i class="fa-duotone fa-rocket-launch fa-10x position-absolute opacity-10 text-primary" style="right: -5%; bottom: -10%; transform: rotate(-15deg); filter: blur(2px);" aria-hidden="true"></i>
                 
                 <div class="position-relative z-1">
                     <div class="d-flex align-items-center mb-3 flex-wrap gap-2">
-                        <span class="badge bg-info text-dark font-monospace text-uppercase rounded-pill shadow-sm px-3 py-2 fw-bold" style="box-shadow: inset 0 1px 0 rgba(255,255,255,0.5);">
+                        <wa-badge variant="brand" appearance="accent" pill class="font-monospace text-uppercase shadow-sm px-3 py-2 fw-bold" style="box-shadow: inset 0 1px 0 rgba(255,255,255,0.5);">
                             MIT License
-                        </span>
-                        <a href="https://github.com/raggiesoft/stardust-engine-cms" target="_blank" rel="noopener noreferrer" class="badge bg-body text-body-secondary text-decoration-none border font-monospace rounded-pill px-3 py-2 transition-all aero-hover-secondary">
+                        </wa-badge>
+                        <a href="https://github.com/raggiesoft/stardust-engine-cms" target="_blank" rel="noopener noreferrer" class="text-decoration-none"><wa-badge variant="neutral" appearance="outlined" pill>
                             <i class="fa-brands fa-github me-1" aria-hidden="true"></i> Public Repository
-                        </a>
+                        </wa-badge></a>
                     </div>
                     <h1 class="display-5 fw-bold text-uppercase mb-3 brand-font text-glow-primary" style="letter-spacing: 1px;">
                         <i class="fa-duotone fa-rocket-launch me-2 text-primary" aria-hidden="true"></i>The Stardust Engine CMS
@@ -105,7 +105,7 @@ $pageTitle = "The Stardust Engine CMS | Open Source";
                         A zero-database, flat-file content management system paired with a blazingly fast Vanilla JS routing engine. Built for independent creators who want enterprise speed without framework lock-in.
                     </p>
                 </div>
-            </div>
+            </wa-card>
         </div>
     </div>
 
@@ -114,38 +114,38 @@ $pageTitle = "The Stardust Engine CMS | Open Source";
     <div class="row g-4 mb-5">
         
         <div class="col-xl-4">
-            <div class="card bg-hud-base h-100 border-0 shadow-sm p-4 hover-lift">
+            <wa-card class="card bg-hud-base h-100 border-0 shadow-sm p-4 hover-lift w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
                 <i class="fa-brands fa-php fa-3x text-secondary mb-3" aria-hidden="true" style="filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));"></i>
                 <h3 class="h5 fw-bold mb-2 text-body-emphasis">The Engine (PHP 8.5)</h3>
                 <p class="small text-body-secondary mb-0">
                     A strictly structural MVC routing layer natively optimized for Ubuntu 26.04 LTS. Uses a centralized JSON configuration to determine layouts, sidebars, and SEO schema injection. Zero SQL databases required; entirely flat-file architecture driven by PHP 8.5 arrays and includes.
                 </p>
-            </div>
+            </wa-card>
         </div>
 
         <div class="col-xl-4">
-            <div class="card h-100 border-0 shadow-sm p-4 hover-lift position-relative" style="background: linear-gradient(135deg, rgba(0, 195, 255, 0.1) 0%, rgba(0, 195, 255, 0.02) 100%); border: 1px solid rgba(0, 195, 255, 0.3) !important; border-left: 4px solid var(--bs-info) !important; backdrop-filter: blur(8px) saturate(120%); -webkit-backdrop-filter: blur(8px) saturate(120%); border-radius: 12px;">
+            <wa-card class="card h-100 border-0 shadow-sm p-4 hover-lift position-relative w-100" style="background: linear-gradient(135deg, rgba(0, 195, 255, 0.1) 0%, rgba(0, 195, 255, 0.02) 100%); border: 1px solid rgba(0, 195, 255, 0.3) !important; border-left: 4px solid var(--bs-info) !important; backdrop-filter: blur(8px) saturate(120%); -webkit-backdrop-filter: blur(8px) saturate(120%); border-radius: 12px; --body-padding: 0; --header-padding: 0;">
                 <i class="fa-brands fa-js fa-3x text-info mb-3" aria-hidden="true" style="filter: drop-shadow(0 0 8px rgba(0,195,255,0.6));"></i>
                 <h3 class="h5 fw-bold mb-2 text-info text-uppercase tracking-wider" style="text-shadow: 0 0 8px rgba(0,195,255,0.3);">Elara SPA Router</h3>
                 <p class="small text-body-emphasis mb-0">
                     The crown jewel. A Vanilla JavaScript listener that intercepts all internal clicks, aborts the hard refresh, and seamlessly fetches the next page. It dynamically diffs the `<head>`, swaps stylesheets, and updates the `<body>` elements, providing native-app speed.
                 </p>
-            </div>
+            </wa-card>
         </div>
 
         <div class="col-xl-4">
-            <div class="card bg-hud-base h-100 border-0 shadow-sm p-4 hover-lift">
+            <wa-card class="card bg-hud-base h-100 border-0 shadow-sm p-4 hover-lift w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
                 <i class="fa-solid fa-terminal fa-3x text-secondary mb-3" aria-hidden="true" style="filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));"></i>
                 <h3 class="h5 fw-bold mb-2 text-body-emphasis">Jenna & Sarah (DevOps)</h3>
                 <p class="small text-body-secondary mb-0">
                     Included bash automation scripts. 'Jenna' handles local deployment, enforcing strict WCAG 2.1 AA accessibility checks before pushing code to GitHub and syncing static assets via `rclone`. 'Sarah' sits on your server, quietly pulling updates via `rsync` without requiring root permissions.
                 </p>
-            </div>
+            </wa-card>
         </div>
 
     </div>
 
-    <div class="card bg-hud-base border-0 shadow-sm mb-5 p-4 p-md-5" style="border-left: 4px solid var(--bs-primary) !important;">
+    <wa-card class="card bg-hud-base border-0 shadow-sm mb-5 p-4 p-md-5 w-100" style="border-left: 4px solid var(--bs-primary) !important; --body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
         <h2 class="h4 fw-bold text-primary mb-4 text-uppercase border-bottom border-secondary-subtle pb-3">
             <i class="fa-solid fa-microchip me-2" aria-hidden="true"></i>Why Build The Stardust Engine?
         </h2>
@@ -184,12 +184,12 @@ $pageTitle = "The Stardust Engine CMS | Open Source";
                 </div>
             </div>
         </div>
-    </div>
+    </wa-card>
 
     <div class="text-center mb-4 border-top border-secondary-subtle pt-5">
-        <a href="https://github.com/raggiesoft/stardust-engine-cms" target="_blank" rel="noopener noreferrer" class="btn btn-glass-info btn-lg rounded-pill fw-bold text-uppercase shadow-sm px-5 py-3 transition-all">
-            <i class="fa-brands fa-github me-2 fa-lg" aria-hidden="true"></i> View Source on GitHub
-        </a>
+        <wa-button variant="brand" appearance="outlined" size="large" pill href="https://github.com/raggiesoft/stardust-engine-cms" target="_blank" rel="noopener noreferrer" class="btn-glass-info fw-bold text-uppercase shadow-sm px-5 py-3 transition-all">
+            <i slot="start" class="fa-brands fa-github fa-lg" aria-hidden="true"></i> View Source on GitHub
+        </wa-button>
         <p class="small text-body-secondary font-monospace mt-4">
             <i class="fa-solid fa-triangle-exclamation text-warning me-1" aria-hidden="true"></i> Repository documentation and boilerplate cleanup currently in progress.
         </p>

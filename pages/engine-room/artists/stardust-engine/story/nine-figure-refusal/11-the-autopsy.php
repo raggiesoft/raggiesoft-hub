@@ -100,9 +100,9 @@ $pageTitle = "The Autopsy: Holly Takes Control - Evidence Item #02";
     <!-- INLINE: Page header establishing the narrative tone and context for "The Autopsy" -->
     <div class="row justify-content-center mb-5">
         <div class="col-lg-8 text-center">
-            <span class="badge bg-warning text-dark rounded-pill px-3 py-2 mb-3 text-uppercase letter-spacing-1 border border-warning">
+            <wa-badge variant="warning" appearance="accent" pill class="px-3 py-2 mb-3 text-uppercase letter-spacing-1">
                 <i class="fa-duotone fa-laptop-code me-2"></i>The Turn
-            </span>
+            </wa-badge>
             <h1 class="display-4 fw-bold text-body-emphasis mb-2" style="font-family: 'Impact', sans-serif;">
                 THE LIVE AUTOPSY
             </h1>
@@ -115,7 +115,7 @@ $pageTitle = "The Autopsy: Holly Takes Control - Evidence Item #02";
     <div class="row justify-content-center mb-5">
         <div class="col-lg-10">
             
-            <div class="card forced-dark-card border-secondary shadow-lg mb-4">
+            <wa-card class="card forced-dark-card border-secondary shadow-lg mb-4 w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
                 <div class="card-body p-4 text-white font-monospace small">
                     <div class="row">
                         <div class="col-md-3 fw-bold text-uppercase text-white-50">Timestamp:</div>
@@ -130,9 +130,9 @@ $pageTitle = "The Autopsy: Holly Takes Control - Evidence Item #02";
                         <div class="col-md-9">SEC Public Filings (Form 10-Q) & "The Tyler Email"</div>
                     </div>
                 </div>
-            </div>
+            </wa-card>
 
-            <div class="card border-0 shadow-lg bg-body-tertiary narrative-card mb-5">
+            <wa-card class="card border-0 shadow-lg bg-body-tertiary narrative-card mb-5 w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
                 <div class="card-body p-5 text-body-secondary">
                     
                     <h5 class="text-danger fw-bold text-uppercase mb-4 letter-spacing-2">The Narrative Log</h5>
@@ -177,8 +177,8 @@ $pageTitle = "The Autopsy: Holly Takes Control - Evidence Item #02";
                         "Do you know why we're here, Jameson?" Holly asked, opening her laptop.
                     </p>
 
-                    <div class="card bg-body-tertiary border-danger mb-4">
-                        <div class="card-body">
+                    <wa-card class="card bg-body-tertiary border-danger mb-4 w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
+                        <div class="card-body p-4">
                             <div class="row align-items-center">
                                 <div class="col-md-3 text-center mb-3 mb-md-0 border-end border-secondary border-opacity-25">
                                     <img src="<?php echo $cdnBaseUrl; ?>/engine-room-records/images/logos/engine-room-records-logo.png" 
@@ -194,7 +194,7 @@ $pageTitle = "The Autopsy: Holly Takes Control - Evidence Item #02";
                                     <p class="mb-2 text-body-secondary fst-italic border-start border-2 ps-3">
                                         Frost blinked, looking confused. "Marketing pulled it from your website. It's standard practice."
                                     </p>
-                                    <div class="alert alert-danger bg-danger bg-opacity-10 border-danger border-opacity-25 text-danger mb-0">
+                                    <wa-callout variant="danger" appearance="accent" class="mb-0 d-block">
                                         <p class="mb-0 fw-bold small">
                                             <i class="fa-solid fa-gavel me-2"></i>VIOLATION DETECTED
                                         </p>
@@ -204,11 +204,11 @@ $pageTitle = "The Autopsy: Holly Takes Control - Evidence Item #02";
                                         <p class="mb-0 border-top border-danger border-opacity-25 pt-2">
                                             "You do not have a license to display it. Using her own art on a document proposing the mutilation of <a href="/engine-room/artists/stardust-engine/story/ad-astra/" class="text-danger text-decoration-underline fw-bold">her autobiography</a>? If you asked Cassidy what her most important achievement was, she wouldn't say the industry awards or the platinum records. She would point to <em>Escape Velocity</em>. It's her masterpiece. And that's exactly what you just tried to rip apart. That is <strong>Willful Infringement</strong>. Statutory damages start at $150,000 per instance."
                                         </p>
-                                    </div>
+                                    </wa-callout>
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </wa-card>
                     
                     <!-- INLINE: Credential Box detailing Holly's stealth connection to the management VLAN to hijack the presentation -->
                     <div class="credential-box p-3 my-4 shadow-sm text-body-secondary bg-body-tertiary border-start border-4 border-primary">
@@ -337,10 +337,10 @@ $pageTitle = "The Autopsy: Holly Takes Control - Evidence Item #02";
                         "You're right, Jameson. 'The girls' <em>do</em> handle the merch. Cassidy designs it. I fulfill it."
                     </p>
                     
-                    <div class="alert alert-warning border-start border-4 border-warning bg-warning-subtle shadow-sm text-body-emphasis">
-                        <i class="fa-solid fa-chart-line-up me-2 text-warning-emphasis"></i>
+                    <wa-callout variant="warning" appearance="accent" class="shadow-sm d-block">
+                        <i slot="icon" class="fa-solid fa-chart-line-up text-warning-emphasis"></i>
                         <strong>"And in Q3 of this year, our Merchandise Division generated more net profit than your entire Global Syndication Department did in all of 2017."</strong>
-                    </div>
+                    </wa-callout>
 
                     <p>
                         "I handle the merch because it makes money," she said, leaning in. "Unlike your company."
@@ -370,9 +370,9 @@ $pageTitle = "The Autopsy: Holly Takes Control - Evidence Item #02";
                         </p>
                     </div>
                     
-                    <div class="alert alert-secondary border-0 small fst-italic mb-4 text-body-secondary">
+                    <wa-callout variant="neutral" appearance="accent" class="small fst-italic mb-4 d-block">
                         <strong>Context:</strong> Jameson Frost holds an MBA from <strong>Sterling-Hale University</strong>. His juniors hold Bachelor's degrees. The corporate Controller (a CPA) was not invited to the meeting. Holly O'Connell was technically the only person in the room qualified to audit a public company.
-                    </div>
+                    </wa-callout>
 
                     <p>
                         She hit <code>ALT + TAB</code>. The screen shifted from her CV to the SEC database. <strong>OMNI-GLOBAL MEDIA CORP.</strong>
@@ -451,8 +451,8 @@ $pageTitle = "The Autopsy: Holly Takes Control - Evidence Item #02";
                         She leaned forward, her eyes narrowing.
                     </p>
 
-                    <div class="alert alert-dark border-start border-4 border-danger bg-black text-white p-4 my-4 shadow-lg">
-                        <i class="fa-solid fa-coins text-warning me-2"></i>
+                    <wa-callout variant="danger" appearance="accent" class="p-4 my-4 shadow-lg d-block">
+                        <i slot="icon" class="fa-solid fa-coins text-warning"></i>
                         <strong class="text-uppercase text-danger me-2">The Demand</strong>
                         <p class="mb-0 mt-2 text-white-50 fst-italic">
                             "But that's not why I flew across the country. I flew here because last Thursday, my mail carrier asked me for two quarters. You sent a fraudulent prospectus to my home using a bulk permit number—Permit 4021—on a single piece of mail. It arrived with 'Postage Due'."
@@ -463,7 +463,7 @@ $pageTitle = "The Autopsy: Holly Takes Control - Evidence Item #02";
                         <p class="mb-0 mt-3 text-white fw-bold fs-5">
                             "I want my fifty cents back."
                         </p>
-                    </div>
+                    </wa-callout>
 
                     <div class="col-md-12 mb-4">
                          <div class="p-3 bg-black border border-danger text-white font-monospace">
@@ -600,9 +600,9 @@ $pageTitle = "The Autopsy: Holly Takes Control - Evidence Item #02";
                     </p>
 
                 </div>
-            </div>
+            </wa-card>
 
-            <div class="card wall-card forced-dark-zone text-white shadow-lg mb-5">
+            <wa-card class="card wall-card forced-dark-zone text-white shadow-lg mb-5 w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
                 <div class="card-body p-5">
                     <div class="d-flex align-items-center mb-4">
                         <i class="fa-duotone fa-shield-halved text-danger fs-2 me-3"></i>
@@ -638,17 +638,17 @@ $pageTitle = "The Autopsy: Holly Takes Control - Evidence Item #02";
                         Holly fought the corporation so Ryan could fight the panic. Two wars. One family.
                     </p>
                 </div>
-            </div>
+            </wa-card>
 
-            <div class="alert alert-dark bg-dark border-success forced-dark-zone d-flex align-items-center mt-4 shadow-lg">
-                <i class="fa-duotone fa-check-circle text-success fs-1 me-4"></i>
+            <wa-callout variant="success" appearance="accent" class="forced-dark-zone mt-4 shadow-lg d-block">
+                <i slot="icon" class="fa-duotone fa-check-circle text-success"></i>
                 <div>
                     <h5 class="alert-heading text-white fw-bold">The Aftermath</h5>
                     <p class="mb-0 text-white opacity-75">
                         Holly left the SEC filing up on the giant screen. As the family exited, the junior analysts in the room—who had been cc'd on the sexist email thread—quietly took out their phones and started looking for new jobs.
                     </p>
                 </div>
-            </div>
+            </wa-callout>
 
         </div>
     </div>

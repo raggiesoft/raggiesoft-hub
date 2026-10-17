@@ -1,83 +1,67 @@
 <?php
-// includes/components/headers/engine-room/artists/stardust-engine/story/header-ad-astra.php
-// Header: Ad Astra Mission Control
-// Theme: HUD / Sci-Fi / High Contrast
-// CONTEXT: The navigation HUD for the spaceship simulation.
-
 /**
- * ARCHITECTURE & MAINTENANCE NOTES:
- * 
- * Component: Ad Astra Mission Control Header
+ * ============================================================================
+ * ARCHITECTURE & MAINTENANCE NOTES: Ad Astra Mission Control Header
+ * ============================================================================
+ * File: includes/components/headers/engine-room/artists/stardust-engine/story/header-ad-astra.php
  * Purpose: Provides thematic navigation (HUD-style) for the "Ad Astra" story simulation.
- * 
+ *
  * Strategy & Implementation:
- * - Extremely specific styling (`var(--astra-text)`) applied directly to Web Awesome components 
- *   to enforce the high-contrast sci-fi aesthetic.
- * - Relies heavily on FontAwesome solid icons (`fa-solid`) rather than duotone to emulate dashboard instrumentation.
- * - Nested dropdown organizes the narrative flight logs into chronological phases.
- * 
- * Maintenance Recommendations:
- * - Keep CSS variable overrides inline or scoped specifically to the `ad-astra` wrapper 
- *   to prevent the HUD styling from bleeding into the global site.
- * - When adding new flight log days, place them strictly within their respective Phase `<divs>` 
- *   and verify the URL structure aligns with the physical file paths.
+ * - Uses strict Web Awesome v3.13.0 `<wa-dropdown>` without legacy `<wa-menu>`.
+ * - Links to all 6 flight log chapters (Days 01, 02, 03, 10, 14, and 21).
+ * ============================================================================
  */
 ?>
 <div class="d-flex flex-column flex-md-row align-items-stretch align-items-md-center gap-2 ms-auto py-3 py-md-0 w-100 mobile-nav-menu">
-  
-  
-    <wa-button appearance="plain" href="/engine-room/artists/stardust-engine/story/ad-astra" class="text-uppercase">
-        <i slot="start" class="fa-duotone fa-radar me-2"></i>Mission Hub
-    </wa-button>
-  
 
-  
-  <!-- Flight Logs Menu: Hardcoded HUD coloring overrides standard theme variables -->
+  <wa-button appearance="plain" href="/engine-room/artists/stardust-engine/story/ad-astra" class="text-uppercase">
+    <i slot="start" class="fa-duotone fa-radar me-2"></i>Mission Hub
+  </wa-button>
+
+  <!-- Flight Logs Menu -->
   <wa-dropdown placement="bottom-start">
-    <wa-button class="nav-link  text-uppercase" href="#"    style="color: var(--astra-text) !important;" slot="trigger" appearance="plain">
-      <i class="fa-duotone fa-book-sparkles me-2"></i>Flight Logs
-        <i slot="end" class="fa-solid fa-circle-caret-down ms-2 opacity-50" aria-hidden="true"></i>
+    <wa-button class="text-uppercase" style="color: var(--astra-text) !important;" slot="trigger" appearance="plain" with-caret>
+      <i slot="start" class="fa-duotone fa-book-sparkles me-2"></i>Flight Logs
     </wa-button>
-    <wa-menu>
-      <!-- Phase I: Initial launch sequence logs -->
-      <div class="px-3 py-2 small text-uppercase  fw-bold text-uppercase ">Phase I: Departure</div>
-      <wa-dropdown-item value="/engine-room/artists/stardust-engine/story/ad-astra/voyage/day-01">
-            <i class="fa-solid fa-shuttle-space me-2"></i>Day 01: Ignition
-          </wa-dropdown-item>
-      <wa-dropdown-item value="/engine-room/artists/stardust-engine/story/ad-astra/voyage/day-02">
-            <i class="fa-solid fa-earth-americas me-2"></i>Day 02: Stabilization
-          </wa-dropdown-item>
-      <wa-dropdown-item value="/engine-room/artists/stardust-engine/story/ad-astra/voyage/day-03">
-            <i class="fa-solid fa-clock me-2"></i>Day 03: Ship's Time
-          </wa-dropdown-item>
-      
-      <wa-divider></wa-divider>
-      
-      <div class="px-3 py-2 small text-uppercase  fw-bold text-uppercase ">Phase II: The Void</div>
-      <wa-dropdown-item value="/engine-room/artists/stardust-engine/story/ad-astra/voyage/day-10">
-            <i class="fa-solid fa-stars me-2"></i>Day 10: Harmonic Velocity
-          </wa-dropdown-item>
-      
-      <wa-divider></wa-divider>
-      
-      <div class="px-3 py-2 small text-uppercase  fw-bold text-uppercase ">Phase III: Return</div>
-      <wa-dropdown-item value="/engine-room/artists/stardust-engine/story/ad-astra/voyage/day-21">
-            <i class="fa-solid fa-meteor me-2"></i>Day 21: Hard Reset
-          </wa-dropdown-item>
-    </wa-menu>
+    <div class="px-3 py-2 small text-uppercase fw-bold text-body-secondary">Phase I: Departure</div>
+    <wa-dropdown-item value="/engine-room/artists/stardust-engine/story/ad-astra/voyage/day-01">
+      <i slot="icon" class="fa-solid fa-shuttle-space"></i>Day 01: Ignition
+    </wa-dropdown-item>
+    <wa-dropdown-item value="/engine-room/artists/stardust-engine/story/ad-astra/voyage/day-02">
+      <i slot="icon" class="fa-solid fa-earth-americas"></i>Day 02: Stabilization
+    </wa-dropdown-item>
+    <wa-dropdown-item value="/engine-room/artists/stardust-engine/story/ad-astra/voyage/day-03">
+      <i slot="icon" class="fa-solid fa-clock"></i>Day 03: Ship's Time
+    </wa-dropdown-item>
+
+    <wa-divider></wa-divider>
+
+    <div class="px-3 py-2 small text-uppercase fw-bold text-body-secondary">Phase II: The Void</div>
+    <wa-dropdown-item value="/engine-room/artists/stardust-engine/story/ad-astra/voyage/day-10">
+      <i slot="icon" class="fa-solid fa-stars"></i>Day 10: Harmonic Velocity
+    </wa-dropdown-item>
+    <wa-dropdown-item value="/engine-room/artists/stardust-engine/story/ad-astra/voyage/day-14">
+      <i slot="icon" class="fa-solid fa-wind"></i>Day 14: Atmosphere (Life Support)
+    </wa-dropdown-item>
+
+    <wa-divider></wa-divider>
+
+    <div class="px-3 py-2 small text-uppercase fw-bold text-body-secondary">Phase III: Return</div>
+    <wa-dropdown-item value="/engine-room/artists/stardust-engine/story/ad-astra/voyage/day-21">
+      <i slot="icon" class="fa-solid fa-meteor"></i>Day 21: Hard Reset
+    </wa-dropdown-item>
   </wa-dropdown>
 
+  <wa-button appearance="plain" href="/engine-room/artists/stardust-engine/discography/1995-the-warehouse-tapes/ad-astra" class="text-uppercase">
+    <i slot="start" class="fa-duotone fa-play me-2"></i>Transmission
+  </wa-button>
 
-  
-    <wa-button appearance="plain" href="/engine-room/artists/stardust-engine/discography/1995-the-warehouse-tapes/ad-astra" class="text-uppercase">
-        <i slot="start" class="fa-duotone fa-play me-2"></i>Transmission
-    </wa-button>
-  
+  <wa-button appearance="plain" href="/engine-room/artists/stardust-engine/story/cosmic-tidal-lock-sound" class="text-uppercase text-info">
+    <i slot="start" class="fa-duotone fa-satellite me-2"></i>Tidal Lock Sound&trade;
+  </wa-button>
 
-  
-      <wa-button appearance="plain" href="/engine-room/artists/stardust-engine" class="text-uppercase small">
-        <i slot="start" class="fa-duotone fa-arrow-right-from-bracket me-2"></i>Exit Sim
-      </wa-button>
-  
+  <wa-button appearance="plain" href="/engine-room/artists/stardust-engine" class="text-uppercase small">
+    <i slot="start" class="fa-duotone fa-arrow-right-from-bracket me-2"></i>Exit Sim
+  </wa-button>
 
 </div>

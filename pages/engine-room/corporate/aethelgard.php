@@ -76,9 +76,9 @@ $pageTitle = "Aethelgard Holdings - Strategic Liquidation";
         <p class="lead text-light text-uppercase font-monospace letter-spacing-1 opacity-75">
             Distressed Asset Acquisition & Strategic Liquidation
         </p>
-        <span class="badge bg-danger text-uppercase px-3 py-2 mt-3">
+        <wa-badge variant="danger" appearance="accent" class="text-uppercase px-3 py-2 mt-3">
             Wholly Owned Subsidiary of The O'Connell Family Revocable Trust
-        </span>
+        </wa-badge>
     </div>
 </div>
 
@@ -103,11 +103,11 @@ $pageTitle = "Aethelgard Holdings - Strategic Liquidation";
     <div class="row g-4 mb-5">
         
         <div class="col-md-6">
-            <div class="card h-100 bg-dark border-secondary shadow-lg">
-                <div class="card-header bg-black border-bottom border-secondary text-uppercase fw-bold text-white-50">
+            <wa-card class="card h-100 bg-dark border-secondary shadow-lg w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
+                <div class="card-header bg-black border-bottom border-secondary text-uppercase fw-bold text-white-50 p-3">
                     <i class="fa-solid fa-industry me-2"></i>The Liquidation Engine
                 </div>
-                <div class="card-body">
+                <div class="card-body p-4">
                     <p class="text-white-50 small mb-4">
                         Aethelgard is self-sustaining. When we acquire a bankrupt media conglomerate, we immediately strip and sell the "hard assets" to recoup our capital.
                     </p>
@@ -115,27 +115,27 @@ $pageTitle = "Aethelgard Holdings - Strategic Liquidation";
                     <ul class="list-group list-group-flush bg-transparent">
                         <li class="list-group-item bg-transparent text-white border-secondary d-flex justify-content-between align-items-center">
                             <span><i class="fa-duotone fa-building text-secondary me-2"></i>Corporate Real Estate</span>
-                            <span class="badge bg-success rounded-pill">LIQUIDATED</span>
+                            <wa-badge variant="success" appearance="accent" pill>LIQUIDATED</wa-badge>
                         </li>
                         <li class="list-group-item bg-transparent text-white border-secondary d-flex justify-content-between align-items-center">
                             <span><i class="fa-duotone fa-server text-secondary me-2"></i>Server Farms / IT</span>
-                            <span class="badge bg-success rounded-pill">LIQUIDATED</span>
+                            <wa-badge variant="success" appearance="accent" pill>LIQUIDATED</wa-badge>
                         </li>
                         <li class="list-group-item bg-transparent text-white border-secondary d-flex justify-content-between align-items-center">
                             <span><i class="fa-duotone fa-briefcase text-secondary me-2"></i>Executive Perks</span>
-                            <span class="badge bg-success rounded-pill">LIQUIDATED</span>
+                            <wa-badge variant="success" appearance="accent" pill>LIQUIDATED</wa-badge>
                         </li>
                         <li class="list-group-item bg-transparent text-white border-secondary d-flex justify-content-between align-items-center">
                             <span><i class="fa-duotone fa-file-contract text-secondary me-2"></i>"Legacy" Life Insurance</span>
-                            <span class="badge bg-success rounded-pill">CASHED OUT</span>
+                            <wa-badge variant="success" appearance="accent" pill>CASHED OUT</wa-badge>
                         </li>
                     </ul>
                 </div>
-            </div>
+            </wa-card>
         </div>
 
         <div class="col-md-6">
-            <div class="card h-100 protocol-card shadow-lg">
+            <wa-card class="card h-100 protocol-card shadow-lg w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
                 <div class="card-body p-4">
                     <div class="d-flex align-items-center mb-3">
                         <div class="bg-danger text-white rounded-circle p-3 me-3">
@@ -164,13 +164,13 @@ $pageTitle = "Aethelgard Holdings - Strategic Liquidation";
                     </div>
 
                 </div>
-            </div>
+            </wa-card>
         </div>
     </div>
 
     <div class="row justify-content-center">
         <div class="col-lg-10">
-            <div class="alert alert-secondary border-start border-4 border-dark bg-body-tertiary p-4 shadow-sm">
+            <wa-callout variant="neutral" appearance="accent" class="p-4 shadow-sm d-block">
                 <div class="row align-items-center">
                     <div class="col-md-2 text-center">
                         <i class="fa-duotone fa-fire-burner fa-3x text-warning mb-3 mb-md-0"></i>
@@ -189,20 +189,20 @@ $pageTitle = "Aethelgard Holdings - Strategic Liquidation";
                         </p>
                     </div>
                 </div>
-            </div>
+            </wa-callout>
         </div>
     </div>
 
     <div class="row justify-content-center mt-5 pt-4 border-top border-secondary border-opacity-25 align-items-center">
         <div class="col-4">
-            <a href="/oconnell-trust/structure" class="btn btn-outline-secondary rounded-pill">
-                <i class="fa-solid fa-arrow-left me-2"></i>Trust Structure
-            </a>
+            <wa-button variant="neutral" appearance="outlined" pill href="/oconnell-trust/structure">
+                <i slot="start" class="fa-solid fa-arrow-left"></i>Trust Structure
+            </wa-button>
         </div>
         <div class="col-4 text-center">
-            <a href="/engine-room" class="btn btn-outline-primary rounded-pill">
-                <i class="fa-duotone fa-home me-2"></i>Label Home
-            </a>
+            <wa-button variant="brand" appearance="outlined" pill href="/engine-room">
+                <i slot="start" class="fa-duotone fa-home"></i>Label Home
+            </wa-button>
         </div>
         <div class="col-4 text-end">
              </div>

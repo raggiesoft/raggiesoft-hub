@@ -48,8 +48,8 @@ $parts = $chapter['parts'] ?? [];
 
     <div class="row justify-content-center">
         <div class="col-md-10 col-lg-8">
-            <div class="card bg-body-tertiary border-0 shadow-sm mb-4">
-                <div class="card-body">
+            <wa-card class="card bg-body-tertiary border-0 shadow-sm mb-4 w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
+                <div class="card-body p-4">
                     <div class="row g-3">
                         <?php if (!empty($parts)): ?>
                             <?php foreach ($parts as $part): ?>
@@ -72,7 +72,7 @@ $parts = $chapter['parts'] ?? [];
                         <?php endif; ?>
                     </div>
                 </div>
-            </div>
+            </wa-card>
             
             <div class="text-center mt-4">
                 <a href="<?php echo htmlspecialchars($bookUrl); ?>" class="btn btn-outline-secondary">

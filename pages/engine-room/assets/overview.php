@@ -115,7 +115,7 @@ $pageTitle = "Strategic Assets - Engine Room Records";
             <div class="row g-4">
                 <div class="col-md-6">
                     <div class="asset-card p-4">
-                        <div class="badge bg-secondary mb-3">FLEET ID: SE-01</div>
+                        <wa-badge variant="neutral" appearance="accent" class="mb-3">FLEET ID: SE-01</wa-badge>
                         <h3 class="h5 fw-bold text-uppercase">2002 Sainte-Claire 45H3 "The Iron Horse"</h3>
                         <p class="small text-secondary">
                             The workhorse of the early 2000s tours. Customized for accessibility and heavy equipment transport.
@@ -130,7 +130,7 @@ $pageTitle = "Strategic Assets - Engine Room Records";
 
                 <div class="col-md-6">
                     <div class="asset-card p-4 border-danger">
-                        <div class="badge bg-danger mb-3">FLEET ID: SE-02</div>
+                        <wa-badge variant="danger" appearance="accent" class="mb-3">FLEET ID: SE-02</wa-badge>
                         <h3 class="h5 fw-bold text-uppercase">2019 Sainte-Claire 45H3 "The Sovereign"</h3>
                         <p class="small text-secondary">
                             Current flagship. Features advanced suspension for spinal injury comfort and mobile recording suite.
@@ -188,9 +188,9 @@ $pageTitle = "Strategic Assets - Engine Room Records";
     </div>
 
     <div class="bg-body-tertiary py-4 text-center border-top border-secondary">
-        <a href="/engine-room" class="btn btn-link text-decoration-none text-uppercase fw-bold text-body">
-            <i class="fa-solid fa-arrow-left me-2"></i>Return to Headquarters
-        </a>
+        <wa-button variant="neutral" appearance="plain" href="/engine-room" class="text-uppercase fw-bold text-body">
+            <i slot="start" class="fa-solid fa-arrow-left"></i>Return to Headquarters
+        </wa-button>
     </div>
 
 </div>

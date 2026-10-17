@@ -41,17 +41,17 @@
                 <h6 class="text-uppercase fw-bold text-white-50 mb-3 small">Governance</h6>
                 <ul class="list-unstyled small mb-0">
                     <li class="mb-2">
-                        <a href="/engine-room/corporate/structure" class="text-decoration-none  hover-text-white">
+                        <a href="/engine-room/corporate/structure" class="text-decoration-none text-white-50 hover-text-white">
                             Organizational Structure
                         </a>
                     </li>
                     <li class="mb-2">
-                        <a href="/engine-room/corporate/aethelgard" class="text-decoration-none  hover-text-white">
+                        <a href="/engine-room/corporate/aethelgard" class="text-decoration-none text-white-50 hover-text-white">
                             Aethelgard Holdings
                         </a>
                     </li>
                     <li class="mb-2">
-                        <a href="/engine-room/corporate/leadership" class="text-decoration-none  hover-text-white">
+                        <a href="/engine-room/artists/stardust-engine/band/holly-oconnell" class="text-decoration-none text-white-50 hover-text-white">
                             Executive Leadership
                         </a>
                     </li>
@@ -67,19 +67,19 @@
                 <h6 class="text-uppercase fw-bold text-white-50 mb-3 small">Operating Entities</h6>
                 <ul class="list-unstyled small mb-0">
                     <li class="mb-2">
-                        <a href="/engine-room" class="text-decoration-none  hover-text-white">
+                        <a href="/engine-room" class="text-decoration-none text-white-50 hover-text-white">
                             Engine Room Records, LLC
                         </a>
                     </li>
                     <li class="mb-2">
-                        <a href="/pacific-rim" class="text-decoration-none  hover-text-white">
+                        <a href="/engine-room/corporate/pacific-rim" class="text-decoration-none text-white-50 hover-text-white">
                             Pacific Rim Properties, LLC
                         </a>
                     </li>
                     <li class="mb-0">
-                        <span class="  cursor-not-allowed">
-                            Stardust Studios (Restricted)
-                        </span>
+                        <a href="/engine-room/corporate/stardust-blacksburg" class="text-decoration-none text-white-50 hover-text-white">
+                            Stardust Blacksburg, LLC
+                        </a>
                     </li>
                 </ul>
             </div>

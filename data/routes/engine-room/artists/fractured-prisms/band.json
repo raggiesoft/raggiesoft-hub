@@ -1,32 +1,44 @@
 {
   "common": {
     "site": "fractured-prisms",
-    "brandFont": [
-      "Playfair Display",
-      "serif"
-    ],
+    "showSidebar": true,
+    "sidebar": "engine-room/artists/fractured-prisms/sidebar-prisms",
     "siteName": "Fractured Prisms",
     "headerMenu": "engine-room/artists/fractured-prisms/header-prisms",
     "footer": "engine-room/artists/fractured-prisms/footer-prisms",
-    "showSidebar": false,
     "navbarBrandLogo": "/engine-room-records/artists/fractured-prisms/band-logo.jpg",
-    "navbarBrandText": "Fractured Prisms",
+    "navbarBrandText": "Fractured<span class=\"d-none d-md-inline\"> Prisms</span>",
     "navbarBrandLink": "/engine-room/artists/fractured-prisms",
-    "ogImage": "/engine-room-records/artists/fractured-prisms/1983-carnaby-street/album-art.jpg"
+    "ogImage": "/engine-room-records/artists/fractured-prisms/social-preview.jpg"
   },
   "/engine-room/artists/fractured-prisms/band": {
-    "view": "pages/engine-room/artists/fractured-prisms/band/overview",
-    "title": "The Residents | Fractured Prisms",
-    "ogTitle": "The Residents - The Surviving Architects"
+    "view": "pages/engine-room/artists/fractured-prisms/band/claire-manning",
+    "title": "Band Personnel: Claire & Rhys Manning | Fractured Prisms",
+    "ogDescription": "Meet siblings Claire Manning and Rhys Manning, the progressive art-rock duo behind Fractured Prisms."
+  },
+  "/engine-room/artists/fractured-prisms/band/claire-manning": {
+    "view": "pages/engine-room/artists/fractured-prisms/band/claire-manning",
+    "title": "Claire Manning (Vocals, Flute, Acoustic Guitar) | Fractured Prisms",
+    "ogDescription": "Character and musician dossier for Claire Manning, lead vocalist and flautist of Fractured Prisms."
+  },
+  "/engine-room/artists/fractured-prisms/band/rhys-manning": {
+    "view": "pages/engine-room/artists/fractured-prisms/band/rhys-manning",
+    "title": "Rhys Manning (Synthesizers, Keyboards, Production) | Fractured Prisms",
+    "ogDescription": "Character and musician dossier for Rhys Manning, synthesizer architect and protector of the Fragile Fortress."
   },
   "/engine-room/artists/fractured-prisms/story": {
-    "view": "pages/engine-room/artists/fractured-prisms/story/overview",
-    "title": "The Lore | Fractured Prisms",
-    "ogTitle": "The Hollow Square - 1883 / 1983"
+    "view": "pages/engine-room/artists/fractured-prisms/story/the-hollow-square",
+    "title": "The Story: The Hollow Square | Fractured Prisms",
+    "ogDescription": "The tragic history of Fractured Prisms, the Missing Four, and how Claire and Rhys Manning built the Fragile Fortress."
   },
-  "/engine-room/artists/fractured-prisms/band/the-missing-four": {
-    "view": "pages/engine-room/artists/fractured-prisms/band/the-missing-four",
-    "title": "The Missing Four | Fractured Prisms",
-    "ogTitle": "Gwen, Alistair, Julian, and Simon"
+  "/engine-room/artists/fractured-prisms/story/the-hollow-square": {
+    "view": "pages/engine-room/artists/fractured-prisms/story/the-hollow-square",
+    "title": "The Hollow Square | Fractured Prisms",
+    "ogDescription": "How Rhys Manning built an acoustic and emotional fortress of analog synthesizers around his sister Claire."
+  },
+  "/engine-room/artists/fractured-prisms/story/1985-american-shores-tour": {
+    "view": "pages/engine-room/artists/fractured-prisms/story/1985-american-shores-tour",
+    "title": "The 1985 American Shores Tour | Fractured Prisms",
+    "ogDescription": "Archive of the historic 1985 American Shores Tour, culminating in Live at Independence Stadium and the Colonial Theatre."
   }
 }

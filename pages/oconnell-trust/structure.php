@@ -78,7 +78,7 @@ $pageTitle = "Organizational Structure - The O'Connell Family Revocable Trust";
     <div class="row justify-content-center mt-5">
         <div class="col-lg-10">
             
-            <div class="card catalyst-card mb-5 shadow-lg">
+            <wa-card class="card catalyst-card mb-5 shadow-lg w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
                 <div class="card-body p-4 p-md-5">
                     <div class="row align-items-center">
                         <div class="col-md-2 text-center mb-3 mb-md-0">
@@ -95,7 +95,7 @@ $pageTitle = "Organizational Structure - The O'Connell Family Revocable Trust";
                         </div>
                     </div>
                 </div>
-            </div>
+            </wa-card>
 
             <div class="waterline">
                 <span>The Information Gap</span>

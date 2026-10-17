@@ -186,33 +186,31 @@ usort($latestAlbums, function($a, $b) {
             Loud. Raw. Real. An independent creative collective dedicated to narrative-driven rock, industrial soundscapes, and symphonic metal.
         </p>
         <div class="d-flex flex-wrap justify-content-center gap-3">
-            <a href="https://music.raggiesoft.com" target="_blank" rel="noopener" class="btn btn-primary rounded-pill px-4 fw-bold text-uppercase tech-font shadow">
-                <i class="fa-duotone fa-headphones me-2" aria-hidden="true"></i>Enter The Listening Room
-            </a>
-            <a href="#latest-transmissions" class="btn btn-outline-info rounded-pill px-4 fw-bold text-uppercase tech-font">
-                <i class="fa-solid fa-compact-disc me-2" aria-hidden="true"></i>Latest Transmissions
-            </a>
-            <a href="#roster" class="btn btn-outline-light rounded-pill px-4 fw-bold text-uppercase tech-font">
-                <i class="fa-solid fa-users me-2" aria-hidden="true"></i>The Roster
-            </a>
+            <wa-button href="https://music.raggiesoft.com" target="_blank" variant="brand" appearance="accent" pill class="fw-bold text-uppercase tech-font shadow">
+                <i class="fa-duotone fa-headphones" slot="start" aria-hidden="true"></i>Enter The Listening Room
+            </wa-button>
+            <wa-button href="#latest-transmissions" variant="brand" appearance="outlined" pill class="fw-bold text-uppercase tech-font">
+                <i class="fa-solid fa-compact-disc" slot="start" aria-hidden="true"></i>Latest Transmissions
+            </wa-button>
+            <wa-button href="#roster" variant="neutral" appearance="outlined" pill class="fw-bold text-uppercase tech-font">
+                <i class="fa-solid fa-users" slot="start" aria-hidden="true"></i>The Roster
+            </wa-button>
         </div>
     </div>
 </div>
 
 <div class="container mt-4 mb-2">
-    <div class="alert alert-secondary border-secondary shadow-sm d-flex align-items-center" role="alert">
-        <i class="fa-duotone fa-robot-astromech fa-3x me-3 text-info d-none d-md-block"></i>
-        <div>
-            <h4 class="alert-heading h6 fw-bold mb-1 text-uppercase letter-spacing-1"><i class="fa-duotone fa-robot-astromech me-2 text-info d-inline-block d-md-none"></i>Transparency & Timeline Notice</h4>
-            <p class="mb-2 small text-body-secondary border-bottom border-secondary-subtle pb-2">
-                <strong>Engine Room Records</strong> is a multimedia storytelling and world-building project. The music is generated using a commercial Suno license, with conceptual lore, characters, and lyrics co-written by human direction and Gemini.
-            </p>
-            <p class="mb-0 small text-body-secondary">
-                <strong>Dual Timelines:</strong> To maintain our immersive fictional universe while strictly complying with modern digital distribution standards, our catalog features two timelines: a fictional <strong>Narrative Era</strong> (e.g., 1987) tied to the band's lore, and a real-world <strong>Actual Release Date</strong> (e.g., 2026) reflecting when the audio was officially distributed to streaming platforms.
-                <a href="/about/ai-disclaimer" class="alert-link fw-bold text-info border-bottom border-info text-decoration-none ms-1">Read the full AI Disclaimer.</a>
-            </p>
-        </div>
-    </div>
+    <wa-callout variant="neutral" appearance="accent" class="shadow-sm">
+        <i slot="icon" class="fa-duotone fa-robot-astromech fa-2x text-info"></i>
+        <h4 class="h6 fw-bold mb-1 text-uppercase letter-spacing-1">Transparency &amp; Timeline Notice</h4>
+        <p class="mb-2 small text-body-secondary border-bottom border-secondary-subtle pb-2">
+            <strong>Engine Room Records</strong> is a multimedia storytelling and world-building project. The music is generated using a commercial Suno license, with conceptual lore, characters, and lyrics co-written by human direction and Gemini.
+        </p>
+        <p class="mb-0 small text-body-secondary">
+            <strong>Dual Timelines:</strong> To maintain our immersive fictional universe while strictly complying with modern digital distribution standards, our catalog features two timelines: a fictional <strong>Narrative Era</strong> (e.g., 1987) tied to the band's lore, and a real-world <strong>Actual Release Date</strong> (e.g., 2026) reflecting when the audio was officially distributed to streaming platforms.
+            <a href="/about/ai-disclaimer" class="fw-bold text-info border-bottom border-info text-decoration-none ms-1">Read the full AI Disclaimer.</a>
+        </p>
+    </wa-callout>
 </div>
 
 <div class="container pb-5">
@@ -256,20 +254,20 @@ usort($latestAlbums, function($a, $b) {
                     </div>
                     <div class="col-sm-7 col-md-8 col-xl-7 d-flex flex-column bg-body-tertiary">
                         <div class="p-4 flex-grow-1 d-flex flex-column">
-                            <span class="badge bg-warning text-dark mb-2 font-monospace" style="align-self: flex-start;"><?php echo htmlspecialchars($album['year'] ?? 'TBA'); ?> RELEASE</span>
+                            <wa-badge variant="warning" appearance="filled" class="mb-2 font-monospace" style="align-self: flex-start;"><?php echo htmlspecialchars($album['year'] ?? 'TBA'); ?> RELEASE</wa-badge>
                             <h3 class="h5 fw-bold text-uppercase mb-1"><?php echo htmlspecialchars($album['title']); ?></h3>
                             <p class="text-primary small fw-bold text-uppercase mb-3"><?php echo htmlspecialchars($album['artistPersona']); ?>&trade;</p>
-                            <p class="card-text small text-body-secondary mb-0">
+                            <p class="small text-body-secondary mb-0">
                                 <?php echo htmlspecialchars($album['description'] ?? ''); ?>
                             </p>
                         </div>
                         <div class="px-4 pb-4 mt-auto d-flex flex-column gap-2">
-                            <wa-button href="<?php echo htmlspecialchars($listeningRoomUrl); ?>" target="_blank" variant="brand" class="w-100 rounded-pill">
-                                <i class="fa-duotone fa-headphones me-2" slot="prefix"></i> Listen &amp; Read Lyrics
+                            <wa-button href="<?php echo htmlspecialchars($listeningRoomUrl); ?>" target="_blank" variant="brand" pill class="w-100">
+                                <i class="fa-duotone fa-headphones" slot="start"></i> Listen &amp; Read Lyrics
                             </wa-button>
                             <?php if ($hasHubLore): ?>
-                                <wa-button href="<?php echo htmlspecialchars($album['url']); ?>" variant="neutral" appearance="outlined" class="w-100 rounded-pill">
-                                    <i class="fa-duotone fa-book-open-cover me-2" slot="prefix"></i> Studio Lore &amp; Liner Notes
+                                <wa-button href="<?php echo htmlspecialchars($album['url']); ?>" variant="neutral" appearance="outlined" pill class="w-100">
+                                    <i class="fa-duotone fa-book-open-cover" slot="start"></i> Studio Lore &amp; Liner Notes
                                 </wa-button>
                             <?php endif; ?>
                         </div>
@@ -296,116 +294,140 @@ usort($latestAlbums, function($a, $b) {
 
         <!-- ERR-001: The Stardust Engine -->
         <div class="col-md-6 col-xl-4">
-            <div class="card roster-card h-100 p-4 text-center d-flex flex-column">
-                <div class="mb-3">
-                    <img src="<?php echo $cdnBaseUrl; ?>/engine-room-records/artists/the-stardust-engine/band-logo.png" 
-                         alt="The Stardust Engine" style="height: 80px; object-fit: contain;">
+            <wa-card class="roster-card h-100 w-100 text-center">
+                <div class="d-flex flex-column h-100">
+                    <div class="mb-3">
+                        <img src="<?php echo $cdnBaseUrl; ?>/engine-room-records/artists/the-stardust-engine/band-logo.png" 
+                             alt="The Stardust Engine" style="height: 80px; object-fit: contain;">
+                    </div>
+                    <h3 class="h6 fw-bold text-body-emphasis text-uppercase mb-2">The Stardust Engine&trade;</h3>
+                    <p class="text-body-secondary small mb-3 flex-grow-1">
+                        80s Synth-Pop / Progressive Rock. The founding family unit that built the fortress.
+                    </p>
+                    <div class="d-flex gap-2 justify-content-center mt-auto mb-2">
+                        <wa-button href="/engine-room/artists/stardust-engine" size="small" variant="brand" appearance="outlined" pill class="font-monospace">Lore Archive</wa-button>
+                        <wa-button href="https://music.raggiesoft.com/the-stardust-engine" target="_blank" size="small" variant="brand" appearance="accent" pill class="font-monospace"><i class="fa-duotone fa-headphones" slot="start"></i>Listen</wa-button>
+                    </div>
+                    <div class="mt-1">
+                        <wa-badge variant="success" appearance="filled-outlined" class="font-monospace"><i class="fa-solid fa-signal-stream me-1"></i> Live on DSPs</wa-badge>
+                    </div>
                 </div>
-                <h3 class="h6 fw-bold text-body-emphasis text-uppercase mb-2">The Stardust Engine&trade;</h3>
-                <p class="text-body-secondary small mb-3 flex-grow-1">
-                    80s Synth-Pop / Progressive Rock. The founding family unit that built the fortress.
-                </p>
-                <div class="d-flex gap-2 justify-content-center mt-auto mb-2">
-                    <a href="/engine-room/artists/stardust-engine" class="btn btn-sm btn-outline-primary rounded-pill px-3 font-monospace">Lore Archive</a>
-                    <a href="https://music.raggiesoft.com/the-stardust-engine" target="_blank" rel="noopener" class="btn btn-sm btn-primary rounded-pill px-3 font-monospace"><i class="fa-duotone fa-headphones me-1"></i>Listen</a>
-                </div>
-                <span class="badge bg-success-subtle text-success-emphasis border border-success-subtle mx-auto font-monospace"><i class="fa-solid fa-signal-stream me-1"></i> Live on DSPs</span>
-            </div>
+            </wa-card>
         </div>
 
         <!-- ERR-002: Fractured Prisms -->
         <div class="col-md-6 col-xl-4">
-            <div class="card roster-card h-100 p-4 text-center d-flex flex-column">
-                <div class="mb-3">
-                    <img src="<?php echo $cdnBaseUrl; ?>/engine-room-records/artists/fractured-prisms/band-logo.jpg" 
-                         alt="Fractured Prisms" style="height: 80px; object-fit: contain;" class="rounded">
+            <wa-card class="roster-card h-100 w-100 text-center">
+                <div class="d-flex flex-column h-100">
+                    <div class="mb-3">
+                        <img src="<?php echo $cdnBaseUrl; ?>/engine-room-records/artists/fractured-prisms/band-logo.jpg" 
+                             alt="Fractured Prisms" style="height: 80px; object-fit: contain;" class="rounded">
+                    </div>
+                    <h3 class="h6 fw-bold text-body-emphasis text-uppercase mb-2">Fractured Prisms&trade;</h3>
+                    <p class="text-body-secondary small mb-3 flex-grow-1">
+                        British Synth-Pop and gaslamp-lit 1980s progressive rock operas from the Maryland sanctuary.
+                    </p>
+                    <div class="d-flex gap-2 justify-content-center mt-auto mb-2">
+                        <wa-button href="/engine-room/artists/fractured-prisms" size="small" variant="brand" appearance="outlined" pill class="font-monospace">Lore Archive</wa-button>
+                        <wa-button href="https://music.raggiesoft.com/fractured-prisms" target="_blank" size="small" variant="brand" appearance="accent" pill class="font-monospace"><i class="fa-duotone fa-headphones" slot="start"></i>Listen</wa-button>
+                    </div>
+                    <div class="mt-1">
+                        <wa-badge variant="success" appearance="filled-outlined" class="font-monospace"><i class="fa-solid fa-signal-stream me-1"></i> Live on DSPs</wa-badge>
+                    </div>
                 </div>
-                <h3 class="h6 fw-bold text-body-emphasis text-uppercase mb-2">Fractured Prisms&trade;</h3>
-                <p class="text-body-secondary small mb-3 flex-grow-1">
-                    British Synth-Pop and gaslamp-lit 1980s progressive rock operas from the Maryland sanctuary.
-                </p>
-                <div class="d-flex gap-2 justify-content-center mt-auto mb-2">
-                    <a href="/engine-room/artists/fractured-prisms" class="btn btn-sm btn-outline-primary rounded-pill px-3 font-monospace">Lore Archive</a>
-                    <a href="https://music.raggiesoft.com/fractured-prisms" target="_blank" rel="noopener" class="btn btn-sm btn-primary rounded-pill px-3 font-monospace"><i class="fa-duotone fa-headphones me-1"></i>Listen</a>
-                </div>
-                <span class="badge bg-success-subtle text-success-emphasis border border-success-subtle mx-auto font-monospace"><i class="fa-solid fa-signal-stream me-1"></i> Live on DSPs</span>
-            </div>
+            </wa-card>
         </div>
 
         <!-- ERR-003: The Paper Wall -->
         <div class="col-md-6 col-xl-4">
-            <div class="card roster-card h-100 p-4 text-center d-flex flex-column">
-                <div class="mb-3">
-                    <img src="<?php echo $cdnBaseUrl; ?>/engine-room-records/artists/the-paper-wall/band-logo.jpg" 
-                         alt="The Paper Wall" style="height: 80px; object-fit: contain;" class="rounded">
+            <wa-card class="roster-card h-100 w-100 text-center">
+                <div class="d-flex flex-column h-100">
+                    <div class="mb-3">
+                        <img src="<?php echo $cdnBaseUrl; ?>/engine-room-records/artists/the-paper-wall/band-logo.jpg" 
+                             alt="The Paper Wall" style="height: 80px; object-fit: contain;" class="rounded">
+                    </div>
+                    <h3 class="h6 fw-bold text-body-emphasis text-uppercase mb-2">The Paper Wall&trade;</h3>
+                    <p class="text-body-secondary small mb-3 flex-grow-1">
+                        Narrative-driven Literary Rock Operas. The architects of <em>Static &amp; Silence</em> and the Safe Harbor trust.
+                    </p>
+                    <div class="d-flex gap-2 justify-content-center mt-auto mb-2">
+                        <wa-button href="/engine-room/artists/the-paper-wall" size="small" variant="brand" appearance="outlined" pill class="font-monospace">Lore Archive</wa-button>
+                        <wa-button href="https://music.raggiesoft.com/the-paper-wall" target="_blank" size="small" variant="brand" appearance="accent" pill class="font-monospace"><i class="fa-duotone fa-headphones" slot="start"></i>Listen</wa-button>
+                    </div>
+                    <div class="mt-1">
+                        <wa-badge variant="success" appearance="filled-outlined" class="font-monospace"><i class="fa-solid fa-signal-stream me-1"></i> Live on DSPs</wa-badge>
+                    </div>
                 </div>
-                <h3 class="h6 fw-bold text-body-emphasis text-uppercase mb-2">The Paper Wall&trade;</h3>
-                <p class="text-body-secondary small mb-3 flex-grow-1">
-                    Narrative-driven Literary Rock Operas. The architects of <em>Static &amp; Silence</em> and the Safe Harbor trust.
-                </p>
-                <div class="d-flex gap-2 justify-content-center mt-auto mb-2">
-                    <a href="/engine-room/artists/the-paper-wall" class="btn btn-sm btn-outline-primary rounded-pill px-3 font-monospace">Lore Archive</a>
-                    <a href="https://music.raggiesoft.com/the-paper-wall" target="_blank" rel="noopener" class="btn btn-sm btn-primary rounded-pill px-3 font-monospace"><i class="fa-duotone fa-headphones me-1"></i>Listen</a>
-                </div>
-                <span class="badge bg-success-subtle text-success-emphasis border border-success-subtle mx-auto font-monospace"><i class="fa-solid fa-signal-stream me-1"></i> Live on DSPs</span>
-            </div>
+            </wa-card>
         </div>
 
         <!-- ERR-004: Crimson Node -->
         <div class="col-md-6 col-xl-4">
-            <div class="card roster-card h-100 p-4 text-center d-flex flex-column">
-                <div class="mb-3">
-                    <img src="<?php echo $cdnBaseUrl; ?>/engine-room-records/artists/crimson-node/band-logo.jpg" 
-                         alt="Crimson Node" style="height: 80px; object-fit: contain;" class="rounded">
+            <wa-card class="roster-card h-100 w-100 text-center">
+                <div class="d-flex flex-column h-100">
+                    <div class="mb-3">
+                        <img src="<?php echo $cdnBaseUrl; ?>/engine-room-records/artists/crimson-node/band-logo.jpg" 
+                             alt="Crimson Node" style="height: 80px; object-fit: contain;" class="rounded">
+                    </div>
+                    <h3 class="h6 fw-bold text-body-emphasis text-uppercase mb-2">Crimson Node&trade;</h3>
+                    <p class="text-body-secondary small mb-3 flex-grow-1">
+                        Stadium synth-pop and heavy progressive rock fueled by the Albemarle County DevOps family phalanx.
+                    </p>
+                    <div class="d-flex gap-2 justify-content-center mt-auto mb-2">
+                        <wa-button href="/engine-room/artists/crimson-node" size="small" variant="brand" appearance="outlined" pill class="font-monospace">Lore Archive</wa-button>
+                        <wa-button href="https://music.raggiesoft.com/crimson-node" target="_blank" size="small" variant="brand" appearance="accent" pill class="font-monospace"><i class="fa-duotone fa-headphones" slot="start"></i>Listen</wa-button>
+                    </div>
+                    <div class="mt-1">
+                        <wa-badge variant="success" appearance="filled-outlined" class="font-monospace"><i class="fa-solid fa-signal-stream me-1"></i> Live on DSPs</wa-badge>
+                    </div>
                 </div>
-                <h3 class="h6 fw-bold text-body-emphasis text-uppercase mb-2">Crimson Node&trade;</h3>
-                <p class="text-body-secondary small mb-3 flex-grow-1">
-                    Stadium synth-pop and heavy progressive rock fueled by the Albemarle County DevOps family phalanx.
-                </p>
-                <div class="d-flex gap-2 justify-content-center mt-auto mb-2">
-                    <a href="/engine-room/artists/crimson-node" class="btn btn-sm btn-outline-primary rounded-pill px-3 font-monospace">Lore Archive</a>
-                    <a href="https://music.raggiesoft.com/crimson-node" target="_blank" rel="noopener" class="btn btn-sm btn-primary rounded-pill px-3 font-monospace"><i class="fa-duotone fa-headphones me-1"></i>Listen</a>
-                </div>
-                <span class="badge bg-success-subtle text-success-emphasis border border-success-subtle mx-auto font-monospace"><i class="fa-solid fa-signal-stream me-1"></i> Live on DSPs</span>
-            </div>
+            </wa-card>
         </div>
 
         <!-- ERR-005: Mana Canvas -->
         <div class="col-md-6 col-xl-4">
-            <div class="card roster-card h-100 p-4 text-center d-flex flex-column">
-                <div class="mb-3">
-                    <img src="<?php echo $cdnBaseUrl; ?>/engine-room-records/artists/mana-canvas/band-logo.jpg" 
-                         alt="Mana Canvas" style="height: 80px; object-fit: contain;" class="rounded">
+            <wa-card class="roster-card h-100 w-100 text-center">
+                <div class="d-flex flex-column h-100">
+                    <div class="mb-3">
+                        <img src="<?php echo $cdnBaseUrl; ?>/engine-room-records/artists/mana-canvas/band-logo.jpg" 
+                             alt="Mana Canvas" style="height: 80px; object-fit: contain;" class="rounded">
+                    </div>
+                    <h3 class="h6 fw-bold text-body-emphasis text-uppercase mb-2">Mana Canvas&trade;</h3>
+                    <p class="text-body-secondary small mb-3 flex-grow-1">
+                        Symphonic Fantasy Rock &amp; 16-bit Acoustic Alchemy. The musical voice of the <em>Aethel Saga</em>.
+                    </p>
+                    <div class="d-flex gap-2 justify-content-center mt-auto mb-2">
+                        <wa-button href="/raggiesoft-books/aethel-saga" size="small" variant="brand" appearance="outlined" pill class="font-monospace">Saga Lore</wa-button>
+                        <wa-button href="https://music.raggiesoft.com/mana-canvas" target="_blank" size="small" variant="brand" appearance="accent" pill class="font-monospace"><i class="fa-duotone fa-headphones" slot="start"></i>Listen</wa-button>
+                    </div>
+                    <div class="mt-1">
+                        <wa-badge variant="success" appearance="filled-outlined" class="font-monospace"><i class="fa-solid fa-signal-stream me-1"></i> Live on DSPs</wa-badge>
+                    </div>
                 </div>
-                <h3 class="h6 fw-bold text-body-emphasis text-uppercase mb-2">Mana Canvas&trade;</h3>
-                <p class="text-body-secondary small mb-3 flex-grow-1">
-                    Symphonic Fantasy Rock &amp; 16-bit Acoustic Alchemy. The musical voice of the <em>Aethel Saga</em>.
-                </p>
-                <div class="d-flex gap-2 justify-content-center mt-auto mb-2">
-                    <a href="/raggiesoft-books/aethel-saga" class="btn btn-sm btn-outline-primary rounded-pill px-3 font-monospace">Saga Lore</a>
-                    <a href="https://music.raggiesoft.com/mana-canvas" target="_blank" rel="noopener" class="btn btn-sm btn-primary rounded-pill px-3 font-monospace"><i class="fa-duotone fa-headphones me-1"></i>Listen</a>
-                </div>
-                <span class="badge bg-success-subtle text-success-emphasis border border-success-subtle mx-auto font-monospace"><i class="fa-solid fa-signal-stream me-1"></i> Live on DSPs</span>
-            </div>
+            </wa-card>
         </div>
 
         <!-- ERR-006: The Arctic Symphony Project -->
         <div class="col-md-6 col-xl-4">
-            <div class="card roster-card h-100 p-4 text-center d-flex flex-column">
-                <div class="mb-3">
-                    <img src="<?php echo $cdnBaseUrl; ?>/engine-room-records/artists/the-arctic-symphony-project/band-logo.jpg" 
-                         alt="The Arctic Symphony Project" style="height: 80px; object-fit: contain;" class="rounded">
+            <wa-card class="roster-card h-100 w-100 text-center">
+                <div class="d-flex flex-column h-100">
+                    <div class="mb-3">
+                        <img src="<?php echo $cdnBaseUrl; ?>/engine-room-records/artists/the-arctic-symphony-project/band-logo.jpg" 
+                             alt="The Arctic Symphony Project" style="height: 80px; object-fit: contain;" class="rounded">
+                    </div>
+                    <h3 class="h6 fw-bold text-body-emphasis text-uppercase mb-2">The Arctic Symphony Project&trade;</h3>
+                    <p class="text-body-secondary small mb-3 flex-grow-1">
+                        Holiday Symphonic Rock &amp; Neoclassical Metal. Sweeping orchestral strings meet heavy distortion.
+                    </p>
+                    <div class="d-flex gap-2 justify-content-center mt-auto mb-2">
+                        <wa-button href="/engine-room/artists/the-arctic-symphony-project" size="small" variant="brand" appearance="outlined" pill class="font-monospace">Lore Archive</wa-button>
+                        <wa-button href="https://music.raggiesoft.com/the-arctic-symphony-project" target="_blank" size="small" variant="brand" appearance="accent" pill class="font-monospace"><i class="fa-duotone fa-headphones" slot="start"></i>Listen</wa-button>
+                    </div>
+                    <div class="mt-1">
+                        <wa-badge variant="success" appearance="filled-outlined" class="font-monospace"><i class="fa-solid fa-signal-stream me-1"></i> Live on DSPs</wa-badge>
+                    </div>
                 </div>
-                <h3 class="h6 fw-bold text-body-emphasis text-uppercase mb-2">The Arctic Symphony Project&trade;</h3>
-                <p class="text-body-secondary small mb-3 flex-grow-1">
-                    Holiday Symphonic Rock &amp; Neoclassical Metal. Sweeping orchestral strings meet heavy distortion.
-                </p>
-                <div class="d-flex gap-2 justify-content-center mt-auto mb-2">
-                    <a href="/engine-room/artists/the-arctic-symphony-project" class="btn btn-sm btn-outline-primary rounded-pill px-3 font-monospace">Lore Archive</a>
-                    <a href="https://music.raggiesoft.com/the-arctic-symphony-project" target="_blank" rel="noopener" class="btn btn-sm btn-primary rounded-pill px-3 font-monospace"><i class="fa-duotone fa-headphones me-1"></i>Listen</a>
-                </div>
-                <span class="badge bg-success-subtle text-success-emphasis border border-success-subtle mx-auto font-monospace"><i class="fa-solid fa-signal-stream me-1"></i> Live on DSPs</span>
-            </div>
+            </wa-card>
         </div>
 
     </div>
@@ -417,7 +439,7 @@ usort($latestAlbums, function($a, $b) {
         <div class="row align-items-center">
             <div class="col-lg-7 mb-4 mb-lg-0">
                 <h3 class="h4 fw-bold text-uppercase text-warning mb-2">
-                    <i class="fa-solid fa-briefcase me-2"></i>Industry & Licensing
+                    <i class="fa-solid fa-briefcase me-2"></i>Industry &amp; Licensing
                 </h3>
                 <p class="small text-white-75 mb-3" style="line-height: 1.6;">
                     Looking to clear a track for a film, game, or commercial broadcast? All commercial synchronization, master use clearances, and DSP verification operations are handled centrally by <strong>RaggieSoft Media&trade;</strong>. 
@@ -429,12 +451,12 @@ usort($latestAlbums, function($a, $b) {
             </div>
             <div class="col-lg-5 text-lg-end">
                 <div class="d-flex flex-column gap-3 align-items-lg-end">
-                    <a href="/raggiesoft-media/licensing" class="btn btn-warning rounded-0 fw-bold text-uppercase px-4">
-                        Master Licensing Portal <i class="fa-solid fa-arrow-right ms-2"></i>
-                    </a>
-                    <a href="/engine-room/dsp-verification" class="btn btn-outline-light rounded-0 fw-bold text-uppercase px-4">
-                        DSP Verification Desk <i class="fa-solid fa-shield-check ms-2"></i>
-                    </a>
+                    <wa-button href="/raggiesoft-media/licensing" variant="warning" appearance="accent" class="fw-bold text-uppercase">
+                        Master Licensing Portal <i class="fa-solid fa-arrow-right" slot="end"></i>
+                    </wa-button>
+                    <wa-button href="/engine-room/dsp-verification" variant="neutral" appearance="outlined" class="fw-bold text-uppercase">
+                        DSP Verification Desk <i class="fa-solid fa-shield-check" slot="end"></i>
+                    </wa-button>
                 </div>
             </div>
         </div>
@@ -444,15 +466,13 @@ usort($latestAlbums, function($a, $b) {
 <div class="container py-5">
     <div class="row justify-content-center">
         <div class="col-lg-8">
-            <div class="alert alert-secondary bg-body-tertiary border-start border-4 border-secondary shadow-sm py-4">
-                <div class="d-flex align-items-center mb-2">
-                    <i class="fa-duotone fa-hand-palm text-secondary fs-3 me-3"></i>
-                    <h5 class="fw-bold text-uppercase mb-0 text-body-emphasis">A Closed Collective</h5>
-                </div>
-                <p class="small text-body-secondary ms-5 mb-0">
+            <wa-callout variant="neutral" appearance="accent" class="shadow-sm py-3">
+                <i slot="icon" class="fa-duotone fa-hand-palm text-secondary fs-3"></i>
+                <h5 class="fw-bold text-uppercase mb-2 text-body-emphasis">A Closed Collective</h5>
+                <p class="small text-body-secondary mb-0">
                     Engine Room Records is a private, self-publishing imprint created by Michael P. Ragsdale to manage his generative AI music portfolio. <strong>We do not sign outside artists and we do not accept unsolicited demos or submissions.</strong> Any unsolicited media sent to our servers is automatically and permanently deleted unread.
                 </p>
-            </div>
+            </wa-callout>
         </div>
     </div>
 </div>

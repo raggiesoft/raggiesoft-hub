@@ -44,16 +44,16 @@
                     The literary preservation imprint of RaggieSoft Media. Grounded narratives, sci-fi lore, and fantasy sagas authored by Michael P. Ragsdale.
                 </p>
                 <div class="d-flex align-items-center justify-content-center justify-content-md-start">
-                    <span class="badge bg-dark border border-secondary text-white-50 font-monospace">
+                    <wa-badge variant="neutral" appearance="outlined" class="font-monospace">
                         <i class="fa-brands fa-creative-commons me-1"></i>CC BY-SA 4.0
-                    </span>
+                    </wa-badge>
                 </div>
             </div>
 
             <div class="col-lg-3 col-md-6">
                 <h6 class="text-uppercase fw-bold border-bottom border-secondary pb-2 mb-3" style="color: #E3B27C;">Collections</h6>
                 <ul class="list-unstyled small mb-0">
-                    <li class="mb-2"><a href="/raggiesoft-books/contemporary" class="text-decoration-none text-white-75 hover-white">Contemporary Fiction</a></li>
+                    <li class="mb-2"><a href="/raggiesoft-books/books" class="text-decoration-none text-white-75 hover-white">Full Library &amp; Contemporary</a></li>
                     <li class="mb-2"><a href="/raggiesoft-books/knox" class="text-decoration-none text-white-75 hover-white">Project: KNOX Logs</a></li>
                     <li class="mb-0"><a href="/raggiesoft-books/aethel-saga" class="text-decoration-none text-white-75 hover-white">Aethel Archives</a></li>
                 </ul>

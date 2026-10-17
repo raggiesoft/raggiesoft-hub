@@ -32,9 +32,9 @@ $pageTitle = "The Extraction - Evidence Item #03";
     
     <div class="row justify-content-center mb-5">
         <div class="col-lg-8 text-center">
-            <span class="badge bg-secondary-subtle text-secondary-emphasis rounded-pill px-3 py-2 mb-3 text-uppercase letter-spacing-1 shadow-sm border border-secondary-subtle">
+            <wa-badge variant="neutral" appearance="filled-outlined" pill class="text-secondary-emphasis px-3 py-2 mb-3 text-uppercase letter-spacing-1 shadow-sm">
                 <i class="fa-duotone fa-person-to-door me-2"></i>The Departure
-            </span>
+            </wa-badge>
             <h1 class="display-4 fw-bold text-body-emphasis mb-2 text-uppercase" style="font-family: 'Impact', sans-serif;">
                 Protocol: Safe Harbor
             </h1>
@@ -47,7 +47,7 @@ $pageTitle = "The Extraction - Evidence Item #03";
     <div class="row justify-content-center mb-5">
         <div class="col-lg-10">
             
-            <div class="card border-0 shadow-lg bg-body-tertiary mb-4">
+            <wa-card class="card border-0 shadow-lg bg-body-tertiary mb-4 w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
                 <div class="card-header bg-body-secondary border-bottom border-secondary py-3">
                     <h2 class="h5 text-body-emphasis fw-bold text-uppercase mb-0 letter-spacing-2">
                         <i class="fa-duotone fa-users-medical me-2"></i>Phase 1: Conference Room A (10:24 AM)
@@ -69,22 +69,22 @@ $pageTitle = "The Extraction - Evidence Item #03";
                     <div class="row my-4 align-items-center">
                         <div class="col-md-6">
                             <div class="d-flex align-items-center mb-2">
-                                <span class="badge bg-secondary me-2">DRUMS</span>
+                                <wa-badge variant="neutral" appearance="accent" class="me-2">DRUMS</wa-badge>
                                 <strong class="me-2">Evan (Left Flank):</strong> Dropped to one knee. Wearing his standard maroon CPI tee, he offered the stable, muscular support for her upper back.
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="d-flex align-items-center mb-2">
-                                <span class="badge bg-secondary me-2">BASS</span>
+                                <wa-badge variant="neutral" appearance="accent" class="me-2">BASS</wa-badge>
                                 <strong class="me-2">Tyler (Right Flank):</strong> Dropped to one knee. Wearing his standard orange CPI tee, he grabbed a foam lumbar cushion to support her legs.
                             </div>
                         </div>
                     </div>
                     
-                    <div class="alert alert-dark border-start border-4 border-info bg-black text-white-50 small fst-italic my-3">
-                        <i class="fa-solid fa-circle-info me-2 text-info"></i>
+                    <wa-callout variant="brand" appearance="accent" class="small fst-italic my-3 d-block">
+                        <i slot="icon" class="fa-solid fa-circle-info text-info"></i>
                         <strong>Asset Note:</strong> The seat cushion used to support Cassidy's legs was taken from the conference chair. It is legally the property of <strong>Pacific Rim Properties</strong> (The Landlord). Omni-Global cannot claim theft.
-                    </div>
+                    </wa-callout>
 
                     <p>
                         "Cass," Evan whispered. "We've got you. Going up on three."
@@ -99,9 +99,9 @@ $pageTitle = "The Extraction - Evidence Item #03";
                         "Let's go," Holly said.
                     </p>
                 </div>
-            </div>
+            </wa-card>
 
-            <div class="card bg-black border-secondary mb-4 overflow-hidden shadow-lg">
+            <wa-card class="card bg-black border-secondary mb-4 overflow-hidden shadow-lg w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
                 <div class="position-relative">
                     <img src="<?php echo $cdnBaseUrl; ?>/engine-room-records/images/omni-global/cassidy-extraction.jpg" 
                          class="img-fluid w-100 opacity-75" 
@@ -123,9 +123,9 @@ $pageTitle = "The Extraction - Evidence Item #03";
                         </div>
                     </div>
                 </div>
-            </div>
+            </wa-card>
 
-            <div class="card border-0 shadow-lg bg-body-tertiary mb-4">
+            <wa-card class="card border-0 shadow-lg bg-body-tertiary mb-4 w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
                 <div class="card-header bg-body-secondary border-bottom border-secondary py-3">
                     <h2 class="h5 text-body-emphasis fw-bold text-uppercase mb-0 letter-spacing-2">
                         <i class="fa-duotone fa-elevator me-2"></i>Phase 2: The Descent (10:26 AM)
@@ -136,7 +136,7 @@ $pageTitle = "The Extraction - Evidence Item #03";
                         The heavy door clicked shut behind them.
                     </p>
                     
-                    <div class="alert alert-secondary border-start border-4 border-dark bg-body-secondary text-body-emphasis my-4">
+                    <wa-callout variant="neutral" appearance="accent" class="my-4 d-block">
                         <h6 class="fw-bold text-uppercase mb-2"><i class="fa-solid fa-route me-2"></i>Tactical Decision: The Route</h6>
                         <p class="mb-2 small">
                             Holly paused in the vestibule. To her <strong>right</strong> was a nondescript beige door marked <strong>"SERVICE ONLY."</strong> Her Tier 1 Landlord Badge would have unlocked it instantly, granting them access to the private Service Elevator. They could have exited the building unseen via the loading dock.
@@ -144,7 +144,7 @@ $pageTitle = "The Extraction - Evidence Item #03";
                         <p class="mb-0 small fw-bold fst-italic">
                             Holly didn't look right. She looked <strong>straight ahead</strong>—directly into the crowded, open-plan "Bullpen." She chose the audience.
                         </p>
-                    </div>
+                    </wa-callout>
 
                     <p>
                         They walked straight down the center aisle of the plush carpet. The Bullpen went silent. Dozens of analysts, assistants, and junior VPs stood up in their low-walled cubicles, staring in horror at the sobbing woman being carried by her family.
@@ -203,9 +203,9 @@ $pageTitle = "The Extraction - Evidence Item #03";
                         Holly handed David a note. "Anaheim Colosseum. Next month. Four passes. Bring Toby. Bring Jessica."
                     </p>
                 </div>
-            </div>
+            </wa-card>
 
-            <div class="card border-0 shadow-lg bg-body-tertiary">
+            <wa-card class="card border-0 shadow-lg bg-body-tertiary w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
                 <div class="card-header bg-body-secondary border-bottom border-secondary py-3">
                     <h2 class="h5 text-body-emphasis fw-bold text-uppercase mb-0 letter-spacing-2">
                         <i class="fa-duotone fa-bus me-2"></i>Phase 3: The Real World (10:30 AM)
@@ -245,7 +245,7 @@ $pageTitle = "The Extraction - Evidence Item #03";
                         "Ad astra, Toby," he whispered. "Ad astra."
                     </p>
                 </div>
-            </div>
+            </wa-card>
 
         </div>
     </div>

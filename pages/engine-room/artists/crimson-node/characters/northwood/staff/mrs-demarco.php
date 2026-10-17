@@ -28,9 +28,9 @@
 
     <div class="row align-items-start">
         <div class="col-lg-5 mb-4 mb-lg-0">
-            <div class="card bg-body-tertiary border-secondary border-opacity-25 shadow-sm">
+            <wa-card class="card bg-body-tertiary border-secondary border-opacity-25 shadow-sm w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
                 <img src="<?php echo $cdnBaseUrl; ?>/shiloh/images/characters/northwood/mrs-demarco.jpg" class="card-img-top" alt="Mrs. DeMarco Portrait">
-                <div class="card-body">
+                <div class="card-body p-4">
                     <ul class="list-unstyled mb-0 text-muted">
                         <li class="mb-2"><i class="fa-duotone fa-id-badge text-danger me-2"></i> <strong>Role:</strong> Cafeteria Supervisor</li>
                         <li class="mb-2"><i class="fa-duotone fa-school text-danger me-2"></i> <strong>Location:</strong> Northwood High</li>
@@ -38,7 +38,7 @@
                         <li><i class="fa-duotone fa-trash-can-clock text-danger me-2"></i> <strong>Specialty:</strong> "Trash Duty" Enforcer</li>
                     </ul>
                 </div>
-            </div>
+            </wa-card>
         </div>
         
         <div class="col-lg-7">

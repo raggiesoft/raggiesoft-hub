@@ -55,9 +55,9 @@ $nav = [
     <!-- [HERO HEADER] Chapter 4 Title & Subtitle -->
     <div class="row justify-content-center mb-5">
         <div class="col-lg-9 text-center">
-            <span class="badge bg-info text-dark rounded-pill px-3 py-2 shadow-sm mb-3 text-uppercase fw-bold">
+            <wa-badge variant="brand" appearance="accent" pill class="px-3 py-2 shadow-sm mb-3 text-uppercase fw-bold">
                 <i class="fa-duotone fa-bus me-2"></i>Chapter 4 of 5 // Transit &amp; Infrastructure Lore
-            </span>
+            </wa-badge>
             <h1 class="display-3 fw-bold text-uppercase text-body-emphasis mb-0" style="font-family: 'Impact', sans-serif;">
                 Falling Branch &amp; The $150 Parking Paradox
             </h1>
@@ -85,10 +85,10 @@ $nav = [
                 <!-- 6-Card Regional Agency & Route Directory -->
                 <div class="row g-3 mb-4">
                     <div class="col-md-6 col-lg-4">
-                        <div class="card h-100 bg-body-tertiary border-0 shadow-sm">
+                        <wa-card class="card h-100 bg-body-tertiary border-0 shadow-sm w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
                             <div class="card-body p-3">
                                 <div class="d-flex justify-content-between align-items-center mb-2">
-                                    <span class="badge bg-primary font-monospace">BT ROUTE 1</span>
+                                    <wa-badge variant="brand" appearance="accent" class="font-monospace">BT ROUTE 1</wa-badge>
                                     <span class="small text-body-secondary font-monospace">Every 15 Min (60' Artics)</span>
                                 </div>
                                 <h3 class="h6 fw-bold mb-1">The Spine (45 Min Full-Length)</h3>
@@ -96,14 +96,14 @@ $nav = [
                                     Never short-turns: leaves <strong>Christiansburg Transit Center / Falling Branch (Exit 118)</strong>, follows <strong>US-11</strong> into downtown Christiansburg to <strong>Pepper Plaza Transit Center</strong> (next door to the <strong>Montgomery County Courthouse</strong>, across from <code>105 Pepper Street</code> &amp; Valu-Mart; 15 min), then follows <strong>South Main Street (Business US-460)</strong> and <strong>Progress Street NE</strong> into Blacksburg to <strong>Commonwealth Mall</strong> (2003–2015) or the <strong>CPI Transit Center</strong> (2016+; 30 min from Pepper Plaza).
                                 </p>
                             </div>
-                        </div>
+                        </wa-card>
                     </div>
 
                     <div class="col-md-6 col-lg-4">
-                        <div class="card h-100 bg-body-tertiary border-0 shadow-sm">
+                        <wa-card class="card h-100 bg-body-tertiary border-0 shadow-sm w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
                             <div class="card-body p-3">
                                 <div class="d-flex justify-content-between align-items-center mb-2">
-                                    <span class="badge bg-info text-dark font-monospace">BT ROUTES 3 &amp; 8</span>
+                                    <wa-badge variant="brand" appearance="accent" class="font-monospace">BT ROUTES 3 &amp; 8</wa-badge>
                                     <span class="small text-body-secondary font-monospace">$1.00 / PolyPass $0</span>
                                 </div>
                                 <h3 class="h6 fw-bold mb-1">Pepper Plaza Branches</h3>
@@ -111,14 +111,14 @@ $nav = [
                                     From <strong>Pepper Plaza Transit Center</strong>, <strong>Route 3 (The Radford Link)</strong> follows US-11 west across the New River to Radford's <strong>McConnell Transit Center</strong> (every 30 min Mon–Fri, 60 min Sat–Sun), while <strong>Route 8 (The Riner Run)</strong> follows SR-8 south to Riner (hourly Mon–Fri, 7 AM–6 PM; used by Jessica and Paige for OB/GYN appointments).
                                 </p>
                             </div>
-                        </div>
+                        </wa-card>
                     </div>
 
                     <div class="col-md-6 col-lg-4">
-                        <div class="card h-100 bg-body-tertiary border-0 shadow-sm">
+                        <wa-card class="card h-100 bg-body-tertiary border-0 shadow-sm w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
                             <div class="card-body p-3">
                                 <div class="d-flex justify-content-between align-items-center mb-2">
-                                    <span class="badge bg-danger font-monospace">BLUEWATER ("OTHER BT")</span>
+                                    <wa-badge variant="danger" appearance="accent" class="font-monospace">BLUEWATER ("OTHER BT")</wa-badge>
                                     <span class="small text-body-secondary font-monospace">$5 Express / $1 Local</span>
                                 </div>
                                 <h3 class="h6 fw-bold mb-1">The Maroon Express (90 Min)</h3>
@@ -126,14 +126,14 @@ $nav = [
                                     Pulses from <strong>Bluewater Transit Center</strong> (across from Bluewater High School in Bluewater, VA—hometown of Madison Elizabeth Scott; local <strong>Purple Line</strong> serves Galax CC hourly). Hourly 45' coaches run via <strong>Exit 14 P&amp;R</strong>, <strong>Max Meadows (Exit 84)</strong>, <strong>Dublin / NRVRC Justin's Station (Exit 98)</strong>, <strong>Falling Branch (Exit 118B)</strong>, and <strong>New River Mall (Christiansburg Mall)</strong> to CPI. Free with CPI PolyPass, Galax CC ID, or Carroll County Schools ID.
                                 </p>
                             </div>
-                        </div>
+                        </wa-card>
                     </div>
 
                     <div class="col-md-6 col-lg-4">
-                        <div class="card h-100 bg-body-tertiary border-0 shadow-sm">
+                        <wa-card class="card h-100 bg-body-tertiary border-0 shadow-sm w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
                             <div class="card-body p-3">
                                 <div class="d-flex justify-content-between align-items-center mb-2">
-                                    <span class="badge bg-success font-monospace">RVT EXPRESS &amp; RAIL</span>
+                                    <wa-badge variant="success" appearance="accent" class="font-monospace">RVT EXPRESS &amp; RAIL</wa-badge>
                                     <span class="small text-body-secondary font-monospace">$3 Express / $2 Local</span>
                                 </div>
                                 <h3 class="h6 fw-bold mb-1">Roanoke Express &amp; ARTS Thruway</h3>
@@ -141,14 +141,14 @@ $nav = [
                                     Links Roanoke's <strong>Third Street Station</strong> (Mon–Sat) to <strong>Falling Branch</strong>, <strong>New River Mall (Christiansburg Mall)</strong>, and <strong>CPI</strong>—offset 30 minutes from Bluewater's <em>Maroon Express</em> for <strong>30-minute combined express headways</strong>. On <strong>Oct 31, 2017</strong>, RVT launched the 7-day <strong>ARTS Train Connector</strong> meeting <strong>ARTS <em>The Patriot</em></strong> trains in Roanoke with guaranteed delayed-train holds.
                                 </p>
                             </div>
-                        </div>
+                        </wa-card>
                     </div>
 
                     <div class="col-md-6 col-lg-4">
-                        <div class="card h-100 bg-body-tertiary border-0 shadow-sm">
+                        <wa-card class="card h-100 bg-body-tertiary border-0 shadow-sm w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
                             <div class="card-body p-3">
                                 <div class="d-flex justify-content-between align-items-center mb-2">
-                                    <span class="badge bg-secondary font-monospace">RADFORD TRANSIT</span>
+                                    <wa-badge variant="neutral" appearance="accent" class="font-monospace">RADFORD TRANSIT</wa-badge>
                                     <span class="small text-body-secondary font-monospace">29' Buses • $0.50 &rarr; $0</span>
                                 </div>
                                 <h3 class="h6 fw-bold mb-1">McConnell Hub &amp; School ID Rule</h3>
@@ -156,14 +156,14 @@ $nav = [
                                     Operates 29-foot buses from <strong>McConnell Transit Center</strong> (<code>$0.50</code> no-transfer fare pre-COVID; <strong>permanently 100% fare-free post-COVID</strong>). Free with CPI PolyPass, RU ID, Dublin CC ID, and Radford Public Schools ID (officially RHS only, though identical badge templates let middle and elementary kids ride free). Local routes (*Plumb Creek*, *Dublin CC*) run Mon–Fri; <strong>Radford Connector</strong> to CPI runs 7 days/week.
                                 </p>
                             </div>
-                        </div>
+                        </wa-card>
                     </div>
 
                     <div class="col-md-6 col-lg-4">
-                        <div class="card h-100 bg-body-tertiary border-0 shadow-sm">
+                        <wa-card class="card h-100 bg-body-tertiary border-0 shadow-sm w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
                             <div class="card-body p-3">
                                 <div class="d-flex justify-content-between align-items-center mb-2">
-                                    <span class="badge bg-warning text-dark font-monospace">VALLEY FLYER</span>
+                                    <wa-badge variant="warning" appearance="accent" class="font-monospace">VALLEY FLYER</wa-badge>
                                     <span class="small text-danger fw-bold font-monospace">NO POLYPASS ($15.99+)</span>
                                 </div>
                                 <h3 class="h6 fw-bold mb-1">D.C. Intercity Coach vs. 2003 MCI</h3>
@@ -171,12 +171,12 @@ $nav = [
                                     State-sponsored intercity coach to <strong>Washington, D.C. Union Station</strong> (`$49.99` to D.C.; `$15.99` local hop between CPI and Falling Branch; skips New River Mall &amp; downtown Roanoke; <strong>no PolyPass or Go-Card accepted</strong>). Contrast with the <strong>2003 Supplemental Commuter Coaches</strong> (45' MCI coaches running <code>Falling Branch &harr; New River Mall &harr; Commonwealth Mall</code> every 30 min, free with PolyPass).
                                 </p>
                             </div>
-                        </div>
+                        </wa-card>
                     </div>
                 </div>
 
                 <!-- 4-Era Chronological Evolution Callout (Flash Pass -> CPI Transit Center -> ARTS Rail -> Blue Ridge Go-Card) -->
-                <div class="card bg-body-tertiary border-warning border-start border-5 shadow-sm">
+                <wa-card class="card bg-body-tertiary border-warning border-start border-5 shadow-sm w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
                     <div class="card-body p-4">
                         <h3 class="h5 fw-bold mb-3" style="color: var(--cpi-maroon, #630031);">
                             <i class="fa-duotone fa-timeline-arrow me-2 text-warning"></i>Chronological Evolution: From Flashing the PolyPass to the Blue Ridge Go-Card
@@ -184,7 +184,7 @@ $nav = [
                         <div class="row g-3 small text-body">
                             <div class="col-md-6">
                                 <div class="p-3 bg-body rounded border h-100">
-                                    <span class="badge bg-secondary font-monospace mb-1">ERA 1 // 2003–2015</span>
+                                    <wa-badge variant="neutral" appearance="accent" class="font-monospace mb-1">ERA 1 // 2003–2015</wa-badge>
                                     <h4 class="h6 fw-bold mb-1">Commonwealth Mall Curbside &amp; "Flash Pass" Boarding</h4>
                                     <p class="mb-0 text-body-secondary">
                                         Prior to 2016, all five bus agencies converged curbside along <strong>Commonwealth Mall</strong> beneath <strong>The Keystone Bridge</strong> outside <strong>Kincaid Hall</strong> (headsign: <code>1 COMMONWEALTH MALL</code>). There were no smart cards: CPI, Galax CC, Carroll County, RU, Dublin CC, and Radford students simply <strong>flashed their physical school ID cards</strong> to the bus operator at the front door.
@@ -193,7 +193,7 @@ $nav = [
                             </div>
                             <div class="col-md-6">
                                 <div class="p-3 bg-body rounded border h-100">
-                                    <span class="badge bg-primary font-monospace mb-1">ERA 2 // 2016 &amp; OCT 31, 2017</span>
+                                    <wa-badge variant="brand" appearance="accent" class="font-monospace mb-1">ERA 2 // 2016 &amp; OCT 31, 2017</wa-badge>
                                     <h4 class="h6 fw-bold mb-1">CPI Transit Center &amp; ARTS Roanoke Rail Extension</h4>
                                     <p class="mb-0 text-body-secondary">
                                         In <strong>2016</strong>, the off-street multi-bay <strong>CPI Transit Center</strong> opened (`1 CPI TRANS CTR`), ending the Commonwealth Mall curbside bottleneck. On <strong>October 31, 2017</strong>, <strong>ARTS</strong> (<em>American Rail Transit Service</em>) extended its <strong><em>The Patriot</em></strong> train to Roanoke's <strong>Third Street Station</strong>, launching RVT's 7-day <em>Train Connector</em> Thruway service.
@@ -202,7 +202,7 @@ $nav = [
                             </div>
                             <div class="col-md-6">
                                 <div class="p-3 bg-body rounded border h-100">
-                                    <span class="badge bg-success font-monospace mb-1">ERA 3 // POST-COVID (2020–2021+)</span>
+                                    <wa-badge variant="success" appearance="accent" class="font-monospace mb-1">ERA 3 // POST-COVID (2020–2021+)</wa-badge>
                                     <h4 class="h6 fw-bold mb-1">The Blue Ridge Go-Card, MagnaByte Express Mode, &amp; POP</h4>
                                     <p class="mb-0 text-body-secondary">
                                         Following the COVID-19 pandemic, Blue Ridge Transit, Bluewater Transit, and RVT retired visual ID flashing and launched the contactless <strong>Blue Ridge Go-Card</strong> (while Radford Transit went permanently 100% fare-free). Embedded directly into new <strong>CPI PolyPasses</strong>, Galax CC IDs, and Carroll County IDs—and supporting <strong>MagnaPhone / MagnaWatch Express Transit Mode</strong> (tap without waking) and open-loop bank cards—the Go-Card automates daily/30-day fare capping, upgrade pricing, and <strong>GPS + Tap-Off zone billing</strong> on the northbound <em>Maroon Express</em> (charging `$1.00` for local Exit 14 hops vs. `$5.00` interstate). One year later, BT installed rear-door validators on 40'/60' buses for all-door <strong>Proof of Payment (POP)</strong> boarding.
@@ -211,7 +211,7 @@ $nav = [
                             </div>
                             <div class="col-md-6">
                                 <div class="p-3 bg-body rounded border h-100">
-                                    <span class="badge bg-info text-dark font-monospace mb-1">ERA 4 // FUTURE RAIL EXTENSION</span>
+                                    <wa-badge variant="brand" appearance="accent" class="font-monospace mb-1">ERA 4 // FUTURE RAIL EXTENSION</wa-badge>
                                     <h4 class="h6 fw-bold mb-1">ARTS Rail Reaches Christiansburg Transit Center</h4>
                                     <p class="mb-0 text-body-secondary">
                                         When <strong>ARTS</strong> extends passenger rail south from Roanoke toward Bristol, the <strong>Christiansburg Transit Center</strong> (with its multi-level VDOT garage, bus bays, and passenger rail station) is completed on the footprint of the <strong>Falling Branch Park &amp; Ride (Exit 118)</strong>. With trains stopping directly at Christiansburg Transit Center, RVT's special Thruway <em>Train Connector</em> is retired while regular Mon–Sat <em>Roanoke Express</em> service continues.
@@ -220,7 +220,7 @@ $nav = [
                             </div>
                         </div>
                     </div>
-                </div>
+                </wa-card>
             </div>
 
             <!-- [SECTION 2] The Christiansburg Transit Center at Falling Branch (Exit 118) -->
@@ -229,7 +229,7 @@ $nav = [
                     <h2 class="h3 fw-bold mb-0" style="color: var(--cpi-maroon, #630031);">
                         <i class="fa-duotone fa-warehouse-full me-2"></i>2. The Christiansburg Transit Center at Falling Branch (Exit 118)
                     </h2>
-                    <span class="badge bg-warning text-dark font-monospace">VDOT OWNED &amp; OPERATED</span>
+                    <wa-badge variant="warning" appearance="accent" class="font-monospace">VDOT OWNED &amp; OPERATED</wa-badge>
                 </div>
 
                 <p class="text-body mb-3">
@@ -269,7 +269,7 @@ $nav = [
                 </div>
 
                 <!-- Asymmetric WSDOT-Style Ramp Architecture -->
-                <div class="card bg-body-tertiary shadow-sm my-4 border-start border-5 border-info">
+                <wa-card class="card bg-body-tertiary shadow-sm my-4 border-start border-5 border-info w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
                     <div class="card-body p-4">
                         <h3 class="h5 fw-bold mb-2">
                             <i class="fa-duotone fa-bridge-suspension me-2 text-info"></i>WSDOT-Style Asymmetric Freeway Geometry: Why the Bus Beats the Car
@@ -326,7 +326,7 @@ $nav = [
                             </div>
                         </div>
                     </div>
-                </div>
+                </wa-card>
 
                 <h3 class="h5 fw-bold mt-4 mb-2" style="color: var(--cpi-maroon, #630031);">
                     <i class="fa-duotone fa-bolt-lightning me-2"></i>Game-Day "Load and GO!" Operations
@@ -342,7 +342,7 @@ $nav = [
                     <h2 class="h3 fw-bold mb-0" style="color: var(--cpi-maroon, #630031);">
                         <i class="fa-duotone fa-traffic-cone me-2"></i>3. The Great CPI Parking Paradox ("The $150 Arrogance Tax")
                     </h2>
-                    <span class="badge bg-danger text-white font-monospace">POSTGAME EVACUATION PHYSICS</span>
+                    <wa-badge variant="danger" appearance="accent" class="font-monospace">POSTGAME EVACUATION PHYSICS</wa-badge>
                 </div>
 
                 <p class="fs-5 text-body mb-3">
@@ -353,14 +353,14 @@ $nav = [
                 </p>
 
                 <!-- Official CPI Parking Disclaimer Callout -->
-                <div class="alert alert-warning shadow-sm border-start border-5 border-warning p-4 mb-4 font-monospace">
+                <wa-callout variant="warning" appearance="accent" class="shadow-sm p-4 mb-4 font-monospace d-block">
                     <div class="fw-bold text-uppercase small mb-1">
                         <i class="fa-solid fa-gavel me-2"></i>Commonwealth Polytechnic Institute — Game-Day Parking Terms &amp; Conditions
                     </div>
                     <p class="mb-0 fst-italic">
                         "Game-day parking fees reserve a vehicle parking space only. Parking location near The Crucible does not provide, guarantee, or imply priority departure from campus following athletic events."
                     </p>
-                </div>
+                </wa-callout>
 
                 <p class="text-body mb-4">
                     In short: <strong>$150 buys a 500-yard walk to your car—and places your automobile at the exact geographic center of a 65,000-person pedestrian and vehicular bottleneck.</strong> When the game clock hits <code>0:00</code>, the Commonwealth treats postgame traffic like an industrial evacuation grid:
@@ -368,7 +368,7 @@ $nav = [
 
                 <div class="row g-4 mb-4">
                     <div class="col-md-4">
-                        <div class="card h-100 bg-body-tertiary border-danger border-top border-4 shadow-sm">
+                        <wa-card class="card h-100 bg-body-tertiary border-danger border-top border-4 shadow-sm w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
                             <div class="card-body p-4">
                                 <h3 class="h6 fw-bold text-uppercase text-danger mb-2">
                                     <i class="fa-solid fa-ban me-2"></i>1. The $150 Stadium Lot Trap
@@ -377,11 +377,11 @@ $nav = [
                                     Mr. $150 reaches his luxury SUV in three minutes, starts the engine, and backs out—only to sit motionless for 90 minutes close enough to The Crucible to hear the empty bleachers being pressure-washed. Every intersection around the stadium is converted to outbound-only police control. When his GPS says <em>"Turn left toward Southgate,"</em> a Virginia State Trooper points at a barricade and waves him north toward <strong>Prices Fork Road</strong>, where central campus lots are slowly metered into the outbound funnel.
                                 </p>
                             </div>
-                        </div>
+                        </wa-card>
                     </div>
 
                     <div class="col-md-4">
-                        <div class="card h-100 bg-body-tertiary border-warning border-top border-4 shadow-sm">
+                        <wa-card class="card h-100 bg-body-tertiary border-warning border-top border-4 shadow-sm w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
                             <div class="card-body p-4">
                                 <h3 class="h6 fw-bold text-uppercase text-warning-emphasis mb-2">
                                     <i class="fa-solid fa-traffic-light-stop me-2"></i>2. The "South Main Street" Illusion
@@ -390,11 +390,11 @@ $nav = [
                                     Inevitably, thousands of motorists think: <em>"US-460 Bypass is going to be jammed; I'll outsmart everybody and take South Main Street (Business 460) through town to Christiansburg!"</em> Unfortunately, 20,000 other motorists attended the same seminar on clever shortcuts. Unlike limited-access US-460, South Main Street is a municipal arterial with traffic signals, side streets, businesses, and pedestrian crosswalks—turning a "shortcut" into a bumper-to-bumper crawl.
                                 </p>
                             </div>
-                        </div>
+                        </wa-card>
                     </div>
 
                     <div class="col-md-4">
-                        <div class="card h-100 bg-body-tertiary border-success border-top border-4 shadow-sm">
+                        <wa-card class="card h-100 bg-body-tertiary border-success border-top border-4 shadow-sm w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
                             <div class="card-body p-4">
                                 <h3 class="h6 fw-bold text-uppercase text-success mb-2">
                                     <i class="fa-solid fa-bus-simple me-2"></i>3. The Falling Branch Advantage
@@ -403,7 +403,7 @@ $nav = [
                                     Transit riders experience <em>passenger</em> queuing at the stadium barriers rather than <em>vehicle</em> gridlock. Four 60-foot artics pull up simultaneously (`FALLING BRANCH P&amp;R` / `GO FORGERS!`), swallow 400 fans at a time, and are waved straight down bus-only <strong>Southgate Drive</strong> by State Troopers onto US-460 and the bus-only ramp into the Christiansburg Transit Center—moving 12,000+ people <em>outside</em> the Blacksburg traffic zone before turning them back into motorists right beside I-81.
                                 </p>
                             </div>
-                        </div>
+                        </wa-card>
                     </div>
                 </div>
 
@@ -440,7 +440,7 @@ $nav = [
                             <tr class="table-success">
                                 <td class="fw-bold ps-3">
                                     Christiansburg Transit Center<br>
-                                    <span class="badge bg-dark font-monospace mt-1">FALLING BRANCH — EXIT 118</span>
+                                    <wa-badge variant="neutral" appearance="accent" class="font-monospace mt-1">FALLING BRANCH — EXIT 118</wa-badge>
                                 </td>
                                 <td class="font-monospace text-success fw-bold">FREE ($0)</td>
                                 <td><strong>FREE Crucible Shuttle</strong></td>
@@ -451,7 +451,7 @@ $nav = [
                 </div>
 
                 <!-- Comedic Dialogue Vignette -->
-                <div class="card bg-body-tertiary border-0 shadow-sm p-4">
+                <wa-card class="card bg-body-tertiary border-0 shadow-sm p-4 w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
                     <h3 class="h6 fw-bold text-uppercase mb-3 font-monospace" style="color: var(--cpi-maroon, #630031);">
                         <i class="fa-duotone fa-comments me-2"></i>Overheard in the 4th Quarter: The Veteran vs. The $150 Visitor
                     </h3>
@@ -468,11 +468,11 @@ $nav = [
                             <p class="mb-0 fw-bold text-danger"><strong>Visiting Fan:</strong> "WHY ARE THOSE BUSES MOVING AND WE AREN'T?!"</p>
                         </div>
                     </div>
-                </div>
+                </wa-card>
             </div>
 
             <!-- [SECTION 4] Cross-Universe Transit Connections -->
-            <div class="alert alert-info border-info-subtle text-info-emphasis shadow-sm p-4 mb-4">
+            <wa-callout variant="brand" appearance="accent" class="shadow-sm p-4 mb-4 d-block">
                 <h3 class="h6 fw-bold text-uppercase mb-2">
                     <i class="fa-duotone fa-book-sparkles me-2"></i>Cross-Universe Narrative Connections: From Exit 98 to Progress Street
                 </h3>
@@ -487,7 +487,7 @@ $nav = [
                         <strong><em>The Stardust Engine (<a href="/engine-room/artists/stardust-engine/discography/2003-mile-marker-98" class="alert-link">Mile Marker 98</a> &amp; <a href="/engine-room/artists/stardust-engine/discography/2004-progress-street" class="alert-link">Progress Street</a>):</em></strong> After spending their college years loading gear onto Blue Ridge Transit Route 1—and after Ryan's 1990 paralysis made low-floor ADA transit ramps a sacred lifeline—the band commissioned their own custom 30-foot <strong>2004 Prairie Coachworks RLFD30</strong> low-floor shuttle bus for the cover of 2004's <em>Progress Street</em>.
                     </li>
                 </ul>
-            </div>
+            </wa-callout>
 
             <!-- [NAVIGATION] Sequential Chapter Stepper -->
             <?php include ROOT_PATH . '/includes/components/navigation/narrative-stepper.php'; ?>

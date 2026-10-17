@@ -18,9 +18,9 @@ $pageTitle = "The Retention Offer - Engine Room History";
     <!-- INLINE: Page header defining the context of the personnel action and staff retention -->
     <div class="row justify-content-center mb-5">
         <div class="col-lg-8 text-center">
-            <span class="badge bg-success-subtle text-success-emphasis rounded-pill px-3 py-2 mb-3 text-uppercase letter-spacing-1 border border-success-subtle">
+            <wa-badge variant="success" appearance="filled-outlined" pill class="text-success-emphasis px-3 py-2 mb-3 text-uppercase letter-spacing-1">
                 <i class="fa-duotone fa-handshake me-2"></i>Personnel Action
-            </span>
+            </wa-badge>
             <h1 class="display-4 fw-bold text-body-emphasis mb-2" style="font-family: 'Impact', sans-serif;">
                 THE "BRIDGE" OFFER
             </h1>
@@ -34,7 +34,7 @@ $pageTitle = "The Retention Offer - Engine Room History";
         <div class="col-lg-10">
             
             <!-- INLINE: Status Update Card - Contrasting the previous status under Omni-Global with the new status under the Jessica Miller Center -->
-            <div class="card bg-body-tertiary border-secondary shadow-lg mb-5">
+            <wa-card class="card bg-body-tertiary border-secondary shadow-lg mb-5 w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
                 <div class="card-body p-4">
                     <h5 class="text-uppercase text-body-emphasis border-bottom border-secondary pb-3 mb-3">
                         <i class="fa-solid fa-users me-2"></i>Status Update: The Workforce
@@ -62,7 +62,7 @@ $pageTitle = "The Retention Offer - Engine Room History";
                         </div>
                     </div>
                 </div>
-            </div>
+            </wa-card>
 
             <?php 
                 /**
@@ -111,15 +111,15 @@ $pageTitle = "The Retention Offer - Engine Room History";
 
     <div class="row justify-content-center mt-5">
         <div class="col-lg-8">
-            <div class="alert alert-dark bg-body-tertiary border-primary text-body-secondary d-flex align-items-center shadow-sm">
-                <i class="fa-solid fa-heart-pulse fs-2 me-4 text-primary"></i>
+            <wa-callout variant="brand" appearance="accent" class="shadow-sm d-block">
+                <i slot="icon" class="fa-solid fa-heart-pulse text-primary"></i>
                 <div>
                     <h5 class="alert-heading fw-bold text-primary">The Retention Rate</h5>
                     <p class="mb-0 small">
                         Of the 142 eligible employees (support staff, logistics, IT, janitorial), <strong>138 accepted the offer</strong>. The only four who declined were mid-level managers who refused to report to a 20-year-old Executive Director (Jessica). They were not missed.
                     </p>
                 </div>
-            </div>
+            </wa-callout>
         </div>
     </div>
 

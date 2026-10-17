@@ -57,7 +57,7 @@ if ($is_standalone) {
             </h2>
             
             <!-- START: 403 Terminal Narrative Context -->
-            <div class="card terminal-card p-4 border-warning text-start mb-5 mx-auto" style="max-width: 600px;">
+            <wa-card class="terminal-card border-warning text-start mb-5 mx-auto w-100" style="max-width: 600px;">
                 <div class="terminal-header text-warning">
                     <i class="fa-duotone fa-fingerprint me-2"></i>
                     Security Violation // Port Telsus Grid
@@ -70,16 +70,16 @@ if ($is_standalone) {
                         Your IP address has been flagged by the <strong>Port Telsus Compliance Division</strong>. This incident has been added to your permanent record. If you are authorized, present your identification token at the nearest checkpoint immediately.
                     </p>
                 </div>
-            </div>
+            </wa-card>
             
             <!-- START: 403 Safe Escape Actions -->
             <div class="d-flex justify-content-center gap-3 flex-wrap">
-                <a href="/" class="btn btn-outline-light rounded-pill px-4">
-                    <i class="fa-duotone fa-house me-2"></i>Return to Safety
-                </a>
-                <a href="/contact" class="btn btn-warning rounded-pill px-4 shadow-glow text-dark">
-                    <i class="fa-duotone fa-id-card me-2"></i>Request Clearance
-                </a>
+                <wa-button href="/" variant="neutral" appearance="outlined" pill>
+                    <i slot="start" class="fa-duotone fa-house"></i>Return to Safety
+                </wa-button>
+                <wa-button href="/contact" variant="warning" appearance="accent" pill class="shadow-glow">
+                    <i slot="start" class="fa-duotone fa-id-card"></i>Request Clearance
+                </wa-button>
             </div>
 
         </div>

@@ -58,7 +58,7 @@ if ($is_standalone) {
             </h2>
             
             <!-- START: 500 Terminal Narrative Context -->
-            <div class="card terminal-card p-4 border-danger text-start mb-5 mx-auto" style="max-width: 600px;">
+            <wa-card class="terminal-card border-danger text-start mb-5 mx-auto w-100" style="max-width: 600px;">
                 <div class="terminal-header text-danger">
                     <i class="fa-duotone fa-triangle-exclamation me-2"></i>
                     System Failure // Main Reactor Core
@@ -71,16 +71,16 @@ if ($is_standalone) {
                         Our engineers have been dispatched to the crash site. Please try refreshing the page in a few moments. We may have just blown a fuse during the guitar solo.
                     </p>
                 </div>
-            </div>
+            </wa-card>
             
             <!-- START: 500 Safe Escape Actions -->
             <div class="d-flex justify-content-center gap-3 flex-wrap">
-                <a href="/" class="btn btn-outline-secondary rounded-pill px-4">
-                    <i class="fa-duotone fa-power-off me-2"></i>Manual Restart
-                </a>
-                <a href="/contact" class="btn btn-danger rounded-pill px-4 shadow-glow">
-                    <i class="fa-duotone fa-bug me-2"></i>Report Malfunction
-                </a>
+                <wa-button href="/" variant="neutral" appearance="outlined" pill>
+                    <i slot="start" class="fa-duotone fa-power-off"></i>Manual Restart
+                </wa-button>
+                <wa-button href="/contact" variant="danger" appearance="accent" pill class="shadow-glow">
+                    <i slot="start" class="fa-duotone fa-bug"></i>Report Malfunction
+                </wa-button>
             </div>
 
         </div>

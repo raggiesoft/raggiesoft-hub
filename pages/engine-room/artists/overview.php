@@ -99,14 +99,14 @@ $pageTitle = "Artist Roster - Engine Room Records";
         
         <!-- ERR-001: THE STARDUST ENGINE (ONLINE) -->
         <div class="col-xl-6 col-lg-12 d-flex align-items-stretch">
-            <div class="card card-industrial w-100">
+            <wa-card class="card card-industrial w-100" style="--body-padding: 0; --header-padding: 0;">
                 <div class="artist-img-box">
                     <img src="<?php echo $cdnBaseUrl; ?>/engine-room-records/artists/the-stardust-engine/band-logo.png" 
                          alt="The Stardust Engine">
                 </div>
                 <div class="card-body d-flex flex-column p-4">
                     <div class="d-flex justify-content-between align-items-start mb-2">
-                        <span class="badge badge-industrial">ERR-001</span>
+                        <wa-badge variant="neutral" appearance="accent" class="badge-industrial">ERR-001</wa-badge>
                         <span class="led led-on" title="System Online"></span>
                     </div>
                     <h3 class="h4 fw-bold text-uppercase">The Stardust Engine</h3>
@@ -114,27 +114,27 @@ $pageTitle = "Artist Roster - Engine Room Records";
                         The founding artist. A family-owned progressive rock unit blending 80s synth-pop with industrial and stadium rock.
                     </p>
                     <div class="d-flex flex-wrap gap-2 mt-3">
-                        <a href="/engine-room/artists/stardust-engine" class="btn btn-outline-primary rounded-0 flex-grow-1 text-uppercase fw-bold font-monospace">
-                            <i class="fa-duotone fa-book-open-cover me-1"></i> Lore Archive
-                        </a>
-                        <a href="https://music.raggiesoft.com/the-stardust-engine" target="_blank" rel="noopener" class="btn btn-primary rounded-0 flex-grow-1 text-uppercase fw-bold font-monospace">
-                            <i class="fa-duotone fa-headphones me-1"></i> Listening Room
-                        </a>
+                        <wa-button variant="brand" appearance="outlined" href="/engine-room/artists/stardust-engine" class="rounded-0 flex-grow-1 text-uppercase fw-bold font-monospace">
+                            <i slot="start" class="fa-duotone fa-book-open-cover"></i> Lore Archive
+                        </wa-button>
+                        <wa-button variant="brand" appearance="accent" href="https://music.raggiesoft.com/the-stardust-engine" target="_blank" rel="noopener" class="rounded-0 flex-grow-1 text-uppercase fw-bold font-monospace">
+                            <i slot="start" class="fa-duotone fa-headphones"></i> Listening Room
+                        </wa-button>
                     </div>
                 </div>
-            </div>
+            </wa-card>
         </div>
 
         <!-- ERR-002: FRACTURED PRISMS (ONLINE) -->
         <div class="col-xl-6 col-lg-12 d-flex align-items-stretch">
-            <div class="card card-industrial w-100">
+            <wa-card class="card card-industrial w-100" style="--body-padding: 0; --header-padding: 0;">
                 <div class="artist-img-box">
                     <img src="<?php echo $cdnBaseUrl; ?>/engine-room-records/artists/fractured-prisms/band-logo.jpg" 
                          alt="Fractured Prisms">
                 </div>
                 <div class="card-body d-flex flex-column p-4">
                     <div class="d-flex justify-content-between align-items-start mb-2">
-                        <span class="badge badge-industrial">ERR-002</span>
+                        <wa-badge variant="neutral" appearance="accent" class="badge-industrial">ERR-002</wa-badge>
                         <span class="led led-on" title="System Online"></span>
                     </div>
                     <h3 class="h4 fw-bold text-uppercase text-body-emphasis">Fractured Prisms</h3>
@@ -142,27 +142,27 @@ $pageTitle = "Artist Roster - Engine Room Records";
                         British Synth-Pop and gaslamp-lit rock operas from the Maryland sanctuary. Known for <em>Carnaby Street</em>, <em>1883</em>, and the "Safe Harbor" flute melody.
                     </p>
                     <div class="d-flex flex-wrap gap-2 mt-3">
-                        <a href="/engine-room/artists/fractured-prisms" class="btn btn-outline-primary rounded-0 flex-grow-1 text-uppercase fw-bold font-monospace">
-                            <i class="fa-duotone fa-book-open-cover me-1"></i> Lore Archive
-                        </a>
-                        <a href="https://music.raggiesoft.com/fractured-prisms" target="_blank" rel="noopener" class="btn btn-primary rounded-0 flex-grow-1 text-uppercase fw-bold font-monospace">
-                            <i class="fa-duotone fa-headphones me-1"></i> Listening Room
-                        </a>
+                        <wa-button variant="brand" appearance="outlined" href="/engine-room/artists/fractured-prisms" class="rounded-0 flex-grow-1 text-uppercase fw-bold font-monospace">
+                            <i slot="start" class="fa-duotone fa-book-open-cover"></i> Lore Archive
+                        </wa-button>
+                        <wa-button variant="brand" appearance="accent" href="https://music.raggiesoft.com/fractured-prisms" target="_blank" rel="noopener" class="rounded-0 flex-grow-1 text-uppercase fw-bold font-monospace">
+                            <i slot="start" class="fa-duotone fa-headphones"></i> Listening Room
+                        </wa-button>
                     </div>
                 </div>
-            </div>
+            </wa-card>
         </div>
 
         <!-- ERR-003: THE PAPER WALL (ONLINE) -->
         <div class="col-xl-6 col-lg-12 d-flex align-items-stretch">
-            <div class="card card-industrial w-100">
+            <wa-card class="card card-industrial w-100" style="--body-padding: 0; --header-padding: 0;">
                 <div class="artist-img-box">
                     <img src="<?php echo $cdnBaseUrl; ?>/engine-room-records/artists/the-paper-wall/band-logo.jpg" 
                          alt="The Paper Wall">
                 </div>
                 <div class="card-body d-flex flex-column p-4">
                     <div class="d-flex justify-content-between align-items-start mb-2">
-                        <span class="badge badge-industrial">ERR-003</span>
+                        <wa-badge variant="neutral" appearance="accent" class="badge-industrial">ERR-003</wa-badge>
                         <span class="led led-on" title="System Online"></span>
                     </div>
                     <h3 class="h4 fw-bold text-uppercase text-body-emphasis">The Paper Wall</h3>
@@ -170,27 +170,27 @@ $pageTitle = "Artist Roster - Engine Room Records";
                         Literary Rock Operas / Alternative Rock. Formed by Julian Croft and Maya Sterling, and the architects of <em>Static &amp; Silence</em>.
                     </p>
                     <div class="d-flex flex-wrap gap-2 mt-3">
-                        <a href="/engine-room/artists/the-paper-wall" class="btn btn-outline-primary rounded-0 flex-grow-1 text-uppercase fw-bold font-monospace">
-                            <i class="fa-duotone fa-book-open-cover me-1"></i> Lore Archive
-                        </a>
-                        <a href="https://music.raggiesoft.com/the-paper-wall" target="_blank" rel="noopener" class="btn btn-primary rounded-0 flex-grow-1 text-uppercase fw-bold font-monospace">
-                            <i class="fa-duotone fa-headphones me-1"></i> Listening Room
-                        </a>
+                        <wa-button variant="brand" appearance="outlined" href="/engine-room/artists/the-paper-wall" class="rounded-0 flex-grow-1 text-uppercase fw-bold font-monospace">
+                            <i slot="start" class="fa-duotone fa-book-open-cover"></i> Lore Archive
+                        </wa-button>
+                        <wa-button variant="brand" appearance="accent" href="https://music.raggiesoft.com/the-paper-wall" target="_blank" rel="noopener" class="rounded-0 flex-grow-1 text-uppercase fw-bold font-monospace">
+                            <i slot="start" class="fa-duotone fa-headphones"></i> Listening Room
+                        </wa-button>
                     </div>
                 </div>
-            </div>
+            </wa-card>
         </div>
 
         <!-- ERR-004: MANA CANVAS (ONLINE) -->
         <div class="col-xl-6 col-lg-12 d-flex align-items-stretch">
-            <div class="card card-industrial w-100">
+            <wa-card class="card card-industrial w-100" style="--body-padding: 0; --header-padding: 0;">
                 <div class="artist-img-box">
                     <img src="<?php echo $cdnBaseUrl; ?>/engine-room-records/artists/mana-canvas/band-logo.jpg" 
                          alt="Mana Canvas">
                 </div>
                 <div class="card-body d-flex flex-column p-4">
                     <div class="d-flex justify-content-between align-items-start mb-2">
-                        <span class="badge badge-industrial">ERR-004</span>
+                        <wa-badge variant="neutral" appearance="accent" class="badge-industrial">ERR-004</wa-badge>
                         <span class="led led-on" title="System Online"></span>
                     </div>
                     <h3 class="h4 fw-bold text-uppercase text-body-emphasis">Mana Canvas</h3>
@@ -198,27 +198,27 @@ $pageTitle = "Artist Roster - Engine Room Records";
                         Symphonic Fantasy Rock &amp; 16-bit Acoustic Alchemy. The musical voice of the <em>Aethel Saga</em>, featuring <em>Songs of the Untethered</em>.
                     </p>
                     <div class="d-flex flex-wrap gap-2 mt-3">
-                        <a href="/raggiesoft-books/aethel-saga" class="btn btn-outline-primary rounded-0 flex-grow-1 text-uppercase fw-bold font-monospace">
-                            <i class="fa-duotone fa-book-sparkles me-1"></i> Saga Lore
-                        </a>
-                        <a href="https://music.raggiesoft.com/mana-canvas" target="_blank" rel="noopener" class="btn btn-primary rounded-0 flex-grow-1 text-uppercase fw-bold font-monospace">
-                            <i class="fa-duotone fa-headphones me-1"></i> Listening Room
-                        </a>
+                        <wa-button variant="brand" appearance="outlined" href="/raggiesoft-books/aethel-saga" class="rounded-0 flex-grow-1 text-uppercase fw-bold font-monospace">
+                            <i slot="start" class="fa-duotone fa-book-sparkles"></i> Saga Lore
+                        </wa-button>
+                        <wa-button variant="brand" appearance="accent" href="https://music.raggiesoft.com/mana-canvas" target="_blank" rel="noopener" class="rounded-0 flex-grow-1 text-uppercase fw-bold font-monospace">
+                            <i slot="start" class="fa-duotone fa-headphones"></i> Listening Room
+                        </wa-button>
                     </div>
                 </div>
-            </div>
+            </wa-card>
         </div>
 
         <!-- ERR-005: THE ARCTIC SYMPHONY PROJECT (ONLINE) -->
         <div class="col-xl-6 col-lg-12 d-flex align-items-stretch">
-            <div class="card card-industrial w-100">
+            <wa-card class="card card-industrial w-100" style="--body-padding: 0; --header-padding: 0;">
                 <div class="artist-img-box">
                     <img src="<?php echo $cdnBaseUrl; ?>/engine-room-records/artists/the-arctic-symphony-project/band-logo.jpg" 
                          alt="The Arctic Symphony Project">
                 </div>
                 <div class="card-body d-flex flex-column p-4">
                     <div class="d-flex justify-content-between align-items-start mb-2">
-                        <span class="badge badge-industrial">ERR-005</span>
+                        <wa-badge variant="neutral" appearance="accent" class="badge-industrial">ERR-005</wa-badge>
                         <span class="led led-on" title="System Online"></span>
                     </div>
                     <h3 class="h4 fw-bold text-uppercase text-body-emphasis">The Arctic Symphony Project</h3>
@@ -226,27 +226,27 @@ $pageTitle = "Artist Roster - Engine Room Records";
                         Holiday Symphonic Rock / Neoclassical Metal. Creators of <em>Tales from the Solstice</em> and the Safe Harbor anthem <em>"Upon This Winter's Night."</em>
                     </p>
                     <div class="d-flex flex-wrap gap-2 mt-3">
-                        <a href="/engine-room/artists/the-arctic-symphony-project" class="btn btn-outline-primary rounded-0 flex-grow-1 text-uppercase fw-bold font-monospace">
-                            <i class="fa-duotone fa-book-open-cover me-1"></i> Lore Archive
-                        </a>
-                        <a href="https://music.raggiesoft.com/the-arctic-symphony-project" target="_blank" rel="noopener" class="btn btn-primary rounded-0 flex-grow-1 text-uppercase fw-bold font-monospace">
-                            <i class="fa-duotone fa-headphones me-1"></i> Listening Room
-                        </a>
+                        <wa-button variant="brand" appearance="outlined" href="/engine-room/artists/the-arctic-symphony-project" class="rounded-0 flex-grow-1 text-uppercase fw-bold font-monospace">
+                            <i slot="start" class="fa-duotone fa-book-open-cover"></i> Lore Archive
+                        </wa-button>
+                        <wa-button variant="brand" appearance="accent" href="https://music.raggiesoft.com/the-arctic-symphony-project" target="_blank" rel="noopener" class="rounded-0 flex-grow-1 text-uppercase fw-bold font-monospace">
+                            <i slot="start" class="fa-duotone fa-headphones"></i> Listening Room
+                        </wa-button>
                     </div>
                 </div>
-            </div>
+            </wa-card>
         </div>
         
         <!-- ERR-006: CRIMSON NODE (ONLINE) -->
         <div class="col-xl-6 col-lg-12 d-flex align-items-stretch">
-            <div class="card card-industrial w-100">
+            <wa-card class="card card-industrial w-100" style="--body-padding: 0; --header-padding: 0;">
                 <div class="artist-img-box">
                     <img src="<?php echo $cdnBaseUrl; ?>/engine-room-records/artists/crimson-node/band-logo.jpg" 
                          alt="Crimson Node">
                 </div>
                 <div class="card-body d-flex flex-column p-4">
                     <div class="d-flex justify-content-between align-items-start mb-2">
-                        <span class="badge badge-industrial">ERR-006</span>
+                        <wa-badge variant="neutral" appearance="accent" class="badge-industrial">ERR-006</wa-badge>
                         <span class="led led-on" title="System Online"></span>
                     </div>
                     <h3 class="h4 fw-bold text-uppercase">Crimson Node</h3>
@@ -254,23 +254,23 @@ $pageTitle = "Artist Roster - Engine Room Records";
                         1980s progressive rock and stadium synth-pop. The unstoppable musical phalanx of the Miller and Brooks family operating out of the Kids House.
                     </p>
                     <div class="d-flex flex-wrap gap-2 mt-3">
-                        <a href="/engine-room/artists/crimson-node" class="btn btn-outline-primary rounded-0 flex-grow-1 text-uppercase fw-bold font-monospace">
-                            <i class="fa-duotone fa-book-open-cover me-1"></i> Lore Archive
-                        </a>
-                        <a href="https://music.raggiesoft.com/crimson-node" target="_blank" rel="noopener" class="btn btn-primary rounded-0 flex-grow-1 text-uppercase fw-bold font-monospace">
-                            <i class="fa-duotone fa-headphones me-1"></i> Listening Room
-                        </a>
+                        <wa-button variant="brand" appearance="outlined" href="/engine-room/artists/crimson-node" class="rounded-0 flex-grow-1 text-uppercase fw-bold font-monospace">
+                            <i slot="start" class="fa-duotone fa-book-open-cover"></i> Lore Archive
+                        </wa-button>
+                        <wa-button variant="brand" appearance="accent" href="https://music.raggiesoft.com/crimson-node" target="_blank" rel="noopener" class="rounded-0 flex-grow-1 text-uppercase fw-bold font-monospace">
+                            <i slot="start" class="fa-duotone fa-headphones"></i> Listening Room
+                        </wa-button>
                     </div>
                 </div>
-            </div>
+            </wa-card>
         </div>
 
     </div>
 
     <div class="text-center pt-3 border-top border-secondary opacity-75">
-        <a href="/engine-room" class="btn btn-link text-decoration-none text-uppercase fw-bold text-body font-monospace">
-            <i class="fa-solid fa-arrow-left me-2"></i>Back to Headquarters
-        </a>
+        <wa-button variant="neutral" appearance="plain" href="/engine-room" class="text-uppercase fw-bold text-body font-monospace">
+            <i slot="start" class="fa-solid fa-arrow-left"></i>Back to Headquarters
+        </wa-button>
     </div>
 
 </div>

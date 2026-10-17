@@ -81,9 +81,9 @@ $cover_art = $cdnBaseUrl . '/engine-room-records/artists/the-stardust-engine/199
 
     <div class="row mb-5">
         <div class="col-lg-8 mx-auto text-center">
-            <span class="badge bg-info-subtle text-info-emphasis rounded-pill px-3 py-2 shadow-sm mb-3 border border-info-subtle text-uppercase letter-spacing-1">
+            <wa-badge variant="brand" appearance="filled-outlined" pill class="text-info-emphasis px-3 py-2 shadow-sm mb-3 text-uppercase letter-spacing-1">
                 <i class="fa-duotone fa-file-audio me-2"></i>Evidence Item #94-B
-            </span>
+            </wa-badge>
             <h1 class="display-4 fw-bold text-uppercase text-body-emphasis mb-0">
                 The "Atmosphere" Demo
             </h1>
@@ -214,13 +214,16 @@ $cover_art = $cdnBaseUrl . '/engine-room-records/artists/the-stardust-engine/199
             <wa-card class="bg-dark text-white border-secondary mt-5 shadow-lg w-100">
                 <div class="p-4">
                     <h4 class="h5 text-warning fw-bold text-uppercase mb-3">
-                        <i class="fa-duotone fa-scale-balanced me-2"></i>The Deposition Reality
+                        <i class="fa-duotone fa-scale-balanced me-2"></i>The Deposition Reality &amp; The 2011 Finalized Master
                     </h4>
                     <p class="small text-white-75 mb-3">
                         During the 1994 breach of contract trial, Apex Records' defense team attempted to argue that Julian Vance was merely following the band's creative lead. They presented these lyrics as evidence that the band <em>wanted</em> a highly sexualized campaign to compete with Cydele.
                     </p>
-                    <p class="small text-white-75 mb-0">
+                    <p class="small text-white-75 mb-3">
                         Holly O'Connell destroyed their argument by placing Cassidy's concept art on the projector, followed by an expert witness from the <strong>Jet Propulsion Laboratory</strong> who testified that every metaphor in the song perfectly described the physics of the Space Shuttle <em>Discovery</em>. The jury took less than three hours to side with the band.
+                    </p>
+                    <p class="small text-info mb-0 border-top border-secondary pt-3">
+                        <i class="fa-duotone fa-satellite me-2"></i><strong>Archival Postscript (2011):</strong> Because the September 1992 rough cut of <em>"Atmosphere"</em> was tracked at Apex West under early-1990s label pressure, it sounded like an early-1990s alt-rock demo that the band was never happy with. Nineteen years later, on October 18, 2011 (<em>Starfield Calibration</em>), Cassidy and Ryan finally recorded the <strong>definitive, finalized studio version</strong> of <em>"Atmosphere"</em> in <a href="/engine-room/artists/stardust-engine/story/cosmic-tidal-lock-sound" class="text-warning fw-bold text-decoration-underline">The Cosmic Tidal Lock Sound&trade;</a>—returning the song at last to the lush 1980s sound they loved so much.
                     </p>
                 </div>
             </wa-card>
