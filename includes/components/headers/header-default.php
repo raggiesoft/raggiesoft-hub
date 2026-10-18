@@ -44,8 +44,8 @@ $isContact     = str_starts_with($request_uri, '/contact');
     <wa-dropdown-item value="https://michaelpragsdale.com">
       <i slot="icon" class="fa-duotone fa-user-gear text-primary"></i> Executive Portfolio &amp; CV
     </wa-dropdown-item>
-    <wa-dropdown-item value="/family">
-      <i slot="icon" class="fa-duotone fa-people-group text-info"></i> The RaggieSoft Family (DevOps)
+    <wa-dropdown-item value="https://michaelpragsdale.com/build-team">
+      <i slot="icon" class="fa-duotone fa-people-group text-info"></i> The Build Team (DevOps Family)
     </wa-dropdown-item>
     <wa-dropdown-item value="/case-studies">
       <i slot="icon" class="fa-duotone fa-file-magnifying-glass text-warning"></i> Operational Case Studies

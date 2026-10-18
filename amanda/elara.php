@@ -52,18 +52,27 @@ if (strpos($request_uri, '/raggiesoft-media') === 0) {
 }
 if (strpos($request_uri, '/raggiesoft-books') === 0) {
     if (strpos($request_uri, '/raggiesoft-books/stardust-engine') === 0) {
-        header('Location: https://books.raggiesoft.com/read/stardust-engine' . $qs, true, 301);
+        header('Location: https://books.raggiesoft.com/stardust-engine' . $qs, true, 301);
         exit;
     }
     if (strpos($request_uri, '/raggiesoft-books/aethel-saga') === 0) {
-        header('Location: https://books.raggiesoft.com/read/the-silver-gauntlet-of-aethel' . $qs, true, 301);
+        header('Location: https://books.raggiesoft.com/aethel-saga' . $qs, true, 301);
+        exit;
+    }
+    if (strpos($request_uri, '/raggiesoft-books/knox') === 0) {
+        header('Location: https://books.raggiesoft.com/knox' . $qs, true, 301);
         exit;
     }
     if (strpos($request_uri, '/raggiesoft-books/ocean-view-archives') === 0) {
-        header('Location: https://books.raggiesoft.com/read/the-ocean-view-archives' . $qs, true, 301);
+        header('Location: https://books.raggiesoft.com/' . $qs, true, 301);
         exit;
     }
     header('Location: https://books.raggiesoft.com/' . $qs, true, 301);
+    exit;
+}
+if (strpos($request_uri, '/family') === 0) {
+    $sub = ltrim(substr($request_uri, strlen('/family')), '/');
+    header('Location: https://michaelpragsdale.com/build-team' . ($sub !== '' ? '/' . $sub : '') . $qs, true, 301);
     exit;
 }
 if (strpos($request_uri, '/encyclopedia') === 0) {
