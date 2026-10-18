@@ -358,7 +358,7 @@ $pageTitle = "RaggieSoft™ | The Central Hub";
        */
       $constellations = [
         [
-          'imgSrc' => $cdnBaseUrl . '/raggiesoft-books/images/og/library-og.jpg',
+          'imgSrc' => $cdnBaseUrl . '/raggiesoft-books/images/og/contemporary_v2.jpg',
           'imgAlt' => 'Ocean View Archives Book Reader 16:9 OpenGraph Preview',
           'fallbackText' => 'Ocean View Archives',
           'aspectRatio' => '16:9',

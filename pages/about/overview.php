@@ -181,8 +181,8 @@ $imagesJson = htmlspecialchars(json_encode($heroImages), ENT_QUOTES, 'UTF-8');
                 <a href="/about/engine-room" class="text-decoration-none d-block h-100">
                     <wa-card class="card glass-card h-100 w-100 hover-lift border-danger transition-all" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
                         <div class="card-body text-center p-4">
-                            <img src="<?php echo $cdnBaseUrl; ?>/engine-room-records/images/logos/engine-room-records-logo.png" 
-                                 class="rounded-circle mb-3 border border-danger shadow-sm logo-invert" width="60" height="60" alt="Engine Room">
+                            <img src="<?php echo $cdnBaseUrl; ?>/engine-room-records/images/logos/engine-room-records-logo-white.png" 
+                                 class="rounded-circle mb-3 border border-danger shadow-sm p-1" width="60" height="60" style="object-fit: contain;" alt="Engine Room">
                             <h5 class="fw-bold text-danger mb-2">Engine Room</h5>
                             <p class="small text-white-50 mb-0">Fictional Industrial Record Label.</p>
                         </div>

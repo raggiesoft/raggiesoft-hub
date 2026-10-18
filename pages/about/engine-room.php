@@ -39,10 +39,10 @@ $pageTitle = "About Engine Room Records";
 
 <wa-card class="card bg-black text-white border-danger mb-5 shadow-sm overflow-hidden w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
     <div class="card-body p-5 text-center">
-        <img src="<?php echo $cdnBaseUrl; ?>/engine-room-records/images/logos/engine-room-records-logo.png" 
+        <img src="<?php echo $cdnBaseUrl; ?>/engine-room-records/images/logos/engine-room-records-logo-white.png" 
              alt="Engine Room Records" 
-             class="rounded-circle border border-danger border-3 mb-4 shadow logo-invert"
-             width="100" height="100">
+             class="rounded-circle border border-danger border-3 mb-4 shadow p-2"
+             width="100" height="100" style="object-fit: contain;">
              
         <h1 class="display-5 fw-bold mb-2 text-uppercase font-monospace" style="letter-spacing: -1px;">
             Engine Room Records
