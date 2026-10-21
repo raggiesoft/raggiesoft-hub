@@ -56,8 +56,7 @@ $customPageAssets = [
     <div class="row g-5 mb-5">
         
         <div class="col-lg-6">
-            <div class="card bg-base-200 border border-base-300 shadow-sm card glass-card h-100 border-secondary w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
-<div class="card-body">
+            <div class="card glass-card h-100 border-secondary w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
 
                 <div class="card-header bg-transparent border-secondary text-warning fw-bold text-uppercase py-3">
                     <i class="ph-duotone ph-planet me-2"></i> Layer 1: The Universe
@@ -76,12 +75,10 @@ $customPageAssets = [
                 </div>
             
 </div>
-</div>
         </div>
 
         <div class="col-lg-6">
-            <div class="card bg-base-200 border border-base-300 shadow-sm card glass-card h-100 border-info shadow-glow w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
-<div class="card-body">
+            <div class="card glass-card h-100 border-info shadow-glow w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
 
                 <div class="card-header bg-transparent border-info text-info fw-bold text-uppercase py-3">
                     <i class="ph-duotone ph-git-branch me-2"></i> Layer 2: The Project
@@ -99,7 +96,6 @@ $customPageAssets = [
                     </a>
                 </div>
             
-</div>
 </div>
         </div>
 

@@ -66,8 +66,7 @@
             <div class="row g-4 mb-5">
                 
                 <div class="col-md-6">
-                    <div class="card bg-base-200 border border-base-300 shadow-sm card h-100 bg-black border border-secondary text-white shadow-sm w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
-<div class="card-body">
+                    <div class="card bg-base-200 border border-base-300 h-100 bg-black border border-secondary text-white shadow-sm w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
 
                         <div class="card-body p-4 text-center">
                             <div class="mb-3 text-warning fs-1">
@@ -80,12 +79,10 @@
                         </div>
                     
 </div>
-</div>
                 </div>
 
                 <div class="col-md-6">
-                    <div class="card bg-base-200 border border-base-300 shadow-sm card h-100 bg-black border border-secondary text-white shadow-sm w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
-<div class="card-body">
+                    <div class="card bg-base-200 border border-base-300 h-100 bg-black border border-secondary text-white shadow-sm w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
 
                         <div class="card-body p-4 text-center">
                             <div class="mb-3 text-warning fs-1">
@@ -98,13 +95,11 @@
                         </div>
                     
 </div>
-</div>
                 </div>
 
             </div>
 
-            <div class="card bg-base-200 border border-base-300 shadow-sm card bg-body-tertiary border-0 border-start border-4 border-warning shadow-sm mb-5 w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
-<div class="card-body">
+            <div class="card bg-base-200 border border-base-300 bg-body-tertiary border-0 border-start border-4 border-warning shadow-sm mb-5 w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
 
                 <div class="card-body p-4 p-lg-5">
                     <div class="row align-items-center">
@@ -128,7 +123,6 @@
                     </div>
                 </div>
             
-</div>
 </div>
 
             <div class="text-center pt-4">

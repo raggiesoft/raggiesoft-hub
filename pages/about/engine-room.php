@@ -37,8 +37,7 @@ $pageTitle = "About Engine Room Records";
     }
 </style>
 
-<div class="card bg-base-200 border border-base-300 shadow-sm card bg-black text-white border-danger mb-5 shadow-sm overflow-hidden w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
-<div class="card-body">
+<div class="card bg-base-200 border border-base-300 bg-black text-white border-danger mb-5 shadow-sm overflow-hidden w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
 
     <div class="card-body p-5 text-center">
         <img src="<?php echo $cdnBaseUrl; ?>/engine-room-records/images/logos/engine-room-records-logo-white.png" 
@@ -60,7 +59,6 @@ $pageTitle = "About Engine Room Records";
     </div>
 
 </div>
-</div>
 
 <div class="row justify-content-center">
     <div class="col-lg-11">
@@ -81,8 +79,7 @@ $pageTitle = "About Engine Room Records";
         <!-- Philosophy and Roster Cards -->
         <div class="row g-4 mb-5">
             <div class="col-md-6">
-                <div class="card bg-base-200 border border-base-300 shadow-sm card h-100 bg-dark text-white border-danger shadow-sm w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
-<div class="card-body">
+                <div class="card bg-base-200 border border-base-300 h-100 bg-dark text-white border-danger shadow-sm w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
 
                     <div class="card-body d-flex flex-column justify-content-center p-4">
                         <h3 class="h5 fw-bold text-danger mb-3 font-monospace"><i class="ph-duotone ph-gavel me-2" aria-hidden="true"></i>The Philosophy</h3>
@@ -93,11 +90,9 @@ $pageTitle = "About Engine Room Records";
                     </div>
                 
 </div>
-</div>
             </div>
             <div class="col-md-6">
-                <div class="card bg-base-200 border border-base-300 shadow-sm card h-100 bg-dark text-white border-secondary shadow-sm w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
-<div class="card-body">
+                <div class="card bg-base-200 border border-base-300 h-100 bg-dark text-white border-secondary shadow-sm w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
 
                     <div class="card-body p-4">
                         <h3 class="h5 fw-bold text-white mb-3 font-monospace"><i class="ph-duotone ph-users me-2" aria-hidden="true"></i>The Roster</h3>
@@ -109,13 +104,11 @@ $pageTitle = "About Engine Room Records";
                     </div>
                 
 </div>
-</div>
             </div>
         </div>
 
         <!-- REALITY CHECK NOTIFICATION -->
-        <div class="card bg-base-200 border border-base-300 shadow-sm card border-secondary bg-body-tertiary mb-5 shadow-sm shadow-sm w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
-<div class="card-body">
+        <div class="card bg-base-200 border border-base-300 border-secondary bg-body-tertiary mb-5 shadow-sm shadow-sm w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
 
             <div class="card-body d-flex align-items-start p-4">
                 <i class="ph-duotone ph-info text-danger fs-4 me-3 mt-1" aria-hidden="true"></i>
@@ -127,7 +120,6 @@ $pageTitle = "About Engine Room Records";
                 </div>
             </div>
         
-</div>
 </div>
 
         <!-- RETURN LINK CONTAINER -->

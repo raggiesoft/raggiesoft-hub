@@ -33,8 +33,7 @@ $pageTitle = "Case Studies: Operational Overview";
     <div class="row g-4">
         
         <div class="col-lg-6">
-            <div class="card bg-base-200 border border-base-300 shadow-sm card h-100 border-danger shadow-sm w-100" style="--body-padding: 0; --header-padding: 0;">
-<div class="card-body">
+            <div class="card bg-base-200 border border-base-300 h-100 border-danger shadow-sm w-100" style="--body-padding: 0; --header-padding: 0;">
 
                 <div class="card-header bg-danger bg-opacity-10 text-danger fw-bold text-uppercase d-flex justify-content-between align-items-center p-3">
                     <span><i class="ph-duotone ph-heartbeat me-2"></i>Incident Response</span>
@@ -56,12 +55,10 @@ $pageTitle = "Case Studies: Operational Overview";
                 </div>
             
 </div>
-</div>
         </div>
 
         <div class="col-lg-6">
-            <div class="card bg-base-200 border border-base-300 shadow-sm card h-100 border-primary shadow-sm w-100" style="--body-padding: 0; --header-padding: 0;">
-<div class="card-body">
+            <div class="card bg-base-200 border border-base-300 h-100 border-primary shadow-sm w-100" style="--body-padding: 0; --header-padding: 0;">
 
                 <div class="card-header bg-primary bg-opacity-10 text-primary fw-bold text-uppercase d-flex justify-content-between align-items-center p-3">
                     <span><i class="ph-duotone ph-path me-2"></i>Logistics & Routing</span>
@@ -82,7 +79,6 @@ $pageTitle = "Case Studies: Operational Overview";
                     </a>
                 </div>
             
-</div>
 </div>
         </div>
 

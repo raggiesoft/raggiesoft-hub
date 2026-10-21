@@ -25,8 +25,8 @@ $pageTitle = "Contact Channels | Michael Ragsdale";
 require_once ROOT_PATH . '/includes/utils/json-reader.php';
 $heroImages = fetch_asset_json('common/json/hero-images.json');
 $startImage = !empty($heroImages) 
-    ? "<?php echo $cdnBaseUrl; ?>" . $heroImages[array_rand($heroImages)] 
-    : "<?php echo $cdnBaseUrl; ?>/common/patterns/stars-transparent.png";
+    ? $cdnBaseUrl . $heroImages[array_rand($heroImages)] 
+    : $cdnBaseUrl . "/common/patterns/stars-transparent.png";
 $imagesJson = htmlspecialchars(json_encode($heroImages), ENT_QUOTES, 'UTF-8');
 ?>
 
@@ -129,8 +129,7 @@ $imagesJson = htmlspecialchars(json_encode($heroImages), ENT_QUOTES, 'UTF-8');
         <div class="row g-4 justify-content-center">
             
             <div class="col-lg-4">
-                <div class="card bg-base-200 border border-base-300 shadow-sm card force-glass-bg force-border-info h-100 p-4 text-center rounded-4 shadow-lg w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
-<div class="card-body">
+                <div class="card force-glass-bg force-border-info h-100 p-4 text-center rounded-4 shadow-lg w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
 
                     <div class="card-body p-4">
                         <div class="mb-4 force-icon-info">
@@ -149,12 +148,10 @@ $imagesJson = htmlspecialchars(json_encode($heroImages), ENT_QUOTES, 'UTF-8');
                     </div>
                 
 </div>
-</div>
             </div>
 
             <div class="col-lg-4">
-                <div class="card bg-base-200 border border-base-300 shadow-sm card force-glass-bg force-border-primary h-100 p-4 text-center rounded-4 shadow-lg w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
-<div class="card-body">
+                <div class="card force-glass-bg force-border-primary h-100 p-4 text-center rounded-4 shadow-lg w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
 
                     <div class="card-body d-flex flex-column p-4">
                         <div class="mb-4 force-icon-primary">
@@ -182,12 +179,10 @@ $imagesJson = htmlspecialchars(json_encode($heroImages), ENT_QUOTES, 'UTF-8');
                     </div>
                 
 </div>
-</div>
             </div>
 
             <div class="col-lg-4">
-                <div class="card bg-base-200 border border-base-300 shadow-sm card force-glass-bg force-border-success h-100 p-4 text-center rounded-4 shadow-lg w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
-<div class="card-body">
+                <div class="card force-glass-bg force-border-success h-100 p-4 text-center rounded-4 shadow-lg w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
 
                     <div class="card-body d-flex flex-column p-4">
                         <div class="mb-4 force-icon-success">
@@ -213,13 +208,11 @@ $imagesJson = htmlspecialchars(json_encode($heroImages), ENT_QUOTES, 'UTF-8');
                     </div>
                 
 </div>
-</div>
             </div>
             
 
             <div class="col-lg-4">
-                <div class="card bg-base-200 border border-base-300 shadow-sm card force-glass-bg force-border-danger h-100 p-4 text-center rounded-4 shadow-lg w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
-<div class="card-body">
+                <div class="card force-glass-bg force-border-danger h-100 p-4 text-center rounded-4 shadow-lg w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
 
                     <div class="card-body d-flex flex-column p-4">
                         <div class="mb-4 force-icon-danger">
@@ -240,12 +233,10 @@ $imagesJson = htmlspecialchars(json_encode($heroImages), ENT_QUOTES, 'UTF-8');
                     </div>
                 
 </div>
-</div>
             </div>
 
             <div class="col-lg-4">
-                <div class="card bg-base-200 border border-base-300 shadow-sm card force-glass-bg force-border-warning h-100 p-4 text-center rounded-4 shadow-lg w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
-<div class="card-body">
+                <div class="card force-glass-bg force-border-warning h-100 p-4 text-center rounded-4 shadow-lg w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
 
                     <div class="card-body d-flex flex-column p-4">
                         <div class="mb-4 force-icon-warning">
@@ -266,12 +257,10 @@ $imagesJson = htmlspecialchars(json_encode($heroImages), ENT_QUOTES, 'UTF-8');
                     </div>
                 
 </div>
-</div>
             </div>
 
             <div class="col-lg-4">
-                <div class="card bg-base-200 border border-base-300 shadow-sm card force-glass-bg force-border-secondary h-100 p-4 text-center rounded-4 shadow-lg w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
-<div class="card-body">
+                <div class="card force-glass-bg force-border-secondary h-100 p-4 text-center rounded-4 shadow-lg w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
 
                     <div class="card-body d-flex flex-column p-4">
                         <div class="mb-4 force-icon-secondary">
@@ -295,7 +284,6 @@ $imagesJson = htmlspecialchars(json_encode($heroImages), ENT_QUOTES, 'UTF-8');
                         </div>
                     </div>
                 
-</div>
 </div>
             </div>
 

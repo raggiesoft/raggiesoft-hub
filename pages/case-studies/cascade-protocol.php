@@ -33,8 +33,7 @@ $pageTitle = "Case Study: The Cascade Protocol";
     <div class="fs-5">
         
         <!-- ARCHITECTURE: Incident Report UI mimicking an operational system failure log -->
-        <div class="card bg-base-200 border border-base-300 shadow-sm card border-danger mb-4 shadow-sm w-100" style="--body-padding: 0; --header-padding: 0;">
-<div class="card-body">
+        <div class="card bg-base-200 border border-base-300 border-danger mb-4 shadow-sm w-100" style="--body-padding: 0; --header-padding: 0;">
 
             <div class="card-header border-danger bg-danger bg-opacity-10 fw-bold text-uppercase text-danger p-3">
                 <i class="ph-duotone ph-waveform me-2"></i>Incident Report
@@ -77,7 +76,6 @@ $pageTitle = "Case Study: The Cascade Protocol";
             </div>
         
 </div>
-</div>
 
         <p class="lead mb-4">
             A breakdown of a <strong>Catastrophic Sensory Failure</strong> and the manual override protocols executed to restore system stability.
@@ -109,8 +107,7 @@ $pageTitle = "Case Study: The Cascade Protocol";
         <div class="row g-4 mb-4">
             <!-- ARCHITECTURE: Mapping interpersonal support to technical redundancies -->
             <div class="col-md-6">
-                <div class="card bg-base-200 border border-base-300 shadow-sm card h-100 border-0 bg-body-tertiary w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
-<div class="card-body">
+                <div class="card bg-base-200 border border-base-300 h-100 border-0 bg-body-tertiary w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
 
                     <div class="card-body p-4">
                         <h5 class="fw-bold text-info"><i class="ph-duotone ph-anchor me-2"></i>The Ground Wire (Paige)</h5>
@@ -120,11 +117,9 @@ $pageTitle = "Case Study: The Cascade Protocol";
                     </div>
                 
 </div>
-</div>
             </div>
             <div class="col-md-6">
-                <div class="card bg-base-200 border border-base-300 shadow-sm card h-100 border-0 bg-body-tertiary w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
-<div class="card-body">
+                <div class="card bg-base-200 border border-base-300 h-100 border-0 bg-body-tertiary w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
 
                     <div class="card-body p-4">
                         <h5 class="fw-bold text-success"><i class="ph-duotone ph-shield-chevron me-2"></i>The Firewall (Jessica)</h5>
@@ -133,7 +128,6 @@ $pageTitle = "Case Study: The Cascade Protocol";
                         </p>
                     </div>
                 
-</div>
 </div>
             </div>
         </div>

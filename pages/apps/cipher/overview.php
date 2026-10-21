@@ -24,8 +24,7 @@
         </div>
     </div>
 
-    <div class="card bg-base-200 border border-base-300 shadow-sm card shadow-sm border-0 bg-body-tertiary mb-5 w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
-<div class="card-body">
+    <div class="card bg-base-200 border border-base-300 shadow-sm border-0 bg-body-tertiary mb-5 w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
 
         <div class="card-header bg-dark text-white d-flex align-items-center p-3">
             <i class="ph-duotone ph-sliders me-2"></i>
@@ -91,12 +90,10 @@
         </div>
     
 </div>
-</div>
 
     <div class="row g-5">
         <div class="col-md-5">
-            <div class="card bg-base-200 border border-base-300 shadow-sm card shadow-sm border-0 bg-body-tertiary w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
-<div class="card-body">
+            <div class="card bg-base-200 border border-base-300 shadow-sm border-0 bg-body-tertiary w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
 
                 <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center p-3">
                     <h5 class="mb-0">
@@ -164,7 +161,6 @@
                 </div>
             
 </div>
-</div>
         </div>
 
         <div class="col-md-7">
@@ -176,8 +172,7 @@
             
 </div>
 
-            <div id="explanationBox" class="card bg-base-200 border border-base-300 shadow-sm card border-primary d-none w-100" style="--body-padding: 0; --header-padding: 0;">
-<div class="card-body">
+            <div id="explanationBox" class="card bg-base-200 border border-base-300 border-primary d-none w-100" style="--body-padding: 0; --header-padding: 0;">
 
                 <div class="card-header bg-primary text-white p-3">
                     <strong class="small text-uppercase">
@@ -189,7 +184,6 @@
                         </ul>
                 </div>
             
-</div>
 </div>
 
             <div id="placeholderState" class="text-center text-body-secondary py-5">

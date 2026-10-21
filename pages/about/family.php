@@ -90,8 +90,7 @@
                 </div>
             </div>
 
-            <div class="card bg-base-200 border border-base-300 shadow-sm card bg-body-tertiary border-0 shadow-sm mb-5 w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
-<div class="card-body">
+            <div class="card bg-base-200 border border-base-300 bg-body-tertiary border-0 shadow-sm mb-5 w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
 
                 <div class="card-body p-4 p-lg-5">
                     <h3 class="fw-bold text-body mb-4">
@@ -132,7 +131,6 @@
                     </div>
                 </div>
             
-</div>
 </div>
 
             <div class="mb-5">

@@ -214,10 +214,10 @@ if (isset($customPageAssets) && is_array($customPageAssets)) {
 
     <!-- Self-Hosted DaisyUI 5 & Phosphor Icons (Served via assets.raggiesoft.com) -->
     <?php foreach ($css_load_queue as $cssUrl): ?>
-        <link href="<?php echo $cssUrl . (str_contains($cssUrl, '?') ? '&' : '?') . 'v=20261021b'; ?>" rel="stylesheet">
+        <link href="<?php echo $cssUrl . (str_contains($cssUrl, '?') ? '&' : '?') . 'v=20261021c'; ?>" rel="stylesheet">
     <?php endforeach; ?>    
 
-    <link rel="stylesheet" href="<?php echo $cdn_root; ?>/fonts/phosphor/phosphor.min.css?v=20261021b">
+    <link rel="stylesheet" href="<?php echo $cdn_root; ?>/fonts/phosphor/phosphor.min.css?v=20261021c">
 
     <?php foreach ($critical_images as $imgUrl): ?>
         <?php if($imgUrl): ?><link rel="preload" as="image" href="<?php echo $imgUrl; ?>"><?php endif; ?>
@@ -248,6 +248,7 @@ if (isset($customPageAssets) && is_array($customPageAssets)) {
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,700;1,400&family=M+PLUS+Rounded+1c:wght@400;700&family=Titillium+Web:wght@400;700&display=swap" rel="stylesheet">
 
 <script src="<?php echo $cdnBaseUrl; ?>/common/js/elara-spa.js?v=<?php echo time(); ?>" defer></script>
+    <script src="<?php echo $cdnBaseUrl; ?>/common/js/hero-image.js?v=20261021c" defer></script>
     <script src="<?php echo $cdnBaseUrl; ?>/common/js/raggiesoft-network.js?v=20261017m" defer></script>    
     <style>
         .brand-font { font-family: <?php echo $brand_font_css; ?> !important; }

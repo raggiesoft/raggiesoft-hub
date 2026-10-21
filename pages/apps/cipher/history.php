@@ -24,8 +24,7 @@
                 </p>
             </div>
 
-            <div class="card bg-base-200 border border-base-300 shadow-sm card shadow-sm mb-4 border-0 bg-body-tertiary w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
-<div class="card-body">
+            <div class="card bg-base-200 border border-base-300 shadow-sm mb-4 border-0 bg-body-tertiary w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
 
                 <div class="card-body p-4">
                     <div class="d-flex align-items-center mb-3">
@@ -53,10 +52,8 @@
                 </div>
             
 </div>
-</div>
 
-            <div class="card bg-base-200 border border-base-300 shadow-sm card shadow-sm mb-4 border-0 bg-body-tertiary w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
-<div class="card-body">
+            <div class="card bg-base-200 border border-base-300 shadow-sm mb-4 border-0 bg-body-tertiary w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
 
                 <div class="card-body p-4">
                     <div class="d-flex align-items-center mb-3">
@@ -77,10 +74,8 @@
                 </div>
             
 </div>
-</div>
 
-            <div class="card bg-base-200 border border-base-300 shadow-sm card shadow-sm mb-4 border-primary w-100" style="--body-padding: 0; --header-padding: 0;">
-<div class="card-body">
+            <div class="card bg-base-200 border border-base-300 shadow-sm mb-4 border-primary w-100" style="--body-padding: 0; --header-padding: 0;">
 
                 <div class="card-header bg-primary text-white p-3">
                     <i class="ph-duotone ph-laptop me-2"></i>Current Iteration
@@ -100,7 +95,6 @@
                     </p>
                 </div>
             
-</div>
 </div>
 
             <div class="d-grid gap-2">

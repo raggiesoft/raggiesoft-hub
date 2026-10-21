@@ -23,8 +23,7 @@
                 </p>
             </div>
 
-            <div class="card bg-base-200 border border-base-300 shadow-sm card shadow-sm mb-4 border-0 bg-body-tertiary w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
-<div class="card-body">
+            <div class="card bg-base-200 border border-base-300 shadow-sm mb-4 border-0 bg-body-tertiary w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
 
                 <div class="card-body p-4">
                     <h4 class="card-title fw-bold mb-3">
@@ -36,10 +35,8 @@
                 </div>
             
 </div>
-</div>
 
-            <div class="card bg-base-200 border border-base-300 shadow-sm card shadow-sm mb-4 border-0 bg-body-tertiary w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
-<div class="card-body">
+            <div class="card bg-base-200 border border-base-300 shadow-sm mb-4 border-0 bg-body-tertiary w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
 
                 <div class="card-body p-4">
                     <h4 class="card-title fw-bold mb-3">
@@ -88,10 +85,8 @@
                 </div>
             
 </div>
-</div>
 
-            <div class="card bg-base-200 border border-base-300 shadow-sm card shadow-sm mb-4 border-0 bg-body-tertiary w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
-<div class="card-body">
+            <div class="card bg-base-200 border border-base-300 shadow-sm mb-4 border-0 bg-body-tertiary w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
 
                 <div class="card-body p-4">
                     <h4 class="card-title fw-bold mb-3">
@@ -120,10 +115,8 @@
                 </div>
             
 </div>
-</div>
 
-            <div class="card bg-base-200 border border-base-300 shadow-sm card shadow-sm mb-4 border-primary w-100" style="--body-padding: 0; --header-padding: 0;">
-<div class="card-body">
+            <div class="card bg-base-200 border border-base-300 shadow-sm mb-4 border-primary w-100" style="--body-padding: 0; --header-padding: 0;">
 
                 <div class="card-header bg-primary text-white p-3">
                     <i class="ph-duotone ph-chart-line-up me-2"></i>Reading the Feedback
@@ -160,7 +153,6 @@
                     </div>
                 </div>
             
-</div>
 </div>
             
             <div class="d-grid gap-2">

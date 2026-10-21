@@ -28,8 +28,7 @@
                 <p class="text-muted">Last Updated: <?php echo date("F Y"); ?></p>
             </div>
 
-            <div class="card bg-base-200 border border-base-300 shadow-sm card shadow-sm border-0 mb-4 w-100" style="--body-padding: 0; --header-padding: 0;">
-<div class="card-body">
+            <div class="card bg-base-200 border border-base-300 shadow-sm border-0 mb-4 w-100" style="--body-padding: 0; --header-padding: 0;">
 
                 <div class="card-body p-4 p-lg-5">
                     
@@ -69,7 +68,6 @@
 
                 </div>
             
-</div>
 </div>
 
         </div>

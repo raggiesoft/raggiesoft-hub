@@ -68,8 +68,7 @@ $imagesJson = htmlspecialchars(json_encode($heroImages), ENT_QUOTES, 'UTF-8');
         <div class="row g-5 justify-content-center mb-5">
             
             <div class="col-lg-5">
-                <div class="card bg-base-200 border border-base-300 shadow-sm card glass-card h-100 border-secondary w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
-<div class="card-body">
+                <div class="card glass-card h-100 border-secondary w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
 
                     <div class="card-header bg-transparent border-secondary text-warning fw-bold text-uppercase py-3">
                         <i class="ph-duotone ph-clock-counter-clockwise me-2"></i> Layer 1: The Origin
@@ -104,12 +103,10 @@ $imagesJson = htmlspecialchars(json_encode($heroImages), ENT_QUOTES, 'UTF-8');
                     </div>
                 
 </div>
-</div>
             </div>
 
             <div class="col-lg-5">
-                <div class="card bg-base-200 border border-base-300 shadow-sm card glass-card h-100 border-primary w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
-<div class="card-body">
+                <div class="card glass-card h-100 border-primary w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
 
                     <div class="card-header bg-transparent border-primary text-primary fw-bold text-uppercase py-3">
                         <i class="ph-duotone ph-git-branch me-2"></i> Layer 2: The Engine
@@ -130,7 +127,6 @@ $imagesJson = htmlspecialchars(json_encode($heroImages), ENT_QUOTES, 'UTF-8');
                     </div>
                 
 </div>
-</div>
             </div>
 
         </div>
@@ -148,8 +144,7 @@ $imagesJson = htmlspecialchars(json_encode($heroImages), ENT_QUOTES, 'UTF-8');
             <div class="col-lg-3 col-md-6">
                 <!-- ARCHITECTURE: Portal to the Personified DevOps Constructs -->
                 <a href="/about/family" class="text-decoration-none d-block h-100">
-                    <div class="card bg-base-200 border border-base-300 shadow-sm card glass-card h-100 w-100 hover-lift border-info transition-all" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
-<div class="card-body">
+                    <div class="card glass-card h-100 w-100 hover-lift border-info transition-all" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
 
                         <div class="card-body text-center p-4">
                             <img src="<?php echo $cdnBaseUrl; ?>/raggiesoft-lore/family/images/logos/logo-family.png" 
@@ -159,14 +154,12 @@ $imagesJson = htmlspecialchars(json_encode($heroImages), ENT_QUOTES, 'UTF-8');
                         </div>
                     
 </div>
-</div>
                 </a>
             </div>
 
             <div class="col-lg-3 col-md-6">
                 <a href="/about/stardust-engine" class="text-decoration-none d-block h-100">
-                    <div class="card bg-base-200 border border-base-300 shadow-sm card glass-card h-100 w-100 hover-lift border-primary transition-all" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
-<div class="card-body">
+                    <div class="card glass-card h-100 w-100 hover-lift border-primary transition-all" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
 
                         <div class="card-body text-center p-4">
                             <img src="<?php echo $cdnBaseUrl; ?>/engine-room-records/artists/the-stardust-engine/band-logo.png" 
@@ -176,14 +169,12 @@ $imagesJson = htmlspecialchars(json_encode($heroImages), ENT_QUOTES, 'UTF-8');
                         </div>
                     
 </div>
-</div>
                 </a>
             </div>
 
             <div class="col-lg-3 col-md-6">
                 <a href="/about/aethel" class="text-decoration-none d-block h-100">
-                    <div class="card bg-base-200 border border-base-300 shadow-sm card glass-card h-100 w-100 hover-lift border-warning transition-all" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
-<div class="card-body">
+                    <div class="card glass-card h-100 w-100 hover-lift border-warning transition-all" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
 
                         <div class="card-body text-center p-4">
                             <img src="<?php echo $cdnBaseUrl; ?>/raggiesoft-books/aethel/images/logos/silver-gauntlet-of-aethel-logo.png" 
@@ -193,14 +184,12 @@ $imagesJson = htmlspecialchars(json_encode($heroImages), ENT_QUOTES, 'UTF-8');
                         </div>
                     
 </div>
-</div>
                 </a>
             </div>
 
             <div class="col-lg-3 col-md-6">
                 <a href="/about/engine-room" class="text-decoration-none d-block h-100">
-                    <div class="card bg-base-200 border border-base-300 shadow-sm card glass-card h-100 w-100 hover-lift border-danger transition-all" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
-<div class="card-body">
+                    <div class="card glass-card h-100 w-100 hover-lift border-danger transition-all" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
 
                         <div class="card-body text-center p-4">
                             <img src="<?php echo $cdnBaseUrl; ?>/engine-room-records/images/logos/engine-room-records-logo-white.png" 
@@ -210,7 +199,6 @@ $imagesJson = htmlspecialchars(json_encode($heroImages), ENT_QUOTES, 'UTF-8');
                         </div>
                     
 </div>
-</div>
                 </a>
             </div>
 
@@ -218,8 +206,7 @@ $imagesJson = htmlspecialchars(json_encode($heroImages), ENT_QUOTES, 'UTF-8');
 
         <div class="row justify-content-center">
             <div class="col-md-10">
-                <div class="card bg-base-200 border border-base-300 shadow-sm card glass-card border-secondary w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
-<div class="card-body">
+                <div class="card glass-card border-secondary w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
 
                     <div class="card-body p-4 d-flex flex-column flex-md-row justify-content-around align-items-center text-center">
                         
@@ -242,7 +229,6 @@ $imagesJson = htmlspecialchars(json_encode($heroImages), ENT_QUOTES, 'UTF-8');
 
                     </div>
                 
-</div>
 </div>
             </div>
         </div>

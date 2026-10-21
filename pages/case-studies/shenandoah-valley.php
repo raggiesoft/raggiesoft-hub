@@ -28,8 +28,7 @@
     </div>
 
     <div class="fs-5">
-        <div class="card bg-base-200 border border-base-300 shadow-sm card bg-primary text-light border-0 mb-4 w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
-<div class="card-body">
+        <div class="card bg-base-200 border border-base-300 bg-primary text-light border-0 mb-4 w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
 
             <div class="card-body p-4">
                 <div class="row">
@@ -48,7 +47,6 @@
                 </div>
             </div>
         
-</div>
 </div>
 
         <p class="lead mb-4">In software architecture, we often discuss <strong>Graceful Degradation</strong>—how a system behaves when a critical component fails. Does it crash the entire server, or does it switch to a "Safe Mode" to preserve core functionality? This case study examines a real-world application of this principle during a 30-mile stress test.</p>
@@ -93,8 +91,7 @@
 
         <div class="row mt-4">
             <div class="col-md-6">
-                <div class="card bg-base-200 border border-base-300 shadow-sm card h-100 border-warning bg-warning bg-opacity-10 w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
-<div class="card-body">
+                <div class="card bg-base-200 border border-base-300 h-100 border-warning bg-warning bg-opacity-10 w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
 
                     <div class="card-body p-4">
                         <h4 class="h5 card-title"><i class="ph-duotone ph-warning-octagon me-2" aria-hidden="true"></i>Phase A: The Hard Exit</h4>
@@ -103,11 +100,9 @@
                     </div>
                 
 </div>
-</div>
             </div>
             <div class="col-md-6 mt-3 mt-md-0">
-                <div class="card bg-base-200 border border-base-300 shadow-sm card h-100 border-success bg-success bg-opacity-10 w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
-<div class="card-body">
+                <div class="card bg-base-200 border border-base-300 h-100 border-success bg-success bg-opacity-10 w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
 
                     <div class="card-body p-4">
                         <h4 class="h5 card-title"><i class="ph-duotone ph-mountains me-2" aria-hidden="true"></i>Phase B: Redundant Routing</h4>
@@ -119,7 +114,6 @@
                         </ul>
                     </div>
                 
-</div>
 </div>
             </div>
         </div>
