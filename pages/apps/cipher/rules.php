@@ -132,7 +132,7 @@
                     
                     <div role="alert" class="alert shadow-sm alert-warning mb-4 d-block">
 
-                        <i class="shrink-0 text-xl" class="ph-duotone ph-sort-descending"></i>
+                        <i class=\"shrink-0 text-xl ph-duotone ph-sort-descending\"></i>
                         <div>
                             <strong>Priority Sorting:</strong> The Stardust Engine always displays <strong>(+)</strong> symbols first.
                             <br>

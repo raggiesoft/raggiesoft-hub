@@ -74,7 +74,7 @@ $metaDescription = "Chapter 1 of the Pathfinder West strategy guide. Roxy, Allis
     <div class="card bg-base-200 border border-base-300 shadow-sm my-5 shadow-sm">
 <div class="card-body">
 
-        <div class="card-header px-6 pt-5 pb-0" class="text-primary text-uppercase fw-bold tracking-wider">
+        <div class=\"card-header px-6 pt-5 pb-0 text-primary text-uppercase fw-bold tracking-wider\">
             <i class="ph-duotone ph-game-controller me-2"></i> Guide Notes
         </div>
         <ul class="mb-0 lh-lg">

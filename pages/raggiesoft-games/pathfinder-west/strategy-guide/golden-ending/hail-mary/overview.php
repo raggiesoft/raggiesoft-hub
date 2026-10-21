@@ -33,7 +33,7 @@ $metaDescription = "The complete narrative strategy guide for achieving the Pasc
         <div class="card bg-base-200 border border-base-300 shadow-sm mt-4 shadow-sm">
 <div class="card-body">
 
-            <div class="card-header px-6 pt-5 pb-0" class="fw-bold text-uppercase tracking-wider">
+            <div class=\"card-header px-6 pt-5 pb-0 fw-bold text-uppercase tracking-wider\">
                 <i class="ph-duotone ph-sliders me-2 text-primary"></i>Run Parameters
             </div>
             <ul class="mb-0 lh-lg">

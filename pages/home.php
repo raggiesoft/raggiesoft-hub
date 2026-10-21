@@ -308,9 +308,8 @@ $pageTitle = "RaggieSoft™ | The Central Hub";
 </section>
 
 <div class="container mt-4 mb-2">
-    <div role="alert" class="alert shadow-sm alert-info shadow-sm rounded-0 d-block">
-
-        <i class="shrink-0 text-xl" class="ph-duotone ph-robot text-primary"></i>
+    <div role="alert" class="alert alert-info shadow-sm rounded-0 d-flex align-items-start gap-3">
+        <i class="ph-duotone ph-robot text-primary fs-3 shrink-0 mt-1" aria-hidden="true"></i>
         <div>
             <h2 class="alert-heading h6 fw-bold mb-1 text-uppercase letter-spacing-1 text-body">Transparency Notice</h2>
             <p class="mb-0 small text-body">
@@ -318,8 +317,7 @@ $pageTitle = "RaggieSoft™ | The Central Hub";
                 <a href="/about/ai-disclaimer" class="fw-bold text-primary border-bottom border-primary text-decoration-none">Read the full AI Disclaimer.</a>
             </p>
         </div>
-    
-</div>
+    </div>
 </div>
 
 <section id="network-spokes" class="py-5 bg-body text-body" aria-labelledby="spokes-title">

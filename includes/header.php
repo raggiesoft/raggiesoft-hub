@@ -214,10 +214,10 @@ if (isset($customPageAssets) && is_array($customPageAssets)) {
 
     <!-- Self-Hosted DaisyUI 5 & Phosphor Icons (Served via assets.raggiesoft.com) -->
     <?php foreach ($css_load_queue as $cssUrl): ?>
-        <link href="<?php echo $cssUrl . (str_contains($cssUrl, '?') ? '&' : '?') . 'v=20261021'; ?>" rel="stylesheet">
+        <link href="<?php echo $cssUrl . (str_contains($cssUrl, '?') ? '&' : '?') . 'v=20261021b'; ?>" rel="stylesheet">
     <?php endforeach; ?>    
 
-    <link rel="stylesheet" href="<?php echo $cdn_root; ?>/fonts/phosphor/phosphor.min.css?v=20261021">
+    <link rel="stylesheet" href="<?php echo $cdn_root; ?>/fonts/phosphor/phosphor.min.css?v=20261021b">
 
     <?php foreach ($critical_images as $imgUrl): ?>
         <?php if($imgUrl): ?><link rel="preload" as="image" href="<?php echo $imgUrl; ?>"><?php endif; ?>
@@ -417,11 +417,25 @@ if (isset($customPageAssets) && is_array($customPageAssets)) {
     }
 
         
-        /* Ensure navbar collapse breaks to a new line on mobile */
+        /* Ensure navbar collapse breaks to a new line on mobile, and stays on the same row on desktop */
         @media (max-width: 767.98px) {
-            #navbarCollapse {
+            #navbarCollapse:not(.show) {
+                display: none !important;
+            }
+            #navbarCollapse.show {
+                display: block !important;
                 flex-basis: 100% !important;
                 flex-grow: 1;
+            }
+        }
+        @media (min-width: 768px) {
+            #navbarCollapse {
+                display: flex !important;
+                width: auto !important;
+                flex-basis: auto !important;
+                flex-grow: 0 !important;
+                margin-left: auto !important;
+                overflow: visible !important;
             }
         }
     </style>
@@ -588,7 +602,7 @@ if (isset($customPageAssets) && is_array($customPageAssets)) {
             <i class="ph-duotone ph-list fs-3 text-body-emphasis"></i>
           </button>
           
-          <div class="collapse navbar-collapse" id="navbarCollapse">
+          <div class="navbar-collapse" id="navbarCollapse">
           <script>
             // Vanilla JS fallback for Mobile Hamburger Menu
             document.addEventListener('DOMContentLoaded', function() {
