@@ -33,10 +33,12 @@ $pageTitle = "Case Studies: Operational Overview";
     <div class="row g-4">
         
         <div class="col-lg-6">
-            <wa-card class="card h-100 border-danger shadow-sm w-100" style="--body-padding: 0; --header-padding: 0;">
+            <div class="card bg-base-200 border border-base-300 shadow-sm card h-100 border-danger shadow-sm w-100" style="--body-padding: 0; --header-padding: 0;">
+<div class="card-body">
+
                 <div class="card-header bg-danger bg-opacity-10 text-danger fw-bold text-uppercase d-flex justify-content-between align-items-center p-3">
-                    <span><i class="fa-duotone fa-heart-pulse me-2"></i>Incident Response</span>
-                    <wa-badge variant="danger" appearance="accent">Critical</wa-badge>
+                    <span><i class="ph-duotone ph-heartbeat me-2"></i>Incident Response</span>
+                    <span class="badge badge-error">Critical</span>
                 </div>
                 <div class="card-body p-4">
                     <h3 class="card-title fw-bold">The Cascade Protocol</h3>
@@ -45,21 +47,25 @@ $pageTitle = "Case Studies: Operational Overview";
                         A forensic breakdown of a Level 5 Sensory Meltdown. This study details the manual override protocols ("The Ground Wire") used to stabilize the system after a catastrophic visual trigger.
                     </p>
                     <div class="d-flex align-items-center gap-2 mb-4">
-                        <wa-badge variant="neutral" appearance="outlined" class="text-body-secondary">Crisis Management</wa-badge>
-                        <wa-badge variant="neutral" appearance="outlined" class="text-body-secondary">Neurodiversity</wa-badge>
+                        <span class="badge badge-neutral badge-outline text-body-secondary">Crisis Management</span>
+                        <span class="badge badge-neutral badge-outline text-body-secondary">Neurodiversity</span>
                     </div>
-                    <wa-button variant="danger" appearance="outlined" href="/case-studies/cascade-protocol" class="w-100 stretched-link">
-                        Access File <i slot="end" class="fa-solid fa-arrow-right"></i>
-                    </wa-button>
+                    <a href="/case-studies/cascade-protocol" class="btn btn-error btn-outline w-100 stretched-link">
+                        Access File <i  class="ph-duotone ph-arrow-right"></i>
+                    </a>
                 </div>
-            </wa-card>
+            
+</div>
+</div>
         </div>
 
         <div class="col-lg-6">
-            <wa-card class="card h-100 border-primary shadow-sm w-100" style="--body-padding: 0; --header-padding: 0;">
+            <div class="card bg-base-200 border border-base-300 shadow-sm card h-100 border-primary shadow-sm w-100" style="--body-padding: 0; --header-padding: 0;">
+<div class="card-body">
+
                 <div class="card-header bg-primary bg-opacity-10 text-primary fw-bold text-uppercase d-flex justify-content-between align-items-center p-3">
-                    <span><i class="fa-duotone fa-route me-2"></i>Logistics & Routing</span>
-                    <wa-badge variant="brand" appearance="accent">Analysis</wa-badge>
+                    <span><i class="ph-duotone ph-path me-2"></i>Logistics & Routing</span>
+                    <span class="badge badge-primary">Analysis</span>
                 </div>
                 <div class="card-body p-4">
                     <h3 class="card-title fw-bold">The Shenandoah Gauntlet</h3>
@@ -68,14 +74,16 @@ $pageTitle = "Case Studies: Operational Overview";
                         An analysis of the I-81 corridor vs. US-11. This study demonstrates "Legacy System Verification" and risk-averse routing algorithms to maintain asset integrity during transport.
                     </p>
                     <div class="d-flex align-items-center gap-2 mb-4">
-                        <wa-badge variant="neutral" appearance="outlined" class="text-body-secondary">Route Optimization</wa-badge>
-                        <wa-badge variant="neutral" appearance="outlined" class="text-body-secondary">Temporal Auditing</wa-badge>
+                        <span class="badge badge-neutral badge-outline text-body-secondary">Route Optimization</span>
+                        <span class="badge badge-neutral badge-outline text-body-secondary">Temporal Auditing</span>
                     </div>
-                    <wa-button variant="brand" appearance="outlined" href="/case-studies/shenandoah-valley" class="w-100 stretched-link">
-                        Access File <i slot="end" class="fa-solid fa-arrow-right"></i>
-                    </wa-button>
+                    <a href="/case-studies/shenandoah-valley" class="btn btn-primary btn-outline w-100 stretched-link">
+                        Access File <i  class="ph-duotone ph-arrow-right"></i>
+                    </a>
                 </div>
-            </wa-card>
+            
+</div>
+</div>
         </div>
 
     </div>

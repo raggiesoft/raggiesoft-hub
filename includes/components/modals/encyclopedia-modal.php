@@ -1,54 +1,43 @@
 <?php
 /**
- * ARCHITECTURAL DOCBLOCK
- * 
- * File: raggiesoft-hub/includes/components/modals/encyclopedia-modal.php
- * Path: /includes/components/modals/encyclopedia-modal.php
- * 
- * CORE RESPONSIBILITY:
- * Reusable UI Component: Encyclopedia Modal.
- * Renders an empty Web Awesome `<wa-dialog>` scaffold designed to be populated 
- * asynchronously via AJAX/JavaScript when a user clicks an in-universe lore term.
- * 
- * LORE CONTEXT:
- * - Powers the interactive "Stardust Encyclopedia" feature across narrative pages.
- * 
- * UI/UX & STYLING ARCHITECTURE:
- * - Employs `<wa-dialog>` for the modal container.
- * - Includes a default `<wa-spinner>` loading state while content is fetched.
- * - Features a dynamic "Open Full Entry" footer link for deep-diving into specific lore.
- * 
- * DEPENDENCIES & INCLUSIONS:
- * - Relies entirely on an external JavaScript controller (`encyclopedia.js`) to fetch
- *   content and inject it into `#encyclopedia-modal-body`.
- * - Requires Web Awesome and FontAwesome.
- * 
- * MAINTENANCE NOTES:
- * - Do not alter the IDs (`#encyclopedia-modal`, `#encyclopedia-modal-title`, 
- *   `#encyclopedia-modal-body`, `#encyclopedia-modal-read-more`) without simultaneously
- *   updating the `encyclopedia.js` controller.
- * - This file is a static HTML partial executing within a PHP environment.
+ * ============================================================================
+ * ARCHITECTURAL DOCBLOCK: Encyclopedia Modal (DaisyUI 5 + Native <dialog>)
+ * ============================================================================
+ * File: includes/components/modals/encyclopedia-modal.php
+ * Purpose:
+ *     Renders a native HTML5 `<dialog>` modal styled with DaisyUI 5 (`.modal`,
+ *     `.modal-box`) populated asynchronously by `encyclopedia.js`.
+ * ============================================================================
  */
 ?>
 <!-- Encyclopedia Modal -->
-<wa-dialog id="encyclopedia-modal" class="encyclopedia-modal" label="Stardust Encyclopedia" light-dismiss>
-    <!-- Header override for custom themes -->
-    <div slot="label" class="d-flex align-items-center w-100">
-        <i class="fa-solid fa-book-journal-whills me-2 opacity-50"></i>
-        <h5 id="encyclopedia-modal-title" class="mb-0 fw-bold font-heading">Loading...</h5>
-    </div>
-    
-    <div id="encyclopedia-modal-body" class="story-content p-2">
-        <!-- Content gets injected here by encyclopedia.js -->
-        <div class="d-flex justify-content-center py-5">
-            <wa-spinner class="fs-1"></wa-spinner>
+<dialog id="encyclopedia-modal" class="modal encyclopedia-modal">
+    <div class="modal-box max-w-2xl">
+        <div class="d-flex align-items-center justify-content-between border-bottom pb-3 mb-3">
+            <div class="d-flex align-items-center">
+                <i class="ph-duotone ph-book-bookmark me-2 opacity-75 fs-4" aria-hidden="true"></i>
+                <h5 id="encyclopedia-modal-title" class="mb-0 fw-bold font-heading">Loading...</h5>
+            </div>
+            <form method="dialog">
+                <button class="btn btn-sm btn-circle btn-ghost" aria-label="Close modal">✕</button>
+            </form>
+        </div>
+
+        <div id="encyclopedia-modal-body" class="story-content p-2">
+            <!-- Content gets injected here by encyclopedia.js -->
+            <div class="d-flex justify-content-center py-5">
+                <span class="loading loading-spinner loading-lg text-primary"></span>
+            </div>
+        </div>
+
+        <div class="modal-action d-flex justify-content-between align-items-center pt-3 border-top">
+            <a href="#" id="encyclopedia-modal-read-more" class="text-decoration-none small fw-bold">
+                Open Full Entry <i class="ph-duotone ph-arrow-right ms-1" aria-hidden="true"></i>
+            </a>
+            <button type="button" class="btn btn-outline btn-primary btn-sm close-encyclopedia-btn">Close</button>
         </div>
     </div>
-
-    <div slot="footer" class="d-flex justify-content-between align-items-center">
-        <a href="#" id="encyclopedia-modal-read-more" class="text-decoration-none small fw-bold">
-            Open Full Entry <i class="fa-solid fa-arrow-right-long ms-1"></i>
-        </a>
-        <wa-button variant="brand" appearance="outlined" class="close-encyclopedia-btn">Close</wa-button>
-    </div>
-</wa-dialog>
+    <form method="dialog" class="modal-backdrop">
+        <button>close</button>
+    </form>
+</dialog>

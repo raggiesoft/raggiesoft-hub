@@ -47,7 +47,7 @@ if ($is_standalone) {
         <div class="col-lg-8">
             
             <div class="mb-4">
-                <i class="fa-duotone fa-car-battery display-1 text-danger opacity-75"></i>
+                <i class="ph-duotone ph-car-battery display-1 text-danger opacity-75"></i>
             </div>
 
             <h1 class="display-1 fw-bold text-danger text-shadow-danger mb-0" style="font-family: 'Impact', sans-serif; letter-spacing: 5px;">
@@ -58,9 +58,11 @@ if ($is_standalone) {
             </h2>
             
             <!-- START: 500 Terminal Narrative Context -->
-            <wa-card class="terminal-card border-danger text-start mb-5 mx-auto w-100" style="max-width: 600px;">
+            <div class="card bg-base-200 border border-base-300 shadow-sm terminal-card border-danger text-start mb-5 mx-auto w-100" style="max-width: 600px;">
+<div class="card-body">
+
                 <div class="terminal-header text-danger">
-                    <i class="fa-duotone fa-triangle-exclamation me-2"></i>
+                    <i class="ph-duotone ph-warning me-2"></i>
                     System Failure // Main Reactor Core
                 </div>
                 <div class="terminal-text text-light">
@@ -71,16 +73,18 @@ if ($is_standalone) {
                         Our engineers have been dispatched to the crash site. Please try refreshing the page in a few moments. We may have just blown a fuse during the guitar solo.
                     </p>
                 </div>
-            </wa-card>
+            
+</div>
+</div>
             
             <!-- START: 500 Safe Escape Actions -->
             <div class="d-flex justify-content-center gap-3 flex-wrap">
-                <wa-button href="/" variant="neutral" appearance="outlined" pill>
-                    <i slot="start" class="fa-duotone fa-power-off"></i>Manual Restart
-                </wa-button>
-                <wa-button href="/contact" variant="danger" appearance="accent" pill class="shadow-glow">
-                    <i slot="start" class="fa-duotone fa-bug"></i>Report Malfunction
-                </wa-button>
+                <a href="/" class="btn btn-neutral btn-outline rounded-full">
+                    <i  class="ph-duotone ph-power"></i>Manual Restart
+                </a>
+                <a href="/contact" class="btn btn-error rounded-full shadow-glow">
+                    <i  class="ph-duotone ph-bug"></i>Report Malfunction
+                </a>
             </div>
 
         </div>

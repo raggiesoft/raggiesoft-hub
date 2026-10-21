@@ -1,39 +1,14 @@
 <?php
 /**
- * ARCHITECTURAL DOCBLOCK
- * 
- * File: raggiesoft-hub/includes/components/easter-eggs/konami.php
- * Path: /includes/components/easter-eggs/konami.php
- * 
- * CORE RESPONSIBILITY:
- * Reusable UI Component: Konami Code Easter Egg Modal.
- * Renders a hidden Web Awesome dialog (`<wa-dialog>`) that acts as a mock
- * "Developer Access Terminal" when triggered (typically by a JS key sequence).
- * 
- * LORE CONTEXT:
- * - Enhances the "Stardust Engine CMS" aesthetic with a hacker/terminal motif.
- * 
- * UI/UX & STYLING ARCHITECTURE:
- * - Uses `<wa-dialog>` (Web Awesome) configured with `no-header` and `data-turbo-permanent="true"`.
- * - Dynamically inherits theme colors (`$k_theme`) based on the active `$theme` variable
- *   (e.g., 'ad-astra' = warning, 'crucible' = danger).
- * - Utilizes inline CSS to aggressively override `<wa-dialog>` internal padding/margins
- *   (`--body-spacing: 0 !important;`) to ensure edge-to-edge terminal styling.
- * 
- * DEPENDENCIES & INCLUSIONS:
- * - Assumes a parent JavaScript controller listens for the Konami code and triggers `.show()`
- *   on `#konamiModal`.
- * - Includes a self-executing JavaScript block to automatically move the modal to `document.body`
- *   to avoid z-index and overflow clipping issues in complex CSS grid layouts.
- * 
- * MAINTENANCE NOTES:
- * - Do not remove the "Self-Inject Logic" `<script>`. Web Awesome dialogs must reside
- *   at the top level of the DOM for their overlay backdrops to render correctly.
+ * ============================================================================
+ * ARCHITECTURAL DOCBLOCK: Konami Code Easter Egg Modal (DaisyUI 5 + <dialog>)
+ * ============================================================================
+ * File: includes/components/easter-eggs/konami.php
+ * Purpose:
+ *     Renders a hidden native `<dialog>` styled with DaisyUI 5 that acts as a
+ *     Developer Access Terminal when triggered by `konami.js`.
+ * ============================================================================
  */
-// includes/components/easter-eggs/konami.php
-// Stardust Engine CMS
-
-// Use the current theme color, default to primary
 $k_theme = "var(--bs-primary, #42AADB)"; 
 if (isset($theme)) {
     if ($theme === 'ad-astra') $k_theme = "var(--bs-warning, #ffc107)";
@@ -41,60 +16,51 @@ if (isset($theme)) {
 }
 ?>
 
-<style>
-    /* Completely eliminate padding in wa-dialog so our wrapper fills it */
-    #konamiModal {
-        --body-spacing: 0 !important;
-        --header-spacing: 0 !important;
-        --footer-spacing: 0 !important;
-        border: none !important;
-    }
-    #konamiModal::part(panel) {
-        border: 2px solid <?php echo $k_theme; ?> !important;
-    }
-</style>
-
-<wa-dialog id="konamiModal" no-header style="--width: 600px;" data-turbo-permanent="true">
-    <div class="w-100 h-100 d-flex flex-column" style="background-color: var(--bs-body-bg, #121212) !important; color: var(--bs-body-color, #e0e0e0) !important; padding: 1.5rem;">
-        
-        <div class="d-flex align-items-center justify-content-between mb-4 border-bottom border-secondary pb-3">
-            <div class="fw-bold" style="color: <?php echo $k_theme; ?>;">
-                <i class="fa-duotone fa-user-secret me-2"></i> System Override Authorized
+<dialog id="konamiModal" class="modal" data-turbo-permanent="true">
+    <div class="modal-box p-0 overflow-hidden" style="max-width: 600px; border: 2px solid <?php echo $k_theme; ?>;">
+        <div class="w-100 h-100 d-flex flex-column" style="background-color: var(--bs-body-bg, #121212) !important; color: var(--bs-body-color, #e0e0e0) !important; padding: 1.5rem;">
+            <div class="d-flex align-items-center justify-content-between mb-4 border-bottom border-secondary pb-3">
+                <div class="fw-bold" style="color: <?php echo $k_theme; ?>;">
+                    <i class="ph-duotone ph-detective me-2" aria-hidden="true"></i> System Override Authorized
+                </div>
+                <button type="button" class="btn btn-ghost btn-sm btn-circle" onclick="document.getElementById('konamiModal').close()" aria-label="Close">
+                    <i class="ph-duotone ph-x fs-4" aria-hidden="true"></i>
+                </button>
             </div>
-            <wa-button appearance="plain" variant="neutral" onclick="document.getElementById('konamiModal').hide()" aria-label="Close">
-                <i class="fa-solid fa-xmark fs-4"></i>
-            </wa-button>
+
+            <div class="text-center p-3 flex-grow-1">
+                <i class="ph-duotone ph-game-controller ph-4x mb-3" style="color: <?php echo $k_theme; ?>;" aria-hidden="true"></i>
+                <h4 class="mb-3">Konami Code Accepted</h4>
+                <p class="lead mb-4">
+                    You've unlocked the developer access terminal.
+                    <br>
+                    <span class="small opacity-75">Just kidding. But you did find a secret!</span>
+                </p>
+
+                <div role="alert" class="alert alert-neutral small text-start font-monospace mb-0">
+                    <i class="ph-duotone ph-terminal fs-4" aria-hidden="true"></i>
+                    <div>
+                        &gt; INITIALIZING STARDUST ENGINE...<br>
+                        &gt; BYPASSING MAINFRAME SECURITY...<br>
+                        &gt; ACCESS GRANTED.<br>
+                        &gt; WELCOME, ADMIN.
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-4 pt-3 border-top border-secondary text-end">
+                <button type="button" class="btn btn-primary btn-sm" onclick="document.getElementById('konamiModal').close()">
+                    Close Terminal
+                </button>
+            </div>
         </div>
-        
-        <div class="text-center p-3 flex-grow-1">
-            <i class="fa-duotone fa-gamepad-modern fa-4x mb-3" style="color: <?php echo $k_theme; ?>;"></i>
-            <h4 class="mb-3">Konami Code Accepted</h4>
-            <p class="lead mb-4">
-                You've unlocked the developer access terminal. 
-                <br>
-                <span class="small opacity-75">Just kidding. But you did find a secret!</span>
-            </p>
-            
-            <wa-callout variant="neutral" appearance="filled-outlined" class="small text-start font-monospace mb-0">
-                <i slot="icon" class="fa-duotone fa-terminal"></i>
-                > INITIALIZING STARDUST ENGINE...<br>
-                > BYPASSING MAINFRAME SECURITY...<br>
-                > ACCESS GRANTED.<br>
-                > WELCOME, ADMIN.
-            </wa-callout>
-        </div>
-        
-        <div class="mt-4 pt-3 border-top border-secondary text-end">
-            <wa-button variant="brand" appearance="accent" onclick="document.getElementById('konamiModal').hide()">
-                Close Terminal
-            </wa-button>
-        </div>
-        
     </div>
-</wa-dialog>
+    <form method="dialog" class="modal-backdrop">
+        <button>close</button>
+    </form>
+</dialog>
 
 <script>
-    // Self-Inject Logic
     (function() {
         const modal = document.getElementById('konamiModal');
         if (modal && modal.parentNode !== document.body) {

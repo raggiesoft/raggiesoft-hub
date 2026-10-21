@@ -48,8 +48,8 @@ if ($is_standalone) {
             
             <!-- The Glitch Icon -->
             <div class="mb-4 position-relative d-inline-block">
-                <i class="fa-duotone fa-satellite-dish fa-5x text-danger opacity-50"></i>
-                <i class="fa-duotone fa-slash fa-5x text-light position-absolute top-0 start-0 opacity-75"></i>
+                <i class="ph-duotone ph-broadcast ph-5x text-danger opacity-50"></i>
+                <i class="ph-duotone ph-prohibit ph-5x text-light position-absolute top-0 start-0 opacity-75"></i>
             </div>
 
             <!-- The Error Code -->
@@ -62,9 +62,11 @@ if ($is_standalone) {
 
             <!-- START: 404 Terminal Narrative Context -->
             <!-- The Narrative Context -->
-            <wa-card class="terminal-card border-danger text-start mb-5 mx-auto w-100" style="max-width: 600px;">
+            <div class="card bg-base-200 border border-base-300 shadow-sm terminal-card border-danger text-start mb-5 mx-auto w-100" style="max-width: 600px;">
+<div class="card-body">
+
                 <div class="terminal-header text-danger">
-                    <i class="fa-duotone fa-triangle-exclamation me-2"></i>
+                    <i class="ph-duotone ph-warning me-2"></i>
                     System Alert // Uplink Failed
                 </div>
                 <div class="terminal-text text-light">
@@ -75,17 +77,19 @@ if ($is_standalone) {
                         This could be a result of Axiom censorship, a corrupted navigation buffer, or the page you are looking for has simply drifted into the Weave.
                     </p>
                 </div>
-            </wa-card>
+            
+</div>
+</div>
 
             <!-- START: 404 Safe Escape Actions -->
             <!-- The "Safe" Options -->
             <div class="d-flex justify-content-center gap-3 flex-wrap">
-                <wa-button href="/" variant="neutral" appearance="outlined" pill>
-                    <i slot="start" class="fa-duotone fa-radar"></i>Return to Base
-                </wa-button>
-                <wa-button href="/engine-room/artists/stardust-engine/discography" variant="danger" appearance="accent" pill class="shadow-glow">
-                    <i slot="start" class="fa-duotone fa-compact-disc"></i>Access Audio Archives
-                </wa-button>
+                <a href="/" class="btn btn-neutral btn-outline rounded-full">
+                    <i  class="ph-duotone ph-broadcast"></i>Return to Base
+                </a>
+                <a href="/engine-room/artists/stardust-engine/discography" class="btn btn-error rounded-full shadow-glow">
+                    <i  class="ph-duotone ph-disc"></i>Access Audio Archives
+                </a>
             </div>
 
         </div>

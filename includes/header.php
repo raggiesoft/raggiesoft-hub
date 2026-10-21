@@ -15,13 +15,10 @@
  * - Implements a robust "Loader" overlay that visually masks network latency and hydrates seamlessly into the 
  *   Elara SPA (Single Page Application) lifecycle.
  * - Handles theme resolution (`dark`, `light`, `corporate`, `ad-astra`) and dynamically builds the CSS queue 
- *   to ensure Web Awesome and custom grid variables are loaded sequentially.
+ *   to ensure self-hosted DaisyUI 5, Phosphor Icons, and custom grid variables are loaded sequentially.
  * 
  * Maintenance Recommendations:
- * - The Hamburger Menu animation is driven by a vanilla JS fallback integrated within the HTML. If Web Awesome 
- *   introduces a native drawer component that matches our needs, this custom logic should be refactored.
- * - Do NOT remove the `<script type="module" src="...webawesome.loader.js">` block; it is required for all `<wa-*>` 
- *   components to function.
+ * - The Hamburger Menu animation is driven by a vanilla JS fallback integrated within the HTML.
  * - Be extremely cautious when modifying the JSON-LD schema blocks, as Google Search Console will reject malformed outputs.
  */
 
@@ -55,22 +52,13 @@ $brand_font_css = implode(', ', $css_font_parts);
 // 3. Path Definitions
 $path_grid = $cdn_root . "/common/css/raggiesoft-grid.css";
 
-if ($theme === 'corporate' || $theme === $site || $theme === 'light') {
-    $path_theme_base = $cdn_root . "/{$site}/css/webawesome";
-} else {
-    $path_theme_base = $cdn_root . "/{$site}/css/webawesome/{$theme}";
-}
-
-// 4. Build CSS Queue
+// 4. Build CSS Queue (Self-Hosted DaisyUI 5 + RaggieSoft Grid & Network Bar)
 $css_load_queue = [
+    $cdn_root . "/common/vendor/daisyui/daisyui.css",
+    $cdn_root . "/common/vendor/daisyui/themes.css",
     $path_grid,
-    $cdn_root . "/common/css/raggiesoft-logo.css",                    
-    $path_theme_base . '/root.css',     
-    $path_theme_base . '/extras.css',   
-    $path_theme_base . '/header.css',   
-    $path_theme_base . '/footer.css',   
-    $path_theme_base . '/safety-net.css',
-    $cdn_root . "/common/css/raggiesoft-network.css?v=20261017m"
+    $cdn_root . "/common/css/raggiesoft-logo.css",
+    $cdn_root . "/common/css/raggiesoft-network.css?v=20261021"
 ];
 
 // 5. Critical Images
@@ -84,7 +72,7 @@ if (isset($customPageAssets) && is_array($customPageAssets)) {
 }
 ?>
 <!doctype html>
-<html lang="en" class="h-100 <?php echo $force_dark_mode ? 'wa-dark wa-theme-dark' : ''; ?>" data-fa-kit-code="ec060982d4" <?php echo $force_dark_mode ? 'data-bs-theme="dark"' : ''; ?>>
+<html lang="en" class="h-100" <?php echo $force_dark_mode ? 'data-theme="dark" data-bs-theme="dark"' : ''; ?>>
   <head>
     
     <?php 
@@ -224,18 +212,12 @@ if (isset($customPageAssets) && is_array($customPageAssets)) {
     <link rel="next" href="https://<?php echo $_SERVER['HTTP_HOST'] . $pageConfig['nextUrl']; ?>">
     <?php endif; ?>
 
-    <!-- Web Awesome Pro Kit (Load FIRST so custom CSS can override) -->
-    <link rel="stylesheet" href="https://ka-p.webawesome.com/kit/bb765cf132c5414e/webawesome@3.10.0/styles/themes/default.css">
-    <link rel="stylesheet" href="https://ka-p.webawesome.com/kit/bb765cf132c5414e/webawesome@3.10.0/styles/themes/dark.css">
-    <link rel="stylesheet" href="https://ka-p.webawesome.com/kit/bb765cf132c5414e/webawesome@3.10.0/styles/utilities.css">
-    <link rel="stylesheet" href="https://ka-p.webawesome.com/kit/bb765cf132c5414e/webawesome@3.10.0/styles/native.css">
-    <script type="module" src="https://ka-p.webawesome.com/kit/bb765cf132c5414e/webawesome@3.10.0/webawesome.loader.js"></script>
-
+    <!-- Self-Hosted DaisyUI 5 & Phosphor Icons (Served via assets.raggiesoft.com) -->
     <?php foreach ($css_load_queue as $cssUrl): ?>
-        <link href="<?php echo $cssUrl . '?v=' . time(); ?>" rel="stylesheet">
+        <link href="<?php echo $cssUrl . (str_contains($cssUrl, '?') ? '&' : '?') . 'v=20261021'; ?>" rel="stylesheet">
     <?php endforeach; ?>    
 
-    <link rel="stylesheet" href="https://kit.fontawesome.com/ec060982d4.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="<?php echo $cdn_root; ?>/fonts/phosphor/phosphor.min.css?v=20261021">
 
     <?php foreach ($critical_images as $imgUrl): ?>
         <?php if($imgUrl): ?><link rel="preload" as="image" href="<?php echo $imgUrl; ?>"><?php endif; ?>
@@ -378,11 +360,6 @@ if (isset($customPageAssets) && is_array($customPageAssets)) {
             if (!isForcedByServer) {
                 document.documentElement.setAttribute('data-bs-theme', theme);
                 document.documentElement.setAttribute('data-theme', theme);
-                if (theme === 'dark') {
-                    document.documentElement.classList.add('wa-dark', 'wa-theme-dark');
-                } else {
-                    document.documentElement.classList.remove('wa-dark', 'wa-theme-dark');
-                }
             }
         };
         
@@ -396,20 +373,13 @@ if (isset($customPageAssets) && is_array($customPageAssets)) {
       <script src="<?php echo $cdnBaseUrl; ?>/common/js/cinema-carousel.js?v=2"></script>
 
     <style>
-    
-
-    wa-menu {
-        --wa-panel-background-color: var(--bs-body-bg);
-        background-color: var(--bs-body-bg);
-    }
-
-    /* Clean up Web Awesome buttons inside mobile nav */
+    /* Clean up DaisyUI buttons & dropdowns inside mobile nav */
     @media (max-width: 767.98px) {
-        .mobile-nav-menu wa-button::part(base) {
+        .mobile-nav-menu .btn {
             justify-content: flex-start !important;
             text-align: left !important;
         }
-        .mobile-nav-menu wa-dropdown, .mobile-nav-menu wa-dropdown wa-button {
+        .mobile-nav-menu details.dropdown, .mobile-nav-menu details.dropdown > summary.btn {
             width: 100%;
         }
     }
@@ -419,7 +389,7 @@ if (isset($customPageAssets) && is_array($customPageAssets)) {
         .navbar-brand .brand-font {
             font-size: 1.1rem !important;
         }
-        .mobile-nav-menu wa-button::part(base) {
+        .mobile-nav-menu .btn {
             font-size: 0.85rem !important;
             padding-left: 0.5rem !important;
             padding-right: 0.5rem !important;
@@ -615,7 +585,7 @@ if (isset($customPageAssets) && is_array($customPageAssets)) {
           </div>
                     
           <button class="navbar-toggler border-0 shadow-none d-block d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-            <i class="fa-solid fa-bars fs-3 text-body-emphasis"></i>
+            <i class="ph-duotone ph-list fs-3 text-body-emphasis"></i>
           </button>
           
           <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -642,6 +612,12 @@ if (isset($customPageAssets) && is_array($customPageAssets)) {
                         toggler.setAttribute('aria-expanded', target.classList.contains('show'));
                     });
                 }
+            });
+            // Auto-close <details class="dropdown"> on click outside or sibling open
+            document.addEventListener('click', function(e) {
+                document.querySelectorAll('details.dropdown[open]').forEach(function(d) {
+                    if (!d.contains(e.target)) d.removeAttribute('open');
+                });
             });
           </script>
 

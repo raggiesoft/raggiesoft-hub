@@ -52,7 +52,7 @@ if ($is_standalone) {
         <div class="col-lg-8">
             
             <div class="mb-4">
-                <i class="fa-duotone fa-hourglass-clock display-1 text-secondary opacity-75"></i>
+                <i class="ph-duotone ph-hourglass display-1 text-secondary opacity-75"></i>
             </div>
 
             <h1 class="display-1 fw-bold text-secondary text-shadow-white mb-0" style="font-family: 'Impact', sans-serif; letter-spacing: 5px;">
@@ -62,9 +62,11 @@ if ($is_standalone) {
                 <span class="text-secondary">>></span> GATEWAY TIMEOUT
             </h2>
             
-            <wa-card class="terminal-card border-secondary text-start mb-5 mx-auto w-100" style="max-width: 600px;">
+            <div class="card bg-base-200 border border-base-300 shadow-sm terminal-card border-secondary text-start mb-5 mx-auto w-100" style="max-width: 600px;">
+<div class="card-body">
+
                 <div class="terminal-header text-secondary">
-                    <i class="fa-duotone fa-timer me-2"></i>
+                    <i class="ph-duotone ph-timer me-2"></i>
                     Connection Latency // Deep Space Network
                 </div>
                 <div class="terminal-text text-light">
@@ -75,12 +77,14 @@ if ($is_standalone) {
                         The request has drifted into the void. The server is taking too long to reply. This may be due to high traffic or a stalled process in the Engine Room.
                     </p>
                 </div>
-            </wa-card>
+            
+</div>
+</div>
             
             <div class="d-flex justify-content-center gap-3 flex-wrap">
-                <wa-button href="/" variant="neutral" appearance="outlined" pill>
-                    <i slot="start" class="fa-duotone fa-rotate-right"></i>Re-Establish Link
-                </wa-button>
+                <a href="/" class="btn btn-neutral btn-outline rounded-full">
+                    <i  class="ph-duotone fa-rotate-right"></i>Re-Establish Link
+                </a>
             </div>
 
         </div>

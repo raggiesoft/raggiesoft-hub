@@ -1,7 +1,7 @@
 <?php
 /**
  * ============================================================================
- * ARCHITECTURE & MAINTENANCE NOTES: Main Network Header
+ * ARCHITECTURE & MAINTENANCE NOTES: Main Network Header (DaisyUI 5 + Phosphor)
  * ============================================================================
  * File: includes/components/headers/header-default.php
  * Purpose: Serves as the primary global navigation mechanism across the root
@@ -11,10 +11,9 @@
  * - Utilizes early URL evaluation mapping the current `$request_uri` to specific
  *   active state flags (`$isHome`, `$isArchitect`, `$isCreative`, `$isMedia`,
  *   `$isCaseStudies`, `$isAbout`, `$isContact`).
- * - Built with strict Web Awesome v3.13.0 components (`<wa-button>`, `<wa-dropdown>`,
- *   `<wa-dropdown-item>`, `<wa-divider>`). Note that in Web Awesome v3.13.0,
- *   `<wa-dropdown-item>` and `<wa-divider>` are direct children of `<wa-dropdown>`.
- * - Uses `slot="start"` for leading icons on `<wa-button>` and `<wa-dropdown-item>`.
+ * - Built with semantic DaisyUI 5 components (`<details class="dropdown">`,
+ *   `<ul class="dropdown-content menu">`, `.btn`, `.btn-ghost`) and self-hosted
+ *   Phosphor Duotone icons (`ph-duotone`).
  * ============================================================================
  */
 
@@ -32,93 +31,133 @@ $isContact     = str_starts_with($request_uri, '/contact');
 
 <div class="d-flex flex-column flex-md-row align-items-stretch align-items-md-center gap-2 ms-auto py-3 py-md-0 w-100 mobile-nav-menu">
 
-  <wa-button appearance="plain" href="/" class="<?php echo $isHome ? 'text-primary fw-bold' : 'text-body-secondary'; ?>">
-    <i slot="start" class="fa-duotone fa-house"></i> Home
-  </wa-button>
+  <a href="/" class="btn btn-ghost <?php echo $isHome ? 'text-primary fw-bold' : 'text-body-secondary'; ?>">
+    <i class="ph-duotone ph-house" aria-hidden="true"></i> Home
+  </a>
 
   <!-- Architect Section Dropdown: Aggregates personal portfolio, DevOps family, and case studies -->
-  <wa-dropdown placement="bottom-start">
-    <wa-button slot="trigger" appearance="plain" with-caret class="<?php echo ($isArchitect || $isCaseStudies) ? 'text-primary fw-bold' : 'text-body-secondary'; ?>">
-      <i slot="start" class="fa-duotone fa-user-visor"></i> The Architect
-    </wa-button>
-    <wa-dropdown-item value="https://michaelpragsdale.com">
-      <i slot="icon" class="fa-duotone fa-user-gear text-primary"></i> Executive Portfolio &amp; CV
-    </wa-dropdown-item>
-    <wa-dropdown-item value="https://michaelpragsdale.com/build-team">
-      <i slot="icon" class="fa-duotone fa-people-group text-info"></i> The Build Team (DevOps Family)
-    </wa-dropdown-item>
-    <wa-dropdown-item value="/case-studies">
-      <i slot="icon" class="fa-duotone fa-file-magnifying-glass text-warning"></i> Operational Case Studies
-    </wa-dropdown-item>
-    <wa-divider></wa-divider>
-    <wa-dropdown-item value="/contact">
-      <i slot="icon" class="fa-duotone fa-address-card"></i> Contact Card
-    </wa-dropdown-item>
-  </wa-dropdown>
+  <details class="dropdown">
+    <summary class="btn btn-ghost <?php echo ($isArchitect || $isCaseStudies) ? 'text-primary fw-bold' : 'text-body-secondary'; ?>">
+      <i class="ph-duotone ph-user-focus" aria-hidden="true"></i> The Architect
+      <i class="ph-bold ph-caret-down small opacity-75" aria-hidden="true"></i>
+    </summary>
+    <ul class="dropdown-content menu bg-base-200 rounded-box z-50 w-72 p-2 shadow-lg border border-base-300 mt-1">
+      <li>
+        <a href="https://michaelpragsdale.com">
+          <i class="ph-duotone ph-user-gear text-primary" aria-hidden="true"></i> Executive Portfolio &amp; CV
+        </a>
+      </li>
+      <li>
+        <a href="https://michaelpragsdale.com/build-team">
+          <i class="ph-duotone ph-users-three text-info" aria-hidden="true"></i> The Build Team (DevOps Family)
+        </a>
+      </li>
+      <li>
+        <a href="/case-studies">
+          <i class="ph-duotone ph-file-magnifying-glass text-warning" aria-hidden="true"></i> Operational Case Studies
+        </a>
+      </li>
+      <li><hr class="my-1 border-base-300"></li>
+      <li>
+        <a href="/contact">
+          <i class="ph-duotone ph-identification-card" aria-hidden="true"></i> Contact Card
+        </a>
+      </li>
+    </ul>
+  </details>
 
   <!-- Creative Works Dropdown: Links directly to Music, Literature, and Lore Subdomains -->
-  <wa-dropdown placement="bottom-start">
-    <wa-button slot="trigger" appearance="plain" with-caret class="<?php echo $isCreative ? 'text-primary fw-bold' : 'text-body-secondary'; ?>">
-      <i slot="start" class="fa-duotone fa-layer-group"></i> Creative Works
-    </wa-button>
-    <div class="px-3 py-2 small text-uppercase fw-bold text-body-secondary">Multimedia &amp; Audio</div>
-    <wa-dropdown-item value="https://engineroom.raggiesoft.com/">
-      <i slot="icon" class="fa-solid fa-industry text-danger"></i> Engine Room Records HQ
-    </wa-dropdown-item>
-    <wa-dropdown-item value="https://stardust.raggiesoft.com/">
-      <i slot="icon" class="fa-duotone fa-rocket-launch text-primary"></i> The Stardust Engine
-    </wa-dropdown-item>
-    <wa-dropdown-item value="https://music.raggiesoft.com/">
-      <i slot="icon" class="fa-duotone fa-turntable text-warning"></i> The Listening Room
-    </wa-dropdown-item>
-    <wa-divider></wa-divider>
-    <div class="px-3 py-2 small text-uppercase fw-bold text-body-secondary">Literature &amp; Lore</div>
-    <wa-dropdown-item value="https://books.raggiesoft.com/">
-      <i slot="icon" class="fa-duotone fa-landmark text-info"></i> Ocean View Archives (Book Reader)
-    </wa-dropdown-item>
-    <wa-dropdown-item value="https://lore.raggiesoft.com/">
-      <i slot="icon" class="fa-duotone fa-book-atlas text-warning"></i> RaggieSoft Lore Encyclopedia
-    </wa-dropdown-item>
-    <wa-dropdown-item value="https://nebulae.raggiesoft.com/">
-      <i slot="icon" class="fa-duotone fa-galaxy text-primary"></i> RaggieSoft Nebulae Observatory
-    </wa-dropdown-item>
-  </wa-dropdown>
+  <details class="dropdown">
+    <summary class="btn btn-ghost <?php echo $isCreative ? 'text-primary fw-bold' : 'text-body-secondary'; ?>">
+      <i class="ph-duotone ph-stack" aria-hidden="true"></i> Creative Works
+      <i class="ph-bold ph-caret-down small opacity-75" aria-hidden="true"></i>
+    </summary>
+    <ul class="dropdown-content menu bg-base-200 rounded-box z-50 w-80 p-2 shadow-lg border border-base-300 mt-1">
+      <li class="menu-title text-uppercase small fw-bold opacity-75">Multimedia &amp; Audio</li>
+      <li>
+        <a href="https://engineroom.raggiesoft.com/">
+          <i class="ph-duotone ph-factory text-danger" aria-hidden="true"></i> Engine Room Records HQ
+        </a>
+      </li>
+      <li>
+        <a href="https://stardust.raggiesoft.com/">
+          <i class="ph-duotone ph-rocket-launch text-primary" aria-hidden="true"></i> The Stardust Engine
+        </a>
+      </li>
+      <li>
+        <a href="https://music.raggiesoft.com/">
+          <i class="ph-duotone ph-vinyl-record text-warning" aria-hidden="true"></i> The Listening Room
+        </a>
+      </li>
+      <li><hr class="my-1 border-base-300"></li>
+      <li class="menu-title text-uppercase small fw-bold opacity-75">Literature &amp; Lore</li>
+      <li>
+        <a href="https://books.raggiesoft.com/">
+          <i class="ph-duotone ph-bank text-info" aria-hidden="true"></i> Ocean View Archives (Book Reader)
+        </a>
+      </li>
+      <li>
+        <a href="https://lore.raggiesoft.com/">
+          <i class="ph-duotone ph-globe-hemisphere-west text-warning" aria-hidden="true"></i> RaggieSoft Lore Encyclopedia
+        </a>
+      </li>
+      <li>
+        <a href="https://nebulae.raggiesoft.com/">
+          <i class="ph-duotone ph-planet text-primary" aria-hidden="true"></i> RaggieSoft Nebulae Observatory
+        </a>
+      </li>
+    </ul>
+  </details>
 
   <!-- RaggieSoft Media Dropdown: B2B Licensing and Open Source Architecture on corporate.raggiesoft.com -->
-  <wa-dropdown placement="bottom-start">
-    <wa-button slot="trigger" appearance="plain" with-caret class="<?php echo $isMedia ? 'text-primary fw-bold' : 'text-body-secondary'; ?>">
-      <i slot="start" class="fa-duotone fa-building"></i> RaggieSoft Media
-    </wa-button>
-    <div class="px-3 py-2 small text-uppercase fw-bold text-body-secondary">B2B Operations</div>
-    <wa-dropdown-item value="https://corporate.raggiesoft.com/">
-      <i slot="icon" class="fa-duotone fa-network-wired text-primary"></i> Corporate Hub
-    </wa-dropdown-item>
-    <wa-dropdown-item value="https://corporate.raggiesoft.com/licensing">
-      <i slot="icon" class="fa-duotone fa-scale-balanced text-warning"></i> Master Licensing
-    </wa-dropdown-item>
-    <wa-dropdown-item value="https://corporate.raggiesoft.com/licensing/commercial">
-      <i slot="icon" class="fa-solid fa-briefcase text-success"></i> Commercial Portal
-    </wa-dropdown-item>
-    <wa-divider></wa-divider>
-    <div class="px-3 py-2 small text-uppercase fw-bold text-body-secondary">Infrastructure &amp; Software</div>
-    <wa-dropdown-item value="https://corporate.raggiesoft.com/projects">
-      <i slot="icon" class="fa-duotone fa-boxes-stacked text-info"></i> Open Source Projects Hub
-    </wa-dropdown-item>
-    <wa-dropdown-item value="https://corporate.raggiesoft.com/projects/stardust-engine-cms">
-      <i slot="icon" class="fa-brands fa-osi text-primary"></i> Stardust Engine CMS (Elara)
-    </wa-dropdown-item>
-    <wa-dropdown-item value="https://storetrainer.raggiesoft.com/">
-      <i slot="icon" class="fa-duotone fa-floppy-disk text-warning"></i> RaggieSoft StoreTrainer
-    </wa-dropdown-item>
-  </wa-dropdown>
+  <details class="dropdown">
+    <summary class="btn btn-ghost <?php echo $isMedia ? 'text-primary fw-bold' : 'text-body-secondary'; ?>">
+      <i class="ph-duotone ph-building" aria-hidden="true"></i> RaggieSoft Media
+      <i class="ph-bold ph-caret-down small opacity-75" aria-hidden="true"></i>
+    </summary>
+    <ul class="dropdown-content menu bg-base-200 rounded-box z-50 w-72 p-2 shadow-lg border border-base-300 mt-1">
+      <li class="menu-title text-uppercase small fw-bold opacity-75">B2B Operations</li>
+      <li>
+        <a href="https://corporate.raggiesoft.com/">
+          <i class="ph-duotone ph-graph text-primary" aria-hidden="true"></i> Corporate Hub
+        </a>
+      </li>
+      <li>
+        <a href="https://corporate.raggiesoft.com/licensing">
+          <i class="ph-duotone ph-scales text-warning" aria-hidden="true"></i> Master Licensing
+        </a>
+      </li>
+      <li>
+        <a href="https://corporate.raggiesoft.com/licensing/commercial">
+          <i class="ph-duotone ph-briefcase text-success" aria-hidden="true"></i> Commercial Portal
+        </a>
+      </li>
+      <li><hr class="my-1 border-base-300"></li>
+      <li class="menu-title text-uppercase small fw-bold opacity-75">Infrastructure &amp; Software</li>
+      <li>
+        <a href="https://corporate.raggiesoft.com/projects">
+          <i class="ph-duotone ph-stack text-info" aria-hidden="true"></i> Open Source Projects Hub
+        </a>
+      </li>
+      <li>
+        <a href="https://corporate.raggiesoft.com/projects/stardust-engine-cms">
+          <i class="ph-duotone ph-globe text-primary" aria-hidden="true"></i> Stardust Engine CMS (Elara)
+        </a>
+      </li>
+      <li>
+        <a href="https://storetrainer.raggiesoft.com/">
+          <i class="ph-duotone ph-floppy-disk text-warning" aria-hidden="true"></i> RaggieSoft StoreTrainer
+        </a>
+      </li>
+    </ul>
+  </details>
 
-  <wa-button appearance="plain" href="/about" class="<?php echo $isAbout ? 'text-primary fw-bold' : 'text-body-secondary'; ?>">
-    <i slot="start" class="fa-duotone fa-circle-info"></i> Mission Profile
-  </wa-button>
+  <a href="/about" class="btn btn-ghost <?php echo $isAbout ? 'text-primary fw-bold' : 'text-body-secondary'; ?>">
+    <i class="ph-duotone ph-info" aria-hidden="true"></i> Mission Profile
+  </a>
 
-  <wa-button appearance="plain" href="/contact" class="<?php echo $isContact ? 'text-primary fw-bold' : 'text-body-secondary'; ?>">
-    <i slot="start" class="fa-duotone fa-envelope-open"></i> Contact
-  </wa-button>
+  <a href="/contact" class="btn btn-ghost <?php echo $isContact ? 'text-primary fw-bold' : 'text-body-secondary'; ?>">
+    <i class="ph-duotone ph-envelope-open" aria-hidden="true"></i> Contact
+  </a>
 
 </div>
-

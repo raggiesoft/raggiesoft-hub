@@ -84,19 +84,19 @@ $isDarkTheme = (isset($currentPageTheme) && in_array($currentPageTheme, ['dark',
                 </div>
                 <div class="col-lg-6 text-center text-lg-end small mt-2 mt-lg-0">
                     <a href="https://store.raggiesoft.com/" target="_blank" rel="noopener" class="text-decoration-none link-body-emphasis fw-bold me-3 hover-opacity">
-                        <i class="fa-solid fa-bag-shopping me-1" aria-hidden="true"></i>Official Store
+                        <i class="ph-duotone ph-shopping-bag me-1" aria-hidden="true"></i>Official Store
                     </a>
                     
                     <a href="https://corporate.raggiesoft.com/" class="text-decoration-none link-body-emphasis me-3 hover-opacity fw-bold">RaggieSoft Media</a>
                     <a href="https://corporate.raggiesoft.com/careers" class="text-decoration-none text-danger fw-bold me-3 hover-opacity">
-                        <i class="fa-solid fa-shield-exclamation me-1" aria-hidden="true"></i>Careers (Fraud Alert)
+                        <i class="ph-duotone ph-shield-warning me-1" aria-hidden="true"></i>Careers (Fraud Alert)
                     </a>
                     <a href="/about/privacy" class="text-decoration-none link-body-emphasis me-3 hover-opacity">Privacy</a>
                     <a href="/about/terms" class="text-decoration-none link-body-emphasis me-3 hover-opacity">Terms</a>
                     <a href="https://corporate.raggiesoft.com/licensing" class="text-decoration-none link-body-emphasis me-3 hover-opacity">Licenses</a>
                     <a href="/contact" class="text-decoration-none link-body-emphasis me-3 hover-opacity">Contact</a>
                     <a href="/about/ai-disclaimer" class="text-decoration-none text-primary fw-bold text-uppercase letter-spacing-1 d-inline-block mt-2 mt-md-0" style="font-size: 0.9em;">
-                        <i class="fa-duotone fa-robot-astromech me-1"></i>AI Disclaimer
+                        <i class="ph-duotone ph-robot me-1"></i>AI Disclaimer
                     </a>
                 </div>
             </div>

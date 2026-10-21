@@ -1,7 +1,7 @@
 <?php
 /**
  * ============================================================================
- * RaggieSoft Hub - About/Mission Profile Header (Web Awesome v3.13.0)
+ * RaggieSoft Hub - About/Mission Profile Header (DaisyUI 5 + Phosphor)
  * ============================================================================
  * File: includes/components/headers/about/header-about.php
  * Navigation for the `/about/*` directory (Mission Profile).
@@ -9,7 +9,7 @@
  * LOGIC & CONSTRAINTS:
  * - Active state logic (`$isGovernance`, `$isProfiles`) determines which dropdown
  *   menu appears active based on `$_SERVER['REQUEST_URI']`.
- * - Uses strict Web Awesome v3.13.0 `<wa-dropdown>` without legacy `<wa-menu>`.
+ * - Uses semantic DaisyUI 5 `<details class="dropdown">` and Phosphor Duotone icons.
  * ============================================================================
  */
 
@@ -22,59 +22,82 @@ $isProfiles   = (!$isGovernance && $uri !== '/about');
 
 <div class="d-flex flex-column flex-md-row align-items-stretch align-items-md-center gap-2 ms-auto py-3 py-md-0 w-100 mobile-nav-menu">
 
-  <wa-button appearance="plain" href="/">
-    <i slot="start" class="fa-duotone fa-house me-2"></i>Home
-  </wa-button>
+  <a href="/" class="btn btn-ghost text-body-secondary">
+    <i class="ph-duotone ph-house me-1" aria-hidden="true"></i>Home
+  </a>
 
-  <wa-button appearance="plain" href="/about" class="<?php echo ($uri === '/about') ? 'text-primary fw-bold' : ''; ?>">
-    <i slot="start" class="fa-duotone fa-circle-info me-2"></i>Mission Profile
-  </wa-button>
+  <a href="/about" class="btn btn-ghost <?php echo ($uri === '/about') ? 'text-primary fw-bold' : 'text-body-secondary'; ?>">
+    <i class="ph-duotone ph-info me-1" aria-hidden="true"></i>Mission Profile
+  </a>
 
-  <wa-dropdown placement="bottom-start">
-    <wa-button class="<?php echo $isGovernance ? 'text-primary fw-bold' : ''; ?>" slot="trigger" appearance="plain" with-caret>
-      <i slot="start" class="fa-duotone fa-scale-balanced me-2"></i>Governance
-    </wa-button>
-    <wa-dropdown-item value="/raggiesoft-media/licensing">
-      <i slot="icon" class="fa-duotone fa-file-certificate text-primary"></i>Licenses (MIT/CC)
-    </wa-dropdown-item>
-    <wa-dropdown-item value="/about/privacy">
-      <i slot="icon" class="fa-duotone fa-shield-check text-success"></i>Privacy Policy
-    </wa-dropdown-item>
-    <wa-dropdown-item value="/about/terms">
-      <i slot="icon" class="fa-duotone fa-gavel text-warning"></i>Terms of Service
-    </wa-dropdown-item>
-    <wa-dropdown-item value="/about/ai-disclaimer">
-      <i slot="icon" class="fa-duotone fa-robot text-info"></i>AI Disclaimer
-    </wa-dropdown-item>
-  </wa-dropdown>
+  <details class="dropdown">
+    <summary class="btn btn-ghost <?php echo $isGovernance ? 'text-primary fw-bold' : 'text-body-secondary'; ?>">
+      <i class="ph-duotone ph-scales me-1" aria-hidden="true"></i>Governance
+      <i class="ph-bold ph-caret-down small opacity-75" aria-hidden="true"></i>
+    </summary>
+    <ul class="dropdown-content menu bg-base-200 rounded-box z-50 w-64 p-2 shadow-lg border border-base-300 mt-1">
+      <li>
+        <a href="https://corporate.raggiesoft.com/licensing">
+          <i class="ph-duotone ph-certificate text-primary" aria-hidden="true"></i>Licenses (MIT/CC)
+        </a>
+      </li>
+      <li>
+        <a href="/about/privacy">
+          <i class="ph-duotone ph-shield-check text-success" aria-hidden="true"></i>Privacy Policy
+        </a>
+      </li>
+      <li>
+        <a href="/about/terms">
+          <i class="ph-duotone ph-gavel text-warning" aria-hidden="true"></i>Terms of Service
+        </a>
+      </li>
+      <li>
+        <a href="/about/ai-disclaimer">
+          <i class="ph-duotone ph-robot text-info" aria-hidden="true"></i>AI Disclaimer
+        </a>
+      </li>
+    </ul>
+  </details>
 
-  <wa-dropdown placement="bottom-start">
-    <wa-button class="<?php echo $isProfiles ? 'text-primary fw-bold' : ''; ?>" slot="trigger" appearance="plain" with-caret>
-      <i slot="start" class="fa-duotone fa-sitemap me-2"></i>Network Profiles
-    </wa-button>
-    <div class="px-3 py-2 small text-uppercase fw-bold text-body-secondary">The Core</div>
-    <wa-dropdown-item value="https://michaelpragsdale.com">
-      <i slot="icon" class="fa-duotone fa-user-visor"></i>The Architect (Portfolio)
-    </wa-dropdown-item>
-    <wa-dropdown-item value="/about/family">
-      <i slot="icon" class="fa-duotone fa-people-group"></i>The Family (DevOps)
-    </wa-dropdown-item>
+  <details class="dropdown">
+    <summary class="btn btn-ghost <?php echo $isProfiles ? 'text-primary fw-bold' : 'text-body-secondary'; ?>">
+      <i class="ph-duotone ph-tree-structure me-1" aria-hidden="true"></i>Network Profiles
+      <i class="ph-bold ph-caret-down small opacity-75" aria-hidden="true"></i>
+    </summary>
+    <ul class="dropdown-content menu bg-base-200 rounded-box z-50 w-72 p-2 shadow-lg border border-base-300 mt-1">
+      <li class="menu-title text-uppercase small fw-bold opacity-75">The Core</li>
+      <li>
+        <a href="https://michaelpragsdale.com">
+          <i class="ph-duotone ph-user-focus" aria-hidden="true"></i>The Architect (Portfolio)
+        </a>
+      </li>
+      <li>
+        <a href="/about/family">
+          <i class="ph-duotone ph-users-three" aria-hidden="true"></i>The Family (DevOps)
+        </a>
+      </li>
+      <li><hr class="my-1 border-base-300"></li>
+      <li class="menu-title text-uppercase small fw-bold opacity-75">The Projects</li>
+      <li>
+        <a href="/about/engine-room">
+          <i class="ph-duotone ph-factory" aria-hidden="true"></i>Engine Room Records
+        </a>
+      </li>
+      <li>
+        <a href="/about/stardust-engine">
+          <i class="ph-duotone ph-rocket-launch" aria-hidden="true"></i>The Stardust Engine
+        </a>
+      </li>
+      <li>
+        <a href="/about/aethel">
+          <i class="ph-duotone ph-sword" aria-hidden="true"></i>The Aethel Saga
+        </a>
+      </li>
+    </ul>
+  </details>
 
-    <wa-divider></wa-divider>
-    <div class="px-3 py-2 small text-uppercase fw-bold text-body-secondary">The Projects</div>
-    <wa-dropdown-item value="/about/engine-room">
-      <i slot="icon" class="fa-solid fa-industry"></i>Engine Room Records
-    </wa-dropdown-item>
-    <wa-dropdown-item value="/about/stardust-engine">
-      <i slot="icon" class="fa-duotone fa-rocket-launch"></i>The Stardust Engine
-    </wa-dropdown-item>
-    <wa-dropdown-item value="/about/aethel">
-      <i slot="icon" class="fa-duotone fa-sword"></i>The Aethel Saga
-    </wa-dropdown-item>
-  </wa-dropdown>
-
-  <wa-button appearance="plain" href="/contact">
-    <i slot="start" class="fa-duotone fa-envelope me-2"></i>Contact
-  </wa-button>
+  <a href="/contact" class="btn btn-ghost text-body-secondary">
+    <i class="ph-duotone ph-envelope me-1" aria-hidden="true"></i>Contact
+  </a>
 
 </div>

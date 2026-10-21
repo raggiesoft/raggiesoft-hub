@@ -68,9 +68,11 @@ $imagesJson = htmlspecialchars(json_encode($heroImages), ENT_QUOTES, 'UTF-8');
         <div class="row g-5 justify-content-center mb-5">
             
             <div class="col-lg-5">
-                <wa-card class="card glass-card h-100 border-secondary w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
+                <div class="card bg-base-200 border border-base-300 shadow-sm card glass-card h-100 border-secondary w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
+<div class="card-body">
+
                     <div class="card-header bg-transparent border-secondary text-warning fw-bold text-uppercase py-3">
-                        <i class="fa-duotone fa-history me-2"></i> Layer 1: The Origin
+                        <i class="ph-duotone ph-clock-counter-clockwise me-2"></i> Layer 1: The Origin
                     </div>
                     <div class="card-body p-4">
                         <div class="small text-white-50">
@@ -100,13 +102,17 @@ $imagesJson = htmlspecialchars(json_encode($heroImages), ENT_QUOTES, 'UTF-8');
                             </div>
                         </div>
                     </div>
-                </wa-card>
+                
+</div>
+</div>
             </div>
 
             <div class="col-lg-5">
-                <wa-card class="card glass-card h-100 border-primary w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
+                <div class="card bg-base-200 border border-base-300 shadow-sm card glass-card h-100 border-primary w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
+<div class="card-body">
+
                     <div class="card-header bg-transparent border-primary text-primary fw-bold text-uppercase py-3">
-                        <i class="fa-duotone fa-code-branch me-2"></i> Layer 2: The Engine
+                        <i class="ph-duotone ph-git-branch me-2"></i> Layer 2: The Engine
                     </div>
                     <div class="card-body p-4">
                         <p class="small text-white-50">
@@ -115,14 +121,16 @@ $imagesJson = htmlspecialchars(json_encode($heroImages), ENT_QUOTES, 'UTF-8');
                         </p>
                         <hr class="border-primary opacity-50">
                         <ul class="list-unstyled small text-white-50 mb-0">
-                            <li class="mb-1"><i class="fa-duotone fa-check text-primary me-2"></i>PHP 8.4 MVC Router (Elara)</li>
-                            <li class="mb-1"><i class="fa-duotone fa-check text-primary me-2"></i>Suno AI (Audio Generation)</li>
-                            <li class="mb-1"><i class="fa-duotone fa-check text-primary me-2"></i>Gemini (Lore & Code Assist)</li>
-                            <li class="mb-1"><i class="fa-duotone fa-check text-primary me-2"></i>DigitalOcean (Cloud Hosting)</li>
-                            <li><i class="fa-duotone fa-check text-primary me-2"></i>Cloudflare Security</li>
+                            <li class="mb-1"><i class="ph-duotone ph-check text-primary me-2"></i>PHP 8.4 MVC Router (Elara)</li>
+                            <li class="mb-1"><i class="ph-duotone ph-check text-primary me-2"></i>Suno AI (Audio Generation)</li>
+                            <li class="mb-1"><i class="ph-duotone ph-check text-primary me-2"></i>Gemini (Lore & Code Assist)</li>
+                            <li class="mb-1"><i class="ph-duotone ph-check text-primary me-2"></i>DigitalOcean (Cloud Hosting)</li>
+                            <li><i class="ph-duotone ph-check text-primary me-2"></i>Cloudflare Security</li>
                         </ul>
                     </div>
-                </wa-card>
+                
+</div>
+</div>
             </div>
 
         </div>
@@ -130,7 +138,7 @@ $imagesJson = htmlspecialchars(json_encode($heroImages), ENT_QUOTES, 'UTF-8');
         <div class="row mb-4">
             <div class="col-12 text-center">
                 <h6 class="text-uppercase text-white-50 fw-bold letter-spacing-2 border-bottom border-secondary pb-2 mb-4 d-inline-block">
-                    <i class="fa-duotone fa-network-wired me-2"></i>Layer 3: Network Entities
+                    <i class="ph-duotone ph-graph me-2"></i>Layer 3: Network Entities
                 </h6>
             </div>
         </div>
@@ -140,53 +148,69 @@ $imagesJson = htmlspecialchars(json_encode($heroImages), ENT_QUOTES, 'UTF-8');
             <div class="col-lg-3 col-md-6">
                 <!-- ARCHITECTURE: Portal to the Personified DevOps Constructs -->
                 <a href="/about/family" class="text-decoration-none d-block h-100">
-                    <wa-card class="card glass-card h-100 w-100 hover-lift border-info transition-all" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
+                    <div class="card bg-base-200 border border-base-300 shadow-sm card glass-card h-100 w-100 hover-lift border-info transition-all" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
+<div class="card-body">
+
                         <div class="card-body text-center p-4">
-                            <img src="<?php echo $cdnBaseUrl; ?>/family/images/logos/logo-family.png" 
+                            <img src="<?php echo $cdnBaseUrl; ?>/raggiesoft-lore/family/images/logos/logo-family.png" 
                                  class="rounded-circle mb-3 border border-info shadow-sm" width="60" height="60" alt="Family">
                             <h5 class="fw-bold text-white mb-2">The Family</h5>
                             <p class="small text-white-50 mb-0">Personified DevOps & Emotional Support Constructs.</p>
                         </div>
-                    </wa-card>
+                    
+</div>
+</div>
                 </a>
             </div>
 
             <div class="col-lg-3 col-md-6">
                 <a href="/about/stardust-engine" class="text-decoration-none d-block h-100">
-                    <wa-card class="card glass-card h-100 w-100 hover-lift border-primary transition-all" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
+                    <div class="card bg-base-200 border border-base-300 shadow-sm card glass-card h-100 w-100 hover-lift border-primary transition-all" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
+<div class="card-body">
+
                         <div class="card-body text-center p-4">
                             <img src="<?php echo $cdnBaseUrl; ?>/engine-room-records/artists/the-stardust-engine/band-logo.png" 
                                  class="mb-3" width="60" height="60" style="object-fit: contain;" alt="Stardust">
                             <h5 class="fw-bold text-white mb-2">Stardust Engine</h5>
                             <p class="small text-white-50 mb-0">80s Synth-Rock Narrative Universe.</p>
                         </div>
-                    </wa-card>
+                    
+</div>
+</div>
                 </a>
             </div>
 
             <div class="col-lg-3 col-md-6">
                 <a href="/about/aethel" class="text-decoration-none d-block h-100">
-                    <wa-card class="card glass-card h-100 w-100 hover-lift border-warning transition-all" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
+                    <div class="card bg-base-200 border border-base-300 shadow-sm card glass-card h-100 w-100 hover-lift border-warning transition-all" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
+<div class="card-body">
+
                         <div class="card-body text-center p-4">
-                            <img src="<?php echo $cdnBaseUrl; ?>/aethel/images/logos/silver-gauntlet-of-aethel-logo.png" 
+                            <img src="<?php echo $cdnBaseUrl; ?>/raggiesoft-books/aethel/images/logos/silver-gauntlet-of-aethel-logo.png" 
                                  class="mb-3" width="60" height="60" style="object-fit: contain;" alt="Aethel">
                             <h5 class="fw-bold text-warning mb-2">Aethel Saga</h5>
                             <p class="small text-white-50 mb-0">High Fantasy Adventure Series.</p>
                         </div>
-                    </wa-card>
+                    
+</div>
+</div>
                 </a>
             </div>
 
             <div class="col-lg-3 col-md-6">
                 <a href="/about/engine-room" class="text-decoration-none d-block h-100">
-                    <wa-card class="card glass-card h-100 w-100 hover-lift border-danger transition-all" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
+                    <div class="card bg-base-200 border border-base-300 shadow-sm card glass-card h-100 w-100 hover-lift border-danger transition-all" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
+<div class="card-body">
+
                         <div class="card-body text-center p-4">
                             <img src="<?php echo $cdnBaseUrl; ?>/engine-room-records/images/logos/engine-room-records-logo-white.png" 
                                  class="rounded-circle mb-3 border border-danger shadow-sm p-1" width="60" height="60" style="object-fit: contain;" alt="Engine Room">
                             <h5 class="fw-bold text-danger mb-2">Engine Room</h5>
                             <p class="small text-white-50 mb-0">Fictional Industrial Record Label.</p>
                         </div>
-                    </wa-card>
+                    
+</div>
+</div>
                 </a>
             </div>
 
@@ -194,28 +218,32 @@ $imagesJson = htmlspecialchars(json_encode($heroImages), ENT_QUOTES, 'UTF-8');
 
         <div class="row justify-content-center">
             <div class="col-md-10">
-                <wa-card class="card glass-card border-secondary w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
+                <div class="card bg-base-200 border border-base-300 shadow-sm card glass-card border-secondary w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
+<div class="card-body">
+
                     <div class="card-body p-4 d-flex flex-column flex-md-row justify-content-around align-items-center text-center">
                         
                         <div class="mb-3 mb-md-0">
-                            <h6 class="text-white fw-bold mb-1"><i class="fa-duotone fa-scale-balanced me-2"></i>Governance</h6>
+                            <h6 class="text-white fw-bold mb-1"><i class="ph-duotone ph-scales me-2"></i>Governance</h6>
                             <span class="small text-white-50">Compliance & Legal</span>
                         </div>
 
                         <div class="d-flex gap-3 gap-md-4">
                             <a href="https://corporate.raggiesoft.com/licensing" class="text-white-50 text-decoration-none hover-text-white transition-all">
-                                <i class="fa-solid fa-file-certificate me-1"></i> Licenses
+                                <i class="ph-duotone ph-certificate me-1"></i> Licenses
                             </a>
                             <a href="/about/privacy" class="text-white-50 text-decoration-none hover-text-white transition-all">
-                                <i class="fa-solid fa-user-shield me-1"></i> Privacy
+                                <i class="ph-duotone ph-shield-check me-1"></i> Privacy
                             </a>
                             <a href="/about/terms" class="text-white-50 text-decoration-none hover-text-white transition-all">
-                                <i class="fa-solid fa-gavel me-1"></i> Terms
+                                <i class="ph-duotone ph-gavel me-1"></i> Terms
                             </a>
                         </div>
 
                     </div>
-                </wa-card>
+                
+</div>
+</div>
             </div>
         </div>
 

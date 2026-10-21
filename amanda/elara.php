@@ -249,46 +249,6 @@ if (!isset($pageConfig['view'])) {
     }
 }
 
-// B.2 DYNAMIC NARRATIVE ROUTING (The Katie.json Intercept)
-if (!isset($pageConfig['view'])) {
-    $katiePath = ROOT_PATH . '/books/toc.json';
-    
-    if (file_exists($katiePath)) {
-        $katie = json_decode(file_get_contents($katiePath), true);
-        
-        if (json_last_error() === JSON_ERROR_NONE) {
-            // Trim slashes from the requested URI to match cleanly
-            $cleanUri = trim($request_uri, '/');
-            
-            // Loop through Katie to find a matching URL structure
-            foreach ($katie as $book) {
-                $bookSlug = slugify($book['book_title']);
-                
-                foreach ($book['chapters'] as $chapter) {
-                    $chapSlug = slugify($chapter['chap_title']);
-                    
-                    foreach ($chapter['parts'] as $part) {
-                        $partSlug = slugify($part['part_title']);
-                        
-                        // Construct the expected URL for this part
-                        $expectedUri = "{$bookSlug}/{$chapSlug}/{$partSlug}";
-                        
-                        if ($cleanUri === $expectedUri) {
-                            // MATCH FOUND! Tell Elara to use the book viewer
-                            $pageConfig['view'] = 'pages/book_viewer';
-                            $pageConfig['title'] = $part['part_title'] . ' - ' . $book['book_title'];
-                            
-                            // Pass the actual Markdown file path to the viewer
-                            define('ACTIVE_MD_FILE', $part['file_path']);
-                            break 3; // Break out of all loops
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
-
 // C. Sidebar Intelligence
 // Resolves structural layout: Determines if a sidebar should be rendered based on configuration maps or context
 if (isset($pageConfig['view'])) {

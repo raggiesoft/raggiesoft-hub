@@ -1,64 +1,58 @@
 <?php
 /**
- * ARCHITECTURAL DOCBLOCK
- * 
- * File: raggiesoft-hub/includes/components/modals/settings-dialog.php
- * Path: /includes/components/modals/settings-dialog.php
- * 
- * CORE RESPONSIBILITY:
- * Reusable UI Component: Accessibility Settings Modal.
- * Renders a Web Awesome `<wa-dialog>` allowing users to override global theme preferences
- * (Light, Dark, Auto, Sepia) and persists these settings via `localStorage`.
- * 
- * LORE CONTEXT:
- * - N/A. This is a functional site-wide utility component.
- * 
- * UI/UX & STYLING ARCHITECTURE:
- * - Uses `<wa-dialog>` and `<wa-radio-group>` for native Web Components styling.
- * - Implements a custom "Sepia" theme (`.wa-theme-sepia`) using inline CSS variables 
- *   to provide a low-contrast reading mode.
- * 
- * DEPENDENCIES & INCLUSIONS:
- * - Expects Web Awesome component library to be loaded.
- * - Expects buttons with the ID `#open-site-settings-btn` to exist in the DOM to trigger the modal.
- * 
- * MAINTENANCE NOTES:
- * - The JavaScript logic is self-contained within an IIFE to prevent namespace collisions.
- * - Modifying theme classes (`wa-theme-light`, `wa-theme-dark`, `theme-auto`) must align with
- *   the global CSS framework (Bootstrap 5 `data-bs-theme` attribute).
- * - This file is a static HTML/JS partial executing within a PHP environment.
+ * ============================================================================
+ * ARCHITECTURAL DOCBLOCK: Accessibility Settings Modal (DaisyUI 5 + <dialog>)
+ * ============================================================================
+ * File: includes/components/modals/settings-dialog.php
+ * Purpose:
+ *     Renders a native HTML5 `<dialog>` modal styled with DaisyUI 5 allowing
+ *     visitors to override global theme preferences (Auto, Light, Dark, Sepia).
+ * ============================================================================
  */
 ?>
 <!-- Site Settings Dialog -->
-<wa-dialog id="site-settings-dialog" class="site-settings-dialog" label="Accessibility Settings" light-dismiss>
-    
-    <div class="mb-4">
-        <h6 class="fw-bold mb-2">Display Contrast</h6>
-        <wa-radio-group class="site-setting-input" data-setting="theme" value="auto">
-            <wa-radio value="auto">System Default</wa-radio>
-            <wa-radio value="light">Light Mode</wa-radio>
-            <wa-radio value="dark">Dark Mode</wa-radio>
-            <wa-radio value="sepia">High Contrast (Sepia)</wa-radio>
-        </wa-radio-group>
-    </div>
+<dialog id="site-settings-dialog" class="modal site-settings-dialog">
+    <div class="modal-box">
+        <h3 class="fw-bold fs-5 mb-3">Accessibility Settings</h3>
+        <div class="mb-4">
+            <h6 class="fw-bold mb-2">Display Contrast</h6>
+            <div class="d-flex flex-column gap-2 site-setting-input" data-setting="theme">
+                <label class="label cursor-pointer justify-content-start gap-2">
+                    <input type="radio" name="rs-site-theme" class="radio radio-primary" value="auto" checked>
+                    <span class="label-text">System Default</span>
+                </label>
+                <label class="label cursor-pointer justify-content-start gap-2">
+                    <input type="radio" name="rs-site-theme" class="radio radio-primary" value="light">
+                    <span class="label-text">Light Mode</span>
+                </label>
+                <label class="label cursor-pointer justify-content-start gap-2">
+                    <input type="radio" name="rs-site-theme" class="radio radio-primary" value="dark">
+                    <span class="label-text">Dark Mode</span>
+                </label>
+                <label class="label cursor-pointer justify-content-start gap-2">
+                    <input type="radio" name="rs-site-theme" class="radio radio-primary" value="sepia">
+                    <span class="label-text">High Contrast (Sepia)</span>
+                </label>
+            </div>
+        </div>
 
-    <div slot="footer">
-        <wa-button variant="neutral" class="close-settings-btn">Close</wa-button>
-        <wa-button variant="brand" appearance="outlined" class="reset-settings-btn">Reset to Default</wa-button>
+        <div class="modal-action d-flex gap-2 justify-content-end">
+            <button type="button" class="btn btn-neutral btn-sm close-settings-btn">Close</button>
+            <button type="button" class="btn btn-outline btn-primary btn-sm reset-settings-btn">Reset to Default</button>
+        </div>
     </div>
-</wa-dialog>
+    <form method="dialog" class="modal-backdrop">
+        <button>close</button>
+    </form>
+</dialog>
 
 <script>
 (function() {
     const dialogs = document.querySelectorAll('.site-settings-dialog');
     const dialog = dialogs[dialogs.length - 1];
-    
     const btnOpens = document.querySelectorAll('#open-site-settings-btn');
     const btnOpen = btnOpens[btnOpens.length - 1];
-    
-    const defaults = {
-        theme: 'auto'
-    };
+    const defaults = { theme: 'auto' };
 
     let currentSettings = { ...defaults };
     try {
@@ -66,28 +60,26 @@
         if (stored) {
             currentSettings = { ...defaults, ...JSON.parse(stored) };
         }
-    } catch (e) {
-        console.error("Could not load site settings", e);
-    }
-
-    const isForcedByServer = document.documentElement.hasAttribute('data-bs-theme');
+    } catch (e) {}
 
     const applySetting = (key, value) => {
         if (key === 'theme') {
             const html = document.documentElement;
-            html.classList.remove('wa-theme-light', 'wa-theme-dark', 'wa-theme-sepia', 'theme-auto');
-            html.removeAttribute('data-bs-theme'); 
-            
+            html.classList.remove('theme-auto', 'theme-sepia');
             if (value === 'auto') {
+                const sys = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
                 html.classList.add('theme-auto');
+                html.setAttribute('data-theme', sys);
+                html.setAttribute('data-bs-theme', sys);
             } else if (value === 'sepia') {
-                html.classList.add('wa-theme-sepia');
-                html.setAttribute('data-bs-theme', 'dark'); 
+                html.classList.add('theme-sepia');
+                html.setAttribute('data-theme', 'retro');
+                html.setAttribute('data-bs-theme', 'dark');
             } else if (value === 'dark') {
-                html.classList.add('wa-theme-dark');
+                html.setAttribute('data-theme', 'dark');
                 html.setAttribute('data-bs-theme', 'dark');
             } else if (value === 'light') {
-                html.classList.add('wa-theme-light');
+                html.setAttribute('data-theme', 'light');
                 html.setAttribute('data-bs-theme', 'light');
             }
         }
@@ -96,71 +88,40 @@
     applySetting('theme', currentSettings.theme);
 
     if (dialog) {
-        const inputs = dialog.querySelectorAll('.site-setting-input');
-
-        inputs.forEach(input => {
-            const settingKey = input.getAttribute('data-setting');
-            const val = currentSettings[settingKey];
-            
-            setTimeout(() => { input.value = val; }, 0);
-            
-            if(input.tagName.toLowerCase() === 'wa-radio-group') {
-                input.addEventListener('wa-change', (e) => {
-                    const newValue = e.target.value;
-                    currentSettings[settingKey] = newValue;
-                    applySetting(settingKey, newValue);
+        const radios = dialog.querySelectorAll('input[name="rs-site-theme"]');
+        radios.forEach(radio => {
+            radio.checked = (radio.value === currentSettings.theme);
+            radio.addEventListener('change', () => {
+                if (radio.checked) {
+                    currentSettings.theme = radio.value;
+                    applySetting('theme', radio.value);
                     localStorage.setItem('raggiesoft-site-settings', JSON.stringify(currentSettings));
-                });
-            }
-        });
-
-        const closeBtns = dialog.querySelectorAll('.close-settings-btn');
-        closeBtns.forEach(btn => btn.addEventListener('click', (e) => {
-            e.preventDefault();
-            e.stopPropagation();
-            dialog.open = false;
-            try { dialog.hide(); } catch(err) {}
-        }));
-
-        const resetBtns = dialog.querySelectorAll('.reset-settings-btn');
-        resetBtns.forEach(btn => {
-            btn.addEventListener('click', () => {
-                localStorage.removeItem('raggiesoft-site-settings');
-                currentSettings = { ...defaults };
-                
-                inputs.forEach(input => {
-                    const settingKey = input.getAttribute('data-setting');
-                    input.value = defaults[settingKey];
-                    applySetting(settingKey, defaults[settingKey]);
-                });
+                }
             });
         });
-    }
-    
-    if (btnOpen && dialog) {
-        btnOpen.addEventListener('click', (e) => {
-            e.preventDefault();
-            dialog.open = true;
-            try { dialog.show(); } catch(err) {}
+
+        dialog.querySelectorAll('.close-settings-btn').forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                e.preventDefault();
+                try { dialog.close(); } catch (err) { dialog.open = false; }
+            });
         });
+
+        dialog.querySelectorAll('.reset-settings-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                currentSettings = { ...defaults };
+                localStorage.removeItem('raggiesoft-site-settings');
+                applySetting('theme', 'auto');
+                radios.forEach(r => { r.checked = (r.value === 'auto'); });
+            });
+        });
+
+        if (btnOpen) {
+            btnOpen.addEventListener('click', (e) => {
+                e.preventDefault();
+                try { dialog.showModal(); } catch (err) { dialog.open = true; }
+            });
+        }
     }
 })();
 </script>
-
-<style>
-/* Sepia Theme Variables */
-html.wa-theme-sepia {
-    --wa-color-neutral-50: #fbf0e4;
-    --wa-color-neutral-100: #f3e4d3;
-    --wa-color-neutral-200: #e8d3bc;
-    --wa-color-neutral-800: #5c4b3a;
-    --wa-color-neutral-900: #433527;
-    --wa-color-neutral-950: #2b2118;
-    
-    --wa-panel-background-color: var(--wa-color-neutral-50);
-    --wa-page-background-color: var(--wa-color-neutral-100);
-    --wa-color-text: var(--wa-color-neutral-900);
-    --wa-color-text-paragraph: var(--wa-color-neutral-900);
-    --wa-color-text-heading: var(--wa-color-neutral-950);
-}
-</style>

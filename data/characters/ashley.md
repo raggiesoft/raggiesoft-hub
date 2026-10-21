@@ -1,3 +1,0 @@
-# Ashley
-
-Profile coming soon.

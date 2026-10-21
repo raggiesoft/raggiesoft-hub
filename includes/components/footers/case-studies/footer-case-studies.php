@@ -17,7 +17,7 @@
  * UI/UX & STYLING ARCHITECTURE:
  * - Employs a standard Bootstrap 5 footer layout (`.mt-auto`, `.bg-body-tertiary`, `.py-5`).
  * - Uses responsive grid (`.row`, `.col-lg-5`, etc.) to organize brand info, links, and social icons.
- * - Relies on FontAwesome (`fa-linkedin`, `fa-envelope`) for social connections.
+ * - Relies on FontAwesome (`ph-linkedin-logo`, `ph-envelope`) for social connections.
  * 
  * DEPENDENCIES & INCLUSIONS:
  * - Requires `$cdnBaseUrl` to load the RaggieSoft logo.
@@ -58,8 +58,8 @@
             <div class="col-lg-4 col-md-6 text-md-end">
                 <h6 class="fw-bold mb-3">Connect</h6>
                 <div class="d-flex justify-content-md-end gap-3">
-                    <a href="https://linkedin.com/in/michael-ragsdale-raggiesoft" class="link-secondary fs-5" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="mailto:hireme@michaelpragsdale.com" class="link-secondary fs-5" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+                    <a href="https://linkedin.com/in/michael-ragsdale-raggiesoft" class="link-secondary fs-5" aria-label="LinkedIn"><i class="ph-duotone ph-linkedin-logo"></i></a>
+                    <a href="mailto:hireme@michaelpragsdale.com" class="link-secondary fs-5" aria-label="Email"><i class="ph-duotone ph-envelope"></i></a>
                 </div>
             </div>
         </div>
@@ -84,7 +84,7 @@
 // Standard Admin Access Easter Egg
 $konami_config = [
     'title'      => 'Archive Level Access',
-    'icon'       => 'fa-solid fa-database',
+    'icon'       => 'ph-duotone ph-database',
     'theme'      => '#dc3545', 
     'text_color' => '#ffffff',
     'image'      => '', 

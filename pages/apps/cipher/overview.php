@@ -16,7 +16,7 @@
     <div class="row mb-4">
         <div class="col-lg-8">
             <h1 class="display-5 fw-bold border-bottom pb-2 text-primary">
-                <i class="fa-duotone fa-tower-broadcast me-2"></i>Signal Decryptor
+                <i class="ph-duotone ph-broadcast me-2"></i>Signal Decryptor
             </h1>
             <p class="lead text-body-secondary">
                 Configure the transmitter and intercept the signal.
@@ -24,9 +24,11 @@
         </div>
     </div>
 
-    <wa-card class="card shadow-sm border-0 bg-body-tertiary mb-5 w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
+    <div class="card bg-base-200 border border-base-300 shadow-sm card shadow-sm border-0 bg-body-tertiary mb-5 w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
+<div class="card-body">
+
         <div class="card-header bg-dark text-white d-flex align-items-center p-3">
-            <i class="fa-duotone fa-sliders-up me-2"></i>
+            <i class="ph-duotone ph-sliders me-2"></i>
             <strong class="text-uppercase">Mission Configuration</strong>
         </div>
         <div class="card-body p-4">
@@ -39,7 +41,7 @@
                             <div class="form-check card-radio">
                                 <input class="form-check-input" type="radio" name="difficulty" id="diffCalibration" value="calibration" checked>
                                 <label class="form-check-label" for="diffCalibration">
-                                    <span class="d-block fw-bold text-success"><i class="fa-duotone fa-gauge me-1"></i> Calibration</span>
+                                    <span class="d-block fw-bold text-success"><i class="ph-duotone ph-gauge me-1"></i> Calibration</span>
                                     <small class="text-body-secondary" style="font-size: 0.75rem;">1-5 • Unique</small>
                                 </label>
                             </div>
@@ -47,7 +49,7 @@
                             <div class="form-check card-radio">
                                 <input class="form-check-input" type="radio" name="difficulty" id="diffOrbital" value="orbital">
                                 <label class="form-check-label" for="diffOrbital">
-                                    <span class="d-block fw-bold text-info"><i class="fa-duotone fa-satellite me-1"></i> Orbital</span>
+                                    <span class="d-block fw-bold text-info"><i class="ph-duotone ph-broadcast me-1"></i> Orbital</span>
                                     <small class="text-body-secondary" style="font-size: 0.75rem;">1-6 • Repeats</small>
                                 </label>
                             </div>
@@ -55,7 +57,7 @@
                             <div class="form-check card-radio">
                                 <input class="form-check-input" type="radio" name="difficulty" id="diffDeep" value="deep">
                                 <label class="form-check-label" for="diffDeep">
-                                    <span class="d-block fw-bold text-warning"><i class="fa-duotone fa-planet-ringed me-1"></i> Deep Space</span>
+                                    <span class="d-block fw-bold text-warning"><i class="ph-duotone ph-planet me-1"></i> Deep Space</span>
                                     <small class="text-body-secondary" style="font-size: 0.75rem;">0-9 • Unique</small>
                                 </label>
                             </div>
@@ -63,7 +65,7 @@
                             <div class="form-check card-radio">
                                 <input class="form-check-input" type="radio" name="difficulty" id="diffHorizon" value="horizon">
                                 <label class="form-check-label" for="diffHorizon">
-                                    <span class="d-block fw-bold text-danger"><i class="fa-duotone fa-galaxy me-1"></i> Horizon</span>
+                                    <span class="d-block fw-bold text-danger"><i class="ph-duotone ph-planet me-1"></i> Horizon</span>
                                     <small class="text-body-secondary" style="font-size: 0.75rem;">0-9 • Repeats</small>
                                 </label>
                             </div>
@@ -87,16 +89,20 @@
                 </div>
             </form>
         </div>
-    </wa-card>
+    
+</div>
+</div>
 
     <div class="row g-5">
         <div class="col-md-5">
-            <wa-card class="card shadow-sm border-0 bg-body-tertiary w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
+            <div class="card bg-base-200 border border-base-300 shadow-sm card shadow-sm border-0 bg-body-tertiary w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
+<div class="card-body">
+
                 <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center p-3">
                     <h5 class="mb-0">
-                        <i class="fa-duotone fa-gamepad-modern me-2"></i>Controls
+                        <i class="ph-duotone ph-game-controller me-2"></i>Controls
                     </h5>
-                    <wa-badge variant="brand" appearance="accent" class="text-primary" id="rulesBadge">1-5 • Unique</wa-badge>
+                    <span id="rulesBadge" class="badge badge-primary text-primary">1-5 • Unique</span>
                 </div>
                 <div class="card-body p-4">
                     <form id="cipherForm">
@@ -113,9 +119,9 @@
                                        pattern="[0-9]*"
                                        required 
                                        autocomplete="off">
-                                <wa-button variant="neutral" appearance="outlined" type="button" id="toggleSecretVisibility">
-                                    <i class="fa-duotone fa-eye" id="eyeIcon"></i>
-                                </wa-button>
+                                <button class="btn btn-neutral btn-outline" id="toggleSecretVisibility" type="button">
+                                    <i class="ph-duotone ph-eye" id="eyeIcon"></i>
+                                </button>
                             </div>
                             <div class="form-text text-body-secondary" id="secretHint">Enter 4 unique digits (1-5).</div>
                         </div>
@@ -136,50 +142,58 @@
                         </div>
 
                         <div class="d-grid gap-2">
-                            <wa-button variant="brand" appearance="accent" size="large" type="submit">
-                                <i slot="start" class="fa-duotone fa-magnifying-glass"></i>Analyze Signal
-                            </wa-button>
-                            <wa-button variant="neutral" appearance="outlined" type="button" id="resetBtn">
-                                <i slot="start" class="fa-duotone fa-rotate-left"></i>Reset Transmission
-                            </wa-button>
+                            <button class="btn btn-primary btn-lg" type="submit">
+                                <i  class="ph-duotone ph-magnifying-glass"></i>Analyze Signal
+                            </button>
+                            <button class="btn btn-neutral btn-outline" id="resetBtn" type="button">
+                                <i  class="ph-duotone fa-rotate-left"></i>Reset Transmission
+                            </button>
                         </div>
                         
                         <div class="d-flex justify-content-center gap-3 mt-3">
                             <a href="/apps/cipher/rules" class="text-decoration-none text-body-secondary small">
-                                <i class="fa-duotone fa-book-open me-1"></i>Protocols
+                                <i class="ph-duotone ph-book-open me-1"></i>Protocols
                             </a>
                             <span class="text-body-secondary small opacity-50">•</span>
                             <a href="/apps/cipher/history" class="text-decoration-none text-body-secondary small">
-                                <i class="fa-duotone fa-scroll-old me-1"></i>Origins
+                                <i class="ph-duotone ph-scroll me-1"></i>Origins
                             </a>
                         </div>
 
                     </form>
                 </div>
-            </wa-card>
+            
+</div>
+</div>
         </div>
 
         <div class="col-md-7">
-            <wa-callout variant="neutral" appearance="accent" id="resultBox" class="text-center py-4 d-none mb-4 d-block">
+            <div id="resultBox" role="alert" class="alert shadow-sm text-center py-4 d-none mb-4 d-block">
+
                 <h6 class="text-uppercase text-body-secondary letter-spacing-1 mb-3">Decryption Result</h6>
                 <div class="display-1 fw-bold text-body-emphasis" id="resultSymbols" style="letter-spacing: 0.2em;">
                     </div>
-            </wa-callout>
+            
+</div>
 
-            <wa-card id="explanationBox" class="card border-primary d-none w-100" style="--body-padding: 0; --header-padding: 0;">
+            <div id="explanationBox" class="card bg-base-200 border border-base-300 shadow-sm card border-primary d-none w-100" style="--body-padding: 0; --header-padding: 0;">
+<div class="card-body">
+
                 <div class="card-header bg-primary text-white p-3">
                     <strong class="small text-uppercase">
-                        <i class="fa-duotone fa-microchip me-2"></i>Logic Analysis Log
+                        <i class="ph-duotone ph-cpu me-2"></i>Logic Analysis Log
                     </strong>
                 </div>
                 <div class="card-body bg-body-tertiary p-4">
                     <ul id="logList" class="list-group list-group-flush bg-transparent">
                         </ul>
                 </div>
-            </wa-card>
+            
+</div>
+</div>
 
             <div id="placeholderState" class="text-center text-body-secondary py-5">
-                <i class="fa-duotone fa-shield-keyhole fa-4x opacity-50 mb-3"></i>
+                <i class="ph-duotone ph-shield ph-4x opacity-50 mb-3"></i>
                 <p>Waiting for input...</p>
             </div>
         </div>
@@ -189,7 +203,7 @@
 <div class="toast-container position-fixed bottom-0 end-0 p-3">
     <div id="stealthToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
         <div class="toast-header bg-dark text-white">
-            <i class="fa-duotone fa-user-secret me-2"></i>
+            <i class="ph-duotone ph-detective me-2"></i>
             <strong class="me-auto">System Notification</strong>
             <small class="text-white-50">Just now</small>
             <button type="button" class="btn-close btn-close-white" data-bs-dismiss="toast" aria-label="Close"></button>
@@ -201,7 +215,7 @@
     </div>
 </div>
 
-<script src="<?php echo $cdnBaseUrl; ?>/apps/cipher/js/cipher.js?v=<?php echo time(); ?>"></script>
+<script src="<?php echo $cdnBaseUrl; ?>/raggiesoft-corporate/apps/cipher/js/cipher.js?v=<?php echo time(); ?>"></script>
 
 <style>
 .card-radio {

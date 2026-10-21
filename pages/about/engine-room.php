@@ -37,7 +37,9 @@ $pageTitle = "About Engine Room Records";
     }
 </style>
 
-<wa-card class="card bg-black text-white border-danger mb-5 shadow-sm overflow-hidden w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
+<div class="card bg-base-200 border border-base-300 shadow-sm card bg-black text-white border-danger mb-5 shadow-sm overflow-hidden w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
+<div class="card-body">
+
     <div class="card-body p-5 text-center">
         <img src="<?php echo $cdnBaseUrl; ?>/engine-room-records/images/logos/engine-room-records-logo-white.png" 
              alt="Engine Room Records" 
@@ -56,7 +58,9 @@ $pageTitle = "About Engine Room Records";
             </p>
         </div>
     </div>
-</wa-card>
+
+</div>
+</div>
 
 <div class="row justify-content-center">
     <div class="col-lg-11">
@@ -64,7 +68,7 @@ $pageTitle = "About Engine Room Records";
         <!-- Corporate History Narrative -->
         <div class="mb-5">
             <h2 class="h3 fw-bold text-danger mb-4 border-bottom border-secondary pb-2 font-monospace">
-                <i class="fa-solid fa-industry me-2" aria-hidden="true"></i>Corporate History
+                <i class="ph-duotone ph-factory me-2" aria-hidden="true"></i>Corporate History
             </h2>
             <p class="lead text-body-emphasis">
                 Founded in Norfolk, Virginia, <strong>Engine Room Records</strong> began as a total rejection of the polished, over-produced corporate pop machine.
@@ -77,34 +81,44 @@ $pageTitle = "About Engine Room Records";
         <!-- Philosophy and Roster Cards -->
         <div class="row g-4 mb-5">
             <div class="col-md-6">
-                <wa-card class="card h-100 bg-dark text-white border-danger shadow-sm w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
+                <div class="card bg-base-200 border border-base-300 shadow-sm card h-100 bg-dark text-white border-danger shadow-sm w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
+<div class="card-body">
+
                     <div class="card-body d-flex flex-column justify-content-center p-4">
-                        <h3 class="h5 fw-bold text-danger mb-3 font-monospace"><i class="fa-solid fa-gavel me-2" aria-hidden="true"></i>The Philosophy</h3>
+                        <h3 class="h5 fw-bold text-danger mb-3 font-monospace"><i class="ph-duotone ph-gavel me-2" aria-hidden="true"></i>The Philosophy</h3>
                         <p class="small text-white-50 mb-0 fst-italic">
                             "If it doesn't sound like it was recorded inside a running turbine, we don't want it."
                         </p>
                         <p class="small text-secondary mt-2 mb-0 text-end">- The Founder</p>
                     </div>
-                </wa-card>
+                
+</div>
+</div>
             </div>
             <div class="col-md-6">
-                <wa-card class="card h-100 bg-dark text-white border-secondary shadow-sm w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
+                <div class="card bg-base-200 border border-base-300 shadow-sm card h-100 bg-dark text-white border-secondary shadow-sm w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
+<div class="card-body">
+
                     <div class="card-body p-4">
-                        <h3 class="h5 fw-bold text-white mb-3 font-monospace"><i class="fa-solid fa-users me-2" aria-hidden="true"></i>The Roster</h3>
+                        <h3 class="h5 fw-bold text-white mb-3 font-monospace"><i class="ph-duotone ph-users me-2" aria-hidden="true"></i>The Roster</h3>
                         <ul class="list-unstyled small text-white-50 mb-0">
-                            <li class="mb-2"><i class="fa-solid fa-bolt text-warning me-2" aria-hidden="true"></i>The Stardust Engine</li>
-                            <li class="mb-2"><i class="fa-solid fa-gem text-info me-2" aria-hidden="true"></i>Fractured Prisms</li>
-                            <li class="text-muted"><i class="fa-solid fa-lock text-secondary me-2" aria-hidden="true"></i>[ Next Entry Pending ]</li>
+                            <li class="mb-2"><i class="ph-duotone ph-lightning text-warning me-2" aria-hidden="true"></i>The Stardust Engine</li>
+                            <li class="mb-2"><i class="ph-duotone ph-diamond text-info me-2" aria-hidden="true"></i>Fractured Prisms</li>
+                            <li class="text-muted"><i class="ph-duotone ph-lock text-secondary me-2" aria-hidden="true"></i>[ Next Entry Pending ]</li>
                         </ul>
                     </div>
-                </wa-card>
+                
+</div>
+</div>
             </div>
         </div>
 
         <!-- REALITY CHECK NOTIFICATION -->
-        <wa-card class="card border-secondary bg-body-tertiary mb-5 shadow-sm shadow-sm w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
+        <div class="card bg-base-200 border border-base-300 shadow-sm card border-secondary bg-body-tertiary mb-5 shadow-sm shadow-sm w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
+<div class="card-body">
+
             <div class="card-body d-flex align-items-start p-4">
-                <i class="fa-solid fa-circle-info text-danger fs-4 me-3 mt-1" aria-hidden="true"></i>
+                <i class="ph-duotone ph-info text-danger fs-4 me-3 mt-1" aria-hidden="true"></i>
                 <div>
                     <h4 class="h6 fw-bold text-body-emphasis mb-1">Reality Check</h4>
                     <p class="small text-body-secondary mb-0">
@@ -112,13 +126,15 @@ $pageTitle = "About Engine Room Records";
                     </p>
                 </div>
             </div>
-        </wa-card>
+        
+</div>
+</div>
 
         <!-- RETURN LINK CONTAINER -->
         <div class="text-center border-top border-secondary border-opacity-25 pt-4">
-            <wa-button variant="danger" appearance="outlined" href="https://engineroom.raggiesoft.com/" class="font-monospace text-uppercase fw-bold rounded-0 px-4">
-                <i slot="start" class="fa-solid fa-chevron-left" aria-hidden="true"></i>Return to HQ
-            </wa-button>
+            <a href="https://engineroom.raggiesoft.com/" class="btn btn-error btn-outline font-monospace text-uppercase fw-bold rounded-0 px-4">
+                <i  class="ph-duotone ph-caret-left" aria-hidden="true"></i>Return to HQ
+            </a>
         </div>
 
     </div>

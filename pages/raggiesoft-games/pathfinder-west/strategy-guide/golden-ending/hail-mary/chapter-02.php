@@ -39,7 +39,7 @@ $metaDescription = "Chapter 2 of the Pathfinder West strategy guide. The party d
 
         <p>"Then we aren't stopping at the Richmond terminal to ask questions," Alanna said from the backseat, tracing a line on the Rand McNally atlas. "Take Exit 190. Get onto I-95 South—the old Richmond-Petersburg Turnpike. We can bypass the Appalachian mountains entirely, merge onto I-85, and shoot straight for North Carolina to catch I-40 into Knoxville."</p>
 
-        <p>Roxy nodded, gripping the wheel tighter. They let the disc play in full. When they finally reached Track 15, <em>A Night in Kent</em>, the destination locked into place. Kent. Tanya's aunt lived in Kent, Washington. The West Coast. Roxy felt a cold shiver run down her spine. The New England theory was dead. Tanya was taking him as far away from his support system as physically possible.</p>
+        <p>Roxy nodded, gripping the wheel tighter. They let the disc play in full. When they finally reached Track 15, <em>A Night in Kent</em>, the destination locked into place. Kent. Tanya's aunt lived in Kent, Washington. The West Coast. Roxy felt a cold shiver run down her spine. The New England theory was dead. Tanya was taking him as ph away from his support system as physically possible.</p>
 
         <p>Allison ejected the first disc and slid in <em>Book 2: The Journey Home</em>. Track 1, <em>Curbstone, 4 AM</em>, echoed through the cabin. The song painted a vivid, agonizing picture of the protagonist physically shattered, starving, and locked out in the freezing rain of a Kent neighborhood.</p> 
         
@@ -60,9 +60,11 @@ $metaDescription = "Chapter 2 of the Pathfinder West strategy guide. The party d
 
     <!-- STRATEGY GUIDE NOTES -->
     <!-- START: Gameplay Strategy Notes -->
-    <wa-card class="my-5 shadow-sm">
-        <div slot="header" class="text-primary text-uppercase fw-bold tracking-wider">
-            <i class="fa-solid fa-gamepad me-2"></i> Guide Notes
+    <div class="card bg-base-200 border border-base-300 shadow-sm my-5 shadow-sm">
+<div class="card-body">
+
+        <div class="card-header px-6 pt-5 pb-0" class="text-primary text-uppercase fw-bold tracking-wider">
+            <i class="ph-duotone ph-game-controller me-2"></i> Guide Notes
         </div>
         <ul class="mb-0 lh-lg">
             <li><strong>The Exit 190 Skip:</strong> Decoding the album while driving is a massive tactical advantage. Because <em>Nashville</em> confirms the bus is heading toward Tennessee, you can skip the 30-minute time penalty of investigating the Richmond terminal. Selecting Exit 190 onto I-95 South allows you to bypass the Blue Ridge Mountains entirely.</li>
@@ -70,7 +72,9 @@ $metaDescription = "Chapter 2 of the Pathfinder West strategy guide. The party d
             <li><strong>The Weight Penalty:</strong> Notice the fuel gauge dropping! The "Full Band" party composition (Roxy, Allison, and Alanna) adds significant weight to a standard 2004 sedan. Your fuel efficiency takes a 10-15% hit, forcing an earlier gas stop in North Carolina.</li>
             <li><strong>The Radar Dilemma:</strong> Keep your speed slider in check on I-85 South. Radar detectors cannot be purchased or used until you cross the state line into North Carolina. Once unlocked, you must weigh the high financial cost of the item against the massive reduction in the police encounter RNG for the rest of the game.</li>
         </ul>
-    </wa-card>
+    
+</div>
+</div>
 
     <?php 
     // START: Pagination Configuration

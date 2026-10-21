@@ -31,7 +31,9 @@
                 <p class="text-muted">Last Updated: <?php echo date("F Y"); ?></p>
             </div>
 
-            <wa-card class="card shadow-sm border-0 mb-4 w-100" style="--body-padding: 0; --header-padding: 0;">
+            <div class="card bg-base-200 border border-base-300 shadow-sm card shadow-sm border-0 mb-4 w-100" style="--body-padding: 0; --header-padding: 0;">
+<div class="card-body">
+
                 <div class="card-body p-4 p-lg-5">
                     
                     <h4 class="fw-bold mb-3">1. Acceptance of Terms</h4>
@@ -40,7 +42,7 @@
                     <h4 class="fw-bold mt-5 mb-3">2. Intellectual Property & Licensing</h4>
                     
                     <div class="d-flex gap-3 mb-4 p-3 rounded bg-body-tertiary border">
-                        <div class="fs-2 text-primary"><i class="fa-brands fa-github"></i></div>
+                        <div class="fs-2 text-primary"><i class="ph-duotone ph-github-logo"></i></div>
                         <div>
                             <h5 class="fw-bold mb-1">Source Code: MIT License</h5>
                             <p class="small text-muted mb-0">
@@ -50,7 +52,7 @@
                     </div>
 
                     <div class="d-flex gap-3 mb-4 p-3 rounded bg-body-tertiary border">
-                        <div class="fs-2 text-success"><i class="fa-brands fa-creative-commons"></i></div>
+                        <div class="fs-2 text-success"><i class="ph-duotone ph-copyright"></i></div>
                         <div>
                             <h5 class="fw-bold mb-1">Creative Content: CC BY-SA 4.0</h5>
                             <p class="small text-muted mb-0">
@@ -61,7 +63,7 @@
 
                     <h4 class="fw-bold mt-5 mb-3">3. E-Commerce & Merchandise</h4>
                     <div class="d-flex gap-3 mb-4 p-4 rounded bg-body-tertiary border border-start border-5 border-primary">
-                        <div class="fs-2 text-primary"><i class="fa-solid fa-cart-shopping"></i></div>
+                        <div class="fs-2 text-primary"><i class="ph-duotone ph-shopping-cart"></i></div>
                         <div>
                             <h5 class="fw-bold mb-2">Store Operated by Fourthwall</h5>
                             <p class="text-body mb-3">
@@ -71,16 +73,16 @@
                                 While the storefront operates on my subdomain and features my designs, the transaction, fulfillment, and customer support for those goods are managed entirely by Fourthwall. RaggieSoft assumes no liability for shipping delays, lost packages, or manufacturing defects.
                             </p>
                             <div class="d-flex flex-wrap gap-2">
-                                <wa-button variant="brand" appearance="outlined" size="small" href="https://store.raggiesoft.com/pages/terms-of-service">Terms of Service</wa-button>
-                                <wa-button variant="brand" appearance="outlined" size="small" href="https://store.raggiesoft.com/pages/returns-faq">Returns & FAQ</wa-button>
-                                <wa-button variant="brand" appearance="outlined" size="small" href="https://store.raggiesoft.com/contact">Store Support</wa-button>
+                                <a href="https://store.raggiesoft.com/pages/terms-of-service" class="btn btn-primary btn-outline btn-sm">Terms of Service</a>
+                                <a href="https://store.raggiesoft.com/pages/returns-faq" class="btn btn-primary btn-outline btn-sm">Returns & FAQ</a>
+                                <a href="https://store.raggiesoft.com/contact" class="btn btn-primary btn-outline btn-sm">Store Support</a>
                             </div>
                         </div>
                     </div>
 
                     <h4 class="fw-bold mt-5 mb-3">4. Work of Fiction &amp; Fictitious Entities Disclaimer</h4>
                     <div class="d-flex gap-3 mb-4 p-4 rounded bg-body-tertiary border border-start border-5 border-warning">
-                        <div class="fs-2 text-warning"><i class="fa-solid fa-masks-theater"></i></div>
+                        <div class="fs-2 text-warning"><i class="ph-duotone ph-mask-happy"></i></div>
                         <div>
                             <h5 class="fw-bold mb-2">All Narrative Characters, Bands, Institutions &amp; Events Are Fictitious</h5>
                             <p class="text-body mb-0">
@@ -97,7 +99,9 @@
                     <p>These terms shall be governed by the laws of the <strong>Commonwealth of Virginia</strong> and the United States of America. Any disputes shall be resolved in the courts of Norfolk, Virginia.</p>
                     
                 </div>
-            </wa-card>
+            
+</div>
+</div>
 
         </div>
     </div>

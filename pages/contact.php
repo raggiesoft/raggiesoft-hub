@@ -129,10 +129,12 @@ $imagesJson = htmlspecialchars(json_encode($heroImages), ENT_QUOTES, 'UTF-8');
         <div class="row g-4 justify-content-center">
             
             <div class="col-lg-4">
-                <wa-card class="card force-glass-bg force-border-info h-100 p-4 text-center rounded-4 shadow-lg w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
+                <div class="card bg-base-200 border border-base-300 shadow-sm card force-glass-bg force-border-info h-100 p-4 text-center rounded-4 shadow-lg w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
+<div class="card-body">
+
                     <div class="card-body p-4">
                         <div class="mb-4 force-icon-info">
-                            <i class="fa-duotone fa-microchip-ai fa-4x drop-shadow"></i>
+                            <i class="ph-duotone ph-cpu ph-4x drop-shadow"></i>
                         </div>
                         <h2 class="h3 fw-bold mb-3 force-text-light">Project Inquiry</h2>
                         <p class="force-text-muted mb-4">
@@ -140,31 +142,35 @@ $imagesJson = htmlspecialchars(json_encode($heroImages), ENT_QUOTES, 'UTF-8');
                             the <strong>Elara</strong> router, or the <strong>Suno/Gemini</strong> workflow?
                         </p>
                         <div class="d-grid mt-auto">
-                            <wa-button variant="brand" appearance="accent" size="large" pill href="mailto:connect@michaelpragsdale.com?subject=RaggieSoft: Project Inquiry" class="fw-bold text-dark">
-                                <i slot="start" class="fa-solid fa-paper-plane"></i>Send Message
-                            </wa-button>
+                            <a href="mailto:connect@michaelpragsdale.com?subject=RaggieSoft: Project Inquiry" class="btn btn-primary btn-lg rounded-full fw-bold text-dark">
+                                <i  class="ph-duotone ph-paper-plane"></i>Send Message
+                            </a>
                         </div>
                     </div>
-                </wa-card>
+                
+</div>
+</div>
             </div>
 
             <div class="col-lg-4">
-                <wa-card class="card force-glass-bg force-border-primary h-100 p-4 text-center rounded-4 shadow-lg w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
+                <div class="card bg-base-200 border border-base-300 shadow-sm card force-glass-bg force-border-primary h-100 p-4 text-center rounded-4 shadow-lg w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
+<div class="card-body">
+
                     <div class="card-body d-flex flex-column p-4">
                         <div class="mb-4 force-icon-primary">
-                            <i class="fa-duotone fa-shop fa-4x drop-shadow"></i>
+                            <i class="ph-duotone ph-storefront ph-4x drop-shadow"></i>
                         </div>
                         <h2 class="h3 fw-bold mb-3 force-text-light">Store Support</h2>
                         <p class="force-text-muted mb-4">
                             Questions about merchandise, order status, shipping details, or returns?
                         </p>
                         <div class="d-grid mt-auto">
-                            <wa-button variant="brand" appearance="accent" size="large" pill href="https://store.raggiesoft.com/contact" class="fw-bold shadow-glow force-text-light mb-3">
-                                <i slot="start" class="fa-solid fa-headset"></i>Contact Fourthwall
-                            </wa-button>
-                            <wa-button variant="brand" appearance="outlined" size="small" pill href="https://store.raggiesoft.com/pages/returns-faq" class="fw-bold force-text-light">
-                                <i slot="start" class="fa-solid fa-circle-question"></i> View Returns & FAQ
-                            </wa-button>
+                            <a href="https://store.raggiesoft.com/contact" class="btn btn-primary btn-lg rounded-full fw-bold shadow-glow force-text-light mb-3">
+                                <i  class="ph-duotone ph-headset"></i>Contact Fourthwall
+                            </a>
+                            <a href="https://store.raggiesoft.com/pages/returns-faq" class="btn btn-primary btn-outline btn-sm rounded-full fw-bold force-text-light">
+                                <i  class="ph-duotone ph-question"></i> View Returns & FAQ
+                            </a>
                         </div>
                     </div>
                     <div class="text-center mt-3 d-flex justify-content-center">
@@ -174,95 +180,111 @@ $imagesJson = htmlspecialchars(json_encode($heroImages), ENT_QUOTES, 'UTF-8');
                             </p>
                         </div>
                     </div>
-                </wa-card>
+                
+</div>
+</div>
             </div>
 
             <div class="col-lg-4">
-                <wa-card class="card force-glass-bg force-border-success h-100 p-4 text-center rounded-4 shadow-lg w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
+                <div class="card bg-base-200 border border-base-300 shadow-sm card force-glass-bg force-border-success h-100 p-4 text-center rounded-4 shadow-lg w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
+<div class="card-body">
+
                     <div class="card-body d-flex flex-column p-4">
                         <div class="mb-4 force-icon-success">
-                            <i class="fa-duotone fa-tower-broadcast fa-4x drop-shadow"></i>
+                            <i class="ph-duotone ph-broadcast ph-4x drop-shadow"></i>
                         </div>
                         <h2 class="h3 fw-bold mb-3 force-text-light">DSP & Industry</h2>
                         <p class="force-text-muted mb-4">
                             For <strong>Digital Service Providers</strong> (Spotify, Apple, Amazon) and artist profile verification support.
                         </p>
                         <div class="d-grid mt-auto">
-                            <wa-button variant="success" appearance="accent" size="large" pill href="https://engineroom.raggiesoft.com/dsp-verification" class="fw-bold shadow-glow force-text-light">
-                                <i slot="start" class="fa-solid fa-shield-check"></i>Access DSP Portal
-                            </wa-button>
+                            <a href="https://engineroom.raggiesoft.com/dsp-verification" class="btn btn-success btn-lg rounded-full fw-bold shadow-glow force-text-light">
+                                <i  class="ph-duotone ph-shield-check"></i>Access DSP Portal
+                            </a>
                         </div>
                     </div>
                     <div class="text-center mt-3 d-flex justify-content-center">
                         <div class="force-border-danger px-4 py-2 rounded-pill shadow-sm" style="background-color: rgba(220, 53, 69, 0.15) !important;">
                             <p class="small force-text-light mb-0">
-                                <i class="fa-solid fa-ban me-2 force-text-danger"></i>
+                                <i class="ph-duotone ph-prohibit me-2 force-text-danger"></i>
                                 <strong>Submission Policy:</strong> Engine Room Records is a closed private label. We do not sign artists and do not accept unsolicited demos. Unsolicited audio will be deleted.
                             </p>
                         </div>
                     </div>
-                </wa-card>
+                
+</div>
+</div>
             </div>
             
 
             <div class="col-lg-4">
-                <wa-card class="card force-glass-bg force-border-danger h-100 p-4 text-center rounded-4 shadow-lg w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
+                <div class="card bg-base-200 border border-base-300 shadow-sm card force-glass-bg force-border-danger h-100 p-4 text-center rounded-4 shadow-lg w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
+<div class="card-body">
+
                     <div class="card-body d-flex flex-column p-4">
                         <div class="mb-4 force-icon-danger">
-                            <i class="fa-duotone fa-briefcase fa-4x drop-shadow"></i>
+                            <i class="ph-duotone ph-briefcase ph-4x drop-shadow"></i>
                         </div>
                         <h2 class="h3 fw-bold mb-3 force-text-light">Hiring & Careers</h2>
                         <p class="force-text-muted mb-4">
                             Recruiters looking for a <strong>Systems Architect</strong> or <strong>Full-Stack Developer</strong>.
                         </p>
                         <div class="d-grid mt-auto">
-                            <wa-button variant="danger" appearance="accent" size="large" pill href="https://michaelpragsdale.com/#logistics" class="fw-bold shadow-glow force-text-light mb-3">
-                                <i slot="start" class="fa-duotone fa-id-card-clip"></i>Access Hiring Hub
-                            </wa-button>
-                            <wa-button variant="danger" appearance="outlined" size="small" pill href="https://corporate.raggiesoft.com/careers" class="fw-bold force-text-light">
-                                <i slot="start" class="fa-solid fa-shield-exclamation"></i> Job Scam Warning
-                            </wa-button>
+                            <a href="https://michaelpragsdale.com/#logistics" class="btn btn-error btn-lg rounded-full fw-bold shadow-glow force-text-light mb-3">
+                                <i  class="ph-duotone ph-identification-badge"></i>Access Hiring Hub
+                            </a>
+                            <a href="https://corporate.raggiesoft.com/careers" class="btn btn-error btn-outline btn-sm rounded-full fw-bold force-text-light">
+                                <i  class="ph-duotone ph-shield-warning"></i> Job Scam Warning
+                            </a>
                         </div>
                     </div>
-                </wa-card>
+                
+</div>
+</div>
             </div>
 
             <div class="col-lg-4">
-                <wa-card class="card force-glass-bg force-border-warning h-100 p-4 text-center rounded-4 shadow-lg w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
+                <div class="card bg-base-200 border border-base-300 shadow-sm card force-glass-bg force-border-warning h-100 p-4 text-center rounded-4 shadow-lg w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
+<div class="card-body">
+
                     <div class="card-body d-flex flex-column p-4">
                         <div class="mb-4 force-icon-warning">
-                            <i class="fa-duotone fa-file-signature fa-4x drop-shadow"></i>
+                            <i class="ph-duotone ph-signature ph-4x drop-shadow"></i>
                         </div>
                         <h2 class="h3 fw-bold mb-3 force-text-light">Sync & Licensing</h2>
                         <p class="force-text-muted mb-4">
                             Looking to clear a master recording for film, television, gaming, or commercial broadcast?
                         </p>
                         <div class="d-grid mt-auto">
-                            <wa-button variant="warning" appearance="accent" size="large" pill href="https://corporate.raggiesoft.com/licensing/commercial" class="fw-bold shadow-glow text-dark mb-3">
-                                <i slot="start" class="fa-solid fa-file-contract"></i>Commercial Portal
-                            </wa-button>
-                            <wa-button variant="warning" appearance="outlined" size="small" pill href="https://corporate.raggiesoft.com/licensing" class="fw-bold force-text-light">
-                                <i slot="start" class="fa-solid fa-scale-balanced"></i> General Rights Info
-                            </wa-button>
+                            <a href="https://corporate.raggiesoft.com/licensing/commercial" class="btn btn-warning btn-lg rounded-full fw-bold shadow-glow text-dark mb-3">
+                                <i  class="ph-duotone ph-signature"></i>Commercial Portal
+                            </a>
+                            <a href="https://corporate.raggiesoft.com/licensing" class="btn btn-warning btn-outline btn-sm rounded-full fw-bold force-text-light">
+                                <i  class="ph-duotone ph-scales"></i> General Rights Info
+                            </a>
                         </div>
                     </div>
-                </wa-card>
+                
+</div>
+</div>
             </div>
 
             <div class="col-lg-4">
-                <wa-card class="card force-glass-bg force-border-secondary h-100 p-4 text-center rounded-4 shadow-lg w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
+                <div class="card bg-base-200 border border-base-300 shadow-sm card force-glass-bg force-border-secondary h-100 p-4 text-center rounded-4 shadow-lg w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
+<div class="card-body">
+
                     <div class="card-body d-flex flex-column p-4">
                         <div class="mb-4 force-icon-secondary">
-                            <i class="fa-duotone fa-masks-theater fa-4x drop-shadow"></i>
+                            <i class="ph-duotone ph-mask-happy ph-4x drop-shadow"></i>
                         </div>
                         <h2 class="h3 fw-bold mb-3 force-text-light">Fan Mail & Lore</h2>
                         <p class="force-text-muted mb-4">
                             All musical artists signed to Engine Room Records and all characters within the Ocean View Archives are entirely fictional entities.
                         </p>
                         <div class="d-grid mt-auto">
-                            <wa-button variant="neutral" appearance="accent" size="large" pill href="/about/ai-disclaimer" class="fw-bold shadow-glow force-text-light mb-3">
-                                <i slot="start" class="fa-solid fa-robot-astromech"></i>Read AI Disclaimer
-                            </wa-button>
+                            <a href="/about/ai-disclaimer" class="btn btn-neutral btn-lg rounded-full fw-bold shadow-glow force-text-light mb-3">
+                                <i  class="ph-duotone ph-robot"></i>Read AI Disclaimer
+                            </a>
                         </div>
                     </div>
                     <div class="text-center mt-3 d-flex justify-content-center">
@@ -272,7 +294,9 @@ $imagesJson = htmlspecialchars(json_encode($heroImages), ENT_QUOTES, 'UTF-8');
                             </p>
                         </div>
                     </div>
-                </wa-card>
+                
+</div>
+</div>
             </div>
 
         </div>
@@ -280,7 +304,7 @@ $imagesJson = htmlspecialchars(json_encode($heroImages), ENT_QUOTES, 'UTF-8');
         <div class="text-center mt-5 d-flex justify-content-center">
             <div class="force-glass-bg force-border-default px-4 py-2 rounded-pill shadow-sm">
                 <p class="small force-text-light force-shadow-medium mb-0">
-                    <i class="fa-solid fa-server me-2 force-text-muted"></i>
+                    <i class="ph-duotone ph-hard-drives me-2 force-text-muted"></i>
                     <strong>System Note:</strong> The Hiring Hub provides access to Resume, Salary, and Calendar.
                 </p>
             </div>

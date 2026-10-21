@@ -8,17 +8,17 @@
  * and the creative/narrative side (Creative Works).
  *
  * Below the Y-Junction split hero, the "Global Subdomain Constellations" directory renders
- * a responsive multi-column grid of Web Awesome (`<wa-card with-media with-footer>`) cards
+ * a responsive multi-column grid of DaisyUI 5 (`.card`) cards
  * consolidated to match the top-level RaggieSoft Network Menu (Nebulae, Books, Engine Room,
  * Lore, Corporate, StoreTrainer, Michael P. Ragsdale) plus The DevOps Family. Every card
  * displays the destination property's 16:9 OpenGraph (`og:image`) social preview banner.
  *
  * UI/UX & ACCESSIBILITY ARCHITECTURE (WCAG 2.1 AA / Section 508):
- * - Employs a `.split-hero-container` explicitly scoped with `wa-dark` and `data-bs-theme="dark"`
- *   so that Web Awesome `<wa-button>` components and text inside the dark hero panes always
+ * - Employs a `.split-hero-container` explicitly scoped with `data-theme="dark"` and `data-bs-theme="dark"`
+ *   so that DaisyUI `.btn` components and text inside the dark hero panes always
  *   maintain >= 7:1 contrast regardless of whether the visitor's OS is in Light or Dark mode.
  * - Uses a discoverable, responsive 4-column desktop / 2-column tablet / 1-column mobile
- *   grid of `<wa-card>` components (replacing the retired horizontal scroll container).
+ *   grid of `.card` components (replacing the retired horizontal scroll container).
  * - Respects `prefers-reduced-motion: reduce`, disabling hover zoom, flex expansion, and card
  *   lift animations when reduced motion is requested.
  * - Includes a Schema.org JSON-LD payload for SEO organization and website linking.
@@ -129,15 +129,13 @@ $pageTitle = "RaggieSoft™ | The Central Hub";
     }
 
     /* High-contrast outlined hero buttons on permanent dark background */
-    .split-hero-container wa-button[appearance="outlined"]::part(base),
-    .split-hero-container wa-button[appearance="outlined"]::part(button) {
+    .split-hero-container .btn-outline {
         background-color: rgba(15, 23, 42, 0.85) !important;
         color: #ffffff !important;
         border-color: rgba(255, 255, 255, 0.75) !important;
     }
 
-    .split-hero-container wa-button[appearance="outlined"]:hover::part(base),
-    .split-hero-container wa-button[appearance="outlined"]:hover::part(button) {
+    .split-hero-container .btn-outline:hover {
         background-color: #ffffff !important;
         color: #090d16 !important;
         border-color: #ffffff !important;
@@ -180,7 +178,7 @@ $pageTitle = "RaggieSoft™ | The Central Hub";
     }
 
     /* ==========================================================================
-     * 2. GLOBAL SUBDOMAIN CONSTELLATIONS (<wa-card> Responsive Grid)
+     * 2. GLOBAL SUBDOMAIN CONSTELLATIONS (DaisyUI .card Responsive Grid)
      * ========================================================================== */
     .constellation-grid-row {
         --rg-gutter-x: 1.5rem;
@@ -188,31 +186,21 @@ $pageTitle = "RaggieSoft™ | The Central Hub";
         row-gap: 1.5rem;
     }
 
-    /* Ensure Web Awesome <wa-card> stretches cleanly to equal height across grid columns */
-    wa-card.constellation-wa-card {
+    /* Ensure DaisyUI .card stretches cleanly to equal height across grid columns */
+    .card.constellation-wa-card {
         height: 100%;
         display: flex;
         flex-direction: column;
         transition: transform 0.2s cubic-bezier(0.25, 0.8, 0.25, 1), box-shadow 0.2s ease;
     }
 
-    wa-card.constellation-wa-card:hover {
+    .card.constellation-wa-card:hover {
         transform: translateY(-4px);
         box-shadow: 0 12px 28px rgba(0, 58, 117, 0.14);
     }
 
-    [data-bs-theme="dark"] wa-card.constellation-wa-card:hover {
+    [data-bs-theme="dark"] .card.constellation-wa-card:hover {
         box-shadow: 0 12px 28px rgba(56, 189, 248, 0.14);
-    }
-
-    wa-card.constellation-wa-card::part(body) {
-        flex: 1 1 auto;
-        display: flex;
-        flex-direction: column;
-    }
-
-    wa-card.constellation-wa-card::part(footer) {
-        margin-top: auto;
     }
 
     /* WCAG 2.1 AA High-Contrast Tech Stack Pill Badge (>= 8.5:1 in both Light & Dark Mode) */
@@ -256,7 +244,7 @@ $pageTitle = "RaggieSoft™ | The Central Hub";
         .split-pane,
         .pane-bg,
         .pane-overlay,
-        wa-card.constellation-wa-card {
+        .card.constellation-wa-card {
             transition: none !important;
             transform: none !important;
         }
@@ -285,12 +273,12 @@ $pageTitle = "RaggieSoft™ | The Central Hub";
                 Systems architecture, open-source development, and the professional portfolio of Michael P. Ragsdale.
             </p>
             <div class="d-flex flex-wrap gap-3 justify-content-center mt-auto">
-                <wa-button variant="brand" appearance="accent" size="large" href="https://michaelpragsdale.com" class="rounded-0 fw-bold px-4 shadow-sm text-uppercase">
-                    <i slot="start" class="fa-duotone fa-user-visor"></i> View Portfolio
-                </wa-button>
-                <wa-button variant="neutral" appearance="outlined" size="large" href="https://corporate.raggiesoft.com/" class="rounded-0 fw-bold px-4 shadow-sm text-uppercase">
-                    <i slot="start" class="fa-solid fa-building"></i> RaggieSoft Media
-                </wa-button>
+                <a href="https://michaelpragsdale.com" class="btn btn-primary btn-lg rounded-0 fw-bold px-4 shadow-sm text-uppercase">
+                    <i class="ph-duotone ph-user-focus" aria-hidden="true"></i> View Portfolio
+                </a>
+                <a href="https://corporate.raggiesoft.com/" class="btn btn-neutral btn-outline btn-lg rounded-0 fw-bold px-4 shadow-sm text-uppercase">
+                    <i class="ph-duotone ph-building" aria-hidden="true"></i> RaggieSoft Media
+                </a>
             </div>
         </div>
     </div>
@@ -300,19 +288,19 @@ $pageTitle = "RaggieSoft™ | The Central Hub";
         <div class="pane-overlay"></div>
         
         <div class="pane-content d-flex flex-column align-items-center h-100 justify-content-center">
-            <img src="<?php echo $cdnBaseUrl; ?>/family/images/logos/logo-family.png" alt="Michael and Paige" class="rounded-circle border border-danger border-3 pane-avatar mb-3">
+            <img src="<?php echo $cdnBaseUrl; ?>/raggiesoft-lore/family/images/logos/logo-family.png" alt="Michael and Paige" class="rounded-circle border border-danger border-3 pane-avatar mb-3">
             <h1 class="display-4 fw-bold text-uppercase brand-font hero-title mb-2">Creative Works</h1>
             <h2 class="h5 hero-subtitle-creative mb-4 text-uppercase">Music &amp; Narrative Lore</h2>
             <p class="lead hero-lead mb-4">
                 100% independent audio production and CC BY-SA 4.0 literary universes managed via private imprints.
             </p>
             <div class="d-flex flex-wrap gap-3 justify-content-center mt-auto">
-                <wa-button variant="danger" appearance="accent" size="large" href="https://engineroom.raggiesoft.com/" class="rounded-0 fw-bold px-4 shadow-sm text-uppercase">
-                    <i slot="start" class="fa-solid fa-compact-disc"></i> Engine Room Records
-                </wa-button>
-                <wa-button variant="neutral" appearance="outlined" size="large" href="https://books.raggiesoft.com/" class="rounded-0 fw-bold px-4 shadow-sm text-uppercase">
-                    <i slot="start" class="fa-solid fa-landmark"></i> Ocean View Archives
-                </wa-button>
+                <a href="https://engineroom.raggiesoft.com/" class="btn btn-error btn-lg rounded-0 fw-bold px-4 shadow-sm text-uppercase">
+                    <i  class="ph-duotone ph-disc"></i> Engine Room Records
+                </a>
+                <a href="https://books.raggiesoft.com/" class="btn btn-neutral btn-outline btn-lg rounded-0 fw-bold px-4 shadow-sm text-uppercase">
+                    <i  class="ph-duotone ph-bank"></i> Ocean View Archives
+                </a>
             </div>
         </div>
     </div>
@@ -320,8 +308,9 @@ $pageTitle = "RaggieSoft™ | The Central Hub";
 </section>
 
 <div class="container mt-4 mb-2">
-    <wa-callout variant="brand" appearance="outlined" class="shadow-sm rounded-0 d-block">
-        <i slot="icon" class="fa-duotone fa-robot-astromech text-primary"></i>
+    <div role="alert" class="alert shadow-sm alert-info shadow-sm rounded-0 d-block">
+
+        <i class="shrink-0 text-xl" class="ph-duotone ph-robot text-primary"></i>
         <div>
             <h2 class="alert-heading h6 fw-bold mb-1 text-uppercase letter-spacing-1 text-body">Transparency Notice</h2>
             <p class="mb-0 small text-body">
@@ -329,7 +318,8 @@ $pageTitle = "RaggieSoft™ | The Central Hub";
                 <a href="/about/ai-disclaimer" class="fw-bold text-primary border-bottom border-primary text-decoration-none">Read the full AI Disclaimer.</a>
             </p>
         </div>
-    </wa-callout>
+    
+</div>
 </div>
 
 <section id="network-spokes" class="py-5 bg-body text-body" aria-labelledby="spokes-title">
@@ -337,7 +327,7 @@ $pageTitle = "RaggieSoft™ | The Central Hub";
     
     <div class="text-center border-bottom pb-3 mb-4">
         <h2 id="spokes-title" class="h4 fw-bold text-uppercase text-body mb-1">
-            <i class="fa-duotone fa-network-wired me-2 text-primary"></i>Global Subdomain Constellations
+            <i class="ph-duotone ph-graph me-2 text-primary"></i>Global Subdomain Constellations
         </h2>
         <p class="small text-body-secondary mb-0">
             Direct routing across the RaggieSoft multi-stack ecosystem &mdash; aligned with the global network bar above.
@@ -354,7 +344,7 @@ $pageTitle = "RaggieSoft™ | The Central Hub";
        * 5. The DevOps Family (/family — Paige, Jessica, Harper, Jenna, Sarah, Amanda & Elara)
        *
        * Every card displays its official 16:9 OpenGraph (`og:image`) or hero artwork inside
-       * a standard Web Awesome `<wa-card with-media with-footer>` component.
+       * a standard DaisyUI 5 `.card` component.
        */
       $constellations = [
         [
@@ -369,7 +359,7 @@ $pageTitle = "RaggieSoft™ | The Central Hub";
             'href' => 'https://books.raggiesoft.com/',
             'text' => 'Read Novels',
             'variant' => 'brand',
-            'icon' => 'fa-duotone fa-book-open-cover',
+            'icon' => 'ph-duotone ph-book-open',
             'iconPosition' => 'before',
             'fullWidth' => true
           ]
@@ -386,7 +376,7 @@ $pageTitle = "RaggieSoft™ | The Central Hub";
             'href' => 'https://engineroom.raggiesoft.com/',
             'text' => 'Enter Label Portal',
             'variant' => 'danger',
-            'icon' => 'fa-duotone fa-compact-disc',
+            'icon' => 'ph-duotone ph-disc',
             'iconPosition' => 'before',
             'fullWidth' => true
           ],
@@ -397,7 +387,7 @@ $pageTitle = "RaggieSoft™ | The Central Hub";
               'variant' => 'neutral',
               'appearance' => 'outlined',
               'size' => 'small',
-              'icon' => 'fa-duotone fa-headphones'
+              'icon' => 'ph-duotone ph-headphones'
             ],
             [
               'href' => 'https://stardust.raggiesoft.com/',
@@ -405,7 +395,7 @@ $pageTitle = "RaggieSoft™ | The Central Hub";
               'variant' => 'neutral',
               'appearance' => 'outlined',
               'size' => 'small',
-              'icon' => 'fa-duotone fa-rocket-launch'
+              'icon' => 'ph-duotone ph-rocket-launch'
             ]
           ]
         ],
@@ -421,7 +411,7 @@ $pageTitle = "RaggieSoft™ | The Central Hub";
             'href' => 'https://corporate.raggiesoft.com/',
             'text' => 'Corporate Portal',
             'variant' => 'brand',
-            'icon' => 'fa-duotone fa-building-columns',
+            'icon' => 'ph-duotone ph-bank',
             'iconPosition' => 'before',
             'fullWidth' => true
           ]
@@ -438,13 +428,13 @@ $pageTitle = "RaggieSoft™ | The Central Hub";
             'href' => 'https://michaelpragsdale.com',
             'text' => 'View Dossier',
             'variant' => 'brand',
-            'icon' => 'fa-duotone fa-briefcase',
+            'icon' => 'ph-duotone ph-briefcase',
             'iconPosition' => 'before',
             'fullWidth' => true
           ]
         ],
         [
-          'imgSrc' => $cdnBaseUrl . '/family/images/scenes/paige-michael-hug.jpg',
+          'imgSrc' => $cdnBaseUrl . '/raggiesoft-lore/family/images/scenes/paige-michael-hug.jpg',
           'imgAlt' => 'Paige comforting Michael — The RaggieSoft DevOps Family',
           'fallbackText' => 'The DevOps Family',
           'aspectRatio' => '16:9',
@@ -455,7 +445,7 @@ $pageTitle = "RaggieSoft™ | The Central Hub";
             'href' => 'https://michaelpragsdale.com/build-team',
             'text' => 'Meet the Build Team',
             'variant' => 'brand',
-            'icon' => 'fa-duotone fa-heart-pulse',
+            'icon' => 'ph-duotone ph-heartbeat',
             'iconPosition' => 'before',
             'fullWidth' => true
           ]
@@ -475,7 +465,9 @@ $pageTitle = "RaggieSoft™ | The Central Hub";
     </div>
 
     <div class="mt-5">
-      <wa-card appearance="outlined" class="shadow-sm">
+      <div class="card bg-base-200 border border-base-300 shadow-sm shadow-sm">
+<div class="card-body">
+
         <div class="d-flex flex-column flex-md-row align-items-md-center justify-content-between gap-3 p-2">
           <div>
             <span class="constellation-stack-badge mb-2">Stardust Engine CMS (Elara) &bull; Open-Source MIT Framework</span>
@@ -485,15 +477,17 @@ $pageTitle = "RaggieSoft™ | The Central Hub";
             </p>
           </div>
           <div class="flex-shrink-0 d-flex flex-wrap gap-2">
-            <wa-button variant="brand" appearance="accent" href="https://github.com/raggiesoft/stardust-engine-cms">
-              <i slot="start" class="fa-brands fa-github"></i> View on GitHub
-            </wa-button>
-            <wa-button variant="neutral" appearance="outlined" href="https://corporate.raggiesoft.com/open-source/stardust-engine">
-              <i slot="start" class="fa-duotone fa-book-sparkles"></i> Architecture Docs
-            </wa-button>
+            <a href="https://github.com/raggiesoft/stardust-engine-cms" class="btn btn-primary">
+              <i  class="ph-duotone ph-github-logo"></i> View on GitHub
+            </a>
+            <a href="https://corporate.raggiesoft.com/open-source/stardust-engine" class="btn btn-neutral btn-outline">
+              <i  class="ph-duotone ph-book-open-text"></i> Architecture Docs
+            </a>
           </div>
         </div>
-      </wa-card>
+      
+</div>
+</div>
     </div>
 
   </div>

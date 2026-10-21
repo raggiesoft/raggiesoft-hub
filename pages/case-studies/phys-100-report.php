@@ -18,7 +18,9 @@ $alienTargets = fetch_nasa_distance();
 $currentYear = date("Y");
 ?>
 
-<wa-card class="card border-primary mb-4 w-100" style="--body-padding: 0; --header-padding: 0;">
+<div class="card bg-base-200 border border-base-300 shadow-sm card border-primary mb-4 w-100" style="--body-padding: 0; --header-padding: 0;">
+<div class="card-body">
+
     <div class="card-header bg-primary text-white p-3">
         Live Signal Simulation (Data Source: NASA Exoplanet Archive)
     </div>
@@ -44,4 +46,6 @@ $currentYear = date("Y");
             </div>
         <?php endforeach; ?>
     </div>
-</wa-card>
+
+</div>
+</div>

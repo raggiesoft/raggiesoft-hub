@@ -31,7 +31,7 @@
                     Digital craftsmanship since 1997.<br> Specializing in narrative-driven experiences and systems architecture.
                 </p>
                 <div class="small  mt-3">
-                    <i class="fa-solid fa-location-dot me-1"></i> Norfolk, VA &bull; Est. 2008
+                    <i class="ph-duotone ph-map-pin me-1"></i> Norfolk, VA &bull; Est. 2008
                 </div>
             </div>
 
@@ -53,16 +53,16 @@
                     <li class="nav-item mb-2"><span class="nav-link p-0 text-body-secondary">PHP 8.5 (Elara CMS)</span></li>
                     <li class="nav-item mb-2"><span class="nav-link p-0 text-body-secondary">Web Awesome Pro</span></li>
                     <li class="nav-item mb-2"><span class="nav-link p-0 text-body-secondary">FontAwesome Pro</span></li>
-                    <li class="nav-item mt-3"><a href="https://engineroom.raggiesoft.com/jessica-miller-center" class="nav-link p-0 text-primary fw-bold"><i class="fa-solid fa-universal-access me-1"></i> Accessibility</a></li>
+                    <li class="nav-item mt-3"><a href="https://engineroom.raggiesoft.com/jessica-miller-center" class="nav-link p-0 text-primary fw-bold"><i class="ph-duotone ph-person-arms-spread me-1"></i> Accessibility</a></li>
                 </ul>
             </div>
 
             <div class="col-lg-4 col-md-6 text-md-end">
                 <h6 class="fw-bold mb-3">Connect</h6>
                 <div class="d-flex justify-content-md-end gap-3">
-                    <a href="https://github.com/raggiesoft" class="link-secondary fs-5" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
-                    <a href="https://linkedin.com/in/michael-ragsdale-raggiesoft" class="link-secondary fs-5" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="mailto:hireme@michaelpragsdale.com" class="link-secondary fs-5" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+                    <a href="https://github.com/raggiesoft" class="link-secondary fs-5" aria-label="GitHub"><i class="ph-duotone ph-github-logo"></i></a>
+                    <a href="https://linkedin.com/in/michael-ragsdale-raggiesoft" class="link-secondary fs-5" aria-label="LinkedIn"><i class="ph-duotone ph-linkedin-logo"></i></a>
+                    <a href="mailto:hireme@michaelpragsdale.com" class="link-secondary fs-5" aria-label="Email"><i class="ph-duotone ph-envelope"></i></a>
                 </div>
             </div>
         </div>
@@ -74,7 +74,7 @@
 // Different reward for the main site!
 $konami_config = [
     'title'      => 'System Admin Access',
-    'icon'       => 'fa-solid fa-terminal',
+    'icon'       => 'ph-duotone ph-terminal',
     'theme'      => '#0d6efd', // Web Awesome Pro Blue
     'text_color' => '#ffffff',
     'image'      => '',        // No image for this one, just text

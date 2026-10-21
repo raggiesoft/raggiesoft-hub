@@ -49,7 +49,7 @@ if ($is_standalone) {
         <div class="col-lg-8">
             
             <div class="mb-4">
-                <i class="fa-duotone fa-tower-broadcast display-1 text-warning opacity-75"></i>
+                <i class="ph-duotone ph-broadcast display-1 text-warning opacity-75"></i>
             </div>
 
             <h1 class="display-1 fw-bold text-warning text-shadow-warning mb-0" style="font-family: 'Impact', sans-serif; letter-spacing: 5px;">
@@ -59,9 +59,11 @@ if ($is_standalone) {
                 <span class="text-warning">>></span> BAD GATEWAY
             </h2>
             
-            <wa-card class="terminal-card border-warning text-start mb-5 mx-auto w-100" style="max-width: 600px;">
+            <div class="card bg-base-200 border border-base-300 shadow-sm terminal-card border-warning text-start mb-5 mx-auto w-100" style="max-width: 600px;">
+<div class="card-body">
+
                 <div class="terminal-header text-warning">
-                    <i class="fa-duotone fa-triangle-exclamation me-2"></i>
+                    <i class="ph-duotone ph-warning me-2"></i>
                     Network Error // Relay Station Alpha
                 </div>
                 <div class="terminal-text text-light">
@@ -72,15 +74,17 @@ if ($is_standalone) {
                         This usually indicates a temporary glitch in the sub-space network. The signal is garbled. Please try refreshing your connection.
                     </p>
                 </div>
-            </wa-card>
+            
+</div>
+</div>
             
             <div class="d-flex justify-content-center gap-3 flex-wrap">
-                <wa-button href="/" variant="neutral" appearance="outlined" pill>
-                    <i slot="start" class="fa-duotone fa-rotate-right"></i>Retry Uplink
-                </wa-button>
-                <wa-button href="/contact" variant="warning" appearance="accent" pill class="shadow-glow">
-                    <i slot="start" class="fa-duotone fa-envelope"></i>Contact Flight Control
-                </wa-button>
+                <a href="/" class="btn btn-neutral btn-outline rounded-full">
+                    <i  class="ph-duotone fa-rotate-right"></i>Retry Uplink
+                </a>
+                <a href="/contact" class="btn btn-warning rounded-full shadow-glow">
+                    <i  class="ph-duotone ph-envelope"></i>Contact Flight Control
+                </a>
             </div>
 
         </div>

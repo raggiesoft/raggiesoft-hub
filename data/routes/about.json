@@ -55,7 +55,7 @@
     "showSidebar": true,
     "navbarBrandText": "The Family",
     "navbarBrandLink": "/family",
-    "navbarBrandLogo": "/family/images/logos/logo-family.png",
+    "navbarBrandLogo": "/raggiesoft-lore/family/images/logos/logo-family.png",
     "navbarBrandAlt": "The RaggieSoft Family Crest",
     "brandFont": ["Roboto", "sans-serif"]
   },
@@ -84,7 +84,7 @@
     "showSidebar": true,
     "navbarBrandText": "The Silver Gauntlet",
     "navbarBrandLink": "https://books.raggiesoft.com/read/the-silver-gauntlet-of-aethel",
-    "navbarBrandLogo": "/aethel/images/logos/silver-gauntlet-of-aethel-logo.png",
+    "navbarBrandLogo": "/raggiesoft-books/aethel/images/logos/silver-gauntlet-of-aethel-logo.png",
     "navbarBrandAlt": "Silver Gauntlet of Aethel Logo",
     "brandFont": ["Cinzel", "serif"]
   },

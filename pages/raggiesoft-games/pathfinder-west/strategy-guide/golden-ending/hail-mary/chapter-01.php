@@ -71,16 +71,20 @@ $metaDescription = "Chapter 1 of the Pathfinder West strategy guide. Roxy, Allis
     </article>
 
     <!-- STRATEGY GUIDE NOTES -->
-    <wa-card class="my-5 shadow-sm">
-        <div slot="header" class="text-primary text-uppercase fw-bold tracking-wider">
-            <i class="fa-solid fa-gamepad me-2"></i> Guide Notes
+    <div class="card bg-base-200 border border-base-300 shadow-sm my-5 shadow-sm">
+<div class="card-body">
+
+        <div class="card-header px-6 pt-5 pb-0" class="text-primary text-uppercase fw-bold tracking-wider">
+            <i class="ph-duotone ph-game-controller me-2"></i> Guide Notes
         </div>
         <ul class="mb-0 lh-lg">
             <li><strong>The Audio Cipher:</strong> If you do not pick up <em>Static &amp; Silence</em> here (where it is completely free), you may buy it at a truck stop later for a costly $25.</li>
             <li><strong>The Mystery Track:</strong> If you examine the CD case, you might notice that track 15, "A Night in Kent", is circled. I wonder why that specific song is highlighted? Could it mean something?</li>
             <li><strong>The Island 1 Turnaround:</strong> By choosing to stop and turn around at Island 1, the girls successfully avoid paying the punishing $5 return trip toll that triggers if you cross the entire span to the Eastern Shore.</li>
         </ul>
-    </wa-card>
+    
+</div>
+</div>
 
     <?php 
     // SETUP THE NARRATIVE STEPPER

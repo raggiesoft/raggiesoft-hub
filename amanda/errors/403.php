@@ -46,7 +46,7 @@ if ($is_standalone) {
         <div class="col-lg-8">
             
             <div class="mb-4">
-                <i class="fa-duotone fa-shield-xmark display-1 text-warning opacity-75"></i>
+                <i class="ph-duotone ph-shield-slash display-1 text-warning opacity-75"></i>
             </div>
 
             <h1 class="display-1 fw-bold text-warning text-shadow-warning mb-0" style="font-family: 'Impact', sans-serif; letter-spacing: 5px;">
@@ -57,9 +57,11 @@ if ($is_standalone) {
             </h2>
             
             <!-- START: 403 Terminal Narrative Context -->
-            <wa-card class="terminal-card border-warning text-start mb-5 mx-auto w-100" style="max-width: 600px;">
+            <div class="card bg-base-200 border border-base-300 shadow-sm terminal-card border-warning text-start mb-5 mx-auto w-100" style="max-width: 600px;">
+<div class="card-body">
+
                 <div class="terminal-header text-warning">
-                    <i class="fa-duotone fa-fingerprint me-2"></i>
+                    <i class="ph-duotone ph-fingerprint me-2"></i>
                     Security Violation // Port Telsus Grid
                 </div>
                 <div class="terminal-text text-light">
@@ -70,16 +72,18 @@ if ($is_standalone) {
                         Your IP address has been flagged by the <strong>Port Telsus Compliance Division</strong>. This incident has been added to your permanent record. If you are authorized, present your identification token at the nearest checkpoint immediately.
                     </p>
                 </div>
-            </wa-card>
+            
+</div>
+</div>
             
             <!-- START: 403 Safe Escape Actions -->
             <div class="d-flex justify-content-center gap-3 flex-wrap">
-                <wa-button href="/" variant="neutral" appearance="outlined" pill>
-                    <i slot="start" class="fa-duotone fa-house"></i>Return to Safety
-                </wa-button>
-                <wa-button href="/contact" variant="warning" appearance="accent" pill class="shadow-glow">
-                    <i slot="start" class="fa-duotone fa-id-card"></i>Request Clearance
-                </wa-button>
+                <a href="/" class="btn btn-neutral btn-outline rounded-full">
+                    <i  class="ph-duotone ph-house"></i>Return to Safety
+                </a>
+                <a href="/contact" class="btn btn-warning rounded-full shadow-glow">
+                    <i  class="ph-duotone ph-identification-card"></i>Request Clearance
+                </a>
             </div>
 
         </div>

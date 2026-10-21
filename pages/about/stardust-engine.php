@@ -48,17 +48,19 @@ $customPageAssets = [
             </h1>
             <p class="lead text-info mb-0">Project: The Stardust Engine</p>
         </div>
-        <wa-button variant="neutral" appearance="outlined" size="small" pill href="https://michaelpragsdale.com">
-            <i slot="start" class="fa-solid fa-arrow-left"></i>Back to Portfolio Hub
-        </wa-button>
+        <a href="https://michaelpragsdale.com" class="btn btn-neutral btn-outline btn-sm rounded-full">
+            <i  class="ph-duotone ph-arrow-left"></i>Back to Portfolio Hub
+        </a>
     </div>
 
     <div class="row g-5 mb-5">
         
         <div class="col-lg-6">
-            <wa-card class="card glass-card h-100 border-secondary w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
+            <div class="card bg-base-200 border border-base-300 shadow-sm card glass-card h-100 border-secondary w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
+<div class="card-body">
+
                 <div class="card-header bg-transparent border-secondary text-warning fw-bold text-uppercase py-3">
-                    <i class="fa-duotone fa-planet-ringed me-2"></i> Layer 1: The Universe
+                    <i class="ph-duotone ph-planet me-2"></i> Layer 1: The Universe
                 </div>
                 <div class="card-body text-light p-4">
                     <h3 class="h4 text-light mb-3" style="font-family: 'Audiowide', cursive;">In-Universe Archive</h3>
@@ -68,17 +70,21 @@ $customPageAssets = [
                     <p>
                         The narrative follows their struggle against the corporate monolith <strong>Apex Records</strong>, their retreat to the "Fortress," and their eventual broadcast from <strong>Port Telsus</strong>.
                     </p>
-                    <wa-button variant="warning" appearance="outlined" size="small" href="https://stardust.raggiesoft.com/band" class="mt-2">
-                        <i slot="start" class="fa-duotone fa-book-open"></i>Enter The Archive
-                    </wa-button>
+                    <a href="https://stardust.raggiesoft.com/band" class="btn btn-warning btn-outline btn-sm mt-2">
+                        <i  class="ph-duotone ph-book-open"></i>Enter The Archive
+                    </a>
                 </div>
-            </wa-card>
+            
+</div>
+</div>
         </div>
 
         <div class="col-lg-6">
-            <wa-card class="card glass-card h-100 border-info shadow-glow w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
+            <div class="card bg-base-200 border border-base-300 shadow-sm card glass-card h-100 border-info shadow-glow w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
+<div class="card-body">
+
                 <div class="card-header bg-transparent border-info text-info fw-bold text-uppercase py-3">
-                    <i class="fa-duotone fa-code-branch me-2"></i> Layer 2: The Project
+                    <i class="ph-duotone ph-git-branch me-2"></i> Layer 2: The Project
                 </div>
                 <div class="card-body text-light p-4">
                     <h3 class="h4 text-light mb-3" style="font-family: 'Audiowide', cursive;">AI Collaboration</h3>
@@ -88,72 +94,90 @@ $customPageAssets = [
                     <p>
                         It serves as a portfolio piece demonstrating how AI can be used not just to generate assets, but to build cohesive, emotionally resonant worlds.
                     </p>
-                    <wa-button variant="brand" appearance="outlined" size="small" href="https://michaelpragsdale.com/#logistics" class="mt-2">
-                        <i slot="start" class="fa-duotone fa-id-card"></i>Contact the Director
-                    </wa-button>
+                    <a href="https://michaelpragsdale.com/#logistics" class="btn btn-primary btn-outline btn-sm mt-2">
+                        <i  class="ph-duotone ph-identification-card"></i>Contact the Director
+                    </a>
                 </div>
-            </wa-card>
+            
+</div>
+</div>
         </div>
 
     </div>
 
     <div class="mb-5">
         <h2 class="display-6 fw-bold text-uppercase text-light border-bottom border-secondary pb-3 mb-4">
-            <i class="fa-duotone fa-users-viewfinder me-3 text-secondary"></i>Crew Manifest
+            <i class="ph-duotone ph-users-four me-3 text-secondary"></i>Crew Manifest
         </h2>
 
         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
             
             <div class="col">
-                <wa-card class="card glass-card h-100 text-center p-4 border-info border-opacity-50 w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
+                <div class="card bg-base-200 border border-base-300 shadow-sm card glass-card h-100 text-center p-4 border-info border-opacity-50 w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
+<div class="card-body">
+
                     <div class="mb-3">
-                        <i class="fa-duotone fa-user-astronaut fa-5x text-info"></i>
+                        <i class="ph-duotone ph-user-focus ph-5x text-info"></i>
                     </div>
                     <h4 class="h5 text-light fw-bold">Michael Ragsdale</h4>
-                    <wa-badge variant="brand" appearance="accent" class="mb-2">FLIGHT DIRECTOR</wa-badge>
+                    <span class="badge badge-primary mb-2">FLIGHT DIRECTOR</span>
                     <p class="small mb-0">
                         Concept, Direction, Coding, & Curation. The human element that guides the machine.
                     </p>
-                </wa-card>
+                
+</div>
+</div>
             </div>
 
             <div class="col">
-                <wa-card class="card glass-card h-100 text-center p-4 border-secondary w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
+                <div class="card bg-base-200 border border-base-300 shadow-sm card glass-card h-100 text-center p-4 border-secondary w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
+<div class="card-body">
+
                     <div class="mb-3">
-                        <i class="fa-duotone fa-brain-circuit fa-5x text-primary"></i>
+                        <i class="ph-duotone ph-brain ph-5x text-primary"></i>
                     </div>
                     <h4 class="h5 text-light fw-bold">Google Gemini</h4>
-                    <wa-badge variant="brand" appearance="accent" class="mb-2">NAV & VISUALS</wa-badge>
+                    <span class="badge badge-primary mb-2">NAV & VISUALS</span>
                     <p class="small mb-0">
                         Lore Generation, Code Assistance, and Historical Photography (via Nano Banana).
                     </p>
-                </wa-card>
+                
+</div>
+</div>
             </div>
 
             <div class="col">
-                <wa-card class="card glass-card h-100 text-center p-4 border-secondary w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
+                <div class="card bg-base-200 border border-base-300 shadow-sm card glass-card h-100 text-center p-4 border-secondary w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
+<div class="card-body">
+
                     <div class="mb-3">
-                        <i class="fa-duotone fa-waveform-lines fa-5x text-warning"></i>
+                        <i class="ph-duotone ph-waveform ph-5x text-warning"></i>
                     </div>
                     <h4 class="h5 text-light fw-bold">Suno AI</h4>
-                    <wa-badge variant="warning" appearance="accent" class="mb-2">ENGINE CORE</wa-badge>
+                    <span class="badge badge-warning mb-2">ENGINE CORE</span>
                     <p class="small mb-0">
                         Audio Synthesis, Composition, and Vocal Performance.
                     </p>
-                </wa-card>
+                
+</div>
+</div>
             </div>
 
             <div class="col">
-                <wa-card class="card glass-card h-100 text-center p-4 border-secondary w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
+                <div class="card bg-base-200 border border-base-300 shadow-sm card glass-card h-100 text-center p-4 border-secondary w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
+<div class="card-body">
+
                     <div class="mb-3">
-                        <i class="fa-duotone fa-palette fa-5x text-danger"></i>
+                        <i class="ph-duotone ph-palette ph-5x text-danger"></i>
                     </div>
                     <h4 class="h5 text-light fw-bold">DALL-E 3</h4>
-                    <wa-badge variant="danger" appearance="accent" class="mb-2">ART DEPT</wa-badge>
+                    <span class="badge badge-error mb-2">ART DEPT</span>
                     <p class="small mb-0">
                         Album Artwork, Conceptual Design, and Atmospheric Visuals.
                     </p>
-                </wa-card>
+                
+</div>
+</div>
             </div>
 
         </div>
