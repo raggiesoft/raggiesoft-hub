@@ -80,6 +80,11 @@ $isContact     = str_starts_with($request_uri, '/contact');
         </a>
       </li>
       <li>
+        <a href="https://engineroom.raggiesoft.com/isrc">
+          <i class="ph-duotone ph-barcode text-success" aria-hidden="true"></i> Official ISRC Registry (QTAHP)
+        </a>
+      </li>
+      <li>
         <a href="https://stardust.raggiesoft.com/">
           <i class="ph-duotone ph-rocket-launch text-primary" aria-hidden="true"></i> The Stardust Engine
         </a>
