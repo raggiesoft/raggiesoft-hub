@@ -13,7 +13,8 @@
  * KEY DISCLOSURES:
  * 1. Natural-Person Data Controller: Identifies Michael P. Ragsdale (operating
  *    under the unincorporated creative imprints RaggieSoft, RaggieSoft Media,
- *    and Engine Room Records in Norfolk, Virginia) as the sole operator.
+ *    Engine Room Records, and Ocean View Archives in Norfolk, Virginia) as the
+ *    sole operator.
  * 2. Hardcoded Git-Verifiable Dates: Uses explicit static Effective & Last
  *    Updated dates + public changelog instead of dynamic PHP date("F Y").
  * 3. Zero-Database / Zero-Account Architecture: Confirms that the Network has
@@ -58,7 +59,7 @@
                             Welcome to the <strong>RaggieSoft</strong> network (including <code>raggiesoft.com</code>, <code>music.raggiesoft.com</code>, <code>books.raggiesoft.com</code>, <code>engineroom.raggiesoft.com</code>, <code>stardust.raggiesoft.com</code>, <code>corporate.raggiesoft.com</code>, <code>lore.raggiesoft.com</code>, <code>nebulae.raggiesoft.com</code>, <code>storetrainer.raggiesoft.com</code>, <code>backstage.raggiesoft.com</code>, and <code>michaelpragsdale.com</code>, collectively the <strong>&ldquo;Network&rdquo;</strong>).
                         </p>
                         <p>
-                            The Network is owned and operated by <strong>Michael P. Ragsdale</strong>, an individual residing in Norfolk, Virginia, operating under the unincorporated creative imprints <strong>RaggieSoft</strong>, <strong>RaggieSoft Media</strong>, and <strong>Engine Room Records</strong> (without &ldquo;LLC&rdquo;). All websites in the Network are engineered using a <strong>100% static, flat-file, Zero-Database Architecture</strong>. There are no user registration accounts, no password databases, no comment sections, and no behavioral ad-broker profiles anywhere on the Network.
+                            The Network is owned and operated by <strong>Michael P. Ragsdale</strong>, an individual residing in Norfolk, Virginia, operating under the unincorporated creative imprints <strong>RaggieSoft</strong>, <strong>RaggieSoft Media</strong>, <strong>Engine Room Records</strong> (music imprint), and <strong>Ocean View Archives</strong> (literary/book publishing imprint)—each strictly without &ldquo;LLC,&rdquo; &ldquo;Inc.,&rdquo; or &ldquo;Corp.&rdquo; All websites in the Network are engineered using a <strong>100% static, flat-file, Zero-Database Architecture</strong>. There are no user registration accounts, no password databases, no comment sections, and no behavioral ad-broker profiles anywhere on the Network.
                         </p>
                     </section>
 
