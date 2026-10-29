@@ -56,6 +56,10 @@ $currentUri = $_SERVER['REQUEST_URI'] ?? '';
     <a href="/about/aethel" class="btn btn-sm <?= str_contains($currentUri, '/aethel') ? 'btn-primary' : 'btn-ghost' ?> w-100 text-start justify-content-start" style="text-align: left;">
         <i class="ph-duotone ph-sword" aria-hidden="true"></i> Aethel Saga
     </a>
+
+    <a href="/in-memoriam" class="btn btn-sm <?= str_contains($currentUri, '/in-memoriam') ? 'btn-primary' : 'btn-ghost' ?> w-100 text-start justify-content-start" style="text-align: left;">
+        <i class="ph-duotone ph-shooting-star" aria-hidden="true"></i> Cosmic Dedication
+    </a>
 </div>
 
 <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-2 mb-2 text-body-secondary text-uppercase" style="font-size: 0.75rem; letter-spacing: 1px;">

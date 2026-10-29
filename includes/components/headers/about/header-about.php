@@ -93,6 +93,12 @@ $isProfiles   = (!$isGovernance && $uri !== '/about');
           <i class="ph-duotone ph-sword" aria-hidden="true"></i>The Aethel Saga
         </a>
       </li>
+      <li><hr class="my-1 border-base-300"></li>
+      <li>
+        <a href="/in-memoriam">
+          <i class="ph-duotone ph-shooting-star text-warning" aria-hidden="true"></i>In Memoriam (Ad Astra)
+        </a>
+      </li>
     </ul>
   </details>
 

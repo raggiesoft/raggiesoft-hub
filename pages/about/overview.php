@@ -215,7 +215,7 @@ $imagesJson = htmlspecialchars(json_encode($heroImages), ENT_QUOTES, 'UTF-8');
                             <span class="small text-white-50">Compliance & Legal</span>
                         </div>
 
-                        <div class="d-flex gap-3 gap-md-4">
+                        <div class="d-flex flex-wrap justify-content-center gap-3 gap-md-4">
                             <a href="https://corporate.raggiesoft.com/licensing" class="text-white-50 text-decoration-none hover-text-white transition-all">
                                 <i class="ph-duotone ph-certificate me-1"></i> Licenses
                             </a>
@@ -224,6 +224,9 @@ $imagesJson = htmlspecialchars(json_encode($heroImages), ENT_QUOTES, 'UTF-8');
                             </a>
                             <a href="/about/terms" class="text-white-50 text-decoration-none hover-text-white transition-all">
                                 <i class="ph-duotone ph-gavel me-1"></i> Terms
+                            </a>
+                            <a href="/in-memoriam" class="text-warning text-decoration-none hover-text-white transition-all fw-bold">
+                                <i class="ph-duotone ph-shooting-star me-1"></i> Cosmic Dedication (Ad Astra)
                             </a>
                         </div>
 

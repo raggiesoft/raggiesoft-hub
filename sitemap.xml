@@ -16,6 +16,9 @@
     <loc>https://raggiesoft.com/contact</loc>
   </url>
   <url>
+    <loc>https://raggiesoft.com/in-memoriam</loc>
+  </url>
+  <url>
     <loc>https://raggiesoft.com/api/lore</loc>
   </url>
   <url>
@@ -53,6 +56,9 @@
   </url>
   <url>
     <loc>https://raggiesoft.com/about/terms</loc>
+  </url>
+  <url>
+    <loc>https://raggiesoft.com/about/in-memoriam</loc>
   </url>
   <url>
     <loc>https://raggiesoft.com/apps/cipher</loc>

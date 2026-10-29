@@ -308,6 +308,32 @@ $pageTitle = "RaggieSoft™ | The Central Hub";
 </section>
 
 <div class="container mt-4 mb-2">
+    <?php
+    /**
+     * AUTO-EXPIRING 30-DAY IN MEMORIAM CALLOUT (Through November 28, 2026)
+     * Automatically hides itself on 2026-11-29 and beyond even if not manually removed.
+     */
+    if (date('Y-m-d') <= '2026-11-28'):
+    ?>
+    <div class="card mb-3 border shadow-sm" style="background: linear-gradient(90deg, #040711 0%, #0b132b 50%, #040711 100%); border-color: rgba(251, 191, 36, 0.55) !important; color: #f8fafc;" data-bs-theme="dark">
+        <div class="card-body py-3 px-4 d-flex flex-column flex-md-row align-items-md-center justify-content-between gap-3">
+            <div>
+                <div class="small fw-bold text-uppercase mb-1" style="color: #fde68a; letter-spacing: 0.06em;">
+                    <i class="ph-duotone ph-shooting-star me-1" aria-hidden="true"></i> Second Star to the Right &bull; In Memoriam (1940&ndash;2026)
+                </div>
+                <p class="mb-0 small" style="color: #e2e8f0;">
+                    Honoring <strong>Sir Patrick Stewart</strong> (July 13, 1940 &ndash; October 28, 2026)&mdash;the Captain of the <em>NCC-1701-D</em> who taught a kid watching weeknight television with his family to look up at the cosmos and wonder what is out there, inspiring <strong>The Stardust Engine</strong>, <em>&ldquo;Escape Velocity (Ad Astra),&rdquo;</em> and <em>The Twin Moons</em>.
+                </p>
+            </div>
+            <div class="flex-shrink-0">
+                <a href="/in-memoriam" class="btn btn-warning btn-sm fw-bold text-nowrap">
+                    <i class="ph-duotone ph-book-open-text me-1" aria-hidden="true"></i> Read Creator&rsquo;s Tribute
+                </a>
+            </div>
+        </div>
+    </div>
+    <?php endif; ?>
+
     <div role="alert" class="alert alert-info shadow-sm rounded-0 d-flex align-items-start gap-3">
         <i class="ph-duotone ph-robot text-primary fs-3 shrink-0 mt-1" aria-hidden="true"></i>
         <div>
@@ -480,6 +506,9 @@ $pageTitle = "RaggieSoft™ | The Central Hub";
             </a>
             <a href="https://corporate.raggiesoft.com/open-source/stardust-engine" class="btn btn-neutral btn-outline">
               <i  class="ph-duotone ph-book-open-text"></i> Architecture Docs
+            </a>
+            <a href="/in-memoriam" class="btn btn-neutral btn-outline">
+              <i class="ph-duotone ph-shooting-star" aria-hidden="true"></i> Cosmic Dedication (Ad Astra)
             </a>
           </div>
         </div>

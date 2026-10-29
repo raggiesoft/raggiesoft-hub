@@ -43,6 +43,7 @@
                     <li class="nav-item mb-2"><a href="https://corporate.raggiesoft.com/" class="nav-link p-0 text-body-secondary">RaggieSoft Media</a></li>
                     <li class="nav-item mb-2"><a href="https://nebulae.raggiesoft.com/" class="nav-link p-0 text-body-secondary">Nebulae Observatory</a></li>
                     <li class="nav-item mb-2"><a href="/family" class="nav-link p-0 text-body-secondary">The DevOps Family</a></li>
+                    <li class="nav-item mb-2"><a href="/in-memoriam" class="nav-link p-0 text-body-secondary"><i class="ph-duotone ph-shooting-star me-1" aria-hidden="true"></i>In Memoriam (Ad Astra)</a></li>
                 </ul>
             </div>
 
