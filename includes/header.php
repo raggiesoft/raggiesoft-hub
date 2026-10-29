@@ -93,6 +93,8 @@ if (isset($customPageAssets) && is_array($customPageAssets)) {
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Modern Web Guidance (dark-mode): Declare support for both light and dark themes -->
+    <meta name="color-scheme" content="light dark">
     
     <title><?php echo htmlspecialchars($pageTitle ?? 'RaggieSoft'); ?></title>
     <meta name="description" content="<?php echo htmlspecialchars($ogDescription ?? ''); ?>">
@@ -214,10 +216,10 @@ if (isset($customPageAssets) && is_array($customPageAssets)) {
 
     <!-- Self-Hosted DaisyUI 5 & Phosphor Icons (Served via assets.raggiesoft.com) -->
     <?php foreach ($css_load_queue as $cssUrl): ?>
-        <link href="<?php echo $cssUrl . (str_contains($cssUrl, '?') ? '&' : '?') . 'v=20261021c'; ?>" rel="stylesheet">
+        <link href="<?php echo $cssUrl . (str_contains($cssUrl, '?') ? '&' : '?') . 'v=20261029b'; ?>" rel="stylesheet">
     <?php endforeach; ?>    
 
-    <link rel="stylesheet" href="<?php echo $cdn_root; ?>/fonts/phosphor/phosphor.min.css?v=20261021c">
+    <link rel="stylesheet" href="<?php echo $cdn_root; ?>/fonts/phosphor/phosphor.min.css?v=20261029b">
 
     <?php foreach ($critical_images as $imgUrl): ?>
         <?php if($imgUrl): ?><link rel="preload" as="image" href="<?php echo $imgUrl; ?>"><?php endif; ?>
@@ -236,7 +238,7 @@ if (isset($customPageAssets) && is_array($customPageAssets)) {
     <meta name="msapplication-config" content="<?php echo $cdn_root; ?>/common/images/favicons/browserconfig.xml">
     
     <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
-    <meta name="theme-color" content="#121212" media="(prefers-color-scheme: dark)">
+    <meta name="theme-color" content="#0b0f19" media="(prefers-color-scheme: dark)">
     
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
@@ -442,7 +444,7 @@ if (isset($customPageAssets) && is_array($customPageAssets)) {
     </style>
 </head>
   
-  <body class="d-flex flex-column h-100">
+  <body class="d-flex flex-column min-vh-100">
     <?php if (isset($pageConfig["enableGalaxyBg"]) && $pageConfig["enableGalaxyBg"] === true): ?>
         <div id="stardust-labs-bg" class="position-fixed w-100 h-100" style="z-index: -1; top: 0; left: 0;"></div>
         <script src="<?php echo $cdn_root; ?>/common/js/glowing-galaxy.js"></script>

@@ -46,7 +46,7 @@
  */
 
 $pageTitle = "In Memoriam: Sir Patrick Stewart (1940–2026) | RaggieSoft";
-$pageTheme = "ad-astra";
+$pageTheme = "raggiesoft";
 
 // Check whether the 30-day active mourning window (through November 28, 2026) is currently active
 $memoriamRibbonActive = (date('Y-m-d') <= '2026-11-28');
@@ -566,3 +566,4 @@ $memoriamRibbonActive = (date('Y-m-d') <= '2026-11-28');
   </div>
 
 </div>
+

@@ -122,9 +122,9 @@
   "/about/in-memoriam": {
     "view": "pages/about/in-memoriam",
     "title": "In Memoriam: Sir Patrick Stewart (1940–2026) | RaggieSoft",
-    "site": "stardust-engine",
+    "site": "portfolio",
     "siteName": "RaggieSoft",
-    "theme": "ad-astra",
+    "theme": "raggiesoft",
     "headerMenu": "about/header-about",
     "sidebar": "about/sidebar-about",
     "showSidebar": true,
