@@ -189,8 +189,43 @@ $memoriamRibbonActive = (date('Y-m-d') <= '2026-11-28');
   /* ==========================================================================
    * IN MEMORIAM COSMIC TRIBUTE STYLES (WCAG 2.1 AA Light & Dark Mode Safe)
    * ========================================================================== */
+  /* Deep-Space "Second Star to the Right" Page Backdrop (Dark & Light Safe) */
+  #main-content:has(.memoriam-page-shell),
+  .memoriam-cosmic-backdrop {
+    background-image:
+      linear-gradient(180deg, rgba(248, 250, 252, 0.88) 0%, rgba(241, 245, 249, 0.92) 100%),
+      url('https://assets.raggiesoft.com/raggiesoft-corporate/images/og/in-memoriam-deep-space-bg.jpg');
+    background-size: cover;
+    background-position: center top;
+    background-attachment: fixed;
+  }
+
+  [data-bs-theme="dark"] #main-content:has(.memoriam-page-shell),
+  [data-theme="dark"] #main-content:has(.memoriam-page-shell),
+  [data-bs-theme="dark"] .memoriam-cosmic-backdrop,
+  [data-theme="dark"] .memoriam-cosmic-backdrop {
+    background-image:
+      linear-gradient(180deg, rgba(4, 7, 17, 0.52) 0%, rgba(6, 10, 24, 0.68) 100%),
+      url('https://assets.raggiesoft.com/raggiesoft-corporate/images/og/in-memoriam-deep-space-bg.jpg') !important;
+    background-size: cover;
+    background-position: center top;
+    background-attachment: fixed;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-bs-theme="light"]):not([data-theme="light"]) #main-content:has(.memoriam-page-shell),
+    :root:not([data-bs-theme="light"]):not([data-theme="light"]) .memoriam-cosmic-backdrop {
+      background-image:
+        linear-gradient(180deg, rgba(4, 7, 17, 0.52) 0%, rgba(6, 10, 24, 0.68) 100%),
+        url('https://assets.raggiesoft.com/raggiesoft-corporate/images/og/in-memoriam-deep-space-bg.jpg') !important;
+      background-size: cover;
+      background-position: center top;
+      background-attachment: fixed;
+    }
+  }
+
   .memoriam-page-shell {
-    --mem-surface: #ffffff;
+    --mem-surface: rgba(255, 255, 255, 0.96);
     --mem-surface-elevated: #f8fafc;
     --mem-border: #cbd5e1;
     --mem-border-gold: #b45309;
@@ -206,10 +241,10 @@ $memoriamRibbonActive = (date('Y-m-d') <= '2026-11-28');
 
   [data-bs-theme="dark"] .memoriam-page-shell,
   [data-theme="dark"] .memoriam-page-shell {
-    --mem-surface: rgba(15, 23, 42, 0.92);
-    --mem-surface-elevated: rgba(30, 41, 59, 0.88);
-    --mem-border: rgba(148, 163, 184, 0.3);
-    --mem-border-gold: rgba(251, 191, 36, 0.55);
+    --mem-surface: rgba(9, 13, 24, 0.9);
+    --mem-surface-elevated: rgba(15, 23, 42, 0.92);
+    --mem-border: rgba(148, 163, 184, 0.35);
+    --mem-border-gold: rgba(251, 191, 36, 0.6);
     --mem-text: #f8fafc;
     --mem-text-secondary: #cbd5e1;
     --mem-accent-gold: #fbbf24;
@@ -221,10 +256,10 @@ $memoriamRibbonActive = (date('Y-m-d') <= '2026-11-28');
 
   @media (prefers-color-scheme: dark) {
     :root:not([data-bs-theme="light"]):not([data-theme="light"]) .memoriam-page-shell {
-      --mem-surface: rgba(15, 23, 42, 0.92);
-      --mem-surface-elevated: rgba(30, 41, 59, 0.88);
-      --mem-border: rgba(148, 163, 184, 0.3);
-      --mem-border-gold: rgba(251, 191, 36, 0.55);
+      --mem-surface: rgba(9, 13, 24, 0.9);
+      --mem-surface-elevated: rgba(15, 23, 42, 0.92);
+      --mem-border: rgba(148, 163, 184, 0.35);
+      --mem-border-gold: rgba(251, 191, 36, 0.6);
       --mem-text: #f8fafc;
       --mem-text-secondary: #cbd5e1;
       --mem-accent-gold: #fbbf24;
@@ -249,18 +284,17 @@ $memoriamRibbonActive = (date('Y-m-d') <= '2026-11-28');
     text-wrap: pretty;
   }
 
-  /* Permanent Deep-Space Memorial Hero (Always High-Contrast Dark Horizon) */
+  /* Permanent Deep-Space Memorial Hero (Second Star to the Right Vista) */
   .memoriam-hero {
     position: relative;
     background:
-      radial-gradient(circle at 20% 25%, rgba(56, 189, 248, 0.18), transparent 45%),
-      radial-gradient(circle at 80% 30%, rgba(251, 191, 36, 0.16), transparent 50%),
-      linear-gradient(180deg, #030611 0%, #0a1128 60%, #050814 100%);
+      linear-gradient(90deg, rgba(4, 7, 17, 0.88) 0%, rgba(7, 12, 28, 0.72) 55%, rgba(4, 7, 17, 0.55) 100%),
+      url('https://assets.raggiesoft.com/raggiesoft-corporate/images/og/in-memoriam-deep-space-bg.jpg') center/cover no-repeat;
     color: #f8fafc !important;
-    border: 1px solid rgba(251, 191, 36, 0.55);
+    border: 1.5px solid rgba(251, 191, 36, 0.65);
     border-radius: 1rem;
-    padding: 3rem 1.75rem;
-    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.45);
+    padding: 3rem 2rem;
+    box-shadow: 0 24px 55px rgba(0, 0, 0, 0.65);
     overflow: hidden;
   }
 
@@ -344,7 +378,9 @@ $memoriamRibbonActive = (date('Y-m-d') <= '2026-11-28');
     border: 1px solid var(--mem-border);
     border-radius: 0.85rem;
     padding: 1.75rem;
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
     height: 100%;
   }
 
