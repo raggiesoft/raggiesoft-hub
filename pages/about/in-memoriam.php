@@ -587,15 +587,15 @@ $memoriamRibbonActive = (date('Y-m-d') <= '2026-11-28');
               </a>
             </h3>
             <p class="small" style="color: var(--mem-text-secondary);">
-              A 14-track <em>Cosmic Tidal Lock&trade;</em> remix album of classic Stardust Engine songs&mdash;rebuilding <a href="https://music.raggiesoft.com/the-stardust-engine/2011-starfield-calibration?track=1-01-the-stardust-engine"><em>&ldquo;The Stardust Engine,&rdquo;</em></a> <a href="https://music.raggiesoft.com/the-stardust-engine/2011-starfield-calibration?track=1-02-electric-color"><em>&ldquo;Electric Color,&rdquo;</em></a> <a href="https://music.raggiesoft.com/the-stardust-engine/2011-starfield-calibration?track=1-05-my-anchor-holds"><em>&ldquo;My Anchor Holds,&rdquo;</em></a> and <a href="https://music.raggiesoft.com/the-stardust-engine/2011-starfield-calibration?track=1-08-atmosphere"><em>&ldquo;Atmosphere&rdquo;</em></a> inside a zero-gravity planetarium dome. I never would have done these remixes if Captain Picard hadn&rsquo;t given me the curiosity to look up and wonder what&rsquo;s out there.
+              A 14-track <em>Cosmic Tidal Lock&trade;</em> remix album of classic Stardust Engine songs&mdash;led by <a href="https://music.raggiesoft.com/the-stardust-engine/2011-starfield-calibration?track=1-01-the-stardust-engine"><strong><em>&ldquo;The Stardust Engine (Cosmic Tidal Lock Mix)&rdquo;</em></strong></a> (<em>&ldquo;We were looking for a signal / A beacon in the endless black&rdquo;</em>) alongside <a href="https://music.raggiesoft.com/the-stardust-engine/2011-starfield-calibration?track=1-02-electric-color"><em>&ldquo;Electric Color,&rdquo;</em></a> <a href="https://music.raggiesoft.com/the-stardust-engine/2011-starfield-calibration?track=1-05-my-anchor-holds"><em>&ldquo;My Anchor Holds,&rdquo;</em></a> and <a href="https://music.raggiesoft.com/the-stardust-engine/2011-starfield-calibration?track=1-13-the-horizon-line"><em>&ldquo;The Horizon Line&rdquo;</em></a> inside a zero-gravity planetarium dome. I never would have done these remixes if Captain Picard hadn&rsquo;t given me the curiosity to look up and wonder what&rsquo;s out there.
             </p>
           </div>
           <div class="d-flex flex-wrap gap-2 mt-3">
-            <a href="https://music.raggiesoft.com/the-stardust-engine/2011-starfield-calibration?track=1-01-the-stardust-engine" class="btn btn-sm btn-primary text-white fw-bold">
+            <a href="https://music.raggiesoft.com/the-stardust-engine/2011-starfield-calibration" class="btn btn-sm btn-primary text-white fw-bold">
               <i class="ph-duotone ph-sparkle me-1" aria-hidden="true"></i> Stream Starfield Calibration (14 Tracks)
             </a>
-            <a href="https://music.raggiesoft.com/the-stardust-engine/2011-starfield-calibration?track=1-08-atmosphere" class="btn btn-sm memoriam-btn-card-secondary">
-              <i class="ph-duotone ph-headphones me-1" aria-hidden="true"></i> &ldquo;Atmosphere&rdquo; (Cosmic Mix)
+            <a href="https://music.raggiesoft.com/the-stardust-engine/2011-starfield-calibration?track=1-01-the-stardust-engine" class="btn btn-sm memoriam-btn-card-secondary">
+              <i class="ph-duotone ph-headphones me-1" aria-hidden="true"></i> &ldquo;The Stardust Engine&rdquo; (Cosmic Tidal Lock Mix)
             </a>
           </div>
         </article>
