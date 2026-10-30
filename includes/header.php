@@ -98,28 +98,59 @@ if (isset($customPageAssets) && is_array($customPageAssets)) {
     
     <?php
     $resolvedPath = parse_url($_SERVER['REQUEST_URI'] ?? '/', PHP_URL_PATH) ?: '/';
-    $resolvedCanonical = $ogUrl ?? ('https://' . ($_SERVER['HTTP_HOST'] ?? 'raggiesoft.com') . ($resolvedPath === '/about/in-memoriam' ? '/in-memoriam' : $resolvedPath));
+    $isMemoriamRoute = ($resolvedPath === '/in-memoriam' || $resolvedPath === '/about/in-memoriam' || (($pageConfig['schemaType'] ?? '') === 'MemorialTribute'));
+    $resolvedCanonical = $ogUrl ?? ('https://' . ($_SERVER['HTTP_HOST'] ?? 'raggiesoft.com') . ($isMemoriamRoute ? '/in-memoriam' : $resolvedPath));
     $resolvedOgTitle = $ogTitle ?? $pageTitle ?? 'RaggieSoft';
     $resolvedOgDesc = !empty($ogDescription) ? $ogDescription : 'RaggieSoft is the independent software engineering, generative audio production (Engine Room Records), and literary publishing (Ocean View Archives) network of Michael P. Ragsdale.';
-    $resolvedOgImage = !empty($ogImage) ? $ogImage : ($cdn_root . '/raggiesoft-corporate/images/logo/raggiesoft-logo.png');
-    $isMemoriamRoute = ($resolvedPath === '/in-memoriam' || $resolvedPath === '/about/in-memoriam' || (($pageConfig['schemaType'] ?? '') === 'MemorialTribute'));
+    $resolvedOgImage = !empty($ogImage)
+        ? $ogImage
+        : ($isMemoriamRoute
+            ? ($cdn_root . '/raggiesoft-corporate/images/og/in-memoriam-patrick-stewart-og.jpg')
+            : ($cdn_root . '/raggiesoft-corporate/images/logo/raggiesoft-logo.png'));
+    $resolvedOgImageAlt = $isMemoriamRoute
+        ? 'Second Star to the Right • In Memoriam: Sir Patrick Stewart (July 13, 1940 – October 28, 2026) — Ad astra per aspera'
+        : ($resolvedOgTitle . ' — RaggieSoft');
     $resolvedOgType = $isMemoriamRoute ? 'article' : 'website';
     ?>
     <title><?php echo htmlspecialchars($pageTitle ?? 'RaggieSoft'); ?></title>
     <meta name="description" content="<?php echo htmlspecialchars($resolvedOgDesc); ?>">
+    <meta name="author" content="Michael P. Ragsdale">
     
+    <!-- OpenGraph Protocol Metadata -->
     <meta property="og:type" content="<?php echo htmlspecialchars($resolvedOgType); ?>">
     <meta property="og:site_name" content="RaggieSoft">
     <meta property="og:locale" content="en_US">
     <meta property="og:title" content="<?php echo htmlspecialchars($resolvedOgTitle); ?>">
     <meta property="og:description" content="<?php echo htmlspecialchars($resolvedOgDesc); ?>">
     <meta property="og:image" content="<?php echo htmlspecialchars($resolvedOgImage); ?>">
+    <meta property="og:image:secure_url" content="<?php echo htmlspecialchars($resolvedOgImage); ?>">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="<?php echo htmlspecialchars($resolvedOgImageAlt); ?>">
     <meta property="og:url" content="<?php echo htmlspecialchars($resolvedCanonical); ?>">
+    <?php if ($isMemoriamRoute): ?>
+    <meta property="article:published_time" content="2026-10-29T00:00:00-04:00">
+    <meta property="article:modified_time" content="2026-10-29T21:25:00-04:00">
+    <meta property="article:author" content="https://michaelpragsdale.com">
+    <meta property="article:section" content="In Memoriam &amp; Cosmic Tribute">
+    <meta property="article:tag" content="Sir Patrick Stewart">
+    <meta property="article:tag" content="Star Trek: The Next Generation">
+    <meta property="article:tag" content="Second Star to the Right">
+    <meta property="article:tag" content="Ad Astra Per Aspera">
+    <meta property="article:tag" content="The Stardust Engine">
+    <meta property="article:tag" content="Escape Velocity (Ad Astra)">
+    <meta property="article:tag" content="The Twin Moons">
+    <?php endif; ?>
 
+    <!-- Twitter / X Card Metadata -->
     <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@RaggieSoft">
+    <meta name="twitter:creator" content="@RaggieSoft">
     <meta name="twitter:title" content="<?php echo htmlspecialchars($resolvedOgTitle); ?>">
     <meta name="twitter:description" content="<?php echo htmlspecialchars($resolvedOgDesc); ?>">
     <meta name="twitter:image" content="<?php echo htmlspecialchars($resolvedOgImage); ?>">
+    <meta name="twitter:image:alt" content="<?php echo htmlspecialchars($resolvedOgImageAlt); ?>">
 
     <link rel="canonical" href="<?php echo htmlspecialchars($resolvedCanonical); ?>">
 
@@ -359,6 +390,12 @@ if (isset($customPageAssets) && is_array($customPageAssets)) {
                             "isrcCode" => "QTAHP2600043",
                             "duration" => "PT13M3S",
                             "url" => "https://music.raggiesoft.com/the-stardust-engine/2016-live-at-the-crucible?track=2-01-escape-velocity-ad-astra"
+                        ],
+                        [
+                            "@type" => "MusicAlbum",
+                            "name" => "Escape Velocity (Ad Astra) [1996 Album]",
+                            "datePublished" => "1996-07-16",
+                            "url" => "https://music.raggiesoft.com/the-stardust-engine/1996-ad-astra-single"
                         ],
                         [
                             "@type" => "MusicAlbum",

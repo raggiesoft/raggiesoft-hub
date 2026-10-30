@@ -112,9 +112,9 @@ $memoriamRibbonActive = (date('Y-m-d') <= '2026-11-28');
       "genre": ["Memorial Tribute", "Personal Essay", "Cultural Attribution"],
       "inLanguage": "en-US",
       "datePublished": "2026-10-29T00:00:00-04:00",
-      "dateModified": "2026-10-29T21:15:00-04:00",
+      "dateModified": "2026-10-29T21:25:00-04:00",
       "license": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "image": "https://assets.raggiesoft.com/nebulae/images/og-ad-astra-landing.jpg",
+      "image": "https://assets.raggiesoft.com/raggiesoft-corporate/images/og/in-memoriam-patrick-stewart-og.jpg",
       "author": {
         "@type": "Person",
         "@id": "https://michaelpragsdale.com/#michael-ragsdale",
@@ -152,6 +152,12 @@ $memoriamRibbonActive = (date('Y-m-d') <= '2026-11-28');
           "isrcCode": "QTAHP2600043",
           "duration": "PT13M3S",
           "url": "https://music.raggiesoft.com/the-stardust-engine/2016-live-at-the-crucible?track=2-01-escape-velocity-ad-astra"
+        },
+        {
+          "@type": "MusicAlbum",
+          "name": "Escape Velocity (Ad Astra) [1996 Album]",
+          "datePublished": "1996-07-16",
+          "url": "https://music.raggiesoft.com/the-stardust-engine/1996-ad-astra-single"
         },
         {
           "@type": "MusicAlbum",
