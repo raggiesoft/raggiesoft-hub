@@ -14,11 +14,11 @@
  */
 $currentPath = rtrim(parse_url($_SERVER['REQUEST_URI'] ?? '', PHP_URL_PATH) ?: '', '/');
 ?>
-<h5 class="pt-3 pb-2 mb-3 border-bottom">Operational Archives</h5>
+<h5 class="pt-3 pb-2 mb-3 border-bottom text-body">Operational Archives</h5>
 <div class="d-flex flex-column gap-1">
     <a
         href="/case-studies"
-        class="btn btn-sm <?php echo ($currentPath === '/case-studies') ? 'btn-primary' : 'btn-ghost'; ?> w-100 text-start justify-content-start"
+        class="btn btn-sm <?php echo ($currentPath === '/case-studies') ? 'btn-primary text-white fw-bold' : 'btn-ghost text-body'; ?> w-100 text-start justify-content-start"
         style="text-align: left;">
         <i class="ph-duotone ph-stack" aria-hidden="true"></i>Overview
     </a>
@@ -30,21 +30,21 @@ $currentPath = rtrim(parse_url($_SERVER['REQUEST_URI'] ?? '', PHP_URL_PATH) ?: '
 <div class="d-flex flex-column gap-1">
     <a
         href="/case-studies/cascade-protocol"
-        class="btn btn-sm <?php echo ($currentPath === '/case-studies/cascade-protocol') ? 'btn-primary' : 'btn-ghost'; ?> w-100 text-start justify-content-start"
+        class="btn btn-sm <?php echo ($currentPath === '/case-studies/cascade-protocol') ? 'btn-primary text-white fw-bold' : 'btn-ghost text-body'; ?> w-100 text-start justify-content-start"
         style="text-align: left;">
         <i class="ph-duotone ph-heartbeat" aria-hidden="true"></i>The Cascade Protocol
     </a>
 
     <a
         href="/case-studies/shenandoah-valley"
-        class="btn btn-sm <?php echo ($currentPath === '/case-studies/shenandoah-valley') ? 'btn-primary' : 'btn-ghost'; ?> w-100 text-start justify-content-start"
+        class="btn btn-sm <?php echo ($currentPath === '/case-studies/shenandoah-valley') ? 'btn-primary text-white fw-bold' : 'btn-ghost text-body'; ?> w-100 text-start justify-content-start"
         style="text-align: left;">
         <i class="ph-duotone ph-path" aria-hidden="true"></i>Shenandoah Gauntlet
     </a>
 
     <a
         href="/case-studies/phys-100-report"
-        class="btn btn-sm <?php echo ($currentPath === '/case-studies/phys-100-report') ? 'btn-primary' : 'btn-ghost'; ?> w-100 text-start justify-content-start"
+        class="btn btn-sm <?php echo ($currentPath === '/case-studies/phys-100-report') ? 'btn-primary text-white fw-bold' : 'btn-ghost text-body'; ?> w-100 text-start justify-content-start"
         style="text-align: left;">
         <i class="ph-duotone ph-atom" aria-hidden="true"></i>PHYS 100 Lab Report
     </a>
@@ -53,7 +53,7 @@ $currentPath = rtrim(parse_url($_SERVER['REQUEST_URI'] ?? '', PHP_URL_PATH) ?: '
 <hr class="divider my-4">
 
 <div class="d-flex flex-column gap-1">
-    <a href="/" class="btn btn-ghost btn-sm w-100 text-start justify-content-start" style="text-align: left;">
+    <a href="/" class="btn btn-ghost text-body btn-sm w-100 text-start justify-content-start" style="text-align: left;">
         <i class="ph-duotone ph-arrow-left" aria-hidden="true"></i>Return to Main
     </a>
 </div>

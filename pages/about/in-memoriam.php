@@ -194,6 +194,37 @@ $memoriamRibbonActive = (date('Y-m-d') <= '2026-11-28');
     line-height: 1.7;
   }
 
+  /* High-Contrast Hero & Card Secondary Buttons (WCAG 2.1 AA >= 14.5:1) */
+  .memoriam-btn-hero-secondary {
+    background-color: rgba(15, 23, 42, 0.92) !important;
+    color: #ffffff !important;
+    border: 1.5px solid rgba(248, 250, 252, 0.85) !important;
+    font-weight: 700 !important;
+    transition: background-color 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+  }
+
+  .memoriam-btn-hero-secondary:hover,
+  .memoriam-btn-hero-secondary:focus-visible {
+    background-color: #ffffff !important;
+    color: #090d16 !important;
+    border-color: #ffffff !important;
+  }
+
+  .memoriam-btn-card-secondary {
+    background-color: var(--mem-surface-elevated) !important;
+    color: var(--mem-text) !important;
+    border: 1.5px solid var(--mem-border-gold) !important;
+    font-weight: 600 !important;
+    transition: background-color 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+  }
+
+  .memoriam-btn-card-secondary:hover,
+  .memoriam-btn-card-secondary:focus-visible {
+    background-color: #fbbf24 !important;
+    color: #090d16 !important;
+    border-color: #fbbf24 !important;
+  }
+
   /* Narrative & Pillar Cards */
   .memoriam-card {
     background-color: var(--mem-surface);
@@ -306,7 +337,7 @@ $memoriamRibbonActive = (date('Y-m-d') <= '2026-11-28');
   <!-- =====================================================================
        1. HERO MONUMENT: SECOND STAR TO THE RIGHT
        ===================================================================== -->
-  <header class="memoriam-hero text-center mb-5" data-bs-theme="dark">
+  <header class="memoriam-hero text-center mb-5" data-theme="dark" data-bs-theme="dark">
     <div class="memoriam-hero-eyebrow">
       <span aria-hidden="true">✦</span>
       <span>Second Star to the Right &bull; Creator&rsquo;s Cosmic Tribute</span>
@@ -324,10 +355,13 @@ $memoriamRibbonActive = (date('Y-m-d') <= '2026-11-28');
       <a href="https://stardust.raggiesoft.com" class="btn btn-warning fw-bold">
         <i class="ph-duotone ph-rocket-launch me-1" aria-hidden="true"></i> Visit The Stardust Engine
       </a>
-      <a href="https://music.raggiesoft.com/the-stardust-engine/1995-the-warehouse-tapes?track=1-06-escape-velocity-ad-astra" class="btn btn-outline-light fw-bold">
+      <a href="https://music.raggiesoft.com/the-stardust-engine/1995-the-warehouse-tapes?track=1-06-escape-velocity-ad-astra" class="btn memoriam-btn-hero-secondary">
         <i class="ph-duotone ph-headphones me-1" aria-hidden="true"></i> Listen to &ldquo;Escape Velocity (Ad Astra)&rdquo;
       </a>
-      <a href="/about" class="btn btn-outline-light">
+      <a href="https://nebulae.raggiesoft.com" class="btn memoriam-btn-hero-secondary">
+        <i class="ph-duotone ph-planet me-1" aria-hidden="true"></i> Explore Caelum-IV (Nebulae)
+      </a>
+      <a href="/about" class="btn memoriam-btn-hero-secondary">
         <i class="ph-duotone ph-arrow-left me-1" aria-hidden="true"></i> Mission Profile
       </a>
     </div>
@@ -461,10 +495,10 @@ $memoriamRibbonActive = (date('Y-m-d') <= '2026-11-28');
             </p>
           </div>
           <div class="d-flex flex-wrap gap-2 mt-3">
-            <a href="https://stardust.raggiesoft.com" class="btn btn-sm btn-primary">
+            <a href="https://stardust.raggiesoft.com" class="btn btn-sm btn-primary text-white fw-bold">
               <i class="ph-duotone ph-rocket-launch me-1" aria-hidden="true"></i> Explore Stardust Portal
             </a>
-            <a href="https://books.raggiesoft.com/stardust-engine" class="btn btn-sm btn-outline-secondary">
+            <a href="https://books.raggiesoft.com/stardust-engine" class="btn btn-sm memoriam-btn-card-secondary">
               <i class="ph-duotone ph-book-open me-1" aria-hidden="true"></i> Read Band Novel
             </a>
           </div>
@@ -486,10 +520,10 @@ $memoriamRibbonActive = (date('Y-m-d') <= '2026-11-28');
             </p>
           </div>
           <div class="d-flex flex-wrap gap-2 mt-3">
-            <a href="https://music.raggiesoft.com/the-stardust-engine/1995-the-warehouse-tapes?track=1-06-escape-velocity-ad-astra" class="btn btn-sm btn-primary">
+            <a href="https://music.raggiesoft.com/the-stardust-engine/1995-the-warehouse-tapes?track=1-06-escape-velocity-ad-astra" class="btn btn-sm btn-primary text-white fw-bold">
               <i class="ph-duotone ph-headphones me-1" aria-hidden="true"></i> Stream 1995 Studio Suite (15:33)
             </a>
-            <a href="https://music.raggiesoft.com/the-stardust-engine/2016-live-at-the-crucible?track=2-01-escape-velocity-ad-astra" class="btn btn-sm btn-outline-secondary">
+            <a href="https://music.raggiesoft.com/the-stardust-engine/2016-live-at-the-crucible?track=2-01-escape-velocity-ad-astra" class="btn btn-sm memoriam-btn-card-secondary">
               <i class="ph-duotone ph-waveform me-1" aria-hidden="true"></i> Stream 2016 Crucible Live (13:03)
             </a>
           </div>
@@ -511,10 +545,10 @@ $memoriamRibbonActive = (date('Y-m-d') <= '2026-11-28');
             </p>
           </div>
           <div class="d-flex flex-wrap gap-2 mt-3">
-            <a href="https://music.raggiesoft.com/the-stardust-engine/2003-sanctuary-zero-g?track=1-01-moon-1-tidal-lock" class="btn btn-sm btn-primary">
+            <a href="https://music.raggiesoft.com/the-stardust-engine/2003-sanctuary-zero-g?track=1-01-moon-1-tidal-lock" class="btn btn-sm btn-primary text-white fw-bold">
               <i class="ph-duotone ph-planet me-1" aria-hidden="true"></i> Moon 1: Sanctuary (Zero-G)
             </a>
-            <a href="https://music.raggiesoft.com/the-stardust-engine/2003-mile-marker-98?track=1-01-moon-2-roche-limit" class="btn btn-sm btn-outline-secondary">
+            <a href="https://music.raggiesoft.com/the-stardust-engine/2003-mile-marker-98?track=1-01-moon-2-roche-limit" class="btn btn-sm memoriam-btn-card-secondary">
               <i class="ph-duotone ph-meteor me-1" aria-hidden="true"></i> Moon 2: Mile Marker 98
             </a>
           </div>
@@ -536,10 +570,10 @@ $memoriamRibbonActive = (date('Y-m-d') <= '2026-11-28');
             </p>
           </div>
           <div class="d-flex flex-wrap gap-2 mt-3">
-            <a href="https://nebulae.raggiesoft.com" class="btn btn-sm btn-primary">
+            <a href="https://nebulae.raggiesoft.com" class="btn btn-sm btn-primary text-white fw-bold">
               <i class="ph-duotone ph-planet me-1" aria-hidden="true"></i> Explore Caelum-IV (Nebulae)
             </a>
-            <a href="https://books.raggiesoft.com/ad-astra" class="btn btn-sm btn-outline-secondary">
+            <a href="https://books.raggiesoft.com/ad-astra" class="btn btn-sm memoriam-btn-card-secondary">
               <i class="ph-duotone ph-book-open-text me-1" aria-hidden="true"></i> Read Ad Astra (Stardate 49601)
             </a>
           </div>
@@ -552,12 +586,15 @@ $memoriamRibbonActive = (date('Y-m-d') <= '2026-11-28');
        4. CLOSING BENEDICTION & LEGAL / FICTITIOUS ENTITIES DISCLAIMER
        ===================================================================== -->
   <section class="memoriam-card memoriam-card-gold text-center mb-4" aria-labelledby="closing-tribute-heading">
-    <span class="memoriam-section-eyebrow">Ad Astra Per Aspera</span>
+    <span class="memoriam-section-eyebrow">Ad Astra Per Aspera (To the Stars Through Hardships)</span>
     <h2 id="closing-tribute-heading" class="h4 fw-bold mb-2">
-      Thank You, Captain. The Sky&rsquo;s the Limit.
+      &ldquo;Where to? Second star to the right, and straight on &rsquo;til morning!&rdquo;
     </h2>
-    <p class="mx-auto mb-0" style="max-width: 68ch; color: var(--mem-text-secondary);">
-      Whenever someone visits a RaggieSoft property, streams a cosmic synth-rock suite in <a href="https://music.raggiesoft.com">The Listening Room</a>, or reads a chapter in the <a href="https://books.raggiesoft.com">RaggieSoft Book Reader</a>, a quiet part of that experience owes its existence to a family sitting together in the living room after <em>Jeopardy!</em> and looking out at the stars from the bridge of the <em>NCC-1701-D</em>.
+    <p class="mx-auto mb-2" style="max-width: 68ch; color: var(--mem-text-secondary);">
+      Whenever someone visits a RaggieSoft property, streams a cosmic synth-rock suite in <a href="https://music.raggiesoft.com">The Listening Room</a>, explores <a href="https://nebulae.raggiesoft.com">Caelum-IV on Nebulae</a>, or reads a chapter in the <a href="https://books.raggiesoft.com">RaggieSoft Book Reader</a>, a quiet part of that experience owes its existence to a family sitting together in the living room after <em>Jeopardy!</em> and looking out at the stars from the bridge of the <em>NCC-1701-D</em>.
+    </p>
+    <p class="mb-0 fw-bold" style="color: var(--mem-accent-gold);">
+      <em>Ad astra per aspera</em>, Captain. Thank you for the stars.
     </p>
   </section>
 

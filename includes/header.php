@@ -58,7 +58,7 @@ $css_load_queue = [
     $cdn_root . "/common/vendor/daisyui/themes.css",
     $path_grid,
     $cdn_root . "/common/css/raggiesoft-logo.css",
-    $cdn_root . "/common/css/raggiesoft-network.css?v=20261021"
+    $cdn_root . "/common/css/raggiesoft-network.css"
 ];
 
 // 5. Critical Images
@@ -216,10 +216,10 @@ if (isset($customPageAssets) && is_array($customPageAssets)) {
 
     <!-- Self-Hosted DaisyUI 5 & Phosphor Icons (Served via assets.raggiesoft.com) -->
     <?php foreach ($css_load_queue as $cssUrl): ?>
-        <link href="<?php echo $cssUrl . (str_contains($cssUrl, '?') ? '&' : '?') . 'v=20261029b'; ?>" rel="stylesheet">
+        <link href="<?php echo $cssUrl . (str_contains($cssUrl, '?') ? '&' : '?') . 'v=20261029f'; ?>" rel="stylesheet">
     <?php endforeach; ?>    
 
-    <link rel="stylesheet" href="<?php echo $cdn_root; ?>/fonts/phosphor/phosphor.min.css?v=20261029b">
+    <link rel="stylesheet" href="<?php echo $cdn_root; ?>/fonts/phosphor/phosphor.min.css?v=20261029f">
 
     <?php foreach ($critical_images as $imgUrl): ?>
         <?php if($imgUrl): ?><link rel="preload" as="image" href="<?php echo $imgUrl; ?>"><?php endif; ?>
@@ -250,8 +250,8 @@ if (isset($customPageAssets) && is_array($customPageAssets)) {
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,700;1,400&family=M+PLUS+Rounded+1c:wght@400;700&family=Titillium+Web:wght@400;700&display=swap" rel="stylesheet">
 
 <script src="<?php echo $cdnBaseUrl; ?>/common/js/elara-spa.js?v=<?php echo time(); ?>" defer></script>
-    <script src="<?php echo $cdnBaseUrl; ?>/common/js/hero-image.js?v=20261021c" defer></script>
-    <script src="<?php echo $cdnBaseUrl; ?>/common/js/raggiesoft-network.js?v=20261017m" defer></script>    
+    <script src="<?php echo $cdnBaseUrl; ?>/common/js/hero-image.js?v=20261029f" defer></script>
+    <script src="<?php echo $cdnBaseUrl; ?>/common/js/raggiesoft-network.js?v=20261029f" defer></script>    
     <style>
         .brand-font { font-family: <?php echo $brand_font_css; ?> !important; }
         
@@ -558,9 +558,29 @@ if (isset($customPageAssets) && is_array($customPageAssets)) {
           <li><a href="https://corporate.raggiesoft.com">🏢 Corporate</a></li>
           <li><a href="https://storetrainer.raggiesoft.com">💾 StoreTrainer</a></li>
           <li><a href="https://michaelpragsdale.com">👔 Michael P. Ragsdale</a></li>
+          <?php if (date('Y-m-d') <= '2026-11-28'): ?>
+          <li><a href="/in-memoriam" class="rs-network-memoriam-pill">✦ In Memoriam</a></li>
+          <?php endif; ?>
         </ul>
       </div>
     </nav>
+
+    <?php if (date('Y-m-d') <= '2026-11-28'): ?>
+    <div class="rs-memoriam-bar" data-rs-memoriam-expires="2026-11-28T23:59:59-05:00" role="region" aria-label="In Memoriam: Sir Patrick Stewart">
+      <div class="rs-memoriam-inner">
+        <p class="rs-memoriam-text">
+          <span class="rs-memoriam-star" aria-hidden="true">✦</span>
+          <strong class="rs-memoriam-label">In Memoriam: Sir Patrick Stewart (1940–2026)</strong>
+          <span class="rs-memoriam-sep" aria-hidden="true">—</span>
+          <span class="rs-memoriam-quote">&ldquo;Thank you for teaching a kid watching weeknight television with his family to look up at the cosmos and wonder what is out there. <em>Ad Astra.</em>&rdquo;</span>
+        </p>
+        <a href="/in-memoriam" class="rs-memoriam-link">
+          <span>Read Creator&rsquo;s Tribute</span>
+          <span aria-hidden="true">→</span>
+        </a>
+      </div>
+    </div>
+    <?php endif; ?>
 
     <header>
       <nav class="navbar navbar-expand-md sticky-top border-bottom border-primary border-opacity-50 bg-body">

@@ -16,8 +16,9 @@
 $uri = parse_url($_SERVER['REQUEST_URI'] ?? '/', PHP_URL_PATH) ?: '/';
 
 // Determine active section for dropdown highlighting
+$isMemoriam   = ($uri === '/in-memoriam' || $uri === '/about/in-memoriam');
 $isGovernance = (str_contains($uri, '/license') || str_contains($uri, '/privacy') || str_contains($uri, '/terms') || str_contains($uri, '/ai-disclaimer'));
-$isProfiles   = (!$isGovernance && $uri !== '/about');
+$isProfiles   = (!$isGovernance && !$isMemoriam && $uri !== '/about');
 ?>
 
 <div class="d-flex flex-column flex-md-row align-items-stretch align-items-md-center gap-2 ms-auto py-3 py-md-0 w-100 mobile-nav-menu">
@@ -101,6 +102,10 @@ $isProfiles   = (!$isGovernance && $uri !== '/about');
       </li>
     </ul>
   </details>
+
+  <a href="/in-memoriam" class="btn btn-ghost <?php echo $isMemoriam ? 'text-warning fw-bold' : 'text-body-secondary'; ?>">
+    <i class="ph-duotone ph-shooting-star text-warning me-1" aria-hidden="true"></i>In Memoriam
+  </a>
 
   <a href="/contact" class="btn btn-ghost text-body-secondary">
     <i class="ph-duotone ph-envelope me-1" aria-hidden="true"></i>Contact

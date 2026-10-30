@@ -25,7 +25,8 @@ $isArchitect   = (str_starts_with($request_uri, '/about/michael-ragsdale') || st
 $isCreative    = (str_starts_with($request_uri, '/raggiesoft-books') || str_starts_with($request_uri, '/engine-room') || str_starts_with($request_uri, '/raggiesoft-games'));
 $isMedia       = (str_starts_with($request_uri, '/raggiesoft-media') || str_starts_with($request_uri, '/products'));
 $isCaseStudies = str_starts_with($request_uri, '/case-studies');
-$isAbout       = str_starts_with($request_uri, '/about') && !$isArchitect;
+$isMemoriam    = ($request_uri === '/in-memoriam' || $request_uri === '/about/in-memoriam');
+$isAbout       = str_starts_with($request_uri, '/about') && !$isArchitect && !$isMemoriam;
 $isContact     = str_starts_with($request_uri, '/contact');
 ?>
 
@@ -102,13 +103,24 @@ $isContact     = str_starts_with($request_uri, '/contact');
         </a>
       </li>
       <li>
+        <a href="https://books.raggiesoft.com/ad-astra">
+          <i class="ph-duotone ph-rocket text-primary" aria-hidden="true"></i> Escape Velocity: Ad Astra (Book)
+        </a>
+      </li>
+      <li>
         <a href="https://lore.raggiesoft.com/">
           <i class="ph-duotone ph-globe-hemisphere-west text-warning" aria-hidden="true"></i> RaggieSoft Lore Encyclopedia
         </a>
       </li>
       <li>
         <a href="https://nebulae.raggiesoft.com/">
-          <i class="ph-duotone ph-planet text-primary" aria-hidden="true"></i> RaggieSoft Nebulae Observatory
+          <i class="ph-duotone ph-planet text-primary" aria-hidden="true"></i> RaggieSoft Nebulae (Caelum-IV)
+        </a>
+      </li>
+      <li><hr class="my-1 border-base-300"></li>
+      <li>
+        <a href="/in-memoriam">
+          <i class="ph-duotone ph-shooting-star text-warning" aria-hidden="true"></i> In Memoriam: Sir Patrick Stewart
         </a>
       </li>
     </ul>
@@ -159,6 +171,10 @@ $isContact     = str_starts_with($request_uri, '/contact');
 
   <a href="/about" class="btn btn-ghost <?php echo $isAbout ? 'text-primary fw-bold' : 'text-body-secondary'; ?>">
     <i class="ph-duotone ph-info" aria-hidden="true"></i> Mission Profile
+  </a>
+
+  <a href="/in-memoriam" class="btn btn-ghost <?php echo $isMemoriam ? 'text-warning fw-bold' : 'text-body-secondary'; ?>">
+    <i class="ph-duotone ph-shooting-star text-warning" aria-hidden="true"></i> In Memoriam
   </a>
 
   <a href="/contact" class="btn btn-ghost <?php echo $isContact ? 'text-primary fw-bold' : 'text-body-secondary'; ?>">
