@@ -131,7 +131,7 @@ if (isset($customPageAssets) && is_array($customPageAssets)) {
     <meta property="og:url" content="<?php echo htmlspecialchars($resolvedCanonical); ?>">
     <?php if ($isMemoriamRoute): ?>
     <meta property="article:published_time" content="2026-10-29T00:00:00-04:00">
-    <meta property="article:modified_time" content="2026-10-29T21:25:00-04:00">
+    <meta property="article:modified_time" content="2026-10-29T23:20:00-04:00">
     <meta property="article:author" content="https://michaelpragsdale.com">
     <meta property="article:section" content="In Memoriam &amp; Cosmic Tribute">
     <meta property="article:tag" content="Sir Patrick Stewart">
@@ -272,7 +272,7 @@ if (isset($customPageAssets) && is_array($customPageAssets)) {
                     "description" => $resolvedOgDesc,
                     "inLanguage" => "en-US",
                     "datePublished" => "2026-10-29T00:00:00-04:00",
-                    "dateModified" => "2026-10-29T21:15:00-04:00",
+                    "dateModified" => "2026-10-29T23:20:00-04:00",
                     "isPartOf" => [
                         "@id" => "https://raggiesoft.com/#website"
                     ],
@@ -287,9 +287,10 @@ if (isset($customPageAssets) && is_array($customPageAssets)) {
                     ],
                     "primaryImageOfPage" => [
                         "@type" => "ImageObject",
-                        "url" => "https://assets.raggiesoft.com/nebulae/images/og-ad-astra-landing.jpg",
+                        "url" => $resolvedOgImage,
                         "width" => 1200,
-                        "height" => 675
+                        "height" => 630,
+                        "caption" => $resolvedOgImageAlt
                     ]
                 ],
                 [
@@ -339,13 +340,20 @@ if (isset($customPageAssets) && is_array($customPageAssets)) {
                     ],
                     "headline" => "In Memoriam: Sir Patrick Stewart (1940–2026) — Second Star to the Right",
                     "alternativeHeadline" => "Where to? Second star to the right, and straight on 'til morning! Ad astra per aspera, Captain.",
+                    "description" => "A personal tribute from Michael P. Ragsdale honoring Sir Patrick Stewart (1940–2026), whose portrayal of the Captain of the NCC-1701-D on weeknight family television sparked the cosmic imagination behind RaggieSoft, The Stardust Engine, Escape Velocity (Ad Astra), The Twin Moons, and Caelum-IV.",
                     "articleSection" => "Creator's Cosmic Tribute & In Memoriam",
                     "genre" => ["Memorial Tribute", "Personal Essay", "Cultural Attribution"],
                     "inLanguage" => "en-US",
                     "datePublished" => "2026-10-29T00:00:00-04:00",
-                    "dateModified" => "2026-10-29T21:15:00-04:00",
+                    "dateModified" => "2026-10-29T23:20:00-04:00",
                     "license" => "https://creativecommons.org/licenses/by-sa/4.0/",
-                    "image" => "https://assets.raggiesoft.com/nebulae/images/og-ad-astra-landing.jpg",
+                    "image" => [
+                        "@type" => "ImageObject",
+                        "url" => $resolvedOgImage,
+                        "width" => 1200,
+                        "height" => 630,
+                        "caption" => $resolvedOgImageAlt
+                    ],
                     "author" => [
                         "@id" => "https://michaelpragsdale.com/#michael-ragsdale"
                     ],
@@ -481,10 +489,10 @@ if (isset($customPageAssets) && is_array($customPageAssets)) {
 
     <!-- Self-Hosted DaisyUI 5 & Phosphor Icons (Served via assets.raggiesoft.com) -->
     <?php foreach ($css_load_queue as $cssUrl): ?>
-        <link href="<?php echo $cssUrl . (str_contains($cssUrl, '?') ? '&' : '?') . 'v=20261029f'; ?>" rel="stylesheet">
+        <link href="<?php echo $cssUrl . (str_contains($cssUrl, '?') ? '&' : '?') . 'v=20261029h'; ?>" rel="stylesheet">
     <?php endforeach; ?>    
 
-    <link rel="stylesheet" href="<?php echo $cdn_root; ?>/fonts/phosphor/phosphor.min.css?v=20261029f">
+    <link rel="stylesheet" href="<?php echo $cdn_root; ?>/fonts/phosphor/phosphor.min.css?v=20261029h">
 
     <?php foreach ($critical_images as $imgUrl): ?>
         <?php if($imgUrl): ?><link rel="preload" as="image" href="<?php echo $imgUrl; ?>"><?php endif; ?>
@@ -514,9 +522,9 @@ if (isset($customPageAssets) && is_array($customPageAssets)) {
     <link href="https://fonts.googleapis.com/css2?family=Herr+Von+Muellerhoff&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,700;1,400&family=M+PLUS+Rounded+1c:wght@400;700&family=Titillium+Web:wght@400;700&display=swap" rel="stylesheet">
 
-<script src="<?php echo $cdnBaseUrl; ?>/common/js/elara-spa.js?v=<?php echo time(); ?>" defer></script>
-    <script src="<?php echo $cdnBaseUrl; ?>/common/js/hero-image.js?v=20261029f" defer></script>
-    <script src="<?php echo $cdnBaseUrl; ?>/common/js/raggiesoft-network.js?v=20261029f" defer></script>    
+    <script src="<?php echo $cdnBaseUrl; ?>/common/js/elara-spa.js?v=<?php echo time(); ?>" defer></script>
+    <script src="<?php echo $cdnBaseUrl; ?>/common/js/hero-image.js?v=20261029h" defer></script>
+    <script src="<?php echo $cdnBaseUrl; ?>/common/js/raggiesoft-network.js?v=20261029h" defer></script>    
     <style>
         .brand-font { font-family: <?php echo $brand_font_css; ?> !important; }
         
@@ -638,7 +646,7 @@ if (isset($customPageAssets) && is_array($customPageAssets)) {
         });
     })();
     </script>
-      <script src="<?php echo $cdnBaseUrl; ?>/common/js/cinema-carousel.js?v=2"></script>
+    <script src="<?php echo $cdnBaseUrl; ?>/common/js/cinema-carousel.js?v=2" defer></script>
 
     <style>
     /* Clean up DaisyUI buttons & dropdowns inside mobile nav */
@@ -814,7 +822,7 @@ if (isset($customPageAssets) && is_array($customPageAssets)) {
       <div class="rs-network-bar-inner">
         <span class="rs-network-label">✦ RaggieSoft Network:</span>
         <ul class="rs-network-links">
-          <li><a href="https://raggiesoft.com" aria-current="page" class="is-active">🌐 Hub</a></li>
+          <li><a href="https://raggiesoft.com"<?php echo !$isMemoriamRoute ? ' aria-current="page" class="is-active"' : ''; ?>>🌐 Hub</a></li>
           <li><a href="https://nebulae.raggiesoft.com">🌌 Nebulae</a></li>
           <li><a href="https://music.raggiesoft.com">🎧 Music</a></li>
           <li><a href="https://books.raggiesoft.com">📚 Books</a></li>
@@ -824,7 +832,7 @@ if (isset($customPageAssets) && is_array($customPageAssets)) {
           <li><a href="https://storetrainer.raggiesoft.com">💾 StoreTrainer</a></li>
           <li><a href="https://michaelpragsdale.com">👔 Michael P. Ragsdale</a></li>
           <?php if (date('Y-m-d') <= '2026-11-28'): ?>
-          <li><a href="/in-memoriam" class="rs-network-memoriam-pill">✦ In Memoriam</a></li>
+          <li><a href="/in-memoriam" class="rs-network-memoriam-pill<?php echo $isMemoriamRoute ? ' is-active' : ''; ?>"<?php echo $isMemoriamRoute ? ' aria-current="page"' : ''; ?>>✦ In Memoriam</a></li>
           <?php endif; ?>
         </ul>
       </div>
@@ -839,9 +847,9 @@ if (isset($customPageAssets) && is_array($customPageAssets)) {
           <span class="rs-memoriam-sep" aria-hidden="true">—</span>
           <span class="rs-memoriam-quote">&ldquo;Thank you for teaching a kid watching weeknight television with his family to look up at the cosmos and wonder what is out there. <em>Ad Astra.</em>&rdquo;</span>
         </p>
-        <a href="/in-memoriam" class="rs-memoriam-link">
-          <span>Read Creator&rsquo;s Tribute</span>
-          <span aria-hidden="true">→</span>
+        <a href="/in-memoriam" class="rs-memoriam-link"<?php echo $isMemoriamRoute ? ' aria-current="page"' : ''; ?>>
+          <span><?php echo $isMemoriamRoute ? 'Reading Creator&rsquo;s Tribute' : 'Read Creator&rsquo;s Tribute'; ?></span>
+          <span aria-hidden="true"><?php echo $isMemoriamRoute ? '✦' : '→'; ?></span>
         </a>
       </div>
     </div>

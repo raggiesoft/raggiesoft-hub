@@ -54,7 +54,7 @@
     "sidebar": "about/sidebar-about",
     "showSidebar": true,
     "navbarBrandText": "The Family",
-    "navbarBrandLink": "/family",
+    "navbarBrandLink": "/about/family",
     "navbarBrandLogo": "/raggiesoft-lore/family/images/logos/logo-family.png",
     "navbarBrandAlt": "The RaggieSoft Family Crest",
     "brandFont": ["Roboto", "sans-serif"]

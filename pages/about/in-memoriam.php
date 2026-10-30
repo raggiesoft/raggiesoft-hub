@@ -52,139 +52,6 @@ $pageTheme = "raggiesoft";
 $memoriamRibbonActive = (date('Y-m-d') <= '2026-11-28');
 ?>
 
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "Person",
-      "@id": "https://raggiesoft.com/in-memoriam#sir-patrick-stewart",
-      "name": "Sir Patrick Stewart",
-      "honorificPrefix": "Sir",
-      "givenName": "Patrick",
-      "familyName": "Stewart",
-      "birthDate": "1940-07-13",
-      "deathDate": "2026-10-28",
-      "nationality": {
-        "@type": "Country",
-        "name": "United Kingdom"
-      },
-      "jobTitle": [
-        "Actor",
-        "Shakespearean Stage Performer",
-        "Portrayer of Captain Jean-Luc Picard (U.S.S. Enterprise NCC-1701-D)"
-      ],
-      "description": "Acclaimed British stage and screen actor whose portrayal of Captain Jean-Luc Picard aboard the U.S.S. Enterprise (NCC-1701-D) on Star Trek: The Next Generation taught a kid watching weeknight television with his family to look up at the night sky and wonder what is out there.",
-      "sameAs": [
-        "https://en.wikipedia.org/wiki/Patrick_Stewart",
-        "https://www.wikidata.org/wiki/Q16296"
-      ],
-      "performerIn": {
-        "@type": "TVSeries",
-        "name": "Star Trek: The Next Generation",
-        "character": {
-          "@type": "Person",
-          "name": "Captain Jean-Luc Picard"
-        }
-      }
-    },
-    {
-      "@type": "ItemList",
-      "@id": "https://raggiesoft.com/in-memoriam#weeknight-television-schedule",
-      "name": "Childhood Weekday Evening Family Television Schedule",
-      "description": "The five-part Monday-through-Friday family television ritual that culminated aboard the U.S.S. Enterprise (NCC-1701-D) and sparked the cosmic imagination behind RaggieSoft.",
-      "numberOfItems": 5,
-      "itemListOrder": "https://schema.org/ItemListOrderAscending",
-      "itemListElement": [
-        { "@type": "ListItem", "position": 1, "name": "Local News" },
-        { "@type": "ListItem", "position": 2, "name": "National News" },
-        { "@type": "ListItem", "position": 3, "name": "Wheel of Fortune" },
-        { "@type": "ListItem", "position": 4, "name": "Jeopardy!" },
-        { "@type": "ListItem", "position": 5, "name": "Star Trek: The Next Generation — Aboard the NCC-1701-D" }
-      ]
-    },
-    {
-      "@type": "Article",
-      "@id": "https://raggiesoft.com/in-memoriam#article",
-      "headline": "In Memoriam: Sir Patrick Stewart (1940–2026) — Second Star to the Right",
-      "alternativeHeadline": "Where to? Second star to the right, and straight on 'til morning! Ad astra per aspera, Captain.",
-      "articleSection": "Creator's Cosmic Tribute & In Memoriam",
-      "genre": ["Memorial Tribute", "Personal Essay", "Cultural Attribution"],
-      "inLanguage": "en-US",
-      "datePublished": "2026-10-29T00:00:00-04:00",
-      "dateModified": "2026-10-29T21:25:00-04:00",
-      "license": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "image": "https://assets.raggiesoft.com/raggiesoft-corporate/images/og/in-memoriam-patrick-stewart-og.jpg",
-      "author": {
-        "@type": "Person",
-        "@id": "https://michaelpragsdale.com/#michael-ragsdale",
-        "name": "Michael P. Ragsdale",
-        "url": "https://michaelpragsdale.com"
-      },
-      "publisher": {
-        "@type": "Organization",
-        "@id": "https://raggiesoft.com/#organization",
-        "name": "RaggieSoft",
-        "url": "https://raggiesoft.com"
-      },
-      "about": [
-        { "@id": "https://raggiesoft.com/in-memoriam#sir-patrick-stewart" },
-        { "@id": "https://raggiesoft.com/in-memoriam#weeknight-television-schedule" }
-      ],
-      "description": "A personal tribute from Michael P. Ragsdale honoring Sir Patrick Stewart (1940–2026), whose portrayal of the Captain of the NCC-1701-D on weeknight family television sparked the cosmic imagination behind RaggieSoft, The Stardust Engine, Escape Velocity (Ad Astra), The Twin Moons, and Caelum-IV.",
-      "mentions": [
-        {
-          "@type": "MusicGroup",
-          "@id": "https://stardust.raggiesoft.com/#musicgroup",
-          "name": "The Stardust Engine",
-          "url": "https://stardust.raggiesoft.com"
-        },
-        {
-          "@type": "MusicRecording",
-          "name": "Escape Velocity (Ad Astra)",
-          "isrcCode": "QZW9K2547910",
-          "duration": "PT15M33S",
-          "url": "https://music.raggiesoft.com/the-stardust-engine/1995-the-warehouse-tapes?track=1-06-escape-velocity-ad-astra"
-        },
-        {
-          "@type": "MusicRecording",
-          "name": "Escape Velocity (Ad Astra) [Live at the Crucible]",
-          "isrcCode": "QTAHP2600043",
-          "duration": "PT13M3S",
-          "url": "https://music.raggiesoft.com/the-stardust-engine/2016-live-at-the-crucible?track=2-01-escape-velocity-ad-astra"
-        },
-        {
-          "@type": "MusicAlbum",
-          "name": "Escape Velocity (Ad Astra) [1996 Album]",
-          "datePublished": "1996-07-16",
-          "url": "https://music.raggiesoft.com/the-stardust-engine/1996-ad-astra-single"
-        },
-        {
-          "@type": "MusicAlbum",
-          "name": "Sanctuary (Zero-G) — The Twin Moons: Moon 1",
-          "url": "https://music.raggiesoft.com/the-stardust-engine/2003-sanctuary-zero-g?track=1-01-moon-1-tidal-lock"
-        },
-        {
-          "@type": "MusicAlbum",
-          "name": "Mile Marker 98 — The Twin Moons: Moon 2",
-          "url": "https://music.raggiesoft.com/the-stardust-engine/2003-mile-marker-98?track=1-01-moon-2-roche-limit"
-        },
-        {
-          "@type": "WebSite",
-          "name": "RaggieSoft Nebulae — Caelum-IV Planetary Survey",
-          "url": "https://nebulae.raggiesoft.com"
-        },
-        {
-          "@type": "BookSeries",
-          "name": "Escape Velocity: Ad Astra (Stardate 49601 Chronicles)",
-          "url": "https://books.raggiesoft.com/ad-astra"
-        }
-      ]
-    }
-  ]
-}
-</script>
-
 <style>
   /* ==========================================================================
    * IN MEMORIAM COSMIC TRIBUTE STYLES (WCAG 2.1 AA Light & Dark Mode Safe)
@@ -602,7 +469,7 @@ $memoriamRibbonActive = (date('Y-m-d') <= '2026-11-28');
 
         <div class="p-3 rounded-3 border" style="background-color: var(--mem-surface-elevated); border-color: var(--mem-border) !important;">
           <div class="small fw-bold text-uppercase mb-1" style="color: var(--mem-accent-gold);">
-            <i class="ph-duotone ph-calendar-Star me-1" aria-hidden="true"></i> Network Observatory Status
+            <i class="ph-duotone ph-shooting-star me-1" aria-hidden="true"></i> Network Observatory Status
           </div>
           <?php if ($memoriamRibbonActive): ?>
             <p class="small mb-0" style="color: var(--mem-text-secondary);">

@@ -17,7 +17,7 @@
 // includes/components/footers/footer-default.php
 ?>
 <!-- [LAYOUT] Main Global Footer: Standard corporate branding and global sitemap -->
-<footer class="mt-auto bg-body-tertiary border-top py-5">
+<div class="mt-auto bg-body-tertiary border-top py-5">
     <div class="container">
         <div class="row gy-4">
             
@@ -42,7 +42,7 @@
                     <li class="nav-item mb-2"><a href="https://engineroom.raggiesoft.com/" class="nav-link p-0 text-body-secondary">Engine Room Records</a></li>
                     <li class="nav-item mb-2"><a href="https://corporate.raggiesoft.com/" class="nav-link p-0 text-body-secondary">RaggieSoft Media</a></li>
                     <li class="nav-item mb-2"><a href="https://nebulae.raggiesoft.com/" class="nav-link p-0 text-body-secondary">Nebulae Observatory</a></li>
-                    <li class="nav-item mb-2"><a href="/family" class="nav-link p-0 text-body-secondary">The DevOps Family</a></li>
+                    <li class="nav-item mb-2"><a href="/about/family" class="nav-link p-0 text-body-secondary">The DevOps Family</a></li>
                     <li class="nav-item mb-2"><a href="/in-memoriam" class="nav-link p-0 text-body-secondary"><i class="ph-duotone ph-shooting-star me-1" aria-hidden="true"></i>In Memoriam (Ad Astra)</a></li>
                 </ul>
             </div>
@@ -52,8 +52,8 @@
                 <h6 class="fw-bold mb-3">Built With</h6>
                 <ul class="nav flex-column small">
                     <li class="nav-item mb-2"><span class="nav-link p-0 text-body-secondary">PHP 8.5 (Elara CMS)</span></li>
-                    <li class="nav-item mb-2"><span class="nav-link p-0 text-body-secondary">Web Awesome Pro</span></li>
-                    <li class="nav-item mb-2"><span class="nav-link p-0 text-body-secondary">FontAwesome Pro</span></li>
+                    <li class="nav-item mb-2"><span class="nav-link p-0 text-body-secondary">DaisyUI 5 + Tailwind CSS</span></li>
+                    <li class="nav-item mb-2"><span class="nav-link p-0 text-body-secondary">Phosphor Duotone Icons</span></li>
                     <li class="nav-item mt-3"><a href="https://engineroom.raggiesoft.com/jessica-miller-center" class="nav-link p-0 text-primary fw-bold"><i class="ph-duotone ph-person-arms-spread me-1"></i> Accessibility</a></li>
                 </ul>
             </div>
@@ -68,7 +68,7 @@
             </div>
         </div>
     </div>
-</footer>
+</div>
 
 <?php
 // [LOGIC] Global Konami Code Payload: Triggers "System Admin Access" popup

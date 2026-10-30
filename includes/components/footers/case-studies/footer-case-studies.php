@@ -29,7 +29,7 @@
  *   different from the standard Konami modal. Do not overwrite `$konami_config` downstream.
  */
 ?>
-<footer class="mt-auto bg-body-tertiary border-top py-5">
+<div class="mt-auto bg-body-tertiary border-top py-5">
     <div class="container">
         <div class="row gy-4">
             
@@ -78,7 +78,7 @@
             </div>
         </div>
     </div>
-</footer>
+</div>
 
 <?php
 // Standard Admin Access Easter Egg
