@@ -134,6 +134,8 @@
     "navbarBrandAlt": "RaggieSoft Official Logo",
     "brandFont": ["Audiowide", "sans-serif"],
     "ogTitle": "In Memoriam: Sir Patrick Stewart (1940–2026) | Ad Astra",
-    "ogDescription": "How watching the Captain of the NCC-1701-D on weeknight family television sparked the cosmic imagination behind RaggieSoft and The Stardust Engine."
+    "ogDescription": "How watching the Captain of the NCC-1701-D on weeknight family television sparked the cosmic imagination behind RaggieSoft and The Stardust Engine.",
+    "ogImage": "/nebulae/images/og-ad-astra-landing.jpg",
+    "schemaType": "MemorialTribute"
   }
 }

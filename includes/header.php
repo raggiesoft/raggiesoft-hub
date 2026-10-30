@@ -96,115 +96,343 @@ if (isset($customPageAssets) && is_array($customPageAssets)) {
     <!-- Modern Web Guidance (dark-mode): Declare support for both light and dark themes -->
     <meta name="color-scheme" content="light dark">
     
+    <?php
+    $resolvedPath = parse_url($_SERVER['REQUEST_URI'] ?? '/', PHP_URL_PATH) ?: '/';
+    $resolvedCanonical = $ogUrl ?? ('https://' . ($_SERVER['HTTP_HOST'] ?? 'raggiesoft.com') . ($resolvedPath === '/about/in-memoriam' ? '/in-memoriam' : $resolvedPath));
+    $resolvedOgTitle = $ogTitle ?? $pageTitle ?? 'RaggieSoft';
+    $resolvedOgDesc = !empty($ogDescription) ? $ogDescription : 'RaggieSoft is the independent software engineering, generative audio production (Engine Room Records), and literary publishing (Ocean View Archives) network of Michael P. Ragsdale.';
+    $resolvedOgImage = !empty($ogImage) ? $ogImage : ($cdn_root . '/raggiesoft-corporate/images/logo/raggiesoft-logo.png');
+    $isMemoriamRoute = ($resolvedPath === '/in-memoriam' || $resolvedPath === '/about/in-memoriam' || (($pageConfig['schemaType'] ?? '') === 'MemorialTribute'));
+    $resolvedOgType = $isMemoriamRoute ? 'article' : 'website';
+    ?>
     <title><?php echo htmlspecialchars($pageTitle ?? 'RaggieSoft'); ?></title>
-    <meta name="description" content="<?php echo htmlspecialchars($ogDescription ?? ''); ?>">
+    <meta name="description" content="<?php echo htmlspecialchars($resolvedOgDesc); ?>">
     
-    <meta property="og:title" content="<?php echo htmlspecialchars($ogTitle ?? $pageTitle); ?>">
-    <meta property="og:description" content="<?php echo htmlspecialchars($ogDescription ?? ''); ?>">
-    <meta property="og:image" content="<?php echo htmlspecialchars($ogImage ?? ''); ?>">
-    <meta property="og:url" content="<?php echo htmlspecialchars($ogUrl ?? "https://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]"); ?>">
+    <meta property="og:type" content="<?php echo htmlspecialchars($resolvedOgType); ?>">
+    <meta property="og:site_name" content="RaggieSoft">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:title" content="<?php echo htmlspecialchars($resolvedOgTitle); ?>">
+    <meta property="og:description" content="<?php echo htmlspecialchars($resolvedOgDesc); ?>">
+    <meta property="og:image" content="<?php echo htmlspecialchars($resolvedOgImage); ?>">
+    <meta property="og:url" content="<?php echo htmlspecialchars($resolvedCanonical); ?>">
 
-    <link rel="canonical" href="<?php echo htmlspecialchars($ogUrl ?? "https://" . $_SERVER['HTTP_HOST'] . parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH)); ?>">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="<?php echo htmlspecialchars($resolvedOgTitle); ?>">
+    <meta name="twitter:description" content="<?php echo htmlspecialchars($resolvedOgDesc); ?>">
+    <meta name="twitter:image" content="<?php echo htmlspecialchars($resolvedOgImage); ?>">
+
+    <link rel="canonical" href="<?php echo htmlspecialchars($resolvedCanonical); ?>">
 
     <?php
-    // Default Schema for standard pages
-    $schema = [
-        "@context" => "https://schema.org",
-        "@type" => "WebPage",
-        "name" => $pageTitle ?? 'RaggieSoft',
-        "url" => $ogUrl ?? "https://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]"
+    // =========================================================================
+    // GLOBAL RAGGIESOFT SCHEMA.ORG JSON-LD @GRAPH ENGINE
+    // Connects Organization, WebSite, Person (Architect), WebPage, BreadcrumbList,
+    // and specialized entities (including the Sir Patrick Stewart In Memoriam
+    // cosmic dedication graph on /in-memoriam).
+    // =========================================================================
+    $organizationNode = [
+        "@type" => "Organization",
+        "@id" => "https://raggiesoft.com/#organization",
+        "name" => "RaggieSoft",
+        "alternateName" => ["RaggieSoft Media", "Engine Room Records", "Ocean View Archives"],
+        "url" => "https://raggiesoft.com",
+        "logo" => [
+            "@type" => "ImageObject",
+            "url" => "https://assets.raggiesoft.com/raggiesoft-corporate/images/logo/raggiesoft-logo.png"
+        ],
+        "founder" => [
+            "@id" => "https://michaelpragsdale.com/#michael-ragsdale"
+        ],
+        "location" => [
+            "@type" => "Place",
+            "address" => [
+                "@type" => "PostalAddress",
+                "addressLocality" => "Norfolk",
+                "addressRegion" => "VA",
+                "addressCountry" => "US"
+            ]
+        ],
+        "sameAs" => [
+            "https://raggiesoft.com",
+            "https://nebulae.raggiesoft.com",
+            "https://music.raggiesoft.com",
+            "https://books.raggiesoft.com",
+            "https://stardust.raggiesoft.com",
+            "https://engineroom.raggiesoft.com",
+            "https://lore.raggiesoft.com",
+            "https://corporate.raggiesoft.com",
+            "https://storetrainer.raggiesoft.com",
+            "https://backstage.raggiesoft.com",
+            "https://michaelpragsdale.com",
+            "https://github.com/raggiesoft"
+        ]
     ];
 
-    // 1. MUSIC GROUP (Band Profile Pages)
-    if (isset($pageConfig['schemaType']) && $pageConfig['schemaType'] === 'MusicGroup') {
+    $architectNode = [
+        "@type" => "Person",
+        "@id" => "https://michaelpragsdale.com/#michael-ragsdale",
+        "name" => "Michael P. Ragsdale",
+        "givenName" => "Michael",
+        "additionalName" => "P.",
+        "familyName" => "Ragsdale",
+        "jobTitle" => "Systems Architect & Section 508 Accessibility Engineer",
+        "url" => "https://michaelpragsdale.com",
+        "worksFor" => [
+            "@id" => "https://raggiesoft.com/#organization"
+        ]
+    ];
+
+    $websiteNode = [
+        "@type" => "WebSite",
+        "@id" => "https://raggiesoft.com/#website",
+        "url" => "https://raggiesoft.com",
+        "name" => "RaggieSoft Hub",
+        "description" => "The central portal for RaggieSoft software architecture, Engine Room Records, Ocean View Archives, and The Stardust Engine.",
+        "inLanguage" => "en-US",
+        "publisher" => [
+            "@id" => "https://raggiesoft.com/#organization"
+        ]
+    ];
+
+    if ($isMemoriamRoute) {
         $schema = [
             "@context" => "https://schema.org",
-            "@type" => "MusicGroup",
-            "name" => "The Stardust Engine",
-            "genre" => "80s Arena Rock / Progressive Pop",
-            "url" => "https://thestardustengine.com/",
-            "image" => $ogImage ?? "",
-            "description" => $ogDescription ?? "The official portal for The Stardust Engine.",
-            "sameAs" => [
-                "https://music.apple.com/us/artist/the-stardust-engine/1889194363",
-                "https://open.spotify.com/artist/7Lr6o5qOo1OgVQGumUjFFT",
-                "https://music.youtube.com/channel/UCqtJNbYErxJ7ivveQXVS2mg"
+            "@graph" => [
+                $organizationNode,
+                $architectNode,
+                $websiteNode,
+                [
+                    "@type" => "Person",
+                    "@id" => "https://raggiesoft.com/in-memoriam#sir-patrick-stewart",
+                    "name" => "Sir Patrick Stewart",
+                    "honorificPrefix" => "Sir",
+                    "givenName" => "Patrick",
+                    "familyName" => "Stewart",
+                    "birthDate" => "1940-07-13",
+                    "deathDate" => "2026-10-28",
+                    "nationality" => [
+                        "@type" => "Country",
+                        "name" => "United Kingdom"
+                    ],
+                    "jobTitle" => [
+                        "Actor",
+                        "Shakespearean Stage Performer",
+                        "Portrayer of Captain Jean-Luc Picard (U.S.S. Enterprise NCC-1701-D)"
+                    ],
+                    "description" => "Acclaimed British stage and screen actor whose portrayal of Captain Jean-Luc Picard aboard the U.S.S. Enterprise (NCC-1701-D) on Star Trek: The Next Generation taught a kid watching weeknight television with his family to look up at the night sky and wonder what is out there.",
+                    "sameAs" => [
+                        "https://en.wikipedia.org/wiki/Patrick_Stewart",
+                        "https://www.wikidata.org/wiki/Q16296"
+                    ],
+                    "performerIn" => [
+                        "@type" => "TVSeries",
+                        "name" => "Star Trek: The Next Generation",
+                        "character" => [
+                            "@type" => "Person",
+                            "name" => "Captain Jean-Luc Picard"
+                        ]
+                    ]
+                ],
+                [
+                    "@type" => ["WebPage", "AboutPage"],
+                    "@id" => "https://raggiesoft.com/in-memoriam#webpage",
+                    "url" => "https://raggiesoft.com/in-memoriam",
+                    "name" => "In Memoriam: Sir Patrick Stewart (1940–2026) — Second Star to the Right | RaggieSoft",
+                    "description" => $resolvedOgDesc,
+                    "inLanguage" => "en-US",
+                    "datePublished" => "2026-10-29T00:00:00-04:00",
+                    "dateModified" => "2026-10-29T21:15:00-04:00",
+                    "isPartOf" => [
+                        "@id" => "https://raggiesoft.com/#website"
+                    ],
+                    "about" => [
+                        "@id" => "https://raggiesoft.com/in-memoriam#sir-patrick-stewart"
+                    ],
+                    "mainEntity" => [
+                        "@id" => "https://raggiesoft.com/in-memoriam#article"
+                    ],
+                    "breadcrumb" => [
+                        "@id" => "https://raggiesoft.com/in-memoriam#breadcrumb"
+                    ],
+                    "primaryImageOfPage" => [
+                        "@type" => "ImageObject",
+                        "url" => "https://assets.raggiesoft.com/nebulae/images/og-ad-astra-landing.jpg",
+                        "width" => 1200,
+                        "height" => 675
+                    ]
+                ],
+                [
+                    "@type" => "BreadcrumbList",
+                    "@id" => "https://raggiesoft.com/in-memoriam#breadcrumb",
+                    "itemListElement" => [
+                        [
+                            "@type" => "ListItem",
+                            "position" => 1,
+                            "name" => "RaggieSoft Hub",
+                            "item" => "https://raggiesoft.com/"
+                        ],
+                        [
+                            "@type" => "ListItem",
+                            "position" => 2,
+                            "name" => "Mission Profile",
+                            "item" => "https://raggiesoft.com/about"
+                        ],
+                        [
+                            "@type" => "ListItem",
+                            "position" => 3,
+                            "name" => "In Memoriam: Sir Patrick Stewart (1940–2026)",
+                            "item" => "https://raggiesoft.com/in-memoriam"
+                        ]
+                    ]
+                ],
+                [
+                    "@type" => "ItemList",
+                    "@id" => "https://raggiesoft.com/in-memoriam#weeknight-television-schedule",
+                    "name" => "Childhood Weekday Evening Family Television Schedule",
+                    "description" => "The five-part Monday-through-Friday family television ritual that culminated aboard the U.S.S. Enterprise (NCC-1701-D) and sparked the cosmic imagination behind RaggieSoft.",
+                    "numberOfItems" => 5,
+                    "itemListOrder" => "https://schema.org/ItemListOrderAscending",
+                    "itemListElement" => [
+                        ["@type" => "ListItem", "position" => 1, "name" => "Local News"],
+                        ["@type" => "ListItem", "position" => 2, "name" => "National News"],
+                        ["@type" => "ListItem", "position" => 3, "name" => "Wheel of Fortune"],
+                        ["@type" => "ListItem", "position" => 4, "name" => "Jeopardy!"],
+                        ["@type" => "ListItem", "position" => 5, "name" => "Star Trek: The Next Generation — Aboard the NCC-1701-D"]
+                    ]
+                ],
+                [
+                    "@type" => "Article",
+                    "@id" => "https://raggiesoft.com/in-memoriam#article",
+                    "mainEntityOfPage" => [
+                        "@id" => "https://raggiesoft.com/in-memoriam#webpage"
+                    ],
+                    "headline" => "In Memoriam: Sir Patrick Stewart (1940–2026) — Second Star to the Right",
+                    "alternativeHeadline" => "Where to? Second star to the right, and straight on 'til morning! Ad astra per aspera, Captain.",
+                    "articleSection" => "Creator's Cosmic Tribute & In Memoriam",
+                    "genre" => ["Memorial Tribute", "Personal Essay", "Cultural Attribution"],
+                    "inLanguage" => "en-US",
+                    "datePublished" => "2026-10-29T00:00:00-04:00",
+                    "dateModified" => "2026-10-29T21:15:00-04:00",
+                    "license" => "https://creativecommons.org/licenses/by-sa/4.0/",
+                    "image" => "https://assets.raggiesoft.com/nebulae/images/og-ad-astra-landing.jpg",
+                    "author" => [
+                        "@id" => "https://michaelpragsdale.com/#michael-ragsdale"
+                    ],
+                    "publisher" => [
+                        "@id" => "https://raggiesoft.com/#organization"
+                    ],
+                    "about" => [
+                        ["@id" => "https://raggiesoft.com/in-memoriam#sir-patrick-stewart"],
+                        ["@id" => "https://raggiesoft.com/in-memoriam#weeknight-television-schedule"]
+                    ],
+                    "keywords" => [
+                        "Sir Patrick Stewart",
+                        "In Memoriam",
+                        "Captain Jean-Luc Picard",
+                        "NCC-1701-D",
+                        "Star Trek: The Next Generation",
+                        "Second Star to the Right",
+                        "Ad Astra Per Aspera",
+                        "The Stardust Engine",
+                        "Escape Velocity (Ad Astra)",
+                        "The Twin Moons",
+                        "Caelum-IV",
+                        "RaggieSoft Nebulae"
+                    ],
+                    "mentions" => [
+                        [
+                            "@type" => "MusicGroup",
+                            "@id" => "https://stardust.raggiesoft.com/#musicgroup",
+                            "name" => "The Stardust Engine",
+                            "url" => "https://stardust.raggiesoft.com"
+                        ],
+                        [
+                            "@type" => "MusicRecording",
+                            "name" => "Escape Velocity (Ad Astra)",
+                            "isrcCode" => "QZW9K2547910",
+                            "duration" => "PT15M33S",
+                            "url" => "https://music.raggiesoft.com/the-stardust-engine/1995-the-warehouse-tapes?track=1-06-escape-velocity-ad-astra"
+                        ],
+                        [
+                            "@type" => "MusicRecording",
+                            "name" => "Escape Velocity (Ad Astra) [Live at the Crucible]",
+                            "isrcCode" => "QTAHP2600043",
+                            "duration" => "PT13M3S",
+                            "url" => "https://music.raggiesoft.com/the-stardust-engine/2016-live-at-the-crucible?track=2-01-escape-velocity-ad-astra"
+                        ],
+                        [
+                            "@type" => "MusicAlbum",
+                            "name" => "Sanctuary (Zero-G) — The Twin Moons: Moon 1",
+                            "url" => "https://music.raggiesoft.com/the-stardust-engine/2003-sanctuary-zero-g?track=1-01-moon-1-tidal-lock"
+                        ],
+                        [
+                            "@type" => "MusicAlbum",
+                            "name" => "Mile Marker 98 — The Twin Moons: Moon 2",
+                            "url" => "https://music.raggiesoft.com/the-stardust-engine/2003-mile-marker-98?track=1-01-moon-2-roche-limit"
+                        ],
+                        [
+                            "@type" => "WebSite",
+                            "name" => "RaggieSoft Nebulae — Caelum-IV Planetary Survey",
+                            "url" => "https://nebulae.raggiesoft.com"
+                        ],
+                        [
+                            "@type" => "BookSeries",
+                            "name" => "Escape Velocity: Ad Astra (Stardate 49601 Chronicles)",
+                            "url" => "https://books.raggiesoft.com/ad-astra"
+                        ]
+                    ]
+                ]
+            ]
+        ];
+    } elseif (isset($pageConfig['schemaType']) && $pageConfig['schemaType'] === 'MusicGroup') {
+        $schema = [
+            "@context" => "https://schema.org",
+            "@graph" => [
+                $organizationNode,
+                $websiteNode,
+                [
+                    "@type" => "MusicGroup",
+                    "@id" => "https://stardust.raggiesoft.com/#musicgroup",
+                    "name" => "The Stardust Engine",
+                    "genre" => "80s Arena Rock / Progressive Pop",
+                    "url" => "https://stardust.raggiesoft.com/",
+                    "image" => $resolvedOgImage,
+                    "description" => $resolvedOgDesc,
+                    "sameAs" => [
+                        "https://music.apple.com/us/artist/the-stardust-engine/1889194363",
+                        "https://open.spotify.com/artist/7Lr6o5qOo1OgVQGumUjFFT",
+                        "https://music.youtube.com/channel/UCqtJNbYErxJ7ivveQXVS2mg"
+                    ]
+                ]
+            ]
+        ];
+    } else {
+        $schema = [
+            "@context" => "https://schema.org",
+            "@graph" => [
+                $organizationNode,
+                $architectNode,
+                $websiteNode,
+                [
+                    "@type" => "WebPage",
+                    "@id" => $resolvedCanonical . "#webpage",
+                    "name" => $pageTitle ?? 'RaggieSoft',
+                    "description" => $resolvedOgDesc,
+                    "url" => $resolvedCanonical,
+                    "inLanguage" => "en-US",
+                    "isPartOf" => [
+                        "@id" => "https://raggiesoft.com/#website"
+                    ],
+                    "about" => [
+                        "@id" => "https://raggiesoft.com/#organization"
+                    ]
+                ]
             ]
         ];
     }
-    
-    // 2. MUSIC ALBUM (Discography Pages w/ ISRC Track Looping)
-    elseif (isset($pageConfig['schemaType']) && $pageConfig['schemaType'] === 'MusicAlbum' && !empty($pageConfig['albumFilter'])) {
-        $schema = [
-            "@context" => "https://schema.org",
-            "@type" => "MusicAlbum",
-            "name" => $pageConfig['albumFilter'],
-            "byArtist" => [
-                "@type" => "MusicGroup",
-                "name" => "The Stardust Engine"
-            ],
-            "albumReleaseType" => "CompilationAlbum",
-            "datePublished" => $pageConfig['realReleaseDate'] ?? "", 
-            "url" => $ogUrl ?? "https://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]",
-            "image" => $ogImage ?? ""
-        ];
-        
-        // Attach the global UPC identifier 
-        if (!empty($pageConfig['upc'])) {
-            $schema["gtin12"] = $pageConfig['upc']; 
-        }
-
-        // Fallback load master data if file exists to query the catalog
-        $catalogFile = ROOT_PATH . '/master-catalog.json';
-        if (file_exists($catalogFile)) {
-            $catalogData = json_decode(file_get_contents($catalogFile), true);
-            if (is_array($catalogData)) {
-                $trackNum = 1;
-                foreach ($catalogData as $item) {
-                    // Match the tracks to the current album
-                    if (isset($item['albumTitle']) && $item['albumTitle'] === $pageConfig['albumFilter']) {
-                        $recording = [
-                            "@type" => "MusicRecording",
-                            "name" => $item['trackTitle'],
-                            "position" => $trackNum++
-                        ];
-                        // Inject the specific ISRC code for this track
-                        if (!empty($item['isrc'])) {
-                            $recording["isrcCode"] = $item['isrc'];
-                        }
-                        $schema['track'][] = $recording;
-                    }
-                }
-            }
-        }
-    }
-    
-    // 3. LORE / STORY PAGES & SEQUENCES
-    // Builds structured narrative sequences allowing search engines to index serialized fictional chapters
-    elseif (isset($pageConfig['schemaType']) && ($pageConfig['schemaType'] === 'CreativeWork' || $pageConfig['schemaType'] === 'CreativeWorkSequence')) {
-         $schema = [
-            "@context" => "https://schema.org",
-            "@type" => "Article",
-            "headline" => $pageTitle,
-            "url" => $ogUrl ?? "https://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]"
-         ];
-         
-         if ($pageConfig['schemaType'] === 'CreativeWorkSequence') {
-             $schema['position'] = $pageConfig['sequenceIndex'];
-             $schema['partOfSeries'] = [
-                 "@type" => "CreativeWorkSeries",
-                 "name" => $pageConfig['sequenceName']
-             ];
-         } else {
-             $schema['author'] = [
-                 "@type" => "Person",
-                 "name" => "Cassidy O'Connell"
-             ];
-         }
-    }
     ?>
-    <script type="application/ld+json">
-        <?php echo json_encode($schema, JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT); ?>
+    <script id="raggiesoft-head-jsonld" type="application/ld+json">
+<?php echo json_encode($schema, JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT); ?>
     </script>
 
     <?php if (!empty($pageConfig['prevUrl'])): ?>
