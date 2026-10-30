@@ -205,7 +205,7 @@ $memoriamRibbonActive = (date('Y-m-d') <= '2026-11-28');
   [data-bs-theme="dark"] .memoriam-cosmic-backdrop,
   [data-theme="dark"] .memoriam-cosmic-backdrop {
     background-image:
-      linear-gradient(180deg, rgba(4, 7, 17, 0.52) 0%, rgba(6, 10, 24, 0.68) 100%),
+      linear-gradient(180deg, rgba(4, 7, 17, 0.35) 0%, rgba(6, 10, 24, 0.58) 100%),
       url('https://assets.raggiesoft.com/raggiesoft-corporate/images/og/in-memoriam-deep-space-bg.jpg') !important;
     background-size: cover;
     background-position: center top;
@@ -216,7 +216,7 @@ $memoriamRibbonActive = (date('Y-m-d') <= '2026-11-28');
     :root:not([data-bs-theme="light"]):not([data-theme="light"]) #main-content:has(.memoriam-page-shell),
     :root:not([data-bs-theme="light"]):not([data-theme="light"]) .memoriam-cosmic-backdrop {
       background-image:
-        linear-gradient(180deg, rgba(4, 7, 17, 0.52) 0%, rgba(6, 10, 24, 0.68) 100%),
+        linear-gradient(180deg, rgba(4, 7, 17, 0.35) 0%, rgba(6, 10, 24, 0.58) 100%),
         url('https://assets.raggiesoft.com/raggiesoft-corporate/images/og/in-memoriam-deep-space-bg.jpg') !important;
       background-size: cover;
       background-position: center top;
@@ -284,12 +284,17 @@ $memoriamRibbonActive = (date('Y-m-d') <= '2026-11-28');
     text-wrap: pretty;
   }
 
-  /* Permanent Deep-Space Memorial Hero (Second Star to the Right Vista) */
+  /* Permanent Frosted Obsidian Glass Memorial Hero over the Single Deep-Space Vista */
   .memoriam-hero {
     position: relative;
-    background:
-      linear-gradient(90deg, rgba(4, 7, 17, 0.88) 0%, rgba(7, 12, 28, 0.72) 55%, rgba(4, 7, 17, 0.55) 100%),
-      url('https://assets.raggiesoft.com/raggiesoft-corporate/images/og/in-memoriam-deep-space-bg.jpg') center/cover no-repeat;
+    background: linear-gradient(
+      135deg,
+      rgba(6, 10, 24, 0.86) 0%,
+      rgba(11, 17, 36, 0.78) 55%,
+      rgba(6, 10, 24, 0.84) 100%
+    );
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
     color: #f8fafc !important;
     border: 1.5px solid rgba(251, 191, 36, 0.65);
     border-radius: 1rem;
