@@ -131,7 +131,7 @@ if (isset($customPageAssets) && is_array($customPageAssets)) {
     <meta property="og:url" content="<?php echo htmlspecialchars($resolvedCanonical); ?>">
     <?php if ($isMemoriamRoute): ?>
     <meta property="article:published_time" content="2026-10-29T00:00:00-04:00">
-    <meta property="article:modified_time" content="2026-10-29T23:20:00-04:00">
+    <meta property="article:modified_time" content="2026-10-30T09:35:00-04:00">
     <meta property="article:author" content="https://michaelpragsdale.com">
     <meta property="article:section" content="In Memoriam &amp; Cosmic Tribute">
     <meta property="article:tag" content="Sir Patrick Stewart">
@@ -141,6 +141,7 @@ if (isset($customPageAssets) && is_array($customPageAssets)) {
     <meta property="article:tag" content="The Stardust Engine">
     <meta property="article:tag" content="Escape Velocity (Ad Astra)">
     <meta property="article:tag" content="The Twin Moons">
+    <meta property="article:tag" content="Starfield Calibration">
     <?php endif; ?>
 
     <!-- Twitter / X Card Metadata -->
@@ -272,7 +273,7 @@ if (isset($customPageAssets) && is_array($customPageAssets)) {
                     "description" => $resolvedOgDesc,
                     "inLanguage" => "en-US",
                     "datePublished" => "2026-10-29T00:00:00-04:00",
-                    "dateModified" => "2026-10-29T23:20:00-04:00",
+                    "dateModified" => "2026-10-30T09:35:00-04:00",
                     "isPartOf" => [
                         "@id" => "https://raggiesoft.com/#website"
                     ],
@@ -340,12 +341,12 @@ if (isset($customPageAssets) && is_array($customPageAssets)) {
                     ],
                     "headline" => "In Memoriam: Sir Patrick Stewart (1940–2026) — Second Star to the Right",
                     "alternativeHeadline" => "Where to? Second star to the right, and straight on 'til morning! Ad astra per aspera, Captain.",
-                    "description" => "A personal tribute from Michael P. Ragsdale honoring Sir Patrick Stewart (1940–2026), whose portrayal of the Captain of the NCC-1701-D on weeknight family television sparked the cosmic imagination behind RaggieSoft, The Stardust Engine, Escape Velocity (Ad Astra), The Twin Moons, and Caelum-IV.",
+                    "description" => "A personal tribute from Michael P. Ragsdale honoring Sir Patrick Stewart (1940–2026), whose portrayal of the Captain of the NCC-1701-D on weeknight family television sparked the cosmic imagination behind RaggieSoft, The Stardust Engine, Escape Velocity (Ad Astra), The Twin Moons, Starfield Calibration, and Caelum-IV.",
                     "articleSection" => "Creator's Cosmic Tribute & In Memoriam",
                     "genre" => ["Memorial Tribute", "Personal Essay", "Cultural Attribution"],
                     "inLanguage" => "en-US",
                     "datePublished" => "2026-10-29T00:00:00-04:00",
-                    "dateModified" => "2026-10-29T23:20:00-04:00",
+                    "dateModified" => "2026-10-30T09:35:00-04:00",
                     "license" => "https://creativecommons.org/licenses/by-sa/4.0/",
                     "image" => [
                         "@type" => "ImageObject",
@@ -375,6 +376,8 @@ if (isset($customPageAssets) && is_array($customPageAssets)) {
                         "The Stardust Engine",
                         "Escape Velocity (Ad Astra)",
                         "The Twin Moons",
+                        "Starfield Calibration",
+                        "The Cosmic Tidal Lock Sound",
                         "Caelum-IV",
                         "RaggieSoft Nebulae"
                     ],
@@ -414,6 +417,13 @@ if (isset($customPageAssets) && is_array($customPageAssets)) {
                             "@type" => "MusicAlbum",
                             "name" => "Mile Marker 98 — The Twin Moons: Moon 2",
                             "url" => "https://music.raggiesoft.com/the-stardust-engine/2003-mile-marker-98?track=1-01-moon-2-roche-limit"
+                        ],
+                        [
+                            "@type" => "MusicAlbum",
+                            "name" => "Starfield Calibration (Cosmic Tidal Lock Remixes)",
+                            "datePublished" => "2011",
+                            "numTracks" => 14,
+                            "url" => "https://music.raggiesoft.com/the-stardust-engine/2011-starfield-calibration?track=1-01-the-stardust-engine"
                         ],
                         [
                             "@type" => "WebSite",

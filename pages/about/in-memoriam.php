@@ -23,6 +23,7 @@
  *    - The Stardust Engine (https://stardust.raggiesoft.com)
  *    - "Escape Velocity (Ad Astra)" (https://music.raggiesoft.com/the-stardust-engine/1995-the-warehouse-tapes?track=1-06-escape-velocity-ad-astra)
  *    - The Twin Moons: Sanctuary (Zero-G) & Mile Marker 98 (https://music.raggiesoft.com/the-stardust-engine/2003-sanctuary-zero-g?track=1-01-moon-1-tidal-lock)
+ *    - Starfield Calibration: Cosmic Tidal Lock Remixes (https://music.raggiesoft.com/the-stardust-engine/2011-starfield-calibration?track=1-01-the-stardust-engine)
  *    - Ocean View Archives & RaggieSoft Book Reader (https://books.raggiesoft.com)
  *    - The RaggieSoft Nebulae Observatory (https://nebulae.raggiesoft.com)
  *
@@ -557,7 +558,7 @@ $memoriamRibbonActive = (date('Y-m-d') <= '2026-11-28');
             <span class="memoriam-pill-badge">3. Dual Planetarium Concept Albums</span>
             <h3 class="h5 fw-bold mb-2">
               <a href="https://music.raggiesoft.com/the-stardust-engine/2003-sanctuary-zero-g?track=1-01-moon-1-tidal-lock" class="text-decoration-none" style="color: var(--mem-text);">
-                <em>The Twin Moons</em>: <em>Sanctuary (Zero-G)</em> &amp; <em>Mile Marker 98</em>
+                <em>The Twin Moons</em>: <em>Sanctuary (Zero-G)</em> &amp; <em>Mile Marker 98</em> (2003)
               </a>
             </h3>
             <p class="small" style="color: var(--mem-text-secondary);">
@@ -575,11 +576,36 @@ $memoriamRibbonActive = (date('Y-m-d') <= '2026-11-28');
         </article>
       </div>
 
-      <!-- Card 4: Nebulae (Caelum-IV) & Escape Velocity: Ad Astra Chronicles -->
+      <!-- Card 4: Starfield Calibration (Cosmic Tidal Lock Remixes) -->
       <div class="col-md-6">
         <article class="memoriam-card d-flex flex-column justify-content-between">
           <div>
-            <span class="memoriam-pill-badge">4. The New World &amp; Star Date Chronicles</span>
+            <span class="memoriam-pill-badge">4. Cosmic Tidal Lock&trade; Remix Album</span>
+            <h3 class="h5 fw-bold mb-2">
+              <a href="https://music.raggiesoft.com/the-stardust-engine/2011-starfield-calibration?track=1-01-the-stardust-engine" class="text-decoration-none" style="color: var(--mem-text);">
+                <em>Starfield Calibration</em> (2011)
+              </a>
+            </h3>
+            <p class="small" style="color: var(--mem-text-secondary);">
+              A 14-track <em>Cosmic Tidal Lock&trade;</em> remix album of classic Stardust Engine songs&mdash;rebuilding <a href="https://music.raggiesoft.com/the-stardust-engine/2011-starfield-calibration?track=1-01-the-stardust-engine"><em>&ldquo;The Stardust Engine,&rdquo;</em></a> <a href="https://music.raggiesoft.com/the-stardust-engine/2011-starfield-calibration?track=1-02-electric-color"><em>&ldquo;Electric Color,&rdquo;</em></a> <a href="https://music.raggiesoft.com/the-stardust-engine/2011-starfield-calibration?track=1-05-my-anchor-holds"><em>&ldquo;My Anchor Holds,&rdquo;</em></a> and <a href="https://music.raggiesoft.com/the-stardust-engine/2011-starfield-calibration?track=1-08-atmosphere"><em>&ldquo;Atmosphere&rdquo;</em></a> inside a zero-gravity planetarium dome. I never would have done these remixes if Captain Picard hadn&rsquo;t given me the curiosity to look up and wonder what&rsquo;s out there.
+            </p>
+          </div>
+          <div class="d-flex flex-wrap gap-2 mt-3">
+            <a href="https://music.raggiesoft.com/the-stardust-engine/2011-starfield-calibration?track=1-01-the-stardust-engine" class="btn btn-sm btn-primary text-white fw-bold">
+              <i class="ph-duotone ph-sparkle me-1" aria-hidden="true"></i> Stream Starfield Calibration (14 Tracks)
+            </a>
+            <a href="https://music.raggiesoft.com/the-stardust-engine/2011-starfield-calibration?track=1-08-atmosphere" class="btn btn-sm memoriam-btn-card-secondary">
+              <i class="ph-duotone ph-headphones me-1" aria-hidden="true"></i> &ldquo;Atmosphere&rdquo; (Cosmic Mix)
+            </a>
+          </div>
+        </article>
+      </div>
+
+      <!-- Card 5: Nebulae (Caelum-IV) & Escape Velocity: Ad Astra Chronicles -->
+      <div class="col-12">
+        <article class="memoriam-card d-flex flex-column justify-content-between">
+          <div>
+            <span class="memoriam-pill-badge">5. The New World &amp; Star Date Chronicles</span>
             <h3 class="h5 fw-bold mb-2">
               <a href="https://nebulae.raggiesoft.com" class="text-decoration-none" style="color: var(--mem-text);">
                 RaggieSoft Nebulae (Caelum-IV) &amp; <em>Escape Velocity: Ad Astra</em>
