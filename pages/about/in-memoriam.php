@@ -521,26 +521,26 @@ $memoriamRibbonActive = (date('Y-m-d') <= '2026-11-28');
         </article>
       </div>
 
-      <!-- Card 4: Nebulae & Ocean View Archives -->
+      <!-- Card 4: Nebulae (Caelum-IV) & Escape Velocity: Ad Astra Chronicles -->
       <div class="col-md-6">
         <article class="memoriam-card d-flex flex-column justify-content-between">
           <div>
-            <span class="memoriam-pill-badge">4. The Master Star-Chart &amp; Sci-Fi Literature</span>
+            <span class="memoriam-pill-badge">4. The New World &amp; Star Date Chronicles</span>
             <h3 class="h5 fw-bold mb-2">
               <a href="https://nebulae.raggiesoft.com" class="text-decoration-none" style="color: var(--mem-text);">
-                RaggieSoft Nebulae &amp; <em>Project: KNOX</em>
+                RaggieSoft Nebulae (Caelum-IV) &amp; <em>Escape Velocity: Ad Astra</em>
               </a>
             </h3>
             <p class="small" style="color: var(--mem-text-secondary);">
-              Even our network architecture is organized like a stellar cartography lab: <a href="https://nebulae.raggiesoft.com"><strong>The RaggieSoft Nebulae Observatory</strong></a> maps every route across all nine properties as constellations, while <a href="https://books.raggiesoft.com/knox"><strong><em>Project: KNOX (The Quantum Directive)</em></strong></a> on the RaggieSoft Book Reader carries our storytelling into deep-space science fiction.
+              During Movement IV of <em>&ldquo;Escape Velocity (Ad Astra),&rdquo;</em> Cassidy and her family set down aboard the <em>U.S.S. Aethelgard</em> on <strong>Caelum-IV</strong> (<a href="https://nebulae.raggiesoft.com"><code>nebulae.raggiesoft.com</code></a>)&mdash;a tidally locked, purple-ocean moon orbiting the ringed super-Jovian Vespera (<em>Kepler-442c</em>) where the living biosphere pulses at 120.0 BPM. Follow their exploration in the <a href="https://books.raggiesoft.com/ad-astra"><strong><em>Escape Velocity: Ad Astra</em></strong></a> book series (logged at <code>Stardate 49601.0</code>) alongside <a href="https://books.raggiesoft.com/knox"><strong><em>Project: KNOX</em></strong></a>.
             </p>
           </div>
           <div class="d-flex flex-wrap gap-2 mt-3">
             <a href="https://nebulae.raggiesoft.com" class="btn btn-sm btn-primary">
-              <i class="ph-duotone ph-compass me-1" aria-hidden="true"></i> Open Nebulae Star-Chart
+              <i class="ph-duotone ph-planet me-1" aria-hidden="true"></i> Explore Caelum-IV (Nebulae)
             </a>
-            <a href="https://books.raggiesoft.com/knox" class="btn btn-sm btn-outline-secondary">
-              <i class="ph-duotone ph-book-bookmark me-1" aria-hidden="true"></i> Read Project: KNOX
+            <a href="https://books.raggiesoft.com/ad-astra" class="btn btn-sm btn-outline-secondary">
+              <i class="ph-duotone ph-book-open-text me-1" aria-hidden="true"></i> Read Ad Astra (Stardate 49601)
             </a>
           </div>
         </article>

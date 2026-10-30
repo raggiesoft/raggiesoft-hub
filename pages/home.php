@@ -372,13 +372,48 @@ $pageTitle = "RaggieSoft™ | The Central Hub";
        */
       $constellations = [
         [
+          'imgSrc' => $cdnBaseUrl . '/nebulae/images/og-ad-astra-landing.jpg',
+          'imgAlt' => 'U.S.S. Aethelgard cargo hatch open onto Caelum-IV — Escape Velocity (Ad Astra) 16:9 OpenGraph Preview',
+          'fallbackText' => 'RaggieSoft Nebulae (Ad Astra)',
+          'aspectRatio' => '16:9',
+          'badge' => 'PHP 8.5 • Caelum-IV Planetary Survey',
+          'title' => 'Nebulae: Ad Astra (Caelum-IV)',
+          'description' => 'The 1996 "Escape Velocity (Ad Astra)" interactive short film storyboard and Caelum-IV planetary survey—where Cassidy and her family land aboard the U.S.S. Aethelgard.',
+          'buttonProps' => [
+            'href' => 'https://nebulae.raggiesoft.com/',
+            'text' => 'Explore Caelum-IV',
+            'variant' => 'brand',
+            'icon' => 'ph-duotone ph-planet',
+            'iconPosition' => 'before',
+            'fullWidth' => true
+          ],
+          'secondaryButtons' => [
+            [
+              'href' => 'https://books.raggiesoft.com/ad-astra',
+              'text' => 'Read Ad Astra Book',
+              'variant' => 'neutral',
+              'appearance' => 'outlined',
+              'size' => 'small',
+              'icon' => 'ph-duotone ph-book-open-text'
+            ],
+            [
+              'href' => 'https://music.raggiesoft.com/the-stardust-engine/1996-ad-astra-single?track=1-01-escape-velocity-ad-astra',
+              'text' => 'Stream 15:33 Suite',
+              'variant' => 'neutral',
+              'appearance' => 'outlined',
+              'size' => 'small',
+              'icon' => 'ph-duotone ph-headphones'
+            ]
+          ]
+        ],
+        [
           'imgSrc' => $cdnBaseUrl . '/raggiesoft-books/images/og/contemporary_v2.jpg',
           'imgAlt' => 'Ocean View Archives Book Reader 16:9 OpenGraph Preview',
           'fallbackText' => 'Ocean View Archives',
           'aspectRatio' => '16:9',
           'badge' => 'PHP 8.5 • Stardust Library SPA',
           'title' => 'Ocean View Archives',
-          'description' => 'The literary imprint and accessible e-book reader preserving CC BY-SA 4.0 grounded novels and fantasy sagas at books.raggiesoft.com.',
+          'description' => 'The literary imprint and accessible e-book reader preserving CC BY-SA 4.0 grounded novels and cosmic chronicles at books.raggiesoft.com.',
           'buttonProps' => [
             'href' => 'https://books.raggiesoft.com/',
             'text' => 'Read Novels',
@@ -386,6 +421,24 @@ $pageTitle = "RaggieSoft™ | The Central Hub";
             'icon' => 'ph-duotone ph-book-open',
             'iconPosition' => 'before',
             'fullWidth' => true
+          ],
+          'secondaryButtons' => [
+            [
+              'href' => 'https://books.raggiesoft.com/ad-astra',
+              'text' => 'Ad Astra (Stardate 49601)',
+              'variant' => 'neutral',
+              'appearance' => 'outlined',
+              'size' => 'small',
+              'icon' => 'ph-duotone ph-planet'
+            ],
+            [
+              'href' => 'https://books.raggiesoft.com/stardust-engine',
+              'text' => 'Stardust Engine',
+              'variant' => 'neutral',
+              'appearance' => 'outlined',
+              'size' => 'small',
+              'icon' => 'ph-duotone ph-rocket-launch'
+            ]
           ]
         ],
         [

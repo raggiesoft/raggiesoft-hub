@@ -51,23 +51,12 @@ if (strpos($request_uri, '/raggiesoft-media') === 0) {
     exit;
 }
 if (strpos($request_uri, '/raggiesoft-books') === 0) {
-    if (strpos($request_uri, '/raggiesoft-books/stardust-engine') === 0) {
-        header('Location: https://books.raggiesoft.com/stardust-engine' . $qs, true, 301);
-        exit;
-    }
-    if (strpos($request_uri, '/raggiesoft-books/aethel-saga') === 0) {
-        header('Location: https://books.raggiesoft.com/aethel-saga' . $qs, true, 301);
-        exit;
-    }
-    if (strpos($request_uri, '/raggiesoft-books/knox') === 0) {
-        header('Location: https://books.raggiesoft.com/knox' . $qs, true, 301);
-        exit;
-    }
     if (strpos($request_uri, '/raggiesoft-books/ocean-view-archives') === 0) {
         header('Location: https://books.raggiesoft.com/' . $qs, true, 301);
         exit;
     }
-    header('Location: https://books.raggiesoft.com/' . $qs, true, 301);
+    $bookSubPath = ltrim(substr($request_uri, strlen('/raggiesoft-books')), '/');
+    header('Location: https://books.raggiesoft.com/' . $bookSubPath . $qs, true, 301);
     exit;
 }
 if (strpos($request_uri, '/family') === 0) {
@@ -130,11 +119,11 @@ if (json_last_error() !== JSON_ERROR_NONE) {
     die('Critical Error: Invalid JSON in settings.json');
 }
 
-// Extract Core Globals
-$siteName = $settings['siteName']; 
-$projectSlug = $settings['projectSlug']; 
-$cdnBaseUrl = $settings['cdnBaseUrl'];
-$defaultTheme = $settings['defaultTheme']; 
+// Extract Core Globals (with hardened fallback for cdnBaseUrl so missing/empty keys never break CSS/asset resolution)
+$siteName = $settings['siteName'] ?? 'RaggieSoft'; 
+$projectSlug = $settings['projectSlug'] ?? 'raggiesoft-corporate'; 
+$cdnBaseUrl = !empty($settings['cdnBaseUrl']) ? rtrim($settings['cdnBaseUrl'], '/') : 'https://assets.raggiesoft.com';
+$defaultTheme = $settings['defaultTheme'] ?? 'light'; 
 
 // Build Defaults Array
 $defaults = array_merge($settings['defaults'], [
