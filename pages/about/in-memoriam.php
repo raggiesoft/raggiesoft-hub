@@ -450,7 +450,7 @@ $memoriamRibbonActive = (date('Y-m-d') <= '2026-11-28');
         <div>
           <span class="memoriam-section-eyebrow">The Moral &amp; Creative Compass</span>
           <h2 id="legacy-compass-heading" class="h4 fw-bold mb-3">
-            Why the Bridge of the <em>1701-D</em> Matters Here
+            Why the Bridge of the <em>NCC-1701-D</em> Matters Here
           </h2>
           <p>
             Every creative universe has a point of ignition&mdash;an early memory that quietly shapes everything built decades later. Across the RaggieSoft network, our recurring themes trace straight back to those weeknights in front of the family television:

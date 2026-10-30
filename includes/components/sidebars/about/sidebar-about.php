@@ -62,7 +62,7 @@ $currentUri = $_SERVER['REQUEST_URI'] ?? '';
     </a>
 
     <a href="/in-memoriam" class="btn btn-sm <?= str_contains($currentUri, '/in-memoriam') ? 'btn-primary text-white fw-bold' : 'btn-ghost text-body' ?> w-100 text-start justify-content-start" style="text-align: left;">
-        <i class="ph-duotone ph-shooting-star" aria-hidden="true"></i> In Memoriam (1701-D)
+        <i class="ph-duotone ph-shooting-star" aria-hidden="true"></i> In Memoriam (NCC-1701-D)
     </a>
 </div>
 
