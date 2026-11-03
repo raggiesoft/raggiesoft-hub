@@ -463,7 +463,7 @@ $memoriamRibbonActive = (date('Y-m-d') <= '2026-11-28');
               <strong>Dignity &amp; Principle Over Profit:</strong> Whether it is <a href="https://stardust.raggiesoft.com/story/nine-figure-refusal">The Stardust Engine walking away from a predatory corporate contract</a> or keeping our code and creative archives open under MIT and CC BY-SA 4.0 licenses, integrity always comes first.
             </li>
             <li class="mb-0">
-              <strong>No One Left Behind:</strong> Every ship, stage, and web application we build is engineered around accessibility (WCAG 2.1 AA / Section 508) and chosen family.
+              <strong>No One Left Behind:</strong> Every ship, stage, and web application we build is engineered around universal accessibility and chosen family.
             </li>
           </ul>
         </div>

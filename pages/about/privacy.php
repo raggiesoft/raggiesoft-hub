@@ -54,12 +54,12 @@
 
                     <!-- 1. INTRODUCTION & OPERATOR IDENTITY -->
                     <section class="mb-5" aria-labelledby="priv-intro-heading">
-                        <h2 id="priv-intro-heading" class="h4 fw-bold mb-3">1. Operator Identity &amp; Zero-Database Architecture</h2>
+                        <h2 id="priv-intro-heading" class="h4 fw-bold mb-3">1. Operator Identity &amp; Account-Free Privacy</h2>
                         <p>
                             Welcome to the <strong>RaggieSoft</strong> network (including <code>raggiesoft.com</code>, <code>music.raggiesoft.com</code>, <code>books.raggiesoft.com</code>, <code>engineroom.raggiesoft.com</code>, <code>stardust.raggiesoft.com</code>, <code>corporate.raggiesoft.com</code>, <code>lore.raggiesoft.com</code>, <code>nebulae.raggiesoft.com</code>, <code>storetrainer.raggiesoft.com</code>, <code>backstage.raggiesoft.com</code>, and <code>michaelpragsdale.com</code>, collectively the <strong>&ldquo;Network&rdquo;</strong>).
                         </p>
                         <p>
-                            The Network is owned and operated by <strong>Michael P. Ragsdale</strong>, an individual residing in Norfolk, Virginia, operating under the unincorporated creative imprints <strong>RaggieSoft</strong>, <strong>RaggieSoft Media</strong>, <strong>Engine Room Records</strong> (music imprint), and <strong>Ocean View Archives</strong> (literary/book publishing imprint)—each strictly without &ldquo;LLC,&rdquo; &ldquo;Inc.,&rdquo; or &ldquo;Corp.&rdquo; All websites in the Network are engineered using a <strong>100% static, flat-file, Zero-Database Architecture</strong>. There are no user registration accounts, no password databases, no comment sections, and no behavioral ad-broker profiles anywhere on the Network.
+                            The Network is owned and operated by <strong>Michael P. Ragsdale</strong>, an individual residing in Norfolk, Virginia, operating under the unincorporated creative imprints <strong>RaggieSoft</strong>, <strong>RaggieSoft Media</strong>, <strong>Engine Room Records</strong> (music imprint), and <strong>Ocean View Archives</strong> (literary/book publishing imprint)—each strictly without &ldquo;LLC,&rdquo; &ldquo;Inc.,&rdquo; or &ldquo;Corp.&rdquo; All websites in the Network are designed to be <strong>100% account-free</strong>. There are no user registration accounts, no password databases, no comment sections, and no behavioral ad-broker profiles anywhere on the Network.
                         </p>
                     </section>
 
@@ -72,34 +72,34 @@
                         <!-- A. Local Browser Storage -->
                         <div class="p-4 rounded bg-body-tertiary border mb-3">
                             <h3 class="h5 h6 fw-bold text-primary mb-2">
-                                <i class="ph-duotone ph-browser me-2" aria-hidden="true"></i>A. On-Device Browser Storage (<code>localStorage</code> &amp; PWA Cache — Never Sent to Server)
+                                <i class="ph-duotone ph-browser me-2" aria-hidden="true"></i>A. On-Device Browser Preferences (Saved Only on Your Device)
                             </h3>
                             <p class="small text-body mb-2">
-                                To remember your accessibility and playback preferences without requiring an account or tracking cookie, our web applications store preference keys strictly inside your own browser&rsquo;s <code>localStorage</code> and Progressive Web App Service Worker cache, including:
+                                To remember your reading, display, and playback preferences without requiring an account or tracking cookie, our apps save your settings directly inside your own web browser on your device, including:
                             </p>
                             <ul class="small text-body-secondary mb-0">
-                                <li><strong>Theme &amp; Motion Accessibility Settings:</strong> Light/Dark mode overrides (<code>color-scheme</code>, <code>engine_room_settings</code>) and reduced-motion preferences (<code>cosmic-motion</code>).</li>
-                                <li><strong>Audio Player &amp; Book Reader Progress:</strong> Your last played track, queue, and timestamp on <code>music.raggiesoft.com</code> (<code>raggiesoft_music_session_v1</code>), preferred streaming service (<code>raggiesoft_preferred_dsp</code>), and reading position on <code>books.raggiesoft.com</code>.</li>
+                                <li><strong>Theme &amp; Display Settings:</strong> Light/Dark mode choices and reduced-motion preferences.</li>
+                                <li><strong>Music Player &amp; Book Reader Progress:</strong> Your last played song, queue, and playback position on <code>music.raggiesoft.com</code>, preferred streaming service, and reading bookmark on <code>books.raggiesoft.com</code>.</li>
                             </ul>
                         </div>
 
                         <!-- B. Cloudflare -->
                         <div class="p-4 rounded bg-body-tertiary border mb-3">
                             <h3 class="h5 h6 fw-bold text-primary mb-2">
-                                <i class="ph-duotone ph-shield-checkered me-2" aria-hidden="true"></i>B. Edge CDN &amp; DDoS Security Perimeter (Cloudflare, Inc.)
+                                <i class="ph-duotone ph-shield-checkered me-2" aria-hidden="true"></i>B. Website Security &amp; Content Delivery (Cloudflare, Inc.)
                             </h3>
                             <p class="small text-body mb-0">
-                                All traffic to the Network passes through <strong>Cloudflare</strong> as a reverse-proxy Content Delivery Network (CDN) and Web Application Firewall (WAF). Cloudflare processes network metadata (including your IP address, Autonomous System Number, and HTTP request headers) to mitigate DDoS attacks, block malicious bots, and serve cached static assets. Cloudflare may place strictly necessary security cookies (such as <code>__cf_bm</code> or <code>cf_clearance</code>) to distinguish human visitors from automated abuse. See <a href="https://www.cloudflare.com/privacypolicy/" target="_blank" rel="noopener noreferrer">Cloudflare&rsquo;s Privacy Policy ↗</a>.
+                                All traffic to the Network passes through <strong>Cloudflare</strong> for security protection and fast page delivery. Cloudflare processes standard connection details (such as your IP address and browser request headers) to block automated abuse and deliver images and audio smoothly. Cloudflare may place strictly necessary security cookies to distinguish human visitors from automated bots. See <a href="https://www.cloudflare.com/privacypolicy/" target="_blank" rel="noopener noreferrer">Cloudflare&rsquo;s Privacy Policy ↗</a>.
                             </p>
                         </div>
 
                         <!-- C. DigitalOcean Server Logs -->
                         <div class="p-4 rounded bg-body-tertiary border mb-3">
                             <h3 class="h5 h6 fw-bold text-primary mb-2">
-                                <i class="ph-duotone ph-hard-drives me-2" aria-hidden="true"></i>C. Origin Web Server (&ldquo;Jessica&rdquo;) &amp; Asset CDN Logs (DigitalOcean NYC1)
+                                <i class="ph-duotone ph-hard-drives me-2" aria-hidden="true"></i>C. Standard Web Hosting Security Logs (DigitalOcean)
                             </h3>
                             <p class="small text-body mb-0">
-                                Our origin server hosted in DigitalOcean&rsquo;s NYC1 datacenter and our static media bucket (<code>assets.raggiesoft.com</code> on DigitalOcean Spaces) record standard HTTP access logs (<code>/var/log/nginx/access.log</code>) containing the requesting IP address, date/time stamp, requested URI, HTTP status code, bytes transferred, referrer, and User-Agent string. These logs are used strictly for security auditing, uptime monitoring, and debugging, are rotated automatically, and are never sold or shared with third-party marketers.
+                                Our web servers hosted with DigitalOcean record standard web access logs containing the requesting IP address, date/time stamp, requested page, status code, and browser type. These logs are used strictly for security, uptime monitoring, and troubleshooting, are rotated automatically, and are never sold or shared with third-party marketers.
                             </p>
                         </div>
 
@@ -166,9 +166,9 @@
                         </p>
 
                         <div class="p-3 rounded bg-body-tertiary border small">
-                            <strong class="d-block mb-1 text-uppercase font-monospace">Public Revision &amp; Audit Ledger</strong>
+                            <strong class="d-block mb-1 text-uppercase font-monospace">Revision History</strong>
                             <ul class="mb-0 text-body-secondary">
-                                <li><strong>October 26, 2026:</strong> Replaced dynamic month/year timestamp with hardcoded git-verifiable Effective Date (March 29, 2026) and Last Updated date (October 26, 2026); unified disclosures across all subdomains covering on-device <code>localStorage</code> keys, Cloudflare WAF/CDN, DigitalOcean NYC1 server logs, Google Analytics 4 (<code>G-P9RG9JVYB6</code>), Microsoft Bookings / Microsoft 365, and Fourthwall Merchant-of-Record separation.</li>
+                                <li><strong>October 26, 2026:</strong> Updated disclosures across all RaggieSoft websites covering on-device browser preferences, Cloudflare security, web hosting logs, Google Analytics, Microsoft Bookings / Microsoft 365, and Fourthwall storefront separation.</li>
                                 <li><strong>March 29, 2026:</strong> Initial publication of RaggieSoft network Privacy Policy.</li>
                             </ul>
                         </div>

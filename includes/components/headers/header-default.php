@@ -50,7 +50,7 @@ $isContact     = str_starts_with($request_uri, '/contact');
       </li>
       <li>
         <a href="https://michaelpragsdale.com/build-team">
-          <i class="ph-duotone ph-users-three text-info" aria-hidden="true"></i> The Build Team (DevOps Family)
+          <i class="ph-duotone ph-users-three text-info" aria-hidden="true"></i> The Studio Family
         </a>
       </li>
       <li>
@@ -82,7 +82,7 @@ $isContact     = str_starts_with($request_uri, '/contact');
       </li>
       <li>
         <a href="https://engineroom.raggiesoft.com/isrc">
-          <i class="ph-duotone ph-barcode text-success" aria-hidden="true"></i> Official ISRC Registry (QTAHP)
+          <i class="ph-duotone ph-barcode text-success" aria-hidden="true"></i> Official Music Catalog Registry
         </a>
       </li>
       <li>

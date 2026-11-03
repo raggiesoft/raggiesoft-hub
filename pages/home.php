@@ -351,10 +351,10 @@ $pageTitle = "RaggieSoft™ | The Central Hub";
     
     <div class="text-center border-bottom pb-3 mb-4">
         <h2 id="spokes-title" class="h4 fw-bold text-uppercase text-body mb-1">
-            <i class="ph-duotone ph-graph me-2 text-primary"></i>Global Subdomain Constellations
+            <i class="ph-duotone ph-graph me-2 text-primary"></i>Explore the RaggieSoft Universe
         </h2>
         <p class="small text-body-secondary mb-0">
-            Direct routing across the RaggieSoft multi-stack ecosystem &mdash; aligned with the global network bar above.
+            Stories, original music, interactive worlds, and creative archives across the RaggieSoft network.
         </p>
     </div>
 
@@ -365,7 +365,7 @@ $pageTitle = "RaggieSoft™ | The Central Hub";
        * 2. Engine Room Records (engineroom.raggiesoft.com + Listening Room + Stardust Engine)
        * 3. RaggieSoft Media (corporate.raggiesoft.com)
        * 4. Michael P. Ragsdale (michaelpragsdale.com Executive Dossier)
-       * 5. The DevOps Family (/family — Paige, Jessica, Harper, Jenna, Sarah, Amanda & Elara)
+       * 5. The Studio Family (/family — Paige, Jessica, Harper, Jenna, Sarah, Amanda & Elara)
        *
        * Every card displays its official 16:9 OpenGraph (`og:image`) or hero artwork inside
        * a standard DaisyUI 5 `.card` component.
@@ -376,7 +376,7 @@ $pageTitle = "RaggieSoft™ | The Central Hub";
           'imgAlt' => 'U.S.S. Aethelgard cargo hatch open onto Caelum-IV — Escape Velocity (Ad Astra) 16:9 OpenGraph Preview',
           'fallbackText' => 'RaggieSoft Nebulae (Ad Astra)',
           'aspectRatio' => '16:9',
-          'badge' => 'PHP 8.5 • Caelum-IV Planetary Survey',
+          'badge' => 'Interactive Storyboard • Caelum-IV',
           'title' => 'Nebulae: Ad Astra (Caelum-IV)',
           'description' => 'The 1996 "Escape Velocity (Ad Astra)" interactive short film storyboard and Caelum-IV planetary survey—where Cassidy and her family land aboard the U.S.S. Aethelgard.',
           'buttonProps' => [
@@ -411,9 +411,9 @@ $pageTitle = "RaggieSoft™ | The Central Hub";
           'imgAlt' => 'Ocean View Archives Book Reader 16:9 OpenGraph Preview',
           'fallbackText' => 'Ocean View Archives',
           'aspectRatio' => '16:9',
-          'badge' => 'PHP 8.5 • Stardust Library SPA',
+          'badge' => 'Literary Imprint • Book Reader',
           'title' => 'Ocean View Archives',
-          'description' => 'The literary imprint and accessible e-book reader preserving CC BY-SA 4.0 grounded novels and cosmic chronicles at books.raggiesoft.com.',
+          'description' => 'Our literary publishing imprint and accessible e-book reader preserving CC BY-SA 4.0 grounded novels and cosmic chronicles at books.raggiesoft.com.',
           'buttonProps' => [
             'href' => 'https://books.raggiesoft.com/',
             'text' => 'Read Novels',
@@ -446,9 +446,9 @@ $pageTitle = "RaggieSoft™ | The Central Hub";
           'imgAlt' => 'Engine Room Records 16:9 OpenGraph Preview',
           'fallbackText' => 'Engine Room Records',
           'aspectRatio' => '16:9',
-          'badge' => 'Astro 6 • SvelteKit 2 • Nuxt 4',
+          'badge' => 'Record Label • Streaming & Lyrics',
           'title' => 'Engine Room Records',
-          'description' => 'The record label portal, studio engineering documentation, and artist roster—plus gapless streaming in The Listening Room and The Stardust Engine archive.',
+          'description' => 'Our independent record label portal, behind-the-scenes studio stories, and artist roster—plus gapless streaming in The Listening Room and The Stardust Engine archive.',
           'buttonProps' => [
             'href' => 'https://engineroom.raggiesoft.com/',
             'text' => 'Enter Label Portal',
@@ -481,9 +481,9 @@ $pageTitle = "RaggieSoft™ | The Central Hub";
           'imgAlt' => 'RaggieSoft Media Corporate Hub 16:9 OpenGraph Preview',
           'fallbackText' => 'RaggieSoft Media',
           'aspectRatio' => '16:9',
-          'badge' => 'Bootstrap 5.3.8 • Static SSG',
+          'badge' => 'Creative Imprint • Licensing & Media',
           'title' => 'RaggieSoft Media',
-          'description' => 'Real-world B2B corporate hub housing master & commercial sync licensing, open-source project portals, and IP governance at corporate.raggiesoft.com.',
+          'description' => 'Commercial music licensing, open-source software projects, and brand resources at corporate.raggiesoft.com.',
           'buttonProps' => [
             'href' => 'https://corporate.raggiesoft.com/',
             'text' => 'Corporate Portal',
@@ -498,12 +498,12 @@ $pageTitle = "RaggieSoft™ | The Central Hub";
           'imgAlt' => 'Michael P. Ragsdale Executive Portfolio 16:9 OpenGraph Preview',
           'fallbackText' => 'Michael P. Ragsdale',
           'aspectRatio' => '16:9',
-          'badge' => 'Angular 19 • Zoneless Signals',
+          'badge' => 'Founder & Creator • Portfolio',
           'title' => 'Michael P. Ragsdale',
-          'description' => 'Executive Systems Architect & Section 508 Compliance Engineer portfolio, multi-stack architecture matrix, and technical dossier at michaelpragsdale.com.',
+          'description' => 'The professional engineering portfolio, resume, and background of RaggieSoft founder and creator Michael P. Ragsdale at michaelpragsdale.com.',
           'buttonProps' => [
             'href' => 'https://michaelpragsdale.com',
-            'text' => 'View Dossier',
+            'text' => 'View Portfolio',
             'variant' => 'brand',
             'icon' => 'ph-duotone ph-briefcase',
             'iconPosition' => 'before',
@@ -512,15 +512,15 @@ $pageTitle = "RaggieSoft™ | The Central Hub";
         ],
         [
           'imgSrc' => $cdnBaseUrl . '/raggiesoft-lore/family/images/scenes/paige-michael-hug.jpg',
-          'imgAlt' => 'Paige comforting Michael — The RaggieSoft DevOps Family',
-          'fallbackText' => 'The DevOps Family',
+          'imgAlt' => 'Paige comforting Michael — The RaggieSoft Studio Family',
+          'fallbackText' => 'The Studio Family',
           'aspectRatio' => '16:9',
-          'badge' => 'PHP 8.5 • Bash • Rclone CI/CD',
-          'title' => 'The DevOps Family',
-          'description' => 'Our "Personified DevOps" build team—where Paige (paige.php, Literary Editor & Safe Person), Jessica (jessica.raggiesoft.com), Harper (harper.sh), Jenna (jenna-sync.sh), Sarah (sarah-deploy.sh), and Amanda & Elara power our entire pipeline.',
+          'badge' => 'Creative Studio • Behind the Scenes',
+          'title' => 'The Studio Family',
+          'description' => 'Meet the creative companions—Paige, Jessica, Harper, Jenna, Sarah, and Amanda & Elara—who inspire and organize the RaggieSoft creative universe.',
           'buttonProps' => [
-            'href' => 'https://michaelpragsdale.com/build-team',
-            'text' => 'Meet the Build Team',
+            'href' => '/about/family',
+            'text' => 'Meet the Family',
             'variant' => 'brand',
             'icon' => 'ph-duotone ph-heartbeat',
             'iconPosition' => 'before',
@@ -547,18 +547,18 @@ $pageTitle = "RaggieSoft™ | The Central Hub";
 
         <div class="d-flex flex-column flex-md-row align-items-md-center justify-content-between gap-3 p-2">
           <div>
-            <span class="constellation-stack-badge mb-2">Stardust Engine CMS (Elara) &bull; Open-Source MIT Framework</span>
-            <h3 class="h5 fw-bold mb-1 text-body">Clone the Zero-Database CMS Powering This Hub</h3>
+            <span class="constellation-stack-badge mb-2">Open Culture &bull; CC BY-SA 4.0 &amp; MIT Licensed</span>
+            <h3 class="h5 fw-bold mb-1 text-body">Free to Read, Stream, and Share</h3>
             <p class="mb-0 small text-body-secondary">
-              The Stardust Engine CMS combines native PHP 8.5 flat-file JSON routing with the Elara Vanilla JS SPA router for instant page transitions and zero SQL surface area.
+              Every novel, song, and open-source project across the RaggieSoft network is published freely for readers, listeners, and fellow creators to enjoy.
             </p>
           </div>
           <div class="flex-shrink-0 d-flex flex-wrap gap-2">
-            <a href="https://github.com/raggiesoft/stardust-engine-cms" class="btn btn-primary">
-              <i  class="ph-duotone ph-github-logo"></i> View on GitHub
+            <a href="https://books.raggiesoft.com/" class="btn btn-primary">
+              <i  class="ph-duotone ph-book-open"></i> Read Novels
             </a>
-            <a href="https://corporate.raggiesoft.com/open-source/stardust-engine" class="btn btn-neutral btn-outline">
-              <i  class="ph-duotone ph-book-open-text"></i> Architecture Docs
+            <a href="https://music.raggiesoft.com/" class="btn btn-neutral btn-outline">
+              <i  class="ph-duotone ph-headphones"></i> Listen to Music
             </a>
             <a href="/in-memoriam" class="btn btn-neutral btn-outline">
               <i class="ph-duotone ph-shooting-star" aria-hidden="true"></i> Cosmic Dedication (Ad Astra)

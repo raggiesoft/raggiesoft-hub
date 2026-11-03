@@ -101,7 +101,7 @@ if (isset($customPageAssets) && is_array($customPageAssets)) {
     $isMemoriamRoute = ($resolvedPath === '/in-memoriam' || $resolvedPath === '/about/in-memoriam' || (($pageConfig['schemaType'] ?? '') === 'MemorialTribute'));
     $resolvedCanonical = $ogUrl ?? ('https://' . ($_SERVER['HTTP_HOST'] ?? 'raggiesoft.com') . ($isMemoriamRoute ? '/in-memoriam' : $resolvedPath));
     $resolvedOgTitle = $ogTitle ?? $pageTitle ?? 'RaggieSoft';
-    $resolvedOgDesc = !empty($ogDescription) ? $ogDescription : 'RaggieSoft is the independent software engineering, generative audio production (Engine Room Records), and literary publishing (Ocean View Archives) network of Michael P. Ragsdale.';
+    $resolvedOgDesc = !empty($ogDescription) ? $ogDescription : 'RaggieSoft is the independent creative storytelling, original music (Engine Room Records), and literary publishing (Ocean View Archives) network of Michael P. Ragsdale.';
     $resolvedOgImage = !empty($ogImage)
         ? $ogImage
         : ($isMemoriamRoute
@@ -207,7 +207,7 @@ if (isset($customPageAssets) && is_array($customPageAssets)) {
         "givenName" => "Michael",
         "additionalName" => "P.",
         "familyName" => "Ragsdale",
-        "jobTitle" => "Systems Architect & Section 508 Accessibility Engineer",
+        "jobTitle" => "Founder & Creative Director",
         "url" => "https://michaelpragsdale.com",
         "worksFor" => [
             "@id" => "https://raggiesoft.com/#organization"
@@ -219,7 +219,7 @@ if (isset($customPageAssets) && is_array($customPageAssets)) {
         "@id" => "https://raggiesoft.com/#website",
         "url" => "https://raggiesoft.com",
         "name" => "RaggieSoft Hub",
-        "description" => "The central portal for RaggieSoft software architecture, Engine Room Records, Ocean View Archives, and The Stardust Engine.",
+        "description" => "The central portal for RaggieSoft creative storytelling, Engine Room Records, Ocean View Archives, and The Stardust Engine.",
         "inLanguage" => "en-US",
         "publisher" => [
             "@id" => "https://raggiesoft.com/#organization"

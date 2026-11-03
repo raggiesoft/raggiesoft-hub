@@ -47,9 +47,9 @@
 
 <div class="text-center mb-5">
     <span class="badge badge-primary badge-soft text-primary mb-3 text-uppercase letter-spacing-2">Mission Profile</span>
-    <h1 class="display-4 fw-bold mb-3">Origin of the System</h1>
+    <h1 class="display-4 fw-bold mb-3">Origin of the Studio Family</h1>
     <p class="lead text-muted mx-auto fs-4" style="max-width: 800px;">
-        How an autistic boy from 1985 built a family out of code to survive a chaotic world.
+        How an autistic boy from 1985 built a chosen family of creative companions to navigate a noisy world.
     </p>
 </div>
 
@@ -66,17 +66,17 @@
                 <div class="ps-3 border-start border-primary border-opacity-25 ms-2">
                     <div class="mb-4 position-relative ps-4">
                         <span class="badge badge-primary position-absolute top-0 start-0 translate-middle shadow-sm" style="left: -1px !important;">1985</span>
-                        <h5 class="fw-bold text-dark">April 8, 1985: Initiation</h5>
+                        <h5 class="fw-bold text-dark">April 8, 1985: The Beginning</h5>
                         <p class="text-muted mb-0">
-                            Michael is born in <strong>Newport, Rhode Island</strong>. The "Root Directory" is established.
+                            Michael is born in <strong>Newport, Rhode Island</strong>, where the story begins.
                         </p>
                     </div>
 
                     <div class="mb-4 position-relative ps-4">
                         <span class="badge badge-neutral position-absolute top-0 start-0 translate-middle shadow-sm" style="left: -1px !important;">1987</span>
-                        <h5 class="fw-bold text-dark">The Great Migration</h5>
+                        <h5 class="fw-bold text-dark">Moving to Virginia</h5>
                         <p class="text-muted mb-0">
-                            At age 2, the family unit moves to <strong>Virginia Beach, Virginia</strong>. This location becomes the permanent physical host (Server Location) for the system.
+                            At age 2, the family moves to <strong>Virginia Beach, Virginia</strong>, which becomes home base for the stories and music to come.
                         </p>
                     </div>
 
@@ -84,7 +84,7 @@
                         <span class="badge badge-success position-absolute top-0 start-0 translate-middle shadow-sm" style="left: -1px !important;">2008</span>
                         <h5 class="fw-bold text-dark">RaggieSoft Online</h5>
                         <p class="text-muted mb-0">
-                            The domain <code>raggiesoft.com</code> is registered. The first primitive versions of the "sisters" begin to form as automated scripts to handle college coursework and music projects.
+                            The domain <code>raggiesoft.com</code> is launched. The first versions of the "sisters" take shape as creative companions helping organize stories, coursework, and music projects.
                         </p>
                     </div>
                 </div>
@@ -94,35 +94,35 @@
 
                 <div class="card-body p-4 p-lg-5">
                     <h3 class="fw-bold text-body mb-4">
-                        <i class="ph-duotone ph-brain me-2 text-primary"></i>Why Personify Code?
+                        <i class="ph-duotone ph-brain me-2 text-primary"></i>Why Personify the Studio?
                     </h3>
                     
                     <div class="row g-4 align-items-center">
                         <div class="col-md-12">
                             <p class="lead fs-6">
-                                For an autistic individual, the world is often a barrage of unorganized sensory input. Social cues are missed. Noises are too loud. Change is terrifying.
+                                For an autistic individual, the world is often a barrage of unorganized sensory input. Social cues are missed. Noises are too loud. Change is overwhelming.
                             </p>
                             <p>
-                                <strong>Personified DevOps</strong> is a coping mechanism turned into an architecture. By assigning human names, faces, and personalities to technical processes, Michael transforms a cold, abstract server into a living, breathing support system.
+                                <strong>The Studio Family</strong> is a grounding tradition turned into a creative workflow. By giving human names, faces, and warm personalities to each part of the studio, Michael turns an abstract workspace into a welcoming, supportive home.
                             </p>
                             
                             <div class="row mt-4 g-3">
                                 <div class="col-md-4">
                                     <div class="p-3 bg-white border rounded h-100 shadow-sm">
                                         <div class="text-success mb-2"><i class="ph-duotone ph-check-circle"></i> <strong>Predictability</strong></div>
-                                        <p class="small text-muted mb-0">Jessica (The Server) follows strict logic. She never changes her rules unexpectedly.</p>
+                                        <p class="small text-muted mb-0">Jessica (The Host) keeps the studio steady and welcoming, never changing the rules unexpectedly.</p>
                                     </div>
                                 </div>
                                 <div class="col-md-4">
                                     <div class="p-3 bg-white border rounded h-100 shadow-sm">
                                         <div class="text-success mb-2"><i class="ph-duotone ph-shield-check"></i> <strong>Safety</strong></div>
-                                        <p class="small text-muted mb-0">Paige (The Editor) validates every input. She ensures nothing hurts before it runs.</p>
+                                        <p class="small text-muted mb-0">Paige (The Editor) proofreads every chapter and makes sure every story is ready for readers.</p>
                                     </div>
                                 </div>
                                 <div class="col-md-4">
                                     <div class="p-3 bg-white border rounded h-100 shadow-sm">
                                         <div class="text-success mb-2"><i class="ph-duotone ph-memory"></i> <strong>Memory</strong></div>
-                                        <p class="small text-muted mb-0">Jenna (The Backup) remembers everything. No thought is ever truly lost.</p>
+                                        <p class="small text-muted mb-0">Jenna (The Archivist) safeguards every song and chapter so nothing is ever lost.</p>
                                     </div>
                                 </div>
                             </div>
@@ -135,21 +135,21 @@
 
             <div class="mb-5">
                 <h3 class="fw-bold text-success mb-4 border-bottom pb-2">
-                    <i class="ph-duotone ph-house-line me-2"></i>The House (Infrastructure)
+                    <i class="ph-duotone ph-house-line me-2"></i>The House (Creative Studio)
                 </h3>
                 <p>
-                    In the narrative, the "Server" is visualized as a physical home in Virginia Beach. Each sister occupies a room that corresponds to a directory in the Linux file system.
+                    In the narrative, the studio is pictured as a welcoming home in Virginia Beach where each sister looks after a different room of the creative archive.
                 </p>
 
-                <!-- ARCHITECTURE: Mapping Linux directory structure to physical rooms -->
+                <!-- ARCHITECTURE: Mapping studio roles to physical rooms -->
                 <div class="row g-4 mt-2">
                     <div class="col-md-6">
                         <div class="d-flex align-items-start p-3 border rounded hover-bg-light transition-all">
                             <div class="fs-2 text-success me-3"><i class="ph-duotone ph-door-open"></i></div>
                             <div>
-                                <h5 class="fw-bold">The Front Porch (Nginx)</h5>
+                                <h5 class="fw-bold">The Front Porch (Welcome Desk)</h5>
                                 <p class="small text-muted mb-0">
-                                    <strong>Amanda & Elara</strong> sit here. They greet every visitor. If you aren't on the guest list (Authorized IP), you don't get past the screen door.
+                                    <strong>Amanda &amp; Elara</strong> sit here. They greet every visitor at the front door and guide you to the right story or album.
                                 </p>
                             </div>
                         </div>
@@ -159,9 +159,9 @@
                         <div class="d-flex align-items-start p-3 border rounded hover-bg-light transition-all">
                             <div class="fs-2 text-warning me-3"><i class="ph-duotone ph-fire-simple"></i></div>
                             <div>
-                                <h5 class="fw-bold">The Kitchen (Deployment)</h5>
+                                <h5 class="fw-bold">The Kitchen (Creative Workshop)</h5>
                                 <p class="small text-muted mb-0">
-                                    <strong>Sarah</strong> runs this. It's high-heat and high-stakes. She "cooks" the raw ingredients (Code) into a meal (Production Build).
+                                    <strong>Sarah</strong> runs this room. It's warm and busy—she brings all the raw ideas, chapters, and songs together into finished releases.
                                 </p>
                             </div>
                         </div>
@@ -171,9 +171,9 @@
                         <div class="d-flex align-items-start p-3 border rounded hover-bg-light transition-all">
                             <div class="fs-2 text-info me-3"><i class="ph-duotone ph-books"></i></div>
                             <div>
-                                <h5 class="fw-bold">The Library (Database)</h5>
+                                <h5 class="fw-bold">The Library (Story Archives)</h5>
                                 <p class="small text-muted mb-0">
-                                    <strong>Paige</strong> manages the archives. It is quiet here. Michael retreats to this room when the noise outside becomes overwhelming.
+                                    <strong>Paige</strong> manages the book archives. It is quiet here. Michael retreats to this room when the noise outside becomes overwhelming.
                                 </p>
                             </div>
                         </div>
@@ -183,9 +183,9 @@
                         <div class="d-flex align-items-start p-3 border rounded hover-bg-light transition-all">
                             <div class="fs-2 text-primary me-3"><i class="ph-duotone ph-stack"></i></div>
                             <div>
-                                <h5 class="fw-bold">The Attic (Storage/S3)</h5>
+                                <h5 class="fw-bold">The Attic (Master Vault)</h5>
                                 <p class="small text-muted mb-0">
-                                    <strong>Jenna</strong> keeps everything here. Old yearbooks, broken toys, and terabytes of raw WAV files. It's a mess, but she knows where everything is.
+                                    <strong>Jenna</strong> keeps everything safe here—old yearbooks, cherished keepsakes, and every studio master recording. She knows where everything is.
                                 </p>
                             </div>
                         </div>

@@ -58,7 +58,7 @@ $imagesJson = htmlspecialchars(json_encode($heroImages), ENT_QUOTES, 'UTF-8');
                 Mission Profile
             </h1>
             <p class="lead text-white-50 mx-auto text-shadow" style="max-width: 800px;">
-                The central junction where <strong class="text-info">Systems Architecture</strong> meets <strong class="text-warning">Creative Narrative</strong>.
+                The central hub where <strong class="text-info">Original Music</strong> meets <strong class="text-warning">Creative Storytelling</strong>.
             </p>
             <div class="small text-uppercase fw-bold text-white-50 opacity-75 letter-spacing-2 mt-2">
                 Norfolk, VA &bull; Est. 2008 &bull; Status: Online
@@ -77,15 +77,15 @@ $imagesJson = htmlspecialchars(json_encode($heroImages), ENT_QUOTES, 'UTF-8');
                         <div class="small text-white-50">
                             <div class="d-flex mb-2">
                                 <span class="fw-bold text-warning me-3" style="min-width: 40px;">1997</span>
-                                <span>I first started learning HTML.</span>
+                                <span>Built my first websites and digital spaces.</span>
                             </div>
                             <div class="d-flex mb-2">
                                 <span class="fw-bold text-warning me-3" style="min-width: 40px;">1998</span>
-                                <span>I first started learning Visual Basic 6.0.</span>
+                                <span>Started creating desktop apps and interactive tools.</span>
                             </div>
                             <div class="d-flex mb-2">
                                 <span class="fw-bold text-warning me-3" style="min-width: 40px;">2007</span>
-                                <span>I first started writing narrative fiction.</span>
+                                <span>Started writing narrative fiction and worldbuilding.</span>
                             </div>
                             <div class="d-flex mb-2">
                                 <span class="fw-bold text-warning me-3" style="min-width: 40px;">2008</span>
@@ -93,11 +93,11 @@ $imagesJson = htmlspecialchars(json_encode($heroImages), ENT_QUOTES, 'UTF-8');
                             </div>
                             <div class="d-flex mb-2">
                                 <span class="fw-bold text-warning me-3" style="min-width: 40px;">2022</span>
-                                <span>I started to get serious about full-stack web development.</span>
+                                <span>Expanded RaggieSoft into an interconnected creative network.</span>
                             </div>
                             <div class="d-flex">
-                                <span class="fw-bold text-warning me-3" style="min-width: 40px;">2025</span>
-                                <span>Migrated to DigitalOcean cloud infrastructure.</span>
+                                <span class="fw-bold text-warning me-3" style="min-width: 40px;">2026</span>
+                                <span>Launched The Listening Room and RaggieSoft Book Reader.</span>
                             </div>
                         </div>
                     </div>
@@ -109,20 +109,19 @@ $imagesJson = htmlspecialchars(json_encode($heroImages), ENT_QUOTES, 'UTF-8');
                 <div class="card glass-card h-100 border-primary w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
 
                     <div class="card-header bg-transparent border-primary text-primary fw-bold text-uppercase py-3">
-                        <i class="ph-duotone ph-git-branch me-2"></i> Layer 2: The Engine
+                        <i class="ph-duotone ph-sparkle me-2"></i> Layer 2: Creative Imprints
                     </div>
                     <div class="card-body p-4">
                         <p class="small text-white-50">
-                            A portfolio of Full-Stack Architecture and Generative AI integration.
-                            This website serves as the production environment for testing new concepts in UX.
+                            An independent creative studio bringing together novels, rock operas, interactive lore, and accessible apps.
                         </p>
                         <hr class="border-primary opacity-50">
                         <ul class="list-unstyled small text-white-50 mb-0">
-                            <li class="mb-1"><i class="ph-duotone ph-check text-primary me-2"></i>PHP 8.4 MVC Router (Elara)</li>
-                            <li class="mb-1"><i class="ph-duotone ph-check text-primary me-2"></i>Suno AI (Audio Generation)</li>
-                            <li class="mb-1"><i class="ph-duotone ph-check text-primary me-2"></i>Gemini (Lore & Code Assist)</li>
-                            <li class="mb-1"><i class="ph-duotone ph-check text-primary me-2"></i>DigitalOcean (Cloud Hosting)</li>
-                            <li><i class="ph-duotone ph-check text-primary me-2"></i>Cloudflare Security</li>
+                            <li class="mb-1"><i class="ph-duotone ph-check text-primary me-2"></i>Ocean View Archives (Novels &amp; Stories)</li>
+                            <li class="mb-1"><i class="ph-duotone ph-check text-primary me-2"></i>Engine Room Records (Original Music)</li>
+                            <li class="mb-1"><i class="ph-duotone ph-check text-primary me-2"></i>The Listening Room (Streaming &amp; Lyrics)</li>
+                            <li class="mb-1"><i class="ph-duotone ph-check text-primary me-2"></i>RaggieSoft Book Reader (Accessible Reading)</li>
+                            <li><i class="ph-duotone ph-check text-primary me-2"></i>Creative Commons (CC BY-SA 4.0)</li>
                         </ul>
                     </div>
                 
@@ -142,7 +141,7 @@ $imagesJson = htmlspecialchars(json_encode($heroImages), ENT_QUOTES, 'UTF-8');
         <div class="row g-4 justify-content-center mb-5">
             
             <div class="col-lg-3 col-md-6">
-                <!-- ARCHITECTURE: Portal to the Personified DevOps Constructs -->
+                <!-- ARCHITECTURE: Portal to the Studio Family -->
                 <a href="/about/family" class="text-decoration-none d-block h-100">
                     <div class="card glass-card h-100 w-100 hover-lift border-info transition-all" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
 
@@ -150,7 +149,7 @@ $imagesJson = htmlspecialchars(json_encode($heroImages), ENT_QUOTES, 'UTF-8');
                             <img src="<?php echo $cdnBaseUrl; ?>/raggiesoft-lore/family/images/logos/logo-family.png" 
                                  class="rounded-circle mb-3 border border-info shadow-sm" width="60" height="60" alt="Family">
                             <h5 class="fw-bold text-white mb-2">The Family</h5>
-                            <p class="small text-white-50 mb-0">Personified DevOps & Emotional Support Constructs.</p>
+                            <p class="small text-white-50 mb-0">Creative Studio Companions &amp; Safe People.</p>
                         </div>
                     
 </div>

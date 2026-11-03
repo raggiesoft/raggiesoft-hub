@@ -79,14 +79,14 @@
                             </div>
                         </div>
                         <div class="d-flex flex-column h-100">
-                            <div class="text-uppercase small fw-bold mb-3 text-primary"><i class="ph-duotone ph-code me-2"></i>Code & Creative Strategy</div>
+                            <div class="text-uppercase small fw-bold mb-3 text-primary"><i class="ph-duotone ph-sparkle me-2"></i>Creative Sounding Board</div>
                             <p class="text-body-emphasis">
-                                The full-stack pair-programmer and creative sounding board. Antigravity writes the platform's backend PHP/CSS architecture, while Gemini refines raw human concepts into structured lyrics and technical prompt data.
+                                The collaborative partner and creative sounding board. Gemini helps refine raw human concepts into structured lyrics, story continuity notes, and musical arrangement guides.
                             </p>
                             <ul class="list-unstyled small text-body-secondary flex-grow-1">
-                                <li class="mb-2"><i class="ph-duotone ph-check text-primary me-2" aria-hidden="true"></i>Acts as an autonomous software engineer, writing the PHP and UI code for this very platform.</li>
+                                <li class="mb-2"><i class="ph-duotone ph-check text-primary me-2" aria-hidden="true"></i>Helps organize story timelines, character lore, and reading guides across the platform.</li>
                                 <li class="mb-2"><i class="ph-duotone ph-check text-primary me-2" aria-hidden="true"></i>Polishes meter, rhyme, and lyrical flow.</li>
-                                <li class="mb-2"><i class="ph-duotone ph-check text-primary me-2" aria-hidden="true"></i>Translates musical vibes into highly specific <i>Styles</i> prompts.</li>
+                                <li class="mb-2"><i class="ph-duotone ph-check text-primary me-2" aria-hidden="true"></i>Translates musical vibes into detailed arrangement and style notes.</li>
                             </ul>
                         </div>
                     

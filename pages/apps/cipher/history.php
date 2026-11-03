@@ -91,7 +91,7 @@
                         The <strong>Signal Decryptor</strong> running on this server is a modern, accessible interpretation of the classic "Bulls and Cows" logic.
                     </p>
                     <p>
-                        Built on the Stardust Engine, it features WCAG-compliant high-contrast modes, stealth protocols for secure play, and "Event Horizon" difficulty tiers that go ph beyond the limitations of the original physical board game.
+                        Built on the Stardust Engine, it features accessible high-contrast modes, stealth protocols for secure play, and "Event Horizon" difficulty tiers that go beyond the limitations of the original physical board game.
                     </p>
                 </div>
             

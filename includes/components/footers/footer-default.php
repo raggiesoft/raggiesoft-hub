@@ -28,7 +28,7 @@
                     <span class="fs-5 fw-bold text-uppercase brand-font">RaggieSoft<sup>&trade;</sup></span>
                 </a>
                 <p class="text-body-secondary small">
-                    Digital craftsmanship since 1997.<br> Specializing in narrative-driven experiences and systems architecture.
+                    Original stories and music since 1997.<br> Home of Ocean View Archives and Engine Room Records.
                 </p>
                 <div class="small  mt-3">
                     <i class="ph-duotone ph-map-pin me-1"></i> Norfolk, VA &bull; Est. 2008
@@ -42,18 +42,18 @@
                     <li class="nav-item mb-2"><a href="https://engineroom.raggiesoft.com/" class="nav-link p-0 text-body-secondary">Engine Room Records</a></li>
                     <li class="nav-item mb-2"><a href="https://corporate.raggiesoft.com/" class="nav-link p-0 text-body-secondary">RaggieSoft Media</a></li>
                     <li class="nav-item mb-2"><a href="https://nebulae.raggiesoft.com/" class="nav-link p-0 text-body-secondary">Nebulae Observatory</a></li>
-                    <li class="nav-item mb-2"><a href="/about/family" class="nav-link p-0 text-body-secondary">The DevOps Family</a></li>
+                    <li class="nav-item mb-2"><a href="/about/family" class="nav-link p-0 text-body-secondary">The Studio Family</a></li>
                     <li class="nav-item mb-2"><a href="/in-memoriam" class="nav-link p-0 text-body-secondary"><i class="ph-duotone ph-shooting-star me-1" aria-hidden="true"></i>In Memoriam (Ad Astra)</a></li>
                 </ul>
             </div>
 
-            <!-- [UI COMPONENT] Built With: Accessibility and technology stack transparency -->
+            <!-- [UI COMPONENT] Explore: Direct consumer links to reading, music, lore, and accessibility -->
             <div class="col-lg-2 col-md-6">
-                <h6 class="fw-bold mb-3">Built With</h6>
+                <h6 class="fw-bold mb-3">Explore</h6>
                 <ul class="nav flex-column small">
-                    <li class="nav-item mb-2"><span class="nav-link p-0 text-body-secondary">PHP 8.5 (Elara CMS)</span></li>
-                    <li class="nav-item mb-2"><span class="nav-link p-0 text-body-secondary">DaisyUI 5 + Tailwind CSS</span></li>
-                    <li class="nav-item mb-2"><span class="nav-link p-0 text-body-secondary">Phosphor Duotone Icons</span></li>
+                    <li class="nav-item mb-2"><a href="https://books.raggiesoft.com/" class="nav-link p-0 text-body-secondary">Ocean View Archives</a></li>
+                    <li class="nav-item mb-2"><a href="https://music.raggiesoft.com/" class="nav-link p-0 text-body-secondary">The Listening Room</a></li>
+                    <li class="nav-item mb-2"><a href="https://lore.raggiesoft.com/" class="nav-link p-0 text-body-secondary">Lore Encyclopedia</a></li>
                     <li class="nav-item mt-3"><a href="https://engineroom.raggiesoft.com/jessica-miller-center" class="nav-link p-0 text-primary fw-bold"><i class="ph-duotone ph-person-arms-spread me-1"></i> Accessibility</a></li>
                 </ul>
             </div>
