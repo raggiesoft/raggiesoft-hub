@@ -512,7 +512,7 @@ $memoriamRibbonActive = (date('Y-m-d') <= '2026-11-28');
               </a>
             </h3>
             <p class="small" style="color: var(--mem-text-secondary);">
-              In our lore, when siblings Ryan and Cassidy O&rsquo;Connell and their twin cousins Evan and Tyler Wright formed their band at CPI in 1986, they named it after the very first song they wrote together&mdash;<a href="https://music.raggiesoft.com/the-stardust-engine/1987-electric-color?track=the-stardust-engine-1987-electric-color-1-13"><strong>&ldquo;The Stardust Engine&rdquo;</strong></a>&mdash;celebrating their shared love of the cosmos (<em>&ldquo;Stardust&rdquo;</em>) and the rockets to get you there (<em>&ldquo;Engine&rdquo;</em>). That title only exists because a kid grew up looking toward the stars at 7:00 PM on weeknights.
+              In our lore, when siblings Ryan and Cassidy O&rsquo;Connell and their twin cousins Evan and Tyler Wright formed their band at CPI in 1986, they named it after the very first song they wrote together&mdash;<a href="https://music.raggiesoft.com/the-stardust-engine/1987-electric-color?track=the-stardust-engine-1987-electric-color-1-13"><strong>&ldquo;The Stardust Engine&rdquo;</strong></a>&mdash;celebrating their shared love of the cosmos (<em>&ldquo;Stardust&rdquo;</em>) and the rockets to get you there (<em>&ldquo;Engine&rdquo;</em>). That title only exists because a kid grew up looking toward the stars at 8:00 PM on weeknights.
             </p>
           </div>
           <div class="d-flex flex-wrap gap-2 mt-3">
