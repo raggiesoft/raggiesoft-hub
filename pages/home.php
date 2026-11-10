@@ -438,6 +438,14 @@ $pageTitle = "RaggieSoft™ | The Central Hub";
               'appearance' => 'outlined',
               'size' => 'small',
               'icon' => 'ph-duotone ph-rocket-launch'
+            ],
+            [
+              'href' => 'https://backstage.raggiesoft.com/',
+              'text' => 'Backstage & Bonus Features',
+              'variant' => 'neutral',
+              'appearance' => 'outlined',
+              'size' => 'small',
+              'icon' => 'ph-duotone ph-film-slate'
             ]
           ]
         ],
