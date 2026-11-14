@@ -21,9 +21,9 @@
  *    NCC-1701-D to look up at the night sky and wonder what is out there.
  * 3. Traces how that childhood sense of cosmic wonder directly inspired:
  *    - The Stardust Engine (https://stardust.raggiesoft.com)
- *    - "Escape Velocity (Ad Astra)" (https://music.raggiesoft.com/the-stardust-engine/1995-the-warehouse-tapes?track=1-06-escape-velocity-ad-astra)
- *    - The Twin Moons: Sanctuary (Zero-G) & Mile Marker 98 (https://music.raggiesoft.com/the-stardust-engine/2003-sanctuary-zero-g?track=1-01-moon-1-tidal-lock)
- *    - Starfield Calibration: Cosmic Tidal Lock Remixes (https://music.raggiesoft.com/the-stardust-engine/2011-starfield-calibration?track=1-01-the-stardust-engine)
+ *    - "Escape Velocity (Ad Astra)" (https://music.raggiesoft.com/the-stardust-engine/1995-the-warehouse-tapes/escape-velocity-ad-astra)
+ *    - The Twin Moons: Sanctuary (Zero-G) & Mile Marker 98 (https://music.raggiesoft.com/the-stardust-engine/2003-sanctuary-zero-g/moon-1-tidal-lock)
+ *    - Starfield Calibration: Cosmic Tidal Lock Remixes (https://music.raggiesoft.com/the-stardust-engine/2011-starfield-calibration/the-stardust-engine)
  *    - Ocean View Archives & RaggieSoft Book Reader (https://books.raggiesoft.com)
  *    - The RaggieSoft Nebulae Observatory (https://nebulae.raggiesoft.com)
  *
@@ -376,7 +376,7 @@ $memoriamRibbonActive = (date('Y-m-d') <= '2026-11-28');
       <a href="https://stardust.raggiesoft.com" class="btn btn-warning fw-bold">
         <i class="ph-duotone ph-rocket-launch me-1" aria-hidden="true"></i> Visit The Stardust Engine
       </a>
-      <a href="https://music.raggiesoft.com/the-stardust-engine/1995-the-warehouse-tapes?track=1-06-escape-velocity-ad-astra" class="btn memoriam-btn-hero-secondary">
+      <a href="https://music.raggiesoft.com/the-stardust-engine/1995-the-warehouse-tapes/escape-velocity-ad-astra" class="btn memoriam-btn-hero-secondary">
         <i class="ph-duotone ph-headphones me-1" aria-hidden="true"></i> Listen to &ldquo;Escape Velocity (Ad Astra)&rdquo;
       </a>
       <a href="https://nebulae.raggiesoft.com" class="btn memoriam-btn-hero-secondary">
@@ -512,7 +512,7 @@ $memoriamRibbonActive = (date('Y-m-d') <= '2026-11-28');
               </a>
             </h3>
             <p class="small" style="color: var(--mem-text-secondary);">
-              In our lore, when siblings Ryan and Cassidy O&rsquo;Connell and their twin cousins Evan and Tyler Wright formed their band at CPI in 1986, they named it after the very first song they wrote together&mdash;<a href="https://music.raggiesoft.com/the-stardust-engine/1987-electric-color?track=the-stardust-engine-1987-electric-color-1-13"><strong>&ldquo;The Stardust Engine&rdquo;</strong></a>&mdash;celebrating their shared love of the cosmos (<em>&ldquo;Stardust&rdquo;</em>) and the rockets to get you there (<em>&ldquo;Engine&rdquo;</em>). That title only exists because a kid grew up looking toward the stars at 8:00 PM on weeknights.
+              In our lore, when siblings Ryan and Cassidy O&rsquo;Connell and their twin cousins Evan and Tyler Wright formed their band at CPI in 1986, they named it after the very first song they wrote together&mdash;<a href="https://music.raggiesoft.com/the-stardust-engine/1987-electric-color/the-stardust-engine"><strong>&ldquo;The Stardust Engine&rdquo;</strong></a>&mdash;celebrating their shared love of the cosmos (<em>&ldquo;Stardust&rdquo;</em>) and the rockets to get you there (<em>&ldquo;Engine&rdquo;</em>). That title only exists because a kid grew up looking toward the stars at 8:00 PM on weeknights.
             </p>
           </div>
           <div class="d-flex flex-wrap gap-2 mt-3">
@@ -532,7 +532,7 @@ $memoriamRibbonActive = (date('Y-m-d') <= '2026-11-28');
           <div>
             <span class="memoriam-pill-badge">2. The 15:33 Four-Movement Suite</span>
             <h3 class="h5 fw-bold mb-2">
-              <a href="https://music.raggiesoft.com/the-stardust-engine/1995-the-warehouse-tapes?track=1-06-escape-velocity-ad-astra" class="text-decoration-none" style="color: var(--mem-text);">
+              <a href="https://music.raggiesoft.com/the-stardust-engine/1995-the-warehouse-tapes/escape-velocity-ad-astra" class="text-decoration-none" style="color: var(--mem-text);">
                 &ldquo;Escape Velocity (Ad Astra)&rdquo; (1995 / 2016)
               </a>
             </h3>
@@ -541,10 +541,10 @@ $memoriamRibbonActive = (date('Y-m-d') <= '2026-11-28');
             </p>
           </div>
           <div class="d-flex flex-wrap gap-2 mt-3">
-            <a href="https://music.raggiesoft.com/the-stardust-engine/1995-the-warehouse-tapes?track=1-06-escape-velocity-ad-astra" class="btn btn-sm btn-primary text-white fw-bold">
+            <a href="https://music.raggiesoft.com/the-stardust-engine/1995-the-warehouse-tapes/escape-velocity-ad-astra" class="btn btn-sm btn-primary text-white fw-bold">
               <i class="ph-duotone ph-headphones me-1" aria-hidden="true"></i> Stream 1995 Studio Suite (15:33)
             </a>
-            <a href="https://music.raggiesoft.com/the-stardust-engine/2016-live-at-the-crucible?track=2-01-escape-velocity-ad-astra" class="btn btn-sm memoriam-btn-card-secondary">
+            <a href="https://music.raggiesoft.com/the-stardust-engine/2016-live-at-the-crucible/escape-velocity-ad-astra" class="btn btn-sm memoriam-btn-card-secondary">
               <i class="ph-duotone ph-waveform me-1" aria-hidden="true"></i> Stream 2016 Crucible Live (13:03)
             </a>
           </div>
@@ -557,19 +557,19 @@ $memoriamRibbonActive = (date('Y-m-d') <= '2026-11-28');
           <div>
             <span class="memoriam-pill-badge">3. Dual Planetarium Concept Albums</span>
             <h3 class="h5 fw-bold mb-2">
-              <a href="https://music.raggiesoft.com/the-stardust-engine/2003-sanctuary-zero-g?track=1-01-moon-1-tidal-lock" class="text-decoration-none" style="color: var(--mem-text);">
+              <a href="https://music.raggiesoft.com/the-stardust-engine/2003-sanctuary-zero-g/moon-1-tidal-lock" class="text-decoration-none" style="color: var(--mem-text);">
                 <em>The Twin Moons</em>: <em>Sanctuary (Zero-G)</em> &amp; <em>Mile Marker 98</em> (2003)
               </a>
             </h3>
             <p class="small" style="color: var(--mem-text-secondary);">
-              Classic science fiction taught us that astrophysical phenomena&mdash;synchronous tidal locks, periapsis slingshots, the Goldilocks zone, and the Roche limit&mdash;are also mirrors for human loyalty and survival. Our 2003 dual planetarium project pairs Cassidy&rsquo;s zero-gravity <em>Cosmic Tidal Lock Sound&trade;</em> on <a href="https://music.raggiesoft.com/the-stardust-engine/2003-sanctuary-zero-g?track=1-01-moon-1-tidal-lock"><em>Sanctuary (Zero-G)</em></a> with Ryan&rsquo;s heavy-rock orbital rescue on <a href="https://music.raggiesoft.com/the-stardust-engine/2003-mile-marker-98?track=1-01-moon-2-roche-limit"><em>Mile Marker 98</em></a>, uniting on <a href="https://music.raggiesoft.com/the-stardust-engine/2003-mile-marker-98?track=1-10-twin-moons-touchdown"><em>&ldquo;Twin Moons: Touchdown.&rdquo;</em></a>
+              Classic science fiction taught us that astrophysical phenomena&mdash;synchronous tidal locks, periapsis slingshots, the Goldilocks zone, and the Roche limit&mdash;are also mirrors for human loyalty and survival. Our 2003 dual planetarium project pairs Cassidy&rsquo;s zero-gravity <em>Cosmic Tidal Lock Sound&trade;</em> on <a href="https://music.raggiesoft.com/the-stardust-engine/2003-sanctuary-zero-g/moon-1-tidal-lock"><em>Sanctuary (Zero-G)</em></a> with Ryan&rsquo;s heavy-rock orbital rescue on <a href="https://music.raggiesoft.com/the-stardust-engine/2003-mile-marker-98/moon-2-roche-limit"><em>Mile Marker 98</em></a>, uniting on <a href="https://music.raggiesoft.com/the-stardust-engine/2003-mile-marker-98/twin-moons-touchdown"><em>&ldquo;Twin Moons: Touchdown.&rdquo;</em></a>
             </p>
           </div>
           <div class="d-flex flex-wrap gap-2 mt-3">
-            <a href="https://music.raggiesoft.com/the-stardust-engine/2003-sanctuary-zero-g?track=1-01-moon-1-tidal-lock" class="btn btn-sm btn-primary text-white fw-bold">
+            <a href="https://music.raggiesoft.com/the-stardust-engine/2003-sanctuary-zero-g/moon-1-tidal-lock" class="btn btn-sm btn-primary text-white fw-bold">
               <i class="ph-duotone ph-planet me-1" aria-hidden="true"></i> Moon 1: Sanctuary (Zero-G)
             </a>
-            <a href="https://music.raggiesoft.com/the-stardust-engine/2003-mile-marker-98?track=1-01-moon-2-roche-limit" class="btn btn-sm memoriam-btn-card-secondary">
+            <a href="https://music.raggiesoft.com/the-stardust-engine/2003-mile-marker-98/moon-2-roche-limit" class="btn btn-sm memoriam-btn-card-secondary">
               <i class="ph-duotone ph-meteor me-1" aria-hidden="true"></i> Moon 2: Mile Marker 98
             </a>
           </div>
@@ -582,19 +582,19 @@ $memoriamRibbonActive = (date('Y-m-d') <= '2026-11-28');
           <div>
             <span class="memoriam-pill-badge">4. Cosmic Tidal Lock&trade; Remix Album</span>
             <h3 class="h5 fw-bold mb-2">
-              <a href="https://music.raggiesoft.com/the-stardust-engine/2011-starfield-calibration?track=1-01-the-stardust-engine" class="text-decoration-none" style="color: var(--mem-text);">
+              <a href="https://music.raggiesoft.com/the-stardust-engine/2011-starfield-calibration/the-stardust-engine" class="text-decoration-none" style="color: var(--mem-text);">
                 <em>Starfield Calibration</em> (2011)
               </a>
             </h3>
             <p class="small" style="color: var(--mem-text-secondary);">
-              A 14-track <em>Cosmic Tidal Lock&trade;</em> remix album of classic Stardust Engine songs&mdash;led by <a href="https://music.raggiesoft.com/the-stardust-engine/2011-starfield-calibration?track=1-01-the-stardust-engine"><strong><em>&ldquo;The Stardust Engine (Cosmic Tidal Lock Mix)&rdquo;</em></strong></a> (<em>&ldquo;We were looking for a signal / A beacon in the endless black&rdquo;</em>) alongside <a href="https://music.raggiesoft.com/the-stardust-engine/2011-starfield-calibration?track=1-02-electric-color"><em>&ldquo;Electric Color,&rdquo;</em></a> <a href="https://music.raggiesoft.com/the-stardust-engine/2011-starfield-calibration?track=1-05-my-anchor-holds"><em>&ldquo;My Anchor Holds,&rdquo;</em></a> and <a href="https://music.raggiesoft.com/the-stardust-engine/2011-starfield-calibration?track=1-13-the-horizon-line"><em>&ldquo;The Horizon Line&rdquo;</em></a> inside a zero-gravity planetarium dome. I never would have done these remixes if Captain Picard hadn&rsquo;t given me the curiosity to look up and wonder what&rsquo;s out there.
+              A 14-track <em>Cosmic Tidal Lock&trade;</em> remix album of classic Stardust Engine songs&mdash;led by <a href="https://music.raggiesoft.com/the-stardust-engine/2011-starfield-calibration/the-stardust-engine"><strong><em>&ldquo;The Stardust Engine (Cosmic Tidal Lock Mix)&rdquo;</em></strong></a> (<em>&ldquo;We were looking for a signal / A beacon in the endless black&rdquo;</em>) alongside <a href="https://music.raggiesoft.com/the-stardust-engine/2011-starfield-calibration/electric-color"><em>&ldquo;Electric Color,&rdquo;</em></a> <a href="https://music.raggiesoft.com/the-stardust-engine/2011-starfield-calibration/my-anchor-holds"><em>&ldquo;My Anchor Holds,&rdquo;</em></a> and <a href="https://music.raggiesoft.com/the-stardust-engine/2011-starfield-calibration/the-horizon-line"><em>&ldquo;The Horizon Line&rdquo;</em></a> inside a zero-gravity planetarium dome. I never would have done these remixes if Captain Picard hadn&rsquo;t given me the curiosity to look up and wonder what&rsquo;s out there.
             </p>
           </div>
           <div class="d-flex flex-wrap gap-2 mt-3">
             <a href="https://music.raggiesoft.com/the-stardust-engine/2011-starfield-calibration" class="btn btn-sm btn-primary text-white fw-bold">
               <i class="ph-duotone ph-sparkle me-1" aria-hidden="true"></i> Stream Starfield Calibration (14 Tracks)
             </a>
-            <a href="https://music.raggiesoft.com/the-stardust-engine/2011-starfield-calibration?track=1-01-the-stardust-engine" class="btn btn-sm memoriam-btn-card-secondary">
+            <a href="https://music.raggiesoft.com/the-stardust-engine/2011-starfield-calibration/the-stardust-engine" class="btn btn-sm memoriam-btn-card-secondary">
               <i class="ph-duotone ph-headphones me-1" aria-hidden="true"></i> &ldquo;The Stardust Engine&rdquo; (Cosmic Tidal Lock Mix)
             </a>
           </div>

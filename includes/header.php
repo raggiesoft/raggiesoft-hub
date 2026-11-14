@@ -393,14 +393,14 @@ if (isset($customPageAssets) && is_array($customPageAssets)) {
                             "name" => "Escape Velocity (Ad Astra)",
                             "isrcCode" => "QZW9K2547910",
                             "duration" => "PT15M33S",
-                            "url" => "https://music.raggiesoft.com/the-stardust-engine/1995-the-warehouse-tapes?track=1-06-escape-velocity-ad-astra"
+                            "url" => "https://music.raggiesoft.com/the-stardust-engine/1995-the-warehouse-tapes/escape-velocity-ad-astra"
                         ],
                         [
                             "@type" => "MusicRecording",
                             "name" => "Escape Velocity (Ad Astra) [Live at the Crucible]",
                             "isrcCode" => "QTAHP2600043",
                             "duration" => "PT13M3S",
-                            "url" => "https://music.raggiesoft.com/the-stardust-engine/2016-live-at-the-crucible?track=2-01-escape-velocity-ad-astra"
+                            "url" => "https://music.raggiesoft.com/the-stardust-engine/2016-live-at-the-crucible/escape-velocity-ad-astra"
                         ],
                         [
                             "@type" => "MusicAlbum",
@@ -411,19 +411,19 @@ if (isset($customPageAssets) && is_array($customPageAssets)) {
                         [
                             "@type" => "MusicAlbum",
                             "name" => "Sanctuary (Zero-G) — The Twin Moons: Moon 1",
-                            "url" => "https://music.raggiesoft.com/the-stardust-engine/2003-sanctuary-zero-g?track=1-01-moon-1-tidal-lock"
+                            "url" => "https://music.raggiesoft.com/the-stardust-engine/2003-sanctuary-zero-g/moon-1-tidal-lock"
                         ],
                         [
                             "@type" => "MusicAlbum",
                             "name" => "Mile Marker 98 — The Twin Moons: Moon 2",
-                            "url" => "https://music.raggiesoft.com/the-stardust-engine/2003-mile-marker-98?track=1-01-moon-2-roche-limit"
+                            "url" => "https://music.raggiesoft.com/the-stardust-engine/2003-mile-marker-98/moon-2-roche-limit"
                         ],
                         [
                             "@type" => "MusicAlbum",
                             "name" => "Starfield Calibration (Cosmic Tidal Lock Remixes)",
                             "datePublished" => "2011",
                             "numTracks" => 14,
-                            "url" => "https://music.raggiesoft.com/the-stardust-engine/2011-starfield-calibration?track=1-01-the-stardust-engine"
+                            "url" => "https://music.raggiesoft.com/the-stardust-engine/2011-starfield-calibration/the-stardust-engine"
                         ],
                         [
                             "@type" => "WebSite",

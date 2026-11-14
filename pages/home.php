@@ -397,7 +397,7 @@ $pageTitle = "RaggieSoft™ | The Central Hub";
               'icon' => 'ph-duotone ph-book-open-text'
             ],
             [
-              'href' => 'https://music.raggiesoft.com/the-stardust-engine/1996-ad-astra-single?track=1-01-escape-velocity-ad-astra',
+              'href' => 'https://music.raggiesoft.com/the-stardust-engine/1996-ad-astra-single/escape-velocity-ad-astra',
               'text' => 'Stream 15:33 Suite',
               'variant' => 'neutral',
               'appearance' => 'outlined',
