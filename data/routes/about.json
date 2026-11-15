@@ -83,7 +83,7 @@
     "sidebar": "about/sidebar-about",
     "showSidebar": true,
     "navbarBrandText": "The Silver Gauntlet",
-    "navbarBrandLink": "https://books.raggiesoft.com/read/the-silver-gauntlet-of-aethel",
+    "navbarBrandLink": "https://books.raggiesoft.com/aethel",
     "navbarBrandLogo": "/raggiesoft-books/aethel/images/logos/silver-gauntlet-of-aethel-logo.png",
     "navbarBrandAlt": "Silver Gauntlet of Aethel Logo",
     "brandFont": ["Cinzel", "serif"]
@@ -120,22 +120,6 @@
     "brandFont": ["Roboto", "sans-serif"]
   },
   "/about/in-memoriam": {
-    "view": "pages/about/in-memoriam",
-    "title": "In Memoriam: Sir Patrick Stewart (1940–2026) | RaggieSoft",
-    "site": "portfolio",
-    "siteName": "RaggieSoft",
-    "theme": "raggiesoft",
-    "headerMenu": "about/header-about",
-    "sidebar": "about/sidebar-about",
-    "showSidebar": true,
-    "navbarBrandText": "RaggieSoft",
-    "navbarBrandLink": "/",
-    "navbarBrandLogo": "/portfolio/images/logos/logo-michael.png",
-    "navbarBrandAlt": "RaggieSoft Official Logo",
-    "brandFont": ["Audiowide", "sans-serif"],
-    "ogTitle": "In Memoriam: Sir Patrick Stewart (1940–2026) | Ad Astra",
-    "ogDescription": "How watching the Captain of the NCC-1701-D on weeknight family television sparked the cosmic imagination behind RaggieSoft and The Stardust Engine.",
-    "ogImage": "/raggiesoft-corporate/images/og/in-memoriam-patrick-stewart-og.jpg",
-    "schemaType": "MemorialTribute"
+    "redirect": "/in-memoriam"
   }
 }

@@ -40,8 +40,22 @@ $pageTitle = "RaggieSoft™ | The Central Hub";
       "description": "The central hub for the code, music, and narrative universes of Michael P. Ragsdale.",
       "founder": {
         "@type": "Person",
-        "name": "Michael P. Ragsdale"
-      }
+        "@id": "https://michaelpragsdale.com/#michael-ragsdale",
+        "name": "Michael P. Ragsdale",
+        "url": "https://michaelpragsdale.com"
+      },
+      "sameAs": [
+        "https://music.raggiesoft.com",
+        "https://books.raggiesoft.com",
+        "https://stardust.raggiesoft.com",
+        "https://engineroom.raggiesoft.com",
+        "https://lore.raggiesoft.com",
+        "https://backstage.raggiesoft.com",
+        "https://nebulae.raggiesoft.com",
+        "https://corporate.raggiesoft.com",
+        "https://storetrainer.raggiesoft.com",
+        "https://michaelpragsdale.com"
+      ]
     },
     {
       "@type": "WebSite",

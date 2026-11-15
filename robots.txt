@@ -1,2 +1,6 @@
+# RaggieSoft Hub (https://raggiesoft.com)
 User-agent: *
+Allow: /
+Disallow: /api/
+
 Sitemap: https://raggiesoft.com/sitemap.xml

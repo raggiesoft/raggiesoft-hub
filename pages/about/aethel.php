@@ -126,9 +126,14 @@
 </div>
 
             <div class="text-center pt-4">
-                <a href="https://books.raggiesoft.com/read/the-silver-gauntlet-of-aethel" class="btn btn-warning btn-outline btn-lg rounded-0 px-5 py-3 border-2 cinzel-font fw-bold hover-warning">
-                    <i  class="ph-duotone ph-book-open-text"></i>Open The Tome
-                </a>
+                <div class="d-flex flex-wrap justify-content-center gap-3">
+                    <a href="https://books.raggiesoft.com/aethel" class="btn btn-warning btn-outline btn-lg rounded-0 px-5 py-3 border-2 cinzel-font fw-bold hover-warning">
+                        <i class="ph-duotone ph-book-open-text"></i> Open The Tome
+                    </a>
+                    <a href="https://music.raggiesoft.com/firelight" class="btn btn-warning btn-outline btn-lg rounded-0 px-5 py-3 border-2 cinzel-font fw-bold hover-warning">
+                        <i class="ph-duotone ph-music-notes"></i> Listen to Firelight Soundtrack
+                    </a>
+                </div>
                 <div class="mt-3">
                     <a href="/about/license" class="small text-muted text-decoration-none">
                         Content licensed under CC BY-SA 4.0
