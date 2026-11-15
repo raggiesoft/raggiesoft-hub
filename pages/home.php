@@ -324,10 +324,40 @@ $pageTitle = "RaggieSoft™ | The Central Hub";
 <div class="container mt-4 mb-2">
     <?php
     /**
-     * AUTO-EXPIRING 30-DAY IN MEMORIAM CALLOUT (Through November 28, 2026)
-     * Automatically hides itself on 2026-11-29 and beyond even if not manually removed.
+     * EASTERN TIME (`America/New_York`) SEASONAL SCHEDULE:
+     * 1. Sir Patrick Stewart 30-Day In Memoriam Callout: Active through `2026-11-28`.
+     * 2. Yearly Holiday Season Spotlight:
+     *    - Standard Go-Live: Black Friday (`fourth Thursday of November + 1 day`)
+     *    - 2026 Respectful Exception: Goes live `2026-11-29` after the tribute sunsets
+     *    - Pack-Away: `January 2` at `00:00 EST` (active all day New Year's Day `Jan 1`)
+     *    - Supports `?holiday=preview` (`1`/`on`) for live previewing at any time.
      */
-    if (date('Y-m-d') <= '2026-11-28'):
+    $rsEasternTz = new DateTimeZone('America/New_York');
+    $rsEasternNow = new DateTimeImmutable('now', $rsEasternTz);
+    $rsEasternYmd = $rsEasternNow->format('Y-m-d');
+    $rsEasternYear = (int) $rsEasternNow->format('Y');
+    $rsEasternMonth = (int) $rsEasternNow->format('n');
+    $rsEasternDay = (int) $rsEasternNow->format('j');
+
+    $rsHolidayParam = strtolower((string) ($_GET['holiday'] ?? $_GET['rs_holiday'] ?? ''));
+    $rsHolidayPreviewOn = in_array($rsHolidayParam, ['1', 'true', 'on', 'preview'], true);
+    $rsHolidayPreviewOff = in_array($rsHolidayParam, ['0', 'false', 'off', 'normal'], true);
+
+    $rsMemoriamActive = ($rsEasternYmd <= '2026-11-28') && !$rsHolidayPreviewOn;
+
+    $rsBlackFriday = new DateTimeImmutable("fourth thursday of november {$rsEasternYear}", $rsEasternTz);
+    $rsBlackFridayDay = ((int) $rsBlackFriday->format('j')) + 1;
+
+    $rsHolidayDateMatch =
+        ($rsEasternMonth === 12) ||
+        ($rsEasternMonth === 1 && $rsEasternDay === 1) ||
+        ($rsEasternMonth === 11 && $rsEasternDay >= $rsBlackFridayDay);
+
+    $rsHolidayActive = $rsHolidayPreviewOff
+        ? false
+        : ($rsHolidayPreviewOn || (!$rsMemoriamActive && $rsHolidayDateMatch));
+
+    if ($rsMemoriamActive):
     ?>
     <div class="card mb-3 border shadow-sm" style="background: linear-gradient(90deg, #040711 0%, #0b132b 50%, #040711 100%); border-color: rgba(251, 191, 36, 0.55) !important; color: #f8fafc;" data-bs-theme="dark">
         <div class="card-body py-3 px-4 d-flex flex-column flex-md-row align-items-md-center justify-content-between gap-3">
@@ -342,6 +372,27 @@ $pageTitle = "RaggieSoft™ | The Central Hub";
             <div class="flex-shrink-0">
                 <a href="/in-memoriam" class="btn btn-warning btn-sm fw-bold text-nowrap">
                     <i class="ph-duotone ph-book-open-text me-1" aria-hidden="true"></i> Read Creator&rsquo;s Tribute
+                </a>
+            </div>
+        </div>
+    </div>
+    <?php elseif ($rsHolidayActive): ?>
+    <div class="card mb-3 border shadow-sm" style="background: linear-gradient(90deg, #071e16 0%, #143d2b 42%, #4a121b 82%, #071e16 100%); border-color: rgba(251, 191, 36, 0.6) !important; color: #f8fafc;" data-bs-theme="dark">
+        <div class="card-body py-3 px-4 d-flex flex-column flex-md-row align-items-md-center justify-content-between gap-3">
+            <div>
+                <div class="small fw-bold text-uppercase mb-1" style="color: #fde68a; letter-spacing: 0.06em;">
+                    <i class="ph-duotone ph-snowflake me-1" aria-hidden="true"></i> Happy Holidays from RaggieSoft &bull; Winter Symphonic Spotlight
+                </div>
+                <p class="mb-0 small" style="color: #f1f5f9;">
+                    Celebrate the holiday season in <strong>The Listening Room</strong> with progressive winter symphonies from <strong>The Arctic Symphony Project</strong>&mdash;featuring <em>A Symphony of Snow</em> (1996) and the 31-song holiday rock-orchestra opus <em>Tales from the Solstice</em> (2007).
+                </p>
+            </div>
+            <div class="d-flex flex-wrap gap-2 flex-shrink-0">
+                <a href="https://music.raggiesoft.com/#holiday-music-showcase-heading" class="btn btn-warning btn-sm fw-bold text-nowrap">
+                    <i class="ph-duotone ph-headphones me-1" aria-hidden="true"></i> Stream Holiday Music
+                </a>
+                <a href="https://storetrainer.raggiesoft.com/" class="btn btn-outline-light btn-sm fw-bold text-nowrap">
+                    <i class="ph-duotone ph-desktop-tower me-1" aria-hidden="true"></i> Quantum OS 98 Holiday
                 </a>
             </div>
         </div>
