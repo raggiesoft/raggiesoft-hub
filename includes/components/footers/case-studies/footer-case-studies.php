@@ -59,7 +59,7 @@
                 <h6 class="fw-bold mb-3">Connect</h6>
                 <div class="d-flex justify-content-md-end gap-3">
                     <a href="https://linkedin.com/in/michael-ragsdale-raggiesoft" class="link-secondary fs-5" aria-label="LinkedIn"><i class="ph-duotone ph-linkedin-logo"></i></a>
-                    <a href="mailto:hireme@michaelpragsdale.com" class="link-secondary fs-5" aria-label="Email"><i class="ph-duotone ph-envelope"></i></a>
+                    <a href="mailto:hello@michaelpragsdale.com" class="link-secondary fs-5" aria-label="Email"><i class="ph-duotone ph-envelope"></i></a>
                 </div>
             </div>
         </div>
