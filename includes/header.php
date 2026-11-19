@@ -58,7 +58,7 @@ $css_load_queue = [
     $cdn_root . "/common/vendor/daisyui/themes.css",
     $path_grid,
     $cdn_root . "/common/css/raggiesoft-logo.css",
-    $cdn_root . "/common/css/raggiesoft-network.css?v=20261115h"
+    $cdn_root . "/common/css/raggiesoft-network.css?v=20261118a"
 ];
 
 // 5. Critical Images
@@ -534,7 +534,7 @@ if (isset($customPageAssets) && is_array($customPageAssets)) {
 
     <script src="<?php echo $cdnBaseUrl; ?>/common/js/elara-spa.js?v=<?php echo time(); ?>" defer></script>
     <script src="<?php echo $cdnBaseUrl; ?>/common/js/hero-image.js?v=20261029h" defer></script>
-    <script src="<?php echo $cdnBaseUrl; ?>/common/js/raggiesoft-network.js?v=20261115h" defer></script>    
+    <script src="<?php echo $cdnBaseUrl; ?>/common/js/raggiesoft-network.js?v=20261118a" defer></script>    
     <style>
         .brand-font { font-family: <?php echo $brand_font_css; ?> !important; }
         
@@ -840,7 +840,7 @@ if (isset($customPageAssets) && is_array($customPageAssets)) {
           <li><a href="https://engineroom.raggiesoft.com">⚙️ Engine Room</a></li>
           <li><a href="https://corporate.raggiesoft.com">🏢 Corporate</a></li>
           <li><a href="https://storetrainer.raggiesoft.com">💾 StoreTrainer</a></li>
-          <li><a href="https://michaelpragsdale.com">👔 Michael P. Ragsdale</a></li>
+          <li><a href="https://michaelpragsdale.com">👔 Portfolio &amp; Resume</a></li>
           <?php if (date('Y-m-d') <= '2026-11-28'): ?>
           <li><a href="/in-memoriam" class="rs-network-memoriam-pill<?php echo $isMemoriamRoute ? ' is-active' : ''; ?>"<?php echo $isMemoriamRoute ? ' aria-current="page"' : ''; ?>>✦ In Memoriam</a></li>
           <?php endif; ?>
