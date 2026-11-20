@@ -1,5 +1,31 @@
 <?php
 /**
+ * ============================================================================
+ * READ-ALONG TEACHING GUIDE (100-LEVEL COURSE EDITION)
+ * ============================================================================
+ * File: /pages/about/aethel.php
+ * Role: Mission Profile Showcase for *The Silver Gauntlet of Aethel* (`/about/aethel`)
+ * Route Manifest: `/data/routes/about.json` -> `"/about/aethel"` (`theme: "onyx"`, `showSidebar: true`)
+ *
+ * WHAT THIS FILE DOES (PLAIN-ENGLISH OVERVIEW):
+ * Introduces RaggieSoft's 1980s-inspired high-fantasy novel series (*The Silver
+ * Gauntlet of Aethel*) inside the Mission Profile layout, pairing:
+ *   1. An atmospheric Onyx/Gold hero banner (`min-height: 60vh`) with layered
+ *      absolute-positioned background + radial vignette overlays.
+ *   2. Two side-by-side lore pillar cards ("The Twins: Kaelan & Kaela" and
+ *      "The Gauntlet").
+ *   3. An "Author's Intent" reflection card and outbound CTAs to read the novel
+ *      on `books.raggiesoft.com/aethel` or stream the *Firelight* soundtrack on
+ *      `music.raggiesoft.com/firelight`.
+ *
+ * INPUTS:
+ * - `$cdnBaseUrl` from `amanda/elara.php`.
+ *
+ * OUTPUT PRODUCED:
+ * - Thematic Onyx/Gold HTML partial rendered inside `<main id="main-content">`
+ *   beside `sidebar-about.php`.
+ * ============================================================================
+ *
  * RaggieSoft Architecture - Page Component
  * 
  * File: pages/about/aethel.php
@@ -18,6 +44,7 @@
 // Theme: Onyx (Fantasy/Gold)
 ?>
 
+<?php /* Hero Banner: `position-relative overflow-hidden` anchors the two `position-absolute` background/vignette layers behind the `position-relative` foreground text */ ?>
 <div class="position-relative p-5 text-center bg-black border-bottom border-warning border-opacity-50 shadow-sm overflow-hidden" 
      style="min-height: 60vh;">
      
@@ -63,6 +90,7 @@
                 </p>
             </div>
 
+            <?php /* Two-column (`col-md-6`) DaisyUI `.card` lore overview grid */ ?>
             <div class="row g-4 mb-5">
                 
                 <div class="col-md-6">
@@ -99,6 +127,7 @@
 
             </div>
 
+            <?php /* Author's Intent Callout Card + Outbound CTAs to `books.raggiesoft.com/aethel` & `music.raggiesoft.com/firelight` */ ?>
             <div class="card bg-base-200 border border-base-300 bg-body-tertiary border-0 border-start border-4 border-warning shadow-sm mb-5 w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
 
                 <div class="card-body p-4 p-lg-5">

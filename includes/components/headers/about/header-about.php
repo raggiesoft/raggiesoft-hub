@@ -1,6 +1,27 @@
 <?php
 /**
  * ============================================================================
+ * READ-ALONG TEACHING GUIDE (100-LEVEL COURSE EDITION)
+ * ============================================================================
+ * File: /includes/components/headers/about/header-about.php
+ * Role: Section-Scoped Top Navigation Menu for `/about/*` & `/in-memoriam`
+ * Domain: https://raggiesoft.com (Assigned via `data/routes/about.json` & `core.json`)
+ *
+ * WHAT THIS FILE DOES (PLAIN-ENGLISH OVERVIEW):
+ * Replaces the root navbar links with a Mission Profile navigation menu whenever
+ * a visitor explores `/about`, `/about/family`, `/about/engine-room`,
+ * `/about/stardust-engine`, `/about/aethel`, `/about/privacy`, `/about/terms`,
+ * `/about/ai-disclaimer`, or `/in-memoriam`. Groups legal policies under a
+ * "Governance" dropdown and studio/worldbuilding pages under "Network Profiles".
+ *
+ * INPUTS:
+ * - `$_SERVER['REQUEST_URI']`: Checked with PHP 8's `str_contains()` to highlight
+ *   the active dropdown (`$isGovernance`, `$isProfiles`, `$isMemoriam`).
+ *
+ * OUTPUT PRODUCED:
+ * - Responsive DaisyUI 5 `.mobile-nav-menu` flex menu inside `#navbarCollapse`.
+ * ============================================================================
+ *
  * RaggieSoft Hub - About/Mission Profile Header (DaisyUI 5 + Phosphor)
  * ============================================================================
  * File: includes/components/headers/about/header-about.php
@@ -13,9 +34,10 @@
  * ============================================================================
  */
 
+// Extract clean request path without query parameters:
 $uri = parse_url($_SERVER['REQUEST_URI'] ?? '/', PHP_URL_PATH) ?: '/';
 
-// Determine active section for dropdown highlighting
+// Determine active section for dropdown highlighting using PHP 8 `str_contains()`
 $isMemoriam   = ($uri === '/in-memoriam' || $uri === '/about/in-memoriam');
 $isGovernance = (str_contains($uri, '/license') || str_contains($uri, '/privacy') || str_contains($uri, '/terms') || str_contains($uri, '/ai-disclaimer'));
 $isProfiles   = (!$isGovernance && !$isMemoriam && $uri !== '/about');
@@ -31,6 +53,7 @@ $isProfiles   = (!$isGovernance && !$isMemoriam && $uri !== '/about');
     <i class="ph-duotone ph-info me-1" aria-hidden="true"></i>Mission Profile
   </a>
 
+  <?php /* Governance Dropdown: Licensing, Privacy Policy, Terms of Service, and AI Disclaimer */ ?>
   <details class="dropdown">
     <summary class="btn btn-ghost <?php echo $isGovernance ? 'text-primary fw-bold' : 'text-body-secondary'; ?>">
       <i class="ph-duotone ph-scales me-1" aria-hidden="true"></i>Governance
@@ -60,6 +83,7 @@ $isProfiles   = (!$isGovernance && !$isMemoriam && $uri !== '/about');
     </ul>
   </details>
 
+  <?php /* Network Profiles Dropdown: Creator portfolio, Studio Family, and flagship creative universes */ ?>
   <details class="dropdown">
     <summary class="btn btn-ghost <?php echo $isProfiles ? 'text-primary fw-bold' : 'text-body-secondary'; ?>">
       <i class="ph-duotone ph-tree-structure me-1" aria-hidden="true"></i>Network Profiles

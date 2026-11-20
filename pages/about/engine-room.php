@@ -1,5 +1,29 @@
 <?php
 /**
+ * ============================================================================
+ * READ-ALONG TEACHING GUIDE (100-LEVEL COURSE EDITION)
+ * ============================================================================
+ * File: /pages/about/engine-room.php
+ * Role: Mission Profile Overview for Engine Room Records (`/about/engine-room`)
+ * Route Manifest: `/data/routes/about.json` -> `"/about/engine-room"` (`theme: "industrial"`, `showSidebar: true`)
+ *
+ * WHAT THIS FILE DOES (PLAIN-ENGLISH OVERVIEW):
+ * Presents the Mission Profile dossier for **Engine Room Records** inside `/about`,
+ * pairing its industrial/synth-rock creative aesthetic ("Loud. Raw. Real.") and
+ * flagship artist preview with an explicit **Reality Check** card clarifying that
+ * Engine Room Records is Michael P. Ragsdale's unincorporated publishing imprint
+ * and creative metadata container (rather than a brick-and-mortar corporate label),
+ * plus a direct link to the dedicated label portal (`https://engineroom.raggiesoft.com/`).
+ *
+ * INPUTS:
+ * - `$cdnBaseUrl` from `amanda/elara.php`.
+ * - Note: Because `about.json` sets `"theme": "industrial"`, `includes/header.php`
+ *   automatically activates `$force_dark_mode = true` on `<html>` for this route!
+ *
+ * OUTPUT PRODUCED:
+ * - Dark industrial HTML partial rendered inside `<main id="main-content">`.
+ * ============================================================================
+ *
  * Engine Room Records - Headquarters
  *
  * ARCHITECTURE & CONTEXT:
@@ -37,6 +61,7 @@ $pageTitle = "About Engine Room Records";
     }
 </style>
 
+<?php /* Contained Industrial Hero Card (`<h1>Engine Room Records</h1>`) compatible with the 2-column sidebar layout */ ?>
 <div class="card bg-base-200 border border-base-300 bg-black text-white border-danger mb-5 shadow-sm overflow-hidden w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
 
     <div class="card-body p-5 text-center">

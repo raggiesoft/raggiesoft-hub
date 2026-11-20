@@ -2,6 +2,32 @@
 /**
  * @license MIT
  * ============================================================================
+ * READ-ALONG TEACHING GUIDE (100-LEVEL COURSE EDITION)
+ * ============================================================================
+ * File: /pages/about/terms.php
+ * Role: Master Terms of Service & Hybrid Licensing Agreement (`/about/terms`)
+ * Route Manifest: `/data/routes/about.json` -> `"/about/terms"` (`showSidebar: true`)
+ *
+ * WHAT THIS FILE DOES (PLAIN-ENGLISH OVERVIEW):
+ * Renders the binding Terms of Service across `raggiesoft.com`, all
+ * `*.raggiesoft.com` subdomains, and `michaelpragsdale.com`. It codifies:
+ *   1. Real-World Operator vs. Fictional Lore Entities: Distinguishes Michael P.
+ *      Ragsdale's unincorporated real-world creative imprints (`RaggieSoft`,
+ *      `RaggieSoft Media`, `Engine Room Records`, `Ocean View Archives`) from
+ *      100% fictional in-universe `LLC` / `Trust` / `Corp` worldbuilding names.
+ *   2. Dual Open-Culture Licensing + Anti-Hijacking Rules: MIT License for code
+ *      and CC BY-SA 4.0 for creative works/128kbps web audio, strictly barring
+ *      third-party Content ID claims or `QTAHP` ISRC hijacking.
+ *   3. Zero Consumer Billing & Fourthwall Merchant-of-Record Separation.
+ *   4. Closed Submission Policy, Fictitious Persons Disclaimer, `$0.00` Liability
+ *      Cap, and Exclusive Norfolk, Virginia Venue.
+ *
+ * ACCESSIBILITY & AUDIT DESIGN:
+ * Uses hardcoded Git-verifiable timestamps (`March 29, 2026` / `October 26, 2026`),
+ * semantic `<section aria-labelledby="...">` landmarks for screen-reader rotor
+ * navigation, and `rel="noopener noreferrer"` on external reference links.
+ * ============================================================================
+ *
  * RaggieSoft Global Terms of Service & Hybrid Licensing Agreement
  * File: pages/about/terms.php (https://raggiesoft.com/about/terms)
  * ============================================================================
@@ -41,6 +67,7 @@
  * ============================================================================
  */
 ?>
+<?php /* Main Terms of Service Container rendered inside `<main id="main-content">` alongside `sidebar-about.php` */ ?>
 <div class="container py-5">
     <div class="row justify-content-center">
         <div class="col-lg-9">

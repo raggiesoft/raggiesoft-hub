@@ -1,5 +1,35 @@
 <?php
 /**
+ * ============================================================================
+ * READ-ALONG TEACHING GUIDE (100-LEVEL COURSE EDITION)
+ * ============================================================================
+ * File: /pages/apps/cipher/rules.php
+ * Role: Rules & Difficulty Reference Guide for Signal Decryptor (`/apps/cipher/rules`)
+ * Route Manifest: `/data/routes/apps/cipher.json` -> `"/apps/cipher/rules"`
+ *
+ * WHAT THIS FILE DOES (PLAIN-ENGLISH OVERVIEW):
+ * Documents how to play the Signal Decryptor (`/apps/cipher`), including:
+ *   1. Mission Objective (deducing the 4-digit Secret Code).
+ *   2. Signal Classifications Table comparing all 4 difficulty tiers (`Calibration`,
+ *      `Orbital`, `Deep Space`, and `Horizon`).
+ *   3. Classified Operations (`Stealth Protocol` & `Target Visibility` hot-seat mode).
+ *   4. Reading the Feedback (`+` = Signal Locked / Exact Match, `-` = Signal
+ *      Detected / Wrong Position, with `+` always sorted first so symbol order
+ *      never gives away which slot matched).
+ *
+ * WCAG 2.1 AA TABLE ACCESSIBILITY NOTE:
+ * Notice how the comparison `<table>` uses `<th scope="col">` for column headers
+ * in `<thead>` and `<th scope="row">` for each tier name in `<tbody>`. Screen
+ * readers use `scope="col"` and `scope="row"` to announce both the row and column
+ * header as a user navigates cells!
+ *
+ * INPUTS:
+ * - Static SSR view partial (no PHP variables required).
+ *
+ * OUTPUT PRODUCED:
+ * - Single-column (`col-lg-8`) documentation view inside `<main id="main-content">`.
+ * ============================================================================
+ *
  * @file rules.php
  * @brief Decryption Protocols & Standard Operating Procedures for Signal Analysis
  * 
@@ -23,6 +53,7 @@
                 </p>
             </div>
 
+            <?php /* Card 1: Core Game Objective */ ?>
             <div class="card bg-base-200 border border-base-300 shadow-sm mb-4 border-0 bg-body-tertiary w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
 
                 <div class="card-body p-4">
@@ -44,6 +75,7 @@
                     </h4>
                     <p class="mb-4">The Stardust Engine operates on four distinct frequency bands. Ensure you know which protocol is active.</p>
                     
+                    <?php /* Accessible responsive `<table>` with `scope="col"` and `scope="row"` headers */ ?>
                     <div class="table-responsive">
                         <table class="table table-bordered border-primary-subtle table-hover align-middle">
                             <thead class="table-light">

@@ -1,5 +1,32 @@
 <?php
 /**
+ * ============================================================================
+ * READ-ALONG TEACHING GUIDE (100-LEVEL COURSE EDITION)
+ * ============================================================================
+ * File: /pages/case-studies/overview.php
+ * Role: Operational Archives Landing Dashboard (`https://raggiesoft.com/case-studies`)
+ * Route Manifest: `/data/routes/case-studies.json` -> `"/case-studies"`
+ *                 (Never linked as `/case-studies/overview`—clean directory URL!)
+ *
+ * WHAT THIS FILE DOES (PLAIN-ENGLISH OVERVIEW):
+ * Serves as the index dashboard for the RaggieSoft Operational Archives,
+ * displaying equal-height (`h-100`) summary cards for *The Cascade Protocol*
+ * (`/case-studies/cascade-protocol`) and *The Shenandoah Gauntlet*
+ * (`/case-studies/shenandoah-valley`), alongside the persistent left-hand
+ * `sidebar-case-studies.php` menu (which also links to `/case-studies/phys-100-report`).
+ *
+ * CSS STRETCHED-LINK NOTE:
+ * Notice `stretched-link` on each card's `<a>` button: in CSS, `.stretched-link::after`
+ * expands an invisible clickable overlay across the nearest `position: relative`
+ * parent `.card`, making the entire card clickable with both mouse and keyboard!
+ *
+ * INPUTS:
+ * - Static SSR view partial; sets `$pageTitle`.
+ *
+ * OUTPUT PRODUCED:
+ * - 2-column (`col-lg-6`) DaisyUI 5 `.card` index rendered inside `<main id="main-content">`.
+ * ============================================================================
+ *
  * RaggieSoft Architecture - Page Component
  * 
  * File: pages/case-studies/overview.php
@@ -22,6 +49,7 @@ $pageTitle = "Case Studies: Operational Overview";
 
 <div class="container py-5">
     
+    <?php /* Dashboard Header (`<h1>Operational Archives</h1>`) */ ?>
     <div class="border-bottom pb-4 mb-5">
         <h1 class="display-4 fw-bold mb-2">Operational Archives</h1>
         <p class="lead text-body-secondary">

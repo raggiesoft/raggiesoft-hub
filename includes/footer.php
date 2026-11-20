@@ -1,4 +1,36 @@
 <?php
+/**
+ * ============================================================================
+ * READ-ALONG TEACHING GUIDE (100-LEVEL COURSE EDITION)
+ * ============================================================================
+ * File: /includes/footer.php
+ * Role: Global Master `<footer id="elara-master-footer">`, Legal/Fictitious Band & SPA JS Hooks
+ * Domain: https://raggiesoft.com (Included at the bottom of `amanda/elara.php` & standalone errors)
+ *
+ * WHAT THIS FILE DOES (PLAIN-ENGLISH OVERVIEW):
+ * Closes out every HTML document on `raggiesoft.com` in four layers:
+ *   1. Dynamic HQ Location Lookup: Reads `/portfolio/json/locations.json` from
+ *      `$cdnBaseUrl` to expose `$hq_location` to child footers.
+ *   2. Visual Section Footer (`#visual-footer-container`): Resolves and includes
+ *      the active visual footer (`footer-default.php` or `case-studies/footer-case-studies.php`)
+ *      via `$pageConfig['footer']` or `settings.json`'s `footerMap`.
+ *   3. Mandatory Global Legal & Fictitious Disclaimer Band (`#global-legal-band`):
+ *      Displays dynamic copyright (`2008 – date("Y")`), MIT / CC BY-SA 4.0 dual
+ *      licensing links, trademark claims, the network-wide **Fictitious Persons &
+ *      Entities Disclaimer**, and governance links (Official Store, RaggieSoft Media,
+ *      Careers Fraud Alert, Privacy, Terms, Licenses, Contact, AI Disclaimer).
+ *   4. Global Modals & Client-Side Lifecycle Scripts:
+ *      - Injects `modals/encyclopedia-modal.php` (`<dialog id="encyclopedia-modal">`).
+ *      - Loads `piper-sullivan.js` and `encyclopedia.js`.
+ *      - Defines `initializeStorePreferences()` to remember a visitor's preferred
+ *        music streaming platform (`apple`, `youtube`, or `spotify`) in `localStorage`
+ *        and re-binds both store buttons and GA4 virtual pageviews on `elara:loaded`.
+ *      - Closes `</body>` and `</html>`.
+ *
+ * INPUTS:
+ * - `$cdnBaseUrl`, `$pageConfig`, `$settings`, `$request_uri`, `$currentPageTheme`, `ROOT_PATH`.
+ * ============================================================================
+ */
 // includes/footer.php
 // v8.5 - Integrated Global Trademark Claims
 // Updated: Dynamic Location Logic
@@ -24,8 +56,9 @@
 // --- 1. DYNAMIC LOCATION LOGIC ---
 // Retrieves physical headquarters location from the CDN to populate footer address blocks dynamically
 $location_json_url = $cdnBaseUrl . '/portfolio/json/locations.json';
-$hq_location = 'Location Classified'; // Fallback in case of failure
+$hq_location = 'Location Classified'; // Fallback in case of network timeout or parse failure
 
+// `@file_get_contents` suppresses warnings if the CDN is offline so the footer never breaks:
 $location_json = @file_get_contents($location_json_url);
 if ($location_json !== false) {
     $location_data = json_decode($location_json, true);
@@ -42,6 +75,7 @@ if ($location_json !== false) {
 
 // --- 2. RESOLVE VISUAL FOOTER ---
 // Determine which specific visual footer component to render based on page config or URI inheritance map
+// (`resolveAsset()` is defined in `amanda/elara.php` and walks up the URL path tree).
 if (isset($pageConfig['footer'])) {
     $footerFile = $pageConfig['footer'];
 } else {
@@ -58,16 +92,19 @@ if (!file_exists($currentFooter)) {
 $isDarkTheme = (isset($currentPageTheme) && in_array($currentPageTheme, ['dark', 'ad-astra']));
 ?>
 
+<?php /* Semantic `<footer>` landmark wrapping both the section-specific visual footer and the universal legal disclaimer band */ ?>
 <footer id="elara-master-footer">
     <div id="visual-footer-container">
         <?php include $currentFooter; ?>
     </div>
 
+    <?php /* Global Legal Band: Required on every RaggieSoft property for MIT/CC BY-SA 4.0 licensing and the Fictitious Persons & Entities Disclaimer */ ?>
     <div id="global-legal-band" class="bg-body-secondary border-top py-3 position-relative z-1" <?php echo $isDarkTheme ? 'data-bs-theme="dark"' : ''; ?>>
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-6 text-center text-lg-start small text-body mb-3 mb-lg-0">
                     <div>
+                        <?php /* `date("Y")` prints the current 4-digit server year automatically (e.g., 2026) */ ?>
                         <span class="fw-bold">&copy; 2008 &ndash; <?php echo date("Y"); ?> Michael Ragsdale.</span>
                         <span class="mx-2 opacity-50 d-none d-lg-inline">|</span>
                         <span class="opacity-75 d-block d-lg-inline mt-1 mt-lg-0" style="font-size: 0.9em;">
@@ -83,6 +120,7 @@ $isDarkTheme = (isset($currentPageTheme) && in_array($currentPageTheme, ['dark',
                     </div>
                 </div>
                 <div class="col-lg-6 text-center text-lg-end small mt-2 mt-lg-0">
+                    <?php /* `rel="noopener"` prevents newly opened external tabs (`target="_blank"`) from accessing `window.opener` */ ?>
                     <a href="https://store.raggiesoft.com/" target="_blank" rel="noopener" class="text-decoration-none link-body-emphasis fw-bold me-3 hover-opacity">
                         <i class="ph-duotone ph-shopping-bag me-1" aria-hidden="true"></i>Official Store
                     </a>
@@ -105,13 +143,17 @@ $isDarkTheme = (isset($currentPageTheme) && in_array($currentPageTheme, ['dark',
 </footer>
 
 
+<?php /* Global native HTML5 `<dialog>` modal populated asynchronously by `encyclopedia.js` */ ?>
 <?php include ROOT_PATH . '/includes/components/modals/encyclopedia-modal.php'; ?>
 
 
 <script src="<?php echo $cdnBaseUrl; ?>/common/js/piper-sullivan.js?v=<?php echo time(); ?>"></script>
 <script src="<?php echo $cdnBaseUrl; ?>/common/js/encyclopedia.js?v=1789647924"></script>
 <script>
-// 1. Wrap the Store UI logic into a reusable function
+// 1. Wrap the Store UI logic into a reusable function:
+// Detects the visitor's OS (`youtube` on Android/ChromeOS, `apple` on macOS/iOS,
+// `spotify` elsewhere) unless overridden in `localStorage`, and updates any
+// `.dynamic-store-group` split buttons on the page without a browser reload.
 function initializeStorePreferences() {
     const combinedUa = (navigator.userAgent || '') + ' ' + (navigator.platform || '');
     const isAndroidOrChromeOs = /Android|CrOS/i.test(combinedUa);
@@ -175,7 +217,7 @@ function initializeStorePreferences() {
 // 2. Run on initial hard load
 document.addEventListener('DOMContentLoaded', initializeStorePreferences);
 
-// 3. The Elara SPA Lifecycle Hook
+// 3. The Elara SPA Lifecycle Hook (`elara:loaded` fires after soft page swaps)
 document.addEventListener('elara:loaded', function() {
     // Re-bind the store selector buttons in the new DOM
     initializeStorePreferences();
@@ -189,6 +231,7 @@ document.addEventListener('elara:loaded', function() {
 });
 
 </script>
+<?php /* Optional per-route external `<script>` array defined in `data/routes/*.json` */ ?>
 <?php if (isset($pageConfig['scripts']) && is_array($pageConfig['scripts'])): ?>
     <?php foreach ($pageConfig['scripts'] as $script): ?>
         <script src="<?php echo $script; ?>"></script>

@@ -1,6 +1,34 @@
 <?php
 /**
  * ============================================================================
+ * READ-ALONG TEACHING GUIDE (100-LEVEL COURSE EDITION)
+ * ============================================================================
+ * File: /pages/about/overview.php
+ * Role: Mission Profile Landing Page (`https://raggiesoft.com/about`)
+ * Route Manifest: `/data/routes/about.json` -> `"/about"` (`showSidebar: false`)
+ *
+ * WHAT THIS FILE DOES (PLAIN-ENGLISH OVERVIEW):
+ * Notice that in RaggieSoft's Elara CMS, directory landing pages are named
+ * `overview.php` instead of `index.php`—and links ALWAYS point to the clean
+ * parent path (`/about`, NEVER `/about/overview`).
+ * This page presents the 3-layer Mission Profile of RaggieSoft over a cross-fading
+ * hero background (`hero-images.json` + `hero-image.js`):
+ *   - Layer 1 ("The Origin"): Milestones from 1997 websites through 2026's
+ *     Listening Room & RaggieSoft Book Reader.
+ *   - Layer 2 ("Creative Imprints"): Ocean View Archives, Engine Room Records,
+ *     The Listening Room, RaggieSoft Book Reader, and CC BY-SA 4.0 open culture.
+ *   - Layer 3 ("Network Entities"): 4 glassmorphism cards linking to `/about/family`,
+ *     `/about/stardust-engine`, `/about/aethel`, and `/about/engine-room`, plus
+ *     a Governance bar (`Licenses`, `Privacy`, `Terms`, `Cosmic Dedication`).
+ *
+ * INPUTS:
+ * - `includes/utils/json-reader.php` -> `fetch_asset_json('common/json/hero-images.json')`.
+ * - `$cdnBaseUrl` from `amanda/elara.php`.
+ *
+ * OUTPUT PRODUCED:
+ * - Full-width (`showSidebar: false`) immersive Mission Profile HTML partial.
+ * ============================================================================
+ *
  * ARCHITECTURE & MISSION PROFILE OVERVIEW:
  * This file is the central "Mission Profile" hub, merging the user's hero rotator
  * with the site's primary directory structure. It visually bridges the gap
@@ -21,16 +49,16 @@
 $pageTitle = "Mission Profile - RaggieSoft";
 
 // ARCHITECTURE: Fetching thematic background manifest for the immersive UI
-// 1. Fetch Hero Images for the rotator
+// 1. Fetch Hero Images for the rotator via `fetch_asset_json()` (2-second fail-fast timeout)
 require_once ROOT_PATH . '/includes/utils/json-reader.php';
 $heroImages = fetch_asset_json('common/json/hero-images.json');
 
-// 2. Pick Random Start Image
+// 2. Pick Random Start Image (`array_rand` returns a random array index)
 $startImage = !empty($heroImages) 
     ? $cdnBaseUrl . $heroImages[array_rand($heroImages)] 
     : $cdnBaseUrl . "/common/patterns/stars-transparent.png";
 
-// 3. Prepare JSON for JS
+// 3. Prepare JSON for JS (`htmlspecialchars(..., ENT_QUOTES, 'UTF-8')` safely escapes JSON quotes inside `data-images="..."`)
 $imagesJson = htmlspecialchars(json_encode($heroImages), ENT_QUOTES, 'UTF-8');
 ?>
 <style>

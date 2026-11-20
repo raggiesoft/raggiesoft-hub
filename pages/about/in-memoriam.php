@@ -1,6 +1,42 @@
 <?php
 /**
  * ============================================================================
+ * READ-ALONG TEACHING GUIDE (100-LEVEL COURSE EDITION)
+ * ============================================================================
+ * File: /pages/about/in-memoriam.php
+ * Role: Permanent Creator's Cosmic Tribute to Sir Patrick Stewart (1940–2026)
+ * Routes:
+ *   - `https://raggiesoft.com/in-memoriam` (`/data/routes/core.json` — canonical,
+ *     sets `"schemaType": "MemorialTribute"` which triggers `includes/header.php`'s
+ *     specialized Schema.org `@graph` and `og:type="article"` tags!)
+ *   - `https://raggiesoft.com/about/in-memoriam` (`/data/routes/about.json` —
+ *     `301` redirect to `/in-memoriam`)
+ *
+ * WHAT THIS FILE DOES (PLAIN-ENGLISH OVERVIEW):
+ * Preserves Michael P. Ragsdale's personal tribute honoring Sir Patrick Stewart
+ * (July 13, 1940 – October 28, 2026) and the five-part childhood family weeknight
+ * television schedule (`Local News -> National News -> Wheel of Fortune ->
+ * Jeopardy! -> Star Trek: The Next Generation`) that sparked the cosmic wonder
+ * behind *The Stardust Engine*, *"Escape Velocity (Ad Astra)"*, *The Twin Moons*,
+ * *Starfield Calibration*, and *Caelum-IV* (`nebulae.raggiesoft.com`).
+ *
+ * SUNSET & ARCHIVAL LIFECYCLE (`$memoriamRibbonActive`):
+ * - Through `2026-11-28`: `$memoriamRibbonActive = (date('Y-m-d') <= '2026-11-28')`
+ *   evaluates to `true`, so the "Network Observatory Status" box notes that the
+ *   30-day top-of-site `.rs-memoriam-bar` ribbon is currently active across all
+ *   RaggieSoft websites.
+ * - On and after `2026-11-29`: `$memoriamRibbonActive` flips automatically to
+ *   `false` with zero manual redeployment needed! The top site ribbon sunsets,
+ *   while THIS page (`/in-memoriam`) switches its status badge to "Permanent
+ *   Archival Dedication" and stays online permanently.
+ *
+ * WCAG 2.1 AA & CSS CUSTOM PROPERTIES (`--mem-*`):
+ * - Defines semantic CSS variables (`--mem-surface`, `--mem-text`, `--mem-border-gold`,
+ *   etc.) on `.memoriam-page-shell` with Light Mode defaults and Dark Mode
+ *   overrides (`[data-bs-theme="dark"]` + `@media (prefers-color-scheme: dark)`),
+ *   guaranteeing >= 7.0:1 readability in every color scheme.
+ * ============================================================================
+ *
  * In Memoriam: Sir Patrick Stewart (July 13, 1940 – October 28, 2026)
  * Second Star to the Right — A Cosmic Tribute from RaggieSoft
  * ============================================================================
@@ -49,7 +85,9 @@
 $pageTitle = "In Memoriam: Sir Patrick Stewart (1940–2026) | RaggieSoft";
 $pageTheme = "raggiesoft";
 
-// Check whether the 30-day active mourning window (through November 28, 2026) is currently active
+// Check whether the 30-day active mourning window (through November 28, 2026) is currently active.
+// Because ISO 8601 dates (`YYYY-MM-DD`) sort lexicographically in chronological order,
+// `'2026-11-20' <= '2026-11-28'` is `true` while `'2026-11-29' <= '2026-11-28'` is `false`!
 $memoriamRibbonActive = (date('Y-m-d') <= '2026-11-28');
 ?>
 
@@ -355,6 +393,7 @@ $memoriamRibbonActive = (date('Y-m-d') <= '2026-11-28');
 
 <div class="container py-4 py-md-5 memoriam-page-shell">
 
+  <?php /* Semantic `<header>` hero monument (`data-theme="dark"` locks gold/slate contrast over the frosted obsidian glass panel) */ ?>
   <!-- =====================================================================
        1. HERO MONUMENT: SECOND STAR TO THE RIGHT
        ===================================================================== -->
@@ -403,6 +442,7 @@ $memoriamRibbonActive = (date('Y-m-d') <= '2026-11-28');
           When I was a kid, weekday evening television in our house wasn&rsquo;t background noise&mdash;it was a shared family ritual. Every Monday through Friday evening, sitting together in the living room, our television schedule always followed the exact same five-part cadence:
         </p>
 
+        <?php /* Ordered list `<ol role="list">` (`list-style: none` in CSS otherwise strips list semantics in WebKit VoiceOver unless `role="list"` is explicitly preserved!) */ ?>
         <ol class="tv-schedule-list" role="list" aria-label="Childhood weekday evening family television schedule">
           <li class="tv-schedule-item">
             <span class="tv-schedule-step" aria-hidden="true">1</span>
@@ -468,6 +508,7 @@ $memoriamRibbonActive = (date('Y-m-d') <= '2026-11-28');
           </ul>
         </div>
 
+        <?php /* Dynamic status notice driven by `$memoriamRibbonActive`: explains the 30-day active ribbon through `2026-11-28`, then flips automatically to permanent archival copy on `2026-11-29` */ ?>
         <div class="p-3 rounded-3 border" style="background-color: var(--mem-surface-elevated); border-color: var(--mem-border) !important;">
           <div class="small fw-bold text-uppercase mb-1" style="color: var(--mem-accent-gold);">
             <i class="ph-duotone ph-shooting-star me-1" aria-hidden="true"></i> Network Observatory Status
@@ -644,6 +685,7 @@ $memoriamRibbonActive = (date('Y-m-d') <= '2026-11-28');
     </p>
   </section>
 
+  <?php /* `role="note"` landmark clarifying non-commercial creator attribution and the RaggieSoft Fictitious Persons & Entities Disclaimer */ ?>
   <div class="p-3 rounded-3 border small" style="background-color: var(--mem-surface-elevated); border-color: var(--mem-border) !important; color: var(--mem-text-secondary);" role="note" aria-label="Editorial and Fictitious Entities Disclaimer">
     <strong>Editorial Tribute &amp; Fictitious Entities Notice:</strong> This page is a non-commercial, personal creator&rsquo;s tribute written by <strong>Michael P. Ragsdale</strong> honoring the life and cultural impact of <strong>Sir Patrick Stewart (1940–2026)</strong>. <em>Star Trek: The Next Generation</em> and <em>NCC-1701-D</em> are referenced strictly for historical commentary and personal attribution; RaggieSoft is wholly independent and is not affiliated with or endorsed by Paramount Global. All RaggieSoft narrative characters, bands (including <em>The Stardust Engine</em>), universities (including <em>Commonwealth Polytechnic Institute / CPI</em>, <em>The Forgers</em>, and <em>The Crucible</em>), corporations (including <em>OmniCorp</em>, <em>Apex Records</em>, <em>Prairie Coachworks</em>, and <em>Sainte-Claire</em>), transit agencies (<em>Blue Ridge Transit</em>), in-universe legal filings, and any entity with <strong>&ldquo;LLC&rdquo;</strong> in its name (including <em>Engine Room Records, LLC</em>) are works of fiction. Any resemblance to actual persons (living or dead), businesses, institutions, or events is purely coincidental.
   </div>

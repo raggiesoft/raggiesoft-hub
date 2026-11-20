@@ -1,5 +1,41 @@
 <?php
 /**
+ * ============================================================================
+ * READ-ALONG TEACHING GUIDE (100-LEVEL COURSE EDITION)
+ * ============================================================================
+ * File: /pages/home.php
+ * Role: Root Homepage View ("The Global Y-Junction" — `https://raggiesoft.com/`)
+ * Route Manifest: `/data/routes/core.json` -> `"/"` (`"view": "pages/home"`)
+ *
+ * WHAT THIS FILE DOES (PLAIN-ENGLISH OVERVIEW):
+ * Serves the front door of the entire RaggieSoft ecosystem (`https://raggiesoft.com/`)
+ * inside `<main id="main-content">`:
+ *   1. Y-Junction Split Hero (`<section class="split-hero-container">`): Lets
+ *      visitors immediately choose between Michael P. Ragsdale's professional
+ *      engineering portfolio ("The Architect" -> `michaelpragsdale.com`) and
+ *      the independent music & book universe ("Creative Works" -> Engine Room
+ *      Records & Ocean View Archives).
+ *   2. Timezone-Aware Seasonal Callout (`America/New_York` Eastern Time):
+ *      - Through `2026-11-28`: Displays the 30-day **Sir Patrick Stewart (1940–2026)
+ *        In Memoriam** callout card linking to `/in-memoriam`.
+ *      - Starting `2026-11-29` (the day after the memorial sunsets, honoring a
+ *        respectful 2026 Black Friday exception) through New Year's Day (`Jan 1`):
+ *        Automatically transitions to the **Winter Symphonic Spotlight** for
+ *        *The Arctic Symphony Project* (previewable anytime via `?holiday=preview`).
+ *   3. AI Transparency Notice (`role="alert"`): Prominent disclosure linking to
+ *      `/about/ai-disclaimer`.
+ *   4. Global Subdomain Constellations Grid (`<section id="network-spokes">`):
+ *      Loops through `$constellations` with `foreach` and passes each entry as
+ *      `$props` into the reusable `includes/components/card.php` component!
+ *
+ * INPUTS:
+ * - `$cdnBaseUrl` (from `amanda/elara.php`).
+ * - Optional `$_GET['holiday']` / `$_GET['rs_holiday']` query parameter (`preview` / `off`).
+ *
+ * OUTPUT PRODUCED:
+ * - WCAG 2.1 AA high-contrast homepage HTML fragment + Schema.org JSON-LD.
+ * ============================================================================
+ *
  * RaggieSoft.com - The Global Y-Junction (Root Domain)
  *
  * ARCHITECTURE & CONTEXT:
@@ -273,8 +309,10 @@ $pageTitle = "RaggieSoft™ | The Central Hub";
     }
 </style>
 
+<?php /* SECTION 1: Y-Junction Split Hero (`aria-label="Main Navigation Routing"` names this `<section>` region for screen readers; `data-bs-theme="dark"` locks >= 7:1 dark-surface contrast even when OS Light Mode is active) */ ?>
 <section class="split-hero-container w-100 wa-dark" data-bs-theme="dark" aria-label="Main Navigation Routing">
     
+    <?php /* Left/Top Pane: "The Architect" -> Professional Engineering Portfolio & RaggieSoft Media */ ?>
     <div class="split-pane bg-dark">
         <div class="pane-bg" style="background-image: url('<?php echo $cdnBaseUrl; ?>/common/patterns/stars-transparent.png'); background-color: #0a0e14; background-size: auto;"></div>
         <div class="pane-overlay"></div>
@@ -297,6 +335,7 @@ $pageTitle = "RaggieSoft™ | The Central Hub";
         </div>
     </div>
 
+    <?php /* Right/Bottom Pane: "Creative Works" -> Engine Room Records & Ocean View Archives */ ?>
     <div class="split-pane bg-black">
         <div class="pane-bg" style="background-image: url('<?php echo $cdnBaseUrl; ?>/stardust-engine/images/stardust-nebula.jpg');"></div>
         <div class="pane-overlay"></div>
@@ -331,6 +370,12 @@ $pageTitle = "RaggieSoft™ | The Central Hub";
      *    - 2026 Respectful Exception: Goes live `2026-11-29` after the tribute sunsets
      *    - Pack-Away: `January 2` at `00:00 EST` (active all day New Year's Day `Jan 1`)
      *    - Supports `?holiday=preview` (`1`/`on`) for live previewing at any time.
+     *
+     * TEACHING NOTE ON `DateTimeImmutable` & `DateTimeZone`:
+     * Servers in the cloud often run in `UTC` time, which rolls over to "tomorrow"
+     * at 7:00 PM EST! Explicitly passing `new DateTimeZone('America/New_York')` to
+     * `DateTimeImmutable` guarantees that the `2026-11-28` midnight sunset happens
+     * at exact Eastern Time regardless of the Linux server's system clock timezone.
      */
     $rsEasternTz = new DateTimeZone('America/New_York');
     $rsEasternNow = new DateTimeImmutable('now', $rsEasternTz);
@@ -339,12 +384,16 @@ $pageTitle = "RaggieSoft™ | The Central Hub";
     $rsEasternMonth = (int) $rsEasternNow->format('n');
     $rsEasternDay = (int) $rsEasternNow->format('j');
 
+    // Read optional `$_GET['holiday']` URL query parameter for developer previewing (`?holiday=preview` or `?holiday=off`):
+    // Notice `in_array(..., true)` uses strict comparison (`===`) against a fixed allowlist, never echoing raw `$_GET` to HTML!
     $rsHolidayParam = strtolower((string) ($_GET['holiday'] ?? $_GET['rs_holiday'] ?? ''));
     $rsHolidayPreviewOn = in_array($rsHolidayParam, ['1', 'true', 'on', 'preview'], true);
     $rsHolidayPreviewOff = in_array($rsHolidayParam, ['0', 'false', 'off', 'normal'], true);
 
+    // Sir Patrick Stewart's 30-day memorial callout takes precedence through `2026-11-28`:
     $rsMemoriamActive = ($rsEasternYmd <= '2026-11-28') && !$rsHolidayPreviewOn;
 
+    // PHP's natural-language date parser computes U.S. Thanksgiving (`fourth thursday of november`) dynamically for any year!
     $rsBlackFriday = new DateTimeImmutable("fourth thursday of november {$rsEasternYear}", $rsEasternTz);
     $rsBlackFridayDay = ((int) $rsBlackFriday->format('j')) + 1;
 
@@ -353,12 +402,15 @@ $pageTitle = "RaggieSoft™ | The Central Hub";
         ($rsEasternMonth === 1 && $rsEasternDay === 1) ||
         ($rsEasternMonth === 11 && $rsEasternDay >= $rsBlackFridayDay);
 
+    // Because `&& !$rsMemoriamActive` is required, in November 2026 the Holiday banner
+    // waits respectfully until `2026-11-29` (the day after the 30-day tribute sunsets):
     $rsHolidayActive = $rsHolidayPreviewOff
         ? false
         : ($rsHolidayPreviewOn || (!$rsMemoriamActive && $rsHolidayDateMatch));
 
     if ($rsMemoriamActive):
     ?>
+    <?php /* Branch 1 (`<= 2026-11-28` EST): 30-Day Sir Patrick Stewart In Memoriam Spotlight Card */ ?>
     <div class="card mb-3 border shadow-sm" style="background: linear-gradient(90deg, #040711 0%, #0b132b 50%, #040711 100%); border-color: rgba(251, 191, 36, 0.55) !important; color: #f8fafc;" data-bs-theme="dark">
         <div class="card-body py-3 px-4 d-flex flex-column flex-md-row align-items-md-center justify-content-between gap-3">
             <div>
@@ -377,6 +429,7 @@ $pageTitle = "RaggieSoft™ | The Central Hub";
         </div>
     </div>
     <?php elseif ($rsHolidayActive): ?>
+    <?php /* Branch 2 (`2026-11-29` through `Jan 1`, or `?holiday=preview`): Winter Symphonic Spotlight Card */ ?>
     <div class="card mb-3 border shadow-sm" style="background: linear-gradient(90deg, #071e16 0%, #143d2b 42%, #4a121b 82%, #071e16 100%); border-color: rgba(251, 191, 36, 0.6) !important; color: #f8fafc;" data-bs-theme="dark">
         <div class="card-body py-3 px-4 d-flex flex-column flex-md-row align-items-md-center justify-content-between gap-3">
             <div>
@@ -399,6 +452,7 @@ $pageTitle = "RaggieSoft™ | The Central Hub";
     </div>
     <?php endif; ?>
 
+    <?php /* Accessible `role="alert"` Transparency Notice linking directly to `/about/ai-disclaimer` */ ?>
     <div role="alert" class="alert alert-info shadow-sm rounded-0 d-flex align-items-start gap-3">
         <i class="ph-duotone ph-robot text-primary fs-3 shrink-0 mt-1" aria-hidden="true"></i>
         <div>
@@ -603,6 +657,7 @@ $pageTitle = "RaggieSoft™ | The Central Hub";
       ];
     ?>
 
+    <?php /* Iterate over `$constellations` and render each item via the reusable `includes/components/card.php` component */ ?>
     <div class="row constellation-grid-row justify-content-center">
       <?php foreach ($constellations as $cardProps): ?>
         <div class="col-12 col-md-6 col-lg-4 d-flex">
@@ -614,6 +669,7 @@ $pageTitle = "RaggieSoft™ | The Central Hub";
       <?php endforeach; ?>
     </div>
 
+    <?php /* Open-Culture CC BY-SA 4.0 & MIT Callout Card at the bottom of the Constellation directory */ ?>
     <div class="mt-5">
       <div class="card bg-base-200 border border-base-300 shadow-sm shadow-sm">
 <div class="card-body">

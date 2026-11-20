@@ -1,6 +1,32 @@
 <?php
 /**
  * ============================================================================
+ * READ-ALONG TEACHING GUIDE (100-LEVEL COURSE EDITION)
+ * ============================================================================
+ * File: /includes/components/footers/footer-default.php
+ * Role: Default Visual Sitemap Footer for `raggiesoft.com`
+ * Domain: https://raggiesoft.com (Injected inside `#visual-footer-container` by `includes/footer.php`)
+ *
+ * WHAT THIS FILE DOES (PLAIN-ENGLISH OVERVIEW):
+ * Renders the 4-column visual sitemap band right above `#global-legal-band` on
+ * every route that uses the default `"/"` entry in `data/settings.json`'s
+ * `footerMap`:
+ *   - Column 1: RaggieSoft brand emblem, consumer tagline, and Norfolk, VA origin.
+ *   - Column 2 ("Constellations"): Links to Stardust, Engine Room, RaggieSoft
+ *     Media, Nebulae, The Studio Family, and the permanent `/in-memoriam` page.
+ *   - Column 3 ("Explore"): Direct consumer links to `books.raggiesoft.com`,
+ *     `music.raggiesoft.com`, `lore.raggiesoft.com`, and Accessibility.
+ *   - Column 4 ("Connect"): Accessible icon-only links (`aria-label="GitHub"`,
+ *     `aria-label="LinkedIn"`, `aria-label="Email"`).
+ *   - Finally, configures `$konami_config` and includes `easter-eggs/konami.php`.
+ *
+ * INPUTS:
+ * - `$cdnBaseUrl` and `ROOT_PATH` from `amanda/elara.php`.
+ *
+ * OUTPUT PRODUCED:
+ * - Responsive 4-column HTML sitemap block + Konami `<dialog>` partial.
+ * ============================================================================
+ *
  * ARCHITECTURE & DESIGN: Default Global Footer
  * ============================================================================
  * ROLE: The standard site-wide footer providing overarching navigation, brand 
@@ -21,6 +47,7 @@
     <div class="container">
         <div class="row gy-4">
             
+            <?php /* Column 1: Brand mark and consumer-friendly studio summary */ ?>
             <div class="col-lg-4 col-md-6">
                 <a href="/" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
                     <img src="<?php echo $cdnBaseUrl; ?>/raggiesoft-corporate/images/logo/raggiesoft-logo.png" 
@@ -35,6 +62,7 @@
                 </div>
             </div>
 
+            <?php /* Column 2: Ecosystem Constellations (Subdomains, Studio Family & Permanent Memorial) */ ?>
             <div class="col-lg-2 col-md-6">
                 <h6 class="fw-bold mb-3">Constellations</h6>
                 <ul class="nav flex-column small">
@@ -58,6 +86,7 @@
                 </ul>
             </div>
 
+            <?php /* Column 4: Social/Contact icon links — WCAG 2.1 AA requires `aria-label` whenever an `<a>` contains only an icon without visible text */ ?>
             <div class="col-lg-4 col-md-6 text-md-end">
                 <h6 class="fw-bold mb-3">Connect</h6>
                 <div class="d-flex justify-content-md-end gap-3">

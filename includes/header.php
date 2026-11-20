@@ -1,4 +1,50 @@
 <?php
+/**
+ * ============================================================================
+ * READ-ALONG TEACHING GUIDE (100-LEVEL COURSE EDITION)
+ * ============================================================================
+ * File: /includes/header.php
+ * Role: Global Master HTML `<head>`, SEO/OpenGraph/JSON-LD Engine, Network Bar & Top Navbar
+ * Domain: https://raggiesoft.com (Included by `amanda/elara.php` & standalone error pages)
+ *
+ * WHAT THIS FILE DOES (PLAIN-ENGLISH OVERVIEW):
+ * Every web page on `raggiesoft.com` begins with this master header template.
+ * Before the specific page content inside `<main id="main-content">` is ever
+ * rendered, `includes/header.php` outputs:
+ *   1. `<!doctype html>` and `<html lang="en">` with optional forced dark-mode
+ *      attributes (`data-theme="dark" data-bs-theme="dark"`).
+ *   2. `<head>` metadata: Google Analytics 4 (`gtag.js`), `<meta charset="utf-8">`,
+ *      responsive viewport, `<meta name="color-scheme" content="light dark">`,
+ *      `<title>`, OpenGraph (`og:*`) & Twitter Card (`twitter:*`) social preview
+ *      tags, `<link rel="canonical">`, and a rich Schema.org JSON-LD `@graph`
+ *      structured-data script for search engines.
+ *   3. Stylesheet & Asset Queue: Self-hosted DaisyUI 5 (`daisyui.css`, `themes.css`),
+ *      the Bootstrap-compatible layout polyfill (`raggiesoft-grid.css`), Phosphor
+ *      Duotone icon font (`phosphor.min.css`), `<link rel="preload">` hints for
+ *      above-the-fold brand logos, favicons, Google Fonts, and deferred SPA scripts
+ *      (`elara-spa.js`, `hero-image.js`, `raggiesoft-network.js`, `cinema-carousel.js`).
+ *      Note on Content Security Policy (CSP): Serving core UI frameworks (`daisyui.css`,
+ *      `phosphor.min.css`, `elara-spa.js`) from RaggieSoft's own first-party CDN
+ *      (`https://assets.raggiesoft.com`) avoids scattered third-party CDN script
+ *      dependencies and aligns cleanly with strict CSP origin allowlists.
+ *   4. Theme & Accessibility Shell (`<body>`):
+ *      - Early inline `<script>` syncing `prefers-color-scheme` BEFORE paint to
+ *        prevent a white Flash of Unstyled Content (FOUC) in Dark Mode.
+ *      - WCAG 2.1 AA "Skip to Main Content" keyboard link (`href="#main-content"`).
+ *      - Animated `#page-loader` overlay wired to `elara:navigating` / `elara:loaded`.
+ *      - Cross-subdomain `.rs-network-bar` ecosystem switcher + auto-expiring
+ *        30-day Sir Patrick Stewart `.rs-memoriam-bar` tribute ribbon (through
+ *        `2026-11-28`).
+ *      - Sticky `<header><nav class="navbar">` branding + dynamic `$currentHeaderMenu`
+ *        partial (`header-default.php`, `header-about.php`, `header-contact.php`, etc.).
+ *
+ * INPUTS (INHERITED FROM `amanda/elara.php` GLOBAL SCOPE):
+ * - `$settings`, `$pageConfig`, `$currentSite`, `$currentPageTheme`, `$cdnBaseUrl`,
+ *   `$pageTitle`, `$ogTitle`, `$ogDescription`, `$ogImage`, `$ogUrl`,
+ *   `$navbarBrandLogo`, `$navbarBrandLink`, `$currentHeaderMenu`, `$customPageAssets`,
+ *   plus PHP superglobals `$_SERVER['REQUEST_URI']` and `$_SERVER['HTTP_HOST']`.
+ * ============================================================================
+ */
 // includes/header.php
 // v7.2.0 - RaggieSoft Production (SEO Schema Engine Active)
 // Updated: Added Animated Hamburger Menu & JSON-LD Structured Data
@@ -27,18 +73,26 @@
 $site  = $currentSite ?? 'raggiesoft';
 $theme = $currentPageTheme ?? $site;
 
-// Ensure CDN Root exists
+// Ensure CDN Root exists (populated from `data/settings.json` -> `https://assets.raggiesoft.com`)
 $cdn_root = $cdnBaseUrl ?? $cdnBaseUrl; 
 
-// Theme Reset Logic
+// Theme Reset Logic: If a sub-project specifies a custom `$site` without overriding `$theme`,
+// match `$theme` to `$site` so its project-specific palette applies cleanly.
 if ($site !== 'raggiesoft' && $theme === 'raggiesoft') {
     $theme = $site;
 }
 
 // --- FORCE DARK MODE LOGIC ---
+// Certain sci-fi and industrial routes (`ad-astra`, `industrial`, `dark`) are designed
+// exclusively for dark surfaces. Setting `$force_dark_mode = true` stamps `data-theme="dark"`
+// and `data-bs-theme="dark"` directly onto `<html>` during PHP server-side rendering!
 $force_dark_mode = ($theme === 'dark' || $theme === 'ad-astra' || $theme === 'industrial');
 
 // --- 2. BRAND FONT LOGIC ---
+// Converts a PHP array of font names (e.g., `["Audiowide", "sans-serif"]`) into a valid
+// CSS `font-family` declaration (`'Audiowide', sans-serif`). Notice how generic CSS font
+// keywords (`sans-serif`, `serif`, `monospace`) MUST NOT be wrapped in quotes in CSS,
+// whereas custom font family names (`'Audiowide'`, `'Playfair Display'`) ARE quoted!
 $font_stack = $pageConfig['brandFont'] ?? $settings['brandFont'] ?? ['sans-serif'];
 if (!is_array($font_stack) || empty($font_stack)) { $font_stack = ['sans-serif']; }
 
@@ -53,6 +107,8 @@ $brand_font_css = implode(', ', $css_font_parts);
 $path_grid = $cdn_root . "/common/css/raggiesoft-grid.css";
 
 // 4. Build CSS Queue (Self-Hosted DaisyUI 5 + RaggieSoft Grid & Network Bar)
+// Loaded in strict cascade order so `raggiesoft-grid.css` and `raggiesoft-network.css`
+// can build upon DaisyUI 5's base tokens and theme variables:
 $css_load_queue = [
     $cdn_root . "/common/vendor/daisyui/daisyui.css",
     $cdn_root . "/common/vendor/daisyui/themes.css",
@@ -61,7 +117,9 @@ $css_load_queue = [
     $cdn_root . "/common/css/raggiesoft-network.css?v=20261118a"
 ];
 
-// 5. Critical Images
+// 5. Critical Images (`<link rel="preload" as="image">`)
+// Tells the browser to start downloading the navbar logo and any hero textures
+// (`$customPageAssets`) immediately for faster Largest Contentful Paint (LCP).
 $critical_images = [];
 if (!empty($navbarBrandLogo)) $critical_images[] = $navbarBrandLogo;
 
@@ -76,6 +134,8 @@ if (isset($customPageAssets) && is_array($customPageAssets)) {
   <head>
     
     <?php 
+    // Optional Google Analytics 4 (`gtag.js`) injection controlled via `data/settings.json`.
+    // Notice `htmlspecialchars()` around `trackingId` to prevent attribute/script injection.
     if (
         isset($settings['analytics']['enabled']) && 
         $settings['analytics']['enabled'] === true &&
@@ -97,6 +157,15 @@ if (isset($customPageAssets) && is_array($customPageAssets)) {
     <meta name="color-scheme" content="light dark">
     
     <?php
+    // =========================================================================
+    // CANONICAL URL & OPENGRAPH / TWITTER SOCIAL METADATA SYNTHESIS
+    // =========================================================================
+    // When someone shares a `raggiesoft.com` link on iMessage, Discord, Slack,
+    // LinkedIn, or X/Twitter, those apps scrape `<meta property="og:*">` and
+    // `<meta name="twitter:*">` tags from `<head>`.
+    // Below, we inspect `$_SERVER['REQUEST_URI']` and `$pageConfig` to resolve
+    // clean fallbacks—including dedicated `article` metadata and custom 1200x630
+    // social artwork when viewing `/in-memoriam` (Sir Patrick Stewart tribute).
     $resolvedPath = parse_url($_SERVER['REQUEST_URI'] ?? '/', PHP_URL_PATH) ?: '/';
     $isMemoriamRoute = ($resolvedPath === '/in-memoriam' || $resolvedPath === '/about/in-memoriam' || (($pageConfig['schemaType'] ?? '') === 'MemorialTribute'));
     $resolvedCanonical = $ogUrl ?? ('https://' . ($_SERVER['HTTP_HOST'] ?? 'raggiesoft.com') . ($isMemoriamRoute ? '/in-memoriam' : $resolvedPath));
@@ -112,6 +181,7 @@ if (isset($customPageAssets) && is_array($customPageAssets)) {
         : ($resolvedOgTitle . ' — RaggieSoft');
     $resolvedOgType = $isMemoriamRoute ? 'article' : 'website';
     ?>
+    <?php /* Every dynamic string echoed into an HTML attribute or `<title>` is escaped with `htmlspecialchars()` to prevent XSS */ ?>
     <title><?php echo htmlspecialchars($pageTitle ?? 'RaggieSoft'); ?></title>
     <meta name="description" content="<?php echo htmlspecialchars($resolvedOgDesc); ?>">
     <meta name="author" content="Michael P. Ragsdale">
@@ -130,6 +200,7 @@ if (isset($customPageAssets) && is_array($customPageAssets)) {
     <meta property="og:image:alt" content="<?php echo htmlspecialchars($resolvedOgImageAlt); ?>">
     <meta property="og:url" content="<?php echo htmlspecialchars($resolvedCanonical); ?>">
     <?php if ($isMemoriamRoute): ?>
+    <?php /* Additional OpenGraph `article:*` timestamps and topic tags emitted exclusively on `/in-memoriam` */ ?>
     <meta property="article:published_time" content="2026-10-29T00:00:00-04:00">
     <meta property="article:modified_time" content="2026-10-30T09:35:00-04:00">
     <meta property="article:author" content="https://michaelpragsdale.com">
@@ -153,6 +224,7 @@ if (isset($customPageAssets) && is_array($customPageAssets)) {
     <meta name="twitter:image" content="<?php echo htmlspecialchars($resolvedOgImage); ?>">
     <meta name="twitter:image:alt" content="<?php echo htmlspecialchars($resolvedOgImageAlt); ?>">
 
+    <?php /* `<link rel="canonical">` prevents duplicate-content SEO penalties (e.g., `/about/in-memoriam` vs `/in-memoriam`) */ ?>
     <link rel="canonical" href="<?php echo htmlspecialchars($resolvedCanonical); ?>">
 
     <?php
@@ -161,6 +233,11 @@ if (isset($customPageAssets) && is_array($customPageAssets)) {
     // Connects Organization, WebSite, Person (Architect), WebPage, BreadcrumbList,
     // and specialized entities (including the Sir Patrick Stewart In Memoriam
     // cosmic dedication graph on /in-memoriam).
+    //
+    // TEACHING NOTE ON JSON-LD:
+    // JSON-LD (`application/ld+json`) is machine-readable knowledge-graph data
+    // for search engines. Using `@id` URIs (like `"https://raggiesoft.com/#organization"`)
+    // lets multiple nodes cross-reference each other cleanly inside `@graph`!
     // =========================================================================
     $organizationNode = [
         "@type" => "Organization",
@@ -227,6 +304,9 @@ if (isset($customPageAssets) && is_array($customPageAssets)) {
     ];
 
     if ($isMemoriamRoute) {
+        // Branch A: Specialized `/in-memoriam` Knowledge Graph linking Organization +
+        // Architect + WebSite + Sir Patrick Stewart (`Person`) + `WebPage`/`AboutPage` +
+        // `BreadcrumbList` + Childhood TV Schedule (`ItemList`) + `Article` + musical/book `mentions`:
         $schema = [
             "@context" => "https://schema.org",
             "@graph" => [
@@ -440,6 +520,7 @@ if (isset($customPageAssets) && is_array($customPageAssets)) {
             ]
         ];
     } elseif (isset($pageConfig['schemaType']) && $pageConfig['schemaType'] === 'MusicGroup') {
+        // Branch B: `MusicGroup` schema linking The Stardust Engine to its verified Apple Music, Spotify, and YouTube Music profiles:
         $schema = [
             "@context" => "https://schema.org",
             "@graph" => [
@@ -462,6 +543,7 @@ if (isset($customPageAssets) && is_array($customPageAssets)) {
             ]
         ];
     } else {
+        // Branch C: Default `WebPage` schema graph used by standard routes across `raggiesoft.com`:
         $schema = [
             "@context" => "https://schema.org",
             "@graph" => [
@@ -486,10 +568,12 @@ if (isset($customPageAssets) && is_array($customPageAssets)) {
         ];
     }
     ?>
+    <?php /* Serialize the `$schema` PHP array into pretty-printed JSON-LD (`JSON_UNESCAPED_SLASHES` keeps URLs clean like `https://...` instead of `https:\/\/...`) */ ?>
     <script id="raggiesoft-head-jsonld" type="application/ld+json">
 <?php echo json_encode($schema, JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT); ?>
     </script>
 
+    <?php /* Sequential pagination `<link rel="prev/next">` tags injected automatically when `elara.php` sees `"isSequential": true` */ ?>
     <?php if (!empty($pageConfig['prevUrl'])): ?>
     <link rel="prev" href="https://<?php echo $_SERVER['HTTP_HOST'] . $pageConfig['prevUrl']; ?>">
     <?php endif; ?>
@@ -497,17 +581,21 @@ if (isset($customPageAssets) && is_array($customPageAssets)) {
     <link rel="next" href="https://<?php echo $_SERVER['HTTP_HOST'] . $pageConfig['nextUrl']; ?>">
     <?php endif; ?>
 
+    <?php /* Loop over `$css_load_queue` and append a cache-busting `?v=...` (or `&v=...` if a query string already exists) */ ?>
     <!-- Self-Hosted DaisyUI 5 & Phosphor Icons (Served via assets.raggiesoft.com) -->
     <?php foreach ($css_load_queue as $cssUrl): ?>
         <link href="<?php echo $cssUrl . (str_contains($cssUrl, '?') ? '&' : '?') . 'v=20261029h'; ?>" rel="stylesheet">
     <?php endforeach; ?>    
 
+    <?php /* Self-hosted Phosphor Icons CSS providing `.ph-duotone`, `.ph-bold`, etc. without third-party script trackers */ ?>
     <link rel="stylesheet" href="<?php echo $cdn_root; ?>/fonts/phosphor/phosphor.min.css?v=20261029h">
 
+    <?php /* Preload critical above-the-fold brand logos & hero textures to accelerate initial rendering */ ?>
     <?php foreach ($critical_images as $imgUrl): ?>
         <?php if($imgUrl): ?><link rel="preload" as="image" href="<?php echo $imgUrl; ?>"><?php endif; ?>
     <?php endforeach; ?>
     
+    <?php /* Cross-platform Favicons, Web App Manifest, and OS browser chrome `theme-color` hints */ ?>
     <link rel="apple-touch-icon" sizes="180x180" href="<?php echo $cdn_root; ?>/common/images/favicons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="<?php echo $cdn_root; ?>/common/images/favicons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="<?php echo $cdn_root; ?>/common/images/favicons/favicon-16x16.png">
@@ -523,6 +611,7 @@ if (isset($customPageAssets) && is_array($customPageAssets)) {
     <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
     <meta name="theme-color" content="#0b0f19" media="(prefers-color-scheme: dark)">
     
+    <?php /* Display & body web fonts used across corporate, sci-fi (`Audiowide`), and fantasy/editorial pages */ ?>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
@@ -532,6 +621,7 @@ if (isset($customPageAssets) && is_array($customPageAssets)) {
     <link href="https://fonts.googleapis.com/css2?family=Herr+Von+Muellerhoff&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,700;1,400&family=M+PLUS+Rounded+1c:wght@400;700&family=Titillium+Web:wght@400;700&display=swap" rel="stylesheet">
 
+    <?php /* `defer` downloads scripts in parallel without blocking HTML parsing, executing them once the DOM is built */ ?>
     <script src="<?php echo $cdnBaseUrl; ?>/common/js/elara-spa.js?v=<?php echo time(); ?>" defer></script>
     <script src="<?php echo $cdnBaseUrl; ?>/common/js/hero-image.js?v=20261029h" defer></script>
     <script src="<?php echo $cdnBaseUrl; ?>/common/js/raggiesoft-network.js?v=20261118a" defer></script>    
@@ -633,6 +723,10 @@ if (isset($customPageAssets) && is_array($customPageAssets)) {
     </style>
 
     <script>
+    // EARLY THEME SYNCHRONIZATION (Runs synchronously in `<head>` BEFORE `<body>` paints to prevent Flash of Unstyled Content / FOUC):
+    // 1. If PHP already stamped `data-bs-theme="dark"` on `<html>` (`$force_dark_mode`), leave the server-forced dark theme untouched.
+    // 2. Otherwise, query the visitor's OS preference via `window.matchMedia('(prefers-color-scheme: dark)')`, apply `data-theme`
+    //    and `data-bs-theme` immediately, and subscribe to live OS Light/Dark transitions!
     (function() {
         // Check if PHP already forced a theme before JS takes over
         const isForcedByServer = document.documentElement.hasAttribute('data-bs-theme');
@@ -728,14 +822,17 @@ if (isset($customPageAssets) && is_array($customPageAssets)) {
 </head>
   
   <body class="d-flex flex-column min-vh-100">
+    <?php /* Optional interactive canvas starfield (`glowing-galaxy.js`) when a route sets `"enableGalaxyBg": true` */ ?>
     <?php if (isset($pageConfig["enableGalaxyBg"]) && $pageConfig["enableGalaxyBg"] === true): ?>
         <div id="stardust-labs-bg" class="position-fixed w-100 h-100" style="z-index: -1; top: 0; left: 0;"></div>
         <script src="<?php echo $cdn_root; ?>/common/js/glowing-galaxy.js"></script>
     <?php endif; ?>
+    <?php /* WCAG 2.1 AA Bypass Block (Criterion 2.4.1): Invisible until focused with the `Tab` key, letting keyboard & screen-reader users jump straight past the global navbars to `<main id="main-content">` */ ?>
     <a href="#main-content" class="visually-hidden-focusable p-3 m-2 bg-primary text-white rounded position-absolute start-0 top-0 z-3 text-decoration-none fw-bold">
         Skip to Main Content
     </a>
     
+    <?php /* Full-viewport loading screen (`#page-loader`) that masks initial asset hydration and soft SPA route transitions */ ?>
     <div id="page-loader">
         <div class="spinner-border text-primary mb-3" role="status" style="width: 3rem; height: 3rem;">
             <span class="visually-hidden">Loading...</span>
@@ -758,7 +855,7 @@ if (isset($customPageAssets) && is_array($customPageAssets)) {
         const text = document.getElementById('loader-text');
         let progress = 0; let progressInterval;
 
-        // 1. The Animation Loop
+        // 1. The Animation Loop (Asymptotic progress bar approaching 95% while waiting for DOM/network completion)
         function startHeartbeat() {
             if (progressInterval) clearInterval(progressInterval);
             progress = 10; 
@@ -796,6 +893,7 @@ if (isset($customPageAssets) && is_array($customPageAssets)) {
         }
 
         // --- 3. ELARA SPA INTEGRATION ---
+        // Custom DOM events dispatched by `elara-spa.js` when intercepting internal `<a>` clicks:
         document.addEventListener('elara:navigating', () => {
             if(loader) {
                 loader.classList.remove('loader-hidden');
@@ -809,7 +907,7 @@ if (isset($customPageAssets) && is_array($customPageAssets)) {
         });
 
         // --- 4. BFCache Fix (Browser Back Button) ---
-        // Handles cases where the browser restores the page state from memory
+        // Handles cases where the browser restores the page state from memory (`event.persisted === true`)
         window.addEventListener('pageshow', (event) => {
             if (event.persisted) {
                 if(loader) loader.classList.add('loader-hidden');
@@ -828,6 +926,7 @@ if (isset($customPageAssets) && is_array($customPageAssets)) {
     })();
     </script>
     
+    <?php /* Global Cross-Subdomain Ecosystem Bar (`<nav aria-label="RaggieSoft Ecosystem Network">`) — `aria-current="page"` announces the active property to screen readers */ ?>
     <nav class="rs-network-bar" aria-label="RaggieSoft Ecosystem Network">
       <div class="rs-network-bar-inner">
         <span class="rs-network-label">✦ RaggieSoft Network:</span>
@@ -841,6 +940,7 @@ if (isset($customPageAssets) && is_array($customPageAssets)) {
           <li><a href="https://corporate.raggiesoft.com">🏢 Corporate</a></li>
           <li><a href="https://storetrainer.raggiesoft.com">💾 StoreTrainer</a></li>
           <li><a href="https://michaelpragsdale.com">👔 Portfolio &amp; Resume</a></li>
+          <?php /* Auto-expiring top-bar pill active during the 30-day Sir Patrick Stewart memorial window (`<= 2026-11-28`) */ ?>
           <?php if (date('Y-m-d') <= '2026-11-28'): ?>
           <li><a href="/in-memoriam" class="rs-network-memoriam-pill<?php echo $isMemoriamRoute ? ' is-active' : ''; ?>"<?php echo $isMemoriamRoute ? ' aria-current="page"' : ''; ?>>✦ In Memoriam</a></li>
           <?php endif; ?>
@@ -848,6 +948,7 @@ if (isset($customPageAssets) && is_array($customPageAssets)) {
       </div>
     </nav>
 
+    <?php /* 30-Day "Second Star to the Right" Memorial Ribbon: Automatically sunsets after `2026-11-28` on both server (`date('Y-m-d')`) and client (`data-rs-memoriam-expires` read by `raggiesoft-network.js`), while `/in-memoriam` stays permanently archived */ ?>
     <?php if (date('Y-m-d') <= '2026-11-28'): ?>
     <div class="rs-memoriam-bar" data-rs-memoriam-expires="2026-11-28T23:59:59-05:00" role="region" aria-label="In Memoriam: Sir Patrick Stewart">
       <div class="rs-memoriam-inner">
@@ -865,6 +966,7 @@ if (isset($customPageAssets) && is_array($customPageAssets)) {
     </div>
     <?php endif; ?>
 
+    <?php /* Semantic `<header>` landmark housing the sticky site-level `<nav class="navbar">` */ ?>
     <header>
       <nav class="navbar navbar-expand-md sticky-top border-bottom border-primary border-opacity-50 bg-body">
         <div class="container-fluid d-flex flex-wrap justify-content-between align-items-center">
@@ -872,6 +974,7 @@ if (isset($customPageAssets) && is_array($customPageAssets)) {
           <div class="d-flex align-items-center">
             <!-- Hamburger menu temporarily removed pending Stardust Engine migration -->
             
+            <?php /* Brand link & dual light/dark logo switcher (`.theme-img-light` vs `.theme-img-dark`) */ ?>
             <a class="navbar-brand d-flex align-items-center" href="<?php echo htmlspecialchars($pageConfig['navbarBrandLink'] ?? $navbarBrandLink ?? '/'); ?>">
                 
                 <?php 
@@ -898,19 +1001,21 @@ if (isset($customPageAssets) && is_array($customPageAssets)) {
                         class="me-2 align-text-top <?php echo htmlspecialchars($pageConfig['navbarBrandClass'] ?? ''); ?>">
                 <?php endif; ?>
                 
+                <?php /* `strip_tags(..., '<span>')` allows responsive `<span class="d-none d-md-inline">` wrappers from route JSON while blocking `<script>` tags */ ?>
                 <span class="fw-bold text-uppercase brand-font">
                 <?php echo strip_tags($pageConfig['navbarBrandText'] ?? $settings['siteName'] ?? 'Elara Site', '<span>'); ?>
                 </span>
             </a>
           </div>
                     
+          <?php /* Mobile Hamburger Toggle Button (`d-block d-md-none`) updating `aria-expanded` for screen readers */ ?>
           <button class="navbar-toggler border-0 shadow-none d-block d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
             <i class="ph-duotone ph-list fs-3 text-body-emphasis"></i>
           </button>
           
           <div class="navbar-collapse" id="navbarCollapse">
           <script>
-            // Vanilla JS fallback for Mobile Hamburger Menu
+            // Vanilla JS fallback for Mobile Hamburger Menu (since Bootstrap's JS bundle is retired)
             document.addEventListener('DOMContentLoaded', function() {
                 const toggler = document.querySelector('.navbar-toggler');
                 const target = document.getElementById('navbarCollapse');
@@ -921,7 +1026,7 @@ if (isset($customPageAssets) && is_array($customPageAssets)) {
                     });
                 }
             });
-            // Re-bind for Elara SPA
+            // Re-bind for Elara SPA soft navigations (`dataset.listenerAttached` prevents duplicate click listeners)
             document.addEventListener('elara:loaded', function() {
                 const toggler = document.querySelector('.navbar-toggler');
                 const target = document.getElementById('navbarCollapse');
@@ -933,7 +1038,7 @@ if (isset($customPageAssets) && is_array($customPageAssets)) {
                     });
                 }
             });
-            // Auto-close <details class="dropdown"> on click outside or sibling open
+            // Auto-close native HTML5 `<details class="dropdown">` menus when clicking outside them
             document.addEventListener('click', function(e) {
                 document.querySelectorAll('details.dropdown[open]').forEach(function(d) {
                     if (!d.contains(e.target)) d.removeAttribute('open');
@@ -942,6 +1047,7 @@ if (isset($customPageAssets) && is_array($customPageAssets)) {
           </script>
 
             <?php 
+                // Inject the route-resolved navigation bar (`header-default.php`, `about/header-about.php`, etc.):
                 if (isset($currentHeaderMenu) && file_exists($currentHeaderMenu)) {
                     include $currentHeaderMenu;
                 } else {

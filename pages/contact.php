@@ -1,5 +1,32 @@
 <?php
 /**
+ * ============================================================================
+ * READ-ALONG TEACHING GUIDE (100-LEVEL COURSE EDITION)
+ * ============================================================================
+ * File: /pages/contact.php
+ * Role: Global Contact Hub View (`https://raggiesoft.com/contact`)
+ * Route Manifest: `/data/routes/core.json` -> `"/contact"` (`headerMenu: "header-contact"`)
+ *
+ * WHAT THIS FILE DOES (PLAIN-ENGLISH OVERVIEW):
+ * Renders the central communication directory for `raggiesoft.com`, routing
+ * visitors to six specialized channels so every inquiry reaches the right place:
+ *   1. General Inquiry (`mailto:connect@michaelpragsdale.com`)
+ *   2. Store Support (`store.raggiesoft.com` operated by Fourthwall as Merchant of Record)
+ *   3. DSP & Industry (`engineroom.raggiesoft.com/dsp-verification` + closed-label notice)
+ *   4. Hiring & Careers (`michaelpragsdale.com/#logistics` + Job Scam Warning)
+ *   5. Sync & Licensing (`corporate.raggiesoft.com/licensing/commercial`)
+ *   6. Fan Mail & Lore (`/about/ai-disclaimer` explaining fictional bands/characters)
+ *
+ * INPUTS:
+ * - `includes/utils/json-reader.php` -> `fetch_asset_json('common/json/hero-images.json')`
+ *   loads an array of background hero paths from `$cdnBaseUrl`.
+ *
+ * OUTPUT PRODUCED:
+ * - Page-scoped Schema.org `ContactPage` + `FAQPage` JSON-LD block, high-contrast
+ *   glassmorphism CSS overrides, and a 6-card responsive directory over a
+ *   cross-fading hero backdrop (`hero-image.js`).
+ * ============================================================================
+ *
  * RaggieSoft Architecture - Page Component
  * 
  * File: pages/contact.php
@@ -22,14 +49,25 @@
 
 $pageTitle = "Contact Channels | Michael Ragsdale";
 
+// Load the remote JSON reader helper and fetch the array of hero background image paths:
 require_once ROOT_PATH . '/includes/utils/json-reader.php';
 $heroImages = fetch_asset_json('common/json/hero-images.json');
+
+// `array_rand($heroImages)` picks a random index from `$heroImages` on each page load
+// so visitors see fresh artwork immediately, falling back to `stars-transparent.png` if empty:
 $startImage = !empty($heroImages) 
     ? $cdnBaseUrl . $heroImages[array_rand($heroImages)] 
     : $cdnBaseUrl . "/common/patterns/stars-transparent.png";
+
+// SECURITY & SERIALIZATION NOTE:
+// To pass a PHP array into an HTML `data-images="..."` attribute safely, we first
+// serialize the array to JSON (`json_encode`) and THEN escape quotes (`ENT_QUOTES`)
+// with `htmlspecialchars(..., ENT_QUOTES, 'UTF-8')` so `"` inside JSON becomes `&quot;`
+// and never breaks out of the HTML attribute!
 $imagesJson = htmlspecialchars(json_encode($heroImages), ENT_QUOTES, 'UTF-8');
 ?>
 
+<?php /* Page-specific Schema.org `ContactPage` + `FAQPage` JSON-LD helping search engines surface anti-scam employment answers */ ?>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -107,6 +145,7 @@ $imagesJson = htmlspecialchars(json_encode($heroImages), ENT_QUOTES, 'UTF-8');
     .force-icon-secondary { color: #adb5bd !important; }
 </style>
 
+<?php /* `hero-rotator-container` exposes `data-images` to `hero-image.js`, which cross-fades `.hero-bg-layer-1` and `.hero-bg-layer-2` smoothly */ ?>
 <div class="immersive-container hero-rotator-container" data-images="<?php echo $imagesJson; ?>">
     
     <div class="hero-bg-layer hero-bg-layer-1" style="background-image: url('<?php echo $startImage; ?>');"></div>
@@ -115,6 +154,7 @@ $imagesJson = htmlspecialchars(json_encode($heroImages), ENT_QUOTES, 'UTF-8');
 
     <div class="content-wrapper container">
         
+        <?php /* Page Header Banner (`<h1>Signal The Architect</h1>`) */ ?>
         <div class="text-center mb-5 d-flex justify-content-center">
             <div class="force-glass-bg force-border-default p-4 rounded-4 shadow-lg">
                 <h1 class="display-3 fw-bold text-uppercase force-text-light force-shadow-heavy mb-2" style="font-family: 'Audiowide', cursive;">
@@ -126,6 +166,7 @@ $imagesJson = htmlspecialchars(json_encode($heroImages), ENT_QUOTES, 'UTF-8');
             </div>
         </div>
 
+        <?php /* Responsive 3-column (`col-lg-4`) grid of 6 specialized contact cards */ ?>
         <div class="row g-4 justify-content-center">
             
             <div class="col-lg-4">

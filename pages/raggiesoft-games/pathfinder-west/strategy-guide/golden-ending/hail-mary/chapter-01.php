@@ -1,5 +1,31 @@
 <?php
 /**
+ * ============================================================================
+ * READ-ALONG TEACHING GUIDE (100-LEVEL COURSE EDITION)
+ * ============================================================================
+ * File: /pages/raggiesoft-games/pathfinder-west/strategy-guide/golden-ending/hail-mary/chapter-01.php
+ * Role: Pathfinder West Strategy Guide — Chapter 1 ("The False Start")
+ * URL:  `https://raggiesoft.com/raggiesoft-games/pathfinder-west/strategy-guide/golden-ending/hail-mary/chapter-01`
+ * Route Manifest: `/data/routes/raggiesoft-games/pathfinder-west.json`
+ *
+ * WHAT THIS FILE DOES (PLAIN-ENGLISH OVERVIEW):
+ * Renders Chapter 1 of the "Pasco Hail Mary" Golden Ending narrative strategy
+ * guide for *Pathfinder West*, combining:
+ *   1. Semantic HTML5 `<header>` + `<article class="narrative-prose">` prose
+ *      with side-by-side album cover art fetched from `$cdnBaseUrl` (*The Paper
+ *      Wall — Static & Silence Book 1 & Book 2*).
+ *   2. A classic walkthrough "Guide Notes" `.card` highlighting strategic
+ *      mechanics (free CD pickup, circled Track 15 clue, Island 1 turnaround).
+ *   3. Chronological pagination by defining `$nav` (`prev`, `overview`, `next`)
+ *      and including `includes/components/navigation/narrative-stepper.php`!
+ *
+ * INPUTS:
+ * - `$cdnBaseUrl` and `ROOT_PATH` from `amanda/elara.php`.
+ *
+ * OUTPUT PRODUCED:
+ * - Full-width (`showSidebar: false`) strategy guide chapter + 3-button stepper.
+ * ============================================================================
+ *
  * Pathfinder West Strategy Guide - Hail Mary Chapter 1
  * 
  * ARCHITECTURAL OVERVIEW:
@@ -20,11 +46,13 @@ $metaDescription = "Chapter 1 of the Pathfinder West strategy guide. Roxy, Allis
 ?>
 
 <div class="container my-5 strategy-guide-chapter">
+    <?php /* Semantic `<header>` introducing Chapter 1's title and in-universe date/route */ ?>
     <header class="mb-5 pb-3 border-bottom border-secondary-subtle">
         <h1 class="display-4 fw-bold">Chapter 1: The False Start</h1>
         <p class="text-body-secondary fs-5">Saturday, April 1, 2006 — Virginia Beach to Island 1</p>
     </header>
 
+    <?php /* Semantic `<article>` wrapping the long-form chapter prose for screen-reader and reader-mode compatibility */ ?>
     <article class="narrative-prose fs-5 lh-lg">
         <p>The silence in the Virginia Beach duplex was deafening. Roxy stared at the empty drum throne, her drumsticks tapping a frantic, anxious rhythm against her thigh. Jason was <em>nevah</em> late. The three of them operated like a synchronized clock, and for her twin to pull a no-call, no-show ahead of their summer tour was fundamentally impossible.</p>
 
@@ -87,6 +115,7 @@ $metaDescription = "Chapter 1 of the Pathfinder West strategy guide. Roxy, Allis
 </div>
 
     <?php 
+    // Configure `$nav` for `narrative-stepper.php` (notice clean `/hail-mary` folder URL—never `/hail-mary/overview`!):
     // SETUP THE NARRATIVE STEPPER
     $nav = [
         'prev' => [

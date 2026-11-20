@@ -1,6 +1,30 @@
 <?php
 /**
  * ============================================================================
+ * READ-ALONG TEACHING GUIDE (100-LEVEL COURSE EDITION)
+ * ============================================================================
+ * File: /pages/case-studies/cascade-protocol.php
+ * Role: Case Study CS-001 — "The Cascade Protocol" (`/case-studies/cascade-protocol`)
+ * Route Manifest: `/data/routes/case-studies.json` -> `"/case-studies/cascade-protocol"`
+ *                 (Inherits `header-case-studies`, `sidebar-case-studies`, and
+ *                  `footer-case-studies` from `"common"`!)
+ *
+ * WHAT THIS FILE DOES (PLAIN-ENGLISH OVERVIEW):
+ * Presents an engineering-style post-mortem incident report (`2004-CS-02`) that
+ * translates neurodivergent sensory overload and recovery into Systems Engineering
+ * reliability concepts ("Rootkit Exploit" visual trigger -> "Containment" via
+ * deep-pressure grounding & environmental perimeter -> "Safe Mode Reboot" via
+ * non-verbal fallback signals -> "Graceful Degradation" takeaway).
+ *
+ * INPUTS:
+ * - Static SSR view partial; sets `$pageTitle` and renders inside `<main id="main-content">`
+ *   beside `sidebar-case-studies.php`.
+ *
+ * OUTPUT PRODUCED:
+ * - Structured incident-report HTML partial using DaisyUI 5 `.card` & `role="alert"`
+ *   blocks and Phosphor Duotone icons (`aria-hidden="true"`).
+ * ============================================================================
+ *
  * ARCHITECTURE & INCIDENT RESPONSE:
  * This file renders "The Cascade Protocol", a narrative case study structured
  * as an engineering incident report. It maps a psychological event (a meltdown)
@@ -22,6 +46,7 @@ $pageTitle = "Case Study: The Cascade Protocol";
 ?>
 
 <div class="container py-5">
+    <?php /* Case Study Title Banner (`<h1>The Cascade Protocol</h1>`) */ ?>
     <div class="border-bottom pb-2 mb-4 d-flex align-items-center">
         <i class="ph-duotone ph-warning ph-3x text-danger me-3" aria-hidden="true"></i>
         <div>

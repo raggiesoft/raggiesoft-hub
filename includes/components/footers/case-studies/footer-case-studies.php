@@ -1,5 +1,27 @@
 <?php
 /**
+ * ============================================================================
+ * READ-ALONG TEACHING GUIDE (100-LEVEL COURSE EDITION)
+ * ============================================================================
+ * File: /includes/components/footers/case-studies/footer-case-studies.php
+ * Role: Section-Scoped Visual Footer for `/case-studies/*` ("RaggieSoft Archives")
+ * Domain: https://raggiesoft.com (Assigned via `data/routes/case-studies.json` `"common.footer"`)
+ *
+ * WHAT THIS FILE DOES (PLAIN-ENGLISH OVERVIEW):
+ * Demonstrates Elara's DRY route inheritance in action! In `data/routes/case-studies.json`,
+ * `"common"` sets `"footer": "case-studies/footer-case-studies"`. Whenever a visitor
+ * views `/case-studies`, `/case-studies/cascade-protocol`, `/case-studies/shenandoah-valley`,
+ * or `/case-studies/phys-100-report`, `includes/footer.php` swaps out `footer-default.php`
+ * and injects THIS specialized Operational Archives footer instead (while still
+ * keeping the mandatory `#global-legal-band` right below it!).
+ *
+ * INPUTS:
+ * - `$cdnBaseUrl` and `ROOT_PATH` from `amanda/elara.php`.
+ *
+ * OUTPUT PRODUCED:
+ * - 3-column RaggieSoft Archives visual footer + Archive-themed Konami `<dialog>`.
+ * ============================================================================
+ *
  * ARCHITECTURAL DOCBLOCK
  * 
  * File: raggiesoft-hub/includes/components/footers/case-studies/footer-case-studies.php
@@ -33,6 +55,7 @@
     <div class="container">
         <div class="row gy-4">
             
+            <?php /* Column 1: Operational Archives Identity */ ?>
             <div class="col-lg-5 col-md-6">
                 <a href="/case-studies" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
                     <img src="<?php echo $cdnBaseUrl; ?>/raggiesoft-corporate/images/logo/raggiesoft-logo.png" 
@@ -45,6 +68,7 @@
                 </p>
             </div>
 
+            <?php /* Column 2: Direct Navigation to Case Study Reports */ ?>
             <div class="col-lg-3 col-md-6">
                 <h6 class="fw-bold mb-3">Quick Links</h6>
                 <ul class="nav flex-column small">
@@ -55,6 +79,7 @@
                 </ul>
             </div>
 
+            <?php /* Column 3: Accessible icon-only LinkedIn & Email links (`aria-label`) */ ?>
             <div class="col-lg-4 col-md-6 text-md-end">
                 <h6 class="fw-bold mb-3">Connect</h6>
                 <div class="d-flex justify-content-md-end gap-3">
@@ -66,6 +91,7 @@
 
         <hr class="my-4">
 
+        <?php /* Bottom sub-row showing dynamic year (`date("Y")`), CC BY-SA 4.0 link, and return link to `/` */ ?>
         <div class="row align-items-center">
             <div class="col-md-6 text-center text-md-start small text-body-secondary">
                 <p class="mb-1">&copy; <?php echo date("Y"); ?> Michael Ragsdale.</p>
@@ -81,6 +107,7 @@
 </div>
 
 <?php
+// Section-specific Konami Easter Egg configuration + `<dialog>` inclusion:
 // Standard Admin Access Easter Egg
 $konami_config = [
     'title'      => 'Archive Level Access',

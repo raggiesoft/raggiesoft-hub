@@ -1,5 +1,32 @@
 <?php
 /**
+ * ============================================================================
+ * READ-ALONG TEACHING GUIDE (100-LEVEL COURSE EDITION)
+ * ============================================================================
+ * File: /includes/utils/nav-logic.php
+ * Role: Tree-to-Linear Book Pagination Utility (`getBookNavigation()`)
+ * Domain: https://raggiesoft.com (Legacy Narrative Reader Engine Helper)
+ *
+ * WHAT THIS FILE DOES (PLAIN-ENGLISH OVERVIEW):
+ * Multi-level books are naturally stored as nested trees (`Book -> Chapter -> Part -> Scene`),
+ * which is great for a Table of Contents, but awkward when a reader clicks "Next Scene"
+ * at the end of Part 1 and needs to jump seamlessly into Part 2's first scene!
+ * `getBookNavigation($jsonUrl)` solves that classic data-structures problem by:
+ *   1. Loading the nested JSON hierarchy from `$jsonUrl`,
+ *   2. Flattening the 4-level tree into a 1-dimensional `$flatList` array in reading order,
+ *   3. Parsing `$_SERVER['REQUEST_URI']` to find the reader's current `$currentIndex`, and
+ *   4. Computing `$prevLink` (`$currentIndex - 1`), `$nextLink` (`$currentIndex + 1`),
+ *      and `$upLink` (back to `$basePath`).
+ *
+ * INPUTS:
+ * - `$jsonUrl` (string): Path or URL to a v4 book structure JSON manifest.
+ * - `$_SERVER['REQUEST_URI']`: Current URL path used to identify active book/chapter/part/scene slugs.
+ *
+ * OUTPUT PRODUCED:
+ * - Returns an associative array containing `error`, `bookData`, `flatList`,
+ *   `prevLink`, `nextLink`, `upLink`, and current 4-level IDs.
+ * ============================================================================
+ *
  * ARCHITECTURE & MAINTENANCE (LEGACY)
  *
  * This script (`nav-logic.php`) contains the core navigation engine for the Narrative/Book reader interface.
@@ -18,9 +45,10 @@
 // v4.0 - Universal Narrative Engine (Scene-Aware)
 
 function getBookNavigation($jsonUrl) {
-    // 1. Fetch Data
+    // 1. Fetch Data (`@` suppresses warnings if `$jsonUrl` is missing; we check `=== false` right below)
     $jsonData = @file_get_contents($jsonUrl);
 
+    // Safe fallback structure so calling templates never crash on missing array keys:
     if ($jsonData === false) {
         return [
             'error' => true,
@@ -40,19 +68,21 @@ function getBookNavigation($jsonUrl) {
     $bookData = json_decode($jsonData, true);
 
     // 2. Analyze Current URL (4 Levels Deep)
+    // Strip `$basePath` from the current request URL path, then split (`explode`) by `/`
+    // to extract `[0 => bookId, 1 => chapterId, 2 => partId, 3 => sceneId]`.
     $currentPath = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
     $basePath = $bookData['base_path'] ?? '/'; 
     $relativePath = str_replace($basePath, '', $currentPath);
     $pathSegments = explode('/', trim($relativePath, '/'));
 
-    // IDs based on v4 Hierarchy
+    // IDs based on v4 Hierarchy (`?? ''` prevents undefined-offset warnings on shorter URLs)
     $currentBookId = $pathSegments[0] ?? '';
     $currentChapId = $pathSegments[1] ?? '';
     $currentPartId = $pathSegments[2] ?? '';
     $currentSceneId = $pathSegments[3] ?? '';
 
     // LEGACY NAVIGATION ALGORITHM: Converts the tree structure into a flat array to simplify index-based previous/next calculation.
-    // 3. Flatten Structure for Linear Navigation
+    // 3. Flatten Structure for Linear Navigation (Depth-First Traversal across 4 nested `foreach` loops)
     $flatList = [];
 
     if (!empty($bookData['structure'])) {
@@ -84,7 +114,7 @@ function getBookNavigation($jsonUrl) {
         }
     }
 
-    // 4. Find Current Position
+    // 4. Find Current Position via linear search across `$flatList`
     $currentIndex = -1;
     foreach ($flatList as $index => $item) {
         if ($item['book_id'] === $currentBookId && 
@@ -96,15 +126,15 @@ function getBookNavigation($jsonUrl) {
         }
     }
 
-    // 5. Calculate Links
-    // Previous
+    // 5. Calculate Prev / Next / Up Links from `$currentIndex`
+    // Previous: If on the very first scene (`$currentIndex === 0`), step back to `$basePath` (Book Index)
     if ($currentIndex > 0) {
         $prevLink = $flatList[$currentIndex - 1]['url'];
     } else {
         $prevLink = $basePath; // Fallback to Index
     }
 
-    // Next
+    // Next: Advance to `$currentIndex + 1` unless already at the final scene of the book
     if ($currentIndex > -1 && $currentIndex < count($flatList) - 1) {
         $nextLink = $flatList[$currentIndex + 1]['url'];
     } else {

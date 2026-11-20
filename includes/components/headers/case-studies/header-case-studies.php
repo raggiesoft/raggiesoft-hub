@@ -1,6 +1,25 @@
 <?php
 /**
  * ============================================================================
+ * READ-ALONG TEACHING GUIDE (100-LEVEL COURSE EDITION)
+ * ============================================================================
+ * File: /includes/components/headers/case-studies/header-case-studies.php
+ * Role: Section-Scoped Top Navigation Menu for `/case-studies/*`
+ * Domain: https://raggiesoft.com (Inherited via `data/routes/case-studies.json` `"common.headerMenu"`)
+ *
+ * WHAT THIS FILE DOES (PLAIN-ENGLISH OVERVIEW):
+ * Provides top-bar navigation tailored specifically to the Operational Archives
+ * (`/case-studies`, `/case-studies/cascade-protocol`, `/case-studies/shenandoah-valley`,
+ * and `/case-studies/phys-100-report`), pairing a "Case Studies" quick-jump
+ * dropdown with recruiter links to `michaelpragsdale.com`.
+ *
+ * INPUTS:
+ * - `$_SERVER['REQUEST_URI']`: Evaluates `$isOverview` (`str_starts_with(..., '/case-studies')`).
+ *
+ * OUTPUT PRODUCED:
+ * - Responsive DaisyUI 5 `.mobile-nav-menu` flex row/column inside `#navbarCollapse`.
+ * ============================================================================
+ *
  * RaggieSoft Hub - Case Studies Header (DaisyUI 5 + Phosphor)
  * ============================================================================
  * File: includes/components/headers/case-studies/header-case-studies.php
@@ -8,6 +27,7 @@
  * ============================================================================
  */
 
+// Read current request path to highlight the active Case Studies dropdown:
 $request_uri = parse_url($_SERVER['REQUEST_URI'] ?? '/', PHP_URL_PATH) ?: '/';
 $isOverview  = str_starts_with($request_uri, '/case-studies');
 ?>
@@ -18,6 +38,7 @@ $isOverview  = str_starts_with($request_uri, '/case-studies');
     <i class="ph-duotone ph-house me-1" aria-hidden="true"></i>Home
   </a>
 
+  <?php /* Case Studies Dropdown listing the index plus CS-001, CS-002, and CS-003 */ ?>
   <details class="dropdown">
     <summary class="btn btn-ghost <?php echo $isOverview ? 'text-primary fw-bold' : 'text-body-secondary'; ?>">
       <i class="ph-duotone ph-file-magnifying-glass me-1" aria-hidden="true"></i>Case Studies
@@ -48,6 +69,7 @@ $isOverview  = str_starts_with($request_uri, '/case-studies');
     </ul>
   </details>
 
+  <?php /* The Architect Dropdown linking to Michael's engineering portfolio (`michaelpragsdale.com`) */ ?>
   <details class="dropdown">
     <summary class="btn btn-ghost text-body-secondary">
       <i class="ph-duotone ph-user-focus me-1" aria-hidden="true"></i>The Architect

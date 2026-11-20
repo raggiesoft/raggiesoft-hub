@@ -1,5 +1,33 @@
 <?php
 /**
+ * ============================================================================
+ * READ-ALONG TEACHING GUIDE (100-LEVEL COURSE EDITION)
+ * ============================================================================
+ * File: /pages/about/ai-disclaimer.php
+ * Role: Public AI Transparency & Creative Workflow Disclosure (`/about/ai-disclaimer`)
+ * Route Manifest: `/data/routes/about.json` -> `"/about/ai-disclaimer"` (`showSidebar: true`)
+ *
+ * WHAT THIS FILE DOES (PLAIN-ENGLISH OVERVIEW):
+ * Linked from the homepage Transparency Notice, the global footer, and `/contact`,
+ * this page explains in plain consumer language how RaggieSoft combines human
+ * authorship with AI tools across three distinct roles:
+ *   1. "The Writer" — Michael (Human): Concept, novel prose, lyric concepts,
+ *      and final editorial/executive production.
+ *   2. "The Co-Writer" — Google Antigravity (Powered by Gemini): Continuity
+ *      organization, lyrical meter/rhyme polishing, and arrangement notes.
+ *   3. "The Studio" — Suno (AI): Commercial-tier audio/vocal synthesis.
+ * Followed by "The Prompt Engineering Philosophy" (zero copyrighted triggers,
+ * diacritical precision like Uluṟu/Québec/Montréal, phonetic control) and the
+ * network-wide **Work of Fiction Disclaimer**.
+ *
+ * INPUTS:
+ * - Pure SSR HTML partial (requires no external JSON or query parameters).
+ *
+ * OUTPUT PRODUCED:
+ * - 3-column DaisyUI 5 `.card` breakdown + methodology & fiction-disclaimer cards
+ *   rendered inside `<main id="main-content">`.
+ * ============================================================================
+ *
  * RaggieSoft - AI & The Creative Process (Transparency Disclaimer)
  *
  * ARCHITECTURE & CONTEXT:
@@ -27,6 +55,7 @@
     <div class="row justify-content-center">
         <div class="col-lg-12">
             
+            <?php /* Page Header (`<h1>` + lead summary) */ ?>
             <div class="text-center mb-5">
                 <h1 class="fw-bold display-5 mb-3 text-body-emphasis">AI & The Creative Process</h1>
                 <p class="lead text-body-secondary mx-auto" style="max-width: 700px;">
@@ -34,6 +63,7 @@
                 </p>
             </div>
 
+            <?php /* 3-Column Responsibility Breakdown (`col-md-4` equal-height `h-100` DaisyUI cards) */ ?>
             <div class="row g-4 mb-5">
                 
                 <div class="col-md-4">

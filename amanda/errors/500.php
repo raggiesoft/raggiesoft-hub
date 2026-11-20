@@ -1,5 +1,27 @@
 <?php
 /**
+ * ============================================================================
+ * READ-ALONG TEACHING GUIDE (100-LEVEL COURSE EDITION)
+ * ============================================================================
+ * File: /amanda/errors/500.php
+ * Role: HTTP 500 Internal Server Error Page ("Critical Engine Stall")
+ * Domain: https://raggiesoft.com (Nginx `error_page 500` / Elara Error View)
+ *
+ * WHAT THIS FILE DOES (PLAIN-ENGLISH OVERVIEW):
+ * HTTP status `500 Internal Server Error` indicates an unexpected backend crash
+ * or unhandled exception. Rather than exposing raw PHP stack traces (which
+ * would leak internal server file paths to attackers), this page displays a
+ * friendly "Critical Engine Stall" message with links to retry (`/`) or report
+ * the issue (`/contact`).
+ *
+ * INPUTS & DUAL-MODE EXECUTION:
+ * - `!defined('ROOT_PATH')` detects standalone Nginx invocation vs. `elara.php`
+ *   routing, setting `http_response_code(500)` before loading `includes/header.php`.
+ *
+ * OUTPUT PRODUCED:
+ * - Complete HTML5 `500` error page using DaisyUI 5 `.card` & `.btn` classes.
+ * ============================================================================
+ *
  * ARCHITECTURE: 500.php
  * 
  * Context: Amanda/Stardust Engine - Error Handling.
@@ -16,28 +38,29 @@
 // Theme: Knox / Industrial / Critical Failure
 // Context: "Engine Stall" / Server Error
 
-// Detect if loaded directly by Nginx or via Router
+// Detect if loaded directly by Nginx (`true`) or via Elara Router (`false`)
 $is_standalone = !defined('ROOT_PATH');
 
 if ($is_standalone) {
-    // Fix Path: Go up 2 levels from /public/errors/ to get to project root
+    // Fix Path: Go up 2 levels from `/amanda/errors/` to reach `/www`
     define('ROOT_PATH', realpath(__DIR__ . '/../../'));
     
-    // 2. Set Headers
+    // 2. Set HTTP 500 status code BEFORE any HTML output
     http_response_code(500);
     
-    // 3. Configure Page Variables
+    // 3. Configure Page Variables for `includes/header.php`
     $pageTitle = "500 System Failure - The Stardust Engine";
     $pageTheme = "ad-astra"; 
     
-    // 4. Load Header
+    // 4. Load Global Header
     require_once ROOT_PATH . '/includes/header.php';
     
-    // 5. Open Wrapper
+    // 5. Open Flexbox Layout Wrapper & `<main id="main-content">` landmark
     echo '<div class="container-fluid flex-grow-1 d-flex"><div class="row flex-grow-1"><main id="main-content" class="col-12 p-0">';
 }
 ?>
 
+<?php /* Decorative CSS starfield layer */ ?>
 <div class="starfield-container"><div class="starfield-twinkling"></div></div>
 
 <!-- START: 500 Error Main Container -->
@@ -46,10 +69,12 @@ if ($is_standalone) {
     <div class="row justify-content-center text-center">
         <div class="col-lg-8">
             
+            <?php /* Decorative Phosphor Duotone battery icon */ ?>
             <div class="mb-4">
                 <i class="ph-duotone ph-car-battery display-1 text-danger opacity-75"></i>
             </div>
 
+            <?php /* Primary `<h1>` HTTP status code and `<h2>` narrative heading */ ?>
             <h1 class="display-1 fw-bold text-danger text-shadow-danger mb-0" style="font-family: 'Impact', sans-serif; letter-spacing: 5px;">
                 500
             </h1>
@@ -57,6 +82,7 @@ if ($is_standalone) {
                 <span class="text-danger">>></span> CRITICAL ENGINE STALL
             </h2>
             
+            <?php /* DaisyUI 5 `.card` presenting the friendly server failure message */ ?>
             <!-- START: 500 Terminal Narrative Context -->
             <div class="card bg-base-200 border border-base-300 shadow-sm terminal-card border-danger text-start mb-5 mx-auto w-100" style="max-width: 600px;">
 <div class="card-body">
@@ -77,6 +103,7 @@ if ($is_standalone) {
 </div>
 </div>
             
+            <?php /* Escape links back to `/` or `/contact` */ ?>
             <!-- START: 500 Safe Escape Actions -->
             <div class="d-flex justify-content-center gap-3 flex-wrap">
                 <a href="/" class="btn btn-neutral btn-outline rounded-full">
@@ -92,6 +119,7 @@ if ($is_standalone) {
 </div>
 
 <?php
+// Complete the standalone document shell with `includes/footer.php` if needed:
 if ($is_standalone) {
     // 6. Close Wrapper & Load Footer
     echo '</main></div></div>';

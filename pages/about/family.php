@@ -1,6 +1,31 @@
 <?php
 /**
  * ============================================================================
+ * READ-ALONG TEACHING GUIDE (100-LEVEL COURSE EDITION)
+ * ============================================================================
+ * File: /pages/about/family.php
+ * Role: Consumer-Friendly Origin Story of "The Studio Family" (`/about/family`)
+ * Route Manifest: `/data/routes/about.json` -> `"/about/family"` (`showSidebar: true`)
+ *
+ * WHAT THIS FILE DOES (PLAIN-ENGLISH OVERVIEW):
+ * Notice the thoughtful architectural split between `/about/family` and `/family`:
+ *   - `/about/family` (THIS file on `raggiesoft.com`) tells the warm, everyday
+ *     human origin story of how Michael—an autistic only child born in 1985—created
+ *     "The Studio Family" (Jessica, Paige, Jenna, Sarah, Amanda & Elara) as
+ *     creative companions turning an overwhelming digital workspace into a calm,
+ *     predictable Virginia Beach home.
+ *   - Clicking "Enter the House" (`href="/family"`) at the bottom hits `amanda/elara.php`'s
+ *     `301` redirect to `https://michaelpragsdale.com/build-team`, where the full
+ *     technical DevOps engineering roster lives!
+ *
+ * INPUTS:
+ * - `$cdnBaseUrl` from `amanda/elara.php` for the hero illustration (`paige-michael-hug.jpg`).
+ *
+ * OUTPUT PRODUCED:
+ * - Accessible narrative HTML partial (Hero + "A Note on Reality" + 1985/1987/2008
+ *   Timeline + "Why Personify the Studio?" + 4-room Studio Metaphor Grid).
+ * ============================================================================
+ *
  * ARCHITECTURE & LORE: THE SYSTEM ORIGINS:
  * This file details the psychological and structural origins of the "Sisters" system,
  * explaining the concept of "Personified DevOps" as an accessibility adaptation.
@@ -17,6 +42,7 @@
 // Context: The origin story of the "Sisters" system.
 ?>
 
+<?php /* Hero Illustration with `position-absolute` corner badge (`Simulation: 1999`) */ ?>
 <!-- ARCHITECTURE: Thematic hero image with simulated timestamp overlay -->
 <div class="mb-5 position-relative">
     <img src="<?php echo $cdnBaseUrl; ?>/raggiesoft-lore/family/images/scenes/paige-michael-hug.jpg" 
@@ -193,6 +219,7 @@
                 </div>
             </div>
 
+            <?php /* CTA button: `/family` is 301-redirected by `amanda/elara.php` to `https://michaelpragsdale.com/build-team` */ ?>
             <div class="text-center mt-5 pt-4 border-top">
                 <h4 class="fw-bold mb-3">Ready to meet them?</h4>
                 <p class="text-muted mb-4">The roster is online and active.</p>

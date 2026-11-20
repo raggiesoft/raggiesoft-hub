@@ -1,5 +1,28 @@
 <?php
 /**
+ * ============================================================================
+ * READ-ALONG TEACHING GUIDE (100-LEVEL COURSE EDITION)
+ * ============================================================================
+ * File: /pages/apps/cipher/history.php
+ * Role: Historical Background View for the Signal Decryptor (`/apps/cipher/history`)
+ * Route Manifest: `/data/routes/apps/cipher.json` -> `"/apps/cipher/history"`
+ *                 (Inherits `"site": "stardust-engine"`, `"showSidebar": false` from `"common"`)
+ *
+ * WHAT THIS FILE DOES (PLAIN-ENGLISH OVERVIEW):
+ * Explains the real-world cryptographic and board-game lineage behind the
+ * Stardust Signal Decryptor (`/apps/cipher`) across three chronological cards:
+ *   1. "The Analog Era: Bulls and Cows" (Early 20th-century pencil-and-paper logic puzzle)
+ *   2. "The Plastic Era: Commercialization" (Mordecai Meirowitz's 1970 peg board game)
+ *   3. "The Stardust Signal" (RaggieSoft's accessible web edition with Stealth Protocol)
+ *
+ * INPUTS:
+ * - Static SSR view partial (no external JSON or PHP variables required).
+ *
+ * OUTPUT PRODUCED:
+ * - Single-column (`col-lg-8`) chronological DaisyUI 5 `.card` stack + return CTA
+ *   rendered inside `<main id="main-content">`.
+ * ============================================================================
+ *
  * Origins of the Cipher (History)
  *
  * This file provides the historical context and lore for the "Signal Decryptor" game,
@@ -15,6 +38,7 @@
     <div class="row justify-content-center">
         <div class="col-lg-8">
             
+            <?php /* Page Header (`<h1>Origins of the Cipher</h1>`) */ ?>
             <div class="text-center mb-5">
                 <h1 class="display-5 fw-bold text-primary">
                     <i class="ph-duotone ph-scroll me-2"></i>Origins of the Cipher
@@ -24,6 +48,7 @@
                 </p>
             </div>
 
+            <?php /* Era 1 Card: Early 20th-Century Public-Domain "Bulls and Cows" (`+` = Bull, `-` = Cow) */ ?>
             <div class="card bg-base-200 border border-base-300 shadow-sm mb-4 border-0 bg-body-tertiary w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
 
                 <div class="card-body p-4">

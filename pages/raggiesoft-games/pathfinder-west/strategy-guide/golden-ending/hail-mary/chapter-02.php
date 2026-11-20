@@ -1,5 +1,32 @@
 <?php
 /**
+ * ============================================================================
+ * READ-ALONG TEACHING GUIDE (100-LEVEL COURSE EDITION)
+ * ============================================================================
+ * File: /pages/raggiesoft-games/pathfinder-west/strategy-guide/golden-ending/hail-mary/chapter-02.php
+ * Role: Pathfinder West Strategy Guide — Chapter 2 ("The Cipher")
+ * URL:  `https://raggiesoft.com/raggiesoft-games/pathfinder-west/strategy-guide/golden-ending/hail-mary/chapter-02`
+ * Route Manifest: `/data/routes/raggiesoft-games/pathfinder-west.json`
+ *
+ * WHAT THIS FILE DOES (PLAIN-ENGLISH OVERVIEW):
+ * Renders Chapter 2 of the "Pasco Hail Mary" Golden Ending narrative strategy
+ * guide, pairing semantic `<header>` + `<article class="narrative-prose">`
+ * storytelling (decoding *The Paper Wall*'s *Static & Silence* double album
+ * while taking Exit 190 onto I-95 South / I-85 South) with strategic "Guide
+ * Notes" and the reusable `narrative-stepper.php` pagination bar.
+ *
+ * PAGINATION END-STATE NOTE:
+ * Because Chapters 3–5 are marked "In Archive Prep" on the overview page, `$nav`
+ * sets `'next' => null`. `narrative-stepper.php` detects `null` and automatically
+ * renders a disabled `"End"` button in the right-hand column!
+ *
+ * INPUTS:
+ * - `ROOT_PATH` from `amanda/elara.php`.
+ *
+ * OUTPUT PRODUCED:
+ * - Full-width strategy guide chapter HTML partial + `narrative-stepper.php`.
+ * ============================================================================
+ *
  * ARCHITECTURE: chapter-02.php
  * 
  * Context: RaggieSoft Games - Pathfinder West (Strategy Guide).
@@ -20,6 +47,7 @@ $metaDescription = "Chapter 2 of the Pathfinder West strategy guide. The party d
 
 <!-- START: Strategy Guide Chapter Container -->
 <div class="container my-5 strategy-guide-chapter">
+    <?php /* Semantic `<header>` introducing Chapter 2's heading and route segment */ ?>
     <header class="mb-5 pb-3 border-bottom border-secondary-subtle">
         <h1 class="display-4 fw-bold">Chapter 2: The Cipher</h1>
         <p class="text-body-secondary fs-5">Saturday, April 1, 2006 — I-64 West into North Carolina</p>

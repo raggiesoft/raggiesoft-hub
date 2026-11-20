@@ -1,6 +1,31 @@
 <?php
 /**
  * ============================================================================
+ * READ-ALONG TEACHING GUIDE (100-LEVEL COURSE EDITION)
+ * ============================================================================
+ * File: /includes/components/sidebars/about/sidebar-about.php
+ * Role: Left-Hand Mission Profile Sidebar Navigation (`/about/*` & `/in-memoriam`)
+ * Domain: https://raggiesoft.com (Rendered twice by `amanda/elara.php`: desktop `<aside>` + mobile drawer)
+ *
+ * WHAT THIS FILE DOES (PLAIN-ENGLISH OVERVIEW):
+ * Whenever a route in `data/routes/about.json` or `core.json` sets
+ * `"sidebar": "about/sidebar-about"` and `"showSidebar": true`, `amanda/elara.php`
+ * injects this vertical navigation menu into both the desktop `<aside>` column
+ * and the mobile `#mobileSidebarDrawer`.
+ *
+ * TEACHING NOTE ON `<?= ... ?>` SHORT ECHO TAGS:
+ * In PHP, `<?= $expr ?>` is built-in shorthand for `<?php echo $expr; ?>` and is
+ * always enabled in PHP 8.5! Each link below uses `<?= str_contains($currentUri, '...') ? 'btn-primary ...' : 'btn-ghost ...' ?>`
+ * to highlight the page the visitor is currently reading.
+ *
+ * INPUTS:
+ * - `$_SERVER['REQUEST_URI']`: Current URL path for active button highlighting.
+ * - `$cdnBaseUrl`: CDN base URL for the RaggieSoft emblem.
+ *
+ * OUTPUT PRODUCED:
+ * - Vertical Mission Profile directory ("Network Entities" + "Governance" + status footer).
+ * ============================================================================
+ *
  * RaggieSoft Hub - About/Mission Profile Sidebar (DaisyUI 5 + Phosphor)
  * ============================================================================
  * File: includes/components/sidebars/about/sidebar-about.php
@@ -16,9 +41,11 @@
  * ============================================================================
  */
 
+// Read the current request URI from PHP's `$_SERVER` superglobal:
 $currentUri = $_SERVER['REQUEST_URI'] ?? '';
 ?>
 
+<?php /* Sidebar Brand Header linking back to `/about` (Mission Profile Overview) */ ?>
 <div class="text-center mb-4 pt-3">
     <a href="/about" class="text-decoration-none">
         <img src="<?php echo $cdnBaseUrl; ?>/raggiesoft-corporate/images/logo/raggiesoft-logo.png" 
@@ -32,6 +59,7 @@ $currentUri = $_SERVER['REQUEST_URI'] ?? '';
 
 <hr class="divider my-3">
 
+<?php /* Group 1: Network Entities (Creator, Studio Family, Imprints, Universes, and Sir Patrick Stewart Memorial) */ ?>
 <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-2 mb-2 text-body-secondary text-uppercase" style="font-size: 0.75rem; letter-spacing: 1px;">
   <span>Network Entities</span>
 </h6>
@@ -66,6 +94,7 @@ $currentUri = $_SERVER['REQUEST_URI'] ?? '';
     </a>
 </div>
 
+<?php /* Group 2: Legal & Transparency Governance Links */ ?>
 <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-2 mb-2 text-body-secondary text-uppercase" style="font-size: 0.75rem; letter-spacing: 1px;">
   <span>Governance</span>
 </h6>

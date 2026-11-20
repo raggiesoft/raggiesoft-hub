@@ -1,6 +1,34 @@
 <?php
 /**
  * ============================================================================
+ * READ-ALONG TEACHING GUIDE (100-LEVEL COURSE EDITION)
+ * ============================================================================
+ * File: /includes/components/headers/header-default.php
+ * Role: Primary Global Top Navigation Menu for `raggiesoft.com`
+ * Domain: https://raggiesoft.com (Default fallback menu in `includes/header.php`)
+ *
+ * WHAT THIS FILE DOES (PLAIN-ENGLISH OVERVIEW):
+ * Serves as the main navigation menu on the root homepage (`/`), `/apps/cipher/*`,
+ * `/raggiesoft-games/*`, and any other route that doesn't specify a custom
+ * `headerMenu`. It organizes the entire RaggieSoft network into intuitive
+ * top-level buttons and DaisyUI 5 `<details class="dropdown">` menus:
+ *   - Home (`/`)
+ *   - The Architect (`michaelpragsdale.com`, Studio Family, Operational Case Studies, Contact)
+ *   - Creative Works (Engine Room Records, Music Catalog Registry, Stardust Engine,
+ *     The Listening Room, Ocean View Archives, Ad Astra Book, Lore Encyclopedia,
+ *     Nebulae Caelum-IV, and In Memoriam)
+ *   - RaggieSoft Media (`corporate.raggiesoft.com`, Licensing, Open Source Projects, StoreTrainer)
+ *   - Mission Profile (`/about`), In Memoriam (`/in-memoriam`), and Contact (`/contact`).
+ *
+ * INPUTS:
+ * - `$_SERVER['REQUEST_URI']`: Evaluates boolean active-section flags (`$isHome`,
+ *   `$isArchitect`, `$isCreative`, `$isMedia`, `$isCaseStudies`, `$isMemoriam`,
+ *   `$isAbout`, `$isContact`) using PHP 8's `str_starts_with()` function.
+ *
+ * OUTPUT PRODUCED:
+ * - Responsive `.mobile-nav-menu` flex container injected into `#navbarCollapse`.
+ * ============================================================================
+ *
  * ARCHITECTURE & MAINTENANCE NOTES: Main Network Header (DaisyUI 5 + Phosphor)
  * ============================================================================
  * File: includes/components/headers/header-default.php
@@ -18,6 +46,8 @@
  */
 
 // 1. Determine Active States
+// `parse_url(..., PHP_URL_PATH)` strips query strings (`?holiday=preview`), and PHP 8's
+// `str_starts_with()` checks whether the visitor is inside each section prefix:
 $request_uri = parse_url($_SERVER['REQUEST_URI'] ?? '/', PHP_URL_PATH) ?: '/';
 
 $isHome        = ($request_uri === '/');
@@ -30,6 +60,7 @@ $isAbout       = str_starts_with($request_uri, '/about') && !$isArchitect && !$i
 $isContact     = str_starts_with($request_uri, '/contact');
 ?>
 
+<?php /* Ternary expressions (`$flag ? 'text-primary fw-bold' : 'text-body-secondary'`) highlight whichever section is currently active */ ?>
 <div class="d-flex flex-column flex-md-row align-items-stretch align-items-md-center gap-2 ms-auto py-3 py-md-0 w-100 mobile-nav-menu">
 
   <a href="/" class="btn btn-ghost <?php echo $isHome ? 'text-primary fw-bold' : 'text-body-secondary'; ?>">

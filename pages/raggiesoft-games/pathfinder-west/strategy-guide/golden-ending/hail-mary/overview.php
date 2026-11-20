@@ -1,5 +1,32 @@
 <?php
 /**
+ * ============================================================================
+ * READ-ALONG TEACHING GUIDE (100-LEVEL COURSE EDITION)
+ * ============================================================================
+ * File: /pages/raggiesoft-games/pathfinder-west/strategy-guide/golden-ending/hail-mary/overview.php
+ * Role: Pathfinder West Strategy Guide — Table of Contents ("The Pasco Hail Mary")
+ * URL:  `https://raggiesoft.com/raggiesoft-games/pathfinder-west/strategy-guide/golden-ending/hail-mary`
+ * Route Manifest: `/data/routes/raggiesoft-games/pathfinder-west.json`
+ *                 (Inherits `"siteName": "Pathfinder West Strategy Guide"` from `"common"`;
+ *                  linked cleanly without `/overview` at the end!)
+ *
+ * WHAT THIS FILE DOES (PLAIN-ENGLISH OVERVIEW):
+ * Serves as the landing page and Table of Contents for "The Pasco Hail Mary"
+ * Golden Ending walkthrough:
+ *   1. `<header>`: Displays the "Run Parameters" summary card (Party Composition,
+ *      $1,500 Starting Tour Budget, Target Pasco Intercept).
+ *   2. `<section class="table-of-contents">`: Lists Chapters 1–2 with live
+ *      "Read Chapter" CTAs alongside Chapters 3–5 ("In Archive Prep" badges).
+ *   3. Pagination Stepper: Passes `$nav` (`'prev' => null`, `'overview'` ->
+ *      Pathfinder West Hub, `'next'` -> Chapter 1) into `narrative-stepper.php`.
+ *
+ * INPUTS:
+ * - `ROOT_PATH` from `amanda/elara.php`.
+ *
+ * OUTPUT PRODUCED:
+ * - Semantic `<header>` + `<section>` walkthrough directory + `narrative-stepper.php`.
+ * ============================================================================
+ *
  * Pathfinder West Strategy Guide - Hail Mary Overview
  * 
  * ARCHITECTURAL OVERVIEW:
@@ -25,6 +52,7 @@ $metaDescription = "The complete narrative strategy guide for achieving the Pasc
 ?>
 
 <div class="container my-5 strategy-guide-overview">
+    <?php /* Guide Header & Run Parameters Summary Card */ ?>
     <header class="mb-5 pb-3 border-bottom border-secondary-subtle">
         <span class="badge badge-warning mb-2">Golden Ending Walkthrough</span>
         <h1 class="display-4 fw-bold">The Pasco Hail Mary</h1>
@@ -129,6 +157,7 @@ $metaDescription = "The complete narrative strategy guide for achieving the Pasc
     </section>
 
     <?php 
+    // `'prev' => null` tells `narrative-stepper.php` to render an invisible left spacer so "Pathfinder West Hub" stays centered:
     // SETUP THE NARRATIVE STEPPER
     $nav = [
         'prev' => null,

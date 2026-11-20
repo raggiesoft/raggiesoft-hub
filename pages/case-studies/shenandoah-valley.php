@@ -1,5 +1,29 @@
 <?php
 /**
+ * ============================================================================
+ * READ-ALONG TEACHING GUIDE (100-LEVEL COURSE EDITION)
+ * ============================================================================
+ * File: /pages/case-studies/shenandoah-valley.php
+ * Role: Case Study CS-002 — "The Shenandoah Valley Gauntlet" (`/case-studies/shenandoah-valley`)
+ * Route Manifest: `/data/routes/case-studies.json` -> `"/case-studies/shenandoah-valley"`
+ *                 (Inherits `header-case-studies`, `sidebar-case-studies`, and
+ *                  `footer-case-studies` from `"common"`)
+ *
+ * WHAT THIS FILE DOES (PLAIN-ENGLISH OVERVIEW):
+ * Documents an adaptive highway routing case study (`2024-SV-01`) along the
+ * I-81 / I-64 duplex between Lexington and Staunton, Virginia, illustrating
+ * **Graceful Degradation** and **Disaster Recovery Failover** ("The Fishersville
+ * Protocol" via Exit 91 -> SR-285 -> US-250 -> Blue Ridge Parkway) when a
+ * primary interface encounters a hard-coded trauma constraint ("Legacy Code").
+ *
+ * INPUTS:
+ * - Static SSR view partial rendered inside `<main id="main-content">`.
+ *
+ * OUTPUT PRODUCED:
+ * - 4-phase architectural case study (`<h1>` -> Summary Card -> Phases 1–4 ->
+ *   `role="alert"` failure callout -> Engineering Takeaway dark card).
+ * ============================================================================
+ *
  * RaggieSoft Architecture - Page Component
  * 
  * File: pages/case-studies/shenandoah-valley.php
@@ -18,6 +42,7 @@
 ?>
 <!-- MAIN CASE STUDY LAYOUT -->
 <div class="container py-5">
+    <?php /* Case Study Header (`<h1>` + Case ID subtitle) */ ?>
     <!-- HERO TITLE HEADER -->
     <div class="border-bottom pb-2 mb-4 d-flex align-items-center">
         <i class="ph-duotone ph-road-horizon ph-3x text-primary me-3" aria-hidden="true"></i>
@@ -74,6 +99,7 @@
         </h2>
         <p>At Exit 221, the road splits. We committed to the lane marked <strong>I-64 EAST - Richmond</strong>.</p>
         
+        <?php /* High-visibility `role="alert"` callout documenting the Exit 221 root-access trauma override */ ?>
         <div role="alert" class="alert shadow-sm alert-error d-block">
 
             <i class=\"shrink-0 text-xl ph-duotone ph-shield-slash\" aria-hidden="true"></i>

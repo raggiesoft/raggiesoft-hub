@@ -1,5 +1,41 @@
 <?php
 /**
+ * ============================================================================
+ * READ-ALONG TEACHING GUIDE (100-LEVEL COURSE EDITION)
+ * ============================================================================
+ * File: /pages/apps/cipher/overview.php
+ * Role: Interactive "Signal Decryptor" Game UI (`https://raggiesoft.com/apps/cipher`)
+ * Route Manifest: `/data/routes/apps/cipher.json` -> `"/apps/cipher"`
+ *                 (Clean folder URL—never linked as `/apps/cipher/overview`!)
+ *
+ * WHAT THIS FILE DOES (PLAIN-ENGLISH OVERVIEW):
+ * Renders the interactive frontend for RaggieSoft's Bulls-and-Cows / Mastermind
+ * code-breaking game (`Signal Decryptor`), working hand-in-hand with two companion
+ * files:
+ *   - Client-Side Controller: `$cdnBaseUrl/raggiesoft-corporate/apps/cipher/js/cipher.js`
+ *     (loaded at the bottom of this template with a `?v=time()` cache-buster).
+ *   - Server-Side Scoring API: `/includes/components/apps/cipher/logic.php`
+ *     (which receives JSON `POST` payloads and returns `+` / `-` match symbols).
+ *
+ * KEY ACCESSIBILITY & MOBILE UX PATTERNS DEMONSTRATED HERE:
+ *   1. Custom Card-Radio Controls (`.card-radio`): Visually hides native radio
+ *      dots with `opacity: 0` (NOT `display: none`, so keyboard `Tab` / Arrow
+ *      navigation still works!) and styles `input:checked + label` with CSS.
+ *   2. Mobile Numeric Keypads: `inputmode="numeric"` and `pattern="[0-9]*"`
+ *      pop up a large numeric keypad on iOS/Android phones without ugly desktop
+ *      `<input type="number">` up/down spinner arrows.
+ *   3. ARIA Live Announcements: `#resultBox` (`role="alert"`) and `#stealthToast`
+ *      (`role="alert" aria-live="assertive" aria-atomic="true"`) announce score
+ *      updates and Stealth Protocol toggles automatically to screen readers.
+ *
+ * INPUTS:
+ * - `$cdnBaseUrl` from `amanda/elara.php`.
+ *
+ * OUTPUT PRODUCED:
+ * - Interactive Mission Configuration bar + 2-column Controls / Decryption Log
+ *   layout + Toast notification container + `cipher.js` script tag.
+ * ============================================================================
+ *
  * Signal Decryptor (Cipher App Overview)
  *
  * This file serves as the main user interface for the "Signal Decryptor" game, a modern
@@ -24,6 +60,7 @@
         </div>
     </div>
 
+    <?php /* Mission Configuration Card: Radio buttons (`value="calibration|orbital|deep|horizon"`) match the exact `switch ($difficulty)` cases inside `includes/components/apps/cipher/logic.php`! */ ?>
     <div class="card bg-base-200 border border-base-300 shadow-sm border-0 bg-body-tertiary mb-5 w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
 
         <div class="card-header bg-dark text-white d-flex align-items-center p-3">
@@ -104,6 +141,7 @@
                 <div class="card-body p-4">
                     <form id="cipherForm">
                         
+                        <?php /* Secret Code input: `type="password"` masks digits for 2-player "Hot Seat" mode until `#toggleSecretVisibility` toggles it to `type="text"` in `cipher.js`; `inputmode="numeric"` triggers mobile number pads */ ?>
                         <div class="mb-4">
                             <label for="secretCode" class="form-label fw-bold text-uppercase small text-body-secondary">Target Signal (Secret Code)</label>
                             <div class="input-group">
@@ -163,6 +201,7 @@
 </div>
         </div>
 
+        <?php /* Right Column (`col-md-7`): Dynamic Decryption Result (`role="alert"`) + Step-by-Step Logic Analysis Log populated by `cipher.js` */ ?>
         <div class="col-md-7">
             <div id="resultBox" role="alert" class="alert shadow-sm text-center py-4 d-none mb-4 d-block">
 
@@ -194,6 +233,7 @@
     </div>
 </div>
 
+<?php /* Accessible Toast Notification (`aria-live="assertive" aria-atomic="true"`) announcing Stealth Protocol state changes */ ?>
 <div class="toast-container position-fixed bottom-0 end-0 p-3">
     <div id="stealthToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
         <div class="toast-header bg-dark text-white">

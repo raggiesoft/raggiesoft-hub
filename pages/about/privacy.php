@@ -2,6 +2,29 @@
 /**
  * @license MIT
  * ============================================================================
+ * READ-ALONG TEACHING GUIDE (100-LEVEL COURSE EDITION)
+ * ============================================================================
+ * File: /pages/about/privacy.php
+ * Role: Master Network Privacy Policy (`https://raggiesoft.com/about/privacy`)
+ * Route Manifest: `/data/routes/about.json` -> `"/about/privacy"` (`showSidebar: true`)
+ *
+ * WHAT THIS FILE DOES (PLAIN-ENGLISH OVERVIEW):
+ * Renders the canonical Privacy Policy governing `raggiesoft.com`, every
+ * `*.raggiesoft.com` subdomain, and `michaelpragsdale.com`.
+ *
+ * TEACHING NOTE ON STATIC vs. DYNAMIC DATES IN LEGAL DOCUMENTS:
+ * Unlike copyright footers (where `<?php echo date("Y"); ?>` is helpful), you
+ * should NEVER use `date("F j, Y")` for a Privacy Policy's "Last Updated" date—
+ * doing so would claim the policy changed today even if nothing changed! Instead,
+ * this file uses hardcoded, Git-verifiable dates (`March 29, 2026` / `October 26, 2026`)
+ * paired with a transparent Revision History ledger at the bottom.
+ *
+ * ACCESSIBILITY LANDMARKS:
+ * Each numbered legal section is wrapped in `<section aria-labelledby="...">`
+ * bound to its `<h2>` heading `id` so screen-reader users can jump directly
+ * between sections via rotor navigation.
+ * ============================================================================
+ *
  * RaggieSoft Global Privacy Policy
  * File: pages/about/privacy.php (https://raggiesoft.com/about/privacy)
  * ============================================================================
@@ -31,6 +54,7 @@
  * ============================================================================
  */
 ?>
+<?php /* Main Privacy Policy Container rendered inside `<main id="main-content">` alongside `sidebar-about.php` */ ?>
 <div class="container py-5">
     <div class="row justify-content-center">
         <div class="col-lg-9">

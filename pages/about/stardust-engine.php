@@ -1,5 +1,32 @@
 <?php
 /**
+ * ============================================================================
+ * READ-ALONG TEACHING GUIDE (100-LEVEL COURSE EDITION)
+ * ============================================================================
+ * File: /pages/about/stardust-engine.php
+ * Role: Mission Profile Dossier for *The Stardust Engine* (`/about/stardust-engine`)
+ * Route Manifest: `/data/routes/about.json` -> `"/about/stardust-engine"` (`theme: "ad-astra"`, `showSidebar: true`)
+ *
+ * WHAT THIS FILE DOES (PLAIN-ENGLISH OVERVIEW):
+ * Explains RaggieSoft's flagship 1980s synth-rock narrative project across two
+ * side-by-side glassmorphism cards ("Layer 1: The Universe" — the fictional CPI
+ * Class of '89 band vs. Apex Records — and "Layer 2: The Project" — the human +
+ * AI creative workflow), followed by a 4-column "Crew Manifest" grid.
+ *
+ * ROUTE OVERRIDE & ASSET PRELOAD NOTE:
+ * In `/data/routes/about.json`, `"/about/stardust-engine"` overrides `theme` to
+ * `"ad-astra"`, `navbarBrandLogo` to `band-logo.png`, and `brandFont` to
+ * `["Audiowide", "sans-serif"]`, transforming a single `/about/*` route into a
+ * deep-space Stardust Engine showcase! Setting `$customPageAssets` below also
+ * exposes the starfield pattern URL for preloading/reference.
+ *
+ * INPUTS:
+ * - `$cdnBaseUrl` from `amanda/elara.php`.
+ *
+ * OUTPUT PRODUCED:
+ * - Deep-space `ad-astra` themed HTML partial rendered inside `<main id="main-content">`.
+ * ============================================================================
+ *
  * Project: The Stardust Engine - Mission Profile
  *
  * ARCHITECTURE & CONTEXT:
@@ -31,12 +58,13 @@
 $pageTitle = "Project: The Stardust Engine | RaggieSoft";
 $pageTheme = "ad-astra"; 
 
-// ASSET MERGE
+// ASSET MERGE: Declares page-specific background textures from `$cdnBaseUrl`
 $customPageAssets = [
     'Starfield Texture' => $cdnBaseUrl . '/common/patterns/stars-transparent.png'
 ];
 ?>
 
+<?php /* Decorative CSS starfield layer + translucent `.glass-container` body */ ?>
 <div class="starfield-container"><div class="starfield-twinkling"></div></div>
 
 <div class="container py-5 glass-container">
