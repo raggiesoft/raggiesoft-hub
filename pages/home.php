@@ -685,9 +685,9 @@ $pageTitle = "RaggieSoft™ | The Central Hub";
           'imgAlt' => 'Barefoot siblings Nolan and Gwen Lennox on forearm crutches inside the 1980s fantasy twilight courtyard of The Uncharted Waystation',
           'fallbackText' => 'The Uncharted Waystation',
           'aspectRatio' => '16:9',
-          'badge' => '1980s Fantasy Realm • Universe Compass',
+          'badge' => '1980s Fantasy Realm • Story Crossroads & Compass',
           'title' => 'The Uncharted Waystation',
-          'description' => 'Pulled barefoot from their living-room sofa into a painted 1980s fantasy twilight, siblings Nolan and Gwen Lennox tend the star-astrolabe guiding visitors to every RaggieSoft realm.',
+          'description' => 'At the end of a long, winding Story Crossroads adventure on crutches across a 1980s fantasy world, barefoot siblings Nolan and Gwen Lennox claim the Waystation balcony as home forever.',
           'buttonProps' => [
             'href' => 'https://waystation.raggiesoft.com/',
             'text' => 'Visit the Waystation',
@@ -698,20 +698,20 @@ $pageTitle = "RaggieSoft™ | The Central Hub";
           ],
           'secondaryButtons' => [
             [
+              'href' => 'https://books.raggiesoft.com/waystation',
+              'text' => 'Read Crossroads Novel',
+              'variant' => 'neutral',
+              'appearance' => 'outlined',
+              'size' => 'small',
+              'icon' => 'ph-duotone ph-book-open-text'
+            ],
+            [
               'href' => 'https://waystation.raggiesoft.com/guides',
               'text' => 'Meet Nolan & Gwen',
               'variant' => 'neutral',
               'appearance' => 'outlined',
               'size' => 'small',
               'icon' => 'ph-duotone ph-sparkle'
-            ],
-            [
-              'href' => 'https://waystation.raggiesoft.com/realms',
-              'text' => 'Browse All Realms',
-              'variant' => 'neutral',
-              'appearance' => 'outlined',
-              'size' => 'small',
-              'icon' => 'ph-duotone ph-map-trifold'
             ]
           ]
         ],
