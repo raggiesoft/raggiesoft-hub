@@ -81,6 +81,7 @@ $pageTitle = "RaggieSoft™ | The Central Hub";
         "url": "https://michaelpragsdale.com"
       },
       "sameAs": [
+        "https://launcher.raggiesoft.com",
         "https://music.raggiesoft.com",
         "https://books.raggiesoft.com",
         "https://crossroads.raggiesoft.com",
@@ -474,76 +475,33 @@ $pageTitle = "RaggieSoft™ | The Central Hub";
     
     <div class="text-center border-bottom pb-3 mb-4">
         <h2 id="spokes-title" class="h4 fw-bold text-uppercase text-body mb-1">
-            <i class="ph-duotone ph-graph me-2 text-primary"></i>Explore the RaggieSoft Universe
+            <i class="ph-duotone ph-compass me-2 text-primary" aria-hidden="true"></i>Start Exploring RaggieSoft
         </h2>
         <p class="small text-body-secondary mb-0">
-            Stories, original music, interactive worlds, and creative archives across the RaggieSoft network.
+            Jump straight into our books, original music, or desktop apps&mdash;or visit our single Global Directory and Behind-the-Scenes Story Guide below.
         </p>
     </div>
 
     <?php
       /**
-       * Global Subdomain Constellations Directory (9 Balanced Cards -> 3x3 Grid on Desktop)
-       * 1. Nebulae: Ad Astra (nebulae.raggiesoft.com)
-       * 2. Ocean View Archives (books.raggiesoft.com)
-       * 3. RaggieSoft Story Crossroads (crossroads.raggiesoft.com)
-       * 4. Cedar Run (cedarrun.raggiesoft.com + books.raggiesoft.com/cedar-run)
-       * 5. Engine Room Records (engineroom.raggiesoft.com + Listening Room + Stardust Engine)
-       * 6. The Uncharted Waystation (waystation.raggiesoft.com)
-       * 7. RaggieSoft Media (corporate.raggiesoft.com)
-       * 8. Michael P. Ragsdale (michaelpragsdale.com Executive Dossier)
-       * 9. The Studio Family (/about/family — Paige, Jessica, Harper, Jenna, Sarah, Amanda & Elara)
-       *
-       * Every card displays its official 16:9 OpenGraph (`og:image`) or hero artwork inside
-       * a standard DaisyUI 5 `.card` component.
+       * DRY Front-Door Homepage Pillars (4 Focused Entry Doors -> 1 Clean Row of 4 on XL Desktop):
+       * Instead of duplicating the 16-property A-Z directory here, `raggiesoft.com` serves as
+       * a clean, welcoming front door with 4 core pillars + 2 dedicated DRY gateways:
+       *   - Global Directory & 404 Wayfinder -> `https://waystation.raggiesoft.com/realms`
+       *   - The Story Behind Every Project   -> `https://jessica.raggiesoft.com`
        */
       $constellations = [
         [
-          'imgSrc' => $cdnBaseUrl . '/nebulae/images/og-ad-astra-landing.jpg',
-          'imgAlt' => 'U.S.S. Aethelgard cargo hatch open onto Caelum-IV — Escape Velocity (Ad Astra) 16:9 OpenGraph Preview',
-          'fallbackText' => 'RaggieSoft Nebulae (Ad Astra)',
-          'aspectRatio' => '16:9',
-          'badge' => 'Interactive Storyboard • Caelum-IV',
-          'title' => 'Nebulae: Ad Astra (Caelum-IV)',
-          'description' => 'The 1996 "Escape Velocity (Ad Astra)" interactive short film storyboard and Caelum-IV planetary survey—where Cassidy and her family land aboard the U.S.S. Aethelgard.',
-          'buttonProps' => [
-            'href' => 'https://nebulae.raggiesoft.com/',
-            'text' => 'Explore Caelum-IV',
-            'variant' => 'brand',
-            'icon' => 'ph-duotone ph-planet',
-            'iconPosition' => 'before',
-            'fullWidth' => true
-          ],
-          'secondaryButtons' => [
-            [
-              'href' => 'https://books.raggiesoft.com/ad-astra',
-              'text' => 'Read Ad Astra Book',
-              'variant' => 'neutral',
-              'appearance' => 'outlined',
-              'size' => 'small',
-              'icon' => 'ph-duotone ph-book-open-text'
-            ],
-            [
-              'href' => 'https://music.raggiesoft.com/the-stardust-engine/1996-ad-astra-single/escape-velocity-ad-astra',
-              'text' => 'Stream 15:33 Suite',
-              'variant' => 'neutral',
-              'appearance' => 'outlined',
-              'size' => 'small',
-              'icon' => 'ph-duotone ph-headphones'
-            ]
-          ]
-        ],
-        [
           'imgSrc' => $cdnBaseUrl . '/raggiesoft-books/images/og/contemporary_v2.jpg',
-          'imgAlt' => 'Ocean View Archives Book Reader 16:9 OpenGraph Preview',
-          'fallbackText' => 'Ocean View Archives',
+          'imgAlt' => 'Ocean View Archives Book Reader and RaggieSoft Story Crossroads',
+          'fallbackText' => 'Novels & Story Crossroads',
           'aspectRatio' => '16:9',
-          'badge' => 'Literary Imprint • Book Reader',
-          'title' => 'Ocean View Archives',
-          'description' => 'Our literary publishing imprint and accessible e-book reader preserving CC BY-SA 4.0 grounded novels and cosmic chronicles at books.raggiesoft.com.',
+          'badge' => 'Books & Interactive Fiction',
+          'title' => 'Read Novels & Crossroads',
+          'description' => 'Read full-length contemporary and cosmic novels in Ocean View Archives or choose your own coequal path in RaggieSoft Story Crossroads—always free and ad-free.',
           'buttonProps' => [
             'href' => 'https://books.raggiesoft.com/',
-            'text' => 'Read Novels',
+            'text' => 'Open Book Reader',
             'variant' => 'brand',
             'icon' => 'ph-duotone ph-book-open',
             'iconPosition' => 'before',
@@ -551,24 +509,16 @@ $pageTitle = "RaggieSoft™ | The Central Hub";
           ],
           'secondaryButtons' => [
             [
-              'href' => 'https://books.raggiesoft.com/ad-astra',
-              'text' => 'Ad Astra (Stardate 49601)',
+              'href' => 'https://crossroads.raggiesoft.com/',
+              'text' => 'Story Crossroads',
               'variant' => 'neutral',
               'appearance' => 'outlined',
               'size' => 'small',
-              'icon' => 'ph-duotone ph-planet'
-            ],
-            [
-              'href' => 'https://books.raggiesoft.com/stardust-engine',
-              'text' => 'Stardust Engine',
-              'variant' => 'neutral',
-              'appearance' => 'outlined',
-              'size' => 'small',
-              'icon' => 'ph-duotone ph-rocket-launch'
+              'icon' => 'ph-duotone ph-signpost'
             ],
             [
               'href' => 'https://backstage.raggiesoft.com/',
-              'text' => 'Backstage & Bonus Features',
+              'text' => 'Backstage Extras',
               'variant' => 'neutral',
               'appearance' => 'outlined',
               'size' => 'small',
@@ -577,99 +527,29 @@ $pageTitle = "RaggieSoft™ | The Central Hub";
           ]
         ],
         [
-          'imgSrc' => $cdnBaseUrl . '/raggiesoft-books/images/covers/og/story-crossroads-imprint.jpg',
-          'imgAlt' => 'Rowan and Iris Hawthorne welcoming readers to RaggieSoft Story Crossroads',
-          'fallbackText' => 'RaggieSoft Story Crossroads',
-          'aspectRatio' => '16:9',
-          'badge' => 'Interactive Fiction Imprint • Branching Novels',
-          'title' => 'RaggieSoft Story Crossroads',
-          'description' => 'Our standalone interactive-fiction imprint guided by brother and sister Rowan and Iris Hawthorne—where every crossroads splits into coequal, full-hearted story routes.',
-          'buttonProps' => [
-            'href' => 'https://crossroads.raggiesoft.com/',
-            'text' => 'Explore Story Crossroads',
-            'variant' => 'brand',
-            'icon' => 'ph-duotone ph-signpost',
-            'iconPosition' => 'before',
-            'fullWidth' => true
-          ],
-          'secondaryButtons' => [
-            [
-              'href' => 'https://books.raggiesoft.com/cedar-run',
-              'text' => 'Read Cedar Run',
-              'variant' => 'neutral',
-              'appearance' => 'outlined',
-              'size' => 'small',
-              'icon' => 'ph-duotone ph-book-open-text'
-            ],
-            [
-              'href' => 'https://crossroads.raggiesoft.com/sandbox',
-              'text' => 'Try Live Crossroads',
-              'variant' => 'neutral',
-              'appearance' => 'outlined',
-              'size' => 'small',
-              'icon' => 'ph-duotone ph-compass'
-            ]
-          ]
-        ],
-        [
-          'imgSrc' => $cdnBaseUrl . '/raggiesoft-books/images/covers/og/cedar-run.jpg',
-          'imgAlt' => 'Luke, Tessa, and Sadie Bridger beneath towering Pacific Northwest Western red cedars in Cedar Run',
-          'fallbackText' => 'Cedar Run',
-          'aspectRatio' => '16:9',
-          'badge' => 'Story Crossroads • Pacific Northwest Wilderness',
-          'title' => 'Cedar Run',
-          'description' => 'Step into Colville National Forest with eighteen-year-old triplets Luke, Tessa, and Sadie Bridger—exploring cedar rain shelters, acoustic campfires, and Bortle-1 Milky Way skies.',
-          'buttonProps' => [
-            'href' => 'https://cedarrun.raggiesoft.com/',
-            'text' => 'Enter Cedar Run Guide',
-            'variant' => 'brand',
-            'icon' => 'ph-duotone ph-tree-evergreen',
-            'iconPosition' => 'before',
-            'fullWidth' => true
-          ],
-          'secondaryButtons' => [
-            [
-              'href' => 'https://books.raggiesoft.com/cedar-run',
-              'text' => 'Read Interactive Novel',
-              'variant' => 'neutral',
-              'appearance' => 'outlined',
-              'size' => 'small',
-              'icon' => 'ph-duotone ph-book-open'
-            ],
-            [
-              'href' => 'https://crossroads.raggiesoft.com/architects',
-              'text' => 'Meet Rowan & Iris',
-              'variant' => 'neutral',
-              'appearance' => 'outlined',
-              'size' => 'small',
-              'icon' => 'ph-duotone ph-signpost'
-            ]
-          ]
-        ],
-        [
           'imgSrc' => $cdnBaseUrl . '/engine-room-records/images/og/engine-room-og.jpg',
-          'imgAlt' => 'Engine Room Records 16:9 OpenGraph Preview',
+          'imgAlt' => 'Engine Room Records and The Listening Room',
           'fallbackText' => 'Engine Room Records',
           'aspectRatio' => '16:9',
-          'badge' => 'Record Label • Streaming & Lyrics',
-          'title' => 'Engine Room Records',
-          'description' => 'Our independent record label portal, behind-the-scenes studio stories, and artist roster—plus gapless streaming in The Listening Room and The Stardust Engine archive.',
+          'badge' => 'Original Music & Lyrics',
+          'title' => 'Stream Music & Lyrics',
+          'description' => 'Stream full albums across seven original bands—from 1980s synth-rock to acoustic folk and winter symphonies—with synchronized sing-along lyrics in The Listening Room.',
           'buttonProps' => [
-            'href' => 'https://engineroom.raggiesoft.com/',
-            'text' => 'Enter Label Portal',
+            'href' => 'https://music.raggiesoft.com/',
+            'text' => 'Open Listening Room',
             'variant' => 'danger',
-            'icon' => 'ph-duotone ph-disc',
+            'icon' => 'ph-duotone ph-headphones',
             'iconPosition' => 'before',
             'fullWidth' => true
           ],
           'secondaryButtons' => [
             [
-              'href' => 'https://music.raggiesoft.com/',
-              'text' => 'Listening Room',
+              'href' => 'https://engineroom.raggiesoft.com/',
+              'text' => 'Meet All 7 Bands',
               'variant' => 'neutral',
               'appearance' => 'outlined',
               'size' => 'small',
-              'icon' => 'ph-duotone ph-headphones'
+              'icon' => 'ph-duotone ph-disc'
             ],
             [
               'href' => 'https://stardust.raggiesoft.com/',
@@ -682,139 +562,139 @@ $pageTitle = "RaggieSoft™ | The Central Hub";
           ]
         ],
         [
-          'imgSrc' => $cdnBaseUrl . '/raggiesoft-books/images/scenes/waystation/nolan_and_gwen_waystation_hero.jpg',
-          'imgAlt' => 'Barefoot siblings Nolan and Gwen Lennox on forearm crutches inside the 1980s fantasy twilight courtyard of The Uncharted Waystation',
-          'fallbackText' => 'The Uncharted Waystation',
+          'imgSrc' => $cdnBaseUrl . '/raggiesoft-launcher/images/og-launcher.jpg',
+          'imgAlt' => 'RaggieSoft Launcher — One calm home for Book Reader, The Listening Room, Backstage, and StoreTrainer',
+          'fallbackText' => 'RaggieSoft Launcher',
           'aspectRatio' => '16:9',
-          'badge' => '1980s Fantasy Realm • Story Crossroads & Compass',
-          'title' => 'The Uncharted Waystation',
-          'description' => 'At the end of a long, winding Story Crossroads adventure on crutches across a 1980s fantasy world, barefoot siblings Nolan and Gwen Lennox claim the Waystation balcony as home forever.',
+          'badge' => 'Desktop App Suite • Offline Ready',
+          'title' => 'RaggieSoft Launcher',
+          'description' => 'Enjoy Book Reader, The Listening Room, Backstage, and StoreTrainer offline on your computer from one calm, account-free desktop home with easy one-click updates.',
           'buttonProps' => [
-            'href' => 'https://waystation.raggiesoft.com/',
-            'text' => 'Visit the Waystation',
+            'href' => 'https://launcher.raggiesoft.com/',
+            'text' => 'Explore Desktop Apps',
             'variant' => 'brand',
-            'icon' => 'ph-duotone ph-compass-rose',
+            'icon' => 'ph-duotone ph-rocket-launch',
             'iconPosition' => 'before',
             'fullWidth' => true
           ],
           'secondaryButtons' => [
             [
-              'href' => 'https://books.raggiesoft.com/waystation',
-              'text' => 'Read Crossroads Novel',
+              'href' => 'https://launcher.raggiesoft.com/apps',
+              'text' => 'Included Apps',
               'variant' => 'neutral',
               'appearance' => 'outlined',
               'size' => 'small',
-              'icon' => 'ph-duotone ph-book-open-text'
+              'icon' => 'ph-duotone ph-squares-four'
             ],
             [
-              'href' => 'https://waystation.raggiesoft.com/guides',
-              'text' => 'Meet Nolan & Gwen',
+              'href' => 'https://storetrainer.raggiesoft.com/',
+              'text' => 'StoreTrainer',
               'variant' => 'neutral',
               'appearance' => 'outlined',
               'size' => 'small',
-              'icon' => 'ph-duotone ph-sparkle'
+              'icon' => 'ph-duotone ph-game-controller'
             ]
-          ]
-        ],
-        [
-          'imgSrc' => $cdnBaseUrl . '/raggiesoft-jessica/images/jessica-sanctuary-hero.jpg',
-          'imgAlt' => 'Jessica Ragsdale in her manual wheelchair inside the Moosewood Drive study with her brother Michael and sister Rachel behind her',
-          'fallbackText' => 'Jessica — Keeper of the House',
-          'aspectRatio' => '16:9',
-          'badge' => 'Studio Guide • Bear, Bug & Big Sister',
-          'title' => 'Jessica — Keeper of the House',
-          'description' => 'Meet Michael’s big sister Jessica—who rescued him in November 2006, provided the seed money, and explains every corner he built while Rachel (“Bug”) tests every page beside him.',
-          'buttonProps' => [
-            'href' => 'https://jessica.raggiesoft.com/',
-            'text' => 'Take Jessica’s Tour',
-            'variant' => 'brand',
-            'icon' => 'ph-duotone ph-shield-check',
-            'iconPosition' => 'before',
-            'fullWidth' => true
-          ],
-          'secondaryButtons' => [
-            [
-              'href' => 'https://jessica.raggiesoft.com/seed-story',
-              'text' => 'Nov 2006 Seed Story',
-              'variant' => 'neutral',
-              'appearance' => 'outlined',
-              'size' => 'small',
-              'icon' => 'ph-duotone ph-plant'
-            ],
-            [
-              'href' => 'https://jessica.raggiesoft.com/bear-and-bug',
-              'text' => 'Meet Bear & Bug',
-              'variant' => 'neutral',
-              'appearance' => 'outlined',
-              'size' => 'small',
-              'icon' => 'ph-duotone ph-heart'
-            ]
-          ]
-        ],
-        [
-          'imgSrc' => $cdnBaseUrl . '/raggiesoft-corporate/images/og/raggiesoft-corporate-og.jpg',
-          'imgAlt' => 'RaggieSoft Media Corporate Hub 16:9 OpenGraph Preview',
-          'fallbackText' => 'RaggieSoft Media',
-          'aspectRatio' => '16:9',
-          'badge' => 'Creative Imprint • Licensing & Media',
-          'title' => 'RaggieSoft Media',
-          'description' => 'Commercial music licensing, open-source software projects, and brand resources at corporate.raggiesoft.com.',
-          'buttonProps' => [
-            'href' => 'https://corporate.raggiesoft.com/',
-            'text' => 'Corporate Portal',
-            'variant' => 'brand',
-            'icon' => 'ph-duotone ph-bank',
-            'iconPosition' => 'before',
-            'fullWidth' => true
           ]
         ],
         [
           'imgSrc' => 'https://michaelpragsdale.com/og-image.jpg',
-          'imgAlt' => 'Michael P. Ragsdale Executive Portfolio 16:9 OpenGraph Preview',
-          'fallbackText' => 'Michael P. Ragsdale',
+          'imgAlt' => 'Michael P. Ragsdale Portfolio and RaggieSoft Media Licensing',
+          'fallbackText' => 'Portfolio & Licensing',
           'aspectRatio' => '16:9',
-          'badge' => 'Founder & Creator • Portfolio',
-          'title' => 'Michael P. Ragsdale',
-          'description' => 'The professional engineering portfolio, resume, and background of RaggieSoft founder and creator Michael P. Ragsdale at michaelpragsdale.com.',
+          'badge' => 'Creator Portfolio & Open Culture',
+          'title' => 'Portfolio & Licensing',
+          'description' => 'Explore founder Michael P. Ragsdale’s professional portfolio and resume alongside Creative Commons open-culture and commercial licensing details.',
           'buttonProps' => [
             'href' => 'https://michaelpragsdale.com',
-            'text' => 'View Portfolio',
+            'text' => 'Creator Portfolio',
             'variant' => 'brand',
             'icon' => 'ph-duotone ph-briefcase',
             'iconPosition' => 'before',
             'fullWidth' => true
-          ]
-        ],
-        [
-          'imgSrc' => $cdnBaseUrl . '/raggiesoft-lore/family/images/scenes/paige-michael-hug.jpg',
-          'imgAlt' => 'Paige comforting Michael — The RaggieSoft Studio Family',
-          'fallbackText' => 'The Studio Family',
-          'aspectRatio' => '16:9',
-          'badge' => 'Creative Studio • Behind the Scenes',
-          'title' => 'The Studio Family',
-          'description' => 'Meet the creative companions—Paige, Jessica, Harper, Jenna, Sarah, and Amanda & Elara—who inspire and organize the RaggieSoft creative universe.',
-          'buttonProps' => [
-            'href' => '/about/family',
-            'text' => 'Meet the Family',
-            'variant' => 'brand',
-            'icon' => 'ph-duotone ph-heartbeat',
-            'iconPosition' => 'before',
-            'fullWidth' => true
+          ],
+          'secondaryButtons' => [
+            [
+              'href' => 'https://corporate.raggiesoft.com/',
+              'text' => 'RaggieSoft Media',
+              'variant' => 'neutral',
+              'appearance' => 'outlined',
+              'size' => 'small',
+              'icon' => 'ph-duotone ph-bank'
+            ],
+            [
+              'href' => '/about/family',
+              'text' => 'Studio Family',
+              'variant' => 'neutral',
+              'appearance' => 'outlined',
+              'size' => 'small',
+              'icon' => 'ph-duotone ph-heartbeat'
+            ]
           ]
         ]
       ];
     ?>
 
-    <?php /* Iterate over `$constellations` and render each item via the reusable `includes/components/card.php` component */ ?>
+    <?php /* Render the 4 Core Front-Door Pillars in one balanced 4-column desktop grid */ ?>
     <div class="row constellation-grid-row justify-content-center">
       <?php foreach ($constellations as $cardProps): ?>
-        <div class="col-12 col-md-6 col-lg-4 d-flex">
+        <div class="col-12 col-md-6 col-xl-3-constellation d-flex">
           <?php
             $props = $cardProps;
             include __DIR__ . '/../includes/components/card.php';
           ?>
         </div>
       <?php endforeach; ?>
+    </div>
+
+    <?php /* Dedicated DRY Gateways: Waystation = Global Directory | Jessica = Story Behind Every Project */ ?>
+    <div class="row constellation-grid-row mt-4">
+      <div class="col-12 col-lg-6 d-flex">
+        <div class="card constellation-wa-card bg-base-200 border border-base-300 shadow-sm w-100">
+          <div class="card-body d-flex flex-column justify-content-between gap-3">
+            <div>
+              <span class="constellation-stack-badge mb-2">Global Directory &bull; Search All 16 Portals</span>
+              <h3 class="h5 fw-bold mb-2 text-body">
+                <i class="ph-duotone ph-compass-rose me-1 text-primary" aria-hidden="true"></i>The Uncharted Waystation (Global Directory)
+              </h3>
+              <p class="small text-body-secondary mb-0">
+                Looking for every destination across RaggieSoft&mdash;including <em>Cedar Run</em>, <em>Nebulae: Caelum-IV</em>, the <em>Lore Encyclopedia</em>, <em>The Stardust Engine</em>, and more? Visit Nolan &amp; Gwen Lennox&rsquo;s searchable portal map in one central place.
+              </p>
+            </div>
+            <div class="d-flex flex-wrap gap-2">
+              <a href="https://waystation.raggiesoft.com/realms" class="btn btn-primary fw-bold">
+                <i class="ph-duotone ph-map-trifold me-1" aria-hidden="true"></i> Browse Global Directory
+              </a>
+              <a href="https://books.raggiesoft.com/waystation" class="btn btn-neutral btn-outline">
+                <i class="ph-duotone ph-book-open-text me-1" aria-hidden="true"></i> Read Waystation Novel
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-lg-6 d-flex">
+        <div class="card constellation-wa-card bg-base-200 border border-base-300 shadow-sm w-100">
+          <div class="card-body d-flex flex-column justify-content-between gap-3">
+            <div>
+              <span class="constellation-stack-badge mb-2">Behind the Scenes &bull; Why Each Project Exists</span>
+              <h3 class="h5 fw-bold mb-2 text-body">
+                <i class="ph-duotone ph-shield-check me-1 text-primary" aria-hidden="true"></i>Jessica&rsquo;s Study (The Story Behind the Projects)
+              </h3>
+              <p class="small text-body-secondary mb-0">
+                Curious about the personal story behind every book, band, and desktop app? Meet Michael&rsquo;s big sister Jessica&mdash;who shares the November 2006 rescue &amp; studio origin, explains why each project was created, and shows how Rachel (&ldquo;Bug&rdquo;) tests every page beside him.
+              </p>
+            </div>
+            <div class="d-flex flex-wrap gap-2">
+              <a href="https://jessica.raggiesoft.com/directory" class="btn btn-primary fw-bold">
+                <i class="ph-duotone ph-chats-circle me-1" aria-hidden="true"></i> Read Stories Behind the Projects
+              </a>
+              <a href="https://jessica.raggiesoft.com/seed-story" class="btn btn-neutral btn-outline">
+                <i class="ph-duotone ph-plant me-1" aria-hidden="true"></i> Nov 2006 Seed Story
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <?php /* Open-Culture CC BY-SA 4.0 & MIT Callout Card at the bottom of the Constellation directory */ ?>
