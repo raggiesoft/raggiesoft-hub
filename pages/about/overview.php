@@ -146,9 +146,11 @@ $imagesJson = htmlspecialchars(json_encode($heroImages), ENT_QUOTES, 'UTF-8');
                         <hr class="border-primary opacity-50">
                         <ul class="list-unstyled small text-white-50 mb-0">
                             <li class="mb-1"><i class="ph-duotone ph-check text-primary me-2"></i>Ocean View Archives (Novels &amp; Stories)</li>
+                            <li class="mb-1"><i class="ph-duotone ph-check text-primary me-2"></i>RaggieSoft Story Crossroads (Interactive Novels)</li>
                             <li class="mb-1"><i class="ph-duotone ph-check text-primary me-2"></i>Engine Room Records (Original Music)</li>
                             <li class="mb-1"><i class="ph-duotone ph-check text-primary me-2"></i>The Listening Room (Streaming &amp; Lyrics)</li>
-                            <li class="mb-1"><i class="ph-duotone ph-check text-primary me-2"></i>RaggieSoft Book Reader (Accessible Reading)</li>
+                            <li class="mb-1"><i class="ph-duotone ph-check text-primary me-2"></i>RaggieSoft Book Reader &amp; Backstage</li>
+                            <li class="mb-1"><i class="ph-duotone ph-check text-primary me-2"></i>The Uncharted Waystation (Universe Compass)</li>
                             <li><i class="ph-duotone ph-check text-primary me-2"></i>Creative Commons (CC BY-SA 4.0)</li>
                         </ul>
                     </div>

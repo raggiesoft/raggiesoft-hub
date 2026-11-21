@@ -134,6 +134,21 @@ $isContact     = str_starts_with($request_uri, '/contact');
         </a>
       </li>
       <li>
+        <a href="https://crossroads.raggiesoft.com/">
+          <i class="ph-duotone ph-signpost text-warning" aria-hidden="true"></i> RaggieSoft Story Crossroads
+        </a>
+      </li>
+      <li>
+        <a href="https://cedarrun.raggiesoft.com/">
+          <i class="ph-duotone ph-tree-evergreen text-success" aria-hidden="true"></i> Cedar Run (Wilderness Guide)
+        </a>
+      </li>
+      <li>
+        <a href="https://backstage.raggiesoft.com/">
+          <i class="ph-duotone ph-film-slate text-danger" aria-hidden="true"></i> RaggieSoft Backstage
+        </a>
+      </li>
+      <li>
         <a href="https://books.raggiesoft.com/ad-astra">
           <i class="ph-duotone ph-rocket text-primary" aria-hidden="true"></i> Escape Velocity: Ad Astra (Book)
         </a>
@@ -146,6 +161,11 @@ $isContact     = str_starts_with($request_uri, '/contact');
       <li>
         <a href="https://nebulae.raggiesoft.com/">
           <i class="ph-duotone ph-planet text-primary" aria-hidden="true"></i> RaggieSoft Nebulae (Caelum-IV)
+        </a>
+      </li>
+      <li>
+        <a href="https://waystation.raggiesoft.com/">
+          <i class="ph-duotone ph-compass-rose text-info" aria-hidden="true"></i> The Uncharted Waystation
         </a>
       </li>
       <li><hr class="my-1 border-base-300"></li>

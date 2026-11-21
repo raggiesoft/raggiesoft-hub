@@ -114,7 +114,7 @@ $css_load_queue = [
     $cdn_root . "/common/vendor/daisyui/themes.css",
     $path_grid,
     $cdn_root . "/common/css/raggiesoft-logo.css",
-    $cdn_root . "/common/css/raggiesoft-network.css?v=20261118a"
+    $cdn_root . "/common/css/raggiesoft-network.css?v=20261120b"
 ];
 
 // 5. Critical Images (`<link rel="preload" as="image">`)
@@ -243,7 +243,7 @@ if (isset($customPageAssets) && is_array($customPageAssets)) {
         "@type" => "Organization",
         "@id" => "https://raggiesoft.com/#organization",
         "name" => "RaggieSoft",
-        "alternateName" => ["RaggieSoft Media", "Engine Room Records", "Ocean View Archives"],
+        "alternateName" => ["RaggieSoft Media", "Engine Room Records", "Ocean View Archives", "RaggieSoft Story Crossroads"],
         "url" => "https://raggiesoft.com",
         "logo" => [
             "@type" => "ImageObject",
@@ -266,12 +266,15 @@ if (isset($customPageAssets) && is_array($customPageAssets)) {
             "https://nebulae.raggiesoft.com",
             "https://music.raggiesoft.com",
             "https://books.raggiesoft.com",
+            "https://crossroads.raggiesoft.com",
+            "https://cedarrun.raggiesoft.com",
             "https://stardust.raggiesoft.com",
             "https://engineroom.raggiesoft.com",
             "https://lore.raggiesoft.com",
             "https://corporate.raggiesoft.com",
             "https://storetrainer.raggiesoft.com",
             "https://backstage.raggiesoft.com",
+            "https://waystation.raggiesoft.com",
             "https://michaelpragsdale.com",
             "https://github.com/raggiesoft"
         ]
@@ -624,7 +627,7 @@ if (isset($customPageAssets) && is_array($customPageAssets)) {
     <?php /* `defer` downloads scripts in parallel without blocking HTML parsing, executing them once the DOM is built */ ?>
     <script src="<?php echo $cdnBaseUrl; ?>/common/js/elara-spa.js?v=<?php echo time(); ?>" defer></script>
     <script src="<?php echo $cdnBaseUrl; ?>/common/js/hero-image.js?v=20261029h" defer></script>
-    <script src="<?php echo $cdnBaseUrl; ?>/common/js/raggiesoft-network.js?v=20261118a" defer></script>    
+    <script src="<?php echo $cdnBaseUrl; ?>/common/js/raggiesoft-network.js?v=20261120b" defer></script>    
     <style>
         .brand-font { font-family: <?php echo $brand_font_css; ?> !important; }
         
@@ -935,10 +938,14 @@ if (isset($customPageAssets) && is_array($customPageAssets)) {
           <li><a href="https://nebulae.raggiesoft.com">🌌 Nebulae</a></li>
           <li><a href="https://music.raggiesoft.com">🎧 Music</a></li>
           <li><a href="https://books.raggiesoft.com">📚 Books</a></li>
+          <li><a href="https://crossroads.raggiesoft.com">🧭 Story Crossroads</a></li>
+          <li><a href="https://cedarrun.raggiesoft.com">🌲 Cedar Run</a></li>
+          <li><a href="https://backstage.raggiesoft.com">🎬 Backstage</a></li>
           <li><a href="https://stardust.raggiesoft.com">🚀 Stardust</a></li>
           <li><a href="https://engineroom.raggiesoft.com">⚙️ Engine Room</a></li>
           <li><a href="https://corporate.raggiesoft.com">🏢 Corporate</a></li>
           <li><a href="https://storetrainer.raggiesoft.com">💾 StoreTrainer</a></li>
+          <li><a href="https://waystation.raggiesoft.com">🔮 Waystation</a></li>
           <li><a href="https://michaelpragsdale.com">👔 Portfolio &amp; Resume</a></li>
           <?php /* Auto-expiring top-bar pill active during the 30-day Sir Patrick Stewart memorial window (`<= 2026-11-28`) */ ?>
           <?php if (date('Y-m-d') <= '2026-11-28'): ?>

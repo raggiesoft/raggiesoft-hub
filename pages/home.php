@@ -83,6 +83,8 @@ $pageTitle = "RaggieSoft™ | The Central Hub";
       "sameAs": [
         "https://music.raggiesoft.com",
         "https://books.raggiesoft.com",
+        "https://crossroads.raggiesoft.com",
+        "https://cedarrun.raggiesoft.com",
         "https://stardust.raggiesoft.com",
         "https://engineroom.raggiesoft.com",
         "https://lore.raggiesoft.com",
@@ -90,6 +92,7 @@ $pageTitle = "RaggieSoft™ | The Central Hub";
         "https://nebulae.raggiesoft.com",
         "https://corporate.raggiesoft.com",
         "https://storetrainer.raggiesoft.com",
+        "https://waystation.raggiesoft.com",
         "https://michaelpragsdale.com"
       ]
     },
@@ -479,12 +482,16 @@ $pageTitle = "RaggieSoft™ | The Central Hub";
 
     <?php
       /**
-       * Global Subdomain Constellations Directory (Strictly 5 Core Pillars)
-       * 1. Ocean View Archives (books.raggiesoft.com)
-       * 2. Engine Room Records (engineroom.raggiesoft.com + Listening Room + Stardust Engine)
-       * 3. RaggieSoft Media (corporate.raggiesoft.com)
-       * 4. Michael P. Ragsdale (michaelpragsdale.com Executive Dossier)
-       * 5. The Studio Family (/family — Paige, Jessica, Harper, Jenna, Sarah, Amanda & Elara)
+       * Global Subdomain Constellations Directory (9 Balanced Cards -> 3x3 Grid on Desktop)
+       * 1. Nebulae: Ad Astra (nebulae.raggiesoft.com)
+       * 2. Ocean View Archives (books.raggiesoft.com)
+       * 3. RaggieSoft Story Crossroads (crossroads.raggiesoft.com)
+       * 4. Cedar Run (cedarrun.raggiesoft.com + books.raggiesoft.com/cedar-run)
+       * 5. Engine Room Records (engineroom.raggiesoft.com + Listening Room + Stardust Engine)
+       * 6. The Uncharted Waystation (waystation.raggiesoft.com)
+       * 7. RaggieSoft Media (corporate.raggiesoft.com)
+       * 8. Michael P. Ragsdale (michaelpragsdale.com Executive Dossier)
+       * 9. The Studio Family (/about/family — Paige, Jessica, Harper, Jenna, Sarah, Amanda & Elara)
        *
        * Every card displays its official 16:9 OpenGraph (`og:image`) or hero artwork inside
        * a standard DaisyUI 5 `.card` component.
@@ -569,6 +576,76 @@ $pageTitle = "RaggieSoft™ | The Central Hub";
           ]
         ],
         [
+          'imgSrc' => $cdnBaseUrl . '/raggiesoft-books/images/covers/og/story-crossroads-imprint.jpg',
+          'imgAlt' => 'Rowan and Iris Hawthorne welcoming readers to RaggieSoft Story Crossroads',
+          'fallbackText' => 'RaggieSoft Story Crossroads',
+          'aspectRatio' => '16:9',
+          'badge' => 'Interactive Fiction Imprint • Branching Novels',
+          'title' => 'RaggieSoft Story Crossroads',
+          'description' => 'Our standalone interactive-fiction imprint guided by brother and sister Rowan and Iris Hawthorne—where every crossroads splits into coequal, full-hearted story routes.',
+          'buttonProps' => [
+            'href' => 'https://crossroads.raggiesoft.com/',
+            'text' => 'Explore Story Crossroads',
+            'variant' => 'brand',
+            'icon' => 'ph-duotone ph-signpost',
+            'iconPosition' => 'before',
+            'fullWidth' => true
+          ],
+          'secondaryButtons' => [
+            [
+              'href' => 'https://books.raggiesoft.com/cedar-run',
+              'text' => 'Read Cedar Run',
+              'variant' => 'neutral',
+              'appearance' => 'outlined',
+              'size' => 'small',
+              'icon' => 'ph-duotone ph-book-open-text'
+            ],
+            [
+              'href' => 'https://crossroads.raggiesoft.com/sandbox',
+              'text' => 'Try Live Crossroads',
+              'variant' => 'neutral',
+              'appearance' => 'outlined',
+              'size' => 'small',
+              'icon' => 'ph-duotone ph-compass'
+            ]
+          ]
+        ],
+        [
+          'imgSrc' => $cdnBaseUrl . '/raggiesoft-books/images/covers/og/cedar-run.jpg',
+          'imgAlt' => 'Luke, Tessa, and Sadie Bridger beneath towering Pacific Northwest Western red cedars in Cedar Run',
+          'fallbackText' => 'Cedar Run',
+          'aspectRatio' => '16:9',
+          'badge' => 'Story Crossroads • Pacific Northwest Wilderness',
+          'title' => 'Cedar Run',
+          'description' => 'Step into Colville National Forest with eighteen-year-old triplets Luke, Tessa, and Sadie Bridger—exploring cedar rain shelters, acoustic campfires, and Bortle-1 Milky Way skies.',
+          'buttonProps' => [
+            'href' => 'https://cedarrun.raggiesoft.com/',
+            'text' => 'Enter Cedar Run Guide',
+            'variant' => 'brand',
+            'icon' => 'ph-duotone ph-tree-evergreen',
+            'iconPosition' => 'before',
+            'fullWidth' => true
+          ],
+          'secondaryButtons' => [
+            [
+              'href' => 'https://books.raggiesoft.com/cedar-run',
+              'text' => 'Read Interactive Novel',
+              'variant' => 'neutral',
+              'appearance' => 'outlined',
+              'size' => 'small',
+              'icon' => 'ph-duotone ph-book-open'
+            ],
+            [
+              'href' => 'https://crossroads.raggiesoft.com/architects',
+              'text' => 'Meet Rowan & Iris',
+              'variant' => 'neutral',
+              'appearance' => 'outlined',
+              'size' => 'small',
+              'icon' => 'ph-duotone ph-signpost'
+            ]
+          ]
+        ],
+        [
           'imgSrc' => $cdnBaseUrl . '/engine-room-records/images/og/engine-room-og.jpg',
           'imgAlt' => 'Engine Room Records 16:9 OpenGraph Preview',
           'fallbackText' => 'Engine Room Records',
@@ -600,6 +677,41 @@ $pageTitle = "RaggieSoft™ | The Central Hub";
               'appearance' => 'outlined',
               'size' => 'small',
               'icon' => 'ph-duotone ph-rocket-launch'
+            ]
+          ]
+        ],
+        [
+          'imgSrc' => $cdnBaseUrl . '/raggiesoft-books/images/scenes/waystation/nolan_and_gwen_waystation_hero.jpg',
+          'imgAlt' => 'Barefoot siblings Nolan and Gwen Lennox on forearm crutches inside the 1980s fantasy twilight courtyard of The Uncharted Waystation',
+          'fallbackText' => 'The Uncharted Waystation',
+          'aspectRatio' => '16:9',
+          'badge' => '1980s Fantasy Realm • Universe Compass',
+          'title' => 'The Uncharted Waystation',
+          'description' => 'Pulled barefoot from their living-room sofa into a painted 1980s fantasy twilight, siblings Nolan and Gwen Lennox tend the star-astrolabe guiding visitors to every RaggieSoft realm.',
+          'buttonProps' => [
+            'href' => 'https://waystation.raggiesoft.com/',
+            'text' => 'Visit the Waystation',
+            'variant' => 'brand',
+            'icon' => 'ph-duotone ph-compass-rose',
+            'iconPosition' => 'before',
+            'fullWidth' => true
+          ],
+          'secondaryButtons' => [
+            [
+              'href' => 'https://waystation.raggiesoft.com/guides',
+              'text' => 'Meet Nolan & Gwen',
+              'variant' => 'neutral',
+              'appearance' => 'outlined',
+              'size' => 'small',
+              'icon' => 'ph-duotone ph-sparkle'
+            ],
+            [
+              'href' => 'https://waystation.raggiesoft.com/realms',
+              'text' => 'Browse All Realms',
+              'variant' => 'neutral',
+              'appearance' => 'outlined',
+              'size' => 'small',
+              'icon' => 'ph-duotone ph-map-trifold'
             ]
           ]
         ],
