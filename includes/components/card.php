@@ -91,7 +91,7 @@ $placeholderUrl = "https://placehold.co/600x400/{$bgColor}/{$textColor}?text=" .
   <div class="card-body d-flex flex-column flex-grow-1 p-4">
     <?php if ($badge): ?>
       <div class="mb-2">
-        <span class="badge badge-primary badge-outline constellation-stack-badge"><?php echo htmlspecialchars($badge); ?></span>
+        <span class="constellation-stack-badge"><?php echo htmlspecialchars($badge); ?></span>
       </div>
     <?php endif; ?>
 

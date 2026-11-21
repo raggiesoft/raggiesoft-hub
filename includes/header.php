@@ -757,6 +757,18 @@ if (isset($customPageAssets) && is_array($customPageAssets)) {
     <script src="<?php echo $cdnBaseUrl; ?>/common/js/cinema-carousel.js?v=2" defer></script>
 
     <style>
+    /* Prevent DaisyUI 5 fixed-height `.badge` pills from clipping or overflowing text
+       when labels wrap onto two lines or when WCAG 1.4.12 Text Spacing is active! */
+    .badge {
+        height: auto !important;
+        min-height: 1.6rem;
+        padding-top: 0.25rem;
+        padding-bottom: 0.25rem;
+        line-height: 1.35;
+        white-space: normal;
+        text-align: left;
+    }
+
     /* Clean up DaisyUI buttons & dropdowns inside mobile nav */
     @media (max-width: 767.98px) {
         .mobile-nav-menu .btn {

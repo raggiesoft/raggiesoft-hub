@@ -82,6 +82,7 @@ $pageTitle = "RaggieSoft™ | The Central Hub";
       },
       "sameAs": [
         "https://launcher.raggiesoft.com",
+        "https://a11y.raggiesoft.com",
         "https://music.raggiesoft.com",
         "https://books.raggiesoft.com",
         "https://crossroads.raggiesoft.com",
@@ -258,14 +259,23 @@ $pageTitle = "RaggieSoft™ | The Central Hub";
         box-shadow: 0 12px 28px rgba(56, 189, 248, 0.14);
     }
 
-    /* WCAG 2.1 AA High-Contrast Tech Stack Pill Badge (>= 8.5:1 in both Light & Dark Mode) */
+    /* WCAG 2.1 AA High-Contrast Category Pill Badge (>= 8.5:1 in both Light & Dark Mode).
+       `height: auto !important` overrides DaisyUI 5's fixed 24px `.badge` height so wrapped
+       or zoomed labels never spill outside the pill border! */
     .constellation-stack-badge {
-        display: inline-block;
-        padding: 0.28rem 0.65rem;
+        display: inline-flex;
+        align-items: center;
+        height: auto !important;
+        min-height: 1.65rem;
+        max-width: 100%;
+        padding: 0.28rem 0.7rem;
         font-size: 0.72rem;
         font-weight: 700;
+        line-height: 1.35;
         letter-spacing: 0.04em;
         text-transform: uppercase;
+        white-space: normal;
+        text-align: left;
         border-radius: 999px;
         background-color: #004a94;
         color: #ffffff;
@@ -566,7 +576,7 @@ $pageTitle = "RaggieSoft™ | The Central Hub";
           'imgAlt' => 'RaggieSoft Launcher — One calm home for Book Reader, The Listening Room, Backstage, and StoreTrainer',
           'fallbackText' => 'RaggieSoft Launcher',
           'aspectRatio' => '16:9',
-          'badge' => 'Desktop App Suite • Offline Ready',
+          'badge' => 'Desktop App Suite',
           'title' => 'RaggieSoft Launcher',
           'description' => 'Enjoy Book Reader, The Listening Room, Backstage, and StoreTrainer offline on your computer from one calm, account-free desktop home with easy one-click updates.',
           'buttonProps' => [
@@ -579,12 +589,12 @@ $pageTitle = "RaggieSoft™ | The Central Hub";
           ],
           'secondaryButtons' => [
             [
-              'href' => 'https://launcher.raggiesoft.com/apps',
-              'text' => 'Included Apps',
+              'href' => 'https://a11y.raggiesoft.com/',
+              'text' => 'Accessibility Studio',
               'variant' => 'neutral',
               'appearance' => 'outlined',
               'size' => 'small',
-              'icon' => 'ph-duotone ph-squares-four'
+              'icon' => 'ph-duotone ph-code-block'
             ],
             [
               'href' => 'https://storetrainer.raggiesoft.com/',
@@ -601,7 +611,7 @@ $pageTitle = "RaggieSoft™ | The Central Hub";
           'imgAlt' => 'Michael P. Ragsdale Portfolio and RaggieSoft Media Licensing',
           'fallbackText' => 'Portfolio & Licensing',
           'aspectRatio' => '16:9',
-          'badge' => 'Creator Portfolio & Open Culture',
+          'badge' => 'Portfolio & Open Culture',
           'title' => 'Portfolio & Licensing',
           'description' => 'Explore founder Michael P. Ragsdale’s professional portfolio and resume alongside Creative Commons open-culture and commercial licensing details.',
           'buttonProps' => [
@@ -652,7 +662,7 @@ $pageTitle = "RaggieSoft™ | The Central Hub";
         <div class="card constellation-wa-card bg-base-200 border border-base-300 shadow-sm w-100">
           <div class="card-body d-flex flex-column justify-content-between gap-3">
             <div>
-              <span class="constellation-stack-badge mb-2">Global Directory &bull; Search All 16 Portals</span>
+              <span class="constellation-stack-badge mb-2">Global Directory &bull; Search All 17 Portals</span>
               <h3 class="h5 fw-bold mb-2 text-body">
                 <i class="ph-duotone ph-compass-rose me-1 text-primary" aria-hidden="true"></i>The Uncharted Waystation (Global Directory)
               </h3>
