@@ -114,7 +114,7 @@ $css_load_queue = [
     $cdn_root . "/common/vendor/daisyui/themes.css",
     $path_grid,
     $cdn_root . "/common/css/raggiesoft-logo.css",
-    $cdn_root . "/common/css/raggiesoft-network.css?v=20261121d"
+    $cdn_root . "/common/css/raggiesoft-network.css?v=20261121e"
 ];
 
 // 5. Critical Images (`<link rel="preload" as="image">`)
@@ -628,7 +628,7 @@ if (isset($customPageAssets) && is_array($customPageAssets)) {
     <?php /* `defer` downloads scripts in parallel without blocking HTML parsing, executing them once the DOM is built */ ?>
     <script src="<?php echo $cdnBaseUrl; ?>/common/js/elara-spa.js?v=<?php echo time(); ?>" defer></script>
     <script src="<?php echo $cdnBaseUrl; ?>/common/js/hero-image.js?v=20261029h" defer></script>
-    <script src="<?php echo $cdnBaseUrl; ?>/common/js/raggiesoft-network.js?v=20261121d" defer></script>    
+    <script src="<?php echo $cdnBaseUrl; ?>/common/js/raggiesoft-network.js?v=20261121e" defer></script>    
     <style>
         .brand-font { font-family: <?php echo $brand_font_css; ?> !important; }
         
