@@ -168,6 +168,11 @@ $isContact     = str_starts_with($request_uri, '/contact');
           <i class="ph-duotone ph-compass-rose text-info" aria-hidden="true"></i> The Uncharted Waystation
         </a>
       </li>
+      <li>
+        <a href="https://jessica.raggiesoft.com/">
+          <i class="ph-duotone ph-shield-check text-success" aria-hidden="true"></i> Jessica (Keeper of the House)
+        </a>
+      </li>
       <li><hr class="my-1 border-base-300"></li>
       <li>
         <a href="/in-memoriam">

@@ -93,6 +93,7 @@ $pageTitle = "RaggieSoft™ | The Central Hub";
         "https://corporate.raggiesoft.com",
         "https://storetrainer.raggiesoft.com",
         "https://waystation.raggiesoft.com",
+        "https://jessica.raggiesoft.com",
         "https://michaelpragsdale.com"
       ]
     },
@@ -712,6 +713,41 @@ $pageTitle = "RaggieSoft™ | The Central Hub";
               'appearance' => 'outlined',
               'size' => 'small',
               'icon' => 'ph-duotone ph-sparkle'
+            ]
+          ]
+        ],
+        [
+          'imgSrc' => $cdnBaseUrl . '/raggiesoft-jessica/images/jessica-sanctuary-hero.jpg',
+          'imgAlt' => 'Jessica Ragsdale in her manual wheelchair inside the Moosewood Drive study with her brother Michael and sister Rachel behind her',
+          'fallbackText' => 'Jessica — Keeper of the House',
+          'aspectRatio' => '16:9',
+          'badge' => 'Studio Guide • Bear, Bug & Big Sister',
+          'title' => 'Jessica — Keeper of the House',
+          'description' => 'Meet Michael’s big sister Jessica—who rescued him in November 2006, provided the seed money, and explains every corner he built while Rachel (“Bug”) tests every page beside him.',
+          'buttonProps' => [
+            'href' => 'https://jessica.raggiesoft.com/',
+            'text' => 'Take Jessica’s Tour',
+            'variant' => 'brand',
+            'icon' => 'ph-duotone ph-shield-check',
+            'iconPosition' => 'before',
+            'fullWidth' => true
+          ],
+          'secondaryButtons' => [
+            [
+              'href' => 'https://jessica.raggiesoft.com/seed-story',
+              'text' => 'Nov 2006 Seed Story',
+              'variant' => 'neutral',
+              'appearance' => 'outlined',
+              'size' => 'small',
+              'icon' => 'ph-duotone ph-plant'
+            ],
+            [
+              'href' => 'https://jessica.raggiesoft.com/bear-and-bug',
+              'text' => 'Meet Bear & Bug',
+              'variant' => 'neutral',
+              'appearance' => 'outlined',
+              'size' => 'small',
+              'icon' => 'ph-duotone ph-heart'
             ]
           ]
         ],
