@@ -114,7 +114,7 @@ $css_load_queue = [
     $cdn_root . "/common/vendor/daisyui/themes.css",
     $path_grid,
     $cdn_root . "/common/css/raggiesoft-logo.css",
-    $cdn_root . "/common/css/raggiesoft-network.css?v=20261121a"
+    $cdn_root . "/common/css/raggiesoft-network.css?v=20261121b"
 ];
 
 // 5. Critical Images (`<link rel="preload" as="image">`)
@@ -628,7 +628,7 @@ if (isset($customPageAssets) && is_array($customPageAssets)) {
     <?php /* `defer` downloads scripts in parallel without blocking HTML parsing, executing them once the DOM is built */ ?>
     <script src="<?php echo $cdnBaseUrl; ?>/common/js/elara-spa.js?v=<?php echo time(); ?>" defer></script>
     <script src="<?php echo $cdnBaseUrl; ?>/common/js/hero-image.js?v=20261029h" defer></script>
-    <script src="<?php echo $cdnBaseUrl; ?>/common/js/raggiesoft-network.js?v=20261121a" defer></script>    
+    <script src="<?php echo $cdnBaseUrl; ?>/common/js/raggiesoft-network.js?v=20261121b" defer></script>    
     <style>
         .brand-font { font-family: <?php echo $brand_font_css; ?> !important; }
         
@@ -936,6 +936,7 @@ if (isset($customPageAssets) && is_array($customPageAssets)) {
         <span class="rs-network-label">✦ RaggieSoft Network:</span>
         <ul class="rs-network-links">
           <li><a href="https://raggiesoft.com"<?php echo !$isMemoriamRoute ? ' aria-current="page" class="is-active"' : ''; ?>>🌐 Hub</a></li>
+          <li><a href="https://launcher.raggiesoft.com">🚀 Launcher</a></li>
           <li><a href="https://jessica.raggiesoft.com">🛡️ Jessica</a></li>
           <li><a href="https://nebulae.raggiesoft.com">🌌 Nebulae</a></li>
           <li><a href="https://music.raggiesoft.com">🎧 Music</a></li>
