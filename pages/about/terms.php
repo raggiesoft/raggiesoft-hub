@@ -79,10 +79,10 @@
                 </span>
                 <h1 class="fw-bold mb-2">Terms of Service &amp; Licensing Agreement</h1>
                 <p class="text-body-secondary mb-1">
-                    <strong>Effective Date:</strong> March 29, 2026 &bull; <strong>Last Updated:</strong> October 26, 2026
+                    <strong>Effective Date:</strong> March 29, 2026 &bull; <strong>Last Updated:</strong> November 25, 2026
                 </p>
                 <p class="small text-body-secondary mb-0">
-                    Governing <code>raggiesoft.com</code>, all <code>*.raggiesoft.com</code> subdomains, <code>michaelpragsdale.com</code>, and official vanity domains
+                    Governing <code>raggiesoft.com</code>, all <code>*.raggiesoft.com</code> subdomains (including <code>assets.raggiesoft.com</code>), <code>raggiesoftstudio.com</code>, <code>raggiesoft.dev</code>, <code>michaelpragsdale.com</code>, and official vanity domains
                 </p>
             </div>
 
@@ -93,7 +93,7 @@
                     <section class="mb-5" aria-labelledby="tos-operator-heading">
                         <h2 id="tos-operator-heading" class="h4 fw-bold mb-3">1. Operator Identity, Legal Capacity &amp; Acceptance of Terms</h2>
                         <p>
-                            Welcome to the <strong>RaggieSoft</strong> network. By accessing, browsing, streaming audio from, downloading software or creative archives from, or otherwise using <strong>RaggieSoft.com</strong>, any <code>*.raggiesoft.com</code> subdomain (including <code>music.raggiesoft.com</code>, <code>books.raggiesoft.com</code>, <code>engineroom.raggiesoft.com</code>, <code>stardust.raggiesoft.com</code>, <code>corporate.raggiesoft.com</code>, <code>lore.raggiesoft.com</code>, <code>nebulae.raggiesoft.com</code>, <code>storetrainer.raggiesoft.com</code>, and <code>backstage.raggiesoft.com</code>), <code>michaelpragsdale.com</code>, or any associated vanity domain (collectively, the <strong>&ldquo;Network&rdquo;</strong>), you agree to be bound by these Terms of Service (<strong>&ldquo;Terms&rdquo;</strong>). If you do not agree to every provision of these Terms, do not access or use the Network.
+                            Welcome to the <strong>RaggieSoft</strong> network. By accessing, browsing, streaming audio from, downloading software or creative archives from, or otherwise using <strong>RaggieSoft.com</strong>, any <code>*.raggiesoft.com</code> subdomain (including <code>assets.raggiesoft.com</code>, <code>launcher.raggiesoft.com</code>, <code>a11y.raggiesoft.com</code>, <code>music.raggiesoft.com</code>, <code>books.raggiesoft.com</code>, <code>crossroads.raggiesoft.com</code>, <code>cedarrun.raggiesoft.com</code>, <code>waystation.raggiesoft.com</code>, <code>jessica.raggiesoft.com</code>, <code>engineroom.raggiesoft.com</code>, <code>stardust.raggiesoft.com</code>, <code>corporate.raggiesoft.com</code>, <code>lore.raggiesoft.com</code>, <code>nebulae.raggiesoft.com</code>, <code>storetrainer.raggiesoft.com</code>, and <code>backstage.raggiesoft.com</code>), <code>raggiesoftstudio.com</code>, <code>raggiesoft.dev</code>, <code>michaelpragsdale.com</code>, or any associated vanity domain (collectively, the <strong>&ldquo;Network&rdquo;</strong>), you agree to be bound by these Terms of Service (<strong>&ldquo;Terms&rdquo;</strong>). If you do not agree to every provision of these Terms, do not access or use the Network.
                         </p>
                         <div class="p-4 rounded bg-body-tertiary border border-start border-5 border-info mt-3">
                             <h3 class="h6 fw-bold text-uppercase mb-2">
@@ -289,6 +289,7 @@
                         <div class="p-3 rounded bg-body-tertiary border small">
                             <strong class="d-block mb-1 text-uppercase font-monospace">Public Revision &amp; Audit Ledger</strong>
                             <ul class="mb-0 text-body-secondary">
+                                <li><strong>November 25, 2026:</strong> Added explicit Network domain coverage for <code>raggiesoftstudio.com</code>, <code>raggiesoft.dev</code>, <code>assets.raggiesoft.com</code>, <code>launcher.raggiesoft.com</code>, <code>a11y.raggiesoft.com</code>, <code>crossroads.raggiesoft.com</code>, <code>cedarrun.raggiesoft.com</code>, <code>waystation.raggiesoft.com</code>, and <code>jessica.raggiesoft.com</code>.</li>
                                 <li><strong>October 26, 2026:</strong> Standardized hardcoded effective/update dates; added explicit Natural-Person Operator disclosure (Michael P. Ragsdale vs. unincorporated imprints vs. fictional in-universe LLCs); added strict prohibition on third-party Content ID / audio fingerprinting / <code>QTAHP</code> ISRC hijacking; added explicit $0.00 / direct-payment personal liability cap, indemnification, and Eastern District of Virginia (Norfolk Division) venue clarity.</li>
                                 <li><strong>March 29, 2026:</strong> Initial publication of RaggieSoft network dual-licensing Terms of Service (MIT Code License, CC BY-SA 4.0 Creative Content License, and Fourthwall Merchant of Record disclosure).</li>
                             </ul>

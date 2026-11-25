@@ -66,10 +66,10 @@
                 </span>
                 <h1 class="fw-bold mb-2">Privacy Policy</h1>
                 <p class="text-body-secondary mb-1">
-                    <strong>Effective Date:</strong> March 29, 2026 &bull; <strong>Last Updated:</strong> October 26, 2026
+                    <strong>Effective Date:</strong> March 29, 2026 &bull; <strong>Last Updated:</strong> November 25, 2026
                 </p>
                 <p class="small text-body-secondary mb-0">
-                    Governing <code>raggiesoft.com</code>, all <code>*.raggiesoft.com</code> subdomains, <code>michaelpragsdale.com</code>, and official vanity domains
+                    Governing <code>raggiesoft.com</code>, all <code>*.raggiesoft.com</code> subdomains (including <code>assets.raggiesoft.com</code>), <code>raggiesoftstudio.com</code>, <code>raggiesoft.dev</code>, <code>michaelpragsdale.com</code>, and official vanity domains
                 </p>
             </div>
 
@@ -80,7 +80,7 @@
                     <section class="mb-5" aria-labelledby="priv-intro-heading">
                         <h2 id="priv-intro-heading" class="h4 fw-bold mb-3">1. Operator Identity &amp; Account-Free Privacy</h2>
                         <p>
-                            Welcome to the <strong>RaggieSoft</strong> network (including <code>raggiesoft.com</code>, <code>music.raggiesoft.com</code>, <code>books.raggiesoft.com</code>, <code>engineroom.raggiesoft.com</code>, <code>stardust.raggiesoft.com</code>, <code>corporate.raggiesoft.com</code>, <code>lore.raggiesoft.com</code>, <code>nebulae.raggiesoft.com</code>, <code>storetrainer.raggiesoft.com</code>, <code>backstage.raggiesoft.com</code>, and <code>michaelpragsdale.com</code>, collectively the <strong>&ldquo;Network&rdquo;</strong>).
+                            Welcome to the <strong>RaggieSoft</strong> network (including <code>raggiesoft.com</code>, <code>assets.raggiesoft.com</code>, <code>raggiesoftstudio.com</code>, <code>installwithoutlimits.com</code>, <code>raggiesoft.dev</code>, <code>launcher.raggiesoft.com</code>, <code>a11y.raggiesoft.com</code>, <code>music.raggiesoft.com</code>, <code>books.raggiesoft.com</code>, <code>crossroads.raggiesoft.com</code>, <code>cedarrun.raggiesoft.com</code>, <code>waystation.raggiesoft.com</code>, <code>jessica.raggiesoft.com</code>, <code>engineroom.raggiesoft.com</code>, <code>stardust.raggiesoft.com</code>, <code>corporate.raggiesoft.com</code>, <code>lore.raggiesoft.com</code>, <code>nebulae.raggiesoft.com</code>, <code>storetrainer.raggiesoft.com</code>, <code>backstage.raggiesoft.com</code>, and <code>michaelpragsdale.com</code>, collectively the <strong>&ldquo;Network&rdquo;</strong>).
                         </p>
                         <p>
                             The Network is owned and operated by <strong>Michael P. Ragsdale</strong>, an individual residing in Norfolk, Virginia, operating under the unincorporated creative imprints <strong>RaggieSoft</strong>, <strong>RaggieSoft Media</strong>, <strong>Engine Room Records</strong> (music imprint), and <strong>Ocean View Archives</strong> (literary/book publishing imprint)—each strictly without &ldquo;LLC,&rdquo; &ldquo;Inc.,&rdquo; or &ldquo;Corp.&rdquo; All websites in the Network are designed to be <strong>100% account-free</strong>. There are no user registration accounts, no password databases, no comment sections, and no behavioral ad-broker profiles anywhere on the Network.
@@ -133,7 +133,7 @@
                                 <i class="ph-duotone ph-chart-line-up me-2" aria-hidden="true"></i>D. Aggregate Traffic Telemetry (Google Analytics 4)
                             </h3>
                             <p class="small text-body mb-0">
-                                Select properties on the Network utilize <strong>Google Analytics 4</strong> (Measurement ID <code>G-P9RG9JVYB6</code>) to measure aggregate readership and page performance (such as which engineering case studies, novels, or discography pages are visited most frequently). Google Analytics sets first-party cookies (<code>_ga</code>, <code>_ga_*</code>) to compile anonymous statistical reports. I do not enable Google Signals advertising features, do not link analytics to personally identifiable information, and fully respect browser ad-blockers, script blockers, and the <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener noreferrer">Google Analytics Opt-Out Browser Add-on ↗</a>.
+                                Web properties across the Network utilize <strong>Google Analytics 4</strong> (Measurement ID <code>G-P9RG9JVYB6</code>) to measure aggregate readership and page performance (such as which engineering documentation pages, software portals, novels, or discography pages are visited most frequently). Google Analytics sets first-party cookies (<code>_ga</code>, <code>_ga_*</code>) to compile anonymous statistical reports. I do not enable Google Signals advertising features, do not link analytics to personally identifiable information, and fully respect browser ad-blockers, script blockers, and the <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener noreferrer">Google Analytics Opt-Out Browser Add-on ↗</a>. Native downloadable Windows and macOS desktop applications (including <em>RaggieSoft Installer Studio</em>, <em>RaggieSoft Accessibility Studio</em>, and <em>RaggieSoft Launcher</em>) contain zero analytics or telemetry.
                             </p>
                         </div>
 
@@ -192,6 +192,7 @@
                         <div class="p-3 rounded bg-body-tertiary border small">
                             <strong class="d-block mb-1 text-uppercase font-monospace">Revision History</strong>
                             <ul class="mb-0 text-body-secondary">
+                                <li><strong>November 25, 2026:</strong> Added explicit coverage for <code>raggiesoftstudio.com</code>, <code>raggiesoft.dev</code>, <code>assets.raggiesoft.com</code>, <code>launcher.raggiesoft.com</code>, <code>a11y.raggiesoft.com</code>, <code>crossroads.raggiesoft.com</code>, <code>cedarrun.raggiesoft.com</code>, <code>waystation.raggiesoft.com</code>, and <code>jessica.raggiesoft.com</code>; standardized network-wide Google Analytics 4 (<code>G-P9RG9JVYB6</code>) disclosure while confirming zero telemetry in downloadable desktop binaries.</li>
                                 <li><strong>October 26, 2026:</strong> Updated disclosures across all RaggieSoft websites covering on-device browser preferences, Cloudflare security, web hosting logs, Google Analytics, Microsoft Bookings / Microsoft 365, and Fourthwall storefront separation.</li>
                                 <li><strong>March 29, 2026:</strong> Initial publication of RaggieSoft network Privacy Policy.</li>
                             </ul>
