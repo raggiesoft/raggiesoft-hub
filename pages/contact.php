@@ -10,7 +10,7 @@
  * WHAT THIS FILE DOES (PLAIN-ENGLISH OVERVIEW):
  * Renders the central communication directory for `raggiesoft.com`, routing
  * visitors to six specialized channels so every inquiry reaches the right place:
- *   1. General Inquiry (`mailto:connect@michaelpragsdale.com`)
+ *   1. General Inquiry (`mailto:hello@michaelpragsdale.com`)
  *   2. Store Support (`store.raggiesoft.com` operated by Fourthwall as Merchant of Record)
  *   3. DSP & Industry (`engineroom.raggiesoft.com/dsp-verification` + closed-label notice)
  *   4. Hiring & Careers (`michaelpragsdale.com/#logistics` + Job Scam Warning)
@@ -172,18 +172,22 @@ $imagesJson = htmlspecialchars(json_encode($heroImages), ENT_QUOTES, 'UTF-8');
             <div class="col-lg-4">
                 <div class="card force-glass-bg force-border-info h-100 p-4 text-center rounded-4 shadow-lg w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
 
-                    <div class="card-body p-4">
+                    <div class="card-body d-flex flex-column p-4">
                         <div class="mb-4 force-icon-info">
                             <i class="ph-duotone ph-cpu ph-4x drop-shadow"></i>
                         </div>
                         <h2 class="h3 fw-bold mb-3 force-text-light">General Inquiry</h2>
-                        <p class="force-text-muted mb-4">
+                        <p class="force-text-muted mb-3">
                             Questions about our <strong>stories</strong>, 
                             <strong>original music</strong>, or <strong>creative projects</strong>?
                         </p>
+                        <?php /* Display `hello@michaelpragsdale.com` visibly alongside the `mailto:` CTA for visitors without a default desktop mail client */ ?>
+                        <p class="small force-text-light fw-semibold mb-4">
+                            hello@michaelpragsdale.com
+                        </p>
                         <div class="d-grid mt-auto">
-                            <a href="mailto:connect@michaelpragsdale.com?subject=RaggieSoft: Project Inquiry" class="btn btn-primary btn-lg rounded-full fw-bold text-dark">
-                                <i  class="ph-duotone ph-paper-plane"></i>Send Message
+                            <a href="mailto:hello@michaelpragsdale.com?subject=RaggieSoft:%20Project%20Inquiry" class="btn btn-primary btn-lg rounded-full fw-bold text-dark">
+                                <i class="ph-duotone ph-paper-plane"></i>Send Message
                             </a>
                         </div>
                     </div>
