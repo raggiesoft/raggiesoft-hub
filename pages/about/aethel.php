@@ -114,7 +114,7 @@
 
                         <div class="card-body p-4 text-center">
                             <div class="mb-3 text-warning fs-1">
-                                <i class="ph-duotone ph-magic-wand"></i>
+                                <i class="ph-duotone ph-sword"></i>
                             </div>
                             <h4 class="cinzel-font fw-bold text-uppercase mb-3">The Gauntlet</h4>
                             <p class="text-secondary small">

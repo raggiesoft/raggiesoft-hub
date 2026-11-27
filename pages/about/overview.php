@@ -137,7 +137,7 @@ $imagesJson = htmlspecialchars(json_encode($heroImages), ENT_QUOTES, 'UTF-8');
                 <div class="card glass-card h-100 border-primary w-100" style="--body-padding: 0; --header-padding: 0; --wa-panel-bg: transparent;">
 
                     <div class="card-header bg-transparent border-primary text-primary fw-bold text-uppercase py-3">
-                        <i class="ph-duotone ph-sparkle me-2"></i> Layer 2: Creative Imprints
+                        <i class="ph-duotone ph-books me-2"></i> Layer 2: Creative Imprints
                     </div>
                     <div class="card-body p-4">
                         <p class="small text-white-50">

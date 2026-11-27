@@ -101,7 +101,7 @@
 
                         <div slot="image" class="bg-primary text-white p-3 border-bottom">
                             <div class="d-flex align-items-center">
-                                <i class="ph-duotone ph-sparkle ph-2x me-3" aria-hidden="true"></i>
+                                <i class="ph-duotone ph-chats-circle ph-2x me-3" aria-hidden="true"></i>
                                 <div>
                                     <h5 class="mb-0 fw-bold text-white">The Co-Writer</h5>
                                     <small class="text-white opacity-75">Google Antigravity (Powered by Gemini)</small>
@@ -109,7 +109,7 @@
                             </div>
                         </div>
                         <div class="d-flex flex-column h-100">
-                            <div class="text-uppercase small fw-bold mb-3 text-primary"><i class="ph-duotone ph-sparkle me-2"></i>Creative Sounding Board</div>
+                            <div class="text-uppercase small fw-bold mb-3 text-primary"><i class="ph-duotone ph-note-pencil me-2"></i>Creative Sounding Board</div>
                             <p class="text-body-emphasis">
                                 The collaborative partner and creative sounding board. Gemini helps refine raw human concepts into structured lyrics, story continuity notes, and musical arrangement guides.
                             </p>
