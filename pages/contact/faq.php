@@ -71,6 +71,13 @@ $contactFaqItems = [
         'answerHtml' => 'All merchandise orders placed at <a href="https://store.raggiesoft.com" class="faq-inline-link">store.raggiesoft.com</a> are fulfilled and supported directly by <strong>Fourthwall</strong> as our Merchant of Record. For shipping status, sizing questions, or replacements, reach out through <a href="https://store.raggiesoft.com/contact" class="faq-inline-link">Fourthwall Store Support</a> or check the <a href="https://store.raggiesoft.com/pages/returns-faq" class="faq-inline-link">Returns &amp; FAQ page</a>.'
     ],
     [
+        'id' => 'faq-ai-process',
+        'icon' => 'ph-robot',
+        'question' => 'Why does RaggieSoft use AI tools—and how do you respond to "AI slop" criticisms?',
+        'answerPlain' => 'RaggieSoft is a zero-budget solo studio founded by Michael P. Ragsdale, who has been building websites and software since the late 1990s. Without AI tools alongside human writing, editing, and coding, we would not be hiring an external band, publishing house, or studio—these free CC BY-SA 4.0 and MIT projects simply would not exist. Read our full creative workflow, historical perspective, and standard replies at https://raggiesoft.com/about/ai-disclaimer.',
+        'answerHtml' => 'RaggieSoft is a <strong>\$0-budget solo studio</strong> built by one creator who has been writing software and websites since the late 1990s. Without modern AI tools alongside hands-on writing, editing, and coding, there is no hidden budget to hire a band, illustrators, or an engineering team&mdash;these free <a href="https://corporate.raggiesoft.com/licensing" class="faq-inline-link">CC BY-SA 4.0 &amp; MIT</a> projects simply wouldn&rsquo;t exist outside Michael&rsquo;s head. Explore our full 4-part guide: <a href="/about/ai-disclaimer" class="faq-inline-link">AI &amp; Creative Process</a>, <a href="/about/ai-disclaimer/craft-vs-slop" class="faq-inline-link">Craft vs. &ldquo;AI Slop&rdquo;</a>, <a href="/about/ai-disclaimer/zero-budget-reality" class="faq-inline-link">The Zero-Budget Reality</a>, and <a href="/about/ai-disclaimer/history-of-tools" class="faq-inline-link">2,400 Years of Creative Tools</a>.'
+    ],
+    [
         'id' => 'faq-licensing-lore',
         'icon' => 'ph-scales',
         'question' => 'Can I share RaggieSoft music and stories, or message the bands and characters?',

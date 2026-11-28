@@ -109,9 +109,26 @@ $currentUri = $_SERVER['REQUEST_URI'] ?? '';
     <a href="/about/terms" class="btn btn-sm <?= str_contains($currentUri, '/terms') ? 'btn-primary text-white fw-bold' : 'btn-ghost text-body' ?> w-100 text-start justify-content-start" style="text-align: left;">
         <i class="ph-duotone ph-scroll" aria-hidden="true"></i> Terms of Service
     </a>
-    <a href="/about/ai-disclaimer" class="btn btn-sm <?= str_contains($currentUri, '/ai-disclaimer') ? 'btn-primary text-white fw-bold' : 'btn-ghost text-body' ?> w-100 text-start justify-content-start" style="text-align: left;">
-        <i class="ph-duotone ph-robot" aria-hidden="true"></i> AI Disclaimer
+    <?php
+    $cleanSidebarPath = rtrim(parse_url($currentUri, PHP_URL_PATH) ?: '/', '/') ?: '/';
+    $inAiSuite = str_starts_with($cleanSidebarPath, '/about/ai-disclaimer');
+    ?>
+    <a href="/about/ai-disclaimer" class="btn btn-sm <?= ($cleanSidebarPath === '/about/ai-disclaimer') ? 'btn-primary text-white fw-bold' : ($inAiSuite ? 'btn-neutral btn-outline fw-bold' : 'btn-ghost text-body') ?> w-100 text-start justify-content-start" style="text-align: left;">
+        <i class="ph-duotone ph-robot" aria-hidden="true"></i> AI &amp; Creative Process
     </a>
+    <?php if ($inAiSuite): ?>
+    <div class="ps-3 d-flex flex-column gap-1 border-start border-primary border-opacity-50 ms-2 mt-1">
+        <a href="/about/ai-disclaimer/craft-vs-slop" class="btn btn-xs <?= ($cleanSidebarPath === '/about/ai-disclaimer/craft-vs-slop') ? 'btn-primary text-white fw-bold' : 'btn-ghost text-body-secondary' ?> w-100 text-start justify-content-start" style="text-align: left;">
+            <i class="ph-duotone ph-sliders" aria-hidden="true"></i> Craft vs. &ldquo;AI Slop&rdquo;
+        </a>
+        <a href="/about/ai-disclaimer/zero-budget-reality" class="btn btn-xs <?= ($cleanSidebarPath === '/about/ai-disclaimer/zero-budget-reality') ? 'btn-primary text-white fw-bold' : 'btn-ghost text-body-secondary' ?> w-100 text-start justify-content-start" style="text-align: left;">
+            <i class="ph-duotone ph-piggy-bank" aria-hidden="true"></i> Zero-Budget Reality
+        </a>
+        <a href="/about/ai-disclaimer/history-of-tools" class="btn btn-xs <?= ($cleanSidebarPath === '/about/ai-disclaimer/history-of-tools') ? 'btn-primary text-white fw-bold' : 'btn-ghost text-body-secondary' ?> w-100 text-start justify-content-start" style="text-align: left;">
+            <i class="ph-duotone ph-clock-counter-clockwise" aria-hidden="true"></i> History of Tools
+        </a>
+    </div>
+    <?php endif; ?>
 </div>
 
 <hr class="divider my-4">

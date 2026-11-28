@@ -77,7 +77,22 @@ $isProfiles   = (!$isGovernance && !$isMemoriam && $uri !== '/about');
       </li>
       <li>
         <a href="/about/ai-disclaimer">
-          <i class="ph-duotone ph-robot text-info" aria-hidden="true"></i>AI Disclaimer
+          <i class="ph-duotone ph-robot text-info" aria-hidden="true"></i>AI &amp; Creative Process
+        </a>
+      </li>
+      <li>
+        <a href="/about/ai-disclaimer/craft-vs-slop">
+          <i class="ph-duotone ph-sliders text-primary" aria-hidden="true"></i>Craft vs. &ldquo;AI Slop&rdquo;
+        </a>
+      </li>
+      <li>
+        <a href="/about/ai-disclaimer/zero-budget-reality">
+          <i class="ph-duotone ph-piggy-bank text-success" aria-hidden="true"></i>Zero-Budget Reality
+        </a>
+      </li>
+      <li>
+        <a href="/about/ai-disclaimer/history-of-tools">
+          <i class="ph-duotone ph-clock-counter-clockwise text-warning" aria-hidden="true"></i>History of Tools
         </a>
       </li>
     </ul>
