@@ -426,6 +426,10 @@ $currentSite = $config['site'];
 $ogTitle = $config['ogTitle'];
 $ogDescription = $config['ogDescription'];
 $ogImage = (isset($config['ogImage']) && !str_starts_with($config['ogImage'], 'http') && $config['ogImage'] !== '') ? $cdnBaseUrl . $config['ogImage'] : $config['ogImage'];
+// Optional descriptive alt text for OpenGraph (`og:image:alt`) and Twitter (`twitter:image:alt`)
+// social preview cards so blind and low-vision users on Discord, Slack, LinkedIn, and Mastodon
+// hear a meaningful description of the link preview artwork:
+$ogImageAlt = $config['ogImageAlt'] ?? '';
 $ogUrl = $config['ogUrl'];
 $navbarBrandLogo = (isset($config['navbarBrandLogo']) && !str_starts_with($config['navbarBrandLogo'], 'http') && $config['navbarBrandLogo'] !== '') ? $cdnBaseUrl . $config['navbarBrandLogo'] : $config['navbarBrandLogo'];
 $navbarBrandText = $config['navbarBrandText'];

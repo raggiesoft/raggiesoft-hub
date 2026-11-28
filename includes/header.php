@@ -176,9 +176,13 @@ if (isset($customPageAssets) && is_array($customPageAssets)) {
         : ($isMemoriamRoute
             ? ($cdn_root . '/raggiesoft-corporate/images/og/in-memoriam-patrick-stewart-og.jpg')
             : ($cdn_root . '/raggiesoft-corporate/images/logo/raggiesoft-logo.png'));
-    $resolvedOgImageAlt = $isMemoriamRoute
-        ? 'Second Star to the Right • In Memoriam: Sir Patrick Stewart (July 13, 1940 – October 28, 2026) — Ad astra per aspera'
-        : ($resolvedOgTitle . ' — RaggieSoft');
+    $resolvedOgImageAlt = !empty($ogImageAlt)
+        ? $ogImageAlt
+        : (!empty($pageConfig['ogImageAlt'])
+            ? $pageConfig['ogImageAlt']
+            : ($isMemoriamRoute
+                ? 'Second Star to the Right • In Memoriam: Sir Patrick Stewart (July 13, 1940 – October 28, 2026) — Ad astra per aspera'
+                : ($resolvedOgTitle . ' — RaggieSoft')));
     $resolvedOgType = $isMemoriamRoute ? 'article' : 'website';
     ?>
     <?php /* Every dynamic string echoed into an HTML attribute or `<title>` is escaped with `htmlspecialchars()` to prevent XSS */ ?>
