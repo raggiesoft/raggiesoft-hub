@@ -16,8 +16,10 @@
  * Grace Hopper's first compiler (1952), Newport '65, the May 1982 UK Musicians'
  * Union London branch motion against synthesizers & TRON's Oscar snub (1982),
  * and 1990s resistance to digital darkrooms, computer illustration, and home studios:
- *   1. Accessible semantic data table (`<th scope="col">` / `<th scope="row">`)
- *      with bidirectional superscript footnote anchors (`#cite-ref-N` -> `#source-N`).
+ *   1. Mobile-first responsive Era Timeline Cards (`<ol class="ai-era-timeline">`)
+ *      that stack cleanly on phones (`< 768px`) without horizontal scrolling and
+ *      align into 3 crisp columns on desktops (`>= 992px`), with bidirectional
+ *      superscript footnote anchors (`#cite-ref-N` -> `#source-N`).
  *   2. Calm "Why We Don't Argue in Circles" closing note acknowledging that
  *      nobody is ever obligated to enjoy AI-assisted projects.
  *   3. One-click copyable Standard Reply built around verified historical records.
@@ -255,9 +257,15 @@ REPLY;
             <?php /* 2. Shared 4-Tab AI Suite Navigation Bar */ ?>
             <?php include ROOT_PATH . '/includes/components/navigation/ai-disclaimer-subnav.php'; ?>
 
-            <?php /* 3. Accessible Historical Timeline Table (`scope="col"` & `scope="row"` + `#cite-ref-N` Footnotes) */ ?>
+            <?php /* 3. Mobile-First Responsive Era Timeline Cards (`<ol>` + `#cite-ref-N` Footnotes)
+                     Why cards instead of a 4-column `<table>`?
+                     Multi-sentence historical quotes inside a 4-column table either overflow narrow
+                     phone screens horizontally or crush prose into 2-word slivers. Using a 12-column
+                     card list stacks Era -> Criticism -> Verdict cleanly at 100% width on phones
+                     (`< 768px`) while aligning into three side-by-side columns on desktops (`>= 992px`),
+                     with a single `#cite-ref-N` anchor per source across all screen sizes! */ ?>
             <div class="card bg-base-200 border border-base-300 shadow-sm mb-5">
-                <div class="card-body p-4 p-lg-5">
+                <div class="card-body p-3 p-sm-4 p-lg-5">
                     <div class="d-flex flex-wrap justify-content-between align-items-center gap-2 mb-3">
                         <h2 class="h4 fw-bold text-body-emphasis mb-0">
                             <i class="ph-duotone ph-clock-counter-clockwise text-warning me-2" aria-hidden="true"></i>The Gatekeeper Script Across Seven Eras
@@ -270,22 +278,26 @@ REPLY;
                         Look closely at the documented objections across twenty-four centuries below&mdash;swap out the name of the tool, and the sentences read as if they were posted on social media ten minutes ago. Select any numbered bracket (such as <strong>[1]</strong>) to inspect the exact historical record.
                     </p>
 
-                    <div class="table-responsive">
-                        <table class="table align-middle mb-0">
-                            <thead>
-                                <tr>
-                                    <th scope="col" class="text-uppercase small fw-bold" style="min-width: 115px;">Era</th>
-                                    <th scope="col" class="text-uppercase small fw-bold" style="min-width: 200px;">New Tool</th>
-                                    <th scope="col" class="text-uppercase small fw-bold">Documented Criticism at the Time</th>
-                                    <th scope="col" class="text-uppercase small fw-bold">History&rsquo;s Verdict</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <?php foreach ($historyMilestones as $row): ?>
-                                    <tr>
-                                        <th scope="row" class="fw-bold text-primary"><?php echo htmlspecialchars($row['era'], ENT_QUOTES, 'UTF-8'); ?></th>
-                                        <td class="fw-semibold text-body-emphasis"><?php echo htmlspecialchars($row['tool'], ENT_QUOTES, 'UTF-8'); ?></td>
-                                        <td class="small text-body-secondary">
+                    <ol class="list-unstyled mb-0">
+                        <?php foreach ($historyMilestones as $idx => $row):
+                            $isLastEra = ($idx === count($historyMilestones) - 1);
+                        ?>
+                            <li class="ai-era-card p-3 p-md-4 rounded-3 border border-base-300 shadow-sm <?php echo $isLastEra ? 'mb-0' : 'mb-3'; ?>">
+                                <div class="row g-3 align-items-start">
+                                    <?php /* Column 1: Era Pill + Tool Name (100% width on mobile, 3/12 on desktop) */ ?>
+                                    <div class="col-12 col-lg-3">
+                                        <span class="ai-era-badge mb-2"><?php echo htmlspecialchars($row['era'], ENT_QUOTES, 'UTF-8'); ?></span>
+                                        <h3 class="h6 fw-bold text-body-emphasis mb-0">
+                                            <?php echo htmlspecialchars($row['tool'], ENT_QUOTES, 'UTF-8'); ?>
+                                        </h3>
+                                    </div>
+
+                                    <?php /* Column 2: Documented Criticism at the Time + Inline `[N]` Footnotes */ ?>
+                                    <div class="col-12 col-md-7 col-lg-5">
+                                        <div class="text-uppercase fw-bold text-body-secondary mb-1" style="font-size: 0.72rem; letter-spacing: 0.06em;">
+                                            <i class="ph-duotone ph-quotes me-1 text-warning" aria-hidden="true"></i>Documented Criticism at the Time
+                                        </div>
+                                        <p class="small text-body-secondary mb-0">
                                             <?php foreach ($row['claims'] as $claimIdx => $claim): ?>
                                                 <?php if ($claimIdx > 0): ?> <?php endif; ?>
                                                 <?php echo htmlspecialchars($claim['text'], ENT_QUOTES, 'UTF-8'); ?>
@@ -298,13 +310,24 @@ REPLY;
                                                     </sup>
                                                 <?php endforeach; ?>
                                             <?php endforeach; ?>
-                                        </td>
-                                        <td class="small text-body-emphasis"><?php echo htmlspecialchars($row['verdict'], ENT_QUOTES, 'UTF-8'); ?></td>
-                                    </tr>
-                                <?php endforeach; ?>
-                            </tbody>
-                        </table>
-                    </div>
+                                        </p>
+                                    </div>
+
+                                    <?php /* Column 3: History's Verdict Callout Box */ ?>
+                                    <div class="col-12 col-md-5 col-lg-4">
+                                        <div class="ai-era-verdict p-3 rounded-3">
+                                            <div class="text-uppercase fw-bold ai-era-verdict-label mb-1" style="font-size: 0.72rem; letter-spacing: 0.06em;">
+                                                <i class="ph-duotone ph-check-circle me-1" aria-hidden="true"></i>History&rsquo;s Verdict
+                                            </div>
+                                            <p class="small mb-0 fw-medium">
+                                                <?php echo htmlspecialchars($row['verdict'], ENT_QUOTES, 'UTF-8'); ?>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        <?php endforeach; ?>
+                    </ol>
                 </div>
             </div>
 
@@ -374,7 +397,7 @@ REPLY;
                                         <?php endif; ?>
                                         <a href="#cite-ref-<?php echo (int) $num; ?>"
                                            class="ai-cite-backlink"
-                                           aria-label="Back to table row for source <?php echo (int) $num; ?>">&#8617; Back to text</a>
+                                           aria-label="Back to timeline entry for source <?php echo (int) $num; ?>">&#8617; Back to text</a>
                                     </span>
                                 </li>
                             <?php endforeach; ?>

@@ -160,6 +160,52 @@ $aiSuiteTabs = [
         color: #1e293b !important;
     }
 
+    /* Mobile-First Era Timeline Cards on `/about/ai-disclaimer/history-of-tools`:
+       Replaces rigid multi-column `<table>` layouts with semantic 12-column cards
+       that stack cleanly at 100% width on phones (`< 768px`) and align side-by-side
+       on tablets and desktops (`>= 768px` / `>= 992px`) with >= 7:1 AAA contrast! */
+    .ai-era-card {
+        background-color: var(--bs-body-bg, #ffffff);
+    }
+    .ai-era-badge {
+        display: inline-block;
+        background-color: #1e40af;
+        color: #ffffff;
+        font-size: 0.78rem;
+        font-weight: 700;
+        letter-spacing: 0.04em;
+        padding: 0.25rem 0.65rem;
+        border-radius: 9999px;
+    }
+    .ai-era-verdict {
+        background-color: #ecfdf5;
+        border-left: 3px solid #059669;
+        color: #0f172a;
+    }
+    .ai-era-verdict-label {
+        color: #065f46;
+    }
+    [data-bs-theme="dark"] .ai-suite-shell .ai-era-verdict,
+    [data-theme="dark"] .ai-suite-shell .ai-era-verdict {
+        background-color: rgba(6, 95, 70, 0.24);
+        border-left-color: #34d399;
+        color: #f8fafc;
+    }
+    [data-bs-theme="dark"] .ai-suite-shell .ai-era-verdict-label,
+    [data-theme="dark"] .ai-suite-shell .ai-era-verdict-label {
+        color: #6ee7b7;
+    }
+    @media (prefers-color-scheme: dark) {
+        :root:not([data-bs-theme="light"]):not([data-theme="light"]) .ai-suite-shell .ai-era-verdict {
+            background-color: rgba(6, 95, 70, 0.24);
+            border-left-color: #34d399;
+            color: #f8fafc;
+        }
+        :root:not([data-bs-theme="light"]):not([data-theme="light"]) .ai-suite-shell .ai-era-verdict-label {
+            color: #6ee7b7;
+        }
+    }
+
     /* Superscript inline citation links (`[1]`, `[2]`, ...) & `:target` bibliography highlight:
        - Gives keyboard and touch users a comfortable click area without breaking line-height.
        - Highlights the targeted `<li id="source-N">` row when jumped to from the article body,
