@@ -102,7 +102,7 @@
         <?php /* High-visibility `role="alert"` callout documenting the Exit 221 root-access trauma override */ ?>
         <div role="alert" class="alert shadow-sm alert-error d-block">
 
-            <i class=\"shrink-0 text-xl ph-duotone ph-shield-slash\" aria-hidden="true"></i>
+            <i class="shrink-0 text-xl ph-duotone ph-shield-slash" aria-hidden="true"></i>
             <div>
                 <h3 class="h4 alert-heading">System Error: Permissions Bypassed</h3>
                 <p class="mb-0">Despite previous informed consent, the visual input of the "I-64 East" signifier triggered a fatal conflict. To Jordan's memory, I-64 equals Abuse. The logic centers (User Space) were instantly locked out. The <strong>Survival Instinct seized Root Access</strong>, overriding all logic with a single command: <em>FIGHT OR FLIGHT.</em></p>

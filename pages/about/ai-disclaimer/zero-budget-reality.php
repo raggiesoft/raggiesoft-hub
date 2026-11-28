@@ -12,20 +12,25 @@
  * the "just hire writers, illustrators, session musicians, and developers!"
  * demand rests on a false premise:
  *   1. A $0 budget hires zero contractors either way—the true alternative to
- *      modern tools wasn't paid freelance gigs, it was silence.
+ *      modern tools wasn't paid freelance gigs, it was silence (citing empirical
+ *      economic research on the early-2000s "1 download = 1 lost retail CD sale"
+ *      substitution fallacy).
  *   2. Zero real-artist prompt triggers + 100% free open-culture distribution
  *      (CC BY-SA 4.0 & MIT License) with no paywalls or ads.
- *   3. Includes a one-click copyable Standard Reply specifically addressing
- *      "you're stealing jobs / hire artists" comments.
+ *   3. One-click copyable Standard Reply + numbered "Sources & Open-License
+ *      References" bibliography (`#sources`).
  *
  * INPUTS:
  * - `ROOT_PATH` from `amanda/elara.php`.
  *
  * OUTPUT PRODUCED:
- * - Semantic Light/Dark accessible article view + copyable standard reply.
+ * - Semantic Light/Dark accessible article view, copyable standard reply, and
+ *   cited economic & open-license references.
  * ============================================================================
  */
 
+/* Copyable Standard Reply stored via PHP NOWDOC (`<<<'REPLY'`) so literal `$0`
+ * never triggers variable interpolation or escape-character bleed: */
 $zeroBudgetReply = <<<'REPLY'
 Thanks for chiming in. To save us both time, here is the honest math behind my work.
 
@@ -56,7 +61,7 @@ REPLY;
             <?php /* 2. Shared 4-Tab AI Suite Navigation Bar */ ?>
             <?php include ROOT_PATH . '/includes/components/navigation/ai-disclaimer-subnav.php'; ?>
 
-            <?php /* 3. The False Counterfactual */ ?>
+            <?php /* 3. The False Counterfactual (with inline citation to empirical music-economics research) */ ?>
             <div class="row g-4 mb-5">
                 <div class="col-md-6 d-flex">
                     <div class="card bg-base-200 border border-base-300 shadow-sm h-100 w-100">
@@ -66,10 +71,10 @@ REPLY;
                             </div>
                             <h2 class="h4 fw-bold text-body-emphasis mb-3">A $0 Budget Hires Zero People Either Way</h2>
                             <p class="text-body-secondary mb-3">
-                                In the early 2000s, major record labels famously claimed that every free song download equaled a lost $18 CD sale&mdash;assuming the listener would have bought every single album at retail price otherwise.
+                                In the early 2000s, major record labels famously claimed that every free song download equaled a lost $18 retail CD sale&mdash;assuming the listener had unlimited cash and would have bought every album at full price otherwise, an assumption empirical economists repeatedly debunked.<sup class="ai-cite-sup"><a href="#source-1" id="cite-ref-1" class="ai-cite-ref" aria-label="Jump to source 1">[1]</a></sup>
                             </p>
                             <p class="text-body-secondary mb-0">
-                                Telling an independent creator with no outside budget to <em>&ldquo;hire studio musicians, vocalists, audio engineers, cover artists, editors, and programmers&rdquo;</em> makes the exact same error. Commissioning dozens of albums, full-length novels, and multi-platform apps commercially would cost hundreds of thousands of dollars that simply do not exist here.
+                                Telling an independent creator with no outside budget to <em>&ldquo;hire studio musicians, vocalists, audio engineers, cover artists, editors, and programmers&rdquo;</em> makes the exact same substitution error. Commissioning dozens of albums, full-length novels, and multi-platform apps commercially would cost hundreds of thousands of dollars that simply do not exist here.
                             </p>
                         </div>
                     </div>
@@ -104,13 +109,15 @@ REPLY;
                     </p>
                     <ul class="text-body-secondary mb-0">
                         <li class="mb-2"><strong>Zero Impersonation:</strong> We never prompt real artist names, real band names, or copyrighted song titles, and every character and band across RaggieSoft is an original work of fiction.</li>
-                        <li><strong>Zero Paywalls:</strong> Every novel on <a href="https://books.raggiesoft.com" class="ai-suite-inline-link">RaggieSoft Book Reader</a>, every interactive story on <a href="https://crossroads.raggiesoft.com" class="ai-suite-inline-link">Story Crossroads</a>, every album in <a href="https://music.raggiesoft.com" class="ai-suite-inline-link">The Listening Room</a>, and every desktop app on <a href="https://launcher.raggiesoft.com" class="ai-suite-inline-link">RaggieSoft Launcher</a> is free to read, stream, and enjoy under <a href="https://corporate.raggiesoft.com/licensing" class="ai-suite-inline-link">Creative Commons (CC BY-SA 4.0) and MIT open licenses</a>.</li>
+                        <li>
+                            <strong>Zero Paywalls:</strong> Every novel on <a href="https://books.raggiesoft.com" class="ai-suite-inline-link">RaggieSoft Book Reader</a>, every interactive story on <a href="https://crossroads.raggiesoft.com" class="ai-suite-inline-link">Story Crossroads</a>, every album in <a href="https://music.raggiesoft.com" class="ai-suite-inline-link">The Listening Room</a>, and every desktop app on <a href="https://launcher.raggiesoft.com" class="ai-suite-inline-link">RaggieSoft Launcher</a> is free to read, stream, and enjoy under <a href="https://corporate.raggiesoft.com/licensing" class="ai-suite-inline-link">Creative Commons (CC BY-SA 4.0) and MIT open licenses</a>.<sup class="ai-cite-sup"><a href="#source-2" id="cite-ref-2" class="ai-cite-ref" aria-label="Jump to source 2">[2]</a></sup><sup class="ai-cite-sup"><a href="#source-3" id="cite-ref-3" class="ai-cite-ref" aria-label="Jump to source 3">[3]</a></sup>
+                        </li>
                     </ul>
                 </div>
             </div>
 
             <?php /* 5. Copyable Standard Reply */ ?>
-            <section id="standard-reply" aria-labelledby="budget-reply-heading" class="mb-4">
+            <section id="standard-reply" aria-labelledby="budget-reply-heading" class="mb-5">
                 <div class="card bg-base-200 border border-primary shadow-sm">
                     <div class="card-body p-4 p-lg-5">
                         <p class="small text-uppercase fw-bold text-primary mb-1" style="letter-spacing: 0.08em;">
@@ -130,7 +137,52 @@ REPLY;
                 </div>
             </section>
 
+            <?php /* 6. Sources & Open-License References (`#sources`) */ ?>
+            <section id="sources" aria-labelledby="budget-sources-heading" class="mb-4">
+                <div class="card bg-base-200 border border-base-300 shadow-sm">
+                    <div class="card-body p-4 p-lg-5">
+                        <p class="small text-uppercase fw-bold text-primary mb-1" style="letter-spacing: 0.08em;">
+                            Economic &amp; Open-License Citations
+                        </p>
+                        <h2 id="budget-sources-heading" class="h4 fw-bold text-body-emphasis mb-3">
+                            <i class="ph-duotone ph-books text-primary me-2" aria-hidden="true"></i>Sources &amp; Open-License References
+                        </h2>
+                        <ol class="ai-sources-list small text-body-secondary">
+                            <li id="source-1">
+                                <strong class="text-body-emphasis">Oberholzer-Gee, Felix, &amp; Koleman Strumpf (2007).</strong>
+                                <em>&ldquo;The Effect of File Sharing on Record Sales: An Empirical Analysis,&rdquo;</em>
+                                Journal of Political Economy, Vol. 115, No. 1 (February 2007), pp. 1&ndash;42 (University of Chicago Press).
+                                <span class="d-block mt-1">
+                                    Landmark empirical study showing that unpaid digital downloads did not substitute 1-for-1 for full-price retail CD sales because listeners without the budget for $18 retail albums were not displaced retail buyers.
+                                    <a href="https://doi.org/10.1086/511995" class="ai-suite-inline-link ms-1" target="_blank" rel="noopener noreferrer">University of Chicago Press (DOI: 10.1086/511995) &#8599;</a>
+                                    <a href="#cite-ref-1" class="ai-cite-backlink" aria-label="Back to text for source 1">&#8617; Back to text</a>
+                                </span>
+                            </li>
+                            <li id="source-2">
+                                <strong class="text-body-emphasis">Creative Commons Corporation (2013).</strong>
+                                <em>Attribution-ShareAlike 4.0 International Public License (CC BY-SA 4.0).</em>
+                                <span class="d-block mt-1">
+                                    Open-culture public license permitting free reading, sharing, and adaptation with attribution under identical share-alike terms across RaggieSoft narratives and music.
+                                    <a href="https://creativecommons.org/licenses/by-sa/4.0/" class="ai-suite-inline-link ms-1" target="_blank" rel="noopener noreferrer">Creative Commons License Deed &#8599;</a>
+                                    <a href="#cite-ref-2" class="ai-cite-backlink" aria-label="Back to text for source 2">&#8617; Back to text</a>
+                                </span>
+                            </li>
+                            <li id="source-3">
+                                <strong class="text-body-emphasis">Open Source Initiative.</strong>
+                                <em>The MIT License (MIT).</em>
+                                <span class="d-block mt-1">
+                                    Permissive open-source software license governing RaggieSoft source code repositories.
+                                    <a href="https://opensource.org/license/mit" class="ai-suite-inline-link ms-1" target="_blank" rel="noopener noreferrer">Open Source Initiative &#8599;</a>
+                                    <a href="#cite-ref-3" class="ai-cite-backlink" aria-label="Back to text for source 3">&#8617; Back to text</a>
+                                </span>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </section>
+
             <?php
+            /* 7. Bottom Sequential Stepper Navigation */
             $nav = [
                 'prev'     => ['url' => '/about/ai-disclaimer/craft-vs-slop', 'label' => 'Craft vs. “AI Slop”'],
                 'overview' => ['url' => '/about/ai-disclaimer', 'label' => 'AI Process Hub'],

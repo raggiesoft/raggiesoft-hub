@@ -156,7 +156,7 @@
                                 </li>
                                 <li class="list-group-item bg-transparent border-0 text-body-emphasis">
                                     <i class="ph-duotone ph-caret-right text-primary me-2" aria-hidden="true"></i>
-                                    <strong>Diacritical &amp; Cultural Precision:</strong> Proper indigenous and regional names keep their authentic orthography&mdash;such as <strong>Uluṟu</strong> (never the colonial name or unaccented spelling), <strong>Québec</strong>, and <strong>Montréal</strong>.
+                                    <strong>Diacritical &amp; Cultural Precision:</strong> Proper indigenous and regional names keep their authentic orthography&mdash;such as <strong>Uluṟu</strong> (never the colonial name or unaccented spelling),<sup class="ai-cite-sup"><a href="#source-1" id="cite-ref-1" class="ai-cite-ref" aria-label="Jump to source 1">[1]</a></sup> <strong>Québec</strong>, and <strong>Montréal</strong>.
                                 </li>
                             </ul>
                         </div>
@@ -172,7 +172,7 @@
                                 </li>
                                 <li class="list-group-item bg-transparent border-0 text-body-emphasis">
                                     <i class="ph-duotone ph-caret-right text-primary me-2" aria-hidden="true"></i>
-                                    <strong>Open Culture by Default:</strong> Creative works are published free without paywalls under <strong>CC BY-SA 4.0</strong>, and software source code under the <strong>MIT License</strong>.
+                                    <strong>Open Culture by Default:</strong> Creative works are published free without paywalls under <strong>CC BY-SA 4.0</strong>,<sup class="ai-cite-sup"><a href="#source-2" id="cite-ref-2" class="ai-cite-ref" aria-label="Jump to source 2">[2]</a></sup> and software source code under the <strong>MIT License</strong>.<sup class="ai-cite-sup"><a href="#source-3" id="cite-ref-3" class="ai-cite-ref" aria-label="Jump to source 3">[3]</a></sup>
                                 </li>
                             </ul>
                         </div>
@@ -248,7 +248,50 @@
                 </div>
             </section>
 
-            <?php /* 6. Work of Fiction & Fictitious Entities Disclaimer */ ?>
+            <?php /* 6. Standards & Reference Notes (`#sources`) */ ?>
+            <section id="sources" aria-labelledby="hub-sources-heading" class="mb-5">
+                <div class="card bg-base-200 border border-base-300 shadow-sm w-100">
+                    <div class="card-body p-4 p-lg-5">
+                        <p class="small text-uppercase fw-bold text-primary mb-1" style="letter-spacing: 0.08em;">
+                            Cultural Orthography &amp; Open-License Standards
+                        </p>
+                        <h2 id="hub-sources-heading" class="h5 fw-bold text-body-emphasis mb-3">
+                            <i class="ph-duotone ph-books text-primary me-2" aria-hidden="true"></i>Standards &amp; Reference Notes
+                        </h2>
+                        <ol class="ai-sources-list small text-body-secondary">
+                            <li id="source-1">
+                                <strong class="text-body-emphasis">Parks Australia &amp; Uluṟu-Kata Tjuṯa National Park.</strong>
+                                <em>Traditional Pitjantjatjara / Yankunytjatjara (Aṉangu) Orthography for Uluṟu.</em>
+                                <span class="d-block mt-1">
+                                    Preserves the traditional Aṉangu spelling with the retroflex <em>ṟ</em> underdot rather than colonial or unaccented spellings.
+                                    <a href="https://parksaustralia.gov.au/uluru/" class="ai-suite-inline-link ms-1" target="_blank" rel="noopener noreferrer">Parks Australia Official Guide &#8599;</a>
+                                    <a href="#cite-ref-1" class="ai-cite-backlink" aria-label="Back to text for source 1">&#8617; Back to text</a>
+                                </span>
+                            </li>
+                            <li id="source-2">
+                                <strong class="text-body-emphasis">Creative Commons Corporation (2013).</strong>
+                                <em>Attribution-ShareAlike 4.0 International Public License (CC BY-SA 4.0).</em>
+                                <span class="d-block mt-1">
+                                    Governs free open-culture reading and sharing across RaggieSoft narratives and music alongside our <a href="https://corporate.raggiesoft.com/licensing" class="ai-suite-inline-link">Licensing Overview</a>.
+                                    <a href="https://creativecommons.org/licenses/by-sa/4.0/" class="ai-suite-inline-link ms-1" target="_blank" rel="noopener noreferrer">Creative Commons License Deed &#8599;</a>
+                                    <a href="#cite-ref-2" class="ai-cite-backlink" aria-label="Back to text for source 2">&#8617; Back to text</a>
+                                </span>
+                            </li>
+                            <li id="source-3">
+                                <strong class="text-body-emphasis">Open Source Initiative.</strong>
+                                <em>The MIT License (MIT).</em>
+                                <span class="d-block mt-1">
+                                    Permissive open-source software license governing RaggieSoft source code repositories.
+                                    <a href="https://opensource.org/license/mit" class="ai-suite-inline-link ms-1" target="_blank" rel="noopener noreferrer">Open Source Initiative &#8599;</a>
+                                    <a href="#cite-ref-3" class="ai-cite-backlink" aria-label="Back to text for source 3">&#8617; Back to text</a>
+                                </span>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </section>
+
+            <?php /* 7. Work of Fiction & Fictitious Entities Disclaimer */ ?>
             <div class="card bg-base-200 border border-warning shadow-sm w-100">
                 <div class="card-body p-4 p-lg-5">
                     <div class="d-flex align-items-center mb-3">

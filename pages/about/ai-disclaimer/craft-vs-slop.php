@@ -10,22 +10,27 @@
  * WHAT THIS FILE DOES (PLAIN-ENGLISH OVERVIEW):
  * Addresses the "AI slop / go learn a real skill" accusation head-on in calm,
  * everyday consumer language:
- *   1. Separates actual low-effort spam ("slop") from human-directed craft,
- *      continuity, ear-verified lyrics, and accessible software engineering.
- *   2. Highlights Michael P. Ragsdale's pre-AI roots (building websites since
- *      1997, desktop utilities since 1998, and years of university source-code
- *      accessibility work before modern AI existed).
+ *   1. Separates actual low-effort spam ("slop", citing its documented 2024
+ *      coinage as the AI equivalent of unreviewed spam) from human-directed
+ *      craft, continuity, ear-verified lyrics, and accessible software design.
+ *   2. Highlights Michael P. Ragsdale's verifiable pre-AI roots (building
+ *      websites since 1997, desktop utilities since 1998, and years of
+ *      university web accessibility work before modern AI existed).
  *   3. Provides both a Full Standard Reply and a Compact Social Reply with
- *      one-click clipboard copy buttons (`[data-copy-target]`).
+ *      one-click clipboard copy buttons (`[data-copy-target]`), followed by
+ *      numbered Sources & First-Party Archives (`#sources`).
  *
  * INPUTS:
  * - `ROOT_PATH` from `amanda/elara.php`.
  *
  * OUTPUT PRODUCED:
- * - Semantic Light/Dark accessible article view + copyable standard replies.
+ * - Semantic Light/Dark accessible article view, copyable standard replies,
+ *   and cited references.
  * ============================================================================
  */
 
+/* Copyable Standard Replies stored via PHP NOWDOC (`<<<'REPLY'`) so literal `$0`
+ * never triggers PHP interpolation or Markdown escape bleed: */
 $fullSlopReply = <<<'REPLY'
 Thanks for sharing your perspective. To save us both a circular debate, here is where I stand.
 
@@ -72,7 +77,7 @@ REPLY;
                             </div>
                             <h2 class="h4 fw-bold text-body-emphasis mb-3">Absence of Care, Not Choice of Tool</h2>
                             <p class="text-body-secondary mb-3">
-                                Everyone has seen genuine slop online: unread 40-page spam booklets uploaded by the dozen to chase quick royalties, unedited hallucinations, and broken apps nobody bothered to test. That kind of shovelware existed decades before AI&mdash;from 1990s bargain-bin CD-ROM flips to keyword-stuffed content mills.
+                                Everyone has seen genuine slop online: unreviewed spam booklets uploaded by the dozen to chase quick royalties, unedited hallucinations, and broken apps nobody bothered to test&mdash;the exact mass-produced clutter the word <em>&ldquo;slop&rdquo;</em> was coined in 2024 to describe as the modern successor to email spam.<sup class="ai-cite-sup"><a href="#source-1" id="cite-ref-1" class="ai-cite-ref" aria-label="Jump to source 1">[1]</a></sup> That kind of shovelware existed decades before AI, from 1990s bargain-bin CD-ROM flips to keyword-stuffed content mills.
                             </p>
                             <p class="text-body-secondary mb-0">
                                 Calling <em>every</em> project that uses modern AI assistance &ldquo;slop&rdquo; confuses the paintbrush with the painter. A tool can generate raw material, or accelerate tedious scaffolding&mdash;only a human can supply lived meaning, continuity, restraint, and quality standards.
@@ -89,7 +94,7 @@ REPLY;
                             </div>
                             <h2 class="h4 fw-bold text-body-emphasis mb-3">&ldquo;Go Learn a Real Skill First&rdquo;</h2>
                             <p class="text-body-secondary mb-3">
-                                One of the loudest assumptions online is that anyone using AI coding or writing tools must not know how to build anything on their own. At RaggieSoft, the timeline runs the other way around: websites since <strong>1997</strong>, classic desktop utilities like <a href="https://storetrainer.raggiesoft.com" class="ai-suite-inline-link">StoreTrainer</a> since <strong>1998</strong>, narrative fiction since <strong>2007</strong>, and years of university web accessibility work before modern AI assistants existed.
+                                One of the loudest assumptions online is that anyone using AI coding or writing tools must not know how to build anything on their own. At RaggieSoft, the documented archive runs the other way around: websites since <strong>1997</strong>, classic desktop utilities like <a href="https://storetrainer.raggiesoft.com" class="ai-suite-inline-link">StoreTrainer</a> since <strong>1998</strong>, narrative fiction since <strong>2007</strong>, and years of university web accessibility work before modern AI assistants existed.<sup class="ai-cite-sup"><a href="#source-2" id="cite-ref-2" class="ai-cite-ref" aria-label="Jump to source 2">[2]</a></sup>
                             </p>
                             <p class="text-body-secondary mb-0">
                                 Knowing how software, accessible interfaces, and story structure work under the hood is <em>why</em> AI tools work well here: you can spot when a draft rings hollow, catch subtle bugs, and hold every page to a strict human bar.
@@ -115,7 +120,7 @@ REPLY;
             </div>
 
             <?php /* 5. Copyable Standard Replies (Full + Compact) */ ?>
-            <section id="standard-reply" aria-labelledby="slop-reply-heading" class="mb-4">
+            <section id="standard-reply" aria-labelledby="slop-reply-heading" class="mb-5">
                 <div class="card bg-base-200 border border-primary shadow-sm">
                     <div class="card-body p-4 p-lg-5">
                         <p class="small text-uppercase fw-bold text-primary mb-1" style="letter-spacing: 0.08em;">
@@ -146,7 +151,41 @@ REPLY;
                 </div>
             </section>
 
+            <?php /* 6. Sources & First-Party Archives (`#sources`) */ ?>
+            <section id="sources" aria-labelledby="slop-sources-heading" class="mb-4">
+                <div class="card bg-base-200 border border-base-300 shadow-sm">
+                    <div class="card-body p-4 p-lg-5">
+                        <p class="small text-uppercase fw-bold text-primary mb-1" style="letter-spacing: 0.08em;">
+                            Terminology &amp; Provenance Citations
+                        </p>
+                        <h2 id="slop-sources-heading" class="h4 fw-bold text-body-emphasis mb-3">
+                            <i class="ph-duotone ph-books text-primary me-2" aria-hidden="true"></i>Sources &amp; First-Party Archives
+                        </h2>
+                        <ol class="ai-sources-list small text-body-secondary">
+                            <li id="source-1">
+                                <strong class="text-body-emphasis">Hoffman, Benjamin (2024) &amp; Simon Willison (2024).</strong>
+                                <em>&ldquo;First Came &lsquo;Spam.&rsquo; Now, With A.I., We&rsquo;ve Got &lsquo;Slop,&rsquo;&rdquo;</em>
+                                The New York Times (June 11, 2024); alongside Simon Willison, <em>&ldquo;Slop is the new name for unwanted AI-generated content&rdquo;</em> (May 8, 2024).
+                                <span class="d-block mt-1">
+                                    Documents how <em>&ldquo;slop&rdquo;</em> entered everyday usage specifically as the analogue to unsolicited email spam: unreviewed, mass-generated filler pushed onto audiences without human curation or care.
+                                    <a href="#cite-ref-1" class="ai-cite-backlink" aria-label="Back to text for source 1">&#8617; Back to text</a>
+                                </span>
+                            </li>
+                            <li id="source-2">
+                                <strong class="text-body-emphasis">Ragsdale, Michael P. (1997&ndash;Present).</strong>
+                                <em>Pre-AI Software, Web Accessibility, and Narrative Provenance Archives.</em>
+                                <span class="d-block mt-1">
+                                    Publicly inspectable across <a href="https://storetrainer.raggiesoft.com" class="ai-suite-inline-link">StoreTrainer</a> (classic PC game save utilities originating in 1998), <a href="https://michaelpragsdale.com" class="ai-suite-inline-link">MichaelPRagsdale.com</a> (web development since 1997 and public-university web accessibility engineering), and <a href="https://books.raggiesoft.com" class="ai-suite-inline-link">Ocean View Archives</a> (long-form fiction worlds originating in 2007).
+                                    <a href="#cite-ref-2" class="ai-cite-backlink" aria-label="Back to text for source 2">&#8617; Back to text</a>
+                                </span>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </section>
+
             <?php
+            /* 7. Bottom Sequential Stepper Navigation */
             $nav = [
                 'prev'     => ['url' => '/about/ai-disclaimer', 'label' => 'AI Process Overview'],
                 'overview' => ['url' => '/about/ai-disclaimer', 'label' => 'AI Process Hub'],

@@ -119,6 +119,60 @@ $aiSuiteTabs = [
         background-color: var(--bs-tertiary-bg, rgba(148, 163, 184, 0.12));
     }
 
+    /* Superscript inline citation links (`[1]`, `[2]`, ...) & `:target` bibliography highlight:
+       - Gives keyboard and touch users a comfortable click area without breaking line-height.
+       - Highlights the targeted `<li id="source-N">` row when jumped to from the article body,
+         with `scroll-margin-top` so sticky site headers never cover the cited source! */
+    .ai-cite-sup {
+        font-size: 0.78em;
+        line-height: 0;
+        margin-left: 0.12rem;
+    }
+    .ai-cite-ref {
+        color: var(--ai-link) !important;
+        font-weight: 700;
+        text-decoration: none;
+        padding: 0.08rem 0.22rem;
+        border-radius: 0.25rem;
+    }
+    .ai-cite-ref:hover {
+        color: var(--ai-link-hover) !important;
+        text-decoration: underline;
+    }
+
+    .ai-sources-list {
+        padding-left: 1.4rem;
+        margin-bottom: 0;
+    }
+    .ai-sources-list li {
+        padding: 0.75rem 0.95rem;
+        margin-bottom: 0.5rem;
+        border-radius: 0.5rem;
+        border-left: 3px solid transparent;
+        scroll-margin-top: 6.5rem;
+        transition: background-color 0.2s ease, border-color 0.2s ease;
+    }
+    .ai-sources-list li:last-child {
+        margin-bottom: 0;
+    }
+    .ai-sources-list li:target {
+        background-color: var(--ai-quote-bg);
+        color: var(--ai-quote-text);
+        border-left-color: var(--ai-quote-border);
+    }
+
+    .ai-cite-backlink {
+        color: var(--ai-link) !important;
+        font-weight: 600;
+        text-decoration: none;
+        margin-left: 0.35rem;
+        white-space: nowrap;
+    }
+    .ai-cite-backlink:hover {
+        color: var(--ai-link-hover) !important;
+        text-decoration: underline;
+    }
+
     .ai-suite-shell a:focus-visible,
     .ai-suite-shell button:focus-visible {
         outline: 2px solid #0284c7;
