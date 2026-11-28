@@ -4,42 +4,43 @@
  * READ-ALONG TEACHING GUIDE (100-LEVEL COURSE EDITION)
  * ============================================================================
  * File: /pages/about/ai-disclaimer/history-of-tools.php
- * Role: Part 4 of 4 — 2,400 Years of Creative Tools (`/about/ai-disclaimer/history-of-tools`)
+ * Role: Part 4 of 4 — 2,400 Years of Creative & Technical Tools (`/about/ai-disclaimer/history-of-tools`)
  * Route Manifest: `/data/routes/about.json` -> `"/about/ai-disclaimer/history-of-tools"`
  *
  * WHAT THIS FILE DOES (PLAIN-ENGLISH OVERVIEW):
- * Places generative AI in the documented 2,400-year historical record of creative
- * tool panics—from Socrates criticizing writing in Plato's Phaedrus (~370 BCE),
- * Abbot Johannes Trithemius defending parchment scribes against printing presses
- * (1492), and Paul Delaroche / Charles Baudelaire attacking photography (1839–1859),
- * to John Philip Sousa warning the U.S. Congress against recorded music (1906),
- * Grace Hopper's first compiler (1952), Newport '65, the May 1982 UK Musicians'
- * Union London branch motion against synthesizers & TRON's Oscar snub (1982),
- * and 1990s resistance to digital darkrooms, computer illustration, and home studios:
- *   1. Mobile-first responsive Era Timeline Cards (`<ol class="ai-era-timeline">`)
- *      that stack cleanly on phones (`< 768px`) without horizontal scrolling and
- *      align into 3 crisp columns on desktops (`>= 992px`), with bidirectional
+ * Traces 2,400 years of recurring anxieties over memory, skill, authenticity,
+ * livelihood, copyright, and artistic legitimacy whenever new tools automate or
+ * broaden human capability—from Plato's Phaedrus (~370 BCE), Johannes Trithemius's
+ * De laude scriptorum (1492), and Charles Baudelaire's Salon de 1859 critique of
+ * photography, to John Philip Sousa's 1906 campaign against mechanical music,
+ * Grace Hopper's 1952 compiler, Bob Dylan's 1965 electric set at Newport, the
+ * May 1982 UK Musicians' Union Central London Branch synthesizer motion, TRON's
+ * 1982 Visual Effects Oscar omission, and 1990s digital-imaging debates:
+ *   1. Mobile-first responsive Era Timeline Cards (`<ol>`) that stack cleanly
+ *      at 100% width on phones (`< 768px`) without horizontal scrolling and
+ *      align into 3 columns on desktops (`>= 992px`), with bidirectional
  *      superscript footnote anchors (`#cite-ref-N` -> `#source-N`).
- *   2. Calm "Why We Don't Argue in Circles" closing note acknowledging that
- *      nobody is ever obligated to enjoy AI-assisted projects.
- *   3. One-click copyable Standard Reply built around verified historical records.
- *   4. Complete 10-entry "Primary Sources & Historical Bibliography" section
- *      (`#sources`) with return-to-text links for keyboard and screen-reader users.
+ *   2. Nuanced historical scholarship distinguishing primary texts, disputed
+ *      attributions (such as the 1839 Paul Delaroche legend), mixed audience
+ *      motives (Newport 1965), economic/copyright motives (Sousa 1906), and
+ *      retrospective oral history (Lisberger on TRON).
+ *   3. Calm "Why We Don't Argue in Circles" note + one-click copyable Standard
+ *      Reply + 10-entry "Historical Sources, Archival Records & Bibliography".
  *
  * INPUTS:
  * - `ROOT_PATH` from `amanda/elara.php`.
  *
  * OUTPUT PRODUCED:
- * - Semantic Light/Dark accessible historical timeline, copyable standard reply,
- *   and primary-source bibliography.
+ * - Semantic Light/Dark accessible historical timeline cards, copyable reply,
+ *   and categorized historical bibliography.
  * ============================================================================
  */
 
 /* ----------------------------------------------------------------------------
- * STEP 1: DEFINE THE SEVEN HISTORICAL MILESTONES & THEIR FOOTNOTE NUMBERS
- * Each row stores safe plain-text strings for the Era, New Tool, and Verdict,
- * plus an array of `$citations` segments so every claim links directly to its
- * exact numbered entry in `$historicalSources` below (`#source-1` .. `#source-10`).
+ * STEP 1: DEFINE THE SEVEN HISTORICAL ERAS & THEIR FOOTNOTE NUMBERS
+ * Every entry states the documented historical context accurately—preserving
+ * nuances around authorship, economic/copyright motives, disputed folklore,
+ * and retrospective recollections—and links to `$historicalSources` (`#source-1`..`#source-10`).
  * ---------------------------------------------------------------------------- */
 $historyMilestones = [
     [
@@ -47,7 +48,7 @@ $historyMilestones = [
         'tool'    => 'Writing Itself (Plato’s Phaedrus)',
         'claims'  => [
             [
-                'text' => 'In Plato’s Phaedrus, Socrates recounts Egyptian King Thamus warning that writing is an external mechanical crutch—“an elixir not of memory, but of reminding”—that offers pupils “the appearance of wisdom, not true wisdom.”',
+                'text' => 'Around 370 BCE, Plato’s Phaedrus presented a famous philosophical critique of writing: in an origin story told by Socrates, Egyptian King Thamus warns that written words can weaken practiced memory—“an elixir not of memory, but of reminding”—and offer pupils “the appearance of wisdom, not true wisdom.”',
                 'refs' => [1],
             ],
         ],
@@ -55,168 +56,178 @@ $historyMilestones = [
     ],
     [
         'era'     => '1492',
-        'tool'    => 'Movable-Type Printing Press',
+        'tool'    => 'Critique of Replacing Scribes with Print',
         'claims'  => [
             [
-                'text' => 'Benedictine abbot Johannes Trithemius urged monks in De laude scriptorum (In Praise of Scribes) not to abandon hand-lettered parchment for printed paper books, arguing machine printing lacked spiritual discipline and would decay within two centuries.',
+                'text' => 'Benedictine abbot Johannes Trithemius acknowledged printing’s usefulness—and had his own treatise printed in Mainz two years later—yet argued in De laude scriptorum (In Praise of Scribes) that monks should not abandon manual copying, which he valued as spiritual discipline and a safeguard for texts commercial printers might overlook. He also predicted that paper books would endure no more than about two centuries, unlike thousand-year parchment manuscripts.',
                 'refs' => [2],
             ],
         ],
-        'verdict' => 'Opened literacy, novels, and scholarship to everyday people outside aristocratic courts.',
+        'verdict' => 'Printed books proved durable for centuries and opened literacy, novels, and scholarship far beyond monastic and aristocratic libraries.',
     ],
     [
         'era'     => '1839–1859',
-        'tool'    => 'Photography & Cameras',
+        'tool'    => 'Photography & The Salon of 1859',
         'claims'  => [
             [
-                'text' => 'Upon seeing early daguerreotypes in 1839, academic painter Paul Delaroche reportedly declared, “From today, painting is dead!”',
+                'text' => 'Although the oft-repeated legend that painter Paul Delaroche exclaimed “From today, painting is dead!” in 1839 is disputed and lacks a known contemporary record—his documented 1839 assessment actually praised Daguerre’s process as “an immense service rendered to the arts”',
                 'refs' => [3],
             ],
             [
-                'text' => 'Twenty years later, poet and art critic Charles Baudelaire condemned photography at the Salon of 1859 as “the refuge of all failed painters with too little talent, or too lazy to complete their studies.”',
+                'text' => '—poet and critic Charles Baudelaire delivered a fierce documented attack at the Salon of 1859: conceding cameras had documentary and scientific value, he warned photography would “supplant or corrupt” art if treated as imaginative creation, calling the industry “the refuge of all failed painters with too little talent, or too lazy to complete their studies.”',
                 'refs' => [4],
             ],
         ],
-        'verdict' => 'Recognized worldwide as its own expressive art form—while freeing painters to invent Impressionism and modern art.',
+        'verdict' => 'Photography became recognized worldwide as its own expressive art form—while freeing painters to invent Impressionism and modern art.',
     ],
     [
         'era'     => '1906',
         'tool'    => 'Recorded Music & Player Pianos',
         'claims'  => [
             [
-                'text' => 'Composer John Philip Sousa warned the U.S. Congress and magazine readers against “The Menace of Mechanical Music,” predicting that “canned music” from phonographs and player pianos would silence amateur singing and cause human vocal cords to shrivel from disuse.',
+                'text' => 'Composer John Philip Sousa published “The Menace of Mechanical Music” and testified before Congress warning that recordings and player pianos substituted machinery for “human skill, intelligence, and soul,” predicting declining amateur music-making and weakened human vocal cords. Sousa’s campaign also had an important copyright dimension: composers were not yet receiving mechanical reproduction royalties comparable to the rights later recognized under the U.S. Copyright Act of 1909.',
                 'refs' => [5],
             ],
         ],
-        'verdict' => 'Brought music into every home and sparked a century of global musical cross-pollination.',
+        'verdict' => 'Recorded audio brought music into every home, established modern composer royalties, and sparked a century of global musical cross-pollination.',
     ],
     [
         'era'     => '1952–1965',
-        'tool'    => 'Software Compilers & Amplified Instruments',
+        'tool'    => 'Software Compilers & Amplified Folk Music',
         'claims'  => [
             [
-                'text' => 'Computer pioneer Rear Admiral Grace Hopper recalled that when she completed her first A-0 compiler in 1952, “nobody would touch it because, they carefully told me, computers could only do arithmetic; they could not do programs.”',
+                'text' => 'Computer pioneer Rear Admiral Grace Hopper recalled that when she completed her A-0 compiler in 1952, “nobody would touch it because, they carefully told me, computers could only do arithmetic; they could not do programs.”',
                 'refs' => [6],
             ],
             [
-                'text' => 'At the Newport Folk Festival on July 25, 1965, traditionalist purists booed Bob Dylan’s electric band as a commercial betrayal of authentic folk craft.',
+                'text' => 'When Bob Dylan performed an electric set at the Newport Folk Festival on July 25, 1965, portions of the audience booed—though historians and eyewitnesses disagree on the exact mixture of motives, including poor sound quality, the set’s brevity, and the belief among some folk traditionalists that electric rock represented a commercial betrayal of folk authenticity.',
                 'refs' => [7],
             ],
         ],
-        'verdict' => 'High-level software languages built the modern digital world, and amplified rock reshaped popular culture.',
+        'verdict' => 'High-level compilers unlocked modern software engineering, and amplified folk-rock reshaped twentieth-century songwriting.',
     ],
     [
         'era'     => '1982',
         'tool'    => 'Synthesizers, Drum Machines & Computer Graphics',
         'claims'  => [
             [
-                'text' => 'On May 23, 1982, the Central London Branch of the UK Musicians’ Union passed a motion seeking to ban synthesizers and drum machines that imitated acoustic instruments.',
+                'text' => 'On May 23, 1982, the Central London Branch of the UK Musicians’ Union passed a motion seeking restrictions against synthesizers, drum machines, and electronic devices used to replace working acoustic musicians, though the effort did not become a national blanket ban.',
                 'refs' => [8],
             ],
             [
-                'text' => 'That same year, the pioneering sci-fi film TRON was passed over for a Visual Effects Oscar nomination because Academy voters viewed generating imagery on computers as “cheating.”',
+                'text' => 'That same year, Disney’s TRON received no Visual Effects Oscar nomination; director Steven Lisberger later recalled that Academy voters regarded the use of computers as “cheating,” although no official Academy record has been identified stating this as the formal reason.',
                 'refs' => [9],
             ],
         ],
-        'verdict' => 'Defined the iconic 1980s synth-rock sound (celebrated across RaggieSoft’s own The Stardust Engine) and modern cinema.',
+        'verdict' => 'Synthesizers defined the iconic 1980s synth-rock sound (celebrated across RaggieSoft’s own The Stardust Engine), and computer graphics became standard across modern cinema.',
     ],
     [
         'era'     => '1990s–2000s',
         'tool'    => 'Digital Darkrooms, Computer Illustration & Home Studios',
         'claims'  => [
             [
-                'text' => 'Following the February 1990 debut of Adobe Photoshop 1.0 and affordable desktop recording software, critics and traditionalists warned that undo buttons, digital layers, and computer editing compromised authentic craft and reduced artistry to mechanical “trickery.”',
+                'text' => 'Following the February 1990 debut of Adobe Photoshop 1.0 and affordable desktop recording tools, critics, photojournalists, and traditional practitioners raised recurring concerns over authorship, automation, digital manipulation, creative livelihoods, and whether computer-assisted visuals and home-studio productions represented authentic artistic craft.',
                 'refs' => [10],
             ],
         ],
-        'verdict' => 'Digital illustration and home studio production became everyday tools of independent creators worldwide.',
+        'verdict' => 'Digital illustration, non-linear editing, and home studio production became everyday instruments of independent creators worldwide.',
     ],
 ];
 
 /* ----------------------------------------------------------------------------
- * STEP 2: DEFINE THE TEN VERIFIED PRIMARY & ARCHIVAL SOURCES
- * Every entry includes the author, historical date, exact work/publication,
- * page or Stephanus section numbers, historical context, and an optional
- * archival reference URL (`url` + `urlLabel`) when a stable scholarly archive exists.
+ * STEP 2: DEFINE THE TEN HISTORICAL SOURCES, ARCHIVAL RECORDS & BIBLIOGRAPHY
+ * Explicitly categorizes each entry's evidentiary basis (`type` badge: Primary
+ * Text, Congressional Record, Oral History, Archival Scholarship, etc.) so
+ * primary texts and secondary historical scholarship are never conflated.
  * ---------------------------------------------------------------------------- */
 $historicalSources = [
     1 => [
+        'type'     => 'Primary Philosophical Text',
         'author'   => 'Plato (c. 370 BCE)',
         'title'    => 'Phaedrus, Stephanus sections 274c–275b',
         'pub'      => 'Translated by Harold North Fowler in Plato in Twelve Volumes, Vol. 9 (Cambridge, MA: Harvard University Press / Loeb Classical Library, 1925).',
-        'note'     => 'Records Socrates’ dialogue with Phaedrus recounting King Thamus’ rebuke of the god Theuth: writing is “an elixir not of memory, but of reminding; and you offer your pupils the appearance of wisdom, not true wisdom.”',
+        'note'     => 'Presents Socrates narrating an Egyptian origin tale in which King Thamus rebukes the god Theuth: written characters are “an elixir not of memory, but of reminding; and you offer your pupils the appearance of wisdom, not true wisdom.” Used by Plato to examine the limits of written discourse relative to live dialectic.',
         'url'      => 'https://www.perseus.tufts.edu/hopper/text?doc=Plat.+Phaedrus+275a',
         'urlLabel' => 'Perseus Digital Library (Tufts University)',
     ],
     2 => [
-        'author'   => 'Trithemius, Johannes (1492; first printed Mainz, 1494)',
+        'type'     => 'Primary Monastic Treatise',
+        'author'   => 'Trithemius, Johannes (composed 1492; printed Mainz, 1494)',
         'title'    => 'De laude scriptorum (In Praise of Scribes), Chapter 7',
         'pub'      => 'Edited by Klaus Arnold; English translation by Roland Behrendt (Lawrence, KS: Coronado Press, 1974).',
-        'note'     => 'Written at Sponheim Abbey to persuade monks to continue copying manuscripts by hand despite movable type—ironically printed on a press two years later so Trithemius could distribute his argument more widely.',
+        'note'     => 'While Trithemius actively collected printed books at Sponheim Abbey and used Peter Friedberg’s Mainz press to circulate this treatise in 1494, he defended manual copying on parchment as irreplaceable monastic discipline, a safeguard for texts printers neglected, and more durable than paper (estimating 1,000 years for parchment vs. 200 years for paper).',
         'url'      => null,
         'urlLabel' => null,
     ],
     3 => [
-        'author'   => 'Delaroche, Paul (c. 1839), documented in Gaston Tissandier (1874)',
-        'title'    => 'Les Merveilles de la photographie (A History and Handbook of Photography)',
-        'pub'      => 'Paris: Hachette, 1874; English translation edited by John Thomson (London: Sampson Low, Marston, Low, & Searle, 1876).',
-        'note'     => 'Documents French academic painter Paul Delaroche’s famous exclamation—“From today, painting is dead!”—upon inspecting Louis Daguerre’s early daguerreotype plates in 1839.',
+        'type'     => '1839 Primary Report & Disputed 1874 Attribution',
+        'author'   => 'Arago, Dominique François (July 3, 1839) & Gaston Tissandier (1874)',
+        'title'    => 'Rapport de M. Arago sur le daguerréotype (1839) vs. Les Merveilles de la photographie (1874)',
+        'pub'      => 'Arago’s report to the French Chamber of Deputies (Paris: Bachelier, 1839) preserves Paul Delaroche’s favorable contemporary evaluation calling Daguerre’s invention “an immense service rendered to the arts”; Tissandier’s Les Merveilles de la photographie (Paris: Hachette, 1874) popularized the unverified later anecdote “From today, painting is dead!” See also Stephen Bann, Paul Delaroche: History Painted (Princeton University Press, 1997).',
+        'note'     => 'Included here specifically to separate an unverified nineteenth-century legend from Delaroche’s documented 1839 praise.',
         'url'      => null,
         'urlLabel' => null,
     ],
     4 => [
+        'type'     => 'Primary Critical Essay',
         'author'   => 'Baudelaire, Charles (1859)',
         'title'    => '“Le Public moderne et la photographie” (“The Modern Public and Photography”), in Salon de 1859',
         'pub'      => 'Originally published in Revue Française (June–July 1859); English translation by Jonathan Mayne in Art in Paris, 1845–1862: Salons and Other Exhibitions Reviewed by Charles Baudelaire (London: Phaidon Press, 1965), pp. 149–155.',
-        'note'     => 'Dismissed photography as a purely mechanical industrial servant that could never enter the sphere of intangible imagination without corrupting fine art.',
+        'note'     => 'Concedes legitimate archival, scientific, and documentary uses for cameras as a “humble servant” of the arts and sciences, while condemning claims that mechanical photography belonged inside the domain of imaginative fine art.',
         'url'      => null,
         'urlLabel' => null,
     ],
     5 => [
+        'type'     => 'Primary Essay, Congressional Record & Archival Context',
         'author'   => 'Sousa, John Philip (1906)',
-        'title'    => '“The Menace of Mechanical Music” & U.S. Congressional Patent Committee Testimony',
+        'title'    => '“The Menace of Mechanical Music” & Joint Patent Committee Testimony',
         'pub'      => 'Appleton’s Magazine, Vol. 8, No. 3 (September 1906), pp. 278–284; paired with Arguments Before the Committees on Patents of the Senate and House of Representatives, Conjointly, on the Bills S. 6330 and H.R. 19853, 59th U.S. Congress, 1st Session (June 1906), pp. 23–25.',
-        'note'     => 'Coined the derisive phrase “canned music” and warned lawmakers that mechanical talking machines would sweep town bands, parlor pianos, and amateur human singing into extinction.',
-        'url'      => 'https://archive.org/details/argumentsbeforec00unit',
-        'urlLabel' => 'Internet Archive (1906 Congressional Record)',
+        'note'     => 'Intertwined cultural anxieties over “canned music” replacing amateur musicianship with advocacy for composer mechanical royalties ahead of the U.S. Copyright Act of 1909.',
+        'url'      => 'https://blogs.loc.gov/now-see-hear/2020/05/sousa-and-the-talking-machine/',
+        'urlLabel' => 'Library of Congress Historical Analysis',
     ],
     6 => [
+        'type'     => 'Oral History & Conference Proceedings',
         'author'   => 'Hopper, Rear Admiral Grace Murray (1978 / 1981)',
         'title'    => '“Keynote Address,” ACM SIGPLAN History of Programming Languages (HOPL) Conference (June 1, 1978)',
-        'pub'      => 'Published in Richard L. Wexelblat (ed.), History of Programming Languages (New York: Academic Press / ACM Monograph Series, 1981), pp. 7–20; and Charlene W. Billings, Grace Hopper: Navy Admiral and Computer Pioneer (Hillside, NJ: Enslow Publishers, 1989), p. 74.',
-        'note'     => 'Recounts how early 1950s programmers initially refused to use her 1952 A-0 compiler because automating machine-code assembly was viewed as something a computer could not legitimately do.',
+        'pub'      => 'Published in Richard L. Wexelblat (ed.), History of Programming Languages (New York: Academic Press / ACM Monograph Series, 1981), pp. 7–20; see also Charlene W. Billings, Grace Hopper: Navy Admiral and Computer Pioneer (Hillside, NJ: Enslow Publishers, 1989), p. 74.',
+        'note'     => 'Documents institutional skepticism toward early software automation when Hopper introduced her 1952 A-0 compiler.',
         'url'      => 'https://doi.org/10.1145/800025.1198341',
         'urlLabel' => 'ACM Digital Library (DOI: 10.1145/800025.1198341)',
     ],
     7 => [
+        'type'     => 'Archival Music History',
         'author'   => 'Wald, Elijah (2015)',
         'title'    => 'Dylan Goes Electric! Newport, Seeger, Dylan, and the Night That Split the Sixties',
         'pub'      => 'New York: Dey Street Books / HarperCollins, 2015.',
-        'note'     => 'Archival history of July 25, 1965 at the Newport Folk Festival in Newport, Rhode Island, examining why folk revival gatekeepers heard electric amplification as a betrayal of human authenticity.',
-        'url'      => null,
-        'urlLabel' => null,
+        'note'     => 'Examines competing eyewitness and historical explanations for the July 25, 1965 Newport Folk Festival booing—weighing purist objections to electric rock and perceived commercialism alongside live sound-mix problems and the brief three-song electric set.',
+        'url'      => 'https://www.britannica.com/story/when-dylan-went-electric',
+        'urlLabel' => 'Encyclopaedia Britannica Historical Summary',
     ],
     8 => [
-        'author'   => 'UK Musicians’ Union, Central London Branch Motion (May 23, 1982) & Paul Théberge (1997)',
-        'title'    => 'Any Sound You Can Imagine: Making Music / Consuming Technology',
-        'pub'      => 'Central London Branch resolution reported across the 1982 British music press (Melody Maker and Musician, Autumn 1982); historical analysis in Paul Théberge, Any Sound You Can Imagine (Hanover, NH: Wesleyan University Press, 1997).',
-        'note'     => 'While the Central London Branch voted on May 23, 1982 to seek a ban on synthesizers and drum machines used in place of acoustic session players, the national union ultimately declined to enforce a blanket prohibition as 1980s synth-pop and synth-rock flourished.',
+        'type'     => 'Contemporaneous Reporting & Historical Scholarship',
+        'author'   => 'UK Musicians’ Union Central London Branch (May 23, 1982) & Paul Théberge (1997)',
+        'title'    => '1982 Synthesizer & Drum-Machine Motion; analyzed in Any Sound You Can Imagine: Making Music / Consuming Technology',
+        'pub'      => 'Contemporaneous reporting in the 1982 British music press (Melody Maker and Musician, Autumn 1982); scholarly labor and studio history in Paul Théberge, Any Sound You Can Imagine (Hanover, NH: Wesleyan University Press, 1997).',
+        'note'     => 'Documents the Central London Branch’s labor-protection effort to curb electronic instruments replacing hired acoustic players, which did not become a national union prohibition.',
         'url'      => null,
         'urlLabel' => null,
     ],
     9 => [
+        'type'     => 'Retrospective Filmmaker Oral History',
         'author'   => 'Lisberger, Steven (1982 / 2011)',
         'title'    => 'Retrospective Accounts of TRON (1982) and the 55th Academy Awards Visual Effects Branch',
-        'pub'      => 'Documented in Academy of Motion Picture Arts and Sciences (AMPAS) retrospectives and The Making of TRON (Walt Disney Studios Home Entertainment, 2011).',
-        'note'     => 'Clarifies a common retelling: TRON (released July 9, 1982) was not barred by a written rulebook clause, rather voters in the Academy’s visual effects branch declined to nominate it because, as director Steven Lisberger recounted, “The Academy thought we cheated by using computers.”',
+        'pub'      => 'Recounted in director Steven Lisberger’s retrospective interviews, including The Making of TRON (Walt Disney Studios Home Entertainment, 2011) and Academy oral-history retrospectives.',
+        'note'     => 'TRON (released July 9, 1982) was neither disqualified from the Oscars as a whole (it received Costume Design and Sound nominations) nor barred by a known published anti-CGI rule; rather, it received no Visual Effects nomination, which Lisberger attributed in later recollections to voters viewing computer imagery as “cheating.”',
         'url'      => null,
         'urlLabel' => null,
     ],
     10 => [
-        'author'   => 'Ritchin, Fred (1990) & Computer History Museum Photoshop Oral History',
-        'title'    => 'In Our Own Image: The Coming Revolution in Photography',
-        'pub'      => 'New York: Aperture, 1990; alongside John Knoll and Thomas Knoll’s Adobe Photoshop 1.0 release history (February 19, 1990, Computer History Museum, Mountain View, CA).',
-        'note'     => 'Captures early-1990s alarm across photography, commercial illustration, and publishing as computerized darkrooms, undo stacks, and desktop tools moved image-making onto personal computers.',
+        'type'     => 'Contemporary Criticism & Museum Scholarship',
+        'author'   => 'Ritchin, Fred (1990); Britt Salvesen & Staci Steinberger, eds. (2024)',
+        'title'    => 'In Our Own Image: The Coming Revolution in Photography (1990) & Digital Witness: Revolutions in Design, Photography, and Film (2024)',
+        'pub'      => 'New York: Aperture, 1990; and Los Angeles County Museum of Art (LACMA) / DelMonico Books, 2024, alongside the Computer History Museum’s February 19, 1990 Adobe Photoshop 1.0 archive.',
+        'note'     => 'Documents 1990s debates across photography, graphic design, illustration, and cinema over computerized image manipulation, authorship, automation, and creative-industry disruption.',
         'url'      => 'https://computerhistory.org/blog/adobe-photoshop-source-code/',
         'urlLabel' => 'Computer History Museum Archive',
     ],
@@ -224,19 +235,18 @@ $historicalSources = [
 
 /* ----------------------------------------------------------------------------
  * STEP 3: COPYABLE STANDARD REPLY (USING PHP NOWDOC `<<<'REPLY'` WITH LITERAL `$0`)
- * Remember: NEVER escape `$` inside a PHP NOWDOC or HTML block—plain `$0`
- * renders cleanly as `$0` on screen and copies cleanly to the user's clipboard!
+ * Matches all historical nuances on this page with zero unattributed quote marks.
  * ---------------------------------------------------------------------------- */
 $historyReply = <<<'REPLY'
-Thanks for weighing in. To save us both a debate that has been replayed for centuries, here is how I look at it.
+Thanks for weighing in. To save us both a circular debate, here is how I look at it.
 
-Every time a new tool lets one person create what previously required a studio budget, gatekeepers call it "button-pushing" and "not real craft." Around 370 BCE, Plato's Phaedrus warned that writing itself offered "the appearance of wisdom, not true wisdom." In 1859, Baudelaire called photography "the refuge of all failed painters, too lazy to complete their studies." In 1906, Sousa warned Congress against "the menace of mechanical music." In 1982, the Central London branch of the UK Musicians' Union voted to try to ban synthesizers and drum machines while Oscar voters snubbed TRON because using computers felt like "cheating"—and in the 1990s digital illustrators and home-studio producers heard the exact same "the computer did it for you" dismissal.
+For twenty-four centuries, nearly every tool that automated or broadened creative work has sparked recurring anxieties over skill, authenticity, livelihood, and authorship. Around 370 BCE, Plato's Phaedrus recounted King Thamus warning that writing offered "the appearance of wisdom, not true wisdom." In 1859, Baudelaire conceded cameras had documentary uses while calling photography "the refuge of all failed painters, too lazy to complete their studies." In 1906, Sousa warned Congress against "the menace of mechanical music" during early battles over recordings and mechanical royalties. In 1982, the Central London branch of the UK Musicians' Union passed a motion seeking restrictions on synthesizers and drum machines while TRON went un-nominated for Visual Effects amid skepticism that using computers was "cheating"—followed in the 1990s by fierce debates over whether digital darkrooms and desktop software counted as authentic craft.
 
-History always lands in the same place: lazy, unverified work is forgotten, and work shaped with real human care, direction, and meaning endures. I disclose my tools openly at https://raggiesoft.com/about/ai-disclaimer, build on a $0 budget, and share my books, music, and software free without paywalls under CC BY-SA 4.0 and MIT.
+History keeps landing in the same place: unreviewed spam is forgotten, and work shaped with real human care, direction, and meaning endures. I disclose my tools openly at https://raggiesoft.com/about/ai-disclaimer, build on a $0 budget, and share my books, music, and software free without paywalls under CC BY-SA 4.0 and MIT.
 
 I know some folks will never warm up to AI-assisted work, and I'm not trying to talk anyone into liking what they don't like. If it's a dealbreaker for you, skip my work with zero hard feelings—I wish you well.
 
-Full historical timeline & primary sources: https://raggiesoft.com/about/ai-disclaimer/history-of-tools
+Historical timeline & bibliography: https://raggiesoft.com/about/ai-disclaimer/history-of-tools
 REPLY;
 ?>
 <div class="container py-4 ai-suite-shell">
@@ -249,33 +259,27 @@ REPLY;
                     AI &amp; The Creative Process &bull; Part 4 of 4
                 </p>
                 <h1 class="fw-bold display-5 mb-3 text-body-emphasis">2,400 Years of &ldquo;That&rsquo;s Cheating!&rdquo;</h1>
-                <p class="lead text-body-secondary mx-auto" style="max-width: 760px;">
-                    From writing and 1800s cameras to 1980s synthesizers and 1990s computer art, every tool that lets solo creators build bigger worlds has faced the exact same script&mdash;documented below with primary historical sources.
+                <p class="lead text-body-secondary mx-auto" style="max-width: 780px;">
+                    Across twenty-four centuries, recurring anxieties over memory, skill, authenticity, livelihood, and authorship have greeted nearly every tool that automated or broadened human capability&mdash;documented below with historical sources and archival context.
                 </p>
             </div>
 
             <?php /* 2. Shared 4-Tab AI Suite Navigation Bar */ ?>
             <?php include ROOT_PATH . '/includes/components/navigation/ai-disclaimer-subnav.php'; ?>
 
-            <?php /* 3. Mobile-First Responsive Era Timeline Cards (`<ol>` + `#cite-ref-N` Footnotes)
-                     Why cards instead of a 4-column `<table>`?
-                     Multi-sentence historical quotes inside a 4-column table either overflow narrow
-                     phone screens horizontally or crush prose into 2-word slivers. Using a 12-column
-                     card list stacks Era -> Criticism -> Verdict cleanly at 100% width on phones
-                     (`< 768px`) while aligning into three side-by-side columns on desktops (`>= 992px`),
-                     with a single `#cite-ref-N` anchor per source across all screen sizes! */ ?>
+            <?php /* 3. Mobile-First Responsive Era Timeline Cards (`<ol>` + `#cite-ref-N` Footnotes) */ ?>
             <div class="card bg-base-200 border border-base-300 shadow-sm mb-5">
                 <div class="card-body p-3 p-sm-4 p-lg-5">
                     <div class="d-flex flex-wrap justify-content-between align-items-center gap-2 mb-3">
                         <h2 class="h4 fw-bold text-body-emphasis mb-0">
-                            <i class="ph-duotone ph-clock-counter-clockwise text-warning me-2" aria-hidden="true"></i>The Gatekeeper Script Across Seven Eras
+                            <i class="ph-duotone ph-clock-counter-clockwise text-warning me-2" aria-hidden="true"></i>Recurring Objections to New Creative &amp; Technical Tools
                         </h2>
                         <a href="#sources" class="small ai-suite-inline-link">
-                            <i class="ph-duotone ph-books me-1" aria-hidden="true"></i>Jump to 10 Primary Sources &darr;
+                            <i class="ph-duotone ph-books me-1" aria-hidden="true"></i>Jump to 10 Historical Sources &amp; Archival References &darr;
                         </a>
                     </div>
                     <p class="text-body-secondary mb-4">
-                        Look closely at the documented objections across twenty-four centuries below&mdash;swap out the name of the tool, and the sentences read as if they were posted on social media ten minutes ago. Select any numbered bracket (such as <strong>[1]</strong>) to inspect the exact historical record.
+                        These historical debates are not identical&mdash;Plato examined externalized memory, Trithemius defended monastic labor and parchment durability, Sousa combined aesthetic alarm with composer copyright advocacy, and Hopper faced skepticism over machine capability&mdash;yet the underlying fears of automation eroding human craft rhyme unmistakably across eras. Select any numbered bracket (such as <strong>[1]</strong>) to inspect its source record.
                     </p>
 
                     <ol class="list-unstyled mb-0">
@@ -292,10 +296,10 @@ REPLY;
                                         </h3>
                                     </div>
 
-                                    <?php /* Column 2: Documented Criticism at the Time + Inline `[N]` Footnotes */ ?>
+                                    <?php /* Column 2: Documented Criticism & Context + Inline `[N]` Footnotes */ ?>
                                     <div class="col-12 col-md-7 col-lg-5">
                                         <div class="text-uppercase fw-bold text-body-secondary mb-1" style="font-size: 0.72rem; letter-spacing: 0.06em;">
-                                            <i class="ph-duotone ph-quotes me-1 text-warning" aria-hidden="true"></i>Documented Criticism at the Time
+                                            <i class="ph-duotone ph-quotes me-1 text-warning" aria-hidden="true"></i>Documented Objection &amp; Historical Context
                                         </div>
                                         <p class="small text-body-secondary mb-0">
                                             <?php foreach ($row['claims'] as $claimIdx => $claim): ?>
@@ -306,7 +310,7 @@ REPLY;
                                                         <a href="#source-<?php echo (int) $refNum; ?>"
                                                            id="cite-ref-<?php echo (int) $refNum; ?>"
                                                            class="ai-cite-ref"
-                                                           aria-label="Jump to primary source <?php echo (int) $refNum; ?>">[<?php echo (int) $refNum; ?>]</a>
+                                                           aria-label="Jump to historical source <?php echo (int) $refNum; ?>">[<?php echo (int) $refNum; ?>]</a>
                                                     </sup>
                                                 <?php endforeach; ?>
                                             <?php endforeach; ?>
@@ -317,7 +321,7 @@ REPLY;
                                     <div class="col-12 col-md-5 col-lg-4">
                                         <div class="ai-era-verdict p-3 rounded-3">
                                             <div class="text-uppercase fw-bold ai-era-verdict-label mb-1" style="font-size: 0.72rem; letter-spacing: 0.06em;">
-                                                <i class="ph-duotone ph-check-circle me-1" aria-hidden="true"></i>History&rsquo;s Verdict
+                                                <i class="ph-duotone ph-check-circle me-1" aria-hidden="true"></i>Long-Term Outcome
                                             </div>
                                             <p class="small mb-0 fw-medium">
                                                 <?php echo htmlspecialchars($row['verdict'], ENT_QUOTES, 'UTF-8'); ?>
@@ -367,23 +371,26 @@ REPLY;
                 </div>
             </section>
 
-            <?php /* 6. Primary Sources & Historical Bibliography (`#sources` with bidirectional `#cite-ref-N` return links) */ ?>
+            <?php /* 6. Historical Sources, Archival Records & Bibliography (`#sources`) */ ?>
             <section id="sources" aria-labelledby="sources-heading" class="mb-4">
                 <div class="card bg-base-200 border border-base-300 shadow-sm">
                     <div class="card-body p-4 p-lg-5">
                         <p class="small text-uppercase fw-bold text-primary mb-1" style="letter-spacing: 0.08em;">
-                            Verified Historical Record &bull; Primary Texts &amp; Archives
+                            10 Historical Sources &amp; Archival References
                         </p>
                         <h2 id="sources-heading" class="h4 fw-bold text-body-emphasis mb-3">
-                            <i class="ph-duotone ph-books text-primary me-2" aria-hidden="true"></i>Primary Sources &amp; Historical Bibliography
+                            <i class="ph-duotone ph-books text-primary me-2" aria-hidden="true"></i>Historical Sources, Archival Records &amp; Bibliography
                         </h2>
                         <p class="small text-body-secondary mb-4">
-                            Every historical claim on this page is anchored to published primary texts, parliamentary/congressional proceedings, or oral-history archives so readers can verify the original context directly.
+                            Each reference below identifies whether the record is a primary text, congressional proceeding, retrospective oral history, or modern archival scholarship&mdash;including notes where popular retellings are disputed or incomplete.
                         </p>
 
                         <ol class="ai-sources-list small text-body-secondary">
                             <?php foreach ($historicalSources as $num => $src): ?>
                                 <li id="source-<?php echo (int) $num; ?>">
+                                    <span class="d-inline-block text-uppercase fw-bold text-primary mb-1" style="font-size: 0.7rem; letter-spacing: 0.05em;">
+                                        <?php echo htmlspecialchars($src['type'], ENT_QUOTES, 'UTF-8'); ?>
+                                    </span><br>
                                     <strong class="text-body-emphasis"><?php echo htmlspecialchars($src['author'], ENT_QUOTES, 'UTF-8'); ?>.</strong>
                                     <em><?php echo htmlspecialchars($src['title'], ENT_QUOTES, 'UTF-8'); ?>.</em>
                                     <?php echo htmlspecialchars($src['pub'], ENT_QUOTES, 'UTF-8'); ?>

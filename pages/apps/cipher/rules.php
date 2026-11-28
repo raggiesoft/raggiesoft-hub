@@ -75,41 +75,41 @@
                     </h4>
                     <p class="mb-4">The Stardust Engine operates on four distinct frequency bands. Ensure you know which protocol is active.</p>
                     
-                    <?php /* Accessible responsive `<table>` with `scope="col"` and `scope="row"` headers */ ?>
+                    <?php /* Accessible responsive `<table>` with `scope="col"`, `scope="row"`, and `data-label` mobile stacked card support */ ?>
                     <div class="table-responsive">
-                        <table class="table table-bordered border-primary-subtle table-hover align-middle">
-                            <thead class="table-light">
-                                <tr>
-                                    <th scope="col">Tier</th>
-                                    <th scope="col">Frequency Range</th>
-                                    <th scope="col">Signal Pattern</th>
-                                    <th scope="col">Difficulty</th>
+                        <table class="table table-bordered border-primary-subtle table-hover align-middle rs-mobile-stack-table" role="table">
+                            <thead class="table-light" role="rowgroup">
+                                <tr role="row">
+                                    <th scope="col" role="columnheader">Tier</th>
+                                    <th scope="col" role="columnheader">Frequency Range</th>
+                                    <th scope="col" role="columnheader">Signal Pattern</th>
+                                    <th scope="col" role="columnheader">Difficulty</th>
                                 </tr>
                             </thead>
-                            <tbody>
-                                <tr>
-                                    <th scope="row" class="fw-bold text-success"><i class="ph-duotone ph-gauge me-2"></i>Calibration</th>
-                                    <td>Digits 1 - 5</td>
-                                    <td><span class="badge badge-success text-success-emphasis">Unique (No Repeats)</span></td>
-                                    <td>Cadet</td>
+                            <tbody role="rowgroup">
+                                <tr role="row">
+                                    <th scope="row" role="rowheader" class="fw-bold text-success"><i class="ph-duotone ph-gauge me-2" aria-hidden="true"></i>Calibration</th>
+                                    <td role="cell" data-label="Frequency Range">Digits 1 - 5</td>
+                                    <td role="cell" data-label="Signal Pattern"><span class="badge badge-success text-success-emphasis">Unique (No Repeats)</span></td>
+                                    <td role="cell" data-label="Difficulty">Cadet</td>
                                 </tr>
-                                <tr>
-                                    <th scope="row" class="fw-bold text-info"><i class="ph-duotone ph-broadcast me-2"></i>Orbital</th>
-                                    <td>Digits 1 - 6</td>
-                                    <td><span class="badge badge-warning text-warning-emphasis">Repeats Allowed</span></td>
-                                    <td>Standard</td>
+                                <tr role="row">
+                                    <th scope="row" role="rowheader" class="fw-bold text-info"><i class="ph-duotone ph-broadcast me-2" aria-hidden="true"></i>Orbital</th>
+                                    <td role="cell" data-label="Frequency Range">Digits 1 - 6</td>
+                                    <td role="cell" data-label="Signal Pattern"><span class="badge badge-warning text-warning-emphasis">Repeats Allowed</span></td>
+                                    <td role="cell" data-label="Difficulty">Standard</td>
                                 </tr>
-                                <tr>
-                                    <th scope="row" class="fw-bold text-warning"><i class="ph-duotone ph-planet me-2"></i>Deep Space</th>
-                                    <td>Digits 0 - 9</td>
-                                    <td><span class="badge badge-success text-success-emphasis">Unique (No Repeats)</span></td>
-                                    <td>Hard</td>
+                                <tr role="row">
+                                    <th scope="row" role="rowheader" class="fw-bold text-warning"><i class="ph-duotone ph-planet me-2" aria-hidden="true"></i>Deep Space</th>
+                                    <td role="cell" data-label="Frequency Range">Digits 0 - 9</td>
+                                    <td role="cell" data-label="Signal Pattern"><span class="badge badge-success text-success-emphasis">Unique (No Repeats)</span></td>
+                                    <td role="cell" data-label="Difficulty">Hard</td>
                                 </tr>
-                                <tr>
-                                    <th scope="row" class="fw-bold text-danger"><i class="ph-duotone ph-planet me-2"></i>Horizon</th>
-                                    <td>Digits 0 - 9</td>
-                                    <td><span class="badge badge-warning text-warning-emphasis">Repeats Allowed</span></td>
-                                    <td>Expert</td>
+                                <tr role="row">
+                                    <th scope="row" role="rowheader" class="fw-bold text-danger"><i class="ph-duotone ph-planet me-2" aria-hidden="true"></i>Horizon</th>
+                                    <td role="cell" data-label="Frequency Range">Digits 0 - 9</td>
+                                    <td role="cell" data-label="Signal Pattern"><span class="badge badge-warning text-warning-emphasis">Repeats Allowed</span></td>
+                                    <td role="cell" data-label="Difficulty">Expert</td>
                                 </tr>
                             </tbody>
                         </table>
