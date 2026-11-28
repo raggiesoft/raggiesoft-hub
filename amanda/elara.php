@@ -462,30 +462,20 @@ echo '<div id="elara-layout-wrapper" class="container-fluid flex-grow-1 d-flex p
 echo '  <div class="row flex-grow-1 m-0 w-100">';
 
 // If this route uses a sidebar AND the sidebar PHP file exists on disk:
-// - Render a persistent `<aside>` column on tablet/desktop (`d-none d-md-block`)
-// - Render a collapsible mobile drawer (`d-md-none`) for small screens
-// - Open `<main id="main-content" tabindex="-1">` (WCAG 2.1 AA primary landmark target
-//   for the "Skip to Main Content" keyboard shortcut link in `includes/header.php`).
-if ($showSidebar && file_exists($currentSidebar)) {
-    echo '    <aside class="col-md-3 col-lg-2 d-none d-md-block bg-body-tertiary border-end p-3">';
+// - Render a persistent left-hand `<aside>` column ONLY on tablet/desktop (`d-none d-md-block`)
+// - Open `<main id="main-content" tabindex="-1">` IMMEDIATELY so mobile visitors (`< 768px`)
+//   land directly on the page headline and content without scrolling past a sidebar!
+// - After `</main>` closes below, render a compact, collapsed-by-default `<details>`
+//   section directory (`d-md-none`) at the bottom of the page for mobile convenience.
+$hasActiveSidebar = ($showSidebar && file_exists($currentSidebar));
+if ($hasActiveSidebar) {
+    echo '    <aside class="col-md-3 col-lg-2 d-none d-md-block bg-body-tertiary border-end p-3" aria-label="Section Navigation">';
     require_once $currentSidebar;
     echo '    </aside>';
     
-    echo '    <div class="offcanvas offcanvas-start d-md-none bg-body-tertiary" tabindex="-1" id="mobileSidebarDrawer" aria-labelledby="mobileSidebarDrawerLabel">';
-    echo '      <div class="offcanvas-header border-bottom py-3 px-4">';
-    echo '        <h5 class="offcanvas-title fw-bold font-heading mb-0" id="mobileSidebarDrawerLabel">Navigation</h5>';
-    echo '        <button type="button" class="btn-close shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>';
-    echo '      </div>';
-    echo '      <div class="offcanvas-body p-3">';
-    // Note: `require` (instead of `require_once`) is intentional here because `$currentSidebar`
-    // was already included once inside `<aside>` above, and we want a second copy inside the mobile drawer!
-    require $currentSidebar;
-    echo '      </div>';
-    echo '    </div>';
-    
-    echo '    <main id="main-content" class="col-md-9 col-lg-10 p-4" tabindex="-1" style="outline:none;">';
+    echo '    <main id="main-content" class="col-12 col-md-9 col-lg-10 p-3 p-md-4" tabindex="-1" style="outline:none;">';
 } else {
-    // Full-width layout when no sidebar is active (e.g., `/`, `/contact`, `/in-memoriam`):
+    // Full-width layout when no sidebar is active (e.g., `/`, `/contact`, `/about`):
     echo '    <main id="main-content" class="col-12 p-0" tabindex="-1" style="outline:none;">'; 
 }
 
@@ -502,8 +492,28 @@ if (file_exists(ROOT_PATH . '/' . $config['view'] . '.php')) {
     }
 }
 
-// Close `<main>`, `.row`, and `#elara-layout-wrapper`:
+// Close `<main>`:
 echo '    </main>'; 
+
+// Mobile Bottom Section Directory (`< 768px` ONLY):
+// Placed AFTER `</main>` and collapsed inside a native HTML5 `<details>` disclosure widget
+// so mobile readers see 100% of `<main>` immediately at the top of the screen, yet can
+// still expand the section directory at the end of the article with one tap!
+if ($hasActiveSidebar) {
+    echo '    <aside class="col-12 d-md-none bg-body-tertiary border-top p-3" aria-label="Mobile Section Directory">';
+    echo '      <details class="rounded-3 border bg-body p-2">';
+    echo '        <summary class="btn btn-ghost btn-sm w-100 d-flex justify-content-between align-items-center fw-bold text-body">';
+    echo '          <span><i class="ph-duotone ph-compass me-2 text-primary" aria-hidden="true"></i>Browse Section Directory</span>';
+    echo '          <i class="ph-bold ph-caret-down small" aria-hidden="true"></i>';
+    echo '        </summary>';
+    echo '        <div class="pt-2 px-1 pb-2 border-top mt-2">';
+    require $currentSidebar;
+    echo '        </div>';
+    echo '      </details>';
+    echo '    </aside>';
+}
+
+// Close `.row` and `#elara-layout-wrapper`:
 echo '  </div>'; 
 echo '</div>'; 
 

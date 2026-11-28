@@ -592,7 +592,7 @@ if (isset($customPageAssets) && is_array($customPageAssets)) {
     <?php /* Loop over `$css_load_queue` and append a cache-busting `?v=...` (or `&v=...` if a query string already exists) */ ?>
     <!-- Self-Hosted DaisyUI 5 & Phosphor Icons (Served via assets.raggiesoft.com) -->
     <?php foreach ($css_load_queue as $cssUrl): ?>
-        <link href="<?php echo $cssUrl . (str_contains($cssUrl, '?') ? '&' : '?') . 'v=20261029h'; ?>" rel="stylesheet">
+        <link href="<?php echo $cssUrl . (str_contains($cssUrl, '?') ? '&' : '?') . 'v=20261127b'; ?>" rel="stylesheet">
     <?php endforeach; ?>    
 
     <?php /* Self-hosted Phosphor Icons CSS providing `.ph-duotone`, `.ph-bold`, etc. without third-party script trackers */ ?>

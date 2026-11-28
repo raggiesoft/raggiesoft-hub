@@ -56,12 +56,12 @@
                 <div class="col-md-4 d-flex">
                     <div class="card bg-base-200 border border-base-300 shadow-sm h-100 w-100">
                         <div class="card-body d-flex flex-column">
-                            <div class="bg-success text-white p-3 rounded-3 mb-3">
+                            <div class="ai-role-banner--writer p-3 rounded-3 mb-3">
                                 <div class="d-flex align-items-center">
                                     <i class="ph-duotone ph-user-gear ph-2x me-3" aria-hidden="true"></i>
                                     <div>
-                                        <h2 class="h5 mb-0 fw-bold text-white">The Writer &amp; Builder</h2>
-                                        <small class="text-white opacity-75">Michael P. Ragsdale (Human)</small>
+                                        <h2 class="h5 mb-0 fw-bold ai-role-title">The Writer &amp; Builder</h2>
+                                        <small class="ai-role-sub fw-semibold">Michael P. Ragsdale (Human)</small>
                                     </div>
                                 </div>
                             </div>
@@ -83,12 +83,12 @@
                 <div class="col-md-4 d-flex">
                     <div class="card bg-base-200 border border-base-300 shadow-sm h-100 w-100">
                         <div class="card-body d-flex flex-column">
-                            <div class="bg-primary text-white p-3 rounded-3 mb-3">
+                            <div class="ai-role-banner--cowriter p-3 rounded-3 mb-3">
                                 <div class="d-flex align-items-center">
                                     <i class="ph-duotone ph-chats-circle ph-2x me-3" aria-hidden="true"></i>
                                     <div>
-                                        <h2 class="h5 mb-0 fw-bold text-white">The Co-Writer</h2>
-                                        <small class="text-white opacity-75">Google Antigravity &amp; Coding Assistants</small>
+                                        <h2 class="h5 mb-0 fw-bold ai-role-title">The Co-Writer</h2>
+                                        <small class="ai-role-sub fw-semibold">Google Antigravity &amp; Coding Assistants</small>
                                     </div>
                                 </div>
                             </div>
@@ -110,12 +110,12 @@
                 <div class="col-md-4 d-flex">
                     <div class="card bg-base-200 border border-base-300 shadow-sm h-100 w-100">
                         <div class="card-body d-flex flex-column">
-                            <div class="bg-warning text-dark p-3 rounded-3 mb-3">
+                            <div class="ai-role-banner--studio p-3 rounded-3 mb-3">
                                 <div class="d-flex align-items-center">
                                     <i class="ph-duotone ph-music-notes ph-2x me-3" aria-hidden="true"></i>
                                     <div>
-                                        <h2 class="h5 mb-0 fw-bold text-dark">The Studio</h2>
-                                        <small class="text-dark opacity-75">Suno (Commercial Tier)</small>
+                                        <h2 class="h5 mb-0 fw-bold ai-role-title">The Studio</h2>
+                                        <small class="ai-role-sub fw-semibold">Suno (Commercial Tier)</small>
                                     </div>
                                 </div>
                             </div>

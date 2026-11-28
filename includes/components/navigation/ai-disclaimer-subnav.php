@@ -119,6 +119,47 @@ $aiSuiteTabs = [
         background-color: var(--bs-tertiary-bg, rgba(148, 163, 184, 0.12));
     }
 
+    /* High-contrast 3-column role header banners on `/about/ai-disclaimer` (`>= 7.18:1` AAA
+       in BOTH Light Mode and Dark Mode—never relying on `opacity-75` or pastel dark-mode tokens!):
+       - Writer & Builder: `#065f46` deep emerald + `#ffffff` (`7.68:1`) / `#ecfdf5` (`7.18:1`)
+       - The Co-Writer:    `#1e40af` deep cobalt  + `#ffffff` (`8.72:1`) / `#dbeafe` (`7.43:1`)
+       - The Studio:       `#fbbf24` warm amber   + `#0f172a` (`11.58:1`) / `#1e293b` (`9.65:1`) */
+    .ai-role-banner--writer {
+        background-color: #065f46 !important;
+        color: #ffffff !important;
+    }
+    .ai-role-banner--writer .ai-role-title,
+    .ai-role-banner--writer i {
+        color: #ffffff !important;
+    }
+    .ai-role-banner--writer .ai-role-sub {
+        color: #ecfdf5 !important;
+    }
+
+    .ai-role-banner--cowriter {
+        background-color: #1e40af !important;
+        color: #ffffff !important;
+    }
+    .ai-role-banner--cowriter .ai-role-title,
+    .ai-role-banner--cowriter i {
+        color: #ffffff !important;
+    }
+    .ai-role-banner--cowriter .ai-role-sub {
+        color: #dbeafe !important;
+    }
+
+    .ai-role-banner--studio {
+        background-color: #fbbf24 !important;
+        color: #0f172a !important;
+    }
+    .ai-role-banner--studio .ai-role-title,
+    .ai-role-banner--studio i {
+        color: #0f172a !important;
+    }
+    .ai-role-banner--studio .ai-role-sub {
+        color: #1e293b !important;
+    }
+
     /* Superscript inline citation links (`[1]`, `[2]`, ...) & `:target` bibliography highlight:
        - Gives keyboard and touch users a comfortable click area without breaking line-height.
        - Highlights the targeted `<li id="source-N">` row when jumped to from the article body,
