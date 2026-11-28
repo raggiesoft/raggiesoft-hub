@@ -4,20 +4,22 @@
  * READ-ALONG TEACHING GUIDE (100-LEVEL COURSE EDITION)
  * ============================================================================
  * File: /includes/components/headers/header-contact.php
- * Role: Scoped Top Navigation Menu for `/contact` ("Global Contact Hub")
- * Domain: https://raggiesoft.com (Assigned via `data/routes/core.json` `"/contact.headerMenu"`)
+ * Role: Scoped Top Navigation Menu for `/contact` and `/contact/faq`
+ * Domain: https://raggiesoft.com (Assigned via `data/routes/core.json` `"headerMenu"`)
  *
  * WHAT THIS FILE DOES (PLAIN-ENGLISH OVERVIEW):
- * When a visitor navigates to `https://raggiesoft.com/contact`, `core.json`
- * sets `"headerMenu": "header-contact"`. `includes/header.php` injects THIS
- * streamlined navigation bar inside `#navbarCollapse`, giving visitors and
- * recruiters quick links to Home (`/`), The Architect dropdown (`michaelpragsdale.com`),
- * Engine Room (`engineroom.raggiesoft.com`), and the highlighted Contact link.
+ * When a visitor navigates to `https://raggiesoft.com/contact` or
+ * `https://raggiesoft.com/contact/faq`, `core.json` assigns `"headerMenu": "header-contact"`.
+ * `includes/header.php` injects THIS scoped navigation bar inside `#navbarCollapse`,
+ * giving visitors and recruiters one-click links to Home (`/`), The Architect
+ * dropdown (`michaelpragsdale.com`), Engine Room (`engineroom.raggiesoft.com`),
+ * Contact Channels (`/contact`), and Contact FAQ (`/contact/faq`).
  *
- * TEACHING NOTE ON `<details class="dropdown">`:
- * Instead of requiring JavaScript dropdown libraries, DaisyUI 5 styles native
- * HTML5 `<details>` + `<summary>` elements into keyboard-accessible dropdown
- * menus that work even before JavaScript finishes loading!
+ * TEACHING NOTE ON ACTIVE ROUTE HIGHLIGHTING:
+ * By parsing `$_SERVER['REQUEST_URI']` with `parse_url(..., PHP_URL_PATH)` and
+ * trimming any trailing slash via `rtrim()`, we can highlight `/contact` vs.
+ * `/contact/faq` accurately AND stamp `aria-current="page"` on the active link
+ * so screen reader users immediately know which page they are viewing!
  *
  * INPUTS:
  * - `$_SERVER['REQUEST_URI']`: Current request URL path for active-link styling.
@@ -25,21 +27,15 @@
  * OUTPUT PRODUCED:
  * - Responsive `.mobile-nav-menu` flex row/column inside `<header><nav>`.
  * ============================================================================
- *
- * ARCHITECTURE & MAINTENANCE NOTES: Global Contact Hub Header (DaisyUI 5)
- * ============================================================================
- * File: includes/components/headers/header-contact.php
- * Purpose: Navigation specifically scoped for the global contact hub.
- *
- * Strategy & Implementation:
- * - Provides immediate escape hatches back to core network domains (Home, Engine Room).
- * - Uses semantic DaisyUI 5 `<details class="dropdown">` and Phosphor Duotone icons.
- * ============================================================================
  */
 
 // Extract clean URL path from `$_SERVER['REQUEST_URI']` to compute active link classes:
-$request_uri = parse_url($_SERVER['REQUEST_URI'] ?? '/', PHP_URL_PATH) ?: '/';
-$isArchitect = str_starts_with($request_uri, '/about/michael-ragsdale');
+$raw_uri = parse_url($_SERVER['REQUEST_URI'] ?? '/', PHP_URL_PATH) ?: '/';
+$request_uri = strlen($raw_uri) > 1 ? rtrim($raw_uri, '/') : $raw_uri;
+
+$isArchitect  = str_starts_with($request_uri, '/about/michael-ragsdale');
+$isContactHub = ($request_uri === '/contact');
+$isContactFaq = ($request_uri === '/contact/faq');
 ?>
 
 <?php /* Stacks vertically on mobile (`flex-column`) and switches to a horizontal row (`flex-md-row`) at `>= 768px` */ ?>
@@ -49,7 +45,7 @@ $isArchitect = str_starts_with($request_uri, '/about/michael-ragsdale');
     <i class="ph-duotone ph-house me-1" aria-hidden="true"></i>Home
   </a>
 
-  <!-- Architect Navigation: Consolidates resume and overview links for recruiters -->
+  <?php /* Architect Navigation: Consolidates portfolio, resume, and recruiter hub links */ ?>
   <details class="dropdown">
     <summary class="btn btn-ghost <?php echo $isArchitect ? 'text-primary fw-bold' : 'text-body-secondary'; ?>">
       <i class="ph-duotone ph-user-focus me-1" aria-hidden="true"></i>The Architect
@@ -79,9 +75,13 @@ $isArchitect = str_starts_with($request_uri, '/about/michael-ragsdale');
     <i class="ph-duotone ph-factory me-1" aria-hidden="true"></i>Engine Room
   </a>
 
-  <?php /* Marked `active text-primary fw-bold` since this header is exclusively rendered on `/contact` */ ?>
-  <a href="/contact" class="btn btn-ghost active text-primary fw-bold">
+  <?php /* Contact Channels (`/contact`) vs. Contact FAQ (`/contact/faq`) active state + `aria-current="page"` */ ?>
+  <a href="/contact" class="btn btn-ghost <?php echo $isContactHub ? 'active text-primary fw-bold' : 'text-body-secondary'; ?>"<?php echo $isContactHub ? ' aria-current="page"' : ''; ?>>
     <i class="ph-duotone ph-envelope-open me-1" aria-hidden="true"></i>Contact
+  </a>
+
+  <a href="/contact/faq" class="btn btn-ghost <?php echo $isContactFaq ? 'active text-primary fw-bold' : 'text-body-secondary'; ?>"<?php echo $isContactFaq ? ' aria-current="page"' : ''; ?>>
+    <i class="ph-duotone ph-chats-circle me-1" aria-hidden="true"></i>Contact FAQ
   </a>
 
 </div>
