@@ -19,13 +19,13 @@
     "showSidebar": false,
     "site": "portfolio",
     "ogTitle": "Signal The Architect | Contact RaggieSoft",
-    "ogDescription": "Reach Michael P. Ragsdale and RaggieSoft for stories, music, software, store support, licensing, or recruiting—no unsolicited marketing pitches.",
+    "ogDescription": "Reach Michael P. Ragsdale and RaggieSoft for stories, music, software, store support, licensing, or recruiting.",
     "ogImage": "/raggiesoft-corporate/images/og/contact-og.jpg",
-    "ogImageAlt": "Signal The Architect — RaggieSoft Contact Channels (Stories, Music, Software, Licensing & Recruiting; No Unsolicited Marketing Pitches)"
+    "ogImageAlt": "Signal The Architect — RaggieSoft Contact Channels (Stories, Music, Software, Licensing & Recruiting)"
   },
   "/contact/faq": {
     "view": "pages/contact/faq",
-    "title": "Contact & Solicitation FAQ | RaggieSoft",
+    "title": "Contact Channels FAQ | RaggieSoft",
     "brandFont": [
       "Audiowide",
       "sans-serif"
@@ -33,10 +33,25 @@
     "headerMenu": "header-contact",
     "showSidebar": false,
     "site": "portfolio",
-    "ogTitle": "Contact & Solicitation FAQ | RaggieSoft",
-    "ogDescription": "Standing studio policy and FAQ for RaggieSoft books, music, and software: no paid marketing, playlisting, SEO, or free audits at any price.",
+    "ogTitle": "Contact Channels FAQ | RaggieSoft",
+    "ogDescription": "Frequently asked questions on RaggieSoft story and music notes, Fourthwall store orders, sync licensing, recruiting, and studio policies.",
     "ogImage": "/raggiesoft-corporate/images/og/contact-faq-og.jpg",
-    "ogImageAlt": "Contact & Solicitation FAQ — Standing Studio Policy for RaggieSoft Books, Music, and Software"
+    "ogImageAlt": "Contact Channels FAQ — Quick Answers for RaggieSoft Stories, Music, Software, Store Support, and Licensing"
+  },
+  "/contact/no-solicitation": {
+    "view": "pages/contact/no-solicitation",
+    "title": "No-Solicitation Policy | RaggieSoft",
+    "brandFont": [
+      "Audiowide",
+      "sans-serif"
+    ],
+    "headerMenu": "header-contact",
+    "showSidebar": false,
+    "site": "portfolio",
+    "ogTitle": "No-Solicitation Policy | RaggieSoft",
+    "ogDescription": "Standing studio policy for RaggieSoft books, music, and software: no paid marketing, promotion, playlisting, SEO, or free audits at any price.",
+    "ogImage": "/raggiesoft-corporate/images/og/no-solicitation-og.jpg",
+    "ogImageAlt": "Standing No-Solicitation Policy — Not Hiring Marketing, Promotion, Playlisting, SEO, or Free Audits at Any Price"
   },
   "/in-memoriam": {
     "view": "pages/about/in-memoriam",

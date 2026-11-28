@@ -4,51 +4,41 @@
  * READ-ALONG TEACHING GUIDE (100-LEVEL COURSE EDITION)
  * ============================================================================
  * File: /pages/contact.php
- * Role: Global Contact Hub View (`https://raggiesoft.com/contact`)
+ * Role: Global Contact Channels Directory (`https://raggiesoft.com/contact`)
  * Route Manifest: `/data/routes/core.json` -> `"/contact"` (`headerMenu: "header-contact"`)
  *
  * WHAT THIS FILE DOES (PLAIN-ENGLISH OVERVIEW):
- * Renders the central communication directory for `raggiesoft.com` inside
- * `<main id="main-content">`, routing visitors cleanly to six specialized
- * channels while keeping extended policies DRY on their dedicated pages:
+ * Serves as the clean, uncluttered six-channel communication directory for
+ * `raggiesoft.com`, while delegating Frequently Asked Questions to `/contact/faq`,
+ * the Standing No-Solicitation Policy to `/contact/no-solicitation`, and the
+ * Employment Scam Advisory to `https://corporate.raggiesoft.com/careers` (100% DRY):
  *   1. General Inquiry (`mailto:hello@michaelpragsdale.com`)
  *   2. Store Support (`store.raggiesoft.com`, operated by Fourthwall as Merchant of Record)
  *   3. DSP & Industry (`engineroom.raggiesoft.com/dsp-verification` + closed-imprint notice)
- *   4. Hiring & Careers (`michaelpragsdale.com/#logistics` + `corporate.raggiesoft.com/careers` Scam Advisory)
+ *   4. Hiring & Careers (`michaelpragsdale.com/#logistics` + `corporate.raggiesoft.com/careers`)
  *   5. Sync & Licensing (`corporate.raggiesoft.com/licensing/commercial`)
  *   6. Fan Mail & Lore (`/about/ai-disclaimer` explaining fictional bands & characters)
  *
- * Below the 6-card directory, a concise Standing No-Solicitation & FAQ banner
- * (`#no-solicitation`) states clearly that RaggieSoft does not hire marketing,
- * promotion, playlisting, PR, or SEO services (or accept free audits) and routes
- * visitors to `/contact/faq` for the full FAQ and standard reply.
- *
  * INPUTS:
  * - `$cdnBaseUrl`: Global CDN origin (`https://assets.raggiesoft.com`) from `amanda/elara.php`.
- * - `includes/utils/json-reader.php` -> `fetch_asset_json('common/json/hero-images.json')`:
- *   Loads rotating hero background paths for `hero-image.js`.
+ * - `includes/utils/json-reader.php` -> `fetch_asset_json('common/json/hero-images.json')`.
  *
  * OUTPUT PRODUCED:
  * - Schema.org `ContactPage` JSON-LD script, dark-surface glassmorphism CSS
- *   with high-contrast text and visible keyboard focus rings, 6-channel contact
- *   grid, and `#no-solicitation` gateway to `/contact/faq`.
+ *   with high-contrast text and visible keyboard focus rings, and the 6-card
+ *   responsive contact directory.
  * ============================================================================
  */
 
-// Load the remote JSON reader helper and pull the list of hero background paths:
 require_once ROOT_PATH . '/includes/utils/json-reader.php';
 $heroImages = fetch_asset_json('common/json/hero-images.json');
 
-// Pick a random initial backdrop (`array_rand`) with a safe starfield fallback:
 $startImage = (!empty($heroImages) && is_array($heroImages))
     ? $cdnBaseUrl . $heroImages[array_rand($heroImages)]
     : $cdnBaseUrl . '/common/patterns/stars-transparent.png';
 
-// Serialize `$heroImages` to JSON and HTML-escape quotes (`ENT_QUOTES`) so `data-images="..."`
-// is 100% safe against attribute breakout:
 $imagesJson = htmlspecialchars(json_encode(is_array($heroImages) ? $heroImages : []), ENT_QUOTES, 'UTF-8');
 
-// Schema.org `ContactPage` structured data linking `/contact` to `/contact/faq` and `corporate.raggiesoft.com/careers`:
 $contactPageSchema = [
     '@context' => 'https://schema.org',
     '@graph' => [
@@ -57,9 +47,10 @@ $contactPageSchema = [
             '@id' => 'https://raggiesoft.com/contact#webpage',
             'url' => 'https://raggiesoft.com/contact',
             'name' => 'Contact Channels | RaggieSoft',
-            'description' => 'Central directory for contacting Michael P. Ragsdale, RaggieSoft, Engine Room Records, and Ocean View Archives. No unsolicited marketing pitches or employment offers.',
+            'description' => 'Central directory for contacting Michael P. Ragsdale, RaggieSoft, Engine Room Records, and Ocean View Archives.',
             'relatedLink' => [
                 'https://raggiesoft.com/contact/faq',
+                'https://raggiesoft.com/contact/no-solicitation',
                 'https://corporate.raggiesoft.com/careers',
                 'https://michaelpragsdale.com/#logistics'
             ]
@@ -77,19 +68,15 @@ $contactPageSchema = [
        Locks `.contact-hero-shell` to dark-surface contrast (`>= 12:1` for
        body copy, `>= 18:1` for headings) regardless of OS Light/Dark Mode.
        ===================================================================== */
-    .force-text-light {
-        color: #ffffff !important;
-    }
-    .force-text-muted {
-        color: #e2e8f0 !important;
-    }
+    .force-text-light { color: #ffffff !important; }
+    .force-text-muted { color: #e2e8f0 !important; }
+
     .force-glass-bg {
         background-color: rgba(6, 10, 20, 0.84) !important;
         backdrop-filter: blur(10px) !important;
         -webkit-backdrop-filter: blur(10px) !important;
     }
 
-    /* Semantic Accent Borders */
     .force-border-default   { border: 1px solid rgba(255, 255, 255, 0.18) !important; }
     .force-border-info      { border: 1px solid rgba(56, 189, 248, 0.5) !important; }
     .force-border-success   { border: 1px solid rgba(52, 211, 153, 0.5) !important; }
@@ -98,7 +85,6 @@ $contactPageSchema = [
     .force-border-secondary { border: 1px solid rgba(203, 213, 225, 0.4) !important; }
     .force-border-primary   { border: 1px solid rgba(96, 165, 250, 0.55) !important; }
 
-    /* Text Shadows */
     .force-shadow-heavy {
         text-shadow: 0px 4px 15px rgba(0, 0, 0, 0.92), 0px 1px 3px rgba(0, 0, 0, 1) !important;
     }
@@ -106,7 +92,6 @@ $contactPageSchema = [
         text-shadow: 0px 2px 8px rgba(0, 0, 0, 0.9) !important;
     }
 
-    /* High-Contrast Accent Icons */
     .force-icon-info      { color: #38bdf8 !important; }
     .force-icon-primary   { color: #60a5fa !important; }
     .force-icon-success   { color: #34d399 !important; }
@@ -114,7 +99,6 @@ $contactPageSchema = [
     .force-icon-warning   { color: #fbbf24 !important; }
     .force-icon-secondary { color: #cbd5e1 !important; }
 
-    /* High-Contrast Action Buttons Guaranteed Across OS Light & Dark Themes */
     .contact-btn-sky {
         background-color: #38bdf8 !important;
         border-color: #38bdf8 !important;
@@ -189,7 +173,6 @@ $contactPageSchema = [
     }
 </style>
 
-<?php /* `data-theme="dark" data-bs-theme="dark"` locks token contrast over the rotating cosmic/landscape backdrop */ ?>
 <div class="immersive-container hero-rotator-container contact-hero-shell py-5" data-images="<?php echo $imagesJson; ?>" data-theme="dark" data-bs-theme="dark">
 
     <div class="hero-bg-layer hero-bg-layer-1" style="background-image: url('<?php echo htmlspecialchars($startImage, ENT_QUOTES, 'UTF-8'); ?>');"></div>
@@ -198,21 +181,21 @@ $contactPageSchema = [
 
     <div class="content-wrapper container py-3">
 
-        <?php /* 1. Page Header Banner */ ?>
+        <?php /* 1. Page Header Banner with Quick Escape Links to `/contact/faq` and `/contact/no-solicitation` */ ?>
         <div class="text-center mb-5 d-flex justify-content-center">
             <div class="force-glass-bg force-border-default p-4 rounded-4 shadow-lg" style="max-width: 820px;">
                 <h1 class="display-4 fw-bold text-uppercase force-text-light force-shadow-heavy mb-2" style="font-family: 'Audiowide', sans-serif;">
                     Signal The Architect
                 </h1>
                 <p class="lead force-text-light fw-semibold force-shadow-medium mx-auto mb-3" style="max-width: 680px;">
-                    Choose your communication channel below&mdash;or read our <a href="/contact/faq" class="contact-inline-link">Contact &amp; Solicitation FAQ</a> first.
+                    Choose your communication channel below.
                 </p>
                 <div class="d-flex flex-wrap justify-content-center gap-2">
                     <a href="/contact/faq" class="btn contact-btn-ghost-outline btn-sm rounded-full fw-bold px-3">
-                        <i class="ph-duotone ph-chats-circle me-1" aria-hidden="true"></i>Read Contact &amp; Solicitation FAQ
+                        <i class="ph-duotone ph-chats-circle me-1" aria-hidden="true"></i>Contact FAQ
                     </a>
-                    <a href="/contact/faq#no-solicitation" class="btn contact-btn-amber btn-sm rounded-full fw-bold px-3">
-                        <i class="ph-duotone ph-megaphone-simple me-1" aria-hidden="true"></i>No Unsolicited Marketing Policy
+                    <a href="/contact/no-solicitation" class="btn contact-btn-amber btn-sm rounded-full fw-bold px-3">
+                        <i class="ph-duotone ph-megaphone-simple me-1" aria-hidden="true"></i>No-Solicitation Policy
                     </a>
                 </div>
             </div>
@@ -239,7 +222,7 @@ $contactPageSchema = [
                             <a href="mailto:hello@michaelpragsdale.com?subject=RaggieSoft:%20Project%20Inquiry" class="btn contact-btn-sky btn-lg rounded-full fw-bold">
                                 <i class="ph-duotone ph-paper-plane-tilt me-1" aria-hidden="true"></i>Send Message
                             </a>
-                            <a href="/contact/faq#no-solicitation" class="btn contact-btn-ghost-outline btn-sm rounded-full fw-bold">
+                            <a href="/contact/no-solicitation" class="btn contact-btn-ghost-outline btn-sm rounded-full fw-bold">
                                 <i class="ph-duotone ph-megaphone-simple me-1" aria-hidden="true"></i>No Marketing Pitches
                             </a>
                         </div>
@@ -380,34 +363,7 @@ $contactPageSchema = [
 
         </div>
 
-        <?php /* 3. Concise Standing Policy & Gateway Card Routing to Dedicated `/contact/faq` */ ?>
-        <section id="no-solicitation" class="mt-5 pt-2" aria-labelledby="solicitation-gateway-heading">
-            <div class="force-glass-bg force-border-warning rounded-4 shadow-lg p-4 p-md-5">
-                <div class="d-flex flex-column flex-lg-row align-items-lg-center justify-content-between gap-4">
-                    <div>
-                        <p class="small text-uppercase fw-bold mb-1" style="color: #fde68a; letter-spacing: 0.08em;">
-                            <i class="ph-duotone ph-megaphone-simple me-1" aria-hidden="true"></i>Standing Studio Policy &bull; Books, Music &amp; Software
-                        </p>
-                        <h2 id="solicitation-gateway-heading" class="h4 fw-bold force-text-light mb-2">
-                            Not Hiring Marketing, Promotion, Playlisting, SEO, or Free Audits
-                        </h2>
-                        <p class="force-text-muted mb-0" style="max-width: 760px; line-height: 1.65;">
-                            RaggieSoft is an independent, self-contained studio and creative network with no outside marketing budget. Before pitching paid promotion, catalog reviews, or reduced-scope packages, please read our standing policy and frequently asked questions.
-                        </p>
-                    </div>
-                    <div class="d-flex flex-wrap gap-2 flex-shrink-0">
-                        <a href="/contact/faq#no-solicitation" class="btn contact-btn-amber rounded-full fw-bold px-4">
-                            <i class="ph-duotone ph-quotes me-1" aria-hidden="true"></i>Read Standard Reply
-                        </a>
-                        <a href="/contact/faq" class="btn contact-btn-ghost-outline rounded-full fw-bold px-4">
-                            <i class="ph-duotone ph-chats-circle me-1" aria-hidden="true"></i>Open Contact FAQ
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <?php /* 4. Bottom Hiring Hub Note */ ?>
+        <?php /* 3. Bottom Hiring Hub Note */ ?>
         <div class="text-center mt-5 d-flex justify-content-center">
             <div class="force-glass-bg force-border-default px-4 py-2 rounded-pill shadow-sm">
                 <p class="small force-text-light force-shadow-medium mb-0">

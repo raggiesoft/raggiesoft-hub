@@ -607,7 +607,7 @@ $pageTitle = "RaggieSoft™ | The Central Hub";
           ]
         ],
         [
-          'imgSrc' => 'https://michaelpragsdale.com/og-image.jpg',
+          'imgSrc' => $cdnBaseUrl . '/common/images/mragsdale-social.jpg',
           'imgAlt' => 'Michael P. Ragsdale Portfolio and RaggieSoft Media Licensing',
           'fallbackText' => 'Portfolio & Licensing',
           'aspectRatio' => '16:9',

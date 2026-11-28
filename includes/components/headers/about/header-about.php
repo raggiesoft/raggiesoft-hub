@@ -131,8 +131,29 @@ $isProfiles   = (!$isGovernance && !$isMemoriam && $uri !== '/about');
     <i class="ph-duotone ph-shooting-star text-warning me-1" aria-hidden="true"></i>In Memoriam
   </a>
 
-  <a href="/contact" class="btn btn-ghost text-body-secondary">
-    <i class="ph-duotone ph-envelope me-1" aria-hidden="true"></i>Contact
-  </a>
+  <?php /* Contact Dropdown: Consistent quick access to Contact Channels, FAQ, and No-Solicitation Policy */ ?>
+  <details class="dropdown dropdown-end">
+    <summary class="btn btn-ghost text-body-secondary">
+      <i class="ph-duotone ph-envelope me-1" aria-hidden="true"></i>Contact
+      <i class="ph-bold ph-caret-down small opacity-75" aria-hidden="true"></i>
+    </summary>
+    <ul class="dropdown-content menu bg-base-200 rounded-box z-50 w-64 p-2 shadow-lg border border-base-300 mt-1">
+      <li>
+        <a href="/contact">
+          <i class="ph-duotone ph-envelope-open text-info" aria-hidden="true"></i>Contact Channels
+        </a>
+      </li>
+      <li>
+        <a href="/contact/faq">
+          <i class="ph-duotone ph-chats-circle text-primary" aria-hidden="true"></i>Contact FAQ
+        </a>
+      </li>
+      <li>
+        <a href="/contact/no-solicitation">
+          <i class="ph-duotone ph-megaphone-simple text-warning" aria-hidden="true"></i>No-Solicitation Policy
+        </a>
+      </li>
+    </ul>
+  </details>
 
 </div>
