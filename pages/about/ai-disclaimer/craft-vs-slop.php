@@ -26,18 +26,23 @@
  * ============================================================================
  */
 
-$fullSlopReply = implode("\n\n", [
-    "Thanks for sharing your perspective. To save us both a circular debate, here is where I stand.",
-    "I disclose my tools openly right on my front page and at https://raggiesoft.com/about/ai-disclaimer because I have nothing to hide. I am one working-class creator with zero studio budget—not a corporation laying off staff. Without modern AI tools alongside my own writing and code, I wasn't going to hire a band, illustrators, editors, and an engineering team, because I don't have that money. The alternative wasn't \"freelancers get paid\"; the alternative was that these worlds, songs, and tools stayed locked in my head. Instead, I build them and share my stories and music openly without a paywall under Creative Commons (CC BY-SA 4.0) and my code under the MIT License.",
-    "I have been building websites since 1997, writing desktop software since 1998, and doing university web accessibility work years before modern generative AI existed. \"Slop\" isn't defined by which tool someone uses—it's defined by whether a human actually cares, directs, edits, and verifies the work. People made the exact same \"pushing a button isn't real craft\" argument against cameras in the 1850s, synthesizers and drum machines in the 1980s, and digital art and home recording software in the 1990s.",
-    "You never have to enjoy AI-assisted work, and if it's a dealbreaker for you, my projects simply aren't for you—and that's completely fine. Every novel, album, and desktop app I build is free to inspect firsthand at https://raggiesoft.com. Judge the actual work, or pass it by; either way, no hard feelings, and I wish you well.",
-    "https://raggiesoft.com/about/ai-disclaimer/craft-vs-slop"
-]);
+$fullSlopReply = <<<'REPLY'
+Thanks for sharing your perspective. To save us both a circular debate, here is where I stand.
 
-$shortSlopReply = implode("\n\n", [
-    "To save us both time: I disclose my AI tools upfront (https://raggiesoft.com/about/ai-disclaimer), and I'm one solo creator with a \$0 budget—not a studio cutting jobs. I could never afford to hire a band, illustrators, editors, and a dev team; without modern tools alongside my own pre-AI coding and writing background, these projects simply wouldn't exist, and I share them free without paywalls under CC BY-SA 4.0 and MIT.",
-    "\"Slop\" is about a lack of human care and verification, not the tool—the same \"button-pushing\" argument was thrown at cameras in the 1800s, synthesizers in the 1980s, and digital illustration in the 1990s. If AI-assisted work isn't for you, no hard feelings at all—skip my stuff and have a good one."
-]);
+I disclose my tools openly right on my front page and at https://raggiesoft.com/about/ai-disclaimer because I have nothing to hide. I am one working-class creator with zero studio budget—not a corporation laying off staff. Without modern AI tools alongside my own writing and code, I wasn't going to hire a band, illustrators, editors, and an engineering team, because I don't have that money. The alternative wasn't "freelancers get paid"; the alternative was that these worlds, songs, and tools stayed locked in my head. Instead, I build them and share my stories and music openly without a paywall under Creative Commons (CC BY-SA 4.0) and my code under the MIT License.
+
+I have been building websites since 1997, writing desktop software since 1998, and doing university web accessibility work years before modern generative AI existed. "Slop" isn't defined by which tool someone uses—it's defined by whether a human actually cares, directs, edits, and verifies the work. People made the exact same "pushing a button isn't real craft" argument against cameras in the 1850s, synthesizers and drum machines in the 1980s, and digital art and home recording software in the 1990s.
+
+You never have to enjoy AI-assisted work, and if it's a dealbreaker for you, my projects simply aren't for you—and that's completely fine. Every novel, album, and desktop app I build is free to inspect firsthand at https://raggiesoft.com. Judge the actual work, or pass it by; either way, no hard feelings, and I wish you well.
+
+https://raggiesoft.com/about/ai-disclaimer/craft-vs-slop
+REPLY;
+
+$shortSlopReply = <<<'REPLY'
+To save us both time: I disclose my AI tools upfront (https://raggiesoft.com/about/ai-disclaimer), and I'm one solo creator with a $0 budget—not a studio cutting jobs. I could never afford to hire a band, illustrators, editors, and a dev team; without modern tools alongside my own pre-AI coding and writing background, these projects simply wouldn't exist, and I share them free without paywalls under CC BY-SA 4.0 and MIT.
+
+"Slop" is about a lack of human care and verification, not the tool—the same "button-pushing" argument was thrown at cameras in the 1800s, synthesizers in the 1980s, and digital illustration in the 1990s. If AI-assisted work isn't for you, no hard feelings at all—skip my stuff and have a good one.
+REPLY;
 ?>
 <div class="container py-4 ai-suite-shell">
     <div class="row justify-content-center">

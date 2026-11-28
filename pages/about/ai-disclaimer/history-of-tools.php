@@ -74,13 +74,17 @@ $historyMilestones = [
     ],
 ];
 
-$historyReply = implode("\n\n", [
-    "Thanks for weighing in. To save us both a debate that has been replayed for centuries, here is how I look at it.",
-    "Every time a new tool lets one person create what previously required a studio budget, gatekeepers call it \"button-pushing\" and \"not real craft.\" In 1859, Baudelaire called cameras \"the refuge of every failed painter, too lazy to finish their studies.\" In 1906, Sousa warned Congress against \"mechanical music.\" In 1982, the UK Musicians' Union literally voted to ban synthesizers and drum machines, and in the late 1980s and 1990s digital illustrators and home-studio producers heard the exact same \"the computer did it for you\" dismissal.",
-    "History always lands in the same place: lazy, unverified work is forgotten, and work shaped with real human care, direction, and meaning endures. I disclose my tools openly at https://raggiesoft.com/about/ai-disclaimer, build on a \$0 budget, and share my books, music, and software free without paywalls under CC BY-SA 4.0 and MIT.",
-    "I know some folks will never warm up to AI-assisted work, and I'm not trying to talk anyone into liking what they don't like. If it's a dealbreaker for you, skip my work with zero hard feelings—I wish you well.",
-    "https://raggiesoft.com/about/ai-disclaimer/history-of-tools"
-]);
+$historyReply = <<<'REPLY'
+Thanks for weighing in. To save us both a debate that has been replayed for centuries, here is how I look at it.
+
+Every time a new tool lets one person create what previously required a studio budget, gatekeepers call it "button-pushing" and "not real craft." In 1859, Baudelaire called cameras "the refuge of every failed painter, too lazy to finish their studies." In 1906, Sousa warned Congress against "mechanical music." In 1982, the UK Musicians' Union literally voted to ban synthesizers and drum machines, and in the late 1980s and 1990s digital illustrators and home-studio producers heard the exact same "the computer did it for you" dismissal.
+
+History always lands in the same place: lazy, unverified work is forgotten, and work shaped with real human care, direction, and meaning endures. I disclose my tools openly at https://raggiesoft.com/about/ai-disclaimer, build on a $0 budget, and share my books, music, and software free without paywalls under CC BY-SA 4.0 and MIT.
+
+I know some folks will never warm up to AI-assisted work, and I'm not trying to talk anyone into liking what they don't like. If it's a dealbreaker for you, skip my work with zero hard feelings—I wish you well.
+
+https://raggiesoft.com/about/ai-disclaimer/history-of-tools
+REPLY;
 ?>
 <div class="container py-4 ai-suite-shell">
     <div class="row justify-content-center">

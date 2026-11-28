@@ -26,13 +26,17 @@
  * ============================================================================
  */
 
-$zeroBudgetReply = implode("\n\n", [
-    "Thanks for chiming in. To save us both time, here is the honest math behind my work.",
-    "I am one working-class solo creator with a \$0 studio budget—not a media conglomerate laying off staff to pad quarterly margins. Telling me to \"hire a writer, an illustrator, session musicians, and a dev team\" assumes there was a pile of money sitting on my desk that I chose not to spend. A \$0 budget hires zero people either way.",
-    "Without modern AI tools alongside my own writing and software engineering, nobody was getting a freelance check from me—these books, albums, and desktop apps simply never would have existed outside my head. Instead, they do exist, I never prompt real artist or band names, and I publish my stories and music completely free without paywalls or ads under Creative Commons (CC BY-SA 4.0) and my code under the MIT License.",
-    "Creative worlds shouldn't be gated behind personal wealth, a record label, or a corporate budget. If AI-assisted projects aren't your thing, pass mine by—no hard feelings, and I wish you well.",
-    "https://raggiesoft.com/about/ai-disclaimer/zero-budget-reality"
-]);
+$zeroBudgetReply = <<<'REPLY'
+Thanks for chiming in. To save us both time, here is the honest math behind my work.
+
+I am one working-class solo creator with a $0 studio budget—not a media conglomerate laying off staff to pad quarterly margins. Telling me to "hire a writer, an illustrator, session musicians, and a dev team" assumes there was a pile of money sitting on my desk that I chose not to spend. A $0 budget hires zero people either way.
+
+Without modern AI tools alongside my own writing and software engineering, nobody was getting a freelance check from me—these books, albums, and desktop apps simply never would have existed outside my head. Instead, they do exist, I never prompt real artist or band names, and I publish my stories and music completely free without paywalls or ads under Creative Commons (CC BY-SA 4.0) and my code under the MIT License.
+
+Creative worlds shouldn't be gated behind personal wealth, a record label, or a corporate budget. If AI-assisted projects aren't your thing, pass mine by—no hard feelings, and I wish you well.
+
+https://raggiesoft.com/about/ai-disclaimer/zero-budget-reality
+REPLY;
 ?>
 <div class="container py-4 ai-suite-shell">
     <div class="row justify-content-center">
@@ -45,7 +49,7 @@ $zeroBudgetReply = implode("\n\n", [
                 </p>
                 <h1 class="fw-bold display-5 mb-3 text-body-emphasis">The Zero-Budget Solo Creator</h1>
                 <p class="lead text-body-secondary mx-auto" style="max-width: 760px;">
-                    Why &ldquo;just hire a band, illustrators, editors, and developers&rdquo; mistakes a working-class solo studio for a corporation&mdash;and why a \$0 budget displaces nobody.
+                    Why &ldquo;just hire a band, illustrators, editors, and developers&rdquo; mistakes a working-class solo studio for a corporation&mdash;and why a $0 budget displaces nobody.
                 </p>
             </div>
 
@@ -60,9 +64,9 @@ $zeroBudgetReply = implode("\n\n", [
                             <div class="text-uppercase small fw-bold text-warning mb-2">
                                 <i class="ph-duotone ph-calculator me-1" aria-hidden="true"></i>The &ldquo;Lost Hire&rdquo; Myth
                             </div>
-                            <h2 class="h4 fw-bold text-body-emphasis mb-3">A \$0 Budget Hires Zero People Either Way</h2>
+                            <h2 class="h4 fw-bold text-body-emphasis mb-3">A $0 Budget Hires Zero People Either Way</h2>
                             <p class="text-body-secondary mb-3">
-                                In the early 2000s, major record labels famously claimed that every free song download equaled a lost \$18 CD sale&mdash;assuming the listener would have bought every single album at retail price otherwise.
+                                In the early 2000s, major record labels famously claimed that every free song download equaled a lost $18 CD sale&mdash;assuming the listener would have bought every single album at retail price otherwise.
                             </p>
                             <p class="text-body-secondary mb-0">
                                 Telling an independent creator with no outside budget to <em>&ldquo;hire studio musicians, vocalists, audio engineers, cover artists, editors, and programmers&rdquo;</em> makes the exact same error. Commissioning dozens of albums, full-length novels, and multi-platform apps commercially would cost hundreds of thousands of dollars that simply do not exist here.

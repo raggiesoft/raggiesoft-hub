@@ -42,14 +42,19 @@ $startImage = (!empty($heroImages) && is_array($heroImages))
 
 $imagesJson = htmlspecialchars(json_encode(is_array($heroImages) ? $heroImages : []), ENT_QUOTES, 'UTF-8');
 
-$stockSolicitationReply = implode("\n\n", [
-    "Thanks for reaching out. To save us both time, here is where I stand.",
-    "I am not hiring marketing, promotion, playlisting, PR, SEO, or positioning services right now, at any price. That includes free audits, catalog or site reviews, and reduced-scope packages. RaggieSoft is an independent, self-contained studio and creative network, and I do not carry an outside marketing budget.",
-    "If I ever choose to collaborate with someone down the road, I will only talk to people who have genuinely engaged with my work firsthand—whether that means reading a novel on https://books.raggiesoft.com, listening to an album on https://music.raggiesoft.com, or actually trying one of my applications on https://raggiesoft.com or https://raggiesoftstudio.com—and can speak specifically to what I build. That is my one requirement, and it isn't negotiable.",
-    "Everything I publish is openly accessible on those sites without a paywall. Spend real time with the stories, the music, or the software first, and if we ever cross paths when I'm looking for outside help, we'll have something real to talk about.",
-    "If that doesn't work for you, no hard feelings. I wish you well.",
-    "https://raggiesoft.com/contact/no-solicitation"
-]);
+$stockSolicitationReply = <<<'REPLY'
+Thanks for reaching out. To save us both time, here is where I stand.
+
+I am not hiring marketing, promotion, playlisting, PR, SEO, or positioning services right now, at any price. That includes free audits, catalog or site reviews, and reduced-scope packages. RaggieSoft is an independent, self-contained studio and creative network, and I do not carry an outside marketing budget.
+
+If I ever choose to collaborate with someone down the road, I will only talk to people who have genuinely engaged with my work firsthand—whether that means reading a novel on https://books.raggiesoft.com, listening to an album on https://music.raggiesoft.com, or actually trying one of my applications on https://raggiesoft.com or https://raggiesoftstudio.com—and can speak specifically to what I build. That is my one requirement, and it isn't negotiable.
+
+Everything I publish is openly accessible on those sites without a paywall. Spend real time with the stories, the music, or the software first, and if we ever cross paths when I'm looking for outside help, we'll have something real to talk about.
+
+If that doesn't work for you, no hard feelings. I wish you well.
+
+https://raggiesoft.com/contact/no-solicitation
+REPLY;
 
 $noSolicitationSchema = [
     '@context' => 'https://schema.org',

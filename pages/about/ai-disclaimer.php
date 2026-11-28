@@ -220,7 +220,7 @@
                                 </div>
                                 <h3 class="h5 fw-bold text-body-emphasis mb-2">2. The Zero-Budget Reality</h3>
                                 <p class="small text-body-secondary flex-grow-1">
-                                    Why telling a working-class solo creator with a \$0 budget to &ldquo;just hire a band, illustrators, editors, and developers&rdquo; is a false choice&mdash;and why free open-culture art displaces nobody.
+                                    Why telling a working-class solo creator with a $0 budget to &ldquo;just hire a band, illustrators, editors, and developers&rdquo; is a false choice&mdash;and why free open-culture art displaces nobody.
                                 </p>
                                 <a href="/about/ai-disclaimer/zero-budget-reality" class="btn btn-primary btn-sm rounded-full fw-bold mt-2">
                                     Read Part 3: Zero-Budget Reality <i class="ph-bold ph-arrow-right ms-1" aria-hidden="true"></i>
